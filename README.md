@@ -22,3 +22,6 @@ Text extraction from PDF using python
 
  
     pip install -r requirements.txt
+
+
+4> Run the project :)
