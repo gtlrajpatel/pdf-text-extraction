@@ -1,4 +1,5 @@
 import PyPDF2
+import os
 
 def pdf_to_text(file):
     # give the path of your pdf file
@@ -15,11 +16,15 @@ def pdf_to_text(file):
         str += filereader.getPage(count).extractText() + "\n" + "**End Page**" + "\n"
         count += 1
 
+    filename = os.path.splitext(os.path.basename(file))[0]
+
     # the following line will generate the output file
-    with open("output_RP2.txt", "w") as f:
+    with open("output/"+ filename + ".txt", "w") as f:
         f.write(str)
         f.close()
 
 if __name__ == '__main__':
-    file_path = 'input/RP2.pdf'
-    pdf_to_text(file_path)
+    input_files_directory = 'input'
+    for filename in os.listdir(input_files_directory):
+        print("\n\n ----->>>>", filename)
+        pdf_to_text('input/'+filename)
