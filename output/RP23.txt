@@ -1,0 +1,1530 @@
+© 201
+8
+ 
+IJEDR | Volume
+ 
+6
+, Issue 
+1
+ 
+| ISSN: 2321
+-
+9939
+ 
+ 
+IJEDR1
+8
+0
+1
+110
+ 
+International Journal of Engineering Development and Research (
+www.ijedr.org
+)
+ 
+637
+ 
+ 
+Challenging tools on 
+Research 
+Issues
+ 
+in Big Data 
+Analytics 
+ 
+Althaf Rahaman.Sk
+1
+, 
+Sai Rajesh.K
+2, 
+.Girija Rani K
+3
+ 
+1
+Assistant Professor
+,
+ 
+2
+Student
+,
+ 
+3
+ 
+Research Scholar
+ 
+1
+Department of Computer
+ 
+Science
+, 
+ 
+1
+GITAM 
+(
+Deemed to be University
+)
+, 
+Visakhapatnam
+,
+ 
+India
+ 
+_
+_________________________________________________________
+______________________________________________
+ 
+ 
+Abstract
+
+ 
+In the information era, enormous amounts of data have become available on hand to decision makers. Big data 
+refers to datasets that are not only big, but also high in variety and velocity, which makes them difficult to handle using 
+traditional to
+ols and techniques. Due to the rapid growth of such data, solutions need to be studied and provided in order 
+to handle and extract value and knowledge from these datasets. Analysis of these data requires a lot of efforts at multiple 
+levels of knowledge ext
+raction for effective decision making. Big data analysis is a current area of research and development. 
+Additionally, it opens a new horizon for researchers to develop the solution, based on the challenges and open research 
+issues.  
+ 
+ 
+Index Terms
+
+Big data 
+analytics; Hadoop; Massive data; Structured data; Unstructured Data; IoT
+ 
+________________________________________________________________________________________________________
+ 
+I.
+ 
+I
+NTRODUCTION
+ 
+In digital environment, data is generated from various sources of
+ 
+technologies which has led to growth of big data. It provides 
+evolutionary breakthroughs in many fields with collection of large datasets. The way in which collection of large and complex
+ 
+datasets become difficult to process using traditional database man
+agement tools or data processing applications. These are 
+available in structured, semi
+-
+structured, and unstructured format in petabytes and beyond. Formally, it is defined from 3Vs to 4Vs. 
+3Vs refers to volume, velocity, and variety. Volume refers to the h
+uge amount of data that are being generated everyday whereas 
+velocity is the rate of growth and how fast the data are gathered for being analysis. Variety provides information about the 
+types 
+of data such as structured, unstructured, semi
+-
+structured etc. T
+he fourth V refers to veracity that includes availability and 
+accountability. The prime objective of big data analysis is to process data of high volume, velocity, variety, and veracity u
+sing 
+various traditional and computational intelligent techniques [1]
+. The following Figure 1 refers to the definition of big data. However 
+exact definition for big data is not defined and there is believe that it is problem specific. This will help us in obtaining
+ 
+enhanced 
+decision making, insight discovery and optimizatio
+n while being innovative and cost
+-
+effective.
+ 
+ 
+It is expected that the growth of big data is estimated to reach 25 billion by 2015 [2]. From the perspective of the informat
+ion and 
+communication technology, big data is a robust motivation to the next generat
+ion of information technology industries [3], which 
+are broadly built on the third platform, mainly referring to big data, cloud computing, internet of things, and social busine
+ss. The 
+key problem in the analysis of big data is the lack of coordination bet
+ween database systems as well as with analysis tools such as 
+data mining and statistical analysis. These challenges generally arise when we wish to perform knowledge discovery and 
+representation for its practical applications. A fundamental problem is how 
+to quantitatively describe the essential characteristics 
+of big data. Additionally, the study on complexity theory of big data will help understand essential characteristics and form
+ation 
+of complex patterns in big data, simplify its representation, gets b
+etter knowledge abstraction, and guide the design of computing 
+models and algorithms on big data [3]. Much research was carried out by various researchers on big data and its trends [4], [
+5].
+ 
+ 
+The basic objective of this paper is to explore the potential i
+mpact of big data challenges, its research issues, and various tools 
+associated with it. As a result, this article provides a platform to explore big data at different stages. Additionally, we s
+tate open 
+research issues in big data. This paper is divided i
+nto following sections. Sections 2 deals with challenges of big data.  
+ 
+ 
+II.
+ 
+CHALLENGES
+ 
+In Recent years big data has been accumulated in several domains like health care, retail, bio
+-
+chemistry, and other interdisciplinary 
+scientific researches. Web
+-
+based appli
+cations encounter big data frequently, such as social computing, internet text and documents, 
+and inter
+-
+net search indexing. Social computing includes social net
+-
+work analysis, online communities, recommender systems, 
+reputation systems, and prediction mar
+kets where as internet search indexing includes ISI, IEEE Xplorer, Scopus, Thomson, 
+Reuters, etc.
+ 
+   
+ 
+ 
+ 
+
+**End Page**
+© 201
+8
+ 
+IJEDR | Volume
+ 
+6
+, Issue 
+1
+ 
+| ISSN: 2321
+-
+9939
+ 
+ 
+IJEDR1
+8
+0
+1
+110
+ 
+International Journal of Engineering Development and Research (
+www.ijedr.org
+)
+ 
+638
+ 
+ 
+ 
+      
+FIG. 1 Characteristics of Big Data.
+ 
+ 
+ 
+Considering this advantages of big data it provides a new opportunities in the knowledge processing tasks 
+for the upcoming 
+researchers. However opportunities always follow some challenges. To handle the challenges we need to know various 
+computational complexities, information security, and computational method, to analyze big data. For example, many statistic
+al 
+methods that perform well for small data size do not scale to huge data. Here the challenges of big data analytics are classi
+fied into 
+four broad categories namely data storage and analysis; knowledge discovery and computational complexities; scalabilit
+y and 
+visualization of data; and information security. We discuss these issues briefly in the following subsections.
+ 
+ 
+A. Data Storage and Analysis
+ 
+In recent years the size of data has grown exponentially by various means such as mobile devices, sensor tech
+nologies, remote 
+sensing, radio frequency identification readers etc. These data are stored on spending much cost whereas they ignored or dele
+ted 
+finally because there is no enough space to store them. Therefore, the first challenge for big data analysis i
+s storage mediums and 
+higher input/output speed. In such cases, the data accessibility must be on the top priority for the knowledge discovery and 
+representation. The prime reason is being that, it must be accessed easily and promptly for further analysis.
+ 
+In past decades, analyst 
+use hard disk drives to store data but, it slower random input/output performance than sequential input/output. To overcome t
+his 
+limitation, the concept of solid state drive (SSD) and phrase change memory (PCM) was introduced. How
+ever the available storage 
+technologies cannot possess the required performance for processing big data.
+ 
+ 
+Another challenge with Big Data analysis is attributed to diversity of data with the ever growing of datasets, data mining ta
+sks has 
+significantly 
+increased. Additionally data reduction, data selection, feature selection is an essential task especially when dealing 
+with large datasets. This presents an unprecedented challenge for researchers. It is because, existing algorithms may not alw
+ays 
+respond 
+in an adequate time when dealing with these high dimensional data. Automation of this process and developing new 
+machine learning algorithms to ensure consistency is a major challenge in recent years. In addition to all these Clustering o
+f large 
+datasets t
+hat help in analyzing the big data is of prime concern [7]. Recent technologies such as Hadoop and MapReduce make it 
+possible to collect large amount of semi structured and unstructured data in a reasonable amount of time. The key engineering
+ 
+challenge is 
+how to effectively analyze these data for obtaining better knowledge. The major challenge in this case is to pay more 
+attention for designing storage systems and to elevate efficient data analysis tool that provide guarantees on the output whe
+n the 
+data co
+mes from different sources. Furthermore, design of machine learning algorithms to analyze data is essential for improving 
+efficiency and scalability.
+ 
+ 
+B. Knowledge Discovery and Computational Complexities
+ 
+ 
+Knowledge discovery and representation is a prime 
+issue in big data. It includes a number of sub fields such as authentication, 
+archiving, management, preservation, information retrieval, and representation. Many hybridized techniques are also developed
+ 
+to 
+process real life problems. All these techniques 
+are problem dependent. Further some of these techniques may not be suitable for 
+large datasets in a sequential computer. At the same time some of the techniques has good characteristics of scalability over
+ 
+parallel 
+computer. Since the size of big data keep
+s increasing exponentially, the available tools may not be efficient to process these data 
+for obtaining meaningful information. The most popular approach in case of large dataset management is data warehouses and da
+ta 
+marts. Data warehouse is mainly respo
+nsible to store data that are sourced from operational systems whereas data mart is based on 
+a data warehouse and facilitates analysis.
+ 
+ 
+Analysis of large dataset requires more computational complexities. The major issue is to handle inconsistencies and un
+certainty 
+present in the datasets. In general, systematic modeling of the computational complexity is used. It may be difficult to esta
+blish a 
+comprehensive mathematical system that is broadly applicable to Big Data. But a domain specific data analytics ca
+n be done easily 
+by understanding the particular complexities. A series of such development could simulate big data analytics for different ar
+eas. 
+Much research and survey has been carried out in this direction using machine learning techniques with the le
+ast memory 
+requirements. The basic objective in these research is to minimize computational cost processing and complexities [8], [9], [
+10].
+ 
+
+**End Page**
+© 201
+8
+ 
+IJEDR | Volume
+ 
+6
+, Issue 
+1
+ 
+| ISSN: 2321
+-
+9939
+ 
+ 
+IJEDR1
+8
+0
+1
+110
+ 
+International Journal of Engineering Development and Research (
+www.ijedr.org
+)
+ 
+639
+ 
+ 
+ 
+       
+However, current big data analysis tools have poor performance in handling computational complexities, unce
+rtainty, and 
+inconsistencies. It leads to a great challenge to develop techniques and technologies that can deal computational complexity,
+ 
+uncertainty and inconsistencies in an effective manner.
+ 
+ 
+C. Scalability and Visualization of Data
+ 
+The most important 
+challenge for big data analysis techniques is its scalability and security. In the last decades researchers have 
+
+ary to 
+develop sam
+pling, on
+-
+line, and multi resolution analysis techniques. Incremental techniques have good scalability property in the 
+aspect of big data analysis. As the data size is scaling much faster than CPU speeds, there is a natural dramatic shift in pr
+ocessor 
+tech
+nology being embedded with increasing number of cores [11]. This shift in processors leads to the development of parallel 
+computing. Real time applications like navigation, social networks, finance, internet search, timeliness etc. requires parall
+el 
+comput
+ing. We can observe that big data have produced many challenges for the developments of the hardware and software which 
+leads to parallel computing, cloud computing, distributed computing, visualization process, scalability. To over
+-
+come this issue, we 
+nee
+d to correlate more mathematical models to computer science.
+ 
+ 
+D. Information Security
+ 
+ 
+In big data analysis massive amount of data are correlated, analyzed, and mined for meaningful patterns. All organizations ha
+ve 
+different policies to safe guard their sensitive information. Preserving sensitive information is a major issue in big data a
+na
+lysis. 
+There is a huge security risk associated with big data [12]. Therefore, information security is becoming a big data analytics
+ 
+problem. 
+Security of big data can be enhanced by using the techniques of authentication, authorization, and encryption. Var
+ious security 
+measures that big data applications face are scale of network, variety of different devices, real time security monitoring, a
+nd lack 
+of intrusion system [13], [14]. The security challenge caused by big data has attracted the attention of info
+rmation security. 
+Therefore, attention has to be given to develop a multilevel security policy model and prevention system.
+ 
+ 
+Although much research has been carried out to secure big data [13] but it requires lot of improvement. The major challenge i
+s to 
+d
+evelop a multi
+-
+level security, privacy preserved data model for big data.
+ 
+ 
+III.
+ 
+RESEARCH
+ 
+ISSUES
+ 
+IN
+ 
+BIG
+ 
+DATA
+ 
+ANALYTICS
+ 
+ 
+Big data analytics and data science are becoming the research focal point in industries and academia. Data science aims at 
+researching big dat
+a and knowledge extraction from data. Applications of big data and data science include information science, 
+uncertainty modelling, uncertain data analysis, machine learning, statistical learning, pattern recognition, data warehousing
+, and 
+signal processin
+g. Effective integration of technologies and analysis will result in predicting the future drift of events. Main focus 
+of this section is to discuss open research issues in big data analytics. The research issues pertaining to big data analysis
+ 
+are classif
+ied 
+into three broad categories namely internet of things (IoT), cloud computing, bio inspired computing, and quantum computing. 
+However it is not limited to these issues. More research issues related to health care big data can be found in Husing
+-
+ 
+Kuo et 
+al. 
+paper [6].
+ 
+ 
+ 
+A.
+ 
+IoT for Big Data Analytics
+ 
+ 
+Internet has restructured global interrelations, the art of businesses, cultural revolutions and an unbelievable number of pe
+rsonal 
+characteristics. Currently, machines are getting in on the act to control innum
+erable autonomous gadgets via internet and create 
+Internet of Things (IoT). Thus, appliances are becoming the user of the internet, just like humans with the web browsers. Int
+ernet 
+of Things is attracting the attention of recent researchers for its most pr
+omising opportunities and challenges. It has an imperative 
+economic and societal impact for the future construction of information, network and communication technology. The new 
+regulation of future will be eventually, everything will be connected and inte
+lligently controlled. The concept of IoT is becoming 
+more pertinent to the realistic world due to the development of mobile de
+-
+vices, embedded and ubiquitous communication 
+technologies, cloud computing, and data analytics. Moreover, IoT presents challenges
+ 
+in combinations of volume, velocity and 
+variety. In a broader sense, just like the internet, Internet of Things enables the devices to exist in a myriad of places an
+d facilitates 
+applications ranging from trivial to the crucial. Conversely, it is still my
+stifying to understand IoT well, including definitions, 
+content and differences from other similar concepts. Several diversified technologies such as computational intelligence, and
+ 
+big
+-
+data can be incorporated together to improve the data management and k
+nowledge discovery of large scale automation applications. 
+ 
+ 
+Knowledge acquisition from IoT data is the biggest challenge that big data professional are facing. Therefore, it is essentia
+l to 
+develop infrastructure to analyze the IoT data. An IoT device 
+generates continuous streams of data and the re
+-
+searchers can develop 
+tools to extract meaningful information from these data using machine learning techniques. Under
+-
+standing these streams of data 
+generated from IoT devices and analyzing them to get meani
+ngful information is a challenging issue and it leads to big data 
+analytics. Machine learning algorithms and computational intelligence techniques is the only solution to handle big data from
+ 
+IoT 
+prospective. Key technologies that are associated with IoT a
+re also discussed in many research papers [15]. Figure 2 depicts an 
+overview of IoT big data and knowledge discovery process.
+ 
+ 
+
+**End Page**
+© 201
+8
+ 
+IJEDR | Volume
+ 
+6
+, Issue 
+1
+ 
+| ISSN: 2321
+-
+9939
+ 
+ 
+IJEDR1
+8
+0
+1
+110
+ 
+International Journal of Engineering Development and Research (
+www.ijedr.org
+)
+ 
+640
+ 
+ 
+ 
+Fig. 2 IoT Big Data Knowledge Discovery
+ 
+ 
+ 
+ 
+Knowledge exploration system have originated from theo
+ries of human information proc
+essing such as frames, rules,
+ 
+tagging, and 
+semantic networks. In general, it consists of
+ 
+four segments such as knowledge acquisition, knowledge
+ 
+base, knowledge 
+dissemination, and knowledge application.
+ 
+ 
+In knowledge acquisition phase, knowledge is discover
+ed by using various traditional and computational intelligence techniques, the 
+discovered knowledge is stored in knowledge bases and expert systems are generally designed based on the discovered knowledge
+. 
+Knowledge dissemination is important for obtaining
+ 
+meaningful information from the knowledge bases and expert systems are generally 
+designed based on the discovered knowledge. Knowledge dissemination is important for obtaining meaningful information from th
+e 
+knowledge base. Knowledge extraction is a proce
+ss that searches documents, knowledge within documents as well as knowledge bases. 
+The final phase is to apply discovered knowledge in various applications. It is the ultimate goal of knowledge discovery. The
+ 
+knowledge 
+exploration system is necessarily ite
+rative with the judgement of knowledge application. There are many issues, discussions, and 
+researches in this area of knowledge exploration. It is beyond the scope of this survey paper. For better visualization, know
+ledge 
+explo
+ration system is depicted in
+ 
+Figure 3. 
+ 
+ 
+ 
+FIG. 3 IoT Knowledge Exploration Syste
+m
+ 
+ 
+ 
+B.
+ 
+Cloud Computing for Big Data Analytics
+ 
+The development of virtualization technologies have made Supercomputing more accessible and affordable. Computing 
+infrastructures that are hidden in 
+virtualization software make systems to behave like a true computer, but with the flexibility of 
+specification details such as number of processors, disk space, memory, and operating system. The use of these virtual comput
+ers 
+is known as cloud computing wh
+ich has been one of the most robust big data technique. Big Data and cloud computing technologies 
+are developed with the importance of developing a scalable
+ 
+and on demand availability of resources and data. 
+Cloud computing harmonize 
+massive data by on
+ 
+dema
+nd access to configurable computing resources through
+ 
+virtualization techniques. The benefits of utilizing the 
+Cloud
+ 
+computing include offering resources when there is a demand
+ 
+and pay only for the resources which is needed to develop
+ 
+the product. 
+Simultan
+eously, it improves availability and cost 
+reduction. Open challenges and research issues of big data
+ 
+and cloud computing are 
+discussed in detail by many re
+-
+ 
+searchers which highlights the challenges in data management,
+ 
+data variety and velocity, data stora
+ge, data 
+processing, and
+ 
+resource management [16]. So Cloud computing helps
+ 
+in developing a business model for all varieties of applications
+ 
+with 
+infrastructure and tools.
+ 
+Big data application using cloud computing should support
+ 
+data analytic and developm
+ent. The cloud 
+
+**End Page**
+© 201
+8
+ 
+IJEDR | Volume
+ 
+6
+, Issue 
+1
+ 
+| ISSN: 2321
+-
+9939
+ 
+ 
+IJEDR1
+8
+0
+1
+110
+ 
+International Journal of Engineering Development and Research (
+www.ijedr.org
+)
+ 
+641
+ 
+ 
+environment should
+ 
+provide tools that allow data scientists and business analysts to
+ 
+interactively and collaboratively explore knowledge 
+acquisition data for further processing and extracting fruitful results. This can help to solve large ap
+plications that may arise in various domains. 
+In addition to this, cloud computing should also enable scaling of tools from virtual technologies into new technologies like
+ 
+spark, R, and other 
+types of big data processing techniques.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Big data forms a
+ 
+framework for discussing cloud computing options. 
+Depending on special need, user can go to the Market place and 
+buy infrastructure services from cloud service providers such as Google, Amazon, IBM, software as a service (SaaS) from a who
+le crew 
+of compan
+ies such as NetSuite, Cloud9, Job science, etc. Another advantage of cloud computing is cloud storage
+ 
+which provides a possible 
+way for storing big data. The obvious one is the time and cost that are needed to
+ 
+upload and download big data in the cloud envi
+ronment. Else,
+ 
+it becomes difficult to control the distribution of computation
+ 
+and the underlying hardware. But, the major issues are privacy
+ 
+concerns relating 
+to the hosting of data on public servers,
+ 
+and the storage of data from human studies. All these 
+issues
+ 
+will take big data and cloud 
+computing to a high level of development.
+ 
+ 
+C.
+ 
+Bio
+-
+inspired Computing for Big Data Analytics
+ 
+ 
+Bio inspired computing is a technique inspired my nature to address complex real world problems. Biological systems
+ 
+are self
+-
+ 
+organized without a central control. A bio
+-
+inspired
+ 
+cost minimization mechanism search and find the optimal
+ 
+data service solution on 
+considering cost of data management and service maintenance. These techniques are developed by
+ 
+biological molecu
+les such as DNA and 
+proteins to conduct
+ 
+computational calculations involving storing, retrieving, and processing of data. A significant feature of such 
+computing is that it integrates biologically derived materials to perform
+ 
+computational functions and re
+ceive intelligent performance.
+ 
+These systems are more suitable for big data applications.
+ 
+Huge amount of data are generated from variety of resources
+ 
+across the web 
+since the digitization. Analyzing these data and categorizing into text, image and video, e
+tc. will require lot of intelligent analytics 
+from data scientists and big data
+ 
+professionals. Proliferations of technologies are emerging like
+ 
+big data, IoT, cloud computing, bio 
+inspired computing etc.
+ 
+Whereas equilibrium of data can be done only by sele
+cting right
+ 
+platform to analyze large and furnish cost 
+effective results. Bio
+-
+inspired computing techniques serve as a key role in
+ 
+intelligent data analysis and its application to big data. 
+These
+ 
+algorithms help in performing data mining for large datasets
+ 
+algorithms help in performing data mining for large datasets
+ 
+due 
+to its optimization application. The most advantage is its
+ 
+simplicity and their rapid convergence to optimal solution
+ 
+while solving service 
+provision problems. Some applications to
+ 
+this end 
+using bio inspired computing was discussed in detail
+ 
+by Cheng et al. 
+ 
+ 
+D.
+ 
+Quantum Computing for Big Data Analysis
+ 
+A quantum computer has memory that is exponentially 
+larger than its physical size and can manipulate an exponential
+ 
+set of inputs 
+simultaneously.
+ 
+This exponential improve
+ment in computer systems might be possible. If a real quantum
+ 
+computer is available now, it 
+could have solved problems
+ 
+that are exceptionally difficult on recent computers, of course
+ 
+
+technical di
+fficulty in
+ 
+building quantum computer could soon be possible. Quantum
+ 
+computing provides a way to merge the quantum 
+mechanics to
+ 
+process the information. In traditional computer, information
+ 
+is presented by long strings of bits which encode either a
+ 
+zero o
+r a one. On the other hand a quantum computer uses
+ 
+quantum bits or qubits. The difference between qubit and bit
+ 
+is that, a qubit 
+is a quantum system that encodes the zero and
+ 
+the one into two distinguishable quantum states. Therefore,
+ 
+it can be capitalized on the 
+phenomena of superposition and
+ 
+entanglement. For
+ 
+example, 100 qubits in quantum systems require 2100 complex 
+values to be stored in 
+a classic computer system. It means that
+ 
+many big data problems can be solved much faster by l
+arger
+ 
+scale quantum computers compared 
+with classical computers.
+ 
+Hence it is a challenge for this generation to build a quantum computer and facilitate quantum computing to 
+solve big data problems.
+ 
+  
+ 
+IV.
+ 
+T
+OOLS FOR BIG DATA PR
+OCESSING
+ 
+Large numbers of tools ar
+e available to process big data. In
+ 
+this section
+, we discuss some current techniques for analysing big data with 
+emphasis on three important engineering tools namely MapReduce, Apache Spark, and Storm. Most of the available tools concentr
+ate on 
+batch proce
+ssing, steam processing and interactive analysis. Most batch processing tools are
+ 
+based on the Apache Hadoop infrastructure such 
+as Mahout
+ 
+and Dryad. Stream data applications are mostly used for real
+ 
+time analytic. Some examples of large scale streaming pl
+atform
+ 
+are 
+Strom and Splunk. The interactive analysis process allow
+ 
+users to directly interact in real time for their own analysis.
+ 
+For example 
+Dremel and Apache Drill are the big data plat
+-
+f
+orms that support interactive analysis. These tools help us in
+ 
+de
+veloping the big data 
+projects. A fabulous list of big data
+ 
+tools and techniques is also discussed by much researchers [6].
+ 
+The typical work flow of big data project 
+discussed by
+ 
+Huang et al is highlighted in this section and is depicted
+ 
+in Figure 4.
+ 
+ 
+
+**End Page**
+© 201
+8
+ 
+IJEDR | Volume
+ 
+6
+, Issue 
+1
+ 
+| ISSN: 2321
+-
+9939
+ 
+ 
+IJEDR1
+8
+0
+1
+110
+ 
+International Journal of Engineering Development and Research (
+www.ijedr.org
+)
+ 
+642
+ 
+ 
+ 
+Fig. 4 Work Flow of Big Project
+ 
+ 
+A.
+ 
+Apache Hadoop and MapReduce
+ 
+The most established software platform for big data anal
+ysis is Apache Hadoop and mapreduce. It consists of hadoop
+ 
+kernel, 
+mapreduce, hadoop distributed file system (HDFS) and apache hive etc. Ma
+p reduce is a programming model and apache hive etc. 
+Map reduce is a programming model
+ 
+for processing large datasets is based on divide and conquer
+ 
+method. The divide and conquer 
+method is implemented in two
+ 
+steps such as Map step and Reduce Step. Hadoop w
+orks on
+ 
+two kinds of nodes such as master node 
+and worker node. The
+ 
+master node divides the input into smaller sub problems and
+ 
+then distributes them to worker nodes in map step. 
+Thereafter
+ 
+the master node combines the outputs for all the sub problems
+ 
+in r
+educe step. Moreover, Hadoop and MapReduce works 
+as a powerful software framework for solving big data problems.
+ 
+It is also helpful in fault
+-
+tolerant storage and high throughput data 
+processing.
+ 
+ 
+B.
+ 
+Apache Mahout
+ 
+Apache mahout aims to provide scalable and 
+commercial
+ 
+machine learning techniques for large scale and intelligent data
+ 
+analysis 
+applications. Core algorithms of mahout including
+ 
+clustering, classification, pattern mining, regression, dimen
+sionality reduction, 
+evolutionary algorithms, and batch 
+based
+ 
+collaborative filtering run on top of Hadoop platform through
+ 
+map reduce framework. The 
+goal of mahout is to build a
+ 
+vibrant, responsive, diverse community to facilitate discussions o
+n the project and potential use cases. 
+The basic objective of Apach
+e Mahout is to provide a tool for elevating big challenges. The different companies those who have 
+implemented scalable machine learning algorithms are Google, IBM, Amazon, Facebook, and Twitter.
+ 
+ 
+C.
+ 
+Apache Spark 
+ 
+Apache spark is an open source big data proce
+ssing frame
+-
+ 
+work built for speed processing, and sophisticated analytics. It is easy 
+to use and was originally developed in 2009 in UC
+ 
+Berkeleys AMPLab. It was open sourced in 2010 as an Apache
+ 
+project. Spark lets 
+you quickly write applications in java, s
+cala,
+ 
+or python. In addition to map reduce operations, it supports
+ 
+SQL queries, streaming 
+data, machine learning, and graph data
+ 
+processing. Spark runs on top of existing hadoop distributed
+ 
+file system (HDFS) infrastructure 
+to provide enhanced and
+ 
+addition
+al functionality. Spark consists of components namely
+ 
+driver program, cluster manager and worker 
+nodes. The driver
+ 
+program serves as the starting point of execution of an appli
+cation on the spark cluster. The cluster manager 
+all
+ocates the
+ 
+resources and the
+ 
+worker nodes to do the data processing in
+ 
+the form of tasks. Each application will have a set of 
+processes
+ 
+called executors that are responsible for executing the tasks. The major advantage is that it provides support for deploying
+ 
+spark applications in a
+n existing hadoop clusters. Figure 5
+ 
+depicts the architecture diagram of Apache Spark. The various
+ 
+features of 
+Apache Spark are listed below:
+ 
+ 
+The prime focus of spark includes resilient distributed datasets (RDD), which store data in
+-
+memory and provide 
+fault tolerance 
+without replication. It supports iterative computation, improves speed and resource utilization. The foremost advantage is th
+at in 
+addition to MapReduce it also supports streaming data, machine learning and graph algorithms. Another advanta
+ge is that user can 
+run the application program in different languages such as Java, R, Python, or Scala
+. This is possible as it comes with higher
+-
+level 
+libraries for advanced analytics. These standard libraries increases developer productivity and can be 
+seamlessly combined to create 
+complex work
+-
+ 
+flows
+ 
+
+**End Page**
+© 201
+8
+ 
+IJEDR | Volume
+ 
+6
+, Issue 
+1
+ 
+| ISSN: 2321
+-
+9939
+ 
+ 
+IJEDR1
+8
+0
+1
+110
+ 
+International Journal of Engineering Development and Research (
+www.ijedr.org
+)
+ 
+643
+ 
+ 
+ 
+Fig. 5 Architecture of Apache Spark
+ 
+ 
+ 
+Spark helps to run an application in Hadoop, Cluster, up to 100 times faster in memory, and 10 times faster when running on d
+isk. 
+It is possible because of the reduct
+ion in number of read or write operations to disk. It is written in Scala programming language 
+and runs on java virtual machine (JVM) environment. Additionally, it supports java, python and R for developing applications 
+using 
+Spark.
+ 
+ 
+D.
+ 
+Dryad
+ 
+It is another po
+pular programming model for implementing 
+parallel and distributed programs for handling large context
+ 
+bases on 
+dataflow graph. It consists of a cluster of computing
+ 
+nodes, and a user use the resources of a computer cluster to run their program in 
+a distrib
+uted way. Indeed a dryad user use thousands of machines, each of them with multiple processors or cores.
+ 
+The major 
+advantage is that users do
+ 
+not need to know anything about concurrent programming. A dryad application runs a computational 
+directed graph th
+at is
+ 
+composed of computational vertices and communication chan
+nels. Therefore, dryad provides a large number 
+of functionality
+ 
+including generating of job graph, scheduling of the machines
+ 
+for the available processes, transition failure handling 
+in the
+ 
+clu
+ster, collection of performance metrics, visualizing the job,
+ 
+invoking user defined policies and dynamically updating the job
+ 
+graph in response to these policy decisions without knowing
+ 
+the semantics of the vertices.
+ 
+ 
+E.
+ 
+Storm
+ 
+Storm is a distributed and fault
+ 
+tolerant real time computation system for processing large streaming data. It is
+ 
+specially designed 
+for real time processing in contrasts with hadoop which is for batch processing. Additionally, it is also
+ 
+easy to set up and operate, 
+scalable, fault
+-
+toler
+ant to provide
+ 
+competitive performances. The storm cluster is apparently
+ 
+similar to hadoop cluster. On storm 
+cluster users run different
+ 
+topologies for different storm tasks whereas hadoop platform
+ 
+implements map reduce jobs for 
+corresponding applications.
+ 
+There are number of differences between map reduce jobs and topologies. The basic differences is that 
+map reduce job eventually finishes whereas a topology process messages all 
+two kinds of nodes such as master node and worker 
+node. The
+ 
+master node and wo
+rker node implement two kinds of roles
+ 
+such as nimbus and supervisor respectively. The two roles 
+have
+ 
+similar functions in accordance with job tracker and task tracker
+ 
+of map reduce framework. Nimbus is in charge of distributing
+ 
+code across the storm clust
+er, scheduling and assigning tasks
+ 
+to worker nodes, and monitoring the whole system. The supervisor 
+compiles tasks as assigned to them by nimbus. In addition, it start and terminate the process as necessary based on the instr
+uctions of 
+nimbus the whole com
+putational technology is partitioned and distributed  to a number of worker process and each worker process 
+implements a part of the topology.
+ 
+ 
+F.
+ 
+Apache Drill
+ 
+Apache drill is another distributed system for interactive
+ 
+analysis of big data. It has more flexib
+ility to support many
+ 
+types of 
+query languages, data formats, and data sources. It is
+ 
+also specially designed to exploit nested data. Also it has an
+ 
+objective to scale 
+up on 10,000 servers or more and reaches the
+ 
+capability to process petabytes of data and
+ 
+trillions of records
+ 
+in seconds.
+ 
+Drill use 
+HDFS for storage and 
+map reduce to
+ 
+perform batch analysis.
+ 
+ 
+V.  SUGGESTIONS FOR FUTURE WORK
+ 
+The amount of data collected from various applications all over the world across a wide variety of fields today is 
+expected to 
+double every two years. It has no utility unless
+ 
+these are analyzed to get useful information. This necessitates
+ 
+the development of 
+techniques which can be used to facilitate
+ 
+big data analysis. The development of powerful computers is
+ 
+a boon to
+ 
+implement these 
+techniques leading to automated
+ 
+systems. The transformation of data into knowledge is by
+ 
+no means an easy task for high performance 
+large
+-
+scale data
+ 
+processing, including exploiting parallelism of current and 
+upcoming computer 
+architectures for data mining. 
+Moreover,
+ 
+these data may involve uncertainty in many different forms. Many different models like fuzzy sets, rough sets, soft sets,
+ 
+neural networks, their generalizations and hybrid models obtained by combining two or more of
+ 
+these models have been
+ 
+found to be 
+
+**End Page**
+© 201
+8
+ 
+IJEDR | Volume
+ 
+6
+, Issue 
+1
+ 
+| ISSN: 2321
+-
+9939
+ 
+ 
+IJEDR1
+8
+0
+1
+110
+ 
+International Journal of Engineering Development and Research (
+www.ijedr.org
+)
+ 
+644
+ 
+ 
+fruitful in representing data. These models are
+ 
+also very much fruitful for analysis. More often than not, big
+ 
+data are reduced to 
+include only the important characteristics
+ 
+necessary from a particular study point of vie
+w or depending
+ 
+upon the application area. So, 
+reduction techniques have been
+ 
+developed. Often the data collected have missing values. These
+ 
+values need to be generated or the 
+tuples having these missing
+ 
+values are eliminated from the data set before analys
+is. More importantly, these new challenges may 
+comprise, sometimes
+ 
+even deteriorate, the performance, efficiency and scalability
+ 
+of the dedicated data intensive computing systems. 
+The later
+ 
+approach sometimes leads to loss of information and hence
+ 
+not pref
+erred. This brings up many research issues in the
+ 
+industry 
+and research community in forms of capturing and accessing data
+ 
+effectively. In addition, fast processing while
+ 
+achieving high 
+performance and high throughput, and storing
+ 
+it efficiently for future
+ 
+use is another issue. Further, programming for big data analysis 
+is an important challenging
+ 
+issue. Expressing data access requirements of applications
+ 
+and designing programming language 
+abstractions to exploit
+ 
+parallelism are an immediate need.
+ 
+    
+ 
+   
+A
+dditionally Machine learning concepts and tools are
+ 
+gaining popularity among researchers to facilitate meaningful
+ 
+results from 
+these concepts. Research in the area of machine learning tools of big data are started recently needs drastic change to adopt
+ 
+it.
+ 
+We 
+argue that while each other of the tool has
+ 
+their advantages and limitations, more efficient tools can be
+ 
+developed for dealing with 
+problems inherent to big data. The
+ 
+efficient tools to be developed must have provision to handle
+ 
+noisy and imbalance da
+ta, uncertainty 
+and inconsistency, and missing values.
+ 
+V
+I
+.
+ 
+C
+ONCLUSION
+ 
+In recent years data are generated at dramatic pace analyzing these data is challenging for a general man. To this end in thi
+s paper, 
+we survey the various research issues, challenges, a
+nd tools used to analyze these big data. From this survey, it is understood that 
+every big data platform has its individual focus some of them are designed for batch
+ 
+processing whereas some are good at real
+-
+time 
+analytic. Each big data platform also 
+has sp
+ecific functionality. Different
+ 
+techniques used for the analysis include statistical analysis,
+ 
+machine learning, data mining, intelligent analysis, cloud com
+puting, quantum computing, and data stream processing. We
+ 
+believe 
+that in future researchers will p
+ay more attention to
+ 
+these techniques to solve problems of big data effectively and efficiently.
+ 
+ 
+REFERENCES
+ 
+[1]  M. K. Kakhani, S. Kakhani 
+and S. R.Biradar, Research issues in big data analytics, 
+International Journal of Application or 
+Innovation in
+Engineering &Management, 2(8) (2015), pp.228
+-
+232.
+ 
+[2]  C. Lynch, Big data: How do your data grow? Nature, 455 (2008), pp.28
+-
+29.
+ 
+[3]  
+X. Jin, B. W.Wah, X. Cheng and Y. Wang, Significa
+nce and challenges or big data research, Big Data Research, 2(2)(2015), 
+pp.59
+-
+64.
+ 
+[4]  
+C.  L. Philip, Q.  Chen and C. Y. Zhang, Data
+-
+intensive applications,
+ 
+challenges, techniques and technologies: A survey on big 
+data, Information Sciences 
+275 (2
+014), pp.314
+-
+347.
+ 
+[5]  
+K. Kambatla, G. Kollias, V. Kumar and A. Gram, Trends in big data
+ 
+analytics,  Journal of Parallel and Distributed Computing, 
+74(7) (2014),
+ 
+pp.2561
+-
+2573.
+ 
+[6]  S. Del. Rio, V.  Lopez, J.  M. Bentez and F.  Herrera, on 
+the use of mapreduce for imbalanced big data using random forest, 
+Information Sciences, 285 (2014), pp.112
+-
+137.
+ 
+[7]  
+Z. Huang, A fast clustering algorithm to cluster very large categorical
+ 
+data sets in data mining,  SIGMOD Workshop on Research 
+Iss
+ues on
+ 
+Data 
+Mining and Knowledge Discovery, 1997.
+ 
+[8]  O.Y. AL
+-
+Jarrah, P.D. Yoo, S.Muhaidat, G. K. Karagiannidis and K. Taha, Efficient machine learning for big data: A review, Big 
+Data Research 2(3) (2015), pp 87
+-
+93. 
+ 
+[9]  Changwon. Y, Lui
+s. Ramirez and Juan. Liuzzi, Big data analysis using modern statistical and machine learning methods in 
+medicine, International Neurourology Journal, 18 (2014), pp.50
+-
+57.
+ 
+[10] P. Singh and B. Suri, Quality assessment of data using statistical and m
+achine learning methods. L. C.Jain, 
+H. S.Behera, J. 
+K.Mandal and D. 
+P.Mohapatra (eds.), Computational Intelligence in Data Mining, 2 (2014), pp. 89
+-
+97.
+ 
+[11] 
+A. Jacobs, The pathologies of big data, Communications of the ACM, 52(8) (2009), pp.36
+-
+44.
+ 
+[12]. 
+H. Zhu, Z. Xu and Y. Huang, Research on the security technology of big data information, Internat
+ional Conference on 
+Information 
+Technology Management Innovation, 2015, pp.1041
+-
+1044.   
+ 
+[13]. Z. Hongjun, H. Wenning, H. 
+Dengchao and M. Yuxing, Survey of research on information security in big data, Congress
+ 
+da 
+sociedada 
+Brasileira de Computacao, 2014, pp.1
+-
+6.
+ 
+[14]. I. Merelli, H. Perez
+-
+sanchez, S. Gesing
+ 
+and D. Agostino, Managing, analyzing, and integrating big data in medical 
+bioinformatics: open
+ 
+problems and future perspectives, BioMed Research International, 2014, (2014), pp.1
+-
+13.
+ 
+[15]  X. Y.Chen and Z. G.Jin, Research on key technology and app
+lications for internet of things, Physics Procedia, 33, (2012), pp. 
+561
+-
+566.
+ 
+[16]  M. D. Assuno, R. N. Calheiros, S. Bianchi, M. a. S. Netto and R. Buyya, Big data computing and clouds: Trends
+ 
+and future 
+directions, Journal 
+of Parallel and Distrib
+uted Computing, 79 (2015), pp.3
+-
+15.
+ 
+
+**End Page**
