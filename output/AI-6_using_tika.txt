@@ -1,0 +1,83 @@
+
+
+
+
+
+
+
+
+AI-6
+An AI system is composed of an agent and its environment. The agents act in their environment. The environment may contain other agents.
+What are Agent and Environment?
+An agent is anything that can perceive its environment through sensors and acts upon that environment through effectors.
+· A human agent has sensory organs such as eyes, ears, nose, tongue and skin parallel to the sensors, and other organs such as hands, legs, mouth, for effectors.
+· A robotic agent replaces cameras and infrared range finders for the sensors, and various motors and actuators for effectors.
+· A software agent has encoded bit strings as its programs and actions.
+
+Agent Terminology
+· Performance Measure of Agent − It is the criteria, which determines how successful an agent is.
+· Behavior of Agent − It is the action that agent performs after any given sequence of percepts.
+· Percept − It is agent’s perceptual inputs at a given instance.
+· Percept Sequence − It is the history of all that an agent has perceived till date.
+· Agent Function − It is a map from the precept sequence to an action.
+Rationality
+Rationality is nothing but status of being reasonable, sensible, and having good sense of judgment.
+Rationality is concerned with expected actions and results depending upon what the agent has perceived. Performing actions with the aim of obtaining useful information is an important part of rationality.
+What is Ideal Rational Agent?
+An ideal rational agent is the one, which is capable of doing expected actions to maximize its performance measure, on the basis of −
+· Its percept sequence
+· Its built-in knowledge base
+Rationality of an agent depends on the following −
+· The performance measures, which determine the degree of success.
+· Agent’s Percept Sequence till now.
+· The agent’s prior knowledge about the environment.
+· The actions that the agent can carry out.
+A rational agent always performs right action, where the right action means the action that causes the agent to be most successful in the given percept sequence. The problem the agent solves is characterized by Performance Measure, Environment, Actuators, and Sensors (PEAS).
+The Structure of Intelligent Agents
+Agent’s structure can be viewed as −
+· Agent = Architecture + Agent Program
+· Architecture = the machinery that an agent executes on.
+· Agent Program = an implementation of an agent function.
+Simple Reflex Agents
+· They choose actions only based on the current percept.
+· They are rational only if a correct decision is made only on the basis of current precept.
+· Their environment is completely observable.
+Condition-Action Rule − It is a rule that maps a state (condition) to an action.
+
+Model Based Reflex Agents
+They use a model of the world to choose their actions. They maintain an internal state.
+Model − knowledge about “how the things happen in the world”.
+Internal State − It is a representation of unobserved aspects of current state depending on percept history.
+Updating the state requires the information about −
+· How the world evolves.
+· How the agent’s actions affect the world.
+
+Goal Based Agents
+They choose their actions in order to achieve goals. Goal-based approach is more flexible than reflex agent since the knowledge supporting a decision is explicitly modeled, thereby allowing for modifications.
+Goal − It is the description of desirable situations.
+
+Utility Based Agents
+They choose actions based on a preference (utility) for each state.
+Goals are inadequate when −
+· There are conflicting goals, out of which only few can be achieved.
+· Goals have some uncertainty of being achieved and you need to weigh likelihood of success against the importance of a goal.
+
+The Nature of Environments
+Some programs operate in the entirely artificial environment confined to keyboard input, database, computer file systems and character output on a screen.
+In contrast, some software agents (software robots or softbots) exist in rich, unlimited softbots domains. The simulator has a very detailed, complex environment. The software agent needs to choose from a long array of actions in real time. A softbot designed to scan the online preferences of the customer and show interesting items to the customer works in the real as well as an artificial environment.
+The most famous artificial environment is the Turing Test environment, in which one real and other artificial agents are tested on equal ground. This is a very challenging environment as it is highly difficult for a software agent to perform as well as a human.
+Turing Test
+The success of an intelligent behavior of a system can be measured with Turing Test.
+Two persons and a machine to be evaluated participate in the test. Out of the two persons, one plays the role of the tester. Each of them sits in different rooms. The tester is unaware of who is machine and who is a human. He interrogates the questions by typing and sending them to both intelligences, to which he receives typed responses.
+This test aims at fooling the tester. If the tester fails to determine machine’s response from the human response, then the machine is said to be intelligent.
+Properties of Environment
+The environment has multifold properties −
+· Discrete / Continuous − If there are a limited number of distinct, clearly defined, states of the environment, the environment is discrete (For example, chess); otherwise it is continuous (For example, driving).
+· Observable / Partially Observable − If it is possible to determine the complete state of the environment at each time point from the percepts it is observable; otherwise it is only partially observable.
+· Static / Dynamic − If the environment does not change while an agent is acting, then it is static; otherwise it is dynamic.
+· Single agent / Multiple agents − The environment may contain other agents which may be of the same or different kind as that of the agent.
+· Accessible / Inaccessible − If the agent’s sensory apparatus can have access to the complete state of the environment, then the environment is accessible to that agent.
+· Deterministic / Non-deterministic − If the next state of the environment is completely determined by the current state and the actions of the agent, then the environment is deterministic; otherwise it is non-deterministic.
+· Episodic / Non-episodic − In an episodic environment, each episode consists of the agent perceiving and then acting. The quality of its action depends just on the episode itself. Subsequent episodes do not depend on the actions in the previous episodes. Episodic environments are much simpler because the agent does not need to think ahead.
+
+

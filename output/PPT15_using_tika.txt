@@ -1,0 +1,620 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OOPC++ UNIT-1
+
+
+Prof. Rupesh G. Vaishnav
+rupesh.vaishnav@darshan.ac.in
+94280-37452
+Information & Network Security (2170709)	 Darshan Institute of Engineering & Technology
+UNIT-3
+Multiple encryptions and triple DES
+
+
+
+
+
+1
+
+Outline
+Multiple encryption and triple DES 
+Electronic Code Book Mode
+Cipher Block Chaining Mode 
+Cipher Feedback Mode 
+Output Feedback Mode
+Counter Mode 
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+X.800 and RFC 2828
+International Telecommunication Union (ITU)
+2
+
+Block Cipher Modes of Operations
+To apply a block cipher in a variety of applications, five "modes of operation" have been defined.
+The five modes are intended to cover a wide variety of applications of encryption for which a block cipher could be used. 
+These modes are intended for use with any symmetric block cipher, including triple DES and AES.
+Electronic Code Book (ECB)
+Cipher Block Chaining (CBC)
+Cipher Feedback (CFB)
+Output Feedback (OFB) 
+Counter (CTR) 
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+1. Electronic Code Book (ECB)
+In ECB Mode Plaintext handled one block at a time and each block of plaintext is encrypted using the same key.
+The term codebook is used because, for a given key, there is a unique ciphertext for every b-bit block of plaintext.
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+1. ECB Encryption & Decryption
+P1
+Encrypt
+C1
+
+K
+P2
+Encrypt
+C2
+
+K
+PN
+Encrypt
+CN
+
+K
+C1
+Decrypt
+P1
+
+K
+C2
+Decrypt
+P2
+
+K
+CN
+Decrypt
+PN
+
+K
+…
+…
+64-bit
+64-bit
+64-bit
+64-bit
+64-bit
+64-bit
+64-bit
+64-bit
+64-bit
+64-bit
+64-bit
+64-bit
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+Electronic Code Book - Cont…
+Strength: it’s simple.
+Weakness:
+Repetitive information contained in the plaintext may show in the ciphertext, if aligned with blocks. 
+If the message has repetitive elements with a period of repetition a multiple of b bits, then these elements can be identified by the analyst.
+Typical application: 
+Secure transmission of short pieces of information (e.g. a temporary encryption key)
+
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+2. Cipher Block Chaining (CBC)
+CBC is a technique in which the same plaintext block, if repeated, produces different ciphertext blocks. 
+In this scheme, the input to the encryption algorithm is the XOR of the current plaintext block and the preceding ciphertext block; the same key is used for each block. 
+To produce the first block of ciphertext, an initialization vector (IV) is XORed with the first block of plaintext. 
+On decryption, the IV is XORed with the output of the decryption algorithm to recover the first block of plaintext.
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+2. CBC - Encryption & Decryption
+P1
+Encrypt
+C1
+
+K
+
+
+IV
+P2
+Encrypt
+C2
+
+K
+
+
+…
+PN
+Encrypt
+CN
+
+K
+
+
+
+C1
+Decrypt
+P1
+
+
+K
+
+IV
+C2
+Decrypt
+P2
+
+
+K
+
+CN
+Decrypt
+PN
+
+
+K
+…
+
+
+CN-1
+CN-1
+
+
+
+8
+
+2. Cipher Block Chaining (CBC) – Cont…
+Strength: because of the chaining mechanism of CBC, it is an appropriate mode for encrypting messages of length greater than b bits
+Typical application: 
+General-purpose block oriented transmission
+Authentication
+
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+3. Cipher Feedback Mode (CFB)
+For AES, DES, or any block cipher, encryption is performed on a block of b bits. In DES, b = 64 and in AES, b = 128. 
+
+However, it is possible to convert a block cipher into a stream cipher, using cipher feedback (CFB) mode, output feedback (OFB) mode, and counter (CTR) mode. 
+
+A stream cipher eliminates the need to pad a message to be an integral number of blocks. 
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+IV
+Encrypt
+
+K
+
+Select s bits
+Discard b-s bits
+P1
+
+S bits
+C1
+S bits
+Shift register b-s bits | s bits
+Encrypt
+
+K
+
+Select s bits
+Discard b-s bits
+P2
+
+S bits
+C2
+S bits
+
+…
+Shift register b-s bits | s bits
+Encrypt
+
+K
+
+Select s bits
+Discard b-s bits
+PN
+
+S bits
+CN
+S bits
+
+
+CN-1
+3. CFB Encryption
+
+
+Unit od transmission is 8 bits
+Common value of s=8
+11
+
+IV
+Encrypt
+
+K
+
+Select s bits
+Discard b-s bits
+P1
+S bits
+Shift register b-s bits | s bits
+Encrypt
+
+K
+
+Select s bits
+Discard b-s bits
+P2
+S bits
+…
+Shift register b-s bits | s bits
+Encrypt
+
+K
+
+Select s bits
+Discard b-s bits
+PN
+S bits
+
+CN-1
+3. CFB Decryption
+
+CN
+S bits
+C2
+S bits
+C1
+S bits
+
+
+Unit od transmission is 8 bits
+Common value of s=8
+12
+
+CFB Mode
+The input to the encryption function is a b-bit shift register that is initially set to some initialization vector (IV). 
+The leftmost (most significant) s bits of the output of the encryption function are XORed with the first segment of plaintext P1  to produce the first unit of ciphertext C1 , which is then transmitted. 
+In addition, the contents of the shift register are shifted left by s bits, and C1 is placed in the rightmost (least significant) s bits of the shift register. 
+For decryption, the same scheme is used, except that the received ciphertext unit is XORed with the output of the encryption function to produce the plaintext unit. 
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+CFB Mode – Cont…
+
+
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+4. Output Feedback Mode (OFB)
+The output feedback (OFB) mode is similar in structure to that of CFB. 
+For OFB, the output of the encryption function is fed back to become the input for encrypting the next block of plaintext.
+In CFB, the output of the XOR unit is fed back to become input for encrypting the next block. 
+The other difference is that the OFB mode operates on full blocks of plaintext and ciphertext, whereas CFB operates on an s-bit subset.
+Nonce: A time-varying value that has at most a negligible chance of repeating, for example, a random value that is generated anew for each use, a timestamp, a sequence number,  or some combination of these.
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+Nonce
+Encrypt
+C1
+
+K
+
+
+P1
+4. OFB Encryption
+Encrypt
+C2
+
+K
+
+
+P2
+Encrypt
+CN
+
+K
+
+
+PN
+…
+
+
+
+
+
+
+
+16
+
+Nonce
+Encrypt
+P1
+
+K
+
+
+C1
+4. OFB Decryption
+Encrypt
+P2
+
+K
+
+
+C2
+Encrypt
+PN
+
+K
+
+
+CN
+…
+
+
+
+
+
+
+
+17
+
+OFB Mode
+Each bit in the ciphertext is independent of the previous bit or bits. 
+This avoids error propagation
+Pre-compute of forward cipher is possible
+
+
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+5. Counter Mode (CTR)
+Counter (CTR) mode has increased recently with applications to ATM (asynchronous transfer mode) network security and IP sec (IP security).
+A counter equal to the plaintext block size is used. 
+The counter value must be different for each plaintext block that is encrypted. 
+Typically, the counter is initialized to some value and then incremented by 1 for each subsequent block
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+Counter 1
+Encrypt
+C1
+
+K
+
+
+P1
+5. CTR Encryption
+Encrypt
+C2
+
+K
+
+
+P2
+Encrypt
+CN
+
+K
+
+
+PN
+…
+
+Counter 2
+Counter N
+
+
+
+20
+
+4. CTR Decryption
+Counter 1
+Encrypt
+P1
+
+K
+
+
+C1
+Encrypt
+P2
+
+K
+
+
+C2
+Encrypt
+PN
+
+K
+
+
+CN
+…
+
+Counter 2
+Counter N
+
+
+
+
+21
+
+Advantages of the CTR Mode
+Strengths:  
+Needs only the encryption algorithm
+Random access to encrypted data blocks
+blocks can be processed (encrypted or decrypted) in parallel
+Simple; fast encryption/decryption
+
+Counter must be 
+Must be unknown and unpredictable
+pseudo-randomness in the key stream is a goal
+
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+Summary of all modes
+	Operation
+Mode	Description	Type of Result
+
+	ECB	Each n-bit block is encrypted independently with same key	Block Cipher
+
+	CBC	Same as ECB, but each block is XORed with previous cipher text	Block Cipher
+
+	CFB	Each s-bit block is XORed with s-bit key which is part of previous cipher text	Stream Cipher
+
+	OFB	Same as CFB, but the shift register is updated by the previous s-bit key	Stream Cipher
+
+	CTR	Same as OFB, but a counter is used instead of nonce	Stream Cipher
+
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+Multiple Encryption
+Given the potential vulnerability of DES to a brute-force attack, there has been considerable interest in finding an alternative. 
+One approach is to design a completely new algorithm, of which AES is a prime example.
+Another alternative, which would preserve the existing investment in software and equipment, is to use multiple encryption with DES and multiple keys. 
+
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+Double DES
+
+
+C=E(K2,E(K1, P))
+P=D(K1,D(K2, C))
+X = E(K1, P) = D(K2, C)
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+Meet in the Middle Attack
+This attack involves encryption from one end, decryption from the other and matching the results in the middle.
+
+Suppose cryptanalyst knows P and corresponding C.
+
+Now, the aim is to obtain the values of K1 and K2.
+
+
+
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+Meet in the Middle Attack Step-1
+	
+	
+	
+	
+
+For all possible values (256) of key K1, the cryptanalyst would encrypt the P by performing E(K1,P).
+The cryptanalyst would store output in a table.
+
+
+Encrypt
+P
+Possible Keys
+(Key = K1)
+00
+01
+10
+11
+Table of Cipher Text
+Cryptanalyst encryption operation
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+
+27
+
+Meet in the Middle Attack Step-2
+	
+	
+	
+	
+
+Cryptanalyst decrypt the known C with all possible values of K2.
+In each case cryptanalyst will compare the resulting value with the all values in the table of ciphertext.
+
+
+Decrypt
+C
+Possible Keys
+(Key = K2)
+00
+01
+10
+11
+Table of Cipher Text
+Cryptanalyst decryption operation
+For each result do a table look up
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+
+28
+
+Triple DES
+
+
+C=E(K1,D(K2, E(K1,P)))
+P=D(K1,E(K2, D(K1,C)))
+
+Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›
+
+
+
+

@@ -1,0 +1,69 @@
+
+
+
+
+
+
+
+
+AI-15
+Robotics is a domain in artificial intelligence that deals with the study of creating intelligent and efficient robots.
+What are Robots?
+Robots are the artificial agents acting in real world environment.
+Objective
+Robots are aimed at manipulating the objects by perceiving, picking, moving, modifying the physical properties of object, destroying it, or to have an effect thereby freeing manpower from doing repetitive functions without getting bored, distracted, or exhausted.
+What is Robotics?
+Robotics is a branch of AI, which is composed of Electrical Engineering, Mechanical Engineering, and Computer Science for designing, construction, and application of robots.
+Aspects of Robotics
+· The robots have mechanical construction, form, or shape designed to accomplish a particular task.
+· They have electrical components which power and control the machinery.
+· They contain some level of computer program that determines what, when and how a robot does something.
+Difference in Robot System and Other AI Program
+Here is the difference between the two −
+	AI Programs
+	Robots
+
+	They usually operate in computer-stimulated worlds.
+	They operate in real physical world
+
+	The input to an AI program is in symbols and rules.
+	Inputs to robots is analog signal in the form of speech waveform or images
+
+	They need general purpose computers to operate on.
+	They need special hardware with sensors and effectors.
+
+
+Robot Locomotion
+Locomotion is the mechanism that makes a robot capable of moving in its environment. There are various types of locomotions −
+· Legged
+· Wheeled
+· Combination of Legged and Wheeled Locomotion
+· Tracked slip/skid
+Legged Locomotion
+· This type of locomotion consumes more power while demonstrating walk, jump, trot, hop, climb up or down, etc.
+· It requires more number of motors to accomplish a movement. It is suited for rough as well as smooth terrain where irregular or too smooth surface makes it consume more power for a wheeled locomotion. It is little difficult to implement because of stability issues.
+· It comes with the variety of one, two, four, and six legs. If a robot has multiple legs then leg coordination is necessary for locomotion.
+The total number of possible gaits (a periodic sequence of lift and release events for each of the total legs) a robot can travel depends upon the number of its legs.
+If a robot has k legs, then the number of possible events N = (2k-1)!.
+In case of a two-legged robot (k=2), the number of possible events is N = (2k-1)! = (2*2-1)! = 3! = 6.
+Hence there are six possible different events −
+· Lifting the Left leg
+· Releasing the Left leg
+· Lifting the Right leg
+· Releasing the Right leg
+· Lifting both the legs together
+· Releasing both the legs together
+In case of k=6 legs, there are 39916800 possible events. Hence the complexity of robots is directly proportional to the number of legs.
+
+Wheeled Locomotion
+It requires fewer number of motors to accomplish a movement. It is little easy to implement as there are less stability issues in case of more number of wheels. It is power efficient as compared to legged locomotion.
+· Standard wheel − Rotates around the wheel axle and around the contact
+· Castor wheel − Rotates around the wheel axle and the offset steering joint.
+· Swedish 45o and Swedish 90o wheels − Omni-wheel, rotates around the contact point, around the wheel axle, and around the rollers.
+· Ball or spherical wheel − Omnidirectional wheel, technically difficult to implement.
+
+Slip/Skid Locomotion
+In this type, the vehicles use tracks as in a tank. The robot is steered by moving the tracks with different speeds in the same or opposite direction. It offers stability because of large contact area of track and ground.
+
+
+

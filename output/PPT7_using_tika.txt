@@ -1,0 +1,1094 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+W5 of Computer Engineering (Why, What, When, Where, How)
+
+
+Prof. Dixita B. Kagathara
+
+
+
+
+
+
+
+2160704
+Theory of Computation 
+Unit-5
+Turing Machine
+
+dixita.kagathara@darshan.ac.in
+
+
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Topics to be covered
+What is Turing Machine?
+Formal Definition: Turing Machine 
+Design of Turing Machine
+Universal Turing Machine
+Church Turing Thesis
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Introduction 
+Finite Automata
+Input Strings
+
+Pushdown Automata
+Input Strings
+Stack 
+Turing Machine
+Input Strings
+Tape
+Special symbol 
+Control portion
+
+Tape Head
+
+
+Stack Control
+I/p
+Accept | Reject
+Stack 
+
+
+FA
+TM
+PDA
+Regular language
+Context free language
+Recursively enumerable language
+a
+a
+a
+b
+a
+a
+a
+b
+b
+Δ
+Δ
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Turing Machine
+
+
+
+
+The tape is capable of performing following three operations:
+	Read a symbol above the tape head.
+	Modify/Update a symbol above the tape head.
+	Shifting either to previous square or next square.
+
+a
+a
+b
+a
+b
+Head
+Δ
+Δ
+b
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Turing Machine
+Head
+a
+a
+b
+a
+b
+Δ
+Δ
+
+
+
+
+
+
+
+Control portion 
+Turing Machine = Control portion  + Tape
+Tape
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Turing Machine
+Operation to be performed by TM:	
+	Read a symbol above the tape head.
+	Modify/Update a symbol above the tape head.
+	Shifting either to previous square or next square.
+
+
+
+a | b, R
+Read
+Update
+Shift (L or R or S)
+b | a, L
+a | Δ, R
+a | a, R
+a
+a
+b
+a
+b
+Δ
+Δ
+Head
+b
+a | A, S
+Some other Ex:
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Definition: Turing Machine
+A Turing machine is a 5-tuple  where,
+	is a finite set of states, assumed not to contain ha 	(Acceptance State) and hr (Rejection State).
+	:  input Symbols
+	 tape alphabets
+	 : is initial state, is an element of Q.
+	 : is a transition function.
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Turing Machine Accepting 
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a Turing Machine Accepting 
+L = {ab*a}
+Strings accepting in given L are:
+aa
+a b a
+a b b a
+a b b b a
+a
+a
+b
+Δ
+Δ
+Tape
+A
+B
+A
+Logic:
+Read ‘a’, replace ‘a’ by ‘A’ (aA)
+Read all ‘b’ one by one & replace it by ‘B’ (bB)
+	if no ‘b’ found: SKIP step 2
+Read ‘a’, replace ‘a’ by ‘A’ (aA)
+
+a
+a
+b
+b
+Δ
+Δ
+A
+B
+B
+A
+a
+a
+Δ
+Δ
+A
+A
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a Turing Machine Accepting 
+
+
+
+
+Δ|Δ,R
+
+a|A,R
+b|B,R
+Δ|Δ,S
+a|A,R
+
+b|B,R
+a|A,R
+b|B,R
+a
+a
+b
+Δ
+Δ
+Tape
+Control portion 
+A
+B
+A
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Turing Machine Accepting
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a Turing Machine Accepting
+L = {anbn}
+Strings accepting in given L are:
+a b
+a a b b
+a a a b b b
+Tape
+Logic:
+Read ‘a’, replace ‘a’ by ‘A’ (aA)
+Move RIGHT to first ‘b’
+	if none : REJECT
+Replace ‘b’ by ‘B’ (bB)
+Move LEFT to leftmost ‘a’
+Repeat the above steps until no more a’s
+Make sure no more b’s remain.
+
+
+a
+b
+a
+Δ
+Δ
+A
+A
+B
+b
+B
+a
+b
+a
+Δ
+Δ
+A
+A
+B
+b
+B
+a
+A
+b
+B
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a Turing machine for accepting 
+
+
+
+a/a,R
+
+Δ/Δ,R
+a/A,R
+b/B,L
+B/B,R
+a/a,L
+B/B,L
+
+B/B,R
+A/A,R
+
+B/B,R
+Δ/Δ,S
+a
+b
+a
+Δ
+Δ
+A
+A
+B
+b
+B
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Turing Machine Accepting
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a Turing machine for accepting 
+
+
+
+
+Δ/Δ,S
+
+a/a,R
+
+
+
+Δ/Δ,R
+a/A,R
+b/B,R
+b/b,R
+c/C,L
+a/a,L
+
+b/b,L
+B/B,L
+
+A/A,R
+Δ/Δ,S
+C/C,R
+B/B,R
+B/B,R
+C/C,R
+B/B,R
+C/C,R
+C/C,L
+
+a
+c
+b
+b
+Δ
+Δ
+a
+c
+A
+B
+C
+A
+B
+C
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Turing Machine Accepting 
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a TM for accepting Palindrome strings of even & odd length.
+L = Palindrome string
+Strings accepting in given L are:
+a a
+b a b
+a b b a
+b a b a b
+Tape
+Logic:
+Read leftmost symbol , replace it with Δ
+Keep moving to the right until the rightmost symbol, 
+If matched with leftmost symbol then replace it with Δ
+Otherwise : REJECT the String
+Repeat the above steps until no more symbol left in string.
+
+a
+b
+a
+Δ
+Δ
+Δ
+Δ
+Δ
+b
+Δ
+b
+a
+a
+Δ
+Δ
+Δ
+Δ
+Δ
+b
+Δ
+b
+Δ
+Even Length
+Odd Length
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a TM for accepting Palindrome strings of even & odd length.
+
+
+
+
+Δ/Δ,R
+
+b/b,R
+
+
+
+Δ/Δ,R
+Δ/Δ,L
+Δ/Δ,L
+a/Δ,R
+Δ/Δ,R
+a/Δ,L
+a/a,L
+b/b,L
+b/Δ,L
+b/Δ,R
+a/a,R
+b/b,R
+Δ/Δ,R
+Δ/Δ,R
+(odd pal)
+(odd pal)
+(even pal)
+a
+a
+b
+b
+Δ
+Δ
+Δ
+a/a,R
+Δ
+Δ
+Δ
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+String Tracing
+
+├ (q0,△ a a)
+├ (q1,△ a a)
+├ (q2,△ △ a )
+├ (q2,△ △ a △ )
+├ (q3,△ △ a )
+├ (q4,△ △ )
+├ (q1,△ △ △)
+├ (ha, △ △ △ △)
+ Accept
+Exercise
+aba
+abab
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+TM Accepting same no of 0’s and 1’s
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a TM for accepting same no of 0’s and 1’s
+1
+0
+1
+0
+Δ
+Δ
+x
+x
+x
+x
+L = Same no. of 0’s and 1’s
+Strings accepting in given L are:
+01
+10
+0101
+1100
+100011
+1
+0
+0
+Δ
+Δ
+x
+x
+x
+x
+0
+1
+1
+x
+x
+Logic:
+Move right, Read first leftmost 0, replace 0 with X (0X)
+Keep moving to the left until you encounter Δ
+Move right, Read first leftmost 1, replace 1 with X (1X)
+Keep moving to the left until you encounter Δ 
+Repeat the above steps until no more 0’s and 1’s left in string.
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a TM for accepting same no of 0’s and 1’s
+
+
+
+
+Δ/Δ,R
+
+
+0/x,L
+
+Δ/Δ,R
+1/x,L
+Δ/Δ,L
+Δ/Δ,R
+Δ/Δ,S
+x/x,L
+x/x,R
+
+0/0,R
+
+1/1,L
+
+0/0,L
+
+1
+1
+0
+0
+Δ
+Δ
+1/1,R
+
+X
+x/x,L
+
+X
+X
+x/x,R
+
+X
+x/x,L
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+TM Accepting same no of a’s, b’s & c’s
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a TM for Accepting 
+
+
+
+
+Δ/Δ,R
+
+
+a/x,L
+
+
+
+Δ/Δ,R
+b/x,L
+Δ/Δ,R
+c/x,L
+Δ/Δ,L
+Δ/Δ,R
+Δ/Δ,S
+x/x,L
+x/x,R
+b/b,R
+c/c,R
+x/x,R
+a/a,R
+c/c,R
+x/x,R
+b/b,R
+a/a,R
+x/x,L
+b/b,L
+c/c,L
+x/x,L
+a/a,L
+c/c,L
+x/x,L
+b/b,L
+a/a,L
+b
+b
+c
+c
+Δ
+Δ
+a
+a
+X
+X
+X
+X
+X
+X
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Turing machine to delete a symbol
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a Turing machine to delete a symbol
+a
+b
+Δ
+Δ
+Δ
+a
+b
+ΔaabΔ
+
+
+Logic:
+Replace the symbol you want to delete by Δ.
+Keep moving to the Right until you encounter Δ.
+One by one Keep shifting every symbol one step to left until you encounter Δ. 
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a Turing machine to delete a symbol
+
+
+
+a/Δ,R
+Δ/Δ,R
+a/a,R
+b/b,R
+
+
+a/a,L
+a/Δ,L
+Δ/a,S
+
+Δ/Δ,L
+a/b,L
+b/a,L
+Δ/b,S
+b/Δ,L
+b/b,L
+Δ/Δ,S
+a
+b
+b
+a
+Δ
+Δ
+b/Δ,R
+Δ
+Δ
+b
+a
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Turing machine to copy a string
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a Turing machine to copy a string
+a
+b
+a
+Δ
+Δ
+A
+Δ
+B
+Δ
+Δ
+b
+a
+b
+String:
+Δ ab 
+
+
+Δ bab 
+ Δ ab 
+ Δ bab 
+a
+b
+a
+Δ
+Δ
+A
+Δ
+B
+Δ
+Δ
+b
+a
+b
+b
+a
+B
+b
+A
+a
+Δ
+b
+a
+Δ
+Original 
+Pasted  
+Original 
+Pasted  
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a Turing machine to copy a string
+
+
+
+
+Δ/Δ,R
+
+a/a,R
+
+
+
+Δ/Δ,R
+Δ/Δ,R
+a/A,R
+Δ/Δ,L
+Δ/a,L
+b/b,L
+Δ/b,L
+b/B,R
+a/a,R
+b/b,R
+A/A,R
+
+
+a/a,R
+b/b,R
+b/b,L
+a/a,R
+Δ/Δ,L
+B/b,L
+Δ/Δ,S
+a
+a
+b
+b
+Δ
+Δ
+Δ
+Δ
+A
+b/b,R
+a/a,L
+B/B,R
+B
+b/b,R
+a/a,L
+
+A/a,L
+b
+a
+Δ
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Design a TM for Accepting {SS |  S ∈ {a,b}*}
+Steps:
+Find middle point of the string and convert the string in to the uppercase.
+Convert first part of the string to lowercase.
+Compare first part and second part.
+ss.pptx (click here)
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Universal Turing Machine
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Universal Turing machine
+The language 
+
+is Turing Recognizable
+
+Question : Given the description of a Turing Machine and some input string, can we decide the machine accepts it?
+Answer: Just Run the TM on the input.
+Possible results:
+M accepts w: will halt and accept
+M rejects w: will halt and reject
+M loops on w: will not halt
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Input & Action on Universal Turing machine
+Input:	
+	M=description of TM
+	w=input string for M
+Action:	
+	simulate M
+	Behave just like M (May accept, reject or loop)
+
+The UTM is recognizer for
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Church Turing Thesis
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Church Turing Thesis
+What does computable mean?
+Meaning of term Computable was given by:
+Alonzo church (Lambda calculus)
+Allen Turing (Turing Machine)
+
+Any algorithmic procedure that can be carried out at all, by a human computer or a team of humans or an electronic computer, can be carried out by a TM. This statement usually referred to as Church’s thesis, or the Church-Turing thesis.
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Church Turing Thesis
+Here is an informal summary of some of the evidence.
+Humans normally work with a two-dimensional sheet of paper. A TM tape could be organized so as to simulate two dimensions; one likely consequence would be that the TM would require more moves to do what a human could do in one.
+Various enhancements of the TM model have been suggested to make the operation more like that of a human computer, or more convenient & efficient. The multitape TM is an example.
+Other theoretical models includes abstract machines with two stacks or  with a queue.
+Since the introduction of the Turing machine, no one has suggested any type of computation that ought to be included in the category of “algorithmic procedure” and cannot be implemented on a TM.
+
+
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+End of Unit-5
+
+
+Unit – 5 : Turing Machine
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›

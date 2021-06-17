@@ -1,0 +1,887 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PowerPoint Presentation
+
+arjun.bala@darshan.ac.in
+9624822202
+Computer Engineering Department
+Prof. Arjun V. Bala
+Python for Data Science (PDS) (3150713)
+
+Unit-04 
+Data Visualization 
+
+Darshan Institute of Engineering & Technology, Rajkot
+
+
+
+
+Looping
+Outline
+
+Introduction to MatPlotLib
+Graph
+Plot
+Drawing Multiple Lines and Plots
+Export graphs/plots to Image/PDF/SVG
+Axis, Ticks ad Grids
+Line Appearance
+Labels, Annotation, Legends
+Types of Graphs
+Pie Chart
+Bar Chart
+Histograms
+Boxplots
+Scatterplots
+Time Series
+Plotting Geographical data
+
+
+
+
+Introduction to MatPlotLib
+Most people visualize information better when they see it in graphic versus textual format.
+Graphics help people see relationships and make comparisons with greater ease.
+Fortunately, python makes the task of converting textual data into graphics relatively easy using libraries, one of most commonly used library for this is MatPlotLib.
+Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Graph
+A Graph or chart is simply a visual representation of numeric data.
+MatPlotLib makes a large number of graph and chart types.
+We can choose any of the common graph such as line charts, histogram, scatter plots etc....
+
+
+Line Chart
+
+Histogram
+
+Scatter Plot
+
+3D Plot
+
+Images
+
+Bar Chart
+
+Pie Chart
+Etc.......
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Plot
+To define a plot, we need some values, the matplotlib.pyplot module and an idea of what we want to display.
+
+
+
+
+
+In this case, the code tells the plt.plot() function to create a plot using x-axis between 1 and 11 and y-axis as per values list.
+import matplotlib.pyplot as plt
+%matplotlib inline
+values = [5,8,9,4,1,6,7,2,3,8]
+plt.plot(range(1,11),values)
+plt.show()
+1
+2
+3
+4
+5
+plotDemo1.py
+
+
+
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Plot – Drawing multiple lines
+We can draw multiple lines in a plot by making multiple plt.plot() calls.
+
+
+
+
+
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+values1 = [5,8,9,4,1,6,7,2,3,8]
+values2 = [8,3,2,7,6,1,4,9,8,5] plt.plot(range(1,11),values1)
+plt.plot(range(1,11),values2)
+plt.show()
+1
+2
+3
+4
+5
+6
+7
+plotDemo1.py
+
+
+
+
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Plot – Export graphs/plots
+We can export/save our plots on a drive using savefig() method.
+
+
+
+
+
+
+
+Possible values for the format parameters are
+png
+svg
+pdf
+Etc...
+
+
+
+
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+values1 = [5,8,9,4,1,6,7,2,3,8]
+values2 = [8,3,2,7,6,1,4,9,8,5]
+plt.plot(range(1,11),values1)
+plt.plot(range(1,11),values2)
+#plt.show()
+plt.savefig('SaveToPath.png',format='png')
+1
+2
+3
+4
+5
+6
+7
+8
+plotDemo1.py
+
+
+
+
+
+SaveToPath.png
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+
+Plot – Axis, Ticks and Grid
+We can access and format the axis, ticks and grid on the plot using the axis() method of the matplotlib.pyplot.plt
+import matplotlib.pyplot as plt
+%matplotlib notebook
+values = [5,8,9,4,1,6,7,2,3,8]
+ax = plt.axes()
+ax.set_xlim([0,50])
+ax.set_ylim([-10,10])
+ax.set_xticks([0,5,10,15,20,25,30,35,40,45,50])
+ax.set_yticks([-10,-8,-6,-4,-2,0,2,4,6,8,10])
+ax.grid()
+plt.plot(range(1,11),values)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+plotDemo1.py
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+values1 = [5,8,9,4,1,6,7,2,3,8]
+values2 = [8,3,2,7,6,1,4,9,8,5] plt.plot(range(1,11),values1,c='r',lw=1,ls='--',marker='>')
+plt.plot(range(1,11),values2,c='b',lw=2,ls=':',marker='o')
+plt.show()
+
+Plot – Line Appearance
+We need different line styles in order to differentiate when having multiple lines in the same plot, we can achieve this using many parameters, some of them are listed below.
+Line style (linestyle or ls)
+Line width (linewidth or lw)
+Line color (color or c)
+Markers (marker)
+1
+2
+3
+4
+5
+6
+7
+plotDemo1.py
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Plot – Line Appearance (Cont.)
+Possible Values for each parameters are, 
+	Values	Line Style
+	‘-’	Solid line
+	‘--’	Dashed line
+	‘-.’	Dash-dot line
+	‘:’	Dotted line
+
+	Values	Color
+	‘b’	Blue
+	‘g’	Green
+	‘r’	Red
+	‘c’	Cyan
+	‘m’	Magenta
+	‘y’	Yellow
+	‘k’	Black
+	‘w’	White
+
+	Values	Marker
+	‘.’	Point
+	‘,’	Pixel
+	‘o’	Circle
+	‘v’	Triangle down
+	‘^’	Triangle up
+	‘>’	Triangle right
+	‘<’	Triangle left
+	‘*’	Star
+	‘+’	Plus
+	‘x’	X
+	Etc.......	
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Plot – Labels, Annotation and Legends
+To fully document our graph, we have to resort the labels, annotation and legends.
+Each of this elements has a different purpose as follows,
+Label : provides identification of a particular data element or grouping, it will make easy for viewer to know the name or kind of data illustrated.
+Annotation : augments the information the viewer can immediately see about the data with notes, sources or other useful information.
+Legend : presents a listing of the data groups within the graph and often provides cues ( such as line type or color) to identify the line with the data.
+
+Y Label
+X Label
+Annotation
+Legend
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Plot – Labels, Annotation and Legends (Example)
+import matplotlib.pyplot as plt
+%matplotlib inline
+values1 = [5,8,9,4,1,6,7,2,3,8]
+values2 = [8,3,2,7,6,1,4,9,8,5]
+plt.plot(range(1,11),values1)
+plt.plot(range(1,11),values2)
+plt.xlabel('Roll No')
+plt.ylabel('CPI')
+plt.annotate(xy=[5,1],s='Lowest CPI')
+plt.legend(['CX','CY'],loc=4)
+plt.show()
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+plotDemo1.py
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Choosing the Right Graph
+The kind of graph we choose determines how people view the associated data, so choosing the right graph from the outset is important.
+For example, 
+if we want o show how various data elements contribute towards a whole, we should use pie chart.
+If we want to compare data elements, we should use bar chart.
+If we want to show distribution of elements, we should use histograms.
+If we want to depict groups in elements, we should use boxplots.
+If we want to find patterns in data, we should use scatterplots.
+If we want to display trends over time, we should use line chart.
+If we want to display geographical data, we should use basemap.
+If we want to display network, we should use networkx.
+All the above graphs are there in our syllabus and we are going to cover all the graphs in this Unit.
+We are also going to cover some other types of libraries which is not in the syllabus like seaborn, plotly, cufflinks and choropleth maps etc..
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+
+Pie Chart
+Pie chart focus on showing parts of a whole, the entire pie would be 100 percentage, the question is how much of that percentage each value occupies.
+import matplotlib.pyplot as plt
+%matplotlib notebook
+values = [305,201,805,35,436]
+l = ['Food','Travel','Accomodation','Misc','Shoping']
+c = ['b','g','r','c','m']
+e = [0,0.2,0,0,0]
+plt.pie(values,colors=c,labels=l,explode=e)
+plt.show()
+1
+2
+3
+4
+
+5
+6
+7
+8
+pieChartDemo.py
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Pie Chart (Cont.)
+There are lots of other options available with the pie chart, we are going to cover two important parameters in this slide.
+import matplotlib.pyplot as plt
+%matplotlib notebook
+values = [305,201,805,35,436]
+l = ['Food','Travel','Accomodation','Misc','Shoping']
+c = ['b','g','r','c','m']
+plt.pie(values,colors=c,labels=l,shadow=True,
+        autopct='%1.1f%%')
+plt.show()
+1
+2
+3
+4
+
+5
+6
+7
+8
+pieChartDemo.py
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Bar charts
+Bar charts make comparing values easy, wide bars an d segregated measurements emphasize the difference between values, rather that the flow of one value to another as a line graph.
+import matplotlib.pyplot as plt
+%matplotlib notebook
+x = [1,2,3,4,5]
+y = [5.9,6.2,3.2,8.9,9.7]
+l = ['1st','2nd','3rd','4th','5th']
+c = ['b','g','r','c','m']
+w = [0.5,0.6,0.3,0.8,0.9]
+plt.title('Sem wise spi')
+plt.bar(x,y,color=c,label=l,width=w)
+plt.show()
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+barChartDemo.py
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Histograms
+Histograms categorize data by breaking it into bins, where each bin contains a subset of the data range.
+A Histogram then displays the number of items in each bin so that you can see the distribution of data and the progression of data from bin to bin.
+import matplotlib.pyplot as plt
+import numpy as np
+%matplotlib notebook
+cpis = np.random.randint(0,10,100)
+plt.hist(cpis,bins=10, histtype='stepfilled',align='mid',label='CPI Hist')
+plt.legend()
+plt.show()
+1
+2
+3
+4
+5
+
+
+6
+7
+histDemo.py
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Boxplots
+Boxplots provide a means of depicting groups of numbers through their quartiles.
+Quartiles means three points dividing a group into four equal parts.
+In boxplot, data will be divided in 4 part using the 3 points (25th percentile, median, 75th percentile)
+
+0
+-1
+-2
+-3
+-4
+-5
+5
+4
+3
+2
+1
+
+Q1
+(25th Percentile)
+Q3
+(75th Percentile)
+Q2
+(50th Percentile)
+Interquartile Range
+(IQR)
+Median
+Minimum
+(Q1 – 1.5 * IQR)
+Maximum
+(Q3 + 1.5 * IQR)
+
+
+
+
+
+Outliers
+Outliers
+Whiskers
+Whiskers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 –Data Visualization
+‹#›
+
+Boxplot (Cont.)
+Boxplot basically used to detect outliers in the data, lets see an example where we need boxplot.
+We have a dataset where we have time taken to check the paper, and we want to find the faculty which either takes more time or very little time to check the paper.
+
+
+
+
+
+
+We can specify other parameters like
+widths, which specify the width of the box
+notch, default is False
+vert, set to 0 if you want to have horizontal graph
+import pandas as pd
+import matplotlib.pyplot as plt
+%matplotlib inline
+timetaken = pd.Series([50,45,52,63,70,21,56,68,54,57,35,62,65,92,32])
+plt.boxplot(timetaken)
+1
+2
+3
+4
+
+
+5
+boxDemo.py
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Scatter Plot
+A scatter plot is a type of plot that shows the data as a collection of points.
+The position of a point depends on its two-dimensional value, where each value is a position on either the horizontal or vertical dimension.
+ It is really useful to study the relationship/pattern between variables.
+import matplotlib.pyplot as plt
+import pandas as pd
+%matplotlib inline
+df = pd.read_csv('insurance.csv')
+plt.scatter(df['bmi'], df['charges'])
+plt.show()
+1
+2
+3
+4
+5
+6
+histDemo.py
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Scatter Plot (Cont.)
+To find specific pattern from the data, we can further divide the data and plot scatter plot.
+We can do this with the help of groupby method of DataFrame, and then using tuple unpacking while looping the group.
+
+
+
+
+
+
+
+
+Note : we can specify marker, color, and size of the marker with the help
+    of marker, color and s parameter respectively. 
+import matplotlib.pyplot as plt
+import pandas as pd
+%matplotlib inline
+df = pd.read_csv('insurance.csv')
+grouped = df.groupby(['smoker'])
+for key, group in grouped:
+   plt.scatter(group['bmi'],
+   group['charges'], 
+   label='Smoke = '+key)
+plt.legend()
+plt.show()
+1
+2
+3
+4
+5
+6
+7
+
+
+8
+9
+histDemo.py
+
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Time Series
+Observations over time can be considered as a Time Series.
+Visualization plays an important role in time series analysis and forecasting.
+Time Series plots can provide valuable diagnostics to identify temporal structures like trends, cycles, and seasonality.
+In order to create a Time Series we first need to get the date range, which can be created with the help of datetime and pandas library.
+import pandas as pd
+import datetime as dt
+start_date = dt.datetime(2020,8,28)
+end_date = dt.datetime(2020,9,05)
+daterange = pd.date_range(start_date,end_date)
+print(daterange)
+1
+2
+3
+4
+5
+6
+timeDemo.py
+DatetimeIndex(['2020-08-28', '2020-08-29', '2020-08-30', '2020-08-31', '2020-09-01', '2020-09-02', '2020-09-03', '2020-09-04', '2020-09-05'],
+dtype='datetime64[ns]', freq='D')
+OUTPUT
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Time Series (Cont.)
+We can use some more parameters for date_range() function like
+freq, to specify the frequency at which we want the date range (default is ‘D’ for days)
+periods, number of periods to generate in between start/end or from start with freq.
+We can also create a date range with the help of startdate, periods and freq, for example
+
+
+
+
+
+Some of important possible values for the freq are 
+D, for calendar day
+W, for week
+M, for month
+Y, for year
+import pandas as pd
+import datetime as dt
+start_date = dt.datetime(2020,8,28)
+daterange = pd.date_range(start_date,freq='D',periods=10)
+print(daterange)
+1
+2
+3
+4
+5
+6
+timeDemo.py
+DatetimeIndex(['2020-08-25', '2020-08-26', '2020-08-27', '2020-08-28', '2020-08-29', '2020-08-30', '2020-08-31', '2020-09-01', '2020-09-02', '2020-09-03'],
+dtype='datetime64[ns]', freq='D')
+OUTPUT
+H, for hour
+T/min, for minute
+S, for seconds
+L, for milliseconds
+B, for business day
+SM, for semi month end
+Q, for quarter end 
+BQ, for business quarter end
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+Basemap
+The matplotlib basemap toolkit is a library for plotting 2D data on maps in Python.
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+NetworkX
+We can use networkx library in order to deal with any kind of networks, which includes social network, railway network, road connectivity etc….
+Install
+pip install networkx
+conda install networkx
+Types of network graph
+Undirected
+Directed
+Weighted graph
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+
+NetworkX (example)
+import networkx as nx
+g = nx.Graph() # undirected graph
+g.add_edge('rajkot','junagadh')
+g.add_edge('junagadh','porbandar')
+g.add_edge('rajkot','jamnagar')
+g.add_edge('jamnagar','bhanvad')
+g.add_edge('bhanvad','porbandar')
+nx.draw(g,with_labels=True)
+1
+2
+3
+4
+5
+6
+7
+8
+networkxDemo.py
+
+import networkx as nx
+gD = nx.DiGraph() # directed graph
+gD.add_edge('Modi','Arjun')
+gD.add_edge('Modi','GambhavaSir')
+gD.add_edge('GambhavaSir','Modi')
+
+nx.draw(gD, with_labels=True)
+1
+2
+3
+4
+5
+6
+7
+networkxDemo.py
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 –Data Visualization
+‹#›
+
+NetworkX (cont.)
+We can use many analysis functions available in NetworkX library, some of functions are as below
+nx.shortest_path(g,'rajkot','porbandar')
+Will return ['rajkot', 'junagadh', 'porbandar']
+nx.clustering(g)
+Will return clustering value for each node
+nx.degree_centrality(g)
+Will return the degree of centrality for each node, we can find most popular/influential node using this method.
+nx.density(g)
+Will return the density of the graph.
+The density is 0 for a graph without edges and 1 for a complete graph. 
+nx.info(g)
+Return a summary of information for the graph G.
+The summary includes the number of nodes and edges, and their average degree.
+
+
+
+Prof. Arjun V. Bala
+#3150713 (PDS)      Unit 04 – Data Visualization
+‹#›
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/docProps/thumbnail.jpeg
+

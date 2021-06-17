@@ -1,0 +1,3452 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+W5 of Computer Engineering (Why, What, When, Where, How)
+
+
+Prof. Dixita B. Kagathara
+
+
+
+
+
+
+
+2160704
+Theory of Computation 
+Unit-2
+Regular Languages & Finite Automata
+
+dixita.kagathara@darshan.ac.in
+
+
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Topics to be covered
+Regular expressions & Regular languages
+Finite Automata
+Union, Intersection and Complement of Regular Languages
+Non-Deterministic Finite Automata
+Conversion from NFA to FA
+^ - Non-Deterministic Finite Automata
+Conversion of NFA-^ to FA
+Kleene’s Theorem Part – I
+Finite Automata with Output (Moore machine, Mealy machine)
+Minimization of FA
+Moore machine & Mealy machine
+Pumping Lemma – Regular and Non Regular Languages
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular Expression
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression
+A regular expression is a sequence of characters that define a pattern.
+Notational shorthand's
+One or more occurrences:  
+Zero or more occurrences:  
+Alphabets: 
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression
+*
+a*
+a
+ aaa
+ aa
+aaaa
+aaaaa…..
+
+Infinite …..
+𝜖
+L = Zero or More Occurrences of a = 
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression
++
+ a+
+a
+ aaa
+ aa
+aaaa
+aaaaa…..
+
+Infinite …..
+L = One or More Occurrences of a = 
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Precedence and associativity of operators
+
+	Operator	Precedence	Associative
+	Kleene *	1	left
+	Concatenation	2	left
+	Union 	|	3	left
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression examples
+0 or 1
+	
+0 or 11 or 111
+
+String having zero or more a.
+
+String having one or more a.
+
+Regular expression over  that represent all string of length 3.
+
+All binary string.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression examples
+0 or more occurrence of either a or b or both
+
+1 or more occurrence of either a or b or both
+
+Binary no. ends with 0
+
+Binary no. ends with 1
+
+Binary no. starts and ends with 1
+
+String starts and ends with same character
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression examples
+All string of a and b starting with a 
+
+String of 0 and 1 ends with 00 
+
+String ends with abb  
+
+String starts with 1 and ends with 0 
+
+All binary string with at least 3 characters and 3rd character should be zero
+Language which consist of exactly two b’s over the set 
+
+…
+
+…
+
+…
+
+…
+
+…
+
+…
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression examples
+The language with  such that 3rd character from right end of the string is always
+
+Any no. of  followed by any no. of  followed by any no. of 
+
+String should contain at least three 
+
+String should contain exactly two 
+
+Length of string should be at least 1 and at most 3
+
+No. of zero should be multiple of 3
+
+…
+
+…
+
+….
+
+….
+
+….
+
+….
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression examples
+The language with  where  should be multiple of 3
+
+Even no. of 0
+
+String should have odd length
+
+String should have even length
+
+String start with 0 and has odd length
+
+String start with 1 and has even length
+
+
+
+….
+
+….
+
+….
+
+….
+
+….
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression examples
+All string begins or ends with 00 or 11 
+
+Language of all string containing both 11 and 00 as substring 
+
+
+String ending with 1 and not contain 00 
+
+Language of C identifier  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Finite Automata
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Finite Automata
+A finite automaton, or finite state machine is a 5-tuple  where
+ is finite set of states;
+ is finite alphabet of input symbols;
+ (initial state);
+ (the set of accepting states);
+ is a function from  (the transition function).
+For any element  of  and any symbol , we interpret  as the state to which the FA moves, if it is in state  and receives the input .
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Finite Automata
+
+
+
+
+
+ is defined as 
+
+	δ	Input
+
+	State		
+
+			
+
+			
+
+			
+
+
+
+
+1
+0
+1
+0
+0
+1
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+16
+
+Applications of FA
+Lexical analysis phase of a compiler.
+Design of digital circuit.
+String matching.
+Communication Protocol for information exchange.
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+FA Examples
+The string with next to last symbol as 0.
+
+
+
+
+0
+1
+0
+1
+
+
+0
+1
+0
+1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+FA Examples
+The strings ending with 10.
+
+
+
+1
+0
+1
+
+0
+0
+1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+FA Examples
+The string with number of 0’s and number of 1’s are odd
+odd 0
+even 1
+even 1
+even 0
+odd 1
+even 0
+odd 0
+odd 1
+ 
+0
+0
+0
+0
+1
+1
+1
+1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+FA Examples
+The string ending in 10 or 11
+A
+B
+C
+
+D
+
+1
+1
+0
+1
+0
+0
+0
+1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+FA Examples
+The string corresponding to Regular expression {00}*{11}*
+B
+C
+A
+
+E
+
+1
+0
+D
+1
+1
+1
+0
+0
+0
+0,1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+FA Examples
+(a+b)*baaa
+A
+C
+E
+
+B
+a
+D
+a
+a
+a
+a
+b
+b
+b
+b
+b
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Extended Transition Function  for FA
+Let  be an Finite Automata. We define the function
+
+as follows:
+For any 
+For any  and ,
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+ Example
+Consider FA
+
+Calculate 
+
+
+
+
+
+c
+b
+a
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+		
+		
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+Consider following FA
+
+
+calculate 
+
+
+
+
+
+Y
+X 
+		
+		
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Acceptance by FA
+Let  be an FA. A string  is accepted by  if . If string is not accepted, we can say it is rejected by . The language accepted by , or the language recognized by , is the set
+
+If 𝐿 is any language over ,  is accepted or recognized by  if and only if .
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Union, Intersection & Complement of Languages
+Suppose  and  accepts languages  and , respectively. Let  be an FA defined by , where
+
+
+and the transition function  is defined by the formula
+
+for any  and  and  then
+if ,  accepts the language 
+if ,  accepts the language 
+if ,  accepts the language 
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example
+Draw Finite Automata for following languages:
+L1={x/x 00 is not substring of x, x ∈ {0,1}*}
+L2={x/x ends with 01, x ∈ {0,1}*}
+Draw FA for ,  and 
+
+
+
+0
+1
+1
+
+0,1
+0
+
+
+
+
+0
+1
+1
+0
+
+0
+1
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Computation for ,  and 
+Here  and 
+So, 
+
+Computing Transition Function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+1
+BQ
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Computation for ,  and 
+
+
+
+
+
+
+
+
+
+
+
+0
+1
+0
+1
+0
+1
+0
+
+
+
+
+
+
+
+
+
+
+1
+BQ
+CQ
+AR
+CR
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Computation for ,  and 
+
+
+
+
+
+
+
+
+
+
+
+0
+1
+
+
+
+
+
+
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+BQ
+CQ
+AR
+CR
+CP
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Removing Unconnected States
+
+
+
+
+
+
+
+
+
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+
+
+
+
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+
+
+
+
+Accepting States 
+
+
+As per theorem stated earlier, the states which consists A or B or R will be Accepting states in the resultant FA.
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+
+
+
+
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+
+Accepting States 
+
+
+Therefore, as per theorem stated earlier, the states which consists (A and R) and (B and R) will be Accepting states in the resultant FA.
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+
+
+
+
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+0
+1
+
+
+Accepting States 
+
+
+Therefore, as per theorem stated earlier, the states which consists A or B but should not contain R with them will be Accepting states in the resultant FA.
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Exercise
+Draw Finite Automata for following languages:
+L1={x/x 11 is not substring of x, x ∈ {0,1}*}
+L2={x/x ends with 10, x ∈ {0,1}*}
+Draw FA for ,  and .
+
+
+
+1
+0
+0
+
+0,1
+1
+
+
+
+
+1
+0
+0
+1
+
+1
+0
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Nondeterministic Finite Automata (NFA)
+A nondeterministic finite automaton is a 5-tuple  where  and  are nonempty finite sets, ,  and
+
+ is the set of states,  is the alphabet,  is the initial state and  is the set of accepting states.
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example of NFA for 
+
+
+
+
+
+ is defined as 
+
+	δ	Input
+
+	State		
+
+			
+
+			
+
+			
+
+
+
+
+1
+0
+ 
+			
+
+			
+
+1
+
+
+1
+1
+0
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+39
+
+Nonrecursive Definition of  for NFA
+For an NFA , and any  . For any  and any  is the set of all states  for which there is a sequence of states  satisfying
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Recursive Definition of  for NFA
+Let  be an NFA. The function  is defined as follows.
+For any ,  .
+For any , , and ,
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Acceptance by NFA
+Let be an NFA. The string  is accepted by  if . The language recognized, or accepted, by  is the set  of all string accepted by . For any language  is recognized by 
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Recursive Definition of  in NFA
+
+
+
+
+
+ is defined as 
+
+	δ	Input
+
+	State		
+
+			
+
+			
+
+			
+
+
+
+			
+
+
+
+1
+0, 1
+0, 1
+0, 1
+ 
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+43
+
+Example: Recursive Definition of  in NFA
+
+
+
+
+
+
+		
+		
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Recursive Definition of  in NFA
+
+
+
+
+
+
+		
+		
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Recursive Definition of  in NFA
+
+
+
+
+
+
+
+		
+		
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Recursive Definition of  in NFA
+
+
+
+
+
+
+		
+		
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Recursive Definition of  in NFA
+
+
+
+
+
+
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+NFA to FA using subset construction method
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example 1: Conversion from NFA to FA
+1
+3
+4
+2
+
+b
+a
+a
+b
+b
+a
+			
+	1	{2,3}	{4}
+	2	{}	{4}
+	3	{4}	{3}
+	4	{}	}
+
+NFA
+Transition Table
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example 1: Conversion from NFA to FA
+
+
+
+
+
+
+
+
+1
+3,4
+
+b
+2,3
+4
+
+b
+a
+a
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example 1: Conversion from NFA to FA
+
+
+
+
+
+
+1
+3
+3,4
+
+b
+2,3
+4
+
+b
+b
+b
+a
+a
+a
+a
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example 2: Conversion from NFA to FA
+	δ	Input
+
+	State		
+
+			
+
+			
+
+			
+
+
+
+			
+
+
+
+1
+0, 1
+0, 1
+0, 1
+ 
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+53
+
+Example 2: Conversion from NFA to FA
+
+0
+
+
+
+
+
+
+
+1
+
+0
+
+1
+
+0
+
+1
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example 2: Conversion from NFA to FA
+
+0
+
+
+1
+
+0
+
+1
+
+0
+
+1
+
+0
+1
+
+
+
+
+0
+1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example 2: Conversion from NFA to FA
+
+0
+
+
+1
+
+0
+
+1
+
+0
+
+1
+
+0
+1
+
+
+
+
+0
+1
+0
+1
+0
+1
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example 2: Conversion from NFA to FA
+
+0
+
+1
+
+0
+
+1
+
+0
+
+1
+0
+1
+
+
+
+
+0
+1
+0
+1
+0
+1
+0
+1
+
+
+
+
+As now no new states are obtained, the process stops and we need to define the accepting states. 
+To define accepting states, the states which contain the accepting states of NFA will be accepting states of final FA.
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Nondeterministic Finite Automata with -Transitions
+A nondeterministic finite automaton with -transitions (NFA- ) is a 5-tuple  where  and  are finite sets, ,  and
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Nonrecursive Definition of  for NFA- 
+For an NFA -  , states , and a string  we will say  moves from  to  by a sequence of transition corresponding to  if there exist an integer , a sequence  satisfying , and a sequence of states  so that for each  with , .
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+-closure of a Set of States
+Let  be an NFA-, and let  be any subset of . The -closure of  is the set () defined as follows:
+Every element of  is an element of 
+For any , every element of ) is in 
+No other elements of  are in .
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Applying Definitions of 
+
+
+
+
+
+
+
+
+
+^
+^
+^
+^
+^
+0
+0
+0
+0
+0
+1
+1
+1
+
+ 
+
+
+
+ 
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Applying Definitions of 
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+^
+^
+^
+^
+^
+0
+0
+0
+0
+0
+1
+1
+1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Recursive Definition of  for NFA- 
+Let  be an NFA- . The extended transition  function  is defined as follows.
+For any  
+For any and ,
+
+A string  is accepted by  if . The language recognized by  is the set  of all strings accepted by .
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Applying Definition of 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+^
+^
+^
+^
+^
+0
+0
+0
+0
+0
+1
+1
+1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Applying Definition of 
+
+ 
+ 
+ 
+ 
+
+
+		
+		
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+^
+^
+^
+^
+^
+0
+0
+0
+0
+0
+1
+1
+1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Applying Definition of 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+		
+		
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+NFA-^ to FA
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+NFA -  to FA
+NFA - 
+NFA 
+FA 
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Conversion from NFA-  to FA
+ 
+				
+	A	{B}	{A}	
+	B	{D}	{C}	
+	C			{B}
+	D		{D}	
+
+A
+B
+D
+C
+
+^
+0
+^
+0
+0
+1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+A
+D
+0
+B
+
+
+
+C
+0
+0
+0
+
+
+
+Conversion from NFA- ^ to FA
+Step 1: To convert NFA - ^ to NFA
+			
+			
+			
+			
+			
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Conversion from NFA-  to FA
+A
+D
+0
+B
+
+C
+0
+0
+0
+
+
+
+
+
+			
+			
+			
+			
+			
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+
+
+
+
+
+A
+D
+0
+B
+C
+0
+0
+0
+0
+0
+Conversion from NFA- ^ to FA
+			
+			
+			
+			
+			
+
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Conversion from NFA- ^ to FA
+
+
+
+
+
+
+A
+D
+0
+B
+C
+0
+0
+0
+0
+0
+			
+			
+			
+			
+			
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+
+
+
+
+
+A
+D
+0
+B
+C
+0
+0
+0
+0
+0
+Conversion from NFA- ^ to FA
+			
+			
+			
+			
+			
+
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Conversion from NFA-  to FA
+
+
+
+
+
+
+A
+D
+0
+B
+C
+0
+0
+0
+0
+0
+1
+1
+			
+			
+			
+			
+			
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+
+
+
+
+
+Conversion from NFA- ^ to FA
+A
+D
+0
+B
+C
+0
+0
+0
+0
+0
+1
+1
+0
+			
+			
+			
+			
+			
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Conversion from NFA- ^ to FA
+
+
+
+
+
+
+A
+D
+
+0
+B
+C
+
+0
+0
+0
+0
+0
+1
+1
+0
+			
+			
+			
+			
+			
+
+Resulting NFA
+Accepting State
+if  in 
+                 otherwise
+=
+{
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+  {C,D}  {} {D} =  
+
+
+
+
+
+
+
+A
+CD
+ABCD
+0
+BD
+0
+1
+0
+Conversion from NFA- ^ to FA
+Step 2: To convert NFA to FA
+			
+			
+			
+			
+			
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Conversion from NFA- ^ to FA
+A
+CD
+
+0
+D
+ABCD
+
+0
+0
+0
+0
+1
+
+
+
+
+
+
+BD
+
+
+
+1
+			
+			
+			
+			
+			
+
+FA
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Kleene’s Theorem Part-1
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Statement: Any regular language can be accepted by a finite automaton.
+Proof:
+On the basis of statement, can be recognized by FA, NFA and NFA-^. It is sufficient to so that every regular language can be accepted by NFA- ^.
+Set of regular language over alphabet  contains the basic languages Ø, {^} and  to be closed under operation of union, concatenation, and Kleene*.
+This allows us to prove using structural induction that every regular language over  can be accepted by an NFA-^.
+The basis step of the proof is to show that the three basic languages can be accepted by NFA- ^s.
+The induction hypothesis is that  and  are languages that can be accepted by NFA- ^s and the induction step is to show that  and  can also be.
+Kleene’s Theorem Part-1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+NFA-^ for the three basic languages is shown below.
+
+
+
+Now, suppose that  and  are recognized by the NFA-^s  and , respectively, where for both =1 and =2,
+
+By renaming states if necessary, we may assume that  ∩  = Ø. We will construct NFA-^s  , , and  recognizing the language  U , , and , respectively.
+
+
+Ø
+
+{^}
+
+a
+{a}
+
+
+
+Kleene’s Theorem Part-1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Construction of  
+Let  be a new state, not in either  or  and let
+ =  U  U {}
+ =  U 
+
+
+
+
+
+
+
+
+
+
+
+
+
+^
+^
+Kleene’s Theorem Part-1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Now, we define  so that  can move from its initial state to either  or  by a ^ transition, and then make exactly the same moves that the respective  would. 
+Formally we define:
+
+ = Ø  for every 
+and for each  ∈  U  and  ∈  U {^},
+  if 
+ if 
+
+Kleene’s Theorem Part-1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+For either value of , if , then  can process 𝑥 by moving to  on a ^-transition and then executing the moves that cause  to accept 𝑥.
+On the other hand, if 𝑥 is accepted by , there is a sequence of transition corresponding to 𝑥, starting at  and ending at an element of  or .
+The first of these transitions must be a ^-transition from  to either or , since there are no other transition from .
+Thereafter, since  ∩  = Ø, either all the transition are between of  or all are between elements of . It follow that 𝑥 must be accepted by either  or .
+Kleene’s Theorem Part-1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Kleene’s Theorem Part-1
+Construction of  = (, , , , )
+Let  =  U , =, and  = . The transition will include all those of  and  as well as a  -  transition from each state in  to .
+In other words, for any  not in , and ,  is defined to be either (q,a) or (q,a), depending on whether  is in  and .
+
+
+
+
+
+
+
+
+
+
+^
+^
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Kleene’s Theorem Part-1
+For ,
+ for every , and  U {}
+On an input string , where  ∈  for both value of ,  can process , arriving at a state ; jump from this state to  by a - transition; and then process the way would, so that  is accepted. 
+Conversely, if  is accepted by , there is a sequence of transition corresponding to  that begins at  and ends at an element of .
+One of them must therefore be from an element of  to an element of  , and according to the definition of, this can only be a - transition from an element of  to . Because  ∩ = Ø, all the previous transition are between elements of  and all the subsequent ones are between elements of . 
+It follows that , where   is accepted by  and  is accepted by ; in other words, .
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Construction of = (, , , , )
+Let  be a new state not in  and let =  U {} and .
+Once again all the transitions of  will be allowed in , but in addition there is a - transition from  to  and there is a -transition from each elements of  to .
+
+
+
+
+
+
+^
+^
+^
+Kleene’s Theorem Part-1
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+More precisely,
+ =  and  Ø for 
+For  and ,  unless  and  = .
+For ,  .
+Suppose . If  then clearly  is accepted by . Otherwise, for some  where for each ,  can move from  to  by a - transition; for each ,  moves from  to an element  of  by a sequence of transition corresponding to ; and for each ,  then moves from  back to  by a - transition.
+Kleene’s Theorem Part-1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+It follows that …=  is accepted by .
+On the other hand, if  is accepted by , there is a sequence of transition corresponding to  that begins and ends at . Since the only transition from  is a  - transition to , and the only transition to  are - transition from elements of ,  can be decomposed in the form
+…
+where, for each , there is a sequence of transitions corresponding to  from  to an element of . Therefore, .
+Since we have constructed an NFA -  recognizing  in each of the three cases, the proof is complete.
+Kleene’s Theorem Part-1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Application of Kleene’s Theorem
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression to NFA-^
+Convert  to NFA-^
+a
+
+
+
+a
+
+
+
+^
+b
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression to NFA-^
+Convert  to NFA-^
+a
+
+
+a
+
+
+
+^
+b
+
+
+
+
+^
+^
+
+^
+^
+^
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression to NFA-^
+Convert  to NFA-^
+0
+
+
+
+0
+
+
+
+^
+1
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression to NFA-^
+Convert  to NFA-^
+0
+
+
+0
+
+
+
+^
+1
+
+
+
+
+^
+^
+0
+
+
+0
+
+
+
+^
+1
+
+
+
+
+^
+^
+^
+^
+
+
+^
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression to NFA-^
+Convert  to NFA-^
+
+1
+
+
+0
+
+
+
+^
+^
+^
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Regular expression to NFA-^
+Convert  to NFA-^
+
+1
+
+
+0
+
+
+^
+^
+^
+
+^
+0
+
+
+0
+
+
+^
+1
+
+
+
+^
+^
+^
+^
+
+
+^
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Exercise (RE to NFA-^)
+00
+00+1
+(00+1)*
+(0+1)*
+(111)*
+(10+01)*
+(0+1)*(11+00)*11
+(10+110)*(0+1)*1
+(00+1)*(10)*
+(a+b)(a+b)*
+(aab)*b*(a+b)*
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Finite Automata with Output
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Finite automata with output
+Finite automata has limited capability of either accepting a string or rejecting a string. Acceptance of string was based on the reachability of a machine from starting state to final state. 
+Finite automata with output do not have a final state.
+Machine generates output on every input.
+There are two types of automata with outputs:
+ Moore machine
+ Mealy machine
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Moore machine & Mealy Machine
+
+FA with Output
+Mealy Machine
+ 
+Moore Machine
+ 
+
+ : set of states
+ : input symbols
+ : output symbols
+ : Transition function 
+: output function
+ : initial state
+
+
+X,1
+Y,0
+b
+b
+X 
+Y 
+b|0
+b|0
+a
+a
+a|1
+a|1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Moore Machine
+Mathematically Moore machine is a six tuple machine and defined as
+
+where,
+ : a nonempty finite set of states in 
+ : a nonempty finite set of input symbols
+ : a nonempty finite set of outputs
+ : Transition function which takes two arguments as in finite automata, 	one is input state and other is input symbol. The output of this 	function is a single state.
+: it is a mapping function which maps  to , giving the output 	associated with each state.
+ : the initial state of  and ∈ 
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+102
+
+Example: Moore Machine
+Design a moore machine for the 1’s compliment of binary number.
+A,0
+B,1
+0
+1
+1
+0
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Moore Machine
+Design a moore machine to count occurrence of  “ab” as substring.
+
+
+
+a
+b
+a
+b
+b
+a
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Moore Machine
+Construct a moore machine that takes set of all strings over {0, 1} and produces ‘A’ if i/p ends witg ‘10’ , produces ‘B’ if i/p ends with ’11’ otherwise produces ‘C’.
+
+
+
+1
+0
+0
+1
+1
+0
+1
+
+0
+10A
+11B
+Otherwise C
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Moore Machine
+A,0
+B,1
+1
+1
+0
+1
+C,2
+0
+0
+Construct a moore machine that takes binary number as an i/p and produces residue modulo ‘3’ as an output.
+Input={0,1}
+∆={0, 1, 2}
+
+
+	 	0	1	∆
+	A	A	B	0
+	B	C	A	1
+	C 	B	C	2
+	Transition Table 			
+
+
+
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Mealy Machine
+Mathematically Mealy machine is a six tuple machine and defined as
+
+where,
+ : a nonempty finite set of states in 
+ : a nonempty finite set of input symbols
+ : a nonempty finite set of outputs
+ : Transition function which takes two arguments as in finite automata, one is input state and other is input symbol. The output of this function is a single state.
+: It is a mapping function which maps  to , giving the output associated with each transition.
+ : the initial state of  and ∈ 
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+107
+
+Example: Mealy Machine
+Design a mealy machine for the 1’s compliment of binary number
+A
+1/0
+0/1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Mealy Machine
+q1
+q2
+q3
+1|x
+0|x
+1|x
+0|x
+0|y
+1|y
+Design a mealy machine for regular expression (0+1)*(00+11).
+00y
+11y
+Otherwise x
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Moore to Mealy Machine Conversion
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Conversion of Moore into Mealy Machine
+
+
+
+
+Start
+a/1
+a/1
+a/0
+b/0
+b/1
+b/0
+
+
+
+
+Start
+a
+a
+a,b
+a
+b
+b
+b
+0
+0
+1
+1
+Moore machine
+Mealy machine
+a/1,b/1
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+111
+
+Mealy to Moore Machine Conversion
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Conversion of Mealy to Moore machine
+
+0|0
+1|1
+
+0|1
+1|0
+
+0
+1
+
+0
+1
+
+1
+0
+Mealy machine
+Moore machine
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Exercise: Mealy machine to Moore machine
+q1
+q2
+q3
+1|x
+0|x
+1|x
+0|x
+0|y
+1|y
+
+b|0
+a|0
+
+a|1
+b|1
+GTU- May 2016, 7 Marks
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Minimization of FA
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+
+
+
+Example: Minimize FA
+	2	 	 				
+	3	X	X	 			
+	4	 	 	X	 		
+	5	X	X	 	X	 	
+	6	X	X	X	X	X	 
+	7	X	X	 	X	 	X
+	 	1	2	3	4	5	6
+
+Final state is {6}
+And, Non-Final state is {1,2,3,4,5,7}
+(6, 1), (6,2), (6, 3), (6, 4), (6, 5), (6, 7) are distinguish pairs.
+Consider pair (1,2)
+	δ(1,a)=2		δ(1,b)=3
+	δ(2,a)=4		δ(2,b)=5
+Consider pair (1,3)
+	δ(1,a)=2		δ(1,b)=3
+	δ(3,a)=6		δ(3,b)=7
+pair (2,6) is distinguish, so (1,3) is distinguished pair.
+Consider pair (1,4)
+	δ(1,a)=2		δ(1,b)=3
+	δ(4,a)=4		δ(4,b)=5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7
+a
+b
+b
+b
+b
+b
+b
+b
+a
+a
+a
+a
+a
+a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+
+
+
+
+
+Example: Minimize FA
+Consider pair (1,5)
+	δ(1,a)=2		δ(1,b)=3
+	δ(5,a)=6		δ(5,b)=7
+pair (2,6) is distinguish, so (1,5) is distinguished pair.
+Consider pair (1,7)
+	δ(1,a)=2		δ(1,b)=3
+	δ(7,a)=6		δ(7,b)=7
+pair (2,6) is distinguish, so (1, 7) is distinguished pair.
+Consider pair (2,3)
+	δ(2,a)=4		δ(2,b)=5
+	δ(3,a)=6		δ(3,b)=7
+pair (4,6) is distinguish, so (2, 3) distinguished pair.
+Consider pair (2,4)
+	δ(2,a)=4		δ(2,b)=5
+	δ(4,a)=4		δ(4,b)=5	
+	2	 	 				
+	3	X	X	 			
+	4	 	 	X	 		
+	5	X	X	 	X	 	
+	6	X	X	X	X	X	 
+	7	X	X	 	X	 	X
+	 	1	2	3	4	5	6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7
+a
+b
+b
+b
+b
+b
+b
+b
+a
+a
+a
+a
+a
+a
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+
+
+
+
+
+Example: Minimize FA
+Consider pair (2,5)
+	δ(2,a)=4		δ(2,b)=5
+	δ(5,a)=6		δ(5,b)=7
+pair (4,6) is distinguish, so (2,5) is distinguished pair.
+Consider pair (2,7)
+	δ(2,a)=4		δ(2,b)=5
+	δ(7,a)=6		δ(7,b)=7
+pair (4,6) is distinguish, so (2,7) is distinguished pair.
+Consider pair (3,4)
+	δ(3,a)=6		δ(3,b)=7
+	δ(4,a)=4		δ(4,b)=5
+pair (6,4) is distinguish, so (3,4) is distinguish pair.
+Consider pair (3,5)
+	δ(3,a)=6		δ(3,b)=7
+	δ(5,a)=6		δ(5,b)=7
+
+	2	 	 				
+	3	X	X	 			
+	4	 	 	X	 		
+	5	X	X	 	X	 	
+	6	X	X	X	X	X	 
+	7	X	X	 	X	 	X
+	 	1	2	3	4	5	6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7
+a
+b
+b
+b
+b
+b
+b
+b
+a
+a
+a
+a
+a
+a
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+
+
+
+
+
+
+
+
+Example: Minimize FA
+Consider pair (3,7)
+	δ(3,a)=6		δ(3,b)=7
+	δ(7,a)=6		δ(7,b)=7
+Consider pair (4,5)
+	δ(4,a)=4		δ(4,b)=5
+	δ(5,a)=6		δ(5,b)=7
+pair (6,4) is distinguish, so (4,5) is distinguish.
+Consider pair (4,7)
+	δ(4,a)=4		δ(4,b)=5
+	δ(7,a)=6		δ(7,b)=7
+pair (4,6) is distinguish, so (4,7) is distinguish.
+Consider pair (5,7)
+	δ(5,a)=6		δ(5,b)=7
+	δ(7,a)=6		δ(7,b)=7
+	2	 	 				
+	3	X	X	 			
+	4	 	 	X	 		
+	5	X	X	 	X	 	
+	6	X	X	X	X	X	 
+	7	X	X	 	X	 	X
+	 	1	2	3	4	5	6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7
+a
+b
+b
+b
+b
+b
+b
+b
+a
+a
+a
+a
+a
+a
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Example: Minimize FA
+	2	 	 				
+	3	X	X	 			
+	4	 	 	X	 		
+	5	X	X	 	X	 	
+	6	X	X	X	X	X	 
+	7	X	X	 	X	 	X
+	 	1	2	3	4	5	6
+
+
+
+
+
+
+
+
+
+b
+a
+a
+b
+
+b
+a
+
+
+
+
+
+
+
+1=2
+1=4
+2=4
+1=2=4
+3=5
+3=7
+5=7
+3=5=7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7
+a
+b
+b
+b
+b
+b
+b
+b
+a
+a
+a
+a
+a
+a
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Pumping lemma
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Define pumping lemma and its application.
+Suppose L is a regular language. Then there is an integer n so that for any x∈ L with |x|>=n, there are strings u, v, and w so that
+x=uvw
+|uv|<=n
+|v|>0
+For any m>=0,  ∈ L
+Application
+The pumping lemma is extremely useful in proving that certain sets are non-regular. The general methodology followed during its applications is 
+Select a string z in the language L.
+Break the string z into x, y and z in accordance with the above conditions imposed by the pumping lemma.
+Now check if there is any contradiction to the pumping lemma for any value of i.
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Use the pumping lemma to show that following language is not regular: L = {ww|w ϵ {0,1}*}
+Step 1: 
+Let us assume that L is regular and L is accepted by an FA with n states.
+Step 2: 
+Let us chose the string
+
+
+Let us write w as xyz with 
+|y| > 0
+And |xy|<=n
+Since |xy|<=n, x must be of the form .
+Since |xy|<=n, y must be of the form  | r>0 
+Now   = 
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+Use the pumping lemma to show that following language is not regular: L = {ww|w ϵ {0,1}*}
+Step 3: 
+Let us check whether x z for i=2 belongs to L.
+	 =  = 
+Since, r>0,  is not of the form   as the number of a’s in the first half is n+r and second half is n. 
+Therefore,   Ɇ L. Hence by contradiction we can say language is not regular.
+
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›
+End of Unit - 2
+
+
+Unit – 2 : Regular languages & FA
+Darshan Institute of Engineering & Technology
+‹#›
+
+Theory of Computation (2160704)
+Darshan Institute of Engineering & Technology
+‹#›

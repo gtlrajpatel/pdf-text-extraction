@@ -1,0 +1,364 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OOPC++ UNIT-1
+
+
+Prof. Rupesh G. Vaishnav
+rupesh.vaishnav@darshan.ac.in
+94280-37452
+Information & Network Security (2170709)	 Darshan Institute of Engineering & Technology
+UNIT-7
+Digital Signature
+
+
+
+
+
+1
+
+Outline
+Digital Signature
+Digital Signature properties
+Requirements and security 
+Various digital signature schemes (Elgamal and Schnorr)
+Digital Signature algorithm / Digital Signature Standard 
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+X.800 and RFC 2828
+International Telecommunication Union (ITU)
+2
+
+
+Symmetric-key 
+ciphers:
+Block ciphers
+Stream ciphers
+
+Public-key
+ciphers
+Cryptographic Goals
+Cryptographic goals
+Confidentiality
+Data integrity
+Authentication
+Non-repudiation
+
+
+
+
+
+
+
+
+
+
+Message authentication
+
+  Entity authentication
+Arbitrary length
+hash functions
+
+Message 
+Authentication 
+codes (MACs)
+
+Digital signatures
+Authentication 
+primitives
+Digital signatures
+MACs
+Digital 
+     signatures
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+3
+Проверить правильность схемы
+
+Digital Signature
+A digital signature is an authentication mechanism that enables the creator of a message to attach a code that acts as a signature.
+Typically the signature is formed by taking the hash of the message and encrypting the message with the creator’s private key. 
+The signature guarantees the source and integrity of the message.
+The digital signature standard (DSS) is an NIST standard that uses the secure hash algorithm (SHA).
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+
+
+
+
+Hash code, MAC and Digital Signature
+Hash Code
+A hash of the message, if appended to the message itself, only protects against accidental changes to the message, as an attacker who modifies the message can simply calculate a new hash and use it instead of the original one. So this only gives integrity.
+MAC
+A message authentication code (MAC) (sometimes also known as keyed hash) protects against message forgery by anyone who doesn't know the secret.
+This means that the receiver can forge any message – thus we have both integrity and authentication (as long as the receiver doesn't have a split personality), but not non-repudiation.
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+Hash code, MAC and Digital Signature
+Digital Signature
+A digital signature is created with a private key, and verified with the corresponding public key of an asymmetric key-pair. 
+Only the holder of the private key can create this signature, and normally anyone knowing the public key can verify it. 
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+Attacks and Forgeries
+Key-only attack: C only knows A’s public key. 
+Known message attack: C is given access to a set of messages and their signatures.
+Generic chosen message attack: C chooses a list of messages before attempting to breaks A’s signature scheme, independent of A’s public key. C then obtains from A valid signatures for the chosen messages. The attack is generic, because it does not depend on A’s public key; the same attack is used against everyone.
+Directed chosen message attack: Similar to the generic attack, except that the list of messages to be signed is chosen after C knows A’s public key but before any signatures are seen.
+Adaptive chosen message attack: C is allowed to use A as an “oracle.” This means the A may request signatures of messages that depend on previously obtained message–signature pairs.
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+Attacks and Forgeries
+Total break: C determines A’s private key.
+Universal forgery: C finds an efficient signing algorithm that provides an equivalent way of constructing signatures on arbitrary messages.
+Selective forgery: C forges a signature for a particular message chosen by C.
+Existential forgery: C forges a signature for at least one message. C has no control over the message. Consequently, this forgery may only be a minor nuisance to A.
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+Digital Signature Requirements
+The signature must be a bit pattern that depends on the message being signed.
+The signature must use some information unique to the sender to prevent both forgery and denial.
+It must be relatively easy to produce the digital signature.
+It must be relatively easy to recognize and verify the digital signature.
+It must be computationally infeasible to forge a digital signature, either by constructing a new message for an existing digital signature or by constructing a fraudulent digital signature for a given message.
+It must be practical to retain a copy of the digital signature in storage.
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+Digital Signature Standard / DSA
+The DSS uses an algorithm that is designed to provide only the digital signature function. 
+Unlike RSA, it cannot be used for encryption or key exchange.
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+RSA Approach
+In the RSA approach, the message to be signed is input to a hash function that produces a secure hash code of fixed length. 
+This hash code is then encrypted using the sender’s private key to form the signature. 
+Both the message and the signature are then transmitted. 
+The recipient takes the message and  produces a hash code. 
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+RSA Approach
+The recipient also decrypts the signature using the sender’s public key. 
+If the calculated hash code matches the decrypted signature, the signature is accepted as valid. 
+Because only the sender knows the private key, only the sender could have produced a valid signature.
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+DSA Approach
+The hash code is provided as input to a signature function along with a random number k generated  for this particular signature. 
+The signature function also depends on the sender’s private key (PRa) and a set of parameters known to a group of communicating principals.
+We can consider this set to constitute a global public key (PU)
+The result is a signature consisting of two components, labelled s  and r.
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+DSA Approach
+At the receiving end, the hash code of the incoming message is generated. 
+This plus the signature is input to a verification function. 
+The verification function also depends on the global public key as well as the sender’s public key (PUa), which is paired with the sender’s private key.
+The output of the verification function is a value that is equal to the signature component r if the signature is valid. 
+The signature function is such that only the sender, with knowledge of the private key, could have produced the valid signature.
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+Digital Signature Algorithm
+
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+Digital Signature Algorithm
+
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+Digital Signature Algorithm
+
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+Digital Signature Algorithm
+
+
+
+
+
+DSA Signing
+
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+DSA Verifying
+
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+ElGamal Digital Signatures
+Uses private key for encryption (signing)
+Uses public key for decryption (verification)
+Each user (eg. A) generates their key
+chooses a secret key (number): 1 < xA < q-1 
+compute their public key: yA = axA mod q
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+22
+Recall from Chapter 10, that in 1984, T. Elgamal announced a public-key scheme based on discrete logarithms, closely related to the Diffie-Hellman technique [ELGA84, ELGA85]. The ElGamal encryption scheme is designed to enable encryption by a user's public key with decryption by the user's private key. The ElGamal signature scheme involves the use of the private key for encryption and the public key for decryption. The ElGamal cryptosystem is used in some form in a number of standards including the digital signature standard (DSS) and the S/MIME email standard.  As with Diffie-Hellman, the global elements of ElGamal are a prime number q and a, which is a primitive root of q. User A generates a private/public key pair as shown. The security of ElGamal is based on the difficulty of computing discrete logarithms, to recover either x given y, or k given K (next slide).
+
+ElGamal Digital Signature
+Alice signs a message M to Bob by computing
+the hash m = H(M), 0 <= m <= (q-1)
+chose random integer K with 1 <= K <= (q-1) and gcd(K,q-1)=1
+compute temporary key:  S1 = ak mod q
+compute K-1 the inverse of K mod (q-1)
+compute the value:  S2 = K-1(m-xAS1) mod (q-1)
+signature is:(S1,S2)
+Any user B can verify the signature by computing
+V1 = am mod q
+V2 = yAS1 S1S2 mod q
+Signature is valid if V1 = V2
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+23
+To sign a message M, user A first computes the hash m = H(M), such that m is an integer in the range 0 <= m <= q – 1. A then forms a digital signature as shown. 
+The basic idea with El Gamal signatures is to again choose a temporary random signing  key, protect it, then use it solve the specified equation on the hash of the message to create the signature (in 2 pieces). Verification consists of confirming the validation equation that relates the signature to the (hash of the) message (see text for proof). Again note that El Gamal encryption involves 1 modulo exponentiation and multiplications (vs 1 exponentiation for RSA).
+
+ElGamal Signature Example 
+Use field GF(19) q=19 and a=10
+Alice computes her key:
+A chooses xA=16 & computes yA=1016 mod 19 = 4
+Alice signs message with hash m=14 as (3,4):
+choosing random K=5 which has gcd(18,5)=1
+computing S1 = 105 mod 19 = 3
+finding K-1 mod (q-1) = 5-1 mod 18 = 11
+computing S2 = 11(14-16.3) mod 18 = 4
+Any user B can verify the signature by computing
+V1 = 1014 mod 19 = 16
+V2 = 43.34 = 5184 = 16 mod 19
+since 16 = 16 signature is valid 
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+24
+Here is an example of creating and verifying an ElGamal signature from the text using the prime field GF(19); that is, q = 19. It has primitive roots {2, 3, 10, 13, 14, 15}, as shown in Table 8.3. We choose a = 10. Alice generates a key pair as shown, which is = {19, 10, 4}. Alice can sign a message with hash m = 14 as shown to compute the signature pair (3,4). Any user B can verify the signature by computing confirming the validation equation as shown.
+
+
+
+Schnorr Digital Signatures
+Also uses exponentiation in a finite (Galois)
+security based on discrete logarithms
+Minimizes message dependent computation
+multiplying a 2n-bit integer with an n-bit integer
+Main work can be done in idle time
+Have using a prime modulus p 
+p–1 has a prime factor q of appropriate size
+typically p 1024-bit and q 160-bit numbers
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+25
+As with the ElGamal digital signature scheme, the Schnorr signature scheme is based on discrete logarithms [SCHN89, SCHN91]. The Schnorr scheme minimizes the message dependent amount of computation required to generate a signature. The main work for signature generation does not depend on the message and can be done during the idle time of the processor. The message dependent part of the signature generation requires multiplying a 2n-bit integer with an n-bit integer.  The scheme is based on using a prime modulus p, with p – 1 having a prime factor q of appropriate size; that is p – 1 = 1 (mod q). Typically, we use p approx 21024 and q approx 2160. Thus, p  is a 1024-bit number and q  is a 160-bit number, which is also the length of the SHA-1 hash value.
+
+Schnorr Key Setup
+choose suitable primes p , q
+choose a  such that aq = 1 mod p
+(a,p,q) are global parameters for all
+each user (eg. A) generates a key
+chooses a secret key (number): 0 < sA < q 
+compute their public key: vA = a-sA mod q
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+26
+The first part of this scheme is the generation of a private/public key pair, which consists of the following steps:   
+Choose primes p and q, such that q is a prime factor of p – 1.  
+Choose an integer a such that aq = 1 mod p. The values a, p, and q comprise a global public key that can be common to a group of users.  
+Choose a random integer s with 0 < s < q. This is the user's private key.  
+Calculate v = a–s mod p. This is the user's public key. 
+
+Schnorr Signature
+User signs message by
+choosing random r with 0<r<q and computing x = ar mod p
+concatenate message with x and hash result to computing: e = H(M || x)   
+computing: y = (r + se) mod q 
+signature is pair (e, y)
+Any other user can verify the signature as follows:   
+computing: x' = ayve mod p   
+verifying that: e = H(M || x’)  
+
+
+Unit-7  Digital Signature                                                           Darshan Institute of Engineering & Technology   ‹#›
+
+27
+A user with public key s and private key v generates a signature as follows:   
+Choose a random integer r with 0 < r < q and compute x = ar mod p. This is independent of any message M, hence can be pre-computed. 
+Concatenate message with x and hash result to compute: e = H(M || x)   
+Compute y = (r + se) mod q. The signature consists of the pair (e, y).  
+Any other user can verify the signature as follows:   
+Compute x' = ayve mod p.   
+Verify that e = H(M || x').  
+See text for details of why the verification works.
+
+
+
+

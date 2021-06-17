@@ -1,0 +1,1213 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PowerPoint Presentation
+
+Unit-2 
+Process and Threads Management:
+Scheduling Algorithms
+firoz.sherasiya@darshan.ac.in
+9879879861
+Computer Engineering Department
+Prof. Firoz A Sherasiya
+Operating System (OS)
+GTU # 3140702
+
+
+Darshan Institute of Engineering & Technology, Rajkot
+
+
+
+
+Looping
+Outline
+What is scheduling
+Objectives of scheduling
+Types of scheduler
+Scheduling algorithms
+First Come First Served (FCFS)
+Shortest Job First (SJF)
+Shortest Remaining Time Next (SRTN)
+Round Robin (RR)
+Priority
+Non-Preemptive Priority
+Preemptive Priority
+Real Time Operating System
+
+
+
+
+What is process scheduling?
+Section - 1
+
+
+
+
+
+What is process scheduling?
+Process scheduling is the activity of the process manager that handles suspension of running process from CPU and selection of another process on the basis of a particular strategy.
+The part of operating system that makes the choice is called scheduler.
+The algorithm used by this scheduler is called scheduling algorithm.
+Process scheduling is an essential part of a multiprogramming operating systems.
+
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Objectives (goals) of scheduling
+Section - 2
+
+
+
+
+
+Objectives (goals) of scheduling
+Fairness: giving each process a fair share of the CPU.
+Balance: keeping all the parts of the system busy (Maximize).
+Throughput: no of processes that are completed per time unit (Maximize).
+Turnaround time: time to execute a process from submission to completion (Minimize).
+Turnaround time = Process finish time – Process arrival time
+CPU utilization: percent of time that the CPU is busy in executing a process.
+keep CPU as busy as possible (Maximized).
+Response time: time between issuing a command and getting the result (Minimized).
+Waiting time: amount of time a process has been waiting in the ready queue (Minimize).
+Waiting time = Turnaround time – Actual execution time
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Types of schedulers
+Section - 3
+
+
+
+
+
+Types of schedulers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Admit
+Ready Queue
+Dispatch
+Time-out
+Event Wait
+Exit
+Processor
+Blocked Queue
+Event
+Occurs
+
+Long Term
+Scheduler
+Short Term
+Scheduler
+Medium Term
+Scheduler
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Types of schedulers
+
+	Long-Term Scheduler	Short-Term Scheduler	Medium-Term Scheduler
+
+	It selects processes from pool and loads them into memory for execution.	It selects those processes which are ready to execute.	It can re-introduce the process into memory and execution can be continued.
+
+	Speed is lesser than short term scheduler.	Speed is fastest among other two schedulers.	Speed is in between both short and long term scheduler.
+
+	It is almost absent or minimal in time sharing system.	It is also minimal in time sharing system.	It is a part of time sharing systems.
+
+	It is a job scheduler.	It is a CPU scheduler.	It is a process swapping scheduler.
+
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Scheduling algorithms
+Section - 4
+
+
+
+
+
+Scheduling algorithms
+First Come First Served (FCFS)
+Shortest Job First (SJF)
+Shortest Remaining Time Next (SRTN)
+Round Robin (RR)
+Priority
+Preemptive
+Non-Preemptive
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+First Come First Served (FCFS)
+Section – 4.1
+
+
+
+
+
+First Come First Served (FCFS)
+Selection criteria:
+The process that request first is served first.
+It means that processes are served in the exact order of their arrival.
+
+
+
+
+Decision Mode:
+Non preemptive: Once a process is selected, it runs until it is blocked for an I/O or some other event or it is terminated.
+Implementation:
+This strategy can be easily implemented by using FIFO (First In First Out) queue. 
+When CPU becomes free, a process from the first position in a queue is selected to run.
+
+Head
+Tail
+P1
+P2
+P3
+
+Ready queue
+P0
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+First Come First Served (FCFS)
+
+
+
+
+
+
+
+Gantt Chart
+
+
+Average Turnaround Time:	 (10+15+15+17)/4 	=	14.25 ms.
+Average Waiting Time:	 (0+9+13+13)/4  	=	8.75 ms.
+	Process	Arrival Time
+(T0)	Burst Time
+(ΔT)
+	P0	0	10
+	P1	1	6
+	P2	3	2
+	P3	5	4
+
+	Finish Time
+(T1)
+
+	Turnaround Time
+(TAT = T1 - T0)
+
+	Waiting Time
+(WT = TAT - ΔT)
+
+	10
+
+	16
+
+	18
+
+	22
+
+	10
+
+	15
+
+	15
+
+	17
+
+	0
+
+	9
+
+	13
+
+	13
+
+P0
+P1
+P2
+P3
+0
+10
+16
+18
+22
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+First Come First Served (FCFS)
+Advantages
+Simple and fair.
+Easy to understand and implement.
+Every process will get a chance to run, so starvation doesn't occur.
+Starvation is the problem that occurs when high priority processes keep executing and low priority processes get blocked for indefinite time.
+Disadvantages 
+Not efficient because average waiting time is too high.
+Convoy effect is possible. All small I/O bound processes wait for one big CPU bound process to acquire CPU. 
+
+
+
+
+
+CPU utilization may be less efficient especially when a CPU bound process is running with many I/O bound processes.
+
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Shortest Job First (SJF)
+Section – 4.2
+
+
+
+
+
+Shortest Job First (SJF)
+Selection criteria:
+The process, that requires shortest time to complete execution, is served first.
+
+
+
+
+Decision Mode:
+Non preemptive: Once a process is selected, it runs until it is blocked for an I/O or some other event or it is terminated.
+Implementation:
+This strategy can be easily implemented by using sorted FIFO (First In First Out) queue. 
+All processes in a queue are sorted in ascending order based on their required CPU bursts. 
+When CPU becomes free, a process from the first position in a queue is selected to run.
+
+Head
+Tail
+P1 (2)
+P2 (6)
+P3 (3)
+
+Ready queue
+P0 (4)
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Shortest Job First (SJF)
+
+
+
+
+
+
+
+Gantt Chart
+
+
+Average Turnaround Time:	 (10+21+9+11)/4 	=	12.75 ms.
+Average Waiting Time:	 (0+15+7+7)/4  	=	7.25 ms.
+	Process	Arrival Time
+(T0)	Burst Time
+(ΔT)
+	P0	0	10
+	P1	1	6
+	P2	3	2
+	P3	5	4
+
+	Finish Time
+(T1)
+
+	Turnaround Time
+(TAT = T1 - T0)
+
+	Waiting Time
+(WT = TAT - ΔT)
+
+	10
+
+	22
+
+	12
+
+	16
+
+	10
+
+	21
+
+	9
+
+	11
+
+	0
+
+	15
+
+	7
+
+	7
+
+P0
+P1
+P2
+P3
+0
+10
+16
+12
+22
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Shortest Job First (SJF)
+Advantages
+Less waiting time.
+Good response for short processes.
+Disadvantages 
+It is difficult to estimate time required to complete execution.
+Starvation is possible for long process. Long process may wait forever.
+Starvation is the problem that occurs when high priority processes keep executing and low priority processes get blocked for indefinite time.
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Shortest Remaining Time Next (SRTN)
+Section – 4.3
+
+
+
+
+
+Shortest Remaining Time Next (SRTN)
+Selection criteria:
+The process, whose remaining run time is shortest, is served first. This is a preemptive version of SJF scheduling.
+
+
+
+
+Decision Mode:
+Preemptive: When a new process arrives, its total time is compared to the current process remaining run time. 
+If the new process needs less time to finish than the current process, the current process is suspended and the new job is started.
+Implementation:
+This strategy can also be implemented by using sorted FIFO queue. 
+All processes in a queue are sorted in ascending order on their remaining run time. 
+When CPU becomes free, a process from the first position in a queue is selected to run.
+
+Head
+Tail
+P1 (2)
+P2 (6)
+P3 (1)
+
+Ready queue
+P0 (2)
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Shortest Remaining Time Next (SRTN)
+
+
+
+
+
+
+
+Gantt Chart
+
+Average Turnaround Time:     10 ms
+Average Waiting Time:            4.5 ms
+	Process	Arrival Time
+(T0)	Burst Time
+(ΔT)
+	P0	0	10
+	P1	1	6
+	P2	3	2
+	P3	5	4
+
+	Finish Time
+(T1)
+
+	Turnaround Time
+(TAT = T1 - T0)
+
+	Waiting Time
+(WT = TAT - ΔT)
+
+	22
+
+	9
+
+	5
+
+	13
+
+	22
+
+	8
+
+	2
+
+	8
+
+	12
+
+	2
+
+	0
+
+	4
+
+P0
+P1
+0
+9
+22
+P0
+1
+P1
+3
+P2
+5
+P3
+13
+	Process	Remaining Time
+	P1	6
+	P0	9
+
+	Process	Remaining Time
+	P0	9
+	P2	2
+	P1	4
+
+	Process	Remaining Time
+	P0	9
+	P1	4
+	P3	4
+
+	Process	Remaining Time
+	P0	9
+	P3	4
+
+	Process	Remaining Time
+	P0	9
+
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Shortest Remaining Time Next (SRTN)
+Advantages
+Less waiting time.
+Quite good response for short processes.
+Disadvantages 
+It is difficult to estimate time required to complete execution.
+Starvation is possible for long process. Long process may wait forever.
+Starvation is the problem that occurs when high priority processes keep executing and low priority processes get blocked for indefinite time.
+Context switch overhead is there.
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Round Robin (RR)
+Section – 4.4
+
+
+
+
+
+Round Robin (RR)
+Selection criteria:
+Each selected process is assigned a time interval, called time quantum or time slice. 
+Process is allowed to run only for this time interval. 
+Here, two things are possible:  
+First, process is either blocked or terminated before the quantum has elapsed. In this case the CPU switching is done and another process is scheduled to run. 
+
+
+
+Second, process needs CPU burst longer than time quantum. In this case, process is running at the end of the time quantum. 
+Now, it will be preempted and moved to the end of the queue. 
+CPU will be allocated to another process. 
+Here, length of time quantum is critical to determine.
+
+Head
+Tail
+P1 (2)
+P2 (6)
+P3 (1)
+
+Ready queue & Quantum = 3
+P0 (2)
+Ready queue & Quantum = 3
+
+Head
+Tail
+P1 (2)
+P2 (6)
+P3 (1)
+
+Ready queue & Quantum = 3
+P0 (1)
+P0 (4)
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Round Robin (RR)
+Decision Mode:
+Preemptive: When a new process arrives, its total time is compared to the current process remaining run time. 
+Selection of new job is as per FCFS scheduling algorithm.
+Implementation:
+This strategy can be implemented by using circular FIFO queue. 
+If any process comes, or process releases CPU, or process is preempted. It is moved to the end of the queue. 
+When CPU becomes free, a process from the first position in a queue is selected to run.
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Round Robin (RR)
+
+
+
+
+
+
+
+Gantt Chart 
+Quantum time is 4 ms & 
+Context switch overhead is 1 ms
+Avg. Turnaround Time:  19.5 ms
+Avg. Waiting Time:         14 ms
+	Process	Arrival Time
+(T0)	Burst Time
+(ΔT)
+	P0	0	10
+	P1	1	6
+	P2	3	2
+	P3	5	4
+
+	Finish Time
+(T1)
+
+	Turnaround Time
+(TAT = T1 - T0)
+
+	Waiting Time
+(WT = TAT - ΔT)
+
+	28
+
+	25
+
+	12
+
+	22
+
+	28
+
+	24
+
+	9
+
+	17
+
+	18
+
+	18
+
+	7
+
+	13
+
+0
+P0
+
+4
+5
+P1
+
+9
+10
+P2
+
+12
+13
+P0
+
+17
+18
+P3
+
+22
+23
+P1
+
+25
+26
+P0
+28
+	Process	Remaining Time
+	P1	6
+	P2	2
+	P0	6
+
+	Process	Remaining Time
+	P2	2
+	P0	6
+	P3	4
+	P1	2
+
+	Process	Remaining Time
+	P0	6
+	P3	4
+	P1	2
+
+	Process	Remaining Time
+	P3	4
+	P1	2
+	P0	2
+
+	Process	Remaining Time
+	P1	2
+	P0	2
+
+	Process	Remaining Time
+	P0	2
+
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Round Robin (RR)
+Advantages
+Simplest, fairest and most widely used algorithms.
+Disadvantages 
+Context switch overhead is there.
+Determination of time quantum is too critical. 
+If it is too short, it causes frequent context switches and lowers CPU efficiency. 
+If it is too long, it causes poor response for short interactive process.
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Priority 
+(Non-Preemptive Priority)
+Section – 4.5.1
+
+
+
+
+
+Non-Preemptive Priority
+Selection criteria:
+The process, that has highest priority, is served first.
+
+
+
+
+Decision Mode:
+Non preemptive: Once a process is selected, it runs until it is blocked for an I/O or some other event or it is terminated.
+Implementation:
+This strategy can also be implemented by using sorted FIFO queue. 
+All processes in a queue are sorted based on their priority with highest priority process at front end. 
+When CPU becomes free, a process from the first position in a queue is selected to run.
+
+Head
+Tail
+P1 (8)
+P2 (6)
+P3 (7)
+
+Ready queue
+P0 (2)
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Non-Preemptive Priority
+
+
+
+
+
+
+
+Gantt Chart (small values for priority means higher priority of a process)
+
+Avg. Turnaround Time:  13.25 ms
+Avg. Waiting Time:         7.75 ms
+	Process	Arrival Time
+(T0)	Burst Time
+(ΔT)	Priority
+	P0	0	10	5
+	P1	1	6	4
+	P2	3	2	2
+	P3	5	4	0
+
+	Finish Time
+(T1)
+
+	Turnaround Time
+(TAT = T1 - T0)
+
+	Waiting Time
+(WT = TAT - ΔT)
+
+	10
+
+	22
+
+	16
+
+	14
+
+	10
+
+	21
+
+	13
+
+	9
+
+	0
+
+	15
+
+	11
+
+	5
+
+P0
+P1
+P2
+P3
+0
+10
+14
+16
+22
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Non-Preemptive Priority
+Advantages
+Priority is considered so critical processes can get even better response time.
+Disadvantages 
+Starvation is possible for low priority processes. It can be overcome by using technique called ‘Aging’.
+Aging: gradually increases the priority of processes that wait in the system for a long time.
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Priority 
+(Preemptive Priority)
+Section – 4.5.2
+
+
+
+
+
+Preemptive Priority
+Selection criteria:
+The process, that has highest priority, is served first.
+
+
+
+
+Decision Mode:
+Preemptive: When a new process arrives, its priority is compared with current process priority. 
+If the new process has higher priority than the current, the current process is suspended and new job is started.
+Implementation:
+This strategy can also be implemented by using sorted FIFO queue. 
+All processes in a queue are sorted based on their priority with highest priority process at front end. 
+When CPU becomes free, a process from the first position in a queue is selected to run.
+
+Head
+Tail
+P1 (5)
+P2 (4)
+P3 (8)
+
+Ready queue
+P0 (7)
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Preemptive Priority
+
+
+
+
+
+
+
+Gantt Chart 
+small values means higher priority
+Avg. Turnaround Time:  10 ms
+Avg. Waiting Time:         4.5 ms
+	Process	Arrival Time
+(T0)	Burst Time
+(ΔT)	Priority
+	P0	0	10	5
+	P1	1	6	4
+	P2	3	2	2
+	P3	5	4	0
+
+	Finish Time
+(T1)
+
+	Turnaround Time
+(TAT = T1 - T0)
+
+	Waiting Time
+(WT = TAT - ΔT)
+
+	22
+
+	13
+
+	5
+
+	9
+
+	22
+
+	12
+
+	2
+
+	4
+
+	12
+
+	6
+
+	0
+
+	0
+
+P0
+P3
+0
+5
+9
+13
+22
+P0
+P1
+P2
+P1
+3
+1
+	Process	Priority
+	P1	4
+	P0	5
+
+	Process	Priority
+	P0	5
+	P2	2
+	P1	4
+
+	Process	Priority
+	P0	5
+	P1	4
+	P3	0
+
+	Process	Priority
+	P0	5
+	P1	4
+
+	Process	Priority
+	P0	5
+
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Preemptive Priority
+Advantages
+Priority is considered so critical processes can get even better response time.
+Disadvantages 
+Starvation is possible for low priority processes. It can be overcome by using technique called ‘Aging’.
+Aging: gradually increases the priority of processes that wait in the system for a long time.
+Context switch overhead is there.
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Real Time Operating System
+Section – 5
+
+
+
+
+
+Real Time Operating System
+A real-time system is one in which time plays an essential role.
+Real time computing may be defined as that type of computing in which the correctness of the system depends not only on the logical result of the computation but also on the time at which the results are produced.
+Some of the real-time systems are patient monitoring in a hospital intensive-care unit, the autopilot in an aircraft and robot control in an automated factory. 
+In all these cases, having the right answer but having it too late is often just as bad as not having it at all.
+Real time task may be classified as hard and soft.
+A hard real time task is one that must meet its deadline; otherwise it will cause unacceptable damage or a fatal error to the system.  
+A soft real time task has an associated deadline that is desirable but not mandatory; it will not cause unacceptable damage or a fatal error on missing deadline.
+
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Real Time Operating System
+The events that a real-time system may have to respond to can be further categorized as periodic (occurring at regular intervals) or aperiodic (occurring unpredictably). 
+A system may have to respond to multiple periodic event streams. Depending on how much time each event requires for processing, it may not even be possible to handle them all.
+Real-time scheduling algorithms can be static or dynamic. 
+Static: The former make their scheduling decisions before the system starts running. 
+Dynamic: The latter make their scheduling decisions at run time. 
+Static scheduling only works when there is per­fect information available in advance about the work to be done and the deadlines that have to be met. 
+Dynamic scheduling algorithms do not have these restrictions.
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Exercise
+Five batch jobs A to E arrive at same time. They have estimated running times 10,6,2,4 and 8 minutes. Their priorities are 3,5,2,1 and 4 respectively with 5 being highest priority. For each of the following algorithm determine mean process turnaround time. Ignore process swapping overhead. Quantum time is 2 minute. 
+Round Robin, Priority Scheduling, FCFS, SJF.
+
+Suppose that the following processes arrive for the execution at the times indicated. Each process will run the listed amount of time. Assume preemptive scheduling.
+Process         Arrival Time (ms)           Burst Time (ms)
+    P1                          0.0                                    8
+    P2                          0.4                                    4
+    P3                          1.0                                    1
+What is the turnaround time for these processes with Shortest Job First scheduling algorithm?
+
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Exercise
+Consider the following set of processes with length of CPU burst time given in milliseconds.
+Process         Burst Time      Priority
+    P1                   10                        3
+    P2                    1       	   1
+    P3                    2                         3
+    P4                    1                         4
+    P5                    5                         2
+Assume arrival order is: P1, P2, P3, P4, P5 all at time 0 and a smaller priority number implies a higher priority. Draw the Gantt charts illustrating the execution of these processes using preemptive priority scheduling.
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Questions asked in GTU
+Define term Scheduler, Scheduling and Scheduling Algorithm with example.
+Define terms. 1) Throughput 2) Waiting Time 3) Turnaround Time 4) Response Time               5) Granularity 6) Short Term Scheduler 7) CPU Utilization
+What is scheduler? Explain queuing diagram representation of process scheduler with figure.
+Write various scheduling criteria.
+Consider Five Processes P1 to P5 arrived at same time. They have estimated running time 10, 2, 6, 8 and 4 seconds, respectively. Their Priorities are 3, 2, 5, 4 and 1, respectively with 5 being highest Priority. Find the average turnaround time and average waiting time for Round Robin (quantum time=3) and Priority Scheduling algorithm.
+Consider the processes P1, P2, P3, P4 with burst time is 21, 3, 6 and 2 respectively, arrives for execution in the same order, with arrival time 0, draw GANTT chart and find the average waiting time using the FCFS and SJF scheduling algorithm.
+
+
+
+Prof. Firoz A Sherasiya
+#3140702 (OS)      Unit 2 – Process and Threads Management
+‹#›
+
+Database Management Systems (DBMS)
+GTU # 3130703
+firoz.sherasiya@darshan.ac.in
+9879879861
+Computer Engineering Department
+Prof. Firoz A Sherasiya
+
+
+Darshan Institute of Engineering & Technology, Rajkot
+
+
+
+Thank
+You
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/docProps/thumbnail.jpeg
+
