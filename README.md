@@ -1,5 +1,5 @@
-# pdf-text-extraction
-Text extraction from PDF using python
+# text-extraction-program
+Text extraction from different files using python
 
 
 ## Installation Guidelines
