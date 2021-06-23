@@ -1,30 +1,31 @@
 import os
-import re
 
 from nltk.tokenize import sent_tokenize, word_tokenize
 
 
 def text_tokenizer(input_directory, output_directory):
-    cnt = 1
-
+    """
+    This method tokenize the setences & words from the given text file
+    """
     for filename in os.listdir(input_directory):
         with open(input_directory + '/' + filename, "r") as i:
             data = i.read()
 
         with open(output_directory + '/' + filename + "_using_NLTK.txt", "w") as f:
-            data = data.replace("\t", ' ')
             data = data.replace("\n", ' ')
-            data = re.sub('e.g.\s', ' e.g.- ', data)
+            data = data.replace("e.g.", 'e.g.-')
+            data = data.replace("i.e.", 'i.e.-')
 
             sentences = sent_tokenize(data)
+            cnt = 1
             for sentence in sentences:
-                f.write("\n\n<----------------------------------- Sentence %s -------------------------------------------> \n" % cnt)
+                f.write("<----------------------------------- Sentence %s -------------------------------------------> \n" % cnt)
                 f.write(sentence)
                 words = word_tokenize(sentence)
                 f.write("\n")
-                for word in words:
-                    f.write("\n--->>> %s" % word)
                 cnt += 1
+                for word in words:
+                    f.write("--->>> %s \n" % word)
 
 
 if __name__ == '__main__':
