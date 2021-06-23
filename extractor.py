@@ -43,7 +43,7 @@ def text_extraction_using_tika(input_directory, output_directory):
 
         try:
             with open(output_directory + '/' + filename + "_using_tika.txt", "w") as f:
-                f.write(data)
+                f.write(data.strip())
             if ext == '.pdf':
                 pdf_count += 1
             if ext == '.docx' or ext == '.doc':
