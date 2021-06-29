@@ -1,11 +1,16 @@
 import os
+import nltk
 
+from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
+
+stop_words = set(stopwords.words('english'))
 
 
 def text_tokenizer(input_directory, output_directory):
     """
-    This method tokenize the setences & words from the given text file
+    This method tokenize the sentences & words from the given text file.
+    After that it removes the stop words and assigns the appropriate PoS tag to each word.
     """
     for filename in os.listdir(input_directory):
         with open(input_directory + '/' + filename, "r") as i:
@@ -19,13 +24,16 @@ def text_tokenizer(input_directory, output_directory):
             sentences = sent_tokenize(data)
             cnt = 1
             for sentence in sentences:
-                f.write("<----------------------------------- Sentence %s -------------------------------------------> \n" % cnt)
+                f.write("\n<----------------------------------- Sentence %s -------------------------------------------> \n" % cnt)
                 f.write(sentence)
                 words = word_tokenize(sentence)
-                f.write("\n")
+                words = [word for word in words if not word in stop_words]
+                tagged_words = nltk.pos_tag(words)
+                f.write("\n\nPOS Tags are: \n>> %s \n" % tagged_words)
+                f.write("\nTokens are: \n")
                 cnt += 1
                 for word in words:
-                    f.write("--->>> %s \n" % word)
+                    f.write(">> %s \n" % word)
 
 
 if __name__ == '__main__':
