@@ -59,8 +59,42 @@ def text_extraction_using_tika(input_directory, output_directory):
           "Processed PPT Files: %s \n> Processed HTML Files: %s \n" % (pdf_count, doc_count, ppt_count, html_count))
 
 
+def xml_extraction_using_tika(input_directory, output_directory):
+    """
+    This function uses Tika library to extract xml from PDF files
+    """
+    pdf_count = 0
+    for filename in os.listdir(input_directory):
+        parsed_file = parser.from_file(input_directory + '/' + filename, xmlContent=True)
+        data = parsed_file['content']
+
+        filename, ext = os.path.splitext(os.path.basename(filename))
+
+        try:
+            with open(output_directory + '/' + filename + "_using_tika.txt", "w") as f:
+                f.write(data.strip())
+            if ext == '.pdf':
+                pdf_count += 1
+        except Exception as e:
+            print("\n\n Writing to file %s failed due to: %s", filename, e)
+
+    print("\n\n> Processed PDF Files: %s" % pdf_count)
+
+
 if __name__ == '__main__':
     print("\n\n\n *** Text Extraction Program *** \n\n")
+    print("Please select the processing method:\n"
+          "1. Extraction using TIKA for non xml\n"
+          "2. Extraction using TIKA for xml\n")
+    user_choice = input("\nPlease Enter your choice (1 or 2):")
     input_file_directory = input("> Enter the input directory path:")
     output_file_directory = input("> Enter the output directory path:")
-    text_extraction_using_tika(input_file_directory, output_file_directory)
+
+    if user_choice == '1':
+        print("\n\n TIKA for non xml in progress...")
+        text_extraction_using_tika(input_file_directory, output_file_directory)
+    elif user_choice == '2':
+        print("\n\n TIKA for xml in progress...")
+        xml_extraction_using_tika(input_file_directory, output_file_directory)
+    else:
+        print("Invalid Choice")
