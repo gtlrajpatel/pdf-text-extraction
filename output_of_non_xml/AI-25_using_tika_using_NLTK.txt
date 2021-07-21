@@ -1,0 +1,2619 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-25 Applications of Machine learning Machine learning is a buzzword for today's technology, and it is growing very rapidly day by day. 
+
+
+>> Tokens are: 
+ ['AI-25', 'Applications', 'Machine', 'learning', 'Machine', 'learning', 'buzzword', 'today', "'s", 'technology', ',', 'growing', 'rapidly', 'day', 'day', '.']
+
+>> Bigrams are: 
+ [('AI-25', 'Applications'), ('Applications', 'Machine'), ('Machine', 'learning'), ('learning', 'Machine'), ('Machine', 'learning'), ('learning', 'buzzword'), ('buzzword', 'today'), ('today', "'s"), ("'s", 'technology'), ('technology', ','), (',', 'growing'), ('growing', 'rapidly'), ('rapidly', 'day'), ('day', 'day'), ('day', '.')]
+
+>> Trigrams are: 
+ [('AI-25', 'Applications', 'Machine'), ('Applications', 'Machine', 'learning'), ('Machine', 'learning', 'Machine'), ('learning', 'Machine', 'learning'), ('Machine', 'learning', 'buzzword'), ('learning', 'buzzword', 'today'), ('buzzword', 'today', "'s"), ('today', "'s", 'technology'), ("'s", 'technology', ','), ('technology', ',', 'growing'), (',', 'growing', 'rapidly'), ('growing', 'rapidly', 'day'), ('rapidly', 'day', 'day'), ('day', 'day', '.')]
+
+>> POS Tags are: 
+ [('AI-25', 'JJ'), ('Applications', 'NNP'), ('Machine', 'NNP'), ('learning', 'VBG'), ('Machine', 'NNP'), ('learning', 'NN'), ('buzzword', 'NN'), ('today', 'NN'), ("'s", 'POS'), ('technology', 'NN'), (',', ','), ('growing', 'VBG'), ('rapidly', 'RB'), ('day', 'NN'), ('day', 'NN'), ('.', '.')]
+
+ (S
+  (NP AI-25/JJ Applications/NNP Machine/NNP)
+  learning/VBG
+  (NP Machine/NNP learning/NN buzzword/NN today/NN)
+  's/POS
+  (NP technology/NN)
+  ,/,
+  growing/VBG
+  rapidly/RB
+  (NP day/NN day/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-25 Applications Machine', 'Machine learning buzzword today', 'technology', 'day day']
+
+>> Named Entities are: 
+ [('PERSON', 'Machine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-25', 'ai-25'), ('Applications', 'applic'), ('Machine', 'machin'), ('learning', 'learn'), ('Machine', 'machin'), ('learning', 'learn'), ('buzzword', 'buzzword'), ('today', 'today'), ("'s", "'s"), ('technology', 'technolog'), (',', ','), ('growing', 'grow'), ('rapidly', 'rapidli'), ('day', 'day'), ('day', 'day'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-25', 'ai-25'), ('Applications', 'applic'), ('Machine', 'machin'), ('learning', 'learn'), ('Machine', 'machin'), ('learning', 'learn'), ('buzzword', 'buzzword'), ('today', 'today'), ("'s", "'s"), ('technology', 'technolog'), (',', ','), ('growing', 'grow'), ('rapidly', 'rapid'), ('day', 'day'), ('day', 'day'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-25', 'AI-25'), ('Applications', 'Applications'), ('Machine', 'Machine'), ('learning', 'learning'), ('Machine', 'Machine'), ('learning', 'learning'), ('buzzword', 'buzzword'), ('today', 'today'), ("'s", "'s"), ('technology', 'technology'), (',', ','), ('growing', 'growing'), ('rapidly', 'rapidly'), ('day', 'day'), ('day', 'day'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+We are using machine learning in our daily life even without knowing it such as Google Maps, Google assistant, Alexa, etc. 
+
+
+>> Tokens are: 
+ ['We', 'using', 'machine', 'learning', 'daily', 'life', 'even', 'without', 'knowing', 'Google', 'Maps', ',', 'Google', 'assistant', ',', 'Alexa', ',', 'etc', '.']
+
+>> Bigrams are: 
+ [('We', 'using'), ('using', 'machine'), ('machine', 'learning'), ('learning', 'daily'), ('daily', 'life'), ('life', 'even'), ('even', 'without'), ('without', 'knowing'), ('knowing', 'Google'), ('Google', 'Maps'), ('Maps', ','), (',', 'Google'), ('Google', 'assistant'), ('assistant', ','), (',', 'Alexa'), ('Alexa', ','), (',', 'etc'), ('etc', '.')]
+
+>> Trigrams are: 
+ [('We', 'using', 'machine'), ('using', 'machine', 'learning'), ('machine', 'learning', 'daily'), ('learning', 'daily', 'life'), ('daily', 'life', 'even'), ('life', 'even', 'without'), ('even', 'without', 'knowing'), ('without', 'knowing', 'Google'), ('knowing', 'Google', 'Maps'), ('Google', 'Maps', ','), ('Maps', ',', 'Google'), (',', 'Google', 'assistant'), ('Google', 'assistant', ','), ('assistant', ',', 'Alexa'), (',', 'Alexa', ','), ('Alexa', ',', 'etc'), (',', 'etc', '.')]
+
+>> POS Tags are: 
+ [('We', 'PRP'), ('using', 'VBG'), ('machine', 'NN'), ('learning', 'VBG'), ('daily', 'JJ'), ('life', 'NN'), ('even', 'RB'), ('without', 'IN'), ('knowing', 'VBG'), ('Google', 'NNP'), ('Maps', 'NNP'), (',', ','), ('Google', 'NNP'), ('assistant', 'NN'), (',', ','), ('Alexa', 'NNP'), (',', ','), ('etc', 'NN'), ('.', '.')]
+
+ (S
+  We/PRP
+  using/VBG
+  (NP machine/NN)
+  learning/VBG
+  (NP daily/JJ life/NN)
+  even/RB
+  without/IN
+  knowing/VBG
+  (NP Google/NNP Maps/NNP)
+  ,/,
+  (NP Google/NNP assistant/NN)
+  ,/,
+  (NP Alexa/NNP)
+  ,/,
+  (NP etc/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['machine', 'daily life', 'Google Maps', 'Google assistant', 'Alexa', 'etc']
+
+>> Named Entities are: 
+ [('PERSON', 'Google Maps'), ('GPE', 'Google'), ('PERSON', 'Alexa')] 
+
+>> Stemming using Porter Stemmer: 
+ [('We', 'we'), ('using', 'use'), ('machine', 'machin'), ('learning', 'learn'), ('daily', 'daili'), ('life', 'life'), ('even', 'even'), ('without', 'without'), ('knowing', 'know'), ('Google', 'googl'), ('Maps', 'map'), (',', ','), ('Google', 'googl'), ('assistant', 'assist'), (',', ','), ('Alexa', 'alexa'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('We', 'we'), ('using', 'use'), ('machine', 'machin'), ('learning', 'learn'), ('daily', 'daili'), ('life', 'life'), ('even', 'even'), ('without', 'without'), ('knowing', 'know'), ('Google', 'googl'), ('Maps', 'map'), (',', ','), ('Google', 'googl'), ('assistant', 'assist'), (',', ','), ('Alexa', 'alexa'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('We', 'We'), ('using', 'using'), ('machine', 'machine'), ('learning', 'learning'), ('daily', 'daily'), ('life', 'life'), ('even', 'even'), ('without', 'without'), ('knowing', 'knowing'), ('Google', 'Google'), ('Maps', 'Maps'), (',', ','), ('Google', 'Google'), ('assistant', 'assistant'), (',', ','), ('Alexa', 'Alexa'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+Below are some most trending real-world applications of Machine Learning:  1. 
+
+
+>> Tokens are: 
+ ['Below', 'trending', 'real-world', 'applications', 'Machine', 'Learning', ':', '1', '.']
+
+>> Bigrams are: 
+ [('Below', 'trending'), ('trending', 'real-world'), ('real-world', 'applications'), ('applications', 'Machine'), ('Machine', 'Learning'), ('Learning', ':'), (':', '1'), ('1', '.')]
+
+>> Trigrams are: 
+ [('Below', 'trending', 'real-world'), ('trending', 'real-world', 'applications'), ('real-world', 'applications', 'Machine'), ('applications', 'Machine', 'Learning'), ('Machine', 'Learning', ':'), ('Learning', ':', '1'), (':', '1', '.')]
+
+>> POS Tags are: 
+ [('Below', 'IN'), ('trending', 'VBG'), ('real-world', 'JJ'), ('applications', 'NNS'), ('Machine', 'NNP'), ('Learning', 'NNP'), (':', ':'), ('1', 'CD'), ('.', '.')]
+
+ (S
+  Below/IN
+  trending/VBG
+  (NP real-world/JJ applications/NNS Machine/NNP Learning/NNP)
+  :/:
+  1/CD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['real-world applications Machine Learning']
+
+>> Named Entities are: 
+ [('PERSON', 'Machine Learning')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Below', 'below'), ('trending', 'trend'), ('real-world', 'real-world'), ('applications', 'applic'), ('Machine', 'machin'), ('Learning', 'learn'), (':', ':'), ('1', '1'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Below', 'below'), ('trending', 'trend'), ('real-world', 'real-world'), ('applications', 'applic'), ('Machine', 'machin'), ('Learning', 'learn'), (':', ':'), ('1', '1'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Below', 'Below'), ('trending', 'trending'), ('real-world', 'real-world'), ('applications', 'application'), ('Machine', 'Machine'), ('Learning', 'Learning'), (':', ':'), ('1', '1'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+Image Recognition: Image recognition is one of the most common applications of machine learning. 
+
+
+>> Tokens are: 
+ ['Image', 'Recognition', ':', 'Image', 'recognition', 'one', 'common', 'applications', 'machine', 'learning', '.']
+
+>> Bigrams are: 
+ [('Image', 'Recognition'), ('Recognition', ':'), (':', 'Image'), ('Image', 'recognition'), ('recognition', 'one'), ('one', 'common'), ('common', 'applications'), ('applications', 'machine'), ('machine', 'learning'), ('learning', '.')]
+
+>> Trigrams are: 
+ [('Image', 'Recognition', ':'), ('Recognition', ':', 'Image'), (':', 'Image', 'recognition'), ('Image', 'recognition', 'one'), ('recognition', 'one', 'common'), ('one', 'common', 'applications'), ('common', 'applications', 'machine'), ('applications', 'machine', 'learning'), ('machine', 'learning', '.')]
+
+>> POS Tags are: 
+ [('Image', 'NN'), ('Recognition', 'NN'), (':', ':'), ('Image', 'NN'), ('recognition', 'NN'), ('one', 'CD'), ('common', 'JJ'), ('applications', 'NNS'), ('machine', 'NN'), ('learning', 'NN'), ('.', '.')]
+
+ (S
+  (NP Image/NN Recognition/NN)
+  :/:
+  (NP Image/NN recognition/NN)
+  one/CD
+  (NP common/JJ applications/NNS machine/NN learning/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Image Recognition', 'Image recognition', 'common applications machine learning']
+
+>> Named Entities are: 
+ [('GPE', 'Image')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Image', 'imag'), ('Recognition', 'recognit'), (':', ':'), ('Image', 'imag'), ('recognition', 'recognit'), ('one', 'one'), ('common', 'common'), ('applications', 'applic'), ('machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Image', 'imag'), ('Recognition', 'recognit'), (':', ':'), ('Image', 'imag'), ('recognition', 'recognit'), ('one', 'one'), ('common', 'common'), ('applications', 'applic'), ('machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Image', 'Image'), ('Recognition', 'Recognition'), (':', ':'), ('Image', 'Image'), ('recognition', 'recognition'), ('one', 'one'), ('common', 'common'), ('applications', 'application'), ('machine', 'machine'), ('learning', 'learning'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+It is used to identify objects, persons, places, digital images, etc. 
+
+
+>> Tokens are: 
+ ['It', 'used', 'identify', 'objects', ',', 'persons', ',', 'places', ',', 'digital', 'images', ',', 'etc', '.']
+
+>> Bigrams are: 
+ [('It', 'used'), ('used', 'identify'), ('identify', 'objects'), ('objects', ','), (',', 'persons'), ('persons', ','), (',', 'places'), ('places', ','), (',', 'digital'), ('digital', 'images'), ('images', ','), (',', 'etc'), ('etc', '.')]
+
+>> Trigrams are: 
+ [('It', 'used', 'identify'), ('used', 'identify', 'objects'), ('identify', 'objects', ','), ('objects', ',', 'persons'), (',', 'persons', ','), ('persons', ',', 'places'), (',', 'places', ','), ('places', ',', 'digital'), (',', 'digital', 'images'), ('digital', 'images', ','), ('images', ',', 'etc'), (',', 'etc', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('used', 'VBD'), ('identify', 'JJ'), ('objects', 'NNS'), (',', ','), ('persons', 'NNS'), (',', ','), ('places', 'NNS'), (',', ','), ('digital', 'JJ'), ('images', 'NNS'), (',', ','), ('etc', 'FW'), ('.', '.')]
+
+ (S
+  It/PRP
+  used/VBD
+  (NP identify/JJ objects/NNS)
+  ,/,
+  (NP persons/NNS)
+  ,/,
+  (NP places/NNS)
+  ,/,
+  (NP digital/JJ images/NNS)
+  ,/,
+  etc/FW
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['identify objects', 'persons', 'places', 'digital images']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('used', 'use'), ('identify', 'identifi'), ('objects', 'object'), (',', ','), ('persons', 'person'), (',', ','), ('places', 'place'), (',', ','), ('digital', 'digit'), ('images', 'imag'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('used', 'use'), ('identify', 'identifi'), ('objects', 'object'), (',', ','), ('persons', 'person'), (',', ','), ('places', 'place'), (',', ','), ('digital', 'digit'), ('images', 'imag'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('used', 'used'), ('identify', 'identify'), ('objects', 'object'), (',', ','), ('persons', 'person'), (',', ','), ('places', 'place'), (',', ','), ('digital', 'digital'), ('images', 'image'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+The popular use case of image recognition and face detection is, Automatic friend tagging suggestion: Facebook provides us a feature of auto friend tagging suggestion. 
+
+
+>> Tokens are: 
+ ['The', 'popular', 'use', 'case', 'image', 'recognition', 'face', 'detection', ',', 'Automatic', 'friend', 'tagging', 'suggestion', ':', 'Facebook', 'provides', 'us', 'feature', 'auto', 'friend', 'tagging', 'suggestion', '.']
+
+>> Bigrams are: 
+ [('The', 'popular'), ('popular', 'use'), ('use', 'case'), ('case', 'image'), ('image', 'recognition'), ('recognition', 'face'), ('face', 'detection'), ('detection', ','), (',', 'Automatic'), ('Automatic', 'friend'), ('friend', 'tagging'), ('tagging', 'suggestion'), ('suggestion', ':'), (':', 'Facebook'), ('Facebook', 'provides'), ('provides', 'us'), ('us', 'feature'), ('feature', 'auto'), ('auto', 'friend'), ('friend', 'tagging'), ('tagging', 'suggestion'), ('suggestion', '.')]
+
+>> Trigrams are: 
+ [('The', 'popular', 'use'), ('popular', 'use', 'case'), ('use', 'case', 'image'), ('case', 'image', 'recognition'), ('image', 'recognition', 'face'), ('recognition', 'face', 'detection'), ('face', 'detection', ','), ('detection', ',', 'Automatic'), (',', 'Automatic', 'friend'), ('Automatic', 'friend', 'tagging'), ('friend', 'tagging', 'suggestion'), ('tagging', 'suggestion', ':'), ('suggestion', ':', 'Facebook'), (':', 'Facebook', 'provides'), ('Facebook', 'provides', 'us'), ('provides', 'us', 'feature'), ('us', 'feature', 'auto'), ('feature', 'auto', 'friend'), ('auto', 'friend', 'tagging'), ('friend', 'tagging', 'suggestion'), ('tagging', 'suggestion', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('popular', 'JJ'), ('use', 'NN'), ('case', 'NN'), ('image', 'NN'), ('recognition', 'NN'), ('face', 'NN'), ('detection', 'NN'), (',', ','), ('Automatic', 'NNP'), ('friend', 'NN'), ('tagging', 'VBG'), ('suggestion', 'NN'), (':', ':'), ('Facebook', 'NNP'), ('provides', 'VBZ'), ('us', 'PRP'), ('feature', 'JJ'), ('auto', 'NN'), ('friend', 'NN'), ('tagging', 'VBG'), ('suggestion', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    The/DT
+    popular/JJ
+    use/NN
+    case/NN
+    image/NN
+    recognition/NN
+    face/NN
+    detection/NN)
+  ,/,
+  (NP Automatic/NNP friend/NN)
+  tagging/VBG
+  (NP suggestion/NN)
+  :/:
+  (NP Facebook/NNP)
+  provides/VBZ
+  us/PRP
+  (NP feature/JJ auto/NN friend/NN)
+  tagging/VBG
+  (NP suggestion/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The popular use case image recognition face detection', 'Automatic friend', 'suggestion', 'Facebook', 'feature auto friend', 'suggestion']
+
+>> Named Entities are: 
+ [('GPE', 'Automatic')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('popular', 'popular'), ('use', 'use'), ('case', 'case'), ('image', 'imag'), ('recognition', 'recognit'), ('face', 'face'), ('detection', 'detect'), (',', ','), ('Automatic', 'automat'), ('friend', 'friend'), ('tagging', 'tag'), ('suggestion', 'suggest'), (':', ':'), ('Facebook', 'facebook'), ('provides', 'provid'), ('us', 'us'), ('feature', 'featur'), ('auto', 'auto'), ('friend', 'friend'), ('tagging', 'tag'), ('suggestion', 'suggest'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('popular', 'popular'), ('use', 'use'), ('case', 'case'), ('image', 'imag'), ('recognition', 'recognit'), ('face', 'face'), ('detection', 'detect'), (',', ','), ('Automatic', 'automat'), ('friend', 'friend'), ('tagging', 'tag'), ('suggestion', 'suggest'), (':', ':'), ('Facebook', 'facebook'), ('provides', 'provid'), ('us', 'us'), ('feature', 'featur'), ('auto', 'auto'), ('friend', 'friend'), ('tagging', 'tag'), ('suggestion', 'suggest'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('popular', 'popular'), ('use', 'use'), ('case', 'case'), ('image', 'image'), ('recognition', 'recognition'), ('face', 'face'), ('detection', 'detection'), (',', ','), ('Automatic', 'Automatic'), ('friend', 'friend'), ('tagging', 'tagging'), ('suggestion', 'suggestion'), (':', ':'), ('Facebook', 'Facebook'), ('provides', 'provides'), ('us', 'u'), ('feature', 'feature'), ('auto', 'auto'), ('friend', 'friend'), ('tagging', 'tagging'), ('suggestion', 'suggestion'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+Whenever we upload a photo with our Facebook friends, then we automatically get a tagging suggestion with name, and the technology behind this is machine learning's face detection and recognition algorithm. 
+
+
+>> Tokens are: 
+ ['Whenever', 'upload', 'photo', 'Facebook', 'friends', ',', 'automatically', 'get', 'tagging', 'suggestion', 'name', ',', 'technology', 'behind', 'machine', 'learning', "'s", 'face', 'detection', 'recognition', 'algorithm', '.']
+
+>> Bigrams are: 
+ [('Whenever', 'upload'), ('upload', 'photo'), ('photo', 'Facebook'), ('Facebook', 'friends'), ('friends', ','), (',', 'automatically'), ('automatically', 'get'), ('get', 'tagging'), ('tagging', 'suggestion'), ('suggestion', 'name'), ('name', ','), (',', 'technology'), ('technology', 'behind'), ('behind', 'machine'), ('machine', 'learning'), ('learning', "'s"), ("'s", 'face'), ('face', 'detection'), ('detection', 'recognition'), ('recognition', 'algorithm'), ('algorithm', '.')]
+
+>> Trigrams are: 
+ [('Whenever', 'upload', 'photo'), ('upload', 'photo', 'Facebook'), ('photo', 'Facebook', 'friends'), ('Facebook', 'friends', ','), ('friends', ',', 'automatically'), (',', 'automatically', 'get'), ('automatically', 'get', 'tagging'), ('get', 'tagging', 'suggestion'), ('tagging', 'suggestion', 'name'), ('suggestion', 'name', ','), ('name', ',', 'technology'), (',', 'technology', 'behind'), ('technology', 'behind', 'machine'), ('behind', 'machine', 'learning'), ('machine', 'learning', "'s"), ('learning', "'s", 'face'), ("'s", 'face', 'detection'), ('face', 'detection', 'recognition'), ('detection', 'recognition', 'algorithm'), ('recognition', 'algorithm', '.')]
+
+>> POS Tags are: 
+ [('Whenever', 'WRB'), ('upload', 'JJ'), ('photo', 'NN'), ('Facebook', 'NNP'), ('friends', 'VBZ'), (',', ','), ('automatically', 'RB'), ('get', 'VB'), ('tagging', 'VBG'), ('suggestion', 'NN'), ('name', 'NN'), (',', ','), ('technology', 'NN'), ('behind', 'IN'), ('machine', 'NN'), ('learning', 'NN'), ("'s", 'POS'), ('face', 'NN'), ('detection', 'NN'), ('recognition', 'NN'), ('algorithm', 'NN'), ('.', '.')]
+
+ (S
+  Whenever/WRB
+  (NP upload/JJ photo/NN Facebook/NNP)
+  friends/VBZ
+  ,/,
+  automatically/RB
+  get/VB
+  tagging/VBG
+  (NP suggestion/NN name/NN)
+  ,/,
+  (NP technology/NN)
+  behind/IN
+  (NP machine/NN learning/NN)
+  's/POS
+  (NP face/NN detection/NN recognition/NN algorithm/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['upload photo Facebook', 'suggestion name', 'technology', 'machine learning', 'face detection recognition algorithm']
+
+>> Named Entities are: 
+ [('PERSON', 'Facebook')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Whenever', 'whenev'), ('upload', 'upload'), ('photo', 'photo'), ('Facebook', 'facebook'), ('friends', 'friend'), (',', ','), ('automatically', 'automat'), ('get', 'get'), ('tagging', 'tag'), ('suggestion', 'suggest'), ('name', 'name'), (',', ','), ('technology', 'technolog'), ('behind', 'behind'), ('machine', 'machin'), ('learning', 'learn'), ("'s", "'s"), ('face', 'face'), ('detection', 'detect'), ('recognition', 'recognit'), ('algorithm', 'algorithm'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Whenever', 'whenev'), ('upload', 'upload'), ('photo', 'photo'), ('Facebook', 'facebook'), ('friends', 'friend'), (',', ','), ('automatically', 'automat'), ('get', 'get'), ('tagging', 'tag'), ('suggestion', 'suggest'), ('name', 'name'), (',', ','), ('technology', 'technolog'), ('behind', 'behind'), ('machine', 'machin'), ('learning', 'learn'), ("'s", "'s"), ('face', 'face'), ('detection', 'detect'), ('recognition', 'recognit'), ('algorithm', 'algorithm'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Whenever', 'Whenever'), ('upload', 'upload'), ('photo', 'photo'), ('Facebook', 'Facebook'), ('friends', 'friend'), (',', ','), ('automatically', 'automatically'), ('get', 'get'), ('tagging', 'tagging'), ('suggestion', 'suggestion'), ('name', 'name'), (',', ','), ('technology', 'technology'), ('behind', 'behind'), ('machine', 'machine'), ('learning', 'learning'), ("'s", "'s"), ('face', 'face'), ('detection', 'detection'), ('recognition', 'recognition'), ('algorithm', 'algorithm'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+It is based on the Facebook project named "Deep Face," which is responsible for face recognition and person identification in the picture. 
+
+
+>> Tokens are: 
+ ['It', 'based', 'Facebook', 'project', 'named', '``', 'Deep', 'Face', ',', "''", 'responsible', 'face', 'recognition', 'person', 'identification', 'picture', '.']
+
+>> Bigrams are: 
+ [('It', 'based'), ('based', 'Facebook'), ('Facebook', 'project'), ('project', 'named'), ('named', '``'), ('``', 'Deep'), ('Deep', 'Face'), ('Face', ','), (',', "''"), ("''", 'responsible'), ('responsible', 'face'), ('face', 'recognition'), ('recognition', 'person'), ('person', 'identification'), ('identification', 'picture'), ('picture', '.')]
+
+>> Trigrams are: 
+ [('It', 'based', 'Facebook'), ('based', 'Facebook', 'project'), ('Facebook', 'project', 'named'), ('project', 'named', '``'), ('named', '``', 'Deep'), ('``', 'Deep', 'Face'), ('Deep', 'Face', ','), ('Face', ',', "''"), (',', "''", 'responsible'), ("''", 'responsible', 'face'), ('responsible', 'face', 'recognition'), ('face', 'recognition', 'person'), ('recognition', 'person', 'identification'), ('person', 'identification', 'picture'), ('identification', 'picture', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('based', 'VBN'), ('Facebook', 'NNP'), ('project', 'NN'), ('named', 'VBN'), ('``', '``'), ('Deep', 'JJ'), ('Face', 'NN'), (',', ','), ("''", "''"), ('responsible', 'JJ'), ('face', 'NN'), ('recognition', 'NN'), ('person', 'NN'), ('identification', 'NN'), ('picture', 'NN'), ('.', '.')]
+
+ (S
+  It/PRP
+  based/VBN
+  (NP Facebook/NNP project/NN)
+  named/VBN
+  ``/``
+  (NP Deep/JJ Face/NN)
+  ,/,
+  ''/''
+  (NP
+    responsible/JJ
+    face/NN
+    recognition/NN
+    person/NN
+    identification/NN
+    picture/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Facebook project', 'Deep Face', 'responsible face recognition person identification picture']
+
+>> Named Entities are: 
+ [('PERSON', 'Facebook')] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('based', 'base'), ('Facebook', 'facebook'), ('project', 'project'), ('named', 'name'), ('``', '``'), ('Deep', 'deep'), ('Face', 'face'), (',', ','), ("''", "''"), ('responsible', 'respons'), ('face', 'face'), ('recognition', 'recognit'), ('person', 'person'), ('identification', 'identif'), ('picture', 'pictur'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('based', 'base'), ('Facebook', 'facebook'), ('project', 'project'), ('named', 'name'), ('``', '``'), ('Deep', 'deep'), ('Face', 'face'), (',', ','), ("''", "''"), ('responsible', 'respons'), ('face', 'face'), ('recognition', 'recognit'), ('person', 'person'), ('identification', 'identif'), ('picture', 'pictur'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('based', 'based'), ('Facebook', 'Facebook'), ('project', 'project'), ('named', 'named'), ('``', '``'), ('Deep', 'Deep'), ('Face', 'Face'), (',', ','), ("''", "''"), ('responsible', 'responsible'), ('face', 'face'), ('recognition', 'recognition'), ('person', 'person'), ('identification', 'identification'), ('picture', 'picture'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+2. 
+
+
+>> Tokens are: 
+ ['2', '.']
+
+>> Bigrams are: 
+ [('2', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('2', 'CD'), ('.', '.')]
+
+ (S 2/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('2', '2'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('2', '2'), ('.', '.')]
+
+>> Lemmatization: 
+ [('2', '2'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+Speech Recognition While using Google, we get an option of "Search by voice," it comes under speech recognition, and it's a popular application of machine learning. 
+
+
+>> Tokens are: 
+ ['Speech', 'Recognition', 'While', 'using', 'Google', ',', 'get', 'option', '``', 'Search', 'voice', ',', "''", 'comes', 'speech', 'recognition', ',', "'s", 'popular', 'application', 'machine', 'learning', '.']
+
+>> Bigrams are: 
+ [('Speech', 'Recognition'), ('Recognition', 'While'), ('While', 'using'), ('using', 'Google'), ('Google', ','), (',', 'get'), ('get', 'option'), ('option', '``'), ('``', 'Search'), ('Search', 'voice'), ('voice', ','), (',', "''"), ("''", 'comes'), ('comes', 'speech'), ('speech', 'recognition'), ('recognition', ','), (',', "'s"), ("'s", 'popular'), ('popular', 'application'), ('application', 'machine'), ('machine', 'learning'), ('learning', '.')]
+
+>> Trigrams are: 
+ [('Speech', 'Recognition', 'While'), ('Recognition', 'While', 'using'), ('While', 'using', 'Google'), ('using', 'Google', ','), ('Google', ',', 'get'), (',', 'get', 'option'), ('get', 'option', '``'), ('option', '``', 'Search'), ('``', 'Search', 'voice'), ('Search', 'voice', ','), ('voice', ',', "''"), (',', "''", 'comes'), ("''", 'comes', 'speech'), ('comes', 'speech', 'recognition'), ('speech', 'recognition', ','), ('recognition', ',', "'s"), (',', "'s", 'popular'), ("'s", 'popular', 'application'), ('popular', 'application', 'machine'), ('application', 'machine', 'learning'), ('machine', 'learning', '.')]
+
+>> POS Tags are: 
+ [('Speech', 'NNP'), ('Recognition', 'NNP'), ('While', 'IN'), ('using', 'VBG'), ('Google', 'NNP'), (',', ','), ('get', 'VB'), ('option', 'NN'), ('``', '``'), ('Search', 'NNP'), ('voice', 'NN'), (',', ','), ("''", "''"), ('comes', 'VBZ'), ('speech', 'JJ'), ('recognition', 'NN'), (',', ','), ("'s", 'POS'), ('popular', 'JJ'), ('application', 'NN'), ('machine', 'NN'), ('learning', 'NN'), ('.', '.')]
+
+ (S
+  (NP Speech/NNP Recognition/NNP)
+  While/IN
+  using/VBG
+  (NP Google/NNP)
+  ,/,
+  get/VB
+  (NP option/NN)
+  ``/``
+  (NP Search/NNP voice/NN)
+  ,/,
+  ''/''
+  comes/VBZ
+  (NP speech/JJ recognition/NN)
+  ,/,
+  's/POS
+  (NP popular/JJ application/NN machine/NN learning/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Speech Recognition', 'Google', 'option', 'Search voice', 'speech recognition', 'popular application machine learning']
+
+>> Named Entities are: 
+ [('PERSON', 'Speech'), ('PERSON', 'Google')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Speech', 'speech'), ('Recognition', 'recognit'), ('While', 'while'), ('using', 'use'), ('Google', 'googl'), (',', ','), ('get', 'get'), ('option', 'option'), ('``', '``'), ('Search', 'search'), ('voice', 'voic'), (',', ','), ("''", "''"), ('comes', 'come'), ('speech', 'speech'), ('recognition', 'recognit'), (',', ','), ("'s", "'s"), ('popular', 'popular'), ('application', 'applic'), ('machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Speech', 'speech'), ('Recognition', 'recognit'), ('While', 'while'), ('using', 'use'), ('Google', 'googl'), (',', ','), ('get', 'get'), ('option', 'option'), ('``', '``'), ('Search', 'search'), ('voice', 'voic'), (',', ','), ("''", "''"), ('comes', 'come'), ('speech', 'speech'), ('recognition', 'recognit'), (',', ','), ("'s", "'s"), ('popular', 'popular'), ('application', 'applic'), ('machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Speech', 'Speech'), ('Recognition', 'Recognition'), ('While', 'While'), ('using', 'using'), ('Google', 'Google'), (',', ','), ('get', 'get'), ('option', 'option'), ('``', '``'), ('Search', 'Search'), ('voice', 'voice'), (',', ','), ("''", "''"), ('comes', 'come'), ('speech', 'speech'), ('recognition', 'recognition'), (',', ','), ("'s", "'s"), ('popular', 'popular'), ('application', 'application'), ('machine', 'machine'), ('learning', 'learning'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+Speech recognition is a process of converting voice instructions into text, and it is also known as "Speech to text", or "Computer speech recognition." 
+
+
+>> Tokens are: 
+ ['Speech', 'recognition', 'process', 'converting', 'voice', 'instructions', 'text', ',', 'also', 'known', '``', 'Speech', 'text', "''", ',', '``', 'Computer', 'speech', 'recognition', '.', "''"]
+
+>> Bigrams are: 
+ [('Speech', 'recognition'), ('recognition', 'process'), ('process', 'converting'), ('converting', 'voice'), ('voice', 'instructions'), ('instructions', 'text'), ('text', ','), (',', 'also'), ('also', 'known'), ('known', '``'), ('``', 'Speech'), ('Speech', 'text'), ('text', "''"), ("''", ','), (',', '``'), ('``', 'Computer'), ('Computer', 'speech'), ('speech', 'recognition'), ('recognition', '.'), ('.', "''")]
+
+>> Trigrams are: 
+ [('Speech', 'recognition', 'process'), ('recognition', 'process', 'converting'), ('process', 'converting', 'voice'), ('converting', 'voice', 'instructions'), ('voice', 'instructions', 'text'), ('instructions', 'text', ','), ('text', ',', 'also'), (',', 'also', 'known'), ('also', 'known', '``'), ('known', '``', 'Speech'), ('``', 'Speech', 'text'), ('Speech', 'text', "''"), ('text', "''", ','), ("''", ',', '``'), (',', '``', 'Computer'), ('``', 'Computer', 'speech'), ('Computer', 'speech', 'recognition'), ('speech', 'recognition', '.'), ('recognition', '.', "''")]
+
+>> POS Tags are: 
+ [('Speech', 'NNP'), ('recognition', 'NN'), ('process', 'NN'), ('converting', 'VBG'), ('voice', 'NN'), ('instructions', 'NNS'), ('text', 'NN'), (',', ','), ('also', 'RB'), ('known', 'VBN'), ('``', '``'), ('Speech', 'NNP'), ('text', 'NN'), ("''", "''"), (',', ','), ('``', '``'), ('Computer', 'NNP'), ('speech', 'NN'), ('recognition', 'NN'), ('.', '.'), ("''", "''")]
+
+ (S
+  (NP Speech/NNP recognition/NN process/NN)
+  converting/VBG
+  (NP voice/NN instructions/NNS text/NN)
+  ,/,
+  also/RB
+  known/VBN
+  ``/``
+  (NP Speech/NNP text/NN)
+  ''/''
+  ,/,
+  ``/``
+  (NP Computer/NNP speech/NN recognition/NN)
+  ./.
+  ''/'') 
+
+
+>> Noun Phrases are: 
+ ['Speech recognition process', 'voice instructions text', 'Speech text', 'Computer speech recognition']
+
+>> Named Entities are: 
+ [('GPE', 'Speech')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Speech', 'speech'), ('recognition', 'recognit'), ('process', 'process'), ('converting', 'convert'), ('voice', 'voic'), ('instructions', 'instruct'), ('text', 'text'), (',', ','), ('also', 'also'), ('known', 'known'), ('``', '``'), ('Speech', 'speech'), ('text', 'text'), ("''", "''"), (',', ','), ('``', '``'), ('Computer', 'comput'), ('speech', 'speech'), ('recognition', 'recognit'), ('.', '.'), ("''", "''")]
+
+>> Stemming using Snowball Stemmer: 
+ [('Speech', 'speech'), ('recognition', 'recognit'), ('process', 'process'), ('converting', 'convert'), ('voice', 'voic'), ('instructions', 'instruct'), ('text', 'text'), (',', ','), ('also', 'also'), ('known', 'known'), ('``', '``'), ('Speech', 'speech'), ('text', 'text'), ("''", "''"), (',', ','), ('``', '``'), ('Computer', 'comput'), ('speech', 'speech'), ('recognition', 'recognit'), ('.', '.'), ("''", "''")]
+
+>> Lemmatization: 
+ [('Speech', 'Speech'), ('recognition', 'recognition'), ('process', 'process'), ('converting', 'converting'), ('voice', 'voice'), ('instructions', 'instruction'), ('text', 'text'), (',', ','), ('also', 'also'), ('known', 'known'), ('``', '``'), ('Speech', 'Speech'), ('text', 'text'), ("''", "''"), (',', ','), ('``', '``'), ('Computer', 'Computer'), ('speech', 'speech'), ('recognition', 'recognition'), ('.', '.'), ("''", "''")]
+
+
+
+============================ Sentence 12 =============================
+
+At present, machine learning algorithms are widely used by various applications of speech recognition. 
+
+
+>> Tokens are: 
+ ['At', 'present', ',', 'machine', 'learning', 'algorithms', 'widely', 'used', 'various', 'applications', 'speech', 'recognition', '.']
+
+>> Bigrams are: 
+ [('At', 'present'), ('present', ','), (',', 'machine'), ('machine', 'learning'), ('learning', 'algorithms'), ('algorithms', 'widely'), ('widely', 'used'), ('used', 'various'), ('various', 'applications'), ('applications', 'speech'), ('speech', 'recognition'), ('recognition', '.')]
+
+>> Trigrams are: 
+ [('At', 'present', ','), ('present', ',', 'machine'), (',', 'machine', 'learning'), ('machine', 'learning', 'algorithms'), ('learning', 'algorithms', 'widely'), ('algorithms', 'widely', 'used'), ('widely', 'used', 'various'), ('used', 'various', 'applications'), ('various', 'applications', 'speech'), ('applications', 'speech', 'recognition'), ('speech', 'recognition', '.')]
+
+>> POS Tags are: 
+ [('At', 'IN'), ('present', 'JJ'), (',', ','), ('machine', 'NN'), ('learning', 'VBG'), ('algorithms', 'NNS'), ('widely', 'RB'), ('used', 'VBN'), ('various', 'JJ'), ('applications', 'NNS'), ('speech', 'JJ'), ('recognition', 'NN'), ('.', '.')]
+
+ (S
+  At/IN
+  present/JJ
+  ,/,
+  (NP machine/NN)
+  learning/VBG
+  (NP algorithms/NNS)
+  widely/RB
+  used/VBN
+  (NP various/JJ applications/NNS)
+  (NP speech/JJ recognition/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['machine', 'algorithms', 'various applications', 'speech recognition']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('At', 'at'), ('present', 'present'), (',', ','), ('machine', 'machin'), ('learning', 'learn'), ('algorithms', 'algorithm'), ('widely', 'wide'), ('used', 'use'), ('various', 'variou'), ('applications', 'applic'), ('speech', 'speech'), ('recognition', 'recognit'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('At', 'at'), ('present', 'present'), (',', ','), ('machine', 'machin'), ('learning', 'learn'), ('algorithms', 'algorithm'), ('widely', 'wide'), ('used', 'use'), ('various', 'various'), ('applications', 'applic'), ('speech', 'speech'), ('recognition', 'recognit'), ('.', '.')]
+
+>> Lemmatization: 
+ [('At', 'At'), ('present', 'present'), (',', ','), ('machine', 'machine'), ('learning', 'learning'), ('algorithms', 'algorithm'), ('widely', 'widely'), ('used', 'used'), ('various', 'various'), ('applications', 'application'), ('speech', 'speech'), ('recognition', 'recognition'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+Google assistant, Siri, Cortana, and Alexa are using speech recognition technology to follow the voice instructions. 
+
+
+>> Tokens are: 
+ ['Google', 'assistant', ',', 'Siri', ',', 'Cortana', ',', 'Alexa', 'using', 'speech', 'recognition', 'technology', 'follow', 'voice', 'instructions', '.']
+
+>> Bigrams are: 
+ [('Google', 'assistant'), ('assistant', ','), (',', 'Siri'), ('Siri', ','), (',', 'Cortana'), ('Cortana', ','), (',', 'Alexa'), ('Alexa', 'using'), ('using', 'speech'), ('speech', 'recognition'), ('recognition', 'technology'), ('technology', 'follow'), ('follow', 'voice'), ('voice', 'instructions'), ('instructions', '.')]
+
+>> Trigrams are: 
+ [('Google', 'assistant', ','), ('assistant', ',', 'Siri'), (',', 'Siri', ','), ('Siri', ',', 'Cortana'), (',', 'Cortana', ','), ('Cortana', ',', 'Alexa'), (',', 'Alexa', 'using'), ('Alexa', 'using', 'speech'), ('using', 'speech', 'recognition'), ('speech', 'recognition', 'technology'), ('recognition', 'technology', 'follow'), ('technology', 'follow', 'voice'), ('follow', 'voice', 'instructions'), ('voice', 'instructions', '.')]
+
+>> POS Tags are: 
+ [('Google', 'NNP'), ('assistant', 'NN'), (',', ','), ('Siri', 'NNP'), (',', ','), ('Cortana', 'NNP'), (',', ','), ('Alexa', 'NNP'), ('using', 'VBG'), ('speech', 'JJ'), ('recognition', 'NN'), ('technology', 'NN'), ('follow', 'JJ'), ('voice', 'NN'), ('instructions', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Google/NNP assistant/NN)
+  ,/,
+  (NP Siri/NNP)
+  ,/,
+  (NP Cortana/NNP)
+  ,/,
+  (NP Alexa/NNP)
+  using/VBG
+  (NP speech/JJ recognition/NN technology/NN)
+  (NP follow/JJ voice/NN instructions/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Google assistant', 'Siri', 'Cortana', 'Alexa', 'speech recognition technology', 'follow voice instructions']
+
+>> Named Entities are: 
+ [('GPE', 'Google'), ('PERSON', 'Siri'), ('GPE', 'Cortana'), ('PERSON', 'Alexa')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Google', 'googl'), ('assistant', 'assist'), (',', ','), ('Siri', 'siri'), (',', ','), ('Cortana', 'cortana'), (',', ','), ('Alexa', 'alexa'), ('using', 'use'), ('speech', 'speech'), ('recognition', 'recognit'), ('technology', 'technolog'), ('follow', 'follow'), ('voice', 'voic'), ('instructions', 'instruct'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Google', 'googl'), ('assistant', 'assist'), (',', ','), ('Siri', 'siri'), (',', ','), ('Cortana', 'cortana'), (',', ','), ('Alexa', 'alexa'), ('using', 'use'), ('speech', 'speech'), ('recognition', 'recognit'), ('technology', 'technolog'), ('follow', 'follow'), ('voice', 'voic'), ('instructions', 'instruct'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Google', 'Google'), ('assistant', 'assistant'), (',', ','), ('Siri', 'Siri'), (',', ','), ('Cortana', 'Cortana'), (',', ','), ('Alexa', 'Alexa'), ('using', 'using'), ('speech', 'speech'), ('recognition', 'recognition'), ('technology', 'technology'), ('follow', 'follow'), ('voice', 'voice'), ('instructions', 'instruction'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+C++ vs Java 3. 
+
+
+>> Tokens are: 
+ ['C++', 'vs', 'Java', '3', '.']
+
+>> Bigrams are: 
+ [('C++', 'vs'), ('vs', 'Java'), ('Java', '3'), ('3', '.')]
+
+>> Trigrams are: 
+ [('C++', 'vs', 'Java'), ('vs', 'Java', '3'), ('Java', '3', '.')]
+
+>> POS Tags are: 
+ [('C++', 'NNP'), ('vs', 'NN'), ('Java', 'NNP'), ('3', 'CD'), ('.', '.')]
+
+ (S (NP C++/NNP vs/NN Java/NNP) 3/CD ./.) 
+
+
+>> Noun Phrases are: 
+ ['C++ vs Java']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('C++', 'c++'), ('vs', 'vs'), ('Java', 'java'), ('3', '3'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('C++', 'c++'), ('vs', 'vs'), ('Java', 'java'), ('3', '3'), ('.', '.')]
+
+>> Lemmatization: 
+ [('C++', 'C++'), ('vs', 'v'), ('Java', 'Java'), ('3', '3'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+Traffic prediction: If we want to visit a new place, we take help of Google Maps, which shows us the correct path with the shortest route and predicts the traffic conditions. 
+
+
+>> Tokens are: 
+ ['Traffic', 'prediction', ':', 'If', 'want', 'visit', 'new', 'place', ',', 'take', 'help', 'Google', 'Maps', ',', 'shows', 'us', 'correct', 'path', 'shortest', 'route', 'predicts', 'traffic', 'conditions', '.']
+
+>> Bigrams are: 
+ [('Traffic', 'prediction'), ('prediction', ':'), (':', 'If'), ('If', 'want'), ('want', 'visit'), ('visit', 'new'), ('new', 'place'), ('place', ','), (',', 'take'), ('take', 'help'), ('help', 'Google'), ('Google', 'Maps'), ('Maps', ','), (',', 'shows'), ('shows', 'us'), ('us', 'correct'), ('correct', 'path'), ('path', 'shortest'), ('shortest', 'route'), ('route', 'predicts'), ('predicts', 'traffic'), ('traffic', 'conditions'), ('conditions', '.')]
+
+>> Trigrams are: 
+ [('Traffic', 'prediction', ':'), ('prediction', ':', 'If'), (':', 'If', 'want'), ('If', 'want', 'visit'), ('want', 'visit', 'new'), ('visit', 'new', 'place'), ('new', 'place', ','), ('place', ',', 'take'), (',', 'take', 'help'), ('take', 'help', 'Google'), ('help', 'Google', 'Maps'), ('Google', 'Maps', ','), ('Maps', ',', 'shows'), (',', 'shows', 'us'), ('shows', 'us', 'correct'), ('us', 'correct', 'path'), ('correct', 'path', 'shortest'), ('path', 'shortest', 'route'), ('shortest', 'route', 'predicts'), ('route', 'predicts', 'traffic'), ('predicts', 'traffic', 'conditions'), ('traffic', 'conditions', '.')]
+
+>> POS Tags are: 
+ [('Traffic', 'JJ'), ('prediction', 'NN'), (':', ':'), ('If', 'IN'), ('want', 'VBP'), ('visit', 'FW'), ('new', 'JJ'), ('place', 'NN'), (',', ','), ('take', 'VB'), ('help', 'NN'), ('Google', 'NNP'), ('Maps', 'NNP'), (',', ','), ('shows', 'VBZ'), ('us', 'PRP'), ('correct', 'JJ'), ('path', 'NN'), ('shortest', 'JJS'), ('route', 'NN'), ('predicts', 'VBZ'), ('traffic', 'NN'), ('conditions', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Traffic/JJ prediction/NN)
+  :/:
+  If/IN
+  want/VBP
+  visit/FW
+  (NP new/JJ place/NN)
+  ,/,
+  take/VB
+  (NP help/NN Google/NNP Maps/NNP)
+  ,/,
+  shows/VBZ
+  us/PRP
+  (NP correct/JJ path/NN)
+  shortest/JJS
+  (NP route/NN)
+  predicts/VBZ
+  (NP traffic/NN conditions/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Traffic prediction', 'new place', 'help Google Maps', 'correct path', 'route', 'traffic conditions']
+
+>> Named Entities are: 
+ [('GPE', 'Traffic'), ('PERSON', 'Google Maps')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Traffic', 'traffic'), ('prediction', 'predict'), (':', ':'), ('If', 'if'), ('want', 'want'), ('visit', 'visit'), ('new', 'new'), ('place', 'place'), (',', ','), ('take', 'take'), ('help', 'help'), ('Google', 'googl'), ('Maps', 'map'), (',', ','), ('shows', 'show'), ('us', 'us'), ('correct', 'correct'), ('path', 'path'), ('shortest', 'shortest'), ('route', 'rout'), ('predicts', 'predict'), ('traffic', 'traffic'), ('conditions', 'condit'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Traffic', 'traffic'), ('prediction', 'predict'), (':', ':'), ('If', 'if'), ('want', 'want'), ('visit', 'visit'), ('new', 'new'), ('place', 'place'), (',', ','), ('take', 'take'), ('help', 'help'), ('Google', 'googl'), ('Maps', 'map'), (',', ','), ('shows', 'show'), ('us', 'us'), ('correct', 'correct'), ('path', 'path'), ('shortest', 'shortest'), ('route', 'rout'), ('predicts', 'predict'), ('traffic', 'traffic'), ('conditions', 'condit'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Traffic', 'Traffic'), ('prediction', 'prediction'), (':', ':'), ('If', 'If'), ('want', 'want'), ('visit', 'visit'), ('new', 'new'), ('place', 'place'), (',', ','), ('take', 'take'), ('help', 'help'), ('Google', 'Google'), ('Maps', 'Maps'), (',', ','), ('shows', 'show'), ('us', 'u'), ('correct', 'correct'), ('path', 'path'), ('shortest', 'shortest'), ('route', 'route'), ('predicts', 'predicts'), ('traffic', 'traffic'), ('conditions', 'condition'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+It predicts the traffic conditions such as whether traffic is cleared, slow-moving, or heavily congested with the help of two ways: · Real Time location of the vehicle form Google Map app and sensors · Average time has taken on past days at the same time. 
+
+
+>> Tokens are: 
+ ['It', 'predicts', 'traffic', 'conditions', 'whether', 'traffic', 'cleared', ',', 'slow-moving', ',', 'heavily', 'congested', 'help', 'two', 'ways', ':', '·', 'Real', 'Time', 'location', 'vehicle', 'form', 'Google', 'Map', 'app', 'sensors', '·', 'Average', 'time', 'taken', 'past', 'days', 'time', '.']
+
+>> Bigrams are: 
+ [('It', 'predicts'), ('predicts', 'traffic'), ('traffic', 'conditions'), ('conditions', 'whether'), ('whether', 'traffic'), ('traffic', 'cleared'), ('cleared', ','), (',', 'slow-moving'), ('slow-moving', ','), (',', 'heavily'), ('heavily', 'congested'), ('congested', 'help'), ('help', 'two'), ('two', 'ways'), ('ways', ':'), (':', '·'), ('·', 'Real'), ('Real', 'Time'), ('Time', 'location'), ('location', 'vehicle'), ('vehicle', 'form'), ('form', 'Google'), ('Google', 'Map'), ('Map', 'app'), ('app', 'sensors'), ('sensors', '·'), ('·', 'Average'), ('Average', 'time'), ('time', 'taken'), ('taken', 'past'), ('past', 'days'), ('days', 'time'), ('time', '.')]
+
+>> Trigrams are: 
+ [('It', 'predicts', 'traffic'), ('predicts', 'traffic', 'conditions'), ('traffic', 'conditions', 'whether'), ('conditions', 'whether', 'traffic'), ('whether', 'traffic', 'cleared'), ('traffic', 'cleared', ','), ('cleared', ',', 'slow-moving'), (',', 'slow-moving', ','), ('slow-moving', ',', 'heavily'), (',', 'heavily', 'congested'), ('heavily', 'congested', 'help'), ('congested', 'help', 'two'), ('help', 'two', 'ways'), ('two', 'ways', ':'), ('ways', ':', '·'), (':', '·', 'Real'), ('·', 'Real', 'Time'), ('Real', 'Time', 'location'), ('Time', 'location', 'vehicle'), ('location', 'vehicle', 'form'), ('vehicle', 'form', 'Google'), ('form', 'Google', 'Map'), ('Google', 'Map', 'app'), ('Map', 'app', 'sensors'), ('app', 'sensors', '·'), ('sensors', '·', 'Average'), ('·', 'Average', 'time'), ('Average', 'time', 'taken'), ('time', 'taken', 'past'), ('taken', 'past', 'days'), ('past', 'days', 'time'), ('days', 'time', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('predicts', 'VBZ'), ('traffic', 'NN'), ('conditions', 'NNS'), ('whether', 'IN'), ('traffic', 'NN'), ('cleared', 'VBN'), (',', ','), ('slow-moving', 'JJ'), (',', ','), ('heavily', 'RB'), ('congested', 'VBN'), ('help', 'NN'), ('two', 'CD'), ('ways', 'NNS'), (':', ':'), ('·', 'VB'), ('Real', 'JJ'), ('Time', 'NNP'), ('location', 'NN'), ('vehicle', 'NN'), ('form', 'NN'), ('Google', 'NNP'), ('Map', 'NNP'), ('app', 'NN'), ('sensors', 'NNS'), ('·', 'VBP'), ('Average', 'JJ'), ('time', 'NN'), ('taken', 'VBN'), ('past', 'JJ'), ('days', 'NNS'), ('time', 'NN'), ('.', '.')]
+
+ (S
+  It/PRP
+  predicts/VBZ
+  (NP traffic/NN conditions/NNS)
+  whether/IN
+  (NP traffic/NN)
+  cleared/VBN
+  ,/,
+  slow-moving/JJ
+  ,/,
+  heavily/RB
+  congested/VBN
+  (NP help/NN)
+  two/CD
+  (NP ways/NNS)
+  :/:
+  ·/VB
+  (NP
+    Real/JJ
+    Time/NNP
+    location/NN
+    vehicle/NN
+    form/NN
+    Google/NNP
+    Map/NNP
+    app/NN
+    sensors/NNS)
+  ·/VBP
+  (NP Average/JJ time/NN)
+  taken/VBN
+  (NP past/JJ days/NNS time/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['traffic conditions', 'traffic', 'help', 'ways', 'Real Time location vehicle form Google Map app sensors', 'Average time', 'past days time']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Real Time'), ('PERSON', 'Google Map')] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('predicts', 'predict'), ('traffic', 'traffic'), ('conditions', 'condit'), ('whether', 'whether'), ('traffic', 'traffic'), ('cleared', 'clear'), (',', ','), ('slow-moving', 'slow-mov'), (',', ','), ('heavily', 'heavili'), ('congested', 'congest'), ('help', 'help'), ('two', 'two'), ('ways', 'way'), (':', ':'), ('·', '·'), ('Real', 'real'), ('Time', 'time'), ('location', 'locat'), ('vehicle', 'vehicl'), ('form', 'form'), ('Google', 'googl'), ('Map', 'map'), ('app', 'app'), ('sensors', 'sensor'), ('·', '·'), ('Average', 'averag'), ('time', 'time'), ('taken', 'taken'), ('past', 'past'), ('days', 'day'), ('time', 'time'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('predicts', 'predict'), ('traffic', 'traffic'), ('conditions', 'condit'), ('whether', 'whether'), ('traffic', 'traffic'), ('cleared', 'clear'), (',', ','), ('slow-moving', 'slow-mov'), (',', ','), ('heavily', 'heavili'), ('congested', 'congest'), ('help', 'help'), ('two', 'two'), ('ways', 'way'), (':', ':'), ('·', '·'), ('Real', 'real'), ('Time', 'time'), ('location', 'locat'), ('vehicle', 'vehicl'), ('form', 'form'), ('Google', 'googl'), ('Map', 'map'), ('app', 'app'), ('sensors', 'sensor'), ('·', '·'), ('Average', 'averag'), ('time', 'time'), ('taken', 'taken'), ('past', 'past'), ('days', 'day'), ('time', 'time'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('predicts', 'predicts'), ('traffic', 'traffic'), ('conditions', 'condition'), ('whether', 'whether'), ('traffic', 'traffic'), ('cleared', 'cleared'), (',', ','), ('slow-moving', 'slow-moving'), (',', ','), ('heavily', 'heavily'), ('congested', 'congested'), ('help', 'help'), ('two', 'two'), ('ways', 'way'), (':', ':'), ('·', '·'), ('Real', 'Real'), ('Time', 'Time'), ('location', 'location'), ('vehicle', 'vehicle'), ('form', 'form'), ('Google', 'Google'), ('Map', 'Map'), ('app', 'app'), ('sensors', 'sensor'), ('·', '·'), ('Average', 'Average'), ('time', 'time'), ('taken', 'taken'), ('past', 'past'), ('days', 'day'), ('time', 'time'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+Everyone who is using Google Map is helping this app to make it better. 
+
+
+>> Tokens are: 
+ ['Everyone', 'using', 'Google', 'Map', 'helping', 'app', 'make', 'better', '.']
+
+>> Bigrams are: 
+ [('Everyone', 'using'), ('using', 'Google'), ('Google', 'Map'), ('Map', 'helping'), ('helping', 'app'), ('app', 'make'), ('make', 'better'), ('better', '.')]
+
+>> Trigrams are: 
+ [('Everyone', 'using', 'Google'), ('using', 'Google', 'Map'), ('Google', 'Map', 'helping'), ('Map', 'helping', 'app'), ('helping', 'app', 'make'), ('app', 'make', 'better'), ('make', 'better', '.')]
+
+>> POS Tags are: 
+ [('Everyone', 'NN'), ('using', 'VBG'), ('Google', 'NNP'), ('Map', 'NNP'), ('helping', 'VBG'), ('app', 'RB'), ('make', 'VB'), ('better', 'JJR'), ('.', '.')]
+
+ (S
+  (NP Everyone/NN)
+  using/VBG
+  (NP Google/NNP Map/NNP)
+  helping/VBG
+  app/RB
+  make/VB
+  better/JJR
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Everyone', 'Google Map']
+
+>> Named Entities are: 
+ [('PERSON', 'Google Map')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Everyone', 'everyon'), ('using', 'use'), ('Google', 'googl'), ('Map', 'map'), ('helping', 'help'), ('app', 'app'), ('make', 'make'), ('better', 'better'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Everyone', 'everyon'), ('using', 'use'), ('Google', 'googl'), ('Map', 'map'), ('helping', 'help'), ('app', 'app'), ('make', 'make'), ('better', 'better'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Everyone', 'Everyone'), ('using', 'using'), ('Google', 'Google'), ('Map', 'Map'), ('helping', 'helping'), ('app', 'app'), ('make', 'make'), ('better', 'better'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+It takes information from the user and sends back to its database to improve the performance. 
+
+
+>> Tokens are: 
+ ['It', 'takes', 'information', 'user', 'sends', 'back', 'database', 'improve', 'performance', '.']
+
+>> Bigrams are: 
+ [('It', 'takes'), ('takes', 'information'), ('information', 'user'), ('user', 'sends'), ('sends', 'back'), ('back', 'database'), ('database', 'improve'), ('improve', 'performance'), ('performance', '.')]
+
+>> Trigrams are: 
+ [('It', 'takes', 'information'), ('takes', 'information', 'user'), ('information', 'user', 'sends'), ('user', 'sends', 'back'), ('sends', 'back', 'database'), ('back', 'database', 'improve'), ('database', 'improve', 'performance'), ('improve', 'performance', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('takes', 'VBZ'), ('information', 'NN'), ('user', 'NN'), ('sends', 'VBZ'), ('back', 'RB'), ('database', 'JJ'), ('improve', 'NN'), ('performance', 'NN'), ('.', '.')]
+
+ (S
+  It/PRP
+  takes/VBZ
+  (NP information/NN user/NN)
+  sends/VBZ
+  back/RB
+  (NP database/JJ improve/NN performance/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['information user', 'database improve performance']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('takes', 'take'), ('information', 'inform'), ('user', 'user'), ('sends', 'send'), ('back', 'back'), ('database', 'databas'), ('improve', 'improv'), ('performance', 'perform'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('takes', 'take'), ('information', 'inform'), ('user', 'user'), ('sends', 'send'), ('back', 'back'), ('database', 'databas'), ('improve', 'improv'), ('performance', 'perform'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('takes', 'take'), ('information', 'information'), ('user', 'user'), ('sends', 'sends'), ('back', 'back'), ('database', 'database'), ('improve', 'improve'), ('performance', 'performance'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+4. 
+
+
+>> Tokens are: 
+ ['4', '.']
+
+>> Bigrams are: 
+ [('4', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('4', 'CD'), ('.', '.')]
+
+ (S 4/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('4', '4'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('4', '4'), ('.', '.')]
+
+>> Lemmatization: 
+ [('4', '4'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+Product recommendations: Machine learning is widely used by various e-commerce and entertainment companies such as Amazon, Netflix, etc., for product recommendation to the user. 
+
+
+>> Tokens are: 
+ ['Product', 'recommendations', ':', 'Machine', 'learning', 'widely', 'used', 'various', 'e-commerce', 'entertainment', 'companies', 'Amazon', ',', 'Netflix', ',', 'etc.', ',', 'product', 'recommendation', 'user', '.']
+
+>> Bigrams are: 
+ [('Product', 'recommendations'), ('recommendations', ':'), (':', 'Machine'), ('Machine', 'learning'), ('learning', 'widely'), ('widely', 'used'), ('used', 'various'), ('various', 'e-commerce'), ('e-commerce', 'entertainment'), ('entertainment', 'companies'), ('companies', 'Amazon'), ('Amazon', ','), (',', 'Netflix'), ('Netflix', ','), (',', 'etc.'), ('etc.', ','), (',', 'product'), ('product', 'recommendation'), ('recommendation', 'user'), ('user', '.')]
+
+>> Trigrams are: 
+ [('Product', 'recommendations', ':'), ('recommendations', ':', 'Machine'), (':', 'Machine', 'learning'), ('Machine', 'learning', 'widely'), ('learning', 'widely', 'used'), ('widely', 'used', 'various'), ('used', 'various', 'e-commerce'), ('various', 'e-commerce', 'entertainment'), ('e-commerce', 'entertainment', 'companies'), ('entertainment', 'companies', 'Amazon'), ('companies', 'Amazon', ','), ('Amazon', ',', 'Netflix'), (',', 'Netflix', ','), ('Netflix', ',', 'etc.'), (',', 'etc.', ','), ('etc.', ',', 'product'), (',', 'product', 'recommendation'), ('product', 'recommendation', 'user'), ('recommendation', 'user', '.')]
+
+>> POS Tags are: 
+ [('Product', 'NN'), ('recommendations', 'NNS'), (':', ':'), ('Machine', 'NNP'), ('learning', 'VBG'), ('widely', 'RB'), ('used', 'VBN'), ('various', 'JJ'), ('e-commerce', 'JJ'), ('entertainment', 'NN'), ('companies', 'NNS'), ('Amazon', 'NNP'), (',', ','), ('Netflix', 'NNP'), (',', ','), ('etc.', 'NN'), (',', ','), ('product', 'NN'), ('recommendation', 'NN'), ('user', 'NN'), ('.', '.')]
+
+ (S
+  (NP Product/NN recommendations/NNS)
+  :/:
+  (NP Machine/NNP)
+  learning/VBG
+  widely/RB
+  used/VBN
+  (NP
+    various/JJ
+    e-commerce/JJ
+    entertainment/NN
+    companies/NNS
+    Amazon/NNP)
+  ,/,
+  (NP Netflix/NNP)
+  ,/,
+  (NP etc./NN)
+  ,/,
+  (NP product/NN recommendation/NN user/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Product recommendations', 'Machine', 'various e-commerce entertainment companies Amazon', 'Netflix', 'etc.', 'product recommendation user']
+
+>> Named Entities are: 
+ [('GPE', 'Product'), ('PERSON', 'Machine'), ('PERSON', 'Amazon'), ('PERSON', 'Netflix')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Product', 'product'), ('recommendations', 'recommend'), (':', ':'), ('Machine', 'machin'), ('learning', 'learn'), ('widely', 'wide'), ('used', 'use'), ('various', 'variou'), ('e-commerce', 'e-commerc'), ('entertainment', 'entertain'), ('companies', 'compani'), ('Amazon', 'amazon'), (',', ','), ('Netflix', 'netflix'), (',', ','), ('etc.', 'etc.'), (',', ','), ('product', 'product'), ('recommendation', 'recommend'), ('user', 'user'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Product', 'product'), ('recommendations', 'recommend'), (':', ':'), ('Machine', 'machin'), ('learning', 'learn'), ('widely', 'wide'), ('used', 'use'), ('various', 'various'), ('e-commerce', 'e-commerc'), ('entertainment', 'entertain'), ('companies', 'compani'), ('Amazon', 'amazon'), (',', ','), ('Netflix', 'netflix'), (',', ','), ('etc.', 'etc.'), (',', ','), ('product', 'product'), ('recommendation', 'recommend'), ('user', 'user'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Product', 'Product'), ('recommendations', 'recommendation'), (':', ':'), ('Machine', 'Machine'), ('learning', 'learning'), ('widely', 'widely'), ('used', 'used'), ('various', 'various'), ('e-commerce', 'e-commerce'), ('entertainment', 'entertainment'), ('companies', 'company'), ('Amazon', 'Amazon'), (',', ','), ('Netflix', 'Netflix'), (',', ','), ('etc.', 'etc.'), (',', ','), ('product', 'product'), ('recommendation', 'recommendation'), ('user', 'user'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+Whenever we search for some product on Amazon, then we started getting an advertisement for the same product while internet surfing on the same browser and this is because of machine learning. 
+
+
+>> Tokens are: 
+ ['Whenever', 'search', 'product', 'Amazon', ',', 'started', 'getting', 'advertisement', 'product', 'internet', 'surfing', 'browser', 'machine', 'learning', '.']
+
+>> Bigrams are: 
+ [('Whenever', 'search'), ('search', 'product'), ('product', 'Amazon'), ('Amazon', ','), (',', 'started'), ('started', 'getting'), ('getting', 'advertisement'), ('advertisement', 'product'), ('product', 'internet'), ('internet', 'surfing'), ('surfing', 'browser'), ('browser', 'machine'), ('machine', 'learning'), ('learning', '.')]
+
+>> Trigrams are: 
+ [('Whenever', 'search', 'product'), ('search', 'product', 'Amazon'), ('product', 'Amazon', ','), ('Amazon', ',', 'started'), (',', 'started', 'getting'), ('started', 'getting', 'advertisement'), ('getting', 'advertisement', 'product'), ('advertisement', 'product', 'internet'), ('product', 'internet', 'surfing'), ('internet', 'surfing', 'browser'), ('surfing', 'browser', 'machine'), ('browser', 'machine', 'learning'), ('machine', 'learning', '.')]
+
+>> POS Tags are: 
+ [('Whenever', 'WRB'), ('search', 'NN'), ('product', 'NN'), ('Amazon', 'NNP'), (',', ','), ('started', 'VBD'), ('getting', 'VBG'), ('advertisement', 'JJ'), ('product', 'NN'), ('internet', 'NN'), ('surfing', 'VBG'), ('browser', 'JJR'), ('machine', 'NN'), ('learning', 'NN'), ('.', '.')]
+
+ (S
+  Whenever/WRB
+  (NP search/NN product/NN Amazon/NNP)
+  ,/,
+  started/VBD
+  getting/VBG
+  (NP advertisement/JJ product/NN internet/NN)
+  surfing/VBG
+  browser/JJR
+  (NP machine/NN learning/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['search product Amazon', 'advertisement product internet', 'machine learning']
+
+>> Named Entities are: 
+ [('PERSON', 'Amazon')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Whenever', 'whenev'), ('search', 'search'), ('product', 'product'), ('Amazon', 'amazon'), (',', ','), ('started', 'start'), ('getting', 'get'), ('advertisement', 'advertis'), ('product', 'product'), ('internet', 'internet'), ('surfing', 'surf'), ('browser', 'browser'), ('machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Whenever', 'whenev'), ('search', 'search'), ('product', 'product'), ('Amazon', 'amazon'), (',', ','), ('started', 'start'), ('getting', 'get'), ('advertisement', 'advertis'), ('product', 'product'), ('internet', 'internet'), ('surfing', 'surf'), ('browser', 'browser'), ('machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Whenever', 'Whenever'), ('search', 'search'), ('product', 'product'), ('Amazon', 'Amazon'), (',', ','), ('started', 'started'), ('getting', 'getting'), ('advertisement', 'advertisement'), ('product', 'product'), ('internet', 'internet'), ('surfing', 'surfing'), ('browser', 'browser'), ('machine', 'machine'), ('learning', 'learning'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+Google understands the user interest using various machine learning algorithms and suggests the product as per customer interest. 
+
+
+>> Tokens are: 
+ ['Google', 'understands', 'user', 'interest', 'using', 'various', 'machine', 'learning', 'algorithms', 'suggests', 'product', 'per', 'customer', 'interest', '.']
+
+>> Bigrams are: 
+ [('Google', 'understands'), ('understands', 'user'), ('user', 'interest'), ('interest', 'using'), ('using', 'various'), ('various', 'machine'), ('machine', 'learning'), ('learning', 'algorithms'), ('algorithms', 'suggests'), ('suggests', 'product'), ('product', 'per'), ('per', 'customer'), ('customer', 'interest'), ('interest', '.')]
+
+>> Trigrams are: 
+ [('Google', 'understands', 'user'), ('understands', 'user', 'interest'), ('user', 'interest', 'using'), ('interest', 'using', 'various'), ('using', 'various', 'machine'), ('various', 'machine', 'learning'), ('machine', 'learning', 'algorithms'), ('learning', 'algorithms', 'suggests'), ('algorithms', 'suggests', 'product'), ('suggests', 'product', 'per'), ('product', 'per', 'customer'), ('per', 'customer', 'interest'), ('customer', 'interest', '.')]
+
+>> POS Tags are: 
+ [('Google', 'NNP'), ('understands', 'VBZ'), ('user', 'JJ'), ('interest', 'NN'), ('using', 'VBG'), ('various', 'JJ'), ('machine', 'NN'), ('learning', 'VBG'), ('algorithms', 'JJ'), ('suggests', 'NNS'), ('product', 'NN'), ('per', 'IN'), ('customer', 'NN'), ('interest', 'NN'), ('.', '.')]
+
+ (S
+  (NP Google/NNP)
+  understands/VBZ
+  (NP user/JJ interest/NN)
+  using/VBG
+  (NP various/JJ machine/NN)
+  learning/VBG
+  (NP algorithms/JJ suggests/NNS product/NN)
+  per/IN
+  (NP customer/NN interest/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Google', 'user interest', 'various machine', 'algorithms suggests product', 'customer interest']
+
+>> Named Entities are: 
+ [('GPE', 'Google')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Google', 'googl'), ('understands', 'understand'), ('user', 'user'), ('interest', 'interest'), ('using', 'use'), ('various', 'variou'), ('machine', 'machin'), ('learning', 'learn'), ('algorithms', 'algorithm'), ('suggests', 'suggest'), ('product', 'product'), ('per', 'per'), ('customer', 'custom'), ('interest', 'interest'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Google', 'googl'), ('understands', 'understand'), ('user', 'user'), ('interest', 'interest'), ('using', 'use'), ('various', 'various'), ('machine', 'machin'), ('learning', 'learn'), ('algorithms', 'algorithm'), ('suggests', 'suggest'), ('product', 'product'), ('per', 'per'), ('customer', 'custom'), ('interest', 'interest'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Google', 'Google'), ('understands', 'understands'), ('user', 'user'), ('interest', 'interest'), ('using', 'using'), ('various', 'various'), ('machine', 'machine'), ('learning', 'learning'), ('algorithms', 'algorithm'), ('suggests', 'suggests'), ('product', 'product'), ('per', 'per'), ('customer', 'customer'), ('interest', 'interest'), ('.', '.')]
+
+
+
+============================ Sentence 23 =============================
+
+As similar, when we use Netflix, we find some recommendations for entertainment series, movies, etc., and this is also done with the help of machine learning. 
+
+
+>> Tokens are: 
+ ['As', 'similar', ',', 'use', 'Netflix', ',', 'find', 'recommendations', 'entertainment', 'series', ',', 'movies', ',', 'etc.', ',', 'also', 'done', 'help', 'machine', 'learning', '.']
+
+>> Bigrams are: 
+ [('As', 'similar'), ('similar', ','), (',', 'use'), ('use', 'Netflix'), ('Netflix', ','), (',', 'find'), ('find', 'recommendations'), ('recommendations', 'entertainment'), ('entertainment', 'series'), ('series', ','), (',', 'movies'), ('movies', ','), (',', 'etc.'), ('etc.', ','), (',', 'also'), ('also', 'done'), ('done', 'help'), ('help', 'machine'), ('machine', 'learning'), ('learning', '.')]
+
+>> Trigrams are: 
+ [('As', 'similar', ','), ('similar', ',', 'use'), (',', 'use', 'Netflix'), ('use', 'Netflix', ','), ('Netflix', ',', 'find'), (',', 'find', 'recommendations'), ('find', 'recommendations', 'entertainment'), ('recommendations', 'entertainment', 'series'), ('entertainment', 'series', ','), ('series', ',', 'movies'), (',', 'movies', ','), ('movies', ',', 'etc.'), (',', 'etc.', ','), ('etc.', ',', 'also'), (',', 'also', 'done'), ('also', 'done', 'help'), ('done', 'help', 'machine'), ('help', 'machine', 'learning'), ('machine', 'learning', '.')]
+
+>> POS Tags are: 
+ [('As', 'IN'), ('similar', 'JJ'), (',', ','), ('use', 'JJ'), ('Netflix', 'NNP'), (',', ','), ('find', 'VBP'), ('recommendations', 'NNS'), ('entertainment', 'NN'), ('series', 'NN'), (',', ','), ('movies', 'NNS'), (',', ','), ('etc.', 'NN'), (',', ','), ('also', 'RB'), ('done', 'VBN'), ('help', 'NN'), ('machine', 'NN'), ('learning', 'NN'), ('.', '.')]
+
+ (S
+  As/IN
+  similar/JJ
+  ,/,
+  (NP use/JJ Netflix/NNP)
+  ,/,
+  find/VBP
+  (NP recommendations/NNS entertainment/NN series/NN)
+  ,/,
+  (NP movies/NNS)
+  ,/,
+  (NP etc./NN)
+  ,/,
+  also/RB
+  done/VBN
+  (NP help/NN machine/NN learning/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['use Netflix', 'recommendations entertainment series', 'movies', 'etc.', 'help machine learning']
+
+>> Named Entities are: 
+ [('PERSON', 'Netflix')] 
+
+>> Stemming using Porter Stemmer: 
+ [('As', 'as'), ('similar', 'similar'), (',', ','), ('use', 'use'), ('Netflix', 'netflix'), (',', ','), ('find', 'find'), ('recommendations', 'recommend'), ('entertainment', 'entertain'), ('series', 'seri'), (',', ','), ('movies', 'movi'), (',', ','), ('etc.', 'etc.'), (',', ','), ('also', 'also'), ('done', 'done'), ('help', 'help'), ('machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('As', 'as'), ('similar', 'similar'), (',', ','), ('use', 'use'), ('Netflix', 'netflix'), (',', ','), ('find', 'find'), ('recommendations', 'recommend'), ('entertainment', 'entertain'), ('series', 'seri'), (',', ','), ('movies', 'movi'), (',', ','), ('etc.', 'etc.'), (',', ','), ('also', 'also'), ('done', 'done'), ('help', 'help'), ('machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Lemmatization: 
+ [('As', 'As'), ('similar', 'similar'), (',', ','), ('use', 'use'), ('Netflix', 'Netflix'), (',', ','), ('find', 'find'), ('recommendations', 'recommendation'), ('entertainment', 'entertainment'), ('series', 'series'), (',', ','), ('movies', 'movie'), (',', ','), ('etc.', 'etc.'), (',', ','), ('also', 'also'), ('done', 'done'), ('help', 'help'), ('machine', 'machine'), ('learning', 'learning'), ('.', '.')]
+
+
+
+============================ Sentence 24 =============================
+
+5. 
+
+
+>> Tokens are: 
+ ['5', '.']
+
+>> Bigrams are: 
+ [('5', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('5', 'CD'), ('.', '.')]
+
+ (S 5/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('5', '5'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('5', '5'), ('.', '.')]
+
+>> Lemmatization: 
+ [('5', '5'), ('.', '.')]
+
+
+
+============================ Sentence 25 =============================
+
+Self-driving cars: One of the most exciting applications of machine learning is self-driving cars. 
+
+
+>> Tokens are: 
+ ['Self-driving', 'cars', ':', 'One', 'exciting', 'applications', 'machine', 'learning', 'self-driving', 'cars', '.']
+
+>> Bigrams are: 
+ [('Self-driving', 'cars'), ('cars', ':'), (':', 'One'), ('One', 'exciting'), ('exciting', 'applications'), ('applications', 'machine'), ('machine', 'learning'), ('learning', 'self-driving'), ('self-driving', 'cars'), ('cars', '.')]
+
+>> Trigrams are: 
+ [('Self-driving', 'cars', ':'), ('cars', ':', 'One'), (':', 'One', 'exciting'), ('One', 'exciting', 'applications'), ('exciting', 'applications', 'machine'), ('applications', 'machine', 'learning'), ('machine', 'learning', 'self-driving'), ('learning', 'self-driving', 'cars'), ('self-driving', 'cars', '.')]
+
+>> POS Tags are: 
+ [('Self-driving', 'JJ'), ('cars', 'NNS'), (':', ':'), ('One', 'CD'), ('exciting', 'NN'), ('applications', 'NNS'), ('machine', 'NN'), ('learning', 'VBG'), ('self-driving', 'JJ'), ('cars', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Self-driving/JJ cars/NNS)
+  :/:
+  One/CD
+  (NP exciting/NN applications/NNS machine/NN)
+  learning/VBG
+  (NP self-driving/JJ cars/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Self-driving cars', 'exciting applications machine', 'self-driving cars']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Self-driving', 'self-driv'), ('cars', 'car'), (':', ':'), ('One', 'one'), ('exciting', 'excit'), ('applications', 'applic'), ('machine', 'machin'), ('learning', 'learn'), ('self-driving', 'self-driv'), ('cars', 'car'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Self-driving', 'self-driv'), ('cars', 'car'), (':', ':'), ('One', 'one'), ('exciting', 'excit'), ('applications', 'applic'), ('machine', 'machin'), ('learning', 'learn'), ('self-driving', 'self-driv'), ('cars', 'car'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Self-driving', 'Self-driving'), ('cars', 'car'), (':', ':'), ('One', 'One'), ('exciting', 'exciting'), ('applications', 'application'), ('machine', 'machine'), ('learning', 'learning'), ('self-driving', 'self-driving'), ('cars', 'car'), ('.', '.')]
+
+
+
+============================ Sentence 26 =============================
+
+Machine learning plays a significant role in self-driving cars. 
+
+
+>> Tokens are: 
+ ['Machine', 'learning', 'plays', 'significant', 'role', 'self-driving', 'cars', '.']
+
+>> Bigrams are: 
+ [('Machine', 'learning'), ('learning', 'plays'), ('plays', 'significant'), ('significant', 'role'), ('role', 'self-driving'), ('self-driving', 'cars'), ('cars', '.')]
+
+>> Trigrams are: 
+ [('Machine', 'learning', 'plays'), ('learning', 'plays', 'significant'), ('plays', 'significant', 'role'), ('significant', 'role', 'self-driving'), ('role', 'self-driving', 'cars'), ('self-driving', 'cars', '.')]
+
+>> POS Tags are: 
+ [('Machine', 'NN'), ('learning', 'NN'), ('plays', 'VBZ'), ('significant', 'JJ'), ('role', 'NN'), ('self-driving', 'JJ'), ('cars', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Machine/NN learning/NN)
+  plays/VBZ
+  (NP significant/JJ role/NN)
+  (NP self-driving/JJ cars/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Machine learning', 'significant role', 'self-driving cars']
+
+>> Named Entities are: 
+ [('GPE', 'Machine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Machine', 'machin'), ('learning', 'learn'), ('plays', 'play'), ('significant', 'signific'), ('role', 'role'), ('self-driving', 'self-driv'), ('cars', 'car'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Machine', 'machin'), ('learning', 'learn'), ('plays', 'play'), ('significant', 'signific'), ('role', 'role'), ('self-driving', 'self-driv'), ('cars', 'car'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Machine', 'Machine'), ('learning', 'learning'), ('plays', 'play'), ('significant', 'significant'), ('role', 'role'), ('self-driving', 'self-driving'), ('cars', 'car'), ('.', '.')]
+
+
+
+============================ Sentence 27 =============================
+
+Tesla, the most popular car manufacturing company is working on self-driving car. 
+
+
+>> Tokens are: 
+ ['Tesla', ',', 'popular', 'car', 'manufacturing', 'company', 'working', 'self-driving', 'car', '.']
+
+>> Bigrams are: 
+ [('Tesla', ','), (',', 'popular'), ('popular', 'car'), ('car', 'manufacturing'), ('manufacturing', 'company'), ('company', 'working'), ('working', 'self-driving'), ('self-driving', 'car'), ('car', '.')]
+
+>> Trigrams are: 
+ [('Tesla', ',', 'popular'), (',', 'popular', 'car'), ('popular', 'car', 'manufacturing'), ('car', 'manufacturing', 'company'), ('manufacturing', 'company', 'working'), ('company', 'working', 'self-driving'), ('working', 'self-driving', 'car'), ('self-driving', 'car', '.')]
+
+>> POS Tags are: 
+ [('Tesla', 'NNP'), (',', ','), ('popular', 'JJ'), ('car', 'NN'), ('manufacturing', 'NN'), ('company', 'NN'), ('working', 'VBG'), ('self-driving', 'JJ'), ('car', 'NN'), ('.', '.')]
+
+ (S
+  (NP Tesla/NNP)
+  ,/,
+  (NP popular/JJ car/NN manufacturing/NN company/NN)
+  working/VBG
+  (NP self-driving/JJ car/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Tesla', 'popular car manufacturing company', 'self-driving car']
+
+>> Named Entities are: 
+ [('GPE', 'Tesla')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Tesla', 'tesla'), (',', ','), ('popular', 'popular'), ('car', 'car'), ('manufacturing', 'manufactur'), ('company', 'compani'), ('working', 'work'), ('self-driving', 'self-driv'), ('car', 'car'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Tesla', 'tesla'), (',', ','), ('popular', 'popular'), ('car', 'car'), ('manufacturing', 'manufactur'), ('company', 'compani'), ('working', 'work'), ('self-driving', 'self-driv'), ('car', 'car'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Tesla', 'Tesla'), (',', ','), ('popular', 'popular'), ('car', 'car'), ('manufacturing', 'manufacturing'), ('company', 'company'), ('working', 'working'), ('self-driving', 'self-driving'), ('car', 'car'), ('.', '.')]
+
+
+
+============================ Sentence 28 =============================
+
+It is using unsupervised learning method to train the car models to detect people and objects while driving. 
+
+
+>> Tokens are: 
+ ['It', 'using', 'unsupervised', 'learning', 'method', 'train', 'car', 'models', 'detect', 'people', 'objects', 'driving', '.']
+
+>> Bigrams are: 
+ [('It', 'using'), ('using', 'unsupervised'), ('unsupervised', 'learning'), ('learning', 'method'), ('method', 'train'), ('train', 'car'), ('car', 'models'), ('models', 'detect'), ('detect', 'people'), ('people', 'objects'), ('objects', 'driving'), ('driving', '.')]
+
+>> Trigrams are: 
+ [('It', 'using', 'unsupervised'), ('using', 'unsupervised', 'learning'), ('unsupervised', 'learning', 'method'), ('learning', 'method', 'train'), ('method', 'train', 'car'), ('train', 'car', 'models'), ('car', 'models', 'detect'), ('models', 'detect', 'people'), ('detect', 'people', 'objects'), ('people', 'objects', 'driving'), ('objects', 'driving', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('using', 'VBG'), ('unsupervised', 'JJ'), ('learning', 'NN'), ('method', 'NN'), ('train', 'NN'), ('car', 'NN'), ('models', 'NNS'), ('detect', 'VBP'), ('people', 'NNS'), ('objects', 'NNS'), ('driving', 'VBG'), ('.', '.')]
+
+ (S
+  It/PRP
+  using/VBG
+  (NP
+    unsupervised/JJ
+    learning/NN
+    method/NN
+    train/NN
+    car/NN
+    models/NNS)
+  detect/VBP
+  (NP people/NNS objects/NNS)
+  driving/VBG
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['unsupervised learning method train car models', 'people objects']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('using', 'use'), ('unsupervised', 'unsupervis'), ('learning', 'learn'), ('method', 'method'), ('train', 'train'), ('car', 'car'), ('models', 'model'), ('detect', 'detect'), ('people', 'peopl'), ('objects', 'object'), ('driving', 'drive'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('using', 'use'), ('unsupervised', 'unsupervis'), ('learning', 'learn'), ('method', 'method'), ('train', 'train'), ('car', 'car'), ('models', 'model'), ('detect', 'detect'), ('people', 'peopl'), ('objects', 'object'), ('driving', 'drive'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('using', 'using'), ('unsupervised', 'unsupervised'), ('learning', 'learning'), ('method', 'method'), ('train', 'train'), ('car', 'car'), ('models', 'model'), ('detect', 'detect'), ('people', 'people'), ('objects', 'object'), ('driving', 'driving'), ('.', '.')]
+
+
+
+============================ Sentence 29 =============================
+
+6. 
+
+
+>> Tokens are: 
+ ['6', '.']
+
+>> Bigrams are: 
+ [('6', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('6', 'CD'), ('.', '.')]
+
+ (S 6/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('6', '6'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('6', '6'), ('.', '.')]
+
+>> Lemmatization: 
+ [('6', '6'), ('.', '.')]
+
+
+
+============================ Sentence 30 =============================
+
+Email Spam and Malware Filtering: Whenever we receive a new email, it is filtered automatically as important, normal, and spam. 
+
+
+>> Tokens are: 
+ ['Email', 'Spam', 'Malware', 'Filtering', ':', 'Whenever', 'receive', 'new', 'email', ',', 'filtered', 'automatically', 'important', ',', 'normal', ',', 'spam', '.']
+
+>> Bigrams are: 
+ [('Email', 'Spam'), ('Spam', 'Malware'), ('Malware', 'Filtering'), ('Filtering', ':'), (':', 'Whenever'), ('Whenever', 'receive'), ('receive', 'new'), ('new', 'email'), ('email', ','), (',', 'filtered'), ('filtered', 'automatically'), ('automatically', 'important'), ('important', ','), (',', 'normal'), ('normal', ','), (',', 'spam'), ('spam', '.')]
+
+>> Trigrams are: 
+ [('Email', 'Spam', 'Malware'), ('Spam', 'Malware', 'Filtering'), ('Malware', 'Filtering', ':'), ('Filtering', ':', 'Whenever'), (':', 'Whenever', 'receive'), ('Whenever', 'receive', 'new'), ('receive', 'new', 'email'), ('new', 'email', ','), ('email', ',', 'filtered'), (',', 'filtered', 'automatically'), ('filtered', 'automatically', 'important'), ('automatically', 'important', ','), ('important', ',', 'normal'), (',', 'normal', ','), ('normal', ',', 'spam'), (',', 'spam', '.')]
+
+>> POS Tags are: 
+ [('Email', 'NNP'), ('Spam', 'NNP'), ('Malware', 'NNP'), ('Filtering', 'NNP'), (':', ':'), ('Whenever', 'NNP'), ('receive', 'VBP'), ('new', 'JJ'), ('email', 'NN'), (',', ','), ('filtered', 'VBN'), ('automatically', 'RB'), ('important', 'JJ'), (',', ','), ('normal', 'JJ'), (',', ','), ('spam', 'NN'), ('.', '.')]
+
+ (S
+  (NP Email/NNP Spam/NNP Malware/NNP Filtering/NNP)
+  :/:
+  (NP Whenever/NNP)
+  receive/VBP
+  (NP new/JJ email/NN)
+  ,/,
+  filtered/VBN
+  automatically/RB
+  important/JJ
+  ,/,
+  normal/JJ
+  ,/,
+  (NP spam/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Email Spam Malware Filtering', 'Whenever', 'new email', 'spam']
+
+>> Named Entities are: 
+ [('PERSON', 'Email'), ('ORGANIZATION', 'Spam Malware')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Email', 'email'), ('Spam', 'spam'), ('Malware', 'malwar'), ('Filtering', 'filter'), (':', ':'), ('Whenever', 'whenev'), ('receive', 'receiv'), ('new', 'new'), ('email', 'email'), (',', ','), ('filtered', 'filter'), ('automatically', 'automat'), ('important', 'import'), (',', ','), ('normal', 'normal'), (',', ','), ('spam', 'spam'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Email', 'email'), ('Spam', 'spam'), ('Malware', 'malwar'), ('Filtering', 'filter'), (':', ':'), ('Whenever', 'whenev'), ('receive', 'receiv'), ('new', 'new'), ('email', 'email'), (',', ','), ('filtered', 'filter'), ('automatically', 'automat'), ('important', 'import'), (',', ','), ('normal', 'normal'), (',', ','), ('spam', 'spam'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Email', 'Email'), ('Spam', 'Spam'), ('Malware', 'Malware'), ('Filtering', 'Filtering'), (':', ':'), ('Whenever', 'Whenever'), ('receive', 'receive'), ('new', 'new'), ('email', 'email'), (',', ','), ('filtered', 'filtered'), ('automatically', 'automatically'), ('important', 'important'), (',', ','), ('normal', 'normal'), (',', ','), ('spam', 'spam'), ('.', '.')]
+
+
+
+============================ Sentence 31 =============================
+
+We always receive an important mail in our inbox with the important symbol and spam emails in our spam box, and the technology behind this is Machine learning. 
+
+
+>> Tokens are: 
+ ['We', 'always', 'receive', 'important', 'mail', 'inbox', 'important', 'symbol', 'spam', 'emails', 'spam', 'box', ',', 'technology', 'behind', 'Machine', 'learning', '.']
+
+>> Bigrams are: 
+ [('We', 'always'), ('always', 'receive'), ('receive', 'important'), ('important', 'mail'), ('mail', 'inbox'), ('inbox', 'important'), ('important', 'symbol'), ('symbol', 'spam'), ('spam', 'emails'), ('emails', 'spam'), ('spam', 'box'), ('box', ','), (',', 'technology'), ('technology', 'behind'), ('behind', 'Machine'), ('Machine', 'learning'), ('learning', '.')]
+
+>> Trigrams are: 
+ [('We', 'always', 'receive'), ('always', 'receive', 'important'), ('receive', 'important', 'mail'), ('important', 'mail', 'inbox'), ('mail', 'inbox', 'important'), ('inbox', 'important', 'symbol'), ('important', 'symbol', 'spam'), ('symbol', 'spam', 'emails'), ('spam', 'emails', 'spam'), ('emails', 'spam', 'box'), ('spam', 'box', ','), ('box', ',', 'technology'), (',', 'technology', 'behind'), ('technology', 'behind', 'Machine'), ('behind', 'Machine', 'learning'), ('Machine', 'learning', '.')]
+
+>> POS Tags are: 
+ [('We', 'PRP'), ('always', 'RB'), ('receive', 'VBP'), ('important', 'JJ'), ('mail', 'NN'), ('inbox', 'NN'), ('important', 'JJ'), ('symbol', 'NN'), ('spam', 'NN'), ('emails', 'VBZ'), ('spam', 'JJ'), ('box', 'NN'), (',', ','), ('technology', 'NN'), ('behind', 'IN'), ('Machine', 'NNP'), ('learning', 'NN'), ('.', '.')]
+
+ (S
+  We/PRP
+  always/RB
+  receive/VBP
+  (NP important/JJ mail/NN inbox/NN)
+  (NP important/JJ symbol/NN spam/NN)
+  emails/VBZ
+  (NP spam/JJ box/NN)
+  ,/,
+  (NP technology/NN)
+  behind/IN
+  (NP Machine/NNP learning/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['important mail inbox', 'important symbol spam', 'spam box', 'technology', 'Machine learning']
+
+>> Named Entities are: 
+ [('GPE', 'Machine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('We', 'we'), ('always', 'alway'), ('receive', 'receiv'), ('important', 'import'), ('mail', 'mail'), ('inbox', 'inbox'), ('important', 'import'), ('symbol', 'symbol'), ('spam', 'spam'), ('emails', 'email'), ('spam', 'spam'), ('box', 'box'), (',', ','), ('technology', 'technolog'), ('behind', 'behind'), ('Machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('We', 'we'), ('always', 'alway'), ('receive', 'receiv'), ('important', 'import'), ('mail', 'mail'), ('inbox', 'inbox'), ('important', 'import'), ('symbol', 'symbol'), ('spam', 'spam'), ('emails', 'email'), ('spam', 'spam'), ('box', 'box'), (',', ','), ('technology', 'technolog'), ('behind', 'behind'), ('Machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Lemmatization: 
+ [('We', 'We'), ('always', 'always'), ('receive', 'receive'), ('important', 'important'), ('mail', 'mail'), ('inbox', 'inbox'), ('important', 'important'), ('symbol', 'symbol'), ('spam', 'spam'), ('emails', 'email'), ('spam', 'spam'), ('box', 'box'), (',', ','), ('technology', 'technology'), ('behind', 'behind'), ('Machine', 'Machine'), ('learning', 'learning'), ('.', '.')]
+
+
+
+============================ Sentence 32 =============================
+
+Below are some spam filters used by Gmail: · Content Filter · Header filter · General blacklists filter · Rules-based filters · Permission filters Some machine learning algorithms such as Multi-Layer Perceptron, Decision tree, and Naïve Bayes classifier are used for email spam filtering and malware detection. 
+
+
+>> Tokens are: 
+ ['Below', 'spam', 'filters', 'used', 'Gmail', ':', '·', 'Content', 'Filter', '·', 'Header', 'filter', '·', 'General', 'blacklists', 'filter', '·', 'Rules-based', 'filters', '·', 'Permission', 'filters', 'Some', 'machine', 'learning', 'algorithms', 'Multi-Layer', 'Perceptron', ',', 'Decision', 'tree', ',', 'Naïve', 'Bayes', 'classifier', 'used', 'email', 'spam', 'filtering', 'malware', 'detection', '.']
+
+>> Bigrams are: 
+ [('Below', 'spam'), ('spam', 'filters'), ('filters', 'used'), ('used', 'Gmail'), ('Gmail', ':'), (':', '·'), ('·', 'Content'), ('Content', 'Filter'), ('Filter', '·'), ('·', 'Header'), ('Header', 'filter'), ('filter', '·'), ('·', 'General'), ('General', 'blacklists'), ('blacklists', 'filter'), ('filter', '·'), ('·', 'Rules-based'), ('Rules-based', 'filters'), ('filters', '·'), ('·', 'Permission'), ('Permission', 'filters'), ('filters', 'Some'), ('Some', 'machine'), ('machine', 'learning'), ('learning', 'algorithms'), ('algorithms', 'Multi-Layer'), ('Multi-Layer', 'Perceptron'), ('Perceptron', ','), (',', 'Decision'), ('Decision', 'tree'), ('tree', ','), (',', 'Naïve'), ('Naïve', 'Bayes'), ('Bayes', 'classifier'), ('classifier', 'used'), ('used', 'email'), ('email', 'spam'), ('spam', 'filtering'), ('filtering', 'malware'), ('malware', 'detection'), ('detection', '.')]
+
+>> Trigrams are: 
+ [('Below', 'spam', 'filters'), ('spam', 'filters', 'used'), ('filters', 'used', 'Gmail'), ('used', 'Gmail', ':'), ('Gmail', ':', '·'), (':', '·', 'Content'), ('·', 'Content', 'Filter'), ('Content', 'Filter', '·'), ('Filter', '·', 'Header'), ('·', 'Header', 'filter'), ('Header', 'filter', '·'), ('filter', '·', 'General'), ('·', 'General', 'blacklists'), ('General', 'blacklists', 'filter'), ('blacklists', 'filter', '·'), ('filter', '·', 'Rules-based'), ('·', 'Rules-based', 'filters'), ('Rules-based', 'filters', '·'), ('filters', '·', 'Permission'), ('·', 'Permission', 'filters'), ('Permission', 'filters', 'Some'), ('filters', 'Some', 'machine'), ('Some', 'machine', 'learning'), ('machine', 'learning', 'algorithms'), ('learning', 'algorithms', 'Multi-Layer'), ('algorithms', 'Multi-Layer', 'Perceptron'), ('Multi-Layer', 'Perceptron', ','), ('Perceptron', ',', 'Decision'), (',', 'Decision', 'tree'), ('Decision', 'tree', ','), ('tree', ',', 'Naïve'), (',', 'Naïve', 'Bayes'), ('Naïve', 'Bayes', 'classifier'), ('Bayes', 'classifier', 'used'), ('classifier', 'used', 'email'), ('used', 'email', 'spam'), ('email', 'spam', 'filtering'), ('spam', 'filtering', 'malware'), ('filtering', 'malware', 'detection'), ('malware', 'detection', '.')]
+
+>> POS Tags are: 
+ [('Below', 'IN'), ('spam', 'NN'), ('filters', 'NNS'), ('used', 'VBD'), ('Gmail', 'NNP'), (':', ':'), ('·', 'NN'), ('Content', 'NNP'), ('Filter', 'NNP'), ('·', 'NNP'), ('Header', 'NNP'), ('filter', 'NN'), ('·', 'NNP'), ('General', 'NNP'), ('blacklists', 'VBZ'), ('filter', 'RB'), ('·', 'JJ'), ('Rules-based', 'JJ'), ('filters', 'NNS'), ('·', 'POS'), ('Permission', 'NNP'), ('filters', 'NNS'), ('Some', 'DT'), ('machine', 'NN'), ('learning', 'VBG'), ('algorithms', 'JJ'), ('Multi-Layer', 'NNP'), ('Perceptron', 'NNP'), (',', ','), ('Decision', 'NNP'), ('tree', 'NN'), (',', ','), ('Naïve', 'NNP'), ('Bayes', 'NNP'), ('classifier', 'NN'), ('used', 'VBN'), ('email', 'NN'), ('spam', 'NN'), ('filtering', 'VBG'), ('malware', 'JJ'), ('detection', 'NN'), ('.', '.')]
+
+ (S
+  Below/IN
+  (NP spam/NN filters/NNS)
+  used/VBD
+  (NP Gmail/NNP)
+  :/:
+  (NP
+    ·/NN
+    Content/NNP
+    Filter/NNP
+    ·/NNP
+    Header/NNP
+    filter/NN
+    ·/NNP
+    General/NNP)
+  blacklists/VBZ
+  filter/RB
+  (NP ·/JJ Rules-based/JJ filters/NNS)
+  ·/POS
+  (NP Permission/NNP filters/NNS)
+  (NP Some/DT machine/NN)
+  learning/VBG
+  (NP algorithms/JJ Multi-Layer/NNP Perceptron/NNP)
+  ,/,
+  (NP Decision/NNP tree/NN)
+  ,/,
+  (NP Naïve/NNP Bayes/NNP classifier/NN)
+  used/VBN
+  (NP email/NN spam/NN)
+  filtering/VBG
+  (NP malware/JJ detection/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['spam filters', 'Gmail', '· Content Filter · Header filter · General', '· Rules-based filters', 'Permission filters', 'Some machine', 'algorithms Multi-Layer Perceptron', 'Decision tree', 'Naïve Bayes classifier', 'email spam', 'malware detection']
+
+>> Named Entities are: 
+ [('PERSON', 'Gmail'), ('ORGANIZATION', 'Content'), ('GPE', 'Decision'), ('PERSON', 'Naïve Bayes')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Below', 'below'), ('spam', 'spam'), ('filters', 'filter'), ('used', 'use'), ('Gmail', 'gmail'), (':', ':'), ('·', '·'), ('Content', 'content'), ('Filter', 'filter'), ('·', '·'), ('Header', 'header'), ('filter', 'filter'), ('·', '·'), ('General', 'gener'), ('blacklists', 'blacklist'), ('filter', 'filter'), ('·', '·'), ('Rules-based', 'rules-bas'), ('filters', 'filter'), ('·', '·'), ('Permission', 'permiss'), ('filters', 'filter'), ('Some', 'some'), ('machine', 'machin'), ('learning', 'learn'), ('algorithms', 'algorithm'), ('Multi-Layer', 'multi-lay'), ('Perceptron', 'perceptron'), (',', ','), ('Decision', 'decis'), ('tree', 'tree'), (',', ','), ('Naïve', 'naïv'), ('Bayes', 'bay'), ('classifier', 'classifi'), ('used', 'use'), ('email', 'email'), ('spam', 'spam'), ('filtering', 'filter'), ('malware', 'malwar'), ('detection', 'detect'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Below', 'below'), ('spam', 'spam'), ('filters', 'filter'), ('used', 'use'), ('Gmail', 'gmail'), (':', ':'), ('·', '·'), ('Content', 'content'), ('Filter', 'filter'), ('·', '·'), ('Header', 'header'), ('filter', 'filter'), ('·', '·'), ('General', 'general'), ('blacklists', 'blacklist'), ('filter', 'filter'), ('·', '·'), ('Rules-based', 'rules-bas'), ('filters', 'filter'), ('·', '·'), ('Permission', 'permiss'), ('filters', 'filter'), ('Some', 'some'), ('machine', 'machin'), ('learning', 'learn'), ('algorithms', 'algorithm'), ('Multi-Layer', 'multi-lay'), ('Perceptron', 'perceptron'), (',', ','), ('Decision', 'decis'), ('tree', 'tree'), (',', ','), ('Naïve', 'naïv'), ('Bayes', 'bay'), ('classifier', 'classifi'), ('used', 'use'), ('email', 'email'), ('spam', 'spam'), ('filtering', 'filter'), ('malware', 'malwar'), ('detection', 'detect'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Below', 'Below'), ('spam', 'spam'), ('filters', 'filter'), ('used', 'used'), ('Gmail', 'Gmail'), (':', ':'), ('·', '·'), ('Content', 'Content'), ('Filter', 'Filter'), ('·', '·'), ('Header', 'Header'), ('filter', 'filter'), ('·', '·'), ('General', 'General'), ('blacklists', 'blacklist'), ('filter', 'filter'), ('·', '·'), ('Rules-based', 'Rules-based'), ('filters', 'filter'), ('·', '·'), ('Permission', 'Permission'), ('filters', 'filter'), ('Some', 'Some'), ('machine', 'machine'), ('learning', 'learning'), ('algorithms', 'algorithm'), ('Multi-Layer', 'Multi-Layer'), ('Perceptron', 'Perceptron'), (',', ','), ('Decision', 'Decision'), ('tree', 'tree'), (',', ','), ('Naïve', 'Naïve'), ('Bayes', 'Bayes'), ('classifier', 'classifier'), ('used', 'used'), ('email', 'email'), ('spam', 'spam'), ('filtering', 'filtering'), ('malware', 'malware'), ('detection', 'detection'), ('.', '.')]
+
+
+
+============================ Sentence 33 =============================
+
+7. 
+
+
+>> Tokens are: 
+ ['7', '.']
+
+>> Bigrams are: 
+ [('7', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('7', 'CD'), ('.', '.')]
+
+ (S 7/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('7', '7'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('7', '7'), ('.', '.')]
+
+>> Lemmatization: 
+ [('7', '7'), ('.', '.')]
+
+
+
+============================ Sentence 34 =============================
+
+Virtual Personal Assistant: We have various virtual personal assistants such as Google assistant, Alexa, Cortana, Siri. 
+
+
+>> Tokens are: 
+ ['Virtual', 'Personal', 'Assistant', ':', 'We', 'various', 'virtual', 'personal', 'assistants', 'Google', 'assistant', ',', 'Alexa', ',', 'Cortana', ',', 'Siri', '.']
+
+>> Bigrams are: 
+ [('Virtual', 'Personal'), ('Personal', 'Assistant'), ('Assistant', ':'), (':', 'We'), ('We', 'various'), ('various', 'virtual'), ('virtual', 'personal'), ('personal', 'assistants'), ('assistants', 'Google'), ('Google', 'assistant'), ('assistant', ','), (',', 'Alexa'), ('Alexa', ','), (',', 'Cortana'), ('Cortana', ','), (',', 'Siri'), ('Siri', '.')]
+
+>> Trigrams are: 
+ [('Virtual', 'Personal', 'Assistant'), ('Personal', 'Assistant', ':'), ('Assistant', ':', 'We'), (':', 'We', 'various'), ('We', 'various', 'virtual'), ('various', 'virtual', 'personal'), ('virtual', 'personal', 'assistants'), ('personal', 'assistants', 'Google'), ('assistants', 'Google', 'assistant'), ('Google', 'assistant', ','), ('assistant', ',', 'Alexa'), (',', 'Alexa', ','), ('Alexa', ',', 'Cortana'), (',', 'Cortana', ','), ('Cortana', ',', 'Siri'), (',', 'Siri', '.')]
+
+>> POS Tags are: 
+ [('Virtual', 'JJ'), ('Personal', 'NNP'), ('Assistant', 'NN'), (':', ':'), ('We', 'PRP'), ('various', 'JJ'), ('virtual', 'JJ'), ('personal', 'JJ'), ('assistants', 'NNS'), ('Google', 'NNP'), ('assistant', 'NN'), (',', ','), ('Alexa', 'NNP'), (',', ','), ('Cortana', 'NNP'), (',', ','), ('Siri', 'NNP'), ('.', '.')]
+
+ (S
+  (NP Virtual/JJ Personal/NNP Assistant/NN)
+  :/:
+  We/PRP
+  (NP
+    various/JJ
+    virtual/JJ
+    personal/JJ
+    assistants/NNS
+    Google/NNP
+    assistant/NN)
+  ,/,
+  (NP Alexa/NNP)
+  ,/,
+  (NP Cortana/NNP)
+  ,/,
+  (NP Siri/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Virtual Personal Assistant', 'various virtual personal assistants Google assistant', 'Alexa', 'Cortana', 'Siri']
+
+>> Named Entities are: 
+ [('PERSON', 'Virtual'), ('ORGANIZATION', 'Personal'), ('PERSON', 'Google'), ('PERSON', 'Alexa'), ('GPE', 'Cortana'), ('PERSON', 'Siri')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Virtual', 'virtual'), ('Personal', 'person'), ('Assistant', 'assist'), (':', ':'), ('We', 'we'), ('various', 'variou'), ('virtual', 'virtual'), ('personal', 'person'), ('assistants', 'assist'), ('Google', 'googl'), ('assistant', 'assist'), (',', ','), ('Alexa', 'alexa'), (',', ','), ('Cortana', 'cortana'), (',', ','), ('Siri', 'siri'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Virtual', 'virtual'), ('Personal', 'person'), ('Assistant', 'assist'), (':', ':'), ('We', 'we'), ('various', 'various'), ('virtual', 'virtual'), ('personal', 'person'), ('assistants', 'assist'), ('Google', 'googl'), ('assistant', 'assist'), (',', ','), ('Alexa', 'alexa'), (',', ','), ('Cortana', 'cortana'), (',', ','), ('Siri', 'siri'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Virtual', 'Virtual'), ('Personal', 'Personal'), ('Assistant', 'Assistant'), (':', ':'), ('We', 'We'), ('various', 'various'), ('virtual', 'virtual'), ('personal', 'personal'), ('assistants', 'assistant'), ('Google', 'Google'), ('assistant', 'assistant'), (',', ','), ('Alexa', 'Alexa'), (',', ','), ('Cortana', 'Cortana'), (',', ','), ('Siri', 'Siri'), ('.', '.')]
+
+
+
+============================ Sentence 35 =============================
+
+As the name suggests, they help us in finding the information using our voice instruction. 
+
+
+>> Tokens are: 
+ ['As', 'name', 'suggests', ',', 'help', 'us', 'finding', 'information', 'using', 'voice', 'instruction', '.']
+
+>> Bigrams are: 
+ [('As', 'name'), ('name', 'suggests'), ('suggests', ','), (',', 'help'), ('help', 'us'), ('us', 'finding'), ('finding', 'information'), ('information', 'using'), ('using', 'voice'), ('voice', 'instruction'), ('instruction', '.')]
+
+>> Trigrams are: 
+ [('As', 'name', 'suggests'), ('name', 'suggests', ','), ('suggests', ',', 'help'), (',', 'help', 'us'), ('help', 'us', 'finding'), ('us', 'finding', 'information'), ('finding', 'information', 'using'), ('information', 'using', 'voice'), ('using', 'voice', 'instruction'), ('voice', 'instruction', '.')]
+
+>> POS Tags are: 
+ [('As', 'IN'), ('name', 'NN'), ('suggests', 'VBZ'), (',', ','), ('help', 'VB'), ('us', 'PRP'), ('finding', 'VBG'), ('information', 'NN'), ('using', 'VBG'), ('voice', 'NN'), ('instruction', 'NN'), ('.', '.')]
+
+ (S
+  As/IN
+  (NP name/NN)
+  suggests/VBZ
+  ,/,
+  help/VB
+  us/PRP
+  finding/VBG
+  (NP information/NN)
+  using/VBG
+  (NP voice/NN instruction/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['name', 'information', 'voice instruction']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('As', 'as'), ('name', 'name'), ('suggests', 'suggest'), (',', ','), ('help', 'help'), ('us', 'us'), ('finding', 'find'), ('information', 'inform'), ('using', 'use'), ('voice', 'voic'), ('instruction', 'instruct'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('As', 'as'), ('name', 'name'), ('suggests', 'suggest'), (',', ','), ('help', 'help'), ('us', 'us'), ('finding', 'find'), ('information', 'inform'), ('using', 'use'), ('voice', 'voic'), ('instruction', 'instruct'), ('.', '.')]
+
+>> Lemmatization: 
+ [('As', 'As'), ('name', 'name'), ('suggests', 'suggests'), (',', ','), ('help', 'help'), ('us', 'u'), ('finding', 'finding'), ('information', 'information'), ('using', 'using'), ('voice', 'voice'), ('instruction', 'instruction'), ('.', '.')]
+
+
+
+============================ Sentence 36 =============================
+
+These assistants can help us in various ways just by our voice instructions such as Play music, call someone, Open an email, Scheduling an appointment, etc. 
+
+
+>> Tokens are: 
+ ['These', 'assistants', 'help', 'us', 'various', 'ways', 'voice', 'instructions', 'Play', 'music', ',', 'call', 'someone', ',', 'Open', 'email', ',', 'Scheduling', 'appointment', ',', 'etc', '.']
+
+>> Bigrams are: 
+ [('These', 'assistants'), ('assistants', 'help'), ('help', 'us'), ('us', 'various'), ('various', 'ways'), ('ways', 'voice'), ('voice', 'instructions'), ('instructions', 'Play'), ('Play', 'music'), ('music', ','), (',', 'call'), ('call', 'someone'), ('someone', ','), (',', 'Open'), ('Open', 'email'), ('email', ','), (',', 'Scheduling'), ('Scheduling', 'appointment'), ('appointment', ','), (',', 'etc'), ('etc', '.')]
+
+>> Trigrams are: 
+ [('These', 'assistants', 'help'), ('assistants', 'help', 'us'), ('help', 'us', 'various'), ('us', 'various', 'ways'), ('various', 'ways', 'voice'), ('ways', 'voice', 'instructions'), ('voice', 'instructions', 'Play'), ('instructions', 'Play', 'music'), ('Play', 'music', ','), ('music', ',', 'call'), (',', 'call', 'someone'), ('call', 'someone', ','), ('someone', ',', 'Open'), (',', 'Open', 'email'), ('Open', 'email', ','), ('email', ',', 'Scheduling'), (',', 'Scheduling', 'appointment'), ('Scheduling', 'appointment', ','), ('appointment', ',', 'etc'), (',', 'etc', '.')]
+
+>> POS Tags are: 
+ [('These', 'DT'), ('assistants', 'NNS'), ('help', 'VBP'), ('us', 'PRP'), ('various', 'JJ'), ('ways', 'NNS'), ('voice', 'NN'), ('instructions', 'NNS'), ('Play', 'NNP'), ('music', 'NN'), (',', ','), ('call', 'VB'), ('someone', 'NN'), (',', ','), ('Open', 'NNP'), ('email', 'NN'), (',', ','), ('Scheduling', 'NNP'), ('appointment', 'NN'), (',', ','), ('etc', 'FW'), ('.', '.')]
+
+ (S
+  (NP These/DT assistants/NNS)
+  help/VBP
+  us/PRP
+  (NP
+    various/JJ
+    ways/NNS
+    voice/NN
+    instructions/NNS
+    Play/NNP
+    music/NN)
+  ,/,
+  call/VB
+  (NP someone/NN)
+  ,/,
+  (NP Open/NNP email/NN)
+  ,/,
+  (NP Scheduling/NNP appointment/NN)
+  ,/,
+  etc/FW
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['These assistants', 'various ways voice instructions Play music', 'someone', 'Open email', 'Scheduling appointment']
+
+>> Named Entities are: 
+ [('GPE', 'Open'), ('GPE', 'Scheduling')] 
+
+>> Stemming using Porter Stemmer: 
+ [('These', 'these'), ('assistants', 'assist'), ('help', 'help'), ('us', 'us'), ('various', 'variou'), ('ways', 'way'), ('voice', 'voic'), ('instructions', 'instruct'), ('Play', 'play'), ('music', 'music'), (',', ','), ('call', 'call'), ('someone', 'someon'), (',', ','), ('Open', 'open'), ('email', 'email'), (',', ','), ('Scheduling', 'schedul'), ('appointment', 'appoint'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('These', 'these'), ('assistants', 'assist'), ('help', 'help'), ('us', 'us'), ('various', 'various'), ('ways', 'way'), ('voice', 'voic'), ('instructions', 'instruct'), ('Play', 'play'), ('music', 'music'), (',', ','), ('call', 'call'), ('someone', 'someon'), (',', ','), ('Open', 'open'), ('email', 'email'), (',', ','), ('Scheduling', 'schedul'), ('appointment', 'appoint'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('These', 'These'), ('assistants', 'assistant'), ('help', 'help'), ('us', 'u'), ('various', 'various'), ('ways', 'way'), ('voice', 'voice'), ('instructions', 'instruction'), ('Play', 'Play'), ('music', 'music'), (',', ','), ('call', 'call'), ('someone', 'someone'), (',', ','), ('Open', 'Open'), ('email', 'email'), (',', ','), ('Scheduling', 'Scheduling'), ('appointment', 'appointment'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+
+
+============================ Sentence 37 =============================
+
+These virtual assistants use machine learning algorithms as an important part. 
+
+
+>> Tokens are: 
+ ['These', 'virtual', 'assistants', 'use', 'machine', 'learning', 'algorithms', 'important', 'part', '.']
+
+>> Bigrams are: 
+ [('These', 'virtual'), ('virtual', 'assistants'), ('assistants', 'use'), ('use', 'machine'), ('machine', 'learning'), ('learning', 'algorithms'), ('algorithms', 'important'), ('important', 'part'), ('part', '.')]
+
+>> Trigrams are: 
+ [('These', 'virtual', 'assistants'), ('virtual', 'assistants', 'use'), ('assistants', 'use', 'machine'), ('use', 'machine', 'learning'), ('machine', 'learning', 'algorithms'), ('learning', 'algorithms', 'important'), ('algorithms', 'important', 'part'), ('important', 'part', '.')]
+
+>> POS Tags are: 
+ [('These', 'DT'), ('virtual', 'JJ'), ('assistants', 'NNS'), ('use', 'VBP'), ('machine', 'NN'), ('learning', 'NN'), ('algorithms', 'NN'), ('important', 'JJ'), ('part', 'NN'), ('.', '.')]
+
+ (S
+  (NP These/DT virtual/JJ assistants/NNS)
+  use/VBP
+  (NP machine/NN learning/NN algorithms/NN)
+  (NP important/JJ part/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['These virtual assistants', 'machine learning algorithms', 'important part']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('These', 'these'), ('virtual', 'virtual'), ('assistants', 'assist'), ('use', 'use'), ('machine', 'machin'), ('learning', 'learn'), ('algorithms', 'algorithm'), ('important', 'import'), ('part', 'part'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('These', 'these'), ('virtual', 'virtual'), ('assistants', 'assist'), ('use', 'use'), ('machine', 'machin'), ('learning', 'learn'), ('algorithms', 'algorithm'), ('important', 'import'), ('part', 'part'), ('.', '.')]
+
+>> Lemmatization: 
+ [('These', 'These'), ('virtual', 'virtual'), ('assistants', 'assistant'), ('use', 'use'), ('machine', 'machine'), ('learning', 'learning'), ('algorithms', 'algorithm'), ('important', 'important'), ('part', 'part'), ('.', '.')]
+
+
+
+============================ Sentence 38 =============================
+
+These assistant record our voice instructions, send it over the server on a cloud, and decode it using ML algorithms and act accordingly. 
+
+
+>> Tokens are: 
+ ['These', 'assistant', 'record', 'voice', 'instructions', ',', 'send', 'server', 'cloud', ',', 'decode', 'using', 'ML', 'algorithms', 'act', 'accordingly', '.']
+
+>> Bigrams are: 
+ [('These', 'assistant'), ('assistant', 'record'), ('record', 'voice'), ('voice', 'instructions'), ('instructions', ','), (',', 'send'), ('send', 'server'), ('server', 'cloud'), ('cloud', ','), (',', 'decode'), ('decode', 'using'), ('using', 'ML'), ('ML', 'algorithms'), ('algorithms', 'act'), ('act', 'accordingly'), ('accordingly', '.')]
+
+>> Trigrams are: 
+ [('These', 'assistant', 'record'), ('assistant', 'record', 'voice'), ('record', 'voice', 'instructions'), ('voice', 'instructions', ','), ('instructions', ',', 'send'), (',', 'send', 'server'), ('send', 'server', 'cloud'), ('server', 'cloud', ','), ('cloud', ',', 'decode'), (',', 'decode', 'using'), ('decode', 'using', 'ML'), ('using', 'ML', 'algorithms'), ('ML', 'algorithms', 'act'), ('algorithms', 'act', 'accordingly'), ('act', 'accordingly', '.')]
+
+>> POS Tags are: 
+ [('These', 'DT'), ('assistant', 'NN'), ('record', 'NN'), ('voice', 'NN'), ('instructions', 'NNS'), (',', ','), ('send', 'VBP'), ('server', 'RB'), ('cloud', 'NN'), (',', ','), ('decode', 'NN'), ('using', 'VBG'), ('ML', 'NNP'), ('algorithms', 'NN'), ('act', 'NN'), ('accordingly', 'RB'), ('.', '.')]
+
+ (S
+  (NP These/DT assistant/NN record/NN voice/NN instructions/NNS)
+  ,/,
+  send/VBP
+  server/RB
+  (NP cloud/NN)
+  ,/,
+  (NP decode/NN)
+  using/VBG
+  (NP ML/NNP algorithms/NN act/NN)
+  accordingly/RB
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['These assistant record voice instructions', 'cloud', 'decode', 'ML algorithms act']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'ML')] 
+
+>> Stemming using Porter Stemmer: 
+ [('These', 'these'), ('assistant', 'assist'), ('record', 'record'), ('voice', 'voic'), ('instructions', 'instruct'), (',', ','), ('send', 'send'), ('server', 'server'), ('cloud', 'cloud'), (',', ','), ('decode', 'decod'), ('using', 'use'), ('ML', 'ml'), ('algorithms', 'algorithm'), ('act', 'act'), ('accordingly', 'accordingli'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('These', 'these'), ('assistant', 'assist'), ('record', 'record'), ('voice', 'voic'), ('instructions', 'instruct'), (',', ','), ('send', 'send'), ('server', 'server'), ('cloud', 'cloud'), (',', ','), ('decode', 'decod'), ('using', 'use'), ('ML', 'ml'), ('algorithms', 'algorithm'), ('act', 'act'), ('accordingly', 'accord'), ('.', '.')]
+
+>> Lemmatization: 
+ [('These', 'These'), ('assistant', 'assistant'), ('record', 'record'), ('voice', 'voice'), ('instructions', 'instruction'), (',', ','), ('send', 'send'), ('server', 'server'), ('cloud', 'cloud'), (',', ','), ('decode', 'decode'), ('using', 'using'), ('ML', 'ML'), ('algorithms', 'algorithm'), ('act', 'act'), ('accordingly', 'accordingly'), ('.', '.')]
+
+
+
+============================ Sentence 39 =============================
+
+8. 
+
+
+>> Tokens are: 
+ ['8', '.']
+
+>> Bigrams are: 
+ [('8', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('8', 'CD'), ('.', '.')]
+
+ (S 8/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('8', '8'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('8', '8'), ('.', '.')]
+
+>> Lemmatization: 
+ [('8', '8'), ('.', '.')]
+
+
+
+============================ Sentence 40 =============================
+
+Online Fraud Detection: Machine learning is making our online transaction safe and secure by detecting fraud transaction. 
+
+
+>> Tokens are: 
+ ['Online', 'Fraud', 'Detection', ':', 'Machine', 'learning', 'making', 'online', 'transaction', 'safe', 'secure', 'detecting', 'fraud', 'transaction', '.']
+
+>> Bigrams are: 
+ [('Online', 'Fraud'), ('Fraud', 'Detection'), ('Detection', ':'), (':', 'Machine'), ('Machine', 'learning'), ('learning', 'making'), ('making', 'online'), ('online', 'transaction'), ('transaction', 'safe'), ('safe', 'secure'), ('secure', 'detecting'), ('detecting', 'fraud'), ('fraud', 'transaction'), ('transaction', '.')]
+
+>> Trigrams are: 
+ [('Online', 'Fraud', 'Detection'), ('Fraud', 'Detection', ':'), ('Detection', ':', 'Machine'), (':', 'Machine', 'learning'), ('Machine', 'learning', 'making'), ('learning', 'making', 'online'), ('making', 'online', 'transaction'), ('online', 'transaction', 'safe'), ('transaction', 'safe', 'secure'), ('safe', 'secure', 'detecting'), ('secure', 'detecting', 'fraud'), ('detecting', 'fraud', 'transaction'), ('fraud', 'transaction', '.')]
+
+>> POS Tags are: 
+ [('Online', 'NNP'), ('Fraud', 'NNP'), ('Detection', 'NNP'), (':', ':'), ('Machine', 'NN'), ('learning', 'VBG'), ('making', 'VBG'), ('online', 'JJ'), ('transaction', 'NN'), ('safe', 'JJ'), ('secure', 'NN'), ('detecting', 'VBG'), ('fraud', 'NN'), ('transaction', 'NN'), ('.', '.')]
+
+ (S
+  (NP Online/NNP Fraud/NNP Detection/NNP)
+  :/:
+  (NP Machine/NN)
+  learning/VBG
+  making/VBG
+  (NP online/JJ transaction/NN)
+  (NP safe/JJ secure/NN)
+  detecting/VBG
+  (NP fraud/NN transaction/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Online Fraud Detection', 'Machine', 'online transaction', 'safe secure', 'fraud transaction']
+
+>> Named Entities are: 
+ [('PERSON', 'Online'), ('PERSON', 'Fraud Detection')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Online', 'onlin'), ('Fraud', 'fraud'), ('Detection', 'detect'), (':', ':'), ('Machine', 'machin'), ('learning', 'learn'), ('making', 'make'), ('online', 'onlin'), ('transaction', 'transact'), ('safe', 'safe'), ('secure', 'secur'), ('detecting', 'detect'), ('fraud', 'fraud'), ('transaction', 'transact'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Online', 'onlin'), ('Fraud', 'fraud'), ('Detection', 'detect'), (':', ':'), ('Machine', 'machin'), ('learning', 'learn'), ('making', 'make'), ('online', 'onlin'), ('transaction', 'transact'), ('safe', 'safe'), ('secure', 'secur'), ('detecting', 'detect'), ('fraud', 'fraud'), ('transaction', 'transact'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Online', 'Online'), ('Fraud', 'Fraud'), ('Detection', 'Detection'), (':', ':'), ('Machine', 'Machine'), ('learning', 'learning'), ('making', 'making'), ('online', 'online'), ('transaction', 'transaction'), ('safe', 'safe'), ('secure', 'secure'), ('detecting', 'detecting'), ('fraud', 'fraud'), ('transaction', 'transaction'), ('.', '.')]
+
+
+
+============================ Sentence 41 =============================
+
+Whenever we perform some online transaction, there may be various ways that a fraudulent transaction can take place such as fake accounts, fake ids, and steal money in the middle of a transaction. 
+
+
+>> Tokens are: 
+ ['Whenever', 'perform', 'online', 'transaction', ',', 'may', 'various', 'ways', 'fraudulent', 'transaction', 'take', 'place', 'fake', 'accounts', ',', 'fake', 'ids', ',', 'steal', 'money', 'middle', 'transaction', '.']
+
+>> Bigrams are: 
+ [('Whenever', 'perform'), ('perform', 'online'), ('online', 'transaction'), ('transaction', ','), (',', 'may'), ('may', 'various'), ('various', 'ways'), ('ways', 'fraudulent'), ('fraudulent', 'transaction'), ('transaction', 'take'), ('take', 'place'), ('place', 'fake'), ('fake', 'accounts'), ('accounts', ','), (',', 'fake'), ('fake', 'ids'), ('ids', ','), (',', 'steal'), ('steal', 'money'), ('money', 'middle'), ('middle', 'transaction'), ('transaction', '.')]
+
+>> Trigrams are: 
+ [('Whenever', 'perform', 'online'), ('perform', 'online', 'transaction'), ('online', 'transaction', ','), ('transaction', ',', 'may'), (',', 'may', 'various'), ('may', 'various', 'ways'), ('various', 'ways', 'fraudulent'), ('ways', 'fraudulent', 'transaction'), ('fraudulent', 'transaction', 'take'), ('transaction', 'take', 'place'), ('take', 'place', 'fake'), ('place', 'fake', 'accounts'), ('fake', 'accounts', ','), ('accounts', ',', 'fake'), (',', 'fake', 'ids'), ('fake', 'ids', ','), ('ids', ',', 'steal'), (',', 'steal', 'money'), ('steal', 'money', 'middle'), ('money', 'middle', 'transaction'), ('middle', 'transaction', '.')]
+
+>> POS Tags are: 
+ [('Whenever', 'WRB'), ('perform', 'NN'), ('online', 'JJ'), ('transaction', 'NN'), (',', ','), ('may', 'MD'), ('various', 'JJ'), ('ways', 'NNS'), ('fraudulent', 'JJ'), ('transaction', 'NN'), ('take', 'VB'), ('place', 'NN'), ('fake', 'JJ'), ('accounts', 'NNS'), (',', ','), ('fake', 'JJ'), ('ids', 'NNS'), (',', ','), ('steal', 'JJ'), ('money', 'NN'), ('middle', 'JJ'), ('transaction', 'NN'), ('.', '.')]
+
+ (S
+  Whenever/WRB
+  (NP perform/NN)
+  (NP online/JJ transaction/NN)
+  ,/,
+  may/MD
+  (NP various/JJ ways/NNS)
+  (NP fraudulent/JJ transaction/NN)
+  take/VB
+  (NP place/NN)
+  (NP fake/JJ accounts/NNS)
+  ,/,
+  (NP fake/JJ ids/NNS)
+  ,/,
+  (NP steal/JJ money/NN)
+  (NP middle/JJ transaction/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['perform', 'online transaction', 'various ways', 'fraudulent transaction', 'place', 'fake accounts', 'fake ids', 'steal money', 'middle transaction']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Whenever', 'whenev'), ('perform', 'perform'), ('online', 'onlin'), ('transaction', 'transact'), (',', ','), ('may', 'may'), ('various', 'variou'), ('ways', 'way'), ('fraudulent', 'fraudul'), ('transaction', 'transact'), ('take', 'take'), ('place', 'place'), ('fake', 'fake'), ('accounts', 'account'), (',', ','), ('fake', 'fake'), ('ids', 'id'), (',', ','), ('steal', 'steal'), ('money', 'money'), ('middle', 'middl'), ('transaction', 'transact'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Whenever', 'whenev'), ('perform', 'perform'), ('online', 'onlin'), ('transaction', 'transact'), (',', ','), ('may', 'may'), ('various', 'various'), ('ways', 'way'), ('fraudulent', 'fraudul'), ('transaction', 'transact'), ('take', 'take'), ('place', 'place'), ('fake', 'fake'), ('accounts', 'account'), (',', ','), ('fake', 'fake'), ('ids', 'id'), (',', ','), ('steal', 'steal'), ('money', 'money'), ('middle', 'middl'), ('transaction', 'transact'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Whenever', 'Whenever'), ('perform', 'perform'), ('online', 'online'), ('transaction', 'transaction'), (',', ','), ('may', 'may'), ('various', 'various'), ('ways', 'way'), ('fraudulent', 'fraudulent'), ('transaction', 'transaction'), ('take', 'take'), ('place', 'place'), ('fake', 'fake'), ('accounts', 'account'), (',', ','), ('fake', 'fake'), ('ids', 'id'), (',', ','), ('steal', 'steal'), ('money', 'money'), ('middle', 'middle'), ('transaction', 'transaction'), ('.', '.')]
+
+
+
+============================ Sentence 42 =============================
+
+So to detect this, Feed Forward Neural network helps us by checking whether it is a genuine transaction or a fraud transaction. 
+
+
+>> Tokens are: 
+ ['So', 'detect', ',', 'Feed', 'Forward', 'Neural', 'network', 'helps', 'us', 'checking', 'whether', 'genuine', 'transaction', 'fraud', 'transaction', '.']
+
+>> Bigrams are: 
+ [('So', 'detect'), ('detect', ','), (',', 'Feed'), ('Feed', 'Forward'), ('Forward', 'Neural'), ('Neural', 'network'), ('network', 'helps'), ('helps', 'us'), ('us', 'checking'), ('checking', 'whether'), ('whether', 'genuine'), ('genuine', 'transaction'), ('transaction', 'fraud'), ('fraud', 'transaction'), ('transaction', '.')]
+
+>> Trigrams are: 
+ [('So', 'detect', ','), ('detect', ',', 'Feed'), (',', 'Feed', 'Forward'), ('Feed', 'Forward', 'Neural'), ('Forward', 'Neural', 'network'), ('Neural', 'network', 'helps'), ('network', 'helps', 'us'), ('helps', 'us', 'checking'), ('us', 'checking', 'whether'), ('checking', 'whether', 'genuine'), ('whether', 'genuine', 'transaction'), ('genuine', 'transaction', 'fraud'), ('transaction', 'fraud', 'transaction'), ('fraud', 'transaction', '.')]
+
+>> POS Tags are: 
+ [('So', 'RB'), ('detect', 'JJ'), (',', ','), ('Feed', 'NNP'), ('Forward', 'NNP'), ('Neural', 'NNP'), ('network', 'NN'), ('helps', 'VBZ'), ('us', 'PRP'), ('checking', 'VBG'), ('whether', 'IN'), ('genuine', 'JJ'), ('transaction', 'NN'), ('fraud', 'NN'), ('transaction', 'NN'), ('.', '.')]
+
+ (S
+  So/RB
+  detect/JJ
+  ,/,
+  (NP Feed/NNP Forward/NNP Neural/NNP network/NN)
+  helps/VBZ
+  us/PRP
+  checking/VBG
+  whether/IN
+  (NP genuine/JJ transaction/NN fraud/NN transaction/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Feed Forward Neural network', 'genuine transaction fraud transaction']
+
+>> Named Entities are: 
+ [('PERSON', 'Feed Forward Neural')] 
+
+>> Stemming using Porter Stemmer: 
+ [('So', 'so'), ('detect', 'detect'), (',', ','), ('Feed', 'feed'), ('Forward', 'forward'), ('Neural', 'neural'), ('network', 'network'), ('helps', 'help'), ('us', 'us'), ('checking', 'check'), ('whether', 'whether'), ('genuine', 'genuin'), ('transaction', 'transact'), ('fraud', 'fraud'), ('transaction', 'transact'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('So', 'so'), ('detect', 'detect'), (',', ','), ('Feed', 'feed'), ('Forward', 'forward'), ('Neural', 'neural'), ('network', 'network'), ('helps', 'help'), ('us', 'us'), ('checking', 'check'), ('whether', 'whether'), ('genuine', 'genuin'), ('transaction', 'transact'), ('fraud', 'fraud'), ('transaction', 'transact'), ('.', '.')]
+
+>> Lemmatization: 
+ [('So', 'So'), ('detect', 'detect'), (',', ','), ('Feed', 'Feed'), ('Forward', 'Forward'), ('Neural', 'Neural'), ('network', 'network'), ('helps', 'help'), ('us', 'u'), ('checking', 'checking'), ('whether', 'whether'), ('genuine', 'genuine'), ('transaction', 'transaction'), ('fraud', 'fraud'), ('transaction', 'transaction'), ('.', '.')]
+
+
+
+============================ Sentence 43 =============================
+
+For each genuine transaction, the output is converted into some hash values, and these values become the input for the next round. 
+
+
+>> Tokens are: 
+ ['For', 'genuine', 'transaction', ',', 'output', 'converted', 'hash', 'values', ',', 'values', 'become', 'input', 'next', 'round', '.']
+
+>> Bigrams are: 
+ [('For', 'genuine'), ('genuine', 'transaction'), ('transaction', ','), (',', 'output'), ('output', 'converted'), ('converted', 'hash'), ('hash', 'values'), ('values', ','), (',', 'values'), ('values', 'become'), ('become', 'input'), ('input', 'next'), ('next', 'round'), ('round', '.')]
+
+>> Trigrams are: 
+ [('For', 'genuine', 'transaction'), ('genuine', 'transaction', ','), ('transaction', ',', 'output'), (',', 'output', 'converted'), ('output', 'converted', 'hash'), ('converted', 'hash', 'values'), ('hash', 'values', ','), ('values', ',', 'values'), (',', 'values', 'become'), ('values', 'become', 'input'), ('become', 'input', 'next'), ('input', 'next', 'round'), ('next', 'round', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('genuine', 'JJ'), ('transaction', 'NN'), (',', ','), ('output', 'NN'), ('converted', 'VBD'), ('hash', 'NN'), ('values', 'NNS'), (',', ','), ('values', 'NNS'), ('become', 'VBP'), ('input', 'JJ'), ('next', 'JJ'), ('round', 'NN'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP genuine/JJ transaction/NN)
+  ,/,
+  (NP output/NN)
+  converted/VBD
+  (NP hash/NN values/NNS)
+  ,/,
+  (NP values/NNS)
+  become/VBP
+  (NP input/JJ next/JJ round/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['genuine transaction', 'output', 'hash values', 'values', 'input next round']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('genuine', 'genuin'), ('transaction', 'transact'), (',', ','), ('output', 'output'), ('converted', 'convert'), ('hash', 'hash'), ('values', 'valu'), (',', ','), ('values', 'valu'), ('become', 'becom'), ('input', 'input'), ('next', 'next'), ('round', 'round'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('genuine', 'genuin'), ('transaction', 'transact'), (',', ','), ('output', 'output'), ('converted', 'convert'), ('hash', 'hash'), ('values', 'valu'), (',', ','), ('values', 'valu'), ('become', 'becom'), ('input', 'input'), ('next', 'next'), ('round', 'round'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('genuine', 'genuine'), ('transaction', 'transaction'), (',', ','), ('output', 'output'), ('converted', 'converted'), ('hash', 'hash'), ('values', 'value'), (',', ','), ('values', 'value'), ('become', 'become'), ('input', 'input'), ('next', 'next'), ('round', 'round'), ('.', '.')]
+
+
+
+============================ Sentence 44 =============================
+
+For each genuine transaction, there is a specific pattern which gets change for the fraud transaction hence, it detects it and makes our online transactions more secure. 
+
+
+>> Tokens are: 
+ ['For', 'genuine', 'transaction', ',', 'specific', 'pattern', 'gets', 'change', 'fraud', 'transaction', 'hence', ',', 'detects', 'makes', 'online', 'transactions', 'secure', '.']
+
+>> Bigrams are: 
+ [('For', 'genuine'), ('genuine', 'transaction'), ('transaction', ','), (',', 'specific'), ('specific', 'pattern'), ('pattern', 'gets'), ('gets', 'change'), ('change', 'fraud'), ('fraud', 'transaction'), ('transaction', 'hence'), ('hence', ','), (',', 'detects'), ('detects', 'makes'), ('makes', 'online'), ('online', 'transactions'), ('transactions', 'secure'), ('secure', '.')]
+
+>> Trigrams are: 
+ [('For', 'genuine', 'transaction'), ('genuine', 'transaction', ','), ('transaction', ',', 'specific'), (',', 'specific', 'pattern'), ('specific', 'pattern', 'gets'), ('pattern', 'gets', 'change'), ('gets', 'change', 'fraud'), ('change', 'fraud', 'transaction'), ('fraud', 'transaction', 'hence'), ('transaction', 'hence', ','), ('hence', ',', 'detects'), (',', 'detects', 'makes'), ('detects', 'makes', 'online'), ('makes', 'online', 'transactions'), ('online', 'transactions', 'secure'), ('transactions', 'secure', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('genuine', 'JJ'), ('transaction', 'NN'), (',', ','), ('specific', 'JJ'), ('pattern', 'JJ'), ('gets', 'VBZ'), ('change', 'VBP'), ('fraud', 'NN'), ('transaction', 'NN'), ('hence', 'NN'), (',', ','), ('detects', 'VBZ'), ('makes', 'VBZ'), ('online', 'JJ'), ('transactions', 'NNS'), ('secure', 'NN'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP genuine/JJ transaction/NN)
+  ,/,
+  specific/JJ
+  pattern/JJ
+  gets/VBZ
+  change/VBP
+  (NP fraud/NN transaction/NN hence/NN)
+  ,/,
+  detects/VBZ
+  makes/VBZ
+  (NP online/JJ transactions/NNS secure/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['genuine transaction', 'fraud transaction hence', 'online transactions secure']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('genuine', 'genuin'), ('transaction', 'transact'), (',', ','), ('specific', 'specif'), ('pattern', 'pattern'), ('gets', 'get'), ('change', 'chang'), ('fraud', 'fraud'), ('transaction', 'transact'), ('hence', 'henc'), (',', ','), ('detects', 'detect'), ('makes', 'make'), ('online', 'onlin'), ('transactions', 'transact'), ('secure', 'secur'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('genuine', 'genuin'), ('transaction', 'transact'), (',', ','), ('specific', 'specif'), ('pattern', 'pattern'), ('gets', 'get'), ('change', 'chang'), ('fraud', 'fraud'), ('transaction', 'transact'), ('hence', 'henc'), (',', ','), ('detects', 'detect'), ('makes', 'make'), ('online', 'onlin'), ('transactions', 'transact'), ('secure', 'secur'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('genuine', 'genuine'), ('transaction', 'transaction'), (',', ','), ('specific', 'specific'), ('pattern', 'pattern'), ('gets', 'get'), ('change', 'change'), ('fraud', 'fraud'), ('transaction', 'transaction'), ('hence', 'hence'), (',', ','), ('detects', 'detects'), ('makes', 'make'), ('online', 'online'), ('transactions', 'transaction'), ('secure', 'secure'), ('.', '.')]
+
+
+
+============================ Sentence 45 =============================
+
+9. 
+
+
+>> Tokens are: 
+ ['9', '.']
+
+>> Bigrams are: 
+ [('9', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('9', 'CD'), ('.', '.')]
+
+ (S 9/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('9', '9'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('9', '9'), ('.', '.')]
+
+>> Lemmatization: 
+ [('9', '9'), ('.', '.')]
+
+
+
+============================ Sentence 46 =============================
+
+Stock Market trading: Machine learning is widely used in stock market trading. 
+
+
+>> Tokens are: 
+ ['Stock', 'Market', 'trading', ':', 'Machine', 'learning', 'widely', 'used', 'stock', 'market', 'trading', '.']
+
+>> Bigrams are: 
+ [('Stock', 'Market'), ('Market', 'trading'), ('trading', ':'), (':', 'Machine'), ('Machine', 'learning'), ('learning', 'widely'), ('widely', 'used'), ('used', 'stock'), ('stock', 'market'), ('market', 'trading'), ('trading', '.')]
+
+>> Trigrams are: 
+ [('Stock', 'Market', 'trading'), ('Market', 'trading', ':'), ('trading', ':', 'Machine'), (':', 'Machine', 'learning'), ('Machine', 'learning', 'widely'), ('learning', 'widely', 'used'), ('widely', 'used', 'stock'), ('used', 'stock', 'market'), ('stock', 'market', 'trading'), ('market', 'trading', '.')]
+
+>> POS Tags are: 
+ [('Stock', 'NN'), ('Market', 'NN'), ('trading', 'NN'), (':', ':'), ('Machine', 'NNP'), ('learning', 'VBG'), ('widely', 'RB'), ('used', 'VBN'), ('stock', 'NN'), ('market', 'NN'), ('trading', 'NN'), ('.', '.')]
+
+ (S
+  (NP Stock/NN Market/NN trading/NN)
+  :/:
+  (NP Machine/NNP)
+  learning/VBG
+  widely/RB
+  used/VBN
+  (NP stock/NN market/NN trading/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Stock Market trading', 'Machine', 'stock market trading']
+
+>> Named Entities are: 
+ [('GPE', 'Stock'), ('ORGANIZATION', 'Market'), ('PERSON', 'Machine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Stock', 'stock'), ('Market', 'market'), ('trading', 'trade'), (':', ':'), ('Machine', 'machin'), ('learning', 'learn'), ('widely', 'wide'), ('used', 'use'), ('stock', 'stock'), ('market', 'market'), ('trading', 'trade'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Stock', 'stock'), ('Market', 'market'), ('trading', 'trade'), (':', ':'), ('Machine', 'machin'), ('learning', 'learn'), ('widely', 'wide'), ('used', 'use'), ('stock', 'stock'), ('market', 'market'), ('trading', 'trade'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Stock', 'Stock'), ('Market', 'Market'), ('trading', 'trading'), (':', ':'), ('Machine', 'Machine'), ('learning', 'learning'), ('widely', 'widely'), ('used', 'used'), ('stock', 'stock'), ('market', 'market'), ('trading', 'trading'), ('.', '.')]
+
+
+
+============================ Sentence 47 =============================
+
+In the stock market, there is always a risk of up and downs in shares, so for this machine learning's long short term memory neural network is used for the prediction of stock market trends. 
+
+
+>> Tokens are: 
+ ['In', 'stock', 'market', ',', 'always', 'risk', 'downs', 'shares', ',', 'machine', 'learning', "'s", 'long', 'short', 'term', 'memory', 'neural', 'network', 'used', 'prediction', 'stock', 'market', 'trends', '.']
+
+>> Bigrams are: 
+ [('In', 'stock'), ('stock', 'market'), ('market', ','), (',', 'always'), ('always', 'risk'), ('risk', 'downs'), ('downs', 'shares'), ('shares', ','), (',', 'machine'), ('machine', 'learning'), ('learning', "'s"), ("'s", 'long'), ('long', 'short'), ('short', 'term'), ('term', 'memory'), ('memory', 'neural'), ('neural', 'network'), ('network', 'used'), ('used', 'prediction'), ('prediction', 'stock'), ('stock', 'market'), ('market', 'trends'), ('trends', '.')]
+
+>> Trigrams are: 
+ [('In', 'stock', 'market'), ('stock', 'market', ','), ('market', ',', 'always'), (',', 'always', 'risk'), ('always', 'risk', 'downs'), ('risk', 'downs', 'shares'), ('downs', 'shares', ','), ('shares', ',', 'machine'), (',', 'machine', 'learning'), ('machine', 'learning', "'s"), ('learning', "'s", 'long'), ("'s", 'long', 'short'), ('long', 'short', 'term'), ('short', 'term', 'memory'), ('term', 'memory', 'neural'), ('memory', 'neural', 'network'), ('neural', 'network', 'used'), ('network', 'used', 'prediction'), ('used', 'prediction', 'stock'), ('prediction', 'stock', 'market'), ('stock', 'market', 'trends'), ('market', 'trends', '.')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('stock', 'NN'), ('market', 'NN'), (',', ','), ('always', 'RB'), ('risk', 'NN'), ('downs', 'NNS'), ('shares', 'NNS'), (',', ','), ('machine', 'NN'), ('learning', 'NN'), ("'s", 'POS'), ('long', 'JJ'), ('short', 'JJ'), ('term', 'NN'), ('memory', 'NN'), ('neural', 'JJ'), ('network', 'NN'), ('used', 'VBN'), ('prediction', 'NN'), ('stock', 'NN'), ('market', 'NN'), ('trends', 'NNS'), ('.', '.')]
+
+ (S
+  In/IN
+  (NP stock/NN market/NN)
+  ,/,
+  always/RB
+  (NP risk/NN downs/NNS shares/NNS)
+  ,/,
+  (NP machine/NN learning/NN)
+  's/POS
+  (NP long/JJ short/JJ term/NN memory/NN)
+  (NP neural/JJ network/NN)
+  used/VBN
+  (NP prediction/NN stock/NN market/NN trends/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['stock market', 'risk downs shares', 'machine learning', 'long short term memory', 'neural network', 'prediction stock market trends']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('stock', 'stock'), ('market', 'market'), (',', ','), ('always', 'alway'), ('risk', 'risk'), ('downs', 'down'), ('shares', 'share'), (',', ','), ('machine', 'machin'), ('learning', 'learn'), ("'s", "'s"), ('long', 'long'), ('short', 'short'), ('term', 'term'), ('memory', 'memori'), ('neural', 'neural'), ('network', 'network'), ('used', 'use'), ('prediction', 'predict'), ('stock', 'stock'), ('market', 'market'), ('trends', 'trend'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('stock', 'stock'), ('market', 'market'), (',', ','), ('always', 'alway'), ('risk', 'risk'), ('downs', 'down'), ('shares', 'share'), (',', ','), ('machine', 'machin'), ('learning', 'learn'), ("'s", "'s"), ('long', 'long'), ('short', 'short'), ('term', 'term'), ('memory', 'memori'), ('neural', 'neural'), ('network', 'network'), ('used', 'use'), ('prediction', 'predict'), ('stock', 'stock'), ('market', 'market'), ('trends', 'trend'), ('.', '.')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('stock', 'stock'), ('market', 'market'), (',', ','), ('always', 'always'), ('risk', 'risk'), ('downs', 'down'), ('shares', 'share'), (',', ','), ('machine', 'machine'), ('learning', 'learning'), ("'s", "'s"), ('long', 'long'), ('short', 'short'), ('term', 'term'), ('memory', 'memory'), ('neural', 'neural'), ('network', 'network'), ('used', 'used'), ('prediction', 'prediction'), ('stock', 'stock'), ('market', 'market'), ('trends', 'trend'), ('.', '.')]
+
+
+
+============================ Sentence 48 =============================
+
+10. 
+
+
+>> Tokens are: 
+ ['10', '.']
+
+>> Bigrams are: 
+ [('10', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('10', 'CD'), ('.', '.')]
+
+ (S 10/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('10', '10'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('10', '10'), ('.', '.')]
+
+>> Lemmatization: 
+ [('10', '10'), ('.', '.')]
+
+
+
+============================ Sentence 49 =============================
+
+Medical Diagnosis: In medical science, machine learning is used for diseases diagnoses. 
+
+
+>> Tokens are: 
+ ['Medical', 'Diagnosis', ':', 'In', 'medical', 'science', ',', 'machine', 'learning', 'used', 'diseases', 'diagnoses', '.']
+
+>> Bigrams are: 
+ [('Medical', 'Diagnosis'), ('Diagnosis', ':'), (':', 'In'), ('In', 'medical'), ('medical', 'science'), ('science', ','), (',', 'machine'), ('machine', 'learning'), ('learning', 'used'), ('used', 'diseases'), ('diseases', 'diagnoses'), ('diagnoses', '.')]
+
+>> Trigrams are: 
+ [('Medical', 'Diagnosis', ':'), ('Diagnosis', ':', 'In'), (':', 'In', 'medical'), ('In', 'medical', 'science'), ('medical', 'science', ','), ('science', ',', 'machine'), (',', 'machine', 'learning'), ('machine', 'learning', 'used'), ('learning', 'used', 'diseases'), ('used', 'diseases', 'diagnoses'), ('diseases', 'diagnoses', '.')]
+
+>> POS Tags are: 
+ [('Medical', 'JJ'), ('Diagnosis', 'NN'), (':', ':'), ('In', 'IN'), ('medical', 'JJ'), ('science', 'NN'), (',', ','), ('machine', 'NN'), ('learning', 'NN'), ('used', 'VBN'), ('diseases', 'VBZ'), ('diagnoses', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Medical/JJ Diagnosis/NN)
+  :/:
+  In/IN
+  (NP medical/JJ science/NN)
+  ,/,
+  (NP machine/NN learning/NN)
+  used/VBN
+  diseases/VBZ
+  (NP diagnoses/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Medical Diagnosis', 'medical science', 'machine learning', 'diagnoses']
+
+>> Named Entities are: 
+ [('GPE', 'Medical'), ('PERSON', 'Diagnosis')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Medical', 'medic'), ('Diagnosis', 'diagnosi'), (':', ':'), ('In', 'in'), ('medical', 'medic'), ('science', 'scienc'), (',', ','), ('machine', 'machin'), ('learning', 'learn'), ('used', 'use'), ('diseases', 'diseas'), ('diagnoses', 'diagnos'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Medical', 'medic'), ('Diagnosis', 'diagnosi'), (':', ':'), ('In', 'in'), ('medical', 'medic'), ('science', 'scienc'), (',', ','), ('machine', 'machin'), ('learning', 'learn'), ('used', 'use'), ('diseases', 'diseas'), ('diagnoses', 'diagnos'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Medical', 'Medical'), ('Diagnosis', 'Diagnosis'), (':', ':'), ('In', 'In'), ('medical', 'medical'), ('science', 'science'), (',', ','), ('machine', 'machine'), ('learning', 'learning'), ('used', 'used'), ('diseases', 'disease'), ('diagnoses', 'diagnosis'), ('.', '.')]
+
+
+
+============================ Sentence 50 =============================
+
+With this, medical technology is growing very fast and able to build 3D models that can predict the exact position of lesions in the brain. 
+
+
+>> Tokens are: 
+ ['With', ',', 'medical', 'technology', 'growing', 'fast', 'able', 'build', '3D', 'models', 'predict', 'exact', 'position', 'lesions', 'brain', '.']
+
+>> Bigrams are: 
+ [('With', ','), (',', 'medical'), ('medical', 'technology'), ('technology', 'growing'), ('growing', 'fast'), ('fast', 'able'), ('able', 'build'), ('build', '3D'), ('3D', 'models'), ('models', 'predict'), ('predict', 'exact'), ('exact', 'position'), ('position', 'lesions'), ('lesions', 'brain'), ('brain', '.')]
+
+>> Trigrams are: 
+ [('With', ',', 'medical'), (',', 'medical', 'technology'), ('medical', 'technology', 'growing'), ('technology', 'growing', 'fast'), ('growing', 'fast', 'able'), ('fast', 'able', 'build'), ('able', 'build', '3D'), ('build', '3D', 'models'), ('3D', 'models', 'predict'), ('models', 'predict', 'exact'), ('predict', 'exact', 'position'), ('exact', 'position', 'lesions'), ('position', 'lesions', 'brain'), ('lesions', 'brain', '.')]
+
+>> POS Tags are: 
+ [('With', 'IN'), (',', ','), ('medical', 'JJ'), ('technology', 'NN'), ('growing', 'VBG'), ('fast', 'RB'), ('able', 'JJ'), ('build', 'NN'), ('3D', 'CD'), ('models', 'NNS'), ('predict', 'VBP'), ('exact', 'JJ'), ('position', 'NN'), ('lesions', 'NNS'), ('brain', 'NN'), ('.', '.')]
+
+ (S
+  With/IN
+  ,/,
+  (NP medical/JJ technology/NN)
+  growing/VBG
+  fast/RB
+  (NP able/JJ build/NN)
+  3D/CD
+  (NP models/NNS)
+  predict/VBP
+  (NP exact/JJ position/NN lesions/NNS brain/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['medical technology', 'able build', 'models', 'exact position lesions brain']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('With', 'with'), (',', ','), ('medical', 'medic'), ('technology', 'technolog'), ('growing', 'grow'), ('fast', 'fast'), ('able', 'abl'), ('build', 'build'), ('3D', '3d'), ('models', 'model'), ('predict', 'predict'), ('exact', 'exact'), ('position', 'posit'), ('lesions', 'lesion'), ('brain', 'brain'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('With', 'with'), (',', ','), ('medical', 'medic'), ('technology', 'technolog'), ('growing', 'grow'), ('fast', 'fast'), ('able', 'abl'), ('build', 'build'), ('3D', '3d'), ('models', 'model'), ('predict', 'predict'), ('exact', 'exact'), ('position', 'posit'), ('lesions', 'lesion'), ('brain', 'brain'), ('.', '.')]
+
+>> Lemmatization: 
+ [('With', 'With'), (',', ','), ('medical', 'medical'), ('technology', 'technology'), ('growing', 'growing'), ('fast', 'fast'), ('able', 'able'), ('build', 'build'), ('3D', '3D'), ('models', 'model'), ('predict', 'predict'), ('exact', 'exact'), ('position', 'position'), ('lesions', 'lesion'), ('brain', 'brain'), ('.', '.')]
+
+
+
+============================ Sentence 51 =============================
+
+It helps in finding brain tumors and other brain-related diseases easily. 
+
+
+>> Tokens are: 
+ ['It', 'helps', 'finding', 'brain', 'tumors', 'brain-related', 'diseases', 'easily', '.']
+
+>> Bigrams are: 
+ [('It', 'helps'), ('helps', 'finding'), ('finding', 'brain'), ('brain', 'tumors'), ('tumors', 'brain-related'), ('brain-related', 'diseases'), ('diseases', 'easily'), ('easily', '.')]
+
+>> Trigrams are: 
+ [('It', 'helps', 'finding'), ('helps', 'finding', 'brain'), ('finding', 'brain', 'tumors'), ('brain', 'tumors', 'brain-related'), ('tumors', 'brain-related', 'diseases'), ('brain-related', 'diseases', 'easily'), ('diseases', 'easily', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('helps', 'VBZ'), ('finding', 'VBG'), ('brain', 'NN'), ('tumors', 'NNS'), ('brain-related', 'JJ'), ('diseases', 'NNS'), ('easily', 'RB'), ('.', '.')]
+
+ (S
+  It/PRP
+  helps/VBZ
+  finding/VBG
+  (NP brain/NN tumors/NNS)
+  (NP brain-related/JJ diseases/NNS)
+  easily/RB
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['brain tumors', 'brain-related diseases']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('helps', 'help'), ('finding', 'find'), ('brain', 'brain'), ('tumors', 'tumor'), ('brain-related', 'brain-rel'), ('diseases', 'diseas'), ('easily', 'easili'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('helps', 'help'), ('finding', 'find'), ('brain', 'brain'), ('tumors', 'tumor'), ('brain-related', 'brain-rel'), ('diseases', 'diseas'), ('easily', 'easili'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('helps', 'help'), ('finding', 'finding'), ('brain', 'brain'), ('tumors', 'tumor'), ('brain-related', 'brain-related'), ('diseases', 'disease'), ('easily', 'easily'), ('.', '.')]
+
+
+
+============================ Sentence 52 =============================
+
+11. 
+
+
+>> Tokens are: 
+ ['11', '.']
+
+>> Bigrams are: 
+ [('11', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('11', 'CD'), ('.', '.')]
+
+ (S 11/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('11', '11'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('11', '11'), ('.', '.')]
+
+>> Lemmatization: 
+ [('11', '11'), ('.', '.')]
+
+
+
+============================ Sentence 53 =============================
+
+Automatic Language Translation: Nowadays, if we visit a new place and we are not aware of the language then it is not a problem at all, as for this also machine learning helps us by converting the text into our known languages. 
+
+
+>> Tokens are: 
+ ['Automatic', 'Language', 'Translation', ':', 'Nowadays', ',', 'visit', 'new', 'place', 'aware', 'language', 'problem', ',', 'also', 'machine', 'learning', 'helps', 'us', 'converting', 'text', 'known', 'languages', '.']
+
+>> Bigrams are: 
+ [('Automatic', 'Language'), ('Language', 'Translation'), ('Translation', ':'), (':', 'Nowadays'), ('Nowadays', ','), (',', 'visit'), ('visit', 'new'), ('new', 'place'), ('place', 'aware'), ('aware', 'language'), ('language', 'problem'), ('problem', ','), (',', 'also'), ('also', 'machine'), ('machine', 'learning'), ('learning', 'helps'), ('helps', 'us'), ('us', 'converting'), ('converting', 'text'), ('text', 'known'), ('known', 'languages'), ('languages', '.')]
+
+>> Trigrams are: 
+ [('Automatic', 'Language', 'Translation'), ('Language', 'Translation', ':'), ('Translation', ':', 'Nowadays'), (':', 'Nowadays', ','), ('Nowadays', ',', 'visit'), (',', 'visit', 'new'), ('visit', 'new', 'place'), ('new', 'place', 'aware'), ('place', 'aware', 'language'), ('aware', 'language', 'problem'), ('language', 'problem', ','), ('problem', ',', 'also'), (',', 'also', 'machine'), ('also', 'machine', 'learning'), ('machine', 'learning', 'helps'), ('learning', 'helps', 'us'), ('helps', 'us', 'converting'), ('us', 'converting', 'text'), ('converting', 'text', 'known'), ('text', 'known', 'languages'), ('known', 'languages', '.')]
+
+>> POS Tags are: 
+ [('Automatic', 'JJ'), ('Language', 'NNP'), ('Translation', 'NN'), (':', ':'), ('Nowadays', 'NNS'), (',', ','), ('visit', 'VBP'), ('new', 'JJ'), ('place', 'NN'), ('aware', 'JJ'), ('language', 'NN'), ('problem', 'NN'), (',', ','), ('also', 'RB'), ('machine', 'NN'), ('learning', 'NN'), ('helps', 'VBZ'), ('us', 'PRP'), ('converting', 'VBG'), ('text', 'JJ'), ('known', 'VBN'), ('languages', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Automatic/JJ Language/NNP Translation/NN)
+  :/:
+  (NP Nowadays/NNS)
+  ,/,
+  visit/VBP
+  (NP new/JJ place/NN)
+  (NP aware/JJ language/NN problem/NN)
+  ,/,
+  also/RB
+  (NP machine/NN learning/NN)
+  helps/VBZ
+  us/PRP
+  converting/VBG
+  text/JJ
+  known/VBN
+  (NP languages/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Automatic Language Translation', 'Nowadays', 'new place', 'aware language problem', 'machine learning', 'languages']
+
+>> Named Entities are: 
+ [('PERSON', 'Automatic'), ('ORGANIZATION', 'Language')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Automatic', 'automat'), ('Language', 'languag'), ('Translation', 'translat'), (':', ':'), ('Nowadays', 'nowaday'), (',', ','), ('visit', 'visit'), ('new', 'new'), ('place', 'place'), ('aware', 'awar'), ('language', 'languag'), ('problem', 'problem'), (',', ','), ('also', 'also'), ('machine', 'machin'), ('learning', 'learn'), ('helps', 'help'), ('us', 'us'), ('converting', 'convert'), ('text', 'text'), ('known', 'known'), ('languages', 'languag'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Automatic', 'automat'), ('Language', 'languag'), ('Translation', 'translat'), (':', ':'), ('Nowadays', 'nowaday'), (',', ','), ('visit', 'visit'), ('new', 'new'), ('place', 'place'), ('aware', 'awar'), ('language', 'languag'), ('problem', 'problem'), (',', ','), ('also', 'also'), ('machine', 'machin'), ('learning', 'learn'), ('helps', 'help'), ('us', 'us'), ('converting', 'convert'), ('text', 'text'), ('known', 'known'), ('languages', 'languag'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Automatic', 'Automatic'), ('Language', 'Language'), ('Translation', 'Translation'), (':', ':'), ('Nowadays', 'Nowadays'), (',', ','), ('visit', 'visit'), ('new', 'new'), ('place', 'place'), ('aware', 'aware'), ('language', 'language'), ('problem', 'problem'), (',', ','), ('also', 'also'), ('machine', 'machine'), ('learning', 'learning'), ('helps', 'help'), ('us', 'u'), ('converting', 'converting'), ('text', 'text'), ('known', 'known'), ('languages', 'language'), ('.', '.')]
+
+
+
+============================ Sentence 54 =============================
+
+Google's GNMT (Google Neural Machine Translation) provide this feature, which is a Neural Machine Learning that translates the text into our familiar language, and it called as automatic translation. 
+
+
+>> Tokens are: 
+ ['Google', "'s", 'GNMT', '(', 'Google', 'Neural', 'Machine', 'Translation', ')', 'provide', 'feature', ',', 'Neural', 'Machine', 'Learning', 'translates', 'text', 'familiar', 'language', ',', 'called', 'automatic', 'translation', '.']
+
+>> Bigrams are: 
+ [('Google', "'s"), ("'s", 'GNMT'), ('GNMT', '('), ('(', 'Google'), ('Google', 'Neural'), ('Neural', 'Machine'), ('Machine', 'Translation'), ('Translation', ')'), (')', 'provide'), ('provide', 'feature'), ('feature', ','), (',', 'Neural'), ('Neural', 'Machine'), ('Machine', 'Learning'), ('Learning', 'translates'), ('translates', 'text'), ('text', 'familiar'), ('familiar', 'language'), ('language', ','), (',', 'called'), ('called', 'automatic'), ('automatic', 'translation'), ('translation', '.')]
+
+>> Trigrams are: 
+ [('Google', "'s", 'GNMT'), ("'s", 'GNMT', '('), ('GNMT', '(', 'Google'), ('(', 'Google', 'Neural'), ('Google', 'Neural', 'Machine'), ('Neural', 'Machine', 'Translation'), ('Machine', 'Translation', ')'), ('Translation', ')', 'provide'), (')', 'provide', 'feature'), ('provide', 'feature', ','), ('feature', ',', 'Neural'), (',', 'Neural', 'Machine'), ('Neural', 'Machine', 'Learning'), ('Machine', 'Learning', 'translates'), ('Learning', 'translates', 'text'), ('translates', 'text', 'familiar'), ('text', 'familiar', 'language'), ('familiar', 'language', ','), ('language', ',', 'called'), (',', 'called', 'automatic'), ('called', 'automatic', 'translation'), ('automatic', 'translation', '.')]
+
+>> POS Tags are: 
+ [('Google', 'NNP'), ("'s", 'POS'), ('GNMT', 'NNP'), ('(', '('), ('Google', 'NNP'), ('Neural', 'NNP'), ('Machine', 'NNP'), ('Translation', 'NNP'), (')', ')'), ('provide', 'VBP'), ('feature', 'NN'), (',', ','), ('Neural', 'NNP'), ('Machine', 'NNP'), ('Learning', 'NNP'), ('translates', 'VBZ'), ('text', 'IN'), ('familiar', 'JJ'), ('language', 'NN'), (',', ','), ('called', 'VBN'), ('automatic', 'JJ'), ('translation', 'NN'), ('.', '.')]
+
+ (S
+  (NP Google/NNP)
+  's/POS
+  (NP GNMT/NNP)
+  (/(
+  (NP Google/NNP Neural/NNP Machine/NNP Translation/NNP)
+  )/)
+  provide/VBP
+  (NP feature/NN)
+  ,/,
+  (NP Neural/NNP Machine/NNP Learning/NNP)
+  translates/VBZ
+  text/IN
+  (NP familiar/JJ language/NN)
+  ,/,
+  called/VBN
+  (NP automatic/JJ translation/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Google', 'GNMT', 'Google Neural Machine Translation', 'feature', 'Neural Machine Learning', 'familiar language', 'automatic translation']
+
+>> Named Entities are: 
+ [('GPE', 'Google'), ('ORGANIZATION', 'GNMT'), ('ORGANIZATION', 'Google'), ('PERSON', 'Machine Translation'), ('ORGANIZATION', 'Neural Machine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Google', 'googl'), ("'s", "'s"), ('GNMT', 'gnmt'), ('(', '('), ('Google', 'googl'), ('Neural', 'neural'), ('Machine', 'machin'), ('Translation', 'translat'), (')', ')'), ('provide', 'provid'), ('feature', 'featur'), (',', ','), ('Neural', 'neural'), ('Machine', 'machin'), ('Learning', 'learn'), ('translates', 'translat'), ('text', 'text'), ('familiar', 'familiar'), ('language', 'languag'), (',', ','), ('called', 'call'), ('automatic', 'automat'), ('translation', 'translat'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Google', 'googl'), ("'s", "'s"), ('GNMT', 'gnmt'), ('(', '('), ('Google', 'googl'), ('Neural', 'neural'), ('Machine', 'machin'), ('Translation', 'translat'), (')', ')'), ('provide', 'provid'), ('feature', 'featur'), (',', ','), ('Neural', 'neural'), ('Machine', 'machin'), ('Learning', 'learn'), ('translates', 'translat'), ('text', 'text'), ('familiar', 'familiar'), ('language', 'languag'), (',', ','), ('called', 'call'), ('automatic', 'automat'), ('translation', 'translat'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Google', 'Google'), ("'s", "'s"), ('GNMT', 'GNMT'), ('(', '('), ('Google', 'Google'), ('Neural', 'Neural'), ('Machine', 'Machine'), ('Translation', 'Translation'), (')', ')'), ('provide', 'provide'), ('feature', 'feature'), (',', ','), ('Neural', 'Neural'), ('Machine', 'Machine'), ('Learning', 'Learning'), ('translates', 'translates'), ('text', 'text'), ('familiar', 'familiar'), ('language', 'language'), (',', ','), ('called', 'called'), ('automatic', 'automatic'), ('translation', 'translation'), ('.', '.')]
+
+
+
+============================ Sentence 55 =============================
+
+The technology behind the automatic translation is a sequence to sequence learning algorithm, which is used with image recognition and translates the text from one language to another language. 
+
+
+>> Tokens are: 
+ ['The', 'technology', 'behind', 'automatic', 'translation', 'sequence', 'sequence', 'learning', 'algorithm', ',', 'used', 'image', 'recognition', 'translates', 'text', 'one', 'language', 'another', 'language', '.']
+
+>> Bigrams are: 
+ [('The', 'technology'), ('technology', 'behind'), ('behind', 'automatic'), ('automatic', 'translation'), ('translation', 'sequence'), ('sequence', 'sequence'), ('sequence', 'learning'), ('learning', 'algorithm'), ('algorithm', ','), (',', 'used'), ('used', 'image'), ('image', 'recognition'), ('recognition', 'translates'), ('translates', 'text'), ('text', 'one'), ('one', 'language'), ('language', 'another'), ('another', 'language'), ('language', '.')]
+
+>> Trigrams are: 
+ [('The', 'technology', 'behind'), ('technology', 'behind', 'automatic'), ('behind', 'automatic', 'translation'), ('automatic', 'translation', 'sequence'), ('translation', 'sequence', 'sequence'), ('sequence', 'sequence', 'learning'), ('sequence', 'learning', 'algorithm'), ('learning', 'algorithm', ','), ('algorithm', ',', 'used'), (',', 'used', 'image'), ('used', 'image', 'recognition'), ('image', 'recognition', 'translates'), ('recognition', 'translates', 'text'), ('translates', 'text', 'one'), ('text', 'one', 'language'), ('one', 'language', 'another'), ('language', 'another', 'language'), ('another', 'language', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('technology', 'NN'), ('behind', 'IN'), ('automatic', 'JJ'), ('translation', 'NN'), ('sequence', 'NN'), ('sequence', 'NN'), ('learning', 'VBG'), ('algorithm', 'NN'), (',', ','), ('used', 'VBN'), ('image', 'NN'), ('recognition', 'NN'), ('translates', 'VBZ'), ('text', 'IN'), ('one', 'CD'), ('language', 'NN'), ('another', 'DT'), ('language', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT technology/NN)
+  behind/IN
+  (NP automatic/JJ translation/NN sequence/NN sequence/NN)
+  learning/VBG
+  (NP algorithm/NN)
+  ,/,
+  used/VBN
+  (NP image/NN recognition/NN)
+  translates/VBZ
+  text/IN
+  one/CD
+  (NP language/NN)
+  (NP another/DT language/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The technology', 'automatic translation sequence sequence', 'algorithm', 'image recognition', 'language', 'another language']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('technology', 'technolog'), ('behind', 'behind'), ('automatic', 'automat'), ('translation', 'translat'), ('sequence', 'sequenc'), ('sequence', 'sequenc'), ('learning', 'learn'), ('algorithm', 'algorithm'), (',', ','), ('used', 'use'), ('image', 'imag'), ('recognition', 'recognit'), ('translates', 'translat'), ('text', 'text'), ('one', 'one'), ('language', 'languag'), ('another', 'anoth'), ('language', 'languag'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('technology', 'technolog'), ('behind', 'behind'), ('automatic', 'automat'), ('translation', 'translat'), ('sequence', 'sequenc'), ('sequence', 'sequenc'), ('learning', 'learn'), ('algorithm', 'algorithm'), (',', ','), ('used', 'use'), ('image', 'imag'), ('recognition', 'recognit'), ('translates', 'translat'), ('text', 'text'), ('one', 'one'), ('language', 'languag'), ('another', 'anoth'), ('language', 'languag'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('technology', 'technology'), ('behind', 'behind'), ('automatic', 'automatic'), ('translation', 'translation'), ('sequence', 'sequence'), ('sequence', 'sequence'), ('learning', 'learning'), ('algorithm', 'algorithm'), (',', ','), ('used', 'used'), ('image', 'image'), ('recognition', 'recognition'), ('translates', 'translates'), ('text', 'text'), ('one', 'one'), ('language', 'language'), ('another', 'another'), ('language', 'language'), ('.', '.')]
+

@@ -1,0 +1,924 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-17 Yet another research area in AI, neural networks, is inspired from the natural neural network of human nervous system. 
+
+
+>> Tokens are: 
+ ['AI-17', 'Yet', 'another', 'research', 'area', 'AI', ',', 'neural', 'networks', ',', 'inspired', 'natural', 'neural', 'network', 'human', 'nervous', 'system', '.']
+
+>> Bigrams are: 
+ [('AI-17', 'Yet'), ('Yet', 'another'), ('another', 'research'), ('research', 'area'), ('area', 'AI'), ('AI', ','), (',', 'neural'), ('neural', 'networks'), ('networks', ','), (',', 'inspired'), ('inspired', 'natural'), ('natural', 'neural'), ('neural', 'network'), ('network', 'human'), ('human', 'nervous'), ('nervous', 'system'), ('system', '.')]
+
+>> Trigrams are: 
+ [('AI-17', 'Yet', 'another'), ('Yet', 'another', 'research'), ('another', 'research', 'area'), ('research', 'area', 'AI'), ('area', 'AI', ','), ('AI', ',', 'neural'), (',', 'neural', 'networks'), ('neural', 'networks', ','), ('networks', ',', 'inspired'), (',', 'inspired', 'natural'), ('inspired', 'natural', 'neural'), ('natural', 'neural', 'network'), ('neural', 'network', 'human'), ('network', 'human', 'nervous'), ('human', 'nervous', 'system'), ('nervous', 'system', '.')]
+
+>> POS Tags are: 
+ [('AI-17', 'NNP'), ('Yet', 'NNP'), ('another', 'DT'), ('research', 'NN'), ('area', 'NN'), ('AI', 'NNP'), (',', ','), ('neural', 'JJ'), ('networks', 'NNS'), (',', ','), ('inspired', 'JJ'), ('natural', 'JJ'), ('neural', 'JJ'), ('network', 'NN'), ('human', 'JJ'), ('nervous', 'JJ'), ('system', 'NN'), ('.', '.')]
+
+ (S
+  (NP AI-17/NNP Yet/NNP)
+  (NP another/DT research/NN area/NN AI/NNP)
+  ,/,
+  (NP neural/JJ networks/NNS)
+  ,/,
+  (NP inspired/JJ natural/JJ neural/JJ network/NN)
+  (NP human/JJ nervous/JJ system/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-17 Yet', 'another research area AI', 'neural networks', 'inspired natural neural network', 'human nervous system']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-17', 'ai-17'), ('Yet', 'yet'), ('another', 'anoth'), ('research', 'research'), ('area', 'area'), ('AI', 'ai'), (',', ','), ('neural', 'neural'), ('networks', 'network'), (',', ','), ('inspired', 'inspir'), ('natural', 'natur'), ('neural', 'neural'), ('network', 'network'), ('human', 'human'), ('nervous', 'nervou'), ('system', 'system'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-17', 'ai-17'), ('Yet', 'yet'), ('another', 'anoth'), ('research', 'research'), ('area', 'area'), ('AI', 'ai'), (',', ','), ('neural', 'neural'), ('networks', 'network'), (',', ','), ('inspired', 'inspir'), ('natural', 'natur'), ('neural', 'neural'), ('network', 'network'), ('human', 'human'), ('nervous', 'nervous'), ('system', 'system'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-17', 'AI-17'), ('Yet', 'Yet'), ('another', 'another'), ('research', 'research'), ('area', 'area'), ('AI', 'AI'), (',', ','), ('neural', 'neural'), ('networks', 'network'), (',', ','), ('inspired', 'inspired'), ('natural', 'natural'), ('neural', 'neural'), ('network', 'network'), ('human', 'human'), ('nervous', 'nervous'), ('system', 'system'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+What are Artificial Neural Networks (ANNs)? 
+
+
+>> Tokens are: 
+ ['What', 'Artificial', 'Neural', 'Networks', '(', 'ANNs', ')', '?']
+
+>> Bigrams are: 
+ [('What', 'Artificial'), ('Artificial', 'Neural'), ('Neural', 'Networks'), ('Networks', '('), ('(', 'ANNs'), ('ANNs', ')'), (')', '?')]
+
+>> Trigrams are: 
+ [('What', 'Artificial', 'Neural'), ('Artificial', 'Neural', 'Networks'), ('Neural', 'Networks', '('), ('Networks', '(', 'ANNs'), ('(', 'ANNs', ')'), ('ANNs', ')', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Artificial', 'NNP'), ('Neural', 'NNP'), ('Networks', 'NNP'), ('(', '('), ('ANNs', 'NNP'), (')', ')'), ('?', '.')]
+
+ (S
+  What/WP
+  (NP Artificial/NNP Neural/NNP Networks/NNP)
+  (/(
+  (NP ANNs/NNP)
+  )/)
+  ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Artificial Neural Networks', 'ANNs']
+
+>> Named Entities are: 
+ [('PERSON', 'Artificial Neural Networks'), ('ORGANIZATION', 'ANNs')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Artificial', 'artifici'), ('Neural', 'neural'), ('Networks', 'network'), ('(', '('), ('ANNs', 'ann'), (')', ')'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Artificial', 'artifici'), ('Neural', 'neural'), ('Networks', 'network'), ('(', '('), ('ANNs', 'ann'), (')', ')'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Artificial', 'Artificial'), ('Neural', 'Neural'), ('Networks', 'Networks'), ('(', '('), ('ANNs', 'ANNs'), (')', ')'), ('?', '?')]
+
+
+
+============================ Sentence 3 =============================
+
+The inventor of the first neurocomputer, Dr. Robert Hecht-Nielsen, defines a neural network as − "...a computing system made up of a number of simple, highly interconnected processing elements, which process information by their dynamic state response to external inputs.” Basic Structure of ANNs The idea of ANNs is based on the belief that working of human brain by making the right connections, can be imitated using silicon and wires as living neurons and dendrites. 
+
+
+>> Tokens are: 
+ ['The', 'inventor', 'first', 'neurocomputer', ',', 'Dr.', 'Robert', 'Hecht-Nielsen', ',', 'defines', 'neural', 'network', '−', '``', '...', 'computing', 'system', 'made', 'number', 'simple', ',', 'highly', 'interconnected', 'processing', 'elements', ',', 'process', 'information', 'dynamic', 'state', 'response', 'external', 'inputs.', '”', 'Basic', 'Structure', 'ANNs', 'The', 'idea', 'ANNs', 'based', 'belief', 'working', 'human', 'brain', 'making', 'right', 'connections', ',', 'imitated', 'using', 'silicon', 'wires', 'living', 'neurons', 'dendrites', '.']
+
+>> Bigrams are: 
+ [('The', 'inventor'), ('inventor', 'first'), ('first', 'neurocomputer'), ('neurocomputer', ','), (',', 'Dr.'), ('Dr.', 'Robert'), ('Robert', 'Hecht-Nielsen'), ('Hecht-Nielsen', ','), (',', 'defines'), ('defines', 'neural'), ('neural', 'network'), ('network', '−'), ('−', '``'), ('``', '...'), ('...', 'computing'), ('computing', 'system'), ('system', 'made'), ('made', 'number'), ('number', 'simple'), ('simple', ','), (',', 'highly'), ('highly', 'interconnected'), ('interconnected', 'processing'), ('processing', 'elements'), ('elements', ','), (',', 'process'), ('process', 'information'), ('information', 'dynamic'), ('dynamic', 'state'), ('state', 'response'), ('response', 'external'), ('external', 'inputs.'), ('inputs.', '”'), ('”', 'Basic'), ('Basic', 'Structure'), ('Structure', 'ANNs'), ('ANNs', 'The'), ('The', 'idea'), ('idea', 'ANNs'), ('ANNs', 'based'), ('based', 'belief'), ('belief', 'working'), ('working', 'human'), ('human', 'brain'), ('brain', 'making'), ('making', 'right'), ('right', 'connections'), ('connections', ','), (',', 'imitated'), ('imitated', 'using'), ('using', 'silicon'), ('silicon', 'wires'), ('wires', 'living'), ('living', 'neurons'), ('neurons', 'dendrites'), ('dendrites', '.')]
+
+>> Trigrams are: 
+ [('The', 'inventor', 'first'), ('inventor', 'first', 'neurocomputer'), ('first', 'neurocomputer', ','), ('neurocomputer', ',', 'Dr.'), (',', 'Dr.', 'Robert'), ('Dr.', 'Robert', 'Hecht-Nielsen'), ('Robert', 'Hecht-Nielsen', ','), ('Hecht-Nielsen', ',', 'defines'), (',', 'defines', 'neural'), ('defines', 'neural', 'network'), ('neural', 'network', '−'), ('network', '−', '``'), ('−', '``', '...'), ('``', '...', 'computing'), ('...', 'computing', 'system'), ('computing', 'system', 'made'), ('system', 'made', 'number'), ('made', 'number', 'simple'), ('number', 'simple', ','), ('simple', ',', 'highly'), (',', 'highly', 'interconnected'), ('highly', 'interconnected', 'processing'), ('interconnected', 'processing', 'elements'), ('processing', 'elements', ','), ('elements', ',', 'process'), (',', 'process', 'information'), ('process', 'information', 'dynamic'), ('information', 'dynamic', 'state'), ('dynamic', 'state', 'response'), ('state', 'response', 'external'), ('response', 'external', 'inputs.'), ('external', 'inputs.', '”'), ('inputs.', '”', 'Basic'), ('”', 'Basic', 'Structure'), ('Basic', 'Structure', 'ANNs'), ('Structure', 'ANNs', 'The'), ('ANNs', 'The', 'idea'), ('The', 'idea', 'ANNs'), ('idea', 'ANNs', 'based'), ('ANNs', 'based', 'belief'), ('based', 'belief', 'working'), ('belief', 'working', 'human'), ('working', 'human', 'brain'), ('human', 'brain', 'making'), ('brain', 'making', 'right'), ('making', 'right', 'connections'), ('right', 'connections', ','), ('connections', ',', 'imitated'), (',', 'imitated', 'using'), ('imitated', 'using', 'silicon'), ('using', 'silicon', 'wires'), ('silicon', 'wires', 'living'), ('wires', 'living', 'neurons'), ('living', 'neurons', 'dendrites'), ('neurons', 'dendrites', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('inventor', 'NN'), ('first', 'RB'), ('neurocomputer', 'RB'), (',', ','), ('Dr.', 'NNP'), ('Robert', 'NNP'), ('Hecht-Nielsen', 'NNP'), (',', ','), ('defines', 'VBZ'), ('neural', 'JJ'), ('network', 'NN'), ('−', 'NN'), ('``', '``'), ('...', ':'), ('computing', 'VBG'), ('system', 'NN'), ('made', 'VBD'), ('number', 'NN'), ('simple', 'JJ'), (',', ','), ('highly', 'RB'), ('interconnected', 'JJ'), ('processing', 'NN'), ('elements', 'NNS'), (',', ','), ('process', 'NN'), ('information', 'NN'), ('dynamic', 'JJ'), ('state', 'NN'), ('response', 'NN'), ('external', 'JJ'), ('inputs.', 'NN'), ('”', 'NNP'), ('Basic', 'NNP'), ('Structure', 'NNP'), ('ANNs', 'NNP'), ('The', 'DT'), ('idea', 'NN'), ('ANNs', 'NNP'), ('based', 'VBN'), ('belief', 'NN'), ('working', 'VBG'), ('human', 'JJ'), ('brain', 'NN'), ('making', 'NN'), ('right', 'JJ'), ('connections', 'NNS'), (',', ','), ('imitated', 'VBD'), ('using', 'VBG'), ('silicon', 'NN'), ('wires', 'NNS'), ('living', 'VBG'), ('neurons', 'NNS'), ('dendrites', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT inventor/NN)
+  first/RB
+  neurocomputer/RB
+  ,/,
+  (NP Dr./NNP Robert/NNP Hecht-Nielsen/NNP)
+  ,/,
+  defines/VBZ
+  (NP neural/JJ network/NN −/NN)
+  ``/``
+  .../:
+  computing/VBG
+  (NP system/NN)
+  made/VBD
+  (NP number/NN)
+  simple/JJ
+  ,/,
+  highly/RB
+  (NP interconnected/JJ processing/NN elements/NNS)
+  ,/,
+  (NP process/NN information/NN)
+  (NP dynamic/JJ state/NN response/NN)
+  (NP external/JJ inputs./NN ”/NNP Basic/NNP Structure/NNP ANNs/NNP)
+  (NP The/DT idea/NN ANNs/NNP)
+  based/VBN
+  (NP belief/NN)
+  working/VBG
+  (NP human/JJ brain/NN making/NN)
+  (NP right/JJ connections/NNS)
+  ,/,
+  imitated/VBD
+  using/VBG
+  (NP silicon/NN wires/NNS)
+  living/VBG
+  (NP neurons/NNS dendrites/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The inventor', 'Dr. Robert Hecht-Nielsen', 'neural network −', 'system', 'number', 'interconnected processing elements', 'process information', 'dynamic state response', 'external inputs. ” Basic Structure ANNs', 'The idea ANNs', 'belief', 'human brain making', 'right connections', 'silicon wires', 'neurons dendrites']
+
+>> Named Entities are: 
+ [('PERSON', 'Robert Hecht-Nielsen'), ('ORGANIZATION', 'ANNs')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('inventor', 'inventor'), ('first', 'first'), ('neurocomputer', 'neurocomput'), (',', ','), ('Dr.', 'dr.'), ('Robert', 'robert'), ('Hecht-Nielsen', 'hecht-nielsen'), (',', ','), ('defines', 'defin'), ('neural', 'neural'), ('network', 'network'), ('−', '−'), ('``', '``'), ('...', '...'), ('computing', 'comput'), ('system', 'system'), ('made', 'made'), ('number', 'number'), ('simple', 'simpl'), (',', ','), ('highly', 'highli'), ('interconnected', 'interconnect'), ('processing', 'process'), ('elements', 'element'), (',', ','), ('process', 'process'), ('information', 'inform'), ('dynamic', 'dynam'), ('state', 'state'), ('response', 'respons'), ('external', 'extern'), ('inputs.', 'inputs.'), ('”', '”'), ('Basic', 'basic'), ('Structure', 'structur'), ('ANNs', 'ann'), ('The', 'the'), ('idea', 'idea'), ('ANNs', 'ann'), ('based', 'base'), ('belief', 'belief'), ('working', 'work'), ('human', 'human'), ('brain', 'brain'), ('making', 'make'), ('right', 'right'), ('connections', 'connect'), (',', ','), ('imitated', 'imit'), ('using', 'use'), ('silicon', 'silicon'), ('wires', 'wire'), ('living', 'live'), ('neurons', 'neuron'), ('dendrites', 'dendrit'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('inventor', 'inventor'), ('first', 'first'), ('neurocomputer', 'neurocomput'), (',', ','), ('Dr.', 'dr.'), ('Robert', 'robert'), ('Hecht-Nielsen', 'hecht-nielsen'), (',', ','), ('defines', 'defin'), ('neural', 'neural'), ('network', 'network'), ('−', '−'), ('``', '``'), ('...', '...'), ('computing', 'comput'), ('system', 'system'), ('made', 'made'), ('number', 'number'), ('simple', 'simpl'), (',', ','), ('highly', 'high'), ('interconnected', 'interconnect'), ('processing', 'process'), ('elements', 'element'), (',', ','), ('process', 'process'), ('information', 'inform'), ('dynamic', 'dynam'), ('state', 'state'), ('response', 'respons'), ('external', 'extern'), ('inputs.', 'inputs.'), ('”', '”'), ('Basic', 'basic'), ('Structure', 'structur'), ('ANNs', 'ann'), ('The', 'the'), ('idea', 'idea'), ('ANNs', 'ann'), ('based', 'base'), ('belief', 'belief'), ('working', 'work'), ('human', 'human'), ('brain', 'brain'), ('making', 'make'), ('right', 'right'), ('connections', 'connect'), (',', ','), ('imitated', 'imit'), ('using', 'use'), ('silicon', 'silicon'), ('wires', 'wire'), ('living', 'live'), ('neurons', 'neuron'), ('dendrites', 'dendrit'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('inventor', 'inventor'), ('first', 'first'), ('neurocomputer', 'neurocomputer'), (',', ','), ('Dr.', 'Dr.'), ('Robert', 'Robert'), ('Hecht-Nielsen', 'Hecht-Nielsen'), (',', ','), ('defines', 'defines'), ('neural', 'neural'), ('network', 'network'), ('−', '−'), ('``', '``'), ('...', '...'), ('computing', 'computing'), ('system', 'system'), ('made', 'made'), ('number', 'number'), ('simple', 'simple'), (',', ','), ('highly', 'highly'), ('interconnected', 'interconnected'), ('processing', 'processing'), ('elements', 'element'), (',', ','), ('process', 'process'), ('information', 'information'), ('dynamic', 'dynamic'), ('state', 'state'), ('response', 'response'), ('external', 'external'), ('inputs.', 'inputs.'), ('”', '”'), ('Basic', 'Basic'), ('Structure', 'Structure'), ('ANNs', 'ANNs'), ('The', 'The'), ('idea', 'idea'), ('ANNs', 'ANNs'), ('based', 'based'), ('belief', 'belief'), ('working', 'working'), ('human', 'human'), ('brain', 'brain'), ('making', 'making'), ('right', 'right'), ('connections', 'connection'), (',', ','), ('imitated', 'imitated'), ('using', 'using'), ('silicon', 'silicon'), ('wires', 'wire'), ('living', 'living'), ('neurons', 'neuron'), ('dendrites', 'dendrite'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+The human brain is composed of 86 billion nerve cells called neurons. 
+
+
+>> Tokens are: 
+ ['The', 'human', 'brain', 'composed', '86', 'billion', 'nerve', 'cells', 'called', 'neurons', '.']
+
+>> Bigrams are: 
+ [('The', 'human'), ('human', 'brain'), ('brain', 'composed'), ('composed', '86'), ('86', 'billion'), ('billion', 'nerve'), ('nerve', 'cells'), ('cells', 'called'), ('called', 'neurons'), ('neurons', '.')]
+
+>> Trigrams are: 
+ [('The', 'human', 'brain'), ('human', 'brain', 'composed'), ('brain', 'composed', '86'), ('composed', '86', 'billion'), ('86', 'billion', 'nerve'), ('billion', 'nerve', 'cells'), ('nerve', 'cells', 'called'), ('cells', 'called', 'neurons'), ('called', 'neurons', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('human', 'JJ'), ('brain', 'NN'), ('composed', 'VBD'), ('86', 'CD'), ('billion', 'CD'), ('nerve', 'NN'), ('cells', 'NNS'), ('called', 'VBN'), ('neurons', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT human/JJ brain/NN)
+  composed/VBD
+  86/CD
+  billion/CD
+  (NP nerve/NN cells/NNS)
+  called/VBN
+  (NP neurons/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The human brain', 'nerve cells', 'neurons']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('human', 'human'), ('brain', 'brain'), ('composed', 'compos'), ('86', '86'), ('billion', 'billion'), ('nerve', 'nerv'), ('cells', 'cell'), ('called', 'call'), ('neurons', 'neuron'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('human', 'human'), ('brain', 'brain'), ('composed', 'compos'), ('86', '86'), ('billion', 'billion'), ('nerve', 'nerv'), ('cells', 'cell'), ('called', 'call'), ('neurons', 'neuron'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('human', 'human'), ('brain', 'brain'), ('composed', 'composed'), ('86', '86'), ('billion', 'billion'), ('nerve', 'nerve'), ('cells', 'cell'), ('called', 'called'), ('neurons', 'neuron'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+They are connected to other thousand cells by Axons. 
+
+
+>> Tokens are: 
+ ['They', 'connected', 'thousand', 'cells', 'Axons', '.']
+
+>> Bigrams are: 
+ [('They', 'connected'), ('connected', 'thousand'), ('thousand', 'cells'), ('cells', 'Axons'), ('Axons', '.')]
+
+>> Trigrams are: 
+ [('They', 'connected', 'thousand'), ('connected', 'thousand', 'cells'), ('thousand', 'cells', 'Axons'), ('cells', 'Axons', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('connected', 'VBD'), ('thousand', 'VBP'), ('cells', 'NNS'), ('Axons', 'NNS'), ('.', '.')]
+
+ (S They/PRP connected/VBD thousand/VBP (NP cells/NNS Axons/NNS) ./.) 
+
+
+>> Noun Phrases are: 
+ ['cells Axons']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('connected', 'connect'), ('thousand', 'thousand'), ('cells', 'cell'), ('Axons', 'axon'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('connected', 'connect'), ('thousand', 'thousand'), ('cells', 'cell'), ('Axons', 'axon'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('connected', 'connected'), ('thousand', 'thousand'), ('cells', 'cell'), ('Axons', 'Axons'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+Stimuli from external environment or inputs from sensory organs are accepted by dendrites. 
+
+
+>> Tokens are: 
+ ['Stimuli', 'external', 'environment', 'inputs', 'sensory', 'organs', 'accepted', 'dendrites', '.']
+
+>> Bigrams are: 
+ [('Stimuli', 'external'), ('external', 'environment'), ('environment', 'inputs'), ('inputs', 'sensory'), ('sensory', 'organs'), ('organs', 'accepted'), ('accepted', 'dendrites'), ('dendrites', '.')]
+
+>> Trigrams are: 
+ [('Stimuli', 'external', 'environment'), ('external', 'environment', 'inputs'), ('environment', 'inputs', 'sensory'), ('inputs', 'sensory', 'organs'), ('sensory', 'organs', 'accepted'), ('organs', 'accepted', 'dendrites'), ('accepted', 'dendrites', '.')]
+
+>> POS Tags are: 
+ [('Stimuli', 'NNP'), ('external', 'JJ'), ('environment', 'NN'), ('inputs', 'NNS'), ('sensory', 'JJ'), ('organs', 'NNS'), ('accepted', 'VBN'), ('dendrites', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Stimuli/NNP)
+  (NP external/JJ environment/NN inputs/NNS)
+  (NP sensory/JJ organs/NNS)
+  accepted/VBN
+  (NP dendrites/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Stimuli', 'external environment inputs', 'sensory organs', 'dendrites']
+
+>> Named Entities are: 
+ [('GPE', 'Stimuli')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Stimuli', 'stimuli'), ('external', 'extern'), ('environment', 'environ'), ('inputs', 'input'), ('sensory', 'sensori'), ('organs', 'organ'), ('accepted', 'accept'), ('dendrites', 'dendrit'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Stimuli', 'stimuli'), ('external', 'extern'), ('environment', 'environ'), ('inputs', 'input'), ('sensory', 'sensori'), ('organs', 'organ'), ('accepted', 'accept'), ('dendrites', 'dendrit'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Stimuli', 'Stimuli'), ('external', 'external'), ('environment', 'environment'), ('inputs', 'input'), ('sensory', 'sensory'), ('organs', 'organ'), ('accepted', 'accepted'), ('dendrites', 'dendrite'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+These inputs create electric impulses, which quickly travel through the neural network. 
+
+
+>> Tokens are: 
+ ['These', 'inputs', 'create', 'electric', 'impulses', ',', 'quickly', 'travel', 'neural', 'network', '.']
+
+>> Bigrams are: 
+ [('These', 'inputs'), ('inputs', 'create'), ('create', 'electric'), ('electric', 'impulses'), ('impulses', ','), (',', 'quickly'), ('quickly', 'travel'), ('travel', 'neural'), ('neural', 'network'), ('network', '.')]
+
+>> Trigrams are: 
+ [('These', 'inputs', 'create'), ('inputs', 'create', 'electric'), ('create', 'electric', 'impulses'), ('electric', 'impulses', ','), ('impulses', ',', 'quickly'), (',', 'quickly', 'travel'), ('quickly', 'travel', 'neural'), ('travel', 'neural', 'network'), ('neural', 'network', '.')]
+
+>> POS Tags are: 
+ [('These', 'DT'), ('inputs', 'NNS'), ('create', 'VBP'), ('electric', 'JJ'), ('impulses', 'NNS'), (',', ','), ('quickly', 'RB'), ('travel', 'VB'), ('neural', 'JJ'), ('network', 'NN'), ('.', '.')]
+
+ (S
+  (NP These/DT inputs/NNS)
+  create/VBP
+  (NP electric/JJ impulses/NNS)
+  ,/,
+  quickly/RB
+  travel/VB
+  (NP neural/JJ network/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['These inputs', 'electric impulses', 'neural network']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('These', 'these'), ('inputs', 'input'), ('create', 'creat'), ('electric', 'electr'), ('impulses', 'impuls'), (',', ','), ('quickly', 'quickli'), ('travel', 'travel'), ('neural', 'neural'), ('network', 'network'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('These', 'these'), ('inputs', 'input'), ('create', 'creat'), ('electric', 'electr'), ('impulses', 'impuls'), (',', ','), ('quickly', 'quick'), ('travel', 'travel'), ('neural', 'neural'), ('network', 'network'), ('.', '.')]
+
+>> Lemmatization: 
+ [('These', 'These'), ('inputs', 'input'), ('create', 'create'), ('electric', 'electric'), ('impulses', 'impulse'), (',', ','), ('quickly', 'quickly'), ('travel', 'travel'), ('neural', 'neural'), ('network', 'network'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+A neuron can then send the message to other neuron to handle the issue or does not send it forward. 
+
+
+>> Tokens are: 
+ ['A', 'neuron', 'send', 'message', 'neuron', 'handle', 'issue', 'send', 'forward', '.']
+
+>> Bigrams are: 
+ [('A', 'neuron'), ('neuron', 'send'), ('send', 'message'), ('message', 'neuron'), ('neuron', 'handle'), ('handle', 'issue'), ('issue', 'send'), ('send', 'forward'), ('forward', '.')]
+
+>> Trigrams are: 
+ [('A', 'neuron', 'send'), ('neuron', 'send', 'message'), ('send', 'message', 'neuron'), ('message', 'neuron', 'handle'), ('neuron', 'handle', 'issue'), ('handle', 'issue', 'send'), ('issue', 'send', 'forward'), ('send', 'forward', '.')]
+
+>> POS Tags are: 
+ [('A', 'DT'), ('neuron', 'JJ'), ('send', 'NN'), ('message', 'NN'), ('neuron', 'NN'), ('handle', 'JJ'), ('issue', 'NN'), ('send', 'VB'), ('forward', 'RB'), ('.', '.')]
+
+ (S
+  (NP A/DT neuron/JJ send/NN message/NN neuron/NN)
+  (NP handle/JJ issue/NN)
+  send/VB
+  forward/RB
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A neuron send message neuron', 'handle issue']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('A', 'a'), ('neuron', 'neuron'), ('send', 'send'), ('message', 'messag'), ('neuron', 'neuron'), ('handle', 'handl'), ('issue', 'issu'), ('send', 'send'), ('forward', 'forward'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('A', 'a'), ('neuron', 'neuron'), ('send', 'send'), ('message', 'messag'), ('neuron', 'neuron'), ('handle', 'handl'), ('issue', 'issu'), ('send', 'send'), ('forward', 'forward'), ('.', '.')]
+
+>> Lemmatization: 
+ [('A', 'A'), ('neuron', 'neuron'), ('send', 'send'), ('message', 'message'), ('neuron', 'neuron'), ('handle', 'handle'), ('issue', 'issue'), ('send', 'send'), ('forward', 'forward'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+ANNs are composed of multiple nodes, which imitate biological neurons of human brain. 
+
+
+>> Tokens are: 
+ ['ANNs', 'composed', 'multiple', 'nodes', ',', 'imitate', 'biological', 'neurons', 'human', 'brain', '.']
+
+>> Bigrams are: 
+ [('ANNs', 'composed'), ('composed', 'multiple'), ('multiple', 'nodes'), ('nodes', ','), (',', 'imitate'), ('imitate', 'biological'), ('biological', 'neurons'), ('neurons', 'human'), ('human', 'brain'), ('brain', '.')]
+
+>> Trigrams are: 
+ [('ANNs', 'composed', 'multiple'), ('composed', 'multiple', 'nodes'), ('multiple', 'nodes', ','), ('nodes', ',', 'imitate'), (',', 'imitate', 'biological'), ('imitate', 'biological', 'neurons'), ('biological', 'neurons', 'human'), ('neurons', 'human', 'brain'), ('human', 'brain', '.')]
+
+>> POS Tags are: 
+ [('ANNs', 'NNP'), ('composed', 'VBD'), ('multiple', 'JJ'), ('nodes', 'NNS'), (',', ','), ('imitate', 'VB'), ('biological', 'JJ'), ('neurons', 'NNS'), ('human', 'JJ'), ('brain', 'NN'), ('.', '.')]
+
+ (S
+  (NP ANNs/NNP)
+  composed/VBD
+  (NP multiple/JJ nodes/NNS)
+  ,/,
+  imitate/VB
+  (NP biological/JJ neurons/NNS)
+  (NP human/JJ brain/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['ANNs', 'multiple nodes', 'biological neurons', 'human brain']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'ANNs')] 
+
+>> Stemming using Porter Stemmer: 
+ [('ANNs', 'ann'), ('composed', 'compos'), ('multiple', 'multipl'), ('nodes', 'node'), (',', ','), ('imitate', 'imit'), ('biological', 'biolog'), ('neurons', 'neuron'), ('human', 'human'), ('brain', 'brain'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('ANNs', 'ann'), ('composed', 'compos'), ('multiple', 'multipl'), ('nodes', 'node'), (',', ','), ('imitate', 'imit'), ('biological', 'biolog'), ('neurons', 'neuron'), ('human', 'human'), ('brain', 'brain'), ('.', '.')]
+
+>> Lemmatization: 
+ [('ANNs', 'ANNs'), ('composed', 'composed'), ('multiple', 'multiple'), ('nodes', 'node'), (',', ','), ('imitate', 'imitate'), ('biological', 'biological'), ('neurons', 'neuron'), ('human', 'human'), ('brain', 'brain'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+The neurons are connected by links and they interact with each other. 
+
+
+>> Tokens are: 
+ ['The', 'neurons', 'connected', 'links', 'interact', '.']
+
+>> Bigrams are: 
+ [('The', 'neurons'), ('neurons', 'connected'), ('connected', 'links'), ('links', 'interact'), ('interact', '.')]
+
+>> Trigrams are: 
+ [('The', 'neurons', 'connected'), ('neurons', 'connected', 'links'), ('connected', 'links', 'interact'), ('links', 'interact', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('neurons', 'NNS'), ('connected', 'VBN'), ('links', 'NNS'), ('interact', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT neurons/NNS)
+  connected/VBN
+  (NP links/NNS interact/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The neurons', 'links interact']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('neurons', 'neuron'), ('connected', 'connect'), ('links', 'link'), ('interact', 'interact'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('neurons', 'neuron'), ('connected', 'connect'), ('links', 'link'), ('interact', 'interact'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('neurons', 'neuron'), ('connected', 'connected'), ('links', 'link'), ('interact', 'interact'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+The nodes can take input data and perform simple operations on the data. 
+
+
+>> Tokens are: 
+ ['The', 'nodes', 'take', 'input', 'data', 'perform', 'simple', 'operations', 'data', '.']
+
+>> Bigrams are: 
+ [('The', 'nodes'), ('nodes', 'take'), ('take', 'input'), ('input', 'data'), ('data', 'perform'), ('perform', 'simple'), ('simple', 'operations'), ('operations', 'data'), ('data', '.')]
+
+>> Trigrams are: 
+ [('The', 'nodes', 'take'), ('nodes', 'take', 'input'), ('take', 'input', 'data'), ('input', 'data', 'perform'), ('data', 'perform', 'simple'), ('perform', 'simple', 'operations'), ('simple', 'operations', 'data'), ('operations', 'data', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('nodes', 'NNS'), ('take', 'VBP'), ('input', 'NN'), ('data', 'NNS'), ('perform', 'NN'), ('simple', 'JJ'), ('operations', 'NNS'), ('data', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT nodes/NNS)
+  take/VBP
+  (NP input/NN data/NNS perform/NN)
+  (NP simple/JJ operations/NNS data/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The nodes', 'input data perform', 'simple operations data']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('nodes', 'node'), ('take', 'take'), ('input', 'input'), ('data', 'data'), ('perform', 'perform'), ('simple', 'simpl'), ('operations', 'oper'), ('data', 'data'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('nodes', 'node'), ('take', 'take'), ('input', 'input'), ('data', 'data'), ('perform', 'perform'), ('simple', 'simpl'), ('operations', 'oper'), ('data', 'data'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('nodes', 'node'), ('take', 'take'), ('input', 'input'), ('data', 'data'), ('perform', 'perform'), ('simple', 'simple'), ('operations', 'operation'), ('data', 'data'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+The result of these operations is passed to other neurons. 
+
+
+>> Tokens are: 
+ ['The', 'result', 'operations', 'passed', 'neurons', '.']
+
+>> Bigrams are: 
+ [('The', 'result'), ('result', 'operations'), ('operations', 'passed'), ('passed', 'neurons'), ('neurons', '.')]
+
+>> Trigrams are: 
+ [('The', 'result', 'operations'), ('result', 'operations', 'passed'), ('operations', 'passed', 'neurons'), ('passed', 'neurons', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('result', 'NN'), ('operations', 'NNS'), ('passed', 'VBD'), ('neurons', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT result/NN operations/NNS)
+  passed/VBD
+  (NP neurons/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The result operations', 'neurons']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('result', 'result'), ('operations', 'oper'), ('passed', 'pass'), ('neurons', 'neuron'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('result', 'result'), ('operations', 'oper'), ('passed', 'pass'), ('neurons', 'neuron'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('result', 'result'), ('operations', 'operation'), ('passed', 'passed'), ('neurons', 'neuron'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+The output at each node is called its activation or node value. 
+
+
+>> Tokens are: 
+ ['The', 'output', 'node', 'called', 'activation', 'node', 'value', '.']
+
+>> Bigrams are: 
+ [('The', 'output'), ('output', 'node'), ('node', 'called'), ('called', 'activation'), ('activation', 'node'), ('node', 'value'), ('value', '.')]
+
+>> Trigrams are: 
+ [('The', 'output', 'node'), ('output', 'node', 'called'), ('node', 'called', 'activation'), ('called', 'activation', 'node'), ('activation', 'node', 'value'), ('node', 'value', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('output', 'NN'), ('node', 'RB'), ('called', 'VBD'), ('activation', 'NN'), ('node', 'NN'), ('value', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT output/NN)
+  node/RB
+  called/VBD
+  (NP activation/NN node/NN value/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The output', 'activation node value']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('output', 'output'), ('node', 'node'), ('called', 'call'), ('activation', 'activ'), ('node', 'node'), ('value', 'valu'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('output', 'output'), ('node', 'node'), ('called', 'call'), ('activation', 'activ'), ('node', 'node'), ('value', 'valu'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('output', 'output'), ('node', 'node'), ('called', 'called'), ('activation', 'activation'), ('node', 'node'), ('value', 'value'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+Each link is associated with weight. 
+
+
+>> Tokens are: 
+ ['Each', 'link', 'associated', 'weight', '.']
+
+>> Bigrams are: 
+ [('Each', 'link'), ('link', 'associated'), ('associated', 'weight'), ('weight', '.')]
+
+>> Trigrams are: 
+ [('Each', 'link', 'associated'), ('link', 'associated', 'weight'), ('associated', 'weight', '.')]
+
+>> POS Tags are: 
+ [('Each', 'DT'), ('link', 'NN'), ('associated', 'VBN'), ('weight', 'NN'), ('.', '.')]
+
+ (S (NP Each/DT link/NN) associated/VBN (NP weight/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['Each link', 'weight']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Each', 'each'), ('link', 'link'), ('associated', 'associ'), ('weight', 'weight'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Each', 'each'), ('link', 'link'), ('associated', 'associ'), ('weight', 'weight'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Each', 'Each'), ('link', 'link'), ('associated', 'associated'), ('weight', 'weight'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+ANNs are capable of learning, which takes place by altering weight values. 
+
+
+>> Tokens are: 
+ ['ANNs', 'capable', 'learning', ',', 'takes', 'place', 'altering', 'weight', 'values', '.']
+
+>> Bigrams are: 
+ [('ANNs', 'capable'), ('capable', 'learning'), ('learning', ','), (',', 'takes'), ('takes', 'place'), ('place', 'altering'), ('altering', 'weight'), ('weight', 'values'), ('values', '.')]
+
+>> Trigrams are: 
+ [('ANNs', 'capable', 'learning'), ('capable', 'learning', ','), ('learning', ',', 'takes'), (',', 'takes', 'place'), ('takes', 'place', 'altering'), ('place', 'altering', 'weight'), ('altering', 'weight', 'values'), ('weight', 'values', '.')]
+
+>> POS Tags are: 
+ [('ANNs', 'NNP'), ('capable', 'JJ'), ('learning', 'NN'), (',', ','), ('takes', 'VBZ'), ('place', 'NN'), ('altering', 'VBG'), ('weight', 'NN'), ('values', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ANNs/NNP)
+  (NP capable/JJ learning/NN)
+  ,/,
+  takes/VBZ
+  (NP place/NN)
+  altering/VBG
+  (NP weight/NN values/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['ANNs', 'capable learning', 'place', 'weight values']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'ANNs')] 
+
+>> Stemming using Porter Stemmer: 
+ [('ANNs', 'ann'), ('capable', 'capabl'), ('learning', 'learn'), (',', ','), ('takes', 'take'), ('place', 'place'), ('altering', 'alter'), ('weight', 'weight'), ('values', 'valu'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('ANNs', 'ann'), ('capable', 'capabl'), ('learning', 'learn'), (',', ','), ('takes', 'take'), ('place', 'place'), ('altering', 'alter'), ('weight', 'weight'), ('values', 'valu'), ('.', '.')]
+
+>> Lemmatization: 
+ [('ANNs', 'ANNs'), ('capable', 'capable'), ('learning', 'learning'), (',', ','), ('takes', 'take'), ('place', 'place'), ('altering', 'altering'), ('weight', 'weight'), ('values', 'value'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+The following illustration shows a simple ANN −  Types of Artificial Neural Networks There are two Artificial Neural Network topologies − FeedForward and Feedback. 
+
+
+>> Tokens are: 
+ ['The', 'following', 'illustration', 'shows', 'simple', 'ANN', '−', 'Types', 'Artificial', 'Neural', 'Networks', 'There', 'two', 'Artificial', 'Neural', 'Network', 'topologies', '−', 'FeedForward', 'Feedback', '.']
+
+>> Bigrams are: 
+ [('The', 'following'), ('following', 'illustration'), ('illustration', 'shows'), ('shows', 'simple'), ('simple', 'ANN'), ('ANN', '−'), ('−', 'Types'), ('Types', 'Artificial'), ('Artificial', 'Neural'), ('Neural', 'Networks'), ('Networks', 'There'), ('There', 'two'), ('two', 'Artificial'), ('Artificial', 'Neural'), ('Neural', 'Network'), ('Network', 'topologies'), ('topologies', '−'), ('−', 'FeedForward'), ('FeedForward', 'Feedback'), ('Feedback', '.')]
+
+>> Trigrams are: 
+ [('The', 'following', 'illustration'), ('following', 'illustration', 'shows'), ('illustration', 'shows', 'simple'), ('shows', 'simple', 'ANN'), ('simple', 'ANN', '−'), ('ANN', '−', 'Types'), ('−', 'Types', 'Artificial'), ('Types', 'Artificial', 'Neural'), ('Artificial', 'Neural', 'Networks'), ('Neural', 'Networks', 'There'), ('Networks', 'There', 'two'), ('There', 'two', 'Artificial'), ('two', 'Artificial', 'Neural'), ('Artificial', 'Neural', 'Network'), ('Neural', 'Network', 'topologies'), ('Network', 'topologies', '−'), ('topologies', '−', 'FeedForward'), ('−', 'FeedForward', 'Feedback'), ('FeedForward', 'Feedback', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('following', 'JJ'), ('illustration', 'NN'), ('shows', 'VBZ'), ('simple', 'JJ'), ('ANN', 'NNP'), ('−', 'NNP'), ('Types', 'NNP'), ('Artificial', 'NNP'), ('Neural', 'NNP'), ('Networks', 'NNP'), ('There', 'EX'), ('two', 'CD'), ('Artificial', 'NNP'), ('Neural', 'NNP'), ('Network', 'NNP'), ('topologies', 'NNS'), ('−', 'NNP'), ('FeedForward', 'NNP'), ('Feedback', 'NNP'), ('.', '.')]
+
+ (S
+  (NP The/DT following/JJ illustration/NN)
+  shows/VBZ
+  (NP
+    simple/JJ
+    ANN/NNP
+    −/NNP
+    Types/NNP
+    Artificial/NNP
+    Neural/NNP
+    Networks/NNP)
+  There/EX
+  two/CD
+  (NP
+    Artificial/NNP
+    Neural/NNP
+    Network/NNP
+    topologies/NNS
+    −/NNP
+    FeedForward/NNP
+    Feedback/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The following illustration', 'simple ANN − Types Artificial Neural Networks', 'Artificial Neural Network topologies − FeedForward Feedback']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'ANN'), ('ORGANIZATION', 'FeedForward Feedback')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('following', 'follow'), ('illustration', 'illustr'), ('shows', 'show'), ('simple', 'simpl'), ('ANN', 'ann'), ('−', '−'), ('Types', 'type'), ('Artificial', 'artifici'), ('Neural', 'neural'), ('Networks', 'network'), ('There', 'there'), ('two', 'two'), ('Artificial', 'artifici'), ('Neural', 'neural'), ('Network', 'network'), ('topologies', 'topolog'), ('−', '−'), ('FeedForward', 'feedforward'), ('Feedback', 'feedback'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('following', 'follow'), ('illustration', 'illustr'), ('shows', 'show'), ('simple', 'simpl'), ('ANN', 'ann'), ('−', '−'), ('Types', 'type'), ('Artificial', 'artifici'), ('Neural', 'neural'), ('Networks', 'network'), ('There', 'there'), ('two', 'two'), ('Artificial', 'artifici'), ('Neural', 'neural'), ('Network', 'network'), ('topologies', 'topolog'), ('−', '−'), ('FeedForward', 'feedforward'), ('Feedback', 'feedback'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('following', 'following'), ('illustration', 'illustration'), ('shows', 'show'), ('simple', 'simple'), ('ANN', 'ANN'), ('−', '−'), ('Types', 'Types'), ('Artificial', 'Artificial'), ('Neural', 'Neural'), ('Networks', 'Networks'), ('There', 'There'), ('two', 'two'), ('Artificial', 'Artificial'), ('Neural', 'Neural'), ('Network', 'Network'), ('topologies', 'topology'), ('−', '−'), ('FeedForward', 'FeedForward'), ('Feedback', 'Feedback'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+FeedForward ANN In this ANN, the information flow is unidirectional. 
+
+
+>> Tokens are: 
+ ['FeedForward', 'ANN', 'In', 'ANN', ',', 'information', 'flow', 'unidirectional', '.']
+
+>> Bigrams are: 
+ [('FeedForward', 'ANN'), ('ANN', 'In'), ('In', 'ANN'), ('ANN', ','), (',', 'information'), ('information', 'flow'), ('flow', 'unidirectional'), ('unidirectional', '.')]
+
+>> Trigrams are: 
+ [('FeedForward', 'ANN', 'In'), ('ANN', 'In', 'ANN'), ('In', 'ANN', ','), ('ANN', ',', 'information'), (',', 'information', 'flow'), ('information', 'flow', 'unidirectional'), ('flow', 'unidirectional', '.')]
+
+>> POS Tags are: 
+ [('FeedForward', 'NNP'), ('ANN', 'NNP'), ('In', 'IN'), ('ANN', 'NNP'), (',', ','), ('information', 'NN'), ('flow', 'NN'), ('unidirectional', 'NN'), ('.', '.')]
+
+ (S
+  (NP FeedForward/NNP ANN/NNP)
+  In/IN
+  (NP ANN/NNP)
+  ,/,
+  (NP information/NN flow/NN unidirectional/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['FeedForward ANN', 'ANN', 'information flow unidirectional']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'FeedForward'), ('ORGANIZATION', 'ANN'), ('ORGANIZATION', 'ANN')] 
+
+>> Stemming using Porter Stemmer: 
+ [('FeedForward', 'feedforward'), ('ANN', 'ann'), ('In', 'in'), ('ANN', 'ann'), (',', ','), ('information', 'inform'), ('flow', 'flow'), ('unidirectional', 'unidirect'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('FeedForward', 'feedforward'), ('ANN', 'ann'), ('In', 'in'), ('ANN', 'ann'), (',', ','), ('information', 'inform'), ('flow', 'flow'), ('unidirectional', 'unidirect'), ('.', '.')]
+
+>> Lemmatization: 
+ [('FeedForward', 'FeedForward'), ('ANN', 'ANN'), ('In', 'In'), ('ANN', 'ANN'), (',', ','), ('information', 'information'), ('flow', 'flow'), ('unidirectional', 'unidirectional'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+A unit sends information to other unit from which it does not receive any information. 
+
+
+>> Tokens are: 
+ ['A', 'unit', 'sends', 'information', 'unit', 'receive', 'information', '.']
+
+>> Bigrams are: 
+ [('A', 'unit'), ('unit', 'sends'), ('sends', 'information'), ('information', 'unit'), ('unit', 'receive'), ('receive', 'information'), ('information', '.')]
+
+>> Trigrams are: 
+ [('A', 'unit', 'sends'), ('unit', 'sends', 'information'), ('sends', 'information', 'unit'), ('information', 'unit', 'receive'), ('unit', 'receive', 'information'), ('receive', 'information', '.')]
+
+>> POS Tags are: 
+ [('A', 'DT'), ('unit', 'NN'), ('sends', 'VBZ'), ('information', 'NN'), ('unit', 'NN'), ('receive', 'JJ'), ('information', 'NN'), ('.', '.')]
+
+ (S
+  (NP A/DT unit/NN)
+  sends/VBZ
+  (NP information/NN unit/NN)
+  (NP receive/JJ information/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A unit', 'information unit', 'receive information']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('A', 'a'), ('unit', 'unit'), ('sends', 'send'), ('information', 'inform'), ('unit', 'unit'), ('receive', 'receiv'), ('information', 'inform'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('A', 'a'), ('unit', 'unit'), ('sends', 'send'), ('information', 'inform'), ('unit', 'unit'), ('receive', 'receiv'), ('information', 'inform'), ('.', '.')]
+
+>> Lemmatization: 
+ [('A', 'A'), ('unit', 'unit'), ('sends', 'sends'), ('information', 'information'), ('unit', 'unit'), ('receive', 'receive'), ('information', 'information'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+There are no feedback loops. 
+
+
+>> Tokens are: 
+ ['There', 'feedback', 'loops', '.']
+
+>> Bigrams are: 
+ [('There', 'feedback'), ('feedback', 'loops'), ('loops', '.')]
+
+>> Trigrams are: 
+ [('There', 'feedback', 'loops'), ('feedback', 'loops', '.')]
+
+>> POS Tags are: 
+ [('There', 'EX'), ('feedback', 'JJ'), ('loops', 'NNS'), ('.', '.')]
+
+ (S There/EX (NP feedback/JJ loops/NNS) ./.) 
+
+
+>> Noun Phrases are: 
+ ['feedback loops']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('There', 'there'), ('feedback', 'feedback'), ('loops', 'loop'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('There', 'there'), ('feedback', 'feedback'), ('loops', 'loop'), ('.', '.')]
+
+>> Lemmatization: 
+ [('There', 'There'), ('feedback', 'feedback'), ('loops', 'loop'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+They are used in pattern generation/recognition/classification. 
+
+
+>> Tokens are: 
+ ['They', 'used', 'pattern', 'generation/recognition/classification', '.']
+
+>> Bigrams are: 
+ [('They', 'used'), ('used', 'pattern'), ('pattern', 'generation/recognition/classification'), ('generation/recognition/classification', '.')]
+
+>> Trigrams are: 
+ [('They', 'used', 'pattern'), ('used', 'pattern', 'generation/recognition/classification'), ('pattern', 'generation/recognition/classification', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('used', 'VBD'), ('pattern', 'JJ'), ('generation/recognition/classification', 'NN'), ('.', '.')]
+
+ (S
+  They/PRP
+  used/VBD
+  (NP pattern/JJ generation/recognition/classification/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['pattern generation/recognition/classification']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('used', 'use'), ('pattern', 'pattern'), ('generation/recognition/classification', 'generation/recognition/classif'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('used', 'use'), ('pattern', 'pattern'), ('generation/recognition/classification', 'generation/recognition/classif'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('used', 'used'), ('pattern', 'pattern'), ('generation/recognition/classification', 'generation/recognition/classification'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+They have fixed inputs and outputs. 
+
+
+>> Tokens are: 
+ ['They', 'fixed', 'inputs', 'outputs', '.']
+
+>> Bigrams are: 
+ [('They', 'fixed'), ('fixed', 'inputs'), ('inputs', 'outputs'), ('outputs', '.')]
+
+>> Trigrams are: 
+ [('They', 'fixed', 'inputs'), ('fixed', 'inputs', 'outputs'), ('inputs', 'outputs', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('fixed', 'VBD'), ('inputs', 'NNS'), ('outputs', 'NNS'), ('.', '.')]
+
+ (S They/PRP fixed/VBD (NP inputs/NNS outputs/NNS) ./.) 
+
+
+>> Noun Phrases are: 
+ ['inputs outputs']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('fixed', 'fix'), ('inputs', 'input'), ('outputs', 'output'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('fixed', 'fix'), ('inputs', 'input'), ('outputs', 'output'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('fixed', 'fixed'), ('inputs', 'input'), ('outputs', 'output'), ('.', '.')]
+

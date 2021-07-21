@@ -1,0 +1,3592 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709) 
+
+
+>> Tokens are: 
+[OOPC++, UNIT-1,   , Prof., Rupesh, G., Vaishnav, rupesh.vaishnav@darshan.ac.in, 94280, -, 37452, Information, &, Network, Security, (, 2170709, )] 
+
+>> PoS Tags are: 
+[('OOPC++', 'INTJ'), ('UNIT-1', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Rupesh', 'PROPN'), ('G.', 'PROPN'), ('Vaishnav', 'PROPN'), ('rupesh.vaishnav@darshan.ac.in', 'NUM'), ('94280', 'NUM'), ('-', 'SYM'), ('37452', 'NUM'), ('Information', 'PROPN'), ('&', 'CCONJ'), ('Network', 'PROPN'), ('Security', 'PROPN'), ('(', 'PUNCT'), ('2170709', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('OOPC++', 'intj'), ('UNIT-1', 'ROOT'), ('  ', 'nummod'), ('Prof.', 'compound'), ('Rupesh', 'compound'), ('G.', 'compound'), ('Vaishnav', 'dobj'), ('rupesh.vaishnav@darshan.ac.in', 'appos'), ('94280', 'nummod'), ('-', 'punct'), ('37452', 'nummod'), ('Information', 'nmod'), ('&', 'cc'), ('Network', 'conj'), ('Security', 'appos'), ('(', 'punct'), ('2170709', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[OOPC++, UNIT-1], [UNIT-1,   ], [  , Prof.], [Prof., Rupesh], [Rupesh, G.], [G., Vaishnav], [Vaishnav, rupesh.vaishnav@darshan.ac.in], [rupesh.vaishnav@darshan.ac.in, 94280], [94280, -], [-, 37452], [37452, Information], [Information, &], [&, Network], [Network, Security], [Security, (], [(, 2170709], [2170709, )]]
+
+>> Trigrams: 
+[[OOPC++, UNIT-1,   ], [UNIT-1,   , Prof.], [  , Prof., Rupesh], [Prof., Rupesh, G.], [Rupesh, G., Vaishnav], [G., Vaishnav, rupesh.vaishnav@darshan.ac.in], [Vaishnav, rupesh.vaishnav@darshan.ac.in, 94280], [rupesh.vaishnav@darshan.ac.in, 94280, -], [94280, -, 37452], [-, 37452, Information], [37452, Information, &], [Information, &, Network], [&, Network, Security], [Network, Security, (], [Security, (, 2170709], [(, 2170709, )]]
+
+>> Noun Phrases are: 
+[OOPC++ UNIT-1,   Prof. Rupesh G. Vaishnav, 94280-37452 Information & Network Security]
+
+>> Named Entities are: 
+[('Rupesh G. Vaishnav', 'PERSON'), ('94280-37452', 'DATE'), ('Information & Network Security', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+	 Darshan Institute of Engineering & Technology UNIT-3 Multiple encryptions and triple DES      1   
+
+
+>> Tokens are: 
+[	 , Darshan, Institute, Engineering, &, Technology, UNIT-3, Multiple, encryptions, triple, DES,      , 1,  ] 
+
+>> PoS Tags are: 
+[('\t ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('UNIT-3', 'PROPN'), ('Multiple', 'PROPN'), ('encryptions', 'NOUN'), ('triple', 'ADJ'), ('DES', 'PROPN'), ('     ', 'SPACE'), ('1', 'NUM'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t ', 'amod'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('UNIT-3', 'conj'), ('Multiple', 'amod'), ('encryptions', 'ROOT'), ('triple', 'amod'), ('DES', 'nmod'), ('     ', 'conj'), ('1', 'nummod'), (' ', 'appos')]
+
+>> Bigrams: 
+[[	 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology, UNIT-3], [UNIT-3, Multiple], [Multiple, encryptions], [encryptions, triple], [triple, DES], [DES,      ], [     , 1], [1,  ]]
+
+>> Trigrams: 
+[[	 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology, UNIT-3], [Technology, UNIT-3, Multiple], [UNIT-3, Multiple, encryptions], [Multiple, encryptions, triple], [encryptions, triple, DES], [triple, DES,      ], [DES,      , 1], [     , 1,  ]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 3 =============================
+
+Outline Multiple encryption and triple DES  Electronic Code Book Mode Cipher Block Chaining Mode   
+
+
+>> Tokens are: 
+[Outline, Multiple, encryption, triple, DES,  , Electronic, Code, Book, Mode, Cipher, Block, Chaining, Mode,  ] 
+
+>> PoS Tags are: 
+[('Outline', 'PROPN'), ('Multiple', 'PROPN'), ('encryption', 'NOUN'), ('triple', 'ADJ'), ('DES', 'PROPN'), (' ', 'SPACE'), ('Electronic', 'PROPN'), ('Code', 'PROPN'), ('Book', 'PROPN'), ('Mode', 'PROPN'), ('Cipher', 'PROPN'), ('Block', 'PROPN'), ('Chaining', 'PROPN'), ('Mode', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Outline', 'compound'), ('Multiple', 'compound'), ('encryption', 'ROOT'), ('triple', 'amod'), ('DES', 'compound'), (' ', 'compound'), ('Electronic', 'compound'), ('Code', 'compound'), ('Book', 'compound'), ('Mode', 'compound'), ('Cipher', 'compound'), ('Block', 'compound'), ('Chaining', 'compound'), ('Mode', 'conj'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Outline, Multiple], [Multiple, encryption], [encryption, triple], [triple, DES], [DES,  ], [ , Electronic], [Electronic, Code], [Code, Book], [Book, Mode], [Mode, Cipher], [Cipher, Block], [Block, Chaining], [Chaining, Mode], [Mode,  ]]
+
+>> Trigrams: 
+[[Outline, Multiple, encryption], [Multiple, encryption, triple], [encryption, triple, DES], [triple, DES,  ], [DES,  , Electronic], [ , Electronic, Code], [Electronic, Code, Book], [Code, Book, Mode], [Book, Mode, Cipher], [Mode, Cipher, Block], [Cipher, Block, Chaining], [Block, Chaining, Mode], [Chaining, Mode,  ]]
+
+>> Noun Phrases are: 
+[Outline Multiple encryption, triple DES  Electronic Code Book Mode Cipher Block Chaining Mode]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+Cipher Feedback Mode  Output Feedback Mode Counter Mode   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  X.800 and RFC 2828 International Telecommunication Union (ITU) 2  Block Cipher Modes of Operations To apply a block cipher in a variety of applications, five "modes of operation" have been defined. 
+
+
+>> Tokens are: 
+[Cipher, Feedback, Mode,  , Output, Feedback, Mode, Counter, Mode,   , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  , X.800, RFC, 2828, International, Telecommunication, Union, (, ITU, ), 2,  , Block, Cipher, Modes, Operations, apply, block, cipher, variety, applications, ,, ", modes, operation, ", defined, .] 
+
+>> PoS Tags are: 
+[('Cipher', 'PROPN'), ('Feedback', 'PROPN'), ('Mode', 'PROPN'), (' ', 'SPACE'), ('Output', 'PROPN'), ('Feedback', 'PROPN'), ('Mode', 'PROPN'), ('Counter', 'PROPN'), ('Mode', 'PROPN'), ('  ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE'), ('X.800', 'PROPN'), ('RFC', 'PROPN'), ('2828', 'NUM'), ('International', 'PROPN'), ('Telecommunication', 'PROPN'), ('Union', 'PROPN'), ('(', 'PUNCT'), ('ITU', 'PROPN'), (')', 'PUNCT'), ('2', 'NUM'), (' ', 'SPACE'), ('Block', 'PROPN'), ('Cipher', 'PROPN'), ('Modes', 'PROPN'), ('Operations', 'PROPN'), ('apply', 'VERB'), ('block', 'NOUN'), ('cipher', 'NOUN'), ('variety', 'NOUN'), ('applications', 'NOUN'), (',', 'PUNCT'), ('"', 'PUNCT'), ('modes', 'NOUN'), ('operation', 'NOUN'), ('"', 'PUNCT'), ('defined', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Cipher', 'compound'), ('Feedback', 'compound'), ('Mode', 'nmod'), (' ', 'appos'), ('Output', 'compound'), ('Feedback', 'compound'), ('Mode', 'compound'), ('Counter', 'compound'), ('Mode', 'nsubj'), ('  ', 'appos'), ('Unit-3', 'ccomp'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct'), (' ', 'appos'), ('X.800', 'conj'), ('RFC', 'npadvmod'), ('2828', 'nummod'), ('International', 'compound'), ('Telecommunication', 'compound'), ('Union', 'appos'), ('(', 'punct'), ('ITU', 'appos'), (')', 'punct'), ('2', 'nummod'), (' ', 'nsubj'), ('Block', 'nsubjpass'), ('Cipher', 'compound'), ('Modes', 'dobj'), ('Operations', 'pobj'), ('apply', 'xcomp'), ('block', 'compound'), ('cipher', 'dobj'), ('variety', 'pobj'), ('applications', 'pobj'), (',', 'punct'), ('"', 'punct'), ('modes', 'dobj'), ('operation', 'pobj'), ('"', 'punct'), ('defined', 'ROOT'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Cipher, Feedback], [Feedback, Mode], [Mode,  ], [ , Output], [Output, Feedback], [Feedback, Mode], [Mode, Counter], [Counter, Mode], [Mode,   ], [  , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ], [ , X.800], [X.800, RFC], [RFC, 2828], [2828, International], [International, Telecommunication], [Telecommunication, Union], [Union, (], [(, ITU], [ITU, )], [), 2], [2,  ], [ , Block], [Block, Cipher], [Cipher, Modes], [Modes, Operations], [Operations, apply], [apply, block], [block, cipher], [cipher, variety], [variety, applications], [applications, ,], [,, "], [", modes], [modes, operation], [operation, "], [", defined], [defined, .]]
+
+>> Trigrams: 
+[[Cipher, Feedback, Mode], [Feedback, Mode,  ], [Mode,  , Output], [ , Output, Feedback], [Output, Feedback, Mode], [Feedback, Mode, Counter], [Mode, Counter, Mode], [Counter, Mode,   ], [Mode,   , Unit-3], [  , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ], [‹#›,  , X.800], [ , X.800, RFC], [X.800, RFC, 2828], [RFC, 2828, International], [2828, International, Telecommunication], [International, Telecommunication, Union], [Telecommunication, Union, (], [Union, (, ITU], [(, ITU, )], [ITU, ), 2], [), 2,  ], [2,  , Block], [ , Block, Cipher], [Block, Cipher, Modes], [Cipher, Modes, Operations], [Modes, Operations, apply], [Operations, apply, block], [apply, block, cipher], [block, cipher, variety], [cipher, variety, applications], [variety, applications, ,], [applications, ,, "], [,, ", modes], [", modes, operation], [modes, operation, "], [operation, ", defined], [", defined, .]]
+
+>> Noun Phrases are: 
+[Cipher Feedback Mode  Output Feedback Mode Counter Mode,                                                                                 Darshan Institute, Engineering, Technology, X.800, International Telecommunication Union, (ITU, 2  Block, Cipher Modes, Operations, a block cipher, a variety, applications, five "modes, operation]
+
+>> Named Entities are: 
+[('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('X.800', 'CARDINAL'), ('RFC 2828 International Telecommunication Union', 'ORG'), ('ITU', 'ORG'), ('2', 'CARDINAL'), ('five', 'CARDINAL')]
+
+
+============================ Sentence 5 =============================
+
+The five modes are intended to cover a wide variety of applications of encryption for which a block cipher could be used. 
+
+
+>> Tokens are: 
+[modes, intended, cover, wide, variety, applications, encryption, block, cipher, .] 
+
+>> PoS Tags are: 
+[('modes', 'NOUN'), ('intended', 'VERB'), ('cover', 'VERB'), ('wide', 'ADJ'), ('variety', 'NOUN'), ('applications', 'NOUN'), ('encryption', 'NOUN'), ('block', 'NOUN'), ('cipher', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('modes', 'nsubjpass'), ('intended', 'ROOT'), ('cover', 'xcomp'), ('wide', 'amod'), ('variety', 'dobj'), ('applications', 'pobj'), ('encryption', 'pobj'), ('block', 'compound'), ('cipher', 'nsubjpass'), ('.', 'punct')]
+
+>> Bigrams: 
+[[modes, intended], [intended, cover], [cover, wide], [wide, variety], [variety, applications], [applications, encryption], [encryption, block], [block, cipher], [cipher, .]]
+
+>> Trigrams: 
+[[modes, intended, cover], [intended, cover, wide], [cover, wide, variety], [wide, variety, applications], [variety, applications, encryption], [applications, encryption, block], [encryption, block, cipher], [block, cipher, .]]
+
+>> Noun Phrases are: 
+[The five modes, a wide variety, applications, encryption, a block cipher]
+
+>> Named Entities are: 
+[('five', 'CARDINAL')]
+
+
+============================ Sentence 6 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+These modes are intended for use with any symmetric block cipher, including triple DES and AES. 
+
+
+>> Tokens are: 
+[modes, intended, use, symmetric, block, cipher, ,, including, triple, DES, AES, .] 
+
+>> PoS Tags are: 
+[('modes', 'NOUN'), ('intended', 'VERB'), ('use', 'NOUN'), ('symmetric', 'ADJ'), ('block', 'NOUN'), ('cipher', 'NOUN'), (',', 'PUNCT'), ('including', 'VERB'), ('triple', 'ADJ'), ('DES', 'PROPN'), ('AES', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('modes', 'nsubjpass'), ('intended', 'ROOT'), ('use', 'pobj'), ('symmetric', 'amod'), ('block', 'compound'), ('cipher', 'pobj'), (',', 'punct'), ('including', 'prep'), ('triple', 'amod'), ('DES', 'pobj'), ('AES', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[modes, intended], [intended, use], [use, symmetric], [symmetric, block], [block, cipher], [cipher, ,], [,, including], [including, triple], [triple, DES], [DES, AES], [AES, .]]
+
+>> Trigrams: 
+[[modes, intended, use], [intended, use, symmetric], [use, symmetric, block], [symmetric, block, cipher], [block, cipher, ,], [cipher, ,, including], [,, including, triple], [including, triple, DES], [triple, DES, AES], [DES, AES, .]]
+
+>> Noun Phrases are: 
+[These modes, use, any symmetric block cipher, triple DES, AES]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 8 =============================
+
+Electronic Code Book (ECB) 
+
+
+>> Tokens are: 
+[Electronic, Code, Book, (, ECB, )] 
+
+>> PoS Tags are: 
+[('Electronic', 'PROPN'), ('Code', 'PROPN'), ('Book', 'PROPN'), ('(', 'PUNCT'), ('ECB', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Electronic', 'compound'), ('Code', 'compound'), ('Book', 'ROOT'), ('(', 'punct'), ('ECB', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[Electronic, Code], [Code, Book], [Book, (], [(, ECB], [ECB, )]]
+
+>> Trigrams: 
+[[Electronic, Code, Book], [Code, Book, (], [Book, (, ECB], [(, ECB, )]]
+
+>> Noun Phrases are: 
+[Electronic Code Book, (ECB]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+Cipher Block Chaining (CBC) 
+
+
+>> Tokens are: 
+[Cipher, Block, Chaining, (, CBC, )] 
+
+>> PoS Tags are: 
+[('Cipher', 'PROPN'), ('Block', 'PROPN'), ('Chaining', 'PROPN'), ('(', 'PUNCT'), ('CBC', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Cipher', 'compound'), ('Block', 'compound'), ('Chaining', 'ROOT'), ('(', 'punct'), ('CBC', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[Cipher, Block], [Block, Chaining], [Chaining, (], [(, CBC], [CBC, )]]
+
+>> Trigrams: 
+[[Cipher, Block, Chaining], [Block, Chaining, (], [Chaining, (, CBC], [(, CBC, )]]
+
+>> Noun Phrases are: 
+[Cipher Block Chaining, (CBC]
+
+>> Named Entities are: 
+[('CBC', 'ORG')]
+
+
+============================ Sentence 10 =============================
+
+Cipher Feedback (CFB) 
+
+
+>> Tokens are: 
+[Cipher, Feedback, (, CFB, )] 
+
+>> PoS Tags are: 
+[('Cipher', 'PROPN'), ('Feedback', 'PROPN'), ('(', 'PUNCT'), ('CFB', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Cipher', 'compound'), ('Feedback', 'ROOT'), ('(', 'punct'), ('CFB', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[Cipher, Feedback], [Feedback, (], [(, CFB], [CFB, )]]
+
+>> Trigrams: 
+[[Cipher, Feedback, (], [Feedback, (, CFB], [(, CFB, )]]
+
+>> Noun Phrases are: 
+[Cipher Feedback, (CFB]
+
+>> Named Entities are: 
+[('Cipher Feedback', 'PERSON')]
+
+
+============================ Sentence 11 =============================
+
+Output Feedback (OFB)   
+
+
+>> Tokens are: 
+[Output, Feedback, (, OFB, ),  ] 
+
+>> PoS Tags are: 
+[('Output', 'NOUN'), ('Feedback', 'PROPN'), ('(', 'PUNCT'), ('OFB', 'PROPN'), (')', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Output', 'compound'), ('Feedback', 'ROOT'), ('(', 'punct'), ('OFB', 'appos'), (')', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Output, Feedback], [Feedback, (], [(, OFB], [OFB, )], [),  ]]
+
+>> Trigrams: 
+[[Output, Feedback, (], [Feedback, (, OFB], [(, OFB, )], [OFB, ),  ]]
+
+>> Noun Phrases are: 
+[Output Feedback, (OFB]
+
+>> Named Entities are: 
+[('Output Feedback', 'PERSON'), ('OFB', 'ORG')]
+
+
+============================ Sentence 12 =============================
+
+Counter (CTR)   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  1. 
+
+
+>> Tokens are: 
+[Counter, (, CTR, ),   , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  , 1, .] 
+
+>> PoS Tags are: 
+[('Counter', 'PROPN'), ('(', 'PUNCT'), ('CTR', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE'), ('1', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Counter', 'nsubj'), ('(', 'punct'), ('CTR', 'appos'), (')', 'punct'), ('  ', 'appos'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('1', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Counter, (], [(, CTR], [CTR, )], [),   ], [  , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ], [ , 1], [1, .]]
+
+>> Trigrams: 
+[[Counter, (, CTR], [(, CTR, )], [CTR, ),   ], [),   , Unit-3], [  , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ], [‹#›,  , 1], [ , 1, .]]
+
+>> Noun Phrases are: 
+[Counter, CTR,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('CTR', 'ORG'), ('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('1', 'CARDINAL')]
+
+
+============================ Sentence 13 =============================
+
+Electronic Code Book (ECB) 
+
+
+>> Tokens are: 
+[Electronic, Code, Book, (, ECB, )] 
+
+>> PoS Tags are: 
+[('Electronic', 'PROPN'), ('Code', 'PROPN'), ('Book', 'PROPN'), ('(', 'PUNCT'), ('ECB', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Electronic', 'compound'), ('Code', 'compound'), ('Book', 'ROOT'), ('(', 'punct'), ('ECB', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[Electronic, Code], [Code, Book], [Book, (], [(, ECB], [ECB, )]]
+
+>> Trigrams: 
+[[Electronic, Code, Book], [Code, Book, (], [Book, (, ECB], [(, ECB, )]]
+
+>> Noun Phrases are: 
+[Electronic Code Book, (ECB]
+
+>> Named Entities are: 
+[('ECB', 'ORG')]
+
+
+============================ Sentence 14 =============================
+
+In ECB Mode Plaintext handled one block at a time and each block of plaintext is encrypted using the same key. 
+
+
+>> Tokens are: 
+[ECB, Mode, Plaintext, handled, block, time, block, plaintext, encrypted, key, .] 
+
+>> PoS Tags are: 
+[('ECB', 'PROPN'), ('Mode', 'PROPN'), ('Plaintext', 'PROPN'), ('handled', 'VERB'), ('block', 'NOUN'), ('time', 'NOUN'), ('block', 'NOUN'), ('plaintext', 'NOUN'), ('encrypted', 'VERB'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ECB', 'compound'), ('Mode', 'compound'), ('Plaintext', 'nsubj'), ('handled', 'ROOT'), ('block', 'dobj'), ('time', 'pobj'), ('block', 'nsubjpass'), ('plaintext', 'pobj'), ('encrypted', 'conj'), ('key', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ECB, Mode], [Mode, Plaintext], [Plaintext, handled], [handled, block], [block, time], [time, block], [block, plaintext], [plaintext, encrypted], [encrypted, key], [key, .]]
+
+>> Trigrams: 
+[[ECB, Mode, Plaintext], [Mode, Plaintext, handled], [Plaintext, handled, block], [handled, block, time], [block, time, block], [time, block, plaintext], [block, plaintext, encrypted], [plaintext, encrypted, key], [encrypted, key, .]]
+
+>> Noun Phrases are: 
+[ECB Mode Plaintext, one block, a time, each block, plaintext, the same key]
+
+>> Named Entities are: 
+[('one', 'CARDINAL')]
+
+
+============================ Sentence 15 =============================
+
+The term codebook is used because, for a given key, there is a unique ciphertext for every b-bit block of plaintext. 
+
+
+>> Tokens are: 
+[term, codebook, ,, given, key, ,, unique, ciphertext, b, -, bit, block, plaintext, .] 
+
+>> PoS Tags are: 
+[('term', 'NOUN'), ('codebook', 'NOUN'), (',', 'PUNCT'), ('given', 'VERB'), ('key', 'NOUN'), (',', 'PUNCT'), ('unique', 'ADJ'), ('ciphertext', 'NOUN'), ('b', 'X'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('block', 'NOUN'), ('plaintext', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('term', 'compound'), ('codebook', 'nsubjpass'), (',', 'punct'), ('given', 'amod'), ('key', 'pobj'), (',', 'punct'), ('unique', 'amod'), ('ciphertext', 'attr'), ('b', 'det'), ('-', 'punct'), ('bit', 'compound'), ('block', 'pobj'), ('plaintext', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[term, codebook], [codebook, ,], [,, given], [given, key], [key, ,], [,, unique], [unique, ciphertext], [ciphertext, b], [b, -], [-, bit], [bit, block], [block, plaintext], [plaintext, .]]
+
+>> Trigrams: 
+[[term, codebook, ,], [codebook, ,, given], [,, given, key], [given, key, ,], [key, ,, unique], [,, unique, ciphertext], [unique, ciphertext, b], [ciphertext, b, -], [b, -, bit], [-, bit, block], [bit, block, plaintext], [block, plaintext, .]]
+
+>> Noun Phrases are: 
+[The term codebook, a given key, a unique ciphertext, every b-bit block, plaintext]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  1. 
+
+
+>> Tokens are: 
+[ , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  , 1, .] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE'), ('1', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('1', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ], [ , 1], [1, .]]
+
+>> Trigrams: 
+[[ , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ], [‹#›,  , 1], [ , 1, .]]
+
+>> Noun Phrases are: 
+[                                                                                Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG'), ('1', 'CARDINAL')]
+
+
+============================ Sentence 17 =============================
+
+ECB Encryption & Decryption P1 Encrypt C1  K P2 Encrypt C2   
+
+
+>> Tokens are: 
+[ECB, Encryption, &, Decryption, P1, Encrypt, C1,  , K, P2, Encrypt, C2,  ] 
+
+>> PoS Tags are: 
+[('ECB', 'PROPN'), ('Encryption', 'PROPN'), ('&', 'CCONJ'), ('Decryption', 'PROPN'), ('P1', 'PROPN'), ('Encrypt', 'PROPN'), ('C1', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), ('P2', 'PROPN'), ('Encrypt', 'PROPN'), ('C2', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('ECB', 'compound'), ('Encryption', 'nmod'), ('&', 'cc'), ('Decryption', 'conj'), ('P1', 'compound'), ('Encrypt', 'compound'), ('C1', 'nmod'), (' ', 'appos'), ('K', 'compound'), ('P2', 'compound'), ('Encrypt', 'compound'), ('C2', 'ROOT'), (' ', 'appos')]
+
+>> Bigrams: 
+[[ECB, Encryption], [Encryption, &], [&, Decryption], [Decryption, P1], [P1, Encrypt], [Encrypt, C1], [C1,  ], [ , K], [K, P2], [P2, Encrypt], [Encrypt, C2], [C2,  ]]
+
+>> Trigrams: 
+[[ECB, Encryption, &], [Encryption, &, Decryption], [&, Decryption, P1], [Decryption, P1, Encrypt], [P1, Encrypt, C1], [Encrypt, C1,  ], [C1,  , K], [ , K, P2], [K, P2, Encrypt], [P2, Encrypt, C2], [Encrypt, C2,  ]]
+
+>> Noun Phrases are: 
+[ECB Encryption & Decryption P1 Encrypt C1  K P2 Encrypt C2]
+
+>> Named Entities are: 
+[('ECB Encryption & Decryption P1 Encrypt C1', 'ORG')]
+
+
+============================ Sentence 18 =============================
+
+K PN Encrypt CN  K C1 Decrypt P1  K C2 Decrypt P2  K CN Decrypt PN  K … … 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   
+
+
+>> Tokens are: 
+[K, PN, Encrypt, CN,  , K, C1, Decrypt, P1,  , K, C2, Decrypt, P2,  , K, CN, Decrypt, PN,  , K, …, …, 64, -, bit, 64, -, bit, 64, -, bit, 64, -, bit, 64, -, bit, 64, -, bit, 64, -, bit, 64, -, bit, 64, -, bit, 64, -, bit, 64, -, bit, 64, -, bit,  , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  ] 
+
+>> PoS Tags are: 
+[('K', 'PROPN'), ('PN', 'PROPN'), ('Encrypt', 'PROPN'), ('CN', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), ('C1', 'PROPN'), ('Decrypt', 'PROPN'), ('P1', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), ('C2', 'PROPN'), ('Decrypt', 'PROPN'), ('P2', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), ('CN', 'PROPN'), ('Decrypt', 'PROPN'), ('PN', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), ('…', 'PUNCT'), ('…', 'PUNCT'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), (' ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('K', 'compound'), ('PN', 'compound'), ('Encrypt', 'compound'), ('CN', 'nsubj'), (' ', 'appos'), ('K', 'compound'), ('C1', 'compound'), ('Decrypt', 'compound'), ('P1', 'appos'), (' ', 'appos'), ('K', 'compound'), ('C2', 'compound'), ('Decrypt', 'compound'), ('P2', 'appos'), (' ', 'appos'), ('K', 'compound'), ('CN', 'appos'), ('Decrypt', 'appos'), ('PN', 'appos'), (' ', 'compound'), ('K', 'appos'), ('…', 'punct'), ('…', 'punct'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'nmod'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'appos'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'nmod'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'appos'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'nmod'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'appos'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'nmod'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'appos'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'nmod'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'appos'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'nmod'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'compound'), (' ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'conj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[K, PN], [PN, Encrypt], [Encrypt, CN], [CN,  ], [ , K], [K, C1], [C1, Decrypt], [Decrypt, P1], [P1,  ], [ , K], [K, C2], [C2, Decrypt], [Decrypt, P2], [P2,  ], [ , K], [K, CN], [CN, Decrypt], [Decrypt, PN], [PN,  ], [ , K], [K, …], […, …], […, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit, 64], [64, -], [-, bit], [bit,  ], [ , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[K, PN, Encrypt], [PN, Encrypt, CN], [Encrypt, CN,  ], [CN,  , K], [ , K, C1], [K, C1, Decrypt], [C1, Decrypt, P1], [Decrypt, P1,  ], [P1,  , K], [ , K, C2], [K, C2, Decrypt], [C2, Decrypt, P2], [Decrypt, P2,  ], [P2,  , K], [ , K, CN], [K, CN, Decrypt], [CN, Decrypt, PN], [Decrypt, PN,  ], [PN,  , K], [ , K, …], [K, …, …], […, …, 64], […, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit, 64], [bit, 64, -], [64, -, bit], [-, bit,  ], [bit,  , Unit-3], [ , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ]]
+
+>> Noun Phrases are: 
+[K PN Encrypt CN, K C1 Decrypt P1, K C2 Decrypt P2, K CN, Decrypt, PN,  K, 64-bit, 64-bit, 64-bit, 64-bit, 64-bit,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Decrypt P1', 'PERSON'), ('Decrypt P2', 'PERSON'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('64', 'CARDINAL'), ('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 19 =============================
+
+Electronic Code Book - Cont… Strength: it’s simple. 
+
+
+>> Tokens are: 
+[Electronic, Code, Book, -, Cont, …, Strength, :, simple, .] 
+
+>> PoS Tags are: 
+[('Electronic', 'PROPN'), ('Code', 'PROPN'), ('Book', 'PROPN'), ('-', 'PUNCT'), ('Cont', 'PROPN'), ('…', 'PUNCT'), ('Strength', 'NOUN'), (':', 'PUNCT'), ('simple', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Electronic', 'compound'), ('Code', 'compound'), ('Book', 'compound'), ('-', 'punct'), ('Cont', 'nsubj'), ('…', 'punct'), ('Strength', 'appos'), (':', 'punct'), ('simple', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Electronic, Code], [Code, Book], [Book, -], [-, Cont], [Cont, …], […, Strength], [Strength, :], [:, simple], [simple, .]]
+
+>> Trigrams: 
+[[Electronic, Code, Book], [Code, Book, -], [Book, -, Cont], [-, Cont, …], [Cont, …, Strength], […, Strength, :], [Strength, :, simple], [:, simple, .]]
+
+>> Noun Phrases are: 
+[Electronic Code Book - Cont, … Strength, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 20 =============================
+
+Weakness: Repetitive information contained in the plaintext may show in the ciphertext, if aligned with blocks. 
+
+
+>> Tokens are: 
+[Weakness, :, Repetitive, information, contained, plaintext, ciphertext, ,, aligned, blocks, .] 
+
+>> PoS Tags are: 
+[('Weakness', 'NOUN'), (':', 'PUNCT'), ('Repetitive', 'ADJ'), ('information', 'NOUN'), ('contained', 'VERB'), ('plaintext', 'NOUN'), ('ciphertext', 'NOUN'), (',', 'PUNCT'), ('aligned', 'VERB'), ('blocks', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Weakness', 'dep'), (':', 'punct'), ('Repetitive', 'amod'), ('information', 'nsubj'), ('contained', 'acl'), ('plaintext', 'pobj'), ('ciphertext', 'pobj'), (',', 'punct'), ('aligned', 'advcl'), ('blocks', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Weakness, :], [:, Repetitive], [Repetitive, information], [information, contained], [contained, plaintext], [plaintext, ciphertext], [ciphertext, ,], [,, aligned], [aligned, blocks], [blocks, .]]
+
+>> Trigrams: 
+[[Weakness, :, Repetitive], [:, Repetitive, information], [Repetitive, information, contained], [information, contained, plaintext], [contained, plaintext, ciphertext], [plaintext, ciphertext, ,], [ciphertext, ,, aligned], [,, aligned, blocks], [aligned, blocks, .]]
+
+>> Noun Phrases are: 
+[Repetitive information, the plaintext, the ciphertext, blocks]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 22 =============================
+
+If the message has repetitive elements with a period of repetition a multiple of b bits, then these elements can be identified by the analyst. 
+
+
+>> Tokens are: 
+[message, repetitive, elements, period, repetition, multiple, b, bits, ,, elements, identified, analyst, .] 
+
+>> PoS Tags are: 
+[('message', 'NOUN'), ('repetitive', 'ADJ'), ('elements', 'NOUN'), ('period', 'NOUN'), ('repetition', 'NOUN'), ('multiple', 'NOUN'), ('b', 'NOUN'), ('bits', 'NOUN'), (',', 'PUNCT'), ('elements', 'NOUN'), ('identified', 'VERB'), ('analyst', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('message', 'nsubj'), ('repetitive', 'amod'), ('elements', 'dobj'), ('period', 'pobj'), ('repetition', 'pobj'), ('multiple', 'appos'), ('b', 'pobj'), ('bits', 'pobj'), (',', 'punct'), ('elements', 'nsubjpass'), ('identified', 'ROOT'), ('analyst', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[message, repetitive], [repetitive, elements], [elements, period], [period, repetition], [repetition, multiple], [multiple, b], [b, bits], [bits, ,], [,, elements], [elements, identified], [identified, analyst], [analyst, .]]
+
+>> Trigrams: 
+[[message, repetitive, elements], [repetitive, elements, period], [elements, period, repetition], [period, repetition, multiple], [repetition, multiple, b], [multiple, b, bits], [b, bits, ,], [bits, ,, elements], [,, elements, identified], [elements, identified, analyst], [identified, analyst, .]]
+
+>> Noun Phrases are: 
+[the message, repetitive elements, a period, repetition, a multiple, b, bits, these elements, the analyst]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+Typical application:  Secure transmission of short pieces of information (e.g.--.- a temporary encryption key)   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  2. 
+
+
+>> Tokens are: 
+[Typical, application, :,  , Secure, transmission, short, pieces, information, (, e.g.--.-, temporary, encryption, key, ),   , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  , 2, .] 
+
+>> PoS Tags are: 
+[('Typical', 'ADJ'), ('application', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE'), ('Secure', 'VERB'), ('transmission', 'NOUN'), ('short', 'ADJ'), ('pieces', 'NOUN'), ('information', 'NOUN'), ('(', 'PUNCT'), ('e.g.--.-', 'NOUN'), ('temporary', 'ADJ'), ('encryption', 'NOUN'), ('key', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE'), ('2', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Typical', 'amod'), ('application', 'nsubj'), (':', 'punct'), (' ', 'appos'), ('Secure', 'acl'), ('transmission', 'dobj'), ('short', 'amod'), ('pieces', 'pobj'), ('information', 'pobj'), ('(', 'punct'), ('e.g.--.-', 'dep'), ('temporary', 'amod'), ('encryption', 'nsubj'), ('key', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct'), (' ', 'appos'), ('2', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Typical, application], [application, :], [:,  ], [ , Secure], [Secure, transmission], [transmission, short], [short, pieces], [pieces, information], [information, (], [(, e.g.--.-], [e.g.--.-, temporary], [temporary, encryption], [encryption, key], [key, )], [),   ], [  , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ], [ , 2], [2, .]]
+
+>> Trigrams: 
+[[Typical, application, :], [application, :,  ], [:,  , Secure], [ , Secure, transmission], [Secure, transmission, short], [transmission, short, pieces], [short, pieces, information], [pieces, information, (], [information, (, e.g.--.-], [(, e.g.--.-, temporary], [e.g.--.-, temporary, encryption], [temporary, encryption, key], [encryption, key, )], [key, ),   ], [),   , Unit-3], [  , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ], [‹#›,  , 2], [ , 2, .]]
+
+>> Noun Phrases are: 
+[Typical application, transmission, short pieces, information, a temporary encryption,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('2', 'CARDINAL')]
+
+
+============================ Sentence 24 =============================
+
+Cipher Block Chaining (CBC) CBC is a technique in which the same plaintext block, if repeated, produces different ciphertext blocks. 
+
+
+>> Tokens are: 
+[Cipher, Block, Chaining, (, CBC, ), CBC, technique, plaintext, block, ,, repeated, ,, produces, different, ciphertext, blocks, .] 
+
+>> PoS Tags are: 
+[('Cipher', 'PROPN'), ('Block', 'PROPN'), ('Chaining', 'PROPN'), ('(', 'PUNCT'), ('CBC', 'PROPN'), (')', 'PUNCT'), ('CBC', 'PROPN'), ('technique', 'NOUN'), ('plaintext', 'NOUN'), ('block', 'NOUN'), (',', 'PUNCT'), ('repeated', 'VERB'), (',', 'PUNCT'), ('produces', 'VERB'), ('different', 'ADJ'), ('ciphertext', 'NOUN'), ('blocks', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Cipher', 'compound'), ('Block', 'compound'), ('Chaining', 'nmod'), ('(', 'punct'), ('CBC', 'appos'), (')', 'punct'), ('CBC', 'nsubj'), ('technique', 'attr'), ('plaintext', 'compound'), ('block', 'nsubj'), (',', 'punct'), ('repeated', 'advcl'), (',', 'punct'), ('produces', 'relcl'), ('different', 'amod'), ('ciphertext', 'compound'), ('blocks', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Cipher, Block], [Block, Chaining], [Chaining, (], [(, CBC], [CBC, )], [), CBC], [CBC, technique], [technique, plaintext], [plaintext, block], [block, ,], [,, repeated], [repeated, ,], [,, produces], [produces, different], [different, ciphertext], [ciphertext, blocks], [blocks, .]]
+
+>> Trigrams: 
+[[Cipher, Block, Chaining], [Block, Chaining, (], [Chaining, (, CBC], [(, CBC, )], [CBC, ), CBC], [), CBC, technique], [CBC, technique, plaintext], [technique, plaintext, block], [plaintext, block, ,], [block, ,, repeated], [,, repeated, ,], [repeated, ,, produces], [,, produces, different], [produces, different, ciphertext], [different, ciphertext, blocks], [ciphertext, blocks, .]]
+
+>> Noun Phrases are: 
+[CBC, a technique, the same plaintext block, different ciphertext blocks]
+
+>> Named Entities are: 
+[('CBC', 'ORG'), ('CBC', 'ORG')]
+
+
+============================ Sentence 25 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+In this scheme, the input to the encryption algorithm is the XOR of the current plaintext block and the preceding ciphertext block; the same key is used for each block. 
+
+
+>> Tokens are: 
+[scheme, ,, input, encryption, algorithm, XOR, current, plaintext, block, preceding, ciphertext, block, ;, key, block, .] 
+
+>> PoS Tags are: 
+[('scheme', 'NOUN'), (',', 'PUNCT'), ('input', 'NOUN'), ('encryption', 'NOUN'), ('algorithm', 'NOUN'), ('XOR', 'NOUN'), ('current', 'ADJ'), ('plaintext', 'NOUN'), ('block', 'NOUN'), ('preceding', 'VERB'), ('ciphertext', 'NOUN'), ('block', 'NOUN'), (';', 'PUNCT'), ('key', 'NOUN'), ('block', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('scheme', 'pobj'), (',', 'punct'), ('input', 'nsubj'), ('encryption', 'pobj'), ('algorithm', 'advmod'), ('XOR', 'attr'), ('current', 'amod'), ('plaintext', 'compound'), ('block', 'pobj'), ('preceding', 'amod'), ('ciphertext', 'compound'), ('block', 'conj'), (';', 'punct'), ('key', 'nsubjpass'), ('block', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[scheme, ,], [,, input], [input, encryption], [encryption, algorithm], [algorithm, XOR], [XOR, current], [current, plaintext], [plaintext, block], [block, preceding], [preceding, ciphertext], [ciphertext, block], [block, ;], [;, key], [key, block], [block, .]]
+
+>> Trigrams: 
+[[scheme, ,, input], [,, input, encryption], [input, encryption, algorithm], [encryption, algorithm, XOR], [algorithm, XOR, current], [XOR, current, plaintext], [current, plaintext, block], [plaintext, block, preceding], [block, preceding, ciphertext], [preceding, ciphertext, block], [ciphertext, block, ;], [block, ;, key], [;, key, block], [key, block, .]]
+
+>> Noun Phrases are: 
+[this scheme, the input, the encryption, the XOR, the current plaintext block, the preceding ciphertext block, the same key, each block]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 27 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 28 =============================
+
+To produce the first block of ciphertext, an initialization vector (IV) is XORed with the first block of plaintext. 
+
+
+>> Tokens are: 
+[produce, block, ciphertext, ,, initialization, vector, (, IV, ), XORed, block, plaintext, .] 
+
+>> PoS Tags are: 
+[('produce', 'VERB'), ('block', 'NOUN'), ('ciphertext', 'NOUN'), (',', 'PUNCT'), ('initialization', 'NOUN'), ('vector', 'NOUN'), ('(', 'PUNCT'), ('IV', 'PROPN'), (')', 'PUNCT'), ('XORed', 'PROPN'), ('block', 'NOUN'), ('plaintext', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('produce', 'advcl'), ('block', 'dobj'), ('ciphertext', 'pobj'), (',', 'punct'), ('initialization', 'compound'), ('vector', 'conj'), ('(', 'punct'), ('IV', 'appos'), (')', 'punct'), ('XORed', 'attr'), ('block', 'pobj'), ('plaintext', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[produce, block], [block, ciphertext], [ciphertext, ,], [,, initialization], [initialization, vector], [vector, (], [(, IV], [IV, )], [), XORed], [XORed, block], [block, plaintext], [plaintext, .]]
+
+>> Trigrams: 
+[[produce, block, ciphertext], [block, ciphertext, ,], [ciphertext, ,, initialization], [,, initialization, vector], [initialization, vector, (], [vector, (, IV], [(, IV, )], [IV, ), XORed], [), XORed, block], [XORed, block, plaintext], [block, plaintext, .]]
+
+>> Noun Phrases are: 
+[the first block, ciphertext, an initialization vector, IV, XORed, the first block, plaintext]
+
+>> Named Entities are: 
+[('first', 'ORDINAL'), ('XORed', 'ORG'), ('first', 'ORDINAL')]
+
+
+============================ Sentence 29 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 30 =============================
+
+On decryption, the IV is XORed with the output of the decryption algorithm to recover the first block of plaintext. 
+
+
+>> Tokens are: 
+[decryption, ,, IV, XORed, output, decryption, algorithm, recover, block, plaintext, .] 
+
+>> PoS Tags are: 
+[('decryption', 'NOUN'), (',', 'PUNCT'), ('IV', 'PROPN'), ('XORed', 'PROPN'), ('output', 'NOUN'), ('decryption', 'NOUN'), ('algorithm', 'NOUN'), ('recover', 'VERB'), ('block', 'NOUN'), ('plaintext', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('decryption', 'pobj'), (',', 'punct'), ('IV', 'nsubj'), ('XORed', 'attr'), ('output', 'pobj'), ('decryption', 'compound'), ('algorithm', 'pobj'), ('recover', 'xcomp'), ('block', 'dobj'), ('plaintext', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[decryption, ,], [,, IV], [IV, XORed], [XORed, output], [output, decryption], [decryption, algorithm], [algorithm, recover], [recover, block], [block, plaintext], [plaintext, .]]
+
+>> Trigrams: 
+[[decryption, ,, IV], [,, IV, XORed], [IV, XORed, output], [XORed, output, decryption], [output, decryption, algorithm], [decryption, algorithm, recover], [algorithm, recover, block], [recover, block, plaintext], [block, plaintext, .]]
+
+>> Noun Phrases are: 
+[decryption, the IV, XORed, the output, the decryption algorithm, the first block, plaintext]
+
+>> Named Entities are: 
+[('XORed', 'PERSON'), ('first', 'ORDINAL')]
+
+
+============================ Sentence 31 =============================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  2. 
+
+
+>> Tokens are: 
+[ , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  , 2, .] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE'), ('2', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct'), (' ', 'appos'), ('2', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ], [ , 2], [2, .]]
+
+>> Trigrams: 
+[[ , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ], [‹#›,  , 2], [ , 2, .]]
+
+>> Noun Phrases are: 
+[                                                                                Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG'), ('2', 'CARDINAL')]
+
+
+============================ Sentence 32 =============================
+
+CBC - Encryption & Decryption P1 Encrypt C1  K   IV P2 Encrypt C2   
+
+
+>> Tokens are: 
+[CBC, -, Encryption, &, Decryption, P1, Encrypt, C1,  , K,   , IV, P2, Encrypt, C2,  ] 
+
+>> PoS Tags are: 
+[('CBC', 'PROPN'), ('-', 'PUNCT'), ('Encryption', 'PROPN'), ('&', 'CCONJ'), ('Decryption', 'PROPN'), ('P1', 'PROPN'), ('Encrypt', 'PROPN'), ('C1', 'PROPN'), (' ', 'SPACE'), ('K', 'NOUN'), ('  ', 'SPACE'), ('IV', 'PROPN'), ('P2', 'PROPN'), ('Encrypt', 'PROPN'), ('C2', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('CBC', 'compound'), ('-', 'punct'), ('Encryption', 'nmod'), ('&', 'cc'), ('Decryption', 'conj'), ('P1', 'compound'), ('Encrypt', 'compound'), ('C1', 'ROOT'), (' ', 'appos'), ('K', 'compound'), ('  ', 'nmod'), ('IV', 'compound'), ('P2', 'compound'), ('Encrypt', 'compound'), ('C2', 'appos'), (' ', 'appos')]
+
+>> Bigrams: 
+[[CBC, -], [-, Encryption], [Encryption, &], [&, Decryption], [Decryption, P1], [P1, Encrypt], [Encrypt, C1], [C1,  ], [ , K], [K,   ], [  , IV], [IV, P2], [P2, Encrypt], [Encrypt, C2], [C2,  ]]
+
+>> Trigrams: 
+[[CBC, -, Encryption], [-, Encryption, &], [Encryption, &, Decryption], [&, Decryption, P1], [Decryption, P1, Encrypt], [P1, Encrypt, C1], [Encrypt, C1,  ], [C1,  , K], [ , K,   ], [K,   , IV], [  , IV, P2], [IV, P2, Encrypt], [P2, Encrypt, C2], [Encrypt, C2,  ]]
+
+>> Noun Phrases are: 
+[CBC - Encryption & Decryption P1 Encrypt C1, K   IV P2 Encrypt C2]
+
+>> Named Entities are: 
+[('CBC - Encryption & Decryption P1 Encrypt C1', 'ORG')]
+
+
+============================ Sentence 33 =============================
+
+K   … PN Encrypt CN   
+
+
+>> Tokens are: 
+[K,   , …, PN, Encrypt, CN,  ] 
+
+>> PoS Tags are: 
+[('K', 'NOUN'), ('  ', 'SPACE'), ('…', 'PUNCT'), ('PN', 'PROPN'), ('Encrypt', 'PROPN'), ('CN', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('K', 'compound'), ('  ', 'ROOT'), ('…', 'punct'), ('PN', 'compound'), ('Encrypt', 'compound'), ('CN', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[K,   ], [  , …], […, PN], [PN, Encrypt], [Encrypt, CN], [CN,  ]]
+
+>> Trigrams: 
+[[K,   , …], [  , …, PN], […, PN, Encrypt], [PN, Encrypt, CN], [Encrypt, CN,  ]]
+
+>> Noun Phrases are: 
+[PN Encrypt CN]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 34 =============================
+
+K    C1 Decrypt P1   K  IV C2 Decrypt P2    
+
+
+>> Tokens are: 
+[K,    , C1, Decrypt, P1,   , K,  , IV, C2, Decrypt, P2,   ] 
+
+>> PoS Tags are: 
+[('K', 'PROPN'), ('   ', 'SPACE'), ('C1', 'PROPN'), ('Decrypt', 'PROPN'), ('P1', 'PROPN'), ('  ', 'SPACE'), ('K', 'PROPN'), (' ', 'SPACE'), ('IV', 'PROPN'), ('C2', 'PROPN'), ('Decrypt', 'PROPN'), ('P2', 'PROPN'), ('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('K', 'nmod'), ('   ', 'nummod'), ('C1', 'compound'), ('Decrypt', 'compound'), ('P1', 'ROOT'), ('  ', 'nmod'), ('K', 'nmod'), (' ', 'nummod'), ('IV', 'compound'), ('C2', 'compound'), ('Decrypt', 'compound'), ('P2', 'appos'), ('  ', 'appos')]
+
+>> Bigrams: 
+[[K,    ], [   , C1], [C1, Decrypt], [Decrypt, P1], [P1,   ], [  , K], [K,  ], [ , IV], [IV, C2], [C2, Decrypt], [Decrypt, P2], [P2,   ]]
+
+>> Trigrams: 
+[[K,    , C1], [   , C1, Decrypt], [C1, Decrypt, P1], [Decrypt, P1,   ], [P1,   , K], [  , K,  ], [K,  , IV], [ , IV, C2], [IV, C2, Decrypt], [C2, Decrypt, P2], [Decrypt, P2,   ]]
+
+>> Noun Phrases are: 
+[K    C1 Decrypt P1,   K  IV C2 Decrypt P2]
+
+>> Named Entities are: 
+[('Decrypt P1', 'PERSON'), ('Decrypt P2', 'PERSON')]
+
+
+============================ Sentence 35 =============================
+
+K  CN Decrypt PN   K …   CN-1 
+
+
+>> Tokens are: 
+[K,  , CN, Decrypt, PN,   , K, …,   , CN-1] 
+
+>> PoS Tags are: 
+[('K', 'PROPN'), (' ', 'SPACE'), ('CN', 'PROPN'), ('Decrypt', 'PROPN'), ('PN', 'PROPN'), ('  ', 'SPACE'), ('K', 'NOUN'), ('…', 'PUNCT'), ('  ', 'SPACE'), ('CN-1', 'NUM')] 
+
+>> Dependency Tags are: 
+[('K', 'nmod'), (' ', 'nmod'), ('CN', 'compound'), ('Decrypt', 'compound'), ('PN', 'dep'), ('  ', 'compound'), ('K', 'appos'), ('…', 'punct'), ('  ', 'ROOT'), ('CN-1', 'punct')]
+
+>> Bigrams: 
+[[K,  ], [ , CN], [CN, Decrypt], [Decrypt, PN], [PN,   ], [  , K], [K, …], […,   ], [  , CN-1]]
+
+>> Trigrams: 
+[[K,  , CN], [ , CN, Decrypt], [CN, Decrypt, PN], [Decrypt, PN,   ], [PN,   , K], [  , K, …], [K, …,   ], […,   , CN-1]]
+
+>> Noun Phrases are: 
+[  K]
+
+>> Named Entities are: 
+[('CN Decrypt PN', 'PERSON')]
+
+
+============================ Sentence 36 =============================
+
+CN-1 
+
+
+>> Tokens are: 
+[CN-1] 
+
+>> PoS Tags are: 
+[('CN-1', 'NUM')] 
+
+>> Dependency Tags are: 
+[('CN-1', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 37 =============================
+
+   8  2. 
+
+
+>> Tokens are: 
+[   , 8,  , 2, .] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('8', 'NUM'), (' ', 'SPACE'), ('2', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('   ', 'compound'), ('8', 'nummod'), (' ', 'ROOT'), ('2', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[   , 8], [8,  ], [ , 2], [2, .]]
+
+>> Trigrams: 
+[[   , 8,  ], [8,  , 2], [ , 2, .]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('2', 'CARDINAL')]
+
+
+============================ Sentence 38 =============================
+
+Cipher Block Chaining (CBC) – Cont… Strength: because of the chaining mechanism of CBC, it is an appropriate mode for encrypting messages of length greater than b bits Typical application:  General-purpose block oriented transmission Authentication   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  3. 
+
+
+>> Tokens are: 
+[Cipher, Block, Chaining, (, CBC, ), –, Cont, …, Strength, :, chaining, mechanism, CBC, ,, appropriate, mode, encrypting, messages, length, greater, b, bits, Typical, application, :,  , General, -, purpose,  , block, oriented, transmission, Authentication,   , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  , 3, .] 
+
+>> PoS Tags are: 
+[('Cipher', 'PROPN'), ('Block', 'PROPN'), ('Chaining', 'PROPN'), ('(', 'PUNCT'), ('CBC', 'PROPN'), (')', 'PUNCT'), ('–', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT'), ('Strength', 'NOUN'), (':', 'PUNCT'), ('chaining', 'VERB'), ('mechanism', 'NOUN'), ('CBC', 'PROPN'), (',', 'PUNCT'), ('appropriate', 'ADJ'), ('mode', 'NOUN'), ('encrypting', 'VERB'), ('messages', 'NOUN'), ('length', 'NOUN'), ('greater', 'ADJ'), ('b', 'ADP'), ('bits', 'VERB'), ('Typical', 'ADJ'), ('application', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE'), ('General', 'ADJ'), ('-', 'PUNCT'), ('purpose', 'NOUN'), ('\u2002', 'SPACE'), ('block', 'NOUN'), ('oriented', 'VERB'), ('transmission', 'NOUN'), ('Authentication', 'PROPN'), ('  ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE'), ('3', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Cipher', 'compound'), ('Block', 'compound'), ('Chaining', 'dep'), ('(', 'punct'), ('CBC', 'appos'), (')', 'punct'), ('–', 'punct'), ('Cont', 'appos'), ('…', 'punct'), ('Strength', 'appos'), (':', 'punct'), ('chaining', 'amod'), ('mechanism', 'pobj'), ('CBC', 'pobj'), (',', 'punct'), ('appropriate', 'amod'), ('mode', 'attr'), ('encrypting', 'pcomp'), ('messages', 'dobj'), ('length', 'pobj'), ('greater', 'amod'), ('b', 'meta'), ('bits', 'dep'), ('Typical', 'amod'), ('application', 'dobj'), (':', 'punct'), (' ', 'dep'), ('General', 'amod'), ('-', 'punct'), ('purpose', 'compound'), ('\u2002', 'nmod'), ('block', 'npadvmod'), ('oriented', 'amod'), ('transmission', 'compound'), ('Authentication', 'compound'), ('  ', 'nsubj'), ('Unit-3', 'ccomp'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('3', 'appos'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Cipher, Block], [Block, Chaining], [Chaining, (], [(, CBC], [CBC, )], [), –], [–, Cont], [Cont, …], […, Strength], [Strength, :], [:, chaining], [chaining, mechanism], [mechanism, CBC], [CBC, ,], [,, appropriate], [appropriate, mode], [mode, encrypting], [encrypting, messages], [messages, length], [length, greater], [greater, b], [b, bits], [bits, Typical], [Typical, application], [application, :], [:,  ], [ , General], [General, -], [-, purpose], [purpose,  ], [ , block], [block, oriented], [oriented, transmission], [transmission, Authentication], [Authentication,   ], [  , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ], [ , 3], [3, .]]
+
+>> Trigrams: 
+[[Cipher, Block, Chaining], [Block, Chaining, (], [Chaining, (, CBC], [(, CBC, )], [CBC, ), –], [), –, Cont], [–, Cont, …], [Cont, …, Strength], […, Strength, :], [Strength, :, chaining], [:, chaining, mechanism], [chaining, mechanism, CBC], [mechanism, CBC, ,], [CBC, ,, appropriate], [,, appropriate, mode], [appropriate, mode, encrypting], [mode, encrypting, messages], [encrypting, messages, length], [messages, length, greater], [length, greater, b], [greater, b, bits], [b, bits, Typical], [bits, Typical, application], [Typical, application, :], [application, :,  ], [:,  , General], [ , General, -], [General, -, purpose], [-, purpose,  ], [purpose,  , block], [ , block, oriented], [block, oriented, transmission], [oriented, transmission, Authentication], [transmission, Authentication,   ], [Authentication,   , Unit-3], [  , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ], [‹#›,  , 3], [ , 3, .]]
+
+>> Noun Phrases are: 
+[CBC, Cont, Strength, the chaining mechanism, CBC, it, an appropriate mode, messages, length, Typical application,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('CBC', 'ORG'), ('CBC', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('3', 'CARDINAL')]
+
+
+============================ Sentence 39 =============================
+
+Cipher Feedback Mode (CFB) 
+
+
+>> Tokens are: 
+[Cipher, Feedback, Mode, (, CFB, )] 
+
+>> PoS Tags are: 
+[('Cipher', 'PROPN'), ('Feedback', 'PROPN'), ('Mode', 'PROPN'), ('(', 'PUNCT'), ('CFB', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Cipher', 'compound'), ('Feedback', 'compound'), ('Mode', 'ROOT'), ('(', 'punct'), ('CFB', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[Cipher, Feedback], [Feedback, Mode], [Mode, (], [(, CFB], [CFB, )]]
+
+>> Trigrams: 
+[[Cipher, Feedback, Mode], [Feedback, Mode, (], [Mode, (, CFB], [(, CFB, )]]
+
+>> Noun Phrases are: 
+[Cipher Feedback Mode, CFB]
+
+>> Named Entities are: 
+[('Feedback Mode', 'PERSON'), ('CFB', 'ORG')]
+
+
+============================ Sentence 40 =============================
+
+For AES, DES, or any block cipher, encryption is performed on a block of b bits. 
+
+
+>> Tokens are: 
+[AES, ,, DES, ,, block, cipher, ,, encryption, performed, block, b, bits, .] 
+
+>> PoS Tags are: 
+[('AES', 'PROPN'), (',', 'PUNCT'), ('DES', 'PROPN'), (',', 'PUNCT'), ('block', 'NOUN'), ('cipher', 'NOUN'), (',', 'PUNCT'), ('encryption', 'NOUN'), ('performed', 'VERB'), ('block', 'NOUN'), ('b', 'NOUN'), ('bits', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AES', 'pobj'), (',', 'punct'), ('DES', 'conj'), (',', 'punct'), ('block', 'compound'), ('cipher', 'conj'), (',', 'punct'), ('encryption', 'nsubjpass'), ('performed', 'ROOT'), ('block', 'pobj'), ('b', 'compound'), ('bits', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AES, ,], [,, DES], [DES, ,], [,, block], [block, cipher], [cipher, ,], [,, encryption], [encryption, performed], [performed, block], [block, b], [b, bits], [bits, .]]
+
+>> Trigrams: 
+[[AES, ,, DES], [,, DES, ,], [DES, ,, block], [,, block, cipher], [block, cipher, ,], [cipher, ,, encryption], [,, encryption, performed], [encryption, performed, block], [performed, block, b], [block, b, bits], [b, bits, .]]
+
+>> Noun Phrases are: 
+[AES, DES, any block cipher, encryption, a block, b bits]
+
+>> Named Entities are: 
+[('AES', 'ORG')]
+
+
+============================ Sentence 41 =============================
+
+In DES, b = 64 and in AES, b = 128.    
+
+
+>> Tokens are: 
+[DES, ,, b, =, 64, AES, ,, b, =, 128, .,   ] 
+
+>> PoS Tags are: 
+[('DES', 'PROPN'), (',', 'PUNCT'), ('b', 'NOUN'), ('=', 'SYM'), ('64', 'NUM'), ('AES', 'PROPN'), (',', 'PUNCT'), ('b', 'X'), ('=', 'SYM'), ('128', 'NUM'), ('.', 'PUNCT'), ('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('DES', 'pobj'), (',', 'punct'), ('b', 'pobj'), ('=', 'quantmod'), ('64', 'prep'), ('AES', 'pobj'), (',', 'punct'), ('b', 'meta'), ('=', 'compound'), ('128', 'pobj'), ('.', 'punct'), ('  ', 'pobj')]
+
+>> Bigrams: 
+[[DES, ,], [,, b], [b, =], [=, 64], [64, AES], [AES, ,], [,, b], [b, =], [=, 128], [128, .], [.,   ]]
+
+>> Trigrams: 
+[[DES, ,, b], [,, b, =], [b, =, 64], [=, 64, AES], [64, AES, ,], [AES, ,, b], [,, b, =], [b, =, 128], [=, 128, .], [128, .,   ]]
+
+>> Noun Phrases are: 
+[DES, , b, AES]
+
+>> Named Entities are: 
+[('64', 'DATE'), ('128', 'CARDINAL')]
+
+
+============================ Sentence 42 =============================
+
+However, it is possible to convert a block cipher into a stream cipher, using cipher feedback (CFB) mode, output feedback (OFB) mode, and counter (CTR) mode. 
+
+
+>> Tokens are: 
+[,, possible, convert, block, cipher, stream, cipher, ,, cipher, feedback, (, CFB, ), mode, ,, output, feedback, (, OFB, ), mode, ,, counter, (, CTR, ), mode, .] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('possible', 'ADJ'), ('convert', 'VERB'), ('block', 'NOUN'), ('cipher', 'NOUN'), ('stream', 'NOUN'), ('cipher', 'NOUN'), (',', 'PUNCT'), ('cipher', 'NOUN'), ('feedback', 'NOUN'), ('(', 'PUNCT'), ('CFB', 'PROPN'), (')', 'PUNCT'), ('mode', 'NOUN'), (',', 'PUNCT'), ('output', 'NOUN'), ('feedback', 'NOUN'), ('(', 'PUNCT'), ('OFB', 'PROPN'), (')', 'PUNCT'), ('mode', 'NOUN'), (',', 'PUNCT'), ('counter', 'NOUN'), ('(', 'PUNCT'), ('CTR', 'PROPN'), (')', 'PUNCT'), ('mode', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('possible', 'acomp'), ('convert', 'xcomp'), ('block', 'compound'), ('cipher', 'dobj'), ('stream', 'compound'), ('cipher', 'pobj'), (',', 'punct'), ('cipher', 'amod'), ('feedback', 'dobj'), ('(', 'punct'), ('CFB', 'nmod'), (')', 'punct'), ('mode', 'appos'), (',', 'punct'), ('output', 'compound'), ('feedback', 'nmod'), ('(', 'punct'), ('OFB', 'nmod'), (')', 'punct'), ('mode', 'dobj'), (',', 'punct'), ('counter', 'conj'), ('(', 'punct'), ('CTR', 'nmod'), (')', 'punct'), ('mode', 'appos'), ('.', 'punct')]
+
+>> Bigrams: 
+[[,, possible], [possible, convert], [convert, block], [block, cipher], [cipher, stream], [stream, cipher], [cipher, ,], [,, cipher], [cipher, feedback], [feedback, (], [(, CFB], [CFB, )], [), mode], [mode, ,], [,, output], [output, feedback], [feedback, (], [(, OFB], [OFB, )], [), mode], [mode, ,], [,, counter], [counter, (], [(, CTR], [CTR, )], [), mode], [mode, .]]
+
+>> Trigrams: 
+[[,, possible, convert], [possible, convert, block], [convert, block, cipher], [block, cipher, stream], [cipher, stream, cipher], [stream, cipher, ,], [cipher, ,, cipher], [,, cipher, feedback], [cipher, feedback, (], [feedback, (, CFB], [(, CFB, )], [CFB, ), mode], [), mode, ,], [mode, ,, output], [,, output, feedback], [output, feedback, (], [feedback, (, OFB], [(, OFB, )], [OFB, ), mode], [), mode, ,], [mode, ,, counter], [,, counter, (], [counter, (, CTR], [(, CTR, )], [CTR, ), mode], [), mode, .]]
+
+>> Noun Phrases are: 
+[it, a block cipher, a stream cipher, cipher feedback, (CFB) mode, output feedback (OFB) mode, counter, CTR) mode]
+
+>> Named Entities are: 
+[('CFB', 'ORG'), ('OFB', 'ORG'), ('CTR', 'ORG')]
+
+
+============================ Sentence 43 =============================
+
+   
+
+
+>> Tokens are: 
+[  ] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('  ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 44 =============================
+
+A stream cipher eliminates the need to pad a message to be an integral number of blocks. 
+
+
+>> Tokens are: 
+[stream, cipher, eliminates, need, pad, message, integral, number, blocks, .] 
+
+>> PoS Tags are: 
+[('stream', 'NOUN'), ('cipher', 'NOUN'), ('eliminates', 'VERB'), ('need', 'NOUN'), ('pad', 'VERB'), ('message', 'NOUN'), ('integral', 'ADJ'), ('number', 'NOUN'), ('blocks', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('stream', 'compound'), ('cipher', 'nsubj'), ('eliminates', 'ROOT'), ('need', 'dobj'), ('pad', 'acl'), ('message', 'dobj'), ('integral', 'amod'), ('number', 'attr'), ('blocks', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[stream, cipher], [cipher, eliminates], [eliminates, need], [need, pad], [pad, message], [message, integral], [integral, number], [number, blocks], [blocks, .]]
+
+>> Trigrams: 
+[[stream, cipher, eliminates], [cipher, eliminates, need], [eliminates, need, pad], [need, pad, message], [pad, message, integral], [message, integral, number], [integral, number, blocks], [number, blocks, .]]
+
+>> Noun Phrases are: 
+[A stream cipher, the need, a message, an integral number, blocks]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 45 =============================
+
+  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   
+
+
+>> Tokens are: 
+[  , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  ] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('  ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'conj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[  , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[  , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ]]
+
+>> Noun Phrases are: 
+[                                                                                Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 46 =============================
+
+IV Encrypt  K   
+
+
+>> Tokens are: 
+[IV, Encrypt,  , K,  ] 
+
+>> PoS Tags are: 
+[('IV', 'PROPN'), ('Encrypt', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('IV', 'compound'), ('Encrypt', 'ROOT'), (' ', 'appos'), ('K', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[IV, Encrypt], [Encrypt,  ], [ , K], [K,  ]]
+
+>> Trigrams: 
+[[IV, Encrypt,  ], [Encrypt,  , K], [ , K,  ]]
+
+>> Noun Phrases are: 
+[IV Encrypt, K]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 47 =============================
+
+Select s bits Discard b-s bits 
+
+
+>> Tokens are: 
+[Select, s, bits, Discard, b, -, s, bits] 
+
+>> PoS Tags are: 
+[('Select', 'PROPN'), ('s', 'PROPN'), ('bits', 'VERB'), ('Discard', 'PROPN'), ('b', 'PROPN'), ('-', 'PUNCT'), ('s', 'NOUN'), ('bits', 'VERB')] 
+
+>> Dependency Tags are: 
+[('Select', 'nsubj'), ('s', 'case'), ('bits', 'ROOT'), ('Discard', 'compound'), ('b', 'meta'), ('-', 'punct'), ('s', 'nmod'), ('bits', 'dobj')]
+
+>> Bigrams: 
+[[Select, s], [s, bits], [bits, Discard], [Discard, b], [b, -], [-, s], [s, bits]]
+
+>> Trigrams: 
+[[Select, s, bits], [s, bits, Discard], [bits, Discard, b], [Discard, b, -], [b, -, s], [-, s, bits]]
+
+>> Noun Phrases are: 
+[Select]
+
+>> Named Entities are: 
+[('Discard', 'ORG')]
+
+
+============================ Sentence 48 =============================
+
+P1  S bits C1 S bits Shift register b-s bits | s bits 
+
+
+>> Tokens are: 
+[P1,  , S, bits, C1, S, bits, Shift, register, b, -, s, bits, |, s, bits] 
+
+>> PoS Tags are: 
+[('P1', 'PROPN'), (' ', 'SPACE'), ('S', 'PROPN'), ('bits', 'VERB'), ('C1', 'PROPN'), ('S', 'PROPN'), ('bits', 'VERB'), ('Shift', 'PROPN'), ('register', 'NOUN'), ('b', 'PROPN'), ('-', 'PUNCT'), ('s', 'PRON'), ('bits', 'NOUN'), ('|', 'NOUN'), ('s', 'PART'), ('bits', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('P1', 'compound'), (' ', 'compound'), ('S', 'nsubj'), ('bits', 'ROOT'), ('C1', 'compound'), ('S', 'nsubj'), ('bits', 'ccomp'), ('Shift', 'compound'), ('register', 'compound'), ('b', 'dative'), ('-', 'punct'), ('s', 'nmod'), ('bits', 'compound'), ('|', 'poss'), ('s', 'case'), ('bits', 'appos')]
+
+>> Bigrams: 
+[[P1,  ], [ , S], [S, bits], [bits, C1], [C1, S], [S, bits], [bits, Shift], [Shift, register], [register, b], [b, -], [-, s], [s, bits], [bits, |], [|, s], [s, bits]]
+
+>> Trigrams: 
+[[P1,  , S], [ , S, bits], [S, bits, C1], [bits, C1, S], [C1, S, bits], [S, bits, Shift], [bits, Shift, register], [Shift, register, b], [register, b, -], [b, -, s], [-, s, bits], [s, bits, |], [bits, |, s], [|, s, bits]]
+
+>> Noun Phrases are: 
+[P1  S, C1 S, Shift register b, s bits | s bits]
+
+>> Named Entities are: 
+[('C1 S', 'ORG')]
+
+
+============================ Sentence 49 =============================
+
+Encrypt  K   
+
+
+>> Tokens are: 
+[Encrypt,  , K,  ] 
+
+>> PoS Tags are: 
+[('Encrypt', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Encrypt', 'compound'), (' ', 'ROOT'), ('K', 'nmod'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Encrypt,  ], [ , K], [K,  ]]
+
+>> Trigrams: 
+[[Encrypt,  , K], [ , K,  ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('Encrypt', 'PERSON')]
+
+
+============================ Sentence 50 =============================
+
+Select s bits Discard b-s bits P2   
+
+
+>> Tokens are: 
+[Select, s, bits, Discard, b, -, s, bits, P2,  ] 
+
+>> PoS Tags are: 
+[('Select', 'PROPN'), ('s', 'PROPN'), ('bits', 'VERB'), ('Discard', 'PROPN'), ('b', 'PROPN'), ('-', 'PUNCT'), ('s', 'NOUN'), ('bits', 'VERB'), ('P2', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Select', 'nsubj'), ('s', 'case'), ('bits', 'ROOT'), ('Discard', 'compound'), ('b', 'meta'), ('-', 'punct'), ('s', 'nmod'), ('bits', 'dobj'), ('P2', 'npadvmod'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Select, s], [s, bits], [bits, Discard], [Discard, b], [b, -], [-, s], [s, bits], [bits, P2], [P2,  ]]
+
+>> Trigrams: 
+[[Select, s, bits], [s, bits, Discard], [bits, Discard, b], [Discard, b, -], [b, -, s], [-, s, bits], [s, bits, P2], [bits, P2,  ]]
+
+>> Noun Phrases are: 
+[Select]
+
+>> Named Entities are: 
+[('Discard', 'ORG')]
+
+
+============================ Sentence 51 =============================
+
+S bits C2 S bits  … Shift register b-s bits | s bits Encrypt  K   
+
+
+>> Tokens are: 
+[S, bits, C2, S, bits,  , …, Shift, register, b, -, s, bits, |, s, bits, Encrypt,  , K,  ] 
+
+>> PoS Tags are: 
+[('S', 'PROPN'), ('bits', 'VERB'), ('C2', 'PROPN'), ('S', 'PROPN'), ('bits', 'VERB'), (' ', 'SPACE'), ('…', 'PUNCT'), ('Shift', 'PROPN'), ('register', 'NOUN'), ('b', 'PROPN'), ('-', 'PUNCT'), ('s', 'PRON'), ('bits', 'NOUN'), ('|', 'NOUN'), ('s', 'PART'), ('bits', 'NOUN'), ('Encrypt', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('S', 'nsubj'), ('bits', 'ccomp'), ('C2', 'compound'), ('S', 'nsubj'), ('bits', 'ccomp'), (' ', 'dobj'), ('…', 'punct'), ('Shift', 'nsubj'), ('register', 'ROOT'), ('b', 'dobj'), ('-', 'punct'), ('s', 'prep'), ('bits', 'compound'), ('|', 'poss'), ('s', 'case'), ('bits', 'dobj'), ('Encrypt', 'compound'), (' ', 'punct'), ('K', 'dobj'), (' ', 'punct')]
+
+>> Bigrams: 
+[[S, bits], [bits, C2], [C2, S], [S, bits], [bits,  ], [ , …], […, Shift], [Shift, register], [register, b], [b, -], [-, s], [s, bits], [bits, |], [|, s], [s, bits], [bits, Encrypt], [Encrypt,  ], [ , K], [K,  ]]
+
+>> Trigrams: 
+[[S, bits, C2], [bits, C2, S], [C2, S, bits], [S, bits,  ], [bits,  , …], [ , …, Shift], […, Shift, register], [Shift, register, b], [register, b, -], [b, -, s], [-, s, bits], [s, bits, |], [bits, |, s], [|, s, bits], [s, bits, Encrypt], [bits, Encrypt,  ], [Encrypt,  , K], [ , K,  ]]
+
+>> Noun Phrases are: 
+[S, C2 S, Shift, b, bits | s bits, K]
+
+>> Named Entities are: 
+[('C2 S', 'ORG'), ('Encrypt', 'PERSON')]
+
+
+============================ Sentence 52 =============================
+
+Select s bits Discard b-s bits 
+
+
+>> Tokens are: 
+[Select, s, bits, Discard, b, -, s, bits] 
+
+>> PoS Tags are: 
+[('Select', 'PROPN'), ('s', 'PROPN'), ('bits', 'VERB'), ('Discard', 'PROPN'), ('b', 'PROPN'), ('-', 'PUNCT'), ('s', 'NOUN'), ('bits', 'VERB')] 
+
+>> Dependency Tags are: 
+[('Select', 'nsubj'), ('s', 'case'), ('bits', 'ROOT'), ('Discard', 'compound'), ('b', 'meta'), ('-', 'punct'), ('s', 'nsubj'), ('bits', 'conj')]
+
+>> Bigrams: 
+[[Select, s], [s, bits], [bits, Discard], [Discard, b], [b, -], [-, s], [s, bits]]
+
+>> Trigrams: 
+[[Select, s, bits], [s, bits, Discard], [bits, Discard, b], [Discard, b, -], [b, -, s], [-, s, bits]]
+
+>> Noun Phrases are: 
+[Select, Discard b-s]
+
+>> Named Entities are: 
+[('Discard', 'ORG')]
+
+
+============================ Sentence 53 =============================
+
+PN  S bits CN S bits   CN-1 3. 
+
+
+>> Tokens are: 
+[PN,  , S, bits, CN, S, bits,   , CN-1, 3, .] 
+
+>> PoS Tags are: 
+[('PN', 'PROPN'), (' ', 'SPACE'), ('S', 'PROPN'), ('bits', 'VERB'), ('CN', 'PROPN'), ('S', 'PROPN'), ('bits', 'VERB'), ('  ', 'SPACE'), ('CN-1', 'NUM'), ('3', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('PN', 'nmod'), (' ', 'compound'), ('S', 'nsubj'), ('bits', 'ROOT'), ('CN', 'compound'), ('S', 'nsubj'), ('bits', 'ccomp'), ('  ', 'dobj'), ('CN-1', 'npadvmod'), ('3', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[PN,  ], [ , S], [S, bits], [bits, CN], [CN, S], [S, bits], [bits,   ], [  , CN-1], [CN-1, 3], [3, .]]
+
+>> Trigrams: 
+[[PN,  , S], [ , S, bits], [S, bits, CN], [bits, CN, S], [CN, S, bits], [S, bits,   ], [bits,   , CN-1], [  , CN-1, 3], [CN-1, 3, .]]
+
+>> Noun Phrases are: 
+[PN  S, CN S]
+
+>> Named Entities are: 
+[('CN S', 'ORG'), ('3', 'CARDINAL')]
+
+
+============================ Sentence 54 =============================
+
+CFB Encryption   Unit od transmission is 8 bits Common value of s=8 11  IV Encrypt  K   
+
+
+>> Tokens are: 
+[CFB, Encryption,   , Unit, od, transmission, 8, bits, Common, value, s=8, 11,  , IV, Encrypt,  , K,  ] 
+
+>> PoS Tags are: 
+[('CFB', 'PROPN'), ('Encryption', 'PROPN'), ('  ', 'SPACE'), ('Unit', 'PROPN'), ('od', 'NOUN'), ('transmission', 'NOUN'), ('8', 'NUM'), ('bits', 'VERB'), ('Common', 'ADJ'), ('value', 'NOUN'), ('s=8', 'NOUN'), ('11', 'NUM'), (' ', 'SPACE'), ('IV', 'PROPN'), ('Encrypt', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('CFB', 'compound'), ('Encryption', 'compound'), ('  ', 'nmod'), ('Unit', 'nmod'), ('od', 'advmod'), ('transmission', 'nsubj'), ('8', 'nummod'), ('bits', 'nmod'), ('Common', 'amod'), ('value', 'attr'), ('s=8', 'quantmod'), ('11', 'nummod'), (' ', 'pobj'), ('IV', 'compound'), ('Encrypt', 'appos'), (' ', 'punct'), ('K', 'attr'), (' ', 'punct')]
+
+>> Bigrams: 
+[[CFB, Encryption], [Encryption,   ], [  , Unit], [Unit, od], [od, transmission], [transmission, 8], [8, bits], [bits, Common], [Common, value], [value, s=8], [s=8, 11], [11,  ], [ , IV], [IV, Encrypt], [Encrypt,  ], [ , K], [K,  ]]
+
+>> Trigrams: 
+[[CFB, Encryption,   ], [Encryption,   , Unit], [  , Unit, od], [Unit, od, transmission], [od, transmission, 8], [transmission, 8, bits], [8, bits, Common], [bits, Common, value], [Common, value, s=8], [value, s=8, 11], [s=8, 11,  ], [11,  , IV], [ , IV, Encrypt], [IV, Encrypt,  ], [Encrypt,  , K], [ , K,  ]]
+
+>> Noun Phrases are: 
+[CFB Encryption   Unit od transmission, 8 bits Common value, IV Encrypt, K]
+
+>> Named Entities are: 
+[('CFB', 'ORG'), ('8', 'CARDINAL'), ('11', 'CARDINAL')]
+
+
+============================ Sentence 55 =============================
+
+Select s bits Discard b-s bits P1 S bits Shift register b-s bits | s bits 
+
+
+>> Tokens are: 
+[Select, s, bits, Discard, b, -, s, bits, P1, S, bits, Shift, register, b, -, s, bits, |, s, bits] 
+
+>> PoS Tags are: 
+[('Select', 'PROPN'), ('s', 'PROPN'), ('bits', 'VERB'), ('Discard', 'PROPN'), ('b', 'PROPN'), ('-', 'PUNCT'), ('s', 'NOUN'), ('bits', 'NOUN'), ('P1', 'PROPN'), ('S', 'PROPN'), ('bits', 'VERB'), ('Shift', 'PROPN'), ('register', 'NOUN'), ('b', 'PROPN'), ('-', 'PUNCT'), ('s', 'PRON'), ('bits', 'NOUN'), ('|', 'NOUN'), ('s', 'PART'), ('bits', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Select', 'nsubj'), ('s', 'case'), ('bits', 'ROOT'), ('Discard', 'compound'), ('b', 'punct'), ('-', 'punct'), ('s', 'nmod'), ('bits', 'dobj'), ('P1', 'compound'), ('S', 'nsubj'), ('bits', 'conj'), ('Shift', 'compound'), ('register', 'conj'), ('b', 'nmod'), ('-', 'punct'), ('s', 'prep'), ('bits', 'compound'), ('|', 'poss'), ('s', 'case'), ('bits', 'appos')]
+
+>> Bigrams: 
+[[Select, s], [s, bits], [bits, Discard], [Discard, b], [b, -], [-, s], [s, bits], [bits, P1], [P1, S], [S, bits], [bits, Shift], [Shift, register], [register, b], [b, -], [-, s], [s, bits], [bits, |], [|, s], [s, bits]]
+
+>> Trigrams: 
+[[Select, s, bits], [s, bits, Discard], [bits, Discard, b], [Discard, b, -], [b, -, s], [-, s, bits], [s, bits, P1], [bits, P1, S], [P1, S, bits], [S, bits, Shift], [bits, Shift, register], [Shift, register, b], [register, b, -], [b, -, s], [-, s, bits], [s, bits, |], [bits, |, s], [|, s, bits]]
+
+>> Noun Phrases are: 
+[Select, Discard b-s bits, P1 S, Shift register, bits | s bits]
+
+>> Named Entities are: 
+[('Discard', 'ORG'), ('P1 S', 'PRODUCT')]
+
+
+============================ Sentence 56 =============================
+
+Encrypt  K   
+
+
+>> Tokens are: 
+[Encrypt,  , K,  ] 
+
+>> PoS Tags are: 
+[('Encrypt', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Encrypt', 'compound'), (' ', 'ROOT'), ('K', 'nmod'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Encrypt,  ], [ , K], [K,  ]]
+
+>> Trigrams: 
+[[Encrypt,  , K], [ , K,  ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('Encrypt', 'PERSON')]
+
+
+============================ Sentence 57 =============================
+
+Select s bits Discard b-s bits P2 S bits … Shift register b-s bits | s bits 
+
+
+>> Tokens are: 
+[Select, s, bits, Discard, b, -, s, bits, P2, S, bits, …, Shift, register, b, -, s, bits, |, s, bits] 
+
+>> PoS Tags are: 
+[('Select', 'PROPN'), ('s', 'PROPN'), ('bits', 'VERB'), ('Discard', 'PROPN'), ('b', 'PROPN'), ('-', 'PUNCT'), ('s', 'PART'), ('bits', 'VERB'), ('P2', 'PROPN'), ('S', 'PROPN'), ('bits', 'VERB'), ('…', 'PUNCT'), ('Shift', 'NOUN'), ('register', 'NOUN'), ('b', 'PROPN'), ('-', 'PUNCT'), ('s', 'PRON'), ('bits', 'NOUN'), ('|', 'NOUN'), ('s', 'PART'), ('bits', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Select', 'nsubj'), ('s', 'case'), ('bits', 'ROOT'), ('Discard', 'compound'), ('b', 'punct'), ('-', 'punct'), ('s', 'nmod'), ('bits', 'dobj'), ('P2', 'compound'), ('S', 'compound'), ('bits', 'conj'), ('…', 'punct'), ('Shift', 'nsubj'), ('register', 'nmod'), ('b', 'nmod'), ('-', 'punct'), ('s', 'prep'), ('bits', 'compound'), ('|', 'poss'), ('s', 'case'), ('bits', 'conj')]
+
+>> Bigrams: 
+[[Select, s], [s, bits], [bits, Discard], [Discard, b], [b, -], [-, s], [s, bits], [bits, P2], [P2, S], [S, bits], [bits, …], […, Shift], [Shift, register], [register, b], [b, -], [-, s], [s, bits], [bits, |], [|, s], [s, bits]]
+
+>> Trigrams: 
+[[Select, s, bits], [s, bits, Discard], [bits, Discard, b], [Discard, b, -], [b, -, s], [-, s, bits], [s, bits, P2], [bits, P2, S], [P2, S, bits], [S, bits, …], [bits, …, Shift], […, Shift, register], [Shift, register, b], [register, b, -], [b, -, s], [-, s, bits], [s, bits, |], [bits, |, s], [|, s, bits]]
+
+>> Noun Phrases are: 
+[Select, Shift]
+
+>> Named Entities are: 
+[('Discard', 'ORG')]
+
+
+============================ Sentence 58 =============================
+
+Encrypt  K   
+
+
+>> Tokens are: 
+[Encrypt,  , K,  ] 
+
+>> PoS Tags are: 
+[('Encrypt', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Encrypt', 'compound'), (' ', 'ROOT'), ('K', 'nmod'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Encrypt,  ], [ , K], [K,  ]]
+
+>> Trigrams: 
+[[Encrypt,  , K], [ , K,  ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('Encrypt', 'PERSON')]
+
+
+============================ Sentence 59 =============================
+
+Select s bits Discard b-s bits PN S bits  CN-1 3. 
+
+
+>> Tokens are: 
+[Select, s, bits, Discard, b, -, s, bits, PN, S, bits,  , CN-1, 3, .] 
+
+>> PoS Tags are: 
+[('Select', 'PROPN'), ('s', 'PROPN'), ('bits', 'VERB'), ('Discard', 'PROPN'), ('b', 'PROPN'), ('-', 'PUNCT'), ('s', 'NOUN'), ('bits', 'VERB'), ('PN', 'PROPN'), ('S', 'PROPN'), ('bits', 'VERB'), (' ', 'SPACE'), ('CN-1', 'PROPN'), ('3', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Select', 'nsubj'), ('s', 'case'), ('bits', 'ROOT'), ('Discard', 'compound'), ('b', 'meta'), ('-', 'punct'), ('s', 'nsubj'), ('bits', 'dobj'), ('PN', 'compound'), ('S', 'nsubj'), ('bits', 'ccomp'), (' ', 'dobj'), ('CN-1', 'dobj'), ('3', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Select, s], [s, bits], [bits, Discard], [Discard, b], [b, -], [-, s], [s, bits], [bits, PN], [PN, S], [S, bits], [bits,  ], [ , CN-1], [CN-1, 3], [3, .]]
+
+>> Trigrams: 
+[[Select, s, bits], [s, bits, Discard], [bits, Discard, b], [Discard, b, -], [b, -, s], [-, s, bits], [s, bits, PN], [bits, PN, S], [PN, S, bits], [S, bits,  ], [bits,  , CN-1], [ , CN-1, 3], [CN-1, 3, .]]
+
+>> Noun Phrases are: 
+[Select, Discard b-s, PN S, CN-1]
+
+>> Named Entities are: 
+[('Discard', 'ORG'), ('PN S', 'ORG'), ('3', 'CARDINAL')]
+
+
+============================ Sentence 60 =============================
+
+CFB Decryption  CN S bits C2 S bits C1 S bits    
+
+
+>> Tokens are: 
+[CFB, Decryption,  , CN, S, bits, C2, S, bits, C1, S, bits,   ] 
+
+>> PoS Tags are: 
+[('CFB', 'PROPN'), ('Decryption', 'PROPN'), (' ', 'SPACE'), ('CN', 'PROPN'), ('S', 'PROPN'), ('bits', 'VERB'), ('C2', 'PROPN'), ('S', 'PROPN'), ('bits', 'VERB'), ('C1', 'PROPN'), ('S', 'PROPN'), ('bits', 'VERB'), ('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('CFB', 'compound'), ('Decryption', 'nsubj'), (' ', 'punct'), ('CN', 'compound'), ('S', 'appos'), ('bits', 'ROOT'), ('C2', 'compound'), ('S', 'nsubj'), ('bits', 'ccomp'), ('C1', 'compound'), ('S', 'nsubj'), ('bits', 'ccomp'), ('  ', 'dobj')]
+
+>> Bigrams: 
+[[CFB, Decryption], [Decryption,  ], [ , CN], [CN, S], [S, bits], [bits, C2], [C2, S], [S, bits], [bits, C1], [C1, S], [S, bits], [bits,   ]]
+
+>> Trigrams: 
+[[CFB, Decryption,  ], [Decryption,  , CN], [ , CN, S], [CN, S, bits], [S, bits, C2], [bits, C2, S], [C2, S, bits], [S, bits, C1], [bits, C1, S], [C1, S, bits], [S, bits,   ]]
+
+>> Noun Phrases are: 
+[CFB Decryption, CN S, C2 S, C1 S]
+
+>> Named Entities are: 
+[('CN S', 'ORG'), ('C2 S', 'ORG'), ('C1 S', 'ORG')]
+
+
+============================ Sentence 61 =============================
+
+Unit od transmission is 8 bits Common value of s=8 12  CFB Mode 
+
+
+>> Tokens are: 
+[Unit, od, transmission, 8, bits, Common, value, s=8, 12,  , CFB, Mode] 
+
+>> PoS Tags are: 
+[('Unit', 'NOUN'), ('od', 'NOUN'), ('transmission', 'NOUN'), ('8', 'NUM'), ('bits', 'VERB'), ('Common', 'ADJ'), ('value', 'NOUN'), ('s=8', 'NOUN'), ('12', 'NUM'), (' ', 'SPACE'), ('CFB', 'PROPN'), ('Mode', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Unit', 'nmod'), ('od', 'advmod'), ('transmission', 'nsubj'), ('8', 'nummod'), ('bits', 'nmod'), ('Common', 'amod'), ('value', 'attr'), ('s=8', 'quantmod'), ('12', 'nummod'), (' ', 'pobj'), ('CFB', 'compound'), ('Mode', 'appos')]
+
+>> Bigrams: 
+[[Unit, od], [od, transmission], [transmission, 8], [8, bits], [bits, Common], [Common, value], [value, s=8], [s=8, 12], [12,  ], [ , CFB], [CFB, Mode]]
+
+>> Trigrams: 
+[[Unit, od, transmission], [od, transmission, 8], [transmission, 8, bits], [8, bits, Common], [bits, Common, value], [Common, value, s=8], [value, s=8, 12], [s=8, 12,  ], [12,  , CFB], [ , CFB, Mode]]
+
+>> Noun Phrases are: 
+[Unit od transmission, 8 bits Common value, CFB Mode]
+
+>> Named Entities are: 
+[('8', 'CARDINAL'), ('12', 'CARDINAL'), ('CFB Mode', 'PERSON')]
+
+
+============================ Sentence 62 =============================
+
+The input to the encryption function is a b-bit shift register that is initially set to some initialization vector (IV). 
+
+
+>> Tokens are: 
+[input, encryption, function, b, -, bit, shift, register, initially, set, initialization, vector, (, IV, ), .] 
+
+>> PoS Tags are: 
+[('input', 'NOUN'), ('encryption', 'NOUN'), ('function', 'NOUN'), ('b', 'X'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('shift', 'NOUN'), ('register', 'NOUN'), ('initially', 'ADV'), ('set', 'VERB'), ('initialization', 'NOUN'), ('vector', 'NOUN'), ('(', 'PUNCT'), ('IV', 'PROPN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('input', 'nsubj'), ('encryption', 'compound'), ('function', 'pobj'), ('b', 'det'), ('-', 'punct'), ('bit', 'compound'), ('shift', 'compound'), ('register', 'attr'), ('initially', 'advmod'), ('set', 'relcl'), ('initialization', 'compound'), ('vector', 'pobj'), ('(', 'punct'), ('IV', 'appos'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[input, encryption], [encryption, function], [function, b], [b, -], [-, bit], [bit, shift], [shift, register], [register, initially], [initially, set], [set, initialization], [initialization, vector], [vector, (], [(, IV], [IV, )], [), .]]
+
+>> Trigrams: 
+[[input, encryption, function], [encryption, function, b], [function, b, -], [b, -, bit], [-, bit, shift], [bit, shift, register], [shift, register, initially], [register, initially, set], [initially, set, initialization], [set, initialization, vector], [initialization, vector, (], [vector, (, IV], [(, IV, )], [IV, ), .]]
+
+>> Noun Phrases are: 
+[The input, the encryption function, a b-bit shift register, some initialization vector, (IV]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 63 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 64 =============================
+
+The leftmost (most significant) s bits of the output of the encryption function are XORed with the first segment of plaintext P1  to produce the first unit of ciphertext C1 , which is then transmitted. 
+
+
+>> Tokens are: 
+[leftmost, (, significant, ), s, bits, output, encryption, function, XORed, segment, plaintext, P1,  , produce, unit, ciphertext, C1, ,, transmitted, .] 
+
+>> PoS Tags are: 
+[('leftmost', 'NOUN'), ('(', 'PUNCT'), ('significant', 'ADJ'), (')', 'PUNCT'), ('s', 'VERB'), ('bits', 'NOUN'), ('output', 'NOUN'), ('encryption', 'NOUN'), ('function', 'NOUN'), ('XORed', 'ADJ'), ('segment', 'NOUN'), ('plaintext', 'NOUN'), ('P1', 'PROPN'), (' ', 'SPACE'), ('produce', 'VERB'), ('unit', 'NOUN'), ('ciphertext', 'NOUN'), ('C1', 'PROPN'), (',', 'PUNCT'), ('transmitted', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('leftmost', 'nsubj'), ('(', 'punct'), ('significant', 'amod'), (')', 'punct'), ('s', 'ROOT'), ('bits', 'attr'), ('output', 'pobj'), ('encryption', 'compound'), ('function', 'pobj'), ('XORed', 'acomp'), ('segment', 'pobj'), ('plaintext', 'pobj'), ('P1', 'pobj'), (' ', 'appos'), ('produce', 'xcomp'), ('unit', 'dobj'), ('ciphertext', 'compound'), ('C1', 'pobj'), (',', 'punct'), ('transmitted', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[leftmost, (], [(, significant], [significant, )], [), s], [s, bits], [bits, output], [output, encryption], [encryption, function], [function, XORed], [XORed, segment], [segment, plaintext], [plaintext, P1], [P1,  ], [ , produce], [produce, unit], [unit, ciphertext], [ciphertext, C1], [C1, ,], [,, transmitted], [transmitted, .]]
+
+>> Trigrams: 
+[[leftmost, (, significant], [(, significant, )], [significant, ), s], [), s, bits], [s, bits, output], [bits, output, encryption], [output, encryption, function], [encryption, function, XORed], [function, XORed, segment], [XORed, segment, plaintext], [segment, plaintext, P1], [plaintext, P1,  ], [P1,  , produce], [ , produce, unit], [produce, unit, ciphertext], [unit, ciphertext, C1], [ciphertext, C1, ,], [C1, ,, transmitted], [,, transmitted, .]]
+
+>> Noun Phrases are: 
+[The leftmost, bits, the output, the encryption function, the first segment, plaintext, P1, the first unit, ciphertext C1]
+
+>> Named Entities are: 
+[('XORed', 'ORG'), ('first', 'ORDINAL'), ('first', 'ORDINAL')]
+
+
+============================ Sentence 65 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 66 =============================
+
+In addition, the contents of the shift register are shifted left by s bits, and C1 is placed in the rightmost (least significant) s bits of the shift register. 
+
+
+>> Tokens are: 
+[addition, ,, contents, shift, register, shifted, left, s, bits, ,, C1, placed, rightmost, (, significant, ), s, bits, shift, register, .] 
+
+>> PoS Tags are: 
+[('addition', 'NOUN'), (',', 'PUNCT'), ('contents', 'NOUN'), ('shift', 'NOUN'), ('register', 'NOUN'), ('shifted', 'VERB'), ('left', 'VERB'), ('s', 'PART'), ('bits', 'NOUN'), (',', 'PUNCT'), ('C1', 'PROPN'), ('placed', 'VERB'), ('rightmost', 'NOUN'), ('(', 'PUNCT'), ('significant', 'ADJ'), (')', 'PUNCT'), ('s', 'VERB'), ('bits', 'NOUN'), ('shift', 'NOUN'), ('register', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('addition', 'pobj'), (',', 'punct'), ('contents', 'nsubjpass'), ('shift', 'compound'), ('register', 'pobj'), ('shifted', 'ROOT'), ('left', 'advcl'), ('s', 'nmod'), ('bits', 'pobj'), (',', 'punct'), ('C1', 'nsubjpass'), ('placed', 'conj'), ('rightmost', 'pobj'), ('(', 'punct'), ('significant', 'amod'), (')', 'punct'), ('s', 'conj'), ('bits', 'attr'), ('shift', 'compound'), ('register', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[addition, ,], [,, contents], [contents, shift], [shift, register], [register, shifted], [shifted, left], [left, s], [s, bits], [bits, ,], [,, C1], [C1, placed], [placed, rightmost], [rightmost, (], [(, significant], [significant, )], [), s], [s, bits], [bits, shift], [shift, register], [register, .]]
+
+>> Trigrams: 
+[[addition, ,, contents], [,, contents, shift], [contents, shift, register], [shift, register, shifted], [register, shifted, left], [shifted, left, s], [left, s, bits], [s, bits, ,], [bits, ,, C1], [,, C1, placed], [C1, placed, rightmost], [placed, rightmost, (], [rightmost, (, significant], [(, significant, )], [significant, ), s], [), s, bits], [s, bits, shift], [bits, shift, register], [shift, register, .]]
+
+>> Noun Phrases are: 
+[addition, the contents, the shift register, s bits, C1, the rightmost, bits, the shift register]
+
+>> Named Entities are: 
+[('C1', 'CARDINAL')]
+
+
+============================ Sentence 67 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 68 =============================
+
+For decryption, the same scheme is used, except that the received ciphertext unit is XORed with the output of the encryption function to produce the plaintext unit. 
+
+
+>> Tokens are: 
+[decryption, ,, scheme, ,, received, ciphertext, unit, XORed, output, encryption, function, produce, plaintext, unit, .] 
+
+>> PoS Tags are: 
+[('decryption', 'NOUN'), (',', 'PUNCT'), ('scheme', 'NOUN'), (',', 'PUNCT'), ('received', 'VERB'), ('ciphertext', 'NOUN'), ('unit', 'NOUN'), ('XORed', 'PROPN'), ('output', 'NOUN'), ('encryption', 'NOUN'), ('function', 'NOUN'), ('produce', 'VERB'), ('plaintext', 'NOUN'), ('unit', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('decryption', 'pobj'), (',', 'punct'), ('scheme', 'nsubjpass'), (',', 'punct'), ('received', 'amod'), ('ciphertext', 'compound'), ('unit', 'nsubj'), ('XORed', 'attr'), ('output', 'pobj'), ('encryption', 'compound'), ('function', 'pobj'), ('produce', 'xcomp'), ('plaintext', 'compound'), ('unit', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[decryption, ,], [,, scheme], [scheme, ,], [,, received], [received, ciphertext], [ciphertext, unit], [unit, XORed], [XORed, output], [output, encryption], [encryption, function], [function, produce], [produce, plaintext], [plaintext, unit], [unit, .]]
+
+>> Trigrams: 
+[[decryption, ,, scheme], [,, scheme, ,], [scheme, ,, received], [,, received, ciphertext], [received, ciphertext, unit], [ciphertext, unit, XORed], [unit, XORed, output], [XORed, output, encryption], [output, encryption, function], [encryption, function, produce], [function, produce, plaintext], [produce, plaintext, unit], [plaintext, unit, .]]
+
+>> Noun Phrases are: 
+[decryption, the same scheme, the received ciphertext unit, XORed, the output, the encryption function, the plaintext unit]
+
+>> Named Entities are: 
+[('XORed', 'ORG')]
+
+
+============================ Sentence 69 =============================
+
+  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  CFB Mode – Cont…    Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  4. 
+
+
+>> Tokens are: 
+[  , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  , CFB, Mode, –, Cont, …,    , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  , 4, .] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE'), ('CFB', 'PROPN'), ('Mode', 'PROPN'), ('–', 'PUNCT'), ('Cont', 'PROPN'), ('…', 'PUNCT'), ('   ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE'), ('4', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct'), (' ', 'punct'), ('CFB', 'compound'), ('Mode', 'dobj'), ('–', 'punct'), ('Cont', 'appos'), ('…', 'punct'), ('   ', 'appos'), ('Unit-3', 'advcl'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('4', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[  , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ], [ , CFB], [CFB, Mode], [Mode, –], [–, Cont], [Cont, …], […,    ], [   , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ], [ , 4], [4, .]]
+
+>> Trigrams: 
+[[  , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ], [‹#›,  , CFB], [ , CFB, Mode], [CFB, Mode, –], [Mode, –, Cont], [–, Cont, …], [Cont, …,    ], […,    , Unit-3], [   , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ], [‹#›,  , 4], [ , 4, .]]
+
+>> Noun Phrases are: 
+[                                                                                Darshan Institute, Engineering, Technology, CFB Mode, Cont,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('Unit-3', 'GPE'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('4', 'CARDINAL')]
+
+
+============================ Sentence 70 =============================
+
+Output Feedback Mode (OFB) 
+
+
+>> Tokens are: 
+[Output, Feedback, Mode, (, OFB, )] 
+
+>> PoS Tags are: 
+[('Output', 'NOUN'), ('Feedback', 'PROPN'), ('Mode', 'PROPN'), ('(', 'PUNCT'), ('OFB', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Output', 'compound'), ('Feedback', 'compound'), ('Mode', 'ROOT'), ('(', 'punct'), ('OFB', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[Output, Feedback], [Feedback, Mode], [Mode, (], [(, OFB], [OFB, )]]
+
+>> Trigrams: 
+[[Output, Feedback, Mode], [Feedback, Mode, (], [Mode, (, OFB], [(, OFB, )]]
+
+>> Noun Phrases are: 
+[Output Feedback Mode, OFB]
+
+>> Named Entities are: 
+[('Feedback Mode', 'PERSON'), ('OFB', 'ORG')]
+
+
+============================ Sentence 71 =============================
+
+The output feedback (OFB) mode is similar in structure to that of CFB. 
+
+
+>> Tokens are: 
+[output, feedback, (, OFB, ), mode, similar, structure, CFB, .] 
+
+>> PoS Tags are: 
+[('output', 'NOUN'), ('feedback', 'NOUN'), ('(', 'PUNCT'), ('OFB', 'PROPN'), (')', 'PUNCT'), ('mode', 'NOUN'), ('similar', 'ADJ'), ('structure', 'NOUN'), ('CFB', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('output', 'compound'), ('feedback', 'nmod'), ('(', 'punct'), ('OFB', 'nmod'), (')', 'punct'), ('mode', 'nsubj'), ('similar', 'acomp'), ('structure', 'pobj'), ('CFB', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[output, feedback], [feedback, (], [(, OFB], [OFB, )], [), mode], [mode, similar], [similar, structure], [structure, CFB], [CFB, .]]
+
+>> Trigrams: 
+[[output, feedback, (], [feedback, (, OFB], [(, OFB, )], [OFB, ), mode], [), mode, similar], [mode, similar, structure], [similar, structure, CFB], [structure, CFB, .]]
+
+>> Noun Phrases are: 
+[The output feedback (OFB) mode, structure, CFB]
+
+>> Named Entities are: 
+[('OFB', 'ORG'), ('CFB', 'ORG')]
+
+
+============================ Sentence 72 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 73 =============================
+
+For OFB, the output of the encryption function is fed back to become the input for encrypting the next block of plaintext. 
+
+
+>> Tokens are: 
+[OFB, ,, output, encryption, function, fed, input, encrypting, block, plaintext, .] 
+
+>> PoS Tags are: 
+[('OFB', 'PROPN'), (',', 'PUNCT'), ('output', 'NOUN'), ('encryption', 'NOUN'), ('function', 'NOUN'), ('fed', 'VERB'), ('input', 'NOUN'), ('encrypting', 'VERB'), ('block', 'NOUN'), ('plaintext', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('OFB', 'pobj'), (',', 'punct'), ('output', 'appos'), ('encryption', 'compound'), ('function', 'pobj'), ('fed', 'ROOT'), ('input', 'attr'), ('encrypting', 'pcomp'), ('block', 'dobj'), ('plaintext', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[OFB, ,], [,, output], [output, encryption], [encryption, function], [function, fed], [fed, input], [input, encrypting], [encrypting, block], [block, plaintext], [plaintext, .]]
+
+>> Trigrams: 
+[[OFB, ,, output], [,, output, encryption], [output, encryption, function], [encryption, function, fed], [function, fed, input], [fed, input, encrypting], [input, encrypting, block], [encrypting, block, plaintext], [block, plaintext, .]]
+
+>> Noun Phrases are: 
+[OFB, the output, the encryption function, the input, the next block, plaintext]
+
+>> Named Entities are: 
+[('OFB', 'ORG')]
+
+
+============================ Sentence 74 =============================
+
+In CFB, the output of the XOR unit is fed back to become input for encrypting the next block. 
+
+
+>> Tokens are: 
+[CFB, ,, output, XOR, unit, fed, input, encrypting, block, .] 
+
+>> PoS Tags are: 
+[('CFB', 'PROPN'), (',', 'PUNCT'), ('output', 'NOUN'), ('XOR', 'PROPN'), ('unit', 'NOUN'), ('fed', 'VERB'), ('input', 'NOUN'), ('encrypting', 'VERB'), ('block', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('CFB', 'pobj'), (',', 'punct'), ('output', 'appos'), ('XOR', 'compound'), ('unit', 'pobj'), ('fed', 'ROOT'), ('input', 'attr'), ('encrypting', 'pcomp'), ('block', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[CFB, ,], [,, output], [output, XOR], [XOR, unit], [unit, fed], [fed, input], [input, encrypting], [encrypting, block], [block, .]]
+
+>> Trigrams: 
+[[CFB, ,, output], [,, output, XOR], [output, XOR, unit], [XOR, unit, fed], [unit, fed, input], [fed, input, encrypting], [input, encrypting, block], [encrypting, block, .]]
+
+>> Noun Phrases are: 
+[CFB, the output, the XOR unit, input, the next block]
+
+>> Named Entities are: 
+[('CFB', 'ORG'), ('XOR', 'ORG')]
+
+
+============================ Sentence 75 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 76 =============================
+
+The other difference is that the OFB mode operates on full blocks of plaintext and ciphertext, whereas CFB operates on an s-bit subset. 
+
+
+>> Tokens are: 
+[difference, OFB, mode, operates, blocks, plaintext, ciphertext, ,, CFB, operates, s, -, bit, subset, .] 
+
+>> PoS Tags are: 
+[('difference', 'NOUN'), ('OFB', 'PROPN'), ('mode', 'NOUN'), ('operates', 'VERB'), ('blocks', 'NOUN'), ('plaintext', 'NOUN'), ('ciphertext', 'NOUN'), (',', 'PUNCT'), ('CFB', 'PROPN'), ('operates', 'VERB'), ('s', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('subset', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('difference', 'nsubj'), ('OFB', 'compound'), ('mode', 'nsubj'), ('operates', 'ccomp'), ('blocks', 'pobj'), ('plaintext', 'pobj'), ('ciphertext', 'conj'), (',', 'punct'), ('CFB', 'nsubj'), ('operates', 'advcl'), ('s', 'nummod'), ('-', 'punct'), ('bit', 'compound'), ('subset', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[difference, OFB], [OFB, mode], [mode, operates], [operates, blocks], [blocks, plaintext], [plaintext, ciphertext], [ciphertext, ,], [,, CFB], [CFB, operates], [operates, s], [s, -], [-, bit], [bit, subset], [subset, .]]
+
+>> Trigrams: 
+[[difference, OFB, mode], [OFB, mode, operates], [mode, operates, blocks], [operates, blocks, plaintext], [blocks, plaintext, ciphertext], [plaintext, ciphertext, ,], [ciphertext, ,, CFB], [,, CFB, operates], [CFB, operates, s], [operates, s, -], [s, -, bit], [-, bit, subset], [bit, subset, .]]
+
+>> Noun Phrases are: 
+[The other difference, the OFB mode, full blocks, plaintext, ciphertext, CFB, an s-bit subset]
+
+>> Named Entities are: 
+[('OFB', 'ORG'), ('CFB', 'ORG')]
+
+
+============================ Sentence 77 =============================
+
+Nonce: A time-varying value that has at most a negligible chance of repeating, for example, a random value that is generated anew for each use, a timestamp, a sequence number,  or some combination of these. 
+
+
+>> Tokens are: 
+[Nonce, :, time, -, varying, value, negligible, chance, repeating, ,, example, ,, random, value, generated, anew, use, ,, timestamp, ,, sequence, number, ,,  , combination, .] 
+
+>> PoS Tags are: 
+[('Nonce', 'NOUN'), (':', 'PUNCT'), ('time', 'NOUN'), ('-', 'PUNCT'), ('varying', 'VERB'), ('value', 'NOUN'), ('negligible', 'ADJ'), ('chance', 'NOUN'), ('repeating', 'VERB'), (',', 'PUNCT'), ('example', 'NOUN'), (',', 'PUNCT'), ('random', 'ADJ'), ('value', 'NOUN'), ('generated', 'VERB'), ('anew', 'ADV'), ('use', 'NOUN'), (',', 'PUNCT'), ('timestamp', 'NOUN'), (',', 'PUNCT'), ('sequence', 'NOUN'), ('number', 'NOUN'), (',', 'PUNCT'), (' ', 'SPACE'), ('combination', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Nonce', 'ROOT'), (':', 'punct'), ('time', 'npadvmod'), ('-', 'punct'), ('varying', 'amod'), ('value', 'appos'), ('negligible', 'amod'), ('chance', 'dobj'), ('repeating', 'pcomp'), (',', 'punct'), ('example', 'pobj'), (',', 'punct'), ('random', 'amod'), ('value', 'appos'), ('generated', 'relcl'), ('anew', 'advmod'), ('use', 'pobj'), (',', 'punct'), ('timestamp', 'appos'), (',', 'punct'), ('sequence', 'compound'), ('number', 'conj'), (',', 'punct'), (' ', 'conj'), ('combination', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Nonce, :], [:, time], [time, -], [-, varying], [varying, value], [value, negligible], [negligible, chance], [chance, repeating], [repeating, ,], [,, example], [example, ,], [,, random], [random, value], [value, generated], [generated, anew], [anew, use], [use, ,], [,, timestamp], [timestamp, ,], [,, sequence], [sequence, number], [number, ,], [,,  ], [ , combination], [combination, .]]
+
+>> Trigrams: 
+[[Nonce, :, time], [:, time, -], [time, -, varying], [-, varying, value], [varying, value, negligible], [value, negligible, chance], [negligible, chance, repeating], [chance, repeating, ,], [repeating, ,, example], [,, example, ,], [example, ,, random], [,, random, value], [random, value, generated], [value, generated, anew], [generated, anew, use], [anew, use, ,], [use, ,, timestamp], [,, timestamp, ,], [timestamp, ,, sequence], [,, sequence, number], [sequence, number, ,], [number, ,,  ], [,,  , combination], [ , combination, .]]
+
+>> Noun Phrases are: 
+[Nonce, A time-varying value, at most a negligible chance, example, a random value, each use, a timestamp, a sequence number, some combination]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 78 =============================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   
+
+
+>> Tokens are: 
+[ , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'conj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[ , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[ , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ]]
+
+>> Noun Phrases are: 
+[                                                                                Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 79 =============================
+
+Nonce Encrypt C1  K   P1 4. 
+
+
+>> Tokens are: 
+[Nonce, Encrypt, C1,  , K,   , P1, 4, .] 
+
+>> PoS Tags are: 
+[('Nonce', 'PROPN'), ('Encrypt', 'PROPN'), ('C1', 'PROPN'), (' ', 'SPACE'), ('K', 'NOUN'), ('  ', 'SPACE'), ('P1', 'PROPN'), ('4', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Nonce', 'compound'), ('Encrypt', 'compound'), ('C1', 'ROOT'), (' ', 'appos'), ('K', 'compound'), ('  ', 'appos'), ('P1', 'appos'), ('4', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Nonce, Encrypt], [Encrypt, C1], [C1,  ], [ , K], [K,   ], [  , P1], [P1, 4], [4, .]]
+
+>> Trigrams: 
+[[Nonce, Encrypt, C1], [Encrypt, C1,  ], [C1,  , K], [ , K,   ], [K,   , P1], [  , P1, 4], [P1, 4, .]]
+
+>> Noun Phrases are: 
+[Nonce Encrypt C1, P1]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 80 =============================
+
+OFB Encryption Encrypt C2   
+
+
+>> Tokens are: 
+[OFB, Encryption, Encrypt, C2,  ] 
+
+>> PoS Tags are: 
+[('OFB', 'PROPN'), ('Encryption', 'NOUN'), ('Encrypt', 'PROPN'), ('C2', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('OFB', 'compound'), ('Encryption', 'compound'), ('Encrypt', 'compound'), ('C2', 'ROOT'), (' ', 'appos')]
+
+>> Bigrams: 
+[[OFB, Encryption], [Encryption, Encrypt], [Encrypt, C2], [C2,  ]]
+
+>> Trigrams: 
+[[OFB, Encryption, Encrypt], [Encryption, Encrypt, C2], [Encrypt, C2,  ]]
+
+>> Noun Phrases are: 
+[OFB Encryption Encrypt C2]
+
+>> Named Entities are: 
+[('OFB Encryption', 'ORG')]
+
+
+============================ Sentence 81 =============================
+
+K   P2 Encrypt CN  K   PN …        16   
+
+
+>> Tokens are: 
+[K,   , P2, Encrypt, CN,  , K,   , PN, …,        , 16,  ] 
+
+>> PoS Tags are: 
+[('K', 'NOUN'), ('  ', 'SPACE'), ('P2', 'PROPN'), ('Encrypt', 'PROPN'), ('CN', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), ('  ', 'SPACE'), ('PN', 'PROPN'), ('…', 'PUNCT'), ('       ', 'SPACE'), ('16', 'NUM'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('K', 'compound'), ('  ', 'compound'), ('P2', 'compound'), ('Encrypt', 'compound'), ('CN', 'ROOT'), (' ', 'punct'), ('K', 'compound'), ('  ', 'compound'), ('PN', 'appos'), ('…', 'punct'), ('       ', 'appos'), ('16', 'nummod'), (' ', 'appos')]
+
+>> Bigrams: 
+[[K,   ], [  , P2], [P2, Encrypt], [Encrypt, CN], [CN,  ], [ , K], [K,   ], [  , PN], [PN, …], […,        ], [       , 16], [16,  ]]
+
+>> Trigrams: 
+[[K,   , P2], [  , P2, Encrypt], [P2, Encrypt, CN], [Encrypt, CN,  ], [CN,  , K], [ , K,   ], [K,   , PN], [  , PN, …], [PN, …,        ], […,        , 16], [       , 16,  ]]
+
+>> Noun Phrases are: 
+[K   P2 Encrypt CN, K   PN]
+
+>> Named Entities are: 
+[('16', 'CARDINAL')]
+
+
+============================ Sentence 82 =============================
+
+Nonce Encrypt P1   
+
+
+>> Tokens are: 
+[Nonce, Encrypt, P1,  ] 
+
+>> PoS Tags are: 
+[('Nonce', 'PROPN'), ('Encrypt', 'PROPN'), ('P1', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Nonce', 'compound'), ('Encrypt', 'compound'), ('P1', 'ROOT'), (' ', 'appos')]
+
+>> Bigrams: 
+[[Nonce, Encrypt], [Encrypt, P1], [P1,  ]]
+
+>> Trigrams: 
+[[Nonce, Encrypt, P1], [Encrypt, P1,  ]]
+
+>> Noun Phrases are: 
+[Nonce Encrypt P1]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 83 =============================
+
+K   C1 4. 
+
+
+>> Tokens are: 
+[K,   , C1, 4, .] 
+
+>> PoS Tags are: 
+[('K', 'PROPN'), ('  ', 'SPACE'), ('C1', 'PROPN'), ('4', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('K', 'compound'), ('  ', 'compound'), ('C1', 'ROOT'), ('4', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[K,   ], [  , C1], [C1, 4], [4, .]]
+
+>> Trigrams: 
+[[K,   , C1], [  , C1, 4], [C1, 4, .]]
+
+>> Noun Phrases are: 
+[K   C1]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 84 =============================
+
+OFB Decryption Encrypt P2   
+
+
+>> Tokens are: 
+[OFB, Decryption, Encrypt, P2,  ] 
+
+>> PoS Tags are: 
+[('OFB', 'PROPN'), ('Decryption', 'PROPN'), ('Encrypt', 'PROPN'), ('P2', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('OFB', 'compound'), ('Decryption', 'compound'), ('Encrypt', 'compound'), ('P2', 'ROOT'), (' ', 'punct')]
+
+>> Bigrams: 
+[[OFB, Decryption], [Decryption, Encrypt], [Encrypt, P2], [P2,  ]]
+
+>> Trigrams: 
+[[OFB, Decryption, Encrypt], [Decryption, Encrypt, P2], [Encrypt, P2,  ]]
+
+>> Noun Phrases are: 
+[OFB Decryption Encrypt P2]
+
+>> Named Entities are: 
+[('OFB Decryption', 'ORG')]
+
+
+============================ Sentence 85 =============================
+
+K   C2 Encrypt PN  K   CN …        17   
+
+
+>> Tokens are: 
+[K,   , C2, Encrypt, PN,  , K,   , CN, …,        , 17,  ] 
+
+>> PoS Tags are: 
+[('K', 'NOUN'), ('  ', 'SPACE'), ('C2', 'PROPN'), ('Encrypt', 'PROPN'), ('PN', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), ('  ', 'SPACE'), ('CN', 'PROPN'), ('…', 'PUNCT'), ('       ', 'SPACE'), ('17', 'NUM'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('K', 'compound'), ('  ', 'compound'), ('C2', 'compound'), ('Encrypt', 'ROOT'), ('PN', 'appos'), (' ', 'appos'), ('K', 'compound'), ('  ', 'compound'), ('CN', 'appos'), ('…', 'punct'), ('       ', 'appos'), ('17', 'nummod'), (' ', 'appos')]
+
+>> Bigrams: 
+[[K,   ], [  , C2], [C2, Encrypt], [Encrypt, PN], [PN,  ], [ , K], [K,   ], [  , CN], [CN, …], […,        ], [       , 17], [17,  ]]
+
+>> Trigrams: 
+[[K,   , C2], [  , C2, Encrypt], [C2, Encrypt, PN], [Encrypt, PN,  ], [PN,  , K], [ , K,   ], [K,   , CN], [  , CN, …], [CN, …,        ], […,        , 17], [       , 17,  ]]
+
+>> Noun Phrases are: 
+[K   C2 Encrypt, PN, K   CN]
+
+>> Named Entities are: 
+[('17', 'CARDINAL')]
+
+
+============================ Sentence 86 =============================
+
+OFB Mode Each bit in the ciphertext is independent of the previous bit or bits. 
+
+
+>> Tokens are: 
+[OFB, Mode, bit, ciphertext, independent, previous, bit, bits, .] 
+
+>> PoS Tags are: 
+[('OFB', 'PROPN'), ('Mode', 'PROPN'), ('bit', 'NOUN'), ('ciphertext', 'NOUN'), ('independent', 'ADJ'), ('previous', 'ADJ'), ('bit', 'NOUN'), ('bits', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('OFB', 'compound'), ('Mode', 'nsubj'), ('bit', 'npadvmod'), ('ciphertext', 'pobj'), ('independent', 'acomp'), ('previous', 'amod'), ('bit', 'pobj'), ('bits', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[OFB, Mode], [Mode, bit], [bit, ciphertext], [ciphertext, independent], [independent, previous], [previous, bit], [bit, bits], [bits, .]]
+
+>> Trigrams: 
+[[OFB, Mode, bit], [Mode, bit, ciphertext], [bit, ciphertext, independent], [ciphertext, independent, previous], [independent, previous, bit], [previous, bit, bits], [bit, bits, .]]
+
+>> Noun Phrases are: 
+[OFB Mode, the ciphertext, the previous bit, bits]
+
+>> Named Entities are: 
+[('OFB Mode', 'PERSON')]
+
+
+============================ Sentence 87 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 88 =============================
+
+This avoids error propagation Pre-compute of forward cipher is possible    Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  5. 
+
+
+>> Tokens are: 
+[avoids, error, propagation, Pre, -, compute, forward, cipher, possible,    , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  , 5, .] 
+
+>> PoS Tags are: 
+[('avoids', 'VERB'), ('error', 'NOUN'), ('propagation', 'NOUN'), ('Pre', 'ADJ'), ('-', 'NOUN'), ('compute', 'NOUN'), ('forward', 'ADJ'), ('cipher', 'NOUN'), ('possible', 'ADJ'), ('   ', 'SPACE'), ('Unit-3', 'ADJ'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE'), ('5', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('avoids', 'csubj'), ('error', 'compound'), ('propagation', 'dobj'), ('Pre', 'appos'), ('-', 'appos'), ('compute', 'appos'), ('forward', 'amod'), ('cipher', 'pobj'), ('possible', 'acomp'), ('   ', 'attr'), ('Unit-3', 'acomp'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('5', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[avoids, error], [error, propagation], [propagation, Pre], [Pre, -], [-, compute], [compute, forward], [forward, cipher], [cipher, possible], [possible,    ], [   , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ], [ , 5], [5, .]]
+
+>> Trigrams: 
+[[avoids, error, propagation], [error, propagation, Pre], [propagation, Pre, -], [Pre, -, compute], [-, compute, forward], [compute, forward, cipher], [forward, cipher, possible], [cipher, possible,    ], [possible,    , Unit-3], [   , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ], [‹#›,  , 5], [ , 5, .]]
+
+>> Noun Phrases are: 
+[error propagation, -, compute, forward cipher,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG'), ('5', 'CARDINAL')]
+
+
+============================ Sentence 89 =============================
+
+Counter Mode (CTR) Counter (CTR) mode has increased recently with applications to ATM (asynchronous transfer mode) network security and IP sec (IP security). 
+
+
+>> Tokens are: 
+[Counter, Mode, (, CTR, ), Counter, (, CTR, ), mode, increased, recently, applications, ATM, (, asynchronous, transfer, mode, ), network, security, IP, sec, (, IP, security, ), .] 
+
+>> PoS Tags are: 
+[('Counter', 'PROPN'), ('Mode', 'PROPN'), ('(', 'PUNCT'), ('CTR', 'PROPN'), (')', 'PUNCT'), ('Counter', 'PROPN'), ('(', 'PUNCT'), ('CTR', 'PROPN'), (')', 'PUNCT'), ('mode', 'NOUN'), ('increased', 'VERB'), ('recently', 'ADV'), ('applications', 'NOUN'), ('ATM', 'PROPN'), ('(', 'PUNCT'), ('asynchronous', 'ADJ'), ('transfer', 'NOUN'), ('mode', 'NOUN'), (')', 'PUNCT'), ('network', 'NOUN'), ('security', 'NOUN'), ('IP', 'PROPN'), ('sec', 'NOUN'), ('(', 'PUNCT'), ('IP', 'NOUN'), ('security', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Counter', 'compound'), ('Mode', 'nmod'), ('(', 'punct'), ('CTR', 'appos'), (')', 'punct'), ('Counter', 'appos'), ('(', 'punct'), ('CTR', 'nmod'), (')', 'punct'), ('mode', 'nsubj'), ('increased', 'ROOT'), ('recently', 'advmod'), ('applications', 'pobj'), ('ATM', 'pobj'), ('(', 'punct'), ('asynchronous', 'amod'), ('transfer', 'compound'), ('mode', 'nmod'), (')', 'punct'), ('network', 'compound'), ('security', 'appos'), ('IP', 'compound'), ('sec', 'conj'), ('(', 'punct'), ('IP', 'compound'), ('security', 'appos'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Counter, Mode], [Mode, (], [(, CTR], [CTR, )], [), Counter], [Counter, (], [(, CTR], [CTR, )], [), mode], [mode, increased], [increased, recently], [recently, applications], [applications, ATM], [ATM, (], [(, asynchronous], [asynchronous, transfer], [transfer, mode], [mode, )], [), network], [network, security], [security, IP], [IP, sec], [sec, (], [(, IP], [IP, security], [security, )], [), .]]
+
+>> Trigrams: 
+[[Counter, Mode, (], [Mode, (, CTR], [(, CTR, )], [CTR, ), Counter], [), Counter, (], [Counter, (, CTR], [(, CTR, )], [CTR, ), mode], [), mode, increased], [mode, increased, recently], [increased, recently, applications], [recently, applications, ATM], [applications, ATM, (], [ATM, (, asynchronous], [(, asynchronous, transfer], [asynchronous, transfer, mode], [transfer, mode, )], [mode, ), network], [), network, security], [network, security, IP], [security, IP, sec], [IP, sec, (], [sec, (, IP], [(, IP, security], [IP, security, )], [security, ), .]]
+
+>> Noun Phrases are: 
+[CTR, Counter, applications, ATM, asynchronous transfer mode) network security, IP sec, IP security]
+
+>> Named Entities are: 
+[('Counter Mode', 'PERSON'), ('CTR', 'ORG'), ('CTR', 'ORG'), ('ATM', 'ORG'), ('IP', 'ORG'), ('IP', 'ORG')]
+
+
+============================ Sentence 90 =============================
+
+A counter equal to the plaintext block size is used. 
+
+
+>> Tokens are: 
+[counter, equal, plaintext, block, size, .] 
+
+>> PoS Tags are: 
+[('counter', 'NOUN'), ('equal', 'ADJ'), ('plaintext', 'NOUN'), ('block', 'NOUN'), ('size', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('counter', 'nsubjpass'), ('equal', 'amod'), ('plaintext', 'compound'), ('block', 'compound'), ('size', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[counter, equal], [equal, plaintext], [plaintext, block], [block, size], [size, .]]
+
+>> Trigrams: 
+[[counter, equal, plaintext], [equal, plaintext, block], [plaintext, block, size], [block, size, .]]
+
+>> Noun Phrases are: 
+[A counter, the plaintext block size]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 91 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 92 =============================
+
+The counter value must be different for each plaintext block that is encrypted. 
+
+
+>> Tokens are: 
+[counter, value, different, plaintext, block, encrypted, .] 
+
+>> PoS Tags are: 
+[('counter', 'NOUN'), ('value', 'NOUN'), ('different', 'ADJ'), ('plaintext', 'NOUN'), ('block', 'NOUN'), ('encrypted', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('counter', 'compound'), ('value', 'nsubj'), ('different', 'acomp'), ('plaintext', 'compound'), ('block', 'pobj'), ('encrypted', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[counter, value], [value, different], [different, plaintext], [plaintext, block], [block, encrypted], [encrypted, .]]
+
+>> Trigrams: 
+[[counter, value, different], [value, different, plaintext], [different, plaintext, block], [plaintext, block, encrypted], [block, encrypted, .]]
+
+>> Noun Phrases are: 
+[The counter value, each plaintext block]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 93 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 94 =============================
+
+Typically, the counter is initialized to some value and then incremented by 1 for each subsequent block  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   
+
+
+>> Tokens are: 
+[Typically, ,, counter, initialized, value, incremented, 1, subsequent, block,  , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  ] 
+
+>> PoS Tags are: 
+[('Typically', 'ADV'), (',', 'PUNCT'), ('counter', 'NOUN'), ('initialized', 'VERB'), ('value', 'NOUN'), ('incremented', 'VERB'), ('1', 'NUM'), ('subsequent', 'ADJ'), ('block', 'NOUN'), (' ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Typically', 'advmod'), (',', 'punct'), ('counter', 'nsubjpass'), ('initialized', 'ROOT'), ('value', 'pobj'), ('incremented', 'conj'), ('1', 'pobj'), ('subsequent', 'amod'), ('block', 'pobj'), (' ', 'nsubj'), ('Unit-3', 'advcl'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Typically, ,], [,, counter], [counter, initialized], [initialized, value], [value, incremented], [incremented, 1], [1, subsequent], [subsequent, block], [block,  ], [ , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[Typically, ,, counter], [,, counter, initialized], [counter, initialized, value], [initialized, value, incremented], [value, incremented, 1], [incremented, 1, subsequent], [1, subsequent, block], [subsequent, block,  ], [block,  , Unit-3], [ , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ]]
+
+>> Noun Phrases are: 
+[the counter, some value, each subsequent block,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('1', 'CARDINAL'), ('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 95 =============================
+
+Counter 1 Encrypt C1  K   P1 5. 
+
+
+>> Tokens are: 
+[Counter, 1, Encrypt, C1,  , K,   , P1, 5, .] 
+
+>> PoS Tags are: 
+[('Counter', 'PROPN'), ('1', 'NUM'), ('Encrypt', 'PROPN'), ('C1', 'PROPN'), (' ', 'SPACE'), ('K', 'NOUN'), ('  ', 'SPACE'), ('P1', 'PROPN'), ('5', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Counter', 'nmod'), ('1', 'nummod'), ('Encrypt', 'compound'), ('C1', 'ROOT'), (' ', 'appos'), ('K', 'compound'), ('  ', 'appos'), ('P1', 'appos'), ('5', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Counter, 1], [1, Encrypt], [Encrypt, C1], [C1,  ], [ , K], [K,   ], [  , P1], [P1, 5], [5, .]]
+
+>> Trigrams: 
+[[Counter, 1, Encrypt], [1, Encrypt, C1], [Encrypt, C1,  ], [C1,  , K], [ , K,   ], [K,   , P1], [  , P1, 5], [P1, 5, .]]
+
+>> Noun Phrases are: 
+[Counter 1 Encrypt C1, P1]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 96 =============================
+
+CTR Encryption Encrypt C2   
+
+
+>> Tokens are: 
+[CTR, Encryption, Encrypt, C2,  ] 
+
+>> PoS Tags are: 
+[('CTR', 'PROPN'), ('Encryption', 'PROPN'), ('Encrypt', 'PROPN'), ('C2', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('CTR', 'compound'), ('Encryption', 'compound'), ('Encrypt', 'compound'), ('C2', 'ROOT'), (' ', 'appos')]
+
+>> Bigrams: 
+[[CTR, Encryption], [Encryption, Encrypt], [Encrypt, C2], [C2,  ]]
+
+>> Trigrams: 
+[[CTR, Encryption, Encrypt], [Encryption, Encrypt, C2], [Encrypt, C2,  ]]
+
+>> Noun Phrases are: 
+[CTR Encryption Encrypt C2]
+
+>> Named Entities are: 
+[('CTR Encryption', 'ORG')]
+
+
+============================ Sentence 97 =============================
+
+K   P2 Encrypt CN  K   PN …   
+
+
+>> Tokens are: 
+[K,   , P2, Encrypt, CN,  , K,   , PN, …,  ] 
+
+>> PoS Tags are: 
+[('K', 'NOUN'), ('  ', 'SPACE'), ('P2', 'PROPN'), ('Encrypt', 'PROPN'), ('CN', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), ('  ', 'SPACE'), ('PN', 'PROPN'), ('…', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('K', 'compound'), ('  ', 'compound'), ('P2', 'compound'), ('Encrypt', 'compound'), ('CN', 'ROOT'), (' ', 'punct'), ('K', 'compound'), ('  ', 'compound'), ('PN', 'appos'), ('…', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[K,   ], [  , P2], [P2, Encrypt], [Encrypt, CN], [CN,  ], [ , K], [K,   ], [  , PN], [PN, …], […,  ]]
+
+>> Trigrams: 
+[[K,   , P2], [  , P2, Encrypt], [P2, Encrypt, CN], [Encrypt, CN,  ], [CN,  , K], [ , K,   ], [K,   , PN], [  , PN, …], [PN, …,  ]]
+
+>> Noun Phrases are: 
+[K   P2 Encrypt CN, K   PN]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 98 =============================
+
+Counter 2 Counter N    20  4. 
+
+
+>> Tokens are: 
+[Counter, 2, Counter, N,    , 20,  , 4, .] 
+
+>> PoS Tags are: 
+[('Counter', 'PROPN'), ('2', 'NUM'), ('Counter', 'PROPN'), ('N', 'NOUN'), ('   ', 'SPACE'), ('20', 'NUM'), (' ', 'SPACE'), ('4', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Counter', 'ROOT'), ('2', 'nummod'), ('Counter', 'appos'), ('N', 'appos'), ('   ', 'appos'), ('20', 'nummod'), (' ', 'appos'), ('4', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Counter, 2], [2, Counter], [Counter, N], [N,    ], [   , 20], [20,  ], [ , 4], [4, .]]
+
+>> Trigrams: 
+[[Counter, 2, Counter], [2, Counter, N], [Counter, N,    ], [N,    , 20], [   , 20,  ], [20,  , 4], [ , 4, .]]
+
+>> Noun Phrases are: 
+[Counter, 2 Counter, N]
+
+>> Named Entities are: 
+[('Counter 2 Counter N', 'ORG'), ('4', 'CARDINAL')]
+
+
+============================ Sentence 99 =============================
+
+CTR Decryption Counter 1 Encrypt P1  K   C1 Encrypt P2   
+
+
+>> Tokens are: 
+[CTR, Decryption, Counter, 1, Encrypt, P1,  , K,   , C1, Encrypt, P2,  ] 
+
+>> PoS Tags are: 
+[('CTR', 'PROPN'), ('Decryption', 'PROPN'), ('Counter', 'PROPN'), ('1', 'NUM'), ('Encrypt', 'PROPN'), ('P1', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), ('  ', 'SPACE'), ('C1', 'PROPN'), ('Encrypt', 'PROPN'), ('P2', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('CTR', 'compound'), ('Decryption', 'compound'), ('Counter', 'nmod'), ('1', 'nummod'), ('Encrypt', 'compound'), ('P1', 'ROOT'), (' ', 'punct'), ('K', 'compound'), ('  ', 'compound'), ('C1', 'compound'), ('Encrypt', 'compound'), ('P2', 'appos'), (' ', 'appos')]
+
+>> Bigrams: 
+[[CTR, Decryption], [Decryption, Counter], [Counter, 1], [1, Encrypt], [Encrypt, P1], [P1,  ], [ , K], [K,   ], [  , C1], [C1, Encrypt], [Encrypt, P2], [P2,  ]]
+
+>> Trigrams: 
+[[CTR, Decryption, Counter], [Decryption, Counter, 1], [Counter, 1, Encrypt], [1, Encrypt, P1], [Encrypt, P1,  ], [P1,  , K], [ , K,   ], [K,   , C1], [  , C1, Encrypt], [C1, Encrypt, P2], [Encrypt, P2,  ]]
+
+>> Noun Phrases are: 
+[CTR Decryption Counter 1 Encrypt P1, K   C1 Encrypt P2]
+
+>> Named Entities are: 
+[('CTR Decryption Counter', 'ORG')]
+
+
+============================ Sentence 100 =============================
+
+K   C2 Encrypt PN  K   CN …   
+
+
+>> Tokens are: 
+[K,   , C2, Encrypt, PN,  , K,   , CN, …,  ] 
+
+>> PoS Tags are: 
+[('K', 'NOUN'), ('  ', 'SPACE'), ('C2', 'PROPN'), ('Encrypt', 'PROPN'), ('PN', 'PROPN'), (' ', 'SPACE'), ('K', 'PROPN'), ('  ', 'SPACE'), ('CN', 'PROPN'), ('…', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('K', 'compound'), ('  ', 'compound'), ('C2', 'compound'), ('Encrypt', 'ROOT'), ('PN', 'appos'), (' ', 'appos'), ('K', 'compound'), ('  ', 'compound'), ('CN', 'appos'), ('…', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[K,   ], [  , C2], [C2, Encrypt], [Encrypt, PN], [PN,  ], [ , K], [K,   ], [  , CN], [CN, …], […,  ]]
+
+>> Trigrams: 
+[[K,   , C2], [  , C2, Encrypt], [C2, Encrypt, PN], [Encrypt, PN,  ], [PN,  , K], [ , K,   ], [K,   , CN], [  , CN, …], [CN, …,  ]]
+
+>> Noun Phrases are: 
+[K   C2 Encrypt, PN, K   CN]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 101 =============================
+
+Counter 2 Counter N     21   
+
+
+>> Tokens are: 
+[Counter, 2, Counter, N,     , 21,  ] 
+
+>> PoS Tags are: 
+[('Counter', 'PROPN'), ('2', 'NUM'), ('Counter', 'PROPN'), ('N', 'PROPN'), ('    ', 'SPACE'), ('21', 'NUM'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Counter', 'ROOT'), ('2', 'nummod'), ('Counter', 'appos'), ('N', 'appos'), ('    ', 'appos'), ('21', 'nummod'), (' ', 'appos')]
+
+>> Bigrams: 
+[[Counter, 2], [2, Counter], [Counter, N], [N,     ], [    , 21], [21,  ]]
+
+>> Trigrams: 
+[[Counter, 2, Counter], [2, Counter, N], [Counter, N,     ], [N,     , 21], [    , 21,  ]]
+
+>> Noun Phrases are: 
+[Counter, 2 Counter, N]
+
+>> Named Entities are: 
+[('Counter 2 Counter N', 'ORG')]
+
+
+============================ Sentence 102 =============================
+
+Advantages of the CTR Mode Strengths:   Needs only the encryption algorithm Random access to encrypted data blocks blocks can be processed (encrypted or decrypted) in parallel Simple; fast encryption/decryption   
+
+
+>> Tokens are: 
+[Advantages, CTR, Mode, Strengths, :,   , Needs, encryption, algorithm, Random, access, encrypted, data, blocks, blocks, processed, (, encrypted, decrypted, ), parallel, Simple, ;, fast, encryption, /, decryption,  ] 
+
+>> PoS Tags are: 
+[('Advantages', 'NOUN'), ('CTR', 'PROPN'), ('Mode', 'PROPN'), ('Strengths', 'PROPN'), (':', 'PUNCT'), ('  ', 'SPACE'), ('Needs', 'VERB'), ('encryption', 'NOUN'), ('algorithm', 'NOUN'), ('Random', 'ADJ'), ('access', 'NOUN'), ('encrypted', 'VERB'), ('data', 'NOUN'), ('blocks', 'NOUN'), ('blocks', 'NOUN'), ('processed', 'VERB'), ('(', 'PUNCT'), ('encrypted', 'VERB'), ('decrypted', 'VERB'), (')', 'PUNCT'), ('parallel', 'ADJ'), ('Simple', 'PROPN'), (';', 'PUNCT'), ('fast', 'ADJ'), ('encryption', 'NOUN'), ('/', 'SYM'), ('decryption', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Advantages', 'nsubj'), ('CTR', 'compound'), ('Mode', 'compound'), ('Strengths', 'pobj'), (':', 'punct'), ('  ', 'nsubj'), ('Needs', 'ROOT'), ('encryption', 'dobj'), ('algorithm', 'amod'), ('Random', 'amod'), ('access', 'nsubjpass'), ('encrypted', 'amod'), ('data', 'compound'), ('blocks', 'compound'), ('blocks', 'pobj'), ('processed', 'conj'), ('(', 'punct'), ('encrypted', 'conj'), ('decrypted', 'conj'), (')', 'punct'), ('parallel', 'amod'), ('Simple', 'pobj'), (';', 'punct'), ('fast', 'amod'), ('encryption', 'nmod'), ('/', 'punct'), ('decryption', 'conj'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Advantages, CTR], [CTR, Mode], [Mode, Strengths], [Strengths, :], [:,   ], [  , Needs], [Needs, encryption], [encryption, algorithm], [algorithm, Random], [Random, access], [access, encrypted], [encrypted, data], [data, blocks], [blocks, blocks], [blocks, processed], [processed, (], [(, encrypted], [encrypted, decrypted], [decrypted, )], [), parallel], [parallel, Simple], [Simple, ;], [;, fast], [fast, encryption], [encryption, /], [/, decryption], [decryption,  ]]
+
+>> Trigrams: 
+[[Advantages, CTR, Mode], [CTR, Mode, Strengths], [Mode, Strengths, :], [Strengths, :,   ], [:,   , Needs], [  , Needs, encryption], [Needs, encryption, algorithm], [encryption, algorithm, Random], [algorithm, Random, access], [Random, access, encrypted], [access, encrypted, data], [encrypted, data, blocks], [data, blocks, blocks], [blocks, blocks, processed], [blocks, processed, (], [processed, (, encrypted], [(, encrypted, decrypted], [encrypted, decrypted, )], [decrypted, ), parallel], [), parallel, Simple], [parallel, Simple, ;], [Simple, ;, fast], [;, fast, encryption], [fast, encryption, /], [encryption, /, decryption], [/, decryption,  ]]
+
+>> Noun Phrases are: 
+[Advantages, the CTR Mode Strengths, only the encryption, Random access, encrypted data blocks blocks, parallel Simple, fast encryption/decryption]
+
+>> Named Entities are: 
+[('Random', 'PERSON')]
+
+
+============================ Sentence 103 =============================
+
+Counter must be   
+
+
+>> Tokens are: 
+[Counter,  ] 
+
+>> PoS Tags are: 
+[('Counter', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Counter', 'nsubj'), (' ', 'attr')]
+
+>> Bigrams: 
+[[Counter,  ]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Counter]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 104 =============================
+
+Must be unknown and unpredictable pseudo-randomness in the key stream is a goal   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   
+
+
+>> Tokens are: 
+[unknown, unpredictable, pseudo, -, randomness, key, stream, goal,   , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  ] 
+
+>> PoS Tags are: 
+[('unknown', 'ADJ'), ('unpredictable', 'ADJ'), ('pseudo', 'NOUN'), ('-', 'NOUN'), ('randomness', 'NOUN'), ('key', 'ADJ'), ('stream', 'NOUN'), ('goal', 'NOUN'), ('  ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('unknown', 'amod'), ('unpredictable', 'conj'), ('pseudo', 'attr'), ('-', 'punct'), ('randomness', 'attr'), ('key', 'amod'), ('stream', 'pobj'), ('goal', 'attr'), ('  ', 'nsubj'), ('Unit-3', 'relcl'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[unknown, unpredictable], [unpredictable, pseudo], [pseudo, -], [-, randomness], [randomness, key], [key, stream], [stream, goal], [goal,   ], [  , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[unknown, unpredictable, pseudo], [unpredictable, pseudo, -], [pseudo, -, randomness], [-, randomness, key], [randomness, key, stream], [key, stream, goal], [stream, goal,   ], [goal,   , Unit-3], [  , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ]]
+
+>> Noun Phrases are: 
+[unknown and unpredictable pseudo, randomness, the key stream, a goal,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 105 =============================
+
+Summary of all modes 	Operation Mode	Description	Type of Result  	ECB	Each n-bit block is encrypted independently with same key	Block Cipher  	CBC 
+
+
+>> Tokens are: 
+[Summary, modes, 	, Operation, Mode, 	, Description, 	, Type, Result,  	, ECB, 	, n, -, bit, block, encrypted, independently, key, 	, Block, Cipher,  	, CBC] 
+
+>> PoS Tags are: 
+[('Summary', 'NOUN'), ('modes', 'NOUN'), ('\t', 'SPACE'), ('Operation', 'PROPN'), ('Mode', 'PROPN'), ('\t', 'SPACE'), ('Description', 'PROPN'), ('\t', 'SPACE'), ('Type', 'PROPN'), ('Result', 'PROPN'), (' \t', 'SPACE'), ('ECB', 'PROPN'), ('\t', 'SPACE'), ('n', 'NOUN'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('block', 'NOUN'), ('encrypted', 'VERB'), ('independently', 'ADV'), ('key', 'ADJ'), ('\t', 'SPACE'), ('Block', 'PROPN'), ('Cipher', 'PROPN'), (' \t', 'SPACE'), ('CBC', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Summary', 'nsubj'), ('modes', 'ROOT'), ('\t', 'compound'), ('Operation', 'compound'), ('Mode', 'compound'), ('\t', 'compound'), ('Description', 'compound'), ('\t', 'compound'), ('Type', 'dobj'), ('Result', 'pobj'), (' \t', 'compound'), ('ECB', 'compound'), ('\t', 'nsubjpass'), ('n', 'compound'), ('-', 'punct'), ('bit', 'compound'), ('block', 'nsubjpass'), ('encrypted', 'ccomp'), ('independently', 'advmod'), ('key', 'pobj'), ('\t', 'compound'), ('Block', 'compound'), ('Cipher', 'appos'), (' \t', 'nummod'), ('CBC', 'appos')]
+
+>> Bigrams: 
+[[Summary, modes], [modes, 	], [	, Operation], [Operation, Mode], [Mode, 	], [	, Description], [Description, 	], [	, Type], [Type, Result], [Result,  	], [ 	, ECB], [ECB, 	], [	, n], [n, -], [-, bit], [bit, block], [block, encrypted], [encrypted, independently], [independently, key], [key, 	], [	, Block], [Block, Cipher], [Cipher,  	], [ 	, CBC]]
+
+>> Trigrams: 
+[[Summary, modes, 	], [modes, 	, Operation], [	, Operation, Mode], [Operation, Mode, 	], [Mode, 	, Description], [	, Description, 	], [Description, 	, Type], [	, Type, Result], [Type, Result,  	], [Result,  	, ECB], [ 	, ECB, 	], [ECB, 	, n], [	, n, -], [n, -, bit], [-, bit, block], [bit, block, encrypted], [block, encrypted, independently], [encrypted, independently, key], [independently, key, 	], [key, 	, Block], [	, Block, Cipher], [Block, Cipher,  	], [Cipher,  	, CBC]]
+
+>> Noun Phrases are: 
+[Summary, 	Operation Mode	Description	Type, Result, Each n-bit block, 	Block Cipher,  	CBC]
+
+>> Named Entities are: 
+[('ECB', 'ORG')]
+
+
+============================ Sentence 106 =============================
+
+	Same as ECB, but each block is XORed with previous cipher text	Block Cipher 
+
+
+>> Tokens are: 
+[	, ECB, ,, block, XORed, previous, cipher, text, 	, Block, Cipher] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('ECB', 'PROPN'), (',', 'PUNCT'), ('block', 'NOUN'), ('XORed', 'ADJ'), ('previous', 'ADJ'), ('cipher', 'NOUN'), ('text', 'NOUN'), ('\t', 'SPACE'), ('Block', 'PROPN'), ('Cipher', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('ECB', 'pobj'), (',', 'punct'), ('block', 'nsubj'), ('XORed', 'acomp'), ('previous', 'amod'), ('cipher', 'compound'), ('text', 'pobj'), ('\t', 'compound'), ('Block', 'appos'), ('Cipher', 'dobj')]
+
+>> Bigrams: 
+[[	, ECB], [ECB, ,], [,, block], [block, XORed], [XORed, previous], [previous, cipher], [cipher, text], [text, 	], [	, Block], [Block, Cipher]]
+
+>> Trigrams: 
+[[	, ECB, ,], [ECB, ,, block], [,, block, XORed], [block, XORed, previous], [XORed, previous, cipher], [previous, cipher, text], [cipher, text, 	], [text, 	, Block], [	, Block, Cipher]]
+
+>> Noun Phrases are: 
+[	Same, ECB, each block, previous cipher text, 	Block, Cipher]
+
+>> Named Entities are: 
+[('ECB', 'ORG'), ('XORed', 'ORG')]
+
+
+============================ Sentence 107 =============================
+
+ 	CFB	Each s-bit block is XORed with s-bit key which is part of previous cipher text	Stream Cipher  	OFB 
+
+
+>> Tokens are: 
+[ 	, CFB, 	, s, -, bit, block, XORed, s, -, bit, key, previous, cipher, text, 	, Stream, Cipher,  	, OFB] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('CFB', 'PROPN'), ('\t', 'SPACE'), ('s', 'NOUN'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('block', 'NOUN'), ('XORed', 'PROPN'), ('s', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('key', 'NOUN'), ('previous', 'ADJ'), ('cipher', 'NOUN'), ('text', 'NOUN'), ('\t', 'SPACE'), ('Stream', 'PROPN'), ('Cipher', 'PROPN'), (' \t', 'SPACE'), ('OFB', 'PROPN')] 
+
+>> Dependency Tags are: 
+[(' \t', 'nummod'), ('CFB', 'compound'), ('\t', 'nsubj'), ('s', 'compound'), ('-', 'punct'), ('bit', 'compound'), ('block', 'nsubj'), ('XORed', 'attr'), ('s', 'nummod'), ('-', 'punct'), ('bit', 'compound'), ('key', 'pobj'), ('previous', 'amod'), ('cipher', 'compound'), ('text', 'compound'), ('\t', 'compound'), ('Stream', 'pcomp'), ('Cipher', 'dobj'), (' \t', 'amod'), ('OFB', 'dobj')]
+
+>> Bigrams: 
+[[ 	, CFB], [CFB, 	], [	, s], [s, -], [-, bit], [bit, block], [block, XORed], [XORed, s], [s, -], [-, bit], [bit, key], [key, previous], [previous, cipher], [cipher, text], [text, 	], [	, Stream], [Stream, Cipher], [Cipher,  	], [ 	, OFB]]
+
+>> Trigrams: 
+[[ 	, CFB, 	], [CFB, 	, s], [	, s, -], [s, -, bit], [-, bit, block], [bit, block, XORed], [block, XORed, s], [XORed, s, -], [s, -, bit], [-, bit, key], [bit, key, previous], [key, previous, cipher], [previous, cipher, text], [cipher, text, 	], [text, 	, Stream], [	, Stream, Cipher], [Stream, Cipher,  	], [Cipher,  	, OFB]]
+
+>> Noun Phrases are: 
+[Each s-bit block, XORed, s-bit key, part, previous cipher text	Stream, Cipher,  	OFB]
+
+>> Named Entities are: 
+[('XORed', 'ORG'), ('OFB', 'ORG')]
+
+
+============================ Sentence 108 =============================
+
+	Same as CFB, but the shift register is updated by the previous s-bit key	Stream Cipher  	CTR	Same as OFB, but a counter is used instead of nonce	Stream Cipher   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   
+
+
+>> Tokens are: 
+[	, CFB, ,, shift, register, updated, previous, s, -, bit, key, 	, Stream, Cipher,  	, CTR, 	, OFB, ,, counter, instead, nonce, 	, Stream, Cipher,   , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  ] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('CFB', 'PROPN'), (',', 'PUNCT'), ('shift', 'NOUN'), ('register', 'NOUN'), ('updated', 'VERB'), ('previous', 'ADJ'), ('s', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('key', 'ADJ'), ('\t', 'SPACE'), ('Stream', 'PROPN'), ('Cipher', 'PROPN'), (' \t', 'SPACE'), ('CTR', 'PROPN'), ('\t', 'SPACE'), ('OFB', 'PROPN'), (',', 'PUNCT'), ('counter', 'NOUN'), ('instead', 'ADV'), ('nonce', 'NOUN'), ('\t', 'SPACE'), ('Stream', 'PROPN'), ('Cipher', 'PROPN'), ('  ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('CFB', 'pobj'), (',', 'punct'), ('shift', 'compound'), ('register', 'nsubjpass'), ('updated', 'ROOT'), ('previous', 'amod'), ('s', 'nummod'), ('-', 'punct'), ('bit', 'npadvmod'), ('key', 'amod'), ('\t', 'compound'), ('Stream', 'nmod'), ('Cipher', 'appos'), (' \t', 'compound'), ('CTR', 'appos'), ('\t', 'compound'), ('OFB', 'pobj'), (',', 'punct'), ('counter', 'nsubjpass'), ('instead', 'advmod'), ('nonce', 'pobj'), ('\t', 'compound'), ('Stream', 'compound'), ('Cipher', 'dobj'), ('  ', 'nsubj'), ('Unit-3', 'ccomp'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[	, CFB], [CFB, ,], [,, shift], [shift, register], [register, updated], [updated, previous], [previous, s], [s, -], [-, bit], [bit, key], [key, 	], [	, Stream], [Stream, Cipher], [Cipher,  	], [ 	, CTR], [CTR, 	], [	, OFB], [OFB, ,], [,, counter], [counter, instead], [instead, nonce], [nonce, 	], [	, Stream], [Stream, Cipher], [Cipher,   ], [  , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[	, CFB, ,], [CFB, ,, shift], [,, shift, register], [shift, register, updated], [register, updated, previous], [updated, previous, s], [previous, s, -], [s, -, bit], [-, bit, key], [bit, key, 	], [key, 	, Stream], [	, Stream, Cipher], [Stream, Cipher,  	], [Cipher,  	, CTR], [ 	, CTR, 	], [CTR, 	, OFB], [	, OFB, ,], [OFB, ,, counter], [,, counter, instead], [counter, instead, nonce], [instead, nonce, 	], [nonce, 	, Stream], [	, Stream, Cipher], [Stream, Cipher,   ], [Cipher,   , Unit-3], [  , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ]]
+
+>> Noun Phrases are: 
+[	Same, CFB, the shift register, 	Stream Cipher,  	CTR, OFB, a counter, nonce, 	Stream Cipher,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('CFB', 'ORG'), ('OFB', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 109 =============================
+
+Multiple Encryption Given the potential vulnerability of DES to a brute-force attack 
+
+
+>> Tokens are: 
+[Multiple, Encryption, Given, potential, vulnerability, DES, brute, -, force, attack] 
+
+>> PoS Tags are: 
+[('Multiple', 'PROPN'), ('Encryption', 'PROPN'), ('Given', 'VERB'), ('potential', 'ADJ'), ('vulnerability', 'NOUN'), ('DES', 'PROPN'), ('brute', 'ADJ'), ('-', 'PUNCT'), ('force', 'NOUN'), ('attack', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Multiple', 'compound'), ('Encryption', 'ROOT'), ('Given', 'prep'), ('potential', 'amod'), ('vulnerability', 'pobj'), ('DES', 'pobj'), ('brute', 'amod'), ('-', 'punct'), ('force', 'compound'), ('attack', 'pobj')]
+
+>> Bigrams: 
+[[Multiple, Encryption], [Encryption, Given], [Given, potential], [potential, vulnerability], [vulnerability, DES], [DES, brute], [brute, -], [-, force], [force, attack]]
+
+>> Trigrams: 
+[[Multiple, Encryption, Given], [Encryption, Given, potential], [Given, potential, vulnerability], [potential, vulnerability, DES], [vulnerability, DES, brute], [DES, brute, -], [brute, -, force], [-, force, attack]]
+
+>> Noun Phrases are: 
+[Multiple Encryption, the potential vulnerability, DES, a brute-force attack]
+
+>> Named Entities are: 
+[('Multiple Encryption Given', 'ORG')]
+
+
+============================ Sentence 110 =============================
+
+, there has been considerable interest in finding an alternative. 
+
+
+>> Tokens are: 
+[,, considerable, interest, finding, alternative, .] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('considerable', 'ADJ'), ('interest', 'NOUN'), ('finding', 'VERB'), ('alternative', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('considerable', 'amod'), ('interest', 'attr'), ('finding', 'pcomp'), ('alternative', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[,, considerable], [considerable, interest], [interest, finding], [finding, alternative], [alternative, .]]
+
+>> Trigrams: 
+[[,, considerable, interest], [considerable, interest, finding], [interest, finding, alternative], [finding, alternative, .]]
+
+>> Noun Phrases are: 
+[considerable interest, an alternative]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 111 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 112 =============================
+
+One approach is to design a completely new algorithm, of which AES is a prime example. 
+
+
+>> Tokens are: 
+[approach, design, completely, new, algorithm, ,, AES, prime, example, .] 
+
+>> PoS Tags are: 
+[('approach', 'NOUN'), ('design', 'VERB'), ('completely', 'ADV'), ('new', 'ADJ'), ('algorithm', 'NOUN'), (',', 'PUNCT'), ('AES', 'PROPN'), ('prime', 'ADJ'), ('example', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('approach', 'nsubj'), ('design', 'xcomp'), ('completely', 'advmod'), ('new', 'amod'), ('algorithm', 'dobj'), (',', 'punct'), ('AES', 'nsubj'), ('prime', 'amod'), ('example', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[approach, design], [design, completely], [completely, new], [new, algorithm], [algorithm, ,], [,, AES], [AES, prime], [prime, example], [example, .]]
+
+>> Trigrams: 
+[[approach, design, completely], [design, completely, new], [completely, new, algorithm], [new, algorithm, ,], [algorithm, ,, AES], [,, AES, prime], [AES, prime, example], [prime, example, .]]
+
+>> Noun Phrases are: 
+[One approach, a completely new algorithm, AES, a prime example]
+
+>> Named Entities are: 
+[('One', 'CARDINAL'), ('AES', 'ORG')]
+
+
+============================ Sentence 113 =============================
+
+Another alternative, which would preserve the existing investment in software and equipment, is to use multiple encryption with DES and multiple keys. 
+
+
+>> Tokens are: 
+[alternative, ,, preserve, existing, investment, software, equipment, ,, use, multiple, encryption, DES, multiple, keys, .] 
+
+>> PoS Tags are: 
+[('alternative', 'NOUN'), (',', 'PUNCT'), ('preserve', 'VERB'), ('existing', 'VERB'), ('investment', 'NOUN'), ('software', 'NOUN'), ('equipment', 'NOUN'), (',', 'PUNCT'), ('use', 'VERB'), ('multiple', 'ADJ'), ('encryption', 'NOUN'), ('DES', 'PROPN'), ('multiple', 'ADJ'), ('keys', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('alternative', 'nsubj'), (',', 'punct'), ('preserve', 'relcl'), ('existing', 'amod'), ('investment', 'dobj'), ('software', 'pobj'), ('equipment', 'conj'), (',', 'punct'), ('use', 'xcomp'), ('multiple', 'amod'), ('encryption', 'dobj'), ('DES', 'pobj'), ('multiple', 'amod'), ('keys', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[alternative, ,], [,, preserve], [preserve, existing], [existing, investment], [investment, software], [software, equipment], [equipment, ,], [,, use], [use, multiple], [multiple, encryption], [encryption, DES], [DES, multiple], [multiple, keys], [keys, .]]
+
+>> Trigrams: 
+[[alternative, ,, preserve], [,, preserve, existing], [preserve, existing, investment], [existing, investment, software], [investment, software, equipment], [software, equipment, ,], [equipment, ,, use], [,, use, multiple], [use, multiple, encryption], [multiple, encryption, DES], [encryption, DES, multiple], [DES, multiple, keys], [multiple, keys, .]]
+
+>> Noun Phrases are: 
+[Another alternative, the existing investment, software, equipment, multiple encryption, DES, multiple keys]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 114 =============================
+
+   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   
+
+
+>> Tokens are: 
+[   , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  ] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('   ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[   , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[   , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ]]
+
+>> Noun Phrases are: 
+[                                                                                Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 115 =============================
+
+Double DES   C=E(K2,E(K1, P)) 
+
+
+>> Tokens are: 
+[Double, DES,   , C, =, E(K2,E(K1, ,, P, ), )] 
+
+>> PoS Tags are: 
+[('Double', 'ADJ'), ('DES', 'PROPN'), ('  ', 'SPACE'), ('C', 'NOUN'), ('=', 'SYM'), ('E(K2,E(K1', 'PROPN'), (',', 'PUNCT'), ('P', 'NOUN'), (')', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Double', 'amod'), ('DES', 'compound'), ('  ', 'compound'), ('C', 'ROOT'), ('=', 'punct'), ('E(K2,E(K1', 'appos'), (',', 'punct'), ('P', 'appos'), (')', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[Double, DES], [DES,   ], [  , C], [C, =], [=, E(K2,E(K1], [E(K2,E(K1, ,], [,, P], [P, )], [), )]]
+
+>> Trigrams: 
+[[Double, DES,   ], [DES,   , C], [  , C, =], [C, =, E(K2,E(K1], [=, E(K2,E(K1, ,], [E(K2,E(K1, ,, P], [,, P, )], [P, ), )]]
+
+>> Noun Phrases are: 
+[Double DES   C, =E(K2,E(K1, P]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 116 =============================
+
+P=D(K1,D(K2, C)) 
+
+
+>> Tokens are: 
+[P, =, D(K1,D(K2, ,, C, ), )] 
+
+>> PoS Tags are: 
+[('P', 'NOUN'), ('=', 'PUNCT'), ('D(K1,D(K2', 'PROPN'), (',', 'PUNCT'), ('C', 'PROPN'), (')', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('P', 'ROOT'), ('=', 'punct'), ('D(K1,D(K2', 'appos'), (',', 'punct'), ('C', 'appos'), (')', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[P, =], [=, D(K1,D(K2], [D(K1,D(K2, ,], [,, C], [C, )], [), )]]
+
+>> Trigrams: 
+[[P, =, D(K1,D(K2], [=, D(K1,D(K2, ,], [D(K1,D(K2, ,, C], [,, C, )], [C, ), )]]
+
+>> Noun Phrases are: 
+[P, =D(K1,D(K2, C]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 117 =============================
+
+X = E(K1, P) = 
+
+
+>> Tokens are: 
+[X, =, E(K1, ,, P, ), =] 
+
+>> PoS Tags are: 
+[('X', 'NOUN'), ('=', 'PROPN'), ('E(K1', 'PROPN'), (',', 'PUNCT'), ('P', 'NOUN'), (')', 'PUNCT'), ('=', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('X', 'ROOT'), ('=', 'appos'), ('E(K1', 'appos'), (',', 'punct'), ('P', 'npadvmod'), (')', 'punct'), ('=', 'punct')]
+
+>> Bigrams: 
+[[X, =], [=, E(K1], [E(K1, ,], [,, P], [P, )], [), =]]
+
+>> Trigrams: 
+[[X, =, E(K1], [=, E(K1, ,], [E(K1, ,, P], [,, P, )], [P, ), =]]
+
+>> Noun Phrases are: 
+[X, =, E(K1]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 118 =============================
+
+D(K2, C)  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   
+
+
+>> Tokens are: 
+[D(K2, ,, C, ),  , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  ] 
+
+>> PoS Tags are: 
+[('D(K2', 'ADJ'), (',', 'PUNCT'), ('C', 'PROPN'), (')', 'PUNCT'), (' ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('D(K2', 'amod'), (',', 'punct'), ('C', 'nsubj'), (')', 'punct'), (' ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'conj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[D(K2, ,], [,, C], [C, )], [),  ], [ , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[D(K2, ,, C], [,, C, )], [C, ),  ], [),  , Unit-3], [ , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ]]
+
+>> Noun Phrases are: 
+[D(K2, C,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 119 =============================
+
+Meet in the Middle Attack This attack involves encryption from one end, decryption from the other and matching the results in the middle. 
+
+
+>> Tokens are: 
+[Meet, Middle, Attack, attack, involves, encryption, end, ,, decryption, matching, results, middle, .] 
+
+>> PoS Tags are: 
+[('Meet', 'VERB'), ('Middle', 'PROPN'), ('Attack', 'PROPN'), ('attack', 'NOUN'), ('involves', 'VERB'), ('encryption', 'NOUN'), ('end', 'NOUN'), (',', 'PUNCT'), ('decryption', 'NOUN'), ('matching', 'VERB'), ('results', 'NOUN'), ('middle', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Meet', 'advcl'), ('Middle', 'compound'), ('Attack', 'pobj'), ('attack', 'nsubj'), ('involves', 'ROOT'), ('encryption', 'dobj'), ('end', 'pobj'), (',', 'punct'), ('decryption', 'dep'), ('matching', 'conj'), ('results', 'dobj'), ('middle', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Meet, Middle], [Middle, Attack], [Attack, attack], [attack, involves], [involves, encryption], [encryption, end], [end, ,], [,, decryption], [decryption, matching], [matching, results], [results, middle], [middle, .]]
+
+>> Trigrams: 
+[[Meet, Middle, Attack], [Middle, Attack, attack], [Attack, attack, involves], [attack, involves, encryption], [involves, encryption, end], [encryption, end, ,], [end, ,, decryption], [,, decryption, matching], [decryption, matching, results], [matching, results, middle], [results, middle, .]]
+
+>> Noun Phrases are: 
+[the Middle Attack, This attack, encryption, one end, the results, the middle]
+
+>> Named Entities are: 
+[('one', 'CARDINAL')]
+
+
+============================ Sentence 120 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 121 =============================
+
+Suppose cryptanalyst knows P and corresponding C.   
+
+
+>> Tokens are: 
+[Suppose, cryptanalyst, knows, P, corresponding, C.,  ] 
+
+>> PoS Tags are: 
+[('Suppose', 'PROPN'), ('cryptanalyst', 'NOUN'), ('knows', 'VERB'), ('P', 'NOUN'), ('corresponding', 'ADJ'), ('C.', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Suppose', 'compound'), ('cryptanalyst', 'nsubj'), ('knows', 'ROOT'), ('P', 'dobj'), ('corresponding', 'conj'), ('C.', 'nmod'), (' ', 'dobj')]
+
+>> Bigrams: 
+[[Suppose, cryptanalyst], [cryptanalyst, knows], [knows, P], [P, corresponding], [corresponding, C.], [C.,  ]]
+
+>> Trigrams: 
+[[Suppose, cryptanalyst, knows], [cryptanalyst, knows, P], [knows, P, corresponding], [P, corresponding, C.], [corresponding, C.,  ]]
+
+>> Noun Phrases are: 
+[Suppose cryptanalyst, P]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 122 =============================
+
+Now, the aim is to obtain the values of K1 and K2. 
+
+
+>> Tokens are: 
+[,, aim, obtain, values, K1, K2, .] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('aim', 'NOUN'), ('obtain', 'VERB'), ('values', 'NOUN'), ('K1', 'NOUN'), ('K2', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('aim', 'nsubj'), ('obtain', 'xcomp'), ('values', 'dobj'), ('K1', 'pobj'), ('K2', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[,, aim], [aim, obtain], [obtain, values], [values, K1], [K1, K2], [K2, .]]
+
+>> Trigrams: 
+[[,, aim, obtain], [aim, obtain, values], [obtain, values, K1], [values, K1, K2], [K1, K2, .]]
+
+>> Noun Phrases are: 
+[the aim, the values, K1, K2]
+
+>> Named Entities are: 
+[('K1', 'PERSON')]
+
+
+============================ Sentence 123 =============================
+
+    Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   
+
+
+>> Tokens are: 
+[    , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,  ] 
+
+>> PoS Tags are: 
+[('    ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('    ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'conj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[    , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[    , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,  ]]
+
+>> Noun Phrases are: 
+[                                                                                Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 124 =============================
+
+Meet in the Middle Attack Step-1 	 	 	 	  For all possible values (256) of key K1, the cryptanalyst would encrypt the P by performing E(K1,P). 
+
+
+>> Tokens are: 
+[Meet, Middle, Attack, Step-1, 	 	 	 	  , possible, values, (, 256, ), key, K1, ,, cryptanalyst, encrypt, P, performing, E(K1,P, ), .] 
+
+>> PoS Tags are: 
+[('Meet', 'VERB'), ('Middle', 'PROPN'), ('Attack', 'PROPN'), ('Step-1', 'NOUN'), ('\t \t \t \t  ', 'SPACE'), ('possible', 'ADJ'), ('values', 'NOUN'), ('(', 'PUNCT'), ('256', 'NUM'), (')', 'PUNCT'), ('key', 'ADJ'), ('K1', 'NOUN'), (',', 'PUNCT'), ('cryptanalyst', 'NOUN'), ('encrypt', 'VERB'), ('P', 'NOUN'), ('performing', 'VERB'), ('E(K1,P', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Meet', 'advcl'), ('Middle', 'compound'), ('Attack', 'compound'), ('Step-1', 'pobj'), ('\t \t \t \t  ', 'dobj'), ('possible', 'amod'), ('values', 'pobj'), ('(', 'punct'), ('256', 'parataxis'), (')', 'punct'), ('key', 'amod'), ('K1', 'pobj'), (',', 'punct'), ('cryptanalyst', 'nsubj'), ('encrypt', 'ROOT'), ('P', 'dobj'), ('performing', 'pcomp'), ('E(K1,P', 'dobj'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Meet, Middle], [Middle, Attack], [Attack, Step-1], [Step-1, 	 	 	 	  ], [	 	 	 	  , possible], [possible, values], [values, (], [(, 256], [256, )], [), key], [key, K1], [K1, ,], [,, cryptanalyst], [cryptanalyst, encrypt], [encrypt, P], [P, performing], [performing, E(K1,P], [E(K1,P, )], [), .]]
+
+>> Trigrams: 
+[[Meet, Middle, Attack], [Middle, Attack, Step-1], [Attack, Step-1, 	 	 	 	  ], [Step-1, 	 	 	 	  , possible], [	 	 	 	  , possible, values], [possible, values, (], [values, (, 256], [(, 256, )], [256, ), key], [), key, K1], [key, K1, ,], [K1, ,, cryptanalyst], [,, cryptanalyst, encrypt], [cryptanalyst, encrypt, P], [encrypt, P, performing], [P, performing, E(K1,P], [performing, E(K1,P, )], [E(K1,P, ), .]]
+
+>> Noun Phrases are: 
+[the Middle Attack Step-1, all possible values, key K1, the cryptanalyst, the P, E(K1,P]
+
+>> Named Entities are: 
+[('256', 'CARDINAL'), ('K1', 'PERSON')]
+
+
+============================ Sentence 125 =============================
+
+The cryptanalyst would store output in a table. 
+
+
+>> Tokens are: 
+[cryptanalyst, store, output, table, .] 
+
+>> PoS Tags are: 
+[('cryptanalyst', 'NOUN'), ('store', 'VERB'), ('output', 'NOUN'), ('table', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('cryptanalyst', 'nsubj'), ('store', 'ROOT'), ('output', 'dobj'), ('table', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[cryptanalyst, store], [store, output], [output, table], [table, .]]
+
+>> Trigrams: 
+[[cryptanalyst, store, output], [store, output, table], [output, table, .]]
+
+>> Noun Phrases are: 
+[The cryptanalyst, output, a table]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 126 =============================
+
+  Encrypt P Possible Keys (Key = K1) 00 
+
+
+>> Tokens are: 
+[  , Encrypt, P, Possible, Keys, (, Key, =, K1, ), 00] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Encrypt', 'PROPN'), ('P', 'NOUN'), ('Possible', 'ADJ'), ('Keys', 'PROPN'), ('(', 'PUNCT'), ('Key', 'PROPN'), ('=', 'SYM'), ('K1', 'PROPN'), (')', 'PUNCT'), ('00', 'NUM')] 
+
+>> Dependency Tags are: 
+[('  ', 'compound'), ('Encrypt', 'compound'), ('P', 'nsubj'), ('Possible', 'amod'), ('Keys', 'appos'), ('(', 'punct'), ('Key', 'nmod'), ('=', 'punct'), ('K1', 'appos'), (')', 'punct'), ('00', 'ROOT')]
+
+>> Bigrams: 
+[[  , Encrypt], [Encrypt, P], [P, Possible], [Possible, Keys], [Keys, (], [(, Key], [Key, =], [=, K1], [K1, )], [), 00]]
+
+>> Trigrams: 
+[[  , Encrypt, P], [Encrypt, P, Possible], [P, Possible, Keys], [Possible, Keys, (], [Keys, (, Key], [(, Key, =], [Key, =, K1], [=, K1, )], [K1, ), 00]]
+
+>> Noun Phrases are: 
+[  Encrypt P, Possible Keys, (Key = K1]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 127 =============================
+
+01 10 11 Table of Cipher Text Cryptanalyst encryption operation  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   27   
+
+
+>> Tokens are: 
+[01, 10, 11, Table, Cipher, Text, Cryptanalyst, encryption, operation,  , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,   , 27,  ] 
+
+>> PoS Tags are: 
+[('01', 'NUM'), ('10', 'NUM'), ('11', 'NUM'), ('Table', 'NOUN'), ('Cipher', 'PROPN'), ('Text', 'PROPN'), ('Cryptanalyst', 'PROPN'), ('encryption', 'NOUN'), ('operation', 'NOUN'), (' ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'VERB'), ('  ', 'SPACE'), ('27', 'NUM'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('01', 'nummod'), ('10', 'compound'), ('11', 'nummod'), ('Table', 'nsubj'), ('Cipher', 'compound'), ('Text', 'compound'), ('Cryptanalyst', 'compound'), ('encryption', 'compound'), ('operation', 'pobj'), (' ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct'), ('  ', 'dative'), ('27', 'nummod'), (' ', 'npadvmod')]
+
+>> Bigrams: 
+[[01, 10], [10, 11], [11, Table], [Table, Cipher], [Cipher, Text], [Text, Cryptanalyst], [Cryptanalyst, encryption], [encryption, operation], [operation,  ], [ , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,   ], [  , 27], [27,  ]]
+
+>> Trigrams: 
+[[01, 10, 11], [10, 11, Table], [11, Table, Cipher], [Table, Cipher, Text], [Cipher, Text, Cryptanalyst], [Text, Cryptanalyst, encryption], [Cryptanalyst, encryption, operation], [encryption, operation,  ], [operation,  , Unit-3], [ , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,   ], [‹#›,   , 27], [  , 27,  ]]
+
+>> Noun Phrases are: 
+[01 10 11 Table, Cipher Text Cryptanalyst encryption operation,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG'), ('27', 'CARDINAL')]
+
+
+============================ Sentence 128 =============================
+
+Meet in the Middle Attack Step-2 	 	 	 	  Cryptanalyst decrypt the known C with all possible values of K2. 
+
+
+>> Tokens are: 
+[Meet, Middle, Attack, Step-2, 	 	 	 	  , Cryptanalyst, decrypt, known, C, possible, values, K2, .] 
+
+>> PoS Tags are: 
+[('Meet', 'VERB'), ('Middle', 'PROPN'), ('Attack', 'PROPN'), ('Step-2', 'ADJ'), ('\t \t \t \t  ', 'SPACE'), ('Cryptanalyst', 'PROPN'), ('decrypt', 'VERB'), ('known', 'VERB'), ('C', 'NOUN'), ('possible', 'ADJ'), ('values', 'NOUN'), ('K2', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Meet', 'advcl'), ('Middle', 'compound'), ('Attack', 'pobj'), ('Step-2', 'conj'), ('\t \t \t \t  ', 'compound'), ('Cryptanalyst', 'nsubj'), ('decrypt', 'ROOT'), ('known', 'amod'), ('C', 'dobj'), ('possible', 'amod'), ('values', 'pobj'), ('K2', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Meet, Middle], [Middle, Attack], [Attack, Step-2], [Step-2, 	 	 	 	  ], [	 	 	 	  , Cryptanalyst], [Cryptanalyst, decrypt], [decrypt, known], [known, C], [C, possible], [possible, values], [values, K2], [K2, .]]
+
+>> Trigrams: 
+[[Meet, Middle, Attack], [Middle, Attack, Step-2], [Attack, Step-2, 	 	 	 	  ], [Step-2, 	 	 	 	  , Cryptanalyst], [	 	 	 	  , Cryptanalyst, decrypt], [Cryptanalyst, decrypt, known], [decrypt, known, C], [known, C, possible], [C, possible, values], [possible, values, K2], [values, K2, .]]
+
+>> Noun Phrases are: 
+[the Middle Attack, 	 	 	 	  Cryptanalyst, the known C, all possible values, K2]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 129 =============================
+
+In each case cryptanalyst will compare the resulting value with the all values in the table of ciphertext. 
+
+
+>> Tokens are: 
+[case, cryptanalyst, compare, resulting, value, values, table, ciphertext, .] 
+
+>> PoS Tags are: 
+[('case', 'NOUN'), ('cryptanalyst', 'NOUN'), ('compare', 'VERB'), ('resulting', 'VERB'), ('value', 'NOUN'), ('values', 'NOUN'), ('table', 'NOUN'), ('ciphertext', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('case', 'compound'), ('cryptanalyst', 'nsubj'), ('compare', 'ROOT'), ('resulting', 'amod'), ('value', 'dobj'), ('values', 'pobj'), ('table', 'pobj'), ('ciphertext', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[case, cryptanalyst], [cryptanalyst, compare], [compare, resulting], [resulting, value], [value, values], [values, table], [table, ciphertext], [ciphertext, .]]
+
+>> Trigrams: 
+[[case, cryptanalyst, compare], [cryptanalyst, compare, resulting], [compare, resulting, value], [resulting, value, values], [value, values, table], [values, table, ciphertext], [table, ciphertext, .]]
+
+>> Noun Phrases are: 
+[each case cryptanalyst, the resulting value, the all values, the table, ciphertext]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 130 =============================
+
+  Decrypt C Possible Keys (Key = K2) 00 01 10 11 Table of Cipher Text Cryptanalyst decryption operation For each result do a table look up  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   28   
+
+
+>> Tokens are: 
+[  , Decrypt, C, Possible, Keys, (, Key, =, K2, ), 00, 01, 10, 11, Table, Cipher, Text, Cryptanalyst, decryption, operation, result, table, look,  , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›,   , 28,  ] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Decrypt', 'PROPN'), ('C', 'PROPN'), ('Possible', 'ADJ'), ('Keys', 'PROPN'), ('(', 'PUNCT'), ('Key', 'PROPN'), ('=', 'SYM'), ('K2', 'PROPN'), (')', 'PUNCT'), ('00', 'NUM'), ('01', 'NUM'), ('10', 'NUM'), ('11', 'NUM'), ('Table', 'NOUN'), ('Cipher', 'PROPN'), ('Text', 'PROPN'), ('Cryptanalyst', 'PROPN'), ('decryption', 'NOUN'), ('operation', 'NOUN'), ('result', 'NOUN'), ('table', 'NOUN'), ('look', 'VERB'), (' ', 'SPACE'), ('Unit-3', 'ADJ'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'VERB'), ('  ', 'SPACE'), ('28', 'NUM'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('  ', 'poss'), ('Decrypt', 'compound'), ('C', 'appos'), ('Possible', 'amod'), ('Keys', 'nsubj'), ('(', 'punct'), ('Key', 'amod'), ('=', 'punct'), ('K2', 'appos'), (')', 'punct'), ('00', 'nummod'), ('01', 'nummod'), ('10', 'compound'), ('11', 'nummod'), ('Table', 'nsubj'), ('Cipher', 'compound'), ('Text', 'compound'), ('Cryptanalyst', 'compound'), ('decryption', 'compound'), ('operation', 'pobj'), ('result', 'pobj'), ('table', 'nsubj'), ('look', 'ROOT'), (' ', 'pobj'), ('Unit-3', 'advcl'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct'), ('  ', 'npadvmod'), ('28', 'nummod'), (' ', 'punct')]
+
+>> Bigrams: 
+[[  , Decrypt], [Decrypt, C], [C, Possible], [Possible, Keys], [Keys, (], [(, Key], [Key, =], [=, K2], [K2, )], [), 00], [00, 01], [01, 10], [10, 11], [11, Table], [Table, Cipher], [Cipher, Text], [Text, Cryptanalyst], [Cryptanalyst, decryption], [decryption, operation], [operation, result], [result, table], [table, look], [look,  ], [ , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›], [‹#›,   ], [  , 28], [28,  ]]
+
+>> Trigrams: 
+[[  , Decrypt, C], [Decrypt, C, Possible], [C, Possible, Keys], [Possible, Keys, (], [Keys, (, Key], [(, Key, =], [Key, =, K2], [=, K2, )], [K2, ), 00], [), 00, 01], [00, 01, 10], [01, 10, 11], [10, 11, Table], [11, Table, Cipher], [Table, Cipher, Text], [Cipher, Text, Cryptanalyst], [Text, Cryptanalyst, decryption], [Cryptanalyst, decryption, operation], [decryption, operation, result], [operation, result, table], [result, table, look], [table, look,  ], [look,  , Unit-3], [ , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›], [           , ‹#›,   ], [‹#›,   , 28], [  , 28,  ]]
+
+>> Noun Phrases are: 
+[Decrypt C, (Key = K2, Cipher Text Cryptanalyst decryption operation, each result, a table,                                                                                 Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG'), ('28', 'CARDINAL')]
+
+
+============================ Sentence 131 =============================
+
+Triple DES   C=E(K1,D(K2, E(K1,P))) 
+
+
+>> Tokens are: 
+[Triple, DES,   , C, =, E(K1,D(K2, ,, E(K1,P, ), ), )] 
+
+>> PoS Tags are: 
+[('Triple', 'ADJ'), ('DES', 'PROPN'), ('  ', 'SPACE'), ('C', 'NOUN'), ('=', 'PUNCT'), ('E(K1,D(K2', 'NOUN'), (',', 'PUNCT'), ('E(K1,P', 'NOUN'), (')', 'PUNCT'), (')', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Triple', 'amod'), ('DES', 'nmod'), ('  ', 'compound'), ('C', 'ROOT'), ('=', 'appos'), ('E(K1,D(K2', 'appos'), (',', 'punct'), ('E(K1,P', 'npadvmod'), (')', 'punct'), (')', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[Triple, DES], [DES,   ], [  , C], [C, =], [=, E(K1,D(K2], [E(K1,D(K2, ,], [,, E(K1,P], [E(K1,P, )], [), )], [), )]]
+
+>> Trigrams: 
+[[Triple, DES,   ], [DES,   , C], [  , C, =], [C, =, E(K1,D(K2], [=, E(K1,D(K2, ,], [E(K1,D(K2, ,, E(K1,P], [,, E(K1,P, )], [E(K1,P, ), )], [), ), )]]
+
+>> Noun Phrases are: 
+[Triple DES   C, E(K1,D(K2]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 132 =============================
+
+P=D(K1,E(K2, D(K1,C))) 
+
+
+>> Tokens are: 
+[P, =, D(K1,E(K2, ,, D(K1,C, ), ), )] 
+
+>> PoS Tags are: 
+[('P', 'NOUN'), ('=', 'NOUN'), ('D(K1,E(K2', 'PROPN'), (',', 'PUNCT'), ('D(K1,C', 'NOUN'), (')', 'PUNCT'), (')', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('P', 'nsubj'), ('=', 'dep'), ('D(K1,E(K2', 'ROOT'), (',', 'punct'), ('D(K1,C', 'npadvmod'), (')', 'punct'), (')', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[P, =], [=, D(K1,E(K2], [D(K1,E(K2, ,], [,, D(K1,C], [D(K1,C, )], [), )], [), )]]
+
+>> Trigrams: 
+[[P, =, D(K1,E(K2], [=, D(K1,E(K2, ,], [D(K1,E(K2, ,, D(K1,C], [,, D(K1,C, )], [D(K1,C, ), )], [), ), )]]
+
+>> Noun Phrases are: 
+[P]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 133 =============================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#› 
+
+
+>> Tokens are: 
+[ , Unit-3,                                                                                 , Darshan, Institute, Engineering, &, Technology,            , ‹#›] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('Unit-3', 'VERB'), ('                                                                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('           ', 'SPACE'), ('‹#›', 'X')] 
+
+>> Dependency Tags are: 
+[(' ', 'nsubj'), ('Unit-3', 'ROOT'), ('                                                                                ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('           ', 'pobj'), ('‹#›', 'punct')]
+
+>> Bigrams: 
+[[ , Unit-3], [Unit-3,                                                                                 ], [                                                                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,            ], [           , ‹#›]]
+
+>> Trigrams: 
+[[ , Unit-3,                                                                                 ], [Unit-3,                                                                                 , Darshan], [                                                                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,            ], [Technology,            , ‹#›]]
+
+>> Noun Phrases are: 
+[                                                                                Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG')]

@@ -1,0 +1,1972 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-3 While studying artificially intelligence, you need to know what intelligence is. 
+
+
+>> Tokens are: 
+[AI-3, studying, artificially, intelligence, ,, need, know, intelligence, .] 
+
+>> PoS Tags are: 
+[('AI-3', 'NUM'), ('studying', 'VERB'), ('artificially', 'ADV'), ('intelligence', 'NOUN'), (',', 'PUNCT'), ('need', 'VERB'), ('know', 'VERB'), ('intelligence', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI-3', 'dep'), ('studying', 'advcl'), ('artificially', 'advmod'), ('intelligence', 'dobj'), (',', 'punct'), ('need', 'ROOT'), ('know', 'xcomp'), ('intelligence', 'nsubj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AI-3, studying], [studying, artificially], [artificially, intelligence], [intelligence, ,], [,, need], [need, know], [know, intelligence], [intelligence, .]]
+
+>> Trigrams: 
+[[AI-3, studying, artificially], [studying, artificially, intelligence], [artificially, intelligence, ,], [intelligence, ,, need], [,, need, know], [need, know, intelligence], [know, intelligence, .]]
+
+>> Noun Phrases are: 
+[intelligence, you, what intelligence]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 2 =============================
+
+This chapter covers Idea of intelligence, types, and components of intelligence. 
+
+
+>> Tokens are: 
+[chapter, covers, Idea, intelligence, ,, types, ,, components, intelligence, .] 
+
+>> PoS Tags are: 
+[('chapter', 'NOUN'), ('covers', 'VERB'), ('Idea', 'PROPN'), ('intelligence', 'NOUN'), (',', 'PUNCT'), ('types', 'NOUN'), (',', 'PUNCT'), ('components', 'NOUN'), ('intelligence', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('chapter', 'nsubj'), ('covers', 'ROOT'), ('Idea', 'dobj'), ('intelligence', 'pobj'), (',', 'punct'), ('types', 'conj'), (',', 'punct'), ('components', 'conj'), ('intelligence', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[chapter, covers], [covers, Idea], [Idea, intelligence], [intelligence, ,], [,, types], [types, ,], [,, components], [components, intelligence], [intelligence, .]]
+
+>> Trigrams: 
+[[chapter, covers, Idea], [covers, Idea, intelligence], [Idea, intelligence, ,], [intelligence, ,, types], [,, types, ,], [types, ,, components], [,, components, intelligence], [components, intelligence, .]]
+
+>> Noun Phrases are: 
+[This chapter, Idea, intelligence, types, components, intelligence]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 3 =============================
+
+What is Intelligence? 
+
+
+>> Tokens are: 
+[Intelligence, ?] 
+
+>> PoS Tags are: 
+[('Intelligence', 'PROPN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Intelligence', 'nsubj'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Intelligence, ?]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[What, Intelligence]
+
+>> Named Entities are: 
+[('Intelligence', 'ORG')]
+
+
+============================ Sentence 4 =============================
+
+The ability of a system to calculate, reason, perceive relationships and analogies, learn from experience, store and retrieve information from memory, solve problems, comprehend complex ideas, use natural language fluently, classify, generalize, and adapt new situations. 
+
+
+>> Tokens are: 
+[ability, system, calculate, ,, reason, ,, perceive, relationships, analogies, ,, learn, experience, ,, store, retrieve, information, memory, ,, solve, problems, ,, comprehend, complex, ideas, ,, use, natural, language, fluently, ,, classify, ,, generalize, ,, adapt, new, situations, .] 
+
+>> PoS Tags are: 
+[('ability', 'NOUN'), ('system', 'NOUN'), ('calculate', 'VERB'), (',', 'PUNCT'), ('reason', 'NOUN'), (',', 'PUNCT'), ('perceive', 'ADJ'), ('relationships', 'NOUN'), ('analogies', 'NOUN'), (',', 'PUNCT'), ('learn', 'VERB'), ('experience', 'NOUN'), (',', 'PUNCT'), ('store', 'NOUN'), ('retrieve', 'VERB'), ('information', 'NOUN'), ('memory', 'NOUN'), (',', 'PUNCT'), ('solve', 'VERB'), ('problems', 'NOUN'), (',', 'PUNCT'), ('comprehend', 'VERB'), ('complex', 'ADJ'), ('ideas', 'NOUN'), (',', 'PUNCT'), ('use', 'VERB'), ('natural', 'ADJ'), ('language', 'NOUN'), ('fluently', 'ADV'), (',', 'PUNCT'), ('classify', 'VERB'), (',', 'PUNCT'), ('generalize', 'VERB'), (',', 'PUNCT'), ('adapt', 'VERB'), ('new', 'ADJ'), ('situations', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ability', 'ROOT'), ('system', 'pobj'), ('calculate', 'relcl'), (',', 'punct'), ('reason', 'appos'), (',', 'punct'), ('perceive', 'amod'), ('relationships', 'conj'), ('analogies', 'conj'), (',', 'punct'), ('learn', 'acl'), ('experience', 'pobj'), (',', 'punct'), ('store', 'conj'), ('retrieve', 'conj'), ('information', 'dobj'), ('memory', 'pobj'), (',', 'punct'), ('solve', 'conj'), ('problems', 'dobj'), (',', 'punct'), ('comprehend', 'conj'), ('complex', 'amod'), ('ideas', 'dobj'), (',', 'punct'), ('use', 'conj'), ('natural', 'amod'), ('language', 'dobj'), ('fluently', 'advmod'), (',', 'punct'), ('classify', 'conj'), (',', 'punct'), ('generalize', 'conj'), (',', 'punct'), ('adapt', 'conj'), ('new', 'amod'), ('situations', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ability, system], [system, calculate], [calculate, ,], [,, reason], [reason, ,], [,, perceive], [perceive, relationships], [relationships, analogies], [analogies, ,], [,, learn], [learn, experience], [experience, ,], [,, store], [store, retrieve], [retrieve, information], [information, memory], [memory, ,], [,, solve], [solve, problems], [problems, ,], [,, comprehend], [comprehend, complex], [complex, ideas], [ideas, ,], [,, use], [use, natural], [natural, language], [language, fluently], [fluently, ,], [,, classify], [classify, ,], [,, generalize], [generalize, ,], [,, adapt], [adapt, new], [new, situations], [situations, .]]
+
+>> Trigrams: 
+[[ability, system, calculate], [system, calculate, ,], [calculate, ,, reason], [,, reason, ,], [reason, ,, perceive], [,, perceive, relationships], [perceive, relationships, analogies], [relationships, analogies, ,], [analogies, ,, learn], [,, learn, experience], [learn, experience, ,], [experience, ,, store], [,, store, retrieve], [store, retrieve, information], [retrieve, information, memory], [information, memory, ,], [memory, ,, solve], [,, solve, problems], [solve, problems, ,], [problems, ,, comprehend], [,, comprehend, complex], [comprehend, complex, ideas], [complex, ideas, ,], [ideas, ,, use], [,, use, natural], [use, natural, language], [natural, language, fluently], [language, fluently, ,], [fluently, ,, classify], [,, classify, ,], [classify, ,, generalize], [,, generalize, ,], [generalize, ,, adapt], [,, adapt, new], [adapt, new, situations], [new, situations, .]]
+
+>> Noun Phrases are: 
+[The ability, a system, reason, perceive relationships, analogies, experience, store, information, memory, problems, complex ideas, natural language, new situations]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 5 =============================
+
+Types of Intelligence As described by Howard Gardner, an American developmental psychologist, the Intelligence comes in multifold − 	Intelligence 	Description 	Example  	Linguistic intelligence 	 
+
+
+>> Tokens are: 
+[Types, Intelligence, described, Howard, Gardner, ,, American, developmental, psychologist, ,, Intelligence, comes, multifold, −, 	, Intelligence, 	, Description, 	, Example,  	, Linguistic, intelligence, 	] 
+
+>> PoS Tags are: 
+[('Types', 'NOUN'), ('Intelligence', 'PROPN'), ('described', 'VERB'), ('Howard', 'PROPN'), ('Gardner', 'PROPN'), (',', 'PUNCT'), ('American', 'ADJ'), ('developmental', 'ADJ'), ('psychologist', 'NOUN'), (',', 'PUNCT'), ('Intelligence', 'PROPN'), ('comes', 'VERB'), ('multifold', 'NOUN'), ('−', 'PROPN'), ('\t', 'SPACE'), ('Intelligence', 'PROPN'), ('\t', 'SPACE'), ('Description', 'PROPN'), ('\t', 'SPACE'), ('Example', 'PROPN'), (' \t', 'SPACE'), ('Linguistic', 'ADJ'), ('intelligence', 'NOUN'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Types', 'nsubj'), ('Intelligence', 'pobj'), ('described', 'acl'), ('Howard', 'compound'), ('Gardner', 'pobj'), (',', 'punct'), ('American', 'amod'), ('developmental', 'amod'), ('psychologist', 'appos'), (',', 'punct'), ('Intelligence', 'nsubj'), ('comes', 'ROOT'), ('multifold', 'compound'), ('−', 'compound'), ('\t', 'compound'), ('Intelligence', 'compound'), ('\t', 'compound'), ('Description', 'compound'), ('\t', 'compound'), ('Example', 'compound'), (' \t', 'amod'), ('Linguistic', 'amod'), ('intelligence', 'compound'), ('\t', 'punct')]
+
+>> Bigrams: 
+[[Types, Intelligence], [Intelligence, described], [described, Howard], [Howard, Gardner], [Gardner, ,], [,, American], [American, developmental], [developmental, psychologist], [psychologist, ,], [,, Intelligence], [Intelligence, comes], [comes, multifold], [multifold, −], [−, 	], [	, Intelligence], [Intelligence, 	], [	, Description], [Description, 	], [	, Example], [Example,  	], [ 	, Linguistic], [Linguistic, intelligence], [intelligence, 	]]
+
+>> Trigrams: 
+[[Types, Intelligence, described], [Intelligence, described, Howard], [described, Howard, Gardner], [Howard, Gardner, ,], [Gardner, ,, American], [,, American, developmental], [American, developmental, psychologist], [developmental, psychologist, ,], [psychologist, ,, Intelligence], [,, Intelligence, comes], [Intelligence, comes, multifold], [comes, multifold, −], [multifold, −, 	], [−, 	, Intelligence], [	, Intelligence, 	], [Intelligence, 	, Description], [	, Description, 	], [Description, 	, Example], [	, Example,  	], [Example,  	, Linguistic], [ 	, Linguistic, intelligence], [Linguistic, intelligence, 	]]
+
+>> Noun Phrases are: 
+[Types, Intelligence, Howard Gardner, an American developmental psychologist, the Intelligence]
+
+>> Named Entities are: 
+[('Howard Gardner', 'PERSON'), ('American', 'NORP'), ('Intelligence', 'ORG')]
+
+
+============================ Sentence 6 =============================
+
+The ability to speak, recognize, and use mechanisms of phonology (speech sounds), syntax (grammar), and semantics (meaning). 
+
+
+>> Tokens are: 
+[ability, speak, ,, recognize, ,, use, mechanisms, phonology, (, speech, sounds, ), ,, syntax, (, grammar, ), ,, semantics, (, meaning, ), .] 
+
+>> PoS Tags are: 
+[('ability', 'NOUN'), ('speak', 'VERB'), (',', 'PUNCT'), ('recognize', 'VERB'), (',', 'PUNCT'), ('use', 'VERB'), ('mechanisms', 'NOUN'), ('phonology', 'NOUN'), ('(', 'PUNCT'), ('speech', 'NOUN'), ('sounds', 'VERB'), (')', 'PUNCT'), (',', 'PUNCT'), ('syntax', 'NOUN'), ('(', 'PUNCT'), ('grammar', 'NOUN'), (')', 'PUNCT'), (',', 'PUNCT'), ('semantics', 'NOUN'), ('(', 'PUNCT'), ('meaning', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ability', 'ROOT'), ('speak', 'acl'), (',', 'punct'), ('recognize', 'conj'), (',', 'punct'), ('use', 'conj'), ('mechanisms', 'dobj'), ('phonology', 'pobj'), ('(', 'punct'), ('speech', 'nsubj'), ('sounds', 'appos'), (')', 'punct'), (',', 'punct'), ('syntax', 'appos'), ('(', 'punct'), ('grammar', 'appos'), (')', 'punct'), (',', 'punct'), ('semantics', 'conj'), ('(', 'punct'), ('meaning', 'appos'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ability, speak], [speak, ,], [,, recognize], [recognize, ,], [,, use], [use, mechanisms], [mechanisms, phonology], [phonology, (], [(, speech], [speech, sounds], [sounds, )], [), ,], [,, syntax], [syntax, (], [(, grammar], [grammar, )], [), ,], [,, semantics], [semantics, (], [(, meaning], [meaning, )], [), .]]
+
+>> Trigrams: 
+[[ability, speak, ,], [speak, ,, recognize], [,, recognize, ,], [recognize, ,, use], [,, use, mechanisms], [use, mechanisms, phonology], [mechanisms, phonology, (], [phonology, (, speech], [(, speech, sounds], [speech, sounds, )], [sounds, ), ,], [), ,, syntax], [,, syntax, (], [syntax, (, grammar], [(, grammar, )], [grammar, ), ,], [), ,, semantics], [,, semantics, (], [semantics, (, meaning], [(, meaning, )], [meaning, ), .]]
+
+>> Noun Phrases are: 
+[The ability, mechanisms, phonology, speech, syntax, grammar, semantics, meaning]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+	Narrators, Orators  	Musical intelligence 	The ability to create, communicate with, and understand meanings made of sound, understanding of pitch, rhythm. 
+
+
+>> Tokens are: 
+[	, Narrators, ,, Orators,  	, Musical, intelligence, 	, ability, create, ,, communicate, ,, understand, meanings, sound, ,, understanding, pitch, ,, rhythm, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Narrators', 'PROPN'), (',', 'PUNCT'), ('Orators', 'NOUN'), (' \t', 'SPACE'), ('Musical', 'ADJ'), ('intelligence', 'NOUN'), ('\t', 'SPACE'), ('ability', 'NOUN'), ('create', 'VERB'), (',', 'PUNCT'), ('communicate', 'VERB'), (',', 'PUNCT'), ('understand', 'VERB'), ('meanings', 'NOUN'), ('sound', 'NOUN'), (',', 'PUNCT'), ('understanding', 'NOUN'), ('pitch', 'NOUN'), (',', 'PUNCT'), ('rhythm', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Narrators', 'dep'), (',', 'punct'), ('Orators', 'appos'), (' \t', 'compound'), ('Musical', 'amod'), ('intelligence', 'compound'), ('\t', 'appos'), ('ability', 'ROOT'), ('create', 'acl'), (',', 'punct'), ('communicate', 'acl'), (',', 'punct'), ('understand', 'conj'), ('meanings', 'dobj'), ('sound', 'pobj'), (',', 'punct'), ('understanding', 'conj'), ('pitch', 'pobj'), (',', 'punct'), ('rhythm', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Narrators], [Narrators, ,], [,, Orators], [Orators,  	], [ 	, Musical], [Musical, intelligence], [intelligence, 	], [	, ability], [ability, create], [create, ,], [,, communicate], [communicate, ,], [,, understand], [understand, meanings], [meanings, sound], [sound, ,], [,, understanding], [understanding, pitch], [pitch, ,], [,, rhythm], [rhythm, .]]
+
+>> Trigrams: 
+[[	, Narrators, ,], [Narrators, ,, Orators], [,, Orators,  	], [Orators,  	, Musical], [ 	, Musical, intelligence], [Musical, intelligence, 	], [intelligence, 	, ability], [	, ability, create], [ability, create, ,], [create, ,, communicate], [,, communicate, ,], [communicate, ,, understand], [,, understand, meanings], [understand, meanings, sound], [meanings, sound, ,], [sound, ,, understanding], [,, understanding, pitch], [understanding, pitch, ,], [pitch, ,, rhythm], [,, rhythm, .]]
+
+>> Noun Phrases are: 
+[Orators, meanings, sound, understanding, pitch, rhythm]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 8 =============================
+
+	Musicians, Singers, Composers  	Logical-mathematical intelligence 	 
+
+
+>> Tokens are: 
+[	, Musicians, ,, Singers, ,, Composers,  	, Logical, -, mathematical, intelligence, 	] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Musicians', 'PROPN'), (',', 'PUNCT'), ('Singers', 'PROPN'), (',', 'PUNCT'), ('Composers', 'PROPN'), (' \t', 'SPACE'), ('Logical', 'ADJ'), ('-', 'PUNCT'), ('mathematical', 'ADJ'), ('intelligence', 'NOUN'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Musicians', 'ROOT'), (',', 'punct'), ('Singers', 'conj'), (',', 'punct'), ('Composers', 'nmod'), (' \t', 'appos'), ('Logical', 'amod'), ('-', 'punct'), ('mathematical', 'amod'), ('intelligence', 'compound'), ('\t', 'conj')]
+
+>> Bigrams: 
+[[	, Musicians], [Musicians, ,], [,, Singers], [Singers, ,], [,, Composers], [Composers,  	], [ 	, Logical], [Logical, -], [-, mathematical], [mathematical, intelligence], [intelligence, 	]]
+
+>> Trigrams: 
+[[	, Musicians, ,], [Musicians, ,, Singers], [,, Singers, ,], [Singers, ,, Composers], [,, Composers,  	], [Composers,  	, Logical], [ 	, Logical, -], [Logical, -, mathematical], [-, mathematical, intelligence], [mathematical, intelligence, 	]]
+
+>> Noun Phrases are: 
+[	Musicians, Singers]
+
+>> Named Entities are: 
+[('Musicians', 'ORG'), ('Composers', 'PERSON')]
+
+
+============================ Sentence 9 =============================
+
+The ability of use and understand relationships in the absence of action or objects. 
+
+
+>> Tokens are: 
+[ability, use, understand, relationships, absence, action, objects, .] 
+
+>> PoS Tags are: 
+[('ability', 'NOUN'), ('use', 'NOUN'), ('understand', 'VERB'), ('relationships', 'NOUN'), ('absence', 'NOUN'), ('action', 'NOUN'), ('objects', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ability', 'ROOT'), ('use', 'pobj'), ('understand', 'conj'), ('relationships', 'dobj'), ('absence', 'pobj'), ('action', 'pobj'), ('objects', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ability, use], [use, understand], [understand, relationships], [relationships, absence], [absence, action], [action, objects], [objects, .]]
+
+>> Trigrams: 
+[[ability, use, understand], [use, understand, relationships], [understand, relationships, absence], [relationships, absence, action], [absence, action, objects], [action, objects, .]]
+
+>> Noun Phrases are: 
+[The ability, use, relationships, the absence, action, objects]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+Understanding complex and abstract ideas. 
+
+
+>> Tokens are: 
+[Understanding, complex, abstract, ideas, .] 
+
+>> PoS Tags are: 
+[('Understanding', 'VERB'), ('complex', 'ADJ'), ('abstract', 'ADJ'), ('ideas', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Understanding', 'ROOT'), ('complex', 'amod'), ('abstract', 'conj'), ('ideas', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Understanding, complex], [complex, abstract], [abstract, ideas], [ideas, .]]
+
+>> Trigrams: 
+[[Understanding, complex, abstract], [complex, abstract, ideas], [abstract, ideas, .]]
+
+>> Noun Phrases are: 
+[complex and abstract ideas]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 11 =============================
+
+	Mathematicians, Scientists  	Spatial intelligence 	 
+
+
+>> Tokens are: 
+[	, Mathematicians, ,, Scientists,  	, Spatial, intelligence, 	] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Mathematicians', 'PROPN'), (',', 'PUNCT'), ('Scientists', 'NOUN'), (' \t', 'SPACE'), ('Spatial', 'ADJ'), ('intelligence', 'NOUN'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Mathematicians', 'ROOT'), (',', 'punct'), ('Scientists', 'conj'), (' \t', 'nmod'), ('Spatial', 'amod'), ('intelligence', 'compound'), ('\t', 'appos')]
+
+>> Bigrams: 
+[[	, Mathematicians], [Mathematicians, ,], [,, Scientists], [Scientists,  	], [ 	, Spatial], [Spatial, intelligence], [intelligence, 	]]
+
+>> Trigrams: 
+[[	, Mathematicians, ,], [Mathematicians, ,, Scientists], [,, Scientists,  	], [Scientists,  	, Spatial], [ 	, Spatial, intelligence], [Spatial, intelligence, 	]]
+
+>> Noun Phrases are: 
+[	Mathematicians, Scientists]
+
+>> Named Entities are: 
+[('Mathematicians', 'NORP')]
+
+
+============================ Sentence 12 =============================
+
+The ability to perceive visual or spatial information, change it, and re-create visual images without reference to the objects, construct 3D images, and to move and rotate them. 
+
+
+>> Tokens are: 
+[ability, perceive, visual, spatial, information, ,, change, ,, -, create, visual, images, reference, objects, ,, construct, 3D, images, ,, rotate, .] 
+
+>> PoS Tags are: 
+[('ability', 'NOUN'), ('perceive', 'VERB'), ('visual', 'ADJ'), ('spatial', 'ADJ'), ('information', 'NOUN'), (',', 'PUNCT'), ('change', 'VERB'), (',', 'PUNCT'), ('-', 'VERB'), ('create', 'VERB'), ('visual', 'ADJ'), ('images', 'NOUN'), ('reference', 'NOUN'), ('objects', 'NOUN'), (',', 'PUNCT'), ('construct', 'VERB'), ('3D', 'ADJ'), ('images', 'NOUN'), (',', 'PUNCT'), ('rotate', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ability', 'nsubj'), ('perceive', 'acl'), ('visual', 'amod'), ('spatial', 'conj'), ('information', 'dobj'), (',', 'punct'), ('change', 'ROOT'), (',', 'punct'), ('-', 'xcomp'), ('create', 'conj'), ('visual', 'amod'), ('images', 'dobj'), ('reference', 'pobj'), ('objects', 'pobj'), (',', 'punct'), ('construct', 'conj'), ('3D', 'compound'), ('images', 'dobj'), (',', 'punct'), ('rotate', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ability, perceive], [perceive, visual], [visual, spatial], [spatial, information], [information, ,], [,, change], [change, ,], [,, -], [-, create], [create, visual], [visual, images], [images, reference], [reference, objects], [objects, ,], [,, construct], [construct, 3D], [3D, images], [images, ,], [,, rotate], [rotate, .]]
+
+>> Trigrams: 
+[[ability, perceive, visual], [perceive, visual, spatial], [visual, spatial, information], [spatial, information, ,], [information, ,, change], [,, change, ,], [change, ,, -], [,, -, create], [-, create, visual], [create, visual, images], [visual, images, reference], [images, reference, objects], [reference, objects, ,], [objects, ,, construct], [,, construct, 3D], [construct, 3D, images], [3D, images, ,], [images, ,, rotate], [,, rotate, .]]
+
+>> Noun Phrases are: 
+[The ability, visual or spatial information, it, visual images, reference, the objects, 3D images, them]
+
+>> Named Entities are: 
+[('3D', 'CARDINAL')]
+
+
+============================ Sentence 13 =============================
+
+	Map readers, Astronauts, Physicists  	Bodily-Kinesthetic intelligence 	 
+
+
+>> Tokens are: 
+[	, Map, readers, ,, Astronauts, ,, Physicists,  	, Bodily, -, Kinesthetic, intelligence, 	] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Map', 'PROPN'), ('readers', 'NOUN'), (',', 'PUNCT'), ('Astronauts', 'PROPN'), (',', 'PUNCT'), ('Physicists', 'PROPN'), (' \t', 'SPACE'), ('Bodily', 'ADJ'), ('-', 'PUNCT'), ('Kinesthetic', 'PROPN'), ('intelligence', 'NOUN'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Map', 'compound'), ('readers', 'ROOT'), (',', 'punct'), ('Astronauts', 'appos'), (',', 'punct'), ('Physicists', 'compound'), (' \t', 'conj'), ('Bodily', 'amod'), ('-', 'punct'), ('Kinesthetic', 'amod'), ('intelligence', 'compound'), ('\t', 'conj')]
+
+>> Bigrams: 
+[[	, Map], [Map, readers], [readers, ,], [,, Astronauts], [Astronauts, ,], [,, Physicists], [Physicists,  	], [ 	, Bodily], [Bodily, -], [-, Kinesthetic], [Kinesthetic, intelligence], [intelligence, 	]]
+
+>> Trigrams: 
+[[	, Map, readers], [Map, readers, ,], [readers, ,, Astronauts], [,, Astronauts, ,], [Astronauts, ,, Physicists], [,, Physicists,  	], [Physicists,  	, Bodily], [ 	, Bodily, -], [Bodily, -, Kinesthetic], [-, Kinesthetic, intelligence], [Kinesthetic, intelligence, 	]]
+
+>> Noun Phrases are: 
+[	Map readers, Astronauts]
+
+>> Named Entities are: 
+[('Map', 'ORG'), ('Astronauts', 'NORP'), ('Bodily-Kinesthetic', 'NORP')]
+
+
+============================ Sentence 14 =============================
+
+The ability to use complete or part of the body to solve problems or fashion products, control over fine and coarse motor skills, and manipulate the objects. 
+
+
+>> Tokens are: 
+[ability, use, complete, body, solve, problems, fashion, products, ,, control, fine, coarse, motor, skills, ,, manipulate, objects, .] 
+
+>> PoS Tags are: 
+[('ability', 'NOUN'), ('use', 'VERB'), ('complete', 'ADJ'), ('body', 'NOUN'), ('solve', 'VERB'), ('problems', 'NOUN'), ('fashion', 'NOUN'), ('products', 'NOUN'), (',', 'PUNCT'), ('control', 'VERB'), ('fine', 'ADJ'), ('coarse', 'ADJ'), ('motor', 'NOUN'), ('skills', 'NOUN'), (',', 'PUNCT'), ('manipulate', 'VERB'), ('objects', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ability', 'ROOT'), ('use', 'acl'), ('complete', 'dobj'), ('body', 'pobj'), ('solve', 'xcomp'), ('problems', 'dobj'), ('fashion', 'compound'), ('products', 'conj'), (',', 'punct'), ('control', 'acl'), ('fine', 'amod'), ('coarse', 'conj'), ('motor', 'compound'), ('skills', 'pobj'), (',', 'punct'), ('manipulate', 'conj'), ('objects', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ability, use], [use, complete], [complete, body], [body, solve], [solve, problems], [problems, fashion], [fashion, products], [products, ,], [,, control], [control, fine], [fine, coarse], [coarse, motor], [motor, skills], [skills, ,], [,, manipulate], [manipulate, objects], [objects, .]]
+
+>> Trigrams: 
+[[ability, use, complete], [use, complete, body], [complete, body, solve], [body, solve, problems], [solve, problems, fashion], [problems, fashion, products], [fashion, products, ,], [products, ,, control], [,, control, fine], [control, fine, coarse], [fine, coarse, motor], [coarse, motor, skills], [motor, skills, ,], [skills, ,, manipulate], [,, manipulate, objects], [manipulate, objects, .]]
+
+>> Noun Phrases are: 
+[The ability, part, the body, problems, fashion products, fine and coarse motor skills, the objects]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+	Players, Dancers  	Intra-personal intelligence 	 
+
+
+>> Tokens are: 
+[	, Players, ,, Dancers,  	, Intra, -, personal, intelligence, 	] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Players', 'PROPN'), (',', 'PUNCT'), ('Dancers', 'NOUN'), (' \t', 'SPACE'), ('Intra', 'ADJ'), ('-', 'ADJ'), ('personal', 'ADJ'), ('intelligence', 'NOUN'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Players', 'ROOT'), (',', 'punct'), ('Dancers', 'nmod'), (' \t', 'nmod'), ('Intra', 'amod'), ('-', 'amod'), ('personal', 'amod'), ('intelligence', 'compound'), ('\t', 'conj')]
+
+>> Bigrams: 
+[[	, Players], [Players, ,], [,, Dancers], [Dancers,  	], [ 	, Intra], [Intra, -], [-, personal], [personal, intelligence], [intelligence, 	]]
+
+>> Trigrams: 
+[[	, Players, ,], [Players, ,, Dancers], [,, Dancers,  	], [Dancers,  	, Intra], [ 	, Intra, -], [Intra, -, personal], [-, personal, intelligence], [personal, intelligence, 	]]
+
+>> Noun Phrases are: 
+[	Players]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+The ability to distinguish among one’s own feelings, intentions, and motivations. 
+
+
+>> Tokens are: 
+[ability, distinguish, feelings, ,, intentions, ,, motivations, .] 
+
+>> PoS Tags are: 
+[('ability', 'NOUN'), ('distinguish', 'VERB'), ('feelings', 'NOUN'), (',', 'PUNCT'), ('intentions', 'NOUN'), (',', 'PUNCT'), ('motivations', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ability', 'ROOT'), ('distinguish', 'acl'), ('feelings', 'pobj'), (',', 'punct'), ('intentions', 'conj'), (',', 'punct'), ('motivations', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ability, distinguish], [distinguish, feelings], [feelings, ,], [,, intentions], [intentions, ,], [,, motivations], [motivations, .]]
+
+>> Trigrams: 
+[[ability, distinguish, feelings], [distinguish, feelings, ,], [feelings, ,, intentions], [,, intentions, ,], [intentions, ,, motivations], [,, motivations, .]]
+
+>> Noun Phrases are: 
+[The ability, one’s own feelings, intentions, motivations]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+	Gautam Buddhha  	Interpersonal intelligence 	The ability to recognize and make distinctions among other people’s feelings, beliefs, and intentions. 
+
+
+>> Tokens are: 
+[	, Gautam, Buddhha,  	, Interpersonal, intelligence, 	, ability, recognize, distinctions, people, feelings, ,, beliefs, ,, intentions, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Gautam', 'PROPN'), ('Buddhha', 'PROPN'), (' \t', 'SPACE'), ('Interpersonal', 'ADJ'), ('intelligence', 'NOUN'), ('\t', 'SPACE'), ('ability', 'NOUN'), ('recognize', 'VERB'), ('distinctions', 'NOUN'), ('people', 'NOUN'), ('feelings', 'NOUN'), (',', 'PUNCT'), ('beliefs', 'NOUN'), (',', 'PUNCT'), ('intentions', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Gautam', 'compound'), ('Buddhha', 'nmod'), (' \t', 'amod'), ('Interpersonal', 'amod'), ('intelligence', 'compound'), ('\t', 'appos'), ('ability', 'ROOT'), ('recognize', 'acl'), ('distinctions', 'dobj'), ('people', 'poss'), ('feelings', 'pobj'), (',', 'punct'), ('beliefs', 'conj'), (',', 'punct'), ('intentions', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Gautam], [Gautam, Buddhha], [Buddhha,  	], [ 	, Interpersonal], [Interpersonal, intelligence], [intelligence, 	], [	, ability], [ability, recognize], [recognize, distinctions], [distinctions, people], [people, feelings], [feelings, ,], [,, beliefs], [beliefs, ,], [,, intentions], [intentions, .]]
+
+>> Trigrams: 
+[[	, Gautam, Buddhha], [Gautam, Buddhha,  	], [Buddhha,  	, Interpersonal], [ 	, Interpersonal, intelligence], [Interpersonal, intelligence, 	], [intelligence, 	, ability], [	, ability, recognize], [ability, recognize, distinctions], [recognize, distinctions, people], [distinctions, people, feelings], [people, feelings, ,], [feelings, ,, beliefs], [,, beliefs, ,], [beliefs, ,, intentions], [,, intentions, .]]
+
+>> Noun Phrases are: 
+[	Gautam Buddhha  	Interpersonal intelligence 	The ability, distinctions, other people’s feelings, beliefs, intentions]
+
+>> Named Entities are: 
+[('Gautam Buddhha', 'PERSON')]
+
+
+============================ Sentence 18 =============================
+
+	Mass Communicators, Interviewers   You can say a machine or a system is artificially intelligent when it is equipped with at least one and at most all intelligences in it. 
+
+
+>> Tokens are: 
+[	, Mass, Communicators, ,, Interviewers,   , machine, system, artificially, intelligent, equipped, intelligences, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Mass', 'PROPN'), ('Communicators', 'PROPN'), (',', 'PUNCT'), ('Interviewers', 'PROPN'), ('  ', 'SPACE'), ('machine', 'NOUN'), ('system', 'NOUN'), ('artificially', 'ADV'), ('intelligent', 'ADJ'), ('equipped', 'VERB'), ('intelligences', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Mass', 'compound'), ('Communicators', 'nsubj'), (',', 'punct'), ('Interviewers', 'compound'), ('  ', 'appos'), ('machine', 'nsubj'), ('system', 'conj'), ('artificially', 'advmod'), ('intelligent', 'acomp'), ('equipped', 'advcl'), ('intelligences', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Mass], [Mass, Communicators], [Communicators, ,], [,, Interviewers], [Interviewers,   ], [  , machine], [machine, system], [system, artificially], [artificially, intelligent], [intelligent, equipped], [equipped, intelligences], [intelligences, .]]
+
+>> Trigrams: 
+[[	, Mass, Communicators], [Mass, Communicators, ,], [Communicators, ,, Interviewers], [,, Interviewers,   ], [Interviewers,   , machine], [  , machine, system], [machine, system, artificially], [system, artificially, intelligent], [artificially, intelligent, equipped], [intelligent, equipped, intelligences], [equipped, intelligences, .]]
+
+>> Noun Phrases are: 
+[	Mass Communicators, You, a machine, a system, it, at most all intelligences, it]
+
+>> Named Entities are: 
+[('at least one', 'CARDINAL')]
+
+
+============================ Sentence 19 =============================
+
+What is Intelligence Composed of? 
+
+
+>> Tokens are: 
+[Intelligence, Composed, ?] 
+
+>> PoS Tags are: 
+[('Intelligence', 'PROPN'), ('Composed', 'VERB'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Intelligence', 'nsubj'), ('Composed', 'acl'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Intelligence, Composed], [Composed, ?]]
+
+>> Trigrams: 
+[[Intelligence, Composed, ?]]
+
+>> Noun Phrases are: 
+[What, Intelligence]
+
+>> Named Entities are: 
+[('Intelligence Composed', 'PERSON')]
+
+
+============================ Sentence 20 =============================
+
+The intelligence is intangible. 
+
+
+>> Tokens are: 
+[intelligence, intangible, .] 
+
+>> PoS Tags are: 
+[('intelligence', 'NOUN'), ('intangible', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('intelligence', 'nsubj'), ('intangible', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[intelligence, intangible], [intangible, .]]
+
+>> Trigrams: 
+[[intelligence, intangible, .]]
+
+>> Noun Phrases are: 
+[The intelligence]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+It is composed of − · Reasoning · Learning · Problem Solving · Perception · Linguistic Intelligence 
+
+
+>> Tokens are: 
+[composed, −, ·, Reasoning, ·, Learning, ·, Problem, Solving, ·, Perception, ·, Linguistic, Intelligence] 
+
+>> PoS Tags are: 
+[('composed', 'VERB'), ('−', 'NOUN'), ('·', 'PUNCT'), ('Reasoning', 'NOUN'), ('·', 'PUNCT'), ('Learning', 'PROPN'), ('·', 'PUNCT'), ('Problem', 'PROPN'), ('Solving', 'VERB'), ('·', 'PUNCT'), ('Perception', 'PROPN'), ('·', 'PUNCT'), ('Linguistic', 'PROPN'), ('Intelligence', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('composed', 'ROOT'), ('−', 'pobj'), ('·', 'punct'), ('Reasoning', 'nmod'), ('·', 'punct'), ('Learning', 'nmod'), ('·', 'punct'), ('Problem', 'nmod'), ('Solving', 'nmod'), ('·', 'punct'), ('Perception', 'nmod'), ('·', 'punct'), ('Linguistic', 'compound'), ('Intelligence', 'punct')]
+
+>> Bigrams: 
+[[composed, −], [−, ·], [·, Reasoning], [Reasoning, ·], [·, Learning], [Learning, ·], [·, Problem], [Problem, Solving], [Solving, ·], [·, Perception], [Perception, ·], [·, Linguistic], [Linguistic, Intelligence]]
+
+>> Trigrams: 
+[[composed, −, ·], [−, ·, Reasoning], [·, Reasoning, ·], [Reasoning, ·, Learning], [·, Learning, ·], [Learning, ·, Problem], [·, Problem, Solving], [Problem, Solving, ·], [Solving, ·, Perception], [·, Perception, ·], [Perception, ·, Linguistic], [·, Linguistic, Intelligence]]
+
+>> Noun Phrases are: 
+[It, −]
+
+>> Named Entities are: 
+[('Problem Solving', 'PERSON')]
+
+
+============================ Sentence 22 =============================
+
+Let us go through all the components briefly − · Reasoning − It is the set of processes that enables us to provide basis for judgement, making decisions, and prediction. 
+
+
+>> Tokens are: 
+[Let, components, briefly, −, ·, Reasoning, −, set, processes, enables, provide, basis, judgement, ,, making, decisions, ,, prediction, .] 
+
+>> PoS Tags are: 
+[('Let', 'VERB'), ('components', 'NOUN'), ('briefly', 'ADV'), ('−', 'VERB'), ('·', 'PUNCT'), ('Reasoning', 'NOUN'), ('−', 'NOUN'), ('set', 'NOUN'), ('processes', 'NOUN'), ('enables', 'VERB'), ('provide', 'VERB'), ('basis', 'NOUN'), ('judgement', 'NOUN'), (',', 'PUNCT'), ('making', 'VERB'), ('decisions', 'NOUN'), (',', 'PUNCT'), ('prediction', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Let', 'advcl'), ('components', 'pobj'), ('briefly', 'advmod'), ('−', 'advcl'), ('·', 'punct'), ('Reasoning', 'compound'), ('−', 'appos'), ('set', 'attr'), ('processes', 'pobj'), ('enables', 'relcl'), ('provide', 'xcomp'), ('basis', 'dobj'), ('judgement', 'pobj'), (',', 'punct'), ('making', 'conj'), ('decisions', 'dobj'), (',', 'punct'), ('prediction', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Let, components], [components, briefly], [briefly, −], [−, ·], [·, Reasoning], [Reasoning, −], [−, set], [set, processes], [processes, enables], [enables, provide], [provide, basis], [basis, judgement], [judgement, ,], [,, making], [making, decisions], [decisions, ,], [,, prediction], [prediction, .]]
+
+>> Trigrams: 
+[[Let, components, briefly], [components, briefly, −], [briefly, −, ·], [−, ·, Reasoning], [·, Reasoning, −], [Reasoning, −, set], [−, set, processes], [set, processes, enables], [processes, enables, provide], [enables, provide, basis], [provide, basis, judgement], [basis, judgement, ,], [judgement, ,, making], [,, making, decisions], [making, decisions, ,], [decisions, ,, prediction], [,, prediction, .]]
+
+>> Noun Phrases are: 
+[us, all the components, Reasoning −, It, the set, processes, us, basis, judgement, decisions]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+There are broadly two types − 
+
+
+>> Tokens are: 
+[broadly, types, −] 
+
+>> PoS Tags are: 
+[('broadly', 'ADV'), ('types', 'NOUN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('broadly', 'advmod'), ('types', 'attr'), ('−', 'acl')]
+
+>> Bigrams: 
+[[broadly, types], [types, −]]
+
+>> Trigrams: 
+[[broadly, types, −]]
+
+>> Noun Phrases are: 
+[two types]
+
+>> Named Entities are: 
+[('two', 'CARDINAL')]
+
+
+============================ Sentence 24 =============================
+
+	Inductive Reasoning 	Deductive Reasoning  	It conducts specific observations to makes broad general statements. 
+
+
+>> Tokens are: 
+[	, Inductive, Reasoning, 	, Deductive, Reasoning,  	, conducts, specific, observations, makes, broad, general, statements, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Inductive', 'PROPN'), ('Reasoning', 'PROPN'), ('\t', 'SPACE'), ('Deductive', 'PROPN'), ('Reasoning', 'PROPN'), (' \t', 'SPACE'), ('conducts', 'VERB'), ('specific', 'ADJ'), ('observations', 'NOUN'), ('makes', 'VERB'), ('broad', 'ADJ'), ('general', 'ADJ'), ('statements', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Inductive', 'compound'), ('Reasoning', 'compound'), ('\t', 'compound'), ('Deductive', 'compound'), ('Reasoning', 'compound'), (' \t', 'appos'), ('conducts', 'ROOT'), ('specific', 'amod'), ('observations', 'dobj'), ('makes', 'advcl'), ('broad', 'amod'), ('general', 'amod'), ('statements', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Inductive], [Inductive, Reasoning], [Reasoning, 	], [	, Deductive], [Deductive, Reasoning], [Reasoning,  	], [ 	, conducts], [conducts, specific], [specific, observations], [observations, makes], [makes, broad], [broad, general], [general, statements], [statements, .]]
+
+>> Trigrams: 
+[[	, Inductive, Reasoning], [Inductive, Reasoning, 	], [Reasoning, 	, Deductive], [	, Deductive, Reasoning], [Deductive, Reasoning,  	], [Reasoning,  	, conducts], [ 	, conducts, specific], [conducts, specific, observations], [specific, observations, makes], [observations, makes, broad], [makes, broad, general], [broad, general, statements], [general, statements, .]]
+
+>> Noun Phrases are: 
+[	Inductive Reasoning 	Deductive Reasoning  	It, specific observations, broad general statements]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+	It starts with a general statement and examines the possibilities to reach a specific, logical conclusion. 
+
+
+>> Tokens are: 
+[	, starts, general, statement, examines, possibilities, reach, specific, ,, logical, conclusion, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('starts', 'VERB'), ('general', 'ADJ'), ('statement', 'NOUN'), ('examines', 'VERB'), ('possibilities', 'NOUN'), ('reach', 'VERB'), ('specific', 'ADJ'), (',', 'PUNCT'), ('logical', 'ADJ'), ('conclusion', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'amod'), ('starts', 'ROOT'), ('general', 'amod'), ('statement', 'pobj'), ('examines', 'conj'), ('possibilities', 'dobj'), ('reach', 'xcomp'), ('specific', 'amod'), (',', 'punct'), ('logical', 'amod'), ('conclusion', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, starts], [starts, general], [general, statement], [statement, examines], [examines, possibilities], [possibilities, reach], [reach, specific], [specific, ,], [,, logical], [logical, conclusion], [conclusion, .]]
+
+>> Trigrams: 
+[[	, starts, general], [starts, general, statement], [general, statement, examines], [statement, examines, possibilities], [examines, possibilities, reach], [possibilities, reach, specific], [reach, specific, ,], [specific, ,, logical], [,, logical, conclusion], [logical, conclusion, .]]
+
+>> Noun Phrases are: 
+[It, a general statement, the possibilities, a specific, logical conclusion]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+ 	Even if all of the premises are true in a statement, inductive reasoning allows for the conclusion to be false. 
+
+
+>> Tokens are: 
+[ 	, premises, true, statement, ,, inductive, reasoning, allows, conclusion, false, .] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('premises', 'NOUN'), ('true', 'ADJ'), ('statement', 'NOUN'), (',', 'PUNCT'), ('inductive', 'ADJ'), ('reasoning', 'NOUN'), ('allows', 'VERB'), ('conclusion', 'NOUN'), ('false', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' \t', 'nsubj'), ('premises', 'pobj'), ('true', 'acomp'), ('statement', 'pobj'), (',', 'punct'), ('inductive', 'amod'), ('reasoning', 'nsubj'), ('allows', 'ROOT'), ('conclusion', 'pobj'), ('false', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ 	, premises], [premises, true], [true, statement], [statement, ,], [,, inductive], [inductive, reasoning], [reasoning, allows], [allows, conclusion], [conclusion, false], [false, .]]
+
+>> Trigrams: 
+[[ 	, premises, true], [premises, true, statement], [true, statement, ,], [statement, ,, inductive], [,, inductive, reasoning], [inductive, reasoning, allows], [reasoning, allows, conclusion], [allows, conclusion, false], [conclusion, false, .]]
+
+>> Noun Phrases are: 
+[the premises, a statement, inductive reasoning, the conclusion]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 27 =============================
+
+	If something is true of a class of things in general, it is also true for all members of that class. 
+
+
+>> Tokens are: 
+[	, true, class, things, general, ,, true, members, class, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('true', 'ADJ'), ('class', 'NOUN'), ('things', 'NOUN'), ('general', 'ADJ'), (',', 'PUNCT'), ('true', 'ADJ'), ('members', 'NOUN'), ('class', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'dep'), ('true', 'acomp'), ('class', 'pobj'), ('things', 'pobj'), ('general', 'amod'), (',', 'punct'), ('true', 'acomp'), ('members', 'pobj'), ('class', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, true], [true, class], [class, things], [things, general], [general, ,], [,, true], [true, members], [members, class], [class, .]]
+
+>> Trigrams: 
+[[	, true, class], [true, class, things], [class, things, general], [things, general, ,], [general, ,, true], [,, true, members], [true, members, class], [members, class, .]]
+
+>> Noun Phrases are: 
+[something, a class, things, it, all members, that class]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 28 =============================
+
+ 	Example − "Nita is a teacher. 
+
+
+>> Tokens are: 
+[ 	, Example, −, ", Nita, teacher, .] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('Example', 'NOUN'), ('−', 'PROPN'), ('"', 'PUNCT'), ('Nita', 'PROPN'), ('teacher', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' \t', 'compound'), ('Example', 'compound'), ('−', 'nsubj'), ('"', 'punct'), ('Nita', 'nsubj'), ('teacher', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ 	, Example], [Example, −], [−, "], [", Nita], [Nita, teacher], [teacher, .]]
+
+>> Trigrams: 
+[[ 	, Example, −], [Example, −, "], [−, ", Nita], [", Nita, teacher], [Nita, teacher, .]]
+
+>> Noun Phrases are: 
+[ 	Example −, Nita, a teacher]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 29 =============================
+
+Nita is studious. 
+
+
+>> Tokens are: 
+[Nita, studious, .] 
+
+>> PoS Tags are: 
+[('Nita', 'PROPN'), ('studious', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Nita', 'nsubj'), ('studious', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Nita, studious], [studious, .]]
+
+>> Trigrams: 
+[[Nita, studious, .]]
+
+>> Noun Phrases are: 
+[Nita]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 30 =============================
+
+Therefore, All teachers are studious." 
+
+
+>> Tokens are: 
+[,, teachers, studious, ., "] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('teachers', 'NOUN'), ('studious', 'ADJ'), ('.', 'PUNCT'), ('"', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('teachers', 'nsubj'), ('studious', 'acomp'), ('.', 'punct'), ('"', 'punct')]
+
+>> Bigrams: 
+[[,, teachers], [teachers, studious], [studious, .], [., "]]
+
+>> Trigrams: 
+[[,, teachers, studious], [teachers, studious, .], [studious, ., "]]
+
+>> Noun Phrases are: 
+[All teachers]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 31 =============================
+
+	Example − "All women of age above 60 years are grandmothers. 
+
+
+>> Tokens are: 
+[	, Example, −, ", women, age, 60, years, grandmothers, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Example', 'PROPN'), ('−', 'PROPN'), ('"', 'PUNCT'), ('women', 'NOUN'), ('age', 'NOUN'), ('60', 'NUM'), ('years', 'NOUN'), ('grandmothers', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Example', 'compound'), ('−', 'nsubj'), ('"', 'punct'), ('women', 'nsubj'), ('age', 'pobj'), ('60', 'nummod'), ('years', 'pobj'), ('grandmothers', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Example], [Example, −], [−, "], [", women], [women, age], [age, 60], [60, years], [years, grandmothers], [grandmothers, .]]
+
+>> Trigrams: 
+[[	, Example, −], [Example, −, "], [−, ", women], [", women, age], [women, age, 60], [age, 60, years], [60, years, grandmothers], [years, grandmothers, .]]
+
+>> Noun Phrases are: 
+[	Example −, All women, age, 60 years, grandmothers]
+
+>> Named Entities are: 
+[('60 years', 'DATE')]
+
+
+============================ Sentence 32 =============================
+
+Shalini is 65 years. 
+
+
+>> Tokens are: 
+[Shalini, 65, years, .] 
+
+>> PoS Tags are: 
+[('Shalini', 'PROPN'), ('65', 'NUM'), ('years', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Shalini', 'nsubj'), ('65', 'nummod'), ('years', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Shalini, 65], [65, years], [years, .]]
+
+>> Trigrams: 
+[[Shalini, 65, years], [65, years, .]]
+
+>> Noun Phrases are: 
+[Shalini, 65 years]
+
+>> Named Entities are: 
+[('65 years', 'DATE')]
+
+
+============================ Sentence 33 =============================
+
+Therefore, Shalini is a grandmother."   ·   
+
+
+>> Tokens are: 
+[,, Shalini, grandmother, ., ",   , ·,  ] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('Shalini', 'PROPN'), ('grandmother', 'NOUN'), ('.', 'PUNCT'), ('"', 'PUNCT'), ('  ', 'SPACE'), ('·', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('Shalini', 'nsubj'), ('grandmother', 'attr'), ('.', 'punct'), ('"', 'punct'), ('  ', 'attr'), ('·', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[,, Shalini], [Shalini, grandmother], [grandmother, .], [., "], [",   ], [  , ·], [·,  ]]
+
+>> Trigrams: 
+[[,, Shalini, grandmother], [Shalini, grandmother, .], [grandmother, ., "], [., ",   ], [",   , ·], [  , ·,  ]]
+
+>> Noun Phrases are: 
+[Shalini, a grandmother]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 34 =============================
+
+Learning − It is the activity of gaining knowledge or skill by studying, practising, being taught, or experiencing something. 
+
+
+>> Tokens are: 
+[Learning, −, activity, gaining, knowledge, skill, studying, ,, practising, ,, taught, ,, experiencing, .] 
+
+>> PoS Tags are: 
+[('Learning', 'VERB'), ('−', 'PROPN'), ('activity', 'NOUN'), ('gaining', 'VERB'), ('knowledge', 'NOUN'), ('skill', 'NOUN'), ('studying', 'VERB'), (',', 'PUNCT'), ('practising', 'VERB'), (',', 'PUNCT'), ('taught', 'VERB'), (',', 'PUNCT'), ('experiencing', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Learning', 'advcl'), ('−', 'dobj'), ('activity', 'attr'), ('gaining', 'pcomp'), ('knowledge', 'dobj'), ('skill', 'conj'), ('studying', 'pcomp'), (',', 'punct'), ('practising', 'conj'), (',', 'punct'), ('taught', 'conj'), (',', 'punct'), ('experiencing', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Learning, −], [−, activity], [activity, gaining], [gaining, knowledge], [knowledge, skill], [skill, studying], [studying, ,], [,, practising], [practising, ,], [,, taught], [taught, ,], [,, experiencing], [experiencing, .]]
+
+>> Trigrams: 
+[[Learning, −, activity], [−, activity, gaining], [activity, gaining, knowledge], [gaining, knowledge, skill], [knowledge, skill, studying], [skill, studying, ,], [studying, ,, practising], [,, practising, ,], [practising, ,, taught], [,, taught, ,], [taught, ,, experiencing], [,, experiencing, .]]
+
+>> Noun Phrases are: 
+[−, It, the activity, knowledge, skill, something]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 35 =============================
+
+Learning enhances the awareness of the subjects of the study. 
+
+
+>> Tokens are: 
+[Learning, enhances, awareness, subjects, study, .] 
+
+>> PoS Tags are: 
+[('Learning', 'NOUN'), ('enhances', 'VERB'), ('awareness', 'NOUN'), ('subjects', 'NOUN'), ('study', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Learning', 'nsubj'), ('enhances', 'ROOT'), ('awareness', 'dobj'), ('subjects', 'pobj'), ('study', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Learning, enhances], [enhances, awareness], [awareness, subjects], [subjects, study], [study, .]]
+
+>> Trigrams: 
+[[Learning, enhances, awareness], [enhances, awareness, subjects], [awareness, subjects, study], [subjects, study, .]]
+
+>> Noun Phrases are: 
+[Learning, the awareness, the subjects, the study]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 36 =============================
+
+The ability of learning is possessed by humans, some animals, and AI-enabled systems. 
+
+
+>> Tokens are: 
+[ability, learning, possessed, humans, ,, animals, ,, AI, -, enabled, systems, .] 
+
+>> PoS Tags are: 
+[('ability', 'NOUN'), ('learning', 'NOUN'), ('possessed', 'VERB'), ('humans', 'NOUN'), (',', 'PUNCT'), ('animals', 'NOUN'), (',', 'PUNCT'), ('AI', 'NOUN'), ('-', 'PUNCT'), ('enabled', 'VERB'), ('systems', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ability', 'nsubjpass'), ('learning', 'pobj'), ('possessed', 'ROOT'), ('humans', 'pobj'), (',', 'punct'), ('animals', 'conj'), (',', 'punct'), ('AI', 'npadvmod'), ('-', 'punct'), ('enabled', 'amod'), ('systems', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ability, learning], [learning, possessed], [possessed, humans], [humans, ,], [,, animals], [animals, ,], [,, AI], [AI, -], [-, enabled], [enabled, systems], [systems, .]]
+
+>> Trigrams: 
+[[ability, learning, possessed], [learning, possessed, humans], [possessed, humans, ,], [humans, ,, animals], [,, animals, ,], [animals, ,, AI], [,, AI, -], [AI, -, enabled], [-, enabled, systems], [enabled, systems, .]]
+
+>> Noun Phrases are: 
+[The ability, learning, humans, some animals, AI-enabled systems]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 37 =============================
+
+Learning is categorized as − · 
+
+
+>> Tokens are: 
+[Learning, categorized, −, ·] 
+
+>> PoS Tags are: 
+[('Learning', 'NOUN'), ('categorized', 'VERB'), ('−', 'PROPN'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Learning', 'nsubjpass'), ('categorized', 'ROOT'), ('−', 'pobj'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Learning, categorized], [categorized, −], [−, ·]]
+
+>> Trigrams: 
+[[Learning, categorized, −], [categorized, −, ·]]
+
+>> Noun Phrases are: 
+[Learning, −]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 38 =============================
+
+Auditory Learning − 
+
+
+>> Tokens are: 
+[Auditory, Learning, −] 
+
+>> PoS Tags are: 
+[('Auditory', 'PROPN'), ('Learning', 'PROPN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Auditory', 'compound'), ('Learning', 'ROOT'), ('−', 'dobj')]
+
+>> Bigrams: 
+[[Auditory, Learning], [Learning, −]]
+
+>> Trigrams: 
+[[Auditory, Learning, −]]
+
+>> Noun Phrases are: 
+[Auditory Learning, −]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 39 =============================
+
+It is learning by listening and hearing. 
+
+
+>> Tokens are: 
+[learning, listening, hearing, .] 
+
+>> PoS Tags are: 
+[('learning', 'VERB'), ('listening', 'VERB'), ('hearing', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('learning', 'ROOT'), ('listening', 'pcomp'), ('hearing', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[learning, listening], [listening, hearing], [hearing, .]]
+
+>> Trigrams: 
+[[learning, listening, hearing], [listening, hearing, .]]
+
+>> Noun Phrases are: 
+[It, hearing]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 40 =============================
+
+For example, students listening to recorded audio lectures. 
+
+
+>> Tokens are: 
+[example, ,, students, listening, recorded, audio, lectures, .] 
+
+>> PoS Tags are: 
+[('example', 'NOUN'), (',', 'PUNCT'), ('students', 'NOUN'), ('listening', 'VERB'), ('recorded', 'VERB'), ('audio', 'ADJ'), ('lectures', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('example', 'pobj'), (',', 'punct'), ('students', 'nsubj'), ('listening', 'ROOT'), ('recorded', 'amod'), ('audio', 'amod'), ('lectures', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[example, ,], [,, students], [students, listening], [listening, recorded], [recorded, audio], [audio, lectures], [lectures, .]]
+
+>> Trigrams: 
+[[example, ,, students], [,, students, listening], [students, listening, recorded], [listening, recorded, audio], [recorded, audio, lectures], [audio, lectures, .]]
+
+>> Noun Phrases are: 
+[example, students, recorded audio lectures]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 41 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 42 =============================
+
+Episodic Learning − To learn by remembering sequences of events that one has witnessed or experienced. 
+
+
+>> Tokens are: 
+[Episodic, Learning, −, learn, remembering, sequences, events, witnessed, experienced, .] 
+
+>> PoS Tags are: 
+[('Episodic', 'PROPN'), ('Learning', 'VERB'), ('−', 'NOUN'), ('learn', 'VERB'), ('remembering', 'VERB'), ('sequences', 'NOUN'), ('events', 'NOUN'), ('witnessed', 'VERB'), ('experienced', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Episodic', 'compound'), ('Learning', 'dep'), ('−', 'dobj'), ('learn', 'ROOT'), ('remembering', 'pcomp'), ('sequences', 'dobj'), ('events', 'pobj'), ('witnessed', 'relcl'), ('experienced', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Episodic, Learning], [Learning, −], [−, learn], [learn, remembering], [remembering, sequences], [sequences, events], [events, witnessed], [witnessed, experienced], [experienced, .]]
+
+>> Trigrams: 
+[[Episodic, Learning, −], [Learning, −, learn], [−, learn, remembering], [learn, remembering, sequences], [remembering, sequences, events], [sequences, events, witnessed], [events, witnessed, experienced], [witnessed, experienced, .]]
+
+>> Noun Phrases are: 
+[−, sequences, events, one]
+
+>> Named Entities are: 
+[('Episodic Learning −', 'PERSON')]
+
+
+============================ Sentence 43 =============================
+
+This is linear and orderly. · 
+
+
+>> Tokens are: 
+[linear, orderly, ., ·] 
+
+>> PoS Tags are: 
+[('linear', 'ADJ'), ('orderly', 'ADJ'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('linear', 'acomp'), ('orderly', 'conj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[linear, orderly], [orderly, .], [., ·]]
+
+>> Trigrams: 
+[[linear, orderly, .], [orderly, ., ·]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 44 =============================
+
+Motor Learning − 
+
+
+>> Tokens are: 
+[Motor, Learning, −] 
+
+>> PoS Tags are: 
+[('Motor', 'PROPN'), ('Learning', 'PROPN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Motor', 'compound'), ('Learning', 'ROOT'), ('−', 'dobj')]
+
+>> Bigrams: 
+[[Motor, Learning], [Learning, −]]
+
+>> Trigrams: 
+[[Motor, Learning, −]]
+
+>> Noun Phrases are: 
+[Motor Learning, −]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 45 =============================
+
+It is learning by precise movement of muscles. 
+
+
+>> Tokens are: 
+[learning, precise, movement, muscles, .] 
+
+>> PoS Tags are: 
+[('learning', 'VERB'), ('precise', 'ADJ'), ('movement', 'NOUN'), ('muscles', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('learning', 'ROOT'), ('precise', 'amod'), ('movement', 'pobj'), ('muscles', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[learning, precise], [precise, movement], [movement, muscles], [muscles, .]]
+
+>> Trigrams: 
+[[learning, precise, movement], [precise, movement, muscles], [movement, muscles, .]]
+
+>> Noun Phrases are: 
+[It, precise movement, muscles]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 46 =============================
+
+For example, picking objects, Writing, etc. · 
+
+
+>> Tokens are: 
+[example, ,, picking, objects, ,, Writing, ,, etc, ., ·] 
+
+>> PoS Tags are: 
+[('example', 'NOUN'), (',', 'PUNCT'), ('picking', 'VERB'), ('objects', 'NOUN'), (',', 'PUNCT'), ('Writing', 'NOUN'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('example', 'pobj'), (',', 'punct'), ('picking', 'ROOT'), ('objects', 'dobj'), (',', 'punct'), ('Writing', 'conj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[example, ,], [,, picking], [picking, objects], [objects, ,], [,, Writing], [Writing, ,], [,, etc], [etc, .], [., ·]]
+
+>> Trigrams: 
+[[example, ,, picking], [,, picking, objects], [picking, objects, ,], [objects, ,, Writing], [,, Writing, ,], [Writing, ,, etc], [,, etc, .], [etc, ., ·]]
+
+>> Noun Phrases are: 
+[example, objects, Writing]
+
+>> Named Entities are: 
+[('Writing', 'PERSON')]
+
+
+============================ Sentence 47 =============================
+
+Observational Learning − To learn by watching and imitating others. 
+
+
+>> Tokens are: 
+[Observational, Learning, −, learn, watching, imitating, .] 
+
+>> PoS Tags are: 
+[('Observational', 'PROPN'), ('Learning', 'VERB'), ('−', 'PROPN'), ('learn', 'VERB'), ('watching', 'VERB'), ('imitating', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Observational', 'compound'), ('Learning', 'ROOT'), ('−', 'dobj'), ('learn', 'xcomp'), ('watching', 'pcomp'), ('imitating', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Observational, Learning], [Learning, −], [−, learn], [learn, watching], [watching, imitating], [imitating, .]]
+
+>> Trigrams: 
+[[Observational, Learning, −], [Learning, −, learn], [−, learn, watching], [learn, watching, imitating], [watching, imitating, .]]
+
+>> Noun Phrases are: 
+[−, others]
+
+>> Named Entities are: 
+[('Observational Learning −', 'WORK_OF_ART')]
+
+
+============================ Sentence 48 =============================
+
+For example, child tries to learn by mimicking her parent. 
+
+
+>> Tokens are: 
+[example, ,, child, tries, learn, mimicking, parent, .] 
+
+>> PoS Tags are: 
+[('example', 'NOUN'), (',', 'PUNCT'), ('child', 'NOUN'), ('tries', 'VERB'), ('learn', 'VERB'), ('mimicking', 'VERB'), ('parent', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('example', 'pobj'), (',', 'punct'), ('child', 'nsubj'), ('tries', 'ROOT'), ('learn', 'xcomp'), ('mimicking', 'pcomp'), ('parent', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[example, ,], [,, child], [child, tries], [tries, learn], [learn, mimicking], [mimicking, parent], [parent, .]]
+
+>> Trigrams: 
+[[example, ,, child], [,, child, tries], [child, tries, learn], [tries, learn, mimicking], [learn, mimicking, parent], [mimicking, parent, .]]
+
+>> Noun Phrases are: 
+[example, child, her parent]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 49 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 50 =============================
+
+Perceptual Learning − It is learning to recognize stimuli that one has seen before. 
+
+
+>> Tokens are: 
+[Perceptual, Learning, −, learning, recognize, stimuli, seen, .] 
+
+>> PoS Tags are: 
+[('Perceptual', 'PROPN'), ('Learning', 'PROPN'), ('−', 'PROPN'), ('learning', 'VERB'), ('recognize', 'VERB'), ('stimuli', 'NOUN'), ('seen', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Perceptual', 'compound'), ('Learning', 'compound'), ('−', 'npadvmod'), ('learning', 'ROOT'), ('recognize', 'xcomp'), ('stimuli', 'dobj'), ('seen', 'acl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Perceptual, Learning], [Learning, −], [−, learning], [learning, recognize], [recognize, stimuli], [stimuli, seen], [seen, .]]
+
+>> Trigrams: 
+[[Perceptual, Learning, −], [Learning, −, learning], [−, learning, recognize], [learning, recognize, stimuli], [recognize, stimuli, seen], [stimuli, seen, .]]
+
+>> Noun Phrases are: 
+[It, stimuli, one]
+
+>> Named Entities are: 
+[('Perceptual Learning −', 'PERSON')]
+
+
+============================ Sentence 51 =============================
+
+For example, identifying and classifying objects and situations. 
+
+
+>> Tokens are: 
+[example, ,, identifying, classifying, objects, situations, .] 
+
+>> PoS Tags are: 
+[('example', 'NOUN'), (',', 'PUNCT'), ('identifying', 'VERB'), ('classifying', 'VERB'), ('objects', 'NOUN'), ('situations', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('example', 'pobj'), (',', 'punct'), ('identifying', 'ROOT'), ('classifying', 'conj'), ('objects', 'dobj'), ('situations', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[example, ,], [,, identifying], [identifying, classifying], [classifying, objects], [objects, situations], [situations, .]]
+
+>> Trigrams: 
+[[example, ,, identifying], [,, identifying, classifying], [identifying, classifying, objects], [classifying, objects, situations], [objects, situations, .]]
+
+>> Noun Phrases are: 
+[example, objects, situations]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 52 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 53 =============================
+
+Relational Learning − 
+
+
+>> Tokens are: 
+[Relational, Learning, −] 
+
+>> PoS Tags are: 
+[('Relational', 'PROPN'), ('Learning', 'PROPN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Relational', 'compound'), ('Learning', 'compound'), ('−', 'ROOT')]
+
+>> Bigrams: 
+[[Relational, Learning], [Learning, −]]
+
+>> Trigrams: 
+[[Relational, Learning, −]]
+
+>> Noun Phrases are: 
+[Relational Learning −]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 54 =============================
+
+It involves learning to differentiate among various stimuli on the basis of relational properties, rather than absolute properties. 
+
+
+>> Tokens are: 
+[involves, learning, differentiate, stimuli, basis, relational, properties, ,, absolute, properties, .] 
+
+>> PoS Tags are: 
+[('involves', 'VERB'), ('learning', 'VERB'), ('differentiate', 'VERB'), ('stimuli', 'NOUN'), ('basis', 'NOUN'), ('relational', 'ADJ'), ('properties', 'NOUN'), (',', 'PUNCT'), ('absolute', 'ADJ'), ('properties', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('involves', 'ROOT'), ('learning', 'xcomp'), ('differentiate', 'xcomp'), ('stimuli', 'pobj'), ('basis', 'pobj'), ('relational', 'amod'), ('properties', 'pobj'), (',', 'punct'), ('absolute', 'amod'), ('properties', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[involves, learning], [learning, differentiate], [differentiate, stimuli], [stimuli, basis], [basis, relational], [relational, properties], [properties, ,], [,, absolute], [absolute, properties], [properties, .]]
+
+>> Trigrams: 
+[[involves, learning, differentiate], [learning, differentiate, stimuli], [differentiate, stimuli, basis], [stimuli, basis, relational], [basis, relational, properties], [relational, properties, ,], [properties, ,, absolute], [,, absolute, properties], [absolute, properties, .]]
+
+>> Noun Phrases are: 
+[It, various stimuli, the basis, relational properties, absolute properties]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 55 =============================
+
+For Example, Adding ‘little less’ salt at the time of cooking potatoes that came up salty last time, when cooked with adding say a tablespoon of salt. · 
+
+
+>> Tokens are: 
+[Example, ,, Adding, ‘, little, ’, salt, time, cooking, potatoes, came, salty, time, ,, cooked, adding, tablespoon, salt, ., ·] 
+
+>> PoS Tags are: 
+[('Example', 'PROPN'), (',', 'PUNCT'), ('Adding', 'VERB'), ('‘', 'PUNCT'), ('little', 'ADJ'), ('’', 'PUNCT'), ('salt', 'NOUN'), ('time', 'NOUN'), ('cooking', 'NOUN'), ('potatoes', 'NOUN'), ('came', 'VERB'), ('salty', 'ADJ'), ('time', 'NOUN'), (',', 'PUNCT'), ('cooked', 'VERB'), ('adding', 'VERB'), ('tablespoon', 'NOUN'), ('salt', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Example', 'pobj'), (',', 'punct'), ('Adding', 'csubj'), ('‘', 'punct'), ('little', 'advmod'), ('’', 'punct'), ('salt', 'dobj'), ('time', 'pobj'), ('cooking', 'compound'), ('potatoes', 'pobj'), ('came', 'relcl'), ('salty', 'advmod'), ('time', 'npadvmod'), (',', 'punct'), ('cooked', 'advcl'), ('adding', 'pcomp'), ('tablespoon', 'nsubj'), ('salt', 'pobj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Example, ,], [,, Adding], [Adding, ‘], [‘, little], [little, ’], [’, salt], [salt, time], [time, cooking], [cooking, potatoes], [potatoes, came], [came, salty], [salty, time], [time, ,], [,, cooked], [cooked, adding], [adding, tablespoon], [tablespoon, salt], [salt, .], [., ·]]
+
+>> Trigrams: 
+[[Example, ,, Adding], [,, Adding, ‘], [Adding, ‘, little], [‘, little, ’], [little, ’, salt], [’, salt, time], [salt, time, cooking], [time, cooking, potatoes], [cooking, potatoes, came], [potatoes, came, salty], [came, salty, time], [salty, time, ,], [time, ,, cooked], [,, cooked, adding], [cooked, adding, tablespoon], [adding, tablespoon, salt], [tablespoon, salt, .], [salt, ., ·]]
+
+>> Noun Phrases are: 
+[Example, ‘little less’ salt, the time, cooking potatoes, a tablespoon, salt]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 56 =============================
+
+Spatial Learning − 
+
+
+>> Tokens are: 
+[Spatial, Learning, −] 
+
+>> PoS Tags are: 
+[('Spatial', 'PROPN'), ('Learning', 'PROPN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Spatial', 'compound'), ('Learning', 'ROOT'), ('−', 'dobj')]
+
+>> Bigrams: 
+[[Spatial, Learning], [Learning, −]]
+
+>> Trigrams: 
+[[Spatial, Learning, −]]
+
+>> Noun Phrases are: 
+[Spatial Learning, −]
+
+>> Named Entities are: 
+[('Spatial Learning', 'PERSON')]
+
+
+============================ Sentence 57 =============================
+
+It is learning through visual stimuli such as images, colors, maps, etc. 
+
+
+>> Tokens are: 
+[learning, visual, stimuli, images, ,, colors, ,, maps, ,, etc, .] 
+
+>> PoS Tags are: 
+[('learning', 'VERB'), ('visual', 'ADJ'), ('stimuli', 'NOUN'), ('images', 'NOUN'), (',', 'PUNCT'), ('colors', 'NOUN'), (',', 'PUNCT'), ('maps', 'NOUN'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('learning', 'ROOT'), ('visual', 'amod'), ('stimuli', 'pobj'), ('images', 'pobj'), (',', 'punct'), ('colors', 'conj'), (',', 'punct'), ('maps', 'conj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[learning, visual], [visual, stimuli], [stimuli, images], [images, ,], [,, colors], [colors, ,], [,, maps], [maps, ,], [,, etc], [etc, .]]
+
+>> Trigrams: 
+[[learning, visual, stimuli], [visual, stimuli, images], [stimuli, images, ,], [images, ,, colors], [,, colors, ,], [colors, ,, maps], [,, maps, ,], [maps, ,, etc], [,, etc, .]]
+
+>> Noun Phrases are: 
+[It, visual stimuli, images, colors, maps]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 58 =============================
+
+For Example, A person can create roadmap in mind before actually following the road. 
+
+
+>> Tokens are: 
+[Example, ,, person, create, roadmap, mind, actually, following, road, .] 
+
+>> PoS Tags are: 
+[('Example', 'PROPN'), (',', 'PUNCT'), ('person', 'NOUN'), ('create', 'VERB'), ('roadmap', 'NOUN'), ('mind', 'NOUN'), ('actually', 'ADV'), ('following', 'VERB'), ('road', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Example', 'pobj'), (',', 'punct'), ('person', 'nsubj'), ('create', 'ROOT'), ('roadmap', 'dobj'), ('mind', 'pobj'), ('actually', 'advmod'), ('following', 'pcomp'), ('road', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Example, ,], [,, person], [person, create], [create, roadmap], [roadmap, mind], [mind, actually], [actually, following], [following, road], [road, .]]
+
+>> Trigrams: 
+[[Example, ,, person], [,, person, create], [person, create, roadmap], [create, roadmap, mind], [roadmap, mind, actually], [mind, actually, following], [actually, following, road], [following, road, .]]
+
+>> Noun Phrases are: 
+[Example, A person, roadmap, mind, the road]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 59 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 60 =============================
+
+Stimulus-Response Learning − It is learning to perform a particular behavior when a certain stimulus is present. 
+
+
+>> Tokens are: 
+[Stimulus, -, Response, Learning, −, learning, perform, particular, behavior, certain, stimulus, present, .] 
+
+>> PoS Tags are: 
+[('Stimulus', 'PROPN'), ('-', 'PUNCT'), ('Response', 'PROPN'), ('Learning', 'PROPN'), ('−', 'PROPN'), ('learning', 'VERB'), ('perform', 'VERB'), ('particular', 'ADJ'), ('behavior', 'NOUN'), ('certain', 'ADJ'), ('stimulus', 'NOUN'), ('present', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Stimulus', 'compound'), ('-', 'punct'), ('Response', 'compound'), ('Learning', 'compound'), ('−', 'npadvmod'), ('learning', 'ROOT'), ('perform', 'xcomp'), ('particular', 'amod'), ('behavior', 'dobj'), ('certain', 'amod'), ('stimulus', 'nsubj'), ('present', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Stimulus, -], [-, Response], [Response, Learning], [Learning, −], [−, learning], [learning, perform], [perform, particular], [particular, behavior], [behavior, certain], [certain, stimulus], [stimulus, present], [present, .]]
+
+>> Trigrams: 
+[[Stimulus, -, Response], [-, Response, Learning], [Response, Learning, −], [Learning, −, learning], [−, learning, perform], [learning, perform, particular], [perform, particular, behavior], [particular, behavior, certain], [behavior, certain, stimulus], [certain, stimulus, present], [stimulus, present, .]]
+
+>> Noun Phrases are: 
+[It, a particular behavior, a certain stimulus]
+
+>> Named Entities are: 
+[('Stimulus-Response', 'PERSON')]
+
+
+============================ Sentence 61 =============================
+
+For example, a dog raises its ear on hearing doorbell. · 
+
+
+>> Tokens are: 
+[example, ,, dog, raises, ear, hearing, doorbell, ., ·] 
+
+>> PoS Tags are: 
+[('example', 'NOUN'), (',', 'PUNCT'), ('dog', 'NOUN'), ('raises', 'VERB'), ('ear', 'NOUN'), ('hearing', 'VERB'), ('doorbell', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('example', 'pobj'), (',', 'punct'), ('dog', 'nsubj'), ('raises', 'ROOT'), ('ear', 'dobj'), ('hearing', 'pcomp'), ('doorbell', 'dobj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[example, ,], [,, dog], [dog, raises], [raises, ear], [ear, hearing], [hearing, doorbell], [doorbell, .], [., ·]]
+
+>> Trigrams: 
+[[example, ,, dog], [,, dog, raises], [dog, raises, ear], [raises, ear, hearing], [ear, hearing, doorbell], [hearing, doorbell, .], [doorbell, ., ·]]
+
+>> Noun Phrases are: 
+[example, a dog, its ear, doorbell]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 62 =============================
+
+Problem Solving − 
+
+
+>> Tokens are: 
+[Problem, Solving, −] 
+
+>> PoS Tags are: 
+[('Problem', 'NOUN'), ('Solving', 'VERB'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Problem', 'ROOT'), ('Solving', 'acl'), ('−', 'dobj')]
+
+>> Bigrams: 
+[[Problem, Solving], [Solving, −]]
+
+>> Trigrams: 
+[[Problem, Solving, −]]
+
+>> Noun Phrases are: 
+[Problem, −]
+
+>> Named Entities are: 
+[('Problem Solving', 'PERSON')]
+
+
+============================ Sentence 63 =============================
+
+It is the process in which one perceives and tries to arrive at a desired solution from a present situation by taking some path, which is blocked by known or unknown hurdles. 
+
+
+>> Tokens are: 
+[process, perceives, tries, arrive, desired, solution, present, situation, taking, path, ,, blocked, known, unknown, hurdles, .] 
+
+>> PoS Tags are: 
+[('process', 'NOUN'), ('perceives', 'NOUN'), ('tries', 'VERB'), ('arrive', 'VERB'), ('desired', 'VERB'), ('solution', 'NOUN'), ('present', 'ADJ'), ('situation', 'NOUN'), ('taking', 'VERB'), ('path', 'NOUN'), (',', 'PUNCT'), ('blocked', 'VERB'), ('known', 'ADJ'), ('unknown', 'ADJ'), ('hurdles', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('process', 'attr'), ('perceives', 'relcl'), ('tries', 'conj'), ('arrive', 'xcomp'), ('desired', 'amod'), ('solution', 'pobj'), ('present', 'amod'), ('situation', 'pobj'), ('taking', 'pcomp'), ('path', 'dobj'), (',', 'punct'), ('blocked', 'relcl'), ('known', 'amod'), ('unknown', 'conj'), ('hurdles', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[process, perceives], [perceives, tries], [tries, arrive], [arrive, desired], [desired, solution], [solution, present], [present, situation], [situation, taking], [taking, path], [path, ,], [,, blocked], [blocked, known], [known, unknown], [unknown, hurdles], [hurdles, .]]
+
+>> Trigrams: 
+[[process, perceives, tries], [perceives, tries, arrive], [tries, arrive, desired], [arrive, desired, solution], [desired, solution, present], [solution, present, situation], [present, situation, taking], [situation, taking, path], [taking, path, ,], [path, ,, blocked], [,, blocked, known], [blocked, known, unknown], [known, unknown, hurdles], [unknown, hurdles, .]]
+
+>> Noun Phrases are: 
+[It, the process, a desired solution, a present situation, some path, known or unknown hurdles]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 64 =============================
+
+Problem solving also includes decision making, which is the process of selecting the best suitable alternative out of multiple alternatives to reach the desired goal are available. 
+
+
+>> Tokens are: 
+[Problem, solving, includes, decision, making, ,, process, selecting, best, suitable, alternative, multiple, alternatives, reach, desired, goal, available, .] 
+
+>> PoS Tags are: 
+[('Problem', 'NOUN'), ('solving', 'VERB'), ('includes', 'VERB'), ('decision', 'NOUN'), ('making', 'NOUN'), (',', 'PUNCT'), ('process', 'NOUN'), ('selecting', 'VERB'), ('best', 'ADV'), ('suitable', 'ADJ'), ('alternative', 'NOUN'), ('multiple', 'ADJ'), ('alternatives', 'NOUN'), ('reach', 'VERB'), ('desired', 'VERB'), ('goal', 'NOUN'), ('available', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Problem', 'nsubj'), ('solving', 'acl'), ('includes', 'ROOT'), ('decision', 'compound'), ('making', 'dobj'), (',', 'punct'), ('process', 'attr'), ('selecting', 'pcomp'), ('best', 'advmod'), ('suitable', 'amod'), ('alternative', 'dobj'), ('multiple', 'amod'), ('alternatives', 'pobj'), ('reach', 'advcl'), ('desired', 'amod'), ('goal', 'dobj'), ('available', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Problem, solving], [solving, includes], [includes, decision], [decision, making], [making, ,], [,, process], [process, selecting], [selecting, best], [best, suitable], [suitable, alternative], [alternative, multiple], [multiple, alternatives], [alternatives, reach], [reach, desired], [desired, goal], [goal, available], [available, .]]
+
+>> Trigrams: 
+[[Problem, solving, includes], [solving, includes, decision], [includes, decision, making], [decision, making, ,], [making, ,, process], [,, process, selecting], [process, selecting, best], [selecting, best, suitable], [best, suitable, alternative], [suitable, alternative, multiple], [alternative, multiple, alternatives], [multiple, alternatives, reach], [alternatives, reach, desired], [reach, desired, goal], [desired, goal, available], [goal, available, .]]
+
+>> Noun Phrases are: 
+[Problem, decision making, the process, the best suitable alternative, multiple alternatives, the desired goal]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 65 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 66 =============================
+
+Perception − It is the process of acquiring, interpreting, selecting, and organizing sensory information. 
+
+
+>> Tokens are: 
+[Perception, −, process, acquiring, ,, interpreting, ,, selecting, ,, organizing, sensory, information, .] 
+
+>> PoS Tags are: 
+[('Perception', 'NOUN'), ('−', 'NOUN'), ('process', 'NOUN'), ('acquiring', 'VERB'), (',', 'PUNCT'), ('interpreting', 'NOUN'), (',', 'PUNCT'), ('selecting', 'VERB'), (',', 'PUNCT'), ('organizing', 'VERB'), ('sensory', 'ADJ'), ('information', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Perception', 'compound'), ('−', 'dep'), ('process', 'attr'), ('acquiring', 'pcomp'), (',', 'punct'), ('interpreting', 'conj'), (',', 'punct'), ('selecting', 'conj'), (',', 'punct'), ('organizing', 'conj'), ('sensory', 'amod'), ('information', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Perception, −], [−, process], [process, acquiring], [acquiring, ,], [,, interpreting], [interpreting, ,], [,, selecting], [selecting, ,], [,, organizing], [organizing, sensory], [sensory, information], [information, .]]
+
+>> Trigrams: 
+[[Perception, −, process], [−, process, acquiring], [process, acquiring, ,], [acquiring, ,, interpreting], [,, interpreting, ,], [interpreting, ,, selecting], [,, selecting, ,], [selecting, ,, organizing], [,, organizing, sensory], [organizing, sensory, information], [sensory, information, .]]
+
+>> Noun Phrases are: 
+[It, the process, interpreting, sensory information]
+
+>> Named Entities are: 
+[('Perception −', 'PERSON')]
+
+
+============================ Sentence 67 =============================
+
+Perception presumes sensing. 
+
+
+>> Tokens are: 
+[Perception, presumes, sensing, .] 
+
+>> PoS Tags are: 
+[('Perception', 'NOUN'), ('presumes', 'VERB'), ('sensing', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Perception', 'nsubj'), ('presumes', 'ROOT'), ('sensing', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Perception, presumes], [presumes, sensing], [sensing, .]]
+
+>> Trigrams: 
+[[Perception, presumes, sensing], [presumes, sensing, .]]
+
+>> Noun Phrases are: 
+[Perception]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 68 =============================
+
+In humans, perception is aided by sensory organs. 
+
+
+>> Tokens are: 
+[humans, ,, perception, aided, sensory, organs, .] 
+
+>> PoS Tags are: 
+[('humans', 'NOUN'), (',', 'PUNCT'), ('perception', 'NOUN'), ('aided', 'VERB'), ('sensory', 'ADJ'), ('organs', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('humans', 'pobj'), (',', 'punct'), ('perception', 'nsubjpass'), ('aided', 'ROOT'), ('sensory', 'amod'), ('organs', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[humans, ,], [,, perception], [perception, aided], [aided, sensory], [sensory, organs], [organs, .]]
+
+>> Trigrams: 
+[[humans, ,, perception], [,, perception, aided], [perception, aided, sensory], [aided, sensory, organs], [sensory, organs, .]]
+
+>> Noun Phrases are: 
+[humans, perception, sensory organs]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 69 =============================
+
+In the domain of AI, perception mechanism puts the data acquired by the sensors together in a meaningful manner. 
+
+
+>> Tokens are: 
+[domain, AI, ,, perception, mechanism, puts, data, acquired, sensors, meaningful, manner, .] 
+
+>> PoS Tags are: 
+[('domain', 'NOUN'), ('AI', 'PROPN'), (',', 'PUNCT'), ('perception', 'NOUN'), ('mechanism', 'NOUN'), ('puts', 'VERB'), ('data', 'NOUN'), ('acquired', 'VERB'), ('sensors', 'NOUN'), ('meaningful', 'ADJ'), ('manner', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('domain', 'pobj'), ('AI', 'pobj'), (',', 'punct'), ('perception', 'compound'), ('mechanism', 'nsubj'), ('puts', 'ROOT'), ('data', 'dobj'), ('acquired', 'acl'), ('sensors', 'pobj'), ('meaningful', 'amod'), ('manner', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[domain, AI], [AI, ,], [,, perception], [perception, mechanism], [mechanism, puts], [puts, data], [data, acquired], [acquired, sensors], [sensors, meaningful], [meaningful, manner], [manner, .]]
+
+>> Trigrams: 
+[[domain, AI, ,], [AI, ,, perception], [,, perception, mechanism], [perception, mechanism, puts], [mechanism, puts, data], [puts, data, acquired], [data, acquired, sensors], [acquired, sensors, meaningful], [sensors, meaningful, manner], [meaningful, manner, .]]
+
+>> Noun Phrases are: 
+[the domain, AI, perception mechanism, the data, the sensors, a meaningful manner]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 70 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 71 =============================
+
+Linguistic Intelligence − 
+
+
+>> Tokens are: 
+[Linguistic, Intelligence, −] 
+
+>> PoS Tags are: 
+[('Linguistic', 'PROPN'), ('Intelligence', 'PROPN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Linguistic', 'compound'), ('Intelligence', 'compound'), ('−', 'ROOT')]
+
+>> Bigrams: 
+[[Linguistic, Intelligence], [Intelligence, −]]
+
+>> Trigrams: 
+[[Linguistic, Intelligence, −]]
+
+>> Noun Phrases are: 
+[Linguistic Intelligence −]
+
+>> Named Entities are: 
+[('Linguistic Intelligence −', 'PERSON')]
+
+
+============================ Sentence 72 =============================
+
+It is one’s ability to use, comprehend, speak, and write the verbal and written language. 
+
+
+>> Tokens are: 
+[ability, use, ,, comprehend, ,, speak, ,, write, verbal, written, language, .] 
+
+>> PoS Tags are: 
+[('ability', 'NOUN'), ('use', 'VERB'), (',', 'PUNCT'), ('comprehend', 'VERB'), (',', 'PUNCT'), ('speak', 'VERB'), (',', 'PUNCT'), ('write', 'VERB'), ('verbal', 'ADJ'), ('written', 'VERB'), ('language', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ability', 'attr'), ('use', 'acl'), (',', 'punct'), ('comprehend', 'conj'), (',', 'punct'), ('speak', 'conj'), (',', 'punct'), ('write', 'conj'), ('verbal', 'amod'), ('written', 'conj'), ('language', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ability, use], [use, ,], [,, comprehend], [comprehend, ,], [,, speak], [speak, ,], [,, write], [write, verbal], [verbal, written], [written, language], [language, .]]
+
+>> Trigrams: 
+[[ability, use, ,], [use, ,, comprehend], [,, comprehend, ,], [comprehend, ,, speak], [,, speak, ,], [speak, ,, write], [,, write, verbal], [write, verbal, written], [verbal, written, language], [written, language, .]]
+
+>> Noun Phrases are: 
+[It, one’s ability, the verbal and written language]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 73 =============================
+
+It is important in interpersonal communication. 
+
+
+>> Tokens are: 
+[important, interpersonal, communication, .] 
+
+>> PoS Tags are: 
+[('important', 'ADJ'), ('interpersonal', 'ADJ'), ('communication', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('important', 'acomp'), ('interpersonal', 'amod'), ('communication', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[important, interpersonal], [interpersonal, communication], [communication, .]]
+
+>> Trigrams: 
+[[important, interpersonal, communication], [interpersonal, communication, .]]
+
+>> Noun Phrases are: 
+[It, interpersonal communication]
+
+>> Named Entities are: 
+[]

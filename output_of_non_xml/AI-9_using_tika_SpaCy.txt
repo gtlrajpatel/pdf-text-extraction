@@ -1,0 +1,676 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-9 
+
+
+>> Tokens are: 
+[AI-9] 
+
+>> PoS Tags are: 
+[('AI-9', 'NUM')] 
+
+>> Dependency Tags are: 
+[('AI-9', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 2 =============================
+
+Fuzzy Logic Systems (FLS) produce acceptable but definite output in response to incomplete, ambiguous, distorted, or inaccurate (fuzzy) input. 
+
+
+>> Tokens are: 
+[Fuzzy, Logic, Systems, (, FLS, ), produce, acceptable, definite, output, response, incomplete, ,, ambiguous, ,, distorted, ,, inaccurate, (, fuzzy, ), input, .] 
+
+>> PoS Tags are: 
+[('Fuzzy', 'PROPN'), ('Logic', 'PROPN'), ('Systems', 'PROPN'), ('(', 'PUNCT'), ('FLS', 'PROPN'), (')', 'PUNCT'), ('produce', 'VERB'), ('acceptable', 'ADJ'), ('definite', 'ADJ'), ('output', 'NOUN'), ('response', 'NOUN'), ('incomplete', 'ADJ'), (',', 'PUNCT'), ('ambiguous', 'ADJ'), (',', 'PUNCT'), ('distorted', 'ADJ'), (',', 'PUNCT'), ('inaccurate', 'ADJ'), ('(', 'PUNCT'), ('fuzzy', 'ADJ'), (')', 'PUNCT'), ('input', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Fuzzy', 'compound'), ('Logic', 'compound'), ('Systems', 'nsubj'), ('(', 'punct'), ('FLS', 'appos'), (')', 'punct'), ('produce', 'ROOT'), ('acceptable', 'amod'), ('definite', 'conj'), ('output', 'dobj'), ('response', 'pobj'), ('incomplete', 'amod'), (',', 'punct'), ('ambiguous', 'conj'), (',', 'punct'), ('distorted', 'conj'), (',', 'punct'), ('inaccurate', 'conj'), ('(', 'punct'), ('fuzzy', 'amod'), (')', 'punct'), ('input', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Fuzzy, Logic], [Logic, Systems], [Systems, (], [(, FLS], [FLS, )], [), produce], [produce, acceptable], [acceptable, definite], [definite, output], [output, response], [response, incomplete], [incomplete, ,], [,, ambiguous], [ambiguous, ,], [,, distorted], [distorted, ,], [,, inaccurate], [inaccurate, (], [(, fuzzy], [fuzzy, )], [), input], [input, .]]
+
+>> Trigrams: 
+[[Fuzzy, Logic, Systems], [Logic, Systems, (], [Systems, (, FLS], [(, FLS, )], [FLS, ), produce], [), produce, acceptable], [produce, acceptable, definite], [acceptable, definite, output], [definite, output, response], [output, response, incomplete], [response, incomplete, ,], [incomplete, ,, ambiguous], [,, ambiguous, ,], [ambiguous, ,, distorted], [,, distorted, ,], [distorted, ,, inaccurate], [,, inaccurate, (], [inaccurate, (, fuzzy], [(, fuzzy, )], [fuzzy, ), input], [), input, .]]
+
+>> Noun Phrases are: 
+[Fuzzy Logic Systems, FLS, acceptable but definite output, response, incomplete, ambiguous, distorted, or inaccurate (fuzzy) input]
+
+>> Named Entities are: 
+[('FLS', 'ORG')]
+
+
+============================ Sentence 3 =============================
+
+What is Fuzzy Logic? 
+
+
+>> Tokens are: 
+[Fuzzy, Logic, ?] 
+
+>> PoS Tags are: 
+[('Fuzzy', 'PROPN'), ('Logic', 'PROPN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Fuzzy', 'compound'), ('Logic', 'nsubj'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Fuzzy, Logic], [Logic, ?]]
+
+>> Trigrams: 
+[[Fuzzy, Logic, ?]]
+
+>> Noun Phrases are: 
+[What, Fuzzy Logic]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+Fuzzy Logic (FL) is a method of reasoning that resembles human reasoning. 
+
+
+>> Tokens are: 
+[Fuzzy, Logic, (, FL, ), method, reasoning, resembles, human, reasoning, .] 
+
+>> PoS Tags are: 
+[('Fuzzy', 'PROPN'), ('Logic', 'PROPN'), ('(', 'PUNCT'), ('FL', 'PROPN'), (')', 'PUNCT'), ('method', 'NOUN'), ('reasoning', 'NOUN'), ('resembles', 'VERB'), ('human', 'ADJ'), ('reasoning', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Fuzzy', 'compound'), ('Logic', 'nsubj'), ('(', 'punct'), ('FL', 'appos'), (')', 'punct'), ('method', 'attr'), ('reasoning', 'pobj'), ('resembles', 'relcl'), ('human', 'amod'), ('reasoning', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Fuzzy, Logic], [Logic, (], [(, FL], [FL, )], [), method], [method, reasoning], [reasoning, resembles], [resembles, human], [human, reasoning], [reasoning, .]]
+
+>> Trigrams: 
+[[Fuzzy, Logic, (], [Logic, (, FL], [(, FL, )], [FL, ), method], [), method, reasoning], [method, reasoning, resembles], [reasoning, resembles, human], [resembles, human, reasoning], [human, reasoning, .]]
+
+>> Noun Phrases are: 
+[Fuzzy Logic, (FL, a method, reasoning, human reasoning]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 5 =============================
+
+The approach of FL imitates the way of decision making in humans that involves all intermediate possibilities between digital values YES and NO. 
+
+
+>> Tokens are: 
+[approach, FL, imitates, way, decision, making, humans, involves, intermediate, possibilities, digital, values, YES, .] 
+
+>> PoS Tags are: 
+[('approach', 'NOUN'), ('FL', 'PROPN'), ('imitates', 'NOUN'), ('way', 'NOUN'), ('decision', 'NOUN'), ('making', 'NOUN'), ('humans', 'NOUN'), ('involves', 'VERB'), ('intermediate', 'ADJ'), ('possibilities', 'NOUN'), ('digital', 'ADJ'), ('values', 'NOUN'), ('YES', 'INTJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('approach', 'ROOT'), ('FL', 'compound'), ('imitates', 'pobj'), ('way', 'appos'), ('decision', 'compound'), ('making', 'pobj'), ('humans', 'pobj'), ('involves', 'relcl'), ('intermediate', 'amod'), ('possibilities', 'dobj'), ('digital', 'amod'), ('values', 'pobj'), ('YES', 'intj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[approach, FL], [FL, imitates], [imitates, way], [way, decision], [decision, making], [making, humans], [humans, involves], [involves, intermediate], [intermediate, possibilities], [possibilities, digital], [digital, values], [values, YES], [YES, .]]
+
+>> Trigrams: 
+[[approach, FL, imitates], [FL, imitates, way], [imitates, way, decision], [way, decision, making], [decision, making, humans], [making, humans, involves], [humans, involves, intermediate], [involves, intermediate, possibilities], [intermediate, possibilities, digital], [possibilities, digital, values], [digital, values, YES], [values, YES, .]]
+
+>> Noun Phrases are: 
+[The approach, FL imitates, the way, decision making, humans, all intermediate possibilities, digital values]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+The conventional logic block that a computer can understand takes precise input and produces a definite output as TRUE or FALSE, which is equivalent to human’s YES or NO. 
+
+
+>> Tokens are: 
+[conventional, logic, block, computer, understand, takes, precise, input, produces, definite, output, TRUE, FALSE, ,, equivalent, human, YES, .] 
+
+>> PoS Tags are: 
+[('conventional', 'ADJ'), ('logic', 'NOUN'), ('block', 'NOUN'), ('computer', 'NOUN'), ('understand', 'VERB'), ('takes', 'VERB'), ('precise', 'ADJ'), ('input', 'NOUN'), ('produces', 'VERB'), ('definite', 'ADJ'), ('output', 'NOUN'), ('TRUE', 'ADJ'), ('FALSE', 'ADJ'), (',', 'PUNCT'), ('equivalent', 'ADJ'), ('human', 'NOUN'), ('YES', 'INTJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('conventional', 'amod'), ('logic', 'compound'), ('block', 'ROOT'), ('computer', 'nsubj'), ('understand', 'relcl'), ('takes', 'xcomp'), ('precise', 'amod'), ('input', 'dobj'), ('produces', 'conj'), ('definite', 'amod'), ('output', 'dobj'), ('TRUE', 'pobj'), ('FALSE', 'conj'), (',', 'punct'), ('equivalent', 'acomp'), ('human', 'pobj'), ('YES', 'intj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[conventional, logic], [logic, block], [block, computer], [computer, understand], [understand, takes], [takes, precise], [precise, input], [input, produces], [produces, definite], [definite, output], [output, TRUE], [TRUE, FALSE], [FALSE, ,], [,, equivalent], [equivalent, human], [human, YES], [YES, .]]
+
+>> Trigrams: 
+[[conventional, logic, block], [logic, block, computer], [block, computer, understand], [computer, understand, takes], [understand, takes, precise], [takes, precise, input], [precise, input, produces], [input, produces, definite], [produces, definite, output], [definite, output, TRUE], [output, TRUE, FALSE], [TRUE, FALSE, ,], [FALSE, ,, equivalent], [,, equivalent, human], [equivalent, human, YES], [human, YES, .]]
+
+>> Noun Phrases are: 
+[The conventional logic block, a computer, precise input, a definite output, human]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+The inventor of fuzzy logic, Lotfi Zadeh, observed that unlike computers, the human decision making includes a range of possibilities between YES and NO, such as − 	CERTAINLY YES  	POSSIBLY 
+
+
+>> Tokens are: 
+[inventor, fuzzy, logic, ,, Lotfi, Zadeh, ,, observed, unlike, computers, ,, human, decision, making, includes, range, possibilities, YES, ,, −, 	, CERTAINLY, YES,  	, POSSIBLY] 
+
+>> PoS Tags are: 
+[('inventor', 'NOUN'), ('fuzzy', 'ADJ'), ('logic', 'NOUN'), (',', 'PUNCT'), ('Lotfi', 'PROPN'), ('Zadeh', 'PROPN'), (',', 'PUNCT'), ('observed', 'VERB'), ('unlike', 'ADP'), ('computers', 'NOUN'), (',', 'PUNCT'), ('human', 'ADJ'), ('decision', 'NOUN'), ('making', 'NOUN'), ('includes', 'VERB'), ('range', 'NOUN'), ('possibilities', 'NOUN'), ('YES', 'INTJ'), (',', 'PUNCT'), ('−', 'PROPN'), ('\t', 'SPACE'), ('CERTAINLY', 'PROPN'), ('YES', 'INTJ'), (' \t', 'SPACE'), ('POSSIBLY', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('inventor', 'nsubj'), ('fuzzy', 'amod'), ('logic', 'pobj'), (',', 'punct'), ('Lotfi', 'compound'), ('Zadeh', 'appos'), (',', 'punct'), ('observed', 'ROOT'), ('unlike', 'prep'), ('computers', 'pobj'), (',', 'punct'), ('human', 'amod'), ('decision', 'compound'), ('making', 'nsubj'), ('includes', 'ccomp'), ('range', 'dobj'), ('possibilities', 'pobj'), ('YES', 'intj'), (',', 'punct'), ('−', 'compound'), ('\t', 'compound'), ('CERTAINLY', 'pobj'), ('YES', 'dep'), (' \t', 'compound'), ('POSSIBLY', 'punct')]
+
+>> Bigrams: 
+[[inventor, fuzzy], [fuzzy, logic], [logic, ,], [,, Lotfi], [Lotfi, Zadeh], [Zadeh, ,], [,, observed], [observed, unlike], [unlike, computers], [computers, ,], [,, human], [human, decision], [decision, making], [making, includes], [includes, range], [range, possibilities], [possibilities, YES], [YES, ,], [,, −], [−, 	], [	, CERTAINLY], [CERTAINLY, YES], [YES,  	], [ 	, POSSIBLY]]
+
+>> Trigrams: 
+[[inventor, fuzzy, logic], [fuzzy, logic, ,], [logic, ,, Lotfi], [,, Lotfi, Zadeh], [Lotfi, Zadeh, ,], [Zadeh, ,, observed], [,, observed, unlike], [observed, unlike, computers], [unlike, computers, ,], [computers, ,, human], [,, human, decision], [human, decision, making], [decision, making, includes], [making, includes, range], [includes, range, possibilities], [range, possibilities, YES], [possibilities, YES, ,], [YES, ,, −], [,, −, 	], [−, 	, CERTAINLY], [	, CERTAINLY, YES], [CERTAINLY, YES,  	], [YES,  	, POSSIBLY]]
+
+>> Noun Phrases are: 
+[The inventor, fuzzy logic, Lotfi Zadeh, computers, the human decision making, a range, possibilities, − 	CERTAINLY]
+
+>> Named Entities are: 
+[('Lotfi Zadeh', 'PERSON')]
+
+
+============================ Sentence 8 =============================
+
+YES  	CANNOT SAY  	POSSIBLY 
+
+
+>> Tokens are: 
+[YES,  	,  	, POSSIBLY] 
+
+>> PoS Tags are: 
+[('YES', 'INTJ'), (' \t', 'SPACE'), (' \t', 'SPACE'), ('POSSIBLY', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('YES', 'intj'), (' \t', 'compound'), (' \t', 'dobj'), ('POSSIBLY', 'punct')]
+
+>> Bigrams: 
+[[YES,  	], [ 	,  	], [ 	, POSSIBLY]]
+
+>> Trigrams: 
+[[YES,  	,  	], [ 	,  	, POSSIBLY]]
+
+>> Noun Phrases are: 
+[ 	CANNOT]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+NO  	CERTAINLY 
+
+
+>> Tokens are: 
+[ 	, CERTAINLY] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('CERTAINLY', 'ADV')] 
+
+>> Dependency Tags are: 
+[(' \t', 'ROOT'), ('CERTAINLY', 'advmod')]
+
+>> Bigrams: 
+[[ 	, CERTAINLY]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+NO    
+
+
+>> Tokens are: 
+[  ] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('  ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 11 =============================
+
+The fuzzy logic works on the levels of possibilities of input to achieve the definite output. 
+
+
+>> Tokens are: 
+[fuzzy, logic, works, levels, possibilities, input, achieve, definite, output, .] 
+
+>> PoS Tags are: 
+[('fuzzy', 'ADJ'), ('logic', 'NOUN'), ('works', 'VERB'), ('levels', 'NOUN'), ('possibilities', 'NOUN'), ('input', 'NOUN'), ('achieve', 'VERB'), ('definite', 'ADJ'), ('output', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('fuzzy', 'amod'), ('logic', 'nsubj'), ('works', 'ROOT'), ('levels', 'pobj'), ('possibilities', 'pobj'), ('input', 'pobj'), ('achieve', 'advcl'), ('definite', 'amod'), ('output', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[fuzzy, logic], [logic, works], [works, levels], [levels, possibilities], [possibilities, input], [input, achieve], [achieve, definite], [definite, output], [output, .]]
+
+>> Trigrams: 
+[[fuzzy, logic, works], [logic, works, levels], [works, levels, possibilities], [levels, possibilities, input], [possibilities, input, achieve], [input, achieve, definite], [achieve, definite, output], [definite, output, .]]
+
+>> Noun Phrases are: 
+[The fuzzy logic, the levels, possibilities, input, the definite output]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+Implementation · It can be implemented in systems with various sizes and capabilities ranging from small micro-controllers to large, networked, workstation-based control systems. 
+
+
+>> Tokens are: 
+[Implementation, ·, implemented, systems, sizes, capabilities, ranging, small, micro, -, controllers, large, ,, networked, ,, workstation, -, based, control, systems, .] 
+
+>> PoS Tags are: 
+[('Implementation', 'NOUN'), ('·', 'PUNCT'), ('implemented', 'VERB'), ('systems', 'NOUN'), ('sizes', 'NOUN'), ('capabilities', 'NOUN'), ('ranging', 'VERB'), ('small', 'ADJ'), ('micro', 'NOUN'), ('-', 'NOUN'), ('controllers', 'NOUN'), ('large', 'ADJ'), (',', 'PUNCT'), ('networked', 'ADJ'), (',', 'PUNCT'), ('workstation', 'NOUN'), ('-', 'PUNCT'), ('based', 'VERB'), ('control', 'NOUN'), ('systems', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Implementation', 'dep'), ('·', 'punct'), ('implemented', 'ROOT'), ('systems', 'pobj'), ('sizes', 'pobj'), ('capabilities', 'conj'), ('ranging', 'acl'), ('small', 'amod'), ('micro', 'pobj'), ('-', 'pobj'), ('controllers', 'pobj'), ('large', 'amod'), (',', 'punct'), ('networked', 'amod'), (',', 'punct'), ('workstation', 'npadvmod'), ('-', 'punct'), ('based', 'amod'), ('control', 'compound'), ('systems', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Implementation, ·], [·, implemented], [implemented, systems], [systems, sizes], [sizes, capabilities], [capabilities, ranging], [ranging, small], [small, micro], [micro, -], [-, controllers], [controllers, large], [large, ,], [,, networked], [networked, ,], [,, workstation], [workstation, -], [-, based], [based, control], [control, systems], [systems, .]]
+
+>> Trigrams: 
+[[Implementation, ·, implemented], [·, implemented, systems], [implemented, systems, sizes], [systems, sizes, capabilities], [sizes, capabilities, ranging], [capabilities, ranging, small], [ranging, small, micro], [small, micro, -], [micro, -, controllers], [-, controllers, large], [controllers, large, ,], [large, ,, networked], [,, networked, ,], [networked, ,, workstation], [,, workstation, -], [workstation, -, based], [-, based, control], [based, control, systems], [control, systems, .]]
+
+>> Noun Phrases are: 
+[It, systems, various sizes, capabilities, small micro, -, controllers, large, networked, workstation-based control systems]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 13 =============================
+
+· It can be implemented in hardware, software, or a combination of both. 
+
+
+>> Tokens are: 
+[·, implemented, hardware, ,, software, ,, combination, .] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('implemented', 'VERB'), ('hardware', 'NOUN'), (',', 'PUNCT'), ('software', 'NOUN'), (',', 'PUNCT'), ('combination', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('implemented', 'ROOT'), ('hardware', 'pobj'), (',', 'punct'), ('software', 'conj'), (',', 'punct'), ('combination', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[·, implemented], [implemented, hardware], [hardware, ,], [,, software], [software, ,], [,, combination], [combination, .]]
+
+>> Trigrams: 
+[[·, implemented, hardware], [implemented, hardware, ,], [hardware, ,, software], [,, software, ,], [software, ,, combination], [,, combination, .]]
+
+>> Noun Phrases are: 
+[It, hardware, software, a combination]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+Why Fuzzy Logic? 
+
+
+>> Tokens are: 
+[Fuzzy, Logic, ?] 
+
+>> PoS Tags are: 
+[('Fuzzy', 'PROPN'), ('Logic', 'PROPN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Fuzzy', 'compound'), ('Logic', 'ROOT'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Fuzzy, Logic], [Logic, ?]]
+
+>> Trigrams: 
+[[Fuzzy, Logic, ?]]
+
+>> Noun Phrases are: 
+[Why Fuzzy Logic]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+Fuzzy logic is useful for commercial and practical purposes. 
+
+
+>> Tokens are: 
+[Fuzzy, logic, useful, commercial, practical, purposes, .] 
+
+>> PoS Tags are: 
+[('Fuzzy', 'ADJ'), ('logic', 'NOUN'), ('useful', 'ADJ'), ('commercial', 'ADJ'), ('practical', 'ADJ'), ('purposes', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Fuzzy', 'amod'), ('logic', 'nsubj'), ('useful', 'acomp'), ('commercial', 'amod'), ('practical', 'conj'), ('purposes', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Fuzzy, logic], [logic, useful], [useful, commercial], [commercial, practical], [practical, purposes], [purposes, .]]
+
+>> Trigrams: 
+[[Fuzzy, logic, useful], [logic, useful, commercial], [useful, commercial, practical], [commercial, practical, purposes], [practical, purposes, .]]
+
+>> Noun Phrases are: 
+[Fuzzy logic, commercial and practical purposes]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+· It can control machines and consumer products. 
+
+
+>> Tokens are: 
+[·, control, machines, consumer, products, .] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('control', 'VERB'), ('machines', 'NOUN'), ('consumer', 'NOUN'), ('products', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('control', 'ROOT'), ('machines', 'dobj'), ('consumer', 'compound'), ('products', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[·, control], [control, machines], [machines, consumer], [consumer, products], [products, .]]
+
+>> Trigrams: 
+[[·, control, machines], [control, machines, consumer], [machines, consumer, products], [consumer, products, .]]
+
+>> Noun Phrases are: 
+[It, machines, consumer products]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+· It may not give accurate reasoning, but acceptable reasoning. 
+
+
+>> Tokens are: 
+[·, accurate, reasoning, ,, acceptable, reasoning, .] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('accurate', 'ADJ'), ('reasoning', 'NOUN'), (',', 'PUNCT'), ('acceptable', 'ADJ'), ('reasoning', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('accurate', 'amod'), ('reasoning', 'dobj'), (',', 'punct'), ('acceptable', 'amod'), ('reasoning', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[·, accurate], [accurate, reasoning], [reasoning, ,], [,, acceptable], [acceptable, reasoning], [reasoning, .]]
+
+>> Trigrams: 
+[[·, accurate, reasoning], [accurate, reasoning, ,], [reasoning, ,, acceptable], [,, acceptable, reasoning], [acceptable, reasoning, .]]
+
+>> Noun Phrases are: 
+[It, accurate reasoning, acceptable reasoning]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 18 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+Fuzzy logic helps to deal with the uncertainty in engineering. 
+
+
+>> Tokens are: 
+[Fuzzy, logic, helps, deal, uncertainty, engineering, .] 
+
+>> PoS Tags are: 
+[('Fuzzy', 'ADJ'), ('logic', 'NOUN'), ('helps', 'VERB'), ('deal', 'VERB'), ('uncertainty', 'NOUN'), ('engineering', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Fuzzy', 'amod'), ('logic', 'nsubj'), ('helps', 'ROOT'), ('deal', 'xcomp'), ('uncertainty', 'pobj'), ('engineering', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Fuzzy, logic], [logic, helps], [helps, deal], [deal, uncertainty], [uncertainty, engineering], [engineering, .]]
+
+>> Trigrams: 
+[[Fuzzy, logic, helps], [logic, helps, deal], [helps, deal, uncertainty], [deal, uncertainty, engineering], [uncertainty, engineering, .]]
+
+>> Noun Phrases are: 
+[Fuzzy logic, the uncertainty, engineering]
+
+>> Named Entities are: 
+[('Fuzzy', 'PERSON')]
+
+
+============================ Sentence 20 =============================
+
+Fuzzy Logic Systems Architecture It has four main parts as shown − · Fuzzification Module − It transforms the system inputs, which are crisp numbers, into fuzzy sets. 
+
+
+>> Tokens are: 
+[Fuzzy, Logic, Systems, Architecture, main, parts, shown, −, ·, Fuzzification, Module, −, transforms, system, inputs, ,, crisp, numbers, ,, fuzzy, sets, .] 
+
+>> PoS Tags are: 
+[('Fuzzy', 'PROPN'), ('Logic', 'PROPN'), ('Systems', 'PROPN'), ('Architecture', 'PROPN'), ('main', 'ADJ'), ('parts', 'NOUN'), ('shown', 'VERB'), ('−', 'PROPN'), ('·', 'PUNCT'), ('Fuzzification', 'PROPN'), ('Module', 'PROPN'), ('−', 'PROPN'), ('transforms', 'VERB'), ('system', 'NOUN'), ('inputs', 'NOUN'), (',', 'PUNCT'), ('crisp', 'ADJ'), ('numbers', 'NOUN'), (',', 'PUNCT'), ('fuzzy', 'ADJ'), ('sets', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Fuzzy', 'compound'), ('Logic', 'compound'), ('Systems', 'compound'), ('Architecture', 'npadvmod'), ('main', 'amod'), ('parts', 'dobj'), ('shown', 'advcl'), ('−', 'dobj'), ('·', 'punct'), ('Fuzzification', 'compound'), ('Module', 'compound'), ('−', 'dobj'), ('transforms', 'ROOT'), ('system', 'compound'), ('inputs', 'dobj'), (',', 'punct'), ('crisp', 'amod'), ('numbers', 'attr'), (',', 'punct'), ('fuzzy', 'amod'), ('sets', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Fuzzy, Logic], [Logic, Systems], [Systems, Architecture], [Architecture, main], [main, parts], [parts, shown], [shown, −], [−, ·], [·, Fuzzification], [Fuzzification, Module], [Module, −], [−, transforms], [transforms, system], [system, inputs], [inputs, ,], [,, crisp], [crisp, numbers], [numbers, ,], [,, fuzzy], [fuzzy, sets], [sets, .]]
+
+>> Trigrams: 
+[[Fuzzy, Logic, Systems], [Logic, Systems, Architecture], [Systems, Architecture, main], [Architecture, main, parts], [main, parts, shown], [parts, shown, −], [shown, −, ·], [−, ·, Fuzzification], [·, Fuzzification, Module], [Fuzzification, Module, −], [Module, −, transforms], [−, transforms, system], [transforms, system, inputs], [system, inputs, ,], [inputs, ,, crisp], [,, crisp, numbers], [crisp, numbers, ,], [numbers, ,, fuzzy], [,, fuzzy, sets], [fuzzy, sets, .]]
+
+>> Noun Phrases are: 
+[It, four main parts, −, Fuzzification Module −, It, the system inputs, crisp numbers, fuzzy sets]
+
+>> Named Entities are: 
+[('four', 'CARDINAL'), ('−', 'EVENT'), ('Fuzzification Module −', 'PERSON')]
+
+
+============================ Sentence 21 =============================
+
+It splits the input signal into five steps such as − 	LP 	x is Large Positive  	MP 	x is Medium Positive  	S 	x is Small  	MN 	x is Medium Negative  	LN 	x is Large Negative   ·   
+
+
+>> Tokens are: 
+[splits, input, signal, steps, −, 	, LP, 	, x, Large, Positive,  	, MP, 	, x, Medium, Positive,  	, S, 	, x, Small,  	, MN, 	, x, Medium, Negative,  	, LN, 	, x, Large, Negative,   , ·,  ] 
+
+>> PoS Tags are: 
+[('splits', 'VERB'), ('input', 'NOUN'), ('signal', 'NOUN'), ('steps', 'NOUN'), ('−', 'PROPN'), ('\t', 'SPACE'), ('LP', 'PROPN'), ('\t', 'SPACE'), ('x', 'PUNCT'), ('Large', 'ADJ'), ('Positive', 'ADJ'), (' \t', 'SPACE'), ('MP', 'PROPN'), ('\t', 'SPACE'), ('x', 'PUNCT'), ('Medium', 'PROPN'), ('Positive', 'PROPN'), (' \t', 'SPACE'), ('S', 'PROPN'), ('\t', 'SPACE'), ('x', 'PUNCT'), ('Small', 'ADJ'), (' \t', 'SPACE'), ('MN', 'PROPN'), ('\t', 'SPACE'), ('x', 'PUNCT'), ('Medium', 'PROPN'), ('Negative', 'PROPN'), (' \t', 'SPACE'), ('LN', 'PROPN'), ('\t', 'SPACE'), ('x', 'PUNCT'), ('Large', 'ADJ'), ('Negative', 'ADJ'), ('  ', 'SPACE'), ('·', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('splits', 'ccomp'), ('input', 'compound'), ('signal', 'dobj'), ('steps', 'pobj'), ('−', 'compound'), ('\t', 'compound'), ('LP', 'compound'), ('\t', 'pobj'), ('x', 'punct'), ('Large', 'amod'), ('Positive', 'amod'), (' \t', 'compound'), ('MP', 'compound'), ('\t', 'attr'), ('x', 'punct'), ('Medium', 'compound'), ('Positive', 'compound'), (' \t', 'compound'), ('S', 'compound'), ('\t', 'nsubj'), ('x', 'punct'), ('Small', 'amod'), (' \t', 'compound'), ('MN', 'compound'), ('\t', 'attr'), ('x', 'punct'), ('Medium', 'compound'), ('Negative', 'compound'), (' \t', 'compound'), ('LN', 'compound'), ('\t', 'attr'), ('x', 'punct'), ('Large', 'amod'), ('Negative', 'attr'), ('  ', 'attr'), ('·', 'punct'), (' ', 'attr')]
+
+>> Bigrams: 
+[[splits, input], [input, signal], [signal, steps], [steps, −], [−, 	], [	, LP], [LP, 	], [	, x], [x, Large], [Large, Positive], [Positive,  	], [ 	, MP], [MP, 	], [	, x], [x, Medium], [Medium, Positive], [Positive,  	], [ 	, S], [S, 	], [	, x], [x, Small], [Small,  	], [ 	, MN], [MN, 	], [	, x], [x, Medium], [Medium, Negative], [Negative,  	], [ 	, LN], [LN, 	], [	, x], [x, Large], [Large, Negative], [Negative,   ], [  , ·], [·,  ]]
+
+>> Trigrams: 
+[[splits, input, signal], [input, signal, steps], [signal, steps, −], [steps, −, 	], [−, 	, LP], [	, LP, 	], [LP, 	, x], [	, x, Large], [x, Large, Positive], [Large, Positive,  	], [Positive,  	, MP], [ 	, MP, 	], [MP, 	, x], [	, x, Medium], [x, Medium, Positive], [Medium, Positive,  	], [Positive,  	, S], [ 	, S, 	], [S, 	, x], [	, x, Small], [x, Small,  	], [Small,  	, MN], [ 	, MN, 	], [MN, 	, x], [	, x, Medium], [x, Medium, Negative], [Medium, Negative,  	], [Negative,  	, LN], [ 	, LN, 	], [LN, 	, x], [	, x, Large], [x, Large, Negative], [Large, Negative,   ], [Negative,   , ·], [  , ·,  ]]
+
+>> Noun Phrases are: 
+[It, the input signal, five steps]
+
+>> Named Entities are: 
+[('five', 'CARDINAL'), ('Medium Positive', 'WORK_OF_ART'), ('Small', 'PERSON'), ('Medium Negative', 'ORG')]
+
+
+============================ Sentence 22 =============================
+
+Knowledge Base − It stores IF-THEN rules provided by experts. 
+
+
+>> Tokens are: 
+[Knowledge, Base, −, stores, -, rules, provided, experts, .] 
+
+>> PoS Tags are: 
+[('Knowledge', 'PROPN'), ('Base', 'PROPN'), ('−', 'PROPN'), ('stores', 'VERB'), ('-', 'PUNCT'), ('rules', 'NOUN'), ('provided', 'VERB'), ('experts', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Knowledge', 'compound'), ('Base', 'compound'), ('−', 'dep'), ('stores', 'ROOT'), ('-', 'punct'), ('rules', 'dobj'), ('provided', 'acl'), ('experts', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Knowledge, Base], [Base, −], [−, stores], [stores, -], [-, rules], [rules, provided], [provided, experts], [experts, .]]
+
+>> Trigrams: 
+[[Knowledge, Base, −], [Base, −, stores], [−, stores, -], [stores, -, rules], [-, rules, provided], [rules, provided, experts], [provided, experts, .]]
+
+>> Noun Phrases are: 
+[It, rules, experts]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 24 =============================
+
+Inference Engine − It simulates the human reasoning process by making fuzzy inference on the inputs and IF-THEN rules. 
+
+
+>> Tokens are: 
+[Inference, Engine, −, simulates, human, reasoning, process, making, fuzzy, inference, inputs, -, rules, .] 
+
+>> PoS Tags are: 
+[('Inference', 'PROPN'), ('Engine', 'NOUN'), ('−', 'NOUN'), ('simulates', 'VERB'), ('human', 'ADJ'), ('reasoning', 'NOUN'), ('process', 'NOUN'), ('making', 'VERB'), ('fuzzy', 'ADJ'), ('inference', 'NOUN'), ('inputs', 'NOUN'), ('-', 'PUNCT'), ('rules', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Inference', 'compound'), ('Engine', 'compound'), ('−', 'npadvmod'), ('simulates', 'ROOT'), ('human', 'amod'), ('reasoning', 'compound'), ('process', 'dobj'), ('making', 'pcomp'), ('fuzzy', 'amod'), ('inference', 'dobj'), ('inputs', 'pobj'), ('-', 'punct'), ('rules', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Inference, Engine], [Engine, −], [−, simulates], [simulates, human], [human, reasoning], [reasoning, process], [process, making], [making, fuzzy], [fuzzy, inference], [inference, inputs], [inputs, -], [-, rules], [rules, .]]
+
+>> Trigrams: 
+[[Inference, Engine, −], [Engine, −, simulates], [−, simulates, human], [simulates, human, reasoning], [human, reasoning, process], [reasoning, process, making], [process, making, fuzzy], [making, fuzzy, inference], [fuzzy, inference, inputs], [inference, inputs, -], [inputs, -, rules], [-, rules, .]]
+
+>> Noun Phrases are: 
+[It, the human reasoning process, fuzzy inference, the inputs, IF-THEN rules]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+· Defuzzification Module − It transforms the fuzzy set obtained by the inference engine into a crisp value. 
+
+
+>> Tokens are: 
+[·, Defuzzification, Module, −, transforms, fuzzy, set, obtained, inference, engine, crisp, value, .] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('Defuzzification', 'NOUN'), ('Module', 'PROPN'), ('−', 'PROPN'), ('transforms', 'VERB'), ('fuzzy', 'ADJ'), ('set', 'NOUN'), ('obtained', 'VERB'), ('inference', 'NOUN'), ('engine', 'NOUN'), ('crisp', 'ADJ'), ('value', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('Defuzzification', 'compound'), ('Module', 'compound'), ('−', 'npadvmod'), ('transforms', 'ROOT'), ('fuzzy', 'amod'), ('set', 'dobj'), ('obtained', 'acl'), ('inference', 'compound'), ('engine', 'pobj'), ('crisp', 'amod'), ('value', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[·, Defuzzification], [Defuzzification, Module], [Module, −], [−, transforms], [transforms, fuzzy], [fuzzy, set], [set, obtained], [obtained, inference], [inference, engine], [engine, crisp], [crisp, value], [value, .]]
+
+>> Trigrams: 
+[[·, Defuzzification, Module], [Defuzzification, Module, −], [Module, −, transforms], [−, transforms, fuzzy], [transforms, fuzzy, set], [fuzzy, set, obtained], [set, obtained, inference], [obtained, inference, engine], [inference, engine, crisp], [engine, crisp, value], [crisp, value, .]]
+
+>> Noun Phrases are: 
+[It, the fuzzy set, the inference engine, a crisp value]
+
+>> Named Entities are: 
+[]

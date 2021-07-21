@@ -1,0 +1,2288 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-8 Comparison of Various Algorithms Complexities Let us see the performance of algorithms based on various criteria − 	Criterion 	Breadth First 	Depth First 	Bidirectional 	Uniform Cost 	Interactive Deepening  	Time 	bd 	bm 	bd/2 	bd 	bd  	Space 	bd 	bm 	bd/2 	bd 	bd  	Optimality 	Yes 	No 	Yes 	Yes 	Yes  	Completeness 	Yes 	No 	Yes 	Yes 	Yes   Informed (Heuristic) Search Strategies To solve large problems with large number of possible states, problem-specific knowledge needs to be added to increase the efficiency of search algorithms. 
+
+
+>> Tokens are: 
+ ['AI-8', 'Comparison', 'Various', 'Algorithms', 'Complexities', 'Let', 'us', 'see', 'performance', 'algorithms', 'based', 'various', 'criteria', '−', 'Criterion', 'Breadth', 'First', 'Depth', 'First', 'Bidirectional', 'Uniform', 'Cost', 'Interactive', 'Deepening', 'Time', 'bd', 'bm', 'bd/2', 'bd', 'bd', 'Space', 'bd', 'bm', 'bd/2', 'bd', 'bd', 'Optimality', 'Yes', 'No', 'Yes', 'Yes', 'Yes', 'Completeness', 'Yes', 'No', 'Yes', 'Yes', 'Yes', 'Informed', '(', 'Heuristic', ')', 'Search', 'Strategies', 'To', 'solve', 'large', 'problems', 'large', 'number', 'possible', 'states', ',', 'problem-specific', 'knowledge', 'needs', 'added', 'increase', 'efficiency', 'search', 'algorithms', '.']
+
+>> Bigrams are: 
+ [('AI-8', 'Comparison'), ('Comparison', 'Various'), ('Various', 'Algorithms'), ('Algorithms', 'Complexities'), ('Complexities', 'Let'), ('Let', 'us'), ('us', 'see'), ('see', 'performance'), ('performance', 'algorithms'), ('algorithms', 'based'), ('based', 'various'), ('various', 'criteria'), ('criteria', '−'), ('−', 'Criterion'), ('Criterion', 'Breadth'), ('Breadth', 'First'), ('First', 'Depth'), ('Depth', 'First'), ('First', 'Bidirectional'), ('Bidirectional', 'Uniform'), ('Uniform', 'Cost'), ('Cost', 'Interactive'), ('Interactive', 'Deepening'), ('Deepening', 'Time'), ('Time', 'bd'), ('bd', 'bm'), ('bm', 'bd/2'), ('bd/2', 'bd'), ('bd', 'bd'), ('bd', 'Space'), ('Space', 'bd'), ('bd', 'bm'), ('bm', 'bd/2'), ('bd/2', 'bd'), ('bd', 'bd'), ('bd', 'Optimality'), ('Optimality', 'Yes'), ('Yes', 'No'), ('No', 'Yes'), ('Yes', 'Yes'), ('Yes', 'Yes'), ('Yes', 'Completeness'), ('Completeness', 'Yes'), ('Yes', 'No'), ('No', 'Yes'), ('Yes', 'Yes'), ('Yes', 'Yes'), ('Yes', 'Informed'), ('Informed', '('), ('(', 'Heuristic'), ('Heuristic', ')'), (')', 'Search'), ('Search', 'Strategies'), ('Strategies', 'To'), ('To', 'solve'), ('solve', 'large'), ('large', 'problems'), ('problems', 'large'), ('large', 'number'), ('number', 'possible'), ('possible', 'states'), ('states', ','), (',', 'problem-specific'), ('problem-specific', 'knowledge'), ('knowledge', 'needs'), ('needs', 'added'), ('added', 'increase'), ('increase', 'efficiency'), ('efficiency', 'search'), ('search', 'algorithms'), ('algorithms', '.')]
+
+>> Trigrams are: 
+ [('AI-8', 'Comparison', 'Various'), ('Comparison', 'Various', 'Algorithms'), ('Various', 'Algorithms', 'Complexities'), ('Algorithms', 'Complexities', 'Let'), ('Complexities', 'Let', 'us'), ('Let', 'us', 'see'), ('us', 'see', 'performance'), ('see', 'performance', 'algorithms'), ('performance', 'algorithms', 'based'), ('algorithms', 'based', 'various'), ('based', 'various', 'criteria'), ('various', 'criteria', '−'), ('criteria', '−', 'Criterion'), ('−', 'Criterion', 'Breadth'), ('Criterion', 'Breadth', 'First'), ('Breadth', 'First', 'Depth'), ('First', 'Depth', 'First'), ('Depth', 'First', 'Bidirectional'), ('First', 'Bidirectional', 'Uniform'), ('Bidirectional', 'Uniform', 'Cost'), ('Uniform', 'Cost', 'Interactive'), ('Cost', 'Interactive', 'Deepening'), ('Interactive', 'Deepening', 'Time'), ('Deepening', 'Time', 'bd'), ('Time', 'bd', 'bm'), ('bd', 'bm', 'bd/2'), ('bm', 'bd/2', 'bd'), ('bd/2', 'bd', 'bd'), ('bd', 'bd', 'Space'), ('bd', 'Space', 'bd'), ('Space', 'bd', 'bm'), ('bd', 'bm', 'bd/2'), ('bm', 'bd/2', 'bd'), ('bd/2', 'bd', 'bd'), ('bd', 'bd', 'Optimality'), ('bd', 'Optimality', 'Yes'), ('Optimality', 'Yes', 'No'), ('Yes', 'No', 'Yes'), ('No', 'Yes', 'Yes'), ('Yes', 'Yes', 'Yes'), ('Yes', 'Yes', 'Completeness'), ('Yes', 'Completeness', 'Yes'), ('Completeness', 'Yes', 'No'), ('Yes', 'No', 'Yes'), ('No', 'Yes', 'Yes'), ('Yes', 'Yes', 'Yes'), ('Yes', 'Yes', 'Informed'), ('Yes', 'Informed', '('), ('Informed', '(', 'Heuristic'), ('(', 'Heuristic', ')'), ('Heuristic', ')', 'Search'), (')', 'Search', 'Strategies'), ('Search', 'Strategies', 'To'), ('Strategies', 'To', 'solve'), ('To', 'solve', 'large'), ('solve', 'large', 'problems'), ('large', 'problems', 'large'), ('problems', 'large', 'number'), ('large', 'number', 'possible'), ('number', 'possible', 'states'), ('possible', 'states', ','), ('states', ',', 'problem-specific'), (',', 'problem-specific', 'knowledge'), ('problem-specific', 'knowledge', 'needs'), ('knowledge', 'needs', 'added'), ('needs', 'added', 'increase'), ('added', 'increase', 'efficiency'), ('increase', 'efficiency', 'search'), ('efficiency', 'search', 'algorithms'), ('search', 'algorithms', '.')]
+
+>> POS Tags are: 
+ [('AI-8', 'NNP'), ('Comparison', 'NNP'), ('Various', 'NNP'), ('Algorithms', 'NNP'), ('Complexities', 'NNP'), ('Let', 'NNP'), ('us', 'PRP'), ('see', 'VB'), ('performance', 'NN'), ('algorithms', 'NNS'), ('based', 'VBN'), ('various', 'JJ'), ('criteria', 'NNS'), ('−', 'POS'), ('Criterion', 'NNP'), ('Breadth', 'NNP'), ('First', 'NNP'), ('Depth', 'NNP'), ('First', 'NNP'), ('Bidirectional', 'NNP'), ('Uniform', 'NNP'), ('Cost', 'NNP'), ('Interactive', 'NNP'), ('Deepening', 'NNP'), ('Time', 'NNP'), ('bd', 'VBZ'), ('bm', 'JJ'), ('bd/2', 'NN'), ('bd', 'NN'), ('bd', 'VBD'), ('Space', 'NNP'), ('bd', 'NN'), ('bm', 'NN'), ('bd/2', 'NN'), ('bd', 'NN'), ('bd', 'JJ'), ('Optimality', 'NNP'), ('Yes', 'NNP'), ('No', 'NNP'), ('Yes', 'NNP'), ('Yes', 'NNP'), ('Yes', 'NNP'), ('Completeness', 'NNP'), ('Yes', 'NNP'), ('No', 'NNP'), ('Yes', 'NNP'), ('Yes', 'NNP'), ('Yes', 'NNP'), ('Informed', 'NNP'), ('(', '('), ('Heuristic', 'NNP'), (')', ')'), ('Search', 'NNP'), ('Strategies', 'NNPS'), ('To', 'TO'), ('solve', 'VB'), ('large', 'JJ'), ('problems', 'NNS'), ('large', 'JJ'), ('number', 'NN'), ('possible', 'JJ'), ('states', 'NNS'), (',', ','), ('problem-specific', 'JJ'), ('knowledge', 'NN'), ('needs', 'VBZ'), ('added', 'JJ'), ('increase', 'NN'), ('efficiency', 'NN'), ('search', 'NN'), ('algorithms', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    AI-8/NNP
+    Comparison/NNP
+    Various/NNP
+    Algorithms/NNP
+    Complexities/NNP
+    Let/NNP)
+  us/PRP
+  see/VB
+  (NP performance/NN algorithms/NNS)
+  based/VBN
+  (NP various/JJ criteria/NNS)
+  −/POS
+  (NP
+    Criterion/NNP
+    Breadth/NNP
+    First/NNP
+    Depth/NNP
+    First/NNP
+    Bidirectional/NNP
+    Uniform/NNP
+    Cost/NNP
+    Interactive/NNP
+    Deepening/NNP
+    Time/NNP)
+  bd/VBZ
+  (NP bm/JJ bd/2/NN bd/NN)
+  bd/VBD
+  (NP Space/NNP bd/NN bm/NN bd/2/NN bd/NN)
+  (NP
+    bd/JJ
+    Optimality/NNP
+    Yes/NNP
+    No/NNP
+    Yes/NNP
+    Yes/NNP
+    Yes/NNP
+    Completeness/NNP
+    Yes/NNP
+    No/NNP
+    Yes/NNP
+    Yes/NNP
+    Yes/NNP
+    Informed/NNP)
+  (/(
+  (NP Heuristic/NNP)
+  )/)
+  (NP Search/NNP)
+  Strategies/NNPS
+  To/TO
+  solve/VB
+  (NP large/JJ problems/NNS)
+  (NP large/JJ number/NN)
+  (NP possible/JJ states/NNS)
+  ,/,
+  (NP problem-specific/JJ knowledge/NN)
+  needs/VBZ
+  (NP added/JJ increase/NN efficiency/NN search/NN algorithms/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-8 Comparison Various Algorithms Complexities Let', 'performance algorithms', 'various criteria', 'Criterion Breadth First Depth First Bidirectional Uniform Cost Interactive Deepening Time', 'bm bd/2 bd', 'Space bd bm bd/2 bd', 'bd Optimality Yes No Yes Yes Yes Completeness Yes No Yes Yes Yes Informed', 'Heuristic', 'Search', 'large problems', 'large number', 'possible states', 'problem-specific knowledge', 'added increase efficiency search algorithms']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Comparison Various Algorithms'), ('PERSON', 'Breadth First Depth'), ('PERSON', 'Uniform Cost'), ('GPE', 'Space'), ('ORGANIZATION', 'Optimality'), ('ORGANIZATION', 'Heuristic'), ('ORGANIZATION', 'Search Strategies')] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-8', 'ai-8'), ('Comparison', 'comparison'), ('Various', 'variou'), ('Algorithms', 'algorithm'), ('Complexities', 'complex'), ('Let', 'let'), ('us', 'us'), ('see', 'see'), ('performance', 'perform'), ('algorithms', 'algorithm'), ('based', 'base'), ('various', 'variou'), ('criteria', 'criteria'), ('−', '−'), ('Criterion', 'criterion'), ('Breadth', 'breadth'), ('First', 'first'), ('Depth', 'depth'), ('First', 'first'), ('Bidirectional', 'bidirect'), ('Uniform', 'uniform'), ('Cost', 'cost'), ('Interactive', 'interact'), ('Deepening', 'deepen'), ('Time', 'time'), ('bd', 'bd'), ('bm', 'bm'), ('bd/2', 'bd/2'), ('bd', 'bd'), ('bd', 'bd'), ('Space', 'space'), ('bd', 'bd'), ('bm', 'bm'), ('bd/2', 'bd/2'), ('bd', 'bd'), ('bd', 'bd'), ('Optimality', 'optim'), ('Yes', 'ye'), ('No', 'no'), ('Yes', 'ye'), ('Yes', 'ye'), ('Yes', 'ye'), ('Completeness', 'complet'), ('Yes', 'ye'), ('No', 'no'), ('Yes', 'ye'), ('Yes', 'ye'), ('Yes', 'ye'), ('Informed', 'inform'), ('(', '('), ('Heuristic', 'heurist'), (')', ')'), ('Search', 'search'), ('Strategies', 'strategi'), ('To', 'to'), ('solve', 'solv'), ('large', 'larg'), ('problems', 'problem'), ('large', 'larg'), ('number', 'number'), ('possible', 'possibl'), ('states', 'state'), (',', ','), ('problem-specific', 'problem-specif'), ('knowledge', 'knowledg'), ('needs', 'need'), ('added', 'ad'), ('increase', 'increas'), ('efficiency', 'effici'), ('search', 'search'), ('algorithms', 'algorithm'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-8', 'ai-8'), ('Comparison', 'comparison'), ('Various', 'various'), ('Algorithms', 'algorithm'), ('Complexities', 'complex'), ('Let', 'let'), ('us', 'us'), ('see', 'see'), ('performance', 'perform'), ('algorithms', 'algorithm'), ('based', 'base'), ('various', 'various'), ('criteria', 'criteria'), ('−', '−'), ('Criterion', 'criterion'), ('Breadth', 'breadth'), ('First', 'first'), ('Depth', 'depth'), ('First', 'first'), ('Bidirectional', 'bidirect'), ('Uniform', 'uniform'), ('Cost', 'cost'), ('Interactive', 'interact'), ('Deepening', 'deepen'), ('Time', 'time'), ('bd', 'bd'), ('bm', 'bm'), ('bd/2', 'bd/2'), ('bd', 'bd'), ('bd', 'bd'), ('Space', 'space'), ('bd', 'bd'), ('bm', 'bm'), ('bd/2', 'bd/2'), ('bd', 'bd'), ('bd', 'bd'), ('Optimality', 'optim'), ('Yes', 'yes'), ('No', 'no'), ('Yes', 'yes'), ('Yes', 'yes'), ('Yes', 'yes'), ('Completeness', 'complet'), ('Yes', 'yes'), ('No', 'no'), ('Yes', 'yes'), ('Yes', 'yes'), ('Yes', 'yes'), ('Informed', 'inform'), ('(', '('), ('Heuristic', 'heurist'), (')', ')'), ('Search', 'search'), ('Strategies', 'strategi'), ('To', 'to'), ('solve', 'solv'), ('large', 'larg'), ('problems', 'problem'), ('large', 'larg'), ('number', 'number'), ('possible', 'possibl'), ('states', 'state'), (',', ','), ('problem-specific', 'problem-specif'), ('knowledge', 'knowledg'), ('needs', 'need'), ('added', 'ad'), ('increase', 'increas'), ('efficiency', 'effici'), ('search', 'search'), ('algorithms', 'algorithm'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-8', 'AI-8'), ('Comparison', 'Comparison'), ('Various', 'Various'), ('Algorithms', 'Algorithms'), ('Complexities', 'Complexities'), ('Let', 'Let'), ('us', 'u'), ('see', 'see'), ('performance', 'performance'), ('algorithms', 'algorithm'), ('based', 'based'), ('various', 'various'), ('criteria', 'criterion'), ('−', '−'), ('Criterion', 'Criterion'), ('Breadth', 'Breadth'), ('First', 'First'), ('Depth', 'Depth'), ('First', 'First'), ('Bidirectional', 'Bidirectional'), ('Uniform', 'Uniform'), ('Cost', 'Cost'), ('Interactive', 'Interactive'), ('Deepening', 'Deepening'), ('Time', 'Time'), ('bd', 'bd'), ('bm', 'bm'), ('bd/2', 'bd/2'), ('bd', 'bd'), ('bd', 'bd'), ('Space', 'Space'), ('bd', 'bd'), ('bm', 'bm'), ('bd/2', 'bd/2'), ('bd', 'bd'), ('bd', 'bd'), ('Optimality', 'Optimality'), ('Yes', 'Yes'), ('No', 'No'), ('Yes', 'Yes'), ('Yes', 'Yes'), ('Yes', 'Yes'), ('Completeness', 'Completeness'), ('Yes', 'Yes'), ('No', 'No'), ('Yes', 'Yes'), ('Yes', 'Yes'), ('Yes', 'Yes'), ('Informed', 'Informed'), ('(', '('), ('Heuristic', 'Heuristic'), (')', ')'), ('Search', 'Search'), ('Strategies', 'Strategies'), ('To', 'To'), ('solve', 'solve'), ('large', 'large'), ('problems', 'problem'), ('large', 'large'), ('number', 'number'), ('possible', 'possible'), ('states', 'state'), (',', ','), ('problem-specific', 'problem-specific'), ('knowledge', 'knowledge'), ('needs', 'need'), ('added', 'added'), ('increase', 'increase'), ('efficiency', 'efficiency'), ('search', 'search'), ('algorithms', 'algorithm'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+Heuristic Evaluation Functions They calculate the cost of optimal path between two states. 
+
+
+>> Tokens are: 
+ ['Heuristic', 'Evaluation', 'Functions', 'They', 'calculate', 'cost', 'optimal', 'path', 'two', 'states', '.']
+
+>> Bigrams are: 
+ [('Heuristic', 'Evaluation'), ('Evaluation', 'Functions'), ('Functions', 'They'), ('They', 'calculate'), ('calculate', 'cost'), ('cost', 'optimal'), ('optimal', 'path'), ('path', 'two'), ('two', 'states'), ('states', '.')]
+
+>> Trigrams are: 
+ [('Heuristic', 'Evaluation', 'Functions'), ('Evaluation', 'Functions', 'They'), ('Functions', 'They', 'calculate'), ('They', 'calculate', 'cost'), ('calculate', 'cost', 'optimal'), ('cost', 'optimal', 'path'), ('optimal', 'path', 'two'), ('path', 'two', 'states'), ('two', 'states', '.')]
+
+>> POS Tags are: 
+ [('Heuristic', 'JJ'), ('Evaluation', 'NNP'), ('Functions', 'NNP'), ('They', 'PRP'), ('calculate', 'VBP'), ('cost', 'NN'), ('optimal', 'JJ'), ('path', 'NN'), ('two', 'CD'), ('states', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Heuristic/JJ Evaluation/NNP Functions/NNP)
+  They/PRP
+  calculate/VBP
+  (NP cost/NN)
+  (NP optimal/JJ path/NN)
+  two/CD
+  (NP states/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Heuristic Evaluation Functions', 'cost', 'optimal path', 'states']
+
+>> Named Entities are: 
+ [('PERSON', 'Heuristic'), ('ORGANIZATION', 'Evaluation')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Heuristic', 'heurist'), ('Evaluation', 'evalu'), ('Functions', 'function'), ('They', 'they'), ('calculate', 'calcul'), ('cost', 'cost'), ('optimal', 'optim'), ('path', 'path'), ('two', 'two'), ('states', 'state'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Heuristic', 'heurist'), ('Evaluation', 'evalu'), ('Functions', 'function'), ('They', 'they'), ('calculate', 'calcul'), ('cost', 'cost'), ('optimal', 'optim'), ('path', 'path'), ('two', 'two'), ('states', 'state'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Heuristic', 'Heuristic'), ('Evaluation', 'Evaluation'), ('Functions', 'Functions'), ('They', 'They'), ('calculate', 'calculate'), ('cost', 'cost'), ('optimal', 'optimal'), ('path', 'path'), ('two', 'two'), ('states', 'state'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+A heuristic function for sliding-tiles games is computed by counting number of moves that each tile makes from its goal state and adding these number of moves for all tiles. 
+
+
+>> Tokens are: 
+ ['A', 'heuristic', 'function', 'sliding-tiles', 'games', 'computed', 'counting', 'number', 'moves', 'tile', 'makes', 'goal', 'state', 'adding', 'number', 'moves', 'tiles', '.']
+
+>> Bigrams are: 
+ [('A', 'heuristic'), ('heuristic', 'function'), ('function', 'sliding-tiles'), ('sliding-tiles', 'games'), ('games', 'computed'), ('computed', 'counting'), ('counting', 'number'), ('number', 'moves'), ('moves', 'tile'), ('tile', 'makes'), ('makes', 'goal'), ('goal', 'state'), ('state', 'adding'), ('adding', 'number'), ('number', 'moves'), ('moves', 'tiles'), ('tiles', '.')]
+
+>> Trigrams are: 
+ [('A', 'heuristic', 'function'), ('heuristic', 'function', 'sliding-tiles'), ('function', 'sliding-tiles', 'games'), ('sliding-tiles', 'games', 'computed'), ('games', 'computed', 'counting'), ('computed', 'counting', 'number'), ('counting', 'number', 'moves'), ('number', 'moves', 'tile'), ('moves', 'tile', 'makes'), ('tile', 'makes', 'goal'), ('makes', 'goal', 'state'), ('goal', 'state', 'adding'), ('state', 'adding', 'number'), ('adding', 'number', 'moves'), ('number', 'moves', 'tiles'), ('moves', 'tiles', '.')]
+
+>> POS Tags are: 
+ [('A', 'DT'), ('heuristic', 'JJ'), ('function', 'NN'), ('sliding-tiles', 'NNS'), ('games', 'NNS'), ('computed', 'VBD'), ('counting', 'VBG'), ('number', 'NN'), ('moves', 'NNS'), ('tile', 'JJ'), ('makes', 'VBZ'), ('goal', 'NN'), ('state', 'NN'), ('adding', 'VBG'), ('number', 'NN'), ('moves', 'NNS'), ('tiles', 'NNS'), ('.', '.')]
+
+ (S
+  (NP A/DT heuristic/JJ function/NN sliding-tiles/NNS games/NNS)
+  computed/VBD
+  counting/VBG
+  (NP number/NN moves/NNS)
+  tile/JJ
+  makes/VBZ
+  (NP goal/NN state/NN)
+  adding/VBG
+  (NP number/NN moves/NNS tiles/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A heuristic function sliding-tiles games', 'number moves', 'goal state', 'number moves tiles']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('A', 'a'), ('heuristic', 'heurist'), ('function', 'function'), ('sliding-tiles', 'sliding-til'), ('games', 'game'), ('computed', 'comput'), ('counting', 'count'), ('number', 'number'), ('moves', 'move'), ('tile', 'tile'), ('makes', 'make'), ('goal', 'goal'), ('state', 'state'), ('adding', 'ad'), ('number', 'number'), ('moves', 'move'), ('tiles', 'tile'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('A', 'a'), ('heuristic', 'heurist'), ('function', 'function'), ('sliding-tiles', 'sliding-til'), ('games', 'game'), ('computed', 'comput'), ('counting', 'count'), ('number', 'number'), ('moves', 'move'), ('tile', 'tile'), ('makes', 'make'), ('goal', 'goal'), ('state', 'state'), ('adding', 'ad'), ('number', 'number'), ('moves', 'move'), ('tiles', 'tile'), ('.', '.')]
+
+>> Lemmatization: 
+ [('A', 'A'), ('heuristic', 'heuristic'), ('function', 'function'), ('sliding-tiles', 'sliding-tiles'), ('games', 'game'), ('computed', 'computed'), ('counting', 'counting'), ('number', 'number'), ('moves', 'move'), ('tile', 'tile'), ('makes', 'make'), ('goal', 'goal'), ('state', 'state'), ('adding', 'adding'), ('number', 'number'), ('moves', 'move'), ('tiles', 'tile'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+Pure Heuristic Search It expands nodes in the order of their heuristic values. 
+
+
+>> Tokens are: 
+ ['Pure', 'Heuristic', 'Search', 'It', 'expands', 'nodes', 'order', 'heuristic', 'values', '.']
+
+>> Bigrams are: 
+ [('Pure', 'Heuristic'), ('Heuristic', 'Search'), ('Search', 'It'), ('It', 'expands'), ('expands', 'nodes'), ('nodes', 'order'), ('order', 'heuristic'), ('heuristic', 'values'), ('values', '.')]
+
+>> Trigrams are: 
+ [('Pure', 'Heuristic', 'Search'), ('Heuristic', 'Search', 'It'), ('Search', 'It', 'expands'), ('It', 'expands', 'nodes'), ('expands', 'nodes', 'order'), ('nodes', 'order', 'heuristic'), ('order', 'heuristic', 'values'), ('heuristic', 'values', '.')]
+
+>> POS Tags are: 
+ [('Pure', 'NNP'), ('Heuristic', 'NNP'), ('Search', 'NNP'), ('It', 'PRP'), ('expands', 'VBZ'), ('nodes', 'JJ'), ('order', 'NN'), ('heuristic', 'JJ'), ('values', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Pure/NNP Heuristic/NNP Search/NNP)
+  It/PRP
+  expands/VBZ
+  (NP nodes/JJ order/NN)
+  (NP heuristic/JJ values/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Pure Heuristic Search', 'nodes order', 'heuristic values']
+
+>> Named Entities are: 
+ [('PERSON', 'Pure'), ('PERSON', 'Heuristic')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Pure', 'pure'), ('Heuristic', 'heurist'), ('Search', 'search'), ('It', 'it'), ('expands', 'expand'), ('nodes', 'node'), ('order', 'order'), ('heuristic', 'heurist'), ('values', 'valu'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Pure', 'pure'), ('Heuristic', 'heurist'), ('Search', 'search'), ('It', 'it'), ('expands', 'expand'), ('nodes', 'node'), ('order', 'order'), ('heuristic', 'heurist'), ('values', 'valu'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Pure', 'Pure'), ('Heuristic', 'Heuristic'), ('Search', 'Search'), ('It', 'It'), ('expands', 'expands'), ('nodes', 'node'), ('order', 'order'), ('heuristic', 'heuristic'), ('values', 'value'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+It creates two lists, a closed list for the already expanded nodes and an open list for the created but unexpanded nodes. 
+
+
+>> Tokens are: 
+ ['It', 'creates', 'two', 'lists', ',', 'closed', 'list', 'already', 'expanded', 'nodes', 'open', 'list', 'created', 'unexpanded', 'nodes', '.']
+
+>> Bigrams are: 
+ [('It', 'creates'), ('creates', 'two'), ('two', 'lists'), ('lists', ','), (',', 'closed'), ('closed', 'list'), ('list', 'already'), ('already', 'expanded'), ('expanded', 'nodes'), ('nodes', 'open'), ('open', 'list'), ('list', 'created'), ('created', 'unexpanded'), ('unexpanded', 'nodes'), ('nodes', '.')]
+
+>> Trigrams are: 
+ [('It', 'creates', 'two'), ('creates', 'two', 'lists'), ('two', 'lists', ','), ('lists', ',', 'closed'), (',', 'closed', 'list'), ('closed', 'list', 'already'), ('list', 'already', 'expanded'), ('already', 'expanded', 'nodes'), ('expanded', 'nodes', 'open'), ('nodes', 'open', 'list'), ('open', 'list', 'created'), ('list', 'created', 'unexpanded'), ('created', 'unexpanded', 'nodes'), ('unexpanded', 'nodes', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('creates', 'VBZ'), ('two', 'CD'), ('lists', 'NNS'), (',', ','), ('closed', 'VBD'), ('list', 'NN'), ('already', 'RB'), ('expanded', 'VBD'), ('nodes', 'NNS'), ('open', 'JJ'), ('list', 'NN'), ('created', 'VBD'), ('unexpanded', 'JJ'), ('nodes', 'NNS'), ('.', '.')]
+
+ (S
+  It/PRP
+  creates/VBZ
+  two/CD
+  (NP lists/NNS)
+  ,/,
+  closed/VBD
+  (NP list/NN)
+  already/RB
+  expanded/VBD
+  (NP nodes/NNS)
+  (NP open/JJ list/NN)
+  created/VBD
+  (NP unexpanded/JJ nodes/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['lists', 'list', 'nodes', 'open list', 'unexpanded nodes']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('creates', 'creat'), ('two', 'two'), ('lists', 'list'), (',', ','), ('closed', 'close'), ('list', 'list'), ('already', 'alreadi'), ('expanded', 'expand'), ('nodes', 'node'), ('open', 'open'), ('list', 'list'), ('created', 'creat'), ('unexpanded', 'unexpand'), ('nodes', 'node'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('creates', 'creat'), ('two', 'two'), ('lists', 'list'), (',', ','), ('closed', 'close'), ('list', 'list'), ('already', 'alreadi'), ('expanded', 'expand'), ('nodes', 'node'), ('open', 'open'), ('list', 'list'), ('created', 'creat'), ('unexpanded', 'unexpand'), ('nodes', 'node'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('creates', 'creates'), ('two', 'two'), ('lists', 'list'), (',', ','), ('closed', 'closed'), ('list', 'list'), ('already', 'already'), ('expanded', 'expanded'), ('nodes', 'node'), ('open', 'open'), ('list', 'list'), ('created', 'created'), ('unexpanded', 'unexpanded'), ('nodes', 'node'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+In each iteration, a node with a minimum heuristic value is expanded, all its child nodes are created and placed in the closed list. 
+
+
+>> Tokens are: 
+ ['In', 'iteration', ',', 'node', 'minimum', 'heuristic', 'value', 'expanded', ',', 'child', 'nodes', 'created', 'placed', 'closed', 'list', '.']
+
+>> Bigrams are: 
+ [('In', 'iteration'), ('iteration', ','), (',', 'node'), ('node', 'minimum'), ('minimum', 'heuristic'), ('heuristic', 'value'), ('value', 'expanded'), ('expanded', ','), (',', 'child'), ('child', 'nodes'), ('nodes', 'created'), ('created', 'placed'), ('placed', 'closed'), ('closed', 'list'), ('list', '.')]
+
+>> Trigrams are: 
+ [('In', 'iteration', ','), ('iteration', ',', 'node'), (',', 'node', 'minimum'), ('node', 'minimum', 'heuristic'), ('minimum', 'heuristic', 'value'), ('heuristic', 'value', 'expanded'), ('value', 'expanded', ','), ('expanded', ',', 'child'), (',', 'child', 'nodes'), ('child', 'nodes', 'created'), ('nodes', 'created', 'placed'), ('created', 'placed', 'closed'), ('placed', 'closed', 'list'), ('closed', 'list', '.')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('iteration', 'NN'), (',', ','), ('node', 'JJ'), ('minimum', 'JJ'), ('heuristic', 'JJ'), ('value', 'NN'), ('expanded', 'VBD'), (',', ','), ('child', 'NN'), ('nodes', 'NNS'), ('created', 'VBD'), ('placed', 'VBN'), ('closed', 'JJ'), ('list', 'NN'), ('.', '.')]
+
+ (S
+  In/IN
+  (NP iteration/NN)
+  ,/,
+  (NP node/JJ minimum/JJ heuristic/JJ value/NN)
+  expanded/VBD
+  ,/,
+  (NP child/NN nodes/NNS)
+  created/VBD
+  placed/VBN
+  (NP closed/JJ list/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['iteration', 'node minimum heuristic value', 'child nodes', 'closed list']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('iteration', 'iter'), (',', ','), ('node', 'node'), ('minimum', 'minimum'), ('heuristic', 'heurist'), ('value', 'valu'), ('expanded', 'expand'), (',', ','), ('child', 'child'), ('nodes', 'node'), ('created', 'creat'), ('placed', 'place'), ('closed', 'close'), ('list', 'list'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('iteration', 'iter'), (',', ','), ('node', 'node'), ('minimum', 'minimum'), ('heuristic', 'heurist'), ('value', 'valu'), ('expanded', 'expand'), (',', ','), ('child', 'child'), ('nodes', 'node'), ('created', 'creat'), ('placed', 'place'), ('closed', 'close'), ('list', 'list'), ('.', '.')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('iteration', 'iteration'), (',', ','), ('node', 'node'), ('minimum', 'minimum'), ('heuristic', 'heuristic'), ('value', 'value'), ('expanded', 'expanded'), (',', ','), ('child', 'child'), ('nodes', 'node'), ('created', 'created'), ('placed', 'placed'), ('closed', 'closed'), ('list', 'list'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+Then, the heuristic function is applied to the child nodes and they are placed in the open list according to their heuristic value. 
+
+
+>> Tokens are: 
+ ['Then', ',', 'heuristic', 'function', 'applied', 'child', 'nodes', 'placed', 'open', 'list', 'according', 'heuristic', 'value', '.']
+
+>> Bigrams are: 
+ [('Then', ','), (',', 'heuristic'), ('heuristic', 'function'), ('function', 'applied'), ('applied', 'child'), ('child', 'nodes'), ('nodes', 'placed'), ('placed', 'open'), ('open', 'list'), ('list', 'according'), ('according', 'heuristic'), ('heuristic', 'value'), ('value', '.')]
+
+>> Trigrams are: 
+ [('Then', ',', 'heuristic'), (',', 'heuristic', 'function'), ('heuristic', 'function', 'applied'), ('function', 'applied', 'child'), ('applied', 'child', 'nodes'), ('child', 'nodes', 'placed'), ('nodes', 'placed', 'open'), ('placed', 'open', 'list'), ('open', 'list', 'according'), ('list', 'according', 'heuristic'), ('according', 'heuristic', 'value'), ('heuristic', 'value', '.')]
+
+>> POS Tags are: 
+ [('Then', 'RB'), (',', ','), ('heuristic', 'JJ'), ('function', 'NN'), ('applied', 'VBD'), ('child', 'JJ'), ('nodes', 'NNS'), ('placed', 'VBD'), ('open', 'JJ'), ('list', 'NN'), ('according', 'VBG'), ('heuristic', 'JJ'), ('value', 'NN'), ('.', '.')]
+
+ (S
+  Then/RB
+  ,/,
+  (NP heuristic/JJ function/NN)
+  applied/VBD
+  (NP child/JJ nodes/NNS)
+  placed/VBD
+  (NP open/JJ list/NN)
+  according/VBG
+  (NP heuristic/JJ value/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['heuristic function', 'child nodes', 'open list', 'heuristic value']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Then', 'then'), (',', ','), ('heuristic', 'heurist'), ('function', 'function'), ('applied', 'appli'), ('child', 'child'), ('nodes', 'node'), ('placed', 'place'), ('open', 'open'), ('list', 'list'), ('according', 'accord'), ('heuristic', 'heurist'), ('value', 'valu'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Then', 'then'), (',', ','), ('heuristic', 'heurist'), ('function', 'function'), ('applied', 'appli'), ('child', 'child'), ('nodes', 'node'), ('placed', 'place'), ('open', 'open'), ('list', 'list'), ('according', 'accord'), ('heuristic', 'heurist'), ('value', 'valu'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Then', 'Then'), (',', ','), ('heuristic', 'heuristic'), ('function', 'function'), ('applied', 'applied'), ('child', 'child'), ('nodes', 'node'), ('placed', 'placed'), ('open', 'open'), ('list', 'list'), ('according', 'according'), ('heuristic', 'heuristic'), ('value', 'value'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+The shorter paths are saved and the longer ones are disposed. 
+
+
+>> Tokens are: 
+ ['The', 'shorter', 'paths', 'saved', 'longer', 'ones', 'disposed', '.']
+
+>> Bigrams are: 
+ [('The', 'shorter'), ('shorter', 'paths'), ('paths', 'saved'), ('saved', 'longer'), ('longer', 'ones'), ('ones', 'disposed'), ('disposed', '.')]
+
+>> Trigrams are: 
+ [('The', 'shorter', 'paths'), ('shorter', 'paths', 'saved'), ('paths', 'saved', 'longer'), ('saved', 'longer', 'ones'), ('longer', 'ones', 'disposed'), ('ones', 'disposed', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('shorter', 'JJR'), ('paths', 'NNS'), ('saved', 'VBD'), ('longer', 'JJR'), ('ones', 'NNS'), ('disposed', 'VBD'), ('.', '.')]
+
+ (S
+  The/DT
+  shorter/JJR
+  (NP paths/NNS)
+  saved/VBD
+  longer/JJR
+  (NP ones/NNS)
+  disposed/VBD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['paths', 'ones']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('shorter', 'shorter'), ('paths', 'path'), ('saved', 'save'), ('longer', 'longer'), ('ones', 'one'), ('disposed', 'dispos'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('shorter', 'shorter'), ('paths', 'path'), ('saved', 'save'), ('longer', 'longer'), ('ones', 'one'), ('disposed', 'dispos'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('shorter', 'shorter'), ('paths', 'path'), ('saved', 'saved'), ('longer', 'longer'), ('ones', 'one'), ('disposed', 'disposed'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+A * Search It is best-known form of Best First search. 
+
+
+>> Tokens are: 
+ ['A', '*', 'Search', 'It', 'best-known', 'form', 'Best', 'First', 'search', '.']
+
+>> Bigrams are: 
+ [('A', '*'), ('*', 'Search'), ('Search', 'It'), ('It', 'best-known'), ('best-known', 'form'), ('form', 'Best'), ('Best', 'First'), ('First', 'search'), ('search', '.')]
+
+>> Trigrams are: 
+ [('A', '*', 'Search'), ('*', 'Search', 'It'), ('Search', 'It', 'best-known'), ('It', 'best-known', 'form'), ('best-known', 'form', 'Best'), ('form', 'Best', 'First'), ('Best', 'First', 'search'), ('First', 'search', '.')]
+
+>> POS Tags are: 
+ [('A', 'DT'), ('*', 'JJ'), ('Search', 'NN'), ('It', 'PRP'), ('best-known', 'JJ'), ('form', 'NN'), ('Best', 'NNP'), ('First', 'NNP'), ('search', 'NN'), ('.', '.')]
+
+ (S
+  (NP A/DT */JJ Search/NN)
+  It/PRP
+  (NP best-known/JJ form/NN Best/NNP First/NNP search/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A * Search', 'best-known form Best First search']
+
+>> Named Entities are: 
+ [('PERSON', 'Best First')] 
+
+>> Stemming using Porter Stemmer: 
+ [('A', 'a'), ('*', '*'), ('Search', 'search'), ('It', 'it'), ('best-known', 'best-known'), ('form', 'form'), ('Best', 'best'), ('First', 'first'), ('search', 'search'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('A', 'a'), ('*', '*'), ('Search', 'search'), ('It', 'it'), ('best-known', 'best-known'), ('form', 'form'), ('Best', 'best'), ('First', 'first'), ('search', 'search'), ('.', '.')]
+
+>> Lemmatization: 
+ [('A', 'A'), ('*', '*'), ('Search', 'Search'), ('It', 'It'), ('best-known', 'best-known'), ('form', 'form'), ('Best', 'Best'), ('First', 'First'), ('search', 'search'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+It avoids expanding paths that are already expensive, but expands most promising paths first. 
+
+
+>> Tokens are: 
+ ['It', 'avoids', 'expanding', 'paths', 'already', 'expensive', ',', 'expands', 'promising', 'paths', 'first', '.']
+
+>> Bigrams are: 
+ [('It', 'avoids'), ('avoids', 'expanding'), ('expanding', 'paths'), ('paths', 'already'), ('already', 'expensive'), ('expensive', ','), (',', 'expands'), ('expands', 'promising'), ('promising', 'paths'), ('paths', 'first'), ('first', '.')]
+
+>> Trigrams are: 
+ [('It', 'avoids', 'expanding'), ('avoids', 'expanding', 'paths'), ('expanding', 'paths', 'already'), ('paths', 'already', 'expensive'), ('already', 'expensive', ','), ('expensive', ',', 'expands'), (',', 'expands', 'promising'), ('expands', 'promising', 'paths'), ('promising', 'paths', 'first'), ('paths', 'first', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('avoids', 'VBZ'), ('expanding', 'VBG'), ('paths', 'NNS'), ('already', 'RB'), ('expensive', 'JJ'), (',', ','), ('expands', 'VBZ'), ('promising', 'VBG'), ('paths', 'NNS'), ('first', 'RB'), ('.', '.')]
+
+ (S
+  It/PRP
+  avoids/VBZ
+  expanding/VBG
+  (NP paths/NNS)
+  already/RB
+  expensive/JJ
+  ,/,
+  expands/VBZ
+  promising/VBG
+  (NP paths/NNS)
+  first/RB
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['paths', 'paths']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('avoids', 'avoid'), ('expanding', 'expand'), ('paths', 'path'), ('already', 'alreadi'), ('expensive', 'expens'), (',', ','), ('expands', 'expand'), ('promising', 'promis'), ('paths', 'path'), ('first', 'first'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('avoids', 'avoid'), ('expanding', 'expand'), ('paths', 'path'), ('already', 'alreadi'), ('expensive', 'expens'), (',', ','), ('expands', 'expand'), ('promising', 'promis'), ('paths', 'path'), ('first', 'first'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('avoids', 'avoids'), ('expanding', 'expanding'), ('paths', 'path'), ('already', 'already'), ('expensive', 'expensive'), (',', ','), ('expands', 'expands'), ('promising', 'promising'), ('paths', 'path'), ('first', 'first'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+f(n) = g(n) + h(n), where · g(n) the cost (so far) to reach the node · h(n) estimated cost to get from the node to the goal · f(n) estimated total cost of path through n to goal. 
+
+
+>> Tokens are: 
+ ['f', '(', 'n', ')', '=', 'g', '(', 'n', ')', '+', 'h', '(', 'n', ')', ',', '·', 'g', '(', 'n', ')', 'cost', '(', 'far', ')', 'reach', 'node', '·', 'h', '(', 'n', ')', 'estimated', 'cost', 'get', 'node', 'goal', '·', 'f', '(', 'n', ')', 'estimated', 'total', 'cost', 'path', 'n', 'goal', '.']
+
+>> Bigrams are: 
+ [('f', '('), ('(', 'n'), ('n', ')'), (')', '='), ('=', 'g'), ('g', '('), ('(', 'n'), ('n', ')'), (')', '+'), ('+', 'h'), ('h', '('), ('(', 'n'), ('n', ')'), (')', ','), (',', '·'), ('·', 'g'), ('g', '('), ('(', 'n'), ('n', ')'), (')', 'cost'), ('cost', '('), ('(', 'far'), ('far', ')'), (')', 'reach'), ('reach', 'node'), ('node', '·'), ('·', 'h'), ('h', '('), ('(', 'n'), ('n', ')'), (')', 'estimated'), ('estimated', 'cost'), ('cost', 'get'), ('get', 'node'), ('node', 'goal'), ('goal', '·'), ('·', 'f'), ('f', '('), ('(', 'n'), ('n', ')'), (')', 'estimated'), ('estimated', 'total'), ('total', 'cost'), ('cost', 'path'), ('path', 'n'), ('n', 'goal'), ('goal', '.')]
+
+>> Trigrams are: 
+ [('f', '(', 'n'), ('(', 'n', ')'), ('n', ')', '='), (')', '=', 'g'), ('=', 'g', '('), ('g', '(', 'n'), ('(', 'n', ')'), ('n', ')', '+'), (')', '+', 'h'), ('+', 'h', '('), ('h', '(', 'n'), ('(', 'n', ')'), ('n', ')', ','), (')', ',', '·'), (',', '·', 'g'), ('·', 'g', '('), ('g', '(', 'n'), ('(', 'n', ')'), ('n', ')', 'cost'), (')', 'cost', '('), ('cost', '(', 'far'), ('(', 'far', ')'), ('far', ')', 'reach'), (')', 'reach', 'node'), ('reach', 'node', '·'), ('node', '·', 'h'), ('·', 'h', '('), ('h', '(', 'n'), ('(', 'n', ')'), ('n', ')', 'estimated'), (')', 'estimated', 'cost'), ('estimated', 'cost', 'get'), ('cost', 'get', 'node'), ('get', 'node', 'goal'), ('node', 'goal', '·'), ('goal', '·', 'f'), ('·', 'f', '('), ('f', '(', 'n'), ('(', 'n', ')'), ('n', ')', 'estimated'), (')', 'estimated', 'total'), ('estimated', 'total', 'cost'), ('total', 'cost', 'path'), ('cost', 'path', 'n'), ('path', 'n', 'goal'), ('n', 'goal', '.')]
+
+>> POS Tags are: 
+ [('f', 'NN'), ('(', '('), ('n', 'JJ'), (')', ')'), ('=', 'FW'), ('g', 'NN'), ('(', '('), ('n', 'JJ'), (')', ')'), ('+', 'NN'), ('h', 'NN'), ('(', '('), ('n', 'JJ'), (')', ')'), (',', ','), ('·', 'JJ'), ('g', 'NN'), ('(', '('), ('n', 'JJ'), (')', ')'), ('cost', 'NN'), ('(', '('), ('far', 'RB'), (')', ')'), ('reach', 'VBP'), ('node', 'JJ'), ('·', 'NN'), ('h', 'NN'), ('(', '('), ('n', 'JJ'), (')', ')'), ('estimated', 'VBN'), ('cost', 'NN'), ('get', 'NN'), ('node', 'JJ'), ('goal', 'NN'), ('·', 'NNP'), ('f', 'NN'), ('(', '('), ('n', 'JJ'), (')', ')'), ('estimated', 'VBN'), ('total', 'JJ'), ('cost', 'NN'), ('path', 'NN'), ('n', 'JJ'), ('goal', 'NN'), ('.', '.')]
+
+ (S
+  (NP f/NN)
+  (/(
+  n/JJ
+  )/)
+  =/FW
+  (NP g/NN)
+  (/(
+  n/JJ
+  )/)
+  (NP +/NN h/NN)
+  (/(
+  n/JJ
+  )/)
+  ,/,
+  (NP ·/JJ g/NN)
+  (/(
+  n/JJ
+  )/)
+  (NP cost/NN)
+  (/(
+  far/RB
+  )/)
+  reach/VBP
+  (NP node/JJ ·/NN h/NN)
+  (/(
+  n/JJ
+  )/)
+  estimated/VBN
+  (NP cost/NN get/NN)
+  (NP node/JJ goal/NN ·/NNP f/NN)
+  (/(
+  n/JJ
+  )/)
+  estimated/VBN
+  (NP total/JJ cost/NN path/NN)
+  (NP n/JJ goal/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['f', 'g', '+ h', '· g', 'cost', 'node · h', 'cost get', 'node goal · f', 'total cost path', 'n goal']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('=', '='), ('g', 'g'), ('(', '('), ('n', 'n'), (')', ')'), ('+', '+'), ('h', 'h'), ('(', '('), ('n', 'n'), (')', ')'), (',', ','), ('·', '·'), ('g', 'g'), ('(', '('), ('n', 'n'), (')', ')'), ('cost', 'cost'), ('(', '('), ('far', 'far'), (')', ')'), ('reach', 'reach'), ('node', 'node'), ('·', '·'), ('h', 'h'), ('(', '('), ('n', 'n'), (')', ')'), ('estimated', 'estim'), ('cost', 'cost'), ('get', 'get'), ('node', 'node'), ('goal', 'goal'), ('·', '·'), ('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('estimated', 'estim'), ('total', 'total'), ('cost', 'cost'), ('path', 'path'), ('n', 'n'), ('goal', 'goal'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('=', '='), ('g', 'g'), ('(', '('), ('n', 'n'), (')', ')'), ('+', '+'), ('h', 'h'), ('(', '('), ('n', 'n'), (')', ')'), (',', ','), ('·', '·'), ('g', 'g'), ('(', '('), ('n', 'n'), (')', ')'), ('cost', 'cost'), ('(', '('), ('far', 'far'), (')', ')'), ('reach', 'reach'), ('node', 'node'), ('·', '·'), ('h', 'h'), ('(', '('), ('n', 'n'), (')', ')'), ('estimated', 'estim'), ('cost', 'cost'), ('get', 'get'), ('node', 'node'), ('goal', 'goal'), ('·', '·'), ('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('estimated', 'estim'), ('total', 'total'), ('cost', 'cost'), ('path', 'path'), ('n', 'n'), ('goal', 'goal'), ('.', '.')]
+
+>> Lemmatization: 
+ [('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('=', '='), ('g', 'g'), ('(', '('), ('n', 'n'), (')', ')'), ('+', '+'), ('h', 'h'), ('(', '('), ('n', 'n'), (')', ')'), (',', ','), ('·', '·'), ('g', 'g'), ('(', '('), ('n', 'n'), (')', ')'), ('cost', 'cost'), ('(', '('), ('far', 'far'), (')', ')'), ('reach', 'reach'), ('node', 'node'), ('·', '·'), ('h', 'h'), ('(', '('), ('n', 'n'), (')', ')'), ('estimated', 'estimated'), ('cost', 'cost'), ('get', 'get'), ('node', 'node'), ('goal', 'goal'), ('·', '·'), ('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('estimated', 'estimated'), ('total', 'total'), ('cost', 'cost'), ('path', 'path'), ('n', 'n'), ('goal', 'goal'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+It is implemented using priority queue by increasing f(n). 
+
+
+>> Tokens are: 
+ ['It', 'implemented', 'using', 'priority', 'queue', 'increasing', 'f', '(', 'n', ')', '.']
+
+>> Bigrams are: 
+ [('It', 'implemented'), ('implemented', 'using'), ('using', 'priority'), ('priority', 'queue'), ('queue', 'increasing'), ('increasing', 'f'), ('f', '('), ('(', 'n'), ('n', ')'), (')', '.')]
+
+>> Trigrams are: 
+ [('It', 'implemented', 'using'), ('implemented', 'using', 'priority'), ('using', 'priority', 'queue'), ('priority', 'queue', 'increasing'), ('queue', 'increasing', 'f'), ('increasing', 'f', '('), ('f', '(', 'n'), ('(', 'n', ')'), ('n', ')', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('implemented', 'VBD'), ('using', 'VBG'), ('priority', 'NN'), ('queue', 'NN'), ('increasing', 'VBG'), ('f', 'NN'), ('(', '('), ('n', 'JJ'), (')', ')'), ('.', '.')]
+
+ (S
+  It/PRP
+  implemented/VBD
+  using/VBG
+  (NP priority/NN queue/NN)
+  increasing/VBG
+  (NP f/NN)
+  (/(
+  n/JJ
+  )/)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['priority queue', 'f']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('implemented', 'implement'), ('using', 'use'), ('priority', 'prioriti'), ('queue', 'queue'), ('increasing', 'increas'), ('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('implemented', 'implement'), ('using', 'use'), ('priority', 'prioriti'), ('queue', 'queue'), ('increasing', 'increas'), ('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('implemented', 'implemented'), ('using', 'using'), ('priority', 'priority'), ('queue', 'queue'), ('increasing', 'increasing'), ('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+Greedy Best First Search It expands the node that is estimated to be closest to goal. 
+
+
+>> Tokens are: 
+ ['Greedy', 'Best', 'First', 'Search', 'It', 'expands', 'node', 'estimated', 'closest', 'goal', '.']
+
+>> Bigrams are: 
+ [('Greedy', 'Best'), ('Best', 'First'), ('First', 'Search'), ('Search', 'It'), ('It', 'expands'), ('expands', 'node'), ('node', 'estimated'), ('estimated', 'closest'), ('closest', 'goal'), ('goal', '.')]
+
+>> Trigrams are: 
+ [('Greedy', 'Best', 'First'), ('Best', 'First', 'Search'), ('First', 'Search', 'It'), ('Search', 'It', 'expands'), ('It', 'expands', 'node'), ('expands', 'node', 'estimated'), ('node', 'estimated', 'closest'), ('estimated', 'closest', 'goal'), ('closest', 'goal', '.')]
+
+>> POS Tags are: 
+ [('Greedy', 'NNP'), ('Best', 'NNP'), ('First', 'NNP'), ('Search', 'NNP'), ('It', 'PRP'), ('expands', 'VBZ'), ('node', 'RB'), ('estimated', 'VBN'), ('closest', 'JJS'), ('goal', 'NN'), ('.', '.')]
+
+ (S
+  (NP Greedy/NNP Best/NNP First/NNP Search/NNP)
+  It/PRP
+  expands/VBZ
+  node/RB
+  estimated/VBN
+  closest/JJS
+  (NP goal/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Greedy Best First Search', 'goal']
+
+>> Named Entities are: 
+ [('GPE', 'Greedy'), ('ORGANIZATION', 'Best')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Greedy', 'greedi'), ('Best', 'best'), ('First', 'first'), ('Search', 'search'), ('It', 'it'), ('expands', 'expand'), ('node', 'node'), ('estimated', 'estim'), ('closest', 'closest'), ('goal', 'goal'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Greedy', 'greedi'), ('Best', 'best'), ('First', 'first'), ('Search', 'search'), ('It', 'it'), ('expands', 'expand'), ('node', 'node'), ('estimated', 'estim'), ('closest', 'closest'), ('goal', 'goal'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Greedy', 'Greedy'), ('Best', 'Best'), ('First', 'First'), ('Search', 'Search'), ('It', 'It'), ('expands', 'expands'), ('node', 'node'), ('estimated', 'estimated'), ('closest', 'closest'), ('goal', 'goal'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+It expands nodes based on f(n) = h(n). 
+
+
+>> Tokens are: 
+ ['It', 'expands', 'nodes', 'based', 'f', '(', 'n', ')', '=', 'h', '(', 'n', ')', '.']
+
+>> Bigrams are: 
+ [('It', 'expands'), ('expands', 'nodes'), ('nodes', 'based'), ('based', 'f'), ('f', '('), ('(', 'n'), ('n', ')'), (')', '='), ('=', 'h'), ('h', '('), ('(', 'n'), ('n', ')'), (')', '.')]
+
+>> Trigrams are: 
+ [('It', 'expands', 'nodes'), ('expands', 'nodes', 'based'), ('nodes', 'based', 'f'), ('based', 'f', '('), ('f', '(', 'n'), ('(', 'n', ')'), ('n', ')', '='), (')', '=', 'h'), ('=', 'h', '('), ('h', '(', 'n'), ('(', 'n', ')'), ('n', ')', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('expands', 'VBZ'), ('nodes', 'NNS'), ('based', 'VBN'), ('f', 'NN'), ('(', '('), ('n', 'JJ'), (')', ')'), ('=', 'NN'), ('h', 'NN'), ('(', '('), ('n', 'JJ'), (')', ')'), ('.', '.')]
+
+ (S
+  It/PRP
+  expands/VBZ
+  (NP nodes/NNS)
+  based/VBN
+  (NP f/NN)
+  (/(
+  n/JJ
+  )/)
+  (NP =/NN h/NN)
+  (/(
+  n/JJ
+  )/)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['nodes', 'f', '= h']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('expands', 'expand'), ('nodes', 'node'), ('based', 'base'), ('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('=', '='), ('h', 'h'), ('(', '('), ('n', 'n'), (')', ')'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('expands', 'expand'), ('nodes', 'node'), ('based', 'base'), ('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('=', '='), ('h', 'h'), ('(', '('), ('n', 'n'), (')', ')'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('expands', 'expands'), ('nodes', 'node'), ('based', 'based'), ('f', 'f'), ('(', '('), ('n', 'n'), (')', ')'), ('=', '='), ('h', 'h'), ('(', '('), ('n', 'n'), (')', ')'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+It is implemented using priority queue. 
+
+
+>> Tokens are: 
+ ['It', 'implemented', 'using', 'priority', 'queue', '.']
+
+>> Bigrams are: 
+ [('It', 'implemented'), ('implemented', 'using'), ('using', 'priority'), ('priority', 'queue'), ('queue', '.')]
+
+>> Trigrams are: 
+ [('It', 'implemented', 'using'), ('implemented', 'using', 'priority'), ('using', 'priority', 'queue'), ('priority', 'queue', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('implemented', 'VBD'), ('using', 'VBG'), ('priority', 'NN'), ('queue', 'NN'), ('.', '.')]
+
+ (S It/PRP implemented/VBD using/VBG (NP priority/NN queue/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['priority queue']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('implemented', 'implement'), ('using', 'use'), ('priority', 'prioriti'), ('queue', 'queue'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('implemented', 'implement'), ('using', 'use'), ('priority', 'prioriti'), ('queue', 'queue'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('implemented', 'implemented'), ('using', 'using'), ('priority', 'priority'), ('queue', 'queue'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+Disadvantage − It can get stuck in loops. 
+
+
+>> Tokens are: 
+ ['Disadvantage', '−', 'It', 'get', 'stuck', 'loops', '.']
+
+>> Bigrams are: 
+ [('Disadvantage', '−'), ('−', 'It'), ('It', 'get'), ('get', 'stuck'), ('stuck', 'loops'), ('loops', '.')]
+
+>> Trigrams are: 
+ [('Disadvantage', '−', 'It'), ('−', 'It', 'get'), ('It', 'get', 'stuck'), ('get', 'stuck', 'loops'), ('stuck', 'loops', '.')]
+
+>> POS Tags are: 
+ [('Disadvantage', 'NN'), ('−', 'VBD'), ('It', 'PRP'), ('get', 'VB'), ('stuck', 'JJ'), ('loops', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Disadvantage/NN)
+  −/VBD
+  It/PRP
+  get/VB
+  (NP stuck/JJ loops/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Disadvantage', 'stuck loops']
+
+>> Named Entities are: 
+ [('GPE', 'Disadvantage')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Disadvantage', 'disadvantag'), ('−', '−'), ('It', 'it'), ('get', 'get'), ('stuck', 'stuck'), ('loops', 'loop'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Disadvantage', 'disadvantag'), ('−', '−'), ('It', 'it'), ('get', 'get'), ('stuck', 'stuck'), ('loops', 'loop'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Disadvantage', 'Disadvantage'), ('−', '−'), ('It', 'It'), ('get', 'get'), ('stuck', 'stuck'), ('loops', 'loop'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+It is not optimal. 
+
+
+>> Tokens are: 
+ ['It', 'optimal', '.']
+
+>> Bigrams are: 
+ [('It', 'optimal'), ('optimal', '.')]
+
+>> Trigrams are: 
+ [('It', 'optimal', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('optimal', 'PRP'), ('.', '.')]
+
+ (S It/PRP optimal/PRP ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('optimal', 'optim'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('optimal', 'optim'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('optimal', 'optimal'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+Local Search Algorithms They start from a prospective solution and then move to a neighboring solution. 
+
+
+>> Tokens are: 
+ ['Local', 'Search', 'Algorithms', 'They', 'start', 'prospective', 'solution', 'move', 'neighboring', 'solution', '.']
+
+>> Bigrams are: 
+ [('Local', 'Search'), ('Search', 'Algorithms'), ('Algorithms', 'They'), ('They', 'start'), ('start', 'prospective'), ('prospective', 'solution'), ('solution', 'move'), ('move', 'neighboring'), ('neighboring', 'solution'), ('solution', '.')]
+
+>> Trigrams are: 
+ [('Local', 'Search', 'Algorithms'), ('Search', 'Algorithms', 'They'), ('Algorithms', 'They', 'start'), ('They', 'start', 'prospective'), ('start', 'prospective', 'solution'), ('prospective', 'solution', 'move'), ('solution', 'move', 'neighboring'), ('move', 'neighboring', 'solution'), ('neighboring', 'solution', '.')]
+
+>> POS Tags are: 
+ [('Local', 'JJ'), ('Search', 'NNP'), ('Algorithms', 'NNP'), ('They', 'PRP'), ('start', 'VBP'), ('prospective', 'JJ'), ('solution', 'NN'), ('move', 'NN'), ('neighboring', 'VBG'), ('solution', 'NN'), ('.', '.')]
+
+ (S
+  (NP Local/JJ Search/NNP Algorithms/NNP)
+  They/PRP
+  start/VBP
+  (NP prospective/JJ solution/NN move/NN)
+  neighboring/VBG
+  (NP solution/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Local Search Algorithms', 'prospective solution move', 'solution']
+
+>> Named Entities are: 
+ [('PERSON', 'Local'), ('ORGANIZATION', 'Search')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Local', 'local'), ('Search', 'search'), ('Algorithms', 'algorithm'), ('They', 'they'), ('start', 'start'), ('prospective', 'prospect'), ('solution', 'solut'), ('move', 'move'), ('neighboring', 'neighbor'), ('solution', 'solut'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Local', 'local'), ('Search', 'search'), ('Algorithms', 'algorithm'), ('They', 'they'), ('start', 'start'), ('prospective', 'prospect'), ('solution', 'solut'), ('move', 'move'), ('neighboring', 'neighbor'), ('solution', 'solut'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Local', 'Local'), ('Search', 'Search'), ('Algorithms', 'Algorithms'), ('They', 'They'), ('start', 'start'), ('prospective', 'prospective'), ('solution', 'solution'), ('move', 'move'), ('neighboring', 'neighboring'), ('solution', 'solution'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+They can return a valid solution even if it is interrupted at any time before they end. 
+
+
+>> Tokens are: 
+ ['They', 'return', 'valid', 'solution', 'even', 'interrupted', 'time', 'end', '.']
+
+>> Bigrams are: 
+ [('They', 'return'), ('return', 'valid'), ('valid', 'solution'), ('solution', 'even'), ('even', 'interrupted'), ('interrupted', 'time'), ('time', 'end'), ('end', '.')]
+
+>> Trigrams are: 
+ [('They', 'return', 'valid'), ('return', 'valid', 'solution'), ('valid', 'solution', 'even'), ('solution', 'even', 'interrupted'), ('even', 'interrupted', 'time'), ('interrupted', 'time', 'end'), ('time', 'end', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('return', 'VBP'), ('valid', 'JJ'), ('solution', 'NN'), ('even', 'RB'), ('interrupted', 'VBD'), ('time', 'NN'), ('end', 'NN'), ('.', '.')]
+
+ (S
+  They/PRP
+  return/VBP
+  (NP valid/JJ solution/NN)
+  even/RB
+  interrupted/VBD
+  (NP time/NN end/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['valid solution', 'time end']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('return', 'return'), ('valid', 'valid'), ('solution', 'solut'), ('even', 'even'), ('interrupted', 'interrupt'), ('time', 'time'), ('end', 'end'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('return', 'return'), ('valid', 'valid'), ('solution', 'solut'), ('even', 'even'), ('interrupted', 'interrupt'), ('time', 'time'), ('end', 'end'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('return', 'return'), ('valid', 'valid'), ('solution', 'solution'), ('even', 'even'), ('interrupted', 'interrupted'), ('time', 'time'), ('end', 'end'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+Hill-Climbing Search It is an iterative algorithm that starts with an arbitrary solution to a problem and attempts to find a better solution by changing a single element of the solution incrementally. 
+
+
+>> Tokens are: 
+ ['Hill-Climbing', 'Search', 'It', 'iterative', 'algorithm', 'starts', 'arbitrary', 'solution', 'problem', 'attempts', 'find', 'better', 'solution', 'changing', 'single', 'element', 'solution', 'incrementally', '.']
+
+>> Bigrams are: 
+ [('Hill-Climbing', 'Search'), ('Search', 'It'), ('It', 'iterative'), ('iterative', 'algorithm'), ('algorithm', 'starts'), ('starts', 'arbitrary'), ('arbitrary', 'solution'), ('solution', 'problem'), ('problem', 'attempts'), ('attempts', 'find'), ('find', 'better'), ('better', 'solution'), ('solution', 'changing'), ('changing', 'single'), ('single', 'element'), ('element', 'solution'), ('solution', 'incrementally'), ('incrementally', '.')]
+
+>> Trigrams are: 
+ [('Hill-Climbing', 'Search', 'It'), ('Search', 'It', 'iterative'), ('It', 'iterative', 'algorithm'), ('iterative', 'algorithm', 'starts'), ('algorithm', 'starts', 'arbitrary'), ('starts', 'arbitrary', 'solution'), ('arbitrary', 'solution', 'problem'), ('solution', 'problem', 'attempts'), ('problem', 'attempts', 'find'), ('attempts', 'find', 'better'), ('find', 'better', 'solution'), ('better', 'solution', 'changing'), ('solution', 'changing', 'single'), ('changing', 'single', 'element'), ('single', 'element', 'solution'), ('element', 'solution', 'incrementally'), ('solution', 'incrementally', '.')]
+
+>> POS Tags are: 
+ [('Hill-Climbing', 'JJ'), ('Search', 'NNP'), ('It', 'PRP'), ('iterative', 'JJ'), ('algorithm', 'NN'), ('starts', 'VBZ'), ('arbitrary', 'JJ'), ('solution', 'NN'), ('problem', 'NN'), ('attempts', 'NNS'), ('find', 'VBP'), ('better', 'JJ'), ('solution', 'NN'), ('changing', 'VBG'), ('single', 'JJ'), ('element', 'JJ'), ('solution', 'NN'), ('incrementally', 'RB'), ('.', '.')]
+
+ (S
+  (NP Hill-Climbing/JJ Search/NNP)
+  It/PRP
+  (NP iterative/JJ algorithm/NN)
+  starts/VBZ
+  (NP arbitrary/JJ solution/NN problem/NN attempts/NNS)
+  find/VBP
+  (NP better/JJ solution/NN)
+  changing/VBG
+  (NP single/JJ element/JJ solution/NN)
+  incrementally/RB
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Hill-Climbing Search', 'iterative algorithm', 'arbitrary solution problem attempts', 'better solution', 'single element solution']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Hill-Climbing', 'hill-climb'), ('Search', 'search'), ('It', 'it'), ('iterative', 'iter'), ('algorithm', 'algorithm'), ('starts', 'start'), ('arbitrary', 'arbitrari'), ('solution', 'solut'), ('problem', 'problem'), ('attempts', 'attempt'), ('find', 'find'), ('better', 'better'), ('solution', 'solut'), ('changing', 'chang'), ('single', 'singl'), ('element', 'element'), ('solution', 'solut'), ('incrementally', 'increment'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Hill-Climbing', 'hill-climb'), ('Search', 'search'), ('It', 'it'), ('iterative', 'iter'), ('algorithm', 'algorithm'), ('starts', 'start'), ('arbitrary', 'arbitrari'), ('solution', 'solut'), ('problem', 'problem'), ('attempts', 'attempt'), ('find', 'find'), ('better', 'better'), ('solution', 'solut'), ('changing', 'chang'), ('single', 'singl'), ('element', 'element'), ('solution', 'solut'), ('incrementally', 'increment'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Hill-Climbing', 'Hill-Climbing'), ('Search', 'Search'), ('It', 'It'), ('iterative', 'iterative'), ('algorithm', 'algorithm'), ('starts', 'start'), ('arbitrary', 'arbitrary'), ('solution', 'solution'), ('problem', 'problem'), ('attempts', 'attempt'), ('find', 'find'), ('better', 'better'), ('solution', 'solution'), ('changing', 'changing'), ('single', 'single'), ('element', 'element'), ('solution', 'solution'), ('incrementally', 'incrementally'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+If the change produces a better solution, an incremental change is taken as a new solution. 
+
+
+>> Tokens are: 
+ ['If', 'change', 'produces', 'better', 'solution', ',', 'incremental', 'change', 'taken', 'new', 'solution', '.']
+
+>> Bigrams are: 
+ [('If', 'change'), ('change', 'produces'), ('produces', 'better'), ('better', 'solution'), ('solution', ','), (',', 'incremental'), ('incremental', 'change'), ('change', 'taken'), ('taken', 'new'), ('new', 'solution'), ('solution', '.')]
+
+>> Trigrams are: 
+ [('If', 'change', 'produces'), ('change', 'produces', 'better'), ('produces', 'better', 'solution'), ('better', 'solution', ','), ('solution', ',', 'incremental'), (',', 'incremental', 'change'), ('incremental', 'change', 'taken'), ('change', 'taken', 'new'), ('taken', 'new', 'solution'), ('new', 'solution', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('change', 'NN'), ('produces', 'VBZ'), ('better', 'JJR'), ('solution', 'NN'), (',', ','), ('incremental', 'JJ'), ('change', 'NN'), ('taken', 'VBN'), ('new', 'JJ'), ('solution', 'NN'), ('.', '.')]
+
+ (S
+  If/IN
+  (NP change/NN)
+  produces/VBZ
+  better/JJR
+  (NP solution/NN)
+  ,/,
+  (NP incremental/JJ change/NN)
+  taken/VBN
+  (NP new/JJ solution/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['change', 'solution', 'incremental change', 'new solution']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('change', 'chang'), ('produces', 'produc'), ('better', 'better'), ('solution', 'solut'), (',', ','), ('incremental', 'increment'), ('change', 'chang'), ('taken', 'taken'), ('new', 'new'), ('solution', 'solut'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('change', 'chang'), ('produces', 'produc'), ('better', 'better'), ('solution', 'solut'), (',', ','), ('incremental', 'increment'), ('change', 'chang'), ('taken', 'taken'), ('new', 'new'), ('solution', 'solut'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('change', 'change'), ('produces', 'produce'), ('better', 'better'), ('solution', 'solution'), (',', ','), ('incremental', 'incremental'), ('change', 'change'), ('taken', 'taken'), ('new', 'new'), ('solution', 'solution'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+This process is repeated until there are no further improvements. 
+
+
+>> Tokens are: 
+ ['This', 'process', 'repeated', 'improvements', '.']
+
+>> Bigrams are: 
+ [('This', 'process'), ('process', 'repeated'), ('repeated', 'improvements'), ('improvements', '.')]
+
+>> Trigrams are: 
+ [('This', 'process', 'repeated'), ('process', 'repeated', 'improvements'), ('repeated', 'improvements', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('process', 'NN'), ('repeated', 'VBD'), ('improvements', 'NNS'), ('.', '.')]
+
+ (S (NP This/DT process/NN) repeated/VBD (NP improvements/NNS) ./.) 
+
+
+>> Noun Phrases are: 
+ ['This process', 'improvements']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('process', 'process'), ('repeated', 'repeat'), ('improvements', 'improv'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('process', 'process'), ('repeated', 'repeat'), ('improvements', 'improv'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('process', 'process'), ('repeated', 'repeated'), ('improvements', 'improvement'), ('.', '.')]
+
+
+
+============================ Sentence 23 =============================
+
+function Hill-Climbing (problem), returns a state that is a local maximum. 
+
+
+>> Tokens are: 
+ ['function', 'Hill-Climbing', '(', 'problem', ')', ',', 'returns', 'state', 'local', 'maximum', '.']
+
+>> Bigrams are: 
+ [('function', 'Hill-Climbing'), ('Hill-Climbing', '('), ('(', 'problem'), ('problem', ')'), (')', ','), (',', 'returns'), ('returns', 'state'), ('state', 'local'), ('local', 'maximum'), ('maximum', '.')]
+
+>> Trigrams are: 
+ [('function', 'Hill-Climbing', '('), ('Hill-Climbing', '(', 'problem'), ('(', 'problem', ')'), ('problem', ')', ','), (')', ',', 'returns'), (',', 'returns', 'state'), ('returns', 'state', 'local'), ('state', 'local', 'maximum'), ('local', 'maximum', '.')]
+
+>> POS Tags are: 
+ [('function', 'NN'), ('Hill-Climbing', 'NNP'), ('(', '('), ('problem', 'NN'), (')', ')'), (',', ','), ('returns', 'VBZ'), ('state', 'NN'), ('local', 'JJ'), ('maximum', 'NN'), ('.', '.')]
+
+ (S
+  (NP function/NN Hill-Climbing/NNP)
+  (/(
+  (NP problem/NN)
+  )/)
+  ,/,
+  returns/VBZ
+  (NP state/NN)
+  (NP local/JJ maximum/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['function Hill-Climbing', 'problem', 'state', 'local maximum']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('function', 'function'), ('Hill-Climbing', 'hill-climb'), ('(', '('), ('problem', 'problem'), (')', ')'), (',', ','), ('returns', 'return'), ('state', 'state'), ('local', 'local'), ('maximum', 'maximum'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('function', 'function'), ('Hill-Climbing', 'hill-climb'), ('(', '('), ('problem', 'problem'), (')', ')'), (',', ','), ('returns', 'return'), ('state', 'state'), ('local', 'local'), ('maximum', 'maximum'), ('.', '.')]
+
+>> Lemmatization: 
+ [('function', 'function'), ('Hill-Climbing', 'Hill-Climbing'), ('(', '('), ('problem', 'problem'), (')', ')'), (',', ','), ('returns', 'return'), ('state', 'state'), ('local', 'local'), ('maximum', 'maximum'), ('.', '.')]
+
+
+
+============================ Sentence 24 =============================
+
+inputs: problem, a problem local variables: current, a node                  neighbor, a node current <-Make_Node(Initial-State[problem]) loop    do neighbor <- a highest_valued successor of current       if Value[neighbor] ≤ Value[current] then       return State[current]       current <- neighbor				   	 end  Disadvantage − This algorithm is neither complete, nor optimal. 
+
+
+>> Tokens are: 
+ ['inputs', ':', 'problem', ',', 'problem', 'local', 'variables', ':', 'current', ',', 'node', 'neighbor', ',', 'node', 'current', '<', '-Make_Node', '(', 'Initial-State', '[', 'problem', ']', ')', 'loop', 'neighbor', '<', '-', 'highest_valued', 'successor', 'current', 'Value', '[', 'neighbor', ']', '≤', 'Value', '[', 'current', ']', 'return', 'State', '[', 'current', ']', 'current', '<', '-', 'neighbor', 'end', 'Disadvantage', '−', 'This', 'algorithm', 'neither', 'complete', ',', 'optimal', '.']
+
+>> Bigrams are: 
+ [('inputs', ':'), (':', 'problem'), ('problem', ','), (',', 'problem'), ('problem', 'local'), ('local', 'variables'), ('variables', ':'), (':', 'current'), ('current', ','), (',', 'node'), ('node', 'neighbor'), ('neighbor', ','), (',', 'node'), ('node', 'current'), ('current', '<'), ('<', '-Make_Node'), ('-Make_Node', '('), ('(', 'Initial-State'), ('Initial-State', '['), ('[', 'problem'), ('problem', ']'), (']', ')'), (')', 'loop'), ('loop', 'neighbor'), ('neighbor', '<'), ('<', '-'), ('-', 'highest_valued'), ('highest_valued', 'successor'), ('successor', 'current'), ('current', 'Value'), ('Value', '['), ('[', 'neighbor'), ('neighbor', ']'), (']', '≤'), ('≤', 'Value'), ('Value', '['), ('[', 'current'), ('current', ']'), (']', 'return'), ('return', 'State'), ('State', '['), ('[', 'current'), ('current', ']'), (']', 'current'), ('current', '<'), ('<', '-'), ('-', 'neighbor'), ('neighbor', 'end'), ('end', 'Disadvantage'), ('Disadvantage', '−'), ('−', 'This'), ('This', 'algorithm'), ('algorithm', 'neither'), ('neither', 'complete'), ('complete', ','), (',', 'optimal'), ('optimal', '.')]
+
+>> Trigrams are: 
+ [('inputs', ':', 'problem'), (':', 'problem', ','), ('problem', ',', 'problem'), (',', 'problem', 'local'), ('problem', 'local', 'variables'), ('local', 'variables', ':'), ('variables', ':', 'current'), (':', 'current', ','), ('current', ',', 'node'), (',', 'node', 'neighbor'), ('node', 'neighbor', ','), ('neighbor', ',', 'node'), (',', 'node', 'current'), ('node', 'current', '<'), ('current', '<', '-Make_Node'), ('<', '-Make_Node', '('), ('-Make_Node', '(', 'Initial-State'), ('(', 'Initial-State', '['), ('Initial-State', '[', 'problem'), ('[', 'problem', ']'), ('problem', ']', ')'), (']', ')', 'loop'), (')', 'loop', 'neighbor'), ('loop', 'neighbor', '<'), ('neighbor', '<', '-'), ('<', '-', 'highest_valued'), ('-', 'highest_valued', 'successor'), ('highest_valued', 'successor', 'current'), ('successor', 'current', 'Value'), ('current', 'Value', '['), ('Value', '[', 'neighbor'), ('[', 'neighbor', ']'), ('neighbor', ']', '≤'), (']', '≤', 'Value'), ('≤', 'Value', '['), ('Value', '[', 'current'), ('[', 'current', ']'), ('current', ']', 'return'), (']', 'return', 'State'), ('return', 'State', '['), ('State', '[', 'current'), ('[', 'current', ']'), ('current', ']', 'current'), (']', 'current', '<'), ('current', '<', '-'), ('<', '-', 'neighbor'), ('-', 'neighbor', 'end'), ('neighbor', 'end', 'Disadvantage'), ('end', 'Disadvantage', '−'), ('Disadvantage', '−', 'This'), ('−', 'This', 'algorithm'), ('This', 'algorithm', 'neither'), ('algorithm', 'neither', 'complete'), ('neither', 'complete', ','), ('complete', ',', 'optimal'), (',', 'optimal', '.')]
+
+>> POS Tags are: 
+ [('inputs', 'NNS'), (':', ':'), ('problem', 'NN'), (',', ','), ('problem', 'NN'), ('local', 'JJ'), ('variables', 'NNS'), (':', ':'), ('current', 'JJ'), (',', ','), ('node', 'JJ'), ('neighbor', 'NN'), (',', ','), ('node', 'JJ'), ('current', 'JJ'), ('<', 'NN'), ('-Make_Node', 'NN'), ('(', '('), ('Initial-State', 'NNP'), ('[', 'NNP'), ('problem', 'NN'), (']', 'NN'), (')', ')'), ('loop', 'VBZ'), ('neighbor', 'JJ'), ('<', 'NNP'), ('-', ':'), ('highest_valued', 'VBD'), ('successor', 'JJ'), ('current', 'JJ'), ('Value', 'NNP'), ('[', 'NNP'), ('neighbor', 'NN'), (']', 'NNP'), ('≤', 'NNP'), ('Value', 'NNP'), ('[', 'NNP'), ('current', 'JJ'), (']', 'NNP'), ('return', 'NN'), ('State', 'NNP'), ('[', 'NNP'), ('current', 'JJ'), (']', 'NNP'), ('current', 'JJ'), ('<', 'NNP'), ('-', ':'), ('neighbor', 'JJ'), ('end', 'NN'), ('Disadvantage', 'NN'), ('−', 'NN'), ('This', 'DT'), ('algorithm', 'VBZ'), ('neither', 'CC'), ('complete', 'JJ'), (',', ','), ('optimal', 'JJ'), ('.', '.')]
+
+ (S
+  (NP inputs/NNS)
+  :/:
+  (NP problem/NN)
+  ,/,
+  (NP problem/NN)
+  (NP local/JJ variables/NNS)
+  :/:
+  current/JJ
+  ,/,
+  (NP node/JJ neighbor/NN)
+  ,/,
+  (NP node/JJ current/JJ </NN -Make_Node/NN)
+  (/(
+  (NP Initial-State/NNP [/NNP problem/NN ]/NN)
+  )/)
+  loop/VBZ
+  (NP neighbor/JJ </NNP)
+  -/:
+  highest_valued/VBD
+  (NP
+    successor/JJ
+    current/JJ
+    Value/NNP
+    [/NNP
+    neighbor/NN
+    ]/NNP
+    ≤/NNP
+    Value/NNP
+    [/NNP)
+  (NP current/JJ ]/NNP return/NN State/NNP [/NNP)
+  (NP current/JJ ]/NNP)
+  (NP current/JJ </NNP)
+  -/:
+  (NP neighbor/JJ end/NN Disadvantage/NN −/NN)
+  This/DT
+  algorithm/VBZ
+  neither/CC
+  complete/JJ
+  ,/,
+  optimal/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['inputs', 'problem', 'problem', 'local variables', 'node neighbor', 'node current < -Make_Node', 'Initial-State [ problem ]', 'neighbor <', 'successor current Value [ neighbor ] ≤ Value [', 'current ] return State [', 'current ]', 'current <', 'neighbor end Disadvantage −']
+
+>> Named Entities are: 
+ [('PERSON', 'Value')] 
+
+>> Stemming using Porter Stemmer: 
+ [('inputs', 'input'), (':', ':'), ('problem', 'problem'), (',', ','), ('problem', 'problem'), ('local', 'local'), ('variables', 'variabl'), (':', ':'), ('current', 'current'), (',', ','), ('node', 'node'), ('neighbor', 'neighbor'), (',', ','), ('node', 'node'), ('current', 'current'), ('<', '<'), ('-Make_Node', '-make_nod'), ('(', '('), ('Initial-State', 'initial-st'), ('[', '['), ('problem', 'problem'), (']', ']'), (')', ')'), ('loop', 'loop'), ('neighbor', 'neighbor'), ('<', '<'), ('-', '-'), ('highest_valued', 'highest_valu'), ('successor', 'successor'), ('current', 'current'), ('Value', 'valu'), ('[', '['), ('neighbor', 'neighbor'), (']', ']'), ('≤', '≤'), ('Value', 'valu'), ('[', '['), ('current', 'current'), (']', ']'), ('return', 'return'), ('State', 'state'), ('[', '['), ('current', 'current'), (']', ']'), ('current', 'current'), ('<', '<'), ('-', '-'), ('neighbor', 'neighbor'), ('end', 'end'), ('Disadvantage', 'disadvantag'), ('−', '−'), ('This', 'thi'), ('algorithm', 'algorithm'), ('neither', 'neither'), ('complete', 'complet'), (',', ','), ('optimal', 'optim'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('inputs', 'input'), (':', ':'), ('problem', 'problem'), (',', ','), ('problem', 'problem'), ('local', 'local'), ('variables', 'variabl'), (':', ':'), ('current', 'current'), (',', ','), ('node', 'node'), ('neighbor', 'neighbor'), (',', ','), ('node', 'node'), ('current', 'current'), ('<', '<'), ('-Make_Node', '-make_nod'), ('(', '('), ('Initial-State', 'initial-st'), ('[', '['), ('problem', 'problem'), (']', ']'), (')', ')'), ('loop', 'loop'), ('neighbor', 'neighbor'), ('<', '<'), ('-', '-'), ('highest_valued', 'highest_valu'), ('successor', 'successor'), ('current', 'current'), ('Value', 'valu'), ('[', '['), ('neighbor', 'neighbor'), (']', ']'), ('≤', '≤'), ('Value', 'valu'), ('[', '['), ('current', 'current'), (']', ']'), ('return', 'return'), ('State', 'state'), ('[', '['), ('current', 'current'), (']', ']'), ('current', 'current'), ('<', '<'), ('-', '-'), ('neighbor', 'neighbor'), ('end', 'end'), ('Disadvantage', 'disadvantag'), ('−', '−'), ('This', 'this'), ('algorithm', 'algorithm'), ('neither', 'neither'), ('complete', 'complet'), (',', ','), ('optimal', 'optim'), ('.', '.')]
+
+>> Lemmatization: 
+ [('inputs', 'input'), (':', ':'), ('problem', 'problem'), (',', ','), ('problem', 'problem'), ('local', 'local'), ('variables', 'variable'), (':', ':'), ('current', 'current'), (',', ','), ('node', 'node'), ('neighbor', 'neighbor'), (',', ','), ('node', 'node'), ('current', 'current'), ('<', '<'), ('-Make_Node', '-Make_Node'), ('(', '('), ('Initial-State', 'Initial-State'), ('[', '['), ('problem', 'problem'), (']', ']'), (')', ')'), ('loop', 'loop'), ('neighbor', 'neighbor'), ('<', '<'), ('-', '-'), ('highest_valued', 'highest_valued'), ('successor', 'successor'), ('current', 'current'), ('Value', 'Value'), ('[', '['), ('neighbor', 'neighbor'), (']', ']'), ('≤', '≤'), ('Value', 'Value'), ('[', '['), ('current', 'current'), (']', ']'), ('return', 'return'), ('State', 'State'), ('[', '['), ('current', 'current'), (']', ']'), ('current', 'current'), ('<', '<'), ('-', '-'), ('neighbor', 'neighbor'), ('end', 'end'), ('Disadvantage', 'Disadvantage'), ('−', '−'), ('This', 'This'), ('algorithm', 'algorithm'), ('neither', 'neither'), ('complete', 'complete'), (',', ','), ('optimal', 'optimal'), ('.', '.')]
+
+
+
+============================ Sentence 25 =============================
+
+Local Beam Search In this algorithm, it holds k number of states at any given time. 
+
+
+>> Tokens are: 
+ ['Local', 'Beam', 'Search', 'In', 'algorithm', ',', 'holds', 'k', 'number', 'states', 'given', 'time', '.']
+
+>> Bigrams are: 
+ [('Local', 'Beam'), ('Beam', 'Search'), ('Search', 'In'), ('In', 'algorithm'), ('algorithm', ','), (',', 'holds'), ('holds', 'k'), ('k', 'number'), ('number', 'states'), ('states', 'given'), ('given', 'time'), ('time', '.')]
+
+>> Trigrams are: 
+ [('Local', 'Beam', 'Search'), ('Beam', 'Search', 'In'), ('Search', 'In', 'algorithm'), ('In', 'algorithm', ','), ('algorithm', ',', 'holds'), (',', 'holds', 'k'), ('holds', 'k', 'number'), ('k', 'number', 'states'), ('number', 'states', 'given'), ('states', 'given', 'time'), ('given', 'time', '.')]
+
+>> POS Tags are: 
+ [('Local', 'JJ'), ('Beam', 'NNP'), ('Search', 'NNP'), ('In', 'IN'), ('algorithm', 'NN'), (',', ','), ('holds', 'VBZ'), ('k', 'NNS'), ('number', 'NN'), ('states', 'NNS'), ('given', 'VBN'), ('time', 'NN'), ('.', '.')]
+
+ (S
+  (NP Local/JJ Beam/NNP Search/NNP)
+  In/IN
+  (NP algorithm/NN)
+  ,/,
+  holds/VBZ
+  (NP k/NNS number/NN states/NNS)
+  given/VBN
+  (NP time/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Local Beam Search', 'algorithm', 'k number states', 'time']
+
+>> Named Entities are: 
+ [('PERSON', 'Local'), ('ORGANIZATION', 'Beam Search')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Local', 'local'), ('Beam', 'beam'), ('Search', 'search'), ('In', 'in'), ('algorithm', 'algorithm'), (',', ','), ('holds', 'hold'), ('k', 'k'), ('number', 'number'), ('states', 'state'), ('given', 'given'), ('time', 'time'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Local', 'local'), ('Beam', 'beam'), ('Search', 'search'), ('In', 'in'), ('algorithm', 'algorithm'), (',', ','), ('holds', 'hold'), ('k', 'k'), ('number', 'number'), ('states', 'state'), ('given', 'given'), ('time', 'time'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Local', 'Local'), ('Beam', 'Beam'), ('Search', 'Search'), ('In', 'In'), ('algorithm', 'algorithm'), (',', ','), ('holds', 'hold'), ('k', 'k'), ('number', 'number'), ('states', 'state'), ('given', 'given'), ('time', 'time'), ('.', '.')]
+
+
+
+============================ Sentence 26 =============================
+
+At the start, these states are generated randomly. 
+
+
+>> Tokens are: 
+ ['At', 'start', ',', 'states', 'generated', 'randomly', '.']
+
+>> Bigrams are: 
+ [('At', 'start'), ('start', ','), (',', 'states'), ('states', 'generated'), ('generated', 'randomly'), ('randomly', '.')]
+
+>> Trigrams are: 
+ [('At', 'start', ','), ('start', ',', 'states'), (',', 'states', 'generated'), ('states', 'generated', 'randomly'), ('generated', 'randomly', '.')]
+
+>> POS Tags are: 
+ [('At', 'IN'), ('start', 'NN'), (',', ','), ('states', 'NNS'), ('generated', 'VBD'), ('randomly', 'RB'), ('.', '.')]
+
+ (S
+  At/IN
+  (NP start/NN)
+  ,/,
+  (NP states/NNS)
+  generated/VBD
+  randomly/RB
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['start', 'states']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('At', 'at'), ('start', 'start'), (',', ','), ('states', 'state'), ('generated', 'gener'), ('randomly', 'randomli'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('At', 'at'), ('start', 'start'), (',', ','), ('states', 'state'), ('generated', 'generat'), ('randomly', 'random'), ('.', '.')]
+
+>> Lemmatization: 
+ [('At', 'At'), ('start', 'start'), (',', ','), ('states', 'state'), ('generated', 'generated'), ('randomly', 'randomly'), ('.', '.')]
+
+
+
+============================ Sentence 27 =============================
+
+The successors of these k states are computed with the help of objective function. 
+
+
+>> Tokens are: 
+ ['The', 'successors', 'k', 'states', 'computed', 'help', 'objective', 'function', '.']
+
+>> Bigrams are: 
+ [('The', 'successors'), ('successors', 'k'), ('k', 'states'), ('states', 'computed'), ('computed', 'help'), ('help', 'objective'), ('objective', 'function'), ('function', '.')]
+
+>> Trigrams are: 
+ [('The', 'successors', 'k'), ('successors', 'k', 'states'), ('k', 'states', 'computed'), ('states', 'computed', 'help'), ('computed', 'help', 'objective'), ('help', 'objective', 'function'), ('objective', 'function', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('successors', 'NNS'), ('k', 'VBP'), ('states', 'NNS'), ('computed', 'VBD'), ('help', 'NN'), ('objective', 'JJ'), ('function', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT successors/NNS)
+  k/VBP
+  (NP states/NNS)
+  computed/VBD
+  (NP help/NN)
+  (NP objective/JJ function/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The successors', 'states', 'help', 'objective function']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('successors', 'successor'), ('k', 'k'), ('states', 'state'), ('computed', 'comput'), ('help', 'help'), ('objective', 'object'), ('function', 'function'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('successors', 'successor'), ('k', 'k'), ('states', 'state'), ('computed', 'comput'), ('help', 'help'), ('objective', 'object'), ('function', 'function'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('successors', 'successor'), ('k', 'k'), ('states', 'state'), ('computed', 'computed'), ('help', 'help'), ('objective', 'objective'), ('function', 'function'), ('.', '.')]
+
+
+
+============================ Sentence 28 =============================
+
+If any of these successors is the maximum value of the objective function, then the algorithm stops. 
+
+
+>> Tokens are: 
+ ['If', 'successors', 'maximum', 'value', 'objective', 'function', ',', 'algorithm', 'stops', '.']
+
+>> Bigrams are: 
+ [('If', 'successors'), ('successors', 'maximum'), ('maximum', 'value'), ('value', 'objective'), ('objective', 'function'), ('function', ','), (',', 'algorithm'), ('algorithm', 'stops'), ('stops', '.')]
+
+>> Trigrams are: 
+ [('If', 'successors', 'maximum'), ('successors', 'maximum', 'value'), ('maximum', 'value', 'objective'), ('value', 'objective', 'function'), ('objective', 'function', ','), ('function', ',', 'algorithm'), (',', 'algorithm', 'stops'), ('algorithm', 'stops', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('successors', 'NNS'), ('maximum', 'VBP'), ('value', 'NN'), ('objective', 'JJ'), ('function', 'NN'), (',', ','), ('algorithm', 'JJ'), ('stops', 'NNS'), ('.', '.')]
+
+ (S
+  If/IN
+  (NP successors/NNS)
+  maximum/VBP
+  (NP value/NN)
+  (NP objective/JJ function/NN)
+  ,/,
+  (NP algorithm/JJ stops/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['successors', 'value', 'objective function', 'algorithm stops']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('successors', 'successor'), ('maximum', 'maximum'), ('value', 'valu'), ('objective', 'object'), ('function', 'function'), (',', ','), ('algorithm', 'algorithm'), ('stops', 'stop'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('successors', 'successor'), ('maximum', 'maximum'), ('value', 'valu'), ('objective', 'object'), ('function', 'function'), (',', ','), ('algorithm', 'algorithm'), ('stops', 'stop'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('successors', 'successor'), ('maximum', 'maximum'), ('value', 'value'), ('objective', 'objective'), ('function', 'function'), (',', ','), ('algorithm', 'algorithm'), ('stops', 'stop'), ('.', '.')]
+
+
+
+============================ Sentence 29 =============================
+
+Otherwise the (initial k states and k number of successors of the states = 2k) states are placed in a pool. 
+
+
+>> Tokens are: 
+ ['Otherwise', '(', 'initial', 'k', 'states', 'k', 'number', 'successors', 'states', '=', '2k', ')', 'states', 'placed', 'pool', '.']
+
+>> Bigrams are: 
+ [('Otherwise', '('), ('(', 'initial'), ('initial', 'k'), ('k', 'states'), ('states', 'k'), ('k', 'number'), ('number', 'successors'), ('successors', 'states'), ('states', '='), ('=', '2k'), ('2k', ')'), (')', 'states'), ('states', 'placed'), ('placed', 'pool'), ('pool', '.')]
+
+>> Trigrams are: 
+ [('Otherwise', '(', 'initial'), ('(', 'initial', 'k'), ('initial', 'k', 'states'), ('k', 'states', 'k'), ('states', 'k', 'number'), ('k', 'number', 'successors'), ('number', 'successors', 'states'), ('successors', 'states', '='), ('states', '=', '2k'), ('=', '2k', ')'), ('2k', ')', 'states'), (')', 'states', 'placed'), ('states', 'placed', 'pool'), ('placed', 'pool', '.')]
+
+>> POS Tags are: 
+ [('Otherwise', 'RB'), ('(', '('), ('initial', 'JJ'), ('k', 'NN'), ('states', 'NNS'), ('k', 'VBP'), ('number', 'NN'), ('successors', 'NNS'), ('states', 'VBZ'), ('=', 'VBP'), ('2k', 'CD'), (')', ')'), ('states', 'NNS'), ('placed', 'VBD'), ('pool', 'NN'), ('.', '.')]
+
+ (S
+  Otherwise/RB
+  (/(
+  (NP initial/JJ k/NN states/NNS)
+  k/VBP
+  (NP number/NN successors/NNS)
+  states/VBZ
+  =/VBP
+  2k/CD
+  )/)
+  (NP states/NNS)
+  placed/VBD
+  (NP pool/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['initial k states', 'number successors', 'states', 'pool']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Otherwise', 'otherwis'), ('(', '('), ('initial', 'initi'), ('k', 'k'), ('states', 'state'), ('k', 'k'), ('number', 'number'), ('successors', 'successor'), ('states', 'state'), ('=', '='), ('2k', '2k'), (')', ')'), ('states', 'state'), ('placed', 'place'), ('pool', 'pool'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Otherwise', 'otherwis'), ('(', '('), ('initial', 'initi'), ('k', 'k'), ('states', 'state'), ('k', 'k'), ('number', 'number'), ('successors', 'successor'), ('states', 'state'), ('=', '='), ('2k', '2k'), (')', ')'), ('states', 'state'), ('placed', 'place'), ('pool', 'pool'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Otherwise', 'Otherwise'), ('(', '('), ('initial', 'initial'), ('k', 'k'), ('states', 'state'), ('k', 'k'), ('number', 'number'), ('successors', 'successor'), ('states', 'state'), ('=', '='), ('2k', '2k'), (')', ')'), ('states', 'state'), ('placed', 'placed'), ('pool', 'pool'), ('.', '.')]
+
+
+
+============================ Sentence 30 =============================
+
+The pool is then sorted numerically. 
+
+
+>> Tokens are: 
+ ['The', 'pool', 'sorted', 'numerically', '.']
+
+>> Bigrams are: 
+ [('The', 'pool'), ('pool', 'sorted'), ('sorted', 'numerically'), ('numerically', '.')]
+
+>> Trigrams are: 
+ [('The', 'pool', 'sorted'), ('pool', 'sorted', 'numerically'), ('sorted', 'numerically', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('pool', 'NN'), ('sorted', 'VBD'), ('numerically', 'RB'), ('.', '.')]
+
+ (S (NP The/DT pool/NN) sorted/VBD numerically/RB ./.) 
+
+
+>> Noun Phrases are: 
+ ['The pool']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('pool', 'pool'), ('sorted', 'sort'), ('numerically', 'numer'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('pool', 'pool'), ('sorted', 'sort'), ('numerically', 'numer'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('pool', 'pool'), ('sorted', 'sorted'), ('numerically', 'numerically'), ('.', '.')]
+
+
+
+============================ Sentence 31 =============================
+
+The highest k states are selected as new initial states. 
+
+
+>> Tokens are: 
+ ['The', 'highest', 'k', 'states', 'selected', 'new', 'initial', 'states', '.']
+
+>> Bigrams are: 
+ [('The', 'highest'), ('highest', 'k'), ('k', 'states'), ('states', 'selected'), ('selected', 'new'), ('new', 'initial'), ('initial', 'states'), ('states', '.')]
+
+>> Trigrams are: 
+ [('The', 'highest', 'k'), ('highest', 'k', 'states'), ('k', 'states', 'selected'), ('states', 'selected', 'new'), ('selected', 'new', 'initial'), ('new', 'initial', 'states'), ('initial', 'states', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('highest', 'JJS'), ('k', 'NN'), ('states', 'NNS'), ('selected', 'VBD'), ('new', 'JJ'), ('initial', 'JJ'), ('states', 'NNS'), ('.', '.')]
+
+ (S
+  The/DT
+  highest/JJS
+  (NP k/NN states/NNS)
+  selected/VBD
+  (NP new/JJ initial/JJ states/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['k states', 'new initial states']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('highest', 'highest'), ('k', 'k'), ('states', 'state'), ('selected', 'select'), ('new', 'new'), ('initial', 'initi'), ('states', 'state'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('highest', 'highest'), ('k', 'k'), ('states', 'state'), ('selected', 'select'), ('new', 'new'), ('initial', 'initi'), ('states', 'state'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('highest', 'highest'), ('k', 'k'), ('states', 'state'), ('selected', 'selected'), ('new', 'new'), ('initial', 'initial'), ('states', 'state'), ('.', '.')]
+
+
+
+============================ Sentence 32 =============================
+
+This process continues until a maximum value is reached. 
+
+
+>> Tokens are: 
+ ['This', 'process', 'continues', 'maximum', 'value', 'reached', '.']
+
+>> Bigrams are: 
+ [('This', 'process'), ('process', 'continues'), ('continues', 'maximum'), ('maximum', 'value'), ('value', 'reached'), ('reached', '.')]
+
+>> Trigrams are: 
+ [('This', 'process', 'continues'), ('process', 'continues', 'maximum'), ('continues', 'maximum', 'value'), ('maximum', 'value', 'reached'), ('value', 'reached', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('process', 'NN'), ('continues', 'VBZ'), ('maximum', 'JJ'), ('value', 'NN'), ('reached', 'VBN'), ('.', '.')]
+
+ (S
+  (NP This/DT process/NN)
+  continues/VBZ
+  (NP maximum/JJ value/NN)
+  reached/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['This process', 'maximum value']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('process', 'process'), ('continues', 'continu'), ('maximum', 'maximum'), ('value', 'valu'), ('reached', 'reach'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('process', 'process'), ('continues', 'continu'), ('maximum', 'maximum'), ('value', 'valu'), ('reached', 'reach'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('process', 'process'), ('continues', 'continues'), ('maximum', 'maximum'), ('value', 'value'), ('reached', 'reached'), ('.', '.')]
+
+
+
+============================ Sentence 33 =============================
+
+function BeamSearch( problem, k), returns a solution state. 
+
+
+>> Tokens are: 
+ ['function', 'BeamSearch', '(', 'problem', ',', 'k', ')', ',', 'returns', 'solution', 'state', '.']
+
+>> Bigrams are: 
+ [('function', 'BeamSearch'), ('BeamSearch', '('), ('(', 'problem'), ('problem', ','), (',', 'k'), ('k', ')'), (')', ','), (',', 'returns'), ('returns', 'solution'), ('solution', 'state'), ('state', '.')]
+
+>> Trigrams are: 
+ [('function', 'BeamSearch', '('), ('BeamSearch', '(', 'problem'), ('(', 'problem', ','), ('problem', ',', 'k'), (',', 'k', ')'), ('k', ')', ','), (')', ',', 'returns'), (',', 'returns', 'solution'), ('returns', 'solution', 'state'), ('solution', 'state', '.')]
+
+>> POS Tags are: 
+ [('function', 'NN'), ('BeamSearch', 'NNP'), ('(', '('), ('problem', 'NN'), (',', ','), ('k', 'NN'), (')', ')'), (',', ','), ('returns', 'VBZ'), ('solution', 'NN'), ('state', 'NN'), ('.', '.')]
+
+ (S
+  (NP function/NN BeamSearch/NNP)
+  (/(
+  (NP problem/NN)
+  ,/,
+  (NP k/NN)
+  )/)
+  ,/,
+  returns/VBZ
+  (NP solution/NN state/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['function BeamSearch', 'problem', 'k', 'solution state']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'BeamSearch')] 
+
+>> Stemming using Porter Stemmer: 
+ [('function', 'function'), ('BeamSearch', 'beamsearch'), ('(', '('), ('problem', 'problem'), (',', ','), ('k', 'k'), (')', ')'), (',', ','), ('returns', 'return'), ('solution', 'solut'), ('state', 'state'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('function', 'function'), ('BeamSearch', 'beamsearch'), ('(', '('), ('problem', 'problem'), (',', ','), ('k', 'k'), (')', ')'), (',', ','), ('returns', 'return'), ('solution', 'solut'), ('state', 'state'), ('.', '.')]
+
+>> Lemmatization: 
+ [('function', 'function'), ('BeamSearch', 'BeamSearch'), ('(', '('), ('problem', 'problem'), (',', ','), ('k', 'k'), (')', ')'), (',', ','), ('returns', 'return'), ('solution', 'solution'), ('state', 'state'), ('.', '.')]
+
+
+
+============================ Sentence 34 =============================
+
+start with k randomly generated states loop    generate all successors of all k states    if any of the states = solution, then return the state    else select the k best successors end  Simulated Annealing Annealing is the process of heating and cooling a metal to change its internal structure for modifying its physical properties. 
+
+
+>> Tokens are: 
+ ['start', 'k', 'randomly', 'generated', 'states', 'loop', 'generate', 'successors', 'k', 'states', 'states', '=', 'solution', ',', 'return', 'state', 'else', 'select', 'k', 'best', 'successors', 'end', 'Simulated', 'Annealing', 'Annealing', 'process', 'heating', 'cooling', 'metal', 'change', 'internal', 'structure', 'modifying', 'physical', 'properties', '.']
+
+>> Bigrams are: 
+ [('start', 'k'), ('k', 'randomly'), ('randomly', 'generated'), ('generated', 'states'), ('states', 'loop'), ('loop', 'generate'), ('generate', 'successors'), ('successors', 'k'), ('k', 'states'), ('states', 'states'), ('states', '='), ('=', 'solution'), ('solution', ','), (',', 'return'), ('return', 'state'), ('state', 'else'), ('else', 'select'), ('select', 'k'), ('k', 'best'), ('best', 'successors'), ('successors', 'end'), ('end', 'Simulated'), ('Simulated', 'Annealing'), ('Annealing', 'Annealing'), ('Annealing', 'process'), ('process', 'heating'), ('heating', 'cooling'), ('cooling', 'metal'), ('metal', 'change'), ('change', 'internal'), ('internal', 'structure'), ('structure', 'modifying'), ('modifying', 'physical'), ('physical', 'properties'), ('properties', '.')]
+
+>> Trigrams are: 
+ [('start', 'k', 'randomly'), ('k', 'randomly', 'generated'), ('randomly', 'generated', 'states'), ('generated', 'states', 'loop'), ('states', 'loop', 'generate'), ('loop', 'generate', 'successors'), ('generate', 'successors', 'k'), ('successors', 'k', 'states'), ('k', 'states', 'states'), ('states', 'states', '='), ('states', '=', 'solution'), ('=', 'solution', ','), ('solution', ',', 'return'), (',', 'return', 'state'), ('return', 'state', 'else'), ('state', 'else', 'select'), ('else', 'select', 'k'), ('select', 'k', 'best'), ('k', 'best', 'successors'), ('best', 'successors', 'end'), ('successors', 'end', 'Simulated'), ('end', 'Simulated', 'Annealing'), ('Simulated', 'Annealing', 'Annealing'), ('Annealing', 'Annealing', 'process'), ('Annealing', 'process', 'heating'), ('process', 'heating', 'cooling'), ('heating', 'cooling', 'metal'), ('cooling', 'metal', 'change'), ('metal', 'change', 'internal'), ('change', 'internal', 'structure'), ('internal', 'structure', 'modifying'), ('structure', 'modifying', 'physical'), ('modifying', 'physical', 'properties'), ('physical', 'properties', '.')]
+
+>> POS Tags are: 
+ [('start', 'NN'), ('k', 'NN'), ('randomly', 'RB'), ('generated', 'VBD'), ('states', 'NNS'), ('loop', 'JJ'), ('generate', 'NN'), ('successors', 'NNS'), ('k', 'VBP'), ('states', 'NNS'), ('states', 'NNS'), ('=', 'VBP'), ('solution', 'NN'), (',', ','), ('return', 'NN'), ('state', 'NN'), ('else', 'RB'), ('select', 'JJ'), ('k', 'NN'), ('best', 'JJS'), ('successors', 'NNS'), ('end', 'VBP'), ('Simulated', 'JJ'), ('Annealing', 'NNP'), ('Annealing', 'NNP'), ('process', 'NN'), ('heating', 'VBG'), ('cooling', 'VBG'), ('metal', 'JJ'), ('change', 'NN'), ('internal', 'JJ'), ('structure', 'NN'), ('modifying', 'VBG'), ('physical', 'JJ'), ('properties', 'NNS'), ('.', '.')]
+
+ (S
+  (NP start/NN k/NN)
+  randomly/RB
+  generated/VBD
+  (NP states/NNS)
+  (NP loop/JJ generate/NN successors/NNS)
+  k/VBP
+  (NP states/NNS states/NNS)
+  =/VBP
+  (NP solution/NN)
+  ,/,
+  (NP return/NN state/NN)
+  else/RB
+  (NP select/JJ k/NN)
+  best/JJS
+  (NP successors/NNS)
+  end/VBP
+  (NP Simulated/JJ Annealing/NNP Annealing/NNP process/NN)
+  heating/VBG
+  cooling/VBG
+  (NP metal/JJ change/NN)
+  (NP internal/JJ structure/NN)
+  modifying/VBG
+  (NP physical/JJ properties/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['start k', 'states', 'loop generate successors', 'states states', 'solution', 'return state', 'select k', 'successors', 'Simulated Annealing Annealing process', 'metal change', 'internal structure', 'physical properties']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Simulated Annealing')] 
+
+>> Stemming using Porter Stemmer: 
+ [('start', 'start'), ('k', 'k'), ('randomly', 'randomli'), ('generated', 'gener'), ('states', 'state'), ('loop', 'loop'), ('generate', 'gener'), ('successors', 'successor'), ('k', 'k'), ('states', 'state'), ('states', 'state'), ('=', '='), ('solution', 'solut'), (',', ','), ('return', 'return'), ('state', 'state'), ('else', 'els'), ('select', 'select'), ('k', 'k'), ('best', 'best'), ('successors', 'successor'), ('end', 'end'), ('Simulated', 'simul'), ('Annealing', 'anneal'), ('Annealing', 'anneal'), ('process', 'process'), ('heating', 'heat'), ('cooling', 'cool'), ('metal', 'metal'), ('change', 'chang'), ('internal', 'intern'), ('structure', 'structur'), ('modifying', 'modifi'), ('physical', 'physic'), ('properties', 'properti'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('start', 'start'), ('k', 'k'), ('randomly', 'random'), ('generated', 'generat'), ('states', 'state'), ('loop', 'loop'), ('generate', 'generat'), ('successors', 'successor'), ('k', 'k'), ('states', 'state'), ('states', 'state'), ('=', '='), ('solution', 'solut'), (',', ','), ('return', 'return'), ('state', 'state'), ('else', 'els'), ('select', 'select'), ('k', 'k'), ('best', 'best'), ('successors', 'successor'), ('end', 'end'), ('Simulated', 'simul'), ('Annealing', 'anneal'), ('Annealing', 'anneal'), ('process', 'process'), ('heating', 'heat'), ('cooling', 'cool'), ('metal', 'metal'), ('change', 'chang'), ('internal', 'intern'), ('structure', 'structur'), ('modifying', 'modifi'), ('physical', 'physic'), ('properties', 'properti'), ('.', '.')]
+
+>> Lemmatization: 
+ [('start', 'start'), ('k', 'k'), ('randomly', 'randomly'), ('generated', 'generated'), ('states', 'state'), ('loop', 'loop'), ('generate', 'generate'), ('successors', 'successor'), ('k', 'k'), ('states', 'state'), ('states', 'state'), ('=', '='), ('solution', 'solution'), (',', ','), ('return', 'return'), ('state', 'state'), ('else', 'else'), ('select', 'select'), ('k', 'k'), ('best', 'best'), ('successors', 'successor'), ('end', 'end'), ('Simulated', 'Simulated'), ('Annealing', 'Annealing'), ('Annealing', 'Annealing'), ('process', 'process'), ('heating', 'heating'), ('cooling', 'cooling'), ('metal', 'metal'), ('change', 'change'), ('internal', 'internal'), ('structure', 'structure'), ('modifying', 'modifying'), ('physical', 'physical'), ('properties', 'property'), ('.', '.')]
+
+
+
+============================ Sentence 35 =============================
+
+When the metal cools, its new structure is seized, and the metal retains its newly obtained properties. 
+
+
+>> Tokens are: 
+ ['When', 'metal', 'cools', ',', 'new', 'structure', 'seized', ',', 'metal', 'retains', 'newly', 'obtained', 'properties', '.']
+
+>> Bigrams are: 
+ [('When', 'metal'), ('metal', 'cools'), ('cools', ','), (',', 'new'), ('new', 'structure'), ('structure', 'seized'), ('seized', ','), (',', 'metal'), ('metal', 'retains'), ('retains', 'newly'), ('newly', 'obtained'), ('obtained', 'properties'), ('properties', '.')]
+
+>> Trigrams are: 
+ [('When', 'metal', 'cools'), ('metal', 'cools', ','), ('cools', ',', 'new'), (',', 'new', 'structure'), ('new', 'structure', 'seized'), ('structure', 'seized', ','), ('seized', ',', 'metal'), (',', 'metal', 'retains'), ('metal', 'retains', 'newly'), ('retains', 'newly', 'obtained'), ('newly', 'obtained', 'properties'), ('obtained', 'properties', '.')]
+
+>> POS Tags are: 
+ [('When', 'WRB'), ('metal', 'NN'), ('cools', 'NNS'), (',', ','), ('new', 'JJ'), ('structure', 'NN'), ('seized', 'VBN'), (',', ','), ('metal', 'NN'), ('retains', 'NNS'), ('newly', 'RB'), ('obtained', 'VBN'), ('properties', 'NNS'), ('.', '.')]
+
+ (S
+  When/WRB
+  (NP metal/NN cools/NNS)
+  ,/,
+  (NP new/JJ structure/NN)
+  seized/VBN
+  ,/,
+  (NP metal/NN retains/NNS)
+  newly/RB
+  obtained/VBN
+  (NP properties/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['metal cools', 'new structure', 'metal retains', 'properties']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('When', 'when'), ('metal', 'metal'), ('cools', 'cool'), (',', ','), ('new', 'new'), ('structure', 'structur'), ('seized', 'seiz'), (',', ','), ('metal', 'metal'), ('retains', 'retain'), ('newly', 'newli'), ('obtained', 'obtain'), ('properties', 'properti'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('When', 'when'), ('metal', 'metal'), ('cools', 'cool'), (',', ','), ('new', 'new'), ('structure', 'structur'), ('seized', 'seiz'), (',', ','), ('metal', 'metal'), ('retains', 'retain'), ('newly', 'newli'), ('obtained', 'obtain'), ('properties', 'properti'), ('.', '.')]
+
+>> Lemmatization: 
+ [('When', 'When'), ('metal', 'metal'), ('cools', 'cool'), (',', ','), ('new', 'new'), ('structure', 'structure'), ('seized', 'seized'), (',', ','), ('metal', 'metal'), ('retains', 'retains'), ('newly', 'newly'), ('obtained', 'obtained'), ('properties', 'property'), ('.', '.')]
+
+
+
+============================ Sentence 36 =============================
+
+In simulated annealing process, the temperature is kept variable. 
+
+
+>> Tokens are: 
+ ['In', 'simulated', 'annealing', 'process', ',', 'temperature', 'kept', 'variable', '.']
+
+>> Bigrams are: 
+ [('In', 'simulated'), ('simulated', 'annealing'), ('annealing', 'process'), ('process', ','), (',', 'temperature'), ('temperature', 'kept'), ('kept', 'variable'), ('variable', '.')]
+
+>> Trigrams are: 
+ [('In', 'simulated', 'annealing'), ('simulated', 'annealing', 'process'), ('annealing', 'process', ','), ('process', ',', 'temperature'), (',', 'temperature', 'kept'), ('temperature', 'kept', 'variable'), ('kept', 'variable', '.')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('simulated', 'JJ'), ('annealing', 'NN'), ('process', 'NN'), (',', ','), ('temperature', 'NN'), ('kept', 'VBD'), ('variable', 'JJ'), ('.', '.')]
+
+ (S
+  In/IN
+  (NP simulated/JJ annealing/NN process/NN)
+  ,/,
+  (NP temperature/NN)
+  kept/VBD
+  variable/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['simulated annealing process', 'temperature']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('simulated', 'simul'), ('annealing', 'anneal'), ('process', 'process'), (',', ','), ('temperature', 'temperatur'), ('kept', 'kept'), ('variable', 'variabl'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('simulated', 'simul'), ('annealing', 'anneal'), ('process', 'process'), (',', ','), ('temperature', 'temperatur'), ('kept', 'kept'), ('variable', 'variabl'), ('.', '.')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('simulated', 'simulated'), ('annealing', 'annealing'), ('process', 'process'), (',', ','), ('temperature', 'temperature'), ('kept', 'kept'), ('variable', 'variable'), ('.', '.')]
+
+
+
+============================ Sentence 37 =============================
+
+We initially set the temperature high and then allow it to ‘cool' slowly as the algorithm proceeds. 
+
+
+>> Tokens are: 
+ ['We', 'initially', 'set', 'temperature', 'high', 'allow', '‘', 'cool', "'", 'slowly', 'algorithm', 'proceeds', '.']
+
+>> Bigrams are: 
+ [('We', 'initially'), ('initially', 'set'), ('set', 'temperature'), ('temperature', 'high'), ('high', 'allow'), ('allow', '‘'), ('‘', 'cool'), ('cool', "'"), ("'", 'slowly'), ('slowly', 'algorithm'), ('algorithm', 'proceeds'), ('proceeds', '.')]
+
+>> Trigrams are: 
+ [('We', 'initially', 'set'), ('initially', 'set', 'temperature'), ('set', 'temperature', 'high'), ('temperature', 'high', 'allow'), ('high', 'allow', '‘'), ('allow', '‘', 'cool'), ('‘', 'cool', "'"), ('cool', "'", 'slowly'), ("'", 'slowly', 'algorithm'), ('slowly', 'algorithm', 'proceeds'), ('algorithm', 'proceeds', '.')]
+
+>> POS Tags are: 
+ [('We', 'PRP'), ('initially', 'RB'), ('set', 'VBD'), ('temperature', 'NN'), ('high', 'JJ'), ('allow', 'NN'), ('‘', 'NNP'), ('cool', 'NN'), ("'", "''"), ('slowly', 'RB'), ('algorithm', 'JJ'), ('proceeds', 'NNS'), ('.', '.')]
+
+ (S
+  We/PRP
+  initially/RB
+  set/VBD
+  (NP temperature/NN)
+  (NP high/JJ allow/NN ‘/NNP cool/NN)
+  '/''
+  slowly/RB
+  (NP algorithm/JJ proceeds/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['temperature', 'high allow ‘ cool', 'algorithm proceeds']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('We', 'we'), ('initially', 'initi'), ('set', 'set'), ('temperature', 'temperatur'), ('high', 'high'), ('allow', 'allow'), ('‘', '‘'), ('cool', 'cool'), ("'", "'"), ('slowly', 'slowli'), ('algorithm', 'algorithm'), ('proceeds', 'proce'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('We', 'we'), ('initially', 'initi'), ('set', 'set'), ('temperature', 'temperatur'), ('high', 'high'), ('allow', 'allow'), ('‘', '‘'), ('cool', 'cool'), ("'", "'"), ('slowly', 'slowli'), ('algorithm', 'algorithm'), ('proceeds', 'proceed'), ('.', '.')]
+
+>> Lemmatization: 
+ [('We', 'We'), ('initially', 'initially'), ('set', 'set'), ('temperature', 'temperature'), ('high', 'high'), ('allow', 'allow'), ('‘', '‘'), ('cool', 'cool'), ("'", "'"), ('slowly', 'slowly'), ('algorithm', 'algorithm'), ('proceeds', 'proceeds'), ('.', '.')]
+
+
+
+============================ Sentence 38 =============================
+
+When the temperature is high, the algorithm is allowed to accept worse solutions with high frequency. 
+
+
+>> Tokens are: 
+ ['When', 'temperature', 'high', ',', 'algorithm', 'allowed', 'accept', 'worse', 'solutions', 'high', 'frequency', '.']
+
+>> Bigrams are: 
+ [('When', 'temperature'), ('temperature', 'high'), ('high', ','), (',', 'algorithm'), ('algorithm', 'allowed'), ('allowed', 'accept'), ('accept', 'worse'), ('worse', 'solutions'), ('solutions', 'high'), ('high', 'frequency'), ('frequency', '.')]
+
+>> Trigrams are: 
+ [('When', 'temperature', 'high'), ('temperature', 'high', ','), ('high', ',', 'algorithm'), (',', 'algorithm', 'allowed'), ('algorithm', 'allowed', 'accept'), ('allowed', 'accept', 'worse'), ('accept', 'worse', 'solutions'), ('worse', 'solutions', 'high'), ('solutions', 'high', 'frequency'), ('high', 'frequency', '.')]
+
+>> POS Tags are: 
+ [('When', 'WRB'), ('temperature', 'NN'), ('high', 'JJ'), (',', ','), ('algorithm', 'JJ'), ('allowed', 'VBN'), ('accept', 'JJ'), ('worse', 'JJR'), ('solutions', 'NNS'), ('high', 'JJ'), ('frequency', 'NN'), ('.', '.')]
+
+ (S
+  When/WRB
+  (NP temperature/NN)
+  high/JJ
+  ,/,
+  algorithm/JJ
+  allowed/VBN
+  accept/JJ
+  worse/JJR
+  (NP solutions/NNS)
+  (NP high/JJ frequency/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['temperature', 'solutions', 'high frequency']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('When', 'when'), ('temperature', 'temperatur'), ('high', 'high'), (',', ','), ('algorithm', 'algorithm'), ('allowed', 'allow'), ('accept', 'accept'), ('worse', 'wors'), ('solutions', 'solut'), ('high', 'high'), ('frequency', 'frequenc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('When', 'when'), ('temperature', 'temperatur'), ('high', 'high'), (',', ','), ('algorithm', 'algorithm'), ('allowed', 'allow'), ('accept', 'accept'), ('worse', 'wors'), ('solutions', 'solut'), ('high', 'high'), ('frequency', 'frequenc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('When', 'When'), ('temperature', 'temperature'), ('high', 'high'), (',', ','), ('algorithm', 'algorithm'), ('allowed', 'allowed'), ('accept', 'accept'), ('worse', 'worse'), ('solutions', 'solution'), ('high', 'high'), ('frequency', 'frequency'), ('.', '.')]
+
+
+
+============================ Sentence 39 =============================
+
+Start · Initialize k = 0; L = integer number of variables; · From i → j, search the performance difference Δ. 
+
+
+>> Tokens are: 
+ ['Start', '·', 'Initialize', 'k', '=', '0', ';', 'L', '=', 'integer', 'number', 'variables', ';', '·', 'From', '→', 'j', ',', 'search', 'performance', 'difference', 'Δ', '.']
+
+>> Bigrams are: 
+ [('Start', '·'), ('·', 'Initialize'), ('Initialize', 'k'), ('k', '='), ('=', '0'), ('0', ';'), (';', 'L'), ('L', '='), ('=', 'integer'), ('integer', 'number'), ('number', 'variables'), ('variables', ';'), (';', '·'), ('·', 'From'), ('From', '→'), ('→', 'j'), ('j', ','), (',', 'search'), ('search', 'performance'), ('performance', 'difference'), ('difference', 'Δ'), ('Δ', '.')]
+
+>> Trigrams are: 
+ [('Start', '·', 'Initialize'), ('·', 'Initialize', 'k'), ('Initialize', 'k', '='), ('k', '=', '0'), ('=', '0', ';'), ('0', ';', 'L'), (';', 'L', '='), ('L', '=', 'integer'), ('=', 'integer', 'number'), ('integer', 'number', 'variables'), ('number', 'variables', ';'), ('variables', ';', '·'), (';', '·', 'From'), ('·', 'From', '→'), ('From', '→', 'j'), ('→', 'j', ','), ('j', ',', 'search'), (',', 'search', 'performance'), ('search', 'performance', 'difference'), ('performance', 'difference', 'Δ'), ('difference', 'Δ', '.')]
+
+>> POS Tags are: 
+ [('Start', 'NNP'), ('·', 'NNP'), ('Initialize', 'NNP'), ('k', 'VBD'), ('=', 'NNP'), ('0', 'CD'), (';', ':'), ('L', 'NNP'), ('=', 'NNP'), ('integer', 'NN'), ('number', 'NN'), ('variables', 'NNS'), (';', ':'), ('·', 'CC'), ('From', 'IN'), ('→', 'NNP'), ('j', 'NN'), (',', ','), ('search', 'NN'), ('performance', 'NN'), ('difference', 'NN'), ('Δ', 'NN'), ('.', '.')]
+
+ (S
+  (NP Start/NNP ·/NNP Initialize/NNP)
+  k/VBD
+  (NP =/NNP)
+  0/CD
+  ;/:
+  (NP L/NNP =/NNP integer/NN number/NN variables/NNS)
+  ;/:
+  ·/CC
+  From/IN
+  (NP →/NNP j/NN)
+  ,/,
+  (NP search/NN performance/NN difference/NN Δ/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Start · Initialize', '=', 'L = integer number variables', '→ j', 'search performance difference Δ']
+
+>> Named Entities are: 
+ [('PERSON', 'Start')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Start', 'start'), ('·', '·'), ('Initialize', 'initi'), ('k', 'k'), ('=', '='), ('0', '0'), (';', ';'), ('L', 'l'), ('=', '='), ('integer', 'integ'), ('number', 'number'), ('variables', 'variabl'), (';', ';'), ('·', '·'), ('From', 'from'), ('→', '→'), ('j', 'j'), (',', ','), ('search', 'search'), ('performance', 'perform'), ('difference', 'differ'), ('Δ', 'δ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Start', 'start'), ('·', '·'), ('Initialize', 'initi'), ('k', 'k'), ('=', '='), ('0', '0'), (';', ';'), ('L', 'l'), ('=', '='), ('integer', 'integ'), ('number', 'number'), ('variables', 'variabl'), (';', ';'), ('·', '·'), ('From', 'from'), ('→', '→'), ('j', 'j'), (',', ','), ('search', 'search'), ('performance', 'perform'), ('difference', 'differ'), ('Δ', 'δ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Start', 'Start'), ('·', '·'), ('Initialize', 'Initialize'), ('k', 'k'), ('=', '='), ('0', '0'), (';', ';'), ('L', 'L'), ('=', '='), ('integer', 'integer'), ('number', 'number'), ('variables', 'variable'), (';', ';'), ('·', '·'), ('From', 'From'), ('→', '→'), ('j', 'j'), (',', ','), ('search', 'search'), ('performance', 'performance'), ('difference', 'difference'), ('Δ', 'Δ'), ('.', '.')]
+
+
+
+============================ Sentence 40 =============================
+
+· If Δ <= 0 then accept else if exp(-Δ/T(k)) > random(0,1) then accept; · Repeat steps 1 and 2 for L(k) steps. 
+
+
+>> Tokens are: 
+ ['·', 'If', 'Δ', '<', '=', '0', 'accept', 'else', 'exp', '(', '-Δ/T', '(', 'k', ')', ')', '>', 'random', '(', '0,1', ')', 'accept', ';', '·', 'Repeat', 'steps', '1', '2', 'L', '(', 'k', ')', 'steps', '.']
+
+>> Bigrams are: 
+ [('·', 'If'), ('If', 'Δ'), ('Δ', '<'), ('<', '='), ('=', '0'), ('0', 'accept'), ('accept', 'else'), ('else', 'exp'), ('exp', '('), ('(', '-Δ/T'), ('-Δ/T', '('), ('(', 'k'), ('k', ')'), (')', ')'), (')', '>'), ('>', 'random'), ('random', '('), ('(', '0,1'), ('0,1', ')'), (')', 'accept'), ('accept', ';'), (';', '·'), ('·', 'Repeat'), ('Repeat', 'steps'), ('steps', '1'), ('1', '2'), ('2', 'L'), ('L', '('), ('(', 'k'), ('k', ')'), (')', 'steps'), ('steps', '.')]
+
+>> Trigrams are: 
+ [('·', 'If', 'Δ'), ('If', 'Δ', '<'), ('Δ', '<', '='), ('<', '=', '0'), ('=', '0', 'accept'), ('0', 'accept', 'else'), ('accept', 'else', 'exp'), ('else', 'exp', '('), ('exp', '(', '-Δ/T'), ('(', '-Δ/T', '('), ('-Δ/T', '(', 'k'), ('(', 'k', ')'), ('k', ')', ')'), (')', ')', '>'), (')', '>', 'random'), ('>', 'random', '('), ('random', '(', '0,1'), ('(', '0,1', ')'), ('0,1', ')', 'accept'), (')', 'accept', ';'), ('accept', ';', '·'), (';', '·', 'Repeat'), ('·', 'Repeat', 'steps'), ('Repeat', 'steps', '1'), ('steps', '1', '2'), ('1', '2', 'L'), ('2', 'L', '('), ('L', '(', 'k'), ('(', 'k', ')'), ('k', ')', 'steps'), (')', 'steps', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('If', 'IN'), ('Δ', 'JJ'), ('<', 'NNP'), ('=', 'NN'), ('0', 'CD'), ('accept', 'NN'), ('else', 'RB'), ('exp', 'RB'), ('(', '('), ('-Δ/T', 'NNP'), ('(', '('), ('k', 'NN'), (')', ')'), (')', ')'), ('>', 'NN'), ('random', 'NN'), ('(', '('), ('0,1', 'CD'), (')', ')'), ('accept', 'NN'), (';', ':'), ('·', 'CC'), ('Repeat', 'NNP'), ('steps', 'VBZ'), ('1', 'CD'), ('2', 'CD'), ('L', 'NNP'), ('(', '('), ('k', 'NN'), (')', ')'), ('steps', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/NN)
+  If/IN
+  (NP Δ/JJ </NNP =/NN)
+  0/CD
+  (NP accept/NN)
+  else/RB
+  exp/RB
+  (/(
+  (NP -Δ/T/NNP)
+  (/(
+  (NP k/NN)
+  )/)
+  )/)
+  (NP >/NN random/NN)
+  (/(
+  0,1/CD
+  )/)
+  (NP accept/NN)
+  ;/:
+  ·/CC
+  (NP Repeat/NNP)
+  steps/VBZ
+  1/CD
+  2/CD
+  (NP L/NNP)
+  (/(
+  (NP k/NN)
+  )/)
+  (NP steps/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['·', 'Δ < =', 'accept', '-Δ/T', 'k', '> random', 'accept', 'Repeat', 'L', 'k', 'steps']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Repeat')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('If', 'if'), ('Δ', 'δ'), ('<', '<'), ('=', '='), ('0', '0'), ('accept', 'accept'), ('else', 'els'), ('exp', 'exp'), ('(', '('), ('-Δ/T', '-δ/t'), ('(', '('), ('k', 'k'), (')', ')'), (')', ')'), ('>', '>'), ('random', 'random'), ('(', '('), ('0,1', '0,1'), (')', ')'), ('accept', 'accept'), (';', ';'), ('·', '·'), ('Repeat', 'repeat'), ('steps', 'step'), ('1', '1'), ('2', '2'), ('L', 'l'), ('(', '('), ('k', 'k'), (')', ')'), ('steps', 'step'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('If', 'if'), ('Δ', 'δ'), ('<', '<'), ('=', '='), ('0', '0'), ('accept', 'accept'), ('else', 'els'), ('exp', 'exp'), ('(', '('), ('-Δ/T', '-δ/t'), ('(', '('), ('k', 'k'), (')', ')'), (')', ')'), ('>', '>'), ('random', 'random'), ('(', '('), ('0,1', '0,1'), (')', ')'), ('accept', 'accept'), (';', ';'), ('·', '·'), ('Repeat', 'repeat'), ('steps', 'step'), ('1', '1'), ('2', '2'), ('L', 'l'), ('(', '('), ('k', 'k'), (')', ')'), ('steps', 'step'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('If', 'If'), ('Δ', 'Δ'), ('<', '<'), ('=', '='), ('0', '0'), ('accept', 'accept'), ('else', 'else'), ('exp', 'exp'), ('(', '('), ('-Δ/T', '-Δ/T'), ('(', '('), ('k', 'k'), (')', ')'), (')', ')'), ('>', '>'), ('random', 'random'), ('(', '('), ('0,1', '0,1'), (')', ')'), ('accept', 'accept'), (';', ';'), ('·', '·'), ('Repeat', 'Repeat'), ('steps', 'step'), ('1', '1'), ('2', '2'), ('L', 'L'), ('(', '('), ('k', 'k'), (')', ')'), ('steps', 'step'), ('.', '.')]
+
+
+
+============================ Sentence 41 =============================
+
+· k = k + 1; Repeat steps 1 through 4 till the criteria is met. 
+
+
+>> Tokens are: 
+ ['·', 'k', '=', 'k', '+', '1', ';', 'Repeat', 'steps', '1', '4', 'till', 'criteria', 'met', '.']
+
+>> Bigrams are: 
+ [('·', 'k'), ('k', '='), ('=', 'k'), ('k', '+'), ('+', '1'), ('1', ';'), (';', 'Repeat'), ('Repeat', 'steps'), ('steps', '1'), ('1', '4'), ('4', 'till'), ('till', 'criteria'), ('criteria', 'met'), ('met', '.')]
+
+>> Trigrams are: 
+ [('·', 'k', '='), ('k', '=', 'k'), ('=', 'k', '+'), ('k', '+', '1'), ('+', '1', ';'), ('1', ';', 'Repeat'), (';', 'Repeat', 'steps'), ('Repeat', 'steps', '1'), ('steps', '1', '4'), ('1', '4', 'till'), ('4', 'till', 'criteria'), ('till', 'criteria', 'met'), ('criteria', 'met', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('k', 'NN'), ('=', 'NNP'), ('k', 'NN'), ('+', 'NNP'), ('1', 'CD'), (';', ':'), ('Repeat', 'NNP'), ('steps', 'VBZ'), ('1', 'CD'), ('4', 'CD'), ('till', 'NN'), ('criteria', 'NNS'), ('met', 'VBD'), ('.', '.')]
+
+ (S
+  (NP ·/JJ k/NN =/NNP k/NN +/NNP)
+  1/CD
+  ;/:
+  (NP Repeat/NNP)
+  steps/VBZ
+  1/CD
+  4/CD
+  (NP till/NN criteria/NNS)
+  met/VBD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· k = k +', 'Repeat', 'till criteria']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Repeat')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('k', 'k'), ('=', '='), ('k', 'k'), ('+', '+'), ('1', '1'), (';', ';'), ('Repeat', 'repeat'), ('steps', 'step'), ('1', '1'), ('4', '4'), ('till', 'till'), ('criteria', 'criteria'), ('met', 'met'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('k', 'k'), ('=', '='), ('k', 'k'), ('+', '+'), ('1', '1'), (';', ';'), ('Repeat', 'repeat'), ('steps', 'step'), ('1', '1'), ('4', '4'), ('till', 'till'), ('criteria', 'criteria'), ('met', 'met'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('k', 'k'), ('=', '='), ('k', 'k'), ('+', '+'), ('1', '1'), (';', ';'), ('Repeat', 'Repeat'), ('steps', 'step'), ('1', '1'), ('4', '4'), ('till', 'till'), ('criteria', 'criterion'), ('met', 'met'), ('.', '.')]
+
+
+
+============================ Sentence 42 =============================
+
+End Travelling Salesman Problem In this algorithm, the objective is to find a low-cost tour that starts from a city, visits all cities en-route exactly once and ends at the same starting city. 
+
+
+>> Tokens are: 
+ ['End', 'Travelling', 'Salesman', 'Problem', 'In', 'algorithm', ',', 'objective', 'find', 'low-cost', 'tour', 'starts', 'city', ',', 'visits', 'cities', 'en-route', 'exactly', 'ends', 'starting', 'city', '.']
+
+>> Bigrams are: 
+ [('End', 'Travelling'), ('Travelling', 'Salesman'), ('Salesman', 'Problem'), ('Problem', 'In'), ('In', 'algorithm'), ('algorithm', ','), (',', 'objective'), ('objective', 'find'), ('find', 'low-cost'), ('low-cost', 'tour'), ('tour', 'starts'), ('starts', 'city'), ('city', ','), (',', 'visits'), ('visits', 'cities'), ('cities', 'en-route'), ('en-route', 'exactly'), ('exactly', 'ends'), ('ends', 'starting'), ('starting', 'city'), ('city', '.')]
+
+>> Trigrams are: 
+ [('End', 'Travelling', 'Salesman'), ('Travelling', 'Salesman', 'Problem'), ('Salesman', 'Problem', 'In'), ('Problem', 'In', 'algorithm'), ('In', 'algorithm', ','), ('algorithm', ',', 'objective'), (',', 'objective', 'find'), ('objective', 'find', 'low-cost'), ('find', 'low-cost', 'tour'), ('low-cost', 'tour', 'starts'), ('tour', 'starts', 'city'), ('starts', 'city', ','), ('city', ',', 'visits'), (',', 'visits', 'cities'), ('visits', 'cities', 'en-route'), ('cities', 'en-route', 'exactly'), ('en-route', 'exactly', 'ends'), ('exactly', 'ends', 'starting'), ('ends', 'starting', 'city'), ('starting', 'city', '.')]
+
+>> POS Tags are: 
+ [('End', 'NN'), ('Travelling', 'VBG'), ('Salesman', 'NNP'), ('Problem', 'NNP'), ('In', 'IN'), ('algorithm', 'NN'), (',', ','), ('objective', 'JJ'), ('find', 'VBP'), ('low-cost', 'JJ'), ('tour', 'NN'), ('starts', 'VBZ'), ('city', 'NN'), (',', ','), ('visits', 'JJ'), ('cities', 'NNS'), ('en-route', 'VBP'), ('exactly', 'RB'), ('ends', 'VBZ'), ('starting', 'VBG'), ('city', 'NN'), ('.', '.')]
+
+ (S
+  (NP End/NN)
+  Travelling/VBG
+  (NP Salesman/NNP Problem/NNP)
+  In/IN
+  (NP algorithm/NN)
+  ,/,
+  objective/JJ
+  find/VBP
+  (NP low-cost/JJ tour/NN)
+  starts/VBZ
+  (NP city/NN)
+  ,/,
+  (NP visits/JJ cities/NNS)
+  en-route/VBP
+  exactly/RB
+  ends/VBZ
+  starting/VBG
+  (NP city/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['End', 'Salesman Problem', 'algorithm', 'low-cost tour', 'city', 'visits cities', 'city']
+
+>> Named Entities are: 
+ [('PERSON', 'Salesman Problem')] 
+
+>> Stemming using Porter Stemmer: 
+ [('End', 'end'), ('Travelling', 'travel'), ('Salesman', 'salesman'), ('Problem', 'problem'), ('In', 'in'), ('algorithm', 'algorithm'), (',', ','), ('objective', 'object'), ('find', 'find'), ('low-cost', 'low-cost'), ('tour', 'tour'), ('starts', 'start'), ('city', 'citi'), (',', ','), ('visits', 'visit'), ('cities', 'citi'), ('en-route', 'en-rout'), ('exactly', 'exactli'), ('ends', 'end'), ('starting', 'start'), ('city', 'citi'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('End', 'end'), ('Travelling', 'travel'), ('Salesman', 'salesman'), ('Problem', 'problem'), ('In', 'in'), ('algorithm', 'algorithm'), (',', ','), ('objective', 'object'), ('find', 'find'), ('low-cost', 'low-cost'), ('tour', 'tour'), ('starts', 'start'), ('city', 'citi'), (',', ','), ('visits', 'visit'), ('cities', 'citi'), ('en-route', 'en-rout'), ('exactly', 'exact'), ('ends', 'end'), ('starting', 'start'), ('city', 'citi'), ('.', '.')]
+
+>> Lemmatization: 
+ [('End', 'End'), ('Travelling', 'Travelling'), ('Salesman', 'Salesman'), ('Problem', 'Problem'), ('In', 'In'), ('algorithm', 'algorithm'), (',', ','), ('objective', 'objective'), ('find', 'find'), ('low-cost', 'low-cost'), ('tour', 'tour'), ('starts', 'start'), ('city', 'city'), (',', ','), ('visits', 'visit'), ('cities', 'city'), ('en-route', 'en-route'), ('exactly', 'exactly'), ('ends', 'end'), ('starting', 'starting'), ('city', 'city'), ('.', '.')]
+
+
+
+============================ Sentence 43 =============================
+
+Start    Find out all (n -1)! 
+
+
+>> Tokens are: 
+ ['Start', 'Find', '(', 'n', '-1', ')', '!']
+
+>> Bigrams are: 
+ [('Start', 'Find'), ('Find', '('), ('(', 'n'), ('n', '-1'), ('-1', ')'), (')', '!')]
+
+>> Trigrams are: 
+ [('Start', 'Find', '('), ('Find', '(', 'n'), ('(', 'n', '-1'), ('n', '-1', ')'), ('-1', ')', '!')]
+
+>> POS Tags are: 
+ [('Start', 'NNP'), ('Find', 'NNP'), ('(', '('), ('n', 'JJ'), ('-1', 'NN'), (')', ')'), ('!', '.')]
+
+ (S (NP Start/NNP Find/NNP) (/( (NP n/JJ -1/NN) )/) !/.) 
+
+
+>> Noun Phrases are: 
+ ['Start Find', 'n -1']
+
+>> Named Entities are: 
+ [('PERSON', 'Start'), ('ORGANIZATION', 'Find')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Start', 'start'), ('Find', 'find'), ('(', '('), ('n', 'n'), ('-1', '-1'), (')', ')'), ('!', '!')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Start', 'start'), ('Find', 'find'), ('(', '('), ('n', 'n'), ('-1', '-1'), (')', ')'), ('!', '!')]
+
+>> Lemmatization: 
+ [('Start', 'Start'), ('Find', 'Find'), ('(', '('), ('n', 'n'), ('-1', '-1'), (')', ')'), ('!', '!')]
+
+
+
+============================ Sentence 44 =============================
+
+Possible solutions, where n is the total number of cities. 
+
+
+>> Tokens are: 
+ ['Possible', 'solutions', ',', 'n', 'total', 'number', 'cities', '.']
+
+>> Bigrams are: 
+ [('Possible', 'solutions'), ('solutions', ','), (',', 'n'), ('n', 'total'), ('total', 'number'), ('number', 'cities'), ('cities', '.')]
+
+>> Trigrams are: 
+ [('Possible', 'solutions', ','), ('solutions', ',', 'n'), (',', 'n', 'total'), ('n', 'total', 'number'), ('total', 'number', 'cities'), ('number', 'cities', '.')]
+
+>> POS Tags are: 
+ [('Possible', 'JJ'), ('solutions', 'NNS'), (',', ','), ('n', 'JJ'), ('total', 'JJ'), ('number', 'NN'), ('cities', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Possible/JJ solutions/NNS)
+  ,/,
+  (NP n/JJ total/JJ number/NN cities/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Possible solutions', 'n total number cities']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Possible', 'possibl'), ('solutions', 'solut'), (',', ','), ('n', 'n'), ('total', 'total'), ('number', 'number'), ('cities', 'citi'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Possible', 'possibl'), ('solutions', 'solut'), (',', ','), ('n', 'n'), ('total', 'total'), ('number', 'number'), ('cities', 'citi'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Possible', 'Possible'), ('solutions', 'solution'), (',', ','), ('n', 'n'), ('total', 'total'), ('number', 'number'), ('cities', 'city'), ('.', '.')]
+
+
+
+============================ Sentence 45 =============================
+
+Determine the minimum cost by finding out the cost of each of these (n -1)! 
+
+
+>> Tokens are: 
+ ['Determine', 'minimum', 'cost', 'finding', 'cost', '(', 'n', '-1', ')', '!']
+
+>> Bigrams are: 
+ [('Determine', 'minimum'), ('minimum', 'cost'), ('cost', 'finding'), ('finding', 'cost'), ('cost', '('), ('(', 'n'), ('n', '-1'), ('-1', ')'), (')', '!')]
+
+>> Trigrams are: 
+ [('Determine', 'minimum', 'cost'), ('minimum', 'cost', 'finding'), ('cost', 'finding', 'cost'), ('finding', 'cost', '('), ('cost', '(', 'n'), ('(', 'n', '-1'), ('n', '-1', ')'), ('-1', ')', '!')]
+
+>> POS Tags are: 
+ [('Determine', 'NNP'), ('minimum', 'NN'), ('cost', 'NN'), ('finding', 'VBG'), ('cost', 'NN'), ('(', '('), ('n', 'JJ'), ('-1', 'NN'), (')', ')'), ('!', '.')]
+
+ (S
+  (NP Determine/NNP minimum/NN cost/NN)
+  finding/VBG
+  (NP cost/NN)
+  (/(
+  (NP n/JJ -1/NN)
+  )/)
+  !/.) 
+
+
+>> Noun Phrases are: 
+ ['Determine minimum cost', 'cost', 'n -1']
+
+>> Named Entities are: 
+ [('GPE', 'Determine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Determine', 'determin'), ('minimum', 'minimum'), ('cost', 'cost'), ('finding', 'find'), ('cost', 'cost'), ('(', '('), ('n', 'n'), ('-1', '-1'), (')', ')'), ('!', '!')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Determine', 'determin'), ('minimum', 'minimum'), ('cost', 'cost'), ('finding', 'find'), ('cost', 'cost'), ('(', '('), ('n', 'n'), ('-1', '-1'), (')', ')'), ('!', '!')]
+
+>> Lemmatization: 
+ [('Determine', 'Determine'), ('minimum', 'minimum'), ('cost', 'cost'), ('finding', 'finding'), ('cost', 'cost'), ('(', '('), ('n', 'n'), ('-1', '-1'), (')', ')'), ('!', '!')]
+
+
+
+============================ Sentence 46 =============================
+
+solutions. 
+
+
+>> Tokens are: 
+ ['solutions', '.']
+
+>> Bigrams are: 
+ [('solutions', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('solutions', 'NNS'), ('.', '.')]
+
+ (S (NP solutions/NNS) ./.) 
+
+
+>> Noun Phrases are: 
+ ['solutions']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('solutions', 'solut'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('solutions', 'solut'), ('.', '.')]
+
+>> Lemmatization: 
+ [('solutions', 'solution'), ('.', '.')]
+
+
+
+============================ Sentence 47 =============================
+
+Finally, keep the one with the minimum cost. 
+
+
+>> Tokens are: 
+ ['Finally', ',', 'keep', 'one', 'minimum', 'cost', '.']
+
+>> Bigrams are: 
+ [('Finally', ','), (',', 'keep'), ('keep', 'one'), ('one', 'minimum'), ('minimum', 'cost'), ('cost', '.')]
+
+>> Trigrams are: 
+ [('Finally', ',', 'keep'), (',', 'keep', 'one'), ('keep', 'one', 'minimum'), ('one', 'minimum', 'cost'), ('minimum', 'cost', '.')]
+
+>> POS Tags are: 
+ [('Finally', 'RB'), (',', ','), ('keep', 'VB'), ('one', 'CD'), ('minimum', 'NN'), ('cost', 'NN'), ('.', '.')]
+
+ (S Finally/RB ,/, keep/VB one/CD (NP minimum/NN cost/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['minimum cost']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Finally', 'final'), (',', ','), ('keep', 'keep'), ('one', 'one'), ('minimum', 'minimum'), ('cost', 'cost'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Finally', 'final'), (',', ','), ('keep', 'keep'), ('one', 'one'), ('minimum', 'minimum'), ('cost', 'cost'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Finally', 'Finally'), (',', ','), ('keep', 'keep'), ('one', 'one'), ('minimum', 'minimum'), ('cost', 'cost'), ('.', '.')]
+
+
+
+============================ Sentence 48 =============================
+
+end 
+
+
+>> Tokens are: 
+ ['end']
+
+>> Bigrams are: 
+ []
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('end', 'NN')]
+
+ (S (NP end/NN)) 
+
+
+>> Noun Phrases are: 
+ ['end']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('end', 'end')]
+
+>> Stemming using Snowball Stemmer: 
+ [('end', 'end')]
+
+>> Lemmatization: 
+ [('end', 'end')]
+

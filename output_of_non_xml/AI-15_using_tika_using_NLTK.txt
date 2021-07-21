@@ -1,0 +1,1700 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-15 Robotics is a domain in artificial intelligence that deals with the study of creating intelligent and efficient robots. 
+
+
+>> Tokens are: 
+ ['AI-15', 'Robotics', 'domain', 'artificial', 'intelligence', 'deals', 'study', 'creating', 'intelligent', 'efficient', 'robots', '.']
+
+>> Bigrams are: 
+ [('AI-15', 'Robotics'), ('Robotics', 'domain'), ('domain', 'artificial'), ('artificial', 'intelligence'), ('intelligence', 'deals'), ('deals', 'study'), ('study', 'creating'), ('creating', 'intelligent'), ('intelligent', 'efficient'), ('efficient', 'robots'), ('robots', '.')]
+
+>> Trigrams are: 
+ [('AI-15', 'Robotics', 'domain'), ('Robotics', 'domain', 'artificial'), ('domain', 'artificial', 'intelligence'), ('artificial', 'intelligence', 'deals'), ('intelligence', 'deals', 'study'), ('deals', 'study', 'creating'), ('study', 'creating', 'intelligent'), ('creating', 'intelligent', 'efficient'), ('intelligent', 'efficient', 'robots'), ('efficient', 'robots', '.')]
+
+>> POS Tags are: 
+ [('AI-15', 'JJ'), ('Robotics', 'NNPS'), ('domain', 'VBP'), ('artificial', 'JJ'), ('intelligence', 'NN'), ('deals', 'NNS'), ('study', 'VBP'), ('creating', 'VBG'), ('intelligent', 'JJ'), ('efficient', 'JJ'), ('robots', 'NNS'), ('.', '.')]
+
+ (S
+  AI-15/JJ
+  Robotics/NNPS
+  domain/VBP
+  (NP artificial/JJ intelligence/NN deals/NNS)
+  study/VBP
+  creating/VBG
+  (NP intelligent/JJ efficient/JJ robots/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['artificial intelligence deals', 'intelligent efficient robots']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-15', 'ai-15'), ('Robotics', 'robot'), ('domain', 'domain'), ('artificial', 'artifici'), ('intelligence', 'intellig'), ('deals', 'deal'), ('study', 'studi'), ('creating', 'creat'), ('intelligent', 'intellig'), ('efficient', 'effici'), ('robots', 'robot'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-15', 'ai-15'), ('Robotics', 'robot'), ('domain', 'domain'), ('artificial', 'artifici'), ('intelligence', 'intellig'), ('deals', 'deal'), ('study', 'studi'), ('creating', 'creat'), ('intelligent', 'intellig'), ('efficient', 'effici'), ('robots', 'robot'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-15', 'AI-15'), ('Robotics', 'Robotics'), ('domain', 'domain'), ('artificial', 'artificial'), ('intelligence', 'intelligence'), ('deals', 'deal'), ('study', 'study'), ('creating', 'creating'), ('intelligent', 'intelligent'), ('efficient', 'efficient'), ('robots', 'robot'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+What are Robots? 
+
+
+>> Tokens are: 
+ ['What', 'Robots', '?']
+
+>> Bigrams are: 
+ [('What', 'Robots'), ('Robots', '?')]
+
+>> Trigrams are: 
+ [('What', 'Robots', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Robots', 'NNP'), ('?', '.')]
+
+ (S What/WP (NP Robots/NNP) ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Robots']
+
+>> Named Entities are: 
+ [('PERSON', 'Robots')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Robots', 'robot'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Robots', 'robot'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Robots', 'Robots'), ('?', '?')]
+
+
+
+============================ Sentence 3 =============================
+
+Robots are the artificial agents acting in real world environment. 
+
+
+>> Tokens are: 
+ ['Robots', 'artificial', 'agents', 'acting', 'real', 'world', 'environment', '.']
+
+>> Bigrams are: 
+ [('Robots', 'artificial'), ('artificial', 'agents'), ('agents', 'acting'), ('acting', 'real'), ('real', 'world'), ('world', 'environment'), ('environment', '.')]
+
+>> Trigrams are: 
+ [('Robots', 'artificial', 'agents'), ('artificial', 'agents', 'acting'), ('agents', 'acting', 'real'), ('acting', 'real', 'world'), ('real', 'world', 'environment'), ('world', 'environment', '.')]
+
+>> POS Tags are: 
+ [('Robots', 'NNP'), ('artificial', 'JJ'), ('agents', 'NNS'), ('acting', 'VBG'), ('real', 'JJ'), ('world', 'NN'), ('environment', 'NN'), ('.', '.')]
+
+ (S
+  (NP Robots/NNP)
+  (NP artificial/JJ agents/NNS)
+  acting/VBG
+  (NP real/JJ world/NN environment/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Robots', 'artificial agents', 'real world environment']
+
+>> Named Entities are: 
+ [('GPE', 'Robots')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Robots', 'robot'), ('artificial', 'artifici'), ('agents', 'agent'), ('acting', 'act'), ('real', 'real'), ('world', 'world'), ('environment', 'environ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Robots', 'robot'), ('artificial', 'artifici'), ('agents', 'agent'), ('acting', 'act'), ('real', 'real'), ('world', 'world'), ('environment', 'environ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Robots', 'Robots'), ('artificial', 'artificial'), ('agents', 'agent'), ('acting', 'acting'), ('real', 'real'), ('world', 'world'), ('environment', 'environment'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+Objective Robots are aimed at manipulating the objects by perceiving, picking, moving, modifying the physical properties of object, destroying it, or to have an effect thereby freeing manpower from doing repetitive functions without getting bored, distracted, or exhausted. 
+
+
+>> Tokens are: 
+ ['Objective', 'Robots', 'aimed', 'manipulating', 'objects', 'perceiving', ',', 'picking', ',', 'moving', ',', 'modifying', 'physical', 'properties', 'object', ',', 'destroying', ',', 'effect', 'thereby', 'freeing', 'manpower', 'repetitive', 'functions', 'without', 'getting', 'bored', ',', 'distracted', ',', 'exhausted', '.']
+
+>> Bigrams are: 
+ [('Objective', 'Robots'), ('Robots', 'aimed'), ('aimed', 'manipulating'), ('manipulating', 'objects'), ('objects', 'perceiving'), ('perceiving', ','), (',', 'picking'), ('picking', ','), (',', 'moving'), ('moving', ','), (',', 'modifying'), ('modifying', 'physical'), ('physical', 'properties'), ('properties', 'object'), ('object', ','), (',', 'destroying'), ('destroying', ','), (',', 'effect'), ('effect', 'thereby'), ('thereby', 'freeing'), ('freeing', 'manpower'), ('manpower', 'repetitive'), ('repetitive', 'functions'), ('functions', 'without'), ('without', 'getting'), ('getting', 'bored'), ('bored', ','), (',', 'distracted'), ('distracted', ','), (',', 'exhausted'), ('exhausted', '.')]
+
+>> Trigrams are: 
+ [('Objective', 'Robots', 'aimed'), ('Robots', 'aimed', 'manipulating'), ('aimed', 'manipulating', 'objects'), ('manipulating', 'objects', 'perceiving'), ('objects', 'perceiving', ','), ('perceiving', ',', 'picking'), (',', 'picking', ','), ('picking', ',', 'moving'), (',', 'moving', ','), ('moving', ',', 'modifying'), (',', 'modifying', 'physical'), ('modifying', 'physical', 'properties'), ('physical', 'properties', 'object'), ('properties', 'object', ','), ('object', ',', 'destroying'), (',', 'destroying', ','), ('destroying', ',', 'effect'), (',', 'effect', 'thereby'), ('effect', 'thereby', 'freeing'), ('thereby', 'freeing', 'manpower'), ('freeing', 'manpower', 'repetitive'), ('manpower', 'repetitive', 'functions'), ('repetitive', 'functions', 'without'), ('functions', 'without', 'getting'), ('without', 'getting', 'bored'), ('getting', 'bored', ','), ('bored', ',', 'distracted'), (',', 'distracted', ','), ('distracted', ',', 'exhausted'), (',', 'exhausted', '.')]
+
+>> POS Tags are: 
+ [('Objective', 'JJ'), ('Robots', 'NNP'), ('aimed', 'VBD'), ('manipulating', 'VBG'), ('objects', 'NNS'), ('perceiving', 'VBG'), (',', ','), ('picking', 'VBG'), (',', ','), ('moving', 'VBG'), (',', ','), ('modifying', 'VBG'), ('physical', 'JJ'), ('properties', 'NNS'), ('object', 'VBP'), (',', ','), ('destroying', 'VBG'), (',', ','), ('effect', 'NN'), ('thereby', 'RB'), ('freeing', 'VBG'), ('manpower', 'RBR'), ('repetitive', 'JJ'), ('functions', 'NNS'), ('without', 'IN'), ('getting', 'VBG'), ('bored', 'VBN'), (',', ','), ('distracted', 'VBN'), (',', ','), ('exhausted', 'VBN'), ('.', '.')]
+
+ (S
+  (NP Objective/JJ Robots/NNP)
+  aimed/VBD
+  manipulating/VBG
+  (NP objects/NNS)
+  perceiving/VBG
+  ,/,
+  picking/VBG
+  ,/,
+  moving/VBG
+  ,/,
+  modifying/VBG
+  (NP physical/JJ properties/NNS)
+  object/VBP
+  ,/,
+  destroying/VBG
+  ,/,
+  (NP effect/NN)
+  thereby/RB
+  freeing/VBG
+  manpower/RBR
+  (NP repetitive/JJ functions/NNS)
+  without/IN
+  getting/VBG
+  bored/VBN
+  ,/,
+  distracted/VBN
+  ,/,
+  exhausted/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Objective Robots', 'objects', 'physical properties', 'effect', 'repetitive functions']
+
+>> Named Entities are: 
+ [('PERSON', 'Robots')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Objective', 'object'), ('Robots', 'robot'), ('aimed', 'aim'), ('manipulating', 'manipul'), ('objects', 'object'), ('perceiving', 'perceiv'), (',', ','), ('picking', 'pick'), (',', ','), ('moving', 'move'), (',', ','), ('modifying', 'modifi'), ('physical', 'physic'), ('properties', 'properti'), ('object', 'object'), (',', ','), ('destroying', 'destroy'), (',', ','), ('effect', 'effect'), ('thereby', 'therebi'), ('freeing', 'free'), ('manpower', 'manpow'), ('repetitive', 'repetit'), ('functions', 'function'), ('without', 'without'), ('getting', 'get'), ('bored', 'bore'), (',', ','), ('distracted', 'distract'), (',', ','), ('exhausted', 'exhaust'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Objective', 'object'), ('Robots', 'robot'), ('aimed', 'aim'), ('manipulating', 'manipul'), ('objects', 'object'), ('perceiving', 'perceiv'), (',', ','), ('picking', 'pick'), (',', ','), ('moving', 'move'), (',', ','), ('modifying', 'modifi'), ('physical', 'physic'), ('properties', 'properti'), ('object', 'object'), (',', ','), ('destroying', 'destroy'), (',', ','), ('effect', 'effect'), ('thereby', 'therebi'), ('freeing', 'free'), ('manpower', 'manpow'), ('repetitive', 'repetit'), ('functions', 'function'), ('without', 'without'), ('getting', 'get'), ('bored', 'bore'), (',', ','), ('distracted', 'distract'), (',', ','), ('exhausted', 'exhaust'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Objective', 'Objective'), ('Robots', 'Robots'), ('aimed', 'aimed'), ('manipulating', 'manipulating'), ('objects', 'object'), ('perceiving', 'perceiving'), (',', ','), ('picking', 'picking'), (',', ','), ('moving', 'moving'), (',', ','), ('modifying', 'modifying'), ('physical', 'physical'), ('properties', 'property'), ('object', 'object'), (',', ','), ('destroying', 'destroying'), (',', ','), ('effect', 'effect'), ('thereby', 'thereby'), ('freeing', 'freeing'), ('manpower', 'manpower'), ('repetitive', 'repetitive'), ('functions', 'function'), ('without', 'without'), ('getting', 'getting'), ('bored', 'bored'), (',', ','), ('distracted', 'distracted'), (',', ','), ('exhausted', 'exhausted'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+What is Robotics? 
+
+
+>> Tokens are: 
+ ['What', 'Robotics', '?']
+
+>> Bigrams are: 
+ [('What', 'Robotics'), ('Robotics', '?')]
+
+>> Trigrams are: 
+ [('What', 'Robotics', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Robotics', 'NNPS'), ('?', '.')]
+
+ (S What/WP Robotics/NNPS ?/.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [('PERSON', 'Robotics')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Robotics', 'robot'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Robotics', 'robot'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Robotics', 'Robotics'), ('?', '?')]
+
+
+
+============================ Sentence 6 =============================
+
+Robotics is a branch of AI, which is composed of Electrical Engineering, Mechanical Engineering, and Computer Science for designing, construction, and application of robots. 
+
+
+>> Tokens are: 
+ ['Robotics', 'branch', 'AI', ',', 'composed', 'Electrical', 'Engineering', ',', 'Mechanical', 'Engineering', ',', 'Computer', 'Science', 'designing', ',', 'construction', ',', 'application', 'robots', '.']
+
+>> Bigrams are: 
+ [('Robotics', 'branch'), ('branch', 'AI'), ('AI', ','), (',', 'composed'), ('composed', 'Electrical'), ('Electrical', 'Engineering'), ('Engineering', ','), (',', 'Mechanical'), ('Mechanical', 'Engineering'), ('Engineering', ','), (',', 'Computer'), ('Computer', 'Science'), ('Science', 'designing'), ('designing', ','), (',', 'construction'), ('construction', ','), (',', 'application'), ('application', 'robots'), ('robots', '.')]
+
+>> Trigrams are: 
+ [('Robotics', 'branch', 'AI'), ('branch', 'AI', ','), ('AI', ',', 'composed'), (',', 'composed', 'Electrical'), ('composed', 'Electrical', 'Engineering'), ('Electrical', 'Engineering', ','), ('Engineering', ',', 'Mechanical'), (',', 'Mechanical', 'Engineering'), ('Mechanical', 'Engineering', ','), ('Engineering', ',', 'Computer'), (',', 'Computer', 'Science'), ('Computer', 'Science', 'designing'), ('Science', 'designing', ','), ('designing', ',', 'construction'), (',', 'construction', ','), ('construction', ',', 'application'), (',', 'application', 'robots'), ('application', 'robots', '.')]
+
+>> POS Tags are: 
+ [('Robotics', 'NNS'), ('branch', 'NN'), ('AI', 'NNP'), (',', ','), ('composed', 'VBD'), ('Electrical', 'JJ'), ('Engineering', 'NNP'), (',', ','), ('Mechanical', 'NNP'), ('Engineering', 'NNP'), (',', ','), ('Computer', 'NNP'), ('Science', 'NNP'), ('designing', 'NN'), (',', ','), ('construction', 'NN'), (',', ','), ('application', 'NN'), ('robots', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Robotics/NNS branch/NN AI/NNP)
+  ,/,
+  composed/VBD
+  (NP Electrical/JJ Engineering/NNP)
+  ,/,
+  (NP Mechanical/NNP Engineering/NNP)
+  ,/,
+  (NP Computer/NNP Science/NNP designing/NN)
+  ,/,
+  (NP construction/NN)
+  ,/,
+  (NP application/NN robots/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Robotics branch AI', 'Electrical Engineering', 'Mechanical Engineering', 'Computer Science designing', 'construction', 'application robots']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Electrical Engineering'), ('PERSON', 'Mechanical Engineering'), ('ORGANIZATION', 'Computer Science')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Robotics', 'robot'), ('branch', 'branch'), ('AI', 'ai'), (',', ','), ('composed', 'compos'), ('Electrical', 'electr'), ('Engineering', 'engin'), (',', ','), ('Mechanical', 'mechan'), ('Engineering', 'engin'), (',', ','), ('Computer', 'comput'), ('Science', 'scienc'), ('designing', 'design'), (',', ','), ('construction', 'construct'), (',', ','), ('application', 'applic'), ('robots', 'robot'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Robotics', 'robot'), ('branch', 'branch'), ('AI', 'ai'), (',', ','), ('composed', 'compos'), ('Electrical', 'electr'), ('Engineering', 'engin'), (',', ','), ('Mechanical', 'mechan'), ('Engineering', 'engin'), (',', ','), ('Computer', 'comput'), ('Science', 'scienc'), ('designing', 'design'), (',', ','), ('construction', 'construct'), (',', ','), ('application', 'applic'), ('robots', 'robot'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Robotics', 'Robotics'), ('branch', 'branch'), ('AI', 'AI'), (',', ','), ('composed', 'composed'), ('Electrical', 'Electrical'), ('Engineering', 'Engineering'), (',', ','), ('Mechanical', 'Mechanical'), ('Engineering', 'Engineering'), (',', ','), ('Computer', 'Computer'), ('Science', 'Science'), ('designing', 'designing'), (',', ','), ('construction', 'construction'), (',', ','), ('application', 'application'), ('robots', 'robot'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+Aspects of Robotics · The robots have mechanical construction, form, or shape designed to accomplish a particular task. 
+
+
+>> Tokens are: 
+ ['Aspects', 'Robotics', '·', 'The', 'robots', 'mechanical', 'construction', ',', 'form', ',', 'shape', 'designed', 'accomplish', 'particular', 'task', '.']
+
+>> Bigrams are: 
+ [('Aspects', 'Robotics'), ('Robotics', '·'), ('·', 'The'), ('The', 'robots'), ('robots', 'mechanical'), ('mechanical', 'construction'), ('construction', ','), (',', 'form'), ('form', ','), (',', 'shape'), ('shape', 'designed'), ('designed', 'accomplish'), ('accomplish', 'particular'), ('particular', 'task'), ('task', '.')]
+
+>> Trigrams are: 
+ [('Aspects', 'Robotics', '·'), ('Robotics', '·', 'The'), ('·', 'The', 'robots'), ('The', 'robots', 'mechanical'), ('robots', 'mechanical', 'construction'), ('mechanical', 'construction', ','), ('construction', ',', 'form'), (',', 'form', ','), ('form', ',', 'shape'), (',', 'shape', 'designed'), ('shape', 'designed', 'accomplish'), ('designed', 'accomplish', 'particular'), ('accomplish', 'particular', 'task'), ('particular', 'task', '.')]
+
+>> POS Tags are: 
+ [('Aspects', 'NNS'), ('Robotics', 'NNPS'), ('·', 'VBP'), ('The', 'DT'), ('robots', 'NNS'), ('mechanical', 'JJ'), ('construction', 'NN'), (',', ','), ('form', 'NN'), (',', ','), ('shape', 'NN'), ('designed', 'VBN'), ('accomplish', 'JJ'), ('particular', 'JJ'), ('task', 'NN'), ('.', '.')]
+
+ (S
+  (NP Aspects/NNS)
+  Robotics/NNPS
+  ·/VBP
+  (NP The/DT robots/NNS)
+  (NP mechanical/JJ construction/NN)
+  ,/,
+  (NP form/NN)
+  ,/,
+  (NP shape/NN)
+  designed/VBN
+  (NP accomplish/JJ particular/JJ task/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Aspects', 'The robots', 'mechanical construction', 'form', 'shape', 'accomplish particular task']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Aspects', 'aspect'), ('Robotics', 'robot'), ('·', '·'), ('The', 'the'), ('robots', 'robot'), ('mechanical', 'mechan'), ('construction', 'construct'), (',', ','), ('form', 'form'), (',', ','), ('shape', 'shape'), ('designed', 'design'), ('accomplish', 'accomplish'), ('particular', 'particular'), ('task', 'task'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Aspects', 'aspect'), ('Robotics', 'robot'), ('·', '·'), ('The', 'the'), ('robots', 'robot'), ('mechanical', 'mechan'), ('construction', 'construct'), (',', ','), ('form', 'form'), (',', ','), ('shape', 'shape'), ('designed', 'design'), ('accomplish', 'accomplish'), ('particular', 'particular'), ('task', 'task'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Aspects', 'Aspects'), ('Robotics', 'Robotics'), ('·', '·'), ('The', 'The'), ('robots', 'robot'), ('mechanical', 'mechanical'), ('construction', 'construction'), (',', ','), ('form', 'form'), (',', ','), ('shape', 'shape'), ('designed', 'designed'), ('accomplish', 'accomplish'), ('particular', 'particular'), ('task', 'task'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+· They have electrical components which power and control the machinery. 
+
+
+>> Tokens are: 
+ ['·', 'They', 'electrical', 'components', 'power', 'control', 'machinery', '.']
+
+>> Bigrams are: 
+ [('·', 'They'), ('They', 'electrical'), ('electrical', 'components'), ('components', 'power'), ('power', 'control'), ('control', 'machinery'), ('machinery', '.')]
+
+>> Trigrams are: 
+ [('·', 'They', 'electrical'), ('They', 'electrical', 'components'), ('electrical', 'components', 'power'), ('components', 'power', 'control'), ('power', 'control', 'machinery'), ('control', 'machinery', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('They', 'PRP'), ('electrical', 'JJ'), ('components', 'NNS'), ('power', 'NN'), ('control', 'NN'), ('machinery', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/NN)
+  They/PRP
+  (NP electrical/JJ components/NNS power/NN control/NN machinery/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['·', 'electrical components power control machinery']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('They', 'they'), ('electrical', 'electr'), ('components', 'compon'), ('power', 'power'), ('control', 'control'), ('machinery', 'machineri'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('They', 'they'), ('electrical', 'electr'), ('components', 'compon'), ('power', 'power'), ('control', 'control'), ('machinery', 'machineri'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('They', 'They'), ('electrical', 'electrical'), ('components', 'component'), ('power', 'power'), ('control', 'control'), ('machinery', 'machinery'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+· They contain some level of computer program that determines what, when and how a robot does something. 
+
+
+>> Tokens are: 
+ ['·', 'They', 'contain', 'level', 'computer', 'program', 'determines', ',', 'robot', 'something', '.']
+
+>> Bigrams are: 
+ [('·', 'They'), ('They', 'contain'), ('contain', 'level'), ('level', 'computer'), ('computer', 'program'), ('program', 'determines'), ('determines', ','), (',', 'robot'), ('robot', 'something'), ('something', '.')]
+
+>> Trigrams are: 
+ [('·', 'They', 'contain'), ('They', 'contain', 'level'), ('contain', 'level', 'computer'), ('level', 'computer', 'program'), ('computer', 'program', 'determines'), ('program', 'determines', ','), ('determines', ',', 'robot'), (',', 'robot', 'something'), ('robot', 'something', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('They', 'PRP'), ('contain', 'VBP'), ('level', 'JJ'), ('computer', 'NN'), ('program', 'NN'), ('determines', 'NNS'), (',', ','), ('robot', 'NN'), ('something', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/NN)
+  They/PRP
+  contain/VBP
+  (NP level/JJ computer/NN program/NN determines/NNS)
+  ,/,
+  (NP robot/NN something/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['·', 'level computer program determines', 'robot something']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('They', 'they'), ('contain', 'contain'), ('level', 'level'), ('computer', 'comput'), ('program', 'program'), ('determines', 'determin'), (',', ','), ('robot', 'robot'), ('something', 'someth'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('They', 'they'), ('contain', 'contain'), ('level', 'level'), ('computer', 'comput'), ('program', 'program'), ('determines', 'determin'), (',', ','), ('robot', 'robot'), ('something', 'someth'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('They', 'They'), ('contain', 'contain'), ('level', 'level'), ('computer', 'computer'), ('program', 'program'), ('determines', 'determines'), (',', ','), ('robot', 'robot'), ('something', 'something'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+Difference in Robot System and Other AI Program Here is the difference between the two − 	AI Programs 	Robots  	They usually operate in computer-stimulated worlds. 
+
+
+>> Tokens are: 
+ ['Difference', 'Robot', 'System', 'Other', 'AI', 'Program', 'Here', 'difference', 'two', '−', 'AI', 'Programs', 'Robots', 'They', 'usually', 'operate', 'computer-stimulated', 'worlds', '.']
+
+>> Bigrams are: 
+ [('Difference', 'Robot'), ('Robot', 'System'), ('System', 'Other'), ('Other', 'AI'), ('AI', 'Program'), ('Program', 'Here'), ('Here', 'difference'), ('difference', 'two'), ('two', '−'), ('−', 'AI'), ('AI', 'Programs'), ('Programs', 'Robots'), ('Robots', 'They'), ('They', 'usually'), ('usually', 'operate'), ('operate', 'computer-stimulated'), ('computer-stimulated', 'worlds'), ('worlds', '.')]
+
+>> Trigrams are: 
+ [('Difference', 'Robot', 'System'), ('Robot', 'System', 'Other'), ('System', 'Other', 'AI'), ('Other', 'AI', 'Program'), ('AI', 'Program', 'Here'), ('Program', 'Here', 'difference'), ('Here', 'difference', 'two'), ('difference', 'two', '−'), ('two', '−', 'AI'), ('−', 'AI', 'Programs'), ('AI', 'Programs', 'Robots'), ('Programs', 'Robots', 'They'), ('Robots', 'They', 'usually'), ('They', 'usually', 'operate'), ('usually', 'operate', 'computer-stimulated'), ('operate', 'computer-stimulated', 'worlds'), ('computer-stimulated', 'worlds', '.')]
+
+>> POS Tags are: 
+ [('Difference', 'NNP'), ('Robot', 'NNP'), ('System', 'NNP'), ('Other', 'JJ'), ('AI', 'NNP'), ('Program', 'NNP'), ('Here', 'RB'), ('difference', 'NN'), ('two', 'CD'), ('−', 'NN'), ('AI', 'NNP'), ('Programs', 'NNP'), ('Robots', 'NNP'), ('They', 'PRP'), ('usually', 'RB'), ('operate', 'VBP'), ('computer-stimulated', 'JJ'), ('worlds', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Difference/NNP Robot/NNP System/NNP)
+  (NP Other/JJ AI/NNP Program/NNP)
+  Here/RB
+  (NP difference/NN)
+  two/CD
+  (NP −/NN AI/NNP Programs/NNP Robots/NNP)
+  They/PRP
+  usually/RB
+  operate/VBP
+  (NP computer-stimulated/JJ worlds/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Difference Robot System', 'Other AI Program', 'difference', '− AI Programs Robots', 'computer-stimulated worlds']
+
+>> Named Entities are: 
+ [('GPE', 'Difference'), ('PERSON', 'Robot System')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Difference', 'differ'), ('Robot', 'robot'), ('System', 'system'), ('Other', 'other'), ('AI', 'ai'), ('Program', 'program'), ('Here', 'here'), ('difference', 'differ'), ('two', 'two'), ('−', '−'), ('AI', 'ai'), ('Programs', 'program'), ('Robots', 'robot'), ('They', 'they'), ('usually', 'usual'), ('operate', 'oper'), ('computer-stimulated', 'computer-stimul'), ('worlds', 'world'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Difference', 'differ'), ('Robot', 'robot'), ('System', 'system'), ('Other', 'other'), ('AI', 'ai'), ('Program', 'program'), ('Here', 'here'), ('difference', 'differ'), ('two', 'two'), ('−', '−'), ('AI', 'ai'), ('Programs', 'program'), ('Robots', 'robot'), ('They', 'they'), ('usually', 'usual'), ('operate', 'oper'), ('computer-stimulated', 'computer-stimul'), ('worlds', 'world'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Difference', 'Difference'), ('Robot', 'Robot'), ('System', 'System'), ('Other', 'Other'), ('AI', 'AI'), ('Program', 'Program'), ('Here', 'Here'), ('difference', 'difference'), ('two', 'two'), ('−', '−'), ('AI', 'AI'), ('Programs', 'Programs'), ('Robots', 'Robots'), ('They', 'They'), ('usually', 'usually'), ('operate', 'operate'), ('computer-stimulated', 'computer-stimulated'), ('worlds', 'world'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+They operate in real physical world  	The input to an AI program is in symbols and rules. 
+
+
+>> Tokens are: 
+ ['They', 'operate', 'real', 'physical', 'world', 'The', 'input', 'AI', 'program', 'symbols', 'rules', '.']
+
+>> Bigrams are: 
+ [('They', 'operate'), ('operate', 'real'), ('real', 'physical'), ('physical', 'world'), ('world', 'The'), ('The', 'input'), ('input', 'AI'), ('AI', 'program'), ('program', 'symbols'), ('symbols', 'rules'), ('rules', '.')]
+
+>> Trigrams are: 
+ [('They', 'operate', 'real'), ('operate', 'real', 'physical'), ('real', 'physical', 'world'), ('physical', 'world', 'The'), ('world', 'The', 'input'), ('The', 'input', 'AI'), ('input', 'AI', 'program'), ('AI', 'program', 'symbols'), ('program', 'symbols', 'rules'), ('symbols', 'rules', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('operate', 'VBP'), ('real', 'JJ'), ('physical', 'JJ'), ('world', 'NN'), ('The', 'DT'), ('input', 'NN'), ('AI', 'NNP'), ('program', 'NN'), ('symbols', 'NNS'), ('rules', 'NNS'), ('.', '.')]
+
+ (S
+  They/PRP
+  operate/VBP
+  (NP real/JJ physical/JJ world/NN)
+  (NP The/DT input/NN AI/NNP program/NN symbols/NNS rules/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['real physical world', 'The input AI program symbols rules']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('operate', 'oper'), ('real', 'real'), ('physical', 'physic'), ('world', 'world'), ('The', 'the'), ('input', 'input'), ('AI', 'ai'), ('program', 'program'), ('symbols', 'symbol'), ('rules', 'rule'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('operate', 'oper'), ('real', 'real'), ('physical', 'physic'), ('world', 'world'), ('The', 'the'), ('input', 'input'), ('AI', 'ai'), ('program', 'program'), ('symbols', 'symbol'), ('rules', 'rule'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('operate', 'operate'), ('real', 'real'), ('physical', 'physical'), ('world', 'world'), ('The', 'The'), ('input', 'input'), ('AI', 'AI'), ('program', 'program'), ('symbols', 'symbol'), ('rules', 'rule'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+Inputs to robots is analog signal in the form of speech waveform or images  	They need general purpose computers to operate on. 
+
+
+>> Tokens are: 
+ ['Inputs', 'robots', 'analog', 'signal', 'form', 'speech', 'waveform', 'images', 'They', 'need', 'general', 'purpose', 'computers', 'operate', '.']
+
+>> Bigrams are: 
+ [('Inputs', 'robots'), ('robots', 'analog'), ('analog', 'signal'), ('signal', 'form'), ('form', 'speech'), ('speech', 'waveform'), ('waveform', 'images'), ('images', 'They'), ('They', 'need'), ('need', 'general'), ('general', 'purpose'), ('purpose', 'computers'), ('computers', 'operate'), ('operate', '.')]
+
+>> Trigrams are: 
+ [('Inputs', 'robots', 'analog'), ('robots', 'analog', 'signal'), ('analog', 'signal', 'form'), ('signal', 'form', 'speech'), ('form', 'speech', 'waveform'), ('speech', 'waveform', 'images'), ('waveform', 'images', 'They'), ('images', 'They', 'need'), ('They', 'need', 'general'), ('need', 'general', 'purpose'), ('general', 'purpose', 'computers'), ('purpose', 'computers', 'operate'), ('computers', 'operate', '.')]
+
+>> POS Tags are: 
+ [('Inputs', 'NNP'), ('robots', 'NNS'), ('analog', 'VBP'), ('signal', 'JJ'), ('form', 'NN'), ('speech', 'NN'), ('waveform', 'NN'), ('images', 'NNS'), ('They', 'PRP'), ('need', 'VBP'), ('general', 'JJ'), ('purpose', 'JJ'), ('computers', 'NNS'), ('operate', 'VBP'), ('.', '.')]
+
+ (S
+  (NP Inputs/NNP robots/NNS)
+  analog/VBP
+  (NP signal/JJ form/NN speech/NN waveform/NN images/NNS)
+  They/PRP
+  need/VBP
+  (NP general/JJ purpose/JJ computers/NNS)
+  operate/VBP
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Inputs robots', 'signal form speech waveform images', 'general purpose computers']
+
+>> Named Entities are: 
+ [('GPE', 'Inputs')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Inputs', 'input'), ('robots', 'robot'), ('analog', 'analog'), ('signal', 'signal'), ('form', 'form'), ('speech', 'speech'), ('waveform', 'waveform'), ('images', 'imag'), ('They', 'they'), ('need', 'need'), ('general', 'gener'), ('purpose', 'purpos'), ('computers', 'comput'), ('operate', 'oper'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Inputs', 'input'), ('robots', 'robot'), ('analog', 'analog'), ('signal', 'signal'), ('form', 'form'), ('speech', 'speech'), ('waveform', 'waveform'), ('images', 'imag'), ('They', 'they'), ('need', 'need'), ('general', 'general'), ('purpose', 'purpos'), ('computers', 'comput'), ('operate', 'oper'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Inputs', 'Inputs'), ('robots', 'robot'), ('analog', 'analog'), ('signal', 'signal'), ('form', 'form'), ('speech', 'speech'), ('waveform', 'waveform'), ('images', 'image'), ('They', 'They'), ('need', 'need'), ('general', 'general'), ('purpose', 'purpose'), ('computers', 'computer'), ('operate', 'operate'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+They need special hardware with sensors and effectors. 
+
+
+>> Tokens are: 
+ ['They', 'need', 'special', 'hardware', 'sensors', 'effectors', '.']
+
+>> Bigrams are: 
+ [('They', 'need'), ('need', 'special'), ('special', 'hardware'), ('hardware', 'sensors'), ('sensors', 'effectors'), ('effectors', '.')]
+
+>> Trigrams are: 
+ [('They', 'need', 'special'), ('need', 'special', 'hardware'), ('special', 'hardware', 'sensors'), ('hardware', 'sensors', 'effectors'), ('sensors', 'effectors', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('need', 'VBP'), ('special', 'JJ'), ('hardware', 'NN'), ('sensors', 'NNS'), ('effectors', 'NNS'), ('.', '.')]
+
+ (S
+  They/PRP
+  need/VBP
+  (NP special/JJ hardware/NN sensors/NNS effectors/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['special hardware sensors effectors']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('need', 'need'), ('special', 'special'), ('hardware', 'hardwar'), ('sensors', 'sensor'), ('effectors', 'effector'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('need', 'need'), ('special', 'special'), ('hardware', 'hardwar'), ('sensors', 'sensor'), ('effectors', 'effector'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('need', 'need'), ('special', 'special'), ('hardware', 'hardware'), ('sensors', 'sensor'), ('effectors', 'effector'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+Robot Locomotion Locomotion is the mechanism that makes a robot capable of moving in its environment. 
+
+
+>> Tokens are: 
+ ['Robot', 'Locomotion', 'Locomotion', 'mechanism', 'makes', 'robot', 'capable', 'moving', 'environment', '.']
+
+>> Bigrams are: 
+ [('Robot', 'Locomotion'), ('Locomotion', 'Locomotion'), ('Locomotion', 'mechanism'), ('mechanism', 'makes'), ('makes', 'robot'), ('robot', 'capable'), ('capable', 'moving'), ('moving', 'environment'), ('environment', '.')]
+
+>> Trigrams are: 
+ [('Robot', 'Locomotion', 'Locomotion'), ('Locomotion', 'Locomotion', 'mechanism'), ('Locomotion', 'mechanism', 'makes'), ('mechanism', 'makes', 'robot'), ('makes', 'robot', 'capable'), ('robot', 'capable', 'moving'), ('capable', 'moving', 'environment'), ('moving', 'environment', '.')]
+
+>> POS Tags are: 
+ [('Robot', 'NNP'), ('Locomotion', 'NNP'), ('Locomotion', 'NNP'), ('mechanism', 'NN'), ('makes', 'VBZ'), ('robot', 'NN'), ('capable', 'JJ'), ('moving', 'VBG'), ('environment', 'NN'), ('.', '.')]
+
+ (S
+  (NP Robot/NNP Locomotion/NNP Locomotion/NNP mechanism/NN)
+  makes/VBZ
+  (NP robot/NN)
+  capable/JJ
+  moving/VBG
+  (NP environment/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Robot Locomotion Locomotion mechanism', 'robot', 'environment']
+
+>> Named Entities are: 
+ [('PERSON', 'Robot'), ('ORGANIZATION', 'Locomotion Locomotion')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Robot', 'robot'), ('Locomotion', 'locomot'), ('Locomotion', 'locomot'), ('mechanism', 'mechan'), ('makes', 'make'), ('robot', 'robot'), ('capable', 'capabl'), ('moving', 'move'), ('environment', 'environ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Robot', 'robot'), ('Locomotion', 'locomot'), ('Locomotion', 'locomot'), ('mechanism', 'mechan'), ('makes', 'make'), ('robot', 'robot'), ('capable', 'capabl'), ('moving', 'move'), ('environment', 'environ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Robot', 'Robot'), ('Locomotion', 'Locomotion'), ('Locomotion', 'Locomotion'), ('mechanism', 'mechanism'), ('makes', 'make'), ('robot', 'robot'), ('capable', 'capable'), ('moving', 'moving'), ('environment', 'environment'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+There are various types of locomotions − · Legged · Wheeled · Combination of Legged and Wheeled Locomotion · Tracked slip/skid Legged Locomotion · This type of locomotion consumes more power while demonstrating walk, jump, trot, hop, climb up or down, etc. 
+
+
+>> Tokens are: 
+ ['There', 'various', 'types', 'locomotions', '−', '·', 'Legged', '·', 'Wheeled', '·', 'Combination', 'Legged', 'Wheeled', 'Locomotion', '·', 'Tracked', 'slip/skid', 'Legged', 'Locomotion', '·', 'This', 'type', 'locomotion', 'consumes', 'power', 'demonstrating', 'walk', ',', 'jump', ',', 'trot', ',', 'hop', ',', 'climb', ',', 'etc', '.']
+
+>> Bigrams are: 
+ [('There', 'various'), ('various', 'types'), ('types', 'locomotions'), ('locomotions', '−'), ('−', '·'), ('·', 'Legged'), ('Legged', '·'), ('·', 'Wheeled'), ('Wheeled', '·'), ('·', 'Combination'), ('Combination', 'Legged'), ('Legged', 'Wheeled'), ('Wheeled', 'Locomotion'), ('Locomotion', '·'), ('·', 'Tracked'), ('Tracked', 'slip/skid'), ('slip/skid', 'Legged'), ('Legged', 'Locomotion'), ('Locomotion', '·'), ('·', 'This'), ('This', 'type'), ('type', 'locomotion'), ('locomotion', 'consumes'), ('consumes', 'power'), ('power', 'demonstrating'), ('demonstrating', 'walk'), ('walk', ','), (',', 'jump'), ('jump', ','), (',', 'trot'), ('trot', ','), (',', 'hop'), ('hop', ','), (',', 'climb'), ('climb', ','), (',', 'etc'), ('etc', '.')]
+
+>> Trigrams are: 
+ [('There', 'various', 'types'), ('various', 'types', 'locomotions'), ('types', 'locomotions', '−'), ('locomotions', '−', '·'), ('−', '·', 'Legged'), ('·', 'Legged', '·'), ('Legged', '·', 'Wheeled'), ('·', 'Wheeled', '·'), ('Wheeled', '·', 'Combination'), ('·', 'Combination', 'Legged'), ('Combination', 'Legged', 'Wheeled'), ('Legged', 'Wheeled', 'Locomotion'), ('Wheeled', 'Locomotion', '·'), ('Locomotion', '·', 'Tracked'), ('·', 'Tracked', 'slip/skid'), ('Tracked', 'slip/skid', 'Legged'), ('slip/skid', 'Legged', 'Locomotion'), ('Legged', 'Locomotion', '·'), ('Locomotion', '·', 'This'), ('·', 'This', 'type'), ('This', 'type', 'locomotion'), ('type', 'locomotion', 'consumes'), ('locomotion', 'consumes', 'power'), ('consumes', 'power', 'demonstrating'), ('power', 'demonstrating', 'walk'), ('demonstrating', 'walk', ','), ('walk', ',', 'jump'), (',', 'jump', ','), ('jump', ',', 'trot'), (',', 'trot', ','), ('trot', ',', 'hop'), (',', 'hop', ','), ('hop', ',', 'climb'), (',', 'climb', ','), ('climb', ',', 'etc'), (',', 'etc', '.')]
+
+>> POS Tags are: 
+ [('There', 'EX'), ('various', 'JJ'), ('types', 'NNS'), ('locomotions', 'NNS'), ('−', 'VBP'), ('·', 'RB'), ('Legged', 'VBN'), ('·', 'NN'), ('Wheeled', 'VBD'), ('·', 'JJ'), ('Combination', 'NNP'), ('Legged', 'NNP'), ('Wheeled', 'NNP'), ('Locomotion', 'NNP'), ('·', 'NNP'), ('Tracked', 'NNP'), ('slip/skid', 'VBD'), ('Legged', 'NNP'), ('Locomotion', 'NNP'), ('·', 'NNP'), ('This', 'DT'), ('type', 'NN'), ('locomotion', 'NN'), ('consumes', 'VBZ'), ('power', 'NN'), ('demonstrating', 'VBG'), ('walk', 'NN'), (',', ','), ('jump', 'NN'), (',', ','), ('trot', 'NN'), (',', ','), ('hop', 'NN'), (',', ','), ('climb', 'NN'), (',', ','), ('etc', 'FW'), ('.', '.')]
+
+ (S
+  There/EX
+  (NP various/JJ types/NNS locomotions/NNS)
+  −/VBP
+  ·/RB
+  Legged/VBN
+  (NP ·/NN)
+  Wheeled/VBD
+  (NP
+    ·/JJ
+    Combination/NNP
+    Legged/NNP
+    Wheeled/NNP
+    Locomotion/NNP
+    ·/NNP
+    Tracked/NNP)
+  slip/skid/VBD
+  (NP Legged/NNP Locomotion/NNP ·/NNP)
+  (NP This/DT type/NN locomotion/NN)
+  consumes/VBZ
+  (NP power/NN)
+  demonstrating/VBG
+  (NP walk/NN)
+  ,/,
+  (NP jump/NN)
+  ,/,
+  (NP trot/NN)
+  ,/,
+  (NP hop/NN)
+  ,/,
+  (NP climb/NN)
+  ,/,
+  etc/FW
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['various types locomotions', '·', '· Combination Legged Wheeled Locomotion · Tracked', 'Legged Locomotion ·', 'This type locomotion', 'power', 'walk', 'jump', 'trot', 'hop', 'climb']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Combination Legged'), ('PERSON', 'Legged Locomotion')] 
+
+>> Stemming using Porter Stemmer: 
+ [('There', 'there'), ('various', 'variou'), ('types', 'type'), ('locomotions', 'locomot'), ('−', '−'), ('·', '·'), ('Legged', 'leg'), ('·', '·'), ('Wheeled', 'wheel'), ('·', '·'), ('Combination', 'combin'), ('Legged', 'leg'), ('Wheeled', 'wheel'), ('Locomotion', 'locomot'), ('·', '·'), ('Tracked', 'track'), ('slip/skid', 'slip/skid'), ('Legged', 'leg'), ('Locomotion', 'locomot'), ('·', '·'), ('This', 'thi'), ('type', 'type'), ('locomotion', 'locomot'), ('consumes', 'consum'), ('power', 'power'), ('demonstrating', 'demonstr'), ('walk', 'walk'), (',', ','), ('jump', 'jump'), (',', ','), ('trot', 'trot'), (',', ','), ('hop', 'hop'), (',', ','), ('climb', 'climb'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('There', 'there'), ('various', 'various'), ('types', 'type'), ('locomotions', 'locomot'), ('−', '−'), ('·', '·'), ('Legged', 'leg'), ('·', '·'), ('Wheeled', 'wheel'), ('·', '·'), ('Combination', 'combin'), ('Legged', 'leg'), ('Wheeled', 'wheel'), ('Locomotion', 'locomot'), ('·', '·'), ('Tracked', 'track'), ('slip/skid', 'slip/skid'), ('Legged', 'leg'), ('Locomotion', 'locomot'), ('·', '·'), ('This', 'this'), ('type', 'type'), ('locomotion', 'locomot'), ('consumes', 'consum'), ('power', 'power'), ('demonstrating', 'demonstr'), ('walk', 'walk'), (',', ','), ('jump', 'jump'), (',', ','), ('trot', 'trot'), (',', ','), ('hop', 'hop'), (',', ','), ('climb', 'climb'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('There', 'There'), ('various', 'various'), ('types', 'type'), ('locomotions', 'locomotion'), ('−', '−'), ('·', '·'), ('Legged', 'Legged'), ('·', '·'), ('Wheeled', 'Wheeled'), ('·', '·'), ('Combination', 'Combination'), ('Legged', 'Legged'), ('Wheeled', 'Wheeled'), ('Locomotion', 'Locomotion'), ('·', '·'), ('Tracked', 'Tracked'), ('slip/skid', 'slip/skid'), ('Legged', 'Legged'), ('Locomotion', 'Locomotion'), ('·', '·'), ('This', 'This'), ('type', 'type'), ('locomotion', 'locomotion'), ('consumes', 'consumes'), ('power', 'power'), ('demonstrating', 'demonstrating'), ('walk', 'walk'), (',', ','), ('jump', 'jump'), (',', ','), ('trot', 'trot'), (',', ','), ('hop', 'hop'), (',', ','), ('climb', 'climb'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+· It requires more number of motors to accomplish a movement. 
+
+
+>> Tokens are: 
+ ['·', 'It', 'requires', 'number', 'motors', 'accomplish', 'movement', '.']
+
+>> Bigrams are: 
+ [('·', 'It'), ('It', 'requires'), ('requires', 'number'), ('number', 'motors'), ('motors', 'accomplish'), ('accomplish', 'movement'), ('movement', '.')]
+
+>> Trigrams are: 
+ [('·', 'It', 'requires'), ('It', 'requires', 'number'), ('requires', 'number', 'motors'), ('number', 'motors', 'accomplish'), ('motors', 'accomplish', 'movement'), ('accomplish', 'movement', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('It', 'PRP'), ('requires', 'VBZ'), ('number', 'NN'), ('motors', 'NNS'), ('accomplish', 'JJ'), ('movement', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/NN)
+  It/PRP
+  requires/VBZ
+  (NP number/NN motors/NNS)
+  (NP accomplish/JJ movement/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['·', 'number motors', 'accomplish movement']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('It', 'it'), ('requires', 'requir'), ('number', 'number'), ('motors', 'motor'), ('accomplish', 'accomplish'), ('movement', 'movement'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('It', 'it'), ('requires', 'requir'), ('number', 'number'), ('motors', 'motor'), ('accomplish', 'accomplish'), ('movement', 'movement'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('It', 'It'), ('requires', 'requires'), ('number', 'number'), ('motors', 'motor'), ('accomplish', 'accomplish'), ('movement', 'movement'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+It is suited for rough as well as smooth terrain where irregular or too smooth surface makes it consume more power for a wheeled locomotion. 
+
+
+>> Tokens are: 
+ ['It', 'suited', 'rough', 'well', 'smooth', 'terrain', 'irregular', 'smooth', 'surface', 'makes', 'consume', 'power', 'wheeled', 'locomotion', '.']
+
+>> Bigrams are: 
+ [('It', 'suited'), ('suited', 'rough'), ('rough', 'well'), ('well', 'smooth'), ('smooth', 'terrain'), ('terrain', 'irregular'), ('irregular', 'smooth'), ('smooth', 'surface'), ('surface', 'makes'), ('makes', 'consume'), ('consume', 'power'), ('power', 'wheeled'), ('wheeled', 'locomotion'), ('locomotion', '.')]
+
+>> Trigrams are: 
+ [('It', 'suited', 'rough'), ('suited', 'rough', 'well'), ('rough', 'well', 'smooth'), ('well', 'smooth', 'terrain'), ('smooth', 'terrain', 'irregular'), ('terrain', 'irregular', 'smooth'), ('irregular', 'smooth', 'surface'), ('smooth', 'surface', 'makes'), ('surface', 'makes', 'consume'), ('makes', 'consume', 'power'), ('consume', 'power', 'wheeled'), ('power', 'wheeled', 'locomotion'), ('wheeled', 'locomotion', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('suited', 'VBD'), ('rough', 'RB'), ('well', 'RB'), ('smooth', 'JJ'), ('terrain', 'VBP'), ('irregular', 'JJ'), ('smooth', 'JJ'), ('surface', 'NN'), ('makes', 'VBZ'), ('consume', 'JJ'), ('power', 'NN'), ('wheeled', 'VBD'), ('locomotion', 'NN'), ('.', '.')]
+
+ (S
+  It/PRP
+  suited/VBD
+  rough/RB
+  well/RB
+  smooth/JJ
+  terrain/VBP
+  (NP irregular/JJ smooth/JJ surface/NN)
+  makes/VBZ
+  (NP consume/JJ power/NN)
+  wheeled/VBD
+  (NP locomotion/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['irregular smooth surface', 'consume power', 'locomotion']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('suited', 'suit'), ('rough', 'rough'), ('well', 'well'), ('smooth', 'smooth'), ('terrain', 'terrain'), ('irregular', 'irregular'), ('smooth', 'smooth'), ('surface', 'surfac'), ('makes', 'make'), ('consume', 'consum'), ('power', 'power'), ('wheeled', 'wheel'), ('locomotion', 'locomot'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('suited', 'suit'), ('rough', 'rough'), ('well', 'well'), ('smooth', 'smooth'), ('terrain', 'terrain'), ('irregular', 'irregular'), ('smooth', 'smooth'), ('surface', 'surfac'), ('makes', 'make'), ('consume', 'consum'), ('power', 'power'), ('wheeled', 'wheel'), ('locomotion', 'locomot'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('suited', 'suited'), ('rough', 'rough'), ('well', 'well'), ('smooth', 'smooth'), ('terrain', 'terrain'), ('irregular', 'irregular'), ('smooth', 'smooth'), ('surface', 'surface'), ('makes', 'make'), ('consume', 'consume'), ('power', 'power'), ('wheeled', 'wheeled'), ('locomotion', 'locomotion'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+It is little difficult to implement because of stability issues. 
+
+
+>> Tokens are: 
+ ['It', 'little', 'difficult', 'implement', 'stability', 'issues', '.']
+
+>> Bigrams are: 
+ [('It', 'little'), ('little', 'difficult'), ('difficult', 'implement'), ('implement', 'stability'), ('stability', 'issues'), ('issues', '.')]
+
+>> Trigrams are: 
+ [('It', 'little', 'difficult'), ('little', 'difficult', 'implement'), ('difficult', 'implement', 'stability'), ('implement', 'stability', 'issues'), ('stability', 'issues', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('little', 'JJ'), ('difficult', 'JJ'), ('implement', 'JJ'), ('stability', 'NN'), ('issues', 'NNS'), ('.', '.')]
+
+ (S
+  It/PRP
+  (NP little/JJ difficult/JJ implement/JJ stability/NN issues/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['little difficult implement stability issues']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('little', 'littl'), ('difficult', 'difficult'), ('implement', 'implement'), ('stability', 'stabil'), ('issues', 'issu'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('little', 'littl'), ('difficult', 'difficult'), ('implement', 'implement'), ('stability', 'stabil'), ('issues', 'issu'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('little', 'little'), ('difficult', 'difficult'), ('implement', 'implement'), ('stability', 'stability'), ('issues', 'issue'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+· It comes with the variety of one, two, four, and six legs. 
+
+
+>> Tokens are: 
+ ['·', 'It', 'comes', 'variety', 'one', ',', 'two', ',', 'four', ',', 'six', 'legs', '.']
+
+>> Bigrams are: 
+ [('·', 'It'), ('It', 'comes'), ('comes', 'variety'), ('variety', 'one'), ('one', ','), (',', 'two'), ('two', ','), (',', 'four'), ('four', ','), (',', 'six'), ('six', 'legs'), ('legs', '.')]
+
+>> Trigrams are: 
+ [('·', 'It', 'comes'), ('It', 'comes', 'variety'), ('comes', 'variety', 'one'), ('variety', 'one', ','), ('one', ',', 'two'), (',', 'two', ','), ('two', ',', 'four'), (',', 'four', ','), ('four', ',', 'six'), (',', 'six', 'legs'), ('six', 'legs', '.')]
+
+>> POS Tags are: 
+ [('·', 'VB'), ('It', 'PRP'), ('comes', 'VBZ'), ('variety', 'NN'), ('one', 'CD'), (',', ','), ('two', 'CD'), (',', ','), ('four', 'CD'), (',', ','), ('six', 'CD'), ('legs', 'NNS'), ('.', '.')]
+
+ (S
+  ·/VB
+  It/PRP
+  comes/VBZ
+  (NP variety/NN)
+  one/CD
+  ,/,
+  two/CD
+  ,/,
+  four/CD
+  ,/,
+  six/CD
+  (NP legs/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['variety', 'legs']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('It', 'it'), ('comes', 'come'), ('variety', 'varieti'), ('one', 'one'), (',', ','), ('two', 'two'), (',', ','), ('four', 'four'), (',', ','), ('six', 'six'), ('legs', 'leg'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('It', 'it'), ('comes', 'come'), ('variety', 'varieti'), ('one', 'one'), (',', ','), ('two', 'two'), (',', ','), ('four', 'four'), (',', ','), ('six', 'six'), ('legs', 'leg'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('It', 'It'), ('comes', 'come'), ('variety', 'variety'), ('one', 'one'), (',', ','), ('two', 'two'), (',', ','), ('four', 'four'), (',', ','), ('six', 'six'), ('legs', 'leg'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+If a robot has multiple legs then leg coordination is necessary for locomotion. 
+
+
+>> Tokens are: 
+ ['If', 'robot', 'multiple', 'legs', 'leg', 'coordination', 'necessary', 'locomotion', '.']
+
+>> Bigrams are: 
+ [('If', 'robot'), ('robot', 'multiple'), ('multiple', 'legs'), ('legs', 'leg'), ('leg', 'coordination'), ('coordination', 'necessary'), ('necessary', 'locomotion'), ('locomotion', '.')]
+
+>> Trigrams are: 
+ [('If', 'robot', 'multiple'), ('robot', 'multiple', 'legs'), ('multiple', 'legs', 'leg'), ('legs', 'leg', 'coordination'), ('leg', 'coordination', 'necessary'), ('coordination', 'necessary', 'locomotion'), ('necessary', 'locomotion', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('robot', 'JJ'), ('multiple', 'JJ'), ('legs', 'NNS'), ('leg', 'VBP'), ('coordination', 'NN'), ('necessary', 'JJ'), ('locomotion', 'NN'), ('.', '.')]
+
+ (S
+  If/IN
+  (NP robot/JJ multiple/JJ legs/NNS)
+  leg/VBP
+  (NP coordination/NN)
+  (NP necessary/JJ locomotion/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['robot multiple legs', 'coordination', 'necessary locomotion']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('robot', 'robot'), ('multiple', 'multipl'), ('legs', 'leg'), ('leg', 'leg'), ('coordination', 'coordin'), ('necessary', 'necessari'), ('locomotion', 'locomot'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('robot', 'robot'), ('multiple', 'multipl'), ('legs', 'leg'), ('leg', 'leg'), ('coordination', 'coordin'), ('necessary', 'necessari'), ('locomotion', 'locomot'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('robot', 'robot'), ('multiple', 'multiple'), ('legs', 'leg'), ('leg', 'leg'), ('coordination', 'coordination'), ('necessary', 'necessary'), ('locomotion', 'locomotion'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+The total number of possible gaits (a periodic sequence of lift and release events for each of the total legs) a robot can travel depends upon the number of its legs. 
+
+
+>> Tokens are: 
+ ['The', 'total', 'number', 'possible', 'gaits', '(', 'periodic', 'sequence', 'lift', 'release', 'events', 'total', 'legs', ')', 'robot', 'travel', 'depends', 'upon', 'number', 'legs', '.']
+
+>> Bigrams are: 
+ [('The', 'total'), ('total', 'number'), ('number', 'possible'), ('possible', 'gaits'), ('gaits', '('), ('(', 'periodic'), ('periodic', 'sequence'), ('sequence', 'lift'), ('lift', 'release'), ('release', 'events'), ('events', 'total'), ('total', 'legs'), ('legs', ')'), (')', 'robot'), ('robot', 'travel'), ('travel', 'depends'), ('depends', 'upon'), ('upon', 'number'), ('number', 'legs'), ('legs', '.')]
+
+>> Trigrams are: 
+ [('The', 'total', 'number'), ('total', 'number', 'possible'), ('number', 'possible', 'gaits'), ('possible', 'gaits', '('), ('gaits', '(', 'periodic'), ('(', 'periodic', 'sequence'), ('periodic', 'sequence', 'lift'), ('sequence', 'lift', 'release'), ('lift', 'release', 'events'), ('release', 'events', 'total'), ('events', 'total', 'legs'), ('total', 'legs', ')'), ('legs', ')', 'robot'), (')', 'robot', 'travel'), ('robot', 'travel', 'depends'), ('travel', 'depends', 'upon'), ('depends', 'upon', 'number'), ('upon', 'number', 'legs'), ('number', 'legs', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('total', 'JJ'), ('number', 'NN'), ('possible', 'JJ'), ('gaits', 'NNS'), ('(', '('), ('periodic', 'JJ'), ('sequence', 'NN'), ('lift', 'NN'), ('release', 'NN'), ('events', 'NNS'), ('total', 'JJ'), ('legs', 'NNS'), (')', ')'), ('robot', 'VBP'), ('travel', 'NN'), ('depends', 'VBZ'), ('upon', 'IN'), ('number', 'NN'), ('legs', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT total/JJ number/NN)
+  (NP possible/JJ gaits/NNS)
+  (/(
+  (NP periodic/JJ sequence/NN lift/NN release/NN events/NNS)
+  (NP total/JJ legs/NNS)
+  )/)
+  robot/VBP
+  (NP travel/NN)
+  depends/VBZ
+  upon/IN
+  (NP number/NN legs/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The total number', 'possible gaits', 'periodic sequence lift release events', 'total legs', 'travel', 'number legs']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('total', 'total'), ('number', 'number'), ('possible', 'possibl'), ('gaits', 'gait'), ('(', '('), ('periodic', 'period'), ('sequence', 'sequenc'), ('lift', 'lift'), ('release', 'releas'), ('events', 'event'), ('total', 'total'), ('legs', 'leg'), (')', ')'), ('robot', 'robot'), ('travel', 'travel'), ('depends', 'depend'), ('upon', 'upon'), ('number', 'number'), ('legs', 'leg'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('total', 'total'), ('number', 'number'), ('possible', 'possibl'), ('gaits', 'gait'), ('(', '('), ('periodic', 'period'), ('sequence', 'sequenc'), ('lift', 'lift'), ('release', 'releas'), ('events', 'event'), ('total', 'total'), ('legs', 'leg'), (')', ')'), ('robot', 'robot'), ('travel', 'travel'), ('depends', 'depend'), ('upon', 'upon'), ('number', 'number'), ('legs', 'leg'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('total', 'total'), ('number', 'number'), ('possible', 'possible'), ('gaits', 'gait'), ('(', '('), ('periodic', 'periodic'), ('sequence', 'sequence'), ('lift', 'lift'), ('release', 'release'), ('events', 'event'), ('total', 'total'), ('legs', 'leg'), (')', ')'), ('robot', 'robot'), ('travel', 'travel'), ('depends', 'depends'), ('upon', 'upon'), ('number', 'number'), ('legs', 'leg'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+If a robot has k legs, then the number of possible events N = (2k-1)!. 
+
+
+>> Tokens are: 
+ ['If', 'robot', 'k', 'legs', ',', 'number', 'possible', 'events', 'N', '=', '(', '2k-1', ')', '!', '.']
+
+>> Bigrams are: 
+ [('If', 'robot'), ('robot', 'k'), ('k', 'legs'), ('legs', ','), (',', 'number'), ('number', 'possible'), ('possible', 'events'), ('events', 'N'), ('N', '='), ('=', '('), ('(', '2k-1'), ('2k-1', ')'), (')', '!'), ('!', '.')]
+
+>> Trigrams are: 
+ [('If', 'robot', 'k'), ('robot', 'k', 'legs'), ('k', 'legs', ','), ('legs', ',', 'number'), (',', 'number', 'possible'), ('number', 'possible', 'events'), ('possible', 'events', 'N'), ('events', 'N', '='), ('N', '=', '('), ('=', '(', '2k-1'), ('(', '2k-1', ')'), ('2k-1', ')', '!'), (')', '!', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('robot', 'VBN'), ('k', 'NN'), ('legs', 'NNS'), (',', ','), ('number', 'NN'), ('possible', 'JJ'), ('events', 'NNS'), ('N', 'NNP'), ('=', 'NNP'), ('(', '('), ('2k-1', 'JJ'), (')', ')'), ('!', '.'), ('.', '.')]
+
+ (S
+  If/IN
+  robot/VBN
+  (NP k/NN legs/NNS)
+  ,/,
+  (NP number/NN)
+  (NP possible/JJ events/NNS N/NNP =/NNP)
+  (/(
+  2k-1/JJ
+  )/)
+  !/.
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['k legs', 'number', 'possible events N =']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('robot', 'robot'), ('k', 'k'), ('legs', 'leg'), (',', ','), ('number', 'number'), ('possible', 'possibl'), ('events', 'event'), ('N', 'n'), ('=', '='), ('(', '('), ('2k-1', '2k-1'), (')', ')'), ('!', '!'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('robot', 'robot'), ('k', 'k'), ('legs', 'leg'), (',', ','), ('number', 'number'), ('possible', 'possibl'), ('events', 'event'), ('N', 'n'), ('=', '='), ('(', '('), ('2k-1', '2k-1'), (')', ')'), ('!', '!'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('robot', 'robot'), ('k', 'k'), ('legs', 'leg'), (',', ','), ('number', 'number'), ('possible', 'possible'), ('events', 'event'), ('N', 'N'), ('=', '='), ('(', '('), ('2k-1', '2k-1'), (')', ')'), ('!', '!'), ('.', '.')]
+
+
+
+============================ Sentence 23 =============================
+
+In case of a two-legged robot (k=2), the number of possible events is N = (2k-1)! 
+
+
+>> Tokens are: 
+ ['In', 'case', 'two-legged', 'robot', '(', 'k=2', ')', ',', 'number', 'possible', 'events', 'N', '=', '(', '2k-1', ')', '!']
+
+>> Bigrams are: 
+ [('In', 'case'), ('case', 'two-legged'), ('two-legged', 'robot'), ('robot', '('), ('(', 'k=2'), ('k=2', ')'), (')', ','), (',', 'number'), ('number', 'possible'), ('possible', 'events'), ('events', 'N'), ('N', '='), ('=', '('), ('(', '2k-1'), ('2k-1', ')'), (')', '!')]
+
+>> Trigrams are: 
+ [('In', 'case', 'two-legged'), ('case', 'two-legged', 'robot'), ('two-legged', 'robot', '('), ('robot', '(', 'k=2'), ('(', 'k=2', ')'), ('k=2', ')', ','), (')', ',', 'number'), (',', 'number', 'possible'), ('number', 'possible', 'events'), ('possible', 'events', 'N'), ('events', 'N', '='), ('N', '=', '('), ('=', '(', '2k-1'), ('(', '2k-1', ')'), ('2k-1', ')', '!')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('case', 'NN'), ('two-legged', 'JJ'), ('robot', 'NN'), ('(', '('), ('k=2', 'NN'), (')', ')'), (',', ','), ('number', 'NN'), ('possible', 'JJ'), ('events', 'NNS'), ('N', 'NNP'), ('=', 'NNP'), ('(', '('), ('2k-1', 'JJ'), (')', ')'), ('!', '.')]
+
+ (S
+  In/IN
+  (NP case/NN)
+  (NP two-legged/JJ robot/NN)
+  (/(
+  (NP k=2/NN)
+  )/)
+  ,/,
+  (NP number/NN)
+  (NP possible/JJ events/NNS N/NNP =/NNP)
+  (/(
+  2k-1/JJ
+  )/)
+  !/.) 
+
+
+>> Noun Phrases are: 
+ ['case', 'two-legged robot', 'k=2', 'number', 'possible events N =']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('case', 'case'), ('two-legged', 'two-leg'), ('robot', 'robot'), ('(', '('), ('k=2', 'k=2'), (')', ')'), (',', ','), ('number', 'number'), ('possible', 'possibl'), ('events', 'event'), ('N', 'n'), ('=', '='), ('(', '('), ('2k-1', '2k-1'), (')', ')'), ('!', '!')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('case', 'case'), ('two-legged', 'two-leg'), ('robot', 'robot'), ('(', '('), ('k=2', 'k=2'), (')', ')'), (',', ','), ('number', 'number'), ('possible', 'possibl'), ('events', 'event'), ('N', 'n'), ('=', '='), ('(', '('), ('2k-1', '2k-1'), (')', ')'), ('!', '!')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('case', 'case'), ('two-legged', 'two-legged'), ('robot', 'robot'), ('(', '('), ('k=2', 'k=2'), (')', ')'), (',', ','), ('number', 'number'), ('possible', 'possible'), ('events', 'event'), ('N', 'N'), ('=', '='), ('(', '('), ('2k-1', '2k-1'), (')', ')'), ('!', '!')]
+
+
+
+============================ Sentence 24 =============================
+
+= (2*2-1)! 
+
+
+>> Tokens are: 
+ ['=', '(', '2', '*', '2-1', ')', '!']
+
+>> Bigrams are: 
+ [('=', '('), ('(', '2'), ('2', '*'), ('*', '2-1'), ('2-1', ')'), (')', '!')]
+
+>> Trigrams are: 
+ [('=', '(', '2'), ('(', '2', '*'), ('2', '*', '2-1'), ('*', '2-1', ')'), ('2-1', ')', '!')]
+
+>> POS Tags are: 
+ [('=', 'NN'), ('(', '('), ('2', 'CD'), ('*', 'NNP'), ('2-1', 'JJ'), (')', ')'), ('!', '.')]
+
+ (S (NP =/NN) (/( 2/CD (NP */NNP) 2-1/JJ )/) !/.) 
+
+
+>> Noun Phrases are: 
+ ['=', '*']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('=', '='), ('(', '('), ('2', '2'), ('*', '*'), ('2-1', '2-1'), (')', ')'), ('!', '!')]
+
+>> Stemming using Snowball Stemmer: 
+ [('=', '='), ('(', '('), ('2', '2'), ('*', '*'), ('2-1', '2-1'), (')', ')'), ('!', '!')]
+
+>> Lemmatization: 
+ [('=', '='), ('(', '('), ('2', '2'), ('*', '*'), ('2-1', '2-1'), (')', ')'), ('!', '!')]
+
+
+
+============================ Sentence 25 =============================
+
+= 3! 
+
+
+>> Tokens are: 
+ ['=', '3', '!']
+
+>> Bigrams are: 
+ [('=', '3'), ('3', '!')]
+
+>> Trigrams are: 
+ [('=', '3', '!')]
+
+>> POS Tags are: 
+ [('=', '$'), ('3', 'CD'), ('!', '.')]
+
+ (S =/$ 3/CD !/.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('=', '='), ('3', '3'), ('!', '!')]
+
+>> Stemming using Snowball Stemmer: 
+ [('=', '='), ('3', '3'), ('!', '!')]
+
+>> Lemmatization: 
+ [('=', '='), ('3', '3'), ('!', '!')]
+
+
+
+============================ Sentence 26 =============================
+
+= 6. 
+
+
+>> Tokens are: 
+ ['=', '6', '.']
+
+>> Bigrams are: 
+ [('=', '6'), ('6', '.')]
+
+>> Trigrams are: 
+ [('=', '6', '.')]
+
+>> POS Tags are: 
+ [('=', 'RB'), ('6', 'CD'), ('.', '.')]
+
+ (S =/RB 6/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('=', '='), ('6', '6'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('=', '='), ('6', '6'), ('.', '.')]
+
+>> Lemmatization: 
+ [('=', '='), ('6', '6'), ('.', '.')]
+
+
+
+============================ Sentence 27 =============================
+
+Hence there are six possible different events − · Lifting the Left leg · Releasing the Left leg · Lifting the Right leg · Releasing the Right leg · Lifting both the legs together · Releasing both the legs together In case of k=6 legs, there are 39916800 possible events. 
+
+
+>> Tokens are: 
+ ['Hence', 'six', 'possible', 'different', 'events', '−', '·', 'Lifting', 'Left', 'leg', '·', 'Releasing', 'Left', 'leg', '·', 'Lifting', 'Right', 'leg', '·', 'Releasing', 'Right', 'leg', '·', 'Lifting', 'legs', 'together', '·', 'Releasing', 'legs', 'together', 'In', 'case', 'k=6', 'legs', ',', '39916800', 'possible', 'events', '.']
+
+>> Bigrams are: 
+ [('Hence', 'six'), ('six', 'possible'), ('possible', 'different'), ('different', 'events'), ('events', '−'), ('−', '·'), ('·', 'Lifting'), ('Lifting', 'Left'), ('Left', 'leg'), ('leg', '·'), ('·', 'Releasing'), ('Releasing', 'Left'), ('Left', 'leg'), ('leg', '·'), ('·', 'Lifting'), ('Lifting', 'Right'), ('Right', 'leg'), ('leg', '·'), ('·', 'Releasing'), ('Releasing', 'Right'), ('Right', 'leg'), ('leg', '·'), ('·', 'Lifting'), ('Lifting', 'legs'), ('legs', 'together'), ('together', '·'), ('·', 'Releasing'), ('Releasing', 'legs'), ('legs', 'together'), ('together', 'In'), ('In', 'case'), ('case', 'k=6'), ('k=6', 'legs'), ('legs', ','), (',', '39916800'), ('39916800', 'possible'), ('possible', 'events'), ('events', '.')]
+
+>> Trigrams are: 
+ [('Hence', 'six', 'possible'), ('six', 'possible', 'different'), ('possible', 'different', 'events'), ('different', 'events', '−'), ('events', '−', '·'), ('−', '·', 'Lifting'), ('·', 'Lifting', 'Left'), ('Lifting', 'Left', 'leg'), ('Left', 'leg', '·'), ('leg', '·', 'Releasing'), ('·', 'Releasing', 'Left'), ('Releasing', 'Left', 'leg'), ('Left', 'leg', '·'), ('leg', '·', 'Lifting'), ('·', 'Lifting', 'Right'), ('Lifting', 'Right', 'leg'), ('Right', 'leg', '·'), ('leg', '·', 'Releasing'), ('·', 'Releasing', 'Right'), ('Releasing', 'Right', 'leg'), ('Right', 'leg', '·'), ('leg', '·', 'Lifting'), ('·', 'Lifting', 'legs'), ('Lifting', 'legs', 'together'), ('legs', 'together', '·'), ('together', '·', 'Releasing'), ('·', 'Releasing', 'legs'), ('Releasing', 'legs', 'together'), ('legs', 'together', 'In'), ('together', 'In', 'case'), ('In', 'case', 'k=6'), ('case', 'k=6', 'legs'), ('k=6', 'legs', ','), ('legs', ',', '39916800'), (',', '39916800', 'possible'), ('39916800', 'possible', 'events'), ('possible', 'events', '.')]
+
+>> POS Tags are: 
+ [('Hence', 'NNP'), ('six', 'CD'), ('possible', 'JJ'), ('different', 'JJ'), ('events', 'NNS'), ('−', 'VBP'), ('·', 'JJ'), ('Lifting', 'NNP'), ('Left', 'NNP'), ('leg', 'VBZ'), ('·', 'JJ'), ('Releasing', 'NNP'), ('Left', 'NNP'), ('leg', 'VBZ'), ('·', 'JJ'), ('Lifting', 'VBG'), ('Right', 'NNP'), ('leg', 'NN'), ('·', 'NNP'), ('Releasing', 'NNP'), ('Right', 'NNP'), ('leg', 'NN'), ('·', 'NNP'), ('Lifting', 'NNP'), ('legs', 'VBZ'), ('together', 'RB'), ('·', 'JJ'), ('Releasing', 'NNP'), ('legs', 'NN'), ('together', 'RB'), ('In', 'IN'), ('case', 'NN'), ('k=6', 'NN'), ('legs', 'NNS'), (',', ','), ('39916800', 'CD'), ('possible', 'JJ'), ('events', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Hence/NNP)
+  six/CD
+  (NP possible/JJ different/JJ events/NNS)
+  −/VBP
+  (NP ·/JJ Lifting/NNP Left/NNP)
+  leg/VBZ
+  (NP ·/JJ Releasing/NNP Left/NNP)
+  leg/VBZ
+  ·/JJ
+  Lifting/VBG
+  (NP
+    Right/NNP
+    leg/NN
+    ·/NNP
+    Releasing/NNP
+    Right/NNP
+    leg/NN
+    ·/NNP
+    Lifting/NNP)
+  legs/VBZ
+  together/RB
+  (NP ·/JJ Releasing/NNP legs/NN)
+  together/RB
+  In/IN
+  (NP case/NN k=6/NN legs/NNS)
+  ,/,
+  39916800/CD
+  (NP possible/JJ events/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Hence', 'possible different events', '· Lifting Left', '· Releasing Left', 'Right leg · Releasing Right leg · Lifting', '· Releasing legs', 'case k=6 legs', 'possible events']
+
+>> Named Entities are: 
+ [('PERSON', 'Right')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Hence', 'henc'), ('six', 'six'), ('possible', 'possibl'), ('different', 'differ'), ('events', 'event'), ('−', '−'), ('·', '·'), ('Lifting', 'lift'), ('Left', 'left'), ('leg', 'leg'), ('·', '·'), ('Releasing', 'releas'), ('Left', 'left'), ('leg', 'leg'), ('·', '·'), ('Lifting', 'lift'), ('Right', 'right'), ('leg', 'leg'), ('·', '·'), ('Releasing', 'releas'), ('Right', 'right'), ('leg', 'leg'), ('·', '·'), ('Lifting', 'lift'), ('legs', 'leg'), ('together', 'togeth'), ('·', '·'), ('Releasing', 'releas'), ('legs', 'leg'), ('together', 'togeth'), ('In', 'in'), ('case', 'case'), ('k=6', 'k=6'), ('legs', 'leg'), (',', ','), ('39916800', '39916800'), ('possible', 'possibl'), ('events', 'event'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Hence', 'henc'), ('six', 'six'), ('possible', 'possibl'), ('different', 'differ'), ('events', 'event'), ('−', '−'), ('·', '·'), ('Lifting', 'lift'), ('Left', 'left'), ('leg', 'leg'), ('·', '·'), ('Releasing', 'releas'), ('Left', 'left'), ('leg', 'leg'), ('·', '·'), ('Lifting', 'lift'), ('Right', 'right'), ('leg', 'leg'), ('·', '·'), ('Releasing', 'releas'), ('Right', 'right'), ('leg', 'leg'), ('·', '·'), ('Lifting', 'lift'), ('legs', 'leg'), ('together', 'togeth'), ('·', '·'), ('Releasing', 'releas'), ('legs', 'leg'), ('together', 'togeth'), ('In', 'in'), ('case', 'case'), ('k=6', 'k=6'), ('legs', 'leg'), (',', ','), ('39916800', '39916800'), ('possible', 'possibl'), ('events', 'event'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Hence', 'Hence'), ('six', 'six'), ('possible', 'possible'), ('different', 'different'), ('events', 'event'), ('−', '−'), ('·', '·'), ('Lifting', 'Lifting'), ('Left', 'Left'), ('leg', 'leg'), ('·', '·'), ('Releasing', 'Releasing'), ('Left', 'Left'), ('leg', 'leg'), ('·', '·'), ('Lifting', 'Lifting'), ('Right', 'Right'), ('leg', 'leg'), ('·', '·'), ('Releasing', 'Releasing'), ('Right', 'Right'), ('leg', 'leg'), ('·', '·'), ('Lifting', 'Lifting'), ('legs', 'leg'), ('together', 'together'), ('·', '·'), ('Releasing', 'Releasing'), ('legs', 'leg'), ('together', 'together'), ('In', 'In'), ('case', 'case'), ('k=6', 'k=6'), ('legs', 'leg'), (',', ','), ('39916800', '39916800'), ('possible', 'possible'), ('events', 'event'), ('.', '.')]
+
+
+
+============================ Sentence 28 =============================
+
+Hence the complexity of robots is directly proportional to the number of legs. 
+
+
+>> Tokens are: 
+ ['Hence', 'complexity', 'robots', 'directly', 'proportional', 'number', 'legs', '.']
+
+>> Bigrams are: 
+ [('Hence', 'complexity'), ('complexity', 'robots'), ('robots', 'directly'), ('directly', 'proportional'), ('proportional', 'number'), ('number', 'legs'), ('legs', '.')]
+
+>> Trigrams are: 
+ [('Hence', 'complexity', 'robots'), ('complexity', 'robots', 'directly'), ('robots', 'directly', 'proportional'), ('directly', 'proportional', 'number'), ('proportional', 'number', 'legs'), ('number', 'legs', '.')]
+
+>> POS Tags are: 
+ [('Hence', 'NNP'), ('complexity', 'NN'), ('robots', 'NNS'), ('directly', 'RB'), ('proportional', 'JJ'), ('number', 'NN'), ('legs', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Hence/NNP complexity/NN robots/NNS)
+  directly/RB
+  (NP proportional/JJ number/NN legs/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Hence complexity robots', 'proportional number legs']
+
+>> Named Entities are: 
+ [('GPE', 'Hence')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Hence', 'henc'), ('complexity', 'complex'), ('robots', 'robot'), ('directly', 'directli'), ('proportional', 'proport'), ('number', 'number'), ('legs', 'leg'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Hence', 'henc'), ('complexity', 'complex'), ('robots', 'robot'), ('directly', 'direct'), ('proportional', 'proport'), ('number', 'number'), ('legs', 'leg'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Hence', 'Hence'), ('complexity', 'complexity'), ('robots', 'robot'), ('directly', 'directly'), ('proportional', 'proportional'), ('number', 'number'), ('legs', 'leg'), ('.', '.')]
+
+
+
+============================ Sentence 29 =============================
+
+Wheeled Locomotion It requires fewer number of motors to accomplish a movement. 
+
+
+>> Tokens are: 
+ ['Wheeled', 'Locomotion', 'It', 'requires', 'fewer', 'number', 'motors', 'accomplish', 'movement', '.']
+
+>> Bigrams are: 
+ [('Wheeled', 'Locomotion'), ('Locomotion', 'It'), ('It', 'requires'), ('requires', 'fewer'), ('fewer', 'number'), ('number', 'motors'), ('motors', 'accomplish'), ('accomplish', 'movement'), ('movement', '.')]
+
+>> Trigrams are: 
+ [('Wheeled', 'Locomotion', 'It'), ('Locomotion', 'It', 'requires'), ('It', 'requires', 'fewer'), ('requires', 'fewer', 'number'), ('fewer', 'number', 'motors'), ('number', 'motors', 'accomplish'), ('motors', 'accomplish', 'movement'), ('accomplish', 'movement', '.')]
+
+>> POS Tags are: 
+ [('Wheeled', 'VBN'), ('Locomotion', 'NN'), ('It', 'PRP'), ('requires', 'VBZ'), ('fewer', 'JJR'), ('number', 'NN'), ('motors', 'NNS'), ('accomplish', 'JJ'), ('movement', 'NN'), ('.', '.')]
+
+ (S
+  Wheeled/VBN
+  (NP Locomotion/NN)
+  It/PRP
+  requires/VBZ
+  fewer/JJR
+  (NP number/NN motors/NNS)
+  (NP accomplish/JJ movement/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Locomotion', 'number motors', 'accomplish movement']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Wheeled', 'wheel'), ('Locomotion', 'locomot'), ('It', 'it'), ('requires', 'requir'), ('fewer', 'fewer'), ('number', 'number'), ('motors', 'motor'), ('accomplish', 'accomplish'), ('movement', 'movement'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Wheeled', 'wheel'), ('Locomotion', 'locomot'), ('It', 'it'), ('requires', 'requir'), ('fewer', 'fewer'), ('number', 'number'), ('motors', 'motor'), ('accomplish', 'accomplish'), ('movement', 'movement'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Wheeled', 'Wheeled'), ('Locomotion', 'Locomotion'), ('It', 'It'), ('requires', 'requires'), ('fewer', 'fewer'), ('number', 'number'), ('motors', 'motor'), ('accomplish', 'accomplish'), ('movement', 'movement'), ('.', '.')]
+
+
+
+============================ Sentence 30 =============================
+
+It is little easy to implement as there are less stability issues in case of more number of wheels. 
+
+
+>> Tokens are: 
+ ['It', 'little', 'easy', 'implement', 'less', 'stability', 'issues', 'case', 'number', 'wheels', '.']
+
+>> Bigrams are: 
+ [('It', 'little'), ('little', 'easy'), ('easy', 'implement'), ('implement', 'less'), ('less', 'stability'), ('stability', 'issues'), ('issues', 'case'), ('case', 'number'), ('number', 'wheels'), ('wheels', '.')]
+
+>> Trigrams are: 
+ [('It', 'little', 'easy'), ('little', 'easy', 'implement'), ('easy', 'implement', 'less'), ('implement', 'less', 'stability'), ('less', 'stability', 'issues'), ('stability', 'issues', 'case'), ('issues', 'case', 'number'), ('case', 'number', 'wheels'), ('number', 'wheels', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('little', 'JJ'), ('easy', 'JJ'), ('implement', 'NN'), ('less', 'JJR'), ('stability', 'NN'), ('issues', 'NNS'), ('case', 'NN'), ('number', 'NN'), ('wheels', 'NNS'), ('.', '.')]
+
+ (S
+  It/PRP
+  (NP little/JJ easy/JJ implement/NN)
+  less/JJR
+  (NP stability/NN issues/NNS case/NN number/NN wheels/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['little easy implement', 'stability issues case number wheels']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('little', 'littl'), ('easy', 'easi'), ('implement', 'implement'), ('less', 'less'), ('stability', 'stabil'), ('issues', 'issu'), ('case', 'case'), ('number', 'number'), ('wheels', 'wheel'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('little', 'littl'), ('easy', 'easi'), ('implement', 'implement'), ('less', 'less'), ('stability', 'stabil'), ('issues', 'issu'), ('case', 'case'), ('number', 'number'), ('wheels', 'wheel'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('little', 'little'), ('easy', 'easy'), ('implement', 'implement'), ('less', 'le'), ('stability', 'stability'), ('issues', 'issue'), ('case', 'case'), ('number', 'number'), ('wheels', 'wheel'), ('.', '.')]
+
+
+
+============================ Sentence 31 =============================
+
+It is power efficient as compared to legged locomotion. 
+
+
+>> Tokens are: 
+ ['It', 'power', 'efficient', 'compared', 'legged', 'locomotion', '.']
+
+>> Bigrams are: 
+ [('It', 'power'), ('power', 'efficient'), ('efficient', 'compared'), ('compared', 'legged'), ('legged', 'locomotion'), ('locomotion', '.')]
+
+>> Trigrams are: 
+ [('It', 'power', 'efficient'), ('power', 'efficient', 'compared'), ('efficient', 'compared', 'legged'), ('compared', 'legged', 'locomotion'), ('legged', 'locomotion', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('power', 'NN'), ('efficient', 'JJ'), ('compared', 'VBN'), ('legged', 'JJ'), ('locomotion', 'NN'), ('.', '.')]
+
+ (S
+  It/PRP
+  (NP power/NN)
+  efficient/JJ
+  compared/VBN
+  (NP legged/JJ locomotion/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['power', 'legged locomotion']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('power', 'power'), ('efficient', 'effici'), ('compared', 'compar'), ('legged', 'leg'), ('locomotion', 'locomot'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('power', 'power'), ('efficient', 'effici'), ('compared', 'compar'), ('legged', 'leg'), ('locomotion', 'locomot'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('power', 'power'), ('efficient', 'efficient'), ('compared', 'compared'), ('legged', 'legged'), ('locomotion', 'locomotion'), ('.', '.')]
+
+
+
+============================ Sentence 32 =============================
+
+· Standard wheel − Rotates around the wheel axle and around the contact · Castor wheel − Rotates around the wheel axle and the offset steering joint. 
+
+
+>> Tokens are: 
+ ['·', 'Standard', 'wheel', '−', 'Rotates', 'around', 'wheel', 'axle', 'around', 'contact', '·', 'Castor', 'wheel', '−', 'Rotates', 'around', 'wheel', 'axle', 'offset', 'steering', 'joint', '.']
+
+>> Bigrams are: 
+ [('·', 'Standard'), ('Standard', 'wheel'), ('wheel', '−'), ('−', 'Rotates'), ('Rotates', 'around'), ('around', 'wheel'), ('wheel', 'axle'), ('axle', 'around'), ('around', 'contact'), ('contact', '·'), ('·', 'Castor'), ('Castor', 'wheel'), ('wheel', '−'), ('−', 'Rotates'), ('Rotates', 'around'), ('around', 'wheel'), ('wheel', 'axle'), ('axle', 'offset'), ('offset', 'steering'), ('steering', 'joint'), ('joint', '.')]
+
+>> Trigrams are: 
+ [('·', 'Standard', 'wheel'), ('Standard', 'wheel', '−'), ('wheel', '−', 'Rotates'), ('−', 'Rotates', 'around'), ('Rotates', 'around', 'wheel'), ('around', 'wheel', 'axle'), ('wheel', 'axle', 'around'), ('axle', 'around', 'contact'), ('around', 'contact', '·'), ('contact', '·', 'Castor'), ('·', 'Castor', 'wheel'), ('Castor', 'wheel', '−'), ('wheel', '−', 'Rotates'), ('−', 'Rotates', 'around'), ('Rotates', 'around', 'wheel'), ('around', 'wheel', 'axle'), ('wheel', 'axle', 'offset'), ('axle', 'offset', 'steering'), ('offset', 'steering', 'joint'), ('steering', 'joint', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Standard', 'NNP'), ('wheel', 'NN'), ('−', 'NN'), ('Rotates', 'NNP'), ('around', 'IN'), ('wheel', 'NN'), ('axle', 'NN'), ('around', 'IN'), ('contact', 'NN'), ('·', 'NNP'), ('Castor', 'NNP'), ('wheel', 'NN'), ('−', 'NN'), ('Rotates', 'NNP'), ('around', 'IN'), ('wheel', 'NN'), ('axle', 'NN'), ('offset', 'IN'), ('steering', 'VBG'), ('joint', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Standard/NNP wheel/NN −/NN Rotates/NNP)
+  around/IN
+  (NP wheel/NN axle/NN)
+  around/IN
+  (NP contact/NN ·/NNP Castor/NNP wheel/NN −/NN Rotates/NNP)
+  around/IN
+  (NP wheel/NN axle/NN)
+  offset/IN
+  steering/VBG
+  (NP joint/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Standard wheel − Rotates', 'wheel axle', 'contact · Castor wheel − Rotates', 'wheel axle', 'joint']
+
+>> Named Entities are: 
+ [('PERSON', 'Rotates'), ('PERSON', 'Rotates')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Standard', 'standard'), ('wheel', 'wheel'), ('−', '−'), ('Rotates', 'rotat'), ('around', 'around'), ('wheel', 'wheel'), ('axle', 'axl'), ('around', 'around'), ('contact', 'contact'), ('·', '·'), ('Castor', 'castor'), ('wheel', 'wheel'), ('−', '−'), ('Rotates', 'rotat'), ('around', 'around'), ('wheel', 'wheel'), ('axle', 'axl'), ('offset', 'offset'), ('steering', 'steer'), ('joint', 'joint'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Standard', 'standard'), ('wheel', 'wheel'), ('−', '−'), ('Rotates', 'rotat'), ('around', 'around'), ('wheel', 'wheel'), ('axle', 'axl'), ('around', 'around'), ('contact', 'contact'), ('·', '·'), ('Castor', 'castor'), ('wheel', 'wheel'), ('−', '−'), ('Rotates', 'rotat'), ('around', 'around'), ('wheel', 'wheel'), ('axle', 'axl'), ('offset', 'offset'), ('steering', 'steer'), ('joint', 'joint'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Standard', 'Standard'), ('wheel', 'wheel'), ('−', '−'), ('Rotates', 'Rotates'), ('around', 'around'), ('wheel', 'wheel'), ('axle', 'axle'), ('around', 'around'), ('contact', 'contact'), ('·', '·'), ('Castor', 'Castor'), ('wheel', 'wheel'), ('−', '−'), ('Rotates', 'Rotates'), ('around', 'around'), ('wheel', 'wheel'), ('axle', 'axle'), ('offset', 'offset'), ('steering', 'steering'), ('joint', 'joint'), ('.', '.')]
+
+
+
+============================ Sentence 33 =============================
+
+· Swedish 45o and Swedish 90o wheels − Omni-wheel, rotates around the contact point, around the wheel axle, and around the rollers. 
+
+
+>> Tokens are: 
+ ['·', 'Swedish', '45o', 'Swedish', '90o', 'wheels', '−', 'Omni-wheel', ',', 'rotates', 'around', 'contact', 'point', ',', 'around', 'wheel', 'axle', ',', 'around', 'rollers', '.']
+
+>> Bigrams are: 
+ [('·', 'Swedish'), ('Swedish', '45o'), ('45o', 'Swedish'), ('Swedish', '90o'), ('90o', 'wheels'), ('wheels', '−'), ('−', 'Omni-wheel'), ('Omni-wheel', ','), (',', 'rotates'), ('rotates', 'around'), ('around', 'contact'), ('contact', 'point'), ('point', ','), (',', 'around'), ('around', 'wheel'), ('wheel', 'axle'), ('axle', ','), (',', 'around'), ('around', 'rollers'), ('rollers', '.')]
+
+>> Trigrams are: 
+ [('·', 'Swedish', '45o'), ('Swedish', '45o', 'Swedish'), ('45o', 'Swedish', '90o'), ('Swedish', '90o', 'wheels'), ('90o', 'wheels', '−'), ('wheels', '−', 'Omni-wheel'), ('−', 'Omni-wheel', ','), ('Omni-wheel', ',', 'rotates'), (',', 'rotates', 'around'), ('rotates', 'around', 'contact'), ('around', 'contact', 'point'), ('contact', 'point', ','), ('point', ',', 'around'), (',', 'around', 'wheel'), ('around', 'wheel', 'axle'), ('wheel', 'axle', ','), ('axle', ',', 'around'), (',', 'around', 'rollers'), ('around', 'rollers', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Swedish', 'JJ'), ('45o', 'CD'), ('Swedish', 'JJ'), ('90o', 'CD'), ('wheels', 'NNS'), ('−', 'JJ'), ('Omni-wheel', 'NNP'), (',', ','), ('rotates', 'VBZ'), ('around', 'IN'), ('contact', 'NN'), ('point', 'NN'), (',', ','), ('around', 'IN'), ('wheel', 'NN'), ('axle', 'NN'), (',', ','), ('around', 'IN'), ('rollers', 'NNS'), ('.', '.')]
+
+ (S
+  ·/JJ
+  Swedish/JJ
+  45o/CD
+  Swedish/JJ
+  90o/CD
+  (NP wheels/NNS)
+  (NP −/JJ Omni-wheel/NNP)
+  ,/,
+  rotates/VBZ
+  around/IN
+  (NP contact/NN point/NN)
+  ,/,
+  around/IN
+  (NP wheel/NN axle/NN)
+  ,/,
+  around/IN
+  (NP rollers/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['wheels', '− Omni-wheel', 'contact point', 'wheel axle', 'rollers']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Swedish', 'swedish'), ('45o', '45o'), ('Swedish', 'swedish'), ('90o', '90o'), ('wheels', 'wheel'), ('−', '−'), ('Omni-wheel', 'omni-wheel'), (',', ','), ('rotates', 'rotat'), ('around', 'around'), ('contact', 'contact'), ('point', 'point'), (',', ','), ('around', 'around'), ('wheel', 'wheel'), ('axle', 'axl'), (',', ','), ('around', 'around'), ('rollers', 'roller'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Swedish', 'swedish'), ('45o', '45o'), ('Swedish', 'swedish'), ('90o', '90o'), ('wheels', 'wheel'), ('−', '−'), ('Omni-wheel', 'omni-wheel'), (',', ','), ('rotates', 'rotat'), ('around', 'around'), ('contact', 'contact'), ('point', 'point'), (',', ','), ('around', 'around'), ('wheel', 'wheel'), ('axle', 'axl'), (',', ','), ('around', 'around'), ('rollers', 'roller'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Swedish', 'Swedish'), ('45o', '45o'), ('Swedish', 'Swedish'), ('90o', '90o'), ('wheels', 'wheel'), ('−', '−'), ('Omni-wheel', 'Omni-wheel'), (',', ','), ('rotates', 'rotates'), ('around', 'around'), ('contact', 'contact'), ('point', 'point'), (',', ','), ('around', 'around'), ('wheel', 'wheel'), ('axle', 'axle'), (',', ','), ('around', 'around'), ('rollers', 'roller'), ('.', '.')]
+
+
+
+============================ Sentence 34 =============================
+
+· Ball or spherical wheel − Omnidirectional wheel, technically difficult to implement. 
+
+
+>> Tokens are: 
+ ['·', 'Ball', 'spherical', 'wheel', '−', 'Omnidirectional', 'wheel', ',', 'technically', 'difficult', 'implement', '.']
+
+>> Bigrams are: 
+ [('·', 'Ball'), ('Ball', 'spherical'), ('spherical', 'wheel'), ('wheel', '−'), ('−', 'Omnidirectional'), ('Omnidirectional', 'wheel'), ('wheel', ','), (',', 'technically'), ('technically', 'difficult'), ('difficult', 'implement'), ('implement', '.')]
+
+>> Trigrams are: 
+ [('·', 'Ball', 'spherical'), ('Ball', 'spherical', 'wheel'), ('spherical', 'wheel', '−'), ('wheel', '−', 'Omnidirectional'), ('−', 'Omnidirectional', 'wheel'), ('Omnidirectional', 'wheel', ','), ('wheel', ',', 'technically'), (',', 'technically', 'difficult'), ('technically', 'difficult', 'implement'), ('difficult', 'implement', '.')]
+
+>> POS Tags are: 
+ [('·', 'RB'), ('Ball', 'NNP'), ('spherical', 'JJ'), ('wheel', 'NN'), ('−', 'NNP'), ('Omnidirectional', 'NNP'), ('wheel', 'NN'), (',', ','), ('technically', 'RB'), ('difficult', 'JJ'), ('implement', 'NN'), ('.', '.')]
+
+ (S
+  ·/RB
+  (NP Ball/NNP)
+  (NP spherical/JJ wheel/NN −/NNP Omnidirectional/NNP wheel/NN)
+  ,/,
+  technically/RB
+  (NP difficult/JJ implement/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Ball', 'spherical wheel − Omnidirectional wheel', 'difficult implement']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Ball')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Ball', 'ball'), ('spherical', 'spheric'), ('wheel', 'wheel'), ('−', '−'), ('Omnidirectional', 'omnidirect'), ('wheel', 'wheel'), (',', ','), ('technically', 'technic'), ('difficult', 'difficult'), ('implement', 'implement'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Ball', 'ball'), ('spherical', 'spheric'), ('wheel', 'wheel'), ('−', '−'), ('Omnidirectional', 'omnidirect'), ('wheel', 'wheel'), (',', ','), ('technically', 'technic'), ('difficult', 'difficult'), ('implement', 'implement'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Ball', 'Ball'), ('spherical', 'spherical'), ('wheel', 'wheel'), ('−', '−'), ('Omnidirectional', 'Omnidirectional'), ('wheel', 'wheel'), (',', ','), ('technically', 'technically'), ('difficult', 'difficult'), ('implement', 'implement'), ('.', '.')]
+
+
+
+============================ Sentence 35 =============================
+
+Slip/Skid Locomotion In this type, the vehicles use tracks as in a tank. 
+
+
+>> Tokens are: 
+ ['Slip/Skid', 'Locomotion', 'In', 'type', ',', 'vehicles', 'use', 'tracks', 'tank', '.']
+
+>> Bigrams are: 
+ [('Slip/Skid', 'Locomotion'), ('Locomotion', 'In'), ('In', 'type'), ('type', ','), (',', 'vehicles'), ('vehicles', 'use'), ('use', 'tracks'), ('tracks', 'tank'), ('tank', '.')]
+
+>> Trigrams are: 
+ [('Slip/Skid', 'Locomotion', 'In'), ('Locomotion', 'In', 'type'), ('In', 'type', ','), ('type', ',', 'vehicles'), (',', 'vehicles', 'use'), ('vehicles', 'use', 'tracks'), ('use', 'tracks', 'tank'), ('tracks', 'tank', '.')]
+
+>> POS Tags are: 
+ [('Slip/Skid', 'NNP'), ('Locomotion', 'NNP'), ('In', 'IN'), ('type', 'NN'), (',', ','), ('vehicles', 'NNS'), ('use', 'VBP'), ('tracks', 'NNS'), ('tank', 'NN'), ('.', '.')]
+
+ (S
+  (NP Slip/Skid/NNP Locomotion/NNP)
+  In/IN
+  (NP type/NN)
+  ,/,
+  (NP vehicles/NNS)
+  use/VBP
+  (NP tracks/NNS tank/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Slip/Skid Locomotion', 'type', 'vehicles', 'tracks tank']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Slip/Skid', 'slip/skid'), ('Locomotion', 'locomot'), ('In', 'in'), ('type', 'type'), (',', ','), ('vehicles', 'vehicl'), ('use', 'use'), ('tracks', 'track'), ('tank', 'tank'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Slip/Skid', 'slip/skid'), ('Locomotion', 'locomot'), ('In', 'in'), ('type', 'type'), (',', ','), ('vehicles', 'vehicl'), ('use', 'use'), ('tracks', 'track'), ('tank', 'tank'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Slip/Skid', 'Slip/Skid'), ('Locomotion', 'Locomotion'), ('In', 'In'), ('type', 'type'), (',', ','), ('vehicles', 'vehicle'), ('use', 'use'), ('tracks', 'track'), ('tank', 'tank'), ('.', '.')]
+
+
+
+============================ Sentence 36 =============================
+
+The robot is steered by moving the tracks with different speeds in the same or opposite direction. 
+
+
+>> Tokens are: 
+ ['The', 'robot', 'steered', 'moving', 'tracks', 'different', 'speeds', 'opposite', 'direction', '.']
+
+>> Bigrams are: 
+ [('The', 'robot'), ('robot', 'steered'), ('steered', 'moving'), ('moving', 'tracks'), ('tracks', 'different'), ('different', 'speeds'), ('speeds', 'opposite'), ('opposite', 'direction'), ('direction', '.')]
+
+>> Trigrams are: 
+ [('The', 'robot', 'steered'), ('robot', 'steered', 'moving'), ('steered', 'moving', 'tracks'), ('moving', 'tracks', 'different'), ('tracks', 'different', 'speeds'), ('different', 'speeds', 'opposite'), ('speeds', 'opposite', 'direction'), ('opposite', 'direction', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('robot', 'NN'), ('steered', 'VBD'), ('moving', 'VBG'), ('tracks', 'NNS'), ('different', 'JJ'), ('speeds', 'NNS'), ('opposite', 'JJ'), ('direction', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT robot/NN)
+  steered/VBD
+  moving/VBG
+  (NP tracks/NNS)
+  (NP different/JJ speeds/NNS)
+  (NP opposite/JJ direction/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The robot', 'tracks', 'different speeds', 'opposite direction']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('robot', 'robot'), ('steered', 'steer'), ('moving', 'move'), ('tracks', 'track'), ('different', 'differ'), ('speeds', 'speed'), ('opposite', 'opposit'), ('direction', 'direct'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('robot', 'robot'), ('steered', 'steer'), ('moving', 'move'), ('tracks', 'track'), ('different', 'differ'), ('speeds', 'speed'), ('opposite', 'opposit'), ('direction', 'direct'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('robot', 'robot'), ('steered', 'steered'), ('moving', 'moving'), ('tracks', 'track'), ('different', 'different'), ('speeds', 'speed'), ('opposite', 'opposite'), ('direction', 'direction'), ('.', '.')]
+
+
+
+============================ Sentence 37 =============================
+
+It offers stability because of large contact area of track and ground. 
+
+
+>> Tokens are: 
+ ['It', 'offers', 'stability', 'large', 'contact', 'area', 'track', 'ground', '.']
+
+>> Bigrams are: 
+ [('It', 'offers'), ('offers', 'stability'), ('stability', 'large'), ('large', 'contact'), ('contact', 'area'), ('area', 'track'), ('track', 'ground'), ('ground', '.')]
+
+>> Trigrams are: 
+ [('It', 'offers', 'stability'), ('offers', 'stability', 'large'), ('stability', 'large', 'contact'), ('large', 'contact', 'area'), ('contact', 'area', 'track'), ('area', 'track', 'ground'), ('track', 'ground', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('offers', 'VBZ'), ('stability', 'NN'), ('large', 'JJ'), ('contact', 'JJ'), ('area', 'NN'), ('track', 'NN'), ('ground', 'NN'), ('.', '.')]
+
+ (S
+  It/PRP
+  offers/VBZ
+  (NP stability/NN)
+  (NP large/JJ contact/JJ area/NN track/NN ground/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['stability', 'large contact area track ground']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('offers', 'offer'), ('stability', 'stabil'), ('large', 'larg'), ('contact', 'contact'), ('area', 'area'), ('track', 'track'), ('ground', 'ground'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('offers', 'offer'), ('stability', 'stabil'), ('large', 'larg'), ('contact', 'contact'), ('area', 'area'), ('track', 'track'), ('ground', 'ground'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('offers', 'offer'), ('stability', 'stability'), ('large', 'large'), ('contact', 'contact'), ('area', 'area'), ('track', 'track'), ('ground', 'ground'), ('.', '.')]
+

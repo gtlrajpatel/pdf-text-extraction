@@ -1,0 +1,2890 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+PowerPoint Presentation  Unit – 5 Intermediate Code Generation dixita.kagathara@darshan.ac.in +91 - 97277 47317 (CE Department) 
+
+
+>> Tokens are: 
+[PowerPoint, Presentation,  , Unit, –, 5, Intermediate, Code, Generation, dixita.kagathara@darshan.ac.in, +91, -, 97277, 47317, (, CE, Department, )] 
+
+>> PoS Tags are: 
+[('PowerPoint', 'PROPN'), ('Presentation', 'PROPN'), (' ', 'SPACE'), ('Unit', 'PROPN'), ('–', 'PUNCT'), ('5', 'NUM'), ('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('dixita.kagathara@darshan.ac.in', 'NOUN'), ('+91', 'NOUN'), ('-', 'PUNCT'), ('97277', 'NUM'), ('47317', 'NUM'), ('(', 'PUNCT'), ('CE', 'PROPN'), ('Department', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('PowerPoint', 'compound'), ('Presentation', 'ROOT'), (' ', 'compound'), ('Unit', 'appos'), ('–', 'punct'), ('5', 'nummod'), ('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'appos'), ('dixita.kagathara@darshan.ac.in', 'appos'), ('+91', 'appos'), ('-', 'punct'), ('97277', 'appos'), ('47317', 'nummod'), ('(', 'punct'), ('CE', 'compound'), ('Department', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[PowerPoint, Presentation], [Presentation,  ], [ , Unit], [Unit, –], [–, 5], [5, Intermediate], [Intermediate, Code], [Code, Generation], [Generation, dixita.kagathara@darshan.ac.in], [dixita.kagathara@darshan.ac.in, +91], [+91, -], [-, 97277], [97277, 47317], [47317, (], [(, CE], [CE, Department], [Department, )]]
+
+>> Trigrams: 
+[[PowerPoint, Presentation,  ], [Presentation,  , Unit], [ , Unit, –], [Unit, –, 5], [–, 5, Intermediate], [5, Intermediate, Code], [Intermediate, Code, Generation], [Code, Generation, dixita.kagathara@darshan.ac.in], [Generation, dixita.kagathara@darshan.ac.in, +91], [dixita.kagathara@darshan.ac.in, +91, -], [+91, -, 97277], [-, 97277, 47317], [97277, 47317, (], [47317, (, CE], [(, CE, Department], [CE, Department, )]]
+
+>> Noun Phrases are: 
+[PowerPoint Presentation,  Unit, 5 Intermediate Code Generation, dixita.kagathara@darshan.ac.in, +91, (CE Department]
+
+>> Named Entities are: 
+[('CE Department)', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design (CD) GTU # 2170701   Darshan Institute of Engineering & Technology, Rajkot     Looping Topics to be covered   
+
+
+>> Tokens are: 
+[Computer, Engineering, Department, Prof., Dixita, B., Kagathara, Compiler, Design, (, CD, ), GTU, #, 2170701,   , Darshan, Institute, Engineering, &, Technology, ,, Rajkot,    , , Looping, Topics, covered,  ] 
+
+>> PoS Tags are: 
+[('Computer', 'PROPN'), ('Engineering', 'PROPN'), ('Department', 'PROPN'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B.', 'PROPN'), ('Kagathara', 'PROPN'), ('Compiler', 'PROPN'), ('Design', 'PROPN'), ('(', 'PUNCT'), ('CD', 'PROPN'), (')', 'PUNCT'), ('GTU', 'NOUN'), ('#', 'NOUN'), ('2170701', 'NUM'), ('  ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), (',', 'PUNCT'), ('Rajkot', 'PROPN'), ('   ', 'SPACE'), ('\uf050', 'PROPN'), ('Looping', 'VERB'), ('Topics', 'PROPN'), ('covered', 'VERB'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Computer', 'compound'), ('Engineering', 'compound'), ('Department', 'compound'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B.', 'compound'), ('Kagathara', 'compound'), ('Compiler', 'compound'), ('Design', 'ROOT'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('GTU', 'appos'), ('#', 'nmod'), ('2170701', 'nummod'), ('  ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), (',', 'punct'), ('Rajkot', 'appos'), ('   ', 'appos'), ('\uf050', 'appos'), ('Looping', 'advcl'), ('Topics', 'dobj'), ('covered', 'ccomp'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Computer, Engineering], [Engineering, Department], [Department, Prof.], [Prof., Dixita], [Dixita, B.], [B., Kagathara], [Kagathara, Compiler], [Compiler, Design], [Design, (], [(, CD], [CD, )], [), GTU], [GTU, #], [#, 2170701], [2170701,   ], [  , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology, ,], [,, Rajkot], [Rajkot,    ], [   , ], [, Looping], [Looping, Topics], [Topics, covered], [covered,  ]]
+
+>> Trigrams: 
+[[Computer, Engineering, Department], [Engineering, Department, Prof.], [Department, Prof., Dixita], [Prof., Dixita, B.], [Dixita, B., Kagathara], [B., Kagathara, Compiler], [Kagathara, Compiler, Design], [Compiler, Design, (], [Design, (, CD], [(, CD, )], [CD, ), GTU], [), GTU, #], [GTU, #, 2170701], [#, 2170701,   ], [2170701,   , Darshan], [  , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology, ,], [Technology, ,, Rajkot], [,, Rajkot,    ], [Rajkot,    , ], [   , , Looping], [, Looping, Topics], [Looping, Topics, covered], [Topics, covered,  ]]
+
+>> Noun Phrases are: 
+[Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design, CD, GTU, Darshan Institute, Engineering, Technology, Rajkot, , Topics]
+
+>> Named Entities are: 
+[('Dixita B.', 'PERSON'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('Looping Topics', 'ORG')]
+
+
+============================ Sentence 3 =============================
+
+Different intermediate forms Different representation of Three Address code             Different intermediate forms 
+
+
+>> Tokens are: 
+[Different, intermediate, forms, Different, representation, Address, code,             , Different, intermediate, forms] 
+
+>> PoS Tags are: 
+[('Different', 'ADJ'), ('intermediate', 'ADJ'), ('forms', 'NOUN'), ('Different', 'ADJ'), ('representation', 'NOUN'), ('Address', 'PROPN'), ('code', 'NOUN'), ('            ', 'SPACE'), ('Different', 'ADJ'), ('intermediate', 'ADJ'), ('forms', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Different', 'amod'), ('intermediate', 'amod'), ('forms', 'ROOT'), ('Different', 'amod'), ('representation', 'appos'), ('Address', 'compound'), ('code', 'compound'), ('            ', 'nmod'), ('Different', 'amod'), ('intermediate', 'amod'), ('forms', 'pobj')]
+
+>> Bigrams: 
+[[Different, intermediate], [intermediate, forms], [forms, Different], [Different, representation], [representation, Address], [Address, code], [code,             ], [            , Different], [Different, intermediate], [intermediate, forms]]
+
+>> Trigrams: 
+[[Different, intermediate, forms], [intermediate, forms, Different], [forms, Different, representation], [Different, representation, Address], [representation, Address, code], [Address, code,             ], [code,             , Different], [            , Different, intermediate], [Different, intermediate, forms]]
+
+>> Noun Phrases are: 
+[Different intermediate forms, Different representation, Three Address code             Different intermediate forms]
+
+>> Named Entities are: 
+[('Three', 'CARDINAL')]
+
+
+============================ Sentence 4 =============================
+
+       Different intermediate forms Different forms of intermediate code are:   
+
+
+>> Tokens are: 
+[       , Different, intermediate, forms, Different, forms, intermediate, code, :,  ] 
+
+>> PoS Tags are: 
+[('       ', 'SPACE'), ('Different', 'ADJ'), ('intermediate', 'ADJ'), ('forms', 'NOUN'), ('Different', 'ADJ'), ('forms', 'NOUN'), ('intermediate', 'ADJ'), ('code', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('       ', 'dep'), ('Different', 'amod'), ('intermediate', 'amod'), ('forms', 'nsubj'), ('Different', 'amod'), ('forms', 'nsubj'), ('intermediate', 'amod'), ('code', 'pobj'), (':', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[       , Different], [Different, intermediate], [intermediate, forms], [forms, Different], [Different, forms], [forms, intermediate], [intermediate, code], [code, :], [:,  ]]
+
+>> Trigrams: 
+[[       , Different, intermediate], [Different, intermediate, forms], [intermediate, forms, Different], [forms, Different, forms], [Different, forms, intermediate], [forms, intermediate, code], [intermediate, code, :], [code, :,  ]]
+
+>> Noun Phrases are: 
+[       Different intermediate forms, Different forms, intermediate code]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 5 =============================
+
+Abstract syntax tree Postfix notation Three address code     Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›   
+
+
+>> Tokens are: 
+[Abstract, syntax, tree, Postfix, notation, address, code,     , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  , #, 2170701, (, CD, ),   , ,   , Unit, 5, –, Intermediate, Code, Generation, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('Abstract', 'ADJ'), ('syntax', 'NOUN'), ('tree', 'NOUN'), ('Postfix', 'PROPN'), ('notation', 'NOUN'), ('address', 'NOUN'), ('code', 'NOUN'), ('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('5', 'NUM'), ('–', 'PUNCT'), ('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Abstract', 'amod'), ('syntax', 'compound'), ('tree', 'compound'), ('Postfix', 'compound'), ('notation', 'nsubj'), ('address', 'appos'), ('code', 'dep'), ('    ', 'compound'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'dative'), ('#', 'npadvmod'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'advcl'), ('  ', 'conj'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'dative'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'dative'), ('#', 'nmod'), ('2170701', 'npadvmod'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'conj'), ('  ', 'punct'), ('Unit', 'appos'), ('5', 'nummod'), ('–', 'punct'), ('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'ROOT'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Abstract, syntax], [syntax, tree], [tree, Postfix], [Postfix, notation], [notation, address], [address, code], [code,     ], [    , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ], [ , #], [#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 5], [5, –], [–, Intermediate], [Intermediate, Code], [Code, Generation], [Generation, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[Abstract, syntax, tree], [syntax, tree, Postfix], [tree, Postfix, notation], [Postfix, notation, address], [notation, address, code], [address, code,     ], [code,     , Prof.], [    , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ], [Kagathara,  , #], [ , #, 2170701], [#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 5], [Unit, 5, –], [5, –, Intermediate], [–, Intermediate, Code], [Intermediate, Code, Generation], [Code, Generation, ‹#›], [Generation, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[Abstract syntax tree Postfix notation, Three address,     Prof. Jay R Dhamsaniya, (PS, Unit, Basic Probability, Prof. Dixita B Kagathara, (CD, Unit]
+
+>> Named Entities are: 
+[('Three', 'CARDINAL'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 6 =============================
+
+Abstract syntax tree & DAG 
+
+
+>> Tokens are: 
+[Abstract, syntax, tree, &, DAG] 
+
+>> PoS Tags are: 
+[('Abstract', 'ADJ'), ('syntax', 'NOUN'), ('tree', 'NOUN'), ('&', 'CCONJ'), ('DAG', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Abstract', 'amod'), ('syntax', 'compound'), ('tree', 'ROOT'), ('&', 'cc'), ('DAG', 'conj')]
+
+>> Bigrams: 
+[[Abstract, syntax], [syntax, tree], [tree, &], [&, DAG]]
+
+>> Trigrams: 
+[[Abstract, syntax, tree], [syntax, tree, &], [tree, &, DAG]]
+
+>> Noun Phrases are: 
+[Abstract syntax tree, DAG]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+A syntax tree depicts the natural hierarchical structure of a source program. 
+
+
+>> Tokens are: 
+[syntax, tree, depicts, natural, hierarchical, structure, source, program, .] 
+
+>> PoS Tags are: 
+[('syntax', 'NOUN'), ('tree', 'NOUN'), ('depicts', 'VERB'), ('natural', 'ADJ'), ('hierarchical', 'ADJ'), ('structure', 'NOUN'), ('source', 'NOUN'), ('program', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('syntax', 'compound'), ('tree', 'nsubj'), ('depicts', 'ROOT'), ('natural', 'amod'), ('hierarchical', 'amod'), ('structure', 'dobj'), ('source', 'compound'), ('program', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[syntax, tree], [tree, depicts], [depicts, natural], [natural, hierarchical], [hierarchical, structure], [structure, source], [source, program], [program, .]]
+
+>> Trigrams: 
+[[syntax, tree, depicts], [tree, depicts, natural], [depicts, natural, hierarchical], [natural, hierarchical, structure], [hierarchical, structure, source], [structure, source, program], [source, program, .]]
+
+>> Noun Phrases are: 
+[A syntax tree, the natural hierarchical structure, a source program]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 8 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+A DAG (Directed Acyclic Graph) gives the same information but in a more compact way because common sub-expressions are identified. 
+
+
+>> Tokens are: 
+[DAG, (, Directed, Acyclic, Graph, ), gives, information, compact, way, common, sub, -, expressions, identified, .] 
+
+>> PoS Tags are: 
+[('DAG', 'PROPN'), ('(', 'PUNCT'), ('Directed', 'PROPN'), ('Acyclic', 'PROPN'), ('Graph', 'PROPN'), (')', 'PUNCT'), ('gives', 'VERB'), ('information', 'NOUN'), ('compact', 'ADJ'), ('way', 'NOUN'), ('common', 'ADJ'), ('sub', 'NOUN'), ('-', 'ADJ'), ('expressions', 'NOUN'), ('identified', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('DAG', 'nsubj'), ('(', 'punct'), ('Directed', 'compound'), ('Acyclic', 'compound'), ('Graph', 'appos'), (')', 'punct'), ('gives', 'ROOT'), ('information', 'dobj'), ('compact', 'amod'), ('way', 'pobj'), ('common', 'amod'), ('sub', 'nsubjpass'), ('-', 'nsubjpass'), ('expressions', 'nsubjpass'), ('identified', 'advcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[DAG, (], [(, Directed], [Directed, Acyclic], [Acyclic, Graph], [Graph, )], [), gives], [gives, information], [information, compact], [compact, way], [way, common], [common, sub], [sub, -], [-, expressions], [expressions, identified], [identified, .]]
+
+>> Trigrams: 
+[[DAG, (, Directed], [(, Directed, Acyclic], [Directed, Acyclic, Graph], [Acyclic, Graph, )], [Graph, ), gives], [), gives, information], [gives, information, compact], [information, compact, way], [compact, way, common], [way, common, sub], [common, sub, -], [sub, -, expressions], [-, expressions, identified], [expressions, identified, .]]
+
+>> Noun Phrases are: 
+[A DAG, Directed Acyclic Graph, the same information, a more compact way, common sub, expressions]
+
+>> Named Entities are: 
+[('DAG', 'ORG'), ('Directed Acyclic Graph', 'ORG')]
+
+
+============================ Sentence 10 =============================
+
+Ex: a=b*-c+b*-c   +   *   
+
+
+>> Tokens are: 
+[Ex, :, =, b*-c+b*-c,   , +,   , *,  ] 
+
+>> PoS Tags are: 
+[('Ex', 'NOUN'), (':', 'PUNCT'), ('=', 'NOUN'), ('b*-c+b*-c', 'VERB'), ('  ', 'SPACE'), ('+', 'ADP'), ('  ', 'SPACE'), ('*', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Ex', 'ROOT'), (':', 'punct'), ('=', 'punct'), ('b*-c+b*-c', 'prep'), ('  ', 'pobj'), ('+', 'prep'), ('  ', 'appos'), ('*', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[Ex, :], [:, =], [=, b*-c+b*-c], [b*-c+b*-c,   ], [  , +], [+,   ], [  , *], [*,  ]]
+
+>> Trigrams: 
+[[Ex, :, =], [:, =, b*-c+b*-c], [=, b*-c+b*-c,   ], [b*-c+b*-c,   , +], [  , +,   ], [+,   , *], [  , *,  ]]
+
+>> Noun Phrases are: 
+[Ex]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 11 =============================
+
+c b  uminus   *   
+
+
+>> Tokens are: 
+[c, b,  , uminus,   , *,  ] 
+
+>> PoS Tags are: 
+[('c', 'NOUN'), ('b', 'X'), (' ', 'SPACE'), ('uminus', 'ADJ'), ('  ', 'SPACE'), ('*', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('c', 'compound'), ('b', 'quantmod'), (' ', 'npadvmod'), ('uminus', 'ROOT'), ('  ', 'pobj'), ('*', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[c, b], [b,  ], [ , uminus], [uminus,   ], [  , *], [*,  ]]
+
+>> Trigrams: 
+[[c, b,  ], [b,  , uminus], [ , uminus,   ], [uminus,   , *], [  , *,  ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+c b  uminus   =   a *  c b  uminus   +   =   a    Syntax Tree DAG     
+
+
+>> Tokens are: 
+[c, b,  , uminus,   , =,   , *,  , c, b,  , uminus,   , +,   , =,   ,    , Syntax, Tree, DAG,    ] 
+
+>> PoS Tags are: 
+[('c', 'NOUN'), ('b', 'X'), (' ', 'SPACE'), ('uminus', 'ADJ'), ('  ', 'SPACE'), ('=', 'PUNCT'), ('  ', 'SPACE'), ('*', 'PUNCT'), (' ', 'SPACE'), ('c', 'NOUN'), ('b', 'X'), (' ', 'SPACE'), ('uminus', 'ADJ'), ('  ', 'SPACE'), ('+', 'ADP'), ('  ', 'SPACE'), ('=', 'PUNCT'), ('  ', 'SPACE'), ('   ', 'SPACE'), ('Syntax', 'PROPN'), ('Tree', 'PROPN'), ('DAG', 'PROPN'), ('   ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('c', 'compound'), ('b', 'quantmod'), (' ', 'dep'), ('uminus', 'amod'), ('  ', 'npadvmod'), ('=', 'punct'), ('  ', 'dep'), ('*', 'punct'), (' ', 'compound'), ('c', 'appos'), ('b', 'appos'), (' ', 'nummod'), ('uminus', 'amod'), ('  ', 'npadvmod'), ('+', 'prep'), ('  ', 'appos'), ('=', 'punct'), ('  ', 'quantmod'), ('   ', 'ROOT'), ('Syntax', 'compound'), ('Tree', 'compound'), ('DAG', 'appos'), ('   ', 'nummod')]
+
+>> Bigrams: 
+[[c, b], [b,  ], [ , uminus], [uminus,   ], [  , =], [=,   ], [  , *], [*,  ], [ , c], [c, b], [b,  ], [ , uminus], [uminus,   ], [  , +], [+,   ], [  , =], [=,   ], [  ,    ], [   , Syntax], [Syntax, Tree], [Tree, DAG], [DAG,    ]]
+
+>> Trigrams: 
+[[c, b,  ], [b,  , uminus], [ , uminus,   ], [uminus,   , =], [  , =,   ], [=,   , *], [  , *,  ], [*,  , c], [ , c, b], [c, b,  ], [b,  , uminus], [ , uminus,   ], [uminus,   , +], [  , +,   ], [+,   , =], [  , =,   ], [=,   ,    ], [  ,    , Syntax], [   , Syntax, Tree], [Syntax, Tree, DAG], [Tree, DAG,    ]]
+
+>> Noun Phrases are: 
+[a *  c, Syntax Tree DAG]
+
+>> Named Entities are: 
+[('Syntax', 'ORG')]
+
+
+============================ Sentence 13 =============================
+
+Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 14 =============================
+
+#2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  Postfix Notation Postfix notation is a linearization of a syntax tree. 
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 5, –, Intermediate, Code, Generation, ‹#›,  , Postfix, Notation, Postfix, notation, linearization, syntax, tree, .] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('5', 'NUM'), ('–', 'PUNCT'), ('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE'), ('Postfix', 'PROPN'), ('Notation', 'PROPN'), ('Postfix', 'PROPN'), ('notation', 'NOUN'), ('linearization', 'NOUN'), ('syntax', 'NOUN'), ('tree', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ccomp'), ('  ', 'punct'), ('Unit', 'appos'), ('5', 'nummod'), ('–', 'punct'), ('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'nmod'), ('‹#›', 'punct'), (' ', 'appos'), ('Postfix', 'compound'), ('Notation', 'compound'), ('Postfix', 'compound'), ('notation', 'nsubj'), ('linearization', 'attr'), ('syntax', 'compound'), ('tree', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 5], [5, –], [–, Intermediate], [Intermediate, Code], [Code, Generation], [Generation, ‹#›], [‹#›,  ], [ , Postfix], [Postfix, Notation], [Notation, Postfix], [Postfix, notation], [notation, linearization], [linearization, syntax], [syntax, tree], [tree, .]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 5], [Unit, 5, –], [5, –, Intermediate], [–, Intermediate, Code], [Intermediate, Code, Generation], [Code, Generation, ‹#›], [Generation, ‹#›,  ], [‹#›,  , Postfix], [ , Postfix, Notation], [Postfix, Notation, Postfix], [Notation, Postfix, notation], [Postfix, notation, linearization], [notation, linearization, syntax], [linearization, syntax, tree], [syntax, tree, .]]
+
+>> Noun Phrases are: 
+[(CD, Unit, Intermediate Code Generation ‹#›  Postfix Notation Postfix notation, a linearization, a syntax tree]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+In postfix notation the operands occurs first and then operators are arranged. 
+
+
+>> Tokens are: 
+[postfix, notation, operands, occurs, operators, arranged, .] 
+
+>> PoS Tags are: 
+[('postfix', 'NOUN'), ('notation', 'NOUN'), ('operands', 'NOUN'), ('occurs', 'VERB'), ('operators', 'NOUN'), ('arranged', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('postfix', 'compound'), ('notation', 'pobj'), ('operands', 'nsubj'), ('occurs', 'ROOT'), ('operators', 'nsubjpass'), ('arranged', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[postfix, notation], [notation, operands], [operands, occurs], [occurs, operators], [operators, arranged], [arranged, .]]
+
+>> Trigrams: 
+[[postfix, notation, operands], [notation, operands, occurs], [operands, occurs, operators], [occurs, operators, arranged], [operators, arranged, .]]
+
+>> Noun Phrases are: 
+[postfix notation, the operands, operators]
+
+>> Named Entities are: 
+[('first', 'ORDINAL')]
+
+
+============================ Sentence 16 =============================
+
+Ex: (A + B) * 
+
+
+>> Tokens are: 
+[Ex, :, (, +, B, ), *] 
+
+>> PoS Tags are: 
+[('Ex', 'NOUN'), (':', 'PUNCT'), ('(', 'PUNCT'), ('+', 'NOUN'), ('B', 'NOUN'), (')', 'PUNCT'), ('*', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Ex', 'ROOT'), (':', 'punct'), ('(', 'punct'), ('+', 'prep'), ('B', 'appos'), (')', 'punct'), ('*', 'punct')]
+
+>> Bigrams: 
+[[Ex, :], [:, (], [(, +], [+, B], [B, )], [), *]]
+
+>> Trigrams: 
+[[Ex, :, (], [:, (, +], [(, +, B], [+, B, )], [B, ), *]]
+
+>> Noun Phrases are: 
+[Ex, (A + B]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+(C + D)     
+
+
+>> Tokens are: 
+[(, C, +, D, ),    ] 
+
+>> PoS Tags are: 
+[('(', 'PUNCT'), ('C', 'NOUN'), ('+', 'SYM'), ('D', 'NOUN'), (')', 'PUNCT'), ('   ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('(', 'punct'), ('C', 'nmod'), ('+', 'prep'), ('D', 'ROOT'), (')', 'punct'), ('   ', 'appos')]
+
+>> Bigrams: 
+[[(, C], [C, +], [+, D], [D, )], [),    ]]
+
+>> Trigrams: 
+[[(, C, +], [C, +, D], [+, D, )], [D, ),    ]]
+
+>> Noun Phrases are: 
+[(C + D]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 18 =============================
+
+Ex: (A + B) * C     
+
+
+>> Tokens are: 
+[Ex, :, (, +, B, ), *, C,    ] 
+
+>> PoS Tags are: 
+[('Ex', 'NOUN'), (':', 'PUNCT'), ('(', 'PUNCT'), ('+', 'NOUN'), ('B', 'NOUN'), (')', 'PUNCT'), ('*', 'PUNCT'), ('C', 'NOUN'), ('   ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Ex', 'ROOT'), (':', 'punct'), ('(', 'punct'), ('+', 'nmod'), ('B', 'appos'), (')', 'punct'), ('*', 'punct'), ('C', 'compound'), ('   ', 'appos')]
+
+>> Bigrams: 
+[[Ex, :], [:, (], [(, +], [+, B], [B, )], [), *], [*, C], [C,    ]]
+
+>> Trigrams: 
+[[Ex, :, (], [:, (, +], [(, +, B], [+, B, )], [B, ), *], [), *, C], [*, C,    ]]
+
+>> Noun Phrases are: 
+[Ex, (A + B]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+Ex: (A * B) + 
+
+
+>> Tokens are: 
+[Ex, :, (, *, B, ), +] 
+
+>> PoS Tags are: 
+[('Ex', 'NOUN'), (':', 'PUNCT'), ('(', 'PUNCT'), ('*', 'SYM'), ('B', 'NOUN'), (')', 'PUNCT'), ('+', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Ex', 'ROOT'), (':', 'punct'), ('(', 'punct'), ('*', 'punct'), ('B', 'appos'), (')', 'punct'), ('+', 'punct')]
+
+>> Bigrams: 
+[[Ex, :], [:, (], [(, *], [*, B], [B, )], [), +]]
+
+>> Trigrams: 
+[[Ex, :, (], [:, (, *], [(, *, B], [*, B, )], [B, ), +]]
+
+>> Noun Phrases are: 
+[Ex, (A * B]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 20 =============================
+
+(C * D)   
+
+
+>> Tokens are: 
+[(, C, *, D, ),  ] 
+
+>> PoS Tags are: 
+[('(', 'PUNCT'), ('C', 'PROPN'), ('*', 'PUNCT'), ('D', 'NOUN'), (')', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('(', 'punct'), ('C', 'nmod'), ('*', 'punct'), ('D', 'ROOT'), (')', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[(, C], [C, *], [*, D], [D, )], [),  ]]
+
+>> Trigrams: 
+[[(, C, *], [C, *, D], [*, D, )], [D, ),  ]]
+
+>> Noun Phrases are: 
+[(C * D]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+Postfix notation: A B + C D + * Postfix notation: A B + C * Postfix notation: A B * C D * +    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[Postfix, notation, :, B, +, C, D, +, *, Postfix, notation, :, B, +, C, *, Postfix, notation, :, B, *, C, D, *, +,    , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('Postfix', 'PROPN'), ('notation', 'NOUN'), (':', 'PUNCT'), ('B', 'PROPN'), ('+', 'NOUN'), ('C', 'PROPN'), ('D', 'PROPN'), ('+', 'PROPN'), ('*', 'PROPN'), ('Postfix', 'PROPN'), ('notation', 'NOUN'), (':', 'PUNCT'), ('B', 'PROPN'), ('+', 'SYM'), ('C', 'PROPN'), ('*', 'PROPN'), ('Postfix', 'PROPN'), ('notation', 'NOUN'), (':', 'PUNCT'), ('B', 'PROPN'), ('*', 'PROPN'), ('C', 'NOUN'), ('D', 'PROPN'), ('*', 'PUNCT'), ('+', 'SYM'), ('   ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Postfix', 'compound'), ('notation', 'nsubj'), (':', 'punct'), ('B', 'nmod'), ('+', 'cc'), ('C', 'compound'), ('D', 'nmod'), ('+', 'cc'), ('*', 'compound'), ('Postfix', 'compound'), ('notation', 'appos'), (':', 'punct'), ('B', 'nmod'), ('+', 'nummod'), ('C', 'compound'), ('*', 'punct'), ('Postfix', 'compound'), ('notation', 'appos'), (':', 'punct'), ('B', 'nmod'), ('*', 'punct'), ('C', 'compound'), ('D', 'appos'), ('*', 'punct'), ('+', 'punct'), ('   ', 'nummod'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'appos'), ('#', 'nmod'), ('3130006', 'appos'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'dobj'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Postfix, notation], [notation, :], [:, B], [B, +], [+, C], [C, D], [D, +], [+, *], [*, Postfix], [Postfix, notation], [notation, :], [:, B], [B, +], [+, C], [C, *], [*, Postfix], [Postfix, notation], [notation, :], [:, B], [B, *], [*, C], [C, D], [D, *], [*, +], [+,    ], [   , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[Postfix, notation, :], [notation, :, B], [:, B, +], [B, +, C], [+, C, D], [C, D, +], [D, +, *], [+, *, Postfix], [*, Postfix, notation], [Postfix, notation, :], [notation, :, B], [:, B, +], [B, +, C], [+, C, *], [C, *, Postfix], [*, Postfix, notation], [Postfix, notation, :], [notation, :, B], [:, B, *], [B, *, C], [*, C, D], [C, D, *], [D, *, +], [*, +,    ], [+,    , Prof.], [   , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[Postfix notation, A B + C D + * Postfix notation, A B + C * Postfix notation, A B * C D, +    Prof. Jay R Dhamsaniya, PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 22 =============================
+
+#2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›   
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 5, –, Intermediate, Code, Generation, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('5', 'NUM'), ('–', 'PUNCT'), ('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('5', 'nummod'), ('–', 'punct'), ('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'appos'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 5], [5, –], [–, Intermediate], [Intermediate, Code], [Code, Generation], [Generation, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 5], [Unit, 5, –], [5, –, Intermediate], [–, Intermediate, Code], [Intermediate, Code, Generation], [Code, Generation, ‹#›], [Generation, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(CD, Unit, Intermediate Code Generation]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+Three address code Three address code is a sequence of statements of the general form,  a:= b op c 
+
+
+>> Tokens are: 
+[address, code, address, code, sequence, statements, general, form, ,,  , a:=, b, op, c] 
+
+>> PoS Tags are: 
+[('address', 'NOUN'), ('code', 'NOUN'), ('address', 'NOUN'), ('code', 'NOUN'), ('sequence', 'NOUN'), ('statements', 'NOUN'), ('general', 'ADJ'), ('form', 'NOUN'), (',', 'PUNCT'), (' ', 'SPACE'), ('a:=', 'NOUN'), ('b', 'NOUN'), ('op', 'NOUN'), ('c', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('address', 'compound'), ('code', 'nsubj'), ('address', 'compound'), ('code', 'dobj'), ('sequence', 'attr'), ('statements', 'pobj'), ('general', 'amod'), ('form', 'pobj'), (',', 'punct'), (' ', 'nsubj'), ('a:=', 'dep'), ('b', 'punct'), ('op', 'compound'), ('c', 'punct')]
+
+>> Bigrams: 
+[[address, code], [code, address], [address, code], [code, sequence], [sequence, statements], [statements, general], [general, form], [form, ,], [,,  ], [ , a:=], [a:=, b], [b, op], [op, c]]
+
+>> Trigrams: 
+[[address, code, address], [code, address, code], [address, code, sequence], [code, sequence, statements], [sequence, statements, general], [statements, general, form], [general, form, ,], [form, ,,  ], [,,  , a:=], [ , a:=, b], [a:=, b, op], [b, op, c]]
+
+>> Noun Phrases are: 
+[Three address code, Three address code, a sequence, statements, the general form]
+
+>> Named Entities are: 
+[('Three', 'CARDINAL'), ('Three', 'CARDINAL')]
+
+
+============================ Sentence 24 =============================
+
+Where a, b or c are the operands that can be names or constants and op stands for any operator. 
+
+
+>> Tokens are: 
+[,, b, c, operands, names, constants, op, stands, operator, .] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('b', 'NOUN'), ('c', 'NOUN'), ('operands', 'NOUN'), ('names', 'NOUN'), ('constants', 'NOUN'), ('op', 'NOUN'), ('stands', 'VERB'), ('operator', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('b', 'nsubj'), ('c', 'conj'), ('operands', 'attr'), ('names', 'attr'), ('constants', 'conj'), ('op', 'conj'), ('stands', 'ROOT'), ('operator', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[,, b], [b, c], [c, operands], [operands, names], [names, constants], [constants, op], [op, stands], [stands, operator], [operator, .]]
+
+>> Trigrams: 
+[[,, b, c], [b, c, operands], [c, operands, names], [operands, names, constants], [names, constants, op], [constants, op, stands], [op, stands, operator], [stands, operator, .]]
+
+>> Noun Phrases are: 
+[a, b, c, the operands, names, constants, op, any operator]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+Example: a = b + c + d  		t1=b+c	 		t2=t1+d 		a= t2 
+
+
+>> Tokens are: 
+[Example, :, =, b, +, c, +, d,  		, t1, =, b+c, 	 		, t2, =, t1+d, 		, a=, t2] 
+
+>> PoS Tags are: 
+[('Example', 'NOUN'), (':', 'PUNCT'), ('=', 'NOUN'), ('b', 'NOUN'), ('+', 'CCONJ'), ('c', 'X'), ('+', 'NOUN'), ('d', 'PUNCT'), (' \t\t', 'SPACE'), ('t1', 'PROPN'), ('=', 'SYM'), ('b+c', 'X'), ('\t \t\t', 'SPACE'), ('t2', 'PROPN'), ('=', 'SYM'), ('t1+d', 'NOUN'), ('\t\t', 'SPACE'), ('a=', 'VERB'), ('t2', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Example', 'ROOT'), (':', 'punct'), ('=', 'punct'), ('b', 'appos'), ('+', 'cc'), ('c', 'appos'), ('+', 'appos'), ('d', 'punct'), (' \t\t', 'prep'), ('t1', 'nmod'), ('=', 'punct'), ('b+c', 'appos'), ('\t \t\t', 'amod'), ('t2', 'appos'), ('=', 'punct'), ('t1+d', 'appos'), ('\t\t', 'prep'), ('a=', 'dep'), ('t2', 'pobj')]
+
+>> Bigrams: 
+[[Example, :], [:, =], [=, b], [b, +], [+, c], [c, +], [+, d], [d,  		], [ 		, t1], [t1, =], [=, b+c], [b+c, 	 		], [	 		, t2], [t2, =], [=, t1+d], [t1+d, 		], [		, a=], [a=, t2]]
+
+>> Trigrams: 
+[[Example, :, =], [:, =, b], [=, b, +], [b, +, c], [+, c, +], [c, +, d], [+, d,  		], [d,  		, t1], [ 		, t1, =], [t1, =, b+c], [=, b+c, 	 		], [b+c, 	 		, t2], [	 		, t2, =], [t2, =, t1+d], [=, t1+d, 		], [t1+d, 		, a=], [		, a=, t2]]
+
+>> Noun Phrases are: 
+[Example, a = b, +, 	 		t2, =t1+d, a= t2]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+Here t1 and t2 are the temporary names generated by the compiler. 
+
+
+>> Tokens are: 
+[t1, t2, temporary, names, generated, compiler, .] 
+
+>> PoS Tags are: 
+[('t1', 'PROPN'), ('t2', 'PROPN'), ('temporary', 'ADJ'), ('names', 'NOUN'), ('generated', 'VERB'), ('compiler', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('t1', 'nsubj'), ('t2', 'conj'), ('temporary', 'amod'), ('names', 'attr'), ('generated', 'acl'), ('compiler', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[t1, t2], [t2, temporary], [temporary, names], [names, generated], [generated, compiler], [compiler, .]]
+
+>> Trigrams: 
+[[t1, t2, temporary], [t2, temporary, names], [temporary, names, generated], [names, generated, compiler], [generated, compiler, .]]
+
+>> Noun Phrases are: 
+[Here t1, t2, the temporary names, the compiler]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 27 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 28 =============================
+
+There are at most three addresses allowed (two for operands and one for result). 
+
+
+>> Tokens are: 
+[addresses, allowed, (, operands, result, ), .] 
+
+>> PoS Tags are: 
+[('addresses', 'NOUN'), ('allowed', 'VERB'), ('(', 'PUNCT'), ('operands', 'NOUN'), ('result', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('addresses', 'attr'), ('allowed', 'acl'), ('(', 'punct'), ('operands', 'pobj'), ('result', 'pobj'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[addresses, allowed], [allowed, (], [(, operands], [operands, result], [result, )], [), .]]
+
+>> Trigrams: 
+[[addresses, allowed, (], [allowed, (, operands], [(, operands, result], [operands, result, )], [result, ), .]]
+
+>> Noun Phrases are: 
+[at most three addresses, operands, result]
+
+>> Named Entities are: 
+[('two', 'CARDINAL'), ('one', 'CARDINAL')]
+
+
+============================ Sentence 29 =============================
+
+Hence, this representation is called three-address code. 
+
+
+>> Tokens are: 
+[,, representation, called, -, address, code, .] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('representation', 'NOUN'), ('called', 'VERB'), ('-', 'PUNCT'), ('address', 'NOUN'), ('code', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('representation', 'nsubjpass'), ('called', 'ROOT'), ('-', 'punct'), ('address', 'compound'), ('code', 'oprd'), ('.', 'punct')]
+
+>> Bigrams: 
+[[,, representation], [representation, called], [called, -], [-, address], [address, code], [code, .]]
+
+>> Trigrams: 
+[[,, representation, called], [representation, called, -], [called, -, address], [-, address, code], [address, code, .]]
+
+>> Noun Phrases are: 
+[this representation, three-address code]
+
+>> Named Entities are: 
+[('three', 'CARDINAL')]
+
+
+============================ Sentence 30 =============================
+
+    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[    , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('    ', 'nummod'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[    , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[    , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[    Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 31 =============================
+
+#2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  dixita.kagathara@darshan.ac.in +91 - 97277 47317 (CE Department) 
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 5, –, Intermediate, Code, Generation, ‹#›,  , dixita.kagathara@darshan.ac.in, +91, -, 97277, 47317, (, CE, Department, )] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('5', 'NUM'), ('–', 'PUNCT'), ('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE'), ('dixita.kagathara@darshan.ac.in', 'NUM'), ('+91', 'NOUN'), ('-', 'PUNCT'), ('97277', 'NUM'), ('47317', 'NUM'), ('(', 'PUNCT'), ('CE', 'PROPN'), ('Department', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('5', 'nummod'), ('–', 'punct'), ('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'dep'), ('‹#›', 'punct'), (' ', 'appos'), ('dixita.kagathara@darshan.ac.in', 'appos'), ('+91', 'npadvmod'), ('-', 'punct'), ('97277', 'nummod'), ('47317', 'appos'), ('(', 'punct'), ('CE', 'compound'), ('Department', 'npadvmod'), (')', 'punct')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 5], [5, –], [–, Intermediate], [Intermediate, Code], [Code, Generation], [Generation, ‹#›], [‹#›,  ], [ , dixita.kagathara@darshan.ac.in], [dixita.kagathara@darshan.ac.in, +91], [+91, -], [-, 97277], [97277, 47317], [47317, (], [(, CE], [CE, Department], [Department, )]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 5], [Unit, 5, –], [5, –, Intermediate], [–, Intermediate, Code], [Intermediate, Code, Generation], [Code, Generation, ‹#›], [Generation, ‹#›,  ], [‹#›,  , dixita.kagathara@darshan.ac.in], [ , dixita.kagathara@darshan.ac.in, +91], [dixita.kagathara@darshan.ac.in, +91, -], [+91, -, 97277], [-, 97277, 47317], [97277, 47317, (], [47317, (, CE], [(, CE, Department], [CE, Department, )]]
+
+>> Noun Phrases are: 
+[(CD, Unit]
+
+>> Named Entities are: 
+[('CE Department)', 'ORG')]
+
+
+============================ Sentence 32 =============================
+
+Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design (CD) Part 2  Different representation of three address code   Unit-5   
+
+
+>> Tokens are: 
+[Computer, Engineering, Department, Prof., Dixita, B., Kagathara, Compiler, Design, (, CD, ), 2, , Different, representation, address, code,   , Unit-5,  ] 
+
+>> PoS Tags are: 
+[('Computer', 'PROPN'), ('Engineering', 'PROPN'), ('Department', 'PROPN'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B.', 'PROPN'), ('Kagathara', 'PROPN'), ('Compiler', 'PROPN'), ('Design', 'PROPN'), ('(', 'PUNCT'), ('CD', 'PROPN'), (')', 'PUNCT'), ('2', 'NUM'), ('\uf077', 'NUM'), ('Different', 'ADJ'), ('representation', 'NOUN'), ('address', 'NOUN'), ('code', 'NOUN'), ('  ', 'SPACE'), ('Unit-5', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Computer', 'compound'), ('Engineering', 'compound'), ('Department', 'compound'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B.', 'compound'), ('Kagathara', 'compound'), ('Compiler', 'compound'), ('Design', 'ROOT'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('2', 'nummod'), ('\uf077', 'amod'), ('Different', 'amod'), ('representation', 'appos'), ('address', 'compound'), ('code', 'pobj'), ('  ', 'appos'), ('Unit-5', 'compound'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Computer, Engineering], [Engineering, Department], [Department, Prof.], [Prof., Dixita], [Dixita, B.], [B., Kagathara], [Kagathara, Compiler], [Compiler, Design], [Design, (], [(, CD], [CD, )], [), 2], [2, ], [, Different], [Different, representation], [representation, address], [address, code], [code,   ], [  , Unit-5], [Unit-5,  ]]
+
+>> Trigrams: 
+[[Computer, Engineering, Department], [Engineering, Department, Prof.], [Department, Prof., Dixita], [Prof., Dixita, B.], [Dixita, B., Kagathara], [B., Kagathara, Compiler], [Kagathara, Compiler, Design], [Compiler, Design, (], [Design, (, CD], [(, CD, )], [CD, ), 2], [), 2, ], [2, , Different], [, Different, representation], [Different, representation, address], [representation, address, code], [address, code,   ], [code,   , Unit-5], [  , Unit-5,  ]]
+
+>> Noun Phrases are: 
+[Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design, (CD, Part,  Different representation, three address code]
+
+>> Named Entities are: 
+[('Dixita B.', 'PERSON'), ('2', 'CARDINAL'), ('three', 'CARDINAL')]
+
+
+============================ Sentence 33 =============================
+
+Intermediate Code Generation   Darshan Institute of Engineering & Technology, Rajkot    Different Representation of Three Address Code        Different Representation of Three Address Code There are three types of representation used for three address code: Quadruples Triples   
+
+
+>> Tokens are: 
+[Intermediate, Code, Generation,   , Darshan, Institute, Engineering, &, Technology, ,, Rajkot,    , Different, Representation, Address, Code,        , Different, Representation, Address, Code, types, representation, address, code, :, Quadruples, Triples,  ] 
+
+>> PoS Tags are: 
+[('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('  ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), (',', 'PUNCT'), ('Rajkot', 'PROPN'), ('   ', 'SPACE'), ('Different', 'PROPN'), ('Representation', 'PROPN'), ('Address', 'PROPN'), ('Code', 'PROPN'), ('       ', 'SPACE'), ('Different', 'PROPN'), ('Representation', 'PROPN'), ('Address', 'PROPN'), ('Code', 'PROPN'), ('types', 'NOUN'), ('representation', 'NOUN'), ('address', 'NOUN'), ('code', 'NOUN'), (':', 'PUNCT'), ('Quadruples', 'PROPN'), ('Triples', 'VERB'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'nsubj'), ('  ', 'dep'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), (',', 'punct'), ('Rajkot', 'appos'), ('   ', 'nummod'), ('Different', 'compound'), ('Representation', 'appos'), ('Address', 'compound'), ('Code', 'pobj'), ('       ', 'compound'), ('Different', 'compound'), ('Representation', 'appos'), ('Address', 'compound'), ('Code', 'pobj'), ('types', 'attr'), ('representation', 'pobj'), ('address', 'compound'), ('code', 'pobj'), (':', 'punct'), ('Quadruples', 'nsubj'), ('Triples', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Intermediate, Code], [Code, Generation], [Generation,   ], [  , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology, ,], [,, Rajkot], [Rajkot,    ], [   , Different], [Different, Representation], [Representation, Address], [Address, Code], [Code,        ], [       , Different], [Different, Representation], [Representation, Address], [Address, Code], [Code, types], [types, representation], [representation, address], [address, code], [code, :], [:, Quadruples], [Quadruples, Triples], [Triples,  ]]
+
+>> Trigrams: 
+[[Intermediate, Code, Generation], [Code, Generation,   ], [Generation,   , Darshan], [  , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology, ,], [Technology, ,, Rajkot], [,, Rajkot,    ], [Rajkot,    , Different], [   , Different, Representation], [Different, Representation, Address], [Representation, Address, Code], [Address, Code,        ], [Code,        , Different], [       , Different, Representation], [Different, Representation, Address], [Representation, Address, Code], [Address, Code, types], [Code, types, representation], [types, representation, address], [representation, address, code], [address, code, :], [code, :, Quadruples], [:, Quadruples, Triples], [Quadruples, Triples,  ]]
+
+>> Noun Phrases are: 
+[Intermediate Code Generation, Darshan Institute, Engineering, Technology, Rajkot,    Different Representation, Three Address Code,        Different Representation, Three Address Code, three types, representation, three address code, Quadruples]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG'), ('three', 'CARDINAL'), ('three', 'CARDINAL'), ('Quadruples Triples', 'PERSON')]
+
+
+============================ Sentence 34 =============================
+
+Indirect triples    
+
+
+>> Tokens are: 
+[Indirect, triples,   ] 
+
+>> PoS Tags are: 
+[('Indirect', 'ADJ'), ('triples', 'VERB'), ('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Indirect', 'amod'), ('triples', 'ROOT'), ('  ', 'dobj')]
+
+>> Bigrams: 
+[[Indirect, triples], [triples,   ]]
+
+>> Trigrams: 
+[[Indirect, triples,   ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 35 =============================
+
+Ex:	x= -a*b + -a*b 	t1= - a 	t2 = t1 * b 
+
+
+>> Tokens are: 
+[Ex, :, 	, x=, -a*b, +, -a*b, 	, t1=, -, 	, t2, =, t1, *, b] 
+
+>> PoS Tags are: 
+[('Ex', 'PROPN'), (':', 'PUNCT'), ('\t', 'SPACE'), ('x=', 'NUM'), ('-a*b', 'PROPN'), ('+', 'ADP'), ('-a*b', 'ADJ'), ('\t', 'SPACE'), ('t1=', 'PROPN'), ('-', 'PUNCT'), ('\t', 'SPACE'), ('t2', 'PROPN'), ('=', 'SYM'), ('t1', 'PROPN'), ('*', 'PUNCT'), ('b', 'X')] 
+
+>> Dependency Tags are: 
+[('Ex', 'dep'), (':', 'punct'), ('\t', 'appos'), ('x=', 'punct'), ('-a*b', 'compound'), ('+', 'prep'), ('-a*b', 'amod'), ('\t', 'compound'), ('t1=', 'appos'), ('-', 'punct'), ('\t', 'compound'), ('t2', 'appos'), ('=', 'punct'), ('t1', 'ROOT'), ('*', 'punct'), ('b', 'punct')]
+
+>> Bigrams: 
+[[Ex, :], [:, 	], [	, x=], [x=, -a*b], [-a*b, +], [+, -a*b], [-a*b, 	], [	, t1=], [t1=, -], [-, 	], [	, t2], [t2, =], [=, t1], [t1, *], [*, b]]
+
+>> Trigrams: 
+[[Ex, :, 	], [:, 	, x=], [	, x=, -a*b], [x=, -a*b, +], [-a*b, +, -a*b], [+, -a*b, 	], [-a*b, 	, t1=], [	, t1=, -], [t1=, -, 	], [-, 	, t2], [	, t2, =], [t2, =, t1], [=, t1, *], [t1, *, b]]
+
+>> Noun Phrases are: 
+[	t1=, a 	t2]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 36 =============================
+
+	t3= - a 	t4 = t3 * b 	t5 = t2 + t4 	x= t5   Three Address Code     
+
+
+>> Tokens are: 
+[	, t3=, -, 	, t4, =, t3, *, b, 	, t5, =, t2, +, t4, 	, x=, t5,   , Address, Code,    ] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('t3=', 'PROPN'), ('-', 'PUNCT'), ('\t', 'SPACE'), ('t4', 'PROPN'), ('=', 'SYM'), ('t3', 'PROPN'), ('*', 'PUNCT'), ('b', 'PROPN'), ('\t', 'SPACE'), ('t5', 'PROPN'), ('=', 'SYM'), ('t2', 'PROPN'), ('+', 'PROPN'), ('t4', 'PROPN'), ('\t', 'SPACE'), ('x=', 'NUM'), ('t5', 'NUM'), ('  ', 'SPACE'), ('Address', 'PROPN'), ('Code', 'PROPN'), ('   ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'amod'), ('t3=', 'ROOT'), ('-', 'punct'), ('\t', 'compound'), ('t4', 'appos'), ('=', 'punct'), ('t3', 'appos'), ('*', 'punct'), ('b', 'punct'), ('\t', 'amod'), ('t5', 'compound'), ('=', 'punct'), ('t2', 'appos'), ('+', 'cc'), ('t4', 'compound'), ('\t', 'appos'), ('x=', 'punct'), ('t5', 'compound'), ('  ', 'appos'), ('Address', 'compound'), ('Code', 'appos'), ('   ', 'nummod')]
+
+>> Bigrams: 
+[[	, t3=], [t3=, -], [-, 	], [	, t4], [t4, =], [=, t3], [t3, *], [*, b], [b, 	], [	, t5], [t5, =], [=, t2], [t2, +], [+, t4], [t4, 	], [	, x=], [x=, t5], [t5,   ], [  , Address], [Address, Code], [Code,    ]]
+
+>> Trigrams: 
+[[	, t3=, -], [t3=, -, 	], [-, 	, t4], [	, t4, =], [t4, =, t3], [=, t3, *], [t3, *, b], [*, b, 	], [b, 	, t5], [	, t5, =], [t5, =, t2], [=, t2, +], [t2, +, t4], [+, t4, 	], [t4, 	, x=], [	, x=, t5], [x=, t5,   ], [t5,   , Address], [  , Address, Code], [Address, Code,    ]]
+
+>> Noun Phrases are: 
+[	t3=, a 	t4, = t3, 	t5 = t2, Three Address Code]
+
+>> Named Entities are: 
+[('Three', 'CARDINAL')]
+
+
+============================ Sentence 37 =============================
+
+Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 38 =============================
+
+#2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›   
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 5, –, Intermediate, Code, Generation, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('5', 'NUM'), ('–', 'PUNCT'), ('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('5', 'nummod'), ('–', 'punct'), ('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'appos'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 5], [5, –], [–, Intermediate], [Intermediate, Code], [Code, Generation], [Generation, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 5], [Unit, 5, –], [5, –, Intermediate], [–, Intermediate, Code], [Intermediate, Code, Generation], [Code, Generation, ‹#›], [Generation, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(CD, Unit, Intermediate Code Generation]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 39 =============================
+
+Quadruple 
+
+
+>> Tokens are: 
+[Quadruple] 
+
+>> PoS Tags are: 
+[('Quadruple', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Quadruple', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Quadruple]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 40 =============================
+
+The quadruple is a structure with at the most four fields such as op, arg1, arg2 and result. 
+
+
+>> Tokens are: 
+[quadruple, structure, fields, op, ,, arg1, ,, arg2, result, .] 
+
+>> PoS Tags are: 
+[('quadruple', 'NOUN'), ('structure', 'NOUN'), ('fields', 'NOUN'), ('op', 'NOUN'), (',', 'PUNCT'), ('arg1', 'PROPN'), (',', 'PUNCT'), ('arg2', 'INTJ'), ('result', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('quadruple', 'nsubj'), ('structure', 'attr'), ('fields', 'pobj'), ('op', 'pobj'), (',', 'punct'), ('arg1', 'conj'), (',', 'punct'), ('arg2', 'conj'), ('result', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[quadruple, structure], [structure, fields], [fields, op], [op, ,], [,, arg1], [arg1, ,], [,, arg2], [arg2, result], [result, .]]
+
+>> Trigrams: 
+[[quadruple, structure, fields], [structure, fields, op], [fields, op, ,], [op, ,, arg1], [,, arg1, ,], [arg1, ,, arg2], [,, arg2, result], [arg2, result, .]]
+
+>> Noun Phrases are: 
+[The quadruple, a structure, the most four fields, op, arg1]
+
+>> Named Entities are: 
+[('four', 'CARDINAL')]
+
+
+============================ Sentence 41 =============================
+
+The op field is used to represent the internal code for operator. 
+
+
+>> Tokens are: 
+[op, field, represent, internal, code, operator, .] 
+
+>> PoS Tags are: 
+[('op', 'NOUN'), ('field', 'NOUN'), ('represent', 'VERB'), ('internal', 'ADJ'), ('code', 'NOUN'), ('operator', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('op', 'compound'), ('field', 'nsubjpass'), ('represent', 'xcomp'), ('internal', 'amod'), ('code', 'dobj'), ('operator', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[op, field], [field, represent], [represent, internal], [internal, code], [code, operator], [operator, .]]
+
+>> Trigrams: 
+[[op, field, represent], [field, represent, internal], [represent, internal, code], [internal, code, operator], [code, operator, .]]
+
+>> Noun Phrases are: 
+[The op field, the internal code, operator]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 42 =============================
+
+The arg1 and arg2 represent the two operands. 
+
+
+>> Tokens are: 
+[arg1, arg2, represent, operands, .] 
+
+>> PoS Tags are: 
+[('arg1', 'NOUN'), ('arg2', 'NOUN'), ('represent', 'VERB'), ('operands', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('arg1', 'nsubj'), ('arg2', 'conj'), ('represent', 'ROOT'), ('operands', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[arg1, arg2], [arg2, represent], [represent, operands], [operands, .]]
+
+>> Trigrams: 
+[[arg1, arg2, represent], [arg2, represent, operands], [represent, operands, .]]
+
+>> Noun Phrases are: 
+[The arg1, arg2, the two operands]
+
+>> Named Entities are: 
+[('two', 'CARDINAL')]
+
+
+============================ Sentence 43 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 44 =============================
+
+And result field is used to store the result of an expression. 
+
+
+>> Tokens are: 
+[result, field, store, result, expression, .] 
+
+>> PoS Tags are: 
+[('result', 'NOUN'), ('field', 'NOUN'), ('store', 'VERB'), ('result', 'NOUN'), ('expression', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('result', 'compound'), ('field', 'nsubjpass'), ('store', 'xcomp'), ('result', 'dobj'), ('expression', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[result, field], [field, store], [store, result], [result, expression], [expression, .]]
+
+>> Trigrams: 
+[[result, field, store], [field, store, result], [store, result, expression], [result, expression, .]]
+
+>> Noun Phrases are: 
+[result field, the result, an expression]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 45 =============================
+
+ 	x= -a*b + -a*b 	t1= - a 	t2 = t1 * b 
+
+
+>> Tokens are: 
+[ 	, x=, -a*b, +, -a*b, 	, t1=, -, 	, t2, =, t1, *, b] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('x=', 'NUM'), ('-a*b', 'NOUN'), ('+', 'ADP'), ('-a*b', 'ADJ'), ('\t', 'SPACE'), ('t1=', 'PROPN'), ('-', 'PUNCT'), ('\t', 'SPACE'), ('t2', 'PROPN'), ('=', 'SYM'), ('t1', 'PROPN'), ('*', 'PUNCT'), ('b', 'X')] 
+
+>> Dependency Tags are: 
+[(' \t', 'dep'), ('x=', 'nummod'), ('-a*b', 'compound'), ('+', 'prep'), ('-a*b', 'amod'), ('\t', 'compound'), ('t1=', 'appos'), ('-', 'punct'), ('\t', 'compound'), ('t2', 'appos'), ('=', 'punct'), ('t1', 'ROOT'), ('*', 'punct'), ('b', 'punct')]
+
+>> Bigrams: 
+[[ 	, x=], [x=, -a*b], [-a*b, +], [+, -a*b], [-a*b, 	], [	, t1=], [t1=, -], [-, 	], [	, t2], [t2, =], [=, t1], [t1, *], [*, b]]
+
+>> Trigrams: 
+[[ 	, x=, -a*b], [x=, -a*b, +], [-a*b, +, -a*b], [+, -a*b, 	], [-a*b, 	, t1=], [	, t1=, -], [t1=, -, 	], [-, 	, t2], [	, t2, =], [t2, =, t1], [=, t1, *], [t1, *, b]]
+
+>> Noun Phrases are: 
+[-a*b 	t1=, a 	t2]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 46 =============================
+
+	t3= - a 	t4 = t3 * b 	t5 = t2 + t4 	x= t5 	No. 
+
+
+>> Tokens are: 
+[	, t3=, -, 	, t4, =, t3, *, b, 	, t5, =, t2, +, t4, 	, x=, t5, 	, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('t3=', 'PROPN'), ('-', 'PUNCT'), ('\t', 'SPACE'), ('t4', 'PROPN'), ('=', 'SYM'), ('t3', 'PROPN'), ('*', 'PUNCT'), ('b', 'PROPN'), ('\t', 'SPACE'), ('t5', 'PROPN'), ('=', 'SYM'), ('t2', 'PROPN'), ('+', 'PROPN'), ('t4', 'PROPN'), ('\t', 'SPACE'), ('x=', 'NUM'), ('t5', 'PROPN'), ('\t', 'SPACE'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'amod'), ('t3=', 'ROOT'), ('-', 'punct'), ('\t', 'compound'), ('t4', 'appos'), ('=', 'punct'), ('t3', 'appos'), ('*', 'punct'), ('b', 'punct'), ('\t', 'amod'), ('t5', 'compound'), ('=', 'punct'), ('t2', 'appos'), ('+', 'cc'), ('t4', 'compound'), ('\t', 'nmod'), ('x=', 'nummod'), ('t5', 'compound'), ('\t', 'compound'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, t3=], [t3=, -], [-, 	], [	, t4], [t4, =], [=, t3], [t3, *], [*, b], [b, 	], [	, t5], [t5, =], [=, t2], [t2, +], [+, t4], [t4, 	], [	, x=], [x=, t5], [t5, 	], [	, .]]
+
+>> Trigrams: 
+[[	, t3=, -], [t3=, -, 	], [-, 	, t4], [	, t4, =], [t4, =, t3], [=, t3, *], [t3, *, b], [*, b, 	], [b, 	, t5], [	, t5, =], [t5, =, t2], [=, t2, +], [t2, +, t4], [+, t4, 	], [t4, 	, x=], [	, x=, t5], [x=, t5, 	], [t5, 	, .]]
+
+>> Noun Phrases are: 
+[	t3=, a 	t4, = t3, 	t5 = t2, t4 	x= t5 	No]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 47 =============================
+
+	Operator	Arg1	Arg2	Result  	(0) 
+
+
+>> Tokens are: 
+[	, Operator, 	, Arg1, 	, Arg2, 	, Result,  	, (, 0, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Operator', 'PROPN'), ('\t', 'SPACE'), ('Arg1', 'PROPN'), ('\t', 'SPACE'), ('Arg2', 'CCONJ'), ('\t', 'SPACE'), ('Result', 'PROPN'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('0', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Operator', 'compound'), ('\t', 'ROOT'), ('Arg1', 'nmod'), ('\t', 'nmod'), ('Arg2', 'cc'), ('\t', 'conj'), ('Result', 'appos'), (' \t', 'appos'), ('(', 'punct'), ('0', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, Operator], [Operator, 	], [	, Arg1], [Arg1, 	], [	, Arg2], [Arg2, 	], [	, Result], [Result,  	], [ 	, (], [(, 0], [0, )]]
+
+>> Trigrams: 
+[[	, Operator, 	], [Operator, 	, Arg1], [	, Arg1, 	], [Arg1, 	, Arg2], [	, Arg2, 	], [Arg2, 	, Result], [	, Result,  	], [Result,  	, (], [ 	, (, 0], [(, 0, )]]
+
+>> Noun Phrases are: 
+[Arg1	Arg2	Result]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 48 =============================
+
+	uminus	a		t1  	(1) 
+
+
+>> Tokens are: 
+[	, uminus, 	, 		, t1,  	, (, 1, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('uminus', 'PROPN'), ('\t', 'SPACE'), ('\t\t', 'SPACE'), ('t1', 'PROPN'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('1', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'amod'), ('uminus', 'ROOT'), ('\t', 'appos'), ('\t\t', 'nmod'), ('t1', 'compound'), (' \t', 'appos'), ('(', 'punct'), ('1', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, uminus], [uminus, 	], [	, 		], [		, t1], [t1,  	], [ 	, (], [(, 1], [1, )]]
+
+>> Trigrams: 
+[[	, uminus, 	], [uminus, 	, 		], [	, 		, t1], [		, t1,  	], [t1,  	, (], [ 	, (, 1], [(, 1, )]]
+
+>> Noun Phrases are: 
+[	uminus]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 49 =============================
+
+	*	t1	b	t2  	(2) 
+
+
+>> Tokens are: 
+[	, *, 	, t1, 	, b, 	, t2,  	, (, 2, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('*', 'PUNCT'), ('\t', 'SPACE'), ('t1', 'PROPN'), ('\t', 'SPACE'), ('b', 'X'), ('\t', 'SPACE'), ('t2', 'PROPN'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('2', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('*', 'punct'), ('\t', 'appos'), ('t1', 'compound'), ('\t', 'appos'), ('b', 'appos'), ('\t', 'appos'), ('t2', 'compound'), (' \t', 'appos'), ('(', 'punct'), ('2', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, *], [*, 	], [	, t1], [t1, 	], [	, b], [b, 	], [	, t2], [t2,  	], [ 	, (], [(, 2], [2, )]]
+
+>> Trigrams: 
+[[	, *, 	], [*, 	, t1], [	, t1, 	], [t1, 	, b], [	, b, 	], [b, 	, t2], [	, t2,  	], [t2,  	, (], [ 	, (, 2], [(, 2, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 50 =============================
+
+	uminus	a		t3  	(3) 
+
+
+>> Tokens are: 
+[	, uminus, 	, 		, t3,  	, (, 3, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('uminus', 'PROPN'), ('\t', 'SPACE'), ('\t\t', 'SPACE'), ('t3', 'PROPN'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('3', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'amod'), ('uminus', 'ROOT'), ('\t', 'appos'), ('\t\t', 'nmod'), ('t3', 'compound'), (' \t', 'appos'), ('(', 'punct'), ('3', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, uminus], [uminus, 	], [	, 		], [		, t3], [t3,  	], [ 	, (], [(, 3], [3, )]]
+
+>> Trigrams: 
+[[	, uminus, 	], [uminus, 	, 		], [	, 		, t3], [		, t3,  	], [t3,  	, (], [ 	, (, 3], [(, 3, )]]
+
+>> Noun Phrases are: 
+[	uminus]
+
+>> Named Entities are: 
+[('3', 'CARDINAL')]
+
+
+============================ Sentence 51 =============================
+
+	*	t3	b	t4  	(4) 
+
+
+>> Tokens are: 
+[	, *, 	, t3, 	, b, 	, t4,  	, (, 4, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('*', 'PUNCT'), ('\t', 'SPACE'), ('t3', 'PROPN'), ('\t', 'SPACE'), ('b', 'PROPN'), ('\t', 'SPACE'), ('t4', 'NUM'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('4', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('*', 'punct'), ('\t', 'appos'), ('t3', 'compound'), ('\t', 'compound'), ('b', 'prep'), ('\t', 'appos'), ('t4', 'appos'), (' \t', 'appos'), ('(', 'punct'), ('4', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, *], [*, 	], [	, t3], [t3, 	], [	, b], [b, 	], [	, t4], [t4,  	], [ 	, (], [(, 4], [4, )]]
+
+>> Trigrams: 
+[[	, *, 	], [*, 	, t3], [	, t3, 	], [t3, 	, b], [	, b, 	], [b, 	, t4], [	, t4,  	], [t4,  	, (], [ 	, (, 4], [(, 4, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('4', 'CARDINAL')]
+
+
+============================ Sentence 52 =============================
+
+	+	t2	t4	t5  	(5)	= 
+
+
+>> Tokens are: 
+[	, +, 	, t2, 	, t4, 	, t5,  	, (, 5, ), 	, =] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('+', 'CCONJ'), ('\t', 'SPACE'), ('t2', 'PROPN'), ('\t', 'SPACE'), ('t4', 'PROPN'), ('\t', 'SPACE'), ('t5', 'PROPN'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('5', 'NUM'), (')', 'PUNCT'), ('\t', 'SPACE'), ('=', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'nmod'), ('+', 'cc'), ('\t', 'compound'), ('t2', 'conj'), ('\t', 'compound'), ('t4', 'compound'), ('\t', 'compound'), ('t5', 'compound'), (' \t', 'ROOT'), ('(', 'punct'), ('5', 'appos'), (')', 'punct'), ('\t', 'appos'), ('=', 'punct')]
+
+>> Bigrams: 
+[[	, +], [+, 	], [	, t2], [t2, 	], [	, t4], [t4, 	], [	, t5], [t5,  	], [ 	, (], [(, 5], [5, )], [), 	], [	, =]]
+
+>> Trigrams: 
+[[	, +, 	], [+, 	, t2], [	, t2, 	], [t2, 	, t4], [	, t4, 	], [t4, 	, t5], [	, t5,  	], [t5,  	, (], [ 	, (, 5], [(, 5, )], [5, ), 	], [), 	, =]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('5', 'CARDINAL')]
+
+
+============================ Sentence 53 =============================
+
+	t5		x   
+
+
+>> Tokens are: 
+[	, t5, 		, x,  ] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('t5', 'PROPN'), ('\t\t', 'SPACE'), ('x', 'SYM'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('t5', 'punct'), ('\t\t', 'appos'), ('x', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[	, t5], [t5, 		], [		, x], [x,  ]]
+
+>> Trigrams: 
+[[	, t5, 		], [t5, 		, x], [		, x,  ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 54 =============================
+
+Quadruple                         Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[Quadruple,                         , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('Quadruple', 'ADJ'), ('                        ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Quadruple', 'compound'), ('                        ', 'compound'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Quadruple,                         ], [                        , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[Quadruple,                         , Prof.], [                        , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[Quadruple                         Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 55 =============================
+
+#2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›   
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 5, –, Intermediate, Code, Generation, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('5', 'NUM'), ('–', 'PUNCT'), ('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('5', 'nummod'), ('–', 'punct'), ('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'appos'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 5], [5, –], [–, Intermediate], [Intermediate, Code], [Code, Generation], [Generation, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 5], [Unit, 5, –], [5, –, Intermediate], [–, Intermediate, Code], [Intermediate, Code, Generation], [Code, Generation, ‹#›], [Generation, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(CD, Unit, Intermediate Code Generation]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 56 =============================
+
+Triple To avoid entering temporary names into the symbol table, we might refer a temporary value by the position of the statement that computes it. 
+
+
+>> Tokens are: 
+[Triple, avoid, entering, temporary, names, symbol, table, ,, refer, temporary, value, position, statement, computes, .] 
+
+>> PoS Tags are: 
+[('Triple', 'PROPN'), ('avoid', 'VERB'), ('entering', 'VERB'), ('temporary', 'ADJ'), ('names', 'NOUN'), ('symbol', 'NOUN'), ('table', 'NOUN'), (',', 'PUNCT'), ('refer', 'VERB'), ('temporary', 'ADJ'), ('value', 'NOUN'), ('position', 'NOUN'), ('statement', 'NOUN'), ('computes', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Triple', 'nsubj'), ('avoid', 'advcl'), ('entering', 'xcomp'), ('temporary', 'amod'), ('names', 'dobj'), ('symbol', 'compound'), ('table', 'pobj'), (',', 'punct'), ('refer', 'ROOT'), ('temporary', 'amod'), ('value', 'dobj'), ('position', 'pobj'), ('statement', 'pobj'), ('computes', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Triple, avoid], [avoid, entering], [entering, temporary], [temporary, names], [names, symbol], [symbol, table], [table, ,], [,, refer], [refer, temporary], [temporary, value], [value, position], [position, statement], [statement, computes], [computes, .]]
+
+>> Trigrams: 
+[[Triple, avoid, entering], [avoid, entering, temporary], [entering, temporary, names], [temporary, names, symbol], [names, symbol, table], [symbol, table, ,], [table, ,, refer], [,, refer, temporary], [refer, temporary, value], [temporary, value, position], [value, position, statement], [position, statement, computes], [statement, computes, .]]
+
+>> Noun Phrases are: 
+[Triple, temporary names, the symbol table, we, a temporary value, the position, the statement, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 57 =============================
+
+If we do so, three address statements can be represented by records with only three fields: op, arg1 and arg2. 
+
+
+>> Tokens are: 
+[,, address, statements, represented, records, fields, :, op, ,, arg1, arg2, .] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('address', 'NOUN'), ('statements', 'NOUN'), ('represented', 'VERB'), ('records', 'NOUN'), ('fields', 'NOUN'), (':', 'PUNCT'), ('op', 'NOUN'), (',', 'PUNCT'), ('arg1', 'PROPN'), ('arg2', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('address', 'compound'), ('statements', 'nsubjpass'), ('represented', 'ROOT'), ('records', 'pobj'), ('fields', 'pobj'), (':', 'punct'), ('op', 'appos'), (',', 'punct'), ('arg1', 'conj'), ('arg2', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[,, address], [address, statements], [statements, represented], [represented, records], [records, fields], [fields, :], [:, op], [op, ,], [,, arg1], [arg1, arg2], [arg2, .]]
+
+>> Trigrams: 
+[[,, address, statements], [address, statements, represented], [statements, represented, records], [represented, records, fields], [records, fields, :], [fields, :, op], [:, op, ,], [op, ,, arg1], [,, arg1, arg2], [arg1, arg2, .]]
+
+>> Noun Phrases are: 
+[we, three address statements, records, only three fields, op, arg1, arg2]
+
+>> Named Entities are: 
+[('three', 'CARDINAL'), ('only three', 'CARDINAL')]
+
+
+============================ Sentence 58 =============================
+
+ 	No. 
+
+
+>> Tokens are: 
+[ 	, .] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' \t', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ 	, .]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[ 	No]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 59 =============================
+
+	Operator	Arg1	Arg2  	No. 
+
+
+>> Tokens are: 
+[	, Operator, 	, Arg1, 	, Arg2,  	, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Operator', 'PROPN'), ('\t', 'SPACE'), ('Arg1', 'PROPN'), ('\t', 'SPACE'), ('Arg2', 'CCONJ'), (' \t', 'SPACE'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Operator', 'compound'), ('\t', 'ROOT'), ('Arg1', 'compound'), ('\t', 'appos'), ('Arg2', 'punct'), (' \t', 'compound'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Operator], [Operator, 	], [	, Arg1], [Arg1, 	], [	, Arg2], [Arg2,  	], [ 	, .]]
+
+>> Trigrams: 
+[[	, Operator, 	], [Operator, 	, Arg1], [	, Arg1, 	], [Arg1, 	, Arg2], [	, Arg2,  	], [Arg2,  	, .]]
+
+>> Noun Phrases are: 
+[ 	No]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 60 =============================
+
+	Operator	Arg1	Arg2	Result  	(0) 
+
+
+>> Tokens are: 
+[	, Operator, 	, Arg1, 	, Arg2, 	, Result,  	, (, 0, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Operator', 'PROPN'), ('\t', 'SPACE'), ('Arg1', 'PROPN'), ('\t', 'SPACE'), ('Arg2', 'CCONJ'), ('\t', 'SPACE'), ('Result', 'PROPN'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('0', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Operator', 'compound'), ('\t', 'ROOT'), ('Arg1', 'nmod'), ('\t', 'nmod'), ('Arg2', 'cc'), ('\t', 'conj'), ('Result', 'appos'), (' \t', 'appos'), ('(', 'punct'), ('0', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, Operator], [Operator, 	], [	, Arg1], [Arg1, 	], [	, Arg2], [Arg2, 	], [	, Result], [Result,  	], [ 	, (], [(, 0], [0, )]]
+
+>> Trigrams: 
+[[	, Operator, 	], [Operator, 	, Arg1], [	, Arg1, 	], [Arg1, 	, Arg2], [	, Arg2, 	], [Arg2, 	, Result], [	, Result,  	], [Result,  	, (], [ 	, (, 0], [(, 0, )]]
+
+>> Noun Phrases are: 
+[Arg1	Arg2	Result]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 61 =============================
+
+	uminus	a		t1  	(1) 
+
+
+>> Tokens are: 
+[	, uminus, 	, 		, t1,  	, (, 1, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('uminus', 'PROPN'), ('\t', 'SPACE'), ('\t\t', 'SPACE'), ('t1', 'PROPN'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('1', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'amod'), ('uminus', 'ROOT'), ('\t', 'appos'), ('\t\t', 'nmod'), ('t1', 'compound'), (' \t', 'appos'), ('(', 'punct'), ('1', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, uminus], [uminus, 	], [	, 		], [		, t1], [t1,  	], [ 	, (], [(, 1], [1, )]]
+
+>> Trigrams: 
+[[	, uminus, 	], [uminus, 	, 		], [	, 		, t1], [		, t1,  	], [t1,  	, (], [ 	, (, 1], [(, 1, )]]
+
+>> Noun Phrases are: 
+[	uminus]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 62 =============================
+
+	*	t1	b	t2  	(2) 
+
+
+>> Tokens are: 
+[	, *, 	, t1, 	, b, 	, t2,  	, (, 2, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('*', 'PUNCT'), ('\t', 'SPACE'), ('t1', 'PROPN'), ('\t', 'SPACE'), ('b', 'X'), ('\t', 'SPACE'), ('t2', 'PROPN'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('2', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('*', 'punct'), ('\t', 'appos'), ('t1', 'compound'), ('\t', 'appos'), ('b', 'appos'), ('\t', 'appos'), ('t2', 'compound'), (' \t', 'appos'), ('(', 'punct'), ('2', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, *], [*, 	], [	, t1], [t1, 	], [	, b], [b, 	], [	, t2], [t2,  	], [ 	, (], [(, 2], [2, )]]
+
+>> Trigrams: 
+[[	, *, 	], [*, 	, t1], [	, t1, 	], [t1, 	, b], [	, b, 	], [b, 	, t2], [	, t2,  	], [t2,  	, (], [ 	, (, 2], [(, 2, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 63 =============================
+
+	uminus	a		t3  	(3) 
+
+
+>> Tokens are: 
+[	, uminus, 	, 		, t3,  	, (, 3, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('uminus', 'PROPN'), ('\t', 'SPACE'), ('\t\t', 'SPACE'), ('t3', 'PROPN'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('3', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'amod'), ('uminus', 'ROOT'), ('\t', 'appos'), ('\t\t', 'nmod'), ('t3', 'compound'), (' \t', 'appos'), ('(', 'punct'), ('3', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, uminus], [uminus, 	], [	, 		], [		, t3], [t3,  	], [ 	, (], [(, 3], [3, )]]
+
+>> Trigrams: 
+[[	, uminus, 	], [uminus, 	, 		], [	, 		, t3], [		, t3,  	], [t3,  	, (], [ 	, (, 3], [(, 3, )]]
+
+>> Noun Phrases are: 
+[	uminus]
+
+>> Named Entities are: 
+[('3', 'CARDINAL')]
+
+
+============================ Sentence 64 =============================
+
+	*	t3	b	t4  	(4) 
+
+
+>> Tokens are: 
+[	, *, 	, t3, 	, b, 	, t4,  	, (, 4, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('*', 'PUNCT'), ('\t', 'SPACE'), ('t3', 'PROPN'), ('\t', 'SPACE'), ('b', 'PROPN'), ('\t', 'SPACE'), ('t4', 'NUM'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('4', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('*', 'punct'), ('\t', 'appos'), ('t3', 'compound'), ('\t', 'compound'), ('b', 'prep'), ('\t', 'appos'), ('t4', 'appos'), (' \t', 'appos'), ('(', 'punct'), ('4', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, *], [*, 	], [	, t3], [t3, 	], [	, b], [b, 	], [	, t4], [t4,  	], [ 	, (], [(, 4], [4, )]]
+
+>> Trigrams: 
+[[	, *, 	], [*, 	, t3], [	, t3, 	], [t3, 	, b], [	, b, 	], [b, 	, t4], [	, t4,  	], [t4,  	, (], [ 	, (, 4], [(, 4, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('4', 'CARDINAL')]
+
+
+============================ Sentence 65 =============================
+
+	+	t2	t4	t5  	(5)	= 
+
+
+>> Tokens are: 
+[	, +, 	, t2, 	, t4, 	, t5,  	, (, 5, ), 	, =] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('+', 'CCONJ'), ('\t', 'SPACE'), ('t2', 'PROPN'), ('\t', 'SPACE'), ('t4', 'PROPN'), ('\t', 'SPACE'), ('t5', 'PROPN'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('5', 'NUM'), (')', 'PUNCT'), ('\t', 'SPACE'), ('=', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'nmod'), ('+', 'cc'), ('\t', 'compound'), ('t2', 'conj'), ('\t', 'compound'), ('t4', 'compound'), ('\t', 'compound'), ('t5', 'compound'), (' \t', 'ROOT'), ('(', 'punct'), ('5', 'appos'), (')', 'punct'), ('\t', 'appos'), ('=', 'punct')]
+
+>> Bigrams: 
+[[	, +], [+, 	], [	, t2], [t2, 	], [	, t4], [t4, 	], [	, t5], [t5,  	], [ 	, (], [(, 5], [5, )], [), 	], [	, =]]
+
+>> Trigrams: 
+[[	, +, 	], [+, 	, t2], [	, t2, 	], [t2, 	, t4], [	, t4, 	], [t4, 	, t5], [	, t5,  	], [t5,  	, (], [ 	, (, 5], [(, 5, )], [5, ), 	], [), 	, =]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('5', 'CARDINAL')]
+
+
+============================ Sentence 66 =============================
+
+	t5		x  	(0) 
+
+
+>> Tokens are: 
+[	, t5, 		, x,  	, (, 0, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('t5', 'PROPN'), ('\t\t', 'SPACE'), ('x', 'PUNCT'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('0', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('t5', 'punct'), ('\t\t', 'appos'), ('x', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('0', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, t5], [t5, 		], [		, x], [x,  	], [ 	, (], [(, 0], [0, )]]
+
+>> Trigrams: 
+[[	, t5, 		], [t5, 		, x], [		, x,  	], [x,  	, (], [ 	, (, 0], [(, 0, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 67 =============================
+
+	uminus	a	  	(1) 
+
+
+>> Tokens are: 
+[	, uminus, 	, 	  	, (, 1, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('uminus', 'PROPN'), ('\t', 'SPACE'), ('\t  \t', 'SPACE'), ('(', 'PUNCT'), ('1', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'amod'), ('uminus', 'compound'), ('\t', 'ROOT'), ('\t  \t', 'dobj'), ('(', 'punct'), ('1', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, uminus], [uminus, 	], [	, 	  	], [	  	, (], [(, 1], [1, )]]
+
+>> Trigrams: 
+[[	, uminus, 	], [uminus, 	, 	  	], [	, 	  	, (], [	  	, (, 1], [(, 1, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 68 =============================
+
+	*	(0) 
+
+
+>> Tokens are: 
+[	, *, 	, (, 0, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('*', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('0', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('*', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('0', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, *], [*, 	], [	, (], [(, 0], [0, )]]
+
+>> Trigrams: 
+[[	, *, 	], [*, 	, (], [	, (, 0], [(, 0, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 69 =============================
+
+	b  	(2)	uminus	a	  	(3) 
+
+
+>> Tokens are: 
+[	, b,  	, (, 2, ), 	, uminus, 	, 	  	, (, 3, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('b', 'ADP'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('2', 'X'), (')', 'PUNCT'), ('\t', 'SPACE'), ('uminus', 'PROPN'), ('\t', 'SPACE'), ('\t  \t', 'SPACE'), ('(', 'PUNCT'), ('3', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('b', 'prep'), (' \t', 'appos'), ('(', 'punct'), ('2', 'appos'), (')', 'punct'), ('\t', 'amod'), ('uminus', 'appos'), ('\t', 'conj'), ('\t  \t', 'appos'), ('(', 'punct'), ('3', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, b], [b,  	], [ 	, (], [(, 2], [2, )], [), 	], [	, uminus], [uminus, 	], [	, 	  	], [	  	, (], [(, 3], [3, )]]
+
+>> Trigrams: 
+[[	, b,  	], [b,  	, (], [ 	, (, 2], [(, 2, )], [2, ), 	], [), 	, uminus], [	, uminus, 	], [uminus, 	, 	  	], [	, 	  	, (], [	  	, (, 3], [(, 3, )]]
+
+>> Noun Phrases are: 
+[	uminus]
+
+>> Named Entities are: 
+[('2', 'CARDINAL'), ('3', 'CARDINAL')]
+
+
+============================ Sentence 70 =============================
+
+	*	(2) 
+
+
+>> Tokens are: 
+[	, *, 	, (, 2, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('*', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('2', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('*', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('2', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, *], [*, 	], [	, (], [(, 2], [2, )]]
+
+>> Trigrams: 
+[[	, *, 	], [*, 	, (], [	, (, 2], [(, 2, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('2', 'CARDINAL')]
+
+
+============================ Sentence 71 =============================
+
+	b  	(4) 
+
+
+>> Tokens are: 
+[	, b,  	, (, 4, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('b', 'ADP'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('4', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('b', 'prep'), (' \t', 'appos'), ('(', 'punct'), ('4', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, b], [b,  	], [ 	, (], [(, 4], [4, )]]
+
+>> Trigrams: 
+[[	, b,  	], [b,  	, (], [ 	, (, 4], [(, 4, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('4', 'CARDINAL')]
+
+
+============================ Sentence 72 =============================
+
+	+	(1)	(3)  	(5) 
+
+
+>> Tokens are: 
+[	, +, 	, (, 1, ), 	, (, 3, ),  	, (, 5, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('+', 'CCONJ'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('1', 'X'), (')', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('3', 'X'), (')', 'PUNCT'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('5', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'nmod'), ('+', 'cc'), ('\t', 'conj'), ('(', 'punct'), ('1', 'appos'), (')', 'punct'), ('\t', 'ROOT'), ('(', 'punct'), ('3', 'appos'), (')', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('5', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, +], [+, 	], [	, (], [(, 1], [1, )], [), 	], [	, (], [(, 3], [3, )], [),  	], [ 	, (], [(, 5], [5, )]]
+
+>> Trigrams: 
+[[	, +, 	], [+, 	, (], [	, (, 1], [(, 1, )], [1, ), 	], [), 	, (], [	, (, 3], [(, 3, )], [3, ),  	], [),  	, (], [ 	, (, 5], [(, 5, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('3', 'CARDINAL')]
+
+
+============================ Sentence 73 =============================
+
+	=	x	(4)   
+
+
+>> Tokens are: 
+[	, =, 	, x, 	, (, 4, ),  ] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('=', 'PUNCT'), ('\t', 'SPACE'), ('x', 'SYM'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('4', 'NUM'), (')', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('=', 'punct'), ('\t', 'appos'), ('x', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('4', 'appos'), (')', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[	, =], [=, 	], [	, x], [x, 	], [	, (], [(, 4], [4, )], [),  ]]
+
+>> Trigrams: 
+[[	, =, 	], [=, 	, x], [	, x, 	], [x, 	, (], [	, (, 4], [(, 4, )], [4, ),  ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('4', 'CARDINAL')]
+
+
+============================ Sentence 74 =============================
+
+Quadruple Triple                    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[Quadruple, Triple,                    , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('Quadruple', 'PROPN'), ('Triple', 'ADJ'), ('                   ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Quadruple', 'compound'), ('Triple', 'amod'), ('                   ', 'compound'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Quadruple, Triple], [Triple,                    ], [                   , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[Quadruple, Triple,                    ], [Triple,                    , Prof.], [                   , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[Quadruple Triple                    Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 75 =============================
+
+#2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›   
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 5, –, Intermediate, Code, Generation, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('5', 'NUM'), ('–', 'PUNCT'), ('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('5', 'nummod'), ('–', 'punct'), ('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'appos'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 5], [5, –], [–, Intermediate], [Intermediate, Code], [Code, Generation], [Generation, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 5], [Unit, 5, –], [5, –, Intermediate], [–, Intermediate, Code], [Intermediate, Code, Generation], [Code, Generation, ‹#›], [Generation, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(CD, Unit, Intermediate Code Generation]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 76 =============================
+
+Indirect Triple 
+
+
+>> Tokens are: 
+[Indirect, Triple] 
+
+>> PoS Tags are: 
+[('Indirect', 'PROPN'), ('Triple', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Indirect', 'compound'), ('Triple', 'ROOT')]
+
+>> Bigrams: 
+[[Indirect, Triple]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Indirect Triple]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 77 =============================
+
+In the indirect triple representation the listing of triples has been done. 
+
+
+>> Tokens are: 
+[indirect, triple, representation, listing, triples, .] 
+
+>> PoS Tags are: 
+[('indirect', 'ADJ'), ('triple', 'ADJ'), ('representation', 'NOUN'), ('listing', 'NOUN'), ('triples', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('indirect', 'amod'), ('triple', 'amod'), ('representation', 'pobj'), ('listing', 'nsubjpass'), ('triples', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[indirect, triple], [triple, representation], [representation, listing], [listing, triples], [triples, .]]
+
+>> Trigrams: 
+[[indirect, triple, representation], [triple, representation, listing], [representation, listing, triples], [listing, triples, .]]
+
+>> Noun Phrases are: 
+[the indirect triple representation, the listing, triples]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 78 =============================
+
+And listing pointers are used instead of using statement. 
+
+
+>> Tokens are: 
+[listing, pointers, instead, statement, .] 
+
+>> PoS Tags are: 
+[('listing', 'VERB'), ('pointers', 'NOUN'), ('instead', 'ADV'), ('statement', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('listing', 'csubjpass'), ('pointers', 'nsubjpass'), ('instead', 'advmod'), ('statement', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[listing, pointers], [pointers, instead], [instead, statement], [statement, .]]
+
+>> Trigrams: 
+[[listing, pointers, instead], [pointers, instead, statement], [instead, statement, .]]
+
+>> Noun Phrases are: 
+[pointers, statement]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 79 =============================
+
+This implementation is called indirect triples. 
+
+
+>> Tokens are: 
+[implementation, called, indirect, triples, .] 
+
+>> PoS Tags are: 
+[('implementation', 'NOUN'), ('called', 'VERB'), ('indirect', 'ADJ'), ('triples', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('implementation', 'nsubjpass'), ('called', 'ROOT'), ('indirect', 'amod'), ('triples', 'oprd'), ('.', 'punct')]
+
+>> Bigrams: 
+[[implementation, called], [called, indirect], [indirect, triples], [triples, .]]
+
+>> Trigrams: 
+[[implementation, called, indirect], [called, indirect, triples], [indirect, triples, .]]
+
+>> Noun Phrases are: 
+[This implementation, indirect triples]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 80 =============================
+
+ 	No. 
+
+
+>> Tokens are: 
+[ 	, .] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' \t', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ 	, .]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[ 	No]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 81 =============================
+
+	Operator	Arg1	Arg2  	(0) 
+
+
+>> Tokens are: 
+[	, Operator, 	, Arg1, 	, Arg2,  	, (, 0, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Operator', 'PROPN'), ('\t', 'SPACE'), ('Arg1', 'PROPN'), ('\t', 'SPACE'), ('Arg2', 'NUM'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('0', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Operator', 'compound'), ('\t', 'ROOT'), ('Arg1', 'compound'), ('\t', 'appos'), ('Arg2', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('0', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, Operator], [Operator, 	], [	, Arg1], [Arg1, 	], [	, Arg2], [Arg2,  	], [ 	, (], [(, 0], [0, )]]
+
+>> Trigrams: 
+[[	, Operator, 	], [Operator, 	, Arg1], [	, Arg1, 	], [Arg1, 	, Arg2], [	, Arg2,  	], [Arg2,  	, (], [ 	, (, 0], [(, 0, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 82 =============================
+
+	(14)  	(0) 
+
+
+>> Tokens are: 
+[	, (, 14, ),  	, (, 0, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('(', 'PUNCT'), ('14', 'NUM'), (')', 'PUNCT'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('0', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('(', 'punct'), ('14', 'appos'), (')', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('0', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, (], [(, 14], [14, )], [),  	], [ 	, (], [(, 0], [0, )]]
+
+>> Trigrams: 
+[[	, (, 14], [(, 14, )], [14, ),  	], [),  	, (], [ 	, (, 0], [(, 0, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('14', 'CARDINAL')]
+
+
+============================ Sentence 83 =============================
+
+	uminus	a	  	(1) 
+
+
+>> Tokens are: 
+[	, uminus, 	, 	  	, (, 1, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('uminus', 'PROPN'), ('\t', 'SPACE'), ('\t  \t', 'SPACE'), ('(', 'PUNCT'), ('1', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'amod'), ('uminus', 'compound'), ('\t', 'ROOT'), ('\t  \t', 'dobj'), ('(', 'punct'), ('1', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, uminus], [uminus, 	], [	, 	  	], [	  	, (], [(, 1], [1, )]]
+
+>> Trigrams: 
+[[	, uminus, 	], [uminus, 	, 	  	], [	, 	  	, (], [	  	, (, 1], [(, 1, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 84 =============================
+
+	*	(14) 
+
+
+>> Tokens are: 
+[	, *, 	, (, 14, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('*', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('14', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('*', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('14', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, *], [*, 	], [	, (], [(, 14], [14, )]]
+
+>> Trigrams: 
+[[	, *, 	], [*, 	, (], [	, (, 14], [(, 14, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('14', 'CARDINAL')]
+
+
+============================ Sentence 85 =============================
+
+	b  	(2)	uminus	a	  	(3) 
+
+
+>> Tokens are: 
+[	, b,  	, (, 2, ), 	, uminus, 	, 	  	, (, 3, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('b', 'ADP'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('2', 'X'), (')', 'PUNCT'), ('\t', 'SPACE'), ('uminus', 'PROPN'), ('\t', 'SPACE'), ('\t  \t', 'SPACE'), ('(', 'PUNCT'), ('3', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('b', 'prep'), (' \t', 'appos'), ('(', 'punct'), ('2', 'appos'), (')', 'punct'), ('\t', 'amod'), ('uminus', 'appos'), ('\t', 'conj'), ('\t  \t', 'appos'), ('(', 'punct'), ('3', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, b], [b,  	], [ 	, (], [(, 2], [2, )], [), 	], [	, uminus], [uminus, 	], [	, 	  	], [	  	, (], [(, 3], [3, )]]
+
+>> Trigrams: 
+[[	, b,  	], [b,  	, (], [ 	, (, 2], [(, 2, )], [2, ), 	], [), 	, uminus], [	, uminus, 	], [uminus, 	, 	  	], [	, 	  	, (], [	  	, (, 3], [(, 3, )]]
+
+>> Noun Phrases are: 
+[	uminus]
+
+>> Named Entities are: 
+[('2', 'CARDINAL'), ('3', 'CARDINAL')]
+
+
+============================ Sentence 86 =============================
+
+	*	(16) 
+
+
+>> Tokens are: 
+[	, *, 	, (, 16, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('*', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('16', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('*', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('16', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, *], [*, 	], [	, (], [(, 16], [16, )]]
+
+>> Trigrams: 
+[[	, *, 	], [*, 	, (], [	, (, 16], [(, 16, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('16', 'CARDINAL')]
+
+
+============================ Sentence 87 =============================
+
+	b  	(4) 
+
+
+>> Tokens are: 
+[	, b,  	, (, 4, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('b', 'ADP'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('4', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('b', 'prep'), (' \t', 'appos'), ('(', 'punct'), ('4', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, b], [b,  	], [ 	, (], [(, 4], [4, )]]
+
+>> Trigrams: 
+[[	, b,  	], [b,  	, (], [ 	, (, 4], [(, 4, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('4', 'CARDINAL')]
+
+
+============================ Sentence 88 =============================
+
+	+	(15)	(17)  	(5) 
+
+
+>> Tokens are: 
+[	, +, 	, (, 15, ), 	, (, 17, ),  	, (, 5, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('+', 'CCONJ'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('15', 'X'), (')', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('17', 'NUM'), (')', 'PUNCT'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('5', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'nmod'), ('+', 'cc'), ('\t', 'conj'), ('(', 'punct'), ('15', 'appos'), (')', 'punct'), ('\t', 'ROOT'), ('(', 'punct'), ('17', 'appos'), (')', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('5', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, +], [+, 	], [	, (], [(, 15], [15, )], [), 	], [	, (], [(, 17], [17, )], [),  	], [ 	, (], [(, 5], [5, )]]
+
+>> Trigrams: 
+[[	, +, 	], [+, 	, (], [	, (, 15], [(, 15, )], [15, ), 	], [), 	, (], [	, (, 17], [(, 17, )], [17, ),  	], [),  	, (], [ 	, (, 5], [(, 5, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('15', 'CARDINAL'), ('17', 'CARDINAL')]
+
+
+============================ Sentence 89 =============================
+
+	=	x	(18)  		 
+
+
+>> Tokens are: 
+[	, =, 	, x, 	, (, 18, ),  		] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('=', 'PUNCT'), ('\t', 'SPACE'), ('x', 'SYM'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('18', 'NUM'), (')', 'PUNCT'), (' \t\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('=', 'punct'), ('\t', 'appos'), ('x', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('18', 'appos'), (')', 'punct'), (' \t\t', 'punct')]
+
+>> Bigrams: 
+[[	, =], [=, 	], [	, x], [x, 	], [	, (], [(, 18], [18, )], [),  		]]
+
+>> Trigrams: 
+[[	, =, 	], [=, 	, x], [	, x, 	], [x, 	, (], [	, (, 18], [(, 18, )], [18, ),  		]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('18', 'CARDINAL')]
+
+
+============================ Sentence 90 =============================
+
+Statement  	 
+
+
+>> Tokens are: 
+[Statement,  	] 
+
+>> PoS Tags are: 
+[('Statement', 'NOUN'), (' \t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Statement', 'compound'), (' \t', 'ROOT')]
+
+>> Bigrams: 
+[[Statement,  	]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 91 =============================
+
+(1)	(15)  	(2) 
+
+
+>> Tokens are: 
+[(, 1, ), 	, (, 15, ),  	, (, 2, )] 
+
+>> PoS Tags are: 
+[('(', 'PUNCT'), ('1', 'X'), (')', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('15', 'NUM'), (')', 'PUNCT'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('2', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('(', 'punct'), ('1', 'meta'), (')', 'punct'), ('\t', 'ROOT'), ('(', 'punct'), ('15', 'appos'), (')', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('2', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[(, 1], [1, )], [), 	], [	, (], [(, 15], [15, )], [),  	], [ 	, (], [(, 2], [2, )]]
+
+>> Trigrams: 
+[[(, 1, )], [1, ), 	], [), 	, (], [	, (, 15], [(, 15, )], [15, ),  	], [),  	, (], [ 	, (, 2], [(, 2, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('15', 'CARDINAL'), ('2', 'CARDINAL')]
+
+
+============================ Sentence 92 =============================
+
+	(16)  	(3)	(17)  	(4)	(18)  	(5) 
+
+
+>> Tokens are: 
+[	, (, 16, ),  	, (, 3, ), 	, (, 17, ),  	, (, 4, ), 	, (, 18, ),  	, (, 5, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('(', 'PUNCT'), ('16', 'NUM'), (')', 'PUNCT'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('3', 'X'), (')', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('17', 'NUM'), (')', 'PUNCT'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('4', 'X'), (')', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('18', 'NUM'), (')', 'PUNCT'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('5', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('(', 'punct'), ('16', 'appos'), (')', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('3', 'appos'), (')', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('17', 'appos'), (')', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('4', 'appos'), (')', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('18', 'appos'), (')', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('5', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, (], [(, 16], [16, )], [),  	], [ 	, (], [(, 3], [3, )], [), 	], [	, (], [(, 17], [17, )], [),  	], [ 	, (], [(, 4], [4, )], [), 	], [	, (], [(, 18], [18, )], [),  	], [ 	, (], [(, 5], [5, )]]
+
+>> Trigrams: 
+[[	, (, 16], [(, 16, )], [16, ),  	], [),  	, (], [ 	, (, 3], [(, 3, )], [3, ), 	], [), 	, (], [	, (, 17], [(, 17, )], [17, ),  	], [),  	, (], [ 	, (, 4], [(, 4, )], [4, ), 	], [), 	, (], [	, (, 18], [(, 18, )], [18, ),  	], [),  	, (], [ 	, (, 5], [(, 5, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('16', 'CARDINAL'), ('3', 'CARDINAL'), ('17', 'CARDINAL'), ('18', 'CARDINAL')]
+
+
+============================ Sentence 93 =============================
+
+	(19)  	No. 
+
+
+>> Tokens are: 
+[	, (, 19, ),  	, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('(', 'PUNCT'), ('19', 'NUM'), (')', 'PUNCT'), (' \t', 'SPACE'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('(', 'punct'), ('19', 'appos'), (')', 'punct'), (' \t', 'compound'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, (], [(, 19], [19, )], [),  	], [ 	, .]]
+
+>> Trigrams: 
+[[	, (, 19], [(, 19, )], [19, ),  	], [),  	, .]]
+
+>> Noun Phrases are: 
+[ 	No]
+
+>> Named Entities are: 
+[('19', 'CARDINAL')]
+
+
+============================ Sentence 94 =============================
+
+	Operator	Arg1	Arg2  	(0) 
+
+
+>> Tokens are: 
+[	, Operator, 	, Arg1, 	, Arg2,  	, (, 0, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Operator', 'PROPN'), ('\t', 'SPACE'), ('Arg1', 'PROPN'), ('\t', 'SPACE'), ('Arg2', 'NUM'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('0', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Operator', 'compound'), ('\t', 'ROOT'), ('Arg1', 'compound'), ('\t', 'appos'), ('Arg2', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('0', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, Operator], [Operator, 	], [	, Arg1], [Arg1, 	], [	, Arg2], [Arg2,  	], [ 	, (], [(, 0], [0, )]]
+
+>> Trigrams: 
+[[	, Operator, 	], [Operator, 	, Arg1], [	, Arg1, 	], [Arg1, 	, Arg2], [	, Arg2,  	], [Arg2,  	, (], [ 	, (, 0], [(, 0, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 95 =============================
+
+	uminus	a	  	(1) 
+
+
+>> Tokens are: 
+[	, uminus, 	, 	  	, (, 1, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('uminus', 'PROPN'), ('\t', 'SPACE'), ('\t  \t', 'SPACE'), ('(', 'PUNCT'), ('1', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'amod'), ('uminus', 'compound'), ('\t', 'ROOT'), ('\t  \t', 'dobj'), ('(', 'punct'), ('1', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, uminus], [uminus, 	], [	, 	  	], [	  	, (], [(, 1], [1, )]]
+
+>> Trigrams: 
+[[	, uminus, 	], [uminus, 	, 	  	], [	, 	  	, (], [	  	, (, 1], [(, 1, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 96 =============================
+
+	*	(0) 
+
+
+>> Tokens are: 
+[	, *, 	, (, 0, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('*', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('0', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('*', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('0', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, *], [*, 	], [	, (], [(, 0], [0, )]]
+
+>> Trigrams: 
+[[	, *, 	], [*, 	, (], [	, (, 0], [(, 0, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 97 =============================
+
+	b  	(2)	uminus	a	  	(3) 
+
+
+>> Tokens are: 
+[	, b,  	, (, 2, ), 	, uminus, 	, 	  	, (, 3, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('b', 'ADP'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('2', 'X'), (')', 'PUNCT'), ('\t', 'SPACE'), ('uminus', 'PROPN'), ('\t', 'SPACE'), ('\t  \t', 'SPACE'), ('(', 'PUNCT'), ('3', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('b', 'prep'), (' \t', 'appos'), ('(', 'punct'), ('2', 'appos'), (')', 'punct'), ('\t', 'amod'), ('uminus', 'appos'), ('\t', 'conj'), ('\t  \t', 'appos'), ('(', 'punct'), ('3', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, b], [b,  	], [ 	, (], [(, 2], [2, )], [), 	], [	, uminus], [uminus, 	], [	, 	  	], [	  	, (], [(, 3], [3, )]]
+
+>> Trigrams: 
+[[	, b,  	], [b,  	, (], [ 	, (, 2], [(, 2, )], [2, ), 	], [), 	, uminus], [	, uminus, 	], [uminus, 	, 	  	], [	, 	  	, (], [	  	, (, 3], [(, 3, )]]
+
+>> Noun Phrases are: 
+[	uminus]
+
+>> Named Entities are: 
+[('2', 'CARDINAL'), ('3', 'CARDINAL')]
+
+
+============================ Sentence 98 =============================
+
+	*	(2) 
+
+
+>> Tokens are: 
+[	, *, 	, (, 2, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('*', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('2', 'X'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('*', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('2', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, *], [*, 	], [	, (], [(, 2], [2, )]]
+
+>> Trigrams: 
+[[	, *, 	], [*, 	, (], [	, (, 2], [(, 2, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('2', 'CARDINAL')]
+
+
+============================ Sentence 99 =============================
+
+	b  	(4) 
+
+
+>> Tokens are: 
+[	, b,  	, (, 4, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('b', 'ADP'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('4', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'ROOT'), ('b', 'prep'), (' \t', 'appos'), ('(', 'punct'), ('4', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, b], [b,  	], [ 	, (], [(, 4], [4, )]]
+
+>> Trigrams: 
+[[	, b,  	], [b,  	, (], [ 	, (, 4], [(, 4, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('4', 'CARDINAL')]
+
+
+============================ Sentence 100 =============================
+
+	+	(1)	(3)  	(5) 
+
+
+>> Tokens are: 
+[	, +, 	, (, 1, ), 	, (, 3, ),  	, (, 5, )] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('+', 'CCONJ'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('1', 'X'), (')', 'PUNCT'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('3', 'X'), (')', 'PUNCT'), (' \t', 'SPACE'), ('(', 'PUNCT'), ('5', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'nmod'), ('+', 'cc'), ('\t', 'conj'), ('(', 'punct'), ('1', 'appos'), (')', 'punct'), ('\t', 'ROOT'), ('(', 'punct'), ('3', 'appos'), (')', 'punct'), (' \t', 'appos'), ('(', 'punct'), ('5', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[	, +], [+, 	], [	, (], [(, 1], [1, )], [), 	], [	, (], [(, 3], [3, )], [),  	], [ 	, (], [(, 5], [5, )]]
+
+>> Trigrams: 
+[[	, +, 	], [+, 	, (], [	, (, 1], [(, 1, )], [1, ), 	], [), 	, (], [	, (, 3], [(, 3, )], [3, ),  	], [),  	, (], [ 	, (, 5], [(, 5, )]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('3', 'CARDINAL')]
+
+
+============================ Sentence 101 =============================
+
+	=	x	(4)   
+
+
+>> Tokens are: 
+[	, =, 	, x, 	, (, 4, ),  ] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('=', 'PUNCT'), ('\t', 'SPACE'), ('x', 'SYM'), ('\t', 'SPACE'), ('(', 'PUNCT'), ('4', 'NUM'), (')', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'nmod'), ('=', 'punct'), ('\t', 'ROOT'), ('x', 'punct'), ('\t', 'appos'), ('(', 'punct'), ('4', 'appos'), (')', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[	, =], [=, 	], [	, x], [x, 	], [	, (], [(, 4], [4, )], [),  ]]
+
+>> Trigrams: 
+[[	, =, 	], [=, 	, x], [	, x, 	], [x, 	, (], [	, (, 4], [(, 4, )], [4, ),  ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('4', 'CARDINAL')]
+
+
+============================ Sentence 102 =============================
+
+Indirect Triple Triple         Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[Indirect, Triple, Triple,         , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('Indirect', 'PROPN'), ('Triple', 'PROPN'), ('Triple', 'ADJ'), ('        ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Indirect', 'compound'), ('Triple', 'compound'), ('Triple', 'amod'), ('        ', 'compound'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Indirect, Triple], [Triple, Triple], [Triple,         ], [        , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[Indirect, Triple, Triple], [Triple, Triple,         ], [Triple,         , Prof.], [        , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[Indirect Triple Triple         Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 103 =============================
+
+#2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›   
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 5, –, Intermediate, Code, Generation, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('5', 'NUM'), ('–', 'PUNCT'), ('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('5', 'nummod'), ('–', 'punct'), ('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'ROOT'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 5], [5, –], [–, Intermediate], [Intermediate, Code], [Code, Generation], [Generation, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 5], [Unit, 5, –], [5, –, Intermediate], [–, Intermediate, Code], [Intermediate, Code, Generation], [Code, Generation, ‹#›], [Generation, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(CD, Unit]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 104 =============================
+
+Exercise Write quadruple, triple and indirect triple for following: -(a*b)+(c+d) a*-(b+c) 
+
+
+>> Tokens are: 
+[Exercise, Write, quadruple, ,, triple, indirect, triple, following, :, -(a*b)+(c+d, ), a*-(b+c, )] 
+
+>> PoS Tags are: 
+[('Exercise', 'PROPN'), ('Write', 'PROPN'), ('quadruple', 'NOUN'), (',', 'PUNCT'), ('triple', 'ADJ'), ('indirect', 'ADJ'), ('triple', 'ADJ'), ('following', 'VERB'), (':', 'PUNCT'), ('-(a*b)+(c+d', 'X'), (')', 'PUNCT'), ('a*-(b+c', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Exercise', 'compound'), ('Write', 'compound'), ('quadruple', 'ROOT'), (',', 'punct'), ('triple', 'amod'), ('indirect', 'conj'), ('triple', 'appos'), ('following', 'pcomp'), (':', 'punct'), ('-(a*b)+(c+d', 'punct'), (')', 'punct'), ('a*-(b+c', 'dobj'), (')', 'punct')]
+
+>> Bigrams: 
+[[Exercise, Write], [Write, quadruple], [quadruple, ,], [,, triple], [triple, indirect], [indirect, triple], [triple, following], [following, :], [:, -(a*b)+(c+d], [-(a*b)+(c+d, )], [), a*-(b+c], [a*-(b+c, )]]
+
+>> Trigrams: 
+[[Exercise, Write, quadruple], [Write, quadruple, ,], [quadruple, ,, triple], [,, triple, indirect], [triple, indirect, triple], [indirect, triple, following], [triple, following, :], [following, :, -(a*b)+(c+d], [:, -(a*b)+(c+d, )], [-(a*b)+(c+d, ), a*-(b+c], [), a*-(b+c, )]]
+
+>> Noun Phrases are: 
+[Exercise Write quadruple, ) a*-(b+c]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 105 =============================
+
+x=(a+b*c)^(d*e)+f*g^h g+a*(b-c)+(x-y)*d     Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[x=(a+b*c)^(d*e)+f*g^h, g+a*(b, -, c)+(x, -, y)*d,     , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('x=(a+b*c)^(d*e)+f*g^h', 'NUM'), ('g+a*(b', 'PROPN'), ('-', 'PUNCT'), ('c)+(x', 'PROPN'), ('-', 'PUNCT'), ('y)*d', 'PROPN'), ('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('x=(a+b*c)^(d*e)+f*g^h', 'punct'), ('g+a*(b', 'npadvmod'), ('-', 'punct'), ('c)+(x', 'prep'), ('-', 'punct'), ('y)*d', 'nsubj'), ('    ', 'nummod'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'appos'), ('#', 'nmod'), ('3130006', 'appos'), ('(', 'punct'), ('PS', 'npadvmod'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'dobj'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[x=(a+b*c)^(d*e)+f*g^h, g+a*(b], [g+a*(b, -], [-, c)+(x], [c)+(x, -], [-, y)*d], [y)*d,     ], [    , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[x=(a+b*c)^(d*e)+f*g^h, g+a*(b, -], [g+a*(b, -, c)+(x], [-, c)+(x, -], [c)+(x, -, y)*d], [-, y)*d,     ], [y)*d,     , Prof.], [    , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[x=(a+b*c)^(d*e)+f*g^h g+a*(b-c)+(x-y)*d,     Prof. Jay R Dhamsaniya, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('x=(a+b*c)^(d*e)+f*g^h g+a*(b-c)+(x-y)*d', 'PERSON'), ('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 106 =============================
+
+#2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›   
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 5, –, Intermediate, Code, Generation, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('5', 'NUM'), ('–', 'PUNCT'), ('Intermediate', 'PROPN'), ('Code', 'PROPN'), ('Generation', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('5', 'nummod'), ('–', 'punct'), ('Intermediate', 'compound'), ('Code', 'compound'), ('Generation', 'appos'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 5], [5, –], [–, Intermediate], [Intermediate, Code], [Code, Generation], [Generation, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 5], [Unit, 5, –], [5, –, Intermediate], [–, Intermediate, Code], [Intermediate, Code, Generation], [Code, Generation, ‹#›], [Generation, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(CD, Unit, Intermediate Code Generation]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 107 =============================
+
+Thank You                                       /docProps/thumbnail.jpeg 
+
+
+>> Tokens are: 
+[Thank,                                       , /docProps, /, thumbnail.jpeg] 
+
+>> PoS Tags are: 
+[('Thank', 'VERB'), ('                                      ', 'SPACE'), ('/docProps', 'X'), ('/', 'SYM'), ('thumbnail.jpeg', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Thank', 'ROOT'), ('                                      ', 'dobj'), ('/docProps', 'punct'), ('/', 'punct'), ('thumbnail.jpeg', 'dobj')]
+
+>> Bigrams: 
+[[Thank,                                       ], [                                      , /docProps], [/docProps, /], [/, thumbnail.jpeg]]
+
+>> Trigrams: 
+[[Thank,                                       , /docProps], [                                      , /docProps, /], [/docProps, /, thumbnail.jpeg]]
+
+>> Noun Phrases are: 
+[You, thumbnail.jpeg]
+
+>> Named Entities are: 
+[]

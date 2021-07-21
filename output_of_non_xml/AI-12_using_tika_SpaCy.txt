@@ -1,0 +1,865 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-12   Implementation Aspects of Syntactic Analysis 
+
+
+>> Tokens are: 
+[AI-12,   , Implementation, Aspects, Syntactic, Analysis] 
+
+>> PoS Tags are: 
+[('AI-12', 'NUM'), ('  ', 'SPACE'), ('Implementation', 'NOUN'), ('Aspects', 'PROPN'), ('Syntactic', 'PROPN'), ('Analysis', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('AI-12', 'nummod'), ('  ', 'ROOT'), ('Implementation', 'compound'), ('Aspects', 'appos'), ('Syntactic', 'compound'), ('Analysis', 'pobj')]
+
+>> Bigrams: 
+[[AI-12,   ], [  , Implementation], [Implementation, Aspects], [Aspects, Syntactic], [Syntactic, Analysis]]
+
+>> Trigrams: 
+[[AI-12,   , Implementation], [  , Implementation, Aspects], [Implementation, Aspects, Syntactic], [Aspects, Syntactic, Analysis]]
+
+>> Noun Phrases are: 
+[Implementation Aspects, Syntactic Analysis]
+
+>> Named Entities are: 
+[('Implementation Aspects of Syntactic Analysis', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+There are a number of algorithms researchers have developed for syntactic analysis, but we consider only the following simple methods − · Context-Free Grammar · Top-Down Parser 
+
+
+>> Tokens are: 
+[number, algorithms, researchers, developed, syntactic, analysis, ,, consider, following, simple, methods, −, ·, Context, -, Free, Grammar, ·, -, Parser] 
+
+>> PoS Tags are: 
+[('number', 'NOUN'), ('algorithms', 'NOUN'), ('researchers', 'NOUN'), ('developed', 'VERB'), ('syntactic', 'ADJ'), ('analysis', 'NOUN'), (',', 'PUNCT'), ('consider', 'VERB'), ('following', 'VERB'), ('simple', 'ADJ'), ('methods', 'NOUN'), ('−', 'VERB'), ('·', 'PUNCT'), ('Context', 'PROPN'), ('-', 'PUNCT'), ('Free', 'PROPN'), ('Grammar', 'PROPN'), ('·', 'PUNCT'), ('-', 'PUNCT'), ('Parser', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('number', 'attr'), ('algorithms', 'compound'), ('researchers', 'pobj'), ('developed', 'acl'), ('syntactic', 'amod'), ('analysis', 'pobj'), (',', 'punct'), ('consider', 'conj'), ('following', 'amod'), ('simple', 'amod'), ('methods', 'nsubj'), ('−', 'ccomp'), ('·', 'punct'), ('Context', 'nmod'), ('-', 'punct'), ('Free', 'compound'), ('Grammar', 'nmod'), ('·', 'punct'), ('-', 'punct'), ('Parser', 'punct')]
+
+>> Bigrams: 
+[[number, algorithms], [algorithms, researchers], [researchers, developed], [developed, syntactic], [syntactic, analysis], [analysis, ,], [,, consider], [consider, following], [following, simple], [simple, methods], [methods, −], [−, ·], [·, Context], [Context, -], [-, Free], [Free, Grammar], [Grammar, ·], [·, -], [-, Parser]]
+
+>> Trigrams: 
+[[number, algorithms, researchers], [algorithms, researchers, developed], [researchers, developed, syntactic], [developed, syntactic, analysis], [syntactic, analysis, ,], [analysis, ,, consider], [,, consider, following], [consider, following, simple], [following, simple, methods], [simple, methods, −], [methods, −, ·], [−, ·, Context], [·, Context, -], [Context, -, Free], [-, Free, Grammar], [Free, Grammar, ·], [Grammar, ·, -], [·, -, Parser]]
+
+>> Noun Phrases are: 
+[a number, algorithms researchers, syntactic analysis, we, only the following simple methods]
+
+>> Named Entities are: 
+[('Top-Down Parser', 'PERSON')]
+
+
+============================ Sentence 3 =============================
+
+Let us see them in detail 
+
+
+>> Tokens are: 
+[Let, detail] 
+
+>> PoS Tags are: 
+[('Let', 'VERB'), ('detail', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Let', 'ROOT'), ('detail', 'pobj')]
+
+>> Bigrams: 
+[[Let, detail]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[us, them, detail]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+− Context-Free Grammar 
+
+
+>> Tokens are: 
+[−, Context, -, Free, Grammar] 
+
+>> PoS Tags are: 
+[('−', 'PROPN'), ('Context', 'PROPN'), ('-', 'PUNCT'), ('Free', 'PROPN'), ('Grammar', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('−', 'compound'), ('Context', 'compound'), ('-', 'punct'), ('Free', 'compound'), ('Grammar', 'ROOT')]
+
+>> Bigrams: 
+[[−, Context], [Context, -], [-, Free], [Free, Grammar]]
+
+>> Trigrams: 
+[[−, Context, -], [Context, -, Free], [-, Free, Grammar]]
+
+>> Noun Phrases are: 
+[− Context-Free Grammar]
+
+>> Named Entities are: 
+[('− Context-Free Grammar', 'PERSON')]
+
+
+============================ Sentence 5 =============================
+
+It is the grammar that consists rules with a single symbol on the left-hand side of the rewrite rules. 
+
+
+>> Tokens are: 
+[grammar, consists, rules, single, symbol, left, -, hand, rewrite, rules, .] 
+
+>> PoS Tags are: 
+[('grammar', 'NOUN'), ('consists', 'VERB'), ('rules', 'NOUN'), ('single', 'ADJ'), ('symbol', 'NOUN'), ('left', 'ADJ'), ('-', 'PUNCT'), ('hand', 'NOUN'), ('rewrite', 'NOUN'), ('rules', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('grammar', 'attr'), ('consists', 'relcl'), ('rules', 'dobj'), ('single', 'amod'), ('symbol', 'pobj'), ('left', 'amod'), ('-', 'punct'), ('hand', 'compound'), ('rewrite', 'compound'), ('rules', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[grammar, consists], [consists, rules], [rules, single], [single, symbol], [symbol, left], [left, -], [-, hand], [hand, rewrite], [rewrite, rules], [rules, .]]
+
+>> Trigrams: 
+[[grammar, consists, rules], [consists, rules, single], [rules, single, symbol], [single, symbol, left], [symbol, left, -], [left, -, hand], [-, hand, rewrite], [hand, rewrite, rules], [rewrite, rules, .]]
+
+>> Noun Phrases are: 
+[It, the grammar, rules, a single symbol, the left-hand side, the rewrite rules]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+Let us create grammar to parse a sentence − “The bird pecks the grains” 
+
+
+>> Tokens are: 
+[Let, create, grammar, parse, sentence, −, “, bird, pecks, grains, ”] 
+
+>> PoS Tags are: 
+[('Let', 'VERB'), ('create', 'VERB'), ('grammar', 'NOUN'), ('parse', 'VERB'), ('sentence', 'NOUN'), ('−', 'NOUN'), ('“', 'PUNCT'), ('bird', 'NOUN'), ('pecks', 'VERB'), ('grains', 'NOUN'), ('”', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Let', 'ROOT'), ('create', 'ccomp'), ('grammar', 'dobj'), ('parse', 'advcl'), ('sentence', 'dobj'), ('−', 'nsubj'), ('“', 'punct'), ('bird', 'nsubj'), ('pecks', 'ccomp'), ('grains', 'dobj'), ('”', 'punct')]
+
+>> Bigrams: 
+[[Let, create], [create, grammar], [grammar, parse], [parse, sentence], [sentence, −], [−, “], [“, bird], [bird, pecks], [pecks, grains], [grains, ”]]
+
+>> Trigrams: 
+[[Let, create, grammar], [create, grammar, parse], [grammar, parse, sentence], [parse, sentence, −], [sentence, −, “], [−, “, bird], [“, bird, pecks], [bird, pecks, grains], [pecks, grains, ”]]
+
+>> Noun Phrases are: 
+[us, grammar, a sentence, −, The bird, the grains]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+Articles (DET) − a | an | the Nouns − bird | birds | grain | grains Noun Phrase (NP) − Article + Noun | Article + Adjective + Noun 
+
+
+>> Tokens are: 
+[Articles, (, DET, ), −, |, |, Nouns, −, bird, |, birds, |, grain, |, grains, Noun, Phrase, (, NP, ), −, Article, +, Noun, |, Article, +, Adjective, +, Noun] 
+
+>> PoS Tags are: 
+[('Articles', 'PROPN'), ('(', 'PUNCT'), ('DET', 'PROPN'), (')', 'PUNCT'), ('−', 'PROPN'), ('|', 'NOUN'), ('|', 'NOUN'), ('Nouns', 'PROPN'), ('−', 'PROPN'), ('bird', 'NOUN'), ('|', 'NOUN'), ('birds', 'NOUN'), ('|', 'VERB'), ('grain', 'NOUN'), ('|', 'NOUN'), ('grains', 'VERB'), ('Noun', 'PROPN'), ('Phrase', 'PROPN'), ('(', 'PUNCT'), ('NP', 'PROPN'), (')', 'PUNCT'), ('−', 'PROPN'), ('Article', 'PROPN'), ('+', 'SYM'), ('Noun', 'PROPN'), ('|', 'NOUN'), ('Article', 'PROPN'), ('+', 'CCONJ'), ('Adjective', 'PROPN'), ('+', 'PROPN'), ('Noun', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Articles', 'nsubj'), ('(', 'punct'), ('DET', 'appos'), (')', 'punct'), ('−', 'ccomp'), ('|', 'npadvmod'), ('|', 'npadvmod'), ('Nouns', 'compound'), ('−', 'compound'), ('bird', 'compound'), ('|', 'compound'), ('birds', 'nsubj'), ('|', 'relcl'), ('grain', 'compound'), ('|', 'nsubj'), ('grains', 'ROOT'), ('Noun', 'compound'), ('Phrase', 'dobj'), ('(', 'punct'), ('NP', 'appos'), (')', 'punct'), ('−', 'compound'), ('Article', 'appos'), ('+', 'case'), ('Noun', 'compound'), ('|', 'compound'), ('Article', 'appos'), ('+', 'cc'), ('Adjective', 'nmod'), ('+', 'compound'), ('Noun', 'appos')]
+
+>> Bigrams: 
+[[Articles, (], [(, DET], [DET, )], [), −], [−, |], [|, |], [|, Nouns], [Nouns, −], [−, bird], [bird, |], [|, birds], [birds, |], [|, grain], [grain, |], [|, grains], [grains, Noun], [Noun, Phrase], [Phrase, (], [(, NP], [NP, )], [), −], [−, Article], [Article, +], [+, Noun], [Noun, |], [|, Article], [Article, +], [+, Adjective], [Adjective, +], [+, Noun]]
+
+>> Trigrams: 
+[[Articles, (, DET], [(, DET, )], [DET, ), −], [), −, |], [−, |, |], [|, |, Nouns], [|, Nouns, −], [Nouns, −, bird], [−, bird, |], [bird, |, birds], [|, birds, |], [birds, |, grain], [|, grain, |], [grain, |, grains], [|, grains, Noun], [grains, Noun, Phrase], [Noun, Phrase, (], [Phrase, (, NP], [(, NP, )], [NP, ), −], [), −, Article], [−, Article, +], [Article, +, Noun], [+, Noun, |], [Noun, |, Article], [|, Article, +], [Article, +, Adjective], [+, Adjective, +], [Adjective, +, Noun]]
+
+>> Noun Phrases are: 
+[Articles, DET, the Nouns − bird | birds, grain |, Noun Phrase, NP, − Article, Noun | Article, Adjective + Noun]
+
+>> Named Entities are: 
+[('Noun Phrase', 'PERSON'), ('NP', 'ORG'), ('− Article', 'ORG')]
+
+
+============================ Sentence 8 =============================
+
+= DET N | DET ADJ N Verbs − pecks | pecking | pecked Verb Phrase (VP) 
+
+
+>> Tokens are: 
+[=, DET, N, |, DET, ADJ, N, Verbs, −, pecks, |, pecking, |, pecked, Verb, Phrase, (, VP, )] 
+
+>> PoS Tags are: 
+[('=', 'SYM'), ('DET', 'PROPN'), ('N', 'PROPN'), ('|', 'NOUN'), ('DET', 'PROPN'), ('ADJ', 'PROPN'), ('N', 'PROPN'), ('Verbs', 'PROPN'), ('−', 'PROPN'), ('pecks', 'NOUN'), ('|', 'NOUN'), ('pecking', 'NOUN'), ('|', 'NOUN'), ('pecked', 'VERB'), ('Verb', 'PROPN'), ('Phrase', 'PROPN'), ('(', 'PUNCT'), ('VP', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('=', 'punct'), ('DET', 'dep'), ('N', 'punct'), ('|', 'npadvmod'), ('DET', 'compound'), ('ADJ', 'appos'), ('N', 'compound'), ('Verbs', 'compound'), ('−', 'compound'), ('pecks', 'nsubj'), ('|', 'advmod'), ('pecking', 'compound'), ('|', 'npadvmod'), ('pecked', 'ROOT'), ('Verb', 'compound'), ('Phrase', 'dobj'), ('(', 'punct'), ('VP', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[=, DET], [DET, N], [N, |], [|, DET], [DET, ADJ], [ADJ, N], [N, Verbs], [Verbs, −], [−, pecks], [pecks, |], [|, pecking], [pecking, |], [|, pecked], [pecked, Verb], [Verb, Phrase], [Phrase, (], [(, VP], [VP, )]]
+
+>> Trigrams: 
+[[=, DET, N], [DET, N, |], [N, |, DET], [|, DET, ADJ], [DET, ADJ, N], [ADJ, N, Verbs], [N, Verbs, −], [Verbs, −, pecks], [−, pecks, |], [pecks, |, pecking], [|, pecking, |], [pecking, |, pecked], [|, pecked, Verb], [pecked, Verb, Phrase], [Verb, Phrase, (], [Phrase, (, VP], [(, VP, )]]
+
+>> Noun Phrases are: 
+[DET ADJ, Verb Phrase, VP]
+
+>> Named Entities are: 
+[('Verb Phrase', 'PERSON')]
+
+
+============================ Sentence 9 =============================
+
+− NP V | V NP Adjectives (ADJ) 
+
+
+>> Tokens are: 
+[−, NP, V, |, V, NP, Adjectives, (, ADJ, )] 
+
+>> PoS Tags are: 
+[('−', 'NOUN'), ('NP', 'PROPN'), ('V', 'PROPN'), ('|', 'NOUN'), ('V', 'NOUN'), ('NP', 'PROPN'), ('Adjectives', 'PROPN'), ('(', 'PUNCT'), ('ADJ', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('−', 'compound'), ('NP', 'compound'), ('V', 'compound'), ('|', 'ROOT'), ('V', 'compound'), ('NP', 'compound'), ('Adjectives', 'appos'), ('(', 'punct'), ('ADJ', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[−, NP], [NP, V], [V, |], [|, V], [V, NP], [NP, Adjectives], [Adjectives, (], [(, ADJ], [ADJ, )]]
+
+>> Trigrams: 
+[[−, NP, V], [NP, V, |], [V, |, V], [|, V, NP], [V, NP, Adjectives], [NP, Adjectives, (], [Adjectives, (, ADJ], [(, ADJ, )]]
+
+>> Noun Phrases are: 
+[− NP V |, V NP Adjectives, ADJ]
+
+>> Named Entities are: 
+[('− NP V', 'PERSON'), ('NP Adjectives', 'ORG'), ('ADJ', 'ORG')]
+
+
+============================ Sentence 10 =============================
+
+− beautiful | small | chirping The parse tree breaks down the sentence into structured parts so that the computer can easily understand and process it. 
+
+
+>> Tokens are: 
+[−, beautiful, |, small, |, chirping, parse, tree, breaks, sentence, structured, parts, computer, easily, understand, process, .] 
+
+>> PoS Tags are: 
+[('−', 'NOUN'), ('beautiful', 'ADJ'), ('|', 'NOUN'), ('small', 'ADJ'), ('|', 'NOUN'), ('chirping', 'VERB'), ('parse', 'NOUN'), ('tree', 'NOUN'), ('breaks', 'VERB'), ('sentence', 'NOUN'), ('structured', 'ADJ'), ('parts', 'NOUN'), ('computer', 'NOUN'), ('easily', 'ADV'), ('understand', 'VERB'), ('process', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('−', 'ROOT'), ('beautiful', 'amod'), ('|', 'nmod'), ('small', 'amod'), ('|', 'npadvmod'), ('chirping', 'advcl'), ('parse', 'compound'), ('tree', 'nsubj'), ('breaks', 'conj'), ('sentence', 'dobj'), ('structured', 'amod'), ('parts', 'pobj'), ('computer', 'nsubj'), ('easily', 'advmod'), ('understand', 'advcl'), ('process', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[−, beautiful], [beautiful, |], [|, small], [small, |], [|, chirping], [chirping, parse], [parse, tree], [tree, breaks], [breaks, sentence], [sentence, structured], [structured, parts], [parts, computer], [computer, easily], [easily, understand], [understand, process], [process, .]]
+
+>> Trigrams: 
+[[−, beautiful, |], [beautiful, |, small], [|, small, |], [small, |, chirping], [|, chirping, parse], [chirping, parse, tree], [parse, tree, breaks], [tree, breaks, sentence], [breaks, sentence, structured], [sentence, structured, parts], [structured, parts, computer], [parts, computer, easily], [computer, easily, understand], [easily, understand, process], [understand, process, .]]
+
+>> Noun Phrases are: 
+[−, The parse tree, the sentence, structured parts, the computer, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 11 =============================
+
+In order for the parsing algorithm to construct this parse tree, a set of rewrite rules, which describe what tree structures are legal, need to be constructed. 
+
+
+>> Tokens are: 
+[order, parsing, algorithm, construct, parse, tree, ,, set, rewrite, rules, ,, describe, tree, structures, legal, ,, need, constructed, .] 
+
+>> PoS Tags are: 
+[('order', 'NOUN'), ('parsing', 'NOUN'), ('algorithm', 'NOUN'), ('construct', 'VERB'), ('parse', 'NOUN'), ('tree', 'NOUN'), (',', 'PUNCT'), ('set', 'NOUN'), ('rewrite', 'NOUN'), ('rules', 'NOUN'), (',', 'PUNCT'), ('describe', 'VERB'), ('tree', 'NOUN'), ('structures', 'NOUN'), ('legal', 'ADJ'), (',', 'PUNCT'), ('need', 'VERB'), ('constructed', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('order', 'pobj'), ('parsing', 'amod'), ('algorithm', 'pobj'), ('construct', 'acl'), ('parse', 'compound'), ('tree', 'dobj'), (',', 'punct'), ('set', 'appos'), ('rewrite', 'compound'), ('rules', 'pobj'), (',', 'punct'), ('describe', 'relcl'), ('tree', 'compound'), ('structures', 'nsubj'), ('legal', 'acomp'), (',', 'punct'), ('need', 'ROOT'), ('constructed', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[order, parsing], [parsing, algorithm], [algorithm, construct], [construct, parse], [parse, tree], [tree, ,], [,, set], [set, rewrite], [rewrite, rules], [rules, ,], [,, describe], [describe, tree], [tree, structures], [structures, legal], [legal, ,], [,, need], [need, constructed], [constructed, .]]
+
+>> Trigrams: 
+[[order, parsing, algorithm], [parsing, algorithm, construct], [algorithm, construct, parse], [construct, parse, tree], [parse, tree, ,], [tree, ,, set], [,, set, rewrite], [set, rewrite, rules], [rewrite, rules, ,], [rules, ,, describe], [,, describe, tree], [describe, tree, structures], [tree, structures, legal], [structures, legal, ,], [legal, ,, need], [,, need, constructed], [need, constructed, .]]
+
+>> Noun Phrases are: 
+[order, the parsing algorithm, this parse tree, a set, rewrite rules, what, tree structures]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+These rules say that a certain symbol may be expanded in the tree by a sequence of other symbols. 
+
+
+>> Tokens are: 
+[rules, certain, symbol, expanded, tree, sequence, symbols, .] 
+
+>> PoS Tags are: 
+[('rules', 'NOUN'), ('certain', 'ADJ'), ('symbol', 'NOUN'), ('expanded', 'VERB'), ('tree', 'NOUN'), ('sequence', 'NOUN'), ('symbols', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('rules', 'nsubj'), ('certain', 'amod'), ('symbol', 'nsubjpass'), ('expanded', 'ccomp'), ('tree', 'pobj'), ('sequence', 'pobj'), ('symbols', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[rules, certain], [certain, symbol], [symbol, expanded], [expanded, tree], [tree, sequence], [sequence, symbols], [symbols, .]]
+
+>> Trigrams: 
+[[rules, certain, symbol], [certain, symbol, expanded], [symbol, expanded, tree], [expanded, tree, sequence], [tree, sequence, symbols], [sequence, symbols, .]]
+
+>> Noun Phrases are: 
+[These rules, a certain symbol, the tree, a sequence, other symbols]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 13 =============================
+
+According to first order logic rule, if there are two strings Noun Phrase (NP) and Verb Phrase (VP), then the string combined by NP followed by VP is a sentence. 
+
+
+>> Tokens are: 
+[According, order, logic, rule, ,, strings, Noun, Phrase, (, NP, ), Verb, Phrase, (, VP, ), ,, string, combined, NP, followed, VP, sentence, .] 
+
+>> PoS Tags are: 
+[('According', 'VERB'), ('order', 'NOUN'), ('logic', 'NOUN'), ('rule', 'NOUN'), (',', 'PUNCT'), ('strings', 'NOUN'), ('Noun', 'PROPN'), ('Phrase', 'PROPN'), ('(', 'PUNCT'), ('NP', 'PROPN'), (')', 'PUNCT'), ('Verb', 'PROPN'), ('Phrase', 'PROPN'), ('(', 'PUNCT'), ('VP', 'PROPN'), (')', 'PUNCT'), (',', 'PUNCT'), ('string', 'NOUN'), ('combined', 'VERB'), ('NP', 'PROPN'), ('followed', 'VERB'), ('VP', 'PROPN'), ('sentence', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('According', 'prep'), ('order', 'compound'), ('logic', 'compound'), ('rule', 'pobj'), (',', 'punct'), ('strings', 'attr'), ('Noun', 'compound'), ('Phrase', 'appos'), ('(', 'punct'), ('NP', 'appos'), (')', 'punct'), ('Verb', 'compound'), ('Phrase', 'conj'), ('(', 'punct'), ('VP', 'appos'), (')', 'punct'), (',', 'punct'), ('string', 'appos'), ('combined', 'acl'), ('NP', 'pobj'), ('followed', 'acl'), ('VP', 'pobj'), ('sentence', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[According, order], [order, logic], [logic, rule], [rule, ,], [,, strings], [strings, Noun], [Noun, Phrase], [Phrase, (], [(, NP], [NP, )], [), Verb], [Verb, Phrase], [Phrase, (], [(, VP], [VP, )], [), ,], [,, string], [string, combined], [combined, NP], [NP, followed], [followed, VP], [VP, sentence], [sentence, .]]
+
+>> Trigrams: 
+[[According, order, logic], [order, logic, rule], [logic, rule, ,], [rule, ,, strings], [,, strings, Noun], [strings, Noun, Phrase], [Noun, Phrase, (], [Phrase, (, NP], [(, NP, )], [NP, ), Verb], [), Verb, Phrase], [Verb, Phrase, (], [Phrase, (, VP], [(, VP, )], [VP, ), ,], [), ,, string], [,, string, combined], [string, combined, NP], [combined, NP, followed], [NP, followed, VP], [followed, VP, sentence], [VP, sentence, .]]
+
+>> Noun Phrases are: 
+[first order logic rule, two strings, Noun Phrase, NP, Verb Phrase, VP, the string, NP, VP, a sentence]
+
+>> Named Entities are: 
+[('first', 'ORDINAL'), ('two', 'CARDINAL'), ('Noun Phrase', 'PERSON'), ('NP', 'ORG'), ('Verb Phrase', 'PERSON'), ('NP', 'ORG'), ('VP', 'ORG')]
+
+
+============================ Sentence 14 =============================
+
+The rewrite rules for the sentence are as follows − S → NP VP NP → DET N | DET ADJ N VP → V NP Lexocon − DET → a | the ADJ → beautiful | perching N → bird | birds | grain | grains V → peck | pecks | pecking The parse tree can be created as shown −  Now consider the above rewrite rules. 
+
+
+>> Tokens are: 
+[rewrite, rules, sentence, follows, −, S, →, NP, VP, NP, →, DET, N, |, DET, ADJ, N, VP, →, V, NP, Lexocon, −, DET, →, |, ADJ, →, beautiful, |, perching, N, →, bird, |, birds, |, grain, |, grains, V, →, peck, |, pecks, |, pecking, parse, tree, created, shown, −,  , consider, rewrite, rules, .] 
+
+>> PoS Tags are: 
+[('rewrite', 'NOUN'), ('rules', 'NOUN'), ('sentence', 'NOUN'), ('follows', 'VERB'), ('−', 'PROPN'), ('S', 'PROPN'), ('→', 'SYM'), ('NP', 'PROPN'), ('VP', 'PROPN'), ('NP', 'PROPN'), ('→', 'SYM'), ('DET', 'PROPN'), ('N', 'PROPN'), ('|', 'NOUN'), ('DET', 'PROPN'), ('ADJ', 'PROPN'), ('N', 'PROPN'), ('VP', 'PROPN'), ('→', 'SYM'), ('V', 'PROPN'), ('NP', 'PROPN'), ('Lexocon', 'PROPN'), ('−', 'PROPN'), ('DET', 'PROPN'), ('→', 'SYM'), ('|', 'NOUN'), ('ADJ', 'PROPN'), ('→', 'SYM'), ('beautiful', 'ADJ'), ('|', 'NOUN'), ('perching', 'VERB'), ('N', 'PROPN'), ('→', 'SYM'), ('bird', 'NOUN'), ('|', 'NOUN'), ('birds', 'NOUN'), ('|', 'VERB'), ('grain', 'NOUN'), ('|', 'NOUN'), ('grains', 'VERB'), ('V', 'NOUN'), ('→', 'SYM'), ('peck', 'NOUN'), ('|', 'NOUN'), ('pecks', 'NOUN'), ('|', 'ADV'), ('pecking', 'VERB'), ('parse', 'NOUN'), ('tree', 'NOUN'), ('created', 'VERB'), ('shown', 'VERB'), ('−', 'PROPN'), (' ', 'SPACE'), ('consider', 'VERB'), ('rewrite', 'NOUN'), ('rules', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('rewrite', 'compound'), ('rules', 'nsubj'), ('sentence', 'pobj'), ('follows', 'advcl'), ('−', 'compound'), ('S', 'dobj'), ('→', 'punct'), ('NP', 'compound'), ('VP', 'compound'), ('NP', 'appos'), ('→', 'prep'), ('DET', 'npadvmod'), ('N', 'appos'), ('|', 'npadvmod'), ('DET', 'compound'), ('ADJ', 'compound'), ('N', 'compound'), ('VP', 'appos'), ('→', 'punct'), ('V', 'compound'), ('NP', 'compound'), ('Lexocon', 'compound'), ('−', 'compound'), ('DET', 'npadvmod'), ('→', 'punct'), ('|', 'appos'), ('ADJ', 'appos'), ('→', 'punct'), ('beautiful', 'amod'), ('|', 'attr'), ('perching', 'acl'), ('N', 'dobj'), ('→', 'punct'), ('bird', 'compound'), ('|', 'compound'), ('birds', 'nsubj'), ('|', 'appos'), ('grain', 'compound'), ('|', 'nsubj'), ('grains', 'advcl'), ('V', 'nmod'), ('→', 'punct'), ('peck', 'compound'), ('|', 'compound'), ('pecks', 'dobj'), ('|', 'advmod'), ('pecking', 'advcl'), ('parse', 'compound'), ('tree', 'nsubjpass'), ('created', 'ccomp'), ('shown', 'advcl'), ('−', 'dobj'), (' ', 'nsubj'), ('consider', 'conj'), ('rewrite', 'compound'), ('rules', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[rewrite, rules], [rules, sentence], [sentence, follows], [follows, −], [−, S], [S, →], [→, NP], [NP, VP], [VP, NP], [NP, →], [→, DET], [DET, N], [N, |], [|, DET], [DET, ADJ], [ADJ, N], [N, VP], [VP, →], [→, V], [V, NP], [NP, Lexocon], [Lexocon, −], [−, DET], [DET, →], [→, |], [|, ADJ], [ADJ, →], [→, beautiful], [beautiful, |], [|, perching], [perching, N], [N, →], [→, bird], [bird, |], [|, birds], [birds, |], [|, grain], [grain, |], [|, grains], [grains, V], [V, →], [→, peck], [peck, |], [|, pecks], [pecks, |], [|, pecking], [pecking, parse], [parse, tree], [tree, created], [created, shown], [shown, −], [−,  ], [ , consider], [consider, rewrite], [rewrite, rules], [rules, .]]
+
+>> Trigrams: 
+[[rewrite, rules, sentence], [rules, sentence, follows], [sentence, follows, −], [follows, −, S], [−, S, →], [S, →, NP], [→, NP, VP], [NP, VP, NP], [VP, NP, →], [NP, →, DET], [→, DET, N], [DET, N, |], [N, |, DET], [|, DET, ADJ], [DET, ADJ, N], [ADJ, N, VP], [N, VP, →], [VP, →, V], [→, V, NP], [V, NP, Lexocon], [NP, Lexocon, −], [Lexocon, −, DET], [−, DET, →], [DET, →, |], [→, |, ADJ], [|, ADJ, →], [ADJ, →, beautiful], [→, beautiful, |], [beautiful, |, perching], [|, perching, N], [perching, N, →], [N, →, bird], [→, bird, |], [bird, |, birds], [|, birds, |], [birds, |, grain], [|, grain, |], [grain, |, grains], [|, grains, V], [grains, V, →], [V, →, peck], [→, peck, |], [peck, |, pecks], [|, pecks, |], [pecks, |, pecking], [|, pecking, parse], [pecking, parse, tree], [parse, tree, created], [tree, created, shown], [created, shown, −], [shown, −,  ], [−,  , consider], [ , consider, rewrite], [consider, rewrite, rules], [rewrite, rules, .]]
+
+>> Noun Phrases are: 
+[The rewrite rules, the sentence, − S, NP VP NP, N, DET ADJ N VP, a |, the ADJ, beautiful |, N, bird | birds, grain |, V → peck | pecks, The parse tree, −, the above rewrite rules]
+
+>> Named Entities are: 
+[('− S', 'ORG'), ('NP VP NP →', 'ORG'), ('ADJ', 'ORG')]
+
+
+============================ Sentence 15 =============================
+
+Since V can be replaced by both, "peck" or "pecks", sentences such as "The bird peck the grains" can be wrongly permitted. 
+
+
+>> Tokens are: 
+[V, replaced, ,, ", peck, ", ", pecks, ", ,, sentences, ", bird, peck, grains, ", wrongly, permitted, .] 
+
+>> PoS Tags are: 
+[('V', 'PROPN'), ('replaced', 'VERB'), (',', 'PUNCT'), ('"', 'PUNCT'), ('peck', 'NOUN'), ('"', 'PUNCT'), ('"', 'PUNCT'), ('pecks', 'NOUN'), ('"', 'PUNCT'), (',', 'PUNCT'), ('sentences', 'NOUN'), ('"', 'PUNCT'), ('bird', 'NOUN'), ('peck', 'VERB'), ('grains', 'NOUN'), ('"', 'PUNCT'), ('wrongly', 'ADV'), ('permitted', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('V', 'nsubjpass'), ('replaced', 'advcl'), (',', 'punct'), ('"', 'punct'), ('peck', 'conj'), ('"', 'punct'), ('"', 'punct'), ('pecks', 'conj'), ('"', 'punct'), (',', 'punct'), ('sentences', 'dobj'), ('"', 'punct'), ('bird', 'compound'), ('peck', 'pobj'), ('grains', 'dobj'), ('"', 'punct'), ('wrongly', 'advmod'), ('permitted', 'ROOT'), ('.', 'punct')]
+
+>> Bigrams: 
+[[V, replaced], [replaced, ,], [,, "], [", peck], [peck, "], [", "], [", pecks], [pecks, "], [", ,], [,, sentences], [sentences, "], [", bird], [bird, peck], [peck, grains], [grains, "], [", wrongly], [wrongly, permitted], [permitted, .]]
+
+>> Trigrams: 
+[[V, replaced, ,], [replaced, ,, "], [,, ", peck], [", peck, "], [peck, ", "], [", ", pecks], [", pecks, "], [pecks, ", ,], [", ,, sentences], [,, sentences, "], [sentences, ", bird], [", bird, peck], [bird, peck, grains], [peck, grains, "], [grains, ", wrongly], [", wrongly, permitted], [wrongly, permitted, .]]
+
+>> Noun Phrases are: 
+[V, sentences, the grains]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+i. e. the subject-verb agreement error is approved as correct. 
+
+
+>> Tokens are: 
+[i., e., subject, -, verb, agreement, error, approved, correct, .] 
+
+>> PoS Tags are: 
+[('i.', 'NOUN'), ('e.', 'VERB'), ('subject', 'ADJ'), ('-', 'PUNCT'), ('verb', 'NOUN'), ('agreement', 'NOUN'), ('error', 'NOUN'), ('approved', 'VERB'), ('correct', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('i.', 'npadvmod'), ('e.', 'ROOT'), ('subject', 'amod'), ('-', 'punct'), ('verb', 'compound'), ('agreement', 'compound'), ('error', 'nsubjpass'), ('approved', 'ccomp'), ('correct', 'amod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[i., e.], [e., subject], [subject, -], [-, verb], [verb, agreement], [agreement, error], [error, approved], [approved, correct], [correct, .]]
+
+>> Trigrams: 
+[[i., e., subject], [e., subject, -], [subject, -, verb], [-, verb, agreement], [verb, agreement, error], [agreement, error, approved], [error, approved, correct], [approved, correct, .]]
+
+>> Noun Phrases are: 
+[the subject-verb agreement error]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+Merit − 
+
+
+>> Tokens are: 
+[Merit, −] 
+
+>> PoS Tags are: 
+[('Merit', 'NOUN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Merit', 'compound'), ('−', 'ROOT')]
+
+>> Bigrams: 
+[[Merit, −]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Merit −]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 18 =============================
+
+The simplest style of grammar, therefore widely used one. 
+
+
+>> Tokens are: 
+[simplest, style, grammar, ,, widely, .] 
+
+>> PoS Tags are: 
+[('simplest', 'ADJ'), ('style', 'NOUN'), ('grammar', 'NOUN'), (',', 'PUNCT'), ('widely', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('simplest', 'amod'), ('style', 'nsubj'), ('grammar', 'pobj'), (',', 'punct'), ('widely', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[simplest, style], [style, grammar], [grammar, ,], [,, widely], [widely, .]]
+
+>> Trigrams: 
+[[simplest, style, grammar], [style, grammar, ,], [grammar, ,, widely], [,, widely, .]]
+
+>> Noun Phrases are: 
+[The simplest style, grammar]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+Demerits − · They are not highly precise. 
+
+
+>> Tokens are: 
+[Demerits, −, ·, highly, precise, .] 
+
+>> PoS Tags are: 
+[('Demerits', 'NOUN'), ('−', 'NOUN'), ('·', 'PUNCT'), ('highly', 'ADV'), ('precise', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Demerits', 'compound'), ('−', 'dep'), ('·', 'punct'), ('highly', 'advmod'), ('precise', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Demerits, −], [−, ·], [·, highly], [highly, precise], [precise, .]]
+
+>> Trigrams: 
+[[Demerits, −, ·], [−, ·, highly], [·, highly, precise], [highly, precise, .]]
+
+>> Noun Phrases are: 
+[They]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 20 =============================
+
+For example, “The grains peck the bird”, is a syntactically correct according to parser, but even if it makes no sense, parser takes it as a correct sentence. 
+
+
+>> Tokens are: 
+[example, ,, “, grains, peck, bird, ”, ,, syntactically, correct, according, parser, ,, makes, sense, ,, parser, takes, correct, sentence, .] 
+
+>> PoS Tags are: 
+[('example', 'NOUN'), (',', 'PUNCT'), ('“', 'PUNCT'), ('grains', 'NOUN'), ('peck', 'VERB'), ('bird', 'NOUN'), ('”', 'PUNCT'), (',', 'PUNCT'), ('syntactically', 'ADV'), ('correct', 'ADJ'), ('according', 'VERB'), ('parser', 'NOUN'), (',', 'PUNCT'), ('makes', 'VERB'), ('sense', 'NOUN'), (',', 'PUNCT'), ('parser', 'NOUN'), ('takes', 'VERB'), ('correct', 'ADJ'), ('sentence', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('example', 'pobj'), (',', 'punct'), ('“', 'punct'), ('grains', 'nsubj'), ('peck', 'advcl'), ('bird', 'dobj'), ('”', 'punct'), (',', 'punct'), ('syntactically', 'advmod'), ('correct', 'acomp'), ('according', 'prep'), ('parser', 'pobj'), (',', 'punct'), ('makes', 'advcl'), ('sense', 'dobj'), (',', 'punct'), ('parser', 'nsubj'), ('takes', 'conj'), ('correct', 'amod'), ('sentence', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[example, ,], [,, “], [“, grains], [grains, peck], [peck, bird], [bird, ”], [”, ,], [,, syntactically], [syntactically, correct], [correct, according], [according, parser], [parser, ,], [,, makes], [makes, sense], [sense, ,], [,, parser], [parser, takes], [takes, correct], [correct, sentence], [sentence, .]]
+
+>> Trigrams: 
+[[example, ,, “], [,, “, grains], [“, grains, peck], [grains, peck, bird], [peck, bird, ”], [bird, ”, ,], [”, ,, syntactically], [,, syntactically, correct], [syntactically, correct, according], [correct, according, parser], [according, parser, ,], [parser, ,, makes], [,, makes, sense], [makes, sense, ,], [sense, ,, parser], [,, parser, takes], [parser, takes, correct], [takes, correct, sentence], [correct, sentence, .]]
+
+>> Noun Phrases are: 
+[example, The grains, the bird, parser, it, no sense, parser, it, a correct sentence]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 22 =============================
+
+To bring out high precision, multiple sets of grammar need to be prepared. 
+
+
+>> Tokens are: 
+[bring, high, precision, ,, multiple, sets, grammar, need, prepared, .] 
+
+>> PoS Tags are: 
+[('bring', 'VERB'), ('high', 'ADJ'), ('precision', 'NOUN'), (',', 'PUNCT'), ('multiple', 'ADJ'), ('sets', 'NOUN'), ('grammar', 'NOUN'), ('need', 'VERB'), ('prepared', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('bring', 'advcl'), ('high', 'amod'), ('precision', 'dobj'), (',', 'punct'), ('multiple', 'amod'), ('sets', 'nsubj'), ('grammar', 'pobj'), ('need', 'ROOT'), ('prepared', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[bring, high], [high, precision], [precision, ,], [,, multiple], [multiple, sets], [sets, grammar], [grammar, need], [need, prepared], [prepared, .]]
+
+>> Trigrams: 
+[[bring, high, precision], [high, precision, ,], [precision, ,, multiple], [,, multiple, sets], [multiple, sets, grammar], [sets, grammar, need], [grammar, need, prepared], [need, prepared, .]]
+
+>> Noun Phrases are: 
+[high precision, multiple sets, grammar]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+It may require a completely different sets of rules for parsing singular and plural variations, passive sentences, etc., which can lead to creation of huge set of rules that are unmanageable. 
+
+
+>> Tokens are: 
+[require, completely, different, sets, rules, parsing, singular, plural, variations, ,, passive, sentences, ,, etc, ., ,, lead, creation, huge, set, rules, unmanageable, .] 
+
+>> PoS Tags are: 
+[('require', 'VERB'), ('completely', 'ADV'), ('different', 'ADJ'), ('sets', 'NOUN'), ('rules', 'NOUN'), ('parsing', 'VERB'), ('singular', 'NOUN'), ('plural', 'ADJ'), ('variations', 'NOUN'), (',', 'PUNCT'), ('passive', 'ADJ'), ('sentences', 'NOUN'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'X'), (',', 'PUNCT'), ('lead', 'VERB'), ('creation', 'NOUN'), ('huge', 'ADJ'), ('set', 'NOUN'), ('rules', 'NOUN'), ('unmanageable', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('require', 'ROOT'), ('completely', 'advmod'), ('different', 'amod'), ('sets', 'dobj'), ('rules', 'pobj'), ('parsing', 'pcomp'), ('singular', 'amod'), ('plural', 'conj'), ('variations', 'dobj'), (',', 'punct'), ('passive', 'amod'), ('sentences', 'conj'), (',', 'punct'), ('etc', 'conj'), ('.', 'conj'), (',', 'punct'), ('lead', 'relcl'), ('creation', 'pobj'), ('huge', 'amod'), ('set', 'pobj'), ('rules', 'pobj'), ('unmanageable', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[require, completely], [completely, different], [different, sets], [sets, rules], [rules, parsing], [parsing, singular], [singular, plural], [plural, variations], [variations, ,], [,, passive], [passive, sentences], [sentences, ,], [,, etc], [etc, .], [., ,], [,, lead], [lead, creation], [creation, huge], [huge, set], [set, rules], [rules, unmanageable], [unmanageable, .]]
+
+>> Trigrams: 
+[[require, completely, different], [completely, different, sets], [different, sets, rules], [sets, rules, parsing], [rules, parsing, singular], [parsing, singular, plural], [singular, plural, variations], [plural, variations, ,], [variations, ,, passive], [,, passive, sentences], [passive, sentences, ,], [sentences, ,, etc], [,, etc, .], [etc, ., ,], [., ,, lead], [,, lead, creation], [lead, creation, huge], [creation, huge, set], [huge, set, rules], [set, rules, unmanageable], [rules, unmanageable, .]]
+
+>> Noun Phrases are: 
+[It, a completely different sets, rules, singular and plural variations, passive sentences, creation, huge set, rules]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 24 =============================
+
+Top-Down Parser Here, the parser starts with the S symbol and attempts to rewrite it into a sequence of terminal symbols that matches the classes of the words in the input sentence until it consists entirely of terminal symbols. 
+
+
+>> Tokens are: 
+[-, Parser, ,, parser, starts, S, symbol, attempts, rewrite, sequence, terminal, symbols, matches, classes, words, input, sentence, consists, entirely, terminal, symbols, .] 
+
+>> PoS Tags are: 
+[('-', 'PUNCT'), ('Parser', 'PROPN'), (',', 'PUNCT'), ('parser', 'NOUN'), ('starts', 'VERB'), ('S', 'PROPN'), ('symbol', 'NOUN'), ('attempts', 'VERB'), ('rewrite', 'VERB'), ('sequence', 'NOUN'), ('terminal', 'ADJ'), ('symbols', 'NOUN'), ('matches', 'VERB'), ('classes', 'NOUN'), ('words', 'NOUN'), ('input', 'NOUN'), ('sentence', 'NOUN'), ('consists', 'VERB'), ('entirely', 'ADV'), ('terminal', 'ADJ'), ('symbols', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('-', 'punct'), ('Parser', 'nsubj'), (',', 'punct'), ('parser', 'nsubj'), ('starts', 'ROOT'), ('S', 'compound'), ('symbol', 'pobj'), ('attempts', 'conj'), ('rewrite', 'xcomp'), ('sequence', 'pobj'), ('terminal', 'amod'), ('symbols', 'pobj'), ('matches', 'relcl'), ('classes', 'dobj'), ('words', 'pobj'), ('input', 'compound'), ('sentence', 'pobj'), ('consists', 'advcl'), ('entirely', 'advmod'), ('terminal', 'amod'), ('symbols', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[-, Parser], [Parser, ,], [,, parser], [parser, starts], [starts, S], [S, symbol], [symbol, attempts], [attempts, rewrite], [rewrite, sequence], [sequence, terminal], [terminal, symbols], [symbols, matches], [matches, classes], [classes, words], [words, input], [input, sentence], [sentence, consists], [consists, entirely], [entirely, terminal], [terminal, symbols], [symbols, .]]
+
+>> Trigrams: 
+[[-, Parser, ,], [Parser, ,, parser], [,, parser, starts], [parser, starts, S], [starts, S, symbol], [S, symbol, attempts], [symbol, attempts, rewrite], [attempts, rewrite, sequence], [rewrite, sequence, terminal], [sequence, terminal, symbols], [terminal, symbols, matches], [symbols, matches, classes], [matches, classes, words], [classes, words, input], [words, input, sentence], [input, sentence, consists], [sentence, consists, entirely], [consists, entirely, terminal], [entirely, terminal, symbols], [terminal, symbols, .]]
+
+>> Noun Phrases are: 
+[Top-Down Parser, the parser, the S symbol, it, a sequence, terminal symbols, the classes, the words, the input sentence, it, terminal symbols]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+These are then checked with the input sentence to see if it matched. 
+
+
+>> Tokens are: 
+[checked, input, sentence, matched, .] 
+
+>> PoS Tags are: 
+[('checked', 'VERB'), ('input', 'NOUN'), ('sentence', 'NOUN'), ('matched', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('checked', 'ROOT'), ('input', 'compound'), ('sentence', 'pobj'), ('matched', 'ccomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[checked, input], [input, sentence], [sentence, matched], [matched, .]]
+
+>> Trigrams: 
+[[checked, input, sentence], [input, sentence, matched], [sentence, matched, .]]
+
+>> Noun Phrases are: 
+[the input sentence, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+If not, the process is started over again with a different set of rules. 
+
+
+>> Tokens are: 
+[,, process, started, different, set, rules, .] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('process', 'NOUN'), ('started', 'VERB'), ('different', 'ADJ'), ('set', 'NOUN'), ('rules', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('process', 'nsubjpass'), ('started', 'ROOT'), ('different', 'amod'), ('set', 'pobj'), ('rules', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[,, process], [process, started], [started, different], [different, set], [set, rules], [rules, .]]
+
+>> Trigrams: 
+[[,, process, started], [process, started, different], [started, different, set], [different, set, rules], [set, rules, .]]
+
+>> Noun Phrases are: 
+[the process, a different set, rules]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 27 =============================
+
+This is repeated until a specific rule is found which describes the structure of the sentence. 
+
+
+>> Tokens are: 
+[repeated, specific, rule, found, describes, structure, sentence, .] 
+
+>> PoS Tags are: 
+[('repeated', 'VERB'), ('specific', 'ADJ'), ('rule', 'NOUN'), ('found', 'VERB'), ('describes', 'VERB'), ('structure', 'NOUN'), ('sentence', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('repeated', 'ROOT'), ('specific', 'amod'), ('rule', 'nsubjpass'), ('found', 'advcl'), ('describes', 'relcl'), ('structure', 'dobj'), ('sentence', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[repeated, specific], [specific, rule], [rule, found], [found, describes], [describes, structure], [structure, sentence], [sentence, .]]
+
+>> Trigrams: 
+[[repeated, specific, rule], [specific, rule, found], [rule, found, describes], [found, describes, structure], [describes, structure, sentence], [structure, sentence, .]]
+
+>> Noun Phrases are: 
+[a specific rule, the structure, the sentence]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 28 =============================
+
+Merit − 
+
+
+>> Tokens are: 
+[Merit, −] 
+
+>> PoS Tags are: 
+[('Merit', 'NOUN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Merit', 'compound'), ('−', 'ROOT')]
+
+>> Bigrams: 
+[[Merit, −]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Merit −]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 29 =============================
+
+It is simple to implement. 
+
+
+>> Tokens are: 
+[simple, implement, .] 
+
+>> PoS Tags are: 
+[('simple', 'ADJ'), ('implement', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('simple', 'acomp'), ('implement', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[simple, implement], [implement, .]]
+
+>> Trigrams: 
+[[simple, implement, .]]
+
+>> Noun Phrases are: 
+[It]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 30 =============================
+
+Demerits − · It is inefficient, as the search process has to be repeated if an error occurs. 
+
+
+>> Tokens are: 
+[Demerits, −, ·, inefficient, ,, search, process, repeated, error, occurs, .] 
+
+>> PoS Tags are: 
+[('Demerits', 'NOUN'), ('−', 'NOUN'), ('·', 'PUNCT'), ('inefficient', 'ADJ'), (',', 'PUNCT'), ('search', 'NOUN'), ('process', 'NOUN'), ('repeated', 'VERB'), ('error', 'NOUN'), ('occurs', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Demerits', 'compound'), ('−', 'dep'), ('·', 'punct'), ('inefficient', 'acomp'), (',', 'punct'), ('search', 'compound'), ('process', 'nsubj'), ('repeated', 'xcomp'), ('error', 'nsubj'), ('occurs', 'advcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Demerits, −], [−, ·], [·, inefficient], [inefficient, ,], [,, search], [search, process], [process, repeated], [repeated, error], [error, occurs], [occurs, .]]
+
+>> Trigrams: 
+[[Demerits, −, ·], [−, ·, inefficient], [·, inefficient, ,], [inefficient, ,, search], [,, search, process], [search, process, repeated], [process, repeated, error], [repeated, error, occurs], [error, occurs, .]]
+
+>> Noun Phrases are: 
+[It, the search process, an error]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 31 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 32 =============================
+
+Slow speed of working. 
+
+
+>> Tokens are: 
+[Slow, speed, working, .] 
+
+>> PoS Tags are: 
+[('Slow', 'ADJ'), ('speed', 'NOUN'), ('working', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Slow', 'amod'), ('speed', 'ROOT'), ('working', 'pcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Slow, speed], [speed, working], [working, .]]
+
+>> Trigrams: 
+[[Slow, speed, working], [speed, working, .]]
+
+>> Noun Phrases are: 
+[Slow speed, working]
+
+>> Named Entities are: 
+[('Slow', 'PERSON')]

@@ -1,0 +1,1390 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+PowerPoint Presentation  Unit – 4 Error Recovery dixita.kagathara@darshan.ac.in +91 - 97277 47317 (CE Department) Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design (CD) GTU # 2170701   Darshan Institute of Engineering & Technology, Rajkot     Looping Topics to be covered  Types of errors Error recovery strategies            Types of errors        Types of Errors Errors Compile time  Run time Lexical Phase error Syntactic Phase error Semantic Phase error    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Lexical error Lexical errors can be detected during lexical analysis phase. 
+
+
+>> Tokens are: 
+ ['PowerPoint', 'Presentation', 'Unit', '–', '4', 'Error', 'Recovery', 'dixita.kagathara', '@', 'darshan.ac.in', '+91', '-', '97277', '47317', '(', 'CE', 'Department', ')', 'Computer', 'Engineering', 'Department', 'Prof.', 'Dixita', 'B.', 'Kagathara', 'Compiler', 'Design', '(', 'CD', ')', 'GTU', '#', '2170701', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', ',', 'Rajkot', '\uf050', 'Looping', 'Topics', 'covered', 'Types', 'errors', 'Error', 'recovery', 'strategies', 'Types', 'errors', 'Types', 'Errors', 'Errors', 'Compile', 'time', 'Run', 'time', 'Lexical', 'Phase', 'error', 'Syntactic', 'Phase', 'error', 'Semantic', 'Phase', 'error', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹', '#', '›', 'Lexical', 'error', 'Lexical', 'errors', 'detected', 'lexical', 'analysis', 'phase', '.']
+
+>> Bigrams are: 
+ [('PowerPoint', 'Presentation'), ('Presentation', 'Unit'), ('Unit', '–'), ('–', '4'), ('4', 'Error'), ('Error', 'Recovery'), ('Recovery', 'dixita.kagathara'), ('dixita.kagathara', '@'), ('@', 'darshan.ac.in'), ('darshan.ac.in', '+91'), ('+91', '-'), ('-', '97277'), ('97277', '47317'), ('47317', '('), ('(', 'CE'), ('CE', 'Department'), ('Department', ')'), (')', 'Computer'), ('Computer', 'Engineering'), ('Engineering', 'Department'), ('Department', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B.'), ('B.', 'Kagathara'), ('Kagathara', 'Compiler'), ('Compiler', 'Design'), ('Design', '('), ('(', 'CD'), ('CD', ')'), (')', 'GTU'), ('GTU', '#'), ('#', '2170701'), ('2170701', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', ','), (',', 'Rajkot'), ('Rajkot', '\uf050'), ('\uf050', 'Looping'), ('Looping', 'Topics'), ('Topics', 'covered'), ('covered', 'Types'), ('Types', 'errors'), ('errors', 'Error'), ('Error', 'recovery'), ('recovery', 'strategies'), ('strategies', 'Types'), ('Types', 'errors'), ('errors', 'Types'), ('Types', 'Errors'), ('Errors', 'Errors'), ('Errors', 'Compile'), ('Compile', 'time'), ('time', 'Run'), ('Run', 'time'), ('time', 'Lexical'), ('Lexical', 'Phase'), ('Phase', 'error'), ('error', 'Syntactic'), ('Syntactic', 'Phase'), ('Phase', 'error'), ('error', 'Semantic'), ('Semantic', 'Phase'), ('Phase', 'error'), ('error', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '4'), ('4', '–'), ('–', 'Error'), ('Error', 'Recovery'), ('Recovery', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Lexical'), ('Lexical', 'error'), ('error', 'Lexical'), ('Lexical', 'errors'), ('errors', 'detected'), ('detected', 'lexical'), ('lexical', 'analysis'), ('analysis', 'phase'), ('phase', '.')]
+
+>> Trigrams are: 
+ [('PowerPoint', 'Presentation', 'Unit'), ('Presentation', 'Unit', '–'), ('Unit', '–', '4'), ('–', '4', 'Error'), ('4', 'Error', 'Recovery'), ('Error', 'Recovery', 'dixita.kagathara'), ('Recovery', 'dixita.kagathara', '@'), ('dixita.kagathara', '@', 'darshan.ac.in'), ('@', 'darshan.ac.in', '+91'), ('darshan.ac.in', '+91', '-'), ('+91', '-', '97277'), ('-', '97277', '47317'), ('97277', '47317', '('), ('47317', '(', 'CE'), ('(', 'CE', 'Department'), ('CE', 'Department', ')'), ('Department', ')', 'Computer'), (')', 'Computer', 'Engineering'), ('Computer', 'Engineering', 'Department'), ('Engineering', 'Department', 'Prof.'), ('Department', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B.'), ('Dixita', 'B.', 'Kagathara'), ('B.', 'Kagathara', 'Compiler'), ('Kagathara', 'Compiler', 'Design'), ('Compiler', 'Design', '('), ('Design', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', 'GTU'), (')', 'GTU', '#'), ('GTU', '#', '2170701'), ('#', '2170701', 'Darshan'), ('2170701', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', ','), ('Technology', ',', 'Rajkot'), (',', 'Rajkot', '\uf050'), ('Rajkot', '\uf050', 'Looping'), ('\uf050', 'Looping', 'Topics'), ('Looping', 'Topics', 'covered'), ('Topics', 'covered', 'Types'), ('covered', 'Types', 'errors'), ('Types', 'errors', 'Error'), ('errors', 'Error', 'recovery'), ('Error', 'recovery', 'strategies'), ('recovery', 'strategies', 'Types'), ('strategies', 'Types', 'errors'), ('Types', 'errors', 'Types'), ('errors', 'Types', 'Errors'), ('Types', 'Errors', 'Errors'), ('Errors', 'Errors', 'Compile'), ('Errors', 'Compile', 'time'), ('Compile', 'time', 'Run'), ('time', 'Run', 'time'), ('Run', 'time', 'Lexical'), ('time', 'Lexical', 'Phase'), ('Lexical', 'Phase', 'error'), ('Phase', 'error', 'Syntactic'), ('error', 'Syntactic', 'Phase'), ('Syntactic', 'Phase', 'error'), ('Phase', 'error', 'Semantic'), ('error', 'Semantic', 'Phase'), ('Semantic', 'Phase', 'error'), ('Phase', 'error', 'Prof.'), ('error', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '4'), ('Unit', '4', '–'), ('4', '–', 'Error'), ('–', 'Error', 'Recovery'), ('Error', 'Recovery', '‹'), ('Recovery', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Lexical'), ('›', 'Lexical', 'error'), ('Lexical', 'error', 'Lexical'), ('error', 'Lexical', 'errors'), ('Lexical', 'errors', 'detected'), ('errors', 'detected', 'lexical'), ('detected', 'lexical', 'analysis'), ('lexical', 'analysis', 'phase'), ('analysis', 'phase', '.')]
+
+>> POS Tags are: 
+ [('PowerPoint', 'NNP'), ('Presentation', 'NNP'), ('Unit', 'NNP'), ('–', 'VBD'), ('4', 'CD'), ('Error', 'NNP'), ('Recovery', 'NNP'), ('dixita.kagathara', 'NN'), ('@', 'NNP'), ('darshan.ac.in', 'NN'), ('+91', 'NNP'), ('-', ':'), ('97277', 'CD'), ('47317', 'CD'), ('(', '('), ('CE', 'NNP'), ('Department', 'NNP'), (')', ')'), ('Computer', 'NNP'), ('Engineering', 'NNP'), ('Department', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B.', 'NNP'), ('Kagathara', 'NNP'), ('Compiler', 'NNP'), ('Design', 'NNP'), ('(', '('), ('CD', 'NN'), (')', ')'), ('GTU', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), (',', ','), ('Rajkot', 'NNP'), ('\uf050', 'NNP'), ('Looping', 'NNP'), ('Topics', 'NNP'), ('covered', 'VBD'), ('Types', 'NNP'), ('errors', 'NNS'), ('Error', 'NNP'), ('recovery', 'NN'), ('strategies', 'NNS'), ('Types', 'NNP'), ('errors', 'NNS'), ('Types', 'NNP'), ('Errors', 'NNPS'), ('Errors', 'NNP'), ('Compile', 'NNP'), ('time', 'NN'), ('Run', 'NNP'), ('time', 'NN'), ('Lexical', 'NNP'), ('Phase', 'NNP'), ('error', 'NN'), ('Syntactic', 'NNP'), ('Phase', 'NNP'), ('error', 'NN'), ('Semantic', 'NNP'), ('Phase', 'NNP'), ('error', 'NN'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Error', 'NNP'), ('Recovery', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Lexical', 'NNP'), ('error', 'NN'), ('Lexical', 'NNP'), ('errors', 'NNS'), ('detected', 'VBD'), ('lexical', 'JJ'), ('analysis', 'NN'), ('phase', 'NN'), ('.', '.')]
+
+ (S
+  (NP PowerPoint/NNP Presentation/NNP Unit/NNP)
+  –/VBD
+  4/CD
+  (NP
+    Error/NNP
+    Recovery/NNP
+    dixita.kagathara/NN
+    @/NNP
+    darshan.ac.in/NN
+    +91/NNP)
+  -/:
+  97277/CD
+  47317/CD
+  (/(
+  (NP CE/NNP Department/NNP)
+  )/)
+  (NP
+    Computer/NNP
+    Engineering/NNP
+    Department/NNP
+    Prof./NNP
+    Dixita/NNP
+    B./NNP
+    Kagathara/NNP
+    Compiler/NNP
+    Design/NNP)
+  (/(
+  (NP CD/NN)
+  )/)
+  (NP GTU/NNP)
+  #/#
+  2170701/CD
+  (NP Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP)
+  ,/,
+  (NP Rajkot/NNP /NNP Looping/NNP Topics/NNP)
+  covered/VBD
+  (NP
+    Types/NNP
+    errors/NNS
+    Error/NNP
+    recovery/NN
+    strategies/NNS
+    Types/NNP
+    errors/NNS
+    Types/NNP)
+  Errors/NNPS
+  (NP
+    Errors/NNP
+    Compile/NNP
+    time/NN
+    Run/NNP
+    time/NN
+    Lexical/NNP
+    Phase/NNP
+    error/NN
+    Syntactic/NNP
+    Phase/NNP
+    error/NN
+    Semantic/NNP
+    Phase/NNP
+    error/NN
+    Prof./NNP
+    Jay/NNP
+    R/NNP
+    Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  4/CD
+  (NP –/NNP Error/NNP Recovery/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Lexical/NNP error/NN Lexical/NNP errors/NNS)
+  detected/VBD
+  (NP lexical/JJ analysis/NN phase/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['PowerPoint Presentation Unit', 'Error Recovery dixita.kagathara @ darshan.ac.in +91', 'CE Department', 'Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design', 'CD', 'GTU', 'Darshan Institute Engineering', 'Technology', 'Rajkot \uf050 Looping Topics', 'Types errors Error recovery strategies Types errors Types', 'Errors Compile time Run time Lexical Phase error Syntactic Phase error Semantic Phase error Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Error Recovery ‹', '› Lexical error Lexical errors', 'lexical analysis phase']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'PowerPoint'), ('PERSON', 'Unit'), ('ORGANIZATION', 'CE Department'), ('ORGANIZATION', 'Computer Engineering Department'), ('PERSON', 'Dixita B. Kagathara Compiler'), ('ORGANIZATION', 'GTU'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Rajkot'), ('PERSON', 'Topics'), ('GPE', 'Types'), ('PERSON', 'Error'), ('ORGANIZATION', 'Types Errors Errors'), ('PERSON', 'Lexical Phase'), ('PERSON', 'Syntactic Phase'), ('PERSON', 'Semantic Phase'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Lexical')] 
+
+>> Stemming using Porter Stemmer: 
+ [('PowerPoint', 'powerpoint'), ('Presentation', 'present'), ('Unit', 'unit'), ('–', '–'), ('4', '4'), ('Error', 'error'), ('Recovery', 'recoveri'), ('dixita.kagathara', 'dixita.kagathara'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('+91', '+91'), ('-', '-'), ('97277', '97277'), ('47317', '47317'), ('(', '('), ('CE', 'ce'), ('Department', 'depart'), (')', ')'), ('Computer', 'comput'), ('Engineering', 'engin'), ('Department', 'depart'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B.', 'b.'), ('Kagathara', 'kagathara'), ('Compiler', 'compil'), ('Design', 'design'), ('(', '('), ('CD', 'cd'), (')', ')'), ('GTU', 'gtu'), ('#', '#'), ('2170701', '2170701'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), (',', ','), ('Rajkot', 'rajkot'), ('\uf050', '\uf050'), ('Looping', 'loop'), ('Topics', 'topic'), ('covered', 'cover'), ('Types', 'type'), ('errors', 'error'), ('Error', 'error'), ('recovery', 'recoveri'), ('strategies', 'strategi'), ('Types', 'type'), ('errors', 'error'), ('Types', 'type'), ('Errors', 'error'), ('Errors', 'error'), ('Compile', 'compil'), ('time', 'time'), ('Run', 'run'), ('time', 'time'), ('Lexical', 'lexic'), ('Phase', 'phase'), ('error', 'error'), ('Syntactic', 'syntact'), ('Phase', 'phase'), ('error', 'error'), ('Semantic', 'semant'), ('Phase', 'phase'), ('error', 'error'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Lexical', 'lexic'), ('error', 'error'), ('Lexical', 'lexic'), ('errors', 'error'), ('detected', 'detect'), ('lexical', 'lexic'), ('analysis', 'analysi'), ('phase', 'phase'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('PowerPoint', 'powerpoint'), ('Presentation', 'present'), ('Unit', 'unit'), ('–', '–'), ('4', '4'), ('Error', 'error'), ('Recovery', 'recoveri'), ('dixita.kagathara', 'dixita.kagathara'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('+91', '+91'), ('-', '-'), ('97277', '97277'), ('47317', '47317'), ('(', '('), ('CE', 'ce'), ('Department', 'depart'), (')', ')'), ('Computer', 'comput'), ('Engineering', 'engin'), ('Department', 'depart'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B.', 'b.'), ('Kagathara', 'kagathara'), ('Compiler', 'compil'), ('Design', 'design'), ('(', '('), ('CD', 'cd'), (')', ')'), ('GTU', 'gtu'), ('#', '#'), ('2170701', '2170701'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), (',', ','), ('Rajkot', 'rajkot'), ('\uf050', '\uf050'), ('Looping', 'loop'), ('Topics', 'topic'), ('covered', 'cover'), ('Types', 'type'), ('errors', 'error'), ('Error', 'error'), ('recovery', 'recoveri'), ('strategies', 'strategi'), ('Types', 'type'), ('errors', 'error'), ('Types', 'type'), ('Errors', 'error'), ('Errors', 'error'), ('Compile', 'compil'), ('time', 'time'), ('Run', 'run'), ('time', 'time'), ('Lexical', 'lexic'), ('Phase', 'phase'), ('error', 'error'), ('Syntactic', 'syntact'), ('Phase', 'phase'), ('error', 'error'), ('Semantic', 'semant'), ('Phase', 'phase'), ('error', 'error'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Lexical', 'lexic'), ('error', 'error'), ('Lexical', 'lexic'), ('errors', 'error'), ('detected', 'detect'), ('lexical', 'lexic'), ('analysis', 'analysi'), ('phase', 'phase'), ('.', '.')]
+
+>> Lemmatization: 
+ [('PowerPoint', 'PowerPoint'), ('Presentation', 'Presentation'), ('Unit', 'Unit'), ('–', '–'), ('4', '4'), ('Error', 'Error'), ('Recovery', 'Recovery'), ('dixita.kagathara', 'dixita.kagathara'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('+91', '+91'), ('-', '-'), ('97277', '97277'), ('47317', '47317'), ('(', '('), ('CE', 'CE'), ('Department', 'Department'), (')', ')'), ('Computer', 'Computer'), ('Engineering', 'Engineering'), ('Department', 'Department'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B.', 'B.'), ('Kagathara', 'Kagathara'), ('Compiler', 'Compiler'), ('Design', 'Design'), ('(', '('), ('CD', 'CD'), (')', ')'), ('GTU', 'GTU'), ('#', '#'), ('2170701', '2170701'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), (',', ','), ('Rajkot', 'Rajkot'), ('\uf050', '\uf050'), ('Looping', 'Looping'), ('Topics', 'Topics'), ('covered', 'covered'), ('Types', 'Types'), ('errors', 'error'), ('Error', 'Error'), ('recovery', 'recovery'), ('strategies', 'strategy'), ('Types', 'Types'), ('errors', 'error'), ('Types', 'Types'), ('Errors', 'Errors'), ('Errors', 'Errors'), ('Compile', 'Compile'), ('time', 'time'), ('Run', 'Run'), ('time', 'time'), ('Lexical', 'Lexical'), ('Phase', 'Phase'), ('error', 'error'), ('Syntactic', 'Syntactic'), ('Phase', 'Phase'), ('error', 'error'), ('Semantic', 'Semantic'), ('Phase', 'Phase'), ('error', 'error'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('4', '4'), ('–', '–'), ('Error', 'Error'), ('Recovery', 'Recovery'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Lexical', 'Lexical'), ('error', 'error'), ('Lexical', 'Lexical'), ('errors', 'error'), ('detected', 'detected'), ('lexical', 'lexical'), ('analysis', 'analysis'), ('phase', 'phase'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+Typical lexical phase errors are:   Spelling errors  Exceeding length of identifier or numeric constants  Appearance of illegal characters Example:  fi ( )  { } In above code 'fi' cannot be recognized as a misspelling of keyword if rather lexical analyzer will understand that it is an identifier and will return it as valid identifier. 
+
+
+>> Tokens are: 
+ ['Typical', 'lexical', 'phase', 'errors', ':', 'Spelling', 'errors', 'Exceeding', 'length', 'identifier', 'numeric', 'constants', 'Appearance', 'illegal', 'characters', 'Example', ':', 'fi', '(', ')', '{', '}', 'In', 'code', "'fi", "'", 'recognized', 'misspelling', 'keyword', 'rather', 'lexical', 'analyzer', 'understand', 'identifier', 'return', 'valid', 'identifier', '.']
+
+>> Bigrams are: 
+ [('Typical', 'lexical'), ('lexical', 'phase'), ('phase', 'errors'), ('errors', ':'), (':', 'Spelling'), ('Spelling', 'errors'), ('errors', 'Exceeding'), ('Exceeding', 'length'), ('length', 'identifier'), ('identifier', 'numeric'), ('numeric', 'constants'), ('constants', 'Appearance'), ('Appearance', 'illegal'), ('illegal', 'characters'), ('characters', 'Example'), ('Example', ':'), (':', 'fi'), ('fi', '('), ('(', ')'), (')', '{'), ('{', '}'), ('}', 'In'), ('In', 'code'), ('code', "'fi"), ("'fi", "'"), ("'", 'recognized'), ('recognized', 'misspelling'), ('misspelling', 'keyword'), ('keyword', 'rather'), ('rather', 'lexical'), ('lexical', 'analyzer'), ('analyzer', 'understand'), ('understand', 'identifier'), ('identifier', 'return'), ('return', 'valid'), ('valid', 'identifier'), ('identifier', '.')]
+
+>> Trigrams are: 
+ [('Typical', 'lexical', 'phase'), ('lexical', 'phase', 'errors'), ('phase', 'errors', ':'), ('errors', ':', 'Spelling'), (':', 'Spelling', 'errors'), ('Spelling', 'errors', 'Exceeding'), ('errors', 'Exceeding', 'length'), ('Exceeding', 'length', 'identifier'), ('length', 'identifier', 'numeric'), ('identifier', 'numeric', 'constants'), ('numeric', 'constants', 'Appearance'), ('constants', 'Appearance', 'illegal'), ('Appearance', 'illegal', 'characters'), ('illegal', 'characters', 'Example'), ('characters', 'Example', ':'), ('Example', ':', 'fi'), (':', 'fi', '('), ('fi', '(', ')'), ('(', ')', '{'), (')', '{', '}'), ('{', '}', 'In'), ('}', 'In', 'code'), ('In', 'code', "'fi"), ('code', "'fi", "'"), ("'fi", "'", 'recognized'), ("'", 'recognized', 'misspelling'), ('recognized', 'misspelling', 'keyword'), ('misspelling', 'keyword', 'rather'), ('keyword', 'rather', 'lexical'), ('rather', 'lexical', 'analyzer'), ('lexical', 'analyzer', 'understand'), ('analyzer', 'understand', 'identifier'), ('understand', 'identifier', 'return'), ('identifier', 'return', 'valid'), ('return', 'valid', 'identifier'), ('valid', 'identifier', '.')]
+
+>> POS Tags are: 
+ [('Typical', 'JJ'), ('lexical', 'JJ'), ('phase', 'NN'), ('errors', 'NNS'), (':', ':'), ('Spelling', 'VBG'), ('errors', 'NNS'), ('Exceeding', 'VBG'), ('length', 'NN'), ('identifier', 'NN'), ('numeric', 'JJ'), ('constants', 'NNS'), ('Appearance', 'NNP'), ('illegal', 'JJ'), ('characters', 'NNS'), ('Example', 'NNS'), (':', ':'), ('fi', 'NN'), ('(', '('), (')', ')'), ('{', '('), ('}', ')'), ('In', 'IN'), ('code', 'NN'), ("'fi", 'POS'), ("'", 'POS'), ('recognized', 'VBN'), ('misspelling', 'NN'), ('keyword', 'NN'), ('rather', 'RB'), ('lexical', 'JJ'), ('analyzer', 'NN'), ('understand', 'VBP'), ('identifier', 'JJR'), ('return', 'NN'), ('valid', 'JJ'), ('identifier', 'NN'), ('.', '.')]
+
+ (S
+  (NP Typical/JJ lexical/JJ phase/NN errors/NNS)
+  :/:
+  Spelling/VBG
+  (NP errors/NNS)
+  Exceeding/VBG
+  (NP length/NN identifier/NN)
+  (NP numeric/JJ constants/NNS Appearance/NNP)
+  (NP illegal/JJ characters/NNS Example/NNS)
+  :/:
+  (NP fi/NN)
+  (/(
+  )/)
+  {/(
+  }/)
+  In/IN
+  (NP code/NN)
+  'fi/POS
+  '/POS
+  recognized/VBN
+  (NP misspelling/NN keyword/NN)
+  rather/RB
+  (NP lexical/JJ analyzer/NN)
+  understand/VBP
+  identifier/JJR
+  (NP return/NN)
+  (NP valid/JJ identifier/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Typical lexical phase errors', 'errors', 'length identifier', 'numeric constants Appearance', 'illegal characters Example', 'fi', 'code', 'misspelling keyword', 'lexical analyzer', 'return', 'valid identifier']
+
+>> Named Entities are: 
+ [('GPE', 'Typical')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Typical', 'typic'), ('lexical', 'lexic'), ('phase', 'phase'), ('errors', 'error'), (':', ':'), ('Spelling', 'spell'), ('errors', 'error'), ('Exceeding', 'exceed'), ('length', 'length'), ('identifier', 'identifi'), ('numeric', 'numer'), ('constants', 'constant'), ('Appearance', 'appear'), ('illegal', 'illeg'), ('characters', 'charact'), ('Example', 'exampl'), (':', ':'), ('fi', 'fi'), ('(', '('), (')', ')'), ('{', '{'), ('}', '}'), ('In', 'in'), ('code', 'code'), ("'fi", "'fi"), ("'", "'"), ('recognized', 'recogn'), ('misspelling', 'misspel'), ('keyword', 'keyword'), ('rather', 'rather'), ('lexical', 'lexic'), ('analyzer', 'analyz'), ('understand', 'understand'), ('identifier', 'identifi'), ('return', 'return'), ('valid', 'valid'), ('identifier', 'identifi'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Typical', 'typic'), ('lexical', 'lexic'), ('phase', 'phase'), ('errors', 'error'), (':', ':'), ('Spelling', 'spell'), ('errors', 'error'), ('Exceeding', 'exceed'), ('length', 'length'), ('identifier', 'identifi'), ('numeric', 'numer'), ('constants', 'constant'), ('Appearance', 'appear'), ('illegal', 'illeg'), ('characters', 'charact'), ('Example', 'exampl'), (':', ':'), ('fi', 'fi'), ('(', '('), (')', ')'), ('{', '{'), ('}', '}'), ('In', 'in'), ('code', 'code'), ("'fi", 'fi'), ("'", "'"), ('recognized', 'recogn'), ('misspelling', 'misspel'), ('keyword', 'keyword'), ('rather', 'rather'), ('lexical', 'lexic'), ('analyzer', 'analyz'), ('understand', 'understand'), ('identifier', 'identifi'), ('return', 'return'), ('valid', 'valid'), ('identifier', 'identifi'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Typical', 'Typical'), ('lexical', 'lexical'), ('phase', 'phase'), ('errors', 'error'), (':', ':'), ('Spelling', 'Spelling'), ('errors', 'error'), ('Exceeding', 'Exceeding'), ('length', 'length'), ('identifier', 'identifier'), ('numeric', 'numeric'), ('constants', 'constant'), ('Appearance', 'Appearance'), ('illegal', 'illegal'), ('characters', 'character'), ('Example', 'Example'), (':', ':'), ('fi', 'fi'), ('(', '('), (')', ')'), ('{', '{'), ('}', '}'), ('In', 'In'), ('code', 'code'), ("'fi", "'fi"), ("'", "'"), ('recognized', 'recognized'), ('misspelling', 'misspelling'), ('keyword', 'keyword'), ('rather', 'rather'), ('lexical', 'lexical'), ('analyzer', 'analyzer'), ('understand', 'understand'), ('identifier', 'identifier'), ('return', 'return'), ('valid', 'valid'), ('identifier', 'identifier'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+Thus misspelling causes errors in token formation. 
+
+
+>> Tokens are: 
+ ['Thus', 'misspelling', 'causes', 'errors', 'token', 'formation', '.']
+
+>> Bigrams are: 
+ [('Thus', 'misspelling'), ('misspelling', 'causes'), ('causes', 'errors'), ('errors', 'token'), ('token', 'formation'), ('formation', '.')]
+
+>> Trigrams are: 
+ [('Thus', 'misspelling', 'causes'), ('misspelling', 'causes', 'errors'), ('causes', 'errors', 'token'), ('errors', 'token', 'formation'), ('token', 'formation', '.')]
+
+>> POS Tags are: 
+ [('Thus', 'RB'), ('misspelling', 'VBG'), ('causes', 'NNS'), ('errors', 'NNS'), ('token', 'VBP'), ('formation', 'NN'), ('.', '.')]
+
+ (S
+  Thus/RB
+  misspelling/VBG
+  (NP causes/NNS errors/NNS)
+  token/VBP
+  (NP formation/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['causes errors', 'formation']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Thus', 'thu'), ('misspelling', 'misspel'), ('causes', 'caus'), ('errors', 'error'), ('token', 'token'), ('formation', 'format'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Thus', 'thus'), ('misspelling', 'misspel'), ('causes', 'caus'), ('errors', 'error'), ('token', 'token'), ('formation', 'format'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Thus', 'Thus'), ('misspelling', 'misspelling'), ('causes', 'cause'), ('errors', 'error'), ('token', 'token'), ('formation', 'formation'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Syntax error Syntax error appear during syntax analysis phase of compiler. 
+
+
+>> Tokens are: 
+ ['Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹', '#', '›', 'Syntax', 'error', 'Syntax', 'error', 'appear', 'syntax', 'analysis', 'phase', 'compiler', '.']
+
+>> Bigrams are: 
+ [('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '4'), ('4', '–'), ('–', 'Error'), ('Error', 'Recovery'), ('Recovery', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Syntax'), ('Syntax', 'error'), ('error', 'Syntax'), ('Syntax', 'error'), ('error', 'appear'), ('appear', 'syntax'), ('syntax', 'analysis'), ('analysis', 'phase'), ('phase', 'compiler'), ('compiler', '.')]
+
+>> Trigrams are: 
+ [('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '4'), ('Unit', '4', '–'), ('4', '–', 'Error'), ('–', 'Error', 'Recovery'), ('Error', 'Recovery', '‹'), ('Recovery', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Syntax'), ('›', 'Syntax', 'error'), ('Syntax', 'error', 'Syntax'), ('error', 'Syntax', 'error'), ('Syntax', 'error', 'appear'), ('error', 'appear', 'syntax'), ('appear', 'syntax', 'analysis'), ('syntax', 'analysis', 'phase'), ('analysis', 'phase', 'compiler'), ('phase', 'compiler', '.')]
+
+>> POS Tags are: 
+ [('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Error', 'NNP'), ('Recovery', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Syntax', 'NNP'), ('error', 'NN'), ('Syntax', 'NNP'), ('error', 'NN'), ('appear', 'VBP'), ('syntax', 'JJ'), ('analysis', 'NN'), ('phase', 'NN'), ('compiler', 'NN'), ('.', '.')]
+
+ (S
+  (NP Prof./NNP Jay/NNP R/NNP Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  4/CD
+  (NP –/NNP Error/NNP Recovery/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Syntax/NNP error/NN Syntax/NNP error/NN)
+  appear/VBP
+  (NP syntax/JJ analysis/NN phase/NN compiler/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Error Recovery ‹', '› Syntax error Syntax error', 'syntax analysis phase compiler']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit'), ('PERSON', 'Syntax')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Syntax', 'syntax'), ('error', 'error'), ('Syntax', 'syntax'), ('error', 'error'), ('appear', 'appear'), ('syntax', 'syntax'), ('analysis', 'analysi'), ('phase', 'phase'), ('compiler', 'compil'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Syntax', 'syntax'), ('error', 'error'), ('Syntax', 'syntax'), ('error', 'error'), ('appear', 'appear'), ('syntax', 'syntax'), ('analysis', 'analysi'), ('phase', 'phase'), ('compiler', 'compil'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('4', '4'), ('–', '–'), ('Error', 'Error'), ('Recovery', 'Recovery'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Syntax', 'Syntax'), ('error', 'error'), ('Syntax', 'Syntax'), ('error', 'error'), ('appear', 'appear'), ('syntax', 'syntax'), ('analysis', 'analysis'), ('phase', 'phase'), ('compiler', 'compiler'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+Typical syntax phase errors are:  Errors in structure  Missing operators  Unbalanced parenthesis The parser demands for tokens from lexical analyzer and if the tokens do not satisfy the grammatical rules of programming language then the syntactical errors get raised. 
+
+
+>> Tokens are: 
+ ['Typical', 'syntax', 'phase', 'errors', ':', 'Errors', 'structure', 'Missing', 'operators', 'Unbalanced', 'parenthesis', 'The', 'parser', 'demands', 'tokens', 'lexical', 'analyzer', 'tokens', 'satisfy', 'grammatical', 'rules', 'programming', 'language', 'syntactical', 'errors', 'get', 'raised', '.']
+
+>> Bigrams are: 
+ [('Typical', 'syntax'), ('syntax', 'phase'), ('phase', 'errors'), ('errors', ':'), (':', 'Errors'), ('Errors', 'structure'), ('structure', 'Missing'), ('Missing', 'operators'), ('operators', 'Unbalanced'), ('Unbalanced', 'parenthesis'), ('parenthesis', 'The'), ('The', 'parser'), ('parser', 'demands'), ('demands', 'tokens'), ('tokens', 'lexical'), ('lexical', 'analyzer'), ('analyzer', 'tokens'), ('tokens', 'satisfy'), ('satisfy', 'grammatical'), ('grammatical', 'rules'), ('rules', 'programming'), ('programming', 'language'), ('language', 'syntactical'), ('syntactical', 'errors'), ('errors', 'get'), ('get', 'raised'), ('raised', '.')]
+
+>> Trigrams are: 
+ [('Typical', 'syntax', 'phase'), ('syntax', 'phase', 'errors'), ('phase', 'errors', ':'), ('errors', ':', 'Errors'), (':', 'Errors', 'structure'), ('Errors', 'structure', 'Missing'), ('structure', 'Missing', 'operators'), ('Missing', 'operators', 'Unbalanced'), ('operators', 'Unbalanced', 'parenthesis'), ('Unbalanced', 'parenthesis', 'The'), ('parenthesis', 'The', 'parser'), ('The', 'parser', 'demands'), ('parser', 'demands', 'tokens'), ('demands', 'tokens', 'lexical'), ('tokens', 'lexical', 'analyzer'), ('lexical', 'analyzer', 'tokens'), ('analyzer', 'tokens', 'satisfy'), ('tokens', 'satisfy', 'grammatical'), ('satisfy', 'grammatical', 'rules'), ('grammatical', 'rules', 'programming'), ('rules', 'programming', 'language'), ('programming', 'language', 'syntactical'), ('language', 'syntactical', 'errors'), ('syntactical', 'errors', 'get'), ('errors', 'get', 'raised'), ('get', 'raised', '.')]
+
+>> POS Tags are: 
+ [('Typical', 'JJ'), ('syntax', 'NN'), ('phase', 'NN'), ('errors', 'NNS'), (':', ':'), ('Errors', 'NNS'), ('structure', 'NN'), ('Missing', 'VBG'), ('operators', 'NNS'), ('Unbalanced', 'VBD'), ('parenthesis', 'IN'), ('The', 'DT'), ('parser', 'NN'), ('demands', 'VBZ'), ('tokens', 'JJ'), ('lexical', 'JJ'), ('analyzer', 'NN'), ('tokens', 'NNS'), ('satisfy', 'VBP'), ('grammatical', 'JJ'), ('rules', 'NNS'), ('programming', 'VBG'), ('language', 'NN'), ('syntactical', 'JJ'), ('errors', 'NNS'), ('get', 'VBP'), ('raised', 'VBN'), ('.', '.')]
+
+ (S
+  (NP Typical/JJ syntax/NN phase/NN errors/NNS)
+  :/:
+  (NP Errors/NNS structure/NN)
+  Missing/VBG
+  (NP operators/NNS)
+  Unbalanced/VBD
+  parenthesis/IN
+  (NP The/DT parser/NN)
+  demands/VBZ
+  (NP tokens/JJ lexical/JJ analyzer/NN tokens/NNS)
+  satisfy/VBP
+  (NP grammatical/JJ rules/NNS)
+  programming/VBG
+  (NP language/NN)
+  (NP syntactical/JJ errors/NNS)
+  get/VBP
+  raised/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Typical syntax phase errors', 'Errors structure', 'operators', 'The parser', 'tokens lexical analyzer tokens', 'grammatical rules', 'language', 'syntactical errors']
+
+>> Named Entities are: 
+ [('GPE', 'Typical')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Typical', 'typic'), ('syntax', 'syntax'), ('phase', 'phase'), ('errors', 'error'), (':', ':'), ('Errors', 'error'), ('structure', 'structur'), ('Missing', 'miss'), ('operators', 'oper'), ('Unbalanced', 'unbalanc'), ('parenthesis', 'parenthesi'), ('The', 'the'), ('parser', 'parser'), ('demands', 'demand'), ('tokens', 'token'), ('lexical', 'lexic'), ('analyzer', 'analyz'), ('tokens', 'token'), ('satisfy', 'satisfi'), ('grammatical', 'grammat'), ('rules', 'rule'), ('programming', 'program'), ('language', 'languag'), ('syntactical', 'syntact'), ('errors', 'error'), ('get', 'get'), ('raised', 'rais'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Typical', 'typic'), ('syntax', 'syntax'), ('phase', 'phase'), ('errors', 'error'), (':', ':'), ('Errors', 'error'), ('structure', 'structur'), ('Missing', 'miss'), ('operators', 'oper'), ('Unbalanced', 'unbalanc'), ('parenthesis', 'parenthesi'), ('The', 'the'), ('parser', 'parser'), ('demands', 'demand'), ('tokens', 'token'), ('lexical', 'lexic'), ('analyzer', 'analyz'), ('tokens', 'token'), ('satisfy', 'satisfi'), ('grammatical', 'grammat'), ('rules', 'rule'), ('programming', 'program'), ('language', 'languag'), ('syntactical', 'syntact'), ('errors', 'error'), ('get', 'get'), ('raised', 'rais'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Typical', 'Typical'), ('syntax', 'syntax'), ('phase', 'phase'), ('errors', 'error'), (':', ':'), ('Errors', 'Errors'), ('structure', 'structure'), ('Missing', 'Missing'), ('operators', 'operator'), ('Unbalanced', 'Unbalanced'), ('parenthesis', 'parenthesis'), ('The', 'The'), ('parser', 'parser'), ('demands', 'demand'), ('tokens', 'token'), ('lexical', 'lexical'), ('analyzer', 'analyzer'), ('tokens', 'token'), ('satisfy', 'satisfy'), ('grammatical', 'grammatical'), ('rules', 'rule'), ('programming', 'programming'), ('language', 'language'), ('syntactical', 'syntactical'), ('errors', 'error'), ('get', 'get'), ('raised', 'raised'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+Example:  printf(“Hello World !! 
+
+
+>> Tokens are: 
+ ['Example', ':', 'printf', '(', '“', 'Hello', 'World', '!', '!']
+
+>> Bigrams are: 
+ [('Example', ':'), (':', 'printf'), ('printf', '('), ('(', '“'), ('“', 'Hello'), ('Hello', 'World'), ('World', '!'), ('!', '!')]
+
+>> Trigrams are: 
+ [('Example', ':', 'printf'), (':', 'printf', '('), ('printf', '(', '“'), ('(', '“', 'Hello'), ('“', 'Hello', 'World'), ('Hello', 'World', '!'), ('World', '!', '!')]
+
+>> POS Tags are: 
+ [('Example', 'NN'), (':', ':'), ('printf', 'NN'), ('(', '('), ('“', 'JJ'), ('Hello', 'NNP'), ('World', 'NNP'), ('!', '.'), ('!', '.')]
+
+ (S
+  (NP Example/NN)
+  :/:
+  (NP printf/NN)
+  (/(
+  (NP “/JJ Hello/NNP World/NNP)
+  !/.
+  !/.) 
+
+
+>> Noun Phrases are: 
+ ['Example', 'printf', '“ Hello World']
+
+>> Named Entities are: 
+ [('GPE', 'Example')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Example', 'exampl'), (':', ':'), ('printf', 'printf'), ('(', '('), ('“', '“'), ('Hello', 'hello'), ('World', 'world'), ('!', '!'), ('!', '!')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Example', 'exampl'), (':', ':'), ('printf', 'printf'), ('(', '('), ('“', '“'), ('Hello', 'hello'), ('World', 'world'), ('!', '!'), ('!', '!')]
+
+>> Lemmatization: 
+ [('Example', 'Example'), (':', ':'), ('printf', 'printf'), ('(', '('), ('“', '“'), ('Hello', 'Hello'), ('World', 'World'), ('!', '!'), ('!', '!')]
+
+
+
+============================ Sentence 7 =============================
+
+!”) Error: Semicolon missing    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Semantic error Semantic error detected during semantic analysis phase. 
+
+
+>> Tokens are: 
+ ['!', '”', ')', 'Error', ':', 'Semicolon', 'missing', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹', '#', '›', 'Semantic', 'error', 'Semantic', 'error', 'detected', 'semantic', 'analysis', 'phase', '.']
+
+>> Bigrams are: 
+ [('!', '”'), ('”', ')'), (')', 'Error'), ('Error', ':'), (':', 'Semicolon'), ('Semicolon', 'missing'), ('missing', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '4'), ('4', '–'), ('–', 'Error'), ('Error', 'Recovery'), ('Recovery', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Semantic'), ('Semantic', 'error'), ('error', 'Semantic'), ('Semantic', 'error'), ('error', 'detected'), ('detected', 'semantic'), ('semantic', 'analysis'), ('analysis', 'phase'), ('phase', '.')]
+
+>> Trigrams are: 
+ [('!', '”', ')'), ('”', ')', 'Error'), (')', 'Error', ':'), ('Error', ':', 'Semicolon'), (':', 'Semicolon', 'missing'), ('Semicolon', 'missing', 'Prof.'), ('missing', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '4'), ('Unit', '4', '–'), ('4', '–', 'Error'), ('–', 'Error', 'Recovery'), ('Error', 'Recovery', '‹'), ('Recovery', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Semantic'), ('›', 'Semantic', 'error'), ('Semantic', 'error', 'Semantic'), ('error', 'Semantic', 'error'), ('Semantic', 'error', 'detected'), ('error', 'detected', 'semantic'), ('detected', 'semantic', 'analysis'), ('semantic', 'analysis', 'phase'), ('analysis', 'phase', '.')]
+
+>> POS Tags are: 
+ [('!', '.'), ('”', 'NN'), (')', ')'), ('Error', 'NN'), (':', ':'), ('Semicolon', 'NNP'), ('missing', 'VBG'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Error', 'NNP'), ('Recovery', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Semantic', 'NNP'), ('error', 'NN'), ('Semantic', 'NNP'), ('error', 'NN'), ('detected', 'VBD'), ('semantic', 'JJ'), ('analysis', 'NN'), ('phase', 'NN'), ('.', '.')]
+
+ (S
+  !/.
+  (NP ”/NN)
+  )/)
+  (NP Error/NN)
+  :/:
+  (NP Semicolon/NNP)
+  missing/VBG
+  (NP Prof./NNP Jay/NNP R/NNP Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  4/CD
+  (NP –/NNP Error/NNP Recovery/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Semantic/NNP error/NN Semantic/NNP error/NN)
+  detected/VBD
+  (NP semantic/JJ analysis/NN phase/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['”', 'Error', 'Semicolon', 'Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Error Recovery ‹', '› Semantic error Semantic error', 'semantic analysis phase']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Semantic')] 
+
+>> Stemming using Porter Stemmer: 
+ [('!', '!'), ('”', '”'), (')', ')'), ('Error', 'error'), (':', ':'), ('Semicolon', 'semicolon'), ('missing', 'miss'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Semantic', 'semant'), ('error', 'error'), ('Semantic', 'semant'), ('error', 'error'), ('detected', 'detect'), ('semantic', 'semant'), ('analysis', 'analysi'), ('phase', 'phase'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('!', '!'), ('”', '”'), (')', ')'), ('Error', 'error'), (':', ':'), ('Semicolon', 'semicolon'), ('missing', 'miss'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Semantic', 'semant'), ('error', 'error'), ('Semantic', 'semant'), ('error', 'error'), ('detected', 'detect'), ('semantic', 'semant'), ('analysis', 'analysi'), ('phase', 'phase'), ('.', '.')]
+
+>> Lemmatization: 
+ [('!', '!'), ('”', '”'), (')', ')'), ('Error', 'Error'), (':', ':'), ('Semicolon', 'Semicolon'), ('missing', 'missing'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('4', '4'), ('–', '–'), ('Error', 'Error'), ('Recovery', 'Recovery'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Semantic', 'Semantic'), ('error', 'error'), ('Semantic', 'Semantic'), ('error', 'error'), ('detected', 'detected'), ('semantic', 'semantic'), ('analysis', 'analysis'), ('phase', 'phase'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+Typical semantic phase errors are: Incompatible types of operands Undeclared variable Not matching of actual argument with formal argument Example: 	id1=id2+id3*60 (Note: id1, id2, id3 are real) (Directly we can not perform multiplication due to incompatible types of variables)     Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Error recovery strategies (Ad-Hoc & systematic methods)        Error recovery strategies (Ad-Hoc & systematic methods) There are mainly four error recovery strategies:  Panic mode  Phrase level recovery  Error production  Global generation     Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Panic mode In this method on discovering error, the parser discards input symbol one at a time. 
+
+
+>> Tokens are: 
+ ['Typical', 'semantic', 'phase', 'errors', ':', 'Incompatible', 'types', 'operands', 'Undeclared', 'variable', 'Not', 'matching', 'actual', 'argument', 'formal', 'argument', 'Example', ':', 'id1=id2+id3', '*', '60', '(', 'Note', ':', 'id1', ',', 'id2', ',', 'id3', 'real', ')', '(', 'Directly', 'perform', 'multiplication', 'due', 'incompatible', 'types', 'variables', ')', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹', '#', '›', 'Error', 'recovery', 'strategies', '(', 'Ad-Hoc', '&', 'systematic', 'methods', ')', 'Error', 'recovery', 'strategies', '(', 'Ad-Hoc', '&', 'systematic', 'methods', ')', 'There', 'mainly', 'four', 'error', 'recovery', 'strategies', ':', 'Panic', 'mode', 'Phrase', 'level', 'recovery', 'Error', 'production', 'Global', 'generation', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹', '#', '›', 'Panic', 'mode', 'In', 'method', 'discovering', 'error', ',', 'parser', 'discards', 'input', 'symbol', 'one', 'time', '.']
+
+>> Bigrams are: 
+ [('Typical', 'semantic'), ('semantic', 'phase'), ('phase', 'errors'), ('errors', ':'), (':', 'Incompatible'), ('Incompatible', 'types'), ('types', 'operands'), ('operands', 'Undeclared'), ('Undeclared', 'variable'), ('variable', 'Not'), ('Not', 'matching'), ('matching', 'actual'), ('actual', 'argument'), ('argument', 'formal'), ('formal', 'argument'), ('argument', 'Example'), ('Example', ':'), (':', 'id1=id2+id3'), ('id1=id2+id3', '*'), ('*', '60'), ('60', '('), ('(', 'Note'), ('Note', ':'), (':', 'id1'), ('id1', ','), (',', 'id2'), ('id2', ','), (',', 'id3'), ('id3', 'real'), ('real', ')'), (')', '('), ('(', 'Directly'), ('Directly', 'perform'), ('perform', 'multiplication'), ('multiplication', 'due'), ('due', 'incompatible'), ('incompatible', 'types'), ('types', 'variables'), ('variables', ')'), (')', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '4'), ('4', '–'), ('–', 'Error'), ('Error', 'Recovery'), ('Recovery', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Error'), ('Error', 'recovery'), ('recovery', 'strategies'), ('strategies', '('), ('(', 'Ad-Hoc'), ('Ad-Hoc', '&'), ('&', 'systematic'), ('systematic', 'methods'), ('methods', ')'), (')', 'Error'), ('Error', 'recovery'), ('recovery', 'strategies'), ('strategies', '('), ('(', 'Ad-Hoc'), ('Ad-Hoc', '&'), ('&', 'systematic'), ('systematic', 'methods'), ('methods', ')'), (')', 'There'), ('There', 'mainly'), ('mainly', 'four'), ('four', 'error'), ('error', 'recovery'), ('recovery', 'strategies'), ('strategies', ':'), (':', 'Panic'), ('Panic', 'mode'), ('mode', 'Phrase'), ('Phrase', 'level'), ('level', 'recovery'), ('recovery', 'Error'), ('Error', 'production'), ('production', 'Global'), ('Global', 'generation'), ('generation', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '4'), ('4', '–'), ('–', 'Error'), ('Error', 'Recovery'), ('Recovery', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Panic'), ('Panic', 'mode'), ('mode', 'In'), ('In', 'method'), ('method', 'discovering'), ('discovering', 'error'), ('error', ','), (',', 'parser'), ('parser', 'discards'), ('discards', 'input'), ('input', 'symbol'), ('symbol', 'one'), ('one', 'time'), ('time', '.')]
+
+>> Trigrams are: 
+ [('Typical', 'semantic', 'phase'), ('semantic', 'phase', 'errors'), ('phase', 'errors', ':'), ('errors', ':', 'Incompatible'), (':', 'Incompatible', 'types'), ('Incompatible', 'types', 'operands'), ('types', 'operands', 'Undeclared'), ('operands', 'Undeclared', 'variable'), ('Undeclared', 'variable', 'Not'), ('variable', 'Not', 'matching'), ('Not', 'matching', 'actual'), ('matching', 'actual', 'argument'), ('actual', 'argument', 'formal'), ('argument', 'formal', 'argument'), ('formal', 'argument', 'Example'), ('argument', 'Example', ':'), ('Example', ':', 'id1=id2+id3'), (':', 'id1=id2+id3', '*'), ('id1=id2+id3', '*', '60'), ('*', '60', '('), ('60', '(', 'Note'), ('(', 'Note', ':'), ('Note', ':', 'id1'), (':', 'id1', ','), ('id1', ',', 'id2'), (',', 'id2', ','), ('id2', ',', 'id3'), (',', 'id3', 'real'), ('id3', 'real', ')'), ('real', ')', '('), (')', '(', 'Directly'), ('(', 'Directly', 'perform'), ('Directly', 'perform', 'multiplication'), ('perform', 'multiplication', 'due'), ('multiplication', 'due', 'incompatible'), ('due', 'incompatible', 'types'), ('incompatible', 'types', 'variables'), ('types', 'variables', ')'), ('variables', ')', 'Prof.'), (')', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '4'), ('Unit', '4', '–'), ('4', '–', 'Error'), ('–', 'Error', 'Recovery'), ('Error', 'Recovery', '‹'), ('Recovery', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Error'), ('›', 'Error', 'recovery'), ('Error', 'recovery', 'strategies'), ('recovery', 'strategies', '('), ('strategies', '(', 'Ad-Hoc'), ('(', 'Ad-Hoc', '&'), ('Ad-Hoc', '&', 'systematic'), ('&', 'systematic', 'methods'), ('systematic', 'methods', ')'), ('methods', ')', 'Error'), (')', 'Error', 'recovery'), ('Error', 'recovery', 'strategies'), ('recovery', 'strategies', '('), ('strategies', '(', 'Ad-Hoc'), ('(', 'Ad-Hoc', '&'), ('Ad-Hoc', '&', 'systematic'), ('&', 'systematic', 'methods'), ('systematic', 'methods', ')'), ('methods', ')', 'There'), (')', 'There', 'mainly'), ('There', 'mainly', 'four'), ('mainly', 'four', 'error'), ('four', 'error', 'recovery'), ('error', 'recovery', 'strategies'), ('recovery', 'strategies', ':'), ('strategies', ':', 'Panic'), (':', 'Panic', 'mode'), ('Panic', 'mode', 'Phrase'), ('mode', 'Phrase', 'level'), ('Phrase', 'level', 'recovery'), ('level', 'recovery', 'Error'), ('recovery', 'Error', 'production'), ('Error', 'production', 'Global'), ('production', 'Global', 'generation'), ('Global', 'generation', 'Prof.'), ('generation', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '4'), ('Unit', '4', '–'), ('4', '–', 'Error'), ('–', 'Error', 'Recovery'), ('Error', 'Recovery', '‹'), ('Recovery', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Panic'), ('›', 'Panic', 'mode'), ('Panic', 'mode', 'In'), ('mode', 'In', 'method'), ('In', 'method', 'discovering'), ('method', 'discovering', 'error'), ('discovering', 'error', ','), ('error', ',', 'parser'), (',', 'parser', 'discards'), ('parser', 'discards', 'input'), ('discards', 'input', 'symbol'), ('input', 'symbol', 'one'), ('symbol', 'one', 'time'), ('one', 'time', '.')]
+
+>> POS Tags are: 
+ [('Typical', 'JJ'), ('semantic', 'JJ'), ('phase', 'NN'), ('errors', 'NNS'), (':', ':'), ('Incompatible', 'JJ'), ('types', 'NNS'), ('operands', 'NNS'), ('Undeclared', 'NNP'), ('variable', 'JJ'), ('Not', 'RB'), ('matching', 'VBG'), ('actual', 'JJ'), ('argument', 'NN'), ('formal', 'JJ'), ('argument', 'NN'), ('Example', 'NN'), (':', ':'), ('id1=id2+id3', 'NN'), ('*', 'VBZ'), ('60', 'CD'), ('(', '('), ('Note', 'NN'), (':', ':'), ('id1', 'NN'), (',', ','), ('id2', 'NN'), (',', ','), ('id3', 'JJ'), ('real', 'JJ'), (')', ')'), ('(', '('), ('Directly', 'NNP'), ('perform', 'VB'), ('multiplication', 'NN'), ('due', 'JJ'), ('incompatible', 'JJ'), ('types', 'NNS'), ('variables', 'NNS'), (')', ')'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Error', 'NNP'), ('Recovery', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Error', 'NNP'), ('recovery', 'NN'), ('strategies', 'NNS'), ('(', '('), ('Ad-Hoc', 'NNP'), ('&', 'CC'), ('systematic', 'JJ'), ('methods', 'NNS'), (')', ')'), ('Error', 'VBP'), ('recovery', 'NN'), ('strategies', 'NNS'), ('(', '('), ('Ad-Hoc', 'NNP'), ('&', 'CC'), ('systematic', 'JJ'), ('methods', 'NNS'), (')', ')'), ('There', 'EX'), ('mainly', 'RB'), ('four', 'CD'), ('error', 'NN'), ('recovery', 'NN'), ('strategies', 'NNS'), (':', ':'), ('Panic', 'NNP'), ('mode', 'NN'), ('Phrase', 'NNP'), ('level', 'NN'), ('recovery', 'NN'), ('Error', 'NNP'), ('production', 'NN'), ('Global', 'NNP'), ('generation', 'NN'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Error', 'NNP'), ('Recovery', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Panic', 'NNP'), ('mode', 'NN'), ('In', 'IN'), ('method', 'NN'), ('discovering', 'VBG'), ('error', 'NN'), (',', ','), ('parser', 'NN'), ('discards', 'NNS'), ('input', 'VBP'), ('symbol', 'VB'), ('one', 'CD'), ('time', 'NN'), ('.', '.')]
+
+ (S
+  (NP Typical/JJ semantic/JJ phase/NN errors/NNS)
+  :/:
+  (NP Incompatible/JJ types/NNS operands/NNS Undeclared/NNP)
+  variable/JJ
+  Not/RB
+  matching/VBG
+  (NP actual/JJ argument/NN)
+  (NP formal/JJ argument/NN Example/NN)
+  :/:
+  (NP id1=id2+id3/NN)
+  */VBZ
+  60/CD
+  (/(
+  (NP Note/NN)
+  :/:
+  (NP id1/NN)
+  ,/,
+  (NP id2/NN)
+  ,/,
+  id3/JJ
+  real/JJ
+  )/)
+  (/(
+  (NP Directly/NNP)
+  perform/VB
+  (NP multiplication/NN)
+  (NP due/JJ incompatible/JJ types/NNS variables/NNS)
+  )/)
+  (NP Prof./NNP Jay/NNP R/NNP Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  4/CD
+  (NP –/NNP Error/NNP Recovery/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Error/NNP recovery/NN strategies/NNS)
+  (/(
+  (NP Ad-Hoc/NNP)
+  &/CC
+  (NP systematic/JJ methods/NNS)
+  )/)
+  Error/VBP
+  (NP recovery/NN strategies/NNS)
+  (/(
+  (NP Ad-Hoc/NNP)
+  &/CC
+  (NP systematic/JJ methods/NNS)
+  )/)
+  There/EX
+  mainly/RB
+  four/CD
+  (NP error/NN recovery/NN strategies/NNS)
+  :/:
+  (NP
+    Panic/NNP
+    mode/NN
+    Phrase/NNP
+    level/NN
+    recovery/NN
+    Error/NNP
+    production/NN
+    Global/NNP
+    generation/NN
+    Prof./NNP
+    Jay/NNP
+    R/NNP
+    Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  4/CD
+  (NP –/NNP Error/NNP Recovery/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Panic/NNP mode/NN)
+  In/IN
+  (NP method/NN)
+  discovering/VBG
+  (NP error/NN)
+  ,/,
+  (NP parser/NN discards/NNS)
+  input/VBP
+  symbol/VB
+  one/CD
+  (NP time/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Typical semantic phase errors', 'Incompatible types operands Undeclared', 'actual argument', 'formal argument Example', 'id1=id2+id3', 'Note', 'id1', 'id2', 'Directly', 'multiplication', 'due incompatible types variables', 'Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Error Recovery ‹', '› Error recovery strategies', 'Ad-Hoc', 'systematic methods', 'recovery strategies', 'Ad-Hoc', 'systematic methods', 'error recovery strategies', 'Panic mode Phrase level recovery Error production Global generation Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Error Recovery ‹', '› Panic mode', 'method', 'error', 'parser discards', 'time']
+
+>> Named Entities are: 
+ [('GPE', 'Typical'), ('ORGANIZATION', 'Directly'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit'), ('PERSON', 'Phrase'), ('PERSON', 'Error'), ('PERSON', 'Global'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Typical', 'typic'), ('semantic', 'semant'), ('phase', 'phase'), ('errors', 'error'), (':', ':'), ('Incompatible', 'incompat'), ('types', 'type'), ('operands', 'operand'), ('Undeclared', 'undeclar'), ('variable', 'variabl'), ('Not', 'not'), ('matching', 'match'), ('actual', 'actual'), ('argument', 'argument'), ('formal', 'formal'), ('argument', 'argument'), ('Example', 'exampl'), (':', ':'), ('id1=id2+id3', 'id1=id2+id3'), ('*', '*'), ('60', '60'), ('(', '('), ('Note', 'note'), (':', ':'), ('id1', 'id1'), (',', ','), ('id2', 'id2'), (',', ','), ('id3', 'id3'), ('real', 'real'), (')', ')'), ('(', '('), ('Directly', 'directli'), ('perform', 'perform'), ('multiplication', 'multipl'), ('due', 'due'), ('incompatible', 'incompat'), ('types', 'type'), ('variables', 'variabl'), (')', ')'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Error', 'error'), ('recovery', 'recoveri'), ('strategies', 'strategi'), ('(', '('), ('Ad-Hoc', 'ad-hoc'), ('&', '&'), ('systematic', 'systemat'), ('methods', 'method'), (')', ')'), ('Error', 'error'), ('recovery', 'recoveri'), ('strategies', 'strategi'), ('(', '('), ('Ad-Hoc', 'ad-hoc'), ('&', '&'), ('systematic', 'systemat'), ('methods', 'method'), (')', ')'), ('There', 'there'), ('mainly', 'mainli'), ('four', 'four'), ('error', 'error'), ('recovery', 'recoveri'), ('strategies', 'strategi'), (':', ':'), ('Panic', 'panic'), ('mode', 'mode'), ('Phrase', 'phrase'), ('level', 'level'), ('recovery', 'recoveri'), ('Error', 'error'), ('production', 'product'), ('Global', 'global'), ('generation', 'gener'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Panic', 'panic'), ('mode', 'mode'), ('In', 'in'), ('method', 'method'), ('discovering', 'discov'), ('error', 'error'), (',', ','), ('parser', 'parser'), ('discards', 'discard'), ('input', 'input'), ('symbol', 'symbol'), ('one', 'one'), ('time', 'time'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Typical', 'typic'), ('semantic', 'semant'), ('phase', 'phase'), ('errors', 'error'), (':', ':'), ('Incompatible', 'incompat'), ('types', 'type'), ('operands', 'operand'), ('Undeclared', 'undeclar'), ('variable', 'variabl'), ('Not', 'not'), ('matching', 'match'), ('actual', 'actual'), ('argument', 'argument'), ('formal', 'formal'), ('argument', 'argument'), ('Example', 'exampl'), (':', ':'), ('id1=id2+id3', 'id1=id2+id3'), ('*', '*'), ('60', '60'), ('(', '('), ('Note', 'note'), (':', ':'), ('id1', 'id1'), (',', ','), ('id2', 'id2'), (',', ','), ('id3', 'id3'), ('real', 'real'), (')', ')'), ('(', '('), ('Directly', 'direct'), ('perform', 'perform'), ('multiplication', 'multipl'), ('due', 'due'), ('incompatible', 'incompat'), ('types', 'type'), ('variables', 'variabl'), (')', ')'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Error', 'error'), ('recovery', 'recoveri'), ('strategies', 'strategi'), ('(', '('), ('Ad-Hoc', 'ad-hoc'), ('&', '&'), ('systematic', 'systemat'), ('methods', 'method'), (')', ')'), ('Error', 'error'), ('recovery', 'recoveri'), ('strategies', 'strategi'), ('(', '('), ('Ad-Hoc', 'ad-hoc'), ('&', '&'), ('systematic', 'systemat'), ('methods', 'method'), (')', ')'), ('There', 'there'), ('mainly', 'main'), ('four', 'four'), ('error', 'error'), ('recovery', 'recoveri'), ('strategies', 'strategi'), (':', ':'), ('Panic', 'panic'), ('mode', 'mode'), ('Phrase', 'phrase'), ('level', 'level'), ('recovery', 'recoveri'), ('Error', 'error'), ('production', 'product'), ('Global', 'global'), ('generation', 'generat'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Panic', 'panic'), ('mode', 'mode'), ('In', 'in'), ('method', 'method'), ('discovering', 'discov'), ('error', 'error'), (',', ','), ('parser', 'parser'), ('discards', 'discard'), ('input', 'input'), ('symbol', 'symbol'), ('one', 'one'), ('time', 'time'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Typical', 'Typical'), ('semantic', 'semantic'), ('phase', 'phase'), ('errors', 'error'), (':', ':'), ('Incompatible', 'Incompatible'), ('types', 'type'), ('operands', 'operand'), ('Undeclared', 'Undeclared'), ('variable', 'variable'), ('Not', 'Not'), ('matching', 'matching'), ('actual', 'actual'), ('argument', 'argument'), ('formal', 'formal'), ('argument', 'argument'), ('Example', 'Example'), (':', ':'), ('id1=id2+id3', 'id1=id2+id3'), ('*', '*'), ('60', '60'), ('(', '('), ('Note', 'Note'), (':', ':'), ('id1', 'id1'), (',', ','), ('id2', 'id2'), (',', ','), ('id3', 'id3'), ('real', 'real'), (')', ')'), ('(', '('), ('Directly', 'Directly'), ('perform', 'perform'), ('multiplication', 'multiplication'), ('due', 'due'), ('incompatible', 'incompatible'), ('types', 'type'), ('variables', 'variable'), (')', ')'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('4', '4'), ('–', '–'), ('Error', 'Error'), ('Recovery', 'Recovery'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Error', 'Error'), ('recovery', 'recovery'), ('strategies', 'strategy'), ('(', '('), ('Ad-Hoc', 'Ad-Hoc'), ('&', '&'), ('systematic', 'systematic'), ('methods', 'method'), (')', ')'), ('Error', 'Error'), ('recovery', 'recovery'), ('strategies', 'strategy'), ('(', '('), ('Ad-Hoc', 'Ad-Hoc'), ('&', '&'), ('systematic', 'systematic'), ('methods', 'method'), (')', ')'), ('There', 'There'), ('mainly', 'mainly'), ('four', 'four'), ('error', 'error'), ('recovery', 'recovery'), ('strategies', 'strategy'), (':', ':'), ('Panic', 'Panic'), ('mode', 'mode'), ('Phrase', 'Phrase'), ('level', 'level'), ('recovery', 'recovery'), ('Error', 'Error'), ('production', 'production'), ('Global', 'Global'), ('generation', 'generation'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('4', '4'), ('–', '–'), ('Error', 'Error'), ('Recovery', 'Recovery'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Panic', 'Panic'), ('mode', 'mode'), ('In', 'In'), ('method', 'method'), ('discovering', 'discovering'), ('error', 'error'), (',', ','), ('parser', 'parser'), ('discards', 'discard'), ('input', 'input'), ('symbol', 'symbol'), ('one', 'one'), ('time', 'time'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+This process is continued until one of a designated set of synchronizing tokens is found. 
+
+
+>> Tokens are: 
+ ['This', 'process', 'continued', 'one', 'designated', 'set', 'synchronizing', 'tokens', 'found', '.']
+
+>> Bigrams are: 
+ [('This', 'process'), ('process', 'continued'), ('continued', 'one'), ('one', 'designated'), ('designated', 'set'), ('set', 'synchronizing'), ('synchronizing', 'tokens'), ('tokens', 'found'), ('found', '.')]
+
+>> Trigrams are: 
+ [('This', 'process', 'continued'), ('process', 'continued', 'one'), ('continued', 'one', 'designated'), ('one', 'designated', 'set'), ('designated', 'set', 'synchronizing'), ('set', 'synchronizing', 'tokens'), ('synchronizing', 'tokens', 'found'), ('tokens', 'found', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('process', 'NN'), ('continued', 'VBD'), ('one', 'CD'), ('designated', 'VBN'), ('set', 'NN'), ('synchronizing', 'VBG'), ('tokens', 'NNS'), ('found', 'VBN'), ('.', '.')]
+
+ (S
+  (NP This/DT process/NN)
+  continued/VBD
+  one/CD
+  designated/VBN
+  (NP set/NN)
+  synchronizing/VBG
+  (NP tokens/NNS)
+  found/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['This process', 'set', 'tokens']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('process', 'process'), ('continued', 'continu'), ('one', 'one'), ('designated', 'design'), ('set', 'set'), ('synchronizing', 'synchron'), ('tokens', 'token'), ('found', 'found'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('process', 'process'), ('continued', 'continu'), ('one', 'one'), ('designated', 'design'), ('set', 'set'), ('synchronizing', 'synchron'), ('tokens', 'token'), ('found', 'found'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('process', 'process'), ('continued', 'continued'), ('one', 'one'), ('designated', 'designated'), ('set', 'set'), ('synchronizing', 'synchronizing'), ('tokens', 'token'), ('found', 'found'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+Synchronizing tokens are delimiters such as semicolon or end. 
+
+
+>> Tokens are: 
+ ['Synchronizing', 'tokens', 'delimiters', 'semicolon', 'end', '.']
+
+>> Bigrams are: 
+ [('Synchronizing', 'tokens'), ('tokens', 'delimiters'), ('delimiters', 'semicolon'), ('semicolon', 'end'), ('end', '.')]
+
+>> Trigrams are: 
+ [('Synchronizing', 'tokens', 'delimiters'), ('tokens', 'delimiters', 'semicolon'), ('delimiters', 'semicolon', 'end'), ('semicolon', 'end', '.')]
+
+>> POS Tags are: 
+ [('Synchronizing', 'VBG'), ('tokens', 'NNS'), ('delimiters', 'NNS'), ('semicolon', 'VBP'), ('end', 'NN'), ('.', '.')]
+
+ (S
+  Synchronizing/VBG
+  (NP tokens/NNS delimiters/NNS)
+  semicolon/VBP
+  (NP end/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['tokens delimiters', 'end']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Synchronizing', 'synchron'), ('tokens', 'token'), ('delimiters', 'delimit'), ('semicolon', 'semicolon'), ('end', 'end'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Synchronizing', 'synchron'), ('tokens', 'token'), ('delimiters', 'delimit'), ('semicolon', 'semicolon'), ('end', 'end'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Synchronizing', 'Synchronizing'), ('tokens', 'token'), ('delimiters', 'delimiters'), ('semicolon', 'semicolon'), ('end', 'end'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+These tokens indicate an end of the statement. 
+
+
+>> Tokens are: 
+ ['These', 'tokens', 'indicate', 'end', 'statement', '.']
+
+>> Bigrams are: 
+ [('These', 'tokens'), ('tokens', 'indicate'), ('indicate', 'end'), ('end', 'statement'), ('statement', '.')]
+
+>> Trigrams are: 
+ [('These', 'tokens', 'indicate'), ('tokens', 'indicate', 'end'), ('indicate', 'end', 'statement'), ('end', 'statement', '.')]
+
+>> POS Tags are: 
+ [('These', 'DT'), ('tokens', 'NNS'), ('indicate', 'VBP'), ('end', 'JJ'), ('statement', 'NN'), ('.', '.')]
+
+ (S
+  (NP These/DT tokens/NNS)
+  indicate/VBP
+  (NP end/JJ statement/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['These tokens', 'end statement']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('These', 'these'), ('tokens', 'token'), ('indicate', 'indic'), ('end', 'end'), ('statement', 'statement'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('These', 'these'), ('tokens', 'token'), ('indicate', 'indic'), ('end', 'end'), ('statement', 'statement'), ('.', '.')]
+
+>> Lemmatization: 
+ [('These', 'These'), ('tokens', 'token'), ('indicate', 'indicate'), ('end', 'end'), ('statement', 'statement'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+If there is less number of errors in the same statement then this strategy is best choice. 
+
+
+>> Tokens are: 
+ ['If', 'less', 'number', 'errors', 'statement', 'strategy', 'best', 'choice', '.']
+
+>> Bigrams are: 
+ [('If', 'less'), ('less', 'number'), ('number', 'errors'), ('errors', 'statement'), ('statement', 'strategy'), ('strategy', 'best'), ('best', 'choice'), ('choice', '.')]
+
+>> Trigrams are: 
+ [('If', 'less', 'number'), ('less', 'number', 'errors'), ('number', 'errors', 'statement'), ('errors', 'statement', 'strategy'), ('statement', 'strategy', 'best'), ('strategy', 'best', 'choice'), ('best', 'choice', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('less', 'JJR'), ('number', 'NN'), ('errors', 'NNS'), ('statement', 'NN'), ('strategy', 'NN'), ('best', 'RBS'), ('choice', 'NN'), ('.', '.')]
+
+ (S
+  If/IN
+  less/JJR
+  (NP number/NN errors/NNS statement/NN strategy/NN)
+  best/RBS
+  (NP choice/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['number errors statement strategy', 'choice']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('less', 'less'), ('number', 'number'), ('errors', 'error'), ('statement', 'statement'), ('strategy', 'strategi'), ('best', 'best'), ('choice', 'choic'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('less', 'less'), ('number', 'number'), ('errors', 'error'), ('statement', 'statement'), ('strategy', 'strategi'), ('best', 'best'), ('choice', 'choic'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('less', 'le'), ('number', 'number'), ('errors', 'error'), ('statement', 'statement'), ('strategy', 'strategy'), ('best', 'best'), ('choice', 'choice'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+fi ( )  { } Scan entire line otherwise scanner will return fi as valid identifier    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Phrase level recovery In this method, on discovering an error parser performs local correction on remaining input. 
+
+
+>> Tokens are: 
+ ['fi', '(', ')', '{', '}', 'Scan', 'entire', 'line', 'otherwise', 'scanner', 'return', 'fi', 'valid', 'identifier', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹', '#', '›', 'Phrase', 'level', 'recovery', 'In', 'method', ',', 'discovering', 'error', 'parser', 'performs', 'local', 'correction', 'remaining', 'input', '.']
+
+>> Bigrams are: 
+ [('fi', '('), ('(', ')'), (')', '{'), ('{', '}'), ('}', 'Scan'), ('Scan', 'entire'), ('entire', 'line'), ('line', 'otherwise'), ('otherwise', 'scanner'), ('scanner', 'return'), ('return', 'fi'), ('fi', 'valid'), ('valid', 'identifier'), ('identifier', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '4'), ('4', '–'), ('–', 'Error'), ('Error', 'Recovery'), ('Recovery', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Phrase'), ('Phrase', 'level'), ('level', 'recovery'), ('recovery', 'In'), ('In', 'method'), ('method', ','), (',', 'discovering'), ('discovering', 'error'), ('error', 'parser'), ('parser', 'performs'), ('performs', 'local'), ('local', 'correction'), ('correction', 'remaining'), ('remaining', 'input'), ('input', '.')]
+
+>> Trigrams are: 
+ [('fi', '(', ')'), ('(', ')', '{'), (')', '{', '}'), ('{', '}', 'Scan'), ('}', 'Scan', 'entire'), ('Scan', 'entire', 'line'), ('entire', 'line', 'otherwise'), ('line', 'otherwise', 'scanner'), ('otherwise', 'scanner', 'return'), ('scanner', 'return', 'fi'), ('return', 'fi', 'valid'), ('fi', 'valid', 'identifier'), ('valid', 'identifier', 'Prof.'), ('identifier', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '4'), ('Unit', '4', '–'), ('4', '–', 'Error'), ('–', 'Error', 'Recovery'), ('Error', 'Recovery', '‹'), ('Recovery', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Phrase'), ('›', 'Phrase', 'level'), ('Phrase', 'level', 'recovery'), ('level', 'recovery', 'In'), ('recovery', 'In', 'method'), ('In', 'method', ','), ('method', ',', 'discovering'), (',', 'discovering', 'error'), ('discovering', 'error', 'parser'), ('error', 'parser', 'performs'), ('parser', 'performs', 'local'), ('performs', 'local', 'correction'), ('local', 'correction', 'remaining'), ('correction', 'remaining', 'input'), ('remaining', 'input', '.')]
+
+>> POS Tags are: 
+ [('fi', 'NN'), ('(', '('), (')', ')'), ('{', '('), ('}', ')'), ('Scan', 'NNP'), ('entire', 'JJ'), ('line', 'NN'), ('otherwise', 'RB'), ('scanner', 'JJ'), ('return', 'NN'), ('fi', 'NN'), ('valid', 'JJ'), ('identifier', 'NN'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Error', 'NNP'), ('Recovery', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Phrase', 'NNP'), ('level', 'NN'), ('recovery', 'NN'), ('In', 'IN'), ('method', 'NN'), (',', ','), ('discovering', 'VBG'), ('error', 'NN'), ('parser', 'NN'), ('performs', 'NNS'), ('local', 'JJ'), ('correction', 'NN'), ('remaining', 'VBG'), ('input', 'NN'), ('.', '.')]
+
+ (S
+  (NP fi/NN)
+  (/(
+  )/)
+  {/(
+  }/)
+  (NP Scan/NNP)
+  (NP entire/JJ line/NN)
+  otherwise/RB
+  (NP scanner/JJ return/NN fi/NN)
+  (NP valid/JJ identifier/NN Prof./NNP Jay/NNP R/NNP Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  4/CD
+  (NP –/NNP Error/NNP Recovery/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Phrase/NNP level/NN recovery/NN)
+  In/IN
+  (NP method/NN)
+  ,/,
+  discovering/VBG
+  (NP error/NN parser/NN performs/NNS)
+  (NP local/JJ correction/NN)
+  remaining/VBG
+  (NP input/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['fi', 'Scan', 'entire line', 'scanner return fi', 'valid identifier Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Error Recovery ‹', '› Phrase level recovery', 'method', 'error parser performs', 'local correction', 'input']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('fi', 'fi'), ('(', '('), (')', ')'), ('{', '{'), ('}', '}'), ('Scan', 'scan'), ('entire', 'entir'), ('line', 'line'), ('otherwise', 'otherwis'), ('scanner', 'scanner'), ('return', 'return'), ('fi', 'fi'), ('valid', 'valid'), ('identifier', 'identifi'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Phrase', 'phrase'), ('level', 'level'), ('recovery', 'recoveri'), ('In', 'in'), ('method', 'method'), (',', ','), ('discovering', 'discov'), ('error', 'error'), ('parser', 'parser'), ('performs', 'perform'), ('local', 'local'), ('correction', 'correct'), ('remaining', 'remain'), ('input', 'input'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('fi', 'fi'), ('(', '('), (')', ')'), ('{', '{'), ('}', '}'), ('Scan', 'scan'), ('entire', 'entir'), ('line', 'line'), ('otherwise', 'otherwis'), ('scanner', 'scanner'), ('return', 'return'), ('fi', 'fi'), ('valid', 'valid'), ('identifier', 'identifi'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Phrase', 'phrase'), ('level', 'level'), ('recovery', 'recoveri'), ('In', 'in'), ('method', 'method'), (',', ','), ('discovering', 'discov'), ('error', 'error'), ('parser', 'parser'), ('performs', 'perform'), ('local', 'local'), ('correction', 'correct'), ('remaining', 'remain'), ('input', 'input'), ('.', '.')]
+
+>> Lemmatization: 
+ [('fi', 'fi'), ('(', '('), (')', ')'), ('{', '{'), ('}', '}'), ('Scan', 'Scan'), ('entire', 'entire'), ('line', 'line'), ('otherwise', 'otherwise'), ('scanner', 'scanner'), ('return', 'return'), ('fi', 'fi'), ('valid', 'valid'), ('identifier', 'identifier'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('4', '4'), ('–', '–'), ('Error', 'Error'), ('Recovery', 'Recovery'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Phrase', 'Phrase'), ('level', 'level'), ('recovery', 'recovery'), ('In', 'In'), ('method', 'method'), (',', ','), ('discovering', 'discovering'), ('error', 'error'), ('parser', 'parser'), ('performs', 'performs'), ('local', 'local'), ('correction', 'correction'), ('remaining', 'remaining'), ('input', 'input'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+The local correction can be replacing comma by semicolon, deletion of semicolons or inserting missing semicolon. 
+
+
+>> Tokens are: 
+ ['The', 'local', 'correction', 'replacing', 'comma', 'semicolon', ',', 'deletion', 'semicolons', 'inserting', 'missing', 'semicolon', '.']
+
+>> Bigrams are: 
+ [('The', 'local'), ('local', 'correction'), ('correction', 'replacing'), ('replacing', 'comma'), ('comma', 'semicolon'), ('semicolon', ','), (',', 'deletion'), ('deletion', 'semicolons'), ('semicolons', 'inserting'), ('inserting', 'missing'), ('missing', 'semicolon'), ('semicolon', '.')]
+
+>> Trigrams are: 
+ [('The', 'local', 'correction'), ('local', 'correction', 'replacing'), ('correction', 'replacing', 'comma'), ('replacing', 'comma', 'semicolon'), ('comma', 'semicolon', ','), ('semicolon', ',', 'deletion'), (',', 'deletion', 'semicolons'), ('deletion', 'semicolons', 'inserting'), ('semicolons', 'inserting', 'missing'), ('inserting', 'missing', 'semicolon'), ('missing', 'semicolon', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('local', 'JJ'), ('correction', 'NN'), ('replacing', 'VBG'), ('comma', 'NN'), ('semicolon', 'NN'), (',', ','), ('deletion', 'NN'), ('semicolons', 'NNS'), ('inserting', 'VBG'), ('missing', 'VBG'), ('semicolon', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT local/JJ correction/NN)
+  replacing/VBG
+  (NP comma/NN semicolon/NN)
+  ,/,
+  (NP deletion/NN semicolons/NNS)
+  inserting/VBG
+  missing/VBG
+  (NP semicolon/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The local correction', 'comma semicolon', 'deletion semicolons', 'semicolon']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('local', 'local'), ('correction', 'correct'), ('replacing', 'replac'), ('comma', 'comma'), ('semicolon', 'semicolon'), (',', ','), ('deletion', 'delet'), ('semicolons', 'semicolon'), ('inserting', 'insert'), ('missing', 'miss'), ('semicolon', 'semicolon'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('local', 'local'), ('correction', 'correct'), ('replacing', 'replac'), ('comma', 'comma'), ('semicolon', 'semicolon'), (',', ','), ('deletion', 'delet'), ('semicolons', 'semicolon'), ('inserting', 'insert'), ('missing', 'miss'), ('semicolon', 'semicolon'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('local', 'local'), ('correction', 'correction'), ('replacing', 'replacing'), ('comma', 'comma'), ('semicolon', 'semicolon'), (',', ','), ('deletion', 'deletion'), ('semicolons', 'semicolon'), ('inserting', 'inserting'), ('missing', 'missing'), ('semicolon', 'semicolon'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+This type of local correction is decided by compiler designer. 
+
+
+>> Tokens are: 
+ ['This', 'type', 'local', 'correction', 'decided', 'compiler', 'designer', '.']
+
+>> Bigrams are: 
+ [('This', 'type'), ('type', 'local'), ('local', 'correction'), ('correction', 'decided'), ('decided', 'compiler'), ('compiler', 'designer'), ('designer', '.')]
+
+>> Trigrams are: 
+ [('This', 'type', 'local'), ('type', 'local', 'correction'), ('local', 'correction', 'decided'), ('correction', 'decided', 'compiler'), ('decided', 'compiler', 'designer'), ('compiler', 'designer', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('type', 'NN'), ('local', 'JJ'), ('correction', 'NN'), ('decided', 'VBD'), ('compiler', 'NN'), ('designer', 'NN'), ('.', '.')]
+
+ (S
+  (NP This/DT type/NN)
+  (NP local/JJ correction/NN)
+  decided/VBD
+  (NP compiler/NN designer/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['This type', 'local correction', 'compiler designer']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('type', 'type'), ('local', 'local'), ('correction', 'correct'), ('decided', 'decid'), ('compiler', 'compil'), ('designer', 'design'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('type', 'type'), ('local', 'local'), ('correction', 'correct'), ('decided', 'decid'), ('compiler', 'compil'), ('designer', 'design'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('type', 'type'), ('local', 'local'), ('correction', 'correction'), ('decided', 'decided'), ('compiler', 'compiler'), ('designer', 'designer'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+This method is used in many error-repairing compilers. 
+
+
+>> Tokens are: 
+ ['This', 'method', 'used', 'many', 'error-repairing', 'compilers', '.']
+
+>> Bigrams are: 
+ [('This', 'method'), ('method', 'used'), ('used', 'many'), ('many', 'error-repairing'), ('error-repairing', 'compilers'), ('compilers', '.')]
+
+>> Trigrams are: 
+ [('This', 'method', 'used'), ('method', 'used', 'many'), ('used', 'many', 'error-repairing'), ('many', 'error-repairing', 'compilers'), ('error-repairing', 'compilers', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('method', 'NN'), ('used', 'VBD'), ('many', 'JJ'), ('error-repairing', 'JJ'), ('compilers', 'NNS'), ('.', '.')]
+
+ (S
+  (NP This/DT method/NN)
+  used/VBD
+  (NP many/JJ error-repairing/JJ compilers/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['This method', 'many error-repairing compilers']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('method', 'method'), ('used', 'use'), ('many', 'mani'), ('error-repairing', 'error-repair'), ('compilers', 'compil'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('method', 'method'), ('used', 'use'), ('many', 'mani'), ('error-repairing', 'error-repair'), ('compilers', 'compil'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('method', 'method'), ('used', 'used'), ('many', 'many'), ('error-repairing', 'error-repairing'), ('compilers', 'compiler'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Error production If we have good knowledge of common errors that might be encountered, then we can augment the grammar for the corresponding language with error productions that generate the erroneous constructs. 
+
+
+>> Tokens are: 
+ ['Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹', '#', '›', 'Error', 'production', 'If', 'good', 'knowledge', 'common', 'errors', 'might', 'encountered', ',', 'augment', 'grammar', 'corresponding', 'language', 'error', 'productions', 'generate', 'erroneous', 'constructs', '.']
+
+>> Bigrams are: 
+ [('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '4'), ('4', '–'), ('–', 'Error'), ('Error', 'Recovery'), ('Recovery', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Error'), ('Error', 'production'), ('production', 'If'), ('If', 'good'), ('good', 'knowledge'), ('knowledge', 'common'), ('common', 'errors'), ('errors', 'might'), ('might', 'encountered'), ('encountered', ','), (',', 'augment'), ('augment', 'grammar'), ('grammar', 'corresponding'), ('corresponding', 'language'), ('language', 'error'), ('error', 'productions'), ('productions', 'generate'), ('generate', 'erroneous'), ('erroneous', 'constructs'), ('constructs', '.')]
+
+>> Trigrams are: 
+ [('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '4'), ('Unit', '4', '–'), ('4', '–', 'Error'), ('–', 'Error', 'Recovery'), ('Error', 'Recovery', '‹'), ('Recovery', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Error'), ('›', 'Error', 'production'), ('Error', 'production', 'If'), ('production', 'If', 'good'), ('If', 'good', 'knowledge'), ('good', 'knowledge', 'common'), ('knowledge', 'common', 'errors'), ('common', 'errors', 'might'), ('errors', 'might', 'encountered'), ('might', 'encountered', ','), ('encountered', ',', 'augment'), (',', 'augment', 'grammar'), ('augment', 'grammar', 'corresponding'), ('grammar', 'corresponding', 'language'), ('corresponding', 'language', 'error'), ('language', 'error', 'productions'), ('error', 'productions', 'generate'), ('productions', 'generate', 'erroneous'), ('generate', 'erroneous', 'constructs'), ('erroneous', 'constructs', '.')]
+
+>> POS Tags are: 
+ [('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Error', 'NNP'), ('Recovery', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Error', 'NNP'), ('production', 'NN'), ('If', 'IN'), ('good', 'JJ'), ('knowledge', 'NN'), ('common', 'JJ'), ('errors', 'NNS'), ('might', 'MD'), ('encountered', 'VB'), (',', ','), ('augment', 'JJ'), ('grammar', 'NN'), ('corresponding', 'VBG'), ('language', 'NN'), ('error', 'NN'), ('productions', 'NNS'), ('generate', 'VBP'), ('erroneous', 'JJ'), ('constructs', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Prof./NNP Jay/NNP R/NNP Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  4/CD
+  (NP –/NNP Error/NNP Recovery/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Error/NNP production/NN)
+  If/IN
+  (NP good/JJ knowledge/NN)
+  (NP common/JJ errors/NNS)
+  might/MD
+  encountered/VB
+  ,/,
+  (NP augment/JJ grammar/NN)
+  corresponding/VBG
+  (NP language/NN error/NN productions/NNS)
+  generate/VBP
+  (NP erroneous/JJ constructs/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Error Recovery ‹', '› Error production', 'good knowledge', 'common errors', 'augment grammar', 'language error productions', 'erroneous constructs']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Error', 'error'), ('production', 'product'), ('If', 'if'), ('good', 'good'), ('knowledge', 'knowledg'), ('common', 'common'), ('errors', 'error'), ('might', 'might'), ('encountered', 'encount'), (',', ','), ('augment', 'augment'), ('grammar', 'grammar'), ('corresponding', 'correspond'), ('language', 'languag'), ('error', 'error'), ('productions', 'product'), ('generate', 'gener'), ('erroneous', 'erron'), ('constructs', 'construct'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Error', 'error'), ('production', 'product'), ('If', 'if'), ('good', 'good'), ('knowledge', 'knowledg'), ('common', 'common'), ('errors', 'error'), ('might', 'might'), ('encountered', 'encount'), (',', ','), ('augment', 'augment'), ('grammar', 'grammar'), ('corresponding', 'correspond'), ('language', 'languag'), ('error', 'error'), ('productions', 'product'), ('generate', 'generat'), ('erroneous', 'erron'), ('constructs', 'construct'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('4', '4'), ('–', '–'), ('Error', 'Error'), ('Recovery', 'Recovery'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Error', 'Error'), ('production', 'production'), ('If', 'If'), ('good', 'good'), ('knowledge', 'knowledge'), ('common', 'common'), ('errors', 'error'), ('might', 'might'), ('encountered', 'encountered'), (',', ','), ('augment', 'augment'), ('grammar', 'grammar'), ('corresponding', 'corresponding'), ('language', 'language'), ('error', 'error'), ('productions', 'production'), ('generate', 'generate'), ('erroneous', 'erroneous'), ('constructs', 'construct'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+Then we use the grammar augmented by these error production to construct a parser. 
+
+
+>> Tokens are: 
+ ['Then', 'use', 'grammar', 'augmented', 'error', 'production', 'construct', 'parser', '.']
+
+>> Bigrams are: 
+ [('Then', 'use'), ('use', 'grammar'), ('grammar', 'augmented'), ('augmented', 'error'), ('error', 'production'), ('production', 'construct'), ('construct', 'parser'), ('parser', '.')]
+
+>> Trigrams are: 
+ [('Then', 'use', 'grammar'), ('use', 'grammar', 'augmented'), ('grammar', 'augmented', 'error'), ('augmented', 'error', 'production'), ('error', 'production', 'construct'), ('production', 'construct', 'parser'), ('construct', 'parser', '.')]
+
+>> POS Tags are: 
+ [('Then', 'RB'), ('use', 'NN'), ('grammar', 'NN'), ('augmented', 'VBD'), ('error', 'JJ'), ('production', 'NN'), ('construct', 'NN'), ('parser', 'NN'), ('.', '.')]
+
+ (S
+  Then/RB
+  (NP use/NN grammar/NN)
+  augmented/VBD
+  (NP error/JJ production/NN construct/NN parser/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['use grammar', 'error production construct parser']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Then', 'then'), ('use', 'use'), ('grammar', 'grammar'), ('augmented', 'augment'), ('error', 'error'), ('production', 'product'), ('construct', 'construct'), ('parser', 'parser'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Then', 'then'), ('use', 'use'), ('grammar', 'grammar'), ('augmented', 'augment'), ('error', 'error'), ('production', 'product'), ('construct', 'construct'), ('parser', 'parser'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Then', 'Then'), ('use', 'use'), ('grammar', 'grammar'), ('augmented', 'augmented'), ('error', 'error'), ('production', 'production'), ('construct', 'construct'), ('parser', 'parser'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+If error production is used then, during parsing we can generate appropriate error message and parsing can be continued. 
+
+
+>> Tokens are: 
+ ['If', 'error', 'production', 'used', ',', 'parsing', 'generate', 'appropriate', 'error', 'message', 'parsing', 'continued', '.']
+
+>> Bigrams are: 
+ [('If', 'error'), ('error', 'production'), ('production', 'used'), ('used', ','), (',', 'parsing'), ('parsing', 'generate'), ('generate', 'appropriate'), ('appropriate', 'error'), ('error', 'message'), ('message', 'parsing'), ('parsing', 'continued'), ('continued', '.')]
+
+>> Trigrams are: 
+ [('If', 'error', 'production'), ('error', 'production', 'used'), ('production', 'used', ','), ('used', ',', 'parsing'), (',', 'parsing', 'generate'), ('parsing', 'generate', 'appropriate'), ('generate', 'appropriate', 'error'), ('appropriate', 'error', 'message'), ('error', 'message', 'parsing'), ('message', 'parsing', 'continued'), ('parsing', 'continued', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('error', 'VBN'), ('production', 'NN'), ('used', 'VBN'), (',', ','), ('parsing', 'VBG'), ('generate', 'NN'), ('appropriate', 'JJ'), ('error', 'NN'), ('message', 'NN'), ('parsing', 'VBG'), ('continued', 'VBN'), ('.', '.')]
+
+ (S
+  If/IN
+  error/VBN
+  (NP production/NN)
+  used/VBN
+  ,/,
+  parsing/VBG
+  (NP generate/NN)
+  (NP appropriate/JJ error/NN message/NN)
+  parsing/VBG
+  continued/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['production', 'generate', 'appropriate error message']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('error', 'error'), ('production', 'product'), ('used', 'use'), (',', ','), ('parsing', 'pars'), ('generate', 'gener'), ('appropriate', 'appropri'), ('error', 'error'), ('message', 'messag'), ('parsing', 'pars'), ('continued', 'continu'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('error', 'error'), ('production', 'product'), ('used', 'use'), (',', ','), ('parsing', 'pars'), ('generate', 'generat'), ('appropriate', 'appropri'), ('error', 'error'), ('message', 'messag'), ('parsing', 'pars'), ('continued', 'continu'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('error', 'error'), ('production', 'production'), ('used', 'used'), (',', ','), ('parsing', 'parsing'), ('generate', 'generate'), ('appropriate', 'appropriate'), ('error', 'error'), ('message', 'message'), ('parsing', 'parsing'), ('continued', 'continued'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Global correction Given an incorrect input string x and grammar G, the algorithm will find a parse tree for a related string y, such that number of insertions, deletions and changes of token require to transform x into y is as small as possible. 
+
+
+>> Tokens are: 
+ ['Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹', '#', '›', 'Global', 'correction', 'Given', 'incorrect', 'input', 'string', 'x', 'grammar', 'G', ',', 'algorithm', 'find', 'parse', 'tree', 'related', 'string', ',', 'number', 'insertions', ',', 'deletions', 'changes', 'token', 'require', 'transform', 'x', 'small', 'possible', '.']
+
+>> Bigrams are: 
+ [('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '4'), ('4', '–'), ('–', 'Error'), ('Error', 'Recovery'), ('Recovery', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Global'), ('Global', 'correction'), ('correction', 'Given'), ('Given', 'incorrect'), ('incorrect', 'input'), ('input', 'string'), ('string', 'x'), ('x', 'grammar'), ('grammar', 'G'), ('G', ','), (',', 'algorithm'), ('algorithm', 'find'), ('find', 'parse'), ('parse', 'tree'), ('tree', 'related'), ('related', 'string'), ('string', ','), (',', 'number'), ('number', 'insertions'), ('insertions', ','), (',', 'deletions'), ('deletions', 'changes'), ('changes', 'token'), ('token', 'require'), ('require', 'transform'), ('transform', 'x'), ('x', 'small'), ('small', 'possible'), ('possible', '.')]
+
+>> Trigrams are: 
+ [('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '4'), ('Unit', '4', '–'), ('4', '–', 'Error'), ('–', 'Error', 'Recovery'), ('Error', 'Recovery', '‹'), ('Recovery', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Global'), ('›', 'Global', 'correction'), ('Global', 'correction', 'Given'), ('correction', 'Given', 'incorrect'), ('Given', 'incorrect', 'input'), ('incorrect', 'input', 'string'), ('input', 'string', 'x'), ('string', 'x', 'grammar'), ('x', 'grammar', 'G'), ('grammar', 'G', ','), ('G', ',', 'algorithm'), (',', 'algorithm', 'find'), ('algorithm', 'find', 'parse'), ('find', 'parse', 'tree'), ('parse', 'tree', 'related'), ('tree', 'related', 'string'), ('related', 'string', ','), ('string', ',', 'number'), (',', 'number', 'insertions'), ('number', 'insertions', ','), ('insertions', ',', 'deletions'), (',', 'deletions', 'changes'), ('deletions', 'changes', 'token'), ('changes', 'token', 'require'), ('token', 'require', 'transform'), ('require', 'transform', 'x'), ('transform', 'x', 'small'), ('x', 'small', 'possible'), ('small', 'possible', '.')]
+
+>> POS Tags are: 
+ [('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Error', 'NNP'), ('Recovery', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Global', 'NNP'), ('correction', 'NN'), ('Given', 'NNP'), ('incorrect', 'NN'), ('input', 'NN'), ('string', 'VBG'), ('x', 'JJ'), ('grammar', 'NN'), ('G', 'NNP'), (',', ','), ('algorithm', 'JJ'), ('find', 'VBP'), ('parse', 'JJ'), ('tree', 'NN'), ('related', 'VBN'), ('string', 'NN'), (',', ','), ('number', 'NN'), ('insertions', 'NNS'), (',', ','), ('deletions', 'NNS'), ('changes', 'NNS'), ('token', 'VBP'), ('require', 'NN'), ('transform', 'NN'), ('x', 'NNP'), ('small', 'JJ'), ('possible', 'JJ'), ('.', '.')]
+
+ (S
+  (NP Prof./NNP Jay/NNP R/NNP Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  4/CD
+  (NP –/NNP Error/NNP Recovery/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Global/NNP correction/NN Given/NNP incorrect/NN input/NN)
+  string/VBG
+  (NP x/JJ grammar/NN G/NNP)
+  ,/,
+  algorithm/JJ
+  find/VBP
+  (NP parse/JJ tree/NN)
+  related/VBN
+  (NP string/NN)
+  ,/,
+  (NP number/NN insertions/NNS)
+  ,/,
+  (NP deletions/NNS changes/NNS)
+  token/VBP
+  (NP require/NN transform/NN x/NNP)
+  small/JJ
+  possible/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Error Recovery ‹', '› Global correction Given incorrect input', 'x grammar G', 'parse tree', 'string', 'number insertions', 'deletions changes', 'require transform x']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Global', 'global'), ('correction', 'correct'), ('Given', 'given'), ('incorrect', 'incorrect'), ('input', 'input'), ('string', 'string'), ('x', 'x'), ('grammar', 'grammar'), ('G', 'g'), (',', ','), ('algorithm', 'algorithm'), ('find', 'find'), ('parse', 'pars'), ('tree', 'tree'), ('related', 'relat'), ('string', 'string'), (',', ','), ('number', 'number'), ('insertions', 'insert'), (',', ','), ('deletions', 'delet'), ('changes', 'chang'), ('token', 'token'), ('require', 'requir'), ('transform', 'transform'), ('x', 'x'), ('small', 'small'), ('possible', 'possibl'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Global', 'global'), ('correction', 'correct'), ('Given', 'given'), ('incorrect', 'incorrect'), ('input', 'input'), ('string', 'string'), ('x', 'x'), ('grammar', 'grammar'), ('G', 'g'), (',', ','), ('algorithm', 'algorithm'), ('find', 'find'), ('parse', 'pars'), ('tree', 'tree'), ('related', 'relat'), ('string', 'string'), (',', ','), ('number', 'number'), ('insertions', 'insert'), (',', ','), ('deletions', 'delet'), ('changes', 'chang'), ('token', 'token'), ('require', 'requir'), ('transform', 'transform'), ('x', 'x'), ('small', 'small'), ('possible', 'possibl'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('4', '4'), ('–', '–'), ('Error', 'Error'), ('Recovery', 'Recovery'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Global', 'Global'), ('correction', 'correction'), ('Given', 'Given'), ('incorrect', 'incorrect'), ('input', 'input'), ('string', 'string'), ('x', 'x'), ('grammar', 'grammar'), ('G', 'G'), (',', ','), ('algorithm', 'algorithm'), ('find', 'find'), ('parse', 'parse'), ('tree', 'tree'), ('related', 'related'), ('string', 'string'), (',', ','), ('number', 'number'), ('insertions', 'insertion'), (',', ','), ('deletions', 'deletion'), ('changes', 'change'), ('token', 'token'), ('require', 'require'), ('transform', 'transform'), ('x', 'x'), ('small', 'small'), ('possible', 'possible'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+Such methods increase time and space requirements at parsing time. 
+
+
+>> Tokens are: 
+ ['Such', 'methods', 'increase', 'time', 'space', 'requirements', 'parsing', 'time', '.']
+
+>> Bigrams are: 
+ [('Such', 'methods'), ('methods', 'increase'), ('increase', 'time'), ('time', 'space'), ('space', 'requirements'), ('requirements', 'parsing'), ('parsing', 'time'), ('time', '.')]
+
+>> Trigrams are: 
+ [('Such', 'methods', 'increase'), ('methods', 'increase', 'time'), ('increase', 'time', 'space'), ('time', 'space', 'requirements'), ('space', 'requirements', 'parsing'), ('requirements', 'parsing', 'time'), ('parsing', 'time', '.')]
+
+>> POS Tags are: 
+ [('Such', 'JJ'), ('methods', 'NNS'), ('increase', 'NN'), ('time', 'NN'), ('space', 'NN'), ('requirements', 'NNS'), ('parsing', 'VBG'), ('time', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    Such/JJ
+    methods/NNS
+    increase/NN
+    time/NN
+    space/NN
+    requirements/NNS)
+  parsing/VBG
+  (NP time/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Such methods increase time space requirements', 'time']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Such', 'such'), ('methods', 'method'), ('increase', 'increas'), ('time', 'time'), ('space', 'space'), ('requirements', 'requir'), ('parsing', 'pars'), ('time', 'time'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Such', 'such'), ('methods', 'method'), ('increase', 'increas'), ('time', 'time'), ('space', 'space'), ('requirements', 'requir'), ('parsing', 'pars'), ('time', 'time'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Such', 'Such'), ('methods', 'method'), ('increase', 'increase'), ('time', 'time'), ('space', 'space'), ('requirements', 'requirement'), ('parsing', 'parsing'), ('time', 'time'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+Global correction is thus simply a theoretical concept. 
+
+
+>> Tokens are: 
+ ['Global', 'correction', 'thus', 'simply', 'theoretical', 'concept', '.']
+
+>> Bigrams are: 
+ [('Global', 'correction'), ('correction', 'thus'), ('thus', 'simply'), ('simply', 'theoretical'), ('theoretical', 'concept'), ('concept', '.')]
+
+>> Trigrams are: 
+ [('Global', 'correction', 'thus'), ('correction', 'thus', 'simply'), ('thus', 'simply', 'theoretical'), ('simply', 'theoretical', 'concept'), ('theoretical', 'concept', '.')]
+
+>> POS Tags are: 
+ [('Global', 'JJ'), ('correction', 'NN'), ('thus', 'RB'), ('simply', 'RB'), ('theoretical', 'JJ'), ('concept', 'NN'), ('.', '.')]
+
+ (S
+  (NP Global/JJ correction/NN)
+  thus/RB
+  simply/RB
+  (NP theoretical/JJ concept/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Global correction', 'theoretical concept']
+
+>> Named Entities are: 
+ [('GPE', 'Global')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Global', 'global'), ('correction', 'correct'), ('thus', 'thu'), ('simply', 'simpli'), ('theoretical', 'theoret'), ('concept', 'concept'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Global', 'global'), ('correction', 'correct'), ('thus', 'thus'), ('simply', 'simpli'), ('theoretical', 'theoret'), ('concept', 'concept'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Global', 'Global'), ('correction', 'correction'), ('thus', 'thus'), ('simply', 'simply'), ('theoretical', 'theoretical'), ('concept', 'concept'), ('.', '.')]
+
+
+
+============================ Sentence 23 =============================
+
+Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Thank You                                       /docProps/thumbnail.jpeg 
+
+
+>> Tokens are: 
+ ['Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹', '#', '›', 'Thank', 'You', '/docProps/thumbnail.jpeg']
+
+>> Bigrams are: 
+ [('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '4'), ('4', '–'), ('–', 'Error'), ('Error', 'Recovery'), ('Recovery', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Thank'), ('Thank', 'You'), ('You', '/docProps/thumbnail.jpeg')]
+
+>> Trigrams are: 
+ [('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '4'), ('Unit', '4', '–'), ('4', '–', 'Error'), ('–', 'Error', 'Recovery'), ('Error', 'Recovery', '‹'), ('Recovery', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Thank'), ('›', 'Thank', 'You'), ('Thank', 'You', '/docProps/thumbnail.jpeg')]
+
+>> POS Tags are: 
+ [('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Error', 'NNP'), ('Recovery', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Thank', 'NNP'), ('You', 'PRP'), ('/docProps/thumbnail.jpeg', 'VBP')]
+
+ (S
+  (NP Prof./NNP Jay/NNP R/NNP Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  4/CD
+  (NP –/NNP Error/NNP Recovery/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Thank/NNP)
+  You/PRP
+  /docProps/thumbnail.jpeg/VBP) 
+
+
+>> Noun Phrases are: 
+ ['Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Error Recovery ‹', '› Thank']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Thank', 'thank'), ('You', 'you'), ('/docProps/thumbnail.jpeg', '/docprops/thumbnail.jpeg')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '–'), ('Error', 'error'), ('Recovery', 'recoveri'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Thank', 'thank'), ('You', 'you'), ('/docProps/thumbnail.jpeg', '/docprops/thumbnail.jpeg')]
+
+>> Lemmatization: 
+ [('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('4', '4'), ('–', '–'), ('Error', 'Error'), ('Recovery', 'Recovery'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Thank', 'Thank'), ('You', 'You'), ('/docProps/thumbnail.jpeg', '/docProps/thumbnail.jpeg')]
+

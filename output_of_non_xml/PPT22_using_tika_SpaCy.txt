@@ -1,0 +1,1027 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709) 
+
+
+>> Tokens are: 
+[OOPC++, UNIT-1,   , Prof., Rupesh, G., Vaishnav, rupesh.vaishnav@darshan.ac.in, 94280, -, 37452, Information, &, Network, Security, (, 2170709, )] 
+
+>> PoS Tags are: 
+[('OOPC++', 'INTJ'), ('UNIT-1', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Rupesh', 'PROPN'), ('G.', 'PROPN'), ('Vaishnav', 'PROPN'), ('rupesh.vaishnav@darshan.ac.in', 'NUM'), ('94280', 'NUM'), ('-', 'SYM'), ('37452', 'NUM'), ('Information', 'PROPN'), ('&', 'CCONJ'), ('Network', 'PROPN'), ('Security', 'PROPN'), ('(', 'PUNCT'), ('2170709', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('OOPC++', 'intj'), ('UNIT-1', 'ROOT'), ('  ', 'nummod'), ('Prof.', 'compound'), ('Rupesh', 'compound'), ('G.', 'compound'), ('Vaishnav', 'dobj'), ('rupesh.vaishnav@darshan.ac.in', 'appos'), ('94280', 'nummod'), ('-', 'punct'), ('37452', 'nummod'), ('Information', 'nmod'), ('&', 'cc'), ('Network', 'conj'), ('Security', 'appos'), ('(', 'punct'), ('2170709', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[OOPC++, UNIT-1], [UNIT-1,   ], [  , Prof.], [Prof., Rupesh], [Rupesh, G.], [G., Vaishnav], [Vaishnav, rupesh.vaishnav@darshan.ac.in], [rupesh.vaishnav@darshan.ac.in, 94280], [94280, -], [-, 37452], [37452, Information], [Information, &], [&, Network], [Network, Security], [Security, (], [(, 2170709], [2170709, )]]
+
+>> Trigrams: 
+[[OOPC++, UNIT-1,   ], [UNIT-1,   , Prof.], [  , Prof., Rupesh], [Prof., Rupesh, G.], [Rupesh, G., Vaishnav], [G., Vaishnav, rupesh.vaishnav@darshan.ac.in], [Vaishnav, rupesh.vaishnav@darshan.ac.in, 94280], [rupesh.vaishnav@darshan.ac.in, 94280, -], [94280, -, 37452], [-, 37452, Information], [37452, Information, &], [Information, &, Network], [&, Network, Security], [Network, Security, (], [Security, (, 2170709], [(, 2170709, )]]
+
+>> Noun Phrases are: 
+[OOPC++ UNIT-1,   Prof. Rupesh G. Vaishnav, 94280-37452 Information & Network Security]
+
+>> Named Entities are: 
+[('Rupesh G. Vaishnav', 'PERSON'), ('94280-37452', 'DATE'), ('Information & Network Security', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+	 Darshan Institute of Engineering & Technology UNIT-10 Web Security      1  Outline Web Security threats and approaches SSL architecture SSL Protocol Transport layer security HTTPS SSH   
+
+
+>> Tokens are: 
+[	 , Darshan, Institute, Engineering, &, Technology, UNIT-10, Web, Security,      , 1,  , Outline, Web, Security, threats, approaches, SSL, architecture, SSL, Protocol, Transport, layer, security, HTTPS, SSH,  ] 
+
+>> PoS Tags are: 
+[('\t ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('UNIT-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('     ', 'SPACE'), ('1', 'NUM'), (' ', 'SPACE'), ('Outline', 'PROPN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('threats', 'NOUN'), ('approaches', 'VERB'), ('SSL', 'PROPN'), ('architecture', 'NOUN'), ('SSL', 'PROPN'), ('Protocol', 'PROPN'), ('Transport', 'PROPN'), ('layer', 'NOUN'), ('security', 'NOUN'), ('HTTPS', 'PROPN'), ('SSH', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t ', 'ROOT'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('UNIT-10', 'compound'), ('Web', 'compound'), ('Security', 'nmod'), ('     ', 'nmod'), ('1', 'nummod'), (' ', 'compound'), ('Outline', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('threats', 'dobj'), ('approaches', 'conj'), ('SSL', 'compound'), ('architecture', 'compound'), ('SSL', 'compound'), ('Protocol', 'compound'), ('Transport', 'compound'), ('layer', 'compound'), ('security', 'compound'), ('HTTPS', 'compound'), ('SSH', 'dobj'), (' ', 'punct')]
+
+>> Bigrams: 
+[[	 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology, UNIT-10], [UNIT-10, Web], [Web, Security], [Security,      ], [     , 1], [1,  ], [ , Outline], [Outline, Web], [Web, Security], [Security, threats], [threats, approaches], [approaches, SSL], [SSL, architecture], [architecture, SSL], [SSL, Protocol], [Protocol, Transport], [Transport, layer], [layer, security], [security, HTTPS], [HTTPS, SSH], [SSH,  ]]
+
+>> Trigrams: 
+[[	 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology, UNIT-10], [Technology, UNIT-10, Web], [UNIT-10, Web, Security], [Web, Security,      ], [Security,      , 1], [     , 1,  ], [1,  , Outline], [ , Outline, Web], [Outline, Web, Security], [Web, Security, threats], [Security, threats, approaches], [threats, approaches, SSL], [approaches, SSL, architecture], [SSL, architecture, SSL], [architecture, SSL, Protocol], [SSL, Protocol, Transport], [Protocol, Transport, layer], [Transport, layer, security], [layer, security, HTTPS], [security, HTTPS, SSH], [HTTPS, SSH,  ]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, UNIT-10 Web Security      1  Outline Web Security threats, SSL architecture SSL Protocol Transport layer security HTTPS SSH]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG'), ('SSL Protocol Transport', 'ORG'), ('SSH', 'ORG')]
+
+
+============================ Sentence 3 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  X.800 and RFC 2828 International Telecommunication Union (ITU) 2  Secure Socket Layer (SSL) Secure Socket Layer (SSL) provides security services between TCP and applications that use TCP. 
+
+
+>> Tokens are: 
+[Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , X.800, RFC, 2828, International, Telecommunication, Union, (, ITU, ), 2,  , Secure, Socket, Layer, (, SSL, ), Secure, Socket, Layer, (, SSL, ), provides, security, services, TCP, applications, use, TCP, .] 
+
+>> PoS Tags are: 
+[('Unit-10', 'PROPN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('X.800', 'PROPN'), ('RFC', 'PROPN'), ('2828', 'NUM'), ('International', 'PROPN'), ('Telecommunication', 'PROPN'), ('Union', 'PROPN'), ('(', 'PUNCT'), ('ITU', 'PROPN'), (')', 'PUNCT'), ('2', 'NUM'), (' ', 'SPACE'), ('Secure', 'PROPN'), ('Socket', 'PROPN'), ('Layer', 'PROPN'), ('(', 'PUNCT'), ('SSL', 'PROPN'), (')', 'PUNCT'), ('Secure', 'PROPN'), ('Socket', 'PROPN'), ('Layer', 'PROPN'), ('(', 'PUNCT'), ('SSL', 'PROPN'), (')', 'PUNCT'), ('provides', 'VERB'), ('security', 'NOUN'), ('services', 'NOUN'), ('TCP', 'PROPN'), ('applications', 'NOUN'), ('use', 'VERB'), ('TCP', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'attr'), (' ', 'prep'), ('X.800', 'appos'), ('RFC', 'npadvmod'), ('2828', 'nummod'), ('International', 'compound'), ('Telecommunication', 'compound'), ('Union', 'appos'), ('(', 'punct'), ('ITU', 'appos'), (')', 'punct'), ('2', 'nummod'), (' ', 'nsubj'), ('Secure', 'csubj'), ('Socket', 'compound'), ('Layer', 'dobj'), ('(', 'punct'), ('SSL', 'nmod'), (')', 'punct'), ('Secure', 'appos'), ('Socket', 'compound'), ('Layer', 'dobj'), ('(', 'punct'), ('SSL', 'appos'), (')', 'punct'), ('provides', 'ROOT'), ('security', 'compound'), ('services', 'dobj'), ('TCP', 'pobj'), ('applications', 'conj'), ('use', 'relcl'), ('TCP', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , X.800], [X.800, RFC], [RFC, 2828], [2828, International], [International, Telecommunication], [Telecommunication, Union], [Union, (], [(, ITU], [ITU, )], [), 2], [2,  ], [ , Secure], [Secure, Socket], [Socket, Layer], [Layer, (], [(, SSL], [SSL, )], [), Secure], [Secure, Socket], [Socket, Layer], [Layer, (], [(, SSL], [SSL, )], [), provides], [provides, security], [security, services], [services, TCP], [TCP, applications], [applications, use], [use, TCP], [TCP, .]]
+
+>> Trigrams: 
+[[Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , X.800], [ , X.800, RFC], [X.800, RFC, 2828], [RFC, 2828, International], [2828, International, Telecommunication], [International, Telecommunication, Union], [Telecommunication, Union, (], [Union, (, ITU], [(, ITU, )], [ITU, ), 2], [), 2,  ], [2,  , Secure], [ , Secure, Socket], [Secure, Socket, Layer], [Socket, Layer, (], [Layer, (, SSL], [(, SSL, )], [SSL, ), Secure], [), Secure, Socket], [Secure, Socket, Layer], [Socket, Layer, (], [Layer, (, SSL], [(, SSL, )], [SSL, ), provides], [), provides, security], [provides, security, services], [security, services, TCP], [services, TCP, applications], [TCP, applications, use], [applications, use, TCP], [use, TCP, .]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, X.800, International Telecommunication Union, (ITU, Socket Layer, SSL) Secure, Socket Layer, SSL, security services, TCP, applications, TCP]
+
+>> Named Entities are: 
+[('X.800', 'CARDINAL'), ('2828', 'DATE'), ('ITU', 'ORG'), ('2', 'CARDINAL'), ('Secure Socket Layer', 'ORG'), ('TCP', 'ORG'), ('TCP', 'ORG')]
+
+
+============================ Sentence 4 =============================
+
+The Internet standard version is called Transport Layer Service (TLS). 
+
+
+>> Tokens are: 
+[Internet, standard, version, called, Transport, Layer, Service, (, TLS, ), .] 
+
+>> PoS Tags are: 
+[('Internet', 'NOUN'), ('standard', 'NOUN'), ('version', 'NOUN'), ('called', 'VERB'), ('Transport', 'PROPN'), ('Layer', 'PROPN'), ('Service', 'PROPN'), ('(', 'PUNCT'), ('TLS', 'PROPN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Internet', 'compound'), ('standard', 'compound'), ('version', 'nsubjpass'), ('called', 'ROOT'), ('Transport', 'compound'), ('Layer', 'compound'), ('Service', 'oprd'), ('(', 'punct'), ('TLS', 'appos'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Internet, standard], [standard, version], [version, called], [called, Transport], [Transport, Layer], [Layer, Service], [Service, (], [(, TLS], [TLS, )], [), .]]
+
+>> Trigrams: 
+[[Internet, standard, version], [standard, version, called], [version, called, Transport], [called, Transport, Layer], [Transport, Layer, Service], [Layer, Service, (], [Service, (, TLS], [(, TLS, )], [TLS, ), .]]
+
+>> Noun Phrases are: 
+[The Internet standard version, Transport Layer Service, (TLS]
+
+>> Named Entities are: 
+[('Transport Layer Service', 'ORG')]
+
+
+============================ Sentence 5 =============================
+
+SSL/TLS provides confidentiality using symmetric encryption and message integrity using a message authentication code. 
+
+
+>> Tokens are: 
+[SSL, /, TLS, provides, confidentiality, symmetric, encryption, message, integrity, message, authentication, code, .] 
+
+>> PoS Tags are: 
+[('SSL', 'PROPN'), ('/', 'SYM'), ('TLS', 'PROPN'), ('provides', 'VERB'), ('confidentiality', 'NOUN'), ('symmetric', 'ADJ'), ('encryption', 'NOUN'), ('message', 'NOUN'), ('integrity', 'NOUN'), ('message', 'NOUN'), ('authentication', 'NOUN'), ('code', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('SSL', 'nmod'), ('/', 'punct'), ('TLS', 'nsubj'), ('provides', 'ROOT'), ('confidentiality', 'dobj'), ('symmetric', 'amod'), ('encryption', 'dobj'), ('message', 'compound'), ('integrity', 'conj'), ('message', 'compound'), ('authentication', 'compound'), ('code', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[SSL, /], [/, TLS], [TLS, provides], [provides, confidentiality], [confidentiality, symmetric], [symmetric, encryption], [encryption, message], [message, integrity], [integrity, message], [message, authentication], [authentication, code], [code, .]]
+
+>> Trigrams: 
+[[SSL, /, TLS], [/, TLS, provides], [TLS, provides, confidentiality], [provides, confidentiality, symmetric], [confidentiality, symmetric, encryption], [symmetric, encryption, message], [encryption, message, integrity], [message, integrity, message], [integrity, message, authentication], [message, authentication, code], [authentication, code, .]]
+
+>> Noun Phrases are: 
+[SSL/TLS, confidentiality, symmetric encryption, message integrity, a message authentication code]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+SSL/TLS includes protocol mechanisms to enable two TCP users to determine the security mechanisms and services they will use. 
+
+
+>> Tokens are: 
+[SSL, /, TLS, includes, protocol, mechanisms, enable, TCP, users, determine, security, mechanisms, services, use, .] 
+
+>> PoS Tags are: 
+[('SSL', 'PROPN'), ('/', 'SYM'), ('TLS', 'PROPN'), ('includes', 'VERB'), ('protocol', 'NOUN'), ('mechanisms', 'NOUN'), ('enable', 'VERB'), ('TCP', 'PROPN'), ('users', 'NOUN'), ('determine', 'VERB'), ('security', 'NOUN'), ('mechanisms', 'NOUN'), ('services', 'NOUN'), ('use', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('SSL', 'nmod'), ('/', 'punct'), ('TLS', 'nsubj'), ('includes', 'ROOT'), ('protocol', 'compound'), ('mechanisms', 'dobj'), ('enable', 'relcl'), ('TCP', 'compound'), ('users', 'dobj'), ('determine', 'xcomp'), ('security', 'compound'), ('mechanisms', 'dobj'), ('services', 'conj'), ('use', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[SSL, /], [/, TLS], [TLS, includes], [includes, protocol], [protocol, mechanisms], [mechanisms, enable], [enable, TCP], [TCP, users], [users, determine], [determine, security], [security, mechanisms], [mechanisms, services], [services, use], [use, .]]
+
+>> Trigrams: 
+[[SSL, /, TLS], [/, TLS, includes], [TLS, includes, protocol], [includes, protocol, mechanisms], [protocol, mechanisms, enable], [mechanisms, enable, TCP], [enable, TCP, users], [TCP, users, determine], [users, determine, security], [determine, security, mechanisms], [security, mechanisms, services], [mechanisms, services, use], [services, use, .]]
+
+>> Noun Phrases are: 
+[SSL/TLS, protocol mechanisms, two TCP users, the security mechanisms, services, they]
+
+>> Named Entities are: 
+[('two', 'CARDINAL'), ('TCP', 'ORG')]
+
+
+============================ Sentence 7 =============================
+
+SSL is designed to make use of TCP to provide a reliable end-to-end secure service. 
+
+
+>> Tokens are: 
+[SSL, designed, use, TCP, provide, reliable, end, -, -, end, secure, service, .] 
+
+>> PoS Tags are: 
+[('SSL', 'PROPN'), ('designed', 'VERB'), ('use', 'NOUN'), ('TCP', 'NOUN'), ('provide', 'VERB'), ('reliable', 'ADJ'), ('end', 'NOUN'), ('-', 'PUNCT'), ('-', 'PUNCT'), ('end', 'NOUN'), ('secure', 'ADJ'), ('service', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('SSL', 'nsubjpass'), ('designed', 'ROOT'), ('use', 'dobj'), ('TCP', 'pobj'), ('provide', 'advcl'), ('reliable', 'amod'), ('end', 'nmod'), ('-', 'punct'), ('-', 'punct'), ('end', 'pobj'), ('secure', 'amod'), ('service', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[SSL, designed], [designed, use], [use, TCP], [TCP, provide], [provide, reliable], [reliable, end], [end, -], [-, -], [-, end], [end, secure], [secure, service], [service, .]]
+
+>> Trigrams: 
+[[SSL, designed, use], [designed, use, TCP], [use, TCP, provide], [TCP, provide, reliable], [provide, reliable, end], [reliable, end, -], [end, -, -], [-, -, end], [-, end, secure], [end, secure, service], [secure, service, .]]
+
+>> Noun Phrases are: 
+[SSL, use, TCP, end]
+
+>> Named Entities are: 
+[('TCP', 'ORG')]
+
+
+============================ Sentence 8 =============================
+
+  Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Relative Location of Security Facilities in the TCP/IP Protocol Stack     Secure Socket Layer (SSL 
+
+
+>> Tokens are: 
+[  , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Relative, Location, Security, Facilities, TCP, /, IP, Protocol, Stack,     , Secure, Socket, Layer, (, SSL] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Relative', 'PROPN'), ('Location', 'PROPN'), ('Security', 'PROPN'), ('Facilities', 'PROPN'), ('TCP', 'PROPN'), ('/', 'SYM'), ('IP', 'PROPN'), ('Protocol', 'PROPN'), ('Stack', 'PROPN'), ('    ', 'SPACE'), ('Secure', 'PROPN'), ('Socket', 'PROPN'), ('Layer', 'PROPN'), ('(', 'PUNCT'), ('SSL', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('  ', 'nmod'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'compound'), ('Relative', 'compound'), ('Location', 'attr'), ('Security', 'compound'), ('Facilities', 'pobj'), ('TCP', 'nmod'), ('/', 'punct'), ('IP', 'compound'), ('Protocol', 'compound'), ('Stack', 'compound'), ('    ', 'compound'), ('Secure', 'amod'), ('Socket', 'compound'), ('Layer', 'pobj'), ('(', 'punct'), ('SSL', 'appos')]
+
+>> Bigrams: 
+[[  , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Relative], [Relative, Location], [Location, Security], [Security, Facilities], [Facilities, TCP], [TCP, /], [/, IP], [IP, Protocol], [Protocol, Stack], [Stack,     ], [    , Secure], [Secure, Socket], [Socket, Layer], [Layer, (], [(, SSL]]
+
+>> Trigrams: 
+[[  , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Relative], [ , Relative, Location], [Relative, Location, Security], [Location, Security, Facilities], [Security, Facilities, TCP], [Facilities, TCP, /], [TCP, /, IP], [/, IP, Protocol], [IP, Protocol, Stack], [Protocol, Stack,     ], [Stack,     , Secure], [    , Secure, Socket], [Secure, Socket, Layer], [Socket, Layer, (], [Layer, (, SSL]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Relative Location, Security Facilities, the TCP/IP Protocol Stack     Secure Socket Layer, SSL]
+
+>> Named Entities are: 
+[('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('TCP', 'ORG')]
+
+
+============================ Sentence 9 =============================
+
+) Architecture     Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject   
+
+
+>> Tokens are: 
+[), Architecture,     , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  ] 
+
+>> PoS Tags are: 
+[(')', 'PUNCT'), ('Architecture', 'NOUN'), ('    ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(')', 'punct'), ('Architecture', 'nsubj'), ('    ', 'compound'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'appos'), ('Interesting', 'advmod'), ('Subject', 'acomp'), (' ', 'punct')]
+
+>> Bigrams: 
+[[), Architecture], [Architecture,     ], [    , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ]]
+
+>> Trigrams: 
+[[), Architecture,     ], [Architecture,     , Unit-10], [    , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ]]
+
+>> Noun Phrases are: 
+[) Architecture, Darshan Institute, Engineering, Technology, INS]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+Four SSL Protocols    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSL Record Protocol 
+
+
+>> Tokens are: 
+[SSL, Protocols,    , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , SSL, Record, Protocol] 
+
+>> PoS Tags are: 
+[('SSL', 'PROPN'), ('Protocols', 'PROPN'), ('   ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'NOUN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('SSL', 'PROPN'), ('Record', 'PROPN'), ('Protocol', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('SSL', 'compound'), ('Protocols', 'nmod'), ('   ', 'compound'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'acomp'), (' ', 'punct'), ('SSL', 'compound'), ('Record', 'compound'), ('Protocol', 'punct')]
+
+>> Bigrams: 
+[[SSL, Protocols], [Protocols,    ], [   , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , SSL], [SSL, Record], [Record, Protocol]]
+
+>> Trigrams: 
+[[SSL, Protocols,    ], [Protocols,    , Unit-10], [   , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , SSL], [ , SSL, Record], [SSL, Record, Protocol]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS]
+
+>> Named Entities are: 
+[('Four', 'CARDINAL')]
+
+
+============================ Sentence 11 =============================
+
+It provides two services for SSL connections Confidentiality: The Handshake Protocol defines a shared secret key that is  used for conventional encryption of SSL payloads. 
+
+
+>> Tokens are: 
+[provides, services, SSL, connections, Confidentiality, :, Handshake, Protocol, defines, shared, secret, key,  , conventional, encryption, SSL, payloads, .] 
+
+>> PoS Tags are: 
+[('provides', 'VERB'), ('services', 'NOUN'), ('SSL', 'PROPN'), ('connections', 'NOUN'), ('Confidentiality', 'NOUN'), (':', 'PUNCT'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('defines', 'VERB'), ('shared', 'VERB'), ('secret', 'ADJ'), ('key', 'NOUN'), (' ', 'SPACE'), ('conventional', 'ADJ'), ('encryption', 'NOUN'), ('SSL', 'PROPN'), ('payloads', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('provides', 'ccomp'), ('services', 'dobj'), ('SSL', 'compound'), ('connections', 'pobj'), ('Confidentiality', 'dobj'), (':', 'punct'), ('Handshake', 'compound'), ('Protocol', 'nsubj'), ('defines', 'ROOT'), ('shared', 'amod'), ('secret', 'amod'), ('key', 'dobj'), (' ', 'nsubjpass'), ('conventional', 'amod'), ('encryption', 'pobj'), ('SSL', 'compound'), ('payloads', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[provides, services], [services, SSL], [SSL, connections], [connections, Confidentiality], [Confidentiality, :], [:, Handshake], [Handshake, Protocol], [Protocol, defines], [defines, shared], [shared, secret], [secret, key], [key,  ], [ , conventional], [conventional, encryption], [encryption, SSL], [SSL, payloads], [payloads, .]]
+
+>> Trigrams: 
+[[provides, services, SSL], [services, SSL, connections], [SSL, connections, Confidentiality], [connections, Confidentiality, :], [Confidentiality, :, Handshake], [:, Handshake, Protocol], [Handshake, Protocol, defines], [Protocol, defines, shared], [defines, shared, secret], [shared, secret, key], [secret, key,  ], [key,  , conventional], [ , conventional, encryption], [conventional, encryption, SSL], [encryption, SSL, payloads], [SSL, payloads, .]]
+
+>> Noun Phrases are: 
+[It, two services, SSL connections, Confidentiality, The Handshake Protocol, a shared secret key, conventional encryption, SSL payloads]
+
+>> Named Entities are: 
+[('two', 'CARDINAL'), ('SSL', 'ORG')]
+
+
+============================ Sentence 12 =============================
+
+Message Integrity: 
+
+
+>> Tokens are: 
+[Message, Integrity, :] 
+
+>> PoS Tags are: 
+[('Message', 'PROPN'), ('Integrity', 'NOUN'), (':', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Message', 'compound'), ('Integrity', 'ROOT'), (':', 'punct')]
+
+>> Bigrams: 
+[[Message, Integrity], [Integrity, :]]
+
+>> Trigrams: 
+[[Message, Integrity, :]]
+
+>> Noun Phrases are: 
+[Message Integrity]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 13 =============================
+
+The Handshake Protocol also defines a shared secret key  that is used to form a message authentication code (MAC). 
+
+
+>> Tokens are: 
+[Handshake, Protocol, defines, shared, secret, key,  , form, message, authentication, code, (, MAC, ), .] 
+
+>> PoS Tags are: 
+[('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('defines', 'VERB'), ('shared', 'VERB'), ('secret', 'ADJ'), ('key', 'ADJ'), (' ', 'SPACE'), ('form', 'VERB'), ('message', 'NOUN'), ('authentication', 'NOUN'), ('code', 'NOUN'), ('(', 'PUNCT'), ('MAC', 'PROPN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Handshake', 'compound'), ('Protocol', 'nsubj'), ('defines', 'ROOT'), ('shared', 'amod'), ('secret', 'amod'), ('key', 'amod'), (' ', 'dobj'), ('form', 'xcomp'), ('message', 'compound'), ('authentication', 'compound'), ('code', 'dobj'), ('(', 'punct'), ('MAC', 'appos'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Handshake, Protocol], [Protocol, defines], [defines, shared], [shared, secret], [secret, key], [key,  ], [ , form], [form, message], [message, authentication], [authentication, code], [code, (], [(, MAC], [MAC, )], [), .]]
+
+>> Trigrams: 
+[[Handshake, Protocol, defines], [Protocol, defines, shared], [defines, shared, secret], [shared, secret, key], [secret, key,  ], [key,  , form], [ , form, message], [form, message, authentication], [message, authentication, code], [authentication, code, (], [code, (, MAC], [(, MAC, )], [MAC, ), .]]
+
+>> Noun Phrases are: 
+[The Handshake Protocol, a message authentication code, MAC]
+
+>> Named Entities are: 
+[('MAC', 'ORG')]
+
+
+============================ Sentence 14 =============================
+
+   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSL Record Protocol – Cont… 
+
+
+>> Tokens are: 
+[   , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , SSL, Record, Protocol, –, Cont, …] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'NOUN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('SSL', 'PROPN'), ('Record', 'PROPN'), ('Protocol', 'PROPN'), ('–', 'PUNCT'), ('Cont', 'PROPN'), ('…', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('   ', 'nummod'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'acomp'), (' ', 'prep'), ('SSL', 'compound'), ('Record', 'compound'), ('Protocol', 'pobj'), ('–', 'punct'), ('Cont', 'appos'), ('…', 'punct')]
+
+>> Bigrams: 
+[[   , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , SSL], [SSL, Record], [Record, Protocol], [Protocol, –], [–, Cont], [Cont, …]]
+
+>> Trigrams: 
+[[   , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , SSL], [ , SSL, Record], [SSL, Record, Protocol], [Record, Protocol, –], [Protocol, –, Cont], [–, Cont, …]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, SSL Record Protocol, Cont]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+The Record Protocol takes an application message to be transmitted, fragments the data into manageable blocks, optionally compresses the data, applies a MAC, encrypts, adds a header, and transmits the resulting unit in a TCP segment. 
+
+
+>> Tokens are: 
+[Record, Protocol, takes, application, message, transmitted, ,, fragments, data, manageable, blocks, ,, optionally, compresses, data, ,, applies, MAC, ,, encrypts, ,, adds, header, ,, transmits, resulting, unit, TCP, segment, .] 
+
+>> PoS Tags are: 
+[('Record', 'PROPN'), ('Protocol', 'PROPN'), ('takes', 'VERB'), ('application', 'NOUN'), ('message', 'NOUN'), ('transmitted', 'VERB'), (',', 'PUNCT'), ('fragments', 'VERB'), ('data', 'NOUN'), ('manageable', 'ADJ'), ('blocks', 'NOUN'), (',', 'PUNCT'), ('optionally', 'ADV'), ('compresses', 'VERB'), ('data', 'NOUN'), (',', 'PUNCT'), ('applies', 'VERB'), ('MAC', 'PROPN'), (',', 'PUNCT'), ('encrypts', 'NOUN'), (',', 'PUNCT'), ('adds', 'VERB'), ('header', 'NOUN'), (',', 'PUNCT'), ('transmits', 'VERB'), ('resulting', 'VERB'), ('unit', 'NOUN'), ('TCP', 'PROPN'), ('segment', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Record', 'compound'), ('Protocol', 'nsubj'), ('takes', 'ROOT'), ('application', 'compound'), ('message', 'dobj'), ('transmitted', 'relcl'), (',', 'punct'), ('fragments', 'conj'), ('data', 'dobj'), ('manageable', 'amod'), ('blocks', 'pobj'), (',', 'punct'), ('optionally', 'advmod'), ('compresses', 'dep'), ('data', 'dobj'), (',', 'punct'), ('applies', 'conj'), ('MAC', 'dobj'), (',', 'punct'), ('encrypts', 'conj'), (',', 'punct'), ('adds', 'conj'), ('header', 'dobj'), (',', 'punct'), ('transmits', 'conj'), ('resulting', 'amod'), ('unit', 'dobj'), ('TCP', 'compound'), ('segment', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Record, Protocol], [Protocol, takes], [takes, application], [application, message], [message, transmitted], [transmitted, ,], [,, fragments], [fragments, data], [data, manageable], [manageable, blocks], [blocks, ,], [,, optionally], [optionally, compresses], [compresses, data], [data, ,], [,, applies], [applies, MAC], [MAC, ,], [,, encrypts], [encrypts, ,], [,, adds], [adds, header], [header, ,], [,, transmits], [transmits, resulting], [resulting, unit], [unit, TCP], [TCP, segment], [segment, .]]
+
+>> Trigrams: 
+[[Record, Protocol, takes], [Protocol, takes, application], [takes, application, message], [application, message, transmitted], [message, transmitted, ,], [transmitted, ,, fragments], [,, fragments, data], [fragments, data, manageable], [data, manageable, blocks], [manageable, blocks, ,], [blocks, ,, optionally], [,, optionally, compresses], [optionally, compresses, data], [compresses, data, ,], [data, ,, applies], [,, applies, MAC], [applies, MAC, ,], [MAC, ,, encrypts], [,, encrypts, ,], [encrypts, ,, adds], [,, adds, header], [adds, header, ,], [header, ,, transmits], [,, transmits, resulting], [transmits, resulting, unit], [resulting, unit, TCP], [unit, TCP, segment], [TCP, segment, .]]
+
+>> Noun Phrases are: 
+[The Record Protocol, an application message, the data, manageable blocks, the data, a MAC, encrypts, a header, the resulting unit, a TCP segment]
+
+>> Named Entities are: 
+[('The Record Protocol', 'ORG'), ('MAC', 'ORG')]
+
+
+============================ Sentence 16 =============================
+
+Received data are decrypted, verified, decompressed, and reassembled before being delivered to higher-level users. 
+
+
+>> Tokens are: 
+[Received, data, decrypted, ,, verified, ,, decompressed, ,, reassembled, delivered, higher, -, level, users, .] 
+
+>> PoS Tags are: 
+[('Received', 'VERB'), ('data', 'NOUN'), ('decrypted', 'VERB'), (',', 'PUNCT'), ('verified', 'VERB'), (',', 'PUNCT'), ('decompressed', 'VERB'), (',', 'PUNCT'), ('reassembled', 'VERB'), ('delivered', 'VERB'), ('higher', 'ADJ'), ('-', 'PUNCT'), ('level', 'NOUN'), ('users', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Received', 'amod'), ('data', 'nsubjpass'), ('decrypted', 'ROOT'), (',', 'punct'), ('verified', 'conj'), (',', 'punct'), ('decompressed', 'conj'), (',', 'punct'), ('reassembled', 'conj'), ('delivered', 'pcomp'), ('higher', 'amod'), ('-', 'punct'), ('level', 'compound'), ('users', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Received, data], [data, decrypted], [decrypted, ,], [,, verified], [verified, ,], [,, decompressed], [decompressed, ,], [,, reassembled], [reassembled, delivered], [delivered, higher], [higher, -], [-, level], [level, users], [users, .]]
+
+>> Trigrams: 
+[[Received, data, decrypted], [data, decrypted, ,], [decrypted, ,, verified], [,, verified, ,], [verified, ,, decompressed], [,, decompressed, ,], [decompressed, ,, reassembled], [,, reassembled, delivered], [reassembled, delivered, higher], [delivered, higher, -], [higher, -, level], [-, level, users], [level, users, .]]
+
+>> Noun Phrases are: 
+[Received data, higher-level users]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 18 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Change Cipher Spec Protocol 
+
+
+>> Tokens are: 
+[Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Change, Cipher, Spec, Protocol] 
+
+>> PoS Tags are: 
+[('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Change', 'PROPN'), ('Cipher', 'PROPN'), ('Spec', 'PROPN'), ('Protocol', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'punct'), ('Change', 'compound'), ('Cipher', 'compound'), ('Spec', 'compound'), ('Protocol', 'punct')]
+
+>> Bigrams: 
+[[Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Change], [Change, Cipher], [Cipher, Spec], [Spec, Protocol]]
+
+>> Trigrams: 
+[[Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Change], [ , Change, Cipher], [Change, Cipher, Spec], [Cipher, Spec, Protocol]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS]
+
+>> Named Entities are: 
+[('Interesting Subject  Change Cipher', 'ORG')]
+
+
+============================ Sentence 19 =============================
+
+The Change Cipher Spec Protocol is one of the three SSL-specific protocols that use the SSL Record Protocol, and it is the simplest. 
+
+
+>> Tokens are: 
+[Change, Cipher, Spec, Protocol, SSL, -, specific, protocols, use, SSL, Record, Protocol, ,, simplest, .] 
+
+>> PoS Tags are: 
+[('Change', 'PROPN'), ('Cipher', 'PROPN'), ('Spec', 'PROPN'), ('Protocol', 'PROPN'), ('SSL', 'PROPN'), ('-', 'PUNCT'), ('specific', 'ADJ'), ('protocols', 'NOUN'), ('use', 'VERB'), ('SSL', 'PROPN'), ('Record', 'PROPN'), ('Protocol', 'PROPN'), (',', 'PUNCT'), ('simplest', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Change', 'compound'), ('Cipher', 'compound'), ('Spec', 'compound'), ('Protocol', 'nsubj'), ('SSL', 'npadvmod'), ('-', 'punct'), ('specific', 'amod'), ('protocols', 'pobj'), ('use', 'relcl'), ('SSL', 'compound'), ('Record', 'compound'), ('Protocol', 'dobj'), (',', 'punct'), ('simplest', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Change, Cipher], [Cipher, Spec], [Spec, Protocol], [Protocol, SSL], [SSL, -], [-, specific], [specific, protocols], [protocols, use], [use, SSL], [SSL, Record], [Record, Protocol], [Protocol, ,], [,, simplest], [simplest, .]]
+
+>> Trigrams: 
+[[Change, Cipher, Spec], [Cipher, Spec, Protocol], [Spec, Protocol, SSL], [Protocol, SSL, -], [SSL, -, specific], [-, specific, protocols], [specific, protocols, use], [protocols, use, SSL], [use, SSL, Record], [SSL, Record, Protocol], [Record, Protocol, ,], [Protocol, ,, simplest], [,, simplest, .]]
+
+>> Noun Phrases are: 
+[The Change Cipher Spec Protocol, the three SSL-specific protocols, the SSL Record Protocol, it]
+
+>> Named Entities are: 
+[('one', 'CARDINAL'), ('three', 'CARDINAL')]
+
+
+============================ Sentence 20 =============================
+
+This protocol consists of a single message which consists of a single byte with the value 1.   
+
+
+>> Tokens are: 
+[protocol, consists, single, message, consists, single, byte, value, 1, .,  ] 
+
+>> PoS Tags are: 
+[('protocol', 'NOUN'), ('consists', 'VERB'), ('single', 'ADJ'), ('message', 'NOUN'), ('consists', 'VERB'), ('single', 'ADJ'), ('byte', 'NOUN'), ('value', 'NOUN'), ('1', 'NUM'), ('.', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('protocol', 'nsubj'), ('consists', 'ROOT'), ('single', 'amod'), ('message', 'pobj'), ('consists', 'relcl'), ('single', 'amod'), ('byte', 'pobj'), ('value', 'pobj'), ('1', 'nummod'), ('.', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[protocol, consists], [consists, single], [single, message], [message, consists], [consists, single], [single, byte], [byte, value], [value, 1], [1, .], [.,  ]]
+
+>> Trigrams: 
+[[protocol, consists, single], [consists, single, message], [single, message, consists], [message, consists, single], [consists, single, byte], [single, byte, value], [byte, value, 1], [value, 1, .], [1, .,  ]]
+
+>> Noun Phrases are: 
+[This protocol, a single message, a single byte, the value]
+
+>> Named Entities are: 
+[('1', 'CARDINAL')]
+
+
+============================ Sentence 21 =============================
+
+The sole purpose of this message is to cause the pending state to be copied into the current state, which updates the cipher suite to be used on this connection. 
+
+
+>> Tokens are: 
+[sole, purpose, message, cause, pending, state, copied, current, state, ,, updates, cipher, suite, connection, .] 
+
+>> PoS Tags are: 
+[('sole', 'ADJ'), ('purpose', 'NOUN'), ('message', 'NOUN'), ('cause', 'VERB'), ('pending', 'VERB'), ('state', 'NOUN'), ('copied', 'VERB'), ('current', 'ADJ'), ('state', 'NOUN'), (',', 'PUNCT'), ('updates', 'VERB'), ('cipher', 'ADJ'), ('suite', 'NOUN'), ('connection', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('sole', 'amod'), ('purpose', 'nsubj'), ('message', 'pobj'), ('cause', 'xcomp'), ('pending', 'amod'), ('state', 'nsubjpass'), ('copied', 'ccomp'), ('current', 'amod'), ('state', 'pobj'), (',', 'punct'), ('updates', 'relcl'), ('cipher', 'amod'), ('suite', 'dobj'), ('connection', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[sole, purpose], [purpose, message], [message, cause], [cause, pending], [pending, state], [state, copied], [copied, current], [current, state], [state, ,], [,, updates], [updates, cipher], [cipher, suite], [suite, connection], [connection, .]]
+
+>> Trigrams: 
+[[sole, purpose, message], [purpose, message, cause], [message, cause, pending], [cause, pending, state], [pending, state, copied], [state, copied, current], [copied, current, state], [current, state, ,], [state, ,, updates], [,, updates, cipher], [updates, cipher, suite], [cipher, suite, connection], [suite, connection, .]]
+
+>> Noun Phrases are: 
+[The sole purpose, this message, the pending state, the current state, the cipher suite, this connection]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 22 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Change Cipher Spec Protocol – Cont…   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Alert Protocol 
+
+
+>> Tokens are: 
+[Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Change, Cipher, Spec, Protocol, –, Cont, …,   , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Alert, Protocol] 
+
+>> PoS Tags are: 
+[('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Change', 'PROPN'), ('Cipher', 'PROPN'), ('Spec', 'PROPN'), ('Protocol', 'PROPN'), ('–', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT'), ('  ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Alert', 'PROPN'), ('Protocol', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'compound'), ('Change', 'compound'), ('Cipher', 'compound'), ('Spec', 'compound'), ('Protocol', 'attr'), ('–', 'punct'), ('Cont', 'appos'), ('…', 'punct'), ('  ', 'compound'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'punct'), ('Alert', 'compound'), ('Protocol', 'appos')]
+
+>> Bigrams: 
+[[Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Change], [Change, Cipher], [Cipher, Spec], [Spec, Protocol], [Protocol, –], [–, Cont], [Cont, …], […,   ], [  , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Alert], [Alert, Protocol]]
+
+>> Trigrams: 
+[[Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Change], [ , Change, Cipher], [Change, Cipher, Spec], [Cipher, Spec, Protocol], [Spec, Protocol, –], [Protocol, –, Cont], [–, Cont, …], [Cont, …,   ], […,   , Unit-10], [  , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Alert], [ , Alert, Protocol]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Change Cipher Spec Protocol, Cont, Darshan Institute, Engineering, Technology, INS, Alert Protocol]
+
+>> Named Entities are: 
+[('Interesting Subject  Change Cipher Spec Protocol – Cont', 'ORG'), ('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 24 =============================
+
+The Alert Protocol is used to convey SSL-related alerts to the peer entity. 
+
+
+>> Tokens are: 
+[Alert, Protocol, convey, SSL, -, related, alerts, peer, entity, .] 
+
+>> PoS Tags are: 
+[('Alert', 'PROPN'), ('Protocol', 'PROPN'), ('convey', 'VERB'), ('SSL', 'PROPN'), ('-', 'PUNCT'), ('related', 'VERB'), ('alerts', 'NOUN'), ('peer', 'NOUN'), ('entity', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Alert', 'compound'), ('Protocol', 'nsubjpass'), ('convey', 'xcomp'), ('SSL', 'npadvmod'), ('-', 'punct'), ('related', 'amod'), ('alerts', 'dobj'), ('peer', 'compound'), ('entity', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Alert, Protocol], [Protocol, convey], [convey, SSL], [SSL, -], [-, related], [related, alerts], [alerts, peer], [peer, entity], [entity, .]]
+
+>> Trigrams: 
+[[Alert, Protocol, convey], [Protocol, convey, SSL], [convey, SSL, -], [SSL, -, related], [-, related, alerts], [related, alerts, peer], [alerts, peer, entity], [peer, entity, .]]
+
+>> Noun Phrases are: 
+[The Alert Protocol, SSL-related alerts, the peer entity]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+As with other applications that use SSL, alert messages are compressed and encrypted, as specified by the current state. 
+
+
+>> Tokens are: 
+[applications, use, SSL, ,, alert, messages, compressed, encrypted, ,, specified, current, state, .] 
+
+>> PoS Tags are: 
+[('applications', 'NOUN'), ('use', 'VERB'), ('SSL', 'PROPN'), (',', 'PUNCT'), ('alert', 'NOUN'), ('messages', 'NOUN'), ('compressed', 'VERB'), ('encrypted', 'VERB'), (',', 'PUNCT'), ('specified', 'VERB'), ('current', 'ADJ'), ('state', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('applications', 'pobj'), ('use', 'relcl'), ('SSL', 'dobj'), (',', 'punct'), ('alert', 'compound'), ('messages', 'nsubjpass'), ('compressed', 'ROOT'), ('encrypted', 'conj'), (',', 'punct'), ('specified', 'advcl'), ('current', 'amod'), ('state', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[applications, use], [use, SSL], [SSL, ,], [,, alert], [alert, messages], [messages, compressed], [compressed, encrypted], [encrypted, ,], [,, specified], [specified, current], [current, state], [state, .]]
+
+>> Trigrams: 
+[[applications, use, SSL], [use, SSL, ,], [SSL, ,, alert], [,, alert, messages], [alert, messages, compressed], [messages, compressed, encrypted], [compressed, encrypted, ,], [encrypted, ,, specified], [,, specified, current], [specified, current, state], [current, state, .]]
+
+>> Noun Phrases are: 
+[other applications, SSL, alert messages, the current state]
+
+>> Named Entities are: 
+[('SSL', 'ORG')]
+
+
+============================ Sentence 26 =============================
+
+  Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase I    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase I After Phase I, the client and server know the following: The version of SSL The algorithms for key exchange, message authentication, and  encryption The compression method 
+
+
+>> Tokens are: 
+[  , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Handshake, Protocol,    , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Handshake, Protocol, –, Phase,    , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Handshake, Protocol, –, Phase, Phase, ,, client, server, know, following, :, version, SSL, algorithms, key, exchange, ,, message, authentication, ,,  , encryption, compression, method] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('   ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'NOUN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('–', 'PUNCT'), ('Phase', 'NOUN'), ('   ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'NOUN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('–', 'PUNCT'), ('Phase', 'NOUN'), ('Phase', 'PROPN'), (',', 'PUNCT'), ('client', 'NOUN'), ('server', 'NOUN'), ('know', 'VERB'), ('following', 'VERB'), (':', 'PUNCT'), ('version', 'NOUN'), ('SSL', 'PROPN'), ('algorithms', 'NOUN'), ('key', 'ADJ'), ('exchange', 'NOUN'), (',', 'PUNCT'), ('message', 'NOUN'), ('authentication', 'NOUN'), (',', 'PUNCT'), (' ', 'SPACE'), ('encryption', 'NOUN'), ('compression', 'NOUN'), ('method', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('  ', 'nummod'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'attr'), ('Handshake', 'compound'), ('Protocol', 'appos'), ('   ', 'compound'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'compound'), ('Handshake', 'compound'), ('Protocol', 'attr'), ('–', 'punct'), ('Phase', 'appos'), ('   ', 'compound'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'nsubj'), ('‹#›', 'nsubj'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'compound'), ('Handshake', 'compound'), ('Protocol', 'attr'), ('–', 'punct'), ('Phase', 'appos'), ('Phase', 'pobj'), (',', 'punct'), ('client', 'conj'), ('server', 'conj'), ('know', 'ROOT'), ('following', 'dobj'), (':', 'punct'), ('version', 'appos'), ('SSL', 'pobj'), ('algorithms', 'appos'), ('key', 'amod'), ('exchange', 'pobj'), (',', 'punct'), ('message', 'compound'), ('authentication', 'conj'), (',', 'punct'), (' ', 'compound'), ('encryption', 'conj'), ('compression', 'compound'), ('method', 'dobj')]
+
+>> Bigrams: 
+[[  , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Handshake], [Handshake, Protocol], [Protocol,    ], [   , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Handshake], [Handshake, Protocol], [Protocol, –], [–, Phase], [Phase,    ], [   , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Handshake], [Handshake, Protocol], [Protocol, –], [–, Phase], [Phase, Phase], [Phase, ,], [,, client], [client, server], [server, know], [know, following], [following, :], [:, version], [version, SSL], [SSL, algorithms], [algorithms, key], [key, exchange], [exchange, ,], [,, message], [message, authentication], [authentication, ,], [,,  ], [ , encryption], [encryption, compression], [compression, method]]
+
+>> Trigrams: 
+[[  , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Handshake], [ , Handshake, Protocol], [Handshake, Protocol,    ], [Protocol,    , Unit-10], [   , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Handshake], [ , Handshake, Protocol], [Handshake, Protocol, –], [Protocol, –, Phase], [–, Phase,    ], [Phase,    , Unit-10], [   , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Handshake], [ , Handshake, Protocol], [Handshake, Protocol, –], [Protocol, –, Phase], [–, Phase, Phase], [Phase, Phase, ,], [Phase, ,, client], [,, client, server], [client, server, know], [server, know, following], [know, following, :], [following, :, version], [:, version, SSL], [version, SSL, algorithms], [SSL, algorithms, key], [algorithms, key, exchange], [key, exchange, ,], [exchange, ,, message], [,, message, authentication], [message, authentication, ,], [authentication, ,,  ], [,,  , encryption], [ , encryption, compression], [encryption, compression, method]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, Handshake Protocol, Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Handshake Protocol, Phase, I, Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Handshake Protocol, Phase, Phase, I, the client, server, The version, SSL, The algorithms, key exchange, message authentication,  encryption, The compression method]
+
+>> Named Entities are: 
+[('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 27 =============================
+
+The two random numbers for key generation   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase II    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – 
+
+
+>> Tokens are: 
+[random, numbers, key, generation,   , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Handshake, Protocol, –, Phase, II,    , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Handshake, Protocol, –] 
+
+>> PoS Tags are: 
+[('random', 'ADJ'), ('numbers', 'NOUN'), ('key', 'ADJ'), ('generation', 'NOUN'), ('  ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('–', 'PUNCT'), ('Phase', 'NOUN'), ('II', 'NUM'), ('   ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'NOUN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('–', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('random', 'amod'), ('numbers', 'nsubj'), ('key', 'amod'), ('generation', 'pobj'), ('  ', 'compound'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'conj'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'compound'), ('Handshake', 'compound'), ('Protocol', 'attr'), ('–', 'punct'), ('Phase', 'compound'), ('II', 'nummod'), ('   ', 'compound'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'nsubj'), ('‹#›', 'nsubj'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'compound'), ('Handshake', 'compound'), ('Protocol', 'attr'), ('–', 'punct')]
+
+>> Bigrams: 
+[[random, numbers], [numbers, key], [key, generation], [generation,   ], [  , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Handshake], [Handshake, Protocol], [Protocol, –], [–, Phase], [Phase, II], [II,    ], [   , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Handshake], [Handshake, Protocol], [Protocol, –]]
+
+>> Trigrams: 
+[[random, numbers, key], [numbers, key, generation], [key, generation,   ], [generation,   , Unit-10], [  , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Handshake], [ , Handshake, Protocol], [Handshake, Protocol, –], [Protocol, –, Phase], [–, Phase, II], [Phase, II,    ], [II,    , Unit-10], [   , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Handshake], [ , Handshake, Protocol], [Handshake, Protocol, –]]
+
+>> Noun Phrases are: 
+[The two random numbers, key generation, Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Handshake Protocol, Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Handshake Protocol]
+
+>> Named Entities are: 
+[('two', 'CARDINAL')]
+
+
+============================ Sentence 28 =============================
+
+Phase II After Phase II 
+
+
+>> Tokens are: 
+[Phase, II, Phase, II] 
+
+>> PoS Tags are: 
+[('Phase', 'NOUN'), ('II', 'NUM'), ('Phase', 'PROPN'), ('II', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Phase', 'ROOT'), ('II', 'nummod'), ('Phase', 'compound'), ('II', 'pobj')]
+
+>> Bigrams: 
+[[Phase, II], [II, Phase], [Phase, II]]
+
+>> Trigrams: 
+[[Phase, II, Phase], [II, Phase, II]]
+
+>> Noun Phrases are: 
+[Phase, Phase II]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 29 =============================
+
+The server is authenticated to the client. 
+
+
+>> Tokens are: 
+[server, authenticated, client, .] 
+
+>> PoS Tags are: 
+[('server', 'NOUN'), ('authenticated', 'VERB'), ('client', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('server', 'nsubjpass'), ('authenticated', 'ROOT'), ('client', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[server, authenticated], [authenticated, client], [client, .]]
+
+>> Trigrams: 
+[[server, authenticated, client], [authenticated, client, .]]
+
+>> Noun Phrases are: 
+[The server, the client]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 30 =============================
+
+The client knows the public key of the server if required. 
+
+
+>> Tokens are: 
+[client, knows, public, key, server, required, .] 
+
+>> PoS Tags are: 
+[('client', 'NOUN'), ('knows', 'VERB'), ('public', 'ADJ'), ('key', 'NOUN'), ('server', 'NOUN'), ('required', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('client', 'nsubj'), ('knows', 'ROOT'), ('public', 'amod'), ('key', 'dobj'), ('server', 'pobj'), ('required', 'advcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[client, knows], [knows, public], [public, key], [key, server], [server, required], [required, .]]
+
+>> Trigrams: 
+[[client, knows, public], [knows, public, key], [public, key, server], [key, server, required], [server, required, .]]
+
+>> Noun Phrases are: 
+[The client, the public key, the server]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 31 =============================
+
+  Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase III   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase IV    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject   SSL Handshake Protocol Phases   HTTPS (HTTP over SSL) HTTPS (HTTP over SSL) refers to the combination of HTTP and SSL to implement secure communication between a Web browser and a Web server. 
+
+
+>> Tokens are: 
+[  , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Handshake, Protocol, –, Phase, III,   , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Handshake, Protocol, –, Phase, IV,    , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,   , SSL, Handshake, Protocol, Phases,   , HTTPS, (, HTTP, SSL, ), HTTPS, (, HTTP, SSL, ), refers, combination, HTTP, SSL, implement, secure, communication, Web, browser, Web, server, .] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('–', 'PUNCT'), ('Phase', 'PROPN'), ('III', 'NUM'), ('  ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('–', 'PUNCT'), ('Phase', 'NOUN'), ('IV', 'PROPN'), ('   ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'NOUN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), ('  ', 'SPACE'), ('SSL', 'PROPN'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('Phases', 'NOUN'), ('  ', 'SPACE'), ('HTTPS', 'NOUN'), ('(', 'PUNCT'), ('HTTP', 'NOUN'), ('SSL', 'PROPN'), (')', 'PUNCT'), ('HTTPS', 'PROPN'), ('(', 'PUNCT'), ('HTTP', 'NOUN'), ('SSL', 'PROPN'), (')', 'PUNCT'), ('refers', 'VERB'), ('combination', 'NOUN'), ('HTTP', 'PROPN'), ('SSL', 'PROPN'), ('implement', 'VERB'), ('secure', 'ADJ'), ('communication', 'NOUN'), ('Web', 'NOUN'), ('browser', 'NOUN'), ('Web', 'NOUN'), ('server', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'nmod'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'compound'), ('Handshake', 'compound'), ('Protocol', 'attr'), ('–', 'punct'), ('Phase', 'compound'), ('III', 'nummod'), ('  ', 'compound'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'nsubj'), ('‹#›', 'nmod'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'compound'), ('Handshake', 'compound'), ('Protocol', 'attr'), ('–', 'punct'), ('Phase', 'nsubj'), ('IV', 'appos'), ('   ', 'compound'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'appos'), ('‹#›', 'appos'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'prep'), ('  ', 'appos'), ('SSL', 'compound'), ('Handshake', 'compound'), ('Protocol', 'compound'), ('Phases', 'attr'), ('  ', 'compound'), ('HTTPS', 'appos'), ('(', 'punct'), ('HTTP', 'appos'), ('SSL', 'nmod'), (')', 'punct'), ('HTTPS', 'pobj'), ('(', 'punct'), ('HTTP', 'appos'), ('SSL', 'pobj'), (')', 'punct'), ('refers', 'ROOT'), ('combination', 'pobj'), ('HTTP', 'pobj'), ('SSL', 'conj'), ('implement', 'advcl'), ('secure', 'amod'), ('communication', 'dobj'), ('Web', 'compound'), ('browser', 'pobj'), ('Web', 'compound'), ('server', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[  , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Handshake], [Handshake, Protocol], [Protocol, –], [–, Phase], [Phase, III], [III,   ], [  , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Handshake], [Handshake, Protocol], [Protocol, –], [–, Phase], [Phase, IV], [IV,    ], [   , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,   ], [  , SSL], [SSL, Handshake], [Handshake, Protocol], [Protocol, Phases], [Phases,   ], [  , HTTPS], [HTTPS, (], [(, HTTP], [HTTP, SSL], [SSL, )], [), HTTPS], [HTTPS, (], [(, HTTP], [HTTP, SSL], [SSL, )], [), refers], [refers, combination], [combination, HTTP], [HTTP, SSL], [SSL, implement], [implement, secure], [secure, communication], [communication, Web], [Web, browser], [browser, Web], [Web, server], [server, .]]
+
+>> Trigrams: 
+[[  , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Handshake], [ , Handshake, Protocol], [Handshake, Protocol, –], [Protocol, –, Phase], [–, Phase, III], [Phase, III,   ], [III,   , Unit-10], [  , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Handshake], [ , Handshake, Protocol], [Handshake, Protocol, –], [Protocol, –, Phase], [–, Phase, IV], [Phase, IV,    ], [IV,    , Unit-10], [   , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,   ], [Subject,   , SSL], [  , SSL, Handshake], [SSL, Handshake, Protocol], [Handshake, Protocol, Phases], [Protocol, Phases,   ], [Phases,   , HTTPS], [  , HTTPS, (], [HTTPS, (, HTTP], [(, HTTP, SSL], [HTTP, SSL, )], [SSL, ), HTTPS], [), HTTPS, (], [HTTPS, (, HTTP], [(, HTTP, SSL], [HTTP, SSL, )], [SSL, ), refers], [), refers, combination], [refers, combination, HTTP], [combination, HTTP, SSL], [HTTP, SSL, implement], [SSL, implement, secure], [implement, secure, communication], [secure, communication, Web], [communication, Web, browser], [Web, browser, Web], [browser, Web, server], [Web, server, .]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Handshake Protocol, Darshan Institute, Engineering, Technology, very Interesting Subject  Handshake Protocol, Phase, IV, Darshan Institute, Engineering, Technology, INS, SSL Handshake Protocol Phases,   HTTPS, HTTP, SSL) HTTPS, HTTP, SSL, the combination, HTTP, SSL, secure communication, a Web browser, a Web server]
+
+>> Named Entities are: 
+[('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('SSL', 'ORG'), ('SSL', 'ORG'), ('HTTP', 'ORG'), ('SSL', 'ORG')]
+
+
+============================ Sentence 32 =============================
+
+When HTTPS is used, the following elements of the communication are encrypted: URL of the requested document Contents of the document Contents of browser forms (filled in by browser user) 
+
+
+>> Tokens are: 
+[HTTPS, ,, following, elements, communication, encrypted, :, URL, requested, document, Contents, document, Contents, browser, forms, (, filled, browser, user, )] 
+
+>> PoS Tags are: 
+[('HTTPS', 'PROPN'), (',', 'PUNCT'), ('following', 'VERB'), ('elements', 'NOUN'), ('communication', 'NOUN'), ('encrypted', 'VERB'), (':', 'PUNCT'), ('URL', 'NOUN'), ('requested', 'VERB'), ('document', 'NOUN'), ('Contents', 'PROPN'), ('document', 'NOUN'), ('Contents', 'PROPN'), ('browser', 'NOUN'), ('forms', 'NOUN'), ('(', 'PUNCT'), ('filled', 'VERB'), ('browser', 'NOUN'), ('user', 'NOUN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('HTTPS', 'nsubjpass'), (',', 'punct'), ('following', 'amod'), ('elements', 'nsubjpass'), ('communication', 'pobj'), ('encrypted', 'ROOT'), (':', 'punct'), ('URL', 'appos'), ('requested', 'amod'), ('document', 'pobj'), ('Contents', 'appos'), ('document', 'pobj'), ('Contents', 'appos'), ('browser', 'compound'), ('forms', 'pobj'), ('(', 'punct'), ('filled', 'acl'), ('browser', 'compound'), ('user', 'pobj'), (')', 'punct')]
+
+>> Bigrams: 
+[[HTTPS, ,], [,, following], [following, elements], [elements, communication], [communication, encrypted], [encrypted, :], [:, URL], [URL, requested], [requested, document], [document, Contents], [Contents, document], [document, Contents], [Contents, browser], [browser, forms], [forms, (], [(, filled], [filled, browser], [browser, user], [user, )]]
+
+>> Trigrams: 
+[[HTTPS, ,, following], [,, following, elements], [following, elements, communication], [elements, communication, encrypted], [communication, encrypted, :], [encrypted, :, URL], [:, URL, requested], [URL, requested, document], [requested, document, Contents], [document, Contents, document], [Contents, document, Contents], [document, Contents, browser], [Contents, browser, forms], [browser, forms, (], [forms, (, filled], [(, filled, browser], [filled, browser, user], [browser, user, )]]
+
+>> Noun Phrases are: 
+[HTTPS, the following elements, the communication, URL, the requested document, Contents, the document, Contents, browser forms, browser user]
+
+>> Named Entities are: 
+[('HTTPS', 'ORG'), ('Contents', 'ORG'), ('Contents', 'ORG')]
+
+
+============================ Sentence 33 =============================
+
+Cookies sent from browser to server and from server to browser Contents of HTTP header   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSH (Secure Shell) 
+
+
+>> Tokens are: 
+[Cookies, sent, browser, server, server, browser, Contents, HTTP, header,   , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , SSH, (, Secure, Shell, )] 
+
+>> PoS Tags are: 
+[('Cookies', 'NOUN'), ('sent', 'VERB'), ('browser', 'NOUN'), ('server', 'VERB'), ('server', 'NOUN'), ('browser', 'NOUN'), ('Contents', 'PROPN'), ('HTTP', 'PROPN'), ('header', 'VERB'), ('  ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('SSH', 'PROPN'), ('(', 'PUNCT'), ('Secure', 'PROPN'), ('Shell', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Cookies', 'nsubj'), ('sent', 'ccomp'), ('browser', 'pobj'), ('server', 'advcl'), ('server', 'pobj'), ('browser', 'pobj'), ('Contents', 'npadvmod'), ('HTTP', 'compound'), ('header', 'dobj'), ('  ', 'dep'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'dobj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'advmod'), ('Subject', 'nmod'), (' ', 'prep'), ('SSH', 'attr'), ('(', 'punct'), ('Secure', 'nmod'), ('Shell', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[Cookies, sent], [sent, browser], [browser, server], [server, server], [server, browser], [browser, Contents], [Contents, HTTP], [HTTP, header], [header,   ], [  , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , SSH], [SSH, (], [(, Secure], [Secure, Shell], [Shell, )]]
+
+>> Trigrams: 
+[[Cookies, sent, browser], [sent, browser, server], [browser, server, server], [server, server, browser], [server, browser, Contents], [browser, Contents, HTTP], [Contents, HTTP, header], [HTTP, header,   ], [header,   , Unit-10], [  , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , SSH], [ , SSH, (], [SSH, (, Secure], [(, Secure, Shell], [Secure, Shell, )]]
+
+>> Noun Phrases are: 
+[Cookies, browser, server, browser, Darshan Institute, Engineering, Technology, INS, very Interesting Subject  SSH, Secure Shell]
+
+>> Named Entities are: 
+[('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('SSH', 'ORG'), ('Secure Shell', 'PERSON')]
+
+
+============================ Sentence 34 =============================
+
+Secure Shell (SSH) is a protocol for secure network communications designed to be relatively simple and inexpensive to implement. 
+
+
+>> Tokens are: 
+[Secure, Shell, (, SSH, ), protocol, secure, network, communications, designed, relatively, simple, inexpensive, implement, .] 
+
+>> PoS Tags are: 
+[('Secure', 'PROPN'), ('Shell', 'PROPN'), ('(', 'PUNCT'), ('SSH', 'PROPN'), (')', 'PUNCT'), ('protocol', 'NOUN'), ('secure', 'ADJ'), ('network', 'NOUN'), ('communications', 'NOUN'), ('designed', 'VERB'), ('relatively', 'ADV'), ('simple', 'ADJ'), ('inexpensive', 'ADJ'), ('implement', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Secure', 'compound'), ('Shell', 'nsubj'), ('(', 'punct'), ('SSH', 'appos'), (')', 'punct'), ('protocol', 'attr'), ('secure', 'amod'), ('network', 'compound'), ('communications', 'pobj'), ('designed', 'acl'), ('relatively', 'advmod'), ('simple', 'acomp'), ('inexpensive', 'conj'), ('implement', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Secure, Shell], [Shell, (], [(, SSH], [SSH, )], [), protocol], [protocol, secure], [secure, network], [network, communications], [communications, designed], [designed, relatively], [relatively, simple], [simple, inexpensive], [inexpensive, implement], [implement, .]]
+
+>> Trigrams: 
+[[Secure, Shell, (], [Shell, (, SSH], [(, SSH, )], [SSH, ), protocol], [), protocol, secure], [protocol, secure, network], [secure, network, communications], [network, communications, designed], [communications, designed, relatively], [designed, relatively, simple], [relatively, simple, inexpensive], [simple, inexpensive, implement], [inexpensive, implement, .]]
+
+>> Noun Phrases are: 
+[Secure Shell, (SSH, a protocol, secure network communications]
+
+>> Named Entities are: 
+[('Secure Shell', 'PERSON'), ('SSH', 'ORG')]
+
+
+============================ Sentence 35 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 36 =============================
+
+The initial version, SSH1 was focused on providing a secure remote logon facility to replace TELNET and other remote logon schemes that provided no security. 
+
+
+>> Tokens are: 
+[initial, version, ,, SSH1, focused, providing, secure, remote, logon, facility, replace, TELNET, remote, logon, schemes, provided, security, .] 
+
+>> PoS Tags are: 
+[('initial', 'ADJ'), ('version', 'NOUN'), (',', 'PUNCT'), ('SSH1', 'PROPN'), ('focused', 'VERB'), ('providing', 'VERB'), ('secure', 'ADJ'), ('remote', 'ADJ'), ('logon', 'NOUN'), ('facility', 'NOUN'), ('replace', 'VERB'), ('TELNET', 'PROPN'), ('remote', 'ADJ'), ('logon', 'NOUN'), ('schemes', 'NOUN'), ('provided', 'VERB'), ('security', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('initial', 'amod'), ('version', 'nsubjpass'), (',', 'punct'), ('SSH1', 'appos'), ('focused', 'ROOT'), ('providing', 'pcomp'), ('secure', 'amod'), ('remote', 'amod'), ('logon', 'compound'), ('facility', 'dobj'), ('replace', 'advcl'), ('TELNET', 'dobj'), ('remote', 'amod'), ('logon', 'compound'), ('schemes', 'conj'), ('provided', 'relcl'), ('security', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[initial, version], [version, ,], [,, SSH1], [SSH1, focused], [focused, providing], [providing, secure], [secure, remote], [remote, logon], [logon, facility], [facility, replace], [replace, TELNET], [TELNET, remote], [remote, logon], [logon, schemes], [schemes, provided], [provided, security], [security, .]]
+
+>> Trigrams: 
+[[initial, version, ,], [version, ,, SSH1], [,, SSH1, focused], [SSH1, focused, providing], [focused, providing, secure], [providing, secure, remote], [secure, remote, logon], [remote, logon, facility], [logon, facility, replace], [facility, replace, TELNET], [replace, TELNET, remote], [TELNET, remote, logon], [remote, logon, schemes], [logon, schemes, provided], [schemes, provided, security], [provided, security, .]]
+
+>> Noun Phrases are: 
+[The initial version, SSH1, a secure remote logon facility, TELNET, other remote logon schemes, no security]
+
+>> Named Entities are: 
+[('TELNET', 'ORG')]
+
+
+============================ Sentence 37 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 38 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSH (Secure Shell) – Cont…    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject 
+
+
+>> Tokens are: 
+[Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , SSH, (, Secure, Shell, ), –, Cont, …,    , Unit-10, Web, Security,                                                         , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject] 
+
+>> PoS Tags are: 
+[('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'PROPN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('SSH', 'PROPN'), ('(', 'PUNCT'), ('Secure', 'PROPN'), ('Shell', 'PROPN'), (')', 'PUNCT'), ('–', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT'), ('   ', 'SPACE'), ('Unit-10', 'NOUN'), ('Web', 'NOUN'), ('Security', 'NOUN'), ('                                                        ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ')] 
+
+>> Dependency Tags are: 
+[('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'advmod'), ('Subject', 'nmod'), (' ', 'prep'), ('SSH', 'nmod'), ('(', 'punct'), ('Secure', 'compound'), ('Shell', 'appos'), (')', 'punct'), ('–', 'punct'), ('Cont', 'appos'), ('…', 'punct'), ('   ', 'nummod'), ('Unit-10', 'compound'), ('Web', 'compound'), ('Security', 'compound'), ('                                                        ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'appos'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'attr')]
+
+>> Bigrams: 
+[[Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , SSH], [SSH, (], [(, Secure], [Secure, Shell], [Shell, )], [), –], [–, Cont], [Cont, …], […,    ], [   , Unit-10], [Unit-10, Web], [Web, Security], [Security,                                                         ], [                                                        , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject]]
+
+>> Trigrams: 
+[[Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , SSH], [ , SSH, (], [SSH, (, Secure], [(, Secure, Shell], [Secure, Shell, )], [Shell, ), –], [), –, Cont], [–, Cont, …], [Cont, …,    ], […,    , Unit-10], [   , Unit-10, Web], [Unit-10, Web, Security], [Web, Security,                                                         ], [Security,                                                         , Darshan], [                                                        , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, (Secure Shell, Cont, Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('SSH', 'ORG'), ('Secure Shell', 'PERSON')]

@@ -1,0 +1,811 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-23 Machine Learning Tutorial  Machine Learning tutorial provides basic and advanced concepts of machine learning. 
+
+
+>> Tokens are: 
+ ['AI-23', 'Machine', 'Learning', 'Tutorial', 'Machine', 'Learning', 'tutorial', 'provides', 'basic', 'advanced', 'concepts', 'machine', 'learning', '.']
+
+>> Bigrams are: 
+ [('AI-23', 'Machine'), ('Machine', 'Learning'), ('Learning', 'Tutorial'), ('Tutorial', 'Machine'), ('Machine', 'Learning'), ('Learning', 'tutorial'), ('tutorial', 'provides'), ('provides', 'basic'), ('basic', 'advanced'), ('advanced', 'concepts'), ('concepts', 'machine'), ('machine', 'learning'), ('learning', '.')]
+
+>> Trigrams are: 
+ [('AI-23', 'Machine', 'Learning'), ('Machine', 'Learning', 'Tutorial'), ('Learning', 'Tutorial', 'Machine'), ('Tutorial', 'Machine', 'Learning'), ('Machine', 'Learning', 'tutorial'), ('Learning', 'tutorial', 'provides'), ('tutorial', 'provides', 'basic'), ('provides', 'basic', 'advanced'), ('basic', 'advanced', 'concepts'), ('advanced', 'concepts', 'machine'), ('concepts', 'machine', 'learning'), ('machine', 'learning', '.')]
+
+>> POS Tags are: 
+ [('AI-23', 'JJ'), ('Machine', 'NNP'), ('Learning', 'NNP'), ('Tutorial', 'NNP'), ('Machine', 'NNP'), ('Learning', 'NNP'), ('tutorial', 'JJ'), ('provides', 'VBZ'), ('basic', 'JJ'), ('advanced', 'JJ'), ('concepts', 'NNS'), ('machine', 'NN'), ('learning', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    AI-23/JJ
+    Machine/NNP
+    Learning/NNP
+    Tutorial/NNP
+    Machine/NNP
+    Learning/NNP)
+  tutorial/JJ
+  provides/VBZ
+  (NP basic/JJ advanced/JJ concepts/NNS machine/NN learning/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-23 Machine Learning Tutorial Machine Learning', 'basic advanced concepts machine learning']
+
+>> Named Entities are: 
+ [('PERSON', 'Machine Learning Tutorial Machine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-23', 'ai-23'), ('Machine', 'machin'), ('Learning', 'learn'), ('Tutorial', 'tutori'), ('Machine', 'machin'), ('Learning', 'learn'), ('tutorial', 'tutori'), ('provides', 'provid'), ('basic', 'basic'), ('advanced', 'advanc'), ('concepts', 'concept'), ('machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-23', 'ai-23'), ('Machine', 'machin'), ('Learning', 'learn'), ('Tutorial', 'tutori'), ('Machine', 'machin'), ('Learning', 'learn'), ('tutorial', 'tutori'), ('provides', 'provid'), ('basic', 'basic'), ('advanced', 'advanc'), ('concepts', 'concept'), ('machine', 'machin'), ('learning', 'learn'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-23', 'AI-23'), ('Machine', 'Machine'), ('Learning', 'Learning'), ('Tutorial', 'Tutorial'), ('Machine', 'Machine'), ('Learning', 'Learning'), ('tutorial', 'tutorial'), ('provides', 'provides'), ('basic', 'basic'), ('advanced', 'advanced'), ('concepts', 'concept'), ('machine', 'machine'), ('learning', 'learning'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+Our machine learning tutorial is designed for students and working professionals. 
+
+
+>> Tokens are: 
+ ['Our', 'machine', 'learning', 'tutorial', 'designed', 'students', 'working', 'professionals', '.']
+
+>> Bigrams are: 
+ [('Our', 'machine'), ('machine', 'learning'), ('learning', 'tutorial'), ('tutorial', 'designed'), ('designed', 'students'), ('students', 'working'), ('working', 'professionals'), ('professionals', '.')]
+
+>> Trigrams are: 
+ [('Our', 'machine', 'learning'), ('machine', 'learning', 'tutorial'), ('learning', 'tutorial', 'designed'), ('tutorial', 'designed', 'students'), ('designed', 'students', 'working'), ('students', 'working', 'professionals'), ('working', 'professionals', '.')]
+
+>> POS Tags are: 
+ [('Our', 'PRP$'), ('machine', 'NN'), ('learning', 'VBG'), ('tutorial', 'JJ'), ('designed', 'VBN'), ('students', 'NNS'), ('working', 'VBG'), ('professionals', 'NNS'), ('.', '.')]
+
+ (S
+  Our/PRP$
+  (NP machine/NN)
+  learning/VBG
+  tutorial/JJ
+  designed/VBN
+  (NP students/NNS)
+  working/VBG
+  (NP professionals/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['machine', 'students', 'professionals']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Our', 'our'), ('machine', 'machin'), ('learning', 'learn'), ('tutorial', 'tutori'), ('designed', 'design'), ('students', 'student'), ('working', 'work'), ('professionals', 'profession'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Our', 'our'), ('machine', 'machin'), ('learning', 'learn'), ('tutorial', 'tutori'), ('designed', 'design'), ('students', 'student'), ('working', 'work'), ('professionals', 'profession'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Our', 'Our'), ('machine', 'machine'), ('learning', 'learning'), ('tutorial', 'tutorial'), ('designed', 'designed'), ('students', 'student'), ('working', 'working'), ('professionals', 'professional'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+Machine learning is a growing technology which enables computers to learn automatically from past data. 
+
+
+>> Tokens are: 
+ ['Machine', 'learning', 'growing', 'technology', 'enables', 'computers', 'learn', 'automatically', 'past', 'data', '.']
+
+>> Bigrams are: 
+ [('Machine', 'learning'), ('learning', 'growing'), ('growing', 'technology'), ('technology', 'enables'), ('enables', 'computers'), ('computers', 'learn'), ('learn', 'automatically'), ('automatically', 'past'), ('past', 'data'), ('data', '.')]
+
+>> Trigrams are: 
+ [('Machine', 'learning', 'growing'), ('learning', 'growing', 'technology'), ('growing', 'technology', 'enables'), ('technology', 'enables', 'computers'), ('enables', 'computers', 'learn'), ('computers', 'learn', 'automatically'), ('learn', 'automatically', 'past'), ('automatically', 'past', 'data'), ('past', 'data', '.')]
+
+>> POS Tags are: 
+ [('Machine', 'NN'), ('learning', 'VBG'), ('growing', 'VBG'), ('technology', 'NN'), ('enables', 'VBZ'), ('computers', 'NNS'), ('learn', 'RBR'), ('automatically', 'RB'), ('past', 'JJ'), ('data', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Machine/NN)
+  learning/VBG
+  growing/VBG
+  (NP technology/NN)
+  enables/VBZ
+  (NP computers/NNS)
+  learn/RBR
+  automatically/RB
+  (NP past/JJ data/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Machine', 'technology', 'computers', 'past data']
+
+>> Named Entities are: 
+ [('GPE', 'Machine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Machine', 'machin'), ('learning', 'learn'), ('growing', 'grow'), ('technology', 'technolog'), ('enables', 'enabl'), ('computers', 'comput'), ('learn', 'learn'), ('automatically', 'automat'), ('past', 'past'), ('data', 'data'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Machine', 'machin'), ('learning', 'learn'), ('growing', 'grow'), ('technology', 'technolog'), ('enables', 'enabl'), ('computers', 'comput'), ('learn', 'learn'), ('automatically', 'automat'), ('past', 'past'), ('data', 'data'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Machine', 'Machine'), ('learning', 'learning'), ('growing', 'growing'), ('technology', 'technology'), ('enables', 'enables'), ('computers', 'computer'), ('learn', 'learn'), ('automatically', 'automatically'), ('past', 'past'), ('data', 'data'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+Machine learning uses various algorithms for building mathematical models and making predictions using historical data or information. 
+
+
+>> Tokens are: 
+ ['Machine', 'learning', 'uses', 'various', 'algorithms', 'building', 'mathematical', 'models', 'making', 'predictions', 'using', 'historical', 'data', 'information', '.']
+
+>> Bigrams are: 
+ [('Machine', 'learning'), ('learning', 'uses'), ('uses', 'various'), ('various', 'algorithms'), ('algorithms', 'building'), ('building', 'mathematical'), ('mathematical', 'models'), ('models', 'making'), ('making', 'predictions'), ('predictions', 'using'), ('using', 'historical'), ('historical', 'data'), ('data', 'information'), ('information', '.')]
+
+>> Trigrams are: 
+ [('Machine', 'learning', 'uses'), ('learning', 'uses', 'various'), ('uses', 'various', 'algorithms'), ('various', 'algorithms', 'building'), ('algorithms', 'building', 'mathematical'), ('building', 'mathematical', 'models'), ('mathematical', 'models', 'making'), ('models', 'making', 'predictions'), ('making', 'predictions', 'using'), ('predictions', 'using', 'historical'), ('using', 'historical', 'data'), ('historical', 'data', 'information'), ('data', 'information', '.')]
+
+>> POS Tags are: 
+ [('Machine', 'NN'), ('learning', 'VBG'), ('uses', 'NNS'), ('various', 'JJ'), ('algorithms', 'JJ'), ('building', 'VBG'), ('mathematical', 'JJ'), ('models', 'NNS'), ('making', 'VBG'), ('predictions', 'NNS'), ('using', 'VBG'), ('historical', 'JJ'), ('data', 'NNS'), ('information', 'NN'), ('.', '.')]
+
+ (S
+  (NP Machine/NN)
+  learning/VBG
+  (NP uses/NNS)
+  various/JJ
+  algorithms/JJ
+  building/VBG
+  (NP mathematical/JJ models/NNS)
+  making/VBG
+  (NP predictions/NNS)
+  using/VBG
+  (NP historical/JJ data/NNS information/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Machine', 'uses', 'mathematical models', 'predictions', 'historical data information']
+
+>> Named Entities are: 
+ [('GPE', 'Machine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Machine', 'machin'), ('learning', 'learn'), ('uses', 'use'), ('various', 'variou'), ('algorithms', 'algorithm'), ('building', 'build'), ('mathematical', 'mathemat'), ('models', 'model'), ('making', 'make'), ('predictions', 'predict'), ('using', 'use'), ('historical', 'histor'), ('data', 'data'), ('information', 'inform'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Machine', 'machin'), ('learning', 'learn'), ('uses', 'use'), ('various', 'various'), ('algorithms', 'algorithm'), ('building', 'build'), ('mathematical', 'mathemat'), ('models', 'model'), ('making', 'make'), ('predictions', 'predict'), ('using', 'use'), ('historical', 'histor'), ('data', 'data'), ('information', 'inform'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Machine', 'Machine'), ('learning', 'learning'), ('uses', 'us'), ('various', 'various'), ('algorithms', 'algorithm'), ('building', 'building'), ('mathematical', 'mathematical'), ('models', 'model'), ('making', 'making'), ('predictions', 'prediction'), ('using', 'using'), ('historical', 'historical'), ('data', 'data'), ('information', 'information'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+Currently, it is being used for various tasks such as image recognition, speech recognition, email filtering, Facebook auto-tagging, recommender system, and many more. 
+
+
+>> Tokens are: 
+ ['Currently', ',', 'used', 'various', 'tasks', 'image', 'recognition', ',', 'speech', 'recognition', ',', 'email', 'filtering', ',', 'Facebook', 'auto-tagging', ',', 'recommender', 'system', ',', 'many', '.']
+
+>> Bigrams are: 
+ [('Currently', ','), (',', 'used'), ('used', 'various'), ('various', 'tasks'), ('tasks', 'image'), ('image', 'recognition'), ('recognition', ','), (',', 'speech'), ('speech', 'recognition'), ('recognition', ','), (',', 'email'), ('email', 'filtering'), ('filtering', ','), (',', 'Facebook'), ('Facebook', 'auto-tagging'), ('auto-tagging', ','), (',', 'recommender'), ('recommender', 'system'), ('system', ','), (',', 'many'), ('many', '.')]
+
+>> Trigrams are: 
+ [('Currently', ',', 'used'), (',', 'used', 'various'), ('used', 'various', 'tasks'), ('various', 'tasks', 'image'), ('tasks', 'image', 'recognition'), ('image', 'recognition', ','), ('recognition', ',', 'speech'), (',', 'speech', 'recognition'), ('speech', 'recognition', ','), ('recognition', ',', 'email'), (',', 'email', 'filtering'), ('email', 'filtering', ','), ('filtering', ',', 'Facebook'), (',', 'Facebook', 'auto-tagging'), ('Facebook', 'auto-tagging', ','), ('auto-tagging', ',', 'recommender'), (',', 'recommender', 'system'), ('recommender', 'system', ','), ('system', ',', 'many'), (',', 'many', '.')]
+
+>> POS Tags are: 
+ [('Currently', 'RB'), (',', ','), ('used', 'VBD'), ('various', 'JJ'), ('tasks', 'NNS'), ('image', 'NN'), ('recognition', 'NN'), (',', ','), ('speech', 'NN'), ('recognition', 'NN'), (',', ','), ('email', 'NN'), ('filtering', 'NN'), (',', ','), ('Facebook', 'NNP'), ('auto-tagging', 'NN'), (',', ','), ('recommender', 'NN'), ('system', 'NN'), (',', ','), ('many', 'JJ'), ('.', '.')]
+
+ (S
+  Currently/RB
+  ,/,
+  used/VBD
+  (NP various/JJ tasks/NNS image/NN recognition/NN)
+  ,/,
+  (NP speech/NN recognition/NN)
+  ,/,
+  (NP email/NN filtering/NN)
+  ,/,
+  (NP Facebook/NNP auto-tagging/NN)
+  ,/,
+  (NP recommender/NN system/NN)
+  ,/,
+  many/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['various tasks image recognition', 'speech recognition', 'email filtering', 'Facebook auto-tagging', 'recommender system']
+
+>> Named Entities are: 
+ [('GPE', 'Facebook')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Currently', 'current'), (',', ','), ('used', 'use'), ('various', 'variou'), ('tasks', 'task'), ('image', 'imag'), ('recognition', 'recognit'), (',', ','), ('speech', 'speech'), ('recognition', 'recognit'), (',', ','), ('email', 'email'), ('filtering', 'filter'), (',', ','), ('Facebook', 'facebook'), ('auto-tagging', 'auto-tag'), (',', ','), ('recommender', 'recommend'), ('system', 'system'), (',', ','), ('many', 'mani'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Currently', 'current'), (',', ','), ('used', 'use'), ('various', 'various'), ('tasks', 'task'), ('image', 'imag'), ('recognition', 'recognit'), (',', ','), ('speech', 'speech'), ('recognition', 'recognit'), (',', ','), ('email', 'email'), ('filtering', 'filter'), (',', ','), ('Facebook', 'facebook'), ('auto-tagging', 'auto-tag'), (',', ','), ('recommender', 'recommend'), ('system', 'system'), (',', ','), ('many', 'mani'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Currently', 'Currently'), (',', ','), ('used', 'used'), ('various', 'various'), ('tasks', 'task'), ('image', 'image'), ('recognition', 'recognition'), (',', ','), ('speech', 'speech'), ('recognition', 'recognition'), (',', ','), ('email', 'email'), ('filtering', 'filtering'), (',', ','), ('Facebook', 'Facebook'), ('auto-tagging', 'auto-tagging'), (',', ','), ('recommender', 'recommender'), ('system', 'system'), (',', ','), ('many', 'many'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+This machine learning tutorial gives you an introduction to machine learning along with the wide range of machine learning techniques such as Supervised, Unsupervised, and Reinforcement learning. 
+
+
+>> Tokens are: 
+ ['This', 'machine', 'learning', 'tutorial', 'gives', 'introduction', 'machine', 'learning', 'along', 'wide', 'range', 'machine', 'learning', 'techniques', 'Supervised', ',', 'Unsupervised', ',', 'Reinforcement', 'learning', '.']
+
+>> Bigrams are: 
+ [('This', 'machine'), ('machine', 'learning'), ('learning', 'tutorial'), ('tutorial', 'gives'), ('gives', 'introduction'), ('introduction', 'machine'), ('machine', 'learning'), ('learning', 'along'), ('along', 'wide'), ('wide', 'range'), ('range', 'machine'), ('machine', 'learning'), ('learning', 'techniques'), ('techniques', 'Supervised'), ('Supervised', ','), (',', 'Unsupervised'), ('Unsupervised', ','), (',', 'Reinforcement'), ('Reinforcement', 'learning'), ('learning', '.')]
+
+>> Trigrams are: 
+ [('This', 'machine', 'learning'), ('machine', 'learning', 'tutorial'), ('learning', 'tutorial', 'gives'), ('tutorial', 'gives', 'introduction'), ('gives', 'introduction', 'machine'), ('introduction', 'machine', 'learning'), ('machine', 'learning', 'along'), ('learning', 'along', 'wide'), ('along', 'wide', 'range'), ('wide', 'range', 'machine'), ('range', 'machine', 'learning'), ('machine', 'learning', 'techniques'), ('learning', 'techniques', 'Supervised'), ('techniques', 'Supervised', ','), ('Supervised', ',', 'Unsupervised'), (',', 'Unsupervised', ','), ('Unsupervised', ',', 'Reinforcement'), (',', 'Reinforcement', 'learning'), ('Reinforcement', 'learning', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('machine', 'NN'), ('learning', 'VBG'), ('tutorial', 'JJ'), ('gives', 'VBZ'), ('introduction', 'NN'), ('machine', 'NN'), ('learning', 'VBG'), ('along', 'IN'), ('wide', 'JJ'), ('range', 'NN'), ('machine', 'NN'), ('learning', 'VBG'), ('techniques', 'NNS'), ('Supervised', 'VBN'), (',', ','), ('Unsupervised', 'VBN'), (',', ','), ('Reinforcement', 'NNP'), ('learning', 'NN'), ('.', '.')]
+
+ (S
+  (NP This/DT machine/NN)
+  learning/VBG
+  tutorial/JJ
+  gives/VBZ
+  (NP introduction/NN machine/NN)
+  learning/VBG
+  along/IN
+  (NP wide/JJ range/NN machine/NN)
+  learning/VBG
+  (NP techniques/NNS)
+  Supervised/VBN
+  ,/,
+  Unsupervised/VBN
+  ,/,
+  (NP Reinforcement/NNP learning/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['This machine', 'introduction machine', 'wide range machine', 'techniques', 'Reinforcement learning']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('machine', 'machin'), ('learning', 'learn'), ('tutorial', 'tutori'), ('gives', 'give'), ('introduction', 'introduct'), ('machine', 'machin'), ('learning', 'learn'), ('along', 'along'), ('wide', 'wide'), ('range', 'rang'), ('machine', 'machin'), ('learning', 'learn'), ('techniques', 'techniqu'), ('Supervised', 'supervis'), (',', ','), ('Unsupervised', 'unsupervis'), (',', ','), ('Reinforcement', 'reinforc'), ('learning', 'learn'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('machine', 'machin'), ('learning', 'learn'), ('tutorial', 'tutori'), ('gives', 'give'), ('introduction', 'introduct'), ('machine', 'machin'), ('learning', 'learn'), ('along', 'along'), ('wide', 'wide'), ('range', 'rang'), ('machine', 'machin'), ('learning', 'learn'), ('techniques', 'techniqu'), ('Supervised', 'supervis'), (',', ','), ('Unsupervised', 'unsupervis'), (',', ','), ('Reinforcement', 'reinforc'), ('learning', 'learn'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('machine', 'machine'), ('learning', 'learning'), ('tutorial', 'tutorial'), ('gives', 'give'), ('introduction', 'introduction'), ('machine', 'machine'), ('learning', 'learning'), ('along', 'along'), ('wide', 'wide'), ('range', 'range'), ('machine', 'machine'), ('learning', 'learning'), ('techniques', 'technique'), ('Supervised', 'Supervised'), (',', ','), ('Unsupervised', 'Unsupervised'), (',', ','), ('Reinforcement', 'Reinforcement'), ('learning', 'learning'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+You will learn about regression and classification models, clustering methods, hidden Markov models, and various sequential models. 
+
+
+>> Tokens are: 
+ ['You', 'learn', 'regression', 'classification', 'models', ',', 'clustering', 'methods', ',', 'hidden', 'Markov', 'models', ',', 'various', 'sequential', 'models', '.']
+
+>> Bigrams are: 
+ [('You', 'learn'), ('learn', 'regression'), ('regression', 'classification'), ('classification', 'models'), ('models', ','), (',', 'clustering'), ('clustering', 'methods'), ('methods', ','), (',', 'hidden'), ('hidden', 'Markov'), ('Markov', 'models'), ('models', ','), (',', 'various'), ('various', 'sequential'), ('sequential', 'models'), ('models', '.')]
+
+>> Trigrams are: 
+ [('You', 'learn', 'regression'), ('learn', 'regression', 'classification'), ('regression', 'classification', 'models'), ('classification', 'models', ','), ('models', ',', 'clustering'), (',', 'clustering', 'methods'), ('clustering', 'methods', ','), ('methods', ',', 'hidden'), (',', 'hidden', 'Markov'), ('hidden', 'Markov', 'models'), ('Markov', 'models', ','), ('models', ',', 'various'), (',', 'various', 'sequential'), ('various', 'sequential', 'models'), ('sequential', 'models', '.')]
+
+>> POS Tags are: 
+ [('You', 'PRP'), ('learn', 'VBP'), ('regression', 'JJ'), ('classification', 'NN'), ('models', 'NNS'), (',', ','), ('clustering', 'VBG'), ('methods', 'NNS'), (',', ','), ('hidden', 'JJ'), ('Markov', 'NNP'), ('models', 'NNS'), (',', ','), ('various', 'JJ'), ('sequential', 'JJ'), ('models', 'NNS'), ('.', '.')]
+
+ (S
+  You/PRP
+  learn/VBP
+  (NP regression/JJ classification/NN models/NNS)
+  ,/,
+  clustering/VBG
+  (NP methods/NNS)
+  ,/,
+  (NP hidden/JJ Markov/NNP models/NNS)
+  ,/,
+  (NP various/JJ sequential/JJ models/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['regression classification models', 'methods', 'hidden Markov models', 'various sequential models']
+
+>> Named Entities are: 
+ [('PERSON', 'Markov')] 
+
+>> Stemming using Porter Stemmer: 
+ [('You', 'you'), ('learn', 'learn'), ('regression', 'regress'), ('classification', 'classif'), ('models', 'model'), (',', ','), ('clustering', 'cluster'), ('methods', 'method'), (',', ','), ('hidden', 'hidden'), ('Markov', 'markov'), ('models', 'model'), (',', ','), ('various', 'variou'), ('sequential', 'sequenti'), ('models', 'model'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('You', 'you'), ('learn', 'learn'), ('regression', 'regress'), ('classification', 'classif'), ('models', 'model'), (',', ','), ('clustering', 'cluster'), ('methods', 'method'), (',', ','), ('hidden', 'hidden'), ('Markov', 'markov'), ('models', 'model'), (',', ','), ('various', 'various'), ('sequential', 'sequenti'), ('models', 'model'), ('.', '.')]
+
+>> Lemmatization: 
+ [('You', 'You'), ('learn', 'learn'), ('regression', 'regression'), ('classification', 'classification'), ('models', 'model'), (',', ','), ('clustering', 'clustering'), ('methods', 'method'), (',', ','), ('hidden', 'hidden'), ('Markov', 'Markov'), ('models', 'model'), (',', ','), ('various', 'various'), ('sequential', 'sequential'), ('models', 'model'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+What is Machine Learning In the real world, we are surrounded by humans who can learn everything from their experiences with their learning capability, and we have computers or machines which work on our instructions. 
+
+
+>> Tokens are: 
+ ['What', 'Machine', 'Learning', 'In', 'real', 'world', ',', 'surrounded', 'humans', 'learn', 'everything', 'experiences', 'learning', 'capability', ',', 'computers', 'machines', 'work', 'instructions', '.']
+
+>> Bigrams are: 
+ [('What', 'Machine'), ('Machine', 'Learning'), ('Learning', 'In'), ('In', 'real'), ('real', 'world'), ('world', ','), (',', 'surrounded'), ('surrounded', 'humans'), ('humans', 'learn'), ('learn', 'everything'), ('everything', 'experiences'), ('experiences', 'learning'), ('learning', 'capability'), ('capability', ','), (',', 'computers'), ('computers', 'machines'), ('machines', 'work'), ('work', 'instructions'), ('instructions', '.')]
+
+>> Trigrams are: 
+ [('What', 'Machine', 'Learning'), ('Machine', 'Learning', 'In'), ('Learning', 'In', 'real'), ('In', 'real', 'world'), ('real', 'world', ','), ('world', ',', 'surrounded'), (',', 'surrounded', 'humans'), ('surrounded', 'humans', 'learn'), ('humans', 'learn', 'everything'), ('learn', 'everything', 'experiences'), ('everything', 'experiences', 'learning'), ('experiences', 'learning', 'capability'), ('learning', 'capability', ','), ('capability', ',', 'computers'), (',', 'computers', 'machines'), ('computers', 'machines', 'work'), ('machines', 'work', 'instructions'), ('work', 'instructions', '.')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Machine', 'NNP'), ('Learning', 'NNP'), ('In', 'IN'), ('real', 'JJ'), ('world', 'NN'), (',', ','), ('surrounded', 'VBD'), ('humans', 'NNS'), ('learn', 'VBP'), ('everything', 'NN'), ('experiences', 'NNS'), ('learning', 'VBG'), ('capability', 'NN'), (',', ','), ('computers', 'NNS'), ('machines', 'NNS'), ('work', 'VBP'), ('instructions', 'NNS'), ('.', '.')]
+
+ (S
+  What/WP
+  (NP Machine/NNP Learning/NNP)
+  In/IN
+  (NP real/JJ world/NN)
+  ,/,
+  surrounded/VBD
+  (NP humans/NNS)
+  learn/VBP
+  (NP everything/NN experiences/NNS)
+  learning/VBG
+  (NP capability/NN)
+  ,/,
+  (NP computers/NNS machines/NNS)
+  work/VBP
+  (NP instructions/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Machine Learning', 'real world', 'humans', 'everything experiences', 'capability', 'computers machines', 'instructions']
+
+>> Named Entities are: 
+ [('PERSON', 'Machine Learning')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Machine', 'machin'), ('Learning', 'learn'), ('In', 'in'), ('real', 'real'), ('world', 'world'), (',', ','), ('surrounded', 'surround'), ('humans', 'human'), ('learn', 'learn'), ('everything', 'everyth'), ('experiences', 'experi'), ('learning', 'learn'), ('capability', 'capabl'), (',', ','), ('computers', 'comput'), ('machines', 'machin'), ('work', 'work'), ('instructions', 'instruct'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Machine', 'machin'), ('Learning', 'learn'), ('In', 'in'), ('real', 'real'), ('world', 'world'), (',', ','), ('surrounded', 'surround'), ('humans', 'human'), ('learn', 'learn'), ('everything', 'everyth'), ('experiences', 'experi'), ('learning', 'learn'), ('capability', 'capabl'), (',', ','), ('computers', 'comput'), ('machines', 'machin'), ('work', 'work'), ('instructions', 'instruct'), ('.', '.')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Machine', 'Machine'), ('Learning', 'Learning'), ('In', 'In'), ('real', 'real'), ('world', 'world'), (',', ','), ('surrounded', 'surrounded'), ('humans', 'human'), ('learn', 'learn'), ('everything', 'everything'), ('experiences', 'experience'), ('learning', 'learning'), ('capability', 'capability'), (',', ','), ('computers', 'computer'), ('machines', 'machine'), ('work', 'work'), ('instructions', 'instruction'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+But can a machine also learn from experiences or past data like a human does? 
+
+
+>> Tokens are: 
+ ['But', 'machine', 'also', 'learn', 'experiences', 'past', 'data', 'like', 'human', '?']
+
+>> Bigrams are: 
+ [('But', 'machine'), ('machine', 'also'), ('also', 'learn'), ('learn', 'experiences'), ('experiences', 'past'), ('past', 'data'), ('data', 'like'), ('like', 'human'), ('human', '?')]
+
+>> Trigrams are: 
+ [('But', 'machine', 'also'), ('machine', 'also', 'learn'), ('also', 'learn', 'experiences'), ('learn', 'experiences', 'past'), ('experiences', 'past', 'data'), ('past', 'data', 'like'), ('data', 'like', 'human'), ('like', 'human', '?')]
+
+>> POS Tags are: 
+ [('But', 'CC'), ('machine', 'NN'), ('also', 'RB'), ('learn', 'JJ'), ('experiences', 'NNS'), ('past', 'IN'), ('data', 'NNS'), ('like', 'IN'), ('human', 'NN'), ('?', '.')]
+
+ (S
+  But/CC
+  (NP machine/NN)
+  also/RB
+  (NP learn/JJ experiences/NNS)
+  past/IN
+  (NP data/NNS)
+  like/IN
+  (NP human/NN)
+  ?/.) 
+
+
+>> Noun Phrases are: 
+ ['machine', 'learn experiences', 'data', 'human']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('But', 'but'), ('machine', 'machin'), ('also', 'also'), ('learn', 'learn'), ('experiences', 'experi'), ('past', 'past'), ('data', 'data'), ('like', 'like'), ('human', 'human'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('But', 'but'), ('machine', 'machin'), ('also', 'also'), ('learn', 'learn'), ('experiences', 'experi'), ('past', 'past'), ('data', 'data'), ('like', 'like'), ('human', 'human'), ('?', '?')]
+
+>> Lemmatization: 
+ [('But', 'But'), ('machine', 'machine'), ('also', 'also'), ('learn', 'learn'), ('experiences', 'experience'), ('past', 'past'), ('data', 'data'), ('like', 'like'), ('human', 'human'), ('?', '?')]
+
+
+
+============================ Sentence 10 =============================
+
+So here comes the role of Machine Learning. 
+
+
+>> Tokens are: 
+ ['So', 'comes', 'role', 'Machine', 'Learning', '.']
+
+>> Bigrams are: 
+ [('So', 'comes'), ('comes', 'role'), ('role', 'Machine'), ('Machine', 'Learning'), ('Learning', '.')]
+
+>> Trigrams are: 
+ [('So', 'comes', 'role'), ('comes', 'role', 'Machine'), ('role', 'Machine', 'Learning'), ('Machine', 'Learning', '.')]
+
+>> POS Tags are: 
+ [('So', 'RB'), ('comes', 'VBZ'), ('role', 'NN'), ('Machine', 'NNP'), ('Learning', 'NNP'), ('.', '.')]
+
+ (S So/RB comes/VBZ (NP role/NN Machine/NNP Learning/NNP) ./.) 
+
+
+>> Noun Phrases are: 
+ ['role Machine Learning']
+
+>> Named Entities are: 
+ [('PERSON', 'Machine Learning')] 
+
+>> Stemming using Porter Stemmer: 
+ [('So', 'so'), ('comes', 'come'), ('role', 'role'), ('Machine', 'machin'), ('Learning', 'learn'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('So', 'so'), ('comes', 'come'), ('role', 'role'), ('Machine', 'machin'), ('Learning', 'learn'), ('.', '.')]
+
+>> Lemmatization: 
+ [('So', 'So'), ('comes', 'come'), ('role', 'role'), ('Machine', 'Machine'), ('Learning', 'Learning'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+Machine Learning is said as a subset of artificial intelligence that is mainly concerned with the development of algorithms which allow a computer to learn from the data and past experiences on their own. 
+
+
+>> Tokens are: 
+ ['Machine', 'Learning', 'said', 'subset', 'artificial', 'intelligence', 'mainly', 'concerned', 'development', 'algorithms', 'allow', 'computer', 'learn', 'data', 'past', 'experiences', '.']
+
+>> Bigrams are: 
+ [('Machine', 'Learning'), ('Learning', 'said'), ('said', 'subset'), ('subset', 'artificial'), ('artificial', 'intelligence'), ('intelligence', 'mainly'), ('mainly', 'concerned'), ('concerned', 'development'), ('development', 'algorithms'), ('algorithms', 'allow'), ('allow', 'computer'), ('computer', 'learn'), ('learn', 'data'), ('data', 'past'), ('past', 'experiences'), ('experiences', '.')]
+
+>> Trigrams are: 
+ [('Machine', 'Learning', 'said'), ('Learning', 'said', 'subset'), ('said', 'subset', 'artificial'), ('subset', 'artificial', 'intelligence'), ('artificial', 'intelligence', 'mainly'), ('intelligence', 'mainly', 'concerned'), ('mainly', 'concerned', 'development'), ('concerned', 'development', 'algorithms'), ('development', 'algorithms', 'allow'), ('algorithms', 'allow', 'computer'), ('allow', 'computer', 'learn'), ('computer', 'learn', 'data'), ('learn', 'data', 'past'), ('data', 'past', 'experiences'), ('past', 'experiences', '.')]
+
+>> POS Tags are: 
+ [('Machine', 'NN'), ('Learning', 'NNP'), ('said', 'VBD'), ('subset', 'VBN'), ('artificial', 'JJ'), ('intelligence', 'NN'), ('mainly', 'RB'), ('concerned', 'VBD'), ('development', 'NN'), ('algorithms', 'RB'), ('allow', 'JJ'), ('computer', 'NN'), ('learn', 'NN'), ('data', 'NNS'), ('past', 'JJ'), ('experiences', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Machine/NN Learning/NNP)
+  said/VBD
+  subset/VBN
+  (NP artificial/JJ intelligence/NN)
+  mainly/RB
+  concerned/VBD
+  (NP development/NN)
+  algorithms/RB
+  (NP allow/JJ computer/NN learn/NN data/NNS)
+  (NP past/JJ experiences/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Machine Learning', 'artificial intelligence', 'development', 'allow computer learn data', 'past experiences']
+
+>> Named Entities are: 
+ [('PERSON', 'Machine Learning')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Machine', 'machin'), ('Learning', 'learn'), ('said', 'said'), ('subset', 'subset'), ('artificial', 'artifici'), ('intelligence', 'intellig'), ('mainly', 'mainli'), ('concerned', 'concern'), ('development', 'develop'), ('algorithms', 'algorithm'), ('allow', 'allow'), ('computer', 'comput'), ('learn', 'learn'), ('data', 'data'), ('past', 'past'), ('experiences', 'experi'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Machine', 'machin'), ('Learning', 'learn'), ('said', 'said'), ('subset', 'subset'), ('artificial', 'artifici'), ('intelligence', 'intellig'), ('mainly', 'main'), ('concerned', 'concern'), ('development', 'develop'), ('algorithms', 'algorithm'), ('allow', 'allow'), ('computer', 'comput'), ('learn', 'learn'), ('data', 'data'), ('past', 'past'), ('experiences', 'experi'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Machine', 'Machine'), ('Learning', 'Learning'), ('said', 'said'), ('subset', 'subset'), ('artificial', 'artificial'), ('intelligence', 'intelligence'), ('mainly', 'mainly'), ('concerned', 'concerned'), ('development', 'development'), ('algorithms', 'algorithm'), ('allow', 'allow'), ('computer', 'computer'), ('learn', 'learn'), ('data', 'data'), ('past', 'past'), ('experiences', 'experience'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+The term machine learning was first introduced by Arthur Samuel in 1959. 
+
+
+>> Tokens are: 
+ ['The', 'term', 'machine', 'learning', 'first', 'introduced', 'Arthur', 'Samuel', '1959', '.']
+
+>> Bigrams are: 
+ [('The', 'term'), ('term', 'machine'), ('machine', 'learning'), ('learning', 'first'), ('first', 'introduced'), ('introduced', 'Arthur'), ('Arthur', 'Samuel'), ('Samuel', '1959'), ('1959', '.')]
+
+>> Trigrams are: 
+ [('The', 'term', 'machine'), ('term', 'machine', 'learning'), ('machine', 'learning', 'first'), ('learning', 'first', 'introduced'), ('first', 'introduced', 'Arthur'), ('introduced', 'Arthur', 'Samuel'), ('Arthur', 'Samuel', '1959'), ('Samuel', '1959', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('term', 'NN'), ('machine', 'NN'), ('learning', 'VBG'), ('first', 'RB'), ('introduced', 'VBN'), ('Arthur', 'NNP'), ('Samuel', 'NNP'), ('1959', 'CD'), ('.', '.')]
+
+ (S
+  (NP The/DT term/NN machine/NN)
+  learning/VBG
+  first/RB
+  introduced/VBN
+  (NP Arthur/NNP Samuel/NNP)
+  1959/CD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The term machine', 'Arthur Samuel']
+
+>> Named Entities are: 
+ [('PERSON', 'Arthur Samuel')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('term', 'term'), ('machine', 'machin'), ('learning', 'learn'), ('first', 'first'), ('introduced', 'introduc'), ('Arthur', 'arthur'), ('Samuel', 'samuel'), ('1959', '1959'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('term', 'term'), ('machine', 'machin'), ('learning', 'learn'), ('first', 'first'), ('introduced', 'introduc'), ('Arthur', 'arthur'), ('Samuel', 'samuel'), ('1959', '1959'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('term', 'term'), ('machine', 'machine'), ('learning', 'learning'), ('first', 'first'), ('introduced', 'introduced'), ('Arthur', 'Arthur'), ('Samuel', 'Samuel'), ('1959', '1959'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+We can define it in a summarized way as: Machine learning enables a machine to automatically learn from data, improve performance from experiences, and predict things without being explicitly programmed. 
+
+
+>> Tokens are: 
+ ['We', 'define', 'summarized', 'way', ':', 'Machine', 'learning', 'enables', 'machine', 'automatically', 'learn', 'data', ',', 'improve', 'performance', 'experiences', ',', 'predict', 'things', 'without', 'explicitly', 'programmed', '.']
+
+>> Bigrams are: 
+ [('We', 'define'), ('define', 'summarized'), ('summarized', 'way'), ('way', ':'), (':', 'Machine'), ('Machine', 'learning'), ('learning', 'enables'), ('enables', 'machine'), ('machine', 'automatically'), ('automatically', 'learn'), ('learn', 'data'), ('data', ','), (',', 'improve'), ('improve', 'performance'), ('performance', 'experiences'), ('experiences', ','), (',', 'predict'), ('predict', 'things'), ('things', 'without'), ('without', 'explicitly'), ('explicitly', 'programmed'), ('programmed', '.')]
+
+>> Trigrams are: 
+ [('We', 'define', 'summarized'), ('define', 'summarized', 'way'), ('summarized', 'way', ':'), ('way', ':', 'Machine'), (':', 'Machine', 'learning'), ('Machine', 'learning', 'enables'), ('learning', 'enables', 'machine'), ('enables', 'machine', 'automatically'), ('machine', 'automatically', 'learn'), ('automatically', 'learn', 'data'), ('learn', 'data', ','), ('data', ',', 'improve'), (',', 'improve', 'performance'), ('improve', 'performance', 'experiences'), ('performance', 'experiences', ','), ('experiences', ',', 'predict'), (',', 'predict', 'things'), ('predict', 'things', 'without'), ('things', 'without', 'explicitly'), ('without', 'explicitly', 'programmed'), ('explicitly', 'programmed', '.')]
+
+>> POS Tags are: 
+ [('We', 'PRP'), ('define', 'VBP'), ('summarized', 'JJ'), ('way', 'NN'), (':', ':'), ('Machine', 'NN'), ('learning', 'VBG'), ('enables', 'NNS'), ('machine', 'NN'), ('automatically', 'RB'), ('learn', 'JJ'), ('data', 'NNS'), (',', ','), ('improve', 'VB'), ('performance', 'NN'), ('experiences', 'NNS'), (',', ','), ('predict', 'VBP'), ('things', 'NNS'), ('without', 'IN'), ('explicitly', 'RB'), ('programmed', 'VBN'), ('.', '.')]
+
+ (S
+  We/PRP
+  define/VBP
+  (NP summarized/JJ way/NN)
+  :/:
+  (NP Machine/NN)
+  learning/VBG
+  (NP enables/NNS machine/NN)
+  automatically/RB
+  (NP learn/JJ data/NNS)
+  ,/,
+  improve/VB
+  (NP performance/NN experiences/NNS)
+  ,/,
+  predict/VBP
+  (NP things/NNS)
+  without/IN
+  explicitly/RB
+  programmed/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['summarized way', 'Machine', 'enables machine', 'learn data', 'performance experiences', 'things']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('We', 'we'), ('define', 'defin'), ('summarized', 'summar'), ('way', 'way'), (':', ':'), ('Machine', 'machin'), ('learning', 'learn'), ('enables', 'enabl'), ('machine', 'machin'), ('automatically', 'automat'), ('learn', 'learn'), ('data', 'data'), (',', ','), ('improve', 'improv'), ('performance', 'perform'), ('experiences', 'experi'), (',', ','), ('predict', 'predict'), ('things', 'thing'), ('without', 'without'), ('explicitly', 'explicitli'), ('programmed', 'program'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('We', 'we'), ('define', 'defin'), ('summarized', 'summar'), ('way', 'way'), (':', ':'), ('Machine', 'machin'), ('learning', 'learn'), ('enables', 'enabl'), ('machine', 'machin'), ('automatically', 'automat'), ('learn', 'learn'), ('data', 'data'), (',', ','), ('improve', 'improv'), ('performance', 'perform'), ('experiences', 'experi'), (',', ','), ('predict', 'predict'), ('things', 'thing'), ('without', 'without'), ('explicitly', 'explicit'), ('programmed', 'program'), ('.', '.')]
+
+>> Lemmatization: 
+ [('We', 'We'), ('define', 'define'), ('summarized', 'summarized'), ('way', 'way'), (':', ':'), ('Machine', 'Machine'), ('learning', 'learning'), ('enables', 'enables'), ('machine', 'machine'), ('automatically', 'automatically'), ('learn', 'learn'), ('data', 'data'), (',', ','), ('improve', 'improve'), ('performance', 'performance'), ('experiences', 'experience'), (',', ','), ('predict', 'predict'), ('things', 'thing'), ('without', 'without'), ('explicitly', 'explicitly'), ('programmed', 'programmed'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+With the help of sample historical data, which is known as training data, machine learning algorithms build a mathematical model that helps in making predictions or decisions without being explicitly programmed. 
+
+
+>> Tokens are: 
+ ['With', 'help', 'sample', 'historical', 'data', ',', 'known', 'training', 'data', ',', 'machine', 'learning', 'algorithms', 'build', 'mathematical', 'model', 'helps', 'making', 'predictions', 'decisions', 'without', 'explicitly', 'programmed', '.']
+
+>> Bigrams are: 
+ [('With', 'help'), ('help', 'sample'), ('sample', 'historical'), ('historical', 'data'), ('data', ','), (',', 'known'), ('known', 'training'), ('training', 'data'), ('data', ','), (',', 'machine'), ('machine', 'learning'), ('learning', 'algorithms'), ('algorithms', 'build'), ('build', 'mathematical'), ('mathematical', 'model'), ('model', 'helps'), ('helps', 'making'), ('making', 'predictions'), ('predictions', 'decisions'), ('decisions', 'without'), ('without', 'explicitly'), ('explicitly', 'programmed'), ('programmed', '.')]
+
+>> Trigrams are: 
+ [('With', 'help', 'sample'), ('help', 'sample', 'historical'), ('sample', 'historical', 'data'), ('historical', 'data', ','), ('data', ',', 'known'), (',', 'known', 'training'), ('known', 'training', 'data'), ('training', 'data', ','), ('data', ',', 'machine'), (',', 'machine', 'learning'), ('machine', 'learning', 'algorithms'), ('learning', 'algorithms', 'build'), ('algorithms', 'build', 'mathematical'), ('build', 'mathematical', 'model'), ('mathematical', 'model', 'helps'), ('model', 'helps', 'making'), ('helps', 'making', 'predictions'), ('making', 'predictions', 'decisions'), ('predictions', 'decisions', 'without'), ('decisions', 'without', 'explicitly'), ('without', 'explicitly', 'programmed'), ('explicitly', 'programmed', '.')]
+
+>> POS Tags are: 
+ [('With', 'IN'), ('help', 'NN'), ('sample', 'VB'), ('historical', 'JJ'), ('data', 'NNS'), (',', ','), ('known', 'VBN'), ('training', 'NN'), ('data', 'NNS'), (',', ','), ('machine', 'NN'), ('learning', 'VBG'), ('algorithms', 'JJ'), ('build', 'JJ'), ('mathematical', 'JJ'), ('model', 'NN'), ('helps', 'VBZ'), ('making', 'VBG'), ('predictions', 'NNS'), ('decisions', 'NNS'), ('without', 'IN'), ('explicitly', 'RB'), ('programmed', 'VBN'), ('.', '.')]
+
+ (S
+  With/IN
+  (NP help/NN)
+  sample/VB
+  (NP historical/JJ data/NNS)
+  ,/,
+  known/VBN
+  (NP training/NN data/NNS)
+  ,/,
+  (NP machine/NN)
+  learning/VBG
+  (NP algorithms/JJ build/JJ mathematical/JJ model/NN)
+  helps/VBZ
+  making/VBG
+  (NP predictions/NNS decisions/NNS)
+  without/IN
+  explicitly/RB
+  programmed/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['help', 'historical data', 'training data', 'machine', 'algorithms build mathematical model', 'predictions decisions']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('With', 'with'), ('help', 'help'), ('sample', 'sampl'), ('historical', 'histor'), ('data', 'data'), (',', ','), ('known', 'known'), ('training', 'train'), ('data', 'data'), (',', ','), ('machine', 'machin'), ('learning', 'learn'), ('algorithms', 'algorithm'), ('build', 'build'), ('mathematical', 'mathemat'), ('model', 'model'), ('helps', 'help'), ('making', 'make'), ('predictions', 'predict'), ('decisions', 'decis'), ('without', 'without'), ('explicitly', 'explicitli'), ('programmed', 'program'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('With', 'with'), ('help', 'help'), ('sample', 'sampl'), ('historical', 'histor'), ('data', 'data'), (',', ','), ('known', 'known'), ('training', 'train'), ('data', 'data'), (',', ','), ('machine', 'machin'), ('learning', 'learn'), ('algorithms', 'algorithm'), ('build', 'build'), ('mathematical', 'mathemat'), ('model', 'model'), ('helps', 'help'), ('making', 'make'), ('predictions', 'predict'), ('decisions', 'decis'), ('without', 'without'), ('explicitly', 'explicit'), ('programmed', 'program'), ('.', '.')]
+
+>> Lemmatization: 
+ [('With', 'With'), ('help', 'help'), ('sample', 'sample'), ('historical', 'historical'), ('data', 'data'), (',', ','), ('known', 'known'), ('training', 'training'), ('data', 'data'), (',', ','), ('machine', 'machine'), ('learning', 'learning'), ('algorithms', 'algorithm'), ('build', 'build'), ('mathematical', 'mathematical'), ('model', 'model'), ('helps', 'help'), ('making', 'making'), ('predictions', 'prediction'), ('decisions', 'decision'), ('without', 'without'), ('explicitly', 'explicitly'), ('programmed', 'programmed'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+Machine learning brings computer science and statistics together for creating predictive models. 
+
+
+>> Tokens are: 
+ ['Machine', 'learning', 'brings', 'computer', 'science', 'statistics', 'together', 'creating', 'predictive', 'models', '.']
+
+>> Bigrams are: 
+ [('Machine', 'learning'), ('learning', 'brings'), ('brings', 'computer'), ('computer', 'science'), ('science', 'statistics'), ('statistics', 'together'), ('together', 'creating'), ('creating', 'predictive'), ('predictive', 'models'), ('models', '.')]
+
+>> Trigrams are: 
+ [('Machine', 'learning', 'brings'), ('learning', 'brings', 'computer'), ('brings', 'computer', 'science'), ('computer', 'science', 'statistics'), ('science', 'statistics', 'together'), ('statistics', 'together', 'creating'), ('together', 'creating', 'predictive'), ('creating', 'predictive', 'models'), ('predictive', 'models', '.')]
+
+>> POS Tags are: 
+ [('Machine', 'NN'), ('learning', 'NN'), ('brings', 'VBZ'), ('computer', 'NN'), ('science', 'NN'), ('statistics', 'NNS'), ('together', 'RB'), ('creating', 'VBG'), ('predictive', 'JJ'), ('models', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Machine/NN learning/NN)
+  brings/VBZ
+  (NP computer/NN science/NN statistics/NNS)
+  together/RB
+  creating/VBG
+  (NP predictive/JJ models/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Machine learning', 'computer science statistics', 'predictive models']
+
+>> Named Entities are: 
+ [('GPE', 'Machine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Machine', 'machin'), ('learning', 'learn'), ('brings', 'bring'), ('computer', 'comput'), ('science', 'scienc'), ('statistics', 'statist'), ('together', 'togeth'), ('creating', 'creat'), ('predictive', 'predict'), ('models', 'model'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Machine', 'machin'), ('learning', 'learn'), ('brings', 'bring'), ('computer', 'comput'), ('science', 'scienc'), ('statistics', 'statist'), ('together', 'togeth'), ('creating', 'creat'), ('predictive', 'predict'), ('models', 'model'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Machine', 'Machine'), ('learning', 'learning'), ('brings', 'brings'), ('computer', 'computer'), ('science', 'science'), ('statistics', 'statistic'), ('together', 'together'), ('creating', 'creating'), ('predictive', 'predictive'), ('models', 'model'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+Machine learning constructs or uses the algorithms that learn from historical data. 
+
+
+>> Tokens are: 
+ ['Machine', 'learning', 'constructs', 'uses', 'algorithms', 'learn', 'historical', 'data', '.']
+
+>> Bigrams are: 
+ [('Machine', 'learning'), ('learning', 'constructs'), ('constructs', 'uses'), ('uses', 'algorithms'), ('algorithms', 'learn'), ('learn', 'historical'), ('historical', 'data'), ('data', '.')]
+
+>> Trigrams are: 
+ [('Machine', 'learning', 'constructs'), ('learning', 'constructs', 'uses'), ('constructs', 'uses', 'algorithms'), ('uses', 'algorithms', 'learn'), ('algorithms', 'learn', 'historical'), ('learn', 'historical', 'data'), ('historical', 'data', '.')]
+
+>> POS Tags are: 
+ [('Machine', 'NN'), ('learning', 'NN'), ('constructs', 'NNS'), ('uses', 'VBZ'), ('algorithms', 'NN'), ('learn', 'JJ'), ('historical', 'JJ'), ('data', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Machine/NN learning/NN constructs/NNS)
+  uses/VBZ
+  (NP algorithms/NN)
+  (NP learn/JJ historical/JJ data/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Machine learning constructs', 'algorithms', 'learn historical data']
+
+>> Named Entities are: 
+ [('GPE', 'Machine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Machine', 'machin'), ('learning', 'learn'), ('constructs', 'construct'), ('uses', 'use'), ('algorithms', 'algorithm'), ('learn', 'learn'), ('historical', 'histor'), ('data', 'data'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Machine', 'machin'), ('learning', 'learn'), ('constructs', 'construct'), ('uses', 'use'), ('algorithms', 'algorithm'), ('learn', 'learn'), ('historical', 'histor'), ('data', 'data'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Machine', 'Machine'), ('learning', 'learning'), ('constructs', 'construct'), ('uses', 'us'), ('algorithms', 'algorithm'), ('learn', 'learn'), ('historical', 'historical'), ('data', 'data'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+The more we will provide the information, the higher will be the performance. 
+
+
+>> Tokens are: 
+ ['The', 'provide', 'information', ',', 'higher', 'performance', '.']
+
+>> Bigrams are: 
+ [('The', 'provide'), ('provide', 'information'), ('information', ','), (',', 'higher'), ('higher', 'performance'), ('performance', '.')]
+
+>> Trigrams are: 
+ [('The', 'provide', 'information'), ('provide', 'information', ','), ('information', ',', 'higher'), (',', 'higher', 'performance'), ('higher', 'performance', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('provide', 'NN'), ('information', 'NN'), (',', ','), ('higher', 'JJR'), ('performance', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT provide/NN information/NN)
+  ,/,
+  higher/JJR
+  (NP performance/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The provide information', 'performance']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('provide', 'provid'), ('information', 'inform'), (',', ','), ('higher', 'higher'), ('performance', 'perform'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('provide', 'provid'), ('information', 'inform'), (',', ','), ('higher', 'higher'), ('performance', 'perform'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('provide', 'provide'), ('information', 'information'), (',', ','), ('higher', 'higher'), ('performance', 'performance'), ('.', '.')]
+

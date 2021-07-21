@@ -1,0 +1,661 @@
+
+
+========================== Sentence 1 ===========================
+
+ AI-12   Implementation Aspects of Syntactic Analysis 
+
+Tokens are: 
+>> ['AI', '-', '12', 'Implementation', 'Aspects', 'of', 'Syntactic', 'Analysis'] 
+
+ UPOS tags are: 
+>> [('AI', 'NOUN'), ('-', 'PUNCT'), ('12', 'NUM'), ('Implementation', 'NOUN'), ('Aspects', 'NOUN'), ('of', 'ADP'), ('Syntactic', 'ADJ'), ('Analysis', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('AI', 'NN'), ('-', ','), ('12', 'CD'), ('Implementation', 'NN'), ('Aspects', 'NNS'), ('of', 'IN'), ('Syntactic', 'JJ'), ('Analysis', 'NN')] 
+
+ Lemmas are: 
+>> [('AI', 'ai'), ('-', '-'), ('12', '12'), ('Implementation', 'implementation'), ('Aspects', 'aspect'), ('of', 'of'), ('Syntactic', 'Syntactic'), ('Analysis', 'analysis')] 
+
+ Dependency tags are: 
+>> [(('AI', 'root'), 'root'), (('-', 'AI'), 'punct'), (('12', 'Implementation'), 'nummod'), (('Implementation', 'Aspects'), 'compound'), (('Aspects', 'AI'), 'appos'), (('of', 'Analysis'), 'case'), (('Syntactic', 'Analysis'), 'amod'), (('Analysis', 'Aspects'), 'nmod')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 2 ===========================
+
+ There are a number of algorithms researchers have developed for syntactic analysis, but we consider only the following simple methods − · Context-Free Grammar · Top-Down Parser Let us see them in detail − Context-Free Grammar 
+
+Tokens are: 
+>> ['There', 'are', 'a', 'number', 'of', 'algorithms', 'researchers', 'have', 'developed', 'for', 'syntactic', 'analysis', ',', 'but', 'we', 'consider', 'only', 'the', 'following', 'simple', 'methods', '−', '·', 'Context', '-', 'Free', 'Grammar', '·', 'Top', '-', 'Down', 'Parser', 'Let', 'us', 'see', 'them', 'in', 'detail', '−', 'Context', '-', 'Free', 'Grammar'] 
+
+ UPOS tags are: 
+>> [('There', 'PRON'), ('are', 'VERB'), ('a', 'DET'), ('number', 'NOUN'), ('of', 'ADP'), ('algorithms', 'NOUN'), ('researchers', 'NOUN'), ('have', 'AUX'), ('developed', 'VERB'), ('for', 'ADP'), ('syntactic', 'ADJ'), ('analysis', 'NOUN'), (',', 'PUNCT'), ('but', 'CCONJ'), ('we', 'PRON'), ('consider', 'VERB'), ('only', 'ADV'), ('the', 'DET'), ('following', 'VERB'), ('simple', 'ADJ'), ('methods', 'NOUN'), ('−', 'PUNCT'), ('·', 'PUNCT'), ('Context', 'NOUN'), ('-', 'PUNCT'), ('Free', 'ADJ'), ('Grammar', 'NOUN'), ('·', 'PUNCT'), ('Top', 'ADJ'), ('-', 'PUNCT'), ('Down', 'NOUN'), ('Parser', 'NOUN'), ('Let', 'VERB'), ('us', 'PRON'), ('see', 'VERB'), ('them', 'PRON'), ('in', 'ADP'), ('detail', 'NOUN'), ('−', 'PUNCT'), ('Context', 'NOUN'), ('-', 'PUNCT'), ('Free', 'ADJ'), ('Grammar', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('There', 'EX'), ('are', 'VBP'), ('a', 'DT'), ('number', 'NN'), ('of', 'IN'), ('algorithms', 'NNS'), ('researchers', 'NNS'), ('have', 'VBP'), ('developed', 'VBN'), ('for', 'IN'), ('syntactic', 'JJ'), ('analysis', 'NN'), (',', ','), ('but', 'CC'), ('we', 'PRP'), ('consider', 'VBP'), ('only', 'RB'), ('the', 'DT'), ('following', 'VBG'), ('simple', 'JJ'), ('methods', 'NNS'), ('−', ','), ('·', 'NFP'), ('Context', 'NN'), ('-', 'HYPH'), ('Free', 'JJ'), ('Grammar', 'NN'), ('·', 'NFP'), ('Top', 'JJ'), ('-', 'HYPH'), ('Down', 'NN'), ('Parser', 'NN'), ('Let', 'VB'), ('us', 'PRP'), ('see', 'VB'), ('them', 'PRP'), ('in', 'IN'), ('detail', 'NN'), ('−', ','), ('Context', 'NN'), ('-', ','), ('Free', 'JJ'), ('Grammar', 'NN')] 
+
+ Lemmas are: 
+>> [('There', 'there'), ('are', 'be'), ('a', 'a'), ('number', 'number'), ('of', 'of'), ('algorithms', 'algorithm'), ('researchers', 'researcher'), ('have', 'have'), ('developed', 'develop'), ('for', 'for'), ('syntactic', 'syntactic'), ('analysis', 'analysis'), (',', ','), ('but', 'but'), ('we', 'we'), ('consider', 'consider'), ('only', 'only'), ('the', 'the'), ('following', 'follow'), ('simple', 'simple'), ('methods', 'method'), ('−', "''"), ('·', '·'), ('Context', 'context'), ('-', '-'), ('Free', 'free'), ('Grammar', 'grammar'), ('·', '·'), ('Top', 'top'), ('-', '-'), ('Down', 'down'), ('Parser', 'parser'), ('Let', 'let'), ('us', 'we'), ('see', 'see'), ('them', 'they'), ('in', 'in'), ('detail', 'detail'), ('−', "''"), ('Context', 'context'), ('-', '-'), ('Free', 'free'), ('Grammar', 'grammar')] 
+
+ Dependency tags are: 
+>> [(('There', 'are'), 'expl'), (('are', 'root'), 'root'), (('a', 'number'), 'det'), (('number', 'are'), 'nsubj'), (('of', 'algorithms'), 'case'), (('algorithms', 'number'), 'nmod'), (('researchers', 'developed'), 'nsubj'), (('have', 'developed'), 'aux'), (('developed', 'algorithms'), 'acl:relcl'), (('for', 'analysis'), 'case'), (('syntactic', 'analysis'), 'amod'), (('analysis', 'developed'), 'obl'), ((',', 'consider'), 'punct'), (('but', 'consider'), 'cc'), (('we', 'consider'), 'nsubj'), (('consider', 'are'), 'conj'), (('only', 'methods'), 'advmod'), (('the', 'methods'), 'det'), (('following', 'methods'), 'amod'), (('simple', 'methods'), 'amod'), (('methods', 'consider'), 'obj'), (('−', 'methods'), 'punct'), (('·', 'Grammar'), 'punct'), (('Context', 'Grammar'), 'compound'), (('-', 'Free'), 'punct'), (('Free', 'Grammar'), 'amod'), (('Grammar', 'methods'), 'appos'), (('·', 'Grammar'), 'punct'), (('Top', 'Down'), 'amod'), (('-', 'Down'), 'punct'), (('Down', 'Parser'), 'compound'), (('Parser', 'Let'), 'nsubj'), (('Let', 'consider'), 'parataxis'), (('us', 'Let'), 'obj'), (('see', 'Let'), 'xcomp'), (('them', 'see'), 'obj'), (('in', 'detail'), 'case'), (('detail', 'see'), 'obl'), (('−', 'Context'), 'punct'), (('Context', 'Let'), 'parataxis'), (('-', 'Context'), 'punct'), (('Free', 'Grammar'), 'amod'), (('Grammar', 'Context'), 'appos')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 3 ===========================
+
+ It is the grammar that consists rules with a single symbol on the left-hand side of the rewrite rules. 
+
+Tokens are: 
+>> ['It', 'is', 'the', 'grammar', 'that', 'consists', 'rules', 'with', 'a', 'single', 'symbol', 'on', 'the', 'left-', 'hand', 'side', 'of', 'the', 'rewrite', 'rules', '.'] 
+
+ UPOS tags are: 
+>> [('It', 'PRON'), ('is', 'AUX'), ('the', 'DET'), ('grammar', 'NOUN'), ('that', 'PRON'), ('consists', 'VERB'), ('rules', 'NOUN'), ('with', 'ADP'), ('a', 'DET'), ('single', 'ADJ'), ('symbol', 'NOUN'), ('on', 'ADP'), ('the', 'DET'), ('left-', 'ADJ'), ('hand', 'NOUN'), ('side', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('rewrite', 'NOUN'), ('rules', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('It', 'PRP'), ('is', 'VBZ'), ('the', 'DT'), ('grammar', 'NN'), ('that', 'WDT'), ('consists', 'VBZ'), ('rules', 'NNS'), ('with', 'IN'), ('a', 'DT'), ('single', 'JJ'), ('symbol', 'NN'), ('on', 'IN'), ('the', 'DT'), ('left-', 'JJ'), ('hand', 'NN'), ('side', 'NN'), ('of', 'IN'), ('the', 'DT'), ('rewrite', 'NN'), ('rules', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('It', 'it'), ('is', 'be'), ('the', 'the'), ('grammar', 'grammar'), ('that', 'that'), ('consists', 'consist'), ('rules', 'rule'), ('with', 'with'), ('a', 'a'), ('single', 'single'), ('symbol', 'symbol'), ('on', 'on'), ('the', 'the'), ('left-', 'left-'), ('hand', 'hand'), ('side', 'side'), ('of', 'of'), ('the', 'the'), ('rewrite', 'rewrite'), ('rules', 'rule'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('It', 'grammar'), 'nsubj'), (('is', 'grammar'), 'cop'), (('the', 'grammar'), 'det'), (('grammar', 'root'), 'root'), (('that', 'consists'), 'nsubj'), (('consists', 'grammar'), 'acl:relcl'), (('rules', 'consists'), 'obj'), (('with', 'symbol'), 'case'), (('a', 'symbol'), 'det'), (('single', 'symbol'), 'amod'), (('symbol', 'consists'), 'obl'), (('on', 'side'), 'case'), (('the', 'side'), 'det'), (('left-', 'hand'), 'amod'), (('hand', 'side'), 'compound'), (('side', 'symbol'), 'nmod'), (('of', 'rules'), 'case'), (('the', 'rules'), 'det'), (('rewrite', 'rules'), 'compound'), (('rules', 'side'), 'nmod'), (('.', 'grammar'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 4 ===========================
+
+ Let us create grammar to parse a sentence − “The bird pecks the grains” Articles (DET) − a | an | the Nouns − bird | birds | grain | grains Noun Phrase (NP) − Article + Noun | Article + Adjective + Noun = DET N | DET ADJ N Verbs − pecks | pecking | pecked Verb Phrase (VP) − NP V | V NP Adjectives (ADJ) − beautiful | small | chirping 
+
+Tokens are: 
+>> ['Let', 'us', 'create', 'grammar', 'to', 'parse', 'a', 'sentence', '−', '“', 'The', 'bird', 'pecks', 'the', 'grains', '”', 'Articles', '(', 'DET', ')', '−', 'a', '|', 'an', '|', 'the', 'Nouns', '−', 'bird', '|', 'birds', '|', 'grain', '|', 'grains', 'Noun', 'Phrase', '(', 'NP', ')', '−', 'Article', '+', 'Noun', '|', 'Article', '+', 'Adjective', '+', 'Noun', '=', 'DET', 'N', '|', 'DET', 'ADJ', 'N', 'Verbs', '−', 'pecks', '|', 'pecking', '|', 'pecked', 'Verb', 'Phrase', '(', 'VP', ')', '−', 'NP', 'V', '|', 'V', 'NP', 'Adjectives', '(', 'ADJ', ')', '−', 'beautiful', '|', 'small', '|', 'chirping'] 
+
+ UPOS tags are: 
+>> [('Let', 'VERB'), ('us', 'PRON'), ('create', 'VERB'), ('grammar', 'NOUN'), ('to', 'PART'), ('parse', 'VERB'), ('a', 'DET'), ('sentence', 'NOUN'), ('−', 'PUNCT'), ('“', 'PUNCT'), ('The', 'DET'), ('bird', 'NOUN'), ('pecks', 'VERB'), ('the', 'DET'), ('grains', 'NOUN'), ('”', 'PUNCT'), ('Articles', 'NOUN'), ('(', 'PUNCT'), ('DET', 'NOUN'), (')', 'PUNCT'), ('−', 'PUNCT'), ('a', 'NOUN'), ('|', 'PUNCT'), ('an', 'NOUN'), ('|', 'PUNCT'), ('the', 'DET'), ('Nouns', 'NOUN'), ('−', 'PUNCT'), ('bird', 'NOUN'), ('|', 'PUNCT'), ('birds', 'NOUN'), ('|', 'PUNCT'), ('grain', 'NOUN'), ('|', 'PUNCT'), ('grains', 'NOUN'), ('Noun', 'NOUN'), ('Phrase', 'NOUN'), ('(', 'PUNCT'), ('NP', 'NOUN'), (')', 'PUNCT'), ('−', 'PUNCT'), ('Article', 'NOUN'), ('+', 'SYM'), ('Noun', 'NOUN'), ('|', 'PUNCT'), ('Article', 'NOUN'), ('+', 'SYM'), ('Adjective', 'NOUN'), ('+', 'SYM'), ('Noun', 'NOUN'), ('=', 'PUNCT'), ('DET', 'NOUN'), ('N', 'NOUN'), ('|', 'PUNCT'), ('DET', 'NOUN'), ('ADJ', 'NOUN'), ('N', 'X'), ('Verbs', 'NOUN'), ('−', 'PUNCT'), ('pecks', 'NOUN'), ('|', 'PUNCT'), ('pecking', 'NOUN'), ('|', 'PUNCT'), ('pecked', 'VERB'), ('Verb', 'NOUN'), ('Phrase', 'NOUN'), ('(', 'PUNCT'), ('VP', 'NOUN'), (')', 'PUNCT'), ('−', 'PUNCT'), ('NP', 'NOUN'), ('V', 'NOUN'), ('|', 'PUNCT'), ('V', 'NOUN'), ('NP', 'NOUN'), ('Adjectives', 'NOUN'), ('(', 'PUNCT'), ('ADJ', 'NOUN'), (')', 'PUNCT'), ('−', 'PUNCT'), ('beautiful', 'ADJ'), ('|', 'PUNCT'), ('small', 'ADJ'), ('|', 'PUNCT'), ('chirping', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Let', 'VB'), ('us', 'PRP'), ('create', 'VB'), ('grammar', 'NN'), ('to', 'TO'), ('parse', 'VB'), ('a', 'DT'), ('sentence', 'NN'), ('−', ','), ('“', '``'), ('The', 'DT'), ('bird', 'NN'), ('pecks', 'VBZ'), ('the', 'DT'), ('grains', 'NNS'), ('”', "''"), ('Articles', 'NNS'), ('(', '-LRB-'), ('DET', 'NN'), (')', '-RRB-'), ('−', ','), ('a', 'NN'), ('|', 'NFP'), ('an', 'NN'), ('|', 'NFP'), ('the', 'DT'), ('Nouns', 'NNS'), ('−', ','), ('bird', 'NN'), ('|', ','), ('birds', 'NNS'), ('|', ','), ('grain', 'NN'), ('|', ','), ('grains', 'NNS'), ('Noun', 'NN'), ('Phrase', 'NN'), ('(', '-LRB-'), ('NP', 'NN'), (')', '-RRB-'), ('−', ','), ('Article', 'NN'), ('+', 'SYM'), ('Noun', 'NN'), ('|', 'NFP'), ('Article', 'NN'), ('+', 'SYM'), ('Adjective', 'NN'), ('+', 'SYM'), ('Noun', 'NN'), ('=', ','), ('DET', 'NN'), ('N', 'NN'), ('|', 'NFP'), ('DET', 'NN'), ('ADJ', 'NN'), ('N', 'FW'), ('Verbs', 'NNS'), ('−', ','), ('pecks', 'NNS'), ('|', 'NFP'), ('pecking', 'NN'), ('|', 'NFP'), ('pecked', 'VBN'), ('Verb', 'NN'), ('Phrase', 'NN'), ('(', '-LRB-'), ('VP', 'NN'), (')', '-RRB-'), ('−', ','), ('NP', 'NN'), ('V', 'NN'), ('|', 'NFP'), ('V', 'NN'), ('NP', 'NN'), ('Adjectives', 'NNS'), ('(', '-LRB-'), ('ADJ', 'NN'), (')', '-RRB-'), ('−', ','), ('beautiful', 'JJ'), ('|', 'NFP'), ('small', 'JJ'), ('|', ','), ('chirping', 'NN')] 
+
+ Lemmas are: 
+>> [('Let', 'let'), ('us', 'we'), ('create', 'create'), ('grammar', 'grammar'), ('to', 'to'), ('parse', 'parse'), ('a', 'a'), ('sentence', 'sentence'), ('−', "''"), ('“', "''"), ('The', 'the'), ('bird', 'bird'), ('pecks', 'peck'), ('the', 'the'), ('grains', 'grain'), ('”', "''"), ('Articles', 'article'), ('(', '('), ('DET', 'det'), (')', ')'), ('−', "''"), ('a', 'a'), ('|', '|'), ('an', 'a'), ('|', '|'), ('the', 'the'), ('Nouns', 'noun'), ('−', "''"), ('bird', 'bird'), ('|', '|'), ('birds', 'bird'), ('|', '|'), ('grain', 'grain'), ('|', '|'), ('grains', 'grain'), ('Noun', 'noun'), ('Phrase', 'phrase'), ('(', '('), ('NP', 'np'), (')', ')'), ('−', "''"), ('Article', 'article'), ('+', '+'), ('Noun', 'noun'), ('|', '|'), ('Article', 'article'), ('+', '+'), ('Adjective', 'adjective'), ('+', '+'), ('Noun', 'noun'), ('=', '='), ('DET', 'det'), ('N', 'N'), ('|', '|'), ('DET', 'det'), ('ADJ', 'adj'), ('N', 'N'), ('Verbs', 'verb'), ('−', "''"), ('pecks', 'peck'), ('|', '|'), ('pecking', 'peck'), ('|', '|'), ('pecked', 'peck'), ('Verb', 'verb'), ('Phrase', 'phrase'), ('(', '('), ('VP', 'vp'), (')', ')'), ('−', "''"), ('NP', 'np'), ('V', 'V'), ('|', '|'), ('V', 'V'), ('NP', 'np'), ('Adjectives', 'adjective'), ('(', '('), ('ADJ', 'adj'), (')', ')'), ('−', "''"), ('beautiful', 'beautiful'), ('|', '|'), ('small', 'small'), ('|', '|'), ('chirping', 'chirp')] 
+
+ Dependency tags are: 
+>> [(('Let', 'root'), 'root'), (('us', 'Let'), 'obj'), (('create', 'Let'), 'xcomp'), (('grammar', 'create'), 'obj'), (('to', 'parse'), 'mark'), (('parse', 'create'), 'xcomp'), (('a', 'sentence'), 'det'), (('sentence', 'parse'), 'obj'), (('−', 'pecks'), 'punct'), (('“', 'pecks'), 'punct'), (('The', 'bird'), 'det'), (('bird', 'pecks'), 'nsubj'), (('pecks', 'Let'), 'parataxis'), (('the', 'grains'), 'det'), (('grains', 'pecks'), 'obj'), (('”', 'pecks'), 'punct'), (('Articles', 'pecks'), 'obj'), (('(', 'DET'), 'punct'), (('DET', 'Articles'), 'appos'), ((')', 'DET'), 'punct'), (('−', 'a'), 'punct'), (('a', 'Articles'), 'appos'), (('|', 'an'), 'punct'), (('an', 'a'), 'dep'), (('|', 'an'), 'punct'), (('the', 'Nouns'), 'det'), (('Nouns', 'an'), 'appos'), (('−', 'Nouns'), 'punct'), (('bird', 'Nouns'), 'appos'), (('|', 'birds'), 'punct'), (('birds', 'an'), 'conj'), (('|', 'birds'), 'punct'), (('grain', 'birds'), 'appos'), (('|', 'birds'), 'punct'), (('grains', 'Phrase'), 'compound'), (('Noun', 'Phrase'), 'compound'), (('Phrase', 'an'), 'conj'), (('(', 'NP'), 'punct'), (('NP', 'Phrase'), 'appos'), ((')', 'NP'), 'punct'), (('−', 'Article'), 'punct'), (('Article', 'an'), 'conj'), (('+', 'Noun'), 'cc'), (('Noun', 'Article'), 'conj'), (('|', 'Article'), 'punct'), (('Article', 'Article'), 'conj'), (('+', 'Adjective'), 'cc'), (('Adjective', 'Article'), 'conj'), (('+', 'Noun'), 'cc'), (('Noun', 'Adjective'), 'conj'), (('=', 'N'), 'punct'), (('DET', 'N'), 'compound'), (('N', 'an'), 'conj'), (('|', 'N'), 'punct'), (('DET', 'Verbs'), 'compound'), (('ADJ', 'Verbs'), 'compound'), (('N', 'Verbs'), 'compound'), (('Verbs', 'N'), 'appos'), (('−', 'Verbs'), 'punct'), (('pecks', 'Verbs'), 'appos'), (('|', 'pecking'), 'punct'), (('pecking', 'Verbs'), 'appos'), (('|', 'Phrase'), 'punct'), (('pecked', 'Phrase'), 'amod'), (('Verb', 'Phrase'), 'compound'), (('Phrase', 'pecking'), 'conj'), (('(', 'VP'), 'punct'), (('VP', 'Phrase'), 'appos'), ((')', 'VP'), 'punct'), (('−', 'V'), 'punct'), (('NP', 'V'), 'compound'), (('V', 'Phrase'), 'appos'), (('|', 'V'), 'punct'), (('V', 'Adjectives'), 'compound'), (('NP', 'Adjectives'), 'compound'), (('Adjectives', 'V'), 'appos'), (('(', 'ADJ'), 'punct'), (('ADJ', 'Adjectives'), 'appos'), ((')', 'ADJ'), 'punct'), (('−', 'beautiful'), 'punct'), (('beautiful', 'Adjectives'), 'amod'), (('|', 'beautiful'), 'punct'), (('small', 'chirping'), 'amod'), (('|', 'chirping'), 'punct'), (('chirping', 'beautiful'), 'conj')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 5 ===========================
+
+ The parse tree breaks down the sentence into structured parts so that the computer can easily understand and process it. 
+
+Tokens are: 
+>> ['The', 'parse', 'tree', 'breaks', 'down', 'the', 'sentence', 'into', 'structured', 'parts', 'so', 'that', 'the', 'computer', 'can', 'easily', 'understand', 'and', 'process', 'it', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('parse', 'NOUN'), ('tree', 'NOUN'), ('breaks', 'VERB'), ('down', 'ADP'), ('the', 'DET'), ('sentence', 'NOUN'), ('into', 'ADP'), ('structured', 'VERB'), ('parts', 'NOUN'), ('so', 'SCONJ'), ('that', 'SCONJ'), ('the', 'DET'), ('computer', 'NOUN'), ('can', 'AUX'), ('easily', 'ADV'), ('understand', 'VERB'), ('and', 'CCONJ'), ('process', 'VERB'), ('it', 'PRON'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('parse', 'NN'), ('tree', 'NN'), ('breaks', 'VBZ'), ('down', 'RP'), ('the', 'DT'), ('sentence', 'NN'), ('into', 'IN'), ('structured', 'VBN'), ('parts', 'NNS'), ('so', 'IN'), ('that', 'IN'), ('the', 'DT'), ('computer', 'NN'), ('can', 'MD'), ('easily', 'RB'), ('understand', 'VB'), ('and', 'CC'), ('process', 'VB'), ('it', 'PRP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('parse', 'parse'), ('tree', 'tree'), ('breaks', 'break'), ('down', 'down'), ('the', 'the'), ('sentence', 'sentence'), ('into', 'into'), ('structured', 'structure'), ('parts', 'part'), ('so', 'so'), ('that', 'that'), ('the', 'the'), ('computer', 'computer'), ('can', 'can'), ('easily', 'easily'), ('understand', 'understand'), ('and', 'and'), ('process', 'process'), ('it', 'it'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'tree'), 'det'), (('parse', 'tree'), 'compound'), (('tree', 'breaks'), 'nsubj'), (('breaks', 'root'), 'root'), (('down', 'breaks'), 'compound:prt'), (('the', 'sentence'), 'det'), (('sentence', 'breaks'), 'obj'), (('into', 'parts'), 'case'), (('structured', 'parts'), 'amod'), (('parts', 'breaks'), 'obl'), (('so', 'understand'), 'mark'), (('that', 'so'), 'fixed'), (('the', 'computer'), 'det'), (('computer', 'understand'), 'nsubj'), (('can', 'understand'), 'aux'), (('easily', 'understand'), 'advmod'), (('understand', 'breaks'), 'advcl'), (('and', 'process'), 'cc'), (('process', 'understand'), 'conj'), (('it', 'process'), 'obj'), (('.', 'breaks'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 6 ===========================
+
+ In order for the parsing algorithm to construct this parse tree, a set of rewrite rules, which describe what tree structures are legal, need to be constructed. 
+
+Tokens are: 
+>> ['In', 'order', 'for', 'the', 'parsing', 'algorithm', 'to', 'construct', 'this', 'parse', 'tree', ',', 'a', 'set', 'of', 'rewrite', 'rules', ',', 'which', 'describe', 'what', 'tree', 'structures', 'are', 'legal', ',', 'need', 'to', 'be', 'constructed', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('order', 'NOUN'), ('for', 'ADP'), ('the', 'DET'), ('parsing', 'NOUN'), ('algorithm', 'NOUN'), ('to', 'PART'), ('construct', 'VERB'), ('this', 'DET'), ('parse', 'NOUN'), ('tree', 'NOUN'), (',', 'PUNCT'), ('a', 'DET'), ('set', 'NOUN'), ('of', 'ADP'), ('rewrite', 'NOUN'), ('rules', 'NOUN'), (',', 'PUNCT'), ('which', 'PRON'), ('describe', 'VERB'), ('what', 'DET'), ('tree', 'NOUN'), ('structures', 'NOUN'), ('are', 'AUX'), ('legal', 'ADJ'), (',', 'PUNCT'), ('need', 'VERB'), ('to', 'PART'), ('be', 'AUX'), ('constructed', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('order', 'NN'), ('for', 'IN'), ('the', 'DT'), ('parsing', 'NN'), ('algorithm', 'NN'), ('to', 'TO'), ('construct', 'VB'), ('this', 'DT'), ('parse', 'NN'), ('tree', 'NN'), (',', ','), ('a', 'DT'), ('set', 'NN'), ('of', 'IN'), ('rewrite', 'NN'), ('rules', 'NNS'), (',', ','), ('which', 'WDT'), ('describe', 'VBP'), ('what', 'WDT'), ('tree', 'NN'), ('structures', 'NNS'), ('are', 'VBP'), ('legal', 'JJ'), (',', ','), ('need', 'VBP'), ('to', 'TO'), ('be', 'VB'), ('constructed', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('order', 'order'), ('for', 'for'), ('the', 'the'), ('parsing', 'parsing'), ('algorithm', 'algorithm'), ('to', 'to'), ('construct', 'construct'), ('this', 'this'), ('parse', 'parse'), ('tree', 'tree'), (',', ','), ('a', 'a'), ('set', 'set'), ('of', 'of'), ('rewrite', 'rewrite'), ('rules', 'rule'), (',', ','), ('which', 'which'), ('describe', 'describe'), ('what', 'what'), ('tree', 'tree'), ('structures', 'structure'), ('are', 'be'), ('legal', 'legal'), (',', ','), ('need', 'need'), ('to', 'to'), ('be', 'be'), ('constructed', 'construct'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'algorithm'), 'case'), (('order', 'In'), 'fixed'), (('for', 'algorithm'), 'case'), (('the', 'algorithm'), 'det'), (('parsing', 'algorithm'), 'compound'), (('algorithm', 'need'), 'obl'), (('to', 'construct'), 'mark'), (('construct', 'algorithm'), 'acl'), (('this', 'tree'), 'det'), (('parse', 'tree'), 'compound'), (('tree', 'construct'), 'obj'), ((',', 'need'), 'punct'), (('a', 'set'), 'det'), (('set', 'need'), 'nsubj'), (('of', 'rules'), 'case'), (('rewrite', 'rules'), 'compound'), (('rules', 'set'), 'nmod'), ((',', 'describe'), 'punct'), (('which', 'describe'), 'nsubj'), (('describe', 'rules'), 'acl:relcl'), (('what', 'structures'), 'det'), (('tree', 'structures'), 'compound'), (('structures', 'legal'), 'nsubj'), (('are', 'legal'), 'cop'), (('legal', 'describe'), 'ccomp'), ((',', 'need'), 'punct'), (('need', 'root'), 'root'), (('to', 'constructed'), 'mark'), (('be', 'constructed'), 'aux:pass'), (('constructed', 'need'), 'xcomp'), (('.', 'need'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 7 ===========================
+
+ These rules say that a certain symbol may be expanded in the tree by a sequence of other symbols. 
+
+Tokens are: 
+>> ['These', 'rules', 'say', 'that', 'a', 'certain', 'symbol', 'may', 'be', 'expanded', 'in', 'the', 'tree', 'by', 'a', 'sequence', 'of', 'other', 'symbols', '.'] 
+
+ UPOS tags are: 
+>> [('These', 'DET'), ('rules', 'NOUN'), ('say', 'VERB'), ('that', 'SCONJ'), ('a', 'DET'), ('certain', 'ADJ'), ('symbol', 'NOUN'), ('may', 'AUX'), ('be', 'AUX'), ('expanded', 'VERB'), ('in', 'ADP'), ('the', 'DET'), ('tree', 'NOUN'), ('by', 'ADP'), ('a', 'DET'), ('sequence', 'NOUN'), ('of', 'ADP'), ('other', 'ADJ'), ('symbols', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('These', 'DT'), ('rules', 'NNS'), ('say', 'VBP'), ('that', 'IN'), ('a', 'DT'), ('certain', 'JJ'), ('symbol', 'NN'), ('may', 'MD'), ('be', 'VB'), ('expanded', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('tree', 'NN'), ('by', 'IN'), ('a', 'DT'), ('sequence', 'NN'), ('of', 'IN'), ('other', 'JJ'), ('symbols', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('These', 'this'), ('rules', 'rule'), ('say', 'say'), ('that', 'that'), ('a', 'a'), ('certain', 'certain'), ('symbol', 'symbol'), ('may', 'may'), ('be', 'be'), ('expanded', 'expand'), ('in', 'in'), ('the', 'the'), ('tree', 'tree'), ('by', 'by'), ('a', 'a'), ('sequence', 'sequence'), ('of', 'of'), ('other', 'other'), ('symbols', 'symbol'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('These', 'rules'), 'det'), (('rules', 'say'), 'nsubj'), (('say', 'root'), 'root'), (('that', 'expanded'), 'mark'), (('a', 'symbol'), 'det'), (('certain', 'symbol'), 'amod'), (('symbol', 'expanded'), 'nsubj:pass'), (('may', 'expanded'), 'aux'), (('be', 'expanded'), 'aux:pass'), (('expanded', 'say'), 'ccomp'), (('in', 'tree'), 'case'), (('the', 'tree'), 'det'), (('tree', 'expanded'), 'obl'), (('by', 'sequence'), 'case'), (('a', 'sequence'), 'det'), (('sequence', 'expanded'), 'obl'), (('of', 'symbols'), 'case'), (('other', 'symbols'), 'amod'), (('symbols', 'sequence'), 'nmod'), (('.', 'say'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 8 ===========================
+
+ According to first order logic rule, if there are two strings Noun Phrase (NP) and Verb Phrase (VP), then the string combined by NP followed by VP is a sentence. 
+
+Tokens are: 
+>> ['According', 'to', 'first', 'order', 'logic', 'rule', ',', 'if', 'there', 'are', 'two', 'strings', 'Noun', 'Phrase', '(', 'NP', ')', 'and', 'Verb', 'Phrase', '(', 'VP', ')', ',', 'then', 'the', 'string', 'combined', 'by', 'NP', 'followed', 'by', 'VP', 'is', 'a', 'sentence', '.'] 
+
+ UPOS tags are: 
+>> [('According', 'VERB'), ('to', 'ADP'), ('first', 'ADJ'), ('order', 'NOUN'), ('logic', 'NOUN'), ('rule', 'NOUN'), (',', 'PUNCT'), ('if', 'SCONJ'), ('there', 'PRON'), ('are', 'VERB'), ('two', 'NUM'), ('strings', 'NOUN'), ('Noun', 'PROPN'), ('Phrase', 'PROPN'), ('(', 'PUNCT'), ('NP', 'PROPN'), (')', 'PUNCT'), ('and', 'CCONJ'), ('Verb', 'PROPN'), ('Phrase', 'PROPN'), ('(', 'PUNCT'), ('VP', 'PROPN'), (')', 'PUNCT'), (',', 'PUNCT'), ('then', 'ADV'), ('the', 'DET'), ('string', 'NOUN'), ('combined', 'VERB'), ('by', 'ADP'), ('NP', 'PROPN'), ('followed', 'VERB'), ('by', 'ADP'), ('VP', 'PROPN'), ('is', 'AUX'), ('a', 'DET'), ('sentence', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('According', 'VBG'), ('to', 'IN'), ('first', 'JJ'), ('order', 'NN'), ('logic', 'NN'), ('rule', 'NN'), (',', ','), ('if', 'IN'), ('there', 'EX'), ('are', 'VBP'), ('two', 'CD'), ('strings', 'NNS'), ('Noun', 'NNP'), ('Phrase', 'NNP'), ('(', '-LRB-'), ('NP', 'NNP'), (')', '-RRB-'), ('and', 'CC'), ('Verb', 'NNP'), ('Phrase', 'NNP'), ('(', '-LRB-'), ('VP', 'NNP'), (')', '-RRB-'), (',', ','), ('then', 'RB'), ('the', 'DT'), ('string', 'NN'), ('combined', 'VBN'), ('by', 'IN'), ('NP', 'NNP'), ('followed', 'VBN'), ('by', 'IN'), ('VP', 'NNP'), ('is', 'VBZ'), ('a', 'DT'), ('sentence', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('According', 'accord'), ('to', 'to'), ('first', 'first'), ('order', 'order'), ('logic', 'logic'), ('rule', 'rule'), (',', ','), ('if', 'if'), ('there', 'there'), ('are', 'be'), ('two', 'two'), ('strings', 'string'), ('Noun', 'Noun'), ('Phrase', 'Phrase'), ('(', '('), ('NP', 'NP'), (')', ')'), ('and', 'and'), ('Verb', 'Verb'), ('Phrase', 'Phrase'), ('(', '('), ('VP', 'vp'), (')', ')'), (',', ','), ('then', 'then'), ('the', 'the'), ('string', 'string'), ('combined', 'combine'), ('by', 'by'), ('NP', 'NP'), ('followed', 'follow'), ('by', 'by'), ('VP', 'vp'), ('is', 'be'), ('a', 'a'), ('sentence', 'sentence'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('According', 'rule'), 'case'), (('to', 'According'), 'fixed'), (('first', 'rule'), 'amod'), (('order', 'rule'), 'compound'), (('logic', 'rule'), 'compound'), (('rule', 'sentence'), 'obl'), ((',', 'rule'), 'punct'), (('if', 'are'), 'mark'), (('there', 'are'), 'expl'), (('are', 'sentence'), 'advcl'), (('two', 'strings'), 'nummod'), (('strings', 'are'), 'nsubj'), (('Noun', 'Phrase'), 'compound'), (('Phrase', 'strings'), 'appos'), (('(', 'NP'), 'punct'), (('NP', 'Phrase'), 'appos'), ((')', 'NP'), 'punct'), (('and', 'Phrase'), 'cc'), (('Verb', 'Phrase'), 'compound'), (('Phrase', 'Phrase'), 'conj'), (('(', 'VP'), 'punct'), (('VP', 'Phrase'), 'appos'), ((')', 'VP'), 'punct'), ((',', 'string'), 'punct'), (('then', 'sentence'), 'advmod'), (('the', 'string'), 'det'), (('string', 'sentence'), 'nsubj'), (('combined', 'string'), 'acl'), (('by', 'NP'), 'case'), (('NP', 'combined'), 'obl'), (('followed', 'NP'), 'acl'), (('by', 'VP'), 'case'), (('VP', 'followed'), 'obl'), (('is', 'sentence'), 'cop'), (('a', 'sentence'), 'det'), (('sentence', 'root'), 'root'), (('.', 'sentence'), 'punct')]
+
+ Named Entities are: 
+>> [('first', 'ORDINAL'), ('two', 'CARDINAL'), ('Noun Phrase', 'PRODUCT'), ('NP', 'ORG'), ('NP', 'ORG')]
+
+========================== Sentence 9 ===========================
+
+ The rewrite rules for the sentence are as follows − S → NP VP NP → DET N | DET ADJ N VP → V NP Lexocon − DET → a | the ADJ → beautiful | perching N → bird | birds | grain | grains V → peck | pecks | pecking 
+
+Tokens are: 
+>> ['The', 'rewrite', 'rules', 'for', 'the', 'sentence', 'are', 'as', 'follows', '−', 'S', '→', 'NP', 'VP', 'NP', '→', 'DET', 'N', '|', 'DET', 'ADJ', 'N', 'VP', '→', 'V', 'NP', 'Lexocon', '−', 'DET', '→', 'a', '|', 'the', 'ADJ', '→', 'beautiful', '|', 'perching', 'N', '→', 'bird', '|', 'birds', '|', 'grain', '|', 'grains', 'V', '→', 'peck', '|', 'pecks', '|', 'pecking'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('rewrite', 'NOUN'), ('rules', 'NOUN'), ('for', 'ADP'), ('the', 'DET'), ('sentence', 'NOUN'), ('are', 'AUX'), ('as', 'SCONJ'), ('follows', 'VERB'), ('−', 'PUNCT'), ('S', 'NOUN'), ('→', 'PUNCT'), ('NP', 'NOUN'), ('VP', 'NOUN'), ('NP', 'NOUN'), ('→', 'PUNCT'), ('DET', 'NOUN'), ('N', 'X'), ('|', 'PUNCT'), ('DET', 'X'), ('ADJ', 'X'), ('N', 'X'), ('VP', 'NOUN'), ('→', 'PUNCT'), ('V', 'NOUN'), ('NP', 'NOUN'), ('Lexocon', 'X'), ('−', 'PUNCT'), ('DET', 'NOUN'), ('→', 'PUNCT'), ('a', 'NOUN'), ('|', 'PUNCT'), ('the', 'DET'), ('ADJ', 'NOUN'), ('→', 'PUNCT'), ('beautiful', 'ADJ'), ('|', 'PUNCT'), ('perching', 'NOUN'), ('N', 'NOUN'), ('→', 'PUNCT'), ('bird', 'NOUN'), ('|', 'PUNCT'), ('birds', 'NOUN'), ('|', 'PUNCT'), ('grain', 'NOUN'), ('|', 'PUNCT'), ('grains', 'NOUN'), ('V', 'NOUN'), ('→', 'PUNCT'), ('peck', 'NOUN'), ('|', 'PUNCT'), ('pecks', 'NOUN'), ('|', 'PUNCT'), ('pecking', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('rewrite', 'NN'), ('rules', 'NNS'), ('for', 'IN'), ('the', 'DT'), ('sentence', 'NN'), ('are', 'VBP'), ('as', 'IN'), ('follows', 'VBZ'), ('−', ','), ('S', 'NN'), ('→', 'NFP'), ('NP', 'NN'), ('VP', 'NN'), ('NP', 'NN'), ('→', 'NFP'), ('DET', 'NN'), ('N', 'FW'), ('|', 'NFP'), ('DET', 'FW'), ('ADJ', 'FW'), ('N', 'FW'), ('VP', 'NN'), ('→', 'NFP'), ('V', 'NN'), ('NP', 'NN'), ('Lexocon', 'FW'), ('−', ','), ('DET', 'NN'), ('→', 'NFP'), ('a', 'NN'), ('|', 'NFP'), ('the', 'DT'), ('ADJ', 'NN'), ('→', 'NFP'), ('beautiful', 'JJ'), ('|', 'NFP'), ('perching', 'NN'), ('N', 'NN'), ('→', 'NFP'), ('bird', 'NN'), ('|', 'NFP'), ('birds', 'NNS'), ('|', 'NFP'), ('grain', 'NN'), ('|', 'NFP'), ('grains', 'NNS'), ('V', 'NN'), ('→', 'NFP'), ('peck', 'NN'), ('|', 'NFP'), ('pecks', 'NNS'), ('|', 'NFP'), ('pecking', 'NN')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('rewrite', 'rewrite'), ('rules', 'rule'), ('for', 'for'), ('the', 'the'), ('sentence', 'sentence'), ('are', 'be'), ('as', 'as'), ('follows', 'follow'), ('−', "''"), ('S', 's'), ('→', "''"), ('NP', 'np'), ('VP', 'vp'), ('NP', 'np'), ('→', "''"), ('DET', 'det'), ('N', 'N'), ('|', '|'), ('DET', 'det'), ('ADJ', 'adj'), ('N', 'N'), ('VP', 'vp'), ('→', "''"), ('V', 'V'), ('NP', 'np'), ('Lexocon', 'lexocon'), ('−', "''"), ('DET', 'det'), ('→', "''"), ('a', 'a'), ('|', '|'), ('the', 'the'), ('ADJ', 'adj'), ('→', "''"), ('beautiful', 'beautiful'), ('|', '|'), ('perching', 'perching'), ('N', 'N'), ('→', "''"), ('bird', 'bird'), ('|', '|'), ('birds', 'bird'), ('|', '|'), ('grain', 'grain'), ('|', '|'), ('grains', 'grain'), ('V', 'V'), ('→', "''"), ('peck', 'peck'), ('|', '|'), ('pecks', 'peck'), ('|', '|'), ('pecking', 'peck')] 
+
+ Dependency tags are: 
+>> [(('The', 'rules'), 'det'), (('rewrite', 'rules'), 'compound'), (('rules', 'follows'), 'nsubj'), (('for', 'sentence'), 'case'), (('the', 'sentence'), 'det'), (('sentence', 'rules'), 'nmod'), (('are', 'follows'), 'cop'), (('as', 'follows'), 'mark'), (('follows', 'root'), 'root'), (('−', 'S'), 'punct'), (('S', 'follows'), 'obj'), (('→', 'S'), 'punct'), (('NP', 'NP'), 'compound'), (('VP', 'NP'), 'compound'), (('NP', 'follows'), 'obj'), (('→', 'NP'), 'punct'), (('DET', 'NP'), 'compound'), (('N', 'NP'), 'appos'), (('|', 'N'), 'punct'), (('DET', 'N'), 'appos'), (('ADJ', 'VP'), 'compound'), (('N', 'VP'), 'compound'), (('VP', 'NP'), 'appos'), (('→', 'VP'), 'punct'), (('V', 'Lexocon'), 'compound'), (('NP', 'Lexocon'), 'compound'), (('Lexocon', 'VP'), 'appos'), (('−', 'Lexocon'), 'punct'), (('DET', 'follows'), 'conj'), (('→', 'S'), 'punct'), (('a', 'follows'), 'conj'), (('|', 'ADJ'), 'punct'), (('the', 'ADJ'), 'det'), (('ADJ', 'a'), 'appos'), (('→', 'ADJ'), 'punct'), (('beautiful', 'bird'), 'amod'), (('|', 'N'), 'punct'), (('perching', 'N'), 'compound'), (('N', 'bird'), 'compound'), (('→', 'N'), 'punct'), (('bird', 'birds'), 'compound'), (('|', 'birds'), 'punct'), (('birds', 'NP'), 'appos'), (('|', 'birds'), 'punct'), (('grain', 'birds'), 'appos'), (('|', 'grains'), 'punct'), (('grains', 'birds'), 'appos'), (('V', 'grains'), 'appos'), (('→', 'V'), 'punct'), (('peck', 'pecks'), 'compound'), (('|', 'pecks'), 'punct'), (('pecks', 'pecking'), 'compound'), (('|', 'pecks'), 'punct'), (('pecking', 'birds'), 'appos')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 10 ===========================
+
+ The parse tree can be created as shown − 
+
+Tokens are: 
+>> ['The', 'parse', 'tree', 'can', 'be', 'created', 'as', 'shown', '−'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('parse', 'NOUN'), ('tree', 'NOUN'), ('can', 'AUX'), ('be', 'AUX'), ('created', 'VERB'), ('as', 'SCONJ'), ('shown', 'VERB'), ('−', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('parse', 'NN'), ('tree', 'NN'), ('can', 'MD'), ('be', 'VB'), ('created', 'VBN'), ('as', 'IN'), ('shown', 'VBN'), ('−', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('parse', 'parse'), ('tree', 'tree'), ('can', 'can'), ('be', 'be'), ('created', 'create'), ('as', 'as'), ('shown', 'show'), ('−', "''")] 
+
+ Dependency tags are: 
+>> [(('The', 'tree'), 'det'), (('parse', 'tree'), 'compound'), (('tree', 'created'), 'nsubj:pass'), (('can', 'created'), 'aux'), (('be', 'created'), 'aux:pass'), (('created', 'root'), 'root'), (('as', 'shown'), 'mark'), (('shown', 'created'), 'advcl'), (('−', 'created'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 11 ===========================
+
+ Now consider the above rewrite rules. 
+
+Tokens are: 
+>> ['Now', 'consider', 'the', 'above', 'rewrite', 'rules', '.'] 
+
+ UPOS tags are: 
+>> [('Now', 'ADV'), ('consider', 'VERB'), ('the', 'DET'), ('above', 'ADJ'), ('rewrite', 'NOUN'), ('rules', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Now', 'RB'), ('consider', 'VB'), ('the', 'DT'), ('above', 'JJ'), ('rewrite', 'NN'), ('rules', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Now', 'now'), ('consider', 'consider'), ('the', 'the'), ('above', 'above'), ('rewrite', 'rewrite'), ('rules', 'rule'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Now', 'consider'), 'advmod'), (('consider', 'root'), 'root'), (('the', 'rules'), 'det'), (('above', 'rules'), 'amod'), (('rewrite', 'rules'), 'compound'), (('rules', 'consider'), 'obj'), (('.', 'consider'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 12 ===========================
+
+ Since V can be replaced by both, "peck" or "pecks", sentences such as "The bird peck the grains" can be wrongly permitted. 
+
+Tokens are: 
+>> ['Since', 'V', 'can', 'be', 'replaced', 'by', 'both', ',', '"', 'peck', '"', 'or', '"', 'pecks', '"', ',', 'sentences', 'such', 'as', '"', 'The', 'bird', 'peck', 'the', 'grains', '"', 'can', 'be', 'wrongly', 'permitted', '.'] 
+
+ UPOS tags are: 
+>> [('Since', 'SCONJ'), ('V', 'PROPN'), ('can', 'AUX'), ('be', 'AUX'), ('replaced', 'VERB'), ('by', 'ADP'), ('both', 'CCONJ'), (',', 'PUNCT'), ('"', 'PUNCT'), ('peck', 'NOUN'), ('"', 'PUNCT'), ('or', 'CCONJ'), ('"', 'PUNCT'), ('pecks', 'NOUN'), ('"', 'PUNCT'), (',', 'PUNCT'), ('sentences', 'NOUN'), ('such', 'ADJ'), ('as', 'ADP'), ('"', 'PUNCT'), ('The', 'DET'), ('bird', 'NOUN'), ('peck', 'VERB'), ('the', 'DET'), ('grains', 'NOUN'), ('"', 'PUNCT'), ('can', 'AUX'), ('be', 'AUX'), ('wrongly', 'ADV'), ('permitted', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Since', 'IN'), ('V', 'NNP'), ('can', 'MD'), ('be', 'VB'), ('replaced', 'VBN'), ('by', 'IN'), ('both', 'CC'), (',', ','), ('"', '``'), ('peck', 'NN'), ('"', "''"), ('or', 'CC'), ('"', '``'), ('pecks', 'NNS'), ('"', "''"), (',', ','), ('sentences', 'NNS'), ('such', 'JJ'), ('as', 'IN'), ('"', '``'), ('The', 'DT'), ('bird', 'NN'), ('peck', 'VB'), ('the', 'DT'), ('grains', 'NNS'), ('"', "''"), ('can', 'MD'), ('be', 'VB'), ('wrongly', 'RB'), ('permitted', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Since', 'since'), ('V', 'V'), ('can', 'can'), ('be', 'be'), ('replaced', 'replace'), ('by', 'by'), ('both', 'both'), (',', ','), ('"', '"'), ('peck', 'peck'), ('"', '"'), ('or', 'or'), ('"', '"'), ('pecks', 'peck'), ('"', '"'), (',', ','), ('sentences', 'sentence'), ('such', 'such'), ('as', 'as'), ('"', '"'), ('The', 'the'), ('bird', 'bird'), ('peck', 'peck'), ('the', 'the'), ('grains', 'grain'), ('"', '"'), ('can', 'can'), ('be', 'be'), ('wrongly', 'wrongly'), ('permitted', 'permit'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Since', 'replaced'), 'mark'), (('V', 'replaced'), 'nsubj:pass'), (('can', 'replaced'), 'aux'), (('be', 'replaced'), 'aux:pass'), (('replaced', 'permitted'), 'advcl'), (('by', 'peck'), 'case'), (('both', 'peck'), 'cc:preconj'), ((',', 'peck'), 'punct'), (('"', 'peck'), 'punct'), (('peck', 'replaced'), 'obl'), (('"', 'peck'), 'punct'), (('or', 'pecks'), 'cc'), (('"', 'pecks'), 'punct'), (('pecks', 'peck'), 'conj'), (('"', 'pecks'), 'punct'), ((',', 'permitted'), 'punct'), (('sentences', 'permitted'), 'nsubj:pass'), (('such', 'bird'), 'case'), (('as', 'such'), 'fixed'), (('"', 'bird'), 'punct'), (('The', 'bird'), 'det'), (('bird', 'sentences'), 'nmod'), (('peck', 'grains'), 'case'), (('the', 'grains'), 'det'), (('grains', 'bird'), 'nmod'), (('"', 'bird'), 'punct'), (('can', 'permitted'), 'aux'), (('be', 'permitted'), 'aux:pass'), (('wrongly', 'permitted'), 'advmod'), (('permitted', 'root'), 'root'), (('.', 'permitted'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 13 ===========================
+
+ i. e. the subject-verb agreement error is approved as correct. 
+
+Tokens are: 
+>> ['i.', 'e.', 'the', 'subject', '-', 'verb', 'agreement', 'error', 'is', 'approved', 'as', 'correct', '.'] 
+
+ UPOS tags are: 
+>> [('i.', 'X'), ('e.', 'VERB'), ('the', 'DET'), ('subject', 'NOUN'), ('-', 'PUNCT'), ('verb', 'NOUN'), ('agreement', 'NOUN'), ('error', 'NOUN'), ('is', 'AUX'), ('approved', 'VERB'), ('as', 'SCONJ'), ('correct', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('i.', 'LS'), ('e.', 'VB'), ('the', 'DT'), ('subject', 'NN'), ('-', 'HYPH'), ('verb', 'NN'), ('agreement', 'NN'), ('error', 'NN'), ('is', 'VBZ'), ('approved', 'VBN'), ('as', 'IN'), ('correct', 'JJ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('i.', 'i.'), ('e.', 'e.'), ('the', 'the'), ('subject', 'subject'), ('-', '-'), ('verb', 'verb'), ('agreement', 'agreement'), ('error', 'error'), ('is', 'be'), ('approved', 'approve'), ('as', 'as'), ('correct', 'correct'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('i.', 'approved'), 'nummod'), (('e.', 'approved'), 'discourse'), (('the', 'error'), 'det'), (('subject', 'verb'), 'compound'), (('-', 'verb'), 'punct'), (('verb', 'error'), 'compound'), (('agreement', 'error'), 'compound'), (('error', 'approved'), 'nsubj:pass'), (('is', 'approved'), 'aux:pass'), (('approved', 'root'), 'root'), (('as', 'correct'), 'mark'), (('correct', 'approved'), 'advcl'), (('.', 'approved'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 14 ===========================
+
+ Merit − 
+
+Tokens are: 
+>> ['Merit', '−'] 
+
+ UPOS tags are: 
+>> [('Merit', 'NOUN'), ('−', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Merit', 'NN'), ('−', '.')] 
+
+ Lemmas are: 
+>> [('Merit', 'merit'), ('−', "''")] 
+
+ Dependency tags are: 
+>> [(('Merit', 'root'), 'root'), (('−', 'Merit'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 15 ===========================
+
+ The simplest style of grammar, therefore widely used one. 
+
+Tokens are: 
+>> ['The', 'simplest', 'style', 'of', 'grammar', ',', 'therefore', 'widely', 'used', 'one', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('simplest', 'ADJ'), ('style', 'NOUN'), ('of', 'ADP'), ('grammar', 'NOUN'), (',', 'PUNCT'), ('therefore', 'ADV'), ('widely', 'ADV'), ('used', 'VERB'), ('one', 'NUM'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('simplest', 'JJS'), ('style', 'NN'), ('of', 'IN'), ('grammar', 'NN'), (',', ','), ('therefore', 'RB'), ('widely', 'RB'), ('used', 'VBN'), ('one', 'CD'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('simplest', 'simple'), ('style', 'style'), ('of', 'of'), ('grammar', 'grammar'), (',', ','), ('therefore', 'therefore'), ('widely', 'widely'), ('used', 'use'), ('one', 'one'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'style'), 'det'), (('simplest', 'style'), 'amod'), (('style', 'root'), 'root'), (('of', 'grammar'), 'case'), (('grammar', 'style'), 'nmod'), ((',', 'style'), 'punct'), (('therefore', 'used'), 'advmod'), (('widely', 'used'), 'advmod'), (('used', 'style'), 'acl'), (('one', 'used'), 'xcomp'), (('.', 'style'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 16 ===========================
+
+ Demerits − · They are not highly precise. 
+
+Tokens are: 
+>> ['Demerits', '−', '·', 'They', 'are', 'not', 'highly', 'precise', '.'] 
+
+ UPOS tags are: 
+>> [('Demerits', 'NOUN'), ('−', 'PUNCT'), ('·', 'PUNCT'), ('They', 'PRON'), ('are', 'AUX'), ('not', 'PART'), ('highly', 'ADV'), ('precise', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Demerits', 'NNS'), ('−', ','), ('·', 'NFP'), ('They', 'PRP'), ('are', 'VBP'), ('not', 'RB'), ('highly', 'RB'), ('precise', 'JJ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Demerits', 'demerit'), ('−', "''"), ('·', '·'), ('They', 'they'), ('are', 'be'), ('not', 'not'), ('highly', 'highly'), ('precise', 'precise'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Demerits', 'precise'), 'vocative'), (('−', 'Demerits'), 'punct'), (('·', 'precise'), 'punct'), (('They', 'precise'), 'nsubj'), (('are', 'precise'), 'cop'), (('not', 'precise'), 'advmod'), (('highly', 'precise'), 'advmod'), (('precise', 'root'), 'root'), (('.', 'precise'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 17 ===========================
+
+ For example, “The grains peck the bird”, is a syntactically correct according to parser, but even if it makes no sense, parser takes it as a correct sentence. 
+
+Tokens are: 
+>> ['For', 'example', ',', '“', 'The', 'grains', 'peck', 'the', 'bird', '”', ',', 'is', 'a', 'syntactically', 'correct', 'according', 'to', 'parser', ',', 'but', 'even', 'if', 'it', 'makes', 'no', 'sense', ',', 'parser', 'takes', 'it', 'as', 'a', 'correct', 'sentence', '.'] 
+
+ UPOS tags are: 
+>> [('For', 'ADP'), ('example', 'NOUN'), (',', 'PUNCT'), ('“', 'PUNCT'), ('The', 'DET'), ('grains', 'NOUN'), ('peck', 'VERB'), ('the', 'DET'), ('bird', 'NOUN'), ('”', 'PUNCT'), (',', 'PUNCT'), ('is', 'AUX'), ('a', 'DET'), ('syntactically', 'ADV'), ('correct', 'ADJ'), ('according', 'VERB'), ('to', 'ADP'), ('parser', 'NOUN'), (',', 'PUNCT'), ('but', 'CCONJ'), ('even', 'ADV'), ('if', 'SCONJ'), ('it', 'PRON'), ('makes', 'VERB'), ('no', 'DET'), ('sense', 'NOUN'), (',', 'PUNCT'), ('parser', 'NOUN'), ('takes', 'VERB'), ('it', 'PRON'), ('as', 'ADP'), ('a', 'DET'), ('correct', 'ADJ'), ('sentence', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('For', 'IN'), ('example', 'NN'), (',', ','), ('“', '``'), ('The', 'DT'), ('grains', 'NNS'), ('peck', 'VBP'), ('the', 'DT'), ('bird', 'NN'), ('”', "''"), (',', ','), ('is', 'VBZ'), ('a', 'DT'), ('syntactically', 'RB'), ('correct', 'JJ'), ('according', 'VBG'), ('to', 'IN'), ('parser', 'NN'), (',', ','), ('but', 'CC'), ('even', 'RB'), ('if', 'IN'), ('it', 'PRP'), ('makes', 'VBZ'), ('no', 'DT'), ('sense', 'NN'), (',', ','), ('parser', 'NN'), ('takes', 'VBZ'), ('it', 'PRP'), ('as', 'IN'), ('a', 'DT'), ('correct', 'JJ'), ('sentence', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('For', 'for'), ('example', 'example'), (',', ','), ('“', "''"), ('The', 'the'), ('grains', 'grain'), ('peck', 'peck'), ('the', 'the'), ('bird', 'bird'), ('”', "''"), (',', ','), ('is', 'be'), ('a', 'a'), ('syntactically', 'syntactically'), ('correct', 'correct'), ('according', 'accord'), ('to', 'to'), ('parser', 'parser'), (',', ','), ('but', 'but'), ('even', 'even'), ('if', 'if'), ('it', 'it'), ('makes', 'make'), ('no', 'no'), ('sense', 'sense'), (',', ','), ('parser', 'parser'), ('takes', 'take'), ('it', 'it'), ('as', 'as'), ('a', 'a'), ('correct', 'correct'), ('sentence', 'sentence'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('For', 'example'), 'case'), (('example', 'correct'), 'obl'), ((',', 'correct'), 'punct'), (('“', 'peck'), 'punct'), (('The', 'grains'), 'det'), (('grains', 'peck'), 'nsubj'), (('peck', 'correct'), 'parataxis'), (('the', 'bird'), 'det'), (('bird', 'peck'), 'obj'), (('”', 'peck'), 'punct'), ((',', 'correct'), 'punct'), (('is', 'correct'), 'cop'), (('a', 'correct'), 'det'), (('syntactically', 'correct'), 'advmod'), (('correct', 'root'), 'root'), (('according', 'parser'), 'case'), (('to', 'according'), 'fixed'), (('parser', 'correct'), 'obl'), ((',', 'takes'), 'punct'), (('but', 'takes'), 'cc'), (('even', 'makes'), 'advmod'), (('if', 'makes'), 'mark'), (('it', 'makes'), 'nsubj'), (('makes', 'takes'), 'advcl'), (('no', 'sense'), 'det'), (('sense', 'makes'), 'obj'), ((',', 'takes'), 'punct'), (('parser', 'takes'), 'nsubj'), (('takes', 'correct'), 'conj'), (('it', 'takes'), 'obj'), (('as', 'sentence'), 'case'), (('a', 'sentence'), 'det'), (('correct', 'sentence'), 'amod'), (('sentence', 'takes'), 'obl'), (('.', 'correct'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 18 ===========================
+
+ · 
+
+Tokens are: 
+>> ['·'] 
+
+ UPOS tags are: 
+>> [('·', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('·', 'NFP')] 
+
+ Lemmas are: 
+>> [('·', '·')] 
+
+ Dependency tags are: 
+>> [(('·', 'root'), 'root')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 19 ===========================
+
+ To bring out high precision, multiple sets of grammar need to be prepared. 
+
+Tokens are: 
+>> ['To', 'bring', 'out', 'high', 'precision', ',', 'multiple', 'sets', 'of', 'grammar', 'need', 'to', 'be', 'prepared', '.'] 
+
+ UPOS tags are: 
+>> [('To', 'PART'), ('bring', 'VERB'), ('out', 'ADP'), ('high', 'ADJ'), ('precision', 'NOUN'), (',', 'PUNCT'), ('multiple', 'ADJ'), ('sets', 'NOUN'), ('of', 'ADP'), ('grammar', 'NOUN'), ('need', 'VERB'), ('to', 'PART'), ('be', 'AUX'), ('prepared', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('To', 'TO'), ('bring', 'VB'), ('out', 'RP'), ('high', 'JJ'), ('precision', 'NN'), (',', ','), ('multiple', 'JJ'), ('sets', 'NNS'), ('of', 'IN'), ('grammar', 'NN'), ('need', 'VBP'), ('to', 'TO'), ('be', 'VB'), ('prepared', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('To', 'to'), ('bring', 'bring'), ('out', 'out'), ('high', 'high'), ('precision', 'precision'), (',', ','), ('multiple', 'multiple'), ('sets', 'set'), ('of', 'of'), ('grammar', 'grammar'), ('need', 'need'), ('to', 'to'), ('be', 'be'), ('prepared', 'prepare'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('To', 'bring'), 'mark'), (('bring', 'need'), 'advcl'), (('out', 'bring'), 'compound:prt'), (('high', 'precision'), 'amod'), (('precision', 'bring'), 'obj'), ((',', 'need'), 'punct'), (('multiple', 'sets'), 'amod'), (('sets', 'need'), 'nsubj'), (('of', 'grammar'), 'case'), (('grammar', 'sets'), 'nmod'), (('need', 'root'), 'root'), (('to', 'prepared'), 'mark'), (('be', 'prepared'), 'aux:pass'), (('prepared', 'need'), 'xcomp'), (('.', 'need'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 20 ===========================
+
+ It may require a completely different sets of rules for parsing singular and plural variations, passive sentences, etc., which can lead to creation of huge set of rules that are unmanageable. 
+
+Tokens are: 
+>> ['It', 'may', 'require', 'a', 'completely', 'different', 'sets', 'of', 'rules', 'for', 'parsing', 'singular', 'and', 'plural', 'variations', ',', 'passive', 'sentences', ',', 'etc.', ',', 'which', 'can', 'lead', 'to', 'creation', 'of', 'huge', 'set', 'of', 'rules', 'that', 'are', 'unmanageable', '.'] 
+
+ UPOS tags are: 
+>> [('It', 'PRON'), ('may', 'AUX'), ('require', 'VERB'), ('a', 'DET'), ('completely', 'ADV'), ('different', 'ADJ'), ('sets', 'NOUN'), ('of', 'ADP'), ('rules', 'NOUN'), ('for', 'SCONJ'), ('parsing', 'VERB'), ('singular', 'ADJ'), ('and', 'CCONJ'), ('plural', 'ADJ'), ('variations', 'NOUN'), (',', 'PUNCT'), ('passive', 'ADJ'), ('sentences', 'NOUN'), (',', 'PUNCT'), ('etc.', 'X'), (',', 'PUNCT'), ('which', 'PRON'), ('can', 'AUX'), ('lead', 'VERB'), ('to', 'ADP'), ('creation', 'NOUN'), ('of', 'ADP'), ('huge', 'ADJ'), ('set', 'NOUN'), ('of', 'ADP'), ('rules', 'NOUN'), ('that', 'PRON'), ('are', 'AUX'), ('unmanageable', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('It', 'PRP'), ('may', 'MD'), ('require', 'VB'), ('a', 'DT'), ('completely', 'RB'), ('different', 'JJ'), ('sets', 'NNS'), ('of', 'IN'), ('rules', 'NNS'), ('for', 'IN'), ('parsing', 'VBG'), ('singular', 'JJ'), ('and', 'CC'), ('plural', 'JJ'), ('variations', 'NNS'), (',', ','), ('passive', 'JJ'), ('sentences', 'NNS'), (',', ','), ('etc.', 'FW'), (',', ','), ('which', 'WDT'), ('can', 'MD'), ('lead', 'VB'), ('to', 'IN'), ('creation', 'NN'), ('of', 'IN'), ('huge', 'JJ'), ('set', 'NN'), ('of', 'IN'), ('rules', 'NNS'), ('that', 'WDT'), ('are', 'VBP'), ('unmanageable', 'JJ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('It', 'it'), ('may', 'may'), ('require', 'require'), ('a', 'a'), ('completely', 'completely'), ('different', 'different'), ('sets', 'set'), ('of', 'of'), ('rules', 'rule'), ('for', 'for'), ('parsing', 'parse'), ('singular', 'singular'), ('and', 'and'), ('plural', 'plural'), ('variations', 'variation'), (',', ','), ('passive', 'passive'), ('sentences', 'sentence'), (',', ','), ('etc.', 'etc.'), (',', ','), ('which', 'which'), ('can', 'can'), ('lead', 'lead'), ('to', 'to'), ('creation', 'creation'), ('of', 'of'), ('huge', 'huge'), ('set', 'set'), ('of', 'of'), ('rules', 'rule'), ('that', 'that'), ('are', 'be'), ('unmanageable', 'unmanageable'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('It', 'require'), 'nsubj'), (('may', 'require'), 'aux'), (('require', 'root'), 'root'), (('a', 'sets'), 'det'), (('completely', 'different'), 'advmod'), (('different', 'sets'), 'amod'), (('sets', 'require'), 'obj'), (('of', 'rules'), 'case'), (('rules', 'sets'), 'nmod'), (('for', 'parsing'), 'mark'), (('parsing', 'rules'), 'acl'), (('singular', 'variations'), 'amod'), (('and', 'plural'), 'cc'), (('plural', 'singular'), 'conj'), (('variations', 'parsing'), 'obj'), ((',', 'sentences'), 'punct'), (('passive', 'sentences'), 'amod'), (('sentences', 'variations'), 'conj'), ((',', 'etc.'), 'punct'), (('etc.', 'variations'), 'conj'), ((',', 'lead'), 'punct'), (('which', 'lead'), 'nsubj'), (('can', 'lead'), 'aux'), (('lead', 'variations'), 'acl:relcl'), (('to', 'creation'), 'case'), (('creation', 'lead'), 'obl'), (('of', 'set'), 'case'), (('huge', 'set'), 'amod'), (('set', 'creation'), 'nmod'), (('of', 'rules'), 'case'), (('rules', 'set'), 'nmod'), (('that', 'unmanageable'), 'nsubj'), (('are', 'unmanageable'), 'cop'), (('unmanageable', 'set'), 'acl:relcl'), (('.', 'require'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 21 ===========================
+
+ Top-Down Parser 
+
+Tokens are: 
+>> ['Top', '-', 'Down', 'Parser'] 
+
+ UPOS tags are: 
+>> [('Top', 'ADJ'), ('-', 'PUNCT'), ('Down', 'NOUN'), ('Parser', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Top', 'JJ'), ('-', 'HYPH'), ('Down', 'NN'), ('Parser', 'NN')] 
+
+ Lemmas are: 
+>> [('Top', 'top'), ('-', '-'), ('Down', 'down'), ('Parser', 'parser')] 
+
+ Dependency tags are: 
+>> [(('Top', 'Down'), 'amod'), (('-', 'Down'), 'punct'), (('Down', 'Parser'), 'compound'), (('Parser', 'root'), 'root')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 22 ===========================
+
+ Here, the parser starts with the S symbol and attempts to rewrite it into a sequence of terminal symbols that matches the classes of the words in the input sentence until it consists entirely of terminal symbols. 
+
+Tokens are: 
+>> ['Here', ',', 'the', 'parser', 'starts', 'with', 'the', 'S', 'symbol', 'and', 'attempts', 'to', 'rewrite', 'it', 'into', 'a', 'sequence', 'of', 'terminal', 'symbols', 'that', 'matches', 'the', 'classes', 'of', 'the', 'words', 'in', 'the', 'input', 'sentence', 'until', 'it', 'consists', 'entirely', 'of', 'terminal', 'symbols', '.'] 
+
+ UPOS tags are: 
+>> [('Here', 'ADV'), (',', 'PUNCT'), ('the', 'DET'), ('parser', 'NOUN'), ('starts', 'VERB'), ('with', 'ADP'), ('the', 'DET'), ('S', 'PART'), ('symbol', 'NOUN'), ('and', 'CCONJ'), ('attempts', 'NOUN'), ('to', 'PART'), ('rewrite', 'VERB'), ('it', 'PRON'), ('into', 'ADP'), ('a', 'DET'), ('sequence', 'NOUN'), ('of', 'ADP'), ('terminal', 'ADJ'), ('symbols', 'NOUN'), ('that', 'PRON'), ('matches', 'VERB'), ('the', 'DET'), ('classes', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('words', 'NOUN'), ('in', 'ADP'), ('the', 'DET'), ('input', 'NOUN'), ('sentence', 'NOUN'), ('until', 'SCONJ'), ('it', 'PRON'), ('consists', 'VERB'), ('entirely', 'ADV'), ('of', 'ADP'), ('terminal', 'ADJ'), ('symbols', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Here', 'RB'), (',', ','), ('the', 'DT'), ('parser', 'NN'), ('starts', 'VBZ'), ('with', 'IN'), ('the', 'DT'), ('S', 'POS'), ('symbol', 'NN'), ('and', 'CC'), ('attempts', 'NNS'), ('to', 'TO'), ('rewrite', 'VB'), ('it', 'PRP'), ('into', 'IN'), ('a', 'DT'), ('sequence', 'NN'), ('of', 'IN'), ('terminal', 'JJ'), ('symbols', 'NNS'), ('that', 'WDT'), ('matches', 'VBZ'), ('the', 'DT'), ('classes', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('words', 'NNS'), ('in', 'IN'), ('the', 'DT'), ('input', 'NN'), ('sentence', 'NN'), ('until', 'IN'), ('it', 'PRP'), ('consists', 'VBZ'), ('entirely', 'RB'), ('of', 'IN'), ('terminal', 'JJ'), ('symbols', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Here', 'here'), (',', ','), ('the', 'the'), ('parser', 'parser'), ('starts', 'start'), ('with', 'with'), ('the', 'the'), ('S', "'s"), ('symbol', 'symbol'), ('and', 'and'), ('attempts', 'attempt'), ('to', 'to'), ('rewrite', 'rewrite'), ('it', 'it'), ('into', 'into'), ('a', 'a'), ('sequence', 'sequence'), ('of', 'of'), ('terminal', 'terminal'), ('symbols', 'symbol'), ('that', 'that'), ('matches', 'match'), ('the', 'the'), ('classes', 'class'), ('of', 'of'), ('the', 'the'), ('words', 'word'), ('in', 'in'), ('the', 'the'), ('input', 'input'), ('sentence', 'sentence'), ('until', 'until'), ('it', 'it'), ('consists', 'consist'), ('entirely', 'entirely'), ('of', 'of'), ('terminal', 'terminal'), ('symbols', 'symbol'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Here', 'starts'), 'advmod'), ((',', 'starts'), 'punct'), (('the', 'parser'), 'det'), (('parser', 'starts'), 'nsubj'), (('starts', 'root'), 'root'), (('with', 'symbol'), 'case'), (('the', 'symbol'), 'det'), (('S', 'the'), 'case'), (('symbol', 'starts'), 'obl'), (('and', 'attempts'), 'cc'), (('attempts', 'symbol'), 'conj'), (('to', 'rewrite'), 'mark'), (('rewrite', 'symbol'), 'acl'), (('it', 'rewrite'), 'obj'), (('into', 'sequence'), 'case'), (('a', 'sequence'), 'det'), (('sequence', 'rewrite'), 'obl'), (('of', 'symbols'), 'case'), (('terminal', 'symbols'), 'amod'), (('symbols', 'sequence'), 'nmod'), (('that', 'matches'), 'nsubj'), (('matches', 'symbols'), 'acl:relcl'), (('the', 'classes'), 'det'), (('classes', 'matches'), 'obj'), (('of', 'words'), 'case'), (('the', 'words'), 'det'), (('words', 'classes'), 'nmod'), (('in', 'sentence'), 'case'), (('the', 'sentence'), 'det'), (('input', 'sentence'), 'compound'), (('sentence', 'words'), 'nmod'), (('until', 'consists'), 'mark'), (('it', 'consists'), 'nsubj'), (('consists', 'matches'), 'advcl'), (('entirely', 'consists'), 'advmod'), (('of', 'symbols'), 'case'), (('terminal', 'symbols'), 'amod'), (('symbols', 'consists'), 'obl'), (('.', 'starts'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 23 ===========================
+
+ These are then checked with the input sentence to see if it matched. 
+
+Tokens are: 
+>> ['These', 'are', 'then', 'checked', 'with', 'the', 'input', 'sentence', 'to', 'see', 'if', 'it', 'matched', '.'] 
+
+ UPOS tags are: 
+>> [('These', 'PRON'), ('are', 'AUX'), ('then', 'ADV'), ('checked', 'VERB'), ('with', 'ADP'), ('the', 'DET'), ('input', 'NOUN'), ('sentence', 'NOUN'), ('to', 'PART'), ('see', 'VERB'), ('if', 'SCONJ'), ('it', 'PRON'), ('matched', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('These', 'DT'), ('are', 'VBP'), ('then', 'RB'), ('checked', 'VBN'), ('with', 'IN'), ('the', 'DT'), ('input', 'NN'), ('sentence', 'NN'), ('to', 'TO'), ('see', 'VB'), ('if', 'IN'), ('it', 'PRP'), ('matched', 'VBD'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('These', 'this'), ('are', 'be'), ('then', 'then'), ('checked', 'check'), ('with', 'with'), ('the', 'the'), ('input', 'input'), ('sentence', 'sentence'), ('to', 'to'), ('see', 'see'), ('if', 'if'), ('it', 'it'), ('matched', 'match'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('These', 'checked'), 'nsubj:pass'), (('are', 'checked'), 'aux:pass'), (('then', 'checked'), 'advmod'), (('checked', 'root'), 'root'), (('with', 'sentence'), 'case'), (('the', 'sentence'), 'det'), (('input', 'sentence'), 'compound'), (('sentence', 'checked'), 'obl'), (('to', 'see'), 'mark'), (('see', 'checked'), 'advcl'), (('if', 'matched'), 'mark'), (('it', 'matched'), 'nsubj'), (('matched', 'see'), 'advcl'), (('.', 'checked'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 24 ===========================
+
+ If not, the process is started over again with a different set of rules. 
+
+Tokens are: 
+>> ['If', 'not', ',', 'the', 'process', 'is', 'started', 'over', 'again', 'with', 'a', 'different', 'set', 'of', 'rules', '.'] 
+
+ UPOS tags are: 
+>> [('If', 'SCONJ'), ('not', 'PART'), (',', 'PUNCT'), ('the', 'DET'), ('process', 'NOUN'), ('is', 'AUX'), ('started', 'VERB'), ('over', 'ADV'), ('again', 'ADV'), ('with', 'ADP'), ('a', 'DET'), ('different', 'ADJ'), ('set', 'NOUN'), ('of', 'ADP'), ('rules', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('If', 'IN'), ('not', 'RB'), (',', ','), ('the', 'DT'), ('process', 'NN'), ('is', 'VBZ'), ('started', 'VBN'), ('over', 'RB'), ('again', 'RB'), ('with', 'IN'), ('a', 'DT'), ('different', 'JJ'), ('set', 'NN'), ('of', 'IN'), ('rules', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('If', 'if'), ('not', 'not'), (',', ','), ('the', 'the'), ('process', 'process'), ('is', 'be'), ('started', 'start'), ('over', 'over'), ('again', 'again'), ('with', 'with'), ('a', 'a'), ('different', 'different'), ('set', 'set'), ('of', 'of'), ('rules', 'rule'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('If', 'not'), 'mark'), (('not', 'started'), 'advcl'), ((',', 'started'), 'punct'), (('the', 'process'), 'det'), (('process', 'started'), 'nsubj:pass'), (('is', 'started'), 'aux:pass'), (('started', 'root'), 'root'), (('over', 'again'), 'advmod'), (('again', 'started'), 'advmod'), (('with', 'set'), 'case'), (('a', 'set'), 'det'), (('different', 'set'), 'amod'), (('set', 'started'), 'obl'), (('of', 'rules'), 'case'), (('rules', 'set'), 'nmod'), (('.', 'started'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 25 ===========================
+
+ This is repeated until a specific rule is found which describes the structure of the sentence. 
+
+Tokens are: 
+>> ['This', 'is', 'repeated', 'until', 'a', 'specific', 'rule', 'is', 'found', 'which', 'describes', 'the', 'structure', 'of', 'the', 'sentence', '.'] 
+
+ UPOS tags are: 
+>> [('This', 'PRON'), ('is', 'AUX'), ('repeated', 'VERB'), ('until', 'SCONJ'), ('a', 'DET'), ('specific', 'ADJ'), ('rule', 'NOUN'), ('is', 'AUX'), ('found', 'VERB'), ('which', 'PRON'), ('describes', 'VERB'), ('the', 'DET'), ('structure', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('sentence', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('This', 'DT'), ('is', 'VBZ'), ('repeated', 'VBN'), ('until', 'IN'), ('a', 'DT'), ('specific', 'JJ'), ('rule', 'NN'), ('is', 'VBZ'), ('found', 'VBN'), ('which', 'WDT'), ('describes', 'VBZ'), ('the', 'DT'), ('structure', 'NN'), ('of', 'IN'), ('the', 'DT'), ('sentence', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('This', 'this'), ('is', 'be'), ('repeated', 'repeat'), ('until', 'until'), ('a', 'a'), ('specific', 'specific'), ('rule', 'rule'), ('is', 'be'), ('found', 'find'), ('which', 'which'), ('describes', 'describe'), ('the', 'the'), ('structure', 'structure'), ('of', 'of'), ('the', 'the'), ('sentence', 'sentence'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('This', 'repeated'), 'nsubj:pass'), (('is', 'repeated'), 'aux:pass'), (('repeated', 'root'), 'root'), (('until', 'found'), 'mark'), (('a', 'rule'), 'det'), (('specific', 'rule'), 'amod'), (('rule', 'found'), 'nsubj:pass'), (('is', 'found'), 'aux:pass'), (('found', 'repeated'), 'advcl'), (('which', 'describes'), 'nsubj'), (('describes', 'found'), 'ccomp'), (('the', 'structure'), 'det'), (('structure', 'describes'), 'obj'), (('of', 'sentence'), 'case'), (('the', 'sentence'), 'det'), (('sentence', 'structure'), 'nmod'), (('.', 'repeated'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 26 ===========================
+
+ Merit − 
+
+Tokens are: 
+>> ['Merit', '−'] 
+
+ UPOS tags are: 
+>> [('Merit', 'NOUN'), ('−', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Merit', 'NN'), ('−', '.')] 
+
+ Lemmas are: 
+>> [('Merit', 'merit'), ('−', "''")] 
+
+ Dependency tags are: 
+>> [(('Merit', 'root'), 'root'), (('−', 'Merit'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 27 ===========================
+
+ It is simple to implement. 
+
+Tokens are: 
+>> ['It', 'is', 'simple', 'to', 'implement', '.'] 
+
+ UPOS tags are: 
+>> [('It', 'PRON'), ('is', 'AUX'), ('simple', 'ADJ'), ('to', 'PART'), ('implement', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('It', 'PRP'), ('is', 'VBZ'), ('simple', 'JJ'), ('to', 'TO'), ('implement', 'VB'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('It', 'it'), ('is', 'be'), ('simple', 'simple'), ('to', 'to'), ('implement', 'implement'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('It', 'simple'), 'expl'), (('is', 'simple'), 'cop'), (('simple', 'root'), 'root'), (('to', 'implement'), 'mark'), (('implement', 'simple'), 'csubj'), (('.', 'simple'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 28 ===========================
+
+ Demerits − · 
+
+Tokens are: 
+>> ['Demerits', '−', '·'] 
+
+ UPOS tags are: 
+>> [('Demerits', 'NOUN'), ('−', 'PUNCT'), ('·', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Demerits', 'NNS'), ('−', '.'), ('·', 'NFP')] 
+
+ Lemmas are: 
+>> [('Demerits', 'demerit'), ('−', "''"), ('·', '·')] 
+
+ Dependency tags are: 
+>> [(('Demerits', 'root'), 'root'), (('−', 'Demerits'), 'punct'), (('·', 'Demerits'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 29 ===========================
+
+ It is inefficient, as the search process has to be repeated if an error occurs. 
+
+Tokens are: 
+>> ['It', 'is', 'inefficient', ',', 'as', 'the', 'search', 'process', 'has', 'to', 'be', 'repeated', 'if', 'an', 'error', 'occurs', '.'] 
+
+ UPOS tags are: 
+>> [('It', 'PRON'), ('is', 'AUX'), ('inefficient', 'ADJ'), (',', 'PUNCT'), ('as', 'SCONJ'), ('the', 'DET'), ('search', 'NOUN'), ('process', 'NOUN'), ('has', 'VERB'), ('to', 'PART'), ('be', 'AUX'), ('repeated', 'VERB'), ('if', 'SCONJ'), ('an', 'DET'), ('error', 'NOUN'), ('occurs', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('It', 'PRP'), ('is', 'VBZ'), ('inefficient', 'JJ'), (',', ','), ('as', 'IN'), ('the', 'DT'), ('search', 'NN'), ('process', 'NN'), ('has', 'VBZ'), ('to', 'TO'), ('be', 'VB'), ('repeated', 'VBN'), ('if', 'IN'), ('an', 'DT'), ('error', 'NN'), ('occurs', 'VBZ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('It', 'it'), ('is', 'be'), ('inefficient', 'inefficient'), (',', ','), ('as', 'as'), ('the', 'the'), ('search', 'search'), ('process', 'process'), ('has', 'have'), ('to', 'to'), ('be', 'be'), ('repeated', 'repeat'), ('if', 'if'), ('an', 'a'), ('error', 'error'), ('occurs', 'occur'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('It', 'inefficient'), 'nsubj'), (('is', 'inefficient'), 'cop'), (('inefficient', 'root'), 'root'), ((',', 'inefficient'), 'punct'), (('as', 'has'), 'mark'), (('the', 'process'), 'det'), (('search', 'process'), 'compound'), (('process', 'has'), 'nsubj'), (('has', 'inefficient'), 'advcl'), (('to', 'repeated'), 'mark'), (('be', 'repeated'), 'aux:pass'), (('repeated', 'has'), 'xcomp'), (('if', 'occurs'), 'mark'), (('an', 'error'), 'det'), (('error', 'occurs'), 'nsubj'), (('occurs', 'repeated'), 'advcl'), (('.', 'inefficient'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 30 ===========================
+
+ · Slow speed of working. 
+
+Tokens are: 
+>> ['·', 'Slow', 'speed', 'of', 'working', '.'] 
+
+ UPOS tags are: 
+>> [('·', 'PUNCT'), ('Slow', 'ADJ'), ('speed', 'NOUN'), ('of', 'SCONJ'), ('working', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('·', 'NFP'), ('Slow', 'JJ'), ('speed', 'NN'), ('of', 'IN'), ('working', 'VBG'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('·', '·'), ('Slow', 'slow'), ('speed', 'speed'), ('of', 'of'), ('working', 'work'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('·', 'speed'), 'punct'), (('Slow', 'speed'), 'amod'), (('speed', 'root'), 'root'), (('of', 'working'), 'mark'), (('working', 'speed'), 'acl'), (('.', 'speed'), 'punct')]
+
+ Named Entities are: 
+>> []

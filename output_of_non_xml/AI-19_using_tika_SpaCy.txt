@@ -1,0 +1,190 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-19 AI is developing with such an incredible speed, sometimes it seems magical. 
+
+
+>> Tokens are: 
+[AI-19, AI, developing, incredible, speed, ,, magical, .] 
+
+>> PoS Tags are: 
+[('AI-19', 'PROPN'), ('AI', 'PROPN'), ('developing', 'VERB'), ('incredible', 'ADJ'), ('speed', 'NOUN'), (',', 'PUNCT'), ('magical', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI-19', 'compound'), ('AI', 'nsubj'), ('developing', 'ccomp'), ('incredible', 'amod'), ('speed', 'pobj'), (',', 'punct'), ('magical', 'oprd'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AI-19, AI], [AI, developing], [developing, incredible], [incredible, speed], [speed, ,], [,, magical], [magical, .]]
+
+>> Trigrams: 
+[[AI-19, AI, developing], [AI, developing, incredible], [developing, incredible, speed], [incredible, speed, ,], [speed, ,, magical], [,, magical, .]]
+
+>> Noun Phrases are: 
+[AI-19 AI, such an incredible speed, it]
+
+>> Named Entities are: 
+[('AI-19 AI', 'PERSON')]
+
+
+============================ Sentence 2 =============================
+
+There is an opinion among researchers and developers that AI could grow so immensely strong that it would be difficult for humans to control. 
+
+
+>> Tokens are: 
+[opinion, researchers, developers, AI, grow, immensely, strong, difficult, humans, control, .] 
+
+>> PoS Tags are: 
+[('opinion', 'NOUN'), ('researchers', 'NOUN'), ('developers', 'NOUN'), ('AI', 'PROPN'), ('grow', 'VERB'), ('immensely', 'ADV'), ('strong', 'ADJ'), ('difficult', 'ADJ'), ('humans', 'NOUN'), ('control', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('opinion', 'attr'), ('researchers', 'pobj'), ('developers', 'conj'), ('AI', 'nsubj'), ('grow', 'relcl'), ('immensely', 'advmod'), ('strong', 'acomp'), ('difficult', 'acomp'), ('humans', 'nsubj'), ('control', 'advcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[opinion, researchers], [researchers, developers], [developers, AI], [AI, grow], [grow, immensely], [immensely, strong], [strong, difficult], [difficult, humans], [humans, control], [control, .]]
+
+>> Trigrams: 
+[[opinion, researchers, developers], [researchers, developers, AI], [developers, AI, grow], [AI, grow, immensely], [grow, immensely, strong], [immensely, strong, difficult], [strong, difficult, humans], [difficult, humans, control], [humans, control, .]]
+
+>> Noun Phrases are: 
+[an opinion, researchers, developers, AI, it, humans]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 3 =============================
+
+Humans developed AI systems by introducing into them every possible intelligence they could, for which the humans themselves now seem threatened. 
+
+
+>> Tokens are: 
+[Humans, developed, AI, systems, introducing, possible, intelligence, ,, humans, threatened, .] 
+
+>> PoS Tags are: 
+[('Humans', 'NOUN'), ('developed', 'VERB'), ('AI', 'PROPN'), ('systems', 'NOUN'), ('introducing', 'VERB'), ('possible', 'ADJ'), ('intelligence', 'NOUN'), (',', 'PUNCT'), ('humans', 'NOUN'), ('threatened', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Humans', 'nsubj'), ('developed', 'ROOT'), ('AI', 'compound'), ('systems', 'dobj'), ('introducing', 'pcomp'), ('possible', 'amod'), ('intelligence', 'dobj'), (',', 'punct'), ('humans', 'nsubj'), ('threatened', 'oprd'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Humans, developed], [developed, AI], [AI, systems], [systems, introducing], [introducing, possible], [possible, intelligence], [intelligence, ,], [,, humans], [humans, threatened], [threatened, .]]
+
+>> Trigrams: 
+[[Humans, developed, AI], [developed, AI, systems], [AI, systems, introducing], [systems, introducing, possible], [introducing, possible, intelligence], [possible, intelligence, ,], [intelligence, ,, humans], [,, humans, threatened], [humans, threatened, .]]
+
+>> Noun Phrases are: 
+[Humans, AI systems, them, every possible intelligence, they, the humans, themselves]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 4 =============================
+
+Threat to Privacy An AI program that recognizes speech and understands natural language is theoretically capable of understanding each conversation on e-mails and telephones. 
+
+
+>> Tokens are: 
+[Threat, Privacy, AI, program, recognizes, speech, understands, natural, language, theoretically, capable, understanding, conversation, e, -, mails, telephones, .] 
+
+>> PoS Tags are: 
+[('Threat', 'NOUN'), ('Privacy', 'PROPN'), ('AI', 'PROPN'), ('program', 'NOUN'), ('recognizes', 'VERB'), ('speech', 'NOUN'), ('understands', 'VERB'), ('natural', 'ADJ'), ('language', 'NOUN'), ('theoretically', 'ADV'), ('capable', 'ADJ'), ('understanding', 'VERB'), ('conversation', 'NOUN'), ('e', 'NOUN'), ('-', 'NOUN'), ('mails', 'NOUN'), ('telephones', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Threat', 'nsubj'), ('Privacy', 'pobj'), ('AI', 'compound'), ('program', 'pobj'), ('recognizes', 'relcl'), ('speech', 'dobj'), ('understands', 'conj'), ('natural', 'amod'), ('language', 'dobj'), ('theoretically', 'advmod'), ('capable', 'acomp'), ('understanding', 'pcomp'), ('conversation', 'dobj'), ('e', 'pobj'), ('-', 'pobj'), ('mails', 'pobj'), ('telephones', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Threat, Privacy], [Privacy, AI], [AI, program], [program, recognizes], [recognizes, speech], [speech, understands], [understands, natural], [natural, language], [language, theoretically], [theoretically, capable], [capable, understanding], [understanding, conversation], [conversation, e], [e, -], [-, mails], [mails, telephones], [telephones, .]]
+
+>> Trigrams: 
+[[Threat, Privacy, AI], [Privacy, AI, program], [AI, program, recognizes], [program, recognizes, speech], [recognizes, speech, understands], [speech, understands, natural], [understands, natural, language], [natural, language, theoretically], [language, theoretically, capable], [theoretically, capable, understanding], [capable, understanding, conversation], [understanding, conversation, e], [conversation, e, -], [e, -, mails], [-, mails, telephones], [mails, telephones, .]]
+
+>> Noun Phrases are: 
+[Threat, Privacy, An AI program, speech, natural language, each conversation, e, -, mails, telephones]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 5 =============================
+
+Threat to Human Dignity AI systems have already started replacing the human beings in few industries. 
+
+
+>> Tokens are: 
+[Threat, Human, Dignity, AI, systems, started, replacing, human, beings, industries, .] 
+
+>> PoS Tags are: 
+[('Threat', 'NOUN'), ('Human', 'PROPN'), ('Dignity', 'PROPN'), ('AI', 'PROPN'), ('systems', 'NOUN'), ('started', 'VERB'), ('replacing', 'VERB'), ('human', 'ADJ'), ('beings', 'NOUN'), ('industries', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Threat', 'nsubj'), ('Human', 'compound'), ('Dignity', 'compound'), ('AI', 'compound'), ('systems', 'pobj'), ('started', 'ROOT'), ('replacing', 'xcomp'), ('human', 'amod'), ('beings', 'dobj'), ('industries', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Threat, Human], [Human, Dignity], [Dignity, AI], [AI, systems], [systems, started], [started, replacing], [replacing, human], [human, beings], [beings, industries], [industries, .]]
+
+>> Trigrams: 
+[[Threat, Human, Dignity], [Human, Dignity, AI], [Dignity, AI, systems], [AI, systems, started], [systems, started, replacing], [started, replacing, human], [replacing, human, beings], [human, beings, industries], [beings, industries, .]]
+
+>> Noun Phrases are: 
+[Threat, Human Dignity AI systems, the human beings, few industries]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+It should not replace people in the sectors where they are holding dignified positions which are pertaining to ethics such as nursing, surgeon, judge, police officer, etc. 
+
+
+>> Tokens are: 
+[replace, people, sectors, holding, dignified, positions, pertaining, ethics, nursing, ,, surgeon, ,, judge, ,, police, officer, ,, etc, .] 
+
+>> PoS Tags are: 
+[('replace', 'VERB'), ('people', 'NOUN'), ('sectors', 'NOUN'), ('holding', 'VERB'), ('dignified', 'ADJ'), ('positions', 'NOUN'), ('pertaining', 'VERB'), ('ethics', 'NOUN'), ('nursing', 'NOUN'), (',', 'PUNCT'), ('surgeon', 'NOUN'), (',', 'PUNCT'), ('judge', 'NOUN'), (',', 'PUNCT'), ('police', 'NOUN'), ('officer', 'NOUN'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('replace', 'ROOT'), ('people', 'dobj'), ('sectors', 'pobj'), ('holding', 'relcl'), ('dignified', 'amod'), ('positions', 'dobj'), ('pertaining', 'relcl'), ('ethics', 'pobj'), ('nursing', 'pobj'), (',', 'punct'), ('surgeon', 'conj'), (',', 'punct'), ('judge', 'conj'), (',', 'punct'), ('police', 'compound'), ('officer', 'conj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[replace, people], [people, sectors], [sectors, holding], [holding, dignified], [dignified, positions], [positions, pertaining], [pertaining, ethics], [ethics, nursing], [nursing, ,], [,, surgeon], [surgeon, ,], [,, judge], [judge, ,], [,, police], [police, officer], [officer, ,], [,, etc], [etc, .]]
+
+>> Trigrams: 
+[[replace, people, sectors], [people, sectors, holding], [sectors, holding, dignified], [holding, dignified, positions], [dignified, positions, pertaining], [positions, pertaining, ethics], [pertaining, ethics, nursing], [ethics, nursing, ,], [nursing, ,, surgeon], [,, surgeon, ,], [surgeon, ,, judge], [,, judge, ,], [judge, ,, police], [,, police, officer], [police, officer, ,], [officer, ,, etc], [,, etc, .]]
+
+>> Noun Phrases are: 
+[It, people, the sectors, they, dignified positions, ethics, nursing, surgeon, judge, police officer]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+Threat to Safety The self-improving AI systems can become so mighty than humans that could be very difficult to stop from achieving their goals, which may lead to unintended consequences. 
+
+
+>> Tokens are: 
+[Threat, Safety, self, -, improving, AI, systems, mighty, humans, difficult, stop, achieving, goals, ,, lead, unintended, consequences, .] 
+
+>> PoS Tags are: 
+[('Threat', 'NOUN'), ('Safety', 'PROPN'), ('self', 'NOUN'), ('-', 'PUNCT'), ('improving', 'VERB'), ('AI', 'NOUN'), ('systems', 'NOUN'), ('mighty', 'ADJ'), ('humans', 'NOUN'), ('difficult', 'ADJ'), ('stop', 'VERB'), ('achieving', 'VERB'), ('goals', 'NOUN'), (',', 'PUNCT'), ('lead', 'VERB'), ('unintended', 'ADJ'), ('consequences', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Threat', 'nmod'), ('Safety', 'pobj'), ('self', 'npadvmod'), ('-', 'punct'), ('improving', 'amod'), ('AI', 'compound'), ('systems', 'nsubj'), ('mighty', 'acomp'), ('humans', 'pobj'), ('difficult', 'acomp'), ('stop', 'xcomp'), ('achieving', 'pcomp'), ('goals', 'dobj'), (',', 'punct'), ('lead', 'relcl'), ('unintended', 'amod'), ('consequences', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Threat, Safety], [Safety, self], [self, -], [-, improving], [improving, AI], [AI, systems], [systems, mighty], [mighty, humans], [humans, difficult], [difficult, stop], [stop, achieving], [achieving, goals], [goals, ,], [,, lead], [lead, unintended], [unintended, consequences], [consequences, .]]
+
+>> Trigrams: 
+[[Threat, Safety, self], [Safety, self, -], [self, -, improving], [-, improving, AI], [improving, AI, systems], [AI, systems, mighty], [systems, mighty, humans], [mighty, humans, difficult], [humans, difficult, stop], [difficult, stop, achieving], [stop, achieving, goals], [achieving, goals, ,], [goals, ,, lead], [,, lead, unintended], [lead, unintended, consequences], [unintended, consequences, .]]
+
+>> Noun Phrases are: 
+[Safety, humans, their goals, unintended consequences]
+
+>> Named Entities are: 
+[('AI', 'ORG')]

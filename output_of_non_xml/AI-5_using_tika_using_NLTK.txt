@@ -1,0 +1,495 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-5 Task Classification of AI The domain of AI is classified into Formal tasks, Mundane tasks, and Expert tasks. 
+
+
+>> Tokens are: 
+ ['AI-5', 'Task', 'Classification', 'AI', 'The', 'domain', 'AI', 'classified', 'Formal', 'tasks', ',', 'Mundane', 'tasks', ',', 'Expert', 'tasks', '.']
+
+>> Bigrams are: 
+ [('AI-5', 'Task'), ('Task', 'Classification'), ('Classification', 'AI'), ('AI', 'The'), ('The', 'domain'), ('domain', 'AI'), ('AI', 'classified'), ('classified', 'Formal'), ('Formal', 'tasks'), ('tasks', ','), (',', 'Mundane'), ('Mundane', 'tasks'), ('tasks', ','), (',', 'Expert'), ('Expert', 'tasks'), ('tasks', '.')]
+
+>> Trigrams are: 
+ [('AI-5', 'Task', 'Classification'), ('Task', 'Classification', 'AI'), ('Classification', 'AI', 'The'), ('AI', 'The', 'domain'), ('The', 'domain', 'AI'), ('domain', 'AI', 'classified'), ('AI', 'classified', 'Formal'), ('classified', 'Formal', 'tasks'), ('Formal', 'tasks', ','), ('tasks', ',', 'Mundane'), (',', 'Mundane', 'tasks'), ('Mundane', 'tasks', ','), ('tasks', ',', 'Expert'), (',', 'Expert', 'tasks'), ('Expert', 'tasks', '.')]
+
+>> POS Tags are: 
+ [('AI-5', 'JJ'), ('Task', 'NNP'), ('Classification', 'NNP'), ('AI', 'NNP'), ('The', 'DT'), ('domain', 'NN'), ('AI', 'NNP'), ('classified', 'VBD'), ('Formal', 'NNP'), ('tasks', 'NNS'), (',', ','), ('Mundane', 'NNP'), ('tasks', 'NNS'), (',', ','), ('Expert', 'NNP'), ('tasks', 'NNS'), ('.', '.')]
+
+ (S
+  (NP AI-5/JJ Task/NNP Classification/NNP AI/NNP)
+  (NP The/DT domain/NN AI/NNP)
+  classified/VBD
+  (NP Formal/NNP tasks/NNS)
+  ,/,
+  (NP Mundane/NNP tasks/NNS)
+  ,/,
+  (NP Expert/NNP tasks/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-5 Task Classification AI', 'The domain AI', 'Formal tasks', 'Mundane tasks', 'Expert tasks']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Task Classification'), ('ORGANIZATION', 'Formal'), ('GPE', 'Mundane'), ('GPE', 'Expert')] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-5', 'ai-5'), ('Task', 'task'), ('Classification', 'classif'), ('AI', 'ai'), ('The', 'the'), ('domain', 'domain'), ('AI', 'ai'), ('classified', 'classifi'), ('Formal', 'formal'), ('tasks', 'task'), (',', ','), ('Mundane', 'mundan'), ('tasks', 'task'), (',', ','), ('Expert', 'expert'), ('tasks', 'task'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-5', 'ai-5'), ('Task', 'task'), ('Classification', 'classif'), ('AI', 'ai'), ('The', 'the'), ('domain', 'domain'), ('AI', 'ai'), ('classified', 'classifi'), ('Formal', 'formal'), ('tasks', 'task'), (',', ','), ('Mundane', 'mundan'), ('tasks', 'task'), (',', ','), ('Expert', 'expert'), ('tasks', 'task'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-5', 'AI-5'), ('Task', 'Task'), ('Classification', 'Classification'), ('AI', 'AI'), ('The', 'The'), ('domain', 'domain'), ('AI', 'AI'), ('classified', 'classified'), ('Formal', 'Formal'), ('tasks', 'task'), (',', ','), ('Mundane', 'Mundane'), ('tasks', 'task'), (',', ','), ('Expert', 'Expert'), ('tasks', 'task'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+Task Domains of Artificial Intelligence  	Mundane (Ordinary) Tasks 	Formal Tasks 	Expert Tasks  	Perception · Computer Vision · Speech, Voice 	· Mathematics · Geometry · Logic · Integration and Differentiation 	· Engineering · Fault Finding · Manufacturing · Monitoring  	Natural Language Processing · Understanding · Language Generation · Language Translation 	Games · Go · Chess (Deep Blue) · Ckeckers 	Scientific Analysis  	Common Sense 	Verification 	Financial Analysis  	Reasoning 	Theorem Proving 	Medical Diagnosis  	Planing 	 	Creativity  	Robotics · Locomotive 	 	   Humans learn mundane (ordinary) tasks since their birth. 
+
+
+>> Tokens are: 
+ ['Task', 'Domains', 'Artificial', 'Intelligence', 'Mundane', '(', 'Ordinary', ')', 'Tasks', 'Formal', 'Tasks', 'Expert', 'Tasks', 'Perception', '·', 'Computer', 'Vision', '·', 'Speech', ',', 'Voice', '·', 'Mathematics', '·', 'Geometry', '·', 'Logic', '·', 'Integration', 'Differentiation', '·', 'Engineering', '·', 'Fault', 'Finding', '·', 'Manufacturing', '·', 'Monitoring', 'Natural', 'Language', 'Processing', '·', 'Understanding', '·', 'Language', 'Generation', '·', 'Language', 'Translation', 'Games', '·', 'Go', '·', 'Chess', '(', 'Deep', 'Blue', ')', '·', 'Ckeckers', 'Scientific', 'Analysis', 'Common', 'Sense', 'Verification', 'Financial', 'Analysis', 'Reasoning', 'Theorem', 'Proving', 'Medical', 'Diagnosis', 'Planing', 'Creativity', 'Robotics', '·', 'Locomotive', 'Humans', 'learn', 'mundane', '(', 'ordinary', ')', 'tasks', 'since', 'birth', '.']
+
+>> Bigrams are: 
+ [('Task', 'Domains'), ('Domains', 'Artificial'), ('Artificial', 'Intelligence'), ('Intelligence', 'Mundane'), ('Mundane', '('), ('(', 'Ordinary'), ('Ordinary', ')'), (')', 'Tasks'), ('Tasks', 'Formal'), ('Formal', 'Tasks'), ('Tasks', 'Expert'), ('Expert', 'Tasks'), ('Tasks', 'Perception'), ('Perception', '·'), ('·', 'Computer'), ('Computer', 'Vision'), ('Vision', '·'), ('·', 'Speech'), ('Speech', ','), (',', 'Voice'), ('Voice', '·'), ('·', 'Mathematics'), ('Mathematics', '·'), ('·', 'Geometry'), ('Geometry', '·'), ('·', 'Logic'), ('Logic', '·'), ('·', 'Integration'), ('Integration', 'Differentiation'), ('Differentiation', '·'), ('·', 'Engineering'), ('Engineering', '·'), ('·', 'Fault'), ('Fault', 'Finding'), ('Finding', '·'), ('·', 'Manufacturing'), ('Manufacturing', '·'), ('·', 'Monitoring'), ('Monitoring', 'Natural'), ('Natural', 'Language'), ('Language', 'Processing'), ('Processing', '·'), ('·', 'Understanding'), ('Understanding', '·'), ('·', 'Language'), ('Language', 'Generation'), ('Generation', '·'), ('·', 'Language'), ('Language', 'Translation'), ('Translation', 'Games'), ('Games', '·'), ('·', 'Go'), ('Go', '·'), ('·', 'Chess'), ('Chess', '('), ('(', 'Deep'), ('Deep', 'Blue'), ('Blue', ')'), (')', '·'), ('·', 'Ckeckers'), ('Ckeckers', 'Scientific'), ('Scientific', 'Analysis'), ('Analysis', 'Common'), ('Common', 'Sense'), ('Sense', 'Verification'), ('Verification', 'Financial'), ('Financial', 'Analysis'), ('Analysis', 'Reasoning'), ('Reasoning', 'Theorem'), ('Theorem', 'Proving'), ('Proving', 'Medical'), ('Medical', 'Diagnosis'), ('Diagnosis', 'Planing'), ('Planing', 'Creativity'), ('Creativity', 'Robotics'), ('Robotics', '·'), ('·', 'Locomotive'), ('Locomotive', 'Humans'), ('Humans', 'learn'), ('learn', 'mundane'), ('mundane', '('), ('(', 'ordinary'), ('ordinary', ')'), (')', 'tasks'), ('tasks', 'since'), ('since', 'birth'), ('birth', '.')]
+
+>> Trigrams are: 
+ [('Task', 'Domains', 'Artificial'), ('Domains', 'Artificial', 'Intelligence'), ('Artificial', 'Intelligence', 'Mundane'), ('Intelligence', 'Mundane', '('), ('Mundane', '(', 'Ordinary'), ('(', 'Ordinary', ')'), ('Ordinary', ')', 'Tasks'), (')', 'Tasks', 'Formal'), ('Tasks', 'Formal', 'Tasks'), ('Formal', 'Tasks', 'Expert'), ('Tasks', 'Expert', 'Tasks'), ('Expert', 'Tasks', 'Perception'), ('Tasks', 'Perception', '·'), ('Perception', '·', 'Computer'), ('·', 'Computer', 'Vision'), ('Computer', 'Vision', '·'), ('Vision', '·', 'Speech'), ('·', 'Speech', ','), ('Speech', ',', 'Voice'), (',', 'Voice', '·'), ('Voice', '·', 'Mathematics'), ('·', 'Mathematics', '·'), ('Mathematics', '·', 'Geometry'), ('·', 'Geometry', '·'), ('Geometry', '·', 'Logic'), ('·', 'Logic', '·'), ('Logic', '·', 'Integration'), ('·', 'Integration', 'Differentiation'), ('Integration', 'Differentiation', '·'), ('Differentiation', '·', 'Engineering'), ('·', 'Engineering', '·'), ('Engineering', '·', 'Fault'), ('·', 'Fault', 'Finding'), ('Fault', 'Finding', '·'), ('Finding', '·', 'Manufacturing'), ('·', 'Manufacturing', '·'), ('Manufacturing', '·', 'Monitoring'), ('·', 'Monitoring', 'Natural'), ('Monitoring', 'Natural', 'Language'), ('Natural', 'Language', 'Processing'), ('Language', 'Processing', '·'), ('Processing', '·', 'Understanding'), ('·', 'Understanding', '·'), ('Understanding', '·', 'Language'), ('·', 'Language', 'Generation'), ('Language', 'Generation', '·'), ('Generation', '·', 'Language'), ('·', 'Language', 'Translation'), ('Language', 'Translation', 'Games'), ('Translation', 'Games', '·'), ('Games', '·', 'Go'), ('·', 'Go', '·'), ('Go', '·', 'Chess'), ('·', 'Chess', '('), ('Chess', '(', 'Deep'), ('(', 'Deep', 'Blue'), ('Deep', 'Blue', ')'), ('Blue', ')', '·'), (')', '·', 'Ckeckers'), ('·', 'Ckeckers', 'Scientific'), ('Ckeckers', 'Scientific', 'Analysis'), ('Scientific', 'Analysis', 'Common'), ('Analysis', 'Common', 'Sense'), ('Common', 'Sense', 'Verification'), ('Sense', 'Verification', 'Financial'), ('Verification', 'Financial', 'Analysis'), ('Financial', 'Analysis', 'Reasoning'), ('Analysis', 'Reasoning', 'Theorem'), ('Reasoning', 'Theorem', 'Proving'), ('Theorem', 'Proving', 'Medical'), ('Proving', 'Medical', 'Diagnosis'), ('Medical', 'Diagnosis', 'Planing'), ('Diagnosis', 'Planing', 'Creativity'), ('Planing', 'Creativity', 'Robotics'), ('Creativity', 'Robotics', '·'), ('Robotics', '·', 'Locomotive'), ('·', 'Locomotive', 'Humans'), ('Locomotive', 'Humans', 'learn'), ('Humans', 'learn', 'mundane'), ('learn', 'mundane', '('), ('mundane', '(', 'ordinary'), ('(', 'ordinary', ')'), ('ordinary', ')', 'tasks'), (')', 'tasks', 'since'), ('tasks', 'since', 'birth'), ('since', 'birth', '.')]
+
+>> POS Tags are: 
+ [('Task', 'NN'), ('Domains', 'VBZ'), ('Artificial', 'JJ'), ('Intelligence', 'NNP'), ('Mundane', 'NNP'), ('(', '('), ('Ordinary', 'NNP'), (')', ')'), ('Tasks', 'NNP'), ('Formal', 'NNP'), ('Tasks', 'NNP'), ('Expert', 'NNP'), ('Tasks', 'NNP'), ('Perception', 'NNP'), ('·', 'NNP'), ('Computer', 'NNP'), ('Vision', 'NNP'), ('·', 'NNP'), ('Speech', 'NNP'), (',', ','), ('Voice', 'NNP'), ('·', 'NNP'), ('Mathematics', 'NNP'), ('·', 'NNP'), ('Geometry', 'NNP'), ('·', 'NNP'), ('Logic', 'NNP'), ('·', 'NNP'), ('Integration', 'NNP'), ('Differentiation', 'NNP'), ('·', 'NNP'), ('Engineering', 'NNP'), ('·', 'NNP'), ('Fault', 'NNP'), ('Finding', 'NNP'), ('·', 'NNP'), ('Manufacturing', 'NNP'), ('·', 'NNP'), ('Monitoring', 'NNP'), ('Natural', 'NNP'), ('Language', 'NNP'), ('Processing', 'NNP'), ('·', 'NNP'), ('Understanding', 'NNP'), ('·', 'NNP'), ('Language', 'NNP'), ('Generation', 'NNP'), ('·', 'NNP'), ('Language', 'NNP'), ('Translation', 'NNP'), ('Games', 'NNP'), ('·', 'NNP'), ('Go', 'NNP'), ('·', 'NNP'), ('Chess', 'NNP'), ('(', '('), ('Deep', 'NNP'), ('Blue', 'NNP'), (')', ')'), ('·', 'VBZ'), ('Ckeckers', 'NNP'), ('Scientific', 'NNP'), ('Analysis', 'NNP'), ('Common', 'NNP'), ('Sense', 'NNP'), ('Verification', 'NNP'), ('Financial', 'NNP'), ('Analysis', 'NNP'), ('Reasoning', 'NNP'), ('Theorem', 'NNP'), ('Proving', 'NNP'), ('Medical', 'NNP'), ('Diagnosis', 'NNP'), ('Planing', 'NNP'), ('Creativity', 'NNP'), ('Robotics', 'NNP'), ('·', 'NNP'), ('Locomotive', 'NNP'), ('Humans', 'NNP'), ('learn', 'VBP'), ('mundane', 'NN'), ('(', '('), ('ordinary', 'JJ'), (')', ')'), ('tasks', 'NNS'), ('since', 'IN'), ('birth', 'NN'), ('.', '.')]
+
+ (S
+  (NP Task/NN)
+  Domains/VBZ
+  (NP Artificial/JJ Intelligence/NNP Mundane/NNP)
+  (/(
+  (NP Ordinary/NNP)
+  )/)
+  (NP
+    Tasks/NNP
+    Formal/NNP
+    Tasks/NNP
+    Expert/NNP
+    Tasks/NNP
+    Perception/NNP
+    ·/NNP
+    Computer/NNP
+    Vision/NNP
+    ·/NNP
+    Speech/NNP)
+  ,/,
+  (NP
+    Voice/NNP
+    ·/NNP
+    Mathematics/NNP
+    ·/NNP
+    Geometry/NNP
+    ·/NNP
+    Logic/NNP
+    ·/NNP
+    Integration/NNP
+    Differentiation/NNP
+    ·/NNP
+    Engineering/NNP
+    ·/NNP
+    Fault/NNP
+    Finding/NNP
+    ·/NNP
+    Manufacturing/NNP
+    ·/NNP
+    Monitoring/NNP
+    Natural/NNP
+    Language/NNP
+    Processing/NNP
+    ·/NNP
+    Understanding/NNP
+    ·/NNP
+    Language/NNP
+    Generation/NNP
+    ·/NNP
+    Language/NNP
+    Translation/NNP
+    Games/NNP
+    ·/NNP
+    Go/NNP
+    ·/NNP
+    Chess/NNP)
+  (/(
+  (NP Deep/NNP Blue/NNP)
+  )/)
+  ·/VBZ
+  (NP
+    Ckeckers/NNP
+    Scientific/NNP
+    Analysis/NNP
+    Common/NNP
+    Sense/NNP
+    Verification/NNP
+    Financial/NNP
+    Analysis/NNP
+    Reasoning/NNP
+    Theorem/NNP
+    Proving/NNP
+    Medical/NNP
+    Diagnosis/NNP
+    Planing/NNP
+    Creativity/NNP
+    Robotics/NNP
+    ·/NNP
+    Locomotive/NNP
+    Humans/NNP)
+  learn/VBP
+  (NP mundane/NN)
+  (/(
+  ordinary/JJ
+  )/)
+  (NP tasks/NNS)
+  since/IN
+  (NP birth/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Task', 'Artificial Intelligence Mundane', 'Ordinary', 'Tasks Formal Tasks Expert Tasks Perception · Computer Vision · Speech', 'Voice · Mathematics · Geometry · Logic · Integration Differentiation · Engineering · Fault Finding · Manufacturing · Monitoring Natural Language Processing · Understanding · Language Generation · Language Translation Games · Go · Chess', 'Deep Blue', 'Ckeckers Scientific Analysis Common Sense Verification Financial Analysis Reasoning Theorem Proving Medical Diagnosis Planing Creativity Robotics · Locomotive Humans', 'mundane', 'tasks', 'birth']
+
+>> Named Entities are: 
+ [('GPE', 'Task'), ('ORGANIZATION', 'Artificial Intelligence Mundane'), ('PERSON', 'Tasks Formal Tasks Expert Tasks'), ('PERSON', 'Voice'), ('PERSON', 'Geometry'), ('ORGANIZATION', 'Deep Blue'), ('ORGANIZATION', 'Ckeckers Scientific Analysis Common'), ('PERSON', 'Diagnosis Planing Creativity Robotics')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Task', 'task'), ('Domains', 'domain'), ('Artificial', 'artifici'), ('Intelligence', 'intellig'), ('Mundane', 'mundan'), ('(', '('), ('Ordinary', 'ordinari'), (')', ')'), ('Tasks', 'task'), ('Formal', 'formal'), ('Tasks', 'task'), ('Expert', 'expert'), ('Tasks', 'task'), ('Perception', 'percept'), ('·', '·'), ('Computer', 'comput'), ('Vision', 'vision'), ('·', '·'), ('Speech', 'speech'), (',', ','), ('Voice', 'voic'), ('·', '·'), ('Mathematics', 'mathemat'), ('·', '·'), ('Geometry', 'geometri'), ('·', '·'), ('Logic', 'logic'), ('·', '·'), ('Integration', 'integr'), ('Differentiation', 'differenti'), ('·', '·'), ('Engineering', 'engin'), ('·', '·'), ('Fault', 'fault'), ('Finding', 'find'), ('·', '·'), ('Manufacturing', 'manufactur'), ('·', '·'), ('Monitoring', 'monitor'), ('Natural', 'natur'), ('Language', 'languag'), ('Processing', 'process'), ('·', '·'), ('Understanding', 'understand'), ('·', '·'), ('Language', 'languag'), ('Generation', 'gener'), ('·', '·'), ('Language', 'languag'), ('Translation', 'translat'), ('Games', 'game'), ('·', '·'), ('Go', 'go'), ('·', '·'), ('Chess', 'chess'), ('(', '('), ('Deep', 'deep'), ('Blue', 'blue'), (')', ')'), ('·', '·'), ('Ckeckers', 'ckecker'), ('Scientific', 'scientif'), ('Analysis', 'analysi'), ('Common', 'common'), ('Sense', 'sens'), ('Verification', 'verif'), ('Financial', 'financi'), ('Analysis', 'analysi'), ('Reasoning', 'reason'), ('Theorem', 'theorem'), ('Proving', 'prove'), ('Medical', 'medic'), ('Diagnosis', 'diagnosi'), ('Planing', 'plane'), ('Creativity', 'creativ'), ('Robotics', 'robot'), ('·', '·'), ('Locomotive', 'locomot'), ('Humans', 'human'), ('learn', 'learn'), ('mundane', 'mundan'), ('(', '('), ('ordinary', 'ordinari'), (')', ')'), ('tasks', 'task'), ('since', 'sinc'), ('birth', 'birth'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Task', 'task'), ('Domains', 'domain'), ('Artificial', 'artifici'), ('Intelligence', 'intellig'), ('Mundane', 'mundan'), ('(', '('), ('Ordinary', 'ordinari'), (')', ')'), ('Tasks', 'task'), ('Formal', 'formal'), ('Tasks', 'task'), ('Expert', 'expert'), ('Tasks', 'task'), ('Perception', 'percept'), ('·', '·'), ('Computer', 'comput'), ('Vision', 'vision'), ('·', '·'), ('Speech', 'speech'), (',', ','), ('Voice', 'voic'), ('·', '·'), ('Mathematics', 'mathemat'), ('·', '·'), ('Geometry', 'geometri'), ('·', '·'), ('Logic', 'logic'), ('·', '·'), ('Integration', 'integr'), ('Differentiation', 'differenti'), ('·', '·'), ('Engineering', 'engin'), ('·', '·'), ('Fault', 'fault'), ('Finding', 'find'), ('·', '·'), ('Manufacturing', 'manufactur'), ('·', '·'), ('Monitoring', 'monitor'), ('Natural', 'natur'), ('Language', 'languag'), ('Processing', 'process'), ('·', '·'), ('Understanding', 'understand'), ('·', '·'), ('Language', 'languag'), ('Generation', 'generat'), ('·', '·'), ('Language', 'languag'), ('Translation', 'translat'), ('Games', 'game'), ('·', '·'), ('Go', 'go'), ('·', '·'), ('Chess', 'chess'), ('(', '('), ('Deep', 'deep'), ('Blue', 'blue'), (')', ')'), ('·', '·'), ('Ckeckers', 'ckecker'), ('Scientific', 'scientif'), ('Analysis', 'analysi'), ('Common', 'common'), ('Sense', 'sens'), ('Verification', 'verif'), ('Financial', 'financi'), ('Analysis', 'analysi'), ('Reasoning', 'reason'), ('Theorem', 'theorem'), ('Proving', 'prove'), ('Medical', 'medic'), ('Diagnosis', 'diagnosi'), ('Planing', 'plane'), ('Creativity', 'creativ'), ('Robotics', 'robot'), ('·', '·'), ('Locomotive', 'locomot'), ('Humans', 'human'), ('learn', 'learn'), ('mundane', 'mundan'), ('(', '('), ('ordinary', 'ordinari'), (')', ')'), ('tasks', 'task'), ('since', 'sinc'), ('birth', 'birth'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Task', 'Task'), ('Domains', 'Domains'), ('Artificial', 'Artificial'), ('Intelligence', 'Intelligence'), ('Mundane', 'Mundane'), ('(', '('), ('Ordinary', 'Ordinary'), (')', ')'), ('Tasks', 'Tasks'), ('Formal', 'Formal'), ('Tasks', 'Tasks'), ('Expert', 'Expert'), ('Tasks', 'Tasks'), ('Perception', 'Perception'), ('·', '·'), ('Computer', 'Computer'), ('Vision', 'Vision'), ('·', '·'), ('Speech', 'Speech'), (',', ','), ('Voice', 'Voice'), ('·', '·'), ('Mathematics', 'Mathematics'), ('·', '·'), ('Geometry', 'Geometry'), ('·', '·'), ('Logic', 'Logic'), ('·', '·'), ('Integration', 'Integration'), ('Differentiation', 'Differentiation'), ('·', '·'), ('Engineering', 'Engineering'), ('·', '·'), ('Fault', 'Fault'), ('Finding', 'Finding'), ('·', '·'), ('Manufacturing', 'Manufacturing'), ('·', '·'), ('Monitoring', 'Monitoring'), ('Natural', 'Natural'), ('Language', 'Language'), ('Processing', 'Processing'), ('·', '·'), ('Understanding', 'Understanding'), ('·', '·'), ('Language', 'Language'), ('Generation', 'Generation'), ('·', '·'), ('Language', 'Language'), ('Translation', 'Translation'), ('Games', 'Games'), ('·', '·'), ('Go', 'Go'), ('·', '·'), ('Chess', 'Chess'), ('(', '('), ('Deep', 'Deep'), ('Blue', 'Blue'), (')', ')'), ('·', '·'), ('Ckeckers', 'Ckeckers'), ('Scientific', 'Scientific'), ('Analysis', 'Analysis'), ('Common', 'Common'), ('Sense', 'Sense'), ('Verification', 'Verification'), ('Financial', 'Financial'), ('Analysis', 'Analysis'), ('Reasoning', 'Reasoning'), ('Theorem', 'Theorem'), ('Proving', 'Proving'), ('Medical', 'Medical'), ('Diagnosis', 'Diagnosis'), ('Planing', 'Planing'), ('Creativity', 'Creativity'), ('Robotics', 'Robotics'), ('·', '·'), ('Locomotive', 'Locomotive'), ('Humans', 'Humans'), ('learn', 'learn'), ('mundane', 'mundane'), ('(', '('), ('ordinary', 'ordinary'), (')', ')'), ('tasks', 'task'), ('since', 'since'), ('birth', 'birth'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+They learn by perception, speaking, using language, and locomotives. 
+
+
+>> Tokens are: 
+ ['They', 'learn', 'perception', ',', 'speaking', ',', 'using', 'language', ',', 'locomotives', '.']
+
+>> Bigrams are: 
+ [('They', 'learn'), ('learn', 'perception'), ('perception', ','), (',', 'speaking'), ('speaking', ','), (',', 'using'), ('using', 'language'), ('language', ','), (',', 'locomotives'), ('locomotives', '.')]
+
+>> Trigrams are: 
+ [('They', 'learn', 'perception'), ('learn', 'perception', ','), ('perception', ',', 'speaking'), (',', 'speaking', ','), ('speaking', ',', 'using'), (',', 'using', 'language'), ('using', 'language', ','), ('language', ',', 'locomotives'), (',', 'locomotives', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('learn', 'VBP'), ('perception', 'NN'), (',', ','), ('speaking', 'NN'), (',', ','), ('using', 'VBG'), ('language', 'NN'), (',', ','), ('locomotives', 'VBZ'), ('.', '.')]
+
+ (S
+  They/PRP
+  learn/VBP
+  (NP perception/NN)
+  ,/,
+  (NP speaking/NN)
+  ,/,
+  using/VBG
+  (NP language/NN)
+  ,/,
+  locomotives/VBZ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['perception', 'speaking', 'language']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('learn', 'learn'), ('perception', 'percept'), (',', ','), ('speaking', 'speak'), (',', ','), ('using', 'use'), ('language', 'languag'), (',', ','), ('locomotives', 'locomot'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('learn', 'learn'), ('perception', 'percept'), (',', ','), ('speaking', 'speak'), (',', ','), ('using', 'use'), ('language', 'languag'), (',', ','), ('locomotives', 'locomot'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('learn', 'learn'), ('perception', 'perception'), (',', ','), ('speaking', 'speaking'), (',', ','), ('using', 'using'), ('language', 'language'), (',', ','), ('locomotives', 'locomotive'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+They learn Formal Tasks and Expert Tasks later, in that order. 
+
+
+>> Tokens are: 
+ ['They', 'learn', 'Formal', 'Tasks', 'Expert', 'Tasks', 'later', ',', 'order', '.']
+
+>> Bigrams are: 
+ [('They', 'learn'), ('learn', 'Formal'), ('Formal', 'Tasks'), ('Tasks', 'Expert'), ('Expert', 'Tasks'), ('Tasks', 'later'), ('later', ','), (',', 'order'), ('order', '.')]
+
+>> Trigrams are: 
+ [('They', 'learn', 'Formal'), ('learn', 'Formal', 'Tasks'), ('Formal', 'Tasks', 'Expert'), ('Tasks', 'Expert', 'Tasks'), ('Expert', 'Tasks', 'later'), ('Tasks', 'later', ','), ('later', ',', 'order'), (',', 'order', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('learn', 'VBP'), ('Formal', 'JJ'), ('Tasks', 'NNP'), ('Expert', 'NNP'), ('Tasks', 'NNP'), ('later', 'RB'), (',', ','), ('order', 'NN'), ('.', '.')]
+
+ (S
+  They/PRP
+  learn/VBP
+  (NP Formal/JJ Tasks/NNP Expert/NNP Tasks/NNP)
+  later/RB
+  ,/,
+  (NP order/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Formal Tasks Expert Tasks', 'order']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Formal Tasks Expert Tasks')] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('learn', 'learn'), ('Formal', 'formal'), ('Tasks', 'task'), ('Expert', 'expert'), ('Tasks', 'task'), ('later', 'later'), (',', ','), ('order', 'order'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('learn', 'learn'), ('Formal', 'formal'), ('Tasks', 'task'), ('Expert', 'expert'), ('Tasks', 'task'), ('later', 'later'), (',', ','), ('order', 'order'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('learn', 'learn'), ('Formal', 'Formal'), ('Tasks', 'Tasks'), ('Expert', 'Expert'), ('Tasks', 'Tasks'), ('later', 'later'), (',', ','), ('order', 'order'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+For humans, the mundane tasks are easiest to learn. 
+
+
+>> Tokens are: 
+ ['For', 'humans', ',', 'mundane', 'tasks', 'easiest', 'learn', '.']
+
+>> Bigrams are: 
+ [('For', 'humans'), ('humans', ','), (',', 'mundane'), ('mundane', 'tasks'), ('tasks', 'easiest'), ('easiest', 'learn'), ('learn', '.')]
+
+>> Trigrams are: 
+ [('For', 'humans', ','), ('humans', ',', 'mundane'), (',', 'mundane', 'tasks'), ('mundane', 'tasks', 'easiest'), ('tasks', 'easiest', 'learn'), ('easiest', 'learn', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('humans', 'NNS'), (',', ','), ('mundane', 'NN'), ('tasks', 'NNS'), ('easiest', 'VBP'), ('learn', 'NN'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP humans/NNS)
+  ,/,
+  (NP mundane/NN tasks/NNS)
+  easiest/VBP
+  (NP learn/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['humans', 'mundane tasks', 'learn']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('humans', 'human'), (',', ','), ('mundane', 'mundan'), ('tasks', 'task'), ('easiest', 'easiest'), ('learn', 'learn'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('humans', 'human'), (',', ','), ('mundane', 'mundan'), ('tasks', 'task'), ('easiest', 'easiest'), ('learn', 'learn'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('humans', 'human'), (',', ','), ('mundane', 'mundane'), ('tasks', 'task'), ('easiest', 'easiest'), ('learn', 'learn'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+The same was considered true before trying to implement mundane tasks in machines. 
+
+
+>> Tokens are: 
+ ['The', 'considered', 'true', 'trying', 'implement', 'mundane', 'tasks', 'machines', '.']
+
+>> Bigrams are: 
+ [('The', 'considered'), ('considered', 'true'), ('true', 'trying'), ('trying', 'implement'), ('implement', 'mundane'), ('mundane', 'tasks'), ('tasks', 'machines'), ('machines', '.')]
+
+>> Trigrams are: 
+ [('The', 'considered', 'true'), ('considered', 'true', 'trying'), ('true', 'trying', 'implement'), ('trying', 'implement', 'mundane'), ('implement', 'mundane', 'tasks'), ('mundane', 'tasks', 'machines'), ('tasks', 'machines', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('considered', 'VBN'), ('true', 'JJ'), ('trying', 'VBG'), ('implement', 'JJ'), ('mundane', 'NN'), ('tasks', 'NNS'), ('machines', 'NNS'), ('.', '.')]
+
+ (S
+  The/DT
+  considered/VBN
+  true/JJ
+  trying/VBG
+  (NP implement/JJ mundane/NN tasks/NNS machines/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['implement mundane tasks machines']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('considered', 'consid'), ('true', 'true'), ('trying', 'tri'), ('implement', 'implement'), ('mundane', 'mundan'), ('tasks', 'task'), ('machines', 'machin'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('considered', 'consid'), ('true', 'true'), ('trying', 'tri'), ('implement', 'implement'), ('mundane', 'mundan'), ('tasks', 'task'), ('machines', 'machin'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('considered', 'considered'), ('true', 'true'), ('trying', 'trying'), ('implement', 'implement'), ('mundane', 'mundane'), ('tasks', 'task'), ('machines', 'machine'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+Earlier, all work of AI was concentrated in the mundane task domain. 
+
+
+>> Tokens are: 
+ ['Earlier', ',', 'work', 'AI', 'concentrated', 'mundane', 'task', 'domain', '.']
+
+>> Bigrams are: 
+ [('Earlier', ','), (',', 'work'), ('work', 'AI'), ('AI', 'concentrated'), ('concentrated', 'mundane'), ('mundane', 'task'), ('task', 'domain'), ('domain', '.')]
+
+>> Trigrams are: 
+ [('Earlier', ',', 'work'), (',', 'work', 'AI'), ('work', 'AI', 'concentrated'), ('AI', 'concentrated', 'mundane'), ('concentrated', 'mundane', 'task'), ('mundane', 'task', 'domain'), ('task', 'domain', '.')]
+
+>> POS Tags are: 
+ [('Earlier', 'RBR'), (',', ','), ('work', 'NN'), ('AI', 'NNP'), ('concentrated', 'VBD'), ('mundane', 'JJ'), ('task', 'NN'), ('domain', 'NN'), ('.', '.')]
+
+ (S
+  Earlier/RBR
+  ,/,
+  (NP work/NN AI/NNP)
+  concentrated/VBD
+  (NP mundane/JJ task/NN domain/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['work AI', 'mundane task domain']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Earlier', 'earlier'), (',', ','), ('work', 'work'), ('AI', 'ai'), ('concentrated', 'concentr'), ('mundane', 'mundan'), ('task', 'task'), ('domain', 'domain'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Earlier', 'earlier'), (',', ','), ('work', 'work'), ('AI', 'ai'), ('concentrated', 'concentr'), ('mundane', 'mundan'), ('task', 'task'), ('domain', 'domain'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Earlier', 'Earlier'), (',', ','), ('work', 'work'), ('AI', 'AI'), ('concentrated', 'concentrated'), ('mundane', 'mundane'), ('task', 'task'), ('domain', 'domain'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+Later, it turned out that the machine requires more knowledge, complex knowledge representation, and complicated algorithms for handling mundane tasks. 
+
+
+>> Tokens are: 
+ ['Later', ',', 'turned', 'machine', 'requires', 'knowledge', ',', 'complex', 'knowledge', 'representation', ',', 'complicated', 'algorithms', 'handling', 'mundane', 'tasks', '.']
+
+>> Bigrams are: 
+ [('Later', ','), (',', 'turned'), ('turned', 'machine'), ('machine', 'requires'), ('requires', 'knowledge'), ('knowledge', ','), (',', 'complex'), ('complex', 'knowledge'), ('knowledge', 'representation'), ('representation', ','), (',', 'complicated'), ('complicated', 'algorithms'), ('algorithms', 'handling'), ('handling', 'mundane'), ('mundane', 'tasks'), ('tasks', '.')]
+
+>> Trigrams are: 
+ [('Later', ',', 'turned'), (',', 'turned', 'machine'), ('turned', 'machine', 'requires'), ('machine', 'requires', 'knowledge'), ('requires', 'knowledge', ','), ('knowledge', ',', 'complex'), (',', 'complex', 'knowledge'), ('complex', 'knowledge', 'representation'), ('knowledge', 'representation', ','), ('representation', ',', 'complicated'), (',', 'complicated', 'algorithms'), ('complicated', 'algorithms', 'handling'), ('algorithms', 'handling', 'mundane'), ('handling', 'mundane', 'tasks'), ('mundane', 'tasks', '.')]
+
+>> POS Tags are: 
+ [('Later', 'RB'), (',', ','), ('turned', 'VBD'), ('machine', 'NN'), ('requires', 'VBZ'), ('knowledge', 'NN'), (',', ','), ('complex', 'JJ'), ('knowledge', 'NN'), ('representation', 'NN'), (',', ','), ('complicated', 'VBD'), ('algorithms', 'RP'), ('handling', 'VBG'), ('mundane', 'NN'), ('tasks', 'NNS'), ('.', '.')]
+
+ (S
+  Later/RB
+  ,/,
+  turned/VBD
+  (NP machine/NN)
+  requires/VBZ
+  (NP knowledge/NN)
+  ,/,
+  (NP complex/JJ knowledge/NN representation/NN)
+  ,/,
+  complicated/VBD
+  algorithms/RP
+  handling/VBG
+  (NP mundane/NN tasks/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['machine', 'knowledge', 'complex knowledge representation', 'mundane tasks']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Later', 'later'), (',', ','), ('turned', 'turn'), ('machine', 'machin'), ('requires', 'requir'), ('knowledge', 'knowledg'), (',', ','), ('complex', 'complex'), ('knowledge', 'knowledg'), ('representation', 'represent'), (',', ','), ('complicated', 'complic'), ('algorithms', 'algorithm'), ('handling', 'handl'), ('mundane', 'mundan'), ('tasks', 'task'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Later', 'later'), (',', ','), ('turned', 'turn'), ('machine', 'machin'), ('requires', 'requir'), ('knowledge', 'knowledg'), (',', ','), ('complex', 'complex'), ('knowledge', 'knowledg'), ('representation', 'represent'), (',', ','), ('complicated', 'complic'), ('algorithms', 'algorithm'), ('handling', 'handl'), ('mundane', 'mundan'), ('tasks', 'task'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Later', 'Later'), (',', ','), ('turned', 'turned'), ('machine', 'machine'), ('requires', 'requires'), ('knowledge', 'knowledge'), (',', ','), ('complex', 'complex'), ('knowledge', 'knowledge'), ('representation', 'representation'), (',', ','), ('complicated', 'complicated'), ('algorithms', 'algorithm'), ('handling', 'handling'), ('mundane', 'mundane'), ('tasks', 'task'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+This is the reason why AI work is more prospering in the Expert Tasks domain now, as the expert task domain needs expert knowledge without common sense, which can be easier to represent and handle. 
+
+
+>> Tokens are: 
+ ['This', 'reason', 'AI', 'work', 'prospering', 'Expert', 'Tasks', 'domain', ',', 'expert', 'task', 'domain', 'needs', 'expert', 'knowledge', 'without', 'common', 'sense', ',', 'easier', 'represent', 'handle', '.']
+
+>> Bigrams are: 
+ [('This', 'reason'), ('reason', 'AI'), ('AI', 'work'), ('work', 'prospering'), ('prospering', 'Expert'), ('Expert', 'Tasks'), ('Tasks', 'domain'), ('domain', ','), (',', 'expert'), ('expert', 'task'), ('task', 'domain'), ('domain', 'needs'), ('needs', 'expert'), ('expert', 'knowledge'), ('knowledge', 'without'), ('without', 'common'), ('common', 'sense'), ('sense', ','), (',', 'easier'), ('easier', 'represent'), ('represent', 'handle'), ('handle', '.')]
+
+>> Trigrams are: 
+ [('This', 'reason', 'AI'), ('reason', 'AI', 'work'), ('AI', 'work', 'prospering'), ('work', 'prospering', 'Expert'), ('prospering', 'Expert', 'Tasks'), ('Expert', 'Tasks', 'domain'), ('Tasks', 'domain', ','), ('domain', ',', 'expert'), (',', 'expert', 'task'), ('expert', 'task', 'domain'), ('task', 'domain', 'needs'), ('domain', 'needs', 'expert'), ('needs', 'expert', 'knowledge'), ('expert', 'knowledge', 'without'), ('knowledge', 'without', 'common'), ('without', 'common', 'sense'), ('common', 'sense', ','), ('sense', ',', 'easier'), (',', 'easier', 'represent'), ('easier', 'represent', 'handle'), ('represent', 'handle', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('reason', 'NN'), ('AI', 'NNP'), ('work', 'NN'), ('prospering', 'VBG'), ('Expert', 'NNP'), ('Tasks', 'NNP'), ('domain', 'NN'), (',', ','), ('expert', 'JJ'), ('task', 'NN'), ('domain', 'NN'), ('needs', 'VBZ'), ('expert', 'JJ'), ('knowledge', 'NN'), ('without', 'IN'), ('common', 'JJ'), ('sense', 'NN'), (',', ','), ('easier', 'JJR'), ('represent', 'NN'), ('handle', 'NN'), ('.', '.')]
+
+ (S
+  (NP This/DT reason/NN AI/NNP work/NN)
+  prospering/VBG
+  (NP Expert/NNP Tasks/NNP domain/NN)
+  ,/,
+  (NP expert/JJ task/NN domain/NN)
+  needs/VBZ
+  (NP expert/JJ knowledge/NN)
+  without/IN
+  (NP common/JJ sense/NN)
+  ,/,
+  easier/JJR
+  (NP represent/NN handle/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['This reason AI work', 'Expert Tasks domain', 'expert task domain', 'expert knowledge', 'common sense', 'represent handle']
+
+>> Named Entities are: 
+ [('PERSON', 'Expert Tasks')] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('reason', 'reason'), ('AI', 'ai'), ('work', 'work'), ('prospering', 'prosper'), ('Expert', 'expert'), ('Tasks', 'task'), ('domain', 'domain'), (',', ','), ('expert', 'expert'), ('task', 'task'), ('domain', 'domain'), ('needs', 'need'), ('expert', 'expert'), ('knowledge', 'knowledg'), ('without', 'without'), ('common', 'common'), ('sense', 'sens'), (',', ','), ('easier', 'easier'), ('represent', 'repres'), ('handle', 'handl'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('reason', 'reason'), ('AI', 'ai'), ('work', 'work'), ('prospering', 'prosper'), ('Expert', 'expert'), ('Tasks', 'task'), ('domain', 'domain'), (',', ','), ('expert', 'expert'), ('task', 'task'), ('domain', 'domain'), ('needs', 'need'), ('expert', 'expert'), ('knowledge', 'knowledg'), ('without', 'without'), ('common', 'common'), ('sense', 'sens'), (',', ','), ('easier', 'easier'), ('represent', 'repres'), ('handle', 'handl'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('reason', 'reason'), ('AI', 'AI'), ('work', 'work'), ('prospering', 'prospering'), ('Expert', 'Expert'), ('Tasks', 'Tasks'), ('domain', 'domain'), (',', ','), ('expert', 'expert'), ('task', 'task'), ('domain', 'domain'), ('needs', 'need'), ('expert', 'expert'), ('knowledge', 'knowledge'), ('without', 'without'), ('common', 'common'), ('sense', 'sense'), (',', ','), ('easier', 'easier'), ('represent', 'represent'), ('handle', 'handle'), ('.', '.')]
+

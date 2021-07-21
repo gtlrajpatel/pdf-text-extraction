@@ -1,0 +1,703 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+Django   1. 
+
+
+>> Tokens are: 
+[Django,   , 1, .] 
+
+>> PoS Tags are: 
+[('Django', 'PROPN'), ('  ', 'SPACE'), ('1', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Django', 'nsubj'), ('  ', 'ROOT'), ('1', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Django,   ], [  , 1], [1, .]]
+
+>> Trigrams: 
+[[Django,   , 1], [  , 1, .]]
+
+>> Noun Phrases are: 
+[Django]
+
+>> Named Entities are: 
+[('1', 'CARDINAL')]
+
+
+============================ Sentence 2 =============================
+
+What is Django? 
+
+
+>> Tokens are: 
+[Django, ?] 
+
+>> PoS Tags are: 
+[('Django', 'PROPN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Django', 'nsubj'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Django, ?]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[What, Django]
+
+>> Named Entities are: 
+[('Django', 'PERSON')]
+
+
+============================ Sentence 3 =============================
+
+     · Django  is a free and open source web application framework written in Python. 
+
+
+>> Tokens are: 
+[     , ·, Django,  , free, open, source, web, application, framework, written, Python, .] 
+
+>> PoS Tags are: 
+[('     ', 'SPACE'), ('·', 'PUNCT'), ('Django', 'PROPN'), (' ', 'SPACE'), ('free', 'ADJ'), ('open', 'ADJ'), ('source', 'NOUN'), ('web', 'NOUN'), ('application', 'NOUN'), ('framework', 'NOUN'), ('written', 'VERB'), ('Python', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('     ', 'nsubj'), ('·', 'punct'), ('Django', 'nsubj'), (' ', 'nummod'), ('free', 'amod'), ('open', 'conj'), ('source', 'compound'), ('web', 'compound'), ('application', 'compound'), ('framework', 'attr'), ('written', 'acl'), ('Python', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[     , ·], [·, Django], [Django,  ], [ , free], [free, open], [open, source], [source, web], [web, application], [application, framework], [framework, written], [written, Python], [Python, .]]
+
+>> Trigrams: 
+[[     , ·, Django], [·, Django,  ], [Django,  , free], [ , free, open], [free, open, source], [open, source, web], [source, web, application], [web, application, framework], [application, framework, written], [framework, written, Python], [written, Python, .]]
+
+>> Noun Phrases are: 
+[Django, a free and open source web application framework, Python]
+
+>> Named Entities are: 
+[('Django', 'PERSON')]
+
+
+============================ Sentence 4 =============================
+
+  2. 
+
+
+>> Tokens are: 
+[  , 2, .] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('2', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'ROOT'), ('2', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[  , 2], [2, .]]
+
+>> Trigrams: 
+[[  , 2, .]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('2', 'CARDINAL')]
+
+
+============================ Sentence 5 =============================
+
+What is Web Framework?  · A web framework is a set of components that helps you to develop websites faster and easier. 
+
+
+>> Tokens are: 
+[Web, Framework, ?,  , ·, web, framework, set, components, helps, develop, websites, faster, easier, .] 
+
+>> PoS Tags are: 
+[('Web', 'PROPN'), ('Framework', 'PROPN'), ('?', 'PUNCT'), (' ', 'SPACE'), ('·', 'PUNCT'), ('web', 'NOUN'), ('framework', 'NOUN'), ('set', 'NOUN'), ('components', 'NOUN'), ('helps', 'VERB'), ('develop', 'VERB'), ('websites', 'NOUN'), ('faster', 'ADV'), ('easier', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Web', 'compound'), ('Framework', 'nsubj'), ('?', 'punct'), (' ', 'nsubj'), ('·', 'punct'), ('web', 'compound'), ('framework', 'nsubj'), ('set', 'attr'), ('components', 'pobj'), ('helps', 'relcl'), ('develop', 'xcomp'), ('websites', 'dobj'), ('faster', 'advmod'), ('easier', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Web, Framework], [Framework, ?], [?,  ], [ , ·], [·, web], [web, framework], [framework, set], [set, components], [components, helps], [helps, develop], [develop, websites], [websites, faster], [faster, easier], [easier, .]]
+
+>> Trigrams: 
+[[Web, Framework, ?], [Framework, ?,  ], [?,  , ·], [ , ·, web], [·, web, framework], [web, framework, set], [framework, set, components], [set, components, helps], [components, helps, develop], [helps, develop, websites], [develop, websites, faster], [websites, faster, easier], [faster, easier, .]]
+
+>> Noun Phrases are: 
+[What, Web Framework, A web framework, a set, components, you, websites]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+ · 
+
+
+>> Tokens are: 
+[ , ·] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT'), ('·', 'punct')]
+
+>> Bigrams: 
+[[ , ·]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.  · Luckily, Developers build web frameworks that give you ready made components. 
+
+
+>> Tokens are: 
+[building, website, ,, need, similar, set, components, :, way, handle, user, authentication, (, signing, ,, signing, ,, signing, ), ,, management, panel, website, ,, forms, ,, way, upload, files, ,, etc, .,  , ·, Luckily, ,, Developers, build, web, frameworks, ready, components, .] 
+
+>> PoS Tags are: 
+[('building', 'VERB'), ('website', 'NOUN'), (',', 'PUNCT'), ('need', 'VERB'), ('similar', 'ADJ'), ('set', 'NOUN'), ('components', 'NOUN'), (':', 'PUNCT'), ('way', 'NOUN'), ('handle', 'VERB'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('(', 'PUNCT'), ('signing', 'VERB'), (',', 'PUNCT'), ('signing', 'VERB'), (',', 'PUNCT'), ('signing', 'VERB'), (')', 'PUNCT'), (',', 'PUNCT'), ('management', 'NOUN'), ('panel', 'NOUN'), ('website', 'NOUN'), (',', 'PUNCT'), ('forms', 'NOUN'), (',', 'PUNCT'), ('way', 'NOUN'), ('upload', 'VERB'), ('files', 'NOUN'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'X'), (' ', 'SPACE'), ('·', 'PUNCT'), ('Luckily', 'ADV'), (',', 'PUNCT'), ('Developers', 'PROPN'), ('build', 'VERB'), ('web', 'NOUN'), ('frameworks', 'NOUN'), ('ready', 'ADJ'), ('components', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('building', 'advcl'), ('website', 'dobj'), (',', 'punct'), ('need', 'ROOT'), ('similar', 'amod'), ('set', 'dobj'), ('components', 'pobj'), (':', 'punct'), ('way', 'appos'), ('handle', 'relcl'), ('user', 'compound'), ('authentication', 'dobj'), ('(', 'punct'), ('signing', 'acl'), (',', 'punct'), ('signing', 'conj'), (',', 'punct'), ('signing', 'conj'), (')', 'punct'), (',', 'punct'), ('management', 'compound'), ('panel', 'dobj'), ('website', 'pobj'), (',', 'punct'), ('forms', 'appos'), (',', 'punct'), ('way', 'appos'), ('upload', 'relcl'), ('files', 'dobj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct'), (' ', 'dobj'), ('·', 'punct'), ('Luckily', 'advmod'), (',', 'punct'), ('Developers', 'nsubj'), ('build', 'advcl'), ('web', 'compound'), ('frameworks', 'dobj'), ('ready', 'oprd'), ('components', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[building, website], [website, ,], [,, need], [need, similar], [similar, set], [set, components], [components, :], [:, way], [way, handle], [handle, user], [user, authentication], [authentication, (], [(, signing], [signing, ,], [,, signing], [signing, ,], [,, signing], [signing, )], [), ,], [,, management], [management, panel], [panel, website], [website, ,], [,, forms], [forms, ,], [,, way], [way, upload], [upload, files], [files, ,], [,, etc], [etc, .], [.,  ], [ , ·], [·, Luckily], [Luckily, ,], [,, Developers], [Developers, build], [build, web], [web, frameworks], [frameworks, ready], [ready, components], [components, .]]
+
+>> Trigrams: 
+[[building, website, ,], [website, ,, need], [,, need, similar], [need, similar, set], [similar, set, components], [set, components, :], [components, :, way], [:, way, handle], [way, handle, user], [handle, user, authentication], [user, authentication, (], [authentication, (, signing], [(, signing, ,], [signing, ,, signing], [,, signing, ,], [signing, ,, signing], [,, signing, )], [signing, ), ,], [), ,, management], [,, management, panel], [management, panel, website], [panel, website, ,], [website, ,, forms], [,, forms, ,], [forms, ,, way], [,, way, upload], [way, upload, files], [upload, files, ,], [files, ,, etc], [,, etc, .], [etc, .,  ], [.,  , ·], [ , ·, Luckily], [·, Luckily, ,], [Luckily, ,, Developers], [,, Developers, build], [Developers, build, web], [build, web, frameworks], [web, frameworks, ready], [frameworks, ready, components], [ready, components, .]]
+
+>> Noun Phrases are: 
+[you, a website, you, a similar set, components, a way, user authentication, a management panel, your website, forms, a way, files, Developers, web frameworks, you, components]
+
+>> Named Entities are: 
+[('Luckily', 'PERSON')]
+
+
+============================ Sentence 8 =============================
+
+ · 
+
+
+>> Tokens are: 
+[ , ·] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT'), ('·', 'punct')]
+
+>> Bigrams: 
+[[ , ·]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site. 
+
+
+>> Tokens are: 
+[Frameworks, exist, save, having, reinvent, wheel, help, alleviate, overhead, building, new, site, .] 
+
+>> PoS Tags are: 
+[('Frameworks', 'NOUN'), ('exist', 'VERB'), ('save', 'VERB'), ('having', 'VERB'), ('reinvent', 'VERB'), ('wheel', 'NOUN'), ('help', 'VERB'), ('alleviate', 'VERB'), ('overhead', 'NOUN'), ('building', 'VERB'), ('new', 'ADJ'), ('site', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Frameworks', 'nsubj'), ('exist', 'ROOT'), ('save', 'xcomp'), ('having', 'pcomp'), ('reinvent', 'xcomp'), ('wheel', 'dobj'), ('help', 'conj'), ('alleviate', 'xcomp'), ('overhead', 'pobj'), ('building', 'advcl'), ('new', 'amod'), ('site', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Frameworks, exist], [exist, save], [save, having], [having, reinvent], [reinvent, wheel], [wheel, help], [help, alleviate], [alleviate, overhead], [overhead, building], [building, new], [new, site], [site, .]]
+
+>> Trigrams: 
+[[Frameworks, exist, save], [exist, save, having], [save, having, reinvent], [having, reinvent, wheel], [reinvent, wheel, help], [wheel, help, alleviate], [help, alleviate, overhead], [alleviate, overhead, building], [overhead, building, new], [building, new, site], [new, site, .]]
+
+>> Noun Phrases are: 
+[Frameworks, you, the wheel, the overhead, you, a new site]
+
+>> Named Entities are: 
+[('Frameworks', 'PERSON')]
+
+
+============================ Sentence 10 =============================
+
+  3. 
+
+
+>> Tokens are: 
+[  , 3, .] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('3', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'ROOT'), ('3', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[  , 3], [3, .]]
+
+>> Trigrams: 
+[[  , 3, .]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('3', 'CARDINAL')]
+
+
+============================ Sentence 11 =============================
+
+Why Django?  · With Django, you can take Web applications from concept to launch in a matter of hours. 
+
+
+>> Tokens are: 
+[Django, ?,  , ·, Django, ,, Web, applications, concept, launch, matter, hours, .] 
+
+>> PoS Tags are: 
+[('Django', 'PROPN'), ('?', 'PUNCT'), (' ', 'SPACE'), ('·', 'PUNCT'), ('Django', 'PROPN'), (',', 'PUNCT'), ('Web', 'NOUN'), ('applications', 'NOUN'), ('concept', 'NOUN'), ('launch', 'VERB'), ('matter', 'NOUN'), ('hours', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Django', 'npadvmod'), ('?', 'punct'), (' ', 'appos'), ('·', 'punct'), ('Django', 'pobj'), (',', 'punct'), ('Web', 'compound'), ('applications', 'dobj'), ('concept', 'pobj'), ('launch', 'advcl'), ('matter', 'pobj'), ('hours', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Django, ?], [?,  ], [ , ·], [·, Django], [Django, ,], [,, Web], [Web, applications], [applications, concept], [concept, launch], [launch, matter], [matter, hours], [hours, .]]
+
+>> Trigrams: 
+[[Django, ?,  ], [?,  , ·], [ , ·, Django], [·, Django, ,], [Django, ,, Web], [,, Web, applications], [Web, applications, concept], [applications, concept, launch], [concept, launch, matter], [launch, matter, hours], [matter, hours, .]]
+
+>> Noun Phrases are: 
+[Django, you, Web applications, concept, a matter, hours]
+
+>> Named Entities are: 
+[('Django', 'PERSON'), ('Django', 'PERSON')]
+
+
+============================ Sentence 12 =============================
+
+Django takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. 
+
+
+>> Tokens are: 
+[Django, takes, care, hassle, Web, development, ,, focus, writing, app, needing, reinvent, wheel, .] 
+
+>> PoS Tags are: 
+[('Django', 'PROPN'), ('takes', 'VERB'), ('care', 'NOUN'), ('hassle', 'NOUN'), ('Web', 'NOUN'), ('development', 'NOUN'), (',', 'PUNCT'), ('focus', 'VERB'), ('writing', 'VERB'), ('app', 'NOUN'), ('needing', 'VERB'), ('reinvent', 'VERB'), ('wheel', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Django', 'nsubj'), ('takes', 'ROOT'), ('care', 'dobj'), ('hassle', 'pobj'), ('Web', 'compound'), ('development', 'pobj'), (',', 'punct'), ('focus', 'conj'), ('writing', 'pcomp'), ('app', 'dobj'), ('needing', 'pcomp'), ('reinvent', 'xcomp'), ('wheel', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Django, takes], [takes, care], [care, hassle], [hassle, Web], [Web, development], [development, ,], [,, focus], [focus, writing], [writing, app], [app, needing], [needing, reinvent], [reinvent, wheel], [wheel, .]]
+
+>> Trigrams: 
+[[Django, takes, care], [takes, care, hassle], [care, hassle, Web], [hassle, Web, development], [Web, development, ,], [development, ,, focus], [,, focus, writing], [focus, writing, app], [writing, app, needing], [app, needing, reinvent], [needing, reinvent, wheel], [reinvent, wheel, .]]
+
+>> Noun Phrases are: 
+[Django, care, the hassle, Web development, you, your app, the wheel]
+
+>> Named Entities are: 
+[('Django', 'PERSON')]
+
+
+============================ Sentence 13 =============================
+
+It’s free and open source. 
+
+
+>> Tokens are: 
+[free, open, source, .] 
+
+>> PoS Tags are: 
+[('free', 'ADJ'), ('open', 'ADJ'), ('source', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('free', 'acomp'), ('open', 'conj'), ('source', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[free, open], [open, source], [source, .]]
+
+>> Trigrams: 
+[[free, open, source], [open, source, .]]
+
+>> Noun Phrases are: 
+[It, source]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+ · Ridiculously Fast: Django was designed to help developers to take applications from  concept to completion as quickly as possible. 
+
+
+>> Tokens are: 
+[ , ·, Ridiculously, Fast, :, Django, designed, help, developers, applications,  , concept, completion, quickly, possible, .] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('·', 'PUNCT'), ('Ridiculously', 'ADV'), ('Fast', 'ADV'), (':', 'PUNCT'), ('Django', 'PROPN'), ('designed', 'VERB'), ('help', 'VERB'), ('developers', 'NOUN'), ('applications', 'NOUN'), (' ', 'SPACE'), ('concept', 'NOUN'), ('completion', 'NOUN'), ('quickly', 'ADV'), ('possible', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'dep'), ('·', 'punct'), ('Ridiculously', 'advmod'), ('Fast', 'advmod'), (':', 'punct'), ('Django', 'nsubjpass'), ('designed', 'ROOT'), ('help', 'xcomp'), ('developers', 'dobj'), ('applications', 'dobj'), (' ', 'pobj'), ('concept', 'dobj'), ('completion', 'pobj'), ('quickly', 'advmod'), ('possible', 'amod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ , ·], [·, Ridiculously], [Ridiculously, Fast], [Fast, :], [:, Django], [Django, designed], [designed, help], [help, developers], [developers, applications], [applications,  ], [ , concept], [concept, completion], [completion, quickly], [quickly, possible], [possible, .]]
+
+>> Trigrams: 
+[[ , ·, Ridiculously], [·, Ridiculously, Fast], [Ridiculously, Fast, :], [Fast, :, Django], [:, Django, designed], [Django, designed, help], [designed, help, developers], [help, developers, applications], [developers, applications,  ], [applications,  , concept], [ , concept, completion], [concept, completion, quickly], [completion, quickly, possible], [quickly, possible, .]]
+
+>> Noun Phrases are: 
+[Django, developers, applications, concept, completion]
+
+>> Named Entities are: 
+[('Django', 'PERSON')]
+
+
+============================ Sentence 15 =============================
+
+ · Fully Loaded: 
+
+
+>> Tokens are: 
+[ , ·, Fully, Loaded, :] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('·', 'PUNCT'), ('Fully', 'ADV'), ('Loaded', 'VERB'), (':', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT'), ('·', 'punct'), ('Fully', 'advmod'), ('Loaded', 'amod'), (':', 'punct')]
+
+>> Bigrams: 
+[[ , ·], [·, Fully], [Fully, Loaded], [Loaded, :]]
+
+>> Trigrams: 
+[[ , ·, Fully], [·, Fully, Loaded], [Fully, Loaded, :]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+Django includes dozens of extra features you can use to handle  common Web development tasks. 
+
+
+>> Tokens are: 
+[Django, includes, dozens, extra, features, use, handle,  , common, Web, development, tasks, .] 
+
+>> PoS Tags are: 
+[('Django', 'PROPN'), ('includes', 'VERB'), ('dozens', 'NOUN'), ('extra', 'ADJ'), ('features', 'NOUN'), ('use', 'VERB'), ('handle', 'VERB'), (' ', 'SPACE'), ('common', 'ADJ'), ('Web', 'NOUN'), ('development', 'NOUN'), ('tasks', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Django', 'nsubj'), ('includes', 'ROOT'), ('dozens', 'dobj'), ('extra', 'amod'), ('features', 'pobj'), ('use', 'relcl'), ('handle', 'xcomp'), (' ', 'dobj'), ('common', 'amod'), ('Web', 'compound'), ('development', 'compound'), ('tasks', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Django, includes], [includes, dozens], [dozens, extra], [extra, features], [features, use], [use, handle], [handle,  ], [ , common], [common, Web], [Web, development], [development, tasks], [tasks, .]]
+
+>> Trigrams: 
+[[Django, includes, dozens], [includes, dozens, extra], [dozens, extra, features], [extra, features, use], [features, use, handle], [use, handle,  ], [handle,  , common], [ , common, Web], [common, Web, development], [Web, development, tasks], [development, tasks, .]]
+
+>> Noun Phrases are: 
+[Django, dozens, extra features, you, common Web development tasks]
+
+>> Named Entities are: 
+[('dozens', 'CARDINAL')]
+
+
+============================ Sentence 17 =============================
+
+Django takes care of user  authentication, content administration, site maps, RSS feeds, and many  more tasks — right out of the box.   
+
+
+>> Tokens are: 
+[Django, takes, care, user,  , authentication, ,, content, administration, ,, site, maps, ,, RSS, feeds, ,,  , tasks, —, right, box, .,  ] 
+
+>> PoS Tags are: 
+[('Django', 'PROPN'), ('takes', 'VERB'), ('care', 'NOUN'), ('user', 'NOUN'), (' ', 'SPACE'), ('authentication', 'NOUN'), (',', 'PUNCT'), ('content', 'NOUN'), ('administration', 'NOUN'), (',', 'PUNCT'), ('site', 'NOUN'), ('maps', 'NOUN'), (',', 'PUNCT'), ('RSS', 'PROPN'), ('feeds', 'VERB'), (',', 'PUNCT'), (' ', 'SPACE'), ('tasks', 'NOUN'), ('—', 'PUNCT'), ('right', 'ADV'), ('box', 'NOUN'), ('.', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Django', 'nsubj'), ('takes', 'ROOT'), ('care', 'dobj'), ('user', 'compound'), (' ', 'compound'), ('authentication', 'pobj'), (',', 'punct'), ('content', 'compound'), ('administration', 'conj'), (',', 'punct'), ('site', 'compound'), ('maps', 'conj'), (',', 'punct'), ('RSS', 'nsubj'), ('feeds', 'parataxis'), (',', 'punct'), (' ', 'nummod'), ('tasks', 'conj'), ('—', 'punct'), ('right', 'advmod'), ('box', 'pobj'), ('.', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Django, takes], [takes, care], [care, user], [user,  ], [ , authentication], [authentication, ,], [,, content], [content, administration], [administration, ,], [,, site], [site, maps], [maps, ,], [,, RSS], [RSS, feeds], [feeds, ,], [,,  ], [ , tasks], [tasks, —], [—, right], [right, box], [box, .], [.,  ]]
+
+>> Trigrams: 
+[[Django, takes, care], [takes, care, user], [care, user,  ], [user,  , authentication], [ , authentication, ,], [authentication, ,, content], [,, content, administration], [content, administration, ,], [administration, ,, site], [,, site, maps], [site, maps, ,], [maps, ,, RSS], [,, RSS, feeds], [RSS, feeds, ,], [feeds, ,,  ], [,,  , tasks], [ , tasks, —], [tasks, —, right], [—, right, box], [right, box, .], [box, .,  ]]
+
+>> Noun Phrases are: 
+[Django, care, user  authentication, content administration, site maps, RSS, the box]
+
+>> Named Entities are: 
+[('Django', 'PERSON'), ('RSS', 'ORG')]
+
+
+============================ Sentence 18 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+Reassuringly secure: Django takes security seriously and helps developers to avoid many common security mistakes, such as SQL injection, cross-site scripting, cross-site request forgery and clickjacking. 
+
+
+>> Tokens are: 
+[Reassuringly, secure, :, Django, takes, security, seriously, helps, developers, avoid, common, security, mistakes, ,, SQL, injection, ,, cross, -, site, scripting, ,, cross, -, site, request, forgery, clickjacking, .] 
+
+>> PoS Tags are: 
+[('Reassuringly', 'ADV'), ('secure', 'ADJ'), (':', 'PUNCT'), ('Django', 'PROPN'), ('takes', 'VERB'), ('security', 'NOUN'), ('seriously', 'ADV'), ('helps', 'VERB'), ('developers', 'NOUN'), ('avoid', 'VERB'), ('common', 'ADJ'), ('security', 'NOUN'), ('mistakes', 'NOUN'), (',', 'PUNCT'), ('SQL', 'PROPN'), ('injection', 'NOUN'), (',', 'PUNCT'), ('cross', 'ADJ'), ('-', 'NOUN'), ('site', 'ADJ'), ('scripting', 'NOUN'), (',', 'PUNCT'), ('cross', 'ADJ'), ('-', 'ADJ'), ('site', 'ADJ'), ('request', 'NOUN'), ('forgery', 'NOUN'), ('clickjacking', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Reassuringly', 'advmod'), ('secure', 'ROOT'), (':', 'punct'), ('Django', 'nsubj'), ('takes', 'ccomp'), ('security', 'dobj'), ('seriously', 'advmod'), ('helps', 'conj'), ('developers', 'dobj'), ('avoid', 'xcomp'), ('common', 'amod'), ('security', 'compound'), ('mistakes', 'dobj'), (',', 'punct'), ('SQL', 'compound'), ('injection', 'pobj'), (',', 'punct'), ('cross', 'amod'), ('-', 'amod'), ('site', 'amod'), ('scripting', 'conj'), (',', 'punct'), ('cross', 'amod'), ('-', 'amod'), ('site', 'amod'), ('request', 'compound'), ('forgery', 'conj'), ('clickjacking', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Reassuringly, secure], [secure, :], [:, Django], [Django, takes], [takes, security], [security, seriously], [seriously, helps], [helps, developers], [developers, avoid], [avoid, common], [common, security], [security, mistakes], [mistakes, ,], [,, SQL], [SQL, injection], [injection, ,], [,, cross], [cross, -], [-, site], [site, scripting], [scripting, ,], [,, cross], [cross, -], [-, site], [site, request], [request, forgery], [forgery, clickjacking], [clickjacking, .]]
+
+>> Trigrams: 
+[[Reassuringly, secure, :], [secure, :, Django], [:, Django, takes], [Django, takes, security], [takes, security, seriously], [security, seriously, helps], [seriously, helps, developers], [helps, developers, avoid], [developers, avoid, common], [avoid, common, security], [common, security, mistakes], [security, mistakes, ,], [mistakes, ,, SQL], [,, SQL, injection], [SQL, injection, ,], [injection, ,, cross], [,, cross, -], [cross, -, site], [-, site, scripting], [site, scripting, ,], [scripting, ,, cross], [,, cross, -], [cross, -, site], [-, site, request], [site, request, forgery], [request, forgery, clickjacking], [forgery, clickjacking, .]]
+
+>> Noun Phrases are: 
+[Django, security, developers, many common security mistakes, SQL injection, cross-site scripting, cross-site request forgery]
+
+>> Named Entities are: 
+[('Django', 'PERSON'), ('SQL', 'ORG')]
+
+
+============================ Sentence 20 =============================
+
+Its user authentication system provides a secure way to manage user accounts and passwords. 
+
+
+>> Tokens are: 
+[user, authentication, system, provides, secure, way, manage, user, accounts, passwords, .] 
+
+>> PoS Tags are: 
+[('user', 'NOUN'), ('authentication', 'NOUN'), ('system', 'NOUN'), ('provides', 'VERB'), ('secure', 'ADJ'), ('way', 'NOUN'), ('manage', 'VERB'), ('user', 'NOUN'), ('accounts', 'NOUN'), ('passwords', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('user', 'compound'), ('authentication', 'compound'), ('system', 'nsubj'), ('provides', 'ROOT'), ('secure', 'amod'), ('way', 'dobj'), ('manage', 'relcl'), ('user', 'compound'), ('accounts', 'dobj'), ('passwords', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[user, authentication], [authentication, system], [system, provides], [provides, secure], [secure, way], [way, manage], [manage, user], [user, accounts], [accounts, passwords], [passwords, .]]
+
+>> Trigrams: 
+[[user, authentication, system], [authentication, system, provides], [system, provides, secure], [provides, secure, way], [secure, way, manage], [way, manage, user], [manage, user, accounts], [user, accounts, passwords], [accounts, passwords, .]]
+
+>> Noun Phrases are: 
+[Its user authentication system, a secure way, user accounts, passwords]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+ · Exceedingly scalable: Some of the busiest sites on the planet use Django’s ability to quickly and flexibly scale to meet the heaviest traffic demands. 
+
+
+>> Tokens are: 
+[ , ·, Exceedingly, scalable, :, busiest, sites, planet, use, Django, ability, quickly, flexibly, scale, meet, heaviest, traffic, demands, .] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('·', 'PUNCT'), ('Exceedingly', 'ADV'), ('scalable', 'ADJ'), (':', 'PUNCT'), ('busiest', 'ADJ'), ('sites', 'NOUN'), ('planet', 'NOUN'), ('use', 'NOUN'), ('Django', 'PROPN'), ('ability', 'NOUN'), ('quickly', 'ADV'), ('flexibly', 'ADV'), ('scale', 'NOUN'), ('meet', 'VERB'), ('heaviest', 'ADJ'), ('traffic', 'NOUN'), ('demands', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'dep'), ('·', 'punct'), ('Exceedingly', 'advmod'), ('scalable', 'ROOT'), (':', 'punct'), ('busiest', 'amod'), ('sites', 'pobj'), ('planet', 'compound'), ('use', 'pobj'), ('Django', 'poss'), ('ability', 'dobj'), ('quickly', 'advmod'), ('flexibly', 'conj'), ('scale', 'acl'), ('meet', 'advcl'), ('heaviest', 'amod'), ('traffic', 'compound'), ('demands', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ , ·], [·, Exceedingly], [Exceedingly, scalable], [scalable, :], [:, busiest], [busiest, sites], [sites, planet], [planet, use], [use, Django], [Django, ability], [ability, quickly], [quickly, flexibly], [flexibly, scale], [scale, meet], [meet, heaviest], [heaviest, traffic], [traffic, demands], [demands, .]]
+
+>> Trigrams: 
+[[ , ·, Exceedingly], [·, Exceedingly, scalable], [Exceedingly, scalable, :], [scalable, :, busiest], [:, busiest, sites], [busiest, sites, planet], [sites, planet, use], [planet, use, Django], [use, Django, ability], [Django, ability, quickly], [ability, quickly, flexibly], [quickly, flexibly, scale], [flexibly, scale, meet], [scale, meet, heaviest], [meet, heaviest, traffic], [heaviest, traffic, demands], [traffic, demands, .]]
+
+>> Noun Phrases are: 
+[the busiest sites, the planet use, Django’s ability, the heaviest traffic demands]
+
+>> Named Entities are: 
+[('Django', 'PERSON')]
+
+
+============================ Sentence 22 =============================
+
+ · Incredibly versatile: Companies, organizations and governments have used Django to build all sorts of things — from content management systems to social networks to scientific computing platforms. 
+
+
+>> Tokens are: 
+[ , ·, Incredibly, versatile, :, Companies, ,, organizations, governments, Django, build, sorts, things, —, content, management, systems, social, networks, scientific, computing, platforms, .] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('·', 'PUNCT'), ('Incredibly', 'ADV'), ('versatile', 'ADJ'), (':', 'PUNCT'), ('Companies', 'NOUN'), (',', 'PUNCT'), ('organizations', 'NOUN'), ('governments', 'NOUN'), ('Django', 'PROPN'), ('build', 'VERB'), ('sorts', 'NOUN'), ('things', 'NOUN'), ('—', 'PUNCT'), ('content', 'NOUN'), ('management', 'NOUN'), ('systems', 'NOUN'), ('social', 'ADJ'), ('networks', 'NOUN'), ('scientific', 'ADJ'), ('computing', 'NOUN'), ('platforms', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'dep'), ('·', 'punct'), ('Incredibly', 'advmod'), ('versatile', 'amod'), (':', 'punct'), ('Companies', 'appos'), (',', 'punct'), ('organizations', 'conj'), ('governments', 'conj'), ('Django', 'dobj'), ('build', 'xcomp'), ('sorts', 'dobj'), ('things', 'pobj'), ('—', 'punct'), ('content', 'compound'), ('management', 'compound'), ('systems', 'pobj'), ('social', 'amod'), ('networks', 'pobj'), ('scientific', 'amod'), ('computing', 'compound'), ('platforms', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ , ·], [·, Incredibly], [Incredibly, versatile], [versatile, :], [:, Companies], [Companies, ,], [,, organizations], [organizations, governments], [governments, Django], [Django, build], [build, sorts], [sorts, things], [things, —], [—, content], [content, management], [management, systems], [systems, social], [social, networks], [networks, scientific], [scientific, computing], [computing, platforms], [platforms, .]]
+
+>> Trigrams: 
+[[ , ·, Incredibly], [·, Incredibly, versatile], [Incredibly, versatile, :], [versatile, :, Companies], [:, Companies, ,], [Companies, ,, organizations], [,, organizations, governments], [organizations, governments, Django], [governments, Django, build], [Django, build, sorts], [build, sorts, things], [sorts, things, —], [things, —, content], [—, content, management], [content, management, systems], [management, systems, social], [systems, social, networks], [social, networks, scientific], [networks, scientific, computing], [scientific, computing, platforms], [computing, platforms, .]]
+
+>> Noun Phrases are: 
+[Companies, organizations, governments, Django, all sorts, things, content management systems, social networks, scientific computing platforms]
+
+>> Named Entities are: 
+[('Django', 'PERSON')]
+
+
+============================ Sentence 23 =============================
+
+  Reference: https://www.djangoproject.com/start/overview/   · 
+
+
+>> Tokens are: 
+[  , Reference, :, https://www.djangoproject.com/start/overview/,   , ·] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Reference', 'NOUN'), (':', 'PUNCT'), ('https://www.djangoproject.com/start/overview/', 'NOUN'), ('  ', 'SPACE'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'compound'), ('Reference', 'ROOT'), (':', 'punct'), ('https://www.djangoproject.com/start/overview/', 'appos'), ('  ', 'appos'), ('·', 'punct')]
+
+>> Bigrams: 
+[[  , Reference], [Reference, :], [:, https://www.djangoproject.com/start/overview/], [https://www.djangoproject.com/start/overview/,   ], [  , ·]]
+
+>> Trigrams: 
+[[  , Reference, :], [Reference, :, https://www.djangoproject.com/start/overview/], [:, https://www.djangoproject.com/start/overview/,   ], [https://www.djangoproject.com/start/overview/,   , ·]]
+
+>> Noun Phrases are: 
+[  Reference, https://www.djangoproject.com/start/overview/]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 24 =============================
+
+Django framework design principles:  Don’t repeat yourself 
+
+
+>> Tokens are: 
+[Django, framework, design, principles, :,  , repeat] 
+
+>> PoS Tags are: 
+[('Django', 'PROPN'), ('framework', 'NOUN'), ('design', 'NOUN'), ('principles', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE'), ('repeat', 'VERB')] 
+
+>> Dependency Tags are: 
+[('Django', 'compound'), ('framework', 'compound'), ('design', 'compound'), ('principles', 'nsubj'), (':', 'punct'), (' ', 'appos'), ('repeat', 'ROOT')]
+
+>> Bigrams: 
+[[Django, framework], [framework, design], [design, principles], [principles, :], [:,  ], [ , repeat]]
+
+>> Trigrams: 
+[[Django, framework, design], [framework, design, principles], [design, principles, :], [principles, :,  ], [:,  , repeat]]
+
+>> Noun Phrases are: 
+[Django framework design principles, yourself]
+
+>> Named Entities are: 
+[('Django', 'PERSON')]
+
+
+============================ Sentence 25 =============================
+
+(DRY) Principle:  	Reference: https://www.webforefront.com/django/designprinciples.html    · 
+
+
+>> Tokens are: 
+[(, DRY, ), Principle, :,  	, Reference, :, https://www.webforefront.com/django/designprinciples.html,    , ·] 
+
+>> PoS Tags are: 
+[('(', 'PUNCT'), ('DRY', 'PROPN'), (')', 'PUNCT'), ('Principle', 'NOUN'), (':', 'PUNCT'), (' \t', 'SPACE'), ('Reference', 'NOUN'), (':', 'PUNCT'), ('https://www.webforefront.com/django/designprinciples.html', 'VERB'), ('   ', 'SPACE'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('(', 'punct'), ('DRY', 'nmod'), (')', 'punct'), ('Principle', 'nsubj'), (':', 'punct'), (' \t', 'compound'), ('Reference', 'appos'), (':', 'punct'), ('https://www.webforefront.com/django/designprinciples.html', 'ROOT'), ('   ', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[(, DRY], [DRY, )], [), Principle], [Principle, :], [:,  	], [ 	, Reference], [Reference, :], [:, https://www.webforefront.com/django/designprinciples.html], [https://www.webforefront.com/django/designprinciples.html,    ], [   , ·]]
+
+>> Trigrams: 
+[[(, DRY, )], [DRY, ), Principle], [), Principle, :], [Principle, :,  	], [:,  	, Reference], [ 	, Reference, :], [Reference, :, https://www.webforefront.com/django/designprinciples.html], [:, https://www.webforefront.com/django/designprinciples.html,    ], [https://www.webforefront.com/django/designprinciples.html,    , ·]]
+
+>> Noun Phrases are: 
+[(DRY) Principle,  	Reference]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+Django Custom User Model: · https://testdriven.io/blog/django-custom-user-model/ · https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html 
+
+
+>> Tokens are: 
+[Django, Custom, User, Model, :, ·, https://testdriven.io/blog/django-custom-user-model/, ·, https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html] 
+
+>> PoS Tags are: 
+[('Django', 'PROPN'), ('Custom', 'PROPN'), ('User', 'PROPN'), ('Model', 'PROPN'), (':', 'PUNCT'), ('·', 'PUNCT'), ('https://testdriven.io/blog/django-custom-user-model/', 'NOUN'), ('·', 'PUNCT'), ('https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Django', 'compound'), ('Custom', 'compound'), ('User', 'compound'), ('Model', 'ROOT'), (':', 'punct'), ('·', 'punct'), ('https://testdriven.io/blog/django-custom-user-model/', 'appos'), ('·', 'punct'), ('https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html', 'appos')]
+
+>> Bigrams: 
+[[Django, Custom], [Custom, User], [User, Model], [Model, :], [:, ·], [·, https://testdriven.io/blog/django-custom-user-model/], [https://testdriven.io/blog/django-custom-user-model/, ·], [·, https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html]]
+
+>> Trigrams: 
+[[Django, Custom, User], [Custom, User, Model], [User, Model, :], [Model, :, ·], [:, ·, https://testdriven.io/blog/django-custom-user-model/], [·, https://testdriven.io/blog/django-custom-user-model/, ·], [https://testdriven.io/blog/django-custom-user-model/, ·, https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html]]
+
+>> Noun Phrases are: 
+[Django Custom User Model, · https://testdriven.io/blog/django-custom-user-model/, https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html]
+
+>> Named Entities are: 
+[('Django Custom User', 'PERSON'), ('https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html', 'PERSON')]

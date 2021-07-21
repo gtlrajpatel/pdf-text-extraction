@@ -1,0 +1,1864 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709) 
+
+
+>> Tokens are: 
+[OOPC++, UNIT-1,   , Prof., Rupesh, G., Vaishnav, rupesh.vaishnav@darshan.ac.in, 94280, -, 37452, Information, &, Network, Security, (, 2170709, )] 
+
+>> PoS Tags are: 
+[('OOPC++', 'INTJ'), ('UNIT-1', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Rupesh', 'PROPN'), ('G.', 'PROPN'), ('Vaishnav', 'PROPN'), ('rupesh.vaishnav@darshan.ac.in', 'NUM'), ('94280', 'NUM'), ('-', 'SYM'), ('37452', 'NUM'), ('Information', 'PROPN'), ('&', 'CCONJ'), ('Network', 'PROPN'), ('Security', 'PROPN'), ('(', 'PUNCT'), ('2170709', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('OOPC++', 'intj'), ('UNIT-1', 'ROOT'), ('  ', 'nummod'), ('Prof.', 'compound'), ('Rupesh', 'compound'), ('G.', 'compound'), ('Vaishnav', 'dobj'), ('rupesh.vaishnav@darshan.ac.in', 'appos'), ('94280', 'nummod'), ('-', 'punct'), ('37452', 'nummod'), ('Information', 'nmod'), ('&', 'cc'), ('Network', 'conj'), ('Security', 'appos'), ('(', 'punct'), ('2170709', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[OOPC++, UNIT-1], [UNIT-1,   ], [  , Prof.], [Prof., Rupesh], [Rupesh, G.], [G., Vaishnav], [Vaishnav, rupesh.vaishnav@darshan.ac.in], [rupesh.vaishnav@darshan.ac.in, 94280], [94280, -], [-, 37452], [37452, Information], [Information, &], [&, Network], [Network, Security], [Security, (], [(, 2170709], [2170709, )]]
+
+>> Trigrams: 
+[[OOPC++, UNIT-1,   ], [UNIT-1,   , Prof.], [  , Prof., Rupesh], [Prof., Rupesh, G.], [Rupesh, G., Vaishnav], [G., Vaishnav, rupesh.vaishnav@darshan.ac.in], [Vaishnav, rupesh.vaishnav@darshan.ac.in, 94280], [rupesh.vaishnav@darshan.ac.in, 94280, -], [94280, -, 37452], [-, 37452, Information], [37452, Information, &], [Information, &, Network], [&, Network, Security], [Network, Security, (], [Security, (, 2170709], [(, 2170709, )]]
+
+>> Noun Phrases are: 
+[OOPC++ UNIT-1,   Prof. Rupesh G. Vaishnav, 94280-37452 Information & Network Security]
+
+>> Named Entities are: 
+[('Rupesh G. Vaishnav', 'PERSON'), ('94280-37452', 'DATE'), ('Information & Network Security', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+	 Darshan Institute of Engineering & Technology UNIT-9 Remote user authentication      1  Outline Remote user authentication with symmetric encryption Remote user authentication with asymmetric encryption Kerberos  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  X.800 and RFC 2828 International Telecommunication Union (ITU) 2   
+
+
+>> Tokens are: 
+[	 , Darshan, Institute, Engineering, &, Technology, UNIT-9, Remote, user, authentication,      , 1,  , Outline, Remote, user, authentication, symmetric, encryption, Remote, user, authentication, asymmetric, encryption, Kerberos,  , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , X.800, RFC, 2828, International, Telecommunication, Union, (, ITU, ), 2,  ] 
+
+>> PoS Tags are: 
+[('\t ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('UNIT-9', 'PROPN'), ('Remote', 'PROPN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('     ', 'SPACE'), ('1', 'NUM'), (' ', 'SPACE'), ('Outline', 'PROPN'), ('Remote', 'PROPN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('symmetric', 'ADJ'), ('encryption', 'NOUN'), ('Remote', 'PROPN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('asymmetric', 'ADJ'), ('encryption', 'NOUN'), ('Kerberos', 'PROPN'), (' ', 'SPACE'), ('Unit-9', 'PROPN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('X.800', 'PROPN'), ('RFC', 'PROPN'), ('2828', 'NUM'), ('International', 'PROPN'), ('Telecommunication', 'PROPN'), ('Union', 'PROPN'), ('(', 'PUNCT'), ('ITU', 'PROPN'), (')', 'PUNCT'), ('2', 'NUM'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t ', 'amod'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'nmod'), ('&', 'cc'), ('Technology', 'conj'), ('UNIT-9', 'pobj'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'compound'), ('     ', 'appos'), ('1', 'nummod'), (' ', 'nmod'), ('Outline', 'compound'), ('Remote', 'compound'), ('user', 'compound'), ('authentication', 'dobj'), ('symmetric', 'amod'), ('encryption', 'pobj'), ('Remote', 'compound'), ('user', 'compound'), ('authentication', 'nsubj'), ('asymmetric', 'amod'), ('encryption', 'pobj'), ('Kerberos', 'appos'), (' ', 'nummod'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'appos'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'attr'), (' ', 'prep'), ('X.800', 'appos'), ('RFC', 'npadvmod'), ('2828', 'nummod'), ('International', 'compound'), ('Telecommunication', 'compound'), ('Union', 'appos'), ('(', 'punct'), ('ITU', 'appos'), (')', 'punct'), ('2', 'nummod'), (' ', 'punct')]
+
+>> Bigrams: 
+[[	 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology, UNIT-9], [UNIT-9, Remote], [Remote, user], [user, authentication], [authentication,      ], [     , 1], [1,  ], [ , Outline], [Outline, Remote], [Remote, user], [user, authentication], [authentication, symmetric], [symmetric, encryption], [encryption, Remote], [Remote, user], [user, authentication], [authentication, asymmetric], [asymmetric, encryption], [encryption, Kerberos], [Kerberos,  ], [ , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , X.800], [X.800, RFC], [RFC, 2828], [2828, International], [International, Telecommunication], [Telecommunication, Union], [Union, (], [(, ITU], [ITU, )], [), 2], [2,  ]]
+
+>> Trigrams: 
+[[	 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology, UNIT-9], [Technology, UNIT-9, Remote], [UNIT-9, Remote, user], [Remote, user, authentication], [user, authentication,      ], [authentication,      , 1], [     , 1,  ], [1,  , Outline], [ , Outline, Remote], [Outline, Remote, user], [Remote, user, authentication], [user, authentication, symmetric], [authentication, symmetric, encryption], [symmetric, encryption, Remote], [encryption, Remote, user], [Remote, user, authentication], [user, authentication, asymmetric], [authentication, asymmetric, encryption], [asymmetric, encryption, Kerberos], [encryption, Kerberos,  ], [Kerberos,  , Unit-9], [ , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , X.800], [ , X.800, RFC], [X.800, RFC, 2828], [RFC, 2828, International], [2828, International, Telecommunication], [International, Telecommunication, Union], [Telecommunication, Union, (], [Union, (, ITU], [(, ITU, )], [ITU, ), 2], [), 2,  ]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering & Technology UNIT-9, 1  Outline Remote user authentication, symmetric encryption, asymmetric encryption, Kerberos, Unit-9 Remote user authentication, Darshan Institute, Engineering, Technology, INS, X.800, International Telecommunication Union, (ITU]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology UNIT-9', 'ORG'), ('Remote', 'ORG'), ('Remote', 'ORG'), ('Kerberos', 'FAC'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('X.800', 'CARDINAL'), ('2828', 'DATE'), ('ITU', 'ORG'), ('2', 'CARDINAL')]
+
+
+============================ Sentence 3 =============================
+
+Remote user authentication with symmetric encryption Mutual Authentication A ---> KDC IDa || IDb || N1 KDC ---> A E(Ka, 
+
+
+>> Tokens are: 
+[Remote, user, authentication, symmetric, encryption, Mutual, Authentication, ---, >, KDC, IDa, ||, IDb, ||, N1, KDC, ---, >, E(Ka, ,] 
+
+>> PoS Tags are: 
+[('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('symmetric', 'ADJ'), ('encryption', 'NOUN'), ('Mutual', 'PROPN'), ('Authentication', 'PROPN'), ('---', 'PUNCT'), ('>', 'X'), ('KDC', 'PROPN'), ('IDa', 'NOUN'), ('||', 'NOUN'), ('IDb', 'NOUN'), ('||', 'PROPN'), ('N1', 'PROPN'), ('KDC', 'PROPN'), ('---', 'PUNCT'), ('>', 'PUNCT'), ('E(Ka', 'NOUN'), (',', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Remote', 'amod'), ('user', 'compound'), ('authentication', 'ROOT'), ('symmetric', 'amod'), ('encryption', 'pobj'), ('Mutual', 'compound'), ('Authentication', 'compound'), ('---', 'punct'), ('>', 'punct'), ('KDC', 'compound'), ('IDa', 'nmod'), ('||', 'nummod'), ('IDb', 'appos'), ('||', 'appos'), ('N1', 'compound'), ('KDC', 'appos'), ('---', 'punct'), ('>', 'nmod'), ('E(Ka', 'appos'), (',', 'punct')]
+
+>> Bigrams: 
+[[Remote, user], [user, authentication], [authentication, symmetric], [symmetric, encryption], [encryption, Mutual], [Mutual, Authentication], [Authentication, ---], [---, >], [>, KDC], [KDC, IDa], [IDa, ||], [||, IDb], [IDb, ||], [||, N1], [N1, KDC], [KDC, ---], [---, >], [>, E(Ka], [E(Ka, ,]]
+
+>> Trigrams: 
+[[Remote, user, authentication], [user, authentication, symmetric], [authentication, symmetric, encryption], [symmetric, encryption, Mutual], [encryption, Mutual, Authentication], [Mutual, Authentication, ---], [Authentication, ---, >], [---, >, KDC], [>, KDC, IDa], [KDC, IDa, ||], [IDa, ||, IDb], [||, IDb, ||], [IDb, ||, N1], [||, N1, KDC], [N1, KDC, ---], [KDC, ---, >], [---, >, E(Ka], [>, E(Ka, ,]]
+
+>> Noun Phrases are: 
+[Remote user authentication, symmetric encryption, Mutual Authentication A, KDC IDa || IDb, ||, N1 KDC, > A, E(Ka]
+
+>> Named Entities are: 
+[('Mutual Authentication A ---> KDC', 'ORG'), ('N1', 'CARDINAL')]
+
+
+============================ Sentence 4 =============================
+
+[Ks || IDb || N1 || E(Kb,[Ks || IDa)]) 
+
+
+>> Tokens are: 
+[[, Ks, ||, IDb, ||, N1, ||, E(Kb,[Ks, ||, IDa, ), ], )] 
+
+>> PoS Tags are: 
+[('[', 'PUNCT'), ('Ks', 'ADP'), ('||', 'NOUN'), ('IDb', 'NOUN'), ('||', 'PROPN'), ('N1', 'PROPN'), ('||', 'NOUN'), ('E(Kb,[Ks', 'PROPN'), ('||', 'ADP'), ('IDa', 'NOUN'), (')', 'PUNCT'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('[', 'dep'), ('Ks', 'nmod'), ('||', 'pobj'), ('IDb', 'pobj'), ('||', 'nmod'), ('N1', 'ROOT'), ('||', 'nummod'), ('E(Kb,[Ks', 'compound'), ('||', 'prep'), ('IDa', 'appos'), (')', 'punct'), (']', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[[, Ks], [Ks, ||], [||, IDb], [IDb, ||], [||, N1], [N1, ||], [||, E(Kb,[Ks], [E(Kb,[Ks, ||], [||, IDa], [IDa, )], [), ]], [], )]]
+
+>> Trigrams: 
+[[[, Ks, ||], [Ks, ||, IDb], [||, IDb, ||], [IDb, ||, N1], [||, N1, ||], [N1, ||, E(Kb,[Ks], [||, E(Kb,[Ks, ||], [E(Kb,[Ks, ||, IDa], [||, IDa, )], [IDa, ), ]], [), ], )]]
+
+>> Noun Phrases are: 
+[||, IDb, IDa]
+
+>> Named Entities are: 
+[('N1', 'CARDINAL')]
+
+
+============================ Sentence 5 =============================
+
+A ---> B E(Kb, [Ks || IDa]) B ---> A E(Ks, N2) 
+
+
+>> Tokens are: 
+[---, >, B, E(Kb, ,, [, Ks, ||, IDa, ], ), B, ---, >, E(Ks, ,, N2, )] 
+
+>> PoS Tags are: 
+[('---', 'PUNCT'), ('>', 'PUNCT'), ('B', 'NOUN'), ('E(Kb', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Ks', 'ADP'), ('||', 'DET'), ('IDa', 'NOUN'), (']', 'PUNCT'), (')', 'PUNCT'), ('B', 'NOUN'), ('---', 'PUNCT'), ('>', 'X'), ('E(Ks', 'NUM'), (',', 'PUNCT'), ('N2', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('---', 'punct'), ('>', 'nmod'), ('B', 'compound'), ('E(Kb', 'appos'), (',', 'punct'), ('[', 'punct'), ('Ks', 'prep'), ('||', 'pobj'), ('IDa', 'pobj'), (']', 'punct'), (')', 'punct'), ('B', 'ROOT'), ('---', 'punct'), ('>', 'nmod'), ('E(Ks', 'appos'), (',', 'punct'), ('N2', 'npadvmod'), (')', 'punct')]
+
+>> Bigrams: 
+[[---, >], [>, B], [B, E(Kb], [E(Kb, ,], [,, [], [[, Ks], [Ks, ||], [||, IDa], [IDa, ]], [], )], [), B], [B, ---], [---, >], [>, E(Ks], [E(Ks, ,], [,, N2], [N2, )]]
+
+>> Trigrams: 
+[[---, >, B], [>, B, E(Kb], [B, E(Kb, ,], [E(Kb, ,, [], [,, [, Ks], [[, Ks, ||], [Ks, ||, IDa], [||, IDa, ]], [IDa, ], )], [], ), B], [), B, ---], [B, ---, >], [---, >, E(Ks], [>, E(Ks, ,], [E(Ks, ,, N2], [,, N2, )]]
+
+>> Noun Phrases are: 
+[> B E(Kb, IDa]
+
+>> Named Entities are: 
+[('Ks ||', 'FAC'), ('N2', 'CARDINAL')]
+
+
+============================ Sentence 6 =============================
+
+A ---> B E(Ks, f(N2))   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Remote user authentication with symmetric encryption One-way Authentication A ---> KDC IDa || IDb || N1 KDC ---> A E(Ka, [Ks || IDb || N1 || E(Kb, [Ks || IDa])]) 
+
+
+>> Tokens are: 
+[---, >, B, E(Ks, ,, f(N2, ), ),   , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Remote, user, authentication, symmetric, encryption, -, way, Authentication, ---, >, KDC, IDa, ||, IDb, ||, N1, KDC, ---, >, E(Ka, ,, [, Ks, ||, IDb, ||, N1, ||, E(Kb, ,, [, Ks, ||, IDa, ], ), ], )] 
+
+>> PoS Tags are: 
+[('---', 'PUNCT'), ('>', 'PUNCT'), ('B', 'NOUN'), ('E(Ks', 'NUM'), (',', 'PUNCT'), ('f(N2', 'PROPN'), (')', 'PUNCT'), (')', 'PUNCT'), ('  ', 'SPACE'), ('Unit-9', 'NOUN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('symmetric', 'ADJ'), ('encryption', 'NOUN'), ('-', 'PUNCT'), ('way', 'NOUN'), ('Authentication', 'PROPN'), ('---', 'PUNCT'), ('>', 'X'), ('KDC', 'PROPN'), ('IDa', 'NOUN'), ('||', 'NOUN'), ('IDb', 'NOUN'), ('||', 'PROPN'), ('N1', 'PROPN'), ('KDC', 'PROPN'), ('---', 'PUNCT'), ('>', 'PUNCT'), ('E(Ka', 'NOUN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Ks', 'ADP'), ('||', 'NOUN'), ('IDb', 'NOUN'), ('||', 'PROPN'), ('N1', 'PROPN'), ('||', 'PROPN'), ('E(Kb', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Ks', 'ADP'), ('||', 'DET'), ('IDa', 'NOUN'), (']', 'PUNCT'), (')', 'PUNCT'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('---', 'punct'), ('>', 'compound'), ('B', 'dative'), ('E(Ks', 'appos'), (',', 'punct'), ('f(N2', 'appos'), (')', 'punct'), (')', 'punct'), ('  ', 'nmod'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'compound'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'nmod'), (' ', 'nummod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'attr'), ('symmetric', 'amod'), ('encryption', 'pobj'), ('-', 'punct'), ('way', 'compound'), ('Authentication', 'compound'), ('---', 'punct'), ('>', 'nmod'), ('KDC', 'compound'), ('IDa', 'nmod'), ('||', 'nummod'), ('IDb', 'nsubj'), ('||', 'conj'), ('N1', 'npadvmod'), ('KDC', 'appos'), ('---', 'punct'), ('>', 'nmod'), ('E(Ka', 'appos'), (',', 'punct'), ('[', 'punct'), ('Ks', 'prep'), ('||', 'pobj'), ('IDb', 'pobj'), ('||', 'conj'), ('N1', 'npadvmod'), ('||', 'nummod'), ('E(Kb', 'nummod'), (',', 'punct'), ('[', 'punct'), ('Ks', 'prep'), ('||', 'pobj'), ('IDa', 'pobj'), (']', 'punct'), (')', 'punct'), (']', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[---, >], [>, B], [B, E(Ks], [E(Ks, ,], [,, f(N2], [f(N2, )], [), )], [),   ], [  , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Remote], [Remote, user], [user, authentication], [authentication, symmetric], [symmetric, encryption], [encryption, -], [-, way], [way, Authentication], [Authentication, ---], [---, >], [>, KDC], [KDC, IDa], [IDa, ||], [||, IDb], [IDb, ||], [||, N1], [N1, KDC], [KDC, ---], [---, >], [>, E(Ka], [E(Ka, ,], [,, [], [[, Ks], [Ks, ||], [||, IDb], [IDb, ||], [||, N1], [N1, ||], [||, E(Kb], [E(Kb, ,], [,, [], [[, Ks], [Ks, ||], [||, IDa], [IDa, ]], [], )], [), ]], [], )]]
+
+>> Trigrams: 
+[[---, >, B], [>, B, E(Ks], [B, E(Ks, ,], [E(Ks, ,, f(N2], [,, f(N2, )], [f(N2, ), )], [), ),   ], [),   , Unit-9], [  , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Remote], [ , Remote, user], [Remote, user, authentication], [user, authentication, symmetric], [authentication, symmetric, encryption], [symmetric, encryption, -], [encryption, -, way], [-, way, Authentication], [way, Authentication, ---], [Authentication, ---, >], [---, >, KDC], [>, KDC, IDa], [KDC, IDa, ||], [IDa, ||, IDb], [||, IDb, ||], [IDb, ||, N1], [||, N1, KDC], [N1, KDC, ---], [KDC, ---, >], [---, >, E(Ka], [>, E(Ka, ,], [E(Ka, ,, [], [,, [, Ks], [[, Ks, ||], [Ks, ||, IDb], [||, IDb, ||], [IDb, ||, N1], [||, N1, ||], [N1, ||, E(Kb], [||, E(Kb, ,], [E(Kb, ,, [], [,, [, Ks], [[, Ks, ||], [Ks, ||, IDa], [||, IDa, ]], [IDa, ], )], [], ), ]], [), ], )]]
+
+>> Noun Phrases are: 
+[A, > B, f(N2, Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Remote user authentication, symmetric encryption, One-way Authentication A, > KDC IDa || IDb, KDC, > A, E(Ka, ||, IDb, ||, IDa]
+
+>> Named Entities are: 
+[('f(N2', 'ORG'), ('Unit-9 Remote', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('N1', 'CARDINAL'), ('N1 || E(Kb', 'MONEY'), ('Ks ||', 'FAC')]
+
+
+============================ Sentence 7 =============================
+
+A ---> B E(Kb, [Ks || IDa]) || E(Ks, M) 
+
+
+>> Tokens are: 
+[---, >, B, E(Kb, ,, [, Ks, ||, IDa, ], ), ||, E(Ks, ,, M, )] 
+
+>> PoS Tags are: 
+[('---', 'PUNCT'), ('>', 'PUNCT'), ('B', 'NOUN'), ('E(Kb', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Ks', 'ADP'), ('||', 'DET'), ('IDa', 'NOUN'), (']', 'PUNCT'), (')', 'PUNCT'), ('||', 'PROPN'), ('E(Ks', 'PRON'), (',', 'PUNCT'), ('M', 'NOUN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('---', 'punct'), ('>', 'nmod'), ('B', 'compound'), ('E(Kb', 'appos'), (',', 'punct'), ('[', 'punct'), ('Ks', 'prep'), ('||', 'pobj'), ('IDa', 'pobj'), (']', 'punct'), (')', 'punct'), ('||', 'cc'), ('E(Ks', 'conj'), (',', 'punct'), ('M', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[---, >], [>, B], [B, E(Kb], [E(Kb, ,], [,, [], [[, Ks], [Ks, ||], [||, IDa], [IDa, ]], [], )], [), ||], [||, E(Ks], [E(Ks, ,], [,, M], [M, )]]
+
+>> Trigrams: 
+[[---, >, B], [>, B, E(Kb], [B, E(Kb, ,], [E(Kb, ,, [], [,, [, Ks], [[, Ks, ||], [Ks, ||, IDa], [||, IDa, ]], [IDa, ], )], [], ), ||], [), ||, E(Ks], [||, E(Ks, ,], [E(Ks, ,, M], [,, M, )]]
+
+>> Noun Phrases are: 
+[A, > B E(Kb, IDa, E(Ks, M]
+
+>> Named Entities are: 
+[('Ks ||', 'FAC')]
+
+
+============================ Sentence 8 =============================
+
+  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject   
+
+
+>> Tokens are: 
+[  , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  ] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-9', 'NOUN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('  ', 'poss'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'appos'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'appos'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'punct')]
+
+>> Bigrams: 
+[[  , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ]]
+
+>> Trigrams: 
+[[  , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ]]
+
+>> Noun Phrases are: 
+[Unit-9 Remote user authentication, Darshan Institute, Engineering, Technology]
+
+>> Named Entities are: 
+[('Unit-9 Remote', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 9 =============================
+
+Kerberos Kerberos provides a trusted third-party authentication service that enables clients and servers to establish authenticated communication. 
+
+
+>> Tokens are: 
+[Kerberos, Kerberos, provides, trusted, -, party, authentication, service, enables, clients, servers, establish, authenticated, communication, .] 
+
+>> PoS Tags are: 
+[('Kerberos', 'PROPN'), ('Kerberos', 'PROPN'), ('provides', 'VERB'), ('trusted', 'VERB'), ('-', 'PUNCT'), ('party', 'NOUN'), ('authentication', 'NOUN'), ('service', 'NOUN'), ('enables', 'VERB'), ('clients', 'NOUN'), ('servers', 'NOUN'), ('establish', 'VERB'), ('authenticated', 'VERB'), ('communication', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Kerberos', 'compound'), ('Kerberos', 'nsubj'), ('provides', 'ROOT'), ('trusted', 'amod'), ('-', 'punct'), ('party', 'compound'), ('authentication', 'compound'), ('service', 'dobj'), ('enables', 'relcl'), ('clients', 'dobj'), ('servers', 'conj'), ('establish', 'xcomp'), ('authenticated', 'amod'), ('communication', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Kerberos, Kerberos], [Kerberos, provides], [provides, trusted], [trusted, -], [-, party], [party, authentication], [authentication, service], [service, enables], [enables, clients], [clients, servers], [servers, establish], [establish, authenticated], [authenticated, communication], [communication, .]]
+
+>> Trigrams: 
+[[Kerberos, Kerberos, provides], [Kerberos, provides, trusted], [provides, trusted, -], [trusted, -, party], [-, party, authentication], [party, authentication, service], [authentication, service, enables], [service, enables, clients], [enables, clients, servers], [clients, servers, establish], [servers, establish, authenticated], [establish, authenticated, communication], [authenticated, communication, .]]
+
+>> Noun Phrases are: 
+[Kerberos Kerberos, a trusted third-party authentication service, clients, servers, authenticated communication]
+
+>> Named Entities are: 
+[('Kerberos', 'PERSON'), ('third', 'ORDINAL')]
+
+
+============================ Sentence 10 =============================
+
+Kerberos is an authentication service designed for use in a distributed environment. 
+
+
+>> Tokens are: 
+[Kerberos, authentication, service, designed, use, distributed, environment, .] 
+
+>> PoS Tags are: 
+[('Kerberos', 'PROPN'), ('authentication', 'NOUN'), ('service', 'NOUN'), ('designed', 'VERB'), ('use', 'NOUN'), ('distributed', 'VERB'), ('environment', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Kerberos', 'nsubj'), ('authentication', 'compound'), ('service', 'attr'), ('designed', 'acl'), ('use', 'pobj'), ('distributed', 'amod'), ('environment', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Kerberos, authentication], [authentication, service], [service, designed], [designed, use], [use, distributed], [distributed, environment], [environment, .]]
+
+>> Trigrams: 
+[[Kerberos, authentication, service], [authentication, service, designed], [service, designed, use], [designed, use, distributed], [use, distributed, environment], [distributed, environment, .]]
+
+>> Noun Phrases are: 
+[Kerberos, an authentication service, use, a distributed environment]
+
+>> Named Entities are: 
+[('Kerberos', 'ORG')]
+
+
+============================ Sentence 11 =============================
+
+Version 4 of Kerberos makes use of DES, to provide the authentication service. 
+
+
+>> Tokens are: 
+[Version, 4, Kerberos, makes, use, DES, ,, provide, authentication, service, .] 
+
+>> PoS Tags are: 
+[('Version', 'NOUN'), ('4', 'NUM'), ('Kerberos', 'PROPN'), ('makes', 'VERB'), ('use', 'NOUN'), ('DES', 'PROPN'), (',', 'PUNCT'), ('provide', 'VERB'), ('authentication', 'NOUN'), ('service', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Version', 'nsubj'), ('4', 'nummod'), ('Kerberos', 'pobj'), ('makes', 'ROOT'), ('use', 'dobj'), ('DES', 'pobj'), (',', 'punct'), ('provide', 'advcl'), ('authentication', 'compound'), ('service', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Version, 4], [4, Kerberos], [Kerberos, makes], [makes, use], [use, DES], [DES, ,], [,, provide], [provide, authentication], [authentication, service], [service, .]]
+
+>> Trigrams: 
+[[Version, 4, Kerberos], [4, Kerberos, makes], [Kerberos, makes, use], [makes, use, DES], [use, DES, ,], [DES, ,, provide], [,, provide, authentication], [provide, authentication, service], [authentication, service, .]]
+
+>> Noun Phrases are: 
+[Version, Kerberos, use, DES, the authentication service]
+
+>> Named Entities are: 
+[('4', 'CARDINAL'), ('Kerberos', 'ORG')]
+
+
+============================ Sentence 12 =============================
+
+  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – Simple Dialogue C ---> AS:   
+
+
+>> Tokens are: 
+[  , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Kerberos, –, Simple, Dialogue, C, ---, >, :,  ] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-9', 'NOUN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Kerberos', 'PROPN'), ('–', 'PUNCT'), ('Simple', 'PROPN'), ('Dialogue', 'PROPN'), ('C', 'PROPN'), ('---', 'PUNCT'), ('>', 'X'), (':', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('  ', 'nummod'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'nsubj'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'appos'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'acomp'), (' ', 'prep'), ('Kerberos', 'attr'), ('–', 'punct'), ('Simple', 'compound'), ('Dialogue', 'compound'), ('C', 'appos'), ('---', 'punct'), ('>', 'punct'), (':', 'punct'), (' ', 'pobj')]
+
+>> Bigrams: 
+[[  , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Kerberos], [Kerberos, –], [–, Simple], [Simple, Dialogue], [Dialogue, C], [C, ---], [---, >], [>, :], [:,  ]]
+
+>> Trigrams: 
+[[  , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Kerberos], [ , Kerberos, –], [Kerberos, –, Simple], [–, Simple, Dialogue], [Simple, Dialogue, C], [Dialogue, C, ---], [C, ---, >], [---, >, :], [>, :,  ]]
+
+>> Noun Phrases are: 
+[  Unit-9 Remote user authentication, Darshan Institute, Engineering, Technology, INS, Kerberos, Simple Dialogue C]
+
+>> Named Entities are: 
+[('Unit-9 Remote', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 13 =============================
+
+IDc || 
+
+
+>> Tokens are: 
+[IDc, ||] 
+
+>> PoS Tags are: 
+[('IDc', 'NOUN'), ('||', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('IDc', 'ROOT'), ('||', 'punct')]
+
+>> Bigrams: 
+[[IDc, ||]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[IDc]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+Pc || IDv AS ---> C:   
+
+
+>> Tokens are: 
+[Pc, ||, IDv, ---, >, C, :,  ] 
+
+>> PoS Tags are: 
+[('Pc', 'NOUN'), ('||', 'NOUN'), ('IDv', 'NOUN'), ('---', 'PUNCT'), ('>', 'PUNCT'), ('C', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Pc', 'compound'), ('||', 'compound'), ('IDv', 'dep'), ('---', 'punct'), ('>', 'compound'), ('C', 'ROOT'), (':', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[Pc, ||], [||, IDv], [IDv, ---], [---, >], [>, C], [C, :], [:,  ]]
+
+>> Trigrams: 
+[[Pc, ||, IDv], [||, IDv, ---], [IDv, ---, >], [---, >, C], [>, C, :], [C, :,  ]]
+
+>> Noun Phrases are: 
+[Pc || IDv AS ---> C]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+Ticket   C ---> V:    IDc || 
+
+
+>> Tokens are: 
+[Ticket,   , C, ---, >, V, :,    , IDc, ||] 
+
+>> PoS Tags are: 
+[('Ticket', 'NOUN'), ('  ', 'SPACE'), ('C', 'NOUN'), ('---', 'PUNCT'), ('>', 'PUNCT'), ('V', 'NOUN'), (':', 'PUNCT'), ('   ', 'SPACE'), ('IDc', 'NOUN'), ('||', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Ticket', 'compound'), ('  ', 'compound'), ('C', 'ROOT'), ('---', 'punct'), ('>', 'compound'), ('V', 'appos'), (':', 'punct'), ('   ', 'nummod'), ('IDc', 'appos'), ('||', 'punct')]
+
+>> Bigrams: 
+[[Ticket,   ], [  , C], [C, ---], [---, >], [>, V], [V, :], [:,    ], [   , IDc], [IDc, ||]]
+
+>> Trigrams: 
+[[Ticket,   , C], [  , C, ---], [C, ---, >], [---, >, V], [>, V, :], [V, :,    ], [:,    , IDc], [   , IDc, ||]]
+
+>> Noun Phrases are: 
+[Ticket   C, > V,    IDc]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+Ticket Ticket = E(Kv, [IDc, ADc, IDv])   
+
+
+>> Tokens are: 
+[Ticket, Ticket, =, E(Kv, ,, [, IDc, ,, ADc, ,, IDv, ], ),  ] 
+
+>> PoS Tags are: 
+[('Ticket', 'NOUN'), ('Ticket', 'NOUN'), ('=', 'PUNCT'), ('E(Kv', 'X'), (',', 'PUNCT'), ('[', 'PUNCT'), ('IDc', 'NOUN'), (',', 'PUNCT'), ('ADc', 'NOUN'), (',', 'PUNCT'), ('IDv', 'NOUN'), (']', 'PUNCT'), (')', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Ticket', 'compound'), ('Ticket', 'ROOT'), ('=', 'punct'), ('E(Kv', 'appos'), (',', 'punct'), ('[', 'punct'), ('IDc', 'appos'), (',', 'punct'), ('ADc', 'conj'), (',', 'punct'), ('IDv', 'conj'), (']', 'punct'), (')', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[Ticket, Ticket], [Ticket, =], [=, E(Kv], [E(Kv, ,], [,, [], [[, IDc], [IDc, ,], [,, ADc], [ADc, ,], [,, IDv], [IDv, ]], [], )], [),  ]]
+
+>> Trigrams: 
+[[Ticket, Ticket, =], [Ticket, =, E(Kv], [=, E(Kv, ,], [E(Kv, ,, [], [,, [, IDc], [[, IDc, ,], [IDc, ,, ADc], [,, ADc, ,], [ADc, ,, IDv], [,, IDv, ]], [IDv, ], )], [], ),  ]]
+
+>> Noun Phrases are: 
+[Ticket Ticket, IDc, ADc, IDv]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+Authentication Server-AS  Application Server - V  User - C (1) (2) (3)  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – Simple Dialogue C ---> AS:   
+
+
+>> Tokens are: 
+[Authentication, Server, -,  , Application, Server, -, V,  , User, -, C, (, 1, ), (, 2, ), (, 3, ),  , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Kerberos, –, Simple, Dialogue, C, ---, >, :,  ] 
+
+>> PoS Tags are: 
+[('Authentication', 'PROPN'), ('Server', 'PROPN'), ('-', 'PUNCT'), (' ', 'SPACE'), ('Application', 'PROPN'), ('Server', 'PROPN'), ('-', 'PUNCT'), ('V', 'PROPN'), (' ', 'SPACE'), ('User', 'PROPN'), ('-', 'PUNCT'), ('C', 'PROPN'), ('(', 'PUNCT'), ('1', 'NUM'), (')', 'PUNCT'), ('(', 'PUNCT'), ('2', 'X'), (')', 'PUNCT'), ('(', 'PUNCT'), ('3', 'X'), (')', 'PUNCT'), (' ', 'SPACE'), ('Unit-9', 'PROPN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Kerberos', 'PROPN'), ('–', 'PUNCT'), ('Simple', 'PROPN'), ('Dialogue', 'PROPN'), ('C', 'PROPN'), ('---', 'PUNCT'), ('>', 'X'), (':', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Authentication', 'compound'), ('Server', 'nsubj'), ('-', 'punct'), (' ', 'appos'), ('Application', 'compound'), ('Server', 'compound'), ('-', 'punct'), ('V', 'compound'), (' ', 'appos'), ('User', 'compound'), ('-', 'punct'), ('C', 'appos'), ('(', 'punct'), ('1', 'appos'), (')', 'punct'), ('(', 'punct'), ('2', 'appos'), (')', 'punct'), ('(', 'punct'), ('3', 'appos'), (')', 'punct'), (' ', 'appos'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'appos'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'appos'), ('‹#›', 'appos'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'acomp'), (' ', 'prep'), ('Kerberos', 'attr'), ('–', 'punct'), ('Simple', 'compound'), ('Dialogue', 'compound'), ('C', 'appos'), ('---', 'punct'), ('>', 'punct'), (':', 'punct'), (' ', 'pobj')]
+
+>> Bigrams: 
+[[Authentication, Server], [Server, -], [-,  ], [ , Application], [Application, Server], [Server, -], [-, V], [V,  ], [ , User], [User, -], [-, C], [C, (], [(, 1], [1, )], [), (], [(, 2], [2, )], [), (], [(, 3], [3, )], [),  ], [ , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Kerberos], [Kerberos, –], [–, Simple], [Simple, Dialogue], [Dialogue, C], [C, ---], [---, >], [>, :], [:,  ]]
+
+>> Trigrams: 
+[[Authentication, Server, -], [Server, -,  ], [-,  , Application], [ , Application, Server], [Application, Server, -], [Server, -, V], [-, V,  ], [V,  , User], [ , User, -], [User, -, C], [-, C, (], [C, (, 1], [(, 1, )], [1, ), (], [), (, 2], [(, 2, )], [2, ), (], [), (, 3], [(, 3, )], [3, ),  ], [),  , Unit-9], [ , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Kerberos], [ , Kerberos, –], [Kerberos, –, Simple], [–, Simple, Dialogue], [Simple, Dialogue, C], [Dialogue, C, ---], [C, ---, >], [---, >, :], [>, :,  ]]
+
+>> Noun Phrases are: 
+[Authentication Server, -AS, User - C, Unit-9 Remote user authentication, Darshan Institute, Engineering, Technology, INS, Kerberos, Simple Dialogue C]
+
+>> Named Entities are: 
+[('2', 'CARDINAL'), ('3', 'CARDINAL'), ('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 18 =============================
+
+IDc || 
+
+
+>> Tokens are: 
+[IDc, ||] 
+
+>> PoS Tags are: 
+[('IDc', 'NOUN'), ('||', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('IDc', 'ROOT'), ('||', 'punct')]
+
+>> Bigrams: 
+[[IDc, ||]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[IDc]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+Pc || IDv AS ---> C:   
+
+
+>> Tokens are: 
+[Pc, ||, IDv, ---, >, C, :,  ] 
+
+>> PoS Tags are: 
+[('Pc', 'NOUN'), ('||', 'NOUN'), ('IDv', 'NOUN'), ('---', 'PUNCT'), ('>', 'PUNCT'), ('C', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Pc', 'compound'), ('||', 'compound'), ('IDv', 'dep'), ('---', 'punct'), ('>', 'compound'), ('C', 'ROOT'), (':', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[Pc, ||], [||, IDv], [IDv, ---], [---, >], [>, C], [C, :], [:,  ]]
+
+>> Trigrams: 
+[[Pc, ||, IDv], [||, IDv, ---], [IDv, ---, >], [---, >, C], [>, C, :], [C, :,  ]]
+
+>> Noun Phrases are: 
+[Pc || IDv AS ---> C]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 20 =============================
+
+Ticket   C ---> V:    IDc || 
+
+
+>> Tokens are: 
+[Ticket,   , C, ---, >, V, :,    , IDc, ||] 
+
+>> PoS Tags are: 
+[('Ticket', 'NOUN'), ('  ', 'SPACE'), ('C', 'NOUN'), ('---', 'PUNCT'), ('>', 'PUNCT'), ('V', 'NOUN'), (':', 'PUNCT'), ('   ', 'SPACE'), ('IDc', 'NOUN'), ('||', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Ticket', 'compound'), ('  ', 'compound'), ('C', 'ROOT'), ('---', 'punct'), ('>', 'compound'), ('V', 'appos'), (':', 'punct'), ('   ', 'nummod'), ('IDc', 'appos'), ('||', 'punct')]
+
+>> Bigrams: 
+[[Ticket,   ], [  , C], [C, ---], [---, >], [>, V], [V, :], [:,    ], [   , IDc], [IDc, ||]]
+
+>> Trigrams: 
+[[Ticket,   , C], [  , C, ---], [C, ---, >], [---, >, V], [>, V, :], [V, :,    ], [:,    , IDc], [   , IDc, ||]]
+
+>> Noun Phrases are: 
+[Ticket   C, > V,    IDc]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+Ticket Ticket = E(Kv, [IDc, ADc, IDv]) 
+
+
+>> Tokens are: 
+[Ticket, Ticket, =, E(Kv, ,, [, IDc, ,, ADc, ,, IDv, ], )] 
+
+>> PoS Tags are: 
+[('Ticket', 'NOUN'), ('Ticket', 'NOUN'), ('=', 'PUNCT'), ('E(Kv', 'X'), (',', 'PUNCT'), ('[', 'PUNCT'), ('IDc', 'NOUN'), (',', 'PUNCT'), ('ADc', 'NOUN'), (',', 'PUNCT'), ('IDv', 'NOUN'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Ticket', 'compound'), ('Ticket', 'ROOT'), ('=', 'punct'), ('E(Kv', 'appos'), (',', 'punct'), ('[', 'punct'), ('IDc', 'appos'), (',', 'punct'), ('ADc', 'conj'), (',', 'punct'), ('IDv', 'conj'), (']', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[Ticket, Ticket], [Ticket, =], [=, E(Kv], [E(Kv, ,], [,, [], [[, IDc], [IDc, ,], [,, ADc], [ADc, ,], [,, IDv], [IDv, ]], [], )]]
+
+>> Trigrams: 
+[[Ticket, Ticket, =], [Ticket, =, E(Kv], [=, E(Kv, ,], [E(Kv, ,, [], [,, [, IDc], [[, IDc, ,], [IDc, ,, ADc], [,, ADc, ,], [ADc, ,, IDv], [,, IDv, ]], [IDv, ], )]]
+
+>> Noun Phrases are: 
+[Ticket Ticket, IDc, ADc, IDv]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 22 =============================
+
+Where,   C = Client AS = Authentication Server V =   
+
+
+>> Tokens are: 
+[,,   , C, =, Client, =, Authentication, Server, V, =,  ] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('  ', 'SPACE'), ('C', 'NOUN'), ('=', 'SYM'), ('Client', 'PROPN'), ('=', 'SYM'), ('Authentication', 'PROPN'), ('Server', 'PROPN'), ('V', 'PROPN'), ('=', 'SYM'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('  ', 'nmod'), ('C', 'compound'), ('=', 'punct'), ('Client', 'compound'), ('=', 'punct'), ('Authentication', 'compound'), ('Server', 'compound'), ('V', 'appos'), ('=', 'compound'), (' ', 'ROOT')]
+
+>> Bigrams: 
+[[,,   ], [  , C], [C, =], [=, Client], [Client, =], [=, Authentication], [Authentication, Server], [Server, V], [V, =], [=,  ]]
+
+>> Trigrams: 
+[[,,   , C], [  , C, =], [C, =, Client], [=, Client, =], [Client, =, Authentication], [=, Authentication, Server], [Authentication, Server, V], [Server, V, =], [V, =,  ]]
+
+>> Noun Phrases are: 
+[Authentication Server V]
+
+>> Named Entities are: 
+[('Client AS', 'ORG')]
+
+
+============================ Sentence 23 =============================
+
+Server IDc = 
+
+
+>> Tokens are: 
+[Server, IDc, =] 
+
+>> PoS Tags are: 
+[('Server', 'PROPN'), ('IDc', 'NOUN'), ('=', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Server', 'compound'), ('IDc', 'ROOT'), ('=', 'punct')]
+
+>> Bigrams: 
+[[Server, IDc], [IDc, =]]
+
+>> Trigrams: 
+[[Server, IDc, =]]
+
+>> Noun Phrases are: 
+[Server IDc]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 24 =============================
+
+Identification of user C Idv = Identification of V Pc = Password on User C Adc = Network 
+
+
+>> Tokens are: 
+[Identification, user, C, Idv, =, Identification, V, Pc, =, Password, User, C, Adc, =, Network] 
+
+>> PoS Tags are: 
+[('Identification', 'NOUN'), ('user', 'NOUN'), ('C', 'PROPN'), ('Idv', 'PROPN'), ('=', 'PUNCT'), ('Identification', 'NOUN'), ('V', 'PROPN'), ('Pc', 'PROPN'), ('=', 'PROPN'), ('Password', 'PROPN'), ('User', 'PROPN'), ('C', 'PROPN'), ('Adc', 'PROPN'), ('=', 'PROPN'), ('Network', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Identification', 'nmod'), ('user', 'compound'), ('C', 'compound'), ('Idv', 'pobj'), ('=', 'punct'), ('Identification', 'nmod'), ('V', 'compound'), ('Pc', 'pobj'), ('=', 'compound'), ('Password', 'ROOT'), ('User', 'compound'), ('C', 'compound'), ('Adc', 'compound'), ('=', 'punct'), ('Network', 'pobj')]
+
+>> Bigrams: 
+[[Identification, user], [user, C], [C, Idv], [Idv, =], [=, Identification], [Identification, V], [V, Pc], [Pc, =], [=, Password], [Password, User], [User, C], [C, Adc], [Adc, =], [=, Network]]
+
+>> Trigrams: 
+[[Identification, user, C], [user, C, Idv], [C, Idv, =], [Idv, =, Identification], [=, Identification, V], [Identification, V, Pc], [V, Pc, =], [Pc, =, Password], [=, Password, User], [Password, User, C], [User, C, Adc], [C, Adc, =], [Adc, =, Network]]
+
+>> Noun Phrases are: 
+[user C Idv, V Pc, User C Adc = Network]
+
+>> Named Entities are: 
+[('Password', 'PERSON')]
+
+
+============================ Sentence 25 =============================
+
+Address of C Kv = Secret key shared by AS and V  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – More Secure Dialogue  Client-C   
+
+
+>> Tokens are: 
+[Address, C, Kv, =, Secret, key, shared, V,  , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Kerberos, –, Secure, Dialogue,  , Client, -, C,  ] 
+
+>> PoS Tags are: 
+[('Address', 'PROPN'), ('C', 'PROPN'), ('Kv', 'PROPN'), ('=', 'SYM'), ('Secret', 'ADJ'), ('key', 'NOUN'), ('shared', 'VERB'), ('V', 'NOUN'), (' ', 'SPACE'), ('Unit-9', 'PROPN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Kerberos', 'PROPN'), ('–', 'PUNCT'), ('Secure', 'PROPN'), ('Dialogue', 'PROPN'), (' ', 'SPACE'), ('Client', 'PROPN'), ('-', 'PUNCT'), ('C', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Address', 'nmod'), ('C', 'compound'), ('Kv', 'compound'), ('=', 'punct'), ('Secret', 'amod'), ('key', 'pobj'), ('shared', 'acl'), ('V', 'compound'), (' ', 'conj'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'compound'), ('                                ', 'nummod'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'acomp'), (' ', 'prep'), ('Kerberos', 'attr'), ('–', 'punct'), ('Secure', 'nmod'), ('Dialogue', 'nmod'), (' ', 'compound'), ('Client', 'compound'), ('-', 'punct'), ('C', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Address, C], [C, Kv], [Kv, =], [=, Secret], [Secret, key], [key, shared], [shared, V], [V,  ], [ , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Kerberos], [Kerberos, –], [–, Secure], [Secure, Dialogue], [Dialogue,  ], [ , Client], [Client, -], [-, C], [C,  ]]
+
+>> Trigrams: 
+[[Address, C, Kv], [C, Kv, =], [Kv, =, Secret], [=, Secret, key], [Secret, key, shared], [key, shared, V], [shared, V,  ], [V,  , Unit-9], [ , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Kerberos], [ , Kerberos, –], [Kerberos, –, Secure], [–, Secure, Dialogue], [Secure, Dialogue,  ], [Dialogue,  , Client], [ , Client, -], [Client, -, C], [-, C,  ]]
+
+>> Noun Phrases are: 
+[C Kv = Secret key, AS, Darshan Institute, Engineering, Technology, Kerberos, More Secure Dialogue  Client-C]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG'), ('Kerberos', 'LOC')]
+
+
+============================ Sentence 26 =============================
+
+Ticket Granting Server-TGS  Authentication Server-AS TicketTGS to access TGS Request for TicketTGS Request for TicketV Request for TicketV Request for Service  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – More Secure Dialogue Once per user logon session C ---> AS:   
+
+
+>> Tokens are: 
+[Ticket, Granting, Server, -, TGS,  , Authentication, Server, -, TicketTGS, access, TGS, Request, TicketTGS, Request, TicketV, Request, TicketV, Request, Service,  , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Kerberos, –, Secure, Dialogue, user, logon, session, C, ---, >, :,  ] 
+
+>> PoS Tags are: 
+[('Ticket', 'PROPN'), ('Granting', 'PROPN'), ('Server', 'PROPN'), ('-', 'PUNCT'), ('TGS', 'PROPN'), (' ', 'SPACE'), ('Authentication', 'PROPN'), ('Server', 'PROPN'), ('-', 'PUNCT'), ('TicketTGS', 'VERB'), ('access', 'VERB'), ('TGS', 'PROPN'), ('Request', 'NOUN'), ('TicketTGS', 'ADJ'), ('Request', 'NOUN'), ('TicketV', 'ADJ'), ('Request', 'NOUN'), ('TicketV', 'ADJ'), ('Request', 'NOUN'), ('Service', 'NOUN'), (' ', 'SPACE'), ('Unit-9', 'PROPN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Kerberos', 'PROPN'), ('–', 'PUNCT'), ('Secure', 'PROPN'), ('Dialogue', 'PROPN'), ('user', 'NOUN'), ('logon', 'NOUN'), ('session', 'NOUN'), ('C', 'NOUN'), ('---', 'PUNCT'), ('>', 'X'), (':', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Ticket', 'compound'), ('Granting', 'compound'), ('Server', 'nsubj'), ('-', 'punct'), ('TGS', 'appos'), (' ', 'appos'), ('Authentication', 'compound'), ('Server', 'compound'), ('-', 'punct'), ('TicketTGS', 'nsubj'), ('access', 'advcl'), ('TGS', 'compound'), ('Request', 'dobj'), ('TicketTGS', 'amod'), ('Request', 'pobj'), ('TicketV', 'amod'), ('Request', 'pobj'), ('TicketV', 'amod'), ('Request', 'pobj'), ('Service', 'pobj'), (' ', 'nummod'), ('Unit-9', 'compound'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'pobj'), ('                                ', 'conj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'conj'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'acomp'), (' ', 'prep'), ('Kerberos', 'attr'), ('–', 'punct'), ('Secure', 'compound'), ('Dialogue', 'appos'), ('user', 'pobj'), ('logon', 'compound'), ('session', 'compound'), ('C', 'npadvmod'), ('---', 'punct'), ('>', 'punct'), (':', 'punct'), (' ', 'pobj')]
+
+>> Bigrams: 
+[[Ticket, Granting], [Granting, Server], [Server, -], [-, TGS], [TGS,  ], [ , Authentication], [Authentication, Server], [Server, -], [-, TicketTGS], [TicketTGS, access], [access, TGS], [TGS, Request], [Request, TicketTGS], [TicketTGS, Request], [Request, TicketV], [TicketV, Request], [Request, TicketV], [TicketV, Request], [Request, Service], [Service,  ], [ , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Kerberos], [Kerberos, –], [–, Secure], [Secure, Dialogue], [Dialogue, user], [user, logon], [logon, session], [session, C], [C, ---], [---, >], [>, :], [:,  ]]
+
+>> Trigrams: 
+[[Ticket, Granting, Server], [Granting, Server, -], [Server, -, TGS], [-, TGS,  ], [TGS,  , Authentication], [ , Authentication, Server], [Authentication, Server, -], [Server, -, TicketTGS], [-, TicketTGS, access], [TicketTGS, access, TGS], [access, TGS, Request], [TGS, Request, TicketTGS], [Request, TicketTGS, Request], [TicketTGS, Request, TicketV], [Request, TicketV, Request], [TicketV, Request, TicketV], [Request, TicketV, Request], [TicketV, Request, Service], [Request, Service,  ], [Service,  , Unit-9], [ , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Kerberos], [ , Kerberos, –], [Kerberos, –, Secure], [–, Secure, Dialogue], [Secure, Dialogue, user], [Dialogue, user, logon], [user, logon, session], [logon, session, C], [session, C, ---], [C, ---, >], [---, >, :], [>, :,  ]]
+
+>> Noun Phrases are: 
+[Ticket Granting Server, -TGS, Authentication Server-AS, TGS Request, TicketTGS Request, TicketV Request, TicketV Request, Service, Unit-9 Remote user authentication, Darshan Institute, Engineering, Technology, INS, Kerberos, More Secure Dialogue, user]
+
+>> Named Entities are: 
+[('TGS Request', 'ORG'), ('TicketTGS Request', 'ORG'), ('TicketV Request for TicketV Request for Service', 'WORK_OF_ART'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('Kerberos', 'LOC')]
+
+
+============================ Sentence 27 =============================
+
+IDc || IDTGS AS ---> C:  E(Kc, TicketTGS)   
+
+
+>> Tokens are: 
+[IDc, ||, IDTGS, ---, >, C, :,  , E(Kc, ,, TicketTGS, ),  ] 
+
+>> PoS Tags are: 
+[('IDc', 'NOUN'), ('||', 'NUM'), ('IDTGS', 'PROPN'), ('---', 'PUNCT'), ('>', 'PUNCT'), ('C', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE'), ('E(Kc', 'PROPN'), (',', 'PUNCT'), ('TicketTGS', 'PROPN'), (')', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('IDc', 'ROOT'), ('||', 'nummod'), ('IDTGS', 'compound'), ('---', 'punct'), ('>', 'compound'), ('C', 'appos'), (':', 'punct'), (' ', 'appos'), ('E(Kc', 'appos'), (',', 'punct'), ('TicketTGS', 'appos'), (')', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[IDc, ||], [||, IDTGS], [IDTGS, ---], [---, >], [>, C], [C, :], [:,  ], [ , E(Kc], [E(Kc, ,], [,, TicketTGS], [TicketTGS, )], [),  ]]
+
+>> Trigrams: 
+[[IDc, ||, IDTGS], [||, IDTGS, ---], [IDTGS, ---, >], [---, >, C], [>, C, :], [C, :,  ], [:,  , E(Kc], [ , E(Kc, ,], [E(Kc, ,, TicketTGS], [,, TicketTGS, )], [TicketTGS, ),  ]]
+
+>> Noun Phrases are: 
+[IDc, IDTGS AS, > C, E(Kc, TicketTGS]
+
+>> Named Entities are: 
+[('TicketTGS', 'GPE')]
+
+
+============================ Sentence 28 =============================
+
+Once per type of service C ---> TGS: 
+
+
+>> Tokens are: 
+[type, service, C, ---, >, TGS, :] 
+
+>> PoS Tags are: 
+[('type', 'NOUN'), ('service', 'NOUN'), ('C', 'NOUN'), ('---', 'PUNCT'), ('>', 'X'), ('TGS', 'PROPN'), (':', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('type', 'pobj'), ('service', 'compound'), ('C', 'pobj'), ('---', 'punct'), ('>', 'punct'), ('TGS', 'pobj'), (':', 'punct')]
+
+>> Bigrams: 
+[[type, service], [service, C], [C, ---], [---, >], [>, TGS], [TGS, :]]
+
+>> Trigrams: 
+[[type, service, C], [service, C, ---], [C, ---, >], [---, >, TGS], [>, TGS, :]]
+
+>> Noun Phrases are: 
+[type, service C, TGS]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 29 =============================
+
+ IDc || IDv || TicketTGS TGS ---> C:  TicketV    
+
+
+>> Tokens are: 
+[ , IDc, ||, IDv, ||, TicketTGS, TGS, ---, >, C, :,  , TicketV,   ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('IDc', 'NOUN'), ('||', 'NOUN'), ('IDv', 'NOUN'), ('||', 'PROPN'), ('TicketTGS', 'VERB'), ('TGS', 'PROPN'), ('---', 'PUNCT'), ('>', 'PUNCT'), ('C', 'PROPN'), (':', 'PUNCT'), (' ', 'SPACE'), ('TicketV', 'PUNCT'), ('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'nsubj'), ('IDc', 'ROOT'), ('||', 'nmod'), ('IDv', 'dobj'), ('||', 'conj'), ('TicketTGS', 'conj'), ('TGS', 'conj'), ('---', 'punct'), ('>', 'dep'), ('C', 'conj'), (':', 'punct'), (' ', 'appos'), ('TicketV', 'amod'), ('  ', 'appos')]
+
+>> Bigrams: 
+[[ , IDc], [IDc, ||], [||, IDv], [IDv, ||], [||, TicketTGS], [TicketTGS, TGS], [TGS, ---], [---, >], [>, C], [C, :], [:,  ], [ , TicketV], [TicketV,   ]]
+
+>> Trigrams: 
+[[ , IDc, ||], [IDc, ||, IDv], [||, IDv, ||], [IDv, ||, TicketTGS], [||, TicketTGS, TGS], [TicketTGS, TGS, ---], [TGS, ---, >], [---, >, C], [>, C, :], [C, :,  ], [:,  , TicketV], [ , TicketV,   ]]
+
+>> Noun Phrases are: 
+[ IDc, || IDv, ||, TGS, > C]
+
+>> Named Entities are: 
+[('TGS', 'ORG')]
+
+
+============================ Sentence 30 =============================
+
+Once per service session C ---> V:   
+
+
+>> Tokens are: 
+[service, session, C, ---, >, V, :,  ] 
+
+>> PoS Tags are: 
+[('service', 'NOUN'), ('session', 'NOUN'), ('C', 'NOUN'), ('---', 'PUNCT'), ('>', 'PUNCT'), ('V', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('service', 'compound'), ('session', 'compound'), ('C', 'ROOT'), ('---', 'punct'), ('>', 'nmod'), ('V', 'appos'), (':', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[service, session], [session, C], [C, ---], [---, >], [>, V], [V, :], [:,  ]]
+
+>> Trigrams: 
+[[service, session, C], [session, C, ---], [C, ---, >], [---, >, V], [>, V, :], [V, :,  ]]
+
+>> Noun Phrases are: 
+[Once per service session C, > V]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 31 =============================
+
+IDc || TicketV TicketTGS = E(KTGS, [IDc, ADc, IdTGS, TS1, Lifetime1])   TicketV = 
+
+
+>> Tokens are: 
+[IDc, ||, TicketV, TicketTGS, =, E(KTGS, ,, [, IDc, ,, ADc, ,, IdTGS, ,, TS1, ,, Lifetime1, ], ),   , TicketV, =] 
+
+>> PoS Tags are: 
+[('IDc', 'NOUN'), ('||', 'CCONJ'), ('TicketV', 'X'), ('TicketTGS', 'VERB'), ('=', 'SYM'), ('E(KTGS', 'VERB'), (',', 'PUNCT'), ('[', 'PUNCT'), ('IDc', 'NOUN'), (',', 'PUNCT'), ('ADc', 'PROPN'), (',', 'PUNCT'), ('IdTGS', 'PROPN'), (',', 'PUNCT'), ('TS1', 'PROPN'), (',', 'PUNCT'), ('Lifetime1', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT'), ('  ', 'SPACE'), ('TicketV', 'PUNCT'), ('=', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('IDc', 'nsubj'), ('||', 'cc'), ('TicketV', 'conj'), ('TicketTGS', 'nmod'), ('=', 'dep'), ('E(KTGS', 'ROOT'), (',', 'punct'), ('[', 'punct'), ('IDc', 'appos'), (',', 'punct'), ('ADc', 'conj'), (',', 'punct'), ('IdTGS', 'conj'), (',', 'punct'), ('TS1', 'conj'), (',', 'punct'), ('Lifetime1', 'conj'), (']', 'punct'), (')', 'punct'), ('  ', 'dep'), ('TicketV', 'punct'), ('=', 'punct')]
+
+>> Bigrams: 
+[[IDc, ||], [||, TicketV], [TicketV, TicketTGS], [TicketTGS, =], [=, E(KTGS], [E(KTGS, ,], [,, [], [[, IDc], [IDc, ,], [,, ADc], [ADc, ,], [,, IdTGS], [IdTGS, ,], [,, TS1], [TS1, ,], [,, Lifetime1], [Lifetime1, ]], [], )], [),   ], [  , TicketV], [TicketV, =]]
+
+>> Trigrams: 
+[[IDc, ||, TicketV], [||, TicketV, TicketTGS], [TicketV, TicketTGS, =], [TicketTGS, =, E(KTGS], [=, E(KTGS, ,], [E(KTGS, ,, [], [,, [, IDc], [[, IDc, ,], [IDc, ,, ADc], [,, ADc, ,], [ADc, ,, IdTGS], [,, IdTGS, ,], [IdTGS, ,, TS1], [,, TS1, ,], [TS1, ,, Lifetime1], [,, Lifetime1, ]], [Lifetime1, ], )], [], ),   ], [),   , TicketV], [  , TicketV, =]]
+
+>> Noun Phrases are: 
+[IDc, IDc, ADc, IdTGS, TS1, Lifetime1]
+
+>> Named Entities are: 
+[('TicketTGS', 'CARDINAL')]
+
+
+============================ Sentence 32 =============================
+
+E(KV, [IDc, ADc, IdV, TS2, Lifetime2])     Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-1 The client sends a plaintext request to the AS asking for a ticket it can use to talk to the TGS. 
+
+
+>> Tokens are: 
+[E(KV, ,, [, IDc, ,, ADc, ,, IdV, ,, TS2, ,, Lifetime2, ], ),     , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,     , Kerberos, Version, 4, –, Step-1, client, sends, plaintext, request, asking, ticket, use, talk, TGS, .] 
+
+>> PoS Tags are: 
+[('E(KV', 'NOUN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('IDc', 'NOUN'), (',', 'PUNCT'), ('ADc', 'NOUN'), (',', 'PUNCT'), ('IdV', 'PROPN'), (',', 'PUNCT'), ('TS2', 'PROPN'), (',', 'PUNCT'), ('Lifetime2', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT'), ('    ', 'SPACE'), ('Unit-9', 'NOUN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), ('    ', 'SPACE'), ('Kerberos', 'PROPN'), ('Version', 'PROPN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step-1', 'NOUN'), ('client', 'NOUN'), ('sends', 'VERB'), ('plaintext', 'ADJ'), ('request', 'NOUN'), ('asking', 'VERB'), ('ticket', 'NOUN'), ('use', 'VERB'), ('talk', 'VERB'), ('TGS', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('E(KV', 'nsubj'), (',', 'punct'), ('[', 'punct'), ('IDc', 'nmod'), (',', 'punct'), ('ADc', 'conj'), (',', 'punct'), ('IdV', 'conj'), (',', 'punct'), ('TS2', 'appos'), (',', 'punct'), ('Lifetime2', 'appos'), (']', 'punct'), (')', 'punct'), ('    ', 'nmod'), ('Unit-9', 'acl'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'appos'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'poss'), ('‹#›', 'appos'), ('INS', 'nsubj'), ('Interesting', 'acomp'), ('Subject', 'xcomp'), ('    ', 'nummod'), ('Kerberos', 'compound'), ('Version', 'dep'), ('4', 'nummod'), ('–', 'punct'), ('Step-1', 'ROOT'), ('client', 'nsubj'), ('sends', 'ccomp'), ('plaintext', 'amod'), ('request', 'dobj'), ('asking', 'acl'), ('ticket', 'pobj'), ('use', 'relcl'), ('talk', 'xcomp'), ('TGS', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[E(KV, ,], [,, [], [[, IDc], [IDc, ,], [,, ADc], [ADc, ,], [,, IdV], [IdV, ,], [,, TS2], [TS2, ,], [,, Lifetime2], [Lifetime2, ]], [], )], [),     ], [    , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,     ], [    , Kerberos], [Kerberos, Version], [Version, 4], [4, –], [–, Step-1], [Step-1, client], [client, sends], [sends, plaintext], [plaintext, request], [request, asking], [asking, ticket], [ticket, use], [use, talk], [talk, TGS], [TGS, .]]
+
+>> Trigrams: 
+[[E(KV, ,, [], [,, [, IDc], [[, IDc, ,], [IDc, ,, ADc], [,, ADc, ,], [ADc, ,, IdV], [,, IdV, ,], [IdV, ,, TS2], [,, TS2, ,], [TS2, ,, Lifetime2], [,, Lifetime2, ]], [Lifetime2, ], )], [], ),     ], [),     , Unit-9], [    , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,     ], [Subject,     , Kerberos], [    , Kerberos, Version], [Kerberos, Version, 4], [Version, 4, –], [4, –, Step-1], [–, Step-1, client], [Step-1, client, sends], [client, sends, plaintext], [sends, plaintext, request], [plaintext, request, asking], [request, asking, ticket], [asking, ticket, use], [ticket, use, talk], [use, talk, TGS], [talk, TGS, .]]
+
+>> Noun Phrases are: 
+[E(KV, IDc, ADc, IdV, TS2, Lifetime2, Remote user authentication, Darshan Institute, Engineering, Technology, The client, a plaintext request, the AS, a ticket, it, the TGS]
+
+>> Named Entities are: 
+[('IdV', 'WORK_OF_ART'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('4', 'CARDINAL'), ('Step-1', 'PRODUCT'), ('TGS', 'ORG')]
+
+
+============================ Sentence 33 =============================
+
+Request: 
+
+
+>> Tokens are: 
+[Request, :] 
+
+>> PoS Tags are: 
+[('Request', 'NOUN'), (':', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Request', 'ROOT'), (':', 'punct')]
+
+>> Bigrams: 
+[[Request, :]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Request]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 34 =============================
+
+Login name TGS name Since this request contains only well-known names, it does not need to be sealed. 
+
+
+>> Tokens are: 
+[Login, TGS, request, contains, -, known, names, ,, need, sealed, .] 
+
+>> PoS Tags are: 
+[('Login', 'NOUN'), ('TGS', 'PROPN'), ('request', 'NOUN'), ('contains', 'VERB'), ('-', 'PUNCT'), ('known', 'VERB'), ('names', 'NOUN'), (',', 'PUNCT'), ('need', 'VERB'), ('sealed', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Login', 'compound'), ('TGS', 'compound'), ('request', 'nsubj'), ('contains', 'advcl'), ('-', 'punct'), ('known', 'amod'), ('names', 'dobj'), (',', 'punct'), ('need', 'ROOT'), ('sealed', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Login, TGS], [TGS, request], [request, contains], [contains, -], [-, known], [known, names], [names, ,], [,, need], [need, sealed], [sealed, .]]
+
+>> Trigrams: 
+[[Login, TGS, request], [TGS, request, contains], [request, contains, -], [contains, -, known], [-, known, names], [known, names, ,], [names, ,, need], [,, need, sealed], [need, sealed, .]]
+
+>> Noun Phrases are: 
+[Login name TGS name, this request, only well-known names, it]
+
+>> Named Entities are: 
+[('TGS', 'ORG')]
+
+
+============================ Sentence 35 =============================
+
+  C--->AS :  IDc||IDtgs||TS1  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-2 The AS finds the keys corresponding to the login name and the TGS name. 
+
+
+>> Tokens are: 
+[  , C--->AS, :,  , IDc||IDtgs||TS1,  , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,     , Kerberos, Version, 4, –, Step-2, finds, keys, corresponding, login, TGS, .] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('C--->AS', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE'), ('IDc||IDtgs||TS1', 'VERB'), (' ', 'SPACE'), ('Unit-9', 'PROPN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), ('    ', 'SPACE'), ('Kerberos', 'PROPN'), ('Version', 'PROPN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step-2', 'NOUN'), ('finds', 'VERB'), ('keys', 'NOUN'), ('corresponding', 'VERB'), ('login', 'NOUN'), ('TGS', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'nsubj'), ('C--->AS', 'npadvmod'), (':', 'punct'), (' ', 'appos'), ('IDc||IDtgs||TS1', 'ccomp'), (' ', 'dobj'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'punct'), ('                                ', 'dative'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'acomp'), ('Subject', 'xcomp'), ('    ', 'nummod'), ('Kerberos', 'compound'), ('Version', 'attr'), ('4', 'nummod'), ('–', 'punct'), ('Step-2', 'appos'), ('finds', 'ROOT'), ('keys', 'nsubj'), ('corresponding', 'ccomp'), ('login', 'compound'), ('TGS', 'compound'), ('.', 'punct')]
+
+>> Bigrams: 
+[[  , C--->AS], [C--->AS, :], [:,  ], [ , IDc||IDtgs||TS1], [IDc||IDtgs||TS1,  ], [ , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,     ], [    , Kerberos], [Kerberos, Version], [Version, 4], [4, –], [–, Step-2], [Step-2, finds], [finds, keys], [keys, corresponding], [corresponding, login], [login, TGS], [TGS, .]]
+
+>> Trigrams: 
+[[  , C--->AS, :], [C--->AS, :,  ], [:,  , IDc||IDtgs||TS1], [ , IDc||IDtgs||TS1,  ], [IDc||IDtgs||TS1,  , Unit-9], [ , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,     ], [Subject,     , Kerberos], [    , Kerberos, Version], [Kerberos, Version, 4], [Version, 4, –], [4, –, Step-2], [–, Step-2, finds], [Step-2, finds, keys], [finds, keys, corresponding], [keys, corresponding, login], [corresponding, login, TGS], [login, TGS, .]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, Kerberos Version, Step-2, The AS, the keys, the login name, the TGS name]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG'), ('4', 'CARDINAL'), ('TGS', 'ORG')]
+
+
+============================ Sentence 36 =============================
+
+The AS creates a ticket: Login name TGS name Client network address TGS session key The AS seals the ticket with the TGS secret key. 
+
+
+>> Tokens are: 
+[creates, ticket, :, Login, TGS, Client, network, address, TGS, session, key, seals, ticket, TGS, secret, key, .] 
+
+>> PoS Tags are: 
+[('creates', 'VERB'), ('ticket', 'NOUN'), (':', 'PUNCT'), ('Login', 'NOUN'), ('TGS', 'PROPN'), ('Client', 'PROPN'), ('network', 'NOUN'), ('address', 'NOUN'), ('TGS', 'PROPN'), ('session', 'NOUN'), ('key', 'NOUN'), ('seals', 'VERB'), ('ticket', 'NOUN'), ('TGS', 'PROPN'), ('secret', 'ADJ'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('creates', 'ccomp'), ('ticket', 'dobj'), (':', 'punct'), ('Login', 'compound'), ('TGS', 'compound'), ('Client', 'compound'), ('network', 'compound'), ('address', 'ROOT'), ('TGS', 'compound'), ('session', 'dobj'), ('key', 'conj'), ('seals', 'conj'), ('ticket', 'dobj'), ('TGS', 'compound'), ('secret', 'amod'), ('key', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[creates, ticket], [ticket, :], [:, Login], [Login, TGS], [TGS, Client], [Client, network], [network, address], [address, TGS], [TGS, session], [session, key], [key, seals], [seals, ticket], [ticket, TGS], [TGS, secret], [secret, key], [key, .]]
+
+>> Trigrams: 
+[[creates, ticket, :], [ticket, :, Login], [:, Login, TGS], [Login, TGS, Client], [TGS, Client, network], [Client, network, address], [network, address, TGS], [address, TGS, session], [TGS, session, key], [session, key, seals], [key, seals, ticket], [seals, ticket, TGS], [ticket, TGS, secret], [TGS, secret, key], [secret, key, .]]
+
+>> Noun Phrases are: 
+[The AS, a ticket, TGS session, key, The AS, the ticket, the TGS secret key]
+
+>> Named Entities are: 
+[('TGS', 'ORG'), ('Client', 'GPE'), ('TGS', 'ORG'), ('TGS', 'ORG')]
+
+
+============================ Sentence 37 =============================
+
+ AS--->C: E(Kc, [Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs]) 
+
+
+>> Tokens are: 
+[ , AS--->C, :, E(Kc, ,, [, Kc, ,, tgs||IDtgs||TS2||Lifetime2||Tickettgs, ], )] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('AS--->C', 'VERB'), (':', 'PUNCT'), ('E(Kc', 'NOUN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('tgs||IDtgs||TS2||Lifetime2||Tickettgs', 'NOUN'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'nsubj'), ('AS--->C', 'ROOT'), (':', 'punct'), ('E(Kc', 'pobj'), (',', 'punct'), ('[', 'punct'), ('Kc', 'npadvmod'), (',', 'punct'), ('tgs||IDtgs||TS2||Lifetime2||Tickettgs', 'npadvmod'), (']', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[ , AS--->C], [AS--->C, :], [:, E(Kc], [E(Kc, ,], [,, [], [[, Kc], [Kc, ,], [,, tgs||IDtgs||TS2||Lifetime2||Tickettgs], [tgs||IDtgs||TS2||Lifetime2||Tickettgs, ]], [], )]]
+
+>> Trigrams: 
+[[ , AS--->C, :], [AS--->C, :, E(Kc], [:, E(Kc, ,], [E(Kc, ,, [], [,, [, Kc], [[, Kc, ,], [Kc, ,, tgs||IDtgs||TS2||Lifetime2||Tickettgs], [,, tgs||IDtgs||TS2||Lifetime2||Tickettgs, ]], [tgs||IDtgs||TS2||Lifetime2||Tickettgs, ], )]]
+
+>> Noun Phrases are: 
+[E(Kc]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 38 =============================
+
+Tickettgs=E(Ktgs, 
+
+
+>> Tokens are: 
+[Tickettgs, =, E(Ktgs, ,] 
+
+>> PoS Tags are: 
+[('Tickettgs', 'PROPN'), ('=', 'PUNCT'), ('E(Ktgs', 'X'), (',', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Tickettgs', 'nmod'), ('=', 'punct'), ('E(Ktgs', 'ROOT'), (',', 'punct')]
+
+>> Bigrams: 
+[[Tickettgs, =], [=, E(Ktgs], [E(Ktgs, ,]]
+
+>> Trigrams: 
+[[Tickettgs, =, E(Ktgs], [=, E(Ktgs, ,]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 39 =============================
+
+[Kc,tgs||IDc||ADc||IDtgs||TS2||Lifetime2])   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-3 
+
+
+>> Tokens are: 
+[[, Kc, ,, tgs||IDc||ADc||IDtgs||TS2||Lifetime2, ], ),   , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,     , Kerberos, Version, 4, –, Step-3] 
+
+>> PoS Tags are: 
+[('[', 'X'), ('Kc', 'INTJ'), (',', 'PUNCT'), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'NUM'), (']', 'PUNCT'), (')', 'PUNCT'), ('  ', 'SPACE'), ('Unit-9', 'NOUN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), ('    ', 'SPACE'), ('Kerberos', 'PROPN'), ('Version', 'PROPN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step-3', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('[', 'dep'), ('Kc', 'prep'), (',', 'punct'), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'pobj'), (']', 'punct'), (')', 'punct'), ('  ', 'nmod'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'nsubj'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'acomp'), ('Subject', 'xcomp'), ('    ', 'nummod'), ('Kerberos', 'compound'), ('Version', 'attr'), ('4', 'nummod'), ('–', 'punct'), ('Step-3', 'appos')]
+
+>> Bigrams: 
+[[[, Kc], [Kc, ,], [,, tgs||IDc||ADc||IDtgs||TS2||Lifetime2], [tgs||IDc||ADc||IDtgs||TS2||Lifetime2, ]], [], )], [),   ], [  , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,     ], [    , Kerberos], [Kerberos, Version], [Version, 4], [4, –], [–, Step-3]]
+
+>> Trigrams: 
+[[[, Kc, ,], [Kc, ,, tgs||IDc||ADc||IDtgs||TS2||Lifetime2], [,, tgs||IDc||ADc||IDtgs||TS2||Lifetime2, ]], [tgs||IDc||ADc||IDtgs||TS2||Lifetime2, ], )], [], ),   ], [),   , Unit-9], [  , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,     ], [Subject,     , Kerberos], [    , Kerberos, Version], [Kerberos, Version, 4], [Version, 4, –], [4, –, Step-3]]
+
+>> Noun Phrases are: 
+[  Unit-9 Remote user authentication, Darshan Institute, Engineering, Technology, INS, Kerberos Version, Step-3]
+
+>> Named Entities are: 
+[('Unit-9 Remote', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('4', 'CARDINAL')]
+
+
+============================ Sentence 40 =============================
+
+The client decrypts the message using the user’s password as the secret key. 
+
+
+>> Tokens are: 
+[client, decrypts, message, user, password, secret, key, .] 
+
+>> PoS Tags are: 
+[('client', 'NOUN'), ('decrypts', 'VERB'), ('message', 'NOUN'), ('user', 'NOUN'), ('password', 'NOUN'), ('secret', 'ADJ'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('client', 'nsubj'), ('decrypts', 'ROOT'), ('message', 'dobj'), ('user', 'poss'), ('password', 'dobj'), ('secret', 'amod'), ('key', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[client, decrypts], [decrypts, message], [message, user], [user, password], [password, secret], [secret, key], [key, .]]
+
+>> Trigrams: 
+[[client, decrypts, message], [decrypts, message, user], [message, user, password], [user, password, secret], [password, secret, key], [secret, key, .]]
+
+>> Noun Phrases are: 
+[The client, the message, the user’s password, the secret key]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 41 =============================
+
+The client now has a session key and ticket that can be used to contact the TGS. 
+
+
+>> Tokens are: 
+[client, session, key, ticket, contact, TGS, .] 
+
+>> PoS Tags are: 
+[('client', 'NOUN'), ('session', 'NOUN'), ('key', 'NOUN'), ('ticket', 'NOUN'), ('contact', 'VERB'), ('TGS', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('client', 'nsubj'), ('session', 'compound'), ('key', 'dobj'), ('ticket', 'conj'), ('contact', 'xcomp'), ('TGS', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[client, session], [session, key], [key, ticket], [ticket, contact], [contact, TGS], [TGS, .]]
+
+>> Trigrams: 
+[[client, session, key], [session, key, ticket], [key, ticket, contact], [ticket, contact, TGS], [contact, TGS, .]]
+
+>> Noun Phrases are: 
+[The client, a session key, ticket, the TGS]
+
+>> Named Entities are: 
+[('TGS', 'ORG')]
+
+
+============================ Sentence 42 =============================
+
+The client cannot see inside the ticket, since the client does not know the TGS secret key. 
+
+
+>> Tokens are: 
+[client, inside, ticket, ,, client, know, TGS, secret, key, .] 
+
+>> PoS Tags are: 
+[('client', 'NOUN'), ('inside', 'ADP'), ('ticket', 'NOUN'), (',', 'PUNCT'), ('client', 'NOUN'), ('know', 'VERB'), ('TGS', 'PROPN'), ('secret', 'ADJ'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('client', 'nsubj'), ('inside', 'prep'), ('ticket', 'pobj'), (',', 'punct'), ('client', 'nsubj'), ('know', 'advcl'), ('TGS', 'compound'), ('secret', 'amod'), ('key', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[client, inside], [inside, ticket], [ticket, ,], [,, client], [client, know], [know, TGS], [TGS, secret], [secret, key], [key, .]]
+
+>> Trigrams: 
+[[client, inside, ticket], [inside, ticket, ,], [ticket, ,, client], [,, client, know], [client, know, TGS], [know, TGS, secret], [TGS, secret, key], [secret, key, .]]
+
+>> Noun Phrases are: 
+[The client, the ticket, the client, the TGS secret key]
+
+>> Named Entities are: 
+[('TGS', 'ORG')]
+
+
+============================ Sentence 43 =============================
+
+When a client wants to start using a server (service), the client must first obtain a ticket. 
+
+
+>> Tokens are: 
+[client, wants, start, server, (, service, ), ,, client, obtain, ticket, .] 
+
+>> PoS Tags are: 
+[('client', 'NOUN'), ('wants', 'VERB'), ('start', 'VERB'), ('server', 'NOUN'), ('(', 'PUNCT'), ('service', 'NOUN'), (')', 'PUNCT'), (',', 'PUNCT'), ('client', 'NOUN'), ('obtain', 'VERB'), ('ticket', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('client', 'nsubj'), ('wants', 'advcl'), ('start', 'xcomp'), ('server', 'nmod'), ('(', 'punct'), ('service', 'dobj'), (')', 'punct'), (',', 'punct'), ('client', 'nsubj'), ('obtain', 'ROOT'), ('ticket', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[client, wants], [wants, start], [start, server], [server, (], [(, service], [service, )], [), ,], [,, client], [client, obtain], [obtain, ticket], [ticket, .]]
+
+>> Trigrams: 
+[[client, wants, start], [wants, start, server], [start, server, (], [server, (, service], [(, service, )], [service, ), ,], [), ,, client], [,, client, obtain], [client, obtain, ticket], [obtain, ticket, .]]
+
+>> Noun Phrases are: 
+[a client, a server (service, the client, a ticket]
+
+>> Named Entities are: 
+[('first', 'ORDINAL')]
+
+
+============================ Sentence 44 =============================
+
+The client composes a request to send to the TGS   C--->TGS: Idv||Tickettgs||Authenticatorc  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-4 The TGS decrypts the ticket using it’s secret key. 
+
+
+>> Tokens are: 
+[client, composes, request, send, TGS,   , C--->TGS, :, Idv||Tickettgs||Authenticatorc,  , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,     , Kerberos, Version, 4, –, Step-4, TGS, decrypts, ticket, secret, key, .] 
+
+>> PoS Tags are: 
+[('client', 'NOUN'), ('composes', 'VERB'), ('request', 'NOUN'), ('send', 'VERB'), ('TGS', 'PROPN'), ('  ', 'SPACE'), ('C--->TGS', 'NOUN'), (':', 'PUNCT'), ('Idv||Tickettgs||Authenticatorc', 'PROPN'), (' ', 'SPACE'), ('Unit-9', 'PROPN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), ('    ', 'SPACE'), ('Kerberos', 'PROPN'), ('Version', 'PROPN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step-4', 'NOUN'), ('TGS', 'PROPN'), ('decrypts', 'VERB'), ('ticket', 'NOUN'), ('secret', 'ADJ'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('client', 'nsubj'), ('composes', 'ccomp'), ('request', 'dobj'), ('send', 'acl'), ('TGS', 'nmod'), ('  ', 'compound'), ('C--->TGS', 'pobj'), (':', 'punct'), ('Idv||Tickettgs||Authenticatorc', 'nmod'), (' ', 'appos'), ('Unit-9', 'compound'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'dep'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'acomp'), ('Subject', 'xcomp'), ('    ', 'nummod'), ('Kerberos', 'compound'), ('Version', 'nsubj'), ('4', 'nummod'), ('–', 'punct'), ('Step-4', 'appos'), ('TGS', 'nsubj'), ('decrypts', 'ccomp'), ('ticket', 'dobj'), ('secret', 'amod'), ('key', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[client, composes], [composes, request], [request, send], [send, TGS], [TGS,   ], [  , C--->TGS], [C--->TGS, :], [:, Idv||Tickettgs||Authenticatorc], [Idv||Tickettgs||Authenticatorc,  ], [ , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,     ], [    , Kerberos], [Kerberos, Version], [Version, 4], [4, –], [–, Step-4], [Step-4, TGS], [TGS, decrypts], [decrypts, ticket], [ticket, secret], [secret, key], [key, .]]
+
+>> Trigrams: 
+[[client, composes, request], [composes, request, send], [request, send, TGS], [send, TGS,   ], [TGS,   , C--->TGS], [  , C--->TGS, :], [C--->TGS, :, Idv||Tickettgs||Authenticatorc], [:, Idv||Tickettgs||Authenticatorc,  ], [Idv||Tickettgs||Authenticatorc,  , Unit-9], [ , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,     ], [Subject,     , Kerberos], [    , Kerberos, Version], [Kerberos, Version, 4], [Version, 4, –], [4, –, Step-4], [–, Step-4, TGS], [Step-4, TGS, decrypts], [TGS, decrypts, ticket], [decrypts, ticket, secret], [ticket, secret, key], [secret, key, .]]
+
+>> Noun Phrases are: 
+[The client, a request, the TGS   C--->TGS, Darshan Institute, Engineering, Technology, INS, Kerberos Version, – Step-4, The TGS, the ticket, it’s secret key]
+
+>> Named Entities are: 
+[('TGS', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('4', 'CARDINAL'), ('Step-4', 'PRODUCT'), ('TGS', 'ORG')]
+
+
+============================ Sentence 45 =============================
+
+Inside is the TGS session key. 
+
+
+>> Tokens are: 
+[Inside, TGS, session, key, .] 
+
+>> PoS Tags are: 
+[('Inside', 'ADV'), ('TGS', 'PROPN'), ('session', 'NOUN'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Inside', 'advmod'), ('TGS', 'compound'), ('session', 'compound'), ('key', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Inside, TGS], [TGS, session], [session, key], [key, .]]
+
+>> Trigrams: 
+[[Inside, TGS, session], [TGS, session, key], [session, key, .]]
+
+>> Noun Phrases are: 
+[the TGS session key]
+
+>> Named Entities are: 
+[('TGS', 'ORG')]
+
+
+============================ Sentence 46 =============================
+
+The TGS decrypts the authenticator using the session key. 
+
+
+>> Tokens are: 
+[TGS, decrypts, authenticator, session, key, .] 
+
+>> PoS Tags are: 
+[('TGS', 'PROPN'), ('decrypts', 'VERB'), ('authenticator', 'NOUN'), ('session', 'NOUN'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('TGS', 'nsubj'), ('decrypts', 'ROOT'), ('authenticator', 'dobj'), ('session', 'compound'), ('key', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[TGS, decrypts], [decrypts, authenticator], [authenticator, session], [session, key], [key, .]]
+
+>> Trigrams: 
+[[TGS, decrypts, authenticator], [decrypts, authenticator, session], [authenticator, session, key], [session, key, .]]
+
+>> Noun Phrases are: 
+[The TGS, the authenticator, the session key]
+
+>> Named Entities are: 
+[('TGS', 'ORG')]
+
+
+============================ Sentence 47 =============================
+
+The TGS check to make sure login names, client addresses and TGS server name are all ok. 
+
+
+>> Tokens are: 
+[TGS, check, sure, login, names, ,, client, addresses, TGS, server, ok, .] 
+
+>> PoS Tags are: 
+[('TGS', 'PROPN'), ('check', 'NOUN'), ('sure', 'ADJ'), ('login', 'NOUN'), ('names', 'NOUN'), (',', 'PUNCT'), ('client', 'NOUN'), ('addresses', 'NOUN'), ('TGS', 'PROPN'), ('server', 'NOUN'), ('ok', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('TGS', 'compound'), ('check', 'nsubj'), ('sure', 'amod'), ('login', 'compound'), ('names', 'dobj'), (',', 'punct'), ('client', 'compound'), ('addresses', 'conj'), ('TGS', 'compound'), ('server', 'compound'), ('ok', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[TGS, check], [check, sure], [sure, login], [login, names], [names, ,], [,, client], [client, addresses], [addresses, TGS], [TGS, server], [server, ok], [ok, .]]
+
+>> Trigrams: 
+[[TGS, check, sure], [check, sure, login], [sure, login, names], [login, names, ,], [names, ,, client], [,, client, addresses], [client, addresses, TGS], [addresses, TGS, server], [TGS, server, ok], [server, ok, .]]
+
+>> Noun Phrases are: 
+[The TGS check, sure login names, client addresses, TGS server name]
+
+>> Named Entities are: 
+[('TGS', 'ORG'), ('TGS', 'ORG')]
+
+
+============================ Sentence 48 =============================
+
+TGS makes sure the authenticator is recent. 
+
+
+>> Tokens are: 
+[TGS, makes, sure, authenticator, recent, .] 
+
+>> PoS Tags are: 
+[('TGS', 'PROPN'), ('makes', 'VERB'), ('sure', 'ADJ'), ('authenticator', 'NOUN'), ('recent', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('TGS', 'nsubj'), ('makes', 'ROOT'), ('sure', 'ccomp'), ('authenticator', 'nsubj'), ('recent', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[TGS, makes], [makes, sure], [sure, authenticator], [authenticator, recent], [recent, .]]
+
+>> Trigrams: 
+[[TGS, makes, sure], [makes, sure, authenticator], [sure, authenticator, recent], [authenticator, recent, .]]
+
+>> Noun Phrases are: 
+[TGS, the authenticator]
+
+>> Named Entities are: 
+[('TGS', 'ORG')]
+
+
+============================ Sentence 49 =============================
+
+Builds a ticket for the client and requested server. 
+
+
+>> Tokens are: 
+[Builds, ticket, client, requested, server, .] 
+
+>> PoS Tags are: 
+[('Builds', 'VERB'), ('ticket', 'NOUN'), ('client', 'NOUN'), ('requested', 'VERB'), ('server', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Builds', 'ROOT'), ('ticket', 'dobj'), ('client', 'pobj'), ('requested', 'amod'), ('server', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Builds, ticket], [ticket, client], [client, requested], [requested, server], [server, .]]
+
+>> Trigrams: 
+[[Builds, ticket, client], [ticket, client, requested], [client, requested, server], [requested, server, .]]
+
+>> Noun Phrases are: 
+[a ticket, the client, requested server]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 50 =============================
+
+The ticket is sealed with the server key. 
+
+
+>> Tokens are: 
+[ticket, sealed, server, key, .] 
+
+>> PoS Tags are: 
+[('ticket', 'NOUN'), ('sealed', 'VERB'), ('server', 'NOUN'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ticket', 'nsubjpass'), ('sealed', 'ROOT'), ('server', 'pobj'), ('key', 'amod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ticket, sealed], [sealed, server], [server, key], [key, .]]
+
+>> Trigrams: 
+[[ticket, sealed, server], [sealed, server, key], [server, key, .]]
+
+>> Noun Phrases are: 
+[The ticket, the server]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 51 =============================
+
+Creates a session key Seals the entire message with the tgs session key and sends it to the client. 
+
+
+>> Tokens are: 
+[Creates, session, key, Seals, entire, message, tgs, session, key, sends, client, .] 
+
+>> PoS Tags are: 
+[('Creates', 'VERB'), ('session', 'NOUN'), ('key', 'ADJ'), ('Seals', 'NOUN'), ('entire', 'ADJ'), ('message', 'NOUN'), ('tgs', 'NOUN'), ('session', 'NOUN'), ('key', 'NOUN'), ('sends', 'VERB'), ('client', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Creates', 'ROOT'), ('session', 'dobj'), ('key', 'amod'), ('Seals', 'appos'), ('entire', 'amod'), ('message', 'dobj'), ('tgs', 'compound'), ('session', 'compound'), ('key', 'pobj'), ('sends', 'conj'), ('client', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Creates, session], [session, key], [key, Seals], [Seals, entire], [entire, message], [message, tgs], [tgs, session], [session, key], [key, sends], [sends, client], [client, .]]
+
+>> Trigrams: 
+[[Creates, session, key], [session, key, Seals], [key, Seals, entire], [Seals, entire, message], [entire, message, tgs], [message, tgs, session], [tgs, session, key], [session, key, sends], [key, sends, client], [sends, client, .]]
+
+>> Noun Phrases are: 
+[a session, key Seals, the entire message, the tgs session key, it, the client]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 52 =============================
+
+    TGS--->C: E(Kc,tgs, 
+
+
+>> Tokens are: 
+[    , TGS--->C, :, E(Kc, ,, tgs, ,] 
+
+>> PoS Tags are: 
+[('    ', 'SPACE'), ('TGS--->C', 'NOUN'), (':', 'PUNCT'), ('E(Kc', 'NOUN'), (',', 'PUNCT'), ('tgs', 'NOUN'), (',', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('    ', 'nsubj'), ('TGS--->C', 'ROOT'), (':', 'punct'), ('E(Kc', 'appos'), (',', 'punct'), ('tgs', 'dep'), (',', 'punct')]
+
+>> Bigrams: 
+[[    , TGS--->C], [TGS--->C, :], [:, E(Kc], [E(Kc, ,], [,, tgs], [tgs, ,]]
+
+>> Trigrams: 
+[[    , TGS--->C, :], [TGS--->C, :, E(Kc], [:, E(Kc, ,], [E(Kc, ,, tgs], [,, tgs, ,]]
+
+>> Noun Phrases are: 
+[    TGS--->C, E(Kc]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 53 =============================
+
+[Kc,v||IDv||TS4||Ticketv])  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-4    Tickettgs=E(Ktgs, 
+
+
+>> Tokens are: 
+[[, Kc, ,, v||IDv||TS4||Ticketv, ], ),  , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,     , Kerberos, Version, 4, –, Step-4,    , Tickettgs, =, E(Ktgs, ,] 
+
+>> PoS Tags are: 
+[('[', 'X'), ('Kc', 'INTJ'), (',', 'PUNCT'), ('v||IDv||TS4||Ticketv', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT'), (' ', 'SPACE'), ('Unit-9', 'PROPN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), ('    ', 'SPACE'), ('Kerberos', 'PROPN'), ('Version', 'PROPN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step-4', 'NOUN'), ('   ', 'SPACE'), ('Tickettgs', 'PROPN'), ('=', 'SYM'), ('E(Ktgs', 'X'), (',', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('[', 'dep'), ('Kc', 'nmod'), (',', 'punct'), ('v||IDv||TS4||Ticketv', 'npadvmod'), (']', 'punct'), (')', 'punct'), (' ', 'nmod'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'compound'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'acomp'), ('Subject', 'xcomp'), ('    ', 'nummod'), ('Kerberos', 'compound'), ('Version', 'attr'), ('4', 'nummod'), ('–', 'punct'), ('Step-4', 'compound'), ('   ', 'compound'), ('Tickettgs', 'appos'), ('=', 'dep'), ('E(Ktgs', 'attr'), (',', 'punct')]
+
+>> Bigrams: 
+[[[, Kc], [Kc, ,], [,, v||IDv||TS4||Ticketv], [v||IDv||TS4||Ticketv, ]], [], )], [),  ], [ , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,     ], [    , Kerberos], [Kerberos, Version], [Version, 4], [4, –], [–, Step-4], [Step-4,    ], [   , Tickettgs], [Tickettgs, =], [=, E(Ktgs], [E(Ktgs, ,]]
+
+>> Trigrams: 
+[[[, Kc, ,], [Kc, ,, v||IDv||TS4||Ticketv], [,, v||IDv||TS4||Ticketv, ]], [v||IDv||TS4||Ticketv, ], )], [], ),  ], [),  , Unit-9], [ , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,     ], [Subject,     , Kerberos], [    , Kerberos, Version], [Kerberos, Version, 4], [Version, 4, –], [4, –, Step-4], [–, Step-4,    ], [Step-4,    , Tickettgs], [   , Tickettgs, =], [Tickettgs, =, E(Ktgs], [=, E(Ktgs, ,]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, Kerberos Version, Step-4    Tickettgs]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology', 'ORG'), ('4', 'CARDINAL'), ('Step-4', 'PRODUCT'), ('Tickettgs', 'ORG'), ('E(Ktgs', 'ORG')]
+
+
+============================ Sentence 54 =============================
+
+[Kc,tgs||IDc||ADc||IDtgs||TS2||Lifetime2])  TicketV=E(KV, [Kc,V||IDc||ADc||IDV||TS4||Lifetime4])   
+
+
+>> Tokens are: 
+[[, Kc, ,, tgs||IDc||ADc||IDtgs||TS2||Lifetime2, ], ),  , TicketV, =, E(KV, ,, [, Kc, ,, V||IDc||ADc||IDV||TS4||Lifetime4, ], ),  ] 
+
+>> PoS Tags are: 
+[('[', 'X'), ('Kc', 'INTJ'), (',', 'PUNCT'), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'NUM'), (']', 'PUNCT'), (')', 'PUNCT'), (' ', 'SPACE'), ('TicketV', 'PROPN'), ('=', 'PUNCT'), ('E(KV', 'NOUN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('[', 'punct'), ('Kc', 'nmod'), (',', 'punct'), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'pobj'), (']', 'punct'), (')', 'punct'), (' ', 'appos'), ('TicketV', 'advmod'), ('=', 'appos'), ('E(KV', 'ROOT'), (',', 'punct'), ('[', 'punct'), ('Kc', 'nmod'), (',', 'punct'), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'appos'), (']', 'punct'), (')', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[[, Kc], [Kc, ,], [,, tgs||IDc||ADc||IDtgs||TS2||Lifetime2], [tgs||IDc||ADc||IDtgs||TS2||Lifetime2, ]], [], )], [),  ], [ , TicketV], [TicketV, =], [=, E(KV], [E(KV, ,], [,, [], [[, Kc], [Kc, ,], [,, V||IDc||ADc||IDV||TS4||Lifetime4], [V||IDc||ADc||IDV||TS4||Lifetime4, ]], [], )], [),  ]]
+
+>> Trigrams: 
+[[[, Kc, ,], [Kc, ,, tgs||IDc||ADc||IDtgs||TS2||Lifetime2], [,, tgs||IDc||ADc||IDtgs||TS2||Lifetime2, ]], [tgs||IDc||ADc||IDtgs||TS2||Lifetime2, ], )], [], ),  ], [),  , TicketV], [ , TicketV, =], [TicketV, =, E(KV], [=, E(KV, ,], [E(KV, ,, [], [,, [, Kc], [[, Kc, ,], [Kc, ,, V||IDc||ADc||IDV||TS4||Lifetime4], [,, V||IDc||ADc||IDV||TS4||Lifetime4, ]], [V||IDc||ADc||IDV||TS4||Lifetime4, ], )], [], ),  ]]
+
+>> Noun Phrases are: 
+[[Kc,tgs||IDc||ADc||IDtgs||TS2||Lifetime2])  TicketV=E(KV, [Kc,V||IDc||ADc||IDV||TS4||Lifetime4]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 55 =============================
+
+AuthenticatorC=E(Kc,tgs, [IDc||ADc||TS3])   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-5, 6 
+
+
+>> Tokens are: 
+[AuthenticatorC, =, E(Kc, ,, tgs, ,, [, IDc||ADc||TS3, ], ),   , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,     , Kerberos, Version, 4, –, Step-5, ,, 6] 
+
+>> PoS Tags are: 
+[('AuthenticatorC', 'NOUN'), ('=', 'PUNCT'), ('E(Kc', 'NOUN'), (',', 'PUNCT'), ('tgs', 'NOUN'), (',', 'PUNCT'), ('[', 'X'), ('IDc||ADc||TS3', 'X'), (']', 'PUNCT'), (')', 'PUNCT'), ('  ', 'SPACE'), ('Unit-9', 'NOUN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), ('    ', 'SPACE'), ('Kerberos', 'PROPN'), ('Version', 'PROPN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step-5', 'PROPN'), (',', 'PUNCT'), ('6', 'NUM')] 
+
+>> Dependency Tags are: 
+[('AuthenticatorC', 'nsubj'), ('=', 'punct'), ('E(Kc', 'appos'), (',', 'punct'), ('tgs', 'conj'), (',', 'punct'), ('[', 'punct'), ('IDc||ADc||TS3', 'appos'), (']', 'punct'), (')', 'punct'), ('  ', 'nmod'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'compound'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'acomp'), ('Subject', 'xcomp'), ('    ', 'nummod'), ('Kerberos', 'compound'), ('Version', 'attr'), ('4', 'nummod'), ('–', 'punct'), ('Step-5', 'appos'), (',', 'punct'), ('6', 'punct')]
+
+>> Bigrams: 
+[[AuthenticatorC, =], [=, E(Kc], [E(Kc, ,], [,, tgs], [tgs, ,], [,, [], [[, IDc||ADc||TS3], [IDc||ADc||TS3, ]], [], )], [),   ], [  , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,     ], [    , Kerberos], [Kerberos, Version], [Version, 4], [4, –], [–, Step-5], [Step-5, ,], [,, 6]]
+
+>> Trigrams: 
+[[AuthenticatorC, =, E(Kc], [=, E(Kc, ,], [E(Kc, ,, tgs], [,, tgs, ,], [tgs, ,, [], [,, [, IDc||ADc||TS3], [[, IDc||ADc||TS3, ]], [IDc||ADc||TS3, ], )], [], ),   ], [),   , Unit-9], [  , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,     ], [Subject,     , Kerberos], [    , Kerberos, Version], [Kerberos, Version, 4], [Version, 4, –], [4, –, Step-5], [–, Step-5, ,], [Step-5, ,, 6]]
+
+>> Noun Phrases are: 
+[AuthenticatorC, E(Kc, tgs, Darshan Institute, Engineering, Technology, INS, Kerberos Version, Step-5]
+
+>> Named Entities are: 
+[('Unit-9 Remote', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('4', 'CARDINAL'), ('6', 'CARDINAL')]
+
+
+============================ Sentence 56 =============================
+
+The client now decrypts the TGS response using the TGS session key. 
+
+
+>> Tokens are: 
+[client, decrypts, TGS, response, TGS, session, key, .] 
+
+>> PoS Tags are: 
+[('client', 'NOUN'), ('decrypts', 'VERB'), ('TGS', 'PROPN'), ('response', 'NOUN'), ('TGS', 'PROPN'), ('session', 'NOUN'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('client', 'nsubj'), ('decrypts', 'ROOT'), ('TGS', 'compound'), ('response', 'dobj'), ('TGS', 'compound'), ('session', 'compound'), ('key', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[client, decrypts], [decrypts, TGS], [TGS, response], [response, TGS], [TGS, session], [session, key], [key, .]]
+
+>> Trigrams: 
+[[client, decrypts, TGS], [decrypts, TGS, response], [TGS, response, TGS], [response, TGS, session], [TGS, session, key], [session, key, .]]
+
+>> Noun Phrases are: 
+[The client, the TGS response, the TGS session key]
+
+>> Named Entities are: 
+[('TGS', 'ORG'), ('TGS', 'ORG')]
+
+
+============================ Sentence 57 =============================
+
+The client now has a session key for use with the new server, and a ticket to use with that server. 
+
+
+>> Tokens are: 
+[client, session, key, use, new, server, ,, ticket, use, server, .] 
+
+>> PoS Tags are: 
+[('client', 'NOUN'), ('session', 'NOUN'), ('key', 'NOUN'), ('use', 'NOUN'), ('new', 'ADJ'), ('server', 'NOUN'), (',', 'PUNCT'), ('ticket', 'NOUN'), ('use', 'VERB'), ('server', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('client', 'nsubj'), ('session', 'dobj'), ('key', 'amod'), ('use', 'pobj'), ('new', 'amod'), ('server', 'pobj'), (',', 'punct'), ('ticket', 'conj'), ('use', 'relcl'), ('server', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[client, session], [session, key], [key, use], [use, new], [new, server], [server, ,], [,, ticket], [ticket, use], [use, server], [server, .]]
+
+>> Trigrams: 
+[[client, session, key], [session, key, use], [key, use, new], [use, new, server], [new, server, ,], [server, ,, ticket], [,, ticket, use], [ticket, use, server], [use, server, .]]
+
+>> Noun Phrases are: 
+[The client, a session, use, the new server, a ticket, that server]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 58 =============================
+
+The client can contact the new server using the same format used to access the TGS. 
+
+
+>> Tokens are: 
+[client, contact, new, server, format, access, TGS, .] 
+
+>> PoS Tags are: 
+[('client', 'NOUN'), ('contact', 'VERB'), ('new', 'ADJ'), ('server', 'NOUN'), ('format', 'NOUN'), ('access', 'VERB'), ('TGS', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('client', 'nsubj'), ('contact', 'ROOT'), ('new', 'amod'), ('server', 'dobj'), ('format', 'dobj'), ('access', 'xcomp'), ('TGS', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[client, contact], [contact, new], [new, server], [server, format], [format, access], [access, TGS], [TGS, .]]
+
+>> Trigrams: 
+[[client, contact, new], [contact, new, server], [new, server, format], [server, format, access], [format, access, TGS], [access, TGS, .]]
+
+>> Noun Phrases are: 
+[The client, the new server, the same format, the TGS]
+
+>> Named Entities are: 
+[('TGS', 'ORG')]
+
+
+============================ Sentence 59 =============================
+
+   TicketV=E(KV, [Kc,V||IDc||ADc||IDV||TS4||Lifetime4])  AuthenticatorC=E(Kc,v, [IDc||ADc||TS5])   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject   
+
+
+>> Tokens are: 
+[   , TicketV, =, E(KV, ,, [, Kc, ,, V||IDc||ADc||IDV||TS4||Lifetime4, ], ),  , AuthenticatorC, =, E(Kc, ,, v, ,, [, IDc||ADc||TS5, ], ),   , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  ] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('TicketV', 'NOUN'), ('=', 'PUNCT'), ('E(KV', 'NOUN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT'), (' ', 'SPACE'), ('AuthenticatorC', 'NOUN'), ('=', 'PUNCT'), ('E(Kc', 'NOUN'), (',', 'PUNCT'), ('v', 'ADP'), (',', 'PUNCT'), ('[', 'X'), ('IDc||ADc||TS5', 'X'), (']', 'PUNCT'), (')', 'PUNCT'), ('  ', 'SPACE'), ('Unit-9', 'NOUN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('   ', 'nummod'), ('TicketV', 'advmod'), ('=', 'appos'), ('E(KV', 'nsubj'), (',', 'punct'), ('[', 'punct'), ('Kc', 'nmod'), (',', 'punct'), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'appos'), (']', 'punct'), (')', 'punct'), (' ', 'appos'), ('AuthenticatorC', 'appos'), ('=', 'punct'), ('E(Kc', 'appos'), (',', 'punct'), ('v', 'prep'), (',', 'punct'), ('[', 'punct'), ('IDc||ADc||TS5', 'appos'), (']', 'punct'), (')', 'punct'), ('  ', 'nmod'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'compound'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'advmod'), ('Subject', 'acomp'), (' ', 'prep')]
+
+>> Bigrams: 
+[[   , TicketV], [TicketV, =], [=, E(KV], [E(KV, ,], [,, [], [[, Kc], [Kc, ,], [,, V||IDc||ADc||IDV||TS4||Lifetime4], [V||IDc||ADc||IDV||TS4||Lifetime4, ]], [], )], [),  ], [ , AuthenticatorC], [AuthenticatorC, =], [=, E(Kc], [E(Kc, ,], [,, v], [v, ,], [,, [], [[, IDc||ADc||TS5], [IDc||ADc||TS5, ]], [], )], [),   ], [  , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ]]
+
+>> Trigrams: 
+[[   , TicketV, =], [TicketV, =, E(KV], [=, E(KV, ,], [E(KV, ,, [], [,, [, Kc], [[, Kc, ,], [Kc, ,, V||IDc||ADc||IDV||TS4||Lifetime4], [,, V||IDc||ADc||IDV||TS4||Lifetime4, ]], [V||IDc||ADc||IDV||TS4||Lifetime4, ], )], [], ),  ], [),  , AuthenticatorC], [ , AuthenticatorC, =], [AuthenticatorC, =, E(Kc], [=, E(Kc, ,], [E(Kc, ,, v], [,, v, ,], [v, ,, [], [,, [, IDc||ADc||TS5], [[, IDc||ADc||TS5, ]], [IDc||ADc||TS5, ], )], [], ),   ], [),   , Unit-9], [  , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ]]
+
+>> Noun Phrases are: 
+[   TicketV=E(KV, [Kc,V||IDc||ADc||IDV||TS4||Lifetime4, AuthenticatorC, E(Kc, Darshan Institute, Engineering, Technology, INS]
+
+>> Named Entities are: 
+[('Unit-9 Remote', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 60 =============================
+
+Ticket 
+
+
+>> Tokens are: 
+[Ticket] 
+
+>> PoS Tags are: 
+[('Ticket', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Ticket', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Ticket]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 61 =============================
+
+Each request for a service requires a ticket. 
+
+
+>> Tokens are: 
+[request, service, requires, ticket, .] 
+
+>> PoS Tags are: 
+[('request', 'NOUN'), ('service', 'NOUN'), ('requires', 'VERB'), ('ticket', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('request', 'nsubj'), ('service', 'pobj'), ('requires', 'ROOT'), ('ticket', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[request, service], [service, requires], [requires, ticket], [ticket, .]]
+
+>> Trigrams: 
+[[request, service, requires], [service, requires, ticket], [requires, ticket, .]]
+
+>> Noun Phrases are: 
+[Each request, a service, a ticket]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 62 =============================
+
+A ticket provides a single client with access to a single server. 
+
+
+>> Tokens are: 
+[ticket, provides, single, client, access, single, server, .] 
+
+>> PoS Tags are: 
+[('ticket', 'NOUN'), ('provides', 'VERB'), ('single', 'ADJ'), ('client', 'NOUN'), ('access', 'NOUN'), ('single', 'ADJ'), ('server', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ticket', 'nsubj'), ('provides', 'ROOT'), ('single', 'amod'), ('client', 'dobj'), ('access', 'pobj'), ('single', 'amod'), ('server', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ticket, provides], [provides, single], [single, client], [client, access], [access, single], [single, server], [server, .]]
+
+>> Trigrams: 
+[[ticket, provides, single], [provides, single, client], [single, client, access], [client, access, single], [access, single, server], [single, server, .]]
+
+>> Noun Phrases are: 
+[A ticket, a single client, access, a single server]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 63 =============================
+
+Tickets are dispensed by the “ticket granting server” (TGS), which has knowledge of all the encryption keys. 
+
+
+>> Tokens are: 
+[Tickets, dispensed, “, ticket, granting, server, ”, (, TGS, ), ,, knowledge, encryption, keys, .] 
+
+>> PoS Tags are: 
+[('Tickets', 'NOUN'), ('dispensed', 'VERB'), ('“', 'PUNCT'), ('ticket', 'NOUN'), ('granting', 'NOUN'), ('server', 'NOUN'), ('”', 'PUNCT'), ('(', 'PUNCT'), ('TGS', 'PROPN'), (')', 'PUNCT'), (',', 'PUNCT'), ('knowledge', 'NOUN'), ('encryption', 'NOUN'), ('keys', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Tickets', 'nsubjpass'), ('dispensed', 'ROOT'), ('“', 'punct'), ('ticket', 'compound'), ('granting', 'compound'), ('server', 'pobj'), ('”', 'punct'), ('(', 'punct'), ('TGS', 'appos'), (')', 'punct'), (',', 'punct'), ('knowledge', 'dobj'), ('encryption', 'compound'), ('keys', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Tickets, dispensed], [dispensed, “], [“, ticket], [ticket, granting], [granting, server], [server, ”], [”, (], [(, TGS], [TGS, )], [), ,], [,, knowledge], [knowledge, encryption], [encryption, keys], [keys, .]]
+
+>> Trigrams: 
+[[Tickets, dispensed, “], [dispensed, “, ticket], [“, ticket, granting], [ticket, granting, server], [granting, server, ”], [server, ”, (], [”, (, TGS], [(, TGS, )], [TGS, ), ,], [), ,, knowledge], [,, knowledge, encryption], [knowledge, encryption, keys], [encryption, keys, .]]
+
+>> Noun Phrases are: 
+[Tickets, the “ticket granting server, (TGS, knowledge, all the encryption keys]
+
+>> Named Entities are: 
+[('TGS', 'ORG')]
+
+
+============================ Sentence 64 =============================
+
+Tickets are meaningless to clients, they simply use them to gain access to servers. 
+
+
+>> Tokens are: 
+[Tickets, meaningless, clients, ,, simply, use, gain, access, servers, .] 
+
+>> PoS Tags are: 
+[('Tickets', 'NOUN'), ('meaningless', 'ADJ'), ('clients', 'NOUN'), (',', 'PUNCT'), ('simply', 'ADV'), ('use', 'VERB'), ('gain', 'VERB'), ('access', 'NOUN'), ('servers', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Tickets', 'nsubj'), ('meaningless', 'acomp'), ('clients', 'pobj'), (',', 'punct'), ('simply', 'advmod'), ('use', 'ROOT'), ('gain', 'xcomp'), ('access', 'dobj'), ('servers', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Tickets, meaningless], [meaningless, clients], [clients, ,], [,, simply], [simply, use], [use, gain], [gain, access], [access, servers], [servers, .]]
+
+>> Trigrams: 
+[[Tickets, meaningless, clients], [meaningless, clients, ,], [clients, ,, simply], [,, simply, use], [simply, use, gain], [use, gain, access], [gain, access, servers], [access, servers, .]]
+
+>> Noun Phrases are: 
+[Tickets, clients, they, them, access, servers]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 65 =============================
+
+The TGS seals (encrypts) each ticket with the secret encryption key of the server. 
+
+
+>> Tokens are: 
+[TGS, seals, (, encrypts, ), ticket, secret, encryption, key, server, .] 
+
+>> PoS Tags are: 
+[('TGS', 'PROPN'), ('seals', 'NOUN'), ('(', 'PUNCT'), ('encrypts', 'NOUN'), (')', 'PUNCT'), ('ticket', 'NOUN'), ('secret', 'ADJ'), ('encryption', 'NOUN'), ('key', 'NOUN'), ('server', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('TGS', 'compound'), ('seals', 'ROOT'), ('(', 'punct'), ('encrypts', 'appos'), (')', 'punct'), ('ticket', 'appos'), ('secret', 'amod'), ('encryption', 'pobj'), ('key', 'appos'), ('server', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[TGS, seals], [seals, (], [(, encrypts], [encrypts, )], [), ticket], [ticket, secret], [secret, encryption], [encryption, key], [key, server], [server, .]]
+
+>> Trigrams: 
+[[TGS, seals, (], [seals, (, encrypts], [(, encrypts, )], [encrypts, ), ticket], [), ticket, secret], [ticket, secret, encryption], [secret, encryption, key], [encryption, key, server], [key, server, .]]
+
+>> Noun Phrases are: 
+[The TGS seals, encrypts, each ticket, the secret encryption, key, the server]
+
+>> Named Entities are: 
+[('TGS', 'ORG')]
+
+
+============================ Sentence 66 =============================
+
+Sealed tickets can be sent safely over a network - only the server can make sense out of it. 
+
+
+>> Tokens are: 
+[Sealed, tickets, sent, safely, network, -, server, sense, .] 
+
+>> PoS Tags are: 
+[('Sealed', 'VERB'), ('tickets', 'NOUN'), ('sent', 'VERB'), ('safely', 'ADV'), ('network', 'NOUN'), ('-', 'PUNCT'), ('server', 'NOUN'), ('sense', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Sealed', 'amod'), ('tickets', 'nsubjpass'), ('sent', 'ROOT'), ('safely', 'advmod'), ('network', 'pobj'), ('-', 'punct'), ('server', 'nsubj'), ('sense', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Sealed, tickets], [tickets, sent], [sent, safely], [safely, network], [network, -], [-, server], [server, sense], [sense, .]]
+
+>> Trigrams: 
+[[Sealed, tickets, sent], [tickets, sent, safely], [sent, safely, network], [safely, network, -], [network, -, server], [-, server, sense], [server, sense, .]]
+
+>> Noun Phrases are: 
+[Sealed tickets, a network, only the server, sense, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 67 =============================
+
+Each ticket has a limited lifetime (a few hours). 
+
+
+>> Tokens are: 
+[ticket, limited, lifetime, (, hours, ), .] 
+
+>> PoS Tags are: 
+[('ticket', 'NOUN'), ('limited', 'ADJ'), ('lifetime', 'NOUN'), ('(', 'PUNCT'), ('hours', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ticket', 'nsubj'), ('limited', 'amod'), ('lifetime', 'dobj'), ('(', 'punct'), ('hours', 'appos'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ticket, limited], [limited, lifetime], [lifetime, (], [(, hours], [hours, )], [), .]]
+
+>> Trigrams: 
+[[ticket, limited, lifetime], [limited, lifetime, (], [lifetime, (, hours], [(, hours, )], [hours, ), .]]
+
+>> Noun Phrases are: 
+[Each ticket, a limited lifetime, a few hours]
+
+>> Named Entities are: 
+[('a few hours', 'TIME')]
+
+
+============================ Sentence 68 =============================
+
+  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Ticket Contents Client name (user login name) 
+
+
+>> Tokens are: 
+[  , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Ticket, Contents, Client, (, user, login, )] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-9', 'NOUN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Ticket', 'PROPN'), ('Contents', 'PROPN'), ('Client', 'PROPN'), ('(', 'PUNCT'), ('user', 'NOUN'), ('login', 'NOUN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'nummod'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'nsubj'), ('                                ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'appos'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'nmod'), (' ', 'nummod'), ('Ticket', 'compound'), ('Contents', 'compound'), ('Client', 'compound'), ('(', 'punct'), ('user', 'compound'), ('login', 'compound'), (')', 'punct')]
+
+>> Bigrams: 
+[[  , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Ticket], [Ticket, Contents], [Contents, Client], [Client, (], [(, user], [user, login], [login, )]]
+
+>> Trigrams: 
+[[  , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Ticket], [ , Ticket, Contents], [Ticket, Contents, Client], [Contents, Client, (], [Client, (, user], [(, user, login], [user, login, )]]
+
+>> Noun Phrases are: 
+[  Unit-9 Remote user authentication, Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Ticket Contents Client name, user login name]
+
+>> Named Entities are: 
+[('Unit-9 Remote', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 69 =============================
+
+Server name Client host network address Session key for client/server Ticket lifetime  Creation timestamp   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject      Kerberos Realm   Remote user authentication with Asymmetric encryption Mutual Authentication    Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject 
+
+
+>> Tokens are: 
+[Server, Client, host, network, address, Session, key, client, /, server, Ticket, lifetime,  , Creation, timestamp,   , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,      , Kerberos, Realm,   , Remote, user, authentication, Asymmetric, encryption, Mutual, Authentication,    , Unit-9, Remote, user, authentication,                                 , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject] 
+
+>> PoS Tags are: 
+[('Server', 'PROPN'), ('Client', 'PROPN'), ('host', 'NOUN'), ('network', 'NOUN'), ('address', 'NOUN'), ('Session', 'PROPN'), ('key', 'NOUN'), ('client', 'NOUN'), ('/', 'SYM'), ('server', 'NOUN'), ('Ticket', 'PROPN'), ('lifetime', 'NOUN'), (' ', 'SPACE'), ('Creation', 'PROPN'), ('timestamp', 'NOUN'), ('  ', 'SPACE'), ('Unit-9', 'ADJ'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), ('     ', 'SPACE'), ('Kerberos', 'PROPN'), ('Realm', 'PROPN'), ('  ', 'SPACE'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Asymmetric', 'PROPN'), ('encryption', 'NOUN'), ('Mutual', 'PROPN'), ('Authentication', 'PROPN'), ('   ', 'SPACE'), ('Unit-9', 'PROPN'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('                                ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ')] 
+
+>> Dependency Tags are: 
+[('Server', 'compound'), ('Client', 'compound'), ('host', 'compound'), ('network', 'compound'), ('address', 'dobj'), ('Session', 'appos'), ('key', 'nummod'), ('client', 'nmod'), ('/', 'punct'), ('server', 'pobj'), ('Ticket', 'compound'), ('lifetime', 'appos'), (' ', 'advmod'), ('Creation', 'compound'), ('timestamp', 'appos'), ('  ', 'nmod'), ('Unit-9', 'compound'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'appos'), ('                                ', 'nummod'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'appos'), ('‹#›', 'appos'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), ('     ', 'compound'), ('Kerberos', 'compound'), ('Realm', 'attr'), ('  ', 'dep'), ('Remote', 'compound'), ('user', 'compound'), ('authentication', 'attr'), ('Asymmetric', 'compound'), ('encryption', 'pobj'), ('Mutual', 'compound'), ('Authentication', 'compound'), ('   ', 'compound'), ('Unit-9', 'nmod'), ('Remote', 'amod'), ('user', 'compound'), ('authentication', 'compound'), ('                                ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'attr')]
+
+>> Bigrams: 
+[[Server, Client], [Client, host], [host, network], [network, address], [address, Session], [Session, key], [key, client], [client, /], [/, server], [server, Ticket], [Ticket, lifetime], [lifetime,  ], [ , Creation], [Creation, timestamp], [timestamp,   ], [  , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,      ], [     , Kerberos], [Kerberos, Realm], [Realm,   ], [  , Remote], [Remote, user], [user, authentication], [authentication, Asymmetric], [Asymmetric, encryption], [encryption, Mutual], [Mutual, Authentication], [Authentication,    ], [   , Unit-9], [Unit-9, Remote], [Remote, user], [user, authentication], [authentication,                                 ], [                                , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject]]
+
+>> Trigrams: 
+[[Server, Client, host], [Client, host, network], [host, network, address], [network, address, Session], [address, Session, key], [Session, key, client], [key, client, /], [client, /, server], [/, server, Ticket], [server, Ticket, lifetime], [Ticket, lifetime,  ], [lifetime,  , Creation], [ , Creation, timestamp], [Creation, timestamp,   ], [timestamp,   , Unit-9], [  , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,      ], [Subject,      , Kerberos], [     , Kerberos, Realm], [Kerberos, Realm,   ], [Realm,   , Remote], [  , Remote, user], [Remote, user, authentication], [user, authentication, Asymmetric], [authentication, Asymmetric, encryption], [Asymmetric, encryption, Mutual], [encryption, Mutual, Authentication], [Mutual, Authentication,    ], [Authentication,    , Unit-9], [   , Unit-9, Remote], [Unit-9, Remote, user], [Remote, user, authentication], [user, authentication,                                 ], [authentication,                                 , Darshan], [                                , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject]]
+
+>> Noun Phrases are: 
+[Client host network address, Session, client/server, Ticket lifetime, Creation timestamp,   Unit-9 Remote user authentication, Darshan Institute, Engineering, Technology, very Interesting Subject      Kerberos Realm, Remote user authentication, Asymmetric encryption, Darshan Institute, Engineering, Technology, INS]
+
+>> Named Entities are: 
+[('Client', 'GPE'), ('Session', 'EVENT'), ('Unit-9 Remote', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('Asymmetric encryption Mutual Authentication', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG')]

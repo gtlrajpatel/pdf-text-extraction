@@ -1,0 +1,1366 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709)	 Darshan Institute of Engineering & Technology UNIT-10 Web Security      1  Outline Web Security threats and approaches SSL architecture SSL Protocol Transport layer security HTTPS SSH  Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  X.800 and RFC 2828 International Telecommunication Union (ITU) 2  Secure Socket Layer (SSL) Secure Socket Layer (SSL) provides security services between TCP and applications that use TCP. 
+
+
+>> Tokens are: 
+ ['OOPC++', 'UNIT-1', 'Prof.', 'Rupesh', 'G.', 'Vaishnav', 'rupesh.vaishnav', '@', 'darshan.ac.in', '94280-37452', 'Information', '&', 'Network', 'Security', '(', '2170709', ')', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', 'UNIT-10', 'Web', 'Security', '1', 'Outline', 'Web', 'Security', 'threats', 'approaches', 'SSL', 'architecture', 'SSL', 'Protocol', 'Transport', 'layer', 'security', 'HTTPS', 'SSH', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'X.800', 'RFC', '2828', 'International', 'Telecommunication', 'Union', '(', 'ITU', ')', '2', 'Secure', 'Socket', 'Layer', '(', 'SSL', ')', 'Secure', 'Socket', 'Layer', '(', 'SSL', ')', 'provides', 'security', 'services', 'TCP', 'applications', 'use', 'TCP', '.']
+
+>> Bigrams are: 
+ [('OOPC++', 'UNIT-1'), ('UNIT-1', 'Prof.'), ('Prof.', 'Rupesh'), ('Rupesh', 'G.'), ('G.', 'Vaishnav'), ('Vaishnav', 'rupesh.vaishnav'), ('rupesh.vaishnav', '@'), ('@', 'darshan.ac.in'), ('darshan.ac.in', '94280-37452'), ('94280-37452', 'Information'), ('Information', '&'), ('&', 'Network'), ('Network', 'Security'), ('Security', '('), ('(', '2170709'), ('2170709', ')'), (')', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', 'UNIT-10'), ('UNIT-10', 'Web'), ('Web', 'Security'), ('Security', '1'), ('1', 'Outline'), ('Outline', 'Web'), ('Web', 'Security'), ('Security', 'threats'), ('threats', 'approaches'), ('approaches', 'SSL'), ('SSL', 'architecture'), ('architecture', 'SSL'), ('SSL', 'Protocol'), ('Protocol', 'Transport'), ('Transport', 'layer'), ('layer', 'security'), ('security', 'HTTPS'), ('HTTPS', 'SSH'), ('SSH', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'X.800'), ('X.800', 'RFC'), ('RFC', '2828'), ('2828', 'International'), ('International', 'Telecommunication'), ('Telecommunication', 'Union'), ('Union', '('), ('(', 'ITU'), ('ITU', ')'), (')', '2'), ('2', 'Secure'), ('Secure', 'Socket'), ('Socket', 'Layer'), ('Layer', '('), ('(', 'SSL'), ('SSL', ')'), (')', 'Secure'), ('Secure', 'Socket'), ('Socket', 'Layer'), ('Layer', '('), ('(', 'SSL'), ('SSL', ')'), (')', 'provides'), ('provides', 'security'), ('security', 'services'), ('services', 'TCP'), ('TCP', 'applications'), ('applications', 'use'), ('use', 'TCP'), ('TCP', '.')]
+
+>> Trigrams are: 
+ [('OOPC++', 'UNIT-1', 'Prof.'), ('UNIT-1', 'Prof.', 'Rupesh'), ('Prof.', 'Rupesh', 'G.'), ('Rupesh', 'G.', 'Vaishnav'), ('G.', 'Vaishnav', 'rupesh.vaishnav'), ('Vaishnav', 'rupesh.vaishnav', '@'), ('rupesh.vaishnav', '@', 'darshan.ac.in'), ('@', 'darshan.ac.in', '94280-37452'), ('darshan.ac.in', '94280-37452', 'Information'), ('94280-37452', 'Information', '&'), ('Information', '&', 'Network'), ('&', 'Network', 'Security'), ('Network', 'Security', '('), ('Security', '(', '2170709'), ('(', '2170709', ')'), ('2170709', ')', 'Darshan'), (')', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', 'UNIT-10'), ('Technology', 'UNIT-10', 'Web'), ('UNIT-10', 'Web', 'Security'), ('Web', 'Security', '1'), ('Security', '1', 'Outline'), ('1', 'Outline', 'Web'), ('Outline', 'Web', 'Security'), ('Web', 'Security', 'threats'), ('Security', 'threats', 'approaches'), ('threats', 'approaches', 'SSL'), ('approaches', 'SSL', 'architecture'), ('SSL', 'architecture', 'SSL'), ('architecture', 'SSL', 'Protocol'), ('SSL', 'Protocol', 'Transport'), ('Protocol', 'Transport', 'layer'), ('Transport', 'layer', 'security'), ('layer', 'security', 'HTTPS'), ('security', 'HTTPS', 'SSH'), ('HTTPS', 'SSH', 'Unit-10'), ('SSH', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'X.800'), ('Subject', 'X.800', 'RFC'), ('X.800', 'RFC', '2828'), ('RFC', '2828', 'International'), ('2828', 'International', 'Telecommunication'), ('International', 'Telecommunication', 'Union'), ('Telecommunication', 'Union', '('), ('Union', '(', 'ITU'), ('(', 'ITU', ')'), ('ITU', ')', '2'), (')', '2', 'Secure'), ('2', 'Secure', 'Socket'), ('Secure', 'Socket', 'Layer'), ('Socket', 'Layer', '('), ('Layer', '(', 'SSL'), ('(', 'SSL', ')'), ('SSL', ')', 'Secure'), (')', 'Secure', 'Socket'), ('Secure', 'Socket', 'Layer'), ('Socket', 'Layer', '('), ('Layer', '(', 'SSL'), ('(', 'SSL', ')'), ('SSL', ')', 'provides'), (')', 'provides', 'security'), ('provides', 'security', 'services'), ('security', 'services', 'TCP'), ('services', 'TCP', 'applications'), ('TCP', 'applications', 'use'), ('applications', 'use', 'TCP'), ('use', 'TCP', '.')]
+
+>> POS Tags are: 
+ [('OOPC++', 'NNP'), ('UNIT-1', 'NNP'), ('Prof.', 'NNP'), ('Rupesh', 'NNP'), ('G.', 'NNP'), ('Vaishnav', 'NNP'), ('rupesh.vaishnav', 'NN'), ('@', 'NNP'), ('darshan.ac.in', 'VBZ'), ('94280-37452', 'CD'), ('Information', 'NNP'), ('&', 'CC'), ('Network', 'NNP'), ('Security', 'NNP'), ('(', '('), ('2170709', 'CD'), (')', ')'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('UNIT-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('1', 'CD'), ('Outline', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('threats', 'NNS'), ('approaches', 'VBZ'), ('SSL', 'NNP'), ('architecture', 'NN'), ('SSL', 'NNP'), ('Protocol', 'NNP'), ('Transport', 'NNP'), ('layer', 'NN'), ('security', 'NN'), ('HTTPS', 'NNP'), ('SSH', 'NNP'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('X.800', 'NNP'), ('RFC', 'NNP'), ('2828', 'CD'), ('International', 'NNP'), ('Telecommunication', 'NNP'), ('Union', 'NNP'), ('(', '('), ('ITU', 'NNP'), (')', ')'), ('2', 'CD'), ('Secure', 'NNP'), ('Socket', 'NNP'), ('Layer', 'NNP'), ('(', '('), ('SSL', 'NNP'), (')', ')'), ('Secure', 'NNP'), ('Socket', 'NNP'), ('Layer', 'NNP'), ('(', '('), ('SSL', 'NNP'), (')', ')'), ('provides', 'VBZ'), ('security', 'NN'), ('services', 'NNS'), ('TCP', 'NNP'), ('applications', 'NNS'), ('use', 'VBP'), ('TCP', 'NNP'), ('.', '.')]
+
+ (S
+  (NP
+    OOPC++/NNP
+    UNIT-1/NNP
+    Prof./NNP
+    Rupesh/NNP
+    G./NNP
+    Vaishnav/NNP
+    rupesh.vaishnav/NN
+    @/NNP)
+  darshan.ac.in/VBZ
+  94280-37452/CD
+  (NP Information/NNP)
+  &/CC
+  (NP Network/NNP Security/NNP)
+  (/(
+  2170709/CD
+  )/)
+  (NP Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP UNIT-10/NNP Web/NNP Security/NNP)
+  1/CD
+  (NP Outline/NNP Web/NNP Security/NNP threats/NNS)
+  approaches/VBZ
+  (NP
+    SSL/NNP
+    architecture/NN
+    SSL/NNP
+    Protocol/NNP
+    Transport/NNP
+    layer/NN
+    security/NN
+    HTTPS/NNP
+    SSH/NNP
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP X.800/NNP RFC/NNP)
+  2828/CD
+  (NP International/NNP Telecommunication/NNP Union/NNP)
+  (/(
+  (NP ITU/NNP)
+  )/)
+  2/CD
+  (NP Secure/NNP Socket/NNP Layer/NNP)
+  (/(
+  (NP SSL/NNP)
+  )/)
+  (NP Secure/NNP Socket/NNP Layer/NNP)
+  (/(
+  (NP SSL/NNP)
+  )/)
+  provides/VBZ
+  (NP security/NN services/NNS TCP/NNP applications/NNS)
+  use/VBP
+  (NP TCP/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['OOPC++ UNIT-1 Prof. Rupesh G. Vaishnav rupesh.vaishnav @', 'Information', 'Network Security', 'Darshan Institute Engineering', 'Technology UNIT-10 Web Security', 'Outline Web Security threats', 'SSL architecture SSL Protocol Transport layer security HTTPS SSH Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject X.800 RFC', 'International Telecommunication Union', 'ITU', 'Secure Socket Layer', 'SSL', 'Secure Socket Layer', 'SSL', 'security services TCP applications', 'TCP']
+
+>> Named Entities are: 
+ [('PERSON', 'Rupesh G. Vaishnav'), ('PERSON', 'Network Security'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'SSL'), ('ORGANIZATION', 'SSL Protocol'), ('ORGANIZATION', 'HTTPS'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'International Telecommunication Union'), ('ORGANIZATION', 'ITU'), ('ORGANIZATION', 'SSL'), ('ORGANIZATION', 'SSL'), ('ORGANIZATION', 'TCP'), ('ORGANIZATION', 'TCP')] 
+
+>> Stemming using Porter Stemmer: 
+ [('OOPC++', 'oopc++'), ('UNIT-1', 'unit-1'), ('Prof.', 'prof.'), ('Rupesh', 'rupesh'), ('G.', 'g.'), ('Vaishnav', 'vaishnav'), ('rupesh.vaishnav', 'rupesh.vaishnav'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'inform'), ('&', '&'), ('Network', 'network'), ('Security', 'secur'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('UNIT-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('1', '1'), ('Outline', 'outlin'), ('Web', 'web'), ('Security', 'secur'), ('threats', 'threat'), ('approaches', 'approach'), ('SSL', 'ssl'), ('architecture', 'architectur'), ('SSL', 'ssl'), ('Protocol', 'protocol'), ('Transport', 'transport'), ('layer', 'layer'), ('security', 'secur'), ('HTTPS', 'http'), ('SSH', 'ssh'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('X.800', 'x.800'), ('RFC', 'rfc'), ('2828', '2828'), ('International', 'intern'), ('Telecommunication', 'telecommun'), ('Union', 'union'), ('(', '('), ('ITU', 'itu'), (')', ')'), ('2', '2'), ('Secure', 'secur'), ('Socket', 'socket'), ('Layer', 'layer'), ('(', '('), ('SSL', 'ssl'), (')', ')'), ('Secure', 'secur'), ('Socket', 'socket'), ('Layer', 'layer'), ('(', '('), ('SSL', 'ssl'), (')', ')'), ('provides', 'provid'), ('security', 'secur'), ('services', 'servic'), ('TCP', 'tcp'), ('applications', 'applic'), ('use', 'use'), ('TCP', 'tcp'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('OOPC++', 'oopc++'), ('UNIT-1', 'unit-1'), ('Prof.', 'prof.'), ('Rupesh', 'rupesh'), ('G.', 'g.'), ('Vaishnav', 'vaishnav'), ('rupesh.vaishnav', 'rupesh.vaishnav'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'inform'), ('&', '&'), ('Network', 'network'), ('Security', 'secur'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('UNIT-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('1', '1'), ('Outline', 'outlin'), ('Web', 'web'), ('Security', 'secur'), ('threats', 'threat'), ('approaches', 'approach'), ('SSL', 'ssl'), ('architecture', 'architectur'), ('SSL', 'ssl'), ('Protocol', 'protocol'), ('Transport', 'transport'), ('layer', 'layer'), ('security', 'secur'), ('HTTPS', 'https'), ('SSH', 'ssh'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('X.800', 'x.800'), ('RFC', 'rfc'), ('2828', '2828'), ('International', 'intern'), ('Telecommunication', 'telecommun'), ('Union', 'union'), ('(', '('), ('ITU', 'itu'), (')', ')'), ('2', '2'), ('Secure', 'secur'), ('Socket', 'socket'), ('Layer', 'layer'), ('(', '('), ('SSL', 'ssl'), (')', ')'), ('Secure', 'secur'), ('Socket', 'socket'), ('Layer', 'layer'), ('(', '('), ('SSL', 'ssl'), (')', ')'), ('provides', 'provid'), ('security', 'secur'), ('services', 'servic'), ('TCP', 'tcp'), ('applications', 'applic'), ('use', 'use'), ('TCP', 'tcp'), ('.', '.')]
+
+>> Lemmatization: 
+ [('OOPC++', 'OOPC++'), ('UNIT-1', 'UNIT-1'), ('Prof.', 'Prof.'), ('Rupesh', 'Rupesh'), ('G.', 'G.'), ('Vaishnav', 'Vaishnav'), ('rupesh.vaishnav', 'rupesh.vaishnav'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'Information'), ('&', '&'), ('Network', 'Network'), ('Security', 'Security'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('UNIT-10', 'UNIT-10'), ('Web', 'Web'), ('Security', 'Security'), ('1', '1'), ('Outline', 'Outline'), ('Web', 'Web'), ('Security', 'Security'), ('threats', 'threat'), ('approaches', 'approach'), ('SSL', 'SSL'), ('architecture', 'architecture'), ('SSL', 'SSL'), ('Protocol', 'Protocol'), ('Transport', 'Transport'), ('layer', 'layer'), ('security', 'security'), ('HTTPS', 'HTTPS'), ('SSH', 'SSH'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('X.800', 'X.800'), ('RFC', 'RFC'), ('2828', '2828'), ('International', 'International'), ('Telecommunication', 'Telecommunication'), ('Union', 'Union'), ('(', '('), ('ITU', 'ITU'), (')', ')'), ('2', '2'), ('Secure', 'Secure'), ('Socket', 'Socket'), ('Layer', 'Layer'), ('(', '('), ('SSL', 'SSL'), (')', ')'), ('Secure', 'Secure'), ('Socket', 'Socket'), ('Layer', 'Layer'), ('(', '('), ('SSL', 'SSL'), (')', ')'), ('provides', 'provides'), ('security', 'security'), ('services', 'service'), ('TCP', 'TCP'), ('applications', 'application'), ('use', 'use'), ('TCP', 'TCP'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+The Internet standard version is called Transport Layer Service (TLS). 
+
+
+>> Tokens are: 
+ ['The', 'Internet', 'standard', 'version', 'called', 'Transport', 'Layer', 'Service', '(', 'TLS', ')', '.']
+
+>> Bigrams are: 
+ [('The', 'Internet'), ('Internet', 'standard'), ('standard', 'version'), ('version', 'called'), ('called', 'Transport'), ('Transport', 'Layer'), ('Layer', 'Service'), ('Service', '('), ('(', 'TLS'), ('TLS', ')'), (')', '.')]
+
+>> Trigrams are: 
+ [('The', 'Internet', 'standard'), ('Internet', 'standard', 'version'), ('standard', 'version', 'called'), ('version', 'called', 'Transport'), ('called', 'Transport', 'Layer'), ('Transport', 'Layer', 'Service'), ('Layer', 'Service', '('), ('Service', '(', 'TLS'), ('(', 'TLS', ')'), ('TLS', ')', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('Internet', 'NNP'), ('standard', 'NN'), ('version', 'NN'), ('called', 'VBN'), ('Transport', 'NNP'), ('Layer', 'NNP'), ('Service', 'NNP'), ('(', '('), ('TLS', 'NNP'), (')', ')'), ('.', '.')]
+
+ (S
+  (NP The/DT Internet/NNP standard/NN version/NN)
+  called/VBN
+  (NP Transport/NNP Layer/NNP Service/NNP)
+  (/(
+  (NP TLS/NNP)
+  )/)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The Internet standard version', 'Transport Layer Service', 'TLS']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Transport Layer Service'), ('ORGANIZATION', 'TLS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('Internet', 'internet'), ('standard', 'standard'), ('version', 'version'), ('called', 'call'), ('Transport', 'transport'), ('Layer', 'layer'), ('Service', 'servic'), ('(', '('), ('TLS', 'tl'), (')', ')'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('Internet', 'internet'), ('standard', 'standard'), ('version', 'version'), ('called', 'call'), ('Transport', 'transport'), ('Layer', 'layer'), ('Service', 'servic'), ('(', '('), ('TLS', 'tls'), (')', ')'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('Internet', 'Internet'), ('standard', 'standard'), ('version', 'version'), ('called', 'called'), ('Transport', 'Transport'), ('Layer', 'Layer'), ('Service', 'Service'), ('(', '('), ('TLS', 'TLS'), (')', ')'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+SSL/TLS provides confidentiality using symmetric encryption and message integrity using a message authentication code. 
+
+
+>> Tokens are: 
+ ['SSL/TLS', 'provides', 'confidentiality', 'using', 'symmetric', 'encryption', 'message', 'integrity', 'using', 'message', 'authentication', 'code', '.']
+
+>> Bigrams are: 
+ [('SSL/TLS', 'provides'), ('provides', 'confidentiality'), ('confidentiality', 'using'), ('using', 'symmetric'), ('symmetric', 'encryption'), ('encryption', 'message'), ('message', 'integrity'), ('integrity', 'using'), ('using', 'message'), ('message', 'authentication'), ('authentication', 'code'), ('code', '.')]
+
+>> Trigrams are: 
+ [('SSL/TLS', 'provides', 'confidentiality'), ('provides', 'confidentiality', 'using'), ('confidentiality', 'using', 'symmetric'), ('using', 'symmetric', 'encryption'), ('symmetric', 'encryption', 'message'), ('encryption', 'message', 'integrity'), ('message', 'integrity', 'using'), ('integrity', 'using', 'message'), ('using', 'message', 'authentication'), ('message', 'authentication', 'code'), ('authentication', 'code', '.')]
+
+>> POS Tags are: 
+ [('SSL/TLS', 'NNP'), ('provides', 'VBZ'), ('confidentiality', 'NN'), ('using', 'VBG'), ('symmetric', 'JJ'), ('encryption', 'NN'), ('message', 'NN'), ('integrity', 'NN'), ('using', 'VBG'), ('message', 'NN'), ('authentication', 'NN'), ('code', 'NN'), ('.', '.')]
+
+ (S
+  (NP SSL/TLS/NNP)
+  provides/VBZ
+  (NP confidentiality/NN)
+  using/VBG
+  (NP symmetric/JJ encryption/NN message/NN integrity/NN)
+  using/VBG
+  (NP message/NN authentication/NN code/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['SSL/TLS', 'confidentiality', 'symmetric encryption message integrity', 'message authentication code']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('SSL/TLS', 'ssl/tl'), ('provides', 'provid'), ('confidentiality', 'confidenti'), ('using', 'use'), ('symmetric', 'symmetr'), ('encryption', 'encrypt'), ('message', 'messag'), ('integrity', 'integr'), ('using', 'use'), ('message', 'messag'), ('authentication', 'authent'), ('code', 'code'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('SSL/TLS', 'ssl/tls'), ('provides', 'provid'), ('confidentiality', 'confidenti'), ('using', 'use'), ('symmetric', 'symmetr'), ('encryption', 'encrypt'), ('message', 'messag'), ('integrity', 'integr'), ('using', 'use'), ('message', 'messag'), ('authentication', 'authent'), ('code', 'code'), ('.', '.')]
+
+>> Lemmatization: 
+ [('SSL/TLS', 'SSL/TLS'), ('provides', 'provides'), ('confidentiality', 'confidentiality'), ('using', 'using'), ('symmetric', 'symmetric'), ('encryption', 'encryption'), ('message', 'message'), ('integrity', 'integrity'), ('using', 'using'), ('message', 'message'), ('authentication', 'authentication'), ('code', 'code'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+SSL/TLS includes protocol mechanisms to enable two TCP users to determine the security mechanisms and services they will use. 
+
+
+>> Tokens are: 
+ ['SSL/TLS', 'includes', 'protocol', 'mechanisms', 'enable', 'two', 'TCP', 'users', 'determine', 'security', 'mechanisms', 'services', 'use', '.']
+
+>> Bigrams are: 
+ [('SSL/TLS', 'includes'), ('includes', 'protocol'), ('protocol', 'mechanisms'), ('mechanisms', 'enable'), ('enable', 'two'), ('two', 'TCP'), ('TCP', 'users'), ('users', 'determine'), ('determine', 'security'), ('security', 'mechanisms'), ('mechanisms', 'services'), ('services', 'use'), ('use', '.')]
+
+>> Trigrams are: 
+ [('SSL/TLS', 'includes', 'protocol'), ('includes', 'protocol', 'mechanisms'), ('protocol', 'mechanisms', 'enable'), ('mechanisms', 'enable', 'two'), ('enable', 'two', 'TCP'), ('two', 'TCP', 'users'), ('TCP', 'users', 'determine'), ('users', 'determine', 'security'), ('determine', 'security', 'mechanisms'), ('security', 'mechanisms', 'services'), ('mechanisms', 'services', 'use'), ('services', 'use', '.')]
+
+>> POS Tags are: 
+ [('SSL/TLS', 'NNP'), ('includes', 'VBZ'), ('protocol', 'NN'), ('mechanisms', 'NNS'), ('enable', 'JJ'), ('two', 'CD'), ('TCP', 'NNP'), ('users', 'NNS'), ('determine', 'VBP'), ('security', 'NN'), ('mechanisms', 'NN'), ('services', 'NNS'), ('use', 'NN'), ('.', '.')]
+
+ (S
+  (NP SSL/TLS/NNP)
+  includes/VBZ
+  (NP protocol/NN mechanisms/NNS)
+  enable/JJ
+  two/CD
+  (NP TCP/NNP users/NNS)
+  determine/VBP
+  (NP security/NN mechanisms/NN services/NNS use/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['SSL/TLS', 'protocol mechanisms', 'TCP users', 'security mechanisms services use']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'TCP')] 
+
+>> Stemming using Porter Stemmer: 
+ [('SSL/TLS', 'ssl/tl'), ('includes', 'includ'), ('protocol', 'protocol'), ('mechanisms', 'mechan'), ('enable', 'enabl'), ('two', 'two'), ('TCP', 'tcp'), ('users', 'user'), ('determine', 'determin'), ('security', 'secur'), ('mechanisms', 'mechan'), ('services', 'servic'), ('use', 'use'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('SSL/TLS', 'ssl/tls'), ('includes', 'includ'), ('protocol', 'protocol'), ('mechanisms', 'mechan'), ('enable', 'enabl'), ('two', 'two'), ('TCP', 'tcp'), ('users', 'user'), ('determine', 'determin'), ('security', 'secur'), ('mechanisms', 'mechan'), ('services', 'servic'), ('use', 'use'), ('.', '.')]
+
+>> Lemmatization: 
+ [('SSL/TLS', 'SSL/TLS'), ('includes', 'includes'), ('protocol', 'protocol'), ('mechanisms', 'mechanism'), ('enable', 'enable'), ('two', 'two'), ('TCP', 'TCP'), ('users', 'user'), ('determine', 'determine'), ('security', 'security'), ('mechanisms', 'mechanism'), ('services', 'service'), ('use', 'use'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+SSL is designed to make use of TCP to provide a reliable end-to-end secure service. 
+
+
+>> Tokens are: 
+ ['SSL', 'designed', 'make', 'use', 'TCP', 'provide', 'reliable', 'end-to-end', 'secure', 'service', '.']
+
+>> Bigrams are: 
+ [('SSL', 'designed'), ('designed', 'make'), ('make', 'use'), ('use', 'TCP'), ('TCP', 'provide'), ('provide', 'reliable'), ('reliable', 'end-to-end'), ('end-to-end', 'secure'), ('secure', 'service'), ('service', '.')]
+
+>> Trigrams are: 
+ [('SSL', 'designed', 'make'), ('designed', 'make', 'use'), ('make', 'use', 'TCP'), ('use', 'TCP', 'provide'), ('TCP', 'provide', 'reliable'), ('provide', 'reliable', 'end-to-end'), ('reliable', 'end-to-end', 'secure'), ('end-to-end', 'secure', 'service'), ('secure', 'service', '.')]
+
+>> POS Tags are: 
+ [('SSL', 'NNP'), ('designed', 'VBD'), ('make', 'VB'), ('use', 'NN'), ('TCP', 'NNP'), ('provide', 'NN'), ('reliable', 'JJ'), ('end-to-end', 'JJ'), ('secure', 'NN'), ('service', 'NN'), ('.', '.')]
+
+ (S
+  (NP SSL/NNP)
+  designed/VBD
+  make/VB
+  (NP use/NN TCP/NNP provide/NN)
+  (NP reliable/JJ end-to-end/JJ secure/NN service/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['SSL', 'use TCP provide', 'reliable end-to-end secure service']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'SSL'), ('ORGANIZATION', 'TCP')] 
+
+>> Stemming using Porter Stemmer: 
+ [('SSL', 'ssl'), ('designed', 'design'), ('make', 'make'), ('use', 'use'), ('TCP', 'tcp'), ('provide', 'provid'), ('reliable', 'reliabl'), ('end-to-end', 'end-to-end'), ('secure', 'secur'), ('service', 'servic'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('SSL', 'ssl'), ('designed', 'design'), ('make', 'make'), ('use', 'use'), ('TCP', 'tcp'), ('provide', 'provid'), ('reliable', 'reliabl'), ('end-to-end', 'end-to-end'), ('secure', 'secur'), ('service', 'servic'), ('.', '.')]
+
+>> Lemmatization: 
+ [('SSL', 'SSL'), ('designed', 'designed'), ('make', 'make'), ('use', 'use'), ('TCP', 'TCP'), ('provide', 'provide'), ('reliable', 'reliable'), ('end-to-end', 'end-to-end'), ('secure', 'secure'), ('service', 'service'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Relative Location of Security Facilities in the TCP/IP Protocol Stack     Secure Socket Layer (SSL) Architecture     Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Four SSL Protocols    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSL Record Protocol It provides two services for SSL connections Confidentiality: The Handshake Protocol defines a shared secret key that is  used for conventional encryption of SSL payloads. 
+
+
+>> Tokens are: 
+ ['Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Relative', 'Location', 'Security', 'Facilities', 'TCP/IP', 'Protocol', 'Stack', 'Secure', 'Socket', 'Layer', '(', 'SSL', ')', 'Architecture', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Four', 'SSL', 'Protocols', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'SSL', 'Record', 'Protocol', 'It', 'provides', 'two', 'services', 'SSL', 'connections', 'Confidentiality', ':', 'The', 'Handshake', 'Protocol', 'defines', 'shared', 'secret', 'key', 'used', 'conventional', 'encryption', 'SSL', 'payloads', '.']
+
+>> Bigrams are: 
+ [('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Relative'), ('Relative', 'Location'), ('Location', 'Security'), ('Security', 'Facilities'), ('Facilities', 'TCP/IP'), ('TCP/IP', 'Protocol'), ('Protocol', 'Stack'), ('Stack', 'Secure'), ('Secure', 'Socket'), ('Socket', 'Layer'), ('Layer', '('), ('(', 'SSL'), ('SSL', ')'), (')', 'Architecture'), ('Architecture', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Four'), ('Four', 'SSL'), ('SSL', 'Protocols'), ('Protocols', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'SSL'), ('SSL', 'Record'), ('Record', 'Protocol'), ('Protocol', 'It'), ('It', 'provides'), ('provides', 'two'), ('two', 'services'), ('services', 'SSL'), ('SSL', 'connections'), ('connections', 'Confidentiality'), ('Confidentiality', ':'), (':', 'The'), ('The', 'Handshake'), ('Handshake', 'Protocol'), ('Protocol', 'defines'), ('defines', 'shared'), ('shared', 'secret'), ('secret', 'key'), ('key', 'used'), ('used', 'conventional'), ('conventional', 'encryption'), ('encryption', 'SSL'), ('SSL', 'payloads'), ('payloads', '.')]
+
+>> Trigrams are: 
+ [('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Relative'), ('Subject', 'Relative', 'Location'), ('Relative', 'Location', 'Security'), ('Location', 'Security', 'Facilities'), ('Security', 'Facilities', 'TCP/IP'), ('Facilities', 'TCP/IP', 'Protocol'), ('TCP/IP', 'Protocol', 'Stack'), ('Protocol', 'Stack', 'Secure'), ('Stack', 'Secure', 'Socket'), ('Secure', 'Socket', 'Layer'), ('Socket', 'Layer', '('), ('Layer', '(', 'SSL'), ('(', 'SSL', ')'), ('SSL', ')', 'Architecture'), (')', 'Architecture', 'Unit-10'), ('Architecture', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Four'), ('Subject', 'Four', 'SSL'), ('Four', 'SSL', 'Protocols'), ('SSL', 'Protocols', 'Unit-10'), ('Protocols', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'SSL'), ('Subject', 'SSL', 'Record'), ('SSL', 'Record', 'Protocol'), ('Record', 'Protocol', 'It'), ('Protocol', 'It', 'provides'), ('It', 'provides', 'two'), ('provides', 'two', 'services'), ('two', 'services', 'SSL'), ('services', 'SSL', 'connections'), ('SSL', 'connections', 'Confidentiality'), ('connections', 'Confidentiality', ':'), ('Confidentiality', ':', 'The'), (':', 'The', 'Handshake'), ('The', 'Handshake', 'Protocol'), ('Handshake', 'Protocol', 'defines'), ('Protocol', 'defines', 'shared'), ('defines', 'shared', 'secret'), ('shared', 'secret', 'key'), ('secret', 'key', 'used'), ('key', 'used', 'conventional'), ('used', 'conventional', 'encryption'), ('conventional', 'encryption', 'SSL'), ('encryption', 'SSL', 'payloads'), ('SSL', 'payloads', '.')]
+
+>> POS Tags are: 
+ [('Unit-10', 'JJ'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Relative', 'NNP'), ('Location', 'NNP'), ('Security', 'NNP'), ('Facilities', 'NNP'), ('TCP/IP', 'NNP'), ('Protocol', 'NNP'), ('Stack', 'NNP'), ('Secure', 'NNP'), ('Socket', 'NNP'), ('Layer', 'NNP'), ('(', '('), ('SSL', 'NNP'), (')', ')'), ('Architecture', 'NNP'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Four', 'NNP'), ('SSL', 'NNP'), ('Protocols', 'NNP'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('SSL', 'NNP'), ('Record', 'NNP'), ('Protocol', 'NNP'), ('It', 'PRP'), ('provides', 'VBZ'), ('two', 'CD'), ('services', 'NNS'), ('SSL', 'NNP'), ('connections', 'NNS'), ('Confidentiality', 'NNP'), (':', ':'), ('The', 'DT'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('defines', 'NNS'), ('shared', 'VBD'), ('secret', 'JJ'), ('key', 'NN'), ('used', 'VBN'), ('conventional', 'JJ'), ('encryption', 'NN'), ('SSL', 'NNP'), ('payloads', 'NNS'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-10/JJ
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Relative/NNP
+    Location/NNP
+    Security/NNP
+    Facilities/NNP
+    TCP/IP/NNP
+    Protocol/NNP
+    Stack/NNP
+    Secure/NNP
+    Socket/NNP
+    Layer/NNP)
+  (/(
+  (NP SSL/NNP)
+  )/)
+  (NP
+    Architecture/NNP
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Four/NNP
+    SSL/NNP
+    Protocols/NNP
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    SSL/NNP
+    Record/NNP
+    Protocol/NNP)
+  It/PRP
+  provides/VBZ
+  two/CD
+  (NP services/NNS SSL/NNP connections/NNS Confidentiality/NNP)
+  :/:
+  (NP The/DT Handshake/NNP Protocol/NNP defines/NNS)
+  shared/VBD
+  (NP secret/JJ key/NN)
+  used/VBN
+  (NP conventional/JJ encryption/NN SSL/NNP payloads/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Relative Location Security Facilities TCP/IP Protocol Stack Secure Socket Layer', 'SSL', 'Architecture Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Four SSL Protocols Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject SSL Record Protocol', 'services SSL connections Confidentiality', 'The Handshake Protocol defines', 'secret key', 'conventional encryption SSL payloads']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'SSL'), ('PERSON', 'Architecture Unit-10 Web Security Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'SSL'), ('ORGANIZATION', 'Handshake'), ('ORGANIZATION', 'SSL')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Relative', 'rel'), ('Location', 'locat'), ('Security', 'secur'), ('Facilities', 'facil'), ('TCP/IP', 'tcp/ip'), ('Protocol', 'protocol'), ('Stack', 'stack'), ('Secure', 'secur'), ('Socket', 'socket'), ('Layer', 'layer'), ('(', '('), ('SSL', 'ssl'), (')', ')'), ('Architecture', 'architectur'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Four', 'four'), ('SSL', 'ssl'), ('Protocols', 'protocol'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('SSL', 'ssl'), ('Record', 'record'), ('Protocol', 'protocol'), ('It', 'it'), ('provides', 'provid'), ('two', 'two'), ('services', 'servic'), ('SSL', 'ssl'), ('connections', 'connect'), ('Confidentiality', 'confidenti'), (':', ':'), ('The', 'the'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('defines', 'defin'), ('shared', 'share'), ('secret', 'secret'), ('key', 'key'), ('used', 'use'), ('conventional', 'convent'), ('encryption', 'encrypt'), ('SSL', 'ssl'), ('payloads', 'payload'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Relative', 'relat'), ('Location', 'locat'), ('Security', 'secur'), ('Facilities', 'facil'), ('TCP/IP', 'tcp/ip'), ('Protocol', 'protocol'), ('Stack', 'stack'), ('Secure', 'secur'), ('Socket', 'socket'), ('Layer', 'layer'), ('(', '('), ('SSL', 'ssl'), (')', ')'), ('Architecture', 'architectur'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Four', 'four'), ('SSL', 'ssl'), ('Protocols', 'protocol'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('SSL', 'ssl'), ('Record', 'record'), ('Protocol', 'protocol'), ('It', 'it'), ('provides', 'provid'), ('two', 'two'), ('services', 'servic'), ('SSL', 'ssl'), ('connections', 'connect'), ('Confidentiality', 'confidenti'), (':', ':'), ('The', 'the'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('defines', 'defin'), ('shared', 'share'), ('secret', 'secret'), ('key', 'key'), ('used', 'use'), ('conventional', 'convent'), ('encryption', 'encrypt'), ('SSL', 'ssl'), ('payloads', 'payload'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Relative', 'Relative'), ('Location', 'Location'), ('Security', 'Security'), ('Facilities', 'Facilities'), ('TCP/IP', 'TCP/IP'), ('Protocol', 'Protocol'), ('Stack', 'Stack'), ('Secure', 'Secure'), ('Socket', 'Socket'), ('Layer', 'Layer'), ('(', '('), ('SSL', 'SSL'), (')', ')'), ('Architecture', 'Architecture'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Four', 'Four'), ('SSL', 'SSL'), ('Protocols', 'Protocols'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('SSL', 'SSL'), ('Record', 'Record'), ('Protocol', 'Protocol'), ('It', 'It'), ('provides', 'provides'), ('two', 'two'), ('services', 'service'), ('SSL', 'SSL'), ('connections', 'connection'), ('Confidentiality', 'Confidentiality'), (':', ':'), ('The', 'The'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('defines', 'defines'), ('shared', 'shared'), ('secret', 'secret'), ('key', 'key'), ('used', 'used'), ('conventional', 'conventional'), ('encryption', 'encryption'), ('SSL', 'SSL'), ('payloads', 'payload'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+Message Integrity: The Handshake Protocol also defines a shared secret key  that is used to form a message authentication code (MAC). 
+
+
+>> Tokens are: 
+ ['Message', 'Integrity', ':', 'The', 'Handshake', 'Protocol', 'also', 'defines', 'shared', 'secret', 'key', 'used', 'form', 'message', 'authentication', 'code', '(', 'MAC', ')', '.']
+
+>> Bigrams are: 
+ [('Message', 'Integrity'), ('Integrity', ':'), (':', 'The'), ('The', 'Handshake'), ('Handshake', 'Protocol'), ('Protocol', 'also'), ('also', 'defines'), ('defines', 'shared'), ('shared', 'secret'), ('secret', 'key'), ('key', 'used'), ('used', 'form'), ('form', 'message'), ('message', 'authentication'), ('authentication', 'code'), ('code', '('), ('(', 'MAC'), ('MAC', ')'), (')', '.')]
+
+>> Trigrams are: 
+ [('Message', 'Integrity', ':'), ('Integrity', ':', 'The'), (':', 'The', 'Handshake'), ('The', 'Handshake', 'Protocol'), ('Handshake', 'Protocol', 'also'), ('Protocol', 'also', 'defines'), ('also', 'defines', 'shared'), ('defines', 'shared', 'secret'), ('shared', 'secret', 'key'), ('secret', 'key', 'used'), ('key', 'used', 'form'), ('used', 'form', 'message'), ('form', 'message', 'authentication'), ('message', 'authentication', 'code'), ('authentication', 'code', '('), ('code', '(', 'MAC'), ('(', 'MAC', ')'), ('MAC', ')', '.')]
+
+>> POS Tags are: 
+ [('Message', 'NN'), ('Integrity', 'NN'), (':', ':'), ('The', 'DT'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('also', 'RB'), ('defines', 'VBZ'), ('shared', 'VBN'), ('secret', 'JJ'), ('key', 'NN'), ('used', 'VBN'), ('form', 'JJ'), ('message', 'NN'), ('authentication', 'NN'), ('code', 'NN'), ('(', '('), ('MAC', 'NNP'), (')', ')'), ('.', '.')]
+
+ (S
+  (NP Message/NN Integrity/NN)
+  :/:
+  (NP The/DT Handshake/NNP Protocol/NNP)
+  also/RB
+  defines/VBZ
+  shared/VBN
+  (NP secret/JJ key/NN)
+  used/VBN
+  (NP form/JJ message/NN authentication/NN code/NN)
+  (/(
+  (NP MAC/NNP)
+  )/)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Message Integrity', 'The Handshake Protocol', 'secret key', 'form message authentication code', 'MAC']
+
+>> Named Entities are: 
+ [('GPE', 'Message'), ('ORGANIZATION', 'Integrity'), ('ORGANIZATION', 'Handshake Protocol'), ('ORGANIZATION', 'MAC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Message', 'messag'), ('Integrity', 'integr'), (':', ':'), ('The', 'the'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('also', 'also'), ('defines', 'defin'), ('shared', 'share'), ('secret', 'secret'), ('key', 'key'), ('used', 'use'), ('form', 'form'), ('message', 'messag'), ('authentication', 'authent'), ('code', 'code'), ('(', '('), ('MAC', 'mac'), (')', ')'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Message', 'messag'), ('Integrity', 'integr'), (':', ':'), ('The', 'the'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('also', 'also'), ('defines', 'defin'), ('shared', 'share'), ('secret', 'secret'), ('key', 'key'), ('used', 'use'), ('form', 'form'), ('message', 'messag'), ('authentication', 'authent'), ('code', 'code'), ('(', '('), ('MAC', 'mac'), (')', ')'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Message', 'Message'), ('Integrity', 'Integrity'), (':', ':'), ('The', 'The'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('also', 'also'), ('defines', 'defines'), ('shared', 'shared'), ('secret', 'secret'), ('key', 'key'), ('used', 'used'), ('form', 'form'), ('message', 'message'), ('authentication', 'authentication'), ('code', 'code'), ('(', '('), ('MAC', 'MAC'), (')', ')'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSL Record Protocol – Cont… The Record Protocol takes an application message to be transmitted, fragments the data into manageable blocks, optionally compresses the data, applies a MAC, encrypts, adds a header, and transmits the resulting unit in a TCP segment. 
+
+
+>> Tokens are: 
+ ['Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'SSL', 'Record', 'Protocol', '–', 'Cont…', 'The', 'Record', 'Protocol', 'takes', 'application', 'message', 'transmitted', ',', 'fragments', 'data', 'manageable', 'blocks', ',', 'optionally', 'compresses', 'data', ',', 'applies', 'MAC', ',', 'encrypts', ',', 'adds', 'header', ',', 'transmits', 'resulting', 'unit', 'TCP', 'segment', '.']
+
+>> Bigrams are: 
+ [('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'SSL'), ('SSL', 'Record'), ('Record', 'Protocol'), ('Protocol', '–'), ('–', 'Cont…'), ('Cont…', 'The'), ('The', 'Record'), ('Record', 'Protocol'), ('Protocol', 'takes'), ('takes', 'application'), ('application', 'message'), ('message', 'transmitted'), ('transmitted', ','), (',', 'fragments'), ('fragments', 'data'), ('data', 'manageable'), ('manageable', 'blocks'), ('blocks', ','), (',', 'optionally'), ('optionally', 'compresses'), ('compresses', 'data'), ('data', ','), (',', 'applies'), ('applies', 'MAC'), ('MAC', ','), (',', 'encrypts'), ('encrypts', ','), (',', 'adds'), ('adds', 'header'), ('header', ','), (',', 'transmits'), ('transmits', 'resulting'), ('resulting', 'unit'), ('unit', 'TCP'), ('TCP', 'segment'), ('segment', '.')]
+
+>> Trigrams are: 
+ [('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'SSL'), ('Subject', 'SSL', 'Record'), ('SSL', 'Record', 'Protocol'), ('Record', 'Protocol', '–'), ('Protocol', '–', 'Cont…'), ('–', 'Cont…', 'The'), ('Cont…', 'The', 'Record'), ('The', 'Record', 'Protocol'), ('Record', 'Protocol', 'takes'), ('Protocol', 'takes', 'application'), ('takes', 'application', 'message'), ('application', 'message', 'transmitted'), ('message', 'transmitted', ','), ('transmitted', ',', 'fragments'), (',', 'fragments', 'data'), ('fragments', 'data', 'manageable'), ('data', 'manageable', 'blocks'), ('manageable', 'blocks', ','), ('blocks', ',', 'optionally'), (',', 'optionally', 'compresses'), ('optionally', 'compresses', 'data'), ('compresses', 'data', ','), ('data', ',', 'applies'), (',', 'applies', 'MAC'), ('applies', 'MAC', ','), ('MAC', ',', 'encrypts'), (',', 'encrypts', ','), ('encrypts', ',', 'adds'), (',', 'adds', 'header'), ('adds', 'header', ','), ('header', ',', 'transmits'), (',', 'transmits', 'resulting'), ('transmits', 'resulting', 'unit'), ('resulting', 'unit', 'TCP'), ('unit', 'TCP', 'segment'), ('TCP', 'segment', '.')]
+
+>> POS Tags are: 
+ [('Unit-10', 'JJ'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('SSL', 'NNP'), ('Record', 'NNP'), ('Protocol', 'NNP'), ('–', 'NNP'), ('Cont…', 'NNP'), ('The', 'DT'), ('Record', 'NNP'), ('Protocol', 'NNP'), ('takes', 'VBZ'), ('application', 'NN'), ('message', 'NN'), ('transmitted', 'VBD'), (',', ','), ('fragments', 'NNS'), ('data', 'VBP'), ('manageable', 'JJ'), ('blocks', 'NNS'), (',', ','), ('optionally', 'RB'), ('compresses', 'VBZ'), ('data', 'NNS'), (',', ','), ('applies', 'NNS'), ('MAC', 'NNP'), (',', ','), ('encrypts', 'NNS'), (',', ','), ('adds', 'VBZ'), ('header', 'NN'), (',', ','), ('transmits', 'VBZ'), ('resulting', 'VBG'), ('unit', 'NN'), ('TCP', 'NNP'), ('segment', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-10/JJ
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    SSL/NNP
+    Record/NNP
+    Protocol/NNP
+    –/NNP
+    Cont…/NNP)
+  (NP The/DT Record/NNP Protocol/NNP)
+  takes/VBZ
+  (NP application/NN message/NN)
+  transmitted/VBD
+  ,/,
+  (NP fragments/NNS)
+  data/VBP
+  (NP manageable/JJ blocks/NNS)
+  ,/,
+  optionally/RB
+  compresses/VBZ
+  (NP data/NNS)
+  ,/,
+  (NP applies/NNS MAC/NNP)
+  ,/,
+  (NP encrypts/NNS)
+  ,/,
+  adds/VBZ
+  (NP header/NN)
+  ,/,
+  transmits/VBZ
+  resulting/VBG
+  (NP unit/NN TCP/NNP segment/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject SSL Record Protocol – Cont…', 'The Record Protocol', 'application message', 'fragments', 'manageable blocks', 'data', 'applies MAC', 'encrypts', 'header', 'unit TCP segment']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'Record Protocol'), ('ORGANIZATION', 'MAC'), ('ORGANIZATION', 'TCP')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('SSL', 'ssl'), ('Record', 'record'), ('Protocol', 'protocol'), ('–', '–'), ('Cont…', 'cont…'), ('The', 'the'), ('Record', 'record'), ('Protocol', 'protocol'), ('takes', 'take'), ('application', 'applic'), ('message', 'messag'), ('transmitted', 'transmit'), (',', ','), ('fragments', 'fragment'), ('data', 'data'), ('manageable', 'manag'), ('blocks', 'block'), (',', ','), ('optionally', 'option'), ('compresses', 'compress'), ('data', 'data'), (',', ','), ('applies', 'appli'), ('MAC', 'mac'), (',', ','), ('encrypts', 'encrypt'), (',', ','), ('adds', 'add'), ('header', 'header'), (',', ','), ('transmits', 'transmit'), ('resulting', 'result'), ('unit', 'unit'), ('TCP', 'tcp'), ('segment', 'segment'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('SSL', 'ssl'), ('Record', 'record'), ('Protocol', 'protocol'), ('–', '–'), ('Cont…', 'cont…'), ('The', 'the'), ('Record', 'record'), ('Protocol', 'protocol'), ('takes', 'take'), ('application', 'applic'), ('message', 'messag'), ('transmitted', 'transmit'), (',', ','), ('fragments', 'fragment'), ('data', 'data'), ('manageable', 'manag'), ('blocks', 'block'), (',', ','), ('optionally', 'option'), ('compresses', 'compress'), ('data', 'data'), (',', ','), ('applies', 'appli'), ('MAC', 'mac'), (',', ','), ('encrypts', 'encrypt'), (',', ','), ('adds', 'add'), ('header', 'header'), (',', ','), ('transmits', 'transmit'), ('resulting', 'result'), ('unit', 'unit'), ('TCP', 'tcp'), ('segment', 'segment'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('SSL', 'SSL'), ('Record', 'Record'), ('Protocol', 'Protocol'), ('–', '–'), ('Cont…', 'Cont…'), ('The', 'The'), ('Record', 'Record'), ('Protocol', 'Protocol'), ('takes', 'take'), ('application', 'application'), ('message', 'message'), ('transmitted', 'transmitted'), (',', ','), ('fragments', 'fragment'), ('data', 'data'), ('manageable', 'manageable'), ('blocks', 'block'), (',', ','), ('optionally', 'optionally'), ('compresses', 'compress'), ('data', 'data'), (',', ','), ('applies', 'applies'), ('MAC', 'MAC'), (',', ','), ('encrypts', 'encrypts'), (',', ','), ('adds', 'add'), ('header', 'header'), (',', ','), ('transmits', 'transmits'), ('resulting', 'resulting'), ('unit', 'unit'), ('TCP', 'TCP'), ('segment', 'segment'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+Received data are decrypted, verified, decompressed, and reassembled before being delivered to higher-level users. 
+
+
+>> Tokens are: 
+ ['Received', 'data', 'decrypted', ',', 'verified', ',', 'decompressed', ',', 'reassembled', 'delivered', 'higher-level', 'users', '.']
+
+>> Bigrams are: 
+ [('Received', 'data'), ('data', 'decrypted'), ('decrypted', ','), (',', 'verified'), ('verified', ','), (',', 'decompressed'), ('decompressed', ','), (',', 'reassembled'), ('reassembled', 'delivered'), ('delivered', 'higher-level'), ('higher-level', 'users'), ('users', '.')]
+
+>> Trigrams are: 
+ [('Received', 'data', 'decrypted'), ('data', 'decrypted', ','), ('decrypted', ',', 'verified'), (',', 'verified', ','), ('verified', ',', 'decompressed'), (',', 'decompressed', ','), ('decompressed', ',', 'reassembled'), (',', 'reassembled', 'delivered'), ('reassembled', 'delivered', 'higher-level'), ('delivered', 'higher-level', 'users'), ('higher-level', 'users', '.')]
+
+>> POS Tags are: 
+ [('Received', 'VBN'), ('data', 'NNS'), ('decrypted', 'VBD'), (',', ','), ('verified', 'VBD'), (',', ','), ('decompressed', 'VBD'), (',', ','), ('reassembled', 'VBD'), ('delivered', 'VBN'), ('higher-level', 'JJ'), ('users', 'NNS'), ('.', '.')]
+
+ (S
+  Received/VBN
+  (NP data/NNS)
+  decrypted/VBD
+  ,/,
+  verified/VBD
+  ,/,
+  decompressed/VBD
+  ,/,
+  reassembled/VBD
+  delivered/VBN
+  (NP higher-level/JJ users/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['data', 'higher-level users']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Received', 'receiv'), ('data', 'data'), ('decrypted', 'decrypt'), (',', ','), ('verified', 'verifi'), (',', ','), ('decompressed', 'decompress'), (',', ','), ('reassembled', 'reassembl'), ('delivered', 'deliv'), ('higher-level', 'higher-level'), ('users', 'user'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Received', 'receiv'), ('data', 'data'), ('decrypted', 'decrypt'), (',', ','), ('verified', 'verifi'), (',', ','), ('decompressed', 'decompress'), (',', ','), ('reassembled', 'reassembl'), ('delivered', 'deliv'), ('higher-level', 'higher-level'), ('users', 'user'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Received', 'Received'), ('data', 'data'), ('decrypted', 'decrypted'), (',', ','), ('verified', 'verified'), (',', ','), ('decompressed', 'decompressed'), (',', ','), ('reassembled', 'reassembled'), ('delivered', 'delivered'), ('higher-level', 'higher-level'), ('users', 'user'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Change Cipher Spec Protocol The Change Cipher Spec Protocol is one of the three SSL-specific protocols that use the SSL Record Protocol, and it is the simplest. 
+
+
+>> Tokens are: 
+ ['Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Change', 'Cipher', 'Spec', 'Protocol', 'The', 'Change', 'Cipher', 'Spec', 'Protocol', 'one', 'three', 'SSL-specific', 'protocols', 'use', 'SSL', 'Record', 'Protocol', ',', 'simplest', '.']
+
+>> Bigrams are: 
+ [('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Change'), ('Change', 'Cipher'), ('Cipher', 'Spec'), ('Spec', 'Protocol'), ('Protocol', 'The'), ('The', 'Change'), ('Change', 'Cipher'), ('Cipher', 'Spec'), ('Spec', 'Protocol'), ('Protocol', 'one'), ('one', 'three'), ('three', 'SSL-specific'), ('SSL-specific', 'protocols'), ('protocols', 'use'), ('use', 'SSL'), ('SSL', 'Record'), ('Record', 'Protocol'), ('Protocol', ','), (',', 'simplest'), ('simplest', '.')]
+
+>> Trigrams are: 
+ [('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Change'), ('Subject', 'Change', 'Cipher'), ('Change', 'Cipher', 'Spec'), ('Cipher', 'Spec', 'Protocol'), ('Spec', 'Protocol', 'The'), ('Protocol', 'The', 'Change'), ('The', 'Change', 'Cipher'), ('Change', 'Cipher', 'Spec'), ('Cipher', 'Spec', 'Protocol'), ('Spec', 'Protocol', 'one'), ('Protocol', 'one', 'three'), ('one', 'three', 'SSL-specific'), ('three', 'SSL-specific', 'protocols'), ('SSL-specific', 'protocols', 'use'), ('protocols', 'use', 'SSL'), ('use', 'SSL', 'Record'), ('SSL', 'Record', 'Protocol'), ('Record', 'Protocol', ','), ('Protocol', ',', 'simplest'), (',', 'simplest', '.')]
+
+>> POS Tags are: 
+ [('Unit-10', 'JJ'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Change', 'NNP'), ('Cipher', 'NNP'), ('Spec', 'NNP'), ('Protocol', 'NNP'), ('The', 'DT'), ('Change', 'NNP'), ('Cipher', 'NNP'), ('Spec', 'NNP'), ('Protocol', 'NNP'), ('one', 'CD'), ('three', 'CD'), ('SSL-specific', 'JJ'), ('protocols', 'NNS'), ('use', 'VBP'), ('SSL', 'NNP'), ('Record', 'NNP'), ('Protocol', 'NNP'), (',', ','), ('simplest', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-10/JJ
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Change/NNP
+    Cipher/NNP
+    Spec/NNP
+    Protocol/NNP)
+  (NP The/DT Change/NNP Cipher/NNP Spec/NNP Protocol/NNP)
+  one/CD
+  three/CD
+  (NP SSL-specific/JJ protocols/NNS)
+  use/VBP
+  (NP SSL/NNP Record/NNP Protocol/NNP)
+  ,/,
+  (NP simplest/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Change Cipher Spec Protocol', 'The Change Cipher Spec Protocol', 'SSL-specific protocols', 'SSL Record Protocol', 'simplest']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'Change Cipher Spec'), ('ORGANIZATION', 'SSL Record Protocol')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Change', 'chang'), ('Cipher', 'cipher'), ('Spec', 'spec'), ('Protocol', 'protocol'), ('The', 'the'), ('Change', 'chang'), ('Cipher', 'cipher'), ('Spec', 'spec'), ('Protocol', 'protocol'), ('one', 'one'), ('three', 'three'), ('SSL-specific', 'ssl-specif'), ('protocols', 'protocol'), ('use', 'use'), ('SSL', 'ssl'), ('Record', 'record'), ('Protocol', 'protocol'), (',', ','), ('simplest', 'simplest'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Change', 'chang'), ('Cipher', 'cipher'), ('Spec', 'spec'), ('Protocol', 'protocol'), ('The', 'the'), ('Change', 'chang'), ('Cipher', 'cipher'), ('Spec', 'spec'), ('Protocol', 'protocol'), ('one', 'one'), ('three', 'three'), ('SSL-specific', 'ssl-specif'), ('protocols', 'protocol'), ('use', 'use'), ('SSL', 'ssl'), ('Record', 'record'), ('Protocol', 'protocol'), (',', ','), ('simplest', 'simplest'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Change', 'Change'), ('Cipher', 'Cipher'), ('Spec', 'Spec'), ('Protocol', 'Protocol'), ('The', 'The'), ('Change', 'Change'), ('Cipher', 'Cipher'), ('Spec', 'Spec'), ('Protocol', 'Protocol'), ('one', 'one'), ('three', 'three'), ('SSL-specific', 'SSL-specific'), ('protocols', 'protocol'), ('use', 'use'), ('SSL', 'SSL'), ('Record', 'Record'), ('Protocol', 'Protocol'), (',', ','), ('simplest', 'simplest'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+This protocol consists of a single message which consists of a single byte with the value 1. 
+
+
+>> Tokens are: 
+ ['This', 'protocol', 'consists', 'single', 'message', 'consists', 'single', 'byte', 'value', '1', '.']
+
+>> Bigrams are: 
+ [('This', 'protocol'), ('protocol', 'consists'), ('consists', 'single'), ('single', 'message'), ('message', 'consists'), ('consists', 'single'), ('single', 'byte'), ('byte', 'value'), ('value', '1'), ('1', '.')]
+
+>> Trigrams are: 
+ [('This', 'protocol', 'consists'), ('protocol', 'consists', 'single'), ('consists', 'single', 'message'), ('single', 'message', 'consists'), ('message', 'consists', 'single'), ('consists', 'single', 'byte'), ('single', 'byte', 'value'), ('byte', 'value', '1'), ('value', '1', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('protocol', 'NN'), ('consists', 'VBZ'), ('single', 'JJ'), ('message', 'NN'), ('consists', 'VBZ'), ('single', 'JJ'), ('byte', 'NN'), ('value', 'NN'), ('1', 'CD'), ('.', '.')]
+
+ (S
+  (NP This/DT protocol/NN)
+  consists/VBZ
+  (NP single/JJ message/NN)
+  consists/VBZ
+  (NP single/JJ byte/NN value/NN)
+  1/CD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['This protocol', 'single message', 'single byte value']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('protocol', 'protocol'), ('consists', 'consist'), ('single', 'singl'), ('message', 'messag'), ('consists', 'consist'), ('single', 'singl'), ('byte', 'byte'), ('value', 'valu'), ('1', '1'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('protocol', 'protocol'), ('consists', 'consist'), ('single', 'singl'), ('message', 'messag'), ('consists', 'consist'), ('single', 'singl'), ('byte', 'byte'), ('value', 'valu'), ('1', '1'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('protocol', 'protocol'), ('consists', 'consists'), ('single', 'single'), ('message', 'message'), ('consists', 'consists'), ('single', 'single'), ('byte', 'byte'), ('value', 'value'), ('1', '1'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+The sole purpose of this message is to cause the pending state to be copied into the current state, which updates the cipher suite to be used on this connection. 
+
+
+>> Tokens are: 
+ ['The', 'sole', 'purpose', 'message', 'cause', 'pending', 'state', 'copied', 'current', 'state', ',', 'updates', 'cipher', 'suite', 'used', 'connection', '.']
+
+>> Bigrams are: 
+ [('The', 'sole'), ('sole', 'purpose'), ('purpose', 'message'), ('message', 'cause'), ('cause', 'pending'), ('pending', 'state'), ('state', 'copied'), ('copied', 'current'), ('current', 'state'), ('state', ','), (',', 'updates'), ('updates', 'cipher'), ('cipher', 'suite'), ('suite', 'used'), ('used', 'connection'), ('connection', '.')]
+
+>> Trigrams are: 
+ [('The', 'sole', 'purpose'), ('sole', 'purpose', 'message'), ('purpose', 'message', 'cause'), ('message', 'cause', 'pending'), ('cause', 'pending', 'state'), ('pending', 'state', 'copied'), ('state', 'copied', 'current'), ('copied', 'current', 'state'), ('current', 'state', ','), ('state', ',', 'updates'), (',', 'updates', 'cipher'), ('updates', 'cipher', 'suite'), ('cipher', 'suite', 'used'), ('suite', 'used', 'connection'), ('used', 'connection', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('sole', 'JJ'), ('purpose', 'JJ'), ('message', 'NN'), ('cause', 'NN'), ('pending', 'VBG'), ('state', 'NN'), ('copied', 'VBD'), ('current', 'JJ'), ('state', 'NN'), (',', ','), ('updates', 'VBZ'), ('cipher', 'JJR'), ('suite', 'NN'), ('used', 'VBN'), ('connection', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT sole/JJ purpose/JJ message/NN cause/NN)
+  pending/VBG
+  (NP state/NN)
+  copied/VBD
+  (NP current/JJ state/NN)
+  ,/,
+  updates/VBZ
+  cipher/JJR
+  (NP suite/NN)
+  used/VBN
+  (NP connection/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The sole purpose message cause', 'state', 'current state', 'suite', 'connection']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('sole', 'sole'), ('purpose', 'purpos'), ('message', 'messag'), ('cause', 'caus'), ('pending', 'pend'), ('state', 'state'), ('copied', 'copi'), ('current', 'current'), ('state', 'state'), (',', ','), ('updates', 'updat'), ('cipher', 'cipher'), ('suite', 'suit'), ('used', 'use'), ('connection', 'connect'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('sole', 'sole'), ('purpose', 'purpos'), ('message', 'messag'), ('cause', 'caus'), ('pending', 'pend'), ('state', 'state'), ('copied', 'copi'), ('current', 'current'), ('state', 'state'), (',', ','), ('updates', 'updat'), ('cipher', 'cipher'), ('suite', 'suit'), ('used', 'use'), ('connection', 'connect'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('sole', 'sole'), ('purpose', 'purpose'), ('message', 'message'), ('cause', 'cause'), ('pending', 'pending'), ('state', 'state'), ('copied', 'copied'), ('current', 'current'), ('state', 'state'), (',', ','), ('updates', 'update'), ('cipher', 'cipher'), ('suite', 'suite'), ('used', 'used'), ('connection', 'connection'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Change Cipher Spec Protocol – Cont…   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Alert Protocol The Alert Protocol is used to convey SSL-related alerts to the peer entity. 
+
+
+>> Tokens are: 
+ ['Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Change', 'Cipher', 'Spec', 'Protocol', '–', 'Cont…', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Alert', 'Protocol', 'The', 'Alert', 'Protocol', 'used', 'convey', 'SSL-related', 'alerts', 'peer', 'entity', '.']
+
+>> Bigrams are: 
+ [('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Change'), ('Change', 'Cipher'), ('Cipher', 'Spec'), ('Spec', 'Protocol'), ('Protocol', '–'), ('–', 'Cont…'), ('Cont…', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Alert'), ('Alert', 'Protocol'), ('Protocol', 'The'), ('The', 'Alert'), ('Alert', 'Protocol'), ('Protocol', 'used'), ('used', 'convey'), ('convey', 'SSL-related'), ('SSL-related', 'alerts'), ('alerts', 'peer'), ('peer', 'entity'), ('entity', '.')]
+
+>> Trigrams are: 
+ [('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Change'), ('Subject', 'Change', 'Cipher'), ('Change', 'Cipher', 'Spec'), ('Cipher', 'Spec', 'Protocol'), ('Spec', 'Protocol', '–'), ('Protocol', '–', 'Cont…'), ('–', 'Cont…', 'Unit-10'), ('Cont…', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Alert'), ('Subject', 'Alert', 'Protocol'), ('Alert', 'Protocol', 'The'), ('Protocol', 'The', 'Alert'), ('The', 'Alert', 'Protocol'), ('Alert', 'Protocol', 'used'), ('Protocol', 'used', 'convey'), ('used', 'convey', 'SSL-related'), ('convey', 'SSL-related', 'alerts'), ('SSL-related', 'alerts', 'peer'), ('alerts', 'peer', 'entity'), ('peer', 'entity', '.')]
+
+>> POS Tags are: 
+ [('Unit-10', 'JJ'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Change', 'NNP'), ('Cipher', 'NNP'), ('Spec', 'NNP'), ('Protocol', 'NNP'), ('–', 'NNP'), ('Cont…', 'NNP'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Alert', 'NNP'), ('Protocol', 'NNP'), ('The', 'DT'), ('Alert', 'NNP'), ('Protocol', 'NNP'), ('used', 'VBD'), ('convey', 'JJ'), ('SSL-related', 'JJ'), ('alerts', 'NNS'), ('peer', 'VBP'), ('entity', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-10/JJ
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Change/NNP
+    Cipher/NNP
+    Spec/NNP
+    Protocol/NNP
+    –/NNP
+    Cont…/NNP
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Alert/NNP
+    Protocol/NNP)
+  (NP The/DT Alert/NNP Protocol/NNP)
+  used/VBD
+  (NP convey/JJ SSL-related/JJ alerts/NNS)
+  peer/VBP
+  (NP entity/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Change Cipher Spec Protocol – Cont… Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Alert Protocol', 'The Alert Protocol', 'convey SSL-related alerts', 'entity']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Alert Protocol'), ('PERSON', 'Alert Protocol')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Change', 'chang'), ('Cipher', 'cipher'), ('Spec', 'spec'), ('Protocol', 'protocol'), ('–', '–'), ('Cont…', 'cont…'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Alert', 'alert'), ('Protocol', 'protocol'), ('The', 'the'), ('Alert', 'alert'), ('Protocol', 'protocol'), ('used', 'use'), ('convey', 'convey'), ('SSL-related', 'ssl-relat'), ('alerts', 'alert'), ('peer', 'peer'), ('entity', 'entiti'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Change', 'chang'), ('Cipher', 'cipher'), ('Spec', 'spec'), ('Protocol', 'protocol'), ('–', '–'), ('Cont…', 'cont…'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Alert', 'alert'), ('Protocol', 'protocol'), ('The', 'the'), ('Alert', 'alert'), ('Protocol', 'protocol'), ('used', 'use'), ('convey', 'convey'), ('SSL-related', 'ssl-relat'), ('alerts', 'alert'), ('peer', 'peer'), ('entity', 'entiti'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Change', 'Change'), ('Cipher', 'Cipher'), ('Spec', 'Spec'), ('Protocol', 'Protocol'), ('–', '–'), ('Cont…', 'Cont…'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Alert', 'Alert'), ('Protocol', 'Protocol'), ('The', 'The'), ('Alert', 'Alert'), ('Protocol', 'Protocol'), ('used', 'used'), ('convey', 'convey'), ('SSL-related', 'SSL-related'), ('alerts', 'alert'), ('peer', 'peer'), ('entity', 'entity'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+As with other applications that use SSL, alert messages are compressed and encrypted, as specified by the current state. 
+
+
+>> Tokens are: 
+ ['As', 'applications', 'use', 'SSL', ',', 'alert', 'messages', 'compressed', 'encrypted', ',', 'specified', 'current', 'state', '.']
+
+>> Bigrams are: 
+ [('As', 'applications'), ('applications', 'use'), ('use', 'SSL'), ('SSL', ','), (',', 'alert'), ('alert', 'messages'), ('messages', 'compressed'), ('compressed', 'encrypted'), ('encrypted', ','), (',', 'specified'), ('specified', 'current'), ('current', 'state'), ('state', '.')]
+
+>> Trigrams are: 
+ [('As', 'applications', 'use'), ('applications', 'use', 'SSL'), ('use', 'SSL', ','), ('SSL', ',', 'alert'), (',', 'alert', 'messages'), ('alert', 'messages', 'compressed'), ('messages', 'compressed', 'encrypted'), ('compressed', 'encrypted', ','), ('encrypted', ',', 'specified'), (',', 'specified', 'current'), ('specified', 'current', 'state'), ('current', 'state', '.')]
+
+>> POS Tags are: 
+ [('As', 'IN'), ('applications', 'NNS'), ('use', 'VBP'), ('SSL', 'NNP'), (',', ','), ('alert', 'JJ'), ('messages', 'NNS'), ('compressed', 'VBN'), ('encrypted', 'VBN'), (',', ','), ('specified', 'VBN'), ('current', 'JJ'), ('state', 'NN'), ('.', '.')]
+
+ (S
+  As/IN
+  (NP applications/NNS)
+  use/VBP
+  (NP SSL/NNP)
+  ,/,
+  (NP alert/JJ messages/NNS)
+  compressed/VBN
+  encrypted/VBN
+  ,/,
+  specified/VBN
+  (NP current/JJ state/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['applications', 'SSL', 'alert messages', 'current state']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'SSL')] 
+
+>> Stemming using Porter Stemmer: 
+ [('As', 'as'), ('applications', 'applic'), ('use', 'use'), ('SSL', 'ssl'), (',', ','), ('alert', 'alert'), ('messages', 'messag'), ('compressed', 'compress'), ('encrypted', 'encrypt'), (',', ','), ('specified', 'specifi'), ('current', 'current'), ('state', 'state'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('As', 'as'), ('applications', 'applic'), ('use', 'use'), ('SSL', 'ssl'), (',', ','), ('alert', 'alert'), ('messages', 'messag'), ('compressed', 'compress'), ('encrypted', 'encrypt'), (',', ','), ('specified', 'specifi'), ('current', 'current'), ('state', 'state'), ('.', '.')]
+
+>> Lemmatization: 
+ [('As', 'As'), ('applications', 'application'), ('use', 'use'), ('SSL', 'SSL'), (',', ','), ('alert', 'alert'), ('messages', 'message'), ('compressed', 'compressed'), ('encrypted', 'encrypted'), (',', ','), ('specified', 'specified'), ('current', 'current'), ('state', 'state'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase I    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase I After Phase I, the client and server know the following: The version of SSL The algorithms for key exchange, message authentication, and  encryption The compression method The two random numbers for key generation   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase II    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase II After Phase II The server is authenticated to the client. 
+
+
+>> Tokens are: 
+ ['Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Handshake', 'Protocol', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'I', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'I', 'After', 'Phase', 'I', ',', 'client', 'server', 'know', 'following', ':', 'The', 'version', 'SSL', 'The', 'algorithms', 'key', 'exchange', ',', 'message', 'authentication', ',', 'encryption', 'The', 'compression', 'method', 'The', 'two', 'random', 'numbers', 'key', 'generation', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'II', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'II', 'After', 'Phase', 'II', 'The', 'server', 'authenticated', 'client', '.']
+
+>> Bigrams are: 
+ [('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Handshake'), ('Handshake', 'Protocol'), ('Protocol', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Handshake'), ('Handshake', 'Protocol'), ('Protocol', '–'), ('–', 'Phase'), ('Phase', 'I'), ('I', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Handshake'), ('Handshake', 'Protocol'), ('Protocol', '–'), ('–', 'Phase'), ('Phase', 'I'), ('I', 'After'), ('After', 'Phase'), ('Phase', 'I'), ('I', ','), (',', 'client'), ('client', 'server'), ('server', 'know'), ('know', 'following'), ('following', ':'), (':', 'The'), ('The', 'version'), ('version', 'SSL'), ('SSL', 'The'), ('The', 'algorithms'), ('algorithms', 'key'), ('key', 'exchange'), ('exchange', ','), (',', 'message'), ('message', 'authentication'), ('authentication', ','), (',', 'encryption'), ('encryption', 'The'), ('The', 'compression'), ('compression', 'method'), ('method', 'The'), ('The', 'two'), ('two', 'random'), ('random', 'numbers'), ('numbers', 'key'), ('key', 'generation'), ('generation', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Handshake'), ('Handshake', 'Protocol'), ('Protocol', '–'), ('–', 'Phase'), ('Phase', 'II'), ('II', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Handshake'), ('Handshake', 'Protocol'), ('Protocol', '–'), ('–', 'Phase'), ('Phase', 'II'), ('II', 'After'), ('After', 'Phase'), ('Phase', 'II'), ('II', 'The'), ('The', 'server'), ('server', 'authenticated'), ('authenticated', 'client'), ('client', '.')]
+
+>> Trigrams are: 
+ [('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Handshake'), ('Subject', 'Handshake', 'Protocol'), ('Handshake', 'Protocol', 'Unit-10'), ('Protocol', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Handshake'), ('Subject', 'Handshake', 'Protocol'), ('Handshake', 'Protocol', '–'), ('Protocol', '–', 'Phase'), ('–', 'Phase', 'I'), ('Phase', 'I', 'Unit-10'), ('I', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Handshake'), ('Subject', 'Handshake', 'Protocol'), ('Handshake', 'Protocol', '–'), ('Protocol', '–', 'Phase'), ('–', 'Phase', 'I'), ('Phase', 'I', 'After'), ('I', 'After', 'Phase'), ('After', 'Phase', 'I'), ('Phase', 'I', ','), ('I', ',', 'client'), (',', 'client', 'server'), ('client', 'server', 'know'), ('server', 'know', 'following'), ('know', 'following', ':'), ('following', ':', 'The'), (':', 'The', 'version'), ('The', 'version', 'SSL'), ('version', 'SSL', 'The'), ('SSL', 'The', 'algorithms'), ('The', 'algorithms', 'key'), ('algorithms', 'key', 'exchange'), ('key', 'exchange', ','), ('exchange', ',', 'message'), (',', 'message', 'authentication'), ('message', 'authentication', ','), ('authentication', ',', 'encryption'), (',', 'encryption', 'The'), ('encryption', 'The', 'compression'), ('The', 'compression', 'method'), ('compression', 'method', 'The'), ('method', 'The', 'two'), ('The', 'two', 'random'), ('two', 'random', 'numbers'), ('random', 'numbers', 'key'), ('numbers', 'key', 'generation'), ('key', 'generation', 'Unit-10'), ('generation', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Handshake'), ('Subject', 'Handshake', 'Protocol'), ('Handshake', 'Protocol', '–'), ('Protocol', '–', 'Phase'), ('–', 'Phase', 'II'), ('Phase', 'II', 'Unit-10'), ('II', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Handshake'), ('Subject', 'Handshake', 'Protocol'), ('Handshake', 'Protocol', '–'), ('Protocol', '–', 'Phase'), ('–', 'Phase', 'II'), ('Phase', 'II', 'After'), ('II', 'After', 'Phase'), ('After', 'Phase', 'II'), ('Phase', 'II', 'The'), ('II', 'The', 'server'), ('The', 'server', 'authenticated'), ('server', 'authenticated', 'client'), ('authenticated', 'client', '.')]
+
+>> POS Tags are: 
+ [('Unit-10', 'JJ'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('–', 'NNP'), ('Phase', 'NNP'), ('I', 'PRP'), ('Unit-10', 'VBP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('–', 'NNP'), ('Phase', 'NNP'), ('I', 'PRP'), ('After', 'IN'), ('Phase', 'NNP'), ('I', 'PRP'), (',', ','), ('client', 'NN'), ('server', 'NN'), ('know', 'VBP'), ('following', 'VBG'), (':', ':'), ('The', 'DT'), ('version', 'NN'), ('SSL', 'NNP'), ('The', 'DT'), ('algorithms', 'NN'), ('key', 'JJ'), ('exchange', 'NN'), (',', ','), ('message', 'NN'), ('authentication', 'NN'), (',', ','), ('encryption', 'NN'), ('The', 'DT'), ('compression', 'NN'), ('method', 'VBZ'), ('The', 'DT'), ('two', 'CD'), ('random', 'NN'), ('numbers', 'NNS'), ('key', 'JJ'), ('generation', 'NN'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('–', 'NNP'), ('Phase', 'NNP'), ('II', 'NNP'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('–', 'NNP'), ('Phase', 'NNP'), ('II', 'NNP'), ('After', 'IN'), ('Phase', 'NNP'), ('II', 'NNP'), ('The', 'DT'), ('server', 'NN'), ('authenticated', 'VBD'), ('client', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-10/JJ
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Handshake/NNP
+    Protocol/NNP
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Handshake/NNP
+    Protocol/NNP
+    –/NNP
+    Phase/NNP)
+  I/PRP
+  Unit-10/VBP
+  (NP Web/NNP Security/NNP Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Handshake/NNP
+    Protocol/NNP
+    –/NNP
+    Phase/NNP)
+  I/PRP
+  After/IN
+  (NP Phase/NNP)
+  I/PRP
+  ,/,
+  (NP client/NN server/NN)
+  know/VBP
+  following/VBG
+  :/:
+  (NP The/DT version/NN SSL/NNP)
+  (NP The/DT algorithms/NN)
+  (NP key/JJ exchange/NN)
+  ,/,
+  (NP message/NN authentication/NN)
+  ,/,
+  (NP encryption/NN)
+  (NP The/DT compression/NN)
+  method/VBZ
+  The/DT
+  two/CD
+  (NP random/NN numbers/NNS)
+  (NP
+    key/JJ
+    generation/NN
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Handshake/NNP
+    Protocol/NNP
+    –/NNP
+    Phase/NNP
+    II/NNP
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Handshake/NNP
+    Protocol/NNP
+    –/NNP
+    Phase/NNP
+    II/NNP)
+  After/IN
+  (NP Phase/NNP II/NNP)
+  (NP The/DT server/NN)
+  authenticated/VBD
+  (NP client/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Handshake Protocol Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Handshake Protocol – Phase', 'Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Handshake Protocol – Phase', 'Phase', 'client server', 'The version SSL', 'The algorithms', 'key exchange', 'message authentication', 'encryption', 'The compression', 'random numbers', 'key generation Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Handshake Protocol – Phase II Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Handshake Protocol – Phase II', 'Phase II', 'The server', 'client']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Web Security Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Phase')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('I', 'i'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('I', 'i'), ('After', 'after'), ('Phase', 'phase'), ('I', 'i'), (',', ','), ('client', 'client'), ('server', 'server'), ('know', 'know'), ('following', 'follow'), (':', ':'), ('The', 'the'), ('version', 'version'), ('SSL', 'ssl'), ('The', 'the'), ('algorithms', 'algorithm'), ('key', 'key'), ('exchange', 'exchang'), (',', ','), ('message', 'messag'), ('authentication', 'authent'), (',', ','), ('encryption', 'encrypt'), ('The', 'the'), ('compression', 'compress'), ('method', 'method'), ('The', 'the'), ('two', 'two'), ('random', 'random'), ('numbers', 'number'), ('key', 'key'), ('generation', 'gener'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('II', 'ii'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('II', 'ii'), ('After', 'after'), ('Phase', 'phase'), ('II', 'ii'), ('The', 'the'), ('server', 'server'), ('authenticated', 'authent'), ('client', 'client'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('I', 'i'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('I', 'i'), ('After', 'after'), ('Phase', 'phase'), ('I', 'i'), (',', ','), ('client', 'client'), ('server', 'server'), ('know', 'know'), ('following', 'follow'), (':', ':'), ('The', 'the'), ('version', 'version'), ('SSL', 'ssl'), ('The', 'the'), ('algorithms', 'algorithm'), ('key', 'key'), ('exchange', 'exchang'), (',', ','), ('message', 'messag'), ('authentication', 'authent'), (',', ','), ('encryption', 'encrypt'), ('The', 'the'), ('compression', 'compress'), ('method', 'method'), ('The', 'the'), ('two', 'two'), ('random', 'random'), ('numbers', 'number'), ('key', 'key'), ('generation', 'generat'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('II', 'ii'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('II', 'ii'), ('After', 'after'), ('Phase', 'phase'), ('II', 'ii'), ('The', 'the'), ('server', 'server'), ('authenticated', 'authent'), ('client', 'client'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('–', '–'), ('Phase', 'Phase'), ('I', 'I'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('–', '–'), ('Phase', 'Phase'), ('I', 'I'), ('After', 'After'), ('Phase', 'Phase'), ('I', 'I'), (',', ','), ('client', 'client'), ('server', 'server'), ('know', 'know'), ('following', 'following'), (':', ':'), ('The', 'The'), ('version', 'version'), ('SSL', 'SSL'), ('The', 'The'), ('algorithms', 'algorithm'), ('key', 'key'), ('exchange', 'exchange'), (',', ','), ('message', 'message'), ('authentication', 'authentication'), (',', ','), ('encryption', 'encryption'), ('The', 'The'), ('compression', 'compression'), ('method', 'method'), ('The', 'The'), ('two', 'two'), ('random', 'random'), ('numbers', 'number'), ('key', 'key'), ('generation', 'generation'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('–', '–'), ('Phase', 'Phase'), ('II', 'II'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('–', '–'), ('Phase', 'Phase'), ('II', 'II'), ('After', 'After'), ('Phase', 'Phase'), ('II', 'II'), ('The', 'The'), ('server', 'server'), ('authenticated', 'authenticated'), ('client', 'client'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+The client knows the public key of the server if required. 
+
+
+>> Tokens are: 
+ ['The', 'client', 'knows', 'public', 'key', 'server', 'required', '.']
+
+>> Bigrams are: 
+ [('The', 'client'), ('client', 'knows'), ('knows', 'public'), ('public', 'key'), ('key', 'server'), ('server', 'required'), ('required', '.')]
+
+>> Trigrams are: 
+ [('The', 'client', 'knows'), ('client', 'knows', 'public'), ('knows', 'public', 'key'), ('public', 'key', 'server'), ('key', 'server', 'required'), ('server', 'required', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('client', 'NN'), ('knows', 'VBZ'), ('public', 'JJ'), ('key', 'JJ'), ('server', 'NN'), ('required', 'VBN'), ('.', '.')]
+
+ (S
+  (NP The/DT client/NN)
+  knows/VBZ
+  (NP public/JJ key/JJ server/NN)
+  required/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The client', 'public key server']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('knows', 'know'), ('public', 'public'), ('key', 'key'), ('server', 'server'), ('required', 'requir'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('knows', 'know'), ('public', 'public'), ('key', 'key'), ('server', 'server'), ('required', 'requir'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('client', 'client'), ('knows', 'know'), ('public', 'public'), ('key', 'key'), ('server', 'server'), ('required', 'required'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase III   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase IV    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject   SSL Handshake Protocol Phases   HTTPS (HTTP over SSL) HTTPS (HTTP over SSL) refers to the combination of HTTP and SSL to implement secure communication between a Web browser and a Web server. 
+
+
+>> Tokens are: 
+ ['Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'III', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'IV', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'SSL', 'Handshake', 'Protocol', 'Phases', 'HTTPS', '(', 'HTTP', 'SSL', ')', 'HTTPS', '(', 'HTTP', 'SSL', ')', 'refers', 'combination', 'HTTP', 'SSL', 'implement', 'secure', 'communication', 'Web', 'browser', 'Web', 'server', '.']
+
+>> Bigrams are: 
+ [('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Handshake'), ('Handshake', 'Protocol'), ('Protocol', '–'), ('–', 'Phase'), ('Phase', 'III'), ('III', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Handshake'), ('Handshake', 'Protocol'), ('Protocol', '–'), ('–', 'Phase'), ('Phase', 'IV'), ('IV', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'SSL'), ('SSL', 'Handshake'), ('Handshake', 'Protocol'), ('Protocol', 'Phases'), ('Phases', 'HTTPS'), ('HTTPS', '('), ('(', 'HTTP'), ('HTTP', 'SSL'), ('SSL', ')'), (')', 'HTTPS'), ('HTTPS', '('), ('(', 'HTTP'), ('HTTP', 'SSL'), ('SSL', ')'), (')', 'refers'), ('refers', 'combination'), ('combination', 'HTTP'), ('HTTP', 'SSL'), ('SSL', 'implement'), ('implement', 'secure'), ('secure', 'communication'), ('communication', 'Web'), ('Web', 'browser'), ('browser', 'Web'), ('Web', 'server'), ('server', '.')]
+
+>> Trigrams are: 
+ [('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Handshake'), ('Subject', 'Handshake', 'Protocol'), ('Handshake', 'Protocol', '–'), ('Protocol', '–', 'Phase'), ('–', 'Phase', 'III'), ('Phase', 'III', 'Unit-10'), ('III', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Handshake'), ('Subject', 'Handshake', 'Protocol'), ('Handshake', 'Protocol', '–'), ('Protocol', '–', 'Phase'), ('–', 'Phase', 'IV'), ('Phase', 'IV', 'Unit-10'), ('IV', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'SSL'), ('Subject', 'SSL', 'Handshake'), ('SSL', 'Handshake', 'Protocol'), ('Handshake', 'Protocol', 'Phases'), ('Protocol', 'Phases', 'HTTPS'), ('Phases', 'HTTPS', '('), ('HTTPS', '(', 'HTTP'), ('(', 'HTTP', 'SSL'), ('HTTP', 'SSL', ')'), ('SSL', ')', 'HTTPS'), (')', 'HTTPS', '('), ('HTTPS', '(', 'HTTP'), ('(', 'HTTP', 'SSL'), ('HTTP', 'SSL', ')'), ('SSL', ')', 'refers'), (')', 'refers', 'combination'), ('refers', 'combination', 'HTTP'), ('combination', 'HTTP', 'SSL'), ('HTTP', 'SSL', 'implement'), ('SSL', 'implement', 'secure'), ('implement', 'secure', 'communication'), ('secure', 'communication', 'Web'), ('communication', 'Web', 'browser'), ('Web', 'browser', 'Web'), ('browser', 'Web', 'server'), ('Web', 'server', '.')]
+
+>> POS Tags are: 
+ [('Unit-10', 'JJ'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('–', 'NNP'), ('Phase', 'NNP'), ('III', 'NNP'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('–', 'NNP'), ('Phase', 'NNP'), ('IV', 'NNP'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('SSL', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('Phases', 'NNP'), ('HTTPS', 'NNP'), ('(', '('), ('HTTP', 'NNP'), ('SSL', 'NNP'), (')', ')'), ('HTTPS', 'NNP'), ('(', '('), ('HTTP', 'NNP'), ('SSL', 'NNP'), (')', ')'), ('refers', 'VBZ'), ('combination', 'NN'), ('HTTP', 'NNP'), ('SSL', 'NNP'), ('implement', 'JJ'), ('secure', 'NN'), ('communication', 'NN'), ('Web', 'NNP'), ('browser', 'NN'), ('Web', 'NNP'), ('server', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-10/JJ
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Handshake/NNP
+    Protocol/NNP
+    –/NNP
+    Phase/NNP
+    III/NNP
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Handshake/NNP
+    Protocol/NNP
+    –/NNP
+    Phase/NNP
+    IV/NNP
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    SSL/NNP
+    Handshake/NNP
+    Protocol/NNP
+    Phases/NNP
+    HTTPS/NNP)
+  (/(
+  (NP HTTP/NNP SSL/NNP)
+  )/)
+  (NP HTTPS/NNP)
+  (/(
+  (NP HTTP/NNP SSL/NNP)
+  )/)
+  refers/VBZ
+  (NP combination/NN HTTP/NNP SSL/NNP)
+  (NP
+    implement/JJ
+    secure/NN
+    communication/NN
+    Web/NNP
+    browser/NN
+    Web/NNP
+    server/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Handshake Protocol – Phase III Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Handshake Protocol – Phase IV Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject SSL Handshake Protocol Phases HTTPS', 'HTTP SSL', 'HTTPS', 'HTTP SSL', 'combination HTTP SSL', 'implement secure communication Web browser Web server']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Phases HTTPS'), ('ORGANIZATION', 'HTTP'), ('ORGANIZATION', 'HTTP'), ('ORGANIZATION', 'HTTP')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('III', 'iii'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('IV', 'iv'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('SSL', 'ssl'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('Phases', 'phase'), ('HTTPS', 'http'), ('(', '('), ('HTTP', 'http'), ('SSL', 'ssl'), (')', ')'), ('HTTPS', 'http'), ('(', '('), ('HTTP', 'http'), ('SSL', 'ssl'), (')', ')'), ('refers', 'refer'), ('combination', 'combin'), ('HTTP', 'http'), ('SSL', 'ssl'), ('implement', 'implement'), ('secure', 'secur'), ('communication', 'commun'), ('Web', 'web'), ('browser', 'browser'), ('Web', 'web'), ('server', 'server'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('III', 'iii'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('–', '–'), ('Phase', 'phase'), ('IV', 'iv'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('SSL', 'ssl'), ('Handshake', 'handshak'), ('Protocol', 'protocol'), ('Phases', 'phase'), ('HTTPS', 'https'), ('(', '('), ('HTTP', 'http'), ('SSL', 'ssl'), (')', ')'), ('HTTPS', 'https'), ('(', '('), ('HTTP', 'http'), ('SSL', 'ssl'), (')', ')'), ('refers', 'refer'), ('combination', 'combin'), ('HTTP', 'http'), ('SSL', 'ssl'), ('implement', 'implement'), ('secure', 'secur'), ('communication', 'communic'), ('Web', 'web'), ('browser', 'browser'), ('Web', 'web'), ('server', 'server'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('–', '–'), ('Phase', 'Phase'), ('III', 'III'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('–', '–'), ('Phase', 'Phase'), ('IV', 'IV'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('SSL', 'SSL'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('Phases', 'Phases'), ('HTTPS', 'HTTPS'), ('(', '('), ('HTTP', 'HTTP'), ('SSL', 'SSL'), (')', ')'), ('HTTPS', 'HTTPS'), ('(', '('), ('HTTP', 'HTTP'), ('SSL', 'SSL'), (')', ')'), ('refers', 'refers'), ('combination', 'combination'), ('HTTP', 'HTTP'), ('SSL', 'SSL'), ('implement', 'implement'), ('secure', 'secure'), ('communication', 'communication'), ('Web', 'Web'), ('browser', 'browser'), ('Web', 'Web'), ('server', 'server'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+When HTTPS is used, the following elements of the communication are encrypted: URL of the requested document Contents of the document Contents of browser forms (filled in by browser user) Cookies sent from browser to server and from server to browser Contents of HTTP header   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSH (Secure Shell) Secure Shell (SSH) is a protocol for secure network communications designed to be relatively simple and inexpensive to implement. 
+
+
+>> Tokens are: 
+ ['When', 'HTTPS', 'used', ',', 'following', 'elements', 'communication', 'encrypted', ':', 'URL', 'requested', 'document', 'Contents', 'document', 'Contents', 'browser', 'forms', '(', 'filled', 'browser', 'user', ')', 'Cookies', 'sent', 'browser', 'server', 'server', 'browser', 'Contents', 'HTTP', 'header', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'SSH', '(', 'Secure', 'Shell', ')', 'Secure', 'Shell', '(', 'SSH', ')', 'protocol', 'secure', 'network', 'communications', 'designed', 'relatively', 'simple', 'inexpensive', 'implement', '.']
+
+>> Bigrams are: 
+ [('When', 'HTTPS'), ('HTTPS', 'used'), ('used', ','), (',', 'following'), ('following', 'elements'), ('elements', 'communication'), ('communication', 'encrypted'), ('encrypted', ':'), (':', 'URL'), ('URL', 'requested'), ('requested', 'document'), ('document', 'Contents'), ('Contents', 'document'), ('document', 'Contents'), ('Contents', 'browser'), ('browser', 'forms'), ('forms', '('), ('(', 'filled'), ('filled', 'browser'), ('browser', 'user'), ('user', ')'), (')', 'Cookies'), ('Cookies', 'sent'), ('sent', 'browser'), ('browser', 'server'), ('server', 'server'), ('server', 'browser'), ('browser', 'Contents'), ('Contents', 'HTTP'), ('HTTP', 'header'), ('header', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'SSH'), ('SSH', '('), ('(', 'Secure'), ('Secure', 'Shell'), ('Shell', ')'), (')', 'Secure'), ('Secure', 'Shell'), ('Shell', '('), ('(', 'SSH'), ('SSH', ')'), (')', 'protocol'), ('protocol', 'secure'), ('secure', 'network'), ('network', 'communications'), ('communications', 'designed'), ('designed', 'relatively'), ('relatively', 'simple'), ('simple', 'inexpensive'), ('inexpensive', 'implement'), ('implement', '.')]
+
+>> Trigrams are: 
+ [('When', 'HTTPS', 'used'), ('HTTPS', 'used', ','), ('used', ',', 'following'), (',', 'following', 'elements'), ('following', 'elements', 'communication'), ('elements', 'communication', 'encrypted'), ('communication', 'encrypted', ':'), ('encrypted', ':', 'URL'), (':', 'URL', 'requested'), ('URL', 'requested', 'document'), ('requested', 'document', 'Contents'), ('document', 'Contents', 'document'), ('Contents', 'document', 'Contents'), ('document', 'Contents', 'browser'), ('Contents', 'browser', 'forms'), ('browser', 'forms', '('), ('forms', '(', 'filled'), ('(', 'filled', 'browser'), ('filled', 'browser', 'user'), ('browser', 'user', ')'), ('user', ')', 'Cookies'), (')', 'Cookies', 'sent'), ('Cookies', 'sent', 'browser'), ('sent', 'browser', 'server'), ('browser', 'server', 'server'), ('server', 'server', 'browser'), ('server', 'browser', 'Contents'), ('browser', 'Contents', 'HTTP'), ('Contents', 'HTTP', 'header'), ('HTTP', 'header', 'Unit-10'), ('header', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'SSH'), ('Subject', 'SSH', '('), ('SSH', '(', 'Secure'), ('(', 'Secure', 'Shell'), ('Secure', 'Shell', ')'), ('Shell', ')', 'Secure'), (')', 'Secure', 'Shell'), ('Secure', 'Shell', '('), ('Shell', '(', 'SSH'), ('(', 'SSH', ')'), ('SSH', ')', 'protocol'), (')', 'protocol', 'secure'), ('protocol', 'secure', 'network'), ('secure', 'network', 'communications'), ('network', 'communications', 'designed'), ('communications', 'designed', 'relatively'), ('designed', 'relatively', 'simple'), ('relatively', 'simple', 'inexpensive'), ('simple', 'inexpensive', 'implement'), ('inexpensive', 'implement', '.')]
+
+>> POS Tags are: 
+ [('When', 'WRB'), ('HTTPS', 'NNP'), ('used', 'VBD'), (',', ','), ('following', 'VBG'), ('elements', 'NNS'), ('communication', 'NN'), ('encrypted', 'VBN'), (':', ':'), ('URL', 'NNP'), ('requested', 'VBD'), ('document', 'NN'), ('Contents', 'NNPS'), ('document', 'NN'), ('Contents', 'NNP'), ('browser', 'NN'), ('forms', 'NNS'), ('(', '('), ('filled', 'VBN'), ('browser', 'RB'), ('user', 'NN'), (')', ')'), ('Cookies', 'NNPS'), ('sent', 'VBD'), ('browser', 'NN'), ('server', 'NN'), ('server', 'RB'), ('browser', 'VBD'), ('Contents', 'NNP'), ('HTTP', 'NNP'), ('header', 'VB'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('SSH', 'NNP'), ('(', '('), ('Secure', 'NNP'), ('Shell', 'NNP'), (')', ')'), ('Secure', 'NNP'), ('Shell', 'NNP'), ('(', '('), ('SSH', 'NNP'), (')', ')'), ('protocol', 'NN'), ('secure', 'NN'), ('network', 'NN'), ('communications', 'NNS'), ('designed', 'VBN'), ('relatively', 'RB'), ('simple', 'JJ'), ('inexpensive', 'JJ'), ('implement', 'NN'), ('.', '.')]
+
+ (S
+  When/WRB
+  (NP HTTPS/NNP)
+  used/VBD
+  ,/,
+  following/VBG
+  (NP elements/NNS communication/NN)
+  encrypted/VBN
+  :/:
+  (NP URL/NNP)
+  requested/VBD
+  (NP document/NN)
+  Contents/NNPS
+  (NP document/NN Contents/NNP browser/NN forms/NNS)
+  (/(
+  filled/VBN
+  browser/RB
+  (NP user/NN)
+  )/)
+  Cookies/NNPS
+  sent/VBD
+  (NP browser/NN server/NN)
+  server/RB
+  browser/VBD
+  (NP Contents/NNP HTTP/NNP)
+  header/VB
+  (NP
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP SSH/NNP)
+  (/(
+  (NP Secure/NNP Shell/NNP)
+  )/)
+  (NP Secure/NNP Shell/NNP)
+  (/(
+  (NP SSH/NNP)
+  )/)
+  (NP protocol/NN secure/NN network/NN communications/NNS)
+  designed/VBN
+  relatively/RB
+  (NP simple/JJ inexpensive/JJ implement/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['HTTPS', 'elements communication', 'URL', 'document', 'document Contents browser forms', 'user', 'browser server', 'Contents HTTP', 'Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject SSH', 'Secure Shell', 'Secure Shell', 'SSH', 'protocol secure network communications', 'simple inexpensive implement']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'HTTPS'), ('ORGANIZATION', 'URL'), ('ORGANIZATION', 'Contents'), ('PERSON', 'Cookies'), ('ORGANIZATION', 'Contents'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'Secure Shell'), ('ORGANIZATION', 'SSH')] 
+
+>> Stemming using Porter Stemmer: 
+ [('When', 'when'), ('HTTPS', 'http'), ('used', 'use'), (',', ','), ('following', 'follow'), ('elements', 'element'), ('communication', 'commun'), ('encrypted', 'encrypt'), (':', ':'), ('URL', 'url'), ('requested', 'request'), ('document', 'document'), ('Contents', 'content'), ('document', 'document'), ('Contents', 'content'), ('browser', 'browser'), ('forms', 'form'), ('(', '('), ('filled', 'fill'), ('browser', 'browser'), ('user', 'user'), (')', ')'), ('Cookies', 'cooki'), ('sent', 'sent'), ('browser', 'browser'), ('server', 'server'), ('server', 'server'), ('browser', 'browser'), ('Contents', 'content'), ('HTTP', 'http'), ('header', 'header'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('SSH', 'ssh'), ('(', '('), ('Secure', 'secur'), ('Shell', 'shell'), (')', ')'), ('Secure', 'secur'), ('Shell', 'shell'), ('(', '('), ('SSH', 'ssh'), (')', ')'), ('protocol', 'protocol'), ('secure', 'secur'), ('network', 'network'), ('communications', 'commun'), ('designed', 'design'), ('relatively', 'rel'), ('simple', 'simpl'), ('inexpensive', 'inexpens'), ('implement', 'implement'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('When', 'when'), ('HTTPS', 'https'), ('used', 'use'), (',', ','), ('following', 'follow'), ('elements', 'element'), ('communication', 'communic'), ('encrypted', 'encrypt'), (':', ':'), ('URL', 'url'), ('requested', 'request'), ('document', 'document'), ('Contents', 'content'), ('document', 'document'), ('Contents', 'content'), ('browser', 'browser'), ('forms', 'form'), ('(', '('), ('filled', 'fill'), ('browser', 'browser'), ('user', 'user'), (')', ')'), ('Cookies', 'cooki'), ('sent', 'sent'), ('browser', 'browser'), ('server', 'server'), ('server', 'server'), ('browser', 'browser'), ('Contents', 'content'), ('HTTP', 'http'), ('header', 'header'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('SSH', 'ssh'), ('(', '('), ('Secure', 'secur'), ('Shell', 'shell'), (')', ')'), ('Secure', 'secur'), ('Shell', 'shell'), ('(', '('), ('SSH', 'ssh'), (')', ')'), ('protocol', 'protocol'), ('secure', 'secur'), ('network', 'network'), ('communications', 'communic'), ('designed', 'design'), ('relatively', 'relat'), ('simple', 'simpl'), ('inexpensive', 'inexpens'), ('implement', 'implement'), ('.', '.')]
+
+>> Lemmatization: 
+ [('When', 'When'), ('HTTPS', 'HTTPS'), ('used', 'used'), (',', ','), ('following', 'following'), ('elements', 'element'), ('communication', 'communication'), ('encrypted', 'encrypted'), (':', ':'), ('URL', 'URL'), ('requested', 'requested'), ('document', 'document'), ('Contents', 'Contents'), ('document', 'document'), ('Contents', 'Contents'), ('browser', 'browser'), ('forms', 'form'), ('(', '('), ('filled', 'filled'), ('browser', 'browser'), ('user', 'user'), (')', ')'), ('Cookies', 'Cookies'), ('sent', 'sent'), ('browser', 'browser'), ('server', 'server'), ('server', 'server'), ('browser', 'browser'), ('Contents', 'Contents'), ('HTTP', 'HTTP'), ('header', 'header'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('SSH', 'SSH'), ('(', '('), ('Secure', 'Secure'), ('Shell', 'Shell'), (')', ')'), ('Secure', 'Secure'), ('Shell', 'Shell'), ('(', '('), ('SSH', 'SSH'), (')', ')'), ('protocol', 'protocol'), ('secure', 'secure'), ('network', 'network'), ('communications', 'communication'), ('designed', 'designed'), ('relatively', 'relatively'), ('simple', 'simple'), ('inexpensive', 'inexpensive'), ('implement', 'implement'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+The initial version, SSH1 was focused on providing a secure remote logon facility to replace TELNET and other remote logon schemes that provided no security. 
+
+
+>> Tokens are: 
+ ['The', 'initial', 'version', ',', 'SSH1', 'focused', 'providing', 'secure', 'remote', 'logon', 'facility', 'replace', 'TELNET', 'remote', 'logon', 'schemes', 'provided', 'security', '.']
+
+>> Bigrams are: 
+ [('The', 'initial'), ('initial', 'version'), ('version', ','), (',', 'SSH1'), ('SSH1', 'focused'), ('focused', 'providing'), ('providing', 'secure'), ('secure', 'remote'), ('remote', 'logon'), ('logon', 'facility'), ('facility', 'replace'), ('replace', 'TELNET'), ('TELNET', 'remote'), ('remote', 'logon'), ('logon', 'schemes'), ('schemes', 'provided'), ('provided', 'security'), ('security', '.')]
+
+>> Trigrams are: 
+ [('The', 'initial', 'version'), ('initial', 'version', ','), ('version', ',', 'SSH1'), (',', 'SSH1', 'focused'), ('SSH1', 'focused', 'providing'), ('focused', 'providing', 'secure'), ('providing', 'secure', 'remote'), ('secure', 'remote', 'logon'), ('remote', 'logon', 'facility'), ('logon', 'facility', 'replace'), ('facility', 'replace', 'TELNET'), ('replace', 'TELNET', 'remote'), ('TELNET', 'remote', 'logon'), ('remote', 'logon', 'schemes'), ('logon', 'schemes', 'provided'), ('schemes', 'provided', 'security'), ('provided', 'security', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('initial', 'JJ'), ('version', 'NN'), (',', ','), ('SSH1', 'NNP'), ('focused', 'VBD'), ('providing', 'VBG'), ('secure', 'JJ'), ('remote', 'JJ'), ('logon', 'NN'), ('facility', 'NN'), ('replace', 'VB'), ('TELNET', 'NNP'), ('remote', 'VB'), ('logon', 'NN'), ('schemes', 'NNS'), ('provided', 'VBD'), ('security', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT initial/JJ version/NN)
+  ,/,
+  (NP SSH1/NNP)
+  focused/VBD
+  providing/VBG
+  (NP secure/JJ remote/JJ logon/NN facility/NN)
+  replace/VB
+  (NP TELNET/NNP)
+  remote/VB
+  (NP logon/NN schemes/NNS)
+  provided/VBD
+  (NP security/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The initial version', 'SSH1', 'secure remote logon facility', 'TELNET', 'logon schemes', 'security']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'SSH1'), ('ORGANIZATION', 'TELNET')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('initial', 'initi'), ('version', 'version'), (',', ','), ('SSH1', 'ssh1'), ('focused', 'focus'), ('providing', 'provid'), ('secure', 'secur'), ('remote', 'remot'), ('logon', 'logon'), ('facility', 'facil'), ('replace', 'replac'), ('TELNET', 'telnet'), ('remote', 'remot'), ('logon', 'logon'), ('schemes', 'scheme'), ('provided', 'provid'), ('security', 'secur'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('initial', 'initi'), ('version', 'version'), (',', ','), ('SSH1', 'ssh1'), ('focused', 'focus'), ('providing', 'provid'), ('secure', 'secur'), ('remote', 'remot'), ('logon', 'logon'), ('facility', 'facil'), ('replace', 'replac'), ('TELNET', 'telnet'), ('remote', 'remot'), ('logon', 'logon'), ('schemes', 'scheme'), ('provided', 'provid'), ('security', 'secur'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('initial', 'initial'), ('version', 'version'), (',', ','), ('SSH1', 'SSH1'), ('focused', 'focused'), ('providing', 'providing'), ('secure', 'secure'), ('remote', 'remote'), ('logon', 'logon'), ('facility', 'facility'), ('replace', 'replace'), ('TELNET', 'TELNET'), ('remote', 'remote'), ('logon', 'logon'), ('schemes', 'scheme'), ('provided', 'provided'), ('security', 'security'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSH (Secure Shell) – Cont…    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject 
+
+
+>> Tokens are: 
+ ['Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'SSH', '(', 'Secure', 'Shell', ')', '–', 'Cont…', 'Unit-10', 'Web', 'Security', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject']
+
+>> Bigrams are: 
+ [('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'SSH'), ('SSH', '('), ('(', 'Secure'), ('Secure', 'Shell'), ('Shell', ')'), (')', '–'), ('–', 'Cont…'), ('Cont…', 'Unit-10'), ('Unit-10', 'Web'), ('Web', 'Security'), ('Security', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject')]
+
+>> Trigrams are: 
+ [('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'SSH'), ('Subject', 'SSH', '('), ('SSH', '(', 'Secure'), ('(', 'Secure', 'Shell'), ('Secure', 'Shell', ')'), ('Shell', ')', '–'), (')', '–', 'Cont…'), ('–', 'Cont…', 'Unit-10'), ('Cont…', 'Unit-10', 'Web'), ('Unit-10', 'Web', 'Security'), ('Web', 'Security', 'Darshan'), ('Security', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject')]
+
+>> POS Tags are: 
+ [('Unit-10', 'JJ'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('SSH', 'NNP'), ('(', '('), ('Secure', 'NNP'), ('Shell', 'NNP'), (')', ')'), ('–', 'VBP'), ('Cont…', 'NNP'), ('Unit-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP')]
+
+ (S
+  (NP
+    Unit-10/JJ
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP SSH/NNP)
+  (/(
+  (NP Secure/NNP Shell/NNP)
+  )/)
+  –/VBP
+  (NP
+    Cont…/NNP
+    Unit-10/NNP
+    Web/NNP
+    Security/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP)) 
+
+
+>> Noun Phrases are: 
+ ['Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject SSH', 'Secure Shell', 'Cont… Unit-10 Web Security Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'Secure Shell'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('SSH', 'ssh'), ('(', '('), ('Secure', 'secur'), ('Shell', 'shell'), (')', ')'), ('–', '–'), ('Cont…', 'cont…'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('SSH', 'ssh'), ('(', '('), ('Secure', 'secur'), ('Shell', 'shell'), (')', ')'), ('–', '–'), ('Cont…', 'cont…'), ('Unit-10', 'unit-10'), ('Web', 'web'), ('Security', 'secur'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject')]
+
+>> Lemmatization: 
+ [('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('SSH', 'SSH'), ('(', '('), ('Secure', 'Secure'), ('Shell', 'Shell'), (')', ')'), ('–', '–'), ('Cont…', 'Cont…'), ('Unit-10', 'Unit-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject')]
+

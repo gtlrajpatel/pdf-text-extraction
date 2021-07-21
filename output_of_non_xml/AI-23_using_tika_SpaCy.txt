@@ -1,0 +1,460 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-23 Machine Learning Tutorial  Machine Learning tutorial provides basic and advanced concepts of machine learning. 
+
+
+>> Tokens are: 
+[AI-23, Machine, Learning, Tutorial,  , Machine, Learning, tutorial, provides, basic, advanced, concepts, machine, learning, .] 
+
+>> PoS Tags are: 
+[('AI-23', 'NUM'), ('Machine', 'PROPN'), ('Learning', 'PROPN'), ('Tutorial', 'PROPN'), (' ', 'SPACE'), ('Machine', 'PROPN'), ('Learning', 'PROPN'), ('tutorial', 'NOUN'), ('provides', 'VERB'), ('basic', 'ADJ'), ('advanced', 'ADJ'), ('concepts', 'NOUN'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI-23', 'nummod'), ('Machine', 'compound'), ('Learning', 'compound'), ('Tutorial', 'compound'), (' ', 'advmod'), ('Machine', 'compound'), ('Learning', 'compound'), ('tutorial', 'nsubj'), ('provides', 'ROOT'), ('basic', 'amod'), ('advanced', 'conj'), ('concepts', 'dobj'), ('machine', 'compound'), ('learning', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AI-23, Machine], [Machine, Learning], [Learning, Tutorial], [Tutorial,  ], [ , Machine], [Machine, Learning], [Learning, tutorial], [tutorial, provides], [provides, basic], [basic, advanced], [advanced, concepts], [concepts, machine], [machine, learning], [learning, .]]
+
+>> Trigrams: 
+[[AI-23, Machine, Learning], [Machine, Learning, Tutorial], [Learning, Tutorial,  ], [Tutorial,  , Machine], [ , Machine, Learning], [Machine, Learning, tutorial], [Learning, tutorial, provides], [tutorial, provides, basic], [provides, basic, advanced], [basic, advanced, concepts], [advanced, concepts, machine], [concepts, machine, learning], [machine, learning, .]]
+
+>> Noun Phrases are: 
+[AI-23 Machine Learning Tutorial  Machine Learning tutorial, basic and advanced concepts, machine learning]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 2 =============================
+
+Our machine learning tutorial is designed for students and working professionals. 
+
+
+>> Tokens are: 
+[machine, learning, tutorial, designed, students, working, professionals, .] 
+
+>> PoS Tags are: 
+[('machine', 'NOUN'), ('learning', 'VERB'), ('tutorial', 'NOUN'), ('designed', 'VERB'), ('students', 'NOUN'), ('working', 'VERB'), ('professionals', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('machine', 'npadvmod'), ('learning', 'amod'), ('tutorial', 'nsubjpass'), ('designed', 'ROOT'), ('students', 'pobj'), ('working', 'amod'), ('professionals', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[machine, learning], [learning, tutorial], [tutorial, designed], [designed, students], [students, working], [working, professionals], [professionals, .]]
+
+>> Trigrams: 
+[[machine, learning, tutorial], [learning, tutorial, designed], [tutorial, designed, students], [designed, students, working], [students, working, professionals], [working, professionals, .]]
+
+>> Noun Phrases are: 
+[Our machine learning tutorial, students, working professionals]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 3 =============================
+
+Machine learning is a growing technology which enables computers to learn automatically from past data. 
+
+
+>> Tokens are: 
+[Machine, learning, growing, technology, enables, computers, learn, automatically, past, data, .] 
+
+>> PoS Tags are: 
+[('Machine', 'NOUN'), ('learning', 'NOUN'), ('growing', 'VERB'), ('technology', 'NOUN'), ('enables', 'VERB'), ('computers', 'NOUN'), ('learn', 'VERB'), ('automatically', 'ADV'), ('past', 'ADJ'), ('data', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Machine', 'compound'), ('learning', 'nsubj'), ('growing', 'amod'), ('technology', 'attr'), ('enables', 'relcl'), ('computers', 'dobj'), ('learn', 'xcomp'), ('automatically', 'advmod'), ('past', 'amod'), ('data', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Machine, learning], [learning, growing], [growing, technology], [technology, enables], [enables, computers], [computers, learn], [learn, automatically], [automatically, past], [past, data], [data, .]]
+
+>> Trigrams: 
+[[Machine, learning, growing], [learning, growing, technology], [growing, technology, enables], [technology, enables, computers], [enables, computers, learn], [computers, learn, automatically], [learn, automatically, past], [automatically, past, data], [past, data, .]]
+
+>> Noun Phrases are: 
+[Machine learning, a growing technology, computers, past data]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+Machine learning uses various algorithms for building mathematical models and making predictions using historical data or information. 
+
+
+>> Tokens are: 
+[Machine, learning, uses, algorithms, building, mathematical, models, making, predictions, historical, data, information, .] 
+
+>> PoS Tags are: 
+[('Machine', 'NOUN'), ('learning', 'NOUN'), ('uses', 'VERB'), ('algorithms', 'NOUN'), ('building', 'VERB'), ('mathematical', 'ADJ'), ('models', 'NOUN'), ('making', 'VERB'), ('predictions', 'NOUN'), ('historical', 'ADJ'), ('data', 'NOUN'), ('information', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Machine', 'compound'), ('learning', 'nsubj'), ('uses', 'ROOT'), ('algorithms', 'dobj'), ('building', 'pcomp'), ('mathematical', 'amod'), ('models', 'dobj'), ('making', 'conj'), ('predictions', 'dobj'), ('historical', 'amod'), ('data', 'dobj'), ('information', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Machine, learning], [learning, uses], [uses, algorithms], [algorithms, building], [building, mathematical], [mathematical, models], [models, making], [making, predictions], [predictions, historical], [historical, data], [data, information], [information, .]]
+
+>> Trigrams: 
+[[Machine, learning, uses], [learning, uses, algorithms], [uses, algorithms, building], [algorithms, building, mathematical], [building, mathematical, models], [mathematical, models, making], [models, making, predictions], [making, predictions, historical], [predictions, historical, data], [historical, data, information], [data, information, .]]
+
+>> Noun Phrases are: 
+[Machine learning, various algorithms, mathematical models, predictions, historical data, information]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 5 =============================
+
+Currently, it is being used for various tasks such as image recognition, speech recognition, email filtering, Facebook auto-tagging, recommender system, and many more. 
+
+
+>> Tokens are: 
+[Currently, ,, tasks, image, recognition, ,, speech, recognition, ,, email, filtering, ,, Facebook, auto, -, tagging, ,, recommender, system, ,, .] 
+
+>> PoS Tags are: 
+[('Currently', 'ADV'), (',', 'PUNCT'), ('tasks', 'NOUN'), ('image', 'NOUN'), ('recognition', 'NOUN'), (',', 'PUNCT'), ('speech', 'NOUN'), ('recognition', 'NOUN'), (',', 'PUNCT'), ('email', 'NOUN'), ('filtering', 'NOUN'), (',', 'PUNCT'), ('Facebook', 'PROPN'), ('auto', 'NOUN'), ('-', 'PUNCT'), ('tagging', 'NOUN'), (',', 'PUNCT'), ('recommender', 'NOUN'), ('system', 'NOUN'), (',', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Currently', 'advmod'), (',', 'punct'), ('tasks', 'pobj'), ('image', 'compound'), ('recognition', 'pobj'), (',', 'punct'), ('speech', 'compound'), ('recognition', 'conj'), (',', 'punct'), ('email', 'compound'), ('filtering', 'conj'), (',', 'punct'), ('Facebook', 'nmod'), ('auto', 'compound'), ('-', 'punct'), ('tagging', 'nmod'), (',', 'punct'), ('recommender', 'compound'), ('system', 'conj'), (',', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Currently, ,], [,, tasks], [tasks, image], [image, recognition], [recognition, ,], [,, speech], [speech, recognition], [recognition, ,], [,, email], [email, filtering], [filtering, ,], [,, Facebook], [Facebook, auto], [auto, -], [-, tagging], [tagging, ,], [,, recommender], [recommender, system], [system, ,], [,, .]]
+
+>> Trigrams: 
+[[Currently, ,, tasks], [,, tasks, image], [tasks, image, recognition], [image, recognition, ,], [recognition, ,, speech], [,, speech, recognition], [speech, recognition, ,], [recognition, ,, email], [,, email, filtering], [email, filtering, ,], [filtering, ,, Facebook], [,, Facebook, auto], [Facebook, auto, -], [auto, -, tagging], [-, tagging, ,], [tagging, ,, recommender], [,, recommender, system], [recommender, system, ,], [system, ,, .]]
+
+>> Noun Phrases are: 
+[it, various tasks, image recognition, speech recognition, email filtering, Facebook auto-tagging, recommender system]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+This machine learning tutorial gives you an introduction to machine learning along with the wide range of machine learning techniques such as Supervised, Unsupervised, and Reinforcement learning. 
+
+
+>> Tokens are: 
+[machine, learning, tutorial, gives, introduction, machine, learning, wide, range, machine, learning, techniques, Supervised, ,, Unsupervised, ,, Reinforcement, learning, .] 
+
+>> PoS Tags are: 
+[('machine', 'NOUN'), ('learning', 'VERB'), ('tutorial', 'NOUN'), ('gives', 'VERB'), ('introduction', 'NOUN'), ('machine', 'NOUN'), ('learning', 'VERB'), ('wide', 'ADJ'), ('range', 'NOUN'), ('machine', 'NOUN'), ('learning', 'VERB'), ('techniques', 'NOUN'), ('Supervised', 'PROPN'), (',', 'PUNCT'), ('Unsupervised', 'PROPN'), (',', 'PUNCT'), ('Reinforcement', 'NOUN'), ('learning', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('machine', 'npadvmod'), ('learning', 'amod'), ('tutorial', 'nsubj'), ('gives', 'ROOT'), ('introduction', 'dobj'), ('machine', 'compound'), ('learning', 'pobj'), ('wide', 'amod'), ('range', 'pobj'), ('machine', 'compound'), ('learning', 'compound'), ('techniques', 'pobj'), ('Supervised', 'pobj'), (',', 'punct'), ('Unsupervised', 'conj'), (',', 'punct'), ('Reinforcement', 'compound'), ('learning', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[machine, learning], [learning, tutorial], [tutorial, gives], [gives, introduction], [introduction, machine], [machine, learning], [learning, wide], [wide, range], [range, machine], [machine, learning], [learning, techniques], [techniques, Supervised], [Supervised, ,], [,, Unsupervised], [Unsupervised, ,], [,, Reinforcement], [Reinforcement, learning], [learning, .]]
+
+>> Trigrams: 
+[[machine, learning, tutorial], [learning, tutorial, gives], [tutorial, gives, introduction], [gives, introduction, machine], [introduction, machine, learning], [machine, learning, wide], [learning, wide, range], [wide, range, machine], [range, machine, learning], [machine, learning, techniques], [learning, techniques, Supervised], [techniques, Supervised, ,], [Supervised, ,, Unsupervised], [,, Unsupervised, ,], [Unsupervised, ,, Reinforcement], [,, Reinforcement, learning], [Reinforcement, learning, .]]
+
+>> Noun Phrases are: 
+[This machine learning tutorial, you, an introduction, the wide range, machine learning techniques, Supervised, Unsupervised, Reinforcement learning]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+You will learn about regression and classification models, clustering methods, hidden Markov models, and various sequential models. 
+
+
+>> Tokens are: 
+[learn, regression, classification, models, ,, clustering, methods, ,, hidden, Markov, models, ,, sequential, models, .] 
+
+>> PoS Tags are: 
+[('learn', 'VERB'), ('regression', 'NOUN'), ('classification', 'NOUN'), ('models', 'NOUN'), (',', 'PUNCT'), ('clustering', 'ADJ'), ('methods', 'NOUN'), (',', 'PUNCT'), ('hidden', 'VERB'), ('Markov', 'PROPN'), ('models', 'NOUN'), (',', 'PUNCT'), ('sequential', 'ADJ'), ('models', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('learn', 'ROOT'), ('regression', 'nmod'), ('classification', 'conj'), ('models', 'pobj'), (',', 'punct'), ('clustering', 'amod'), ('methods', 'conj'), (',', 'punct'), ('hidden', 'amod'), ('Markov', 'compound'), ('models', 'conj'), (',', 'punct'), ('sequential', 'amod'), ('models', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[learn, regression], [regression, classification], [classification, models], [models, ,], [,, clustering], [clustering, methods], [methods, ,], [,, hidden], [hidden, Markov], [Markov, models], [models, ,], [,, sequential], [sequential, models], [models, .]]
+
+>> Trigrams: 
+[[learn, regression, classification], [regression, classification, models], [classification, models, ,], [models, ,, clustering], [,, clustering, methods], [clustering, methods, ,], [methods, ,, hidden], [,, hidden, Markov], [hidden, Markov, models], [Markov, models, ,], [models, ,, sequential], [,, sequential, models], [sequential, models, .]]
+
+>> Noun Phrases are: 
+[You, regression and classification models, clustering methods, hidden Markov models, various sequential models]
+
+>> Named Entities are: 
+[('Markov', 'PERSON')]
+
+
+============================ Sentence 8 =============================
+
+What is Machine Learning In the real world, we are surrounded by humans who can learn everything from their experiences with their learning capability, and we have computers or machines which work on our instructions. 
+
+
+>> Tokens are: 
+[Machine, Learning, real, world, ,, surrounded, humans, learn, experiences, learning, capability, ,, computers, machines, work, instructions, .] 
+
+>> PoS Tags are: 
+[('Machine', 'NOUN'), ('Learning', 'PROPN'), ('real', 'ADJ'), ('world', 'NOUN'), (',', 'PUNCT'), ('surrounded', 'VERB'), ('humans', 'NOUN'), ('learn', 'VERB'), ('experiences', 'NOUN'), ('learning', 'NOUN'), ('capability', 'NOUN'), (',', 'PUNCT'), ('computers', 'NOUN'), ('machines', 'NOUN'), ('work', 'VERB'), ('instructions', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Machine', 'compound'), ('Learning', 'nsubj'), ('real', 'amod'), ('world', 'pobj'), (',', 'punct'), ('surrounded', 'ROOT'), ('humans', 'pobj'), ('learn', 'relcl'), ('experiences', 'pobj'), ('learning', 'compound'), ('capability', 'pobj'), (',', 'punct'), ('computers', 'dobj'), ('machines', 'conj'), ('work', 'relcl'), ('instructions', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Machine, Learning], [Learning, real], [real, world], [world, ,], [,, surrounded], [surrounded, humans], [humans, learn], [learn, experiences], [experiences, learning], [learning, capability], [capability, ,], [,, computers], [computers, machines], [machines, work], [work, instructions], [instructions, .]]
+
+>> Trigrams: 
+[[Machine, Learning, real], [Learning, real, world], [real, world, ,], [world, ,, surrounded], [,, surrounded, humans], [surrounded, humans, learn], [humans, learn, experiences], [learn, experiences, learning], [experiences, learning, capability], [learning, capability, ,], [capability, ,, computers], [,, computers, machines], [computers, machines, work], [machines, work, instructions], [work, instructions, .]]
+
+>> Noun Phrases are: 
+[What, Machine Learning, the real world, we, humans, who, everything, their experiences, their learning capability, we, computers, machines, our instructions]
+
+>> Named Entities are: 
+[('Machine Learning', 'WORK_OF_ART')]
+
+
+============================ Sentence 9 =============================
+
+But can a machine also learn from experiences or past data like a human does? 
+
+
+>> Tokens are: 
+[machine, learn, experiences, past, data, like, human, ?] 
+
+>> PoS Tags are: 
+[('machine', 'NOUN'), ('learn', 'VERB'), ('experiences', 'NOUN'), ('past', 'ADJ'), ('data', 'NOUN'), ('like', 'ADP'), ('human', 'NOUN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('machine', 'nsubj'), ('learn', 'ROOT'), ('experiences', 'pobj'), ('past', 'amod'), ('data', 'conj'), ('like', 'prep'), ('human', 'nsubj'), ('?', 'punct')]
+
+>> Bigrams: 
+[[machine, learn], [learn, experiences], [experiences, past], [past, data], [data, like], [like, human], [human, ?]]
+
+>> Trigrams: 
+[[machine, learn, experiences], [learn, experiences, past], [experiences, past, data], [past, data, like], [data, like, human], [like, human, ?]]
+
+>> Noun Phrases are: 
+[a machine, experiences, past data, a human]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+So here comes the role of Machine Learning. 
+
+
+>> Tokens are: 
+[comes, role, Machine, Learning, .] 
+
+>> PoS Tags are: 
+[('comes', 'VERB'), ('role', 'NOUN'), ('Machine', 'PROPN'), ('Learning', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('comes', 'ROOT'), ('role', 'nsubj'), ('Machine', 'compound'), ('Learning', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[comes, role], [role, Machine], [Machine, Learning], [Learning, .]]
+
+>> Trigrams: 
+[[comes, role, Machine], [role, Machine, Learning], [Machine, Learning, .]]
+
+>> Noun Phrases are: 
+[the role, Machine Learning]
+
+>> Named Entities are: 
+[('Machine Learning', 'ORG')]
+
+
+============================ Sentence 11 =============================
+
+ Machine Learning is said as a subset of artificial intelligence that is mainly concerned with the development of algorithms which allow a computer to learn from the data and past experiences on their own. 
+
+
+>> Tokens are: 
+[ , Machine, Learning, said, subset, artificial, intelligence, mainly, concerned, development, algorithms, allow, computer, learn, data, past, experiences, .] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('Machine', 'PROPN'), ('Learning', 'PROPN'), ('said', 'VERB'), ('subset', 'NOUN'), ('artificial', 'ADJ'), ('intelligence', 'NOUN'), ('mainly', 'ADV'), ('concerned', 'ADJ'), ('development', 'NOUN'), ('algorithms', 'NOUN'), ('allow', 'VERB'), ('computer', 'NOUN'), ('learn', 'VERB'), ('data', 'NOUN'), ('past', 'ADJ'), ('experiences', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'dep'), ('Machine', 'compound'), ('Learning', 'nsubjpass'), ('said', 'ROOT'), ('subset', 'pobj'), ('artificial', 'amod'), ('intelligence', 'pobj'), ('mainly', 'advmod'), ('concerned', 'acomp'), ('development', 'pobj'), ('algorithms', 'pobj'), ('allow', 'relcl'), ('computer', 'nsubj'), ('learn', 'ccomp'), ('data', 'pobj'), ('past', 'amod'), ('experiences', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ , Machine], [Machine, Learning], [Learning, said], [said, subset], [subset, artificial], [artificial, intelligence], [intelligence, mainly], [mainly, concerned], [concerned, development], [development, algorithms], [algorithms, allow], [allow, computer], [computer, learn], [learn, data], [data, past], [past, experiences], [experiences, .]]
+
+>> Trigrams: 
+[[ , Machine, Learning], [Machine, Learning, said], [Learning, said, subset], [said, subset, artificial], [subset, artificial, intelligence], [artificial, intelligence, mainly], [intelligence, mainly, concerned], [mainly, concerned, development], [concerned, development, algorithms], [development, algorithms, allow], [algorithms, allow, computer], [allow, computer, learn], [computer, learn, data], [learn, data, past], [data, past, experiences], [past, experiences, .]]
+
+>> Noun Phrases are: 
+[Machine Learning, a subset, artificial intelligence, the development, algorithms, a computer, the data, past experiences]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+The term machine learning was first introduced by Arthur Samuel in 1959. 
+
+
+>> Tokens are: 
+[term, machine, learning, introduced, Arthur, Samuel, 1959, .] 
+
+>> PoS Tags are: 
+[('term', 'NOUN'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('introduced', 'VERB'), ('Arthur', 'PROPN'), ('Samuel', 'PROPN'), ('1959', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('term', 'compound'), ('machine', 'compound'), ('learning', 'nsubjpass'), ('introduced', 'ROOT'), ('Arthur', 'compound'), ('Samuel', 'pobj'), ('1959', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[term, machine], [machine, learning], [learning, introduced], [introduced, Arthur], [Arthur, Samuel], [Samuel, 1959], [1959, .]]
+
+>> Trigrams: 
+[[term, machine, learning], [machine, learning, introduced], [learning, introduced, Arthur], [introduced, Arthur, Samuel], [Arthur, Samuel, 1959], [Samuel, 1959, .]]
+
+>> Noun Phrases are: 
+[The term machine learning, Arthur Samuel]
+
+>> Named Entities are: 
+[('first', 'ORDINAL'), ('Arthur Samuel', 'PERSON'), ('1959', 'DATE')]
+
+
+============================ Sentence 13 =============================
+
+We can define it in a summarized way as: Machine learning enables a machine to automatically learn from data, improve performance from experiences, and predict things without being explicitly programmed. 
+
+
+>> Tokens are: 
+[define, summarized, way, :, Machine, learning, enables, machine, automatically, learn, data, ,, improve, performance, experiences, ,, predict, things, explicitly, programmed, .] 
+
+>> PoS Tags are: 
+[('define', 'VERB'), ('summarized', 'VERB'), ('way', 'NOUN'), (':', 'PUNCT'), ('Machine', 'NOUN'), ('learning', 'NOUN'), ('enables', 'VERB'), ('machine', 'NOUN'), ('automatically', 'ADV'), ('learn', 'VERB'), ('data', 'NOUN'), (',', 'PUNCT'), ('improve', 'VERB'), ('performance', 'NOUN'), ('experiences', 'NOUN'), (',', 'PUNCT'), ('predict', 'VERB'), ('things', 'NOUN'), ('explicitly', 'ADV'), ('programmed', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('define', 'ccomp'), ('summarized', 'amod'), ('way', 'pobj'), (':', 'punct'), ('Machine', 'compound'), ('learning', 'nsubj'), ('enables', 'ROOT'), ('machine', 'dobj'), ('automatically', 'advmod'), ('learn', 'relcl'), ('data', 'pobj'), (',', 'punct'), ('improve', 'xcomp'), ('performance', 'dobj'), ('experiences', 'pobj'), (',', 'punct'), ('predict', 'conj'), ('things', 'dobj'), ('explicitly', 'advmod'), ('programmed', 'pcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[define, summarized], [summarized, way], [way, :], [:, Machine], [Machine, learning], [learning, enables], [enables, machine], [machine, automatically], [automatically, learn], [learn, data], [data, ,], [,, improve], [improve, performance], [performance, experiences], [experiences, ,], [,, predict], [predict, things], [things, explicitly], [explicitly, programmed], [programmed, .]]
+
+>> Trigrams: 
+[[define, summarized, way], [summarized, way, :], [way, :, Machine], [:, Machine, learning], [Machine, learning, enables], [learning, enables, machine], [enables, machine, automatically], [machine, automatically, learn], [automatically, learn, data], [learn, data, ,], [data, ,, improve], [,, improve, performance], [improve, performance, experiences], [performance, experiences, ,], [experiences, ,, predict], [,, predict, things], [predict, things, explicitly], [things, explicitly, programmed], [explicitly, programmed, .]]
+
+>> Noun Phrases are: 
+[We, it, a summarized way, Machine learning, a machine, data, performance, experiences, things]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+With the help of sample historical data, which is known as training data, machine learning algorithms build a mathematical model that helps in making predictions or decisions without being explicitly programmed. 
+
+
+>> Tokens are: 
+[help, sample, historical, data, ,, known, training, data, ,, machine, learning, algorithms, build, mathematical, model, helps, making, predictions, decisions, explicitly, programmed, .] 
+
+>> PoS Tags are: 
+[('help', 'NOUN'), ('sample', 'NOUN'), ('historical', 'ADJ'), ('data', 'NOUN'), (',', 'PUNCT'), ('known', 'VERB'), ('training', 'NOUN'), ('data', 'NOUN'), (',', 'PUNCT'), ('machine', 'NOUN'), ('learning', 'VERB'), ('algorithms', 'NOUN'), ('build', 'VERB'), ('mathematical', 'ADJ'), ('model', 'NOUN'), ('helps', 'VERB'), ('making', 'VERB'), ('predictions', 'NOUN'), ('decisions', 'NOUN'), ('explicitly', 'ADV'), ('programmed', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('help', 'pobj'), ('sample', 'nmod'), ('historical', 'amod'), ('data', 'pobj'), (',', 'punct'), ('known', 'relcl'), ('training', 'compound'), ('data', 'pobj'), (',', 'punct'), ('machine', 'compound'), ('learning', 'amod'), ('algorithms', 'nsubj'), ('build', 'ROOT'), ('mathematical', 'amod'), ('model', 'dobj'), ('helps', 'relcl'), ('making', 'pcomp'), ('predictions', 'dobj'), ('decisions', 'conj'), ('explicitly', 'advmod'), ('programmed', 'pcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[help, sample], [sample, historical], [historical, data], [data, ,], [,, known], [known, training], [training, data], [data, ,], [,, machine], [machine, learning], [learning, algorithms], [algorithms, build], [build, mathematical], [mathematical, model], [model, helps], [helps, making], [making, predictions], [predictions, decisions], [decisions, explicitly], [explicitly, programmed], [programmed, .]]
+
+>> Trigrams: 
+[[help, sample, historical], [sample, historical, data], [historical, data, ,], [data, ,, known], [,, known, training], [known, training, data], [training, data, ,], [data, ,, machine], [,, machine, learning], [machine, learning, algorithms], [learning, algorithms, build], [algorithms, build, mathematical], [build, mathematical, model], [mathematical, model, helps], [model, helps, making], [helps, making, predictions], [making, predictions, decisions], [predictions, decisions, explicitly], [decisions, explicitly, programmed], [explicitly, programmed, .]]
+
+>> Noun Phrases are: 
+[the help, sample historical data, training data, machine learning algorithms, a mathematical model, predictions, decisions]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+Machine learning brings computer science and statistics together for creating predictive models. 
+
+
+>> Tokens are: 
+[Machine, learning, brings, computer, science, statistics, creating, predictive, models, .] 
+
+>> PoS Tags are: 
+[('Machine', 'NOUN'), ('learning', 'NOUN'), ('brings', 'VERB'), ('computer', 'NOUN'), ('science', 'NOUN'), ('statistics', 'NOUN'), ('creating', 'VERB'), ('predictive', 'ADJ'), ('models', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Machine', 'compound'), ('learning', 'nsubj'), ('brings', 'ROOT'), ('computer', 'compound'), ('science', 'dobj'), ('statistics', 'conj'), ('creating', 'pcomp'), ('predictive', 'amod'), ('models', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Machine, learning], [learning, brings], [brings, computer], [computer, science], [science, statistics], [statistics, creating], [creating, predictive], [predictive, models], [models, .]]
+
+>> Trigrams: 
+[[Machine, learning, brings], [learning, brings, computer], [brings, computer, science], [computer, science, statistics], [science, statistics, creating], [statistics, creating, predictive], [creating, predictive, models], [predictive, models, .]]
+
+>> Noun Phrases are: 
+[Machine learning, computer science, statistics, predictive models]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+Machine learning constructs or uses the algorithms that learn from historical data. 
+
+
+>> Tokens are: 
+[Machine, learning, constructs, uses, algorithms, learn, historical, data, .] 
+
+>> PoS Tags are: 
+[('Machine', 'NOUN'), ('learning', 'NOUN'), ('constructs', 'NOUN'), ('uses', 'VERB'), ('algorithms', 'NOUN'), ('learn', 'VERB'), ('historical', 'ADJ'), ('data', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Machine', 'compound'), ('learning', 'nsubj'), ('constructs', 'ROOT'), ('uses', 'conj'), ('algorithms', 'dobj'), ('learn', 'relcl'), ('historical', 'amod'), ('data', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Machine, learning], [learning, constructs], [constructs, uses], [uses, algorithms], [algorithms, learn], [learn, historical], [historical, data], [data, .]]
+
+>> Trigrams: 
+[[Machine, learning, constructs], [learning, constructs, uses], [constructs, uses, algorithms], [uses, algorithms, learn], [algorithms, learn, historical], [learn, historical, data], [historical, data, .]]
+
+>> Noun Phrases are: 
+[Machine learning, the algorithms, historical data]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+The more we will provide the information, the higher will be the performance. 
+
+
+>> Tokens are: 
+[provide, information, ,, higher, performance, .] 
+
+>> PoS Tags are: 
+[('provide', 'VERB'), ('information', 'NOUN'), (',', 'PUNCT'), ('higher', 'ADJ'), ('performance', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('provide', 'advcl'), ('information', 'dobj'), (',', 'punct'), ('higher', 'nsubj'), ('performance', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[provide, information], [information, ,], [,, higher], [higher, performance], [performance, .]]
+
+>> Trigrams: 
+[[provide, information, ,], [information, ,, higher], [,, higher, performance], [higher, performance, .]]
+
+>> Noun Phrases are: 
+[we, the information, the performance]
+
+>> Named Entities are: 
+[]

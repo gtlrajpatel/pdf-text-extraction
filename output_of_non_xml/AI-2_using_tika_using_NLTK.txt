@@ -1,0 +1,1610 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-2  Applications of AI AI has been dominant in various fields such as − · Gaming − AI plays crucial role in strategic games such as chess, poker, tic-tac-toe, etc., where machine can think of large number of possible positions based on heuristic knowledge. 
+
+
+>> Tokens are: 
+ ['AI-2', 'Applications', 'AI', 'AI', 'dominant', 'various', 'fields', '−', '·', 'Gaming', '−', 'AI', 'plays', 'crucial', 'role', 'strategic', 'games', 'chess', ',', 'poker', ',', 'tic-tac-toe', ',', 'etc.', ',', 'machine', 'think', 'large', 'number', 'possible', 'positions', 'based', 'heuristic', 'knowledge', '.']
+
+>> Bigrams are: 
+ [('AI-2', 'Applications'), ('Applications', 'AI'), ('AI', 'AI'), ('AI', 'dominant'), ('dominant', 'various'), ('various', 'fields'), ('fields', '−'), ('−', '·'), ('·', 'Gaming'), ('Gaming', '−'), ('−', 'AI'), ('AI', 'plays'), ('plays', 'crucial'), ('crucial', 'role'), ('role', 'strategic'), ('strategic', 'games'), ('games', 'chess'), ('chess', ','), (',', 'poker'), ('poker', ','), (',', 'tic-tac-toe'), ('tic-tac-toe', ','), (',', 'etc.'), ('etc.', ','), (',', 'machine'), ('machine', 'think'), ('think', 'large'), ('large', 'number'), ('number', 'possible'), ('possible', 'positions'), ('positions', 'based'), ('based', 'heuristic'), ('heuristic', 'knowledge'), ('knowledge', '.')]
+
+>> Trigrams are: 
+ [('AI-2', 'Applications', 'AI'), ('Applications', 'AI', 'AI'), ('AI', 'AI', 'dominant'), ('AI', 'dominant', 'various'), ('dominant', 'various', 'fields'), ('various', 'fields', '−'), ('fields', '−', '·'), ('−', '·', 'Gaming'), ('·', 'Gaming', '−'), ('Gaming', '−', 'AI'), ('−', 'AI', 'plays'), ('AI', 'plays', 'crucial'), ('plays', 'crucial', 'role'), ('crucial', 'role', 'strategic'), ('role', 'strategic', 'games'), ('strategic', 'games', 'chess'), ('games', 'chess', ','), ('chess', ',', 'poker'), (',', 'poker', ','), ('poker', ',', 'tic-tac-toe'), (',', 'tic-tac-toe', ','), ('tic-tac-toe', ',', 'etc.'), (',', 'etc.', ','), ('etc.', ',', 'machine'), (',', 'machine', 'think'), ('machine', 'think', 'large'), ('think', 'large', 'number'), ('large', 'number', 'possible'), ('number', 'possible', 'positions'), ('possible', 'positions', 'based'), ('positions', 'based', 'heuristic'), ('based', 'heuristic', 'knowledge'), ('heuristic', 'knowledge', '.')]
+
+>> POS Tags are: 
+ [('AI-2', 'JJ'), ('Applications', 'NNP'), ('AI', 'NNP'), ('AI', 'NNP'), ('dominant', 'VBP'), ('various', 'JJ'), ('fields', 'NNS'), ('−', 'VBP'), ('·', 'JJ'), ('Gaming', 'NNP'), ('−', 'NNP'), ('AI', 'NNP'), ('plays', 'VBZ'), ('crucial', 'JJ'), ('role', 'NN'), ('strategic', 'JJ'), ('games', 'NNS'), ('chess', 'RB'), (',', ','), ('poker', 'NN'), (',', ','), ('tic-tac-toe', 'JJ'), (',', ','), ('etc.', 'FW'), (',', ','), ('machine', 'NN'), ('think', 'VBP'), ('large', 'JJ'), ('number', 'NN'), ('possible', 'JJ'), ('positions', 'NNS'), ('based', 'VBN'), ('heuristic', 'JJ'), ('knowledge', 'NN'), ('.', '.')]
+
+ (S
+  (NP AI-2/JJ Applications/NNP AI/NNP AI/NNP)
+  dominant/VBP
+  (NP various/JJ fields/NNS)
+  −/VBP
+  (NP ·/JJ Gaming/NNP −/NNP AI/NNP)
+  plays/VBZ
+  (NP crucial/JJ role/NN)
+  (NP strategic/JJ games/NNS)
+  chess/RB
+  ,/,
+  (NP poker/NN)
+  ,/,
+  tic-tac-toe/JJ
+  ,/,
+  etc./FW
+  ,/,
+  (NP machine/NN)
+  think/VBP
+  (NP large/JJ number/NN)
+  (NP possible/JJ positions/NNS)
+  based/VBN
+  (NP heuristic/JJ knowledge/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-2 Applications AI AI', 'various fields', '· Gaming − AI', 'crucial role', 'strategic games', 'poker', 'machine', 'large number', 'possible positions', 'heuristic knowledge']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-2', 'ai-2'), ('Applications', 'applic'), ('AI', 'ai'), ('AI', 'ai'), ('dominant', 'domin'), ('various', 'variou'), ('fields', 'field'), ('−', '−'), ('·', '·'), ('Gaming', 'game'), ('−', '−'), ('AI', 'ai'), ('plays', 'play'), ('crucial', 'crucial'), ('role', 'role'), ('strategic', 'strateg'), ('games', 'game'), ('chess', 'chess'), (',', ','), ('poker', 'poker'), (',', ','), ('tic-tac-toe', 'tic-tac-to'), (',', ','), ('etc.', 'etc.'), (',', ','), ('machine', 'machin'), ('think', 'think'), ('large', 'larg'), ('number', 'number'), ('possible', 'possibl'), ('positions', 'posit'), ('based', 'base'), ('heuristic', 'heurist'), ('knowledge', 'knowledg'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-2', 'ai-2'), ('Applications', 'applic'), ('AI', 'ai'), ('AI', 'ai'), ('dominant', 'domin'), ('various', 'various'), ('fields', 'field'), ('−', '−'), ('·', '·'), ('Gaming', 'game'), ('−', '−'), ('AI', 'ai'), ('plays', 'play'), ('crucial', 'crucial'), ('role', 'role'), ('strategic', 'strateg'), ('games', 'game'), ('chess', 'chess'), (',', ','), ('poker', 'poker'), (',', ','), ('tic-tac-toe', 'tic-tac-to'), (',', ','), ('etc.', 'etc.'), (',', ','), ('machine', 'machin'), ('think', 'think'), ('large', 'larg'), ('number', 'number'), ('possible', 'possibl'), ('positions', 'posit'), ('based', 'base'), ('heuristic', 'heurist'), ('knowledge', 'knowledg'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-2', 'AI-2'), ('Applications', 'Applications'), ('AI', 'AI'), ('AI', 'AI'), ('dominant', 'dominant'), ('various', 'various'), ('fields', 'field'), ('−', '−'), ('·', '·'), ('Gaming', 'Gaming'), ('−', '−'), ('AI', 'AI'), ('plays', 'play'), ('crucial', 'crucial'), ('role', 'role'), ('strategic', 'strategic'), ('games', 'game'), ('chess', 'chess'), (',', ','), ('poker', 'poker'), (',', ','), ('tic-tac-toe', 'tic-tac-toe'), (',', ','), ('etc.', 'etc.'), (',', ','), ('machine', 'machine'), ('think', 'think'), ('large', 'large'), ('number', 'number'), ('possible', 'possible'), ('positions', 'position'), ('based', 'based'), ('heuristic', 'heuristic'), ('knowledge', 'knowledge'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+· Natural Language Processing − It is possible to interact with the computer that understands natural language spoken by humans. 
+
+
+>> Tokens are: 
+ ['·', 'Natural', 'Language', 'Processing', '−', 'It', 'possible', 'interact', 'computer', 'understands', 'natural', 'language', 'spoken', 'humans', '.']
+
+>> Bigrams are: 
+ [('·', 'Natural'), ('Natural', 'Language'), ('Language', 'Processing'), ('Processing', '−'), ('−', 'It'), ('It', 'possible'), ('possible', 'interact'), ('interact', 'computer'), ('computer', 'understands'), ('understands', 'natural'), ('natural', 'language'), ('language', 'spoken'), ('spoken', 'humans'), ('humans', '.')]
+
+>> Trigrams are: 
+ [('·', 'Natural', 'Language'), ('Natural', 'Language', 'Processing'), ('Language', 'Processing', '−'), ('Processing', '−', 'It'), ('−', 'It', 'possible'), ('It', 'possible', 'interact'), ('possible', 'interact', 'computer'), ('interact', 'computer', 'understands'), ('computer', 'understands', 'natural'), ('understands', 'natural', 'language'), ('natural', 'language', 'spoken'), ('language', 'spoken', 'humans'), ('spoken', 'humans', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Natural', 'NNP'), ('Language', 'NNP'), ('Processing', 'NNP'), ('−', 'VBZ'), ('It', 'PRP'), ('possible', 'JJ'), ('interact', 'JJ'), ('computer', 'NN'), ('understands', 'VBZ'), ('natural', 'JJ'), ('language', 'NN'), ('spoken', 'VBN'), ('humans', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Natural/NNP Language/NNP Processing/NNP)
+  −/VBZ
+  It/PRP
+  (NP possible/JJ interact/JJ computer/NN)
+  understands/VBZ
+  (NP natural/JJ language/NN)
+  spoken/VBN
+  (NP humans/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Natural Language Processing', 'possible interact computer', 'natural language', 'humans']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Natural Language')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Natural', 'natur'), ('Language', 'languag'), ('Processing', 'process'), ('−', '−'), ('It', 'it'), ('possible', 'possibl'), ('interact', 'interact'), ('computer', 'comput'), ('understands', 'understand'), ('natural', 'natur'), ('language', 'languag'), ('spoken', 'spoken'), ('humans', 'human'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Natural', 'natur'), ('Language', 'languag'), ('Processing', 'process'), ('−', '−'), ('It', 'it'), ('possible', 'possibl'), ('interact', 'interact'), ('computer', 'comput'), ('understands', 'understand'), ('natural', 'natur'), ('language', 'languag'), ('spoken', 'spoken'), ('humans', 'human'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Natural', 'Natural'), ('Language', 'Language'), ('Processing', 'Processing'), ('−', '−'), ('It', 'It'), ('possible', 'possible'), ('interact', 'interact'), ('computer', 'computer'), ('understands', 'understands'), ('natural', 'natural'), ('language', 'language'), ('spoken', 'spoken'), ('humans', 'human'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+· Expert Systems − There are some applications which integrate machine, software, and special information to impart reasoning and advising. 
+
+
+>> Tokens are: 
+ ['·', 'Expert', 'Systems', '−', 'There', 'applications', 'integrate', 'machine', ',', 'software', ',', 'special', 'information', 'impart', 'reasoning', 'advising', '.']
+
+>> Bigrams are: 
+ [('·', 'Expert'), ('Expert', 'Systems'), ('Systems', '−'), ('−', 'There'), ('There', 'applications'), ('applications', 'integrate'), ('integrate', 'machine'), ('machine', ','), (',', 'software'), ('software', ','), (',', 'special'), ('special', 'information'), ('information', 'impart'), ('impart', 'reasoning'), ('reasoning', 'advising'), ('advising', '.')]
+
+>> Trigrams are: 
+ [('·', 'Expert', 'Systems'), ('Expert', 'Systems', '−'), ('Systems', '−', 'There'), ('−', 'There', 'applications'), ('There', 'applications', 'integrate'), ('applications', 'integrate', 'machine'), ('integrate', 'machine', ','), ('machine', ',', 'software'), (',', 'software', ','), ('software', ',', 'special'), (',', 'special', 'information'), ('special', 'information', 'impart'), ('information', 'impart', 'reasoning'), ('impart', 'reasoning', 'advising'), ('reasoning', 'advising', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Expert', 'NNP'), ('Systems', 'NNP'), ('−', 'NNP'), ('There', 'EX'), ('applications', 'NNS'), ('integrate', 'VBP'), ('machine', 'NN'), (',', ','), ('software', 'NN'), (',', ','), ('special', 'JJ'), ('information', 'NN'), ('impart', 'NN'), ('reasoning', 'VBG'), ('advising', 'VBG'), ('.', '.')]
+
+ (S
+  (NP ·/NN Expert/NNP Systems/NNP −/NNP)
+  There/EX
+  (NP applications/NNS)
+  integrate/VBP
+  (NP machine/NN)
+  ,/,
+  (NP software/NN)
+  ,/,
+  (NP special/JJ information/NN impart/NN)
+  reasoning/VBG
+  advising/VBG
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Expert Systems −', 'applications', 'machine', 'software', 'special information impart']
+
+>> Named Entities are: 
+ [('PERSON', 'Expert Systems')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Expert', 'expert'), ('Systems', 'system'), ('−', '−'), ('There', 'there'), ('applications', 'applic'), ('integrate', 'integr'), ('machine', 'machin'), (',', ','), ('software', 'softwar'), (',', ','), ('special', 'special'), ('information', 'inform'), ('impart', 'impart'), ('reasoning', 'reason'), ('advising', 'advis'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Expert', 'expert'), ('Systems', 'system'), ('−', '−'), ('There', 'there'), ('applications', 'applic'), ('integrate', 'integr'), ('machine', 'machin'), (',', ','), ('software', 'softwar'), (',', ','), ('special', 'special'), ('information', 'inform'), ('impart', 'impart'), ('reasoning', 'reason'), ('advising', 'advis'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Expert', 'Expert'), ('Systems', 'Systems'), ('−', '−'), ('There', 'There'), ('applications', 'application'), ('integrate', 'integrate'), ('machine', 'machine'), (',', ','), ('software', 'software'), (',', ','), ('special', 'special'), ('information', 'information'), ('impart', 'impart'), ('reasoning', 'reasoning'), ('advising', 'advising'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+They provide explanation and advice to the users. 
+
+
+>> Tokens are: 
+ ['They', 'provide', 'explanation', 'advice', 'users', '.']
+
+>> Bigrams are: 
+ [('They', 'provide'), ('provide', 'explanation'), ('explanation', 'advice'), ('advice', 'users'), ('users', '.')]
+
+>> Trigrams are: 
+ [('They', 'provide', 'explanation'), ('provide', 'explanation', 'advice'), ('explanation', 'advice', 'users'), ('advice', 'users', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('provide', 'VBP'), ('explanation', 'NN'), ('advice', 'NN'), ('users', 'NNS'), ('.', '.')]
+
+ (S They/PRP provide/VBP (NP explanation/NN advice/NN users/NNS) ./.) 
+
+
+>> Noun Phrases are: 
+ ['explanation advice users']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('provide', 'provid'), ('explanation', 'explan'), ('advice', 'advic'), ('users', 'user'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('provide', 'provid'), ('explanation', 'explan'), ('advice', 'advic'), ('users', 'user'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('provide', 'provide'), ('explanation', 'explanation'), ('advice', 'advice'), ('users', 'user'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+· Vision Systems − These systems understand, interpret, and comprehend visual input on the computer. 
+
+
+>> Tokens are: 
+ ['·', 'Vision', 'Systems', '−', 'These', 'systems', 'understand', ',', 'interpret', ',', 'comprehend', 'visual', 'input', 'computer', '.']
+
+>> Bigrams are: 
+ [('·', 'Vision'), ('Vision', 'Systems'), ('Systems', '−'), ('−', 'These'), ('These', 'systems'), ('systems', 'understand'), ('understand', ','), (',', 'interpret'), ('interpret', ','), (',', 'comprehend'), ('comprehend', 'visual'), ('visual', 'input'), ('input', 'computer'), ('computer', '.')]
+
+>> Trigrams are: 
+ [('·', 'Vision', 'Systems'), ('Vision', 'Systems', '−'), ('Systems', '−', 'These'), ('−', 'These', 'systems'), ('These', 'systems', 'understand'), ('systems', 'understand', ','), ('understand', ',', 'interpret'), (',', 'interpret', ','), ('interpret', ',', 'comprehend'), (',', 'comprehend', 'visual'), ('comprehend', 'visual', 'input'), ('visual', 'input', 'computer'), ('input', 'computer', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Vision', 'NNP'), ('Systems', 'NNPS'), ('−', 'NNP'), ('These', 'DT'), ('systems', 'NNS'), ('understand', 'VBP'), (',', ','), ('interpret', 'JJ'), (',', ','), ('comprehend', 'JJ'), ('visual', 'JJ'), ('input', 'NN'), ('computer', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Vision/NNP)
+  Systems/NNPS
+  (NP −/NNP)
+  (NP These/DT systems/NNS)
+  understand/VBP
+  ,/,
+  interpret/JJ
+  ,/,
+  (NP comprehend/JJ visual/JJ input/NN computer/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Vision', '−', 'These systems', 'comprehend visual input computer']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Vision Systems')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Vision', 'vision'), ('Systems', 'system'), ('−', '−'), ('These', 'these'), ('systems', 'system'), ('understand', 'understand'), (',', ','), ('interpret', 'interpret'), (',', ','), ('comprehend', 'comprehend'), ('visual', 'visual'), ('input', 'input'), ('computer', 'comput'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Vision', 'vision'), ('Systems', 'system'), ('−', '−'), ('These', 'these'), ('systems', 'system'), ('understand', 'understand'), (',', ','), ('interpret', 'interpret'), (',', ','), ('comprehend', 'comprehend'), ('visual', 'visual'), ('input', 'input'), ('computer', 'comput'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Vision', 'Vision'), ('Systems', 'Systems'), ('−', '−'), ('These', 'These'), ('systems', 'system'), ('understand', 'understand'), (',', ','), ('interpret', 'interpret'), (',', ','), ('comprehend', 'comprehend'), ('visual', 'visual'), ('input', 'input'), ('computer', 'computer'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+For example, · A spying aeroplane takes photographs, which are used to figure out spatial information or map of the areas. 
+
+
+>> Tokens are: 
+ ['For', 'example', ',', '·', 'A', 'spying', 'aeroplane', 'takes', 'photographs', ',', 'used', 'figure', 'spatial', 'information', 'map', 'areas', '.']
+
+>> Bigrams are: 
+ [('For', 'example'), ('example', ','), (',', '·'), ('·', 'A'), ('A', 'spying'), ('spying', 'aeroplane'), ('aeroplane', 'takes'), ('takes', 'photographs'), ('photographs', ','), (',', 'used'), ('used', 'figure'), ('figure', 'spatial'), ('spatial', 'information'), ('information', 'map'), ('map', 'areas'), ('areas', '.')]
+
+>> Trigrams are: 
+ [('For', 'example', ','), ('example', ',', '·'), (',', '·', 'A'), ('·', 'A', 'spying'), ('A', 'spying', 'aeroplane'), ('spying', 'aeroplane', 'takes'), ('aeroplane', 'takes', 'photographs'), ('takes', 'photographs', ','), ('photographs', ',', 'used'), (',', 'used', 'figure'), ('used', 'figure', 'spatial'), ('figure', 'spatial', 'information'), ('spatial', 'information', 'map'), ('information', 'map', 'areas'), ('map', 'areas', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('example', 'NN'), (',', ','), ('·', 'VBZ'), ('A', 'NNP'), ('spying', 'VBG'), ('aeroplane', 'NN'), ('takes', 'VBZ'), ('photographs', 'NN'), (',', ','), ('used', 'VBN'), ('figure', 'NN'), ('spatial', 'JJ'), ('information', 'NN'), ('map', 'NN'), ('areas', 'NNS'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP example/NN)
+  ,/,
+  ·/VBZ
+  (NP A/NNP)
+  spying/VBG
+  (NP aeroplane/NN)
+  takes/VBZ
+  (NP photographs/NN)
+  ,/,
+  used/VBN
+  (NP figure/NN)
+  (NP spatial/JJ information/NN map/NN areas/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['example', 'A', 'aeroplane', 'photographs', 'figure', 'spatial information map areas']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('·', '·'), ('A', 'a'), ('spying', 'spi'), ('aeroplane', 'aeroplan'), ('takes', 'take'), ('photographs', 'photograph'), (',', ','), ('used', 'use'), ('figure', 'figur'), ('spatial', 'spatial'), ('information', 'inform'), ('map', 'map'), ('areas', 'area'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('·', '·'), ('A', 'a'), ('spying', 'spi'), ('aeroplane', 'aeroplan'), ('takes', 'take'), ('photographs', 'photograph'), (',', ','), ('used', 'use'), ('figure', 'figur'), ('spatial', 'spatial'), ('information', 'inform'), ('map', 'map'), ('areas', 'area'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('example', 'example'), (',', ','), ('·', '·'), ('A', 'A'), ('spying', 'spying'), ('aeroplane', 'aeroplane'), ('takes', 'take'), ('photographs', 'photograph'), (',', ','), ('used', 'used'), ('figure', 'figure'), ('spatial', 'spatial'), ('information', 'information'), ('map', 'map'), ('areas', 'area'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+· Doctors use clinical expert system to diagnose the patient. 
+
+
+>> Tokens are: 
+ ['·', 'Doctors', 'use', 'clinical', 'expert', 'system', 'diagnose', 'patient', '.']
+
+>> Bigrams are: 
+ [('·', 'Doctors'), ('Doctors', 'use'), ('use', 'clinical'), ('clinical', 'expert'), ('expert', 'system'), ('system', 'diagnose'), ('diagnose', 'patient'), ('patient', '.')]
+
+>> Trigrams are: 
+ [('·', 'Doctors', 'use'), ('Doctors', 'use', 'clinical'), ('use', 'clinical', 'expert'), ('clinical', 'expert', 'system'), ('expert', 'system', 'diagnose'), ('system', 'diagnose', 'patient'), ('diagnose', 'patient', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Doctors', 'NNS'), ('use', 'VBP'), ('clinical', 'JJ'), ('expert', 'NN'), ('system', 'NN'), ('diagnose', 'JJ'), ('patient', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/NN Doctors/NNS)
+  use/VBP
+  (NP clinical/JJ expert/NN system/NN)
+  (NP diagnose/JJ patient/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Doctors', 'clinical expert system', 'diagnose patient']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Doctors', 'doctor'), ('use', 'use'), ('clinical', 'clinic'), ('expert', 'expert'), ('system', 'system'), ('diagnose', 'diagnos'), ('patient', 'patient'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Doctors', 'doctor'), ('use', 'use'), ('clinical', 'clinic'), ('expert', 'expert'), ('system', 'system'), ('diagnose', 'diagnos'), ('patient', 'patient'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Doctors', 'Doctors'), ('use', 'use'), ('clinical', 'clinical'), ('expert', 'expert'), ('system', 'system'), ('diagnose', 'diagnose'), ('patient', 'patient'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+· Police use computer software that can recognize the face of criminal with the stored portrait made by forensic artist. 
+
+
+>> Tokens are: 
+ ['·', 'Police', 'use', 'computer', 'software', 'recognize', 'face', 'criminal', 'stored', 'portrait', 'made', 'forensic', 'artist', '.']
+
+>> Bigrams are: 
+ [('·', 'Police'), ('Police', 'use'), ('use', 'computer'), ('computer', 'software'), ('software', 'recognize'), ('recognize', 'face'), ('face', 'criminal'), ('criminal', 'stored'), ('stored', 'portrait'), ('portrait', 'made'), ('made', 'forensic'), ('forensic', 'artist'), ('artist', '.')]
+
+>> Trigrams are: 
+ [('·', 'Police', 'use'), ('Police', 'use', 'computer'), ('use', 'computer', 'software'), ('computer', 'software', 'recognize'), ('software', 'recognize', 'face'), ('recognize', 'face', 'criminal'), ('face', 'criminal', 'stored'), ('criminal', 'stored', 'portrait'), ('stored', 'portrait', 'made'), ('portrait', 'made', 'forensic'), ('made', 'forensic', 'artist'), ('forensic', 'artist', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Police', 'NNP'), ('use', 'NN'), ('computer', 'NN'), ('software', 'NN'), ('recognize', 'VB'), ('face', 'NN'), ('criminal', 'JJ'), ('stored', 'VBD'), ('portrait', 'NN'), ('made', 'VBN'), ('forensic', 'JJ'), ('artist', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Police/NNP use/NN computer/NN software/NN)
+  recognize/VB
+  (NP face/NN)
+  criminal/JJ
+  stored/VBD
+  (NP portrait/NN)
+  made/VBN
+  (NP forensic/JJ artist/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Police use computer software', 'face', 'portrait', 'forensic artist']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Police', 'polic'), ('use', 'use'), ('computer', 'comput'), ('software', 'softwar'), ('recognize', 'recogn'), ('face', 'face'), ('criminal', 'crimin'), ('stored', 'store'), ('portrait', 'portrait'), ('made', 'made'), ('forensic', 'forens'), ('artist', 'artist'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Police', 'polic'), ('use', 'use'), ('computer', 'comput'), ('software', 'softwar'), ('recognize', 'recogn'), ('face', 'face'), ('criminal', 'crimin'), ('stored', 'store'), ('portrait', 'portrait'), ('made', 'made'), ('forensic', 'forens'), ('artist', 'artist'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Police', 'Police'), ('use', 'use'), ('computer', 'computer'), ('software', 'software'), ('recognize', 'recognize'), ('face', 'face'), ('criminal', 'criminal'), ('stored', 'stored'), ('portrait', 'portrait'), ('made', 'made'), ('forensic', 'forensic'), ('artist', 'artist'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+· Speech Recognition − Some intelligent systems are capable of hearing and comprehending the language in terms of sentences and their meanings while a human talks to it. 
+
+
+>> Tokens are: 
+ ['·', 'Speech', 'Recognition', '−', 'Some', 'intelligent', 'systems', 'capable', 'hearing', 'comprehending', 'language', 'terms', 'sentences', 'meanings', 'human', 'talks', '.']
+
+>> Bigrams are: 
+ [('·', 'Speech'), ('Speech', 'Recognition'), ('Recognition', '−'), ('−', 'Some'), ('Some', 'intelligent'), ('intelligent', 'systems'), ('systems', 'capable'), ('capable', 'hearing'), ('hearing', 'comprehending'), ('comprehending', 'language'), ('language', 'terms'), ('terms', 'sentences'), ('sentences', 'meanings'), ('meanings', 'human'), ('human', 'talks'), ('talks', '.')]
+
+>> Trigrams are: 
+ [('·', 'Speech', 'Recognition'), ('Speech', 'Recognition', '−'), ('Recognition', '−', 'Some'), ('−', 'Some', 'intelligent'), ('Some', 'intelligent', 'systems'), ('intelligent', 'systems', 'capable'), ('systems', 'capable', 'hearing'), ('capable', 'hearing', 'comprehending'), ('hearing', 'comprehending', 'language'), ('comprehending', 'language', 'terms'), ('language', 'terms', 'sentences'), ('terms', 'sentences', 'meanings'), ('sentences', 'meanings', 'human'), ('meanings', 'human', 'talks'), ('human', 'talks', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Speech', 'NNP'), ('Recognition', 'NNP'), ('−', 'NNP'), ('Some', 'DT'), ('intelligent', 'JJ'), ('systems', 'NNS'), ('capable', 'JJ'), ('hearing', 'VBG'), ('comprehending', 'VBG'), ('language', 'NN'), ('terms', 'NNS'), ('sentences', 'NNS'), ('meanings', 'NNS'), ('human', 'JJ'), ('talks', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Speech/NNP Recognition/NNP −/NNP)
+  (NP Some/DT intelligent/JJ systems/NNS)
+  capable/JJ
+  hearing/VBG
+  comprehending/VBG
+  (NP language/NN terms/NNS sentences/NNS meanings/NNS)
+  (NP human/JJ talks/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Speech Recognition −', 'Some intelligent systems', 'language terms sentences meanings', 'human talks']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Speech', 'speech'), ('Recognition', 'recognit'), ('−', '−'), ('Some', 'some'), ('intelligent', 'intellig'), ('systems', 'system'), ('capable', 'capabl'), ('hearing', 'hear'), ('comprehending', 'comprehend'), ('language', 'languag'), ('terms', 'term'), ('sentences', 'sentenc'), ('meanings', 'mean'), ('human', 'human'), ('talks', 'talk'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Speech', 'speech'), ('Recognition', 'recognit'), ('−', '−'), ('Some', 'some'), ('intelligent', 'intellig'), ('systems', 'system'), ('capable', 'capabl'), ('hearing', 'hear'), ('comprehending', 'comprehend'), ('language', 'languag'), ('terms', 'term'), ('sentences', 'sentenc'), ('meanings', 'mean'), ('human', 'human'), ('talks', 'talk'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Speech', 'Speech'), ('Recognition', 'Recognition'), ('−', '−'), ('Some', 'Some'), ('intelligent', 'intelligent'), ('systems', 'system'), ('capable', 'capable'), ('hearing', 'hearing'), ('comprehending', 'comprehending'), ('language', 'language'), ('terms', 'term'), ('sentences', 'sentence'), ('meanings', 'meaning'), ('human', 'human'), ('talks', 'talk'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+It can handle different accents, slang words, noise in the background, change in human’s noise due to cold, etc. 
+
+
+>> Tokens are: 
+ ['It', 'handle', 'different', 'accents', ',', 'slang', 'words', ',', 'noise', 'background', ',', 'change', 'human', '’', 'noise', 'due', 'cold', ',', 'etc', '.']
+
+>> Bigrams are: 
+ [('It', 'handle'), ('handle', 'different'), ('different', 'accents'), ('accents', ','), (',', 'slang'), ('slang', 'words'), ('words', ','), (',', 'noise'), ('noise', 'background'), ('background', ','), (',', 'change'), ('change', 'human'), ('human', '’'), ('’', 'noise'), ('noise', 'due'), ('due', 'cold'), ('cold', ','), (',', 'etc'), ('etc', '.')]
+
+>> Trigrams are: 
+ [('It', 'handle', 'different'), ('handle', 'different', 'accents'), ('different', 'accents', ','), ('accents', ',', 'slang'), (',', 'slang', 'words'), ('slang', 'words', ','), ('words', ',', 'noise'), (',', 'noise', 'background'), ('noise', 'background', ','), ('background', ',', 'change'), (',', 'change', 'human'), ('change', 'human', '’'), ('human', '’', 'noise'), ('’', 'noise', 'due'), ('noise', 'due', 'cold'), ('due', 'cold', ','), ('cold', ',', 'etc'), (',', 'etc', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('handle', 'VBD'), ('different', 'JJ'), ('accents', 'NNS'), (',', ','), ('slang', 'NN'), ('words', 'NNS'), (',', ','), ('noise', 'NN'), ('background', 'NN'), (',', ','), ('change', 'NN'), ('human', 'JJ'), ('’', 'NN'), ('noise', 'NN'), ('due', 'JJ'), ('cold', 'NN'), (',', ','), ('etc', 'FW'), ('.', '.')]
+
+ (S
+  It/PRP
+  handle/VBD
+  (NP different/JJ accents/NNS)
+  ,/,
+  (NP slang/NN words/NNS)
+  ,/,
+  (NP noise/NN background/NN)
+  ,/,
+  (NP change/NN)
+  (NP human/JJ ’/NN noise/NN)
+  (NP due/JJ cold/NN)
+  ,/,
+  etc/FW
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['different accents', 'slang words', 'noise background', 'change', 'human ’ noise', 'due cold']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('handle', 'handl'), ('different', 'differ'), ('accents', 'accent'), (',', ','), ('slang', 'slang'), ('words', 'word'), (',', ','), ('noise', 'nois'), ('background', 'background'), (',', ','), ('change', 'chang'), ('human', 'human'), ('’', '’'), ('noise', 'nois'), ('due', 'due'), ('cold', 'cold'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('handle', 'handl'), ('different', 'differ'), ('accents', 'accent'), (',', ','), ('slang', 'slang'), ('words', 'word'), (',', ','), ('noise', 'nois'), ('background', 'background'), (',', ','), ('change', 'chang'), ('human', 'human'), ('’', '’'), ('noise', 'nois'), ('due', 'due'), ('cold', 'cold'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('handle', 'handle'), ('different', 'different'), ('accents', 'accent'), (',', ','), ('slang', 'slang'), ('words', 'word'), (',', ','), ('noise', 'noise'), ('background', 'background'), (',', ','), ('change', 'change'), ('human', 'human'), ('’', '’'), ('noise', 'noise'), ('due', 'due'), ('cold', 'cold'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+· Handwriting Recognition − The handwriting recognition software reads the text written on paper by a pen or on screen by a stylus. 
+
+
+>> Tokens are: 
+ ['·', 'Handwriting', 'Recognition', '−', 'The', 'handwriting', 'recognition', 'software', 'reads', 'text', 'written', 'paper', 'pen', 'screen', 'stylus', '.']
+
+>> Bigrams are: 
+ [('·', 'Handwriting'), ('Handwriting', 'Recognition'), ('Recognition', '−'), ('−', 'The'), ('The', 'handwriting'), ('handwriting', 'recognition'), ('recognition', 'software'), ('software', 'reads'), ('reads', 'text'), ('text', 'written'), ('written', 'paper'), ('paper', 'pen'), ('pen', 'screen'), ('screen', 'stylus'), ('stylus', '.')]
+
+>> Trigrams are: 
+ [('·', 'Handwriting', 'Recognition'), ('Handwriting', 'Recognition', '−'), ('Recognition', '−', 'The'), ('−', 'The', 'handwriting'), ('The', 'handwriting', 'recognition'), ('handwriting', 'recognition', 'software'), ('recognition', 'software', 'reads'), ('software', 'reads', 'text'), ('reads', 'text', 'written'), ('text', 'written', 'paper'), ('written', 'paper', 'pen'), ('paper', 'pen', 'screen'), ('pen', 'screen', 'stylus'), ('screen', 'stylus', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Handwriting', 'NNP'), ('Recognition', 'NNP'), ('−', 'VBD'), ('The', 'DT'), ('handwriting', 'NN'), ('recognition', 'NN'), ('software', 'NN'), ('reads', 'VBZ'), ('text', 'JJ'), ('written', 'VBN'), ('paper', 'NN'), ('pen', 'NN'), ('screen', 'NN'), ('stylus', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/NN Handwriting/NNP Recognition/NNP)
+  −/VBD
+  (NP The/DT handwriting/NN recognition/NN software/NN)
+  reads/VBZ
+  text/JJ
+  written/VBN
+  (NP paper/NN pen/NN screen/NN stylus/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Handwriting Recognition', 'The handwriting recognition software', 'paper pen screen stylus']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Handwriting', 'handwrit'), ('Recognition', 'recognit'), ('−', '−'), ('The', 'the'), ('handwriting', 'handwrit'), ('recognition', 'recognit'), ('software', 'softwar'), ('reads', 'read'), ('text', 'text'), ('written', 'written'), ('paper', 'paper'), ('pen', 'pen'), ('screen', 'screen'), ('stylus', 'stylu'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Handwriting', 'handwrit'), ('Recognition', 'recognit'), ('−', '−'), ('The', 'the'), ('handwriting', 'handwrit'), ('recognition', 'recognit'), ('software', 'softwar'), ('reads', 'read'), ('text', 'text'), ('written', 'written'), ('paper', 'paper'), ('pen', 'pen'), ('screen', 'screen'), ('stylus', 'stylus'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Handwriting', 'Handwriting'), ('Recognition', 'Recognition'), ('−', '−'), ('The', 'The'), ('handwriting', 'handwriting'), ('recognition', 'recognition'), ('software', 'software'), ('reads', 'read'), ('text', 'text'), ('written', 'written'), ('paper', 'paper'), ('pen', 'pen'), ('screen', 'screen'), ('stylus', 'stylus'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+It can recognize the shapes of the letters and convert it into editable text. 
+
+
+>> Tokens are: 
+ ['It', 'recognize', 'shapes', 'letters', 'convert', 'editable', 'text', '.']
+
+>> Bigrams are: 
+ [('It', 'recognize'), ('recognize', 'shapes'), ('shapes', 'letters'), ('letters', 'convert'), ('convert', 'editable'), ('editable', 'text'), ('text', '.')]
+
+>> Trigrams are: 
+ [('It', 'recognize', 'shapes'), ('recognize', 'shapes', 'letters'), ('shapes', 'letters', 'convert'), ('letters', 'convert', 'editable'), ('convert', 'editable', 'text'), ('editable', 'text', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('recognize', 'VB'), ('shapes', 'NNS'), ('letters', 'NNS'), ('convert', 'VBP'), ('editable', 'JJ'), ('text', 'NN'), ('.', '.')]
+
+ (S
+  It/PRP
+  recognize/VB
+  (NP shapes/NNS letters/NNS)
+  convert/VBP
+  (NP editable/JJ text/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['shapes letters', 'editable text']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('recognize', 'recogn'), ('shapes', 'shape'), ('letters', 'letter'), ('convert', 'convert'), ('editable', 'edit'), ('text', 'text'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('recognize', 'recogn'), ('shapes', 'shape'), ('letters', 'letter'), ('convert', 'convert'), ('editable', 'edit'), ('text', 'text'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('recognize', 'recognize'), ('shapes', 'shape'), ('letters', 'letter'), ('convert', 'convert'), ('editable', 'editable'), ('text', 'text'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+· Intelligent Robots − Robots are able to perform the tasks given by a human. 
+
+
+>> Tokens are: 
+ ['·', 'Intelligent', 'Robots', '−', 'Robots', 'able', 'perform', 'tasks', 'given', 'human', '.']
+
+>> Bigrams are: 
+ [('·', 'Intelligent'), ('Intelligent', 'Robots'), ('Robots', '−'), ('−', 'Robots'), ('Robots', 'able'), ('able', 'perform'), ('perform', 'tasks'), ('tasks', 'given'), ('given', 'human'), ('human', '.')]
+
+>> Trigrams are: 
+ [('·', 'Intelligent', 'Robots'), ('Intelligent', 'Robots', '−'), ('Robots', '−', 'Robots'), ('−', 'Robots', 'able'), ('Robots', 'able', 'perform'), ('able', 'perform', 'tasks'), ('perform', 'tasks', 'given'), ('tasks', 'given', 'human'), ('given', 'human', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Intelligent', 'NNP'), ('Robots', 'NNP'), ('−', 'NNP'), ('Robots', 'NNP'), ('able', 'JJ'), ('perform', 'NN'), ('tasks', 'NNS'), ('given', 'VBN'), ('human', 'JJ'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Intelligent/NNP Robots/NNP −/NNP Robots/NNP)
+  (NP able/JJ perform/NN tasks/NNS)
+  given/VBN
+  human/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Intelligent Robots − Robots', 'able perform tasks']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Intelligent Robots')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Intelligent', 'intellig'), ('Robots', 'robot'), ('−', '−'), ('Robots', 'robot'), ('able', 'abl'), ('perform', 'perform'), ('tasks', 'task'), ('given', 'given'), ('human', 'human'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Intelligent', 'intellig'), ('Robots', 'robot'), ('−', '−'), ('Robots', 'robot'), ('able', 'abl'), ('perform', 'perform'), ('tasks', 'task'), ('given', 'given'), ('human', 'human'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Intelligent', 'Intelligent'), ('Robots', 'Robots'), ('−', '−'), ('Robots', 'Robots'), ('able', 'able'), ('perform', 'perform'), ('tasks', 'task'), ('given', 'given'), ('human', 'human'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+They have sensors to detect physical data from the real world such as light, heat, temperature, movement, sound, bump, and pressure. 
+
+
+>> Tokens are: 
+ ['They', 'sensors', 'detect', 'physical', 'data', 'real', 'world', 'light', ',', 'heat', ',', 'temperature', ',', 'movement', ',', 'sound', ',', 'bump', ',', 'pressure', '.']
+
+>> Bigrams are: 
+ [('They', 'sensors'), ('sensors', 'detect'), ('detect', 'physical'), ('physical', 'data'), ('data', 'real'), ('real', 'world'), ('world', 'light'), ('light', ','), (',', 'heat'), ('heat', ','), (',', 'temperature'), ('temperature', ','), (',', 'movement'), ('movement', ','), (',', 'sound'), ('sound', ','), (',', 'bump'), ('bump', ','), (',', 'pressure'), ('pressure', '.')]
+
+>> Trigrams are: 
+ [('They', 'sensors', 'detect'), ('sensors', 'detect', 'physical'), ('detect', 'physical', 'data'), ('physical', 'data', 'real'), ('data', 'real', 'world'), ('real', 'world', 'light'), ('world', 'light', ','), ('light', ',', 'heat'), (',', 'heat', ','), ('heat', ',', 'temperature'), (',', 'temperature', ','), ('temperature', ',', 'movement'), (',', 'movement', ','), ('movement', ',', 'sound'), (',', 'sound', ','), ('sound', ',', 'bump'), (',', 'bump', ','), ('bump', ',', 'pressure'), (',', 'pressure', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('sensors', 'VBP'), ('detect', 'JJ'), ('physical', 'JJ'), ('data', 'NNS'), ('real', 'JJ'), ('world', 'NN'), ('light', 'NN'), (',', ','), ('heat', 'NN'), (',', ','), ('temperature', 'NN'), (',', ','), ('movement', 'NN'), (',', ','), ('sound', 'NN'), (',', ','), ('bump', 'NN'), (',', ','), ('pressure', 'NN'), ('.', '.')]
+
+ (S
+  They/PRP
+  sensors/VBP
+  (NP detect/JJ physical/JJ data/NNS)
+  (NP real/JJ world/NN light/NN)
+  ,/,
+  (NP heat/NN)
+  ,/,
+  (NP temperature/NN)
+  ,/,
+  (NP movement/NN)
+  ,/,
+  (NP sound/NN)
+  ,/,
+  (NP bump/NN)
+  ,/,
+  (NP pressure/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['detect physical data', 'real world light', 'heat', 'temperature', 'movement', 'sound', 'bump', 'pressure']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('sensors', 'sensor'), ('detect', 'detect'), ('physical', 'physic'), ('data', 'data'), ('real', 'real'), ('world', 'world'), ('light', 'light'), (',', ','), ('heat', 'heat'), (',', ','), ('temperature', 'temperatur'), (',', ','), ('movement', 'movement'), (',', ','), ('sound', 'sound'), (',', ','), ('bump', 'bump'), (',', ','), ('pressure', 'pressur'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('sensors', 'sensor'), ('detect', 'detect'), ('physical', 'physic'), ('data', 'data'), ('real', 'real'), ('world', 'world'), ('light', 'light'), (',', ','), ('heat', 'heat'), (',', ','), ('temperature', 'temperatur'), (',', ','), ('movement', 'movement'), (',', ','), ('sound', 'sound'), (',', ','), ('bump', 'bump'), (',', ','), ('pressure', 'pressur'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('sensors', 'sensor'), ('detect', 'detect'), ('physical', 'physical'), ('data', 'data'), ('real', 'real'), ('world', 'world'), ('light', 'light'), (',', ','), ('heat', 'heat'), (',', ','), ('temperature', 'temperature'), (',', ','), ('movement', 'movement'), (',', ','), ('sound', 'sound'), (',', ','), ('bump', 'bump'), (',', ','), ('pressure', 'pressure'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+They have efficient processors, multiple sensors and huge memory, to exhibit intelligence. 
+
+
+>> Tokens are: 
+ ['They', 'efficient', 'processors', ',', 'multiple', 'sensors', 'huge', 'memory', ',', 'exhibit', 'intelligence', '.']
+
+>> Bigrams are: 
+ [('They', 'efficient'), ('efficient', 'processors'), ('processors', ','), (',', 'multiple'), ('multiple', 'sensors'), ('sensors', 'huge'), ('huge', 'memory'), ('memory', ','), (',', 'exhibit'), ('exhibit', 'intelligence'), ('intelligence', '.')]
+
+>> Trigrams are: 
+ [('They', 'efficient', 'processors'), ('efficient', 'processors', ','), ('processors', ',', 'multiple'), (',', 'multiple', 'sensors'), ('multiple', 'sensors', 'huge'), ('sensors', 'huge', 'memory'), ('huge', 'memory', ','), ('memory', ',', 'exhibit'), (',', 'exhibit', 'intelligence'), ('exhibit', 'intelligence', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('efficient', 'VBP'), ('processors', 'NNS'), (',', ','), ('multiple', 'JJ'), ('sensors', 'NNS'), ('huge', 'JJ'), ('memory', 'NN'), (',', ','), ('exhibit', 'NN'), ('intelligence', 'NN'), ('.', '.')]
+
+ (S
+  They/PRP
+  efficient/VBP
+  (NP processors/NNS)
+  ,/,
+  (NP multiple/JJ sensors/NNS)
+  (NP huge/JJ memory/NN)
+  ,/,
+  (NP exhibit/NN intelligence/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['processors', 'multiple sensors', 'huge memory', 'exhibit intelligence']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('efficient', 'effici'), ('processors', 'processor'), (',', ','), ('multiple', 'multipl'), ('sensors', 'sensor'), ('huge', 'huge'), ('memory', 'memori'), (',', ','), ('exhibit', 'exhibit'), ('intelligence', 'intellig'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('efficient', 'effici'), ('processors', 'processor'), (',', ','), ('multiple', 'multipl'), ('sensors', 'sensor'), ('huge', 'huge'), ('memory', 'memori'), (',', ','), ('exhibit', 'exhibit'), ('intelligence', 'intellig'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('efficient', 'efficient'), ('processors', 'processor'), (',', ','), ('multiple', 'multiple'), ('sensors', 'sensor'), ('huge', 'huge'), ('memory', 'memory'), (',', ','), ('exhibit', 'exhibit'), ('intelligence', 'intelligence'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+In addition, they are capable of learning from their mistakes and they can adapt to the new environment. 
+
+
+>> Tokens are: 
+ ['In', 'addition', ',', 'capable', 'learning', 'mistakes', 'adapt', 'new', 'environment', '.']
+
+>> Bigrams are: 
+ [('In', 'addition'), ('addition', ','), (',', 'capable'), ('capable', 'learning'), ('learning', 'mistakes'), ('mistakes', 'adapt'), ('adapt', 'new'), ('new', 'environment'), ('environment', '.')]
+
+>> Trigrams are: 
+ [('In', 'addition', ','), ('addition', ',', 'capable'), (',', 'capable', 'learning'), ('capable', 'learning', 'mistakes'), ('learning', 'mistakes', 'adapt'), ('mistakes', 'adapt', 'new'), ('adapt', 'new', 'environment'), ('new', 'environment', '.')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('addition', 'NN'), (',', ','), ('capable', 'JJ'), ('learning', 'VBG'), ('mistakes', 'NNS'), ('adapt', 'VBP'), ('new', 'JJ'), ('environment', 'NN'), ('.', '.')]
+
+ (S
+  In/IN
+  (NP addition/NN)
+  ,/,
+  capable/JJ
+  learning/VBG
+  (NP mistakes/NNS)
+  adapt/VBP
+  (NP new/JJ environment/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['addition', 'mistakes', 'new environment']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('addition', 'addit'), (',', ','), ('capable', 'capabl'), ('learning', 'learn'), ('mistakes', 'mistak'), ('adapt', 'adapt'), ('new', 'new'), ('environment', 'environ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('addition', 'addit'), (',', ','), ('capable', 'capabl'), ('learning', 'learn'), ('mistakes', 'mistak'), ('adapt', 'adapt'), ('new', 'new'), ('environment', 'environ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('addition', 'addition'), (',', ','), ('capable', 'capable'), ('learning', 'learning'), ('mistakes', 'mistake'), ('adapt', 'adapt'), ('new', 'new'), ('environment', 'environment'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+History of AI Here is the history of AI during 20th century − 	Year 	Milestone / Innovation  	1923 	Karel Čapek play named “Rossum's Universal Robots” (RUR) opens in London, first use of the word "robot" in English. 
+
+
+>> Tokens are: 
+ ['History', 'AI', 'Here', 'history', 'AI', '20th', 'century', '−', 'Year', 'Milestone', '/', 'Innovation', '1923', 'Karel', 'Čapek', 'play', 'named', '“', 'Rossum', "'s", 'Universal', 'Robots', '”', '(', 'RUR', ')', 'opens', 'London', ',', 'first', 'use', 'word', '``', 'robot', "''", 'English', '.']
+
+>> Bigrams are: 
+ [('History', 'AI'), ('AI', 'Here'), ('Here', 'history'), ('history', 'AI'), ('AI', '20th'), ('20th', 'century'), ('century', '−'), ('−', 'Year'), ('Year', 'Milestone'), ('Milestone', '/'), ('/', 'Innovation'), ('Innovation', '1923'), ('1923', 'Karel'), ('Karel', 'Čapek'), ('Čapek', 'play'), ('play', 'named'), ('named', '“'), ('“', 'Rossum'), ('Rossum', "'s"), ("'s", 'Universal'), ('Universal', 'Robots'), ('Robots', '”'), ('”', '('), ('(', 'RUR'), ('RUR', ')'), (')', 'opens'), ('opens', 'London'), ('London', ','), (',', 'first'), ('first', 'use'), ('use', 'word'), ('word', '``'), ('``', 'robot'), ('robot', "''"), ("''", 'English'), ('English', '.')]
+
+>> Trigrams are: 
+ [('History', 'AI', 'Here'), ('AI', 'Here', 'history'), ('Here', 'history', 'AI'), ('history', 'AI', '20th'), ('AI', '20th', 'century'), ('20th', 'century', '−'), ('century', '−', 'Year'), ('−', 'Year', 'Milestone'), ('Year', 'Milestone', '/'), ('Milestone', '/', 'Innovation'), ('/', 'Innovation', '1923'), ('Innovation', '1923', 'Karel'), ('1923', 'Karel', 'Čapek'), ('Karel', 'Čapek', 'play'), ('Čapek', 'play', 'named'), ('play', 'named', '“'), ('named', '“', 'Rossum'), ('“', 'Rossum', "'s"), ('Rossum', "'s", 'Universal'), ("'s", 'Universal', 'Robots'), ('Universal', 'Robots', '”'), ('Robots', '”', '('), ('”', '(', 'RUR'), ('(', 'RUR', ')'), ('RUR', ')', 'opens'), (')', 'opens', 'London'), ('opens', 'London', ','), ('London', ',', 'first'), (',', 'first', 'use'), ('first', 'use', 'word'), ('use', 'word', '``'), ('word', '``', 'robot'), ('``', 'robot', "''"), ('robot', "''", 'English'), ("''", 'English', '.')]
+
+>> POS Tags are: 
+ [('History', 'NN'), ('AI', 'NNP'), ('Here', 'RB'), ('history', 'NN'), ('AI', 'NNP'), ('20th', 'JJ'), ('century', 'NN'), ('−', 'CD'), ('Year', 'NNP'), ('Milestone', 'NNP'), ('/', 'NNP'), ('Innovation', 'NNP'), ('1923', 'CD'), ('Karel', 'NNP'), ('Čapek', 'NNP'), ('play', 'NN'), ('named', 'VBN'), ('“', 'NNP'), ('Rossum', 'NNP'), ("'s", 'POS'), ('Universal', 'NNP'), ('Robots', 'NNP'), ('”', 'NNP'), ('(', '('), ('RUR', 'NNP'), (')', ')'), ('opens', 'VBZ'), ('London', 'NNP'), (',', ','), ('first', 'RB'), ('use', 'NN'), ('word', 'NN'), ('``', '``'), ('robot', 'NN'), ("''", "''"), ('English', 'NNP'), ('.', '.')]
+
+ (S
+  (NP History/NN AI/NNP)
+  Here/RB
+  (NP history/NN AI/NNP)
+  (NP 20th/JJ century/NN)
+  −/CD
+  (NP Year/NNP Milestone/NNP //NNP Innovation/NNP)
+  1923/CD
+  (NP Karel/NNP Čapek/NNP play/NN)
+  named/VBN
+  (NP “/NNP Rossum/NNP)
+  's/POS
+  (NP Universal/NNP Robots/NNP ”/NNP)
+  (/(
+  (NP RUR/NNP)
+  )/)
+  opens/VBZ
+  (NP London/NNP)
+  ,/,
+  first/RB
+  (NP use/NN word/NN)
+  ``/``
+  (NP robot/NN)
+  ''/''
+  (NP English/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['History AI', 'history AI', '20th century', 'Year Milestone / Innovation', 'Karel Čapek play', '“ Rossum', 'Universal Robots ”', 'RUR', 'London', 'use word', 'robot', 'English']
+
+>> Named Entities are: 
+ [('PERSON', 'History AI'), ('PERSON', 'Milestone'), ('PERSON', 'Karel Čapek'), ('PERSON', 'Rossum'), ('ORGANIZATION', 'Universal Robots'), ('ORGANIZATION', 'RUR'), ('GPE', 'London'), ('GPE', 'English')] 
+
+>> Stemming using Porter Stemmer: 
+ [('History', 'histori'), ('AI', 'ai'), ('Here', 'here'), ('history', 'histori'), ('AI', 'ai'), ('20th', '20th'), ('century', 'centuri'), ('−', '−'), ('Year', 'year'), ('Milestone', 'mileston'), ('/', '/'), ('Innovation', 'innov'), ('1923', '1923'), ('Karel', 'karel'), ('Čapek', 'čapek'), ('play', 'play'), ('named', 'name'), ('“', '“'), ('Rossum', 'rossum'), ("'s", "'s"), ('Universal', 'univers'), ('Robots', 'robot'), ('”', '”'), ('(', '('), ('RUR', 'rur'), (')', ')'), ('opens', 'open'), ('London', 'london'), (',', ','), ('first', 'first'), ('use', 'use'), ('word', 'word'), ('``', '``'), ('robot', 'robot'), ("''", "''"), ('English', 'english'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('History', 'histori'), ('AI', 'ai'), ('Here', 'here'), ('history', 'histori'), ('AI', 'ai'), ('20th', '20th'), ('century', 'centuri'), ('−', '−'), ('Year', 'year'), ('Milestone', 'mileston'), ('/', '/'), ('Innovation', 'innov'), ('1923', '1923'), ('Karel', 'karel'), ('Čapek', 'čapek'), ('play', 'play'), ('named', 'name'), ('“', '“'), ('Rossum', 'rossum'), ("'s", "'s"), ('Universal', 'univers'), ('Robots', 'robot'), ('”', '”'), ('(', '('), ('RUR', 'rur'), (')', ')'), ('opens', 'open'), ('London', 'london'), (',', ','), ('first', 'first'), ('use', 'use'), ('word', 'word'), ('``', '``'), ('robot', 'robot'), ("''", "''"), ('English', 'english'), ('.', '.')]
+
+>> Lemmatization: 
+ [('History', 'History'), ('AI', 'AI'), ('Here', 'Here'), ('history', 'history'), ('AI', 'AI'), ('20th', '20th'), ('century', 'century'), ('−', '−'), ('Year', 'Year'), ('Milestone', 'Milestone'), ('/', '/'), ('Innovation', 'Innovation'), ('1923', '1923'), ('Karel', 'Karel'), ('Čapek', 'Čapek'), ('play', 'play'), ('named', 'named'), ('“', '“'), ('Rossum', 'Rossum'), ("'s", "'s"), ('Universal', 'Universal'), ('Robots', 'Robots'), ('”', '”'), ('(', '('), ('RUR', 'RUR'), (')', ')'), ('opens', 'open'), ('London', 'London'), (',', ','), ('first', 'first'), ('use', 'use'), ('word', 'word'), ('``', '``'), ('robot', 'robot'), ("''", "''"), ('English', 'English'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+1943 	Foundations for neural networks laid. 
+
+
+>> Tokens are: 
+ ['1943', 'Foundations', 'neural', 'networks', 'laid', '.']
+
+>> Bigrams are: 
+ [('1943', 'Foundations'), ('Foundations', 'neural'), ('neural', 'networks'), ('networks', 'laid'), ('laid', '.')]
+
+>> Trigrams are: 
+ [('1943', 'Foundations', 'neural'), ('Foundations', 'neural', 'networks'), ('neural', 'networks', 'laid'), ('networks', 'laid', '.')]
+
+>> POS Tags are: 
+ [('1943', 'CD'), ('Foundations', 'NNP'), ('neural', 'JJ'), ('networks', 'NNS'), ('laid', 'VBN'), ('.', '.')]
+
+ (S
+  1943/CD
+  (NP Foundations/NNP)
+  (NP neural/JJ networks/NNS)
+  laid/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Foundations', 'neural networks']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('1943', '1943'), ('Foundations', 'foundat'), ('neural', 'neural'), ('networks', 'network'), ('laid', 'laid'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1943', '1943'), ('Foundations', 'foundat'), ('neural', 'neural'), ('networks', 'network'), ('laid', 'laid'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1943', '1943'), ('Foundations', 'Foundations'), ('neural', 'neural'), ('networks', 'network'), ('laid', 'laid'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+1945 	Isaac Asimov, a Columbia University alumni, coined the term Robotics. 
+
+
+>> Tokens are: 
+ ['1945', 'Isaac', 'Asimov', ',', 'Columbia', 'University', 'alumni', ',', 'coined', 'term', 'Robotics', '.']
+
+>> Bigrams are: 
+ [('1945', 'Isaac'), ('Isaac', 'Asimov'), ('Asimov', ','), (',', 'Columbia'), ('Columbia', 'University'), ('University', 'alumni'), ('alumni', ','), (',', 'coined'), ('coined', 'term'), ('term', 'Robotics'), ('Robotics', '.')]
+
+>> Trigrams are: 
+ [('1945', 'Isaac', 'Asimov'), ('Isaac', 'Asimov', ','), ('Asimov', ',', 'Columbia'), (',', 'Columbia', 'University'), ('Columbia', 'University', 'alumni'), ('University', 'alumni', ','), ('alumni', ',', 'coined'), (',', 'coined', 'term'), ('coined', 'term', 'Robotics'), ('term', 'Robotics', '.')]
+
+>> POS Tags are: 
+ [('1945', 'CD'), ('Isaac', 'NNP'), ('Asimov', 'NNP'), (',', ','), ('Columbia', 'NNP'), ('University', 'NNP'), ('alumni', 'NN'), (',', ','), ('coined', 'JJ'), ('term', 'NN'), ('Robotics', 'NNP'), ('.', '.')]
+
+ (S
+  1945/CD
+  (NP Isaac/NNP Asimov/NNP)
+  ,/,
+  (NP Columbia/NNP University/NNP alumni/NN)
+  ,/,
+  (NP coined/JJ term/NN Robotics/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Isaac Asimov', 'Columbia University alumni', 'coined term Robotics']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Columbia University'), ('PERSON', 'Robotics')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1945', '1945'), ('Isaac', 'isaac'), ('Asimov', 'asimov'), (',', ','), ('Columbia', 'columbia'), ('University', 'univers'), ('alumni', 'alumni'), (',', ','), ('coined', 'coin'), ('term', 'term'), ('Robotics', 'robot'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1945', '1945'), ('Isaac', 'isaac'), ('Asimov', 'asimov'), (',', ','), ('Columbia', 'columbia'), ('University', 'univers'), ('alumni', 'alumni'), (',', ','), ('coined', 'coin'), ('term', 'term'), ('Robotics', 'robot'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1945', '1945'), ('Isaac', 'Isaac'), ('Asimov', 'Asimov'), (',', ','), ('Columbia', 'Columbia'), ('University', 'University'), ('alumni', 'alumnus'), (',', ','), ('coined', 'coined'), ('term', 'term'), ('Robotics', 'Robotics'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+1950 	Alan Turing introduced Turing Test for evaluation of intelligence and published Computing Machinery and Intelligence. 
+
+
+>> Tokens are: 
+ ['1950', 'Alan', 'Turing', 'introduced', 'Turing', 'Test', 'evaluation', 'intelligence', 'published', 'Computing', 'Machinery', 'Intelligence', '.']
+
+>> Bigrams are: 
+ [('1950', 'Alan'), ('Alan', 'Turing'), ('Turing', 'introduced'), ('introduced', 'Turing'), ('Turing', 'Test'), ('Test', 'evaluation'), ('evaluation', 'intelligence'), ('intelligence', 'published'), ('published', 'Computing'), ('Computing', 'Machinery'), ('Machinery', 'Intelligence'), ('Intelligence', '.')]
+
+>> Trigrams are: 
+ [('1950', 'Alan', 'Turing'), ('Alan', 'Turing', 'introduced'), ('Turing', 'introduced', 'Turing'), ('introduced', 'Turing', 'Test'), ('Turing', 'Test', 'evaluation'), ('Test', 'evaluation', 'intelligence'), ('evaluation', 'intelligence', 'published'), ('intelligence', 'published', 'Computing'), ('published', 'Computing', 'Machinery'), ('Computing', 'Machinery', 'Intelligence'), ('Machinery', 'Intelligence', '.')]
+
+>> POS Tags are: 
+ [('1950', 'CD'), ('Alan', 'NNP'), ('Turing', 'NNP'), ('introduced', 'VBD'), ('Turing', 'NNP'), ('Test', 'NNP'), ('evaluation', 'NN'), ('intelligence', 'NN'), ('published', 'VBN'), ('Computing', 'NNP'), ('Machinery', 'NNP'), ('Intelligence', 'NNP'), ('.', '.')]
+
+ (S
+  1950/CD
+  (NP Alan/NNP Turing/NNP)
+  introduced/VBD
+  (NP Turing/NNP Test/NNP evaluation/NN intelligence/NN)
+  published/VBN
+  (NP Computing/NNP Machinery/NNP Intelligence/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Alan Turing', 'Turing Test evaluation intelligence', 'Computing Machinery Intelligence']
+
+>> Named Entities are: 
+ [('PERSON', 'Alan Turing'), ('PERSON', 'Turing Test'), ('ORGANIZATION', 'Computing Machinery Intelligence')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1950', '1950'), ('Alan', 'alan'), ('Turing', 'ture'), ('introduced', 'introduc'), ('Turing', 'ture'), ('Test', 'test'), ('evaluation', 'evalu'), ('intelligence', 'intellig'), ('published', 'publish'), ('Computing', 'comput'), ('Machinery', 'machineri'), ('Intelligence', 'intellig'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1950', '1950'), ('Alan', 'alan'), ('Turing', 'ture'), ('introduced', 'introduc'), ('Turing', 'ture'), ('Test', 'test'), ('evaluation', 'evalu'), ('intelligence', 'intellig'), ('published', 'publish'), ('Computing', 'comput'), ('Machinery', 'machineri'), ('Intelligence', 'intellig'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1950', '1950'), ('Alan', 'Alan'), ('Turing', 'Turing'), ('introduced', 'introduced'), ('Turing', 'Turing'), ('Test', 'Test'), ('evaluation', 'evaluation'), ('intelligence', 'intelligence'), ('published', 'published'), ('Computing', 'Computing'), ('Machinery', 'Machinery'), ('Intelligence', 'Intelligence'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+Claude Shannon published Detailed Analysis of Chess Playing as a search. 
+
+
+>> Tokens are: 
+ ['Claude', 'Shannon', 'published', 'Detailed', 'Analysis', 'Chess', 'Playing', 'search', '.']
+
+>> Bigrams are: 
+ [('Claude', 'Shannon'), ('Shannon', 'published'), ('published', 'Detailed'), ('Detailed', 'Analysis'), ('Analysis', 'Chess'), ('Chess', 'Playing'), ('Playing', 'search'), ('search', '.')]
+
+>> Trigrams are: 
+ [('Claude', 'Shannon', 'published'), ('Shannon', 'published', 'Detailed'), ('published', 'Detailed', 'Analysis'), ('Detailed', 'Analysis', 'Chess'), ('Analysis', 'Chess', 'Playing'), ('Chess', 'Playing', 'search'), ('Playing', 'search', '.')]
+
+>> POS Tags are: 
+ [('Claude', 'NNP'), ('Shannon', 'NNP'), ('published', 'VBD'), ('Detailed', 'JJ'), ('Analysis', 'NNP'), ('Chess', 'NNP'), ('Playing', 'NNP'), ('search', 'NN'), ('.', '.')]
+
+ (S
+  (NP Claude/NNP Shannon/NNP)
+  published/VBD
+  (NP Detailed/JJ Analysis/NNP Chess/NNP Playing/NNP search/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Claude Shannon', 'Detailed Analysis Chess Playing search']
+
+>> Named Entities are: 
+ [('PERSON', 'Claude'), ('PERSON', 'Shannon'), ('PERSON', 'Detailed Analysis Chess')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Claude', 'claud'), ('Shannon', 'shannon'), ('published', 'publish'), ('Detailed', 'detail'), ('Analysis', 'analysi'), ('Chess', 'chess'), ('Playing', 'play'), ('search', 'search'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Claude', 'claud'), ('Shannon', 'shannon'), ('published', 'publish'), ('Detailed', 'detail'), ('Analysis', 'analysi'), ('Chess', 'chess'), ('Playing', 'play'), ('search', 'search'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Claude', 'Claude'), ('Shannon', 'Shannon'), ('published', 'published'), ('Detailed', 'Detailed'), ('Analysis', 'Analysis'), ('Chess', 'Chess'), ('Playing', 'Playing'), ('search', 'search'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+1956 	John McCarthy coined the term Artificial Intelligence. 
+
+
+>> Tokens are: 
+ ['1956', 'John', 'McCarthy', 'coined', 'term', 'Artificial', 'Intelligence', '.']
+
+>> Bigrams are: 
+ [('1956', 'John'), ('John', 'McCarthy'), ('McCarthy', 'coined'), ('coined', 'term'), ('term', 'Artificial'), ('Artificial', 'Intelligence'), ('Intelligence', '.')]
+
+>> Trigrams are: 
+ [('1956', 'John', 'McCarthy'), ('John', 'McCarthy', 'coined'), ('McCarthy', 'coined', 'term'), ('coined', 'term', 'Artificial'), ('term', 'Artificial', 'Intelligence'), ('Artificial', 'Intelligence', '.')]
+
+>> POS Tags are: 
+ [('1956', 'CD'), ('John', 'NNP'), ('McCarthy', 'NNP'), ('coined', 'VBD'), ('term', 'NN'), ('Artificial', 'NNP'), ('Intelligence', 'NNP'), ('.', '.')]
+
+ (S
+  1956/CD
+  (NP John/NNP McCarthy/NNP)
+  coined/VBD
+  (NP term/NN Artificial/NNP Intelligence/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['John McCarthy', 'term Artificial Intelligence']
+
+>> Named Entities are: 
+ [('PERSON', 'John McCarthy'), ('ORGANIZATION', 'Artificial Intelligence')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1956', '1956'), ('John', 'john'), ('McCarthy', 'mccarthi'), ('coined', 'coin'), ('term', 'term'), ('Artificial', 'artifici'), ('Intelligence', 'intellig'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1956', '1956'), ('John', 'john'), ('McCarthy', 'mccarthi'), ('coined', 'coin'), ('term', 'term'), ('Artificial', 'artifici'), ('Intelligence', 'intellig'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1956', '1956'), ('John', 'John'), ('McCarthy', 'McCarthy'), ('coined', 'coined'), ('term', 'term'), ('Artificial', 'Artificial'), ('Intelligence', 'Intelligence'), ('.', '.')]
+
+
+
+============================ Sentence 23 =============================
+
+Demonstration of the first running AI program at Carnegie Mellon University. 
+
+
+>> Tokens are: 
+ ['Demonstration', 'first', 'running', 'AI', 'program', 'Carnegie', 'Mellon', 'University', '.']
+
+>> Bigrams are: 
+ [('Demonstration', 'first'), ('first', 'running'), ('running', 'AI'), ('AI', 'program'), ('program', 'Carnegie'), ('Carnegie', 'Mellon'), ('Mellon', 'University'), ('University', '.')]
+
+>> Trigrams are: 
+ [('Demonstration', 'first', 'running'), ('first', 'running', 'AI'), ('running', 'AI', 'program'), ('AI', 'program', 'Carnegie'), ('program', 'Carnegie', 'Mellon'), ('Carnegie', 'Mellon', 'University'), ('Mellon', 'University', '.')]
+
+>> POS Tags are: 
+ [('Demonstration', 'NNP'), ('first', 'RB'), ('running', 'VBG'), ('AI', 'NNP'), ('program', 'NN'), ('Carnegie', 'NNP'), ('Mellon', 'NNP'), ('University', 'NNP'), ('.', '.')]
+
+ (S
+  (NP Demonstration/NNP)
+  first/RB
+  running/VBG
+  (NP AI/NNP program/NN Carnegie/NNP Mellon/NNP University/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Demonstration', 'AI program Carnegie Mellon University']
+
+>> Named Entities are: 
+ [('PERSON', 'Carnegie Mellon University')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Demonstration', 'demonstr'), ('first', 'first'), ('running', 'run'), ('AI', 'ai'), ('program', 'program'), ('Carnegie', 'carnegi'), ('Mellon', 'mellon'), ('University', 'univers'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Demonstration', 'demonstr'), ('first', 'first'), ('running', 'run'), ('AI', 'ai'), ('program', 'program'), ('Carnegie', 'carnegi'), ('Mellon', 'mellon'), ('University', 'univers'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Demonstration', 'Demonstration'), ('first', 'first'), ('running', 'running'), ('AI', 'AI'), ('program', 'program'), ('Carnegie', 'Carnegie'), ('Mellon', 'Mellon'), ('University', 'University'), ('.', '.')]
+
+
+
+============================ Sentence 24 =============================
+
+1958 	John McCarthy invents LISP programming language for AI. 
+
+
+>> Tokens are: 
+ ['1958', 'John', 'McCarthy', 'invents', 'LISP', 'programming', 'language', 'AI', '.']
+
+>> Bigrams are: 
+ [('1958', 'John'), ('John', 'McCarthy'), ('McCarthy', 'invents'), ('invents', 'LISP'), ('LISP', 'programming'), ('programming', 'language'), ('language', 'AI'), ('AI', '.')]
+
+>> Trigrams are: 
+ [('1958', 'John', 'McCarthy'), ('John', 'McCarthy', 'invents'), ('McCarthy', 'invents', 'LISP'), ('invents', 'LISP', 'programming'), ('LISP', 'programming', 'language'), ('programming', 'language', 'AI'), ('language', 'AI', '.')]
+
+>> POS Tags are: 
+ [('1958', 'CD'), ('John', 'NNP'), ('McCarthy', 'NNP'), ('invents', 'NNS'), ('LISP', 'NNP'), ('programming', 'VBG'), ('language', 'NN'), ('AI', 'NNP'), ('.', '.')]
+
+ (S
+  1958/CD
+  (NP John/NNP McCarthy/NNP invents/NNS LISP/NNP)
+  programming/VBG
+  (NP language/NN AI/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['John McCarthy invents LISP', 'language AI']
+
+>> Named Entities are: 
+ [('PERSON', 'John McCarthy'), ('ORGANIZATION', 'LISP')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1958', '1958'), ('John', 'john'), ('McCarthy', 'mccarthi'), ('invents', 'invent'), ('LISP', 'lisp'), ('programming', 'program'), ('language', 'languag'), ('AI', 'ai'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1958', '1958'), ('John', 'john'), ('McCarthy', 'mccarthi'), ('invents', 'invent'), ('LISP', 'lisp'), ('programming', 'program'), ('language', 'languag'), ('AI', 'ai'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1958', '1958'), ('John', 'John'), ('McCarthy', 'McCarthy'), ('invents', 'invents'), ('LISP', 'LISP'), ('programming', 'programming'), ('language', 'language'), ('AI', 'AI'), ('.', '.')]
+
+
+
+============================ Sentence 25 =============================
+
+1964 	Danny Bobrow's dissertation at MIT showed that computers can understand natural language well enough to solve algebra word problems correctly. 
+
+
+>> Tokens are: 
+ ['1964', 'Danny', 'Bobrow', "'s", 'dissertation', 'MIT', 'showed', 'computers', 'understand', 'natural', 'language', 'well', 'enough', 'solve', 'algebra', 'word', 'problems', 'correctly', '.']
+
+>> Bigrams are: 
+ [('1964', 'Danny'), ('Danny', 'Bobrow'), ('Bobrow', "'s"), ("'s", 'dissertation'), ('dissertation', 'MIT'), ('MIT', 'showed'), ('showed', 'computers'), ('computers', 'understand'), ('understand', 'natural'), ('natural', 'language'), ('language', 'well'), ('well', 'enough'), ('enough', 'solve'), ('solve', 'algebra'), ('algebra', 'word'), ('word', 'problems'), ('problems', 'correctly'), ('correctly', '.')]
+
+>> Trigrams are: 
+ [('1964', 'Danny', 'Bobrow'), ('Danny', 'Bobrow', "'s"), ('Bobrow', "'s", 'dissertation'), ("'s", 'dissertation', 'MIT'), ('dissertation', 'MIT', 'showed'), ('MIT', 'showed', 'computers'), ('showed', 'computers', 'understand'), ('computers', 'understand', 'natural'), ('understand', 'natural', 'language'), ('natural', 'language', 'well'), ('language', 'well', 'enough'), ('well', 'enough', 'solve'), ('enough', 'solve', 'algebra'), ('solve', 'algebra', 'word'), ('algebra', 'word', 'problems'), ('word', 'problems', 'correctly'), ('problems', 'correctly', '.')]
+
+>> POS Tags are: 
+ [('1964', 'CD'), ('Danny', 'NNP'), ('Bobrow', 'NNP'), ("'s", 'POS'), ('dissertation', 'NN'), ('MIT', 'NNP'), ('showed', 'VBD'), ('computers', 'NNS'), ('understand', 'VBP'), ('natural', 'JJ'), ('language', 'NN'), ('well', 'RB'), ('enough', 'RB'), ('solve', 'VB'), ('algebra', 'NN'), ('word', 'NN'), ('problems', 'NNS'), ('correctly', 'RB'), ('.', '.')]
+
+ (S
+  1964/CD
+  (NP Danny/NNP Bobrow/NNP)
+  's/POS
+  (NP dissertation/NN MIT/NNP)
+  showed/VBD
+  (NP computers/NNS)
+  understand/VBP
+  (NP natural/JJ language/NN)
+  well/RB
+  enough/RB
+  solve/VB
+  (NP algebra/NN word/NN problems/NNS)
+  correctly/RB
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Danny Bobrow', 'dissertation MIT', 'computers', 'natural language', 'algebra word problems']
+
+>> Named Entities are: 
+ [('PERSON', 'Danny Bobrow'), ('ORGANIZATION', 'MIT')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1964', '1964'), ('Danny', 'danni'), ('Bobrow', 'bobrow'), ("'s", "'s"), ('dissertation', 'dissert'), ('MIT', 'mit'), ('showed', 'show'), ('computers', 'comput'), ('understand', 'understand'), ('natural', 'natur'), ('language', 'languag'), ('well', 'well'), ('enough', 'enough'), ('solve', 'solv'), ('algebra', 'algebra'), ('word', 'word'), ('problems', 'problem'), ('correctly', 'correctli'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1964', '1964'), ('Danny', 'danni'), ('Bobrow', 'bobrow'), ("'s", "'s"), ('dissertation', 'dissert'), ('MIT', 'mit'), ('showed', 'show'), ('computers', 'comput'), ('understand', 'understand'), ('natural', 'natur'), ('language', 'languag'), ('well', 'well'), ('enough', 'enough'), ('solve', 'solv'), ('algebra', 'algebra'), ('word', 'word'), ('problems', 'problem'), ('correctly', 'correct'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1964', '1964'), ('Danny', 'Danny'), ('Bobrow', 'Bobrow'), ("'s", "'s"), ('dissertation', 'dissertation'), ('MIT', 'MIT'), ('showed', 'showed'), ('computers', 'computer'), ('understand', 'understand'), ('natural', 'natural'), ('language', 'language'), ('well', 'well'), ('enough', 'enough'), ('solve', 'solve'), ('algebra', 'algebra'), ('word', 'word'), ('problems', 'problem'), ('correctly', 'correctly'), ('.', '.')]
+
+
+
+============================ Sentence 26 =============================
+
+1965 	Joseph Weizenbaum at MIT built ELIZA, an interactive problem that carries on a dialogue in English. 
+
+
+>> Tokens are: 
+ ['1965', 'Joseph', 'Weizenbaum', 'MIT', 'built', 'ELIZA', ',', 'interactive', 'problem', 'carries', 'dialogue', 'English', '.']
+
+>> Bigrams are: 
+ [('1965', 'Joseph'), ('Joseph', 'Weizenbaum'), ('Weizenbaum', 'MIT'), ('MIT', 'built'), ('built', 'ELIZA'), ('ELIZA', ','), (',', 'interactive'), ('interactive', 'problem'), ('problem', 'carries'), ('carries', 'dialogue'), ('dialogue', 'English'), ('English', '.')]
+
+>> Trigrams are: 
+ [('1965', 'Joseph', 'Weizenbaum'), ('Joseph', 'Weizenbaum', 'MIT'), ('Weizenbaum', 'MIT', 'built'), ('MIT', 'built', 'ELIZA'), ('built', 'ELIZA', ','), ('ELIZA', ',', 'interactive'), (',', 'interactive', 'problem'), ('interactive', 'problem', 'carries'), ('problem', 'carries', 'dialogue'), ('carries', 'dialogue', 'English'), ('dialogue', 'English', '.')]
+
+>> POS Tags are: 
+ [('1965', 'CD'), ('Joseph', 'NNP'), ('Weizenbaum', 'NNP'), ('MIT', 'NNP'), ('built', 'VBD'), ('ELIZA', 'NNP'), (',', ','), ('interactive', 'JJ'), ('problem', 'NN'), ('carries', 'VBZ'), ('dialogue', 'NN'), ('English', 'NNP'), ('.', '.')]
+
+ (S
+  1965/CD
+  (NP Joseph/NNP Weizenbaum/NNP MIT/NNP)
+  built/VBD
+  (NP ELIZA/NNP)
+  ,/,
+  (NP interactive/JJ problem/NN)
+  carries/VBZ
+  (NP dialogue/NN English/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Joseph Weizenbaum MIT', 'ELIZA', 'interactive problem', 'dialogue English']
+
+>> Named Entities are: 
+ [('PERSON', 'Joseph Weizenbaum MIT'), ('ORGANIZATION', 'ELIZA'), ('GPE', 'English')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1965', '1965'), ('Joseph', 'joseph'), ('Weizenbaum', 'weizenbaum'), ('MIT', 'mit'), ('built', 'built'), ('ELIZA', 'eliza'), (',', ','), ('interactive', 'interact'), ('problem', 'problem'), ('carries', 'carri'), ('dialogue', 'dialogu'), ('English', 'english'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1965', '1965'), ('Joseph', 'joseph'), ('Weizenbaum', 'weizenbaum'), ('MIT', 'mit'), ('built', 'built'), ('ELIZA', 'eliza'), (',', ','), ('interactive', 'interact'), ('problem', 'problem'), ('carries', 'carri'), ('dialogue', 'dialogu'), ('English', 'english'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1965', '1965'), ('Joseph', 'Joseph'), ('Weizenbaum', 'Weizenbaum'), ('MIT', 'MIT'), ('built', 'built'), ('ELIZA', 'ELIZA'), (',', ','), ('interactive', 'interactive'), ('problem', 'problem'), ('carries', 'carry'), ('dialogue', 'dialogue'), ('English', 'English'), ('.', '.')]
+
+
+
+============================ Sentence 27 =============================
+
+1969 	Scientists at Stanford Research Institute Developed Shakey, a robot, equipped with locomotion, perception, and problem solving. 
+
+
+>> Tokens are: 
+ ['1969', 'Scientists', 'Stanford', 'Research', 'Institute', 'Developed', 'Shakey', ',', 'robot', ',', 'equipped', 'locomotion', ',', 'perception', ',', 'problem', 'solving', '.']
+
+>> Bigrams are: 
+ [('1969', 'Scientists'), ('Scientists', 'Stanford'), ('Stanford', 'Research'), ('Research', 'Institute'), ('Institute', 'Developed'), ('Developed', 'Shakey'), ('Shakey', ','), (',', 'robot'), ('robot', ','), (',', 'equipped'), ('equipped', 'locomotion'), ('locomotion', ','), (',', 'perception'), ('perception', ','), (',', 'problem'), ('problem', 'solving'), ('solving', '.')]
+
+>> Trigrams are: 
+ [('1969', 'Scientists', 'Stanford'), ('Scientists', 'Stanford', 'Research'), ('Stanford', 'Research', 'Institute'), ('Research', 'Institute', 'Developed'), ('Institute', 'Developed', 'Shakey'), ('Developed', 'Shakey', ','), ('Shakey', ',', 'robot'), (',', 'robot', ','), ('robot', ',', 'equipped'), (',', 'equipped', 'locomotion'), ('equipped', 'locomotion', ','), ('locomotion', ',', 'perception'), (',', 'perception', ','), ('perception', ',', 'problem'), (',', 'problem', 'solving'), ('problem', 'solving', '.')]
+
+>> POS Tags are: 
+ [('1969', 'CD'), ('Scientists', 'VBZ'), ('Stanford', 'NNP'), ('Research', 'NNP'), ('Institute', 'NNP'), ('Developed', 'NNP'), ('Shakey', 'NNP'), (',', ','), ('robot', 'NN'), (',', ','), ('equipped', 'VBN'), ('locomotion', 'NN'), (',', ','), ('perception', 'NN'), (',', ','), ('problem', 'NN'), ('solving', 'NN'), ('.', '.')]
+
+ (S
+  1969/CD
+  Scientists/VBZ
+  (NP
+    Stanford/NNP
+    Research/NNP
+    Institute/NNP
+    Developed/NNP
+    Shakey/NNP)
+  ,/,
+  (NP robot/NN)
+  ,/,
+  equipped/VBN
+  (NP locomotion/NN)
+  ,/,
+  (NP perception/NN)
+  ,/,
+  (NP problem/NN solving/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Stanford Research Institute Developed Shakey', 'robot', 'locomotion', 'perception', 'problem solving']
+
+>> Named Entities are: 
+ [('PERSON', 'Stanford Research Institute Developed Shakey')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1969', '1969'), ('Scientists', 'scientist'), ('Stanford', 'stanford'), ('Research', 'research'), ('Institute', 'institut'), ('Developed', 'develop'), ('Shakey', 'shakey'), (',', ','), ('robot', 'robot'), (',', ','), ('equipped', 'equip'), ('locomotion', 'locomot'), (',', ','), ('perception', 'percept'), (',', ','), ('problem', 'problem'), ('solving', 'solv'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1969', '1969'), ('Scientists', 'scientist'), ('Stanford', 'stanford'), ('Research', 'research'), ('Institute', 'institut'), ('Developed', 'develop'), ('Shakey', 'shakey'), (',', ','), ('robot', 'robot'), (',', ','), ('equipped', 'equip'), ('locomotion', 'locomot'), (',', ','), ('perception', 'percept'), (',', ','), ('problem', 'problem'), ('solving', 'solv'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1969', '1969'), ('Scientists', 'Scientists'), ('Stanford', 'Stanford'), ('Research', 'Research'), ('Institute', 'Institute'), ('Developed', 'Developed'), ('Shakey', 'Shakey'), (',', ','), ('robot', 'robot'), (',', ','), ('equipped', 'equipped'), ('locomotion', 'locomotion'), (',', ','), ('perception', 'perception'), (',', ','), ('problem', 'problem'), ('solving', 'solving'), ('.', '.')]
+
+
+
+============================ Sentence 28 =============================
+
+1973 	The Assembly Robotics group at Edinburgh University built Freddy, the Famous Scottish Robot, capable of using vision to locate and assemble models. 
+
+
+>> Tokens are: 
+ ['1973', 'The', 'Assembly', 'Robotics', 'group', 'Edinburgh', 'University', 'built', 'Freddy', ',', 'Famous', 'Scottish', 'Robot', ',', 'capable', 'using', 'vision', 'locate', 'assemble', 'models', '.']
+
+>> Bigrams are: 
+ [('1973', 'The'), ('The', 'Assembly'), ('Assembly', 'Robotics'), ('Robotics', 'group'), ('group', 'Edinburgh'), ('Edinburgh', 'University'), ('University', 'built'), ('built', 'Freddy'), ('Freddy', ','), (',', 'Famous'), ('Famous', 'Scottish'), ('Scottish', 'Robot'), ('Robot', ','), (',', 'capable'), ('capable', 'using'), ('using', 'vision'), ('vision', 'locate'), ('locate', 'assemble'), ('assemble', 'models'), ('models', '.')]
+
+>> Trigrams are: 
+ [('1973', 'The', 'Assembly'), ('The', 'Assembly', 'Robotics'), ('Assembly', 'Robotics', 'group'), ('Robotics', 'group', 'Edinburgh'), ('group', 'Edinburgh', 'University'), ('Edinburgh', 'University', 'built'), ('University', 'built', 'Freddy'), ('built', 'Freddy', ','), ('Freddy', ',', 'Famous'), (',', 'Famous', 'Scottish'), ('Famous', 'Scottish', 'Robot'), ('Scottish', 'Robot', ','), ('Robot', ',', 'capable'), (',', 'capable', 'using'), ('capable', 'using', 'vision'), ('using', 'vision', 'locate'), ('vision', 'locate', 'assemble'), ('locate', 'assemble', 'models'), ('assemble', 'models', '.')]
+
+>> POS Tags are: 
+ [('1973', 'CD'), ('The', 'DT'), ('Assembly', 'NNP'), ('Robotics', 'NNP'), ('group', 'NN'), ('Edinburgh', 'NNP'), ('University', 'NNP'), ('built', 'VBD'), ('Freddy', 'NNP'), (',', ','), ('Famous', 'NNP'), ('Scottish', 'NNP'), ('Robot', 'NNP'), (',', ','), ('capable', 'JJ'), ('using', 'VBG'), ('vision', 'NN'), ('locate', 'NN'), ('assemble', 'JJ'), ('models', 'NNS'), ('.', '.')]
+
+ (S
+  1973/CD
+  (NP
+    The/DT
+    Assembly/NNP
+    Robotics/NNP
+    group/NN
+    Edinburgh/NNP
+    University/NNP)
+  built/VBD
+  (NP Freddy/NNP)
+  ,/,
+  (NP Famous/NNP Scottish/NNP Robot/NNP)
+  ,/,
+  capable/JJ
+  using/VBG
+  (NP vision/NN locate/NN)
+  (NP assemble/JJ models/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The Assembly Robotics group Edinburgh University', 'Freddy', 'Famous Scottish Robot', 'vision locate', 'assemble models']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Assembly Robotics'), ('ORGANIZATION', 'Edinburgh University'), ('GPE', 'Freddy'), ('PERSON', 'Famous Scottish Robot')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1973', '1973'), ('The', 'the'), ('Assembly', 'assembl'), ('Robotics', 'robot'), ('group', 'group'), ('Edinburgh', 'edinburgh'), ('University', 'univers'), ('built', 'built'), ('Freddy', 'freddi'), (',', ','), ('Famous', 'famou'), ('Scottish', 'scottish'), ('Robot', 'robot'), (',', ','), ('capable', 'capabl'), ('using', 'use'), ('vision', 'vision'), ('locate', 'locat'), ('assemble', 'assembl'), ('models', 'model'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1973', '1973'), ('The', 'the'), ('Assembly', 'assembl'), ('Robotics', 'robot'), ('group', 'group'), ('Edinburgh', 'edinburgh'), ('University', 'univers'), ('built', 'built'), ('Freddy', 'freddi'), (',', ','), ('Famous', 'famous'), ('Scottish', 'scottish'), ('Robot', 'robot'), (',', ','), ('capable', 'capabl'), ('using', 'use'), ('vision', 'vision'), ('locate', 'locat'), ('assemble', 'assembl'), ('models', 'model'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1973', '1973'), ('The', 'The'), ('Assembly', 'Assembly'), ('Robotics', 'Robotics'), ('group', 'group'), ('Edinburgh', 'Edinburgh'), ('University', 'University'), ('built', 'built'), ('Freddy', 'Freddy'), (',', ','), ('Famous', 'Famous'), ('Scottish', 'Scottish'), ('Robot', 'Robot'), (',', ','), ('capable', 'capable'), ('using', 'using'), ('vision', 'vision'), ('locate', 'locate'), ('assemble', 'assemble'), ('models', 'model'), ('.', '.')]
+
+
+
+============================ Sentence 29 =============================
+
+1979 	The first computer-controlled autonomous vehicle, Stanford Cart, was built. 
+
+
+>> Tokens are: 
+ ['1979', 'The', 'first', 'computer-controlled', 'autonomous', 'vehicle', ',', 'Stanford', 'Cart', ',', 'built', '.']
+
+>> Bigrams are: 
+ [('1979', 'The'), ('The', 'first'), ('first', 'computer-controlled'), ('computer-controlled', 'autonomous'), ('autonomous', 'vehicle'), ('vehicle', ','), (',', 'Stanford'), ('Stanford', 'Cart'), ('Cart', ','), (',', 'built'), ('built', '.')]
+
+>> Trigrams are: 
+ [('1979', 'The', 'first'), ('The', 'first', 'computer-controlled'), ('first', 'computer-controlled', 'autonomous'), ('computer-controlled', 'autonomous', 'vehicle'), ('autonomous', 'vehicle', ','), ('vehicle', ',', 'Stanford'), (',', 'Stanford', 'Cart'), ('Stanford', 'Cart', ','), ('Cart', ',', 'built'), (',', 'built', '.')]
+
+>> POS Tags are: 
+ [('1979', 'CD'), ('The', 'DT'), ('first', 'JJ'), ('computer-controlled', 'JJ'), ('autonomous', 'JJ'), ('vehicle', 'NN'), (',', ','), ('Stanford', 'NNP'), ('Cart', 'NNP'), (',', ','), ('built', 'NN'), ('.', '.')]
+
+ (S
+  1979/CD
+  (NP
+    The/DT
+    first/JJ
+    computer-controlled/JJ
+    autonomous/JJ
+    vehicle/NN)
+  ,/,
+  (NP Stanford/NNP Cart/NNP)
+  ,/,
+  (NP built/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The first computer-controlled autonomous vehicle', 'Stanford Cart', 'built']
+
+>> Named Entities are: 
+ [('PERSON', 'Stanford Cart')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1979', '1979'), ('The', 'the'), ('first', 'first'), ('computer-controlled', 'computer-control'), ('autonomous', 'autonom'), ('vehicle', 'vehicl'), (',', ','), ('Stanford', 'stanford'), ('Cart', 'cart'), (',', ','), ('built', 'built'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1979', '1979'), ('The', 'the'), ('first', 'first'), ('computer-controlled', 'computer-control'), ('autonomous', 'autonom'), ('vehicle', 'vehicl'), (',', ','), ('Stanford', 'stanford'), ('Cart', 'cart'), (',', ','), ('built', 'built'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1979', '1979'), ('The', 'The'), ('first', 'first'), ('computer-controlled', 'computer-controlled'), ('autonomous', 'autonomous'), ('vehicle', 'vehicle'), (',', ','), ('Stanford', 'Stanford'), ('Cart', 'Cart'), (',', ','), ('built', 'built'), ('.', '.')]
+
+
+
+============================ Sentence 30 =============================
+
+1985 	Harold Cohen created and demonstrated the drawing program, Aaron. 
+
+
+>> Tokens are: 
+ ['1985', 'Harold', 'Cohen', 'created', 'demonstrated', 'drawing', 'program', ',', 'Aaron', '.']
+
+>> Bigrams are: 
+ [('1985', 'Harold'), ('Harold', 'Cohen'), ('Cohen', 'created'), ('created', 'demonstrated'), ('demonstrated', 'drawing'), ('drawing', 'program'), ('program', ','), (',', 'Aaron'), ('Aaron', '.')]
+
+>> Trigrams are: 
+ [('1985', 'Harold', 'Cohen'), ('Harold', 'Cohen', 'created'), ('Cohen', 'created', 'demonstrated'), ('created', 'demonstrated', 'drawing'), ('demonstrated', 'drawing', 'program'), ('drawing', 'program', ','), ('program', ',', 'Aaron'), (',', 'Aaron', '.')]
+
+>> POS Tags are: 
+ [('1985', 'CD'), ('Harold', 'NNP'), ('Cohen', 'NNP'), ('created', 'VBD'), ('demonstrated', 'JJ'), ('drawing', 'VBG'), ('program', 'NN'), (',', ','), ('Aaron', 'NNP'), ('.', '.')]
+
+ (S
+  1985/CD
+  (NP Harold/NNP Cohen/NNP)
+  created/VBD
+  demonstrated/JJ
+  drawing/VBG
+  (NP program/NN)
+  ,/,
+  (NP Aaron/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Harold Cohen', 'program', 'Aaron']
+
+>> Named Entities are: 
+ [('PERSON', 'Harold Cohen'), ('PERSON', 'Aaron')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1985', '1985'), ('Harold', 'harold'), ('Cohen', 'cohen'), ('created', 'creat'), ('demonstrated', 'demonstr'), ('drawing', 'draw'), ('program', 'program'), (',', ','), ('Aaron', 'aaron'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1985', '1985'), ('Harold', 'harold'), ('Cohen', 'cohen'), ('created', 'creat'), ('demonstrated', 'demonstr'), ('drawing', 'draw'), ('program', 'program'), (',', ','), ('Aaron', 'aaron'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1985', '1985'), ('Harold', 'Harold'), ('Cohen', 'Cohen'), ('created', 'created'), ('demonstrated', 'demonstrated'), ('drawing', 'drawing'), ('program', 'program'), (',', ','), ('Aaron', 'Aaron'), ('.', '.')]
+
+
+
+============================ Sentence 31 =============================
+
+1990 	Major advances in all areas of AI − · Significant demonstrations in machine learning · Case-based reasoning · Multi-agent planning · Scheduling · Data mining, Web Crawler · natural language understanding and translation · Vision, Virtual Reality · Games  	1997 	The Deep Blue Chess Program beats the then world chess champion, Garry Kasparov. 
+
+
+>> Tokens are: 
+ ['1990', 'Major', 'advances', 'areas', 'AI', '−', '·', 'Significant', 'demonstrations', 'machine', 'learning', '·', 'Case-based', 'reasoning', '·', 'Multi-agent', 'planning', '·', 'Scheduling', '·', 'Data', 'mining', ',', 'Web', 'Crawler', '·', 'natural', 'language', 'understanding', 'translation', '·', 'Vision', ',', 'Virtual', 'Reality', '·', 'Games', '1997', 'The', 'Deep', 'Blue', 'Chess', 'Program', 'beats', 'world', 'chess', 'champion', ',', 'Garry', 'Kasparov', '.']
+
+>> Bigrams are: 
+ [('1990', 'Major'), ('Major', 'advances'), ('advances', 'areas'), ('areas', 'AI'), ('AI', '−'), ('−', '·'), ('·', 'Significant'), ('Significant', 'demonstrations'), ('demonstrations', 'machine'), ('machine', 'learning'), ('learning', '·'), ('·', 'Case-based'), ('Case-based', 'reasoning'), ('reasoning', '·'), ('·', 'Multi-agent'), ('Multi-agent', 'planning'), ('planning', '·'), ('·', 'Scheduling'), ('Scheduling', '·'), ('·', 'Data'), ('Data', 'mining'), ('mining', ','), (',', 'Web'), ('Web', 'Crawler'), ('Crawler', '·'), ('·', 'natural'), ('natural', 'language'), ('language', 'understanding'), ('understanding', 'translation'), ('translation', '·'), ('·', 'Vision'), ('Vision', ','), (',', 'Virtual'), ('Virtual', 'Reality'), ('Reality', '·'), ('·', 'Games'), ('Games', '1997'), ('1997', 'The'), ('The', 'Deep'), ('Deep', 'Blue'), ('Blue', 'Chess'), ('Chess', 'Program'), ('Program', 'beats'), ('beats', 'world'), ('world', 'chess'), ('chess', 'champion'), ('champion', ','), (',', 'Garry'), ('Garry', 'Kasparov'), ('Kasparov', '.')]
+
+>> Trigrams are: 
+ [('1990', 'Major', 'advances'), ('Major', 'advances', 'areas'), ('advances', 'areas', 'AI'), ('areas', 'AI', '−'), ('AI', '−', '·'), ('−', '·', 'Significant'), ('·', 'Significant', 'demonstrations'), ('Significant', 'demonstrations', 'machine'), ('demonstrations', 'machine', 'learning'), ('machine', 'learning', '·'), ('learning', '·', 'Case-based'), ('·', 'Case-based', 'reasoning'), ('Case-based', 'reasoning', '·'), ('reasoning', '·', 'Multi-agent'), ('·', 'Multi-agent', 'planning'), ('Multi-agent', 'planning', '·'), ('planning', '·', 'Scheduling'), ('·', 'Scheduling', '·'), ('Scheduling', '·', 'Data'), ('·', 'Data', 'mining'), ('Data', 'mining', ','), ('mining', ',', 'Web'), (',', 'Web', 'Crawler'), ('Web', 'Crawler', '·'), ('Crawler', '·', 'natural'), ('·', 'natural', 'language'), ('natural', 'language', 'understanding'), ('language', 'understanding', 'translation'), ('understanding', 'translation', '·'), ('translation', '·', 'Vision'), ('·', 'Vision', ','), ('Vision', ',', 'Virtual'), (',', 'Virtual', 'Reality'), ('Virtual', 'Reality', '·'), ('Reality', '·', 'Games'), ('·', 'Games', '1997'), ('Games', '1997', 'The'), ('1997', 'The', 'Deep'), ('The', 'Deep', 'Blue'), ('Deep', 'Blue', 'Chess'), ('Blue', 'Chess', 'Program'), ('Chess', 'Program', 'beats'), ('Program', 'beats', 'world'), ('beats', 'world', 'chess'), ('world', 'chess', 'champion'), ('chess', 'champion', ','), ('champion', ',', 'Garry'), (',', 'Garry', 'Kasparov'), ('Garry', 'Kasparov', '.')]
+
+>> POS Tags are: 
+ [('1990', 'CD'), ('Major', 'JJ'), ('advances', 'NNS'), ('areas', 'NNS'), ('AI', 'NNP'), ('−', 'NNP'), ('·', 'NNP'), ('Significant', 'NNP'), ('demonstrations', 'NNS'), ('machine', 'NN'), ('learning', 'VBG'), ('·', 'JJ'), ('Case-based', 'JJ'), ('reasoning', 'VBG'), ('·', 'JJ'), ('Multi-agent', 'JJ'), ('planning', 'NN'), ('·', 'NN'), ('Scheduling', 'VBG'), ('·', 'NNP'), ('Data', 'NNP'), ('mining', 'NN'), (',', ','), ('Web', 'NNP'), ('Crawler', 'NNP'), ('·', 'NNP'), ('natural', 'JJ'), ('language', 'NN'), ('understanding', 'JJ'), ('translation', 'NN'), ('·', 'NNP'), ('Vision', 'NNP'), (',', ','), ('Virtual', 'NNP'), ('Reality', 'NNP'), ('·', 'NNP'), ('Games', 'NNP'), ('1997', 'CD'), ('The', 'DT'), ('Deep', 'NNP'), ('Blue', 'NNP'), ('Chess', 'NNP'), ('Program', 'NNP'), ('beats', 'VBZ'), ('world', 'NN'), ('chess', 'NN'), ('champion', 'NN'), (',', ','), ('Garry', 'NNP'), ('Kasparov', 'NNP'), ('.', '.')]
+
+ (S
+  1990/CD
+  (NP
+    Major/JJ
+    advances/NNS
+    areas/NNS
+    AI/NNP
+    −/NNP
+    ·/NNP
+    Significant/NNP
+    demonstrations/NNS
+    machine/NN)
+  learning/VBG
+  ·/JJ
+  Case-based/JJ
+  reasoning/VBG
+  (NP ·/JJ Multi-agent/JJ planning/NN ·/NN)
+  Scheduling/VBG
+  (NP ·/NNP Data/NNP mining/NN)
+  ,/,
+  (NP Web/NNP Crawler/NNP ·/NNP)
+  (NP natural/JJ language/NN)
+  (NP understanding/JJ translation/NN ·/NNP Vision/NNP)
+  ,/,
+  (NP Virtual/NNP Reality/NNP ·/NNP Games/NNP)
+  1997/CD
+  (NP The/DT Deep/NNP Blue/NNP Chess/NNP Program/NNP)
+  beats/VBZ
+  (NP world/NN chess/NN champion/NN)
+  ,/,
+  (NP Garry/NNP Kasparov/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Major advances areas AI − · Significant demonstrations machine', '· Multi-agent planning ·', '· Data mining', 'Web Crawler ·', 'natural language', 'understanding translation · Vision', 'Virtual Reality · Games', 'The Deep Blue Chess Program', 'world chess champion', 'Garry Kasparov']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'AI'), ('PERSON', 'Web Crawler'), ('PERSON', 'Virtual Reality'), ('ORGANIZATION', 'Deep Blue Chess Program'), ('PERSON', 'Garry Kasparov')] 
+
+>> Stemming using Porter Stemmer: 
+ [('1990', '1990'), ('Major', 'major'), ('advances', 'advanc'), ('areas', 'area'), ('AI', 'ai'), ('−', '−'), ('·', '·'), ('Significant', 'signific'), ('demonstrations', 'demonstr'), ('machine', 'machin'), ('learning', 'learn'), ('·', '·'), ('Case-based', 'case-bas'), ('reasoning', 'reason'), ('·', '·'), ('Multi-agent', 'multi-ag'), ('planning', 'plan'), ('·', '·'), ('Scheduling', 'schedul'), ('·', '·'), ('Data', 'data'), ('mining', 'mine'), (',', ','), ('Web', 'web'), ('Crawler', 'crawler'), ('·', '·'), ('natural', 'natur'), ('language', 'languag'), ('understanding', 'understand'), ('translation', 'translat'), ('·', '·'), ('Vision', 'vision'), (',', ','), ('Virtual', 'virtual'), ('Reality', 'realiti'), ('·', '·'), ('Games', 'game'), ('1997', '1997'), ('The', 'the'), ('Deep', 'deep'), ('Blue', 'blue'), ('Chess', 'chess'), ('Program', 'program'), ('beats', 'beat'), ('world', 'world'), ('chess', 'chess'), ('champion', 'champion'), (',', ','), ('Garry', 'garri'), ('Kasparov', 'kasparov'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('1990', '1990'), ('Major', 'major'), ('advances', 'advanc'), ('areas', 'area'), ('AI', 'ai'), ('−', '−'), ('·', '·'), ('Significant', 'signific'), ('demonstrations', 'demonstr'), ('machine', 'machin'), ('learning', 'learn'), ('·', '·'), ('Case-based', 'case-bas'), ('reasoning', 'reason'), ('·', '·'), ('Multi-agent', 'multi-ag'), ('planning', 'plan'), ('·', '·'), ('Scheduling', 'schedul'), ('·', '·'), ('Data', 'data'), ('mining', 'mine'), (',', ','), ('Web', 'web'), ('Crawler', 'crawler'), ('·', '·'), ('natural', 'natur'), ('language', 'languag'), ('understanding', 'understand'), ('translation', 'translat'), ('·', '·'), ('Vision', 'vision'), (',', ','), ('Virtual', 'virtual'), ('Reality', 'realiti'), ('·', '·'), ('Games', 'game'), ('1997', '1997'), ('The', 'the'), ('Deep', 'deep'), ('Blue', 'blue'), ('Chess', 'chess'), ('Program', 'program'), ('beats', 'beat'), ('world', 'world'), ('chess', 'chess'), ('champion', 'champion'), (',', ','), ('Garry', 'garri'), ('Kasparov', 'kasparov'), ('.', '.')]
+
+>> Lemmatization: 
+ [('1990', '1990'), ('Major', 'Major'), ('advances', 'advance'), ('areas', 'area'), ('AI', 'AI'), ('−', '−'), ('·', '·'), ('Significant', 'Significant'), ('demonstrations', 'demonstration'), ('machine', 'machine'), ('learning', 'learning'), ('·', '·'), ('Case-based', 'Case-based'), ('reasoning', 'reasoning'), ('·', '·'), ('Multi-agent', 'Multi-agent'), ('planning', 'planning'), ('·', '·'), ('Scheduling', 'Scheduling'), ('·', '·'), ('Data', 'Data'), ('mining', 'mining'), (',', ','), ('Web', 'Web'), ('Crawler', 'Crawler'), ('·', '·'), ('natural', 'natural'), ('language', 'language'), ('understanding', 'understanding'), ('translation', 'translation'), ('·', '·'), ('Vision', 'Vision'), (',', ','), ('Virtual', 'Virtual'), ('Reality', 'Reality'), ('·', '·'), ('Games', 'Games'), ('1997', '1997'), ('The', 'The'), ('Deep', 'Deep'), ('Blue', 'Blue'), ('Chess', 'Chess'), ('Program', 'Program'), ('beats', 'beat'), ('world', 'world'), ('chess', 'chess'), ('champion', 'champion'), (',', ','), ('Garry', 'Garry'), ('Kasparov', 'Kasparov'), ('.', '.')]
+
+
+
+============================ Sentence 32 =============================
+
+2000 	Interactive robot pets become commercially available. 
+
+
+>> Tokens are: 
+ ['2000', 'Interactive', 'robot', 'pets', 'become', 'commercially', 'available', '.']
+
+>> Bigrams are: 
+ [('2000', 'Interactive'), ('Interactive', 'robot'), ('robot', 'pets'), ('pets', 'become'), ('become', 'commercially'), ('commercially', 'available'), ('available', '.')]
+
+>> Trigrams are: 
+ [('2000', 'Interactive', 'robot'), ('Interactive', 'robot', 'pets'), ('robot', 'pets', 'become'), ('pets', 'become', 'commercially'), ('become', 'commercially', 'available'), ('commercially', 'available', '.')]
+
+>> POS Tags are: 
+ [('2000', 'CD'), ('Interactive', 'NNP'), ('robot', 'NN'), ('pets', 'VBZ'), ('become', 'VBN'), ('commercially', 'RB'), ('available', 'JJ'), ('.', '.')]
+
+ (S
+  2000/CD
+  (NP Interactive/NNP robot/NN)
+  pets/VBZ
+  become/VBN
+  commercially/RB
+  available/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Interactive robot']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('2000', '2000'), ('Interactive', 'interact'), ('robot', 'robot'), ('pets', 'pet'), ('become', 'becom'), ('commercially', 'commerci'), ('available', 'avail'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('2000', '2000'), ('Interactive', 'interact'), ('robot', 'robot'), ('pets', 'pet'), ('become', 'becom'), ('commercially', 'commerci'), ('available', 'avail'), ('.', '.')]
+
+>> Lemmatization: 
+ [('2000', '2000'), ('Interactive', 'Interactive'), ('robot', 'robot'), ('pets', 'pet'), ('become', 'become'), ('commercially', 'commercially'), ('available', 'available'), ('.', '.')]
+
+
+
+============================ Sentence 33 =============================
+
+MIT displays Kismet, a robot with a face that expresses emotions. 
+
+
+>> Tokens are: 
+ ['MIT', 'displays', 'Kismet', ',', 'robot', 'face', 'expresses', 'emotions', '.']
+
+>> Bigrams are: 
+ [('MIT', 'displays'), ('displays', 'Kismet'), ('Kismet', ','), (',', 'robot'), ('robot', 'face'), ('face', 'expresses'), ('expresses', 'emotions'), ('emotions', '.')]
+
+>> Trigrams are: 
+ [('MIT', 'displays', 'Kismet'), ('displays', 'Kismet', ','), ('Kismet', ',', 'robot'), (',', 'robot', 'face'), ('robot', 'face', 'expresses'), ('face', 'expresses', 'emotions'), ('expresses', 'emotions', '.')]
+
+>> POS Tags are: 
+ [('MIT', 'NNP'), ('displays', 'NNS'), ('Kismet', 'NNP'), (',', ','), ('robot', 'JJ'), ('face', 'NN'), ('expresses', 'VBZ'), ('emotions', 'NNS'), ('.', '.')]
+
+ (S
+  (NP MIT/NNP displays/NNS Kismet/NNP)
+  ,/,
+  (NP robot/JJ face/NN)
+  expresses/VBZ
+  (NP emotions/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['MIT displays Kismet', 'robot face', 'emotions']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'MIT'), ('PERSON', 'Kismet')] 
+
+>> Stemming using Porter Stemmer: 
+ [('MIT', 'mit'), ('displays', 'display'), ('Kismet', 'kismet'), (',', ','), ('robot', 'robot'), ('face', 'face'), ('expresses', 'express'), ('emotions', 'emot'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('MIT', 'mit'), ('displays', 'display'), ('Kismet', 'kismet'), (',', ','), ('robot', 'robot'), ('face', 'face'), ('expresses', 'express'), ('emotions', 'emot'), ('.', '.')]
+
+>> Lemmatization: 
+ [('MIT', 'MIT'), ('displays', 'display'), ('Kismet', 'Kismet'), (',', ','), ('robot', 'robot'), ('face', 'face'), ('expresses', 'express'), ('emotions', 'emotion'), ('.', '.')]
+
+
+
+============================ Sentence 34 =============================
+
+The robot Nomad explores remote regions of Antarctica and locates meteorites. 
+
+
+>> Tokens are: 
+ ['The', 'robot', 'Nomad', 'explores', 'remote', 'regions', 'Antarctica', 'locates', 'meteorites', '.']
+
+>> Bigrams are: 
+ [('The', 'robot'), ('robot', 'Nomad'), ('Nomad', 'explores'), ('explores', 'remote'), ('remote', 'regions'), ('regions', 'Antarctica'), ('Antarctica', 'locates'), ('locates', 'meteorites'), ('meteorites', '.')]
+
+>> Trigrams are: 
+ [('The', 'robot', 'Nomad'), ('robot', 'Nomad', 'explores'), ('Nomad', 'explores', 'remote'), ('explores', 'remote', 'regions'), ('remote', 'regions', 'Antarctica'), ('regions', 'Antarctica', 'locates'), ('Antarctica', 'locates', 'meteorites'), ('locates', 'meteorites', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('robot', 'NN'), ('Nomad', 'NNP'), ('explores', 'VBZ'), ('remote', 'JJ'), ('regions', 'NNS'), ('Antarctica', 'NNP'), ('locates', 'VBZ'), ('meteorites', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT robot/NN Nomad/NNP)
+  explores/VBZ
+  (NP remote/JJ regions/NNS Antarctica/NNP)
+  locates/VBZ
+  (NP meteorites/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The robot Nomad', 'remote regions Antarctica', 'meteorites']
+
+>> Named Entities are: 
+ [('PERSON', 'Nomad'), ('ORGANIZATION', 'Antarctica')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('robot', 'robot'), ('Nomad', 'nomad'), ('explores', 'explor'), ('remote', 'remot'), ('regions', 'region'), ('Antarctica', 'antarctica'), ('locates', 'locat'), ('meteorites', 'meteorit'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('robot', 'robot'), ('Nomad', 'nomad'), ('explores', 'explor'), ('remote', 'remot'), ('regions', 'region'), ('Antarctica', 'antarctica'), ('locates', 'locat'), ('meteorites', 'meteorit'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('robot', 'robot'), ('Nomad', 'Nomad'), ('explores', 'explores'), ('remote', 'remote'), ('regions', 'region'), ('Antarctica', 'Antarctica'), ('locates', 'locates'), ('meteorites', 'meteorite'), ('.', '.')]
+

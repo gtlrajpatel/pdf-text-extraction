@@ -1,0 +1,2974 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-6 An AI system is composed of an agent and its environment. 
+
+
+>> Tokens are: 
+ ['AI-6', 'An', 'AI', 'system', 'composed', 'agent', 'environment', '.']
+
+>> Bigrams are: 
+ [('AI-6', 'An'), ('An', 'AI'), ('AI', 'system'), ('system', 'composed'), ('composed', 'agent'), ('agent', 'environment'), ('environment', '.')]
+
+>> Trigrams are: 
+ [('AI-6', 'An', 'AI'), ('An', 'AI', 'system'), ('AI', 'system', 'composed'), ('system', 'composed', 'agent'), ('composed', 'agent', 'environment'), ('agent', 'environment', '.')]
+
+>> POS Tags are: 
+ [('AI-6', 'NNP'), ('An', 'DT'), ('AI', 'NNP'), ('system', 'NN'), ('composed', 'VBD'), ('agent', 'JJ'), ('environment', 'NN'), ('.', '.')]
+
+ (S
+  (NP AI-6/NNP)
+  (NP An/DT AI/NNP system/NN)
+  composed/VBD
+  (NP agent/JJ environment/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-6', 'An AI system', 'agent environment']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-6', 'ai-6'), ('An', 'an'), ('AI', 'ai'), ('system', 'system'), ('composed', 'compos'), ('agent', 'agent'), ('environment', 'environ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-6', 'ai-6'), ('An', 'an'), ('AI', 'ai'), ('system', 'system'), ('composed', 'compos'), ('agent', 'agent'), ('environment', 'environ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-6', 'AI-6'), ('An', 'An'), ('AI', 'AI'), ('system', 'system'), ('composed', 'composed'), ('agent', 'agent'), ('environment', 'environment'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+The agents act in their environment. 
+
+
+>> Tokens are: 
+ ['The', 'agents', 'act', 'environment', '.']
+
+>> Bigrams are: 
+ [('The', 'agents'), ('agents', 'act'), ('act', 'environment'), ('environment', '.')]
+
+>> Trigrams are: 
+ [('The', 'agents', 'act'), ('agents', 'act', 'environment'), ('act', 'environment', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('agents', 'NNS'), ('act', 'JJ'), ('environment', 'NN'), ('.', '.')]
+
+ (S (NP The/DT agents/NNS) (NP act/JJ environment/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['The agents', 'act environment']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('agents', 'agent'), ('act', 'act'), ('environment', 'environ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('agents', 'agent'), ('act', 'act'), ('environment', 'environ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('agents', 'agent'), ('act', 'act'), ('environment', 'environment'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+The environment may contain other agents. 
+
+
+>> Tokens are: 
+ ['The', 'environment', 'may', 'contain', 'agents', '.']
+
+>> Bigrams are: 
+ [('The', 'environment'), ('environment', 'may'), ('may', 'contain'), ('contain', 'agents'), ('agents', '.')]
+
+>> Trigrams are: 
+ [('The', 'environment', 'may'), ('environment', 'may', 'contain'), ('may', 'contain', 'agents'), ('contain', 'agents', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('environment', 'NN'), ('may', 'MD'), ('contain', 'VB'), ('agents', 'NNS'), ('.', '.')]
+
+ (S (NP The/DT environment/NN) may/MD contain/VB (NP agents/NNS) ./.) 
+
+
+>> Noun Phrases are: 
+ ['The environment', 'agents']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('environment', 'environ'), ('may', 'may'), ('contain', 'contain'), ('agents', 'agent'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('environment', 'environ'), ('may', 'may'), ('contain', 'contain'), ('agents', 'agent'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('environment', 'environment'), ('may', 'may'), ('contain', 'contain'), ('agents', 'agent'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+What are Agent and Environment? 
+
+
+>> Tokens are: 
+ ['What', 'Agent', 'Environment', '?']
+
+>> Bigrams are: 
+ [('What', 'Agent'), ('Agent', 'Environment'), ('Environment', '?')]
+
+>> Trigrams are: 
+ [('What', 'Agent', 'Environment'), ('Agent', 'Environment', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Agent', 'NNP'), ('Environment', 'NNP'), ('?', '.')]
+
+ (S What/WP (NP Agent/NNP Environment/NNP) ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Agent Environment']
+
+>> Named Entities are: 
+ [('PERSON', 'Agent Environment')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Agent', 'agent'), ('Environment', 'environ'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Agent', 'agent'), ('Environment', 'environ'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Agent', 'Agent'), ('Environment', 'Environment'), ('?', '?')]
+
+
+
+============================ Sentence 5 =============================
+
+An agent is anything that can perceive its environment through sensors and acts upon that environment through effectors. 
+
+
+>> Tokens are: 
+ ['An', 'agent', 'anything', 'perceive', 'environment', 'sensors', 'acts', 'upon', 'environment', 'effectors', '.']
+
+>> Bigrams are: 
+ [('An', 'agent'), ('agent', 'anything'), ('anything', 'perceive'), ('perceive', 'environment'), ('environment', 'sensors'), ('sensors', 'acts'), ('acts', 'upon'), ('upon', 'environment'), ('environment', 'effectors'), ('effectors', '.')]
+
+>> Trigrams are: 
+ [('An', 'agent', 'anything'), ('agent', 'anything', 'perceive'), ('anything', 'perceive', 'environment'), ('perceive', 'environment', 'sensors'), ('environment', 'sensors', 'acts'), ('sensors', 'acts', 'upon'), ('acts', 'upon', 'environment'), ('upon', 'environment', 'effectors'), ('environment', 'effectors', '.')]
+
+>> POS Tags are: 
+ [('An', 'DT'), ('agent', 'NN'), ('anything', 'NN'), ('perceive', 'JJ'), ('environment', 'NN'), ('sensors', 'NNS'), ('acts', 'VBZ'), ('upon', 'IN'), ('environment', 'NN'), ('effectors', 'NNS'), ('.', '.')]
+
+ (S
+  (NP An/DT agent/NN anything/NN)
+  (NP perceive/JJ environment/NN sensors/NNS)
+  acts/VBZ
+  upon/IN
+  (NP environment/NN effectors/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['An agent anything', 'perceive environment sensors', 'environment effectors']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('An', 'an'), ('agent', 'agent'), ('anything', 'anyth'), ('perceive', 'perceiv'), ('environment', 'environ'), ('sensors', 'sensor'), ('acts', 'act'), ('upon', 'upon'), ('environment', 'environ'), ('effectors', 'effector'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('An', 'an'), ('agent', 'agent'), ('anything', 'anyth'), ('perceive', 'perceiv'), ('environment', 'environ'), ('sensors', 'sensor'), ('acts', 'act'), ('upon', 'upon'), ('environment', 'environ'), ('effectors', 'effector'), ('.', '.')]
+
+>> Lemmatization: 
+ [('An', 'An'), ('agent', 'agent'), ('anything', 'anything'), ('perceive', 'perceive'), ('environment', 'environment'), ('sensors', 'sensor'), ('acts', 'act'), ('upon', 'upon'), ('environment', 'environment'), ('effectors', 'effector'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+· A human agent has sensory organs such as eyes, ears, nose, tongue and skin parallel to the sensors, and other organs such as hands, legs, mouth, for effectors. 
+
+
+>> Tokens are: 
+ ['·', 'A', 'human', 'agent', 'sensory', 'organs', 'eyes', ',', 'ears', ',', 'nose', ',', 'tongue', 'skin', 'parallel', 'sensors', ',', 'organs', 'hands', ',', 'legs', ',', 'mouth', ',', 'effectors', '.']
+
+>> Bigrams are: 
+ [('·', 'A'), ('A', 'human'), ('human', 'agent'), ('agent', 'sensory'), ('sensory', 'organs'), ('organs', 'eyes'), ('eyes', ','), (',', 'ears'), ('ears', ','), (',', 'nose'), ('nose', ','), (',', 'tongue'), ('tongue', 'skin'), ('skin', 'parallel'), ('parallel', 'sensors'), ('sensors', ','), (',', 'organs'), ('organs', 'hands'), ('hands', ','), (',', 'legs'), ('legs', ','), (',', 'mouth'), ('mouth', ','), (',', 'effectors'), ('effectors', '.')]
+
+>> Trigrams are: 
+ [('·', 'A', 'human'), ('A', 'human', 'agent'), ('human', 'agent', 'sensory'), ('agent', 'sensory', 'organs'), ('sensory', 'organs', 'eyes'), ('organs', 'eyes', ','), ('eyes', ',', 'ears'), (',', 'ears', ','), ('ears', ',', 'nose'), (',', 'nose', ','), ('nose', ',', 'tongue'), (',', 'tongue', 'skin'), ('tongue', 'skin', 'parallel'), ('skin', 'parallel', 'sensors'), ('parallel', 'sensors', ','), ('sensors', ',', 'organs'), (',', 'organs', 'hands'), ('organs', 'hands', ','), ('hands', ',', 'legs'), (',', 'legs', ','), ('legs', ',', 'mouth'), (',', 'mouth', ','), ('mouth', ',', 'effectors'), (',', 'effectors', '.')]
+
+>> POS Tags are: 
+ [('·', 'VB'), ('A', 'DT'), ('human', 'JJ'), ('agent', 'NN'), ('sensory', 'NN'), ('organs', 'NNS'), ('eyes', 'NNS'), (',', ','), ('ears', 'NNS'), (',', ','), ('nose', 'RB'), (',', ','), ('tongue', 'NN'), ('skin', 'NN'), ('parallel', 'NN'), ('sensors', 'NNS'), (',', ','), ('organs', 'NNS'), ('hands', 'NNS'), (',', ','), ('legs', 'NNS'), (',', ','), ('mouth', 'NN'), (',', ','), ('effectors', 'NNS'), ('.', '.')]
+
+ (S
+  ·/VB
+  (NP A/DT human/JJ agent/NN sensory/NN organs/NNS eyes/NNS)
+  ,/,
+  (NP ears/NNS)
+  ,/,
+  nose/RB
+  ,/,
+  (NP tongue/NN skin/NN parallel/NN sensors/NNS)
+  ,/,
+  (NP organs/NNS hands/NNS)
+  ,/,
+  (NP legs/NNS)
+  ,/,
+  (NP mouth/NN)
+  ,/,
+  (NP effectors/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A human agent sensory organs eyes', 'ears', 'tongue skin parallel sensors', 'organs hands', 'legs', 'mouth', 'effectors']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('A', 'a'), ('human', 'human'), ('agent', 'agent'), ('sensory', 'sensori'), ('organs', 'organ'), ('eyes', 'eye'), (',', ','), ('ears', 'ear'), (',', ','), ('nose', 'nose'), (',', ','), ('tongue', 'tongu'), ('skin', 'skin'), ('parallel', 'parallel'), ('sensors', 'sensor'), (',', ','), ('organs', 'organ'), ('hands', 'hand'), (',', ','), ('legs', 'leg'), (',', ','), ('mouth', 'mouth'), (',', ','), ('effectors', 'effector'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('A', 'a'), ('human', 'human'), ('agent', 'agent'), ('sensory', 'sensori'), ('organs', 'organ'), ('eyes', 'eye'), (',', ','), ('ears', 'ear'), (',', ','), ('nose', 'nose'), (',', ','), ('tongue', 'tongu'), ('skin', 'skin'), ('parallel', 'parallel'), ('sensors', 'sensor'), (',', ','), ('organs', 'organ'), ('hands', 'hand'), (',', ','), ('legs', 'leg'), (',', ','), ('mouth', 'mouth'), (',', ','), ('effectors', 'effector'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('A', 'A'), ('human', 'human'), ('agent', 'agent'), ('sensory', 'sensory'), ('organs', 'organ'), ('eyes', 'eye'), (',', ','), ('ears', 'ear'), (',', ','), ('nose', 'nose'), (',', ','), ('tongue', 'tongue'), ('skin', 'skin'), ('parallel', 'parallel'), ('sensors', 'sensor'), (',', ','), ('organs', 'organ'), ('hands', 'hand'), (',', ','), ('legs', 'leg'), (',', ','), ('mouth', 'mouth'), (',', ','), ('effectors', 'effector'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+· A robotic agent replaces cameras and infrared range finders for the sensors, and various motors and actuators for effectors. 
+
+
+>> Tokens are: 
+ ['·', 'A', 'robotic', 'agent', 'replaces', 'cameras', 'infrared', 'range', 'finders', 'sensors', ',', 'various', 'motors', 'actuators', 'effectors', '.']
+
+>> Bigrams are: 
+ [('·', 'A'), ('A', 'robotic'), ('robotic', 'agent'), ('agent', 'replaces'), ('replaces', 'cameras'), ('cameras', 'infrared'), ('infrared', 'range'), ('range', 'finders'), ('finders', 'sensors'), ('sensors', ','), (',', 'various'), ('various', 'motors'), ('motors', 'actuators'), ('actuators', 'effectors'), ('effectors', '.')]
+
+>> Trigrams are: 
+ [('·', 'A', 'robotic'), ('A', 'robotic', 'agent'), ('robotic', 'agent', 'replaces'), ('agent', 'replaces', 'cameras'), ('replaces', 'cameras', 'infrared'), ('cameras', 'infrared', 'range'), ('infrared', 'range', 'finders'), ('range', 'finders', 'sensors'), ('finders', 'sensors', ','), ('sensors', ',', 'various'), (',', 'various', 'motors'), ('various', 'motors', 'actuators'), ('motors', 'actuators', 'effectors'), ('actuators', 'effectors', '.')]
+
+>> POS Tags are: 
+ [('·', 'VB'), ('A', 'NNP'), ('robotic', 'JJ'), ('agent', 'NN'), ('replaces', 'NNS'), ('cameras', 'VBP'), ('infrared', 'JJ'), ('range', 'NN'), ('finders', 'NNS'), ('sensors', 'NNS'), (',', ','), ('various', 'JJ'), ('motors', 'NNS'), ('actuators', 'NNS'), ('effectors', 'NNS'), ('.', '.')]
+
+ (S
+  ·/VB
+  (NP A/NNP)
+  (NP robotic/JJ agent/NN replaces/NNS)
+  cameras/VBP
+  (NP infrared/JJ range/NN finders/NNS sensors/NNS)
+  ,/,
+  (NP various/JJ motors/NNS actuators/NNS effectors/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A', 'robotic agent replaces', 'infrared range finders sensors', 'various motors actuators effectors']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('A', 'a'), ('robotic', 'robot'), ('agent', 'agent'), ('replaces', 'replac'), ('cameras', 'camera'), ('infrared', 'infrar'), ('range', 'rang'), ('finders', 'finder'), ('sensors', 'sensor'), (',', ','), ('various', 'variou'), ('motors', 'motor'), ('actuators', 'actuat'), ('effectors', 'effector'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('A', 'a'), ('robotic', 'robot'), ('agent', 'agent'), ('replaces', 'replac'), ('cameras', 'camera'), ('infrared', 'infrar'), ('range', 'rang'), ('finders', 'finder'), ('sensors', 'sensor'), (',', ','), ('various', 'various'), ('motors', 'motor'), ('actuators', 'actuat'), ('effectors', 'effector'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('A', 'A'), ('robotic', 'robotic'), ('agent', 'agent'), ('replaces', 'replaces'), ('cameras', 'camera'), ('infrared', 'infrared'), ('range', 'range'), ('finders', 'finder'), ('sensors', 'sensor'), (',', ','), ('various', 'various'), ('motors', 'motor'), ('actuators', 'actuator'), ('effectors', 'effector'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+· A software agent has encoded bit strings as its programs and actions. 
+
+
+>> Tokens are: 
+ ['·', 'A', 'software', 'agent', 'encoded', 'bit', 'strings', 'programs', 'actions', '.']
+
+>> Bigrams are: 
+ [('·', 'A'), ('A', 'software'), ('software', 'agent'), ('agent', 'encoded'), ('encoded', 'bit'), ('bit', 'strings'), ('strings', 'programs'), ('programs', 'actions'), ('actions', '.')]
+
+>> Trigrams are: 
+ [('·', 'A', 'software'), ('A', 'software', 'agent'), ('software', 'agent', 'encoded'), ('agent', 'encoded', 'bit'), ('encoded', 'bit', 'strings'), ('bit', 'strings', 'programs'), ('strings', 'programs', 'actions'), ('programs', 'actions', '.')]
+
+>> POS Tags are: 
+ [('·', 'VB'), ('A', 'DT'), ('software', 'NN'), ('agent', 'NN'), ('encoded', 'VBD'), ('bit', 'NN'), ('strings', 'NNS'), ('programs', 'NNS'), ('actions', 'NNS'), ('.', '.')]
+
+ (S
+  ·/VB
+  (NP A/DT software/NN agent/NN)
+  encoded/VBD
+  (NP bit/NN strings/NNS programs/NNS actions/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A software agent', 'bit strings programs actions']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('A', 'a'), ('software', 'softwar'), ('agent', 'agent'), ('encoded', 'encod'), ('bit', 'bit'), ('strings', 'string'), ('programs', 'program'), ('actions', 'action'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('A', 'a'), ('software', 'softwar'), ('agent', 'agent'), ('encoded', 'encod'), ('bit', 'bit'), ('strings', 'string'), ('programs', 'program'), ('actions', 'action'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('A', 'A'), ('software', 'software'), ('agent', 'agent'), ('encoded', 'encoded'), ('bit', 'bit'), ('strings', 'string'), ('programs', 'program'), ('actions', 'action'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+Agent Terminology · Performance Measure of Agent − It is the criteria, which determines how successful an agent is. 
+
+
+>> Tokens are: 
+ ['Agent', 'Terminology', '·', 'Performance', 'Measure', 'Agent', '−', 'It', 'criteria', ',', 'determines', 'successful', 'agent', '.']
+
+>> Bigrams are: 
+ [('Agent', 'Terminology'), ('Terminology', '·'), ('·', 'Performance'), ('Performance', 'Measure'), ('Measure', 'Agent'), ('Agent', '−'), ('−', 'It'), ('It', 'criteria'), ('criteria', ','), (',', 'determines'), ('determines', 'successful'), ('successful', 'agent'), ('agent', '.')]
+
+>> Trigrams are: 
+ [('Agent', 'Terminology', '·'), ('Terminology', '·', 'Performance'), ('·', 'Performance', 'Measure'), ('Performance', 'Measure', 'Agent'), ('Measure', 'Agent', '−'), ('Agent', '−', 'It'), ('−', 'It', 'criteria'), ('It', 'criteria', ','), ('criteria', ',', 'determines'), (',', 'determines', 'successful'), ('determines', 'successful', 'agent'), ('successful', 'agent', '.')]
+
+>> POS Tags are: 
+ [('Agent', 'NNP'), ('Terminology', 'NNP'), ('·', 'NNP'), ('Performance', 'NNP'), ('Measure', 'NNP'), ('Agent', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('criteria', 'NN'), (',', ','), ('determines', 'NNS'), ('successful', 'JJ'), ('agent', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    Agent/NNP
+    Terminology/NNP
+    ·/NNP
+    Performance/NNP
+    Measure/NNP
+    Agent/NNP)
+  −/VBD
+  It/PRP
+  (NP criteria/NN)
+  ,/,
+  (NP determines/NNS)
+  (NP successful/JJ agent/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Agent Terminology · Performance Measure Agent', 'criteria', 'determines', 'successful agent']
+
+>> Named Entities are: 
+ [('PERSON', 'Agent'), ('PERSON', 'Terminology')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Agent', 'agent'), ('Terminology', 'terminolog'), ('·', '·'), ('Performance', 'perform'), ('Measure', 'measur'), ('Agent', 'agent'), ('−', '−'), ('It', 'it'), ('criteria', 'criteria'), (',', ','), ('determines', 'determin'), ('successful', 'success'), ('agent', 'agent'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Agent', 'agent'), ('Terminology', 'terminolog'), ('·', '·'), ('Performance', 'perform'), ('Measure', 'measur'), ('Agent', 'agent'), ('−', '−'), ('It', 'it'), ('criteria', 'criteria'), (',', ','), ('determines', 'determin'), ('successful', 'success'), ('agent', 'agent'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Agent', 'Agent'), ('Terminology', 'Terminology'), ('·', '·'), ('Performance', 'Performance'), ('Measure', 'Measure'), ('Agent', 'Agent'), ('−', '−'), ('It', 'It'), ('criteria', 'criterion'), (',', ','), ('determines', 'determines'), ('successful', 'successful'), ('agent', 'agent'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+· Behavior of Agent − It is the action that agent performs after any given sequence of percepts. 
+
+
+>> Tokens are: 
+ ['·', 'Behavior', 'Agent', '−', 'It', 'action', 'agent', 'performs', 'given', 'sequence', 'percepts', '.']
+
+>> Bigrams are: 
+ [('·', 'Behavior'), ('Behavior', 'Agent'), ('Agent', '−'), ('−', 'It'), ('It', 'action'), ('action', 'agent'), ('agent', 'performs'), ('performs', 'given'), ('given', 'sequence'), ('sequence', 'percepts'), ('percepts', '.')]
+
+>> Trigrams are: 
+ [('·', 'Behavior', 'Agent'), ('Behavior', 'Agent', '−'), ('Agent', '−', 'It'), ('−', 'It', 'action'), ('It', 'action', 'agent'), ('action', 'agent', 'performs'), ('agent', 'performs', 'given'), ('performs', 'given', 'sequence'), ('given', 'sequence', 'percepts'), ('sequence', 'percepts', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Behavior', 'NNP'), ('Agent', 'NNP'), ('−', 'VBZ'), ('It', 'PRP'), ('action', 'NN'), ('agent', 'NN'), ('performs', 'NNS'), ('given', 'VBN'), ('sequence', 'NN'), ('percepts', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Behavior/NNP Agent/NNP)
+  −/VBZ
+  It/PRP
+  (NP action/NN agent/NN performs/NNS)
+  given/VBN
+  (NP sequence/NN percepts/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Behavior Agent', 'action agent performs', 'sequence percepts']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Behavior Agent')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Behavior', 'behavior'), ('Agent', 'agent'), ('−', '−'), ('It', 'it'), ('action', 'action'), ('agent', 'agent'), ('performs', 'perform'), ('given', 'given'), ('sequence', 'sequenc'), ('percepts', 'percept'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Behavior', 'behavior'), ('Agent', 'agent'), ('−', '−'), ('It', 'it'), ('action', 'action'), ('agent', 'agent'), ('performs', 'perform'), ('given', 'given'), ('sequence', 'sequenc'), ('percepts', 'percept'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Behavior', 'Behavior'), ('Agent', 'Agent'), ('−', '−'), ('It', 'It'), ('action', 'action'), ('agent', 'agent'), ('performs', 'performs'), ('given', 'given'), ('sequence', 'sequence'), ('percepts', 'percept'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+· Percept − It is agent’s perceptual inputs at a given instance. 
+
+
+>> Tokens are: 
+ ['·', 'Percept', '−', 'It', 'agent', '’', 'perceptual', 'inputs', 'given', 'instance', '.']
+
+>> Bigrams are: 
+ [('·', 'Percept'), ('Percept', '−'), ('−', 'It'), ('It', 'agent'), ('agent', '’'), ('’', 'perceptual'), ('perceptual', 'inputs'), ('inputs', 'given'), ('given', 'instance'), ('instance', '.')]
+
+>> Trigrams are: 
+ [('·', 'Percept', '−'), ('Percept', '−', 'It'), ('−', 'It', 'agent'), ('It', 'agent', '’'), ('agent', '’', 'perceptual'), ('’', 'perceptual', 'inputs'), ('perceptual', 'inputs', 'given'), ('inputs', 'given', 'instance'), ('given', 'instance', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Percept', 'NNP'), ('−', 'VBZ'), ('It', 'PRP'), ('agent', 'JJ'), ('’', 'NNP'), ('perceptual', 'JJ'), ('inputs', 'NNS'), ('given', 'VBN'), ('instance', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/NN Percept/NNP)
+  −/VBZ
+  It/PRP
+  (NP agent/JJ ’/NNP)
+  (NP perceptual/JJ inputs/NNS)
+  given/VBN
+  (NP instance/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Percept', 'agent ’', 'perceptual inputs', 'instance']
+
+>> Named Entities are: 
+ [('PERSON', 'Percept')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Percept', 'percept'), ('−', '−'), ('It', 'it'), ('agent', 'agent'), ('’', '’'), ('perceptual', 'perceptu'), ('inputs', 'input'), ('given', 'given'), ('instance', 'instanc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Percept', 'percept'), ('−', '−'), ('It', 'it'), ('agent', 'agent'), ('’', '’'), ('perceptual', 'perceptu'), ('inputs', 'input'), ('given', 'given'), ('instance', 'instanc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Percept', 'Percept'), ('−', '−'), ('It', 'It'), ('agent', 'agent'), ('’', '’'), ('perceptual', 'perceptual'), ('inputs', 'input'), ('given', 'given'), ('instance', 'instance'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+· Percept Sequence − It is the history of all that an agent has perceived till date. 
+
+
+>> Tokens are: 
+ ['·', 'Percept', 'Sequence', '−', 'It', 'history', 'agent', 'perceived', 'till', 'date', '.']
+
+>> Bigrams are: 
+ [('·', 'Percept'), ('Percept', 'Sequence'), ('Sequence', '−'), ('−', 'It'), ('It', 'history'), ('history', 'agent'), ('agent', 'perceived'), ('perceived', 'till'), ('till', 'date'), ('date', '.')]
+
+>> Trigrams are: 
+ [('·', 'Percept', 'Sequence'), ('Percept', 'Sequence', '−'), ('Sequence', '−', 'It'), ('−', 'It', 'history'), ('It', 'history', 'agent'), ('history', 'agent', 'perceived'), ('agent', 'perceived', 'till'), ('perceived', 'till', 'date'), ('till', 'date', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Percept', 'NNP'), ('Sequence', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('history', 'NN'), ('agent', 'NN'), ('perceived', 'VBD'), ('till', 'JJ'), ('date', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/NN Percept/NNP Sequence/NNP)
+  −/VBD
+  It/PRP
+  (NP history/NN agent/NN)
+  perceived/VBD
+  (NP till/JJ date/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Percept Sequence', 'history agent', 'till date']
+
+>> Named Entities are: 
+ [('PERSON', 'Percept Sequence')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Percept', 'percept'), ('Sequence', 'sequenc'), ('−', '−'), ('It', 'it'), ('history', 'histori'), ('agent', 'agent'), ('perceived', 'perceiv'), ('till', 'till'), ('date', 'date'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Percept', 'percept'), ('Sequence', 'sequenc'), ('−', '−'), ('It', 'it'), ('history', 'histori'), ('agent', 'agent'), ('perceived', 'perceiv'), ('till', 'till'), ('date', 'date'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Percept', 'Percept'), ('Sequence', 'Sequence'), ('−', '−'), ('It', 'It'), ('history', 'history'), ('agent', 'agent'), ('perceived', 'perceived'), ('till', 'till'), ('date', 'date'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+· Agent Function − It is a map from the precept sequence to an action. 
+
+
+>> Tokens are: 
+ ['·', 'Agent', 'Function', '−', 'It', 'map', 'precept', 'sequence', 'action', '.']
+
+>> Bigrams are: 
+ [('·', 'Agent'), ('Agent', 'Function'), ('Function', '−'), ('−', 'It'), ('It', 'map'), ('map', 'precept'), ('precept', 'sequence'), ('sequence', 'action'), ('action', '.')]
+
+>> Trigrams are: 
+ [('·', 'Agent', 'Function'), ('Agent', 'Function', '−'), ('Function', '−', 'It'), ('−', 'It', 'map'), ('It', 'map', 'precept'), ('map', 'precept', 'sequence'), ('precept', 'sequence', 'action'), ('sequence', 'action', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Agent', 'NNP'), ('Function', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('map', 'VBZ'), ('precept', 'JJ'), ('sequence', 'NN'), ('action', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Agent/NNP Function/NNP)
+  −/VBD
+  It/PRP
+  map/VBZ
+  (NP precept/JJ sequence/NN action/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Agent Function', 'precept sequence action']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Agent', 'agent'), ('Function', 'function'), ('−', '−'), ('It', 'it'), ('map', 'map'), ('precept', 'precept'), ('sequence', 'sequenc'), ('action', 'action'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Agent', 'agent'), ('Function', 'function'), ('−', '−'), ('It', 'it'), ('map', 'map'), ('precept', 'precept'), ('sequence', 'sequenc'), ('action', 'action'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Agent', 'Agent'), ('Function', 'Function'), ('−', '−'), ('It', 'It'), ('map', 'map'), ('precept', 'precept'), ('sequence', 'sequence'), ('action', 'action'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+Rationality Rationality is nothing but status of being reasonable, sensible, and having good sense of judgment. 
+
+
+>> Tokens are: 
+ ['Rationality', 'Rationality', 'nothing', 'status', 'reasonable', ',', 'sensible', ',', 'good', 'sense', 'judgment', '.']
+
+>> Bigrams are: 
+ [('Rationality', 'Rationality'), ('Rationality', 'nothing'), ('nothing', 'status'), ('status', 'reasonable'), ('reasonable', ','), (',', 'sensible'), ('sensible', ','), (',', 'good'), ('good', 'sense'), ('sense', 'judgment'), ('judgment', '.')]
+
+>> Trigrams are: 
+ [('Rationality', 'Rationality', 'nothing'), ('Rationality', 'nothing', 'status'), ('nothing', 'status', 'reasonable'), ('status', 'reasonable', ','), ('reasonable', ',', 'sensible'), (',', 'sensible', ','), ('sensible', ',', 'good'), (',', 'good', 'sense'), ('good', 'sense', 'judgment'), ('sense', 'judgment', '.')]
+
+>> POS Tags are: 
+ [('Rationality', 'NNP'), ('Rationality', 'NNP'), ('nothing', 'NN'), ('status', 'NN'), ('reasonable', 'JJ'), (',', ','), ('sensible', 'JJ'), (',', ','), ('good', 'JJ'), ('sense', 'NN'), ('judgment', 'NN'), ('.', '.')]
+
+ (S
+  (NP Rationality/NNP Rationality/NNP nothing/NN status/NN)
+  reasonable/JJ
+  ,/,
+  sensible/JJ
+  ,/,
+  (NP good/JJ sense/NN judgment/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Rationality Rationality nothing status', 'good sense judgment']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Rationality', 'ration'), ('Rationality', 'ration'), ('nothing', 'noth'), ('status', 'statu'), ('reasonable', 'reason'), (',', ','), ('sensible', 'sensibl'), (',', ','), ('good', 'good'), ('sense', 'sens'), ('judgment', 'judgment'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Rationality', 'ration'), ('Rationality', 'ration'), ('nothing', 'noth'), ('status', 'status'), ('reasonable', 'reason'), (',', ','), ('sensible', 'sensibl'), (',', ','), ('good', 'good'), ('sense', 'sens'), ('judgment', 'judgment'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Rationality', 'Rationality'), ('Rationality', 'Rationality'), ('nothing', 'nothing'), ('status', 'status'), ('reasonable', 'reasonable'), (',', ','), ('sensible', 'sensible'), (',', ','), ('good', 'good'), ('sense', 'sense'), ('judgment', 'judgment'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+Rationality is concerned with expected actions and results depending upon what the agent has perceived. 
+
+
+>> Tokens are: 
+ ['Rationality', 'concerned', 'expected', 'actions', 'results', 'depending', 'upon', 'agent', 'perceived', '.']
+
+>> Bigrams are: 
+ [('Rationality', 'concerned'), ('concerned', 'expected'), ('expected', 'actions'), ('actions', 'results'), ('results', 'depending'), ('depending', 'upon'), ('upon', 'agent'), ('agent', 'perceived'), ('perceived', '.')]
+
+>> Trigrams are: 
+ [('Rationality', 'concerned', 'expected'), ('concerned', 'expected', 'actions'), ('expected', 'actions', 'results'), ('actions', 'results', 'depending'), ('results', 'depending', 'upon'), ('depending', 'upon', 'agent'), ('upon', 'agent', 'perceived'), ('agent', 'perceived', '.')]
+
+>> POS Tags are: 
+ [('Rationality', 'NN'), ('concerned', 'VBN'), ('expected', 'VBN'), ('actions', 'NNS'), ('results', 'NNS'), ('depending', 'VBG'), ('upon', 'JJ'), ('agent', 'NN'), ('perceived', 'VBD'), ('.', '.')]
+
+ (S
+  (NP Rationality/NN)
+  concerned/VBN
+  expected/VBN
+  (NP actions/NNS results/NNS)
+  depending/VBG
+  (NP upon/JJ agent/NN)
+  perceived/VBD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Rationality', 'actions results', 'upon agent']
+
+>> Named Entities are: 
+ [('GPE', 'Rationality')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Rationality', 'ration'), ('concerned', 'concern'), ('expected', 'expect'), ('actions', 'action'), ('results', 'result'), ('depending', 'depend'), ('upon', 'upon'), ('agent', 'agent'), ('perceived', 'perceiv'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Rationality', 'ration'), ('concerned', 'concern'), ('expected', 'expect'), ('actions', 'action'), ('results', 'result'), ('depending', 'depend'), ('upon', 'upon'), ('agent', 'agent'), ('perceived', 'perceiv'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Rationality', 'Rationality'), ('concerned', 'concerned'), ('expected', 'expected'), ('actions', 'action'), ('results', 'result'), ('depending', 'depending'), ('upon', 'upon'), ('agent', 'agent'), ('perceived', 'perceived'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+Performing actions with the aim of obtaining useful information is an important part of rationality. 
+
+
+>> Tokens are: 
+ ['Performing', 'actions', 'aim', 'obtaining', 'useful', 'information', 'important', 'part', 'rationality', '.']
+
+>> Bigrams are: 
+ [('Performing', 'actions'), ('actions', 'aim'), ('aim', 'obtaining'), ('obtaining', 'useful'), ('useful', 'information'), ('information', 'important'), ('important', 'part'), ('part', 'rationality'), ('rationality', '.')]
+
+>> Trigrams are: 
+ [('Performing', 'actions', 'aim'), ('actions', 'aim', 'obtaining'), ('aim', 'obtaining', 'useful'), ('obtaining', 'useful', 'information'), ('useful', 'information', 'important'), ('information', 'important', 'part'), ('important', 'part', 'rationality'), ('part', 'rationality', '.')]
+
+>> POS Tags are: 
+ [('Performing', 'VBG'), ('actions', 'NNS'), ('aim', 'VBP'), ('obtaining', 'VBG'), ('useful', 'JJ'), ('information', 'NN'), ('important', 'JJ'), ('part', 'NN'), ('rationality', 'NN'), ('.', '.')]
+
+ (S
+  Performing/VBG
+  (NP actions/NNS)
+  aim/VBP
+  obtaining/VBG
+  (NP useful/JJ information/NN)
+  (NP important/JJ part/NN rationality/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['actions', 'useful information', 'important part rationality']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Performing', 'perform'), ('actions', 'action'), ('aim', 'aim'), ('obtaining', 'obtain'), ('useful', 'use'), ('information', 'inform'), ('important', 'import'), ('part', 'part'), ('rationality', 'ration'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Performing', 'perform'), ('actions', 'action'), ('aim', 'aim'), ('obtaining', 'obtain'), ('useful', 'use'), ('information', 'inform'), ('important', 'import'), ('part', 'part'), ('rationality', 'ration'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Performing', 'Performing'), ('actions', 'action'), ('aim', 'aim'), ('obtaining', 'obtaining'), ('useful', 'useful'), ('information', 'information'), ('important', 'important'), ('part', 'part'), ('rationality', 'rationality'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+What is Ideal Rational Agent? 
+
+
+>> Tokens are: 
+ ['What', 'Ideal', 'Rational', 'Agent', '?']
+
+>> Bigrams are: 
+ [('What', 'Ideal'), ('Ideal', 'Rational'), ('Rational', 'Agent'), ('Agent', '?')]
+
+>> Trigrams are: 
+ [('What', 'Ideal', 'Rational'), ('Ideal', 'Rational', 'Agent'), ('Rational', 'Agent', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Ideal', 'NNP'), ('Rational', 'NNP'), ('Agent', 'NNP'), ('?', '.')]
+
+ (S What/WP (NP Ideal/NNP Rational/NNP Agent/NNP) ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Ideal Rational Agent']
+
+>> Named Entities are: 
+ [('PERSON', 'Ideal Rational Agent')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Ideal', 'ideal'), ('Rational', 'ration'), ('Agent', 'agent'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Ideal', 'ideal'), ('Rational', 'ration'), ('Agent', 'agent'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Ideal', 'Ideal'), ('Rational', 'Rational'), ('Agent', 'Agent'), ('?', '?')]
+
+
+
+============================ Sentence 18 =============================
+
+An ideal rational agent is the one, which is capable of doing expected actions to maximize its performance measure, on the basis of − · Its percept sequence · Its built-in knowledge base Rationality of an agent depends on the following − · The performance measures, which determine the degree of success. 
+
+
+>> Tokens are: 
+ ['An', 'ideal', 'rational', 'agent', 'one', ',', 'capable', 'expected', 'actions', 'maximize', 'performance', 'measure', ',', 'basis', '−', '·', 'Its', 'percept', 'sequence', '·', 'Its', 'built-in', 'knowledge', 'base', 'Rationality', 'agent', 'depends', 'following', '−', '·', 'The', 'performance', 'measures', ',', 'determine', 'degree', 'success', '.']
+
+>> Bigrams are: 
+ [('An', 'ideal'), ('ideal', 'rational'), ('rational', 'agent'), ('agent', 'one'), ('one', ','), (',', 'capable'), ('capable', 'expected'), ('expected', 'actions'), ('actions', 'maximize'), ('maximize', 'performance'), ('performance', 'measure'), ('measure', ','), (',', 'basis'), ('basis', '−'), ('−', '·'), ('·', 'Its'), ('Its', 'percept'), ('percept', 'sequence'), ('sequence', '·'), ('·', 'Its'), ('Its', 'built-in'), ('built-in', 'knowledge'), ('knowledge', 'base'), ('base', 'Rationality'), ('Rationality', 'agent'), ('agent', 'depends'), ('depends', 'following'), ('following', '−'), ('−', '·'), ('·', 'The'), ('The', 'performance'), ('performance', 'measures'), ('measures', ','), (',', 'determine'), ('determine', 'degree'), ('degree', 'success'), ('success', '.')]
+
+>> Trigrams are: 
+ [('An', 'ideal', 'rational'), ('ideal', 'rational', 'agent'), ('rational', 'agent', 'one'), ('agent', 'one', ','), ('one', ',', 'capable'), (',', 'capable', 'expected'), ('capable', 'expected', 'actions'), ('expected', 'actions', 'maximize'), ('actions', 'maximize', 'performance'), ('maximize', 'performance', 'measure'), ('performance', 'measure', ','), ('measure', ',', 'basis'), (',', 'basis', '−'), ('basis', '−', '·'), ('−', '·', 'Its'), ('·', 'Its', 'percept'), ('Its', 'percept', 'sequence'), ('percept', 'sequence', '·'), ('sequence', '·', 'Its'), ('·', 'Its', 'built-in'), ('Its', 'built-in', 'knowledge'), ('built-in', 'knowledge', 'base'), ('knowledge', 'base', 'Rationality'), ('base', 'Rationality', 'agent'), ('Rationality', 'agent', 'depends'), ('agent', 'depends', 'following'), ('depends', 'following', '−'), ('following', '−', '·'), ('−', '·', 'The'), ('·', 'The', 'performance'), ('The', 'performance', 'measures'), ('performance', 'measures', ','), ('measures', ',', 'determine'), (',', 'determine', 'degree'), ('determine', 'degree', 'success'), ('degree', 'success', '.')]
+
+>> POS Tags are: 
+ [('An', 'DT'), ('ideal', 'JJ'), ('rational', 'JJ'), ('agent', 'NN'), ('one', 'CD'), (',', ','), ('capable', 'JJ'), ('expected', 'VBN'), ('actions', 'NNS'), ('maximize', 'VB'), ('performance', 'NN'), ('measure', 'NN'), (',', ','), ('basis', 'NN'), ('−', 'NNP'), ('·', 'NNP'), ('Its', 'PRP$'), ('percept', 'NN'), ('sequence', 'NN'), ('·', 'VBD'), ('Its', 'PRP$'), ('built-in', 'JJ'), ('knowledge', 'NN'), ('base', 'NN'), ('Rationality', 'NNP'), ('agent', 'NN'), ('depends', 'VBZ'), ('following', 'VBG'), ('−', 'JJ'), ('·', 'PDT'), ('The', 'DT'), ('performance', 'NN'), ('measures', 'NNS'), (',', ','), ('determine', 'VB'), ('degree', 'JJ'), ('success', 'NN'), ('.', '.')]
+
+ (S
+  (NP An/DT ideal/JJ rational/JJ agent/NN)
+  one/CD
+  ,/,
+  capable/JJ
+  expected/VBN
+  (NP actions/NNS)
+  maximize/VB
+  (NP performance/NN measure/NN)
+  ,/,
+  (NP basis/NN −/NNP ·/NNP)
+  Its/PRP$
+  (NP percept/NN sequence/NN)
+  ·/VBD
+  Its/PRP$
+  (NP built-in/JJ knowledge/NN base/NN Rationality/NNP agent/NN)
+  depends/VBZ
+  following/VBG
+  −/JJ
+  ·/PDT
+  (NP The/DT performance/NN measures/NNS)
+  ,/,
+  determine/VB
+  (NP degree/JJ success/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['An ideal rational agent', 'actions', 'performance measure', 'basis − ·', 'percept sequence', 'built-in knowledge base Rationality agent', 'The performance measures', 'degree success']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('An', 'an'), ('ideal', 'ideal'), ('rational', 'ration'), ('agent', 'agent'), ('one', 'one'), (',', ','), ('capable', 'capabl'), ('expected', 'expect'), ('actions', 'action'), ('maximize', 'maxim'), ('performance', 'perform'), ('measure', 'measur'), (',', ','), ('basis', 'basi'), ('−', '−'), ('·', '·'), ('Its', 'it'), ('percept', 'percept'), ('sequence', 'sequenc'), ('·', '·'), ('Its', 'it'), ('built-in', 'built-in'), ('knowledge', 'knowledg'), ('base', 'base'), ('Rationality', 'ration'), ('agent', 'agent'), ('depends', 'depend'), ('following', 'follow'), ('−', '−'), ('·', '·'), ('The', 'the'), ('performance', 'perform'), ('measures', 'measur'), (',', ','), ('determine', 'determin'), ('degree', 'degre'), ('success', 'success'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('An', 'an'), ('ideal', 'ideal'), ('rational', 'ration'), ('agent', 'agent'), ('one', 'one'), (',', ','), ('capable', 'capabl'), ('expected', 'expect'), ('actions', 'action'), ('maximize', 'maxim'), ('performance', 'perform'), ('measure', 'measur'), (',', ','), ('basis', 'basi'), ('−', '−'), ('·', '·'), ('Its', 'it'), ('percept', 'percept'), ('sequence', 'sequenc'), ('·', '·'), ('Its', 'it'), ('built-in', 'built-in'), ('knowledge', 'knowledg'), ('base', 'base'), ('Rationality', 'ration'), ('agent', 'agent'), ('depends', 'depend'), ('following', 'follow'), ('−', '−'), ('·', '·'), ('The', 'the'), ('performance', 'perform'), ('measures', 'measur'), (',', ','), ('determine', 'determin'), ('degree', 'degre'), ('success', 'success'), ('.', '.')]
+
+>> Lemmatization: 
+ [('An', 'An'), ('ideal', 'ideal'), ('rational', 'rational'), ('agent', 'agent'), ('one', 'one'), (',', ','), ('capable', 'capable'), ('expected', 'expected'), ('actions', 'action'), ('maximize', 'maximize'), ('performance', 'performance'), ('measure', 'measure'), (',', ','), ('basis', 'basis'), ('−', '−'), ('·', '·'), ('Its', 'Its'), ('percept', 'percept'), ('sequence', 'sequence'), ('·', '·'), ('Its', 'Its'), ('built-in', 'built-in'), ('knowledge', 'knowledge'), ('base', 'base'), ('Rationality', 'Rationality'), ('agent', 'agent'), ('depends', 'depends'), ('following', 'following'), ('−', '−'), ('·', '·'), ('The', 'The'), ('performance', 'performance'), ('measures', 'measure'), (',', ','), ('determine', 'determine'), ('degree', 'degree'), ('success', 'success'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+· Agent’s Percept Sequence till now. 
+
+
+>> Tokens are: 
+ ['·', 'Agent', '’', 'Percept', 'Sequence', 'till', '.']
+
+>> Bigrams are: 
+ [('·', 'Agent'), ('Agent', '’'), ('’', 'Percept'), ('Percept', 'Sequence'), ('Sequence', 'till'), ('till', '.')]
+
+>> Trigrams are: 
+ [('·', 'Agent', '’'), ('Agent', '’', 'Percept'), ('’', 'Percept', 'Sequence'), ('Percept', 'Sequence', 'till'), ('Sequence', 'till', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Agent', 'NNP'), ('’', 'NNP'), ('Percept', 'NNP'), ('Sequence', 'NNP'), ('till', 'NN'), ('.', '.')]
+
+ (S (NP ·/JJ Agent/NNP ’/NNP Percept/NNP Sequence/NNP till/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Agent ’ Percept Sequence till']
+
+>> Named Entities are: 
+ [('PERSON', 'Percept Sequence')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Agent', 'agent'), ('’', '’'), ('Percept', 'percept'), ('Sequence', 'sequenc'), ('till', 'till'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Agent', 'agent'), ('’', '’'), ('Percept', 'percept'), ('Sequence', 'sequenc'), ('till', 'till'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Agent', 'Agent'), ('’', '’'), ('Percept', 'Percept'), ('Sequence', 'Sequence'), ('till', 'till'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+· The agent’s prior knowledge about the environment. 
+
+
+>> Tokens are: 
+ ['·', 'The', 'agent', '’', 'prior', 'knowledge', 'environment', '.']
+
+>> Bigrams are: 
+ [('·', 'The'), ('The', 'agent'), ('agent', '’'), ('’', 'prior'), ('prior', 'knowledge'), ('knowledge', 'environment'), ('environment', '.')]
+
+>> Trigrams are: 
+ [('·', 'The', 'agent'), ('The', 'agent', '’'), ('agent', '’', 'prior'), ('’', 'prior', 'knowledge'), ('prior', 'knowledge', 'environment'), ('knowledge', 'environment', '.')]
+
+>> POS Tags are: 
+ [('·', 'IN'), ('The', 'DT'), ('agent', 'NN'), ('’', 'NNP'), ('prior', 'RB'), ('knowledge', 'NN'), ('environment', 'NN'), ('.', '.')]
+
+ (S
+  ·/IN
+  (NP The/DT agent/NN ’/NNP)
+  prior/RB
+  (NP knowledge/NN environment/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The agent ’', 'knowledge environment']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('The', 'the'), ('agent', 'agent'), ('’', '’'), ('prior', 'prior'), ('knowledge', 'knowledg'), ('environment', 'environ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('The', 'the'), ('agent', 'agent'), ('’', '’'), ('prior', 'prior'), ('knowledge', 'knowledg'), ('environment', 'environ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('The', 'The'), ('agent', 'agent'), ('’', '’'), ('prior', 'prior'), ('knowledge', 'knowledge'), ('environment', 'environment'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+· The actions that the agent can carry out. 
+
+
+>> Tokens are: 
+ ['·', 'The', 'actions', 'agent', 'carry', '.']
+
+>> Bigrams are: 
+ [('·', 'The'), ('The', 'actions'), ('actions', 'agent'), ('agent', 'carry'), ('carry', '.')]
+
+>> Trigrams are: 
+ [('·', 'The', 'actions'), ('The', 'actions', 'agent'), ('actions', 'agent', 'carry'), ('agent', 'carry', '.')]
+
+>> POS Tags are: 
+ [('·', 'IN'), ('The', 'DT'), ('actions', 'NNS'), ('agent', 'NN'), ('carry', 'NN'), ('.', '.')]
+
+ (S ·/IN (NP The/DT actions/NNS agent/NN carry/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['The actions agent carry']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('The', 'the'), ('actions', 'action'), ('agent', 'agent'), ('carry', 'carri'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('The', 'the'), ('actions', 'action'), ('agent', 'agent'), ('carry', 'carri'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('The', 'The'), ('actions', 'action'), ('agent', 'agent'), ('carry', 'carry'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+A rational agent always performs right action, where the right action means the action that causes the agent to be most successful in the given percept sequence. 
+
+
+>> Tokens are: 
+ ['A', 'rational', 'agent', 'always', 'performs', 'right', 'action', ',', 'right', 'action', 'means', 'action', 'causes', 'agent', 'successful', 'given', 'percept', 'sequence', '.']
+
+>> Bigrams are: 
+ [('A', 'rational'), ('rational', 'agent'), ('agent', 'always'), ('always', 'performs'), ('performs', 'right'), ('right', 'action'), ('action', ','), (',', 'right'), ('right', 'action'), ('action', 'means'), ('means', 'action'), ('action', 'causes'), ('causes', 'agent'), ('agent', 'successful'), ('successful', 'given'), ('given', 'percept'), ('percept', 'sequence'), ('sequence', '.')]
+
+>> Trigrams are: 
+ [('A', 'rational', 'agent'), ('rational', 'agent', 'always'), ('agent', 'always', 'performs'), ('always', 'performs', 'right'), ('performs', 'right', 'action'), ('right', 'action', ','), ('action', ',', 'right'), (',', 'right', 'action'), ('right', 'action', 'means'), ('action', 'means', 'action'), ('means', 'action', 'causes'), ('action', 'causes', 'agent'), ('causes', 'agent', 'successful'), ('agent', 'successful', 'given'), ('successful', 'given', 'percept'), ('given', 'percept', 'sequence'), ('percept', 'sequence', '.')]
+
+>> POS Tags are: 
+ [('A', 'DT'), ('rational', 'JJ'), ('agent', 'NN'), ('always', 'RB'), ('performs', 'RB'), ('right', 'JJ'), ('action', 'NN'), (',', ','), ('right', 'JJ'), ('action', 'NN'), ('means', 'VBZ'), ('action', 'NN'), ('causes', 'VBZ'), ('agent', 'JJ'), ('successful', 'JJ'), ('given', 'VBN'), ('percept', 'JJ'), ('sequence', 'NN'), ('.', '.')]
+
+ (S
+  (NP A/DT rational/JJ agent/NN)
+  always/RB
+  performs/RB
+  (NP right/JJ action/NN)
+  ,/,
+  (NP right/JJ action/NN)
+  means/VBZ
+  (NP action/NN)
+  causes/VBZ
+  agent/JJ
+  successful/JJ
+  given/VBN
+  (NP percept/JJ sequence/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A rational agent', 'right action', 'right action', 'action', 'percept sequence']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('A', 'a'), ('rational', 'ration'), ('agent', 'agent'), ('always', 'alway'), ('performs', 'perform'), ('right', 'right'), ('action', 'action'), (',', ','), ('right', 'right'), ('action', 'action'), ('means', 'mean'), ('action', 'action'), ('causes', 'caus'), ('agent', 'agent'), ('successful', 'success'), ('given', 'given'), ('percept', 'percept'), ('sequence', 'sequenc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('A', 'a'), ('rational', 'ration'), ('agent', 'agent'), ('always', 'alway'), ('performs', 'perform'), ('right', 'right'), ('action', 'action'), (',', ','), ('right', 'right'), ('action', 'action'), ('means', 'mean'), ('action', 'action'), ('causes', 'caus'), ('agent', 'agent'), ('successful', 'success'), ('given', 'given'), ('percept', 'percept'), ('sequence', 'sequenc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('A', 'A'), ('rational', 'rational'), ('agent', 'agent'), ('always', 'always'), ('performs', 'performs'), ('right', 'right'), ('action', 'action'), (',', ','), ('right', 'right'), ('action', 'action'), ('means', 'mean'), ('action', 'action'), ('causes', 'cause'), ('agent', 'agent'), ('successful', 'successful'), ('given', 'given'), ('percept', 'percept'), ('sequence', 'sequence'), ('.', '.')]
+
+
+
+============================ Sentence 23 =============================
+
+The problem the agent solves is characterized by Performance Measure, Environment, Actuators, and Sensors (PEAS). 
+
+
+>> Tokens are: 
+ ['The', 'problem', 'agent', 'solves', 'characterized', 'Performance', 'Measure', ',', 'Environment', ',', 'Actuators', ',', 'Sensors', '(', 'PEAS', ')', '.']
+
+>> Bigrams are: 
+ [('The', 'problem'), ('problem', 'agent'), ('agent', 'solves'), ('solves', 'characterized'), ('characterized', 'Performance'), ('Performance', 'Measure'), ('Measure', ','), (',', 'Environment'), ('Environment', ','), (',', 'Actuators'), ('Actuators', ','), (',', 'Sensors'), ('Sensors', '('), ('(', 'PEAS'), ('PEAS', ')'), (')', '.')]
+
+>> Trigrams are: 
+ [('The', 'problem', 'agent'), ('problem', 'agent', 'solves'), ('agent', 'solves', 'characterized'), ('solves', 'characterized', 'Performance'), ('characterized', 'Performance', 'Measure'), ('Performance', 'Measure', ','), ('Measure', ',', 'Environment'), (',', 'Environment', ','), ('Environment', ',', 'Actuators'), (',', 'Actuators', ','), ('Actuators', ',', 'Sensors'), (',', 'Sensors', '('), ('Sensors', '(', 'PEAS'), ('(', 'PEAS', ')'), ('PEAS', ')', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('problem', 'NN'), ('agent', 'NN'), ('solves', 'VBZ'), ('characterized', 'VBN'), ('Performance', 'NNP'), ('Measure', 'NNP'), (',', ','), ('Environment', 'NNP'), (',', ','), ('Actuators', 'NNP'), (',', ','), ('Sensors', 'NNP'), ('(', '('), ('PEAS', 'NNP'), (')', ')'), ('.', '.')]
+
+ (S
+  (NP The/DT problem/NN agent/NN)
+  solves/VBZ
+  characterized/VBN
+  (NP Performance/NNP Measure/NNP)
+  ,/,
+  (NP Environment/NNP)
+  ,/,
+  (NP Actuators/NNP)
+  ,/,
+  (NP Sensors/NNP)
+  (/(
+  (NP PEAS/NNP)
+  )/)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The problem agent', 'Performance Measure', 'Environment', 'Actuators', 'Sensors', 'PEAS']
+
+>> Named Entities are: 
+ [('PERSON', 'Performance Measure'), ('GPE', 'Environment'), ('PERSON', 'Actuators'), ('GPE', 'Sensors'), ('ORGANIZATION', 'PEAS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('problem', 'problem'), ('agent', 'agent'), ('solves', 'solv'), ('characterized', 'character'), ('Performance', 'perform'), ('Measure', 'measur'), (',', ','), ('Environment', 'environ'), (',', ','), ('Actuators', 'actuat'), (',', ','), ('Sensors', 'sensor'), ('(', '('), ('PEAS', 'pea'), (')', ')'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('problem', 'problem'), ('agent', 'agent'), ('solves', 'solv'), ('characterized', 'character'), ('Performance', 'perform'), ('Measure', 'measur'), (',', ','), ('Environment', 'environ'), (',', ','), ('Actuators', 'actuat'), (',', ','), ('Sensors', 'sensor'), ('(', '('), ('PEAS', 'pea'), (')', ')'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('problem', 'problem'), ('agent', 'agent'), ('solves', 'solves'), ('characterized', 'characterized'), ('Performance', 'Performance'), ('Measure', 'Measure'), (',', ','), ('Environment', 'Environment'), (',', ','), ('Actuators', 'Actuators'), (',', ','), ('Sensors', 'Sensors'), ('(', '('), ('PEAS', 'PEAS'), (')', ')'), ('.', '.')]
+
+
+
+============================ Sentence 24 =============================
+
+The Structure of Intelligent Agents Agent’s structure can be viewed as − · Agent = Architecture + Agent Program · Architecture = the machinery that an agent executes on. 
+
+
+>> Tokens are: 
+ ['The', 'Structure', 'Intelligent', 'Agents', 'Agent', '’', 'structure', 'viewed', '−', '·', 'Agent', '=', 'Architecture', '+', 'Agent', 'Program', '·', 'Architecture', '=', 'machinery', 'agent', 'executes', '.']
+
+>> Bigrams are: 
+ [('The', 'Structure'), ('Structure', 'Intelligent'), ('Intelligent', 'Agents'), ('Agents', 'Agent'), ('Agent', '’'), ('’', 'structure'), ('structure', 'viewed'), ('viewed', '−'), ('−', '·'), ('·', 'Agent'), ('Agent', '='), ('=', 'Architecture'), ('Architecture', '+'), ('+', 'Agent'), ('Agent', 'Program'), ('Program', '·'), ('·', 'Architecture'), ('Architecture', '='), ('=', 'machinery'), ('machinery', 'agent'), ('agent', 'executes'), ('executes', '.')]
+
+>> Trigrams are: 
+ [('The', 'Structure', 'Intelligent'), ('Structure', 'Intelligent', 'Agents'), ('Intelligent', 'Agents', 'Agent'), ('Agents', 'Agent', '’'), ('Agent', '’', 'structure'), ('’', 'structure', 'viewed'), ('structure', 'viewed', '−'), ('viewed', '−', '·'), ('−', '·', 'Agent'), ('·', 'Agent', '='), ('Agent', '=', 'Architecture'), ('=', 'Architecture', '+'), ('Architecture', '+', 'Agent'), ('+', 'Agent', 'Program'), ('Agent', 'Program', '·'), ('Program', '·', 'Architecture'), ('·', 'Architecture', '='), ('Architecture', '=', 'machinery'), ('=', 'machinery', 'agent'), ('machinery', 'agent', 'executes'), ('agent', 'executes', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('Structure', 'NNP'), ('Intelligent', 'NNP'), ('Agents', 'NNP'), ('Agent', 'NNP'), ('’', 'NNP'), ('structure', 'NN'), ('viewed', 'VBD'), ('−', 'NNP'), ('·', 'NNP'), ('Agent', 'NNP'), ('=', 'NNP'), ('Architecture', 'NNP'), ('+', 'NNP'), ('Agent', 'NNP'), ('Program', 'NNP'), ('·', 'NNP'), ('Architecture', 'NNP'), ('=', 'NNP'), ('machinery', 'NN'), ('agent', 'NN'), ('executes', 'NNS'), ('.', '.')]
+
+ (S
+  (NP
+    The/DT
+    Structure/NNP
+    Intelligent/NNP
+    Agents/NNP
+    Agent/NNP
+    ’/NNP
+    structure/NN)
+  viewed/VBD
+  (NP
+    −/NNP
+    ·/NNP
+    Agent/NNP
+    =/NNP
+    Architecture/NNP
+    +/NNP
+    Agent/NNP
+    Program/NNP
+    ·/NNP
+    Architecture/NNP
+    =/NNP
+    machinery/NN
+    agent/NN
+    executes/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The Structure Intelligent Agents Agent ’ structure', '− · Agent = Architecture + Agent Program · Architecture = machinery agent executes']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Structure')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('Structure', 'structur'), ('Intelligent', 'intellig'), ('Agents', 'agent'), ('Agent', 'agent'), ('’', '’'), ('structure', 'structur'), ('viewed', 'view'), ('−', '−'), ('·', '·'), ('Agent', 'agent'), ('=', '='), ('Architecture', 'architectur'), ('+', '+'), ('Agent', 'agent'), ('Program', 'program'), ('·', '·'), ('Architecture', 'architectur'), ('=', '='), ('machinery', 'machineri'), ('agent', 'agent'), ('executes', 'execut'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('Structure', 'structur'), ('Intelligent', 'intellig'), ('Agents', 'agent'), ('Agent', 'agent'), ('’', '’'), ('structure', 'structur'), ('viewed', 'view'), ('−', '−'), ('·', '·'), ('Agent', 'agent'), ('=', '='), ('Architecture', 'architectur'), ('+', '+'), ('Agent', 'agent'), ('Program', 'program'), ('·', '·'), ('Architecture', 'architectur'), ('=', '='), ('machinery', 'machineri'), ('agent', 'agent'), ('executes', 'execut'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('Structure', 'Structure'), ('Intelligent', 'Intelligent'), ('Agents', 'Agents'), ('Agent', 'Agent'), ('’', '’'), ('structure', 'structure'), ('viewed', 'viewed'), ('−', '−'), ('·', '·'), ('Agent', 'Agent'), ('=', '='), ('Architecture', 'Architecture'), ('+', '+'), ('Agent', 'Agent'), ('Program', 'Program'), ('·', '·'), ('Architecture', 'Architecture'), ('=', '='), ('machinery', 'machinery'), ('agent', 'agent'), ('executes', 'executes'), ('.', '.')]
+
+
+
+============================ Sentence 25 =============================
+
+· Agent Program = an implementation of an agent function. 
+
+
+>> Tokens are: 
+ ['·', 'Agent', 'Program', '=', 'implementation', 'agent', 'function', '.']
+
+>> Bigrams are: 
+ [('·', 'Agent'), ('Agent', 'Program'), ('Program', '='), ('=', 'implementation'), ('implementation', 'agent'), ('agent', 'function'), ('function', '.')]
+
+>> Trigrams are: 
+ [('·', 'Agent', 'Program'), ('Agent', 'Program', '='), ('Program', '=', 'implementation'), ('=', 'implementation', 'agent'), ('implementation', 'agent', 'function'), ('agent', 'function', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Agent', 'NNP'), ('Program', 'NNP'), ('=', 'NNP'), ('implementation', 'NN'), ('agent', 'NN'), ('function', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    ·/JJ
+    Agent/NNP
+    Program/NNP
+    =/NNP
+    implementation/NN
+    agent/NN
+    function/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Agent Program = implementation agent function']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Agent', 'agent'), ('Program', 'program'), ('=', '='), ('implementation', 'implement'), ('agent', 'agent'), ('function', 'function'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Agent', 'agent'), ('Program', 'program'), ('=', '='), ('implementation', 'implement'), ('agent', 'agent'), ('function', 'function'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Agent', 'Agent'), ('Program', 'Program'), ('=', '='), ('implementation', 'implementation'), ('agent', 'agent'), ('function', 'function'), ('.', '.')]
+
+
+
+============================ Sentence 26 =============================
+
+Simple Reflex Agents · They choose actions only based on the current percept. 
+
+
+>> Tokens are: 
+ ['Simple', 'Reflex', 'Agents', '·', 'They', 'choose', 'actions', 'based', 'current', 'percept', '.']
+
+>> Bigrams are: 
+ [('Simple', 'Reflex'), ('Reflex', 'Agents'), ('Agents', '·'), ('·', 'They'), ('They', 'choose'), ('choose', 'actions'), ('actions', 'based'), ('based', 'current'), ('current', 'percept'), ('percept', '.')]
+
+>> Trigrams are: 
+ [('Simple', 'Reflex', 'Agents'), ('Reflex', 'Agents', '·'), ('Agents', '·', 'They'), ('·', 'They', 'choose'), ('They', 'choose', 'actions'), ('choose', 'actions', 'based'), ('actions', 'based', 'current'), ('based', 'current', 'percept'), ('current', 'percept', '.')]
+
+>> POS Tags are: 
+ [('Simple', 'JJ'), ('Reflex', 'NNP'), ('Agents', 'NNS'), ('·', 'VBP'), ('They', 'PRP'), ('choose', 'VBP'), ('actions', 'NNS'), ('based', 'VBN'), ('current', 'JJ'), ('percept', 'NN'), ('.', '.')]
+
+ (S
+  (NP Simple/JJ Reflex/NNP Agents/NNS)
+  ·/VBP
+  They/PRP
+  choose/VBP
+  (NP actions/NNS)
+  based/VBN
+  (NP current/JJ percept/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Simple Reflex Agents', 'actions', 'current percept']
+
+>> Named Entities are: 
+ [('PERSON', 'Simple'), ('ORGANIZATION', 'Reflex')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Simple', 'simpl'), ('Reflex', 'reflex'), ('Agents', 'agent'), ('·', '·'), ('They', 'they'), ('choose', 'choos'), ('actions', 'action'), ('based', 'base'), ('current', 'current'), ('percept', 'percept'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Simple', 'simpl'), ('Reflex', 'reflex'), ('Agents', 'agent'), ('·', '·'), ('They', 'they'), ('choose', 'choos'), ('actions', 'action'), ('based', 'base'), ('current', 'current'), ('percept', 'percept'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Simple', 'Simple'), ('Reflex', 'Reflex'), ('Agents', 'Agents'), ('·', '·'), ('They', 'They'), ('choose', 'choose'), ('actions', 'action'), ('based', 'based'), ('current', 'current'), ('percept', 'percept'), ('.', '.')]
+
+
+
+============================ Sentence 27 =============================
+
+· They are rational only if a correct decision is made only on the basis of current precept. 
+
+
+>> Tokens are: 
+ ['·', 'They', 'rational', 'correct', 'decision', 'made', 'basis', 'current', 'precept', '.']
+
+>> Bigrams are: 
+ [('·', 'They'), ('They', 'rational'), ('rational', 'correct'), ('correct', 'decision'), ('decision', 'made'), ('made', 'basis'), ('basis', 'current'), ('current', 'precept'), ('precept', '.')]
+
+>> Trigrams are: 
+ [('·', 'They', 'rational'), ('They', 'rational', 'correct'), ('rational', 'correct', 'decision'), ('correct', 'decision', 'made'), ('decision', 'made', 'basis'), ('made', 'basis', 'current'), ('basis', 'current', 'precept'), ('current', 'precept', '.')]
+
+>> POS Tags are: 
+ [('·', 'IN'), ('They', 'PRP'), ('rational', 'VBP'), ('correct', 'JJ'), ('decision', 'NN'), ('made', 'VBD'), ('basis', 'NN'), ('current', 'JJ'), ('precept', 'NN'), ('.', '.')]
+
+ (S
+  ·/IN
+  They/PRP
+  rational/VBP
+  (NP correct/JJ decision/NN)
+  made/VBD
+  (NP basis/NN)
+  (NP current/JJ precept/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['correct decision', 'basis', 'current precept']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('They', 'they'), ('rational', 'ration'), ('correct', 'correct'), ('decision', 'decis'), ('made', 'made'), ('basis', 'basi'), ('current', 'current'), ('precept', 'precept'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('They', 'they'), ('rational', 'ration'), ('correct', 'correct'), ('decision', 'decis'), ('made', 'made'), ('basis', 'basi'), ('current', 'current'), ('precept', 'precept'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('They', 'They'), ('rational', 'rational'), ('correct', 'correct'), ('decision', 'decision'), ('made', 'made'), ('basis', 'basis'), ('current', 'current'), ('precept', 'precept'), ('.', '.')]
+
+
+
+============================ Sentence 28 =============================
+
+· Their environment is completely observable. 
+
+
+>> Tokens are: 
+ ['·', 'Their', 'environment', 'completely', 'observable', '.']
+
+>> Bigrams are: 
+ [('·', 'Their'), ('Their', 'environment'), ('environment', 'completely'), ('completely', 'observable'), ('observable', '.')]
+
+>> Trigrams are: 
+ [('·', 'Their', 'environment'), ('Their', 'environment', 'completely'), ('environment', 'completely', 'observable'), ('completely', 'observable', '.')]
+
+>> POS Tags are: 
+ [('·', 'VB'), ('Their', 'PRP$'), ('environment', 'NN'), ('completely', 'RB'), ('observable', 'JJ'), ('.', '.')]
+
+ (S
+  ·/VB
+  Their/PRP$
+  (NP environment/NN)
+  completely/RB
+  observable/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['environment']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Their', 'their'), ('environment', 'environ'), ('completely', 'complet'), ('observable', 'observ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Their', 'their'), ('environment', 'environ'), ('completely', 'complet'), ('observable', 'observ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Their', 'Their'), ('environment', 'environment'), ('completely', 'completely'), ('observable', 'observable'), ('.', '.')]
+
+
+
+============================ Sentence 29 =============================
+
+Condition-Action Rule − It is a rule that maps a state (condition) to an action. 
+
+
+>> Tokens are: 
+ ['Condition-Action', 'Rule', '−', 'It', 'rule', 'maps', 'state', '(', 'condition', ')', 'action', '.']
+
+>> Bigrams are: 
+ [('Condition-Action', 'Rule'), ('Rule', '−'), ('−', 'It'), ('It', 'rule'), ('rule', 'maps'), ('maps', 'state'), ('state', '('), ('(', 'condition'), ('condition', ')'), (')', 'action'), ('action', '.')]
+
+>> Trigrams are: 
+ [('Condition-Action', 'Rule', '−'), ('Rule', '−', 'It'), ('−', 'It', 'rule'), ('It', 'rule', 'maps'), ('rule', 'maps', 'state'), ('maps', 'state', '('), ('state', '(', 'condition'), ('(', 'condition', ')'), ('condition', ')', 'action'), (')', 'action', '.')]
+
+>> POS Tags are: 
+ [('Condition-Action', 'NN'), ('Rule', 'NNP'), ('−', 'IN'), ('It', 'PRP'), ('rule', 'VBZ'), ('maps', 'NNS'), ('state', 'NN'), ('(', '('), ('condition', 'NN'), (')', ')'), ('action', 'NN'), ('.', '.')]
+
+ (S
+  (NP Condition-Action/NN Rule/NNP)
+  −/IN
+  It/PRP
+  rule/VBZ
+  (NP maps/NNS state/NN)
+  (/(
+  (NP condition/NN)
+  )/)
+  (NP action/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Condition-Action Rule', 'maps state', 'condition', 'action']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Condition-Action', 'condition-act'), ('Rule', 'rule'), ('−', '−'), ('It', 'it'), ('rule', 'rule'), ('maps', 'map'), ('state', 'state'), ('(', '('), ('condition', 'condit'), (')', ')'), ('action', 'action'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Condition-Action', 'condition-act'), ('Rule', 'rule'), ('−', '−'), ('It', 'it'), ('rule', 'rule'), ('maps', 'map'), ('state', 'state'), ('(', '('), ('condition', 'condit'), (')', ')'), ('action', 'action'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Condition-Action', 'Condition-Action'), ('Rule', 'Rule'), ('−', '−'), ('It', 'It'), ('rule', 'rule'), ('maps', 'map'), ('state', 'state'), ('(', '('), ('condition', 'condition'), (')', ')'), ('action', 'action'), ('.', '.')]
+
+
+
+============================ Sentence 30 =============================
+
+Model Based Reflex Agents They use a model of the world to choose their actions. 
+
+
+>> Tokens are: 
+ ['Model', 'Based', 'Reflex', 'Agents', 'They', 'use', 'model', 'world', 'choose', 'actions', '.']
+
+>> Bigrams are: 
+ [('Model', 'Based'), ('Based', 'Reflex'), ('Reflex', 'Agents'), ('Agents', 'They'), ('They', 'use'), ('use', 'model'), ('model', 'world'), ('world', 'choose'), ('choose', 'actions'), ('actions', '.')]
+
+>> Trigrams are: 
+ [('Model', 'Based', 'Reflex'), ('Based', 'Reflex', 'Agents'), ('Reflex', 'Agents', 'They'), ('Agents', 'They', 'use'), ('They', 'use', 'model'), ('use', 'model', 'world'), ('model', 'world', 'choose'), ('world', 'choose', 'actions'), ('choose', 'actions', '.')]
+
+>> POS Tags are: 
+ [('Model', 'NNP'), ('Based', 'VBD'), ('Reflex', 'NNP'), ('Agents', 'NNP'), ('They', 'PRP'), ('use', 'VBP'), ('model', 'JJ'), ('world', 'NN'), ('choose', 'NN'), ('actions', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Model/NNP)
+  Based/VBD
+  (NP Reflex/NNP Agents/NNP)
+  They/PRP
+  use/VBP
+  (NP model/JJ world/NN choose/NN actions/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Model', 'Reflex Agents', 'model world choose actions']
+
+>> Named Entities are: 
+ [('PERSON', 'Model'), ('PERSON', 'Reflex Agents')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Model', 'model'), ('Based', 'base'), ('Reflex', 'reflex'), ('Agents', 'agent'), ('They', 'they'), ('use', 'use'), ('model', 'model'), ('world', 'world'), ('choose', 'choos'), ('actions', 'action'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Model', 'model'), ('Based', 'base'), ('Reflex', 'reflex'), ('Agents', 'agent'), ('They', 'they'), ('use', 'use'), ('model', 'model'), ('world', 'world'), ('choose', 'choos'), ('actions', 'action'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Model', 'Model'), ('Based', 'Based'), ('Reflex', 'Reflex'), ('Agents', 'Agents'), ('They', 'They'), ('use', 'use'), ('model', 'model'), ('world', 'world'), ('choose', 'choose'), ('actions', 'action'), ('.', '.')]
+
+
+
+============================ Sentence 31 =============================
+
+They maintain an internal state. 
+
+
+>> Tokens are: 
+ ['They', 'maintain', 'internal', 'state', '.']
+
+>> Bigrams are: 
+ [('They', 'maintain'), ('maintain', 'internal'), ('internal', 'state'), ('state', '.')]
+
+>> Trigrams are: 
+ [('They', 'maintain', 'internal'), ('maintain', 'internal', 'state'), ('internal', 'state', '.')]
+
+>> POS Tags are: 
+ [('They', 'PRP'), ('maintain', 'VBP'), ('internal', 'JJ'), ('state', 'NN'), ('.', '.')]
+
+ (S They/PRP maintain/VBP (NP internal/JJ state/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['internal state']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('They', 'they'), ('maintain', 'maintain'), ('internal', 'intern'), ('state', 'state'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('They', 'they'), ('maintain', 'maintain'), ('internal', 'intern'), ('state', 'state'), ('.', '.')]
+
+>> Lemmatization: 
+ [('They', 'They'), ('maintain', 'maintain'), ('internal', 'internal'), ('state', 'state'), ('.', '.')]
+
+
+
+============================ Sentence 32 =============================
+
+Model − knowledge about “how the things happen in the world”. 
+
+
+>> Tokens are: 
+ ['Model', '−', 'knowledge', '“', 'things', 'happen', 'world', '”', '.']
+
+>> Bigrams are: 
+ [('Model', '−'), ('−', 'knowledge'), ('knowledge', '“'), ('“', 'things'), ('things', 'happen'), ('happen', 'world'), ('world', '”'), ('”', '.')]
+
+>> Trigrams are: 
+ [('Model', '−', 'knowledge'), ('−', 'knowledge', '“'), ('knowledge', '“', 'things'), ('“', 'things', 'happen'), ('things', 'happen', 'world'), ('happen', 'world', '”'), ('world', '”', '.')]
+
+>> POS Tags are: 
+ [('Model', 'NNP'), ('−', 'NNP'), ('knowledge', 'NNP'), ('“', 'NNP'), ('things', 'NNS'), ('happen', 'JJ'), ('world', 'NN'), ('”', 'NN'), ('.', '.')]
+
+ (S
+  (NP Model/NNP −/NNP knowledge/NNP “/NNP things/NNS)
+  (NP happen/JJ world/NN ”/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Model − knowledge “ things', 'happen world ”']
+
+>> Named Entities are: 
+ [('PERSON', 'Model')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Model', 'model'), ('−', '−'), ('knowledge', 'knowledg'), ('“', '“'), ('things', 'thing'), ('happen', 'happen'), ('world', 'world'), ('”', '”'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Model', 'model'), ('−', '−'), ('knowledge', 'knowledg'), ('“', '“'), ('things', 'thing'), ('happen', 'happen'), ('world', 'world'), ('”', '”'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Model', 'Model'), ('−', '−'), ('knowledge', 'knowledge'), ('“', '“'), ('things', 'thing'), ('happen', 'happen'), ('world', 'world'), ('”', '”'), ('.', '.')]
+
+
+
+============================ Sentence 33 =============================
+
+Internal State − It is a representation of unobserved aspects of current state depending on percept history. 
+
+
+>> Tokens are: 
+ ['Internal', 'State', '−', 'It', 'representation', 'unobserved', 'aspects', 'current', 'state', 'depending', 'percept', 'history', '.']
+
+>> Bigrams are: 
+ [('Internal', 'State'), ('State', '−'), ('−', 'It'), ('It', 'representation'), ('representation', 'unobserved'), ('unobserved', 'aspects'), ('aspects', 'current'), ('current', 'state'), ('state', 'depending'), ('depending', 'percept'), ('percept', 'history'), ('history', '.')]
+
+>> Trigrams are: 
+ [('Internal', 'State', '−'), ('State', '−', 'It'), ('−', 'It', 'representation'), ('It', 'representation', 'unobserved'), ('representation', 'unobserved', 'aspects'), ('unobserved', 'aspects', 'current'), ('aspects', 'current', 'state'), ('current', 'state', 'depending'), ('state', 'depending', 'percept'), ('depending', 'percept', 'history'), ('percept', 'history', '.')]
+
+>> POS Tags are: 
+ [('Internal', 'NNP'), ('State', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('representation', 'NN'), ('unobserved', 'JJ'), ('aspects', 'NNS'), ('current', 'JJ'), ('state', 'NN'), ('depending', 'VBG'), ('percept', 'JJ'), ('history', 'NN'), ('.', '.')]
+
+ (S
+  (NP Internal/NNP State/NNP)
+  −/VBD
+  It/PRP
+  (NP representation/NN)
+  (NP unobserved/JJ aspects/NNS)
+  (NP current/JJ state/NN)
+  depending/VBG
+  (NP percept/JJ history/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Internal State', 'representation', 'unobserved aspects', 'current state', 'percept history']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Internal')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Internal', 'intern'), ('State', 'state'), ('−', '−'), ('It', 'it'), ('representation', 'represent'), ('unobserved', 'unobserv'), ('aspects', 'aspect'), ('current', 'current'), ('state', 'state'), ('depending', 'depend'), ('percept', 'percept'), ('history', 'histori'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Internal', 'intern'), ('State', 'state'), ('−', '−'), ('It', 'it'), ('representation', 'represent'), ('unobserved', 'unobserv'), ('aspects', 'aspect'), ('current', 'current'), ('state', 'state'), ('depending', 'depend'), ('percept', 'percept'), ('history', 'histori'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Internal', 'Internal'), ('State', 'State'), ('−', '−'), ('It', 'It'), ('representation', 'representation'), ('unobserved', 'unobserved'), ('aspects', 'aspect'), ('current', 'current'), ('state', 'state'), ('depending', 'depending'), ('percept', 'percept'), ('history', 'history'), ('.', '.')]
+
+
+
+============================ Sentence 34 =============================
+
+Updating the state requires the information about − · How the world evolves. 
+
+
+>> Tokens are: 
+ ['Updating', 'state', 'requires', 'information', '−', '·', 'How', 'world', 'evolves', '.']
+
+>> Bigrams are: 
+ [('Updating', 'state'), ('state', 'requires'), ('requires', 'information'), ('information', '−'), ('−', '·'), ('·', 'How'), ('How', 'world'), ('world', 'evolves'), ('evolves', '.')]
+
+>> Trigrams are: 
+ [('Updating', 'state', 'requires'), ('state', 'requires', 'information'), ('requires', 'information', '−'), ('information', '−', '·'), ('−', '·', 'How'), ('·', 'How', 'world'), ('How', 'world', 'evolves'), ('world', 'evolves', '.')]
+
+>> POS Tags are: 
+ [('Updating', 'VBG'), ('state', 'NN'), ('requires', 'VBZ'), ('information', 'NN'), ('−', 'NNP'), ('·', 'NNP'), ('How', 'NNP'), ('world', 'NN'), ('evolves', 'VBZ'), ('.', '.')]
+
+ (S
+  Updating/VBG
+  (NP state/NN)
+  requires/VBZ
+  (NP information/NN −/NNP ·/NNP How/NNP world/NN)
+  evolves/VBZ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['state', 'information − · How world']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Updating', 'updat'), ('state', 'state'), ('requires', 'requir'), ('information', 'inform'), ('−', '−'), ('·', '·'), ('How', 'how'), ('world', 'world'), ('evolves', 'evolv'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Updating', 'updat'), ('state', 'state'), ('requires', 'requir'), ('information', 'inform'), ('−', '−'), ('·', '·'), ('How', 'how'), ('world', 'world'), ('evolves', 'evolv'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Updating', 'Updating'), ('state', 'state'), ('requires', 'requires'), ('information', 'information'), ('−', '−'), ('·', '·'), ('How', 'How'), ('world', 'world'), ('evolves', 'evolves'), ('.', '.')]
+
+
+
+============================ Sentence 35 =============================
+
+· How the agent’s actions affect the world. 
+
+
+>> Tokens are: 
+ ['·', 'How', 'agent', '’', 'actions', 'affect', 'world', '.']
+
+>> Bigrams are: 
+ [('·', 'How'), ('How', 'agent'), ('agent', '’'), ('’', 'actions'), ('actions', 'affect'), ('affect', 'world'), ('world', '.')]
+
+>> Trigrams are: 
+ [('·', 'How', 'agent'), ('How', 'agent', '’'), ('agent', '’', 'actions'), ('’', 'actions', 'affect'), ('actions', 'affect', 'world'), ('affect', 'world', '.')]
+
+>> POS Tags are: 
+ [('·', 'VB'), ('How', 'WRB'), ('agent', 'JJ'), ('’', 'JJ'), ('actions', 'NNS'), ('affect', 'VBP'), ('world', 'NN'), ('.', '.')]
+
+ (S
+  ·/VB
+  How/WRB
+  (NP agent/JJ ’/JJ actions/NNS)
+  affect/VBP
+  (NP world/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['agent ’ actions', 'world']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('How', 'how'), ('agent', 'agent'), ('’', '’'), ('actions', 'action'), ('affect', 'affect'), ('world', 'world'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('How', 'how'), ('agent', 'agent'), ('’', '’'), ('actions', 'action'), ('affect', 'affect'), ('world', 'world'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('How', 'How'), ('agent', 'agent'), ('’', '’'), ('actions', 'action'), ('affect', 'affect'), ('world', 'world'), ('.', '.')]
+
+
+
+============================ Sentence 36 =============================
+
+Goal Based Agents They choose their actions in order to achieve goals. 
+
+
+>> Tokens are: 
+ ['Goal', 'Based', 'Agents', 'They', 'choose', 'actions', 'order', 'achieve', 'goals', '.']
+
+>> Bigrams are: 
+ [('Goal', 'Based'), ('Based', 'Agents'), ('Agents', 'They'), ('They', 'choose'), ('choose', 'actions'), ('actions', 'order'), ('order', 'achieve'), ('achieve', 'goals'), ('goals', '.')]
+
+>> Trigrams are: 
+ [('Goal', 'Based', 'Agents'), ('Based', 'Agents', 'They'), ('Agents', 'They', 'choose'), ('They', 'choose', 'actions'), ('choose', 'actions', 'order'), ('actions', 'order', 'achieve'), ('order', 'achieve', 'goals'), ('achieve', 'goals', '.')]
+
+>> POS Tags are: 
+ [('Goal', 'NNP'), ('Based', 'VBD'), ('Agents', 'NNS'), ('They', 'PRP'), ('choose', 'VBP'), ('actions', 'NNS'), ('order', 'NN'), ('achieve', 'VBP'), ('goals', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Goal/NNP)
+  Based/VBD
+  (NP Agents/NNS)
+  They/PRP
+  choose/VBP
+  (NP actions/NNS order/NN)
+  achieve/VBP
+  (NP goals/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Goal', 'Agents', 'actions order', 'goals']
+
+>> Named Entities are: 
+ [('PERSON', 'Goal')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Goal', 'goal'), ('Based', 'base'), ('Agents', 'agent'), ('They', 'they'), ('choose', 'choos'), ('actions', 'action'), ('order', 'order'), ('achieve', 'achiev'), ('goals', 'goal'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Goal', 'goal'), ('Based', 'base'), ('Agents', 'agent'), ('They', 'they'), ('choose', 'choos'), ('actions', 'action'), ('order', 'order'), ('achieve', 'achiev'), ('goals', 'goal'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Goal', 'Goal'), ('Based', 'Based'), ('Agents', 'Agents'), ('They', 'They'), ('choose', 'choose'), ('actions', 'action'), ('order', 'order'), ('achieve', 'achieve'), ('goals', 'goal'), ('.', '.')]
+
+
+
+============================ Sentence 37 =============================
+
+Goal-based approach is more flexible than reflex agent since the knowledge supporting a decision is explicitly modeled, thereby allowing for modifications. 
+
+
+>> Tokens are: 
+ ['Goal-based', 'approach', 'flexible', 'reflex', 'agent', 'since', 'knowledge', 'supporting', 'decision', 'explicitly', 'modeled', ',', 'thereby', 'allowing', 'modifications', '.']
+
+>> Bigrams are: 
+ [('Goal-based', 'approach'), ('approach', 'flexible'), ('flexible', 'reflex'), ('reflex', 'agent'), ('agent', 'since'), ('since', 'knowledge'), ('knowledge', 'supporting'), ('supporting', 'decision'), ('decision', 'explicitly'), ('explicitly', 'modeled'), ('modeled', ','), (',', 'thereby'), ('thereby', 'allowing'), ('allowing', 'modifications'), ('modifications', '.')]
+
+>> Trigrams are: 
+ [('Goal-based', 'approach', 'flexible'), ('approach', 'flexible', 'reflex'), ('flexible', 'reflex', 'agent'), ('reflex', 'agent', 'since'), ('agent', 'since', 'knowledge'), ('since', 'knowledge', 'supporting'), ('knowledge', 'supporting', 'decision'), ('supporting', 'decision', 'explicitly'), ('decision', 'explicitly', 'modeled'), ('explicitly', 'modeled', ','), ('modeled', ',', 'thereby'), (',', 'thereby', 'allowing'), ('thereby', 'allowing', 'modifications'), ('allowing', 'modifications', '.')]
+
+>> POS Tags are: 
+ [('Goal-based', 'JJ'), ('approach', 'NN'), ('flexible', 'JJ'), ('reflex', 'NN'), ('agent', 'NN'), ('since', 'IN'), ('knowledge', 'NN'), ('supporting', 'VBG'), ('decision', 'NN'), ('explicitly', 'RB'), ('modeled', 'VBN'), (',', ','), ('thereby', 'RB'), ('allowing', 'VBG'), ('modifications', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Goal-based/JJ approach/NN)
+  (NP flexible/JJ reflex/NN agent/NN)
+  since/IN
+  (NP knowledge/NN)
+  supporting/VBG
+  (NP decision/NN)
+  explicitly/RB
+  modeled/VBN
+  ,/,
+  thereby/RB
+  allowing/VBG
+  (NP modifications/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Goal-based approach', 'flexible reflex agent', 'knowledge', 'decision', 'modifications']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Goal-based', 'goal-bas'), ('approach', 'approach'), ('flexible', 'flexibl'), ('reflex', 'reflex'), ('agent', 'agent'), ('since', 'sinc'), ('knowledge', 'knowledg'), ('supporting', 'support'), ('decision', 'decis'), ('explicitly', 'explicitli'), ('modeled', 'model'), (',', ','), ('thereby', 'therebi'), ('allowing', 'allow'), ('modifications', 'modif'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Goal-based', 'goal-bas'), ('approach', 'approach'), ('flexible', 'flexibl'), ('reflex', 'reflex'), ('agent', 'agent'), ('since', 'sinc'), ('knowledge', 'knowledg'), ('supporting', 'support'), ('decision', 'decis'), ('explicitly', 'explicit'), ('modeled', 'model'), (',', ','), ('thereby', 'therebi'), ('allowing', 'allow'), ('modifications', 'modif'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Goal-based', 'Goal-based'), ('approach', 'approach'), ('flexible', 'flexible'), ('reflex', 'reflex'), ('agent', 'agent'), ('since', 'since'), ('knowledge', 'knowledge'), ('supporting', 'supporting'), ('decision', 'decision'), ('explicitly', 'explicitly'), ('modeled', 'modeled'), (',', ','), ('thereby', 'thereby'), ('allowing', 'allowing'), ('modifications', 'modification'), ('.', '.')]
+
+
+
+============================ Sentence 38 =============================
+
+Goal − It is the description of desirable situations. 
+
+
+>> Tokens are: 
+ ['Goal', '−', 'It', 'description', 'desirable', 'situations', '.']
+
+>> Bigrams are: 
+ [('Goal', '−'), ('−', 'It'), ('It', 'description'), ('description', 'desirable'), ('desirable', 'situations'), ('situations', '.')]
+
+>> Trigrams are: 
+ [('Goal', '−', 'It'), ('−', 'It', 'description'), ('It', 'description', 'desirable'), ('description', 'desirable', 'situations'), ('desirable', 'situations', '.')]
+
+>> POS Tags are: 
+ [('Goal', 'NNP'), ('−', 'VBZ'), ('It', 'PRP'), ('description', 'NN'), ('desirable', 'JJ'), ('situations', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Goal/NNP)
+  −/VBZ
+  It/PRP
+  (NP description/NN)
+  (NP desirable/JJ situations/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Goal', 'description', 'desirable situations']
+
+>> Named Entities are: 
+ [('GPE', 'Goal')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Goal', 'goal'), ('−', '−'), ('It', 'it'), ('description', 'descript'), ('desirable', 'desir'), ('situations', 'situat'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Goal', 'goal'), ('−', '−'), ('It', 'it'), ('description', 'descript'), ('desirable', 'desir'), ('situations', 'situat'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Goal', 'Goal'), ('−', '−'), ('It', 'It'), ('description', 'description'), ('desirable', 'desirable'), ('situations', 'situation'), ('.', '.')]
+
+
+
+============================ Sentence 39 =============================
+
+Utility Based Agents They choose actions based on a preference (utility) for each state. 
+
+
+>> Tokens are: 
+ ['Utility', 'Based', 'Agents', 'They', 'choose', 'actions', 'based', 'preference', '(', 'utility', ')', 'state', '.']
+
+>> Bigrams are: 
+ [('Utility', 'Based'), ('Based', 'Agents'), ('Agents', 'They'), ('They', 'choose'), ('choose', 'actions'), ('actions', 'based'), ('based', 'preference'), ('preference', '('), ('(', 'utility'), ('utility', ')'), (')', 'state'), ('state', '.')]
+
+>> Trigrams are: 
+ [('Utility', 'Based', 'Agents'), ('Based', 'Agents', 'They'), ('Agents', 'They', 'choose'), ('They', 'choose', 'actions'), ('choose', 'actions', 'based'), ('actions', 'based', 'preference'), ('based', 'preference', '('), ('preference', '(', 'utility'), ('(', 'utility', ')'), ('utility', ')', 'state'), (')', 'state', '.')]
+
+>> POS Tags are: 
+ [('Utility', 'NN'), ('Based', 'VBN'), ('Agents', 'NNS'), ('They', 'PRP'), ('choose', 'VBP'), ('actions', 'NNS'), ('based', 'VBN'), ('preference', 'NN'), ('(', '('), ('utility', 'NN'), (')', ')'), ('state', 'NN'), ('.', '.')]
+
+ (S
+  (NP Utility/NN)
+  Based/VBN
+  (NP Agents/NNS)
+  They/PRP
+  choose/VBP
+  (NP actions/NNS)
+  based/VBN
+  (NP preference/NN)
+  (/(
+  (NP utility/NN)
+  )/)
+  (NP state/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Utility', 'Agents', 'actions', 'preference', 'utility', 'state']
+
+>> Named Entities are: 
+ [('GPE', 'Utility')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Utility', 'util'), ('Based', 'base'), ('Agents', 'agent'), ('They', 'they'), ('choose', 'choos'), ('actions', 'action'), ('based', 'base'), ('preference', 'prefer'), ('(', '('), ('utility', 'util'), (')', ')'), ('state', 'state'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Utility', 'util'), ('Based', 'base'), ('Agents', 'agent'), ('They', 'they'), ('choose', 'choos'), ('actions', 'action'), ('based', 'base'), ('preference', 'prefer'), ('(', '('), ('utility', 'util'), (')', ')'), ('state', 'state'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Utility', 'Utility'), ('Based', 'Based'), ('Agents', 'Agents'), ('They', 'They'), ('choose', 'choose'), ('actions', 'action'), ('based', 'based'), ('preference', 'preference'), ('(', '('), ('utility', 'utility'), (')', ')'), ('state', 'state'), ('.', '.')]
+
+
+
+============================ Sentence 40 =============================
+
+Goals are inadequate when − · There are conflicting goals, out of which only few can be achieved. 
+
+
+>> Tokens are: 
+ ['Goals', 'inadequate', '−', '·', 'There', 'conflicting', 'goals', ',', 'achieved', '.']
+
+>> Bigrams are: 
+ [('Goals', 'inadequate'), ('inadequate', '−'), ('−', '·'), ('·', 'There'), ('There', 'conflicting'), ('conflicting', 'goals'), ('goals', ','), (',', 'achieved'), ('achieved', '.')]
+
+>> Trigrams are: 
+ [('Goals', 'inadequate', '−'), ('inadequate', '−', '·'), ('−', '·', 'There'), ('·', 'There', 'conflicting'), ('There', 'conflicting', 'goals'), ('conflicting', 'goals', ','), ('goals', ',', 'achieved'), (',', 'achieved', '.')]
+
+>> POS Tags are: 
+ [('Goals', 'NNS'), ('inadequate', 'VBP'), ('−', 'JJ'), ('·', 'NN'), ('There', 'EX'), ('conflicting', 'VBG'), ('goals', 'NNS'), (',', ','), ('achieved', 'VBN'), ('.', '.')]
+
+ (S
+  (NP Goals/NNS)
+  inadequate/VBP
+  (NP −/JJ ·/NN)
+  There/EX
+  conflicting/VBG
+  (NP goals/NNS)
+  ,/,
+  achieved/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Goals', '− ·', 'goals']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Goals', 'goal'), ('inadequate', 'inadequ'), ('−', '−'), ('·', '·'), ('There', 'there'), ('conflicting', 'conflict'), ('goals', 'goal'), (',', ','), ('achieved', 'achiev'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Goals', 'goal'), ('inadequate', 'inadequ'), ('−', '−'), ('·', '·'), ('There', 'there'), ('conflicting', 'conflict'), ('goals', 'goal'), (',', ','), ('achieved', 'achiev'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Goals', 'Goals'), ('inadequate', 'inadequate'), ('−', '−'), ('·', '·'), ('There', 'There'), ('conflicting', 'conflicting'), ('goals', 'goal'), (',', ','), ('achieved', 'achieved'), ('.', '.')]
+
+
+
+============================ Sentence 41 =============================
+
+· Goals have some uncertainty of being achieved and you need to weigh likelihood of success against the importance of a goal. 
+
+
+>> Tokens are: 
+ ['·', 'Goals', 'uncertainty', 'achieved', 'need', 'weigh', 'likelihood', 'success', 'importance', 'goal', '.']
+
+>> Bigrams are: 
+ [('·', 'Goals'), ('Goals', 'uncertainty'), ('uncertainty', 'achieved'), ('achieved', 'need'), ('need', 'weigh'), ('weigh', 'likelihood'), ('likelihood', 'success'), ('success', 'importance'), ('importance', 'goal'), ('goal', '.')]
+
+>> Trigrams are: 
+ [('·', 'Goals', 'uncertainty'), ('Goals', 'uncertainty', 'achieved'), ('uncertainty', 'achieved', 'need'), ('achieved', 'need', 'weigh'), ('need', 'weigh', 'likelihood'), ('weigh', 'likelihood', 'success'), ('likelihood', 'success', 'importance'), ('success', 'importance', 'goal'), ('importance', 'goal', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Goals', 'NNP'), ('uncertainty', 'NN'), ('achieved', 'VBD'), ('need', 'JJ'), ('weigh', 'JJ'), ('likelihood', 'NN'), ('success', 'NN'), ('importance', 'NN'), ('goal', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Goals/NNP uncertainty/NN)
+  achieved/VBD
+  (NP
+    need/JJ
+    weigh/JJ
+    likelihood/NN
+    success/NN
+    importance/NN
+    goal/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Goals uncertainty', 'need weigh likelihood success importance goal']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Goals', 'goal'), ('uncertainty', 'uncertainti'), ('achieved', 'achiev'), ('need', 'need'), ('weigh', 'weigh'), ('likelihood', 'likelihood'), ('success', 'success'), ('importance', 'import'), ('goal', 'goal'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Goals', 'goal'), ('uncertainty', 'uncertainti'), ('achieved', 'achiev'), ('need', 'need'), ('weigh', 'weigh'), ('likelihood', 'likelihood'), ('success', 'success'), ('importance', 'import'), ('goal', 'goal'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Goals', 'Goals'), ('uncertainty', 'uncertainty'), ('achieved', 'achieved'), ('need', 'need'), ('weigh', 'weigh'), ('likelihood', 'likelihood'), ('success', 'success'), ('importance', 'importance'), ('goal', 'goal'), ('.', '.')]
+
+
+
+============================ Sentence 42 =============================
+
+The Nature of Environments Some programs operate in the entirely artificial environment confined to keyboard input, database, computer file systems and character output on a screen. 
+
+
+>> Tokens are: 
+ ['The', 'Nature', 'Environments', 'Some', 'programs', 'operate', 'entirely', 'artificial', 'environment', 'confined', 'keyboard', 'input', ',', 'database', ',', 'computer', 'file', 'systems', 'character', 'output', 'screen', '.']
+
+>> Bigrams are: 
+ [('The', 'Nature'), ('Nature', 'Environments'), ('Environments', 'Some'), ('Some', 'programs'), ('programs', 'operate'), ('operate', 'entirely'), ('entirely', 'artificial'), ('artificial', 'environment'), ('environment', 'confined'), ('confined', 'keyboard'), ('keyboard', 'input'), ('input', ','), (',', 'database'), ('database', ','), (',', 'computer'), ('computer', 'file'), ('file', 'systems'), ('systems', 'character'), ('character', 'output'), ('output', 'screen'), ('screen', '.')]
+
+>> Trigrams are: 
+ [('The', 'Nature', 'Environments'), ('Nature', 'Environments', 'Some'), ('Environments', 'Some', 'programs'), ('Some', 'programs', 'operate'), ('programs', 'operate', 'entirely'), ('operate', 'entirely', 'artificial'), ('entirely', 'artificial', 'environment'), ('artificial', 'environment', 'confined'), ('environment', 'confined', 'keyboard'), ('confined', 'keyboard', 'input'), ('keyboard', 'input', ','), ('input', ',', 'database'), (',', 'database', ','), ('database', ',', 'computer'), (',', 'computer', 'file'), ('computer', 'file', 'systems'), ('file', 'systems', 'character'), ('systems', 'character', 'output'), ('character', 'output', 'screen'), ('output', 'screen', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('Nature', 'NN'), ('Environments', 'VBZ'), ('Some', 'DT'), ('programs', 'NNS'), ('operate', 'VBP'), ('entirely', 'RB'), ('artificial', 'JJ'), ('environment', 'NN'), ('confined', 'VBD'), ('keyboard', 'NN'), ('input', 'NN'), (',', ','), ('database', 'NN'), (',', ','), ('computer', 'NN'), ('file', 'NN'), ('systems', 'NNS'), ('character', 'NN'), ('output', 'NN'), ('screen', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT Nature/NN)
+  Environments/VBZ
+  (NP Some/DT programs/NNS)
+  operate/VBP
+  entirely/RB
+  (NP artificial/JJ environment/NN)
+  confined/VBD
+  (NP keyboard/NN input/NN)
+  ,/,
+  (NP database/NN)
+  ,/,
+  (NP
+    computer/NN
+    file/NN
+    systems/NNS
+    character/NN
+    output/NN
+    screen/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The Nature', 'Some programs', 'artificial environment', 'keyboard input', 'database', 'computer file systems character output screen']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Nature')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('Nature', 'natur'), ('Environments', 'environ'), ('Some', 'some'), ('programs', 'program'), ('operate', 'oper'), ('entirely', 'entir'), ('artificial', 'artifici'), ('environment', 'environ'), ('confined', 'confin'), ('keyboard', 'keyboard'), ('input', 'input'), (',', ','), ('database', 'databas'), (',', ','), ('computer', 'comput'), ('file', 'file'), ('systems', 'system'), ('character', 'charact'), ('output', 'output'), ('screen', 'screen'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('Nature', 'natur'), ('Environments', 'environ'), ('Some', 'some'), ('programs', 'program'), ('operate', 'oper'), ('entirely', 'entir'), ('artificial', 'artifici'), ('environment', 'environ'), ('confined', 'confin'), ('keyboard', 'keyboard'), ('input', 'input'), (',', ','), ('database', 'databas'), (',', ','), ('computer', 'comput'), ('file', 'file'), ('systems', 'system'), ('character', 'charact'), ('output', 'output'), ('screen', 'screen'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('Nature', 'Nature'), ('Environments', 'Environments'), ('Some', 'Some'), ('programs', 'program'), ('operate', 'operate'), ('entirely', 'entirely'), ('artificial', 'artificial'), ('environment', 'environment'), ('confined', 'confined'), ('keyboard', 'keyboard'), ('input', 'input'), (',', ','), ('database', 'database'), (',', ','), ('computer', 'computer'), ('file', 'file'), ('systems', 'system'), ('character', 'character'), ('output', 'output'), ('screen', 'screen'), ('.', '.')]
+
+
+
+============================ Sentence 43 =============================
+
+In contrast, some software agents (software robots or softbots) exist in rich, unlimited softbots domains. 
+
+
+>> Tokens are: 
+ ['In', 'contrast', ',', 'software', 'agents', '(', 'software', 'robots', 'softbots', ')', 'exist', 'rich', ',', 'unlimited', 'softbots', 'domains', '.']
+
+>> Bigrams are: 
+ [('In', 'contrast'), ('contrast', ','), (',', 'software'), ('software', 'agents'), ('agents', '('), ('(', 'software'), ('software', 'robots'), ('robots', 'softbots'), ('softbots', ')'), (')', 'exist'), ('exist', 'rich'), ('rich', ','), (',', 'unlimited'), ('unlimited', 'softbots'), ('softbots', 'domains'), ('domains', '.')]
+
+>> Trigrams are: 
+ [('In', 'contrast', ','), ('contrast', ',', 'software'), (',', 'software', 'agents'), ('software', 'agents', '('), ('agents', '(', 'software'), ('(', 'software', 'robots'), ('software', 'robots', 'softbots'), ('robots', 'softbots', ')'), ('softbots', ')', 'exist'), (')', 'exist', 'rich'), ('exist', 'rich', ','), ('rich', ',', 'unlimited'), (',', 'unlimited', 'softbots'), ('unlimited', 'softbots', 'domains'), ('softbots', 'domains', '.')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('contrast', 'NN'), (',', ','), ('software', 'NN'), ('agents', 'NNS'), ('(', '('), ('software', 'NN'), ('robots', 'NNS'), ('softbots', 'NNS'), (')', ')'), ('exist', 'VBP'), ('rich', 'JJ'), (',', ','), ('unlimited', 'JJ'), ('softbots', 'NNS'), ('domains', 'NNS'), ('.', '.')]
+
+ (S
+  In/IN
+  (NP contrast/NN)
+  ,/,
+  (NP software/NN agents/NNS)
+  (/(
+  (NP software/NN robots/NNS softbots/NNS)
+  )/)
+  exist/VBP
+  rich/JJ
+  ,/,
+  (NP unlimited/JJ softbots/NNS domains/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['contrast', 'software agents', 'software robots softbots', 'unlimited softbots domains']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('contrast', 'contrast'), (',', ','), ('software', 'softwar'), ('agents', 'agent'), ('(', '('), ('software', 'softwar'), ('robots', 'robot'), ('softbots', 'softbot'), (')', ')'), ('exist', 'exist'), ('rich', 'rich'), (',', ','), ('unlimited', 'unlimit'), ('softbots', 'softbot'), ('domains', 'domain'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('contrast', 'contrast'), (',', ','), ('software', 'softwar'), ('agents', 'agent'), ('(', '('), ('software', 'softwar'), ('robots', 'robot'), ('softbots', 'softbot'), (')', ')'), ('exist', 'exist'), ('rich', 'rich'), (',', ','), ('unlimited', 'unlimit'), ('softbots', 'softbot'), ('domains', 'domain'), ('.', '.')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('contrast', 'contrast'), (',', ','), ('software', 'software'), ('agents', 'agent'), ('(', '('), ('software', 'software'), ('robots', 'robot'), ('softbots', 'softbots'), (')', ')'), ('exist', 'exist'), ('rich', 'rich'), (',', ','), ('unlimited', 'unlimited'), ('softbots', 'softbots'), ('domains', 'domain'), ('.', '.')]
+
+
+
+============================ Sentence 44 =============================
+
+The simulator has a very detailed, complex environment. 
+
+
+>> Tokens are: 
+ ['The', 'simulator', 'detailed', ',', 'complex', 'environment', '.']
+
+>> Bigrams are: 
+ [('The', 'simulator'), ('simulator', 'detailed'), ('detailed', ','), (',', 'complex'), ('complex', 'environment'), ('environment', '.')]
+
+>> Trigrams are: 
+ [('The', 'simulator', 'detailed'), ('simulator', 'detailed', ','), ('detailed', ',', 'complex'), (',', 'complex', 'environment'), ('complex', 'environment', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('simulator', 'NN'), ('detailed', 'VBD'), (',', ','), ('complex', 'JJ'), ('environment', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT simulator/NN)
+  detailed/VBD
+  ,/,
+  (NP complex/JJ environment/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The simulator', 'complex environment']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('simulator', 'simul'), ('detailed', 'detail'), (',', ','), ('complex', 'complex'), ('environment', 'environ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('simulator', 'simul'), ('detailed', 'detail'), (',', ','), ('complex', 'complex'), ('environment', 'environ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('simulator', 'simulator'), ('detailed', 'detailed'), (',', ','), ('complex', 'complex'), ('environment', 'environment'), ('.', '.')]
+
+
+
+============================ Sentence 45 =============================
+
+The software agent needs to choose from a long array of actions in real time. 
+
+
+>> Tokens are: 
+ ['The', 'software', 'agent', 'needs', 'choose', 'long', 'array', 'actions', 'real', 'time', '.']
+
+>> Bigrams are: 
+ [('The', 'software'), ('software', 'agent'), ('agent', 'needs'), ('needs', 'choose'), ('choose', 'long'), ('long', 'array'), ('array', 'actions'), ('actions', 'real'), ('real', 'time'), ('time', '.')]
+
+>> Trigrams are: 
+ [('The', 'software', 'agent'), ('software', 'agent', 'needs'), ('agent', 'needs', 'choose'), ('needs', 'choose', 'long'), ('choose', 'long', 'array'), ('long', 'array', 'actions'), ('array', 'actions', 'real'), ('actions', 'real', 'time'), ('real', 'time', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('software', 'NN'), ('agent', 'NN'), ('needs', 'NNS'), ('choose', 'VBP'), ('long', 'JJ'), ('array', 'NN'), ('actions', 'NNS'), ('real', 'JJ'), ('time', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT software/NN agent/NN needs/NNS)
+  choose/VBP
+  (NP long/JJ array/NN actions/NNS)
+  (NP real/JJ time/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The software agent needs', 'long array actions', 'real time']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('software', 'softwar'), ('agent', 'agent'), ('needs', 'need'), ('choose', 'choos'), ('long', 'long'), ('array', 'array'), ('actions', 'action'), ('real', 'real'), ('time', 'time'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('software', 'softwar'), ('agent', 'agent'), ('needs', 'need'), ('choose', 'choos'), ('long', 'long'), ('array', 'array'), ('actions', 'action'), ('real', 'real'), ('time', 'time'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('software', 'software'), ('agent', 'agent'), ('needs', 'need'), ('choose', 'choose'), ('long', 'long'), ('array', 'array'), ('actions', 'action'), ('real', 'real'), ('time', 'time'), ('.', '.')]
+
+
+
+============================ Sentence 46 =============================
+
+A softbot designed to scan the online preferences of the customer and show interesting items to the customer works in the real as well as an artificial environment. 
+
+
+>> Tokens are: 
+ ['A', 'softbot', 'designed', 'scan', 'online', 'preferences', 'customer', 'show', 'interesting', 'items', 'customer', 'works', 'real', 'well', 'artificial', 'environment', '.']
+
+>> Bigrams are: 
+ [('A', 'softbot'), ('softbot', 'designed'), ('designed', 'scan'), ('scan', 'online'), ('online', 'preferences'), ('preferences', 'customer'), ('customer', 'show'), ('show', 'interesting'), ('interesting', 'items'), ('items', 'customer'), ('customer', 'works'), ('works', 'real'), ('real', 'well'), ('well', 'artificial'), ('artificial', 'environment'), ('environment', '.')]
+
+>> Trigrams are: 
+ [('A', 'softbot', 'designed'), ('softbot', 'designed', 'scan'), ('designed', 'scan', 'online'), ('scan', 'online', 'preferences'), ('online', 'preferences', 'customer'), ('preferences', 'customer', 'show'), ('customer', 'show', 'interesting'), ('show', 'interesting', 'items'), ('interesting', 'items', 'customer'), ('items', 'customer', 'works'), ('customer', 'works', 'real'), ('works', 'real', 'well'), ('real', 'well', 'artificial'), ('well', 'artificial', 'environment'), ('artificial', 'environment', '.')]
+
+>> POS Tags are: 
+ [('A', 'DT'), ('softbot', 'NN'), ('designed', 'VBN'), ('scan', 'JJ'), ('online', 'NN'), ('preferences', 'NNS'), ('customer', 'NN'), ('show', 'NN'), ('interesting', 'JJ'), ('items', 'NNS'), ('customer', 'NN'), ('works', 'NNS'), ('real', 'JJ'), ('well', 'RB'), ('artificial', 'JJ'), ('environment', 'NN'), ('.', '.')]
+
+ (S
+  (NP A/DT softbot/NN)
+  designed/VBN
+  (NP scan/JJ online/NN preferences/NNS customer/NN show/NN)
+  (NP interesting/JJ items/NNS customer/NN works/NNS)
+  real/JJ
+  well/RB
+  (NP artificial/JJ environment/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A softbot', 'scan online preferences customer show', 'interesting items customer works', 'artificial environment']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('A', 'a'), ('softbot', 'softbot'), ('designed', 'design'), ('scan', 'scan'), ('online', 'onlin'), ('preferences', 'prefer'), ('customer', 'custom'), ('show', 'show'), ('interesting', 'interest'), ('items', 'item'), ('customer', 'custom'), ('works', 'work'), ('real', 'real'), ('well', 'well'), ('artificial', 'artifici'), ('environment', 'environ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('A', 'a'), ('softbot', 'softbot'), ('designed', 'design'), ('scan', 'scan'), ('online', 'onlin'), ('preferences', 'prefer'), ('customer', 'custom'), ('show', 'show'), ('interesting', 'interest'), ('items', 'item'), ('customer', 'custom'), ('works', 'work'), ('real', 'real'), ('well', 'well'), ('artificial', 'artifici'), ('environment', 'environ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('A', 'A'), ('softbot', 'softbot'), ('designed', 'designed'), ('scan', 'scan'), ('online', 'online'), ('preferences', 'preference'), ('customer', 'customer'), ('show', 'show'), ('interesting', 'interesting'), ('items', 'item'), ('customer', 'customer'), ('works', 'work'), ('real', 'real'), ('well', 'well'), ('artificial', 'artificial'), ('environment', 'environment'), ('.', '.')]
+
+
+
+============================ Sentence 47 =============================
+
+The most famous artificial environment is the Turing Test environment, in which one real and other artificial agents are tested on equal ground. 
+
+
+>> Tokens are: 
+ ['The', 'famous', 'artificial', 'environment', 'Turing', 'Test', 'environment', ',', 'one', 'real', 'artificial', 'agents', 'tested', 'equal', 'ground', '.']
+
+>> Bigrams are: 
+ [('The', 'famous'), ('famous', 'artificial'), ('artificial', 'environment'), ('environment', 'Turing'), ('Turing', 'Test'), ('Test', 'environment'), ('environment', ','), (',', 'one'), ('one', 'real'), ('real', 'artificial'), ('artificial', 'agents'), ('agents', 'tested'), ('tested', 'equal'), ('equal', 'ground'), ('ground', '.')]
+
+>> Trigrams are: 
+ [('The', 'famous', 'artificial'), ('famous', 'artificial', 'environment'), ('artificial', 'environment', 'Turing'), ('environment', 'Turing', 'Test'), ('Turing', 'Test', 'environment'), ('Test', 'environment', ','), ('environment', ',', 'one'), (',', 'one', 'real'), ('one', 'real', 'artificial'), ('real', 'artificial', 'agents'), ('artificial', 'agents', 'tested'), ('agents', 'tested', 'equal'), ('tested', 'equal', 'ground'), ('equal', 'ground', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('famous', 'JJ'), ('artificial', 'JJ'), ('environment', 'NN'), ('Turing', 'VBG'), ('Test', 'NNP'), ('environment', 'NN'), (',', ','), ('one', 'CD'), ('real', 'JJ'), ('artificial', 'JJ'), ('agents', 'NNS'), ('tested', 'VBN'), ('equal', 'JJ'), ('ground', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT famous/JJ artificial/JJ environment/NN)
+  Turing/VBG
+  (NP Test/NNP environment/NN)
+  ,/,
+  one/CD
+  (NP real/JJ artificial/JJ agents/NNS)
+  tested/VBN
+  (NP equal/JJ ground/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The famous artificial environment', 'Test environment', 'real artificial agents', 'equal ground']
+
+>> Named Entities are: 
+ [('GPE', 'Test')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('famous', 'famou'), ('artificial', 'artifici'), ('environment', 'environ'), ('Turing', 'ture'), ('Test', 'test'), ('environment', 'environ'), (',', ','), ('one', 'one'), ('real', 'real'), ('artificial', 'artifici'), ('agents', 'agent'), ('tested', 'test'), ('equal', 'equal'), ('ground', 'ground'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('famous', 'famous'), ('artificial', 'artifici'), ('environment', 'environ'), ('Turing', 'ture'), ('Test', 'test'), ('environment', 'environ'), (',', ','), ('one', 'one'), ('real', 'real'), ('artificial', 'artifici'), ('agents', 'agent'), ('tested', 'test'), ('equal', 'equal'), ('ground', 'ground'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('famous', 'famous'), ('artificial', 'artificial'), ('environment', 'environment'), ('Turing', 'Turing'), ('Test', 'Test'), ('environment', 'environment'), (',', ','), ('one', 'one'), ('real', 'real'), ('artificial', 'artificial'), ('agents', 'agent'), ('tested', 'tested'), ('equal', 'equal'), ('ground', 'ground'), ('.', '.')]
+
+
+
+============================ Sentence 48 =============================
+
+This is a very challenging environment as it is highly difficult for a software agent to perform as well as a human. 
+
+
+>> Tokens are: 
+ ['This', 'challenging', 'environment', 'highly', 'difficult', 'software', 'agent', 'perform', 'well', 'human', '.']
+
+>> Bigrams are: 
+ [('This', 'challenging'), ('challenging', 'environment'), ('environment', 'highly'), ('highly', 'difficult'), ('difficult', 'software'), ('software', 'agent'), ('agent', 'perform'), ('perform', 'well'), ('well', 'human'), ('human', '.')]
+
+>> Trigrams are: 
+ [('This', 'challenging', 'environment'), ('challenging', 'environment', 'highly'), ('environment', 'highly', 'difficult'), ('highly', 'difficult', 'software'), ('difficult', 'software', 'agent'), ('software', 'agent', 'perform'), ('agent', 'perform', 'well'), ('perform', 'well', 'human'), ('well', 'human', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('challenging', 'VBG'), ('environment', 'NN'), ('highly', 'RB'), ('difficult', 'JJ'), ('software', 'NN'), ('agent', 'NN'), ('perform', 'NN'), ('well', 'RB'), ('human', 'JJ'), ('.', '.')]
+
+ (S
+  This/DT
+  challenging/VBG
+  (NP environment/NN)
+  highly/RB
+  (NP difficult/JJ software/NN agent/NN perform/NN)
+  well/RB
+  human/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['environment', 'difficult software agent perform']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('challenging', 'challeng'), ('environment', 'environ'), ('highly', 'highli'), ('difficult', 'difficult'), ('software', 'softwar'), ('agent', 'agent'), ('perform', 'perform'), ('well', 'well'), ('human', 'human'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('challenging', 'challeng'), ('environment', 'environ'), ('highly', 'high'), ('difficult', 'difficult'), ('software', 'softwar'), ('agent', 'agent'), ('perform', 'perform'), ('well', 'well'), ('human', 'human'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('challenging', 'challenging'), ('environment', 'environment'), ('highly', 'highly'), ('difficult', 'difficult'), ('software', 'software'), ('agent', 'agent'), ('perform', 'perform'), ('well', 'well'), ('human', 'human'), ('.', '.')]
+
+
+
+============================ Sentence 49 =============================
+
+Turing Test The success of an intelligent behavior of a system can be measured with Turing Test. 
+
+
+>> Tokens are: 
+ ['Turing', 'Test', 'The', 'success', 'intelligent', 'behavior', 'system', 'measured', 'Turing', 'Test', '.']
+
+>> Bigrams are: 
+ [('Turing', 'Test'), ('Test', 'The'), ('The', 'success'), ('success', 'intelligent'), ('intelligent', 'behavior'), ('behavior', 'system'), ('system', 'measured'), ('measured', 'Turing'), ('Turing', 'Test'), ('Test', '.')]
+
+>> Trigrams are: 
+ [('Turing', 'Test', 'The'), ('Test', 'The', 'success'), ('The', 'success', 'intelligent'), ('success', 'intelligent', 'behavior'), ('intelligent', 'behavior', 'system'), ('behavior', 'system', 'measured'), ('system', 'measured', 'Turing'), ('measured', 'Turing', 'Test'), ('Turing', 'Test', '.')]
+
+>> POS Tags are: 
+ [('Turing', 'VBG'), ('Test', 'NNP'), ('The', 'DT'), ('success', 'NN'), ('intelligent', 'NN'), ('behavior', 'NN'), ('system', 'NN'), ('measured', 'VBD'), ('Turing', 'NNP'), ('Test', 'NNP'), ('.', '.')]
+
+ (S
+  Turing/VBG
+  (NP Test/NNP)
+  (NP The/DT success/NN intelligent/NN behavior/NN system/NN)
+  measured/VBD
+  (NP Turing/NNP Test/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Test', 'The success intelligent behavior system', 'Turing Test']
+
+>> Named Entities are: 
+ [('PERSON', 'Turing Test')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Turing', 'ture'), ('Test', 'test'), ('The', 'the'), ('success', 'success'), ('intelligent', 'intellig'), ('behavior', 'behavior'), ('system', 'system'), ('measured', 'measur'), ('Turing', 'ture'), ('Test', 'test'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Turing', 'ture'), ('Test', 'test'), ('The', 'the'), ('success', 'success'), ('intelligent', 'intellig'), ('behavior', 'behavior'), ('system', 'system'), ('measured', 'measur'), ('Turing', 'ture'), ('Test', 'test'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Turing', 'Turing'), ('Test', 'Test'), ('The', 'The'), ('success', 'success'), ('intelligent', 'intelligent'), ('behavior', 'behavior'), ('system', 'system'), ('measured', 'measured'), ('Turing', 'Turing'), ('Test', 'Test'), ('.', '.')]
+
+
+
+============================ Sentence 50 =============================
+
+Two persons and a machine to be evaluated participate in the test. 
+
+
+>> Tokens are: 
+ ['Two', 'persons', 'machine', 'evaluated', 'participate', 'test', '.']
+
+>> Bigrams are: 
+ [('Two', 'persons'), ('persons', 'machine'), ('machine', 'evaluated'), ('evaluated', 'participate'), ('participate', 'test'), ('test', '.')]
+
+>> Trigrams are: 
+ [('Two', 'persons', 'machine'), ('persons', 'machine', 'evaluated'), ('machine', 'evaluated', 'participate'), ('evaluated', 'participate', 'test'), ('participate', 'test', '.')]
+
+>> POS Tags are: 
+ [('Two', 'CD'), ('persons', 'NNS'), ('machine', 'NN'), ('evaluated', 'VBN'), ('participate', 'JJ'), ('test', 'NN'), ('.', '.')]
+
+ (S
+  Two/CD
+  (NP persons/NNS machine/NN)
+  evaluated/VBN
+  (NP participate/JJ test/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['persons machine', 'participate test']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Two', 'two'), ('persons', 'person'), ('machine', 'machin'), ('evaluated', 'evalu'), ('participate', 'particip'), ('test', 'test'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Two', 'two'), ('persons', 'person'), ('machine', 'machin'), ('evaluated', 'evalu'), ('participate', 'particip'), ('test', 'test'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Two', 'Two'), ('persons', 'person'), ('machine', 'machine'), ('evaluated', 'evaluated'), ('participate', 'participate'), ('test', 'test'), ('.', '.')]
+
+
+
+============================ Sentence 51 =============================
+
+Out of the two persons, one plays the role of the tester. 
+
+
+>> Tokens are: 
+ ['Out', 'two', 'persons', ',', 'one', 'plays', 'role', 'tester', '.']
+
+>> Bigrams are: 
+ [('Out', 'two'), ('two', 'persons'), ('persons', ','), (',', 'one'), ('one', 'plays'), ('plays', 'role'), ('role', 'tester'), ('tester', '.')]
+
+>> Trigrams are: 
+ [('Out', 'two', 'persons'), ('two', 'persons', ','), ('persons', ',', 'one'), (',', 'one', 'plays'), ('one', 'plays', 'role'), ('plays', 'role', 'tester'), ('role', 'tester', '.')]
+
+>> POS Tags are: 
+ [('Out', 'IN'), ('two', 'CD'), ('persons', 'NNS'), (',', ','), ('one', 'CD'), ('plays', 'VBZ'), ('role', 'NN'), ('tester', 'NN'), ('.', '.')]
+
+ (S
+  Out/IN
+  two/CD
+  (NP persons/NNS)
+  ,/,
+  one/CD
+  plays/VBZ
+  (NP role/NN tester/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['persons', 'role tester']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Out', 'out'), ('two', 'two'), ('persons', 'person'), (',', ','), ('one', 'one'), ('plays', 'play'), ('role', 'role'), ('tester', 'tester'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Out', 'out'), ('two', 'two'), ('persons', 'person'), (',', ','), ('one', 'one'), ('plays', 'play'), ('role', 'role'), ('tester', 'tester'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Out', 'Out'), ('two', 'two'), ('persons', 'person'), (',', ','), ('one', 'one'), ('plays', 'play'), ('role', 'role'), ('tester', 'tester'), ('.', '.')]
+
+
+
+============================ Sentence 52 =============================
+
+Each of them sits in different rooms. 
+
+
+>> Tokens are: 
+ ['Each', 'sits', 'different', 'rooms', '.']
+
+>> Bigrams are: 
+ [('Each', 'sits'), ('sits', 'different'), ('different', 'rooms'), ('rooms', '.')]
+
+>> Trigrams are: 
+ [('Each', 'sits', 'different'), ('sits', 'different', 'rooms'), ('different', 'rooms', '.')]
+
+>> POS Tags are: 
+ [('Each', 'DT'), ('sits', 'VBZ'), ('different', 'JJ'), ('rooms', 'NNS'), ('.', '.')]
+
+ (S Each/DT sits/VBZ (NP different/JJ rooms/NNS) ./.) 
+
+
+>> Noun Phrases are: 
+ ['different rooms']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Each', 'each'), ('sits', 'sit'), ('different', 'differ'), ('rooms', 'room'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Each', 'each'), ('sits', 'sit'), ('different', 'differ'), ('rooms', 'room'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Each', 'Each'), ('sits', 'sits'), ('different', 'different'), ('rooms', 'room'), ('.', '.')]
+
+
+
+============================ Sentence 53 =============================
+
+The tester is unaware of who is machine and who is a human. 
+
+
+>> Tokens are: 
+ ['The', 'tester', 'unaware', 'machine', 'human', '.']
+
+>> Bigrams are: 
+ [('The', 'tester'), ('tester', 'unaware'), ('unaware', 'machine'), ('machine', 'human'), ('human', '.')]
+
+>> Trigrams are: 
+ [('The', 'tester', 'unaware'), ('tester', 'unaware', 'machine'), ('unaware', 'machine', 'human'), ('machine', 'human', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('tester', 'NN'), ('unaware', 'JJ'), ('machine', 'NN'), ('human', 'NN'), ('.', '.')]
+
+ (S (NP The/DT tester/NN) (NP unaware/JJ machine/NN human/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['The tester', 'unaware machine human']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('tester', 'tester'), ('unaware', 'unawar'), ('machine', 'machin'), ('human', 'human'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('tester', 'tester'), ('unaware', 'unawar'), ('machine', 'machin'), ('human', 'human'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('tester', 'tester'), ('unaware', 'unaware'), ('machine', 'machine'), ('human', 'human'), ('.', '.')]
+
+
+
+============================ Sentence 54 =============================
+
+He interrogates the questions by typing and sending them to both intelligences, to which he receives typed responses. 
+
+
+>> Tokens are: 
+ ['He', 'interrogates', 'questions', 'typing', 'sending', 'intelligences', ',', 'receives', 'typed', 'responses', '.']
+
+>> Bigrams are: 
+ [('He', 'interrogates'), ('interrogates', 'questions'), ('questions', 'typing'), ('typing', 'sending'), ('sending', 'intelligences'), ('intelligences', ','), (',', 'receives'), ('receives', 'typed'), ('typed', 'responses'), ('responses', '.')]
+
+>> Trigrams are: 
+ [('He', 'interrogates', 'questions'), ('interrogates', 'questions', 'typing'), ('questions', 'typing', 'sending'), ('typing', 'sending', 'intelligences'), ('sending', 'intelligences', ','), ('intelligences', ',', 'receives'), (',', 'receives', 'typed'), ('receives', 'typed', 'responses'), ('typed', 'responses', '.')]
+
+>> POS Tags are: 
+ [('He', 'PRP'), ('interrogates', 'VBZ'), ('questions', 'NNS'), ('typing', 'VBG'), ('sending', 'VBG'), ('intelligences', 'NNS'), (',', ','), ('receives', 'NNS'), ('typed', 'VBD'), ('responses', 'NNS'), ('.', '.')]
+
+ (S
+  He/PRP
+  interrogates/VBZ
+  (NP questions/NNS)
+  typing/VBG
+  sending/VBG
+  (NP intelligences/NNS)
+  ,/,
+  (NP receives/NNS)
+  typed/VBD
+  (NP responses/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['questions', 'intelligences', 'receives', 'responses']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('He', 'he'), ('interrogates', 'interrog'), ('questions', 'question'), ('typing', 'type'), ('sending', 'send'), ('intelligences', 'intellig'), (',', ','), ('receives', 'receiv'), ('typed', 'type'), ('responses', 'respons'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('He', 'he'), ('interrogates', 'interrog'), ('questions', 'question'), ('typing', 'type'), ('sending', 'send'), ('intelligences', 'intellig'), (',', ','), ('receives', 'receiv'), ('typed', 'type'), ('responses', 'respons'), ('.', '.')]
+
+>> Lemmatization: 
+ [('He', 'He'), ('interrogates', 'interrogates'), ('questions', 'question'), ('typing', 'typing'), ('sending', 'sending'), ('intelligences', 'intelligence'), (',', ','), ('receives', 'receives'), ('typed', 'typed'), ('responses', 'response'), ('.', '.')]
+
+
+
+============================ Sentence 55 =============================
+
+This test aims at fooling the tester. 
+
+
+>> Tokens are: 
+ ['This', 'test', 'aims', 'fooling', 'tester', '.']
+
+>> Bigrams are: 
+ [('This', 'test'), ('test', 'aims'), ('aims', 'fooling'), ('fooling', 'tester'), ('tester', '.')]
+
+>> Trigrams are: 
+ [('This', 'test', 'aims'), ('test', 'aims', 'fooling'), ('aims', 'fooling', 'tester'), ('fooling', 'tester', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('test', 'NN'), ('aims', 'VBZ'), ('fooling', 'VBG'), ('tester', 'NN'), ('.', '.')]
+
+ (S (NP This/DT test/NN) aims/VBZ fooling/VBG (NP tester/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['This test', 'tester']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('test', 'test'), ('aims', 'aim'), ('fooling', 'fool'), ('tester', 'tester'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('test', 'test'), ('aims', 'aim'), ('fooling', 'fool'), ('tester', 'tester'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('test', 'test'), ('aims', 'aim'), ('fooling', 'fooling'), ('tester', 'tester'), ('.', '.')]
+
+
+
+============================ Sentence 56 =============================
+
+If the tester fails to determine machine’s response from the human response, then the machine is said to be intelligent. 
+
+
+>> Tokens are: 
+ ['If', 'tester', 'fails', 'determine', 'machine', '’', 'response', 'human', 'response', ',', 'machine', 'said', 'intelligent', '.']
+
+>> Bigrams are: 
+ [('If', 'tester'), ('tester', 'fails'), ('fails', 'determine'), ('determine', 'machine'), ('machine', '’'), ('’', 'response'), ('response', 'human'), ('human', 'response'), ('response', ','), (',', 'machine'), ('machine', 'said'), ('said', 'intelligent'), ('intelligent', '.')]
+
+>> Trigrams are: 
+ [('If', 'tester', 'fails'), ('tester', 'fails', 'determine'), ('fails', 'determine', 'machine'), ('determine', 'machine', '’'), ('machine', '’', 'response'), ('’', 'response', 'human'), ('response', 'human', 'response'), ('human', 'response', ','), ('response', ',', 'machine'), (',', 'machine', 'said'), ('machine', 'said', 'intelligent'), ('said', 'intelligent', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('tester', 'NN'), ('fails', 'VBZ'), ('determine', 'JJ'), ('machine', 'NN'), ('’', 'NNP'), ('response', 'NN'), ('human', 'JJ'), ('response', 'NN'), (',', ','), ('machine', 'NN'), ('said', 'VBD'), ('intelligent', 'NN'), ('.', '.')]
+
+ (S
+  If/IN
+  (NP tester/NN)
+  fails/VBZ
+  (NP determine/JJ machine/NN ’/NNP response/NN)
+  (NP human/JJ response/NN)
+  ,/,
+  (NP machine/NN)
+  said/VBD
+  (NP intelligent/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['tester', 'determine machine ’ response', 'human response', 'machine', 'intelligent']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('tester', 'tester'), ('fails', 'fail'), ('determine', 'determin'), ('machine', 'machin'), ('’', '’'), ('response', 'respons'), ('human', 'human'), ('response', 'respons'), (',', ','), ('machine', 'machin'), ('said', 'said'), ('intelligent', 'intellig'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('tester', 'tester'), ('fails', 'fail'), ('determine', 'determin'), ('machine', 'machin'), ('’', '’'), ('response', 'respons'), ('human', 'human'), ('response', 'respons'), (',', ','), ('machine', 'machin'), ('said', 'said'), ('intelligent', 'intellig'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('tester', 'tester'), ('fails', 'fails'), ('determine', 'determine'), ('machine', 'machine'), ('’', '’'), ('response', 'response'), ('human', 'human'), ('response', 'response'), (',', ','), ('machine', 'machine'), ('said', 'said'), ('intelligent', 'intelligent'), ('.', '.')]
+
+
+
+============================ Sentence 57 =============================
+
+Properties of Environment The environment has multifold properties − · Discrete / Continuous − If there are a limited number of distinct, clearly defined, states of the environment, the environment is discrete (For example, chess); otherwise it is continuous (For example, driving). 
+
+
+>> Tokens are: 
+ ['Properties', 'Environment', 'The', 'environment', 'multifold', 'properties', '−', '·', 'Discrete', '/', 'Continuous', '−', 'If', 'limited', 'number', 'distinct', ',', 'clearly', 'defined', ',', 'states', 'environment', ',', 'environment', 'discrete', '(', 'For', 'example', ',', 'chess', ')', ';', 'otherwise', 'continuous', '(', 'For', 'example', ',', 'driving', ')', '.']
+
+>> Bigrams are: 
+ [('Properties', 'Environment'), ('Environment', 'The'), ('The', 'environment'), ('environment', 'multifold'), ('multifold', 'properties'), ('properties', '−'), ('−', '·'), ('·', 'Discrete'), ('Discrete', '/'), ('/', 'Continuous'), ('Continuous', '−'), ('−', 'If'), ('If', 'limited'), ('limited', 'number'), ('number', 'distinct'), ('distinct', ','), (',', 'clearly'), ('clearly', 'defined'), ('defined', ','), (',', 'states'), ('states', 'environment'), ('environment', ','), (',', 'environment'), ('environment', 'discrete'), ('discrete', '('), ('(', 'For'), ('For', 'example'), ('example', ','), (',', 'chess'), ('chess', ')'), (')', ';'), (';', 'otherwise'), ('otherwise', 'continuous'), ('continuous', '('), ('(', 'For'), ('For', 'example'), ('example', ','), (',', 'driving'), ('driving', ')'), (')', '.')]
+
+>> Trigrams are: 
+ [('Properties', 'Environment', 'The'), ('Environment', 'The', 'environment'), ('The', 'environment', 'multifold'), ('environment', 'multifold', 'properties'), ('multifold', 'properties', '−'), ('properties', '−', '·'), ('−', '·', 'Discrete'), ('·', 'Discrete', '/'), ('Discrete', '/', 'Continuous'), ('/', 'Continuous', '−'), ('Continuous', '−', 'If'), ('−', 'If', 'limited'), ('If', 'limited', 'number'), ('limited', 'number', 'distinct'), ('number', 'distinct', ','), ('distinct', ',', 'clearly'), (',', 'clearly', 'defined'), ('clearly', 'defined', ','), ('defined', ',', 'states'), (',', 'states', 'environment'), ('states', 'environment', ','), ('environment', ',', 'environment'), (',', 'environment', 'discrete'), ('environment', 'discrete', '('), ('discrete', '(', 'For'), ('(', 'For', 'example'), ('For', 'example', ','), ('example', ',', 'chess'), (',', 'chess', ')'), ('chess', ')', ';'), (')', ';', 'otherwise'), (';', 'otherwise', 'continuous'), ('otherwise', 'continuous', '('), ('continuous', '(', 'For'), ('(', 'For', 'example'), ('For', 'example', ','), ('example', ',', 'driving'), (',', 'driving', ')'), ('driving', ')', '.')]
+
+>> POS Tags are: 
+ [('Properties', 'NNS'), ('Environment', 'VBP'), ('The', 'DT'), ('environment', 'NN'), ('multifold', 'NN'), ('properties', 'NNS'), ('−', 'VBP'), ('·', 'JJ'), ('Discrete', 'NNP'), ('/', 'NNP'), ('Continuous', 'NNP'), ('−', 'NNP'), ('If', 'IN'), ('limited', 'JJ'), ('number', 'NN'), ('distinct', 'NN'), (',', ','), ('clearly', 'RB'), ('defined', 'VBN'), (',', ','), ('states', 'NNS'), ('environment', 'NN'), (',', ','), ('environment', 'NN'), ('discrete', 'NN'), ('(', '('), ('For', 'IN'), ('example', 'NN'), (',', ','), ('chess', 'NN'), (')', ')'), (';', ':'), ('otherwise', 'RB'), ('continuous', 'JJ'), ('(', '('), ('For', 'IN'), ('example', 'NN'), (',', ','), ('driving', 'VBG'), (')', ')'), ('.', '.')]
+
+ (S
+  (NP Properties/NNS)
+  Environment/VBP
+  (NP The/DT environment/NN multifold/NN properties/NNS)
+  −/VBP
+  (NP ·/JJ Discrete/NNP //NNP Continuous/NNP −/NNP)
+  If/IN
+  (NP limited/JJ number/NN distinct/NN)
+  ,/,
+  clearly/RB
+  defined/VBN
+  ,/,
+  (NP states/NNS environment/NN)
+  ,/,
+  (NP environment/NN discrete/NN)
+  (/(
+  For/IN
+  (NP example/NN)
+  ,/,
+  (NP chess/NN)
+  )/)
+  ;/:
+  otherwise/RB
+  continuous/JJ
+  (/(
+  For/IN
+  (NP example/NN)
+  ,/,
+  driving/VBG
+  )/)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Properties', 'The environment multifold properties', '· Discrete / Continuous −', 'limited number distinct', 'states environment', 'environment discrete', 'example', 'chess', 'example']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Discrete')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Properties', 'properti'), ('Environment', 'environ'), ('The', 'the'), ('environment', 'environ'), ('multifold', 'multifold'), ('properties', 'properti'), ('−', '−'), ('·', '·'), ('Discrete', 'discret'), ('/', '/'), ('Continuous', 'continu'), ('−', '−'), ('If', 'if'), ('limited', 'limit'), ('number', 'number'), ('distinct', 'distinct'), (',', ','), ('clearly', 'clearli'), ('defined', 'defin'), (',', ','), ('states', 'state'), ('environment', 'environ'), (',', ','), ('environment', 'environ'), ('discrete', 'discret'), ('(', '('), ('For', 'for'), ('example', 'exampl'), (',', ','), ('chess', 'chess'), (')', ')'), (';', ';'), ('otherwise', 'otherwis'), ('continuous', 'continu'), ('(', '('), ('For', 'for'), ('example', 'exampl'), (',', ','), ('driving', 'drive'), (')', ')'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Properties', 'properti'), ('Environment', 'environ'), ('The', 'the'), ('environment', 'environ'), ('multifold', 'multifold'), ('properties', 'properti'), ('−', '−'), ('·', '·'), ('Discrete', 'discret'), ('/', '/'), ('Continuous', 'continu'), ('−', '−'), ('If', 'if'), ('limited', 'limit'), ('number', 'number'), ('distinct', 'distinct'), (',', ','), ('clearly', 'clear'), ('defined', 'defin'), (',', ','), ('states', 'state'), ('environment', 'environ'), (',', ','), ('environment', 'environ'), ('discrete', 'discret'), ('(', '('), ('For', 'for'), ('example', 'exampl'), (',', ','), ('chess', 'chess'), (')', ')'), (';', ';'), ('otherwise', 'otherwis'), ('continuous', 'continu'), ('(', '('), ('For', 'for'), ('example', 'exampl'), (',', ','), ('driving', 'drive'), (')', ')'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Properties', 'Properties'), ('Environment', 'Environment'), ('The', 'The'), ('environment', 'environment'), ('multifold', 'multifold'), ('properties', 'property'), ('−', '−'), ('·', '·'), ('Discrete', 'Discrete'), ('/', '/'), ('Continuous', 'Continuous'), ('−', '−'), ('If', 'If'), ('limited', 'limited'), ('number', 'number'), ('distinct', 'distinct'), (',', ','), ('clearly', 'clearly'), ('defined', 'defined'), (',', ','), ('states', 'state'), ('environment', 'environment'), (',', ','), ('environment', 'environment'), ('discrete', 'discrete'), ('(', '('), ('For', 'For'), ('example', 'example'), (',', ','), ('chess', 'chess'), (')', ')'), (';', ';'), ('otherwise', 'otherwise'), ('continuous', 'continuous'), ('(', '('), ('For', 'For'), ('example', 'example'), (',', ','), ('driving', 'driving'), (')', ')'), ('.', '.')]
+
+
+
+============================ Sentence 58 =============================
+
+· Observable / Partially Observable − If it is possible to determine the complete state of the environment at each time point from the percepts it is observable; otherwise it is only partially observable. 
+
+
+>> Tokens are: 
+ ['·', 'Observable', '/', 'Partially', 'Observable', '−', 'If', 'possible', 'determine', 'complete', 'state', 'environment', 'time', 'point', 'percepts', 'observable', ';', 'otherwise', 'partially', 'observable', '.']
+
+>> Bigrams are: 
+ [('·', 'Observable'), ('Observable', '/'), ('/', 'Partially'), ('Partially', 'Observable'), ('Observable', '−'), ('−', 'If'), ('If', 'possible'), ('possible', 'determine'), ('determine', 'complete'), ('complete', 'state'), ('state', 'environment'), ('environment', 'time'), ('time', 'point'), ('point', 'percepts'), ('percepts', 'observable'), ('observable', ';'), (';', 'otherwise'), ('otherwise', 'partially'), ('partially', 'observable'), ('observable', '.')]
+
+>> Trigrams are: 
+ [('·', 'Observable', '/'), ('Observable', '/', 'Partially'), ('/', 'Partially', 'Observable'), ('Partially', 'Observable', '−'), ('Observable', '−', 'If'), ('−', 'If', 'possible'), ('If', 'possible', 'determine'), ('possible', 'determine', 'complete'), ('determine', 'complete', 'state'), ('complete', 'state', 'environment'), ('state', 'environment', 'time'), ('environment', 'time', 'point'), ('time', 'point', 'percepts'), ('point', 'percepts', 'observable'), ('percepts', 'observable', ';'), ('observable', ';', 'otherwise'), (';', 'otherwise', 'partially'), ('otherwise', 'partially', 'observable'), ('partially', 'observable', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Observable', 'NNP'), ('/', 'NNP'), ('Partially', 'NNP'), ('Observable', 'NNP'), ('−', 'NN'), ('If', 'IN'), ('possible', 'JJ'), ('determine', 'NN'), ('complete', 'JJ'), ('state', 'NN'), ('environment', 'NN'), ('time', 'NN'), ('point', 'NN'), ('percepts', 'NNS'), ('observable', 'JJ'), (';', ':'), ('otherwise', 'RB'), ('partially', 'RB'), ('observable', 'JJ'), ('.', '.')]
+
+ (S
+  (NP ·/NN Observable/NNP //NNP Partially/NNP Observable/NNP −/NN)
+  If/IN
+  (NP possible/JJ determine/NN)
+  (NP
+    complete/JJ
+    state/NN
+    environment/NN
+    time/NN
+    point/NN
+    percepts/NNS)
+  observable/JJ
+  ;/:
+  otherwise/RB
+  partially/RB
+  observable/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Observable / Partially Observable −', 'possible determine', 'complete state environment time point percepts']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Observable'), ('PERSON', 'Partially Observable')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Observable', 'observ'), ('/', '/'), ('Partially', 'partial'), ('Observable', 'observ'), ('−', '−'), ('If', 'if'), ('possible', 'possibl'), ('determine', 'determin'), ('complete', 'complet'), ('state', 'state'), ('environment', 'environ'), ('time', 'time'), ('point', 'point'), ('percepts', 'percept'), ('observable', 'observ'), (';', ';'), ('otherwise', 'otherwis'), ('partially', 'partial'), ('observable', 'observ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Observable', 'observ'), ('/', '/'), ('Partially', 'partial'), ('Observable', 'observ'), ('−', '−'), ('If', 'if'), ('possible', 'possibl'), ('determine', 'determin'), ('complete', 'complet'), ('state', 'state'), ('environment', 'environ'), ('time', 'time'), ('point', 'point'), ('percepts', 'percept'), ('observable', 'observ'), (';', ';'), ('otherwise', 'otherwis'), ('partially', 'partial'), ('observable', 'observ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Observable', 'Observable'), ('/', '/'), ('Partially', 'Partially'), ('Observable', 'Observable'), ('−', '−'), ('If', 'If'), ('possible', 'possible'), ('determine', 'determine'), ('complete', 'complete'), ('state', 'state'), ('environment', 'environment'), ('time', 'time'), ('point', 'point'), ('percepts', 'percept'), ('observable', 'observable'), (';', ';'), ('otherwise', 'otherwise'), ('partially', 'partially'), ('observable', 'observable'), ('.', '.')]
+
+
+
+============================ Sentence 59 =============================
+
+· Static / Dynamic − If the environment does not change while an agent is acting, then it is static; otherwise it is dynamic. 
+
+
+>> Tokens are: 
+ ['·', 'Static', '/', 'Dynamic', '−', 'If', 'environment', 'change', 'agent', 'acting', ',', 'static', ';', 'otherwise', 'dynamic', '.']
+
+>> Bigrams are: 
+ [('·', 'Static'), ('Static', '/'), ('/', 'Dynamic'), ('Dynamic', '−'), ('−', 'If'), ('If', 'environment'), ('environment', 'change'), ('change', 'agent'), ('agent', 'acting'), ('acting', ','), (',', 'static'), ('static', ';'), (';', 'otherwise'), ('otherwise', 'dynamic'), ('dynamic', '.')]
+
+>> Trigrams are: 
+ [('·', 'Static', '/'), ('Static', '/', 'Dynamic'), ('/', 'Dynamic', '−'), ('Dynamic', '−', 'If'), ('−', 'If', 'environment'), ('If', 'environment', 'change'), ('environment', 'change', 'agent'), ('change', 'agent', 'acting'), ('agent', 'acting', ','), ('acting', ',', 'static'), (',', 'static', ';'), ('static', ';', 'otherwise'), (';', 'otherwise', 'dynamic'), ('otherwise', 'dynamic', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Static', 'NNP'), ('/', 'NNP'), ('Dynamic', 'NNP'), ('−', 'NNP'), ('If', 'IN'), ('environment', 'NN'), ('change', 'NN'), ('agent', 'NN'), ('acting', 'NN'), (',', ','), ('static', 'JJ'), (';', ':'), ('otherwise', 'RB'), ('dynamic', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Static/NNP //NNP Dynamic/NNP −/NNP)
+  If/IN
+  (NP environment/NN change/NN agent/NN acting/NN)
+  ,/,
+  static/JJ
+  ;/:
+  otherwise/RB
+  (NP dynamic/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Static / Dynamic −', 'environment change agent acting', 'dynamic']
+
+>> Named Entities are: 
+ [('PERSON', 'Static')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Static', 'static'), ('/', '/'), ('Dynamic', 'dynam'), ('−', '−'), ('If', 'if'), ('environment', 'environ'), ('change', 'chang'), ('agent', 'agent'), ('acting', 'act'), (',', ','), ('static', 'static'), (';', ';'), ('otherwise', 'otherwis'), ('dynamic', 'dynam'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Static', 'static'), ('/', '/'), ('Dynamic', 'dynam'), ('−', '−'), ('If', 'if'), ('environment', 'environ'), ('change', 'chang'), ('agent', 'agent'), ('acting', 'act'), (',', ','), ('static', 'static'), (';', ';'), ('otherwise', 'otherwis'), ('dynamic', 'dynam'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Static', 'Static'), ('/', '/'), ('Dynamic', 'Dynamic'), ('−', '−'), ('If', 'If'), ('environment', 'environment'), ('change', 'change'), ('agent', 'agent'), ('acting', 'acting'), (',', ','), ('static', 'static'), (';', ';'), ('otherwise', 'otherwise'), ('dynamic', 'dynamic'), ('.', '.')]
+
+
+
+============================ Sentence 60 =============================
+
+· Single agent / Multiple agents − The environment may contain other agents which may be of the same or different kind as that of the agent. 
+
+
+>> Tokens are: 
+ ['·', 'Single', 'agent', '/', 'Multiple', 'agents', '−', 'The', 'environment', 'may', 'contain', 'agents', 'may', 'different', 'kind', 'agent', '.']
+
+>> Bigrams are: 
+ [('·', 'Single'), ('Single', 'agent'), ('agent', '/'), ('/', 'Multiple'), ('Multiple', 'agents'), ('agents', '−'), ('−', 'The'), ('The', 'environment'), ('environment', 'may'), ('may', 'contain'), ('contain', 'agents'), ('agents', 'may'), ('may', 'different'), ('different', 'kind'), ('kind', 'agent'), ('agent', '.')]
+
+>> Trigrams are: 
+ [('·', 'Single', 'agent'), ('Single', 'agent', '/'), ('agent', '/', 'Multiple'), ('/', 'Multiple', 'agents'), ('Multiple', 'agents', '−'), ('agents', '−', 'The'), ('−', 'The', 'environment'), ('The', 'environment', 'may'), ('environment', 'may', 'contain'), ('may', 'contain', 'agents'), ('contain', 'agents', 'may'), ('agents', 'may', 'different'), ('may', 'different', 'kind'), ('different', 'kind', 'agent'), ('kind', 'agent', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Single', 'NNP'), ('agent', 'NN'), ('/', 'NNP'), ('Multiple', 'NNP'), ('agents', 'NNS'), ('−', 'VBP'), ('The', 'DT'), ('environment', 'NN'), ('may', 'MD'), ('contain', 'VB'), ('agents', 'NNS'), ('may', 'MD'), ('different', 'JJ'), ('kind', 'NN'), ('agent', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/NN Single/NNP agent/NN //NNP Multiple/NNP agents/NNS)
+  −/VBP
+  (NP The/DT environment/NN)
+  may/MD
+  contain/VB
+  (NP agents/NNS)
+  may/MD
+  (NP different/JJ kind/NN agent/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Single agent / Multiple agents', 'The environment', 'agents', 'different kind agent']
+
+>> Named Entities are: 
+ [('PERSON', 'Single')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Single', 'singl'), ('agent', 'agent'), ('/', '/'), ('Multiple', 'multipl'), ('agents', 'agent'), ('−', '−'), ('The', 'the'), ('environment', 'environ'), ('may', 'may'), ('contain', 'contain'), ('agents', 'agent'), ('may', 'may'), ('different', 'differ'), ('kind', 'kind'), ('agent', 'agent'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Single', 'singl'), ('agent', 'agent'), ('/', '/'), ('Multiple', 'multipl'), ('agents', 'agent'), ('−', '−'), ('The', 'the'), ('environment', 'environ'), ('may', 'may'), ('contain', 'contain'), ('agents', 'agent'), ('may', 'may'), ('different', 'differ'), ('kind', 'kind'), ('agent', 'agent'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Single', 'Single'), ('agent', 'agent'), ('/', '/'), ('Multiple', 'Multiple'), ('agents', 'agent'), ('−', '−'), ('The', 'The'), ('environment', 'environment'), ('may', 'may'), ('contain', 'contain'), ('agents', 'agent'), ('may', 'may'), ('different', 'different'), ('kind', 'kind'), ('agent', 'agent'), ('.', '.')]
+
+
+
+============================ Sentence 61 =============================
+
+· Accessible / Inaccessible − If the agent’s sensory apparatus can have access to the complete state of the environment, then the environment is accessible to that agent. 
+
+
+>> Tokens are: 
+ ['·', 'Accessible', '/', 'Inaccessible', '−', 'If', 'agent', '’', 'sensory', 'apparatus', 'access', 'complete', 'state', 'environment', ',', 'environment', 'accessible', 'agent', '.']
+
+>> Bigrams are: 
+ [('·', 'Accessible'), ('Accessible', '/'), ('/', 'Inaccessible'), ('Inaccessible', '−'), ('−', 'If'), ('If', 'agent'), ('agent', '’'), ('’', 'sensory'), ('sensory', 'apparatus'), ('apparatus', 'access'), ('access', 'complete'), ('complete', 'state'), ('state', 'environment'), ('environment', ','), (',', 'environment'), ('environment', 'accessible'), ('accessible', 'agent'), ('agent', '.')]
+
+>> Trigrams are: 
+ [('·', 'Accessible', '/'), ('Accessible', '/', 'Inaccessible'), ('/', 'Inaccessible', '−'), ('Inaccessible', '−', 'If'), ('−', 'If', 'agent'), ('If', 'agent', '’'), ('agent', '’', 'sensory'), ('’', 'sensory', 'apparatus'), ('sensory', 'apparatus', 'access'), ('apparatus', 'access', 'complete'), ('access', 'complete', 'state'), ('complete', 'state', 'environment'), ('state', 'environment', ','), ('environment', ',', 'environment'), (',', 'environment', 'accessible'), ('environment', 'accessible', 'agent'), ('accessible', 'agent', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Accessible', 'NNP'), ('/', 'NNP'), ('Inaccessible', 'NNP'), ('−', 'NN'), ('If', 'IN'), ('agent', 'JJ'), ('’', 'NNP'), ('sensory', 'NN'), ('apparatus', 'NN'), ('access', 'NN'), ('complete', 'JJ'), ('state', 'NN'), ('environment', 'NN'), (',', ','), ('environment', 'NN'), ('accessible', 'JJ'), ('agent', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/NN Accessible/NNP //NNP Inaccessible/NNP −/NN)
+  If/IN
+  (NP agent/JJ ’/NNP sensory/NN apparatus/NN access/NN)
+  (NP complete/JJ state/NN environment/NN)
+  ,/,
+  (NP environment/NN)
+  (NP accessible/JJ agent/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Accessible / Inaccessible −', 'agent ’ sensory apparatus access', 'complete state environment', 'environment', 'accessible agent']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Accessible')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Accessible', 'access'), ('/', '/'), ('Inaccessible', 'inaccess'), ('−', '−'), ('If', 'if'), ('agent', 'agent'), ('’', '’'), ('sensory', 'sensori'), ('apparatus', 'apparatu'), ('access', 'access'), ('complete', 'complet'), ('state', 'state'), ('environment', 'environ'), (',', ','), ('environment', 'environ'), ('accessible', 'access'), ('agent', 'agent'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Accessible', 'access'), ('/', '/'), ('Inaccessible', 'inaccess'), ('−', '−'), ('If', 'if'), ('agent', 'agent'), ('’', '’'), ('sensory', 'sensori'), ('apparatus', 'apparatus'), ('access', 'access'), ('complete', 'complet'), ('state', 'state'), ('environment', 'environ'), (',', ','), ('environment', 'environ'), ('accessible', 'access'), ('agent', 'agent'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Accessible', 'Accessible'), ('/', '/'), ('Inaccessible', 'Inaccessible'), ('−', '−'), ('If', 'If'), ('agent', 'agent'), ('’', '’'), ('sensory', 'sensory'), ('apparatus', 'apparatus'), ('access', 'access'), ('complete', 'complete'), ('state', 'state'), ('environment', 'environment'), (',', ','), ('environment', 'environment'), ('accessible', 'accessible'), ('agent', 'agent'), ('.', '.')]
+
+
+
+============================ Sentence 62 =============================
+
+· Deterministic / Non-deterministic − If the next state of the environment is completely determined by the current state and the actions of the agent, then the environment is deterministic; otherwise it is non-deterministic. 
+
+
+>> Tokens are: 
+ ['·', 'Deterministic', '/', 'Non-deterministic', '−', 'If', 'next', 'state', 'environment', 'completely', 'determined', 'current', 'state', 'actions', 'agent', ',', 'environment', 'deterministic', ';', 'otherwise', 'non-deterministic', '.']
+
+>> Bigrams are: 
+ [('·', 'Deterministic'), ('Deterministic', '/'), ('/', 'Non-deterministic'), ('Non-deterministic', '−'), ('−', 'If'), ('If', 'next'), ('next', 'state'), ('state', 'environment'), ('environment', 'completely'), ('completely', 'determined'), ('determined', 'current'), ('current', 'state'), ('state', 'actions'), ('actions', 'agent'), ('agent', ','), (',', 'environment'), ('environment', 'deterministic'), ('deterministic', ';'), (';', 'otherwise'), ('otherwise', 'non-deterministic'), ('non-deterministic', '.')]
+
+>> Trigrams are: 
+ [('·', 'Deterministic', '/'), ('Deterministic', '/', 'Non-deterministic'), ('/', 'Non-deterministic', '−'), ('Non-deterministic', '−', 'If'), ('−', 'If', 'next'), ('If', 'next', 'state'), ('next', 'state', 'environment'), ('state', 'environment', 'completely'), ('environment', 'completely', 'determined'), ('completely', 'determined', 'current'), ('determined', 'current', 'state'), ('current', 'state', 'actions'), ('state', 'actions', 'agent'), ('actions', 'agent', ','), ('agent', ',', 'environment'), (',', 'environment', 'deterministic'), ('environment', 'deterministic', ';'), ('deterministic', ';', 'otherwise'), (';', 'otherwise', 'non-deterministic'), ('otherwise', 'non-deterministic', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Deterministic', 'NNP'), ('/', 'NNP'), ('Non-deterministic', 'JJ'), ('−', 'NN'), ('If', 'IN'), ('next', 'JJ'), ('state', 'NN'), ('environment', 'NN'), ('completely', 'RB'), ('determined', 'VBD'), ('current', 'JJ'), ('state', 'NN'), ('actions', 'NNS'), ('agent', 'NN'), (',', ','), ('environment', 'NN'), ('deterministic', 'NN'), (';', ':'), ('otherwise', 'RB'), ('non-deterministic', 'JJ'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Deterministic/NNP //NNP)
+  (NP Non-deterministic/JJ −/NN)
+  If/IN
+  (NP next/JJ state/NN environment/NN)
+  completely/RB
+  determined/VBD
+  (NP current/JJ state/NN actions/NNS agent/NN)
+  ,/,
+  (NP environment/NN deterministic/NN)
+  ;/:
+  otherwise/RB
+  non-deterministic/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Deterministic /', 'Non-deterministic −', 'next state environment', 'current state actions agent', 'environment deterministic']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Deterministic')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Deterministic', 'determinist'), ('/', '/'), ('Non-deterministic', 'non-determinist'), ('−', '−'), ('If', 'if'), ('next', 'next'), ('state', 'state'), ('environment', 'environ'), ('completely', 'complet'), ('determined', 'determin'), ('current', 'current'), ('state', 'state'), ('actions', 'action'), ('agent', 'agent'), (',', ','), ('environment', 'environ'), ('deterministic', 'determinist'), (';', ';'), ('otherwise', 'otherwis'), ('non-deterministic', 'non-determinist'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Deterministic', 'determinist'), ('/', '/'), ('Non-deterministic', 'non-determinist'), ('−', '−'), ('If', 'if'), ('next', 'next'), ('state', 'state'), ('environment', 'environ'), ('completely', 'complet'), ('determined', 'determin'), ('current', 'current'), ('state', 'state'), ('actions', 'action'), ('agent', 'agent'), (',', ','), ('environment', 'environ'), ('deterministic', 'determinist'), (';', ';'), ('otherwise', 'otherwis'), ('non-deterministic', 'non-determinist'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Deterministic', 'Deterministic'), ('/', '/'), ('Non-deterministic', 'Non-deterministic'), ('−', '−'), ('If', 'If'), ('next', 'next'), ('state', 'state'), ('environment', 'environment'), ('completely', 'completely'), ('determined', 'determined'), ('current', 'current'), ('state', 'state'), ('actions', 'action'), ('agent', 'agent'), (',', ','), ('environment', 'environment'), ('deterministic', 'deterministic'), (';', ';'), ('otherwise', 'otherwise'), ('non-deterministic', 'non-deterministic'), ('.', '.')]
+
+
+
+============================ Sentence 63 =============================
+
+· Episodic / Non-episodic − In an episodic environment, each episode consists of the agent perceiving and then acting. 
+
+
+>> Tokens are: 
+ ['·', 'Episodic', '/', 'Non-episodic', '−', 'In', 'episodic', 'environment', ',', 'episode', 'consists', 'agent', 'perceiving', 'acting', '.']
+
+>> Bigrams are: 
+ [('·', 'Episodic'), ('Episodic', '/'), ('/', 'Non-episodic'), ('Non-episodic', '−'), ('−', 'In'), ('In', 'episodic'), ('episodic', 'environment'), ('environment', ','), (',', 'episode'), ('episode', 'consists'), ('consists', 'agent'), ('agent', 'perceiving'), ('perceiving', 'acting'), ('acting', '.')]
+
+>> Trigrams are: 
+ [('·', 'Episodic', '/'), ('Episodic', '/', 'Non-episodic'), ('/', 'Non-episodic', '−'), ('Non-episodic', '−', 'In'), ('−', 'In', 'episodic'), ('In', 'episodic', 'environment'), ('episodic', 'environment', ','), ('environment', ',', 'episode'), (',', 'episode', 'consists'), ('episode', 'consists', 'agent'), ('consists', 'agent', 'perceiving'), ('agent', 'perceiving', 'acting'), ('perceiving', 'acting', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Episodic', 'NNP'), ('/', 'NNP'), ('Non-episodic', 'NNP'), ('−', 'NNP'), ('In', 'IN'), ('episodic', 'JJ'), ('environment', 'NN'), (',', ','), ('episode', 'NN'), ('consists', 'VBZ'), ('agent', 'JJ'), ('perceiving', 'VBG'), ('acting', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Episodic/NNP //NNP Non-episodic/NNP −/NNP)
+  In/IN
+  (NP episodic/JJ environment/NN)
+  ,/,
+  (NP episode/NN)
+  consists/VBZ
+  agent/JJ
+  perceiving/VBG
+  (NP acting/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Episodic / Non-episodic −', 'episodic environment', 'episode', 'acting']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Episodic', 'episod'), ('/', '/'), ('Non-episodic', 'non-episod'), ('−', '−'), ('In', 'in'), ('episodic', 'episod'), ('environment', 'environ'), (',', ','), ('episode', 'episod'), ('consists', 'consist'), ('agent', 'agent'), ('perceiving', 'perceiv'), ('acting', 'act'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Episodic', 'episod'), ('/', '/'), ('Non-episodic', 'non-episod'), ('−', '−'), ('In', 'in'), ('episodic', 'episod'), ('environment', 'environ'), (',', ','), ('episode', 'episod'), ('consists', 'consist'), ('agent', 'agent'), ('perceiving', 'perceiv'), ('acting', 'act'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Episodic', 'Episodic'), ('/', '/'), ('Non-episodic', 'Non-episodic'), ('−', '−'), ('In', 'In'), ('episodic', 'episodic'), ('environment', 'environment'), (',', ','), ('episode', 'episode'), ('consists', 'consists'), ('agent', 'agent'), ('perceiving', 'perceiving'), ('acting', 'acting'), ('.', '.')]
+
+
+
+============================ Sentence 64 =============================
+
+The quality of its action depends just on the episode itself. 
+
+
+>> Tokens are: 
+ ['The', 'quality', 'action', 'depends', 'episode', '.']
+
+>> Bigrams are: 
+ [('The', 'quality'), ('quality', 'action'), ('action', 'depends'), ('depends', 'episode'), ('episode', '.')]
+
+>> Trigrams are: 
+ [('The', 'quality', 'action'), ('quality', 'action', 'depends'), ('action', 'depends', 'episode'), ('depends', 'episode', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('quality', 'NN'), ('action', 'NN'), ('depends', 'VBZ'), ('episode', 'NN'), ('.', '.')]
+
+ (S (NP The/DT quality/NN action/NN) depends/VBZ (NP episode/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['The quality action', 'episode']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('quality', 'qualiti'), ('action', 'action'), ('depends', 'depend'), ('episode', 'episod'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('quality', 'qualiti'), ('action', 'action'), ('depends', 'depend'), ('episode', 'episod'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('quality', 'quality'), ('action', 'action'), ('depends', 'depends'), ('episode', 'episode'), ('.', '.')]
+
+
+
+============================ Sentence 65 =============================
+
+Subsequent episodes do not depend on the actions in the previous episodes. 
+
+
+>> Tokens are: 
+ ['Subsequent', 'episodes', 'depend', 'actions', 'previous', 'episodes', '.']
+
+>> Bigrams are: 
+ [('Subsequent', 'episodes'), ('episodes', 'depend'), ('depend', 'actions'), ('actions', 'previous'), ('previous', 'episodes'), ('episodes', '.')]
+
+>> Trigrams are: 
+ [('Subsequent', 'episodes', 'depend'), ('episodes', 'depend', 'actions'), ('depend', 'actions', 'previous'), ('actions', 'previous', 'episodes'), ('previous', 'episodes', '.')]
+
+>> POS Tags are: 
+ [('Subsequent', 'JJ'), ('episodes', 'NNS'), ('depend', 'VBP'), ('actions', 'NNS'), ('previous', 'JJ'), ('episodes', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Subsequent/JJ episodes/NNS)
+  depend/VBP
+  (NP actions/NNS)
+  (NP previous/JJ episodes/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Subsequent episodes', 'actions', 'previous episodes']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Subsequent', 'subsequ'), ('episodes', 'episod'), ('depend', 'depend'), ('actions', 'action'), ('previous', 'previou'), ('episodes', 'episod'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Subsequent', 'subsequ'), ('episodes', 'episod'), ('depend', 'depend'), ('actions', 'action'), ('previous', 'previous'), ('episodes', 'episod'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Subsequent', 'Subsequent'), ('episodes', 'episode'), ('depend', 'depend'), ('actions', 'action'), ('previous', 'previous'), ('episodes', 'episode'), ('.', '.')]
+
+
+
+============================ Sentence 66 =============================
+
+Episodic environments are much simpler because the agent does not need to think ahead. 
+
+
+>> Tokens are: 
+ ['Episodic', 'environments', 'much', 'simpler', 'agent', 'need', 'think', 'ahead', '.']
+
+>> Bigrams are: 
+ [('Episodic', 'environments'), ('environments', 'much'), ('much', 'simpler'), ('simpler', 'agent'), ('agent', 'need'), ('need', 'think'), ('think', 'ahead'), ('ahead', '.')]
+
+>> Trigrams are: 
+ [('Episodic', 'environments', 'much'), ('environments', 'much', 'simpler'), ('much', 'simpler', 'agent'), ('simpler', 'agent', 'need'), ('agent', 'need', 'think'), ('need', 'think', 'ahead'), ('think', 'ahead', '.')]
+
+>> POS Tags are: 
+ [('Episodic', 'JJ'), ('environments', 'NNS'), ('much', 'JJ'), ('simpler', 'NN'), ('agent', 'NN'), ('need', 'MD'), ('think', 'VB'), ('ahead', 'RB'), ('.', '.')]
+
+ (S
+  (NP Episodic/JJ environments/NNS)
+  (NP much/JJ simpler/NN agent/NN)
+  need/MD
+  think/VB
+  ahead/RB
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Episodic environments', 'much simpler agent']
+
+>> Named Entities are: 
+ [('GPE', 'Episodic')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Episodic', 'episod'), ('environments', 'environ'), ('much', 'much'), ('simpler', 'simpler'), ('agent', 'agent'), ('need', 'need'), ('think', 'think'), ('ahead', 'ahead'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Episodic', 'episod'), ('environments', 'environ'), ('much', 'much'), ('simpler', 'simpler'), ('agent', 'agent'), ('need', 'need'), ('think', 'think'), ('ahead', 'ahead'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Episodic', 'Episodic'), ('environments', 'environment'), ('much', 'much'), ('simpler', 'simpler'), ('agent', 'agent'), ('need', 'need'), ('think', 'think'), ('ahead', 'ahead'), ('.', '.')]
+

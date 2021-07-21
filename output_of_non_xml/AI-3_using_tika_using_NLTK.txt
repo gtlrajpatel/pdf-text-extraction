@@ -1,0 +1,2465 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-3 While studying artificially intelligence, you need to know what intelligence is. 
+
+
+>> Tokens are: 
+ ['AI-3', 'While', 'studying', 'artificially', 'intelligence', ',', 'need', 'know', 'intelligence', '.']
+
+>> Bigrams are: 
+ [('AI-3', 'While'), ('While', 'studying'), ('studying', 'artificially'), ('artificially', 'intelligence'), ('intelligence', ','), (',', 'need'), ('need', 'know'), ('know', 'intelligence'), ('intelligence', '.')]
+
+>> Trigrams are: 
+ [('AI-3', 'While', 'studying'), ('While', 'studying', 'artificially'), ('studying', 'artificially', 'intelligence'), ('artificially', 'intelligence', ','), ('intelligence', ',', 'need'), (',', 'need', 'know'), ('need', 'know', 'intelligence'), ('know', 'intelligence', '.')]
+
+>> POS Tags are: 
+ [('AI-3', 'NNP'), ('While', 'IN'), ('studying', 'VBG'), ('artificially', 'RB'), ('intelligence', 'NN'), (',', ','), ('need', 'VBP'), ('know', 'JJ'), ('intelligence', 'NN'), ('.', '.')]
+
+ (S
+  (NP AI-3/NNP)
+  While/IN
+  studying/VBG
+  artificially/RB
+  (NP intelligence/NN)
+  ,/,
+  need/VBP
+  (NP know/JJ intelligence/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-3', 'intelligence', 'know intelligence']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-3', 'ai-3'), ('While', 'while'), ('studying', 'studi'), ('artificially', 'artifici'), ('intelligence', 'intellig'), (',', ','), ('need', 'need'), ('know', 'know'), ('intelligence', 'intellig'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-3', 'ai-3'), ('While', 'while'), ('studying', 'studi'), ('artificially', 'artifici'), ('intelligence', 'intellig'), (',', ','), ('need', 'need'), ('know', 'know'), ('intelligence', 'intellig'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-3', 'AI-3'), ('While', 'While'), ('studying', 'studying'), ('artificially', 'artificially'), ('intelligence', 'intelligence'), (',', ','), ('need', 'need'), ('know', 'know'), ('intelligence', 'intelligence'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+This chapter covers Idea of intelligence, types, and components of intelligence. 
+
+
+>> Tokens are: 
+ ['This', 'chapter', 'covers', 'Idea', 'intelligence', ',', 'types', ',', 'components', 'intelligence', '.']
+
+>> Bigrams are: 
+ [('This', 'chapter'), ('chapter', 'covers'), ('covers', 'Idea'), ('Idea', 'intelligence'), ('intelligence', ','), (',', 'types'), ('types', ','), (',', 'components'), ('components', 'intelligence'), ('intelligence', '.')]
+
+>> Trigrams are: 
+ [('This', 'chapter', 'covers'), ('chapter', 'covers', 'Idea'), ('covers', 'Idea', 'intelligence'), ('Idea', 'intelligence', ','), ('intelligence', ',', 'types'), (',', 'types', ','), ('types', ',', 'components'), (',', 'components', 'intelligence'), ('components', 'intelligence', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('chapter', 'NN'), ('covers', 'VBZ'), ('Idea', 'NNP'), ('intelligence', 'NN'), (',', ','), ('types', 'NNS'), (',', ','), ('components', 'NNS'), ('intelligence', 'NN'), ('.', '.')]
+
+ (S
+  (NP This/DT chapter/NN)
+  covers/VBZ
+  (NP Idea/NNP intelligence/NN)
+  ,/,
+  (NP types/NNS)
+  ,/,
+  (NP components/NNS intelligence/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['This chapter', 'Idea intelligence', 'types', 'components intelligence']
+
+>> Named Entities are: 
+ [('PERSON', 'Idea')] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('chapter', 'chapter'), ('covers', 'cover'), ('Idea', 'idea'), ('intelligence', 'intellig'), (',', ','), ('types', 'type'), (',', ','), ('components', 'compon'), ('intelligence', 'intellig'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('chapter', 'chapter'), ('covers', 'cover'), ('Idea', 'idea'), ('intelligence', 'intellig'), (',', ','), ('types', 'type'), (',', ','), ('components', 'compon'), ('intelligence', 'intellig'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('chapter', 'chapter'), ('covers', 'cover'), ('Idea', 'Idea'), ('intelligence', 'intelligence'), (',', ','), ('types', 'type'), (',', ','), ('components', 'component'), ('intelligence', 'intelligence'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+What is Intelligence? 
+
+
+>> Tokens are: 
+ ['What', 'Intelligence', '?']
+
+>> Bigrams are: 
+ [('What', 'Intelligence'), ('Intelligence', '?')]
+
+>> Trigrams are: 
+ [('What', 'Intelligence', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Intelligence', 'NN'), ('?', '.')]
+
+ (S What/WP (NP Intelligence/NN) ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Intelligence']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Intelligence', 'intellig'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Intelligence', 'intellig'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Intelligence', 'Intelligence'), ('?', '?')]
+
+
+
+============================ Sentence 4 =============================
+
+The ability of a system to calculate, reason, perceive relationships and analogies, learn from experience, store and retrieve information from memory, solve problems, comprehend complex ideas, use natural language fluently, classify, generalize, and adapt new situations. 
+
+
+>> Tokens are: 
+ ['The', 'ability', 'system', 'calculate', ',', 'reason', ',', 'perceive', 'relationships', 'analogies', ',', 'learn', 'experience', ',', 'store', 'retrieve', 'information', 'memory', ',', 'solve', 'problems', ',', 'comprehend', 'complex', 'ideas', ',', 'use', 'natural', 'language', 'fluently', ',', 'classify', ',', 'generalize', ',', 'adapt', 'new', 'situations', '.']
+
+>> Bigrams are: 
+ [('The', 'ability'), ('ability', 'system'), ('system', 'calculate'), ('calculate', ','), (',', 'reason'), ('reason', ','), (',', 'perceive'), ('perceive', 'relationships'), ('relationships', 'analogies'), ('analogies', ','), (',', 'learn'), ('learn', 'experience'), ('experience', ','), (',', 'store'), ('store', 'retrieve'), ('retrieve', 'information'), ('information', 'memory'), ('memory', ','), (',', 'solve'), ('solve', 'problems'), ('problems', ','), (',', 'comprehend'), ('comprehend', 'complex'), ('complex', 'ideas'), ('ideas', ','), (',', 'use'), ('use', 'natural'), ('natural', 'language'), ('language', 'fluently'), ('fluently', ','), (',', 'classify'), ('classify', ','), (',', 'generalize'), ('generalize', ','), (',', 'adapt'), ('adapt', 'new'), ('new', 'situations'), ('situations', '.')]
+
+>> Trigrams are: 
+ [('The', 'ability', 'system'), ('ability', 'system', 'calculate'), ('system', 'calculate', ','), ('calculate', ',', 'reason'), (',', 'reason', ','), ('reason', ',', 'perceive'), (',', 'perceive', 'relationships'), ('perceive', 'relationships', 'analogies'), ('relationships', 'analogies', ','), ('analogies', ',', 'learn'), (',', 'learn', 'experience'), ('learn', 'experience', ','), ('experience', ',', 'store'), (',', 'store', 'retrieve'), ('store', 'retrieve', 'information'), ('retrieve', 'information', 'memory'), ('information', 'memory', ','), ('memory', ',', 'solve'), (',', 'solve', 'problems'), ('solve', 'problems', ','), ('problems', ',', 'comprehend'), (',', 'comprehend', 'complex'), ('comprehend', 'complex', 'ideas'), ('complex', 'ideas', ','), ('ideas', ',', 'use'), (',', 'use', 'natural'), ('use', 'natural', 'language'), ('natural', 'language', 'fluently'), ('language', 'fluently', ','), ('fluently', ',', 'classify'), (',', 'classify', ','), ('classify', ',', 'generalize'), (',', 'generalize', ','), ('generalize', ',', 'adapt'), (',', 'adapt', 'new'), ('adapt', 'new', 'situations'), ('new', 'situations', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('ability', 'NN'), ('system', 'NN'), ('calculate', 'NN'), (',', ','), ('reason', 'NN'), (',', ','), ('perceive', 'JJ'), ('relationships', 'NNS'), ('analogies', 'NNS'), (',', ','), ('learn', 'JJ'), ('experience', 'NN'), (',', ','), ('store', 'NN'), ('retrieve', 'JJ'), ('information', 'NN'), ('memory', 'NN'), (',', ','), ('solve', 'VB'), ('problems', 'NNS'), (',', ','), ('comprehend', 'VBP'), ('complex', 'JJ'), ('ideas', 'NNS'), (',', ','), ('use', 'VBP'), ('natural', 'JJ'), ('language', 'NN'), ('fluently', 'RB'), (',', ','), ('classify', 'VB'), (',', ','), ('generalize', 'VB'), (',', ','), ('adapt', 'VB'), ('new', 'JJ'), ('situations', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT ability/NN system/NN calculate/NN)
+  ,/,
+  (NP reason/NN)
+  ,/,
+  (NP perceive/JJ relationships/NNS analogies/NNS)
+  ,/,
+  (NP learn/JJ experience/NN)
+  ,/,
+  (NP store/NN)
+  (NP retrieve/JJ information/NN memory/NN)
+  ,/,
+  solve/VB
+  (NP problems/NNS)
+  ,/,
+  comprehend/VBP
+  (NP complex/JJ ideas/NNS)
+  ,/,
+  use/VBP
+  (NP natural/JJ language/NN)
+  fluently/RB
+  ,/,
+  classify/VB
+  ,/,
+  generalize/VB
+  ,/,
+  adapt/VB
+  (NP new/JJ situations/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The ability system calculate', 'reason', 'perceive relationships analogies', 'learn experience', 'store', 'retrieve information memory', 'problems', 'complex ideas', 'natural language', 'new situations']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('ability', 'abil'), ('system', 'system'), ('calculate', 'calcul'), (',', ','), ('reason', 'reason'), (',', ','), ('perceive', 'perceiv'), ('relationships', 'relationship'), ('analogies', 'analog'), (',', ','), ('learn', 'learn'), ('experience', 'experi'), (',', ','), ('store', 'store'), ('retrieve', 'retriev'), ('information', 'inform'), ('memory', 'memori'), (',', ','), ('solve', 'solv'), ('problems', 'problem'), (',', ','), ('comprehend', 'comprehend'), ('complex', 'complex'), ('ideas', 'idea'), (',', ','), ('use', 'use'), ('natural', 'natur'), ('language', 'languag'), ('fluently', 'fluentli'), (',', ','), ('classify', 'classifi'), (',', ','), ('generalize', 'gener'), (',', ','), ('adapt', 'adapt'), ('new', 'new'), ('situations', 'situat'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('ability', 'abil'), ('system', 'system'), ('calculate', 'calcul'), (',', ','), ('reason', 'reason'), (',', ','), ('perceive', 'perceiv'), ('relationships', 'relationship'), ('analogies', 'analog'), (',', ','), ('learn', 'learn'), ('experience', 'experi'), (',', ','), ('store', 'store'), ('retrieve', 'retriev'), ('information', 'inform'), ('memory', 'memori'), (',', ','), ('solve', 'solv'), ('problems', 'problem'), (',', ','), ('comprehend', 'comprehend'), ('complex', 'complex'), ('ideas', 'idea'), (',', ','), ('use', 'use'), ('natural', 'natur'), ('language', 'languag'), ('fluently', 'fluentli'), (',', ','), ('classify', 'classifi'), (',', ','), ('generalize', 'general'), (',', ','), ('adapt', 'adapt'), ('new', 'new'), ('situations', 'situat'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('ability', 'ability'), ('system', 'system'), ('calculate', 'calculate'), (',', ','), ('reason', 'reason'), (',', ','), ('perceive', 'perceive'), ('relationships', 'relationship'), ('analogies', 'analogy'), (',', ','), ('learn', 'learn'), ('experience', 'experience'), (',', ','), ('store', 'store'), ('retrieve', 'retrieve'), ('information', 'information'), ('memory', 'memory'), (',', ','), ('solve', 'solve'), ('problems', 'problem'), (',', ','), ('comprehend', 'comprehend'), ('complex', 'complex'), ('ideas', 'idea'), (',', ','), ('use', 'use'), ('natural', 'natural'), ('language', 'language'), ('fluently', 'fluently'), (',', ','), ('classify', 'classify'), (',', ','), ('generalize', 'generalize'), (',', ','), ('adapt', 'adapt'), ('new', 'new'), ('situations', 'situation'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+Types of Intelligence As described by Howard Gardner, an American developmental psychologist, the Intelligence comes in multifold − 	Intelligence 	Description 	Example  	Linguistic intelligence 	The ability to speak, recognize, and use mechanisms of phonology (speech sounds), syntax (grammar), and semantics (meaning). 
+
+
+>> Tokens are: 
+ ['Types', 'Intelligence', 'As', 'described', 'Howard', 'Gardner', ',', 'American', 'developmental', 'psychologist', ',', 'Intelligence', 'comes', 'multifold', '−', 'Intelligence', 'Description', 'Example', 'Linguistic', 'intelligence', 'The', 'ability', 'speak', ',', 'recognize', ',', 'use', 'mechanisms', 'phonology', '(', 'speech', 'sounds', ')', ',', 'syntax', '(', 'grammar', ')', ',', 'semantics', '(', 'meaning', ')', '.']
+
+>> Bigrams are: 
+ [('Types', 'Intelligence'), ('Intelligence', 'As'), ('As', 'described'), ('described', 'Howard'), ('Howard', 'Gardner'), ('Gardner', ','), (',', 'American'), ('American', 'developmental'), ('developmental', 'psychologist'), ('psychologist', ','), (',', 'Intelligence'), ('Intelligence', 'comes'), ('comes', 'multifold'), ('multifold', '−'), ('−', 'Intelligence'), ('Intelligence', 'Description'), ('Description', 'Example'), ('Example', 'Linguistic'), ('Linguistic', 'intelligence'), ('intelligence', 'The'), ('The', 'ability'), ('ability', 'speak'), ('speak', ','), (',', 'recognize'), ('recognize', ','), (',', 'use'), ('use', 'mechanisms'), ('mechanisms', 'phonology'), ('phonology', '('), ('(', 'speech'), ('speech', 'sounds'), ('sounds', ')'), (')', ','), (',', 'syntax'), ('syntax', '('), ('(', 'grammar'), ('grammar', ')'), (')', ','), (',', 'semantics'), ('semantics', '('), ('(', 'meaning'), ('meaning', ')'), (')', '.')]
+
+>> Trigrams are: 
+ [('Types', 'Intelligence', 'As'), ('Intelligence', 'As', 'described'), ('As', 'described', 'Howard'), ('described', 'Howard', 'Gardner'), ('Howard', 'Gardner', ','), ('Gardner', ',', 'American'), (',', 'American', 'developmental'), ('American', 'developmental', 'psychologist'), ('developmental', 'psychologist', ','), ('psychologist', ',', 'Intelligence'), (',', 'Intelligence', 'comes'), ('Intelligence', 'comes', 'multifold'), ('comes', 'multifold', '−'), ('multifold', '−', 'Intelligence'), ('−', 'Intelligence', 'Description'), ('Intelligence', 'Description', 'Example'), ('Description', 'Example', 'Linguistic'), ('Example', 'Linguistic', 'intelligence'), ('Linguistic', 'intelligence', 'The'), ('intelligence', 'The', 'ability'), ('The', 'ability', 'speak'), ('ability', 'speak', ','), ('speak', ',', 'recognize'), (',', 'recognize', ','), ('recognize', ',', 'use'), (',', 'use', 'mechanisms'), ('use', 'mechanisms', 'phonology'), ('mechanisms', 'phonology', '('), ('phonology', '(', 'speech'), ('(', 'speech', 'sounds'), ('speech', 'sounds', ')'), ('sounds', ')', ','), (')', ',', 'syntax'), (',', 'syntax', '('), ('syntax', '(', 'grammar'), ('(', 'grammar', ')'), ('grammar', ')', ','), (')', ',', 'semantics'), (',', 'semantics', '('), ('semantics', '(', 'meaning'), ('(', 'meaning', ')'), ('meaning', ')', '.')]
+
+>> POS Tags are: 
+ [('Types', 'NNS'), ('Intelligence', 'NNP'), ('As', 'IN'), ('described', 'JJ'), ('Howard', 'NNP'), ('Gardner', 'NNP'), (',', ','), ('American', 'NNP'), ('developmental', 'NNP'), ('psychologist', 'NN'), (',', ','), ('Intelligence', 'NNP'), ('comes', 'VBZ'), ('multifold', 'JJ'), ('−', 'JJ'), ('Intelligence', 'NNP'), ('Description', 'NNP'), ('Example', 'NNP'), ('Linguistic', 'NNP'), ('intelligence', 'NN'), ('The', 'DT'), ('ability', 'NN'), ('speak', 'NN'), (',', ','), ('recognize', 'VB'), (',', ','), ('use', 'VB'), ('mechanisms', 'JJ'), ('phonology', 'NN'), ('(', '('), ('speech', 'JJ'), ('sounds', 'NNS'), (')', ')'), (',', ','), ('syntax', 'NN'), ('(', '('), ('grammar', 'NN'), (')', ')'), (',', ','), ('semantics', 'NNS'), ('(', '('), ('meaning', 'VBG'), (')', ')'), ('.', '.')]
+
+ (S
+  (NP Types/NNS Intelligence/NNP)
+  As/IN
+  (NP described/JJ Howard/NNP Gardner/NNP)
+  ,/,
+  (NP American/NNP developmental/NNP psychologist/NN)
+  ,/,
+  (NP Intelligence/NNP)
+  comes/VBZ
+  (NP
+    multifold/JJ
+    −/JJ
+    Intelligence/NNP
+    Description/NNP
+    Example/NNP
+    Linguistic/NNP
+    intelligence/NN)
+  (NP The/DT ability/NN speak/NN)
+  ,/,
+  recognize/VB
+  ,/,
+  use/VB
+  (NP mechanisms/JJ phonology/NN)
+  (/(
+  (NP speech/JJ sounds/NNS)
+  )/)
+  ,/,
+  (NP syntax/NN)
+  (/(
+  (NP grammar/NN)
+  )/)
+  ,/,
+  (NP semantics/NNS)
+  (/(
+  meaning/VBG
+  )/)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Types Intelligence', 'described Howard Gardner', 'American developmental psychologist', 'Intelligence', 'multifold − Intelligence Description Example Linguistic intelligence', 'The ability speak', 'mechanisms phonology', 'speech sounds', 'syntax', 'grammar', 'semantics']
+
+>> Named Entities are: 
+ [('PERSON', 'Howard Gardner'), ('GPE', 'American'), ('ORGANIZATION', 'Intelligence'), ('ORGANIZATION', 'Intelligence')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Types', 'type'), ('Intelligence', 'intellig'), ('As', 'as'), ('described', 'describ'), ('Howard', 'howard'), ('Gardner', 'gardner'), (',', ','), ('American', 'american'), ('developmental', 'development'), ('psychologist', 'psychologist'), (',', ','), ('Intelligence', 'intellig'), ('comes', 'come'), ('multifold', 'multifold'), ('−', '−'), ('Intelligence', 'intellig'), ('Description', 'descript'), ('Example', 'exampl'), ('Linguistic', 'linguist'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('speak', 'speak'), (',', ','), ('recognize', 'recogn'), (',', ','), ('use', 'use'), ('mechanisms', 'mechan'), ('phonology', 'phonolog'), ('(', '('), ('speech', 'speech'), ('sounds', 'sound'), (')', ')'), (',', ','), ('syntax', 'syntax'), ('(', '('), ('grammar', 'grammar'), (')', ')'), (',', ','), ('semantics', 'semant'), ('(', '('), ('meaning', 'mean'), (')', ')'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Types', 'type'), ('Intelligence', 'intellig'), ('As', 'as'), ('described', 'describ'), ('Howard', 'howard'), ('Gardner', 'gardner'), (',', ','), ('American', 'american'), ('developmental', 'development'), ('psychologist', 'psychologist'), (',', ','), ('Intelligence', 'intellig'), ('comes', 'come'), ('multifold', 'multifold'), ('−', '−'), ('Intelligence', 'intellig'), ('Description', 'descript'), ('Example', 'exampl'), ('Linguistic', 'linguist'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('speak', 'speak'), (',', ','), ('recognize', 'recogn'), (',', ','), ('use', 'use'), ('mechanisms', 'mechan'), ('phonology', 'phonolog'), ('(', '('), ('speech', 'speech'), ('sounds', 'sound'), (')', ')'), (',', ','), ('syntax', 'syntax'), ('(', '('), ('grammar', 'grammar'), (')', ')'), (',', ','), ('semantics', 'semant'), ('(', '('), ('meaning', 'mean'), (')', ')'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Types', 'Types'), ('Intelligence', 'Intelligence'), ('As', 'As'), ('described', 'described'), ('Howard', 'Howard'), ('Gardner', 'Gardner'), (',', ','), ('American', 'American'), ('developmental', 'developmental'), ('psychologist', 'psychologist'), (',', ','), ('Intelligence', 'Intelligence'), ('comes', 'come'), ('multifold', 'multifold'), ('−', '−'), ('Intelligence', 'Intelligence'), ('Description', 'Description'), ('Example', 'Example'), ('Linguistic', 'Linguistic'), ('intelligence', 'intelligence'), ('The', 'The'), ('ability', 'ability'), ('speak', 'speak'), (',', ','), ('recognize', 'recognize'), (',', ','), ('use', 'use'), ('mechanisms', 'mechanism'), ('phonology', 'phonology'), ('(', '('), ('speech', 'speech'), ('sounds', 'sound'), (')', ')'), (',', ','), ('syntax', 'syntax'), ('(', '('), ('grammar', 'grammar'), (')', ')'), (',', ','), ('semantics', 'semantics'), ('(', '('), ('meaning', 'meaning'), (')', ')'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+Narrators, Orators  	Musical intelligence 	The ability to create, communicate with, and understand meanings made of sound, understanding of pitch, rhythm. 
+
+
+>> Tokens are: 
+ ['Narrators', ',', 'Orators', 'Musical', 'intelligence', 'The', 'ability', 'create', ',', 'communicate', ',', 'understand', 'meanings', 'made', 'sound', ',', 'understanding', 'pitch', ',', 'rhythm', '.']
+
+>> Bigrams are: 
+ [('Narrators', ','), (',', 'Orators'), ('Orators', 'Musical'), ('Musical', 'intelligence'), ('intelligence', 'The'), ('The', 'ability'), ('ability', 'create'), ('create', ','), (',', 'communicate'), ('communicate', ','), (',', 'understand'), ('understand', 'meanings'), ('meanings', 'made'), ('made', 'sound'), ('sound', ','), (',', 'understanding'), ('understanding', 'pitch'), ('pitch', ','), (',', 'rhythm'), ('rhythm', '.')]
+
+>> Trigrams are: 
+ [('Narrators', ',', 'Orators'), (',', 'Orators', 'Musical'), ('Orators', 'Musical', 'intelligence'), ('Musical', 'intelligence', 'The'), ('intelligence', 'The', 'ability'), ('The', 'ability', 'create'), ('ability', 'create', ','), ('create', ',', 'communicate'), (',', 'communicate', ','), ('communicate', ',', 'understand'), (',', 'understand', 'meanings'), ('understand', 'meanings', 'made'), ('meanings', 'made', 'sound'), ('made', 'sound', ','), ('sound', ',', 'understanding'), (',', 'understanding', 'pitch'), ('understanding', 'pitch', ','), ('pitch', ',', 'rhythm'), (',', 'rhythm', '.')]
+
+>> POS Tags are: 
+ [('Narrators', 'NNS'), (',', ','), ('Orators', 'NNP'), ('Musical', 'NNP'), ('intelligence', 'NN'), ('The', 'DT'), ('ability', 'NN'), ('create', 'NN'), (',', ','), ('communicate', 'NN'), (',', ','), ('understand', 'JJ'), ('meanings', 'NNS'), ('made', 'VBN'), ('sound', 'NN'), (',', ','), ('understanding', 'VBG'), ('pitch', 'NN'), (',', ','), ('rhythm', 'NN'), ('.', '.')]
+
+ (S
+  (NP Narrators/NNS)
+  ,/,
+  (NP Orators/NNP Musical/NNP intelligence/NN)
+  (NP The/DT ability/NN create/NN)
+  ,/,
+  (NP communicate/NN)
+  ,/,
+  (NP understand/JJ meanings/NNS)
+  made/VBN
+  (NP sound/NN)
+  ,/,
+  understanding/VBG
+  (NP pitch/NN)
+  ,/,
+  (NP rhythm/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Narrators', 'Orators Musical intelligence', 'The ability create', 'communicate', 'understand meanings', 'sound', 'pitch', 'rhythm']
+
+>> Named Entities are: 
+ [('PERSON', 'Orators Musical')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Narrators', 'narrat'), (',', ','), ('Orators', 'orat'), ('Musical', 'music'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('create', 'creat'), (',', ','), ('communicate', 'commun'), (',', ','), ('understand', 'understand'), ('meanings', 'mean'), ('made', 'made'), ('sound', 'sound'), (',', ','), ('understanding', 'understand'), ('pitch', 'pitch'), (',', ','), ('rhythm', 'rhythm'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Narrators', 'narrat'), (',', ','), ('Orators', 'orat'), ('Musical', 'music'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('create', 'creat'), (',', ','), ('communicate', 'communic'), (',', ','), ('understand', 'understand'), ('meanings', 'mean'), ('made', 'made'), ('sound', 'sound'), (',', ','), ('understanding', 'understand'), ('pitch', 'pitch'), (',', ','), ('rhythm', 'rhythm'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Narrators', 'Narrators'), (',', ','), ('Orators', 'Orators'), ('Musical', 'Musical'), ('intelligence', 'intelligence'), ('The', 'The'), ('ability', 'ability'), ('create', 'create'), (',', ','), ('communicate', 'communicate'), (',', ','), ('understand', 'understand'), ('meanings', 'meaning'), ('made', 'made'), ('sound', 'sound'), (',', ','), ('understanding', 'understanding'), ('pitch', 'pitch'), (',', ','), ('rhythm', 'rhythm'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+Musicians, Singers, Composers  	Logical-mathematical intelligence 	The ability of use and understand relationships in the absence of action or objects. 
+
+
+>> Tokens are: 
+ ['Musicians', ',', 'Singers', ',', 'Composers', 'Logical-mathematical', 'intelligence', 'The', 'ability', 'use', 'understand', 'relationships', 'absence', 'action', 'objects', '.']
+
+>> Bigrams are: 
+ [('Musicians', ','), (',', 'Singers'), ('Singers', ','), (',', 'Composers'), ('Composers', 'Logical-mathematical'), ('Logical-mathematical', 'intelligence'), ('intelligence', 'The'), ('The', 'ability'), ('ability', 'use'), ('use', 'understand'), ('understand', 'relationships'), ('relationships', 'absence'), ('absence', 'action'), ('action', 'objects'), ('objects', '.')]
+
+>> Trigrams are: 
+ [('Musicians', ',', 'Singers'), (',', 'Singers', ','), ('Singers', ',', 'Composers'), (',', 'Composers', 'Logical-mathematical'), ('Composers', 'Logical-mathematical', 'intelligence'), ('Logical-mathematical', 'intelligence', 'The'), ('intelligence', 'The', 'ability'), ('The', 'ability', 'use'), ('ability', 'use', 'understand'), ('use', 'understand', 'relationships'), ('understand', 'relationships', 'absence'), ('relationships', 'absence', 'action'), ('absence', 'action', 'objects'), ('action', 'objects', '.')]
+
+>> POS Tags are: 
+ [('Musicians', 'NNS'), (',', ','), ('Singers', 'NNP'), (',', ','), ('Composers', 'NNP'), ('Logical-mathematical', 'JJ'), ('intelligence', 'NN'), ('The', 'DT'), ('ability', 'NN'), ('use', 'NN'), ('understand', 'JJ'), ('relationships', 'NNS'), ('absence', 'NN'), ('action', 'NN'), ('objects', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Musicians/NNS)
+  ,/,
+  (NP Singers/NNP)
+  ,/,
+  (NP Composers/NNP)
+  (NP Logical-mathematical/JJ intelligence/NN)
+  (NP The/DT ability/NN use/NN)
+  (NP
+    understand/JJ
+    relationships/NNS
+    absence/NN
+    action/NN
+    objects/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Musicians', 'Singers', 'Composers', 'Logical-mathematical intelligence', 'The ability use', 'understand relationships absence action objects']
+
+>> Named Entities are: 
+ [('GPE', 'Singers'), ('ORGANIZATION', 'Composers')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Musicians', 'musician'), (',', ','), ('Singers', 'singer'), (',', ','), ('Composers', 'compos'), ('Logical-mathematical', 'logical-mathemat'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('use', 'use'), ('understand', 'understand'), ('relationships', 'relationship'), ('absence', 'absenc'), ('action', 'action'), ('objects', 'object'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Musicians', 'musician'), (',', ','), ('Singers', 'singer'), (',', ','), ('Composers', 'compos'), ('Logical-mathematical', 'logical-mathemat'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('use', 'use'), ('understand', 'understand'), ('relationships', 'relationship'), ('absence', 'absenc'), ('action', 'action'), ('objects', 'object'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Musicians', 'Musicians'), (',', ','), ('Singers', 'Singers'), (',', ','), ('Composers', 'Composers'), ('Logical-mathematical', 'Logical-mathematical'), ('intelligence', 'intelligence'), ('The', 'The'), ('ability', 'ability'), ('use', 'use'), ('understand', 'understand'), ('relationships', 'relationship'), ('absence', 'absence'), ('action', 'action'), ('objects', 'object'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+Understanding complex and abstract ideas. 
+
+
+>> Tokens are: 
+ ['Understanding', 'complex', 'abstract', 'ideas', '.']
+
+>> Bigrams are: 
+ [('Understanding', 'complex'), ('complex', 'abstract'), ('abstract', 'ideas'), ('ideas', '.')]
+
+>> Trigrams are: 
+ [('Understanding', 'complex', 'abstract'), ('complex', 'abstract', 'ideas'), ('abstract', 'ideas', '.')]
+
+>> POS Tags are: 
+ [('Understanding', 'VBG'), ('complex', 'JJ'), ('abstract', 'JJ'), ('ideas', 'NNS'), ('.', '.')]
+
+ (S Understanding/VBG (NP complex/JJ abstract/JJ ideas/NNS) ./.) 
+
+
+>> Noun Phrases are: 
+ ['complex abstract ideas']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Understanding', 'understand'), ('complex', 'complex'), ('abstract', 'abstract'), ('ideas', 'idea'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Understanding', 'understand'), ('complex', 'complex'), ('abstract', 'abstract'), ('ideas', 'idea'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Understanding', 'Understanding'), ('complex', 'complex'), ('abstract', 'abstract'), ('ideas', 'idea'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+Mathematicians, Scientists  	Spatial intelligence 	The ability to perceive visual or spatial information, change it, and re-create visual images without reference to the objects, construct 3D images, and to move and rotate them. 
+
+
+>> Tokens are: 
+ ['Mathematicians', ',', 'Scientists', 'Spatial', 'intelligence', 'The', 'ability', 'perceive', 'visual', 'spatial', 'information', ',', 'change', ',', 're-create', 'visual', 'images', 'without', 'reference', 'objects', ',', 'construct', '3D', 'images', ',', 'move', 'rotate', '.']
+
+>> Bigrams are: 
+ [('Mathematicians', ','), (',', 'Scientists'), ('Scientists', 'Spatial'), ('Spatial', 'intelligence'), ('intelligence', 'The'), ('The', 'ability'), ('ability', 'perceive'), ('perceive', 'visual'), ('visual', 'spatial'), ('spatial', 'information'), ('information', ','), (',', 'change'), ('change', ','), (',', 're-create'), ('re-create', 'visual'), ('visual', 'images'), ('images', 'without'), ('without', 'reference'), ('reference', 'objects'), ('objects', ','), (',', 'construct'), ('construct', '3D'), ('3D', 'images'), ('images', ','), (',', 'move'), ('move', 'rotate'), ('rotate', '.')]
+
+>> Trigrams are: 
+ [('Mathematicians', ',', 'Scientists'), (',', 'Scientists', 'Spatial'), ('Scientists', 'Spatial', 'intelligence'), ('Spatial', 'intelligence', 'The'), ('intelligence', 'The', 'ability'), ('The', 'ability', 'perceive'), ('ability', 'perceive', 'visual'), ('perceive', 'visual', 'spatial'), ('visual', 'spatial', 'information'), ('spatial', 'information', ','), ('information', ',', 'change'), (',', 'change', ','), ('change', ',', 're-create'), (',', 're-create', 'visual'), ('re-create', 'visual', 'images'), ('visual', 'images', 'without'), ('images', 'without', 'reference'), ('without', 'reference', 'objects'), ('reference', 'objects', ','), ('objects', ',', 'construct'), (',', 'construct', '3D'), ('construct', '3D', 'images'), ('3D', 'images', ','), ('images', ',', 'move'), (',', 'move', 'rotate'), ('move', 'rotate', '.')]
+
+>> POS Tags are: 
+ [('Mathematicians', 'NNS'), (',', ','), ('Scientists', 'VBZ'), ('Spatial', 'NNP'), ('intelligence', 'NN'), ('The', 'DT'), ('ability', 'NN'), ('perceive', 'JJ'), ('visual', 'JJ'), ('spatial', 'JJ'), ('information', 'NN'), (',', ','), ('change', 'NN'), (',', ','), ('re-create', 'JJ'), ('visual', 'JJ'), ('images', 'NNS'), ('without', 'IN'), ('reference', 'NN'), ('objects', 'NNS'), (',', ','), ('construct', 'NN'), ('3D', 'CD'), ('images', 'NNS'), (',', ','), ('move', 'VBP'), ('rotate', 'NN'), ('.', '.')]
+
+ (S
+  (NP Mathematicians/NNS)
+  ,/,
+  Scientists/VBZ
+  (NP Spatial/NNP intelligence/NN)
+  (NP The/DT ability/NN)
+  (NP perceive/JJ visual/JJ spatial/JJ information/NN)
+  ,/,
+  (NP change/NN)
+  ,/,
+  (NP re-create/JJ visual/JJ images/NNS)
+  without/IN
+  (NP reference/NN objects/NNS)
+  ,/,
+  (NP construct/NN)
+  3D/CD
+  (NP images/NNS)
+  ,/,
+  move/VBP
+  (NP rotate/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Mathematicians', 'Spatial intelligence', 'The ability', 'perceive visual spatial information', 'change', 're-create visual images', 'reference objects', 'construct', 'images', 'rotate']
+
+>> Named Entities are: 
+ [('GPE', 'Spatial')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Mathematicians', 'mathematician'), (',', ','), ('Scientists', 'scientist'), ('Spatial', 'spatial'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('perceive', 'perceiv'), ('visual', 'visual'), ('spatial', 'spatial'), ('information', 'inform'), (',', ','), ('change', 'chang'), (',', ','), ('re-create', 're-creat'), ('visual', 'visual'), ('images', 'imag'), ('without', 'without'), ('reference', 'refer'), ('objects', 'object'), (',', ','), ('construct', 'construct'), ('3D', '3d'), ('images', 'imag'), (',', ','), ('move', 'move'), ('rotate', 'rotat'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Mathematicians', 'mathematician'), (',', ','), ('Scientists', 'scientist'), ('Spatial', 'spatial'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('perceive', 'perceiv'), ('visual', 'visual'), ('spatial', 'spatial'), ('information', 'inform'), (',', ','), ('change', 'chang'), (',', ','), ('re-create', 're-creat'), ('visual', 'visual'), ('images', 'imag'), ('without', 'without'), ('reference', 'refer'), ('objects', 'object'), (',', ','), ('construct', 'construct'), ('3D', '3d'), ('images', 'imag'), (',', ','), ('move', 'move'), ('rotate', 'rotat'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Mathematicians', 'Mathematicians'), (',', ','), ('Scientists', 'Scientists'), ('Spatial', 'Spatial'), ('intelligence', 'intelligence'), ('The', 'The'), ('ability', 'ability'), ('perceive', 'perceive'), ('visual', 'visual'), ('spatial', 'spatial'), ('information', 'information'), (',', ','), ('change', 'change'), (',', ','), ('re-create', 're-create'), ('visual', 'visual'), ('images', 'image'), ('without', 'without'), ('reference', 'reference'), ('objects', 'object'), (',', ','), ('construct', 'construct'), ('3D', '3D'), ('images', 'image'), (',', ','), ('move', 'move'), ('rotate', 'rotate'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+Map readers, Astronauts, Physicists  	Bodily-Kinesthetic intelligence 	The ability to use complete or part of the body to solve problems or fashion products, control over fine and coarse motor skills, and manipulate the objects. 
+
+
+>> Tokens are: 
+ ['Map', 'readers', ',', 'Astronauts', ',', 'Physicists', 'Bodily-Kinesthetic', 'intelligence', 'The', 'ability', 'use', 'complete', 'part', 'body', 'solve', 'problems', 'fashion', 'products', ',', 'control', 'fine', 'coarse', 'motor', 'skills', ',', 'manipulate', 'objects', '.']
+
+>> Bigrams are: 
+ [('Map', 'readers'), ('readers', ','), (',', 'Astronauts'), ('Astronauts', ','), (',', 'Physicists'), ('Physicists', 'Bodily-Kinesthetic'), ('Bodily-Kinesthetic', 'intelligence'), ('intelligence', 'The'), ('The', 'ability'), ('ability', 'use'), ('use', 'complete'), ('complete', 'part'), ('part', 'body'), ('body', 'solve'), ('solve', 'problems'), ('problems', 'fashion'), ('fashion', 'products'), ('products', ','), (',', 'control'), ('control', 'fine'), ('fine', 'coarse'), ('coarse', 'motor'), ('motor', 'skills'), ('skills', ','), (',', 'manipulate'), ('manipulate', 'objects'), ('objects', '.')]
+
+>> Trigrams are: 
+ [('Map', 'readers', ','), ('readers', ',', 'Astronauts'), (',', 'Astronauts', ','), ('Astronauts', ',', 'Physicists'), (',', 'Physicists', 'Bodily-Kinesthetic'), ('Physicists', 'Bodily-Kinesthetic', 'intelligence'), ('Bodily-Kinesthetic', 'intelligence', 'The'), ('intelligence', 'The', 'ability'), ('The', 'ability', 'use'), ('ability', 'use', 'complete'), ('use', 'complete', 'part'), ('complete', 'part', 'body'), ('part', 'body', 'solve'), ('body', 'solve', 'problems'), ('solve', 'problems', 'fashion'), ('problems', 'fashion', 'products'), ('fashion', 'products', ','), ('products', ',', 'control'), (',', 'control', 'fine'), ('control', 'fine', 'coarse'), ('fine', 'coarse', 'motor'), ('coarse', 'motor', 'skills'), ('motor', 'skills', ','), ('skills', ',', 'manipulate'), (',', 'manipulate', 'objects'), ('manipulate', 'objects', '.')]
+
+>> POS Tags are: 
+ [('Map', 'NNP'), ('readers', 'NNS'), (',', ','), ('Astronauts', 'NNP'), (',', ','), ('Physicists', 'VBZ'), ('Bodily-Kinesthetic', 'JJ'), ('intelligence', 'NN'), ('The', 'DT'), ('ability', 'NN'), ('use', 'NN'), ('complete', 'JJ'), ('part', 'NN'), ('body', 'NN'), ('solve', 'VB'), ('problems', 'NNS'), ('fashion', 'NN'), ('products', 'NNS'), (',', ','), ('control', 'NN'), ('fine', 'JJ'), ('coarse', 'NN'), ('motor', 'NN'), ('skills', 'NNS'), (',', ','), ('manipulate', 'JJ'), ('objects', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Map/NNP readers/NNS)
+  ,/,
+  (NP Astronauts/NNP)
+  ,/,
+  Physicists/VBZ
+  (NP Bodily-Kinesthetic/JJ intelligence/NN)
+  (NP The/DT ability/NN use/NN)
+  (NP complete/JJ part/NN body/NN)
+  solve/VB
+  (NP problems/NNS fashion/NN products/NNS)
+  ,/,
+  (NP control/NN)
+  (NP fine/JJ coarse/NN motor/NN skills/NNS)
+  ,/,
+  (NP manipulate/JJ objects/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Map readers', 'Astronauts', 'Bodily-Kinesthetic intelligence', 'The ability use', 'complete part body', 'problems fashion products', 'control', 'fine coarse motor skills', 'manipulate objects']
+
+>> Named Entities are: 
+ [('GPE', 'Map'), ('GPE', 'Astronauts')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Map', 'map'), ('readers', 'reader'), (',', ','), ('Astronauts', 'astronaut'), (',', ','), ('Physicists', 'physicist'), ('Bodily-Kinesthetic', 'bodily-kinesthet'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('use', 'use'), ('complete', 'complet'), ('part', 'part'), ('body', 'bodi'), ('solve', 'solv'), ('problems', 'problem'), ('fashion', 'fashion'), ('products', 'product'), (',', ','), ('control', 'control'), ('fine', 'fine'), ('coarse', 'coars'), ('motor', 'motor'), ('skills', 'skill'), (',', ','), ('manipulate', 'manipul'), ('objects', 'object'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Map', 'map'), ('readers', 'reader'), (',', ','), ('Astronauts', 'astronaut'), (',', ','), ('Physicists', 'physicist'), ('Bodily-Kinesthetic', 'bodily-kinesthet'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('use', 'use'), ('complete', 'complet'), ('part', 'part'), ('body', 'bodi'), ('solve', 'solv'), ('problems', 'problem'), ('fashion', 'fashion'), ('products', 'product'), (',', ','), ('control', 'control'), ('fine', 'fine'), ('coarse', 'coars'), ('motor', 'motor'), ('skills', 'skill'), (',', ','), ('manipulate', 'manipul'), ('objects', 'object'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Map', 'Map'), ('readers', 'reader'), (',', ','), ('Astronauts', 'Astronauts'), (',', ','), ('Physicists', 'Physicists'), ('Bodily-Kinesthetic', 'Bodily-Kinesthetic'), ('intelligence', 'intelligence'), ('The', 'The'), ('ability', 'ability'), ('use', 'use'), ('complete', 'complete'), ('part', 'part'), ('body', 'body'), ('solve', 'solve'), ('problems', 'problem'), ('fashion', 'fashion'), ('products', 'product'), (',', ','), ('control', 'control'), ('fine', 'fine'), ('coarse', 'coarse'), ('motor', 'motor'), ('skills', 'skill'), (',', ','), ('manipulate', 'manipulate'), ('objects', 'object'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+Players, Dancers  	Intra-personal intelligence 	The ability to distinguish among one’s own feelings, intentions, and motivations. 
+
+
+>> Tokens are: 
+ ['Players', ',', 'Dancers', 'Intra-personal', 'intelligence', 'The', 'ability', 'distinguish', 'among', 'one', '’', 'feelings', ',', 'intentions', ',', 'motivations', '.']
+
+>> Bigrams are: 
+ [('Players', ','), (',', 'Dancers'), ('Dancers', 'Intra-personal'), ('Intra-personal', 'intelligence'), ('intelligence', 'The'), ('The', 'ability'), ('ability', 'distinguish'), ('distinguish', 'among'), ('among', 'one'), ('one', '’'), ('’', 'feelings'), ('feelings', ','), (',', 'intentions'), ('intentions', ','), (',', 'motivations'), ('motivations', '.')]
+
+>> Trigrams are: 
+ [('Players', ',', 'Dancers'), (',', 'Dancers', 'Intra-personal'), ('Dancers', 'Intra-personal', 'intelligence'), ('Intra-personal', 'intelligence', 'The'), ('intelligence', 'The', 'ability'), ('The', 'ability', 'distinguish'), ('ability', 'distinguish', 'among'), ('distinguish', 'among', 'one'), ('among', 'one', '’'), ('one', '’', 'feelings'), ('’', 'feelings', ','), ('feelings', ',', 'intentions'), (',', 'intentions', ','), ('intentions', ',', 'motivations'), (',', 'motivations', '.')]
+
+>> POS Tags are: 
+ [('Players', 'NNS'), (',', ','), ('Dancers', 'NNP'), ('Intra-personal', 'NNP'), ('intelligence', 'NN'), ('The', 'DT'), ('ability', 'NN'), ('distinguish', 'NN'), ('among', 'IN'), ('one', 'CD'), ('’', 'NN'), ('feelings', 'NNS'), (',', ','), ('intentions', 'NNS'), (',', ','), ('motivations', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Players/NNS)
+  ,/,
+  (NP Dancers/NNP Intra-personal/NNP intelligence/NN)
+  (NP The/DT ability/NN distinguish/NN)
+  among/IN
+  one/CD
+  (NP ’/NN feelings/NNS)
+  ,/,
+  (NP intentions/NNS)
+  ,/,
+  (NP motivations/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Players', 'Dancers Intra-personal intelligence', 'The ability distinguish', '’ feelings', 'intentions', 'motivations']
+
+>> Named Entities are: 
+ [('PERSON', 'Dancers')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Players', 'player'), (',', ','), ('Dancers', 'dancer'), ('Intra-personal', 'intra-person'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('distinguish', 'distinguish'), ('among', 'among'), ('one', 'one'), ('’', '’'), ('feelings', 'feel'), (',', ','), ('intentions', 'intent'), (',', ','), ('motivations', 'motiv'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Players', 'player'), (',', ','), ('Dancers', 'dancer'), ('Intra-personal', 'intra-person'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('distinguish', 'distinguish'), ('among', 'among'), ('one', 'one'), ('’', '’'), ('feelings', 'feel'), (',', ','), ('intentions', 'intent'), (',', ','), ('motivations', 'motiv'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Players', 'Players'), (',', ','), ('Dancers', 'Dancers'), ('Intra-personal', 'Intra-personal'), ('intelligence', 'intelligence'), ('The', 'The'), ('ability', 'ability'), ('distinguish', 'distinguish'), ('among', 'among'), ('one', 'one'), ('’', '’'), ('feelings', 'feeling'), (',', ','), ('intentions', 'intention'), (',', ','), ('motivations', 'motivation'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+Gautam Buddhha  	Interpersonal intelligence 	The ability to recognize and make distinctions among other people’s feelings, beliefs, and intentions. 
+
+
+>> Tokens are: 
+ ['Gautam', 'Buddhha', 'Interpersonal', 'intelligence', 'The', 'ability', 'recognize', 'make', 'distinctions', 'among', 'people', '’', 'feelings', ',', 'beliefs', ',', 'intentions', '.']
+
+>> Bigrams are: 
+ [('Gautam', 'Buddhha'), ('Buddhha', 'Interpersonal'), ('Interpersonal', 'intelligence'), ('intelligence', 'The'), ('The', 'ability'), ('ability', 'recognize'), ('recognize', 'make'), ('make', 'distinctions'), ('distinctions', 'among'), ('among', 'people'), ('people', '’'), ('’', 'feelings'), ('feelings', ','), (',', 'beliefs'), ('beliefs', ','), (',', 'intentions'), ('intentions', '.')]
+
+>> Trigrams are: 
+ [('Gautam', 'Buddhha', 'Interpersonal'), ('Buddhha', 'Interpersonal', 'intelligence'), ('Interpersonal', 'intelligence', 'The'), ('intelligence', 'The', 'ability'), ('The', 'ability', 'recognize'), ('ability', 'recognize', 'make'), ('recognize', 'make', 'distinctions'), ('make', 'distinctions', 'among'), ('distinctions', 'among', 'people'), ('among', 'people', '’'), ('people', '’', 'feelings'), ('’', 'feelings', ','), ('feelings', ',', 'beliefs'), (',', 'beliefs', ','), ('beliefs', ',', 'intentions'), (',', 'intentions', '.')]
+
+>> POS Tags are: 
+ [('Gautam', 'NNP'), ('Buddhha', 'NNP'), ('Interpersonal', 'NNP'), ('intelligence', 'NN'), ('The', 'DT'), ('ability', 'NN'), ('recognize', 'VBP'), ('make', 'VBP'), ('distinctions', 'NNS'), ('among', 'IN'), ('people', 'NNS'), ('’', 'NNP'), ('feelings', 'NNS'), (',', ','), ('beliefs', 'NNS'), (',', ','), ('intentions', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Gautam/NNP Buddhha/NNP Interpersonal/NNP intelligence/NN)
+  (NP The/DT ability/NN)
+  recognize/VBP
+  make/VBP
+  (NP distinctions/NNS)
+  among/IN
+  (NP people/NNS ’/NNP feelings/NNS)
+  ,/,
+  (NP beliefs/NNS)
+  ,/,
+  (NP intentions/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Gautam Buddhha Interpersonal intelligence', 'The ability', 'distinctions', 'people ’ feelings', 'beliefs', 'intentions']
+
+>> Named Entities are: 
+ [('PERSON', 'Gautam'), ('PERSON', 'Buddhha Interpersonal')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Gautam', 'gautam'), ('Buddhha', 'buddhha'), ('Interpersonal', 'interperson'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('recognize', 'recogn'), ('make', 'make'), ('distinctions', 'distinct'), ('among', 'among'), ('people', 'peopl'), ('’', '’'), ('feelings', 'feel'), (',', ','), ('beliefs', 'belief'), (',', ','), ('intentions', 'intent'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Gautam', 'gautam'), ('Buddhha', 'buddhha'), ('Interpersonal', 'interperson'), ('intelligence', 'intellig'), ('The', 'the'), ('ability', 'abil'), ('recognize', 'recogn'), ('make', 'make'), ('distinctions', 'distinct'), ('among', 'among'), ('people', 'peopl'), ('’', '’'), ('feelings', 'feel'), (',', ','), ('beliefs', 'belief'), (',', ','), ('intentions', 'intent'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Gautam', 'Gautam'), ('Buddhha', 'Buddhha'), ('Interpersonal', 'Interpersonal'), ('intelligence', 'intelligence'), ('The', 'The'), ('ability', 'ability'), ('recognize', 'recognize'), ('make', 'make'), ('distinctions', 'distinction'), ('among', 'among'), ('people', 'people'), ('’', '’'), ('feelings', 'feeling'), (',', ','), ('beliefs', 'belief'), (',', ','), ('intentions', 'intention'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+Mass Communicators, Interviewers   You can say a machine or a system is artificially intelligent when it is equipped with at least one and at most all intelligences in it. 
+
+
+>> Tokens are: 
+ ['Mass', 'Communicators', ',', 'Interviewers', 'You', 'say', 'machine', 'system', 'artificially', 'intelligent', 'equipped', 'least', 'one', 'intelligences', '.']
+
+>> Bigrams are: 
+ [('Mass', 'Communicators'), ('Communicators', ','), (',', 'Interviewers'), ('Interviewers', 'You'), ('You', 'say'), ('say', 'machine'), ('machine', 'system'), ('system', 'artificially'), ('artificially', 'intelligent'), ('intelligent', 'equipped'), ('equipped', 'least'), ('least', 'one'), ('one', 'intelligences'), ('intelligences', '.')]
+
+>> Trigrams are: 
+ [('Mass', 'Communicators', ','), ('Communicators', ',', 'Interviewers'), (',', 'Interviewers', 'You'), ('Interviewers', 'You', 'say'), ('You', 'say', 'machine'), ('say', 'machine', 'system'), ('machine', 'system', 'artificially'), ('system', 'artificially', 'intelligent'), ('artificially', 'intelligent', 'equipped'), ('intelligent', 'equipped', 'least'), ('equipped', 'least', 'one'), ('least', 'one', 'intelligences'), ('one', 'intelligences', '.')]
+
+>> POS Tags are: 
+ [('Mass', 'NNP'), ('Communicators', 'NNP'), (',', ','), ('Interviewers', 'NNP'), ('You', 'PRP'), ('say', 'VBP'), ('machine', 'NN'), ('system', 'NN'), ('artificially', 'RB'), ('intelligent', 'JJ'), ('equipped', 'VBD'), ('least', 'JJS'), ('one', 'CD'), ('intelligences', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Mass/NNP Communicators/NNP)
+  ,/,
+  (NP Interviewers/NNP)
+  You/PRP
+  say/VBP
+  (NP machine/NN system/NN)
+  artificially/RB
+  intelligent/JJ
+  equipped/VBD
+  least/JJS
+  one/CD
+  (NP intelligences/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Mass Communicators', 'Interviewers', 'machine system', 'intelligences']
+
+>> Named Entities are: 
+ [('PERSON', 'Mass'), ('ORGANIZATION', 'Communicators')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Mass', 'mass'), ('Communicators', 'commun'), (',', ','), ('Interviewers', 'interview'), ('You', 'you'), ('say', 'say'), ('machine', 'machin'), ('system', 'system'), ('artificially', 'artifici'), ('intelligent', 'intellig'), ('equipped', 'equip'), ('least', 'least'), ('one', 'one'), ('intelligences', 'intellig'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Mass', 'mass'), ('Communicators', 'communic'), (',', ','), ('Interviewers', 'interview'), ('You', 'you'), ('say', 'say'), ('machine', 'machin'), ('system', 'system'), ('artificially', 'artifici'), ('intelligent', 'intellig'), ('equipped', 'equip'), ('least', 'least'), ('one', 'one'), ('intelligences', 'intellig'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Mass', 'Mass'), ('Communicators', 'Communicators'), (',', ','), ('Interviewers', 'Interviewers'), ('You', 'You'), ('say', 'say'), ('machine', 'machine'), ('system', 'system'), ('artificially', 'artificially'), ('intelligent', 'intelligent'), ('equipped', 'equipped'), ('least', 'least'), ('one', 'one'), ('intelligences', 'intelligence'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+What is Intelligence Composed of? 
+
+
+>> Tokens are: 
+ ['What', 'Intelligence', 'Composed', '?']
+
+>> Bigrams are: 
+ [('What', 'Intelligence'), ('Intelligence', 'Composed'), ('Composed', '?')]
+
+>> Trigrams are: 
+ [('What', 'Intelligence', 'Composed'), ('Intelligence', 'Composed', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Intelligence', 'NN'), ('Composed', 'VBD'), ('?', '.')]
+
+ (S What/WP (NP Intelligence/NN) Composed/VBD ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Intelligence']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Intelligence')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Intelligence', 'intellig'), ('Composed', 'compos'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Intelligence', 'intellig'), ('Composed', 'compos'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Intelligence', 'Intelligence'), ('Composed', 'Composed'), ('?', '?')]
+
+
+
+============================ Sentence 15 =============================
+
+The intelligence is intangible. 
+
+
+>> Tokens are: 
+ ['The', 'intelligence', 'intangible', '.']
+
+>> Bigrams are: 
+ [('The', 'intelligence'), ('intelligence', 'intangible'), ('intangible', '.')]
+
+>> Trigrams are: 
+ [('The', 'intelligence', 'intangible'), ('intelligence', 'intangible', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('intelligence', 'NN'), ('intangible', 'NN'), ('.', '.')]
+
+ (S (NP The/DT intelligence/NN intangible/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['The intelligence intangible']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('intelligence', 'intellig'), ('intangible', 'intang'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('intelligence', 'intellig'), ('intangible', 'intang'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('intelligence', 'intelligence'), ('intangible', 'intangible'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+It is composed of − · Reasoning · Learning · Problem Solving · Perception · Linguistic Intelligence Let us go through all the components briefly − · Reasoning − It is the set of processes that enables us to provide basis for judgement, making decisions, and prediction. 
+
+
+>> Tokens are: 
+ ['It', 'composed', '−', '·', 'Reasoning', '·', 'Learning', '·', 'Problem', 'Solving', '·', 'Perception', '·', 'Linguistic', 'Intelligence', 'Let', 'us', 'go', 'components', 'briefly', '−', '·', 'Reasoning', '−', 'It', 'set', 'processes', 'enables', 'us', 'provide', 'basis', 'judgement', ',', 'making', 'decisions', ',', 'prediction', '.']
+
+>> Bigrams are: 
+ [('It', 'composed'), ('composed', '−'), ('−', '·'), ('·', 'Reasoning'), ('Reasoning', '·'), ('·', 'Learning'), ('Learning', '·'), ('·', 'Problem'), ('Problem', 'Solving'), ('Solving', '·'), ('·', 'Perception'), ('Perception', '·'), ('·', 'Linguistic'), ('Linguistic', 'Intelligence'), ('Intelligence', 'Let'), ('Let', 'us'), ('us', 'go'), ('go', 'components'), ('components', 'briefly'), ('briefly', '−'), ('−', '·'), ('·', 'Reasoning'), ('Reasoning', '−'), ('−', 'It'), ('It', 'set'), ('set', 'processes'), ('processes', 'enables'), ('enables', 'us'), ('us', 'provide'), ('provide', 'basis'), ('basis', 'judgement'), ('judgement', ','), (',', 'making'), ('making', 'decisions'), ('decisions', ','), (',', 'prediction'), ('prediction', '.')]
+
+>> Trigrams are: 
+ [('It', 'composed', '−'), ('composed', '−', '·'), ('−', '·', 'Reasoning'), ('·', 'Reasoning', '·'), ('Reasoning', '·', 'Learning'), ('·', 'Learning', '·'), ('Learning', '·', 'Problem'), ('·', 'Problem', 'Solving'), ('Problem', 'Solving', '·'), ('Solving', '·', 'Perception'), ('·', 'Perception', '·'), ('Perception', '·', 'Linguistic'), ('·', 'Linguistic', 'Intelligence'), ('Linguistic', 'Intelligence', 'Let'), ('Intelligence', 'Let', 'us'), ('Let', 'us', 'go'), ('us', 'go', 'components'), ('go', 'components', 'briefly'), ('components', 'briefly', '−'), ('briefly', '−', '·'), ('−', '·', 'Reasoning'), ('·', 'Reasoning', '−'), ('Reasoning', '−', 'It'), ('−', 'It', 'set'), ('It', 'set', 'processes'), ('set', 'processes', 'enables'), ('processes', 'enables', 'us'), ('enables', 'us', 'provide'), ('us', 'provide', 'basis'), ('provide', 'basis', 'judgement'), ('basis', 'judgement', ','), ('judgement', ',', 'making'), (',', 'making', 'decisions'), ('making', 'decisions', ','), ('decisions', ',', 'prediction'), (',', 'prediction', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('composed', 'VBD'), ('−', 'NNP'), ('·', 'NNP'), ('Reasoning', 'NNP'), ('·', 'NNP'), ('Learning', 'NNP'), ('·', 'NNP'), ('Problem', 'NNP'), ('Solving', 'NNP'), ('·', 'NNP'), ('Perception', 'NNP'), ('·', 'NNP'), ('Linguistic', 'NNP'), ('Intelligence', 'NNP'), ('Let', 'NNP'), ('us', 'PRP'), ('go', 'VB'), ('components', 'NNS'), ('briefly', 'VB'), ('−', 'NNP'), ('·', 'NNP'), ('Reasoning', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('set', 'VBD'), ('processes', 'NNS'), ('enables', 'VBZ'), ('us', 'PRP'), ('provide', 'VB'), ('basis', 'NN'), ('judgement', 'NN'), (',', ','), ('making', 'VBG'), ('decisions', 'NNS'), (',', ','), ('prediction', 'NN'), ('.', '.')]
+
+ (S
+  It/PRP
+  composed/VBD
+  (NP
+    −/NNP
+    ·/NNP
+    Reasoning/NNP
+    ·/NNP
+    Learning/NNP
+    ·/NNP
+    Problem/NNP
+    Solving/NNP
+    ·/NNP
+    Perception/NNP
+    ·/NNP
+    Linguistic/NNP
+    Intelligence/NNP
+    Let/NNP)
+  us/PRP
+  go/VB
+  (NP components/NNS)
+  briefly/VB
+  (NP −/NNP ·/NNP Reasoning/NNP)
+  −/VBD
+  It/PRP
+  set/VBD
+  (NP processes/NNS)
+  enables/VBZ
+  us/PRP
+  provide/VB
+  (NP basis/NN judgement/NN)
+  ,/,
+  making/VBG
+  (NP decisions/NNS)
+  ,/,
+  (NP prediction/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['− · Reasoning · Learning · Problem Solving · Perception · Linguistic Intelligence Let', 'components', '− · Reasoning', 'processes', 'basis judgement', 'decisions', 'prediction']
+
+>> Named Entities are: 
+ [('PERSON', 'Linguistic Intelligence')] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('composed', 'compos'), ('−', '−'), ('·', '·'), ('Reasoning', 'reason'), ('·', '·'), ('Learning', 'learn'), ('·', '·'), ('Problem', 'problem'), ('Solving', 'solv'), ('·', '·'), ('Perception', 'percept'), ('·', '·'), ('Linguistic', 'linguist'), ('Intelligence', 'intellig'), ('Let', 'let'), ('us', 'us'), ('go', 'go'), ('components', 'compon'), ('briefly', 'briefli'), ('−', '−'), ('·', '·'), ('Reasoning', 'reason'), ('−', '−'), ('It', 'it'), ('set', 'set'), ('processes', 'process'), ('enables', 'enabl'), ('us', 'us'), ('provide', 'provid'), ('basis', 'basi'), ('judgement', 'judgement'), (',', ','), ('making', 'make'), ('decisions', 'decis'), (',', ','), ('prediction', 'predict'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('composed', 'compos'), ('−', '−'), ('·', '·'), ('Reasoning', 'reason'), ('·', '·'), ('Learning', 'learn'), ('·', '·'), ('Problem', 'problem'), ('Solving', 'solv'), ('·', '·'), ('Perception', 'percept'), ('·', '·'), ('Linguistic', 'linguist'), ('Intelligence', 'intellig'), ('Let', 'let'), ('us', 'us'), ('go', 'go'), ('components', 'compon'), ('briefly', 'briefli'), ('−', '−'), ('·', '·'), ('Reasoning', 'reason'), ('−', '−'), ('It', 'it'), ('set', 'set'), ('processes', 'process'), ('enables', 'enabl'), ('us', 'us'), ('provide', 'provid'), ('basis', 'basi'), ('judgement', 'judgement'), (',', ','), ('making', 'make'), ('decisions', 'decis'), (',', ','), ('prediction', 'predict'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('composed', 'composed'), ('−', '−'), ('·', '·'), ('Reasoning', 'Reasoning'), ('·', '·'), ('Learning', 'Learning'), ('·', '·'), ('Problem', 'Problem'), ('Solving', 'Solving'), ('·', '·'), ('Perception', 'Perception'), ('·', '·'), ('Linguistic', 'Linguistic'), ('Intelligence', 'Intelligence'), ('Let', 'Let'), ('us', 'u'), ('go', 'go'), ('components', 'component'), ('briefly', 'briefly'), ('−', '−'), ('·', '·'), ('Reasoning', 'Reasoning'), ('−', '−'), ('It', 'It'), ('set', 'set'), ('processes', 'process'), ('enables', 'enables'), ('us', 'u'), ('provide', 'provide'), ('basis', 'basis'), ('judgement', 'judgement'), (',', ','), ('making', 'making'), ('decisions', 'decision'), (',', ','), ('prediction', 'prediction'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+There are broadly two types − 	Inductive Reasoning 	Deductive Reasoning  	It conducts specific observations to makes broad general statements. 
+
+
+>> Tokens are: 
+ ['There', 'broadly', 'two', 'types', '−', 'Inductive', 'Reasoning', 'Deductive', 'Reasoning', 'It', 'conducts', 'specific', 'observations', 'makes', 'broad', 'general', 'statements', '.']
+
+>> Bigrams are: 
+ [('There', 'broadly'), ('broadly', 'two'), ('two', 'types'), ('types', '−'), ('−', 'Inductive'), ('Inductive', 'Reasoning'), ('Reasoning', 'Deductive'), ('Deductive', 'Reasoning'), ('Reasoning', 'It'), ('It', 'conducts'), ('conducts', 'specific'), ('specific', 'observations'), ('observations', 'makes'), ('makes', 'broad'), ('broad', 'general'), ('general', 'statements'), ('statements', '.')]
+
+>> Trigrams are: 
+ [('There', 'broadly', 'two'), ('broadly', 'two', 'types'), ('two', 'types', '−'), ('types', '−', 'Inductive'), ('−', 'Inductive', 'Reasoning'), ('Inductive', 'Reasoning', 'Deductive'), ('Reasoning', 'Deductive', 'Reasoning'), ('Deductive', 'Reasoning', 'It'), ('Reasoning', 'It', 'conducts'), ('It', 'conducts', 'specific'), ('conducts', 'specific', 'observations'), ('specific', 'observations', 'makes'), ('observations', 'makes', 'broad'), ('makes', 'broad', 'general'), ('broad', 'general', 'statements'), ('general', 'statements', '.')]
+
+>> POS Tags are: 
+ [('There', 'EX'), ('broadly', 'RB'), ('two', 'CD'), ('types', 'NNS'), ('−', 'VBP'), ('Inductive', 'NNP'), ('Reasoning', 'NNP'), ('Deductive', 'NNP'), ('Reasoning', 'VBG'), ('It', 'PRP'), ('conducts', 'VBZ'), ('specific', 'JJ'), ('observations', 'NNS'), ('makes', 'VBZ'), ('broad', 'JJ'), ('general', 'JJ'), ('statements', 'NNS'), ('.', '.')]
+
+ (S
+  There/EX
+  broadly/RB
+  two/CD
+  (NP types/NNS)
+  −/VBP
+  (NP Inductive/NNP Reasoning/NNP Deductive/NNP)
+  Reasoning/VBG
+  It/PRP
+  conducts/VBZ
+  (NP specific/JJ observations/NNS)
+  makes/VBZ
+  (NP broad/JJ general/JJ statements/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['types', 'Inductive Reasoning Deductive', 'specific observations', 'broad general statements']
+
+>> Named Entities are: 
+ [('PERSON', 'Inductive Reasoning Deductive')] 
+
+>> Stemming using Porter Stemmer: 
+ [('There', 'there'), ('broadly', 'broadli'), ('two', 'two'), ('types', 'type'), ('−', '−'), ('Inductive', 'induct'), ('Reasoning', 'reason'), ('Deductive', 'deduct'), ('Reasoning', 'reason'), ('It', 'it'), ('conducts', 'conduct'), ('specific', 'specif'), ('observations', 'observ'), ('makes', 'make'), ('broad', 'broad'), ('general', 'gener'), ('statements', 'statement'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('There', 'there'), ('broadly', 'broad'), ('two', 'two'), ('types', 'type'), ('−', '−'), ('Inductive', 'induct'), ('Reasoning', 'reason'), ('Deductive', 'deduct'), ('Reasoning', 'reason'), ('It', 'it'), ('conducts', 'conduct'), ('specific', 'specif'), ('observations', 'observ'), ('makes', 'make'), ('broad', 'broad'), ('general', 'general'), ('statements', 'statement'), ('.', '.')]
+
+>> Lemmatization: 
+ [('There', 'There'), ('broadly', 'broadly'), ('two', 'two'), ('types', 'type'), ('−', '−'), ('Inductive', 'Inductive'), ('Reasoning', 'Reasoning'), ('Deductive', 'Deductive'), ('Reasoning', 'Reasoning'), ('It', 'It'), ('conducts', 'conduct'), ('specific', 'specific'), ('observations', 'observation'), ('makes', 'make'), ('broad', 'broad'), ('general', 'general'), ('statements', 'statement'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+It starts with a general statement and examines the possibilities to reach a specific, logical conclusion. 
+
+
+>> Tokens are: 
+ ['It', 'starts', 'general', 'statement', 'examines', 'possibilities', 'reach', 'specific', ',', 'logical', 'conclusion', '.']
+
+>> Bigrams are: 
+ [('It', 'starts'), ('starts', 'general'), ('general', 'statement'), ('statement', 'examines'), ('examines', 'possibilities'), ('possibilities', 'reach'), ('reach', 'specific'), ('specific', ','), (',', 'logical'), ('logical', 'conclusion'), ('conclusion', '.')]
+
+>> Trigrams are: 
+ [('It', 'starts', 'general'), ('starts', 'general', 'statement'), ('general', 'statement', 'examines'), ('statement', 'examines', 'possibilities'), ('examines', 'possibilities', 'reach'), ('possibilities', 'reach', 'specific'), ('reach', 'specific', ','), ('specific', ',', 'logical'), (',', 'logical', 'conclusion'), ('logical', 'conclusion', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('starts', 'VBZ'), ('general', 'JJ'), ('statement', 'NN'), ('examines', 'NNS'), ('possibilities', 'NNS'), ('reach', 'VBP'), ('specific', 'JJ'), (',', ','), ('logical', 'JJ'), ('conclusion', 'NN'), ('.', '.')]
+
+ (S
+  It/PRP
+  starts/VBZ
+  (NP general/JJ statement/NN examines/NNS possibilities/NNS)
+  reach/VBP
+  specific/JJ
+  ,/,
+  (NP logical/JJ conclusion/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['general statement examines possibilities', 'logical conclusion']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('starts', 'start'), ('general', 'gener'), ('statement', 'statement'), ('examines', 'examin'), ('possibilities', 'possibl'), ('reach', 'reach'), ('specific', 'specif'), (',', ','), ('logical', 'logic'), ('conclusion', 'conclus'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('starts', 'start'), ('general', 'general'), ('statement', 'statement'), ('examines', 'examin'), ('possibilities', 'possibl'), ('reach', 'reach'), ('specific', 'specif'), (',', ','), ('logical', 'logic'), ('conclusion', 'conclus'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('starts', 'start'), ('general', 'general'), ('statement', 'statement'), ('examines', 'examines'), ('possibilities', 'possibility'), ('reach', 'reach'), ('specific', 'specific'), (',', ','), ('logical', 'logical'), ('conclusion', 'conclusion'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+Even if all of the premises are true in a statement, inductive reasoning allows for the conclusion to be false. 
+
+
+>> Tokens are: 
+ ['Even', 'premises', 'true', 'statement', ',', 'inductive', 'reasoning', 'allows', 'conclusion', 'false', '.']
+
+>> Bigrams are: 
+ [('Even', 'premises'), ('premises', 'true'), ('true', 'statement'), ('statement', ','), (',', 'inductive'), ('inductive', 'reasoning'), ('reasoning', 'allows'), ('allows', 'conclusion'), ('conclusion', 'false'), ('false', '.')]
+
+>> Trigrams are: 
+ [('Even', 'premises', 'true'), ('premises', 'true', 'statement'), ('true', 'statement', ','), ('statement', ',', 'inductive'), (',', 'inductive', 'reasoning'), ('inductive', 'reasoning', 'allows'), ('reasoning', 'allows', 'conclusion'), ('allows', 'conclusion', 'false'), ('conclusion', 'false', '.')]
+
+>> POS Tags are: 
+ [('Even', 'RB'), ('premises', 'VBZ'), ('true', 'JJ'), ('statement', 'NN'), (',', ','), ('inductive', 'JJ'), ('reasoning', 'NN'), ('allows', 'VBZ'), ('conclusion', 'NN'), ('false', 'NN'), ('.', '.')]
+
+ (S
+  Even/RB
+  premises/VBZ
+  (NP true/JJ statement/NN)
+  ,/,
+  (NP inductive/JJ reasoning/NN)
+  allows/VBZ
+  (NP conclusion/NN false/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['true statement', 'inductive reasoning', 'conclusion false']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Even', 'even'), ('premises', 'premis'), ('true', 'true'), ('statement', 'statement'), (',', ','), ('inductive', 'induct'), ('reasoning', 'reason'), ('allows', 'allow'), ('conclusion', 'conclus'), ('false', 'fals'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Even', 'even'), ('premises', 'premis'), ('true', 'true'), ('statement', 'statement'), (',', ','), ('inductive', 'induct'), ('reasoning', 'reason'), ('allows', 'allow'), ('conclusion', 'conclus'), ('false', 'fals'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Even', 'Even'), ('premises', 'premise'), ('true', 'true'), ('statement', 'statement'), (',', ','), ('inductive', 'inductive'), ('reasoning', 'reasoning'), ('allows', 'allows'), ('conclusion', 'conclusion'), ('false', 'false'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+If something is true of a class of things in general, it is also true for all members of that class. 
+
+
+>> Tokens are: 
+ ['If', 'something', 'true', 'class', 'things', 'general', ',', 'also', 'true', 'members', 'class', '.']
+
+>> Bigrams are: 
+ [('If', 'something'), ('something', 'true'), ('true', 'class'), ('class', 'things'), ('things', 'general'), ('general', ','), (',', 'also'), ('also', 'true'), ('true', 'members'), ('members', 'class'), ('class', '.')]
+
+>> Trigrams are: 
+ [('If', 'something', 'true'), ('something', 'true', 'class'), ('true', 'class', 'things'), ('class', 'things', 'general'), ('things', 'general', ','), ('general', ',', 'also'), (',', 'also', 'true'), ('also', 'true', 'members'), ('true', 'members', 'class'), ('members', 'class', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('something', 'NN'), ('true', 'JJ'), ('class', 'NN'), ('things', 'NNS'), ('general', 'JJ'), (',', ','), ('also', 'RB'), ('true', 'JJ'), ('members', 'NNS'), ('class', 'NN'), ('.', '.')]
+
+ (S
+  If/IN
+  (NP something/NN)
+  (NP true/JJ class/NN things/NNS)
+  general/JJ
+  ,/,
+  also/RB
+  (NP true/JJ members/NNS class/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['something', 'true class things', 'true members class']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('something', 'someth'), ('true', 'true'), ('class', 'class'), ('things', 'thing'), ('general', 'gener'), (',', ','), ('also', 'also'), ('true', 'true'), ('members', 'member'), ('class', 'class'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('something', 'someth'), ('true', 'true'), ('class', 'class'), ('things', 'thing'), ('general', 'general'), (',', ','), ('also', 'also'), ('true', 'true'), ('members', 'member'), ('class', 'class'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('something', 'something'), ('true', 'true'), ('class', 'class'), ('things', 'thing'), ('general', 'general'), (',', ','), ('also', 'also'), ('true', 'true'), ('members', 'member'), ('class', 'class'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+Example − "Nita is a teacher. 
+
+
+>> Tokens are: 
+ ['Example', '−', '``', 'Nita', 'teacher', '.']
+
+>> Bigrams are: 
+ [('Example', '−'), ('−', '``'), ('``', 'Nita'), ('Nita', 'teacher'), ('teacher', '.')]
+
+>> Trigrams are: 
+ [('Example', '−', '``'), ('−', '``', 'Nita'), ('``', 'Nita', 'teacher'), ('Nita', 'teacher', '.')]
+
+>> POS Tags are: 
+ [('Example', 'NNP'), ('−', 'NNP'), ('``', '``'), ('Nita', 'NNP'), ('teacher', 'NN'), ('.', '.')]
+
+ (S (NP Example/NNP −/NNP) ``/`` (NP Nita/NNP teacher/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['Example −', 'Nita teacher']
+
+>> Named Entities are: 
+ [('PERSON', 'Example')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Example', 'exampl'), ('−', '−'), ('``', '``'), ('Nita', 'nita'), ('teacher', 'teacher'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Example', 'exampl'), ('−', '−'), ('``', '``'), ('Nita', 'nita'), ('teacher', 'teacher'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Example', 'Example'), ('−', '−'), ('``', '``'), ('Nita', 'Nita'), ('teacher', 'teacher'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+Nita is studious. 
+
+
+>> Tokens are: 
+ ['Nita', 'studious', '.']
+
+>> Bigrams are: 
+ [('Nita', 'studious'), ('studious', '.')]
+
+>> Trigrams are: 
+ [('Nita', 'studious', '.')]
+
+>> POS Tags are: 
+ [('Nita', 'NNP'), ('studious', 'JJ'), ('.', '.')]
+
+ (S (NP Nita/NNP) studious/JJ ./.) 
+
+
+>> Noun Phrases are: 
+ ['Nita']
+
+>> Named Entities are: 
+ [('GPE', 'Nita')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Nita', 'nita'), ('studious', 'studiou'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Nita', 'nita'), ('studious', 'studious'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Nita', 'Nita'), ('studious', 'studious'), ('.', '.')]
+
+
+
+============================ Sentence 23 =============================
+
+Therefore, All teachers are studious." 
+
+
+>> Tokens are: 
+ ['Therefore', ',', 'All', 'teachers', 'studious', '.', "''"]
+
+>> Bigrams are: 
+ [('Therefore', ','), (',', 'All'), ('All', 'teachers'), ('teachers', 'studious'), ('studious', '.'), ('.', "''")]
+
+>> Trigrams are: 
+ [('Therefore', ',', 'All'), (',', 'All', 'teachers'), ('All', 'teachers', 'studious'), ('teachers', 'studious', '.'), ('studious', '.', "''")]
+
+>> POS Tags are: 
+ [('Therefore', 'RB'), (',', ','), ('All', 'DT'), ('teachers', 'NNS'), ('studious', 'JJ'), ('.', '.'), ("''", "''")]
+
+ (S Therefore/RB ,/, (NP All/DT teachers/NNS) studious/JJ ./. ''/'') 
+
+
+>> Noun Phrases are: 
+ ['All teachers']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Therefore', 'therefor'), (',', ','), ('All', 'all'), ('teachers', 'teacher'), ('studious', 'studiou'), ('.', '.'), ("''", "''")]
+
+>> Stemming using Snowball Stemmer: 
+ [('Therefore', 'therefor'), (',', ','), ('All', 'all'), ('teachers', 'teacher'), ('studious', 'studious'), ('.', '.'), ("''", "''")]
+
+>> Lemmatization: 
+ [('Therefore', 'Therefore'), (',', ','), ('All', 'All'), ('teachers', 'teacher'), ('studious', 'studious'), ('.', '.'), ("''", "''")]
+
+
+
+============================ Sentence 24 =============================
+
+Example − "All women of age above 60 years are grandmothers. 
+
+
+>> Tokens are: 
+ ['Example', '−', '``', 'All', 'women', 'age', '60', 'years', 'grandmothers', '.']
+
+>> Bigrams are: 
+ [('Example', '−'), ('−', '``'), ('``', 'All'), ('All', 'women'), ('women', 'age'), ('age', '60'), ('60', 'years'), ('years', 'grandmothers'), ('grandmothers', '.')]
+
+>> Trigrams are: 
+ [('Example', '−', '``'), ('−', '``', 'All'), ('``', 'All', 'women'), ('All', 'women', 'age'), ('women', 'age', '60'), ('age', '60', 'years'), ('60', 'years', 'grandmothers'), ('years', 'grandmothers', '.')]
+
+>> POS Tags are: 
+ [('Example', 'NNP'), ('−', 'NNP'), ('``', '``'), ('All', 'NNP'), ('women', 'NNS'), ('age', 'NN'), ('60', 'CD'), ('years', 'NNS'), ('grandmothers', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Example/NNP −/NNP)
+  ``/``
+  (NP All/NNP women/NNS age/NN)
+  60/CD
+  (NP years/NNS grandmothers/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Example −', 'All women age', 'years grandmothers']
+
+>> Named Entities are: 
+ [('PERSON', 'Example')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Example', 'exampl'), ('−', '−'), ('``', '``'), ('All', 'all'), ('women', 'women'), ('age', 'age'), ('60', '60'), ('years', 'year'), ('grandmothers', 'grandmoth'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Example', 'exampl'), ('−', '−'), ('``', '``'), ('All', 'all'), ('women', 'women'), ('age', 'age'), ('60', '60'), ('years', 'year'), ('grandmothers', 'grandmoth'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Example', 'Example'), ('−', '−'), ('``', '``'), ('All', 'All'), ('women', 'woman'), ('age', 'age'), ('60', '60'), ('years', 'year'), ('grandmothers', 'grandmother'), ('.', '.')]
+
+
+
+============================ Sentence 25 =============================
+
+Shalini is 65 years. 
+
+
+>> Tokens are: 
+ ['Shalini', '65', 'years', '.']
+
+>> Bigrams are: 
+ [('Shalini', '65'), ('65', 'years'), ('years', '.')]
+
+>> Trigrams are: 
+ [('Shalini', '65', 'years'), ('65', 'years', '.')]
+
+>> POS Tags are: 
+ [('Shalini', 'NNP'), ('65', 'CD'), ('years', 'NNS'), ('.', '.')]
+
+ (S (NP Shalini/NNP) 65/CD (NP years/NNS) ./.) 
+
+
+>> Noun Phrases are: 
+ ['Shalini', 'years']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Shalini', 'shalini'), ('65', '65'), ('years', 'year'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Shalini', 'shalini'), ('65', '65'), ('years', 'year'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Shalini', 'Shalini'), ('65', '65'), ('years', 'year'), ('.', '.')]
+
+
+
+============================ Sentence 26 =============================
+
+Therefore, Shalini is a grandmother." 
+
+
+>> Tokens are: 
+ ['Therefore', ',', 'Shalini', 'grandmother', '.', "''"]
+
+>> Bigrams are: 
+ [('Therefore', ','), (',', 'Shalini'), ('Shalini', 'grandmother'), ('grandmother', '.'), ('.', "''")]
+
+>> Trigrams are: 
+ [('Therefore', ',', 'Shalini'), (',', 'Shalini', 'grandmother'), ('Shalini', 'grandmother', '.'), ('grandmother', '.', "''")]
+
+>> POS Tags are: 
+ [('Therefore', 'RB'), (',', ','), ('Shalini', 'NNP'), ('grandmother', 'NN'), ('.', '.'), ("''", "''")]
+
+ (S Therefore/RB ,/, (NP Shalini/NNP grandmother/NN) ./. ''/'') 
+
+
+>> Noun Phrases are: 
+ ['Shalini grandmother']
+
+>> Named Entities are: 
+ [('PERSON', 'Shalini')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Therefore', 'therefor'), (',', ','), ('Shalini', 'shalini'), ('grandmother', 'grandmoth'), ('.', '.'), ("''", "''")]
+
+>> Stemming using Snowball Stemmer: 
+ [('Therefore', 'therefor'), (',', ','), ('Shalini', 'shalini'), ('grandmother', 'grandmoth'), ('.', '.'), ("''", "''")]
+
+>> Lemmatization: 
+ [('Therefore', 'Therefore'), (',', ','), ('Shalini', 'Shalini'), ('grandmother', 'grandmother'), ('.', '.'), ("''", "''")]
+
+
+
+============================ Sentence 27 =============================
+
+·  Learning − It is the activity of gaining knowledge or skill by studying, practising, being taught, or experiencing something. 
+
+
+>> Tokens are: 
+ ['·', 'Learning', '−', 'It', 'activity', 'gaining', 'knowledge', 'skill', 'studying', ',', 'practising', ',', 'taught', ',', 'experiencing', 'something', '.']
+
+>> Bigrams are: 
+ [('·', 'Learning'), ('Learning', '−'), ('−', 'It'), ('It', 'activity'), ('activity', 'gaining'), ('gaining', 'knowledge'), ('knowledge', 'skill'), ('skill', 'studying'), ('studying', ','), (',', 'practising'), ('practising', ','), (',', 'taught'), ('taught', ','), (',', 'experiencing'), ('experiencing', 'something'), ('something', '.')]
+
+>> Trigrams are: 
+ [('·', 'Learning', '−'), ('Learning', '−', 'It'), ('−', 'It', 'activity'), ('It', 'activity', 'gaining'), ('activity', 'gaining', 'knowledge'), ('gaining', 'knowledge', 'skill'), ('knowledge', 'skill', 'studying'), ('skill', 'studying', ','), ('studying', ',', 'practising'), (',', 'practising', ','), ('practising', ',', 'taught'), (',', 'taught', ','), ('taught', ',', 'experiencing'), (',', 'experiencing', 'something'), ('experiencing', 'something', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Learning', 'NNP'), ('−', 'VBZ'), ('It', 'PRP'), ('activity', 'NN'), ('gaining', 'VBG'), ('knowledge', 'NN'), ('skill', 'NN'), ('studying', 'VBG'), (',', ','), ('practising', 'VBG'), (',', ','), ('taught', 'NN'), (',', ','), ('experiencing', 'VBG'), ('something', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/NN Learning/NNP)
+  −/VBZ
+  It/PRP
+  (NP activity/NN)
+  gaining/VBG
+  (NP knowledge/NN skill/NN)
+  studying/VBG
+  ,/,
+  practising/VBG
+  ,/,
+  (NP taught/NN)
+  ,/,
+  experiencing/VBG
+  (NP something/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Learning', 'activity', 'knowledge skill', 'taught', 'something']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('activity', 'activ'), ('gaining', 'gain'), ('knowledge', 'knowledg'), ('skill', 'skill'), ('studying', 'studi'), (',', ','), ('practising', 'practis'), (',', ','), ('taught', 'taught'), (',', ','), ('experiencing', 'experienc'), ('something', 'someth'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('activity', 'activ'), ('gaining', 'gain'), ('knowledge', 'knowledg'), ('skill', 'skill'), ('studying', 'studi'), (',', ','), ('practising', 'practis'), (',', ','), ('taught', 'taught'), (',', ','), ('experiencing', 'experienc'), ('something', 'someth'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Learning', 'Learning'), ('−', '−'), ('It', 'It'), ('activity', 'activity'), ('gaining', 'gaining'), ('knowledge', 'knowledge'), ('skill', 'skill'), ('studying', 'studying'), (',', ','), ('practising', 'practising'), (',', ','), ('taught', 'taught'), (',', ','), ('experiencing', 'experiencing'), ('something', 'something'), ('.', '.')]
+
+
+
+============================ Sentence 28 =============================
+
+Learning enhances the awareness of the subjects of the study. 
+
+
+>> Tokens are: 
+ ['Learning', 'enhances', 'awareness', 'subjects', 'study', '.']
+
+>> Bigrams are: 
+ [('Learning', 'enhances'), ('enhances', 'awareness'), ('awareness', 'subjects'), ('subjects', 'study'), ('study', '.')]
+
+>> Trigrams are: 
+ [('Learning', 'enhances', 'awareness'), ('enhances', 'awareness', 'subjects'), ('awareness', 'subjects', 'study'), ('subjects', 'study', '.')]
+
+>> POS Tags are: 
+ [('Learning', 'VBG'), ('enhances', 'NNS'), ('awareness', 'JJ'), ('subjects', 'NNS'), ('study', 'NN'), ('.', '.')]
+
+ (S
+  Learning/VBG
+  (NP enhances/NNS)
+  (NP awareness/JJ subjects/NNS study/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['enhances', 'awareness subjects study']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Learning', 'learn'), ('enhances', 'enhanc'), ('awareness', 'awar'), ('subjects', 'subject'), ('study', 'studi'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Learning', 'learn'), ('enhances', 'enhanc'), ('awareness', 'awar'), ('subjects', 'subject'), ('study', 'studi'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Learning', 'Learning'), ('enhances', 'enhances'), ('awareness', 'awareness'), ('subjects', 'subject'), ('study', 'study'), ('.', '.')]
+
+
+
+============================ Sentence 29 =============================
+
+The ability of learning is possessed by humans, some animals, and AI-enabled systems. 
+
+
+>> Tokens are: 
+ ['The', 'ability', 'learning', 'possessed', 'humans', ',', 'animals', ',', 'AI-enabled', 'systems', '.']
+
+>> Bigrams are: 
+ [('The', 'ability'), ('ability', 'learning'), ('learning', 'possessed'), ('possessed', 'humans'), ('humans', ','), (',', 'animals'), ('animals', ','), (',', 'AI-enabled'), ('AI-enabled', 'systems'), ('systems', '.')]
+
+>> Trigrams are: 
+ [('The', 'ability', 'learning'), ('ability', 'learning', 'possessed'), ('learning', 'possessed', 'humans'), ('possessed', 'humans', ','), ('humans', ',', 'animals'), (',', 'animals', ','), ('animals', ',', 'AI-enabled'), (',', 'AI-enabled', 'systems'), ('AI-enabled', 'systems', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('ability', 'NN'), ('learning', 'VBG'), ('possessed', 'JJ'), ('humans', 'NNS'), (',', ','), ('animals', 'NNS'), (',', ','), ('AI-enabled', 'JJ'), ('systems', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT ability/NN)
+  learning/VBG
+  (NP possessed/JJ humans/NNS)
+  ,/,
+  (NP animals/NNS)
+  ,/,
+  (NP AI-enabled/JJ systems/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The ability', 'possessed humans', 'animals', 'AI-enabled systems']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('ability', 'abil'), ('learning', 'learn'), ('possessed', 'possess'), ('humans', 'human'), (',', ','), ('animals', 'anim'), (',', ','), ('AI-enabled', 'ai-en'), ('systems', 'system'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('ability', 'abil'), ('learning', 'learn'), ('possessed', 'possess'), ('humans', 'human'), (',', ','), ('animals', 'anim'), (',', ','), ('AI-enabled', 'ai-en'), ('systems', 'system'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('ability', 'ability'), ('learning', 'learning'), ('possessed', 'possessed'), ('humans', 'human'), (',', ','), ('animals', 'animal'), (',', ','), ('AI-enabled', 'AI-enabled'), ('systems', 'system'), ('.', '.')]
+
+
+
+============================ Sentence 30 =============================
+
+Learning is categorized as − · Auditory Learning − It is learning by listening and hearing. 
+
+
+>> Tokens are: 
+ ['Learning', 'categorized', '−', '·', 'Auditory', 'Learning', '−', 'It', 'learning', 'listening', 'hearing', '.']
+
+>> Bigrams are: 
+ [('Learning', 'categorized'), ('categorized', '−'), ('−', '·'), ('·', 'Auditory'), ('Auditory', 'Learning'), ('Learning', '−'), ('−', 'It'), ('It', 'learning'), ('learning', 'listening'), ('listening', 'hearing'), ('hearing', '.')]
+
+>> Trigrams are: 
+ [('Learning', 'categorized', '−'), ('categorized', '−', '·'), ('−', '·', 'Auditory'), ('·', 'Auditory', 'Learning'), ('Auditory', 'Learning', '−'), ('Learning', '−', 'It'), ('−', 'It', 'learning'), ('It', 'learning', 'listening'), ('learning', 'listening', 'hearing'), ('listening', 'hearing', '.')]
+
+>> POS Tags are: 
+ [('Learning', 'VBG'), ('categorized', 'VBN'), ('−', 'JJ'), ('·', 'NNP'), ('Auditory', 'NNP'), ('Learning', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('learning', 'VBG'), ('listening', 'VBG'), ('hearing', 'NN'), ('.', '.')]
+
+ (S
+  Learning/VBG
+  categorized/VBN
+  (NP −/JJ ·/NNP Auditory/NNP Learning/NNP)
+  −/VBD
+  It/PRP
+  learning/VBG
+  listening/VBG
+  (NP hearing/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['− · Auditory Learning', 'hearing']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Learning', 'learn'), ('categorized', 'categor'), ('−', '−'), ('·', '·'), ('Auditory', 'auditori'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('learning', 'learn'), ('listening', 'listen'), ('hearing', 'hear'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Learning', 'learn'), ('categorized', 'categor'), ('−', '−'), ('·', '·'), ('Auditory', 'auditori'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('learning', 'learn'), ('listening', 'listen'), ('hearing', 'hear'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Learning', 'Learning'), ('categorized', 'categorized'), ('−', '−'), ('·', '·'), ('Auditory', 'Auditory'), ('Learning', 'Learning'), ('−', '−'), ('It', 'It'), ('learning', 'learning'), ('listening', 'listening'), ('hearing', 'hearing'), ('.', '.')]
+
+
+
+============================ Sentence 31 =============================
+
+For example, students listening to recorded audio lectures. 
+
+
+>> Tokens are: 
+ ['For', 'example', ',', 'students', 'listening', 'recorded', 'audio', 'lectures', '.']
+
+>> Bigrams are: 
+ [('For', 'example'), ('example', ','), (',', 'students'), ('students', 'listening'), ('listening', 'recorded'), ('recorded', 'audio'), ('audio', 'lectures'), ('lectures', '.')]
+
+>> Trigrams are: 
+ [('For', 'example', ','), ('example', ',', 'students'), (',', 'students', 'listening'), ('students', 'listening', 'recorded'), ('listening', 'recorded', 'audio'), ('recorded', 'audio', 'lectures'), ('audio', 'lectures', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('example', 'NN'), (',', ','), ('students', 'NNS'), ('listening', 'VBG'), ('recorded', 'VBD'), ('audio', 'JJ'), ('lectures', 'NNS'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP example/NN)
+  ,/,
+  (NP students/NNS)
+  listening/VBG
+  recorded/VBD
+  (NP audio/JJ lectures/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['example', 'students', 'audio lectures']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('students', 'student'), ('listening', 'listen'), ('recorded', 'record'), ('audio', 'audio'), ('lectures', 'lectur'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('students', 'student'), ('listening', 'listen'), ('recorded', 'record'), ('audio', 'audio'), ('lectures', 'lectur'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('example', 'example'), (',', ','), ('students', 'student'), ('listening', 'listening'), ('recorded', 'recorded'), ('audio', 'audio'), ('lectures', 'lecture'), ('.', '.')]
+
+
+
+============================ Sentence 32 =============================
+
+· Episodic Learning − To learn by remembering sequences of events that one has witnessed or experienced. 
+
+
+>> Tokens are: 
+ ['·', 'Episodic', 'Learning', '−', 'To', 'learn', 'remembering', 'sequences', 'events', 'one', 'witnessed', 'experienced', '.']
+
+>> Bigrams are: 
+ [('·', 'Episodic'), ('Episodic', 'Learning'), ('Learning', '−'), ('−', 'To'), ('To', 'learn'), ('learn', 'remembering'), ('remembering', 'sequences'), ('sequences', 'events'), ('events', 'one'), ('one', 'witnessed'), ('witnessed', 'experienced'), ('experienced', '.')]
+
+>> Trigrams are: 
+ [('·', 'Episodic', 'Learning'), ('Episodic', 'Learning', '−'), ('Learning', '−', 'To'), ('−', 'To', 'learn'), ('To', 'learn', 'remembering'), ('learn', 'remembering', 'sequences'), ('remembering', 'sequences', 'events'), ('sequences', 'events', 'one'), ('events', 'one', 'witnessed'), ('one', 'witnessed', 'experienced'), ('witnessed', 'experienced', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Episodic', 'NNP'), ('Learning', 'NNP'), ('−', 'NNP'), ('To', 'TO'), ('learn', 'VB'), ('remembering', 'VBG'), ('sequences', 'NNS'), ('events', 'NNS'), ('one', 'CD'), ('witnessed', 'VBD'), ('experienced', 'VBN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Episodic/NNP Learning/NNP −/NNP)
+  To/TO
+  learn/VB
+  remembering/VBG
+  (NP sequences/NNS events/NNS)
+  one/CD
+  witnessed/VBD
+  experienced/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Episodic Learning −', 'sequences events']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Episodic', 'episod'), ('Learning', 'learn'), ('−', '−'), ('To', 'to'), ('learn', 'learn'), ('remembering', 'rememb'), ('sequences', 'sequenc'), ('events', 'event'), ('one', 'one'), ('witnessed', 'wit'), ('experienced', 'experienc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Episodic', 'episod'), ('Learning', 'learn'), ('−', '−'), ('To', 'to'), ('learn', 'learn'), ('remembering', 'rememb'), ('sequences', 'sequenc'), ('events', 'event'), ('one', 'one'), ('witnessed', 'wit'), ('experienced', 'experienc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Episodic', 'Episodic'), ('Learning', 'Learning'), ('−', '−'), ('To', 'To'), ('learn', 'learn'), ('remembering', 'remembering'), ('sequences', 'sequence'), ('events', 'event'), ('one', 'one'), ('witnessed', 'witnessed'), ('experienced', 'experienced'), ('.', '.')]
+
+
+
+============================ Sentence 33 =============================
+
+This is linear and orderly. 
+
+
+>> Tokens are: 
+ ['This', 'linear', 'orderly', '.']
+
+>> Bigrams are: 
+ [('This', 'linear'), ('linear', 'orderly'), ('orderly', '.')]
+
+>> Trigrams are: 
+ [('This', 'linear', 'orderly'), ('linear', 'orderly', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('linear', 'JJ'), ('orderly', 'RB'), ('.', '.')]
+
+ (S This/DT linear/JJ orderly/RB ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('linear', 'linear'), ('orderly', 'orderli'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('linear', 'linear'), ('orderly', 'order'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('linear', 'linear'), ('orderly', 'orderly'), ('.', '.')]
+
+
+
+============================ Sentence 34 =============================
+
+· Motor Learning − It is learning by precise movement of muscles. 
+
+
+>> Tokens are: 
+ ['·', 'Motor', 'Learning', '−', 'It', 'learning', 'precise', 'movement', 'muscles', '.']
+
+>> Bigrams are: 
+ [('·', 'Motor'), ('Motor', 'Learning'), ('Learning', '−'), ('−', 'It'), ('It', 'learning'), ('learning', 'precise'), ('precise', 'movement'), ('movement', 'muscles'), ('muscles', '.')]
+
+>> Trigrams are: 
+ [('·', 'Motor', 'Learning'), ('Motor', 'Learning', '−'), ('Learning', '−', 'It'), ('−', 'It', 'learning'), ('It', 'learning', 'precise'), ('learning', 'precise', 'movement'), ('precise', 'movement', 'muscles'), ('movement', 'muscles', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Motor', 'NNP'), ('Learning', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('learning', 'VBG'), ('precise', 'JJ'), ('movement', 'NN'), ('muscles', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Motor/NNP Learning/NNP)
+  −/VBD
+  It/PRP
+  learning/VBG
+  (NP precise/JJ movement/NN muscles/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Motor Learning', 'precise movement muscles']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Motor', 'motor'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('learning', 'learn'), ('precise', 'precis'), ('movement', 'movement'), ('muscles', 'muscl'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Motor', 'motor'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('learning', 'learn'), ('precise', 'precis'), ('movement', 'movement'), ('muscles', 'muscl'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Motor', 'Motor'), ('Learning', 'Learning'), ('−', '−'), ('It', 'It'), ('learning', 'learning'), ('precise', 'precise'), ('movement', 'movement'), ('muscles', 'muscle'), ('.', '.')]
+
+
+
+============================ Sentence 35 =============================
+
+For example, picking objects, Writing, etc. 
+
+
+>> Tokens are: 
+ ['For', 'example', ',', 'picking', 'objects', ',', 'Writing', ',', 'etc', '.']
+
+>> Bigrams are: 
+ [('For', 'example'), ('example', ','), (',', 'picking'), ('picking', 'objects'), ('objects', ','), (',', 'Writing'), ('Writing', ','), (',', 'etc'), ('etc', '.')]
+
+>> Trigrams are: 
+ [('For', 'example', ','), ('example', ',', 'picking'), (',', 'picking', 'objects'), ('picking', 'objects', ','), ('objects', ',', 'Writing'), (',', 'Writing', ','), ('Writing', ',', 'etc'), (',', 'etc', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('example', 'NN'), (',', ','), ('picking', 'VBG'), ('objects', 'NNS'), (',', ','), ('Writing', 'NNP'), (',', ','), ('etc', 'NN'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP example/NN)
+  ,/,
+  picking/VBG
+  (NP objects/NNS)
+  ,/,
+  (NP Writing/NNP)
+  ,/,
+  (NP etc/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['example', 'objects', 'Writing', 'etc']
+
+>> Named Entities are: 
+ [('GPE', 'Writing')] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('picking', 'pick'), ('objects', 'object'), (',', ','), ('Writing', 'write'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('picking', 'pick'), ('objects', 'object'), (',', ','), ('Writing', 'write'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('example', 'example'), (',', ','), ('picking', 'picking'), ('objects', 'object'), (',', ','), ('Writing', 'Writing'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+
+
+============================ Sentence 36 =============================
+
+· Observational Learning − To learn by watching and imitating others. 
+
+
+>> Tokens are: 
+ ['·', 'Observational', 'Learning', '−', 'To', 'learn', 'watching', 'imitating', 'others', '.']
+
+>> Bigrams are: 
+ [('·', 'Observational'), ('Observational', 'Learning'), ('Learning', '−'), ('−', 'To'), ('To', 'learn'), ('learn', 'watching'), ('watching', 'imitating'), ('imitating', 'others'), ('others', '.')]
+
+>> Trigrams are: 
+ [('·', 'Observational', 'Learning'), ('Observational', 'Learning', '−'), ('Learning', '−', 'To'), ('−', 'To', 'learn'), ('To', 'learn', 'watching'), ('learn', 'watching', 'imitating'), ('watching', 'imitating', 'others'), ('imitating', 'others', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Observational', 'NNP'), ('Learning', 'NNP'), ('−', 'NNP'), ('To', 'TO'), ('learn', 'VB'), ('watching', 'VBG'), ('imitating', 'VBG'), ('others', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Observational/NNP Learning/NNP −/NNP)
+  To/TO
+  learn/VB
+  watching/VBG
+  imitating/VBG
+  (NP others/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Observational Learning −', 'others']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Observational', 'observ'), ('Learning', 'learn'), ('−', '−'), ('To', 'to'), ('learn', 'learn'), ('watching', 'watch'), ('imitating', 'imit'), ('others', 'other'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Observational', 'observ'), ('Learning', 'learn'), ('−', '−'), ('To', 'to'), ('learn', 'learn'), ('watching', 'watch'), ('imitating', 'imit'), ('others', 'other'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Observational', 'Observational'), ('Learning', 'Learning'), ('−', '−'), ('To', 'To'), ('learn', 'learn'), ('watching', 'watching'), ('imitating', 'imitating'), ('others', 'others'), ('.', '.')]
+
+
+
+============================ Sentence 37 =============================
+
+For example, child tries to learn by mimicking her parent. 
+
+
+>> Tokens are: 
+ ['For', 'example', ',', 'child', 'tries', 'learn', 'mimicking', 'parent', '.']
+
+>> Bigrams are: 
+ [('For', 'example'), ('example', ','), (',', 'child'), ('child', 'tries'), ('tries', 'learn'), ('learn', 'mimicking'), ('mimicking', 'parent'), ('parent', '.')]
+
+>> Trigrams are: 
+ [('For', 'example', ','), ('example', ',', 'child'), (',', 'child', 'tries'), ('child', 'tries', 'learn'), ('tries', 'learn', 'mimicking'), ('learn', 'mimicking', 'parent'), ('mimicking', 'parent', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('example', 'NN'), (',', ','), ('child', 'NN'), ('tries', 'NNS'), ('learn', 'VBP'), ('mimicking', 'VBG'), ('parent', 'NN'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP example/NN)
+  ,/,
+  (NP child/NN tries/NNS)
+  learn/VBP
+  mimicking/VBG
+  (NP parent/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['example', 'child tries', 'parent']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('child', 'child'), ('tries', 'tri'), ('learn', 'learn'), ('mimicking', 'mimick'), ('parent', 'parent'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('child', 'child'), ('tries', 'tri'), ('learn', 'learn'), ('mimicking', 'mimick'), ('parent', 'parent'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('example', 'example'), (',', ','), ('child', 'child'), ('tries', 'try'), ('learn', 'learn'), ('mimicking', 'mimicking'), ('parent', 'parent'), ('.', '.')]
+
+
+
+============================ Sentence 38 =============================
+
+· Perceptual Learning − It is learning to recognize stimuli that one has seen before. 
+
+
+>> Tokens are: 
+ ['·', 'Perceptual', 'Learning', '−', 'It', 'learning', 'recognize', 'stimuli', 'one', 'seen', '.']
+
+>> Bigrams are: 
+ [('·', 'Perceptual'), ('Perceptual', 'Learning'), ('Learning', '−'), ('−', 'It'), ('It', 'learning'), ('learning', 'recognize'), ('recognize', 'stimuli'), ('stimuli', 'one'), ('one', 'seen'), ('seen', '.')]
+
+>> Trigrams are: 
+ [('·', 'Perceptual', 'Learning'), ('Perceptual', 'Learning', '−'), ('Learning', '−', 'It'), ('−', 'It', 'learning'), ('It', 'learning', 'recognize'), ('learning', 'recognize', 'stimuli'), ('recognize', 'stimuli', 'one'), ('stimuli', 'one', 'seen'), ('one', 'seen', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Perceptual', 'NNP'), ('Learning', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('learning', 'VBG'), ('recognize', 'VB'), ('stimuli', 'JJ'), ('one', 'CD'), ('seen', 'VBN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Perceptual/NNP Learning/NNP)
+  −/VBD
+  It/PRP
+  learning/VBG
+  recognize/VB
+  stimuli/JJ
+  one/CD
+  seen/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Perceptual Learning']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Perceptual', 'perceptu'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('learning', 'learn'), ('recognize', 'recogn'), ('stimuli', 'stimuli'), ('one', 'one'), ('seen', 'seen'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Perceptual', 'perceptu'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('learning', 'learn'), ('recognize', 'recogn'), ('stimuli', 'stimuli'), ('one', 'one'), ('seen', 'seen'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Perceptual', 'Perceptual'), ('Learning', 'Learning'), ('−', '−'), ('It', 'It'), ('learning', 'learning'), ('recognize', 'recognize'), ('stimuli', 'stimulus'), ('one', 'one'), ('seen', 'seen'), ('.', '.')]
+
+
+
+============================ Sentence 39 =============================
+
+For example, identifying and classifying objects and situations. 
+
+
+>> Tokens are: 
+ ['For', 'example', ',', 'identifying', 'classifying', 'objects', 'situations', '.']
+
+>> Bigrams are: 
+ [('For', 'example'), ('example', ','), (',', 'identifying'), ('identifying', 'classifying'), ('classifying', 'objects'), ('objects', 'situations'), ('situations', '.')]
+
+>> Trigrams are: 
+ [('For', 'example', ','), ('example', ',', 'identifying'), (',', 'identifying', 'classifying'), ('identifying', 'classifying', 'objects'), ('classifying', 'objects', 'situations'), ('objects', 'situations', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('example', 'NN'), (',', ','), ('identifying', 'VBG'), ('classifying', 'VBG'), ('objects', 'NNS'), ('situations', 'NNS'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP example/NN)
+  ,/,
+  identifying/VBG
+  classifying/VBG
+  (NP objects/NNS situations/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['example', 'objects situations']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('identifying', 'identifi'), ('classifying', 'classifi'), ('objects', 'object'), ('situations', 'situat'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('identifying', 'identifi'), ('classifying', 'classifi'), ('objects', 'object'), ('situations', 'situat'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('example', 'example'), (',', ','), ('identifying', 'identifying'), ('classifying', 'classifying'), ('objects', 'object'), ('situations', 'situation'), ('.', '.')]
+
+
+
+============================ Sentence 40 =============================
+
+· Relational Learning − It involves learning to differentiate among various stimuli on the basis of relational properties, rather than absolute properties. 
+
+
+>> Tokens are: 
+ ['·', 'Relational', 'Learning', '−', 'It', 'involves', 'learning', 'differentiate', 'among', 'various', 'stimuli', 'basis', 'relational', 'properties', ',', 'rather', 'absolute', 'properties', '.']
+
+>> Bigrams are: 
+ [('·', 'Relational'), ('Relational', 'Learning'), ('Learning', '−'), ('−', 'It'), ('It', 'involves'), ('involves', 'learning'), ('learning', 'differentiate'), ('differentiate', 'among'), ('among', 'various'), ('various', 'stimuli'), ('stimuli', 'basis'), ('basis', 'relational'), ('relational', 'properties'), ('properties', ','), (',', 'rather'), ('rather', 'absolute'), ('absolute', 'properties'), ('properties', '.')]
+
+>> Trigrams are: 
+ [('·', 'Relational', 'Learning'), ('Relational', 'Learning', '−'), ('Learning', '−', 'It'), ('−', 'It', 'involves'), ('It', 'involves', 'learning'), ('involves', 'learning', 'differentiate'), ('learning', 'differentiate', 'among'), ('differentiate', 'among', 'various'), ('among', 'various', 'stimuli'), ('various', 'stimuli', 'basis'), ('stimuli', 'basis', 'relational'), ('basis', 'relational', 'properties'), ('relational', 'properties', ','), ('properties', ',', 'rather'), (',', 'rather', 'absolute'), ('rather', 'absolute', 'properties'), ('absolute', 'properties', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Relational', 'NNP'), ('Learning', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('involves', 'VBZ'), ('learning', 'VBG'), ('differentiate', 'VB'), ('among', 'IN'), ('various', 'JJ'), ('stimuli', 'JJ'), ('basis', 'NN'), ('relational', 'NN'), ('properties', 'NNS'), (',', ','), ('rather', 'RB'), ('absolute', 'JJ'), ('properties', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Relational/NNP Learning/NNP)
+  −/VBD
+  It/PRP
+  involves/VBZ
+  learning/VBG
+  differentiate/VB
+  among/IN
+  (NP various/JJ stimuli/JJ basis/NN relational/NN properties/NNS)
+  ,/,
+  rather/RB
+  (NP absolute/JJ properties/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Relational Learning', 'various stimuli basis relational properties', 'absolute properties']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Relational')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Relational', 'relat'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('involves', 'involv'), ('learning', 'learn'), ('differentiate', 'differenti'), ('among', 'among'), ('various', 'variou'), ('stimuli', 'stimuli'), ('basis', 'basi'), ('relational', 'relat'), ('properties', 'properti'), (',', ','), ('rather', 'rather'), ('absolute', 'absolut'), ('properties', 'properti'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Relational', 'relat'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('involves', 'involv'), ('learning', 'learn'), ('differentiate', 'differenti'), ('among', 'among'), ('various', 'various'), ('stimuli', 'stimuli'), ('basis', 'basi'), ('relational', 'relat'), ('properties', 'properti'), (',', ','), ('rather', 'rather'), ('absolute', 'absolut'), ('properties', 'properti'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Relational', 'Relational'), ('Learning', 'Learning'), ('−', '−'), ('It', 'It'), ('involves', 'involves'), ('learning', 'learning'), ('differentiate', 'differentiate'), ('among', 'among'), ('various', 'various'), ('stimuli', 'stimulus'), ('basis', 'basis'), ('relational', 'relational'), ('properties', 'property'), (',', ','), ('rather', 'rather'), ('absolute', 'absolute'), ('properties', 'property'), ('.', '.')]
+
+
+
+============================ Sentence 41 =============================
+
+For Example, Adding ‘little less’ salt at the time of cooking potatoes that came up salty last time, when cooked with adding say a tablespoon of salt. 
+
+
+>> Tokens are: 
+ ['For', 'Example', ',', 'Adding', '‘', 'little', 'less', '’', 'salt', 'time', 'cooking', 'potatoes', 'came', 'salty', 'last', 'time', ',', 'cooked', 'adding', 'say', 'tablespoon', 'salt', '.']
+
+>> Bigrams are: 
+ [('For', 'Example'), ('Example', ','), (',', 'Adding'), ('Adding', '‘'), ('‘', 'little'), ('little', 'less'), ('less', '’'), ('’', 'salt'), ('salt', 'time'), ('time', 'cooking'), ('cooking', 'potatoes'), ('potatoes', 'came'), ('came', 'salty'), ('salty', 'last'), ('last', 'time'), ('time', ','), (',', 'cooked'), ('cooked', 'adding'), ('adding', 'say'), ('say', 'tablespoon'), ('tablespoon', 'salt'), ('salt', '.')]
+
+>> Trigrams are: 
+ [('For', 'Example', ','), ('Example', ',', 'Adding'), (',', 'Adding', '‘'), ('Adding', '‘', 'little'), ('‘', 'little', 'less'), ('little', 'less', '’'), ('less', '’', 'salt'), ('’', 'salt', 'time'), ('salt', 'time', 'cooking'), ('time', 'cooking', 'potatoes'), ('cooking', 'potatoes', 'came'), ('potatoes', 'came', 'salty'), ('came', 'salty', 'last'), ('salty', 'last', 'time'), ('last', 'time', ','), ('time', ',', 'cooked'), (',', 'cooked', 'adding'), ('cooked', 'adding', 'say'), ('adding', 'say', 'tablespoon'), ('say', 'tablespoon', 'salt'), ('tablespoon', 'salt', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('Example', 'NNP'), (',', ','), ('Adding', 'NNP'), ('‘', 'NNP'), ('little', 'RB'), ('less', 'JJR'), ('’', 'JJ'), ('salt', 'NN'), ('time', 'NN'), ('cooking', 'NN'), ('potatoes', 'NNS'), ('came', 'VBD'), ('salty', 'NN'), ('last', 'JJ'), ('time', 'NN'), (',', ','), ('cooked', 'VBD'), ('adding', 'VBG'), ('say', 'VBP'), ('tablespoon', 'NN'), ('salt', 'NN'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP Example/NNP)
+  ,/,
+  (NP Adding/NNP ‘/NNP)
+  little/RB
+  less/JJR
+  (NP ’/JJ salt/NN time/NN cooking/NN potatoes/NNS)
+  came/VBD
+  (NP salty/NN)
+  (NP last/JJ time/NN)
+  ,/,
+  cooked/VBD
+  adding/VBG
+  say/VBP
+  (NP tablespoon/NN salt/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Example', 'Adding ‘', '’ salt time cooking potatoes', 'salty', 'last time', 'tablespoon salt']
+
+>> Named Entities are: 
+ [('PERSON', 'Example'), ('PERSON', 'Adding')] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('Example', 'exampl'), (',', ','), ('Adding', 'ad'), ('‘', '‘'), ('little', 'littl'), ('less', 'less'), ('’', '’'), ('salt', 'salt'), ('time', 'time'), ('cooking', 'cook'), ('potatoes', 'potato'), ('came', 'came'), ('salty', 'salti'), ('last', 'last'), ('time', 'time'), (',', ','), ('cooked', 'cook'), ('adding', 'ad'), ('say', 'say'), ('tablespoon', 'tablespoon'), ('salt', 'salt'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('Example', 'exampl'), (',', ','), ('Adding', 'ad'), ('‘', '‘'), ('little', 'littl'), ('less', 'less'), ('’', '’'), ('salt', 'salt'), ('time', 'time'), ('cooking', 'cook'), ('potatoes', 'potato'), ('came', 'came'), ('salty', 'salti'), ('last', 'last'), ('time', 'time'), (',', ','), ('cooked', 'cook'), ('adding', 'ad'), ('say', 'say'), ('tablespoon', 'tablespoon'), ('salt', 'salt'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('Example', 'Example'), (',', ','), ('Adding', 'Adding'), ('‘', '‘'), ('little', 'little'), ('less', 'le'), ('’', '’'), ('salt', 'salt'), ('time', 'time'), ('cooking', 'cooking'), ('potatoes', 'potato'), ('came', 'came'), ('salty', 'salty'), ('last', 'last'), ('time', 'time'), (',', ','), ('cooked', 'cooked'), ('adding', 'adding'), ('say', 'say'), ('tablespoon', 'tablespoon'), ('salt', 'salt'), ('.', '.')]
+
+
+
+============================ Sentence 42 =============================
+
+· Spatial Learning − It is learning through visual stimuli such as images, colors, maps, etc. 
+
+
+>> Tokens are: 
+ ['·', 'Spatial', 'Learning', '−', 'It', 'learning', 'visual', 'stimuli', 'images', ',', 'colors', ',', 'maps', ',', 'etc', '.']
+
+>> Bigrams are: 
+ [('·', 'Spatial'), ('Spatial', 'Learning'), ('Learning', '−'), ('−', 'It'), ('It', 'learning'), ('learning', 'visual'), ('visual', 'stimuli'), ('stimuli', 'images'), ('images', ','), (',', 'colors'), ('colors', ','), (',', 'maps'), ('maps', ','), (',', 'etc'), ('etc', '.')]
+
+>> Trigrams are: 
+ [('·', 'Spatial', 'Learning'), ('Spatial', 'Learning', '−'), ('Learning', '−', 'It'), ('−', 'It', 'learning'), ('It', 'learning', 'visual'), ('learning', 'visual', 'stimuli'), ('visual', 'stimuli', 'images'), ('stimuli', 'images', ','), ('images', ',', 'colors'), (',', 'colors', ','), ('colors', ',', 'maps'), (',', 'maps', ','), ('maps', ',', 'etc'), (',', 'etc', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Spatial', 'NNP'), ('Learning', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('learning', 'VBG'), ('visual', 'JJ'), ('stimuli', 'NN'), ('images', 'NNS'), (',', ','), ('colors', 'NNS'), (',', ','), ('maps', 'NNS'), (',', ','), ('etc', 'FW'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Spatial/NNP Learning/NNP)
+  −/VBD
+  It/PRP
+  learning/VBG
+  (NP visual/JJ stimuli/NN images/NNS)
+  ,/,
+  (NP colors/NNS)
+  ,/,
+  (NP maps/NNS)
+  ,/,
+  etc/FW
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Spatial Learning', 'visual stimuli images', 'colors', 'maps']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Spatial')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Spatial', 'spatial'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('learning', 'learn'), ('visual', 'visual'), ('stimuli', 'stimuli'), ('images', 'imag'), (',', ','), ('colors', 'color'), (',', ','), ('maps', 'map'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Spatial', 'spatial'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('learning', 'learn'), ('visual', 'visual'), ('stimuli', 'stimuli'), ('images', 'imag'), (',', ','), ('colors', 'color'), (',', ','), ('maps', 'map'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Spatial', 'Spatial'), ('Learning', 'Learning'), ('−', '−'), ('It', 'It'), ('learning', 'learning'), ('visual', 'visual'), ('stimuli', 'stimulus'), ('images', 'image'), (',', ','), ('colors', 'color'), (',', ','), ('maps', 'map'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+
+
+============================ Sentence 43 =============================
+
+For Example, A person can create roadmap in mind before actually following the road. 
+
+
+>> Tokens are: 
+ ['For', 'Example', ',', 'A', 'person', 'create', 'roadmap', 'mind', 'actually', 'following', 'road', '.']
+
+>> Bigrams are: 
+ [('For', 'Example'), ('Example', ','), (',', 'A'), ('A', 'person'), ('person', 'create'), ('create', 'roadmap'), ('roadmap', 'mind'), ('mind', 'actually'), ('actually', 'following'), ('following', 'road'), ('road', '.')]
+
+>> Trigrams are: 
+ [('For', 'Example', ','), ('Example', ',', 'A'), (',', 'A', 'person'), ('A', 'person', 'create'), ('person', 'create', 'roadmap'), ('create', 'roadmap', 'mind'), ('roadmap', 'mind', 'actually'), ('mind', 'actually', 'following'), ('actually', 'following', 'road'), ('following', 'road', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('Example', 'NNP'), (',', ','), ('A', 'NNP'), ('person', 'NN'), ('create', 'NN'), ('roadmap', 'NN'), ('mind', 'VBP'), ('actually', 'RB'), ('following', 'VBG'), ('road', 'NN'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP Example/NNP)
+  ,/,
+  (NP A/NNP person/NN create/NN roadmap/NN)
+  mind/VBP
+  actually/RB
+  following/VBG
+  (NP road/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Example', 'A person create roadmap', 'road']
+
+>> Named Entities are: 
+ [('PERSON', 'Example')] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('Example', 'exampl'), (',', ','), ('A', 'a'), ('person', 'person'), ('create', 'creat'), ('roadmap', 'roadmap'), ('mind', 'mind'), ('actually', 'actual'), ('following', 'follow'), ('road', 'road'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('Example', 'exampl'), (',', ','), ('A', 'a'), ('person', 'person'), ('create', 'creat'), ('roadmap', 'roadmap'), ('mind', 'mind'), ('actually', 'actual'), ('following', 'follow'), ('road', 'road'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('Example', 'Example'), (',', ','), ('A', 'A'), ('person', 'person'), ('create', 'create'), ('roadmap', 'roadmap'), ('mind', 'mind'), ('actually', 'actually'), ('following', 'following'), ('road', 'road'), ('.', '.')]
+
+
+
+============================ Sentence 44 =============================
+
+· Stimulus-Response Learning − It is learning to perform a particular behavior when a certain stimulus is present. 
+
+
+>> Tokens are: 
+ ['·', 'Stimulus-Response', 'Learning', '−', 'It', 'learning', 'perform', 'particular', 'behavior', 'certain', 'stimulus', 'present', '.']
+
+>> Bigrams are: 
+ [('·', 'Stimulus-Response'), ('Stimulus-Response', 'Learning'), ('Learning', '−'), ('−', 'It'), ('It', 'learning'), ('learning', 'perform'), ('perform', 'particular'), ('particular', 'behavior'), ('behavior', 'certain'), ('certain', 'stimulus'), ('stimulus', 'present'), ('present', '.')]
+
+>> Trigrams are: 
+ [('·', 'Stimulus-Response', 'Learning'), ('Stimulus-Response', 'Learning', '−'), ('Learning', '−', 'It'), ('−', 'It', 'learning'), ('It', 'learning', 'perform'), ('learning', 'perform', 'particular'), ('perform', 'particular', 'behavior'), ('particular', 'behavior', 'certain'), ('behavior', 'certain', 'stimulus'), ('certain', 'stimulus', 'present'), ('stimulus', 'present', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Stimulus-Response', 'NNP'), ('Learning', 'NNP'), ('−', 'VBZ'), ('It', 'PRP'), ('learning', 'VBG'), ('perform', 'JJ'), ('particular', 'JJ'), ('behavior', 'NN'), ('certain', 'JJ'), ('stimulus', 'JJ'), ('present', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Stimulus-Response/NNP Learning/NNP)
+  −/VBZ
+  It/PRP
+  learning/VBG
+  (NP perform/JJ particular/JJ behavior/NN)
+  (NP certain/JJ stimulus/JJ present/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Stimulus-Response Learning', 'perform particular behavior', 'certain stimulus present']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Stimulus-Response', 'stimulus-respons'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('learning', 'learn'), ('perform', 'perform'), ('particular', 'particular'), ('behavior', 'behavior'), ('certain', 'certain'), ('stimulus', 'stimulu'), ('present', 'present'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Stimulus-Response', 'stimulus-respons'), ('Learning', 'learn'), ('−', '−'), ('It', 'it'), ('learning', 'learn'), ('perform', 'perform'), ('particular', 'particular'), ('behavior', 'behavior'), ('certain', 'certain'), ('stimulus', 'stimulus'), ('present', 'present'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Stimulus-Response', 'Stimulus-Response'), ('Learning', 'Learning'), ('−', '−'), ('It', 'It'), ('learning', 'learning'), ('perform', 'perform'), ('particular', 'particular'), ('behavior', 'behavior'), ('certain', 'certain'), ('stimulus', 'stimulus'), ('present', 'present'), ('.', '.')]
+
+
+
+============================ Sentence 45 =============================
+
+For example, a dog raises its ear on hearing doorbell. 
+
+
+>> Tokens are: 
+ ['For', 'example', ',', 'dog', 'raises', 'ear', 'hearing', 'doorbell', '.']
+
+>> Bigrams are: 
+ [('For', 'example'), ('example', ','), (',', 'dog'), ('dog', 'raises'), ('raises', 'ear'), ('ear', 'hearing'), ('hearing', 'doorbell'), ('doorbell', '.')]
+
+>> Trigrams are: 
+ [('For', 'example', ','), ('example', ',', 'dog'), (',', 'dog', 'raises'), ('dog', 'raises', 'ear'), ('raises', 'ear', 'hearing'), ('ear', 'hearing', 'doorbell'), ('hearing', 'doorbell', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('example', 'NN'), (',', ','), ('dog', 'NN'), ('raises', 'NNS'), ('ear', 'VBP'), ('hearing', 'VBG'), ('doorbell', 'NN'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP example/NN)
+  ,/,
+  (NP dog/NN raises/NNS)
+  ear/VBP
+  hearing/VBG
+  (NP doorbell/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['example', 'dog raises', 'doorbell']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('dog', 'dog'), ('raises', 'rais'), ('ear', 'ear'), ('hearing', 'hear'), ('doorbell', 'doorbel'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('dog', 'dog'), ('raises', 'rais'), ('ear', 'ear'), ('hearing', 'hear'), ('doorbell', 'doorbel'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('example', 'example'), (',', ','), ('dog', 'dog'), ('raises', 'raise'), ('ear', 'ear'), ('hearing', 'hearing'), ('doorbell', 'doorbell'), ('.', '.')]
+
+
+
+============================ Sentence 46 =============================
+
+· Problem Solving − It is the process in which one perceives and tries to arrive at a desired solution from a present situation by taking some path, which is blocked by known or unknown hurdles. 
+
+
+>> Tokens are: 
+ ['·', 'Problem', 'Solving', '−', 'It', 'process', 'one', 'perceives', 'tries', 'arrive', 'desired', 'solution', 'present', 'situation', 'taking', 'path', ',', 'blocked', 'known', 'unknown', 'hurdles', '.']
+
+>> Bigrams are: 
+ [('·', 'Problem'), ('Problem', 'Solving'), ('Solving', '−'), ('−', 'It'), ('It', 'process'), ('process', 'one'), ('one', 'perceives'), ('perceives', 'tries'), ('tries', 'arrive'), ('arrive', 'desired'), ('desired', 'solution'), ('solution', 'present'), ('present', 'situation'), ('situation', 'taking'), ('taking', 'path'), ('path', ','), (',', 'blocked'), ('blocked', 'known'), ('known', 'unknown'), ('unknown', 'hurdles'), ('hurdles', '.')]
+
+>> Trigrams are: 
+ [('·', 'Problem', 'Solving'), ('Problem', 'Solving', '−'), ('Solving', '−', 'It'), ('−', 'It', 'process'), ('It', 'process', 'one'), ('process', 'one', 'perceives'), ('one', 'perceives', 'tries'), ('perceives', 'tries', 'arrive'), ('tries', 'arrive', 'desired'), ('arrive', 'desired', 'solution'), ('desired', 'solution', 'present'), ('solution', 'present', 'situation'), ('present', 'situation', 'taking'), ('situation', 'taking', 'path'), ('taking', 'path', ','), ('path', ',', 'blocked'), (',', 'blocked', 'known'), ('blocked', 'known', 'unknown'), ('known', 'unknown', 'hurdles'), ('unknown', 'hurdles', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Problem', 'NNP'), ('Solving', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('process', 'VB'), ('one', 'CD'), ('perceives', 'VBZ'), ('tries', 'NNS'), ('arrive', 'JJ'), ('desired', 'JJ'), ('solution', 'NN'), ('present', 'JJ'), ('situation', 'NN'), ('taking', 'VBG'), ('path', 'NN'), (',', ','), ('blocked', 'VBD'), ('known', 'VBN'), ('unknown', 'JJ'), ('hurdles', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/NN Problem/NNP Solving/NNP)
+  −/VBD
+  It/PRP
+  process/VB
+  one/CD
+  perceives/VBZ
+  (NP tries/NNS)
+  (NP arrive/JJ desired/JJ solution/NN)
+  (NP present/JJ situation/NN)
+  taking/VBG
+  (NP path/NN)
+  ,/,
+  blocked/VBD
+  known/VBN
+  (NP unknown/JJ hurdles/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Problem Solving', 'tries', 'arrive desired solution', 'present situation', 'path', 'unknown hurdles']
+
+>> Named Entities are: 
+ [('PERSON', 'Problem Solving')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Problem', 'problem'), ('Solving', 'solv'), ('−', '−'), ('It', 'it'), ('process', 'process'), ('one', 'one'), ('perceives', 'perceiv'), ('tries', 'tri'), ('arrive', 'arriv'), ('desired', 'desir'), ('solution', 'solut'), ('present', 'present'), ('situation', 'situat'), ('taking', 'take'), ('path', 'path'), (',', ','), ('blocked', 'block'), ('known', 'known'), ('unknown', 'unknown'), ('hurdles', 'hurdl'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Problem', 'problem'), ('Solving', 'solv'), ('−', '−'), ('It', 'it'), ('process', 'process'), ('one', 'one'), ('perceives', 'perceiv'), ('tries', 'tri'), ('arrive', 'arriv'), ('desired', 'desir'), ('solution', 'solut'), ('present', 'present'), ('situation', 'situat'), ('taking', 'take'), ('path', 'path'), (',', ','), ('blocked', 'block'), ('known', 'known'), ('unknown', 'unknown'), ('hurdles', 'hurdl'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Problem', 'Problem'), ('Solving', 'Solving'), ('−', '−'), ('It', 'It'), ('process', 'process'), ('one', 'one'), ('perceives', 'perceives'), ('tries', 'try'), ('arrive', 'arrive'), ('desired', 'desired'), ('solution', 'solution'), ('present', 'present'), ('situation', 'situation'), ('taking', 'taking'), ('path', 'path'), (',', ','), ('blocked', 'blocked'), ('known', 'known'), ('unknown', 'unknown'), ('hurdles', 'hurdle'), ('.', '.')]
+
+
+
+============================ Sentence 47 =============================
+
+Problem solving also includes decision making, which is the process of selecting the best suitable alternative out of multiple alternatives to reach the desired goal are available. 
+
+
+>> Tokens are: 
+ ['Problem', 'solving', 'also', 'includes', 'decision', 'making', ',', 'process', 'selecting', 'best', 'suitable', 'alternative', 'multiple', 'alternatives', 'reach', 'desired', 'goal', 'available', '.']
+
+>> Bigrams are: 
+ [('Problem', 'solving'), ('solving', 'also'), ('also', 'includes'), ('includes', 'decision'), ('decision', 'making'), ('making', ','), (',', 'process'), ('process', 'selecting'), ('selecting', 'best'), ('best', 'suitable'), ('suitable', 'alternative'), ('alternative', 'multiple'), ('multiple', 'alternatives'), ('alternatives', 'reach'), ('reach', 'desired'), ('desired', 'goal'), ('goal', 'available'), ('available', '.')]
+
+>> Trigrams are: 
+ [('Problem', 'solving', 'also'), ('solving', 'also', 'includes'), ('also', 'includes', 'decision'), ('includes', 'decision', 'making'), ('decision', 'making', ','), ('making', ',', 'process'), (',', 'process', 'selecting'), ('process', 'selecting', 'best'), ('selecting', 'best', 'suitable'), ('best', 'suitable', 'alternative'), ('suitable', 'alternative', 'multiple'), ('alternative', 'multiple', 'alternatives'), ('multiple', 'alternatives', 'reach'), ('alternatives', 'reach', 'desired'), ('reach', 'desired', 'goal'), ('desired', 'goal', 'available'), ('goal', 'available', '.')]
+
+>> POS Tags are: 
+ [('Problem', 'NNP'), ('solving', 'VBG'), ('also', 'RB'), ('includes', 'VBZ'), ('decision', 'NN'), ('making', 'NN'), (',', ','), ('process', 'NN'), ('selecting', 'VBG'), ('best', 'RBS'), ('suitable', 'JJ'), ('alternative', 'JJ'), ('multiple', 'JJ'), ('alternatives', 'NNS'), ('reach', 'VBP'), ('desired', 'JJ'), ('goal', 'NN'), ('available', 'JJ'), ('.', '.')]
+
+ (S
+  (NP Problem/NNP)
+  solving/VBG
+  also/RB
+  includes/VBZ
+  (NP decision/NN making/NN)
+  ,/,
+  (NP process/NN)
+  selecting/VBG
+  best/RBS
+  (NP suitable/JJ alternative/JJ multiple/JJ alternatives/NNS)
+  reach/VBP
+  (NP desired/JJ goal/NN)
+  available/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Problem', 'decision making', 'process', 'suitable alternative multiple alternatives', 'desired goal']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Problem', 'problem'), ('solving', 'solv'), ('also', 'also'), ('includes', 'includ'), ('decision', 'decis'), ('making', 'make'), (',', ','), ('process', 'process'), ('selecting', 'select'), ('best', 'best'), ('suitable', 'suitabl'), ('alternative', 'altern'), ('multiple', 'multipl'), ('alternatives', 'altern'), ('reach', 'reach'), ('desired', 'desir'), ('goal', 'goal'), ('available', 'avail'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Problem', 'problem'), ('solving', 'solv'), ('also', 'also'), ('includes', 'includ'), ('decision', 'decis'), ('making', 'make'), (',', ','), ('process', 'process'), ('selecting', 'select'), ('best', 'best'), ('suitable', 'suitabl'), ('alternative', 'altern'), ('multiple', 'multipl'), ('alternatives', 'altern'), ('reach', 'reach'), ('desired', 'desir'), ('goal', 'goal'), ('available', 'avail'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Problem', 'Problem'), ('solving', 'solving'), ('also', 'also'), ('includes', 'includes'), ('decision', 'decision'), ('making', 'making'), (',', ','), ('process', 'process'), ('selecting', 'selecting'), ('best', 'best'), ('suitable', 'suitable'), ('alternative', 'alternative'), ('multiple', 'multiple'), ('alternatives', 'alternative'), ('reach', 'reach'), ('desired', 'desired'), ('goal', 'goal'), ('available', 'available'), ('.', '.')]
+
+
+
+============================ Sentence 48 =============================
+
+· Perception − It is the process of acquiring, interpreting, selecting, and organizing sensory information. 
+
+
+>> Tokens are: 
+ ['·', 'Perception', '−', 'It', 'process', 'acquiring', ',', 'interpreting', ',', 'selecting', ',', 'organizing', 'sensory', 'information', '.']
+
+>> Bigrams are: 
+ [('·', 'Perception'), ('Perception', '−'), ('−', 'It'), ('It', 'process'), ('process', 'acquiring'), ('acquiring', ','), (',', 'interpreting'), ('interpreting', ','), (',', 'selecting'), ('selecting', ','), (',', 'organizing'), ('organizing', 'sensory'), ('sensory', 'information'), ('information', '.')]
+
+>> Trigrams are: 
+ [('·', 'Perception', '−'), ('Perception', '−', 'It'), ('−', 'It', 'process'), ('It', 'process', 'acquiring'), ('process', 'acquiring', ','), ('acquiring', ',', 'interpreting'), (',', 'interpreting', ','), ('interpreting', ',', 'selecting'), (',', 'selecting', ','), ('selecting', ',', 'organizing'), (',', 'organizing', 'sensory'), ('organizing', 'sensory', 'information'), ('sensory', 'information', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Perception', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('process', 'NN'), ('acquiring', 'VBG'), (',', ','), ('interpreting', 'VBG'), (',', ','), ('selecting', 'VBG'), (',', ','), ('organizing', 'VBG'), ('sensory', 'JJ'), ('information', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Perception/NNP)
+  −/VBD
+  It/PRP
+  (NP process/NN)
+  acquiring/VBG
+  ,/,
+  interpreting/VBG
+  ,/,
+  selecting/VBG
+  ,/,
+  organizing/VBG
+  (NP sensory/JJ information/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Perception', 'process', 'sensory information']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Perception', 'percept'), ('−', '−'), ('It', 'it'), ('process', 'process'), ('acquiring', 'acquir'), (',', ','), ('interpreting', 'interpret'), (',', ','), ('selecting', 'select'), (',', ','), ('organizing', 'organ'), ('sensory', 'sensori'), ('information', 'inform'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Perception', 'percept'), ('−', '−'), ('It', 'it'), ('process', 'process'), ('acquiring', 'acquir'), (',', ','), ('interpreting', 'interpret'), (',', ','), ('selecting', 'select'), (',', ','), ('organizing', 'organ'), ('sensory', 'sensori'), ('information', 'inform'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Perception', 'Perception'), ('−', '−'), ('It', 'It'), ('process', 'process'), ('acquiring', 'acquiring'), (',', ','), ('interpreting', 'interpreting'), (',', ','), ('selecting', 'selecting'), (',', ','), ('organizing', 'organizing'), ('sensory', 'sensory'), ('information', 'information'), ('.', '.')]
+
+
+
+============================ Sentence 49 =============================
+
+Perception presumes sensing. 
+
+
+>> Tokens are: 
+ ['Perception', 'presumes', 'sensing', '.']
+
+>> Bigrams are: 
+ [('Perception', 'presumes'), ('presumes', 'sensing'), ('sensing', '.')]
+
+>> Trigrams are: 
+ [('Perception', 'presumes', 'sensing'), ('presumes', 'sensing', '.')]
+
+>> POS Tags are: 
+ [('Perception', 'NNP'), ('presumes', 'VBZ'), ('sensing', 'VBG'), ('.', '.')]
+
+ (S (NP Perception/NNP) presumes/VBZ sensing/VBG ./.) 
+
+
+>> Noun Phrases are: 
+ ['Perception']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Perception', 'percept'), ('presumes', 'presum'), ('sensing', 'sens'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Perception', 'percept'), ('presumes', 'presum'), ('sensing', 'sens'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Perception', 'Perception'), ('presumes', 'presumes'), ('sensing', 'sensing'), ('.', '.')]
+
+
+
+============================ Sentence 50 =============================
+
+In humans, perception is aided by sensory organs. 
+
+
+>> Tokens are: 
+ ['In', 'humans', ',', 'perception', 'aided', 'sensory', 'organs', '.']
+
+>> Bigrams are: 
+ [('In', 'humans'), ('humans', ','), (',', 'perception'), ('perception', 'aided'), ('aided', 'sensory'), ('sensory', 'organs'), ('organs', '.')]
+
+>> Trigrams are: 
+ [('In', 'humans', ','), ('humans', ',', 'perception'), (',', 'perception', 'aided'), ('perception', 'aided', 'sensory'), ('aided', 'sensory', 'organs'), ('sensory', 'organs', '.')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('humans', 'NNS'), (',', ','), ('perception', 'NN'), ('aided', 'VBD'), ('sensory', 'JJ'), ('organs', 'NNS'), ('.', '.')]
+
+ (S
+  In/IN
+  (NP humans/NNS)
+  ,/,
+  (NP perception/NN)
+  aided/VBD
+  (NP sensory/JJ organs/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['humans', 'perception', 'sensory organs']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('humans', 'human'), (',', ','), ('perception', 'percept'), ('aided', 'aid'), ('sensory', 'sensori'), ('organs', 'organ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('humans', 'human'), (',', ','), ('perception', 'percept'), ('aided', 'aid'), ('sensory', 'sensori'), ('organs', 'organ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('humans', 'human'), (',', ','), ('perception', 'perception'), ('aided', 'aided'), ('sensory', 'sensory'), ('organs', 'organ'), ('.', '.')]
+
+
+
+============================ Sentence 51 =============================
+
+In the domain of AI, perception mechanism puts the data acquired by the sensors together in a meaningful manner. 
+
+
+>> Tokens are: 
+ ['In', 'domain', 'AI', ',', 'perception', 'mechanism', 'puts', 'data', 'acquired', 'sensors', 'together', 'meaningful', 'manner', '.']
+
+>> Bigrams are: 
+ [('In', 'domain'), ('domain', 'AI'), ('AI', ','), (',', 'perception'), ('perception', 'mechanism'), ('mechanism', 'puts'), ('puts', 'data'), ('data', 'acquired'), ('acquired', 'sensors'), ('sensors', 'together'), ('together', 'meaningful'), ('meaningful', 'manner'), ('manner', '.')]
+
+>> Trigrams are: 
+ [('In', 'domain', 'AI'), ('domain', 'AI', ','), ('AI', ',', 'perception'), (',', 'perception', 'mechanism'), ('perception', 'mechanism', 'puts'), ('mechanism', 'puts', 'data'), ('puts', 'data', 'acquired'), ('data', 'acquired', 'sensors'), ('acquired', 'sensors', 'together'), ('sensors', 'together', 'meaningful'), ('together', 'meaningful', 'manner'), ('meaningful', 'manner', '.')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('domain', 'NN'), ('AI', 'NNP'), (',', ','), ('perception', 'NN'), ('mechanism', 'NN'), ('puts', 'VBZ'), ('data', 'NNS'), ('acquired', 'VBD'), ('sensors', 'NNS'), ('together', 'RB'), ('meaningful', 'JJ'), ('manner', 'NN'), ('.', '.')]
+
+ (S
+  In/IN
+  (NP domain/NN AI/NNP)
+  ,/,
+  (NP perception/NN mechanism/NN)
+  puts/VBZ
+  (NP data/NNS)
+  acquired/VBD
+  (NP sensors/NNS)
+  together/RB
+  (NP meaningful/JJ manner/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['domain AI', 'perception mechanism', 'data', 'sensors', 'meaningful manner']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('domain', 'domain'), ('AI', 'ai'), (',', ','), ('perception', 'percept'), ('mechanism', 'mechan'), ('puts', 'put'), ('data', 'data'), ('acquired', 'acquir'), ('sensors', 'sensor'), ('together', 'togeth'), ('meaningful', 'meaning'), ('manner', 'manner'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('domain', 'domain'), ('AI', 'ai'), (',', ','), ('perception', 'percept'), ('mechanism', 'mechan'), ('puts', 'put'), ('data', 'data'), ('acquired', 'acquir'), ('sensors', 'sensor'), ('together', 'togeth'), ('meaningful', 'meaning'), ('manner', 'manner'), ('.', '.')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('domain', 'domain'), ('AI', 'AI'), (',', ','), ('perception', 'perception'), ('mechanism', 'mechanism'), ('puts', 'put'), ('data', 'data'), ('acquired', 'acquired'), ('sensors', 'sensor'), ('together', 'together'), ('meaningful', 'meaningful'), ('manner', 'manner'), ('.', '.')]
+
+
+
+============================ Sentence 52 =============================
+
+· Linguistic Intelligence − It is one’s ability to use, comprehend, speak, and write the verbal and written language. 
+
+
+>> Tokens are: 
+ ['·', 'Linguistic', 'Intelligence', '−', 'It', 'one', '’', 'ability', 'use', ',', 'comprehend', ',', 'speak', ',', 'write', 'verbal', 'written', 'language', '.']
+
+>> Bigrams are: 
+ [('·', 'Linguistic'), ('Linguistic', 'Intelligence'), ('Intelligence', '−'), ('−', 'It'), ('It', 'one'), ('one', '’'), ('’', 'ability'), ('ability', 'use'), ('use', ','), (',', 'comprehend'), ('comprehend', ','), (',', 'speak'), ('speak', ','), (',', 'write'), ('write', 'verbal'), ('verbal', 'written'), ('written', 'language'), ('language', '.')]
+
+>> Trigrams are: 
+ [('·', 'Linguistic', 'Intelligence'), ('Linguistic', 'Intelligence', '−'), ('Intelligence', '−', 'It'), ('−', 'It', 'one'), ('It', 'one', '’'), ('one', '’', 'ability'), ('’', 'ability', 'use'), ('ability', 'use', ','), ('use', ',', 'comprehend'), (',', 'comprehend', ','), ('comprehend', ',', 'speak'), (',', 'speak', ','), ('speak', ',', 'write'), (',', 'write', 'verbal'), ('write', 'verbal', 'written'), ('verbal', 'written', 'language'), ('written', 'language', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Linguistic', 'NNP'), ('Intelligence', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('one', 'CD'), ('’', 'NNP'), ('ability', 'NN'), ('use', 'NN'), (',', ','), ('comprehend', 'NN'), (',', ','), ('speak', 'NN'), (',', ','), ('write', 'JJ'), ('verbal', 'JJ'), ('written', 'VBN'), ('language', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Linguistic/NNP Intelligence/NNP)
+  −/VBD
+  It/PRP
+  one/CD
+  (NP ’/NNP ability/NN use/NN)
+  ,/,
+  (NP comprehend/NN)
+  ,/,
+  (NP speak/NN)
+  ,/,
+  write/JJ
+  verbal/JJ
+  written/VBN
+  (NP language/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Linguistic Intelligence', '’ ability use', 'comprehend', 'speak', 'language']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Linguistic Intelligence')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Linguistic', 'linguist'), ('Intelligence', 'intellig'), ('−', '−'), ('It', 'it'), ('one', 'one'), ('’', '’'), ('ability', 'abil'), ('use', 'use'), (',', ','), ('comprehend', 'comprehend'), (',', ','), ('speak', 'speak'), (',', ','), ('write', 'write'), ('verbal', 'verbal'), ('written', 'written'), ('language', 'languag'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Linguistic', 'linguist'), ('Intelligence', 'intellig'), ('−', '−'), ('It', 'it'), ('one', 'one'), ('’', '’'), ('ability', 'abil'), ('use', 'use'), (',', ','), ('comprehend', 'comprehend'), (',', ','), ('speak', 'speak'), (',', ','), ('write', 'write'), ('verbal', 'verbal'), ('written', 'written'), ('language', 'languag'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Linguistic', 'Linguistic'), ('Intelligence', 'Intelligence'), ('−', '−'), ('It', 'It'), ('one', 'one'), ('’', '’'), ('ability', 'ability'), ('use', 'use'), (',', ','), ('comprehend', 'comprehend'), (',', ','), ('speak', 'speak'), (',', ','), ('write', 'write'), ('verbal', 'verbal'), ('written', 'written'), ('language', 'language'), ('.', '.')]
+
+
+
+============================ Sentence 53 =============================
+
+It is important in interpersonal communication. 
+
+
+>> Tokens are: 
+ ['It', 'important', 'interpersonal', 'communication', '.']
+
+>> Bigrams are: 
+ [('It', 'important'), ('important', 'interpersonal'), ('interpersonal', 'communication'), ('communication', '.')]
+
+>> Trigrams are: 
+ [('It', 'important', 'interpersonal'), ('important', 'interpersonal', 'communication'), ('interpersonal', 'communication', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('important', 'JJ'), ('interpersonal', 'JJ'), ('communication', 'NN'), ('.', '.')]
+
+ (S It/PRP (NP important/JJ interpersonal/JJ communication/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['important interpersonal communication']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('important', 'import'), ('interpersonal', 'interperson'), ('communication', 'commun'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('important', 'import'), ('interpersonal', 'interperson'), ('communication', 'communic'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('important', 'important'), ('interpersonal', 'interpersonal'), ('communication', 'communication'), ('.', '.')]
+

@@ -1,0 +1,2234 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709)	 Darshan Institute of Engineering & Technology UNIT-6 Message Authentication Codes       1  Outline Message Authentication Codes MAC requirements and security MACs based on Hash Functions MACs based on Block Ciphers   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  X.800 and RFC 2828 International Telecommunication Union (ITU) 2  Message Authentication Message authentication is a procedure to verify that received messages come from the genuine source and have not been altered. 
+
+
+>> Tokens are: 
+ ['OOPC++', 'UNIT-1', 'Prof.', 'Rupesh', 'G.', 'Vaishnav', 'rupesh.vaishnav', '@', 'darshan.ac.in', '94280-37452', 'Information', '&', 'Network', 'Security', '(', '2170709', ')', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', 'UNIT-6', 'Message', 'Authentication', 'Codes', '1', 'Outline', 'Message', 'Authentication', 'Codes', 'MAC', 'requirements', 'security', 'MACs', 'based', 'Hash', 'Functions', 'MACs', 'based', 'Block', 'Ciphers', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'X.800', 'RFC', '2828', 'International', 'Telecommunication', 'Union', '(', 'ITU', ')', '2', 'Message', 'Authentication', 'Message', 'authentication', 'procedure', 'verify', 'received', 'messages', 'come', 'genuine', 'source', 'altered', '.']
+
+>> Bigrams are: 
+ [('OOPC++', 'UNIT-1'), ('UNIT-1', 'Prof.'), ('Prof.', 'Rupesh'), ('Rupesh', 'G.'), ('G.', 'Vaishnav'), ('Vaishnav', 'rupesh.vaishnav'), ('rupesh.vaishnav', '@'), ('@', 'darshan.ac.in'), ('darshan.ac.in', '94280-37452'), ('94280-37452', 'Information'), ('Information', '&'), ('&', 'Network'), ('Network', 'Security'), ('Security', '('), ('(', '2170709'), ('2170709', ')'), (')', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', 'UNIT-6'), ('UNIT-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', '1'), ('1', 'Outline'), ('Outline', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'MAC'), ('MAC', 'requirements'), ('requirements', 'security'), ('security', 'MACs'), ('MACs', 'based'), ('based', 'Hash'), ('Hash', 'Functions'), ('Functions', 'MACs'), ('MACs', 'based'), ('based', 'Block'), ('Block', 'Ciphers'), ('Ciphers', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'X.800'), ('X.800', 'RFC'), ('RFC', '2828'), ('2828', 'International'), ('International', 'Telecommunication'), ('Telecommunication', 'Union'), ('Union', '('), ('(', 'ITU'), ('ITU', ')'), (')', '2'), ('2', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Message'), ('Message', 'authentication'), ('authentication', 'procedure'), ('procedure', 'verify'), ('verify', 'received'), ('received', 'messages'), ('messages', 'come'), ('come', 'genuine'), ('genuine', 'source'), ('source', 'altered'), ('altered', '.')]
+
+>> Trigrams are: 
+ [('OOPC++', 'UNIT-1', 'Prof.'), ('UNIT-1', 'Prof.', 'Rupesh'), ('Prof.', 'Rupesh', 'G.'), ('Rupesh', 'G.', 'Vaishnav'), ('G.', 'Vaishnav', 'rupesh.vaishnav'), ('Vaishnav', 'rupesh.vaishnav', '@'), ('rupesh.vaishnav', '@', 'darshan.ac.in'), ('@', 'darshan.ac.in', '94280-37452'), ('darshan.ac.in', '94280-37452', 'Information'), ('94280-37452', 'Information', '&'), ('Information', '&', 'Network'), ('&', 'Network', 'Security'), ('Network', 'Security', '('), ('Security', '(', '2170709'), ('(', '2170709', ')'), ('2170709', ')', 'Darshan'), (')', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', 'UNIT-6'), ('Technology', 'UNIT-6', 'Message'), ('UNIT-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', '1'), ('Codes', '1', 'Outline'), ('1', 'Outline', 'Message'), ('Outline', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'MAC'), ('Codes', 'MAC', 'requirements'), ('MAC', 'requirements', 'security'), ('requirements', 'security', 'MACs'), ('security', 'MACs', 'based'), ('MACs', 'based', 'Hash'), ('based', 'Hash', 'Functions'), ('Hash', 'Functions', 'MACs'), ('Functions', 'MACs', 'based'), ('MACs', 'based', 'Block'), ('based', 'Block', 'Ciphers'), ('Block', 'Ciphers', 'Unit-6'), ('Ciphers', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'X.800'), ('Subject', 'X.800', 'RFC'), ('X.800', 'RFC', '2828'), ('RFC', '2828', 'International'), ('2828', 'International', 'Telecommunication'), ('International', 'Telecommunication', 'Union'), ('Telecommunication', 'Union', '('), ('Union', '(', 'ITU'), ('(', 'ITU', ')'), ('ITU', ')', '2'), (')', '2', 'Message'), ('2', 'Message', 'Authentication'), ('Message', 'Authentication', 'Message'), ('Authentication', 'Message', 'authentication'), ('Message', 'authentication', 'procedure'), ('authentication', 'procedure', 'verify'), ('procedure', 'verify', 'received'), ('verify', 'received', 'messages'), ('received', 'messages', 'come'), ('messages', 'come', 'genuine'), ('come', 'genuine', 'source'), ('genuine', 'source', 'altered'), ('source', 'altered', '.')]
+
+>> POS Tags are: 
+ [('OOPC++', 'NNP'), ('UNIT-1', 'NNP'), ('Prof.', 'NNP'), ('Rupesh', 'NNP'), ('G.', 'NNP'), ('Vaishnav', 'NNP'), ('rupesh.vaishnav', 'NN'), ('@', 'NNP'), ('darshan.ac.in', 'VBZ'), ('94280-37452', 'CD'), ('Information', 'NNP'), ('&', 'CC'), ('Network', 'NNP'), ('Security', 'NNP'), ('(', '('), ('2170709', 'CD'), (')', ')'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('UNIT-6', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('1', 'CD'), ('Outline', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('MAC', 'NNP'), ('requirements', 'NNS'), ('security', 'NN'), ('MACs', 'NNP'), ('based', 'VBN'), ('Hash', 'NNP'), ('Functions', 'NNP'), ('MACs', 'NNP'), ('based', 'VBN'), ('Block', 'NNP'), ('Ciphers', 'NNP'), ('Unit-6', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('X.800', 'NNP'), ('RFC', 'NNP'), ('2828', 'CD'), ('International', 'NNP'), ('Telecommunication', 'NNP'), ('Union', 'NNP'), ('(', '('), ('ITU', 'NNP'), (')', ')'), ('2', 'CD'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Message', 'NNP'), ('authentication', 'NN'), ('procedure', 'NN'), ('verify', 'VBP'), ('received', 'VBN'), ('messages', 'NNS'), ('come', 'VBP'), ('genuine', 'JJ'), ('source', 'NN'), ('altered', 'VBD'), ('.', '.')]
+
+ (S
+  (NP
+    OOPC++/NNP
+    UNIT-1/NNP
+    Prof./NNP
+    Rupesh/NNP
+    G./NNP
+    Vaishnav/NNP
+    rupesh.vaishnav/NN
+    @/NNP)
+  darshan.ac.in/VBZ
+  94280-37452/CD
+  (NP Information/NNP)
+  &/CC
+  (NP Network/NNP Security/NNP)
+  (/(
+  2170709/CD
+  )/)
+  (NP Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP
+    Technology/NNP
+    UNIT-6/NNP
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP)
+  1/CD
+  (NP
+    Outline/NNP
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    MAC/NNP
+    requirements/NNS
+    security/NN
+    MACs/NNP)
+  based/VBN
+  (NP Hash/NNP Functions/NNP MACs/NNP)
+  based/VBN
+  (NP
+    Block/NNP
+    Ciphers/NNP
+    Unit-6/NNP
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP X.800/NNP RFC/NNP)
+  2828/CD
+  (NP International/NNP Telecommunication/NNP Union/NNP)
+  (/(
+  (NP ITU/NNP)
+  )/)
+  2/CD
+  (NP
+    Message/NNP
+    Authentication/NNP
+    Message/NNP
+    authentication/NN
+    procedure/NN)
+  verify/VBP
+  received/VBN
+  (NP messages/NNS)
+  come/VBP
+  (NP genuine/JJ source/NN)
+  altered/VBD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['OOPC++ UNIT-1 Prof. Rupesh G. Vaishnav rupesh.vaishnav @', 'Information', 'Network Security', 'Darshan Institute Engineering', 'Technology UNIT-6 Message Authentication Codes', 'Outline Message Authentication Codes MAC requirements security MACs', 'Hash Functions MACs', 'Block Ciphers Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject X.800 RFC', 'International Telecommunication Union', 'ITU', 'Message Authentication Message authentication procedure', 'messages', 'genuine source']
+
+>> Named Entities are: 
+ [('PERSON', 'Rupesh G. Vaishnav'), ('PERSON', 'Network Security'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'MACs'), ('PERSON', 'Hash Functions'), ('PERSON', 'Block Ciphers'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'International Telecommunication Union'), ('ORGANIZATION', 'ITU')] 
+
+>> Stemming using Porter Stemmer: 
+ [('OOPC++', 'oopc++'), ('UNIT-1', 'unit-1'), ('Prof.', 'prof.'), ('Rupesh', 'rupesh'), ('G.', 'g.'), ('Vaishnav', 'vaishnav'), ('rupesh.vaishnav', 'rupesh.vaishnav'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'inform'), ('&', '&'), ('Network', 'network'), ('Security', 'secur'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('UNIT-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('1', '1'), ('Outline', 'outlin'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('MAC', 'mac'), ('requirements', 'requir'), ('security', 'secur'), ('MACs', 'mac'), ('based', 'base'), ('Hash', 'hash'), ('Functions', 'function'), ('MACs', 'mac'), ('based', 'base'), ('Block', 'block'), ('Ciphers', 'cipher'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('X.800', 'x.800'), ('RFC', 'rfc'), ('2828', '2828'), ('International', 'intern'), ('Telecommunication', 'telecommun'), ('Union', 'union'), ('(', '('), ('ITU', 'itu'), (')', ')'), ('2', '2'), ('Message', 'messag'), ('Authentication', 'authent'), ('Message', 'messag'), ('authentication', 'authent'), ('procedure', 'procedur'), ('verify', 'verifi'), ('received', 'receiv'), ('messages', 'messag'), ('come', 'come'), ('genuine', 'genuin'), ('source', 'sourc'), ('altered', 'alter'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('OOPC++', 'oopc++'), ('UNIT-1', 'unit-1'), ('Prof.', 'prof.'), ('Rupesh', 'rupesh'), ('G.', 'g.'), ('Vaishnav', 'vaishnav'), ('rupesh.vaishnav', 'rupesh.vaishnav'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'inform'), ('&', '&'), ('Network', 'network'), ('Security', 'secur'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('UNIT-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('1', '1'), ('Outline', 'outlin'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('MAC', 'mac'), ('requirements', 'requir'), ('security', 'secur'), ('MACs', 'mac'), ('based', 'base'), ('Hash', 'hash'), ('Functions', 'function'), ('MACs', 'mac'), ('based', 'base'), ('Block', 'block'), ('Ciphers', 'cipher'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('X.800', 'x.800'), ('RFC', 'rfc'), ('2828', '2828'), ('International', 'intern'), ('Telecommunication', 'telecommun'), ('Union', 'union'), ('(', '('), ('ITU', 'itu'), (')', ')'), ('2', '2'), ('Message', 'messag'), ('Authentication', 'authent'), ('Message', 'messag'), ('authentication', 'authent'), ('procedure', 'procedur'), ('verify', 'verifi'), ('received', 'receiv'), ('messages', 'messag'), ('come', 'come'), ('genuine', 'genuin'), ('source', 'sourc'), ('altered', 'alter'), ('.', '.')]
+
+>> Lemmatization: 
+ [('OOPC++', 'OOPC++'), ('UNIT-1', 'UNIT-1'), ('Prof.', 'Prof.'), ('Rupesh', 'Rupesh'), ('G.', 'G.'), ('Vaishnav', 'Vaishnav'), ('rupesh.vaishnav', 'rupesh.vaishnav'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'Information'), ('&', '&'), ('Network', 'Network'), ('Security', 'Security'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('UNIT-6', 'UNIT-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('1', '1'), ('Outline', 'Outline'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('MAC', 'MAC'), ('requirements', 'requirement'), ('security', 'security'), ('MACs', 'MACs'), ('based', 'based'), ('Hash', 'Hash'), ('Functions', 'Functions'), ('MACs', 'MACs'), ('based', 'based'), ('Block', 'Block'), ('Ciphers', 'Ciphers'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('X.800', 'X.800'), ('RFC', 'RFC'), ('2828', '2828'), ('International', 'International'), ('Telecommunication', 'Telecommunication'), ('Union', 'Union'), ('(', '('), ('ITU', 'ITU'), (')', ')'), ('2', '2'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Message', 'Message'), ('authentication', 'authentication'), ('procedure', 'procedure'), ('verify', 'verify'), ('received', 'received'), ('messages', 'message'), ('come', 'come'), ('genuine', 'genuine'), ('source', 'source'), ('altered', 'altered'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+Message authentication may also verify sequencing and timeliness. 
+
+
+>> Tokens are: 
+ ['Message', 'authentication', 'may', 'also', 'verify', 'sequencing', 'timeliness', '.']
+
+>> Bigrams are: 
+ [('Message', 'authentication'), ('authentication', 'may'), ('may', 'also'), ('also', 'verify'), ('verify', 'sequencing'), ('sequencing', 'timeliness'), ('timeliness', '.')]
+
+>> Trigrams are: 
+ [('Message', 'authentication', 'may'), ('authentication', 'may', 'also'), ('may', 'also', 'verify'), ('also', 'verify', 'sequencing'), ('verify', 'sequencing', 'timeliness'), ('sequencing', 'timeliness', '.')]
+
+>> POS Tags are: 
+ [('Message', 'NNP'), ('authentication', 'NN'), ('may', 'MD'), ('also', 'RB'), ('verify', 'VB'), ('sequencing', 'VBG'), ('timeliness', 'NN'), ('.', '.')]
+
+ (S
+  (NP Message/NNP authentication/NN)
+  may/MD
+  also/RB
+  verify/VB
+  sequencing/VBG
+  (NP timeliness/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Message authentication', 'timeliness']
+
+>> Named Entities are: 
+ [('GPE', 'Message')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Message', 'messag'), ('authentication', 'authent'), ('may', 'may'), ('also', 'also'), ('verify', 'verifi'), ('sequencing', 'sequenc'), ('timeliness', 'timeli'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Message', 'messag'), ('authentication', 'authent'), ('may', 'may'), ('also', 'also'), ('verify', 'verifi'), ('sequencing', 'sequenc'), ('timeliness', 'timeli'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Message', 'Message'), ('authentication', 'authentication'), ('may', 'may'), ('also', 'also'), ('verify', 'verify'), ('sequencing', 'sequencing'), ('timeliness', 'timeliness'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+Message authentication is a mechanism or service used to verify the integrity of  a message. 
+
+
+>> Tokens are: 
+ ['Message', 'authentication', 'mechanism', 'service', 'used', 'verify', 'integrity', 'message', '.']
+
+>> Bigrams are: 
+ [('Message', 'authentication'), ('authentication', 'mechanism'), ('mechanism', 'service'), ('service', 'used'), ('used', 'verify'), ('verify', 'integrity'), ('integrity', 'message'), ('message', '.')]
+
+>> Trigrams are: 
+ [('Message', 'authentication', 'mechanism'), ('authentication', 'mechanism', 'service'), ('mechanism', 'service', 'used'), ('service', 'used', 'verify'), ('used', 'verify', 'integrity'), ('verify', 'integrity', 'message'), ('integrity', 'message', '.')]
+
+>> POS Tags are: 
+ [('Message', 'NN'), ('authentication', 'NN'), ('mechanism', 'NN'), ('service', 'NN'), ('used', 'VBN'), ('verify', 'JJ'), ('integrity', 'NN'), ('message', 'NN'), ('.', '.')]
+
+ (S
+  (NP Message/NN authentication/NN mechanism/NN service/NN)
+  used/VBN
+  (NP verify/JJ integrity/NN message/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Message authentication mechanism service', 'verify integrity message']
+
+>> Named Entities are: 
+ [('GPE', 'Message')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Message', 'messag'), ('authentication', 'authent'), ('mechanism', 'mechan'), ('service', 'servic'), ('used', 'use'), ('verify', 'verifi'), ('integrity', 'integr'), ('message', 'messag'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Message', 'messag'), ('authentication', 'authent'), ('mechanism', 'mechan'), ('service', 'servic'), ('used', 'use'), ('verify', 'verifi'), ('integrity', 'integr'), ('message', 'messag'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Message', 'Message'), ('authentication', 'authentication'), ('mechanism', 'mechanism'), ('service', 'service'), ('used', 'used'), ('verify', 'verify'), ('integrity', 'integrity'), ('message', 'message'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+Message authentication assures that data received are exactly as sent (i.e.-, contain no modification, insertion, deletion, or replay). 
+
+
+>> Tokens are: 
+ ['Message', 'authentication', 'assures', 'data', 'received', 'exactly', 'sent', '(', 'i.e.-', ',', 'contain', 'modification', ',', 'insertion', ',', 'deletion', ',', 'replay', ')', '.']
+
+>> Bigrams are: 
+ [('Message', 'authentication'), ('authentication', 'assures'), ('assures', 'data'), ('data', 'received'), ('received', 'exactly'), ('exactly', 'sent'), ('sent', '('), ('(', 'i.e.-'), ('i.e.-', ','), (',', 'contain'), ('contain', 'modification'), ('modification', ','), (',', 'insertion'), ('insertion', ','), (',', 'deletion'), ('deletion', ','), (',', 'replay'), ('replay', ')'), (')', '.')]
+
+>> Trigrams are: 
+ [('Message', 'authentication', 'assures'), ('authentication', 'assures', 'data'), ('assures', 'data', 'received'), ('data', 'received', 'exactly'), ('received', 'exactly', 'sent'), ('exactly', 'sent', '('), ('sent', '(', 'i.e.-'), ('(', 'i.e.-', ','), ('i.e.-', ',', 'contain'), (',', 'contain', 'modification'), ('contain', 'modification', ','), ('modification', ',', 'insertion'), (',', 'insertion', ','), ('insertion', ',', 'deletion'), (',', 'deletion', ','), ('deletion', ',', 'replay'), (',', 'replay', ')'), ('replay', ')', '.')]
+
+>> POS Tags are: 
+ [('Message', 'NN'), ('authentication', 'NN'), ('assures', 'VBZ'), ('data', 'NNS'), ('received', 'VBD'), ('exactly', 'RB'), ('sent', 'VBN'), ('(', '('), ('i.e.-', 'JJ'), (',', ','), ('contain', 'JJ'), ('modification', 'NN'), (',', ','), ('insertion', 'NN'), (',', ','), ('deletion', 'NN'), (',', ','), ('replay', 'NN'), (')', ')'), ('.', '.')]
+
+ (S
+  (NP Message/NN authentication/NN)
+  assures/VBZ
+  (NP data/NNS)
+  received/VBD
+  exactly/RB
+  sent/VBN
+  (/(
+  i.e.-/JJ
+  ,/,
+  (NP contain/JJ modification/NN)
+  ,/,
+  (NP insertion/NN)
+  ,/,
+  (NP deletion/NN)
+  ,/,
+  (NP replay/NN)
+  )/)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Message authentication', 'data', 'contain modification', 'insertion', 'deletion', 'replay']
+
+>> Named Entities are: 
+ [('GPE', 'Message')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Message', 'messag'), ('authentication', 'authent'), ('assures', 'assur'), ('data', 'data'), ('received', 'receiv'), ('exactly', 'exactli'), ('sent', 'sent'), ('(', '('), ('i.e.-', 'i.e.-'), (',', ','), ('contain', 'contain'), ('modification', 'modif'), (',', ','), ('insertion', 'insert'), (',', ','), ('deletion', 'delet'), (',', ','), ('replay', 'replay'), (')', ')'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Message', 'messag'), ('authentication', 'authent'), ('assures', 'assur'), ('data', 'data'), ('received', 'receiv'), ('exactly', 'exact'), ('sent', 'sent'), ('(', '('), ('i.e.-', 'i.e.-'), (',', ','), ('contain', 'contain'), ('modification', 'modif'), (',', ','), ('insertion', 'insert'), (',', ','), ('deletion', 'delet'), (',', ','), ('replay', 'replay'), (')', ')'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Message', 'Message'), ('authentication', 'authentication'), ('assures', 'assures'), ('data', 'data'), ('received', 'received'), ('exactly', 'exactly'), ('sent', 'sent'), ('(', '('), ('i.e.-', 'i.e.-'), (',', ','), ('contain', 'contain'), ('modification', 'modification'), (',', ','), ('insertion', 'insertion'), (',', ','), ('deletion', 'deletion'), (',', ','), ('replay', 'replay'), (')', ')'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication Requirements Disclosure: Release of message contents Traffic analysis: Discovery of the pattern of traffic between parties Masquerade: Insertion of messages into the network from a fraudulent source Content modification: Changes to the contents of a message Sequence modification: Any modification to a sequence of messages between parties Timing modification: Delay or replay of messages Source repudiation: Denial of transmission of message by source Destination repudiation: Denial of receipt of message by destination  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication Requirements Disclosure Traffic analysis Masquerade Content modification Sequence modification Timing modification Source repudiation Destination repudiation Requires Message Confidentiality Requires Message Authentication Requires Digital Signature  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Message Authentication Code An alternative authentication technique involves the use of a secret key to generate a small fixed-size block of data, known as a cryptographic checksum or MAC MAC is appended to the message. 
+
+
+>> Tokens are: 
+ ['Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Message', 'Authentication', 'Requirements', 'Disclosure', ':', 'Release', 'message', 'contents', 'Traffic', 'analysis', ':', 'Discovery', 'pattern', 'traffic', 'parties', 'Masquerade', ':', 'Insertion', 'messages', 'network', 'fraudulent', 'source', 'Content', 'modification', ':', 'Changes', 'contents', 'message', 'Sequence', 'modification', ':', 'Any', 'modification', 'sequence', 'messages', 'parties', 'Timing', 'modification', ':', 'Delay', 'replay', 'messages', 'Source', 'repudiation', ':', 'Denial', 'transmission', 'message', 'source', 'Destination', 'repudiation', ':', 'Denial', 'receipt', 'message', 'destination', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Message', 'Authentication', 'Requirements', 'Disclosure', 'Traffic', 'analysis', 'Masquerade', 'Content', 'modification', 'Sequence', 'modification', 'Timing', 'modification', 'Source', 'repudiation', 'Destination', 'repudiation', 'Requires', 'Message', 'Confidentiality', 'Requires', 'Message', 'Authentication', 'Requires', 'Digital', 'Signature', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Message', 'Authentication', 'Code', 'An', 'alternative', 'authentication', 'technique', 'involves', 'use', 'secret', 'key', 'generate', 'small', 'fixed-size', 'block', 'data', ',', 'known', 'cryptographic', 'checksum', 'MAC', 'MAC', 'appended', 'message', '.']
+
+>> Bigrams are: 
+ [('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Requirements'), ('Requirements', 'Disclosure'), ('Disclosure', ':'), (':', 'Release'), ('Release', 'message'), ('message', 'contents'), ('contents', 'Traffic'), ('Traffic', 'analysis'), ('analysis', ':'), (':', 'Discovery'), ('Discovery', 'pattern'), ('pattern', 'traffic'), ('traffic', 'parties'), ('parties', 'Masquerade'), ('Masquerade', ':'), (':', 'Insertion'), ('Insertion', 'messages'), ('messages', 'network'), ('network', 'fraudulent'), ('fraudulent', 'source'), ('source', 'Content'), ('Content', 'modification'), ('modification', ':'), (':', 'Changes'), ('Changes', 'contents'), ('contents', 'message'), ('message', 'Sequence'), ('Sequence', 'modification'), ('modification', ':'), (':', 'Any'), ('Any', 'modification'), ('modification', 'sequence'), ('sequence', 'messages'), ('messages', 'parties'), ('parties', 'Timing'), ('Timing', 'modification'), ('modification', ':'), (':', 'Delay'), ('Delay', 'replay'), ('replay', 'messages'), ('messages', 'Source'), ('Source', 'repudiation'), ('repudiation', ':'), (':', 'Denial'), ('Denial', 'transmission'), ('transmission', 'message'), ('message', 'source'), ('source', 'Destination'), ('Destination', 'repudiation'), ('repudiation', ':'), (':', 'Denial'), ('Denial', 'receipt'), ('receipt', 'message'), ('message', 'destination'), ('destination', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Requirements'), ('Requirements', 'Disclosure'), ('Disclosure', 'Traffic'), ('Traffic', 'analysis'), ('analysis', 'Masquerade'), ('Masquerade', 'Content'), ('Content', 'modification'), ('modification', 'Sequence'), ('Sequence', 'modification'), ('modification', 'Timing'), ('Timing', 'modification'), ('modification', 'Source'), ('Source', 'repudiation'), ('repudiation', 'Destination'), ('Destination', 'repudiation'), ('repudiation', 'Requires'), ('Requires', 'Message'), ('Message', 'Confidentiality'), ('Confidentiality', 'Requires'), ('Requires', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Requires'), ('Requires', 'Digital'), ('Digital', 'Signature'), ('Signature', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Code'), ('Code', 'An'), ('An', 'alternative'), ('alternative', 'authentication'), ('authentication', 'technique'), ('technique', 'involves'), ('involves', 'use'), ('use', 'secret'), ('secret', 'key'), ('key', 'generate'), ('generate', 'small'), ('small', 'fixed-size'), ('fixed-size', 'block'), ('block', 'data'), ('data', ','), (',', 'known'), ('known', 'cryptographic'), ('cryptographic', 'checksum'), ('checksum', 'MAC'), ('MAC', 'MAC'), ('MAC', 'appended'), ('appended', 'message'), ('message', '.')]
+
+>> Trigrams are: 
+ [('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Message'), ('Subject', 'Message', 'Authentication'), ('Message', 'Authentication', 'Requirements'), ('Authentication', 'Requirements', 'Disclosure'), ('Requirements', 'Disclosure', ':'), ('Disclosure', ':', 'Release'), (':', 'Release', 'message'), ('Release', 'message', 'contents'), ('message', 'contents', 'Traffic'), ('contents', 'Traffic', 'analysis'), ('Traffic', 'analysis', ':'), ('analysis', ':', 'Discovery'), (':', 'Discovery', 'pattern'), ('Discovery', 'pattern', 'traffic'), ('pattern', 'traffic', 'parties'), ('traffic', 'parties', 'Masquerade'), ('parties', 'Masquerade', ':'), ('Masquerade', ':', 'Insertion'), (':', 'Insertion', 'messages'), ('Insertion', 'messages', 'network'), ('messages', 'network', 'fraudulent'), ('network', 'fraudulent', 'source'), ('fraudulent', 'source', 'Content'), ('source', 'Content', 'modification'), ('Content', 'modification', ':'), ('modification', ':', 'Changes'), (':', 'Changes', 'contents'), ('Changes', 'contents', 'message'), ('contents', 'message', 'Sequence'), ('message', 'Sequence', 'modification'), ('Sequence', 'modification', ':'), ('modification', ':', 'Any'), (':', 'Any', 'modification'), ('Any', 'modification', 'sequence'), ('modification', 'sequence', 'messages'), ('sequence', 'messages', 'parties'), ('messages', 'parties', 'Timing'), ('parties', 'Timing', 'modification'), ('Timing', 'modification', ':'), ('modification', ':', 'Delay'), (':', 'Delay', 'replay'), ('Delay', 'replay', 'messages'), ('replay', 'messages', 'Source'), ('messages', 'Source', 'repudiation'), ('Source', 'repudiation', ':'), ('repudiation', ':', 'Denial'), (':', 'Denial', 'transmission'), ('Denial', 'transmission', 'message'), ('transmission', 'message', 'source'), ('message', 'source', 'Destination'), ('source', 'Destination', 'repudiation'), ('Destination', 'repudiation', ':'), ('repudiation', ':', 'Denial'), (':', 'Denial', 'receipt'), ('Denial', 'receipt', 'message'), ('receipt', 'message', 'destination'), ('message', 'destination', 'Unit-6'), ('destination', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Message'), ('Subject', 'Message', 'Authentication'), ('Message', 'Authentication', 'Requirements'), ('Authentication', 'Requirements', 'Disclosure'), ('Requirements', 'Disclosure', 'Traffic'), ('Disclosure', 'Traffic', 'analysis'), ('Traffic', 'analysis', 'Masquerade'), ('analysis', 'Masquerade', 'Content'), ('Masquerade', 'Content', 'modification'), ('Content', 'modification', 'Sequence'), ('modification', 'Sequence', 'modification'), ('Sequence', 'modification', 'Timing'), ('modification', 'Timing', 'modification'), ('Timing', 'modification', 'Source'), ('modification', 'Source', 'repudiation'), ('Source', 'repudiation', 'Destination'), ('repudiation', 'Destination', 'repudiation'), ('Destination', 'repudiation', 'Requires'), ('repudiation', 'Requires', 'Message'), ('Requires', 'Message', 'Confidentiality'), ('Message', 'Confidentiality', 'Requires'), ('Confidentiality', 'Requires', 'Message'), ('Requires', 'Message', 'Authentication'), ('Message', 'Authentication', 'Requires'), ('Authentication', 'Requires', 'Digital'), ('Requires', 'Digital', 'Signature'), ('Digital', 'Signature', 'Unit-6'), ('Signature', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Message'), ('Subject', 'Message', 'Authentication'), ('Message', 'Authentication', 'Code'), ('Authentication', 'Code', 'An'), ('Code', 'An', 'alternative'), ('An', 'alternative', 'authentication'), ('alternative', 'authentication', 'technique'), ('authentication', 'technique', 'involves'), ('technique', 'involves', 'use'), ('involves', 'use', 'secret'), ('use', 'secret', 'key'), ('secret', 'key', 'generate'), ('key', 'generate', 'small'), ('generate', 'small', 'fixed-size'), ('small', 'fixed-size', 'block'), ('fixed-size', 'block', 'data'), ('block', 'data', ','), ('data', ',', 'known'), (',', 'known', 'cryptographic'), ('known', 'cryptographic', 'checksum'), ('cryptographic', 'checksum', 'MAC'), ('checksum', 'MAC', 'MAC'), ('MAC', 'MAC', 'appended'), ('MAC', 'appended', 'message'), ('appended', 'message', '.')]
+
+>> POS Tags are: 
+ [('Unit-6', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Requirements', 'NNP'), ('Disclosure', 'NN'), (':', ':'), ('Release', 'NNP'), ('message', 'NN'), ('contents', 'NNS'), ('Traffic', 'JJ'), ('analysis', 'NN'), (':', ':'), ('Discovery', 'NNP'), ('pattern', 'NN'), ('traffic', 'NN'), ('parties', 'NNS'), ('Masquerade', 'NNP'), (':', ':'), ('Insertion', 'NN'), ('messages', 'NNS'), ('network', 'NN'), ('fraudulent', 'JJ'), ('source', 'NN'), ('Content', 'NNP'), ('modification', 'NN'), (':', ':'), ('Changes', 'NNS'), ('contents', 'NNS'), ('message', 'NN'), ('Sequence', 'NNP'), ('modification', 'NN'), (':', ':'), ('Any', 'DT'), ('modification', 'NN'), ('sequence', 'NN'), ('messages', 'NNS'), ('parties', 'NNS'), ('Timing', 'VBG'), ('modification', 'NN'), (':', ':'), ('Delay', 'NNP'), ('replay', 'NN'), ('messages', 'NNS'), ('Source', 'NNP'), ('repudiation', 'NN'), (':', ':'), ('Denial', 'JJ'), ('transmission', 'NN'), ('message', 'NN'), ('source', 'NN'), ('Destination', 'NNP'), ('repudiation', 'NN'), (':', ':'), ('Denial', 'JJ'), ('receipt', 'NN'), ('message', 'NN'), ('destination', 'NN'), ('Unit-6', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Requirements', 'NNP'), ('Disclosure', 'NNP'), ('Traffic', 'NNP'), ('analysis', 'NN'), ('Masquerade', 'NNP'), ('Content', 'NNP'), ('modification', 'NN'), ('Sequence', 'NNP'), ('modification', 'NN'), ('Timing', 'NNP'), ('modification', 'NN'), ('Source', 'NNP'), ('repudiation', 'NN'), ('Destination', 'NNP'), ('repudiation', 'NN'), ('Requires', 'NNP'), ('Message', 'NNP'), ('Confidentiality', 'NNP'), ('Requires', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Requires', 'NNP'), ('Digital', 'NNP'), ('Signature', 'NNP'), ('Unit-6', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Code', 'NNP'), ('An', 'DT'), ('alternative', 'JJ'), ('authentication', 'NN'), ('technique', 'NN'), ('involves', 'VBZ'), ('use', 'VBP'), ('secret', 'JJ'), ('key', 'NN'), ('generate', 'VB'), ('small', 'JJ'), ('fixed-size', 'JJ'), ('block', 'NN'), ('data', 'NNS'), (',', ','), ('known', 'VBN'), ('cryptographic', 'JJ'), ('checksum', 'NN'), ('MAC', 'NNP'), ('MAC', 'NNP'), ('appended', 'VBD'), ('message', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-6/JJ
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Message/NNP
+    Authentication/NNP
+    Requirements/NNP
+    Disclosure/NN)
+  :/:
+  (NP Release/NNP message/NN contents/NNS)
+  (NP Traffic/JJ analysis/NN)
+  :/:
+  (NP Discovery/NNP pattern/NN traffic/NN parties/NNS Masquerade/NNP)
+  :/:
+  (NP Insertion/NN messages/NNS network/NN)
+  (NP fraudulent/JJ source/NN Content/NNP modification/NN)
+  :/:
+  (NP
+    Changes/NNS
+    contents/NNS
+    message/NN
+    Sequence/NNP
+    modification/NN)
+  :/:
+  (NP Any/DT modification/NN sequence/NN messages/NNS parties/NNS)
+  Timing/VBG
+  (NP modification/NN)
+  :/:
+  (NP Delay/NNP replay/NN messages/NNS Source/NNP repudiation/NN)
+  :/:
+  (NP
+    Denial/JJ
+    transmission/NN
+    message/NN
+    source/NN
+    Destination/NNP
+    repudiation/NN)
+  :/:
+  (NP
+    Denial/JJ
+    receipt/NN
+    message/NN
+    destination/NN
+    Unit-6/NNP
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Message/NNP
+    Authentication/NNP
+    Requirements/NNP
+    Disclosure/NNP
+    Traffic/NNP
+    analysis/NN
+    Masquerade/NNP
+    Content/NNP
+    modification/NN
+    Sequence/NNP
+    modification/NN
+    Timing/NNP
+    modification/NN
+    Source/NNP
+    repudiation/NN
+    Destination/NNP
+    repudiation/NN
+    Requires/NNP
+    Message/NNP
+    Confidentiality/NNP
+    Requires/NNP
+    Message/NNP
+    Authentication/NNP
+    Requires/NNP
+    Digital/NNP
+    Signature/NNP
+    Unit-6/NNP
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Message/NNP
+    Authentication/NNP
+    Code/NNP)
+  (NP An/DT alternative/JJ authentication/NN technique/NN)
+  involves/VBZ
+  use/VBP
+  (NP secret/JJ key/NN)
+  generate/VB
+  (NP small/JJ fixed-size/JJ block/NN data/NNS)
+  ,/,
+  known/VBN
+  (NP cryptographic/JJ checksum/NN MAC/NNP MAC/NNP)
+  appended/VBD
+  (NP message/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Message Authentication Requirements Disclosure', 'Release message contents', 'Traffic analysis', 'Discovery pattern traffic parties Masquerade', 'Insertion messages network', 'fraudulent source Content modification', 'Changes contents message Sequence modification', 'Any modification sequence messages parties', 'modification', 'Delay replay messages Source repudiation', 'Denial transmission message source Destination repudiation', 'Denial receipt message destination Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Message Authentication Requirements Disclosure Traffic analysis Masquerade Content modification Sequence modification Timing modification Source repudiation Destination repudiation Requires Message Confidentiality Requires Message Authentication Requires Digital Signature Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Message Authentication Code', 'An alternative authentication technique', 'secret key', 'small fixed-size block data', 'cryptographic checksum MAC MAC', 'message']
+
+>> Named Entities are: 
+ [('PERSON', 'Message Authentication Codes Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Masquerade'), ('PERSON', 'Delay'), ('GPE', 'Source'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Masquerade Content'), ('PERSON', 'Source'), ('PERSON', 'Requires Message Confidentiality Requires Message'), ('PERSON', 'Requires Digital Signature'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'MAC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('Requirements', 'requir'), ('Disclosure', 'disclosur'), (':', ':'), ('Release', 'releas'), ('message', 'messag'), ('contents', 'content'), ('Traffic', 'traffic'), ('analysis', 'analysi'), (':', ':'), ('Discovery', 'discoveri'), ('pattern', 'pattern'), ('traffic', 'traffic'), ('parties', 'parti'), ('Masquerade', 'masquerad'), (':', ':'), ('Insertion', 'insert'), ('messages', 'messag'), ('network', 'network'), ('fraudulent', 'fraudul'), ('source', 'sourc'), ('Content', 'content'), ('modification', 'modif'), (':', ':'), ('Changes', 'chang'), ('contents', 'content'), ('message', 'messag'), ('Sequence', 'sequenc'), ('modification', 'modif'), (':', ':'), ('Any', 'ani'), ('modification', 'modif'), ('sequence', 'sequenc'), ('messages', 'messag'), ('parties', 'parti'), ('Timing', 'time'), ('modification', 'modif'), (':', ':'), ('Delay', 'delay'), ('replay', 'replay'), ('messages', 'messag'), ('Source', 'sourc'), ('repudiation', 'repudi'), (':', ':'), ('Denial', 'denial'), ('transmission', 'transmiss'), ('message', 'messag'), ('source', 'sourc'), ('Destination', 'destin'), ('repudiation', 'repudi'), (':', ':'), ('Denial', 'denial'), ('receipt', 'receipt'), ('message', 'messag'), ('destination', 'destin'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('Requirements', 'requir'), ('Disclosure', 'disclosur'), ('Traffic', 'traffic'), ('analysis', 'analysi'), ('Masquerade', 'masquerad'), ('Content', 'content'), ('modification', 'modif'), ('Sequence', 'sequenc'), ('modification', 'modif'), ('Timing', 'time'), ('modification', 'modif'), ('Source', 'sourc'), ('repudiation', 'repudi'), ('Destination', 'destin'), ('repudiation', 'repudi'), ('Requires', 'requir'), ('Message', 'messag'), ('Confidentiality', 'confidenti'), ('Requires', 'requir'), ('Message', 'messag'), ('Authentication', 'authent'), ('Requires', 'requir'), ('Digital', 'digit'), ('Signature', 'signatur'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('An', 'an'), ('alternative', 'altern'), ('authentication', 'authent'), ('technique', 'techniqu'), ('involves', 'involv'), ('use', 'use'), ('secret', 'secret'), ('key', 'key'), ('generate', 'gener'), ('small', 'small'), ('fixed-size', 'fixed-s'), ('block', 'block'), ('data', 'data'), (',', ','), ('known', 'known'), ('cryptographic', 'cryptograph'), ('checksum', 'checksum'), ('MAC', 'mac'), ('MAC', 'mac'), ('appended', 'append'), ('message', 'messag'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('Requirements', 'requir'), ('Disclosure', 'disclosur'), (':', ':'), ('Release', 'releas'), ('message', 'messag'), ('contents', 'content'), ('Traffic', 'traffic'), ('analysis', 'analysi'), (':', ':'), ('Discovery', 'discoveri'), ('pattern', 'pattern'), ('traffic', 'traffic'), ('parties', 'parti'), ('Masquerade', 'masquerad'), (':', ':'), ('Insertion', 'insert'), ('messages', 'messag'), ('network', 'network'), ('fraudulent', 'fraudul'), ('source', 'sourc'), ('Content', 'content'), ('modification', 'modif'), (':', ':'), ('Changes', 'chang'), ('contents', 'content'), ('message', 'messag'), ('Sequence', 'sequenc'), ('modification', 'modif'), (':', ':'), ('Any', 'ani'), ('modification', 'modif'), ('sequence', 'sequenc'), ('messages', 'messag'), ('parties', 'parti'), ('Timing', 'time'), ('modification', 'modif'), (':', ':'), ('Delay', 'delay'), ('replay', 'replay'), ('messages', 'messag'), ('Source', 'sourc'), ('repudiation', 'repudi'), (':', ':'), ('Denial', 'denial'), ('transmission', 'transmiss'), ('message', 'messag'), ('source', 'sourc'), ('Destination', 'destin'), ('repudiation', 'repudi'), (':', ':'), ('Denial', 'denial'), ('receipt', 'receipt'), ('message', 'messag'), ('destination', 'destin'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('Requirements', 'requir'), ('Disclosure', 'disclosur'), ('Traffic', 'traffic'), ('analysis', 'analysi'), ('Masquerade', 'masquerad'), ('Content', 'content'), ('modification', 'modif'), ('Sequence', 'sequenc'), ('modification', 'modif'), ('Timing', 'time'), ('modification', 'modif'), ('Source', 'sourc'), ('repudiation', 'repudi'), ('Destination', 'destin'), ('repudiation', 'repudi'), ('Requires', 'requir'), ('Message', 'messag'), ('Confidentiality', 'confidenti'), ('Requires', 'requir'), ('Message', 'messag'), ('Authentication', 'authent'), ('Requires', 'requir'), ('Digital', 'digit'), ('Signature', 'signatur'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('An', 'an'), ('alternative', 'altern'), ('authentication', 'authent'), ('technique', 'techniqu'), ('involves', 'involv'), ('use', 'use'), ('secret', 'secret'), ('key', 'key'), ('generate', 'generat'), ('small', 'small'), ('fixed-size', 'fixed-s'), ('block', 'block'), ('data', 'data'), (',', ','), ('known', 'known'), ('cryptographic', 'cryptograph'), ('checksum', 'checksum'), ('MAC', 'mac'), ('MAC', 'mac'), ('appended', 'append'), ('message', 'messag'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Requirements', 'Requirements'), ('Disclosure', 'Disclosure'), (':', ':'), ('Release', 'Release'), ('message', 'message'), ('contents', 'content'), ('Traffic', 'Traffic'), ('analysis', 'analysis'), (':', ':'), ('Discovery', 'Discovery'), ('pattern', 'pattern'), ('traffic', 'traffic'), ('parties', 'party'), ('Masquerade', 'Masquerade'), (':', ':'), ('Insertion', 'Insertion'), ('messages', 'message'), ('network', 'network'), ('fraudulent', 'fraudulent'), ('source', 'source'), ('Content', 'Content'), ('modification', 'modification'), (':', ':'), ('Changes', 'Changes'), ('contents', 'content'), ('message', 'message'), ('Sequence', 'Sequence'), ('modification', 'modification'), (':', ':'), ('Any', 'Any'), ('modification', 'modification'), ('sequence', 'sequence'), ('messages', 'message'), ('parties', 'party'), ('Timing', 'Timing'), ('modification', 'modification'), (':', ':'), ('Delay', 'Delay'), ('replay', 'replay'), ('messages', 'message'), ('Source', 'Source'), ('repudiation', 'repudiation'), (':', ':'), ('Denial', 'Denial'), ('transmission', 'transmission'), ('message', 'message'), ('source', 'source'), ('Destination', 'Destination'), ('repudiation', 'repudiation'), (':', ':'), ('Denial', 'Denial'), ('receipt', 'receipt'), ('message', 'message'), ('destination', 'destination'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Requirements', 'Requirements'), ('Disclosure', 'Disclosure'), ('Traffic', 'Traffic'), ('analysis', 'analysis'), ('Masquerade', 'Masquerade'), ('Content', 'Content'), ('modification', 'modification'), ('Sequence', 'Sequence'), ('modification', 'modification'), ('Timing', 'Timing'), ('modification', 'modification'), ('Source', 'Source'), ('repudiation', 'repudiation'), ('Destination', 'Destination'), ('repudiation', 'repudiation'), ('Requires', 'Requires'), ('Message', 'Message'), ('Confidentiality', 'Confidentiality'), ('Requires', 'Requires'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Requires', 'Requires'), ('Digital', 'Digital'), ('Signature', 'Signature'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Code', 'Code'), ('An', 'An'), ('alternative', 'alternative'), ('authentication', 'authentication'), ('technique', 'technique'), ('involves', 'involves'), ('use', 'use'), ('secret', 'secret'), ('key', 'key'), ('generate', 'generate'), ('small', 'small'), ('fixed-size', 'fixed-size'), ('block', 'block'), ('data', 'data'), (',', ','), ('known', 'known'), ('cryptographic', 'cryptographic'), ('checksum', 'checksum'), ('MAC', 'MAC'), ('MAC', 'MAC'), ('appended', 'appended'), ('message', 'message'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+This technique assumes that two communicating parties, say A and B, share a common secret key K.  When A has a message to send to B, it calculates the MAC as a function of the message and the key  MAC = C ( K , M )   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication Code The receiver is assured that the message has not been altered. 
+
+
+>> Tokens are: 
+ ['This', 'technique', 'assumes', 'two', 'communicating', 'parties', ',', 'say', 'A', 'B', ',', 'share', 'common', 'secret', 'key', 'K.', 'When', 'A', 'message', 'send', 'B', ',', 'calculates', 'MAC', 'function', 'message', 'key', 'MAC', '=', 'C', '(', 'K', ',', 'M', ')', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Message', 'Authentication', 'Code', 'The', 'receiver', 'assured', 'message', 'altered', '.']
+
+>> Bigrams are: 
+ [('This', 'technique'), ('technique', 'assumes'), ('assumes', 'two'), ('two', 'communicating'), ('communicating', 'parties'), ('parties', ','), (',', 'say'), ('say', 'A'), ('A', 'B'), ('B', ','), (',', 'share'), ('share', 'common'), ('common', 'secret'), ('secret', 'key'), ('key', 'K.'), ('K.', 'When'), ('When', 'A'), ('A', 'message'), ('message', 'send'), ('send', 'B'), ('B', ','), (',', 'calculates'), ('calculates', 'MAC'), ('MAC', 'function'), ('function', 'message'), ('message', 'key'), ('key', 'MAC'), ('MAC', '='), ('=', 'C'), ('C', '('), ('(', 'K'), ('K', ','), (',', 'M'), ('M', ')'), (')', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Code'), ('Code', 'The'), ('The', 'receiver'), ('receiver', 'assured'), ('assured', 'message'), ('message', 'altered'), ('altered', '.')]
+
+>> Trigrams are: 
+ [('This', 'technique', 'assumes'), ('technique', 'assumes', 'two'), ('assumes', 'two', 'communicating'), ('two', 'communicating', 'parties'), ('communicating', 'parties', ','), ('parties', ',', 'say'), (',', 'say', 'A'), ('say', 'A', 'B'), ('A', 'B', ','), ('B', ',', 'share'), (',', 'share', 'common'), ('share', 'common', 'secret'), ('common', 'secret', 'key'), ('secret', 'key', 'K.'), ('key', 'K.', 'When'), ('K.', 'When', 'A'), ('When', 'A', 'message'), ('A', 'message', 'send'), ('message', 'send', 'B'), ('send', 'B', ','), ('B', ',', 'calculates'), (',', 'calculates', 'MAC'), ('calculates', 'MAC', 'function'), ('MAC', 'function', 'message'), ('function', 'message', 'key'), ('message', 'key', 'MAC'), ('key', 'MAC', '='), ('MAC', '=', 'C'), ('=', 'C', '('), ('C', '(', 'K'), ('(', 'K', ','), ('K', ',', 'M'), (',', 'M', ')'), ('M', ')', 'Unit-6'), (')', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Message'), ('Subject', 'Message', 'Authentication'), ('Message', 'Authentication', 'Code'), ('Authentication', 'Code', 'The'), ('Code', 'The', 'receiver'), ('The', 'receiver', 'assured'), ('receiver', 'assured', 'message'), ('assured', 'message', 'altered'), ('message', 'altered', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('technique', 'NN'), ('assumes', 'VBZ'), ('two', 'CD'), ('communicating', 'NN'), ('parties', 'NNS'), (',', ','), ('say', 'VBP'), ('A', 'DT'), ('B', 'NNP'), (',', ','), ('share', 'NN'), ('common', 'JJ'), ('secret', 'JJ'), ('key', 'NN'), ('K.', 'NNP'), ('When', 'WRB'), ('A', 'NNP'), ('message', 'NN'), ('send', 'NN'), ('B', 'NNP'), (',', ','), ('calculates', 'VBZ'), ('MAC', 'NNP'), ('function', 'NN'), ('message', 'NN'), ('key', 'JJ'), ('MAC', 'NNP'), ('=', 'NNP'), ('C', 'NNP'), ('(', '('), ('K', 'NNP'), (',', ','), ('M', 'NNP'), (')', ')'), ('Unit-6', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Code', 'NNP'), ('The', 'DT'), ('receiver', 'NN'), ('assured', 'VBD'), ('message', 'NN'), ('altered', 'VBN'), ('.', '.')]
+
+ (S
+  (NP This/DT technique/NN)
+  assumes/VBZ
+  two/CD
+  (NP communicating/NN parties/NNS)
+  ,/,
+  say/VBP
+  (NP A/DT B/NNP)
+  ,/,
+  (NP share/NN)
+  (NP common/JJ secret/JJ key/NN K./NNP)
+  When/WRB
+  (NP A/NNP message/NN send/NN B/NNP)
+  ,/,
+  calculates/VBZ
+  (NP MAC/NNP function/NN message/NN)
+  (NP key/JJ MAC/NNP =/NNP C/NNP)
+  (/(
+  (NP K/NNP)
+  ,/,
+  (NP M/NNP)
+  )/)
+  (NP
+    Unit-6/NNP
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Message/NNP
+    Authentication/NNP
+    Code/NNP)
+  (NP The/DT receiver/NN)
+  assured/VBD
+  (NP message/NN)
+  altered/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['This technique', 'communicating parties', 'A B', 'share', 'common secret key K.', 'A message send B', 'MAC function message', 'key MAC = C', 'K', 'M', 'Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Message Authentication Code', 'The receiver', 'message']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'MAC'), ('ORGANIZATION', 'MAC'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology')] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('technique', 'techniqu'), ('assumes', 'assum'), ('two', 'two'), ('communicating', 'commun'), ('parties', 'parti'), (',', ','), ('say', 'say'), ('A', 'a'), ('B', 'b'), (',', ','), ('share', 'share'), ('common', 'common'), ('secret', 'secret'), ('key', 'key'), ('K.', 'k.'), ('When', 'when'), ('A', 'a'), ('message', 'messag'), ('send', 'send'), ('B', 'b'), (',', ','), ('calculates', 'calcul'), ('MAC', 'mac'), ('function', 'function'), ('message', 'messag'), ('key', 'key'), ('MAC', 'mac'), ('=', '='), ('C', 'c'), ('(', '('), ('K', 'k'), (',', ','), ('M', 'm'), (')', ')'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('The', 'the'), ('receiver', 'receiv'), ('assured', 'assur'), ('message', 'messag'), ('altered', 'alter'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('technique', 'techniqu'), ('assumes', 'assum'), ('two', 'two'), ('communicating', 'communic'), ('parties', 'parti'), (',', ','), ('say', 'say'), ('A', 'a'), ('B', 'b'), (',', ','), ('share', 'share'), ('common', 'common'), ('secret', 'secret'), ('key', 'key'), ('K.', 'k.'), ('When', 'when'), ('A', 'a'), ('message', 'messag'), ('send', 'send'), ('B', 'b'), (',', ','), ('calculates', 'calcul'), ('MAC', 'mac'), ('function', 'function'), ('message', 'messag'), ('key', 'key'), ('MAC', 'mac'), ('=', '='), ('C', 'c'), ('(', '('), ('K', 'k'), (',', ','), ('M', 'm'), (')', ')'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('The', 'the'), ('receiver', 'receiv'), ('assured', 'assur'), ('message', 'messag'), ('altered', 'alter'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('technique', 'technique'), ('assumes', 'assumes'), ('two', 'two'), ('communicating', 'communicating'), ('parties', 'party'), (',', ','), ('say', 'say'), ('A', 'A'), ('B', 'B'), (',', ','), ('share', 'share'), ('common', 'common'), ('secret', 'secret'), ('key', 'key'), ('K.', 'K.'), ('When', 'When'), ('A', 'A'), ('message', 'message'), ('send', 'send'), ('B', 'B'), (',', ','), ('calculates', 'calculates'), ('MAC', 'MAC'), ('function', 'function'), ('message', 'message'), ('key', 'key'), ('MAC', 'MAC'), ('=', '='), ('C', 'C'), ('(', '('), ('K', 'K'), (',', ','), ('M', 'M'), (')', ')'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Code', 'Code'), ('The', 'The'), ('receiver', 'receiver'), ('assured', 'assured'), ('message', 'message'), ('altered', 'altered'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+If an attacker alters the message but does not alter the MAC, then the receiver’s calculation of the MAC will differ from the received MAC. 
+
+
+>> Tokens are: 
+ ['If', 'attacker', 'alters', 'message', 'alter', 'MAC', ',', 'receiver', '’', 'calculation', 'MAC', 'differ', 'received', 'MAC', '.']
+
+>> Bigrams are: 
+ [('If', 'attacker'), ('attacker', 'alters'), ('alters', 'message'), ('message', 'alter'), ('alter', 'MAC'), ('MAC', ','), (',', 'receiver'), ('receiver', '’'), ('’', 'calculation'), ('calculation', 'MAC'), ('MAC', 'differ'), ('differ', 'received'), ('received', 'MAC'), ('MAC', '.')]
+
+>> Trigrams are: 
+ [('If', 'attacker', 'alters'), ('attacker', 'alters', 'message'), ('alters', 'message', 'alter'), ('message', 'alter', 'MAC'), ('alter', 'MAC', ','), ('MAC', ',', 'receiver'), (',', 'receiver', '’'), ('receiver', '’', 'calculation'), ('’', 'calculation', 'MAC'), ('calculation', 'MAC', 'differ'), ('MAC', 'differ', 'received'), ('differ', 'received', 'MAC'), ('received', 'MAC', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('attacker', 'NN'), ('alters', 'NNS'), ('message', 'VBP'), ('alter', 'RB'), ('MAC', 'NNP'), (',', ','), ('receiver', 'NN'), ('’', 'NNP'), ('calculation', 'NN'), ('MAC', 'NNP'), ('differ', 'NN'), ('received', 'VBD'), ('MAC', 'NNP'), ('.', '.')]
+
+ (S
+  If/IN
+  (NP attacker/NN alters/NNS)
+  message/VBP
+  alter/RB
+  (NP MAC/NNP)
+  ,/,
+  (NP receiver/NN ’/NNP calculation/NN MAC/NNP differ/NN)
+  received/VBD
+  (NP MAC/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['attacker alters', 'MAC', 'receiver ’ calculation MAC differ', 'MAC']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'MAC'), ('ORGANIZATION', 'MAC'), ('ORGANIZATION', 'MAC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('attacker', 'attack'), ('alters', 'alter'), ('message', 'messag'), ('alter', 'alter'), ('MAC', 'mac'), (',', ','), ('receiver', 'receiv'), ('’', '’'), ('calculation', 'calcul'), ('MAC', 'mac'), ('differ', 'differ'), ('received', 'receiv'), ('MAC', 'mac'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('attacker', 'attack'), ('alters', 'alter'), ('message', 'messag'), ('alter', 'alter'), ('MAC', 'mac'), (',', ','), ('receiver', 'receiv'), ('’', '’'), ('calculation', 'calcul'), ('MAC', 'mac'), ('differ', 'differ'), ('received', 'receiv'), ('MAC', 'mac'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('attacker', 'attacker'), ('alters', 'alters'), ('message', 'message'), ('alter', 'alter'), ('MAC', 'MAC'), (',', ','), ('receiver', 'receiver'), ('’', '’'), ('calculation', 'calculation'), ('MAC', 'MAC'), ('differ', 'differ'), ('received', 'received'), ('MAC', 'MAC'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+Because the attacker is assumed not to Know the secret key, the attacker cannot alter the MAC to correspond to the alterations in the message. 
+
+
+>> Tokens are: 
+ ['Because', 'attacker', 'assumed', 'Know', 'secret', 'key', ',', 'attacker', 'alter', 'MAC', 'correspond', 'alterations', 'message', '.']
+
+>> Bigrams are: 
+ [('Because', 'attacker'), ('attacker', 'assumed'), ('assumed', 'Know'), ('Know', 'secret'), ('secret', 'key'), ('key', ','), (',', 'attacker'), ('attacker', 'alter'), ('alter', 'MAC'), ('MAC', 'correspond'), ('correspond', 'alterations'), ('alterations', 'message'), ('message', '.')]
+
+>> Trigrams are: 
+ [('Because', 'attacker', 'assumed'), ('attacker', 'assumed', 'Know'), ('assumed', 'Know', 'secret'), ('Know', 'secret', 'key'), ('secret', 'key', ','), ('key', ',', 'attacker'), (',', 'attacker', 'alter'), ('attacker', 'alter', 'MAC'), ('alter', 'MAC', 'correspond'), ('MAC', 'correspond', 'alterations'), ('correspond', 'alterations', 'message'), ('alterations', 'message', '.')]
+
+>> POS Tags are: 
+ [('Because', 'IN'), ('attacker', 'NN'), ('assumed', 'VBD'), ('Know', 'NNP'), ('secret', 'JJ'), ('key', 'NN'), (',', ','), ('attacker', 'NN'), ('alter', 'NN'), ('MAC', 'NNP'), ('correspond', 'NN'), ('alterations', 'NNS'), ('message', 'NN'), ('.', '.')]
+
+ (S
+  Because/IN
+  (NP attacker/NN)
+  assumed/VBD
+  (NP Know/NNP)
+  (NP secret/JJ key/NN)
+  ,/,
+  (NP
+    attacker/NN
+    alter/NN
+    MAC/NNP
+    correspond/NN
+    alterations/NNS
+    message/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['attacker', 'Know', 'secret key', 'attacker alter MAC correspond alterations message']
+
+>> Named Entities are: 
+ [('PERSON', 'Know'), ('ORGANIZATION', 'MAC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Because', 'becaus'), ('attacker', 'attack'), ('assumed', 'assum'), ('Know', 'know'), ('secret', 'secret'), ('key', 'key'), (',', ','), ('attacker', 'attack'), ('alter', 'alter'), ('MAC', 'mac'), ('correspond', 'correspond'), ('alterations', 'alter'), ('message', 'messag'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Because', 'becaus'), ('attacker', 'attack'), ('assumed', 'assum'), ('Know', 'know'), ('secret', 'secret'), ('key', 'key'), (',', ','), ('attacker', 'attack'), ('alter', 'alter'), ('MAC', 'mac'), ('correspond', 'correspond'), ('alterations', 'alter'), ('message', 'messag'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Because', 'Because'), ('attacker', 'attacker'), ('assumed', 'assumed'), ('Know', 'Know'), ('secret', 'secret'), ('key', 'key'), (',', ','), ('attacker', 'attacker'), ('alter', 'alter'), ('MAC', 'MAC'), ('correspond', 'correspond'), ('alterations', 'alteration'), ('message', 'message'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication code - Cont… The receiver is assured that the message is from the alleged sender. 
+
+
+>> Tokens are: 
+ ['Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Message', 'Authentication', 'code', '-', 'Cont…', 'The', 'receiver', 'assured', 'message', 'alleged', 'sender', '.']
+
+>> Bigrams are: 
+ [('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Message'), ('Message', 'Authentication'), ('Authentication', 'code'), ('code', '-'), ('-', 'Cont…'), ('Cont…', 'The'), ('The', 'receiver'), ('receiver', 'assured'), ('assured', 'message'), ('message', 'alleged'), ('alleged', 'sender'), ('sender', '.')]
+
+>> Trigrams are: 
+ [('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Message'), ('Subject', 'Message', 'Authentication'), ('Message', 'Authentication', 'code'), ('Authentication', 'code', '-'), ('code', '-', 'Cont…'), ('-', 'Cont…', 'The'), ('Cont…', 'The', 'receiver'), ('The', 'receiver', 'assured'), ('receiver', 'assured', 'message'), ('assured', 'message', 'alleged'), ('message', 'alleged', 'sender'), ('alleged', 'sender', '.')]
+
+>> POS Tags are: 
+ [('Unit-6', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('code', 'NN'), ('-', ':'), ('Cont…', 'NNP'), ('The', 'DT'), ('receiver', 'NN'), ('assured', 'VBD'), ('message', 'NN'), ('alleged', 'VBN'), ('sender', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-6/JJ
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Message/NNP
+    Authentication/NNP
+    code/NN)
+  -/:
+  (NP Cont…/NNP)
+  (NP The/DT receiver/NN)
+  assured/VBD
+  (NP message/NN)
+  alleged/VBN
+  (NP sender/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Message Authentication code', 'Cont…', 'The receiver', 'message', 'sender']
+
+>> Named Entities are: 
+ [('PERSON', 'Message Authentication Codes Darshan Institute'), ('ORGANIZATION', 'Technology')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('code', 'code'), ('-', '-'), ('Cont…', 'cont…'), ('The', 'the'), ('receiver', 'receiv'), ('assured', 'assur'), ('message', 'messag'), ('alleged', 'alleg'), ('sender', 'sender'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('code', 'code'), ('-', '-'), ('Cont…', 'cont…'), ('The', 'the'), ('receiver', 'receiv'), ('assured', 'assur'), ('message', 'messag'), ('alleged', 'alleg'), ('sender', 'sender'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('code', 'code'), ('-', '-'), ('Cont…', 'Cont…'), ('The', 'The'), ('receiver', 'receiver'), ('assured', 'assured'), ('message', 'message'), ('alleged', 'alleged'), ('sender', 'sender'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+Because no one else knows the secret key, no one else could prepare a message with a proper MAC. 
+
+
+>> Tokens are: 
+ ['Because', 'one', 'else', 'knows', 'secret', 'key', ',', 'one', 'else', 'could', 'prepare', 'message', 'proper', 'MAC', '.']
+
+>> Bigrams are: 
+ [('Because', 'one'), ('one', 'else'), ('else', 'knows'), ('knows', 'secret'), ('secret', 'key'), ('key', ','), (',', 'one'), ('one', 'else'), ('else', 'could'), ('could', 'prepare'), ('prepare', 'message'), ('message', 'proper'), ('proper', 'MAC'), ('MAC', '.')]
+
+>> Trigrams are: 
+ [('Because', 'one', 'else'), ('one', 'else', 'knows'), ('else', 'knows', 'secret'), ('knows', 'secret', 'key'), ('secret', 'key', ','), ('key', ',', 'one'), (',', 'one', 'else'), ('one', 'else', 'could'), ('else', 'could', 'prepare'), ('could', 'prepare', 'message'), ('prepare', 'message', 'proper'), ('message', 'proper', 'MAC'), ('proper', 'MAC', '.')]
+
+>> POS Tags are: 
+ [('Because', 'IN'), ('one', 'CD'), ('else', 'RB'), ('knows', 'VBZ'), ('secret', 'JJ'), ('key', 'NN'), (',', ','), ('one', 'CD'), ('else', 'NN'), ('could', 'MD'), ('prepare', 'VB'), ('message', 'JJ'), ('proper', 'JJ'), ('MAC', 'NNP'), ('.', '.')]
+
+ (S
+  Because/IN
+  one/CD
+  else/RB
+  knows/VBZ
+  (NP secret/JJ key/NN)
+  ,/,
+  one/CD
+  (NP else/NN)
+  could/MD
+  prepare/VB
+  (NP message/JJ proper/JJ MAC/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['secret key', 'else', 'message proper MAC']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'MAC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Because', 'becaus'), ('one', 'one'), ('else', 'els'), ('knows', 'know'), ('secret', 'secret'), ('key', 'key'), (',', ','), ('one', 'one'), ('else', 'els'), ('could', 'could'), ('prepare', 'prepar'), ('message', 'messag'), ('proper', 'proper'), ('MAC', 'mac'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Because', 'becaus'), ('one', 'one'), ('else', 'els'), ('knows', 'know'), ('secret', 'secret'), ('key', 'key'), (',', ','), ('one', 'one'), ('else', 'els'), ('could', 'could'), ('prepare', 'prepar'), ('message', 'messag'), ('proper', 'proper'), ('MAC', 'mac'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Because', 'Because'), ('one', 'one'), ('else', 'else'), ('knows', 'know'), ('secret', 'secret'), ('key', 'key'), (',', ','), ('one', 'one'), ('else', 'else'), ('could', 'could'), ('prepare', 'prepare'), ('message', 'message'), ('proper', 'proper'), ('MAC', 'MAC'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+A MAC function is similar to encryption. 
+
+
+>> Tokens are: 
+ ['A', 'MAC', 'function', 'similar', 'encryption', '.']
+
+>> Bigrams are: 
+ [('A', 'MAC'), ('MAC', 'function'), ('function', 'similar'), ('similar', 'encryption'), ('encryption', '.')]
+
+>> Trigrams are: 
+ [('A', 'MAC', 'function'), ('MAC', 'function', 'similar'), ('function', 'similar', 'encryption'), ('similar', 'encryption', '.')]
+
+>> POS Tags are: 
+ [('A', 'DT'), ('MAC', 'NNP'), ('function', 'NN'), ('similar', 'JJ'), ('encryption', 'NN'), ('.', '.')]
+
+ (S (NP A/DT MAC/NNP function/NN) (NP similar/JJ encryption/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['A MAC function', 'similar encryption']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'MAC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('A', 'a'), ('MAC', 'mac'), ('function', 'function'), ('similar', 'similar'), ('encryption', 'encrypt'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('A', 'a'), ('MAC', 'mac'), ('function', 'function'), ('similar', 'similar'), ('encryption', 'encrypt'), ('.', '.')]
+
+>> Lemmatization: 
+ [('A', 'A'), ('MAC', 'MAC'), ('function', 'function'), ('similar', 'similar'), ('encryption', 'encryption'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+One difference is that the MAC algorithm need not be reversible, as it must be for decryption. 
+
+
+>> Tokens are: 
+ ['One', 'difference', 'MAC', 'algorithm', 'need', 'reversible', ',', 'must', 'decryption', '.']
+
+>> Bigrams are: 
+ [('One', 'difference'), ('difference', 'MAC'), ('MAC', 'algorithm'), ('algorithm', 'need'), ('need', 'reversible'), ('reversible', ','), (',', 'must'), ('must', 'decryption'), ('decryption', '.')]
+
+>> Trigrams are: 
+ [('One', 'difference', 'MAC'), ('difference', 'MAC', 'algorithm'), ('MAC', 'algorithm', 'need'), ('algorithm', 'need', 'reversible'), ('need', 'reversible', ','), ('reversible', ',', 'must'), (',', 'must', 'decryption'), ('must', 'decryption', '.')]
+
+>> POS Tags are: 
+ [('One', 'CD'), ('difference', 'NN'), ('MAC', 'NNP'), ('algorithm', 'RB'), ('need', 'VBP'), ('reversible', 'JJ'), (',', ','), ('must', 'MD'), ('decryption', 'VB'), ('.', '.')]
+
+ (S
+  One/CD
+  (NP difference/NN MAC/NNP)
+  algorithm/RB
+  need/VBP
+  reversible/JJ
+  ,/,
+  must/MD
+  decryption/VB
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['difference MAC']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'MAC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('One', 'one'), ('difference', 'differ'), ('MAC', 'mac'), ('algorithm', 'algorithm'), ('need', 'need'), ('reversible', 'revers'), (',', ','), ('must', 'must'), ('decryption', 'decrypt'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('One', 'one'), ('difference', 'differ'), ('MAC', 'mac'), ('algorithm', 'algorithm'), ('need', 'need'), ('reversible', 'revers'), (',', ','), ('must', 'must'), ('decryption', 'decrypt'), ('.', '.')]
+
+>> Lemmatization: 
+ [('One', 'One'), ('difference', 'difference'), ('MAC', 'MAC'), ('algorithm', 'algorithm'), ('need', 'need'), ('reversible', 'reversible'), (',', ','), ('must', 'must'), ('decryption', 'decryption'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+In general, the MAC function is a many-to-one function. 
+
+
+>> Tokens are: 
+ ['In', 'general', ',', 'MAC', 'function', 'many-to-one', 'function', '.']
+
+>> Bigrams are: 
+ [('In', 'general'), ('general', ','), (',', 'MAC'), ('MAC', 'function'), ('function', 'many-to-one'), ('many-to-one', 'function'), ('function', '.')]
+
+>> Trigrams are: 
+ [('In', 'general', ','), ('general', ',', 'MAC'), (',', 'MAC', 'function'), ('MAC', 'function', 'many-to-one'), ('function', 'many-to-one', 'function'), ('many-to-one', 'function', '.')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('general', 'JJ'), (',', ','), ('MAC', 'NNP'), ('function', 'NN'), ('many-to-one', 'NN'), ('function', 'NN'), ('.', '.')]
+
+ (S
+  In/IN
+  general/JJ
+  ,/,
+  (NP MAC/NNP function/NN many-to-one/NN function/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['MAC function many-to-one function']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'MAC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('general', 'gener'), (',', ','), ('MAC', 'mac'), ('function', 'function'), ('many-to-one', 'many-to-on'), ('function', 'function'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('general', 'general'), (',', ','), ('MAC', 'mac'), ('function', 'function'), ('many-to-one', 'many-to-on'), ('function', 'function'), ('.', '.')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('general', 'general'), (',', ','), ('MAC', 'MAC'), ('function', 'function'), ('many-to-one', 'many-to-one'), ('function', 'function'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+The domain of the function consists of messages of some arbitrary length, whereas the range consists of all possible MACs and all possible keys. 
+
+
+>> Tokens are: 
+ ['The', 'domain', 'function', 'consists', 'messages', 'arbitrary', 'length', ',', 'whereas', 'range', 'consists', 'possible', 'MACs', 'possible', 'keys', '.']
+
+>> Bigrams are: 
+ [('The', 'domain'), ('domain', 'function'), ('function', 'consists'), ('consists', 'messages'), ('messages', 'arbitrary'), ('arbitrary', 'length'), ('length', ','), (',', 'whereas'), ('whereas', 'range'), ('range', 'consists'), ('consists', 'possible'), ('possible', 'MACs'), ('MACs', 'possible'), ('possible', 'keys'), ('keys', '.')]
+
+>> Trigrams are: 
+ [('The', 'domain', 'function'), ('domain', 'function', 'consists'), ('function', 'consists', 'messages'), ('consists', 'messages', 'arbitrary'), ('messages', 'arbitrary', 'length'), ('arbitrary', 'length', ','), ('length', ',', 'whereas'), (',', 'whereas', 'range'), ('whereas', 'range', 'consists'), ('range', 'consists', 'possible'), ('consists', 'possible', 'MACs'), ('possible', 'MACs', 'possible'), ('MACs', 'possible', 'keys'), ('possible', 'keys', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('domain', 'NN'), ('function', 'NN'), ('consists', 'VBZ'), ('messages', 'NNS'), ('arbitrary', 'JJ'), ('length', 'NN'), (',', ','), ('whereas', 'JJ'), ('range', 'NN'), ('consists', 'VBZ'), ('possible', 'JJ'), ('MACs', 'NNP'), ('possible', 'JJ'), ('keys', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT domain/NN function/NN)
+  consists/VBZ
+  (NP messages/NNS)
+  (NP arbitrary/JJ length/NN)
+  ,/,
+  (NP whereas/JJ range/NN)
+  consists/VBZ
+  (NP possible/JJ MACs/NNP)
+  (NP possible/JJ keys/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The domain function', 'messages', 'arbitrary length', 'whereas range', 'possible MACs', 'possible keys']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'MACs')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('domain', 'domain'), ('function', 'function'), ('consists', 'consist'), ('messages', 'messag'), ('arbitrary', 'arbitrari'), ('length', 'length'), (',', ','), ('whereas', 'wherea'), ('range', 'rang'), ('consists', 'consist'), ('possible', 'possibl'), ('MACs', 'mac'), ('possible', 'possibl'), ('keys', 'key'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('domain', 'domain'), ('function', 'function'), ('consists', 'consist'), ('messages', 'messag'), ('arbitrary', 'arbitrari'), ('length', 'length'), (',', ','), ('whereas', 'wherea'), ('range', 'rang'), ('consists', 'consist'), ('possible', 'possibl'), ('MACs', 'mac'), ('possible', 'possibl'), ('keys', 'key'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('domain', 'domain'), ('function', 'function'), ('consists', 'consists'), ('messages', 'message'), ('arbitrary', 'arbitrary'), ('length', 'length'), (',', ','), ('whereas', 'whereas'), ('range', 'range'), ('consists', 'consists'), ('possible', 'possible'), ('MACs', 'MACs'), ('possible', 'possible'), ('keys', 'key'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+If an n-bit MAC is used, then there are 2 n  possible MACs  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication code - Cont…     Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  MAC Based on Hash Functions - HMAC Cryptographic hash functions such as MD5 and SHA generally execute faster  in software than symmetric block ciphers such as DES. 
+
+
+>> Tokens are: 
+ ['If', 'n-bit', 'MAC', 'used', ',', '2', 'n', 'possible', 'MACs', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Message', 'Authentication', 'code', '-', 'Cont…', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'MAC', 'Based', 'Hash', 'Functions', '-', 'HMAC', 'Cryptographic', 'hash', 'functions', 'MD5', 'SHA', 'generally', 'execute', 'faster', 'software', 'symmetric', 'block', 'ciphers', 'DES', '.']
+
+>> Bigrams are: 
+ [('If', 'n-bit'), ('n-bit', 'MAC'), ('MAC', 'used'), ('used', ','), (',', '2'), ('2', 'n'), ('n', 'possible'), ('possible', 'MACs'), ('MACs', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Message'), ('Message', 'Authentication'), ('Authentication', 'code'), ('code', '-'), ('-', 'Cont…'), ('Cont…', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'MAC'), ('MAC', 'Based'), ('Based', 'Hash'), ('Hash', 'Functions'), ('Functions', '-'), ('-', 'HMAC'), ('HMAC', 'Cryptographic'), ('Cryptographic', 'hash'), ('hash', 'functions'), ('functions', 'MD5'), ('MD5', 'SHA'), ('SHA', 'generally'), ('generally', 'execute'), ('execute', 'faster'), ('faster', 'software'), ('software', 'symmetric'), ('symmetric', 'block'), ('block', 'ciphers'), ('ciphers', 'DES'), ('DES', '.')]
+
+>> Trigrams are: 
+ [('If', 'n-bit', 'MAC'), ('n-bit', 'MAC', 'used'), ('MAC', 'used', ','), ('used', ',', '2'), (',', '2', 'n'), ('2', 'n', 'possible'), ('n', 'possible', 'MACs'), ('possible', 'MACs', 'Unit-6'), ('MACs', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Message'), ('Subject', 'Message', 'Authentication'), ('Message', 'Authentication', 'code'), ('Authentication', 'code', '-'), ('code', '-', 'Cont…'), ('-', 'Cont…', 'Unit-6'), ('Cont…', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'MAC'), ('Subject', 'MAC', 'Based'), ('MAC', 'Based', 'Hash'), ('Based', 'Hash', 'Functions'), ('Hash', 'Functions', '-'), ('Functions', '-', 'HMAC'), ('-', 'HMAC', 'Cryptographic'), ('HMAC', 'Cryptographic', 'hash'), ('Cryptographic', 'hash', 'functions'), ('hash', 'functions', 'MD5'), ('functions', 'MD5', 'SHA'), ('MD5', 'SHA', 'generally'), ('SHA', 'generally', 'execute'), ('generally', 'execute', 'faster'), ('execute', 'faster', 'software'), ('faster', 'software', 'symmetric'), ('software', 'symmetric', 'block'), ('symmetric', 'block', 'ciphers'), ('block', 'ciphers', 'DES'), ('ciphers', 'DES', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('n-bit', 'JJ'), ('MAC', 'NNP'), ('used', 'VBD'), (',', ','), ('2', 'CD'), ('n', 'NN'), ('possible', 'JJ'), ('MACs', 'NNP'), ('Unit-6', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('code', 'NN'), ('-', ':'), ('Cont…', 'NNP'), ('Unit-6', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('MAC', 'NNP'), ('Based', 'VBD'), ('Hash', 'NNP'), ('Functions', 'NNP'), ('-', ':'), ('HMAC', 'NNP'), ('Cryptographic', 'NNP'), ('hash', 'NN'), ('functions', 'NNS'), ('MD5', 'NNP'), ('SHA', 'NNP'), ('generally', 'RB'), ('execute', 'VBP'), ('faster', 'JJR'), ('software', 'NN'), ('symmetric', 'JJ'), ('block', 'NN'), ('ciphers', 'NNS'), ('DES', 'NNP'), ('.', '.')]
+
+ (S
+  If/IN
+  (NP n-bit/JJ MAC/NNP)
+  used/VBD
+  ,/,
+  2/CD
+  (NP n/NN)
+  (NP
+    possible/JJ
+    MACs/NNP
+    Unit-6/NNP
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Message/NNP
+    Authentication/NNP
+    code/NN)
+  -/:
+  (NP Cont…/NNP)
+  (NP
+    Unit-6/JJ
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP MAC/NNP)
+  Based/VBD
+  (NP Hash/NNP Functions/NNP)
+  -/:
+  (NP
+    HMAC/NNP
+    Cryptographic/NNP
+    hash/NN
+    functions/NNS
+    MD5/NNP
+    SHA/NNP)
+  generally/RB
+  execute/VBP
+  faster/JJR
+  (NP software/NN)
+  (NP symmetric/JJ block/NN ciphers/NNS DES/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['n-bit MAC', 'n', 'possible MACs Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Message Authentication code', 'Cont…', 'Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject MAC', 'Hash Functions', 'HMAC Cryptographic hash functions MD5 SHA', 'software', 'symmetric block ciphers DES']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'MAC'), ('ORGANIZATION', 'MACs'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Message Authentication Codes Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Hash Functions'), ('ORGANIZATION', 'HMAC Cryptographic'), ('ORGANIZATION', 'MD5')] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('n-bit', 'n-bit'), ('MAC', 'mac'), ('used', 'use'), (',', ','), ('2', '2'), ('n', 'n'), ('possible', 'possibl'), ('MACs', 'mac'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('code', 'code'), ('-', '-'), ('Cont…', 'cont…'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('MAC', 'mac'), ('Based', 'base'), ('Hash', 'hash'), ('Functions', 'function'), ('-', '-'), ('HMAC', 'hmac'), ('Cryptographic', 'cryptograph'), ('hash', 'hash'), ('functions', 'function'), ('MD5', 'md5'), ('SHA', 'sha'), ('generally', 'gener'), ('execute', 'execut'), ('faster', 'faster'), ('software', 'softwar'), ('symmetric', 'symmetr'), ('block', 'block'), ('ciphers', 'cipher'), ('DES', 'de'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('n-bit', 'n-bit'), ('MAC', 'mac'), ('used', 'use'), (',', ','), ('2', '2'), ('n', 'n'), ('possible', 'possibl'), ('MACs', 'mac'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Message', 'messag'), ('Authentication', 'authent'), ('code', 'code'), ('-', '-'), ('Cont…', 'cont…'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('MAC', 'mac'), ('Based', 'base'), ('Hash', 'hash'), ('Functions', 'function'), ('-', '-'), ('HMAC', 'hmac'), ('Cryptographic', 'cryptograph'), ('hash', 'hash'), ('functions', 'function'), ('MD5', 'md5'), ('SHA', 'sha'), ('generally', 'general'), ('execute', 'execut'), ('faster', 'faster'), ('software', 'softwar'), ('symmetric', 'symmetr'), ('block', 'block'), ('ciphers', 'cipher'), ('DES', 'des'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('n-bit', 'n-bit'), ('MAC', 'MAC'), ('used', 'used'), (',', ','), ('2', '2'), ('n', 'n'), ('possible', 'possible'), ('MACs', 'MACs'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('code', 'code'), ('-', '-'), ('Cont…', 'Cont…'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('MAC', 'MAC'), ('Based', 'Based'), ('Hash', 'Hash'), ('Functions', 'Functions'), ('-', '-'), ('HMAC', 'HMAC'), ('Cryptographic', 'Cryptographic'), ('hash', 'hash'), ('functions', 'function'), ('MD5', 'MD5'), ('SHA', 'SHA'), ('generally', 'generally'), ('execute', 'execute'), ('faster', 'faster'), ('software', 'software'), ('symmetric', 'symmetric'), ('block', 'block'), ('ciphers', 'cipher'), ('DES', 'DES'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+Library code for cryptographic hash functions is widely available. 
+
+
+>> Tokens are: 
+ ['Library', 'code', 'cryptographic', 'hash', 'functions', 'widely', 'available', '.']
+
+>> Bigrams are: 
+ [('Library', 'code'), ('code', 'cryptographic'), ('cryptographic', 'hash'), ('hash', 'functions'), ('functions', 'widely'), ('widely', 'available'), ('available', '.')]
+
+>> Trigrams are: 
+ [('Library', 'code', 'cryptographic'), ('code', 'cryptographic', 'hash'), ('cryptographic', 'hash', 'functions'), ('hash', 'functions', 'widely'), ('functions', 'widely', 'available'), ('widely', 'available', '.')]
+
+>> POS Tags are: 
+ [('Library', 'JJ'), ('code', 'NN'), ('cryptographic', 'JJ'), ('hash', 'NN'), ('functions', 'NNS'), ('widely', 'RB'), ('available', 'JJ'), ('.', '.')]
+
+ (S
+  (NP Library/JJ code/NN)
+  (NP cryptographic/JJ hash/NN functions/NNS)
+  widely/RB
+  available/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Library code', 'cryptographic hash functions']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Library', 'librari'), ('code', 'code'), ('cryptographic', 'cryptograph'), ('hash', 'hash'), ('functions', 'function'), ('widely', 'wide'), ('available', 'avail'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Library', 'librari'), ('code', 'code'), ('cryptographic', 'cryptograph'), ('hash', 'hash'), ('functions', 'function'), ('widely', 'wide'), ('available', 'avail'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Library', 'Library'), ('code', 'code'), ('cryptographic', 'cryptographic'), ('hash', 'hash'), ('functions', 'function'), ('widely', 'widely'), ('available', 'available'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Design objectives for HMAC To use, without modifications, available hash functions. 
+
+
+>> Tokens are: 
+ ['Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Design', 'objectives', 'HMAC', 'To', 'use', ',', 'without', 'modifications', ',', 'available', 'hash', 'functions', '.']
+
+>> Bigrams are: 
+ [('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Design'), ('Design', 'objectives'), ('objectives', 'HMAC'), ('HMAC', 'To'), ('To', 'use'), ('use', ','), (',', 'without'), ('without', 'modifications'), ('modifications', ','), (',', 'available'), ('available', 'hash'), ('hash', 'functions'), ('functions', '.')]
+
+>> Trigrams are: 
+ [('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Design'), ('Subject', 'Design', 'objectives'), ('Design', 'objectives', 'HMAC'), ('objectives', 'HMAC', 'To'), ('HMAC', 'To', 'use'), ('To', 'use', ','), ('use', ',', 'without'), (',', 'without', 'modifications'), ('without', 'modifications', ','), ('modifications', ',', 'available'), (',', 'available', 'hash'), ('available', 'hash', 'functions'), ('hash', 'functions', '.')]
+
+>> POS Tags are: 
+ [('Unit-6', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Design', 'NNP'), ('objectives', 'VBZ'), ('HMAC', 'NNP'), ('To', 'TO'), ('use', 'VB'), (',', ','), ('without', 'IN'), ('modifications', 'NNS'), (',', ','), ('available', 'JJ'), ('hash', 'NN'), ('functions', 'NNS'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-6/JJ
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP Design/NNP)
+  objectives/VBZ
+  (NP HMAC/NNP)
+  To/TO
+  use/VB
+  ,/,
+  without/IN
+  (NP modifications/NNS)
+  ,/,
+  (NP available/JJ hash/NN functions/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Design', 'HMAC', 'modifications', 'available hash functions']
+
+>> Named Entities are: 
+ [('PERSON', 'Message Authentication Codes Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'HMAC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Design', 'design'), ('objectives', 'object'), ('HMAC', 'hmac'), ('To', 'to'), ('use', 'use'), (',', ','), ('without', 'without'), ('modifications', 'modif'), (',', ','), ('available', 'avail'), ('hash', 'hash'), ('functions', 'function'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Design', 'design'), ('objectives', 'object'), ('HMAC', 'hmac'), ('To', 'to'), ('use', 'use'), (',', ','), ('without', 'without'), ('modifications', 'modif'), (',', ','), ('available', 'avail'), ('hash', 'hash'), ('functions', 'function'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Design', 'Design'), ('objectives', 'objective'), ('HMAC', 'HMAC'), ('To', 'To'), ('use', 'use'), (',', ','), ('without', 'without'), ('modifications', 'modification'), (',', ','), ('available', 'available'), ('hash', 'hash'), ('functions', 'function'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+To allow for easy replaceability of the embedded hash function in case faster or more secure hash functions are found or required. 
+
+
+>> Tokens are: 
+ ['To', 'allow', 'easy', 'replaceability', 'embedded', 'hash', 'function', 'case', 'faster', 'secure', 'hash', 'functions', 'found', 'required', '.']
+
+>> Bigrams are: 
+ [('To', 'allow'), ('allow', 'easy'), ('easy', 'replaceability'), ('replaceability', 'embedded'), ('embedded', 'hash'), ('hash', 'function'), ('function', 'case'), ('case', 'faster'), ('faster', 'secure'), ('secure', 'hash'), ('hash', 'functions'), ('functions', 'found'), ('found', 'required'), ('required', '.')]
+
+>> Trigrams are: 
+ [('To', 'allow', 'easy'), ('allow', 'easy', 'replaceability'), ('easy', 'replaceability', 'embedded'), ('replaceability', 'embedded', 'hash'), ('embedded', 'hash', 'function'), ('hash', 'function', 'case'), ('function', 'case', 'faster'), ('case', 'faster', 'secure'), ('faster', 'secure', 'hash'), ('secure', 'hash', 'functions'), ('hash', 'functions', 'found'), ('functions', 'found', 'required'), ('found', 'required', '.')]
+
+>> POS Tags are: 
+ [('To', 'TO'), ('allow', 'VB'), ('easy', 'JJ'), ('replaceability', 'NN'), ('embedded', 'VBD'), ('hash', 'NN'), ('function', 'NN'), ('case', 'NN'), ('faster', 'RBR'), ('secure', 'NN'), ('hash', 'NN'), ('functions', 'NNS'), ('found', 'VBD'), ('required', 'VBN'), ('.', '.')]
+
+ (S
+  To/TO
+  allow/VB
+  (NP easy/JJ replaceability/NN)
+  embedded/VBD
+  (NP hash/NN function/NN case/NN)
+  faster/RBR
+  (NP secure/NN hash/NN functions/NNS)
+  found/VBD
+  required/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['easy replaceability', 'hash function case', 'secure hash functions']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('To', 'to'), ('allow', 'allow'), ('easy', 'easi'), ('replaceability', 'replac'), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('case', 'case'), ('faster', 'faster'), ('secure', 'secur'), ('hash', 'hash'), ('functions', 'function'), ('found', 'found'), ('required', 'requir'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('To', 'to'), ('allow', 'allow'), ('easy', 'easi'), ('replaceability', 'replac'), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('case', 'case'), ('faster', 'faster'), ('secure', 'secur'), ('hash', 'hash'), ('functions', 'function'), ('found', 'found'), ('required', 'requir'), ('.', '.')]
+
+>> Lemmatization: 
+ [('To', 'To'), ('allow', 'allow'), ('easy', 'easy'), ('replaceability', 'replaceability'), ('embedded', 'embedded'), ('hash', 'hash'), ('function', 'function'), ('case', 'case'), ('faster', 'faster'), ('secure', 'secure'), ('hash', 'hash'), ('functions', 'function'), ('found', 'found'), ('required', 'required'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+To preserve the original performance of the hash function without incurring a significant degradation. 
+
+
+>> Tokens are: 
+ ['To', 'preserve', 'original', 'performance', 'hash', 'function', 'without', 'incurring', 'significant', 'degradation', '.']
+
+>> Bigrams are: 
+ [('To', 'preserve'), ('preserve', 'original'), ('original', 'performance'), ('performance', 'hash'), ('hash', 'function'), ('function', 'without'), ('without', 'incurring'), ('incurring', 'significant'), ('significant', 'degradation'), ('degradation', '.')]
+
+>> Trigrams are: 
+ [('To', 'preserve', 'original'), ('preserve', 'original', 'performance'), ('original', 'performance', 'hash'), ('performance', 'hash', 'function'), ('hash', 'function', 'without'), ('function', 'without', 'incurring'), ('without', 'incurring', 'significant'), ('incurring', 'significant', 'degradation'), ('significant', 'degradation', '.')]
+
+>> POS Tags are: 
+ [('To', 'TO'), ('preserve', 'VB'), ('original', 'JJ'), ('performance', 'NN'), ('hash', 'NN'), ('function', 'NN'), ('without', 'IN'), ('incurring', 'VBG'), ('significant', 'JJ'), ('degradation', 'NN'), ('.', '.')]
+
+ (S
+  To/TO
+  preserve/VB
+  (NP original/JJ performance/NN hash/NN function/NN)
+  without/IN
+  incurring/VBG
+  (NP significant/JJ degradation/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['original performance hash function', 'significant degradation']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('To', 'to'), ('preserve', 'preserv'), ('original', 'origin'), ('performance', 'perform'), ('hash', 'hash'), ('function', 'function'), ('without', 'without'), ('incurring', 'incur'), ('significant', 'signific'), ('degradation', 'degrad'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('To', 'to'), ('preserve', 'preserv'), ('original', 'origin'), ('performance', 'perform'), ('hash', 'hash'), ('function', 'function'), ('without', 'without'), ('incurring', 'incur'), ('significant', 'signific'), ('degradation', 'degrad'), ('.', '.')]
+
+>> Lemmatization: 
+ [('To', 'To'), ('preserve', 'preserve'), ('original', 'original'), ('performance', 'performance'), ('hash', 'hash'), ('function', 'function'), ('without', 'without'), ('incurring', 'incurring'), ('significant', 'significant'), ('degradation', 'degradation'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+To use and handle keys in a simple way. 
+
+
+>> Tokens are: 
+ ['To', 'use', 'handle', 'keys', 'simple', 'way', '.']
+
+>> Bigrams are: 
+ [('To', 'use'), ('use', 'handle'), ('handle', 'keys'), ('keys', 'simple'), ('simple', 'way'), ('way', '.')]
+
+>> Trigrams are: 
+ [('To', 'use', 'handle'), ('use', 'handle', 'keys'), ('handle', 'keys', 'simple'), ('keys', 'simple', 'way'), ('simple', 'way', '.')]
+
+>> POS Tags are: 
+ [('To', 'TO'), ('use', 'VB'), ('handle', 'JJ'), ('keys', 'NNS'), ('simple', 'JJ'), ('way', 'NN'), ('.', '.')]
+
+ (S To/TO use/VB (NP handle/JJ keys/NNS) (NP simple/JJ way/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['handle keys', 'simple way']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('To', 'to'), ('use', 'use'), ('handle', 'handl'), ('keys', 'key'), ('simple', 'simpl'), ('way', 'way'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('To', 'to'), ('use', 'use'), ('handle', 'handl'), ('keys', 'key'), ('simple', 'simpl'), ('way', 'way'), ('.', '.')]
+
+>> Lemmatization: 
+ [('To', 'To'), ('use', 'use'), ('handle', 'handle'), ('keys', 'key'), ('simple', 'simple'), ('way', 'way'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+To have a well understood cryptographic analysis of the strength of the authentication mechanism based on reasonable assumptions about the embedded hash function. 
+
+
+>> Tokens are: 
+ ['To', 'well', 'understood', 'cryptographic', 'analysis', 'strength', 'authentication', 'mechanism', 'based', 'reasonable', 'assumptions', 'embedded', 'hash', 'function', '.']
+
+>> Bigrams are: 
+ [('To', 'well'), ('well', 'understood'), ('understood', 'cryptographic'), ('cryptographic', 'analysis'), ('analysis', 'strength'), ('strength', 'authentication'), ('authentication', 'mechanism'), ('mechanism', 'based'), ('based', 'reasonable'), ('reasonable', 'assumptions'), ('assumptions', 'embedded'), ('embedded', 'hash'), ('hash', 'function'), ('function', '.')]
+
+>> Trigrams are: 
+ [('To', 'well', 'understood'), ('well', 'understood', 'cryptographic'), ('understood', 'cryptographic', 'analysis'), ('cryptographic', 'analysis', 'strength'), ('analysis', 'strength', 'authentication'), ('strength', 'authentication', 'mechanism'), ('authentication', 'mechanism', 'based'), ('mechanism', 'based', 'reasonable'), ('based', 'reasonable', 'assumptions'), ('reasonable', 'assumptions', 'embedded'), ('assumptions', 'embedded', 'hash'), ('embedded', 'hash', 'function'), ('hash', 'function', '.')]
+
+>> POS Tags are: 
+ [('To', 'TO'), ('well', 'RB'), ('understood', 'VB'), ('cryptographic', 'JJ'), ('analysis', 'NN'), ('strength', 'NN'), ('authentication', 'NN'), ('mechanism', 'NN'), ('based', 'VBN'), ('reasonable', 'JJ'), ('assumptions', 'NNS'), ('embedded', 'VBD'), ('hash', 'JJ'), ('function', 'NN'), ('.', '.')]
+
+ (S
+  To/TO
+  well/RB
+  understood/VB
+  (NP
+    cryptographic/JJ
+    analysis/NN
+    strength/NN
+    authentication/NN
+    mechanism/NN)
+  based/VBN
+  (NP reasonable/JJ assumptions/NNS)
+  embedded/VBD
+  (NP hash/JJ function/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['cryptographic analysis strength authentication mechanism', 'reasonable assumptions', 'hash function']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('To', 'to'), ('well', 'well'), ('understood', 'understood'), ('cryptographic', 'cryptograph'), ('analysis', 'analysi'), ('strength', 'strength'), ('authentication', 'authent'), ('mechanism', 'mechan'), ('based', 'base'), ('reasonable', 'reason'), ('assumptions', 'assumpt'), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('To', 'to'), ('well', 'well'), ('understood', 'understood'), ('cryptographic', 'cryptograph'), ('analysis', 'analysi'), ('strength', 'strength'), ('authentication', 'authent'), ('mechanism', 'mechan'), ('based', 'base'), ('reasonable', 'reason'), ('assumptions', 'assumpt'), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('.', '.')]
+
+>> Lemmatization: 
+ [('To', 'To'), ('well', 'well'), ('understood', 'understood'), ('cryptographic', 'cryptographic'), ('analysis', 'analysis'), ('strength', 'strength'), ('authentication', 'authentication'), ('mechanism', 'mechanism'), ('based', 'based'), ('reasonable', 'reasonable'), ('assumptions', 'assumption'), ('embedded', 'embedded'), ('hash', 'hash'), ('function', 'function'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject   HMAC Structure Append zeros to the left end of K to create a b-bit string K+ XOR K+  with ipad to produce the b-bit block Si. 
+
+
+>> Tokens are: 
+ ['Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'HMAC', 'Structure', 'Append', 'zeros', 'left', 'end', 'K', 'create', 'b-bit', 'string', 'K+', 'XOR', 'K+', 'ipad', 'produce', 'b-bit', 'block', 'Si', '.']
+
+>> Bigrams are: 
+ [('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'HMAC'), ('HMAC', 'Structure'), ('Structure', 'Append'), ('Append', 'zeros'), ('zeros', 'left'), ('left', 'end'), ('end', 'K'), ('K', 'create'), ('create', 'b-bit'), ('b-bit', 'string'), ('string', 'K+'), ('K+', 'XOR'), ('XOR', 'K+'), ('K+', 'ipad'), ('ipad', 'produce'), ('produce', 'b-bit'), ('b-bit', 'block'), ('block', 'Si'), ('Si', '.')]
+
+>> Trigrams are: 
+ [('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'HMAC'), ('Subject', 'HMAC', 'Structure'), ('HMAC', 'Structure', 'Append'), ('Structure', 'Append', 'zeros'), ('Append', 'zeros', 'left'), ('zeros', 'left', 'end'), ('left', 'end', 'K'), ('end', 'K', 'create'), ('K', 'create', 'b-bit'), ('create', 'b-bit', 'string'), ('b-bit', 'string', 'K+'), ('string', 'K+', 'XOR'), ('K+', 'XOR', 'K+'), ('XOR', 'K+', 'ipad'), ('K+', 'ipad', 'produce'), ('ipad', 'produce', 'b-bit'), ('produce', 'b-bit', 'block'), ('b-bit', 'block', 'Si'), ('block', 'Si', '.')]
+
+>> POS Tags are: 
+ [('Unit-6', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('HMAC', 'NNP'), ('Structure', 'NNP'), ('Append', 'NNP'), ('zeros', 'NN'), ('left', 'VBD'), ('end', 'JJ'), ('K', 'NNP'), ('create', 'NN'), ('b-bit', 'NN'), ('string', 'VBG'), ('K+', 'NNP'), ('XOR', 'NNP'), ('K+', 'NNP'), ('ipad', 'NN'), ('produce', 'VBP'), ('b-bit', 'NN'), ('block', 'NN'), ('Si', 'NNP'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-6/JJ
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    HMAC/NNP
+    Structure/NNP
+    Append/NNP
+    zeros/NN)
+  left/VBD
+  (NP end/JJ K/NNP create/NN b-bit/NN)
+  string/VBG
+  (NP K+/NNP XOR/NNP K+/NNP ipad/NN)
+  produce/VBP
+  (NP b-bit/NN block/NN Si/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject HMAC Structure Append zeros', 'end K create b-bit', 'K+ XOR K+ ipad', 'b-bit block Si']
+
+>> Named Entities are: 
+ [('PERSON', 'Message Authentication Codes Darshan Institute'), ('ORGANIZATION', 'Technology')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('HMAC', 'hmac'), ('Structure', 'structur'), ('Append', 'append'), ('zeros', 'zero'), ('left', 'left'), ('end', 'end'), ('K', 'k'), ('create', 'creat'), ('b-bit', 'b-bit'), ('string', 'string'), ('K+', 'k+'), ('XOR', 'xor'), ('K+', 'k+'), ('ipad', 'ipad'), ('produce', 'produc'), ('b-bit', 'b-bit'), ('block', 'block'), ('Si', 'si'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('HMAC', 'hmac'), ('Structure', 'structur'), ('Append', 'append'), ('zeros', 'zero'), ('left', 'left'), ('end', 'end'), ('K', 'k'), ('create', 'creat'), ('b-bit', 'b-bit'), ('string', 'string'), ('K+', 'k+'), ('XOR', 'xor'), ('K+', 'k+'), ('ipad', 'ipad'), ('produce', 'produc'), ('b-bit', 'b-bit'), ('block', 'block'), ('Si', 'si'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('HMAC', 'HMAC'), ('Structure', 'Structure'), ('Append', 'Append'), ('zeros', 'zero'), ('left', 'left'), ('end', 'end'), ('K', 'K'), ('create', 'create'), ('b-bit', 'b-bit'), ('string', 'string'), ('K+', 'K+'), ('XOR', 'XOR'), ('K+', 'K+'), ('ipad', 'ipad'), ('produce', 'produce'), ('b-bit', 'b-bit'), ('block', 'block'), ('Si', 'Si'), ('.', '.')]
+
+
+
+============================ Sentence 23 =============================
+
+Append M to Si. 
+
+
+>> Tokens are: 
+ ['Append', 'M', 'Si', '.']
+
+>> Bigrams are: 
+ [('Append', 'M'), ('M', 'Si'), ('Si', '.')]
+
+>> Trigrams are: 
+ [('Append', 'M', 'Si'), ('M', 'Si', '.')]
+
+>> POS Tags are: 
+ [('Append', 'NNP'), ('M', 'NNP'), ('Si', 'NNP'), ('.', '.')]
+
+ (S (NP Append/NNP M/NNP Si/NNP) ./.) 
+
+
+>> Noun Phrases are: 
+ ['Append M Si']
+
+>> Named Entities are: 
+ [('PERSON', 'Append')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Append', 'append'), ('M', 'm'), ('Si', 'si'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Append', 'append'), ('M', 'm'), ('Si', 'si'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Append', 'Append'), ('M', 'M'), ('Si', 'Si'), ('.', '.')]
+
+
+
+============================ Sentence 24 =============================
+
+Apply H to the stream generated in step 3. 
+
+
+>> Tokens are: 
+ ['Apply', 'H', 'stream', 'generated', 'step', '3', '.']
+
+>> Bigrams are: 
+ [('Apply', 'H'), ('H', 'stream'), ('stream', 'generated'), ('generated', 'step'), ('step', '3'), ('3', '.')]
+
+>> Trigrams are: 
+ [('Apply', 'H', 'stream'), ('H', 'stream', 'generated'), ('stream', 'generated', 'step'), ('generated', 'step', '3'), ('step', '3', '.')]
+
+>> POS Tags are: 
+ [('Apply', 'NNP'), ('H', 'NNP'), ('stream', 'NN'), ('generated', 'VBD'), ('step', 'NN'), ('3', 'CD'), ('.', '.')]
+
+ (S
+  (NP Apply/NNP H/NNP stream/NN)
+  generated/VBD
+  (NP step/NN)
+  3/CD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Apply H stream', 'step']
+
+>> Named Entities are: 
+ [('PERSON', 'Apply')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Apply', 'appli'), ('H', 'h'), ('stream', 'stream'), ('generated', 'gener'), ('step', 'step'), ('3', '3'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Apply', 'appli'), ('H', 'h'), ('stream', 'stream'), ('generated', 'generat'), ('step', 'step'), ('3', '3'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Apply', 'Apply'), ('H', 'H'), ('stream', 'stream'), ('generated', 'generated'), ('step', 'step'), ('3', '3'), ('.', '.')]
+
+
+
+============================ Sentence 25 =============================
+
+XOR K+  with opad to produce the b-bit block S0. 
+
+
+>> Tokens are: 
+ ['XOR', 'K+', 'opad', 'produce', 'b-bit', 'block', 'S0', '.']
+
+>> Bigrams are: 
+ [('XOR', 'K+'), ('K+', 'opad'), ('opad', 'produce'), ('produce', 'b-bit'), ('b-bit', 'block'), ('block', 'S0'), ('S0', '.')]
+
+>> Trigrams are: 
+ [('XOR', 'K+', 'opad'), ('K+', 'opad', 'produce'), ('opad', 'produce', 'b-bit'), ('produce', 'b-bit', 'block'), ('b-bit', 'block', 'S0'), ('block', 'S0', '.')]
+
+>> POS Tags are: 
+ [('XOR', 'NN'), ('K+', 'NNP'), ('opad', 'NN'), ('produce', 'VBP'), ('b-bit', 'NN'), ('block', 'NN'), ('S0', 'NNP'), ('.', '.')]
+
+ (S
+  (NP XOR/NN K+/NNP opad/NN)
+  produce/VBP
+  (NP b-bit/NN block/NN S0/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['XOR K+ opad', 'b-bit block S0']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'XOR')] 
+
+>> Stemming using Porter Stemmer: 
+ [('XOR', 'xor'), ('K+', 'k+'), ('opad', 'opad'), ('produce', 'produc'), ('b-bit', 'b-bit'), ('block', 'block'), ('S0', 's0'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('XOR', 'xor'), ('K+', 'k+'), ('opad', 'opad'), ('produce', 'produc'), ('b-bit', 'b-bit'), ('block', 'block'), ('S0', 's0'), ('.', '.')]
+
+>> Lemmatization: 
+ [('XOR', 'XOR'), ('K+', 'K+'), ('opad', 'opad'), ('produce', 'produce'), ('b-bit', 'b-bit'), ('block', 'block'), ('S0', 'S0'), ('.', '.')]
+
+
+
+============================ Sentence 26 =============================
+
+Append the hash result from step 4 to S0. 
+
+
+>> Tokens are: 
+ ['Append', 'hash', 'result', 'step', '4', 'S0', '.']
+
+>> Bigrams are: 
+ [('Append', 'hash'), ('hash', 'result'), ('result', 'step'), ('step', '4'), ('4', 'S0'), ('S0', '.')]
+
+>> Trigrams are: 
+ [('Append', 'hash', 'result'), ('hash', 'result', 'step'), ('result', 'step', '4'), ('step', '4', 'S0'), ('4', 'S0', '.')]
+
+>> POS Tags are: 
+ [('Append', 'NNP'), ('hash', 'NN'), ('result', 'NN'), ('step', 'NN'), ('4', 'CD'), ('S0', 'NNP'), ('.', '.')]
+
+ (S (NP Append/NNP hash/NN result/NN step/NN) 4/CD (NP S0/NNP) ./.) 
+
+
+>> Noun Phrases are: 
+ ['Append hash result step', 'S0']
+
+>> Named Entities are: 
+ [('GPE', 'Append')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Append', 'append'), ('hash', 'hash'), ('result', 'result'), ('step', 'step'), ('4', '4'), ('S0', 's0'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Append', 'append'), ('hash', 'hash'), ('result', 'result'), ('step', 'step'), ('4', '4'), ('S0', 's0'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Append', 'Append'), ('hash', 'hash'), ('result', 'result'), ('step', 'step'), ('4', '4'), ('S0', 'S0'), ('.', '.')]
+
+
+
+============================ Sentence 27 =============================
+
+Apply H to the stream generated in step 6 and output the result. 
+
+
+>> Tokens are: 
+ ['Apply', 'H', 'stream', 'generated', 'step', '6', 'output', 'result', '.']
+
+>> Bigrams are: 
+ [('Apply', 'H'), ('H', 'stream'), ('stream', 'generated'), ('generated', 'step'), ('step', '6'), ('6', 'output'), ('output', 'result'), ('result', '.')]
+
+>> Trigrams are: 
+ [('Apply', 'H', 'stream'), ('H', 'stream', 'generated'), ('stream', 'generated', 'step'), ('generated', 'step', '6'), ('step', '6', 'output'), ('6', 'output', 'result'), ('output', 'result', '.')]
+
+>> POS Tags are: 
+ [('Apply', 'NNP'), ('H', 'NNP'), ('stream', 'NN'), ('generated', 'VBD'), ('step', 'NN'), ('6', 'CD'), ('output', 'NN'), ('result', 'NN'), ('.', '.')]
+
+ (S
+  (NP Apply/NNP H/NNP stream/NN)
+  generated/VBD
+  (NP step/NN)
+  6/CD
+  (NP output/NN result/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Apply H stream', 'step', 'output result']
+
+>> Named Entities are: 
+ [('PERSON', 'Apply')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Apply', 'appli'), ('H', 'h'), ('stream', 'stream'), ('generated', 'gener'), ('step', 'step'), ('6', '6'), ('output', 'output'), ('result', 'result'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Apply', 'appli'), ('H', 'h'), ('stream', 'stream'), ('generated', 'generat'), ('step', 'step'), ('6', '6'), ('output', 'output'), ('result', 'result'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Apply', 'Apply'), ('H', 'H'), ('stream', 'stream'), ('generated', 'generated'), ('step', 'step'), ('6', '6'), ('output', 'output'), ('result', 'result'), ('.', '.')]
+
+
+
+============================ Sentence 28 =============================
+
+HMAC Structure H  =  embedded hash function (e.g.-.-, MD5, SHA-1, RIPEMD-160) IV =  initial value input to hash function M  =   message input to HMAC Yi  =  i th block of M L   =  number of blocks in M n   =  length of hash code produced by embedded hash function K +  =  K padded with zeros on the left so that the result is b bits in length ipad  =  00110110 (36 in hexadecimal) repeated b/8 times opad =  01011100 (5C in hexadecimal) repeated b/8 times   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  MAC based on Block Ciphers The Data Authentication Algorithm (DAA), based on DES, has been one of the most widely used MACs for a number of years. 
+
+
+>> Tokens are: 
+ ['HMAC', 'Structure', 'H', '=', 'embedded', 'hash', 'function', '(', 'e.g.-.-', ',', 'MD5', ',', 'SHA-1', ',', 'RIPEMD-160', ')', 'IV', '=', 'initial', 'value', 'input', 'hash', 'function', 'M', '=', 'message', 'input', 'HMAC', 'Yi', '=', 'th', 'block', 'M', 'L', '=', 'number', 'blocks', 'M', 'n', '=', 'length', 'hash', 'code', 'produced', 'embedded', 'hash', 'function', 'K', '+', '=', 'K', 'padded', 'zeros', 'left', 'result', 'b', 'bits', 'length', 'ipad', '=', '00110110', '(', '36', 'hexadecimal', ')', 'repeated', 'b/8', 'times', 'opad', '=', '01011100', '(', '5C', 'hexadecimal', ')', 'repeated', 'b/8', 'times', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'MAC', 'based', 'Block', 'Ciphers', 'The', 'Data', 'Authentication', 'Algorithm', '(', 'DAA', ')', ',', 'based', 'DES', ',', 'one', 'widely', 'used', 'MACs', 'number', 'years', '.']
+
+>> Bigrams are: 
+ [('HMAC', 'Structure'), ('Structure', 'H'), ('H', '='), ('=', 'embedded'), ('embedded', 'hash'), ('hash', 'function'), ('function', '('), ('(', 'e.g.-.-'), ('e.g.-.-', ','), (',', 'MD5'), ('MD5', ','), (',', 'SHA-1'), ('SHA-1', ','), (',', 'RIPEMD-160'), ('RIPEMD-160', ')'), (')', 'IV'), ('IV', '='), ('=', 'initial'), ('initial', 'value'), ('value', 'input'), ('input', 'hash'), ('hash', 'function'), ('function', 'M'), ('M', '='), ('=', 'message'), ('message', 'input'), ('input', 'HMAC'), ('HMAC', 'Yi'), ('Yi', '='), ('=', 'th'), ('th', 'block'), ('block', 'M'), ('M', 'L'), ('L', '='), ('=', 'number'), ('number', 'blocks'), ('blocks', 'M'), ('M', 'n'), ('n', '='), ('=', 'length'), ('length', 'hash'), ('hash', 'code'), ('code', 'produced'), ('produced', 'embedded'), ('embedded', 'hash'), ('hash', 'function'), ('function', 'K'), ('K', '+'), ('+', '='), ('=', 'K'), ('K', 'padded'), ('padded', 'zeros'), ('zeros', 'left'), ('left', 'result'), ('result', 'b'), ('b', 'bits'), ('bits', 'length'), ('length', 'ipad'), ('ipad', '='), ('=', '00110110'), ('00110110', '('), ('(', '36'), ('36', 'hexadecimal'), ('hexadecimal', ')'), (')', 'repeated'), ('repeated', 'b/8'), ('b/8', 'times'), ('times', 'opad'), ('opad', '='), ('=', '01011100'), ('01011100', '('), ('(', '5C'), ('5C', 'hexadecimal'), ('hexadecimal', ')'), (')', 'repeated'), ('repeated', 'b/8'), ('b/8', 'times'), ('times', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'MAC'), ('MAC', 'based'), ('based', 'Block'), ('Block', 'Ciphers'), ('Ciphers', 'The'), ('The', 'Data'), ('Data', 'Authentication'), ('Authentication', 'Algorithm'), ('Algorithm', '('), ('(', 'DAA'), ('DAA', ')'), (')', ','), (',', 'based'), ('based', 'DES'), ('DES', ','), (',', 'one'), ('one', 'widely'), ('widely', 'used'), ('used', 'MACs'), ('MACs', 'number'), ('number', 'years'), ('years', '.')]
+
+>> Trigrams are: 
+ [('HMAC', 'Structure', 'H'), ('Structure', 'H', '='), ('H', '=', 'embedded'), ('=', 'embedded', 'hash'), ('embedded', 'hash', 'function'), ('hash', 'function', '('), ('function', '(', 'e.g.-.-'), ('(', 'e.g.-.-', ','), ('e.g.-.-', ',', 'MD5'), (',', 'MD5', ','), ('MD5', ',', 'SHA-1'), (',', 'SHA-1', ','), ('SHA-1', ',', 'RIPEMD-160'), (',', 'RIPEMD-160', ')'), ('RIPEMD-160', ')', 'IV'), (')', 'IV', '='), ('IV', '=', 'initial'), ('=', 'initial', 'value'), ('initial', 'value', 'input'), ('value', 'input', 'hash'), ('input', 'hash', 'function'), ('hash', 'function', 'M'), ('function', 'M', '='), ('M', '=', 'message'), ('=', 'message', 'input'), ('message', 'input', 'HMAC'), ('input', 'HMAC', 'Yi'), ('HMAC', 'Yi', '='), ('Yi', '=', 'th'), ('=', 'th', 'block'), ('th', 'block', 'M'), ('block', 'M', 'L'), ('M', 'L', '='), ('L', '=', 'number'), ('=', 'number', 'blocks'), ('number', 'blocks', 'M'), ('blocks', 'M', 'n'), ('M', 'n', '='), ('n', '=', 'length'), ('=', 'length', 'hash'), ('length', 'hash', 'code'), ('hash', 'code', 'produced'), ('code', 'produced', 'embedded'), ('produced', 'embedded', 'hash'), ('embedded', 'hash', 'function'), ('hash', 'function', 'K'), ('function', 'K', '+'), ('K', '+', '='), ('+', '=', 'K'), ('=', 'K', 'padded'), ('K', 'padded', 'zeros'), ('padded', 'zeros', 'left'), ('zeros', 'left', 'result'), ('left', 'result', 'b'), ('result', 'b', 'bits'), ('b', 'bits', 'length'), ('bits', 'length', 'ipad'), ('length', 'ipad', '='), ('ipad', '=', '00110110'), ('=', '00110110', '('), ('00110110', '(', '36'), ('(', '36', 'hexadecimal'), ('36', 'hexadecimal', ')'), ('hexadecimal', ')', 'repeated'), (')', 'repeated', 'b/8'), ('repeated', 'b/8', 'times'), ('b/8', 'times', 'opad'), ('times', 'opad', '='), ('opad', '=', '01011100'), ('=', '01011100', '('), ('01011100', '(', '5C'), ('(', '5C', 'hexadecimal'), ('5C', 'hexadecimal', ')'), ('hexadecimal', ')', 'repeated'), (')', 'repeated', 'b/8'), ('repeated', 'b/8', 'times'), ('b/8', 'times', 'Unit-6'), ('times', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'MAC'), ('Subject', 'MAC', 'based'), ('MAC', 'based', 'Block'), ('based', 'Block', 'Ciphers'), ('Block', 'Ciphers', 'The'), ('Ciphers', 'The', 'Data'), ('The', 'Data', 'Authentication'), ('Data', 'Authentication', 'Algorithm'), ('Authentication', 'Algorithm', '('), ('Algorithm', '(', 'DAA'), ('(', 'DAA', ')'), ('DAA', ')', ','), (')', ',', 'based'), (',', 'based', 'DES'), ('based', 'DES', ','), ('DES', ',', 'one'), (',', 'one', 'widely'), ('one', 'widely', 'used'), ('widely', 'used', 'MACs'), ('used', 'MACs', 'number'), ('MACs', 'number', 'years'), ('number', 'years', '.')]
+
+>> POS Tags are: 
+ [('HMAC', 'NNP'), ('Structure', 'NNP'), ('H', 'NNP'), ('=', 'NNP'), ('embedded', 'VBD'), ('hash', 'NN'), ('function', 'NN'), ('(', '('), ('e.g.-.-', 'JJ'), (',', ','), ('MD5', 'NNP'), (',', ','), ('SHA-1', 'NNP'), (',', ','), ('RIPEMD-160', 'NNP'), (')', ')'), ('IV', 'NNP'), ('=', 'NNP'), ('initial', 'JJ'), ('value', 'NN'), ('input', 'NN'), ('hash', 'NN'), ('function', 'NN'), ('M', 'NNP'), ('=', 'NNP'), ('message', 'NN'), ('input', 'NN'), ('HMAC', 'NNP'), ('Yi', 'NNP'), ('=', 'NNP'), ('th', 'NN'), ('block', 'NN'), ('M', 'NNP'), ('L', 'NNP'), ('=', 'NNP'), ('number', 'NN'), ('blocks', 'NNS'), ('M', 'NNP'), ('n', 'RB'), ('=', 'VBZ'), ('length', 'NN'), ('hash', 'NN'), ('code', 'NN'), ('produced', 'VBD'), ('embedded', 'JJ'), ('hash', 'NN'), ('function', 'NN'), ('K', 'NNP'), ('+', 'NNP'), ('=', 'NNP'), ('K', 'NNP'), ('padded', 'VBD'), ('zeros', 'NN'), ('left', 'VBD'), ('result', 'NN'), ('b', 'NN'), ('bits', 'NNS'), ('length', 'VBP'), ('ipad', 'JJ'), ('=', '$'), ('00110110', 'CD'), ('(', '('), ('36', 'CD'), ('hexadecimal', 'NN'), (')', ')'), ('repeated', 'VBD'), ('b/8', 'JJ'), ('times', 'NNS'), ('opad', 'VBP'), ('=', 'JJ'), ('01011100', 'CD'), ('(', '('), ('5C', 'CD'), ('hexadecimal', 'NN'), (')', ')'), ('repeated', 'VBD'), ('b/8', 'JJ'), ('times', 'NNS'), ('Unit-6', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('MAC', 'NNP'), ('based', 'VBN'), ('Block', 'NNP'), ('Ciphers', 'NNPS'), ('The', 'DT'), ('Data', 'NNP'), ('Authentication', 'NNP'), ('Algorithm', 'NNP'), ('(', '('), ('DAA', 'NNP'), (')', ')'), (',', ','), ('based', 'VBN'), ('DES', 'NNP'), (',', ','), ('one', 'CD'), ('widely', 'RB'), ('used', 'VBN'), ('MACs', 'NNP'), ('number', 'NN'), ('years', 'NNS'), ('.', '.')]
+
+ (S
+  (NP HMAC/NNP Structure/NNP H/NNP =/NNP)
+  embedded/VBD
+  (NP hash/NN function/NN)
+  (/(
+  e.g.-.-/JJ
+  ,/,
+  (NP MD5/NNP)
+  ,/,
+  (NP SHA-1/NNP)
+  ,/,
+  (NP RIPEMD-160/NNP)
+  )/)
+  (NP IV/NNP =/NNP)
+  (NP
+    initial/JJ
+    value/NN
+    input/NN
+    hash/NN
+    function/NN
+    M/NNP
+    =/NNP
+    message/NN
+    input/NN
+    HMAC/NNP
+    Yi/NNP
+    =/NNP
+    th/NN
+    block/NN
+    M/NNP
+    L/NNP
+    =/NNP
+    number/NN
+    blocks/NNS
+    M/NNP)
+  n/RB
+  =/VBZ
+  (NP length/NN hash/NN code/NN)
+  produced/VBD
+  (NP embedded/JJ hash/NN function/NN K/NNP +/NNP =/NNP K/NNP)
+  padded/VBD
+  (NP zeros/NN)
+  left/VBD
+  (NP result/NN b/NN bits/NNS)
+  length/VBP
+  ipad/JJ
+  =/$
+  00110110/CD
+  (/(
+  36/CD
+  (NP hexadecimal/NN)
+  )/)
+  repeated/VBD
+  (NP b/8/JJ times/NNS)
+  opad/VBP
+  =/JJ
+  01011100/CD
+  (/(
+  5C/CD
+  (NP hexadecimal/NN)
+  )/)
+  repeated/VBD
+  (NP b/8/JJ times/NNS)
+  (NP
+    Unit-6/JJ
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP MAC/NNP)
+  based/VBN
+  (NP Block/NNP)
+  Ciphers/NNPS
+  (NP The/DT Data/NNP Authentication/NNP Algorithm/NNP)
+  (/(
+  (NP DAA/NNP)
+  )/)
+  ,/,
+  based/VBN
+  (NP DES/NNP)
+  ,/,
+  one/CD
+  widely/RB
+  used/VBN
+  (NP MACs/NNP number/NN years/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['HMAC Structure H =', 'hash function', 'MD5', 'SHA-1', 'RIPEMD-160', 'IV =', 'initial value input hash function M = message input HMAC Yi = th block M L = number blocks M', 'length hash code', 'embedded hash function K + = K', 'zeros', 'result b bits', 'hexadecimal', 'b/8 times', 'hexadecimal', 'b/8 times', 'Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject MAC', 'Block', 'The Data Authentication Algorithm', 'DAA', 'DES', 'MACs number years']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'HMAC'), ('PERSON', 'Structure H'), ('ORGANIZATION', 'MD5'), ('ORGANIZATION', 'HMAC Yi'), ('PERSON', 'Message Authentication Codes Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'Block Ciphers The Data Authentication Algorithm'), ('ORGANIZATION', 'DAA'), ('ORGANIZATION', 'MACs')] 
+
+>> Stemming using Porter Stemmer: 
+ [('HMAC', 'hmac'), ('Structure', 'structur'), ('H', 'h'), ('=', '='), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('(', '('), ('e.g.-.-', 'e.g.-.-'), (',', ','), ('MD5', 'md5'), (',', ','), ('SHA-1', 'sha-1'), (',', ','), ('RIPEMD-160', 'ripemd-160'), (')', ')'), ('IV', 'iv'), ('=', '='), ('initial', 'initi'), ('value', 'valu'), ('input', 'input'), ('hash', 'hash'), ('function', 'function'), ('M', 'm'), ('=', '='), ('message', 'messag'), ('input', 'input'), ('HMAC', 'hmac'), ('Yi', 'yi'), ('=', '='), ('th', 'th'), ('block', 'block'), ('M', 'm'), ('L', 'l'), ('=', '='), ('number', 'number'), ('blocks', 'block'), ('M', 'm'), ('n', 'n'), ('=', '='), ('length', 'length'), ('hash', 'hash'), ('code', 'code'), ('produced', 'produc'), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('K', 'k'), ('+', '+'), ('=', '='), ('K', 'k'), ('padded', 'pad'), ('zeros', 'zero'), ('left', 'left'), ('result', 'result'), ('b', 'b'), ('bits', 'bit'), ('length', 'length'), ('ipad', 'ipad'), ('=', '='), ('00110110', '00110110'), ('(', '('), ('36', '36'), ('hexadecimal', 'hexadecim'), (')', ')'), ('repeated', 'repeat'), ('b/8', 'b/8'), ('times', 'time'), ('opad', 'opad'), ('=', '='), ('01011100', '01011100'), ('(', '('), ('5C', '5c'), ('hexadecimal', 'hexadecim'), (')', ')'), ('repeated', 'repeat'), ('b/8', 'b/8'), ('times', 'time'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('MAC', 'mac'), ('based', 'base'), ('Block', 'block'), ('Ciphers', 'cipher'), ('The', 'the'), ('Data', 'data'), ('Authentication', 'authent'), ('Algorithm', 'algorithm'), ('(', '('), ('DAA', 'daa'), (')', ')'), (',', ','), ('based', 'base'), ('DES', 'de'), (',', ','), ('one', 'one'), ('widely', 'wide'), ('used', 'use'), ('MACs', 'mac'), ('number', 'number'), ('years', 'year'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('HMAC', 'hmac'), ('Structure', 'structur'), ('H', 'h'), ('=', '='), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('(', '('), ('e.g.-.-', 'e.g.-.-'), (',', ','), ('MD5', 'md5'), (',', ','), ('SHA-1', 'sha-1'), (',', ','), ('RIPEMD-160', 'ripemd-160'), (')', ')'), ('IV', 'iv'), ('=', '='), ('initial', 'initi'), ('value', 'valu'), ('input', 'input'), ('hash', 'hash'), ('function', 'function'), ('M', 'm'), ('=', '='), ('message', 'messag'), ('input', 'input'), ('HMAC', 'hmac'), ('Yi', 'yi'), ('=', '='), ('th', 'th'), ('block', 'block'), ('M', 'm'), ('L', 'l'), ('=', '='), ('number', 'number'), ('blocks', 'block'), ('M', 'm'), ('n', 'n'), ('=', '='), ('length', 'length'), ('hash', 'hash'), ('code', 'code'), ('produced', 'produc'), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('K', 'k'), ('+', '+'), ('=', '='), ('K', 'k'), ('padded', 'pad'), ('zeros', 'zero'), ('left', 'left'), ('result', 'result'), ('b', 'b'), ('bits', 'bit'), ('length', 'length'), ('ipad', 'ipad'), ('=', '='), ('00110110', '00110110'), ('(', '('), ('36', '36'), ('hexadecimal', 'hexadecim'), (')', ')'), ('repeated', 'repeat'), ('b/8', 'b/8'), ('times', 'time'), ('opad', 'opad'), ('=', '='), ('01011100', '01011100'), ('(', '('), ('5C', '5c'), ('hexadecimal', 'hexadecim'), (')', ')'), ('repeated', 'repeat'), ('b/8', 'b/8'), ('times', 'time'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('MAC', 'mac'), ('based', 'base'), ('Block', 'block'), ('Ciphers', 'cipher'), ('The', 'the'), ('Data', 'data'), ('Authentication', 'authent'), ('Algorithm', 'algorithm'), ('(', '('), ('DAA', 'daa'), (')', ')'), (',', ','), ('based', 'base'), ('DES', 'des'), (',', ','), ('one', 'one'), ('widely', 'wide'), ('used', 'use'), ('MACs', 'mac'), ('number', 'number'), ('years', 'year'), ('.', '.')]
+
+>> Lemmatization: 
+ [('HMAC', 'HMAC'), ('Structure', 'Structure'), ('H', 'H'), ('=', '='), ('embedded', 'embedded'), ('hash', 'hash'), ('function', 'function'), ('(', '('), ('e.g.-.-', 'e.g.-.-'), (',', ','), ('MD5', 'MD5'), (',', ','), ('SHA-1', 'SHA-1'), (',', ','), ('RIPEMD-160', 'RIPEMD-160'), (')', ')'), ('IV', 'IV'), ('=', '='), ('initial', 'initial'), ('value', 'value'), ('input', 'input'), ('hash', 'hash'), ('function', 'function'), ('M', 'M'), ('=', '='), ('message', 'message'), ('input', 'input'), ('HMAC', 'HMAC'), ('Yi', 'Yi'), ('=', '='), ('th', 'th'), ('block', 'block'), ('M', 'M'), ('L', 'L'), ('=', '='), ('number', 'number'), ('blocks', 'block'), ('M', 'M'), ('n', 'n'), ('=', '='), ('length', 'length'), ('hash', 'hash'), ('code', 'code'), ('produced', 'produced'), ('embedded', 'embedded'), ('hash', 'hash'), ('function', 'function'), ('K', 'K'), ('+', '+'), ('=', '='), ('K', 'K'), ('padded', 'padded'), ('zeros', 'zero'), ('left', 'left'), ('result', 'result'), ('b', 'b'), ('bits', 'bit'), ('length', 'length'), ('ipad', 'ipad'), ('=', '='), ('00110110', '00110110'), ('(', '('), ('36', '36'), ('hexadecimal', 'hexadecimal'), (')', ')'), ('repeated', 'repeated'), ('b/8', 'b/8'), ('times', 'time'), ('opad', 'opad'), ('=', '='), ('01011100', '01011100'), ('(', '('), ('5C', '5C'), ('hexadecimal', 'hexadecimal'), (')', ')'), ('repeated', 'repeated'), ('b/8', 'b/8'), ('times', 'time'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('MAC', 'MAC'), ('based', 'based'), ('Block', 'Block'), ('Ciphers', 'Ciphers'), ('The', 'The'), ('Data', 'Data'), ('Authentication', 'Authentication'), ('Algorithm', 'Algorithm'), ('(', '('), ('DAA', 'DAA'), (')', ')'), (',', ','), ('based', 'based'), ('DES', 'DES'), (',', ','), ('one', 'one'), ('widely', 'widely'), ('used', 'used'), ('MACs', 'MACs'), ('number', 'number'), ('years', 'year'), ('.', '.')]
+
+
+
+============================ Sentence 29 =============================
+
+The algorithm can be defined as using the cipher block chaining (CBC) mode of operation of DES (Figure 6.4) with an initialization vector of zero. 
+
+
+>> Tokens are: 
+ ['The', 'algorithm', 'defined', 'using', 'cipher', 'block', 'chaining', '(', 'CBC', ')', 'mode', 'operation', 'DES', '(', 'Figure', '6.4', ')', 'initialization', 'vector', 'zero', '.']
+
+>> Bigrams are: 
+ [('The', 'algorithm'), ('algorithm', 'defined'), ('defined', 'using'), ('using', 'cipher'), ('cipher', 'block'), ('block', 'chaining'), ('chaining', '('), ('(', 'CBC'), ('CBC', ')'), (')', 'mode'), ('mode', 'operation'), ('operation', 'DES'), ('DES', '('), ('(', 'Figure'), ('Figure', '6.4'), ('6.4', ')'), (')', 'initialization'), ('initialization', 'vector'), ('vector', 'zero'), ('zero', '.')]
+
+>> Trigrams are: 
+ [('The', 'algorithm', 'defined'), ('algorithm', 'defined', 'using'), ('defined', 'using', 'cipher'), ('using', 'cipher', 'block'), ('cipher', 'block', 'chaining'), ('block', 'chaining', '('), ('chaining', '(', 'CBC'), ('(', 'CBC', ')'), ('CBC', ')', 'mode'), (')', 'mode', 'operation'), ('mode', 'operation', 'DES'), ('operation', 'DES', '('), ('DES', '(', 'Figure'), ('(', 'Figure', '6.4'), ('Figure', '6.4', ')'), ('6.4', ')', 'initialization'), (')', 'initialization', 'vector'), ('initialization', 'vector', 'zero'), ('vector', 'zero', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('algorithm', 'NN'), ('defined', 'VBD'), ('using', 'VBG'), ('cipher', 'NN'), ('block', 'NN'), ('chaining', 'NN'), ('(', '('), ('CBC', 'NNP'), (')', ')'), ('mode', 'NN'), ('operation', 'NN'), ('DES', 'NNP'), ('(', '('), ('Figure', 'NNP'), ('6.4', 'CD'), (')', ')'), ('initialization', 'NN'), ('vector', 'NN'), ('zero', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT algorithm/NN)
+  defined/VBD
+  using/VBG
+  (NP cipher/NN block/NN chaining/NN)
+  (/(
+  (NP CBC/NNP)
+  )/)
+  (NP mode/NN operation/NN DES/NNP)
+  (/(
+  (NP Figure/NNP)
+  6.4/CD
+  )/)
+  (NP initialization/NN vector/NN zero/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The algorithm', 'cipher block chaining', 'CBC', 'mode operation DES', 'Figure', 'initialization vector zero']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'CBC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('algorithm', 'algorithm'), ('defined', 'defin'), ('using', 'use'), ('cipher', 'cipher'), ('block', 'block'), ('chaining', 'chain'), ('(', '('), ('CBC', 'cbc'), (')', ')'), ('mode', 'mode'), ('operation', 'oper'), ('DES', 'de'), ('(', '('), ('Figure', 'figur'), ('6.4', '6.4'), (')', ')'), ('initialization', 'initi'), ('vector', 'vector'), ('zero', 'zero'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('algorithm', 'algorithm'), ('defined', 'defin'), ('using', 'use'), ('cipher', 'cipher'), ('block', 'block'), ('chaining', 'chain'), ('(', '('), ('CBC', 'cbc'), (')', ')'), ('mode', 'mode'), ('operation', 'oper'), ('DES', 'des'), ('(', '('), ('Figure', 'figur'), ('6.4', '6.4'), (')', ')'), ('initialization', 'initi'), ('vector', 'vector'), ('zero', 'zero'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('algorithm', 'algorithm'), ('defined', 'defined'), ('using', 'using'), ('cipher', 'cipher'), ('block', 'block'), ('chaining', 'chaining'), ('(', '('), ('CBC', 'CBC'), (')', ')'), ('mode', 'mode'), ('operation', 'operation'), ('DES', 'DES'), ('(', '('), ('Figure', 'Figure'), ('6.4', '6.4'), (')', ')'), ('initialization', 'initialization'), ('vector', 'vector'), ('zero', 'zero'), ('.', '.')]
+
+
+
+============================ Sentence 30 =============================
+
+Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Data Authentication Algorithm (DAA)    Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Data Authentication Algorithm (DAA) The data (e.g.-.-, message, record, file, or program) to be authenticated are grouped into contiguous 64-bit blocks:  D1, D2, …. 
+
+
+>> Tokens are: 
+ ['Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Data', 'Authentication', 'Algorithm', '(', 'DAA', ')', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Data', 'Authentication', 'Algorithm', '(', 'DAA', ')', 'The', 'data', '(', 'e.g.-.-', ',', 'message', ',', 'record', ',', 'file', ',', 'program', ')', 'authenticated', 'grouped', 'contiguous', '64-bit', 'blocks', ':', 'D1', ',', 'D2', ',', '…', '.']
+
+>> Bigrams are: 
+ [('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Data'), ('Data', 'Authentication'), ('Authentication', 'Algorithm'), ('Algorithm', '('), ('(', 'DAA'), ('DAA', ')'), (')', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Data'), ('Data', 'Authentication'), ('Authentication', 'Algorithm'), ('Algorithm', '('), ('(', 'DAA'), ('DAA', ')'), (')', 'The'), ('The', 'data'), ('data', '('), ('(', 'e.g.-.-'), ('e.g.-.-', ','), (',', 'message'), ('message', ','), (',', 'record'), ('record', ','), (',', 'file'), ('file', ','), (',', 'program'), ('program', ')'), (')', 'authenticated'), ('authenticated', 'grouped'), ('grouped', 'contiguous'), ('contiguous', '64-bit'), ('64-bit', 'blocks'), ('blocks', ':'), (':', 'D1'), ('D1', ','), (',', 'D2'), ('D2', ','), (',', '…'), ('…', '.')]
+
+>> Trigrams are: 
+ [('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Data'), ('Subject', 'Data', 'Authentication'), ('Data', 'Authentication', 'Algorithm'), ('Authentication', 'Algorithm', '('), ('Algorithm', '(', 'DAA'), ('(', 'DAA', ')'), ('DAA', ')', 'Unit-6'), (')', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Data'), ('Subject', 'Data', 'Authentication'), ('Data', 'Authentication', 'Algorithm'), ('Authentication', 'Algorithm', '('), ('Algorithm', '(', 'DAA'), ('(', 'DAA', ')'), ('DAA', ')', 'The'), (')', 'The', 'data'), ('The', 'data', '('), ('data', '(', 'e.g.-.-'), ('(', 'e.g.-.-', ','), ('e.g.-.-', ',', 'message'), (',', 'message', ','), ('message', ',', 'record'), (',', 'record', ','), ('record', ',', 'file'), (',', 'file', ','), ('file', ',', 'program'), (',', 'program', ')'), ('program', ')', 'authenticated'), (')', 'authenticated', 'grouped'), ('authenticated', 'grouped', 'contiguous'), ('grouped', 'contiguous', '64-bit'), ('contiguous', '64-bit', 'blocks'), ('64-bit', 'blocks', ':'), ('blocks', ':', 'D1'), (':', 'D1', ','), ('D1', ',', 'D2'), (',', 'D2', ','), ('D2', ',', '…'), (',', '…', '.')]
+
+>> POS Tags are: 
+ [('Unit-6', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Data', 'NNP'), ('Authentication', 'NNP'), ('Algorithm', 'NNP'), ('(', '('), ('DAA', 'NNP'), (')', ')'), ('Unit-6', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Data', 'NNP'), ('Authentication', 'NNP'), ('Algorithm', 'NNP'), ('(', '('), ('DAA', 'NNP'), (')', ')'), ('The', 'DT'), ('data', 'NN'), ('(', '('), ('e.g.-.-', 'JJ'), (',', ','), ('message', 'NN'), (',', ','), ('record', 'NN'), (',', ','), ('file', 'NN'), (',', ','), ('program', 'NN'), (')', ')'), ('authenticated', 'VBD'), ('grouped', 'JJ'), ('contiguous', 'JJ'), ('64-bit', 'JJ'), ('blocks', 'NNS'), (':', ':'), ('D1', 'NNP'), (',', ','), ('D2', 'NNP'), (',', ','), ('…', 'NNP'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-6/JJ
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Data/NNP
+    Authentication/NNP
+    Algorithm/NNP)
+  (/(
+  (NP DAA/NNP)
+  )/)
+  (NP
+    Unit-6/NNP
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Data/NNP
+    Authentication/NNP
+    Algorithm/NNP)
+  (/(
+  (NP DAA/NNP)
+  )/)
+  (NP The/DT data/NN)
+  (/(
+  e.g.-.-/JJ
+  ,/,
+  (NP message/NN)
+  ,/,
+  (NP record/NN)
+  ,/,
+  (NP file/NN)
+  ,/,
+  (NP program/NN)
+  )/)
+  authenticated/VBD
+  (NP grouped/JJ contiguous/JJ 64-bit/JJ blocks/NNS)
+  :/:
+  (NP D1/NNP)
+  ,/,
+  (NP D2/NNP)
+  ,/,
+  (NP …/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Data Authentication Algorithm', 'DAA', 'Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Data Authentication Algorithm', 'DAA', 'The data', 'message', 'record', 'file', 'program', 'grouped contiguous 64-bit blocks', 'D1', 'D2', '…']
+
+>> Named Entities are: 
+ [('PERSON', 'Message Authentication Codes Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'DAA'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'DAA'), ('GPE', 'D2')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Data', 'data'), ('Authentication', 'authent'), ('Algorithm', 'algorithm'), ('(', '('), ('DAA', 'daa'), (')', ')'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Data', 'data'), ('Authentication', 'authent'), ('Algorithm', 'algorithm'), ('(', '('), ('DAA', 'daa'), (')', ')'), ('The', 'the'), ('data', 'data'), ('(', '('), ('e.g.-.-', 'e.g.-.-'), (',', ','), ('message', 'messag'), (',', ','), ('record', 'record'), (',', ','), ('file', 'file'), (',', ','), ('program', 'program'), (')', ')'), ('authenticated', 'authent'), ('grouped', 'group'), ('contiguous', 'contigu'), ('64-bit', '64-bit'), ('blocks', 'block'), (':', ':'), ('D1', 'd1'), (',', ','), ('D2', 'd2'), (',', ','), ('…', '…'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Data', 'data'), ('Authentication', 'authent'), ('Algorithm', 'algorithm'), ('(', '('), ('DAA', 'daa'), (')', ')'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Data', 'data'), ('Authentication', 'authent'), ('Algorithm', 'algorithm'), ('(', '('), ('DAA', 'daa'), (')', ')'), ('The', 'the'), ('data', 'data'), ('(', '('), ('e.g.-.-', 'e.g.-.-'), (',', ','), ('message', 'messag'), (',', ','), ('record', 'record'), (',', ','), ('file', 'file'), (',', ','), ('program', 'program'), (')', ')'), ('authenticated', 'authent'), ('grouped', 'group'), ('contiguous', 'contigu'), ('64-bit', '64-bit'), ('blocks', 'block'), (':', ':'), ('D1', 'd1'), (',', ','), ('D2', 'd2'), (',', ','), ('…', '…'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Data', 'Data'), ('Authentication', 'Authentication'), ('Algorithm', 'Algorithm'), ('(', '('), ('DAA', 'DAA'), (')', ')'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Data', 'Data'), ('Authentication', 'Authentication'), ('Algorithm', 'Algorithm'), ('(', '('), ('DAA', 'DAA'), (')', ')'), ('The', 'The'), ('data', 'data'), ('(', '('), ('e.g.-.-', 'e.g.-.-'), (',', ','), ('message', 'message'), (',', ','), ('record', 'record'), (',', ','), ('file', 'file'), (',', ','), ('program', 'program'), (')', ')'), ('authenticated', 'authenticated'), ('grouped', 'grouped'), ('contiguous', 'contiguous'), ('64-bit', '64-bit'), ('blocks', 'block'), (':', ':'), ('D1', 'D1'), (',', ','), ('D2', 'D2'), (',', ','), ('…', '…'), ('.', '.')]
+
+
+
+============================ Sentence 31 =============================
+
+Dn. 
+
+
+>> Tokens are: 
+ ['Dn', '.']
+
+>> Bigrams are: 
+ [('Dn', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('Dn', 'NNP'), ('.', '.')]
+
+ (S (NP Dn/NNP) ./.) 
+
+
+>> Noun Phrases are: 
+ ['Dn']
+
+>> Named Entities are: 
+ [('GPE', 'Dn')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Dn', 'dn'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Dn', 'dn'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Dn', 'Dn'), ('.', '.')]
+
+
+
+============================ Sentence 32 =============================
+
+If necessary, the final block is padded on the right with zeroes to form a full 64-bit block. 
+
+
+>> Tokens are: 
+ ['If', 'necessary', ',', 'final', 'block', 'padded', 'right', 'zeroes', 'form', 'full', '64-bit', 'block', '.']
+
+>> Bigrams are: 
+ [('If', 'necessary'), ('necessary', ','), (',', 'final'), ('final', 'block'), ('block', 'padded'), ('padded', 'right'), ('right', 'zeroes'), ('zeroes', 'form'), ('form', 'full'), ('full', '64-bit'), ('64-bit', 'block'), ('block', '.')]
+
+>> Trigrams are: 
+ [('If', 'necessary', ','), ('necessary', ',', 'final'), (',', 'final', 'block'), ('final', 'block', 'padded'), ('block', 'padded', 'right'), ('padded', 'right', 'zeroes'), ('right', 'zeroes', 'form'), ('zeroes', 'form', 'full'), ('form', 'full', '64-bit'), ('full', '64-bit', 'block'), ('64-bit', 'block', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), ('necessary', 'JJ'), (',', ','), ('final', 'JJ'), ('block', 'NN'), ('padded', 'VBD'), ('right', 'JJ'), ('zeroes', 'NNS'), ('form', 'VB'), ('full', 'JJ'), ('64-bit', 'JJ'), ('block', 'NN'), ('.', '.')]
+
+ (S
+  If/IN
+  necessary/JJ
+  ,/,
+  (NP final/JJ block/NN)
+  padded/VBD
+  (NP right/JJ zeroes/NNS)
+  form/VB
+  (NP full/JJ 64-bit/JJ block/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['final block', 'right zeroes', 'full 64-bit block']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), ('necessary', 'necessari'), (',', ','), ('final', 'final'), ('block', 'block'), ('padded', 'pad'), ('right', 'right'), ('zeroes', 'zero'), ('form', 'form'), ('full', 'full'), ('64-bit', '64-bit'), ('block', 'block'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), ('necessary', 'necessari'), (',', ','), ('final', 'final'), ('block', 'block'), ('padded', 'pad'), ('right', 'right'), ('zeroes', 'zero'), ('form', 'form'), ('full', 'full'), ('64-bit', '64-bit'), ('block', 'block'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), ('necessary', 'necessary'), (',', ','), ('final', 'final'), ('block', 'block'), ('padded', 'padded'), ('right', 'right'), ('zeroes', 'zero'), ('form', 'form'), ('full', 'full'), ('64-bit', '64-bit'), ('block', 'block'), ('.', '.')]
+
+
+
+============================ Sentence 33 =============================
+
+Using the DES encryption algorithm E and a secret key K, a data authentication code (DAC) is calculated as follows   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Cipher-Based Message Authentication Code (CMAC) Cipher-based Message Authentication Code (CMAC) mode of operation for use with AES and triple DES. 
+
+
+>> Tokens are: 
+ ['Using', 'DES', 'encryption', 'algorithm', 'E', 'secret', 'key', 'K', ',', 'data', 'authentication', 'code', '(', 'DAC', ')', 'calculated', 'follows', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Cipher-Based', 'Message', 'Authentication', 'Code', '(', 'CMAC', ')', 'Cipher-based', 'Message', 'Authentication', 'Code', '(', 'CMAC', ')', 'mode', 'operation', 'use', 'AES', 'triple', 'DES', '.']
+
+>> Bigrams are: 
+ [('Using', 'DES'), ('DES', 'encryption'), ('encryption', 'algorithm'), ('algorithm', 'E'), ('E', 'secret'), ('secret', 'key'), ('key', 'K'), ('K', ','), (',', 'data'), ('data', 'authentication'), ('authentication', 'code'), ('code', '('), ('(', 'DAC'), ('DAC', ')'), (')', 'calculated'), ('calculated', 'follows'), ('follows', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Cipher-Based'), ('Cipher-Based', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Code'), ('Code', '('), ('(', 'CMAC'), ('CMAC', ')'), (')', 'Cipher-based'), ('Cipher-based', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Code'), ('Code', '('), ('(', 'CMAC'), ('CMAC', ')'), (')', 'mode'), ('mode', 'operation'), ('operation', 'use'), ('use', 'AES'), ('AES', 'triple'), ('triple', 'DES'), ('DES', '.')]
+
+>> Trigrams are: 
+ [('Using', 'DES', 'encryption'), ('DES', 'encryption', 'algorithm'), ('encryption', 'algorithm', 'E'), ('algorithm', 'E', 'secret'), ('E', 'secret', 'key'), ('secret', 'key', 'K'), ('key', 'K', ','), ('K', ',', 'data'), (',', 'data', 'authentication'), ('data', 'authentication', 'code'), ('authentication', 'code', '('), ('code', '(', 'DAC'), ('(', 'DAC', ')'), ('DAC', ')', 'calculated'), (')', 'calculated', 'follows'), ('calculated', 'follows', 'Unit-6'), ('follows', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Cipher-Based'), ('Subject', 'Cipher-Based', 'Message'), ('Cipher-Based', 'Message', 'Authentication'), ('Message', 'Authentication', 'Code'), ('Authentication', 'Code', '('), ('Code', '(', 'CMAC'), ('(', 'CMAC', ')'), ('CMAC', ')', 'Cipher-based'), (')', 'Cipher-based', 'Message'), ('Cipher-based', 'Message', 'Authentication'), ('Message', 'Authentication', 'Code'), ('Authentication', 'Code', '('), ('Code', '(', 'CMAC'), ('(', 'CMAC', ')'), ('CMAC', ')', 'mode'), (')', 'mode', 'operation'), ('mode', 'operation', 'use'), ('operation', 'use', 'AES'), ('use', 'AES', 'triple'), ('AES', 'triple', 'DES'), ('triple', 'DES', '.')]
+
+>> POS Tags are: 
+ [('Using', 'VBG'), ('DES', 'NNP'), ('encryption', 'NN'), ('algorithm', 'NN'), ('E', 'NNP'), ('secret', 'JJ'), ('key', 'NN'), ('K', 'NNP'), (',', ','), ('data', 'NNS'), ('authentication', 'NN'), ('code', 'NN'), ('(', '('), ('DAC', 'NNP'), (')', ')'), ('calculated', 'VBD'), ('follows', 'VBZ'), ('Unit-6', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Cipher-Based', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Code', 'NNP'), ('(', '('), ('CMAC', 'NNP'), (')', ')'), ('Cipher-based', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Code', 'NNP'), ('(', '('), ('CMAC', 'NNP'), (')', ')'), ('mode', 'NN'), ('operation', 'NN'), ('use', 'NN'), ('AES', 'NNP'), ('triple', 'NN'), ('DES', 'NNP'), ('.', '.')]
+
+ (S
+  Using/VBG
+  (NP DES/NNP encryption/NN algorithm/NN E/NNP)
+  (NP secret/JJ key/NN K/NNP)
+  ,/,
+  (NP data/NNS authentication/NN code/NN)
+  (/(
+  (NP DAC/NNP)
+  )/)
+  calculated/VBD
+  follows/VBZ
+  (NP
+    Unit-6/JJ
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP)
+  (NP Cipher-Based/JJ Message/NNP Authentication/NNP Code/NNP)
+  (/(
+  (NP CMAC/NNP)
+  )/)
+  (NP Cipher-based/JJ Message/NNP Authentication/NNP Code/NNP)
+  (/(
+  (NP CMAC/NNP)
+  )/)
+  (NP mode/NN operation/NN use/NN AES/NNP triple/NN DES/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['DES encryption algorithm E', 'secret key K', 'data authentication code', 'DAC', 'Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject', 'Cipher-Based Message Authentication Code', 'CMAC', 'Cipher-based Message Authentication Code', 'CMAC', 'mode operation use AES triple DES']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'DAC'), ('PERSON', 'Message Authentication Codes Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Message Authentication Code'), ('ORGANIZATION', 'CMAC'), ('PERSON', 'Message Authentication Code'), ('ORGANIZATION', 'CMAC'), ('ORGANIZATION', 'AES')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Using', 'use'), ('DES', 'de'), ('encryption', 'encrypt'), ('algorithm', 'algorithm'), ('E', 'e'), ('secret', 'secret'), ('key', 'key'), ('K', 'k'), (',', ','), ('data', 'data'), ('authentication', 'authent'), ('code', 'code'), ('(', '('), ('DAC', 'dac'), (')', ')'), ('calculated', 'calcul'), ('follows', 'follow'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Cipher-Based', 'cipher-bas'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('Cipher-based', 'cipher-bas'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('mode', 'mode'), ('operation', 'oper'), ('use', 'use'), ('AES', 'ae'), ('triple', 'tripl'), ('DES', 'de'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Using', 'use'), ('DES', 'des'), ('encryption', 'encrypt'), ('algorithm', 'algorithm'), ('E', 'e'), ('secret', 'secret'), ('key', 'key'), ('K', 'k'), (',', ','), ('data', 'data'), ('authentication', 'authent'), ('code', 'code'), ('(', '('), ('DAC', 'dac'), (')', ')'), ('calculated', 'calcul'), ('follows', 'follow'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Cipher-Based', 'cipher-bas'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('Cipher-based', 'cipher-bas'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('mode', 'mode'), ('operation', 'oper'), ('use', 'use'), ('AES', 'ae'), ('triple', 'tripl'), ('DES', 'des'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Using', 'Using'), ('DES', 'DES'), ('encryption', 'encryption'), ('algorithm', 'algorithm'), ('E', 'E'), ('secret', 'secret'), ('key', 'key'), ('K', 'K'), (',', ','), ('data', 'data'), ('authentication', 'authentication'), ('code', 'code'), ('(', '('), ('DAC', 'DAC'), (')', ')'), ('calculated', 'calculated'), ('follows', 'follows'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Cipher-Based', 'Cipher-Based'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Code', 'Code'), ('(', '('), ('CMAC', 'CMAC'), (')', ')'), ('Cipher-based', 'Cipher-based'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Code', 'Code'), ('(', '('), ('CMAC', 'CMAC'), (')', ')'), ('mode', 'mode'), ('operation', 'operation'), ('use', 'use'), ('AES', 'AES'), ('triple', 'triple'), ('DES', 'DES'), ('.', '.')]
+
+
+
+============================ Sentence 34 =============================
+
+First, let us define the operation of CMAC when the message is an integer multiple n of the cipher block length b. 
+
+
+>> Tokens are: 
+ ['First', ',', 'let', 'us', 'define', 'operation', 'CMAC', 'message', 'integer', 'multiple', 'n', 'cipher', 'block', 'length', 'b', '.']
+
+>> Bigrams are: 
+ [('First', ','), (',', 'let'), ('let', 'us'), ('us', 'define'), ('define', 'operation'), ('operation', 'CMAC'), ('CMAC', 'message'), ('message', 'integer'), ('integer', 'multiple'), ('multiple', 'n'), ('n', 'cipher'), ('cipher', 'block'), ('block', 'length'), ('length', 'b'), ('b', '.')]
+
+>> Trigrams are: 
+ [('First', ',', 'let'), (',', 'let', 'us'), ('let', 'us', 'define'), ('us', 'define', 'operation'), ('define', 'operation', 'CMAC'), ('operation', 'CMAC', 'message'), ('CMAC', 'message', 'integer'), ('message', 'integer', 'multiple'), ('integer', 'multiple', 'n'), ('multiple', 'n', 'cipher'), ('n', 'cipher', 'block'), ('cipher', 'block', 'length'), ('block', 'length', 'b'), ('length', 'b', '.')]
+
+>> POS Tags are: 
+ [('First', 'RB'), (',', ','), ('let', 'VB'), ('us', 'PRP'), ('define', 'VB'), ('operation', 'NN'), ('CMAC', 'NNP'), ('message', 'NN'), ('integer', 'NN'), ('multiple', 'JJ'), ('n', 'NN'), ('cipher', 'NN'), ('block', 'NN'), ('length', 'NN'), ('b', 'NN'), ('.', '.')]
+
+ (S
+  First/RB
+  ,/,
+  let/VB
+  us/PRP
+  define/VB
+  (NP operation/NN CMAC/NNP message/NN integer/NN)
+  (NP multiple/JJ n/NN cipher/NN block/NN length/NN b/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['operation CMAC message integer', 'multiple n cipher block length b']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'CMAC')] 
+
+>> Stemming using Porter Stemmer: 
+ [('First', 'first'), (',', ','), ('let', 'let'), ('us', 'us'), ('define', 'defin'), ('operation', 'oper'), ('CMAC', 'cmac'), ('message', 'messag'), ('integer', 'integ'), ('multiple', 'multipl'), ('n', 'n'), ('cipher', 'cipher'), ('block', 'block'), ('length', 'length'), ('b', 'b'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('First', 'first'), (',', ','), ('let', 'let'), ('us', 'us'), ('define', 'defin'), ('operation', 'oper'), ('CMAC', 'cmac'), ('message', 'messag'), ('integer', 'integ'), ('multiple', 'multipl'), ('n', 'n'), ('cipher', 'cipher'), ('block', 'block'), ('length', 'length'), ('b', 'b'), ('.', '.')]
+
+>> Lemmatization: 
+ [('First', 'First'), (',', ','), ('let', 'let'), ('us', 'u'), ('define', 'define'), ('operation', 'operation'), ('CMAC', 'CMAC'), ('message', 'message'), ('integer', 'integer'), ('multiple', 'multiple'), ('n', 'n'), ('cipher', 'cipher'), ('block', 'block'), ('length', 'length'), ('b', 'b'), ('.', '.')]
+
+
+
+============================ Sentence 35 =============================
+
+For AES, b = 128, and for triple DES, b = 64. 
+
+
+>> Tokens are: 
+ ['For', 'AES', ',', 'b', '=', '128', ',', 'triple', 'DES', ',', 'b', '=', '64', '.']
+
+>> Bigrams are: 
+ [('For', 'AES'), ('AES', ','), (',', 'b'), ('b', '='), ('=', '128'), ('128', ','), (',', 'triple'), ('triple', 'DES'), ('DES', ','), (',', 'b'), ('b', '='), ('=', '64'), ('64', '.')]
+
+>> Trigrams are: 
+ [('For', 'AES', ','), ('AES', ',', 'b'), (',', 'b', '='), ('b', '=', '128'), ('=', '128', ','), ('128', ',', 'triple'), (',', 'triple', 'DES'), ('triple', 'DES', ','), ('DES', ',', 'b'), (',', 'b', '='), ('b', '=', '64'), ('=', '64', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('AES', 'NNP'), (',', ','), ('b', 'NN'), ('=', 'NN'), ('128', 'CD'), (',', ','), ('triple', 'NN'), ('DES', 'NNP'), (',', ','), ('b', 'NN'), ('=', 'NN'), ('64', 'CD'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP AES/NNP)
+  ,/,
+  (NP b/NN =/NN)
+  128/CD
+  ,/,
+  (NP triple/NN DES/NNP)
+  ,/,
+  (NP b/NN =/NN)
+  64/CD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AES', 'b =', 'triple DES', 'b =']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'AES')] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('AES', 'ae'), (',', ','), ('b', 'b'), ('=', '='), ('128', '128'), (',', ','), ('triple', 'tripl'), ('DES', 'de'), (',', ','), ('b', 'b'), ('=', '='), ('64', '64'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('AES', 'ae'), (',', ','), ('b', 'b'), ('=', '='), ('128', '128'), (',', ','), ('triple', 'tripl'), ('DES', 'des'), (',', ','), ('b', 'b'), ('=', '='), ('64', '64'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('AES', 'AES'), (',', ','), ('b', 'b'), ('=', '='), ('128', '128'), (',', ','), ('triple', 'triple'), ('DES', 'DES'), (',', ','), ('b', 'b'), ('=', '='), ('64', '64'), ('.', '.')]
+
+
+
+============================ Sentence 36 =============================
+
+The message is divided into n blocks (M1, M2,… Mn)  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Cipher-Based Message Authentication Code (CMAC) The algorithm makes use of a k-bit encryption key K and a b-bit constant, K1. 
+
+
+>> Tokens are: 
+ ['The', 'message', 'divided', 'n', 'blocks', '(', 'M1', ',', 'M2', ',', '…', 'Mn', ')', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Cipher-Based', 'Message', 'Authentication', 'Code', '(', 'CMAC', ')', 'The', 'algorithm', 'makes', 'use', 'k-bit', 'encryption', 'key', 'K', 'b-bit', 'constant', ',', 'K1', '.']
+
+>> Bigrams are: 
+ [('The', 'message'), ('message', 'divided'), ('divided', 'n'), ('n', 'blocks'), ('blocks', '('), ('(', 'M1'), ('M1', ','), (',', 'M2'), ('M2', ','), (',', '…'), ('…', 'Mn'), ('Mn', ')'), (')', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Cipher-Based'), ('Cipher-Based', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Code'), ('Code', '('), ('(', 'CMAC'), ('CMAC', ')'), (')', 'The'), ('The', 'algorithm'), ('algorithm', 'makes'), ('makes', 'use'), ('use', 'k-bit'), ('k-bit', 'encryption'), ('encryption', 'key'), ('key', 'K'), ('K', 'b-bit'), ('b-bit', 'constant'), ('constant', ','), (',', 'K1'), ('K1', '.')]
+
+>> Trigrams are: 
+ [('The', 'message', 'divided'), ('message', 'divided', 'n'), ('divided', 'n', 'blocks'), ('n', 'blocks', '('), ('blocks', '(', 'M1'), ('(', 'M1', ','), ('M1', ',', 'M2'), (',', 'M2', ','), ('M2', ',', '…'), (',', '…', 'Mn'), ('…', 'Mn', ')'), ('Mn', ')', 'Unit-6'), (')', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Cipher-Based'), ('Subject', 'Cipher-Based', 'Message'), ('Cipher-Based', 'Message', 'Authentication'), ('Message', 'Authentication', 'Code'), ('Authentication', 'Code', '('), ('Code', '(', 'CMAC'), ('(', 'CMAC', ')'), ('CMAC', ')', 'The'), (')', 'The', 'algorithm'), ('The', 'algorithm', 'makes'), ('algorithm', 'makes', 'use'), ('makes', 'use', 'k-bit'), ('use', 'k-bit', 'encryption'), ('k-bit', 'encryption', 'key'), ('encryption', 'key', 'K'), ('key', 'K', 'b-bit'), ('K', 'b-bit', 'constant'), ('b-bit', 'constant', ','), ('constant', ',', 'K1'), (',', 'K1', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('message', 'NN'), ('divided', 'VBD'), ('n', 'JJ'), ('blocks', 'NNS'), ('(', '('), ('M1', 'NNP'), (',', ','), ('M2', 'NNP'), (',', ','), ('…', 'NNP'), ('Mn', 'NNP'), (')', ')'), ('Unit-6', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Cipher-Based', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Code', 'NNP'), ('(', '('), ('CMAC', 'NNP'), (')', ')'), ('The', 'DT'), ('algorithm', 'NN'), ('makes', 'VBZ'), ('use', 'IN'), ('k-bit', 'JJ'), ('encryption', 'NN'), ('key', 'JJ'), ('K', 'NNP'), ('b-bit', 'NN'), ('constant', 'NN'), (',', ','), ('K1', 'NNP'), ('.', '.')]
+
+ (S
+  (NP The/DT message/NN)
+  divided/VBD
+  (NP n/JJ blocks/NNS)
+  (/(
+  (NP M1/NNP)
+  ,/,
+  (NP M2/NNP)
+  ,/,
+  (NP …/NNP Mn/NNP)
+  )/)
+  (NP
+    Unit-6/NNP
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP)
+  (NP Cipher-Based/JJ Message/NNP Authentication/NNP Code/NNP)
+  (/(
+  (NP CMAC/NNP)
+  )/)
+  (NP The/DT algorithm/NN)
+  makes/VBZ
+  use/IN
+  (NP k-bit/JJ encryption/NN)
+  (NP key/JJ K/NNP b-bit/NN constant/NN)
+  ,/,
+  (NP K1/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The message', 'n blocks', 'M1', 'M2', '… Mn', 'Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject', 'Cipher-Based Message Authentication Code', 'CMAC', 'The algorithm', 'k-bit encryption', 'key K b-bit constant', 'K1']
+
+>> Named Entities are: 
+ [('GPE', 'M2'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Message Authentication Code'), ('ORGANIZATION', 'CMAC'), ('GPE', 'K1')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('message', 'messag'), ('divided', 'divid'), ('n', 'n'), ('blocks', 'block'), ('(', '('), ('M1', 'm1'), (',', ','), ('M2', 'm2'), (',', ','), ('…', '…'), ('Mn', 'mn'), (')', ')'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Cipher-Based', 'cipher-bas'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('The', 'the'), ('algorithm', 'algorithm'), ('makes', 'make'), ('use', 'use'), ('k-bit', 'k-bit'), ('encryption', 'encrypt'), ('key', 'key'), ('K', 'k'), ('b-bit', 'b-bit'), ('constant', 'constant'), (',', ','), ('K1', 'k1'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('message', 'messag'), ('divided', 'divid'), ('n', 'n'), ('blocks', 'block'), ('(', '('), ('M1', 'm1'), (',', ','), ('M2', 'm2'), (',', ','), ('…', '…'), ('Mn', 'mn'), (')', ')'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Cipher-Based', 'cipher-bas'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('The', 'the'), ('algorithm', 'algorithm'), ('makes', 'make'), ('use', 'use'), ('k-bit', 'k-bit'), ('encryption', 'encrypt'), ('key', 'key'), ('K', 'k'), ('b-bit', 'b-bit'), ('constant', 'constant'), (',', ','), ('K1', 'k1'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('message', 'message'), ('divided', 'divided'), ('n', 'n'), ('blocks', 'block'), ('(', '('), ('M1', 'M1'), (',', ','), ('M2', 'M2'), (',', ','), ('…', '…'), ('Mn', 'Mn'), (')', ')'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Cipher-Based', 'Cipher-Based'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Code', 'Code'), ('(', '('), ('CMAC', 'CMAC'), (')', ')'), ('The', 'The'), ('algorithm', 'algorithm'), ('makes', 'make'), ('use', 'use'), ('k-bit', 'k-bit'), ('encryption', 'encryption'), ('key', 'key'), ('K', 'K'), ('b-bit', 'b-bit'), ('constant', 'constant'), (',', ','), ('K1', 'K1'), ('.', '.')]
+
+
+
+============================ Sentence 37 =============================
+
+For AES, the key size k is 128, 192, or 256 bits; for triple DES, the key size is 112 or 168 bits. 
+
+
+>> Tokens are: 
+ ['For', 'AES', ',', 'key', 'size', 'k', '128', ',', '192', ',', '256', 'bits', ';', 'triple', 'DES', ',', 'key', 'size', '112', '168', 'bits', '.']
+
+>> Bigrams are: 
+ [('For', 'AES'), ('AES', ','), (',', 'key'), ('key', 'size'), ('size', 'k'), ('k', '128'), ('128', ','), (',', '192'), ('192', ','), (',', '256'), ('256', 'bits'), ('bits', ';'), (';', 'triple'), ('triple', 'DES'), ('DES', ','), (',', 'key'), ('key', 'size'), ('size', '112'), ('112', '168'), ('168', 'bits'), ('bits', '.')]
+
+>> Trigrams are: 
+ [('For', 'AES', ','), ('AES', ',', 'key'), (',', 'key', 'size'), ('key', 'size', 'k'), ('size', 'k', '128'), ('k', '128', ','), ('128', ',', '192'), (',', '192', ','), ('192', ',', '256'), (',', '256', 'bits'), ('256', 'bits', ';'), ('bits', ';', 'triple'), (';', 'triple', 'DES'), ('triple', 'DES', ','), ('DES', ',', 'key'), (',', 'key', 'size'), ('key', 'size', '112'), ('size', '112', '168'), ('112', '168', 'bits'), ('168', 'bits', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('AES', 'NNP'), (',', ','), ('key', 'JJ'), ('size', 'NN'), ('k', 'NN'), ('128', 'CD'), (',', ','), ('192', 'CD'), (',', ','), ('256', 'CD'), ('bits', 'NNS'), (';', ':'), ('triple', 'JJ'), ('DES', 'NNP'), (',', ','), ('key', 'JJ'), ('size', 'NN'), ('112', 'CD'), ('168', 'CD'), ('bits', 'NNS'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP AES/NNP)
+  ,/,
+  (NP key/JJ size/NN k/NN)
+  128/CD
+  ,/,
+  192/CD
+  ,/,
+  256/CD
+  (NP bits/NNS)
+  ;/:
+  (NP triple/JJ DES/NNP)
+  ,/,
+  (NP key/JJ size/NN)
+  112/CD
+  168/CD
+  (NP bits/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AES', 'key size k', 'bits', 'triple DES', 'key size', 'bits']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'AES')] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('AES', 'ae'), (',', ','), ('key', 'key'), ('size', 'size'), ('k', 'k'), ('128', '128'), (',', ','), ('192', '192'), (',', ','), ('256', '256'), ('bits', 'bit'), (';', ';'), ('triple', 'tripl'), ('DES', 'de'), (',', ','), ('key', 'key'), ('size', 'size'), ('112', '112'), ('168', '168'), ('bits', 'bit'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('AES', 'ae'), (',', ','), ('key', 'key'), ('size', 'size'), ('k', 'k'), ('128', '128'), (',', ','), ('192', '192'), (',', ','), ('256', '256'), ('bits', 'bit'), (';', ';'), ('triple', 'tripl'), ('DES', 'des'), (',', ','), ('key', 'key'), ('size', 'size'), ('112', '112'), ('168', '168'), ('bits', 'bit'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('AES', 'AES'), (',', ','), ('key', 'key'), ('size', 'size'), ('k', 'k'), ('128', '128'), (',', ','), ('192', '192'), (',', ','), ('256', '256'), ('bits', 'bit'), (';', ';'), ('triple', 'triple'), ('DES', 'DES'), (',', ','), ('key', 'key'), ('size', 'size'), ('112', '112'), ('168', '168'), ('bits', 'bit'), ('.', '.')]
+
+
+
+============================ Sentence 38 =============================
+
+CMAC is calculated as follows   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Cipher-Based Message Authentication Code (CMAC)    Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject 
+
+
+>> Tokens are: 
+ ['CMAC', 'calculated', 'follows', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Cipher-Based', 'Message', 'Authentication', 'Code', '(', 'CMAC', ')', 'Unit-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject']
+
+>> Bigrams are: 
+ [('CMAC', 'calculated'), ('calculated', 'follows'), ('follows', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Cipher-Based'), ('Cipher-Based', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Code'), ('Code', '('), ('(', 'CMAC'), ('CMAC', ')'), (')', 'Unit-6'), ('Unit-6', 'Message'), ('Message', 'Authentication'), ('Authentication', 'Codes'), ('Codes', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject')]
+
+>> Trigrams are: 
+ [('CMAC', 'calculated', 'follows'), ('calculated', 'follows', 'Unit-6'), ('follows', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Cipher-Based'), ('Subject', 'Cipher-Based', 'Message'), ('Cipher-Based', 'Message', 'Authentication'), ('Message', 'Authentication', 'Code'), ('Authentication', 'Code', '('), ('Code', '(', 'CMAC'), ('(', 'CMAC', ')'), ('CMAC', ')', 'Unit-6'), (')', 'Unit-6', 'Message'), ('Unit-6', 'Message', 'Authentication'), ('Message', 'Authentication', 'Codes'), ('Authentication', 'Codes', 'Darshan'), ('Codes', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject')]
+
+>> POS Tags are: 
+ [('CMAC', 'NNP'), ('calculated', 'VBD'), ('follows', 'VBZ'), ('Unit-6', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Cipher-Based', 'JJ'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Code', 'NNP'), ('(', '('), ('CMAC', 'NNP'), (')', ')'), ('Unit-6', 'NNP'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP')]
+
+ (S
+  (NP CMAC/NNP)
+  calculated/VBD
+  follows/VBZ
+  (NP
+    Unit-6/JJ
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP)
+  (NP Cipher-Based/JJ Message/NNP Authentication/NNP Code/NNP)
+  (/(
+  (NP CMAC/NNP)
+  )/)
+  (NP
+    Unit-6/NNP
+    Message/NNP
+    Authentication/NNP
+    Codes/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP)) 
+
+
+>> Noun Phrases are: 
+ ['CMAC', 'Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject', 'Cipher-Based Message Authentication Code', 'CMAC', 'Unit-6 Message Authentication Codes Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'CMAC'), ('PERSON', 'Message Authentication Codes Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Message Authentication Code'), ('ORGANIZATION', 'CMAC'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology')] 
+
+>> Stemming using Porter Stemmer: 
+ [('CMAC', 'cmac'), ('calculated', 'calcul'), ('follows', 'follow'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Cipher-Based', 'cipher-bas'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject')]
+
+>> Stemming using Snowball Stemmer: 
+ [('CMAC', 'cmac'), ('calculated', 'calcul'), ('follows', 'follow'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Cipher-Based', 'cipher-bas'), ('Message', 'messag'), ('Authentication', 'authent'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('Unit-6', 'unit-6'), ('Message', 'messag'), ('Authentication', 'authent'), ('Codes', 'code'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject')]
+
+>> Lemmatization: 
+ [('CMAC', 'CMAC'), ('calculated', 'calculated'), ('follows', 'follows'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Cipher-Based', 'Cipher-Based'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Code', 'Code'), ('(', '('), ('CMAC', 'CMAC'), (')', ')'), ('Unit-6', 'Unit-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Codes'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject')]
+

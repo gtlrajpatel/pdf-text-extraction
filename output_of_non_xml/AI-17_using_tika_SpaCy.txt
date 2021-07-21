@@ -1,0 +1,676 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-17 
+
+
+>> Tokens are: 
+[AI-17] 
+
+>> PoS Tags are: 
+[('AI-17', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('AI-17', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[AI-17]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 2 =============================
+
+Yet another research area in AI, neural networks, is inspired from the natural neural network of human nervous system. 
+
+
+>> Tokens are: 
+[research, area, AI, ,, neural, networks, ,, inspired, natural, neural, network, human, nervous, system, .] 
+
+>> PoS Tags are: 
+[('research', 'NOUN'), ('area', 'NOUN'), ('AI', 'PROPN'), (',', 'PUNCT'), ('neural', 'ADJ'), ('networks', 'NOUN'), (',', 'PUNCT'), ('inspired', 'VERB'), ('natural', 'ADJ'), ('neural', 'ADJ'), ('network', 'NOUN'), ('human', 'ADJ'), ('nervous', 'ADJ'), ('system', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('research', 'compound'), ('area', 'nsubjpass'), ('AI', 'pobj'), (',', 'punct'), ('neural', 'amod'), ('networks', 'appos'), (',', 'punct'), ('inspired', 'ROOT'), ('natural', 'amod'), ('neural', 'amod'), ('network', 'pobj'), ('human', 'amod'), ('nervous', 'amod'), ('system', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[research, area], [area, AI], [AI, ,], [,, neural], [neural, networks], [networks, ,], [,, inspired], [inspired, natural], [natural, neural], [neural, network], [network, human], [human, nervous], [nervous, system], [system, .]]
+
+>> Trigrams: 
+[[research, area, AI], [area, AI, ,], [AI, ,, neural], [,, neural, networks], [neural, networks, ,], [networks, ,, inspired], [,, inspired, natural], [inspired, natural, neural], [natural, neural, network], [neural, network, human], [network, human, nervous], [human, nervous, system], [nervous, system, .]]
+
+>> Noun Phrases are: 
+[another research area, AI, neural networks, the natural neural network, human nervous system]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 3 =============================
+
+What are Artificial Neural Networks (ANNs)? 
+
+
+>> Tokens are: 
+[Artificial, Neural, Networks, (, ANNs, ), ?] 
+
+>> PoS Tags are: 
+[('Artificial', 'PROPN'), ('Neural', 'PROPN'), ('Networks', 'PROPN'), ('(', 'PUNCT'), ('ANNs', 'PROPN'), (')', 'PUNCT'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Artificial', 'compound'), ('Neural', 'compound'), ('Networks', 'nsubj'), ('(', 'punct'), ('ANNs', 'appos'), (')', 'punct'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Artificial, Neural], [Neural, Networks], [Networks, (], [(, ANNs], [ANNs, )], [), ?]]
+
+>> Trigrams: 
+[[Artificial, Neural, Networks], [Neural, Networks, (], [Networks, (, ANNs], [(, ANNs, )], [ANNs, ), ?]]
+
+>> Noun Phrases are: 
+[What, Artificial Neural Networks, ANNs]
+
+>> Named Entities are: 
+[('Artificial Neural Networks', 'ORG')]
+
+
+============================ Sentence 4 =============================
+
+The inventor of the first neurocomputer, Dr. Robert Hecht-Nielsen, defines a neural network as − "...a computing system made up of a number of simple, highly interconnected processing elements, which process information by their dynamic state response to external inputs.” 
+
+
+>> Tokens are: 
+[inventor, neurocomputer, ,, Dr., Robert, Hecht, -, Nielsen, ,, defines, neural, network, −, ", ..., computing, system, number, simple, ,, highly, interconnected, processing, elements, ,, process, information, dynamic, state, response, external, inputs, ., ”] 
+
+>> PoS Tags are: 
+[('inventor', 'NOUN'), ('neurocomputer', 'NOUN'), (',', 'PUNCT'), ('Dr.', 'PROPN'), ('Robert', 'PROPN'), ('Hecht', 'PROPN'), ('-', 'PUNCT'), ('Nielsen', 'PROPN'), (',', 'PUNCT'), ('defines', 'VERB'), ('neural', 'ADJ'), ('network', 'NOUN'), ('−', 'NOUN'), ('"', 'PUNCT'), ('...', 'PUNCT'), ('computing', 'NOUN'), ('system', 'NOUN'), ('number', 'NOUN'), ('simple', 'ADJ'), (',', 'PUNCT'), ('highly', 'ADV'), ('interconnected', 'VERB'), ('processing', 'NOUN'), ('elements', 'NOUN'), (',', 'PUNCT'), ('process', 'VERB'), ('information', 'NOUN'), ('dynamic', 'ADJ'), ('state', 'NOUN'), ('response', 'NOUN'), ('external', 'ADJ'), ('inputs', 'NOUN'), ('.', 'PUNCT'), ('”', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('inventor', 'nsubj'), ('neurocomputer', 'pobj'), (',', 'punct'), ('Dr.', 'compound'), ('Robert', 'compound'), ('Hecht', 'compound'), ('-', 'punct'), ('Nielsen', 'appos'), (',', 'punct'), ('defines', 'ROOT'), ('neural', 'amod'), ('network', 'dobj'), ('−', 'pobj'), ('"', 'punct'), ('...', 'punct'), ('computing', 'compound'), ('system', 'nsubj'), ('number', 'pobj'), ('simple', 'amod'), (',', 'punct'), ('highly', 'advmod'), ('interconnected', 'amod'), ('processing', 'compound'), ('elements', 'pobj'), (',', 'punct'), ('process', 'relcl'), ('information', 'dobj'), ('dynamic', 'amod'), ('state', 'compound'), ('response', 'pobj'), ('external', 'amod'), ('inputs', 'pobj'), ('.', 'punct'), ('”', 'punct')]
+
+>> Bigrams: 
+[[inventor, neurocomputer], [neurocomputer, ,], [,, Dr.], [Dr., Robert], [Robert, Hecht], [Hecht, -], [-, Nielsen], [Nielsen, ,], [,, defines], [defines, neural], [neural, network], [network, −], [−, "], [", ...], [..., computing], [computing, system], [system, number], [number, simple], [simple, ,], [,, highly], [highly, interconnected], [interconnected, processing], [processing, elements], [elements, ,], [,, process], [process, information], [information, dynamic], [dynamic, state], [state, response], [response, external], [external, inputs], [inputs, .], [., ”]]
+
+>> Trigrams: 
+[[inventor, neurocomputer, ,], [neurocomputer, ,, Dr.], [,, Dr., Robert], [Dr., Robert, Hecht], [Robert, Hecht, -], [Hecht, -, Nielsen], [-, Nielsen, ,], [Nielsen, ,, defines], [,, defines, neural], [defines, neural, network], [neural, network, −], [network, −, "], [−, ", ...], [", ..., computing], [..., computing, system], [computing, system, number], [system, number, simple], [number, simple, ,], [simple, ,, highly], [,, highly, interconnected], [highly, interconnected, processing], [interconnected, processing, elements], [processing, elements, ,], [elements, ,, process], [,, process, information], [process, information, dynamic], [information, dynamic, state], [dynamic, state, response], [state, response, external], [response, external, inputs], [external, inputs, .], [inputs, ., ”]]
+
+>> Noun Phrases are: 
+[The inventor, the first neurocomputer, Dr. Robert Hecht-Nielsen, a neural network, −, a computing system, a number, simple, highly interconnected processing elements, information, their dynamic state response, external inputs]
+
+>> Named Entities are: 
+[('first', 'ORDINAL'), ('Robert Hecht-Nielsen', 'PERSON')]
+
+
+============================ Sentence 5 =============================
+
+Basic Structure of ANNs The idea of ANNs is based on the belief that working of human brain by making the right connections, can be imitated using silicon and wires as living neurons and dendrites. 
+
+
+>> Tokens are: 
+[Basic, Structure, ANNs, idea, ANNs, based, belief, working, human, brain, making, right, connections, ,, imitated, silicon, wires, living, neurons, dendrites, .] 
+
+>> PoS Tags are: 
+[('Basic', 'PROPN'), ('Structure', 'PROPN'), ('ANNs', 'NOUN'), ('idea', 'NOUN'), ('ANNs', 'NOUN'), ('based', 'VERB'), ('belief', 'NOUN'), ('working', 'VERB'), ('human', 'ADJ'), ('brain', 'NOUN'), ('making', 'VERB'), ('right', 'ADJ'), ('connections', 'NOUN'), (',', 'PUNCT'), ('imitated', 'VERB'), ('silicon', 'NOUN'), ('wires', 'NOUN'), ('living', 'VERB'), ('neurons', 'NOUN'), ('dendrites', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Basic', 'compound'), ('Structure', 'nsubjpass'), ('ANNs', 'pobj'), ('idea', 'nsubjpass'), ('ANNs', 'pobj'), ('based', 'ROOT'), ('belief', 'pobj'), ('working', 'nsubjpass'), ('human', 'amod'), ('brain', 'pobj'), ('making', 'pcomp'), ('right', 'amod'), ('connections', 'dobj'), (',', 'punct'), ('imitated', 'acl'), ('silicon', 'dobj'), ('wires', 'conj'), ('living', 'amod'), ('neurons', 'pobj'), ('dendrites', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Basic, Structure], [Structure, ANNs], [ANNs, idea], [idea, ANNs], [ANNs, based], [based, belief], [belief, working], [working, human], [human, brain], [brain, making], [making, right], [right, connections], [connections, ,], [,, imitated], [imitated, silicon], [silicon, wires], [wires, living], [living, neurons], [neurons, dendrites], [dendrites, .]]
+
+>> Trigrams: 
+[[Basic, Structure, ANNs], [Structure, ANNs, idea], [ANNs, idea, ANNs], [idea, ANNs, based], [ANNs, based, belief], [based, belief, working], [belief, working, human], [working, human, brain], [human, brain, making], [brain, making, right], [making, right, connections], [right, connections, ,], [connections, ,, imitated], [,, imitated, silicon], [imitated, silicon, wires], [silicon, wires, living], [wires, living, neurons], [living, neurons, dendrites], [neurons, dendrites, .]]
+
+>> Noun Phrases are: 
+[Basic Structure, ANNs, The idea, ANNs, the belief, human brain, the right connections, silicon, wires, living neurons, dendrites]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+The human brain is composed of 86 billion nerve cells called neurons. 
+
+
+>> Tokens are: 
+[human, brain, composed, 86, billion, nerve, cells, called, neurons, .] 
+
+>> PoS Tags are: 
+[('human', 'ADJ'), ('brain', 'NOUN'), ('composed', 'VERB'), ('86', 'NUM'), ('billion', 'NUM'), ('nerve', 'NOUN'), ('cells', 'NOUN'), ('called', 'VERB'), ('neurons', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('human', 'amod'), ('brain', 'nsubjpass'), ('composed', 'ROOT'), ('86', 'compound'), ('billion', 'nummod'), ('nerve', 'compound'), ('cells', 'pobj'), ('called', 'acl'), ('neurons', 'oprd'), ('.', 'punct')]
+
+>> Bigrams: 
+[[human, brain], [brain, composed], [composed, 86], [86, billion], [billion, nerve], [nerve, cells], [cells, called], [called, neurons], [neurons, .]]
+
+>> Trigrams: 
+[[human, brain, composed], [brain, composed, 86], [composed, 86, billion], [86, billion, nerve], [billion, nerve, cells], [nerve, cells, called], [cells, called, neurons], [called, neurons, .]]
+
+>> Noun Phrases are: 
+[The human brain, 86 billion nerve cells, neurons]
+
+>> Named Entities are: 
+[('86 billion', 'CARDINAL')]
+
+
+============================ Sentence 7 =============================
+
+They are connected to other thousand cells by Axons. 
+
+
+>> Tokens are: 
+[connected, thousand, cells, Axons, .] 
+
+>> PoS Tags are: 
+[('connected', 'VERB'), ('thousand', 'NUM'), ('cells', 'NOUN'), ('Axons', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('connected', 'ROOT'), ('thousand', 'nummod'), ('cells', 'pobj'), ('Axons', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[connected, thousand], [thousand, cells], [cells, Axons], [Axons, .]]
+
+>> Trigrams: 
+[[connected, thousand, cells], [thousand, cells, Axons], [cells, Axons, .]]
+
+>> Noun Phrases are: 
+[They, other thousand cells, Axons]
+
+>> Named Entities are: 
+[('thousand', 'CARDINAL'), ('Axons', 'ORG')]
+
+
+============================ Sentence 8 =============================
+
+Stimuli from external environment or inputs from sensory organs are accepted by dendrites. 
+
+
+>> Tokens are: 
+[Stimuli, external, environment, inputs, sensory, organs, accepted, dendrites, .] 
+
+>> PoS Tags are: 
+[('Stimuli', 'NOUN'), ('external', 'ADJ'), ('environment', 'NOUN'), ('inputs', 'NOUN'), ('sensory', 'ADJ'), ('organs', 'NOUN'), ('accepted', 'VERB'), ('dendrites', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Stimuli', 'nsubjpass'), ('external', 'amod'), ('environment', 'pobj'), ('inputs', 'conj'), ('sensory', 'amod'), ('organs', 'pobj'), ('accepted', 'ROOT'), ('dendrites', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Stimuli, external], [external, environment], [environment, inputs], [inputs, sensory], [sensory, organs], [organs, accepted], [accepted, dendrites], [dendrites, .]]
+
+>> Trigrams: 
+[[Stimuli, external, environment], [external, environment, inputs], [environment, inputs, sensory], [inputs, sensory, organs], [sensory, organs, accepted], [organs, accepted, dendrites], [accepted, dendrites, .]]
+
+>> Noun Phrases are: 
+[Stimuli, external environment, inputs, sensory organs, dendrites]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+These inputs create electric impulses, which quickly travel through the neural network. 
+
+
+>> Tokens are: 
+[inputs, create, electric, impulses, ,, quickly, travel, neural, network, .] 
+
+>> PoS Tags are: 
+[('inputs', 'NOUN'), ('create', 'VERB'), ('electric', 'ADJ'), ('impulses', 'NOUN'), (',', 'PUNCT'), ('quickly', 'ADV'), ('travel', 'VERB'), ('neural', 'ADJ'), ('network', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('inputs', 'nsubj'), ('create', 'ROOT'), ('electric', 'amod'), ('impulses', 'dobj'), (',', 'punct'), ('quickly', 'advmod'), ('travel', 'relcl'), ('neural', 'amod'), ('network', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[inputs, create], [create, electric], [electric, impulses], [impulses, ,], [,, quickly], [quickly, travel], [travel, neural], [neural, network], [network, .]]
+
+>> Trigrams: 
+[[inputs, create, electric], [create, electric, impulses], [electric, impulses, ,], [impulses, ,, quickly], [,, quickly, travel], [quickly, travel, neural], [travel, neural, network], [neural, network, .]]
+
+>> Noun Phrases are: 
+[These inputs, electric impulses, the neural network]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+A neuron can then send the message to other neuron to handle the issue or does not send it forward. 
+
+
+>> Tokens are: 
+[neuron, send, message, neuron, handle, issue, send, forward, .] 
+
+>> PoS Tags are: 
+[('neuron', 'NOUN'), ('send', 'VERB'), ('message', 'NOUN'), ('neuron', 'NOUN'), ('handle', 'VERB'), ('issue', 'NOUN'), ('send', 'VERB'), ('forward', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('neuron', 'nsubj'), ('send', 'ROOT'), ('message', 'dobj'), ('neuron', 'pobj'), ('handle', 'advcl'), ('issue', 'dobj'), ('send', 'conj'), ('forward', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[neuron, send], [send, message], [message, neuron], [neuron, handle], [handle, issue], [issue, send], [send, forward], [forward, .]]
+
+>> Trigrams: 
+[[neuron, send, message], [send, message, neuron], [message, neuron, handle], [neuron, handle, issue], [handle, issue, send], [issue, send, forward], [send, forward, .]]
+
+>> Noun Phrases are: 
+[A neuron, the message, other neuron, the issue, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 11 =============================
+
+ ANNs are composed of multiple nodes, which imitate biological neurons of human brain. 
+
+
+>> Tokens are: 
+[ , ANNs, composed, multiple, nodes, ,, imitate, biological, neurons, human, brain, .] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('ANNs', 'NOUN'), ('composed', 'VERB'), ('multiple', 'ADJ'), ('nodes', 'NOUN'), (',', 'PUNCT'), ('imitate', 'VERB'), ('biological', 'ADJ'), ('neurons', 'NOUN'), ('human', 'ADJ'), ('brain', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'compound'), ('ANNs', 'nsubjpass'), ('composed', 'ROOT'), ('multiple', 'amod'), ('nodes', 'pobj'), (',', 'punct'), ('imitate', 'relcl'), ('biological', 'amod'), ('neurons', 'dobj'), ('human', 'amod'), ('brain', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ , ANNs], [ANNs, composed], [composed, multiple], [multiple, nodes], [nodes, ,], [,, imitate], [imitate, biological], [biological, neurons], [neurons, human], [human, brain], [brain, .]]
+
+>> Trigrams: 
+[[ , ANNs, composed], [ANNs, composed, multiple], [composed, multiple, nodes], [multiple, nodes, ,], [nodes, ,, imitate], [,, imitate, biological], [imitate, biological, neurons], [biological, neurons, human], [neurons, human, brain], [human, brain, .]]
+
+>> Noun Phrases are: 
+[ ANNs, multiple nodes, biological neurons, human brain]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+The neurons are connected by links and they interact with each other. 
+
+
+>> Tokens are: 
+[neurons, connected, links, interact, .] 
+
+>> PoS Tags are: 
+[('neurons', 'NOUN'), ('connected', 'VERB'), ('links', 'NOUN'), ('interact', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('neurons', 'nsubjpass'), ('connected', 'ROOT'), ('links', 'pobj'), ('interact', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[neurons, connected], [connected, links], [links, interact], [interact, .]]
+
+>> Trigrams: 
+[[neurons, connected, links], [connected, links, interact], [links, interact, .]]
+
+>> Noun Phrases are: 
+[The neurons, links, they]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 13 =============================
+
+The nodes can take input data and perform simple operations on the data. 
+
+
+>> Tokens are: 
+[nodes, input, data, perform, simple, operations, data, .] 
+
+>> PoS Tags are: 
+[('nodes', 'NOUN'), ('input', 'NOUN'), ('data', 'NOUN'), ('perform', 'VERB'), ('simple', 'ADJ'), ('operations', 'NOUN'), ('data', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('nodes', 'nsubj'), ('input', 'compound'), ('data', 'dobj'), ('perform', 'conj'), ('simple', 'amod'), ('operations', 'dobj'), ('data', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[nodes, input], [input, data], [data, perform], [perform, simple], [simple, operations], [operations, data], [data, .]]
+
+>> Trigrams: 
+[[nodes, input, data], [input, data, perform], [data, perform, simple], [perform, simple, operations], [simple, operations, data], [operations, data, .]]
+
+>> Noun Phrases are: 
+[The nodes, input data, simple operations, the data]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+The result of these operations is passed to other neurons. 
+
+
+>> Tokens are: 
+[result, operations, passed, neurons, .] 
+
+>> PoS Tags are: 
+[('result', 'NOUN'), ('operations', 'NOUN'), ('passed', 'VERB'), ('neurons', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('result', 'nsubjpass'), ('operations', 'pobj'), ('passed', 'ROOT'), ('neurons', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[result, operations], [operations, passed], [passed, neurons], [neurons, .]]
+
+>> Trigrams: 
+[[result, operations, passed], [operations, passed, neurons], [passed, neurons, .]]
+
+>> Noun Phrases are: 
+[The result, these operations, other neurons]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+The output at each node is called its activation or node value. 
+
+
+>> Tokens are: 
+[output, node, called, activation, node, value, .] 
+
+>> PoS Tags are: 
+[('output', 'NOUN'), ('node', 'NOUN'), ('called', 'VERB'), ('activation', 'NOUN'), ('node', 'NOUN'), ('value', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('output', 'nsubjpass'), ('node', 'pobj'), ('called', 'ROOT'), ('activation', 'oprd'), ('node', 'compound'), ('value', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[output, node], [node, called], [called, activation], [activation, node], [node, value], [value, .]]
+
+>> Trigrams: 
+[[output, node, called], [node, called, activation], [called, activation, node], [activation, node, value], [node, value, .]]
+
+>> Noun Phrases are: 
+[The output, each node, its activation, node value]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+Each link is associated with weight. 
+
+
+>> Tokens are: 
+[link, associated, weight, .] 
+
+>> PoS Tags are: 
+[('link', 'NOUN'), ('associated', 'VERB'), ('weight', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('link', 'nsubjpass'), ('associated', 'ROOT'), ('weight', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[link, associated], [associated, weight], [weight, .]]
+
+>> Trigrams: 
+[[link, associated, weight], [associated, weight, .]]
+
+>> Noun Phrases are: 
+[Each link, weight]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+ANNs are capable of learning, which takes place by altering weight values. 
+
+
+>> Tokens are: 
+[ANNs, capable, learning, ,, takes, place, altering, weight, values, .] 
+
+>> PoS Tags are: 
+[('ANNs', 'NOUN'), ('capable', 'ADJ'), ('learning', 'NOUN'), (',', 'PUNCT'), ('takes', 'VERB'), ('place', 'NOUN'), ('altering', 'VERB'), ('weight', 'NOUN'), ('values', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ANNs', 'nsubj'), ('capable', 'acomp'), ('learning', 'pobj'), (',', 'punct'), ('takes', 'relcl'), ('place', 'dobj'), ('altering', 'pcomp'), ('weight', 'compound'), ('values', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ANNs, capable], [capable, learning], [learning, ,], [,, takes], [takes, place], [place, altering], [altering, weight], [weight, values], [values, .]]
+
+>> Trigrams: 
+[[ANNs, capable, learning], [capable, learning, ,], [learning, ,, takes], [,, takes, place], [takes, place, altering], [place, altering, weight], [altering, weight, values], [weight, values, .]]
+
+>> Noun Phrases are: 
+[ANNs, learning, place, weight values]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 18 =============================
+
+The following illustration shows a simple ANN −   
+
+
+>> Tokens are: 
+[following, illustration, shows, simple, ANN, −,  ] 
+
+>> PoS Tags are: 
+[('following', 'ADJ'), ('illustration', 'NOUN'), ('shows', 'VERB'), ('simple', 'ADJ'), ('ANN', 'PROPN'), ('−', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('following', 'amod'), ('illustration', 'nsubj'), ('shows', 'ROOT'), ('simple', 'amod'), ('ANN', 'compound'), ('−', 'dobj'), (' ', 'punct')]
+
+>> Bigrams: 
+[[following, illustration], [illustration, shows], [shows, simple], [simple, ANN], [ANN, −], [−,  ]]
+
+>> Trigrams: 
+[[following, illustration, shows], [illustration, shows, simple], [shows, simple, ANN], [simple, ANN, −], [ANN, −,  ]]
+
+>> Noun Phrases are: 
+[The following illustration, a simple ANN −]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+Types of Artificial Neural Networks There are two Artificial Neural Network topologies − FeedForward and Feedback. 
+
+
+>> Tokens are: 
+[Types, Artificial, Neural, Networks, Artificial, Neural, Network, topologies, −, FeedForward, Feedback, .] 
+
+>> PoS Tags are: 
+[('Types', 'PROPN'), ('Artificial', 'PROPN'), ('Neural', 'PROPN'), ('Networks', 'PROPN'), ('Artificial', 'PROPN'), ('Neural', 'PROPN'), ('Network', 'PROPN'), ('topologies', 'VERB'), ('−', 'PROPN'), ('FeedForward', 'PROPN'), ('Feedback', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Types', 'npadvmod'), ('Artificial', 'compound'), ('Neural', 'compound'), ('Networks', 'pobj'), ('Artificial', 'compound'), ('Neural', 'compound'), ('Network', 'nsubj'), ('topologies', 'attr'), ('−', 'compound'), ('FeedForward', 'dobj'), ('Feedback', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Types, Artificial], [Artificial, Neural], [Neural, Networks], [Networks, Artificial], [Artificial, Neural], [Neural, Network], [Network, topologies], [topologies, −], [−, FeedForward], [FeedForward, Feedback], [Feedback, .]]
+
+>> Trigrams: 
+[[Types, Artificial, Neural], [Artificial, Neural, Networks], [Neural, Networks, Artificial], [Networks, Artificial, Neural], [Artificial, Neural, Network], [Neural, Network, topologies], [Network, topologies, −], [topologies, −, FeedForward], [−, FeedForward, Feedback], [FeedForward, Feedback, .]]
+
+>> Noun Phrases are: 
+[Artificial Neural Networks, two Artificial Neural Network, − FeedForward, Feedback]
+
+>> Named Entities are: 
+[('two', 'CARDINAL'), ('Artificial Neural Network', 'ORG'), ('− FeedForward', 'ORG'), ('Feedback', 'ORG')]
+
+
+============================ Sentence 20 =============================
+
+FeedForward ANN 
+
+
+>> Tokens are: 
+[FeedForward, ANN] 
+
+>> PoS Tags are: 
+[('FeedForward', 'PROPN'), ('ANN', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('FeedForward', 'compound'), ('ANN', 'ROOT')]
+
+>> Bigrams: 
+[[FeedForward, ANN]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[FeedForward ANN]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+In this ANN, the information flow is unidirectional. 
+
+
+>> Tokens are: 
+[ANN, ,, information, flow, unidirectional, .] 
+
+>> PoS Tags are: 
+[('ANN', 'PROPN'), (',', 'PUNCT'), ('information', 'NOUN'), ('flow', 'NOUN'), ('unidirectional', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ANN', 'pobj'), (',', 'punct'), ('information', 'compound'), ('flow', 'nsubj'), ('unidirectional', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ANN, ,], [,, information], [information, flow], [flow, unidirectional], [unidirectional, .]]
+
+>> Trigrams: 
+[[ANN, ,, information], [,, information, flow], [information, flow, unidirectional], [flow, unidirectional, .]]
+
+>> Noun Phrases are: 
+[this ANN, the information flow]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 22 =============================
+
+A unit sends information to other unit from which it does not receive any information. 
+
+
+>> Tokens are: 
+[unit, sends, information, unit, receive, information, .] 
+
+>> PoS Tags are: 
+[('unit', 'NOUN'), ('sends', 'VERB'), ('information', 'NOUN'), ('unit', 'NOUN'), ('receive', 'VERB'), ('information', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('unit', 'nsubj'), ('sends', 'ROOT'), ('information', 'dobj'), ('unit', 'pobj'), ('receive', 'relcl'), ('information', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[unit, sends], [sends, information], [information, unit], [unit, receive], [receive, information], [information, .]]
+
+>> Trigrams: 
+[[unit, sends, information], [sends, information, unit], [information, unit, receive], [unit, receive, information], [receive, information, .]]
+
+>> Noun Phrases are: 
+[A unit, information, other unit, it, any information]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+There are no feedback loops. 
+
+
+>> Tokens are: 
+[feedback, loops, .] 
+
+>> PoS Tags are: 
+[('feedback', 'NOUN'), ('loops', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('feedback', 'compound'), ('loops', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[feedback, loops], [loops, .]]
+
+>> Trigrams: 
+[[feedback, loops, .]]
+
+>> Noun Phrases are: 
+[no feedback loops]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 24 =============================
+
+They are used in pattern generation/recognition/classification. 
+
+
+>> Tokens are: 
+[pattern, generation, /, recognition, /, classification, .] 
+
+>> PoS Tags are: 
+[('pattern', 'NOUN'), ('generation', 'NOUN'), ('/', 'SYM'), ('recognition', 'NOUN'), ('/', 'SYM'), ('classification', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('pattern', 'nmod'), ('generation', 'nmod'), ('/', 'punct'), ('recognition', 'nmod'), ('/', 'punct'), ('classification', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[pattern, generation], [generation, /], [/, recognition], [recognition, /], [/, classification], [classification, .]]
+
+>> Trigrams: 
+[[pattern, generation, /], [generation, /, recognition], [/, recognition, /], [recognition, /, classification], [/, classification, .]]
+
+>> Noun Phrases are: 
+[They, pattern generation/recognition/classification]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+They have fixed inputs and outputs. 
+
+
+>> Tokens are: 
+[fixed, inputs, outputs, .] 
+
+>> PoS Tags are: 
+[('fixed', 'VERB'), ('inputs', 'NOUN'), ('outputs', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('fixed', 'ROOT'), ('inputs', 'dobj'), ('outputs', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[fixed, inputs], [inputs, outputs], [outputs, .]]
+
+>> Trigrams: 
+[[fixed, inputs, outputs], [inputs, outputs, .]]
+
+>> Noun Phrases are: 
+[They, inputs, outputs]
+
+>> Named Entities are: 
+[]

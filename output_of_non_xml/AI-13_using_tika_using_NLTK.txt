@@ -1,0 +1,295 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-13  Expert systems (ES) are one of the prominent research domains of AI. 
+
+
+>> Tokens are: 
+ ['AI-13', 'Expert', 'systems', '(', 'ES', ')', 'one', 'prominent', 'research', 'domains', 'AI', '.']
+
+>> Bigrams are: 
+ [('AI-13', 'Expert'), ('Expert', 'systems'), ('systems', '('), ('(', 'ES'), ('ES', ')'), (')', 'one'), ('one', 'prominent'), ('prominent', 'research'), ('research', 'domains'), ('domains', 'AI'), ('AI', '.')]
+
+>> Trigrams are: 
+ [('AI-13', 'Expert', 'systems'), ('Expert', 'systems', '('), ('systems', '(', 'ES'), ('(', 'ES', ')'), ('ES', ')', 'one'), (')', 'one', 'prominent'), ('one', 'prominent', 'research'), ('prominent', 'research', 'domains'), ('research', 'domains', 'AI'), ('domains', 'AI', '.')]
+
+>> POS Tags are: 
+ [('AI-13', 'NNP'), ('Expert', 'NNP'), ('systems', 'NNS'), ('(', '('), ('ES', 'NNP'), (')', ')'), ('one', 'CD'), ('prominent', 'JJ'), ('research', 'NN'), ('domains', 'VBZ'), ('AI', 'NNP'), ('.', '.')]
+
+ (S
+  (NP AI-13/NNP Expert/NNP systems/NNS)
+  (/(
+  (NP ES/NNP)
+  )/)
+  one/CD
+  (NP prominent/JJ research/NN)
+  domains/VBZ
+  (NP AI/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-13 Expert systems', 'ES', 'prominent research', 'AI']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-13', 'ai-13'), ('Expert', 'expert'), ('systems', 'system'), ('(', '('), ('ES', 'es'), (')', ')'), ('one', 'one'), ('prominent', 'promin'), ('research', 'research'), ('domains', 'domain'), ('AI', 'ai'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-13', 'ai-13'), ('Expert', 'expert'), ('systems', 'system'), ('(', '('), ('ES', 'es'), (')', ')'), ('one', 'one'), ('prominent', 'promin'), ('research', 'research'), ('domains', 'domain'), ('AI', 'ai'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-13', 'AI-13'), ('Expert', 'Expert'), ('systems', 'system'), ('(', '('), ('ES', 'ES'), (')', ')'), ('one', 'one'), ('prominent', 'prominent'), ('research', 'research'), ('domains', 'domain'), ('AI', 'AI'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+It is introduced by the researchers at Stanford University, Computer Science Department. 
+
+
+>> Tokens are: 
+ ['It', 'introduced', 'researchers', 'Stanford', 'University', ',', 'Computer', 'Science', 'Department', '.']
+
+>> Bigrams are: 
+ [('It', 'introduced'), ('introduced', 'researchers'), ('researchers', 'Stanford'), ('Stanford', 'University'), ('University', ','), (',', 'Computer'), ('Computer', 'Science'), ('Science', 'Department'), ('Department', '.')]
+
+>> Trigrams are: 
+ [('It', 'introduced', 'researchers'), ('introduced', 'researchers', 'Stanford'), ('researchers', 'Stanford', 'University'), ('Stanford', 'University', ','), ('University', ',', 'Computer'), (',', 'Computer', 'Science'), ('Computer', 'Science', 'Department'), ('Science', 'Department', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('introduced', 'VBD'), ('researchers', 'NNS'), ('Stanford', 'NNP'), ('University', 'NNP'), (',', ','), ('Computer', 'NNP'), ('Science', 'NNP'), ('Department', 'NNP'), ('.', '.')]
+
+ (S
+  It/PRP
+  introduced/VBD
+  (NP researchers/NNS Stanford/NNP University/NNP)
+  ,/,
+  (NP Computer/NNP Science/NNP Department/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['researchers Stanford University', 'Computer Science Department']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Stanford University'), ('ORGANIZATION', 'Computer Science Department')] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('introduced', 'introduc'), ('researchers', 'research'), ('Stanford', 'stanford'), ('University', 'univers'), (',', ','), ('Computer', 'comput'), ('Science', 'scienc'), ('Department', 'depart'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('introduced', 'introduc'), ('researchers', 'research'), ('Stanford', 'stanford'), ('University', 'univers'), (',', ','), ('Computer', 'comput'), ('Science', 'scienc'), ('Department', 'depart'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('introduced', 'introduced'), ('researchers', 'researcher'), ('Stanford', 'Stanford'), ('University', 'University'), (',', ','), ('Computer', 'Computer'), ('Science', 'Science'), ('Department', 'Department'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+What are Expert Systems? 
+
+
+>> Tokens are: 
+ ['What', 'Expert', 'Systems', '?']
+
+>> Bigrams are: 
+ [('What', 'Expert'), ('Expert', 'Systems'), ('Systems', '?')]
+
+>> Trigrams are: 
+ [('What', 'Expert', 'Systems'), ('Expert', 'Systems', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Expert', 'NNP'), ('Systems', 'NNPS'), ('?', '.')]
+
+ (S What/WP (NP Expert/NNP) Systems/NNPS ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Expert']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Expert Systems')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Expert', 'expert'), ('Systems', 'system'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Expert', 'expert'), ('Systems', 'system'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Expert', 'Expert'), ('Systems', 'Systems'), ('?', '?')]
+
+
+
+============================ Sentence 4 =============================
+
+The expert systems are the computer applications developed to solve complex problems in a particular domain, at the level of extra-ordinary human intelligence and expertise. 
+
+
+>> Tokens are: 
+ ['The', 'expert', 'systems', 'computer', 'applications', 'developed', 'solve', 'complex', 'problems', 'particular', 'domain', ',', 'level', 'extra-ordinary', 'human', 'intelligence', 'expertise', '.']
+
+>> Bigrams are: 
+ [('The', 'expert'), ('expert', 'systems'), ('systems', 'computer'), ('computer', 'applications'), ('applications', 'developed'), ('developed', 'solve'), ('solve', 'complex'), ('complex', 'problems'), ('problems', 'particular'), ('particular', 'domain'), ('domain', ','), (',', 'level'), ('level', 'extra-ordinary'), ('extra-ordinary', 'human'), ('human', 'intelligence'), ('intelligence', 'expertise'), ('expertise', '.')]
+
+>> Trigrams are: 
+ [('The', 'expert', 'systems'), ('expert', 'systems', 'computer'), ('systems', 'computer', 'applications'), ('computer', 'applications', 'developed'), ('applications', 'developed', 'solve'), ('developed', 'solve', 'complex'), ('solve', 'complex', 'problems'), ('complex', 'problems', 'particular'), ('problems', 'particular', 'domain'), ('particular', 'domain', ','), ('domain', ',', 'level'), (',', 'level', 'extra-ordinary'), ('level', 'extra-ordinary', 'human'), ('extra-ordinary', 'human', 'intelligence'), ('human', 'intelligence', 'expertise'), ('intelligence', 'expertise', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('expert', 'NN'), ('systems', 'NNS'), ('computer', 'NN'), ('applications', 'NNS'), ('developed', 'VBD'), ('solve', 'VB'), ('complex', 'JJ'), ('problems', 'NNS'), ('particular', 'JJ'), ('domain', 'NN'), (',', ','), ('level', 'JJ'), ('extra-ordinary', 'JJ'), ('human', 'JJ'), ('intelligence', 'NN'), ('expertise', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT expert/NN systems/NNS computer/NN applications/NNS)
+  developed/VBD
+  solve/VB
+  (NP complex/JJ problems/NNS)
+  (NP particular/JJ domain/NN)
+  ,/,
+  (NP
+    level/JJ
+    extra-ordinary/JJ
+    human/JJ
+    intelligence/NN
+    expertise/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The expert systems computer applications', 'complex problems', 'particular domain', 'level extra-ordinary human intelligence expertise']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('expert', 'expert'), ('systems', 'system'), ('computer', 'comput'), ('applications', 'applic'), ('developed', 'develop'), ('solve', 'solv'), ('complex', 'complex'), ('problems', 'problem'), ('particular', 'particular'), ('domain', 'domain'), (',', ','), ('level', 'level'), ('extra-ordinary', 'extra-ordinari'), ('human', 'human'), ('intelligence', 'intellig'), ('expertise', 'expertis'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('expert', 'expert'), ('systems', 'system'), ('computer', 'comput'), ('applications', 'applic'), ('developed', 'develop'), ('solve', 'solv'), ('complex', 'complex'), ('problems', 'problem'), ('particular', 'particular'), ('domain', 'domain'), (',', ','), ('level', 'level'), ('extra-ordinary', 'extra-ordinari'), ('human', 'human'), ('intelligence', 'intellig'), ('expertise', 'expertis'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('expert', 'expert'), ('systems', 'system'), ('computer', 'computer'), ('applications', 'application'), ('developed', 'developed'), ('solve', 'solve'), ('complex', 'complex'), ('problems', 'problem'), ('particular', 'particular'), ('domain', 'domain'), (',', ','), ('level', 'level'), ('extra-ordinary', 'extra-ordinary'), ('human', 'human'), ('intelligence', 'intelligence'), ('expertise', 'expertise'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+Characteristics of Expert Systems · High performance · Understandable · Reliable · Highly responsive Capabilities of Expert Systems The expert systems are capable of − · Advising · Instructing and assisting human in decision making · Demonstrating · Deriving a solution · Diagnosing · Explaining · Interpreting input · Predicting results · Justifying the conclusion · Suggesting alternative options to a problem They are incapable of − · Substituting human decision makers · Possessing human capabilities · Producing accurate output for inadequate knowledge base · Refining their own knowledge Components of Expert Systems The components of ES include − · Knowledge Base · Inference Engine · User Interface Let us see them one by one briefly − 
+
+
+>> Tokens are: 
+ ['Characteristics', 'Expert', 'Systems', '·', 'High', 'performance', '·', 'Understandable', '·', 'Reliable', '·', 'Highly', 'responsive', 'Capabilities', 'Expert', 'Systems', 'The', 'expert', 'systems', 'capable', '−', '·', 'Advising', '·', 'Instructing', 'assisting', 'human', 'decision', 'making', '·', 'Demonstrating', '·', 'Deriving', 'solution', '·', 'Diagnosing', '·', 'Explaining', '·', 'Interpreting', 'input', '·', 'Predicting', 'results', '·', 'Justifying', 'conclusion', '·', 'Suggesting', 'alternative', 'options', 'problem', 'They', 'incapable', '−', '·', 'Substituting', 'human', 'decision', 'makers', '·', 'Possessing', 'human', 'capabilities', '·', 'Producing', 'accurate', 'output', 'inadequate', 'knowledge', 'base', '·', 'Refining', 'knowledge', 'Components', 'Expert', 'Systems', 'The', 'components', 'ES', 'include', '−', '·', 'Knowledge', 'Base', '·', 'Inference', 'Engine', '·', 'User', 'Interface', 'Let', 'us', 'see', 'one', 'one', 'briefly', '−']
+
+>> Bigrams are: 
+ [('Characteristics', 'Expert'), ('Expert', 'Systems'), ('Systems', '·'), ('·', 'High'), ('High', 'performance'), ('performance', '·'), ('·', 'Understandable'), ('Understandable', '·'), ('·', 'Reliable'), ('Reliable', '·'), ('·', 'Highly'), ('Highly', 'responsive'), ('responsive', 'Capabilities'), ('Capabilities', 'Expert'), ('Expert', 'Systems'), ('Systems', 'The'), ('The', 'expert'), ('expert', 'systems'), ('systems', 'capable'), ('capable', '−'), ('−', '·'), ('·', 'Advising'), ('Advising', '·'), ('·', 'Instructing'), ('Instructing', 'assisting'), ('assisting', 'human'), ('human', 'decision'), ('decision', 'making'), ('making', '·'), ('·', 'Demonstrating'), ('Demonstrating', '·'), ('·', 'Deriving'), ('Deriving', 'solution'), ('solution', '·'), ('·', 'Diagnosing'), ('Diagnosing', '·'), ('·', 'Explaining'), ('Explaining', '·'), ('·', 'Interpreting'), ('Interpreting', 'input'), ('input', '·'), ('·', 'Predicting'), ('Predicting', 'results'), ('results', '·'), ('·', 'Justifying'), ('Justifying', 'conclusion'), ('conclusion', '·'), ('·', 'Suggesting'), ('Suggesting', 'alternative'), ('alternative', 'options'), ('options', 'problem'), ('problem', 'They'), ('They', 'incapable'), ('incapable', '−'), ('−', '·'), ('·', 'Substituting'), ('Substituting', 'human'), ('human', 'decision'), ('decision', 'makers'), ('makers', '·'), ('·', 'Possessing'), ('Possessing', 'human'), ('human', 'capabilities'), ('capabilities', '·'), ('·', 'Producing'), ('Producing', 'accurate'), ('accurate', 'output'), ('output', 'inadequate'), ('inadequate', 'knowledge'), ('knowledge', 'base'), ('base', '·'), ('·', 'Refining'), ('Refining', 'knowledge'), ('knowledge', 'Components'), ('Components', 'Expert'), ('Expert', 'Systems'), ('Systems', 'The'), ('The', 'components'), ('components', 'ES'), ('ES', 'include'), ('include', '−'), ('−', '·'), ('·', 'Knowledge'), ('Knowledge', 'Base'), ('Base', '·'), ('·', 'Inference'), ('Inference', 'Engine'), ('Engine', '·'), ('·', 'User'), ('User', 'Interface'), ('Interface', 'Let'), ('Let', 'us'), ('us', 'see'), ('see', 'one'), ('one', 'one'), ('one', 'briefly'), ('briefly', '−')]
+
+>> Trigrams are: 
+ [('Characteristics', 'Expert', 'Systems'), ('Expert', 'Systems', '·'), ('Systems', '·', 'High'), ('·', 'High', 'performance'), ('High', 'performance', '·'), ('performance', '·', 'Understandable'), ('·', 'Understandable', '·'), ('Understandable', '·', 'Reliable'), ('·', 'Reliable', '·'), ('Reliable', '·', 'Highly'), ('·', 'Highly', 'responsive'), ('Highly', 'responsive', 'Capabilities'), ('responsive', 'Capabilities', 'Expert'), ('Capabilities', 'Expert', 'Systems'), ('Expert', 'Systems', 'The'), ('Systems', 'The', 'expert'), ('The', 'expert', 'systems'), ('expert', 'systems', 'capable'), ('systems', 'capable', '−'), ('capable', '−', '·'), ('−', '·', 'Advising'), ('·', 'Advising', '·'), ('Advising', '·', 'Instructing'), ('·', 'Instructing', 'assisting'), ('Instructing', 'assisting', 'human'), ('assisting', 'human', 'decision'), ('human', 'decision', 'making'), ('decision', 'making', '·'), ('making', '·', 'Demonstrating'), ('·', 'Demonstrating', '·'), ('Demonstrating', '·', 'Deriving'), ('·', 'Deriving', 'solution'), ('Deriving', 'solution', '·'), ('solution', '·', 'Diagnosing'), ('·', 'Diagnosing', '·'), ('Diagnosing', '·', 'Explaining'), ('·', 'Explaining', '·'), ('Explaining', '·', 'Interpreting'), ('·', 'Interpreting', 'input'), ('Interpreting', 'input', '·'), ('input', '·', 'Predicting'), ('·', 'Predicting', 'results'), ('Predicting', 'results', '·'), ('results', '·', 'Justifying'), ('·', 'Justifying', 'conclusion'), ('Justifying', 'conclusion', '·'), ('conclusion', '·', 'Suggesting'), ('·', 'Suggesting', 'alternative'), ('Suggesting', 'alternative', 'options'), ('alternative', 'options', 'problem'), ('options', 'problem', 'They'), ('problem', 'They', 'incapable'), ('They', 'incapable', '−'), ('incapable', '−', '·'), ('−', '·', 'Substituting'), ('·', 'Substituting', 'human'), ('Substituting', 'human', 'decision'), ('human', 'decision', 'makers'), ('decision', 'makers', '·'), ('makers', '·', 'Possessing'), ('·', 'Possessing', 'human'), ('Possessing', 'human', 'capabilities'), ('human', 'capabilities', '·'), ('capabilities', '·', 'Producing'), ('·', 'Producing', 'accurate'), ('Producing', 'accurate', 'output'), ('accurate', 'output', 'inadequate'), ('output', 'inadequate', 'knowledge'), ('inadequate', 'knowledge', 'base'), ('knowledge', 'base', '·'), ('base', '·', 'Refining'), ('·', 'Refining', 'knowledge'), ('Refining', 'knowledge', 'Components'), ('knowledge', 'Components', 'Expert'), ('Components', 'Expert', 'Systems'), ('Expert', 'Systems', 'The'), ('Systems', 'The', 'components'), ('The', 'components', 'ES'), ('components', 'ES', 'include'), ('ES', 'include', '−'), ('include', '−', '·'), ('−', '·', 'Knowledge'), ('·', 'Knowledge', 'Base'), ('Knowledge', 'Base', '·'), ('Base', '·', 'Inference'), ('·', 'Inference', 'Engine'), ('Inference', 'Engine', '·'), ('Engine', '·', 'User'), ('·', 'User', 'Interface'), ('User', 'Interface', 'Let'), ('Interface', 'Let', 'us'), ('Let', 'us', 'see'), ('us', 'see', 'one'), ('see', 'one', 'one'), ('one', 'one', 'briefly'), ('one', 'briefly', '−')]
+
+>> POS Tags are: 
+ [('Characteristics', 'NNP'), ('Expert', 'NNP'), ('Systems', 'NNP'), ('·', 'NNP'), ('High', 'NNP'), ('performance', 'NN'), ('·', 'NNP'), ('Understandable', 'NNP'), ('·', 'NNP'), ('Reliable', 'NNP'), ('·', 'NNP'), ('Highly', 'NNP'), ('responsive', 'JJ'), ('Capabilities', 'NNP'), ('Expert', 'NNP'), ('Systems', 'NNPS'), ('The', 'DT'), ('expert', 'JJ'), ('systems', 'NNS'), ('capable', 'JJ'), ('−', 'JJ'), ('·', 'NN'), ('Advising', 'NNP'), ('·', 'NNP'), ('Instructing', 'NNP'), ('assisting', 'VBG'), ('human', 'JJ'), ('decision', 'NN'), ('making', 'VBG'), ('·', 'JJ'), ('Demonstrating', 'NNP'), ('·', 'NNP'), ('Deriving', 'NNP'), ('solution', 'NN'), ('·', 'NNP'), ('Diagnosing', 'NNP'), ('·', 'NNP'), ('Explaining', 'NNP'), ('·', 'NNP'), ('Interpreting', 'NNP'), ('input', 'NN'), ('·', 'NNP'), ('Predicting', 'NNP'), ('results', 'NNS'), ('·', 'VBD'), ('Justifying', 'VBG'), ('conclusion', 'NN'), ('·', 'IN'), ('Suggesting', 'VBG'), ('alternative', 'JJ'), ('options', 'NNS'), ('problem', 'NN'), ('They', 'PRP'), ('incapable', 'VBP'), ('−', 'JJ'), ('·', 'NNP'), ('Substituting', 'NNP'), ('human', 'JJ'), ('decision', 'NN'), ('makers', 'NNS'), ('·', 'VBP'), ('Possessing', 'VBG'), ('human', 'JJ'), ('capabilities', 'NNS'), ('·', 'VBP'), ('Producing', 'VBG'), ('accurate', 'NN'), ('output', 'NN'), ('inadequate', 'JJ'), ('knowledge', 'NN'), ('base', 'NN'), ('·', 'NNP'), ('Refining', 'NNP'), ('knowledge', 'NN'), ('Components', 'NNP'), ('Expert', 'NNP'), ('Systems', 'NNPS'), ('The', 'DT'), ('components', 'NNS'), ('ES', 'NNP'), ('include', 'VBP'), ('−', 'NNP'), ('·', 'NNP'), ('Knowledge', 'NNP'), ('Base', 'NNP'), ('·', 'NNP'), ('Inference', 'NNP'), ('Engine', 'NNP'), ('·', 'NNP'), ('User', 'NNP'), ('Interface', 'NNP'), ('Let', 'NNP'), ('us', 'PRP'), ('see', 'VB'), ('one', 'CD'), ('one', 'CD'), ('briefly', 'NN'), ('−', 'NN')]
+
+ (S
+  (NP
+    Characteristics/NNP
+    Expert/NNP
+    Systems/NNP
+    ·/NNP
+    High/NNP
+    performance/NN
+    ·/NNP
+    Understandable/NNP
+    ·/NNP
+    Reliable/NNP
+    ·/NNP
+    Highly/NNP)
+  (NP responsive/JJ Capabilities/NNP Expert/NNP)
+  Systems/NNPS
+  (NP The/DT expert/JJ systems/NNS)
+  (NP capable/JJ −/JJ ·/NN Advising/NNP ·/NNP Instructing/NNP)
+  assisting/VBG
+  (NP human/JJ decision/NN)
+  making/VBG
+  (NP
+    ·/JJ
+    Demonstrating/NNP
+    ·/NNP
+    Deriving/NNP
+    solution/NN
+    ·/NNP
+    Diagnosing/NNP
+    ·/NNP
+    Explaining/NNP
+    ·/NNP
+    Interpreting/NNP
+    input/NN
+    ·/NNP
+    Predicting/NNP
+    results/NNS)
+  ·/VBD
+  Justifying/VBG
+  (NP conclusion/NN)
+  ·/IN
+  Suggesting/VBG
+  (NP alternative/JJ options/NNS problem/NN)
+  They/PRP
+  incapable/VBP
+  (NP −/JJ ·/NNP Substituting/NNP)
+  (NP human/JJ decision/NN makers/NNS)
+  ·/VBP
+  Possessing/VBG
+  (NP human/JJ capabilities/NNS)
+  ·/VBP
+  Producing/VBG
+  (NP accurate/NN output/NN)
+  (NP
+    inadequate/JJ
+    knowledge/NN
+    base/NN
+    ·/NNP
+    Refining/NNP
+    knowledge/NN
+    Components/NNP
+    Expert/NNP)
+  Systems/NNPS
+  (NP The/DT components/NNS ES/NNP)
+  include/VBP
+  (NP
+    −/NNP
+    ·/NNP
+    Knowledge/NNP
+    Base/NNP
+    ·/NNP
+    Inference/NNP
+    Engine/NNP
+    ·/NNP
+    User/NNP
+    Interface/NNP
+    Let/NNP)
+  us/PRP
+  see/VB
+  one/CD
+  one/CD
+  (NP briefly/NN −/NN)) 
+
+
+>> Noun Phrases are: 
+ ['Characteristics Expert Systems · High performance · Understandable · Reliable · Highly', 'responsive Capabilities Expert', 'The expert systems', 'capable − · Advising · Instructing', 'human decision', '· Demonstrating · Deriving solution · Diagnosing · Explaining · Interpreting input · Predicting results', 'conclusion', 'alternative options problem', '− · Substituting', 'human decision makers', 'human capabilities', 'accurate output', 'inadequate knowledge base · Refining knowledge Components Expert', 'The components ES', '− · Knowledge Base · Inference Engine · User Interface Let', 'briefly −']
+
+>> Named Entities are: 
+ [('PERSON', 'Characteristics'), ('PERSON', 'Expert Systems'), ('ORGANIZATION', 'Components Expert Systems'), ('PERSON', 'Engine')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Characteristics', 'characterist'), ('Expert', 'expert'), ('Systems', 'system'), ('·', '·'), ('High', 'high'), ('performance', 'perform'), ('·', '·'), ('Understandable', 'understand'), ('·', '·'), ('Reliable', 'reliabl'), ('·', '·'), ('Highly', 'highli'), ('responsive', 'respons'), ('Capabilities', 'capabl'), ('Expert', 'expert'), ('Systems', 'system'), ('The', 'the'), ('expert', 'expert'), ('systems', 'system'), ('capable', 'capabl'), ('−', '−'), ('·', '·'), ('Advising', 'advis'), ('·', '·'), ('Instructing', 'instruct'), ('assisting', 'assist'), ('human', 'human'), ('decision', 'decis'), ('making', 'make'), ('·', '·'), ('Demonstrating', 'demonstr'), ('·', '·'), ('Deriving', 'deriv'), ('solution', 'solut'), ('·', '·'), ('Diagnosing', 'diagnos'), ('·', '·'), ('Explaining', 'explain'), ('·', '·'), ('Interpreting', 'interpret'), ('input', 'input'), ('·', '·'), ('Predicting', 'predict'), ('results', 'result'), ('·', '·'), ('Justifying', 'justifi'), ('conclusion', 'conclus'), ('·', '·'), ('Suggesting', 'suggest'), ('alternative', 'altern'), ('options', 'option'), ('problem', 'problem'), ('They', 'they'), ('incapable', 'incap'), ('−', '−'), ('·', '·'), ('Substituting', 'substitut'), ('human', 'human'), ('decision', 'decis'), ('makers', 'maker'), ('·', '·'), ('Possessing', 'possess'), ('human', 'human'), ('capabilities', 'capabl'), ('·', '·'), ('Producing', 'produc'), ('accurate', 'accur'), ('output', 'output'), ('inadequate', 'inadequ'), ('knowledge', 'knowledg'), ('base', 'base'), ('·', '·'), ('Refining', 'refin'), ('knowledge', 'knowledg'), ('Components', 'compon'), ('Expert', 'expert'), ('Systems', 'system'), ('The', 'the'), ('components', 'compon'), ('ES', 'es'), ('include', 'includ'), ('−', '−'), ('·', '·'), ('Knowledge', 'knowledg'), ('Base', 'base'), ('·', '·'), ('Inference', 'infer'), ('Engine', 'engin'), ('·', '·'), ('User', 'user'), ('Interface', 'interfac'), ('Let', 'let'), ('us', 'us'), ('see', 'see'), ('one', 'one'), ('one', 'one'), ('briefly', 'briefli'), ('−', '−')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Characteristics', 'characterist'), ('Expert', 'expert'), ('Systems', 'system'), ('·', '·'), ('High', 'high'), ('performance', 'perform'), ('·', '·'), ('Understandable', 'understand'), ('·', '·'), ('Reliable', 'reliabl'), ('·', '·'), ('Highly', 'high'), ('responsive', 'respons'), ('Capabilities', 'capabl'), ('Expert', 'expert'), ('Systems', 'system'), ('The', 'the'), ('expert', 'expert'), ('systems', 'system'), ('capable', 'capabl'), ('−', '−'), ('·', '·'), ('Advising', 'advis'), ('·', '·'), ('Instructing', 'instruct'), ('assisting', 'assist'), ('human', 'human'), ('decision', 'decis'), ('making', 'make'), ('·', '·'), ('Demonstrating', 'demonstr'), ('·', '·'), ('Deriving', 'deriv'), ('solution', 'solut'), ('·', '·'), ('Diagnosing', 'diagnos'), ('·', '·'), ('Explaining', 'explain'), ('·', '·'), ('Interpreting', 'interpret'), ('input', 'input'), ('·', '·'), ('Predicting', 'predict'), ('results', 'result'), ('·', '·'), ('Justifying', 'justifi'), ('conclusion', 'conclus'), ('·', '·'), ('Suggesting', 'suggest'), ('alternative', 'altern'), ('options', 'option'), ('problem', 'problem'), ('They', 'they'), ('incapable', 'incap'), ('−', '−'), ('·', '·'), ('Substituting', 'substitut'), ('human', 'human'), ('decision', 'decis'), ('makers', 'maker'), ('·', '·'), ('Possessing', 'possess'), ('human', 'human'), ('capabilities', 'capabl'), ('·', '·'), ('Producing', 'produc'), ('accurate', 'accur'), ('output', 'output'), ('inadequate', 'inadequ'), ('knowledge', 'knowledg'), ('base', 'base'), ('·', '·'), ('Refining', 'refin'), ('knowledge', 'knowledg'), ('Components', 'compon'), ('Expert', 'expert'), ('Systems', 'system'), ('The', 'the'), ('components', 'compon'), ('ES', 'es'), ('include', 'includ'), ('−', '−'), ('·', '·'), ('Knowledge', 'knowledg'), ('Base', 'base'), ('·', '·'), ('Inference', 'infer'), ('Engine', 'engin'), ('·', '·'), ('User', 'user'), ('Interface', 'interfac'), ('Let', 'let'), ('us', 'us'), ('see', 'see'), ('one', 'one'), ('one', 'one'), ('briefly', 'briefli'), ('−', '−')]
+
+>> Lemmatization: 
+ [('Characteristics', 'Characteristics'), ('Expert', 'Expert'), ('Systems', 'Systems'), ('·', '·'), ('High', 'High'), ('performance', 'performance'), ('·', '·'), ('Understandable', 'Understandable'), ('·', '·'), ('Reliable', 'Reliable'), ('·', '·'), ('Highly', 'Highly'), ('responsive', 'responsive'), ('Capabilities', 'Capabilities'), ('Expert', 'Expert'), ('Systems', 'Systems'), ('The', 'The'), ('expert', 'expert'), ('systems', 'system'), ('capable', 'capable'), ('−', '−'), ('·', '·'), ('Advising', 'Advising'), ('·', '·'), ('Instructing', 'Instructing'), ('assisting', 'assisting'), ('human', 'human'), ('decision', 'decision'), ('making', 'making'), ('·', '·'), ('Demonstrating', 'Demonstrating'), ('·', '·'), ('Deriving', 'Deriving'), ('solution', 'solution'), ('·', '·'), ('Diagnosing', 'Diagnosing'), ('·', '·'), ('Explaining', 'Explaining'), ('·', '·'), ('Interpreting', 'Interpreting'), ('input', 'input'), ('·', '·'), ('Predicting', 'Predicting'), ('results', 'result'), ('·', '·'), ('Justifying', 'Justifying'), ('conclusion', 'conclusion'), ('·', '·'), ('Suggesting', 'Suggesting'), ('alternative', 'alternative'), ('options', 'option'), ('problem', 'problem'), ('They', 'They'), ('incapable', 'incapable'), ('−', '−'), ('·', '·'), ('Substituting', 'Substituting'), ('human', 'human'), ('decision', 'decision'), ('makers', 'maker'), ('·', '·'), ('Possessing', 'Possessing'), ('human', 'human'), ('capabilities', 'capability'), ('·', '·'), ('Producing', 'Producing'), ('accurate', 'accurate'), ('output', 'output'), ('inadequate', 'inadequate'), ('knowledge', 'knowledge'), ('base', 'base'), ('·', '·'), ('Refining', 'Refining'), ('knowledge', 'knowledge'), ('Components', 'Components'), ('Expert', 'Expert'), ('Systems', 'Systems'), ('The', 'The'), ('components', 'component'), ('ES', 'ES'), ('include', 'include'), ('−', '−'), ('·', '·'), ('Knowledge', 'Knowledge'), ('Base', 'Base'), ('·', '·'), ('Inference', 'Inference'), ('Engine', 'Engine'), ('·', '·'), ('User', 'User'), ('Interface', 'Interface'), ('Let', 'Let'), ('us', 'u'), ('see', 'see'), ('one', 'one'), ('one', 'one'), ('briefly', 'briefly'), ('−', '−')]
+

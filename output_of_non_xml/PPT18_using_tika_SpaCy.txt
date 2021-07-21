@@ -1,0 +1,1648 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709) 
+
+
+>> Tokens are: 
+[OOPC++, UNIT-1,   , Prof., Rupesh, G., Vaishnav, rupesh.vaishnav@darshan.ac.in, 94280, -, 37452, Information, &, Network, Security, (, 2170709, )] 
+
+>> PoS Tags are: 
+[('OOPC++', 'INTJ'), ('UNIT-1', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Rupesh', 'PROPN'), ('G.', 'PROPN'), ('Vaishnav', 'PROPN'), ('rupesh.vaishnav@darshan.ac.in', 'NUM'), ('94280', 'NUM'), ('-', 'SYM'), ('37452', 'NUM'), ('Information', 'PROPN'), ('&', 'CCONJ'), ('Network', 'PROPN'), ('Security', 'PROPN'), ('(', 'PUNCT'), ('2170709', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('OOPC++', 'intj'), ('UNIT-1', 'ROOT'), ('  ', 'nummod'), ('Prof.', 'compound'), ('Rupesh', 'compound'), ('G.', 'compound'), ('Vaishnav', 'dobj'), ('rupesh.vaishnav@darshan.ac.in', 'appos'), ('94280', 'nummod'), ('-', 'punct'), ('37452', 'nummod'), ('Information', 'nmod'), ('&', 'cc'), ('Network', 'conj'), ('Security', 'appos'), ('(', 'punct'), ('2170709', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[OOPC++, UNIT-1], [UNIT-1,   ], [  , Prof.], [Prof., Rupesh], [Rupesh, G.], [G., Vaishnav], [Vaishnav, rupesh.vaishnav@darshan.ac.in], [rupesh.vaishnav@darshan.ac.in, 94280], [94280, -], [-, 37452], [37452, Information], [Information, &], [&, Network], [Network, Security], [Security, (], [(, 2170709], [2170709, )]]
+
+>> Trigrams: 
+[[OOPC++, UNIT-1,   ], [UNIT-1,   , Prof.], [  , Prof., Rupesh], [Prof., Rupesh, G.], [Rupesh, G., Vaishnav], [G., Vaishnav, rupesh.vaishnav@darshan.ac.in], [Vaishnav, rupesh.vaishnav@darshan.ac.in, 94280], [rupesh.vaishnav@darshan.ac.in, 94280, -], [94280, -, 37452], [-, 37452, Information], [37452, Information, &], [Information, &, Network], [&, Network, Security], [Network, Security, (], [Security, (, 2170709], [(, 2170709, )]]
+
+>> Noun Phrases are: 
+[OOPC++ UNIT-1,   Prof. Rupesh G. Vaishnav, 94280-37452 Information & Network Security]
+
+>> Named Entities are: 
+[('Rupesh G. Vaishnav', 'PERSON'), ('94280-37452', 'DATE'), ('Information & Network Security', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+	 Darshan Institute of Engineering & Technology UNIT-6 Message Authentication Codes       1  Outline Message Authentication Codes MAC requirements and security MACs based on Hash Functions MACs based on Block Ciphers   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  X.800 and RFC 2828 International Telecommunication Union (ITU) 2  Message Authentication Message authentication is a procedure to verify that received messages come from the genuine source and have not been altered. 
+
+
+>> Tokens are: 
+[	 , Darshan, Institute, Engineering, &, Technology, UNIT-6, Message, Authentication, Codes,       , 1,  , Outline, Message, Authentication, Codes, MAC, requirements, security, MACs, based, Hash, Functions, MACs, based, Block, Ciphers,   , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , X.800, RFC, 2828, International, Telecommunication, Union, (, ITU, ), 2,  , Message, Authentication, Message, authentication, procedure, verify, received, messages, come, genuine, source, altered, .] 
+
+>> PoS Tags are: 
+[('\t ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('UNIT-6', 'PROPN'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('      ', 'SPACE'), ('1', 'NUM'), (' ', 'SPACE'), ('Outline', 'PROPN'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('MAC', 'PROPN'), ('requirements', 'NOUN'), ('security', 'NOUN'), ('MACs', 'NOUN'), ('based', 'VERB'), ('Hash', 'PROPN'), ('Functions', 'PROPN'), ('MACs', 'NOUN'), ('based', 'VERB'), ('Block', 'PROPN'), ('Ciphers', 'PROPN'), ('  ', 'SPACE'), ('Unit-6', 'NOUN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('X.800', 'PROPN'), ('RFC', 'PROPN'), ('2828', 'NUM'), ('International', 'PROPN'), ('Telecommunication', 'PROPN'), ('Union', 'PROPN'), ('(', 'PUNCT'), ('ITU', 'PROPN'), (')', 'PUNCT'), ('2', 'NUM'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Message', 'NOUN'), ('authentication', 'NOUN'), ('procedure', 'NOUN'), ('verify', 'VERB'), ('received', 'VERB'), ('messages', 'NOUN'), ('come', 'VERB'), ('genuine', 'ADJ'), ('source', 'NOUN'), ('altered', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t ', 'dep'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('UNIT-6', 'compound'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'dep'), ('      ', 'appos'), ('1', 'nummod'), (' ', 'appos'), ('Outline', 'compound'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('MAC', 'compound'), ('requirements', 'dobj'), ('security', 'compound'), ('MACs', 'conj'), ('based', 'acl'), ('Hash', 'compound'), ('Functions', 'compound'), ('MACs', 'pobj'), ('based', 'acl'), ('Block', 'compound'), ('Ciphers', 'pobj'), ('  ', 'nmod'), ('Unit-6', 'compound'), (' ', 'punct'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'compound'), ('Darshan', 'compound'), ('Institute', 'nsubj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'appos'), ('Interesting', 'amod'), ('Subject', 'acomp'), (' ', 'prep'), ('X.800', 'appos'), ('RFC', 'npadvmod'), ('2828', 'nummod'), ('International', 'compound'), ('Telecommunication', 'compound'), ('Union', 'appos'), ('(', 'punct'), ('ITU', 'appos'), (')', 'punct'), ('2', 'nummod'), (' ', 'nsubj'), ('Message', 'compound'), ('Authentication', 'compound'), ('Message', 'compound'), ('authentication', 'nsubj'), ('procedure', 'attr'), ('verify', 'relcl'), ('received', 'ccomp'), ('messages', 'nsubj'), ('come', 'ccomp'), ('genuine', 'amod'), ('source', 'pobj'), ('altered', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology, UNIT-6], [UNIT-6, Message], [Message, Authentication], [Authentication, Codes], [Codes,       ], [      , 1], [1,  ], [ , Outline], [Outline, Message], [Message, Authentication], [Authentication, Codes], [Codes, MAC], [MAC, requirements], [requirements, security], [security, MACs], [MACs, based], [based, Hash], [Hash, Functions], [Functions, MACs], [MACs, based], [based, Block], [Block, Ciphers], [Ciphers,   ], [  , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , X.800], [X.800, RFC], [RFC, 2828], [2828, International], [International, Telecommunication], [Telecommunication, Union], [Union, (], [(, ITU], [ITU, )], [), 2], [2,  ], [ , Message], [Message, Authentication], [Authentication, Message], [Message, authentication], [authentication, procedure], [procedure, verify], [verify, received], [received, messages], [messages, come], [come, genuine], [genuine, source], [source, altered], [altered, .]]
+
+>> Trigrams: 
+[[	 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology, UNIT-6], [Technology, UNIT-6, Message], [UNIT-6, Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,       ], [Codes,       , 1], [      , 1,  ], [1,  , Outline], [ , Outline, Message], [Outline, Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes, MAC], [Codes, MAC, requirements], [MAC, requirements, security], [requirements, security, MACs], [security, MACs, based], [MACs, based, Hash], [based, Hash, Functions], [Hash, Functions, MACs], [Functions, MACs, based], [MACs, based, Block], [based, Block, Ciphers], [Block, Ciphers,   ], [Ciphers,   , Unit-6], [  , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , X.800], [ , X.800, RFC], [X.800, RFC, 2828], [RFC, 2828, International], [2828, International, Telecommunication], [International, Telecommunication, Union], [Telecommunication, Union, (], [Union, (, ITU], [(, ITU, )], [ITU, ), 2], [), 2,  ], [2,  , Message], [ , Message, Authentication], [Message, Authentication, Message], [Authentication, Message, authentication], [Message, authentication, procedure], [authentication, procedure, verify], [procedure, verify, received], [verify, received, messages], [received, messages, come], [messages, come, genuine], [come, genuine, source], [genuine, source, altered], [source, altered, .]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, Outline Message Authentication Codes MAC requirements, security MACs, Hash Functions MACs, Block Ciphers, Engineering, Technology, INS, X.800, International Telecommunication Union, (ITU, Message Authentication Message authentication, a procedure, messages, the genuine source]
+
+>> Named Entities are: 
+[('Darshan Institute of Engineering & Technology UNIT-6', 'ORG'), ('1', 'CARDINAL'), ('Outline Message Authentication Codes', 'ORG'), ('MAC', 'ORG'), ('Block Ciphers', 'ORG'), ('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('X.800', 'CARDINAL'), ('2828', 'DATE'), ('ITU', 'ORG'), ('2', 'CARDINAL')]
+
+
+============================ Sentence 3 =============================
+
+ Message authentication may also verify sequencing and timeliness. 
+
+
+>> Tokens are: 
+[ , Message, authentication, verify, sequencing, timeliness, .] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('Message', 'NOUN'), ('authentication', 'NOUN'), ('verify', 'VERB'), ('sequencing', 'NOUN'), ('timeliness', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'compound'), ('Message', 'compound'), ('authentication', 'nsubj'), ('verify', 'ROOT'), ('sequencing', 'dobj'), ('timeliness', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ , Message], [Message, authentication], [authentication, verify], [verify, sequencing], [sequencing, timeliness], [timeliness, .]]
+
+>> Trigrams: 
+[[ , Message, authentication], [Message, authentication, verify], [authentication, verify, sequencing], [verify, sequencing, timeliness], [sequencing, timeliness, .]]
+
+>> Noun Phrases are: 
+[ Message authentication, sequencing, timeliness]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+ Message authentication is a mechanism or service used to verify the integrity of  a message. 
+
+
+>> Tokens are: 
+[ , Message, authentication, mechanism, service, verify, integrity,  , message, .] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('Message', 'NOUN'), ('authentication', 'NOUN'), ('mechanism', 'NOUN'), ('service', 'NOUN'), ('verify', 'VERB'), ('integrity', 'NOUN'), (' ', 'SPACE'), ('message', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'nummod'), ('Message', 'compound'), ('authentication', 'nsubj'), ('mechanism', 'attr'), ('service', 'conj'), ('verify', 'xcomp'), ('integrity', 'dobj'), (' ', 'pobj'), ('message', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ , Message], [Message, authentication], [authentication, mechanism], [mechanism, service], [service, verify], [verify, integrity], [integrity,  ], [ , message], [message, .]]
+
+>> Trigrams: 
+[[ , Message, authentication], [Message, authentication, mechanism], [authentication, mechanism, service], [mechanism, service, verify], [service, verify, integrity], [verify, integrity,  ], [integrity,  , message], [ , message, .]]
+
+>> Noun Phrases are: 
+[ Message authentication, a mechanism, service, the integrity, a message]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 5 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+Message authentication assures that data received are exactly as sent (i.e.--, contain no modification, insertion, deletion, or replay). 
+
+
+>> Tokens are: 
+[Message, authentication, assures, data, received, exactly, sent, (, i.e.--, ,, contain, modification, ,, insertion, ,, deletion, ,, replay, ), .] 
+
+>> PoS Tags are: 
+[('Message', 'NOUN'), ('authentication', 'NOUN'), ('assures', 'VERB'), ('data', 'NOUN'), ('received', 'VERB'), ('exactly', 'ADV'), ('sent', 'VERB'), ('(', 'PUNCT'), ('i.e.--', 'X'), (',', 'PUNCT'), ('contain', 'VERB'), ('modification', 'NOUN'), (',', 'PUNCT'), ('insertion', 'NOUN'), (',', 'PUNCT'), ('deletion', 'NOUN'), (',', 'PUNCT'), ('replay', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Message', 'compound'), ('authentication', 'nsubj'), ('assures', 'ROOT'), ('data', 'nsubj'), ('received', 'acl'), ('exactly', 'advmod'), ('sent', 'acomp'), ('(', 'punct'), ('i.e.--', 'npadvmod'), (',', 'punct'), ('contain', 'conj'), ('modification', 'dobj'), (',', 'punct'), ('insertion', 'conj'), (',', 'punct'), ('deletion', 'conj'), (',', 'punct'), ('replay', 'conj'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Message, authentication], [authentication, assures], [assures, data], [data, received], [received, exactly], [exactly, sent], [sent, (], [(, i.e.--], [i.e.--, ,], [,, contain], [contain, modification], [modification, ,], [,, insertion], [insertion, ,], [,, deletion], [deletion, ,], [,, replay], [replay, )], [), .]]
+
+>> Trigrams: 
+[[Message, authentication, assures], [authentication, assures, data], [assures, data, received], [data, received, exactly], [received, exactly, sent], [exactly, sent, (], [sent, (, i.e.--], [(, i.e.--, ,], [i.e.--, ,, contain], [,, contain, modification], [contain, modification, ,], [modification, ,, insertion], [,, insertion, ,], [insertion, ,, deletion], [,, deletion, ,], [deletion, ,, replay], [,, replay, )], [replay, ), .]]
+
+>> Noun Phrases are: 
+[Message authentication, data, no modification, insertion, deletion, replay]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication Requirements Disclosure: 
+
+
+>> Tokens are: 
+[  , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Message, Authentication, Requirements, Disclosure, :] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-6', 'NOUN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Requirements', 'PROPN'), ('Disclosure', 'NOUN'), (':', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'nmod'), ('Unit-6', 'compound'), (' ', 'nsubj'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'appos'), ('‹#›', 'nsubj'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'prep'), ('Message', 'compound'), ('Authentication', 'compound'), ('Requirements', 'compound'), ('Disclosure', 'attr'), (':', 'punct')]
+
+>> Bigrams: 
+[[  , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Message], [Message, Authentication], [Authentication, Requirements], [Requirements, Disclosure], [Disclosure, :]]
+
+>> Trigrams: 
+[[  , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Message], [ , Message, Authentication], [Message, Authentication, Requirements], [Authentication, Requirements, Disclosure], [Requirements, Disclosure, :]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, Message Authentication Requirements Disclosure]
+
+>> Named Entities are: 
+[('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 8 =============================
+
+Release of message contents Traffic analysis: 
+
+
+>> Tokens are: 
+[Release, message, contents, Traffic, analysis, :] 
+
+>> PoS Tags are: 
+[('Release', 'NOUN'), ('message', 'NOUN'), ('contents', 'NOUN'), ('Traffic', 'NOUN'), ('analysis', 'NOUN'), (':', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Release', 'nsubj'), ('message', 'pobj'), ('contents', 'ROOT'), ('Traffic', 'compound'), ('analysis', 'dobj'), (':', 'punct')]
+
+>> Bigrams: 
+[[Release, message], [message, contents], [contents, Traffic], [Traffic, analysis], [analysis, :]]
+
+>> Trigrams: 
+[[Release, message, contents], [message, contents, Traffic], [contents, Traffic, analysis], [Traffic, analysis, :]]
+
+>> Noun Phrases are: 
+[Release, message, Traffic analysis]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+Discovery of the pattern of traffic between parties Masquerade: Insertion of messages into the network from a fraudulent source Content modification: Changes to the contents of a message Sequence modification: Any modification to a sequence of messages between parties Timing modification: Delay or replay of messages Source repudiation: Denial of transmission of message by source Destination repudiation: Denial of receipt of message by destination  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication Requirements Disclosure Traffic analysis Masquerade Content modification Sequence modification Timing modification Source repudiation Destination repudiation Requires Message Confidentiality Requires Message Authentication Requires Digital Signature  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Message Authentication Code 
+
+
+>> Tokens are: 
+[Discovery, pattern, traffic, parties, Masquerade, :, Insertion, messages, network, fraudulent, source, Content, modification, :, Changes, contents, message, Sequence, modification, :, modification, sequence, messages, parties, Timing, modification, :, Delay, replay, messages, Source, repudiation, :, Denial, transmission, message, source, Destination, repudiation, :, Denial, receipt, message, destination,  , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Message, Authentication, Requirements, Disclosure, Traffic, analysis, Masquerade, Content, modification, Sequence, modification, Timing, modification, Source, repudiation, Destination, repudiation, Requires, Message, Confidentiality, Requires, Message, Authentication, Requires, Digital, Signature,  , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,     , Message, Authentication, Code] 
+
+>> PoS Tags are: 
+[('Discovery', 'PROPN'), ('pattern', 'NOUN'), ('traffic', 'NOUN'), ('parties', 'NOUN'), ('Masquerade', 'NOUN'), (':', 'PUNCT'), ('Insertion', 'NOUN'), ('messages', 'NOUN'), ('network', 'NOUN'), ('fraudulent', 'ADJ'), ('source', 'NOUN'), ('Content', 'PROPN'), ('modification', 'NOUN'), (':', 'PUNCT'), ('Changes', 'NOUN'), ('contents', 'NOUN'), ('message', 'NOUN'), ('Sequence', 'PROPN'), ('modification', 'NOUN'), (':', 'PUNCT'), ('modification', 'NOUN'), ('sequence', 'NOUN'), ('messages', 'NOUN'), ('parties', 'NOUN'), ('Timing', 'VERB'), ('modification', 'NOUN'), (':', 'PUNCT'), ('Delay', 'PROPN'), ('replay', 'NOUN'), ('messages', 'NOUN'), ('Source', 'NOUN'), ('repudiation', 'NOUN'), (':', 'PUNCT'), ('Denial', 'NOUN'), ('transmission', 'NOUN'), ('message', 'NOUN'), ('source', 'NOUN'), ('Destination', 'NOUN'), ('repudiation', 'NOUN'), (':', 'PUNCT'), ('Denial', 'NOUN'), ('receipt', 'NOUN'), ('message', 'NOUN'), ('destination', 'NOUN'), (' ', 'SPACE'), ('Unit-6', 'PROPN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Requirements', 'PROPN'), ('Disclosure', 'PROPN'), ('Traffic', 'NOUN'), ('analysis', 'NOUN'), ('Masquerade', 'PROPN'), ('Content', 'PROPN'), ('modification', 'NOUN'), ('Sequence', 'NOUN'), ('modification', 'NOUN'), ('Timing', 'NOUN'), ('modification', 'NOUN'), ('Source', 'NOUN'), ('repudiation', 'NOUN'), ('Destination', 'PROPN'), ('repudiation', 'NOUN'), ('Requires', 'VERB'), ('Message', 'PROPN'), ('Confidentiality', 'PROPN'), ('Requires', 'VERB'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Requires', 'VERB'), ('Digital', 'PROPN'), ('Signature', 'PROPN'), (' ', 'SPACE'), ('Unit-6', 'PROPN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), ('    ', 'SPACE'), ('Message', 'NOUN'), ('Authentication', 'PROPN'), ('Code', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Discovery', 'nsubj'), ('pattern', 'pobj'), ('traffic', 'pobj'), ('parties', 'compound'), ('Masquerade', 'pobj'), (':', 'punct'), ('Insertion', 'appos'), ('messages', 'pobj'), ('network', 'pobj'), ('fraudulent', 'amod'), ('source', 'pobj'), ('Content', 'compound'), ('modification', 'appos'), (':', 'punct'), ('Changes', 'appos'), ('contents', 'pobj'), ('message', 'compound'), ('Sequence', 'compound'), ('modification', 'pobj'), (':', 'punct'), ('modification', 'appos'), ('sequence', 'pobj'), ('messages', 'pobj'), ('parties', 'pobj'), ('Timing', 'acl'), ('modification', 'dobj'), (':', 'punct'), ('Delay', 'appos'), ('replay', 'conj'), ('messages', 'pobj'), ('Source', 'compound'), ('repudiation', 'appos'), (':', 'punct'), ('Denial', 'appos'), ('transmission', 'pobj'), ('message', 'pobj'), ('source', 'compound'), ('Destination', 'compound'), ('repudiation', 'pobj'), (':', 'punct'), ('Denial', 'appos'), ('receipt', 'pobj'), ('message', 'pobj'), ('destination', 'pobj'), (' ', 'appos'), ('Unit-6', 'compound'), (' ', 'compound'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'punct'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'appos'), ('‹#›', 'punct'), ('INS', 'appos'), ('Interesting', 'amod'), ('Subject', 'compound'), (' ', 'advmod'), ('Message', 'compound'), ('Authentication', 'compound'), ('Requirements', 'compound'), ('Disclosure', 'compound'), ('Traffic', 'compound'), ('analysis', 'compound'), ('Masquerade', 'compound'), ('Content', 'compound'), ('modification', 'compound'), ('Sequence', 'compound'), ('modification', 'compound'), ('Timing', 'compound'), ('modification', 'compound'), ('Source', 'compound'), ('repudiation', 'compound'), ('Destination', 'compound'), ('repudiation', 'nsubj'), ('Requires', 'conj'), ('Message', 'compound'), ('Confidentiality', 'nsubj'), ('Requires', 'ccomp'), ('Message', 'compound'), ('Authentication', 'dobj'), ('Requires', 'ccomp'), ('Digital', 'compound'), ('Signature', 'dobj'), (' ', 'appos'), ('Unit-6', 'compound'), (' ', 'punct'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'compound'), ('Darshan', 'compound'), ('Institute', 'dobj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'nmod'), ('    ', 'nummod'), ('Message', 'compound'), ('Authentication', 'compound'), ('Code', 'attr')]
+
+>> Bigrams: 
+[[Discovery, pattern], [pattern, traffic], [traffic, parties], [parties, Masquerade], [Masquerade, :], [:, Insertion], [Insertion, messages], [messages, network], [network, fraudulent], [fraudulent, source], [source, Content], [Content, modification], [modification, :], [:, Changes], [Changes, contents], [contents, message], [message, Sequence], [Sequence, modification], [modification, :], [:, modification], [modification, sequence], [sequence, messages], [messages, parties], [parties, Timing], [Timing, modification], [modification, :], [:, Delay], [Delay, replay], [replay, messages], [messages, Source], [Source, repudiation], [repudiation, :], [:, Denial], [Denial, transmission], [transmission, message], [message, source], [source, Destination], [Destination, repudiation], [repudiation, :], [:, Denial], [Denial, receipt], [receipt, message], [message, destination], [destination,  ], [ , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Message], [Message, Authentication], [Authentication, Requirements], [Requirements, Disclosure], [Disclosure, Traffic], [Traffic, analysis], [analysis, Masquerade], [Masquerade, Content], [Content, modification], [modification, Sequence], [Sequence, modification], [modification, Timing], [Timing, modification], [modification, Source], [Source, repudiation], [repudiation, Destination], [Destination, repudiation], [repudiation, Requires], [Requires, Message], [Message, Confidentiality], [Confidentiality, Requires], [Requires, Message], [Message, Authentication], [Authentication, Requires], [Requires, Digital], [Digital, Signature], [Signature,  ], [ , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,     ], [    , Message], [Message, Authentication], [Authentication, Code]]
+
+>> Trigrams: 
+[[Discovery, pattern, traffic], [pattern, traffic, parties], [traffic, parties, Masquerade], [parties, Masquerade, :], [Masquerade, :, Insertion], [:, Insertion, messages], [Insertion, messages, network], [messages, network, fraudulent], [network, fraudulent, source], [fraudulent, source, Content], [source, Content, modification], [Content, modification, :], [modification, :, Changes], [:, Changes, contents], [Changes, contents, message], [contents, message, Sequence], [message, Sequence, modification], [Sequence, modification, :], [modification, :, modification], [:, modification, sequence], [modification, sequence, messages], [sequence, messages, parties], [messages, parties, Timing], [parties, Timing, modification], [Timing, modification, :], [modification, :, Delay], [:, Delay, replay], [Delay, replay, messages], [replay, messages, Source], [messages, Source, repudiation], [Source, repudiation, :], [repudiation, :, Denial], [:, Denial, transmission], [Denial, transmission, message], [transmission, message, source], [message, source, Destination], [source, Destination, repudiation], [Destination, repudiation, :], [repudiation, :, Denial], [:, Denial, receipt], [Denial, receipt, message], [receipt, message, destination], [message, destination,  ], [destination,  , Unit-6], [ , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Message], [ , Message, Authentication], [Message, Authentication, Requirements], [Authentication, Requirements, Disclosure], [Requirements, Disclosure, Traffic], [Disclosure, Traffic, analysis], [Traffic, analysis, Masquerade], [analysis, Masquerade, Content], [Masquerade, Content, modification], [Content, modification, Sequence], [modification, Sequence, modification], [Sequence, modification, Timing], [modification, Timing, modification], [Timing, modification, Source], [modification, Source, repudiation], [Source, repudiation, Destination], [repudiation, Destination, repudiation], [Destination, repudiation, Requires], [repudiation, Requires, Message], [Requires, Message, Confidentiality], [Message, Confidentiality, Requires], [Confidentiality, Requires, Message], [Requires, Message, Authentication], [Message, Authentication, Requires], [Authentication, Requires, Digital], [Requires, Digital, Signature], [Digital, Signature,  ], [Signature,  , Unit-6], [ , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,     ], [Subject,     , Message], [    , Message, Authentication], [Message, Authentication, Code]]
+
+>> Noun Phrases are: 
+[Discovery, the pattern, traffic, parties Masquerade, Insertion, messages, the network, a fraudulent source, Content modification, Changes, the contents, a message Sequence modification, Any modification, a sequence, messages, parties, modification, Delay, replay, messages, Source repudiation, Denial, transmission, message, source Destination repudiation, Denial, receipt, message, destination, Darshan Institute, Engineering, Technology, INS, Message Authentication Requirements Disclosure Traffic analysis Masquerade Content modification Sequence modification Timing modification Source repudiation Destination repudiation, Message Confidentiality, Message Authentication, Digital Signature, Message Authentication Codes                                  Darshan Institute, Engineering, Technology, INS, very Interesting Subject     Message Authentication Code]
+
+>> Named Entities are: 
+[('Content', 'ORG'), ('Sequence', 'ORG'), ('Delay', 'PERSON'), ('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('Masquerade Content', 'ORG'), ('Sequence', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 10 =============================
+
+An alternative authentication technique involves the use of a secret key to generate a small fixed-size block of data, known as a cryptographic checksum or MAC MAC is appended to the message. 
+
+
+>> Tokens are: 
+[alternative, authentication, technique, involves, use, secret, key, generate, small, fixed, -, size, block, data, ,, known, cryptographic, checksum, MAC, MAC, appended, message, .] 
+
+>> PoS Tags are: 
+[('alternative', 'ADJ'), ('authentication', 'NOUN'), ('technique', 'NOUN'), ('involves', 'VERB'), ('use', 'NOUN'), ('secret', 'ADJ'), ('key', 'NOUN'), ('generate', 'VERB'), ('small', 'ADJ'), ('fixed', 'VERB'), ('-', 'PUNCT'), ('size', 'NOUN'), ('block', 'NOUN'), ('data', 'NOUN'), (',', 'PUNCT'), ('known', 'VERB'), ('cryptographic', 'ADJ'), ('checksum', 'NOUN'), ('MAC', 'PROPN'), ('MAC', 'PROPN'), ('appended', 'VERB'), ('message', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('alternative', 'amod'), ('authentication', 'compound'), ('technique', 'nsubj'), ('involves', 'ROOT'), ('use', 'dobj'), ('secret', 'amod'), ('key', 'pobj'), ('generate', 'acl'), ('small', 'amod'), ('fixed', 'amod'), ('-', 'punct'), ('size', 'compound'), ('block', 'dobj'), ('data', 'pobj'), (',', 'punct'), ('known', 'acl'), ('cryptographic', 'amod'), ('checksum', 'pobj'), ('MAC', 'compound'), ('MAC', 'conj'), ('appended', 'ccomp'), ('message', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[alternative, authentication], [authentication, technique], [technique, involves], [involves, use], [use, secret], [secret, key], [key, generate], [generate, small], [small, fixed], [fixed, -], [-, size], [size, block], [block, data], [data, ,], [,, known], [known, cryptographic], [cryptographic, checksum], [checksum, MAC], [MAC, MAC], [MAC, appended], [appended, message], [message, .]]
+
+>> Trigrams: 
+[[alternative, authentication, technique], [authentication, technique, involves], [technique, involves, use], [involves, use, secret], [use, secret, key], [secret, key, generate], [key, generate, small], [generate, small, fixed], [small, fixed, -], [fixed, -, size], [-, size, block], [size, block, data], [block, data, ,], [data, ,, known], [,, known, cryptographic], [known, cryptographic, checksum], [cryptographic, checksum, MAC], [checksum, MAC, MAC], [MAC, MAC, appended], [MAC, appended, message], [appended, message, .]]
+
+>> Noun Phrases are: 
+[An alternative authentication technique, the use, a secret key, a small fixed-size block, data, a cryptographic checksum, MAC MAC, the message]
+
+>> Named Entities are: 
+[('MAC MAC', 'ORG')]
+
+
+============================ Sentence 11 =============================
+
+This technique assumes that two communicating parties, say A and B, share a common secret key K.   
+
+
+>> Tokens are: 
+[technique, assumes, communicating, parties, ,, B, ,, share, common, secret, key, K.,  ] 
+
+>> PoS Tags are: 
+[('technique', 'NOUN'), ('assumes', 'VERB'), ('communicating', 'VERB'), ('parties', 'NOUN'), (',', 'PUNCT'), ('B', 'NOUN'), (',', 'PUNCT'), ('share', 'VERB'), ('common', 'ADJ'), ('secret', 'ADJ'), ('key', 'ADJ'), ('K.', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('technique', 'nsubj'), ('assumes', 'ROOT'), ('communicating', 'amod'), ('parties', 'nsubj'), (',', 'punct'), ('B', 'conj'), (',', 'punct'), ('share', 'conj'), ('common', 'amod'), ('secret', 'amod'), ('key', 'amod'), ('K.', 'compound'), (' ', 'dobj')]
+
+>> Bigrams: 
+[[technique, assumes], [assumes, communicating], [communicating, parties], [parties, ,], [,, B], [B, ,], [,, share], [share, common], [common, secret], [secret, key], [key, K.], [K.,  ]]
+
+>> Trigrams: 
+[[technique, assumes, communicating], [assumes, communicating, parties], [communicating, parties, ,], [parties, ,, B], [,, B, ,], [B, ,, share], [,, share, common], [share, common, secret], [common, secret, key], [secret, key, K.], [key, K.,  ]]
+
+>> Noun Phrases are: 
+[This technique, two communicating parties, A, B]
+
+>> Named Entities are: 
+[('two', 'CARDINAL')]
+
+
+============================ Sentence 12 =============================
+
+When A has a message to send to B, it calculates the MAC as a function of the message and the key  MAC = C ( K , M ) 
+
+
+>> Tokens are: 
+[message, send, B, ,, calculates, MAC, function, message, key,  , MAC, =, C, (, K, ,, M, )] 
+
+>> PoS Tags are: 
+[('message', 'NOUN'), ('send', 'VERB'), ('B', 'NOUN'), (',', 'PUNCT'), ('calculates', 'VERB'), ('MAC', 'PROPN'), ('function', 'NOUN'), ('message', 'NOUN'), ('key', 'ADJ'), (' ', 'SPACE'), ('MAC', 'PROPN'), ('=', 'SYM'), ('C', 'PROPN'), ('(', 'PUNCT'), ('K', 'PROPN'), (',', 'PUNCT'), ('M', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('message', 'dobj'), ('send', 'relcl'), ('B', 'pobj'), (',', 'punct'), ('calculates', 'ROOT'), ('MAC', 'dobj'), ('function', 'pobj'), ('message', 'pobj'), ('key', 'amod'), (' ', 'amod'), ('MAC', 'nmod'), ('=', 'punct'), ('C', 'conj'), ('(', 'punct'), ('K', 'appos'), (',', 'punct'), ('M', 'npadvmod'), (')', 'punct')]
+
+>> Bigrams: 
+[[message, send], [send, B], [B, ,], [,, calculates], [calculates, MAC], [MAC, function], [function, message], [message, key], [key,  ], [ , MAC], [MAC, =], [=, C], [C, (], [(, K], [K, ,], [,, M], [M, )]]
+
+>> Trigrams: 
+[[message, send, B], [send, B, ,], [B, ,, calculates], [,, calculates, MAC], [calculates, MAC, function], [MAC, function, message], [function, message, key], [message, key,  ], [key,  , MAC], [ , MAC, =], [MAC, =, C], [=, C, (], [C, (, K], [(, K, ,], [K, ,, M], [,, M, )]]
+
+>> Noun Phrases are: 
+[A, a message, B, it, the MAC, a function, the message, the key  MAC = C, K]
+
+>> Named Entities are: 
+[('MAC', 'ORG'), ('MAC', 'ORG')]
+
+
+============================ Sentence 13 =============================
+
+  Unit-6   
+
+
+>> Tokens are: 
+[  , Unit-6,  ] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-6', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('  ', 'quantmod'), ('Unit-6', 'compound'), (' ', 'ROOT')]
+
+>> Bigrams: 
+[[  , Unit-6], [Unit-6,  ]]
+
+>> Trigrams: 
+[[  , Unit-6,  ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('Unit-6', 'ORG')]
+
+
+============================ Sentence 14 =============================
+
+Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication Code 
+
+
+>> Tokens are: 
+[Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Message, Authentication, Code] 
+
+>> PoS Tags are: 
+[('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Code', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'compound'), ('Darshan', 'compound'), ('Institute', 'nsubj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'appos'), ('Interesting', 'amod'), ('Subject', 'nmod'), (' ', 'nummod'), ('Message', 'compound'), ('Authentication', 'compound'), ('Code', 'punct')]
+
+>> Bigrams: 
+[[Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Message], [Message, Authentication], [Authentication, Code]]
+
+>> Trigrams: 
+[[Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Message], [ , Message, Authentication], [Message, Authentication, Code]]
+
+>> Noun Phrases are: 
+[Message Authentication Codes                                  Darshan Institute, Engineering, Technology, INS]
+
+>> Named Entities are: 
+[('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 15 =============================
+
+The receiver is assured that the message has not been altered. 
+
+
+>> Tokens are: 
+[receiver, assured, message, altered, .] 
+
+>> PoS Tags are: 
+[('receiver', 'NOUN'), ('assured', 'VERB'), ('message', 'NOUN'), ('altered', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('receiver', 'nsubjpass'), ('assured', 'ROOT'), ('message', 'nsubjpass'), ('altered', 'ccomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[receiver, assured], [assured, message], [message, altered], [altered, .]]
+
+>> Trigrams: 
+[[receiver, assured, message], [assured, message, altered], [message, altered, .]]
+
+>> Noun Phrases are: 
+[The receiver, the message]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+If an attacker alters the message but does not alter the MAC, then the receiver’s calculation of the MAC will differ from the received MAC. 
+
+
+>> Tokens are: 
+[attacker, alters, message, alter, MAC, ,, receiver, calculation, MAC, differ, received, MAC, .] 
+
+>> PoS Tags are: 
+[('attacker', 'NOUN'), ('alters', 'VERB'), ('message', 'NOUN'), ('alter', 'VERB'), ('MAC', 'PROPN'), (',', 'PUNCT'), ('receiver', 'NOUN'), ('calculation', 'NOUN'), ('MAC', 'PROPN'), ('differ', 'VERB'), ('received', 'VERB'), ('MAC', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('attacker', 'nsubj'), ('alters', 'advcl'), ('message', 'dobj'), ('alter', 'conj'), ('MAC', 'dobj'), (',', 'punct'), ('receiver', 'poss'), ('calculation', 'nsubj'), ('MAC', 'pobj'), ('differ', 'ROOT'), ('received', 'amod'), ('MAC', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[attacker, alters], [alters, message], [message, alter], [alter, MAC], [MAC, ,], [,, receiver], [receiver, calculation], [calculation, MAC], [MAC, differ], [differ, received], [received, MAC], [MAC, .]]
+
+>> Trigrams: 
+[[attacker, alters, message], [alters, message, alter], [message, alter, MAC], [alter, MAC, ,], [MAC, ,, receiver], [,, receiver, calculation], [receiver, calculation, MAC], [calculation, MAC, differ], [MAC, differ, received], [differ, received, MAC], [received, MAC, .]]
+
+>> Noun Phrases are: 
+[an attacker, the message, the MAC, the receiver’s calculation, the MAC, the received MAC]
+
+>> Named Entities are: 
+[('MAC', 'ORG'), ('MAC', 'ORG'), ('MAC', 'ORG')]
+
+
+============================ Sentence 17 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 18 =============================
+
+Because the attacker is assumed not to Know the secret key, the attacker cannot alter the MAC to correspond to the alterations in the message. 
+
+
+>> Tokens are: 
+[attacker, assumed, Know, secret, key, ,, attacker, alter, MAC, correspond, alterations, message, .] 
+
+>> PoS Tags are: 
+[('attacker', 'NOUN'), ('assumed', 'VERB'), ('Know', 'VERB'), ('secret', 'ADJ'), ('key', 'NOUN'), (',', 'PUNCT'), ('attacker', 'NOUN'), ('alter', 'VERB'), ('MAC', 'PROPN'), ('correspond', 'VERB'), ('alterations', 'NOUN'), ('message', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('attacker', 'nsubjpass'), ('assumed', 'advcl'), ('Know', 'xcomp'), ('secret', 'amod'), ('key', 'dobj'), (',', 'punct'), ('attacker', 'nsubj'), ('alter', 'ROOT'), ('MAC', 'dobj'), ('correspond', 'xcomp'), ('alterations', 'pobj'), ('message', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[attacker, assumed], [assumed, Know], [Know, secret], [secret, key], [key, ,], [,, attacker], [attacker, alter], [alter, MAC], [MAC, correspond], [correspond, alterations], [alterations, message], [message, .]]
+
+>> Trigrams: 
+[[attacker, assumed, Know], [assumed, Know, secret], [Know, secret, key], [secret, key, ,], [key, ,, attacker], [,, attacker, alter], [attacker, alter, MAC], [alter, MAC, correspond], [MAC, correspond, alterations], [correspond, alterations, message], [alterations, message, .]]
+
+>> Noun Phrases are: 
+[the attacker, the secret key, the attacker, the MAC, the alterations, the message]
+
+>> Named Entities are: 
+[('MAC', 'ORG')]
+
+
+============================ Sentence 19 =============================
+
+  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication code - Cont… 
+
+
+>> Tokens are: 
+[  , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Message, Authentication, code, -, Cont, …] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-6', 'NOUN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('code', 'NOUN'), ('-', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'nmod'), ('Unit-6', 'compound'), (' ', 'nsubj'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'appos'), ('‹#›', 'nsubj'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'compound'), (' ', 'attr'), ('Message', 'compound'), ('Authentication', 'compound'), ('code', 'compound'), ('-', 'punct'), ('Cont', 'attr'), ('…', 'punct')]
+
+>> Bigrams: 
+[[  , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Message], [Message, Authentication], [Authentication, code], [code, -], [-, Cont], [Cont, …]]
+
+>> Trigrams: 
+[[  , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Message], [ , Message, Authentication], [Message, Authentication, code], [Authentication, code, -], [code, -, Cont], [-, Cont, …]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, Message Authentication code - Cont]
+
+>> Named Entities are: 
+[('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 20 =============================
+
+The receiver is assured that the message is from the alleged sender. 
+
+
+>> Tokens are: 
+[receiver, assured, message, alleged, sender, .] 
+
+>> PoS Tags are: 
+[('receiver', 'NOUN'), ('assured', 'VERB'), ('message', 'NOUN'), ('alleged', 'ADJ'), ('sender', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('receiver', 'nsubjpass'), ('assured', 'ROOT'), ('message', 'nsubj'), ('alleged', 'amod'), ('sender', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[receiver, assured], [assured, message], [message, alleged], [alleged, sender], [sender, .]]
+
+>> Trigrams: 
+[[receiver, assured, message], [assured, message, alleged], [message, alleged, sender], [alleged, sender, .]]
+
+>> Noun Phrases are: 
+[The receiver, the message, the alleged sender]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 22 =============================
+
+Because no one else knows the secret key, no one else could prepare a message with a proper MAC. 
+
+
+>> Tokens are: 
+[knows, secret, key, ,, prepare, message, proper, MAC, .] 
+
+>> PoS Tags are: 
+[('knows', 'VERB'), ('secret', 'ADJ'), ('key', 'NOUN'), (',', 'PUNCT'), ('prepare', 'VERB'), ('message', 'NOUN'), ('proper', 'ADJ'), ('MAC', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('knows', 'advcl'), ('secret', 'amod'), ('key', 'dobj'), (',', 'punct'), ('prepare', 'ROOT'), ('message', 'dobj'), ('proper', 'amod'), ('MAC', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[knows, secret], [secret, key], [key, ,], [,, prepare], [prepare, message], [message, proper], [proper, MAC], [MAC, .]]
+
+>> Trigrams: 
+[[knows, secret, key], [secret, key, ,], [key, ,, prepare], [,, prepare, message], [prepare, message, proper], [message, proper, MAC], [proper, MAC, .]]
+
+>> Noun Phrases are: 
+[no one, the secret key, no one, a message, a proper MAC]
+
+>> Named Entities are: 
+[('MAC', 'ORG')]
+
+
+============================ Sentence 23 =============================
+
+A MAC function is similar to encryption. 
+
+
+>> Tokens are: 
+[MAC, function, similar, encryption, .] 
+
+>> PoS Tags are: 
+[('MAC', 'PROPN'), ('function', 'NOUN'), ('similar', 'ADJ'), ('encryption', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('MAC', 'compound'), ('function', 'nsubj'), ('similar', 'acomp'), ('encryption', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[MAC, function], [function, similar], [similar, encryption], [encryption, .]]
+
+>> Trigrams: 
+[[MAC, function, similar], [function, similar, encryption], [similar, encryption, .]]
+
+>> Noun Phrases are: 
+[A MAC function, encryption]
+
+>> Named Entities are: 
+[('MAC', 'ORG')]
+
+
+============================ Sentence 24 =============================
+
+One difference is that the MAC algorithm need not be reversible, as it must be for decryption.   
+
+
+>> Tokens are: 
+[difference, MAC, algorithm, need, reversible, ,, decryption, .,  ] 
+
+>> PoS Tags are: 
+[('difference', 'NOUN'), ('MAC', 'PROPN'), ('algorithm', 'NOUN'), ('need', 'AUX'), ('reversible', 'ADJ'), (',', 'PUNCT'), ('decryption', 'NOUN'), ('.', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('difference', 'nsubj'), ('MAC', 'compound'), ('algorithm', 'nsubj'), ('need', 'aux'), ('reversible', 'acomp'), (',', 'punct'), ('decryption', 'pobj'), ('.', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[difference, MAC], [MAC, algorithm], [algorithm, need], [need, reversible], [reversible, ,], [,, decryption], [decryption, .], [.,  ]]
+
+>> Trigrams: 
+[[difference, MAC, algorithm], [MAC, algorithm, need], [algorithm, need, reversible], [need, reversible, ,], [reversible, ,, decryption], [,, decryption, .], [decryption, .,  ]]
+
+>> Noun Phrases are: 
+[One difference, the MAC algorithm, it, decryption]
+
+>> Named Entities are: 
+[('One', 'CARDINAL'), ('MAC', 'ORG')]
+
+
+============================ Sentence 25 =============================
+
+In general, the MAC function is a many-to-one function. 
+
+
+>> Tokens are: 
+[general, ,, MAC, function, -, -, function, .] 
+
+>> PoS Tags are: 
+[('general', 'ADJ'), (',', 'PUNCT'), ('MAC', 'PROPN'), ('function', 'NOUN'), ('-', 'PUNCT'), ('-', 'PUNCT'), ('function', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('general', 'amod'), (',', 'punct'), ('MAC', 'compound'), ('function', 'nsubj'), ('-', 'punct'), ('-', 'punct'), ('function', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[general, ,], [,, MAC], [MAC, function], [function, -], [-, -], [-, function], [function, .]]
+
+>> Trigrams: 
+[[general, ,, MAC], [,, MAC, function], [MAC, function, -], [function, -, -], [-, -, function], [-, function, .]]
+
+>> Noun Phrases are: 
+[the MAC function, a many-to-one function]
+
+>> Named Entities are: 
+[('MAC', 'ORG')]
+
+
+============================ Sentence 26 =============================
+
+The domain of the function consists of messages of some arbitrary length, whereas the range consists of all possible MACs and all possible keys. 
+
+
+>> Tokens are: 
+[domain, function, consists, messages, arbitrary, length, ,, range, consists, possible, MACs, possible, keys, .] 
+
+>> PoS Tags are: 
+[('domain', 'NOUN'), ('function', 'NOUN'), ('consists', 'VERB'), ('messages', 'NOUN'), ('arbitrary', 'ADJ'), ('length', 'NOUN'), (',', 'PUNCT'), ('range', 'NOUN'), ('consists', 'VERB'), ('possible', 'ADJ'), ('MACs', 'NOUN'), ('possible', 'ADJ'), ('keys', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('domain', 'nsubj'), ('function', 'pobj'), ('consists', 'ROOT'), ('messages', 'pobj'), ('arbitrary', 'amod'), ('length', 'pobj'), (',', 'punct'), ('range', 'nsubj'), ('consists', 'advcl'), ('possible', 'amod'), ('MACs', 'pobj'), ('possible', 'amod'), ('keys', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[domain, function], [function, consists], [consists, messages], [messages, arbitrary], [arbitrary, length], [length, ,], [,, range], [range, consists], [consists, possible], [possible, MACs], [MACs, possible], [possible, keys], [keys, .]]
+
+>> Trigrams: 
+[[domain, function, consists], [function, consists, messages], [consists, messages, arbitrary], [messages, arbitrary, length], [arbitrary, length, ,], [length, ,, range], [,, range, consists], [range, consists, possible], [consists, possible, MACs], [possible, MACs, possible], [MACs, possible, keys], [possible, keys, .]]
+
+>> Noun Phrases are: 
+[The domain, the function, messages, some arbitrary length, the range, all possible MACs, all possible keys]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 27 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 28 =============================
+
+If an n-bit MAC is used, then there are 2 n  possible MACs  Unit-6   
+
+
+>> Tokens are: 
+[n, -, bit, MAC, ,, 2, n,  , possible, MACs,  , Unit-6,  ] 
+
+>> PoS Tags are: 
+[('n', 'CCONJ'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('MAC', 'PROPN'), (',', 'PUNCT'), ('2', 'NUM'), ('n', 'NUM'), (' ', 'SPACE'), ('possible', 'ADJ'), ('MACs', 'NOUN'), (' ', 'SPACE'), ('Unit-6', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('n', 'nummod'), ('-', 'punct'), ('bit', 'compound'), ('MAC', 'nsubjpass'), (',', 'punct'), ('2', 'nummod'), ('n', 'quantmod'), (' ', 'conj'), ('possible', 'amod'), ('MACs', 'attr'), (' ', 'compound'), ('Unit-6', 'compound'), (' ', 'appos')]
+
+>> Bigrams: 
+[[n, -], [-, bit], [bit, MAC], [MAC, ,], [,, 2], [2, n], [n,  ], [ , possible], [possible, MACs], [MACs,  ], [ , Unit-6], [Unit-6,  ]]
+
+>> Trigrams: 
+[[n, -, bit], [-, bit, MAC], [bit, MAC, ,], [MAC, ,, 2], [,, 2, n], [2, n,  ], [n,  , possible], [ , possible, MACs], [possible, MACs,  ], [MACs,  , Unit-6], [ , Unit-6,  ]]
+
+>> Noun Phrases are: 
+[an n-bit MAC, 2 n  possible MACs]
+
+>> Named Entities are: 
+[('MAC', 'ORG'), ('2', 'CARDINAL'), ('Unit-6', 'ORG')]
+
+
+============================ Sentence 29 =============================
+
+Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication code - Cont…     Unit-6   
+
+
+>> Tokens are: 
+[Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Message, Authentication, code, -, Cont, …,     , Unit-6,  ] 
+
+>> PoS Tags are: 
+[('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('code', 'NOUN'), ('-', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT'), ('    ', 'SPACE'), ('Unit-6', 'VERB'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'compound'), ('Darshan', 'compound'), ('Institute', 'nsubj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'appos'), ('Interesting', 'amod'), ('Subject', 'prep'), (' ', 'nummod'), ('Message', 'compound'), ('Authentication', 'compound'), ('code', 'compound'), ('-', 'punct'), ('Cont', 'attr'), ('…', 'punct'), ('    ', 'nsubj'), ('Unit-6', 'appos'), (' ', 'dobj')]
+
+>> Bigrams: 
+[[Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Message], [Message, Authentication], [Authentication, code], [code, -], [-, Cont], [Cont, …], […,     ], [    , Unit-6], [Unit-6,  ]]
+
+>> Trigrams: 
+[[Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Message], [ , Message, Authentication], [Message, Authentication, code], [Authentication, code, -], [code, -, Cont], [-, Cont, …], [Cont, …,     ], […,     , Unit-6], [    , Unit-6,  ]]
+
+>> Noun Phrases are: 
+[Message Authentication Codes                                  Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Message Authentication code - Cont]
+
+>> Named Entities are: 
+[('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('Unit-6', 'ORG')]
+
+
+============================ Sentence 30 =============================
+
+Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  MAC Based on Hash Functions - HMAC Cryptographic hash functions such as MD5 and SHA generally execute faster  in software than symmetric block ciphers such as DES. 
+
+
+>> Tokens are: 
+[Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , MAC, Based, Hash, Functions, -, HMAC, Cryptographic, hash, functions, MD5, SHA, generally, execute, faster,  , software, symmetric, block, ciphers, DES, .] 
+
+>> PoS Tags are: 
+[('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('MAC', 'PROPN'), ('Based', 'VERB'), ('Hash', 'PROPN'), ('Functions', 'PROPN'), ('-', 'PUNCT'), ('HMAC', 'PROPN'), ('Cryptographic', 'ADJ'), ('hash', 'NOUN'), ('functions', 'NOUN'), ('MD5', 'PROPN'), ('SHA', 'PROPN'), ('generally', 'ADV'), ('execute', 'VERB'), ('faster', 'ADJ'), (' ', 'SPACE'), ('software', 'NOUN'), ('symmetric', 'ADJ'), ('block', 'NOUN'), ('ciphers', 'NOUN'), ('DES', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'compound'), ('Darshan', 'compound'), ('Institute', 'nsubj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'appos'), ('Interesting', 'advmod'), ('Subject', 'nmod'), (' ', 'punct'), ('MAC', 'nsubj'), ('Based', 'acl'), ('Hash', 'compound'), ('Functions', 'nmod'), ('-', 'punct'), ('HMAC', 'nmod'), ('Cryptographic', 'amod'), ('hash', 'compound'), ('functions', 'pobj'), ('MD5', 'pobj'), ('SHA', 'conj'), ('generally', 'advmod'), ('execute', 'ccomp'), ('faster', 'amod'), (' ', 'dobj'), ('software', 'pobj'), ('symmetric', 'amod'), ('block', 'compound'), ('ciphers', 'pobj'), ('DES', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , MAC], [MAC, Based], [Based, Hash], [Hash, Functions], [Functions, -], [-, HMAC], [HMAC, Cryptographic], [Cryptographic, hash], [hash, functions], [functions, MD5], [MD5, SHA], [SHA, generally], [generally, execute], [execute, faster], [faster,  ], [ , software], [software, symmetric], [symmetric, block], [block, ciphers], [ciphers, DES], [DES, .]]
+
+>> Trigrams: 
+[[Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , MAC], [ , MAC, Based], [MAC, Based, Hash], [Based, Hash, Functions], [Hash, Functions, -], [Functions, -, HMAC], [-, HMAC, Cryptographic], [HMAC, Cryptographic, hash], [Cryptographic, hash, functions], [hash, functions, MD5], [functions, MD5, SHA], [MD5, SHA, generally], [SHA, generally, execute], [generally, execute, faster], [execute, faster,  ], [faster,  , software], [ , software, symmetric], [software, symmetric, block], [symmetric, block, ciphers], [block, ciphers, DES], [ciphers, DES, .]]
+
+>> Noun Phrases are: 
+[Message Authentication Codes                                  Darshan Institute, Engineering, Technology, INS, very Interesting Subject  MAC, Hash Functions - HMAC Cryptographic hash functions, MD5, SHA, software, symmetric block ciphers, DES]
+
+>> Named Entities are: 
+[('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('SHA', 'ORG')]
+
+
+============================ Sentence 31 =============================
+
+Library code for cryptographic hash functions is widely available. 
+
+
+>> Tokens are: 
+[Library, code, cryptographic, hash, functions, widely, available, .] 
+
+>> PoS Tags are: 
+[('Library', 'PROPN'), ('code', 'NOUN'), ('cryptographic', 'ADJ'), ('hash', 'NOUN'), ('functions', 'NOUN'), ('widely', 'ADV'), ('available', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Library', 'compound'), ('code', 'nsubj'), ('cryptographic', 'amod'), ('hash', 'compound'), ('functions', 'pobj'), ('widely', 'advmod'), ('available', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Library, code], [code, cryptographic], [cryptographic, hash], [hash, functions], [functions, widely], [widely, available], [available, .]]
+
+>> Trigrams: 
+[[Library, code, cryptographic], [code, cryptographic, hash], [cryptographic, hash, functions], [hash, functions, widely], [functions, widely, available], [widely, available, .]]
+
+>> Noun Phrases are: 
+[Library code, cryptographic hash functions]
+
+>> Named Entities are: 
+[('Library', 'PERSON')]
+
+
+============================ Sentence 32 =============================
+
+  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Design objectives for HMAC To use, without modifications, available hash functions. 
+
+
+>> Tokens are: 
+[  , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Design, objectives, HMAC, use, ,, modifications, ,, available, hash, functions, .] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Unit-6', 'NOUN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Design', 'NOUN'), ('objectives', 'NOUN'), ('HMAC', 'NOUN'), ('use', 'VERB'), (',', 'PUNCT'), ('modifications', 'NOUN'), (',', 'PUNCT'), ('available', 'ADJ'), ('hash', 'NOUN'), ('functions', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'nmod'), ('Unit-6', 'compound'), (' ', 'nsubj'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'nsubj'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'nmod'), (' ', 'nummod'), ('Design', 'compound'), ('objectives', 'attr'), ('HMAC', 'pobj'), ('use', 'relcl'), (',', 'punct'), ('modifications', 'pobj'), (',', 'punct'), ('available', 'amod'), ('hash', 'compound'), ('functions', 'appos'), ('.', 'punct')]
+
+>> Bigrams: 
+[[  , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Design], [Design, objectives], [objectives, HMAC], [HMAC, use], [use, ,], [,, modifications], [modifications, ,], [,, available], [available, hash], [hash, functions], [functions, .]]
+
+>> Trigrams: 
+[[  , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Design], [ , Design, objectives], [Design, objectives, HMAC], [objectives, HMAC, use], [HMAC, use, ,], [use, ,, modifications], [,, modifications, ,], [modifications, ,, available], [,, available, hash], [available, hash, functions], [hash, functions, .]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Design objectives, HMAC, modifications, available hash functions]
+
+>> Named Entities are: 
+[('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('HMAC', 'ORG')]
+
+
+============================ Sentence 33 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 34 =============================
+
+To allow for easy replaceability of the embedded hash function in case faster or more secure hash functions are found or required. 
+
+
+>> Tokens are: 
+[allow, easy, replaceability, embedded, hash, function, case, faster, secure, hash, functions, found, required, .] 
+
+>> PoS Tags are: 
+[('allow', 'VERB'), ('easy', 'ADJ'), ('replaceability', 'NOUN'), ('embedded', 'VERB'), ('hash', 'NOUN'), ('function', 'NOUN'), ('case', 'NOUN'), ('faster', 'ADV'), ('secure', 'ADJ'), ('hash', 'NOUN'), ('functions', 'NOUN'), ('found', 'VERB'), ('required', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('allow', 'advcl'), ('easy', 'amod'), ('replaceability', 'pobj'), ('embedded', 'amod'), ('hash', 'compound'), ('function', 'pobj'), ('case', 'pobj'), ('faster', 'amod'), ('secure', 'conj'), ('hash', 'compound'), ('functions', 'nsubjpass'), ('found', 'ROOT'), ('required', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[allow, easy], [easy, replaceability], [replaceability, embedded], [embedded, hash], [hash, function], [function, case], [case, faster], [faster, secure], [secure, hash], [hash, functions], [functions, found], [found, required], [required, .]]
+
+>> Trigrams: 
+[[allow, easy, replaceability], [easy, replaceability, embedded], [replaceability, embedded, hash], [embedded, hash, function], [hash, function, case], [function, case, faster], [case, faster, secure], [faster, secure, hash], [secure, hash, functions], [hash, functions, found], [functions, found, required], [found, required, .]]
+
+>> Noun Phrases are: 
+[easy replaceability, the embedded hash function, case, faster or more secure hash functions]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 35 =============================
+
+To preserve the original performance of the hash function without incurring a significant degradation. 
+
+
+>> Tokens are: 
+[preserve, original, performance, hash, function, incurring, significant, degradation, .] 
+
+>> PoS Tags are: 
+[('preserve', 'VERB'), ('original', 'ADJ'), ('performance', 'NOUN'), ('hash', 'NOUN'), ('function', 'NOUN'), ('incurring', 'VERB'), ('significant', 'ADJ'), ('degradation', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('preserve', 'ROOT'), ('original', 'amod'), ('performance', 'dobj'), ('hash', 'compound'), ('function', 'pobj'), ('incurring', 'pcomp'), ('significant', 'amod'), ('degradation', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[preserve, original], [original, performance], [performance, hash], [hash, function], [function, incurring], [incurring, significant], [significant, degradation], [degradation, .]]
+
+>> Trigrams: 
+[[preserve, original, performance], [original, performance, hash], [performance, hash, function], [hash, function, incurring], [function, incurring, significant], [incurring, significant, degradation], [significant, degradation, .]]
+
+>> Noun Phrases are: 
+[the original performance, the hash function, a significant degradation]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 36 =============================
+
+To use and handle keys in a simple way. 
+
+
+>> Tokens are: 
+[use, handle, keys, simple, way, .] 
+
+>> PoS Tags are: 
+[('use', 'VERB'), ('handle', 'VERB'), ('keys', 'NOUN'), ('simple', 'ADJ'), ('way', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('use', 'ROOT'), ('handle', 'conj'), ('keys', 'dobj'), ('simple', 'amod'), ('way', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[use, handle], [handle, keys], [keys, simple], [simple, way], [way, .]]
+
+>> Trigrams: 
+[[use, handle, keys], [handle, keys, simple], [keys, simple, way], [simple, way, .]]
+
+>> Noun Phrases are: 
+[keys, a simple way]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 37 =============================
+
+To have a well understood cryptographic analysis of the strength of the authentication mechanism based on reasonable assumptions about the embedded hash function. 
+
+
+>> Tokens are: 
+[understood, cryptographic, analysis, strength, authentication, mechanism, based, reasonable, assumptions, embedded, hash, function, .] 
+
+>> PoS Tags are: 
+[('understood', 'VERB'), ('cryptographic', 'ADJ'), ('analysis', 'NOUN'), ('strength', 'NOUN'), ('authentication', 'NOUN'), ('mechanism', 'NOUN'), ('based', 'VERB'), ('reasonable', 'ADJ'), ('assumptions', 'NOUN'), ('embedded', 'VERB'), ('hash', 'NOUN'), ('function', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('understood', 'amod'), ('cryptographic', 'amod'), ('analysis', 'dobj'), ('strength', 'pobj'), ('authentication', 'compound'), ('mechanism', 'pobj'), ('based', 'acl'), ('reasonable', 'amod'), ('assumptions', 'pobj'), ('embedded', 'amod'), ('hash', 'compound'), ('function', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[understood, cryptographic], [cryptographic, analysis], [analysis, strength], [strength, authentication], [authentication, mechanism], [mechanism, based], [based, reasonable], [reasonable, assumptions], [assumptions, embedded], [embedded, hash], [hash, function], [function, .]]
+
+>> Trigrams: 
+[[understood, cryptographic, analysis], [cryptographic, analysis, strength], [analysis, strength, authentication], [strength, authentication, mechanism], [authentication, mechanism, based], [mechanism, based, reasonable], [based, reasonable, assumptions], [reasonable, assumptions, embedded], [assumptions, embedded, hash], [embedded, hash, function], [hash, function, .]]
+
+>> Noun Phrases are: 
+[a well understood cryptographic analysis, the strength, the authentication mechanism, reasonable assumptions, the embedded hash function]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 38 =============================
+
+ Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject   HMAC Structure 
+
+
+>> Tokens are: 
+[ , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,   , HMAC, Structure] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('Unit-6', 'NOUN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), ('  ', 'SPACE'), ('HMAC', 'PROPN'), ('Structure', 'NOUN')] 
+
+>> Dependency Tags are: 
+[(' ', 'nmod'), ('Unit-6', 'compound'), (' ', 'compound'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'acomp'), ('  ', 'attr'), ('HMAC', 'compound'), ('Structure', 'punct')]
+
+>> Bigrams: 
+[[ , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,   ], [  , HMAC], [HMAC, Structure]]
+
+>> Trigrams: 
+[[ , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,   ], [Subject,   , HMAC], [  , HMAC, Structure]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS]
+
+>> Named Entities are: 
+[('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 39 =============================
+
+Append zeros to the left end of K to create a b-bit string K+ XOR K+  with ipad to produce the b-bit block Si. 
+
+
+>> Tokens are: 
+[Append, zeros, left, end, K, create, b, -, bit, string, K+, XOR, K+,  , ipad, produce, b, -, bit, block, Si, .] 
+
+>> PoS Tags are: 
+[('Append', 'VERB'), ('zeros', 'NOUN'), ('left', 'ADJ'), ('end', 'NOUN'), ('K', 'NOUN'), ('create', 'VERB'), ('b', 'X'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('string', 'NOUN'), ('K+', 'PROPN'), ('XOR', 'PROPN'), ('K+', 'PROPN'), (' ', 'SPACE'), ('ipad', 'NOUN'), ('produce', 'VERB'), ('b', 'X'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('block', 'NOUN'), ('Si', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Append', 'ROOT'), ('zeros', 'dobj'), ('left', 'amod'), ('end', 'pobj'), ('K', 'pobj'), ('create', 'advcl'), ('b', 'det'), ('-', 'punct'), ('bit', 'compound'), ('string', 'compound'), ('K+', 'compound'), ('XOR', 'compound'), ('K+', 'dobj'), (' ', 'appos'), ('ipad', 'pobj'), ('produce', 'advcl'), ('b', 'det'), ('-', 'punct'), ('bit', 'compound'), ('block', 'dobj'), ('Si', 'appos'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Append, zeros], [zeros, left], [left, end], [end, K], [K, create], [create, b], [b, -], [-, bit], [bit, string], [string, K+], [K+, XOR], [XOR, K+], [K+,  ], [ , ipad], [ipad, produce], [produce, b], [b, -], [-, bit], [bit, block], [block, Si], [Si, .]]
+
+>> Trigrams: 
+[[Append, zeros, left], [zeros, left, end], [left, end, K], [end, K, create], [K, create, b], [create, b, -], [b, -, bit], [-, bit, string], [bit, string, K+], [string, K+, XOR], [K+, XOR, K+], [XOR, K+,  ], [K+,  , ipad], [ , ipad, produce], [ipad, produce, b], [produce, b, -], [b, -, bit], [-, bit, block], [bit, block, Si], [block, Si, .]]
+
+>> Noun Phrases are: 
+[zeros, the left end, K, a b-bit string K+ XOR K+, ipad, the b-bit block, Si]
+
+>> Named Entities are: 
+[('zeros', 'CARDINAL'), ('K+ XOR K+', 'PERSON')]
+
+
+============================ Sentence 40 =============================
+
+Append M to Si. 
+
+
+>> Tokens are: 
+[Append, M, Si, .] 
+
+>> PoS Tags are: 
+[('Append', 'PROPN'), ('M', 'PROPN'), ('Si', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Append', 'compound'), ('M', 'ROOT'), ('Si', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Append, M], [M, Si], [Si, .]]
+
+>> Trigrams: 
+[[Append, M, Si], [M, Si, .]]
+
+>> Noun Phrases are: 
+[Append M, Si]
+
+>> Named Entities are: 
+[('Append M to Si', 'PERSON')]
+
+
+============================ Sentence 41 =============================
+
+Apply H to the stream generated in step 3. 
+
+
+>> Tokens are: 
+[Apply, H, stream, generated, step, 3, .] 
+
+>> PoS Tags are: 
+[('Apply', 'VERB'), ('H', 'PROPN'), ('stream', 'NOUN'), ('generated', 'VERB'), ('step', 'NOUN'), ('3', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Apply', 'ROOT'), ('H', 'dobj'), ('stream', 'pobj'), ('generated', 'acl'), ('step', 'pobj'), ('3', 'nummod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Apply, H], [H, stream], [stream, generated], [generated, step], [step, 3], [3, .]]
+
+>> Trigrams: 
+[[Apply, H, stream], [H, stream, generated], [stream, generated, step], [generated, step, 3], [step, 3, .]]
+
+>> Noun Phrases are: 
+[H, the stream, step]
+
+>> Named Entities are: 
+[('Apply H', 'PERSON'), ('3', 'CARDINAL')]
+
+
+============================ Sentence 42 =============================
+
+XOR K+  with opad to produce the b-bit block S0. 
+
+
+>> Tokens are: 
+[XOR, K+,  , opad, produce, b, -, bit, block, S0, .] 
+
+>> PoS Tags are: 
+[('XOR', 'PROPN'), ('K+', 'PROPN'), (' ', 'SPACE'), ('opad', 'NOUN'), ('produce', 'VERB'), ('b', 'X'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('block', 'NOUN'), ('S0', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('XOR', 'compound'), ('K+', 'ROOT'), (' ', 'appos'), ('opad', 'pobj'), ('produce', 'relcl'), ('b', 'det'), ('-', 'punct'), ('bit', 'compound'), ('block', 'compound'), ('S0', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[XOR, K+], [K+,  ], [ , opad], [opad, produce], [produce, b], [b, -], [-, bit], [bit, block], [block, S0], [S0, .]]
+
+>> Trigrams: 
+[[XOR, K+,  ], [K+,  , opad], [ , opad, produce], [opad, produce, b], [produce, b, -], [b, -, bit], [-, bit, block], [bit, block, S0], [block, S0, .]]
+
+>> Noun Phrases are: 
+[XOR K+, opad, the b-bit block S0]
+
+>> Named Entities are: 
+[('XOR K+', 'PERSON')]
+
+
+============================ Sentence 43 =============================
+
+Append the hash result from step 4 to S0. 
+
+
+>> Tokens are: 
+[Append, hash, result, step, 4, S0, .] 
+
+>> PoS Tags are: 
+[('Append', 'VERB'), ('hash', 'NOUN'), ('result', 'NOUN'), ('step', 'NOUN'), ('4', 'NUM'), ('S0', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Append', 'ROOT'), ('hash', 'nsubj'), ('result', 'dobj'), ('step', 'pobj'), ('4', 'nummod'), ('S0', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Append, hash], [hash, result], [result, step], [step, 4], [4, S0], [S0, .]]
+
+>> Trigrams: 
+[[Append, hash, result], [hash, result, step], [result, step, 4], [step, 4, S0], [4, S0, .]]
+
+>> Noun Phrases are: 
+[the hash, step, S0]
+
+>> Named Entities are: 
+[('4', 'CARDINAL')]
+
+
+============================ Sentence 44 =============================
+
+Apply H to the stream generated in step 6 and output the result. 
+
+
+>> Tokens are: 
+[Apply, H, stream, generated, step, 6, output, result, .] 
+
+>> PoS Tags are: 
+[('Apply', 'VERB'), ('H', 'PROPN'), ('stream', 'NOUN'), ('generated', 'VERB'), ('step', 'NOUN'), ('6', 'NUM'), ('output', 'VERB'), ('result', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Apply', 'ROOT'), ('H', 'dobj'), ('stream', 'pobj'), ('generated', 'acl'), ('step', 'pobj'), ('6', 'nummod'), ('output', 'conj'), ('result', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Apply, H], [H, stream], [stream, generated], [generated, step], [step, 6], [6, output], [output, result], [result, .]]
+
+>> Trigrams: 
+[[Apply, H, stream], [H, stream, generated], [stream, generated, step], [generated, step, 6], [step, 6, output], [6, output, result], [output, result, .]]
+
+>> Noun Phrases are: 
+[H, the stream, step, the result]
+
+>> Named Entities are: 
+[('Apply H', 'PERSON'), ('6', 'CARDINAL')]
+
+
+============================ Sentence 45 =============================
+
+  HMAC Structure H  =  embedded hash function (e.g.--.-, MD5, SHA-1, RIPEMD-160) IV =  initial value input to hash function M  =   message input to HMAC Yi  =   
+
+
+>> Tokens are: 
+[  , HMAC, Structure, H,  , =,  , embedded, hash, function, (, e.g.--.-, ,, MD5, ,, SHA-1, ,, RIPEMD-160, ), IV, =,  , initial, value, input, hash, function, M,  , =,   , message, input, HMAC, Yi,  , =,  ] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('HMAC', 'PROPN'), ('Structure', 'NOUN'), ('H', 'NOUN'), (' ', 'SPACE'), ('=', 'SYM'), (' ', 'SPACE'), ('embedded', 'VERB'), ('hash', 'NOUN'), ('function', 'NOUN'), ('(', 'PUNCT'), ('e.g.--.-', 'X'), (',', 'PUNCT'), ('MD5', 'PROPN'), (',', 'PUNCT'), ('SHA-1', 'PROPN'), (',', 'PUNCT'), ('RIPEMD-160', 'PROPN'), (')', 'PUNCT'), ('IV', 'PROPN'), ('=', 'SYM'), (' ', 'SPACE'), ('initial', 'ADJ'), ('value', 'NOUN'), ('input', 'NOUN'), ('hash', 'NOUN'), ('function', 'NOUN'), ('M', 'NOUN'), (' ', 'SPACE'), ('=', 'PUNCT'), ('  ', 'SPACE'), ('message', 'NOUN'), ('input', 'NOUN'), ('HMAC', 'PROPN'), ('Yi', 'PROPN'), (' ', 'SPACE'), ('=', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('  ', 'nummod'), ('HMAC', 'compound'), ('Structure', 'compound'), ('H', 'nsubj'), (' ', 'appos'), ('=', 'punct'), (' ', 'nsubj'), ('embedded', 'ROOT'), ('hash', 'compound'), ('function', 'dobj'), ('(', 'punct'), ('e.g.--.-', 'appos'), (',', 'punct'), ('MD5', 'conj'), (',', 'punct'), ('SHA-1', 'conj'), (',', 'punct'), ('RIPEMD-160', 'conj'), (')', 'punct'), ('IV', 'nmod'), ('=', 'punct'), (' ', 'nmod'), ('initial', 'amod'), ('value', 'compound'), ('input', 'dobj'), ('hash', 'compound'), ('function', 'pobj'), ('M', 'nmod'), (' ', 'dep'), ('=', 'compound'), ('  ', 'nummod'), ('message', 'compound'), ('input', 'dobj'), ('HMAC', 'compound'), ('Yi', 'pobj'), (' ', 'appos'), ('=', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[  , HMAC], [HMAC, Structure], [Structure, H], [H,  ], [ , =], [=,  ], [ , embedded], [embedded, hash], [hash, function], [function, (], [(, e.g.--.-], [e.g.--.-, ,], [,, MD5], [MD5, ,], [,, SHA-1], [SHA-1, ,], [,, RIPEMD-160], [RIPEMD-160, )], [), IV], [IV, =], [=,  ], [ , initial], [initial, value], [value, input], [input, hash], [hash, function], [function, M], [M,  ], [ , =], [=,   ], [  , message], [message, input], [input, HMAC], [HMAC, Yi], [Yi,  ], [ , =], [=,  ]]
+
+>> Trigrams: 
+[[  , HMAC, Structure], [HMAC, Structure, H], [Structure, H,  ], [H,  , =], [ , =,  ], [=,  , embedded], [ , embedded, hash], [embedded, hash, function], [hash, function, (], [function, (, e.g.--.-], [(, e.g.--.-, ,], [e.g.--.-, ,, MD5], [,, MD5, ,], [MD5, ,, SHA-1], [,, SHA-1, ,], [SHA-1, ,, RIPEMD-160], [,, RIPEMD-160, )], [RIPEMD-160, ), IV], [), IV, =], [IV, =,  ], [=,  , initial], [ , initial, value], [initial, value, input], [value, input, hash], [input, hash, function], [hash, function, M], [function, M,  ], [M,  , =], [ , =,   ], [=,   , message], [  , message, input], [message, input, HMAC], [input, HMAC, Yi], [HMAC, Yi,  ], [Yi,  , =], [ , =,  ]]
+
+>> Noun Phrases are: 
+[  HMAC Structure H, hash function, MD5, SHA-1, RIPEMD-160, ) IV =  initial value input, hash function, =   message input, HMAC Yi]
+
+>> Named Entities are: 
+[('MD5', 'GPE'), ('HMAC Yi', 'ORG')]
+
+
+============================ Sentence 46 =============================
+
+i th block of M L   =  number of blocks in M n   =  length of hash code produced by embedded hash function K +  =   
+
+
+>> Tokens are: 
+[th, block, M, L,   , =,  , number, blocks, M, n,   , =,  , length, hash, code, produced, embedded, hash, function, K, +,  , =,  ] 
+
+>> PoS Tags are: 
+[('th', 'X'), ('block', 'NOUN'), ('M', 'PROPN'), ('L', 'PROPN'), ('  ', 'SPACE'), ('=', 'PUNCT'), (' ', 'SPACE'), ('number', 'NOUN'), ('blocks', 'NOUN'), ('M', 'PROPN'), ('n', 'NOUN'), ('  ', 'SPACE'), ('=', 'PUNCT'), (' ', 'SPACE'), ('length', 'NOUN'), ('hash', 'NOUN'), ('code', 'NOUN'), ('produced', 'VERB'), ('embedded', 'VERB'), ('hash', 'NOUN'), ('function', 'NOUN'), ('K', 'PROPN'), ('+', 'ADP'), (' ', 'SPACE'), ('=', 'SYM'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('th', 'advmod'), ('block', 'ROOT'), ('M', 'compound'), ('L', 'pobj'), ('  ', 'appos'), ('=', 'punct'), (' ', 'nmod'), ('number', 'appos'), ('blocks', 'pobj'), ('M', 'pobj'), ('n', 'cc'), ('  ', 'nummod'), ('=', 'punct'), (' ', 'nmod'), ('length', 'appos'), ('hash', 'compound'), ('code', 'pobj'), ('produced', 'acl'), ('embedded', 'amod'), ('hash', 'compound'), ('function', 'compound'), ('K', 'pobj'), ('+', 'cc'), (' ', 'nummod'), ('=', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[th, block], [block, M], [M, L], [L,   ], [  , =], [=,  ], [ , number], [number, blocks], [blocks, M], [M, n], [n,   ], [  , =], [=,  ], [ , length], [length, hash], [hash, code], [code, produced], [produced, embedded], [embedded, hash], [hash, function], [function, K], [K, +], [+,  ], [ , =], [=,  ]]
+
+>> Trigrams: 
+[[th, block, M], [block, M, L], [M, L,   ], [L,   , =], [  , =,  ], [=,  , number], [ , number, blocks], [number, blocks, M], [blocks, M, n], [M, n,   ], [n,   , =], [  , =,  ], [=,  , length], [ , length, hash], [length, hash, code], [hash, code, produced], [code, produced, embedded], [produced, embedded, hash], [embedded, hash, function], [hash, function, K], [function, K, +], [K, +,  ], [+,  , =], [ , =,  ]]
+
+>> Noun Phrases are: 
+[i, M L,  number, blocks, M,  length, hash code, embedded hash function K]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 47 =============================
+
+K padded with zeros on the left so that the result is b bits in length ipad  =  00110110 (36 in hexadecimal) repeated b/8 times opad =  01011100 (5C in hexadecimal) repeated b/8 times   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  MAC based on Block Ciphers The Data Authentication Algorithm (DAA), based on DES, has been one of the most widely used MACs for a number of years. 
+
+
+>> Tokens are: 
+[K, padded, zeros, left, result, b, bits, length, ipad,  , =,  , 00110110, (, 36, hexadecimal, ), repeated, b/8, times, opad, =,  , 01011100, (, 5C, hexadecimal, ), repeated, b/8, times,   , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , MAC, based, Block, Ciphers, Data, Authentication, Algorithm, (, DAA, ), ,, based, DES, ,, widely, MACs, number, years, .] 
+
+>> PoS Tags are: 
+[('K', 'PROPN'), ('padded', 'VERB'), ('zeros', 'NOUN'), ('left', 'NOUN'), ('result', 'NOUN'), ('b', 'ADP'), ('bits', 'NOUN'), ('length', 'NOUN'), ('ipad', 'NOUN'), (' ', 'SPACE'), ('=', 'SYM'), (' ', 'SPACE'), ('00110110', 'NUM'), ('(', 'PUNCT'), ('36', 'NUM'), ('hexadecimal', 'NOUN'), (')', 'PUNCT'), ('repeated', 'VERB'), ('b/8', 'NUM'), ('times', 'NOUN'), ('opad', 'NOUN'), ('=', 'SYM'), (' ', 'SPACE'), ('01011100', 'NUM'), ('(', 'PUNCT'), ('5C', 'VERB'), ('hexadecimal', 'NOUN'), (')', 'PUNCT'), ('repeated', 'VERB'), ('b/8', 'NUM'), ('times', 'NOUN'), ('  ', 'SPACE'), ('Unit-6', 'NOUN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('MAC', 'PROPN'), ('based', 'VERB'), ('Block', 'PROPN'), ('Ciphers', 'PROPN'), ('Data', 'PROPN'), ('Authentication', 'PROPN'), ('Algorithm', 'PROPN'), ('(', 'PUNCT'), ('DAA', 'PROPN'), (')', 'PUNCT'), (',', 'PUNCT'), ('based', 'VERB'), ('DES', 'PROPN'), (',', 'PUNCT'), ('widely', 'ADV'), ('MACs', 'NOUN'), ('number', 'NOUN'), ('years', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('K', 'nsubj'), ('padded', 'ROOT'), ('zeros', 'pobj'), ('left', 'pobj'), ('result', 'nsubj'), ('b', 'prep'), ('bits', 'pobj'), ('length', 'compound'), ('ipad', 'pobj'), (' ', 'nummod'), ('=', 'punct'), (' ', 'appos'), ('00110110', 'attr'), ('(', 'punct'), ('36', 'appos'), ('hexadecimal', 'pobj'), (')', 'punct'), ('repeated', 'amod'), ('b/8', 'compound'), ('times', 'compound'), ('opad', 'dobj'), ('=', 'punct'), (' ', 'appos'), ('01011100', 'nummod'), ('(', 'punct'), ('5C', 'appos'), ('hexadecimal', 'pobj'), (')', 'punct'), ('repeated', 'conj'), ('b/8', 'npadvmod'), ('times', 'npadvmod'), ('  ', 'nmod'), ('Unit-6', 'compound'), (' ', 'punct'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'poss'), ('‹#›', 'appos'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'nmod'), (' ', 'punct'), ('MAC', 'attr'), ('based', 'acl'), ('Block', 'compound'), ('Ciphers', 'pobj'), ('Data', 'compound'), ('Authentication', 'compound'), ('Algorithm', 'appos'), ('(', 'punct'), ('DAA', 'appos'), (')', 'punct'), (',', 'punct'), ('based', 'acl'), ('DES', 'pobj'), (',', 'punct'), ('widely', 'advmod'), ('MACs', 'pobj'), ('number', 'pobj'), ('years', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[K, padded], [padded, zeros], [zeros, left], [left, result], [result, b], [b, bits], [bits, length], [length, ipad], [ipad,  ], [ , =], [=,  ], [ , 00110110], [00110110, (], [(, 36], [36, hexadecimal], [hexadecimal, )], [), repeated], [repeated, b/8], [b/8, times], [times, opad], [opad, =], [=,  ], [ , 01011100], [01011100, (], [(, 5C], [5C, hexadecimal], [hexadecimal, )], [), repeated], [repeated, b/8], [b/8, times], [times,   ], [  , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , MAC], [MAC, based], [based, Block], [Block, Ciphers], [Ciphers, Data], [Data, Authentication], [Authentication, Algorithm], [Algorithm, (], [(, DAA], [DAA, )], [), ,], [,, based], [based, DES], [DES, ,], [,, widely], [widely, MACs], [MACs, number], [number, years], [years, .]]
+
+>> Trigrams: 
+[[K, padded, zeros], [padded, zeros, left], [zeros, left, result], [left, result, b], [result, b, bits], [b, bits, length], [bits, length, ipad], [length, ipad,  ], [ipad,  , =], [ , =,  ], [=,  , 00110110], [ , 00110110, (], [00110110, (, 36], [(, 36, hexadecimal], [36, hexadecimal, )], [hexadecimal, ), repeated], [), repeated, b/8], [repeated, b/8, times], [b/8, times, opad], [times, opad, =], [opad, =,  ], [=,  , 01011100], [ , 01011100, (], [01011100, (, 5C], [(, 5C, hexadecimal], [5C, hexadecimal, )], [hexadecimal, ), repeated], [), repeated, b/8], [repeated, b/8, times], [b/8, times,   ], [times,   , Unit-6], [  , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , MAC], [ , MAC, based], [MAC, based, Block], [based, Block, Ciphers], [Block, Ciphers, Data], [Ciphers, Data, Authentication], [Data, Authentication, Algorithm], [Authentication, Algorithm, (], [Algorithm, (, DAA], [(, DAA, )], [DAA, ), ,], [), ,, based], [,, based, DES], [based, DES, ,], [DES, ,, widely], [,, widely, MACs], [widely, MACs, number], [MACs, number, years], [number, years, .]]
+
+>> Noun Phrases are: 
+[K, zeros, the left, the result, bits, length ipad, hexadecimal, repeated b/8 times opad, hexadecimal, Darshan Institute, Engineering, Technology,   ‹#› INS, very Interesting Subject  MAC, Block Ciphers, The Data Authentication Algorithm, (DAA, DES, the most widely used MACs, a number, years]
+
+>> Named Entities are: 
+[('zeros', 'CARDINAL'), ('36', 'CARDINAL'), ('5C', 'CARDINAL'), ('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('MAC', 'ORG'), ('Block Ciphers The Data Authentication Algorithm', 'ORG'), ('a number of years', 'DATE')]
+
+
+============================ Sentence 48 =============================
+
+The algorithm can be defined as using the cipher block chaining (CBC) mode of operation of DES (Figure 6.4) with an initialization vector of zero. 
+
+
+>> Tokens are: 
+[algorithm, defined, cipher, block, chaining, (, CBC, ), mode, operation, DES, (, Figure, 6.4, ), initialization, vector, zero, .] 
+
+>> PoS Tags are: 
+[('algorithm', 'NOUN'), ('defined', 'VERB'), ('cipher', 'NOUN'), ('block', 'NOUN'), ('chaining', 'VERB'), ('(', 'PUNCT'), ('CBC', 'PROPN'), (')', 'PUNCT'), ('mode', 'NOUN'), ('operation', 'NOUN'), ('DES', 'PROPN'), ('(', 'PUNCT'), ('Figure', 'PROPN'), ('6.4', 'NUM'), (')', 'PUNCT'), ('initialization', 'NOUN'), ('vector', 'NOUN'), ('zero', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('algorithm', 'nsubjpass'), ('defined', 'ROOT'), ('cipher', 'amod'), ('block', 'dobj'), ('chaining', 'acl'), ('(', 'punct'), ('CBC', 'nmod'), (')', 'punct'), ('mode', 'dobj'), ('operation', 'pobj'), ('DES', 'pobj'), ('(', 'punct'), ('Figure', 'appos'), ('6.4', 'nummod'), (')', 'punct'), ('initialization', 'compound'), ('vector', 'pobj'), ('zero', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[algorithm, defined], [defined, cipher], [cipher, block], [block, chaining], [chaining, (], [(, CBC], [CBC, )], [), mode], [mode, operation], [operation, DES], [DES, (], [(, Figure], [Figure, 6.4], [6.4, )], [), initialization], [initialization, vector], [vector, zero], [zero, .]]
+
+>> Trigrams: 
+[[algorithm, defined, cipher], [defined, cipher, block], [cipher, block, chaining], [block, chaining, (], [chaining, (, CBC], [(, CBC, )], [CBC, ), mode], [), mode, operation], [mode, operation, DES], [operation, DES, (], [DES, (, Figure], [(, Figure, 6.4], [Figure, 6.4, )], [6.4, ), initialization], [), initialization, vector], [initialization, vector, zero], [vector, zero, .]]
+
+>> Noun Phrases are: 
+[The algorithm, the cipher block, CBC) mode, operation, DES, (Figure, an initialization vector]
+
+>> Named Entities are: 
+[('CBC', 'ORG'), ('6.4', 'CARDINAL'), ('zero', 'CARDINAL')]
+
+
+============================ Sentence 49 =============================
+
+    Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Data Authentication Algorithm (DAA) 
+
+
+>> Tokens are: 
+[    , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Data, Authentication, Algorithm, (, DAA, )] 
+
+>> PoS Tags are: 
+[('    ', 'SPACE'), ('Unit-6', 'VERB'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Data', 'PROPN'), ('Authentication', 'PROPN'), ('Algorithm', 'PROPN'), ('(', 'PUNCT'), ('DAA', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('    ', 'nsubj'), ('Unit-6', 'nmod'), (' ', 'appos'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'nsubj'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'appos'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'compound'), ('Data', 'compound'), ('Authentication', 'compound'), ('Algorithm', 'attr'), ('(', 'punct'), ('DAA', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[    , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Data], [Data, Authentication], [Authentication, Algorithm], [Algorithm, (], [(, DAA], [DAA, )]]
+
+>> Trigrams: 
+[[    , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Data], [ , Data, Authentication], [Data, Authentication, Algorithm], [Authentication, Algorithm, (], [Algorithm, (, DAA], [(, DAA, )]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS, very Interesting Subject  Data Authentication Algorithm, (DAA]
+
+>> Named Entities are: 
+[('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG')]
+
+
+============================ Sentence 50 =============================
+
+   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Data Authentication Algorithm (DAA) 
+
+
+>> Tokens are: 
+[   , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Data, Authentication, Algorithm, (, DAA, )] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('Unit-6', 'VERB'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Data', 'PROPN'), ('Authentication', 'PROPN'), ('Algorithm', 'PROPN'), ('(', 'PUNCT'), ('DAA', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('   ', 'compound'), ('Unit-6', 'nmod'), (' ', 'dobj'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'compound'), ('Darshan', 'compound'), ('Institute', 'nsubj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'punct'), ('INS', 'appos'), ('Interesting', 'amod'), ('Subject', 'amod'), (' ', 'compound'), ('Data', 'compound'), ('Authentication', 'compound'), ('Algorithm', 'punct'), ('(', 'punct'), ('DAA', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[   , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Data], [Data, Authentication], [Authentication, Algorithm], [Algorithm, (], [(, DAA], [DAA, )]]
+
+>> Trigrams: 
+[[   , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Data], [ , Data, Authentication], [Data, Authentication, Algorithm], [Authentication, Algorithm, (], [Algorithm, (, DAA], [(, DAA, )]]
+
+>> Noun Phrases are: 
+[   Unit-6  Message Authentication Codes                                  Darshan Institute, Engineering, Technology, INS, (DAA]
+
+>> Named Entities are: 
+[('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('DAA', 'ORG')]
+
+
+============================ Sentence 51 =============================
+
+The data (e.g.--.-, message, record, file, or program) to be authenticated are grouped into contiguous 64-bit blocks:  D1, D2, …. 
+
+
+>> Tokens are: 
+[data, (, e.g.--.-, ,, message, ,, record, ,, file, ,, program, ), authenticated, grouped, contiguous, 64, -, bit, blocks, :,  , D1, ,, D2, ,, …, .] 
+
+>> PoS Tags are: 
+[('data', 'NOUN'), ('(', 'PUNCT'), ('e.g.--.-', 'X'), (',', 'PUNCT'), ('message', 'NOUN'), (',', 'PUNCT'), ('record', 'NOUN'), (',', 'PUNCT'), ('file', 'NOUN'), (',', 'PUNCT'), ('program', 'NOUN'), (')', 'PUNCT'), ('authenticated', 'VERB'), ('grouped', 'VERB'), ('contiguous', 'ADJ'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('blocks', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE'), ('D1', 'PROPN'), (',', 'PUNCT'), ('D2', 'PROPN'), (',', 'PUNCT'), ('…', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('data', 'nsubjpass'), ('(', 'punct'), ('e.g.--.-', 'appos'), (',', 'punct'), ('message', 'conj'), (',', 'punct'), ('record', 'conj'), (',', 'punct'), ('file', 'conj'), (',', 'punct'), ('program', 'conj'), (')', 'punct'), ('authenticated', 'relcl'), ('grouped', 'ROOT'), ('contiguous', 'amod'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'compound'), ('blocks', 'pobj'), (':', 'punct'), (' ', 'compound'), ('D1', 'appos'), (',', 'punct'), ('D2', 'appos'), (',', 'punct'), ('…', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[data, (], [(, e.g.--.-], [e.g.--.-, ,], [,, message], [message, ,], [,, record], [record, ,], [,, file], [file, ,], [,, program], [program, )], [), authenticated], [authenticated, grouped], [grouped, contiguous], [contiguous, 64], [64, -], [-, bit], [bit, blocks], [blocks, :], [:,  ], [ , D1], [D1, ,], [,, D2], [D2, ,], [,, …], […, .]]
+
+>> Trigrams: 
+[[data, (, e.g.--.-], [(, e.g.--.-, ,], [e.g.--.-, ,, message], [,, message, ,], [message, ,, record], [,, record, ,], [record, ,, file], [,, file, ,], [file, ,, program], [,, program, )], [program, ), authenticated], [), authenticated, grouped], [authenticated, grouped, contiguous], [grouped, contiguous, 64], [contiguous, 64, -], [64, -, bit], [-, bit, blocks], [bit, blocks, :], [blocks, :,  ], [:,  , D1], [ , D1, ,], [D1, ,, D2], [,, D2, ,], [D2, ,, …], [,, …, .]]
+
+>> Noun Phrases are: 
+[The data, message, record, file, program, contiguous 64-bit blocks,  D1, D2]
+
+>> Named Entities are: 
+[('64', 'CARDINAL')]
+
+
+============================ Sentence 52 =============================
+
+Dn. 
+
+
+>> Tokens are: 
+[Dn, .] 
+
+>> PoS Tags are: 
+[('Dn', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Dn', 'ROOT'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Dn, .]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Dn]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 53 =============================
+
+If necessary, the final block is padded on the right with zeroes to form a full 64-bit block. 
+
+
+>> Tokens are: 
+[necessary, ,, final, block, padded, right, zeroes, form, 64, -, bit, block, .] 
+
+>> PoS Tags are: 
+[('necessary', 'ADJ'), (',', 'PUNCT'), ('final', 'ADJ'), ('block', 'NOUN'), ('padded', 'VERB'), ('right', 'NOUN'), ('zeroes', 'NOUN'), ('form', 'VERB'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('block', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('necessary', 'advcl'), (',', 'punct'), ('final', 'amod'), ('block', 'nsubjpass'), ('padded', 'ROOT'), ('right', 'pobj'), ('zeroes', 'pobj'), ('form', 'advcl'), ('64', 'nummod'), ('-', 'punct'), ('bit', 'compound'), ('block', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[necessary, ,], [,, final], [final, block], [block, padded], [padded, right], [right, zeroes], [zeroes, form], [form, 64], [64, -], [-, bit], [bit, block], [block, .]]
+
+>> Trigrams: 
+[[necessary, ,, final], [,, final, block], [final, block, padded], [block, padded, right], [padded, right, zeroes], [right, zeroes, form], [zeroes, form, 64], [form, 64, -], [64, -, bit], [-, bit, block], [bit, block, .]]
+
+>> Noun Phrases are: 
+[the final block, the right, zeroes, a full 64-bit block]
+
+>> Named Entities are: 
+[('64', 'CARDINAL')]
+
+
+============================ Sentence 54 =============================
+
+Using the DES encryption algorithm E and a secret key K, a data authentication code (DAC) is calculated as follows   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Cipher-Based Message Authentication Code (CMAC) 
+
+
+>> Tokens are: 
+[DES, encryption, algorithm, E, secret, key, K, ,, data, authentication, code, (, DAC, ), calculated, follows,   , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Cipher, -, Based, Message, Authentication, Code, (, CMAC, )] 
+
+>> PoS Tags are: 
+[('DES', 'PROPN'), ('encryption', 'NOUN'), ('algorithm', 'NOUN'), ('E', 'NOUN'), ('secret', 'ADJ'), ('key', 'ADJ'), ('K', 'PROPN'), (',', 'PUNCT'), ('data', 'NOUN'), ('authentication', 'NOUN'), ('code', 'NOUN'), ('(', 'PUNCT'), ('DAC', 'PROPN'), (')', 'PUNCT'), ('calculated', 'VERB'), ('follows', 'VERB'), ('  ', 'SPACE'), ('Unit-6', 'NOUN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Cipher', 'PROPN'), ('-', 'PUNCT'), ('Based', 'PROPN'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Code', 'PROPN'), ('(', 'PUNCT'), ('CMAC', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('DES', 'compound'), ('encryption', 'dobj'), ('algorithm', 'intj'), ('E', 'dobj'), ('secret', 'amod'), ('key', 'amod'), ('K', 'conj'), (',', 'punct'), ('data', 'compound'), ('authentication', 'compound'), ('code', 'nsubjpass'), ('(', 'punct'), ('DAC', 'appos'), (')', 'punct'), ('calculated', 'ccomp'), ('follows', 'advcl'), ('  ', 'nmod'), ('Unit-6', 'compound'), (' ', 'compound'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'dobj'), ('                                 ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'attr'), (' ', 'prep'), ('Cipher', 'compound'), ('-', 'punct'), ('Based', 'compound'), ('Message', 'compound'), ('Authentication', 'compound'), ('Code', 'pobj'), ('(', 'punct'), ('CMAC', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[DES, encryption], [encryption, algorithm], [algorithm, E], [E, secret], [secret, key], [key, K], [K, ,], [,, data], [data, authentication], [authentication, code], [code, (], [(, DAC], [DAC, )], [), calculated], [calculated, follows], [follows,   ], [  , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Cipher], [Cipher, -], [-, Based], [Based, Message], [Message, Authentication], [Authentication, Code], [Code, (], [(, CMAC], [CMAC, )]]
+
+>> Trigrams: 
+[[DES, encryption, algorithm], [encryption, algorithm, E], [algorithm, E, secret], [E, secret, key], [secret, key, K], [key, K, ,], [K, ,, data], [,, data, authentication], [data, authentication, code], [authentication, code, (], [code, (, DAC], [(, DAC, )], [DAC, ), calculated], [), calculated, follows], [calculated, follows,   ], [follows,   , Unit-6], [  , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Cipher], [ , Cipher, -], [Cipher, -, Based], [-, Based, Message], [Based, Message, Authentication], [Message, Authentication, Code], [Authentication, Code, (], [Code, (, CMAC], [(, CMAC, )]]
+
+>> Noun Phrases are: 
+[the DES encryption, E, a secret key K, a data authentication code, DAC,   Unit-6  Message Authentication Codes, Darshan Institute, Engineering, Technology, INS, Cipher-Based Message Authentication Code, CMAC]
+
+>> Named Entities are: 
+[('DAC', 'ORG'), ('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('CMAC', 'ORG')]
+
+
+============================ Sentence 55 =============================
+
+Cipher-based Message Authentication Code (CMAC) mode of operation for use with AES and triple DES. 
+
+
+>> Tokens are: 
+[Cipher, -, based, Message, Authentication, Code, (, CMAC, ), mode, operation, use, AES, triple, DES, .] 
+
+>> PoS Tags are: 
+[('Cipher', 'PROPN'), ('-', 'PUNCT'), ('based', 'VERB'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Code', 'PROPN'), ('(', 'PUNCT'), ('CMAC', 'PROPN'), (')', 'PUNCT'), ('mode', 'NOUN'), ('operation', 'NOUN'), ('use', 'NOUN'), ('AES', 'PROPN'), ('triple', 'ADJ'), ('DES', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Cipher', 'npadvmod'), ('-', 'punct'), ('based', 'amod'), ('Message', 'compound'), ('Authentication', 'compound'), ('Code', 'ROOT'), ('(', 'punct'), ('CMAC', 'nmod'), (')', 'punct'), ('mode', 'appos'), ('operation', 'pobj'), ('use', 'pobj'), ('AES', 'pobj'), ('triple', 'amod'), ('DES', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Cipher, -], [-, based], [based, Message], [Message, Authentication], [Authentication, Code], [Code, (], [(, CMAC], [CMAC, )], [), mode], [mode, operation], [operation, use], [use, AES], [AES, triple], [triple, DES], [DES, .]]
+
+>> Trigrams: 
+[[Cipher, -, based], [-, based, Message], [based, Message, Authentication], [Message, Authentication, Code], [Authentication, Code, (], [Code, (, CMAC], [(, CMAC, )], [CMAC, ), mode], [), mode, operation], [mode, operation, use], [operation, use, AES], [use, AES, triple], [AES, triple, DES], [triple, DES, .]]
+
+>> Noun Phrases are: 
+[Cipher-based Message Authentication Code, CMAC) mode, operation, use, AES, triple DES]
+
+>> Named Entities are: 
+[('Message', 'ORG'), ('CMAC', 'ORG')]
+
+
+============================ Sentence 56 =============================
+
+First, let us define the operation of CMAC when the message is an integer multiple n of the cipher block length b. For AES, b = 128, and for triple DES, b = 64. 
+
+
+>> Tokens are: 
+[,, let, define, operation, CMAC, message, integer, multiple, n, cipher, block, length, b., AES, ,, b, =, 128, ,, triple, DES, ,, b, =, 64, .] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('let', 'VERB'), ('define', 'VERB'), ('operation', 'NOUN'), ('CMAC', 'PROPN'), ('message', 'NOUN'), ('integer', 'NOUN'), ('multiple', 'NOUN'), ('n', 'CCONJ'), ('cipher', 'NOUN'), ('block', 'NOUN'), ('length', 'NOUN'), ('b.', 'PROPN'), ('AES', 'PROPN'), (',', 'PUNCT'), ('b', 'X'), ('=', 'SYM'), ('128', 'NUM'), (',', 'PUNCT'), ('triple', 'ADJ'), ('DES', 'PROPN'), (',', 'PUNCT'), ('b', 'NOUN'), ('=', 'SYM'), ('64', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('let', 'ROOT'), ('define', 'ccomp'), ('operation', 'dobj'), ('CMAC', 'pobj'), ('message', 'nsubj'), ('integer', 'compound'), ('multiple', 'attr'), ('n', 'advmod'), ('cipher', 'compound'), ('block', 'compound'), ('length', 'pobj'), ('b.', 'npadvmod'), ('AES', 'pobj'), (',', 'punct'), ('b', 'dep'), ('=', 'quantmod'), ('128', 'prep'), (',', 'punct'), ('triple', 'amod'), ('DES', 'pobj'), (',', 'punct'), ('b', 'ccomp'), ('=', 'quantmod'), ('64', 'prep'), ('.', 'punct')]
+
+>> Bigrams: 
+[[,, let], [let, define], [define, operation], [operation, CMAC], [CMAC, message], [message, integer], [integer, multiple], [multiple, n], [n, cipher], [cipher, block], [block, length], [length, b.], [b., AES], [AES, ,], [,, b], [b, =], [=, 128], [128, ,], [,, triple], [triple, DES], [DES, ,], [,, b], [b, =], [=, 64], [64, .]]
+
+>> Trigrams: 
+[[,, let, define], [let, define, operation], [define, operation, CMAC], [operation, CMAC, message], [CMAC, message, integer], [message, integer, multiple], [integer, multiple, n], [multiple, n, cipher], [n, cipher, block], [cipher, block, length], [block, length, b.], [length, b., AES], [b., AES, ,], [AES, ,, b], [,, b, =], [b, =, 128], [=, 128, ,], [128, ,, triple], [,, triple, DES], [triple, DES, ,], [DES, ,, b], [,, b, =], [b, =, 64], [=, 64, .]]
+
+>> Noun Phrases are: 
+[us, the operation, CMAC, the message, an integer multiple, the cipher block length, AES, triple DES]
+
+>> Named Entities are: 
+[('First', 'ORDINAL'), ('CMAC', 'ORG'), ('AES', 'ORG'), ('128', 'CARDINAL'), ('64', 'DATE')]
+
+
+============================ Sentence 57 =============================
+
+The message is divided into n blocks (M1, M2,… Mn)  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Cipher-Based Message Authentication Code (CMAC) 
+
+
+>> Tokens are: 
+[message, divided, n, blocks, (, M1, ,, M2, ,, …, Mn, ),  , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Cipher, -, Based, Message, Authentication, Code, (, CMAC, )] 
+
+>> PoS Tags are: 
+[('message', 'NOUN'), ('divided', 'VERB'), ('n', 'CCONJ'), ('blocks', 'NOUN'), ('(', 'PUNCT'), ('M1', 'PROPN'), (',', 'PUNCT'), ('M2', 'PROPN'), (',', 'PUNCT'), ('…', 'PUNCT'), ('Mn', 'PROPN'), (')', 'PUNCT'), (' ', 'SPACE'), ('Unit-6', 'PROPN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Cipher', 'PROPN'), ('-', 'PUNCT'), ('Based', 'PROPN'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Code', 'PROPN'), ('(', 'PUNCT'), ('CMAC', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('message', 'nsubjpass'), ('divided', 'ccomp'), ('n', 'pobj'), ('blocks', 'pobj'), ('(', 'punct'), ('M1', 'appos'), (',', 'punct'), ('M2', 'appos'), (',', 'punct'), ('…', 'punct'), ('Mn', 'appos'), (')', 'punct'), (' ', 'appos'), ('Unit-6', 'compound'), (' ', 'compound'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'compound'), ('Darshan', 'compound'), ('Institute', 'npadvmod'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'attr'), (' ', 'prep'), ('Cipher', 'compound'), ('-', 'punct'), ('Based', 'compound'), ('Message', 'compound'), ('Authentication', 'compound'), ('Code', 'pobj'), ('(', 'punct'), ('CMAC', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[message, divided], [divided, n], [n, blocks], [blocks, (], [(, M1], [M1, ,], [,, M2], [M2, ,], [,, …], […, Mn], [Mn, )], [),  ], [ , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Cipher], [Cipher, -], [-, Based], [Based, Message], [Message, Authentication], [Authentication, Code], [Code, (], [(, CMAC], [CMAC, )]]
+
+>> Trigrams: 
+[[message, divided, n], [divided, n, blocks], [n, blocks, (], [blocks, (, M1], [(, M1, ,], [M1, ,, M2], [,, M2, ,], [M2, ,, …], [,, …, Mn], […, Mn, )], [Mn, ),  ], [),  , Unit-6], [ , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Cipher], [ , Cipher, -], [Cipher, -, Based], [-, Based, Message], [Based, Message, Authentication], [Message, Authentication, Code], [Authentication, Code, (], [Code, (, CMAC], [(, CMAC, )]]
+
+>> Noun Phrases are: 
+[The message, blocks, M1, M2, Mn, Engineering, Technology, INS, Cipher-Based Message Authentication Code, CMAC]
+
+>> Named Entities are: 
+[('M2', 'LANGUAGE'), ('Mn', 'PERSON'), ('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('CMAC', 'ORG')]
+
+
+============================ Sentence 58 =============================
+
+The algorithm makes use of a k-bit encryption key K and a b-bit constant, K1. 
+
+
+>> Tokens are: 
+[algorithm, makes, use, k, -, bit, encryption, key, K, b, -, bit, constant, ,, K1, .] 
+
+>> PoS Tags are: 
+[('algorithm', 'NOUN'), ('makes', 'VERB'), ('use', 'NOUN'), ('k', 'NOUN'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('encryption', 'NOUN'), ('key', 'ADJ'), ('K', 'PROPN'), ('b', 'X'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('constant', 'ADJ'), (',', 'PUNCT'), ('K1', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('algorithm', 'nsubj'), ('makes', 'ROOT'), ('use', 'dobj'), ('k', 'det'), ('-', 'punct'), ('bit', 'compound'), ('encryption', 'pobj'), ('key', 'amod'), ('K', 'appos'), ('b', 'det'), ('-', 'punct'), ('bit', 'npadvmod'), ('constant', 'conj'), (',', 'punct'), ('K1', 'appos'), ('.', 'punct')]
+
+>> Bigrams: 
+[[algorithm, makes], [makes, use], [use, k], [k, -], [-, bit], [bit, encryption], [encryption, key], [key, K], [K, b], [b, -], [-, bit], [bit, constant], [constant, ,], [,, K1], [K1, .]]
+
+>> Trigrams: 
+[[algorithm, makes, use], [makes, use, k], [use, k, -], [k, -, bit], [-, bit, encryption], [bit, encryption, key], [encryption, key, K], [key, K, b], [K, b, -], [b, -, bit], [-, bit, constant], [bit, constant, ,], [constant, ,, K1], [,, K1, .]]
+
+>> Noun Phrases are: 
+[The algorithm, use, a k-bit encryption, key K, , K1]
+
+>> Named Entities are: 
+[('K1', 'PERSON')]
+
+
+============================ Sentence 59 =============================
+
+For AES, the key size k is 128, 192, or 256 bits; for triple DES, the key size is 112 or 168 bits. 
+
+
+>> Tokens are: 
+[AES, ,, key, size, k, 128, ,, 192, ,, 256, bits, ;, triple, DES, ,, key, size, 112, 168, bits, .] 
+
+>> PoS Tags are: 
+[('AES', 'PROPN'), (',', 'PUNCT'), ('key', 'ADJ'), ('size', 'NOUN'), ('k', 'NOUN'), ('128', 'NUM'), (',', 'PUNCT'), ('192', 'NUM'), (',', 'PUNCT'), ('256', 'NUM'), ('bits', 'NOUN'), (';', 'PUNCT'), ('triple', 'ADJ'), ('DES', 'PROPN'), (',', 'PUNCT'), ('key', 'ADJ'), ('size', 'NOUN'), ('112', 'NUM'), ('168', 'NUM'), ('bits', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AES', 'pobj'), (',', 'punct'), ('key', 'amod'), ('size', 'nsubj'), ('k', 'punct'), ('128', 'attr'), (',', 'punct'), ('192', 'appos'), (',', 'punct'), ('256', 'nummod'), ('bits', 'conj'), (';', 'punct'), ('triple', 'amod'), ('DES', 'pobj'), (',', 'punct'), ('key', 'amod'), ('size', 'nsubj'), ('112', 'nummod'), ('168', 'conj'), ('bits', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AES, ,], [,, key], [key, size], [size, k], [k, 128], [128, ,], [,, 192], [192, ,], [,, 256], [256, bits], [bits, ;], [;, triple], [triple, DES], [DES, ,], [,, key], [key, size], [size, 112], [112, 168], [168, bits], [bits, .]]
+
+>> Trigrams: 
+[[AES, ,, key], [,, key, size], [key, size, k], [size, k, 128], [k, 128, ,], [128, ,, 192], [,, 192, ,], [192, ,, 256], [,, 256, bits], [256, bits, ;], [bits, ;, triple], [;, triple, DES], [triple, DES, ,], [DES, ,, key], [,, key, size], [key, size, 112], [size, 112, 168], [112, 168, bits], [168, bits, .]]
+
+>> Noun Phrases are: 
+[AES, the key size, 256 bits, triple DES, the key size, 112 or 168 bits]
+
+>> Named Entities are: 
+[('AES', 'ORG'), ('128', 'CARDINAL'), ('192', 'CARDINAL'), ('256', 'CARDINAL'), ('112', 'CARDINAL'), ('168', 'CARDINAL')]
+
+
+============================ Sentence 60 =============================
+
+ CMAC is calculated as follows   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Cipher-Based Message Authentication Code (CMAC) 
+
+
+>> Tokens are: 
+[ , CMAC, calculated, follows,   , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject,  , Cipher, -, Based, Message, Authentication, Code, (, CMAC, )] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('CMAC', 'PROPN'), ('calculated', 'VERB'), ('follows', 'VERB'), ('  ', 'SPACE'), ('Unit-6', 'NOUN'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ'), (' ', 'SPACE'), ('Cipher', 'PROPN'), ('-', 'PUNCT'), ('Based', 'PROPN'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Code', 'PROPN'), ('(', 'PUNCT'), ('CMAC', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'compound'), ('CMAC', 'nsubjpass'), ('calculated', 'ccomp'), ('follows', 'advcl'), ('  ', 'nmod'), ('Unit-6', 'compound'), (' ', 'compound'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'dobj'), ('                                 ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'attr'), (' ', 'prep'), ('Cipher', 'compound'), ('-', 'punct'), ('Based', 'compound'), ('Message', 'compound'), ('Authentication', 'compound'), ('Code', 'pobj'), ('(', 'punct'), ('CMAC', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[ , CMAC], [CMAC, calculated], [calculated, follows], [follows,   ], [  , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject], [Subject,  ], [ , Cipher], [Cipher, -], [-, Based], [Based, Message], [Message, Authentication], [Authentication, Code], [Code, (], [(, CMAC], [CMAC, )]]
+
+>> Trigrams: 
+[[ , CMAC, calculated], [CMAC, calculated, follows], [calculated, follows,   ], [follows,   , Unit-6], [  , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject], [Interesting, Subject,  ], [Subject,  , Cipher], [ , Cipher, -], [Cipher, -, Based], [-, Based, Message], [Based, Message, Authentication], [Message, Authentication, Code], [Authentication, Code, (], [Code, (, CMAC], [(, CMAC, )]]
+
+>> Noun Phrases are: 
+[ CMAC,   Unit-6  Message Authentication Codes, Darshan Institute, Engineering, Technology, INS, Cipher-Based Message Authentication Code, CMAC]
+
+>> Named Entities are: 
+[('CMAC', 'ORG'), ('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('CMAC', 'ORG')]
+
+
+============================ Sentence 61 =============================
+
+   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject 
+
+
+>> Tokens are: 
+[   , Unit-6,  , Message, Authentication, Codes,                                  , Darshan, Institute, Engineering, &, Technology,   , ‹#›, INS, Interesting, Subject] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('Unit-6', 'VERB'), (' ', 'SPACE'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('                                 ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('  ', 'SPACE'), ('‹#›', 'PUNCT'), ('INS', 'PROPN'), ('Interesting', 'ADJ'), ('Subject', 'ADJ')] 
+
+>> Dependency Tags are: 
+[('   ', 'compound'), ('Unit-6', 'compound'), (' ', 'nsubj'), ('Message', 'compound'), ('Authentication', 'compound'), ('Codes', 'compound'), ('                                 ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), ('  ', 'conj'), ('‹#›', 'dep'), ('INS', 'nsubj'), ('Interesting', 'amod'), ('Subject', 'attr')]
+
+>> Bigrams: 
+[[   , Unit-6], [Unit-6,  ], [ , Message], [Message, Authentication], [Authentication, Codes], [Codes,                                  ], [                                 , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology,   ], [  , ‹#›], [‹#›, INS], [INS, Interesting], [Interesting, Subject]]
+
+>> Trigrams: 
+[[   , Unit-6,  ], [Unit-6,  , Message], [ , Message, Authentication], [Message, Authentication, Codes], [Authentication, Codes,                                  ], [Codes,                                  , Darshan], [                                 , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology,   ], [Technology,   , ‹#›], [  , ‹#›, INS], [‹#›, INS, Interesting], [INS, Interesting, Subject]]
+
+>> Noun Phrases are: 
+[Darshan Institute, Engineering, Technology, INS]
+
+>> Named Entities are: 
+[('Unit-6', 'ORG'), ('Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG')]

@@ -1,0 +1,1038 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+Django   1. 
+
+
+>> Tokens are: 
+ ['Django', '1', '.']
+
+>> Bigrams are: 
+ [('Django', '1'), ('1', '.')]
+
+>> Trigrams are: 
+ [('Django', '1', '.')]
+
+>> POS Tags are: 
+ [('Django', 'NNP'), ('1', 'CD'), ('.', '.')]
+
+ (S (NP Django/NNP) 1/CD ./.) 
+
+
+>> Noun Phrases are: 
+ ['Django']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Django', 'django'), ('1', '1'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Django', 'django'), ('1', '1'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Django', 'Django'), ('1', '1'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+What is Django? 
+
+
+>> Tokens are: 
+ ['What', 'Django', '?']
+
+>> Bigrams are: 
+ [('What', 'Django'), ('Django', '?')]
+
+>> Trigrams are: 
+ [('What', 'Django', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Django', 'NNP'), ('?', '.')]
+
+ (S What/WP (NP Django/NNP) ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Django']
+
+>> Named Entities are: 
+ [('PERSON', 'Django')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Django', 'django'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Django', 'django'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Django', 'Django'), ('?', '?')]
+
+
+
+============================ Sentence 3 =============================
+
+· Django  is a free and open source web application framework written in Python. 
+
+
+>> Tokens are: 
+ ['·', 'Django', 'free', 'open', 'source', 'web', 'application', 'framework', 'written', 'Python', '.']
+
+>> Bigrams are: 
+ [('·', 'Django'), ('Django', 'free'), ('free', 'open'), ('open', 'source'), ('source', 'web'), ('web', 'application'), ('application', 'framework'), ('framework', 'written'), ('written', 'Python'), ('Python', '.')]
+
+>> Trigrams are: 
+ [('·', 'Django', 'free'), ('Django', 'free', 'open'), ('free', 'open', 'source'), ('open', 'source', 'web'), ('source', 'web', 'application'), ('web', 'application', 'framework'), ('application', 'framework', 'written'), ('framework', 'written', 'Python'), ('written', 'Python', '.')]
+
+>> POS Tags are: 
+ [('·', 'NNS'), ('Django', 'NNP'), ('free', 'JJ'), ('open', 'JJ'), ('source', 'NN'), ('web', 'NN'), ('application', 'NN'), ('framework', 'NN'), ('written', 'VBN'), ('Python', 'NNP'), ('.', '.')]
+
+ (S
+  (NP ·/NNS Django/NNP)
+  (NP free/JJ open/JJ source/NN web/NN application/NN framework/NN)
+  written/VBN
+  (NP Python/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Django', 'free open source web application framework', 'Python']
+
+>> Named Entities are: 
+ [('PERSON', 'Django'), ('PERSON', 'Python')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Django', 'django'), ('free', 'free'), ('open', 'open'), ('source', 'sourc'), ('web', 'web'), ('application', 'applic'), ('framework', 'framework'), ('written', 'written'), ('Python', 'python'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Django', 'django'), ('free', 'free'), ('open', 'open'), ('source', 'sourc'), ('web', 'web'), ('application', 'applic'), ('framework', 'framework'), ('written', 'written'), ('Python', 'python'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Django', 'Django'), ('free', 'free'), ('open', 'open'), ('source', 'source'), ('web', 'web'), ('application', 'application'), ('framework', 'framework'), ('written', 'written'), ('Python', 'Python'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+2. 
+
+
+>> Tokens are: 
+ ['2', '.']
+
+>> Bigrams are: 
+ [('2', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('2', 'CD'), ('.', '.')]
+
+ (S 2/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('2', '2'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('2', '2'), ('.', '.')]
+
+>> Lemmatization: 
+ [('2', '2'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+What is Web Framework? 
+
+
+>> Tokens are: 
+ ['What', 'Web', 'Framework', '?']
+
+>> Bigrams are: 
+ [('What', 'Web'), ('Web', 'Framework'), ('Framework', '?')]
+
+>> Trigrams are: 
+ [('What', 'Web', 'Framework'), ('Web', 'Framework', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Web', 'NNP'), ('Framework', 'NNP'), ('?', '.')]
+
+ (S What/WP (NP Web/NNP Framework/NNP) ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Web Framework']
+
+>> Named Entities are: 
+ [('PERSON', 'Web Framework')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Web', 'web'), ('Framework', 'framework'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Web', 'web'), ('Framework', 'framework'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Web', 'Web'), ('Framework', 'Framework'), ('?', '?')]
+
+
+
+============================ Sentence 6 =============================
+
+· A web framework is a set of components that helps you to develop websites faster and easier. 
+
+
+>> Tokens are: 
+ ['·', 'A', 'web', 'framework', 'set', 'components', 'helps', 'develop', 'websites', 'faster', 'easier', '.']
+
+>> Bigrams are: 
+ [('·', 'A'), ('A', 'web'), ('web', 'framework'), ('framework', 'set'), ('set', 'components'), ('components', 'helps'), ('helps', 'develop'), ('develop', 'websites'), ('websites', 'faster'), ('faster', 'easier'), ('easier', '.')]
+
+>> Trigrams are: 
+ [('·', 'A', 'web'), ('A', 'web', 'framework'), ('web', 'framework', 'set'), ('framework', 'set', 'components'), ('set', 'components', 'helps'), ('components', 'helps', 'develop'), ('helps', 'develop', 'websites'), ('develop', 'websites', 'faster'), ('websites', 'faster', 'easier'), ('faster', 'easier', '.')]
+
+>> POS Tags are: 
+ [('·', 'VB'), ('A', 'DT'), ('web', 'JJ'), ('framework', 'NN'), ('set', 'VBN'), ('components', 'NNS'), ('helps', 'VBZ'), ('develop', 'VB'), ('websites', 'NNS'), ('faster', 'RBR'), ('easier', 'RB'), ('.', '.')]
+
+ (S
+  ·/VB
+  (NP A/DT web/JJ framework/NN)
+  set/VBN
+  (NP components/NNS)
+  helps/VBZ
+  develop/VB
+  (NP websites/NNS)
+  faster/RBR
+  easier/RB
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A web framework', 'components', 'websites']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('A', 'a'), ('web', 'web'), ('framework', 'framework'), ('set', 'set'), ('components', 'compon'), ('helps', 'help'), ('develop', 'develop'), ('websites', 'websit'), ('faster', 'faster'), ('easier', 'easier'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('A', 'a'), ('web', 'web'), ('framework', 'framework'), ('set', 'set'), ('components', 'compon'), ('helps', 'help'), ('develop', 'develop'), ('websites', 'websit'), ('faster', 'faster'), ('easier', 'easier'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('A', 'A'), ('web', 'web'), ('framework', 'framework'), ('set', 'set'), ('components', 'component'), ('helps', 'help'), ('develop', 'develop'), ('websites', 'website'), ('faster', 'faster'), ('easier', 'easier'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+· When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc. 
+
+
+>> Tokens are: 
+ ['·', 'When', "'re", 'building', 'website', ',', 'always', 'need', 'similar', 'set', 'components', ':', 'way', 'handle', 'user', 'authentication', '(', 'signing', ',', 'signing', ',', 'signing', ')', ',', 'management', 'panel', 'website', ',', 'forms', ',', 'way', 'upload', 'files', ',', 'etc', '.']
+
+>> Bigrams are: 
+ [('·', 'When'), ('When', "'re"), ("'re", 'building'), ('building', 'website'), ('website', ','), (',', 'always'), ('always', 'need'), ('need', 'similar'), ('similar', 'set'), ('set', 'components'), ('components', ':'), (':', 'way'), ('way', 'handle'), ('handle', 'user'), ('user', 'authentication'), ('authentication', '('), ('(', 'signing'), ('signing', ','), (',', 'signing'), ('signing', ','), (',', 'signing'), ('signing', ')'), (')', ','), (',', 'management'), ('management', 'panel'), ('panel', 'website'), ('website', ','), (',', 'forms'), ('forms', ','), (',', 'way'), ('way', 'upload'), ('upload', 'files'), ('files', ','), (',', 'etc'), ('etc', '.')]
+
+>> Trigrams are: 
+ [('·', 'When', "'re"), ('When', "'re", 'building'), ("'re", 'building', 'website'), ('building', 'website', ','), ('website', ',', 'always'), (',', 'always', 'need'), ('always', 'need', 'similar'), ('need', 'similar', 'set'), ('similar', 'set', 'components'), ('set', 'components', ':'), ('components', ':', 'way'), (':', 'way', 'handle'), ('way', 'handle', 'user'), ('handle', 'user', 'authentication'), ('user', 'authentication', '('), ('authentication', '(', 'signing'), ('(', 'signing', ','), ('signing', ',', 'signing'), (',', 'signing', ','), ('signing', ',', 'signing'), (',', 'signing', ')'), ('signing', ')', ','), (')', ',', 'management'), (',', 'management', 'panel'), ('management', 'panel', 'website'), ('panel', 'website', ','), ('website', ',', 'forms'), (',', 'forms', ','), ('forms', ',', 'way'), (',', 'way', 'upload'), ('way', 'upload', 'files'), ('upload', 'files', ','), ('files', ',', 'etc'), (',', 'etc', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('When', 'WRB'), ("'re", 'VBP'), ('building', 'VBG'), ('website', 'NN'), (',', ','), ('always', 'RB'), ('need', 'VB'), ('similar', 'JJ'), ('set', 'VBN'), ('components', 'NNS'), (':', ':'), ('way', 'NN'), ('handle', 'VB'), ('user', 'JJ'), ('authentication', 'NN'), ('(', '('), ('signing', 'NN'), (',', ','), ('signing', 'NN'), (',', ','), ('signing', 'VBG'), (')', ')'), (',', ','), ('management', 'NN'), ('panel', 'NN'), ('website', 'NN'), (',', ','), ('forms', 'NNS'), (',', ','), ('way', 'NN'), ('upload', 'JJ'), ('files', 'NNS'), (',', ','), ('etc', 'FW'), ('.', '.')]
+
+ (S
+  (NP ·/NN)
+  When/WRB
+  're/VBP
+  building/VBG
+  (NP website/NN)
+  ,/,
+  always/RB
+  need/VB
+  similar/JJ
+  set/VBN
+  (NP components/NNS)
+  :/:
+  (NP way/NN)
+  handle/VB
+  (NP user/JJ authentication/NN)
+  (/(
+  (NP signing/NN)
+  ,/,
+  (NP signing/NN)
+  ,/,
+  signing/VBG
+  )/)
+  ,/,
+  (NP management/NN panel/NN website/NN)
+  ,/,
+  (NP forms/NNS)
+  ,/,
+  (NP way/NN)
+  (NP upload/JJ files/NNS)
+  ,/,
+  etc/FW
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['·', 'website', 'components', 'way', 'user authentication', 'signing', 'signing', 'management panel website', 'forms', 'way', 'upload files']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('When', 'when'), ("'re", "'re"), ('building', 'build'), ('website', 'websit'), (',', ','), ('always', 'alway'), ('need', 'need'), ('similar', 'similar'), ('set', 'set'), ('components', 'compon'), (':', ':'), ('way', 'way'), ('handle', 'handl'), ('user', 'user'), ('authentication', 'authent'), ('(', '('), ('signing', 'sign'), (',', ','), ('signing', 'sign'), (',', ','), ('signing', 'sign'), (')', ')'), (',', ','), ('management', 'manag'), ('panel', 'panel'), ('website', 'websit'), (',', ','), ('forms', 'form'), (',', ','), ('way', 'way'), ('upload', 'upload'), ('files', 'file'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('When', 'when'), ("'re", 're'), ('building', 'build'), ('website', 'websit'), (',', ','), ('always', 'alway'), ('need', 'need'), ('similar', 'similar'), ('set', 'set'), ('components', 'compon'), (':', ':'), ('way', 'way'), ('handle', 'handl'), ('user', 'user'), ('authentication', 'authent'), ('(', '('), ('signing', 'sign'), (',', ','), ('signing', 'sign'), (',', ','), ('signing', 'sign'), (')', ')'), (',', ','), ('management', 'manag'), ('panel', 'panel'), ('website', 'websit'), (',', ','), ('forms', 'form'), (',', ','), ('way', 'way'), ('upload', 'upload'), ('files', 'file'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('When', 'When'), ("'re", "'re"), ('building', 'building'), ('website', 'website'), (',', ','), ('always', 'always'), ('need', 'need'), ('similar', 'similar'), ('set', 'set'), ('components', 'component'), (':', ':'), ('way', 'way'), ('handle', 'handle'), ('user', 'user'), ('authentication', 'authentication'), ('(', '('), ('signing', 'signing'), (',', ','), ('signing', 'signing'), (',', ','), ('signing', 'signing'), (')', ')'), (',', ','), ('management', 'management'), ('panel', 'panel'), ('website', 'website'), (',', ','), ('forms', 'form'), (',', ','), ('way', 'way'), ('upload', 'upload'), ('files', 'file'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+· Luckily, Developers build web frameworks that give you ready made components. 
+
+
+>> Tokens are: 
+ ['·', 'Luckily', ',', 'Developers', 'build', 'web', 'frameworks', 'give', 'ready', 'made', 'components', '.']
+
+>> Bigrams are: 
+ [('·', 'Luckily'), ('Luckily', ','), (',', 'Developers'), ('Developers', 'build'), ('build', 'web'), ('web', 'frameworks'), ('frameworks', 'give'), ('give', 'ready'), ('ready', 'made'), ('made', 'components'), ('components', '.')]
+
+>> Trigrams are: 
+ [('·', 'Luckily', ','), ('Luckily', ',', 'Developers'), (',', 'Developers', 'build'), ('Developers', 'build', 'web'), ('build', 'web', 'frameworks'), ('web', 'frameworks', 'give'), ('frameworks', 'give', 'ready'), ('give', 'ready', 'made'), ('ready', 'made', 'components'), ('made', 'components', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Luckily', 'NNP'), (',', ','), ('Developers', 'NNP'), ('build', 'VBP'), ('web', 'NN'), ('frameworks', 'NNS'), ('give', 'VBP'), ('ready', 'JJ'), ('made', 'VBN'), ('components', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Luckily/NNP)
+  ,/,
+  (NP Developers/NNP)
+  build/VBP
+  (NP web/NN frameworks/NNS)
+  give/VBP
+  ready/JJ
+  made/VBN
+  (NP components/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Luckily', 'Developers', 'web frameworks', 'components']
+
+>> Named Entities are: 
+ [('PERSON', 'Luckily'), ('ORGANIZATION', 'Developers')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Luckily', 'luckili'), (',', ','), ('Developers', 'develop'), ('build', 'build'), ('web', 'web'), ('frameworks', 'framework'), ('give', 'give'), ('ready', 'readi'), ('made', 'made'), ('components', 'compon'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Luckily', 'luckili'), (',', ','), ('Developers', 'develop'), ('build', 'build'), ('web', 'web'), ('frameworks', 'framework'), ('give', 'give'), ('ready', 'readi'), ('made', 'made'), ('components', 'compon'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Luckily', 'Luckily'), (',', ','), ('Developers', 'Developers'), ('build', 'build'), ('web', 'web'), ('frameworks', 'framework'), ('give', 'give'), ('ready', 'ready'), ('made', 'made'), ('components', 'component'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+· Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site. 
+
+
+>> Tokens are: 
+ ['·', 'Frameworks', 'exist', 'save', 'reinvent', 'wheel', 'help', 'alleviate', 'overhead', '’', 'building', 'new', 'site', '.']
+
+>> Bigrams are: 
+ [('·', 'Frameworks'), ('Frameworks', 'exist'), ('exist', 'save'), ('save', 'reinvent'), ('reinvent', 'wheel'), ('wheel', 'help'), ('help', 'alleviate'), ('alleviate', 'overhead'), ('overhead', '’'), ('’', 'building'), ('building', 'new'), ('new', 'site'), ('site', '.')]
+
+>> Trigrams are: 
+ [('·', 'Frameworks', 'exist'), ('Frameworks', 'exist', 'save'), ('exist', 'save', 'reinvent'), ('save', 'reinvent', 'wheel'), ('reinvent', 'wheel', 'help'), ('wheel', 'help', 'alleviate'), ('help', 'alleviate', 'overhead'), ('alleviate', 'overhead', '’'), ('overhead', '’', 'building'), ('’', 'building', 'new'), ('building', 'new', 'site'), ('new', 'site', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Frameworks', 'NNP'), ('exist', 'VBP'), ('save', 'VB'), ('reinvent', 'NN'), ('wheel', 'NN'), ('help', 'NN'), ('alleviate', 'VB'), ('overhead', 'JJ'), ('’', 'NNP'), ('building', 'NN'), ('new', 'JJ'), ('site', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Frameworks/NNP)
+  exist/VBP
+  save/VB
+  (NP reinvent/NN wheel/NN help/NN)
+  alleviate/VB
+  (NP overhead/JJ ’/NNP building/NN)
+  (NP new/JJ site/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Frameworks', 'reinvent wheel help', 'overhead ’ building', 'new site']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Frameworks', 'framework'), ('exist', 'exist'), ('save', 'save'), ('reinvent', 'reinvent'), ('wheel', 'wheel'), ('help', 'help'), ('alleviate', 'allevi'), ('overhead', 'overhead'), ('’', '’'), ('building', 'build'), ('new', 'new'), ('site', 'site'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Frameworks', 'framework'), ('exist', 'exist'), ('save', 'save'), ('reinvent', 'reinvent'), ('wheel', 'wheel'), ('help', 'help'), ('alleviate', 'allevi'), ('overhead', 'overhead'), ('’', '’'), ('building', 'build'), ('new', 'new'), ('site', 'site'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Frameworks', 'Frameworks'), ('exist', 'exist'), ('save', 'save'), ('reinvent', 'reinvent'), ('wheel', 'wheel'), ('help', 'help'), ('alleviate', 'alleviate'), ('overhead', 'overhead'), ('’', '’'), ('building', 'building'), ('new', 'new'), ('site', 'site'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+3. 
+
+
+>> Tokens are: 
+ ['3', '.']
+
+>> Bigrams are: 
+ [('3', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('3', 'CD'), ('.', '.')]
+
+ (S 3/CD ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('3', '3'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('3', '3'), ('.', '.')]
+
+>> Lemmatization: 
+ [('3', '3'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+Why Django? 
+
+
+>> Tokens are: 
+ ['Why', 'Django', '?']
+
+>> Bigrams are: 
+ [('Why', 'Django'), ('Django', '?')]
+
+>> Trigrams are: 
+ [('Why', 'Django', '?')]
+
+>> POS Tags are: 
+ [('Why', 'WRB'), ('Django', 'NNP'), ('?', '.')]
+
+ (S Why/WRB (NP Django/NNP) ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Django']
+
+>> Named Entities are: 
+ [('PERSON', 'Django')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Why', 'whi'), ('Django', 'django'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Why', 'whi'), ('Django', 'django'), ('?', '?')]
+
+>> Lemmatization: 
+ [('Why', 'Why'), ('Django', 'Django'), ('?', '?')]
+
+
+
+============================ Sentence 12 =============================
+
+· With Django, you can take Web applications from concept to launch in a matter of hours. 
+
+
+>> Tokens are: 
+ ['·', 'With', 'Django', ',', 'take', 'Web', 'applications', 'concept', 'launch', 'matter', 'hours', '.']
+
+>> Bigrams are: 
+ [('·', 'With'), ('With', 'Django'), ('Django', ','), (',', 'take'), ('take', 'Web'), ('Web', 'applications'), ('applications', 'concept'), ('concept', 'launch'), ('launch', 'matter'), ('matter', 'hours'), ('hours', '.')]
+
+>> Trigrams are: 
+ [('·', 'With', 'Django'), ('With', 'Django', ','), ('Django', ',', 'take'), (',', 'take', 'Web'), ('take', 'Web', 'applications'), ('Web', 'applications', 'concept'), ('applications', 'concept', 'launch'), ('concept', 'launch', 'matter'), ('launch', 'matter', 'hours'), ('matter', 'hours', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('With', 'IN'), ('Django', 'NNP'), (',', ','), ('take', 'VBP'), ('Web', 'NNP'), ('applications', 'NNS'), ('concept', 'VBP'), ('launch', 'JJ'), ('matter', 'NN'), ('hours', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/NN)
+  With/IN
+  (NP Django/NNP)
+  ,/,
+  take/VBP
+  (NP Web/NNP applications/NNS)
+  concept/VBP
+  (NP launch/JJ matter/NN hours/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['·', 'Django', 'Web applications', 'launch matter hours']
+
+>> Named Entities are: 
+ [('PERSON', 'Django')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('With', 'with'), ('Django', 'django'), (',', ','), ('take', 'take'), ('Web', 'web'), ('applications', 'applic'), ('concept', 'concept'), ('launch', 'launch'), ('matter', 'matter'), ('hours', 'hour'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('With', 'with'), ('Django', 'django'), (',', ','), ('take', 'take'), ('Web', 'web'), ('applications', 'applic'), ('concept', 'concept'), ('launch', 'launch'), ('matter', 'matter'), ('hours', 'hour'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('With', 'With'), ('Django', 'Django'), (',', ','), ('take', 'take'), ('Web', 'Web'), ('applications', 'application'), ('concept', 'concept'), ('launch', 'launch'), ('matter', 'matter'), ('hours', 'hour'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+Django takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. 
+
+
+>> Tokens are: 
+ ['Django', 'takes', 'care', 'much', 'hassle', 'Web', 'development', ',', 'focus', 'writing', 'app', 'without', 'needing', 'reinvent', 'wheel', '.']
+
+>> Bigrams are: 
+ [('Django', 'takes'), ('takes', 'care'), ('care', 'much'), ('much', 'hassle'), ('hassle', 'Web'), ('Web', 'development'), ('development', ','), (',', 'focus'), ('focus', 'writing'), ('writing', 'app'), ('app', 'without'), ('without', 'needing'), ('needing', 'reinvent'), ('reinvent', 'wheel'), ('wheel', '.')]
+
+>> Trigrams are: 
+ [('Django', 'takes', 'care'), ('takes', 'care', 'much'), ('care', 'much', 'hassle'), ('much', 'hassle', 'Web'), ('hassle', 'Web', 'development'), ('Web', 'development', ','), ('development', ',', 'focus'), (',', 'focus', 'writing'), ('focus', 'writing', 'app'), ('writing', 'app', 'without'), ('app', 'without', 'needing'), ('without', 'needing', 'reinvent'), ('needing', 'reinvent', 'wheel'), ('reinvent', 'wheel', '.')]
+
+>> POS Tags are: 
+ [('Django', 'NNP'), ('takes', 'VBZ'), ('care', 'NN'), ('much', 'JJ'), ('hassle', 'NN'), ('Web', 'NNP'), ('development', 'NN'), (',', ','), ('focus', 'NN'), ('writing', 'VBG'), ('app', 'NN'), ('without', 'IN'), ('needing', 'VBG'), ('reinvent', 'NN'), ('wheel', 'NN'), ('.', '.')]
+
+ (S
+  (NP Django/NNP)
+  takes/VBZ
+  (NP care/NN)
+  (NP much/JJ hassle/NN Web/NNP development/NN)
+  ,/,
+  (NP focus/NN)
+  writing/VBG
+  (NP app/NN)
+  without/IN
+  needing/VBG
+  (NP reinvent/NN wheel/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Django', 'care', 'much hassle Web development', 'focus', 'app', 'reinvent wheel']
+
+>> Named Entities are: 
+ [('GPE', 'Django')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Django', 'django'), ('takes', 'take'), ('care', 'care'), ('much', 'much'), ('hassle', 'hassl'), ('Web', 'web'), ('development', 'develop'), (',', ','), ('focus', 'focu'), ('writing', 'write'), ('app', 'app'), ('without', 'without'), ('needing', 'need'), ('reinvent', 'reinvent'), ('wheel', 'wheel'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Django', 'django'), ('takes', 'take'), ('care', 'care'), ('much', 'much'), ('hassle', 'hassl'), ('Web', 'web'), ('development', 'develop'), (',', ','), ('focus', 'focus'), ('writing', 'write'), ('app', 'app'), ('without', 'without'), ('needing', 'need'), ('reinvent', 'reinvent'), ('wheel', 'wheel'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Django', 'Django'), ('takes', 'take'), ('care', 'care'), ('much', 'much'), ('hassle', 'hassle'), ('Web', 'Web'), ('development', 'development'), (',', ','), ('focus', 'focus'), ('writing', 'writing'), ('app', 'app'), ('without', 'without'), ('needing', 'needing'), ('reinvent', 'reinvent'), ('wheel', 'wheel'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+It’s free and open source. 
+
+
+>> Tokens are: 
+ ['It', '’', 'free', 'open', 'source', '.']
+
+>> Bigrams are: 
+ [('It', '’'), ('’', 'free'), ('free', 'open'), ('open', 'source'), ('source', '.')]
+
+>> Trigrams are: 
+ [('It', '’', 'free'), ('’', 'free', 'open'), ('free', 'open', 'source'), ('open', 'source', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('’', 'VBD'), ('free', 'JJ'), ('open', 'JJ'), ('source', 'NN'), ('.', '.')]
+
+ (S It/PRP ’/VBD (NP free/JJ open/JJ source/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['free open source']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('’', '’'), ('free', 'free'), ('open', 'open'), ('source', 'sourc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('’', '’'), ('free', 'free'), ('open', 'open'), ('source', 'sourc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('’', '’'), ('free', 'free'), ('open', 'open'), ('source', 'source'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+· Ridiculously Fast: Django was designed to help developers to take applications from  concept to completion as quickly as possible. 
+
+
+>> Tokens are: 
+ ['·', 'Ridiculously', 'Fast', ':', 'Django', 'designed', 'help', 'developers', 'take', 'applications', 'concept', 'completion', 'quickly', 'possible', '.']
+
+>> Bigrams are: 
+ [('·', 'Ridiculously'), ('Ridiculously', 'Fast'), ('Fast', ':'), (':', 'Django'), ('Django', 'designed'), ('designed', 'help'), ('help', 'developers'), ('developers', 'take'), ('take', 'applications'), ('applications', 'concept'), ('concept', 'completion'), ('completion', 'quickly'), ('quickly', 'possible'), ('possible', '.')]
+
+>> Trigrams are: 
+ [('·', 'Ridiculously', 'Fast'), ('Ridiculously', 'Fast', ':'), ('Fast', ':', 'Django'), (':', 'Django', 'designed'), ('Django', 'designed', 'help'), ('designed', 'help', 'developers'), ('help', 'developers', 'take'), ('developers', 'take', 'applications'), ('take', 'applications', 'concept'), ('applications', 'concept', 'completion'), ('concept', 'completion', 'quickly'), ('completion', 'quickly', 'possible'), ('quickly', 'possible', '.')]
+
+>> POS Tags are: 
+ [('·', 'RB'), ('Ridiculously', 'RB'), ('Fast', 'NNP'), (':', ':'), ('Django', 'NNP'), ('designed', 'VBD'), ('help', 'NN'), ('developers', 'NNS'), ('take', 'VBP'), ('applications', 'NNS'), ('concept', 'VBP'), ('completion', 'NN'), ('quickly', 'RB'), ('possible', 'JJ'), ('.', '.')]
+
+ (S
+  ·/RB
+  Ridiculously/RB
+  (NP Fast/NNP)
+  :/:
+  (NP Django/NNP)
+  designed/VBD
+  (NP help/NN developers/NNS)
+  take/VBP
+  (NP applications/NNS)
+  concept/VBP
+  (NP completion/NN)
+  quickly/RB
+  possible/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Fast', 'Django', 'help developers', 'applications', 'completion']
+
+>> Named Entities are: 
+ [('PERSON', 'Django')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Ridiculously', 'ridicul'), ('Fast', 'fast'), (':', ':'), ('Django', 'django'), ('designed', 'design'), ('help', 'help'), ('developers', 'develop'), ('take', 'take'), ('applications', 'applic'), ('concept', 'concept'), ('completion', 'complet'), ('quickly', 'quickli'), ('possible', 'possibl'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Ridiculously', 'ridicul'), ('Fast', 'fast'), (':', ':'), ('Django', 'django'), ('designed', 'design'), ('help', 'help'), ('developers', 'develop'), ('take', 'take'), ('applications', 'applic'), ('concept', 'concept'), ('completion', 'complet'), ('quickly', 'quick'), ('possible', 'possibl'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Ridiculously', 'Ridiculously'), ('Fast', 'Fast'), (':', ':'), ('Django', 'Django'), ('designed', 'designed'), ('help', 'help'), ('developers', 'developer'), ('take', 'take'), ('applications', 'application'), ('concept', 'concept'), ('completion', 'completion'), ('quickly', 'quickly'), ('possible', 'possible'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+· Fully Loaded: Django includes dozens of extra features you can use to handle  common Web development tasks. 
+
+
+>> Tokens are: 
+ ['·', 'Fully', 'Loaded', ':', 'Django', 'includes', 'dozens', 'extra', 'features', 'use', 'handle', 'common', 'Web', 'development', 'tasks', '.']
+
+>> Bigrams are: 
+ [('·', 'Fully'), ('Fully', 'Loaded'), ('Loaded', ':'), (':', 'Django'), ('Django', 'includes'), ('includes', 'dozens'), ('dozens', 'extra'), ('extra', 'features'), ('features', 'use'), ('use', 'handle'), ('handle', 'common'), ('common', 'Web'), ('Web', 'development'), ('development', 'tasks'), ('tasks', '.')]
+
+>> Trigrams are: 
+ [('·', 'Fully', 'Loaded'), ('Fully', 'Loaded', ':'), ('Loaded', ':', 'Django'), (':', 'Django', 'includes'), ('Django', 'includes', 'dozens'), ('includes', 'dozens', 'extra'), ('dozens', 'extra', 'features'), ('extra', 'features', 'use'), ('features', 'use', 'handle'), ('use', 'handle', 'common'), ('handle', 'common', 'Web'), ('common', 'Web', 'development'), ('Web', 'development', 'tasks'), ('development', 'tasks', '.')]
+
+>> POS Tags are: 
+ [('·', 'NNS'), ('Fully', 'RB'), ('Loaded', 'VBN'), (':', ':'), ('Django', 'NNP'), ('includes', 'VBZ'), ('dozens', 'NNS'), ('extra', 'JJ'), ('features', 'NNS'), ('use', 'VBP'), ('handle', 'JJ'), ('common', 'JJ'), ('Web', 'NNP'), ('development', 'NN'), ('tasks', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/NNS)
+  Fully/RB
+  Loaded/VBN
+  :/:
+  (NP Django/NNP)
+  includes/VBZ
+  (NP dozens/NNS)
+  (NP extra/JJ features/NNS)
+  use/VBP
+  (NP handle/JJ common/JJ Web/NNP development/NN tasks/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['·', 'Django', 'dozens', 'extra features', 'handle common Web development tasks']
+
+>> Named Entities are: 
+ [('PERSON', 'Django')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Fully', 'fulli'), ('Loaded', 'load'), (':', ':'), ('Django', 'django'), ('includes', 'includ'), ('dozens', 'dozen'), ('extra', 'extra'), ('features', 'featur'), ('use', 'use'), ('handle', 'handl'), ('common', 'common'), ('Web', 'web'), ('development', 'develop'), ('tasks', 'task'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Fully', 'fulli'), ('Loaded', 'load'), (':', ':'), ('Django', 'django'), ('includes', 'includ'), ('dozens', 'dozen'), ('extra', 'extra'), ('features', 'featur'), ('use', 'use'), ('handle', 'handl'), ('common', 'common'), ('Web', 'web'), ('development', 'develop'), ('tasks', 'task'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Fully', 'Fully'), ('Loaded', 'Loaded'), (':', ':'), ('Django', 'Django'), ('includes', 'includes'), ('dozens', 'dozen'), ('extra', 'extra'), ('features', 'feature'), ('use', 'use'), ('handle', 'handle'), ('common', 'common'), ('Web', 'Web'), ('development', 'development'), ('tasks', 'task'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+Django takes care of user  authentication, content administration, site maps, RSS feeds, and many  more tasks — right out of the box. 
+
+
+>> Tokens are: 
+ ['Django', 'takes', 'care', 'user', 'authentication', ',', 'content', 'administration', ',', 'site', 'maps', ',', 'RSS', 'feeds', ',', 'many', 'tasks', '—', 'right', 'box', '.']
+
+>> Bigrams are: 
+ [('Django', 'takes'), ('takes', 'care'), ('care', 'user'), ('user', 'authentication'), ('authentication', ','), (',', 'content'), ('content', 'administration'), ('administration', ','), (',', 'site'), ('site', 'maps'), ('maps', ','), (',', 'RSS'), ('RSS', 'feeds'), ('feeds', ','), (',', 'many'), ('many', 'tasks'), ('tasks', '—'), ('—', 'right'), ('right', 'box'), ('box', '.')]
+
+>> Trigrams are: 
+ [('Django', 'takes', 'care'), ('takes', 'care', 'user'), ('care', 'user', 'authentication'), ('user', 'authentication', ','), ('authentication', ',', 'content'), (',', 'content', 'administration'), ('content', 'administration', ','), ('administration', ',', 'site'), (',', 'site', 'maps'), ('site', 'maps', ','), ('maps', ',', 'RSS'), (',', 'RSS', 'feeds'), ('RSS', 'feeds', ','), ('feeds', ',', 'many'), (',', 'many', 'tasks'), ('many', 'tasks', '—'), ('tasks', '—', 'right'), ('—', 'right', 'box'), ('right', 'box', '.')]
+
+>> POS Tags are: 
+ [('Django', 'NNP'), ('takes', 'VBZ'), ('care', 'NN'), ('user', 'JJ'), ('authentication', 'NN'), (',', ','), ('content', 'JJ'), ('administration', 'NN'), (',', ','), ('site', 'NN'), ('maps', 'NNS'), (',', ','), ('RSS', 'NNP'), ('feeds', 'NNS'), (',', ','), ('many', 'JJ'), ('tasks', 'NNS'), ('—', 'RB'), ('right', 'RB'), ('box', 'NN'), ('.', '.')]
+
+ (S
+  (NP Django/NNP)
+  takes/VBZ
+  (NP care/NN)
+  (NP user/JJ authentication/NN)
+  ,/,
+  (NP content/JJ administration/NN)
+  ,/,
+  (NP site/NN maps/NNS)
+  ,/,
+  (NP RSS/NNP feeds/NNS)
+  ,/,
+  (NP many/JJ tasks/NNS)
+  —/RB
+  right/RB
+  (NP box/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Django', 'care', 'user authentication', 'content administration', 'site maps', 'RSS feeds', 'many tasks', 'box']
+
+>> Named Entities are: 
+ [('GPE', 'Django'), ('ORGANIZATION', 'RSS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Django', 'django'), ('takes', 'take'), ('care', 'care'), ('user', 'user'), ('authentication', 'authent'), (',', ','), ('content', 'content'), ('administration', 'administr'), (',', ','), ('site', 'site'), ('maps', 'map'), (',', ','), ('RSS', 'rss'), ('feeds', 'feed'), (',', ','), ('many', 'mani'), ('tasks', 'task'), ('—', '—'), ('right', 'right'), ('box', 'box'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Django', 'django'), ('takes', 'take'), ('care', 'care'), ('user', 'user'), ('authentication', 'authent'), (',', ','), ('content', 'content'), ('administration', 'administr'), (',', ','), ('site', 'site'), ('maps', 'map'), (',', ','), ('RSS', 'rss'), ('feeds', 'feed'), (',', ','), ('many', 'mani'), ('tasks', 'task'), ('—', '—'), ('right', 'right'), ('box', 'box'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Django', 'Django'), ('takes', 'take'), ('care', 'care'), ('user', 'user'), ('authentication', 'authentication'), (',', ','), ('content', 'content'), ('administration', 'administration'), (',', ','), ('site', 'site'), ('maps', 'map'), (',', ','), ('RSS', 'RSS'), ('feeds', 'feed'), (',', ','), ('many', 'many'), ('tasks', 'task'), ('—', '—'), ('right', 'right'), ('box', 'box'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+· Reassuringly secure: Django takes security seriously and helps developers to avoid many common security mistakes, such as SQL injection, cross-site scripting, cross-site request forgery and clickjacking. 
+
+
+>> Tokens are: 
+ ['·', 'Reassuringly', 'secure', ':', 'Django', 'takes', 'security', 'seriously', 'helps', 'developers', 'avoid', 'many', 'common', 'security', 'mistakes', ',', 'SQL', 'injection', ',', 'cross-site', 'scripting', ',', 'cross-site', 'request', 'forgery', 'clickjacking', '.']
+
+>> Bigrams are: 
+ [('·', 'Reassuringly'), ('Reassuringly', 'secure'), ('secure', ':'), (':', 'Django'), ('Django', 'takes'), ('takes', 'security'), ('security', 'seriously'), ('seriously', 'helps'), ('helps', 'developers'), ('developers', 'avoid'), ('avoid', 'many'), ('many', 'common'), ('common', 'security'), ('security', 'mistakes'), ('mistakes', ','), (',', 'SQL'), ('SQL', 'injection'), ('injection', ','), (',', 'cross-site'), ('cross-site', 'scripting'), ('scripting', ','), (',', 'cross-site'), ('cross-site', 'request'), ('request', 'forgery'), ('forgery', 'clickjacking'), ('clickjacking', '.')]
+
+>> Trigrams are: 
+ [('·', 'Reassuringly', 'secure'), ('Reassuringly', 'secure', ':'), ('secure', ':', 'Django'), (':', 'Django', 'takes'), ('Django', 'takes', 'security'), ('takes', 'security', 'seriously'), ('security', 'seriously', 'helps'), ('seriously', 'helps', 'developers'), ('helps', 'developers', 'avoid'), ('developers', 'avoid', 'many'), ('avoid', 'many', 'common'), ('many', 'common', 'security'), ('common', 'security', 'mistakes'), ('security', 'mistakes', ','), ('mistakes', ',', 'SQL'), (',', 'SQL', 'injection'), ('SQL', 'injection', ','), ('injection', ',', 'cross-site'), (',', 'cross-site', 'scripting'), ('cross-site', 'scripting', ','), ('scripting', ',', 'cross-site'), (',', 'cross-site', 'request'), ('cross-site', 'request', 'forgery'), ('request', 'forgery', 'clickjacking'), ('forgery', 'clickjacking', '.')]
+
+>> POS Tags are: 
+ [('·', 'RB'), ('Reassuringly', 'RB'), ('secure', 'NN'), (':', ':'), ('Django', 'NNP'), ('takes', 'VBZ'), ('security', 'NN'), ('seriously', 'RB'), ('helps', 'VBZ'), ('developers', 'NNS'), ('avoid', 'VBP'), ('many', 'JJ'), ('common', 'JJ'), ('security', 'NN'), ('mistakes', 'NNS'), (',', ','), ('SQL', 'NNP'), ('injection', 'NN'), (',', ','), ('cross-site', 'JJ'), ('scripting', 'NN'), (',', ','), ('cross-site', 'JJ'), ('request', 'NN'), ('forgery', 'NN'), ('clickjacking', 'NN'), ('.', '.')]
+
+ (S
+  ·/RB
+  Reassuringly/RB
+  (NP secure/NN)
+  :/:
+  (NP Django/NNP)
+  takes/VBZ
+  (NP security/NN)
+  seriously/RB
+  helps/VBZ
+  (NP developers/NNS)
+  avoid/VBP
+  (NP many/JJ common/JJ security/NN mistakes/NNS)
+  ,/,
+  (NP SQL/NNP injection/NN)
+  ,/,
+  (NP cross-site/JJ scripting/NN)
+  ,/,
+  (NP cross-site/JJ request/NN forgery/NN clickjacking/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['secure', 'Django', 'security', 'developers', 'many common security mistakes', 'SQL injection', 'cross-site scripting', 'cross-site request forgery clickjacking']
+
+>> Named Entities are: 
+ [('PERSON', 'Django'), ('ORGANIZATION', 'SQL')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Reassuringly', 'reassuringli'), ('secure', 'secur'), (':', ':'), ('Django', 'django'), ('takes', 'take'), ('security', 'secur'), ('seriously', 'serious'), ('helps', 'help'), ('developers', 'develop'), ('avoid', 'avoid'), ('many', 'mani'), ('common', 'common'), ('security', 'secur'), ('mistakes', 'mistak'), (',', ','), ('SQL', 'sql'), ('injection', 'inject'), (',', ','), ('cross-site', 'cross-sit'), ('scripting', 'script'), (',', ','), ('cross-site', 'cross-sit'), ('request', 'request'), ('forgery', 'forgeri'), ('clickjacking', 'clickjack'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Reassuringly', 'reassur'), ('secure', 'secur'), (':', ':'), ('Django', 'django'), ('takes', 'take'), ('security', 'secur'), ('seriously', 'serious'), ('helps', 'help'), ('developers', 'develop'), ('avoid', 'avoid'), ('many', 'mani'), ('common', 'common'), ('security', 'secur'), ('mistakes', 'mistak'), (',', ','), ('SQL', 'sql'), ('injection', 'inject'), (',', ','), ('cross-site', 'cross-sit'), ('scripting', 'script'), (',', ','), ('cross-site', 'cross-sit'), ('request', 'request'), ('forgery', 'forgeri'), ('clickjacking', 'clickjack'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Reassuringly', 'Reassuringly'), ('secure', 'secure'), (':', ':'), ('Django', 'Django'), ('takes', 'take'), ('security', 'security'), ('seriously', 'seriously'), ('helps', 'help'), ('developers', 'developer'), ('avoid', 'avoid'), ('many', 'many'), ('common', 'common'), ('security', 'security'), ('mistakes', 'mistake'), (',', ','), ('SQL', 'SQL'), ('injection', 'injection'), (',', ','), ('cross-site', 'cross-site'), ('scripting', 'scripting'), (',', ','), ('cross-site', 'cross-site'), ('request', 'request'), ('forgery', 'forgery'), ('clickjacking', 'clickjacking'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+Its user authentication system provides a secure way to manage user accounts and passwords. 
+
+
+>> Tokens are: 
+ ['Its', 'user', 'authentication', 'system', 'provides', 'secure', 'way', 'manage', 'user', 'accounts', 'passwords', '.']
+
+>> Bigrams are: 
+ [('Its', 'user'), ('user', 'authentication'), ('authentication', 'system'), ('system', 'provides'), ('provides', 'secure'), ('secure', 'way'), ('way', 'manage'), ('manage', 'user'), ('user', 'accounts'), ('accounts', 'passwords'), ('passwords', '.')]
+
+>> Trigrams are: 
+ [('Its', 'user', 'authentication'), ('user', 'authentication', 'system'), ('authentication', 'system', 'provides'), ('system', 'provides', 'secure'), ('provides', 'secure', 'way'), ('secure', 'way', 'manage'), ('way', 'manage', 'user'), ('manage', 'user', 'accounts'), ('user', 'accounts', 'passwords'), ('accounts', 'passwords', '.')]
+
+>> POS Tags are: 
+ [('Its', 'PRP$'), ('user', 'NN'), ('authentication', 'NN'), ('system', 'NN'), ('provides', 'VBZ'), ('secure', 'JJ'), ('way', 'NN'), ('manage', 'NN'), ('user', 'JJ'), ('accounts', 'NNS'), ('passwords', 'NNS'), ('.', '.')]
+
+ (S
+  Its/PRP$
+  (NP user/NN authentication/NN system/NN)
+  provides/VBZ
+  (NP secure/JJ way/NN manage/NN)
+  (NP user/JJ accounts/NNS passwords/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['user authentication system', 'secure way manage', 'user accounts passwords']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Its', 'it'), ('user', 'user'), ('authentication', 'authent'), ('system', 'system'), ('provides', 'provid'), ('secure', 'secur'), ('way', 'way'), ('manage', 'manag'), ('user', 'user'), ('accounts', 'account'), ('passwords', 'password'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Its', 'it'), ('user', 'user'), ('authentication', 'authent'), ('system', 'system'), ('provides', 'provid'), ('secure', 'secur'), ('way', 'way'), ('manage', 'manag'), ('user', 'user'), ('accounts', 'account'), ('passwords', 'password'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Its', 'Its'), ('user', 'user'), ('authentication', 'authentication'), ('system', 'system'), ('provides', 'provides'), ('secure', 'secure'), ('way', 'way'), ('manage', 'manage'), ('user', 'user'), ('accounts', 'account'), ('passwords', 'password'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+· Exceedingly scalable: Some of the busiest sites on the planet use Django’s ability to quickly and flexibly scale to meet the heaviest traffic demands. 
+
+
+>> Tokens are: 
+ ['·', 'Exceedingly', 'scalable', ':', 'Some', 'busiest', 'sites', 'planet', 'use', 'Django', '’', 'ability', 'quickly', 'flexibly', 'scale', 'meet', 'heaviest', 'traffic', 'demands', '.']
+
+>> Bigrams are: 
+ [('·', 'Exceedingly'), ('Exceedingly', 'scalable'), ('scalable', ':'), (':', 'Some'), ('Some', 'busiest'), ('busiest', 'sites'), ('sites', 'planet'), ('planet', 'use'), ('use', 'Django'), ('Django', '’'), ('’', 'ability'), ('ability', 'quickly'), ('quickly', 'flexibly'), ('flexibly', 'scale'), ('scale', 'meet'), ('meet', 'heaviest'), ('heaviest', 'traffic'), ('traffic', 'demands'), ('demands', '.')]
+
+>> Trigrams are: 
+ [('·', 'Exceedingly', 'scalable'), ('Exceedingly', 'scalable', ':'), ('scalable', ':', 'Some'), (':', 'Some', 'busiest'), ('Some', 'busiest', 'sites'), ('busiest', 'sites', 'planet'), ('sites', 'planet', 'use'), ('planet', 'use', 'Django'), ('use', 'Django', '’'), ('Django', '’', 'ability'), ('’', 'ability', 'quickly'), ('ability', 'quickly', 'flexibly'), ('quickly', 'flexibly', 'scale'), ('flexibly', 'scale', 'meet'), ('scale', 'meet', 'heaviest'), ('meet', 'heaviest', 'traffic'), ('heaviest', 'traffic', 'demands'), ('traffic', 'demands', '.')]
+
+>> POS Tags are: 
+ [('·', 'RB'), ('Exceedingly', 'RB'), ('scalable', 'JJ'), (':', ':'), ('Some', 'DT'), ('busiest', 'JJS'), ('sites', 'NNS'), ('planet', 'VBP'), ('use', 'NN'), ('Django', 'NNP'), ('’', 'NNP'), ('ability', 'NN'), ('quickly', 'RB'), ('flexibly', 'RB'), ('scale', 'JJ'), ('meet', 'NN'), ('heaviest', 'JJS'), ('traffic', 'NN'), ('demands', 'NNS'), ('.', '.')]
+
+ (S
+  ·/RB
+  Exceedingly/RB
+  scalable/JJ
+  :/:
+  Some/DT
+  busiest/JJS
+  (NP sites/NNS)
+  planet/VBP
+  (NP use/NN Django/NNP ’/NNP ability/NN)
+  quickly/RB
+  flexibly/RB
+  (NP scale/JJ meet/NN)
+  heaviest/JJS
+  (NP traffic/NN demands/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['sites', 'use Django ’ ability', 'scale meet', 'traffic demands']
+
+>> Named Entities are: 
+ [('PERSON', 'Django')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Exceedingly', 'exceedingli'), ('scalable', 'scalabl'), (':', ':'), ('Some', 'some'), ('busiest', 'busiest'), ('sites', 'site'), ('planet', 'planet'), ('use', 'use'), ('Django', 'django'), ('’', '’'), ('ability', 'abil'), ('quickly', 'quickli'), ('flexibly', 'flexibl'), ('scale', 'scale'), ('meet', 'meet'), ('heaviest', 'heaviest'), ('traffic', 'traffic'), ('demands', 'demand'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Exceedingly', 'exceed'), ('scalable', 'scalabl'), (':', ':'), ('Some', 'some'), ('busiest', 'busiest'), ('sites', 'site'), ('planet', 'planet'), ('use', 'use'), ('Django', 'django'), ('’', '’'), ('ability', 'abil'), ('quickly', 'quick'), ('flexibly', 'flexibl'), ('scale', 'scale'), ('meet', 'meet'), ('heaviest', 'heaviest'), ('traffic', 'traffic'), ('demands', 'demand'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Exceedingly', 'Exceedingly'), ('scalable', 'scalable'), (':', ':'), ('Some', 'Some'), ('busiest', 'busiest'), ('sites', 'site'), ('planet', 'planet'), ('use', 'use'), ('Django', 'Django'), ('’', '’'), ('ability', 'ability'), ('quickly', 'quickly'), ('flexibly', 'flexibly'), ('scale', 'scale'), ('meet', 'meet'), ('heaviest', 'heaviest'), ('traffic', 'traffic'), ('demands', 'demand'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+· Incredibly versatile: Companies, organizations and governments have used Django to build all sorts of things — from content management systems to social networks to scientific computing platforms. 
+
+
+>> Tokens are: 
+ ['·', 'Incredibly', 'versatile', ':', 'Companies', ',', 'organizations', 'governments', 'used', 'Django', 'build', 'sorts', 'things', '—', 'content', 'management', 'systems', 'social', 'networks', 'scientific', 'computing', 'platforms', '.']
+
+>> Bigrams are: 
+ [('·', 'Incredibly'), ('Incredibly', 'versatile'), ('versatile', ':'), (':', 'Companies'), ('Companies', ','), (',', 'organizations'), ('organizations', 'governments'), ('governments', 'used'), ('used', 'Django'), ('Django', 'build'), ('build', 'sorts'), ('sorts', 'things'), ('things', '—'), ('—', 'content'), ('content', 'management'), ('management', 'systems'), ('systems', 'social'), ('social', 'networks'), ('networks', 'scientific'), ('scientific', 'computing'), ('computing', 'platforms'), ('platforms', '.')]
+
+>> Trigrams are: 
+ [('·', 'Incredibly', 'versatile'), ('Incredibly', 'versatile', ':'), ('versatile', ':', 'Companies'), (':', 'Companies', ','), ('Companies', ',', 'organizations'), (',', 'organizations', 'governments'), ('organizations', 'governments', 'used'), ('governments', 'used', 'Django'), ('used', 'Django', 'build'), ('Django', 'build', 'sorts'), ('build', 'sorts', 'things'), ('sorts', 'things', '—'), ('things', '—', 'content'), ('—', 'content', 'management'), ('content', 'management', 'systems'), ('management', 'systems', 'social'), ('systems', 'social', 'networks'), ('social', 'networks', 'scientific'), ('networks', 'scientific', 'computing'), ('scientific', 'computing', 'platforms'), ('computing', 'platforms', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('Incredibly', 'RB'), ('versatile', 'IN'), (':', ':'), ('Companies', 'NNS'), (',', ','), ('organizations', 'NNS'), ('governments', 'NNS'), ('used', 'VBD'), ('Django', 'NNP'), ('build', 'VB'), ('sorts', 'NNS'), ('things', 'NNS'), ('—', 'VBP'), ('content', 'JJ'), ('management', 'NN'), ('systems', 'NNS'), ('social', 'JJ'), ('networks', 'NNS'), ('scientific', 'JJ'), ('computing', 'VBG'), ('platforms', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/NN)
+  Incredibly/RB
+  versatile/IN
+  :/:
+  (NP Companies/NNS)
+  ,/,
+  (NP organizations/NNS governments/NNS)
+  used/VBD
+  (NP Django/NNP)
+  build/VB
+  (NP sorts/NNS things/NNS)
+  —/VBP
+  (NP content/JJ management/NN systems/NNS)
+  (NP social/JJ networks/NNS)
+  scientific/JJ
+  computing/VBG
+  (NP platforms/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['·', 'Companies', 'organizations governments', 'Django', 'sorts things', 'content management systems', 'social networks', 'platforms']
+
+>> Named Entities are: 
+ [('PERSON', 'Django')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Incredibly', 'incred'), ('versatile', 'versatil'), (':', ':'), ('Companies', 'compani'), (',', ','), ('organizations', 'organ'), ('governments', 'govern'), ('used', 'use'), ('Django', 'django'), ('build', 'build'), ('sorts', 'sort'), ('things', 'thing'), ('—', '—'), ('content', 'content'), ('management', 'manag'), ('systems', 'system'), ('social', 'social'), ('networks', 'network'), ('scientific', 'scientif'), ('computing', 'comput'), ('platforms', 'platform'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Incredibly', 'incred'), ('versatile', 'versatil'), (':', ':'), ('Companies', 'compani'), (',', ','), ('organizations', 'organ'), ('governments', 'govern'), ('used', 'use'), ('Django', 'django'), ('build', 'build'), ('sorts', 'sort'), ('things', 'thing'), ('—', '—'), ('content', 'content'), ('management', 'manag'), ('systems', 'system'), ('social', 'social'), ('networks', 'network'), ('scientific', 'scientif'), ('computing', 'comput'), ('platforms', 'platform'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Incredibly', 'Incredibly'), ('versatile', 'versatile'), (':', ':'), ('Companies', 'Companies'), (',', ','), ('organizations', 'organization'), ('governments', 'government'), ('used', 'used'), ('Django', 'Django'), ('build', 'build'), ('sorts', 'sort'), ('things', 'thing'), ('—', '—'), ('content', 'content'), ('management', 'management'), ('systems', 'system'), ('social', 'social'), ('networks', 'network'), ('scientific', 'scientific'), ('computing', 'computing'), ('platforms', 'platform'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+Reference: https://www.djangoproject.com/start/overview/   · Django framework design principles:  Don’t repeat yourself (DRY) Principle:  	Reference: https://www.webforefront.com/django/designprinciples.html    · Django Custom User Model: · https://testdriven.io/blog/django-custom-user-model/ · https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html 
+
+
+>> Tokens are: 
+ ['Reference', ':', 'https', ':', '//www.djangoproject.com/start/overview/', '·', 'Django', 'framework', 'design', 'principles', ':', 'Don', '’', 'repeat', '(', 'DRY', ')', 'Principle', ':', 'Reference', ':', 'https', ':', '//www.webforefront.com/django/designprinciples.html', '·', 'Django', 'Custom', 'User', 'Model', ':', '·', 'https', ':', '//testdriven.io/blog/django-custom-user-model/', '·', 'https', ':', '//simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html']
+
+>> Bigrams are: 
+ [('Reference', ':'), (':', 'https'), ('https', ':'), (':', '//www.djangoproject.com/start/overview/'), ('//www.djangoproject.com/start/overview/', '·'), ('·', 'Django'), ('Django', 'framework'), ('framework', 'design'), ('design', 'principles'), ('principles', ':'), (':', 'Don'), ('Don', '’'), ('’', 'repeat'), ('repeat', '('), ('(', 'DRY'), ('DRY', ')'), (')', 'Principle'), ('Principle', ':'), (':', 'Reference'), ('Reference', ':'), (':', 'https'), ('https', ':'), (':', '//www.webforefront.com/django/designprinciples.html'), ('//www.webforefront.com/django/designprinciples.html', '·'), ('·', 'Django'), ('Django', 'Custom'), ('Custom', 'User'), ('User', 'Model'), ('Model', ':'), (':', '·'), ('·', 'https'), ('https', ':'), (':', '//testdriven.io/blog/django-custom-user-model/'), ('//testdriven.io/blog/django-custom-user-model/', '·'), ('·', 'https'), ('https', ':'), (':', '//simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html')]
+
+>> Trigrams are: 
+ [('Reference', ':', 'https'), (':', 'https', ':'), ('https', ':', '//www.djangoproject.com/start/overview/'), (':', '//www.djangoproject.com/start/overview/', '·'), ('//www.djangoproject.com/start/overview/', '·', 'Django'), ('·', 'Django', 'framework'), ('Django', 'framework', 'design'), ('framework', 'design', 'principles'), ('design', 'principles', ':'), ('principles', ':', 'Don'), (':', 'Don', '’'), ('Don', '’', 'repeat'), ('’', 'repeat', '('), ('repeat', '(', 'DRY'), ('(', 'DRY', ')'), ('DRY', ')', 'Principle'), (')', 'Principle', ':'), ('Principle', ':', 'Reference'), (':', 'Reference', ':'), ('Reference', ':', 'https'), (':', 'https', ':'), ('https', ':', '//www.webforefront.com/django/designprinciples.html'), (':', '//www.webforefront.com/django/designprinciples.html', '·'), ('//www.webforefront.com/django/designprinciples.html', '·', 'Django'), ('·', 'Django', 'Custom'), ('Django', 'Custom', 'User'), ('Custom', 'User', 'Model'), ('User', 'Model', ':'), ('Model', ':', '·'), (':', '·', 'https'), ('·', 'https', ':'), ('https', ':', '//testdriven.io/blog/django-custom-user-model/'), (':', '//testdriven.io/blog/django-custom-user-model/', '·'), ('//testdriven.io/blog/django-custom-user-model/', '·', 'https'), ('·', 'https', ':'), ('https', ':', '//simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html')]
+
+>> POS Tags are: 
+ [('Reference', 'NN'), (':', ':'), ('https', 'NN'), (':', ':'), ('//www.djangoproject.com/start/overview/', 'JJ'), ('·', 'NNP'), ('Django', 'NNP'), ('framework', 'NN'), ('design', 'NN'), ('principles', 'NNS'), (':', ':'), ('Don', 'NNP'), ('’', 'NNP'), ('repeat', 'NN'), ('(', '('), ('DRY', 'NNP'), (')', ')'), ('Principle', 'NN'), (':', ':'), ('Reference', 'NN'), (':', ':'), ('https', 'NN'), (':', ':'), ('//www.webforefront.com/django/designprinciples.html', 'JJ'), ('·', 'NNP'), ('Django', 'NNP'), ('Custom', 'NNP'), ('User', 'NNP'), ('Model', 'NNP'), (':', ':'), ('·', 'JJ'), ('https', 'NN'), (':', ':'), ('//testdriven.io/blog/django-custom-user-model/', 'JJ'), ('·', 'NN'), ('https', 'NN'), (':', ':'), ('//simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html', 'JJ')]
+
+ (S
+  (NP Reference/NN)
+  :/:
+  (NP https/NN)
+  :/:
+  (NP
+    //www.djangoproject.com/start/overview//JJ
+    ·/NNP
+    Django/NNP
+    framework/NN
+    design/NN
+    principles/NNS)
+  :/:
+  (NP Don/NNP ’/NNP repeat/NN)
+  (/(
+  (NP DRY/NNP)
+  )/)
+  (NP Principle/NN)
+  :/:
+  (NP Reference/NN)
+  :/:
+  (NP https/NN)
+  :/:
+  (NP
+    //www.webforefront.com/django/designprinciples.html/JJ
+    ·/NNP
+    Django/NNP
+    Custom/NNP
+    User/NNP
+    Model/NNP)
+  :/:
+  (NP ·/JJ https/NN)
+  :/:
+  (NP
+    //testdriven.io/blog/django-custom-user-model//JJ
+    ·/NN
+    https/NN)
+  :/:
+  //simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html/JJ) 
+
+
+>> Noun Phrases are: 
+ ['Reference', 'https', '//www.djangoproject.com/start/overview/ · Django framework design principles', 'Don ’ repeat', 'DRY', 'Principle', 'Reference', 'https', '//www.webforefront.com/django/designprinciples.html · Django Custom User Model', '· https', '//testdriven.io/blog/django-custom-user-model/ · https']
+
+>> Named Entities are: 
+ [('GPE', 'Reference'), ('PERSON', 'Don'), ('ORGANIZATION', 'DRY'), ('PERSON', 'Django Custom User Model')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Reference', 'refer'), (':', ':'), ('https', 'http'), (':', ':'), ('//www.djangoproject.com/start/overview/', '//www.djangoproject.com/start/overview/'), ('·', '·'), ('Django', 'django'), ('framework', 'framework'), ('design', 'design'), ('principles', 'principl'), (':', ':'), ('Don', 'don'), ('’', '’'), ('repeat', 'repeat'), ('(', '('), ('DRY', 'dri'), (')', ')'), ('Principle', 'principl'), (':', ':'), ('Reference', 'refer'), (':', ':'), ('https', 'http'), (':', ':'), ('//www.webforefront.com/django/designprinciples.html', '//www.webforefront.com/django/designprinciples.html'), ('·', '·'), ('Django', 'django'), ('Custom', 'custom'), ('User', 'user'), ('Model', 'model'), (':', ':'), ('·', '·'), ('https', 'http'), (':', ':'), ('//testdriven.io/blog/django-custom-user-model/', '//testdriven.io/blog/django-custom-user-model/'), ('·', '·'), ('https', 'http'), (':', ':'), ('//simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html', '//simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Reference', 'refer'), (':', ':'), ('https', 'https'), (':', ':'), ('//www.djangoproject.com/start/overview/', '//www.djangoproject.com/start/overview/'), ('·', '·'), ('Django', 'django'), ('framework', 'framework'), ('design', 'design'), ('principles', 'principl'), (':', ':'), ('Don', 'don'), ('’', '’'), ('repeat', 'repeat'), ('(', '('), ('DRY', 'dri'), (')', ')'), ('Principle', 'principl'), (':', ':'), ('Reference', 'refer'), (':', ':'), ('https', 'https'), (':', ':'), ('//www.webforefront.com/django/designprinciples.html', '//www.webforefront.com/django/designprinciples.html'), ('·', '·'), ('Django', 'django'), ('Custom', 'custom'), ('User', 'user'), ('Model', 'model'), (':', ':'), ('·', '·'), ('https', 'https'), (':', ':'), ('//testdriven.io/blog/django-custom-user-model/', '//testdriven.io/blog/django-custom-user-model/'), ('·', '·'), ('https', 'https'), (':', ':'), ('//simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html', '//simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html')]
+
+>> Lemmatization: 
+ [('Reference', 'Reference'), (':', ':'), ('https', 'http'), (':', ':'), ('//www.djangoproject.com/start/overview/', '//www.djangoproject.com/start/overview/'), ('·', '·'), ('Django', 'Django'), ('framework', 'framework'), ('design', 'design'), ('principles', 'principle'), (':', ':'), ('Don', 'Don'), ('’', '’'), ('repeat', 'repeat'), ('(', '('), ('DRY', 'DRY'), (')', ')'), ('Principle', 'Principle'), (':', ':'), ('Reference', 'Reference'), (':', ':'), ('https', 'http'), (':', ':'), ('//www.webforefront.com/django/designprinciples.html', '//www.webforefront.com/django/designprinciples.html'), ('·', '·'), ('Django', 'Django'), ('Custom', 'Custom'), ('User', 'User'), ('Model', 'Model'), (':', ':'), ('·', '·'), ('https', 'http'), (':', ':'), ('//testdriven.io/blog/django-custom-user-model/', '//testdriven.io/blog/django-custom-user-model/'), ('·', '·'), ('https', 'http'), (':', ':'), ('//simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html', '//simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html')]
+

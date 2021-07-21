@@ -1,0 +1,1540 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-11  Natural Language Processing (NLP) refers to AI method of communicating with an intelligent systems using a natural language such as English. 
+
+
+>> Tokens are: 
+[AI-11,  , Natural, Language, Processing, (, NLP, ), refers, AI, method, communicating, intelligent, systems, natural, language, English, .] 
+
+>> PoS Tags are: 
+[('AI-11', 'NUM'), (' ', 'SPACE'), ('Natural', 'PROPN'), ('Language', 'PROPN'), ('Processing', 'PROPN'), ('(', 'PUNCT'), ('NLP', 'PROPN'), (')', 'PUNCT'), ('refers', 'VERB'), ('AI', 'PROPN'), ('method', 'NOUN'), ('communicating', 'VERB'), ('intelligent', 'ADJ'), ('systems', 'NOUN'), ('natural', 'ADJ'), ('language', 'NOUN'), ('English', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI-11', 'nsubj'), (' ', 'compound'), ('Natural', 'compound'), ('Language', 'compound'), ('Processing', 'nsubj'), ('(', 'punct'), ('NLP', 'appos'), (')', 'punct'), ('refers', 'ROOT'), ('AI', 'compound'), ('method', 'pobj'), ('communicating', 'pcomp'), ('intelligent', 'amod'), ('systems', 'pobj'), ('natural', 'amod'), ('language', 'dobj'), ('English', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AI-11,  ], [ , Natural], [Natural, Language], [Language, Processing], [Processing, (], [(, NLP], [NLP, )], [), refers], [refers, AI], [AI, method], [method, communicating], [communicating, intelligent], [intelligent, systems], [systems, natural], [natural, language], [language, English], [English, .]]
+
+>> Trigrams: 
+[[AI-11,  , Natural], [ , Natural, Language], [Natural, Language, Processing], [Language, Processing, (], [Processing, (, NLP], [(, NLP, )], [NLP, ), refers], [), refers, AI], [refers, AI, method], [AI, method, communicating], [method, communicating, intelligent], [communicating, intelligent, systems], [intelligent, systems, natural], [systems, natural, language], [natural, language, English], [language, English, .]]
+
+>> Noun Phrases are: 
+[ Natural Language Processing, (NLP, AI method, an intelligent systems, a natural language, English]
+
+>> Named Entities are: 
+[('AI-11  ', 'CARDINAL'), ('NLP', 'ORG'), ('AI', 'ORG'), ('English', 'LANGUAGE')]
+
+
+============================ Sentence 2 =============================
+
+Processing of Natural Language is required when you want an intelligent system like robot to perform as per your instructions, when you want to hear decision from a dialogue based clinical expert system, etc. 
+
+
+>> Tokens are: 
+[Processing, Natural, Language, required, want, intelligent, system, like, robot, perform, instructions, ,, want, hear, decision, dialogue, based, clinical, expert, system, ,, etc, .] 
+
+>> PoS Tags are: 
+[('Processing', 'NOUN'), ('Natural', 'PROPN'), ('Language', 'PROPN'), ('required', 'VERB'), ('want', 'VERB'), ('intelligent', 'ADJ'), ('system', 'NOUN'), ('like', 'ADP'), ('robot', 'NOUN'), ('perform', 'VERB'), ('instructions', 'NOUN'), (',', 'PUNCT'), ('want', 'VERB'), ('hear', 'VERB'), ('decision', 'NOUN'), ('dialogue', 'NOUN'), ('based', 'VERB'), ('clinical', 'ADJ'), ('expert', 'NOUN'), ('system', 'NOUN'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Processing', 'nsubjpass'), ('Natural', 'compound'), ('Language', 'pobj'), ('required', 'ROOT'), ('want', 'advcl'), ('intelligent', 'amod'), ('system', 'dobj'), ('like', 'prep'), ('robot', 'pobj'), ('perform', 'ccomp'), ('instructions', 'pobj'), (',', 'punct'), ('want', 'advcl'), ('hear', 'xcomp'), ('decision', 'dobj'), ('dialogue', 'npadvmod'), ('based', 'amod'), ('clinical', 'amod'), ('expert', 'compound'), ('system', 'pobj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Processing, Natural], [Natural, Language], [Language, required], [required, want], [want, intelligent], [intelligent, system], [system, like], [like, robot], [robot, perform], [perform, instructions], [instructions, ,], [,, want], [want, hear], [hear, decision], [decision, dialogue], [dialogue, based], [based, clinical], [clinical, expert], [expert, system], [system, ,], [,, etc], [etc, .]]
+
+>> Trigrams: 
+[[Processing, Natural, Language], [Natural, Language, required], [Language, required, want], [required, want, intelligent], [want, intelligent, system], [intelligent, system, like], [system, like, robot], [like, robot, perform], [robot, perform, instructions], [perform, instructions, ,], [instructions, ,, want], [,, want, hear], [want, hear, decision], [hear, decision, dialogue], [decision, dialogue, based], [dialogue, based, clinical], [based, clinical, expert], [clinical, expert, system], [expert, system, ,], [system, ,, etc], [,, etc, .]]
+
+>> Noun Phrases are: 
+[Processing, Natural Language, you, an intelligent system, robot, your instructions, you, decision, a dialogue based clinical expert system]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 3 =============================
+
+The field of NLP involves making computers to perform useful tasks with the natural languages humans use. 
+
+
+>> Tokens are: 
+[field, NLP, involves, making, computers, perform, useful, tasks, natural, languages, humans, use, .] 
+
+>> PoS Tags are: 
+[('field', 'NOUN'), ('NLP', 'PROPN'), ('involves', 'VERB'), ('making', 'VERB'), ('computers', 'NOUN'), ('perform', 'VERB'), ('useful', 'ADJ'), ('tasks', 'NOUN'), ('natural', 'ADJ'), ('languages', 'NOUN'), ('humans', 'NOUN'), ('use', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('field', 'nsubj'), ('NLP', 'pobj'), ('involves', 'ROOT'), ('making', 'xcomp'), ('computers', 'nsubj'), ('perform', 'ccomp'), ('useful', 'amod'), ('tasks', 'dobj'), ('natural', 'amod'), ('languages', 'pobj'), ('humans', 'nsubj'), ('use', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[field, NLP], [NLP, involves], [involves, making], [making, computers], [computers, perform], [perform, useful], [useful, tasks], [tasks, natural], [natural, languages], [languages, humans], [humans, use], [use, .]]
+
+>> Trigrams: 
+[[field, NLP, involves], [NLP, involves, making], [involves, making, computers], [making, computers, perform], [computers, perform, useful], [perform, useful, tasks], [useful, tasks, natural], [tasks, natural, languages], [natural, languages, humans], [languages, humans, use], [humans, use, .]]
+
+>> Noun Phrases are: 
+[The field, NLP, computers, useful tasks, the natural languages, humans]
+
+>> Named Entities are: 
+[('NLP', 'ORG')]
+
+
+============================ Sentence 4 =============================
+
+The input and output of an NLP system can be − · Speech · Written Text Components of NLP There are two components of NLP as given − Natural Language Understanding (NLU) 
+
+
+>> Tokens are: 
+[input, output, NLP, system, −, ·, Speech, ·, Written, Text, Components, NLP, components, NLP, given, −, Natural, Language, Understanding, (, NLU, )] 
+
+>> PoS Tags are: 
+[('input', 'NOUN'), ('output', 'NOUN'), ('NLP', 'PROPN'), ('system', 'NOUN'), ('−', 'PROPN'), ('·', 'PUNCT'), ('Speech', 'PROPN'), ('·', 'PUNCT'), ('Written', 'PROPN'), ('Text', 'PROPN'), ('Components', 'PROPN'), ('NLP', 'PROPN'), ('components', 'NOUN'), ('NLP', 'PROPN'), ('given', 'VERB'), ('−', 'PROPN'), ('Natural', 'PROPN'), ('Language', 'PROPN'), ('Understanding', 'PROPN'), ('(', 'PUNCT'), ('NLU', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('input', 'nsubj'), ('output', 'conj'), ('NLP', 'compound'), ('system', 'pobj'), ('−', 'attr'), ('·', 'punct'), ('Speech', 'nmod'), ('·', 'punct'), ('Written', 'compound'), ('Text', 'compound'), ('Components', 'appos'), ('NLP', 'pobj'), ('components', 'attr'), ('NLP', 'pobj'), ('given', 'advcl'), ('−', 'compound'), ('Natural', 'compound'), ('Language', 'compound'), ('Understanding', 'dative'), ('(', 'punct'), ('NLU', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[input, output], [output, NLP], [NLP, system], [system, −], [−, ·], [·, Speech], [Speech, ·], [·, Written], [Written, Text], [Text, Components], [Components, NLP], [NLP, components], [components, NLP], [NLP, given], [given, −], [−, Natural], [Natural, Language], [Language, Understanding], [Understanding, (], [(, NLU], [NLU, )]]
+
+>> Trigrams: 
+[[input, output, NLP], [output, NLP, system], [NLP, system, −], [system, −, ·], [−, ·, Speech], [·, Speech, ·], [Speech, ·, Written], [·, Written, Text], [Written, Text, Components], [Text, Components, NLP], [Components, NLP, components], [NLP, components, NLP], [components, NLP, given], [NLP, given, −], [given, −, Natural], [−, Natural, Language], [Natural, Language, Understanding], [Language, Understanding, (], [Understanding, (, NLU], [(, NLU, )]]
+
+>> Noun Phrases are: 
+[The input, output, an NLP system, −, Speech · Written Text Components, NLP, two components, NLP, − Natural Language Understanding, NLU]
+
+>> Named Entities are: 
+[('NLP', 'ORG'), ('Speech', 'PERSON'), ('NLP', 'ORG'), ('two', 'CARDINAL'), ('NLP', 'ORG'), ('− Natural Language Understanding', 'ORG'), ('NLU', 'ORG')]
+
+
+============================ Sentence 5 =============================
+
+Understanding involves the following tasks − · Mapping the given input in natural language into useful representations. · 
+
+
+>> Tokens are: 
+[Understanding, involves, following, tasks, −, ·, Mapping, given, input, natural, language, useful, representations, ., ·] 
+
+>> PoS Tags are: 
+[('Understanding', 'NOUN'), ('involves', 'VERB'), ('following', 'VERB'), ('tasks', 'NOUN'), ('−', 'VERB'), ('·', 'PUNCT'), ('Mapping', 'NOUN'), ('given', 'VERB'), ('input', 'NOUN'), ('natural', 'ADJ'), ('language', 'NOUN'), ('useful', 'ADJ'), ('representations', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Understanding', 'nsubj'), ('involves', 'ROOT'), ('following', 'amod'), ('tasks', 'dobj'), ('−', 'acl'), ('·', 'punct'), ('Mapping', 'appos'), ('given', 'amod'), ('input', 'appos'), ('natural', 'amod'), ('language', 'pobj'), ('useful', 'amod'), ('representations', 'pobj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Understanding, involves], [involves, following], [following, tasks], [tasks, −], [−, ·], [·, Mapping], [Mapping, given], [given, input], [input, natural], [natural, language], [language, useful], [useful, representations], [representations, .], [., ·]]
+
+>> Trigrams: 
+[[Understanding, involves, following], [involves, following, tasks], [following, tasks, −], [tasks, −, ·], [−, ·, Mapping], [·, Mapping, given], [Mapping, given, input], [given, input, natural], [input, natural, language], [natural, language, useful], [language, useful, representations], [useful, representations, .], [representations, ., ·]]
+
+>> Noun Phrases are: 
+[Understanding, the following tasks, · Mapping, the given input, natural language, useful representations]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+Analyzing different aspects of the language. 
+
+
+>> Tokens are: 
+[Analyzing, different, aspects, language, .] 
+
+>> PoS Tags are: 
+[('Analyzing', 'VERB'), ('different', 'ADJ'), ('aspects', 'NOUN'), ('language', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Analyzing', 'ROOT'), ('different', 'amod'), ('aspects', 'dobj'), ('language', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Analyzing, different], [different, aspects], [aspects, language], [language, .]]
+
+>> Trigrams: 
+[[Analyzing, different, aspects], [different, aspects, language], [aspects, language, .]]
+
+>> Noun Phrases are: 
+[different aspects, the language]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+Natural Language Generation (NLG) 
+
+
+>> Tokens are: 
+[Natural, Language, Generation, (, NLG, )] 
+
+>> PoS Tags are: 
+[('Natural', 'PROPN'), ('Language', 'PROPN'), ('Generation', 'PROPN'), ('(', 'PUNCT'), ('NLG', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Natural', 'compound'), ('Language', 'compound'), ('Generation', 'ROOT'), ('(', 'punct'), ('NLG', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[Natural, Language], [Language, Generation], [Generation, (], [(, NLG], [NLG, )]]
+
+>> Trigrams: 
+[[Natural, Language, Generation], [Language, Generation, (], [Generation, (, NLG], [(, NLG, )]]
+
+>> Noun Phrases are: 
+[Natural Language Generation, (NLG]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 8 =============================
+
+It is the process of producing meaningful phrases and sentences in the form of natural language from some internal representation. 
+
+
+>> Tokens are: 
+[process, producing, meaningful, phrases, sentences, form, natural, language, internal, representation, .] 
+
+>> PoS Tags are: 
+[('process', 'NOUN'), ('producing', 'VERB'), ('meaningful', 'ADJ'), ('phrases', 'NOUN'), ('sentences', 'NOUN'), ('form', 'NOUN'), ('natural', 'ADJ'), ('language', 'NOUN'), ('internal', 'ADJ'), ('representation', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('process', 'attr'), ('producing', 'pcomp'), ('meaningful', 'amod'), ('phrases', 'dobj'), ('sentences', 'conj'), ('form', 'pobj'), ('natural', 'amod'), ('language', 'pobj'), ('internal', 'amod'), ('representation', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[process, producing], [producing, meaningful], [meaningful, phrases], [phrases, sentences], [sentences, form], [form, natural], [natural, language], [language, internal], [internal, representation], [representation, .]]
+
+>> Trigrams: 
+[[process, producing, meaningful], [producing, meaningful, phrases], [meaningful, phrases, sentences], [phrases, sentences, form], [sentences, form, natural], [form, natural, language], [natural, language, internal], [language, internal, representation], [internal, representation, .]]
+
+>> Noun Phrases are: 
+[It, the process, meaningful phrases, sentences, the form, natural language, some internal representation]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+It involves − · Text planning − It includes retrieving the relevant content from knowledge base. 
+
+
+>> Tokens are: 
+[involves, −, ·, Text, planning, −, includes, retrieving, relevant, content, knowledge, base, .] 
+
+>> PoS Tags are: 
+[('involves', 'VERB'), ('−', 'PROPN'), ('·', 'PUNCT'), ('Text', 'NOUN'), ('planning', 'NOUN'), ('−', 'NOUN'), ('includes', 'VERB'), ('retrieving', 'VERB'), ('relevant', 'ADJ'), ('content', 'NOUN'), ('knowledge', 'NOUN'), ('base', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('involves', 'ROOT'), ('−', 'dobj'), ('·', 'punct'), ('Text', 'compound'), ('planning', 'compound'), ('−', 'appos'), ('includes', 'ccomp'), ('retrieving', 'xcomp'), ('relevant', 'amod'), ('content', 'dobj'), ('knowledge', 'compound'), ('base', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[involves, −], [−, ·], [·, Text], [Text, planning], [planning, −], [−, includes], [includes, retrieving], [retrieving, relevant], [relevant, content], [content, knowledge], [knowledge, base], [base, .]]
+
+>> Trigrams: 
+[[involves, −, ·], [−, ·, Text], [·, Text, planning], [Text, planning, −], [planning, −, includes], [−, includes, retrieving], [includes, retrieving, relevant], [retrieving, relevant, content], [relevant, content, knowledge], [content, knowledge, base], [knowledge, base, .]]
+
+>> Noun Phrases are: 
+[It, −, Text planning −, It, the relevant content, knowledge base]
+
+>> Named Entities are: 
+[('−', 'PERSON')]
+
+
+============================ Sentence 10 =============================
+
+· Sentence planning − It includes choosing required words, forming meaningful phrases, setting tone of the sentence. 
+
+
+>> Tokens are: 
+[·, Sentence, planning, −, includes, choosing, required, words, ,, forming, meaningful, phrases, ,, setting, tone, sentence, .] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('Sentence', 'NOUN'), ('planning', 'NOUN'), ('−', 'NOUN'), ('includes', 'VERB'), ('choosing', 'VERB'), ('required', 'VERB'), ('words', 'NOUN'), (',', 'PUNCT'), ('forming', 'VERB'), ('meaningful', 'ADJ'), ('phrases', 'NOUN'), (',', 'PUNCT'), ('setting', 'VERB'), ('tone', 'NOUN'), ('sentence', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('Sentence', 'compound'), ('planning', 'compound'), ('−', 'npadvmod'), ('includes', 'ROOT'), ('choosing', 'xcomp'), ('required', 'amod'), ('words', 'dobj'), (',', 'punct'), ('forming', 'conj'), ('meaningful', 'amod'), ('phrases', 'dobj'), (',', 'punct'), ('setting', 'conj'), ('tone', 'dobj'), ('sentence', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[·, Sentence], [Sentence, planning], [planning, −], [−, includes], [includes, choosing], [choosing, required], [required, words], [words, ,], [,, forming], [forming, meaningful], [meaningful, phrases], [phrases, ,], [,, setting], [setting, tone], [tone, sentence], [sentence, .]]
+
+>> Trigrams: 
+[[·, Sentence, planning], [Sentence, planning, −], [planning, −, includes], [−, includes, choosing], [includes, choosing, required], [choosing, required, words], [required, words, ,], [words, ,, forming], [,, forming, meaningful], [forming, meaningful, phrases], [meaningful, phrases, ,], [phrases, ,, setting], [,, setting, tone], [setting, tone, sentence], [tone, sentence, .]]
+
+>> Noun Phrases are: 
+[It, required words, meaningful phrases, tone, the sentence]
+
+>> Named Entities are: 
+[('Sentence', 'PERSON'), ('−', 'PERSON')]
+
+
+============================ Sentence 11 =============================
+
+· Text Realization − It is mapping sentence plan into sentence structure. 
+
+
+>> Tokens are: 
+[·, Text, Realization, −, mapping, sentence, plan, sentence, structure, .] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('Text', 'NOUN'), ('Realization', 'PROPN'), ('−', 'PROPN'), ('mapping', 'NOUN'), ('sentence', 'NOUN'), ('plan', 'NOUN'), ('sentence', 'NOUN'), ('structure', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('Text', 'compound'), ('Realization', 'compound'), ('−', 'dep'), ('mapping', 'compound'), ('sentence', 'compound'), ('plan', 'attr'), ('sentence', 'compound'), ('structure', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[·, Text], [Text, Realization], [Realization, −], [−, mapping], [mapping, sentence], [sentence, plan], [plan, sentence], [sentence, structure], [structure, .]]
+
+>> Trigrams: 
+[[·, Text, Realization], [Text, Realization, −], [Realization, −, mapping], [−, mapping, sentence], [mapping, sentence, plan], [sentence, plan, sentence], [plan, sentence, structure], [sentence, structure, .]]
+
+>> Noun Phrases are: 
+[It, mapping sentence plan, sentence structure]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+The NLU is harder than NLG. 
+
+
+>> Tokens are: 
+[NLU, harder, NLG, .] 
+
+>> PoS Tags are: 
+[('NLU', 'PROPN'), ('harder', 'ADJ'), ('NLG', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('NLU', 'nsubj'), ('harder', 'acomp'), ('NLG', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[NLU, harder], [harder, NLG], [NLG, .]]
+
+>> Trigrams: 
+[[NLU, harder, NLG], [harder, NLG, .]]
+
+>> Noun Phrases are: 
+[The NLU, NLG]
+
+>> Named Entities are: 
+[('NLU', 'ORG')]
+
+
+============================ Sentence 13 =============================
+
+Difficulties in NLU NL has an extremely rich form and structure. 
+
+
+>> Tokens are: 
+[Difficulties, NLU, NL, extremely, rich, form, structure, .] 
+
+>> PoS Tags are: 
+[('Difficulties', 'NOUN'), ('NLU', 'PROPN'), ('NL', 'PROPN'), ('extremely', 'ADV'), ('rich', 'ADJ'), ('form', 'NOUN'), ('structure', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Difficulties', 'nsubj'), ('NLU', 'compound'), ('NL', 'pobj'), ('extremely', 'advmod'), ('rich', 'amod'), ('form', 'dobj'), ('structure', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Difficulties, NLU], [NLU, NL], [NL, extremely], [extremely, rich], [rich, form], [form, structure], [structure, .]]
+
+>> Trigrams: 
+[[Difficulties, NLU, NL], [NLU, NL, extremely], [NL, extremely, rich], [extremely, rich, form], [rich, form, structure], [form, structure, .]]
+
+>> Noun Phrases are: 
+[Difficulties, NLU NL, an extremely rich form, structure]
+
+>> Named Entities are: 
+[('NLU NL', 'ORG')]
+
+
+============================ Sentence 14 =============================
+
+It is very ambiguous. 
+
+
+>> Tokens are: 
+[ambiguous, .] 
+
+>> PoS Tags are: 
+[('ambiguous', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ambiguous', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ambiguous, .]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[It]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+There can be different levels of ambiguity − · Lexical ambiguity − It is at very primitive level such as word-level. · 
+
+
+>> Tokens are: 
+[different, levels, ambiguity, −, ·, Lexical, ambiguity, −, primitive, level, word, -, level, ., ·] 
+
+>> PoS Tags are: 
+[('different', 'ADJ'), ('levels', 'NOUN'), ('ambiguity', 'NOUN'), ('−', 'VERB'), ('·', 'PUNCT'), ('Lexical', 'ADJ'), ('ambiguity', 'NOUN'), ('−', 'PROPN'), ('primitive', 'ADJ'), ('level', 'NOUN'), ('word', 'NOUN'), ('-', 'PUNCT'), ('level', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('different', 'amod'), ('levels', 'attr'), ('ambiguity', 'pobj'), ('−', 'dep'), ('·', 'punct'), ('Lexical', 'amod'), ('ambiguity', 'compound'), ('−', 'npadvmod'), ('primitive', 'amod'), ('level', 'pobj'), ('word', 'compound'), ('-', 'punct'), ('level', 'pobj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[different, levels], [levels, ambiguity], [ambiguity, −], [−, ·], [·, Lexical], [Lexical, ambiguity], [ambiguity, −], [−, primitive], [primitive, level], [level, word], [word, -], [-, level], [level, .], [., ·]]
+
+>> Trigrams: 
+[[different, levels, ambiguity], [levels, ambiguity, −], [ambiguity, −, ·], [−, ·, Lexical], [·, Lexical, ambiguity], [Lexical, ambiguity, −], [ambiguity, −, primitive], [−, primitive, level], [primitive, level, word], [level, word, -], [word, -, level], [-, level, .], [level, ., ·]]
+
+>> Noun Phrases are: 
+[different levels, ambiguity, It, very primitive level, word-level]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+For example, treating the word “board” as noun or verb? 
+
+
+>> Tokens are: 
+[example, ,, treating, word, “, board, ”, noun, verb, ?] 
+
+>> PoS Tags are: 
+[('example', 'NOUN'), (',', 'PUNCT'), ('treating', 'VERB'), ('word', 'NOUN'), ('“', 'PUNCT'), ('board', 'NOUN'), ('”', 'PUNCT'), ('noun', 'NOUN'), ('verb', 'NOUN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('example', 'pobj'), (',', 'punct'), ('treating', 'ROOT'), ('word', 'nmod'), ('“', 'punct'), ('board', 'dobj'), ('”', 'punct'), ('noun', 'pobj'), ('verb', 'conj'), ('?', 'punct')]
+
+>> Bigrams: 
+[[example, ,], [,, treating], [treating, word], [word, “], [“, board], [board, ”], [”, noun], [noun, verb], [verb, ?]]
+
+>> Trigrams: 
+[[example, ,, treating], [,, treating, word], [treating, word, “], [word, “, board], [“, board, ”], [board, ”, noun], [”, noun, verb], [noun, verb, ?]]
+
+>> Noun Phrases are: 
+[example, the word “board, noun, verb]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+· Syntax Level ambiguity − A sentence can be parsed in different ways. · 
+
+
+>> Tokens are: 
+[·, Syntax, Level, ambiguity, −, sentence, parsed, different, ways, ., ·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('Syntax', 'PROPN'), ('Level', 'PROPN'), ('ambiguity', 'NOUN'), ('−', 'PROPN'), ('sentence', 'NOUN'), ('parsed', 'VERB'), ('different', 'ADJ'), ('ways', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('Syntax', 'compound'), ('Level', 'compound'), ('ambiguity', 'dep'), ('−', 'npadvmod'), ('sentence', 'nsubjpass'), ('parsed', 'ROOT'), ('different', 'amod'), ('ways', 'pobj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[·, Syntax], [Syntax, Level], [Level, ambiguity], [ambiguity, −], [−, sentence], [sentence, parsed], [parsed, different], [different, ways], [ways, .], [., ·]]
+
+>> Trigrams: 
+[[·, Syntax, Level], [Syntax, Level, ambiguity], [Level, ambiguity, −], [ambiguity, −, sentence], [−, sentence, parsed], [sentence, parsed, different], [parsed, different, ways], [different, ways, .], [ways, ., ·]]
+
+>> Noun Phrases are: 
+[A sentence, different ways]
+
+>> Named Entities are: 
+[('Syntax Level', 'PERSON')]
+
+
+============================ Sentence 18 =============================
+
+For example, “He lifted the beetle with red cap.” 
+
+
+>> Tokens are: 
+[example, ,, “, lifted, beetle, red, cap, ., ”] 
+
+>> PoS Tags are: 
+[('example', 'NOUN'), (',', 'PUNCT'), ('“', 'PUNCT'), ('lifted', 'VERB'), ('beetle', 'NOUN'), ('red', 'ADJ'), ('cap', 'NOUN'), ('.', 'PUNCT'), ('”', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('example', 'pobj'), (',', 'punct'), ('“', 'punct'), ('lifted', 'ROOT'), ('beetle', 'dobj'), ('red', 'amod'), ('cap', 'pobj'), ('.', 'punct'), ('”', 'punct')]
+
+>> Bigrams: 
+[[example, ,], [,, “], [“, lifted], [lifted, beetle], [beetle, red], [red, cap], [cap, .], [., ”]]
+
+>> Trigrams: 
+[[example, ,, “], [,, “, lifted], [“, lifted, beetle], [lifted, beetle, red], [beetle, red, cap], [red, cap, .], [cap, ., ”]]
+
+>> Noun Phrases are: 
+[example, He, the beetle, red cap]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+− Did he use cap to lift the beetle or he lifted a beetle that had red cap? · 
+
+
+>> Tokens are: 
+[−, use, cap, lift, beetle, lifted, beetle, red, cap, ?, ·] 
+
+>> PoS Tags are: 
+[('−', 'PROPN'), ('use', 'VERB'), ('cap', 'NOUN'), ('lift', 'VERB'), ('beetle', 'NOUN'), ('lifted', 'VERB'), ('beetle', 'NOUN'), ('red', 'ADJ'), ('cap', 'NOUN'), ('?', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('−', 'nsubj'), ('use', 'ROOT'), ('cap', 'dobj'), ('lift', 'xcomp'), ('beetle', 'dobj'), ('lifted', 'conj'), ('beetle', 'dobj'), ('red', 'amod'), ('cap', 'dobj'), ('?', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[−, use], [use, cap], [cap, lift], [lift, beetle], [beetle, lifted], [lifted, beetle], [beetle, red], [red, cap], [cap, ?], [?, ·]]
+
+>> Trigrams: 
+[[−, use, cap], [use, cap, lift], [cap, lift, beetle], [lift, beetle, lifted], [beetle, lifted, beetle], [lifted, beetle, red], [beetle, red, cap], [red, cap, ?], [cap, ?, ·]]
+
+>> Noun Phrases are: 
+[−, he, cap, the beetle, he, a beetle, red cap]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 20 =============================
+
+Referential ambiguity − Referring to something using pronouns. 
+
+
+>> Tokens are: 
+[Referential, ambiguity, −, Referring, pronouns, .] 
+
+>> PoS Tags are: 
+[('Referential', 'ADJ'), ('ambiguity', 'NOUN'), ('−', 'NOUN'), ('Referring', 'VERB'), ('pronouns', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Referential', 'amod'), ('ambiguity', 'compound'), ('−', 'ROOT'), ('Referring', 'acl'), ('pronouns', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Referential, ambiguity], [ambiguity, −], [−, Referring], [Referring, pronouns], [pronouns, .]]
+
+>> Trigrams: 
+[[Referential, ambiguity, −], [ambiguity, −, Referring], [−, Referring, pronouns], [Referring, pronouns, .]]
+
+>> Noun Phrases are: 
+[Referential ambiguity −, something, pronouns]
+
+>> Named Entities are: 
+[('Referential', 'PERSON'), ('− Referring', 'PERSON')]
+
+
+============================ Sentence 21 =============================
+
+For example, Rima went to Gauri. 
+
+
+>> Tokens are: 
+[example, ,, Rima, went, Gauri, .] 
+
+>> PoS Tags are: 
+[('example', 'NOUN'), (',', 'PUNCT'), ('Rima', 'PROPN'), ('went', 'VERB'), ('Gauri', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('example', 'pobj'), (',', 'punct'), ('Rima', 'nsubj'), ('went', 'ROOT'), ('Gauri', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[example, ,], [,, Rima], [Rima, went], [went, Gauri], [Gauri, .]]
+
+>> Trigrams: 
+[[example, ,, Rima], [,, Rima, went], [Rima, went, Gauri], [went, Gauri, .]]
+
+>> Noun Phrases are: 
+[example, Rima, Gauri]
+
+>> Named Entities are: 
+[('Rima', 'ORG'), ('Gauri', 'GPE')]
+
+
+============================ Sentence 22 =============================
+
+She said, “I am tired.” 
+
+
+>> Tokens are: 
+[said, ,, “, tired, ., ”] 
+
+>> PoS Tags are: 
+[('said', 'VERB'), (',', 'PUNCT'), ('“', 'PUNCT'), ('tired', 'ADJ'), ('.', 'PUNCT'), ('”', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('said', 'ROOT'), (',', 'punct'), ('“', 'punct'), ('tired', 'acomp'), ('.', 'punct'), ('”', 'punct')]
+
+>> Bigrams: 
+[[said, ,], [,, “], [“, tired], [tired, .], [., ”]]
+
+>> Trigrams: 
+[[said, ,, “], [,, “, tired], [“, tired, .], [tired, ., ”]]
+
+>> Noun Phrases are: 
+[She, I]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+− Exactly who is tired? · 
+
+
+>> Tokens are: 
+[−, Exactly, tired, ?, ·] 
+
+>> PoS Tags are: 
+[('−', 'PROPN'), ('Exactly', 'ADV'), ('tired', 'ADJ'), ('?', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('−', 'nsubj'), ('Exactly', 'advmod'), ('tired', 'acomp'), ('?', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[−, Exactly], [Exactly, tired], [tired, ?], [?, ·]]
+
+>> Trigrams: 
+[[−, Exactly, tired], [Exactly, tired, ?], [tired, ?, ·]]
+
+>> Noun Phrases are: 
+[−, who]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 24 =============================
+
+One input can mean different meanings. 
+
+
+>> Tokens are: 
+[input, mean, different, meanings, .] 
+
+>> PoS Tags are: 
+[('input', 'NOUN'), ('mean', 'VERB'), ('different', 'ADJ'), ('meanings', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('input', 'nsubj'), ('mean', 'ROOT'), ('different', 'amod'), ('meanings', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[input, mean], [mean, different], [different, meanings], [meanings, .]]
+
+>> Trigrams: 
+[[input, mean, different], [mean, different, meanings], [different, meanings, .]]
+
+>> Noun Phrases are: 
+[One input, different meanings]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+Many inputs can mean the same thing. 
+
+
+>> Tokens are: 
+[inputs, mean, thing, .] 
+
+>> PoS Tags are: 
+[('inputs', 'NOUN'), ('mean', 'VERB'), ('thing', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('inputs', 'nsubj'), ('mean', 'ROOT'), ('thing', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[inputs, mean], [mean, thing], [thing, .]]
+
+>> Trigrams: 
+[[inputs, mean, thing], [mean, thing, .]]
+
+>> Noun Phrases are: 
+[Many inputs, the same thing]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 27 =============================
+
+NLP Terminology · Phonology − 
+
+
+>> Tokens are: 
+[NLP, Terminology, ·, Phonology, −] 
+
+>> PoS Tags are: 
+[('NLP', 'PROPN'), ('Terminology', 'NOUN'), ('·', 'PUNCT'), ('Phonology', 'NOUN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('NLP', 'compound'), ('Terminology', 'ROOT'), ('·', 'punct'), ('Phonology', 'compound'), ('−', 'appos')]
+
+>> Bigrams: 
+[[NLP, Terminology], [Terminology, ·], [·, Phonology], [Phonology, −]]
+
+>> Trigrams: 
+[[NLP, Terminology, ·], [Terminology, ·, Phonology], [·, Phonology, −]]
+
+>> Noun Phrases are: 
+[NLP Terminology, Phonology −]
+
+>> Named Entities are: 
+[('NLP Terminology', 'ORG')]
+
+
+============================ Sentence 28 =============================
+
+It is study of organizing sound systematically. · 
+
+
+>> Tokens are: 
+[study, organizing, sound, systematically, ., ·] 
+
+>> PoS Tags are: 
+[('study', 'NOUN'), ('organizing', 'VERB'), ('sound', 'NOUN'), ('systematically', 'ADV'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('study', 'attr'), ('organizing', 'pcomp'), ('sound', 'dobj'), ('systematically', 'advmod'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[study, organizing], [organizing, sound], [sound, systematically], [systematically, .], [., ·]]
+
+>> Trigrams: 
+[[study, organizing, sound], [organizing, sound, systematically], [sound, systematically, .], [systematically, ., ·]]
+
+>> Noun Phrases are: 
+[It, study, sound]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 29 =============================
+
+Morphology − It is a study of construction of words from primitive meaningful units. 
+
+
+>> Tokens are: 
+[Morphology, −, study, construction, words, primitive, meaningful, units, .] 
+
+>> PoS Tags are: 
+[('Morphology', 'NOUN'), ('−', 'NOUN'), ('study', 'NOUN'), ('construction', 'NOUN'), ('words', 'NOUN'), ('primitive', 'ADJ'), ('meaningful', 'ADJ'), ('units', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Morphology', 'compound'), ('−', 'npadvmod'), ('study', 'attr'), ('construction', 'pobj'), ('words', 'pobj'), ('primitive', 'amod'), ('meaningful', 'amod'), ('units', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Morphology, −], [−, study], [study, construction], [construction, words], [words, primitive], [primitive, meaningful], [meaningful, units], [units, .]]
+
+>> Trigrams: 
+[[Morphology, −, study], [−, study, construction], [study, construction, words], [construction, words, primitive], [words, primitive, meaningful], [primitive, meaningful, units], [meaningful, units, .]]
+
+>> Noun Phrases are: 
+[It, a study, construction, words, primitive meaningful units]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 30 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 31 =============================
+
+Morpheme − It is primitive unit of meaning in a language. 
+
+
+>> Tokens are: 
+[Morpheme, −, primitive, unit, meaning, language, .] 
+
+>> PoS Tags are: 
+[('Morpheme', 'NOUN'), ('−', 'PROPN'), ('primitive', 'ADJ'), ('unit', 'NOUN'), ('meaning', 'NOUN'), ('language', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Morpheme', 'compound'), ('−', 'npadvmod'), ('primitive', 'amod'), ('unit', 'attr'), ('meaning', 'pobj'), ('language', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Morpheme, −], [−, primitive], [primitive, unit], [unit, meaning], [meaning, language], [language, .]]
+
+>> Trigrams: 
+[[Morpheme, −, primitive], [−, primitive, unit], [primitive, unit, meaning], [unit, meaning, language], [meaning, language, .]]
+
+>> Noun Phrases are: 
+[It, primitive unit, meaning, a language]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 32 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 33 =============================
+
+Syntax − It refers to arranging words to make a sentence. 
+
+
+>> Tokens are: 
+[Syntax, −, refers, arranging, words, sentence, .] 
+
+>> PoS Tags are: 
+[('Syntax', 'PROPN'), ('−', 'PROPN'), ('refers', 'VERB'), ('arranging', 'VERB'), ('words', 'NOUN'), ('sentence', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Syntax', 'compound'), ('−', 'npadvmod'), ('refers', 'ROOT'), ('arranging', 'pcomp'), ('words', 'dobj'), ('sentence', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Syntax, −], [−, refers], [refers, arranging], [arranging, words], [words, sentence], [sentence, .]]
+
+>> Trigrams: 
+[[Syntax, −, refers], [−, refers, arranging], [refers, arranging, words], [arranging, words, sentence], [words, sentence, .]]
+
+>> Noun Phrases are: 
+[It, words, a sentence]
+
+>> Named Entities are: 
+[('Syntax −', 'PERSON')]
+
+
+============================ Sentence 34 =============================
+
+It also involves determining the structural role of words in the sentence and in phrases. · 
+
+
+>> Tokens are: 
+[involves, determining, structural, role, words, sentence, phrases, ., ·] 
+
+>> PoS Tags are: 
+[('involves', 'VERB'), ('determining', 'VERB'), ('structural', 'ADJ'), ('role', 'NOUN'), ('words', 'NOUN'), ('sentence', 'NOUN'), ('phrases', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('involves', 'ROOT'), ('determining', 'xcomp'), ('structural', 'amod'), ('role', 'dobj'), ('words', 'pobj'), ('sentence', 'pobj'), ('phrases', 'pobj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[involves, determining], [determining, structural], [structural, role], [role, words], [words, sentence], [sentence, phrases], [phrases, .], [., ·]]
+
+>> Trigrams: 
+[[involves, determining, structural], [determining, structural, role], [structural, role, words], [role, words, sentence], [words, sentence, phrases], [sentence, phrases, .], [phrases, ., ·]]
+
+>> Noun Phrases are: 
+[It, the structural role, words, the sentence, phrases]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 35 =============================
+
+Semantics − It is concerned with the meaning of words and how to combine words into meaningful phrases and sentences. 
+
+
+>> Tokens are: 
+[Semantics, −, concerned, meaning, words, combine, words, meaningful, phrases, sentences, .] 
+
+>> PoS Tags are: 
+[('Semantics', 'VERB'), ('−', 'PROPN'), ('concerned', 'ADJ'), ('meaning', 'NOUN'), ('words', 'NOUN'), ('combine', 'VERB'), ('words', 'NOUN'), ('meaningful', 'ADJ'), ('phrases', 'NOUN'), ('sentences', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Semantics', 'compound'), ('−', 'dep'), ('concerned', 'acomp'), ('meaning', 'pobj'), ('words', 'pobj'), ('combine', 'conj'), ('words', 'dobj'), ('meaningful', 'amod'), ('phrases', 'pobj'), ('sentences', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Semantics, −], [−, concerned], [concerned, meaning], [meaning, words], [words, combine], [combine, words], [words, meaningful], [meaningful, phrases], [phrases, sentences], [sentences, .]]
+
+>> Trigrams: 
+[[Semantics, −, concerned], [−, concerned, meaning], [concerned, meaning, words], [meaning, words, combine], [words, combine, words], [combine, words, meaningful], [words, meaningful, phrases], [meaningful, phrases, sentences], [phrases, sentences, .]]
+
+>> Noun Phrases are: 
+[It, the meaning, words, words, meaningful phrases, sentences]
+
+>> Named Entities are: 
+[('Semantics', 'PERSON')]
+
+
+============================ Sentence 36 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 37 =============================
+
+Pragmatics − It deals with using and understanding sentences in different situations and how the interpretation of the sentence is affected. · 
+
+
+>> Tokens are: 
+[Pragmatics, −, deals, understanding, sentences, different, situations, interpretation, sentence, affected, ., ·] 
+
+>> PoS Tags are: 
+[('Pragmatics', 'NOUN'), ('−', 'VERB'), ('deals', 'VERB'), ('understanding', 'VERB'), ('sentences', 'NOUN'), ('different', 'ADJ'), ('situations', 'NOUN'), ('interpretation', 'NOUN'), ('sentence', 'NOUN'), ('affected', 'VERB'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Pragmatics', 'compound'), ('−', 'npadvmod'), ('deals', 'ROOT'), ('understanding', 'conj'), ('sentences', 'dobj'), ('different', 'amod'), ('situations', 'pobj'), ('interpretation', 'nsubjpass'), ('sentence', 'pobj'), ('affected', 'conj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Pragmatics, −], [−, deals], [deals, understanding], [understanding, sentences], [sentences, different], [different, situations], [situations, interpretation], [interpretation, sentence], [sentence, affected], [affected, .], [., ·]]
+
+>> Trigrams: 
+[[Pragmatics, −, deals], [−, deals, understanding], [deals, understanding, sentences], [understanding, sentences, different], [sentences, different, situations], [different, situations, interpretation], [situations, interpretation, sentence], [interpretation, sentence, affected], [sentence, affected, .], [affected, ., ·]]
+
+>> Noun Phrases are: 
+[It, sentences, different situations, the interpretation, the sentence]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 38 =============================
+
+Discourse − It deals with how the immediately preceding sentence can affect the interpretation of the next sentence. 
+
+
+>> Tokens are: 
+[Discourse, −, deals, immediately, preceding, sentence, affect, interpretation, sentence, .] 
+
+>> PoS Tags are: 
+[('Discourse', 'NOUN'), ('−', 'NOUN'), ('deals', 'VERB'), ('immediately', 'ADV'), ('preceding', 'VERB'), ('sentence', 'NOUN'), ('affect', 'VERB'), ('interpretation', 'NOUN'), ('sentence', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Discourse', 'compound'), ('−', 'npadvmod'), ('deals', 'ROOT'), ('immediately', 'advmod'), ('preceding', 'amod'), ('sentence', 'nsubj'), ('affect', 'pcomp'), ('interpretation', 'dobj'), ('sentence', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Discourse, −], [−, deals], [deals, immediately], [immediately, preceding], [preceding, sentence], [sentence, affect], [affect, interpretation], [interpretation, sentence], [sentence, .]]
+
+>> Trigrams: 
+[[Discourse, −, deals], [−, deals, immediately], [deals, immediately, preceding], [immediately, preceding, sentence], [preceding, sentence, affect], [sentence, affect, interpretation], [affect, interpretation, sentence], [interpretation, sentence, .]]
+
+>> Noun Phrases are: 
+[It, the immediately preceding sentence, the interpretation, the next sentence]
+
+>> Named Entities are: 
+[('Discourse −', 'PERSON')]
+
+
+============================ Sentence 39 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 40 =============================
+
+World Knowledge − It includes the general knowledge about the world. 
+
+
+>> Tokens are: 
+[World, Knowledge, −, includes, general, knowledge, world, .] 
+
+>> PoS Tags are: 
+[('World', 'NOUN'), ('Knowledge', 'NOUN'), ('−', 'PROPN'), ('includes', 'VERB'), ('general', 'ADJ'), ('knowledge', 'NOUN'), ('world', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('World', 'compound'), ('Knowledge', 'compound'), ('−', 'npadvmod'), ('includes', 'ROOT'), ('general', 'amod'), ('knowledge', 'dobj'), ('world', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[World, Knowledge], [Knowledge, −], [−, includes], [includes, general], [general, knowledge], [knowledge, world], [world, .]]
+
+>> Trigrams: 
+[[World, Knowledge, −], [Knowledge, −, includes], [−, includes, general], [includes, general, knowledge], [general, knowledge, world], [knowledge, world, .]]
+
+>> Noun Phrases are: 
+[It, the general knowledge, the world]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 41 =============================
+
+Steps in NLP There are general five steps − 
+
+
+>> Tokens are: 
+[Steps, NLP, general, steps, −] 
+
+>> PoS Tags are: 
+[('Steps', 'NOUN'), ('NLP', 'PROPN'), ('general', 'ADJ'), ('steps', 'NOUN'), ('−', 'VERB')] 
+
+>> Dependency Tags are: 
+[('Steps', 'dep'), ('NLP', 'pobj'), ('general', 'acomp'), ('steps', 'npadvmod'), ('−', 'dep')]
+
+>> Bigrams: 
+[[Steps, NLP], [NLP, general], [general, steps], [steps, −]]
+
+>> Trigrams: 
+[[Steps, NLP, general], [NLP, general, steps], [general, steps, −]]
+
+>> Noun Phrases are: 
+[NLP]
+
+>> Named Entities are: 
+[('NLP', 'ORG'), ('five', 'CARDINAL')]
+
+
+============================ Sentence 42 =============================
+
+· Lexical Analysis − It involves identifying and analyzing the structure of words. 
+
+
+>> Tokens are: 
+[·, Lexical, Analysis, −, involves, identifying, analyzing, structure, words, .] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('Lexical', 'PROPN'), ('Analysis', 'PROPN'), ('−', 'PROPN'), ('involves', 'VERB'), ('identifying', 'VERB'), ('analyzing', 'VERB'), ('structure', 'NOUN'), ('words', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('Lexical', 'compound'), ('Analysis', 'compound'), ('−', 'dep'), ('involves', 'ROOT'), ('identifying', 'xcomp'), ('analyzing', 'conj'), ('structure', 'dobj'), ('words', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[·, Lexical], [Lexical, Analysis], [Analysis, −], [−, involves], [involves, identifying], [identifying, analyzing], [analyzing, structure], [structure, words], [words, .]]
+
+>> Trigrams: 
+[[·, Lexical, Analysis], [Lexical, Analysis, −], [Analysis, −, involves], [−, involves, identifying], [involves, identifying, analyzing], [identifying, analyzing, structure], [analyzing, structure, words], [structure, words, .]]
+
+>> Noun Phrases are: 
+[It, the structure, words]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 43 =============================
+
+Lexicon of a language means the collection of words and phrases in a language. 
+
+
+>> Tokens are: 
+[Lexicon, language, means, collection, words, phrases, language, .] 
+
+>> PoS Tags are: 
+[('Lexicon', 'NOUN'), ('language', 'NOUN'), ('means', 'VERB'), ('collection', 'NOUN'), ('words', 'NOUN'), ('phrases', 'NOUN'), ('language', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Lexicon', 'nsubj'), ('language', 'pobj'), ('means', 'ROOT'), ('collection', 'dobj'), ('words', 'pobj'), ('phrases', 'conj'), ('language', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Lexicon, language], [language, means], [means, collection], [collection, words], [words, phrases], [phrases, language], [language, .]]
+
+>> Trigrams: 
+[[Lexicon, language, means], [language, means, collection], [means, collection, words], [collection, words, phrases], [words, phrases, language], [phrases, language, .]]
+
+>> Noun Phrases are: 
+[Lexicon, a language, the collection, words, phrases, a language]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 44 =============================
+
+Lexical analysis is dividing the whole chunk of txt into paragraphs, sentences, and words. · 
+
+
+>> Tokens are: 
+[Lexical, analysis, dividing, chunk, txt, paragraphs, ,, sentences, ,, words, ., ·] 
+
+>> PoS Tags are: 
+[('Lexical', 'ADJ'), ('analysis', 'NOUN'), ('dividing', 'VERB'), ('chunk', 'NOUN'), ('txt', 'NOUN'), ('paragraphs', 'NOUN'), (',', 'PUNCT'), ('sentences', 'NOUN'), (',', 'PUNCT'), ('words', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Lexical', 'amod'), ('analysis', 'nsubj'), ('dividing', 'ROOT'), ('chunk', 'dobj'), ('txt', 'pobj'), ('paragraphs', 'pobj'), (',', 'punct'), ('sentences', 'conj'), (',', 'punct'), ('words', 'conj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Lexical, analysis], [analysis, dividing], [dividing, chunk], [chunk, txt], [txt, paragraphs], [paragraphs, ,], [,, sentences], [sentences, ,], [,, words], [words, .], [., ·]]
+
+>> Trigrams: 
+[[Lexical, analysis, dividing], [analysis, dividing, chunk], [dividing, chunk, txt], [chunk, txt, paragraphs], [txt, paragraphs, ,], [paragraphs, ,, sentences], [,, sentences, ,], [sentences, ,, words], [,, words, .], [words, ., ·]]
+
+>> Noun Phrases are: 
+[Lexical analysis, the whole chunk, txt, paragraphs, sentences, words]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 45 =============================
+
+Syntactic Analysis (Parsing) 
+
+
+>> Tokens are: 
+[Syntactic, Analysis, (, Parsing, )] 
+
+>> PoS Tags are: 
+[('Syntactic', 'PROPN'), ('Analysis', 'PROPN'), ('(', 'PUNCT'), ('Parsing', 'NOUN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Syntactic', 'compound'), ('Analysis', 'ROOT'), ('(', 'punct'), ('Parsing', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[Syntactic, Analysis], [Analysis, (], [(, Parsing], [Parsing, )]]
+
+>> Trigrams: 
+[[Syntactic, Analysis, (], [Analysis, (, Parsing], [(, Parsing, )]]
+
+>> Noun Phrases are: 
+[Syntactic Analysis, (Parsing]
+
+>> Named Entities are: 
+[('Syntactic Analysis', 'PERSON')]
+
+
+============================ Sentence 46 =============================
+
+− It involves analysis of words in the sentence for grammar and arranging words in a manner that shows the relationship among the words. 
+
+
+>> Tokens are: 
+[−, involves, analysis, words, sentence, grammar, arranging, words, manner, shows, relationship, words, .] 
+
+>> PoS Tags are: 
+[('−', 'PROPN'), ('involves', 'VERB'), ('analysis', 'NOUN'), ('words', 'NOUN'), ('sentence', 'NOUN'), ('grammar', 'NOUN'), ('arranging', 'VERB'), ('words', 'NOUN'), ('manner', 'NOUN'), ('shows', 'VERB'), ('relationship', 'NOUN'), ('words', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('−', 'dep'), ('involves', 'ROOT'), ('analysis', 'dobj'), ('words', 'pobj'), ('sentence', 'pobj'), ('grammar', 'pobj'), ('arranging', 'conj'), ('words', 'dobj'), ('manner', 'pobj'), ('shows', 'relcl'), ('relationship', 'dobj'), ('words', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[−, involves], [involves, analysis], [analysis, words], [words, sentence], [sentence, grammar], [grammar, arranging], [arranging, words], [words, manner], [manner, shows], [shows, relationship], [relationship, words], [words, .]]
+
+>> Trigrams: 
+[[−, involves, analysis], [involves, analysis, words], [analysis, words, sentence], [words, sentence, grammar], [sentence, grammar, arranging], [grammar, arranging, words], [arranging, words, manner], [words, manner, shows], [manner, shows, relationship], [shows, relationship, words], [relationship, words, .]]
+
+>> Noun Phrases are: 
+[It, analysis, words, the sentence, grammar, words, a manner, the relationship, the words]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 47 =============================
+
+The sentence such as “The school goes to boy” is rejected by English syntactic analyzer. 
+
+
+>> Tokens are: 
+[sentence, “, school, goes, boy, ”, rejected, English, syntactic, analyzer, .] 
+
+>> PoS Tags are: 
+[('sentence', 'NOUN'), ('“', 'PUNCT'), ('school', 'NOUN'), ('goes', 'VERB'), ('boy', 'NOUN'), ('”', 'PUNCT'), ('rejected', 'VERB'), ('English', 'PROPN'), ('syntactic', 'ADJ'), ('analyzer', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('sentence', 'nsubjpass'), ('“', 'punct'), ('school', 'nsubj'), ('goes', 'pcomp'), ('boy', 'pobj'), ('”', 'punct'), ('rejected', 'ROOT'), ('English', 'amod'), ('syntactic', 'amod'), ('analyzer', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[sentence, “], [“, school], [school, goes], [goes, boy], [boy, ”], [”, rejected], [rejected, English], [English, syntactic], [syntactic, analyzer], [analyzer, .]]
+
+>> Trigrams: 
+[[sentence, “, school], [“, school, goes], [school, goes, boy], [goes, boy, ”], [boy, ”, rejected], [”, rejected, English], [rejected, English, syntactic], [English, syntactic, analyzer], [syntactic, analyzer, .]]
+
+>> Noun Phrases are: 
+[The sentence, The school, boy, English syntactic analyzer]
+
+>> Named Entities are: 
+[('English', 'NORP')]
+
+
+============================ Sentence 48 =============================
+
+ · Semantic Analysis − 
+
+
+>> Tokens are: 
+[ , ·, Semantic, Analysis, −] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('·', 'PUNCT'), ('Semantic', 'PROPN'), ('Analysis', 'NOUN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT'), ('·', 'punct'), ('Semantic', 'compound'), ('Analysis', 'compound'), ('−', 'appos')]
+
+>> Bigrams: 
+[[ , ·], [·, Semantic], [Semantic, Analysis], [Analysis, −]]
+
+>> Trigrams: 
+[[ , ·, Semantic], [·, Semantic, Analysis], [Semantic, Analysis, −]]
+
+>> Noun Phrases are: 
+[Semantic Analysis −]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 49 =============================
+
+It draws the exact meaning or the dictionary meaning from the text. 
+
+
+>> Tokens are: 
+[draws, exact, meaning, dictionary, meaning, text, .] 
+
+>> PoS Tags are: 
+[('draws', 'VERB'), ('exact', 'ADJ'), ('meaning', 'NOUN'), ('dictionary', 'ADJ'), ('meaning', 'NOUN'), ('text', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('draws', 'ROOT'), ('exact', 'amod'), ('meaning', 'dobj'), ('dictionary', 'amod'), ('meaning', 'conj'), ('text', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[draws, exact], [exact, meaning], [meaning, dictionary], [dictionary, meaning], [meaning, text], [text, .]]
+
+>> Trigrams: 
+[[draws, exact, meaning], [exact, meaning, dictionary], [meaning, dictionary, meaning], [dictionary, meaning, text], [meaning, text, .]]
+
+>> Noun Phrases are: 
+[It, the exact meaning, the dictionary meaning, the text]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 50 =============================
+
+The text is checked for meaningfulness. 
+
+
+>> Tokens are: 
+[text, checked, meaningfulness, .] 
+
+>> PoS Tags are: 
+[('text', 'NOUN'), ('checked', 'VERB'), ('meaningfulness', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('text', 'nsubjpass'), ('checked', 'ROOT'), ('meaningfulness', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[text, checked], [checked, meaningfulness], [meaningfulness, .]]
+
+>> Trigrams: 
+[[text, checked, meaningfulness], [checked, meaningfulness, .]]
+
+>> Noun Phrases are: 
+[The text, meaningfulness]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 51 =============================
+
+It is done by mapping syntactic structures and objects in the task domain. 
+
+
+>> Tokens are: 
+[mapping, syntactic, structures, objects, task, domain, .] 
+
+>> PoS Tags are: 
+[('mapping', 'VERB'), ('syntactic', 'ADJ'), ('structures', 'NOUN'), ('objects', 'NOUN'), ('task', 'NOUN'), ('domain', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('mapping', 'pcomp'), ('syntactic', 'amod'), ('structures', 'dobj'), ('objects', 'conj'), ('task', 'compound'), ('domain', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[mapping, syntactic], [syntactic, structures], [structures, objects], [objects, task], [task, domain], [domain, .]]
+
+>> Trigrams: 
+[[mapping, syntactic, structures], [syntactic, structures, objects], [structures, objects, task], [objects, task, domain], [task, domain, .]]
+
+>> Noun Phrases are: 
+[It, syntactic structures, objects, the task domain]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 52 =============================
+
+The semantic analyzer disregards sentence such as “hot ice-cream”. · 
+
+
+>> Tokens are: 
+[semantic, analyzer, disregards, sentence, “, hot, ice, -, cream, ”, ., ·] 
+
+>> PoS Tags are: 
+[('semantic', 'ADJ'), ('analyzer', 'NOUN'), ('disregards', 'NOUN'), ('sentence', 'VERB'), ('“', 'PUNCT'), ('hot', 'ADJ'), ('ice', 'NOUN'), ('-', 'PUNCT'), ('cream', 'NOUN'), ('”', 'PUNCT'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('semantic', 'amod'), ('analyzer', 'compound'), ('disregards', 'ROOT'), ('sentence', 'dobj'), ('“', 'punct'), ('hot', 'amod'), ('ice', 'compound'), ('-', 'punct'), ('cream', 'pobj'), ('”', 'punct'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[semantic, analyzer], [analyzer, disregards], [disregards, sentence], [sentence, “], [“, hot], [hot, ice], [ice, -], [-, cream], [cream, ”], [”, .], [., ·]]
+
+>> Trigrams: 
+[[semantic, analyzer, disregards], [analyzer, disregards, sentence], [disregards, sentence, “], [sentence, “, hot], [“, hot, ice], [hot, ice, -], [ice, -, cream], [-, cream, ”], [cream, ”, .], [”, ., ·]]
+
+>> Noun Phrases are: 
+[The semantic analyzer disregards, “hot ice-cream]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 53 =============================
+
+Discourse Integration − 
+
+
+>> Tokens are: 
+[Discourse, Integration, −] 
+
+>> PoS Tags are: 
+[('Discourse', 'NOUN'), ('Integration', 'NOUN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Discourse', 'compound'), ('Integration', 'compound'), ('−', 'ROOT')]
+
+>> Bigrams: 
+[[Discourse, Integration], [Integration, −]]
+
+>> Trigrams: 
+[[Discourse, Integration, −]]
+
+>> Noun Phrases are: 
+[Discourse Integration −]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 54 =============================
+
+The meaning of any sentence depends upon the meaning of the sentence just before it. 
+
+
+>> Tokens are: 
+[meaning, sentence, depends, meaning, sentence, .] 
+
+>> PoS Tags are: 
+[('meaning', 'NOUN'), ('sentence', 'NOUN'), ('depends', 'VERB'), ('meaning', 'NOUN'), ('sentence', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('meaning', 'nsubj'), ('sentence', 'pobj'), ('depends', 'ROOT'), ('meaning', 'pobj'), ('sentence', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[meaning, sentence], [sentence, depends], [depends, meaning], [meaning, sentence], [sentence, .]]
+
+>> Trigrams: 
+[[meaning, sentence, depends], [sentence, depends, meaning], [depends, meaning, sentence], [meaning, sentence, .]]
+
+>> Noun Phrases are: 
+[The meaning, any sentence, the meaning, the sentence, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 55 =============================
+
+In addition, it also brings about the meaning of immediately succeeding sentence. · 
+
+
+>> Tokens are: 
+[addition, ,, brings, meaning, immediately, succeeding, sentence, ., ·] 
+
+>> PoS Tags are: 
+[('addition', 'NOUN'), (',', 'PUNCT'), ('brings', 'VERB'), ('meaning', 'NOUN'), ('immediately', 'ADV'), ('succeeding', 'VERB'), ('sentence', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('addition', 'pobj'), (',', 'punct'), ('brings', 'ROOT'), ('meaning', 'dobj'), ('immediately', 'advmod'), ('succeeding', 'pcomp'), ('sentence', 'dobj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[addition, ,], [,, brings], [brings, meaning], [meaning, immediately], [immediately, succeeding], [succeeding, sentence], [sentence, .], [., ·]]
+
+>> Trigrams: 
+[[addition, ,, brings], [,, brings, meaning], [brings, meaning, immediately], [meaning, immediately, succeeding], [immediately, succeeding, sentence], [succeeding, sentence, .], [sentence, ., ·]]
+
+>> Noun Phrases are: 
+[addition, it, the meaning, sentence]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 56 =============================
+
+Pragmatic Analysis − During this, what was said is re-interpreted on what it actually meant. 
+
+
+>> Tokens are: 
+[Pragmatic, Analysis, −, ,, said, -, interpreted, actually, meant, .] 
+
+>> PoS Tags are: 
+[('Pragmatic', 'PROPN'), ('Analysis', 'NOUN'), ('−', 'NOUN'), (',', 'PUNCT'), ('said', 'VERB'), ('-', 'VERB'), ('interpreted', 'VERB'), ('actually', 'ADV'), ('meant', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Pragmatic', 'compound'), ('Analysis', 'compound'), ('−', 'dep'), (',', 'punct'), ('said', 'csubj'), ('-', 'xcomp'), ('interpreted', 'acomp'), ('actually', 'advmod'), ('meant', 'pcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Pragmatic, Analysis], [Analysis, −], [−, ,], [,, said], [said, -], [-, interpreted], [interpreted, actually], [actually, meant], [meant, .]]
+
+>> Trigrams: 
+[[Pragmatic, Analysis, −], [Analysis, −, ,], [−, ,, said], [,, said, -], [said, -, interpreted], [-, interpreted, actually], [interpreted, actually, meant], [actually, meant, .]]
+
+>> Noun Phrases are: 
+[what, what, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 57 =============================
+
+It involves deriving those aspects of language which require real world knowledge. 
+
+
+>> Tokens are: 
+[involves, deriving, aspects, language, require, real, world, knowledge, .] 
+
+>> PoS Tags are: 
+[('involves', 'VERB'), ('deriving', 'VERB'), ('aspects', 'NOUN'), ('language', 'NOUN'), ('require', 'VERB'), ('real', 'ADJ'), ('world', 'NOUN'), ('knowledge', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('involves', 'ROOT'), ('deriving', 'xcomp'), ('aspects', 'dobj'), ('language', 'pobj'), ('require', 'relcl'), ('real', 'amod'), ('world', 'compound'), ('knowledge', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[involves, deriving], [deriving, aspects], [aspects, language], [language, require], [require, real], [real, world], [world, knowledge], [knowledge, .]]
+
+>> Trigrams: 
+[[involves, deriving, aspects], [deriving, aspects, language], [aspects, language, require], [language, require, real], [require, real, world], [real, world, knowledge], [world, knowledge, .]]
+
+>> Noun Phrases are: 
+[It, those aspects, language, real world knowledge]
+
+>> Named Entities are: 
+[]

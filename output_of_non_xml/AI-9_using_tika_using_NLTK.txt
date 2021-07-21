@@ -1,0 +1,828 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-9 Fuzzy Logic Systems (FLS) produce acceptable but definite output in response to incomplete, ambiguous, distorted, or inaccurate (fuzzy) input. 
+
+
+>> Tokens are: 
+ ['AI-9', 'Fuzzy', 'Logic', 'Systems', '(', 'FLS', ')', 'produce', 'acceptable', 'definite', 'output', 'response', 'incomplete', ',', 'ambiguous', ',', 'distorted', ',', 'inaccurate', '(', 'fuzzy', ')', 'input', '.']
+
+>> Bigrams are: 
+ [('AI-9', 'Fuzzy'), ('Fuzzy', 'Logic'), ('Logic', 'Systems'), ('Systems', '('), ('(', 'FLS'), ('FLS', ')'), (')', 'produce'), ('produce', 'acceptable'), ('acceptable', 'definite'), ('definite', 'output'), ('output', 'response'), ('response', 'incomplete'), ('incomplete', ','), (',', 'ambiguous'), ('ambiguous', ','), (',', 'distorted'), ('distorted', ','), (',', 'inaccurate'), ('inaccurate', '('), ('(', 'fuzzy'), ('fuzzy', ')'), (')', 'input'), ('input', '.')]
+
+>> Trigrams are: 
+ [('AI-9', 'Fuzzy', 'Logic'), ('Fuzzy', 'Logic', 'Systems'), ('Logic', 'Systems', '('), ('Systems', '(', 'FLS'), ('(', 'FLS', ')'), ('FLS', ')', 'produce'), (')', 'produce', 'acceptable'), ('produce', 'acceptable', 'definite'), ('acceptable', 'definite', 'output'), ('definite', 'output', 'response'), ('output', 'response', 'incomplete'), ('response', 'incomplete', ','), ('incomplete', ',', 'ambiguous'), (',', 'ambiguous', ','), ('ambiguous', ',', 'distorted'), (',', 'distorted', ','), ('distorted', ',', 'inaccurate'), (',', 'inaccurate', '('), ('inaccurate', '(', 'fuzzy'), ('(', 'fuzzy', ')'), ('fuzzy', ')', 'input'), (')', 'input', '.')]
+
+>> POS Tags are: 
+ [('AI-9', 'JJ'), ('Fuzzy', 'NNP'), ('Logic', 'NNP'), ('Systems', 'NNP'), ('(', '('), ('FLS', 'NNP'), (')', ')'), ('produce', 'VBP'), ('acceptable', 'JJ'), ('definite', 'JJ'), ('output', 'NN'), ('response', 'NN'), ('incomplete', 'NN'), (',', ','), ('ambiguous', 'JJ'), (',', ','), ('distorted', 'VBN'), (',', ','), ('inaccurate', 'JJ'), ('(', '('), ('fuzzy', 'JJ'), (')', ')'), ('input', 'NN'), ('.', '.')]
+
+ (S
+  (NP AI-9/JJ Fuzzy/NNP Logic/NNP Systems/NNP)
+  (/(
+  (NP FLS/NNP)
+  )/)
+  produce/VBP
+  (NP acceptable/JJ definite/JJ output/NN response/NN incomplete/NN)
+  ,/,
+  ambiguous/JJ
+  ,/,
+  distorted/VBN
+  ,/,
+  inaccurate/JJ
+  (/(
+  fuzzy/JJ
+  )/)
+  (NP input/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-9 Fuzzy Logic Systems', 'FLS', 'acceptable definite output response incomplete', 'input']
+
+>> Named Entities are: 
+ [('PERSON', 'Fuzzy Logic Systems'), ('ORGANIZATION', 'FLS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-9', 'ai-9'), ('Fuzzy', 'fuzzi'), ('Logic', 'logic'), ('Systems', 'system'), ('(', '('), ('FLS', 'fl'), (')', ')'), ('produce', 'produc'), ('acceptable', 'accept'), ('definite', 'definit'), ('output', 'output'), ('response', 'respons'), ('incomplete', 'incomplet'), (',', ','), ('ambiguous', 'ambigu'), (',', ','), ('distorted', 'distort'), (',', ','), ('inaccurate', 'inaccur'), ('(', '('), ('fuzzy', 'fuzzi'), (')', ')'), ('input', 'input'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-9', 'ai-9'), ('Fuzzy', 'fuzzi'), ('Logic', 'logic'), ('Systems', 'system'), ('(', '('), ('FLS', 'fls'), (')', ')'), ('produce', 'produc'), ('acceptable', 'accept'), ('definite', 'definit'), ('output', 'output'), ('response', 'respons'), ('incomplete', 'incomplet'), (',', ','), ('ambiguous', 'ambigu'), (',', ','), ('distorted', 'distort'), (',', ','), ('inaccurate', 'inaccur'), ('(', '('), ('fuzzy', 'fuzzi'), (')', ')'), ('input', 'input'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-9', 'AI-9'), ('Fuzzy', 'Fuzzy'), ('Logic', 'Logic'), ('Systems', 'Systems'), ('(', '('), ('FLS', 'FLS'), (')', ')'), ('produce', 'produce'), ('acceptable', 'acceptable'), ('definite', 'definite'), ('output', 'output'), ('response', 'response'), ('incomplete', 'incomplete'), (',', ','), ('ambiguous', 'ambiguous'), (',', ','), ('distorted', 'distorted'), (',', ','), ('inaccurate', 'inaccurate'), ('(', '('), ('fuzzy', 'fuzzy'), (')', ')'), ('input', 'input'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+What is Fuzzy Logic? 
+
+
+>> Tokens are: 
+ ['What', 'Fuzzy', 'Logic', '?']
+
+>> Bigrams are: 
+ [('What', 'Fuzzy'), ('Fuzzy', 'Logic'), ('Logic', '?')]
+
+>> Trigrams are: 
+ [('What', 'Fuzzy', 'Logic'), ('Fuzzy', 'Logic', '?')]
+
+>> POS Tags are: 
+ [('What', 'WP'), ('Fuzzy', 'NNP'), ('Logic', 'NNP'), ('?', '.')]
+
+ (S What/WP (NP Fuzzy/NNP Logic/NNP) ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Fuzzy Logic']
+
+>> Named Entities are: 
+ [('PERSON', 'Fuzzy Logic')] 
+
+>> Stemming using Porter Stemmer: 
+ [('What', 'what'), ('Fuzzy', 'fuzzi'), ('Logic', 'logic'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('What', 'what'), ('Fuzzy', 'fuzzi'), ('Logic', 'logic'), ('?', '?')]
+
+>> Lemmatization: 
+ [('What', 'What'), ('Fuzzy', 'Fuzzy'), ('Logic', 'Logic'), ('?', '?')]
+
+
+
+============================ Sentence 3 =============================
+
+Fuzzy Logic (FL) is a method of reasoning that resembles human reasoning. 
+
+
+>> Tokens are: 
+ ['Fuzzy', 'Logic', '(', 'FL', ')', 'method', 'reasoning', 'resembles', 'human', 'reasoning', '.']
+
+>> Bigrams are: 
+ [('Fuzzy', 'Logic'), ('Logic', '('), ('(', 'FL'), ('FL', ')'), (')', 'method'), ('method', 'reasoning'), ('reasoning', 'resembles'), ('resembles', 'human'), ('human', 'reasoning'), ('reasoning', '.')]
+
+>> Trigrams are: 
+ [('Fuzzy', 'Logic', '('), ('Logic', '(', 'FL'), ('(', 'FL', ')'), ('FL', ')', 'method'), (')', 'method', 'reasoning'), ('method', 'reasoning', 'resembles'), ('reasoning', 'resembles', 'human'), ('resembles', 'human', 'reasoning'), ('human', 'reasoning', '.')]
+
+>> POS Tags are: 
+ [('Fuzzy', 'NNP'), ('Logic', 'NNP'), ('(', '('), ('FL', 'NNP'), (')', ')'), ('method', 'NN'), ('reasoning', 'VBG'), ('resembles', 'NNS'), ('human', 'JJ'), ('reasoning', 'NN'), ('.', '.')]
+
+ (S
+  (NP Fuzzy/NNP Logic/NNP)
+  (/(
+  (NP FL/NNP)
+  )/)
+  (NP method/NN)
+  reasoning/VBG
+  (NP resembles/NNS)
+  (NP human/JJ reasoning/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Fuzzy Logic', 'FL', 'method', 'resembles', 'human reasoning']
+
+>> Named Entities are: 
+ [('PERSON', 'Fuzzy'), ('ORGANIZATION', 'Logic')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Fuzzy', 'fuzzi'), ('Logic', 'logic'), ('(', '('), ('FL', 'fl'), (')', ')'), ('method', 'method'), ('reasoning', 'reason'), ('resembles', 'resembl'), ('human', 'human'), ('reasoning', 'reason'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Fuzzy', 'fuzzi'), ('Logic', 'logic'), ('(', '('), ('FL', 'fl'), (')', ')'), ('method', 'method'), ('reasoning', 'reason'), ('resembles', 'resembl'), ('human', 'human'), ('reasoning', 'reason'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Fuzzy', 'Fuzzy'), ('Logic', 'Logic'), ('(', '('), ('FL', 'FL'), (')', ')'), ('method', 'method'), ('reasoning', 'reasoning'), ('resembles', 'resembles'), ('human', 'human'), ('reasoning', 'reasoning'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+The approach of FL imitates the way of decision making in humans that involves all intermediate possibilities between digital values YES and NO. 
+
+
+>> Tokens are: 
+ ['The', 'approach', 'FL', 'imitates', 'way', 'decision', 'making', 'humans', 'involves', 'intermediate', 'possibilities', 'digital', 'values', 'YES', 'NO', '.']
+
+>> Bigrams are: 
+ [('The', 'approach'), ('approach', 'FL'), ('FL', 'imitates'), ('imitates', 'way'), ('way', 'decision'), ('decision', 'making'), ('making', 'humans'), ('humans', 'involves'), ('involves', 'intermediate'), ('intermediate', 'possibilities'), ('possibilities', 'digital'), ('digital', 'values'), ('values', 'YES'), ('YES', 'NO'), ('NO', '.')]
+
+>> Trigrams are: 
+ [('The', 'approach', 'FL'), ('approach', 'FL', 'imitates'), ('FL', 'imitates', 'way'), ('imitates', 'way', 'decision'), ('way', 'decision', 'making'), ('decision', 'making', 'humans'), ('making', 'humans', 'involves'), ('humans', 'involves', 'intermediate'), ('involves', 'intermediate', 'possibilities'), ('intermediate', 'possibilities', 'digital'), ('possibilities', 'digital', 'values'), ('digital', 'values', 'YES'), ('values', 'YES', 'NO'), ('YES', 'NO', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('approach', 'NN'), ('FL', 'NNP'), ('imitates', 'VBZ'), ('way', 'NN'), ('decision', 'NN'), ('making', 'VBG'), ('humans', 'NNS'), ('involves', 'VBZ'), ('intermediate', 'JJ'), ('possibilities', 'NNS'), ('digital', 'JJ'), ('values', 'NNS'), ('YES', 'VBP'), ('NO', 'NNP'), ('.', '.')]
+
+ (S
+  (NP The/DT approach/NN FL/NNP)
+  imitates/VBZ
+  (NP way/NN decision/NN)
+  making/VBG
+  (NP humans/NNS)
+  involves/VBZ
+  (NP intermediate/JJ possibilities/NNS)
+  (NP digital/JJ values/NNS)
+  YES/VBP
+  (NP NO/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The approach FL', 'way decision', 'humans', 'intermediate possibilities', 'digital values', 'NO']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'NO')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('approach', 'approach'), ('FL', 'fl'), ('imitates', 'imit'), ('way', 'way'), ('decision', 'decis'), ('making', 'make'), ('humans', 'human'), ('involves', 'involv'), ('intermediate', 'intermedi'), ('possibilities', 'possibl'), ('digital', 'digit'), ('values', 'valu'), ('YES', 'ye'), ('NO', 'no'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('approach', 'approach'), ('FL', 'fl'), ('imitates', 'imit'), ('way', 'way'), ('decision', 'decis'), ('making', 'make'), ('humans', 'human'), ('involves', 'involv'), ('intermediate', 'intermedi'), ('possibilities', 'possibl'), ('digital', 'digit'), ('values', 'valu'), ('YES', 'yes'), ('NO', 'no'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('approach', 'approach'), ('FL', 'FL'), ('imitates', 'imitates'), ('way', 'way'), ('decision', 'decision'), ('making', 'making'), ('humans', 'human'), ('involves', 'involves'), ('intermediate', 'intermediate'), ('possibilities', 'possibility'), ('digital', 'digital'), ('values', 'value'), ('YES', 'YES'), ('NO', 'NO'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+The conventional logic block that a computer can understand takes precise input and produces a definite output as TRUE or FALSE, which is equivalent to human’s YES or NO. 
+
+
+>> Tokens are: 
+ ['The', 'conventional', 'logic', 'block', 'computer', 'understand', 'takes', 'precise', 'input', 'produces', 'definite', 'output', 'TRUE', 'FALSE', ',', 'equivalent', 'human', '’', 'YES', 'NO', '.']
+
+>> Bigrams are: 
+ [('The', 'conventional'), ('conventional', 'logic'), ('logic', 'block'), ('block', 'computer'), ('computer', 'understand'), ('understand', 'takes'), ('takes', 'precise'), ('precise', 'input'), ('input', 'produces'), ('produces', 'definite'), ('definite', 'output'), ('output', 'TRUE'), ('TRUE', 'FALSE'), ('FALSE', ','), (',', 'equivalent'), ('equivalent', 'human'), ('human', '’'), ('’', 'YES'), ('YES', 'NO'), ('NO', '.')]
+
+>> Trigrams are: 
+ [('The', 'conventional', 'logic'), ('conventional', 'logic', 'block'), ('logic', 'block', 'computer'), ('block', 'computer', 'understand'), ('computer', 'understand', 'takes'), ('understand', 'takes', 'precise'), ('takes', 'precise', 'input'), ('precise', 'input', 'produces'), ('input', 'produces', 'definite'), ('produces', 'definite', 'output'), ('definite', 'output', 'TRUE'), ('output', 'TRUE', 'FALSE'), ('TRUE', 'FALSE', ','), ('FALSE', ',', 'equivalent'), (',', 'equivalent', 'human'), ('equivalent', 'human', '’'), ('human', '’', 'YES'), ('’', 'YES', 'NO'), ('YES', 'NO', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('conventional', 'JJ'), ('logic', 'NN'), ('block', 'NN'), ('computer', 'NN'), ('understand', 'NN'), ('takes', 'VBZ'), ('precise', 'JJ'), ('input', 'NN'), ('produces', 'VBZ'), ('definite', 'JJ'), ('output', 'NN'), ('TRUE', 'NNP'), ('FALSE', 'NNP'), (',', ','), ('equivalent', 'JJ'), ('human', 'JJ'), ('’', 'NNP'), ('YES', 'NNP'), ('NO', 'NNP'), ('.', '.')]
+
+ (S
+  (NP
+    The/DT
+    conventional/JJ
+    logic/NN
+    block/NN
+    computer/NN
+    understand/NN)
+  takes/VBZ
+  (NP precise/JJ input/NN)
+  produces/VBZ
+  (NP definite/JJ output/NN TRUE/NNP FALSE/NNP)
+  ,/,
+  (NP equivalent/JJ human/JJ ’/NNP YES/NNP NO/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The conventional logic block computer understand', 'precise input', 'definite output TRUE FALSE', 'equivalent human ’ YES NO']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'TRUE')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('conventional', 'convent'), ('logic', 'logic'), ('block', 'block'), ('computer', 'comput'), ('understand', 'understand'), ('takes', 'take'), ('precise', 'precis'), ('input', 'input'), ('produces', 'produc'), ('definite', 'definit'), ('output', 'output'), ('TRUE', 'true'), ('FALSE', 'fals'), (',', ','), ('equivalent', 'equival'), ('human', 'human'), ('’', '’'), ('YES', 'ye'), ('NO', 'no'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('conventional', 'convent'), ('logic', 'logic'), ('block', 'block'), ('computer', 'comput'), ('understand', 'understand'), ('takes', 'take'), ('precise', 'precis'), ('input', 'input'), ('produces', 'produc'), ('definite', 'definit'), ('output', 'output'), ('TRUE', 'true'), ('FALSE', 'fals'), (',', ','), ('equivalent', 'equival'), ('human', 'human'), ('’', '’'), ('YES', 'yes'), ('NO', 'no'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('conventional', 'conventional'), ('logic', 'logic'), ('block', 'block'), ('computer', 'computer'), ('understand', 'understand'), ('takes', 'take'), ('precise', 'precise'), ('input', 'input'), ('produces', 'produce'), ('definite', 'definite'), ('output', 'output'), ('TRUE', 'TRUE'), ('FALSE', 'FALSE'), (',', ','), ('equivalent', 'equivalent'), ('human', 'human'), ('’', '’'), ('YES', 'YES'), ('NO', 'NO'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+The inventor of fuzzy logic, Lotfi Zadeh, observed that unlike computers, the human decision making includes a range of possibilities between YES and NO, such as − 	CERTAINLY YES  	POSSIBLY YES  	CANNOT SAY  	POSSIBLY NO  	CERTAINLY NO   The fuzzy logic works on the levels of possibilities of input to achieve the definite output. 
+
+
+>> Tokens are: 
+ ['The', 'inventor', 'fuzzy', 'logic', ',', 'Lotfi', 'Zadeh', ',', 'observed', 'unlike', 'computers', ',', 'human', 'decision', 'making', 'includes', 'range', 'possibilities', 'YES', 'NO', ',', '−', 'CERTAINLY', 'YES', 'POSSIBLY', 'YES', 'CAN', 'NOT', 'SAY', 'POSSIBLY', 'NO', 'CERTAINLY', 'NO', 'The', 'fuzzy', 'logic', 'works', 'levels', 'possibilities', 'input', 'achieve', 'definite', 'output', '.']
+
+>> Bigrams are: 
+ [('The', 'inventor'), ('inventor', 'fuzzy'), ('fuzzy', 'logic'), ('logic', ','), (',', 'Lotfi'), ('Lotfi', 'Zadeh'), ('Zadeh', ','), (',', 'observed'), ('observed', 'unlike'), ('unlike', 'computers'), ('computers', ','), (',', 'human'), ('human', 'decision'), ('decision', 'making'), ('making', 'includes'), ('includes', 'range'), ('range', 'possibilities'), ('possibilities', 'YES'), ('YES', 'NO'), ('NO', ','), (',', '−'), ('−', 'CERTAINLY'), ('CERTAINLY', 'YES'), ('YES', 'POSSIBLY'), ('POSSIBLY', 'YES'), ('YES', 'CAN'), ('CAN', 'NOT'), ('NOT', 'SAY'), ('SAY', 'POSSIBLY'), ('POSSIBLY', 'NO'), ('NO', 'CERTAINLY'), ('CERTAINLY', 'NO'), ('NO', 'The'), ('The', 'fuzzy'), ('fuzzy', 'logic'), ('logic', 'works'), ('works', 'levels'), ('levels', 'possibilities'), ('possibilities', 'input'), ('input', 'achieve'), ('achieve', 'definite'), ('definite', 'output'), ('output', '.')]
+
+>> Trigrams are: 
+ [('The', 'inventor', 'fuzzy'), ('inventor', 'fuzzy', 'logic'), ('fuzzy', 'logic', ','), ('logic', ',', 'Lotfi'), (',', 'Lotfi', 'Zadeh'), ('Lotfi', 'Zadeh', ','), ('Zadeh', ',', 'observed'), (',', 'observed', 'unlike'), ('observed', 'unlike', 'computers'), ('unlike', 'computers', ','), ('computers', ',', 'human'), (',', 'human', 'decision'), ('human', 'decision', 'making'), ('decision', 'making', 'includes'), ('making', 'includes', 'range'), ('includes', 'range', 'possibilities'), ('range', 'possibilities', 'YES'), ('possibilities', 'YES', 'NO'), ('YES', 'NO', ','), ('NO', ',', '−'), (',', '−', 'CERTAINLY'), ('−', 'CERTAINLY', 'YES'), ('CERTAINLY', 'YES', 'POSSIBLY'), ('YES', 'POSSIBLY', 'YES'), ('POSSIBLY', 'YES', 'CAN'), ('YES', 'CAN', 'NOT'), ('CAN', 'NOT', 'SAY'), ('NOT', 'SAY', 'POSSIBLY'), ('SAY', 'POSSIBLY', 'NO'), ('POSSIBLY', 'NO', 'CERTAINLY'), ('NO', 'CERTAINLY', 'NO'), ('CERTAINLY', 'NO', 'The'), ('NO', 'The', 'fuzzy'), ('The', 'fuzzy', 'logic'), ('fuzzy', 'logic', 'works'), ('logic', 'works', 'levels'), ('works', 'levels', 'possibilities'), ('levels', 'possibilities', 'input'), ('possibilities', 'input', 'achieve'), ('input', 'achieve', 'definite'), ('achieve', 'definite', 'output'), ('definite', 'output', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('inventor', 'NN'), ('fuzzy', 'NN'), ('logic', 'NN'), (',', ','), ('Lotfi', 'NNP'), ('Zadeh', 'NNP'), (',', ','), ('observed', 'VBD'), ('unlike', 'IN'), ('computers', 'NNS'), (',', ','), ('human', 'JJ'), ('decision', 'NN'), ('making', 'NN'), ('includes', 'VBZ'), ('range', 'JJ'), ('possibilities', 'NNS'), ('YES', 'NNP'), ('NO', 'NNP'), (',', ','), ('−', 'VBZ'), ('CERTAINLY', 'NNP'), ('YES', 'NNP'), ('POSSIBLY', 'NNP'), ('YES', 'NNP'), ('CAN', 'NNP'), ('NOT', 'NNP'), ('SAY', 'NNP'), ('POSSIBLY', 'NNP'), ('NO', 'NNP'), ('CERTAINLY', 'NNP'), ('NO', 'NNP'), ('The', 'DT'), ('fuzzy', 'NN'), ('logic', 'NN'), ('works', 'VBZ'), ('levels', 'NNS'), ('possibilities', 'NNS'), ('input', 'VBP'), ('achieve', 'RB'), ('definite', 'JJ'), ('output', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT inventor/NN fuzzy/NN logic/NN)
+  ,/,
+  (NP Lotfi/NNP Zadeh/NNP)
+  ,/,
+  observed/VBD
+  unlike/IN
+  (NP computers/NNS)
+  ,/,
+  (NP human/JJ decision/NN making/NN)
+  includes/VBZ
+  (NP range/JJ possibilities/NNS YES/NNP NO/NNP)
+  ,/,
+  −/VBZ
+  (NP
+    CERTAINLY/NNP
+    YES/NNP
+    POSSIBLY/NNP
+    YES/NNP
+    CAN/NNP
+    NOT/NNP
+    SAY/NNP
+    POSSIBLY/NNP
+    NO/NNP
+    CERTAINLY/NNP
+    NO/NNP)
+  (NP The/DT fuzzy/NN logic/NN)
+  works/VBZ
+  (NP levels/NNS possibilities/NNS)
+  input/VBP
+  achieve/RB
+  (NP definite/JJ output/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The inventor fuzzy logic', 'Lotfi Zadeh', 'computers', 'human decision making', 'range possibilities YES NO', 'CERTAINLY YES POSSIBLY YES CAN NOT SAY POSSIBLY NO CERTAINLY NO', 'The fuzzy logic', 'levels possibilities', 'definite output']
+
+>> Named Entities are: 
+ [('PERSON', 'Lotfi Zadeh'), ('ORGANIZATION', 'YES'), ('ORGANIZATION', 'CERTAINLY')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('inventor', 'inventor'), ('fuzzy', 'fuzzi'), ('logic', 'logic'), (',', ','), ('Lotfi', 'lotfi'), ('Zadeh', 'zadeh'), (',', ','), ('observed', 'observ'), ('unlike', 'unlik'), ('computers', 'comput'), (',', ','), ('human', 'human'), ('decision', 'decis'), ('making', 'make'), ('includes', 'includ'), ('range', 'rang'), ('possibilities', 'possibl'), ('YES', 'ye'), ('NO', 'no'), (',', ','), ('−', '−'), ('CERTAINLY', 'certainli'), ('YES', 'ye'), ('POSSIBLY', 'possibl'), ('YES', 'ye'), ('CAN', 'can'), ('NOT', 'not'), ('SAY', 'say'), ('POSSIBLY', 'possibl'), ('NO', 'no'), ('CERTAINLY', 'certainli'), ('NO', 'no'), ('The', 'the'), ('fuzzy', 'fuzzi'), ('logic', 'logic'), ('works', 'work'), ('levels', 'level'), ('possibilities', 'possibl'), ('input', 'input'), ('achieve', 'achiev'), ('definite', 'definit'), ('output', 'output'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('inventor', 'inventor'), ('fuzzy', 'fuzzi'), ('logic', 'logic'), (',', ','), ('Lotfi', 'lotfi'), ('Zadeh', 'zadeh'), (',', ','), ('observed', 'observ'), ('unlike', 'unlik'), ('computers', 'comput'), (',', ','), ('human', 'human'), ('decision', 'decis'), ('making', 'make'), ('includes', 'includ'), ('range', 'rang'), ('possibilities', 'possibl'), ('YES', 'yes'), ('NO', 'no'), (',', ','), ('−', '−'), ('CERTAINLY', 'certain'), ('YES', 'yes'), ('POSSIBLY', 'possibl'), ('YES', 'yes'), ('CAN', 'can'), ('NOT', 'not'), ('SAY', 'say'), ('POSSIBLY', 'possibl'), ('NO', 'no'), ('CERTAINLY', 'certain'), ('NO', 'no'), ('The', 'the'), ('fuzzy', 'fuzzi'), ('logic', 'logic'), ('works', 'work'), ('levels', 'level'), ('possibilities', 'possibl'), ('input', 'input'), ('achieve', 'achiev'), ('definite', 'definit'), ('output', 'output'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('inventor', 'inventor'), ('fuzzy', 'fuzzy'), ('logic', 'logic'), (',', ','), ('Lotfi', 'Lotfi'), ('Zadeh', 'Zadeh'), (',', ','), ('observed', 'observed'), ('unlike', 'unlike'), ('computers', 'computer'), (',', ','), ('human', 'human'), ('decision', 'decision'), ('making', 'making'), ('includes', 'includes'), ('range', 'range'), ('possibilities', 'possibility'), ('YES', 'YES'), ('NO', 'NO'), (',', ','), ('−', '−'), ('CERTAINLY', 'CERTAINLY'), ('YES', 'YES'), ('POSSIBLY', 'POSSIBLY'), ('YES', 'YES'), ('CAN', 'CAN'), ('NOT', 'NOT'), ('SAY', 'SAY'), ('POSSIBLY', 'POSSIBLY'), ('NO', 'NO'), ('CERTAINLY', 'CERTAINLY'), ('NO', 'NO'), ('The', 'The'), ('fuzzy', 'fuzzy'), ('logic', 'logic'), ('works', 'work'), ('levels', 'level'), ('possibilities', 'possibility'), ('input', 'input'), ('achieve', 'achieve'), ('definite', 'definite'), ('output', 'output'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+Implementation · It can be implemented in systems with various sizes and capabilities ranging from small micro-controllers to large, networked, workstation-based control systems. 
+
+
+>> Tokens are: 
+ ['Implementation', '·', 'It', 'implemented', 'systems', 'various', 'sizes', 'capabilities', 'ranging', 'small', 'micro-controllers', 'large', ',', 'networked', ',', 'workstation-based', 'control', 'systems', '.']
+
+>> Bigrams are: 
+ [('Implementation', '·'), ('·', 'It'), ('It', 'implemented'), ('implemented', 'systems'), ('systems', 'various'), ('various', 'sizes'), ('sizes', 'capabilities'), ('capabilities', 'ranging'), ('ranging', 'small'), ('small', 'micro-controllers'), ('micro-controllers', 'large'), ('large', ','), (',', 'networked'), ('networked', ','), (',', 'workstation-based'), ('workstation-based', 'control'), ('control', 'systems'), ('systems', '.')]
+
+>> Trigrams are: 
+ [('Implementation', '·', 'It'), ('·', 'It', 'implemented'), ('It', 'implemented', 'systems'), ('implemented', 'systems', 'various'), ('systems', 'various', 'sizes'), ('various', 'sizes', 'capabilities'), ('sizes', 'capabilities', 'ranging'), ('capabilities', 'ranging', 'small'), ('ranging', 'small', 'micro-controllers'), ('small', 'micro-controllers', 'large'), ('micro-controllers', 'large', ','), ('large', ',', 'networked'), (',', 'networked', ','), ('networked', ',', 'workstation-based'), (',', 'workstation-based', 'control'), ('workstation-based', 'control', 'systems'), ('control', 'systems', '.')]
+
+>> POS Tags are: 
+ [('Implementation', 'NN'), ('·', 'VBZ'), ('It', 'PRP'), ('implemented', 'VBD'), ('systems', 'NNS'), ('various', 'JJ'), ('sizes', 'JJ'), ('capabilities', 'NNS'), ('ranging', 'VBG'), ('small', 'JJ'), ('micro-controllers', 'NNS'), ('large', 'JJ'), (',', ','), ('networked', 'JJ'), (',', ','), ('workstation-based', 'JJ'), ('control', 'NN'), ('systems', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Implementation/NN)
+  ·/VBZ
+  It/PRP
+  implemented/VBD
+  (NP systems/NNS)
+  (NP various/JJ sizes/JJ capabilities/NNS)
+  ranging/VBG
+  (NP small/JJ micro-controllers/NNS)
+  large/JJ
+  ,/,
+  networked/JJ
+  ,/,
+  (NP workstation-based/JJ control/NN systems/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Implementation', 'systems', 'various sizes capabilities', 'small micro-controllers', 'workstation-based control systems']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Implementation', 'implement'), ('·', '·'), ('It', 'it'), ('implemented', 'implement'), ('systems', 'system'), ('various', 'variou'), ('sizes', 'size'), ('capabilities', 'capabl'), ('ranging', 'rang'), ('small', 'small'), ('micro-controllers', 'micro-control'), ('large', 'larg'), (',', ','), ('networked', 'network'), (',', ','), ('workstation-based', 'workstation-bas'), ('control', 'control'), ('systems', 'system'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Implementation', 'implement'), ('·', '·'), ('It', 'it'), ('implemented', 'implement'), ('systems', 'system'), ('various', 'various'), ('sizes', 'size'), ('capabilities', 'capabl'), ('ranging', 'rang'), ('small', 'small'), ('micro-controllers', 'micro-control'), ('large', 'larg'), (',', ','), ('networked', 'network'), (',', ','), ('workstation-based', 'workstation-bas'), ('control', 'control'), ('systems', 'system'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Implementation', 'Implementation'), ('·', '·'), ('It', 'It'), ('implemented', 'implemented'), ('systems', 'system'), ('various', 'various'), ('sizes', 'size'), ('capabilities', 'capability'), ('ranging', 'ranging'), ('small', 'small'), ('micro-controllers', 'micro-controllers'), ('large', 'large'), (',', ','), ('networked', 'networked'), (',', ','), ('workstation-based', 'workstation-based'), ('control', 'control'), ('systems', 'system'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+· It can be implemented in hardware, software, or a combination of both. 
+
+
+>> Tokens are: 
+ ['·', 'It', 'implemented', 'hardware', ',', 'software', ',', 'combination', '.']
+
+>> Bigrams are: 
+ [('·', 'It'), ('It', 'implemented'), ('implemented', 'hardware'), ('hardware', ','), (',', 'software'), ('software', ','), (',', 'combination'), ('combination', '.')]
+
+>> Trigrams are: 
+ [('·', 'It', 'implemented'), ('It', 'implemented', 'hardware'), ('implemented', 'hardware', ','), ('hardware', ',', 'software'), (',', 'software', ','), ('software', ',', 'combination'), (',', 'combination', '.')]
+
+>> POS Tags are: 
+ [('·', 'VB'), ('It', 'PRP'), ('implemented', 'JJ'), ('hardware', 'NN'), (',', ','), ('software', 'NN'), (',', ','), ('combination', 'NN'), ('.', '.')]
+
+ (S
+  ·/VB
+  It/PRP
+  (NP implemented/JJ hardware/NN)
+  ,/,
+  (NP software/NN)
+  ,/,
+  (NP combination/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['implemented hardware', 'software', 'combination']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('It', 'it'), ('implemented', 'implement'), ('hardware', 'hardwar'), (',', ','), ('software', 'softwar'), (',', ','), ('combination', 'combin'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('It', 'it'), ('implemented', 'implement'), ('hardware', 'hardwar'), (',', ','), ('software', 'softwar'), (',', ','), ('combination', 'combin'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('It', 'It'), ('implemented', 'implemented'), ('hardware', 'hardware'), (',', ','), ('software', 'software'), (',', ','), ('combination', 'combination'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+Why Fuzzy Logic? 
+
+
+>> Tokens are: 
+ ['Why', 'Fuzzy', 'Logic', '?']
+
+>> Bigrams are: 
+ [('Why', 'Fuzzy'), ('Fuzzy', 'Logic'), ('Logic', '?')]
+
+>> Trigrams are: 
+ [('Why', 'Fuzzy', 'Logic'), ('Fuzzy', 'Logic', '?')]
+
+>> POS Tags are: 
+ [('Why', 'WRB'), ('Fuzzy', 'NNP'), ('Logic', 'NNP'), ('?', '.')]
+
+ (S Why/WRB (NP Fuzzy/NNP Logic/NNP) ?/.) 
+
+
+>> Noun Phrases are: 
+ ['Fuzzy Logic']
+
+>> Named Entities are: 
+ [('PERSON', 'Fuzzy Logic')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Why', 'whi'), ('Fuzzy', 'fuzzi'), ('Logic', 'logic'), ('?', '?')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Why', 'whi'), ('Fuzzy', 'fuzzi'), ('Logic', 'logic'), ('?', '?')]
+
+>> Lemmatization: 
+ [('Why', 'Why'), ('Fuzzy', 'Fuzzy'), ('Logic', 'Logic'), ('?', '?')]
+
+
+
+============================ Sentence 10 =============================
+
+Fuzzy logic is useful for commercial and practical purposes. 
+
+
+>> Tokens are: 
+ ['Fuzzy', 'logic', 'useful', 'commercial', 'practical', 'purposes', '.']
+
+>> Bigrams are: 
+ [('Fuzzy', 'logic'), ('logic', 'useful'), ('useful', 'commercial'), ('commercial', 'practical'), ('practical', 'purposes'), ('purposes', '.')]
+
+>> Trigrams are: 
+ [('Fuzzy', 'logic', 'useful'), ('logic', 'useful', 'commercial'), ('useful', 'commercial', 'practical'), ('commercial', 'practical', 'purposes'), ('practical', 'purposes', '.')]
+
+>> POS Tags are: 
+ [('Fuzzy', 'NNP'), ('logic', 'VBZ'), ('useful', 'JJ'), ('commercial', 'JJ'), ('practical', 'JJ'), ('purposes', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Fuzzy/NNP)
+  logic/VBZ
+  (NP useful/JJ commercial/JJ practical/JJ purposes/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Fuzzy', 'useful commercial practical purposes']
+
+>> Named Entities are: 
+ [('GPE', 'Fuzzy')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Fuzzy', 'fuzzi'), ('logic', 'logic'), ('useful', 'use'), ('commercial', 'commerci'), ('practical', 'practic'), ('purposes', 'purpos'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Fuzzy', 'fuzzi'), ('logic', 'logic'), ('useful', 'use'), ('commercial', 'commerci'), ('practical', 'practic'), ('purposes', 'purpos'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Fuzzy', 'Fuzzy'), ('logic', 'logic'), ('useful', 'useful'), ('commercial', 'commercial'), ('practical', 'practical'), ('purposes', 'purpose'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+· It can control machines and consumer products. 
+
+
+>> Tokens are: 
+ ['·', 'It', 'control', 'machines', 'consumer', 'products', '.']
+
+>> Bigrams are: 
+ [('·', 'It'), ('It', 'control'), ('control', 'machines'), ('machines', 'consumer'), ('consumer', 'products'), ('products', '.')]
+
+>> Trigrams are: 
+ [('·', 'It', 'control'), ('It', 'control', 'machines'), ('control', 'machines', 'consumer'), ('machines', 'consumer', 'products'), ('consumer', 'products', '.')]
+
+>> POS Tags are: 
+ [('·', 'VB'), ('It', 'PRP'), ('control', 'VB'), ('machines', 'NNS'), ('consumer', 'NN'), ('products', 'NNS'), ('.', '.')]
+
+ (S
+  ·/VB
+  It/PRP
+  control/VB
+  (NP machines/NNS consumer/NN products/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['machines consumer products']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('It', 'it'), ('control', 'control'), ('machines', 'machin'), ('consumer', 'consum'), ('products', 'product'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('It', 'it'), ('control', 'control'), ('machines', 'machin'), ('consumer', 'consum'), ('products', 'product'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('It', 'It'), ('control', 'control'), ('machines', 'machine'), ('consumer', 'consumer'), ('products', 'product'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+· It may not give accurate reasoning, but acceptable reasoning. 
+
+
+>> Tokens are: 
+ ['·', 'It', 'may', 'give', 'accurate', 'reasoning', ',', 'acceptable', 'reasoning', '.']
+
+>> Bigrams are: 
+ [('·', 'It'), ('It', 'may'), ('may', 'give'), ('give', 'accurate'), ('accurate', 'reasoning'), ('reasoning', ','), (',', 'acceptable'), ('acceptable', 'reasoning'), ('reasoning', '.')]
+
+>> Trigrams are: 
+ [('·', 'It', 'may'), ('It', 'may', 'give'), ('may', 'give', 'accurate'), ('give', 'accurate', 'reasoning'), ('accurate', 'reasoning', ','), ('reasoning', ',', 'acceptable'), (',', 'acceptable', 'reasoning'), ('acceptable', 'reasoning', '.')]
+
+>> POS Tags are: 
+ [('·', 'IN'), ('It', 'PRP'), ('may', 'MD'), ('give', 'VB'), ('accurate', 'NN'), ('reasoning', 'NN'), (',', ','), ('acceptable', 'JJ'), ('reasoning', 'NN'), ('.', '.')]
+
+ (S
+  ·/IN
+  It/PRP
+  may/MD
+  give/VB
+  (NP accurate/NN reasoning/NN)
+  ,/,
+  (NP acceptable/JJ reasoning/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['accurate reasoning', 'acceptable reasoning']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('It', 'it'), ('may', 'may'), ('give', 'give'), ('accurate', 'accur'), ('reasoning', 'reason'), (',', ','), ('acceptable', 'accept'), ('reasoning', 'reason'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('It', 'it'), ('may', 'may'), ('give', 'give'), ('accurate', 'accur'), ('reasoning', 'reason'), (',', ','), ('acceptable', 'accept'), ('reasoning', 'reason'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('It', 'It'), ('may', 'may'), ('give', 'give'), ('accurate', 'accurate'), ('reasoning', 'reasoning'), (',', ','), ('acceptable', 'acceptable'), ('reasoning', 'reasoning'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+· Fuzzy logic helps to deal with the uncertainty in engineering. 
+
+
+>> Tokens are: 
+ ['·', 'Fuzzy', 'logic', 'helps', 'deal', 'uncertainty', 'engineering', '.']
+
+>> Bigrams are: 
+ [('·', 'Fuzzy'), ('Fuzzy', 'logic'), ('logic', 'helps'), ('helps', 'deal'), ('deal', 'uncertainty'), ('uncertainty', 'engineering'), ('engineering', '.')]
+
+>> Trigrams are: 
+ [('·', 'Fuzzy', 'logic'), ('Fuzzy', 'logic', 'helps'), ('logic', 'helps', 'deal'), ('helps', 'deal', 'uncertainty'), ('deal', 'uncertainty', 'engineering'), ('uncertainty', 'engineering', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Fuzzy', 'NNP'), ('logic', 'NN'), ('helps', 'VBZ'), ('deal', 'VB'), ('uncertainty', 'NN'), ('engineering', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Fuzzy/NNP logic/NN)
+  helps/VBZ
+  deal/VB
+  (NP uncertainty/NN engineering/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Fuzzy logic', 'uncertainty engineering']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Fuzzy', 'fuzzi'), ('logic', 'logic'), ('helps', 'help'), ('deal', 'deal'), ('uncertainty', 'uncertainti'), ('engineering', 'engin'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Fuzzy', 'fuzzi'), ('logic', 'logic'), ('helps', 'help'), ('deal', 'deal'), ('uncertainty', 'uncertainti'), ('engineering', 'engin'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Fuzzy', 'Fuzzy'), ('logic', 'logic'), ('helps', 'help'), ('deal', 'deal'), ('uncertainty', 'uncertainty'), ('engineering', 'engineering'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+Fuzzy Logic Systems Architecture It has four main parts as shown − · Fuzzification Module − It transforms the system inputs, which are crisp numbers, into fuzzy sets. 
+
+
+>> Tokens are: 
+ ['Fuzzy', 'Logic', 'Systems', 'Architecture', 'It', 'four', 'main', 'parts', 'shown', '−', '·', 'Fuzzification', 'Module', '−', 'It', 'transforms', 'system', 'inputs', ',', 'crisp', 'numbers', ',', 'fuzzy', 'sets', '.']
+
+>> Bigrams are: 
+ [('Fuzzy', 'Logic'), ('Logic', 'Systems'), ('Systems', 'Architecture'), ('Architecture', 'It'), ('It', 'four'), ('four', 'main'), ('main', 'parts'), ('parts', 'shown'), ('shown', '−'), ('−', '·'), ('·', 'Fuzzification'), ('Fuzzification', 'Module'), ('Module', '−'), ('−', 'It'), ('It', 'transforms'), ('transforms', 'system'), ('system', 'inputs'), ('inputs', ','), (',', 'crisp'), ('crisp', 'numbers'), ('numbers', ','), (',', 'fuzzy'), ('fuzzy', 'sets'), ('sets', '.')]
+
+>> Trigrams are: 
+ [('Fuzzy', 'Logic', 'Systems'), ('Logic', 'Systems', 'Architecture'), ('Systems', 'Architecture', 'It'), ('Architecture', 'It', 'four'), ('It', 'four', 'main'), ('four', 'main', 'parts'), ('main', 'parts', 'shown'), ('parts', 'shown', '−'), ('shown', '−', '·'), ('−', '·', 'Fuzzification'), ('·', 'Fuzzification', 'Module'), ('Fuzzification', 'Module', '−'), ('Module', '−', 'It'), ('−', 'It', 'transforms'), ('It', 'transforms', 'system'), ('transforms', 'system', 'inputs'), ('system', 'inputs', ','), ('inputs', ',', 'crisp'), (',', 'crisp', 'numbers'), ('crisp', 'numbers', ','), ('numbers', ',', 'fuzzy'), (',', 'fuzzy', 'sets'), ('fuzzy', 'sets', '.')]
+
+>> POS Tags are: 
+ [('Fuzzy', 'NNP'), ('Logic', 'NNP'), ('Systems', 'NNPS'), ('Architecture', 'NNP'), ('It', 'PRP'), ('four', 'CD'), ('main', 'JJ'), ('parts', 'NNS'), ('shown', 'VBN'), ('−', 'NNP'), ('·', 'NNP'), ('Fuzzification', 'NNP'), ('Module', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('transforms', 'VBZ'), ('system', 'NN'), ('inputs', 'NNS'), (',', ','), ('crisp', 'NN'), ('numbers', 'NNS'), (',', ','), ('fuzzy', 'JJ'), ('sets', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Fuzzy/NNP Logic/NNP)
+  Systems/NNPS
+  (NP Architecture/NNP)
+  It/PRP
+  four/CD
+  (NP main/JJ parts/NNS)
+  shown/VBN
+  (NP −/NNP ·/NNP Fuzzification/NNP Module/NNP)
+  −/VBD
+  It/PRP
+  transforms/VBZ
+  (NP system/NN inputs/NNS)
+  ,/,
+  (NP crisp/NN numbers/NNS)
+  ,/,
+  (NP fuzzy/JJ sets/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Fuzzy Logic', 'Architecture', 'main parts', '− · Fuzzification Module', 'system inputs', 'crisp numbers', 'fuzzy sets']
+
+>> Named Entities are: 
+ [('PERSON', 'Fuzzy'), ('ORGANIZATION', 'Logic Systems'), ('PERSON', 'Module')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Fuzzy', 'fuzzi'), ('Logic', 'logic'), ('Systems', 'system'), ('Architecture', 'architectur'), ('It', 'it'), ('four', 'four'), ('main', 'main'), ('parts', 'part'), ('shown', 'shown'), ('−', '−'), ('·', '·'), ('Fuzzification', 'fuzzif'), ('Module', 'modul'), ('−', '−'), ('It', 'it'), ('transforms', 'transform'), ('system', 'system'), ('inputs', 'input'), (',', ','), ('crisp', 'crisp'), ('numbers', 'number'), (',', ','), ('fuzzy', 'fuzzi'), ('sets', 'set'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Fuzzy', 'fuzzi'), ('Logic', 'logic'), ('Systems', 'system'), ('Architecture', 'architectur'), ('It', 'it'), ('four', 'four'), ('main', 'main'), ('parts', 'part'), ('shown', 'shown'), ('−', '−'), ('·', '·'), ('Fuzzification', 'fuzzif'), ('Module', 'modul'), ('−', '−'), ('It', 'it'), ('transforms', 'transform'), ('system', 'system'), ('inputs', 'input'), (',', ','), ('crisp', 'crisp'), ('numbers', 'number'), (',', ','), ('fuzzy', 'fuzzi'), ('sets', 'set'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Fuzzy', 'Fuzzy'), ('Logic', 'Logic'), ('Systems', 'Systems'), ('Architecture', 'Architecture'), ('It', 'It'), ('four', 'four'), ('main', 'main'), ('parts', 'part'), ('shown', 'shown'), ('−', '−'), ('·', '·'), ('Fuzzification', 'Fuzzification'), ('Module', 'Module'), ('−', '−'), ('It', 'It'), ('transforms', 'transforms'), ('system', 'system'), ('inputs', 'input'), (',', ','), ('crisp', 'crisp'), ('numbers', 'number'), (',', ','), ('fuzzy', 'fuzzy'), ('sets', 'set'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+It splits the input signal into five steps such as − 	LP 	x is Large Positive  	MP 	x is Medium Positive  	S 	x is Small  	MN 	x is Medium Negative  	LN 	x is Large Negative   ·  Knowledge Base − It stores IF-THEN rules provided by experts. 
+
+
+>> Tokens are: 
+ ['It', 'splits', 'input', 'signal', 'five', 'steps', '−', 'LP', 'x', 'Large', 'Positive', 'MP', 'x', 'Medium', 'Positive', 'S', 'x', 'Small', 'MN', 'x', 'Medium', 'Negative', 'LN', 'x', 'Large', 'Negative', '·', 'Knowledge', 'Base', '−', 'It', 'stores', 'IF-THEN', 'rules', 'provided', 'experts', '.']
+
+>> Bigrams are: 
+ [('It', 'splits'), ('splits', 'input'), ('input', 'signal'), ('signal', 'five'), ('five', 'steps'), ('steps', '−'), ('−', 'LP'), ('LP', 'x'), ('x', 'Large'), ('Large', 'Positive'), ('Positive', 'MP'), ('MP', 'x'), ('x', 'Medium'), ('Medium', 'Positive'), ('Positive', 'S'), ('S', 'x'), ('x', 'Small'), ('Small', 'MN'), ('MN', 'x'), ('x', 'Medium'), ('Medium', 'Negative'), ('Negative', 'LN'), ('LN', 'x'), ('x', 'Large'), ('Large', 'Negative'), ('Negative', '·'), ('·', 'Knowledge'), ('Knowledge', 'Base'), ('Base', '−'), ('−', 'It'), ('It', 'stores'), ('stores', 'IF-THEN'), ('IF-THEN', 'rules'), ('rules', 'provided'), ('provided', 'experts'), ('experts', '.')]
+
+>> Trigrams are: 
+ [('It', 'splits', 'input'), ('splits', 'input', 'signal'), ('input', 'signal', 'five'), ('signal', 'five', 'steps'), ('five', 'steps', '−'), ('steps', '−', 'LP'), ('−', 'LP', 'x'), ('LP', 'x', 'Large'), ('x', 'Large', 'Positive'), ('Large', 'Positive', 'MP'), ('Positive', 'MP', 'x'), ('MP', 'x', 'Medium'), ('x', 'Medium', 'Positive'), ('Medium', 'Positive', 'S'), ('Positive', 'S', 'x'), ('S', 'x', 'Small'), ('x', 'Small', 'MN'), ('Small', 'MN', 'x'), ('MN', 'x', 'Medium'), ('x', 'Medium', 'Negative'), ('Medium', 'Negative', 'LN'), ('Negative', 'LN', 'x'), ('LN', 'x', 'Large'), ('x', 'Large', 'Negative'), ('Large', 'Negative', '·'), ('Negative', '·', 'Knowledge'), ('·', 'Knowledge', 'Base'), ('Knowledge', 'Base', '−'), ('Base', '−', 'It'), ('−', 'It', 'stores'), ('It', 'stores', 'IF-THEN'), ('stores', 'IF-THEN', 'rules'), ('IF-THEN', 'rules', 'provided'), ('rules', 'provided', 'experts'), ('provided', 'experts', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('splits', 'VBZ'), ('input', 'JJ'), ('signal', 'JJ'), ('five', 'CD'), ('steps', 'NNS'), ('−', 'JJ'), ('LP', 'NNP'), ('x', 'NNP'), ('Large', 'NNP'), ('Positive', 'NNP'), ('MP', 'NNP'), ('x', 'NNP'), ('Medium', 'NNP'), ('Positive', 'NNP'), ('S', 'NNP'), ('x', 'NNP'), ('Small', 'NNP'), ('MN', 'NNP'), ('x', 'NNP'), ('Medium', 'NNP'), ('Negative', 'NNP'), ('LN', 'NNP'), ('x', 'NNP'), ('Large', 'NNP'), ('Negative', 'NNP'), ('·', 'NNP'), ('Knowledge', 'NNP'), ('Base', 'NNP'), ('−', 'NNP'), ('It', 'PRP'), ('stores', 'NNS'), ('IF-THEN', 'NNP'), ('rules', 'NNS'), ('provided', 'VBD'), ('experts', 'NNS'), ('.', '.')]
+
+ (S
+  It/PRP
+  splits/VBZ
+  input/JJ
+  signal/JJ
+  five/CD
+  (NP steps/NNS)
+  (NP
+    −/JJ
+    LP/NNP
+    x/NNP
+    Large/NNP
+    Positive/NNP
+    MP/NNP
+    x/NNP
+    Medium/NNP
+    Positive/NNP
+    S/NNP
+    x/NNP
+    Small/NNP
+    MN/NNP
+    x/NNP
+    Medium/NNP
+    Negative/NNP
+    LN/NNP
+    x/NNP
+    Large/NNP
+    Negative/NNP
+    ·/NNP
+    Knowledge/NNP
+    Base/NNP
+    −/NNP)
+  It/PRP
+  (NP stores/NNS IF-THEN/NNP rules/NNS)
+  provided/VBD
+  (NP experts/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['steps', '− LP x Large Positive MP x Medium Positive S x Small MN x Medium Negative LN x Large Negative · Knowledge Base −', 'stores IF-THEN rules', 'experts']
+
+>> Named Entities are: 
+ [('PERSON', 'Large Positive MP'), ('PERSON', 'Medium Positive'), ('PERSON', 'Medium Negative LN'), ('PERSON', 'Large Negative')] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('splits', 'split'), ('input', 'input'), ('signal', 'signal'), ('five', 'five'), ('steps', 'step'), ('−', '−'), ('LP', 'lp'), ('x', 'x'), ('Large', 'larg'), ('Positive', 'posit'), ('MP', 'mp'), ('x', 'x'), ('Medium', 'medium'), ('Positive', 'posit'), ('S', 's'), ('x', 'x'), ('Small', 'small'), ('MN', 'mn'), ('x', 'x'), ('Medium', 'medium'), ('Negative', 'neg'), ('LN', 'ln'), ('x', 'x'), ('Large', 'larg'), ('Negative', 'neg'), ('·', '·'), ('Knowledge', 'knowledg'), ('Base', 'base'), ('−', '−'), ('It', 'it'), ('stores', 'store'), ('IF-THEN', 'if-then'), ('rules', 'rule'), ('provided', 'provid'), ('experts', 'expert'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('splits', 'split'), ('input', 'input'), ('signal', 'signal'), ('five', 'five'), ('steps', 'step'), ('−', '−'), ('LP', 'lp'), ('x', 'x'), ('Large', 'larg'), ('Positive', 'posit'), ('MP', 'mp'), ('x', 'x'), ('Medium', 'medium'), ('Positive', 'posit'), ('S', 's'), ('x', 'x'), ('Small', 'small'), ('MN', 'mn'), ('x', 'x'), ('Medium', 'medium'), ('Negative', 'negat'), ('LN', 'ln'), ('x', 'x'), ('Large', 'larg'), ('Negative', 'negat'), ('·', '·'), ('Knowledge', 'knowledg'), ('Base', 'base'), ('−', '−'), ('It', 'it'), ('stores', 'store'), ('IF-THEN', 'if-then'), ('rules', 'rule'), ('provided', 'provid'), ('experts', 'expert'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('splits', 'split'), ('input', 'input'), ('signal', 'signal'), ('five', 'five'), ('steps', 'step'), ('−', '−'), ('LP', 'LP'), ('x', 'x'), ('Large', 'Large'), ('Positive', 'Positive'), ('MP', 'MP'), ('x', 'x'), ('Medium', 'Medium'), ('Positive', 'Positive'), ('S', 'S'), ('x', 'x'), ('Small', 'Small'), ('MN', 'MN'), ('x', 'x'), ('Medium', 'Medium'), ('Negative', 'Negative'), ('LN', 'LN'), ('x', 'x'), ('Large', 'Large'), ('Negative', 'Negative'), ('·', '·'), ('Knowledge', 'Knowledge'), ('Base', 'Base'), ('−', '−'), ('It', 'It'), ('stores', 'store'), ('IF-THEN', 'IF-THEN'), ('rules', 'rule'), ('provided', 'provided'), ('experts', 'expert'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+· Inference Engine − It simulates the human reasoning process by making fuzzy inference on the inputs and IF-THEN rules. 
+
+
+>> Tokens are: 
+ ['·', 'Inference', 'Engine', '−', 'It', 'simulates', 'human', 'reasoning', 'process', 'making', 'fuzzy', 'inference', 'inputs', 'IF-THEN', 'rules', '.']
+
+>> Bigrams are: 
+ [('·', 'Inference'), ('Inference', 'Engine'), ('Engine', '−'), ('−', 'It'), ('It', 'simulates'), ('simulates', 'human'), ('human', 'reasoning'), ('reasoning', 'process'), ('process', 'making'), ('making', 'fuzzy'), ('fuzzy', 'inference'), ('inference', 'inputs'), ('inputs', 'IF-THEN'), ('IF-THEN', 'rules'), ('rules', '.')]
+
+>> Trigrams are: 
+ [('·', 'Inference', 'Engine'), ('Inference', 'Engine', '−'), ('Engine', '−', 'It'), ('−', 'It', 'simulates'), ('It', 'simulates', 'human'), ('simulates', 'human', 'reasoning'), ('human', 'reasoning', 'process'), ('reasoning', 'process', 'making'), ('process', 'making', 'fuzzy'), ('making', 'fuzzy', 'inference'), ('fuzzy', 'inference', 'inputs'), ('inference', 'inputs', 'IF-THEN'), ('inputs', 'IF-THEN', 'rules'), ('IF-THEN', 'rules', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Inference', 'NNP'), ('Engine', 'NNP'), ('−', 'VBZ'), ('It', 'PRP'), ('simulates', 'VBZ'), ('human', 'JJ'), ('reasoning', 'VBG'), ('process', 'NN'), ('making', 'VBG'), ('fuzzy', 'JJ'), ('inference', 'NN'), ('inputs', 'NNS'), ('IF-THEN', 'NNP'), ('rules', 'NNS'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Inference/NNP Engine/NNP)
+  −/VBZ
+  It/PRP
+  simulates/VBZ
+  human/JJ
+  reasoning/VBG
+  (NP process/NN)
+  making/VBG
+  (NP fuzzy/JJ inference/NN inputs/NNS IF-THEN/NNP rules/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Inference Engine', 'process', 'fuzzy inference inputs IF-THEN rules']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Inference', 'infer'), ('Engine', 'engin'), ('−', '−'), ('It', 'it'), ('simulates', 'simul'), ('human', 'human'), ('reasoning', 'reason'), ('process', 'process'), ('making', 'make'), ('fuzzy', 'fuzzi'), ('inference', 'infer'), ('inputs', 'input'), ('IF-THEN', 'if-then'), ('rules', 'rule'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Inference', 'infer'), ('Engine', 'engin'), ('−', '−'), ('It', 'it'), ('simulates', 'simul'), ('human', 'human'), ('reasoning', 'reason'), ('process', 'process'), ('making', 'make'), ('fuzzy', 'fuzzi'), ('inference', 'infer'), ('inputs', 'input'), ('IF-THEN', 'if-then'), ('rules', 'rule'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Inference', 'Inference'), ('Engine', 'Engine'), ('−', '−'), ('It', 'It'), ('simulates', 'simulates'), ('human', 'human'), ('reasoning', 'reasoning'), ('process', 'process'), ('making', 'making'), ('fuzzy', 'fuzzy'), ('inference', 'inference'), ('inputs', 'input'), ('IF-THEN', 'IF-THEN'), ('rules', 'rule'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+· Defuzzification Module − It transforms the fuzzy set obtained by the inference engine into a crisp value. 
+
+
+>> Tokens are: 
+ ['·', 'Defuzzification', 'Module', '−', 'It', 'transforms', 'fuzzy', 'set', 'obtained', 'inference', 'engine', 'crisp', 'value', '.']
+
+>> Bigrams are: 
+ [('·', 'Defuzzification'), ('Defuzzification', 'Module'), ('Module', '−'), ('−', 'It'), ('It', 'transforms'), ('transforms', 'fuzzy'), ('fuzzy', 'set'), ('set', 'obtained'), ('obtained', 'inference'), ('inference', 'engine'), ('engine', 'crisp'), ('crisp', 'value'), ('value', '.')]
+
+>> Trigrams are: 
+ [('·', 'Defuzzification', 'Module'), ('Defuzzification', 'Module', '−'), ('Module', '−', 'It'), ('−', 'It', 'transforms'), ('It', 'transforms', 'fuzzy'), ('transforms', 'fuzzy', 'set'), ('fuzzy', 'set', 'obtained'), ('set', 'obtained', 'inference'), ('obtained', 'inference', 'engine'), ('inference', 'engine', 'crisp'), ('engine', 'crisp', 'value'), ('crisp', 'value', '.')]
+
+>> POS Tags are: 
+ [('·', 'JJ'), ('Defuzzification', 'NNP'), ('Module', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('transforms', 'VBZ'), ('fuzzy', 'JJ'), ('set', 'NN'), ('obtained', 'VBN'), ('inference', 'NN'), ('engine', 'NN'), ('crisp', 'NN'), ('value', 'NN'), ('.', '.')]
+
+ (S
+  (NP ·/JJ Defuzzification/NNP Module/NNP)
+  −/VBD
+  It/PRP
+  transforms/VBZ
+  (NP fuzzy/JJ set/NN)
+  obtained/VBN
+  (NP inference/NN engine/NN crisp/NN value/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['· Defuzzification Module', 'fuzzy set', 'inference engine crisp value']
+
+>> Named Entities are: 
+ [('PERSON', 'Module')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Defuzzification', 'defuzzif'), ('Module', 'modul'), ('−', '−'), ('It', 'it'), ('transforms', 'transform'), ('fuzzy', 'fuzzi'), ('set', 'set'), ('obtained', 'obtain'), ('inference', 'infer'), ('engine', 'engin'), ('crisp', 'crisp'), ('value', 'valu'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Defuzzification', 'defuzzif'), ('Module', 'modul'), ('−', '−'), ('It', 'it'), ('transforms', 'transform'), ('fuzzy', 'fuzzi'), ('set', 'set'), ('obtained', 'obtain'), ('inference', 'infer'), ('engine', 'engin'), ('crisp', 'crisp'), ('value', 'valu'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Defuzzification', 'Defuzzification'), ('Module', 'Module'), ('−', '−'), ('It', 'It'), ('transforms', 'transforms'), ('fuzzy', 'fuzzy'), ('set', 'set'), ('obtained', 'obtained'), ('inference', 'inference'), ('engine', 'engine'), ('crisp', 'crisp'), ('value', 'value'), ('.', '.')]
+

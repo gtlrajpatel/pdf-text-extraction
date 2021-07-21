@@ -1,0 +1,661 @@
+
+
+========================== Sentence 1 ===========================
+
+ Power 
+
+Tokens are: 
+>> ['Power'] 
+
+ UPOS tags are: 
+>> [('Power', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Power', 'NN')] 
+
+ Lemmas are: 
+>> [('Power', 'power')] 
+
+ Dependency tags are: 
+>> [(('Power', 'root'), 'root')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 2 ===========================
+
+ Point Presentation  Unit – 4 Error Recovery dixita.kagathara@darshan.ac.in +91 - 97277 47317 (CE Department) Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design (CD) GTU # 2170701   Darshan Institute of Engineering & Technology, Rajkot     Looping Topics to be covered  Types of errors Error recovery strategies            Types of errors        Types of Errors Errors Compile time  Run time Lexical Phase error Syntactic Phase error Semantic Phase error    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Lexical error Lexical errors can be detected during lexical analysis phase. 
+
+Tokens are: 
+>> ['Point', 'Presentation', 'Unit', '–', '4', 'Error', 'Recovery', 'dixita.kagathara@darshan.ac.in', '+91', '-', '97277', '47317', '(', 'CE', 'Department', ')', 'Computer', 'Engineering', 'Department', 'Prof.', 'Dixita', 'B.', 'Kagathara', 'Compiler', 'Design', '(', 'CD', ')', 'GTU', '#', '2170701', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', ',', 'Rajkot', '\uf050', 'Looping', 'Topics', 'to', 'be', 'covered', 'Types', 'of', 'errors', 'Error', 'recovery', 'strategies', 'Types', 'of', 'errors', 'Types', 'of', 'Errors', 'Errors', 'Compile', 'time', 'Run', 'time', 'Lexical', 'Phase', 'error', 'Syntactic', 'Phase', 'error', 'Semantic', 'Phase', 'error', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹#›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹#›', 'Lexical', 'error', 'Lexical', 'errors', 'can', 'be', 'detected', 'during', 'lexical', 'analysis', 'phase', '.'] 
+
+ UPOS tags are: 
+>> [('Point', 'NOUN'), ('Presentation', 'NOUN'), ('Unit', 'NOUN'), ('–', 'PUNCT'), ('4', 'NUM'), ('Error', 'NOUN'), ('Recovery', 'NOUN'), ('dixita.kagathara@darshan.ac.in', 'X'), ('+91', 'NUM'), ('-', 'SYM'), ('97277', 'NUM'), ('47317', 'NUM'), ('(', 'PUNCT'), ('CE', 'PROPN'), ('Department', 'PROPN'), (')', 'PUNCT'), ('Computer', 'PROPN'), ('Engineering', 'PROPN'), ('Department', 'PROPN'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B.', 'PROPN'), ('Kagathara', 'PROPN'), ('Compiler', 'PROPN'), ('Design', 'PROPN'), ('(', 'PUNCT'), ('CD', 'PROPN'), (')', 'PUNCT'), ('GTU', 'PROPN'), ('#', 'SYM'), ('2170701', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), (',', 'PUNCT'), ('Rajkot', 'PROPN'), ('\uf050', 'PUNCT'), ('Looping', 'NOUN'), ('Topics', 'PROPN'), ('to', 'PART'), ('be', 'AUX'), ('covered', 'VERB'), ('Types', 'NOUN'), ('of', 'ADP'), ('errors', 'NOUN'), ('Error', 'NOUN'), ('recovery', 'NOUN'), ('strategies', 'NOUN'), ('Types', 'NOUN'), ('of', 'ADP'), ('errors', 'NOUN'), ('Types', 'PROPN'), ('of', 'ADP'), ('Errors', 'PROPN'), ('Errors', 'PROPN'), ('Compile', 'PROPN'), ('time', 'NOUN'), ('Run', 'PROPN'), ('time', 'NOUN'), ('Lexical', 'ADJ'), ('Phase', 'PROPN'), ('error', 'NOUN'), ('Syntactic', 'ADJ'), ('Phase', 'PROPN'), ('error', 'NOUN'), ('Semantic', 'ADJ'), ('Phase', 'PROPN'), ('error', 'NOUN'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'SYM'), ('Basic', 'ADJ'), ('Probability', 'NOUN'), ('‹#›', 'NOUN'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'NOUN'), ('Recovery', 'NOUN'), ('‹#›', 'CCONJ'), ('Lexical', 'ADJ'), ('error', 'NOUN'), ('Lexical', 'ADJ'), ('errors', 'NOUN'), ('can', 'AUX'), ('be', 'AUX'), ('detected', 'VERB'), ('during', 'ADP'), ('lexical', 'ADJ'), ('analysis', 'NOUN'), ('phase', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Point', 'NN'), ('Presentation', 'NN'), ('Unit', 'NN'), ('–', ':'), ('4', 'CD'), ('Error', 'NN'), ('Recovery', 'NN'), ('dixita.kagathara@darshan.ac.in', 'ADD'), ('+91', 'CD'), ('-', 'SYM'), ('97277', 'CD'), ('47317', 'CD'), ('(', '-LRB-'), ('CE', 'NNP'), ('Department', 'NNP'), (')', '-RRB-'), ('Computer', 'NNP'), ('Engineering', 'NNP'), ('Department', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B.', 'NNP'), ('Kagathara', 'NNP'), ('Compiler', 'NNP'), ('Design', 'NNP'), ('(', '-LRB-'), ('CD', 'NNP'), (')', '-RRB-'), ('GTU', 'NNP'), ('#', 'NN'), ('2170701', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NN'), (',', ','), ('Rajkot', 'NNP'), ('\uf050', ','), ('Looping', 'NN'), ('Topics', 'NNPS'), ('to', 'TO'), ('be', 'VB'), ('covered', 'VBN'), ('Types', 'NNS'), ('of', 'IN'), ('errors', 'NNS'), ('Error', 'NN'), ('recovery', 'NN'), ('strategies', 'NNS'), ('Types', 'NNS'), ('of', 'IN'), ('errors', 'NNS'), ('Types', 'NNPS'), ('of', 'IN'), ('Errors', 'NNPS'), ('Errors', 'NNPS'), ('Compile', 'NNP'), ('time', 'NN'), ('Run', 'NNP'), ('time', 'NN'), ('Lexical', 'NNP'), ('Phase', 'NNP'), ('error', 'NN'), ('Syntactic', 'NNP'), ('Phase', 'NNP'), ('error', 'NN'), ('Semantic', 'JJ'), ('Phase', 'NNP'), ('error', 'NN'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', 'NN'), ('3130006', 'CD'), ('(', '-LRB-'), ('PS', 'NNP'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('1', 'CD'), ('–', 'SYM'), ('Basic', 'JJ'), ('Probability', 'NN'), ('‹#›', 'NN'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', 'NN'), ('2170701', 'CD'), ('(', '-LRB-'), ('CD', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('4', 'CD'), ('–', ':'), ('Error', 'NN'), ('Recovery', 'NN'), ('‹#›', 'CC'), ('Lexical', 'JJ'), ('error', 'NN'), ('Lexical', 'JJ'), ('errors', 'NNS'), ('can', 'MD'), ('be', 'VB'), ('detected', 'VBN'), ('during', 'IN'), ('lexical', 'JJ'), ('analysis', 'NN'), ('phase', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Point', 'point'), ('Presentation', 'presentation'), ('Unit', 'unit'), ('–', '-'), ('4', '4'), ('Error', 'error'), ('Recovery', 'recovery'), ('dixita.kagathara@darshan.ac.in', 'dixita.kagathara@darshan.ac.in'), ('+91', '+91'), ('-', '-'), ('97277', '97277'), ('47317', '47317'), ('(', '('), ('CE', 'CE'), ('Department', 'Department'), (')', ')'), ('Computer', 'Computer'), ('Engineering', 'Engineering'), ('Department', 'Department'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B.', 'B.'), ('Kagathara', 'Kagathara'), ('Compiler', 'Compiler'), ('Design', 'Design'), ('(', '('), ('CD', 'CD'), (')', ')'), ('GTU', 'GTU'), ('#', '#'), ('2170701', '2170701'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), (',', ','), ('Rajkot', 'Rajkot'), ('\uf050', "''"), ('Looping', 'looping'), ('Topics', 'topic'), ('to', 'to'), ('be', 'be'), ('covered', 'cover'), ('Types', 'type'), ('of', 'of'), ('errors', 'error'), ('Error', 'error'), ('recovery', 'recovery'), ('strategies', 'strategy'), ('Types', 'type'), ('of', 'of'), ('errors', 'error'), ('Types', 'type'), ('of', 'of'), ('Errors', 'Errors'), ('Errors', 'Errors'), ('Compile', 'Compile'), ('time', 'time'), ('Run', 'Run'), ('time', 'time'), ('Lexical', 'lexical'), ('Phase', 'Phase'), ('error', 'error'), ('Syntactic', 'Syntactic'), ('Phase', 'Phase'), ('error', 'error'), ('Semantic', 'Semantic'), ('Phase', 'Phase'), ('error', 'error'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '-'), ('Basic', 'basic'), ('Probability', 'probability'), ('‹#›', '‹#›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '-'), ('Error', 'error'), ('Recovery', 'recovery'), ('‹#›', '‹#›'), ('Lexical', 'lexical'), ('error', 'error'), ('Lexical', 'lexical'), ('errors', 'error'), ('can', 'can'), ('be', 'be'), ('detected', 'detect'), ('during', 'during'), ('lexical', 'lexical'), ('analysis', 'analysis'), ('phase', 'phase'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Point', 'Presentation'), 'compound'), (('Presentation', 'Unit'), 'compound'), (('Unit', 'root'), 'root'), (('–', 'Unit'), 'punct'), (('4', 'Recovery'), 'nummod'), (('Error', 'Recovery'), 'compound'), (('Recovery', 'Unit'), 'conj'), (('dixita.kagathara@darshan.ac.in', 'Recovery'), 'appos'), (('+91', 'dixita.kagathara@darshan.ac.in'), 'nummod'), (('-', '97277'), 'case'), (('97277', '+91'), 'nmod'), (('47317', 'Department'), 'dep'), (('(', 'Department'), 'punct'), (('CE', 'Department'), 'compound'), (('Department', 'Recovery'), 'appos'), ((')', 'Department'), 'punct'), (('Computer', 'Department'), 'compound'), (('Engineering', 'Department'), 'compound'), (('Department', 'Unit'), 'conj'), (('Prof.', 'Unit'), 'conj'), (('Dixita', 'Prof.'), 'flat'), (('B.', 'Prof.'), 'flat'), (('Kagathara', 'Design'), 'compound'), (('Compiler', 'Design'), 'compound'), (('Design', 'Prof.'), 'conj'), (('(', 'CD'), 'punct'), (('CD', 'Design'), 'appos'), ((')', 'CD'), 'punct'), (('GTU', 'Institute'), 'compound'), (('#', 'Institute'), 'compound'), (('2170701', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'conj'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), ((',', 'Rajkot'), 'punct'), (('Rajkot', 'Engineering'), 'appos'), (('\uf050', 'Rajkot'), 'punct'), (('Looping', 'Topics'), 'compound'), (('Topics', 'Institute'), 'conj'), (('to', 'covered'), 'mark'), (('be', 'covered'), 'aux:pass'), (('covered', 'Topics'), 'acl'), (('Types', 'covered'), 'obj'), (('of', 'errors'), 'case'), (('errors', 'Types'), 'nmod'), (('Error', 'strategies'), 'compound'), (('recovery', 'strategies'), 'compound'), (('strategies', 'Types'), 'compound'), (('Types', 'errors'), 'conj'), (('of', 'errors'), 'case'), (('errors', 'Types'), 'nmod'), (('Types', 'Types'), 'nmod'), (('of', 'Errors'), 'case'), (('Errors', 'Types'), 'nmod'), (('Errors', 'Types'), 'nmod'), (('Compile', 'time'), 'compound'), (('time', 'time'), 'compound'), (('Run', 'time'), 'compound'), (('time', 'error'), 'compound'), (('Lexical', 'Phase'), 'amod'), (('Phase', 'error'), 'compound'), (('error', 'error'), 'compound'), (('Syntactic', 'Phase'), 'amod'), (('Phase', 'error'), 'compound'), (('error', 'error'), 'compound'), (('Semantic', 'Phase'), 'amod'), (('Phase', 'error'), 'compound'), (('error', 'Types'), 'conj'), (('Prof.', 'error'), 'appos'), (('Jay', 'Prof.'), 'flat'), (('R', 'Prof.'), 'flat'), (('Dhamsaniya', 'Prof.'), 'flat'), (('#', 'Prof.'), 'compound'), (('3130006', 'Prof.'), 'flat'), (('(', 'PS'), 'punct'), (('PS', 'Prof.'), 'parataxis'), ((')', 'PS'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'PS'), 'dep'), (('1', 'Unit'), 'nummod'), (('–', 'Probability'), 'case'), (('Basic', 'Probability'), 'amod'), (('Probability', 'Unit'), 'nmod'), (('‹#›', 'Unit'), 'compound'), (('Prof.', 'Probability'), 'compound'), (('Dixita', 'Kagathara'), 'compound'), (('B', 'Prof.'), 'flat'), (('Kagathara', 'Prof.'), 'flat'), (('#', 'B'), 'compound'), (('2170701', '#'), 'nummod'), (('(', 'CD'), 'punct'), (('CD', '#'), 'appos'), ((')', 'CD'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'CD'), 'appos'), (('4', 'Unit'), 'nummod'), (('–', 'Recovery'), 'punct'), (('Error', 'Recovery'), 'compound'), (('Recovery', 'Unit'), 'appos'), (('‹#›', 'error'), 'case'), (('Lexical', 'error'), 'amod'), (('error', 'errors'), 'compound'), (('Lexical', 'errors'), 'amod'), (('errors', 'detected'), 'nsubj:pass'), (('can', 'detected'), 'aux'), (('be', 'detected'), 'aux:pass'), (('detected', 'Recovery'), 'acl:relcl'), (('during', 'phase'), 'case'), (('lexical', 'phase'), 'amod'), (('analysis', 'phase'), 'compound'), (('phase', 'detected'), 'obl'), (('.', 'Unit'), 'punct')]
+
+ Named Entities are: 
+>> [('4', 'CARDINAL'), ('CE Department) Computer Engineering Department', 'ORG'), ('Dixita B. Kagathara Compiler Design', 'ORG'), ('2170701', 'CARDINAL'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('Rajkot', 'GPE'), ('1', 'CARDINAL'), ('2170701', 'CARDINAL'), ('4', 'CARDINAL')]
+
+========================== Sentence 3 ===========================
+
+ Typical lexical phase errors are:   Spelling errors  Exceeding length of identifier or numeric constants  Appearance of illegal characters Example:  fi ( )  { } 
+
+Tokens are: 
+>> ['Typical', 'lexical', 'phase', 'errors', 'are', ':', 'Spelling', 'errors', 'Exceeding', 'length', 'of', 'identifier', 'or', 'numeric', 'constants', 'Appearance', 'of', 'illegal', 'characters', 'Example', ':', 'fi', '(', ')', '{', '}'] 
+
+ UPOS tags are: 
+>> [('Typical', 'ADJ'), ('lexical', 'ADJ'), ('phase', 'NOUN'), ('errors', 'NOUN'), ('are', 'AUX'), (':', 'PUNCT'), ('Spelling', 'NOUN'), ('errors', 'NOUN'), ('Exceeding', 'VERB'), ('length', 'NOUN'), ('of', 'ADP'), ('identifier', 'NOUN'), ('or', 'CCONJ'), ('numeric', 'ADJ'), ('constants', 'NOUN'), ('Appearance', 'NOUN'), ('of', 'ADP'), ('illegal', 'ADJ'), ('characters', 'NOUN'), ('Example', 'NOUN'), (':', 'PUNCT'), ('fi', 'PROPN'), ('(', 'PUNCT'), (')', 'PUNCT'), ('{', 'PUNCT'), ('}', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Typical', 'JJ'), ('lexical', 'JJ'), ('phase', 'NN'), ('errors', 'NNS'), ('are', 'VBP'), (':', ':'), ('Spelling', 'NN'), ('errors', 'NNS'), ('Exceeding', 'VBG'), ('length', 'NN'), ('of', 'IN'), ('identifier', 'NN'), ('or', 'CC'), ('numeric', 'JJ'), ('constants', 'NNS'), ('Appearance', 'NN'), ('of', 'IN'), ('illegal', 'JJ'), ('characters', 'NNS'), ('Example', 'NN'), (':', ':'), ('fi', 'NNP'), ('(', '-LRB-'), (')', '-RRB-'), ('{', 'NFP'), ('}', 'NFP')] 
+
+ Lemmas are: 
+>> [('Typical', 'Typical'), ('lexical', 'lexical'), ('phase', 'phase'), ('errors', 'error'), ('are', 'be'), (':', ':'), ('Spelling', 'spelling'), ('errors', 'error'), ('Exceeding', 'exceed'), ('length', 'length'), ('of', 'of'), ('identifier', 'identifier'), ('or', 'or'), ('numeric', 'numeric'), ('constants', 'constant'), ('Appearance', 'appearance'), ('of', 'of'), ('illegal', 'illegal'), ('characters', 'character'), ('Example', 'example'), (':', ':'), ('fi', 'fi'), ('(', '('), (')', ')'), ('{', '{'), ('}', '}')] 
+
+ Dependency tags are: 
+>> [(('Typical', 'errors'), 'amod'), (('lexical', 'phase'), 'amod'), (('phase', 'errors'), 'compound'), (('errors', 'are'), 'nsubj'), (('are', 'root'), 'root'), ((':', 'are'), 'punct'), (('Spelling', 'errors'), 'compound'), (('errors', 'are'), 'nsubj'), (('Exceeding', 'errors'), 'acl'), (('length', 'Exceeding'), 'obj'), (('of', 'identifier'), 'case'), (('identifier', 'length'), 'nmod'), (('or', 'Appearance'), 'cc'), (('numeric', 'constants'), 'amod'), (('constants', 'Appearance'), 'compound'), (('Appearance', 'identifier'), 'conj'), (('of', 'characters'), 'case'), (('illegal', 'characters'), 'amod'), (('characters', 'Appearance'), 'nmod'), (('Example', 'Appearance'), 'nmod'), ((':', 'fi'), 'punct'), (('fi', 'Example'), 'appos'), (('(', 'fi'), 'punct'), ((')', 'fi'), 'punct'), (('{', 'are'), 'punct'), (('}', 'are'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 4 ===========================
+
+ In above code 'fi' cannot be recognized as a misspelling of keyword if rather lexical analyzer will understand that it is an identifier and will return it as valid identifier. 
+
+Tokens are: 
+>> ['In', 'above', 'code', "'", 'fi', "'", 'cannot', 'be', 'recognized', 'as', 'a', 'misspelling', 'of', 'keyword', 'if', 'rather', 'lexical', 'analyzer', 'will', 'understand', 'that', 'it', 'is', 'an', 'identifier', 'and', 'will', 'return', 'it', 'as', 'valid', 'identifier', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('above', 'ADJ'), ('code', 'NOUN'), ("'", 'PUNCT'), ('fi', 'NOUN'), ("'", 'PUNCT'), ('cannot', 'AUX'), ('be', 'AUX'), ('recognized', 'VERB'), ('as', 'ADP'), ('a', 'DET'), ('misspelling', 'NOUN'), ('of', 'ADP'), ('keyword', 'NOUN'), ('if', 'SCONJ'), ('rather', 'ADV'), ('lexical', 'ADJ'), ('analyzer', 'NOUN'), ('will', 'AUX'), ('understand', 'VERB'), ('that', 'SCONJ'), ('it', 'PRON'), ('is', 'AUX'), ('an', 'DET'), ('identifier', 'NOUN'), ('and', 'CCONJ'), ('will', 'AUX'), ('return', 'VERB'), ('it', 'PRON'), ('as', 'ADP'), ('valid', 'ADJ'), ('identifier', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('above', 'JJ'), ('code', 'NN'), ("'", '``'), ('fi', 'NN'), ("'", "''"), ('cannot', 'MD'), ('be', 'VB'), ('recognized', 'VBN'), ('as', 'IN'), ('a', 'DT'), ('misspelling', 'NN'), ('of', 'IN'), ('keyword', 'NN'), ('if', 'IN'), ('rather', 'RB'), ('lexical', 'JJ'), ('analyzer', 'NN'), ('will', 'MD'), ('understand', 'VB'), ('that', 'IN'), ('it', 'PRP'), ('is', 'VBZ'), ('an', 'DT'), ('identifier', 'NN'), ('and', 'CC'), ('will', 'MD'), ('return', 'VB'), ('it', 'PRP'), ('as', 'IN'), ('valid', 'JJ'), ('identifier', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('above', 'above'), ('code', 'code'), ("'", "'"), ('fi', 'fi'), ("'", "'"), ('cannot', 'cannot'), ('be', 'be'), ('recognized', 'recognize'), ('as', 'as'), ('a', 'a'), ('misspelling', 'misspelling'), ('of', 'of'), ('keyword', 'keyword'), ('if', 'if'), ('rather', 'rather'), ('lexical', 'lexical'), ('analyzer', 'analyzer'), ('will', 'will'), ('understand', 'understand'), ('that', 'that'), ('it', 'it'), ('is', 'be'), ('an', 'a'), ('identifier', 'identifier'), ('and', 'and'), ('will', 'will'), ('return', 'return'), ('it', 'it'), ('as', 'as'), ('valid', 'valid'), ('identifier', 'identifier'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'code'), 'case'), (('above', 'code'), 'amod'), (('code', 'recognized'), 'obl'), (("'", 'fi'), 'punct'), (('fi', 'recognized'), 'nsubj:pass'), (("'", 'fi'), 'punct'), (('cannot', 'recognized'), 'aux'), (('be', 'recognized'), 'aux:pass'), (('recognized', 'root'), 'root'), (('as', 'misspelling'), 'case'), (('a', 'misspelling'), 'det'), (('misspelling', 'recognized'), 'obl'), (('of', 'keyword'), 'case'), (('keyword', 'misspelling'), 'nmod'), (('if', 'understand'), 'mark'), (('rather', 'analyzer'), 'amod'), (('lexical', 'analyzer'), 'amod'), (('analyzer', 'understand'), 'nsubj'), (('will', 'understand'), 'aux'), (('understand', 'recognized'), 'advcl'), (('that', 'identifier'), 'mark'), (('it', 'identifier'), 'nsubj'), (('is', 'identifier'), 'cop'), (('an', 'identifier'), 'det'), (('identifier', 'understand'), 'ccomp'), (('and', 'return'), 'cc'), (('will', 'return'), 'aux'), (('return', 'identifier'), 'conj'), (('it', 'return'), 'obj'), (('as', 'identifier'), 'case'), (('valid', 'identifier'), 'amod'), (('identifier', 'return'), 'obl'), (('.', 'recognized'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 5 ===========================
+
+ Thus misspelling causes errors in token formation. 
+
+Tokens are: 
+>> ['Thus', 'misspelling', 'causes', 'errors', 'in', 'token', 'formation', '.'] 
+
+ UPOS tags are: 
+>> [('Thus', 'ADV'), ('misspelling', 'NOUN'), ('causes', 'VERB'), ('errors', 'NOUN'), ('in', 'ADP'), ('token', 'NOUN'), ('formation', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Thus', 'RB'), ('misspelling', 'NN'), ('causes', 'VBZ'), ('errors', 'NNS'), ('in', 'IN'), ('token', 'NN'), ('formation', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Thus', 'thus'), ('misspelling', 'misspelling'), ('causes', 'cause'), ('errors', 'error'), ('in', 'in'), ('token', 'token'), ('formation', 'formation'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Thus', 'causes'), 'advmod'), (('misspelling', 'causes'), 'nsubj'), (('causes', 'root'), 'root'), (('errors', 'causes'), 'obj'), (('in', 'formation'), 'case'), (('token', 'formation'), 'compound'), (('formation', 'errors'), 'nmod'), (('.', 'causes'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 6 ===========================
+
+ Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Syntax error Syntax error appear during syntax analysis phase of compiler. 
+
+Tokens are: 
+>> ['Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹#›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹#›', 'Syntax', 'error', 'Syntax', 'error', 'appear', 'during', 'syntax', 'analysis', 'phase', 'of', 'compiler', '.'] 
+
+ UPOS tags are: 
+>> [('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'ADJ'), ('Probability', 'NOUN'), ('‹#›', 'NOUN'), ('Prof.', 'NOUN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'NOUN'), ('Recovery', 'NOUN'), ('‹#›', 'NOUN'), ('Syntax', 'NOUN'), ('error', 'NOUN'), ('Syntax', 'NOUN'), ('error', 'NOUN'), ('appear', 'VERB'), ('during', 'ADP'), ('syntax', 'NOUN'), ('analysis', 'NOUN'), ('phase', 'NOUN'), ('of', 'ADP'), ('compiler', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', 'NN'), ('3130006', 'CD'), ('(', '-LRB-'), ('PS', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('1', 'CD'), ('–', ','), ('Basic', 'JJ'), ('Probability', 'NN'), ('‹#›', 'NN'), ('Prof.', 'NN'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', 'NN'), ('2170701', 'CD'), ('(', '-LRB-'), ('CD', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('4', 'CD'), ('–', ','), ('Error', 'NN'), ('Recovery', 'NN'), ('‹#›', 'NN'), ('Syntax', 'NN'), ('error', 'NN'), ('Syntax', 'NN'), ('error', 'NN'), ('appear', 'VBP'), ('during', 'IN'), ('syntax', 'NN'), ('analysis', 'NN'), ('phase', 'NN'), ('of', 'IN'), ('compiler', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '-'), ('Basic', 'basic'), ('Probability', 'probability'), ('‹#›', '‹#›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '-'), ('Error', 'error'), ('Recovery', 'recovery'), ('‹#›', '‹#›'), ('Syntax', 'Syntax'), ('error', 'error'), ('Syntax', 'Syntax'), ('error', 'error'), ('appear', 'appear'), ('during', 'during'), ('syntax', 'syntax'), ('analysis', 'analysis'), ('phase', 'phase'), ('of', 'of'), ('compiler', 'compiler'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Prof.', 'appear'), 'nsubj'), (('Jay', 'Prof.'), 'flat'), (('R', 'Prof.'), 'flat'), (('Dhamsaniya', 'Prof.'), 'flat'), (('#', 'Prof.'), 'list'), (('3130006', '#'), 'nummod'), (('(', 'PS'), 'punct'), (('PS', 'Unit'), 'compound'), ((')', 'PS'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'Prof.'), 'list'), (('1', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Basic', 'Probability'), 'amod'), (('Probability', 'Prof.'), 'list'), (('‹#›', 'Prof.'), 'list'), (('Prof.', 'Probability'), 'appos'), (('Dixita', 'Kagathara'), 'compound'), (('B', '#'), 'compound'), (('Kagathara', '#'), 'compound'), (('#', 'Probability'), 'appos'), (('2170701', '#'), 'nummod'), (('(', 'CD'), 'punct'), (('CD', 'Unit'), 'appos'), ((')', 'CD'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'Prof.'), 'list'), (('4', 'Unit'), 'nummod'), (('–', 'Prof.'), 'punct'), (('Error', 'Recovery'), 'compound'), (('Recovery', 'Prof.'), 'list'), (('‹#›', 'error'), 'compound'), (('Syntax', 'error'), 'compound'), (('error', 'appear'), 'nsubj'), (('Syntax', 'error'), 'compound'), (('error', 'appear'), 'nsubj'), (('appear', 'root'), 'root'), (('during', 'phase'), 'case'), (('syntax', 'analysis'), 'compound'), (('analysis', 'phase'), 'compound'), (('phase', 'appear'), 'obl'), (('of', 'compiler'), 'case'), (('compiler', 'phase'), 'nmod'), (('.', 'appear'), 'punct')]
+
+ Named Entities are: 
+>> [('#3130006', 'CARDINAL'), ('1', 'CARDINAL'), ('2170701', 'CARDINAL'), ('4', 'CARDINAL')]
+
+========================== Sentence 7 ===========================
+
+ Typical syntax phase errors are:  Errors in structure  Missing operators  Unbalanced parenthesis 
+
+Tokens are: 
+>> ['Typical', 'syntax', 'phase', 'errors', 'are', ':', 'Errors', 'in', 'structure', 'Missing', 'operators', 'Unbalanced', 'parenthesis'] 
+
+ UPOS tags are: 
+>> [('Typical', 'ADJ'), ('syntax', 'NOUN'), ('phase', 'NOUN'), ('errors', 'NOUN'), ('are', 'AUX'), (':', 'PUNCT'), ('Errors', 'NOUN'), ('in', 'ADP'), ('structure', 'NOUN'), ('Missing', 'VERB'), ('operators', 'NOUN'), ('Unbalanced', 'ADJ'), ('parenthesis', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Typical', 'JJ'), ('syntax', 'NN'), ('phase', 'NN'), ('errors', 'NNS'), ('are', 'VBP'), (':', ':'), ('Errors', 'NNS'), ('in', 'IN'), ('structure', 'NN'), ('Missing', 'VBG'), ('operators', 'NNS'), ('Unbalanced', 'JJ'), ('parenthesis', 'NN')] 
+
+ Lemmas are: 
+>> [('Typical', 'Typical'), ('syntax', 'syntax'), ('phase', 'phase'), ('errors', 'error'), ('are', 'be'), (':', ':'), ('Errors', 'error'), ('in', 'in'), ('structure', 'structure'), ('Missing', 'miss'), ('operators', 'operator'), ('Unbalanced', 'Unbalanced'), ('parenthesis', 'parenthesis')] 
+
+ Dependency tags are: 
+>> [(('Typical', 'errors'), 'amod'), (('syntax', 'phase'), 'compound'), (('phase', 'errors'), 'compound'), (('errors', 'are'), 'nsubj'), (('are', 'root'), 'root'), ((':', 'Errors'), 'punct'), (('Errors', 'are'), 'parataxis'), (('in', 'operators'), 'case'), (('structure', 'operators'), 'compound'), (('Missing', 'operators'), 'amod'), (('operators', 'Errors'), 'nmod'), (('Unbalanced', 'parenthesis'), 'amod'), (('parenthesis', 'operators'), 'appos')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 8 ===========================
+
+ The parser demands for tokens from lexical analyzer and if the tokens do not satisfy the grammatical rules of programming language then the syntactical errors get raised. 
+
+Tokens are: 
+>> ['The', 'parser', 'demands', 'for', 'tokens', 'from', 'lexical', 'analyzer', 'and', 'if', 'the', 'tokens', 'do', 'not', 'satisfy', 'the', 'grammatical', 'rules', 'of', 'programming', 'language', 'then', 'the', 'syntactical', 'errors', 'get', 'raised', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('parser', 'NOUN'), ('demands', 'VERB'), ('for', 'ADP'), ('tokens', 'NOUN'), ('from', 'ADP'), ('lexical', 'ADJ'), ('analyzer', 'NOUN'), ('and', 'CCONJ'), ('if', 'SCONJ'), ('the', 'DET'), ('tokens', 'NOUN'), ('do', 'AUX'), ('not', 'PART'), ('satisfy', 'VERB'), ('the', 'DET'), ('grammatical', 'ADJ'), ('rules', 'NOUN'), ('of', 'ADP'), ('programming', 'NOUN'), ('language', 'NOUN'), ('then', 'ADV'), ('the', 'DET'), ('syntactical', 'ADJ'), ('errors', 'NOUN'), ('get', 'AUX'), ('raised', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('parser', 'NN'), ('demands', 'VBZ'), ('for', 'IN'), ('tokens', 'NNS'), ('from', 'IN'), ('lexical', 'JJ'), ('analyzer', 'NN'), ('and', 'CC'), ('if', 'IN'), ('the', 'DT'), ('tokens', 'NNS'), ('do', 'VBP'), ('not', 'RB'), ('satisfy', 'VB'), ('the', 'DT'), ('grammatical', 'JJ'), ('rules', 'NNS'), ('of', 'IN'), ('programming', 'NN'), ('language', 'NN'), ('then', 'RB'), ('the', 'DT'), ('syntactical', 'JJ'), ('errors', 'NNS'), ('get', 'VBP'), ('raised', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('parser', 'parser'), ('demands', 'demand'), ('for', 'for'), ('tokens', 'token'), ('from', 'from'), ('lexical', 'lexical'), ('analyzer', 'analyzer'), ('and', 'and'), ('if', 'if'), ('the', 'the'), ('tokens', 'token'), ('do', 'do'), ('not', 'not'), ('satisfy', 'satisfy'), ('the', 'the'), ('grammatical', 'grammatical'), ('rules', 'rule'), ('of', 'of'), ('programming', 'programming'), ('language', 'language'), ('then', 'then'), ('the', 'the'), ('syntactical', 'syntactical'), ('errors', 'error'), ('get', 'get'), ('raised', 'raise'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'parser'), 'det'), (('parser', 'demands'), 'nsubj'), (('demands', 'root'), 'root'), (('for', 'tokens'), 'case'), (('tokens', 'demands'), 'obl'), (('from', 'analyzer'), 'case'), (('lexical', 'analyzer'), 'amod'), (('analyzer', 'tokens'), 'nmod'), (('and', 'raised'), 'cc'), (('if', 'satisfy'), 'mark'), (('the', 'tokens'), 'det'), (('tokens', 'satisfy'), 'nsubj'), (('do', 'satisfy'), 'aux'), (('not', 'satisfy'), 'advmod'), (('satisfy', 'raised'), 'advcl'), (('the', 'rules'), 'det'), (('grammatical', 'rules'), 'amod'), (('rules', 'satisfy'), 'obj'), (('of', 'language'), 'case'), (('programming', 'language'), 'compound'), (('language', 'rules'), 'nmod'), (('then', 'raised'), 'advmod'), (('the', 'errors'), 'det'), (('syntactical', 'errors'), 'amod'), (('errors', 'raised'), 'nsubj:pass'), (('get', 'raised'), 'aux:pass'), (('raised', 'demands'), 'conj'), (('.', 'demands'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 9 ===========================
+
+ Example:  printf(“Hello World !!!”) 
+
+Tokens are: 
+>> ['Example', ':', 'printf', '(', '“', 'Hello', 'World', '!!!', '”', ')'] 
+
+ UPOS tags are: 
+>> [('Example', 'NOUN'), (':', 'PUNCT'), ('printf', 'PROPN'), ('(', 'PUNCT'), ('“', 'PUNCT'), ('Hello', 'INTJ'), ('World', 'PROPN'), ('!!!', 'PUNCT'), ('”', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Example', 'NN'), (':', ':'), ('printf', 'NNP'), ('(', '-LRB-'), ('“', '``'), ('Hello', 'UH'), ('World', 'NNP'), ('!!!', '.'), ('”', "''"), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Example', 'example'), (':', ':'), ('printf', 'printf'), ('(', '('), ('“', "''"), ('Hello', 'hello'), ('World', 'World'), ('!!!', '!!!'), ('”', "''"), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Example', 'root'), 'root'), ((':', 'Example'), 'punct'), (('printf', 'Example'), 'dep'), (('(', 'World'), 'punct'), (('“', 'World'), 'punct'), (('Hello', 'World'), 'discourse'), (('World', 'printf'), 'appos'), (('!!!', 'World'), 'punct'), (('”', 'World'), 'punct'), ((')', 'Example'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 10 ===========================
+
+ Error: Semicolon missing    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Semantic error Semantic error detected during semantic analysis phase. 
+
+Tokens are: 
+>> ['Error', ':', 'Semicolon', 'missing', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹#›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹#›', 'Semantic', 'error', 'Semantic', 'error', 'detected', 'during', 'semantic', 'analysis', 'phase', '.'] 
+
+ UPOS tags are: 
+>> [('Error', 'NOUN'), (':', 'PUNCT'), ('Semicolon', 'NOUN'), ('missing', 'VERB'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'ADJ'), ('Probability', 'NOUN'), ('‹#›', 'NOUN'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'NOUN'), ('Recovery', 'NOUN'), ('‹#›', 'NOUN'), ('Semantic', 'ADJ'), ('error', 'NOUN'), ('Semantic', 'ADJ'), ('error', 'NOUN'), ('detected', 'VERB'), ('during', 'ADP'), ('semantic', 'ADJ'), ('analysis', 'NOUN'), ('phase', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Error', 'NN'), (':', ':'), ('Semicolon', 'NN'), ('missing', 'VBG'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', 'NN'), ('3130006', 'CD'), ('(', '-LRB-'), ('PS', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('1', 'CD'), ('–', ':'), ('Basic', 'JJ'), ('Probability', 'NN'), ('‹#›', 'NN'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', 'NN'), ('2170701', 'CD'), ('(', '-LRB-'), ('CD', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('4', 'CD'), ('–', ':'), ('Error', 'NN'), ('Recovery', 'NN'), ('‹#›', 'NN'), ('Semantic', 'JJ'), ('error', 'NN'), ('Semantic', 'JJ'), ('error', 'NN'), ('detected', 'VBN'), ('during', 'IN'), ('semantic', 'JJ'), ('analysis', 'NN'), ('phase', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Error', 'error'), (':', ':'), ('Semicolon', 'semicolon'), ('missing', 'miss'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '-'), ('Basic', 'basic'), ('Probability', 'probability'), ('‹#›', '‹#›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '-'), ('Error', 'error'), ('Recovery', 'recovery'), ('‹#›', '‹#›'), ('Semantic', 'Semantic'), ('error', 'error'), ('Semantic', 'Semantic'), ('error', 'error'), ('detected', 'detect'), ('during', 'during'), ('semantic', 'semantic'), ('analysis', 'analysis'), ('phase', 'phase'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Error', 'root'), 'root'), ((':', 'Error'), 'punct'), (('Semicolon', 'Error'), 'appos'), (('missing', 'Semicolon'), 'acl'), (('Prof.', '#'), 'compound'), (('Jay', '#'), 'compound'), (('R', '#'), 'compound'), (('Dhamsaniya', '#'), 'compound'), (('#', 'missing'), 'obj'), (('3130006', '#'), 'nummod'), (('(', 'PS'), 'punct'), (('PS', 'Unit'), 'compound'), ((')', 'PS'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', '#'), 'appos'), (('1', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Basic', 'Probability'), 'amod'), (('Probability', 'Error'), 'parataxis'), (('‹#›', 'Probability'), 'appos'), (('Prof.', 'Probability'), 'appos'), (('Dixita', 'Kagathara'), 'compound'), (('B', 'Kagathara'), 'compound'), (('Kagathara', '#'), 'compound'), (('#', 'Probability'), 'appos'), (('2170701', '#'), 'nummod'), (('(', 'CD'), 'punct'), (('CD', '#'), 'appos'), ((')', 'CD'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', '#'), 'appos'), (('4', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Error', 'Recovery'), 'compound'), (('Recovery', 'Unit'), 'compound'), (('‹#›', 'error'), 'compound'), (('Semantic', 'error'), 'amod'), (('error', 'error'), 'compound'), (('Semantic', 'error'), 'amod'), (('error', 'Recovery'), 'appos'), (('detected', 'error'), 'acl'), (('during', 'phase'), 'case'), (('semantic', 'phase'), 'amod'), (('analysis', 'phase'), 'compound'), (('phase', 'detected'), 'obl'), (('.', 'Error'), 'punct')]
+
+ Named Entities are: 
+>> [('Semicolon', 'ORG'), ('#3130006', 'CARDINAL'), ('2170701', 'CARDINAL'), ('4', 'CARDINAL')]
+
+========================== Sentence 11 ===========================
+
+ Typical semantic phase errors are: Incompatible types of operands Undeclared variable Not matching of actual argument with formal argument Example: 	id1=id2+id3*60 (Note: id1, id2, id3 are real) (Directly we can not perform multiplication due to incompatible types of variables)     Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Error recovery strategies (Ad-Hoc & systematic methods) 
+
+Tokens are: 
+>> ['Typical', 'semantic', 'phase', 'errors', 'are', ':', 'Incompatible', 'types', 'of', 'operands', 'Undeclared', 'variable', 'Not', 'matching', 'of', 'actual', 'argument', 'with', 'formal', 'argument', 'Example', ':', 'id1=id2+id3*60', '(', 'Note', ':', 'id1', ',', 'id2', ',', 'id', '3', 'are', 'real', ')', '(', 'Directly', 'we', 'can', 'not', 'perform', 'multiplication', 'due', 'to', 'incompatible', 'types', 'of', 'variables', ')', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹#›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹#›', 'Error', 'recovery', 'strategies', '(', 'Ad', '-', 'Hoc', '&', 'systematic', 'methods', ')'] 
+
+ UPOS tags are: 
+>> [('Typical', 'ADJ'), ('semantic', 'ADJ'), ('phase', 'NOUN'), ('errors', 'NOUN'), ('are', 'AUX'), (':', 'PUNCT'), ('Incompatible', 'ADJ'), ('types', 'NOUN'), ('of', 'ADP'), ('operands', 'NOUN'), ('Undeclared', 'VERB'), ('variable', 'ADJ'), ('Not', 'ADV'), ('matching', 'NOUN'), ('of', 'ADP'), ('actual', 'ADJ'), ('argument', 'NOUN'), ('with', 'ADP'), ('formal', 'ADJ'), ('argument', 'NOUN'), ('Example', 'NOUN'), (':', 'PUNCT'), ('id1=id2+id3*60', 'NUM'), ('(', 'PUNCT'), ('Note', 'NOUN'), (':', 'PUNCT'), ('id1', 'NOUN'), (',', 'PUNCT'), ('id2', 'NOUN'), (',', 'PUNCT'), ('id', 'NOUN'), ('3', 'NUM'), ('are', 'AUX'), ('real', 'ADJ'), (')', 'PUNCT'), ('(', 'PUNCT'), ('Directly', 'ADV'), ('we', 'PRON'), ('can', 'AUX'), ('not', 'PART'), ('perform', 'VERB'), ('multiplication', 'NOUN'), ('due', 'ADP'), ('to', 'ADP'), ('incompatible', 'ADJ'), ('types', 'NOUN'), ('of', 'ADP'), ('variables', 'NOUN'), (')', 'PUNCT'), ('Prof.', 'NOUN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'ADJ'), ('Probability', 'NOUN'), ('‹#›', 'NOUN'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'NOUN'), ('Recovery', 'NOUN'), ('‹#›', 'NOUN'), ('Error', 'NOUN'), ('recovery', 'NOUN'), ('strategies', 'NOUN'), ('(', 'PUNCT'), ('Ad', 'NOUN'), ('-', 'PUNCT'), ('Hoc', 'NOUN'), ('&', 'CCONJ'), ('systematic', 'ADJ'), ('methods', 'NOUN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Typical', 'JJ'), ('semantic', 'JJ'), ('phase', 'NN'), ('errors', 'NNS'), ('are', 'VBP'), (':', ':'), ('Incompatible', 'JJ'), ('types', 'NNS'), ('of', 'IN'), ('operands', 'NNS'), ('Undeclared', 'VBN'), ('variable', 'JJ'), ('Not', 'RB'), ('matching', 'NN'), ('of', 'IN'), ('actual', 'JJ'), ('argument', 'NN'), ('with', 'IN'), ('formal', 'JJ'), ('argument', 'NN'), ('Example', 'NN'), (':', ':'), ('id1=id2+id3*60', 'CD'), ('(', '-LRB-'), ('Note', 'NN'), (':', ':'), ('id1', 'NN'), (',', ','), ('id2', 'NN'), (',', ','), ('id', 'NN'), ('3', 'CD'), ('are', 'VBP'), ('real', 'JJ'), (')', '-RRB-'), ('(', '-LRB-'), ('Directly', 'RB'), ('we', 'PRP'), ('can', 'MD'), ('not', 'RB'), ('perform', 'VB'), ('multiplication', 'NN'), ('due', 'IN'), ('to', 'IN'), ('incompatible', 'JJ'), ('types', 'NNS'), ('of', 'IN'), ('variables', 'NNS'), (')', '-RRB-'), ('Prof.', 'NN'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', 'NN'), ('3130006', 'CD'), ('(', '-LRB-'), ('PS', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('1', 'CD'), ('–', ','), ('Basic', 'JJ'), ('Probability', 'NN'), ('‹#›', 'NN'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', 'NN'), ('2170701', 'CD'), ('(', '-LRB-'), ('CD', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('4', 'CD'), ('–', ','), ('Error', 'NN'), ('Recovery', 'NN'), ('‹#›', 'NN'), ('Error', 'NN'), ('recovery', 'NN'), ('strategies', 'NNS'), ('(', '-LRB-'), ('Ad', 'NN'), ('-', ','), ('Hoc', 'NN'), ('&', 'CC'), ('systematic', 'JJ'), ('methods', 'NNS'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Typical', 'Typical'), ('semantic', 'semantic'), ('phase', 'phase'), ('errors', 'error'), ('are', 'be'), (':', ':'), ('Incompatible', 'incompatible'), ('types', 'type'), ('of', 'of'), ('operands', 'operand'), ('Undeclared', 'undeclare'), ('variable', 'variable'), ('Not', 'not'), ('matching', 'matching'), ('of', 'of'), ('actual', 'actual'), ('argument', 'argument'), ('with', 'with'), ('formal', 'formal'), ('argument', 'argument'), ('Example', 'example'), (':', ':'), ('id1=id2+id3*60', 'id1=id2+id3*60'), ('(', '('), ('Note', 'note'), (':', ':'), ('id1', 'id1'), (',', ','), ('id2', 'id2'), (',', ','), ('id', 'id'), ('3', '3'), ('are', 'be'), ('real', 'real'), (')', ')'), ('(', '('), ('Directly', 'directly'), ('we', 'we'), ('can', 'can'), ('not', 'not'), ('perform', 'perform'), ('multiplication', 'multiplication'), ('due', 'due'), ('to', 'to'), ('incompatible', 'incompatible'), ('types', 'type'), ('of', 'of'), ('variables', 'variable'), (')', ')'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '-'), ('Basic', 'basic'), ('Probability', 'probability'), ('‹#›', '‹#›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '-'), ('Error', 'error'), ('Recovery', 'recovery'), ('‹#›', '‹#›'), ('Error', 'error'), ('recovery', 'recovery'), ('strategies', 'strategy'), ('(', '('), ('Ad', 'ad'), ('-', '-'), ('Hoc', 'hoc'), ('&', '&'), ('systematic', 'systematic'), ('methods', 'method'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Typical', 'errors'), 'amod'), (('semantic', 'phase'), 'amod'), (('phase', 'errors'), 'compound'), (('errors', 'are'), 'nsubj'), (('are', 'root'), 'root'), ((':', 'are'), 'punct'), (('Incompatible', 'types'), 'amod'), (('types', 'are'), 'nsubj'), (('of', 'operands'), 'case'), (('operands', 'types'), 'nmod'), (('Undeclared', 'operands'), 'acl'), (('variable', 'matching'), 'amod'), (('Not', 'matching'), 'advmod'), (('matching', 'Undeclared'), 'obj'), (('of', 'argument'), 'case'), (('actual', 'argument'), 'amod'), (('argument', 'matching'), 'nmod'), (('with', 'Example'), 'case'), (('formal', 'Example'), 'amod'), (('argument', 'Example'), 'compound'), (('Example', 'argument'), 'nmod'), ((':', 'Example'), 'punct'), (('id1=id2+id3*60', 'Example'), 'appos'), (('(', 'Note'), 'punct'), (('Note', 'id1=id2+id3*60'), 'dep'), ((':', 'Note'), 'punct'), (('id1', 'real'), 'nsubj'), ((',', 'id2'), 'punct'), (('id2', 'id1'), 'conj'), ((',', 'id'), 'punct'), (('id', 'id1'), 'conj'), (('3', 'id'), 'nummod'), (('are', 'real'), 'cop'), (('real', 'Note'), 'parataxis'), ((')', 'Note'), 'punct'), (('(', 'perform'), 'punct'), (('Directly', 'perform'), 'advmod'), (('we', 'perform'), 'nsubj'), (('can', 'perform'), 'aux'), (('not', 'perform'), 'advmod'), (('perform', 'Note'), 'parataxis'), (('multiplication', 'perform'), 'obj'), (('due', 'types'), 'case'), (('to', 'due'), 'fixed'), (('incompatible', 'types'), 'amod'), (('types', 'perform'), 'obl'), (('of', 'variables'), 'case'), (('variables', 'types'), 'nmod'), ((')', 'perform'), 'punct'), (('Prof.', '#'), 'compound'), (('Jay', '#'), 'compound'), (('R', '#'), 'compound'), (('Dhamsaniya', '#'), 'compound'), (('#', 'types'), 'appos'), (('3130006', '#'), 'nummod'), (('(', 'PS'), 'punct'), (('PS', '#'), 'appos'), ((')', 'PS'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', '#'), 'appos'), (('1', 'Unit'), 'nummod'), (('–', 'Probability'), 'punct'), (('Basic', 'Probability'), 'amod'), (('Probability', 'Unit'), 'compound'), (('‹#›', 'Probability'), 'compound'), (('Prof.', 'Probability'), 'compound'), (('Dixita', 'Kagathara'), 'compound'), (('B', 'Kagathara'), 'compound'), (('Kagathara', '#'), 'compound'), (('#', 'Prof.'), 'appos'), (('2170701', '#'), 'nummod'), (('(', 'CD'), 'punct'), (('CD', '#'), 'appos'), ((')', 'CD'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', '#'), 'appos'), (('4', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Error', 'Recovery'), 'compound'), (('Recovery', 'strategies'), 'compound'), (('‹#›', 'strategies'), 'compound'), (('Error', 'strategies'), 'compound'), (('recovery', 'strategies'), 'compound'), (('strategies', 'Unit'), 'appos'), (('(', 'methods'), 'punct'), (('Ad', 'strategies'), 'appos'), (('-', 'Ad'), 'punct'), (('Hoc', 'methods'), 'compound'), (('&', 'systematic'), 'cc'), (('systematic', 'Hoc'), 'conj'), (('methods', 'strategies'), 'appos'), ((')', 'Ad'), 'punct')]
+
+ Named Entities are: 
+>> [('3', 'CARDINAL'), ('#3130006', 'CARDINAL'), ('1', 'CARDINAL'), ('#2170701', 'CARDINAL'), ('4', 'CARDINAL')]
+
+========================== Sentence 12 ===========================
+
+ Error recovery strategies (Ad-Hoc & systematic methods) 
+
+Tokens are: 
+>> ['Error', 'recovery', 'strategies', '(', 'Ad', '-', 'Hoc', '&', 'systematic', 'methods', ')'] 
+
+ UPOS tags are: 
+>> [('Error', 'NOUN'), ('recovery', 'NOUN'), ('strategies', 'NOUN'), ('(', 'PUNCT'), ('Ad', 'NOUN'), ('-', 'PUNCT'), ('Hoc', 'ADJ'), ('&', 'CCONJ'), ('systematic', 'ADJ'), ('methods', 'NOUN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Error', 'NN'), ('recovery', 'NN'), ('strategies', 'NNS'), ('(', '-LRB-'), ('Ad', 'NN'), ('-', 'HYPH'), ('Hoc', 'JJ'), ('&', 'CC'), ('systematic', 'JJ'), ('methods', 'NNS'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Error', 'error'), ('recovery', 'recovery'), ('strategies', 'strategy'), ('(', '('), ('Ad', 'ad'), ('-', '-'), ('Hoc', 'hoc'), ('&', '&'), ('systematic', 'systematic'), ('methods', 'method'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Error', 'recovery'), 'compound'), (('recovery', 'strategies'), 'compound'), (('strategies', 'root'), 'root'), (('(', 'methods'), 'punct'), (('Ad', 'Hoc'), 'compound'), (('-', 'Hoc'), 'punct'), (('Hoc', 'methods'), 'amod'), (('&', 'systematic'), 'cc'), (('systematic', 'Hoc'), 'conj'), (('methods', 'strategies'), 'appos'), ((')', 'methods'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 13 ===========================
+
+ There are mainly four error recovery strategies:  Panic mode  Phrase level recovery  Error production  Global generation     Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Panic mode 
+
+Tokens are: 
+>> ['There', 'are', 'mainly', 'four', 'error', 'recovery', 'strategies', ':', 'Panic', 'mode', 'Phrase', 'level', 'recovery', 'Error', 'production', 'Global', 'generation', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹#›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹#›', 'Panic', 'mode'] 
+
+ UPOS tags are: 
+>> [('There', 'PRON'), ('are', 'VERB'), ('mainly', 'ADV'), ('four', 'NUM'), ('error', 'NOUN'), ('recovery', 'NOUN'), ('strategies', 'NOUN'), (':', 'PUNCT'), ('Panic', 'NOUN'), ('mode', 'NOUN'), ('Phrase', 'NOUN'), ('level', 'NOUN'), ('recovery', 'NOUN'), ('Error', 'NOUN'), ('production', 'NOUN'), ('Global', 'ADJ'), ('generation', 'NOUN'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'ADJ'), ('Probability', 'NOUN'), ('‹#›', 'NOUN'), ('Prof.', 'NOUN'), ('Dixita', 'PROPN'), ('B', 'NOUN'), ('Kagathara', 'PROPN'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'NOUN'), ('Recovery', 'NOUN'), ('‹#›', 'NOUN'), ('Panic', 'NOUN'), ('mode', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('There', 'EX'), ('are', 'VBP'), ('mainly', 'RB'), ('four', 'CD'), ('error', 'NN'), ('recovery', 'NN'), ('strategies', 'NNS'), (':', ':'), ('Panic', 'NN'), ('mode', 'NN'), ('Phrase', 'NN'), ('level', 'NN'), ('recovery', 'NN'), ('Error', 'NN'), ('production', 'NN'), ('Global', 'JJ'), ('generation', 'NN'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', 'NN'), ('3130006', 'CD'), ('(', '-LRB-'), ('PS', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('1', 'CD'), ('–', ','), ('Basic', 'JJ'), ('Probability', 'NN'), ('‹#›', 'NN'), ('Prof.', 'NN'), ('Dixita', 'NNP'), ('B', 'NN'), ('Kagathara', 'NNP'), ('#', 'NN'), ('2170701', 'CD'), ('(', '-LRB-'), ('CD', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('4', 'CD'), ('–', ':'), ('Error', 'NN'), ('Recovery', 'NN'), ('‹#›', 'NN'), ('Panic', 'NN'), ('mode', 'NN')] 
+
+ Lemmas are: 
+>> [('There', 'there'), ('are', 'be'), ('mainly', 'mainly'), ('four', 'four'), ('error', 'error'), ('recovery', 'recovery'), ('strategies', 'strategy'), (':', ':'), ('Panic', 'panic'), ('mode', 'mode'), ('Phrase', 'phrase'), ('level', 'level'), ('recovery', 'recovery'), ('Error', 'error'), ('production', 'production'), ('Global', 'global'), ('generation', 'generation'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '-'), ('Basic', 'basic'), ('Probability', 'probability'), ('‹#›', '‹#›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'b'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '-'), ('Error', 'error'), ('Recovery', 'recovery'), ('‹#›', '‹#›'), ('Panic', 'panic'), ('mode', 'mode')] 
+
+ Dependency tags are: 
+>> [(('There', 'are'), 'expl'), (('are', 'root'), 'root'), (('mainly', 'are'), 'advmod'), (('four', 'strategies'), 'nummod'), (('error', 'recovery'), 'compound'), (('recovery', 'strategies'), 'compound'), (('strategies', 'are'), 'nsubj'), ((':', 'strategies'), 'punct'), (('Panic', 'mode'), 'compound'), (('mode', 'strategies'), 'appos'), (('Phrase', 'level'), 'compound'), (('level', 'mode'), 'compound'), (('recovery', 'generation'), 'compound'), (('Error', 'generation'), 'compound'), (('production', 'generation'), 'compound'), (('Global', 'generation'), 'amod'), (('generation', 'strategies'), 'appos'), (('Prof.', 'generation'), 'appos'), (('Jay', 'generation'), 'compound'), (('R', 'Prof.'), 'compound'), (('Dhamsaniya', '#'), 'compound'), (('#', 'Prof.'), 'appos'), (('3130006', '#'), 'nummod'), (('(', 'Unit'), 'punct'), (('PS', 'Unit'), 'appos'), ((')', 'PS'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'Prof.'), 'appos'), (('1', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Basic', 'Probability'), 'amod'), (('Probability', 'Unit'), 'appos'), (('‹#›', 'Probability'), 'appos'), (('Prof.', 'Probability'), 'compound'), (('Dixita', 'B'), 'compound'), (('B', '#'), 'compound'), (('Kagathara', '#'), 'compound'), (('#', 'Probability'), 'appos'), (('2170701', '#'), 'nummod'), (('(', 'CD'), 'punct'), (('CD', '#'), 'appos'), ((')', 'CD'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', '#'), 'appos'), (('4', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Error', 'Recovery'), 'compound'), (('Recovery', 'mode'), 'compound'), (('‹#›', 'mode'), 'compound'), (('Panic', 'mode'), 'compound'), (('mode', 'Unit'), 'appos')]
+
+ Named Entities are: 
+>> [('four', 'CARDINAL'), ('#3130006', 'CARDINAL'), ('1', 'CARDINAL'), ('2170701', 'CARDINAL'), ('4', 'CARDINAL')]
+
+========================== Sentence 14 ===========================
+
+ In this method on discovering error, the parser discards input symbol one at a time. 
+
+Tokens are: 
+>> ['In', 'this', 'method', 'on', 'discovering', 'error', ',', 'the', 'parser', 'discards', 'input', 'symbol', 'one', 'at', 'a', 'time', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('this', 'DET'), ('method', 'NOUN'), ('on', 'SCONJ'), ('discovering', 'VERB'), ('error', 'NOUN'), (',', 'PUNCT'), ('the', 'DET'), ('parser', 'NOUN'), ('discards', 'VERB'), ('input', 'NOUN'), ('symbol', 'NOUN'), ('one', 'NUM'), ('at', 'ADP'), ('a', 'DET'), ('time', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('this', 'DT'), ('method', 'NN'), ('on', 'IN'), ('discovering', 'VBG'), ('error', 'NN'), (',', ','), ('the', 'DT'), ('parser', 'NN'), ('discards', 'VBZ'), ('input', 'NN'), ('symbol', 'NN'), ('one', 'CD'), ('at', 'IN'), ('a', 'DT'), ('time', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('this', 'this'), ('method', 'method'), ('on', 'on'), ('discovering', 'discover'), ('error', 'error'), (',', ','), ('the', 'the'), ('parser', 'parser'), ('discards', 'discard'), ('input', 'input'), ('symbol', 'symbol'), ('one', 'one'), ('at', 'at'), ('a', 'a'), ('time', 'time'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'method'), 'case'), (('this', 'method'), 'det'), (('method', 'discards'), 'obl'), (('on', 'discovering'), 'mark'), (('discovering', 'method'), 'acl'), (('error', 'discovering'), 'obj'), ((',', 'discards'), 'punct'), (('the', 'parser'), 'det'), (('parser', 'discards'), 'nsubj'), (('discards', 'root'), 'root'), (('input', 'symbol'), 'compound'), (('symbol', 'discards'), 'obj'), (('one', 'symbol'), 'nummod'), (('at', 'time'), 'case'), (('a', 'time'), 'det'), (('time', 'discards'), 'obl'), (('.', 'discards'), 'punct')]
+
+ Named Entities are: 
+>> [('one', 'CARDINAL')]
+
+========================== Sentence 15 ===========================
+
+ This process is continued until one of a designated set of synchronizing tokens is found. 
+
+Tokens are: 
+>> ['This', 'process', 'is', 'continued', 'until', 'one', 'of', 'a', 'designated', 'set', 'of', 'synchronizing', 'tokens', 'is', 'found', '.'] 
+
+ UPOS tags are: 
+>> [('This', 'DET'), ('process', 'NOUN'), ('is', 'AUX'), ('continued', 'VERB'), ('until', 'ADP'), ('one', 'NUM'), ('of', 'ADP'), ('a', 'DET'), ('designated', 'VERB'), ('set', 'NOUN'), ('of', 'SCONJ'), ('synchronizing', 'VERB'), ('tokens', 'NOUN'), ('is', 'AUX'), ('found', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('This', 'DT'), ('process', 'NN'), ('is', 'VBZ'), ('continued', 'VBN'), ('until', 'IN'), ('one', 'CD'), ('of', 'IN'), ('a', 'DT'), ('designated', 'VBN'), ('set', 'NN'), ('of', 'IN'), ('synchronizing', 'VBG'), ('tokens', 'NNS'), ('is', 'VBZ'), ('found', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('This', 'this'), ('process', 'process'), ('is', 'be'), ('continued', 'continue'), ('until', 'until'), ('one', 'one'), ('of', 'of'), ('a', 'a'), ('designated', 'designate'), ('set', 'set'), ('of', 'of'), ('synchronizing', 'synchronize'), ('tokens', 'token'), ('is', 'be'), ('found', 'find'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('This', 'process'), 'det'), (('process', 'continued'), 'nsubj:pass'), (('is', 'continued'), 'aux:pass'), (('continued', 'root'), 'root'), (('until', 'one'), 'case'), (('one', 'continued'), 'obl'), (('of', 'set'), 'case'), (('a', 'set'), 'det'), (('designated', 'set'), 'amod'), (('set', 'one'), 'nmod'), (('of', 'synchronizing'), 'mark'), (('synchronizing', 'set'), 'acl'), (('tokens', 'synchronizing'), 'obj'), (('is', 'found'), 'aux:pass'), (('found', 'set'), 'acl'), (('.', 'continued'), 'punct')]
+
+ Named Entities are: 
+>> [('one', 'CARDINAL')]
+
+========================== Sentence 16 ===========================
+
+ Synchronizing tokens are delimiters such as semicolon or end. 
+
+Tokens are: 
+>> ['Synchronizing', 'tokens', 'are', 'delimiters', 'such', 'as', 'semicolon', 'or', 'end', '.'] 
+
+ UPOS tags are: 
+>> [('Synchronizing', 'VERB'), ('tokens', 'NOUN'), ('are', 'AUX'), ('delimiters', 'NOUN'), ('such', 'ADJ'), ('as', 'ADP'), ('semicolon', 'NOUN'), ('or', 'CCONJ'), ('end', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Synchronizing', 'VBG'), ('tokens', 'NNS'), ('are', 'VBP'), ('delimiters', 'NNS'), ('such', 'JJ'), ('as', 'IN'), ('semicolon', 'NN'), ('or', 'CC'), ('end', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Synchronizing', 'synchronize'), ('tokens', 'token'), ('are', 'be'), ('delimiters', 'delimiter'), ('such', 'such'), ('as', 'as'), ('semicolon', 'semicolon'), ('or', 'or'), ('end', 'end'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Synchronizing', 'delimiters'), 'csubj'), (('tokens', 'Synchronizing'), 'obj'), (('are', 'delimiters'), 'cop'), (('delimiters', 'root'), 'root'), (('such', 'semicolon'), 'case'), (('as', 'such'), 'fixed'), (('semicolon', 'delimiters'), 'nmod'), (('or', 'end'), 'cc'), (('end', 'semicolon'), 'conj'), (('.', 'delimiters'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 17 ===========================
+
+ These tokens indicate an end of the statement. 
+
+Tokens are: 
+>> ['These', 'tokens', 'indicate', 'an', 'end', 'of', 'the', 'statement', '.'] 
+
+ UPOS tags are: 
+>> [('These', 'DET'), ('tokens', 'NOUN'), ('indicate', 'VERB'), ('an', 'DET'), ('end', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('statement', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('These', 'DT'), ('tokens', 'NNS'), ('indicate', 'VBP'), ('an', 'DT'), ('end', 'NN'), ('of', 'IN'), ('the', 'DT'), ('statement', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('These', 'this'), ('tokens', 'token'), ('indicate', 'indicate'), ('an', 'a'), ('end', 'end'), ('of', 'of'), ('the', 'the'), ('statement', 'statement'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('These', 'tokens'), 'det'), (('tokens', 'indicate'), 'nsubj'), (('indicate', 'root'), 'root'), (('an', 'end'), 'det'), (('end', 'indicate'), 'obj'), (('of', 'statement'), 'case'), (('the', 'statement'), 'det'), (('statement', 'end'), 'nmod'), (('.', 'indicate'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 18 ===========================
+
+ If there is less number of errors in the same statement then this strategy is best choice.  fi ( )  { } Scan entire line otherwise scanner will return fi as valid identifier    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Phrase level recovery 
+
+Tokens are: 
+>> ['If', 'there', 'is', 'less', 'number', 'of', 'errors', 'in', 'the', 'same', 'statement', 'then', 'this', 'strategy', 'is', 'best', 'choice', '.', 'fi', '(', ')', '{', '}', 'Scan', 'entire', 'line', 'otherwise', 'scanner', 'will', 'return', 'fi', 'as', 'valid', 'identifier', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹#›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹#›', 'Phrase', 'level', 'recovery'] 
+
+ UPOS tags are: 
+>> [('If', 'SCONJ'), ('there', 'PRON'), ('is', 'VERB'), ('less', 'ADJ'), ('number', 'NOUN'), ('of', 'ADP'), ('errors', 'NOUN'), ('in', 'ADP'), ('the', 'DET'), ('same', 'ADJ'), ('statement', 'NOUN'), ('then', 'ADV'), ('this', 'DET'), ('strategy', 'NOUN'), ('is', 'AUX'), ('best', 'ADJ'), ('choice', 'NOUN'), ('.', 'PUNCT'), ('fi', 'NOUN'), ('(', 'PUNCT'), (')', 'PUNCT'), ('{', 'PUNCT'), ('}', 'PUNCT'), ('Scan', 'NOUN'), ('entire', 'ADJ'), ('line', 'NOUN'), ('otherwise', 'ADV'), ('scanner', 'NOUN'), ('will', 'AUX'), ('return', 'VERB'), ('fi', 'NOUN'), ('as', 'ADP'), ('valid', 'ADJ'), ('identifier', 'NOUN'), ('Prof.', 'NOUN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'PUNCT'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'ADJ'), ('Probability', 'NOUN'), ('‹#›', 'NOUN'), ('Prof.', 'NOUN'), ('Dixita', 'PROPN'), ('B', 'NOUN'), ('Kagathara', 'PROPN'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'NOUN'), ('Recovery', 'NOUN'), ('‹#›', 'NOUN'), ('Phrase', 'NOUN'), ('level', 'NOUN'), ('recovery', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('If', 'IN'), ('there', 'EX'), ('is', 'VBZ'), ('less', 'JJR'), ('number', 'NN'), ('of', 'IN'), ('errors', 'NNS'), ('in', 'IN'), ('the', 'DT'), ('same', 'JJ'), ('statement', 'NN'), ('then', 'RB'), ('this', 'DT'), ('strategy', 'NN'), ('is', 'VBZ'), ('best', 'JJS'), ('choice', 'NN'), ('.', '.'), ('fi', 'NN'), ('(', '-LRB-'), (')', '-RRB-'), ('{', 'NFP'), ('}', 'NFP'), ('Scan', 'NN'), ('entire', 'JJ'), ('line', 'NN'), ('otherwise', 'RB'), ('scanner', 'NN'), ('will', 'MD'), ('return', 'VB'), ('fi', 'NN'), ('as', 'IN'), ('valid', 'JJ'), ('identifier', 'NN'), ('Prof.', 'NN'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', 'NN'), ('3130006', 'CD'), ('(', '-LRB-'), ('PS', 'NN'), (')', '-RRB-'), ('\uf077', ','), ('Unit', 'NN'), ('1', 'CD'), ('–', ','), ('Basic', 'JJ'), ('Probability', 'NN'), ('‹#›', 'NN'), ('Prof.', 'NN'), ('Dixita', 'NNP'), ('B', 'NN'), ('Kagathara', 'NNP'), ('#', 'NN'), ('2170701', 'CD'), ('(', '-LRB-'), ('CD', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('4', 'CD'), ('–', ','), ('Error', 'NN'), ('Recovery', 'NN'), ('‹#›', 'NN'), ('Phrase', 'NN'), ('level', 'NN'), ('recovery', 'NN')] 
+
+ Lemmas are: 
+>> [('If', 'if'), ('there', 'there'), ('is', 'be'), ('less', 'less'), ('number', 'number'), ('of', 'of'), ('errors', 'error'), ('in', 'in'), ('the', 'the'), ('same', 'same'), ('statement', 'statement'), ('then', 'then'), ('this', 'this'), ('strategy', 'strategy'), ('is', 'be'), ('best', 'good'), ('choice', 'choice'), ('.', '.'), ('fi', 'fi'), ('(', '('), (')', ')'), ('{', '{'), ('}', '}'), ('Scan', 'scan'), ('entire', 'entire'), ('line', 'line'), ('otherwise', 'otherwise'), ('scanner', 'scanner'), ('will', 'will'), ('return', 'return'), ('fi', 'fi'), ('as', 'as'), ('valid', 'valid'), ('identifier', 'identifier'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', "''"), ('Unit', 'unit'), ('1', '1'), ('–', '-'), ('Basic', 'basic'), ('Probability', 'probability'), ('‹#›', '‹#›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'b'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '-'), ('Error', 'error'), ('Recovery', 'recovery'), ('‹#›', '‹#›'), ('Phrase', 'phrase'), ('level', 'level'), ('recovery', 'recovery')] 
+
+ Dependency tags are: 
+>> [(('If', 'is'), 'mark'), (('there', 'is'), 'expl'), (('is', 'choice'), 'advcl'), (('less', 'number'), 'amod'), (('number', 'is'), 'nsubj'), (('of', 'errors'), 'case'), (('errors', 'number'), 'nmod'), (('in', 'statement'), 'case'), (('the', 'statement'), 'det'), (('same', 'statement'), 'amod'), (('statement', 'errors'), 'nmod'), (('then', 'choice'), 'advmod'), (('this', 'strategy'), 'det'), (('strategy', 'choice'), 'nsubj'), (('is', 'choice'), 'cop'), (('best', 'choice'), 'amod'), (('choice', 'root'), 'root'), (('.', 'choice'), 'punct'), (('fi', 'choice'), 'appos'), (('(', 'choice'), 'punct'), ((')', 'fi'), 'punct'), (('{', 'choice'), 'punct'), (('}', 'return'), 'punct'), (('Scan', 'line'), 'compound'), (('entire', 'line'), 'amod'), (('line', 'return'), 'nsubj'), (('otherwise', 'return'), 'advmod'), (('scanner', 'return'), 'nsubj'), (('will', 'return'), 'aux'), (('return', 'choice'), 'parataxis'), (('fi', 'return'), 'obj'), (('as', 'identifier'), 'case'), (('valid', 'identifier'), 'amod'), (('identifier', 'return'), 'obl'), (('Prof.', 'identifier'), 'appos'), (('Jay', 'identifier'), 'appos'), (('R', '#'), 'compound'), (('Dhamsaniya', '#'), 'compound'), (('#', 'identifier'), 'appos'), (('3130006', '#'), 'nummod'), (('(', 'PS'), 'punct'), (('PS', '#'), 'appos'), ((')', 'PS'), 'punct'), (('\uf077', 'PS'), 'punct'), (('Unit', '#'), 'appos'), (('1', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Basic', 'Probability'), 'amod'), (('Probability', 'Unit'), 'compound'), (('‹#›', 'Probability'), 'appos'), (('Prof.', 'Probability'), 'compound'), (('Dixita', 'Kagathara'), 'compound'), (('B', 'Kagathara'), 'compound'), (('Kagathara', '#'), 'compound'), (('#', 'Prof.'), 'appos'), (('2170701', '#'), 'nummod'), (('(', 'CD'), 'punct'), (('CD', '#'), 'appos'), ((')', 'CD'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', '#'), 'appos'), (('4', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Error', 'Recovery'), 'compound'), (('Recovery', 'recovery'), 'compound'), (('‹#›', 'recovery'), 'compound'), (('Phrase', 'level'), 'compound'), (('level', 'recovery'), 'compound'), (('recovery', 'Unit'), 'appos')]
+
+ Named Entities are: 
+>> [('4', 'CARDINAL')]
+
+========================== Sentence 19 ===========================
+
+ In this method, on discovering an error parser performs local correction on remaining input. 
+
+Tokens are: 
+>> ['In', 'this', 'method', ',', 'on', 'discovering', 'an', 'error', 'parser', 'performs', 'local', 'correction', 'on', 'remaining', 'input', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('this', 'DET'), ('method', 'NOUN'), (',', 'PUNCT'), ('on', 'SCONJ'), ('discovering', 'VERB'), ('an', 'DET'), ('error', 'NOUN'), ('parser', 'NOUN'), ('performs', 'VERB'), ('local', 'ADJ'), ('correction', 'NOUN'), ('on', 'ADP'), ('remaining', 'VERB'), ('input', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('this', 'DT'), ('method', 'NN'), (',', ','), ('on', 'IN'), ('discovering', 'VBG'), ('an', 'DT'), ('error', 'NN'), ('parser', 'NN'), ('performs', 'VBZ'), ('local', 'JJ'), ('correction', 'NN'), ('on', 'IN'), ('remaining', 'VBG'), ('input', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('this', 'this'), ('method', 'method'), (',', ','), ('on', 'on'), ('discovering', 'discover'), ('an', 'a'), ('error', 'error'), ('parser', 'parser'), ('performs', 'perform'), ('local', 'local'), ('correction', 'correction'), ('on', 'on'), ('remaining', 'remain'), ('input', 'input'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'method'), 'case'), (('this', 'method'), 'det'), (('method', 'performs'), 'obl'), ((',', 'performs'), 'punct'), (('on', 'discovering'), 'mark'), (('discovering', 'performs'), 'advcl'), (('an', 'parser'), 'det'), (('error', 'parser'), 'compound'), (('parser', 'discovering'), 'obj'), (('performs', 'root'), 'root'), (('local', 'correction'), 'amod'), (('correction', 'performs'), 'obj'), (('on', 'input'), 'case'), (('remaining', 'input'), 'amod'), (('input', 'performs'), 'obl'), (('.', 'performs'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 20 ===========================
+
+ The local correction can be replacing comma by semicolon, deletion of semicolons or inserting missing semicolon. 
+
+Tokens are: 
+>> ['The', 'local', 'correction', 'can', 'be', 'replacing', 'comma', 'by', 'semicolon', ',', 'deletion', 'of', 'semicolons', 'or', 'inserting', 'missing', 'semicolon', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('local', 'ADJ'), ('correction', 'NOUN'), ('can', 'AUX'), ('be', 'AUX'), ('replacing', 'VERB'), ('comma', 'NOUN'), ('by', 'ADP'), ('semicolon', 'NOUN'), (',', 'PUNCT'), ('deletion', 'NOUN'), ('of', 'ADP'), ('semicolons', 'NOUN'), ('or', 'CCONJ'), ('inserting', 'VERB'), ('missing', 'VERB'), ('semicolon', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('local', 'JJ'), ('correction', 'NN'), ('can', 'MD'), ('be', 'VB'), ('replacing', 'VBG'), ('comma', 'NN'), ('by', 'IN'), ('semicolon', 'NN'), (',', ','), ('deletion', 'NN'), ('of', 'IN'), ('semicolons', 'NNS'), ('or', 'CC'), ('inserting', 'VBG'), ('missing', 'VBG'), ('semicolon', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('local', 'local'), ('correction', 'correction'), ('can', 'can'), ('be', 'be'), ('replacing', 'replace'), ('comma', 'comma'), ('by', 'by'), ('semicolon', 'semicolon'), (',', ','), ('deletion', 'deletion'), ('of', 'of'), ('semicolons', 'semicolon'), ('or', 'or'), ('inserting', 'insert'), ('missing', 'miss'), ('semicolon', 'semicolon'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'correction'), 'det'), (('local', 'correction'), 'amod'), (('correction', 'replacing'), 'nsubj'), (('can', 'replacing'), 'aux'), (('be', 'replacing'), 'aux'), (('replacing', 'root'), 'root'), (('comma', 'replacing'), 'obj'), (('by', 'semicolon'), 'case'), (('semicolon', 'replacing'), 'obl'), ((',', 'deletion'), 'punct'), (('deletion', 'semicolon'), 'conj'), (('of', 'semicolons'), 'case'), (('semicolons', 'deletion'), 'nmod'), (('or', 'inserting'), 'cc'), (('inserting', 'replacing'), 'conj'), (('missing', 'semicolon'), 'amod'), (('semicolon', 'inserting'), 'obj'), (('.', 'replacing'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 21 ===========================
+
+ This type of local correction is decided by compiler designer. 
+
+Tokens are: 
+>> ['This', 'type', 'of', 'local', 'correction', 'is', 'decided', 'by', 'compiler', 'designer', '.'] 
+
+ UPOS tags are: 
+>> [('This', 'DET'), ('type', 'NOUN'), ('of', 'ADP'), ('local', 'ADJ'), ('correction', 'NOUN'), ('is', 'AUX'), ('decided', 'VERB'), ('by', 'ADP'), ('compiler', 'NOUN'), ('designer', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('This', 'DT'), ('type', 'NN'), ('of', 'IN'), ('local', 'JJ'), ('correction', 'NN'), ('is', 'VBZ'), ('decided', 'VBN'), ('by', 'IN'), ('compiler', 'NN'), ('designer', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('This', 'this'), ('type', 'type'), ('of', 'of'), ('local', 'local'), ('correction', 'correction'), ('is', 'be'), ('decided', 'decide'), ('by', 'by'), ('compiler', 'compiler'), ('designer', 'designer'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('This', 'type'), 'det'), (('type', 'decided'), 'nsubj:pass'), (('of', 'correction'), 'case'), (('local', 'correction'), 'amod'), (('correction', 'type'), 'nmod'), (('is', 'decided'), 'aux:pass'), (('decided', 'root'), 'root'), (('by', 'designer'), 'case'), (('compiler', 'designer'), 'compound'), (('designer', 'decided'), 'obl'), (('.', 'decided'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 22 ===========================
+
+ This method is used in many error-repairing compilers. 
+
+Tokens are: 
+>> ['This', 'method', 'is', 'used', 'in', 'many', 'error-repairing', 'compilers', '.'] 
+
+ UPOS tags are: 
+>> [('This', 'DET'), ('method', 'NOUN'), ('is', 'AUX'), ('used', 'VERB'), ('in', 'ADP'), ('many', 'ADJ'), ('error-repairing', 'ADJ'), ('compilers', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('This', 'DT'), ('method', 'NN'), ('is', 'VBZ'), ('used', 'VBN'), ('in', 'IN'), ('many', 'JJ'), ('error-repairing', 'JJ'), ('compilers', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('This', 'this'), ('method', 'method'), ('is', 'be'), ('used', 'use'), ('in', 'in'), ('many', 'many'), ('error-repairing', 'error-repairing'), ('compilers', 'compiler'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('This', 'method'), 'det'), (('method', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'root'), 'root'), (('in', 'compilers'), 'case'), (('many', 'compilers'), 'amod'), (('error-repairing', 'compilers'), 'amod'), (('compilers', 'used'), 'obl'), (('.', 'used'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 23 ===========================
+
+ Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Error production 
+
+Tokens are: 
+>> ['Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹#›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹#›', 'Error', 'production'] 
+
+ UPOS tags are: 
+>> [('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'ADJ'), ('Probability', 'NOUN'), ('‹#›', 'NOUN'), ('Prof.', 'NOUN'), ('Dixita', 'PROPN'), ('B', 'NOUN'), ('Kagathara', 'PROPN'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'NOUN'), ('Recovery', 'NOUN'), ('‹#›', 'NOUN'), ('Error', 'NOUN'), ('production', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', 'NN'), ('3130006', 'CD'), ('(', '-LRB-'), ('PS', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('1', 'CD'), ('–', ','), ('Basic', 'JJ'), ('Probability', 'NN'), ('‹#›', 'NN'), ('Prof.', 'NN'), ('Dixita', 'NNP'), ('B', 'NN'), ('Kagathara', 'NNP'), ('#', 'NN'), ('2170701', 'CD'), ('(', '-LRB-'), ('CD', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('4', 'CD'), ('–', ','), ('Error', 'NN'), ('Recovery', 'NN'), ('‹#›', 'NN'), ('Error', 'NN'), ('production', 'NN')] 
+
+ Lemmas are: 
+>> [('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '-'), ('Basic', 'basic'), ('Probability', 'probability'), ('‹#›', '‹#›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'b'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '-'), ('Error', 'error'), ('Recovery', 'recovery'), ('‹#›', '‹#›'), ('Error', 'error'), ('production', 'production')] 
+
+ Dependency tags are: 
+>> [(('Prof.', 'root'), 'root'), (('Jay', 'Prof.'), 'flat'), (('R', 'Prof.'), 'flat'), (('Dhamsaniya', 'Prof.'), 'flat'), (('#', 'Prof.'), 'list'), (('3130006', '#'), 'nummod'), (('(', 'PS'), 'punct'), (('PS', 'Unit'), 'appos'), ((')', 'PS'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'Prof.'), 'list'), (('1', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Basic', 'Probability'), 'amod'), (('Probability', 'Prof.'), 'list'), (('‹#›', 'Prof.'), 'list'), (('Prof.', 'Probability'), 'appos'), (('Dixita', 'B'), 'compound'), (('B', 'Kagathara'), 'compound'), (('Kagathara', '#'), 'compound'), (('#', 'Prof.'), 'list'), (('2170701', '#'), 'nummod'), (('(', 'CD'), 'punct'), (('CD', '#'), 'appos'), ((')', 'CD'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'Prof.'), 'list'), (('4', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Error', 'Recovery'), 'compound'), (('Recovery', 'Prof.'), 'list'), (('‹#›', 'production'), 'compound'), (('Error', 'production'), 'compound'), (('production', 'Recovery'), 'appos')]
+
+ Named Entities are: 
+>> [('#3130006', 'CARDINAL'), ('1', 'CARDINAL'), ('2170701', 'CARDINAL'), ('4', 'CARDINAL')]
+
+========================== Sentence 24 ===========================
+
+ If we have good knowledge of common errors that might be encountered, then we can augment the grammar for the corresponding language with error productions that generate the erroneous constructs. 
+
+Tokens are: 
+>> ['If', 'we', 'have', 'good', 'knowledge', 'of', 'common', 'errors', 'that', 'might', 'be', 'encountered', ',', 'then', 'we', 'can', 'augment', 'the', 'grammar', 'for', 'the', 'corresponding', 'language', 'with', 'error', 'productions', 'that', 'generate', 'the', 'erroneous', 'constructs', '.'] 
+
+ UPOS tags are: 
+>> [('If', 'SCONJ'), ('we', 'PRON'), ('have', 'VERB'), ('good', 'ADJ'), ('knowledge', 'NOUN'), ('of', 'ADP'), ('common', 'ADJ'), ('errors', 'NOUN'), ('that', 'PRON'), ('might', 'AUX'), ('be', 'AUX'), ('encountered', 'VERB'), (',', 'PUNCT'), ('then', 'ADV'), ('we', 'PRON'), ('can', 'AUX'), ('augment', 'VERB'), ('the', 'DET'), ('grammar', 'NOUN'), ('for', 'ADP'), ('the', 'DET'), ('corresponding', 'VERB'), ('language', 'NOUN'), ('with', 'ADP'), ('error', 'NOUN'), ('productions', 'NOUN'), ('that', 'PRON'), ('generate', 'VERB'), ('the', 'DET'), ('erroneous', 'ADJ'), ('constructs', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('If', 'IN'), ('we', 'PRP'), ('have', 'VBP'), ('good', 'JJ'), ('knowledge', 'NN'), ('of', 'IN'), ('common', 'JJ'), ('errors', 'NNS'), ('that', 'WDT'), ('might', 'MD'), ('be', 'VB'), ('encountered', 'VBN'), (',', ','), ('then', 'RB'), ('we', 'PRP'), ('can', 'MD'), ('augment', 'VB'), ('the', 'DT'), ('grammar', 'NN'), ('for', 'IN'), ('the', 'DT'), ('corresponding', 'VBG'), ('language', 'NN'), ('with', 'IN'), ('error', 'NN'), ('productions', 'NNS'), ('that', 'WDT'), ('generate', 'VBP'), ('the', 'DT'), ('erroneous', 'JJ'), ('constructs', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('If', 'if'), ('we', 'we'), ('have', 'have'), ('good', 'good'), ('knowledge', 'knowledge'), ('of', 'of'), ('common', 'common'), ('errors', 'error'), ('that', 'that'), ('might', 'might'), ('be', 'be'), ('encountered', 'encounter'), (',', ','), ('then', 'then'), ('we', 'we'), ('can', 'can'), ('augment', 'augment'), ('the', 'the'), ('grammar', 'grammar'), ('for', 'for'), ('the', 'the'), ('corresponding', 'corresponding'), ('language', 'language'), ('with', 'with'), ('error', 'error'), ('productions', 'production'), ('that', 'that'), ('generate', 'generate'), ('the', 'the'), ('erroneous', 'erroneous'), ('constructs', 'construct'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('If', 'have'), 'mark'), (('we', 'have'), 'nsubj'), (('have', 'augment'), 'advcl'), (('good', 'knowledge'), 'amod'), (('knowledge', 'have'), 'obj'), (('of', 'errors'), 'case'), (('common', 'errors'), 'amod'), (('errors', 'knowledge'), 'nmod'), (('that', 'encountered'), 'nsubj:pass'), (('might', 'encountered'), 'aux'), (('be', 'encountered'), 'aux:pass'), (('encountered', 'errors'), 'acl:relcl'), ((',', 'augment'), 'punct'), (('then', 'augment'), 'advmod'), (('we', 'augment'), 'nsubj'), (('can', 'augment'), 'aux'), (('augment', 'root'), 'root'), (('the', 'grammar'), 'det'), (('grammar', 'augment'), 'obj'), (('for', 'language'), 'case'), (('the', 'language'), 'det'), (('corresponding', 'language'), 'amod'), (('language', 'augment'), 'obl'), (('with', 'productions'), 'case'), (('error', 'productions'), 'compound'), (('productions', 'language'), 'nmod'), (('that', 'generate'), 'nsubj'), (('generate', 'productions'), 'acl:relcl'), (('the', 'constructs'), 'det'), (('erroneous', 'constructs'), 'amod'), (('constructs', 'generate'), 'obj'), (('.', 'augment'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 25 ===========================
+
+ Then we use the grammar augmented by these error production to construct a parser. 
+
+Tokens are: 
+>> ['Then', 'we', 'use', 'the', 'grammar', 'augmented', 'by', 'these', 'error', 'production', 'to', 'construct', 'a', 'parser', '.'] 
+
+ UPOS tags are: 
+>> [('Then', 'ADV'), ('we', 'PRON'), ('use', 'VERB'), ('the', 'DET'), ('grammar', 'NOUN'), ('augmented', 'VERB'), ('by', 'ADP'), ('these', 'DET'), ('error', 'NOUN'), ('production', 'NOUN'), ('to', 'PART'), ('construct', 'VERB'), ('a', 'DET'), ('parser', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Then', 'RB'), ('we', 'PRP'), ('use', 'VBP'), ('the', 'DT'), ('grammar', 'NN'), ('augmented', 'VBN'), ('by', 'IN'), ('these', 'DT'), ('error', 'NN'), ('production', 'NN'), ('to', 'TO'), ('construct', 'VB'), ('a', 'DT'), ('parser', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Then', 'then'), ('we', 'we'), ('use', 'use'), ('the', 'the'), ('grammar', 'grammar'), ('augmented', 'augment'), ('by', 'by'), ('these', 'this'), ('error', 'error'), ('production', 'production'), ('to', 'to'), ('construct', 'construct'), ('a', 'a'), ('parser', 'parser'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Then', 'use'), 'advmod'), (('we', 'use'), 'nsubj'), (('use', 'root'), 'root'), (('the', 'grammar'), 'det'), (('grammar', 'use'), 'obj'), (('augmented', 'grammar'), 'acl'), (('by', 'production'), 'case'), (('these', 'production'), 'det'), (('error', 'production'), 'compound'), (('production', 'augmented'), 'obl'), (('to', 'construct'), 'mark'), (('construct', 'augmented'), 'advcl'), (('a', 'parser'), 'det'), (('parser', 'construct'), 'obj'), (('.', 'use'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 26 ===========================
+
+ If error production is used then, during parsing we can generate appropriate error message and parsing can be continued. 
+
+Tokens are: 
+>> ['If', 'error', 'production', 'is', 'used', 'then', ',', 'during', 'parsing', 'we', 'can', 'generate', 'appropriate', 'error', 'message', 'and', 'parsing', 'can', 'be', 'continued', '.'] 
+
+ UPOS tags are: 
+>> [('If', 'SCONJ'), ('error', 'NOUN'), ('production', 'NOUN'), ('is', 'AUX'), ('used', 'VERB'), ('then', 'ADV'), (',', 'PUNCT'), ('during', 'SCONJ'), ('parsing', 'NOUN'), ('we', 'PRON'), ('can', 'AUX'), ('generate', 'VERB'), ('appropriate', 'ADJ'), ('error', 'NOUN'), ('message', 'NOUN'), ('and', 'CCONJ'), ('parsing', 'NOUN'), ('can', 'AUX'), ('be', 'AUX'), ('continued', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('If', 'IN'), ('error', 'NN'), ('production', 'NN'), ('is', 'VBZ'), ('used', 'VBN'), ('then', 'RB'), (',', ','), ('during', 'IN'), ('parsing', 'NN'), ('we', 'PRP'), ('can', 'MD'), ('generate', 'VB'), ('appropriate', 'JJ'), ('error', 'NN'), ('message', 'NN'), ('and', 'CC'), ('parsing', 'NN'), ('can', 'MD'), ('be', 'VB'), ('continued', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('If', 'if'), ('error', 'error'), ('production', 'production'), ('is', 'be'), ('used', 'use'), ('then', 'then'), (',', ','), ('during', 'during'), ('parsing', 'parsing'), ('we', 'we'), ('can', 'can'), ('generate', 'generate'), ('appropriate', 'appropriate'), ('error', 'error'), ('message', 'message'), ('and', 'and'), ('parsing', 'parsing'), ('can', 'can'), ('be', 'be'), ('continued', 'continue'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('If', 'used'), 'mark'), (('error', 'production'), 'compound'), (('production', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'continued'), 'advcl'), (('then', 'used'), 'advmod'), ((',', 'generate'), 'punct'), (('during', 'parsing'), 'case'), (('parsing', 'generate'), 'obl'), (('we', 'generate'), 'nsubj'), (('can', 'generate'), 'aux'), (('generate', 'root'), 'root'), (('appropriate', 'message'), 'amod'), (('error', 'message'), 'compound'), (('message', 'generate'), 'obj'), (('and', 'continued'), 'cc'), (('parsing', 'continued'), 'nsubj:pass'), (('can', 'continued'), 'aux'), (('be', 'continued'), 'aux:pass'), (('continued', 'generate'), 'conj'), (('.', 'continued'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 27 ===========================
+
+ Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Global correction Given an incorrect input string x and grammar G, the algorithm will find a parse tree for a related string y, such that number of insertions, deletions and changes of token require to transform x into y is as small as possible. 
+
+Tokens are: 
+>> ['Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹#›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹#›', 'Global', 'correction', 'Given', 'an', 'incorrect', 'input', 'string', 'x', 'and', 'grammar', 'G', ',', 'the', 'algorithm', 'will', 'find', 'a', 'parse', 'tree', 'for', 'a', 'related', 'string', 'y', ',', 'such', 'that', 'number', 'of', 'insertions', ',', 'deletions', 'and', 'changes', 'of', 'token', 'require', 'to', 'transform', 'x', 'into', 'y', 'is', 'as', 'small', 'as', 'possible', '.'] 
+
+ UPOS tags are: 
+>> [('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'ADJ'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'NOUN'), ('Recovery', 'NOUN'), ('‹#›', 'PUNCT'), ('Global', 'ADJ'), ('correction', 'NOUN'), ('Given', 'VERB'), ('an', 'DET'), ('incorrect', 'ADJ'), ('input', 'NOUN'), ('string', 'NOUN'), ('x', 'NOUN'), ('and', 'CCONJ'), ('grammar', 'NOUN'), ('G', 'NOUN'), (',', 'PUNCT'), ('the', 'DET'), ('algorithm', 'NOUN'), ('will', 'AUX'), ('find', 'VERB'), ('a', 'DET'), ('parse', 'NOUN'), ('tree', 'NOUN'), ('for', 'ADP'), ('a', 'DET'), ('related', 'ADJ'), ('string', 'NOUN'), ('y', 'NOUN'), (',', 'PUNCT'), ('such', 'DET'), ('that', 'DET'), ('number', 'NOUN'), ('of', 'ADP'), ('insertions', 'NOUN'), (',', 'PUNCT'), ('deletions', 'NOUN'), ('and', 'CCONJ'), ('changes', 'NOUN'), ('of', 'ADP'), ('token', 'NOUN'), ('require', 'VERB'), ('to', 'PART'), ('transform', 'VERB'), ('x', 'NOUN'), ('into', 'ADP'), ('y', 'NOUN'), ('is', 'AUX'), ('as', 'ADV'), ('small', 'ADJ'), ('as', 'SCONJ'), ('possible', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', 'NN'), ('3130006', 'CD'), ('(', '-LRB-'), ('PS', 'NNP'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('1', 'CD'), ('–', ':'), ('Basic', 'JJ'), ('Probability', 'NNP'), ('‹#›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', 'NN'), ('2170701', 'CD'), ('(', '-LRB-'), ('CD', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('4', 'CD'), ('–', ':'), ('Error', 'NN'), ('Recovery', 'NN'), ('‹#›', ','), ('Global', 'JJ'), ('correction', 'NN'), ('Given', 'VBN'), ('an', 'DT'), ('incorrect', 'JJ'), ('input', 'NN'), ('string', 'NN'), ('x', 'NN'), ('and', 'CC'), ('grammar', 'NN'), ('G', 'NN'), (',', ','), ('the', 'DT'), ('algorithm', 'NN'), ('will', 'MD'), ('find', 'VB'), ('a', 'DT'), ('parse', 'NN'), ('tree', 'NN'), ('for', 'IN'), ('a', 'DT'), ('related', 'JJ'), ('string', 'NN'), ('y', 'NN'), (',', ','), ('such', 'PDT'), ('that', 'DT'), ('number', 'NN'), ('of', 'IN'), ('insertions', 'NNS'), (',', ','), ('deletions', 'NNS'), ('and', 'CC'), ('changes', 'NNS'), ('of', 'IN'), ('token', 'NN'), ('require', 'VBP'), ('to', 'TO'), ('transform', 'VB'), ('x', 'NN'), ('into', 'IN'), ('y', 'NN'), ('is', 'VBZ'), ('as', 'RB'), ('small', 'JJ'), ('as', 'IN'), ('possible', 'JJ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '-'), ('Basic', 'basic'), ('Probability', 'Probability'), ('‹#›', '‹#›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '-'), ('Error', 'error'), ('Recovery', 'recovery'), ('‹#›', '‹#›'), ('Global', 'global'), ('correction', 'correction'), ('Given', 'give'), ('an', 'a'), ('incorrect', 'incorrect'), ('input', 'input'), ('string', 'string'), ('x', 'x'), ('and', 'and'), ('grammar', 'grammar'), ('G', 'g'), (',', ','), ('the', 'the'), ('algorithm', 'algorithm'), ('will', 'will'), ('find', 'find'), ('a', 'a'), ('parse', 'parse'), ('tree', 'tree'), ('for', 'for'), ('a', 'a'), ('related', 'related'), ('string', 'string'), ('y', 'y'), (',', ','), ('such', 'such'), ('that', 'that'), ('number', 'number'), ('of', 'of'), ('insertions', 'insertion'), (',', ','), ('deletions', 'deletion'), ('and', 'and'), ('changes', 'change'), ('of', 'of'), ('token', 'token'), ('require', 'require'), ('to', 'to'), ('transform', 'transform'), ('x', 'x'), ('into', 'into'), ('y', 'y'), ('is', 'be'), ('as', 'as'), ('small', 'small'), ('as', 'as'), ('possible', 'possible'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Prof.', 'find'), 'nsubj'), (('Jay', 'Prof.'), 'flat'), (('R', 'Prof.'), 'flat'), (('Dhamsaniya', 'Prof.'), 'flat'), (('#', 'Prof.'), 'appos'), (('3130006', '#'), 'nummod'), (('(', 'PS'), 'punct'), (('PS', '#'), 'appos'), ((')', 'PS'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'Prof.'), 'appos'), (('1', 'Unit'), 'dep'), (('–', 'Prof.'), 'punct'), (('Basic', '‹#›'), 'amod'), (('Probability', '‹#›'), 'compound'), (('‹#›', 'Prof.'), 'appos'), (('Prof.', 'Prof.'), 'appos'), (('Dixita', 'B'), 'compound'), (('B', 'Kagathara'), 'compound'), (('Kagathara', 'Prof.'), 'appos'), (('#', 'Prof.'), 'appos'), (('2170701', '#'), 'nummod'), (('(', 'CD'), 'punct'), (('CD', '#'), 'appos'), ((')', 'CD'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'Prof.'), 'appos'), (('4', 'Unit'), 'nummod'), (('–', 'Prof.'), 'punct'), (('Error', 'Recovery'), 'compound'), (('Recovery', 'Prof.'), 'appos'), (('‹#›', 'Recovery'), 'punct'), (('Global', 'correction'), 'amod'), (('correction', 'Prof.'), 'appos'), (('Given', 'Recovery'), 'acl'), (('an', 'G'), 'det'), (('incorrect', 'G'), 'amod'), (('input', 'G'), 'compound'), (('string', 'G'), 'compound'), (('x', 'G'), 'compound'), (('and', 'grammar'), 'cc'), (('grammar', 'x'), 'conj'), (('G', 'Given'), 'obj'), ((',', 'find'), 'punct'), (('the', 'algorithm'), 'det'), (('algorithm', 'find'), 'nsubj'), (('will', 'find'), 'aux'), (('find', 'root'), 'root'), (('a', 'tree'), 'det'), (('parse', 'tree'), 'compound'), (('tree', 'find'), 'obj'), (('for', 'y'), 'case'), (('a', 'y'), 'det'), (('related', 'y'), 'amod'), (('string', 'y'), 'compound'), (('y', 'tree'), 'nmod'), ((',', 'find'), 'punct'), (('such', 'number'), 'det:predet'), (('that', 'number'), 'det'), (('number', 'tree'), 'appos'), (('of', 'insertions'), 'case'), (('insertions', 'number'), 'nmod'), ((',', 'deletions'), 'punct'), (('deletions', 'number'), 'conj'), (('and', 'changes'), 'cc'), (('changes', 'deletions'), 'conj'), (('of', 'token'), 'case'), (('token', 'changes'), 'nmod'), (('require', 'deletions'), 'acl:relcl'), (('to', 'transform'), 'mark'), (('transform', 'require'), 'xcomp'), (('x', 'transform'), 'obj'), (('into', 'y'), 'case'), (('y', 'transform'), 'obl'), (('is', 'small'), 'cop'), (('as', 'small'), 'advmod'), (('small', 'require'), 'conj'), (('as', 'possible'), 'mark'), (('possible', 'small'), 'advcl'), (('.', 'find'), 'punct')]
+
+ Named Entities are: 
+>> [('4', 'CARDINAL')]
+
+========================== Sentence 28 ===========================
+
+ Such methods increase time and space requirements at parsing time. 
+
+Tokens are: 
+>> ['Such', 'methods', 'increase', 'time', 'and', 'space', 'requirements', 'at', 'parsing', 'time', '.'] 
+
+ UPOS tags are: 
+>> [('Such', 'ADJ'), ('methods', 'NOUN'), ('increase', 'VERB'), ('time', 'NOUN'), ('and', 'CCONJ'), ('space', 'NOUN'), ('requirements', 'NOUN'), ('at', 'ADP'), ('parsing', 'NOUN'), ('time', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Such', 'JJ'), ('methods', 'NNS'), ('increase', 'VBP'), ('time', 'NN'), ('and', 'CC'), ('space', 'NN'), ('requirements', 'NNS'), ('at', 'IN'), ('parsing', 'NN'), ('time', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Such', 'such'), ('methods', 'method'), ('increase', 'increase'), ('time', 'time'), ('and', 'and'), ('space', 'space'), ('requirements', 'requirement'), ('at', 'at'), ('parsing', 'parsing'), ('time', 'time'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Such', 'methods'), 'amod'), (('methods', 'increase'), 'nsubj'), (('increase', 'root'), 'root'), (('time', 'increase'), 'obj'), (('and', 'requirements'), 'cc'), (('space', 'requirements'), 'compound'), (('requirements', 'time'), 'conj'), (('at', 'time'), 'case'), (('parsing', 'time'), 'compound'), (('time', 'increase'), 'obl'), (('.', 'increase'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 29 ===========================
+
+ Global correction is thus simply a theoretical concept. 
+
+Tokens are: 
+>> ['Global', 'correction', 'is', 'thus', 'simply', 'a', 'theoretical', 'concept', '.'] 
+
+ UPOS tags are: 
+>> [('Global', 'ADJ'), ('correction', 'NOUN'), ('is', 'AUX'), ('thus', 'ADV'), ('simply', 'ADV'), ('a', 'DET'), ('theoretical', 'ADJ'), ('concept', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Global', 'JJ'), ('correction', 'NN'), ('is', 'VBZ'), ('thus', 'RB'), ('simply', 'RB'), ('a', 'DT'), ('theoretical', 'JJ'), ('concept', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Global', 'global'), ('correction', 'correction'), ('is', 'be'), ('thus', 'thus'), ('simply', 'simply'), ('a', 'a'), ('theoretical', 'theoretical'), ('concept', 'concept'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Global', 'correction'), 'amod'), (('correction', 'concept'), 'nsubj'), (('is', 'concept'), 'cop'), (('thus', 'concept'), 'advmod'), (('simply', 'concept'), 'advmod'), (('a', 'concept'), 'det'), (('theoretical', 'concept'), 'amod'), (('concept', 'root'), 'root'), (('.', 'concept'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 30 ===========================
+
+ Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›  Thank You                                       /docProps/thumbnail.jpeg 
+
+Tokens are: 
+>> ['Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹#›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '4', '–', 'Error', 'Recovery', '‹#›', 'Thank', 'You', '/docProps/thumbnail.jpeg'] 
+
+ UPOS tags are: 
+>> [('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'ADJ'), ('Probability', 'NOUN'), ('‹#›', 'NOUN'), ('Prof.', 'NOUN'), ('Dixita', 'PROPN'), ('B', 'NOUN'), ('Kagathara', 'PROPN'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('\uf077', 'NUM'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'NOUN'), ('Recovery', 'NOUN'), ('‹#›', 'NOUN'), ('Thank', 'VERB'), ('You', 'PRON'), ('/docProps/thumbnail.jpeg', 'X')] 
+
+ XPOS tags are: 
+>> [('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', 'NN'), ('3130006', 'CD'), ('(', '-LRB-'), ('PS', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('1', 'CD'), ('–', ','), ('Basic', 'JJ'), ('Probability', 'NN'), ('‹#›', 'NN'), ('Prof.', 'NN'), ('Dixita', 'NNP'), ('B', 'NN'), ('Kagathara', 'NNP'), ('#', 'NN'), ('2170701', 'CD'), ('(', '-LRB-'), ('CD', 'NN'), (')', '-RRB-'), ('\uf077', 'CD'), ('Unit', 'NN'), ('4', 'CD'), ('–', ','), ('Error', 'NN'), ('Recovery', 'NN'), ('‹#›', 'NN'), ('Thank', 'VBP'), ('You', 'PRP'), ('/docProps/thumbnail.jpeg', 'ADD')] 
+
+ Lemmas are: 
+>> [('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '-'), ('Basic', 'basic'), ('Probability', 'probability'), ('‹#›', '‹#›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'b'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('4', '4'), ('–', '-'), ('Error', 'error'), ('Recovery', 'recovery'), ('‹#›', '‹#›'), ('Thank', 'thank'), ('You', 'you'), ('/docProps/thumbnail.jpeg', '/docprops/thumbnail.jpeg')] 
+
+ Dependency tags are: 
+>> [(('Prof.', 'root'), 'root'), (('Jay', 'Prof.'), 'flat'), (('R', 'Prof.'), 'flat'), (('Dhamsaniya', 'Prof.'), 'flat'), (('#', 'Prof.'), 'list'), (('3130006', '#'), 'nummod'), (('(', 'Unit'), 'punct'), (('PS', 'Unit'), 'compound'), ((')', 'PS'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'Prof.'), 'list'), (('1', 'Unit'), 'nummod'), (('–', 'Unit'), 'punct'), (('Basic', 'Probability'), 'amod'), (('Probability', 'Prof.'), 'list'), (('‹#›', 'Prof.'), 'list'), (('Prof.', 'Probability'), 'appos'), (('Dixita', 'B'), 'compound'), (('B', 'Kagathara'), 'compound'), (('Kagathara', '#'), 'compound'), (('#', 'Prof.'), 'list'), (('2170701', '#'), 'nummod'), (('(', 'CD'), 'punct'), (('CD', '#'), 'appos'), ((')', 'CD'), 'punct'), (('\uf077', 'Unit'), 'nummod'), (('Unit', 'Prof.'), 'list'), (('4', 'Unit'), 'nummod'), (('–', 'Prof.'), 'punct'), (('Error', 'Recovery'), 'compound'), (('Recovery', 'Prof.'), 'list'), (('‹#›', 'Prof.'), 'list'), (('Thank', 'Prof.'), 'list'), (('You', 'Thank'), 'obj'), (('/docProps/thumbnail.jpeg', 'Thank'), 'appos')]
+
+ Named Entities are: 
+>> [('#3130006', 'CARDINAL'), ('2170701', 'CARDINAL'), ('4', 'CARDINAL')]

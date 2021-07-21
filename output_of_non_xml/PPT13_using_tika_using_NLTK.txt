@@ -1,0 +1,1675 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+PowerPoint Presentation  Unit – 5 Intermediate Code Generation dixita.kagathara@darshan.ac.in +91 - 97277 47317 (CE Department) Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design (CD) GTU # 2170701   Darshan Institute of Engineering & Technology, Rajkot     Looping Topics to be covered  Different intermediate forms Different representation of Three Address code             Different intermediate forms        Different intermediate forms Different forms of intermediate code are:  Abstract syntax tree Postfix notation Three address code     Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  Abstract syntax tree & DAG A syntax tree depicts the natural hierarchical structure of a source program. 
+
+
+>> Tokens are: 
+ ['PowerPoint', 'Presentation', 'Unit', '–', '5', 'Intermediate', 'Code', 'Generation', 'dixita.kagathara', '@', 'darshan.ac.in', '+91', '-', '97277', '47317', '(', 'CE', 'Department', ')', 'Computer', 'Engineering', 'Department', 'Prof.', 'Dixita', 'B.', 'Kagathara', 'Compiler', 'Design', '(', 'CD', ')', 'GTU', '#', '2170701', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', ',', 'Rajkot', '\uf050', 'Looping', 'Topics', 'covered', 'Different', 'intermediate', 'forms', 'Different', 'representation', 'Three', 'Address', 'code', 'Different', 'intermediate', 'forms', 'Different', 'intermediate', 'forms', 'Different', 'forms', 'intermediate', 'code', ':', 'Abstract', 'syntax', 'tree', 'Postfix', 'notation', 'Three', 'address', 'code', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '5', '–', 'Intermediate', 'Code', 'Generation', '‹', '#', '›', 'Abstract', 'syntax', 'tree', '&', 'DAG', 'A', 'syntax', 'tree', 'depicts', 'natural', 'hierarchical', 'structure', 'source', 'program', '.']
+
+>> Bigrams are: 
+ [('PowerPoint', 'Presentation'), ('Presentation', 'Unit'), ('Unit', '–'), ('–', '5'), ('5', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', 'dixita.kagathara'), ('dixita.kagathara', '@'), ('@', 'darshan.ac.in'), ('darshan.ac.in', '+91'), ('+91', '-'), ('-', '97277'), ('97277', '47317'), ('47317', '('), ('(', 'CE'), ('CE', 'Department'), ('Department', ')'), (')', 'Computer'), ('Computer', 'Engineering'), ('Engineering', 'Department'), ('Department', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B.'), ('B.', 'Kagathara'), ('Kagathara', 'Compiler'), ('Compiler', 'Design'), ('Design', '('), ('(', 'CD'), ('CD', ')'), (')', 'GTU'), ('GTU', '#'), ('#', '2170701'), ('2170701', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', ','), (',', 'Rajkot'), ('Rajkot', '\uf050'), ('\uf050', 'Looping'), ('Looping', 'Topics'), ('Topics', 'covered'), ('covered', 'Different'), ('Different', 'intermediate'), ('intermediate', 'forms'), ('forms', 'Different'), ('Different', 'representation'), ('representation', 'Three'), ('Three', 'Address'), ('Address', 'code'), ('code', 'Different'), ('Different', 'intermediate'), ('intermediate', 'forms'), ('forms', 'Different'), ('Different', 'intermediate'), ('intermediate', 'forms'), ('forms', 'Different'), ('Different', 'forms'), ('forms', 'intermediate'), ('intermediate', 'code'), ('code', ':'), (':', 'Abstract'), ('Abstract', 'syntax'), ('syntax', 'tree'), ('tree', 'Postfix'), ('Postfix', 'notation'), ('notation', 'Three'), ('Three', 'address'), ('address', 'code'), ('code', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '5'), ('5', '–'), ('–', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Abstract'), ('Abstract', 'syntax'), ('syntax', 'tree'), ('tree', '&'), ('&', 'DAG'), ('DAG', 'A'), ('A', 'syntax'), ('syntax', 'tree'), ('tree', 'depicts'), ('depicts', 'natural'), ('natural', 'hierarchical'), ('hierarchical', 'structure'), ('structure', 'source'), ('source', 'program'), ('program', '.')]
+
+>> Trigrams are: 
+ [('PowerPoint', 'Presentation', 'Unit'), ('Presentation', 'Unit', '–'), ('Unit', '–', '5'), ('–', '5', 'Intermediate'), ('5', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', 'dixita.kagathara'), ('Generation', 'dixita.kagathara', '@'), ('dixita.kagathara', '@', 'darshan.ac.in'), ('@', 'darshan.ac.in', '+91'), ('darshan.ac.in', '+91', '-'), ('+91', '-', '97277'), ('-', '97277', '47317'), ('97277', '47317', '('), ('47317', '(', 'CE'), ('(', 'CE', 'Department'), ('CE', 'Department', ')'), ('Department', ')', 'Computer'), (')', 'Computer', 'Engineering'), ('Computer', 'Engineering', 'Department'), ('Engineering', 'Department', 'Prof.'), ('Department', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B.'), ('Dixita', 'B.', 'Kagathara'), ('B.', 'Kagathara', 'Compiler'), ('Kagathara', 'Compiler', 'Design'), ('Compiler', 'Design', '('), ('Design', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', 'GTU'), (')', 'GTU', '#'), ('GTU', '#', '2170701'), ('#', '2170701', 'Darshan'), ('2170701', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', ','), ('Technology', ',', 'Rajkot'), (',', 'Rajkot', '\uf050'), ('Rajkot', '\uf050', 'Looping'), ('\uf050', 'Looping', 'Topics'), ('Looping', 'Topics', 'covered'), ('Topics', 'covered', 'Different'), ('covered', 'Different', 'intermediate'), ('Different', 'intermediate', 'forms'), ('intermediate', 'forms', 'Different'), ('forms', 'Different', 'representation'), ('Different', 'representation', 'Three'), ('representation', 'Three', 'Address'), ('Three', 'Address', 'code'), ('Address', 'code', 'Different'), ('code', 'Different', 'intermediate'), ('Different', 'intermediate', 'forms'), ('intermediate', 'forms', 'Different'), ('forms', 'Different', 'intermediate'), ('Different', 'intermediate', 'forms'), ('intermediate', 'forms', 'Different'), ('forms', 'Different', 'forms'), ('Different', 'forms', 'intermediate'), ('forms', 'intermediate', 'code'), ('intermediate', 'code', ':'), ('code', ':', 'Abstract'), (':', 'Abstract', 'syntax'), ('Abstract', 'syntax', 'tree'), ('syntax', 'tree', 'Postfix'), ('tree', 'Postfix', 'notation'), ('Postfix', 'notation', 'Three'), ('notation', 'Three', 'address'), ('Three', 'address', 'code'), ('address', 'code', 'Prof.'), ('code', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '5'), ('Unit', '5', '–'), ('5', '–', 'Intermediate'), ('–', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', '‹'), ('Generation', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Abstract'), ('›', 'Abstract', 'syntax'), ('Abstract', 'syntax', 'tree'), ('syntax', 'tree', '&'), ('tree', '&', 'DAG'), ('&', 'DAG', 'A'), ('DAG', 'A', 'syntax'), ('A', 'syntax', 'tree'), ('syntax', 'tree', 'depicts'), ('tree', 'depicts', 'natural'), ('depicts', 'natural', 'hierarchical'), ('natural', 'hierarchical', 'structure'), ('hierarchical', 'structure', 'source'), ('structure', 'source', 'program'), ('source', 'program', '.')]
+
+>> POS Tags are: 
+ [('PowerPoint', 'NNP'), ('Presentation', 'NNP'), ('Unit', 'NNP'), ('–', 'VBD'), ('5', 'CD'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('dixita.kagathara', 'VBZ'), ('@', 'NNP'), ('darshan.ac.in', 'NN'), ('+91', 'NNP'), ('-', ':'), ('97277', 'CD'), ('47317', 'CD'), ('(', '('), ('CE', 'NNP'), ('Department', 'NNP'), (')', ')'), ('Computer', 'NNP'), ('Engineering', 'NNP'), ('Department', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B.', 'NNP'), ('Kagathara', 'NNP'), ('Compiler', 'NNP'), ('Design', 'NNP'), ('(', '('), ('CD', 'NN'), (')', ')'), ('GTU', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), (',', ','), ('Rajkot', 'NNP'), ('\uf050', 'NNP'), ('Looping', 'NNP'), ('Topics', 'NNPS'), ('covered', 'VBD'), ('Different', 'NNP'), ('intermediate', 'JJ'), ('forms', 'NNS'), ('Different', 'NNP'), ('representation', 'NN'), ('Three', 'NNP'), ('Address', 'NNP'), ('code', 'NN'), ('Different', 'NNP'), ('intermediate', 'NN'), ('forms', 'NNS'), ('Different', 'NNP'), ('intermediate', 'VBP'), ('forms', 'NNS'), ('Different', 'NNP'), ('forms', 'NNS'), ('intermediate', 'JJ'), ('code', 'NN'), (':', ':'), ('Abstract', 'JJ'), ('syntax', 'NN'), ('tree', 'NN'), ('Postfix', 'NNP'), ('notation', 'NN'), ('Three', 'NNP'), ('address', 'NN'), ('code', 'NN'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('5', 'CD'), ('–', 'NNP'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Abstract', 'NNP'), ('syntax', 'NNP'), ('tree', 'NN'), ('&', 'CC'), ('DAG', 'NNP'), ('A', 'NNP'), ('syntax', 'NN'), ('tree', 'NN'), ('depicts', 'VBZ'), ('natural', 'JJ'), ('hierarchical', 'JJ'), ('structure', 'NN'), ('source', 'NN'), ('program', 'NN'), ('.', '.')]
+
+ (S
+  (NP PowerPoint/NNP Presentation/NNP Unit/NNP)
+  –/VBD
+  5/CD
+  (NP Intermediate/NNP Code/NNP Generation/NNP)
+  dixita.kagathara/VBZ
+  (NP @/NNP darshan.ac.in/NN +91/NNP)
+  -/:
+  97277/CD
+  47317/CD
+  (/(
+  (NP CE/NNP Department/NNP)
+  )/)
+  (NP
+    Computer/NNP
+    Engineering/NNP
+    Department/NNP
+    Prof./NNP
+    Dixita/NNP
+    B./NNP
+    Kagathara/NNP
+    Compiler/NNP
+    Design/NNP)
+  (/(
+  (NP CD/NN)
+  )/)
+  (NP GTU/NNP)
+  #/#
+  2170701/CD
+  (NP Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP)
+  ,/,
+  (NP Rajkot/NNP /NNP Looping/NNP)
+  Topics/NNPS
+  covered/VBD
+  (NP Different/NNP)
+  (NP
+    intermediate/JJ
+    forms/NNS
+    Different/NNP
+    representation/NN
+    Three/NNP
+    Address/NNP
+    code/NN
+    Different/NNP
+    intermediate/NN
+    forms/NNS
+    Different/NNP)
+  intermediate/VBP
+  (NP forms/NNS Different/NNP forms/NNS)
+  (NP intermediate/JJ code/NN)
+  :/:
+  (NP
+    Abstract/JJ
+    syntax/NN
+    tree/NN
+    Postfix/NNP
+    notation/NN
+    Three/NNP
+    address/NN
+    code/NN
+    Prof./NNP
+    Jay/NNP
+    R/NNP
+    Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  5/CD
+  (NP –/NNP Intermediate/NNP Code/NNP Generation/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Abstract/NNP syntax/NNP tree/NN)
+  &/CC
+  (NP DAG/NNP A/NNP syntax/NN tree/NN)
+  depicts/VBZ
+  (NP natural/JJ hierarchical/JJ structure/NN source/NN program/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['PowerPoint Presentation Unit', 'Intermediate Code Generation', '@ darshan.ac.in +91', 'CE Department', 'Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design', 'CD', 'GTU', 'Darshan Institute Engineering', 'Technology', 'Rajkot \uf050 Looping', 'Different', 'intermediate forms Different representation Three Address code Different intermediate forms Different', 'forms Different forms', 'intermediate code', 'Abstract syntax tree Postfix notation Three address code Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Intermediate Code Generation ‹', '› Abstract syntax tree', 'DAG A syntax tree', 'natural hierarchical structure source program']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'PowerPoint'), ('PERSON', 'Unit'), ('ORGANIZATION', 'Intermediate Code Generation'), ('ORGANIZATION', 'CE Department'), ('ORGANIZATION', 'Computer Engineering Department'), ('PERSON', 'Dixita B. Kagathara Compiler'), ('ORGANIZATION', 'GTU'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Rajkot'), ('PERSON', 'Three Address'), ('PERSON', 'Postfix'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'DAG')] 
+
+>> Stemming using Porter Stemmer: 
+ [('PowerPoint', 'powerpoint'), ('Presentation', 'present'), ('Unit', 'unit'), ('–', '–'), ('5', '5'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('dixita.kagathara', 'dixita.kagathara'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('+91', '+91'), ('-', '-'), ('97277', '97277'), ('47317', '47317'), ('(', '('), ('CE', 'ce'), ('Department', 'depart'), (')', ')'), ('Computer', 'comput'), ('Engineering', 'engin'), ('Department', 'depart'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B.', 'b.'), ('Kagathara', 'kagathara'), ('Compiler', 'compil'), ('Design', 'design'), ('(', '('), ('CD', 'cd'), (')', ')'), ('GTU', 'gtu'), ('#', '#'), ('2170701', '2170701'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), (',', ','), ('Rajkot', 'rajkot'), ('\uf050', '\uf050'), ('Looping', 'loop'), ('Topics', 'topic'), ('covered', 'cover'), ('Different', 'differ'), ('intermediate', 'intermedi'), ('forms', 'form'), ('Different', 'differ'), ('representation', 'represent'), ('Three', 'three'), ('Address', 'address'), ('code', 'code'), ('Different', 'differ'), ('intermediate', 'intermedi'), ('forms', 'form'), ('Different', 'differ'), ('intermediate', 'intermedi'), ('forms', 'form'), ('Different', 'differ'), ('forms', 'form'), ('intermediate', 'intermedi'), ('code', 'code'), (':', ':'), ('Abstract', 'abstract'), ('syntax', 'syntax'), ('tree', 'tree'), ('Postfix', 'postfix'), ('notation', 'notat'), ('Three', 'three'), ('address', 'address'), ('code', 'code'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Abstract', 'abstract'), ('syntax', 'syntax'), ('tree', 'tree'), ('&', '&'), ('DAG', 'dag'), ('A', 'a'), ('syntax', 'syntax'), ('tree', 'tree'), ('depicts', 'depict'), ('natural', 'natur'), ('hierarchical', 'hierarch'), ('structure', 'structur'), ('source', 'sourc'), ('program', 'program'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('PowerPoint', 'powerpoint'), ('Presentation', 'present'), ('Unit', 'unit'), ('–', '–'), ('5', '5'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('dixita.kagathara', 'dixita.kagathara'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('+91', '+91'), ('-', '-'), ('97277', '97277'), ('47317', '47317'), ('(', '('), ('CE', 'ce'), ('Department', 'depart'), (')', ')'), ('Computer', 'comput'), ('Engineering', 'engin'), ('Department', 'depart'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B.', 'b.'), ('Kagathara', 'kagathara'), ('Compiler', 'compil'), ('Design', 'design'), ('(', '('), ('CD', 'cd'), (')', ')'), ('GTU', 'gtu'), ('#', '#'), ('2170701', '2170701'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), (',', ','), ('Rajkot', 'rajkot'), ('\uf050', '\uf050'), ('Looping', 'loop'), ('Topics', 'topic'), ('covered', 'cover'), ('Different', 'differ'), ('intermediate', 'intermedi'), ('forms', 'form'), ('Different', 'differ'), ('representation', 'represent'), ('Three', 'three'), ('Address', 'address'), ('code', 'code'), ('Different', 'differ'), ('intermediate', 'intermedi'), ('forms', 'form'), ('Different', 'differ'), ('intermediate', 'intermedi'), ('forms', 'form'), ('Different', 'differ'), ('forms', 'form'), ('intermediate', 'intermedi'), ('code', 'code'), (':', ':'), ('Abstract', 'abstract'), ('syntax', 'syntax'), ('tree', 'tree'), ('Postfix', 'postfix'), ('notation', 'notat'), ('Three', 'three'), ('address', 'address'), ('code', 'code'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Abstract', 'abstract'), ('syntax', 'syntax'), ('tree', 'tree'), ('&', '&'), ('DAG', 'dag'), ('A', 'a'), ('syntax', 'syntax'), ('tree', 'tree'), ('depicts', 'depict'), ('natural', 'natur'), ('hierarchical', 'hierarch'), ('structure', 'structur'), ('source', 'sourc'), ('program', 'program'), ('.', '.')]
+
+>> Lemmatization: 
+ [('PowerPoint', 'PowerPoint'), ('Presentation', 'Presentation'), ('Unit', 'Unit'), ('–', '–'), ('5', '5'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('dixita.kagathara', 'dixita.kagathara'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('+91', '+91'), ('-', '-'), ('97277', '97277'), ('47317', '47317'), ('(', '('), ('CE', 'CE'), ('Department', 'Department'), (')', ')'), ('Computer', 'Computer'), ('Engineering', 'Engineering'), ('Department', 'Department'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B.', 'B.'), ('Kagathara', 'Kagathara'), ('Compiler', 'Compiler'), ('Design', 'Design'), ('(', '('), ('CD', 'CD'), (')', ')'), ('GTU', 'GTU'), ('#', '#'), ('2170701', '2170701'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), (',', ','), ('Rajkot', 'Rajkot'), ('\uf050', '\uf050'), ('Looping', 'Looping'), ('Topics', 'Topics'), ('covered', 'covered'), ('Different', 'Different'), ('intermediate', 'intermediate'), ('forms', 'form'), ('Different', 'Different'), ('representation', 'representation'), ('Three', 'Three'), ('Address', 'Address'), ('code', 'code'), ('Different', 'Different'), ('intermediate', 'intermediate'), ('forms', 'form'), ('Different', 'Different'), ('intermediate', 'intermediate'), ('forms', 'form'), ('Different', 'Different'), ('forms', 'form'), ('intermediate', 'intermediate'), ('code', 'code'), (':', ':'), ('Abstract', 'Abstract'), ('syntax', 'syntax'), ('tree', 'tree'), ('Postfix', 'Postfix'), ('notation', 'notation'), ('Three', 'Three'), ('address', 'address'), ('code', 'code'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Abstract', 'Abstract'), ('syntax', 'syntax'), ('tree', 'tree'), ('&', '&'), ('DAG', 'DAG'), ('A', 'A'), ('syntax', 'syntax'), ('tree', 'tree'), ('depicts', 'depicts'), ('natural', 'natural'), ('hierarchical', 'hierarchical'), ('structure', 'structure'), ('source', 'source'), ('program', 'program'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+A DAG (Directed Acyclic Graph) gives the same information but in a more compact way because common sub-expressions are identified. 
+
+
+>> Tokens are: 
+ ['A', 'DAG', '(', 'Directed', 'Acyclic', 'Graph', ')', 'gives', 'information', 'compact', 'way', 'common', 'sub-expressions', 'identified', '.']
+
+>> Bigrams are: 
+ [('A', 'DAG'), ('DAG', '('), ('(', 'Directed'), ('Directed', 'Acyclic'), ('Acyclic', 'Graph'), ('Graph', ')'), (')', 'gives'), ('gives', 'information'), ('information', 'compact'), ('compact', 'way'), ('way', 'common'), ('common', 'sub-expressions'), ('sub-expressions', 'identified'), ('identified', '.')]
+
+>> Trigrams are: 
+ [('A', 'DAG', '('), ('DAG', '(', 'Directed'), ('(', 'Directed', 'Acyclic'), ('Directed', 'Acyclic', 'Graph'), ('Acyclic', 'Graph', ')'), ('Graph', ')', 'gives'), (')', 'gives', 'information'), ('gives', 'information', 'compact'), ('information', 'compact', 'way'), ('compact', 'way', 'common'), ('way', 'common', 'sub-expressions'), ('common', 'sub-expressions', 'identified'), ('sub-expressions', 'identified', '.')]
+
+>> POS Tags are: 
+ [('A', 'DT'), ('DAG', 'NNP'), ('(', '('), ('Directed', 'NNP'), ('Acyclic', 'NNP'), ('Graph', 'NNP'), (')', ')'), ('gives', 'VBZ'), ('information', 'NN'), ('compact', 'JJ'), ('way', 'NN'), ('common', 'JJ'), ('sub-expressions', 'NNS'), ('identified', 'VBN'), ('.', '.')]
+
+ (S
+  (NP A/DT DAG/NNP)
+  (/(
+  (NP Directed/NNP Acyclic/NNP Graph/NNP)
+  )/)
+  gives/VBZ
+  (NP information/NN)
+  (NP compact/JJ way/NN)
+  (NP common/JJ sub-expressions/NNS)
+  identified/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A DAG', 'Directed Acyclic Graph', 'information', 'compact way', 'common sub-expressions']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'DAG'), ('ORGANIZATION', 'Directed Acyclic')] 
+
+>> Stemming using Porter Stemmer: 
+ [('A', 'a'), ('DAG', 'dag'), ('(', '('), ('Directed', 'direct'), ('Acyclic', 'acycl'), ('Graph', 'graph'), (')', ')'), ('gives', 'give'), ('information', 'inform'), ('compact', 'compact'), ('way', 'way'), ('common', 'common'), ('sub-expressions', 'sub-express'), ('identified', 'identifi'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('A', 'a'), ('DAG', 'dag'), ('(', '('), ('Directed', 'direct'), ('Acyclic', 'acycl'), ('Graph', 'graph'), (')', ')'), ('gives', 'give'), ('information', 'inform'), ('compact', 'compact'), ('way', 'way'), ('common', 'common'), ('sub-expressions', 'sub-express'), ('identified', 'identifi'), ('.', '.')]
+
+>> Lemmatization: 
+ [('A', 'A'), ('DAG', 'DAG'), ('(', '('), ('Directed', 'Directed'), ('Acyclic', 'Acyclic'), ('Graph', 'Graph'), (')', ')'), ('gives', 'give'), ('information', 'information'), ('compact', 'compact'), ('way', 'way'), ('common', 'common'), ('sub-expressions', 'sub-expressions'), ('identified', 'identified'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+Ex: a=b*-c+b*-c   +   *  c b  uminus   *  c b  uminus   =   a *  c b  uminus   +   =   a    Syntax Tree DAG    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  Postfix Notation Postfix notation is a linearization of a syntax tree. 
+
+
+>> Tokens are: 
+ ['Ex', ':', 'a=b', '*', '-c+b', '*', '-c', '+', '*', 'c', 'b', 'uminus', '*', 'c', 'b', 'uminus', '=', '*', 'c', 'b', 'uminus', '+', '=', 'Syntax', 'Tree', 'DAG', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '5', '–', 'Intermediate', 'Code', 'Generation', '‹', '#', '›', 'Postfix', 'Notation', 'Postfix', 'notation', 'linearization', 'syntax', 'tree', '.']
+
+>> Bigrams are: 
+ [('Ex', ':'), (':', 'a=b'), ('a=b', '*'), ('*', '-c+b'), ('-c+b', '*'), ('*', '-c'), ('-c', '+'), ('+', '*'), ('*', 'c'), ('c', 'b'), ('b', 'uminus'), ('uminus', '*'), ('*', 'c'), ('c', 'b'), ('b', 'uminus'), ('uminus', '='), ('=', '*'), ('*', 'c'), ('c', 'b'), ('b', 'uminus'), ('uminus', '+'), ('+', '='), ('=', 'Syntax'), ('Syntax', 'Tree'), ('Tree', 'DAG'), ('DAG', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '5'), ('5', '–'), ('–', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Postfix'), ('Postfix', 'Notation'), ('Notation', 'Postfix'), ('Postfix', 'notation'), ('notation', 'linearization'), ('linearization', 'syntax'), ('syntax', 'tree'), ('tree', '.')]
+
+>> Trigrams are: 
+ [('Ex', ':', 'a=b'), (':', 'a=b', '*'), ('a=b', '*', '-c+b'), ('*', '-c+b', '*'), ('-c+b', '*', '-c'), ('*', '-c', '+'), ('-c', '+', '*'), ('+', '*', 'c'), ('*', 'c', 'b'), ('c', 'b', 'uminus'), ('b', 'uminus', '*'), ('uminus', '*', 'c'), ('*', 'c', 'b'), ('c', 'b', 'uminus'), ('b', 'uminus', '='), ('uminus', '=', '*'), ('=', '*', 'c'), ('*', 'c', 'b'), ('c', 'b', 'uminus'), ('b', 'uminus', '+'), ('uminus', '+', '='), ('+', '=', 'Syntax'), ('=', 'Syntax', 'Tree'), ('Syntax', 'Tree', 'DAG'), ('Tree', 'DAG', 'Prof.'), ('DAG', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '5'), ('Unit', '5', '–'), ('5', '–', 'Intermediate'), ('–', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', '‹'), ('Generation', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Postfix'), ('›', 'Postfix', 'Notation'), ('Postfix', 'Notation', 'Postfix'), ('Notation', 'Postfix', 'notation'), ('Postfix', 'notation', 'linearization'), ('notation', 'linearization', 'syntax'), ('linearization', 'syntax', 'tree'), ('syntax', 'tree', '.')]
+
+>> POS Tags are: 
+ [('Ex', 'NN'), (':', ':'), ('a=b', 'NN'), ('*', 'NNP'), ('-c+b', 'NNP'), ('*', 'NNP'), ('-c', 'NNP'), ('+', 'NNP'), ('*', 'NNP'), ('c', 'NN'), ('b', 'NN'), ('uminus', 'JJ'), ('*', 'NNP'), ('c', 'NN'), ('b', 'NN'), ('uminus', 'JJ'), ('=', 'NNP'), ('*', 'NNP'), ('c', 'NN'), ('b', 'NN'), ('uminus', 'JJ'), ('+', 'NNP'), ('=', 'NNP'), ('Syntax', 'NNP'), ('Tree', 'NNP'), ('DAG', 'NNP'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('5', 'CD'), ('–', 'NNP'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Postfix', 'NNP'), ('Notation', 'NNP'), ('Postfix', 'NNP'), ('notation', 'NN'), ('linearization', 'NN'), ('syntax', 'NN'), ('tree', 'NN'), ('.', '.')]
+
+ (S
+  (NP Ex/NN)
+  :/:
+  (NP a=b/NN */NNP -c+b/NNP */NNP -c/NNP +/NNP */NNP c/NN b/NN)
+  (NP uminus/JJ */NNP c/NN b/NN)
+  (NP uminus/JJ =/NNP */NNP c/NN b/NN)
+  (NP
+    uminus/JJ
+    +/NNP
+    =/NNP
+    Syntax/NNP
+    Tree/NNP
+    DAG/NNP
+    Prof./NNP
+    Jay/NNP
+    R/NNP
+    Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  5/CD
+  (NP –/NNP Intermediate/NNP Code/NNP Generation/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    Postfix/NNP
+    Notation/NNP
+    Postfix/NNP
+    notation/NN
+    linearization/NN
+    syntax/NN
+    tree/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Ex', 'a=b * -c+b * -c + * c b', 'uminus * c b', 'uminus = * c b', 'uminus + = Syntax Tree DAG Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Intermediate Code Generation ‹', '› Postfix Notation Postfix notation linearization syntax tree']
+
+>> Named Entities are: 
+ [('GPE', 'Ex'), ('PERSON', 'Syntax Tree'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit'), ('PERSON', 'Postfix Notation Postfix')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Ex', 'ex'), (':', ':'), ('a=b', 'a=b'), ('*', '*'), ('-c+b', '-c+b'), ('*', '*'), ('-c', '-c'), ('+', '+'), ('*', '*'), ('c', 'c'), ('b', 'b'), ('uminus', 'uminu'), ('*', '*'), ('c', 'c'), ('b', 'b'), ('uminus', 'uminu'), ('=', '='), ('*', '*'), ('c', 'c'), ('b', 'b'), ('uminus', 'uminu'), ('+', '+'), ('=', '='), ('Syntax', 'syntax'), ('Tree', 'tree'), ('DAG', 'dag'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Postfix', 'postfix'), ('Notation', 'notat'), ('Postfix', 'postfix'), ('notation', 'notat'), ('linearization', 'linear'), ('syntax', 'syntax'), ('tree', 'tree'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Ex', 'ex'), (':', ':'), ('a=b', 'a=b'), ('*', '*'), ('-c+b', '-c+b'), ('*', '*'), ('-c', '-c'), ('+', '+'), ('*', '*'), ('c', 'c'), ('b', 'b'), ('uminus', 'uminus'), ('*', '*'), ('c', 'c'), ('b', 'b'), ('uminus', 'uminus'), ('=', '='), ('*', '*'), ('c', 'c'), ('b', 'b'), ('uminus', 'uminus'), ('+', '+'), ('=', '='), ('Syntax', 'syntax'), ('Tree', 'tree'), ('DAG', 'dag'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Postfix', 'postfix'), ('Notation', 'notat'), ('Postfix', 'postfix'), ('notation', 'notat'), ('linearization', 'linear'), ('syntax', 'syntax'), ('tree', 'tree'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Ex', 'Ex'), (':', ':'), ('a=b', 'a=b'), ('*', '*'), ('-c+b', '-c+b'), ('*', '*'), ('-c', '-c'), ('+', '+'), ('*', '*'), ('c', 'c'), ('b', 'b'), ('uminus', 'uminus'), ('*', '*'), ('c', 'c'), ('b', 'b'), ('uminus', 'uminus'), ('=', '='), ('*', '*'), ('c', 'c'), ('b', 'b'), ('uminus', 'uminus'), ('+', '+'), ('=', '='), ('Syntax', 'Syntax'), ('Tree', 'Tree'), ('DAG', 'DAG'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Postfix', 'Postfix'), ('Notation', 'Notation'), ('Postfix', 'Postfix'), ('notation', 'notation'), ('linearization', 'linearization'), ('syntax', 'syntax'), ('tree', 'tree'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+In postfix notation the operands occurs first and then operators are arranged. 
+
+
+>> Tokens are: 
+ ['In', 'postfix', 'notation', 'operands', 'occurs', 'first', 'operators', 'arranged', '.']
+
+>> Bigrams are: 
+ [('In', 'postfix'), ('postfix', 'notation'), ('notation', 'operands'), ('operands', 'occurs'), ('occurs', 'first'), ('first', 'operators'), ('operators', 'arranged'), ('arranged', '.')]
+
+>> Trigrams are: 
+ [('In', 'postfix', 'notation'), ('postfix', 'notation', 'operands'), ('notation', 'operands', 'occurs'), ('operands', 'occurs', 'first'), ('occurs', 'first', 'operators'), ('first', 'operators', 'arranged'), ('operators', 'arranged', '.')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('postfix', 'JJ'), ('notation', 'NN'), ('operands', 'NNS'), ('occurs', 'VBP'), ('first', 'JJ'), ('operators', 'NNS'), ('arranged', 'VBN'), ('.', '.')]
+
+ (S
+  In/IN
+  (NP postfix/JJ notation/NN operands/NNS)
+  occurs/VBP
+  (NP first/JJ operators/NNS)
+  arranged/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['postfix notation operands', 'first operators']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('postfix', 'postfix'), ('notation', 'notat'), ('operands', 'operand'), ('occurs', 'occur'), ('first', 'first'), ('operators', 'oper'), ('arranged', 'arrang'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('postfix', 'postfix'), ('notation', 'notat'), ('operands', 'operand'), ('occurs', 'occur'), ('first', 'first'), ('operators', 'oper'), ('arranged', 'arrang'), ('.', '.')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('postfix', 'postfix'), ('notation', 'notation'), ('operands', 'operand'), ('occurs', 'occurs'), ('first', 'first'), ('operators', 'operator'), ('arranged', 'arranged'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+Ex: (A + B) * (C + D)    Ex: (A + B) * C    Ex: (A * B) + (C * D)  Postfix notation: A B + C D + * Postfix notation: A B + C * Postfix notation: A B * C D * +    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  Three address code Three address code is a sequence of statements of the general form,  a:= b op c Where a, b or c are the operands that can be names or constants and op stands for any operator. 
+
+
+>> Tokens are: 
+ ['Ex', ':', '(', 'A', '+', 'B', ')', '*', '(', 'C', '+', 'D', ')', 'Ex', ':', '(', 'A', '+', 'B', ')', '*', 'C', 'Ex', ':', '(', 'A', '*', 'B', ')', '+', '(', 'C', '*', 'D', ')', 'Postfix', 'notation', ':', 'A', 'B', '+', 'C', 'D', '+', '*', 'Postfix', 'notation', ':', 'A', 'B', '+', 'C', '*', 'Postfix', 'notation', ':', 'A', 'B', '*', 'C', 'D', '*', '+', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '5', '–', 'Intermediate', 'Code', 'Generation', '‹', '#', '›', 'Three', 'address', 'code', 'Three', 'address', 'code', 'sequence', 'statements', 'general', 'form', ',', ':', '=', 'b', 'op', 'c', 'Where', ',', 'b', 'c', 'operands', 'names', 'constants', 'op', 'stands', 'operator', '.']
+
+>> Bigrams are: 
+ [('Ex', ':'), (':', '('), ('(', 'A'), ('A', '+'), ('+', 'B'), ('B', ')'), (')', '*'), ('*', '('), ('(', 'C'), ('C', '+'), ('+', 'D'), ('D', ')'), (')', 'Ex'), ('Ex', ':'), (':', '('), ('(', 'A'), ('A', '+'), ('+', 'B'), ('B', ')'), (')', '*'), ('*', 'C'), ('C', 'Ex'), ('Ex', ':'), (':', '('), ('(', 'A'), ('A', '*'), ('*', 'B'), ('B', ')'), (')', '+'), ('+', '('), ('(', 'C'), ('C', '*'), ('*', 'D'), ('D', ')'), (')', 'Postfix'), ('Postfix', 'notation'), ('notation', ':'), (':', 'A'), ('A', 'B'), ('B', '+'), ('+', 'C'), ('C', 'D'), ('D', '+'), ('+', '*'), ('*', 'Postfix'), ('Postfix', 'notation'), ('notation', ':'), (':', 'A'), ('A', 'B'), ('B', '+'), ('+', 'C'), ('C', '*'), ('*', 'Postfix'), ('Postfix', 'notation'), ('notation', ':'), (':', 'A'), ('A', 'B'), ('B', '*'), ('*', 'C'), ('C', 'D'), ('D', '*'), ('*', '+'), ('+', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '5'), ('5', '–'), ('–', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Three'), ('Three', 'address'), ('address', 'code'), ('code', 'Three'), ('Three', 'address'), ('address', 'code'), ('code', 'sequence'), ('sequence', 'statements'), ('statements', 'general'), ('general', 'form'), ('form', ','), (',', ':'), (':', '='), ('=', 'b'), ('b', 'op'), ('op', 'c'), ('c', 'Where'), ('Where', ','), (',', 'b'), ('b', 'c'), ('c', 'operands'), ('operands', 'names'), ('names', 'constants'), ('constants', 'op'), ('op', 'stands'), ('stands', 'operator'), ('operator', '.')]
+
+>> Trigrams are: 
+ [('Ex', ':', '('), (':', '(', 'A'), ('(', 'A', '+'), ('A', '+', 'B'), ('+', 'B', ')'), ('B', ')', '*'), (')', '*', '('), ('*', '(', 'C'), ('(', 'C', '+'), ('C', '+', 'D'), ('+', 'D', ')'), ('D', ')', 'Ex'), (')', 'Ex', ':'), ('Ex', ':', '('), (':', '(', 'A'), ('(', 'A', '+'), ('A', '+', 'B'), ('+', 'B', ')'), ('B', ')', '*'), (')', '*', 'C'), ('*', 'C', 'Ex'), ('C', 'Ex', ':'), ('Ex', ':', '('), (':', '(', 'A'), ('(', 'A', '*'), ('A', '*', 'B'), ('*', 'B', ')'), ('B', ')', '+'), (')', '+', '('), ('+', '(', 'C'), ('(', 'C', '*'), ('C', '*', 'D'), ('*', 'D', ')'), ('D', ')', 'Postfix'), (')', 'Postfix', 'notation'), ('Postfix', 'notation', ':'), ('notation', ':', 'A'), (':', 'A', 'B'), ('A', 'B', '+'), ('B', '+', 'C'), ('+', 'C', 'D'), ('C', 'D', '+'), ('D', '+', '*'), ('+', '*', 'Postfix'), ('*', 'Postfix', 'notation'), ('Postfix', 'notation', ':'), ('notation', ':', 'A'), (':', 'A', 'B'), ('A', 'B', '+'), ('B', '+', 'C'), ('+', 'C', '*'), ('C', '*', 'Postfix'), ('*', 'Postfix', 'notation'), ('Postfix', 'notation', ':'), ('notation', ':', 'A'), (':', 'A', 'B'), ('A', 'B', '*'), ('B', '*', 'C'), ('*', 'C', 'D'), ('C', 'D', '*'), ('D', '*', '+'), ('*', '+', 'Prof.'), ('+', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '5'), ('Unit', '5', '–'), ('5', '–', 'Intermediate'), ('–', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', '‹'), ('Generation', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Three'), ('›', 'Three', 'address'), ('Three', 'address', 'code'), ('address', 'code', 'Three'), ('code', 'Three', 'address'), ('Three', 'address', 'code'), ('address', 'code', 'sequence'), ('code', 'sequence', 'statements'), ('sequence', 'statements', 'general'), ('statements', 'general', 'form'), ('general', 'form', ','), ('form', ',', ':'), (',', ':', '='), (':', '=', 'b'), ('=', 'b', 'op'), ('b', 'op', 'c'), ('op', 'c', 'Where'), ('c', 'Where', ','), ('Where', ',', 'b'), (',', 'b', 'c'), ('b', 'c', 'operands'), ('c', 'operands', 'names'), ('operands', 'names', 'constants'), ('names', 'constants', 'op'), ('constants', 'op', 'stands'), ('op', 'stands', 'operator'), ('stands', 'operator', '.')]
+
+>> POS Tags are: 
+ [('Ex', 'NN'), (':', ':'), ('(', '('), ('A', 'DT'), ('+', 'NN'), ('B', 'NNP'), (')', ')'), ('*', 'NN'), ('(', '('), ('C', 'NNP'), ('+', 'NNP'), ('D', 'NNP'), (')', ')'), ('Ex', 'NN'), (':', ':'), ('(', '('), ('A', 'DT'), ('+', 'NN'), ('B', 'NNP'), (')', ')'), ('*', 'VBP'), ('C', 'NNP'), ('Ex', 'NNP'), (':', ':'), ('(', '('), ('A', 'DT'), ('*', 'NN'), ('B', 'NNP'), (')', ')'), ('+', 'NN'), ('(', '('), ('C', 'NNP'), ('*', 'NNP'), ('D', 'NNP'), (')', ')'), ('Postfix', 'NNP'), ('notation', 'NN'), (':', ':'), ('A', 'DT'), ('B', 'NNP'), ('+', 'NNP'), ('C', 'NNP'), ('D', 'NNP'), ('+', 'NNP'), ('*', 'NNP'), ('Postfix', 'NNP'), ('notation', 'NN'), (':', ':'), ('A', 'DT'), ('B', 'NNP'), ('+', 'NNP'), ('C', 'NNP'), ('*', 'NNP'), ('Postfix', 'NNP'), ('notation', 'NN'), (':', ':'), ('A', 'DT'), ('B', 'NNP'), ('*', 'NNP'), ('C', 'NNP'), ('D', 'NNP'), ('*', 'NNP'), ('+', 'NNP'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('5', 'CD'), ('–', 'NNP'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Three', 'NNP'), ('address', 'NN'), ('code', 'VBD'), ('Three', 'NNP'), ('address', 'NN'), ('code', 'NN'), ('sequence', 'NN'), ('statements', 'NNS'), ('general', 'JJ'), ('form', 'NN'), (',', ','), (':', ':'), ('=', 'NN'), ('b', 'NN'), ('op', 'NN'), ('c', 'NN'), ('Where', 'NNP'), (',', ','), ('b', 'NN'), ('c', 'NN'), ('operands', 'VBZ'), ('names', 'JJ'), ('constants', 'NNS'), ('op', 'MD'), ('stands', 'VB'), ('operator', 'NN'), ('.', '.')]
+
+ (S
+  (NP Ex/NN)
+  :/:
+  (/(
+  (NP A/DT +/NN B/NNP)
+  )/)
+  (NP */NN)
+  (/(
+  (NP C/NNP +/NNP D/NNP)
+  )/)
+  (NP Ex/NN)
+  :/:
+  (/(
+  (NP A/DT +/NN B/NNP)
+  )/)
+  */VBP
+  (NP C/NNP Ex/NNP)
+  :/:
+  (/(
+  (NP A/DT */NN B/NNP)
+  )/)
+  (NP +/NN)
+  (/(
+  (NP C/NNP */NNP D/NNP)
+  )/)
+  (NP Postfix/NNP notation/NN)
+  :/:
+  (NP
+    A/DT
+    B/NNP
+    +/NNP
+    C/NNP
+    D/NNP
+    +/NNP
+    */NNP
+    Postfix/NNP
+    notation/NN)
+  :/:
+  (NP A/DT B/NNP +/NNP C/NNP */NNP Postfix/NNP notation/NN)
+  :/:
+  (NP
+    A/DT
+    B/NNP
+    */NNP
+    C/NNP
+    D/NNP
+    */NNP
+    +/NNP
+    Prof./NNP
+    Jay/NNP
+    R/NNP
+    Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  5/CD
+  (NP –/NNP Intermediate/NNP Code/NNP Generation/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Three/NNP address/NN)
+  code/VBD
+  (NP Three/NNP address/NN code/NN sequence/NN statements/NNS)
+  (NP general/JJ form/NN)
+  ,/,
+  :/:
+  (NP =/NN b/NN op/NN c/NN Where/NNP)
+  ,/,
+  (NP b/NN c/NN)
+  operands/VBZ
+  (NP names/JJ constants/NNS)
+  op/MD
+  stands/VB
+  (NP operator/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Ex', 'A + B', '*', 'C + D', 'Ex', 'A + B', 'C Ex', 'A * B', '+', 'C * D', 'Postfix notation', 'A B + C D + * Postfix notation', 'A B + C * Postfix notation', 'A B * C D * + Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Intermediate Code Generation ‹', '› Three address', 'Three address code sequence statements', 'general form', '= b op c Where', 'b c', 'names constants', 'operator']
+
+>> Named Entities are: 
+ [('GPE', 'Ex'), ('PERSON', 'Postfix'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit'), ('PERSON', 'Three')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Ex', 'ex'), (':', ':'), ('(', '('), ('A', 'a'), ('+', '+'), ('B', 'b'), (')', ')'), ('*', '*'), ('(', '('), ('C', 'c'), ('+', '+'), ('D', 'd'), (')', ')'), ('Ex', 'ex'), (':', ':'), ('(', '('), ('A', 'a'), ('+', '+'), ('B', 'b'), (')', ')'), ('*', '*'), ('C', 'c'), ('Ex', 'ex'), (':', ':'), ('(', '('), ('A', 'a'), ('*', '*'), ('B', 'b'), (')', ')'), ('+', '+'), ('(', '('), ('C', 'c'), ('*', '*'), ('D', 'd'), (')', ')'), ('Postfix', 'postfix'), ('notation', 'notat'), (':', ':'), ('A', 'a'), ('B', 'b'), ('+', '+'), ('C', 'c'), ('D', 'd'), ('+', '+'), ('*', '*'), ('Postfix', 'postfix'), ('notation', 'notat'), (':', ':'), ('A', 'a'), ('B', 'b'), ('+', '+'), ('C', 'c'), ('*', '*'), ('Postfix', 'postfix'), ('notation', 'notat'), (':', ':'), ('A', 'a'), ('B', 'b'), ('*', '*'), ('C', 'c'), ('D', 'd'), ('*', '*'), ('+', '+'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Three', 'three'), ('address', 'address'), ('code', 'code'), ('Three', 'three'), ('address', 'address'), ('code', 'code'), ('sequence', 'sequenc'), ('statements', 'statement'), ('general', 'gener'), ('form', 'form'), (',', ','), (':', ':'), ('=', '='), ('b', 'b'), ('op', 'op'), ('c', 'c'), ('Where', 'where'), (',', ','), ('b', 'b'), ('c', 'c'), ('operands', 'operand'), ('names', 'name'), ('constants', 'constant'), ('op', 'op'), ('stands', 'stand'), ('operator', 'oper'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Ex', 'ex'), (':', ':'), ('(', '('), ('A', 'a'), ('+', '+'), ('B', 'b'), (')', ')'), ('*', '*'), ('(', '('), ('C', 'c'), ('+', '+'), ('D', 'd'), (')', ')'), ('Ex', 'ex'), (':', ':'), ('(', '('), ('A', 'a'), ('+', '+'), ('B', 'b'), (')', ')'), ('*', '*'), ('C', 'c'), ('Ex', 'ex'), (':', ':'), ('(', '('), ('A', 'a'), ('*', '*'), ('B', 'b'), (')', ')'), ('+', '+'), ('(', '('), ('C', 'c'), ('*', '*'), ('D', 'd'), (')', ')'), ('Postfix', 'postfix'), ('notation', 'notat'), (':', ':'), ('A', 'a'), ('B', 'b'), ('+', '+'), ('C', 'c'), ('D', 'd'), ('+', '+'), ('*', '*'), ('Postfix', 'postfix'), ('notation', 'notat'), (':', ':'), ('A', 'a'), ('B', 'b'), ('+', '+'), ('C', 'c'), ('*', '*'), ('Postfix', 'postfix'), ('notation', 'notat'), (':', ':'), ('A', 'a'), ('B', 'b'), ('*', '*'), ('C', 'c'), ('D', 'd'), ('*', '*'), ('+', '+'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Three', 'three'), ('address', 'address'), ('code', 'code'), ('Three', 'three'), ('address', 'address'), ('code', 'code'), ('sequence', 'sequenc'), ('statements', 'statement'), ('general', 'general'), ('form', 'form'), (',', ','), (':', ':'), ('=', '='), ('b', 'b'), ('op', 'op'), ('c', 'c'), ('Where', 'where'), (',', ','), ('b', 'b'), ('c', 'c'), ('operands', 'operand'), ('names', 'name'), ('constants', 'constant'), ('op', 'op'), ('stands', 'stand'), ('operator', 'oper'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Ex', 'Ex'), (':', ':'), ('(', '('), ('A', 'A'), ('+', '+'), ('B', 'B'), (')', ')'), ('*', '*'), ('(', '('), ('C', 'C'), ('+', '+'), ('D', 'D'), (')', ')'), ('Ex', 'Ex'), (':', ':'), ('(', '('), ('A', 'A'), ('+', '+'), ('B', 'B'), (')', ')'), ('*', '*'), ('C', 'C'), ('Ex', 'Ex'), (':', ':'), ('(', '('), ('A', 'A'), ('*', '*'), ('B', 'B'), (')', ')'), ('+', '+'), ('(', '('), ('C', 'C'), ('*', '*'), ('D', 'D'), (')', ')'), ('Postfix', 'Postfix'), ('notation', 'notation'), (':', ':'), ('A', 'A'), ('B', 'B'), ('+', '+'), ('C', 'C'), ('D', 'D'), ('+', '+'), ('*', '*'), ('Postfix', 'Postfix'), ('notation', 'notation'), (':', ':'), ('A', 'A'), ('B', 'B'), ('+', '+'), ('C', 'C'), ('*', '*'), ('Postfix', 'Postfix'), ('notation', 'notation'), (':', ':'), ('A', 'A'), ('B', 'B'), ('*', '*'), ('C', 'C'), ('D', 'D'), ('*', '*'), ('+', '+'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Three', 'Three'), ('address', 'address'), ('code', 'code'), ('Three', 'Three'), ('address', 'address'), ('code', 'code'), ('sequence', 'sequence'), ('statements', 'statement'), ('general', 'general'), ('form', 'form'), (',', ','), (':', ':'), ('=', '='), ('b', 'b'), ('op', 'op'), ('c', 'c'), ('Where', 'Where'), (',', ','), ('b', 'b'), ('c', 'c'), ('operands', 'operand'), ('names', 'name'), ('constants', 'constant'), ('op', 'op'), ('stands', 'stand'), ('operator', 'operator'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+Example: a = b + c + d  		t1=b+c	 		t2=t1+d 		a= t2 Here t1 and t2 are the temporary names generated by the compiler. 
+
+
+>> Tokens are: 
+ ['Example', ':', '=', 'b', '+', 'c', '+', 't1=b+c', 't2=t1+d', 'a=', 't2', 'Here', 't1', 't2', 'temporary', 'names', 'generated', 'compiler', '.']
+
+>> Bigrams are: 
+ [('Example', ':'), (':', '='), ('=', 'b'), ('b', '+'), ('+', 'c'), ('c', '+'), ('+', 't1=b+c'), ('t1=b+c', 't2=t1+d'), ('t2=t1+d', 'a='), ('a=', 't2'), ('t2', 'Here'), ('Here', 't1'), ('t1', 't2'), ('t2', 'temporary'), ('temporary', 'names'), ('names', 'generated'), ('generated', 'compiler'), ('compiler', '.')]
+
+>> Trigrams are: 
+ [('Example', ':', '='), (':', '=', 'b'), ('=', 'b', '+'), ('b', '+', 'c'), ('+', 'c', '+'), ('c', '+', 't1=b+c'), ('+', 't1=b+c', 't2=t1+d'), ('t1=b+c', 't2=t1+d', 'a='), ('t2=t1+d', 'a=', 't2'), ('a=', 't2', 'Here'), ('t2', 'Here', 't1'), ('Here', 't1', 't2'), ('t1', 't2', 'temporary'), ('t2', 'temporary', 'names'), ('temporary', 'names', 'generated'), ('names', 'generated', 'compiler'), ('generated', 'compiler', '.')]
+
+>> POS Tags are: 
+ [('Example', 'NN'), (':', ':'), ('=', 'NN'), ('b', 'NN'), ('+', 'NNP'), ('c', 'NN'), ('+', 'NNP'), ('t1=b+c', 'NN'), ('t2=t1+d', 'NN'), ('a=', 'NN'), ('t2', 'NN'), ('Here', 'RB'), ('t1', 'VBZ'), ('t2', 'JJ'), ('temporary', 'JJ'), ('names', 'NNS'), ('generated', 'VBD'), ('compiler', 'NN'), ('.', '.')]
+
+ (S
+  (NP Example/NN)
+  :/:
+  (NP =/NN b/NN +/NNP c/NN +/NNP t1=b+c/NN t2=t1+d/NN a=/NN t2/NN)
+  Here/RB
+  t1/VBZ
+  (NP t2/JJ temporary/JJ names/NNS)
+  generated/VBD
+  (NP compiler/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Example', '= b + c + t1=b+c t2=t1+d a= t2', 't2 temporary names', 'compiler']
+
+>> Named Entities are: 
+ [('GPE', 'Example')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Example', 'exampl'), (':', ':'), ('=', '='), ('b', 'b'), ('+', '+'), ('c', 'c'), ('+', '+'), ('t1=b+c', 't1=b+c'), ('t2=t1+d', 't2=t1+d'), ('a=', 'a='), ('t2', 't2'), ('Here', 'here'), ('t1', 't1'), ('t2', 't2'), ('temporary', 'temporari'), ('names', 'name'), ('generated', 'gener'), ('compiler', 'compil'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Example', 'exampl'), (':', ':'), ('=', '='), ('b', 'b'), ('+', '+'), ('c', 'c'), ('+', '+'), ('t1=b+c', 't1=b+c'), ('t2=t1+d', 't2=t1+d'), ('a=', 'a='), ('t2', 't2'), ('Here', 'here'), ('t1', 't1'), ('t2', 't2'), ('temporary', 'temporari'), ('names', 'name'), ('generated', 'generat'), ('compiler', 'compil'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Example', 'Example'), (':', ':'), ('=', '='), ('b', 'b'), ('+', '+'), ('c', 'c'), ('+', '+'), ('t1=b+c', 't1=b+c'), ('t2=t1+d', 't2=t1+d'), ('a=', 'a='), ('t2', 't2'), ('Here', 'Here'), ('t1', 't1'), ('t2', 't2'), ('temporary', 'temporary'), ('names', 'name'), ('generated', 'generated'), ('compiler', 'compiler'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+There are at most three addresses allowed (two for operands and one for result). 
+
+
+>> Tokens are: 
+ ['There', 'three', 'addresses', 'allowed', '(', 'two', 'operands', 'one', 'result', ')', '.']
+
+>> Bigrams are: 
+ [('There', 'three'), ('three', 'addresses'), ('addresses', 'allowed'), ('allowed', '('), ('(', 'two'), ('two', 'operands'), ('operands', 'one'), ('one', 'result'), ('result', ')'), (')', '.')]
+
+>> Trigrams are: 
+ [('There', 'three', 'addresses'), ('three', 'addresses', 'allowed'), ('addresses', 'allowed', '('), ('allowed', '(', 'two'), ('(', 'two', 'operands'), ('two', 'operands', 'one'), ('operands', 'one', 'result'), ('one', 'result', ')'), ('result', ')', '.')]
+
+>> POS Tags are: 
+ [('There', 'EX'), ('three', 'CD'), ('addresses', 'NNS'), ('allowed', 'VBN'), ('(', '('), ('two', 'CD'), ('operands', 'VBZ'), ('one', 'CD'), ('result', 'NN'), (')', ')'), ('.', '.')]
+
+ (S
+  There/EX
+  three/CD
+  (NP addresses/NNS)
+  allowed/VBN
+  (/(
+  two/CD
+  operands/VBZ
+  one/CD
+  (NP result/NN)
+  )/)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['addresses', 'result']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('There', 'there'), ('three', 'three'), ('addresses', 'address'), ('allowed', 'allow'), ('(', '('), ('two', 'two'), ('operands', 'operand'), ('one', 'one'), ('result', 'result'), (')', ')'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('There', 'there'), ('three', 'three'), ('addresses', 'address'), ('allowed', 'allow'), ('(', '('), ('two', 'two'), ('operands', 'operand'), ('one', 'one'), ('result', 'result'), (')', ')'), ('.', '.')]
+
+>> Lemmatization: 
+ [('There', 'There'), ('three', 'three'), ('addresses', 'address'), ('allowed', 'allowed'), ('(', '('), ('two', 'two'), ('operands', 'operand'), ('one', 'one'), ('result', 'result'), (')', ')'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+Hence, this representation is called three-address code. 
+
+
+>> Tokens are: 
+ ['Hence', ',', 'representation', 'called', 'three-address', 'code', '.']
+
+>> Bigrams are: 
+ [('Hence', ','), (',', 'representation'), ('representation', 'called'), ('called', 'three-address'), ('three-address', 'code'), ('code', '.')]
+
+>> Trigrams are: 
+ [('Hence', ',', 'representation'), (',', 'representation', 'called'), ('representation', 'called', 'three-address'), ('called', 'three-address', 'code'), ('three-address', 'code', '.')]
+
+>> POS Tags are: 
+ [('Hence', 'NNP'), (',', ','), ('representation', 'NN'), ('called', 'VBD'), ('three-address', 'JJ'), ('code', 'NN'), ('.', '.')]
+
+ (S
+  (NP Hence/NNP)
+  ,/,
+  (NP representation/NN)
+  called/VBD
+  (NP three-address/JJ code/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Hence', 'representation', 'three-address code']
+
+>> Named Entities are: 
+ [('GPE', 'Hence')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Hence', 'henc'), (',', ','), ('representation', 'represent'), ('called', 'call'), ('three-address', 'three-address'), ('code', 'code'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Hence', 'henc'), (',', ','), ('representation', 'represent'), ('called', 'call'), ('three-address', 'three-address'), ('code', 'code'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Hence', 'Hence'), (',', ','), ('representation', 'representation'), ('called', 'called'), ('three-address', 'three-address'), ('code', 'code'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  dixita.kagathara@darshan.ac.in +91 - 97277 47317 (CE Department) Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design (CD) Part 2  Different representation of three address code   Unit-5  Intermediate Code Generation   Darshan Institute of Engineering & Technology, Rajkot    Different Representation of Three Address Code        Different Representation of Three Address Code There are three types of representation used for three address code: Quadruples Triples  Indirect triples   Ex:	x= -a*b + -a*b 	t1= - a 	t2 = t1 * b 	t3= - a 	t4 = t3 * b 	t5 = t2 + t4 	x= t5   Three Address Code    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  Quadruple The quadruple is a structure with at the most four fields such as op, arg1, arg2 and result. 
+
+
+>> Tokens are: 
+ ['Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '5', '–', 'Intermediate', 'Code', 'Generation', '‹', '#', '›', 'dixita.kagathara', '@', 'darshan.ac.in', '+91', '-', '97277', '47317', '(', 'CE', 'Department', ')', 'Computer', 'Engineering', 'Department', 'Prof.', 'Dixita', 'B.', 'Kagathara', 'Compiler', 'Design', '(', 'CD', ')', 'Part', '2', '\uf077', 'Different', 'representation', 'three', 'address', 'code', 'Unit-5', 'Intermediate', 'Code', 'Generation', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', ',', 'Rajkot', 'Different', 'Representation', 'Three', 'Address', 'Code', 'Different', 'Representation', 'Three', 'Address', 'Code', 'There', 'three', 'types', 'representation', 'used', 'three', 'address', 'code', ':', 'Quadruples', 'Triples', 'Indirect', 'triples', 'Ex', ':', 'x=', '-a', '*', 'b', '+', '-a', '*', 'b', 't1=', '-', 't2', '=', 't1', '*', 'b', 't3=', '-', 't4', '=', 't3', '*', 'b', 't5', '=', 't2', '+', 't4', 'x=', 't5', 'Three', 'Address', 'Code', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '5', '–', 'Intermediate', 'Code', 'Generation', '‹', '#', '›', 'Quadruple', 'The', 'quadruple', 'structure', 'four', 'fields', 'op', ',', 'arg1', ',', 'arg2', 'result', '.']
+
+>> Bigrams are: 
+ [('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '5'), ('5', '–'), ('–', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', '‹'), ('‹', '#'), ('#', '›'), ('›', 'dixita.kagathara'), ('dixita.kagathara', '@'), ('@', 'darshan.ac.in'), ('darshan.ac.in', '+91'), ('+91', '-'), ('-', '97277'), ('97277', '47317'), ('47317', '('), ('(', 'CE'), ('CE', 'Department'), ('Department', ')'), (')', 'Computer'), ('Computer', 'Engineering'), ('Engineering', 'Department'), ('Department', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B.'), ('B.', 'Kagathara'), ('Kagathara', 'Compiler'), ('Compiler', 'Design'), ('Design', '('), ('(', 'CD'), ('CD', ')'), (')', 'Part'), ('Part', '2'), ('2', '\uf077'), ('\uf077', 'Different'), ('Different', 'representation'), ('representation', 'three'), ('three', 'address'), ('address', 'code'), ('code', 'Unit-5'), ('Unit-5', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', ','), (',', 'Rajkot'), ('Rajkot', 'Different'), ('Different', 'Representation'), ('Representation', 'Three'), ('Three', 'Address'), ('Address', 'Code'), ('Code', 'Different'), ('Different', 'Representation'), ('Representation', 'Three'), ('Three', 'Address'), ('Address', 'Code'), ('Code', 'There'), ('There', 'three'), ('three', 'types'), ('types', 'representation'), ('representation', 'used'), ('used', 'three'), ('three', 'address'), ('address', 'code'), ('code', ':'), (':', 'Quadruples'), ('Quadruples', 'Triples'), ('Triples', 'Indirect'), ('Indirect', 'triples'), ('triples', 'Ex'), ('Ex', ':'), (':', 'x='), ('x=', '-a'), ('-a', '*'), ('*', 'b'), ('b', '+'), ('+', '-a'), ('-a', '*'), ('*', 'b'), ('b', 't1='), ('t1=', '-'), ('-', 't2'), ('t2', '='), ('=', 't1'), ('t1', '*'), ('*', 'b'), ('b', 't3='), ('t3=', '-'), ('-', 't4'), ('t4', '='), ('=', 't3'), ('t3', '*'), ('*', 'b'), ('b', 't5'), ('t5', '='), ('=', 't2'), ('t2', '+'), ('+', 't4'), ('t4', 'x='), ('x=', 't5'), ('t5', 'Three'), ('Three', 'Address'), ('Address', 'Code'), ('Code', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '5'), ('5', '–'), ('–', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Quadruple'), ('Quadruple', 'The'), ('The', 'quadruple'), ('quadruple', 'structure'), ('structure', 'four'), ('four', 'fields'), ('fields', 'op'), ('op', ','), (',', 'arg1'), ('arg1', ','), (',', 'arg2'), ('arg2', 'result'), ('result', '.')]
+
+>> Trigrams are: 
+ [('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '5'), ('Unit', '5', '–'), ('5', '–', 'Intermediate'), ('–', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', '‹'), ('Generation', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'dixita.kagathara'), ('›', 'dixita.kagathara', '@'), ('dixita.kagathara', '@', 'darshan.ac.in'), ('@', 'darshan.ac.in', '+91'), ('darshan.ac.in', '+91', '-'), ('+91', '-', '97277'), ('-', '97277', '47317'), ('97277', '47317', '('), ('47317', '(', 'CE'), ('(', 'CE', 'Department'), ('CE', 'Department', ')'), ('Department', ')', 'Computer'), (')', 'Computer', 'Engineering'), ('Computer', 'Engineering', 'Department'), ('Engineering', 'Department', 'Prof.'), ('Department', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B.'), ('Dixita', 'B.', 'Kagathara'), ('B.', 'Kagathara', 'Compiler'), ('Kagathara', 'Compiler', 'Design'), ('Compiler', 'Design', '('), ('Design', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', 'Part'), (')', 'Part', '2'), ('Part', '2', '\uf077'), ('2', '\uf077', 'Different'), ('\uf077', 'Different', 'representation'), ('Different', 'representation', 'three'), ('representation', 'three', 'address'), ('three', 'address', 'code'), ('address', 'code', 'Unit-5'), ('code', 'Unit-5', 'Intermediate'), ('Unit-5', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', 'Darshan'), ('Generation', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', ','), ('Technology', ',', 'Rajkot'), (',', 'Rajkot', 'Different'), ('Rajkot', 'Different', 'Representation'), ('Different', 'Representation', 'Three'), ('Representation', 'Three', 'Address'), ('Three', 'Address', 'Code'), ('Address', 'Code', 'Different'), ('Code', 'Different', 'Representation'), ('Different', 'Representation', 'Three'), ('Representation', 'Three', 'Address'), ('Three', 'Address', 'Code'), ('Address', 'Code', 'There'), ('Code', 'There', 'three'), ('There', 'three', 'types'), ('three', 'types', 'representation'), ('types', 'representation', 'used'), ('representation', 'used', 'three'), ('used', 'three', 'address'), ('three', 'address', 'code'), ('address', 'code', ':'), ('code', ':', 'Quadruples'), (':', 'Quadruples', 'Triples'), ('Quadruples', 'Triples', 'Indirect'), ('Triples', 'Indirect', 'triples'), ('Indirect', 'triples', 'Ex'), ('triples', 'Ex', ':'), ('Ex', ':', 'x='), (':', 'x=', '-a'), ('x=', '-a', '*'), ('-a', '*', 'b'), ('*', 'b', '+'), ('b', '+', '-a'), ('+', '-a', '*'), ('-a', '*', 'b'), ('*', 'b', 't1='), ('b', 't1=', '-'), ('t1=', '-', 't2'), ('-', 't2', '='), ('t2', '=', 't1'), ('=', 't1', '*'), ('t1', '*', 'b'), ('*', 'b', 't3='), ('b', 't3=', '-'), ('t3=', '-', 't4'), ('-', 't4', '='), ('t4', '=', 't3'), ('=', 't3', '*'), ('t3', '*', 'b'), ('*', 'b', 't5'), ('b', 't5', '='), ('t5', '=', 't2'), ('=', 't2', '+'), ('t2', '+', 't4'), ('+', 't4', 'x='), ('t4', 'x=', 't5'), ('x=', 't5', 'Three'), ('t5', 'Three', 'Address'), ('Three', 'Address', 'Code'), ('Address', 'Code', 'Prof.'), ('Code', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '5'), ('Unit', '5', '–'), ('5', '–', 'Intermediate'), ('–', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', '‹'), ('Generation', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Quadruple'), ('›', 'Quadruple', 'The'), ('Quadruple', 'The', 'quadruple'), ('The', 'quadruple', 'structure'), ('quadruple', 'structure', 'four'), ('structure', 'four', 'fields'), ('four', 'fields', 'op'), ('fields', 'op', ','), ('op', ',', 'arg1'), (',', 'arg1', ','), ('arg1', ',', 'arg2'), (',', 'arg2', 'result'), ('arg2', 'result', '.')]
+
+>> POS Tags are: 
+ [('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('5', 'CD'), ('–', 'NNP'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('dixita.kagathara', 'NN'), ('@', 'NNP'), ('darshan.ac.in', 'NN'), ('+91', 'NNP'), ('-', ':'), ('97277', 'CD'), ('47317', 'CD'), ('(', '('), ('CE', 'NNP'), ('Department', 'NNP'), (')', ')'), ('Computer', 'NNP'), ('Engineering', 'NNP'), ('Department', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B.', 'NNP'), ('Kagathara', 'NNP'), ('Compiler', 'NNP'), ('Design', 'NNP'), ('(', '('), ('CD', 'NN'), (')', ')'), ('Part', 'VBZ'), ('2', 'CD'), ('\uf077', 'JJ'), ('Different', 'NNP'), ('representation', 'NN'), ('three', 'CD'), ('address', 'NN'), ('code', 'NN'), ('Unit-5', 'JJ'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), (',', ','), ('Rajkot', 'NNP'), ('Different', 'NNP'), ('Representation', 'NNP'), ('Three', 'NNP'), ('Address', 'NNP'), ('Code', 'NNP'), ('Different', 'NNP'), ('Representation', 'NNP'), ('Three', 'NNP'), ('Address', 'NNP'), ('Code', 'NNP'), ('There', 'EX'), ('three', 'CD'), ('types', 'NNS'), ('representation', 'NN'), ('used', 'VBN'), ('three', 'CD'), ('address', 'JJ'), ('code', 'NN'), (':', ':'), ('Quadruples', 'NNS'), ('Triples', 'NNS'), ('Indirect', 'NNP'), ('triples', 'VBZ'), ('Ex', 'NNP'), (':', ':'), ('x=', 'NN'), ('-a', 'NNP'), ('*', 'NNP'), ('b', 'NN'), ('+', 'NNP'), ('-a', 'NNP'), ('*', 'NNP'), ('b', 'NN'), ('t1=', 'NN'), ('-', ':'), ('t2', 'NN'), ('=', 'JJ'), ('t1', 'NN'), ('*', 'NN'), ('b', 'NN'), ('t3=', 'SYM'), ('-', ':'), ('t4', 'NN'), ('=', 'JJ'), ('t3', 'NN'), ('*', 'NN'), ('b', 'NN'), ('t5', 'NN'), ('=', 'NNP'), ('t2', 'NN'), ('+', 'NNP'), ('t4', 'NN'), ('x=', 'NNP'), ('t5', 'VBD'), ('Three', 'NNP'), ('Address', 'NNP'), ('Code', 'NNP'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('5', 'CD'), ('–', 'NNP'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Quadruple', 'NNP'), ('The', 'DT'), ('quadruple', 'JJ'), ('structure', 'NN'), ('four', 'CD'), ('fields', 'NNS'), ('op', 'RB'), (',', ','), ('arg1', 'NN'), (',', ','), ('arg2', 'JJ'), ('result', 'NN'), ('.', '.')]
+
+ (S
+  (NP Prof./NNP Jay/NNP R/NNP Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  5/CD
+  (NP –/NNP Intermediate/NNP Code/NNP Generation/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP dixita.kagathara/NN @/NNP darshan.ac.in/NN +91/NNP)
+  -/:
+  97277/CD
+  47317/CD
+  (/(
+  (NP CE/NNP Department/NNP)
+  )/)
+  (NP
+    Computer/NNP
+    Engineering/NNP
+    Department/NNP
+    Prof./NNP
+    Dixita/NNP
+    B./NNP
+    Kagathara/NNP
+    Compiler/NNP
+    Design/NNP)
+  (/(
+  (NP CD/NN)
+  )/)
+  Part/VBZ
+  2/CD
+  (NP /JJ Different/NNP representation/NN)
+  three/CD
+  (NP address/NN code/NN)
+  (NP
+    Unit-5/JJ
+    Intermediate/NNP
+    Code/NNP
+    Generation/NNP
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP)
+  ,/,
+  (NP
+    Rajkot/NNP
+    Different/NNP
+    Representation/NNP
+    Three/NNP
+    Address/NNP
+    Code/NNP
+    Different/NNP
+    Representation/NNP
+    Three/NNP
+    Address/NNP
+    Code/NNP)
+  There/EX
+  three/CD
+  (NP types/NNS representation/NN)
+  used/VBN
+  three/CD
+  (NP address/JJ code/NN)
+  :/:
+  (NP Quadruples/NNS Triples/NNS Indirect/NNP)
+  triples/VBZ
+  (NP Ex/NNP)
+  :/:
+  (NP x=/NN -a/NNP */NNP b/NN +/NNP -a/NNP */NNP b/NN t1=/NN)
+  -/:
+  (NP t2/NN)
+  (NP =/JJ t1/NN */NN b/NN)
+  t3=/SYM
+  -/:
+  (NP t4/NN)
+  (NP =/JJ t3/NN */NN b/NN t5/NN =/NNP t2/NN +/NNP t4/NN x=/NNP)
+  t5/VBD
+  (NP
+    Three/NNP
+    Address/NNP
+    Code/NNP
+    Prof./NNP
+    Jay/NNP
+    R/NNP
+    Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  5/CD
+  (NP –/NNP Intermediate/NNP Code/NNP Generation/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Quadruple/NNP)
+  (NP The/DT quadruple/JJ structure/NN)
+  four/CD
+  (NP fields/NNS)
+  op/RB
+  ,/,
+  (NP arg1/NN)
+  ,/,
+  (NP arg2/JJ result/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Intermediate Code Generation ‹', '› dixita.kagathara @ darshan.ac.in +91', 'CE Department', 'Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design', 'CD', '\uf077 Different representation', 'address code', 'Unit-5 Intermediate Code Generation Darshan Institute Engineering', 'Technology', 'Rajkot Different Representation Three Address Code Different Representation Three Address Code', 'types representation', 'address code', 'Quadruples Triples Indirect', 'Ex', 'x= -a * b + -a * b t1=', 't2', '= t1 * b', 't4', '= t3 * b t5 = t2 + t4 x=', 'Three Address Code Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Intermediate Code Generation ‹', '› Quadruple', 'The quadruple structure', 'fields', 'arg1', 'arg2 result']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'CE Department'), ('ORGANIZATION', 'Computer Engineering Department'), ('PERSON', 'Dixita B. Kagathara Compiler'), ('ORGANIZATION', 'Intermediate Code Generation Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Rajkot Different'), ('PERSON', 'Address Code Different'), ('PERSON', 'Address Code'), ('PERSON', 'Triples Indirect'), ('PERSON', 'Three Address Code'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('dixita.kagathara', 'dixita.kagathara'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('+91', '+91'), ('-', '-'), ('97277', '97277'), ('47317', '47317'), ('(', '('), ('CE', 'ce'), ('Department', 'depart'), (')', ')'), ('Computer', 'comput'), ('Engineering', 'engin'), ('Department', 'depart'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B.', 'b.'), ('Kagathara', 'kagathara'), ('Compiler', 'compil'), ('Design', 'design'), ('(', '('), ('CD', 'cd'), (')', ')'), ('Part', 'part'), ('2', '2'), ('\uf077', '\uf077'), ('Different', 'differ'), ('representation', 'represent'), ('three', 'three'), ('address', 'address'), ('code', 'code'), ('Unit-5', 'unit-5'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), (',', ','), ('Rajkot', 'rajkot'), ('Different', 'differ'), ('Representation', 'represent'), ('Three', 'three'), ('Address', 'address'), ('Code', 'code'), ('Different', 'differ'), ('Representation', 'represent'), ('Three', 'three'), ('Address', 'address'), ('Code', 'code'), ('There', 'there'), ('three', 'three'), ('types', 'type'), ('representation', 'represent'), ('used', 'use'), ('three', 'three'), ('address', 'address'), ('code', 'code'), (':', ':'), ('Quadruples', 'quadrupl'), ('Triples', 'tripl'), ('Indirect', 'indirect'), ('triples', 'tripl'), ('Ex', 'ex'), (':', ':'), ('x=', 'x='), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('+', '+'), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('t1=', 't1='), ('-', '-'), ('t2', 't2'), ('=', '='), ('t1', 't1'), ('*', '*'), ('b', 'b'), ('t3=', 't3='), ('-', '-'), ('t4', 't4'), ('=', '='), ('t3', 't3'), ('*', '*'), ('b', 'b'), ('t5', 't5'), ('=', '='), ('t2', 't2'), ('+', '+'), ('t4', 't4'), ('x=', 'x='), ('t5', 't5'), ('Three', 'three'), ('Address', 'address'), ('Code', 'code'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Quadruple', 'quadrupl'), ('The', 'the'), ('quadruple', 'quadrupl'), ('structure', 'structur'), ('four', 'four'), ('fields', 'field'), ('op', 'op'), (',', ','), ('arg1', 'arg1'), (',', ','), ('arg2', 'arg2'), ('result', 'result'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('dixita.kagathara', 'dixita.kagathara'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('+91', '+91'), ('-', '-'), ('97277', '97277'), ('47317', '47317'), ('(', '('), ('CE', 'ce'), ('Department', 'depart'), (')', ')'), ('Computer', 'comput'), ('Engineering', 'engin'), ('Department', 'depart'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B.', 'b.'), ('Kagathara', 'kagathara'), ('Compiler', 'compil'), ('Design', 'design'), ('(', '('), ('CD', 'cd'), (')', ')'), ('Part', 'part'), ('2', '2'), ('\uf077', '\uf077'), ('Different', 'differ'), ('representation', 'represent'), ('three', 'three'), ('address', 'address'), ('code', 'code'), ('Unit-5', 'unit-5'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), (',', ','), ('Rajkot', 'rajkot'), ('Different', 'differ'), ('Representation', 'represent'), ('Three', 'three'), ('Address', 'address'), ('Code', 'code'), ('Different', 'differ'), ('Representation', 'represent'), ('Three', 'three'), ('Address', 'address'), ('Code', 'code'), ('There', 'there'), ('three', 'three'), ('types', 'type'), ('representation', 'represent'), ('used', 'use'), ('three', 'three'), ('address', 'address'), ('code', 'code'), (':', ':'), ('Quadruples', 'quadrupl'), ('Triples', 'tripl'), ('Indirect', 'indirect'), ('triples', 'tripl'), ('Ex', 'ex'), (':', ':'), ('x=', 'x='), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('+', '+'), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('t1=', 't1='), ('-', '-'), ('t2', 't2'), ('=', '='), ('t1', 't1'), ('*', '*'), ('b', 'b'), ('t3=', 't3='), ('-', '-'), ('t4', 't4'), ('=', '='), ('t3', 't3'), ('*', '*'), ('b', 'b'), ('t5', 't5'), ('=', '='), ('t2', 't2'), ('+', '+'), ('t4', 't4'), ('x=', 'x='), ('t5', 't5'), ('Three', 'three'), ('Address', 'address'), ('Code', 'code'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Quadruple', 'quadrupl'), ('The', 'the'), ('quadruple', 'quadrupl'), ('structure', 'structur'), ('four', 'four'), ('fields', 'field'), ('op', 'op'), (',', ','), ('arg1', 'arg1'), (',', ','), ('arg2', 'arg2'), ('result', 'result'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('dixita.kagathara', 'dixita.kagathara'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('+91', '+91'), ('-', '-'), ('97277', '97277'), ('47317', '47317'), ('(', '('), ('CE', 'CE'), ('Department', 'Department'), (')', ')'), ('Computer', 'Computer'), ('Engineering', 'Engineering'), ('Department', 'Department'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B.', 'B.'), ('Kagathara', 'Kagathara'), ('Compiler', 'Compiler'), ('Design', 'Design'), ('(', '('), ('CD', 'CD'), (')', ')'), ('Part', 'Part'), ('2', '2'), ('\uf077', '\uf077'), ('Different', 'Different'), ('representation', 'representation'), ('three', 'three'), ('address', 'address'), ('code', 'code'), ('Unit-5', 'Unit-5'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), (',', ','), ('Rajkot', 'Rajkot'), ('Different', 'Different'), ('Representation', 'Representation'), ('Three', 'Three'), ('Address', 'Address'), ('Code', 'Code'), ('Different', 'Different'), ('Representation', 'Representation'), ('Three', 'Three'), ('Address', 'Address'), ('Code', 'Code'), ('There', 'There'), ('three', 'three'), ('types', 'type'), ('representation', 'representation'), ('used', 'used'), ('three', 'three'), ('address', 'address'), ('code', 'code'), (':', ':'), ('Quadruples', 'Quadruples'), ('Triples', 'Triples'), ('Indirect', 'Indirect'), ('triples', 'triple'), ('Ex', 'Ex'), (':', ':'), ('x=', 'x='), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('+', '+'), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('t1=', 't1='), ('-', '-'), ('t2', 't2'), ('=', '='), ('t1', 't1'), ('*', '*'), ('b', 'b'), ('t3=', 't3='), ('-', '-'), ('t4', 't4'), ('=', '='), ('t3', 't3'), ('*', '*'), ('b', 'b'), ('t5', 't5'), ('=', '='), ('t2', 't2'), ('+', '+'), ('t4', 't4'), ('x=', 'x='), ('t5', 't5'), ('Three', 'Three'), ('Address', 'Address'), ('Code', 'Code'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Quadruple', 'Quadruple'), ('The', 'The'), ('quadruple', 'quadruple'), ('structure', 'structure'), ('four', 'four'), ('fields', 'field'), ('op', 'op'), (',', ','), ('arg1', 'arg1'), (',', ','), ('arg2', 'arg2'), ('result', 'result'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+The op field is used to represent the internal code for operator. 
+
+
+>> Tokens are: 
+ ['The', 'op', 'field', 'used', 'represent', 'internal', 'code', 'operator', '.']
+
+>> Bigrams are: 
+ [('The', 'op'), ('op', 'field'), ('field', 'used'), ('used', 'represent'), ('represent', 'internal'), ('internal', 'code'), ('code', 'operator'), ('operator', '.')]
+
+>> Trigrams are: 
+ [('The', 'op', 'field'), ('op', 'field', 'used'), ('field', 'used', 'represent'), ('used', 'represent', 'internal'), ('represent', 'internal', 'code'), ('internal', 'code', 'operator'), ('code', 'operator', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('op', 'JJ'), ('field', 'NN'), ('used', 'VBN'), ('represent', 'JJ'), ('internal', 'JJ'), ('code', 'NN'), ('operator', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT op/JJ field/NN)
+  used/VBN
+  (NP represent/JJ internal/JJ code/NN operator/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The op field', 'represent internal code operator']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('op', 'op'), ('field', 'field'), ('used', 'use'), ('represent', 'repres'), ('internal', 'intern'), ('code', 'code'), ('operator', 'oper'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('op', 'op'), ('field', 'field'), ('used', 'use'), ('represent', 'repres'), ('internal', 'intern'), ('code', 'code'), ('operator', 'oper'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('op', 'op'), ('field', 'field'), ('used', 'used'), ('represent', 'represent'), ('internal', 'internal'), ('code', 'code'), ('operator', 'operator'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+The arg1 and arg2 represent the two operands. 
+
+
+>> Tokens are: 
+ ['The', 'arg1', 'arg2', 'represent', 'two', 'operands', '.']
+
+>> Bigrams are: 
+ [('The', 'arg1'), ('arg1', 'arg2'), ('arg2', 'represent'), ('represent', 'two'), ('two', 'operands'), ('operands', '.')]
+
+>> Trigrams are: 
+ [('The', 'arg1', 'arg2'), ('arg1', 'arg2', 'represent'), ('arg2', 'represent', 'two'), ('represent', 'two', 'operands'), ('two', 'operands', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('arg1', 'NN'), ('arg2', 'JJ'), ('represent', 'NN'), ('two', 'CD'), ('operands', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT arg1/NN)
+  (NP arg2/JJ represent/NN)
+  two/CD
+  (NP operands/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The arg1', 'arg2 represent', 'operands']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('arg1', 'arg1'), ('arg2', 'arg2'), ('represent', 'repres'), ('two', 'two'), ('operands', 'operand'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('arg1', 'arg1'), ('arg2', 'arg2'), ('represent', 'repres'), ('two', 'two'), ('operands', 'operand'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('arg1', 'arg1'), ('arg2', 'arg2'), ('represent', 'represent'), ('two', 'two'), ('operands', 'operand'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+And result field is used to store the result of an expression. 
+
+
+>> Tokens are: 
+ ['And', 'result', 'field', 'used', 'store', 'result', 'expression', '.']
+
+>> Bigrams are: 
+ [('And', 'result'), ('result', 'field'), ('field', 'used'), ('used', 'store'), ('store', 'result'), ('result', 'expression'), ('expression', '.')]
+
+>> Trigrams are: 
+ [('And', 'result', 'field'), ('result', 'field', 'used'), ('field', 'used', 'store'), ('used', 'store', 'result'), ('store', 'result', 'expression'), ('result', 'expression', '.')]
+
+>> POS Tags are: 
+ [('And', 'CC'), ('result', 'NN'), ('field', 'NN'), ('used', 'VBN'), ('store', 'RB'), ('result', 'JJ'), ('expression', 'NN'), ('.', '.')]
+
+ (S
+  And/CC
+  (NP result/NN field/NN)
+  used/VBN
+  store/RB
+  (NP result/JJ expression/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['result field', 'result expression']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('And', 'and'), ('result', 'result'), ('field', 'field'), ('used', 'use'), ('store', 'store'), ('result', 'result'), ('expression', 'express'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('And', 'and'), ('result', 'result'), ('field', 'field'), ('used', 'use'), ('store', 'store'), ('result', 'result'), ('expression', 'express'), ('.', '.')]
+
+>> Lemmatization: 
+ [('And', 'And'), ('result', 'result'), ('field', 'field'), ('used', 'used'), ('store', 'store'), ('result', 'result'), ('expression', 'expression'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+x= -a*b + -a*b 	t1= - a 	t2 = t1 * b 	t3= - a 	t4 = t3 * b 	t5 = t2 + t4 	x= t5 	No. 
+
+
+>> Tokens are: 
+ ['x=', '-a', '*', 'b', '+', '-a', '*', 'b', 't1=', '-', 't2', '=', 't1', '*', 'b', 't3=', '-', 't4', '=', 't3', '*', 'b', 't5', '=', 't2', '+', 't4', 'x=', 't5', 'No', '.']
+
+>> Bigrams are: 
+ [('x=', '-a'), ('-a', '*'), ('*', 'b'), ('b', '+'), ('+', '-a'), ('-a', '*'), ('*', 'b'), ('b', 't1='), ('t1=', '-'), ('-', 't2'), ('t2', '='), ('=', 't1'), ('t1', '*'), ('*', 'b'), ('b', 't3='), ('t3=', '-'), ('-', 't4'), ('t4', '='), ('=', 't3'), ('t3', '*'), ('*', 'b'), ('b', 't5'), ('t5', '='), ('=', 't2'), ('t2', '+'), ('+', 't4'), ('t4', 'x='), ('x=', 't5'), ('t5', 'No'), ('No', '.')]
+
+>> Trigrams are: 
+ [('x=', '-a', '*'), ('-a', '*', 'b'), ('*', 'b', '+'), ('b', '+', '-a'), ('+', '-a', '*'), ('-a', '*', 'b'), ('*', 'b', 't1='), ('b', 't1=', '-'), ('t1=', '-', 't2'), ('-', 't2', '='), ('t2', '=', 't1'), ('=', 't1', '*'), ('t1', '*', 'b'), ('*', 'b', 't3='), ('b', 't3=', '-'), ('t3=', '-', 't4'), ('-', 't4', '='), ('t4', '=', 't3'), ('=', 't3', '*'), ('t3', '*', 'b'), ('*', 'b', 't5'), ('b', 't5', '='), ('t5', '=', 't2'), ('=', 't2', '+'), ('t2', '+', 't4'), ('+', 't4', 'x='), ('t4', 'x=', 't5'), ('x=', 't5', 'No'), ('t5', 'No', '.')]
+
+>> POS Tags are: 
+ [('x=', 'JJ'), ('-a', 'NNP'), ('*', 'NNP'), ('b', 'NN'), ('+', 'NNP'), ('-a', 'NNP'), ('*', 'NNP'), ('b', 'NN'), ('t1=', 'NN'), ('-', ':'), ('t2', 'NN'), ('=', 'JJ'), ('t1', 'NN'), ('*', 'NN'), ('b', 'NN'), ('t3=', 'SYM'), ('-', ':'), ('t4', 'NN'), ('=', 'JJ'), ('t3', 'NN'), ('*', 'NN'), ('b', 'NN'), ('t5', 'NN'), ('=', 'NNP'), ('t2', 'NN'), ('+', 'NNP'), ('t4', 'NN'), ('x=', 'NNP'), ('t5', 'VBZ'), ('No', 'DT'), ('.', '.')]
+
+ (S
+  (NP x=/JJ -a/NNP */NNP b/NN +/NNP -a/NNP */NNP b/NN t1=/NN)
+  -/:
+  (NP t2/NN)
+  (NP =/JJ t1/NN */NN b/NN)
+  t3=/SYM
+  -/:
+  (NP t4/NN)
+  (NP =/JJ t3/NN */NN b/NN t5/NN =/NNP t2/NN +/NNP t4/NN x=/NNP)
+  t5/VBZ
+  No/DT
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['x= -a * b + -a * b t1=', 't2', '= t1 * b', 't4', '= t3 * b t5 = t2 + t4 x=']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('x=', 'x='), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('+', '+'), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('t1=', 't1='), ('-', '-'), ('t2', 't2'), ('=', '='), ('t1', 't1'), ('*', '*'), ('b', 'b'), ('t3=', 't3='), ('-', '-'), ('t4', 't4'), ('=', '='), ('t3', 't3'), ('*', '*'), ('b', 'b'), ('t5', 't5'), ('=', '='), ('t2', 't2'), ('+', '+'), ('t4', 't4'), ('x=', 'x='), ('t5', 't5'), ('No', 'no'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('x=', 'x='), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('+', '+'), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('t1=', 't1='), ('-', '-'), ('t2', 't2'), ('=', '='), ('t1', 't1'), ('*', '*'), ('b', 'b'), ('t3=', 't3='), ('-', '-'), ('t4', 't4'), ('=', '='), ('t3', 't3'), ('*', '*'), ('b', 'b'), ('t5', 't5'), ('=', '='), ('t2', 't2'), ('+', '+'), ('t4', 't4'), ('x=', 'x='), ('t5', 't5'), ('No', 'no'), ('.', '.')]
+
+>> Lemmatization: 
+ [('x=', 'x='), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('+', '+'), ('-a', '-a'), ('*', '*'), ('b', 'b'), ('t1=', 't1='), ('-', '-'), ('t2', 't2'), ('=', '='), ('t1', 't1'), ('*', '*'), ('b', 'b'), ('t3=', 't3='), ('-', '-'), ('t4', 't4'), ('=', '='), ('t3', 't3'), ('*', '*'), ('b', 'b'), ('t5', 't5'), ('=', '='), ('t2', 't2'), ('+', '+'), ('t4', 't4'), ('x=', 'x='), ('t5', 't5'), ('No', 'No'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+Operator	Arg1	Arg2	Result  	(0)	uminus	a		t1  	(1)	*	t1	b	t2  	(2)	uminus	a		t3  	(3)	*	t3	b	t4  	(4)	+	t2	t4	t5  	(5)	=	t5		x  Quadruple                         Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  Triple To avoid entering temporary names into the symbol table, we might refer a temporary value by the position of the statement that computes it. 
+
+
+>> Tokens are: 
+ ['Operator', 'Arg1', 'Arg2', 'Result', '(', '0', ')', 'uminus', 't1', '(', '1', ')', '*', 't1', 'b', 't2', '(', '2', ')', 'uminus', 't3', '(', '3', ')', '*', 't3', 'b', 't4', '(', '4', ')', '+', 't2', 't4', 't5', '(', '5', ')', '=', 't5', 'x', 'Quadruple', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '5', '–', 'Intermediate', 'Code', 'Generation', '‹', '#', '›', 'Triple', 'To', 'avoid', 'entering', 'temporary', 'names', 'symbol', 'table', ',', 'might', 'refer', 'temporary', 'value', 'position', 'statement', 'computes', '.']
+
+>> Bigrams are: 
+ [('Operator', 'Arg1'), ('Arg1', 'Arg2'), ('Arg2', 'Result'), ('Result', '('), ('(', '0'), ('0', ')'), (')', 'uminus'), ('uminus', 't1'), ('t1', '('), ('(', '1'), ('1', ')'), (')', '*'), ('*', 't1'), ('t1', 'b'), ('b', 't2'), ('t2', '('), ('(', '2'), ('2', ')'), (')', 'uminus'), ('uminus', 't3'), ('t3', '('), ('(', '3'), ('3', ')'), (')', '*'), ('*', 't3'), ('t3', 'b'), ('b', 't4'), ('t4', '('), ('(', '4'), ('4', ')'), (')', '+'), ('+', 't2'), ('t2', 't4'), ('t4', 't5'), ('t5', '('), ('(', '5'), ('5', ')'), (')', '='), ('=', 't5'), ('t5', 'x'), ('x', 'Quadruple'), ('Quadruple', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '5'), ('5', '–'), ('–', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Triple'), ('Triple', 'To'), ('To', 'avoid'), ('avoid', 'entering'), ('entering', 'temporary'), ('temporary', 'names'), ('names', 'symbol'), ('symbol', 'table'), ('table', ','), (',', 'might'), ('might', 'refer'), ('refer', 'temporary'), ('temporary', 'value'), ('value', 'position'), ('position', 'statement'), ('statement', 'computes'), ('computes', '.')]
+
+>> Trigrams are: 
+ [('Operator', 'Arg1', 'Arg2'), ('Arg1', 'Arg2', 'Result'), ('Arg2', 'Result', '('), ('Result', '(', '0'), ('(', '0', ')'), ('0', ')', 'uminus'), (')', 'uminus', 't1'), ('uminus', 't1', '('), ('t1', '(', '1'), ('(', '1', ')'), ('1', ')', '*'), (')', '*', 't1'), ('*', 't1', 'b'), ('t1', 'b', 't2'), ('b', 't2', '('), ('t2', '(', '2'), ('(', '2', ')'), ('2', ')', 'uminus'), (')', 'uminus', 't3'), ('uminus', 't3', '('), ('t3', '(', '3'), ('(', '3', ')'), ('3', ')', '*'), (')', '*', 't3'), ('*', 't3', 'b'), ('t3', 'b', 't4'), ('b', 't4', '('), ('t4', '(', '4'), ('(', '4', ')'), ('4', ')', '+'), (')', '+', 't2'), ('+', 't2', 't4'), ('t2', 't4', 't5'), ('t4', 't5', '('), ('t5', '(', '5'), ('(', '5', ')'), ('5', ')', '='), (')', '=', 't5'), ('=', 't5', 'x'), ('t5', 'x', 'Quadruple'), ('x', 'Quadruple', 'Prof.'), ('Quadruple', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '5'), ('Unit', '5', '–'), ('5', '–', 'Intermediate'), ('–', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', '‹'), ('Generation', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Triple'), ('›', 'Triple', 'To'), ('Triple', 'To', 'avoid'), ('To', 'avoid', 'entering'), ('avoid', 'entering', 'temporary'), ('entering', 'temporary', 'names'), ('temporary', 'names', 'symbol'), ('names', 'symbol', 'table'), ('symbol', 'table', ','), ('table', ',', 'might'), (',', 'might', 'refer'), ('might', 'refer', 'temporary'), ('refer', 'temporary', 'value'), ('temporary', 'value', 'position'), ('value', 'position', 'statement'), ('position', 'statement', 'computes'), ('statement', 'computes', '.')]
+
+>> POS Tags are: 
+ [('Operator', 'NNP'), ('Arg1', 'NNP'), ('Arg2', 'NNP'), ('Result', 'NNP'), ('(', '('), ('0', 'CD'), (')', ')'), ('uminus', 'NN'), ('t1', 'NN'), ('(', '('), ('1', 'CD'), (')', ')'), ('*', 'NN'), ('t1', 'NN'), ('b', 'NN'), ('t2', 'NN'), ('(', '('), ('2', 'CD'), (')', ')'), ('uminus', 'NN'), ('t3', 'NN'), ('(', '('), ('3', 'CD'), (')', ')'), ('*', 'NN'), ('t3', 'NN'), ('b', 'NN'), ('t4', 'NN'), ('(', '('), ('4', 'CD'), (')', ')'), ('+', 'NN'), ('t2', 'NN'), ('t4', 'NN'), ('t5', 'NN'), ('(', '('), ('5', 'CD'), (')', ')'), ('=', 'NN'), ('t5', 'NN'), ('x', 'NNP'), ('Quadruple', 'NNP'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('5', 'CD'), ('–', 'NNP'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'JJ'), ('Triple', 'NNP'), ('To', 'TO'), ('avoid', 'VB'), ('entering', 'VBG'), ('temporary', 'JJ'), ('names', 'NNS'), ('symbol', 'NN'), ('table', 'NN'), (',', ','), ('might', 'MD'), ('refer', 'VB'), ('temporary', 'JJ'), ('value', 'NN'), ('position', 'NN'), ('statement', 'NN'), ('computes', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Operator/NNP Arg1/NNP Arg2/NNP Result/NNP)
+  (/(
+  0/CD
+  )/)
+  (NP uminus/NN t1/NN)
+  (/(
+  1/CD
+  )/)
+  (NP */NN t1/NN b/NN t2/NN)
+  (/(
+  2/CD
+  )/)
+  (NP uminus/NN t3/NN)
+  (/(
+  3/CD
+  )/)
+  (NP */NN t3/NN b/NN t4/NN)
+  (/(
+  4/CD
+  )/)
+  (NP +/NN t2/NN t4/NN t5/NN)
+  (/(
+  5/CD
+  )/)
+  (NP
+    =/NN
+    t5/NN
+    x/NNP
+    Quadruple/NNP
+    Prof./NNP
+    Jay/NNP
+    R/NNP
+    Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  5/CD
+  (NP –/NNP Intermediate/NNP Code/NNP Generation/NNP ‹/NNP)
+  #/#
+  (NP ›/JJ Triple/NNP)
+  To/TO
+  avoid/VB
+  entering/VBG
+  (NP temporary/JJ names/NNS symbol/NN table/NN)
+  ,/,
+  might/MD
+  refer/VB
+  (NP temporary/JJ value/NN position/NN statement/NN computes/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Operator Arg1 Arg2 Result', 'uminus t1', '* t1 b t2', 'uminus t3', '* t3 b t4', '+ t2 t4 t5', '= t5 x Quadruple Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Intermediate Code Generation ‹', '› Triple', 'temporary names symbol table', 'temporary value position statement computes']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Operator', 'oper'), ('Arg1', 'arg1'), ('Arg2', 'arg2'), ('Result', 'result'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminu'), ('t1', 't1'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('t1', 't1'), ('b', 'b'), ('t2', 't2'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminu'), ('t3', 't3'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('t3', 't3'), ('b', 'b'), ('t4', 't4'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('t2', 't2'), ('t4', 't4'), ('t5', 't5'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('t5', 't5'), ('x', 'x'), ('Quadruple', 'quadrupl'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Triple', 'tripl'), ('To', 'to'), ('avoid', 'avoid'), ('entering', 'enter'), ('temporary', 'temporari'), ('names', 'name'), ('symbol', 'symbol'), ('table', 'tabl'), (',', ','), ('might', 'might'), ('refer', 'refer'), ('temporary', 'temporari'), ('value', 'valu'), ('position', 'posit'), ('statement', 'statement'), ('computes', 'comput'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Operator', 'oper'), ('Arg1', 'arg1'), ('Arg2', 'arg2'), ('Result', 'result'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminus'), ('t1', 't1'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('t1', 't1'), ('b', 'b'), ('t2', 't2'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminus'), ('t3', 't3'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('t3', 't3'), ('b', 'b'), ('t4', 't4'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('t2', 't2'), ('t4', 't4'), ('t5', 't5'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('t5', 't5'), ('x', 'x'), ('Quadruple', 'quadrupl'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Triple', 'tripl'), ('To', 'to'), ('avoid', 'avoid'), ('entering', 'enter'), ('temporary', 'temporari'), ('names', 'name'), ('symbol', 'symbol'), ('table', 'tabl'), (',', ','), ('might', 'might'), ('refer', 'refer'), ('temporary', 'temporari'), ('value', 'valu'), ('position', 'posit'), ('statement', 'statement'), ('computes', 'comput'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Operator', 'Operator'), ('Arg1', 'Arg1'), ('Arg2', 'Arg2'), ('Result', 'Result'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminus'), ('t1', 't1'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('t1', 't1'), ('b', 'b'), ('t2', 't2'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminus'), ('t3', 't3'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('t3', 't3'), ('b', 'b'), ('t4', 't4'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('t2', 't2'), ('t4', 't4'), ('t5', 't5'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('t5', 't5'), ('x', 'x'), ('Quadruple', 'Quadruple'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Triple', 'Triple'), ('To', 'To'), ('avoid', 'avoid'), ('entering', 'entering'), ('temporary', 'temporary'), ('names', 'name'), ('symbol', 'symbol'), ('table', 'table'), (',', ','), ('might', 'might'), ('refer', 'refer'), ('temporary', 'temporary'), ('value', 'value'), ('position', 'position'), ('statement', 'statement'), ('computes', 'computes'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+If we do so, three address statements can be represented by records with only three fields: op, arg1 and arg2. 
+
+
+>> Tokens are: 
+ ['If', ',', 'three', 'address', 'statements', 'represented', 'records', 'three', 'fields', ':', 'op', ',', 'arg1', 'arg2', '.']
+
+>> Bigrams are: 
+ [('If', ','), (',', 'three'), ('three', 'address'), ('address', 'statements'), ('statements', 'represented'), ('represented', 'records'), ('records', 'three'), ('three', 'fields'), ('fields', ':'), (':', 'op'), ('op', ','), (',', 'arg1'), ('arg1', 'arg2'), ('arg2', '.')]
+
+>> Trigrams are: 
+ [('If', ',', 'three'), (',', 'three', 'address'), ('three', 'address', 'statements'), ('address', 'statements', 'represented'), ('statements', 'represented', 'records'), ('represented', 'records', 'three'), ('records', 'three', 'fields'), ('three', 'fields', ':'), ('fields', ':', 'op'), (':', 'op', ','), ('op', ',', 'arg1'), (',', 'arg1', 'arg2'), ('arg1', 'arg2', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), (',', ','), ('three', 'CD'), ('address', 'NN'), ('statements', 'NNS'), ('represented', 'VBD'), ('records', 'NNS'), ('three', 'CD'), ('fields', 'NNS'), (':', ':'), ('op', 'NN'), (',', ','), ('arg1', 'JJ'), ('arg2', 'NN'), ('.', '.')]
+
+ (S
+  If/IN
+  ,/,
+  three/CD
+  (NP address/NN statements/NNS)
+  represented/VBD
+  (NP records/NNS)
+  three/CD
+  (NP fields/NNS)
+  :/:
+  (NP op/NN)
+  ,/,
+  (NP arg1/JJ arg2/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['address statements', 'records', 'fields', 'op', 'arg1 arg2']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), (',', ','), ('three', 'three'), ('address', 'address'), ('statements', 'statement'), ('represented', 'repres'), ('records', 'record'), ('three', 'three'), ('fields', 'field'), (':', ':'), ('op', 'op'), (',', ','), ('arg1', 'arg1'), ('arg2', 'arg2'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), (',', ','), ('three', 'three'), ('address', 'address'), ('statements', 'statement'), ('represented', 'repres'), ('records', 'record'), ('three', 'three'), ('fields', 'field'), (':', ':'), ('op', 'op'), (',', ','), ('arg1', 'arg1'), ('arg2', 'arg2'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), (',', ','), ('three', 'three'), ('address', 'address'), ('statements', 'statement'), ('represented', 'represented'), ('records', 'record'), ('three', 'three'), ('fields', 'field'), (':', ':'), ('op', 'op'), (',', ','), ('arg1', 'arg1'), ('arg2', 'arg2'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+No. 
+
+
+>> Tokens are: 
+ ['No', '.']
+
+>> Bigrams are: 
+ [('No', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('No', 'DT'), ('.', '.')]
+
+ (S No/DT ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('No', 'no'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('No', 'no'), ('.', '.')]
+
+>> Lemmatization: 
+ [('No', 'No'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+Operator	Arg1	Arg2  	No. 
+
+
+>> Tokens are: 
+ ['Operator', 'Arg1', 'Arg2', 'No', '.']
+
+>> Bigrams are: 
+ [('Operator', 'Arg1'), ('Arg1', 'Arg2'), ('Arg2', 'No'), ('No', '.')]
+
+>> Trigrams are: 
+ [('Operator', 'Arg1', 'Arg2'), ('Arg1', 'Arg2', 'No'), ('Arg2', 'No', '.')]
+
+>> POS Tags are: 
+ [('Operator', 'NNP'), ('Arg1', 'NNP'), ('Arg2', 'NNP'), ('No', 'NNP'), ('.', '.')]
+
+ (S (NP Operator/NNP Arg1/NNP Arg2/NNP No/NNP) ./.) 
+
+
+>> Noun Phrases are: 
+ ['Operator Arg1 Arg2 No']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Operator', 'oper'), ('Arg1', 'arg1'), ('Arg2', 'arg2'), ('No', 'no'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Operator', 'oper'), ('Arg1', 'arg1'), ('Arg2', 'arg2'), ('No', 'no'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Operator', 'Operator'), ('Arg1', 'Arg1'), ('Arg2', 'Arg2'), ('No', 'No'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+Operator	Arg1	Arg2	Result  	(0)	uminus	a		t1  	(1)	*	t1	b	t2  	(2)	uminus	a		t3  	(3)	*	t3	b	t4  	(4)	+	t2	t4	t5  	(5)	=	t5		x  	(0)	uminus	a	  	(1)	*	(0)	b  	(2)	uminus	a	  	(3)	*	(2)	b  	(4)	+	(1)	(3)  	(5)	=	x	(4)  Quadruple Triple                    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  Indirect Triple In the indirect triple representation the listing of triples has been done. 
+
+
+>> Tokens are: 
+ ['Operator', 'Arg1', 'Arg2', 'Result', '(', '0', ')', 'uminus', 't1', '(', '1', ')', '*', 't1', 'b', 't2', '(', '2', ')', 'uminus', 't3', '(', '3', ')', '*', 't3', 'b', 't4', '(', '4', ')', '+', 't2', 't4', 't5', '(', '5', ')', '=', 't5', 'x', '(', '0', ')', 'uminus', '(', '1', ')', '*', '(', '0', ')', 'b', '(', '2', ')', 'uminus', '(', '3', ')', '*', '(', '2', ')', 'b', '(', '4', ')', '+', '(', '1', ')', '(', '3', ')', '(', '5', ')', '=', 'x', '(', '4', ')', 'Quadruple', 'Triple', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '5', '–', 'Intermediate', 'Code', 'Generation', '‹', '#', '›', 'Indirect', 'Triple', 'In', 'indirect', 'triple', 'representation', 'listing', 'triples', 'done', '.']
+
+>> Bigrams are: 
+ [('Operator', 'Arg1'), ('Arg1', 'Arg2'), ('Arg2', 'Result'), ('Result', '('), ('(', '0'), ('0', ')'), (')', 'uminus'), ('uminus', 't1'), ('t1', '('), ('(', '1'), ('1', ')'), (')', '*'), ('*', 't1'), ('t1', 'b'), ('b', 't2'), ('t2', '('), ('(', '2'), ('2', ')'), (')', 'uminus'), ('uminus', 't3'), ('t3', '('), ('(', '3'), ('3', ')'), (')', '*'), ('*', 't3'), ('t3', 'b'), ('b', 't4'), ('t4', '('), ('(', '4'), ('4', ')'), (')', '+'), ('+', 't2'), ('t2', 't4'), ('t4', 't5'), ('t5', '('), ('(', '5'), ('5', ')'), (')', '='), ('=', 't5'), ('t5', 'x'), ('x', '('), ('(', '0'), ('0', ')'), (')', 'uminus'), ('uminus', '('), ('(', '1'), ('1', ')'), (')', '*'), ('*', '('), ('(', '0'), ('0', ')'), (')', 'b'), ('b', '('), ('(', '2'), ('2', ')'), (')', 'uminus'), ('uminus', '('), ('(', '3'), ('3', ')'), (')', '*'), ('*', '('), ('(', '2'), ('2', ')'), (')', 'b'), ('b', '('), ('(', '4'), ('4', ')'), (')', '+'), ('+', '('), ('(', '1'), ('1', ')'), (')', '('), ('(', '3'), ('3', ')'), (')', '('), ('(', '5'), ('5', ')'), (')', '='), ('=', 'x'), ('x', '('), ('(', '4'), ('4', ')'), (')', 'Quadruple'), ('Quadruple', 'Triple'), ('Triple', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '5'), ('5', '–'), ('–', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Indirect'), ('Indirect', 'Triple'), ('Triple', 'In'), ('In', 'indirect'), ('indirect', 'triple'), ('triple', 'representation'), ('representation', 'listing'), ('listing', 'triples'), ('triples', 'done'), ('done', '.')]
+
+>> Trigrams are: 
+ [('Operator', 'Arg1', 'Arg2'), ('Arg1', 'Arg2', 'Result'), ('Arg2', 'Result', '('), ('Result', '(', '0'), ('(', '0', ')'), ('0', ')', 'uminus'), (')', 'uminus', 't1'), ('uminus', 't1', '('), ('t1', '(', '1'), ('(', '1', ')'), ('1', ')', '*'), (')', '*', 't1'), ('*', 't1', 'b'), ('t1', 'b', 't2'), ('b', 't2', '('), ('t2', '(', '2'), ('(', '2', ')'), ('2', ')', 'uminus'), (')', 'uminus', 't3'), ('uminus', 't3', '('), ('t3', '(', '3'), ('(', '3', ')'), ('3', ')', '*'), (')', '*', 't3'), ('*', 't3', 'b'), ('t3', 'b', 't4'), ('b', 't4', '('), ('t4', '(', '4'), ('(', '4', ')'), ('4', ')', '+'), (')', '+', 't2'), ('+', 't2', 't4'), ('t2', 't4', 't5'), ('t4', 't5', '('), ('t5', '(', '5'), ('(', '5', ')'), ('5', ')', '='), (')', '=', 't5'), ('=', 't5', 'x'), ('t5', 'x', '('), ('x', '(', '0'), ('(', '0', ')'), ('0', ')', 'uminus'), (')', 'uminus', '('), ('uminus', '(', '1'), ('(', '1', ')'), ('1', ')', '*'), (')', '*', '('), ('*', '(', '0'), ('(', '0', ')'), ('0', ')', 'b'), (')', 'b', '('), ('b', '(', '2'), ('(', '2', ')'), ('2', ')', 'uminus'), (')', 'uminus', '('), ('uminus', '(', '3'), ('(', '3', ')'), ('3', ')', '*'), (')', '*', '('), ('*', '(', '2'), ('(', '2', ')'), ('2', ')', 'b'), (')', 'b', '('), ('b', '(', '4'), ('(', '4', ')'), ('4', ')', '+'), (')', '+', '('), ('+', '(', '1'), ('(', '1', ')'), ('1', ')', '('), (')', '(', '3'), ('(', '3', ')'), ('3', ')', '('), (')', '(', '5'), ('(', '5', ')'), ('5', ')', '='), (')', '=', 'x'), ('=', 'x', '('), ('x', '(', '4'), ('(', '4', ')'), ('4', ')', 'Quadruple'), (')', 'Quadruple', 'Triple'), ('Quadruple', 'Triple', 'Prof.'), ('Triple', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '5'), ('Unit', '5', '–'), ('5', '–', 'Intermediate'), ('–', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', '‹'), ('Generation', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Indirect'), ('›', 'Indirect', 'Triple'), ('Indirect', 'Triple', 'In'), ('Triple', 'In', 'indirect'), ('In', 'indirect', 'triple'), ('indirect', 'triple', 'representation'), ('triple', 'representation', 'listing'), ('representation', 'listing', 'triples'), ('listing', 'triples', 'done'), ('triples', 'done', '.')]
+
+>> POS Tags are: 
+ [('Operator', 'NNP'), ('Arg1', 'NNP'), ('Arg2', 'NNP'), ('Result', 'NNP'), ('(', '('), ('0', 'CD'), (')', ')'), ('uminus', 'NN'), ('t1', 'NN'), ('(', '('), ('1', 'CD'), (')', ')'), ('*', 'NN'), ('t1', 'NN'), ('b', 'NN'), ('t2', 'NN'), ('(', '('), ('2', 'CD'), (')', ')'), ('uminus', 'NN'), ('t3', 'NN'), ('(', '('), ('3', 'CD'), (')', ')'), ('*', 'NN'), ('t3', 'NN'), ('b', 'NN'), ('t4', 'NN'), ('(', '('), ('4', 'CD'), (')', ')'), ('+', 'NN'), ('t2', 'NN'), ('t4', 'NN'), ('t5', 'NN'), ('(', '('), ('5', 'CD'), (')', ')'), ('=', 'NN'), ('t5', 'NN'), ('x', 'NNP'), ('(', '('), ('0', 'CD'), (')', ')'), ('uminus', 'NN'), ('(', '('), ('1', 'CD'), (')', ')'), ('*', 'NN'), ('(', '('), ('0', 'CD'), (')', ')'), ('b', 'NN'), ('(', '('), ('2', 'CD'), (')', ')'), ('uminus', 'NN'), ('(', '('), ('3', 'CD'), (')', ')'), ('*', 'NN'), ('(', '('), ('2', 'CD'), (')', ')'), ('b', 'NN'), ('(', '('), ('4', 'CD'), (')', ')'), ('+', 'NN'), ('(', '('), ('1', 'CD'), (')', ')'), ('(', '('), ('3', 'CD'), (')', ')'), ('(', '('), ('5', 'CD'), (')', ')'), ('=', 'NN'), ('x', 'NNP'), ('(', '('), ('4', 'CD'), (')', ')'), ('Quadruple', 'NN'), ('Triple', 'NNP'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('5', 'CD'), ('–', 'NNP'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Indirect', 'NNP'), ('Triple', 'NNP'), ('In', 'IN'), ('indirect', 'JJ'), ('triple', 'JJ'), ('representation', 'NN'), ('listing', 'NN'), ('triples', 'NNS'), ('done', 'VBN'), ('.', '.')]
+
+ (S
+  (NP Operator/NNP Arg1/NNP Arg2/NNP Result/NNP)
+  (/(
+  0/CD
+  )/)
+  (NP uminus/NN t1/NN)
+  (/(
+  1/CD
+  )/)
+  (NP */NN t1/NN b/NN t2/NN)
+  (/(
+  2/CD
+  )/)
+  (NP uminus/NN t3/NN)
+  (/(
+  3/CD
+  )/)
+  (NP */NN t3/NN b/NN t4/NN)
+  (/(
+  4/CD
+  )/)
+  (NP +/NN t2/NN t4/NN t5/NN)
+  (/(
+  5/CD
+  )/)
+  (NP =/NN t5/NN x/NNP)
+  (/(
+  0/CD
+  )/)
+  (NP uminus/NN)
+  (/(
+  1/CD
+  )/)
+  (NP */NN)
+  (/(
+  0/CD
+  )/)
+  (NP b/NN)
+  (/(
+  2/CD
+  )/)
+  (NP uminus/NN)
+  (/(
+  3/CD
+  )/)
+  (NP */NN)
+  (/(
+  2/CD
+  )/)
+  (NP b/NN)
+  (/(
+  4/CD
+  )/)
+  (NP +/NN)
+  (/(
+  1/CD
+  )/)
+  (/(
+  3/CD
+  )/)
+  (/(
+  5/CD
+  )/)
+  (NP =/NN x/NNP)
+  (/(
+  4/CD
+  )/)
+  (NP Quadruple/NN Triple/NNP Prof./NNP Jay/NNP R/NNP Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  5/CD
+  (NP –/NNP Intermediate/NNP Code/NNP Generation/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Indirect/NNP Triple/NNP)
+  In/IN
+  (NP indirect/JJ triple/JJ representation/NN listing/NN triples/NNS)
+  done/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Operator Arg1 Arg2 Result', 'uminus t1', '* t1 b t2', 'uminus t3', '* t3 b t4', '+ t2 t4 t5', '= t5 x', 'uminus', '*', 'b', 'uminus', '*', 'b', '+', '= x', 'Quadruple Triple Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Intermediate Code Generation ‹', '› Indirect Triple', 'indirect triple representation listing triples']
+
+>> Named Entities are: 
+ [('PERSON', 'Triple'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Operator', 'oper'), ('Arg1', 'arg1'), ('Arg2', 'arg2'), ('Result', 'result'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminu'), ('t1', 't1'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('t1', 't1'), ('b', 'b'), ('t2', 't2'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminu'), ('t3', 't3'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('t3', 't3'), ('b', 'b'), ('t4', 't4'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('t2', 't2'), ('t4', 't4'), ('t5', 't5'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('t5', 't5'), ('x', 'x'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminu'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('(', '('), ('0', '0'), (')', ')'), ('b', 'b'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminu'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('(', '('), ('2', '2'), (')', ')'), ('b', 'b'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('x', 'x'), ('(', '('), ('4', '4'), (')', ')'), ('Quadruple', 'quadrupl'), ('Triple', 'tripl'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Indirect', 'indirect'), ('Triple', 'tripl'), ('In', 'in'), ('indirect', 'indirect'), ('triple', 'tripl'), ('representation', 'represent'), ('listing', 'list'), ('triples', 'tripl'), ('done', 'done'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Operator', 'oper'), ('Arg1', 'arg1'), ('Arg2', 'arg2'), ('Result', 'result'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminus'), ('t1', 't1'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('t1', 't1'), ('b', 'b'), ('t2', 't2'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminus'), ('t3', 't3'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('t3', 't3'), ('b', 'b'), ('t4', 't4'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('t2', 't2'), ('t4', 't4'), ('t5', 't5'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('t5', 't5'), ('x', 'x'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('(', '('), ('0', '0'), (')', ')'), ('b', 'b'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('(', '('), ('2', '2'), (')', ')'), ('b', 'b'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('x', 'x'), ('(', '('), ('4', '4'), (')', ')'), ('Quadruple', 'quadrupl'), ('Triple', 'tripl'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Indirect', 'indirect'), ('Triple', 'tripl'), ('In', 'in'), ('indirect', 'indirect'), ('triple', 'tripl'), ('representation', 'represent'), ('listing', 'list'), ('triples', 'tripl'), ('done', 'done'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Operator', 'Operator'), ('Arg1', 'Arg1'), ('Arg2', 'Arg2'), ('Result', 'Result'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminus'), ('t1', 't1'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('t1', 't1'), ('b', 'b'), ('t2', 't2'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminus'), ('t3', 't3'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('t3', 't3'), ('b', 'b'), ('t4', 't4'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('t2', 't2'), ('t4', 't4'), ('t5', 't5'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('t5', 't5'), ('x', 'x'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('(', '('), ('0', '0'), (')', ')'), ('b', 'b'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('(', '('), ('2', '2'), (')', ')'), ('b', 'b'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('x', 'x'), ('(', '('), ('4', '4'), (')', ')'), ('Quadruple', 'Quadruple'), ('Triple', 'Triple'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Indirect', 'Indirect'), ('Triple', 'Triple'), ('In', 'In'), ('indirect', 'indirect'), ('triple', 'triple'), ('representation', 'representation'), ('listing', 'listing'), ('triples', 'triple'), ('done', 'done'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+And listing pointers are used instead of using statement. 
+
+
+>> Tokens are: 
+ ['And', 'listing', 'pointers', 'used', 'instead', 'using', 'statement', '.']
+
+>> Bigrams are: 
+ [('And', 'listing'), ('listing', 'pointers'), ('pointers', 'used'), ('used', 'instead'), ('instead', 'using'), ('using', 'statement'), ('statement', '.')]
+
+>> Trigrams are: 
+ [('And', 'listing', 'pointers'), ('listing', 'pointers', 'used'), ('pointers', 'used', 'instead'), ('used', 'instead', 'using'), ('instead', 'using', 'statement'), ('using', 'statement', '.')]
+
+>> POS Tags are: 
+ [('And', 'CC'), ('listing', 'VBG'), ('pointers', 'NNS'), ('used', 'VBN'), ('instead', 'RB'), ('using', 'VBG'), ('statement', 'NN'), ('.', '.')]
+
+ (S
+  And/CC
+  listing/VBG
+  (NP pointers/NNS)
+  used/VBN
+  instead/RB
+  using/VBG
+  (NP statement/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['pointers', 'statement']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('And', 'and'), ('listing', 'list'), ('pointers', 'pointer'), ('used', 'use'), ('instead', 'instead'), ('using', 'use'), ('statement', 'statement'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('And', 'and'), ('listing', 'list'), ('pointers', 'pointer'), ('used', 'use'), ('instead', 'instead'), ('using', 'use'), ('statement', 'statement'), ('.', '.')]
+
+>> Lemmatization: 
+ [('And', 'And'), ('listing', 'listing'), ('pointers', 'pointer'), ('used', 'used'), ('instead', 'instead'), ('using', 'using'), ('statement', 'statement'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+This implementation is called indirect triples. 
+
+
+>> Tokens are: 
+ ['This', 'implementation', 'called', 'indirect', 'triples', '.']
+
+>> Bigrams are: 
+ [('This', 'implementation'), ('implementation', 'called'), ('called', 'indirect'), ('indirect', 'triples'), ('triples', '.')]
+
+>> Trigrams are: 
+ [('This', 'implementation', 'called'), ('implementation', 'called', 'indirect'), ('called', 'indirect', 'triples'), ('indirect', 'triples', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('implementation', 'NN'), ('called', 'VBD'), ('indirect', 'JJ'), ('triples', 'NNS'), ('.', '.')]
+
+ (S
+  (NP This/DT implementation/NN)
+  called/VBD
+  (NP indirect/JJ triples/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['This implementation', 'indirect triples']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('implementation', 'implement'), ('called', 'call'), ('indirect', 'indirect'), ('triples', 'tripl'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('implementation', 'implement'), ('called', 'call'), ('indirect', 'indirect'), ('triples', 'tripl'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('implementation', 'implementation'), ('called', 'called'), ('indirect', 'indirect'), ('triples', 'triple'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+No. 
+
+
+>> Tokens are: 
+ ['No', '.']
+
+>> Bigrams are: 
+ [('No', '.')]
+
+>> Trigrams are: 
+ []
+
+>> POS Tags are: 
+ [('No', 'DT'), ('.', '.')]
+
+ (S No/DT ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('No', 'no'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('No', 'no'), ('.', '.')]
+
+>> Lemmatization: 
+ [('No', 'No'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+Operator	Arg1	Arg2  	(0)	(14)  	(0)	uminus	a	  	(1)	*	(14)	b  	(2)	uminus	a	  	(3)	*	(16)	b  	(4)	+	(15)	(17)  	(5)	=	x	(18)  		Statement  	(1)	(15)  	(2)	(16)  	(3)	(17)  	(4)	(18)  	(5)	(19)  	No. 
+
+
+>> Tokens are: 
+ ['Operator', 'Arg1', 'Arg2', '(', '0', ')', '(', '14', ')', '(', '0', ')', 'uminus', '(', '1', ')', '*', '(', '14', ')', 'b', '(', '2', ')', 'uminus', '(', '3', ')', '*', '(', '16', ')', 'b', '(', '4', ')', '+', '(', '15', ')', '(', '17', ')', '(', '5', ')', '=', 'x', '(', '18', ')', 'Statement', '(', '1', ')', '(', '15', ')', '(', '2', ')', '(', '16', ')', '(', '3', ')', '(', '17', ')', '(', '4', ')', '(', '18', ')', '(', '5', ')', '(', '19', ')', 'No', '.']
+
+>> Bigrams are: 
+ [('Operator', 'Arg1'), ('Arg1', 'Arg2'), ('Arg2', '('), ('(', '0'), ('0', ')'), (')', '('), ('(', '14'), ('14', ')'), (')', '('), ('(', '0'), ('0', ')'), (')', 'uminus'), ('uminus', '('), ('(', '1'), ('1', ')'), (')', '*'), ('*', '('), ('(', '14'), ('14', ')'), (')', 'b'), ('b', '('), ('(', '2'), ('2', ')'), (')', 'uminus'), ('uminus', '('), ('(', '3'), ('3', ')'), (')', '*'), ('*', '('), ('(', '16'), ('16', ')'), (')', 'b'), ('b', '('), ('(', '4'), ('4', ')'), (')', '+'), ('+', '('), ('(', '15'), ('15', ')'), (')', '('), ('(', '17'), ('17', ')'), (')', '('), ('(', '5'), ('5', ')'), (')', '='), ('=', 'x'), ('x', '('), ('(', '18'), ('18', ')'), (')', 'Statement'), ('Statement', '('), ('(', '1'), ('1', ')'), (')', '('), ('(', '15'), ('15', ')'), (')', '('), ('(', '2'), ('2', ')'), (')', '('), ('(', '16'), ('16', ')'), (')', '('), ('(', '3'), ('3', ')'), (')', '('), ('(', '17'), ('17', ')'), (')', '('), ('(', '4'), ('4', ')'), (')', '('), ('(', '18'), ('18', ')'), (')', '('), ('(', '5'), ('5', ')'), (')', '('), ('(', '19'), ('19', ')'), (')', 'No'), ('No', '.')]
+
+>> Trigrams are: 
+ [('Operator', 'Arg1', 'Arg2'), ('Arg1', 'Arg2', '('), ('Arg2', '(', '0'), ('(', '0', ')'), ('0', ')', '('), (')', '(', '14'), ('(', '14', ')'), ('14', ')', '('), (')', '(', '0'), ('(', '0', ')'), ('0', ')', 'uminus'), (')', 'uminus', '('), ('uminus', '(', '1'), ('(', '1', ')'), ('1', ')', '*'), (')', '*', '('), ('*', '(', '14'), ('(', '14', ')'), ('14', ')', 'b'), (')', 'b', '('), ('b', '(', '2'), ('(', '2', ')'), ('2', ')', 'uminus'), (')', 'uminus', '('), ('uminus', '(', '3'), ('(', '3', ')'), ('3', ')', '*'), (')', '*', '('), ('*', '(', '16'), ('(', '16', ')'), ('16', ')', 'b'), (')', 'b', '('), ('b', '(', '4'), ('(', '4', ')'), ('4', ')', '+'), (')', '+', '('), ('+', '(', '15'), ('(', '15', ')'), ('15', ')', '('), (')', '(', '17'), ('(', '17', ')'), ('17', ')', '('), (')', '(', '5'), ('(', '5', ')'), ('5', ')', '='), (')', '=', 'x'), ('=', 'x', '('), ('x', '(', '18'), ('(', '18', ')'), ('18', ')', 'Statement'), (')', 'Statement', '('), ('Statement', '(', '1'), ('(', '1', ')'), ('1', ')', '('), (')', '(', '15'), ('(', '15', ')'), ('15', ')', '('), (')', '(', '2'), ('(', '2', ')'), ('2', ')', '('), (')', '(', '16'), ('(', '16', ')'), ('16', ')', '('), (')', '(', '3'), ('(', '3', ')'), ('3', ')', '('), (')', '(', '17'), ('(', '17', ')'), ('17', ')', '('), (')', '(', '4'), ('(', '4', ')'), ('4', ')', '('), (')', '(', '18'), ('(', '18', ')'), ('18', ')', '('), (')', '(', '5'), ('(', '5', ')'), ('5', ')', '('), (')', '(', '19'), ('(', '19', ')'), ('19', ')', 'No'), (')', 'No', '.')]
+
+>> POS Tags are: 
+ [('Operator', 'NNP'), ('Arg1', 'NNP'), ('Arg2', 'NNP'), ('(', '('), ('0', 'CD'), (')', ')'), ('(', '('), ('14', 'CD'), (')', ')'), ('(', '('), ('0', 'CD'), (')', ')'), ('uminus', 'NN'), ('(', '('), ('1', 'CD'), (')', ')'), ('*', 'NN'), ('(', '('), ('14', 'CD'), (')', ')'), ('b', 'NN'), ('(', '('), ('2', 'CD'), (')', ')'), ('uminus', 'NN'), ('(', '('), ('3', 'CD'), (')', ')'), ('*', 'NN'), ('(', '('), ('16', 'CD'), (')', ')'), ('b', 'NN'), ('(', '('), ('4', 'CD'), (')', ')'), ('+', 'NN'), ('(', '('), ('15', 'CD'), (')', ')'), ('(', '('), ('17', 'CD'), (')', ')'), ('(', '('), ('5', 'CD'), (')', ')'), ('=', 'NN'), ('x', 'NNP'), ('(', '('), ('18', 'CD'), (')', ')'), ('Statement', 'NNP'), ('(', '('), ('1', 'CD'), (')', ')'), ('(', '('), ('15', 'CD'), (')', ')'), ('(', '('), ('2', 'CD'), (')', ')'), ('(', '('), ('16', 'CD'), (')', ')'), ('(', '('), ('3', 'CD'), (')', ')'), ('(', '('), ('17', 'CD'), (')', ')'), ('(', '('), ('4', 'CD'), (')', ')'), ('(', '('), ('18', 'CD'), (')', ')'), ('(', '('), ('5', 'CD'), (')', ')'), ('(', '('), ('19', 'CD'), (')', ')'), ('No', 'DT'), ('.', '.')]
+
+ (S
+  (NP Operator/NNP Arg1/NNP Arg2/NNP)
+  (/(
+  0/CD
+  )/)
+  (/(
+  14/CD
+  )/)
+  (/(
+  0/CD
+  )/)
+  (NP uminus/NN)
+  (/(
+  1/CD
+  )/)
+  (NP */NN)
+  (/(
+  14/CD
+  )/)
+  (NP b/NN)
+  (/(
+  2/CD
+  )/)
+  (NP uminus/NN)
+  (/(
+  3/CD
+  )/)
+  (NP */NN)
+  (/(
+  16/CD
+  )/)
+  (NP b/NN)
+  (/(
+  4/CD
+  )/)
+  (NP +/NN)
+  (/(
+  15/CD
+  )/)
+  (/(
+  17/CD
+  )/)
+  (/(
+  5/CD
+  )/)
+  (NP =/NN x/NNP)
+  (/(
+  18/CD
+  )/)
+  (NP Statement/NNP)
+  (/(
+  1/CD
+  )/)
+  (/(
+  15/CD
+  )/)
+  (/(
+  2/CD
+  )/)
+  (/(
+  16/CD
+  )/)
+  (/(
+  3/CD
+  )/)
+  (/(
+  17/CD
+  )/)
+  (/(
+  4/CD
+  )/)
+  (/(
+  18/CD
+  )/)
+  (/(
+  5/CD
+  )/)
+  (/(
+  19/CD
+  )/)
+  No/DT
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Operator Arg1 Arg2', 'uminus', '*', 'b', 'uminus', '*', 'b', '+', '= x', 'Statement']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Operator', 'oper'), ('Arg1', 'arg1'), ('Arg2', 'arg2'), ('(', '('), ('0', '0'), (')', ')'), ('(', '('), ('14', '14'), (')', ')'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminu'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('(', '('), ('14', '14'), (')', ')'), ('b', 'b'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminu'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('(', '('), ('16', '16'), (')', ')'), ('b', 'b'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('(', '('), ('15', '15'), (')', ')'), ('(', '('), ('17', '17'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('x', 'x'), ('(', '('), ('18', '18'), (')', ')'), ('Statement', 'statement'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('15', '15'), (')', ')'), ('(', '('), ('2', '2'), (')', ')'), ('(', '('), ('16', '16'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('(', '('), ('17', '17'), (')', ')'), ('(', '('), ('4', '4'), (')', ')'), ('(', '('), ('18', '18'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('(', '('), ('19', '19'), (')', ')'), ('No', 'no'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Operator', 'oper'), ('Arg1', 'arg1'), ('Arg2', 'arg2'), ('(', '('), ('0', '0'), (')', ')'), ('(', '('), ('14', '14'), (')', ')'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('(', '('), ('14', '14'), (')', ')'), ('b', 'b'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('(', '('), ('16', '16'), (')', ')'), ('b', 'b'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('(', '('), ('15', '15'), (')', ')'), ('(', '('), ('17', '17'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('x', 'x'), ('(', '('), ('18', '18'), (')', ')'), ('Statement', 'statement'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('15', '15'), (')', ')'), ('(', '('), ('2', '2'), (')', ')'), ('(', '('), ('16', '16'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('(', '('), ('17', '17'), (')', ')'), ('(', '('), ('4', '4'), (')', ')'), ('(', '('), ('18', '18'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('(', '('), ('19', '19'), (')', ')'), ('No', 'no'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Operator', 'Operator'), ('Arg1', 'Arg1'), ('Arg2', 'Arg2'), ('(', '('), ('0', '0'), (')', ')'), ('(', '('), ('14', '14'), (')', ')'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('(', '('), ('14', '14'), (')', ')'), ('b', 'b'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('(', '('), ('16', '16'), (')', ')'), ('b', 'b'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('(', '('), ('15', '15'), (')', ')'), ('(', '('), ('17', '17'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('x', 'x'), ('(', '('), ('18', '18'), (')', ')'), ('Statement', 'Statement'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('15', '15'), (')', ')'), ('(', '('), ('2', '2'), (')', ')'), ('(', '('), ('16', '16'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('(', '('), ('17', '17'), (')', ')'), ('(', '('), ('4', '4'), (')', ')'), ('(', '('), ('18', '18'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('(', '('), ('19', '19'), (')', ')'), ('No', 'No'), ('.', '.')]
+
+
+
+============================ Sentence 23 =============================
+
+Operator	Arg1	Arg2  	(0)	uminus	a	  	(1)	*	(0)	b  	(2)	uminus	a	  	(3)	*	(2)	b  	(4)	+	(1)	(3)  	(5)	=	x	(4)  Indirect Triple Triple         Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  Exercise Write quadruple, triple and indirect triple for following: -(a*b)+(c+d) a*-(b+c) x=(a+b*c)^(d*e)+f*g^h g+a*(b-c)+(x-y)*d     Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 5 – Intermediate Code Generation ‹#›  Thank You                                       /docProps/thumbnail.jpeg 
+
+
+>> Tokens are: 
+ ['Operator', 'Arg1', 'Arg2', '(', '0', ')', 'uminus', '(', '1', ')', '*', '(', '0', ')', 'b', '(', '2', ')', 'uminus', '(', '3', ')', '*', '(', '2', ')', 'b', '(', '4', ')', '+', '(', '1', ')', '(', '3', ')', '(', '5', ')', '=', 'x', '(', '4', ')', 'Indirect', 'Triple', 'Triple', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '5', '–', 'Intermediate', 'Code', 'Generation', '‹', '#', '›', 'Exercise', 'Write', 'quadruple', ',', 'triple', 'indirect', 'triple', 'following', ':', '-', '(', '*', 'b', ')', '+', '(', 'c+d', ')', '*', '-', '(', 'b+c', ')', 'x=', '(', 'a+b', '*', 'c', ')', '^', '(', '*', 'e', ')', '+f', '*', 'g^h', 'g+a', '*', '(', 'b-c', ')', '+', '(', 'x-y', ')', '*', 'Prof.', 'Jay', 'R', 'Dhamsaniya', '#', '3130006', '(', 'PS', ')', '\uf077', 'Unit', '1', '–', 'Basic', 'Probability', '‹', '#', '›', 'Prof.', 'Dixita', 'B', 'Kagathara', '#', '2170701', '(', 'CD', ')', '\uf077', 'Unit', '5', '–', 'Intermediate', 'Code', 'Generation', '‹', '#', '›', 'Thank', 'You', '/docProps/thumbnail.jpeg']
+
+>> Bigrams are: 
+ [('Operator', 'Arg1'), ('Arg1', 'Arg2'), ('Arg2', '('), ('(', '0'), ('0', ')'), (')', 'uminus'), ('uminus', '('), ('(', '1'), ('1', ')'), (')', '*'), ('*', '('), ('(', '0'), ('0', ')'), (')', 'b'), ('b', '('), ('(', '2'), ('2', ')'), (')', 'uminus'), ('uminus', '('), ('(', '3'), ('3', ')'), (')', '*'), ('*', '('), ('(', '2'), ('2', ')'), (')', 'b'), ('b', '('), ('(', '4'), ('4', ')'), (')', '+'), ('+', '('), ('(', '1'), ('1', ')'), (')', '('), ('(', '3'), ('3', ')'), (')', '('), ('(', '5'), ('5', ')'), (')', '='), ('=', 'x'), ('x', '('), ('(', '4'), ('4', ')'), (')', 'Indirect'), ('Indirect', 'Triple'), ('Triple', 'Triple'), ('Triple', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '5'), ('5', '–'), ('–', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Exercise'), ('Exercise', 'Write'), ('Write', 'quadruple'), ('quadruple', ','), (',', 'triple'), ('triple', 'indirect'), ('indirect', 'triple'), ('triple', 'following'), ('following', ':'), (':', '-'), ('-', '('), ('(', '*'), ('*', 'b'), ('b', ')'), (')', '+'), ('+', '('), ('(', 'c+d'), ('c+d', ')'), (')', '*'), ('*', '-'), ('-', '('), ('(', 'b+c'), ('b+c', ')'), (')', 'x='), ('x=', '('), ('(', 'a+b'), ('a+b', '*'), ('*', 'c'), ('c', ')'), (')', '^'), ('^', '('), ('(', '*'), ('*', 'e'), ('e', ')'), (')', '+f'), ('+f', '*'), ('*', 'g^h'), ('g^h', 'g+a'), ('g+a', '*'), ('*', '('), ('(', 'b-c'), ('b-c', ')'), (')', '+'), ('+', '('), ('(', 'x-y'), ('x-y', ')'), (')', '*'), ('*', 'Prof.'), ('Prof.', 'Jay'), ('Jay', 'R'), ('R', 'Dhamsaniya'), ('Dhamsaniya', '#'), ('#', '3130006'), ('3130006', '('), ('(', 'PS'), ('PS', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '1'), ('1', '–'), ('–', 'Basic'), ('Basic', 'Probability'), ('Probability', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Prof.'), ('Prof.', 'Dixita'), ('Dixita', 'B'), ('B', 'Kagathara'), ('Kagathara', '#'), ('#', '2170701'), ('2170701', '('), ('(', 'CD'), ('CD', ')'), (')', '\uf077'), ('\uf077', 'Unit'), ('Unit', '5'), ('5', '–'), ('–', 'Intermediate'), ('Intermediate', 'Code'), ('Code', 'Generation'), ('Generation', '‹'), ('‹', '#'), ('#', '›'), ('›', 'Thank'), ('Thank', 'You'), ('You', '/docProps/thumbnail.jpeg')]
+
+>> Trigrams are: 
+ [('Operator', 'Arg1', 'Arg2'), ('Arg1', 'Arg2', '('), ('Arg2', '(', '0'), ('(', '0', ')'), ('0', ')', 'uminus'), (')', 'uminus', '('), ('uminus', '(', '1'), ('(', '1', ')'), ('1', ')', '*'), (')', '*', '('), ('*', '(', '0'), ('(', '0', ')'), ('0', ')', 'b'), (')', 'b', '('), ('b', '(', '2'), ('(', '2', ')'), ('2', ')', 'uminus'), (')', 'uminus', '('), ('uminus', '(', '3'), ('(', '3', ')'), ('3', ')', '*'), (')', '*', '('), ('*', '(', '2'), ('(', '2', ')'), ('2', ')', 'b'), (')', 'b', '('), ('b', '(', '4'), ('(', '4', ')'), ('4', ')', '+'), (')', '+', '('), ('+', '(', '1'), ('(', '1', ')'), ('1', ')', '('), (')', '(', '3'), ('(', '3', ')'), ('3', ')', '('), (')', '(', '5'), ('(', '5', ')'), ('5', ')', '='), (')', '=', 'x'), ('=', 'x', '('), ('x', '(', '4'), ('(', '4', ')'), ('4', ')', 'Indirect'), (')', 'Indirect', 'Triple'), ('Indirect', 'Triple', 'Triple'), ('Triple', 'Triple', 'Prof.'), ('Triple', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '5'), ('Unit', '5', '–'), ('5', '–', 'Intermediate'), ('–', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', '‹'), ('Generation', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Exercise'), ('›', 'Exercise', 'Write'), ('Exercise', 'Write', 'quadruple'), ('Write', 'quadruple', ','), ('quadruple', ',', 'triple'), (',', 'triple', 'indirect'), ('triple', 'indirect', 'triple'), ('indirect', 'triple', 'following'), ('triple', 'following', ':'), ('following', ':', '-'), (':', '-', '('), ('-', '(', '*'), ('(', '*', 'b'), ('*', 'b', ')'), ('b', ')', '+'), (')', '+', '('), ('+', '(', 'c+d'), ('(', 'c+d', ')'), ('c+d', ')', '*'), (')', '*', '-'), ('*', '-', '('), ('-', '(', 'b+c'), ('(', 'b+c', ')'), ('b+c', ')', 'x='), (')', 'x=', '('), ('x=', '(', 'a+b'), ('(', 'a+b', '*'), ('a+b', '*', 'c'), ('*', 'c', ')'), ('c', ')', '^'), (')', '^', '('), ('^', '(', '*'), ('(', '*', 'e'), ('*', 'e', ')'), ('e', ')', '+f'), (')', '+f', '*'), ('+f', '*', 'g^h'), ('*', 'g^h', 'g+a'), ('g^h', 'g+a', '*'), ('g+a', '*', '('), ('*', '(', 'b-c'), ('(', 'b-c', ')'), ('b-c', ')', '+'), (')', '+', '('), ('+', '(', 'x-y'), ('(', 'x-y', ')'), ('x-y', ')', '*'), (')', '*', 'Prof.'), ('*', 'Prof.', 'Jay'), ('Prof.', 'Jay', 'R'), ('Jay', 'R', 'Dhamsaniya'), ('R', 'Dhamsaniya', '#'), ('Dhamsaniya', '#', '3130006'), ('#', '3130006', '('), ('3130006', '(', 'PS'), ('(', 'PS', ')'), ('PS', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '1'), ('Unit', '1', '–'), ('1', '–', 'Basic'), ('–', 'Basic', 'Probability'), ('Basic', 'Probability', '‹'), ('Probability', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Prof.'), ('›', 'Prof.', 'Dixita'), ('Prof.', 'Dixita', 'B'), ('Dixita', 'B', 'Kagathara'), ('B', 'Kagathara', '#'), ('Kagathara', '#', '2170701'), ('#', '2170701', '('), ('2170701', '(', 'CD'), ('(', 'CD', ')'), ('CD', ')', '\uf077'), (')', '\uf077', 'Unit'), ('\uf077', 'Unit', '5'), ('Unit', '5', '–'), ('5', '–', 'Intermediate'), ('–', 'Intermediate', 'Code'), ('Intermediate', 'Code', 'Generation'), ('Code', 'Generation', '‹'), ('Generation', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'Thank'), ('›', 'Thank', 'You'), ('Thank', 'You', '/docProps/thumbnail.jpeg')]
+
+>> POS Tags are: 
+ [('Operator', 'NNP'), ('Arg1', 'NNP'), ('Arg2', 'NNP'), ('(', '('), ('0', 'CD'), (')', ')'), ('uminus', 'NN'), ('(', '('), ('1', 'CD'), (')', ')'), ('*', 'NN'), ('(', '('), ('0', 'CD'), (')', ')'), ('b', 'NN'), ('(', '('), ('2', 'CD'), (')', ')'), ('uminus', 'NN'), ('(', '('), ('3', 'CD'), (')', ')'), ('*', 'NN'), ('(', '('), ('2', 'CD'), (')', ')'), ('b', 'NN'), ('(', '('), ('4', 'CD'), (')', ')'), ('+', 'NN'), ('(', '('), ('1', 'CD'), (')', ')'), ('(', '('), ('3', 'CD'), (')', ')'), ('(', '('), ('5', 'CD'), (')', ')'), ('=', 'NN'), ('x', 'NNP'), ('(', '('), ('4', 'CD'), (')', ')'), ('Indirect', 'NNP'), ('Triple', 'NNP'), ('Triple', 'NNP'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('5', 'CD'), ('–', 'NNP'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Exercise', 'NNP'), ('Write', 'NNP'), ('quadruple', 'NN'), (',', ','), ('triple', 'JJ'), ('indirect', 'JJ'), ('triple', 'NN'), ('following', 'VBG'), (':', ':'), ('-', ':'), ('(', '('), ('*', 'VB'), ('b', 'NN'), (')', ')'), ('+', 'NN'), ('(', '('), ('c+d', 'NN'), (')', ')'), ('*', 'SYM'), ('-', ':'), ('(', '('), ('b+c', 'NN'), (')', ')'), ('x=', 'NN'), ('(', '('), ('a+b', 'JJ'), ('*', 'NNP'), ('c', 'NN'), (')', ')'), ('^', 'NN'), ('(', '('), ('*', 'NNP'), ('e', 'RB'), (')', ')'), ('+f', 'FW'), ('*', 'FW'), ('g^h', 'FW'), ('g+a', 'FW'), ('*', 'FW'), ('(', '('), ('b-c', 'NN'), (')', ')'), ('+', 'NN'), ('(', '('), ('x-y', 'JJ'), (')', ')'), ('*', 'FW'), ('Prof.', 'NNP'), ('Jay', 'NNP'), ('R', 'NNP'), ('Dhamsaniya', 'NNP'), ('#', '#'), ('3130006', 'CD'), ('(', '('), ('PS', 'NNP'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('1', 'CD'), ('–', 'NNP'), ('Basic', 'NNP'), ('Probability', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Prof.', 'NNP'), ('Dixita', 'NNP'), ('B', 'NNP'), ('Kagathara', 'NNP'), ('#', '#'), ('2170701', 'CD'), ('(', '('), ('CD', 'NN'), (')', ')'), ('\uf077', 'VBD'), ('Unit', 'NNP'), ('5', 'CD'), ('–', 'NNP'), ('Intermediate', 'NNP'), ('Code', 'NNP'), ('Generation', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('Thank', 'NNP'), ('You', 'PRP'), ('/docProps/thumbnail.jpeg', 'VBP')]
+
+ (S
+  (NP Operator/NNP Arg1/NNP Arg2/NNP)
+  (/(
+  0/CD
+  )/)
+  (NP uminus/NN)
+  (/(
+  1/CD
+  )/)
+  (NP */NN)
+  (/(
+  0/CD
+  )/)
+  (NP b/NN)
+  (/(
+  2/CD
+  )/)
+  (NP uminus/NN)
+  (/(
+  3/CD
+  )/)
+  (NP */NN)
+  (/(
+  2/CD
+  )/)
+  (NP b/NN)
+  (/(
+  4/CD
+  )/)
+  (NP +/NN)
+  (/(
+  1/CD
+  )/)
+  (/(
+  3/CD
+  )/)
+  (/(
+  5/CD
+  )/)
+  (NP =/NN x/NNP)
+  (/(
+  4/CD
+  )/)
+  (NP
+    Indirect/NNP
+    Triple/NNP
+    Triple/NNP
+    Prof./NNP
+    Jay/NNP
+    R/NNP
+    Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  5/CD
+  (NP –/NNP Intermediate/NNP Code/NNP Generation/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Exercise/NNP Write/NNP quadruple/NN)
+  ,/,
+  (NP triple/JJ indirect/JJ triple/NN)
+  following/VBG
+  :/:
+  -/:
+  (/(
+  */VB
+  (NP b/NN)
+  )/)
+  (NP +/NN)
+  (/(
+  (NP c+d/NN)
+  )/)
+  */SYM
+  -/:
+  (/(
+  (NP b+c/NN)
+  )/)
+  (NP x=/NN)
+  (/(
+  (NP a+b/JJ */NNP c/NN)
+  )/)
+  (NP ^/NN)
+  (/(
+  (NP */NNP)
+  e/RB
+  )/)
+  +f/FW
+  */FW
+  g^h/FW
+  g+a/FW
+  */FW
+  (/(
+  (NP b-c/NN)
+  )/)
+  (NP +/NN)
+  (/(
+  x-y/JJ
+  )/)
+  */FW
+  (NP Prof./NNP Jay/NNP R/NNP Dhamsaniya/NNP)
+  #/#
+  3130006/CD
+  (/(
+  (NP PS/NNP)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  1/CD
+  (NP –/NNP Basic/NNP Probability/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Prof./NNP Dixita/NNP B/NNP Kagathara/NNP)
+  #/#
+  2170701/CD
+  (/(
+  (NP CD/NN)
+  )/)
+  /VBD
+  (NP Unit/NNP)
+  5/CD
+  (NP –/NNP Intermediate/NNP Code/NNP Generation/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP Thank/NNP)
+  You/PRP
+  /docProps/thumbnail.jpeg/VBP) 
+
+
+>> Noun Phrases are: 
+ ['Operator Arg1 Arg2', 'uminus', '*', 'b', 'uminus', '*', 'b', '+', '= x', 'Indirect Triple Triple Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Intermediate Code Generation ‹', '› Exercise Write quadruple', 'triple indirect triple', 'b', '+', 'c+d', 'b+c', 'x=', 'a+b * c', '^', '*', 'b-c', '+', 'Prof. Jay R Dhamsaniya', 'PS', 'Unit', '– Basic Probability ‹', '› Prof. Dixita B Kagathara', 'CD', 'Unit', '– Intermediate Code Generation ‹', '› Thank']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit'), ('ORGANIZATION', 'Unit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Operator', 'oper'), ('Arg1', 'arg1'), ('Arg2', 'arg2'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminu'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('(', '('), ('0', '0'), (')', ')'), ('b', 'b'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminu'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('(', '('), ('2', '2'), (')', ')'), ('b', 'b'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('x', 'x'), ('(', '('), ('4', '4'), (')', ')'), ('Indirect', 'indirect'), ('Triple', 'tripl'), ('Triple', 'tripl'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Exercise', 'exercis'), ('Write', 'write'), ('quadruple', 'quadrupl'), (',', ','), ('triple', 'tripl'), ('indirect', 'indirect'), ('triple', 'tripl'), ('following', 'follow'), (':', ':'), ('-', '-'), ('(', '('), ('*', '*'), ('b', 'b'), (')', ')'), ('+', '+'), ('(', '('), ('c+d', 'c+d'), (')', ')'), ('*', '*'), ('-', '-'), ('(', '('), ('b+c', 'b+c'), (')', ')'), ('x=', 'x='), ('(', '('), ('a+b', 'a+b'), ('*', '*'), ('c', 'c'), (')', ')'), ('^', '^'), ('(', '('), ('*', '*'), ('e', 'e'), (')', ')'), ('+f', '+f'), ('*', '*'), ('g^h', 'g^h'), ('g+a', 'g+a'), ('*', '*'), ('(', '('), ('b-c', 'b-c'), (')', ')'), ('+', '+'), ('(', '('), ('x-y', 'x-i'), (')', ')'), ('*', '*'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'gener'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Thank', 'thank'), ('You', 'you'), ('/docProps/thumbnail.jpeg', '/docprops/thumbnail.jpeg')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Operator', 'oper'), ('Arg1', 'arg1'), ('Arg2', 'arg2'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('(', '('), ('0', '0'), (')', ')'), ('b', 'b'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('(', '('), ('2', '2'), (')', ')'), ('b', 'b'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('x', 'x'), ('(', '('), ('4', '4'), (')', ')'), ('Indirect', 'indirect'), ('Triple', 'tripl'), ('Triple', 'tripl'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Exercise', 'exercis'), ('Write', 'write'), ('quadruple', 'quadrupl'), (',', ','), ('triple', 'tripl'), ('indirect', 'indirect'), ('triple', 'tripl'), ('following', 'follow'), (':', ':'), ('-', '-'), ('(', '('), ('*', '*'), ('b', 'b'), (')', ')'), ('+', '+'), ('(', '('), ('c+d', 'c+d'), (')', ')'), ('*', '*'), ('-', '-'), ('(', '('), ('b+c', 'b+c'), (')', ')'), ('x=', 'x='), ('(', '('), ('a+b', 'a+b'), ('*', '*'), ('c', 'c'), (')', ')'), ('^', '^'), ('(', '('), ('*', '*'), ('e', 'e'), (')', ')'), ('+f', '+f'), ('*', '*'), ('g^h', 'g^h'), ('g+a', 'g+a'), ('*', '*'), ('(', '('), ('b-c', 'b-c'), (')', ')'), ('+', '+'), ('(', '('), ('x-y', 'x-i'), (')', ')'), ('*', '*'), ('Prof.', 'prof.'), ('Jay', 'jay'), ('R', 'r'), ('Dhamsaniya', 'dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'ps'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('1', '1'), ('–', '–'), ('Basic', 'basic'), ('Probability', 'probabl'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'prof.'), ('Dixita', 'dixita'), ('B', 'b'), ('Kagathara', 'kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'cd'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'intermedi'), ('Code', 'code'), ('Generation', 'generat'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Thank', 'thank'), ('You', 'you'), ('/docProps/thumbnail.jpeg', '/docprops/thumbnail.jpeg')]
+
+>> Lemmatization: 
+ [('Operator', 'Operator'), ('Arg1', 'Arg1'), ('Arg2', 'Arg2'), ('(', '('), ('0', '0'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('1', '1'), (')', ')'), ('*', '*'), ('(', '('), ('0', '0'), (')', ')'), ('b', 'b'), ('(', '('), ('2', '2'), (')', ')'), ('uminus', 'uminus'), ('(', '('), ('3', '3'), (')', ')'), ('*', '*'), ('(', '('), ('2', '2'), (')', ')'), ('b', 'b'), ('(', '('), ('4', '4'), (')', ')'), ('+', '+'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('(', '('), ('5', '5'), (')', ')'), ('=', '='), ('x', 'x'), ('(', '('), ('4', '4'), (')', ')'), ('Indirect', 'Indirect'), ('Triple', 'Triple'), ('Triple', 'Triple'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Exercise', 'Exercise'), ('Write', 'Write'), ('quadruple', 'quadruple'), (',', ','), ('triple', 'triple'), ('indirect', 'indirect'), ('triple', 'triple'), ('following', 'following'), (':', ':'), ('-', '-'), ('(', '('), ('*', '*'), ('b', 'b'), (')', ')'), ('+', '+'), ('(', '('), ('c+d', 'c+d'), (')', ')'), ('*', '*'), ('-', '-'), ('(', '('), ('b+c', 'b+c'), (')', ')'), ('x=', 'x='), ('(', '('), ('a+b', 'a+b'), ('*', '*'), ('c', 'c'), (')', ')'), ('^', '^'), ('(', '('), ('*', '*'), ('e', 'e'), (')', ')'), ('+f', '+f'), ('*', '*'), ('g^h', 'g^h'), ('g+a', 'g+a'), ('*', '*'), ('(', '('), ('b-c', 'b-c'), (')', ')'), ('+', '+'), ('(', '('), ('x-y', 'x-y'), (')', ')'), ('*', '*'), ('Prof.', 'Prof.'), ('Jay', 'Jay'), ('R', 'R'), ('Dhamsaniya', 'Dhamsaniya'), ('#', '#'), ('3130006', '3130006'), ('(', '('), ('PS', 'PS'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('1', '1'), ('–', '–'), ('Basic', 'Basic'), ('Probability', 'Probability'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Prof.', 'Prof.'), ('Dixita', 'Dixita'), ('B', 'B'), ('Kagathara', 'Kagathara'), ('#', '#'), ('2170701', '2170701'), ('(', '('), ('CD', 'CD'), (')', ')'), ('\uf077', '\uf077'), ('Unit', 'Unit'), ('5', '5'), ('–', '–'), ('Intermediate', 'Intermediate'), ('Code', 'Code'), ('Generation', 'Generation'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('Thank', 'Thank'), ('You', 'You'), ('/docProps/thumbnail.jpeg', '/docProps/thumbnail.jpeg')]
+

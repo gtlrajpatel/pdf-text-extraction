@@ -1,0 +1,946 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-1   
+
+
+>> Tokens are: 
+[AI-1,  ] 
+
+>> PoS Tags are: 
+[('AI-1', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('AI-1', 'ROOT'), (' ', 'punct')]
+
+>> Bigrams: 
+[[AI-1,  ]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 2 =============================
+
+Since the invention of computers or machines, their capability to perform various tasks went on growing exponentially. 
+
+
+>> Tokens are: 
+[invention, computers, machines, ,, capability, perform, tasks, went, growing, exponentially, .] 
+
+>> PoS Tags are: 
+[('invention', 'NOUN'), ('computers', 'NOUN'), ('machines', 'NOUN'), (',', 'PUNCT'), ('capability', 'NOUN'), ('perform', 'VERB'), ('tasks', 'NOUN'), ('went', 'VERB'), ('growing', 'VERB'), ('exponentially', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('invention', 'pobj'), ('computers', 'pobj'), ('machines', 'conj'), (',', 'punct'), ('capability', 'nsubj'), ('perform', 'acl'), ('tasks', 'dobj'), ('went', 'ROOT'), ('growing', 'advcl'), ('exponentially', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[invention, computers], [computers, machines], [machines, ,], [,, capability], [capability, perform], [perform, tasks], [tasks, went], [went, growing], [growing, exponentially], [exponentially, .]]
+
+>> Trigrams: 
+[[invention, computers, machines], [computers, machines, ,], [machines, ,, capability], [,, capability, perform], [capability, perform, tasks], [perform, tasks, went], [tasks, went, growing], [went, growing, exponentially], [growing, exponentially, .]]
+
+>> Noun Phrases are: 
+[the invention, computers, machines, their capability, various tasks]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 3 =============================
+
+Humans have developed the power of computer systems in terms of their diverse working domains, their increasing speed, and reducing size with respect to time. 
+
+
+>> Tokens are: 
+[Humans, developed, power, computer, systems, terms, diverse, working, domains, ,, increasing, speed, ,, reducing, size, respect, time, .] 
+
+>> PoS Tags are: 
+[('Humans', 'NOUN'), ('developed', 'VERB'), ('power', 'NOUN'), ('computer', 'NOUN'), ('systems', 'NOUN'), ('terms', 'NOUN'), ('diverse', 'ADJ'), ('working', 'NOUN'), ('domains', 'NOUN'), (',', 'PUNCT'), ('increasing', 'VERB'), ('speed', 'NOUN'), (',', 'PUNCT'), ('reducing', 'VERB'), ('size', 'NOUN'), ('respect', 'NOUN'), ('time', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Humans', 'nsubj'), ('developed', 'ROOT'), ('power', 'dobj'), ('computer', 'compound'), ('systems', 'pobj'), ('terms', 'pobj'), ('diverse', 'amod'), ('working', 'compound'), ('domains', 'pobj'), (',', 'punct'), ('increasing', 'amod'), ('speed', 'conj'), (',', 'punct'), ('reducing', 'conj'), ('size', 'dobj'), ('respect', 'pobj'), ('time', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Humans, developed], [developed, power], [power, computer], [computer, systems], [systems, terms], [terms, diverse], [diverse, working], [working, domains], [domains, ,], [,, increasing], [increasing, speed], [speed, ,], [,, reducing], [reducing, size], [size, respect], [respect, time], [time, .]]
+
+>> Trigrams: 
+[[Humans, developed, power], [developed, power, computer], [power, computer, systems], [computer, systems, terms], [systems, terms, diverse], [terms, diverse, working], [diverse, working, domains], [working, domains, ,], [domains, ,, increasing], [,, increasing, speed], [increasing, speed, ,], [speed, ,, reducing], [,, reducing, size], [reducing, size, respect], [size, respect, time], [respect, time, .]]
+
+>> Noun Phrases are: 
+[Humans, the power, computer systems, terms, their diverse working domains, their increasing speed, size, respect, time]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+A branch of Computer Science named Artificial Intelligence pursues creating the computers or machines as intelligent as human beings. 
+
+
+>> Tokens are: 
+[branch, Computer, Science, named, Artificial, Intelligence, pursues, creating, computers, machines, intelligent, human, beings, .] 
+
+>> PoS Tags are: 
+[('branch', 'NOUN'), ('Computer', 'PROPN'), ('Science', 'PROPN'), ('named', 'VERB'), ('Artificial', 'PROPN'), ('Intelligence', 'PROPN'), ('pursues', 'NOUN'), ('creating', 'VERB'), ('computers', 'NOUN'), ('machines', 'NOUN'), ('intelligent', 'ADJ'), ('human', 'ADJ'), ('beings', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('branch', 'nsubj'), ('Computer', 'compound'), ('Science', 'pobj'), ('named', 'ROOT'), ('Artificial', 'compound'), ('Intelligence', 'compound'), ('pursues', 'dobj'), ('creating', 'advcl'), ('computers', 'dobj'), ('machines', 'conj'), ('intelligent', 'amod'), ('human', 'amod'), ('beings', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[branch, Computer], [Computer, Science], [Science, named], [named, Artificial], [Artificial, Intelligence], [Intelligence, pursues], [pursues, creating], [creating, computers], [computers, machines], [machines, intelligent], [intelligent, human], [human, beings], [beings, .]]
+
+>> Trigrams: 
+[[branch, Computer, Science], [Computer, Science, named], [Science, named, Artificial], [named, Artificial, Intelligence], [Artificial, Intelligence, pursues], [Intelligence, pursues, creating], [pursues, creating, computers], [creating, computers, machines], [computers, machines, intelligent], [machines, intelligent, human], [intelligent, human, beings], [human, beings, .]]
+
+>> Noun Phrases are: 
+[A branch, Computer Science, Artificial Intelligence pursues, the computers, machines, human beings]
+
+>> Named Entities are: 
+[('Computer Science', 'ORG'), ('Artificial Intelligence', 'ORG')]
+
+
+============================ Sentence 5 =============================
+
+What is Artificial Intelligence? 
+
+
+>> Tokens are: 
+[Artificial, Intelligence, ?] 
+
+>> PoS Tags are: 
+[('Artificial', 'PROPN'), ('Intelligence', 'PROPN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Artificial', 'compound'), ('Intelligence', 'nsubj'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Artificial, Intelligence], [Intelligence, ?]]
+
+>> Trigrams: 
+[[Artificial, Intelligence, ?]]
+
+>> Noun Phrases are: 
+[What, Artificial Intelligence]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+According to the father of Artificial Intelligence, John McCarthy, it is “The science and engineering of making intelligent machines, especially intelligent computer programs”. 
+
+
+>> Tokens are: 
+[According, father, Artificial, Intelligence, ,, John, McCarthy, ,, “, science, engineering, making, intelligent, machines, ,, especially, intelligent, computer, programs, ”, .] 
+
+>> PoS Tags are: 
+[('According', 'VERB'), ('father', 'NOUN'), ('Artificial', 'PROPN'), ('Intelligence', 'PROPN'), (',', 'PUNCT'), ('John', 'PROPN'), ('McCarthy', 'PROPN'), (',', 'PUNCT'), ('“', 'PUNCT'), ('science', 'NOUN'), ('engineering', 'NOUN'), ('making', 'VERB'), ('intelligent', 'ADJ'), ('machines', 'NOUN'), (',', 'PUNCT'), ('especially', 'ADV'), ('intelligent', 'ADJ'), ('computer', 'NOUN'), ('programs', 'NOUN'), ('”', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('According', 'prep'), ('father', 'pobj'), ('Artificial', 'compound'), ('Intelligence', 'pobj'), (',', 'punct'), ('John', 'compound'), ('McCarthy', 'dep'), (',', 'punct'), ('“', 'punct'), ('science', 'attr'), ('engineering', 'conj'), ('making', 'pcomp'), ('intelligent', 'amod'), ('machines', 'dobj'), (',', 'punct'), ('especially', 'advmod'), ('intelligent', 'amod'), ('computer', 'compound'), ('programs', 'appos'), ('”', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[According, father], [father, Artificial], [Artificial, Intelligence], [Intelligence, ,], [,, John], [John, McCarthy], [McCarthy, ,], [,, “], [“, science], [science, engineering], [engineering, making], [making, intelligent], [intelligent, machines], [machines, ,], [,, especially], [especially, intelligent], [intelligent, computer], [computer, programs], [programs, ”], [”, .]]
+
+>> Trigrams: 
+[[According, father, Artificial], [father, Artificial, Intelligence], [Artificial, Intelligence, ,], [Intelligence, ,, John], [,, John, McCarthy], [John, McCarthy, ,], [McCarthy, ,, “], [,, “, science], [“, science, engineering], [science, engineering, making], [engineering, making, intelligent], [making, intelligent, machines], [intelligent, machines, ,], [machines, ,, especially], [,, especially, intelligent], [especially, intelligent, computer], [intelligent, computer, programs], [computer, programs, ”], [programs, ”, .]]
+
+>> Noun Phrases are: 
+[the father, Artificial Intelligence, it, The science, engineering, intelligent machines, especially intelligent computer programs]
+
+>> Named Entities are: 
+[('Artificial Intelligence', 'ORG'), ('John McCarthy', 'PERSON')]
+
+
+============================ Sentence 7 =============================
+
+Artificial Intelligence is a way of making a computer, a computer-controlled robot, or a software think intelligently, in the similar manner the intelligent humans think. 
+
+
+>> Tokens are: 
+[Artificial, Intelligence, way, making, computer, ,, computer, -, controlled, robot, ,, software, think, intelligently, ,, similar, manner, intelligent, humans, think, .] 
+
+>> PoS Tags are: 
+[('Artificial', 'PROPN'), ('Intelligence', 'PROPN'), ('way', 'NOUN'), ('making', 'VERB'), ('computer', 'NOUN'), (',', 'PUNCT'), ('computer', 'NOUN'), ('-', 'PUNCT'), ('controlled', 'VERB'), ('robot', 'NOUN'), (',', 'PUNCT'), ('software', 'NOUN'), ('think', 'VERB'), ('intelligently', 'ADV'), (',', 'PUNCT'), ('similar', 'ADJ'), ('manner', 'NOUN'), ('intelligent', 'ADJ'), ('humans', 'NOUN'), ('think', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Artificial', 'compound'), ('Intelligence', 'nsubj'), ('way', 'attr'), ('making', 'pcomp'), ('computer', 'dobj'), (',', 'punct'), ('computer', 'npadvmod'), ('-', 'punct'), ('controlled', 'amod'), ('robot', 'conj'), (',', 'punct'), ('software', 'nsubj'), ('think', 'conj'), ('intelligently', 'advmod'), (',', 'punct'), ('similar', 'amod'), ('manner', 'pobj'), ('intelligent', 'amod'), ('humans', 'nsubj'), ('think', 'ccomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Artificial, Intelligence], [Intelligence, way], [way, making], [making, computer], [computer, ,], [,, computer], [computer, -], [-, controlled], [controlled, robot], [robot, ,], [,, software], [software, think], [think, intelligently], [intelligently, ,], [,, similar], [similar, manner], [manner, intelligent], [intelligent, humans], [humans, think], [think, .]]
+
+>> Trigrams: 
+[[Artificial, Intelligence, way], [Intelligence, way, making], [way, making, computer], [making, computer, ,], [computer, ,, computer], [,, computer, -], [computer, -, controlled], [-, controlled, robot], [controlled, robot, ,], [robot, ,, software], [,, software, think], [software, think, intelligently], [think, intelligently, ,], [intelligently, ,, similar], [,, similar, manner], [similar, manner, intelligent], [manner, intelligent, humans], [intelligent, humans, think], [humans, think, .]]
+
+>> Noun Phrases are: 
+[Artificial Intelligence, a way, a computer, a computer-controlled robot, a software, the similar manner, the intelligent humans]
+
+>> Named Entities are: 
+[('Artificial Intelligence', 'ORG')]
+
+
+============================ Sentence 8 =============================
+
+AI is accomplished by studying how human brain thinks, and how humans learn, decide, and work while trying to solve a problem, and then using the outcomes of this study as a basis of developing intelligent software and systems. 
+
+
+>> Tokens are: 
+[AI, accomplished, studying, human, brain, thinks, ,, humans, learn, ,, decide, ,, work, trying, solve, problem, ,, outcomes, study, basis, developing, intelligent, software, systems, .] 
+
+>> PoS Tags are: 
+[('AI', 'PROPN'), ('accomplished', 'VERB'), ('studying', 'VERB'), ('human', 'ADJ'), ('brain', 'NOUN'), ('thinks', 'VERB'), (',', 'PUNCT'), ('humans', 'NOUN'), ('learn', 'VERB'), (',', 'PUNCT'), ('decide', 'VERB'), (',', 'PUNCT'), ('work', 'VERB'), ('trying', 'VERB'), ('solve', 'VERB'), ('problem', 'NOUN'), (',', 'PUNCT'), ('outcomes', 'NOUN'), ('study', 'NOUN'), ('basis', 'NOUN'), ('developing', 'VERB'), ('intelligent', 'ADJ'), ('software', 'NOUN'), ('systems', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI', 'nsubjpass'), ('accomplished', 'ROOT'), ('studying', 'pcomp'), ('human', 'amod'), ('brain', 'nsubj'), ('thinks', 'ccomp'), (',', 'punct'), ('humans', 'nsubj'), ('learn', 'conj'), (',', 'punct'), ('decide', 'conj'), (',', 'punct'), ('work', 'conj'), ('trying', 'advcl'), ('solve', 'xcomp'), ('problem', 'dobj'), (',', 'punct'), ('outcomes', 'dobj'), ('study', 'pobj'), ('basis', 'pobj'), ('developing', 'pcomp'), ('intelligent', 'amod'), ('software', 'dobj'), ('systems', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AI, accomplished], [accomplished, studying], [studying, human], [human, brain], [brain, thinks], [thinks, ,], [,, humans], [humans, learn], [learn, ,], [,, decide], [decide, ,], [,, work], [work, trying], [trying, solve], [solve, problem], [problem, ,], [,, outcomes], [outcomes, study], [study, basis], [basis, developing], [developing, intelligent], [intelligent, software], [software, systems], [systems, .]]
+
+>> Trigrams: 
+[[AI, accomplished, studying], [accomplished, studying, human], [studying, human, brain], [human, brain, thinks], [brain, thinks, ,], [thinks, ,, humans], [,, humans, learn], [humans, learn, ,], [learn, ,, decide], [,, decide, ,], [decide, ,, work], [,, work, trying], [work, trying, solve], [trying, solve, problem], [solve, problem, ,], [problem, ,, outcomes], [,, outcomes, study], [outcomes, study, basis], [study, basis, developing], [basis, developing, intelligent], [developing, intelligent, software], [intelligent, software, systems], [software, systems, .]]
+
+>> Noun Phrases are: 
+[AI, human brain, humans, a problem, the outcomes, this study, a basis, intelligent software, systems]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 9 =============================
+
+Philosophy of AI While exploiting the power of the computer systems, the curiosity of human, lead him to wonder, “Can a machine think and behave like humans do?” 
+
+
+>> Tokens are: 
+[Philosophy, AI, exploiting, power, computer, systems, ,, curiosity, human, ,, lead, wonder, ,, “, machine, think, behave, like, humans, ?, ”] 
+
+>> PoS Tags are: 
+[('Philosophy', 'NOUN'), ('AI', 'PROPN'), ('exploiting', 'VERB'), ('power', 'NOUN'), ('computer', 'NOUN'), ('systems', 'NOUN'), (',', 'PUNCT'), ('curiosity', 'NOUN'), ('human', 'NOUN'), (',', 'PUNCT'), ('lead', 'VERB'), ('wonder', 'VERB'), (',', 'PUNCT'), ('“', 'PUNCT'), ('machine', 'NOUN'), ('think', 'VERB'), ('behave', 'VERB'), ('like', 'ADP'), ('humans', 'NOUN'), ('?', 'PUNCT'), ('”', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Philosophy', 'nsubj'), ('AI', 'pobj'), ('exploiting', 'advcl'), ('power', 'dobj'), ('computer', 'compound'), ('systems', 'pobj'), (',', 'punct'), ('curiosity', 'conj'), ('human', 'pobj'), (',', 'punct'), ('lead', 'ROOT'), ('wonder', 'xcomp'), (',', 'punct'), ('“', 'punct'), ('machine', 'nsubj'), ('think', 'ccomp'), ('behave', 'conj'), ('like', 'mark'), ('humans', 'nsubj'), ('?', 'punct'), ('”', 'punct')]
+
+>> Bigrams: 
+[[Philosophy, AI], [AI, exploiting], [exploiting, power], [power, computer], [computer, systems], [systems, ,], [,, curiosity], [curiosity, human], [human, ,], [,, lead], [lead, wonder], [wonder, ,], [,, “], [“, machine], [machine, think], [think, behave], [behave, like], [like, humans], [humans, ?], [?, ”]]
+
+>> Trigrams: 
+[[Philosophy, AI, exploiting], [AI, exploiting, power], [exploiting, power, computer], [power, computer, systems], [computer, systems, ,], [systems, ,, curiosity], [,, curiosity, human], [curiosity, human, ,], [human, ,, lead], [,, lead, wonder], [lead, wonder, ,], [wonder, ,, “], [,, “, machine], [“, machine, think], [machine, think, behave], [think, behave, like], [behave, like, humans], [like, humans, ?], [humans, ?, ”]]
+
+>> Noun Phrases are: 
+[Philosophy, AI, the power, the computer systems, the curiosity, human, him, a machine, humans]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+Thus, the development of AI started with the intention of creating similar intelligence in machines that we find and regard high in humans. 
+
+
+>> Tokens are: 
+[,, development, AI, started, intention, creating, similar, intelligence, machines, find, regard, high, humans, .] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('development', 'NOUN'), ('AI', 'PROPN'), ('started', 'VERB'), ('intention', 'NOUN'), ('creating', 'VERB'), ('similar', 'ADJ'), ('intelligence', 'NOUN'), ('machines', 'NOUN'), ('find', 'VERB'), ('regard', 'VERB'), ('high', 'ADJ'), ('humans', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('development', 'nsubj'), ('AI', 'pobj'), ('started', 'ROOT'), ('intention', 'pobj'), ('creating', 'pcomp'), ('similar', 'amod'), ('intelligence', 'dobj'), ('machines', 'pobj'), ('find', 'relcl'), ('regard', 'conj'), ('high', 'acomp'), ('humans', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[,, development], [development, AI], [AI, started], [started, intention], [intention, creating], [creating, similar], [similar, intelligence], [intelligence, machines], [machines, find], [find, regard], [regard, high], [high, humans], [humans, .]]
+
+>> Trigrams: 
+[[,, development, AI], [development, AI, started], [AI, started, intention], [started, intention, creating], [intention, creating, similar], [creating, similar, intelligence], [similar, intelligence, machines], [intelligence, machines, find], [machines, find, regard], [find, regard, high], [regard, high, humans], [high, humans, .]]
+
+>> Noun Phrases are: 
+[the development, AI, the intention, similar intelligence, machines, we, humans]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 11 =============================
+
+Goals of AI · To Create Expert Systems − 
+
+
+>> Tokens are: 
+[Goals, AI, ·, Create, Expert, Systems, −] 
+
+>> PoS Tags are: 
+[('Goals', 'NOUN'), ('AI', 'PROPN'), ('·', 'PUNCT'), ('Create', 'VERB'), ('Expert', 'PROPN'), ('Systems', 'PROPN'), ('−', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Goals', 'ROOT'), ('AI', 'pobj'), ('·', 'punct'), ('Create', 'acl'), ('Expert', 'compound'), ('Systems', 'compound'), ('−', 'dobj')]
+
+>> Bigrams: 
+[[Goals, AI], [AI, ·], [·, Create], [Create, Expert], [Expert, Systems], [Systems, −]]
+
+>> Trigrams: 
+[[Goals, AI, ·], [AI, ·, Create], [·, Create, Expert], [Create, Expert, Systems], [Expert, Systems, −]]
+
+>> Noun Phrases are: 
+[Goals, AI, Expert Systems −]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 12 =============================
+
+The systems which exhibit intelligent behavior, learn, demonstrate, explain, and advice its users. · 
+
+
+>> Tokens are: 
+[systems, exhibit, intelligent, behavior, ,, learn, ,, demonstrate, ,, explain, ,, advice, users, ., ·] 
+
+>> PoS Tags are: 
+[('systems', 'NOUN'), ('exhibit', 'VERB'), ('intelligent', 'ADJ'), ('behavior', 'NOUN'), (',', 'PUNCT'), ('learn', 'VERB'), (',', 'PUNCT'), ('demonstrate', 'VERB'), (',', 'PUNCT'), ('explain', 'VERB'), (',', 'PUNCT'), ('advice', 'VERB'), ('users', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('systems', 'nsubj'), ('exhibit', 'relcl'), ('intelligent', 'amod'), ('behavior', 'dobj'), (',', 'punct'), ('learn', 'ROOT'), (',', 'punct'), ('demonstrate', 'conj'), (',', 'punct'), ('explain', 'conj'), (',', 'punct'), ('advice', 'conj'), ('users', 'dobj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[systems, exhibit], [exhibit, intelligent], [intelligent, behavior], [behavior, ,], [,, learn], [learn, ,], [,, demonstrate], [demonstrate, ,], [,, explain], [explain, ,], [,, advice], [advice, users], [users, .], [., ·]]
+
+>> Trigrams: 
+[[systems, exhibit, intelligent], [exhibit, intelligent, behavior], [intelligent, behavior, ,], [behavior, ,, learn], [,, learn, ,], [learn, ,, demonstrate], [,, demonstrate, ,], [demonstrate, ,, explain], [,, explain, ,], [explain, ,, advice], [,, advice, users], [advice, users, .], [users, ., ·]]
+
+>> Noun Phrases are: 
+[The systems, intelligent behavior, its users]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 13 =============================
+
+To Implement Human Intelligence in Machines − Creating systems that understand, think, learn, and behave like humans. 
+
+
+>> Tokens are: 
+[Implement, Human, Intelligence, Machines, −, Creating, systems, understand, ,, think, ,, learn, ,, behave, like, humans, .] 
+
+>> PoS Tags are: 
+[('Implement', 'PROPN'), ('Human', 'PROPN'), ('Intelligence', 'PROPN'), ('Machines', 'PROPN'), ('−', 'PROPN'), ('Creating', 'PROPN'), ('systems', 'NOUN'), ('understand', 'VERB'), (',', 'PUNCT'), ('think', 'VERB'), (',', 'PUNCT'), ('learn', 'VERB'), (',', 'PUNCT'), ('behave', 'VERB'), ('like', 'ADP'), ('humans', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Implement', 'advcl'), ('Human', 'compound'), ('Intelligence', 'dobj'), ('Machines', 'pobj'), ('−', 'dobj'), ('Creating', 'compound'), ('systems', 'dobj'), ('understand', 'relcl'), (',', 'punct'), ('think', 'ROOT'), (',', 'punct'), ('learn', 'conj'), (',', 'punct'), ('behave', 'conj'), ('like', 'prep'), ('humans', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Implement, Human], [Human, Intelligence], [Intelligence, Machines], [Machines, −], [−, Creating], [Creating, systems], [systems, understand], [understand, ,], [,, think], [think, ,], [,, learn], [learn, ,], [,, behave], [behave, like], [like, humans], [humans, .]]
+
+>> Trigrams: 
+[[Implement, Human, Intelligence], [Human, Intelligence, Machines], [Intelligence, Machines, −], [Machines, −, Creating], [−, Creating, systems], [Creating, systems, understand], [systems, understand, ,], [understand, ,, think], [,, think, ,], [think, ,, learn], [,, learn, ,], [learn, ,, behave], [,, behave, like], [behave, like, humans], [like, humans, .]]
+
+>> Noun Phrases are: 
+[Human Intelligence, Machines, −, Creating systems, humans]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+What Contributes to AI? 
+
+
+>> Tokens are: 
+[Contributes, AI, ?] 
+
+>> PoS Tags are: 
+[('Contributes', 'VERB'), ('AI', 'PROPN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Contributes', 'ROOT'), ('AI', 'pobj'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Contributes, AI], [AI, ?]]
+
+>> Trigrams: 
+[[Contributes, AI, ?]]
+
+>> Noun Phrases are: 
+[What, AI]
+
+>> Named Entities are: 
+[('Contributes', 'ORG'), ('AI', 'ORG')]
+
+
+============================ Sentence 15 =============================
+
+Artificial intelligence is a science and technology based on disciplines such as Computer Science, Biology, Psychology, Linguistics, Mathematics, and Engineering. 
+
+
+>> Tokens are: 
+[Artificial, intelligence, science, technology, based, disciplines, Computer, Science, ,, Biology, ,, Psychology, ,, Linguistics, ,, Mathematics, ,, Engineering, .] 
+
+>> PoS Tags are: 
+[('Artificial', 'ADJ'), ('intelligence', 'NOUN'), ('science', 'NOUN'), ('technology', 'NOUN'), ('based', 'VERB'), ('disciplines', 'NOUN'), ('Computer', 'PROPN'), ('Science', 'PROPN'), (',', 'PUNCT'), ('Biology', 'PROPN'), (',', 'PUNCT'), ('Psychology', 'NOUN'), (',', 'PUNCT'), ('Linguistics', 'PROPN'), (',', 'PUNCT'), ('Mathematics', 'PROPN'), (',', 'PUNCT'), ('Engineering', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Artificial', 'amod'), ('intelligence', 'nsubj'), ('science', 'attr'), ('technology', 'conj'), ('based', 'acl'), ('disciplines', 'pobj'), ('Computer', 'compound'), ('Science', 'pobj'), (',', 'punct'), ('Biology', 'conj'), (',', 'punct'), ('Psychology', 'conj'), (',', 'punct'), ('Linguistics', 'conj'), (',', 'punct'), ('Mathematics', 'conj'), (',', 'punct'), ('Engineering', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Artificial, intelligence], [intelligence, science], [science, technology], [technology, based], [based, disciplines], [disciplines, Computer], [Computer, Science], [Science, ,], [,, Biology], [Biology, ,], [,, Psychology], [Psychology, ,], [,, Linguistics], [Linguistics, ,], [,, Mathematics], [Mathematics, ,], [,, Engineering], [Engineering, .]]
+
+>> Trigrams: 
+[[Artificial, intelligence, science], [intelligence, science, technology], [science, technology, based], [technology, based, disciplines], [based, disciplines, Computer], [disciplines, Computer, Science], [Computer, Science, ,], [Science, ,, Biology], [,, Biology, ,], [Biology, ,, Psychology], [,, Psychology, ,], [Psychology, ,, Linguistics], [,, Linguistics, ,], [Linguistics, ,, Mathematics], [,, Mathematics, ,], [Mathematics, ,, Engineering], [,, Engineering, .]]
+
+>> Noun Phrases are: 
+[Artificial intelligence, a science, technology, disciplines, Computer Science, Biology, Psychology, Linguistics, Mathematics, Engineering]
+
+>> Named Entities are: 
+[('Computer Science, Biology, Psychology', 'ORG')]
+
+
+============================ Sentence 16 =============================
+
+A major thrust of AI is in the development of computer functions associated with human intelligence, such as reasoning, learning, and problem solving. 
+
+
+>> Tokens are: 
+[major, thrust, AI, development, computer, functions, associated, human, intelligence, ,, reasoning, ,, learning, ,, problem, solving, .] 
+
+>> PoS Tags are: 
+[('major', 'ADJ'), ('thrust', 'NOUN'), ('AI', 'PROPN'), ('development', 'NOUN'), ('computer', 'NOUN'), ('functions', 'NOUN'), ('associated', 'VERB'), ('human', 'ADJ'), ('intelligence', 'NOUN'), (',', 'PUNCT'), ('reasoning', 'NOUN'), (',', 'PUNCT'), ('learning', 'NOUN'), (',', 'PUNCT'), ('problem', 'NOUN'), ('solving', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('major', 'amod'), ('thrust', 'nsubj'), ('AI', 'pobj'), ('development', 'pobj'), ('computer', 'compound'), ('functions', 'pobj'), ('associated', 'acl'), ('human', 'amod'), ('intelligence', 'pobj'), (',', 'punct'), ('reasoning', 'pobj'), (',', 'punct'), ('learning', 'conj'), (',', 'punct'), ('problem', 'compound'), ('solving', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[major, thrust], [thrust, AI], [AI, development], [development, computer], [computer, functions], [functions, associated], [associated, human], [human, intelligence], [intelligence, ,], [,, reasoning], [reasoning, ,], [,, learning], [learning, ,], [,, problem], [problem, solving], [solving, .]]
+
+>> Trigrams: 
+[[major, thrust, AI], [thrust, AI, development], [AI, development, computer], [development, computer, functions], [computer, functions, associated], [functions, associated, human], [associated, human, intelligence], [human, intelligence, ,], [intelligence, ,, reasoning], [,, reasoning, ,], [reasoning, ,, learning], [,, learning, ,], [learning, ,, problem], [,, problem, solving], [problem, solving, .]]
+
+>> Noun Phrases are: 
+[A major thrust, AI, the development, computer functions, human intelligence, reasoning, learning]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 17 =============================
+
+Out of the following areas, one or multiple areas can contribute to build an intelligent system. 
+
+
+>> Tokens are: 
+[following, areas, ,, multiple, areas, contribute, build, intelligent, system, .] 
+
+>> PoS Tags are: 
+[('following', 'VERB'), ('areas', 'NOUN'), (',', 'PUNCT'), ('multiple', 'ADJ'), ('areas', 'NOUN'), ('contribute', 'VERB'), ('build', 'VERB'), ('intelligent', 'ADJ'), ('system', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('following', 'amod'), ('areas', 'pobj'), (',', 'punct'), ('multiple', 'amod'), ('areas', 'nsubj'), ('contribute', 'ROOT'), ('build', 'advcl'), ('intelligent', 'amod'), ('system', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[following, areas], [areas, ,], [,, multiple], [multiple, areas], [areas, contribute], [contribute, build], [build, intelligent], [intelligent, system], [system, .]]
+
+>> Trigrams: 
+[[following, areas, ,], [areas, ,, multiple], [,, multiple, areas], [multiple, areas, contribute], [areas, contribute, build], [contribute, build, intelligent], [build, intelligent, system], [intelligent, system, .]]
+
+>> Noun Phrases are: 
+[the following areas, one or multiple areas, an intelligent system]
+
+>> Named Entities are: 
+[('one', 'CARDINAL')]
+
+
+============================ Sentence 18 =============================
+
+Programming Without and With AI 
+
+
+>> Tokens are: 
+[Programming, AI] 
+
+>> PoS Tags are: 
+[('Programming', 'VERB'), ('AI', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Programming', 'compound'), ('AI', 'pobj')]
+
+>> Bigrams: 
+[[Programming, AI]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[AI]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+The programming without and with AI is different in following ways − 	Programming Without AI 	Programming With AI  	A computer program without AI can answer the specific questions it is meant to solve. 
+
+
+>> Tokens are: 
+[programming, AI, different, following, ways, −, 	, Programming, AI, 	, Programming, AI,  	, computer, program, AI, answer, specific, questions, meant, solve, .] 
+
+>> PoS Tags are: 
+[('programming', 'NOUN'), ('AI', 'PROPN'), ('different', 'ADJ'), ('following', 'VERB'), ('ways', 'NOUN'), ('−', 'PROPN'), ('\t', 'SPACE'), ('Programming', 'PROPN'), ('AI', 'PROPN'), ('\t', 'SPACE'), ('Programming', 'PROPN'), ('AI', 'PROPN'), (' \t', 'SPACE'), ('computer', 'NOUN'), ('program', 'NOUN'), ('AI', 'PROPN'), ('answer', 'VERB'), ('specific', 'ADJ'), ('questions', 'NOUN'), ('meant', 'VERB'), ('solve', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('programming', 'nsubj'), ('AI', 'pobj'), ('different', 'acomp'), ('following', 'pcomp'), ('ways', 'dobj'), ('−', 'compound'), ('\t', 'compound'), ('Programming', 'nsubj'), ('AI', 'compound'), ('\t', 'compound'), ('Programming', 'pobj'), ('AI', 'nmod'), (' \t', 'compound'), ('computer', 'compound'), ('program', 'pobj'), ('AI', 'pobj'), ('answer', 'relcl'), ('specific', 'amod'), ('questions', 'dobj'), ('meant', 'relcl'), ('solve', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[programming, AI], [AI, different], [different, following], [following, ways], [ways, −], [−, 	], [	, Programming], [Programming, AI], [AI, 	], [	, Programming], [Programming, AI], [AI,  	], [ 	, computer], [computer, program], [program, AI], [AI, answer], [answer, specific], [specific, questions], [questions, meant], [meant, solve], [solve, .]]
+
+>> Trigrams: 
+[[programming, AI, different], [AI, different, following], [different, following, ways], [following, ways, −], [ways, −, 	], [−, 	, Programming], [	, Programming, AI], [Programming, AI, 	], [AI, 	, Programming], [	, Programming, AI], [Programming, AI,  	], [AI,  	, computer], [ 	, computer, program], [computer, program, AI], [program, AI, answer], [AI, answer, specific], [answer, specific, questions], [specific, questions, meant], [questions, meant, solve], [meant, solve, .]]
+
+>> Noun Phrases are: 
+[The programming, AI, ways, − 	Programming, AI 	Programming, AI  	A computer program, AI, the specific questions, it]
+
+>> Named Entities are: 
+[('AI', 'ORG'), ('− \tProgramming Without AI', 'ORG'), ('Programming With AI', 'ORG'), ('AI', 'ORG')]
+
+
+============================ Sentence 20 =============================
+
+	A computer program with AI can answer the generic questions it is meant to solve. 
+
+
+>> Tokens are: 
+[	, computer, program, AI, answer, generic, questions, meant, solve, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('computer', 'NOUN'), ('program', 'NOUN'), ('AI', 'PROPN'), ('answer', 'VERB'), ('generic', 'ADJ'), ('questions', 'NOUN'), ('meant', 'VERB'), ('solve', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('computer', 'compound'), ('program', 'nsubj'), ('AI', 'pobj'), ('answer', 'ROOT'), ('generic', 'amod'), ('questions', 'dobj'), ('meant', 'relcl'), ('solve', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, computer], [computer, program], [program, AI], [AI, answer], [answer, generic], [generic, questions], [questions, meant], [meant, solve], [solve, .]]
+
+>> Trigrams: 
+[[	, computer, program], [computer, program, AI], [program, AI, answer], [AI, answer, generic], [answer, generic, questions], [generic, questions, meant], [questions, meant, solve], [meant, solve, .]]
+
+>> Noun Phrases are: 
+[	A computer program, AI, the generic questions, it]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 21 =============================
+
+ 	Modification in the program leads to change in its structure. 
+
+
+>> Tokens are: 
+[ 	, Modification, program, leads, change, structure, .] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('Modification', 'NOUN'), ('program', 'NOUN'), ('leads', 'VERB'), ('change', 'VERB'), ('structure', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' \t', 'compound'), ('Modification', 'nsubj'), ('program', 'pobj'), ('leads', 'ROOT'), ('change', 'xcomp'), ('structure', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ 	, Modification], [Modification, program], [program, leads], [leads, change], [change, structure], [structure, .]]
+
+>> Trigrams: 
+[[ 	, Modification, program], [Modification, program, leads], [program, leads, change], [leads, change, structure], [change, structure, .]]
+
+>> Noun Phrases are: 
+[ 	Modification, the program, its structure]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 22 =============================
+
+	AI programs can absorb new modifications by putting highly independent pieces of information together. 
+
+
+>> Tokens are: 
+[	, AI, programs, absorb, new, modifications, putting, highly, independent, pieces, information, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('AI', 'PROPN'), ('programs', 'NOUN'), ('absorb', 'VERB'), ('new', 'ADJ'), ('modifications', 'NOUN'), ('putting', 'VERB'), ('highly', 'ADV'), ('independent', 'ADJ'), ('pieces', 'NOUN'), ('information', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('AI', 'compound'), ('programs', 'nsubj'), ('absorb', 'ROOT'), ('new', 'amod'), ('modifications', 'dobj'), ('putting', 'pcomp'), ('highly', 'advmod'), ('independent', 'amod'), ('pieces', 'dobj'), ('information', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, AI], [AI, programs], [programs, absorb], [absorb, new], [new, modifications], [modifications, putting], [putting, highly], [highly, independent], [independent, pieces], [pieces, information], [information, .]]
+
+>> Trigrams: 
+[[	, AI, programs], [AI, programs, absorb], [programs, absorb, new], [absorb, new, modifications], [new, modifications, putting], [modifications, putting, highly], [putting, highly, independent], [highly, independent, pieces], [independent, pieces, information], [pieces, information, .]]
+
+>> Noun Phrases are: 
+[	AI programs, new modifications, highly independent pieces, information]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+Hence you can modify even a minute piece of information of program without affecting its structure. 
+
+
+>> Tokens are: 
+[modify, minute, piece, information, program, affecting, structure, .] 
+
+>> PoS Tags are: 
+[('modify', 'VERB'), ('minute', 'NOUN'), ('piece', 'NOUN'), ('information', 'NOUN'), ('program', 'NOUN'), ('affecting', 'VERB'), ('structure', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('modify', 'ROOT'), ('minute', 'compound'), ('piece', 'dobj'), ('information', 'pobj'), ('program', 'pobj'), ('affecting', 'pcomp'), ('structure', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[modify, minute], [minute, piece], [piece, information], [information, program], [program, affecting], [affecting, structure], [structure, .]]
+
+>> Trigrams: 
+[[modify, minute, piece], [minute, piece, information], [piece, information, program], [information, program, affecting], [program, affecting, structure], [affecting, structure, .]]
+
+>> Noun Phrases are: 
+[you, even a minute piece, information, program, its structure]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 24 =============================
+
+ 	Modification is not quick and easy. 
+
+
+>> Tokens are: 
+[ 	, Modification, quick, easy, .] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('Modification', 'PROPN'), ('quick', 'ADJ'), ('easy', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' \t', 'compound'), ('Modification', 'nsubj'), ('quick', 'acomp'), ('easy', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ 	, Modification], [Modification, quick], [quick, easy], [easy, .]]
+
+>> Trigrams: 
+[[ 	, Modification, quick], [Modification, quick, easy], [quick, easy, .]]
+
+>> Noun Phrases are: 
+[ 	Modification]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+It may lead to affecting the program adversely. 
+
+
+>> Tokens are: 
+[lead, affecting, program, adversely, .] 
+
+>> PoS Tags are: 
+[('lead', 'VERB'), ('affecting', 'VERB'), ('program', 'NOUN'), ('adversely', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('lead', 'ROOT'), ('affecting', 'pcomp'), ('program', 'dobj'), ('adversely', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[lead, affecting], [affecting, program], [program, adversely], [adversely, .]]
+
+>> Trigrams: 
+[[lead, affecting, program], [affecting, program, adversely], [program, adversely, .]]
+
+>> Noun Phrases are: 
+[It, the program]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+	Quick and Easy program modification. 
+
+
+>> Tokens are: 
+[	, Quick, Easy, program, modification, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Quick', 'PROPN'), ('Easy', 'PROPN'), ('program', 'NOUN'), ('modification', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Quick', 'amod'), ('Easy', 'conj'), ('program', 'compound'), ('modification', 'ROOT'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Quick], [Quick, Easy], [Easy, program], [program, modification], [modification, .]]
+
+>> Trigrams: 
+[[	, Quick, Easy], [Quick, Easy, program], [Easy, program, modification], [program, modification, .]]
+
+>> Noun Phrases are: 
+[	Quick and Easy program modification]
+
+>> Named Entities are: 
+[('Quick', 'GPE')]
+
+
+============================ Sentence 27 =============================
+
+   
+
+
+>> Tokens are: 
+[  ] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('  ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 28 =============================
+
+What is AI Technique? 
+
+
+>> Tokens are: 
+[AI, Technique, ?] 
+
+>> PoS Tags are: 
+[('AI', 'PROPN'), ('Technique', 'NOUN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI', 'compound'), ('Technique', 'attr'), ('?', 'punct')]
+
+>> Bigrams: 
+[[AI, Technique], [Technique, ?]]
+
+>> Trigrams: 
+[[AI, Technique, ?]]
+
+>> Noun Phrases are: 
+[What, AI Technique]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 29 =============================
+
+In the real world, the knowledge has some unwelcomed properties − · Its volume is huge, next to unimaginable. 
+
+
+>> Tokens are: 
+[real, world, ,, knowledge, unwelcomed, properties, −, ·, volume, huge, ,, unimaginable, .] 
+
+>> PoS Tags are: 
+[('real', 'ADJ'), ('world', 'NOUN'), (',', 'PUNCT'), ('knowledge', 'NOUN'), ('unwelcomed', 'VERB'), ('properties', 'NOUN'), ('−', 'VERB'), ('·', 'PUNCT'), ('volume', 'NOUN'), ('huge', 'ADJ'), (',', 'PUNCT'), ('unimaginable', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('real', 'amod'), ('world', 'pobj'), (',', 'punct'), ('knowledge', 'nsubj'), ('unwelcomed', 'amod'), ('properties', 'dobj'), ('−', 'acl'), ('·', 'punct'), ('volume', 'nsubj'), ('huge', 'acomp'), (',', 'punct'), ('unimaginable', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[real, world], [world, ,], [,, knowledge], [knowledge, unwelcomed], [unwelcomed, properties], [properties, −], [−, ·], [·, volume], [volume, huge], [huge, ,], [,, unimaginable], [unimaginable, .]]
+
+>> Trigrams: 
+[[real, world, ,], [world, ,, knowledge], [,, knowledge, unwelcomed], [knowledge, unwelcomed, properties], [unwelcomed, properties, −], [properties, −, ·], [−, ·, volume], [·, volume, huge], [volume, huge, ,], [huge, ,, unimaginable], [,, unimaginable, .]]
+
+>> Noun Phrases are: 
+[the real world, the knowledge, some unwelcomed properties, Its volume]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 30 =============================
+
+· It is not well-organized or well-formatted. · 
+
+
+>> Tokens are: 
+[·, -, organized, -, formatted, ., ·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('-', 'PUNCT'), ('organized', 'VERB'), ('-', 'PUNCT'), ('formatted', 'VERB'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('-', 'punct'), ('organized', 'acomp'), ('-', 'punct'), ('formatted', 'conj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[·, -], [-, organized], [organized, -], [-, formatted], [formatted, .], [., ·]]
+
+>> Trigrams: 
+[[·, -, organized], [-, organized, -], [organized, -, formatted], [-, formatted, .], [formatted, ., ·]]
+
+>> Noun Phrases are: 
+[It]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 31 =============================
+
+It keeps changing constantly. 
+
+
+>> Tokens are: 
+[keeps, changing, constantly, .] 
+
+>> PoS Tags are: 
+[('keeps', 'VERB'), ('changing', 'VERB'), ('constantly', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('keeps', 'ROOT'), ('changing', 'xcomp'), ('constantly', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[keeps, changing], [changing, constantly], [constantly, .]]
+
+>> Trigrams: 
+[[keeps, changing, constantly], [changing, constantly, .]]
+
+>> Noun Phrases are: 
+[It]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 32 =============================
+
+AI Technique is a manner to organize and use the knowledge efficiently in such a way that − · It should be perceivable by the people who provide it. 
+
+
+>> Tokens are: 
+[AI, Technique, manner, organize, use, knowledge, efficiently, way, −, ·, perceivable, people, provide, .] 
+
+>> PoS Tags are: 
+[('AI', 'PROPN'), ('Technique', 'NOUN'), ('manner', 'NOUN'), ('organize', 'VERB'), ('use', 'VERB'), ('knowledge', 'NOUN'), ('efficiently', 'ADV'), ('way', 'NOUN'), ('−', 'PROPN'), ('·', 'PUNCT'), ('perceivable', 'ADJ'), ('people', 'NOUN'), ('provide', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI', 'compound'), ('Technique', 'nsubj'), ('manner', 'attr'), ('organize', 'relcl'), ('use', 'conj'), ('knowledge', 'dobj'), ('efficiently', 'advmod'), ('way', 'pobj'), ('−', 'dep'), ('·', 'punct'), ('perceivable', 'acomp'), ('people', 'pobj'), ('provide', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AI, Technique], [Technique, manner], [manner, organize], [organize, use], [use, knowledge], [knowledge, efficiently], [efficiently, way], [way, −], [−, ·], [·, perceivable], [perceivable, people], [people, provide], [provide, .]]
+
+>> Trigrams: 
+[[AI, Technique, manner], [Technique, manner, organize], [manner, organize, use], [organize, use, knowledge], [use, knowledge, efficiently], [knowledge, efficiently, way], [efficiently, way, −], [way, −, ·], [−, ·, perceivable], [·, perceivable, people], [perceivable, people, provide], [people, provide, .]]
+
+>> Noun Phrases are: 
+[AI Technique, a manner, the knowledge, such a way, It, the people, who, it]
+
+>> Named Entities are: 
+[('AI Technique', 'ORG')]
+
+
+============================ Sentence 33 =============================
+
+· It should be easily modifiable to correct errors. 
+
+
+>> Tokens are: 
+[·, easily, modifiable, correct, errors, .] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('easily', 'ADV'), ('modifiable', 'ADJ'), ('correct', 'VERB'), ('errors', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('easily', 'advmod'), ('modifiable', 'acomp'), ('correct', 'xcomp'), ('errors', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[·, easily], [easily, modifiable], [modifiable, correct], [correct, errors], [errors, .]]
+
+>> Trigrams: 
+[[·, easily, modifiable], [easily, modifiable, correct], [modifiable, correct, errors], [correct, errors, .]]
+
+>> Noun Phrases are: 
+[It, errors]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 34 =============================
+
+· It should be useful in many situations though it is incomplete or inaccurate. 
+
+
+>> Tokens are: 
+[·, useful, situations, incomplete, inaccurate, .] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('useful', 'ADJ'), ('situations', 'NOUN'), ('incomplete', 'ADJ'), ('inaccurate', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('useful', 'acomp'), ('situations', 'pobj'), ('incomplete', 'acomp'), ('inaccurate', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[·, useful], [useful, situations], [situations, incomplete], [incomplete, inaccurate], [inaccurate, .]]
+
+>> Trigrams: 
+[[·, useful, situations], [useful, situations, incomplete], [situations, incomplete, inaccurate], [incomplete, inaccurate, .]]
+
+>> Noun Phrases are: 
+[It, many situations, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 35 =============================
+
+AI techniques elevate the speed of execution of the complex program it is equipped with. 
+
+
+>> Tokens are: 
+[AI, techniques, elevate, speed, execution, complex, program, equipped, .] 
+
+>> PoS Tags are: 
+[('AI', 'NOUN'), ('techniques', 'NOUN'), ('elevate', 'VERB'), ('speed', 'NOUN'), ('execution', 'NOUN'), ('complex', 'ADJ'), ('program', 'NOUN'), ('equipped', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI', 'compound'), ('techniques', 'nsubj'), ('elevate', 'ROOT'), ('speed', 'dobj'), ('execution', 'pobj'), ('complex', 'amod'), ('program', 'pobj'), ('equipped', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AI, techniques], [techniques, elevate], [elevate, speed], [speed, execution], [execution, complex], [complex, program], [program, equipped], [equipped, .]]
+
+>> Trigrams: 
+[[AI, techniques, elevate], [techniques, elevate, speed], [elevate, speed, execution], [speed, execution, complex], [execution, complex, program], [complex, program, equipped], [program, equipped, .]]
+
+>> Noun Phrases are: 
+[AI techniques, the speed, execution, the complex program, it]
+
+>> Named Entities are: 
+[]

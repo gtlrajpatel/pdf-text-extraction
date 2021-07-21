@@ -1,0 +1,1321 @@
+
+
+========================== Sentence 1 ===========================
+
+ OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709)	 Darshan Institute of Engineering & Technology UNIT-9 Remote user authentication      1  Outline Remote user authentication with symmetric encryption Remote user authentication with asymmetric encryption Kerberos  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  X.800 and RFC 2828 International Telecommunication Union (ITU) 
+
+Tokens are: 
+>> ['OOPC', '++', 'UNIT', '-1', 'Prof.', 'Rupesh', 'G.', 'Vaishnav', 'rupesh.vaishnav@darshan.ac.in', '94280-37452', 'Information', '&', 'Network', 'Security', '(', '2170709', ')', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', 'UNIT-9', 'Remote', 'user', 'authentication', '1', 'Outline', 'Remote', 'user', 'authentication', 'with', 'symmetric', 'encryption', 'Remote', 'user', 'authentication', 'with', 'asymmetric', 'encryption', 'Kerberos', 'Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'X.800', 'and', 'RFC', '2828', 'International', 'Telecommunication', 'Union', '(', 'ITU', ')'] 
+
+ UPOS tags are: 
+>> [('OOPC', 'PROPN'), ('++', 'NUM'), ('UNIT', 'NOUN'), ('-1', 'NUM'), ('Prof.', 'PROPN'), ('Rupesh', 'PROPN'), ('G.', 'PROPN'), ('Vaishnav', 'PROPN'), ('rupesh.vaishnav@darshan.ac.in', 'X'), ('94280-37452', 'NUM'), ('Information', 'NOUN'), ('&', 'CCONJ'), ('Network', 'PROPN'), ('Security', 'PROPN'), ('(', 'PUNCT'), ('2170709', 'NUM'), (')', 'PUNCT'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('UNIT-9', 'PROPN'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('1', 'NUM'), ('Outline', 'NOUN'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('with', 'ADP'), ('symmetric', 'ADJ'), ('encryption', 'NOUN'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('with', 'ADP'), ('asymmetric', 'ADJ'), ('encryption', 'NOUN'), ('Kerberos', 'PROPN'), ('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'PROPN'), ('X.800', 'PROPN'), ('and', 'CCONJ'), ('RFC', 'PROPN'), ('2828', 'NUM'), ('International', 'ADJ'), ('Telecommunication', 'ADJ'), ('Union', 'PROPN'), ('(', 'PUNCT'), ('ITU', 'PROPN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('OOPC', 'NNP'), ('++', 'CD'), ('UNIT', 'NN'), ('-1', 'CD'), ('Prof.', 'NNP'), ('Rupesh', 'NNP'), ('G.', 'NNP'), ('Vaishnav', 'NNP'), ('rupesh.vaishnav@darshan.ac.in', 'ADD'), ('94280-37452', 'CD'), ('Information', 'NN'), ('&', 'CC'), ('Network', 'NNP'), ('Security', 'NNP'), ('(', '-LRB-'), ('2170709', 'CD'), (')', '-RRB-'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('UNIT-9', 'NNP'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('1', 'CD'), ('Outline', 'NN'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('with', 'IN'), ('symmetric', 'JJ'), ('encryption', 'NN'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('with', 'IN'), ('asymmetric', 'JJ'), ('encryption', 'NN'), ('Kerberos', 'NNP'), ('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NNP'), ('X.800', 'NNP'), ('and', 'CC'), ('RFC', 'NNP'), ('2828', 'CD'), ('International', 'NNP'), ('Telecommunication', 'NNP'), ('Union', 'NNP'), ('(', '-LRB-'), ('ITU', 'NNP'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('OOPC', 'OOPC'), ('++', '++'), ('UNIT', 'unit'), ('-1', '-1'), ('Prof.', 'Prof.'), ('Rupesh', 'Rupesh'), ('G.', 'G.'), ('Vaishnav', 'Vaishnav'), ('rupesh.vaishnav@darshan.ac.in', 'rupesh.vaishnav@darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'information'), ('&', '&'), ('Network', 'Network'), ('Security', 'Security'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('UNIT-9', 'UNIT-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('1', '1'), ('Outline', 'outline'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('with', 'with'), ('symmetric', 'symmetric'), ('encryption', 'encryption'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('with', 'with'), ('asymmetric', 'asymmetric'), ('encryption', 'encryption'), ('Kerberos', 'Kerberos'), ('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('X.800', 'X.800'), ('and', 'and'), ('RFC', 'RFC'), ('2828', '2828'), ('International', 'International'), ('Telecommunication', 'Telecommunication'), ('Union', 'Union'), ('(', '('), ('ITU', 'ITU'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('OOPC', 'Subject'), 'nsubj'), (('++', 'UNIT'), 'nummod'), (('UNIT', 'OOPC'), 'appos'), (('-1', 'UNIT'), 'nummod'), (('Prof.', 'UNIT'), 'appos'), (('Rupesh', 'OOPC'), 'flat'), (('G.', 'Rupesh'), 'flat'), (('Vaishnav', 'Rupesh'), 'flat'), (('rupesh.vaishnav@darshan.ac.in', 'Rupesh'), 'appos'), (('94280-37452', 'OOPC'), 'list'), (('Information', 'Institute'), 'compound'), (('&', 'Security'), 'cc'), (('Network', 'Security'), 'compound'), (('Security', 'Information'), 'conj'), (('(', '2170709'), 'punct'), (('2170709', 'Security'), 'appos'), ((')', 'Security'), 'punct'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'OOPC'), 'appos'), (('of', 'authentication'), 'case'), (('Engineering', 'UNIT-9'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('UNIT-9', 'authentication'), 'compound'), (('Remote', 'authentication'), 'compound'), (('user', 'authentication'), 'compound'), (('authentication', 'Institute'), 'nmod'), (('1', 'Outline'), 'nummod'), (('Outline', 'authentication'), 'compound'), (('Remote', 'authentication'), 'compound'), (('user', 'authentication'), 'compound'), (('authentication', 'authentication'), 'appos'), (('with', 'authentication'), 'case'), (('symmetric', 'authentication'), 'amod'), (('encryption', 'Remote'), 'compound'), (('Remote', 'authentication'), 'compound'), (('user', 'authentication'), 'compound'), (('authentication', 'authentication'), 'nmod'), (('with', 'Unit'), 'case'), (('asymmetric', 'Unit'), 'amod'), (('encryption', 'Unit'), 'compound'), (('Kerberos', 'Unit'), 'compound'), (('Unit', 'authentication'), 'nmod'), (('-9', 'Institute'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'conj'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'X.800'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'X.800'), 'amod'), (('Subject', 'X.800'), 'compound'), (('X.800', 'root'), 'root'), (('and', 'Union'), 'cc'), (('RFC', 'Union'), 'compound'), (('2828', 'Union'), 'nummod'), (('International', 'Union'), 'amod'), (('Telecommunication', 'Union'), 'amod'), (('Union', 'X.800'), 'conj'), (('(', 'ITU'), 'punct'), (('ITU', 'Union'), 'appos'), ((')', 'ITU'), 'punct')]
+
+ Named Entities are: 
+>> [('Rupesh G. Vaishnav', 'PERSON'), ('94280-37452 Information & Network Security', 'ORG'), ('2170709', 'CARDINAL'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('1', 'CARDINAL'), ('Kerberos', 'PRODUCT'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('RFC 2828 International Telecommunication Union', 'ORG'), ('ITU', 'ORG')]
+
+========================== Sentence 2 ===========================
+
+ 2  Remote user authentication with symmetric encryption Mutual Authentication A ---> KDC IDa || IDb || N1 KDC ---> 
+
+Tokens are: 
+>> ['2', 'Remote', 'user', 'authentication', 'with', 'symmetric', 'encryption', 'Mutual', 'Authentication', 'A', '--->', 'KDC', 'IDa', '||', 'ID', 'b', '||', 'N1', 'KDC', '--->'] 
+
+ UPOS tags are: 
+>> [('2', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('with', 'ADP'), ('symmetric', 'ADJ'), ('encryption', 'NOUN'), ('Mutual', 'ADJ'), ('Authentication', 'NOUN'), ('A', 'NOUN'), ('--->', 'PUNCT'), ('KDC', 'NOUN'), ('IDa', 'NOUN'), ('||', 'PUNCT'), ('ID', 'NOUN'), ('b', 'NOUN'), ('||', 'PUNCT'), ('N1', 'NOUN'), ('KDC', 'NOUN'), ('--->', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('2', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('with', 'IN'), ('symmetric', 'JJ'), ('encryption', 'NN'), ('Mutual', 'JJ'), ('Authentication', 'NN'), ('A', 'NN'), ('--->', 'NFP'), ('KDC', 'NN'), ('IDa', 'NN'), ('||', 'NFP'), ('ID', 'NN'), ('b', 'NN'), ('||', 'NFP'), ('N1', 'NN'), ('KDC', 'NN'), ('--->', 'NFP')] 
+
+ Lemmas are: 
+>> [('2', '2'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('with', 'with'), ('symmetric', 'symmetric'), ('encryption', 'encryption'), ('Mutual', 'mutual'), ('Authentication', 'authentication'), ('A', 'a'), ('--->', '--->'), ('KDC', 'kdc'), ('IDa', 'ida'), ('||', '||'), ('ID', 'id'), ('b', 'b'), ('||', '||'), ('N1', 'n1'), ('KDC', 'kdc'), ('--->', '--->')] 
+
+ Dependency tags are: 
+>> [(('2', 'authentication'), 'nummod'), (('Remote', 'authentication'), 'compound'), (('user', 'authentication'), 'compound'), (('authentication', 'root'), 'root'), (('with', 'A'), 'case'), (('symmetric', 'encryption'), 'amod'), (('encryption', 'authentication'), 'nmod'), (('Mutual', 'A'), 'amod'), (('Authentication', 'A'), 'compound'), (('A', 'authentication'), 'nmod'), (('--->', 'A'), 'punct'), (('KDC', 'IDa'), 'compound'), (('IDa', 'authentication'), 'parataxis'), (('||', 'b'), 'punct'), (('ID', 'b'), 'compound'), (('b', 'authentication'), 'parataxis'), (('||', 'KDC'), 'punct'), (('N1', 'KDC'), 'compound'), (('KDC', 'authentication'), 'parataxis'), (('--->', 'authentication'), 'punct')]
+
+ Named Entities are: 
+>> [('2', 'CARDINAL')]
+
+========================== Sentence 3 ===========================
+
+ A E(Ka, [Ks || IDb || N1 || E(Kb,[Ks || IDa)]) 
+
+Tokens are: 
+>> ['A', 'E(', 'Ka', ',', '[', 'Ks', '||', 'ID', 'b', '||', 'N1', '||', 'E(', 'Kb', ',', '[', 'Ks', '||', 'IDa', ')', ']', ')'] 
+
+ UPOS tags are: 
+>> [('A', 'DET'), ('E(', 'PROPN'), ('Ka', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Ks', 'PROPN'), ('||', 'SYM'), ('ID', 'NOUN'), ('b', 'NOUN'), ('||', 'SYM'), ('N1', 'PROPN'), ('||', 'PUNCT'), ('E(', 'PROPN'), ('Kb', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Ks', 'PROPN'), ('||', 'PUNCT'), ('IDa', 'PROPN'), (')', 'PUNCT'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('A', 'DT'), ('E(', 'NNP'), ('Ka', 'NNP'), (',', ','), ('[', '-LRB-'), ('Ks', 'NNP'), ('||', 'SYM'), ('ID', 'NN'), ('b', 'NN'), ('||', 'SYM'), ('N1', 'NNP'), ('||', 'NFP'), ('E(', 'NNP'), ('Kb', 'NNP'), (',', ','), ('[', '-LRB-'), ('Ks', 'NNP'), ('||', 'NFP'), ('IDa', 'NNP'), (')', '-RRB-'), (']', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('A', 'a'), ('E(', 'E('), ('Ka', 'Ka'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('ID', 'id'), ('b', 'b'), ('||', '||'), ('N1', 'N1'), ('||', '||'), ('E(', 'E('), ('Kb', 'Kb'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('IDa', 'IDa'), (')', ')'), (']', ']'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('A', 'Ka'), 'det'), (('E(', 'Ka'), 'compound'), (('Ka', 'root'), 'root'), ((',', 'Ka'), 'punct'), (('[', 'Ks'), 'punct'), (('Ks', 'Ka'), 'appos'), (('||', 'Ks'), 'punct'), (('ID', 'b'), 'compound'), (('b', 'Ka'), 'list'), (('||', 'N1'), 'punct'), (('N1', 'b'), 'appos'), (('||', 'E('), 'punct'), (('E(', 'Ka'), 'list'), (('Kb', 'E('), 'flat'), ((',', 'Ks'), 'punct'), (('[', 'Ks'), 'punct'), (('Ks', 'Ka'), 'list'), (('||', 'Ks'), 'punct'), (('IDa', 'Ks'), 'flat'), ((')', 'Ks'), 'punct'), ((']', 'Ks'), 'punct'), ((')', 'Ks'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 4 ===========================
+
+ A ---> B E(Kb, [Ks || IDa]) 
+
+Tokens are: 
+>> ['A', '--->', 'B', 'E(', 'Kb', ',', '[', 'Ks', '||', 'IDa', ']', ')'] 
+
+ UPOS tags are: 
+>> [('A', 'PROPN'), ('--->', 'PUNCT'), ('B', 'PROPN'), ('E(', 'PROPN'), ('Kb', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Ks', 'PROPN'), ('||', 'PUNCT'), ('IDa', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('A', 'NNP'), ('--->', 'NFP'), ('B', 'NNP'), ('E(', 'NNP'), ('Kb', 'NNP'), (',', ','), ('[', '-LRB-'), ('Ks', 'NNP'), ('||', ','), ('IDa', 'NNP'), (']', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('A', 'A'), ('--->', '--->'), ('B', 'B'), ('E(', 'E('), ('Kb', 'Kb'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('IDa', 'IDa'), (']', ']'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('A', 'root'), 'root'), (('--->', 'A'), 'punct'), (('B', 'A'), 'list'), (('E(', 'A'), 'flat'), (('Kb', 'A'), 'flat'), ((',', 'Ks'), 'punct'), (('[', 'Ks'), 'punct'), (('Ks', 'A'), 'list'), (('||', 'Ks'), 'punct'), (('IDa', 'Ks'), 'flat'), ((']', 'Ks'), 'punct'), ((')', 'Ks'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 5 ===========================
+
+ B ---> A E(Ks, N2) A ---> 
+
+Tokens are: 
+>> ['B', '--->', 'A', 'E(', 'Ks', ',', 'N2', ')', 'A', '--->'] 
+
+ UPOS tags are: 
+>> [('B', 'PROPN'), ('--->', 'PUNCT'), ('A', 'PROPN'), ('E(', 'PROPN'), ('Ks', 'PROPN'), (',', 'PUNCT'), ('N2', 'PROPN'), (')', 'PUNCT'), ('A', 'NOUN'), ('--->', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('B', 'NNP'), ('--->', 'NFP'), ('A', 'NNP'), ('E(', 'NNP'), ('Ks', 'NNP'), (',', ','), ('N2', 'NNP'), (')', '-RRB-'), ('A', 'NN'), ('--->', 'NFP')] 
+
+ Lemmas are: 
+>> [('B', 'B'), ('--->', '--->'), ('A', 'A'), ('E(', 'E('), ('Ks', 'Ks'), (',', ','), ('N2', 'N2'), (')', ')'), ('A', 'a'), ('--->', '--->')] 
+
+ Dependency tags are: 
+>> [(('B', 'root'), 'root'), (('--->', 'B'), 'punct'), (('A', 'Ks'), 'compound'), (('E(', 'Ks'), 'compound'), (('Ks', 'B'), 'list'), ((',', 'N2'), 'punct'), (('N2', 'Ks'), 'appos'), ((')', 'Ks'), 'punct'), (('A', 'B'), 'list'), (('--->', 'B'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 6 ===========================
+
+ B E(Ks, f(N2)) 
+
+Tokens are: 
+>> ['B', 'E(', 'Ks', ',', 'f', '(', 'N2', ')', ')'] 
+
+ UPOS tags are: 
+>> [('B', 'PROPN'), ('E(', 'PROPN'), ('Ks', 'PROPN'), (',', 'PUNCT'), ('f', 'PROPN'), ('(', 'PUNCT'), ('N2', 'PROPN'), (')', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('B', 'NNP'), ('E(', 'NNP'), ('Ks', 'NNP'), (',', ','), ('f', 'NNP'), ('(', '-LRB-'), ('N2', 'NNP'), (')', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('B', 'B'), ('E(', 'E('), ('Ks', 'Ks'), (',', ','), ('f', 'for'), ('(', '('), ('N2', 'N2'), (')', ')'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('B', 'root'), 'root'), (('E(', 'B'), 'flat'), (('Ks', 'B'), 'list'), ((',', 'Ks'), 'punct'), (('f', 'Ks'), 'appos'), (('(', 'N2'), 'punct'), (('N2', 'Ks'), 'list'), ((')', 'N2'), 'punct'), ((')', 'N2'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 7 ===========================
+
+ Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Remote user authentication with symmetric encryption One-way Authentication A ---> KDC IDa || IDb || N1 KDC ---> 
+
+Tokens are: 
+>> ['Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Remote', 'user', 'authentication', 'with', 'symmetric', 'encryption', 'One-way', 'Authentication', 'A', '--->', 'KDC', 'IDa', '||', 'ID', 'b', '||', 'N1', 'KDC', '--->'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('with', 'ADP'), ('symmetric', 'ADJ'), ('encryption', 'NOUN'), ('One-way', 'NOUN'), ('Authentication', 'NOUN'), ('A', 'NOUN'), ('--->', 'PUNCT'), ('KDC', 'NOUN'), ('IDa', 'NOUN'), ('||', 'PUNCT'), ('ID', 'NOUN'), ('b', 'NOUN'), ('||', 'PUNCT'), ('N1', 'NOUN'), ('KDC', 'NOUN'), ('--->', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('with', 'IN'), ('symmetric', 'JJ'), ('encryption', 'NN'), ('One-way', 'NN'), ('Authentication', 'NN'), ('A', 'NN'), ('--->', 'NFP'), ('KDC', 'NN'), ('IDa', 'NN'), ('||', 'NFP'), ('ID', 'NN'), ('b', 'NN'), ('||', 'NFP'), ('N1', 'NN'), ('KDC', 'NN'), ('--->', 'NFP')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('with', 'with'), ('symmetric', 'symmetric'), ('encryption', 'encryption'), ('One-way', 'one-way'), ('Authentication', 'authentication'), ('A', 'a'), ('--->', '--->'), ('KDC', 'kdc'), ('IDa', 'ida'), ('||', '||'), ('ID', 'id'), ('b', 'b'), ('||', '||'), ('N1', 'n1'), ('KDC', 'kdc'), ('--->', '--->')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-9', 'Unit'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Subject'), 'nsubj'), (('of', 'INS'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'authentication'), 'compound'), (('Remote', 'authentication'), 'compound'), (('user', 'authentication'), 'compound'), (('authentication', 'root'), 'root'), (('with', 'encryption'), 'case'), (('symmetric', 'encryption'), 'amod'), (('encryption', 'authentication'), 'nmod'), (('One-way', 'A'), 'compound'), (('Authentication', 'A'), 'compound'), (('A', 'authentication'), 'nmod'), (('--->', 'IDa'), 'punct'), (('KDC', 'IDa'), 'compound'), (('IDa', 'authentication'), 'appos'), (('||', 'b'), 'punct'), (('ID', 'b'), 'compound'), (('b', 'IDa'), 'appos'), (('||', 'KDC'), 'punct'), (('N1', 'KDC'), 'compound'), (('KDC', 'authentication'), 'parataxis'), (('--->', 'authentication'), 'punct')]
+
+ Named Entities are: 
+>> [('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG')]
+
+========================== Sentence 8 ===========================
+
+ A E(Ka, [Ks || IDb || N1 || E(Kb, [Ks || IDa])]) 
+
+Tokens are: 
+>> ['A', 'E(', 'Ka', ',', '[', 'Ks', '||', 'ID', 'b', '||', 'N1', '||', 'E(', 'Kb', ',', '[', 'Ks', '||', 'IDa', ']', ')', ']', ')'] 
+
+ UPOS tags are: 
+>> [('A', 'DET'), ('E(', 'PROPN'), ('Ka', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Ks', 'PROPN'), ('||', 'SYM'), ('ID', 'NOUN'), ('b', 'NOUN'), ('||', 'SYM'), ('N1', 'PROPN'), ('||', 'SYM'), ('E(', 'PROPN'), ('Kb', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Ks', 'PROPN'), ('||', 'PUNCT'), ('IDa', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('A', 'DT'), ('E(', 'NNP'), ('Ka', 'NNP'), (',', ','), ('[', '-LRB-'), ('Ks', 'NNP'), ('||', 'SYM'), ('ID', 'NN'), ('b', 'NN'), ('||', 'SYM'), ('N1', 'NNP'), ('||', 'SYM'), ('E(', 'NNP'), ('Kb', 'NNP'), (',', ','), ('[', '-LRB-'), ('Ks', 'NNP'), ('||', ','), ('IDa', 'NNP'), (']', '-RRB-'), (')', '-RRB-'), (']', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('A', 'a'), ('E(', 'E('), ('Ka', 'Ka'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('ID', 'id'), ('b', 'b'), ('||', '||'), ('N1', 'N1'), ('||', '||'), ('E(', 'E('), ('Kb', 'Kb'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('IDa', 'IDa'), (']', ']'), (')', ')'), (']', ']'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('A', 'Ka'), 'det'), (('E(', 'Ka'), 'compound'), (('Ka', 'root'), 'root'), ((',', 'Ks'), 'punct'), (('[', 'Ks'), 'punct'), (('Ks', 'Ka'), 'appos'), (('||', 'Ks'), 'punct'), (('ID', 'b'), 'compound'), (('b', 'Ka'), 'list'), (('||', 'N1'), 'punct'), (('N1', 'b'), 'nmod'), (('||', 'E('), 'cc'), (('E(', 'N1'), 'appos'), (('Kb', 'N1'), 'flat'), ((',', 'Ks'), 'punct'), (('[', 'Ks'), 'punct'), (('Ks', 'Ka'), 'list'), (('||', 'Ks'), 'punct'), (('IDa', 'Ks'), 'flat'), ((']', 'Ks'), 'punct'), ((')', 'Ks'), 'punct'), ((']', 'Ks'), 'punct'), ((')', 'Ks'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 9 ===========================
+
+ A ---> B E(Kb, [Ks || IDa]) || E(Ks, M)   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos Kerberos provides a trusted third-party authentication service that enables clients and servers to establish authenticated communication. 
+
+Tokens are: 
+>> ['A', '--->', 'B', 'E(', 'Kb', ',', '[', 'Ks', '||', 'IDa', ']', ')', '||', 'E(', 'Ks', ',', 'M)', 'Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', 'Kerberos', 'provides', 'a', 'trusted', 'third', '-', 'party', 'authentication', 'service', 'that', 'enables', 'clients', 'and', 'servers', 'to', 'establish', 'authenticated', 'communication', '.'] 
+
+ UPOS tags are: 
+>> [('A', 'PROPN'), ('--->', 'PUNCT'), ('B', 'PROPN'), ('E(', 'PROPN'), ('Kb', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Ks', 'PROPN'), ('||', 'SYM'), ('IDa', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT'), ('||', 'PUNCT'), ('E(', 'PROPN'), ('Ks', 'PROPN'), (',', 'PUNCT'), ('M)', 'PROPN'), ('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'PROPN'), ('Kerberos', 'PROPN'), ('Kerberos', 'PROPN'), ('provides', 'VERB'), ('a', 'DET'), ('trusted', 'VERB'), ('third', 'ADJ'), ('-', 'PUNCT'), ('party', 'NOUN'), ('authentication', 'NOUN'), ('service', 'NOUN'), ('that', 'PRON'), ('enables', 'VERB'), ('clients', 'NOUN'), ('and', 'CCONJ'), ('servers', 'NOUN'), ('to', 'PART'), ('establish', 'VERB'), ('authenticated', 'VERB'), ('communication', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('A', 'NNP'), ('--->', 'NFP'), ('B', 'NNP'), ('E(', 'NNP'), ('Kb', 'NNP'), (',', ','), ('[', '-LRB-'), ('Ks', 'NNP'), ('||', 'SYM'), ('IDa', 'NNP'), (']', '-RRB-'), (')', '-RRB-'), ('||', 'NFP'), ('E(', 'NNP'), ('Ks', 'NNP'), (',', ','), ('M)', 'NNP'), ('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('Kerberos', 'NNP'), ('provides', 'VBZ'), ('a', 'DT'), ('trusted', 'VBN'), ('third', 'JJ'), ('-', 'HYPH'), ('party', 'NN'), ('authentication', 'NN'), ('service', 'NN'), ('that', 'WDT'), ('enables', 'VBZ'), ('clients', 'NNS'), ('and', 'CC'), ('servers', 'NNS'), ('to', 'TO'), ('establish', 'VB'), ('authenticated', 'VBN'), ('communication', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('A', 'A'), ('--->', '--->'), ('B', 'B'), ('E(', 'E('), ('Kb', 'Kb'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('IDa', 'IDa'), (']', ']'), (')', ')'), ('||', '||'), ('E(', 'E('), ('Ks', 'Ks'), (',', ','), ('M)', 'M)'), ('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'Kerberos'), ('Kerberos', 'Kerberos'), ('provides', 'provide'), ('a', 'a'), ('trusted', 'trust'), ('third', 'third'), ('-', '-'), ('party', 'party'), ('authentication', 'authentication'), ('service', 'service'), ('that', 'that'), ('enables', 'enable'), ('clients', 'client'), ('and', 'and'), ('servers', 'server'), ('to', 'to'), ('establish', 'establish'), ('authenticated', 'authenticate'), ('communication', 'communication'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('A', 'Interesting'), 'nsubj'), (('--->', 'A'), 'punct'), (('B', 'Kb'), 'compound'), (('E(', 'Kb'), 'compound'), (('Kb', 'A'), 'appos'), ((',', 'Ks'), 'punct'), (('[', 'Ks'), 'punct'), (('Ks', 'Kb'), 'appos'), (('||', 'IDa'), 'cc'), (('IDa', 'Ks'), 'flat'), ((']', 'Ks'), 'punct'), ((')', 'Ks'), 'punct'), (('||', 'Ks'), 'punct'), (('E(', 'Ks'), 'compound'), (('Ks', 'Kb'), 'conj'), ((',', 'Unit'), 'punct'), (('M)', 'Unit'), 'compound'), (('Unit', 'Ks'), 'appos'), (('-9', 'Unit'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Ks'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Interesting'), 'nsubj'), (('is', 'Interesting'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'root'), 'root'), (('Subject', 'Interesting'), 'obl:npmod'), (('Kerberos', 'Kerberos'), 'compound'), (('Kerberos', 'provides'), 'nsubj'), (('provides', 'Interesting'), 'ccomp'), (('a', 'service'), 'det'), (('trusted', 'service'), 'amod'), (('third', 'party'), 'amod'), (('-', 'party'), 'punct'), (('party', 'service'), 'compound'), (('authentication', 'service'), 'compound'), (('service', 'provides'), 'obj'), (('that', 'enables'), 'nsubj'), (('enables', 'service'), 'acl:relcl'), (('clients', 'enables'), 'obj'), (('and', 'servers'), 'cc'), (('servers', 'clients'), 'conj'), (('to', 'establish'), 'mark'), (('establish', 'enables'), 'xcomp'), (('authenticated', 'communication'), 'amod'), (('communication', 'establish'), 'obj'), (('.', 'Interesting'), 'punct')]
+
+ Named Entities are: 
+>> [('Ks || IDa', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('Interesting Subject  Kerberos Kerberos', 'ORG'), ('third', 'ORDINAL')]
+
+========================== Sentence 10 ===========================
+
+ Kerberos is an authentication service designed for use in a distributed environment. 
+
+Tokens are: 
+>> ['Kerberos', 'is', 'an', 'authentication', 'service', 'designed', 'for', 'use', 'in', 'a', 'distributed', 'environment', '.'] 
+
+ UPOS tags are: 
+>> [('Kerberos', 'PROPN'), ('is', 'AUX'), ('an', 'DET'), ('authentication', 'NOUN'), ('service', 'NOUN'), ('designed', 'VERB'), ('for', 'ADP'), ('use', 'NOUN'), ('in', 'ADP'), ('a', 'DET'), ('distributed', 'VERB'), ('environment', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Kerberos', 'NNP'), ('is', 'VBZ'), ('an', 'DT'), ('authentication', 'NN'), ('service', 'NN'), ('designed', 'VBN'), ('for', 'IN'), ('use', 'NN'), ('in', 'IN'), ('a', 'DT'), ('distributed', 'VBN'), ('environment', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Kerberos', 'Kerberos'), ('is', 'be'), ('an', 'a'), ('authentication', 'authentication'), ('service', 'service'), ('designed', 'design'), ('for', 'for'), ('use', 'use'), ('in', 'in'), ('a', 'a'), ('distributed', 'distribute'), ('environment', 'environment'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Kerberos', 'service'), 'nsubj'), (('is', 'service'), 'cop'), (('an', 'service'), 'det'), (('authentication', 'service'), 'compound'), (('service', 'root'), 'root'), (('designed', 'service'), 'acl'), (('for', 'use'), 'case'), (('use', 'designed'), 'obl'), (('in', 'environment'), 'case'), (('a', 'environment'), 'det'), (('distributed', 'environment'), 'amod'), (('environment', 'designed'), 'obl'), (('.', 'service'), 'punct')]
+
+ Named Entities are: 
+>> [('Kerberos', 'PRODUCT')]
+
+========================== Sentence 11 ===========================
+
+ Version 4 of Kerberos makes use of DES, to provide the authentication service. 
+
+Tokens are: 
+>> ['Version', '4', 'of', 'Kerberos', 'makes', 'use', 'of', 'DES', ',', 'to', 'provide', 'the', 'authentication', 'service', '.'] 
+
+ UPOS tags are: 
+>> [('Version', 'NOUN'), ('4', 'NUM'), ('of', 'ADP'), ('Kerberos', 'PROPN'), ('makes', 'VERB'), ('use', 'NOUN'), ('of', 'ADP'), ('DES', 'PROPN'), (',', 'PUNCT'), ('to', 'PART'), ('provide', 'VERB'), ('the', 'DET'), ('authentication', 'NOUN'), ('service', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Version', 'NN'), ('4', 'CD'), ('of', 'IN'), ('Kerberos', 'NNP'), ('makes', 'VBZ'), ('use', 'NN'), ('of', 'IN'), ('DES', 'NNP'), (',', ','), ('to', 'TO'), ('provide', 'VB'), ('the', 'DT'), ('authentication', 'NN'), ('service', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Version', 'version'), ('4', '4'), ('of', 'of'), ('Kerberos', 'Kerberos'), ('makes', 'make'), ('use', 'use'), ('of', 'of'), ('DES', 'DES'), (',', ','), ('to', 'to'), ('provide', 'provide'), ('the', 'the'), ('authentication', 'authentication'), ('service', 'service'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Version', 'makes'), 'nsubj'), (('4', 'Version'), 'nummod'), (('of', 'Kerberos'), 'case'), (('Kerberos', '4'), 'nmod'), (('makes', 'root'), 'root'), (('use', 'makes'), 'obj'), (('of', 'DES'), 'case'), (('DES', 'use'), 'nmod'), ((',', 'makes'), 'punct'), (('to', 'provide'), 'mark'), (('provide', 'makes'), 'advcl'), (('the', 'service'), 'det'), (('authentication', 'service'), 'compound'), (('service', 'provide'), 'obj'), (('.', 'makes'), 'punct')]
+
+ Named Entities are: 
+>> [('4', 'CARDINAL'), ('Kerberos', 'ORG'), ('DES', 'ORG')]
+
+========================== Sentence 12 ===========================
+
+ Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – Simple Dialogue C ---> AS:  IDc || Pc || IDv AS ---> C:  Ticket   C ---> V:    IDc || Ticket Ticket = E(Kv, [IDc, ADc, IDv])  Authentication Server-AS  Application Server - V  User - C (1) (2) (3)  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – Simple Dialogue C ---> AS:  IDc || Pc || IDv AS ---> C:  Ticket   C ---> V:    IDc || Ticket Ticket = E(Kv, [IDc, ADc, IDv]) 
+
+Tokens are: 
+>> ['Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', '–', 'Simple', 'Dialogue', 'C', '--->', 'AS', ':', 'ID', 'c', '||', 'Pc', '||', 'IDv', 'AS', '--->', 'C', ':', 'Ticket', 'C', '--->', 'V', ':', 'IDc', '||', 'Ticket', 'Ticket', '=', 'E(', 'Kv', ',', '[', 'IDc', ',', 'ADc', ',', 'ID', 'v', ']', ')', 'Authentication', 'Server-', 'AS', 'Application', 'Server', '-', 'V', 'User', '-', 'C', '(', '1', ')', '(', '2', ')', '(', '3', ')', 'Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', '–', 'Simple', 'Dialogue', 'C', '--->', 'AS', ':', 'ID', 'c', '||', 'Pc', '||', 'IDv', 'AS', '--->', 'C', ':', 'Ticket', 'C', '--->', 'V', ':', 'IDc', '||', 'Ticket', 'Ticket', '=', 'E(', 'Kv', ',', '[', 'IDc', ',', 'ADc', ',', 'ID', 'v', ']', ')'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'NOUN'), ('–', 'PUNCT'), ('Simple', 'ADJ'), ('Dialogue', 'NOUN'), ('C', 'NOUN'), ('--->', 'PUNCT'), ('AS', 'ADP'), (':', 'PUNCT'), ('ID', 'NOUN'), ('c', 'NOUN'), ('||', 'PUNCT'), ('Pc', 'NOUN'), ('||', 'PUNCT'), ('IDv', 'NOUN'), ('AS', 'ADP'), ('--->', 'PUNCT'), ('C', 'NOUN'), (':', 'PUNCT'), ('Ticket', 'NOUN'), ('C', 'NOUN'), ('--->', 'PUNCT'), ('V', 'NOUN'), (':', 'PUNCT'), ('IDc', 'PROPN'), ('||', 'PUNCT'), ('Ticket', 'NOUN'), ('Ticket', 'NOUN'), ('=', 'PUNCT'), ('E(', 'PROPN'), ('Kv', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('IDc', 'PROPN'), (',', 'PUNCT'), ('ADc', 'NOUN'), (',', 'PUNCT'), ('ID', 'NOUN'), ('v', 'NUM'), (']', 'PUNCT'), (')', 'PUNCT'), ('Authentication', 'NOUN'), ('Server-', 'NOUN'), ('AS', 'ADP'), ('Application', 'NOUN'), ('Server', 'NOUN'), ('-', 'PUNCT'), ('V', 'NOUN'), ('User', 'NOUN'), ('-', 'PUNCT'), ('C', 'NOUN'), ('(', 'PUNCT'), ('1', 'NUM'), (')', 'PUNCT'), ('(', 'PUNCT'), ('2', 'NUM'), (')', 'PUNCT'), ('(', 'PUNCT'), ('3', 'NUM'), (')', 'PUNCT'), ('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'NOUN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'NOUN'), ('–', 'PUNCT'), ('Simple', 'ADJ'), ('Dialogue', 'NOUN'), ('C', 'NOUN'), ('--->', 'PUNCT'), ('AS', 'ADP'), (':', 'PUNCT'), ('ID', 'NOUN'), ('c', 'NOUN'), ('||', 'PUNCT'), ('Pc', 'NOUN'), ('||', 'PUNCT'), ('IDv', 'NOUN'), ('AS', 'ADP'), ('--->', 'PUNCT'), ('C', 'NOUN'), (':', 'PUNCT'), ('Ticket', 'NOUN'), ('C', 'NOUN'), ('--->', 'PUNCT'), ('V', 'NOUN'), (':', 'PUNCT'), ('IDc', 'PROPN'), ('||', 'PUNCT'), ('Ticket', 'NOUN'), ('Ticket', 'NOUN'), ('=', 'PUNCT'), ('E(', 'PROPN'), ('Kv', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('IDc', 'PROPN'), (',', 'PUNCT'), ('ADc', 'NOUN'), (',', 'PUNCT'), ('ID', 'NOUN'), ('v', 'NUM'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NN'), ('–', ','), ('Simple', 'JJ'), ('Dialogue', 'NN'), ('C', 'NN'), ('--->', 'NFP'), ('AS', 'IN'), (':', ':'), ('ID', 'NN'), ('c', 'NN'), ('||', 'NFP'), ('Pc', 'NN'), ('||', 'NFP'), ('IDv', 'NN'), ('AS', 'IN'), ('--->', 'NFP'), ('C', 'NN'), (':', ':'), ('Ticket', 'NN'), ('C', 'NN'), ('--->', 'NFP'), ('V', 'NN'), (':', ':'), ('IDc', 'NNP'), ('||', 'NFP'), ('Ticket', 'NN'), ('Ticket', 'NN'), ('=', ','), ('E(', 'NNP'), ('Kv', 'NNP'), (',', ','), ('[', '-LRB-'), ('IDc', 'NNP'), (',', ','), ('ADc', 'NN'), (',', ','), ('ID', 'NN'), ('v', 'CD'), (']', '-RRB-'), (')', '-RRB-'), ('Authentication', 'NN'), ('Server-', 'NN'), ('AS', 'IN'), ('Application', 'NN'), ('Server', 'NN'), ('-', ','), ('V', 'NN'), ('User', 'NN'), ('-', ','), ('C', 'NN'), ('(', '-LRB-'), ('1', 'CD'), (')', '-RRB-'), ('(', '-LRB-'), ('2', 'CD'), (')', '-RRB-'), ('(', '-LRB-'), ('3', 'LS'), (')', '-RRB-'), ('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NN'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NN'), ('–', ','), ('Simple', 'JJ'), ('Dialogue', 'NN'), ('C', 'NN'), ('--->', 'NFP'), ('AS', 'IN'), (':', ':'), ('ID', 'NN'), ('c', 'NN'), ('||', 'NFP'), ('Pc', 'NN'), ('||', 'NFP'), ('IDv', 'NN'), ('AS', 'IN'), ('--->', 'NFP'), ('C', 'NN'), (':', ':'), ('Ticket', 'NN'), ('C', 'NN'), ('--->', 'NFP'), ('V', 'NN'), (':', ':'), ('IDc', 'NNP'), ('||', 'NFP'), ('Ticket', 'NN'), ('Ticket', 'NN'), ('=', ','), ('E(', 'NNP'), ('Kv', 'NNP'), (',', ','), ('[', '-LRB-'), ('IDc', 'NNP'), (',', ','), ('ADc', 'NN'), (',', ','), ('ID', 'NN'), ('v', 'CD'), (']', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '-'), ('Simple', 'simple'), ('Dialogue', 'dialogue'), ('C', 'c'), ('--->', '--->'), ('AS', 'as'), (':', ':'), ('ID', 'id'), ('c', 'c'), ('||', '||'), ('Pc', 'pc'), ('||', '||'), ('IDv', 'idv'), ('AS', 'as'), ('--->', '--->'), ('C', 'c'), (':', ':'), ('Ticket', 'ticket'), ('C', 'c'), ('--->', '--->'), ('V', 'V'), (':', ':'), ('IDc', 'IDc'), ('||', '||'), ('Ticket', 'ticket'), ('Ticket', 'ticket'), ('=', '='), ('E(', 'E('), ('Kv', 'Kv'), (',', ','), ('[', '['), ('IDc', 'IDc'), (',', ','), ('ADc', 'adc'), (',', ','), ('ID', 'id'), ('v', 'v'), (']', ']'), (')', ')'), ('Authentication', 'authentication'), ('Server-', 'server-'), ('AS', 'as'), ('Application', 'application'), ('Server', 'server'), ('-', '-'), ('V', 'V'), ('User', 'user'), ('-', '-'), ('C', 'c'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('2', '2'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '-'), ('Simple', 'simple'), ('Dialogue', 'dialogue'), ('C', 'c'), ('--->', '--->'), ('AS', 'as'), (':', ':'), ('ID', 'id'), ('c', 'c'), ('||', '||'), ('Pc', 'pc'), ('||', '||'), ('IDv', 'idv'), ('AS', 'as'), ('--->', '--->'), ('C', 'c'), (':', ':'), ('Ticket', 'ticket'), ('C', 'c'), ('--->', '--->'), ('V', 'V'), (':', ':'), ('IDc', 'IDc'), ('||', '||'), ('Ticket', 'ticket'), ('Ticket', 'ticket'), ('=', '='), ('E(', 'E('), ('Kv', 'Kv'), (',', ','), ('[', '['), ('IDc', 'IDc'), (',', ','), ('ADc', 'adc'), (',', ','), ('ID', 'id'), ('v', 'v'), (']', ']'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Kerberos'), 'nsubj'), (('-9', 'Unit'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'authentication'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Kerberos'), 'nsubj'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Kerberos'), 'nsubj'), (('is', 'Kerberos'), 'cop'), (('very', 'Kerberos'), 'advmod'), (('Interesting', 'Kerberos'), 'amod'), (('Subject', 'Kerberos'), 'compound'), (('Kerberos', 'root'), 'root'), (('–', 'Kerberos'), 'punct'), (('Simple', 'Dialogue'), 'amod'), (('Dialogue', 'Kerberos'), 'appos'), (('C', 'Dialogue'), 'appos'), (('--->', 'Dialogue'), 'punct'), (('AS', 'ID'), 'case'), ((':', 'ID'), 'punct'), (('ID', 'Kerberos'), 'nmod'), (('c', 'ID'), 'dep'), (('||', 'c'), 'punct'), (('Pc', 'c'), 'appos'), (('||', 'IDv'), 'punct'), (('IDv', 'Kerberos'), 'conj'), (('AS', 'C'), 'case'), (('--->', 'C'), 'punct'), (('C', 'Kerberos'), 'conj'), ((':', 'C'), 'punct'), (('Ticket', 'C'), 'appos'), (('C', 'Kerberos'), 'dep'), (('--->', 'C'), 'punct'), (('V', 'C'), 'appos'), ((':', 'Kerberos'), 'punct'), (('IDc', 'C'), 'appos'), (('||', 'IDc'), 'punct'), (('Ticket', 'Ticket'), 'compound'), (('Ticket', 'Kerberos'), 'conj'), (('=', 'Kerberos'), 'punct'), (('E(', 'Kv'), 'compound'), (('Kv', 'Kerberos'), 'conj'), ((',', 'IDc'), 'punct'), (('[', 'IDc'), 'punct'), (('IDc', 'Kerberos'), 'conj'), ((',', 'ADc'), 'punct'), (('ADc', 'IDc'), 'conj'), ((',', 'ID'), 'punct'), (('ID', 'IDc'), 'conj'), (('v', 'ID'), 'nummod'), ((']', 'IDc'), 'punct'), ((')', 'IDc'), 'punct'), (('Authentication', 'Server-'), 'compound'), (('Server-', 'Kerberos'), 'conj'), (('AS', 'Server'), 'case'), (('Application', 'Server'), 'compound'), (('Server', 'Server-'), 'nmod'), (('-', 'Unit'), 'punct'), (('V', 'User'), 'compound'), (('User', 'Kerberos'), 'conj'), (('-', 'Kerberos'), 'punct'), (('C', 'User'), 'appos'), (('(', '1'), 'punct'), (('1', 'C'), 'nummod'), ((')', '1'), 'punct'), (('(', '2'), 'punct'), (('2', '1'), 'compound'), ((')', '2'), 'punct'), (('(', '3'), 'punct'), (('3', 'Unit'), 'nummod'), ((')', '3'), 'punct'), (('Unit', 'Institute'), 'compound'), (('-9', 'Unit'), 'nummod'), (('Remote', 'authentication'), 'compound'), (('user', 'authentication'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Kerberos'), 'conj'), (('of', 'INS'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Kerberos'), 'nsubj'), (('is', 'Kerberos'), 'cop'), (('very', 'Kerberos'), 'advmod'), (('Interesting', 'Kerberos'), 'amod'), (('Subject', 'Kerberos'), 'compound'), (('Kerberos', 'Kerberos'), 'conj'), (('–', 'Kerberos'), 'punct'), (('Simple', 'Dialogue'), 'amod'), (('Dialogue', 'Kerberos'), 'appos'), (('C', 'Dialogue'), 'appos'), (('--->', 'Kerberos'), 'punct'), (('AS', 'ID'), 'case'), ((':', 'ID'), 'punct'), (('ID', 'Kerberos'), 'nmod'), (('c', 'ID'), 'appos'), (('||', 'ID'), 'punct'), (('Pc', 'ID'), 'conj'), (('||', 'IDv'), 'punct'), (('IDv', 'ID'), 'conj'), (('AS', 'C'), 'case'), (('--->', 'C'), 'punct'), (('C', 'IDv'), 'nmod'), ((':', 'C'), 'punct'), (('Ticket', 'C'), 'appos'), (('C', 'Ticket'), 'appos'), (('--->', 'C'), 'punct'), (('V', 'Ticket'), 'appos'), ((':', 'IDc'), 'punct'), (('IDc', 'V'), 'appos'), (('||', 'IDc'), 'punct'), (('Ticket', 'Ticket'), 'compound'), (('Ticket', 'IDc'), 'appos'), (('=', 'Ticket'), 'punct'), (('E(', 'Kv'), 'compound'), (('Kv', 'Ticket'), 'appos'), ((',', 'IDc'), 'punct'), (('[', 'IDc'), 'punct'), (('IDc', 'Kv'), 'dep'), ((',', 'ADc'), 'punct'), (('ADc', 'IDc'), 'conj'), ((',', 'ID'), 'punct'), (('ID', 'IDc'), 'conj'), (('v', 'IDc'), 'conj'), ((']', 'IDc'), 'punct'), ((')', 'IDc'), 'punct')]
+
+ Named Entities are: 
+>> [('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('1', 'CARDINAL'), ('2', 'CARDINAL'), ('3', 'CARDINAL'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('IDc', 'ORG'), ('ADc', 'ORG')]
+
+========================== Sentence 13 ===========================
+
+ Where,   C = Client AS = Authentication Server V =  Server IDc = Identification of user C Idv = Identification of V Pc = Password on User C Adc = Network Address of C Kv = Secret key shared by AS and V  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – More Secure Dialogue  Client-C  Ticket Granting Server-TGS  Authentication Server-AS Ticket 
+
+Tokens are: 
+>> ['Where', ',', 'C', '=', 'Client', 'AS', '=', 'Authentication', 'Server', 'V', '=', 'Server', 'ID', 'c', '=', 'Identification', 'of', 'user', 'C', 'Idv', '=', 'Identification', 'of', 'V', 'Pc', '=', 'Password', 'on', 'User', 'C', 'Adc', '=', 'Network', 'Address', 'of', 'C', 'Kv', '=', 'Secret', 'key', 'shared', 'by', 'AS', 'and', 'V', 'Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', '–', 'More', 'Secure', 'Dialogue', 'Client', '-', 'C', 'Ticket', 'Granting', 'Server', '-TGS', 'Authentication', 'Server', '-', 'AS', 'Ticket'] 
+
+ UPOS tags are: 
+>> [('Where', 'ADV'), (',', 'PUNCT'), ('C', 'PROPN'), ('=', 'PUNCT'), ('Client', 'NOUN'), ('AS', 'ADP'), ('=', 'PUNCT'), ('Authentication', 'NOUN'), ('Server', 'NOUN'), ('V', 'NOUN'), ('=', 'PUNCT'), ('Server', 'NOUN'), ('ID', 'NOUN'), ('c', 'NOUN'), ('=', 'PUNCT'), ('Identification', 'NOUN'), ('of', 'ADP'), ('user', 'NOUN'), ('C', 'PROPN'), ('Idv', 'NOUN'), ('=', 'PUNCT'), ('Identification', 'NOUN'), ('of', 'ADP'), ('V', 'PROPN'), ('Pc', 'NOUN'), ('=', 'PUNCT'), ('Password', 'NOUN'), ('on', 'ADP'), ('User', 'NOUN'), ('C', 'NOUN'), ('Adc', 'NOUN'), ('=', 'PUNCT'), ('Network', 'NOUN'), ('Address', 'NOUN'), ('of', 'ADP'), ('C', 'PROPN'), ('Kv', 'NOUN'), ('=', 'PUNCT'), ('Secret', 'ADJ'), ('key', 'NOUN'), ('shared', 'VERB'), ('by', 'ADP'), ('AS', 'NOUN'), ('and', 'CCONJ'), ('V', 'NOUN'), ('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'NOUN'), ('–', 'PUNCT'), ('More', 'ADV'), ('Secure', 'ADJ'), ('Dialogue', 'NOUN'), ('Client', 'NOUN'), ('-', 'PUNCT'), ('C', 'NOUN'), ('Ticket', 'NOUN'), ('Granting', 'NOUN'), ('Server', 'NOUN'), ('-TGS', 'NOUN'), ('Authentication', 'NOUN'), ('Server', 'NOUN'), ('-', 'PUNCT'), ('AS', 'ADP'), ('Ticket', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Where', 'WRB'), (',', ','), ('C', 'NNP'), ('=', ','), ('Client', 'NN'), ('AS', 'IN'), ('=', ','), ('Authentication', 'NN'), ('Server', 'NN'), ('V', 'NN'), ('=', ','), ('Server', 'NN'), ('ID', 'NN'), ('c', 'NN'), ('=', ','), ('Identification', 'NN'), ('of', 'IN'), ('user', 'NN'), ('C', 'NNP'), ('Idv', 'NN'), ('=', ','), ('Identification', 'NN'), ('of', 'IN'), ('V', 'NNP'), ('Pc', 'NN'), ('=', ','), ('Password', 'NN'), ('on', 'IN'), ('User', 'NN'), ('C', 'NN'), ('Adc', 'NN'), ('=', ','), ('Network', 'NN'), ('Address', 'NN'), ('of', 'IN'), ('C', 'NNP'), ('Kv', 'NN'), ('=', ','), ('Secret', 'JJ'), ('key', 'NN'), ('shared', 'VBN'), ('by', 'IN'), ('AS', 'NN'), ('and', 'CC'), ('V', 'NN'), ('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NN'), ('–', ','), ('More', 'RBR'), ('Secure', 'JJ'), ('Dialogue', 'NN'), ('Client', 'NN'), ('-', 'HYPH'), ('C', 'NN'), ('Ticket', 'NN'), ('Granting', 'NN'), ('Server', 'NN'), ('-TGS', 'NN'), ('Authentication', 'NN'), ('Server', 'NN'), ('-', ','), ('AS', 'IN'), ('Ticket', 'NN')] 
+
+ Lemmas are: 
+>> [('Where', 'where'), (',', ','), ('C', 'C'), ('=', '='), ('Client', 'client'), ('AS', 'as'), ('=', '='), ('Authentication', 'authentication'), ('Server', 'server'), ('V', 'V'), ('=', '='), ('Server', 'server'), ('ID', 'id'), ('c', 'c'), ('=', '='), ('Identification', 'identification'), ('of', 'of'), ('user', 'user'), ('C', 'C'), ('Idv', 'idv'), ('=', '='), ('Identification', 'identification'), ('of', 'of'), ('V', 'V'), ('Pc', 'pc'), ('=', '='), ('Password', 'password'), ('on', 'on'), ('User', 'user'), ('C', 'c'), ('Adc', 'adc'), ('=', '='), ('Network', 'network'), ('Address', 'address'), ('of', 'of'), ('C', 'C'), ('Kv', 'Kv'), ('=', '='), ('Secret', 'Secret'), ('key', 'key'), ('shared', 'share'), ('by', 'by'), ('AS', 'as'), ('and', 'and'), ('V', 'V'), ('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '-'), ('More', 'more'), ('Secure', 'secure'), ('Dialogue', 'dialogue'), ('Client', 'client'), ('-', '-'), ('C', 'c'), ('Ticket', 'ticket'), ('Granting', 'granting'), ('Server', 'server'), ('-TGS', '-tgs'), ('Authentication', 'authentication'), ('Server', 'server'), ('-', '-'), ('AS', 'as'), ('Ticket', 'ticket')] 
+
+ Dependency tags are: 
+>> [(('Where', 'Kerberos'), 'advmod'), ((',', 'Where'), 'punct'), (('C', 'Client'), 'nsubj'), (('=', 'Client'), 'punct'), (('Client', 'Where'), 'appos'), (('AS', 'V'), 'case'), (('=', 'Client'), 'punct'), (('Authentication', 'V'), 'compound'), (('Server', 'V'), 'compound'), (('V', 'Client'), 'nmod'), (('=', 'V'), 'punct'), (('Server', 'ID'), 'compound'), (('ID', 'V'), 'appos'), (('c', 'ID'), 'compound'), (('=', 'Identification'), 'punct'), (('Identification', 'c'), 'appos'), (('of', 'Idv'), 'case'), (('user', 'Idv'), 'compound'), (('C', 'Idv'), 'compound'), (('Idv', 'Identification'), 'nmod'), (('=', 'Identification'), 'punct'), (('Identification', 'Identification'), 'conj'), (('of', 'Pc'), 'case'), (('V', 'Pc'), 'compound'), (('Pc', 'Identification'), 'nmod'), (('=', 'Identification'), 'punct'), (('Password', 'Identification'), 'appos'), (('on', 'Adc'), 'case'), (('User', 'C'), 'compound'), (('C', 'Adc'), 'compound'), (('Adc', 'Password'), 'nmod'), (('=', 'Address'), 'punct'), (('Network', 'Address'), 'compound'), (('Address', 'Password'), 'appos'), (('of', 'Kv'), 'case'), (('C', 'Kv'), 'compound'), (('Kv', 'Address'), 'nmod'), (('=', 'key'), 'punct'), (('Secret', 'key'), 'amod'), (('key', 'Address'), 'appos'), (('shared', 'key'), 'acl'), (('by', 'Unit'), 'case'), (('AS', 'Unit'), 'compound'), (('and', 'Unit'), 'cc'), (('V', 'AS'), 'conj'), (('Unit', 'Institute'), 'compound'), (('-9', 'Institute'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'shared'), 'obl'), (('of', 'INS'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Kerberos'), 'cop'), (('very', 'Kerberos'), 'advmod'), (('Interesting', 'Kerberos'), 'amod'), (('Subject', 'Kerberos'), 'compound'), (('Kerberos', 'root'), 'root'), (('–', 'Kerberos'), 'punct'), (('More', 'Secure'), 'advmod'), (('Secure', 'Dialogue'), 'amod'), (('Dialogue', 'Kerberos'), 'appos'), (('Client', 'C'), 'compound'), (('-', 'C'), 'punct'), (('C', 'Server'), 'compound'), (('Ticket', 'Server'), 'compound'), (('Granting', 'Server'), 'compound'), (('Server', 'Kerberos'), 'appos'), (('-TGS', 'Server'), 'compound'), (('Authentication', 'Server'), 'compound'), (('Server', 'Server'), 'conj'), (('-', 'Kerberos'), 'punct'), (('AS', 'Ticket'), 'case'), (('Ticket', 'Server'), 'nmod')]
+
+ Named Entities are: 
+>> [('INS', 'ORG')]
+
+========================== Sentence 14 ===========================
+
+ TGS to access TGS Request for TicketTGS Request for TicketV Request for TicketV Request for Service  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – More Secure Dialogue Once per user logon session C ---> 
+
+Tokens are: 
+>> ['TGS', 'to', 'access', 'TGS', 'Request', 'for', 'TicketTGS', 'Request', 'for', 'TicketV', 'Request', 'for', 'TicketV', 'Request', 'for', 'Service', 'Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', '–', 'More', 'Secure', 'Dialogue', 'Once', 'per', 'user', 'logon', 'session', 'C', '--->'] 
+
+ UPOS tags are: 
+>> [('TGS', 'NOUN'), ('to', 'PART'), ('access', 'VERB'), ('TGS', 'NOUN'), ('Request', 'NOUN'), ('for', 'ADP'), ('TicketTGS', 'PROPN'), ('Request', 'NOUN'), ('for', 'ADP'), ('TicketV', 'PROPN'), ('Request', 'NOUN'), ('for', 'ADP'), ('TicketV', 'PROPN'), ('Request', 'NOUN'), ('for', 'ADP'), ('Service', 'NOUN'), ('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'NOUN'), ('–', 'PUNCT'), ('More', 'ADV'), ('Secure', 'ADJ'), ('Dialogue', 'NOUN'), ('Once', 'ADV'), ('per', 'ADP'), ('user', 'NOUN'), ('logon', 'NOUN'), ('session', 'NOUN'), ('C', 'NOUN'), ('--->', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('TGS', 'NN'), ('to', 'TO'), ('access', 'VB'), ('TGS', 'NN'), ('Request', 'NN'), ('for', 'IN'), ('TicketTGS', 'NNP'), ('Request', 'NN'), ('for', 'IN'), ('TicketV', 'NNP'), ('Request', 'NN'), ('for', 'IN'), ('TicketV', 'NNP'), ('Request', 'NN'), ('for', 'IN'), ('Service', 'NN'), ('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NN'), ('–', ','), ('More', 'RBR'), ('Secure', 'JJ'), ('Dialogue', 'NN'), ('Once', 'RB'), ('per', 'IN'), ('user', 'NN'), ('logon', 'NN'), ('session', 'NN'), ('C', 'NN'), ('--->', 'NFP')] 
+
+ Lemmas are: 
+>> [('TGS', 'tgs'), ('to', 'to'), ('access', 'access'), ('TGS', 'tgs'), ('Request', 'request'), ('for', 'for'), ('TicketTGS', 'TicketTGS'), ('Request', 'request'), ('for', 'for'), ('TicketV', 'TicketV'), ('Request', 'request'), ('for', 'for'), ('TicketV', 'TicketV'), ('Request', 'request'), ('for', 'for'), ('Service', 'service'), ('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '-'), ('More', 'more'), ('Secure', 'secure'), ('Dialogue', 'dialogue'), ('Once', 'once'), ('per', 'per'), ('user', 'user'), ('logon', 'logon'), ('session', 'session'), ('C', 'c'), ('--->', '--->')] 
+
+ Dependency tags are: 
+>> [(('TGS', 'Kerberos'), 'nsubj'), (('to', 'access'), 'mark'), (('access', 'TGS'), 'acl'), (('TGS', 'Request'), 'compound'), (('Request', 'access'), 'obj'), (('for', 'Request'), 'case'), (('TicketTGS', 'Request'), 'compound'), (('Request', 'Request'), 'nmod'), (('for', 'Request'), 'case'), (('TicketV', 'Request'), 'compound'), (('Request', 'Request'), 'nmod'), (('for', 'Request'), 'case'), (('TicketV', 'Request'), 'compound'), (('Request', 'Request'), 'nmod'), (('for', 'Unit'), 'case'), (('Service', 'Unit'), 'compound'), (('Unit', 'Request'), 'nmod'), (('-9', 'Institute'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Request'), 'nmod'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Kerberos'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Kerberos'), 'amod'), (('Subject', 'Kerberos'), 'compound'), (('Kerberos', 'root'), 'root'), (('–', 'Kerberos'), 'punct'), (('More', 'Secure'), 'advmod'), (('Secure', 'Dialogue'), 'amod'), (('Dialogue', 'Kerberos'), 'appos'), (('Once', 'Dialogue'), 'advmod'), (('per', 'session'), 'case'), (('user', 'session'), 'compound'), (('logon', 'session'), 'compound'), (('session', 'Dialogue'), 'nmod'), (('C', 'session'), 'nmod:npmod'), (('--->', 'Kerberos'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG'), ('TGS Request for TicketTGS Request for TicketV Request for TicketV Request for Service  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG')]
+
+========================== Sentence 15 ===========================
+
+ AS:  IDc || IDTGS AS ---> C:  E(Kc, Ticket 
+
+Tokens are: 
+>> ['AS', ':', 'ID', 'c', '||', 'IDTGS', 'AS', '--->', 'C', ':', 'E(', 'Kc', ',', 'Ticket'] 
+
+ UPOS tags are: 
+>> [('AS', 'ADP'), (':', 'PUNCT'), ('ID', 'NOUN'), ('c', 'NOUN'), ('||', 'PUNCT'), ('IDTGS', 'NOUN'), ('AS', 'ADP'), ('--->', 'PUNCT'), ('C', 'NOUN'), (':', 'PUNCT'), ('E(', 'PROPN'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('Ticket', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('AS', 'IN'), (':', ':'), ('ID', 'NN'), ('c', 'NN'), ('||', 'NFP'), ('IDTGS', 'NN'), ('AS', 'IN'), ('--->', 'NFP'), ('C', 'NN'), (':', ':'), ('E(', 'NNP'), ('Kc', 'NNP'), (',', ','), ('Ticket', 'NN')] 
+
+ Lemmas are: 
+>> [('AS', 'as'), (':', ':'), ('ID', 'id'), ('c', 'c'), ('||', '||'), ('IDTGS', 'idtg'), ('AS', 'as'), ('--->', '--->'), ('C', 'c'), (':', ':'), ('E(', 'E('), ('Kc', 'Kc'), (',', ','), ('Ticket', 'ticket')] 
+
+ Dependency tags are: 
+>> [(('AS', 'ID'), 'case'), ((':', 'ID'), 'punct'), (('ID', 'root'), 'root'), (('c', 'ID'), 'appos'), (('||', 'ID'), 'punct'), (('IDTGS', 'ID'), 'list'), (('AS', 'C'), 'case'), (('--->', 'C'), 'punct'), (('C', 'ID'), 'list'), ((':', 'C'), 'punct'), (('E(', 'Kc'), 'compound'), (('Kc', 'C'), 'appos'), ((',', 'Kc'), 'punct'), (('Ticket', 'Kc'), 'appos')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 16 ===========================
+
+ TGS) 
+
+Tokens are: 
+>> ['TGS', ')'] 
+
+ UPOS tags are: 
+>> [('TGS', 'PROPN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('TGS', 'NNP'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('TGS', 'TGS'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('TGS', 'root'), 'root'), ((')', 'TGS'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 17 ===========================
+
+ Once per type of service C ---> 
+
+Tokens are: 
+>> ['Once', 'per', 'type', 'of', 'service', 'C', '--->'] 
+
+ UPOS tags are: 
+>> [('Once', 'ADV'), ('per', 'ADP'), ('type', 'NOUN'), ('of', 'ADP'), ('service', 'NOUN'), ('C', 'NOUN'), ('--->', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Once', 'RB'), ('per', 'IN'), ('type', 'NN'), ('of', 'IN'), ('service', 'NN'), ('C', 'NN'), ('--->', ',')] 
+
+ Lemmas are: 
+>> [('Once', 'once'), ('per', 'per'), ('type', 'type'), ('of', 'of'), ('service', 'service'), ('C', 'c'), ('--->', '--->')] 
+
+ Dependency tags are: 
+>> [(('Once', 'root'), 'root'), (('per', 'type'), 'case'), (('type', 'Once'), 'obl'), (('of', 'service'), 'case'), (('service', 'type'), 'nmod'), (('C', 'type'), 'nmod'), (('--->', 'Once'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 18 ===========================
+
+ TGS:  IDc || IDv || Ticket 
+
+Tokens are: 
+>> ['TGS', ':', 'ID', 'c', '||', 'IDv', '||', 'Ticket'] 
+
+ UPOS tags are: 
+>> [('TGS', 'NOUN'), (':', 'PUNCT'), ('ID', 'NOUN'), ('c', 'NOUN'), ('||', 'PUNCT'), ('IDv', 'NOUN'), ('||', 'PUNCT'), ('Ticket', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('TGS', 'NN'), (':', ':'), ('ID', 'NN'), ('c', 'NN'), ('||', 'NFP'), ('IDv', 'NN'), ('||', 'NFP'), ('Ticket', 'NN')] 
+
+ Lemmas are: 
+>> [('TGS', 'tgs'), (':', ':'), ('ID', 'id'), ('c', 'c'), ('||', '||'), ('IDv', 'idv'), ('||', '||'), ('Ticket', 'ticket')] 
+
+ Dependency tags are: 
+>> [(('TGS', 'root'), 'root'), ((':', 'TGS'), 'punct'), (('ID', 'TGS'), 'appos'), (('c', 'TGS'), 'appos'), (('||', 'c'), 'punct'), (('IDv', 'c'), 'appos'), (('||', 'Ticket'), 'punct'), (('Ticket', 'TGS'), 'appos')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 19 ===========================
+
+ TGS TGS ---> C:  TicketV 
+
+Tokens are: 
+>> ['TGS', 'TGS', '--->', 'C', ':', 'TicketV'] 
+
+ UPOS tags are: 
+>> [('TGS', 'PROPN'), ('TGS', 'NOUN'), ('--->', 'PUNCT'), ('C', 'NOUN'), (':', 'PUNCT'), ('TicketV', 'PROPN')] 
+
+ XPOS tags are: 
+>> [('TGS', 'NNP'), ('TGS', 'NN'), ('--->', 'NFP'), ('C', 'NN'), (':', ':'), ('TicketV', 'NNP')] 
+
+ Lemmas are: 
+>> [('TGS', 'TGS'), ('TGS', 'tgs'), ('--->', '--->'), ('C', 'c'), (':', ':'), ('TicketV', 'TicketV')] 
+
+ Dependency tags are: 
+>> [(('TGS', 'TGS'), 'compound'), (('TGS', 'root'), 'root'), (('--->', 'TGS'), 'punct'), (('C', 'TGS'), 'appos'), ((':', 'C'), 'punct'), (('TicketV', 'C'), 'appos')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG'), ('TicketV', 'ORG')]
+
+========================== Sentence 20 ===========================
+
+ Once per service session C ---> V:  IDc || TicketV TicketTGS = E(KTGS, [IDc, ADc, IdTGS, TS1, Lifetime1]) 
+
+Tokens are: 
+>> ['Once', 'per', 'service', 'session', 'C', '--->', 'V', ':', 'IDc', '||', 'TicketV', 'TicketTGS', '=', 'E(', 'KTGS', ',', '[', 'IDc', ',', 'ADc', ',', 'IdTGS', ',', 'TS1', ',', 'Lifetime', '1', ']', ')'] 
+
+ UPOS tags are: 
+>> [('Once', 'ADV'), ('per', 'ADP'), ('service', 'NOUN'), ('session', 'NOUN'), ('C', 'PROPN'), ('--->', 'SYM'), ('V', 'PROPN'), (':', 'PUNCT'), ('IDc', 'PROPN'), ('||', 'SYM'), ('TicketV', 'PROPN'), ('TicketTGS', 'PROPN'), ('=', 'SYM'), ('E(', 'PROPN'), ('KTGS', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('IDc', 'PROPN'), (',', 'PUNCT'), ('ADc', 'PROPN'), (',', 'PUNCT'), ('IdTGS', 'PROPN'), (',', 'PUNCT'), ('TS1', 'PROPN'), (',', 'PUNCT'), ('Lifetime', 'PROPN'), ('1', 'NUM'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Once', 'RB'), ('per', 'IN'), ('service', 'NN'), ('session', 'NN'), ('C', 'NNP'), ('--->', 'SYM'), ('V', 'NNP'), (':', ':'), ('IDc', 'NNP'), ('||', 'SYM'), ('TicketV', 'NNP'), ('TicketTGS', 'NNP'), ('=', 'SYM'), ('E(', 'NNP'), ('KTGS', 'NNP'), (',', ','), ('[', '-LRB-'), ('IDc', 'NNP'), (',', ','), ('ADc', 'NNP'), (',', ','), ('IdTGS', 'NNP'), (',', ','), ('TS1', 'NNP'), (',', ','), ('Lifetime', 'NNP'), ('1', 'CD'), (']', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Once', 'once'), ('per', 'per'), ('service', 'service'), ('session', 'session'), ('C', 'C'), ('--->', '--->'), ('V', 'V'), (':', ':'), ('IDc', 'IDc'), ('||', '||'), ('TicketV', 'TicketV'), ('TicketTGS', 'TicketTGS'), ('=', '='), ('E(', 'E('), ('KTGS', 'KTGS'), (',', ','), ('[', '['), ('IDc', 'IDc'), (',', ','), ('ADc', 'ADc'), (',', ','), ('IdTGS', 'IdTGS'), (',', ','), ('TS1', 'TS1'), (',', ','), ('Lifetime', 'Lifetime'), ('1', '1'), (']', ']'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Once', 'session'), 'advmod'), (('per', 'session'), 'case'), (('service', 'session'), 'compound'), (('session', 'root'), 'root'), (('C', 'session'), 'appos'), (('--->', 'V'), 'compound'), (('V', 'session'), 'appos'), ((':', 'IDc'), 'punct'), (('IDc', 'V'), 'appos'), (('||', 'TicketV'), 'cc'), (('TicketV', 'IDc'), 'conj'), (('TicketTGS', 'TicketV'), 'flat'), (('=', 'IDc'), 'parataxis'), (('E(', '='), 'obj'), (('KTGS', 'E('), 'flat'), ((',', 'IDc'), 'punct'), (('[', 'IDc'), 'punct'), (('IDc', '='), 'dep'), ((',', 'ADc'), 'punct'), (('ADc', 'IDc'), 'conj'), ((',', 'IdTGS'), 'punct'), (('IdTGS', 'IDc'), 'conj'), ((',', 'TS1'), 'punct'), (('TS1', 'IDc'), 'conj'), ((',', '1'), 'punct'), (('Lifetime', '1'), 'compound'), (('1', 'IDc'), 'dep'), ((']', 'IDc'), 'punct'), ((')', 'IDc'), 'punct')]
+
+ Named Entities are: 
+>> [('IdTGS', 'ORG'), ('TS1', 'ORG'), ('1', 'CARDINAL')]
+
+========================== Sentence 21 ===========================
+
+ Ticket 
+
+Tokens are: 
+>> ['Ticket'] 
+
+ UPOS tags are: 
+>> [('Ticket', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Ticket', 'NN')] 
+
+ Lemmas are: 
+>> [('Ticket', 'ticket')] 
+
+ Dependency tags are: 
+>> [(('Ticket', 'root'), 'root')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 22 ===========================
+
+ V = E(KV, [IDc, ADc, IdV, TS2, Lifetime2]) 
+
+Tokens are: 
+>> ['V', '=', 'E(', 'KV', ',', '[', 'IDc', ',', 'ADc', ',', 'IdV', ',', 'TS2', ',', 'Lifetime', '2', ']', ')'] 
+
+ UPOS tags are: 
+>> [('V', 'PROPN'), ('=', 'SYM'), ('E(', 'PROPN'), ('KV', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('IDc', 'PROPN'), (',', 'PUNCT'), ('ADc', 'PROPN'), (',', 'PUNCT'), ('IdV', 'PROPN'), (',', 'PUNCT'), ('TS2', 'PROPN'), (',', 'PUNCT'), ('Lifetime', 'PROPN'), ('2', 'NUM'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('V', 'NNP'), ('=', 'SYM'), ('E(', 'NNP'), ('KV', 'NNP'), (',', ','), ('[', '-LRB-'), ('IDc', 'NNP'), (',', ','), ('ADc', 'NNP'), (',', ','), ('IdV', 'NNP'), (',', ','), ('TS2', 'NNP'), (',', ','), ('Lifetime', 'NNP'), ('2', 'CD'), (']', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('V', 'V'), ('=', '='), ('E(', 'E('), ('KV', 'KV'), (',', ','), ('[', '['), ('IDc', 'IDc'), (',', ','), ('ADc', 'ADc'), (',', ','), ('IdV', 'IdV'), (',', ','), ('TS2', 'TS2'), (',', ','), ('Lifetime', 'Lifetime'), ('2', '2'), (']', ']'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('V', '='), 'nsubj'), (('=', 'root'), 'root'), (('E(', '='), 'obj'), (('KV', '='), 'obj'), ((',', 'IDc'), 'punct'), (('[', 'IDc'), 'punct'), (('IDc', '='), 'dep'), ((',', 'ADc'), 'punct'), (('ADc', 'IDc'), 'conj'), ((',', 'IdV'), 'punct'), (('IdV', 'IDc'), 'conj'), ((',', 'TS2'), 'punct'), (('TS2', 'IDc'), 'conj'), ((',', '2'), 'punct'), (('Lifetime', '2'), 'compound'), (('2', 'IDc'), 'dep'), ((']', 'IDc'), 'punct'), ((')', 'IDc'), 'punct')]
+
+ Named Entities are: 
+>> [('IDc', 'ORG'), ('ADc', 'ORG'), ('IdV', 'ORG'), ('TS2', 'ORG'), ('2', 'CARDINAL')]
+
+========================== Sentence 23 ===========================
+
+ Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-1 
+
+Tokens are: 
+>> ['Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step', '-1'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'NOUN'), ('Version', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step', 'NOUN'), ('-1', 'NUM')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NN'), ('Version', 'NN'), ('4', 'CD'), ('–', ','), ('Step', 'NN'), ('-1', 'CD')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '-'), ('Step', 'step'), ('-1', '-1')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-9', 'Unit'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Version'), 'nsubj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Version'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Version'), 'amod'), (('Subject', 'Version'), 'compound'), (('Kerberos', 'Version'), 'compound'), (('Version', 'root'), 'root'), (('4', 'Version'), 'nummod'), (('–', 'Version'), 'punct'), (('Step', 'Version'), 'appos'), (('-1', 'Step'), 'nummod')]
+
+ Named Entities are: 
+>> [('INS', 'ORG'), ('4', 'CARDINAL')]
+
+========================== Sentence 24 ===========================
+
+ The client sends a plaintext request to the AS asking for a ticket it can use to talk to the TGS. 
+
+Tokens are: 
+>> ['The', 'client', 'sends', 'a', 'plaintext', 'request', 'to', 'the', 'AS', 'asking', 'for', 'a', 'ticket', 'it', 'can', 'use', 'to', 'talk', 'to', 'the', 'TGS', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('client', 'NOUN'), ('sends', 'VERB'), ('a', 'DET'), ('plaintext', 'NOUN'), ('request', 'NOUN'), ('to', 'ADP'), ('the', 'DET'), ('AS', 'SCONJ'), ('asking', 'VERB'), ('for', 'ADP'), ('a', 'DET'), ('ticket', 'NOUN'), ('it', 'PRON'), ('can', 'AUX'), ('use', 'VERB'), ('to', 'PART'), ('talk', 'VERB'), ('to', 'ADP'), ('the', 'DET'), ('TGS', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('client', 'NN'), ('sends', 'VBZ'), ('a', 'DT'), ('plaintext', 'NN'), ('request', 'NN'), ('to', 'IN'), ('the', 'DT'), ('AS', 'IN'), ('asking', 'VBG'), ('for', 'IN'), ('a', 'DT'), ('ticket', 'NN'), ('it', 'PRP'), ('can', 'MD'), ('use', 'VB'), ('to', 'TO'), ('talk', 'VB'), ('to', 'IN'), ('the', 'DT'), ('TGS', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('client', 'client'), ('sends', 'send'), ('a', 'a'), ('plaintext', 'plaintext'), ('request', 'request'), ('to', 'to'), ('the', 'the'), ('AS', 'as'), ('asking', 'ask'), ('for', 'for'), ('a', 'a'), ('ticket', 'ticket'), ('it', 'it'), ('can', 'can'), ('use', 'use'), ('to', 'to'), ('talk', 'talk'), ('to', 'to'), ('the', 'the'), ('TGS', 'TGS'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'client'), 'det'), (('client', 'sends'), 'nsubj'), (('sends', 'root'), 'root'), (('a', 'request'), 'det'), (('plaintext', 'request'), 'compound'), (('request', 'sends'), 'obj'), (('to', 'the'), 'case'), (('the', 'request'), 'nmod'), (('AS', 'asking'), 'mark'), (('asking', 'sends'), 'advcl'), (('for', 'ticket'), 'case'), (('a', 'ticket'), 'det'), (('ticket', 'asking'), 'obl'), (('it', 'use'), 'nsubj'), (('can', 'use'), 'aux'), (('use', 'ticket'), 'acl:relcl'), (('to', 'talk'), 'mark'), (('talk', 'use'), 'xcomp'), (('to', 'TGS'), 'case'), (('the', 'TGS'), 'det'), (('TGS', 'talk'), 'obl'), (('.', 'sends'), 'punct')]
+
+ Named Entities are: 
+>> [('AS', 'ORG'), ('TGS', 'ORG')]
+
+========================== Sentence 25 ===========================
+
+ Request: Login name TGS name Since this request contains only well-known names, it does not need to be sealed. 
+
+Tokens are: 
+>> ['Request', ':', 'Login', 'name', 'TGS', 'name', 'Since', 'this', 'request', 'contains', 'only', 'well', '-', 'known', 'names', ',', 'it', 'does', 'not', 'need', 'to', 'be', 'sealed', '.'] 
+
+ UPOS tags are: 
+>> [('Request', 'NOUN'), (':', 'PUNCT'), ('Login', 'VERB'), ('name', 'NOUN'), ('TGS', 'NOUN'), ('name', 'NOUN'), ('Since', 'SCONJ'), ('this', 'DET'), ('request', 'NOUN'), ('contains', 'VERB'), ('only', 'ADV'), ('well', 'ADV'), ('-', 'PUNCT'), ('known', 'VERB'), ('names', 'NOUN'), (',', 'PUNCT'), ('it', 'PRON'), ('does', 'AUX'), ('not', 'PART'), ('need', 'VERB'), ('to', 'PART'), ('be', 'AUX'), ('sealed', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Request', 'NN'), (':', ':'), ('Login', 'VB'), ('name', 'NN'), ('TGS', 'NN'), ('name', 'NN'), ('Since', 'IN'), ('this', 'DT'), ('request', 'NN'), ('contains', 'VBZ'), ('only', 'RB'), ('well', 'RB'), ('-', 'HYPH'), ('known', 'VBN'), ('names', 'NNS'), (',', ','), ('it', 'PRP'), ('does', 'VBZ'), ('not', 'RB'), ('need', 'VB'), ('to', 'TO'), ('be', 'VB'), ('sealed', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Request', 'request'), (':', ':'), ('Login', 'login'), ('name', 'name'), ('TGS', 'tgs'), ('name', 'name'), ('Since', 'since'), ('this', 'this'), ('request', 'request'), ('contains', 'contain'), ('only', 'only'), ('well', 'well'), ('-', '-'), ('known', 'know'), ('names', 'name'), (',', ','), ('it', 'it'), ('does', 'do'), ('not', 'not'), ('need', 'need'), ('to', 'to'), ('be', 'be'), ('sealed', 'seal'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Request', 'root'), 'root'), ((':', 'Request'), 'punct'), (('Login', 'Request'), 'appos'), (('name', 'name'), 'compound'), (('TGS', 'name'), 'compound'), (('name', 'Login'), 'obj'), (('Since', 'contains'), 'mark'), (('this', 'request'), 'det'), (('request', 'contains'), 'nsubj'), (('contains', 'Login'), 'advcl'), (('only', 'names'), 'advmod'), (('well', 'known'), 'advmod'), (('-', 'known'), 'punct'), (('known', 'names'), 'amod'), (('names', 'contains'), 'obj'), ((',', 'need'), 'punct'), (('it', 'need'), 'nsubj'), (('does', 'need'), 'aux'), (('not', 'need'), 'advmod'), (('need', 'Request'), 'appos'), (('to', 'sealed'), 'mark'), (('be', 'sealed'), 'aux:pass'), (('sealed', 'need'), 'xcomp'), (('.', 'Request'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 26 ===========================
+
+ C---> 
+
+Tokens are: 
+>> ['C--->'] 
+
+ UPOS tags are: 
+>> [('C--->', 'PROPN')] 
+
+ XPOS tags are: 
+>> [('C--->', 'NNP')] 
+
+ Lemmas are: 
+>> [('C--->', 'C--->')] 
+
+ Dependency tags are: 
+>> [(('C--->', 'root'), 'root')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 27 ===========================
+
+ AS :  IDc||IDtgs||TS1  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-2 
+
+Tokens are: 
+>> ['AS', ':', 'IDc||IDtgs', '||TS1', 'Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step', '-2'] 
+
+ UPOS tags are: 
+>> [('AS', 'ADP'), (':', 'PUNCT'), ('IDc||IDtgs', 'PROPN'), ('||TS1', 'PROPN'), ('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'NOUN'), ('Version', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step', 'NOUN'), ('-2', 'NUM')] 
+
+ XPOS tags are: 
+>> [('AS', 'IN'), (':', ':'), ('IDc||IDtgs', 'NNP'), ('||TS1', 'NNP'), ('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NN'), ('Version', 'NN'), ('4', 'CD'), ('–', ','), ('Step', 'NN'), ('-2', 'CD')] 
+
+ Lemmas are: 
+>> [('AS', 'as'), (':', ':'), ('IDc||IDtgs', 'IDc||IDtgs'), ('||TS1', '||TS1'), ('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '-'), ('Step', 'step'), ('-2', '-2')] 
+
+ Dependency tags are: 
+>> [(('AS', 'Unit'), 'case'), ((':', 'Unit'), 'punct'), (('IDc||IDtgs', 'Unit'), 'compound'), (('||TS1', 'Unit'), 'compound'), (('Unit', 'Version'), 'obl'), (('-9', 'Institute'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Version'), 'nsubj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Version'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Version'), 'amod'), (('Subject', 'Version'), 'compound'), (('Kerberos', 'Version'), 'compound'), (('Version', 'root'), 'root'), (('4', 'Version'), 'nummod'), (('–', 'Version'), 'punct'), (('Step', 'Version'), 'appos'), (('-2', 'Step'), 'nummod')]
+
+ Named Entities are: 
+>> [('INS', 'ORG'), ('4', 'CARDINAL')]
+
+========================== Sentence 28 ===========================
+
+ The AS finds the keys corresponding to the login name and the TGS name. 
+
+Tokens are: 
+>> ['The', 'AS', 'finds', 'the', 'keys', 'corresponding', 'to', 'the', 'login', 'name', 'and', 'the', 'TGS', 'name', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('AS', 'NOUN'), ('finds', 'VERB'), ('the', 'DET'), ('keys', 'NOUN'), ('corresponding', 'VERB'), ('to', 'ADP'), ('the', 'DET'), ('login', 'NOUN'), ('name', 'NOUN'), ('and', 'CCONJ'), ('the', 'DET'), ('TGS', 'PROPN'), ('name', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('AS', 'NN'), ('finds', 'VBZ'), ('the', 'DT'), ('keys', 'NNS'), ('corresponding', 'VBG'), ('to', 'IN'), ('the', 'DT'), ('login', 'NN'), ('name', 'NN'), ('and', 'CC'), ('the', 'DT'), ('TGS', 'NNP'), ('name', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('AS', 'as'), ('finds', 'find'), ('the', 'the'), ('keys', 'key'), ('corresponding', 'corresponding'), ('to', 'to'), ('the', 'the'), ('login', 'login'), ('name', 'name'), ('and', 'and'), ('the', 'the'), ('TGS', 'TGS'), ('name', 'name'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'AS'), 'det'), (('AS', 'finds'), 'nsubj'), (('finds', 'root'), 'root'), (('the', 'keys'), 'det'), (('keys', 'finds'), 'obj'), (('corresponding', 'keys'), 'acl'), (('to', 'name'), 'case'), (('the', 'name'), 'det'), (('login', 'name'), 'compound'), (('name', 'corresponding'), 'obl'), (('and', 'name'), 'cc'), (('the', 'name'), 'det'), (('TGS', 'name'), 'compound'), (('name', 'name'), 'conj'), (('.', 'finds'), 'punct')]
+
+ Named Entities are: 
+>> [('AS', 'ORG'), ('TGS', 'ORG')]
+
+========================== Sentence 29 ===========================
+
+ The AS creates a ticket: Login name TGS name Client network address TGS session key The AS seals the ticket with the TGS secret key. 
+
+Tokens are: 
+>> ['The', 'AS', 'creates', 'a', 'ticket', ':', 'Login', 'name', 'TGS', 'name', 'Client', 'network', 'address', 'TGS', 'session', 'key', 'The', 'AS', 'seals', 'the', 'ticket', 'with', 'the', 'TGS', 'secret', 'key', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('AS', 'NOUN'), ('creates', 'VERB'), ('a', 'DET'), ('ticket', 'NOUN'), (':', 'PUNCT'), ('Login', 'VERB'), ('name', 'NOUN'), ('TGS', 'PROPN'), ('name', 'NOUN'), ('Client', 'NOUN'), ('network', 'NOUN'), ('address', 'NOUN'), ('TGS', 'PROPN'), ('session', 'NOUN'), ('key', 'NOUN'), ('The', 'DET'), ('AS', 'NOUN'), ('seals', 'NOUN'), ('the', 'DET'), ('ticket', 'NOUN'), ('with', 'ADP'), ('the', 'DET'), ('TGS', 'PROPN'), ('secret', 'ADJ'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('AS', 'NN'), ('creates', 'VBZ'), ('a', 'DT'), ('ticket', 'NN'), (':', ':'), ('Login', 'VB'), ('name', 'NN'), ('TGS', 'NNP'), ('name', 'NN'), ('Client', 'NN'), ('network', 'NN'), ('address', 'NN'), ('TGS', 'NNP'), ('session', 'NN'), ('key', 'NN'), ('The', 'DT'), ('AS', 'NN'), ('seals', 'NNS'), ('the', 'DT'), ('ticket', 'NN'), ('with', 'IN'), ('the', 'DT'), ('TGS', 'NNP'), ('secret', 'JJ'), ('key', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('AS', 'as'), ('creates', 'create'), ('a', 'a'), ('ticket', 'ticket'), (':', ':'), ('Login', 'login'), ('name', 'name'), ('TGS', 'TGS'), ('name', 'name'), ('Client', 'client'), ('network', 'network'), ('address', 'address'), ('TGS', 'TGS'), ('session', 'session'), ('key', 'key'), ('The', 'the'), ('AS', 'as'), ('seals', 'seal'), ('the', 'the'), ('ticket', 'ticket'), ('with', 'with'), ('the', 'the'), ('TGS', 'TGS'), ('secret', 'secret'), ('key', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'AS'), 'det'), (('AS', 'creates'), 'nsubj'), (('creates', 'root'), 'root'), (('a', 'ticket'), 'det'), (('ticket', 'creates'), 'obj'), ((':', 'Login'), 'punct'), (('Login', 'creates'), 'parataxis'), (('name', 'name'), 'compound'), (('TGS', 'name'), 'compound'), (('name', 'Login'), 'obj'), (('Client', 'network'), 'compound'), (('network', 'address'), 'compound'), (('address', 'name'), 'appos'), (('TGS', 'key'), 'compound'), (('session', 'key'), 'compound'), (('key', 'Login'), 'obj'), (('The', 'seals'), 'det'), (('AS', 'seals'), 'compound'), (('seals', 'Login'), 'obl'), (('the', 'ticket'), 'det'), (('ticket', 'seals'), 'appos'), (('with', 'key'), 'case'), (('the', 'key'), 'det'), (('TGS', 'key'), 'compound'), (('secret', 'key'), 'amod'), (('key', 'ticket'), 'nmod'), (('.', 'creates'), 'punct')]
+
+ Named Entities are: 
+>> [('AS', 'ORG'), ('TGS', 'ORG'), ('TGS', 'ORG'), ('TGS', 'ORG')]
+
+========================== Sentence 30 ===========================
+
+ AS--->C: E(Kc, [Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs]) Tickettgs=E(Ktgs, [Kc,tgs||IDc||ADc||IDtgs||TS2||Lifetime2]) 
+
+Tokens are: 
+>> ['AS', '--->C', ':', 'E(', 'Kc', ',', '[', 'Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs', ']', ')', 'Tickettgs=E(', 'Ktgs', ',', '[', 'Kc,tgs||IDc||ADc||IDtgs', '||TS2', '||Lifetime', '2', ']', ')'] 
+
+ UPOS tags are: 
+>> [('AS', 'ADP'), ('--->C', 'PUNCT'), (':', 'PUNCT'), ('E(', 'PROPN'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs', 'X'), (']', 'PUNCT'), (')', 'PUNCT'), ('Tickettgs=E(', 'PROPN'), ('Ktgs', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Kc,tgs||IDc||ADc||IDtgs', 'X'), ('||TS2', 'X'), ('||Lifetime', 'X'), ('2', 'NUM'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('AS', 'IN'), ('--->C', 'NFP'), (':', ':'), ('E(', 'NNP'), ('Kc', 'NNP'), (',', ','), ('[', '-LRB-'), ('Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs', 'ADD'), (']', '-RRB-'), (')', '-RRB-'), ('Tickettgs=E(', 'NNP'), ('Ktgs', 'NNP'), (',', ','), ('[', '-LRB-'), ('Kc,tgs||IDc||ADc||IDtgs', 'ADD'), ('||TS2', 'FW'), ('||Lifetime', 'GW'), ('2', 'CD'), (']', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('AS', 'as'), ('--->C', '--->C'), (':', ':'), ('E(', 'E('), ('Kc', 'Kc'), (',', ','), ('[', '['), ('Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs', 'kc,tgs||idtgs||ts2||lifetime2||tickettgs'), (']', ']'), (')', ')'), ('Tickettgs=E(', 'Tickettgs=E('), ('Ktgs', 'Ktgs'), (',', ','), ('[', '['), ('Kc,tgs||IDc||ADc||IDtgs', 'kc,tgs||idc||adc||idtgs'), ('||TS2', '||ts2'), ('||Lifetime', '||Lifetime'), ('2', '2'), (']', ']'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('AS', 'E('), 'case'), (('--->C', 'E('), 'punct'), ((':', 'E('), 'punct'), (('E(', 'root'), 'root'), (('Kc', 'E('), 'flat'), ((',', 'Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs'), 'punct'), (('[', 'Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs'), 'punct'), (('Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs', 'E('), 'list'), ((']', 'Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs'), 'punct'), ((')', 'Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs'), 'punct'), (('Tickettgs=E(', 'E('), 'conj'), (('Ktgs', 'Tickettgs=E('), 'flat'), ((',', 'Kc,tgs||IDc||ADc||IDtgs'), 'punct'), (('[', 'Kc,tgs||IDc||ADc||IDtgs'), 'punct'), (('Kc,tgs||IDc||ADc||IDtgs', 'E('), 'list'), (('||TS2', 'Kc,tgs||IDc||ADc||IDtgs'), 'flat'), (('||Lifetime', 'Kc,tgs||IDc||ADc||IDtgs'), 'flat'), (('2', 'Kc,tgs||IDc||ADc||IDtgs'), 'dep'), ((']', 'Kc,tgs||IDc||ADc||IDtgs'), 'punct'), ((')', 'Kc,tgs||IDc||ADc||IDtgs'), 'punct')]
+
+ Named Entities are: 
+>> [('2', 'CARDINAL')]
+
+========================== Sentence 31 ===========================
+
+ Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-3 
+
+Tokens are: 
+>> ['Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step', '-3'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'NOUN'), ('Version', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step', 'NOUN'), ('-3', 'NUM')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NN'), ('Version', 'NN'), ('4', 'CD'), ('–', ','), ('Step', 'NN'), ('-3', 'CD')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '-'), ('Step', 'step'), ('-3', '-3')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-9', 'Unit'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Version'), 'nsubj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Version'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Version'), 'amod'), (('Subject', 'Version'), 'compound'), (('Kerberos', 'Version'), 'compound'), (('Version', 'root'), 'root'), (('4', 'Version'), 'nummod'), (('–', 'Version'), 'punct'), (('Step', 'Version'), 'appos'), (('-3', 'Step'), 'nummod')]
+
+ Named Entities are: 
+>> [('INS', 'ORG'), ('4', 'CARDINAL')]
+
+========================== Sentence 32 ===========================
+
+ The client decrypts the message using the user’s password as the secret key. 
+
+Tokens are: 
+>> ['The', 'client', 'decrypts', 'the', 'message', 'using', 'the', 'user', '’s', 'password', 'as', 'the', 'secret', 'key', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('client', 'NOUN'), ('decrypts', 'VERB'), ('the', 'DET'), ('message', 'NOUN'), ('using', 'VERB'), ('the', 'DET'), ('user', 'NOUN'), ('’s', 'PART'), ('password', 'NOUN'), ('as', 'ADP'), ('the', 'DET'), ('secret', 'ADJ'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('client', 'NN'), ('decrypts', 'VBZ'), ('the', 'DT'), ('message', 'NN'), ('using', 'VBG'), ('the', 'DT'), ('user', 'NN'), ('’s', 'POS'), ('password', 'NN'), ('as', 'IN'), ('the', 'DT'), ('secret', 'JJ'), ('key', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('client', 'client'), ('decrypts', 'decrypt'), ('the', 'the'), ('message', 'message'), ('using', 'use'), ('the', 'the'), ('user', 'user'), ('’s', "'s"), ('password', 'password'), ('as', 'as'), ('the', 'the'), ('secret', 'secret'), ('key', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'client'), 'det'), (('client', 'decrypts'), 'nsubj'), (('decrypts', 'root'), 'root'), (('the', 'message'), 'det'), (('message', 'decrypts'), 'obj'), (('using', 'message'), 'acl'), (('the', 'user'), 'det'), (('user', 'password'), 'nmod:poss'), (('’s', 'user'), 'case'), (('password', 'using'), 'obj'), (('as', 'key'), 'case'), (('the', 'key'), 'det'), (('secret', 'key'), 'amod'), (('key', 'using'), 'obl'), (('.', 'decrypts'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 33 ===========================
+
+ The client now has a session key and ticket that can be used to contact the TGS. 
+
+Tokens are: 
+>> ['The', 'client', 'now', 'has', 'a', 'session', 'key', 'and', 'ticket', 'that', 'can', 'be', 'used', 'to', 'contact', 'the', 'TGS', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('client', 'NOUN'), ('now', 'ADV'), ('has', 'VERB'), ('a', 'DET'), ('session', 'NOUN'), ('key', 'NOUN'), ('and', 'CCONJ'), ('ticket', 'NOUN'), ('that', 'PRON'), ('can', 'AUX'), ('be', 'AUX'), ('used', 'VERB'), ('to', 'PART'), ('contact', 'VERB'), ('the', 'DET'), ('TGS', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('client', 'NN'), ('now', 'RB'), ('has', 'VBZ'), ('a', 'DT'), ('session', 'NN'), ('key', 'NN'), ('and', 'CC'), ('ticket', 'NN'), ('that', 'WDT'), ('can', 'MD'), ('be', 'VB'), ('used', 'VBN'), ('to', 'TO'), ('contact', 'VB'), ('the', 'DT'), ('TGS', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('client', 'client'), ('now', 'now'), ('has', 'have'), ('a', 'a'), ('session', 'session'), ('key', 'key'), ('and', 'and'), ('ticket', 'ticket'), ('that', 'that'), ('can', 'can'), ('be', 'be'), ('used', 'use'), ('to', 'to'), ('contact', 'contact'), ('the', 'the'), ('TGS', 'TGS'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'client'), 'det'), (('client', 'has'), 'nsubj'), (('now', 'has'), 'advmod'), (('has', 'root'), 'root'), (('a', 'key'), 'det'), (('session', 'key'), 'compound'), (('key', 'has'), 'obj'), (('and', 'ticket'), 'cc'), (('ticket', 'key'), 'conj'), (('that', 'used'), 'nsubj:pass'), (('can', 'used'), 'aux'), (('be', 'used'), 'aux:pass'), (('used', 'key'), 'acl:relcl'), (('to', 'contact'), 'mark'), (('contact', 'used'), 'xcomp'), (('the', 'TGS'), 'det'), (('TGS', 'contact'), 'obj'), (('.', 'has'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 34 ===========================
+
+ The client cannot see inside the ticket, since the client does not know the TGS secret key. 
+
+Tokens are: 
+>> ['The', 'client', 'cannot', 'see', 'inside', 'the', 'ticket', ',', 'since', 'the', 'client', 'does', 'not', 'know', 'the', 'TGS', 'secret', 'key', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('client', 'NOUN'), ('cannot', 'AUX'), ('see', 'VERB'), ('inside', 'ADP'), ('the', 'DET'), ('ticket', 'NOUN'), (',', 'PUNCT'), ('since', 'SCONJ'), ('the', 'DET'), ('client', 'NOUN'), ('does', 'AUX'), ('not', 'PART'), ('know', 'VERB'), ('the', 'DET'), ('TGS', 'PROPN'), ('secret', 'ADJ'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('client', 'NN'), ('cannot', 'MD'), ('see', 'VB'), ('inside', 'IN'), ('the', 'DT'), ('ticket', 'NN'), (',', ','), ('since', 'IN'), ('the', 'DT'), ('client', 'NN'), ('does', 'VBZ'), ('not', 'RB'), ('know', 'VB'), ('the', 'DT'), ('TGS', 'NNP'), ('secret', 'JJ'), ('key', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('client', 'client'), ('cannot', 'cannot'), ('see', 'see'), ('inside', 'inside'), ('the', 'the'), ('ticket', 'ticket'), (',', ','), ('since', 'since'), ('the', 'the'), ('client', 'client'), ('does', 'do'), ('not', 'not'), ('know', 'know'), ('the', 'the'), ('TGS', 'TGS'), ('secret', 'secret'), ('key', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'client'), 'det'), (('client', 'see'), 'nsubj'), (('cannot', 'see'), 'aux'), (('see', 'root'), 'root'), (('inside', 'ticket'), 'case'), (('the', 'ticket'), 'det'), (('ticket', 'see'), 'obl'), ((',', 'see'), 'punct'), (('since', 'know'), 'mark'), (('the', 'client'), 'det'), (('client', 'know'), 'nsubj'), (('does', 'know'), 'aux'), (('not', 'know'), 'advmod'), (('know', 'see'), 'advcl'), (('the', 'key'), 'det'), (('TGS', 'key'), 'compound'), (('secret', 'key'), 'amod'), (('key', 'know'), 'obj'), (('.', 'see'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 35 ===========================
+
+ When a client wants to start using a server (service), the client must first obtain a ticket. 
+
+Tokens are: 
+>> ['When', 'a', 'client', 'wants', 'to', 'start', 'using', 'a', 'server', '(', 'service', ')', ',', 'the', 'client', 'must', 'first', 'obtain', 'a', 'ticket', '.'] 
+
+ UPOS tags are: 
+>> [('When', 'SCONJ'), ('a', 'DET'), ('client', 'NOUN'), ('wants', 'VERB'), ('to', 'PART'), ('start', 'VERB'), ('using', 'VERB'), ('a', 'DET'), ('server', 'NOUN'), ('(', 'PUNCT'), ('service', 'NOUN'), (')', 'PUNCT'), (',', 'PUNCT'), ('the', 'DET'), ('client', 'NOUN'), ('must', 'AUX'), ('first', 'ADV'), ('obtain', 'VERB'), ('a', 'DET'), ('ticket', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('When', 'WRB'), ('a', 'DT'), ('client', 'NN'), ('wants', 'VBZ'), ('to', 'TO'), ('start', 'VB'), ('using', 'VBG'), ('a', 'DT'), ('server', 'NN'), ('(', '-LRB-'), ('service', 'NN'), (')', '-RRB-'), (',', ','), ('the', 'DT'), ('client', 'NN'), ('must', 'MD'), ('first', 'RB'), ('obtain', 'VB'), ('a', 'DT'), ('ticket', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('When', 'when'), ('a', 'a'), ('client', 'client'), ('wants', 'want'), ('to', 'to'), ('start', 'start'), ('using', 'use'), ('a', 'a'), ('server', 'server'), ('(', '('), ('service', 'service'), (')', ')'), (',', ','), ('the', 'the'), ('client', 'client'), ('must', 'must'), ('first', 'first'), ('obtain', 'obtain'), ('a', 'a'), ('ticket', 'ticket'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('When', 'wants'), 'mark'), (('a', 'client'), 'det'), (('client', 'wants'), 'nsubj'), (('wants', 'obtain'), 'advcl'), (('to', 'start'), 'mark'), (('start', 'wants'), 'xcomp'), (('using', 'start'), 'xcomp'), (('a', 'server'), 'det'), (('server', 'using'), 'obj'), (('(', 'service'), 'punct'), (('service', 'server'), 'appos'), ((')', 'service'), 'punct'), ((',', 'obtain'), 'punct'), (('the', 'client'), 'det'), (('client', 'obtain'), 'nsubj'), (('must', 'obtain'), 'aux'), (('first', 'obtain'), 'advmod'), (('obtain', 'root'), 'root'), (('a', 'ticket'), 'det'), (('ticket', 'obtain'), 'obj'), (('.', 'obtain'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 36 ===========================
+
+ The client composes a request to send to the TGS   C---> 
+
+Tokens are: 
+>> ['The', 'client', 'composes', 'a', 'request', 'to', 'send', 'to', 'the', 'TGS', 'C--->'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('client', 'NOUN'), ('composes', 'VERB'), ('a', 'DET'), ('request', 'NOUN'), ('to', 'PART'), ('send', 'VERB'), ('to', 'ADP'), ('the', 'DET'), ('TGS', 'PROPN'), ('C--->', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('client', 'NN'), ('composes', 'VBZ'), ('a', 'DT'), ('request', 'NN'), ('to', 'TO'), ('send', 'VB'), ('to', 'IN'), ('the', 'DT'), ('TGS', 'NNP'), ('C--->', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('client', 'client'), ('composes', 'compose'), ('a', 'a'), ('request', 'request'), ('to', 'to'), ('send', 'send'), ('to', 'to'), ('the', 'the'), ('TGS', 'TGS'), ('C--->', 'C--->')] 
+
+ Dependency tags are: 
+>> [(('The', 'client'), 'det'), (('client', 'composes'), 'nsubj'), (('composes', 'root'), 'root'), (('a', 'request'), 'det'), (('request', 'composes'), 'obj'), (('to', 'send'), 'mark'), (('send', 'request'), 'acl'), (('to', 'TGS'), 'case'), (('the', 'TGS'), 'det'), (('TGS', 'send'), 'obl'), (('C--->', 'composes'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 37 ===========================
+
+ TGS: Idv||Tickettgs||Authenticatorc  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-4 
+
+Tokens are: 
+>> ['TGS', ':', 'Idv||Tickettgs', '||', 'Authenticatorc', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step', '-4'] 
+
+ UPOS tags are: 
+>> [('TGS', 'NOUN'), (':', 'PUNCT'), ('Idv||Tickettgs', 'PROPN'), ('||', 'PUNCT'), ('Authenticatorc', 'PROPN'), ('Unit-9', 'PROPN'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'NOUN'), ('Version', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step', 'NOUN'), ('-4', 'NUM')] 
+
+ XPOS tags are: 
+>> [('TGS', 'NN'), (':', ':'), ('Idv||Tickettgs', 'NNP'), ('||', 'NFP'), ('Authenticatorc', 'NNP'), ('Unit-9', 'NNP'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NN'), ('Version', 'NN'), ('4', 'CD'), ('–', ','), ('Step', 'NN'), ('-4', 'CD')] 
+
+ Lemmas are: 
+>> [('TGS', 'tgs'), (':', ':'), ('Idv||Tickettgs', 'Idv||Tickettg'), ('||', '||'), ('Authenticatorc', 'Authenticatorc'), ('Unit-9', 'Unit-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '-'), ('Step', 'step'), ('-4', '-4')] 
+
+ Dependency tags are: 
+>> [(('TGS', 'root'), 'root'), ((':', 'TGS'), 'punct'), (('Idv||Tickettgs', 'TGS'), 'dep'), (('||', 'Idv||Tickettgs'), 'punct'), (('Authenticatorc', 'Institute'), 'compound'), (('Unit-9', 'Authenticatorc'), 'flat'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Idv||Tickettgs'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Version'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Version'), 'amod'), (('Subject', 'Version'), 'compound'), (('Kerberos', 'Version'), 'compound'), (('Version', 'TGS'), 'parataxis'), (('4', 'Version'), 'nummod'), (('–', 'Version'), 'punct'), (('Step', 'Version'), 'appos'), (('-4', 'Step'), 'nummod')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG'), ('Idv||Tickettgs', 'ORG'), ('INS', 'ORG'), ('4', 'CARDINAL')]
+
+========================== Sentence 38 ===========================
+
+ The TGS decrypts the ticket using it’s secret key. 
+
+Tokens are: 
+>> ['The', 'TGS', 'decrypts', 'the', 'ticket', 'using', 'it', '’s', 'secret', 'key', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('TGS', 'PROPN'), ('decrypts', 'VERB'), ('the', 'DET'), ('ticket', 'NOUN'), ('using', 'VERB'), ('it', 'PRON'), ('’s', 'AUX'), ('secret', 'ADJ'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('TGS', 'NNP'), ('decrypts', 'VBZ'), ('the', 'DT'), ('ticket', 'NN'), ('using', 'VBG'), ('it', 'PRP'), ('’s', 'VBZ'), ('secret', 'JJ'), ('key', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('TGS', 'TGS'), ('decrypts', 'decrypt'), ('the', 'the'), ('ticket', 'ticket'), ('using', 'use'), ('it', 'it'), ('’s', 'be'), ('secret', 'secret'), ('key', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'TGS'), 'det'), (('TGS', 'decrypts'), 'nsubj'), (('decrypts', 'root'), 'root'), (('the', 'ticket'), 'det'), (('ticket', 'decrypts'), 'obj'), (('using', 'ticket'), 'acl'), (('it', 'key'), 'nsubj'), (('’s', 'key'), 'cop'), (('secret', 'key'), 'amod'), (('key', 'decrypts'), 'parataxis'), (('.', 'decrypts'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 39 ===========================
+
+ Inside is the TGS session key. 
+
+Tokens are: 
+>> ['Inside', 'is', 'the', 'TGS', 'session', 'key', '.'] 
+
+ UPOS tags are: 
+>> [('Inside', 'ADV'), ('is', 'AUX'), ('the', 'DET'), ('TGS', 'PROPN'), ('session', 'NOUN'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Inside', 'RB'), ('is', 'VBZ'), ('the', 'DT'), ('TGS', 'NNP'), ('session', 'NN'), ('key', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Inside', 'Inside'), ('is', 'be'), ('the', 'the'), ('TGS', 'TGS'), ('session', 'session'), ('key', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Inside', 'root'), 'root'), (('is', 'Inside'), 'cop'), (('the', 'key'), 'det'), (('TGS', 'key'), 'compound'), (('session', 'key'), 'compound'), (('key', 'Inside'), 'nsubj'), (('.', 'Inside'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 40 ===========================
+
+ The TGS decrypts the authenticator using the session key. 
+
+Tokens are: 
+>> ['The', 'TGS', 'decrypts', 'the', 'authenticator', 'using', 'the', 'session', 'key', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('TGS', 'PROPN'), ('decrypts', 'VERB'), ('the', 'DET'), ('authenticator', 'NOUN'), ('using', 'VERB'), ('the', 'DET'), ('session', 'NOUN'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('TGS', 'NNP'), ('decrypts', 'VBZ'), ('the', 'DT'), ('authenticator', 'NN'), ('using', 'VBG'), ('the', 'DT'), ('session', 'NN'), ('key', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('TGS', 'TGS'), ('decrypts', 'decrypt'), ('the', 'the'), ('authenticator', 'authenticator'), ('using', 'use'), ('the', 'the'), ('session', 'session'), ('key', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'TGS'), 'det'), (('TGS', 'decrypts'), 'nsubj'), (('decrypts', 'root'), 'root'), (('the', 'authenticator'), 'det'), (('authenticator', 'decrypts'), 'obj'), (('using', 'authenticator'), 'acl'), (('the', 'key'), 'det'), (('session', 'key'), 'compound'), (('key', 'using'), 'obj'), (('.', 'decrypts'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 41 ===========================
+
+ The TGS check to make sure login names, client addresses and TGS server name are all ok. 
+
+Tokens are: 
+>> ['The', 'TGS', 'check', 'to', 'make', 'sure', 'login', 'names', ',', 'client', 'addresses', 'and', 'TGS', 'server', 'name', 'are', 'all', 'ok', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('TGS', 'PROPN'), ('check', 'NOUN'), ('to', 'PART'), ('make', 'VERB'), ('sure', 'ADJ'), ('login', 'NOUN'), ('names', 'NOUN'), (',', 'PUNCT'), ('client', 'NOUN'), ('addresses', 'NOUN'), ('and', 'CCONJ'), ('TGS', 'NOUN'), ('server', 'NOUN'), ('name', 'NOUN'), ('are', 'AUX'), ('all', 'ADV'), ('ok', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('TGS', 'NNP'), ('check', 'NN'), ('to', 'TO'), ('make', 'VB'), ('sure', 'JJ'), ('login', 'NN'), ('names', 'NNS'), (',', ','), ('client', 'NN'), ('addresses', 'NNS'), ('and', 'CC'), ('TGS', 'NN'), ('server', 'NN'), ('name', 'NN'), ('are', 'VBP'), ('all', 'RB'), ('ok', 'JJ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('TGS', 'TGS'), ('check', 'check'), ('to', 'to'), ('make', 'make'), ('sure', 'sure'), ('login', 'login'), ('names', 'name'), (',', ','), ('client', 'client'), ('addresses', 'address'), ('and', 'and'), ('TGS', 'tgs'), ('server', 'server'), ('name', 'name'), ('are', 'be'), ('all', 'all'), ('ok', 'ok'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'check'), 'det'), (('TGS', 'check'), 'compound'), (('check', 'ok'), 'nsubj'), (('to', 'make'), 'mark'), (('make', 'check'), 'acl'), (('sure', 'make'), 'xcomp'), (('login', 'names'), 'compound'), (('names', 'ok'), 'nsubj'), ((',', 'addresses'), 'punct'), (('client', 'addresses'), 'compound'), (('addresses', 'names'), 'conj'), (('and', 'name'), 'cc'), (('TGS', 'name'), 'compound'), (('server', 'name'), 'compound'), (('name', 'names'), 'conj'), (('are', 'ok'), 'cop'), (('all', 'ok'), 'advmod'), (('ok', 'root'), 'root'), (('.', 'ok'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG'), ('TGS', 'ORG')]
+
+========================== Sentence 42 ===========================
+
+ TGS makes sure the authenticator is recent. 
+
+Tokens are: 
+>> ['TGS', 'makes', 'sure', 'the', 'authenticator', 'is', 'recent', '.'] 
+
+ UPOS tags are: 
+>> [('TGS', 'PROPN'), ('makes', 'VERB'), ('sure', 'ADJ'), ('the', 'DET'), ('authenticator', 'NOUN'), ('is', 'AUX'), ('recent', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('TGS', 'NNP'), ('makes', 'VBZ'), ('sure', 'JJ'), ('the', 'DT'), ('authenticator', 'NN'), ('is', 'VBZ'), ('recent', 'JJ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('TGS', 'TGS'), ('makes', 'make'), ('sure', 'sure'), ('the', 'the'), ('authenticator', 'authenticator'), ('is', 'be'), ('recent', 'recent'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('TGS', 'makes'), 'nsubj'), (('makes', 'root'), 'root'), (('sure', 'makes'), 'xcomp'), (('the', 'authenticator'), 'det'), (('authenticator', 'recent'), 'nsubj'), (('is', 'recent'), 'cop'), (('recent', 'sure'), 'ccomp'), (('.', 'makes'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 43 ===========================
+
+ Builds a ticket for the client and requested server. 
+
+Tokens are: 
+>> ['Builds', 'a', 'ticket', 'for', 'the', 'client', 'and', 'requested', 'server', '.'] 
+
+ UPOS tags are: 
+>> [('Builds', 'VERB'), ('a', 'DET'), ('ticket', 'NOUN'), ('for', 'ADP'), ('the', 'DET'), ('client', 'NOUN'), ('and', 'CCONJ'), ('requested', 'VERB'), ('server', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Builds', 'VBZ'), ('a', 'DT'), ('ticket', 'NN'), ('for', 'IN'), ('the', 'DT'), ('client', 'NN'), ('and', 'CC'), ('requested', 'VBD'), ('server', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Builds', 'build'), ('a', 'a'), ('ticket', 'ticket'), ('for', 'for'), ('the', 'the'), ('client', 'client'), ('and', 'and'), ('requested', 'request'), ('server', 'server'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Builds', 'root'), 'root'), (('a', 'ticket'), 'det'), (('ticket', 'Builds'), 'obj'), (('for', 'client'), 'case'), (('the', 'client'), 'det'), (('client', 'ticket'), 'nmod'), (('and', 'requested'), 'cc'), (('requested', 'Builds'), 'conj'), (('server', 'requested'), 'obj'), (('.', 'Builds'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 44 ===========================
+
+ The ticket is sealed with the server key. 
+
+Tokens are: 
+>> ['The', 'ticket', 'is', 'sealed', 'with', 'the', 'server', 'key', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('ticket', 'NOUN'), ('is', 'AUX'), ('sealed', 'VERB'), ('with', 'ADP'), ('the', 'DET'), ('server', 'NOUN'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('ticket', 'NN'), ('is', 'VBZ'), ('sealed', 'VBN'), ('with', 'IN'), ('the', 'DT'), ('server', 'NN'), ('key', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('ticket', 'ticket'), ('is', 'be'), ('sealed', 'seal'), ('with', 'with'), ('the', 'the'), ('server', 'server'), ('key', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'ticket'), 'det'), (('ticket', 'sealed'), 'nsubj:pass'), (('is', 'sealed'), 'aux:pass'), (('sealed', 'root'), 'root'), (('with', 'key'), 'case'), (('the', 'key'), 'det'), (('server', 'key'), 'compound'), (('key', 'sealed'), 'obl'), (('.', 'sealed'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 45 ===========================
+
+ Creates a session key Seals the entire message with the tgs session key and sends it to the client. 
+
+Tokens are: 
+>> ['Creates', 'a', 'session', 'key', 'Seals', 'the', 'entire', 'message', 'with', 'the', 'tgs', 'session', 'key', 'and', 'sends', 'it', 'to', 'the', 'client', '.'] 
+
+ UPOS tags are: 
+>> [('Creates', 'VERB'), ('a', 'DET'), ('session', 'NOUN'), ('key', 'NOUN'), ('Seals', 'NOUN'), ('the', 'DET'), ('entire', 'ADJ'), ('message', 'NOUN'), ('with', 'ADP'), ('the', 'DET'), ('tgs', 'NOUN'), ('session', 'NOUN'), ('key', 'NOUN'), ('and', 'CCONJ'), ('sends', 'VERB'), ('it', 'PRON'), ('to', 'ADP'), ('the', 'DET'), ('client', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Creates', 'VBZ'), ('a', 'DT'), ('session', 'NN'), ('key', 'NN'), ('Seals', 'NNS'), ('the', 'DT'), ('entire', 'JJ'), ('message', 'NN'), ('with', 'IN'), ('the', 'DT'), ('tgs', 'NN'), ('session', 'NN'), ('key', 'NN'), ('and', 'CC'), ('sends', 'VBZ'), ('it', 'PRP'), ('to', 'IN'), ('the', 'DT'), ('client', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Creates', 'create'), ('a', 'a'), ('session', 'session'), ('key', 'key'), ('Seals', 'seal'), ('the', 'the'), ('entire', 'entire'), ('message', 'message'), ('with', 'with'), ('the', 'the'), ('tgs', 'tgs'), ('session', 'session'), ('key', 'key'), ('and', 'and'), ('sends', 'send'), ('it', 'it'), ('to', 'to'), ('the', 'the'), ('client', 'client'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Creates', 'root'), 'root'), (('a', 'Seals'), 'det'), (('session', 'Seals'), 'compound'), (('key', 'Seals'), 'compound'), (('Seals', 'Creates'), 'obj'), (('the', 'message'), 'det'), (('entire', 'message'), 'amod'), (('message', 'Creates'), 'obj'), (('with', 'key'), 'case'), (('the', 'key'), 'det'), (('tgs', 'key'), 'compound'), (('session', 'key'), 'compound'), (('key', 'Creates'), 'obl'), (('and', 'sends'), 'cc'), (('sends', 'Creates'), 'conj'), (('it', 'sends'), 'obj'), (('to', 'client'), 'case'), (('the', 'client'), 'det'), (('client', 'sends'), 'obl'), (('.', 'Creates'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 46 ===========================
+
+ TGS--->C: E(Kc,tgs, [Kc,v||IDv||TS4||Ticketv]) 
+
+Tokens are: 
+>> ['TGS', '--->C', ':', 'E(', 'Kc', ',', 'tgs', ',', '[', 'Kc', ',', 'v||IDv||TS4', '||', 'Ticketv', ']', ')'] 
+
+ UPOS tags are: 
+>> [('TGS', 'PROPN'), ('--->C', 'PUNCT'), (':', 'PUNCT'), ('E(', 'PROPN'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('tgs', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('v||IDv||TS4', 'PROPN'), ('||', 'PUNCT'), ('Ticketv', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('TGS', 'NNP'), ('--->C', 'NFP'), (':', ':'), ('E(', 'NNP'), ('Kc', 'NNP'), (',', ','), ('tgs', 'NNP'), (',', ','), ('[', '-LRB-'), ('Kc', 'NNP'), (',', ','), ('v||IDv||TS4', 'NNP'), ('||', ':'), ('Ticketv', 'NNP'), (']', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('TGS', 'TGS'), ('--->C', '--->C'), (':', ':'), ('E(', 'E('), ('Kc', 'Kc'), (',', ','), ('tgs', 'tgs'), (',', ','), ('[', '['), ('Kc', 'Kc'), (',', ','), ('v||IDv||TS4', 'v||IDv||TS4'), ('||', '||'), ('Ticketv', 'Ticketv'), (']', ']'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('TGS', 'root'), 'root'), (('--->C', 'TGS'), 'punct'), ((':', 'E('), 'punct'), (('E(', 'TGS'), 'appos'), (('Kc', 'E('), 'flat'), ((',', 'tgs'), 'punct'), (('tgs', 'Kc'), 'conj'), ((',', 'Kc'), 'punct'), (('[', 'Kc'), 'punct'), (('Kc', 'E('), 'conj'), ((',', 'v||IDv||TS4'), 'punct'), (('v||IDv||TS4', 'Kc'), 'conj'), (('||', 'Ticketv'), 'punct'), (('Ticketv', 'Kc'), 'conj'), ((']', 'Kc'), 'punct'), ((')', 'Kc'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG'), ('Ticketv', 'ORG')]
+
+========================== Sentence 47 ===========================
+
+ Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-4    Tickettgs=E(Ktgs, [Kc,tgs||IDc||ADc||IDtgs||TS2||Lifetime2])  TicketV=E(KV, [Kc,V||IDc||ADc||IDV||TS4||Lifetime4])  AuthenticatorC=E(Kc,tgs, [IDc||ADc||TS3]) 
+
+Tokens are: 
+>> ['Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step-4', 'Tickettgs=E(', 'Ktgs', ',', '[', 'Kc,tgs', '||IDc||ADc||IDtgs||TS2||Lifetime2', ']', ')', 'TicketV=E(', 'KV', ',', '[', 'Kc', ',', 'V||IDc||ADc||IDV', '||TS4||Lifetime', '4', ']', ')', 'AuthenticatorC=E', '(', 'Kc', ',', 'tgs', ',', '[', 'IDc||ADc', '||', 'TS3', ']', ')'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'ADJ'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'PROPN'), ('Version', 'PROPN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step-4', 'PROPN'), ('Tickettgs=E(', 'PROPN'), ('Ktgs', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Kc,tgs', 'PROPN'), ('||IDc||ADc||IDtgs||TS2||Lifetime2', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT'), ('TicketV=E(', 'PROPN'), ('KV', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('V||IDc||ADc||IDV', 'PROPN'), ('||TS4||Lifetime', 'PROPN'), ('4', 'NUM'), (']', 'PUNCT'), (')', 'PUNCT'), ('AuthenticatorC=E', 'PROPN'), ('(', 'PUNCT'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('tgs', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('IDc||ADc', 'PROPN'), ('||', 'SYM'), ('TS3', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'JJ'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NNP'), ('Version', 'NNP'), ('4', 'CD'), ('–', ':'), ('Step-4', 'NNP'), ('Tickettgs=E(', 'NNP'), ('Ktgs', 'NNP'), (',', ','), ('[', '-LRB-'), ('Kc,tgs', 'NNP'), ('||IDc||ADc||IDtgs||TS2||Lifetime2', 'NNP'), (']', '-RRB-'), (')', '-RRB-'), ('TicketV=E(', 'NNP'), ('KV', 'NNP'), (',', ','), ('[', '-LRB-'), ('Kc', 'NNP'), (',', ','), ('V||IDc||ADc||IDV', 'NNP'), ('||TS4||Lifetime', 'NNP'), ('4', 'CD'), (']', '-RRB-'), (')', '-RRB-'), ('AuthenticatorC=E', 'NNP'), ('(', '-LRB-'), ('Kc', 'NNP'), (',', ','), ('tgs', 'NNP'), (',', ','), ('[', '-LRB-'), ('IDc||ADc', 'NNP'), ('||', 'SYM'), ('TS3', 'NNP'), (']', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'Kerberos'), ('Version', 'Version'), ('4', '4'), ('–', '-'), ('Step-4', 'Step-4'), ('Tickettgs=E(', 'Tickettgs=E('), ('Ktgs', 'Ktgs'), (',', ','), ('[', '['), ('Kc,tgs', 'Kc,tg'), ('||IDc||ADc||IDtgs||TS2||Lifetime2', '||IDc||ADc||IDtgs||TS2||Lifetime2'), (']', ']'), (')', ')'), ('TicketV=E(', 'TicketV=E('), ('KV', 'KV'), (',', ','), ('[', '['), ('Kc', 'Kc'), (',', ','), ('V||IDc||ADc||IDV', 'V||IDc||ADc||IDV'), ('||TS4||Lifetime', '||TS4||Lifetime'), ('4', '4'), (']', ']'), (')', ')'), ('AuthenticatorC=E', 'AuthenticatorC=E'), ('(', '('), ('Kc', 'Kc'), (',', ','), ('tgs', 'tgs'), (',', ','), ('[', '['), ('IDc||ADc', 'IDc||ADc'), ('||', '||'), ('TS3', 'TS3'), (']', ']'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Subject'), 'nsubj'), (('-9', 'Unit'), 'nummod'), (('Remote', 'Institute'), 'amod'), (('user', 'authentication'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Subject'), 'nsubj'), (('of', 'INS'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'root'), 'root'), (('Kerberos', 'Version'), 'compound'), (('Version', 'Subject'), 'appos'), (('4', 'Version'), 'nummod'), (('–', 'Step-4'), 'punct'), (('Step-4', 'Version'), 'appos'), (('Tickettgs=E(', 'Step-4'), 'flat'), (('Ktgs', 'Step-4'), 'flat'), ((',', 'Kc,tgs'), 'punct'), (('[', 'Kc,tgs'), 'punct'), (('Kc,tgs', 'Step-4'), 'parataxis'), (('||IDc||ADc||IDtgs||TS2||Lifetime2', 'Kc,tgs'), 'flat'), ((']', 'Kc,tgs'), 'punct'), ((')', 'Kc,tgs'), 'punct'), (('TicketV=E(', 'KV'), 'compound'), (('KV', 'Version'), 'conj'), ((',', 'Kc'), 'punct'), (('[', 'Kc'), 'punct'), (('Kc', 'Version'), 'appos'), ((',', 'V||IDc||ADc||IDV'), 'punct'), (('V||IDc||ADc||IDV', 'Kc'), 'conj'), (('||TS4||Lifetime', 'Kc'), 'conj'), (('4', 'Kc'), 'dep'), ((']', 'Kc'), 'punct'), ((')', 'Kc'), 'punct'), (('AuthenticatorC=E', 'Kc'), 'conj'), (('(', 'Kc'), 'punct'), (('Kc', 'AuthenticatorC=E'), 'dep'), ((',', 'tgs'), 'punct'), (('tgs', 'Kc'), 'conj'), ((',', 'IDc||ADc'), 'punct'), (('[', 'IDc||ADc'), 'punct'), (('IDc||ADc', 'Kc'), 'conj'), (('||', 'TS3'), 'cc'), (('TS3', 'IDc||ADc'), 'conj'), ((']', 'Kc'), 'punct'), ((')', 'Kc'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('4', 'CARDINAL'), ('4', 'CARDINAL')]
+
+========================== Sentence 48 ===========================
+
+ Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-5, 6 The client now decrypts the TGS response using the TGS session key. 
+
+Tokens are: 
+>> ['Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step', '-5', ',', '6', 'The', 'client', 'now', 'decrypts', 'the', 'TGS', 'response', 'using', 'the', 'TGS', 'session', 'key', '.'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'NOUN'), ('Version', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Step', 'NOUN'), ('-5', 'NUM'), (',', 'PUNCT'), ('6', 'NUM'), ('The', 'DET'), ('client', 'NOUN'), ('now', 'ADV'), ('decrypts', 'VERB'), ('the', 'DET'), ('TGS', 'PROPN'), ('response', 'NOUN'), ('using', 'VERB'), ('the', 'DET'), ('TGS', 'PROPN'), ('session', 'NOUN'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NN'), ('Version', 'NN'), ('4', 'CD'), ('–', ','), ('Step', 'NN'), ('-5', 'CD'), (',', ','), ('6', 'CD'), ('The', 'DT'), ('client', 'NN'), ('now', 'RB'), ('decrypts', 'VBZ'), ('the', 'DT'), ('TGS', 'NNP'), ('response', 'NN'), ('using', 'VBG'), ('the', 'DT'), ('TGS', 'NNP'), ('session', 'NN'), ('key', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '-'), ('Step', 'step'), ('-5', '-5'), (',', ','), ('6', '6'), ('The', 'the'), ('client', 'client'), ('now', 'now'), ('decrypts', 'decrypt'), ('the', 'the'), ('TGS', 'TGS'), ('response', 'response'), ('using', 'use'), ('the', 'the'), ('TGS', 'TGS'), ('session', 'session'), ('key', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-9', 'Unit'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Version'), 'nsubj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Version'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Version'), 'amod'), (('Subject', 'Version'), 'compound'), (('Kerberos', 'Version'), 'compound'), (('Version', 'root'), 'root'), (('4', 'Version'), 'nummod'), (('–', 'Version'), 'punct'), (('Step', 'Version'), 'appos'), (('-5', 'Step'), 'nummod'), ((',', 'Step'), 'punct'), (('6', 'Step'), 'nummod'), (('The', 'client'), 'det'), (('client', 'decrypts'), 'nsubj'), (('now', 'decrypts'), 'advmod'), (('decrypts', 'Version'), 'acl:relcl'), (('the', 'response'), 'det'), (('TGS', 'response'), 'compound'), (('response', 'decrypts'), 'obj'), (('using', 'response'), 'acl'), (('the', 'key'), 'det'), (('TGS', 'key'), 'compound'), (('session', 'key'), 'compound'), (('key', 'using'), 'obj'), (('.', 'Version'), 'punct')]
+
+ Named Entities are: 
+>> [('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('4', 'CARDINAL'), ('-5', 'CARDINAL'), ('6', 'CARDINAL'), ('TGS', 'ORG'), ('TGS', 'ORG')]
+
+========================== Sentence 49 ===========================
+
+ The client now has a session key for use with the new server, and a ticket to use with that server. 
+
+Tokens are: 
+>> ['The', 'client', 'now', 'has', 'a', 'session', 'key', 'for', 'use', 'with', 'the', 'new', 'server', ',', 'and', 'a', 'ticket', 'to', 'use', 'with', 'that', 'server', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('client', 'NOUN'), ('now', 'ADV'), ('has', 'VERB'), ('a', 'DET'), ('session', 'NOUN'), ('key', 'NOUN'), ('for', 'ADP'), ('use', 'NOUN'), ('with', 'ADP'), ('the', 'DET'), ('new', 'ADJ'), ('server', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('a', 'DET'), ('ticket', 'NOUN'), ('to', 'PART'), ('use', 'VERB'), ('with', 'ADP'), ('that', 'DET'), ('server', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('client', 'NN'), ('now', 'RB'), ('has', 'VBZ'), ('a', 'DT'), ('session', 'NN'), ('key', 'NN'), ('for', 'IN'), ('use', 'NN'), ('with', 'IN'), ('the', 'DT'), ('new', 'JJ'), ('server', 'NN'), (',', ','), ('and', 'CC'), ('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('use', 'VB'), ('with', 'IN'), ('that', 'DT'), ('server', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('client', 'client'), ('now', 'now'), ('has', 'have'), ('a', 'a'), ('session', 'session'), ('key', 'key'), ('for', 'for'), ('use', 'use'), ('with', 'with'), ('the', 'the'), ('new', 'new'), ('server', 'server'), (',', ','), ('and', 'and'), ('a', 'a'), ('ticket', 'ticket'), ('to', 'to'), ('use', 'use'), ('with', 'with'), ('that', 'that'), ('server', 'server'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'client'), 'det'), (('client', 'has'), 'nsubj'), (('now', 'has'), 'advmod'), (('has', 'root'), 'root'), (('a', 'key'), 'det'), (('session', 'key'), 'compound'), (('key', 'has'), 'obj'), (('for', 'use'), 'case'), (('use', 'key'), 'nmod'), (('with', 'server'), 'case'), (('the', 'server'), 'det'), (('new', 'server'), 'amod'), (('server', 'use'), 'nmod'), ((',', 'ticket'), 'punct'), (('and', 'ticket'), 'cc'), (('a', 'ticket'), 'det'), (('ticket', 'key'), 'conj'), (('to', 'use'), 'mark'), (('use', 'ticket'), 'acl'), (('with', 'server'), 'case'), (('that', 'server'), 'det'), (('server', 'use'), 'obl'), (('.', 'has'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 50 ===========================
+
+ The client can contact the new server using the same format used to access the TGS. 
+
+Tokens are: 
+>> ['The', 'client', 'can', 'contact', 'the', 'new', 'server', 'using', 'the', 'same', 'format', 'used', 'to', 'access', 'the', 'TGS', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('client', 'NOUN'), ('can', 'AUX'), ('contact', 'VERB'), ('the', 'DET'), ('new', 'ADJ'), ('server', 'NOUN'), ('using', 'VERB'), ('the', 'DET'), ('same', 'ADJ'), ('format', 'NOUN'), ('used', 'VERB'), ('to', 'PART'), ('access', 'VERB'), ('the', 'DET'), ('TGS', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('client', 'NN'), ('can', 'MD'), ('contact', 'VB'), ('the', 'DT'), ('new', 'JJ'), ('server', 'NN'), ('using', 'VBG'), ('the', 'DT'), ('same', 'JJ'), ('format', 'NN'), ('used', 'VBN'), ('to', 'TO'), ('access', 'VB'), ('the', 'DT'), ('TGS', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('client', 'client'), ('can', 'can'), ('contact', 'contact'), ('the', 'the'), ('new', 'new'), ('server', 'server'), ('using', 'use'), ('the', 'the'), ('same', 'same'), ('format', 'format'), ('used', 'use'), ('to', 'to'), ('access', 'access'), ('the', 'the'), ('TGS', 'TGS'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'client'), 'det'), (('client', 'contact'), 'nsubj'), (('can', 'contact'), 'aux'), (('contact', 'root'), 'root'), (('the', 'server'), 'det'), (('new', 'server'), 'amod'), (('server', 'contact'), 'obj'), (('using', 'server'), 'acl'), (('the', 'format'), 'det'), (('same', 'format'), 'amod'), (('format', 'using'), 'obj'), (('used', 'format'), 'acl'), (('to', 'access'), 'mark'), (('access', 'used'), 'xcomp'), (('the', 'TGS'), 'det'), (('TGS', 'access'), 'obj'), (('.', 'contact'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 51 ===========================
+
+ TicketV=E(KV, [Kc,V||IDc||ADc||IDV||TS4||Lifetime4])  AuthenticatorC=E(Kc,v, [IDc||ADc||TS5]) 
+
+Tokens are: 
+>> ['TicketV=E(', 'KV', ',', '[', 'Kc', ',', 'V||IDc||ADc||IDV', '||TS4||Lifetime', '4', ']', ')', 'AuthenticatorC=E', '(', 'Kc', ',', 'v', ',', '[', 'IDc||ADc', '||', 'TS5', ']', ')'] 
+
+ UPOS tags are: 
+>> [('TicketV=E(', 'PROPN'), ('KV', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('V||IDc||ADc||IDV', 'PROPN'), ('||TS4||Lifetime', 'PROPN'), ('4', 'NUM'), (']', 'PUNCT'), (')', 'PUNCT'), ('AuthenticatorC=E', 'PROPN'), ('(', 'PUNCT'), ('Kc', 'PROPN'), (',', 'PUNCT'), ('v', 'PROPN'), (',', 'PUNCT'), ('[', 'PUNCT'), ('IDc||ADc', 'PROPN'), ('||', 'SYM'), ('TS5', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('TicketV=E(', 'NNP'), ('KV', 'NNP'), (',', ','), ('[', '-LRB-'), ('Kc', 'NNP'), (',', ','), ('V||IDc||ADc||IDV', 'NNP'), ('||TS4||Lifetime', 'NNP'), ('4', 'CD'), (']', '-RRB-'), (')', '-RRB-'), ('AuthenticatorC=E', 'NNP'), ('(', '-LRB-'), ('Kc', 'NNP'), (',', ','), ('v', 'NNP'), (',', ','), ('[', '-LRB-'), ('IDc||ADc', 'NNP'), ('||', 'SYM'), ('TS5', 'NNP'), (']', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('TicketV=E(', 'TicketV=E('), ('KV', 'KV'), (',', ','), ('[', '['), ('Kc', 'Kc'), (',', ','), ('V||IDc||ADc||IDV', 'V||IDc||ADc||IDV'), ('||TS4||Lifetime', '||TS4||Lifetime'), ('4', '4'), (']', ']'), (')', ')'), ('AuthenticatorC=E', 'AuthenticatorC=E'), ('(', '('), ('Kc', 'Kc'), (',', ','), ('v', 'v'), (',', ','), ('[', '['), ('IDc||ADc', 'IDc||ADc'), ('||', '||'), ('TS5', 'TS5'), (']', ']'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('TicketV=E(', 'root'), 'root'), (('KV', 'TicketV=E('), 'flat'), ((',', 'Kc'), 'punct'), (('[', 'Kc'), 'punct'), (('Kc', 'TicketV=E('), 'parataxis'), ((',', 'V||IDc||ADc||IDV'), 'punct'), (('V||IDc||ADc||IDV', 'Kc'), 'conj'), (('||TS4||Lifetime', 'Kc'), 'flat'), (('4', 'Kc'), 'dep'), ((']', 'Kc'), 'punct'), ((')', 'Kc'), 'punct'), (('AuthenticatorC=E', 'TicketV=E('), 'list'), (('(', 'Kc'), 'punct'), (('Kc', 'Kc'), 'parataxis'), ((',', 'v'), 'punct'), (('v', 'Kc'), 'conj'), ((',', 'IDc||ADc'), 'punct'), (('[', 'IDc||ADc'), 'punct'), (('IDc||ADc', 'Kc'), 'conj'), (('||', 'TS5'), 'cc'), (('TS5', 'IDc||ADc'), 'conj'), ((']', 'IDc||ADc'), 'punct'), ((')', 'Kc'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 52 ===========================
+
+ Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Ticket Each request for a service requires a ticket. 
+
+Tokens are: 
+>> ['Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Ticket', 'Each', 'request', 'for', 'a', 'service', 'requires', 'a', 'ticket', '.'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Ticket', 'NOUN'), ('Each', 'DET'), ('request', 'NOUN'), ('for', 'ADP'), ('a', 'DET'), ('service', 'NOUN'), ('requires', 'VERB'), ('a', 'DET'), ('ticket', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Ticket', 'NN'), ('Each', 'DT'), ('request', 'NN'), ('for', 'IN'), ('a', 'DT'), ('service', 'NN'), ('requires', 'VBZ'), ('a', 'DT'), ('ticket', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Ticket', 'ticket'), ('Each', 'each'), ('request', 'request'), ('for', 'for'), ('a', 'a'), ('service', 'service'), ('requires', 'require'), ('a', 'a'), ('ticket', 'ticket'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-9', 'Unit'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Ticket'), 'nsubj'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Ticket'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Ticket'), 'amod'), (('Subject', 'Ticket'), 'compound'), (('Ticket', 'root'), 'root'), (('Each', 'request'), 'det'), (('request', 'requires'), 'nsubj'), (('for', 'service'), 'case'), (('a', 'service'), 'det'), (('service', 'request'), 'nmod'), (('requires', 'Ticket'), 'acl:relcl'), (('a', 'ticket'), 'det'), (('ticket', 'requires'), 'obj'), (('.', 'Ticket'), 'punct')]
+
+ Named Entities are: 
+>> [('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG')]
+
+========================== Sentence 53 ===========================
+
+ A ticket provides a single client with access to a single server. 
+
+Tokens are: 
+>> ['A', 'ticket', 'provides', 'a', 'single', 'client', 'with', 'access', 'to', 'a', 'single', 'server', '.'] 
+
+ UPOS tags are: 
+>> [('A', 'DET'), ('ticket', 'NOUN'), ('provides', 'VERB'), ('a', 'DET'), ('single', 'ADJ'), ('client', 'NOUN'), ('with', 'ADP'), ('access', 'NOUN'), ('to', 'ADP'), ('a', 'DET'), ('single', 'ADJ'), ('server', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('A', 'DT'), ('ticket', 'NN'), ('provides', 'VBZ'), ('a', 'DT'), ('single', 'JJ'), ('client', 'NN'), ('with', 'IN'), ('access', 'NN'), ('to', 'IN'), ('a', 'DT'), ('single', 'JJ'), ('server', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('A', 'a'), ('ticket', 'ticket'), ('provides', 'provide'), ('a', 'a'), ('single', 'single'), ('client', 'client'), ('with', 'with'), ('access', 'access'), ('to', 'to'), ('a', 'a'), ('single', 'single'), ('server', 'server'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('A', 'ticket'), 'det'), (('ticket', 'provides'), 'nsubj'), (('provides', 'root'), 'root'), (('a', 'client'), 'det'), (('single', 'client'), 'amod'), (('client', 'provides'), 'obj'), (('with', 'access'), 'case'), (('access', 'client'), 'nmod'), (('to', 'server'), 'case'), (('a', 'server'), 'det'), (('single', 'server'), 'amod'), (('server', 'access'), 'nmod'), (('.', 'provides'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 54 ===========================
+
+ Tickets are dispensed by the “ticket granting server” (TGS), which has knowledge of all the encryption keys. 
+
+Tokens are: 
+>> ['Tickets', 'are', 'dispensed', 'by', 'the', '“', 'ticket', 'granting', 'server', '”', '(', 'TGS', ')', ',', 'which', 'has', 'knowledge', 'of', 'all', 'the', 'encryption', 'keys', '.'] 
+
+ UPOS tags are: 
+>> [('Tickets', 'NOUN'), ('are', 'AUX'), ('dispensed', 'VERB'), ('by', 'ADP'), ('the', 'DET'), ('“', 'PUNCT'), ('ticket', 'NOUN'), ('granting', 'VERB'), ('server', 'NOUN'), ('”', 'PUNCT'), ('(', 'PUNCT'), ('TGS', 'PROPN'), (')', 'PUNCT'), (',', 'PUNCT'), ('which', 'PRON'), ('has', 'VERB'), ('knowledge', 'NOUN'), ('of', 'ADP'), ('all', 'DET'), ('the', 'DET'), ('encryption', 'NOUN'), ('keys', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Tickets', 'NNS'), ('are', 'VBP'), ('dispensed', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('“', '``'), ('ticket', 'NN'), ('granting', 'VBG'), ('server', 'NN'), ('”', "''"), ('(', '-LRB-'), ('TGS', 'NNP'), (')', '-RRB-'), (',', ','), ('which', 'WDT'), ('has', 'VBZ'), ('knowledge', 'NN'), ('of', 'IN'), ('all', 'PDT'), ('the', 'DT'), ('encryption', 'NN'), ('keys', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Tickets', 'ticket'), ('are', 'be'), ('dispensed', 'dispense'), ('by', 'by'), ('the', 'the'), ('“', "''"), ('ticket', 'ticket'), ('granting', 'grant'), ('server', 'server'), ('”', "''"), ('(', '('), ('TGS', 'TGS'), (')', ')'), (',', ','), ('which', 'which'), ('has', 'have'), ('knowledge', 'knowledge'), ('of', 'of'), ('all', 'all'), ('the', 'the'), ('encryption', 'encryption'), ('keys', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Tickets', 'dispensed'), 'nsubj:pass'), (('are', 'dispensed'), 'aux:pass'), (('dispensed', 'root'), 'root'), (('by', 'server'), 'case'), (('the', 'server'), 'det'), (('“', 'server'), 'punct'), (('ticket', 'server'), 'compound'), (('granting', 'server'), 'amod'), (('server', 'dispensed'), 'obl'), (('”', 'server'), 'punct'), (('(', 'TGS'), 'punct'), (('TGS', 'server'), 'appos'), ((')', 'TGS'), 'punct'), ((',', 'has'), 'punct'), (('which', 'has'), 'nsubj'), (('has', 'server'), 'acl:relcl'), (('knowledge', 'has'), 'obj'), (('of', 'keys'), 'case'), (('all', 'keys'), 'det:predet'), (('the', 'keys'), 'det'), (('encryption', 'keys'), 'compound'), (('keys', 'knowledge'), 'nmod'), (('.', 'dispensed'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 55 ===========================
+
+ Tickets are meaningless to clients, they simply use them to gain access to servers. 
+
+Tokens are: 
+>> ['Tickets', 'are', 'meaningless', 'to', 'clients', ',', 'they', 'simply', 'use', 'them', 'to', 'gain', 'access', 'to', 'servers', '.'] 
+
+ UPOS tags are: 
+>> [('Tickets', 'NOUN'), ('are', 'AUX'), ('meaningless', 'ADJ'), ('to', 'ADP'), ('clients', 'NOUN'), (',', 'PUNCT'), ('they', 'PRON'), ('simply', 'ADV'), ('use', 'VERB'), ('them', 'PRON'), ('to', 'PART'), ('gain', 'VERB'), ('access', 'NOUN'), ('to', 'ADP'), ('servers', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Tickets', 'NNS'), ('are', 'VBP'), ('meaningless', 'JJ'), ('to', 'IN'), ('clients', 'NNS'), (',', ','), ('they', 'PRP'), ('simply', 'RB'), ('use', 'VBP'), ('them', 'PRP'), ('to', 'TO'), ('gain', 'VB'), ('access', 'NN'), ('to', 'IN'), ('servers', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Tickets', 'ticket'), ('are', 'be'), ('meaningless', 'meaningless'), ('to', 'to'), ('clients', 'client'), (',', ','), ('they', 'they'), ('simply', 'simply'), ('use', 'use'), ('them', 'they'), ('to', 'to'), ('gain', 'gain'), ('access', 'access'), ('to', 'to'), ('servers', 'server'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Tickets', 'meaningless'), 'nsubj'), (('are', 'meaningless'), 'cop'), (('meaningless', 'root'), 'root'), (('to', 'clients'), 'case'), (('clients', 'meaningless'), 'obl'), ((',', 'meaningless'), 'punct'), (('they', 'use'), 'nsubj'), (('simply', 'use'), 'advmod'), (('use', 'meaningless'), 'parataxis'), (('them', 'use'), 'obj'), (('to', 'gain'), 'mark'), (('gain', 'use'), 'xcomp'), (('access', 'gain'), 'obj'), (('to', 'servers'), 'case'), (('servers', 'gain'), 'obl'), (('.', 'meaningless'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 56 ===========================
+
+ The TGS seals (encrypts) each ticket with the secret encryption key of the server. 
+
+Tokens are: 
+>> ['The', 'TGS', 'seals', '(', 'encrypts', ')', 'each', 'ticket', 'with', 'the', 'secret', 'encryption', 'key', 'of', 'the', 'server', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('TGS', 'PROPN'), ('seals', 'NOUN'), ('(', 'PUNCT'), ('encrypts', 'NOUN'), (')', 'PUNCT'), ('each', 'DET'), ('ticket', 'NOUN'), ('with', 'ADP'), ('the', 'DET'), ('secret', 'ADJ'), ('encryption', 'NOUN'), ('key', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('server', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('TGS', 'NNP'), ('seals', 'NNS'), ('(', '-LRB-'), ('encrypts', 'NNS'), (')', '-RRB-'), ('each', 'DT'), ('ticket', 'NN'), ('with', 'IN'), ('the', 'DT'), ('secret', 'JJ'), ('encryption', 'NN'), ('key', 'NN'), ('of', 'IN'), ('the', 'DT'), ('server', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('TGS', 'TGS'), ('seals', 'seal'), ('(', '('), ('encrypts', 'encrypt'), (')', ')'), ('each', 'each'), ('ticket', 'ticket'), ('with', 'with'), ('the', 'the'), ('secret', 'secret'), ('encryption', 'encryption'), ('key', 'key'), ('of', 'of'), ('the', 'the'), ('server', 'server'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'seals'), 'det'), (('TGS', 'seals'), 'compound'), (('seals', 'root'), 'root'), (('(', 'encrypts'), 'punct'), (('encrypts', 'seals'), 'appos'), ((')', 'encrypts'), 'punct'), (('each', 'ticket'), 'det'), (('ticket', 'seals'), 'appos'), (('with', 'key'), 'case'), (('the', 'key'), 'det'), (('secret', 'key'), 'amod'), (('encryption', 'key'), 'compound'), (('key', 'ticket'), 'nmod'), (('of', 'server'), 'case'), (('the', 'server'), 'det'), (('server', 'key'), 'nmod'), (('.', 'seals'), 'punct')]
+
+ Named Entities are: 
+>> [('TGS', 'ORG')]
+
+========================== Sentence 57 ===========================
+
+ Sealed tickets can be sent safely over a network - only the server can make sense out of it. 
+
+Tokens are: 
+>> ['Sealed', 'tickets', 'can', 'be', 'sent', 'safely', 'over', 'a', 'network', '-', 'only', 'the', 'server', 'can', 'make', 'sense', 'out', 'of', 'it', '.'] 
+
+ UPOS tags are: 
+>> [('Sealed', 'VERB'), ('tickets', 'NOUN'), ('can', 'AUX'), ('be', 'AUX'), ('sent', 'VERB'), ('safely', 'ADV'), ('over', 'ADP'), ('a', 'DET'), ('network', 'NOUN'), ('-', 'PUNCT'), ('only', 'ADV'), ('the', 'DET'), ('server', 'NOUN'), ('can', 'AUX'), ('make', 'VERB'), ('sense', 'NOUN'), ('out', 'ADP'), ('of', 'ADP'), ('it', 'PRON'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Sealed', 'VBN'), ('tickets', 'NNS'), ('can', 'MD'), ('be', 'VB'), ('sent', 'VBN'), ('safely', 'RB'), ('over', 'IN'), ('a', 'DT'), ('network', 'NN'), ('-', ','), ('only', 'RB'), ('the', 'DT'), ('server', 'NN'), ('can', 'MD'), ('make', 'VB'), ('sense', 'NN'), ('out', 'IN'), ('of', 'IN'), ('it', 'PRP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Sealed', 'seal'), ('tickets', 'ticket'), ('can', 'can'), ('be', 'be'), ('sent', 'send'), ('safely', 'safely'), ('over', 'over'), ('a', 'a'), ('network', 'network'), ('-', '-'), ('only', 'only'), ('the', 'the'), ('server', 'server'), ('can', 'can'), ('make', 'make'), ('sense', 'sense'), ('out', 'out'), ('of', 'of'), ('it', 'it'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Sealed', 'tickets'), 'amod'), (('tickets', 'sent'), 'nsubj:pass'), (('can', 'sent'), 'aux'), (('be', 'sent'), 'aux:pass'), (('sent', 'root'), 'root'), (('safely', 'sent'), 'advmod'), (('over', 'network'), 'case'), (('a', 'network'), 'det'), (('network', 'sent'), 'obl'), (('-', 'sent'), 'punct'), (('only', 'server'), 'advmod'), (('the', 'server'), 'det'), (('server', 'make'), 'nsubj'), (('can', 'make'), 'aux'), (('make', 'sent'), 'parataxis'), (('sense', 'make'), 'obj'), (('out', 'it'), 'case'), (('of', 'it'), 'case'), (('it', 'make'), 'obl'), (('.', 'sent'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 58 ===========================
+
+ Each ticket has a limited lifetime (a few hours). 
+
+Tokens are: 
+>> ['Each', 'ticket', 'has', 'a', 'limited', 'lifetime', '(', 'a', 'few', 'hours', ')', '.'] 
+
+ UPOS tags are: 
+>> [('Each', 'DET'), ('ticket', 'NOUN'), ('has', 'VERB'), ('a', 'DET'), ('limited', 'VERB'), ('lifetime', 'NOUN'), ('(', 'PUNCT'), ('a', 'DET'), ('few', 'ADJ'), ('hours', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Each', 'DT'), ('ticket', 'NN'), ('has', 'VBZ'), ('a', 'DT'), ('limited', 'VBN'), ('lifetime', 'NN'), ('(', '-LRB-'), ('a', 'DT'), ('few', 'JJ'), ('hours', 'NNS'), (')', '-RRB-'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Each', 'each'), ('ticket', 'ticket'), ('has', 'have'), ('a', 'a'), ('limited', 'limit'), ('lifetime', 'lifetime'), ('(', '('), ('a', 'a'), ('few', 'few'), ('hours', 'hour'), (')', ')'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Each', 'ticket'), 'det'), (('ticket', 'has'), 'nsubj'), (('has', 'root'), 'root'), (('a', 'lifetime'), 'det'), (('limited', 'lifetime'), 'amod'), (('lifetime', 'has'), 'obj'), (('(', 'hours'), 'punct'), (('a', 'hours'), 'det'), (('few', 'hours'), 'amod'), (('hours', 'lifetime'), 'appos'), ((')', 'hours'), 'punct'), (('.', 'has'), 'punct')]
+
+ Named Entities are: 
+>> [('a few hours', 'TIME')]
+
+========================== Sentence 59 ===========================
+
+ Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Ticket Contents Client name (user login name) 
+
+Tokens are: 
+>> ['Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Ticket', 'Contents', 'Client', 'name', '(', 'user', 'login', 'name', ')'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Ticket', 'NOUN'), ('Contents', 'NOUN'), ('Client', 'NOUN'), ('name', 'NOUN'), ('(', 'PUNCT'), ('user', 'NOUN'), ('login', 'NOUN'), ('name', 'NOUN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Ticket', 'NN'), ('Contents', 'NNS'), ('Client', 'NN'), ('name', 'NN'), ('(', '-LRB-'), ('user', 'NN'), ('login', 'NN'), ('name', 'NN'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Ticket', 'ticket'), ('Contents', 'content'), ('Client', 'client'), ('name', 'name'), ('(', '('), ('user', 'user'), ('login', 'login'), ('name', 'name'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-9', 'Unit'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Contents'), 'nsubj'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Contents'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Contents'), 'amod'), (('Subject', 'Contents'), 'compound'), (('Ticket', 'Contents'), 'compound'), (('Contents', 'root'), 'root'), (('Client', 'name'), 'compound'), (('name', 'Contents'), 'appos'), (('(', 'name'), 'punct'), (('user', 'name'), 'compound'), (('login', 'name'), 'compound'), (('name', 'name'), 'appos'), ((')', 'name'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG')]
+
+========================== Sentence 60 ===========================
+
+ Server name Client host network address Session key for client/server Ticket lifetime  Creation timestamp   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject      Kerberos Realm   Remote user authentication with Asymmetric encryption Mutual Authentication    Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject 
+
+Tokens are: 
+>> ['Server', 'name', 'Client', 'host', 'network', 'address', 'Session', 'key', 'for', 'client', '/', 'server', 'Ticket', 'lifetime', 'Creation', 'timestamp', 'Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Kerberos', 'Realm', 'Remote', 'user', 'authentication', 'with', 'Asymmetric', 'encryption', 'Mutual', 'Authentication', 'Unit', '-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject'] 
+
+ UPOS tags are: 
+>> [('Server', 'NOUN'), ('name', 'NOUN'), ('Client', 'NOUN'), ('host', 'NOUN'), ('network', 'NOUN'), ('address', 'NOUN'), ('Session', 'NOUN'), ('key', 'NOUN'), ('for', 'ADP'), ('client', 'NOUN'), ('/', 'SYM'), ('server', 'NOUN'), ('Ticket', 'NOUN'), ('lifetime', 'NOUN'), ('Creation', 'NOUN'), ('timestamp', 'NOUN'), ('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Kerberos', 'PROPN'), ('Realm', 'NOUN'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('with', 'ADP'), ('Asymmetric', 'ADJ'), ('encryption', 'NOUN'), ('Mutual', 'ADJ'), ('Authentication', 'NOUN'), ('Unit', 'NOUN'), ('-9', 'NUM'), ('Remote', 'NOUN'), ('user', 'NOUN'), ('authentication', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Server', 'NN'), ('name', 'NN'), ('Client', 'NN'), ('host', 'NN'), ('network', 'NN'), ('address', 'NN'), ('Session', 'NN'), ('key', 'NN'), ('for', 'IN'), ('client', 'NN'), ('/', ','), ('server', 'NN'), ('Ticket', 'NN'), ('lifetime', 'NN'), ('Creation', 'NN'), ('timestamp', 'NN'), ('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Kerberos', 'NNP'), ('Realm', 'NN'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('with', 'IN'), ('Asymmetric', 'JJ'), ('encryption', 'NN'), ('Mutual', 'JJ'), ('Authentication', 'NN'), ('Unit', 'NN'), ('-9', 'CD'), ('Remote', 'NN'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN')] 
+
+ Lemmas are: 
+>> [('Server', 'server'), ('name', 'name'), ('Client', 'client'), ('host', 'host'), ('network', 'network'), ('address', 'address'), ('Session', 'session'), ('key', 'key'), ('for', 'for'), ('client', 'client'), ('/', '/'), ('server', 'server'), ('Ticket', 'ticket'), ('lifetime', 'lifetime'), ('Creation', 'creation'), ('timestamp', 'timestamp'), ('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Kerberos', 'Kerberos'), ('Realm', 'realm'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('with', 'with'), ('Asymmetric', 'Asymmetric'), ('encryption', 'encryption'), ('Mutual', 'mutual'), ('Authentication', 'authentication'), ('Unit', 'unit'), ('-9', '-9'), ('Remote', 'remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject')] 
+
+ Dependency tags are: 
+>> [(('Server', 'name'), 'compound'), (('name', 'Subject'), 'nsubj'), (('Client', 'network'), 'compound'), (('host', 'network'), 'compound'), (('network', 'key'), 'compound'), (('address', 'Session'), 'compound'), (('Session', 'key'), 'compound'), (('key', 'name'), 'appos'), (('for', 'Unit'), 'case'), (('client', 'Creation'), 'compound'), (('/', 'Ticket'), 'cc'), (('server', 'Ticket'), 'compound'), (('Ticket', 'Creation'), 'compound'), (('lifetime', 'Creation'), 'compound'), (('Creation', 'Unit'), 'compound'), (('timestamp', 'Unit'), 'compound'), (('Unit', 'key'), 'nmod'), (('-9', 'Institute'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'key'), 'conj'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'root'), 'root'), (('Kerberos', 'Realm'), 'compound'), (('Realm', 'authentication'), 'compound'), (('Remote', 'authentication'), 'compound'), (('user', 'authentication'), 'compound'), (('authentication', 'Subject'), 'obj'), (('with', 'Unit'), 'case'), (('Asymmetric', 'Unit'), 'amod'), (('encryption', 'Unit'), 'compound'), (('Mutual', 'Unit'), 'amod'), (('Authentication', 'Unit'), 'compound'), (('Unit', 'authentication'), 'nmod'), (('-9', 'Institute'), 'nummod'), (('Remote', 'Institute'), 'compound'), (('user', 'Institute'), 'compound'), (('authentication', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'conj'), (('of', '‹#›'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Subject'), 'nsubj'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'Institute'), 'acl:relcl')]
+
+ Named Entities are: 
+>> [('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('INS', 'ORG')]

@@ -1,0 +1,494 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+W3.CSS Template             Gourmet au Catering                 About       Menu       Contact                          Le Catering                                              About Catering         Tradition since 1889        The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+
+>> Tokens are: 
+ ['W3.CSS', 'Template', 'Gourmet', 'au', 'Catering', 'About', 'Menu', 'Contact', 'Le', 'Catering', 'About', 'Catering', 'Tradition', 'since', '1889', 'The', 'Catering', 'founded', 'blabla', 'Mr.', 'Smith', 'lorem', 'ipsum', 'dolor', 'sit', 'amet', ',', 'consectetur', 'adipiscing', 'elit', 'consectetur', 'adipiscing', 'elit', ',', 'sed', 'eiusmod', 'tempor', 'incididunt', 'ut', 'labore', 'et', 'dolore', 'magna', 'aliqua', '.']
+
+>> Bigrams are: 
+ [('W3.CSS', 'Template'), ('Template', 'Gourmet'), ('Gourmet', 'au'), ('au', 'Catering'), ('Catering', 'About'), ('About', 'Menu'), ('Menu', 'Contact'), ('Contact', 'Le'), ('Le', 'Catering'), ('Catering', 'About'), ('About', 'Catering'), ('Catering', 'Tradition'), ('Tradition', 'since'), ('since', '1889'), ('1889', 'The'), ('The', 'Catering'), ('Catering', 'founded'), ('founded', 'blabla'), ('blabla', 'Mr.'), ('Mr.', 'Smith'), ('Smith', 'lorem'), ('lorem', 'ipsum'), ('ipsum', 'dolor'), ('dolor', 'sit'), ('sit', 'amet'), ('amet', ','), (',', 'consectetur'), ('consectetur', 'adipiscing'), ('adipiscing', 'elit'), ('elit', 'consectetur'), ('consectetur', 'adipiscing'), ('adipiscing', 'elit'), ('elit', ','), (',', 'sed'), ('sed', 'eiusmod'), ('eiusmod', 'tempor'), ('tempor', 'incididunt'), ('incididunt', 'ut'), ('ut', 'labore'), ('labore', 'et'), ('et', 'dolore'), ('dolore', 'magna'), ('magna', 'aliqua'), ('aliqua', '.')]
+
+>> Trigrams are: 
+ [('W3.CSS', 'Template', 'Gourmet'), ('Template', 'Gourmet', 'au'), ('Gourmet', 'au', 'Catering'), ('au', 'Catering', 'About'), ('Catering', 'About', 'Menu'), ('About', 'Menu', 'Contact'), ('Menu', 'Contact', 'Le'), ('Contact', 'Le', 'Catering'), ('Le', 'Catering', 'About'), ('Catering', 'About', 'Catering'), ('About', 'Catering', 'Tradition'), ('Catering', 'Tradition', 'since'), ('Tradition', 'since', '1889'), ('since', '1889', 'The'), ('1889', 'The', 'Catering'), ('The', 'Catering', 'founded'), ('Catering', 'founded', 'blabla'), ('founded', 'blabla', 'Mr.'), ('blabla', 'Mr.', 'Smith'), ('Mr.', 'Smith', 'lorem'), ('Smith', 'lorem', 'ipsum'), ('lorem', 'ipsum', 'dolor'), ('ipsum', 'dolor', 'sit'), ('dolor', 'sit', 'amet'), ('sit', 'amet', ','), ('amet', ',', 'consectetur'), (',', 'consectetur', 'adipiscing'), ('consectetur', 'adipiscing', 'elit'), ('adipiscing', 'elit', 'consectetur'), ('elit', 'consectetur', 'adipiscing'), ('consectetur', 'adipiscing', 'elit'), ('adipiscing', 'elit', ','), ('elit', ',', 'sed'), (',', 'sed', 'eiusmod'), ('sed', 'eiusmod', 'tempor'), ('eiusmod', 'tempor', 'incididunt'), ('tempor', 'incididunt', 'ut'), ('incididunt', 'ut', 'labore'), ('ut', 'labore', 'et'), ('labore', 'et', 'dolore'), ('et', 'dolore', 'magna'), ('dolore', 'magna', 'aliqua'), ('magna', 'aliqua', '.')]
+
+>> POS Tags are: 
+ [('W3.CSS', 'NNP'), ('Template', 'NNP'), ('Gourmet', 'NNP'), ('au', 'NN'), ('Catering', 'VBG'), ('About', 'IN'), ('Menu', 'NNP'), ('Contact', 'NNP'), ('Le', 'NNP'), ('Catering', 'VBG'), ('About', 'IN'), ('Catering', 'NNP'), ('Tradition', 'NNP'), ('since', 'IN'), ('1889', 'CD'), ('The', 'DT'), ('Catering', 'NNP'), ('founded', 'VBD'), ('blabla', 'IN'), ('Mr.', 'NNP'), ('Smith', 'NNP'), ('lorem', 'VBZ'), ('ipsum', 'JJ'), ('dolor', 'NN'), ('sit', 'NN'), ('amet', 'NN'), (',', ','), ('consectetur', 'NN'), ('adipiscing', 'VBG'), ('elit', 'JJ'), ('consectetur', 'NN'), ('adipiscing', 'VBG'), ('elit', 'NN'), (',', ','), ('sed', 'VBD'), ('eiusmod', 'JJ'), ('tempor', 'NN'), ('incididunt', 'NN'), ('ut', 'JJ'), ('labore', 'NN'), ('et', 'NN'), ('dolore', 'NN'), ('magna', 'NN'), ('aliqua', 'NN'), ('.', '.')]
+
+ (S
+  (NP W3.CSS/NNP Template/NNP Gourmet/NNP au/NN)
+  Catering/VBG
+  About/IN
+  (NP Menu/NNP Contact/NNP Le/NNP)
+  Catering/VBG
+  About/IN
+  (NP Catering/NNP Tradition/NNP)
+  since/IN
+  1889/CD
+  (NP The/DT Catering/NNP)
+  founded/VBD
+  blabla/IN
+  (NP Mr./NNP Smith/NNP)
+  lorem/VBZ
+  (NP ipsum/JJ dolor/NN sit/NN amet/NN)
+  ,/,
+  (NP consectetur/NN)
+  adipiscing/VBG
+  (NP elit/JJ consectetur/NN)
+  adipiscing/VBG
+  (NP elit/NN)
+  ,/,
+  sed/VBD
+  (NP eiusmod/JJ tempor/NN incididunt/NN)
+  (NP ut/JJ labore/NN et/NN dolore/NN magna/NN aliqua/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['W3.CSS Template Gourmet au', 'Menu Contact Le', 'Catering Tradition', 'The Catering', 'Mr. Smith', 'ipsum dolor sit amet', 'consectetur', 'elit consectetur', 'elit', 'eiusmod tempor incididunt', 'ut labore et dolore magna aliqua']
+
+>> Named Entities are: 
+ [('PERSON', 'Menu Contact Le'), ('ORGANIZATION', 'Catering'), ('ORGANIZATION', 'Catering'), ('PERSON', 'Mr. Smith')] 
+
+>> Stemming using Porter Stemmer: 
+ [('W3.CSS', 'w3.css'), ('Template', 'templat'), ('Gourmet', 'gourmet'), ('au', 'au'), ('Catering', 'cater'), ('About', 'about'), ('Menu', 'menu'), ('Contact', 'contact'), ('Le', 'le'), ('Catering', 'cater'), ('About', 'about'), ('Catering', 'cater'), ('Tradition', 'tradit'), ('since', 'sinc'), ('1889', '1889'), ('The', 'the'), ('Catering', 'cater'), ('founded', 'found'), ('blabla', 'blabla'), ('Mr.', 'mr.'), ('Smith', 'smith'), ('lorem', 'lorem'), ('ipsum', 'ipsum'), ('dolor', 'dolor'), ('sit', 'sit'), ('amet', 'amet'), (',', ','), ('consectetur', 'consectetur'), ('adipiscing', 'adipisc'), ('elit', 'elit'), ('consectetur', 'consectetur'), ('adipiscing', 'adipisc'), ('elit', 'elit'), (',', ','), ('sed', 'sed'), ('eiusmod', 'eiusmod'), ('tempor', 'tempor'), ('incididunt', 'incididunt'), ('ut', 'ut'), ('labore', 'labor'), ('et', 'et'), ('dolore', 'dolor'), ('magna', 'magna'), ('aliqua', 'aliqua'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('W3.CSS', 'w3.css'), ('Template', 'templat'), ('Gourmet', 'gourmet'), ('au', 'au'), ('Catering', 'cater'), ('About', 'about'), ('Menu', 'menu'), ('Contact', 'contact'), ('Le', 'le'), ('Catering', 'cater'), ('About', 'about'), ('Catering', 'cater'), ('Tradition', 'tradit'), ('since', 'sinc'), ('1889', '1889'), ('The', 'the'), ('Catering', 'cater'), ('founded', 'found'), ('blabla', 'blabla'), ('Mr.', 'mr.'), ('Smith', 'smith'), ('lorem', 'lorem'), ('ipsum', 'ipsum'), ('dolor', 'dolor'), ('sit', 'sit'), ('amet', 'amet'), (',', ','), ('consectetur', 'consectetur'), ('adipiscing', 'adipisc'), ('elit', 'elit'), ('consectetur', 'consectetur'), ('adipiscing', 'adipisc'), ('elit', 'elit'), (',', ','), ('sed', 'sed'), ('eiusmod', 'eiusmod'), ('tempor', 'tempor'), ('incididunt', 'incididunt'), ('ut', 'ut'), ('labore', 'labor'), ('et', 'et'), ('dolore', 'dolor'), ('magna', 'magna'), ('aliqua', 'aliqua'), ('.', '.')]
+
+>> Lemmatization: 
+ [('W3.CSS', 'W3.CSS'), ('Template', 'Template'), ('Gourmet', 'Gourmet'), ('au', 'au'), ('Catering', 'Catering'), ('About', 'About'), ('Menu', 'Menu'), ('Contact', 'Contact'), ('Le', 'Le'), ('Catering', 'Catering'), ('About', 'About'), ('Catering', 'Catering'), ('Tradition', 'Tradition'), ('since', 'since'), ('1889', '1889'), ('The', 'The'), ('Catering', 'Catering'), ('founded', 'founded'), ('blabla', 'blabla'), ('Mr.', 'Mr.'), ('Smith', 'Smith'), ('lorem', 'lorem'), ('ipsum', 'ipsum'), ('dolor', 'dolor'), ('sit', 'sit'), ('amet', 'amet'), (',', ','), ('consectetur', 'consectetur'), ('adipiscing', 'adipiscing'), ('elit', 'elit'), ('consectetur', 'consectetur'), ('adipiscing', 'adipiscing'), ('elit', 'elit'), (',', ','), ('sed', 'sed'), ('eiusmod', 'eiusmod'), ('tempor', 'tempor'), ('incididunt', 'incididunt'), ('ut', 'ut'), ('labore', 'labore'), ('et', 'et'), ('dolore', 'dolore'), ('magna', 'magna'), ('aliqua', 'aliqua'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+
+>> Tokens are: 
+ ['Ut', 'enim', 'ad', 'minim', 'veniam', ',', 'quis', 'nostrud', 'exercitation', 'ullamco', 'laboris', 'nisi', 'ut', 'aliquip', 'ex', 'ea', 'commodo', 'consequat', '.']
+
+>> Bigrams are: 
+ [('Ut', 'enim'), ('enim', 'ad'), ('ad', 'minim'), ('minim', 'veniam'), ('veniam', ','), (',', 'quis'), ('quis', 'nostrud'), ('nostrud', 'exercitation'), ('exercitation', 'ullamco'), ('ullamco', 'laboris'), ('laboris', 'nisi'), ('nisi', 'ut'), ('ut', 'aliquip'), ('aliquip', 'ex'), ('ex', 'ea'), ('ea', 'commodo'), ('commodo', 'consequat'), ('consequat', '.')]
+
+>> Trigrams are: 
+ [('Ut', 'enim', 'ad'), ('enim', 'ad', 'minim'), ('ad', 'minim', 'veniam'), ('minim', 'veniam', ','), ('veniam', ',', 'quis'), (',', 'quis', 'nostrud'), ('quis', 'nostrud', 'exercitation'), ('nostrud', 'exercitation', 'ullamco'), ('exercitation', 'ullamco', 'laboris'), ('ullamco', 'laboris', 'nisi'), ('laboris', 'nisi', 'ut'), ('nisi', 'ut', 'aliquip'), ('ut', 'aliquip', 'ex'), ('aliquip', 'ex', 'ea'), ('ex', 'ea', 'commodo'), ('ea', 'commodo', 'consequat'), ('commodo', 'consequat', '.')]
+
+>> POS Tags are: 
+ [('Ut', 'NNP'), ('enim', 'NN'), ('ad', 'NN'), ('minim', 'NN'), ('veniam', 'NN'), (',', ','), ('quis', 'JJ'), ('nostrud', 'JJ'), ('exercitation', 'NN'), ('ullamco', 'JJ'), ('laboris', 'NN'), ('nisi', 'JJ'), ('ut', 'JJ'), ('aliquip', 'NN'), ('ex', 'NN'), ('ea', 'FW'), ('commodo', 'NN'), ('consequat', 'NN'), ('.', '.')]
+
+ (S
+  (NP Ut/NNP enim/NN ad/NN minim/NN veniam/NN)
+  ,/,
+  (NP quis/JJ nostrud/JJ exercitation/NN)
+  (NP ullamco/JJ laboris/NN)
+  (NP nisi/JJ ut/JJ aliquip/NN ex/NN)
+  ea/FW
+  (NP commodo/NN consequat/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Ut enim ad minim veniam', 'quis nostrud exercitation', 'ullamco laboris', 'nisi ut aliquip ex', 'commodo consequat']
+
+>> Named Entities are: 
+ [('GPE', 'Ut')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Ut', 'ut'), ('enim', 'enim'), ('ad', 'ad'), ('minim', 'minim'), ('veniam', 'veniam'), (',', ','), ('quis', 'qui'), ('nostrud', 'nostrud'), ('exercitation', 'exercit'), ('ullamco', 'ullamco'), ('laboris', 'labori'), ('nisi', 'nisi'), ('ut', 'ut'), ('aliquip', 'aliquip'), ('ex', 'ex'), ('ea', 'ea'), ('commodo', 'commodo'), ('consequat', 'consequat'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Ut', 'ut'), ('enim', 'enim'), ('ad', 'ad'), ('minim', 'minim'), ('veniam', 'veniam'), (',', ','), ('quis', 'qui'), ('nostrud', 'nostrud'), ('exercitation', 'exercit'), ('ullamco', 'ullamco'), ('laboris', 'labori'), ('nisi', 'nisi'), ('ut', 'ut'), ('aliquip', 'aliquip'), ('ex', 'ex'), ('ea', 'ea'), ('commodo', 'commodo'), ('consequat', 'consequat'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Ut', 'Ut'), ('enim', 'enim'), ('ad', 'ad'), ('minim', 'minim'), ('veniam', 'veniam'), (',', ','), ('quis', 'quis'), ('nostrud', 'nostrud'), ('exercitation', 'exercitation'), ('ullamco', 'ullamco'), ('laboris', 'laboris'), ('nisi', 'nisi'), ('ut', 'ut'), ('aliquip', 'aliquip'), ('ex', 'ex'), ('ea', 'ea'), ('commodo', 'commodo'), ('consequat', 'consequat'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients. 
+
+
+>> Tokens are: 
+ ['Duis', 'aute', 'iruredolor', 'reprehenderit', 'voluptate', 'velit', 'esse', 'cillum', 'dolore', 'eu', 'fugiat', 'nulla', 'pariatur.We', 'use', 'seasonal', 'ingredients', '.']
+
+>> Bigrams are: 
+ [('Duis', 'aute'), ('aute', 'iruredolor'), ('iruredolor', 'reprehenderit'), ('reprehenderit', 'voluptate'), ('voluptate', 'velit'), ('velit', 'esse'), ('esse', 'cillum'), ('cillum', 'dolore'), ('dolore', 'eu'), ('eu', 'fugiat'), ('fugiat', 'nulla'), ('nulla', 'pariatur.We'), ('pariatur.We', 'use'), ('use', 'seasonal'), ('seasonal', 'ingredients'), ('ingredients', '.')]
+
+>> Trigrams are: 
+ [('Duis', 'aute', 'iruredolor'), ('aute', 'iruredolor', 'reprehenderit'), ('iruredolor', 'reprehenderit', 'voluptate'), ('reprehenderit', 'voluptate', 'velit'), ('voluptate', 'velit', 'esse'), ('velit', 'esse', 'cillum'), ('esse', 'cillum', 'dolore'), ('cillum', 'dolore', 'eu'), ('dolore', 'eu', 'fugiat'), ('eu', 'fugiat', 'nulla'), ('fugiat', 'nulla', 'pariatur.We'), ('nulla', 'pariatur.We', 'use'), ('pariatur.We', 'use', 'seasonal'), ('use', 'seasonal', 'ingredients'), ('seasonal', 'ingredients', '.')]
+
+>> POS Tags are: 
+ [('Duis', 'NNP'), ('aute', 'NN'), ('iruredolor', 'NN'), ('reprehenderit', 'NN'), ('voluptate', 'NN'), ('velit', 'NN'), ('esse', 'NN'), ('cillum', 'NN'), ('dolore', 'NN'), ('eu', 'JJ'), ('fugiat', 'NN'), ('nulla', 'NN'), ('pariatur.We', 'NN'), ('use', 'VBP'), ('seasonal', 'JJ'), ('ingredients', 'NNS'), ('.', '.')]
+
+ (S
+  (NP
+    Duis/NNP
+    aute/NN
+    iruredolor/NN
+    reprehenderit/NN
+    voluptate/NN
+    velit/NN
+    esse/NN
+    cillum/NN
+    dolore/NN)
+  (NP eu/JJ fugiat/NN nulla/NN pariatur.We/NN)
+  use/VBP
+  (NP seasonal/JJ ingredients/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Duis aute iruredolor reprehenderit voluptate velit esse cillum dolore', 'eu fugiat nulla pariatur.We', 'seasonal ingredients']
+
+>> Named Entities are: 
+ [('GPE', 'Duis')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Duis', 'dui'), ('aute', 'aut'), ('iruredolor', 'iruredolor'), ('reprehenderit', 'reprehenderit'), ('voluptate', 'volupt'), ('velit', 'velit'), ('esse', 'ess'), ('cillum', 'cillum'), ('dolore', 'dolor'), ('eu', 'eu'), ('fugiat', 'fugiat'), ('nulla', 'nulla'), ('pariatur.We', 'pariatur.w'), ('use', 'use'), ('seasonal', 'season'), ('ingredients', 'ingredi'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Duis', 'dui'), ('aute', 'aut'), ('iruredolor', 'iruredolor'), ('reprehenderit', 'reprehenderit'), ('voluptate', 'volupt'), ('velit', 'velit'), ('esse', 'ess'), ('cillum', 'cillum'), ('dolore', 'dolor'), ('eu', 'eu'), ('fugiat', 'fugiat'), ('nulla', 'nulla'), ('pariatur.We', 'pariatur.w'), ('use', 'use'), ('seasonal', 'season'), ('ingredients', 'ingredi'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Duis', 'Duis'), ('aute', 'aute'), ('iruredolor', 'iruredolor'), ('reprehenderit', 'reprehenderit'), ('voluptate', 'voluptate'), ('velit', 'velit'), ('esse', 'esse'), ('cillum', 'cillum'), ('dolore', 'dolore'), ('eu', 'eu'), ('fugiat', 'fugiat'), ('nulla', 'nulla'), ('pariatur.We', 'pariatur.We'), ('use', 'use'), ('seasonal', 'seasonal'), ('ingredients', 'ingredient'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. 
+
+
+>> Tokens are: 
+ ['Excepteur', 'sint', 'occaecat', 'cupidatat', 'non', 'proident', ',', 'sunt', 'culpa', 'qui', 'officia', 'deserunt', 'mollit', 'anim', 'id', 'est', 'laborum', 'consectetur', 'adipiscing', 'elit', ',', 'sed', 'eiusmod', 'temporincididunt', 'ut', 'labore', 'et', 'dolore', 'magna', 'aliqua', '.']
+
+>> Bigrams are: 
+ [('Excepteur', 'sint'), ('sint', 'occaecat'), ('occaecat', 'cupidatat'), ('cupidatat', 'non'), ('non', 'proident'), ('proident', ','), (',', 'sunt'), ('sunt', 'culpa'), ('culpa', 'qui'), ('qui', 'officia'), ('officia', 'deserunt'), ('deserunt', 'mollit'), ('mollit', 'anim'), ('anim', 'id'), ('id', 'est'), ('est', 'laborum'), ('laborum', 'consectetur'), ('consectetur', 'adipiscing'), ('adipiscing', 'elit'), ('elit', ','), (',', 'sed'), ('sed', 'eiusmod'), ('eiusmod', 'temporincididunt'), ('temporincididunt', 'ut'), ('ut', 'labore'), ('labore', 'et'), ('et', 'dolore'), ('dolore', 'magna'), ('magna', 'aliqua'), ('aliqua', '.')]
+
+>> Trigrams are: 
+ [('Excepteur', 'sint', 'occaecat'), ('sint', 'occaecat', 'cupidatat'), ('occaecat', 'cupidatat', 'non'), ('cupidatat', 'non', 'proident'), ('non', 'proident', ','), ('proident', ',', 'sunt'), (',', 'sunt', 'culpa'), ('sunt', 'culpa', 'qui'), ('culpa', 'qui', 'officia'), ('qui', 'officia', 'deserunt'), ('officia', 'deserunt', 'mollit'), ('deserunt', 'mollit', 'anim'), ('mollit', 'anim', 'id'), ('anim', 'id', 'est'), ('id', 'est', 'laborum'), ('est', 'laborum', 'consectetur'), ('laborum', 'consectetur', 'adipiscing'), ('consectetur', 'adipiscing', 'elit'), ('adipiscing', 'elit', ','), ('elit', ',', 'sed'), (',', 'sed', 'eiusmod'), ('sed', 'eiusmod', 'temporincididunt'), ('eiusmod', 'temporincididunt', 'ut'), ('temporincididunt', 'ut', 'labore'), ('ut', 'labore', 'et'), ('labore', 'et', 'dolore'), ('et', 'dolore', 'magna'), ('dolore', 'magna', 'aliqua'), ('magna', 'aliqua', '.')]
+
+>> POS Tags are: 
+ [('Excepteur', 'NNP'), ('sint', 'NN'), ('occaecat', 'NN'), ('cupidatat', 'NN'), ('non', 'JJ'), ('proident', 'NN'), (',', ','), ('sunt', 'NN'), ('culpa', 'NN'), ('qui', 'NN'), ('officia', 'NN'), ('deserunt', 'NN'), ('mollit', 'NN'), ('anim', 'NN'), ('id', 'NN'), ('est', 'JJS'), ('laborum', 'NN'), ('consectetur', 'NN'), ('adipiscing', 'VBG'), ('elit', 'NN'), (',', ','), ('sed', 'VBD'), ('eiusmod', 'JJ'), ('temporincididunt', 'NN'), ('ut', 'JJ'), ('labore', 'NN'), ('et', 'NN'), ('dolore', 'NN'), ('magna', 'NN'), ('aliqua', 'NN'), ('.', '.')]
+
+ (S
+  (NP Excepteur/NNP sint/NN occaecat/NN cupidatat/NN)
+  (NP non/JJ proident/NN)
+  ,/,
+  (NP
+    sunt/NN
+    culpa/NN
+    qui/NN
+    officia/NN
+    deserunt/NN
+    mollit/NN
+    anim/NN
+    id/NN)
+  est/JJS
+  (NP laborum/NN consectetur/NN)
+  adipiscing/VBG
+  (NP elit/NN)
+  ,/,
+  sed/VBD
+  (NP eiusmod/JJ temporincididunt/NN)
+  (NP ut/JJ labore/NN et/NN dolore/NN magna/NN aliqua/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Excepteur sint occaecat cupidatat', 'non proident', 'sunt culpa qui officia deserunt mollit anim id', 'laborum consectetur', 'elit', 'eiusmod temporincididunt', 'ut labore et dolore magna aliqua']
+
+>> Named Entities are: 
+ [('GPE', 'Excepteur')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Excepteur', 'excepteur'), ('sint', 'sint'), ('occaecat', 'occaecat'), ('cupidatat', 'cupidatat'), ('non', 'non'), ('proident', 'proident'), (',', ','), ('sunt', 'sunt'), ('culpa', 'culpa'), ('qui', 'qui'), ('officia', 'officia'), ('deserunt', 'deserunt'), ('mollit', 'mollit'), ('anim', 'anim'), ('id', 'id'), ('est', 'est'), ('laborum', 'laborum'), ('consectetur', 'consectetur'), ('adipiscing', 'adipisc'), ('elit', 'elit'), (',', ','), ('sed', 'sed'), ('eiusmod', 'eiusmod'), ('temporincididunt', 'temporincididunt'), ('ut', 'ut'), ('labore', 'labor'), ('et', 'et'), ('dolore', 'dolor'), ('magna', 'magna'), ('aliqua', 'aliqua'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Excepteur', 'excepteur'), ('sint', 'sint'), ('occaecat', 'occaecat'), ('cupidatat', 'cupidatat'), ('non', 'non'), ('proident', 'proident'), (',', ','), ('sunt', 'sunt'), ('culpa', 'culpa'), ('qui', 'qui'), ('officia', 'officia'), ('deserunt', 'deserunt'), ('mollit', 'mollit'), ('anim', 'anim'), ('id', 'id'), ('est', 'est'), ('laborum', 'laborum'), ('consectetur', 'consectetur'), ('adipiscing', 'adipisc'), ('elit', 'elit'), (',', ','), ('sed', 'sed'), ('eiusmod', 'eiusmod'), ('temporincididunt', 'temporincididunt'), ('ut', 'ut'), ('labore', 'labor'), ('et', 'et'), ('dolore', 'dolor'), ('magna', 'magna'), ('aliqua', 'aliqua'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Excepteur', 'Excepteur'), ('sint', 'sint'), ('occaecat', 'occaecat'), ('cupidatat', 'cupidatat'), ('non', 'non'), ('proident', 'proident'), (',', ','), ('sunt', 'sunt'), ('culpa', 'culpa'), ('qui', 'qui'), ('officia', 'officia'), ('deserunt', 'deserunt'), ('mollit', 'mollit'), ('anim', 'anim'), ('id', 'id'), ('est', 'est'), ('laborum', 'laborum'), ('consectetur', 'consectetur'), ('adipiscing', 'adipiscing'), ('elit', 'elit'), (',', ','), ('sed', 'sed'), ('eiusmod', 'eiusmod'), ('temporincididunt', 'temporincididunt'), ('ut', 'ut'), ('labore', 'labore'), ('et', 'et'), ('dolore', 'dolore'), ('magna', 'magna'), ('aliqua', 'aliqua'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+
+>> Tokens are: 
+ ['Ut', 'enim', 'ad', 'minim', 'veniam', ',', 'quis', 'nostrud', 'exercitation', 'ullamco', 'laboris', 'nisi', 'ut', 'aliquip', 'ex', 'ea', 'commodo', 'consequat', '.']
+
+>> Bigrams are: 
+ [('Ut', 'enim'), ('enim', 'ad'), ('ad', 'minim'), ('minim', 'veniam'), ('veniam', ','), (',', 'quis'), ('quis', 'nostrud'), ('nostrud', 'exercitation'), ('exercitation', 'ullamco'), ('ullamco', 'laboris'), ('laboris', 'nisi'), ('nisi', 'ut'), ('ut', 'aliquip'), ('aliquip', 'ex'), ('ex', 'ea'), ('ea', 'commodo'), ('commodo', 'consequat'), ('consequat', '.')]
+
+>> Trigrams are: 
+ [('Ut', 'enim', 'ad'), ('enim', 'ad', 'minim'), ('ad', 'minim', 'veniam'), ('minim', 'veniam', ','), ('veniam', ',', 'quis'), (',', 'quis', 'nostrud'), ('quis', 'nostrud', 'exercitation'), ('nostrud', 'exercitation', 'ullamco'), ('exercitation', 'ullamco', 'laboris'), ('ullamco', 'laboris', 'nisi'), ('laboris', 'nisi', 'ut'), ('nisi', 'ut', 'aliquip'), ('ut', 'aliquip', 'ex'), ('aliquip', 'ex', 'ea'), ('ex', 'ea', 'commodo'), ('ea', 'commodo', 'consequat'), ('commodo', 'consequat', '.')]
+
+>> POS Tags are: 
+ [('Ut', 'NNP'), ('enim', 'NN'), ('ad', 'NN'), ('minim', 'NN'), ('veniam', 'NN'), (',', ','), ('quis', 'JJ'), ('nostrud', 'JJ'), ('exercitation', 'NN'), ('ullamco', 'JJ'), ('laboris', 'NN'), ('nisi', 'JJ'), ('ut', 'JJ'), ('aliquip', 'NN'), ('ex', 'NN'), ('ea', 'FW'), ('commodo', 'NN'), ('consequat', 'NN'), ('.', '.')]
+
+ (S
+  (NP Ut/NNP enim/NN ad/NN minim/NN veniam/NN)
+  ,/,
+  (NP quis/JJ nostrud/JJ exercitation/NN)
+  (NP ullamco/JJ laboris/NN)
+  (NP nisi/JJ ut/JJ aliquip/NN ex/NN)
+  ea/FW
+  (NP commodo/NN consequat/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Ut enim ad minim veniam', 'quis nostrud exercitation', 'ullamco laboris', 'nisi ut aliquip ex', 'commodo consequat']
+
+>> Named Entities are: 
+ [('GPE', 'Ut')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Ut', 'ut'), ('enim', 'enim'), ('ad', 'ad'), ('minim', 'minim'), ('veniam', 'veniam'), (',', ','), ('quis', 'qui'), ('nostrud', 'nostrud'), ('exercitation', 'exercit'), ('ullamco', 'ullamco'), ('laboris', 'labori'), ('nisi', 'nisi'), ('ut', 'ut'), ('aliquip', 'aliquip'), ('ex', 'ex'), ('ea', 'ea'), ('commodo', 'commodo'), ('consequat', 'consequat'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Ut', 'ut'), ('enim', 'enim'), ('ad', 'ad'), ('minim', 'minim'), ('veniam', 'veniam'), (',', ','), ('quis', 'qui'), ('nostrud', 'nostrud'), ('exercitation', 'exercit'), ('ullamco', 'ullamco'), ('laboris', 'labori'), ('nisi', 'nisi'), ('ut', 'ut'), ('aliquip', 'aliquip'), ('ex', 'ex'), ('ea', 'ea'), ('commodo', 'commodo'), ('consequat', 'consequat'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Ut', 'Ut'), ('enim', 'enim'), ('ad', 'ad'), ('minim', 'minim'), ('veniam', 'veniam'), (',', ','), ('quis', 'quis'), ('nostrud', 'nostrud'), ('exercitation', 'exercitation'), ('ullamco', 'ullamco'), ('laboris', 'laboris'), ('nisi', 'nisi'), ('ut', 'ut'), ('aliquip', 'aliquip'), ('ex', 'ex'), ('ea', 'ea'), ('commodo', 'commodo'), ('consequat', 'consequat'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+Our Menu         Bread Basket        Assortment of fresh baked fruit breads and muffins 5.50              Honey Almond Granola with Fruits        Natural cereal of honey toasted oats, raisins, almonds and dates 7.00              Belgian Waffle        Vanilla flavored batter with malted flour 7.50              Scrambled eggs        Scrambled eggs, roasted red pepper and garlic, with green onions 7.50              Blueberry Pancakes        With syrup, butter and lots of berries 8.50                                                       Contact       We offer full-service catering for any event, large or small. 
+
+
+>> Tokens are: 
+ ['Our', 'Menu', 'Bread', 'Basket', 'Assortment', 'fresh', 'baked', 'fruit', 'breads', 'muffins', '5.50', 'Honey', 'Almond', 'Granola', 'Fruits', 'Natural', 'cereal', 'honey', 'toasted', 'oats', ',', 'raisins', ',', 'almonds', 'dates', '7.00', 'Belgian', 'Waffle', 'Vanilla', 'flavored', 'batter', 'malted', 'flour', '7.50', 'Scrambled', 'eggs', 'Scrambled', 'eggs', ',', 'roasted', 'red', 'pepper', 'garlic', ',', 'green', 'onions', '7.50', 'Blueberry', 'Pancakes', 'With', 'syrup', ',', 'butter', 'lots', 'berries', '8.50', 'Contact', 'We', 'offer', 'full-service', 'catering', 'event', ',', 'large', 'small', '.']
+
+>> Bigrams are: 
+ [('Our', 'Menu'), ('Menu', 'Bread'), ('Bread', 'Basket'), ('Basket', 'Assortment'), ('Assortment', 'fresh'), ('fresh', 'baked'), ('baked', 'fruit'), ('fruit', 'breads'), ('breads', 'muffins'), ('muffins', '5.50'), ('5.50', 'Honey'), ('Honey', 'Almond'), ('Almond', 'Granola'), ('Granola', 'Fruits'), ('Fruits', 'Natural'), ('Natural', 'cereal'), ('cereal', 'honey'), ('honey', 'toasted'), ('toasted', 'oats'), ('oats', ','), (',', 'raisins'), ('raisins', ','), (',', 'almonds'), ('almonds', 'dates'), ('dates', '7.00'), ('7.00', 'Belgian'), ('Belgian', 'Waffle'), ('Waffle', 'Vanilla'), ('Vanilla', 'flavored'), ('flavored', 'batter'), ('batter', 'malted'), ('malted', 'flour'), ('flour', '7.50'), ('7.50', 'Scrambled'), ('Scrambled', 'eggs'), ('eggs', 'Scrambled'), ('Scrambled', 'eggs'), ('eggs', ','), (',', 'roasted'), ('roasted', 'red'), ('red', 'pepper'), ('pepper', 'garlic'), ('garlic', ','), (',', 'green'), ('green', 'onions'), ('onions', '7.50'), ('7.50', 'Blueberry'), ('Blueberry', 'Pancakes'), ('Pancakes', 'With'), ('With', 'syrup'), ('syrup', ','), (',', 'butter'), ('butter', 'lots'), ('lots', 'berries'), ('berries', '8.50'), ('8.50', 'Contact'), ('Contact', 'We'), ('We', 'offer'), ('offer', 'full-service'), ('full-service', 'catering'), ('catering', 'event'), ('event', ','), (',', 'large'), ('large', 'small'), ('small', '.')]
+
+>> Trigrams are: 
+ [('Our', 'Menu', 'Bread'), ('Menu', 'Bread', 'Basket'), ('Bread', 'Basket', 'Assortment'), ('Basket', 'Assortment', 'fresh'), ('Assortment', 'fresh', 'baked'), ('fresh', 'baked', 'fruit'), ('baked', 'fruit', 'breads'), ('fruit', 'breads', 'muffins'), ('breads', 'muffins', '5.50'), ('muffins', '5.50', 'Honey'), ('5.50', 'Honey', 'Almond'), ('Honey', 'Almond', 'Granola'), ('Almond', 'Granola', 'Fruits'), ('Granola', 'Fruits', 'Natural'), ('Fruits', 'Natural', 'cereal'), ('Natural', 'cereal', 'honey'), ('cereal', 'honey', 'toasted'), ('honey', 'toasted', 'oats'), ('toasted', 'oats', ','), ('oats', ',', 'raisins'), (',', 'raisins', ','), ('raisins', ',', 'almonds'), (',', 'almonds', 'dates'), ('almonds', 'dates', '7.00'), ('dates', '7.00', 'Belgian'), ('7.00', 'Belgian', 'Waffle'), ('Belgian', 'Waffle', 'Vanilla'), ('Waffle', 'Vanilla', 'flavored'), ('Vanilla', 'flavored', 'batter'), ('flavored', 'batter', 'malted'), ('batter', 'malted', 'flour'), ('malted', 'flour', '7.50'), ('flour', '7.50', 'Scrambled'), ('7.50', 'Scrambled', 'eggs'), ('Scrambled', 'eggs', 'Scrambled'), ('eggs', 'Scrambled', 'eggs'), ('Scrambled', 'eggs', ','), ('eggs', ',', 'roasted'), (',', 'roasted', 'red'), ('roasted', 'red', 'pepper'), ('red', 'pepper', 'garlic'), ('pepper', 'garlic', ','), ('garlic', ',', 'green'), (',', 'green', 'onions'), ('green', 'onions', '7.50'), ('onions', '7.50', 'Blueberry'), ('7.50', 'Blueberry', 'Pancakes'), ('Blueberry', 'Pancakes', 'With'), ('Pancakes', 'With', 'syrup'), ('With', 'syrup', ','), ('syrup', ',', 'butter'), (',', 'butter', 'lots'), ('butter', 'lots', 'berries'), ('lots', 'berries', '8.50'), ('berries', '8.50', 'Contact'), ('8.50', 'Contact', 'We'), ('Contact', 'We', 'offer'), ('We', 'offer', 'full-service'), ('offer', 'full-service', 'catering'), ('full-service', 'catering', 'event'), ('catering', 'event', ','), ('event', ',', 'large'), (',', 'large', 'small'), ('large', 'small', '.')]
+
+>> POS Tags are: 
+ [('Our', 'PRP$'), ('Menu', 'NNP'), ('Bread', 'NNP'), ('Basket', 'NNP'), ('Assortment', 'NNP'), ('fresh', 'JJ'), ('baked', 'VBD'), ('fruit', 'NN'), ('breads', 'NNS'), ('muffins', 'VBZ'), ('5.50', 'CD'), ('Honey', 'NNP'), ('Almond', 'NNP'), ('Granola', 'NNP'), ('Fruits', 'NNP'), ('Natural', 'NNP'), ('cereal', 'NN'), ('honey', 'NN'), ('toasted', 'VBD'), ('oats', 'NNS'), (',', ','), ('raisins', 'NNS'), (',', ','), ('almonds', 'VBZ'), ('dates', 'NNS'), ('7.00', 'CD'), ('Belgian', 'JJ'), ('Waffle', 'NNP'), ('Vanilla', 'NNP'), ('flavored', 'VBD'), ('batter', 'RB'), ('malted', 'VBN'), ('flour', 'JJ'), ('7.50', 'CD'), ('Scrambled', 'NNP'), ('eggs', 'NNS'), ('Scrambled', 'NNP'), ('eggs', 'NNS'), (',', ','), ('roasted', 'VBN'), ('red', 'JJ'), ('pepper', 'NN'), ('garlic', 'NN'), (',', ','), ('green', 'JJ'), ('onions', 'NNS'), ('7.50', 'CD'), ('Blueberry', 'NNP'), ('Pancakes', 'NNP'), ('With', 'IN'), ('syrup', 'NN'), (',', ','), ('butter', 'NN'), ('lots', 'NNS'), ('berries', 'VBZ'), ('8.50', 'CD'), ('Contact', 'NN'), ('We', 'PRP'), ('offer', 'VBP'), ('full-service', 'JJ'), ('catering', 'NN'), ('event', 'NN'), (',', ','), ('large', 'JJ'), ('small', 'JJ'), ('.', '.')]
+
+ (S
+  Our/PRP$
+  (NP Menu/NNP Bread/NNP Basket/NNP Assortment/NNP)
+  fresh/JJ
+  baked/VBD
+  (NP fruit/NN breads/NNS)
+  muffins/VBZ
+  5.50/CD
+  (NP
+    Honey/NNP
+    Almond/NNP
+    Granola/NNP
+    Fruits/NNP
+    Natural/NNP
+    cereal/NN
+    honey/NN)
+  toasted/VBD
+  (NP oats/NNS)
+  ,/,
+  (NP raisins/NNS)
+  ,/,
+  almonds/VBZ
+  (NP dates/NNS)
+  7.00/CD
+  (NP Belgian/JJ Waffle/NNP Vanilla/NNP)
+  flavored/VBD
+  batter/RB
+  malted/VBN
+  flour/JJ
+  7.50/CD
+  (NP Scrambled/NNP eggs/NNS Scrambled/NNP eggs/NNS)
+  ,/,
+  roasted/VBN
+  (NP red/JJ pepper/NN garlic/NN)
+  ,/,
+  (NP green/JJ onions/NNS)
+  7.50/CD
+  (NP Blueberry/NNP Pancakes/NNP)
+  With/IN
+  (NP syrup/NN)
+  ,/,
+  (NP butter/NN lots/NNS)
+  berries/VBZ
+  8.50/CD
+  (NP Contact/NN)
+  We/PRP
+  offer/VBP
+  (NP full-service/JJ catering/NN event/NN)
+  ,/,
+  large/JJ
+  small/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Menu Bread Basket Assortment', 'fruit breads', 'Honey Almond Granola Fruits Natural cereal honey', 'oats', 'raisins', 'dates', 'Belgian Waffle Vanilla', 'Scrambled eggs Scrambled eggs', 'red pepper garlic', 'green onions', 'Blueberry Pancakes', 'syrup', 'butter lots', 'Contact', 'full-service catering event']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Menu Bread Basket'), ('PERSON', 'Honey Almond Granola Fruits Natural'), ('GPE', 'Belgian'), ('ORGANIZATION', 'Waffle Vanilla'), ('PERSON', 'Blueberry Pancakes')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Our', 'our'), ('Menu', 'menu'), ('Bread', 'bread'), ('Basket', 'basket'), ('Assortment', 'assort'), ('fresh', 'fresh'), ('baked', 'bake'), ('fruit', 'fruit'), ('breads', 'bread'), ('muffins', 'muffin'), ('5.50', '5.50'), ('Honey', 'honey'), ('Almond', 'almond'), ('Granola', 'granola'), ('Fruits', 'fruit'), ('Natural', 'natur'), ('cereal', 'cereal'), ('honey', 'honey'), ('toasted', 'toast'), ('oats', 'oat'), (',', ','), ('raisins', 'raisin'), (',', ','), ('almonds', 'almond'), ('dates', 'date'), ('7.00', '7.00'), ('Belgian', 'belgian'), ('Waffle', 'waffl'), ('Vanilla', 'vanilla'), ('flavored', 'flavor'), ('batter', 'batter'), ('malted', 'malt'), ('flour', 'flour'), ('7.50', '7.50'), ('Scrambled', 'scrambl'), ('eggs', 'egg'), ('Scrambled', 'scrambl'), ('eggs', 'egg'), (',', ','), ('roasted', 'roast'), ('red', 'red'), ('pepper', 'pepper'), ('garlic', 'garlic'), (',', ','), ('green', 'green'), ('onions', 'onion'), ('7.50', '7.50'), ('Blueberry', 'blueberri'), ('Pancakes', 'pancak'), ('With', 'with'), ('syrup', 'syrup'), (',', ','), ('butter', 'butter'), ('lots', 'lot'), ('berries', 'berri'), ('8.50', '8.50'), ('Contact', 'contact'), ('We', 'we'), ('offer', 'offer'), ('full-service', 'full-servic'), ('catering', 'cater'), ('event', 'event'), (',', ','), ('large', 'larg'), ('small', 'small'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Our', 'our'), ('Menu', 'menu'), ('Bread', 'bread'), ('Basket', 'basket'), ('Assortment', 'assort'), ('fresh', 'fresh'), ('baked', 'bake'), ('fruit', 'fruit'), ('breads', 'bread'), ('muffins', 'muffin'), ('5.50', '5.50'), ('Honey', 'honey'), ('Almond', 'almond'), ('Granola', 'granola'), ('Fruits', 'fruit'), ('Natural', 'natur'), ('cereal', 'cereal'), ('honey', 'honey'), ('toasted', 'toast'), ('oats', 'oat'), (',', ','), ('raisins', 'raisin'), (',', ','), ('almonds', 'almond'), ('dates', 'date'), ('7.00', '7.00'), ('Belgian', 'belgian'), ('Waffle', 'waffl'), ('Vanilla', 'vanilla'), ('flavored', 'flavor'), ('batter', 'batter'), ('malted', 'malt'), ('flour', 'flour'), ('7.50', '7.50'), ('Scrambled', 'scrambl'), ('eggs', 'egg'), ('Scrambled', 'scrambl'), ('eggs', 'egg'), (',', ','), ('roasted', 'roast'), ('red', 'red'), ('pepper', 'pepper'), ('garlic', 'garlic'), (',', ','), ('green', 'green'), ('onions', 'onion'), ('7.50', '7.50'), ('Blueberry', 'blueberri'), ('Pancakes', 'pancak'), ('With', 'with'), ('syrup', 'syrup'), (',', ','), ('butter', 'butter'), ('lots', 'lot'), ('berries', 'berri'), ('8.50', '8.50'), ('Contact', 'contact'), ('We', 'we'), ('offer', 'offer'), ('full-service', 'full-servic'), ('catering', 'cater'), ('event', 'event'), (',', ','), ('large', 'larg'), ('small', 'small'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Our', 'Our'), ('Menu', 'Menu'), ('Bread', 'Bread'), ('Basket', 'Basket'), ('Assortment', 'Assortment'), ('fresh', 'fresh'), ('baked', 'baked'), ('fruit', 'fruit'), ('breads', 'bread'), ('muffins', 'muffin'), ('5.50', '5.50'), ('Honey', 'Honey'), ('Almond', 'Almond'), ('Granola', 'Granola'), ('Fruits', 'Fruits'), ('Natural', 'Natural'), ('cereal', 'cereal'), ('honey', 'honey'), ('toasted', 'toasted'), ('oats', 'oat'), (',', ','), ('raisins', 'raisin'), (',', ','), ('almonds', 'almond'), ('dates', 'date'), ('7.00', '7.00'), ('Belgian', 'Belgian'), ('Waffle', 'Waffle'), ('Vanilla', 'Vanilla'), ('flavored', 'flavored'), ('batter', 'batter'), ('malted', 'malted'), ('flour', 'flour'), ('7.50', '7.50'), ('Scrambled', 'Scrambled'), ('eggs', 'egg'), ('Scrambled', 'Scrambled'), ('eggs', 'egg'), (',', ','), ('roasted', 'roasted'), ('red', 'red'), ('pepper', 'pepper'), ('garlic', 'garlic'), (',', ','), ('green', 'green'), ('onions', 'onion'), ('7.50', '7.50'), ('Blueberry', 'Blueberry'), ('Pancakes', 'Pancakes'), ('With', 'With'), ('syrup', 'syrup'), (',', ','), ('butter', 'butter'), ('lots', 'lot'), ('berries', 'berry'), ('8.50', '8.50'), ('Contact', 'Contact'), ('We', 'We'), ('offer', 'offer'), ('full-service', 'full-service'), ('catering', 'catering'), ('event', 'event'), (',', ','), ('large', 'large'), ('small', 'small'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. 
+
+
+>> Tokens are: 
+ ['We', 'understand', 'needs', 'cater', 'food', 'satisfy', 'biggerst', 'criteria', ',', 'look', 'taste', '.']
+
+>> Bigrams are: 
+ [('We', 'understand'), ('understand', 'needs'), ('needs', 'cater'), ('cater', 'food'), ('food', 'satisfy'), ('satisfy', 'biggerst'), ('biggerst', 'criteria'), ('criteria', ','), (',', 'look'), ('look', 'taste'), ('taste', '.')]
+
+>> Trigrams are: 
+ [('We', 'understand', 'needs'), ('understand', 'needs', 'cater'), ('needs', 'cater', 'food'), ('cater', 'food', 'satisfy'), ('food', 'satisfy', 'biggerst'), ('satisfy', 'biggerst', 'criteria'), ('biggerst', 'criteria', ','), ('criteria', ',', 'look'), (',', 'look', 'taste'), ('look', 'taste', '.')]
+
+>> POS Tags are: 
+ [('We', 'PRP'), ('understand', 'VBP'), ('needs', 'NNS'), ('cater', 'VBP'), ('food', 'NN'), ('satisfy', 'NN'), ('biggerst', 'NN'), ('criteria', 'NNS'), (',', ','), ('look', 'VBP'), ('taste', 'NN'), ('.', '.')]
+
+ (S
+  We/PRP
+  understand/VBP
+  (NP needs/NNS)
+  cater/VBP
+  (NP food/NN satisfy/NN biggerst/NN criteria/NNS)
+  ,/,
+  look/VBP
+  (NP taste/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['needs', 'food satisfy biggerst criteria', 'taste']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('We', 'we'), ('understand', 'understand'), ('needs', 'need'), ('cater', 'cater'), ('food', 'food'), ('satisfy', 'satisfi'), ('biggerst', 'biggerst'), ('criteria', 'criteria'), (',', ','), ('look', 'look'), ('taste', 'tast'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('We', 'we'), ('understand', 'understand'), ('needs', 'need'), ('cater', 'cater'), ('food', 'food'), ('satisfy', 'satisfi'), ('biggerst', 'biggerst'), ('criteria', 'criteria'), (',', ','), ('look', 'look'), ('taste', 'tast'), ('.', '.')]
+
+>> Lemmatization: 
+ [('We', 'We'), ('understand', 'understand'), ('needs', 'need'), ('cater', 'cater'), ('food', 'food'), ('satisfy', 'satisfy'), ('biggerst', 'biggerst'), ('criteria', 'criterion'), (',', ','), ('look', 'look'), ('taste', 'taste'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+Do not hesitate to contact us. 
+
+
+>> Tokens are: 
+ ['Do', 'hesitate', 'contact', 'us', '.']
+
+>> Bigrams are: 
+ [('Do', 'hesitate'), ('hesitate', 'contact'), ('contact', 'us'), ('us', '.')]
+
+>> Trigrams are: 
+ [('Do', 'hesitate', 'contact'), ('hesitate', 'contact', 'us'), ('contact', 'us', '.')]
+
+>> POS Tags are: 
+ [('Do', 'VB'), ('hesitate', 'VB'), ('contact', 'VB'), ('us', 'PRP'), ('.', '.')]
+
+ (S Do/VB hesitate/VB contact/VB us/PRP ./.) 
+
+
+>> Noun Phrases are: 
+ []
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Do', 'do'), ('hesitate', 'hesit'), ('contact', 'contact'), ('us', 'us'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Do', 'do'), ('hesitate', 'hesit'), ('contact', 'contact'), ('us', 'us'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Do', 'Do'), ('hesitate', 'hesitate'), ('contact', 'contact'), ('us', 'u'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+Catering Service, 42nd Living St, 43043 New York, NY      You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:                                             SEND MESSAGE                       Powered by w3.css 
+
+
+>> Tokens are: 
+ ['Catering', 'Service', ',', '42nd', 'Living', 'St', ',', '43043', 'New', 'York', ',', 'NY', 'You', 'also', 'contact', 'us', 'phone', '00553123-2323', 'email', 'catering', '@', 'catering.com', ',', 'send', 'us', 'message', ':', 'SEND', 'MESSAGE', 'Powered', 'w3.css']
+
+>> Bigrams are: 
+ [('Catering', 'Service'), ('Service', ','), (',', '42nd'), ('42nd', 'Living'), ('Living', 'St'), ('St', ','), (',', '43043'), ('43043', 'New'), ('New', 'York'), ('York', ','), (',', 'NY'), ('NY', 'You'), ('You', 'also'), ('also', 'contact'), ('contact', 'us'), ('us', 'phone'), ('phone', '00553123-2323'), ('00553123-2323', 'email'), ('email', 'catering'), ('catering', '@'), ('@', 'catering.com'), ('catering.com', ','), (',', 'send'), ('send', 'us'), ('us', 'message'), ('message', ':'), (':', 'SEND'), ('SEND', 'MESSAGE'), ('MESSAGE', 'Powered'), ('Powered', 'w3.css')]
+
+>> Trigrams are: 
+ [('Catering', 'Service', ','), ('Service', ',', '42nd'), (',', '42nd', 'Living'), ('42nd', 'Living', 'St'), ('Living', 'St', ','), ('St', ',', '43043'), (',', '43043', 'New'), ('43043', 'New', 'York'), ('New', 'York', ','), ('York', ',', 'NY'), (',', 'NY', 'You'), ('NY', 'You', 'also'), ('You', 'also', 'contact'), ('also', 'contact', 'us'), ('contact', 'us', 'phone'), ('us', 'phone', '00553123-2323'), ('phone', '00553123-2323', 'email'), ('00553123-2323', 'email', 'catering'), ('email', 'catering', '@'), ('catering', '@', 'catering.com'), ('@', 'catering.com', ','), ('catering.com', ',', 'send'), (',', 'send', 'us'), ('send', 'us', 'message'), ('us', 'message', ':'), ('message', ':', 'SEND'), (':', 'SEND', 'MESSAGE'), ('SEND', 'MESSAGE', 'Powered'), ('MESSAGE', 'Powered', 'w3.css')]
+
+>> POS Tags are: 
+ [('Catering', 'NNP'), ('Service', 'NNP'), (',', ','), ('42nd', 'CD'), ('Living', 'NNP'), ('St', 'NNP'), (',', ','), ('43043', 'CD'), ('New', 'NNP'), ('York', 'NNP'), (',', ','), ('NY', 'NNP'), ('You', 'PRP'), ('also', 'RB'), ('contact', 'VBP'), ('us', 'PRP'), ('phone', 'NN'), ('00553123-2323', 'JJ'), ('email', 'NN'), ('catering', 'NN'), ('@', 'NNP'), ('catering.com', 'NN'), (',', ','), ('send', 'VBP'), ('us', 'PRP'), ('message', 'NN'), (':', ':'), ('SEND', 'JJ'), ('MESSAGE', 'NN'), ('Powered', 'VBD'), ('w3.css', 'NNS')]
+
+ (S
+  (NP Catering/NNP Service/NNP)
+  ,/,
+  42nd/CD
+  (NP Living/NNP St/NNP)
+  ,/,
+  43043/CD
+  (NP New/NNP York/NNP)
+  ,/,
+  (NP NY/NNP)
+  You/PRP
+  also/RB
+  contact/VBP
+  us/PRP
+  (NP phone/NN)
+  (NP 00553123-2323/JJ email/NN catering/NN @/NNP catering.com/NN)
+  ,/,
+  send/VBP
+  us/PRP
+  (NP message/NN)
+  :/:
+  (NP SEND/JJ MESSAGE/NN)
+  Powered/VBD
+  (NP w3.css/NNS)) 
+
+
+>> Noun Phrases are: 
+ ['Catering Service', 'Living St', 'New York', 'NY', 'phone', '00553123-2323 email catering @ catering.com', 'message', 'SEND MESSAGE', 'w3.css']
+
+>> Named Entities are: 
+ [('GPE', 'New York'), ('ORGANIZATION', 'MESSAGE')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Catering', 'cater'), ('Service', 'servic'), (',', ','), ('42nd', '42nd'), ('Living', 'live'), ('St', 'st'), (',', ','), ('43043', '43043'), ('New', 'new'), ('York', 'york'), (',', ','), ('NY', 'ny'), ('You', 'you'), ('also', 'also'), ('contact', 'contact'), ('us', 'us'), ('phone', 'phone'), ('00553123-2323', '00553123-2323'), ('email', 'email'), ('catering', 'cater'), ('@', '@'), ('catering.com', 'catering.com'), (',', ','), ('send', 'send'), ('us', 'us'), ('message', 'messag'), (':', ':'), ('SEND', 'send'), ('MESSAGE', 'messag'), ('Powered', 'power'), ('w3.css', 'w3.css')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Catering', 'cater'), ('Service', 'servic'), (',', ','), ('42nd', '42nd'), ('Living', 'live'), ('St', 'st'), (',', ','), ('43043', '43043'), ('New', 'new'), ('York', 'york'), (',', ','), ('NY', 'ny'), ('You', 'you'), ('also', 'also'), ('contact', 'contact'), ('us', 'us'), ('phone', 'phone'), ('00553123-2323', '00553123-2323'), ('email', 'email'), ('catering', 'cater'), ('@', '@'), ('catering.com', 'catering.com'), (',', ','), ('send', 'send'), ('us', 'us'), ('message', 'messag'), (':', ':'), ('SEND', 'send'), ('MESSAGE', 'messag'), ('Powered', 'power'), ('w3.css', 'w3.css')]
+
+>> Lemmatization: 
+ [('Catering', 'Catering'), ('Service', 'Service'), (',', ','), ('42nd', '42nd'), ('Living', 'Living'), ('St', 'St'), (',', ','), ('43043', '43043'), ('New', 'New'), ('York', 'York'), (',', ','), ('NY', 'NY'), ('You', 'You'), ('also', 'also'), ('contact', 'contact'), ('us', 'u'), ('phone', 'phone'), ('00553123-2323', '00553123-2323'), ('email', 'email'), ('catering', 'catering'), ('@', '@'), ('catering.com', 'catering.com'), (',', ','), ('send', 'send'), ('us', 'u'), ('message', 'message'), (':', ':'), ('SEND', 'SEND'), ('MESSAGE', 'MESSAGE'), ('Powered', 'Powered'), ('w3.css', 'w3.css')]
+

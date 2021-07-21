@@ -1,0 +1,460 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+W3.CSS Template             Gourmet au Catering                 About       Menu       Contact                           
+
+
+>> Tokens are: 
+[W3.CSS, Template,             , Gourmet, au, Catering,                 ,       , Menu,       , Contact,                          ] 
+
+>> PoS Tags are: 
+[('W3.CSS', 'VERB'), ('Template', 'NOUN'), ('            ', 'SPACE'), ('Gourmet', 'PROPN'), ('au', 'PROPN'), ('Catering', 'VERB'), ('                ', 'SPACE'), ('      ', 'SPACE'), ('Menu', 'PROPN'), ('      ', 'SPACE'), ('Contact', 'NOUN'), ('                         ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('W3.CSS', 'amod'), ('Template', 'compound'), ('            ', 'compound'), ('Gourmet', 'compound'), ('au', 'intj'), ('Catering', 'ROOT'), ('                ', 'dobj'), ('      ', 'compound'), ('Menu', 'compound'), ('      ', 'pobj'), ('Contact', 'dep'), ('                         ', 'nummod')]
+
+>> Bigrams: 
+[[W3.CSS, Template], [Template,             ], [            , Gourmet], [Gourmet, au], [au, Catering], [Catering,                 ], [                ,       ], [      , Menu], [Menu,       ], [      , Contact], [Contact,                          ]]
+
+>> Trigrams: 
+[[W3.CSS, Template,             ], [Template,             , Gourmet], [            , Gourmet, au], [Gourmet, au, Catering], [au, Catering,                 ], [Catering,                 ,       ], [                ,       , Menu], [      , Menu,       ], [Menu,       , Contact], [      , Contact,                          ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('W3.CSS Template             Gourmet au Catering                 About       Menu       Contact', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+Le Catering                                              About Catering         Tradition since 1889         
+
+
+>> Tokens are: 
+[Le, Catering,                                              , Catering,         , Tradition, 1889,        ] 
+
+>> PoS Tags are: 
+[('Le', 'PROPN'), ('Catering', 'PROPN'), ('                                             ', 'SPACE'), ('Catering', 'PROPN'), ('        ', 'SPACE'), ('Tradition', 'PROPN'), ('1889', 'NUM'), ('       ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Le', 'compound'), ('Catering', 'compound'), ('                                             ', 'ROOT'), ('Catering', 'compound'), ('        ', 'compound'), ('Tradition', 'pobj'), ('1889', 'nummod'), ('       ', 'pobj')]
+
+>> Bigrams: 
+[[Le, Catering], [Catering,                                              ], [                                             , Catering], [Catering,         ], [        , Tradition], [Tradition, 1889], [1889,        ]]
+
+>> Trigrams: 
+[[Le, Catering,                                              ], [Catering,                                              , Catering], [                                             , Catering,         ], [Catering,         , Tradition], [        , Tradition, 1889], [Tradition, 1889,        ]]
+
+>> Noun Phrases are: 
+[Catering         Tradition]
+
+>> Named Entities are: 
+[('1889', 'DATE')]
+
+
+============================ Sentence 3 =============================
+
+The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+
+>> Tokens are: 
+[Catering, founded, blabla, Mr., Smith, lorem, ipsum, dolor, sit, amet, ,, consectetur, adipiscing, elit, consectetur, adipiscing, elit, ,, sed, eiusmod, tempor, incididunt, ut, labore, et, dolore, magna, aliqua, .] 
+
+>> PoS Tags are: 
+[('Catering', 'PROPN'), ('founded', 'VERB'), ('blabla', 'NOUN'), ('Mr.', 'PROPN'), ('Smith', 'PROPN'), ('lorem', 'ADJ'), ('ipsum', 'NOUN'), ('dolor', 'NOUN'), ('sit', 'VERB'), ('amet', 'NOUN'), (',', 'PUNCT'), ('consectetur', 'NOUN'), ('adipiscing', 'VERB'), ('elit', 'ADJ'), ('consectetur', 'NOUN'), ('adipiscing', 'NOUN'), ('elit', 'NOUN'), (',', 'PUNCT'), ('sed', 'VERB'), ('eiusmod', 'VERB'), ('tempor', 'NOUN'), ('incididunt', 'NOUN'), ('ut', 'ADP'), ('labore', 'NOUN'), ('et', 'NOUN'), ('dolore', 'NOUN'), ('magna', 'ADJ'), ('aliqua', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Catering', 'nsubjpass'), ('founded', 'ROOT'), ('blabla', 'pobj'), ('Mr.', 'compound'), ('Smith', 'pobj'), ('lorem', 'amod'), ('ipsum', 'compound'), ('dolor', 'pobj'), ('sit', 'conj'), ('amet', 'dobj'), (',', 'punct'), ('consectetur', 'npadvmod'), ('adipiscing', 'amod'), ('elit', 'amod'), ('consectetur', 'compound'), ('adipiscing', 'compound'), ('elit', 'advcl'), (',', 'punct'), ('sed', 'conj'), ('eiusmod', 'xcomp'), ('tempor', 'compound'), ('incididunt', 'dobj'), ('ut', 'prep'), ('labore', 'nmod'), ('et', 'nmod'), ('dolore', 'nmod'), ('magna', 'compound'), ('aliqua', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Catering, founded], [founded, blabla], [blabla, Mr.], [Mr., Smith], [Smith, lorem], [lorem, ipsum], [ipsum, dolor], [dolor, sit], [sit, amet], [amet, ,], [,, consectetur], [consectetur, adipiscing], [adipiscing, elit], [elit, consectetur], [consectetur, adipiscing], [adipiscing, elit], [elit, ,], [,, sed], [sed, eiusmod], [eiusmod, tempor], [tempor, incididunt], [incididunt, ut], [ut, labore], [labore, et], [et, dolore], [dolore, magna], [magna, aliqua], [aliqua, .]]
+
+>> Trigrams: 
+[[Catering, founded, blabla], [founded, blabla, Mr.], [blabla, Mr., Smith], [Mr., Smith, lorem], [Smith, lorem, ipsum], [lorem, ipsum, dolor], [ipsum, dolor, sit], [dolor, sit, amet], [sit, amet, ,], [amet, ,, consectetur], [,, consectetur, adipiscing], [consectetur, adipiscing, elit], [adipiscing, elit, consectetur], [elit, consectetur, adipiscing], [consectetur, adipiscing, elit], [adipiscing, elit, ,], [elit, ,, sed], [,, sed, eiusmod], [sed, eiusmod, tempor], [eiusmod, tempor, incididunt], [tempor, incididunt, ut], [incididunt, ut, labore], [ut, labore, et], [labore, et, dolore], [et, dolore, magna], [dolore, magna, aliqua], [magna, aliqua, .]]
+
+>> Noun Phrases are: 
+[The Catering, blabla, Mr. Smith, lorem ipsum dolor, amet, tempor incididunt, labore et dolore magna aliqua]
+
+>> Named Entities are: 
+[('Smith', 'PERSON')]
+
+
+============================ Sentence 4 =============================
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+
+>> Tokens are: 
+[Ut, enim, ad, minim, veniam, ,, quis, nostrud, exercitation, ullamco, laboris, nisi, ut, aliquip, ex, ea, commodo, consequat, .] 
+
+>> PoS Tags are: 
+[('Ut', 'INTJ'), ('enim', 'NOUN'), ('ad', 'NOUN'), ('minim', 'NOUN'), ('veniam', 'NOUN'), (',', 'PUNCT'), ('quis', 'NOUN'), ('nostrud', 'ADJ'), ('exercitation', 'NOUN'), ('ullamco', 'NOUN'), ('laboris', 'NOUN'), ('nisi', 'ADJ'), ('ut', 'INTJ'), ('aliquip', 'VERB'), ('ex', 'NOUN'), ('ea', 'NOUN'), ('commodo', 'NOUN'), ('consequat', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Ut', 'intj'), ('enim', 'compound'), ('ad', 'compound'), ('minim', 'compound'), ('veniam', 'pobj'), (',', 'punct'), ('quis', 'amod'), ('nostrud', 'amod'), ('exercitation', 'compound'), ('ullamco', 'amod'), ('laboris', 'nsubj'), ('nisi', 'advmod'), ('ut', 'intj'), ('aliquip', 'nmod'), ('ex', 'compound'), ('ea', 'compound'), ('commodo', 'compound'), ('consequat', 'ROOT'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Ut, enim], [enim, ad], [ad, minim], [minim, veniam], [veniam, ,], [,, quis], [quis, nostrud], [nostrud, exercitation], [exercitation, ullamco], [ullamco, laboris], [laboris, nisi], [nisi, ut], [ut, aliquip], [aliquip, ex], [ex, ea], [ea, commodo], [commodo, consequat], [consequat, .]]
+
+>> Trigrams: 
+[[Ut, enim, ad], [enim, ad, minim], [ad, minim, veniam], [minim, veniam, ,], [veniam, ,, quis], [,, quis, nostrud], [quis, nostrud, exercitation], [nostrud, exercitation, ullamco], [exercitation, ullamco, laboris], [ullamco, laboris, nisi], [laboris, nisi, ut], [nisi, ut, aliquip], [ut, aliquip, ex], [aliquip, ex, ea], [ex, ea, commodo], [ea, commodo, consequat], [commodo, consequat, .]]
+
+>> Noun Phrases are: 
+[enim ad minim veniam]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 5 =============================
+
+Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+
+>> Tokens are: 
+[Duis, aute, iruredolor, reprehenderit, voluptate, velit, esse, cillum, dolore, eu, fugiat, nulla, pariatur, .] 
+
+>> PoS Tags are: 
+[('Duis', 'NOUN'), ('aute', 'NOUN'), ('iruredolor', 'NOUN'), ('reprehenderit', 'NOUN'), ('voluptate', 'ADJ'), ('velit', 'ADJ'), ('esse', 'NOUN'), ('cillum', 'ADJ'), ('dolore', 'NOUN'), ('eu', 'PROPN'), ('fugiat', 'NOUN'), ('nulla', 'NOUN'), ('pariatur', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Duis', 'nmod'), ('aute', 'amod'), ('iruredolor', 'nsubj'), ('reprehenderit', 'pobj'), ('voluptate', 'amod'), ('velit', 'amod'), ('esse', 'pobj'), ('cillum', 'amod'), ('dolore', 'compound'), ('eu', 'punct'), ('fugiat', 'ROOT'), ('nulla', 'compound'), ('pariatur', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Duis, aute], [aute, iruredolor], [iruredolor, reprehenderit], [reprehenderit, voluptate], [voluptate, velit], [velit, esse], [esse, cillum], [cillum, dolore], [dolore, eu], [eu, fugiat], [fugiat, nulla], [nulla, pariatur], [pariatur, .]]
+
+>> Trigrams: 
+[[Duis, aute, iruredolor], [aute, iruredolor, reprehenderit], [iruredolor, reprehenderit, voluptate], [reprehenderit, voluptate, velit], [voluptate, velit, esse], [velit, esse, cillum], [esse, cillum, dolore], [cillum, dolore, eu], [dolore, eu, fugiat], [eu, fugiat, nulla], [fugiat, nulla, pariatur], [nulla, pariatur, .]]
+
+>> Noun Phrases are: 
+[Duis aute iruredolor, reprehenderit, voluptate velit esse, nulla pariatur]
+
+>> Named Entities are: 
+[('Duis', 'PERSON')]
+
+
+============================ Sentence 6 =============================
+
+We only use seasonal ingredients. 
+
+
+>> Tokens are: 
+[use, seasonal, ingredients, .] 
+
+>> PoS Tags are: 
+[('use', 'VERB'), ('seasonal', 'ADJ'), ('ingredients', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('use', 'ROOT'), ('seasonal', 'amod'), ('ingredients', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[use, seasonal], [seasonal, ingredients], [ingredients, .]]
+
+>> Trigrams: 
+[[use, seasonal, ingredients], [seasonal, ingredients, .]]
+
+>> Noun Phrases are: 
+[We, seasonal ingredients]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt 
+
+
+>> Tokens are: 
+[       , Excepteur, sint, occaecat, cupidatat, non, proident, ,, sunt, culpa, qui, officia, deserunt, mollit, anim, d, est, laborum, consectetur, adipiscing, elit, ,, sed, eiusmod, temporincididunt] 
+
+>> PoS Tags are: 
+[('       ', 'SPACE'), ('Excepteur', 'PROPN'), ('sint', 'VERB'), ('occaecat', 'ADJ'), ('cupidatat', 'NOUN'), ('non', 'ADJ'), ('proident', 'NOUN'), (',', 'PUNCT'), ('sunt', 'NOUN'), ('culpa', 'NOUN'), ('qui', 'NOUN'), ('officia', 'NOUN'), ('deserunt', 'NOUN'), ('mollit', 'NOUN'), ('anim', 'NOUN'), ('d', 'NOUN'), ('est', 'X'), ('laborum', 'X'), ('consectetur', 'NOUN'), ('adipiscing', 'NOUN'), ('elit', 'VERB'), (',', 'PUNCT'), ('sed', 'VERB'), ('eiusmod', 'NOUN'), ('temporincididunt', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('       ', 'compound'), ('Excepteur', 'nsubj'), ('sint', 'ROOT'), ('occaecat', 'amod'), ('cupidatat', 'compound'), ('non', 'compound'), ('proident', 'dobj'), (',', 'punct'), ('sunt', 'conj'), ('culpa', 'compound'), ('qui', 'pobj'), ('officia', 'compound'), ('deserunt', 'compound'), ('mollit', 'compound'), ('anim', 'appos'), ('d', 'dobj'), ('est', 'nmod'), ('laborum', 'amod'), ('consectetur', 'compound'), ('adipiscing', 'amod'), ('elit', 'amod'), (',', 'punct'), ('sed', 'conj'), ('eiusmod', 'compound'), ('temporincididunt', 'ccomp')]
+
+>> Bigrams: 
+[[       , Excepteur], [Excepteur, sint], [sint, occaecat], [occaecat, cupidatat], [cupidatat, non], [non, proident], [proident, ,], [,, sunt], [sunt, culpa], [culpa, qui], [qui, officia], [officia, deserunt], [deserunt, mollit], [mollit, anim], [anim, d], [d, est], [est, laborum], [laborum, consectetur], [consectetur, adipiscing], [adipiscing, elit], [elit, ,], [,, sed], [sed, eiusmod], [eiusmod, temporincididunt]]
+
+>> Trigrams: 
+[[       , Excepteur, sint], [Excepteur, sint, occaecat], [sint, occaecat, cupidatat], [occaecat, cupidatat, non], [cupidatat, non, proident], [non, proident, ,], [proident, ,, sunt], [,, sunt, culpa], [sunt, culpa, qui], [culpa, qui, officia], [qui, officia, deserunt], [officia, deserunt, mollit], [deserunt, mollit, anim], [mollit, anim, d], [anim, d, est], [d, est, laborum], [est, laborum, consectetur], [laborum, consectetur, adipiscing], [consectetur, adipiscing, elit], [adipiscing, elit, ,], [elit, ,, sed], [,, sed, eiusmod], [sed, eiusmod, temporincididunt]]
+
+>> Noun Phrases are: 
+[       Excepteur, occaecat cupidatat non proident, sunt, culpa qui, officia deserunt mollit anim, i, d]
+
+>> Named Entities are: 
+[('mollit', 'PERSON')]
+
+
+============================ Sentence 8 =============================
+
+ut labore et dolore magna aliqua. 
+
+
+>> Tokens are: 
+[ut, labore, et, dolore, magna, aliqua, .] 
+
+>> PoS Tags are: 
+[('ut', 'ADP'), ('labore', 'NOUN'), ('et', 'NOUN'), ('dolore', 'NOUN'), ('magna', 'ADJ'), ('aliqua', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('ut', 'intj'), ('labore', 'nmod'), ('et', 'nmod'), ('dolore', 'nmod'), ('magna', 'compound'), ('aliqua', 'ROOT'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ut, labore], [labore, et], [et, dolore], [dolore, magna], [magna, aliqua], [aliqua, .]]
+
+>> Trigrams: 
+[[ut, labore, et], [labore, et, dolore], [et, dolore, magna], [dolore, magna, aliqua], [magna, aliqua, .]]
+
+>> Noun Phrases are: 
+[ut labore et dolore magna aliqua]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+
+>> Tokens are: 
+[Ut, enim, ad, minim, veniam, ,, quis, nostrud, exercitation, ullamco, laboris, nisi, ut, aliquip, ex, ea, commodo, consequat, .] 
+
+>> PoS Tags are: 
+[('Ut', 'INTJ'), ('enim', 'NOUN'), ('ad', 'NOUN'), ('minim', 'NOUN'), ('veniam', 'NOUN'), (',', 'PUNCT'), ('quis', 'NOUN'), ('nostrud', 'ADJ'), ('exercitation', 'NOUN'), ('ullamco', 'NOUN'), ('laboris', 'NOUN'), ('nisi', 'ADJ'), ('ut', 'INTJ'), ('aliquip', 'VERB'), ('ex', 'NOUN'), ('ea', 'NOUN'), ('commodo', 'NOUN'), ('consequat', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Ut', 'intj'), ('enim', 'compound'), ('ad', 'compound'), ('minim', 'compound'), ('veniam', 'pobj'), (',', 'punct'), ('quis', 'amod'), ('nostrud', 'amod'), ('exercitation', 'compound'), ('ullamco', 'amod'), ('laboris', 'ROOT'), ('nisi', 'advmod'), ('ut', 'intj'), ('aliquip', 'advcl'), ('ex', 'compound'), ('ea', 'appos'), ('commodo', 'compound'), ('consequat', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Ut, enim], [enim, ad], [ad, minim], [minim, veniam], [veniam, ,], [,, quis], [quis, nostrud], [nostrud, exercitation], [exercitation, ullamco], [ullamco, laboris], [laboris, nisi], [nisi, ut], [ut, aliquip], [aliquip, ex], [ex, ea], [ea, commodo], [commodo, consequat], [consequat, .]]
+
+>> Trigrams: 
+[[Ut, enim, ad], [enim, ad, minim], [ad, minim, veniam], [minim, veniam, ,], [veniam, ,, quis], [,, quis, nostrud], [quis, nostrud, exercitation], [nostrud, exercitation, ullamco], [exercitation, ullamco, laboris], [ullamco, laboris, nisi], [laboris, nisi, ut], [nisi, ut, aliquip], [ut, aliquip, ex], [aliquip, ex, ea], [ex, ea, commodo], [ea, commodo, consequat], [commodo, consequat, .]]
+
+>> Noun Phrases are: 
+[enim ad minim veniam, ex ea, commodo consequat]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+                                      Our Menu         Bread Basket        Assortment of fresh baked fruit breads and muffins 5.50               
+
+
+>> Tokens are: 
+[                                      , Menu,         , Bread, Basket,        , Assortment, fresh, baked, fruit, breads, muffins, 5.50,              ] 
+
+>> PoS Tags are: 
+[('                                      ', 'SPACE'), ('Menu', 'PROPN'), ('        ', 'SPACE'), ('Bread', 'PROPN'), ('Basket', 'PROPN'), ('       ', 'SPACE'), ('Assortment', 'PROPN'), ('fresh', 'ADJ'), ('baked', 'ADJ'), ('fruit', 'NOUN'), ('breads', 'NOUN'), ('muffins', 'NOUN'), ('5.50', 'NUM'), ('             ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('                                      ', 'nummod'), ('Menu', 'compound'), ('        ', 'compound'), ('Bread', 'compound'), ('Basket', 'nmod'), ('       ', 'compound'), ('Assortment', 'ROOT'), ('fresh', 'amod'), ('baked', 'amod'), ('fruit', 'compound'), ('breads', 'pobj'), ('muffins', 'conj'), ('5.50', 'nummod'), ('             ', 'appos')]
+
+>> Bigrams: 
+[[                                      , Menu], [Menu,         ], [        , Bread], [Bread, Basket], [Basket,        ], [       , Assortment], [Assortment, fresh], [fresh, baked], [baked, fruit], [fruit, breads], [breads, muffins], [muffins, 5.50], [5.50,              ]]
+
+>> Trigrams: 
+[[                                      , Menu,         ], [Menu,         , Bread], [        , Bread, Basket], [Bread, Basket,        ], [Basket,        , Assortment], [       , Assortment, fresh], [Assortment, fresh, baked], [fresh, baked, fruit], [baked, fruit, breads], [fruit, breads, muffins], [breads, muffins, 5.50], [muffins, 5.50,              ]]
+
+>> Noun Phrases are: 
+[                                      Our Menu         Bread Basket        Assortment, fresh baked fruit breads, muffins]
+
+>> Named Entities are: 
+[('5.50', 'CARDINAL')]
+
+
+============================ Sentence 11 =============================
+
+Honey Almond Granola with Fruits        Natural cereal of honey toasted oats, raisins, almonds and dates 7.00              Belgian Waffle        Vanilla flavored batter with malted flour 7.50              Scrambled eggs 
+
+
+>> Tokens are: 
+[Honey, Almond, Granola, Fruits,        , Natural, cereal, honey, toasted, oats, ,, raisins, ,, almonds, dates, 7.00,              , Belgian, Waffle,        , Vanilla, flavored, batter, malted, flour, 7.50,              , Scrambled, eggs] 
+
+>> PoS Tags are: 
+[('Honey', 'PROPN'), ('Almond', 'PROPN'), ('Granola', 'PROPN'), ('Fruits', 'PROPN'), ('       ', 'SPACE'), ('Natural', 'ADJ'), ('cereal', 'NOUN'), ('honey', 'NOUN'), ('toasted', 'VERB'), ('oats', 'NOUN'), (',', 'PUNCT'), ('raisins', 'NOUN'), (',', 'PUNCT'), ('almonds', 'VERB'), ('dates', 'VERB'), ('7.00', 'NUM'), ('             ', 'SPACE'), ('Belgian', 'PROPN'), ('Waffle', 'PROPN'), ('       ', 'SPACE'), ('Vanilla', 'PROPN'), ('flavored', 'VERB'), ('batter', 'NOUN'), ('malted', 'ADJ'), ('flour', 'NOUN'), ('7.50', 'NUM'), ('             ', 'SPACE'), ('Scrambled', 'ADJ'), ('eggs', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Honey', 'compound'), ('Almond', 'compound'), ('Granola', 'nsubj'), ('Fruits', 'nmod'), ('       ', 'nummod'), ('Natural', 'amod'), ('cereal', 'pobj'), ('honey', 'pobj'), ('toasted', 'ROOT'), ('oats', 'dobj'), (',', 'punct'), ('raisins', 'conj'), (',', 'punct'), ('almonds', 'conj'), ('dates', 'conj'), ('7.00', 'nummod'), ('             ', 'dobj'), ('Belgian', 'compound'), ('Waffle', 'appos'), ('       ', 'compound'), ('Vanilla', 'appos'), ('flavored', 'conj'), ('batter', 'dobj'), ('malted', 'amod'), ('flour', 'pobj'), ('7.50', 'nummod'), ('             ', 'nummod'), ('Scrambled', 'amod'), ('eggs', 'appos')]
+
+>> Bigrams: 
+[[Honey, Almond], [Almond, Granola], [Granola, Fruits], [Fruits,        ], [       , Natural], [Natural, cereal], [cereal, honey], [honey, toasted], [toasted, oats], [oats, ,], [,, raisins], [raisins, ,], [,, almonds], [almonds, dates], [dates, 7.00], [7.00,              ], [             , Belgian], [Belgian, Waffle], [Waffle,        ], [       , Vanilla], [Vanilla, flavored], [flavored, batter], [batter, malted], [malted, flour], [flour, 7.50], [7.50,              ], [             , Scrambled], [Scrambled, eggs]]
+
+>> Trigrams: 
+[[Honey, Almond, Granola], [Almond, Granola, Fruits], [Granola, Fruits,        ], [Fruits,        , Natural], [       , Natural, cereal], [Natural, cereal, honey], [cereal, honey, toasted], [honey, toasted, oats], [toasted, oats, ,], [oats, ,, raisins], [,, raisins, ,], [raisins, ,, almonds], [,, almonds, dates], [almonds, dates, 7.00], [dates, 7.00,              ], [7.00,              , Belgian], [             , Belgian, Waffle], [Belgian, Waffle,        ], [Waffle,        , Vanilla], [       , Vanilla, flavored], [Vanilla, flavored, batter], [flavored, batter, malted], [batter, malted, flour], [malted, flour, 7.50], [flour, 7.50,              ], [7.50,              , Scrambled], [             , Scrambled, eggs]]
+
+>> Noun Phrases are: 
+[Honey Almond Granola, Fruits        Natural cereal, honey, oats, raisins, Belgian Waffle,        Vanilla, batter, malted flour, 7.50              Scrambled eggs]
+
+>> Named Entities are: 
+[('Honey Almond Granola', 'PERSON'), ('7.00', 'CARDINAL'), ('Belgian', 'NORP'), ('7.50', 'CARDINAL')]
+
+
+============================ Sentence 12 =============================
+
+       Scrambled eggs, roasted red pepper and garlic, with green onions 7.50              Blueberry Pancakes        With syrup, butter and lots of berries 8.50                                                       Contact        
+
+
+>> Tokens are: 
+[       , Scrambled, eggs, ,, roasted, red, pepper, garlic, ,, green, onions, 7.50,              , Blueberry, Pancakes,        , syrup, ,, butter, lots, berries, 8.50,                                                       , Contact,       ] 
+
+>> PoS Tags are: 
+[('       ', 'SPACE'), ('Scrambled', 'VERB'), ('eggs', 'NOUN'), (',', 'PUNCT'), ('roasted', 'ADJ'), ('red', 'ADJ'), ('pepper', 'NOUN'), ('garlic', 'NOUN'), (',', 'PUNCT'), ('green', 'ADJ'), ('onions', 'NOUN'), ('7.50', 'NUM'), ('             ', 'SPACE'), ('Blueberry', 'PROPN'), ('Pancakes', 'PROPN'), ('       ', 'SPACE'), ('syrup', 'NOUN'), (',', 'PUNCT'), ('butter', 'NOUN'), ('lots', 'NOUN'), ('berries', 'NOUN'), ('8.50', 'NUM'), ('                                                      ', 'SPACE'), ('Contact', 'NOUN'), ('      ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('       ', 'nummod'), ('Scrambled', 'amod'), ('eggs', 'ROOT'), (',', 'punct'), ('roasted', 'amod'), ('red', 'amod'), ('pepper', 'conj'), ('garlic', 'conj'), (',', 'punct'), ('green', 'amod'), ('onions', 'pobj'), ('7.50', 'nummod'), ('             ', 'appos'), ('Blueberry', 'compound'), ('Pancakes', 'appos'), ('       ', 'appos'), ('syrup', 'pobj'), (',', 'punct'), ('butter', 'conj'), ('lots', 'conj'), ('berries', 'pobj'), ('8.50', 'nummod'), ('                                                      ', 'nummod'), ('Contact', 'compound'), ('      ', 'appos')]
+
+>> Bigrams: 
+[[       , Scrambled], [Scrambled, eggs], [eggs, ,], [,, roasted], [roasted, red], [red, pepper], [pepper, garlic], [garlic, ,], [,, green], [green, onions], [onions, 7.50], [7.50,              ], [             , Blueberry], [Blueberry, Pancakes], [Pancakes,        ], [       , syrup], [syrup, ,], [,, butter], [butter, lots], [lots, berries], [berries, 8.50], [8.50,                                                       ], [                                                      , Contact], [Contact,       ]]
+
+>> Trigrams: 
+[[       , Scrambled, eggs], [Scrambled, eggs, ,], [eggs, ,, roasted], [,, roasted, red], [roasted, red, pepper], [red, pepper, garlic], [pepper, garlic, ,], [garlic, ,, green], [,, green, onions], [green, onions, 7.50], [onions, 7.50,              ], [7.50,              , Blueberry], [             , Blueberry, Pancakes], [Blueberry, Pancakes,        ], [Pancakes,        , syrup], [       , syrup, ,], [syrup, ,, butter], [,, butter, lots], [butter, lots, berries], [lots, berries, 8.50], [berries, 8.50,                                                       ], [8.50,                                                       , Contact], [                                                      , Contact,       ]]
+
+>> Noun Phrases are: 
+[       Scrambled eggs, roasted red pepper, garlic, green onions, Blueberry Pancakes, syrup, butter, lots, berries]
+
+>> Named Entities are: 
+[('7.50', 'CARDINAL'), ('Blueberry Pancakes', 'PERSON'), ('8.50', 'CARDINAL')]
+
+
+============================ Sentence 13 =============================
+
+We offer full-service catering for any event, large or small. 
+
+
+>> Tokens are: 
+[offer, -, service, catering, event, ,, large, small, .] 
+
+>> PoS Tags are: 
+[('offer', 'VERB'), ('-', 'PUNCT'), ('service', 'NOUN'), ('catering', 'NOUN'), ('event', 'NOUN'), (',', 'PUNCT'), ('large', 'ADJ'), ('small', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('offer', 'ROOT'), ('-', 'punct'), ('service', 'compound'), ('catering', 'dobj'), ('event', 'pobj'), (',', 'punct'), ('large', 'amod'), ('small', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[offer, -], [-, service], [service, catering], [catering, event], [event, ,], [,, large], [large, small], [small, .]]
+
+>> Trigrams: 
+[[offer, -, service], [-, service, catering], [service, catering, event], [catering, event, ,], [event, ,, large], [,, large, small], [large, small, .]]
+
+>> Noun Phrases are: 
+[We, full-service catering, any event]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. 
+
+
+>> Tokens are: 
+[understand, needs, cater, food, satisfy, biggerst, criteria, ,, look, taste, .] 
+
+>> PoS Tags are: 
+[('understand', 'VERB'), ('needs', 'NOUN'), ('cater', 'VERB'), ('food', 'NOUN'), ('satisfy', 'VERB'), ('biggerst', 'ADJ'), ('criteria', 'NOUN'), (',', 'PUNCT'), ('look', 'VERB'), ('taste', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('understand', 'ROOT'), ('needs', 'dobj'), ('cater', 'conj'), ('food', 'dobj'), ('satisfy', 'advcl'), ('biggerst', 'amod'), ('criteria', 'dobj'), (',', 'punct'), ('look', 'conj'), ('taste', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[understand, needs], [needs, cater], [cater, food], [food, satisfy], [satisfy, biggerst], [biggerst, criteria], [criteria, ,], [,, look], [look, taste], [taste, .]]
+
+>> Trigrams: 
+[[understand, needs, cater], [needs, cater, food], [cater, food, satisfy], [food, satisfy, biggerst], [satisfy, biggerst, criteria], [biggerst, criteria, ,], [criteria, ,, look], [,, look, taste], [look, taste, .]]
+
+>> Noun Phrases are: 
+[We, your needs, we, the food, the biggerst criteria, them]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+Do not hesitate to contact us. 
+
+
+>> Tokens are: 
+[hesitate, contact, .] 
+
+>> PoS Tags are: 
+[('hesitate', 'VERB'), ('contact', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('hesitate', 'ROOT'), ('contact', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[hesitate, contact], [contact, .]]
+
+>> Trigrams: 
+[[hesitate, contact, .]]
+
+>> Noun Phrases are: 
+[us]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+     Catering Service, 42nd Living St, 43043 New York, NY       
+
+
+>> Tokens are: 
+[     , Catering, Service, ,, 42nd, Living, St, ,, 43043, New, York, ,, NY,      ] 
+
+>> PoS Tags are: 
+[('     ', 'SPACE'), ('Catering', 'PROPN'), ('Service', 'PROPN'), (',', 'PUNCT'), ('42nd', 'NOUN'), ('Living', 'PROPN'), ('St', 'PROPN'), (',', 'PUNCT'), ('43043', 'NUM'), ('New', 'PROPN'), ('York', 'PROPN'), (',', 'PUNCT'), ('NY', 'PROPN'), ('     ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('     ', 'compound'), ('Catering', 'compound'), ('Service', 'ROOT'), (',', 'punct'), ('42nd', 'npadvmod'), ('Living', 'compound'), ('St', 'appos'), (',', 'punct'), ('43043', 'appos'), ('New', 'compound'), ('York', 'appos'), (',', 'punct'), ('NY', 'compound'), ('     ', 'appos')]
+
+>> Bigrams: 
+[[     , Catering], [Catering, Service], [Service, ,], [,, 42nd], [42nd, Living], [Living, St], [St, ,], [,, 43043], [43043, New], [New, York], [York, ,], [,, NY], [NY,      ]]
+
+>> Trigrams: 
+[[     , Catering, Service], [Catering, Service, ,], [Service, ,, 42nd], [,, 42nd, Living], [42nd, Living, St], [Living, St, ,], [St, ,, 43043], [,, 43043, New], [43043, New, York], [New, York, ,], [York, ,, NY], [,, NY,      ]]
+
+>> Noun Phrases are: 
+[     Catering Service, Living St, New York]
+
+>> Named Entities are: 
+[('43043', 'CARDINAL'), ('New York', 'GPE')]
+
+
+============================ Sentence 17 =============================
+
+You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:                                             SEND MESSAGE                       Powered by w3.css 
+
+
+>> Tokens are: 
+[contact, phone, 00553123, -, 2323, email, catering@catering.com, ,, send, message, :,                                             , SEND, MESSAGE,                       , Powered, w3.css] 
+
+>> PoS Tags are: 
+[('contact', 'VERB'), ('phone', 'NOUN'), ('00553123', 'NUM'), ('-', 'SYM'), ('2323', 'NUM'), ('email', 'NOUN'), ('catering@catering.com', 'X'), (',', 'PUNCT'), ('send', 'VERB'), ('message', 'NOUN'), (':', 'PUNCT'), ('                                            ', 'SPACE'), ('SEND', 'PROPN'), ('MESSAGE', 'PROPN'), ('                      ', 'SPACE'), ('Powered', 'VERB'), ('w3.css', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('contact', 'ROOT'), ('phone', 'pobj'), ('00553123', 'nummod'), ('-', 'punct'), ('2323', 'nummod'), ('email', 'compound'), ('catering@catering.com', 'conj'), (',', 'punct'), ('send', 'conj'), ('message', 'dobj'), (':', 'punct'), ('                                            ', 'compound'), ('SEND', 'compound'), ('MESSAGE', 'compound'), ('                      ', 'appos'), ('Powered', 'acl'), ('w3.css', 'pobj')]
+
+>> Bigrams: 
+[[contact, phone], [phone, 00553123], [00553123, -], [-, 2323], [2323, email], [email, catering@catering.com], [catering@catering.com, ,], [,, send], [send, message], [message, :], [:,                                             ], [                                            , SEND], [SEND, MESSAGE], [MESSAGE,                       ], [                      , Powered], [Powered, w3.css]]
+
+>> Trigrams: 
+[[contact, phone, 00553123], [phone, 00553123, -], [00553123, -, 2323], [-, 2323, email], [2323, email, catering@catering.com], [email, catering@catering.com, ,], [catering@catering.com, ,, send], [,, send, message], [send, message, :], [message, :,                                             ], [:,                                             , SEND], [                                            , SEND, MESSAGE], [SEND, MESSAGE,                       ], [MESSAGE,                       , Powered], [                      , Powered, w3.css]]
+
+>> Noun Phrases are: 
+[You, us, phone, you, us, a message, w3.css]
+
+>> Named Entities are: 
+[('00553123-2323', 'DATE')]

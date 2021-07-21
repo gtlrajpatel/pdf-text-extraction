@@ -1,0 +1,1810 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-8 Comparison of Various Algorithms Complexities Let us see the performance of algorithms based on various criteria − 	Criterion 	Breadth First 	Depth First 	Bidirectional 	Uniform Cost 	Interactive Deepening  	Time 	bd 	bm 	bd/2 	bd 	bd  	Space 	bd 	bm 	bd/2 	bd 	bd  	Optimality 	 
+
+
+>> Tokens are: 
+[AI-8, Comparison, Algorithms, Complexities, Let, performance, algorithms, based, criteria, −, 	, Criterion, 	, Breadth, 	, Depth, 	, Bidirectional, 	, Uniform, Cost, 	, Interactive, Deepening,  	, Time, 	, bd, 	, bm, 	, bd/2, 	, bd, 	, bd,  	, Space, 	, bd, 	, bm, 	, bd/2, 	, bd, 	, bd,  	, Optimality, 	] 
+
+>> PoS Tags are: 
+[('AI-8', 'PROPN'), ('Comparison', 'PROPN'), ('Algorithms', 'PROPN'), ('Complexities', 'NOUN'), ('Let', 'VERB'), ('performance', 'NOUN'), ('algorithms', 'NOUN'), ('based', 'VERB'), ('criteria', 'NOUN'), ('−', 'PROPN'), ('\t', 'SPACE'), ('Criterion', 'PROPN'), ('\t', 'SPACE'), ('Breadth', 'PROPN'), ('\t', 'SPACE'), ('Depth', 'NOUN'), ('\t', 'SPACE'), ('Bidirectional', 'PROPN'), ('\t', 'SPACE'), ('Uniform', 'PROPN'), ('Cost', 'PROPN'), ('\t', 'SPACE'), ('Interactive', 'PROPN'), ('Deepening', 'VERB'), (' \t', 'SPACE'), ('Time', 'PROPN'), ('\t', 'SPACE'), ('bd', 'PROPN'), ('\t', 'SPACE'), ('bm', 'VERB'), ('\t', 'SPACE'), ('bd/2', 'PROPN'), ('\t', 'SPACE'), ('bd', 'PROPN'), ('\t', 'SPACE'), ('bd', 'PROPN'), (' \t', 'SPACE'), ('Space', 'PROPN'), ('\t', 'SPACE'), ('bd', 'PROPN'), ('\t', 'SPACE'), ('bm', 'ADP'), ('\t', 'SPACE'), ('bd/2', 'PROPN'), ('\t', 'SPACE'), ('bd', 'PROPN'), ('\t', 'SPACE'), ('bd', 'PROPN'), (' \t', 'SPACE'), ('Optimality', 'PROPN'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('AI-8', 'nummod'), ('Comparison', 'nsubj'), ('Algorithms', 'compound'), ('Complexities', 'pobj'), ('Let', 'ROOT'), ('performance', 'dobj'), ('algorithms', 'pobj'), ('based', 'acl'), ('criteria', 'compound'), ('−', 'compound'), ('\t', 'compound'), ('Criterion', 'compound'), ('\t', 'nmod'), ('Breadth', 'compound'), ('\t', 'nmod'), ('Depth', 'compound'), ('\t', 'compound'), ('Bidirectional', 'compound'), ('\t', 'compound'), ('Uniform', 'compound'), ('Cost', 'compound'), ('\t', 'compound'), ('Interactive', 'compound'), ('Deepening', 'pcomp'), (' \t', 'compound'), ('Time', 'compound'), ('\t', 'compound'), ('bd', 'compound'), ('\t', 'appos'), ('bm', 'prep'), ('\t', 'compound'), ('bd/2', 'compound'), ('\t', 'compound'), ('bd', 'conj'), ('\t', 'conj'), ('bd', 'prep'), (' \t', 'compound'), ('Space', 'compound'), ('\t', 'compound'), ('bd', 'compound'), ('\t', 'ccomp'), ('bm', 'prep'), ('\t', 'compound'), ('bd/2', 'compound'), ('\t', 'compound'), ('bd', 'compound'), ('\t', 'conj'), ('bd', 'appos'), (' \t', 'compound'), ('Optimality', 'compound'), ('\t', 'appos')]
+
+>> Bigrams: 
+[[AI-8, Comparison], [Comparison, Algorithms], [Algorithms, Complexities], [Complexities, Let], [Let, performance], [performance, algorithms], [algorithms, based], [based, criteria], [criteria, −], [−, 	], [	, Criterion], [Criterion, 	], [	, Breadth], [Breadth, 	], [	, Depth], [Depth, 	], [	, Bidirectional], [Bidirectional, 	], [	, Uniform], [Uniform, Cost], [Cost, 	], [	, Interactive], [Interactive, Deepening], [Deepening,  	], [ 	, Time], [Time, 	], [	, bd], [bd, 	], [	, bm], [bm, 	], [	, bd/2], [bd/2, 	], [	, bd], [bd, 	], [	, bd], [bd,  	], [ 	, Space], [Space, 	], [	, bd], [bd, 	], [	, bm], [bm, 	], [	, bd/2], [bd/2, 	], [	, bd], [bd, 	], [	, bd], [bd,  	], [ 	, Optimality], [Optimality, 	]]
+
+>> Trigrams: 
+[[AI-8, Comparison, Algorithms], [Comparison, Algorithms, Complexities], [Algorithms, Complexities, Let], [Complexities, Let, performance], [Let, performance, algorithms], [performance, algorithms, based], [algorithms, based, criteria], [based, criteria, −], [criteria, −, 	], [−, 	, Criterion], [	, Criterion, 	], [Criterion, 	, Breadth], [	, Breadth, 	], [Breadth, 	, Depth], [	, Depth, 	], [Depth, 	, Bidirectional], [	, Bidirectional, 	], [Bidirectional, 	, Uniform], [	, Uniform, Cost], [Uniform, Cost, 	], [Cost, 	, Interactive], [	, Interactive, Deepening], [Interactive, Deepening,  	], [Deepening,  	, Time], [ 	, Time, 	], [Time, 	, bd], [	, bd, 	], [bd, 	, bm], [	, bm, 	], [bm, 	, bd/2], [	, bd/2, 	], [bd/2, 	, bd], [	, bd, 	], [bd, 	, bd], [	, bd,  	], [bd,  	, Space], [ 	, Space, 	], [Space, 	, bd], [	, bd, 	], [bd, 	, bm], [	, bm, 	], [bm, 	, bd/2], [	, bd/2, 	], [bd/2, 	, bd], [	, bd, 	], [bd, 	, bd], [	, bd,  	], [bd,  	, Optimality], [ 	, Optimality, 	]]
+
+>> Noun Phrases are: 
+[AI-8 Comparison, Various Algorithms Complexities, us, the performance, algorithms, 	bd/2 	bd, bd]
+
+>> Named Entities are: 
+[('Comparison of Various', 'ORG'), ('− \tCriterion \tBreadth First', 'FAC'), ('bd/2', 'ORG'), ('bd/2', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+Yes 	No 	 
+
+
+>> Tokens are: 
+[Yes, 	, 	] 
+
+>> PoS Tags are: 
+[('Yes', 'INTJ'), ('\t', 'SPACE'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Yes', 'intj'), ('\t', 'pobj'), ('\t', 'ROOT')]
+
+>> Bigrams: 
+[[Yes, 	], [	, 	]]
+
+>> Trigrams: 
+[[Yes, 	, 	]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 3 =============================
+
+Yes 	 
+
+
+>> Tokens are: 
+[Yes, 	] 
+
+>> PoS Tags are: 
+[('Yes', 'INTJ'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Yes', 'intj'), ('\t', 'ROOT')]
+
+>> Bigrams: 
+[[Yes, 	]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+Yes 	Yes  	Completeness 	 
+
+
+>> Tokens are: 
+[Yes, 	, Yes,  	, Completeness, 	] 
+
+>> PoS Tags are: 
+[('Yes', 'INTJ'), ('\t', 'SPACE'), ('Yes', 'PROPN'), (' \t', 'SPACE'), ('Completeness', 'PROPN'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Yes', 'intj'), ('\t', 'compound'), ('Yes', 'compound'), (' \t', 'compound'), ('Completeness', 'compound'), ('\t', 'ROOT')]
+
+>> Bigrams: 
+[[Yes, 	], [	, Yes], [Yes,  	], [ 	, Completeness], [Completeness, 	]]
+
+>> Trigrams: 
+[[Yes, 	, Yes], [	, Yes,  	], [Yes,  	, Completeness], [ 	, Completeness, 	]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 5 =============================
+
+Yes 	No 	 
+
+
+>> Tokens are: 
+[Yes, 	, 	] 
+
+>> PoS Tags are: 
+[('Yes', 'INTJ'), ('\t', 'SPACE'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Yes', 'intj'), ('\t', 'npadvmod'), ('\t', 'ROOT')]
+
+>> Bigrams: 
+[[Yes, 	], [	, 	]]
+
+>> Trigrams: 
+[[Yes, 	, 	]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+Yes 	 
+
+
+>> Tokens are: 
+[Yes, 	] 
+
+>> PoS Tags are: 
+[('Yes', 'INTJ'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Yes', 'intj'), ('\t', 'ROOT')]
+
+>> Bigrams: 
+[[Yes, 	]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+Yes 	 
+
+
+>> Tokens are: 
+[Yes, 	] 
+
+>> PoS Tags are: 
+[('Yes', 'INTJ'), ('\t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Yes', 'intj'), ('\t', 'ROOT')]
+
+>> Bigrams: 
+[[Yes, 	]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 8 =============================
+
+Yes   Informed (Heuristic) Search Strategies To solve large problems with large number of possible states, problem-specific knowledge needs to be added to increase the efficiency of search algorithms. 
+
+
+>> Tokens are: 
+[Yes,   , Informed, (, Heuristic, ), Search, Strategies, solve, large, problems, large, number, possible, states, ,, problem, -, specific, knowledge, needs, added, increase, efficiency, search, algorithms, .] 
+
+>> PoS Tags are: 
+[('Yes', 'INTJ'), ('  ', 'SPACE'), ('Informed', 'PROPN'), ('(', 'PUNCT'), ('Heuristic', 'PROPN'), (')', 'PUNCT'), ('Search', 'PROPN'), ('Strategies', 'PROPN'), ('solve', 'VERB'), ('large', 'ADJ'), ('problems', 'NOUN'), ('large', 'ADJ'), ('number', 'NOUN'), ('possible', 'ADJ'), ('states', 'NOUN'), (',', 'PUNCT'), ('problem', 'NOUN'), ('-', 'PUNCT'), ('specific', 'ADJ'), ('knowledge', 'NOUN'), ('needs', 'VERB'), ('added', 'VERB'), ('increase', 'VERB'), ('efficiency', 'NOUN'), ('search', 'NOUN'), ('algorithms', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Yes', 'intj'), ('  ', 'dep'), ('Informed', 'nmod'), ('(', 'punct'), ('Heuristic', 'appos'), (')', 'punct'), ('Search', 'compound'), ('Strategies', 'nsubj'), ('solve', 'relcl'), ('large', 'amod'), ('problems', 'dobj'), ('large', 'amod'), ('number', 'pobj'), ('possible', 'amod'), ('states', 'pobj'), (',', 'punct'), ('problem', 'npadvmod'), ('-', 'punct'), ('specific', 'amod'), ('knowledge', 'nsubj'), ('needs', 'ROOT'), ('added', 'xcomp'), ('increase', 'advcl'), ('efficiency', 'dobj'), ('search', 'compound'), ('algorithms', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Yes,   ], [  , Informed], [Informed, (], [(, Heuristic], [Heuristic, )], [), Search], [Search, Strategies], [Strategies, solve], [solve, large], [large, problems], [problems, large], [large, number], [number, possible], [possible, states], [states, ,], [,, problem], [problem, -], [-, specific], [specific, knowledge], [knowledge, needs], [needs, added], [added, increase], [increase, efficiency], [efficiency, search], [search, algorithms], [algorithms, .]]
+
+>> Trigrams: 
+[[Yes,   , Informed], [  , Informed, (], [Informed, (, Heuristic], [(, Heuristic, )], [Heuristic, ), Search], [), Search, Strategies], [Search, Strategies, solve], [Strategies, solve, large], [solve, large, problems], [large, problems, large], [problems, large, number], [large, number, possible], [number, possible, states], [possible, states, ,], [states, ,, problem], [,, problem, -], [problem, -, specific], [-, specific, knowledge], [specific, knowledge, needs], [knowledge, needs, added], [needs, added, increase], [added, increase, efficiency], [increase, efficiency, search], [efficiency, search, algorithms], [search, algorithms, .]]
+
+>> Noun Phrases are: 
+[(Heuristic, large problems, large number, possible states, problem-specific knowledge, the efficiency, search algorithms]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+Heuristic Evaluation Functions They calculate the cost of optimal path between two states. 
+
+
+>> Tokens are: 
+[Heuristic, Evaluation, Functions, calculate, cost, optimal, path, states, .] 
+
+>> PoS Tags are: 
+[('Heuristic', 'PROPN'), ('Evaluation', 'PROPN'), ('Functions', 'PROPN'), ('calculate', 'VERB'), ('cost', 'NOUN'), ('optimal', 'ADJ'), ('path', 'NOUN'), ('states', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Heuristic', 'compound'), ('Evaluation', 'compound'), ('Functions', 'ROOT'), ('calculate', 'relcl'), ('cost', 'dobj'), ('optimal', 'amod'), ('path', 'pobj'), ('states', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Heuristic, Evaluation], [Evaluation, Functions], [Functions, calculate], [calculate, cost], [cost, optimal], [optimal, path], [path, states], [states, .]]
+
+>> Trigrams: 
+[[Heuristic, Evaluation, Functions], [Evaluation, Functions, calculate], [Functions, calculate, cost], [calculate, cost, optimal], [cost, optimal, path], [optimal, path, states], [path, states, .]]
+
+>> Noun Phrases are: 
+[Heuristic Evaluation Functions, They, the cost, optimal path, two states]
+
+>> Named Entities are: 
+[('Heuristic Evaluation Functions They', 'ORG'), ('two', 'CARDINAL')]
+
+
+============================ Sentence 10 =============================
+
+A heuristic function for sliding-tiles games is computed by counting number of moves that each tile makes from its goal state and adding these number of moves for all tiles. 
+
+
+>> Tokens are: 
+[heuristic, function, sliding, -, tiles, games, computed, counting, number, moves, tile, makes, goal, state, adding, number, moves, tiles, .] 
+
+>> PoS Tags are: 
+[('heuristic', 'ADJ'), ('function', 'NOUN'), ('sliding', 'VERB'), ('-', 'PUNCT'), ('tiles', 'NOUN'), ('games', 'NOUN'), ('computed', 'VERB'), ('counting', 'VERB'), ('number', 'NOUN'), ('moves', 'NOUN'), ('tile', 'NOUN'), ('makes', 'VERB'), ('goal', 'NOUN'), ('state', 'NOUN'), ('adding', 'VERB'), ('number', 'NOUN'), ('moves', 'NOUN'), ('tiles', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('heuristic', 'amod'), ('function', 'nsubjpass'), ('sliding', 'amod'), ('-', 'punct'), ('tiles', 'compound'), ('games', 'pobj'), ('computed', 'ROOT'), ('counting', 'pcomp'), ('number', 'dobj'), ('moves', 'pobj'), ('tile', 'nsubj'), ('makes', 'relcl'), ('goal', 'compound'), ('state', 'pobj'), ('adding', 'conj'), ('number', 'dobj'), ('moves', 'pobj'), ('tiles', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[heuristic, function], [function, sliding], [sliding, -], [-, tiles], [tiles, games], [games, computed], [computed, counting], [counting, number], [number, moves], [moves, tile], [tile, makes], [makes, goal], [goal, state], [state, adding], [adding, number], [number, moves], [moves, tiles], [tiles, .]]
+
+>> Trigrams: 
+[[heuristic, function, sliding], [function, sliding, -], [sliding, -, tiles], [-, tiles, games], [tiles, games, computed], [games, computed, counting], [computed, counting, number], [counting, number, moves], [number, moves, tile], [moves, tile, makes], [tile, makes, goal], [makes, goal, state], [goal, state, adding], [state, adding, number], [adding, number, moves], [number, moves, tiles], [moves, tiles, .]]
+
+>> Noun Phrases are: 
+[A heuristic function, sliding-tiles games, number, moves, each tile, its goal state, these number, moves, all tiles]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 11 =============================
+
+Pure Heuristic Search It expands nodes in the order of their heuristic values. 
+
+
+>> Tokens are: 
+[Pure, Heuristic, Search, expands, nodes, order, heuristic, values, .] 
+
+>> PoS Tags are: 
+[('Pure', 'ADJ'), ('Heuristic', 'PROPN'), ('Search', 'PROPN'), ('expands', 'VERB'), ('nodes', 'NOUN'), ('order', 'NOUN'), ('heuristic', 'ADJ'), ('values', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Pure', 'amod'), ('Heuristic', 'compound'), ('Search', 'npadvmod'), ('expands', 'ROOT'), ('nodes', 'dobj'), ('order', 'pobj'), ('heuristic', 'amod'), ('values', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Pure, Heuristic], [Heuristic, Search], [Search, expands], [expands, nodes], [nodes, order], [order, heuristic], [heuristic, values], [values, .]]
+
+>> Trigrams: 
+[[Pure, Heuristic, Search], [Heuristic, Search, expands], [Search, expands, nodes], [expands, nodes, order], [nodes, order, heuristic], [order, heuristic, values], [heuristic, values, .]]
+
+>> Noun Phrases are: 
+[It, nodes, the order, their heuristic values]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+It creates two lists, a closed list for the already expanded nodes and an open list for the created but unexpanded nodes. 
+
+
+>> Tokens are: 
+[creates, lists, ,, closed, list, expanded, nodes, open, list, created, unexpanded, nodes, .] 
+
+>> PoS Tags are: 
+[('creates', 'VERB'), ('lists', 'NOUN'), (',', 'PUNCT'), ('closed', 'ADJ'), ('list', 'NOUN'), ('expanded', 'VERB'), ('nodes', 'NOUN'), ('open', 'ADJ'), ('list', 'NOUN'), ('created', 'VERB'), ('unexpanded', 'ADJ'), ('nodes', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('creates', 'ROOT'), ('lists', 'dobj'), (',', 'punct'), ('closed', 'amod'), ('list', 'appos'), ('expanded', 'amod'), ('nodes', 'pobj'), ('open', 'amod'), ('list', 'conj'), ('created', 'amod'), ('unexpanded', 'conj'), ('nodes', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[creates, lists], [lists, ,], [,, closed], [closed, list], [list, expanded], [expanded, nodes], [nodes, open], [open, list], [list, created], [created, unexpanded], [unexpanded, nodes], [nodes, .]]
+
+>> Trigrams: 
+[[creates, lists, ,], [lists, ,, closed], [,, closed, list], [closed, list, expanded], [list, expanded, nodes], [expanded, nodes, open], [nodes, open, list], [open, list, created], [list, created, unexpanded], [created, unexpanded, nodes], [unexpanded, nodes, .]]
+
+>> Noun Phrases are: 
+[It, two lists, a closed list, the already expanded nodes, an open list, the created but unexpanded nodes]
+
+>> Named Entities are: 
+[('two', 'CARDINAL')]
+
+
+============================ Sentence 13 =============================
+
+In each iteration, a node with a minimum heuristic value is expanded, all its child nodes are created and placed in the closed list. 
+
+
+>> Tokens are: 
+[iteration, ,, node, minimum, heuristic, value, expanded, ,, child, nodes, created, placed, closed, list, .] 
+
+>> PoS Tags are: 
+[('iteration', 'NOUN'), (',', 'PUNCT'), ('node', 'NOUN'), ('minimum', 'ADJ'), ('heuristic', 'ADJ'), ('value', 'NOUN'), ('expanded', 'VERB'), (',', 'PUNCT'), ('child', 'NOUN'), ('nodes', 'NOUN'), ('created', 'VERB'), ('placed', 'VERB'), ('closed', 'ADJ'), ('list', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('iteration', 'pobj'), (',', 'punct'), ('node', 'nsubjpass'), ('minimum', 'amod'), ('heuristic', 'amod'), ('value', 'pobj'), ('expanded', 'ccomp'), (',', 'punct'), ('child', 'compound'), ('nodes', 'nsubjpass'), ('created', 'ROOT'), ('placed', 'conj'), ('closed', 'amod'), ('list', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[iteration, ,], [,, node], [node, minimum], [minimum, heuristic], [heuristic, value], [value, expanded], [expanded, ,], [,, child], [child, nodes], [nodes, created], [created, placed], [placed, closed], [closed, list], [list, .]]
+
+>> Trigrams: 
+[[iteration, ,, node], [,, node, minimum], [node, minimum, heuristic], [minimum, heuristic, value], [heuristic, value, expanded], [value, expanded, ,], [expanded, ,, child], [,, child, nodes], [child, nodes, created], [nodes, created, placed], [created, placed, closed], [placed, closed, list], [closed, list, .]]
+
+>> Noun Phrases are: 
+[each iteration, a node, a minimum heuristic value, all its child nodes, the closed list]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+Then, the heuristic function is applied to the child nodes and they are placed in the open list according to their heuristic value. 
+
+
+>> Tokens are: 
+[,, heuristic, function, applied, child, nodes, placed, open, list, according, heuristic, value, .] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('heuristic', 'ADJ'), ('function', 'NOUN'), ('applied', 'VERB'), ('child', 'NOUN'), ('nodes', 'NOUN'), ('placed', 'VERB'), ('open', 'ADJ'), ('list', 'NOUN'), ('according', 'VERB'), ('heuristic', 'ADJ'), ('value', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('heuristic', 'amod'), ('function', 'nsubjpass'), ('applied', 'ROOT'), ('child', 'compound'), ('nodes', 'pobj'), ('placed', 'conj'), ('open', 'amod'), ('list', 'pobj'), ('according', 'prep'), ('heuristic', 'amod'), ('value', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[,, heuristic], [heuristic, function], [function, applied], [applied, child], [child, nodes], [nodes, placed], [placed, open], [open, list], [list, according], [according, heuristic], [heuristic, value], [value, .]]
+
+>> Trigrams: 
+[[,, heuristic, function], [heuristic, function, applied], [function, applied, child], [applied, child, nodes], [child, nodes, placed], [nodes, placed, open], [placed, open, list], [open, list, according], [list, according, heuristic], [according, heuristic, value], [heuristic, value, .]]
+
+>> Noun Phrases are: 
+[the heuristic function, the child nodes, they, the open list, their heuristic value]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+The shorter paths are saved and the longer ones are disposed. 
+
+
+>> Tokens are: 
+[shorter, paths, saved, longer, ones, disposed, .] 
+
+>> PoS Tags are: 
+[('shorter', 'ADJ'), ('paths', 'NOUN'), ('saved', 'VERB'), ('longer', 'ADJ'), ('ones', 'NOUN'), ('disposed', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('shorter', 'amod'), ('paths', 'nsubjpass'), ('saved', 'ROOT'), ('longer', 'amod'), ('ones', 'nsubj'), ('disposed', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[shorter, paths], [paths, saved], [saved, longer], [longer, ones], [ones, disposed], [disposed, .]]
+
+>> Trigrams: 
+[[shorter, paths, saved], [paths, saved, longer], [saved, longer, ones], [longer, ones, disposed], [ones, disposed, .]]
+
+>> Noun Phrases are: 
+[The shorter paths, the longer ones]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+A * 
+
+
+>> Tokens are: 
+[*] 
+
+>> PoS Tags are: 
+[('*', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('*', 'punct')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+Search It is best-known form of Best First search. 
+
+
+>> Tokens are: 
+[Search, best, -, known, form, Best, search, .] 
+
+>> PoS Tags are: 
+[('Search', 'NOUN'), ('best', 'ADV'), ('-', 'PUNCT'), ('known', 'VERB'), ('form', 'NOUN'), ('Best', 'PROPN'), ('search', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Search', 'dep'), ('best', 'advmod'), ('-', 'punct'), ('known', 'amod'), ('form', 'attr'), ('Best', 'nmod'), ('search', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Search, best], [best, -], [-, known], [known, form], [form, Best], [Best, search], [search, .]]
+
+>> Trigrams: 
+[[Search, best, -], [best, -, known], [-, known, form], [known, form, Best], [form, Best, search], [Best, search, .]]
+
+>> Noun Phrases are: 
+[It, best-known form, Best First search]
+
+>> Named Entities are: 
+[('Best First', 'ORG')]
+
+
+============================ Sentence 18 =============================
+
+It avoids expanding paths that are already expensive, but expands most promising paths first. 
+
+
+>> Tokens are: 
+[avoids, expanding, paths, expensive, ,, expands, promising, paths, .] 
+
+>> PoS Tags are: 
+[('avoids', 'VERB'), ('expanding', 'VERB'), ('paths', 'NOUN'), ('expensive', 'ADJ'), (',', 'PUNCT'), ('expands', 'VERB'), ('promising', 'ADJ'), ('paths', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('avoids', 'ROOT'), ('expanding', 'xcomp'), ('paths', 'dobj'), ('expensive', 'acomp'), (',', 'punct'), ('expands', 'conj'), ('promising', 'amod'), ('paths', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[avoids, expanding], [expanding, paths], [paths, expensive], [expensive, ,], [,, expands], [expands, promising], [promising, paths], [paths, .]]
+
+>> Trigrams: 
+[[avoids, expanding, paths], [expanding, paths, expensive], [paths, expensive, ,], [expensive, ,, expands], [,, expands, promising], [expands, promising, paths], [promising, paths, .]]
+
+>> Noun Phrases are: 
+[It, paths, most promising paths]
+
+>> Named Entities are: 
+[('first', 'ORDINAL')]
+
+
+============================ Sentence 19 =============================
+
+f(n) 
+
+
+>> Tokens are: 
+[f(n, )] 
+
+>> PoS Tags are: 
+[('f(n', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('f(n', 'ROOT'), (')', 'punct')]
+
+>> Bigrams: 
+[[f(n, )]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[f(n]
+
+>> Named Entities are: 
+[('f(n', 'GPE')]
+
+
+============================ Sentence 20 =============================
+
+= 
+
+
+>> Tokens are: 
+[=] 
+
+>> PoS Tags are: 
+[('=', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('=', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+g(n) + h(n), where · g(n) the cost (so far) to reach the node · h(n) estimated cost to get from the node to the goal · f(n) estimated total cost of path through n to goal. 
+
+
+>> Tokens are: 
+[g(n, ), +, h(n, ), ,, ·, g(n, ), cost, (, far, ), reach, node, ·, h(n, ), estimated, cost, node, goal, ·, f(n, ), estimated, total, cost, path, n, goal, .] 
+
+>> PoS Tags are: 
+[('g(n', 'PROPN'), (')', 'PUNCT'), ('+', 'SYM'), ('h(n', 'PROPN'), (')', 'PUNCT'), (',', 'PUNCT'), ('·', 'PUNCT'), ('g(n', 'PROPN'), (')', 'PUNCT'), ('cost', 'NOUN'), ('(', 'PUNCT'), ('far', 'ADV'), (')', 'PUNCT'), ('reach', 'VERB'), ('node', 'NOUN'), ('·', 'PUNCT'), ('h(n', 'PROPN'), (')', 'PUNCT'), ('estimated', 'VERB'), ('cost', 'NOUN'), ('node', 'NOUN'), ('goal', 'NOUN'), ('·', 'PUNCT'), ('f(n', 'PROPN'), (')', 'PUNCT'), ('estimated', 'VERB'), ('total', 'ADJ'), ('cost', 'NOUN'), ('path', 'NOUN'), ('n', 'CCONJ'), ('goal', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('g(n', 'nsubj'), (')', 'punct'), ('+', 'punct'), ('h(n', 'appos'), (')', 'punct'), (',', 'punct'), ('·', 'punct'), ('g(n', 'relcl'), (')', 'punct'), ('cost', 'appos'), ('(', 'punct'), ('far', 'advmod'), (')', 'punct'), ('reach', 'relcl'), ('node', 'dobj'), ('·', 'punct'), ('h(n', 'appos'), (')', 'punct'), ('estimated', 'ROOT'), ('cost', 'dobj'), ('node', 'pobj'), ('goal', 'pobj'), ('·', 'punct'), ('f(n', 'nsubj'), (')', 'punct'), ('estimated', 'ccomp'), ('total', 'amod'), ('cost', 'dobj'), ('path', 'pobj'), ('n', 'cc'), ('goal', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[g(n, )], [), +], [+, h(n], [h(n, )], [), ,], [,, ·], [·, g(n], [g(n, )], [), cost], [cost, (], [(, far], [far, )], [), reach], [reach, node], [node, ·], [·, h(n], [h(n, )], [), estimated], [estimated, cost], [cost, node], [node, goal], [goal, ·], [·, f(n], [f(n, )], [), estimated], [estimated, total], [total, cost], [cost, path], [path, n], [n, goal], [goal, .]]
+
+>> Trigrams: 
+[[g(n, ), +], [), +, h(n], [+, h(n, )], [h(n, ), ,], [), ,, ·], [,, ·, g(n], [·, g(n, )], [g(n, ), cost], [), cost, (], [cost, (, far], [(, far, )], [far, ), reach], [), reach, node], [reach, node, ·], [node, ·, h(n], [·, h(n, )], [h(n, ), estimated], [), estimated, cost], [estimated, cost, node], [cost, node, goal], [node, goal, ·], [goal, ·, f(n], [·, f(n, )], [f(n, ), estimated], [), estimated, total], [estimated, total, cost], [total, cost, path], [cost, path, n], [path, n, goal], [n, goal, .]]
+
+>> Noun Phrases are: 
+[g(n, h(n, the cost, the node, · h(n, cost, the node, the goal, f(n, total cost, path, goal]
+
+>> Named Entities are: 
+[('g(n', 'GPE'), ('g(n', 'PERSON'), ('h(n', 'PERSON'), ('f(n', 'GPE')]
+
+
+============================ Sentence 22 =============================
+
+It is implemented using priority queue by increasing f(n). 
+
+
+>> Tokens are: 
+[implemented, priority, queue, increasing, f(n, ), .] 
+
+>> PoS Tags are: 
+[('implemented', 'VERB'), ('priority', 'NOUN'), ('queue', 'NOUN'), ('increasing', 'VERB'), ('f(n', 'PROPN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('implemented', 'ROOT'), ('priority', 'compound'), ('queue', 'dobj'), ('increasing', 'pcomp'), ('f(n', 'dobj'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[implemented, priority], [priority, queue], [queue, increasing], [increasing, f(n], [f(n, )], [), .]]
+
+>> Trigrams: 
+[[implemented, priority, queue], [priority, queue, increasing], [queue, increasing, f(n], [increasing, f(n, )], [f(n, ), .]]
+
+>> Noun Phrases are: 
+[It, priority queue, f(n]
+
+>> Named Entities are: 
+[('f(n', 'GPE')]
+
+
+============================ Sentence 23 =============================
+
+Greedy Best First Search It expands the node that is estimated to be closest to goal. 
+
+
+>> Tokens are: 
+[Greedy, Best, Search, expands, node, estimated, closest, goal, .] 
+
+>> PoS Tags are: 
+[('Greedy', 'PROPN'), ('Best', 'PROPN'), ('Search', 'PROPN'), ('expands', 'VERB'), ('node', 'NOUN'), ('estimated', 'VERB'), ('closest', 'ADJ'), ('goal', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Greedy', 'compound'), ('Best', 'compound'), ('Search', 'npadvmod'), ('expands', 'ROOT'), ('node', 'dobj'), ('estimated', 'relcl'), ('closest', 'acomp'), ('goal', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Greedy, Best], [Best, Search], [Search, expands], [expands, node], [node, estimated], [estimated, closest], [closest, goal], [goal, .]]
+
+>> Trigrams: 
+[[Greedy, Best, Search], [Best, Search, expands], [Search, expands, node], [expands, node, estimated], [node, estimated, closest], [estimated, closest, goal], [closest, goal, .]]
+
+>> Noun Phrases are: 
+[It, the node, goal]
+
+>> Named Entities are: 
+[('First', 'ORDINAL')]
+
+
+============================ Sentence 24 =============================
+
+It expands nodes based on f(n) = 
+
+
+>> Tokens are: 
+[expands, nodes, based, f(n, ), =] 
+
+>> PoS Tags are: 
+[('expands', 'VERB'), ('nodes', 'NOUN'), ('based', 'VERB'), ('f(n', 'PROPN'), (')', 'PUNCT'), ('=', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('expands', 'ROOT'), ('nodes', 'dobj'), ('based', 'acl'), ('f(n', 'pobj'), (')', 'punct'), ('=', 'punct')]
+
+>> Bigrams: 
+[[expands, nodes], [nodes, based], [based, f(n], [f(n, )], [), =]]
+
+>> Trigrams: 
+[[expands, nodes, based], [nodes, based, f(n], [based, f(n, )], [f(n, ), =]]
+
+>> Noun Phrases are: 
+[It, nodes, f(n]
+
+>> Named Entities are: 
+[('f(n', 'GPE')]
+
+
+============================ Sentence 25 =============================
+
+h(n). 
+
+
+>> Tokens are: 
+[h(n, ), .] 
+
+>> PoS Tags are: 
+[('h(n', 'PROPN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('h(n', 'ROOT'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[h(n, )], [), .]]
+
+>> Trigrams: 
+[[h(n, ), .]]
+
+>> Noun Phrases are: 
+[h(n]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+It is implemented using priority queue. 
+
+
+>> Tokens are: 
+[implemented, priority, queue, .] 
+
+>> PoS Tags are: 
+[('implemented', 'VERB'), ('priority', 'NOUN'), ('queue', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('implemented', 'ROOT'), ('priority', 'compound'), ('queue', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[implemented, priority], [priority, queue], [queue, .]]
+
+>> Trigrams: 
+[[implemented, priority, queue], [priority, queue, .]]
+
+>> Noun Phrases are: 
+[It, priority queue]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 27 =============================
+
+Disadvantage − It can get stuck in loops. 
+
+
+>> Tokens are: 
+[Disadvantage, −, stuck, loops, .] 
+
+>> PoS Tags are: 
+[('Disadvantage', 'NOUN'), ('−', 'PROPN'), ('stuck', 'VERB'), ('loops', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Disadvantage', 'compound'), ('−', 'npadvmod'), ('stuck', 'ROOT'), ('loops', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Disadvantage, −], [−, stuck], [stuck, loops], [loops, .]]
+
+>> Trigrams: 
+[[Disadvantage, −, stuck], [−, stuck, loops], [stuck, loops, .]]
+
+>> Noun Phrases are: 
+[It, loops]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 28 =============================
+
+It is not optimal. 
+
+
+>> Tokens are: 
+[optimal, .] 
+
+>> PoS Tags are: 
+[('optimal', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('optimal', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[optimal, .]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[It]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 29 =============================
+
+Local Search Algorithms They start from a prospective solution and then move to a neighboring solution. 
+
+
+>> Tokens are: 
+[Local, Search, Algorithms, start, prospective, solution, neighboring, solution, .] 
+
+>> PoS Tags are: 
+[('Local', 'PROPN'), ('Search', 'PROPN'), ('Algorithms', 'PROPN'), ('start', 'VERB'), ('prospective', 'ADJ'), ('solution', 'NOUN'), ('neighboring', 'NOUN'), ('solution', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Local', 'compound'), ('Search', 'compound'), ('Algorithms', 'npadvmod'), ('start', 'ROOT'), ('prospective', 'amod'), ('solution', 'pobj'), ('neighboring', 'compound'), ('solution', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Local, Search], [Search, Algorithms], [Algorithms, start], [start, prospective], [prospective, solution], [solution, neighboring], [neighboring, solution], [solution, .]]
+
+>> Trigrams: 
+[[Local, Search, Algorithms], [Search, Algorithms, start], [Algorithms, start, prospective], [start, prospective, solution], [prospective, solution, neighboring], [solution, neighboring, solution], [neighboring, solution, .]]
+
+>> Noun Phrases are: 
+[They, a prospective solution, a neighboring solution]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 30 =============================
+
+They can return a valid solution even if it is interrupted at any time before they end. 
+
+
+>> Tokens are: 
+[return, valid, solution, interrupted, time, end, .] 
+
+>> PoS Tags are: 
+[('return', 'VERB'), ('valid', 'ADJ'), ('solution', 'NOUN'), ('interrupted', 'VERB'), ('time', 'NOUN'), ('end', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('return', 'ROOT'), ('valid', 'amod'), ('solution', 'dobj'), ('interrupted', 'advcl'), ('time', 'pobj'), ('end', 'advcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[return, valid], [valid, solution], [solution, interrupted], [interrupted, time], [time, end], [end, .]]
+
+>> Trigrams: 
+[[return, valid, solution], [valid, solution, interrupted], [solution, interrupted, time], [interrupted, time, end], [time, end, .]]
+
+>> Noun Phrases are: 
+[They, a valid solution, it, any time, they]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 31 =============================
+
+Hill-Climbing Search 
+
+
+>> Tokens are: 
+[Hill, -, Climbing, Search] 
+
+>> PoS Tags are: 
+[('Hill', 'PROPN'), ('-', 'PUNCT'), ('Climbing', 'PROPN'), ('Search', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Hill', 'compound'), ('-', 'punct'), ('Climbing', 'compound'), ('Search', 'ROOT')]
+
+>> Bigrams: 
+[[Hill, -], [-, Climbing], [Climbing, Search]]
+
+>> Trigrams: 
+[[Hill, -, Climbing], [-, Climbing, Search]]
+
+>> Noun Phrases are: 
+[Hill-Climbing Search]
+
+>> Named Entities are: 
+[('Hill-Climbing', 'ORG')]
+
+
+============================ Sentence 32 =============================
+
+It is an iterative algorithm that starts with an arbitrary solution to a problem and attempts to find a better solution by changing a single element of the solution incrementally. 
+
+
+>> Tokens are: 
+[iterative, algorithm, starts, arbitrary, solution, problem, attempts, find, better, solution, changing, single, element, solution, incrementally, .] 
+
+>> PoS Tags are: 
+[('iterative', 'ADJ'), ('algorithm', 'NOUN'), ('starts', 'VERB'), ('arbitrary', 'ADJ'), ('solution', 'NOUN'), ('problem', 'NOUN'), ('attempts', 'NOUN'), ('find', 'VERB'), ('better', 'ADJ'), ('solution', 'NOUN'), ('changing', 'VERB'), ('single', 'ADJ'), ('element', 'NOUN'), ('solution', 'NOUN'), ('incrementally', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('iterative', 'amod'), ('algorithm', 'attr'), ('starts', 'relcl'), ('arbitrary', 'amod'), ('solution', 'pobj'), ('problem', 'pobj'), ('attempts', 'conj'), ('find', 'xcomp'), ('better', 'amod'), ('solution', 'dobj'), ('changing', 'pcomp'), ('single', 'amod'), ('element', 'dobj'), ('solution', 'pobj'), ('incrementally', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[iterative, algorithm], [algorithm, starts], [starts, arbitrary], [arbitrary, solution], [solution, problem], [problem, attempts], [attempts, find], [find, better], [better, solution], [solution, changing], [changing, single], [single, element], [element, solution], [solution, incrementally], [incrementally, .]]
+
+>> Trigrams: 
+[[iterative, algorithm, starts], [algorithm, starts, arbitrary], [starts, arbitrary, solution], [arbitrary, solution, problem], [solution, problem, attempts], [problem, attempts, find], [attempts, find, better], [find, better, solution], [better, solution, changing], [solution, changing, single], [changing, single, element], [single, element, solution], [element, solution, incrementally], [solution, incrementally, .]]
+
+>> Noun Phrases are: 
+[It, an iterative algorithm, an arbitrary solution, a problem, a better solution, a single element, the solution]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 33 =============================
+
+If the change produces a better solution, an incremental change is taken as a new solution. 
+
+
+>> Tokens are: 
+[change, produces, better, solution, ,, incremental, change, taken, new, solution, .] 
+
+>> PoS Tags are: 
+[('change', 'NOUN'), ('produces', 'VERB'), ('better', 'ADJ'), ('solution', 'NOUN'), (',', 'PUNCT'), ('incremental', 'ADJ'), ('change', 'NOUN'), ('taken', 'VERB'), ('new', 'ADJ'), ('solution', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('change', 'nsubj'), ('produces', 'advcl'), ('better', 'amod'), ('solution', 'dobj'), (',', 'punct'), ('incremental', 'amod'), ('change', 'nsubjpass'), ('taken', 'ROOT'), ('new', 'amod'), ('solution', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[change, produces], [produces, better], [better, solution], [solution, ,], [,, incremental], [incremental, change], [change, taken], [taken, new], [new, solution], [solution, .]]
+
+>> Trigrams: 
+[[change, produces, better], [produces, better, solution], [better, solution, ,], [solution, ,, incremental], [,, incremental, change], [incremental, change, taken], [change, taken, new], [taken, new, solution], [new, solution, .]]
+
+>> Noun Phrases are: 
+[the change, a better solution, an incremental change, a new solution]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 34 =============================
+
+This process is repeated until there are no further improvements. 
+
+
+>> Tokens are: 
+[process, repeated, improvements, .] 
+
+>> PoS Tags are: 
+[('process', 'NOUN'), ('repeated', 'VERB'), ('improvements', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('process', 'nsubjpass'), ('repeated', 'ROOT'), ('improvements', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[process, repeated], [repeated, improvements], [improvements, .]]
+
+>> Trigrams: 
+[[process, repeated, improvements], [repeated, improvements, .]]
+
+>> Noun Phrases are: 
+[This process, no further improvements]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 35 =============================
+
+function Hill-Climbing (problem), returns a state that is a local maximum. 
+
+
+>> Tokens are: 
+[function, Hill, -, Climbing, (, problem, ), ,, returns, state, local, maximum, .] 
+
+>> PoS Tags are: 
+[('function', 'VERB'), ('Hill', 'NOUN'), ('-', 'PUNCT'), ('Climbing', 'PROPN'), ('(', 'PUNCT'), ('problem', 'NOUN'), (')', 'PUNCT'), (',', 'PUNCT'), ('returns', 'VERB'), ('state', 'NOUN'), ('local', 'ADJ'), ('maximum', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('function', 'ROOT'), ('Hill', 'compound'), ('-', 'punct'), ('Climbing', 'nsubj'), ('(', 'punct'), ('problem', 'appos'), (')', 'punct'), (',', 'punct'), ('returns', 'ccomp'), ('state', 'dobj'), ('local', 'amod'), ('maximum', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[function, Hill], [Hill, -], [-, Climbing], [Climbing, (], [(, problem], [problem, )], [), ,], [,, returns], [returns, state], [state, local], [local, maximum], [maximum, .]]
+
+>> Trigrams: 
+[[function, Hill, -], [Hill, -, Climbing], [-, Climbing, (], [Climbing, (, problem], [(, problem, )], [problem, ), ,], [), ,, returns], [,, returns, state], [returns, state, local], [state, local, maximum], [local, maximum, .]]
+
+>> Noun Phrases are: 
+[Hill-Climbing, (problem, a state, a local maximum]
+
+>> Named Entities are: 
+[('Hill-Climbing', 'ORG')]
+
+
+============================ Sentence 36 =============================
+
+inputs: problem, a problem local variables: current, a node                  neighbor, a node current <-Make_Node(Initial-State[problem]) loop    do neighbor <- a highest_valued successor of current       if Value[neighbor] ≤ Value[current] then       return State[current]       current <- neighbor				   	 end   
+
+
+>> Tokens are: 
+[inputs, :, problem, ,, problem, local, variables, :, current, ,, node,                  , neighbor, ,, node, current, <, -Make_Node(Initial, -, State[problem, ], ), loop,    , neighbor, <, -, highest_valued, successor, current,       , Value[neighbor, ], ≤, Value[current, ],       , return, State[current, ],       , current, <, -, neighbor, 				   	 , end,  ] 
+
+>> PoS Tags are: 
+[('inputs', 'NOUN'), (':', 'PUNCT'), ('problem', 'NOUN'), (',', 'PUNCT'), ('problem', 'NOUN'), ('local', 'ADJ'), ('variables', 'NOUN'), (':', 'PUNCT'), ('current', 'ADJ'), (',', 'PUNCT'), ('node', 'NOUN'), ('                 ', 'SPACE'), ('neighbor', 'NOUN'), (',', 'PUNCT'), ('node', 'NOUN'), ('current', 'ADJ'), ('<', 'X'), ('-Make_Node(Initial', 'PUNCT'), ('-', 'PUNCT'), ('State[problem', 'PROPN'), (']', 'PUNCT'), (')', 'PUNCT'), ('loop', 'NOUN'), ('   ', 'SPACE'), ('neighbor', 'NOUN'), ('<', 'X'), ('-', 'PUNCT'), ('highest_valued', 'VERB'), ('successor', 'NOUN'), ('current', 'ADJ'), ('      ', 'SPACE'), ('Value[neighbor', 'PROPN'), (']', 'PUNCT'), ('≤', 'ADJ'), ('Value[current', 'NOUN'), (']', 'PUNCT'), ('      ', 'SPACE'), ('return', 'VERB'), ('State[current', 'NOUN'), (']', 'PUNCT'), ('      ', 'SPACE'), ('current', 'ADJ'), ('<', 'X'), ('-', 'PUNCT'), ('neighbor', 'NOUN'), ('\t\t\t\t   \t ', 'SPACE'), ('end', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('inputs', 'meta'), (':', 'punct'), ('problem', 'dobj'), (',', 'punct'), ('problem', 'nmod'), ('local', 'amod'), ('variables', 'dobj'), (':', 'punct'), ('current', 'amod'), (',', 'punct'), ('node', 'amod'), ('                 ', 'compound'), ('neighbor', 'appos'), (',', 'punct'), ('node', 'amod'), ('current', 'appos'), ('<', 'punct'), ('-Make_Node(Initial', 'punct'), ('-', 'punct'), ('State[problem', 'dobj'), (']', 'punct'), (')', 'punct'), ('loop', 'nsubj'), ('   ', 'advmod'), ('neighbor', 'dobj'), ('<', 'dobj'), ('-', 'punct'), ('highest_valued', 'amod'), ('successor', 'dobj'), ('current', 'amod'), ('      ', 'pobj'), ('Value[neighbor', 'nmod'), (']', 'punct'), ('≤', 'amod'), ('Value[current', 'advcl'), (']', 'punct'), ('      ', 'nsubj'), ('return', 'ROOT'), ('State[current', 'dobj'), (']', 'punct'), ('      ', 'nmod'), ('current', 'amod'), ('<', 'punct'), ('-', 'punct'), ('neighbor', 'compound'), ('\t\t\t\t   \t ', 'compound'), ('end', 'npadvmod'), (' ', 'punct')]
+
+>> Bigrams: 
+[[inputs, :], [:, problem], [problem, ,], [,, problem], [problem, local], [local, variables], [variables, :], [:, current], [current, ,], [,, node], [node,                  ], [                 , neighbor], [neighbor, ,], [,, node], [node, current], [current, <], [<, -Make_Node(Initial], [-Make_Node(Initial, -], [-, State[problem], [State[problem, ]], [], )], [), loop], [loop,    ], [   , neighbor], [neighbor, <], [<, -], [-, highest_valued], [highest_valued, successor], [successor, current], [current,       ], [      , Value[neighbor], [Value[neighbor, ]], [], ≤], [≤, Value[current], [Value[current, ]], [],       ], [      , return], [return, State[current], [State[current, ]], [],       ], [      , current], [current, <], [<, -], [-, neighbor], [neighbor, 				   	 ], [				   	 , end], [end,  ]]
+
+>> Trigrams: 
+[[inputs, :, problem], [:, problem, ,], [problem, ,, problem], [,, problem, local], [problem, local, variables], [local, variables, :], [variables, :, current], [:, current, ,], [current, ,, node], [,, node,                  ], [node,                  , neighbor], [                 , neighbor, ,], [neighbor, ,, node], [,, node, current], [node, current, <], [current, <, -Make_Node(Initial], [<, -Make_Node(Initial, -], [-Make_Node(Initial, -, State[problem], [-, State[problem, ]], [State[problem, ], )], [], ), loop], [), loop,    ], [loop,    , neighbor], [   , neighbor, <], [neighbor, <, -], [<, -, highest_valued], [-, highest_valued, successor], [highest_valued, successor, current], [successor, current,       ], [current,       , Value[neighbor], [      , Value[neighbor, ]], [Value[neighbor, ], ≤], [], ≤, Value[current], [≤, Value[current, ]], [Value[current, ],       ], [],       , return], [      , return, State[current], [return, State[current, ]], [State[current, ],       ], [],       , current], [      , current, <], [current, <, -], [<, -, neighbor], [-, neighbor, 				   	 ], [neighbor, 				   	 , end], [				   	 , end,  ]]
+
+>> Noun Phrases are: 
+[problem, a problem local variables, current, a node                  neighbor, State[problem, neighbor, a highest_valued successor, State[current]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 37 =============================
+
+Disadvantage − 
+
+
+>> Tokens are: 
+[Disadvantage, −] 
+
+>> PoS Tags are: 
+[('Disadvantage', 'PROPN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Disadvantage', 'compound'), ('−', 'ROOT')]
+
+>> Bigrams: 
+[[Disadvantage, −]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Disadvantage −]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 38 =============================
+
+This algorithm is neither complete, nor optimal. 
+
+
+>> Tokens are: 
+[algorithm, complete, ,, optimal, .] 
+
+>> PoS Tags are: 
+[('algorithm', 'NOUN'), ('complete', 'ADJ'), (',', 'PUNCT'), ('optimal', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('algorithm', 'nsubj'), ('complete', 'acomp'), (',', 'punct'), ('optimal', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[algorithm, complete], [complete, ,], [,, optimal], [optimal, .]]
+
+>> Trigrams: 
+[[algorithm, complete, ,], [complete, ,, optimal], [,, optimal, .]]
+
+>> Noun Phrases are: 
+[This algorithm]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 39 =============================
+
+Local Beam Search 
+
+
+>> Tokens are: 
+[Local, Beam, Search] 
+
+>> PoS Tags are: 
+[('Local', 'PROPN'), ('Beam', 'PROPN'), ('Search', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Local', 'compound'), ('Beam', 'compound'), ('Search', 'ROOT')]
+
+>> Bigrams: 
+[[Local, Beam], [Beam, Search]]
+
+>> Trigrams: 
+[[Local, Beam, Search]]
+
+>> Noun Phrases are: 
+[Local Beam Search]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 40 =============================
+
+In this algorithm, it holds k number of states at any given time. 
+
+
+>> Tokens are: 
+[algorithm, ,, holds, k, number, states, given, time, .] 
+
+>> PoS Tags are: 
+[('algorithm', 'NOUN'), (',', 'PUNCT'), ('holds', 'VERB'), ('k', 'DET'), ('number', 'NOUN'), ('states', 'NOUN'), ('given', 'VERB'), ('time', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('algorithm', 'pobj'), (',', 'punct'), ('holds', 'ROOT'), ('k', 'det'), ('number', 'dobj'), ('states', 'pobj'), ('given', 'amod'), ('time', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[algorithm, ,], [,, holds], [holds, k], [k, number], [number, states], [states, given], [given, time], [time, .]]
+
+>> Trigrams: 
+[[algorithm, ,, holds], [,, holds, k], [holds, k, number], [k, number, states], [number, states, given], [states, given, time], [given, time, .]]
+
+>> Noun Phrases are: 
+[this algorithm, it, k number, states, any given time]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 41 =============================
+
+At the start, these states are generated randomly. 
+
+
+>> Tokens are: 
+[start, ,, states, generated, randomly, .] 
+
+>> PoS Tags are: 
+[('start', 'NOUN'), (',', 'PUNCT'), ('states', 'NOUN'), ('generated', 'VERB'), ('randomly', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('start', 'pobj'), (',', 'punct'), ('states', 'nsubjpass'), ('generated', 'ROOT'), ('randomly', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[start, ,], [,, states], [states, generated], [generated, randomly], [randomly, .]]
+
+>> Trigrams: 
+[[start, ,, states], [,, states, generated], [states, generated, randomly], [generated, randomly, .]]
+
+>> Noun Phrases are: 
+[the start, these states]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 42 =============================
+
+The successors of these k states are computed with the help of objective function. 
+
+
+>> Tokens are: 
+[successors, k, states, computed, help, objective, function, .] 
+
+>> PoS Tags are: 
+[('successors', 'NOUN'), ('k', 'X'), ('states', 'NOUN'), ('computed', 'VERB'), ('help', 'NOUN'), ('objective', 'ADJ'), ('function', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('successors', 'nsubjpass'), ('k', 'nmod'), ('states', 'appos'), ('computed', 'ROOT'), ('help', 'pobj'), ('objective', 'amod'), ('function', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[successors, k], [k, states], [states, computed], [computed, help], [help, objective], [objective, function], [function, .]]
+
+>> Trigrams: 
+[[successors, k, states], [k, states, computed], [states, computed, help], [computed, help, objective], [help, objective, function], [objective, function, .]]
+
+>> Noun Phrases are: 
+[The successors, k states, the help, objective function]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 43 =============================
+
+If any of these successors is the maximum value of the objective function, then the algorithm stops. 
+
+
+>> Tokens are: 
+[successors, maximum, value, objective, function, ,, algorithm, stops, .] 
+
+>> PoS Tags are: 
+[('successors', 'NOUN'), ('maximum', 'ADJ'), ('value', 'NOUN'), ('objective', 'ADJ'), ('function', 'NOUN'), (',', 'PUNCT'), ('algorithm', 'NOUN'), ('stops', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('successors', 'pobj'), ('maximum', 'amod'), ('value', 'attr'), ('objective', 'amod'), ('function', 'pobj'), (',', 'punct'), ('algorithm', 'nsubj'), ('stops', 'ROOT'), ('.', 'punct')]
+
+>> Bigrams: 
+[[successors, maximum], [maximum, value], [value, objective], [objective, function], [function, ,], [,, algorithm], [algorithm, stops], [stops, .]]
+
+>> Trigrams: 
+[[successors, maximum, value], [maximum, value, objective], [value, objective, function], [objective, function, ,], [function, ,, algorithm], [,, algorithm, stops], [algorithm, stops, .]]
+
+>> Noun Phrases are: 
+[these successors, the maximum value, the objective function, the algorithm]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 44 =============================
+
+Otherwise the (initial k states and k number of successors of the states = 2k) states are placed in a pool. 
+
+
+>> Tokens are: 
+[(, initial, k, states, k, number, successors, states, =, 2k, ), states, placed, pool, .] 
+
+>> PoS Tags are: 
+[('(', 'PUNCT'), ('initial', 'ADJ'), ('k', 'NOUN'), ('states', 'NOUN'), ('k', 'DET'), ('number', 'NOUN'), ('successors', 'NOUN'), ('states', 'NOUN'), ('=', 'SYM'), ('2k', 'NUM'), (')', 'PUNCT'), ('states', 'NOUN'), ('placed', 'VERB'), ('pool', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('(', 'punct'), ('initial', 'amod'), ('k', 'punct'), ('states', 'nmod'), ('k', 'det'), ('number', 'conj'), ('successors', 'pobj'), ('states', 'pobj'), ('=', 'compound'), ('2k', 'appos'), (')', 'punct'), ('states', 'nsubjpass'), ('placed', 'ROOT'), ('pool', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[(, initial], [initial, k], [k, states], [states, k], [k, number], [number, successors], [successors, states], [states, =], [=, 2k], [2k, )], [), states], [states, placed], [placed, pool], [pool, .]]
+
+>> Trigrams: 
+[[(, initial, k], [initial, k, states], [k, states, k], [states, k, number], [k, number, successors], [number, successors, states], [successors, states, =], [states, =, 2k], [=, 2k, )], [2k, ), states], [), states, placed], [states, placed, pool], [placed, pool, .]]
+
+>> Noun Phrases are: 
+[successors, the states, a pool]
+
+>> Named Entities are: 
+[('2k', 'CARDINAL')]
+
+
+============================ Sentence 45 =============================
+
+The pool is then sorted numerically. 
+
+
+>> Tokens are: 
+[pool, sorted, numerically, .] 
+
+>> PoS Tags are: 
+[('pool', 'NOUN'), ('sorted', 'VERB'), ('numerically', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('pool', 'nsubj'), ('sorted', 'ROOT'), ('numerically', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[pool, sorted], [sorted, numerically], [numerically, .]]
+
+>> Trigrams: 
+[[pool, sorted, numerically], [sorted, numerically, .]]
+
+>> Noun Phrases are: 
+[The pool]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 46 =============================
+
+The highest k states are selected as new initial states. 
+
+
+>> Tokens are: 
+[highest, k, states, selected, new, initial, states, .] 
+
+>> PoS Tags are: 
+[('highest', 'ADJ'), ('k', 'NOUN'), ('states', 'NOUN'), ('selected', 'VERB'), ('new', 'ADJ'), ('initial', 'ADJ'), ('states', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('highest', 'amod'), ('k', 'punct'), ('states', 'nsubjpass'), ('selected', 'ROOT'), ('new', 'amod'), ('initial', 'amod'), ('states', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[highest, k], [k, states], [states, selected], [selected, new], [new, initial], [initial, states], [states, .]]
+
+>> Trigrams: 
+[[highest, k, states], [k, states, selected], [states, selected, new], [selected, new, initial], [new, initial, states], [initial, states, .]]
+
+>> Noun Phrases are: 
+[The highest k states, new initial states]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 47 =============================
+
+This process continues until a maximum value is reached. 
+
+
+>> Tokens are: 
+[process, continues, maximum, value, reached, .] 
+
+>> PoS Tags are: 
+[('process', 'NOUN'), ('continues', 'VERB'), ('maximum', 'ADJ'), ('value', 'NOUN'), ('reached', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('process', 'nsubj'), ('continues', 'ROOT'), ('maximum', 'amod'), ('value', 'nsubjpass'), ('reached', 'advcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[process, continues], [continues, maximum], [maximum, value], [value, reached], [reached, .]]
+
+>> Trigrams: 
+[[process, continues, maximum], [continues, maximum, value], [maximum, value, reached], [value, reached, .]]
+
+>> Noun Phrases are: 
+[This process, a maximum value]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 48 =============================
+
+function BeamSearch( problem, k), returns a solution state. 
+
+
+>> Tokens are: 
+[function, BeamSearch, (, problem, ,, k, ), ,, returns, solution, state, .] 
+
+>> PoS Tags are: 
+[('function', 'VERB'), ('BeamSearch', 'PROPN'), ('(', 'PUNCT'), ('problem', 'NOUN'), (',', 'PUNCT'), ('k', 'NOUN'), (')', 'PUNCT'), (',', 'PUNCT'), ('returns', 'VERB'), ('solution', 'NOUN'), ('state', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('function', 'advcl'), ('BeamSearch', 'dobj'), ('(', 'punct'), ('problem', 'appos'), (',', 'punct'), ('k', 'appos'), (')', 'punct'), (',', 'punct'), ('returns', 'ROOT'), ('solution', 'compound'), ('state', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[function, BeamSearch], [BeamSearch, (], [(, problem], [problem, ,], [,, k], [k, )], [), ,], [,, returns], [returns, solution], [solution, state], [state, .]]
+
+>> Trigrams: 
+[[function, BeamSearch, (], [BeamSearch, (, problem], [(, problem, ,], [problem, ,, k], [,, k, )], [k, ), ,], [), ,, returns], [,, returns, solution], [returns, solution, state], [solution, state, .]]
+
+>> Noun Phrases are: 
+[BeamSearch, ( problem, k, a solution state]
+
+>> Named Entities are: 
+[('BeamSearch', 'ORG')]
+
+
+============================ Sentence 49 =============================
+
+start with k randomly generated states loop    generate all successors of all k states    if any of the states = solution, then return the state    else select the k best successors end   
+
+
+>> Tokens are: 
+[start, k, randomly, generated, states, loop,    , generate, successors, k, states,    , states, =, solution, ,, return, state,    , select, k, best, successors, end,  ] 
+
+>> PoS Tags are: 
+[('start', 'VERB'), ('k', 'NOUN'), ('randomly', 'ADV'), ('generated', 'VERB'), ('states', 'NOUN'), ('loop', 'VERB'), ('   ', 'SPACE'), ('generate', 'VERB'), ('successors', 'NOUN'), ('k', 'X'), ('states', 'VERB'), ('   ', 'SPACE'), ('states', 'NOUN'), ('=', 'SYM'), ('solution', 'NOUN'), (',', 'PUNCT'), ('return', 'VERB'), ('state', 'NOUN'), ('   ', 'SPACE'), ('select', 'VERB'), ('k', 'X'), ('best', 'ADJ'), ('successors', 'NOUN'), ('end', 'VERB'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('start', 'ROOT'), ('k', 'pcomp'), ('randomly', 'advmod'), ('generated', 'amod'), ('states', 'pobj'), ('loop', 'pobj'), ('   ', 'advmod'), ('generate', 'ccomp'), ('successors', 'dobj'), ('k', 'nsubj'), ('states', 'advcl'), ('   ', 'dobj'), ('states', 'pobj'), ('=', 'compound'), ('solution', 'advcl'), (',', 'punct'), ('return', 'dep'), ('state', 'dobj'), ('   ', 'dobj'), ('select', 'dep'), ('k', 'det'), ('best', 'amod'), ('successors', 'nsubj'), ('end', 'ccomp'), (' ', 'dobj')]
+
+>> Bigrams: 
+[[start, k], [k, randomly], [randomly, generated], [generated, states], [states, loop], [loop,    ], [   , generate], [generate, successors], [successors, k], [k, states], [states,    ], [   , states], [states, =], [=, solution], [solution, ,], [,, return], [return, state], [state,    ], [   , select], [select, k], [k, best], [best, successors], [successors, end], [end,  ]]
+
+>> Trigrams: 
+[[start, k, randomly], [k, randomly, generated], [randomly, generated, states], [generated, states, loop], [states, loop,    ], [loop,    , generate], [   , generate, successors], [generate, successors, k], [successors, k, states], [k, states,    ], [states,    , states], [   , states, =], [states, =, solution], [=, solution, ,], [solution, ,, return], [,, return, state], [return, state,    ], [state,    , select], [   , select, k], [select, k, best], [k, best, successors], [best, successors, end], [successors, end,  ]]
+
+>> Noun Phrases are: 
+[k, randomly generated states, all successors, the states, the state, the k best successors]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 50 =============================
+
+Simulated Annealing Annealing is the process of heating and cooling a metal to change its internal structure for modifying its physical properties. 
+
+
+>> Tokens are: 
+[Simulated, Annealing, Annealing, process, heating, cooling, metal, change, internal, structure, modifying, physical, properties, .] 
+
+>> PoS Tags are: 
+[('Simulated', 'PROPN'), ('Annealing', 'PROPN'), ('Annealing', 'PROPN'), ('process', 'NOUN'), ('heating', 'NOUN'), ('cooling', 'VERB'), ('metal', 'NOUN'), ('change', 'VERB'), ('internal', 'ADJ'), ('structure', 'NOUN'), ('modifying', 'VERB'), ('physical', 'ADJ'), ('properties', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Simulated', 'compound'), ('Annealing', 'compound'), ('Annealing', 'nsubj'), ('process', 'attr'), ('heating', 'pcomp'), ('cooling', 'conj'), ('metal', 'dobj'), ('change', 'xcomp'), ('internal', 'amod'), ('structure', 'dobj'), ('modifying', 'pcomp'), ('physical', 'amod'), ('properties', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Simulated, Annealing], [Annealing, Annealing], [Annealing, process], [process, heating], [heating, cooling], [cooling, metal], [metal, change], [change, internal], [internal, structure], [structure, modifying], [modifying, physical], [physical, properties], [properties, .]]
+
+>> Trigrams: 
+[[Simulated, Annealing, Annealing], [Annealing, Annealing, process], [Annealing, process, heating], [process, heating, cooling], [heating, cooling, metal], [cooling, metal, change], [metal, change, internal], [change, internal, structure], [internal, structure, modifying], [structure, modifying, physical], [modifying, physical, properties], [physical, properties, .]]
+
+>> Noun Phrases are: 
+[Simulated Annealing Annealing, the process, heating, a metal, its internal structure, its physical properties]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 51 =============================
+
+When the metal cools, its new structure is seized, and the metal retains its newly obtained properties. 
+
+
+>> Tokens are: 
+[metal, cools, ,, new, structure, seized, ,, metal, retains, newly, obtained, properties, .] 
+
+>> PoS Tags are: 
+[('metal', 'NOUN'), ('cools', 'VERB'), (',', 'PUNCT'), ('new', 'ADJ'), ('structure', 'NOUN'), ('seized', 'VERB'), (',', 'PUNCT'), ('metal', 'NOUN'), ('retains', 'VERB'), ('newly', 'ADV'), ('obtained', 'VERB'), ('properties', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('metal', 'nsubj'), ('cools', 'advcl'), (',', 'punct'), ('new', 'amod'), ('structure', 'nsubjpass'), ('seized', 'ROOT'), (',', 'punct'), ('metal', 'nsubj'), ('retains', 'conj'), ('newly', 'advmod'), ('obtained', 'amod'), ('properties', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[metal, cools], [cools, ,], [,, new], [new, structure], [structure, seized], [seized, ,], [,, metal], [metal, retains], [retains, newly], [newly, obtained], [obtained, properties], [properties, .]]
+
+>> Trigrams: 
+[[metal, cools, ,], [cools, ,, new], [,, new, structure], [new, structure, seized], [structure, seized, ,], [seized, ,, metal], [,, metal, retains], [metal, retains, newly], [retains, newly, obtained], [newly, obtained, properties], [obtained, properties, .]]
+
+>> Noun Phrases are: 
+[the metal, its new structure, the metal, its newly obtained properties]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 52 =============================
+
+In simulated annealing process, the temperature is kept variable. 
+
+
+>> Tokens are: 
+[simulated, annealing, process, ,, temperature, kept, variable, .] 
+
+>> PoS Tags are: 
+[('simulated', 'ADJ'), ('annealing', 'NOUN'), ('process', 'NOUN'), (',', 'PUNCT'), ('temperature', 'NOUN'), ('kept', 'VERB'), ('variable', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('simulated', 'amod'), ('annealing', 'compound'), ('process', 'pobj'), (',', 'punct'), ('temperature', 'nsubjpass'), ('kept', 'ROOT'), ('variable', 'oprd'), ('.', 'punct')]
+
+>> Bigrams: 
+[[simulated, annealing], [annealing, process], [process, ,], [,, temperature], [temperature, kept], [kept, variable], [variable, .]]
+
+>> Trigrams: 
+[[simulated, annealing, process], [annealing, process, ,], [process, ,, temperature], [,, temperature, kept], [temperature, kept, variable], [kept, variable, .]]
+
+>> Noun Phrases are: 
+[simulated annealing process, the temperature]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 53 =============================
+
+We initially set the temperature high and then allow it to ‘cool' slowly as the algorithm proceeds. 
+
+
+>> Tokens are: 
+[initially, set, temperature, high, allow, ‘, cool, ', slowly, algorithm, proceeds, .] 
+
+>> PoS Tags are: 
+[('initially', 'ADV'), ('set', 'VERB'), ('temperature', 'NOUN'), ('high', 'ADJ'), ('allow', 'VERB'), ('‘', 'PUNCT'), ('cool', 'VERB'), ("'", 'PUNCT'), ('slowly', 'ADV'), ('algorithm', 'NOUN'), ('proceeds', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('initially', 'advmod'), ('set', 'ROOT'), ('temperature', 'dobj'), ('high', 'advmod'), ('allow', 'conj'), ('‘', 'punct'), ('cool', 'ccomp'), ("'", 'punct'), ('slowly', 'advmod'), ('algorithm', 'amod'), ('proceeds', 'advcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[initially, set], [set, temperature], [temperature, high], [high, allow], [allow, ‘], [‘, cool], [cool, '], [', slowly], [slowly, algorithm], [algorithm, proceeds], [proceeds, .]]
+
+>> Trigrams: 
+[[initially, set, temperature], [set, temperature, high], [temperature, high, allow], [high, allow, ‘], [allow, ‘, cool], [‘, cool, '], [cool, ', slowly], [', slowly, algorithm], [slowly, algorithm, proceeds], [algorithm, proceeds, .]]
+
+>> Noun Phrases are: 
+[We, the temperature, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 54 =============================
+
+When the temperature is high, the algorithm is allowed to accept worse solutions with high frequency. 
+
+
+>> Tokens are: 
+[temperature, high, ,, algorithm, allowed, accept, worse, solutions, high, frequency, .] 
+
+>> PoS Tags are: 
+[('temperature', 'NOUN'), ('high', 'ADJ'), (',', 'PUNCT'), ('algorithm', 'NOUN'), ('allowed', 'VERB'), ('accept', 'VERB'), ('worse', 'ADJ'), ('solutions', 'NOUN'), ('high', 'ADJ'), ('frequency', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('temperature', 'nsubj'), ('high', 'acomp'), (',', 'punct'), ('algorithm', 'nsubjpass'), ('allowed', 'ROOT'), ('accept', 'xcomp'), ('worse', 'amod'), ('solutions', 'dobj'), ('high', 'amod'), ('frequency', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[temperature, high], [high, ,], [,, algorithm], [algorithm, allowed], [allowed, accept], [accept, worse], [worse, solutions], [solutions, high], [high, frequency], [frequency, .]]
+
+>> Trigrams: 
+[[temperature, high, ,], [high, ,, algorithm], [,, algorithm, allowed], [algorithm, allowed, accept], [allowed, accept, worse], [accept, worse, solutions], [worse, solutions, high], [solutions, high, frequency], [high, frequency, .]]
+
+>> Noun Phrases are: 
+[the temperature, the algorithm, worse solutions, high frequency]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 55 =============================
+
+Start · Initialize k = 0; L = integer number of variables; · From i → j, search the performance difference Δ. · 
+
+
+>> Tokens are: 
+[Start, ·, Initialize, k, =, 0, ;, L, =, integer, number, variables, ;, ·, →, j, ,, search, performance, difference, Δ., ·] 
+
+>> PoS Tags are: 
+[('Start', 'VERB'), ('·', 'PUNCT'), ('Initialize', 'PROPN'), ('k', 'PUNCT'), ('=', 'SYM'), ('0', 'NUM'), (';', 'PUNCT'), ('L', 'NOUN'), ('=', 'SYM'), ('integer', 'NOUN'), ('number', 'NOUN'), ('variables', 'NOUN'), (';', 'PUNCT'), ('·', 'PUNCT'), ('→', 'SYM'), ('j', 'X'), (',', 'PUNCT'), ('search', 'VERB'), ('performance', 'NOUN'), ('difference', 'NOUN'), ('Δ.', 'PROPN'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Start', 'ROOT'), ('·', 'punct'), ('Initialize', 'xcomp'), ('k', 'punct'), ('=', 'punct'), ('0', 'nummod'), (';', 'punct'), ('L', 'npadvmod'), ('=', 'punct'), ('integer', 'compound'), ('number', 'appos'), ('variables', 'pobj'), (';', 'punct'), ('·', 'punct'), ('→', 'punct'), ('j', 'appos'), (',', 'punct'), ('search', 'conj'), ('performance', 'compound'), ('difference', 'dobj'), ('Δ.', 'advcl'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Start, ·], [·, Initialize], [Initialize, k], [k, =], [=, 0], [0, ;], [;, L], [L, =], [=, integer], [integer, number], [number, variables], [variables, ;], [;, ·], [·, →], [→, j], [j, ,], [,, search], [search, performance], [performance, difference], [difference, Δ.], [Δ., ·]]
+
+>> Trigrams: 
+[[Start, ·, Initialize], [·, Initialize, k], [Initialize, k, =], [k, =, 0], [=, 0, ;], [0, ;, L], [;, L, =], [L, =, integer], [=, integer, number], [integer, number, variables], [number, variables, ;], [variables, ;, ·], [;, ·, →], [·, →, j], [→, j, ,], [j, ,, search], [,, search, performance], [search, performance, difference], [performance, difference, Δ.], [difference, Δ., ·]]
+
+>> Noun Phrases are: 
+[integer number, variables, i, the performance difference]
+
+>> Named Entities are: 
+[('0', 'CARDINAL')]
+
+
+============================ Sentence 56 =============================
+
+If Δ <= 0 then accept else if exp(-Δ/T(k)) 
+
+
+>> Tokens are: 
+[Δ, <, =, 0, accept, exp(-Δ, /, T(k, ), )] 
+
+>> PoS Tags are: 
+[('Δ', 'NOUN'), ('<', 'X'), ('=', 'SYM'), ('0', 'AUX'), ('accept', 'VERB'), ('exp(-Δ', 'NOUN'), ('/', 'SYM'), ('T(k', 'NOUN'), (')', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Δ', 'nsubj'), ('<', 'dep'), ('=', 'punct'), ('0', 'aux'), ('accept', 'ROOT'), ('exp(-Δ', 'pobj'), ('/', 'punct'), ('T(k', 'npadvmod'), (')', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[Δ, <], [<, =], [=, 0], [0, accept], [accept, exp(-Δ], [exp(-Δ, /], [/, T(k], [T(k, )], [), )]]
+
+>> Trigrams: 
+[[Δ, <, =], [<, =, 0], [=, 0, accept], [0, accept, exp(-Δ], [accept, exp(-Δ, /], [exp(-Δ, /, T(k], [/, T(k, )], [T(k, ), )]]
+
+>> Noun Phrases are: 
+[Δ, exp(-Δ]
+
+>> Named Entities are: 
+[('0', 'CARDINAL')]
+
+
+============================ Sentence 57 =============================
+
+> random(0,1) then accept; · 
+
+
+>> Tokens are: 
+[>, random(0,1, ), accept, ;, ·] 
+
+>> PoS Tags are: 
+[('>', 'X'), ('random(0,1', 'NOUN'), (')', 'PUNCT'), ('accept', 'VERB'), (';', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('>', 'punct'), ('random(0,1', 'nsubj'), (')', 'punct'), ('accept', 'ROOT'), (';', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[>, random(0,1], [random(0,1, )], [), accept], [accept, ;], [;, ·]]
+
+>> Trigrams: 
+[[>, random(0,1, )], [random(0,1, ), accept], [), accept, ;], [accept, ;, ·]]
+
+>> Noun Phrases are: 
+[> random(0,1]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 58 =============================
+
+Repeat steps 1 and 2 for L(k) steps. · k = k + 1; Repeat steps 1 through 4 till the criteria is met. 
+
+
+>> Tokens are: 
+[Repeat, steps, 1, 2, L(k, ), steps, ., ·, k, =, k, +, 1, ;, Repeat, steps, 1, 4, till, criteria, met, .] 
+
+>> PoS Tags are: 
+[('Repeat', 'VERB'), ('steps', 'VERB'), ('1', 'NUM'), ('2', 'NUM'), ('L(k', 'PRON'), (')', 'PUNCT'), ('steps', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT'), ('k', 'NOUN'), ('=', 'PUNCT'), ('k', 'NOUN'), ('+', 'SYM'), ('1', 'NUM'), (';', 'PUNCT'), ('Repeat', 'NOUN'), ('steps', 'VERB'), ('1', 'NUM'), ('4', 'NUM'), ('till', 'SCONJ'), ('criteria', 'NOUN'), ('met', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Repeat', 'advcl'), ('steps', 'dobj'), ('1', 'nummod'), ('2', 'conj'), ('L(k', 'pobj'), (')', 'punct'), ('steps', 'dobj'), ('.', 'punct'), ('·', 'punct'), ('k', 'punct'), ('=', 'punct'), ('k', 'npadvmod'), ('+', 'cc'), ('1', 'nummod'), (';', 'punct'), ('Repeat', 'nsubj'), ('steps', 'ROOT'), ('1', 'npadvmod'), ('4', 'pobj'), ('till', 'mark'), ('criteria', 'nsubjpass'), ('met', 'advcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Repeat, steps], [steps, 1], [1, 2], [2, L(k], [L(k, )], [), steps], [steps, .], [., ·], [·, k], [k, =], [=, k], [k, +], [+, 1], [1, ;], [;, Repeat], [Repeat, steps], [steps, 1], [1, 4], [4, till], [till, criteria], [criteria, met], [met, .]]
+
+>> Trigrams: 
+[[Repeat, steps, 1], [steps, 1, 2], [1, 2, L(k], [2, L(k, )], [L(k, ), steps], [), steps, .], [steps, ., ·], [., ·, k], [·, k, =], [k, =, k], [=, k, +], [k, +, 1], [+, 1, ;], [1, ;, Repeat], [;, Repeat, steps], [Repeat, steps, 1], [steps, 1, 4], [1, 4, till], [4, till, criteria], [till, criteria, met], [criteria, met, .]]
+
+>> Noun Phrases are: 
+[L(k, steps, Repeat, the criteria]
+
+>> Named Entities are: 
+[('Repeat', 'PERSON'), ('1', 'CARDINAL'), ('1', 'CARDINAL')]
+
+
+============================ Sentence 59 =============================
+
+End Travelling Salesman Problem 
+
+
+>> Tokens are: 
+[End, Travelling, Salesman, Problem] 
+
+>> PoS Tags are: 
+[('End', 'NOUN'), ('Travelling', 'VERB'), ('Salesman', 'PROPN'), ('Problem', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('End', 'compound'), ('Travelling', 'amod'), ('Salesman', 'compound'), ('Problem', 'ROOT')]
+
+>> Bigrams: 
+[[End, Travelling], [Travelling, Salesman], [Salesman, Problem]]
+
+>> Trigrams: 
+[[End, Travelling, Salesman], [Travelling, Salesman, Problem]]
+
+>> Noun Phrases are: 
+[End Travelling Salesman Problem]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 60 =============================
+
+In this algorithm, the objective is to find a low-cost tour that starts from a city, visits all cities en-route exactly once and ends at the same starting city. 
+
+
+>> Tokens are: 
+[algorithm, ,, objective, find, low, -, cost, tour, starts, city, ,, visits, cities, en, -, route, exactly, ends, starting, city, .] 
+
+>> PoS Tags are: 
+[('algorithm', 'NOUN'), (',', 'PUNCT'), ('objective', 'NOUN'), ('find', 'VERB'), ('low', 'ADJ'), ('-', 'PUNCT'), ('cost', 'NOUN'), ('tour', 'NOUN'), ('starts', 'VERB'), ('city', 'NOUN'), (',', 'PUNCT'), ('visits', 'VERB'), ('cities', 'NOUN'), ('en', 'ADJ'), ('-', 'PUNCT'), ('route', 'NOUN'), ('exactly', 'ADV'), ('ends', 'VERB'), ('starting', 'VERB'), ('city', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('algorithm', 'pobj'), (',', 'punct'), ('objective', 'nsubj'), ('find', 'xcomp'), ('low', 'amod'), ('-', 'punct'), ('cost', 'compound'), ('tour', 'dobj'), ('starts', 'relcl'), ('city', 'pobj'), (',', 'punct'), ('visits', 'conj'), ('cities', 'dobj'), ('en', 'advmod'), ('-', 'dobj'), ('route', 'dobj'), ('exactly', 'advmod'), ('ends', 'conj'), ('starting', 'amod'), ('city', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[algorithm, ,], [,, objective], [objective, find], [find, low], [low, -], [-, cost], [cost, tour], [tour, starts], [starts, city], [city, ,], [,, visits], [visits, cities], [cities, en], [en, -], [-, route], [route, exactly], [exactly, ends], [ends, starting], [starting, city], [city, .]]
+
+>> Trigrams: 
+[[algorithm, ,, objective], [,, objective, find], [objective, find, low], [find, low, -], [low, -, cost], [-, cost, tour], [cost, tour, starts], [tour, starts, city], [starts, city, ,], [city, ,, visits], [,, visits, cities], [visits, cities, en], [cities, en, -], [en, -, route], [-, route, exactly], [route, exactly, ends], [exactly, ends, starting], [ends, starting, city], [starting, city, .]]
+
+>> Noun Phrases are: 
+[this algorithm, the objective, a low-cost tour, a city, all cities, route, the same starting city]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 61 =============================
+
+Start    Find out all (n -1)! 
+
+
+>> Tokens are: 
+[Start,    , Find, (, n, -1, ), !] 
+
+>> PoS Tags are: 
+[('Start', 'VERB'), ('   ', 'SPACE'), ('Find', 'VERB'), ('(', 'PUNCT'), ('n', 'CCONJ'), ('-1', 'X'), (')', 'PUNCT'), ('!', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Start', 'ROOT'), ('   ', 'dobj'), ('Find', 'xcomp'), ('(', 'punct'), ('n', 'neg'), ('-1', 'punct'), (')', 'punct'), ('!', 'punct')]
+
+>> Bigrams: 
+[[Start,    ], [   , Find], [Find, (], [(, n], [n, -1], [-1, )], [), !]]
+
+>> Trigrams: 
+[[Start,    , Find], [   , Find, (], [Find, (, n], [(, n, -1], [n, -1, )], [-1, ), !]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 62 =============================
+
+Possible solutions, where n is the total number of cities. 
+
+
+>> Tokens are: 
+[Possible, solutions, ,, n, total, number, cities, .] 
+
+>> PoS Tags are: 
+[('Possible', 'ADJ'), ('solutions', 'NOUN'), (',', 'PUNCT'), ('n', 'CCONJ'), ('total', 'ADJ'), ('number', 'NOUN'), ('cities', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Possible', 'amod'), ('solutions', 'ROOT'), (',', 'punct'), ('n', 'advmod'), ('total', 'amod'), ('number', 'attr'), ('cities', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Possible, solutions], [solutions, ,], [,, n], [n, total], [total, number], [number, cities], [cities, .]]
+
+>> Trigrams: 
+[[Possible, solutions, ,], [solutions, ,, n], [,, n, total], [n, total, number], [total, number, cities], [number, cities, .]]
+
+>> Noun Phrases are: 
+[Possible solutions, the total number, cities]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 63 =============================
+
+    
+
+
+>> Tokens are: 
+[   ] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('   ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 64 =============================
+
+Determine the minimum cost by finding out the cost of each of these (n -1)! 
+
+
+>> Tokens are: 
+[Determine, minimum, cost, finding, cost, (, n, -1, ), !] 
+
+>> PoS Tags are: 
+[('Determine', 'VERB'), ('minimum', 'ADJ'), ('cost', 'NOUN'), ('finding', 'VERB'), ('cost', 'NOUN'), ('(', 'PUNCT'), ('n', 'CCONJ'), ('-1', 'X'), (')', 'PUNCT'), ('!', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Determine', 'ROOT'), ('minimum', 'amod'), ('cost', 'dobj'), ('finding', 'pcomp'), ('cost', 'dobj'), ('(', 'punct'), ('n', 'prep'), ('-1', 'punct'), (')', 'punct'), ('!', 'punct')]
+
+>> Bigrams: 
+[[Determine, minimum], [minimum, cost], [cost, finding], [finding, cost], [cost, (], [(, n], [n, -1], [-1, )], [), !]]
+
+>> Trigrams: 
+[[Determine, minimum, cost], [minimum, cost, finding], [cost, finding, cost], [finding, cost, (], [cost, (, n], [(, n, -1], [n, -1, )], [-1, ), !]]
+
+>> Noun Phrases are: 
+[the minimum cost, the cost]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 65 =============================
+
+solutions. 
+
+
+>> Tokens are: 
+[solutions, .] 
+
+>> PoS Tags are: 
+[('solutions', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('solutions', 'ROOT'), ('.', 'punct')]
+
+>> Bigrams: 
+[[solutions, .]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[solutions]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 66 =============================
+
+   Finally, keep the one with the minimum cost. 
+
+
+>> Tokens are: 
+[   , Finally, ,, minimum, cost, .] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('Finally', 'ADV'), (',', 'PUNCT'), ('minimum', 'ADJ'), ('cost', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('   ', 'dep'), ('Finally', 'advmod'), (',', 'punct'), ('minimum', 'amod'), ('cost', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[   , Finally], [Finally, ,], [,, minimum], [minimum, cost], [cost, .]]
+
+>> Trigrams: 
+[[   , Finally, ,], [Finally, ,, minimum], [,, minimum, cost], [minimum, cost, .]]
+
+>> Noun Phrases are: 
+[the one, the minimum cost]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 67 =============================
+
+end 
+
+
+>> Tokens are: 
+[end] 
+
+>> PoS Tags are: 
+[('end', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('end', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[end]
+
+>> Named Entities are: 
+[]

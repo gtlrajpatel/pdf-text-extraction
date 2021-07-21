@@ -1,0 +1,1964 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709)	 Darshan Institute of Engineering & Technology UNIT-9 Remote user authentication      1  Outline Remote user authentication with symmetric encryption Remote user authentication with asymmetric encryption Kerberos  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  X.800 and RFC 2828 International Telecommunication Union (ITU) 2  Remote user authentication with symmetric encryption Mutual Authentication A ---> KDC IDa || IDb || N1 KDC ---> A E(Ka, [Ks || IDb || N1 || E(Kb,[Ks || IDa)]) A ---> B E(Kb, [Ks || IDa]) B ---> A E(Ks, N2) A ---> B E(Ks, f(N2))   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Remote user authentication with symmetric encryption One-way Authentication A ---> KDC IDa || IDb || N1 KDC ---> A E(Ka, [Ks || IDb || N1 || E(Kb, [Ks || IDa])]) A ---> B E(Kb, [Ks || IDa]) || E(Ks, M)   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos Kerberos provides a trusted third-party authentication service that enables clients and servers to establish authenticated communication. 
+
+
+>> Tokens are: 
+ ['OOPC++', 'UNIT-1', 'Prof.', 'Rupesh', 'G.', 'Vaishnav', 'rupesh.vaishnav', '@', 'darshan.ac.in', '94280-37452', 'Information', '&', 'Network', 'Security', '(', '2170709', ')', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', 'UNIT-9', 'Remote', 'user', 'authentication', '1', 'Outline', 'Remote', 'user', 'authentication', 'symmetric', 'encryption', 'Remote', 'user', 'authentication', 'asymmetric', 'encryption', 'Kerberos', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'X.800', 'RFC', '2828', 'International', 'Telecommunication', 'Union', '(', 'ITU', ')', '2', 'Remote', 'user', 'authentication', 'symmetric', 'encryption', 'Mutual', 'Authentication', 'A', '--', '-', '>', 'KDC', 'IDa', '||', 'IDb', '||', 'N1', 'KDC', '--', '-', '>', 'A', 'E', '(', 'Ka', ',', '[', 'Ks', '||', 'IDb', '||', 'N1', '||', 'E', '(', 'Kb', ',', '[', 'Ks', '||', 'IDa', ')', ']', ')', 'A', '--', '-', '>', 'B', 'E', '(', 'Kb', ',', '[', 'Ks', '||', 'IDa', ']', ')', 'B', '--', '-', '>', 'A', 'E', '(', 'Ks', ',', 'N2', ')', 'A', '--', '-', '>', 'B', 'E', '(', 'Ks', ',', 'f', '(', 'N2', ')', ')', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Remote', 'user', 'authentication', 'symmetric', 'encryption', 'One-way', 'Authentication', 'A', '--', '-', '>', 'KDC', 'IDa', '||', 'IDb', '||', 'N1', 'KDC', '--', '-', '>', 'A', 'E', '(', 'Ka', ',', '[', 'Ks', '||', 'IDb', '||', 'N1', '||', 'E', '(', 'Kb', ',', '[', 'Ks', '||', 'IDa', ']', ')', ']', ')', 'A', '--', '-', '>', 'B', 'E', '(', 'Kb', ',', '[', 'Ks', '||', 'IDa', ']', ')', '||', 'E', '(', 'Ks', ',', 'M', ')', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', 'Kerberos', 'provides', 'trusted', 'third-party', 'authentication', 'service', 'enables', 'clients', 'servers', 'establish', 'authenticated', 'communication', '.']
+
+>> Bigrams are: 
+ [('OOPC++', 'UNIT-1'), ('UNIT-1', 'Prof.'), ('Prof.', 'Rupesh'), ('Rupesh', 'G.'), ('G.', 'Vaishnav'), ('Vaishnav', 'rupesh.vaishnav'), ('rupesh.vaishnav', '@'), ('@', 'darshan.ac.in'), ('darshan.ac.in', '94280-37452'), ('94280-37452', 'Information'), ('Information', '&'), ('&', 'Network'), ('Network', 'Security'), ('Security', '('), ('(', '2170709'), ('2170709', ')'), (')', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', 'UNIT-9'), ('UNIT-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', '1'), ('1', 'Outline'), ('Outline', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'symmetric'), ('symmetric', 'encryption'), ('encryption', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'asymmetric'), ('asymmetric', 'encryption'), ('encryption', 'Kerberos'), ('Kerberos', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'X.800'), ('X.800', 'RFC'), ('RFC', '2828'), ('2828', 'International'), ('International', 'Telecommunication'), ('Telecommunication', 'Union'), ('Union', '('), ('(', 'ITU'), ('ITU', ')'), (')', '2'), ('2', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'symmetric'), ('symmetric', 'encryption'), ('encryption', 'Mutual'), ('Mutual', 'Authentication'), ('Authentication', 'A'), ('A', '--'), ('--', '-'), ('-', '>'), ('>', 'KDC'), ('KDC', 'IDa'), ('IDa', '||'), ('||', 'IDb'), ('IDb', '||'), ('||', 'N1'), ('N1', 'KDC'), ('KDC', '--'), ('--', '-'), ('-', '>'), ('>', 'A'), ('A', 'E'), ('E', '('), ('(', 'Ka'), ('Ka', ','), (',', '['), ('[', 'Ks'), ('Ks', '||'), ('||', 'IDb'), ('IDb', '||'), ('||', 'N1'), ('N1', '||'), ('||', 'E'), ('E', '('), ('(', 'Kb'), ('Kb', ','), (',', '['), ('[', 'Ks'), ('Ks', '||'), ('||', 'IDa'), ('IDa', ')'), (')', ']'), (']', ')'), (')', 'A'), ('A', '--'), ('--', '-'), ('-', '>'), ('>', 'B'), ('B', 'E'), ('E', '('), ('(', 'Kb'), ('Kb', ','), (',', '['), ('[', 'Ks'), ('Ks', '||'), ('||', 'IDa'), ('IDa', ']'), (']', ')'), (')', 'B'), ('B', '--'), ('--', '-'), ('-', '>'), ('>', 'A'), ('A', 'E'), ('E', '('), ('(', 'Ks'), ('Ks', ','), (',', 'N2'), ('N2', ')'), (')', 'A'), ('A', '--'), ('--', '-'), ('-', '>'), ('>', 'B'), ('B', 'E'), ('E', '('), ('(', 'Ks'), ('Ks', ','), (',', 'f'), ('f', '('), ('(', 'N2'), ('N2', ')'), (')', ')'), (')', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'symmetric'), ('symmetric', 'encryption'), ('encryption', 'One-way'), ('One-way', 'Authentication'), ('Authentication', 'A'), ('A', '--'), ('--', '-'), ('-', '>'), ('>', 'KDC'), ('KDC', 'IDa'), ('IDa', '||'), ('||', 'IDb'), ('IDb', '||'), ('||', 'N1'), ('N1', 'KDC'), ('KDC', '--'), ('--', '-'), ('-', '>'), ('>', 'A'), ('A', 'E'), ('E', '('), ('(', 'Ka'), ('Ka', ','), (',', '['), ('[', 'Ks'), ('Ks', '||'), ('||', 'IDb'), ('IDb', '||'), ('||', 'N1'), ('N1', '||'), ('||', 'E'), ('E', '('), ('(', 'Kb'), ('Kb', ','), (',', '['), ('[', 'Ks'), ('Ks', '||'), ('||', 'IDa'), ('IDa', ']'), (']', ')'), (')', ']'), (']', ')'), (')', 'A'), ('A', '--'), ('--', '-'), ('-', '>'), ('>', 'B'), ('B', 'E'), ('E', '('), ('(', 'Kb'), ('Kb', ','), (',', '['), ('[', 'Ks'), ('Ks', '||'), ('||', 'IDa'), ('IDa', ']'), (']', ')'), (')', '||'), ('||', 'E'), ('E', '('), ('(', 'Ks'), ('Ks', ','), (',', 'M'), ('M', ')'), (')', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', 'Kerberos'), ('Kerberos', 'provides'), ('provides', 'trusted'), ('trusted', 'third-party'), ('third-party', 'authentication'), ('authentication', 'service'), ('service', 'enables'), ('enables', 'clients'), ('clients', 'servers'), ('servers', 'establish'), ('establish', 'authenticated'), ('authenticated', 'communication'), ('communication', '.')]
+
+>> Trigrams are: 
+ [('OOPC++', 'UNIT-1', 'Prof.'), ('UNIT-1', 'Prof.', 'Rupesh'), ('Prof.', 'Rupesh', 'G.'), ('Rupesh', 'G.', 'Vaishnav'), ('G.', 'Vaishnav', 'rupesh.vaishnav'), ('Vaishnav', 'rupesh.vaishnav', '@'), ('rupesh.vaishnav', '@', 'darshan.ac.in'), ('@', 'darshan.ac.in', '94280-37452'), ('darshan.ac.in', '94280-37452', 'Information'), ('94280-37452', 'Information', '&'), ('Information', '&', 'Network'), ('&', 'Network', 'Security'), ('Network', 'Security', '('), ('Security', '(', '2170709'), ('(', '2170709', ')'), ('2170709', ')', 'Darshan'), (')', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', 'UNIT-9'), ('Technology', 'UNIT-9', 'Remote'), ('UNIT-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', '1'), ('authentication', '1', 'Outline'), ('1', 'Outline', 'Remote'), ('Outline', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'symmetric'), ('authentication', 'symmetric', 'encryption'), ('symmetric', 'encryption', 'Remote'), ('encryption', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'asymmetric'), ('authentication', 'asymmetric', 'encryption'), ('asymmetric', 'encryption', 'Kerberos'), ('encryption', 'Kerberos', 'Unit-9'), ('Kerberos', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'X.800'), ('Subject', 'X.800', 'RFC'), ('X.800', 'RFC', '2828'), ('RFC', '2828', 'International'), ('2828', 'International', 'Telecommunication'), ('International', 'Telecommunication', 'Union'), ('Telecommunication', 'Union', '('), ('Union', '(', 'ITU'), ('(', 'ITU', ')'), ('ITU', ')', '2'), (')', '2', 'Remote'), ('2', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'symmetric'), ('authentication', 'symmetric', 'encryption'), ('symmetric', 'encryption', 'Mutual'), ('encryption', 'Mutual', 'Authentication'), ('Mutual', 'Authentication', 'A'), ('Authentication', 'A', '--'), ('A', '--', '-'), ('--', '-', '>'), ('-', '>', 'KDC'), ('>', 'KDC', 'IDa'), ('KDC', 'IDa', '||'), ('IDa', '||', 'IDb'), ('||', 'IDb', '||'), ('IDb', '||', 'N1'), ('||', 'N1', 'KDC'), ('N1', 'KDC', '--'), ('KDC', '--', '-'), ('--', '-', '>'), ('-', '>', 'A'), ('>', 'A', 'E'), ('A', 'E', '('), ('E', '(', 'Ka'), ('(', 'Ka', ','), ('Ka', ',', '['), (',', '[', 'Ks'), ('[', 'Ks', '||'), ('Ks', '||', 'IDb'), ('||', 'IDb', '||'), ('IDb', '||', 'N1'), ('||', 'N1', '||'), ('N1', '||', 'E'), ('||', 'E', '('), ('E', '(', 'Kb'), ('(', 'Kb', ','), ('Kb', ',', '['), (',', '[', 'Ks'), ('[', 'Ks', '||'), ('Ks', '||', 'IDa'), ('||', 'IDa', ')'), ('IDa', ')', ']'), (')', ']', ')'), (']', ')', 'A'), (')', 'A', '--'), ('A', '--', '-'), ('--', '-', '>'), ('-', '>', 'B'), ('>', 'B', 'E'), ('B', 'E', '('), ('E', '(', 'Kb'), ('(', 'Kb', ','), ('Kb', ',', '['), (',', '[', 'Ks'), ('[', 'Ks', '||'), ('Ks', '||', 'IDa'), ('||', 'IDa', ']'), ('IDa', ']', ')'), (']', ')', 'B'), (')', 'B', '--'), ('B', '--', '-'), ('--', '-', '>'), ('-', '>', 'A'), ('>', 'A', 'E'), ('A', 'E', '('), ('E', '(', 'Ks'), ('(', 'Ks', ','), ('Ks', ',', 'N2'), (',', 'N2', ')'), ('N2', ')', 'A'), (')', 'A', '--'), ('A', '--', '-'), ('--', '-', '>'), ('-', '>', 'B'), ('>', 'B', 'E'), ('B', 'E', '('), ('E', '(', 'Ks'), ('(', 'Ks', ','), ('Ks', ',', 'f'), (',', 'f', '('), ('f', '(', 'N2'), ('(', 'N2', ')'), ('N2', ')', ')'), (')', ')', 'Unit-9'), (')', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Remote'), ('Subject', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'symmetric'), ('authentication', 'symmetric', 'encryption'), ('symmetric', 'encryption', 'One-way'), ('encryption', 'One-way', 'Authentication'), ('One-way', 'Authentication', 'A'), ('Authentication', 'A', '--'), ('A', '--', '-'), ('--', '-', '>'), ('-', '>', 'KDC'), ('>', 'KDC', 'IDa'), ('KDC', 'IDa', '||'), ('IDa', '||', 'IDb'), ('||', 'IDb', '||'), ('IDb', '||', 'N1'), ('||', 'N1', 'KDC'), ('N1', 'KDC', '--'), ('KDC', '--', '-'), ('--', '-', '>'), ('-', '>', 'A'), ('>', 'A', 'E'), ('A', 'E', '('), ('E', '(', 'Ka'), ('(', 'Ka', ','), ('Ka', ',', '['), (',', '[', 'Ks'), ('[', 'Ks', '||'), ('Ks', '||', 'IDb'), ('||', 'IDb', '||'), ('IDb', '||', 'N1'), ('||', 'N1', '||'), ('N1', '||', 'E'), ('||', 'E', '('), ('E', '(', 'Kb'), ('(', 'Kb', ','), ('Kb', ',', '['), (',', '[', 'Ks'), ('[', 'Ks', '||'), ('Ks', '||', 'IDa'), ('||', 'IDa', ']'), ('IDa', ']', ')'), (']', ')', ']'), (')', ']', ')'), (']', ')', 'A'), (')', 'A', '--'), ('A', '--', '-'), ('--', '-', '>'), ('-', '>', 'B'), ('>', 'B', 'E'), ('B', 'E', '('), ('E', '(', 'Kb'), ('(', 'Kb', ','), ('Kb', ',', '['), (',', '[', 'Ks'), ('[', 'Ks', '||'), ('Ks', '||', 'IDa'), ('||', 'IDa', ']'), ('IDa', ']', ')'), (']', ')', '||'), (')', '||', 'E'), ('||', 'E', '('), ('E', '(', 'Ks'), ('(', 'Ks', ','), ('Ks', ',', 'M'), (',', 'M', ')'), ('M', ')', 'Unit-9'), (')', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', 'Kerberos'), ('Kerberos', 'Kerberos', 'provides'), ('Kerberos', 'provides', 'trusted'), ('provides', 'trusted', 'third-party'), ('trusted', 'third-party', 'authentication'), ('third-party', 'authentication', 'service'), ('authentication', 'service', 'enables'), ('service', 'enables', 'clients'), ('enables', 'clients', 'servers'), ('clients', 'servers', 'establish'), ('servers', 'establish', 'authenticated'), ('establish', 'authenticated', 'communication'), ('authenticated', 'communication', '.')]
+
+>> POS Tags are: 
+ [('OOPC++', 'NNP'), ('UNIT-1', 'NNP'), ('Prof.', 'NNP'), ('Rupesh', 'NNP'), ('G.', 'NNP'), ('Vaishnav', 'NNP'), ('rupesh.vaishnav', 'NN'), ('@', 'NNP'), ('darshan.ac.in', 'VBZ'), ('94280-37452', 'CD'), ('Information', 'NNP'), ('&', 'CC'), ('Network', 'NNP'), ('Security', 'NNP'), ('(', '('), ('2170709', 'CD'), (')', ')'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('UNIT-9', 'NNP'), ('Remote', 'NNP'), ('user', 'NNP'), ('authentication', 'NN'), ('1', 'CD'), ('Outline', 'NNP'), ('Remote', 'NNP'), ('user', 'NNP'), ('authentication', 'NN'), ('symmetric', 'JJ'), ('encryption', 'NN'), ('Remote', 'NNP'), ('user', 'NNP'), ('authentication', 'NN'), ('asymmetric', 'JJ'), ('encryption', 'NN'), ('Kerberos', 'NNP'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('X.800', 'NNP'), ('RFC', 'NNP'), ('2828', 'CD'), ('International', 'NNP'), ('Telecommunication', 'NNP'), ('Union', 'NNP'), ('(', '('), ('ITU', 'NNP'), (')', ')'), ('2', 'CD'), ('Remote', 'NNP'), ('user', 'JJ'), ('authentication', 'NN'), ('symmetric', 'JJ'), ('encryption', 'NN'), ('Mutual', 'NNP'), ('Authentication', 'NNP'), ('A', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('KDC', 'NNP'), ('IDa', 'NNP'), ('||', 'NNP'), ('IDb', 'NNP'), ('||', 'NNP'), ('N1', 'NNP'), ('KDC', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('A', 'DT'), ('E', 'NNP'), ('(', '('), ('Ka', 'NNP'), (',', ','), ('[', 'NNP'), ('Ks', 'NNP'), ('||', 'NNP'), ('IDb', 'NNP'), ('||', 'NNP'), ('N1', 'NNP'), ('||', 'NNP'), ('E', 'NNP'), ('(', '('), ('Kb', 'NNP'), (',', ','), ('[', 'NNP'), ('Ks', 'NNP'), ('||', 'NNP'), ('IDa', 'NNP'), (')', ')'), (']', 'NN'), (')', ')'), ('A', 'DT'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('B', 'NNP'), ('E', 'NNP'), ('(', '('), ('Kb', 'NNP'), (',', ','), ('[', 'NNP'), ('Ks', 'NNP'), ('||', 'NNP'), ('IDa', 'NNP'), (']', 'NNP'), (')', ')'), ('B', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('A', 'DT'), ('E', 'NNP'), ('(', '('), ('Ks', 'NNP'), (',', ','), ('N2', 'NNP'), (')', ')'), ('A', 'DT'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('B', 'NNP'), ('E', 'NNP'), ('(', '('), ('Ks', 'NNP'), (',', ','), ('f', 'NN'), ('(', '('), ('N2', 'NNP'), (')', ')'), (')', ')'), ('Unit-9', 'JJ'), ('Remote', 'NNP'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Remote', 'NNP'), ('user', 'NNP'), ('authentication', 'NN'), ('symmetric', 'JJ'), ('encryption', 'NN'), ('One-way', 'NNP'), ('Authentication', 'NNP'), ('A', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('KDC', 'NNP'), ('IDa', 'NNP'), ('||', 'NNP'), ('IDb', 'NNP'), ('||', 'NNP'), ('N1', 'NNP'), ('KDC', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('A', 'DT'), ('E', 'NNP'), ('(', '('), ('Ka', 'NNP'), (',', ','), ('[', 'NNP'), ('Ks', 'NNP'), ('||', 'NNP'), ('IDb', 'NNP'), ('||', 'NNP'), ('N1', 'NNP'), ('||', 'NNP'), ('E', 'NNP'), ('(', '('), ('Kb', 'NNP'), (',', ','), ('[', 'NNP'), ('Ks', 'NNP'), ('||', 'NNP'), ('IDa', 'NNP'), (']', 'NNP'), (')', ')'), (']', 'NN'), (')', ')'), ('A', 'DT'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('B', 'NNP'), ('E', 'NNP'), ('(', '('), ('Kb', 'NNP'), (',', ','), ('[', 'NNP'), ('Ks', 'NNP'), ('||', 'NNP'), ('IDa', 'NNP'), (']', 'NNP'), (')', ')'), ('||', 'VBP'), ('E', 'NNP'), ('(', '('), ('Ks', 'NNP'), (',', ','), ('M', 'NNP'), (')', ')'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('Kerberos', 'NNP'), ('provides', 'VBZ'), ('trusted', 'VBD'), ('third-party', 'JJ'), ('authentication', 'NN'), ('service', 'NN'), ('enables', 'VBZ'), ('clients', 'NNS'), ('servers', 'NNS'), ('establish', 'VB'), ('authenticated', 'VBN'), ('communication', 'NN'), ('.', '.')]
+
+ (S
+  (NP
+    OOPC++/NNP
+    UNIT-1/NNP
+    Prof./NNP
+    Rupesh/NNP
+    G./NNP
+    Vaishnav/NNP
+    rupesh.vaishnav/NN
+    @/NNP)
+  darshan.ac.in/VBZ
+  94280-37452/CD
+  (NP Information/NNP)
+  &/CC
+  (NP Network/NNP Security/NNP)
+  (/(
+  2170709/CD
+  )/)
+  (NP Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP
+    Technology/NNP
+    UNIT-9/NNP
+    Remote/NNP
+    user/NNP
+    authentication/NN)
+  1/CD
+  (NP Outline/NNP Remote/NNP user/NNP authentication/NN)
+  (NP
+    symmetric/JJ
+    encryption/NN
+    Remote/NNP
+    user/NNP
+    authentication/NN)
+  (NP asymmetric/JJ encryption/NN Kerberos/NNP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP X.800/NNP RFC/NNP)
+  2828/CD
+  (NP International/NNP Telecommunication/NNP Union/NNP)
+  (/(
+  (NP ITU/NNP)
+  )/)
+  2/CD
+  (NP Remote/NNP)
+  (NP user/JJ authentication/NN)
+  (NP symmetric/JJ encryption/NN Mutual/NNP Authentication/NNP A/NNP)
+  --/:
+  -/:
+  (NP >/NN KDC/NNP IDa/NNP ||/NNP IDb/NNP ||/NNP N1/NNP KDC/NNP)
+  --/:
+  -/:
+  (NP >/NN)
+  (NP A/DT E/NNP)
+  (/(
+  (NP Ka/NNP)
+  ,/,
+  (NP [/NNP Ks/NNP ||/NNP IDb/NNP ||/NNP N1/NNP ||/NNP E/NNP)
+  (/(
+  (NP Kb/NNP)
+  ,/,
+  (NP [/NNP Ks/NNP ||/NNP IDa/NNP)
+  )/)
+  (NP ]/NN)
+  )/)
+  A/DT
+  --/:
+  -/:
+  (NP >/NN B/NNP E/NNP)
+  (/(
+  (NP Kb/NNP)
+  ,/,
+  (NP [/NNP Ks/NNP ||/NNP IDa/NNP ]/NNP)
+  )/)
+  (NP B/NNP)
+  --/:
+  -/:
+  (NP >/NN)
+  (NP A/DT E/NNP)
+  (/(
+  (NP Ks/NNP)
+  ,/,
+  (NP N2/NNP)
+  )/)
+  A/DT
+  --/:
+  -/:
+  (NP >/NN B/NNP E/NNP)
+  (/(
+  (NP Ks/NNP)
+  ,/,
+  (NP f/NN)
+  (/(
+  (NP N2/NNP)
+  )/)
+  )/)
+  (NP
+    Unit-9/JJ
+    Remote/NNP
+    user/NN
+    authentication/NN
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Remote/NNP
+    user/NNP
+    authentication/NN)
+  (NP
+    symmetric/JJ
+    encryption/NN
+    One-way/NNP
+    Authentication/NNP
+    A/NNP)
+  --/:
+  -/:
+  (NP >/NN KDC/NNP IDa/NNP ||/NNP IDb/NNP ||/NNP N1/NNP KDC/NNP)
+  --/:
+  -/:
+  (NP >/NN)
+  (NP A/DT E/NNP)
+  (/(
+  (NP Ka/NNP)
+  ,/,
+  (NP [/NNP Ks/NNP ||/NNP IDb/NNP ||/NNP N1/NNP ||/NNP E/NNP)
+  (/(
+  (NP Kb/NNP)
+  ,/,
+  (NP [/NNP Ks/NNP ||/NNP IDa/NNP ]/NNP)
+  )/)
+  (NP ]/NN)
+  )/)
+  A/DT
+  --/:
+  -/:
+  (NP >/NN B/NNP E/NNP)
+  (/(
+  (NP Kb/NNP)
+  ,/,
+  (NP [/NNP Ks/NNP ||/NNP IDa/NNP ]/NNP)
+  )/)
+  ||/VBP
+  (NP E/NNP)
+  (/(
+  (NP Ks/NNP)
+  ,/,
+  (NP M/NNP)
+  )/)
+  (NP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    Kerberos/NNP)
+  provides/VBZ
+  trusted/VBD
+  (NP third-party/JJ authentication/NN service/NN)
+  enables/VBZ
+  (NP clients/NNS servers/NNS)
+  establish/VB
+  authenticated/VBN
+  (NP communication/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['OOPC++ UNIT-1 Prof. Rupesh G. Vaishnav rupesh.vaishnav @', 'Information', 'Network Security', 'Darshan Institute Engineering', 'Technology UNIT-9 Remote user authentication', 'Outline Remote user authentication', 'symmetric encryption Remote user authentication', 'asymmetric encryption Kerberos Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject X.800 RFC', 'International Telecommunication Union', 'ITU', 'Remote', 'user authentication', 'symmetric encryption Mutual Authentication A', '> KDC IDa || IDb || N1 KDC', '>', 'A E', 'Ka', '[ Ks || IDb || N1 || E', 'Kb', '[ Ks || IDa', ']', '> B E', 'Kb', '[ Ks || IDa ]', 'B', '>', 'A E', 'Ks', 'N2', '> B E', 'Ks', 'f', 'N2', 'Unit-9 Remote user authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Remote user authentication', 'symmetric encryption One-way Authentication A', '> KDC IDa || IDb || N1 KDC', '>', 'A E', 'Ka', '[ Ks || IDb || N1 || E', 'Kb', '[ Ks || IDa ]', ']', '> B E', 'Kb', '[ Ks || IDa ]', 'E', 'Ks', 'M', 'Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos Kerberos', 'third-party authentication service', 'clients servers', 'communication']
+
+>> Named Entities are: 
+ [('PERSON', 'Rupesh G. Vaishnav'), ('PERSON', 'Network Security'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Remote'), ('PERSON', 'Kerberos Unit-9 Remote'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'International Telecommunication Union'), ('ORGANIZATION', 'ITU'), ('PERSON', 'Mutual'), ('ORGANIZATION', 'KDC'), ('GPE', 'N2'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('ORGANIZATION', 'KDC'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos Kerberos')] 
+
+>> Stemming using Porter Stemmer: 
+ [('OOPC++', 'oopc++'), ('UNIT-1', 'unit-1'), ('Prof.', 'prof.'), ('Rupesh', 'rupesh'), ('G.', 'g.'), ('Vaishnav', 'vaishnav'), ('rupesh.vaishnav', 'rupesh.vaishnav'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'inform'), ('&', '&'), ('Network', 'network'), ('Security', 'secur'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('UNIT-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('1', '1'), ('Outline', 'outlin'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('symmetric', 'symmetr'), ('encryption', 'encrypt'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('asymmetric', 'asymmetr'), ('encryption', 'encrypt'), ('Kerberos', 'kerbero'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('X.800', 'x.800'), ('RFC', 'rfc'), ('2828', '2828'), ('International', 'intern'), ('Telecommunication', 'telecommun'), ('Union', 'union'), ('(', '('), ('ITU', 'itu'), (')', ')'), ('2', '2'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('symmetric', 'symmetr'), ('encryption', 'encrypt'), ('Mutual', 'mutual'), ('Authentication', 'authent'), ('A', 'a'), ('--', '--'), ('-', '-'), ('>', '>'), ('KDC', 'kdc'), ('IDa', 'ida'), ('||', '||'), ('IDb', 'idb'), ('||', '||'), ('N1', 'n1'), ('KDC', 'kdc'), ('--', '--'), ('-', '-'), ('>', '>'), ('A', 'a'), ('E', 'e'), ('(', '('), ('Ka', 'ka'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDb', 'idb'), ('||', '||'), ('N1', 'n1'), ('||', '||'), ('E', 'e'), ('(', '('), ('Kb', 'kb'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDa', 'ida'), (')', ')'), (']', ']'), (')', ')'), ('A', 'a'), ('--', '--'), ('-', '-'), ('>', '>'), ('B', 'b'), ('E', 'e'), ('(', '('), ('Kb', 'kb'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDa', 'ida'), (']', ']'), (')', ')'), ('B', 'b'), ('--', '--'), ('-', '-'), ('>', '>'), ('A', 'a'), ('E', 'e'), ('(', '('), ('Ks', 'ks'), (',', ','), ('N2', 'n2'), (')', ')'), ('A', 'a'), ('--', '--'), ('-', '-'), ('>', '>'), ('B', 'b'), ('E', 'e'), ('(', '('), ('Ks', 'ks'), (',', ','), ('f', 'f'), ('(', '('), ('N2', 'n2'), (')', ')'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('symmetric', 'symmetr'), ('encryption', 'encrypt'), ('One-way', 'one-way'), ('Authentication', 'authent'), ('A', 'a'), ('--', '--'), ('-', '-'), ('>', '>'), ('KDC', 'kdc'), ('IDa', 'ida'), ('||', '||'), ('IDb', 'idb'), ('||', '||'), ('N1', 'n1'), ('KDC', 'kdc'), ('--', '--'), ('-', '-'), ('>', '>'), ('A', 'a'), ('E', 'e'), ('(', '('), ('Ka', 'ka'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDb', 'idb'), ('||', '||'), ('N1', 'n1'), ('||', '||'), ('E', 'e'), ('(', '('), ('Kb', 'kb'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDa', 'ida'), (']', ']'), (')', ')'), (']', ']'), (')', ')'), ('A', 'a'), ('--', '--'), ('-', '-'), ('>', '>'), ('B', 'b'), ('E', 'e'), ('(', '('), ('Kb', 'kb'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDa', 'ida'), (']', ']'), (')', ')'), ('||', '||'), ('E', 'e'), ('(', '('), ('Ks', 'ks'), (',', ','), ('M', 'm'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Kerberos', 'kerbero'), ('provides', 'provid'), ('trusted', 'trust'), ('third-party', 'third-parti'), ('authentication', 'authent'), ('service', 'servic'), ('enables', 'enabl'), ('clients', 'client'), ('servers', 'server'), ('establish', 'establish'), ('authenticated', 'authent'), ('communication', 'commun'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('OOPC++', 'oopc++'), ('UNIT-1', 'unit-1'), ('Prof.', 'prof.'), ('Rupesh', 'rupesh'), ('G.', 'g.'), ('Vaishnav', 'vaishnav'), ('rupesh.vaishnav', 'rupesh.vaishnav'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'inform'), ('&', '&'), ('Network', 'network'), ('Security', 'secur'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('UNIT-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('1', '1'), ('Outline', 'outlin'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('symmetric', 'symmetr'), ('encryption', 'encrypt'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('asymmetric', 'asymmetr'), ('encryption', 'encrypt'), ('Kerberos', 'kerbero'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('X.800', 'x.800'), ('RFC', 'rfc'), ('2828', '2828'), ('International', 'intern'), ('Telecommunication', 'telecommun'), ('Union', 'union'), ('(', '('), ('ITU', 'itu'), (')', ')'), ('2', '2'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('symmetric', 'symmetr'), ('encryption', 'encrypt'), ('Mutual', 'mutual'), ('Authentication', 'authent'), ('A', 'a'), ('--', '--'), ('-', '-'), ('>', '>'), ('KDC', 'kdc'), ('IDa', 'ida'), ('||', '||'), ('IDb', 'idb'), ('||', '||'), ('N1', 'n1'), ('KDC', 'kdc'), ('--', '--'), ('-', '-'), ('>', '>'), ('A', 'a'), ('E', 'e'), ('(', '('), ('Ka', 'ka'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDb', 'idb'), ('||', '||'), ('N1', 'n1'), ('||', '||'), ('E', 'e'), ('(', '('), ('Kb', 'kb'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDa', 'ida'), (')', ')'), (']', ']'), (')', ')'), ('A', 'a'), ('--', '--'), ('-', '-'), ('>', '>'), ('B', 'b'), ('E', 'e'), ('(', '('), ('Kb', 'kb'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDa', 'ida'), (']', ']'), (')', ')'), ('B', 'b'), ('--', '--'), ('-', '-'), ('>', '>'), ('A', 'a'), ('E', 'e'), ('(', '('), ('Ks', 'ks'), (',', ','), ('N2', 'n2'), (')', ')'), ('A', 'a'), ('--', '--'), ('-', '-'), ('>', '>'), ('B', 'b'), ('E', 'e'), ('(', '('), ('Ks', 'ks'), (',', ','), ('f', 'f'), ('(', '('), ('N2', 'n2'), (')', ')'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('symmetric', 'symmetr'), ('encryption', 'encrypt'), ('One-way', 'one-way'), ('Authentication', 'authent'), ('A', 'a'), ('--', '--'), ('-', '-'), ('>', '>'), ('KDC', 'kdc'), ('IDa', 'ida'), ('||', '||'), ('IDb', 'idb'), ('||', '||'), ('N1', 'n1'), ('KDC', 'kdc'), ('--', '--'), ('-', '-'), ('>', '>'), ('A', 'a'), ('E', 'e'), ('(', '('), ('Ka', 'ka'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDb', 'idb'), ('||', '||'), ('N1', 'n1'), ('||', '||'), ('E', 'e'), ('(', '('), ('Kb', 'kb'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDa', 'ida'), (']', ']'), (')', ')'), (']', ']'), (')', ')'), ('A', 'a'), ('--', '--'), ('-', '-'), ('>', '>'), ('B', 'b'), ('E', 'e'), ('(', '('), ('Kb', 'kb'), (',', ','), ('[', '['), ('Ks', 'ks'), ('||', '||'), ('IDa', 'ida'), (']', ']'), (')', ')'), ('||', '||'), ('E', 'e'), ('(', '('), ('Ks', 'ks'), (',', ','), ('M', 'm'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Kerberos', 'kerbero'), ('provides', 'provid'), ('trusted', 'trust'), ('third-party', 'third-parti'), ('authentication', 'authent'), ('service', 'servic'), ('enables', 'enabl'), ('clients', 'client'), ('servers', 'server'), ('establish', 'establish'), ('authenticated', 'authent'), ('communication', 'communic'), ('.', '.')]
+
+>> Lemmatization: 
+ [('OOPC++', 'OOPC++'), ('UNIT-1', 'UNIT-1'), ('Prof.', 'Prof.'), ('Rupesh', 'Rupesh'), ('G.', 'G.'), ('Vaishnav', 'Vaishnav'), ('rupesh.vaishnav', 'rupesh.vaishnav'), ('@', '@'), ('darshan.ac.in', 'darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'Information'), ('&', '&'), ('Network', 'Network'), ('Security', 'Security'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('UNIT-9', 'UNIT-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('1', '1'), ('Outline', 'Outline'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('symmetric', 'symmetric'), ('encryption', 'encryption'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('asymmetric', 'asymmetric'), ('encryption', 'encryption'), ('Kerberos', 'Kerberos'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('X.800', 'X.800'), ('RFC', 'RFC'), ('2828', '2828'), ('International', 'International'), ('Telecommunication', 'Telecommunication'), ('Union', 'Union'), ('(', '('), ('ITU', 'ITU'), (')', ')'), ('2', '2'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('symmetric', 'symmetric'), ('encryption', 'encryption'), ('Mutual', 'Mutual'), ('Authentication', 'Authentication'), ('A', 'A'), ('--', '--'), ('-', '-'), ('>', '>'), ('KDC', 'KDC'), ('IDa', 'IDa'), ('||', '||'), ('IDb', 'IDb'), ('||', '||'), ('N1', 'N1'), ('KDC', 'KDC'), ('--', '--'), ('-', '-'), ('>', '>'), ('A', 'A'), ('E', 'E'), ('(', '('), ('Ka', 'Ka'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('IDb', 'IDb'), ('||', '||'), ('N1', 'N1'), ('||', '||'), ('E', 'E'), ('(', '('), ('Kb', 'Kb'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('IDa', 'IDa'), (')', ')'), (']', ']'), (')', ')'), ('A', 'A'), ('--', '--'), ('-', '-'), ('>', '>'), ('B', 'B'), ('E', 'E'), ('(', '('), ('Kb', 'Kb'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('IDa', 'IDa'), (']', ']'), (')', ')'), ('B', 'B'), ('--', '--'), ('-', '-'), ('>', '>'), ('A', 'A'), ('E', 'E'), ('(', '('), ('Ks', 'Ks'), (',', ','), ('N2', 'N2'), (')', ')'), ('A', 'A'), ('--', '--'), ('-', '-'), ('>', '>'), ('B', 'B'), ('E', 'E'), ('(', '('), ('Ks', 'Ks'), (',', ','), ('f', 'f'), ('(', '('), ('N2', 'N2'), (')', ')'), (')', ')'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('symmetric', 'symmetric'), ('encryption', 'encryption'), ('One-way', 'One-way'), ('Authentication', 'Authentication'), ('A', 'A'), ('--', '--'), ('-', '-'), ('>', '>'), ('KDC', 'KDC'), ('IDa', 'IDa'), ('||', '||'), ('IDb', 'IDb'), ('||', '||'), ('N1', 'N1'), ('KDC', 'KDC'), ('--', '--'), ('-', '-'), ('>', '>'), ('A', 'A'), ('E', 'E'), ('(', '('), ('Ka', 'Ka'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('IDb', 'IDb'), ('||', '||'), ('N1', 'N1'), ('||', '||'), ('E', 'E'), ('(', '('), ('Kb', 'Kb'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('IDa', 'IDa'), (']', ']'), (')', ')'), (']', ']'), (')', ')'), ('A', 'A'), ('--', '--'), ('-', '-'), ('>', '>'), ('B', 'B'), ('E', 'E'), ('(', '('), ('Kb', 'Kb'), (',', ','), ('[', '['), ('Ks', 'Ks'), ('||', '||'), ('IDa', 'IDa'), (']', ']'), (')', ')'), ('||', '||'), ('E', 'E'), ('(', '('), ('Ks', 'Ks'), (',', ','), ('M', 'M'), (')', ')'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('Kerberos', 'Kerberos'), ('provides', 'provides'), ('trusted', 'trusted'), ('third-party', 'third-party'), ('authentication', 'authentication'), ('service', 'service'), ('enables', 'enables'), ('clients', 'client'), ('servers', 'server'), ('establish', 'establish'), ('authenticated', 'authenticated'), ('communication', 'communication'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+Kerberos is an authentication service designed for use in a distributed environment. 
+
+
+>> Tokens are: 
+ ['Kerberos', 'authentication', 'service', 'designed', 'use', 'distributed', 'environment', '.']
+
+>> Bigrams are: 
+ [('Kerberos', 'authentication'), ('authentication', 'service'), ('service', 'designed'), ('designed', 'use'), ('use', 'distributed'), ('distributed', 'environment'), ('environment', '.')]
+
+>> Trigrams are: 
+ [('Kerberos', 'authentication', 'service'), ('authentication', 'service', 'designed'), ('service', 'designed', 'use'), ('designed', 'use', 'distributed'), ('use', 'distributed', 'environment'), ('distributed', 'environment', '.')]
+
+>> POS Tags are: 
+ [('Kerberos', 'NNP'), ('authentication', 'NN'), ('service', 'NN'), ('designed', 'VBN'), ('use', 'RB'), ('distributed', 'VBN'), ('environment', 'NN'), ('.', '.')]
+
+ (S
+  (NP Kerberos/NNP authentication/NN service/NN)
+  designed/VBN
+  use/RB
+  distributed/VBN
+  (NP environment/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Kerberos authentication service', 'environment']
+
+>> Named Entities are: 
+ [('GPE', 'Kerberos')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Kerberos', 'kerbero'), ('authentication', 'authent'), ('service', 'servic'), ('designed', 'design'), ('use', 'use'), ('distributed', 'distribut'), ('environment', 'environ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Kerberos', 'kerbero'), ('authentication', 'authent'), ('service', 'servic'), ('designed', 'design'), ('use', 'use'), ('distributed', 'distribut'), ('environment', 'environ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Kerberos', 'Kerberos'), ('authentication', 'authentication'), ('service', 'service'), ('designed', 'designed'), ('use', 'use'), ('distributed', 'distributed'), ('environment', 'environment'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+Version 4 of Kerberos makes use of DES, to provide the authentication service. 
+
+
+>> Tokens are: 
+ ['Version', '4', 'Kerberos', 'makes', 'use', 'DES', ',', 'provide', 'authentication', 'service', '.']
+
+>> Bigrams are: 
+ [('Version', '4'), ('4', 'Kerberos'), ('Kerberos', 'makes'), ('makes', 'use'), ('use', 'DES'), ('DES', ','), (',', 'provide'), ('provide', 'authentication'), ('authentication', 'service'), ('service', '.')]
+
+>> Trigrams are: 
+ [('Version', '4', 'Kerberos'), ('4', 'Kerberos', 'makes'), ('Kerberos', 'makes', 'use'), ('makes', 'use', 'DES'), ('use', 'DES', ','), ('DES', ',', 'provide'), (',', 'provide', 'authentication'), ('provide', 'authentication', 'service'), ('authentication', 'service', '.')]
+
+>> POS Tags are: 
+ [('Version', 'NN'), ('4', 'CD'), ('Kerberos', 'NNP'), ('makes', 'VBZ'), ('use', 'NN'), ('DES', 'NNP'), (',', ','), ('provide', 'VB'), ('authentication', 'NN'), ('service', 'NN'), ('.', '.')]
+
+ (S
+  (NP Version/NN)
+  4/CD
+  (NP Kerberos/NNP)
+  makes/VBZ
+  (NP use/NN DES/NNP)
+  ,/,
+  provide/VB
+  (NP authentication/NN service/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Version', 'Kerberos', 'use DES', 'authentication service']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Kerberos')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Version', 'version'), ('4', '4'), ('Kerberos', 'kerbero'), ('makes', 'make'), ('use', 'use'), ('DES', 'de'), (',', ','), ('provide', 'provid'), ('authentication', 'authent'), ('service', 'servic'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Version', 'version'), ('4', '4'), ('Kerberos', 'kerbero'), ('makes', 'make'), ('use', 'use'), ('DES', 'des'), (',', ','), ('provide', 'provid'), ('authentication', 'authent'), ('service', 'servic'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Version', 'Version'), ('4', '4'), ('Kerberos', 'Kerberos'), ('makes', 'make'), ('use', 'use'), ('DES', 'DES'), (',', ','), ('provide', 'provide'), ('authentication', 'authentication'), ('service', 'service'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – Simple Dialogue C ---> AS:  IDc || Pc || IDv AS ---> C:  Ticket   C ---> V:    IDc || Ticket Ticket = E(Kv, [IDc, ADc, IDv])  Authentication Server-AS  Application Server - V  User - C (1) (2) (3)  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – Simple Dialogue C ---> AS:  IDc || Pc || IDv AS ---> C:  Ticket   C ---> V:    IDc || Ticket Ticket = E(Kv, [IDc, ADc, IDv]) Where,   C = Client AS = Authentication Server V =  Server IDc = Identification of user C Idv = Identification of V Pc = Password on User C Adc = Network Address of C Kv = Secret key shared by AS and V  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – More Secure Dialogue  Client-C  Ticket Granting Server-TGS  Authentication Server-AS TicketTGS to access TGS Request for TicketTGS Request for TicketV Request for TicketV Request for Service  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Kerberos – More Secure Dialogue Once per user logon session C ---> AS:  IDc || IDTGS AS ---> C:  E(Kc, TicketTGS)  Once per type of service C ---> TGS:  IDc || IDv || TicketTGS TGS ---> C:  TicketV   Once per service session C ---> V:  IDc || TicketV TicketTGS = E(KTGS, [IDc, ADc, IdTGS, TS1, Lifetime1])   TicketV = E(KV, [IDc, ADc, IdV, TS2, Lifetime2])     Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-1 The client sends a plaintext request to the AS asking for a ticket it can use to talk to the TGS. 
+
+
+>> Tokens are: 
+ ['Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', '–', 'Simple', 'Dialogue', 'C', '--', '-', '>', 'AS', ':', 'IDc', '||', 'Pc', '||', 'IDv', 'AS', '--', '-', '>', 'C', ':', 'Ticket', 'C', '--', '-', '>', 'V', ':', 'IDc', '||', 'Ticket', 'Ticket', '=', 'E', '(', 'Kv', ',', '[', 'IDc', ',', 'ADc', ',', 'IDv', ']', ')', 'Authentication', 'Server-AS', 'Application', 'Server', '-', 'V', 'User', '-', 'C', '(', '1', ')', '(', '2', ')', '(', '3', ')', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', '–', 'Simple', 'Dialogue', 'C', '--', '-', '>', 'AS', ':', 'IDc', '||', 'Pc', '||', 'IDv', 'AS', '--', '-', '>', 'C', ':', 'Ticket', 'C', '--', '-', '>', 'V', ':', 'IDc', '||', 'Ticket', 'Ticket', '=', 'E', '(', 'Kv', ',', '[', 'IDc', ',', 'ADc', ',', 'IDv', ']', ')', 'Where', ',', 'C', '=', 'Client', 'AS', '=', 'Authentication', 'Server', 'V', '=', 'Server', 'IDc', '=', 'Identification', 'user', 'C', 'Idv', '=', 'Identification', 'V', 'Pc', '=', 'Password', 'User', 'C', 'Adc', '=', 'Network', 'Address', 'C', 'Kv', '=', 'Secret', 'key', 'shared', 'AS', 'V', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', '–', 'More', 'Secure', 'Dialogue', 'Client-C', 'Ticket', 'Granting', 'Server-TGS', 'Authentication', 'Server-AS', 'TicketTGS', 'access', 'TGS', 'Request', 'TicketTGS', 'Request', 'TicketV', 'Request', 'TicketV', 'Request', 'Service', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', '–', 'More', 'Secure', 'Dialogue', 'Once', 'per', 'user', 'logon', 'session', 'C', '--', '-', '>', 'AS', ':', 'IDc', '||', 'IDTGS', 'AS', '--', '-', '>', 'C', ':', 'E', '(', 'Kc', ',', 'TicketTGS', ')', 'Once', 'per', 'type', 'service', 'C', '--', '-', '>', 'TGS', ':', 'IDc', '||', 'IDv', '||', 'TicketTGS', 'TGS', '--', '-', '>', 'C', ':', 'TicketV', 'Once', 'per', 'service', 'session', 'C', '--', '-', '>', 'V', ':', 'IDc', '||', 'TicketV', 'TicketTGS', '=', 'E', '(', 'KTGS', ',', '[', 'IDc', ',', 'ADc', ',', 'IdTGS', ',', 'TS1', ',', 'Lifetime1', ']', ')', 'TicketV', '=', 'E', '(', 'KV', ',', '[', 'IDc', ',', 'ADc', ',', 'IdV', ',', 'TS2', ',', 'Lifetime2', ']', ')', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step-1', 'The', 'client', 'sends', 'plaintext', 'request', 'AS', 'asking', 'ticket', 'use', 'talk', 'TGS', '.']
+
+>> Bigrams are: 
+ [('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', '–'), ('–', 'Simple'), ('Simple', 'Dialogue'), ('Dialogue', 'C'), ('C', '--'), ('--', '-'), ('-', '>'), ('>', 'AS'), ('AS', ':'), (':', 'IDc'), ('IDc', '||'), ('||', 'Pc'), ('Pc', '||'), ('||', 'IDv'), ('IDv', 'AS'), ('AS', '--'), ('--', '-'), ('-', '>'), ('>', 'C'), ('C', ':'), (':', 'Ticket'), ('Ticket', 'C'), ('C', '--'), ('--', '-'), ('-', '>'), ('>', 'V'), ('V', ':'), (':', 'IDc'), ('IDc', '||'), ('||', 'Ticket'), ('Ticket', 'Ticket'), ('Ticket', '='), ('=', 'E'), ('E', '('), ('(', 'Kv'), ('Kv', ','), (',', '['), ('[', 'IDc'), ('IDc', ','), (',', 'ADc'), ('ADc', ','), (',', 'IDv'), ('IDv', ']'), (']', ')'), (')', 'Authentication'), ('Authentication', 'Server-AS'), ('Server-AS', 'Application'), ('Application', 'Server'), ('Server', '-'), ('-', 'V'), ('V', 'User'), ('User', '-'), ('-', 'C'), ('C', '('), ('(', '1'), ('1', ')'), (')', '('), ('(', '2'), ('2', ')'), (')', '('), ('(', '3'), ('3', ')'), (')', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', '–'), ('–', 'Simple'), ('Simple', 'Dialogue'), ('Dialogue', 'C'), ('C', '--'), ('--', '-'), ('-', '>'), ('>', 'AS'), ('AS', ':'), (':', 'IDc'), ('IDc', '||'), ('||', 'Pc'), ('Pc', '||'), ('||', 'IDv'), ('IDv', 'AS'), ('AS', '--'), ('--', '-'), ('-', '>'), ('>', 'C'), ('C', ':'), (':', 'Ticket'), ('Ticket', 'C'), ('C', '--'), ('--', '-'), ('-', '>'), ('>', 'V'), ('V', ':'), (':', 'IDc'), ('IDc', '||'), ('||', 'Ticket'), ('Ticket', 'Ticket'), ('Ticket', '='), ('=', 'E'), ('E', '('), ('(', 'Kv'), ('Kv', ','), (',', '['), ('[', 'IDc'), ('IDc', ','), (',', 'ADc'), ('ADc', ','), (',', 'IDv'), ('IDv', ']'), (']', ')'), (')', 'Where'), ('Where', ','), (',', 'C'), ('C', '='), ('=', 'Client'), ('Client', 'AS'), ('AS', '='), ('=', 'Authentication'), ('Authentication', 'Server'), ('Server', 'V'), ('V', '='), ('=', 'Server'), ('Server', 'IDc'), ('IDc', '='), ('=', 'Identification'), ('Identification', 'user'), ('user', 'C'), ('C', 'Idv'), ('Idv', '='), ('=', 'Identification'), ('Identification', 'V'), ('V', 'Pc'), ('Pc', '='), ('=', 'Password'), ('Password', 'User'), ('User', 'C'), ('C', 'Adc'), ('Adc', '='), ('=', 'Network'), ('Network', 'Address'), ('Address', 'C'), ('C', 'Kv'), ('Kv', '='), ('=', 'Secret'), ('Secret', 'key'), ('key', 'shared'), ('shared', 'AS'), ('AS', 'V'), ('V', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', '–'), ('–', 'More'), ('More', 'Secure'), ('Secure', 'Dialogue'), ('Dialogue', 'Client-C'), ('Client-C', 'Ticket'), ('Ticket', 'Granting'), ('Granting', 'Server-TGS'), ('Server-TGS', 'Authentication'), ('Authentication', 'Server-AS'), ('Server-AS', 'TicketTGS'), ('TicketTGS', 'access'), ('access', 'TGS'), ('TGS', 'Request'), ('Request', 'TicketTGS'), ('TicketTGS', 'Request'), ('Request', 'TicketV'), ('TicketV', 'Request'), ('Request', 'TicketV'), ('TicketV', 'Request'), ('Request', 'Service'), ('Service', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', '–'), ('–', 'More'), ('More', 'Secure'), ('Secure', 'Dialogue'), ('Dialogue', 'Once'), ('Once', 'per'), ('per', 'user'), ('user', 'logon'), ('logon', 'session'), ('session', 'C'), ('C', '--'), ('--', '-'), ('-', '>'), ('>', 'AS'), ('AS', ':'), (':', 'IDc'), ('IDc', '||'), ('||', 'IDTGS'), ('IDTGS', 'AS'), ('AS', '--'), ('--', '-'), ('-', '>'), ('>', 'C'), ('C', ':'), (':', 'E'), ('E', '('), ('(', 'Kc'), ('Kc', ','), (',', 'TicketTGS'), ('TicketTGS', ')'), (')', 'Once'), ('Once', 'per'), ('per', 'type'), ('type', 'service'), ('service', 'C'), ('C', '--'), ('--', '-'), ('-', '>'), ('>', 'TGS'), ('TGS', ':'), (':', 'IDc'), ('IDc', '||'), ('||', 'IDv'), ('IDv', '||'), ('||', 'TicketTGS'), ('TicketTGS', 'TGS'), ('TGS', '--'), ('--', '-'), ('-', '>'), ('>', 'C'), ('C', ':'), (':', 'TicketV'), ('TicketV', 'Once'), ('Once', 'per'), ('per', 'service'), ('service', 'session'), ('session', 'C'), ('C', '--'), ('--', '-'), ('-', '>'), ('>', 'V'), ('V', ':'), (':', 'IDc'), ('IDc', '||'), ('||', 'TicketV'), ('TicketV', 'TicketTGS'), ('TicketTGS', '='), ('=', 'E'), ('E', '('), ('(', 'KTGS'), ('KTGS', ','), (',', '['), ('[', 'IDc'), ('IDc', ','), (',', 'ADc'), ('ADc', ','), (',', 'IdTGS'), ('IdTGS', ','), (',', 'TS1'), ('TS1', ','), (',', 'Lifetime1'), ('Lifetime1', ']'), (']', ')'), (')', 'TicketV'), ('TicketV', '='), ('=', 'E'), ('E', '('), ('(', 'KV'), ('KV', ','), (',', '['), ('[', 'IDc'), ('IDc', ','), (',', 'ADc'), ('ADc', ','), (',', 'IdV'), ('IdV', ','), (',', 'TS2'), ('TS2', ','), (',', 'Lifetime2'), ('Lifetime2', ']'), (']', ')'), (')', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', 'Version'), ('Version', '4'), ('4', '–'), ('–', 'Step-1'), ('Step-1', 'The'), ('The', 'client'), ('client', 'sends'), ('sends', 'plaintext'), ('plaintext', 'request'), ('request', 'AS'), ('AS', 'asking'), ('asking', 'ticket'), ('ticket', 'use'), ('use', 'talk'), ('talk', 'TGS'), ('TGS', '.')]
+
+>> Trigrams are: 
+ [('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', '–'), ('Kerberos', '–', 'Simple'), ('–', 'Simple', 'Dialogue'), ('Simple', 'Dialogue', 'C'), ('Dialogue', 'C', '--'), ('C', '--', '-'), ('--', '-', '>'), ('-', '>', 'AS'), ('>', 'AS', ':'), ('AS', ':', 'IDc'), (':', 'IDc', '||'), ('IDc', '||', 'Pc'), ('||', 'Pc', '||'), ('Pc', '||', 'IDv'), ('||', 'IDv', 'AS'), ('IDv', 'AS', '--'), ('AS', '--', '-'), ('--', '-', '>'), ('-', '>', 'C'), ('>', 'C', ':'), ('C', ':', 'Ticket'), (':', 'Ticket', 'C'), ('Ticket', 'C', '--'), ('C', '--', '-'), ('--', '-', '>'), ('-', '>', 'V'), ('>', 'V', ':'), ('V', ':', 'IDc'), (':', 'IDc', '||'), ('IDc', '||', 'Ticket'), ('||', 'Ticket', 'Ticket'), ('Ticket', 'Ticket', '='), ('Ticket', '=', 'E'), ('=', 'E', '('), ('E', '(', 'Kv'), ('(', 'Kv', ','), ('Kv', ',', '['), (',', '[', 'IDc'), ('[', 'IDc', ','), ('IDc', ',', 'ADc'), (',', 'ADc', ','), ('ADc', ',', 'IDv'), (',', 'IDv', ']'), ('IDv', ']', ')'), (']', ')', 'Authentication'), (')', 'Authentication', 'Server-AS'), ('Authentication', 'Server-AS', 'Application'), ('Server-AS', 'Application', 'Server'), ('Application', 'Server', '-'), ('Server', '-', 'V'), ('-', 'V', 'User'), ('V', 'User', '-'), ('User', '-', 'C'), ('-', 'C', '('), ('C', '(', '1'), ('(', '1', ')'), ('1', ')', '('), (')', '(', '2'), ('(', '2', ')'), ('2', ')', '('), (')', '(', '3'), ('(', '3', ')'), ('3', ')', 'Unit-9'), (')', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', '–'), ('Kerberos', '–', 'Simple'), ('–', 'Simple', 'Dialogue'), ('Simple', 'Dialogue', 'C'), ('Dialogue', 'C', '--'), ('C', '--', '-'), ('--', '-', '>'), ('-', '>', 'AS'), ('>', 'AS', ':'), ('AS', ':', 'IDc'), (':', 'IDc', '||'), ('IDc', '||', 'Pc'), ('||', 'Pc', '||'), ('Pc', '||', 'IDv'), ('||', 'IDv', 'AS'), ('IDv', 'AS', '--'), ('AS', '--', '-'), ('--', '-', '>'), ('-', '>', 'C'), ('>', 'C', ':'), ('C', ':', 'Ticket'), (':', 'Ticket', 'C'), ('Ticket', 'C', '--'), ('C', '--', '-'), ('--', '-', '>'), ('-', '>', 'V'), ('>', 'V', ':'), ('V', ':', 'IDc'), (':', 'IDc', '||'), ('IDc', '||', 'Ticket'), ('||', 'Ticket', 'Ticket'), ('Ticket', 'Ticket', '='), ('Ticket', '=', 'E'), ('=', 'E', '('), ('E', '(', 'Kv'), ('(', 'Kv', ','), ('Kv', ',', '['), (',', '[', 'IDc'), ('[', 'IDc', ','), ('IDc', ',', 'ADc'), (',', 'ADc', ','), ('ADc', ',', 'IDv'), (',', 'IDv', ']'), ('IDv', ']', ')'), (']', ')', 'Where'), (')', 'Where', ','), ('Where', ',', 'C'), (',', 'C', '='), ('C', '=', 'Client'), ('=', 'Client', 'AS'), ('Client', 'AS', '='), ('AS', '=', 'Authentication'), ('=', 'Authentication', 'Server'), ('Authentication', 'Server', 'V'), ('Server', 'V', '='), ('V', '=', 'Server'), ('=', 'Server', 'IDc'), ('Server', 'IDc', '='), ('IDc', '=', 'Identification'), ('=', 'Identification', 'user'), ('Identification', 'user', 'C'), ('user', 'C', 'Idv'), ('C', 'Idv', '='), ('Idv', '=', 'Identification'), ('=', 'Identification', 'V'), ('Identification', 'V', 'Pc'), ('V', 'Pc', '='), ('Pc', '=', 'Password'), ('=', 'Password', 'User'), ('Password', 'User', 'C'), ('User', 'C', 'Adc'), ('C', 'Adc', '='), ('Adc', '=', 'Network'), ('=', 'Network', 'Address'), ('Network', 'Address', 'C'), ('Address', 'C', 'Kv'), ('C', 'Kv', '='), ('Kv', '=', 'Secret'), ('=', 'Secret', 'key'), ('Secret', 'key', 'shared'), ('key', 'shared', 'AS'), ('shared', 'AS', 'V'), ('AS', 'V', 'Unit-9'), ('V', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', '–'), ('Kerberos', '–', 'More'), ('–', 'More', 'Secure'), ('More', 'Secure', 'Dialogue'), ('Secure', 'Dialogue', 'Client-C'), ('Dialogue', 'Client-C', 'Ticket'), ('Client-C', 'Ticket', 'Granting'), ('Ticket', 'Granting', 'Server-TGS'), ('Granting', 'Server-TGS', 'Authentication'), ('Server-TGS', 'Authentication', 'Server-AS'), ('Authentication', 'Server-AS', 'TicketTGS'), ('Server-AS', 'TicketTGS', 'access'), ('TicketTGS', 'access', 'TGS'), ('access', 'TGS', 'Request'), ('TGS', 'Request', 'TicketTGS'), ('Request', 'TicketTGS', 'Request'), ('TicketTGS', 'Request', 'TicketV'), ('Request', 'TicketV', 'Request'), ('TicketV', 'Request', 'TicketV'), ('Request', 'TicketV', 'Request'), ('TicketV', 'Request', 'Service'), ('Request', 'Service', 'Unit-9'), ('Service', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', '–'), ('Kerberos', '–', 'More'), ('–', 'More', 'Secure'), ('More', 'Secure', 'Dialogue'), ('Secure', 'Dialogue', 'Once'), ('Dialogue', 'Once', 'per'), ('Once', 'per', 'user'), ('per', 'user', 'logon'), ('user', 'logon', 'session'), ('logon', 'session', 'C'), ('session', 'C', '--'), ('C', '--', '-'), ('--', '-', '>'), ('-', '>', 'AS'), ('>', 'AS', ':'), ('AS', ':', 'IDc'), (':', 'IDc', '||'), ('IDc', '||', 'IDTGS'), ('||', 'IDTGS', 'AS'), ('IDTGS', 'AS', '--'), ('AS', '--', '-'), ('--', '-', '>'), ('-', '>', 'C'), ('>', 'C', ':'), ('C', ':', 'E'), (':', 'E', '('), ('E', '(', 'Kc'), ('(', 'Kc', ','), ('Kc', ',', 'TicketTGS'), (',', 'TicketTGS', ')'), ('TicketTGS', ')', 'Once'), (')', 'Once', 'per'), ('Once', 'per', 'type'), ('per', 'type', 'service'), ('type', 'service', 'C'), ('service', 'C', '--'), ('C', '--', '-'), ('--', '-', '>'), ('-', '>', 'TGS'), ('>', 'TGS', ':'), ('TGS', ':', 'IDc'), (':', 'IDc', '||'), ('IDc', '||', 'IDv'), ('||', 'IDv', '||'), ('IDv', '||', 'TicketTGS'), ('||', 'TicketTGS', 'TGS'), ('TicketTGS', 'TGS', '--'), ('TGS', '--', '-'), ('--', '-', '>'), ('-', '>', 'C'), ('>', 'C', ':'), ('C', ':', 'TicketV'), (':', 'TicketV', 'Once'), ('TicketV', 'Once', 'per'), ('Once', 'per', 'service'), ('per', 'service', 'session'), ('service', 'session', 'C'), ('session', 'C', '--'), ('C', '--', '-'), ('--', '-', '>'), ('-', '>', 'V'), ('>', 'V', ':'), ('V', ':', 'IDc'), (':', 'IDc', '||'), ('IDc', '||', 'TicketV'), ('||', 'TicketV', 'TicketTGS'), ('TicketV', 'TicketTGS', '='), ('TicketTGS', '=', 'E'), ('=', 'E', '('), ('E', '(', 'KTGS'), ('(', 'KTGS', ','), ('KTGS', ',', '['), (',', '[', 'IDc'), ('[', 'IDc', ','), ('IDc', ',', 'ADc'), (',', 'ADc', ','), ('ADc', ',', 'IdTGS'), (',', 'IdTGS', ','), ('IdTGS', ',', 'TS1'), (',', 'TS1', ','), ('TS1', ',', 'Lifetime1'), (',', 'Lifetime1', ']'), ('Lifetime1', ']', ')'), (']', ')', 'TicketV'), (')', 'TicketV', '='), ('TicketV', '=', 'E'), ('=', 'E', '('), ('E', '(', 'KV'), ('(', 'KV', ','), ('KV', ',', '['), (',', '[', 'IDc'), ('[', 'IDc', ','), ('IDc', ',', 'ADc'), (',', 'ADc', ','), ('ADc', ',', 'IdV'), (',', 'IdV', ','), ('IdV', ',', 'TS2'), (',', 'TS2', ','), ('TS2', ',', 'Lifetime2'), (',', 'Lifetime2', ']'), ('Lifetime2', ']', ')'), (']', ')', 'Unit-9'), (')', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', 'Version'), ('Kerberos', 'Version', '4'), ('Version', '4', '–'), ('4', '–', 'Step-1'), ('–', 'Step-1', 'The'), ('Step-1', 'The', 'client'), ('The', 'client', 'sends'), ('client', 'sends', 'plaintext'), ('sends', 'plaintext', 'request'), ('plaintext', 'request', 'AS'), ('request', 'AS', 'asking'), ('AS', 'asking', 'ticket'), ('asking', 'ticket', 'use'), ('ticket', 'use', 'talk'), ('use', 'talk', 'TGS'), ('talk', 'TGS', '.')]
+
+>> POS Tags are: 
+ [('Unit-9', 'JJ'), ('Remote', 'NNP'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('–', 'NNP'), ('Simple', 'NNP'), ('Dialogue', 'NNP'), ('C', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('AS', 'IN'), (':', ':'), ('IDc', 'NNP'), ('||', 'NNP'), ('Pc', 'NNP'), ('||', 'NNP'), ('IDv', 'NNP'), ('AS', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'JJ'), ('C', 'NNP'), (':', ':'), ('Ticket', 'NNP'), ('C', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('V', 'NNP'), (':', ':'), ('IDc', 'NNP'), ('||', 'NNP'), ('Ticket', 'NNP'), ('Ticket', 'NNP'), ('=', 'NNP'), ('E', 'NNP'), ('(', '('), ('Kv', 'NNP'), (',', ','), ('[', 'NNP'), ('IDc', 'NNP'), (',', ','), ('ADc', 'NNP'), (',', ','), ('IDv', 'NNP'), (']', 'NNP'), (')', ')'), ('Authentication', 'NNP'), ('Server-AS', 'NNP'), ('Application', 'NNP'), ('Server', 'NNP'), ('-', ':'), ('V', 'NNP'), ('User', 'NNP'), ('-', ':'), ('C', 'NNP'), ('(', '('), ('1', 'CD'), (')', ')'), ('(', '('), ('2', 'CD'), (')', ')'), ('(', '('), ('3', 'CD'), (')', ')'), ('Unit-9', 'JJ'), ('Remote', 'NNP'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('–', 'NNP'), ('Simple', 'NNP'), ('Dialogue', 'NNP'), ('C', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('AS', 'IN'), (':', ':'), ('IDc', 'NNP'), ('||', 'NNP'), ('Pc', 'NNP'), ('||', 'NNP'), ('IDv', 'NNP'), ('AS', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'JJ'), ('C', 'NNP'), (':', ':'), ('Ticket', 'NNP'), ('C', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('V', 'NNP'), (':', ':'), ('IDc', 'NNP'), ('||', 'NNP'), ('Ticket', 'NNP'), ('Ticket', 'NNP'), ('=', 'NNP'), ('E', 'NNP'), ('(', '('), ('Kv', 'NNP'), (',', ','), ('[', 'NNP'), ('IDc', 'NNP'), (',', ','), ('ADc', 'NNP'), (',', ','), ('IDv', 'NNP'), (']', 'NNP'), (')', ')'), ('Where', 'NNP'), (',', ','), ('C', 'NNP'), ('=', 'NNP'), ('Client', 'NNP'), ('AS', 'NNP'), ('=', 'NNP'), ('Authentication', 'NNP'), ('Server', 'NNP'), ('V', 'NNP'), ('=', 'NNP'), ('Server', 'NNP'), ('IDc', 'NNP'), ('=', 'NNP'), ('Identification', 'NNP'), ('user', 'NNP'), ('C', 'NNP'), ('Idv', 'NNP'), ('=', 'NNP'), ('Identification', 'NNP'), ('V', 'NNP'), ('Pc', 'NNP'), ('=', 'NNP'), ('Password', 'NNP'), ('User', 'NNP'), ('C', 'NNP'), ('Adc', 'NNP'), ('=', 'NNP'), ('Network', 'NNP'), ('Address', 'NNP'), ('C', 'NNP'), ('Kv', 'NNP'), ('=', 'NNP'), ('Secret', 'NNP'), ('key', 'NN'), ('shared', 'VBD'), ('AS', 'IN'), ('V', 'NNP'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('–', 'NNP'), ('More', 'NNP'), ('Secure', 'NNP'), ('Dialogue', 'NNP'), ('Client-C', 'NNP'), ('Ticket', 'NNP'), ('Granting', 'NNP'), ('Server-TGS', 'JJ'), ('Authentication', 'NNP'), ('Server-AS', 'NNP'), ('TicketTGS', 'NNP'), ('access', 'NN'), ('TGS', 'NNP'), ('Request', 'NNP'), ('TicketTGS', 'NNP'), ('Request', 'NNP'), ('TicketV', 'NNP'), ('Request', 'NNP'), ('TicketV', 'NNP'), ('Request', 'NNP'), ('Service', 'NNP'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('–', 'NNP'), ('More', 'NNP'), ('Secure', 'NNP'), ('Dialogue', 'NNP'), ('Once', 'NNP'), ('per', 'IN'), ('user', 'NN'), ('logon', 'NN'), ('session', 'NN'), ('C', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('AS', 'IN'), (':', ':'), ('IDc', 'NNP'), ('||', 'NNP'), ('IDTGS', 'NNP'), ('AS', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'JJ'), ('C', 'NNP'), (':', ':'), ('E', 'NN'), ('(', '('), ('Kc', 'NNP'), (',', ','), ('TicketTGS', 'NNP'), (')', ')'), ('Once', 'RB'), ('per', 'IN'), ('type', 'NN'), ('service', 'NN'), ('C', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('TGS', 'NN'), (':', ':'), ('IDc', 'NNP'), ('||', 'NNP'), ('IDv', 'NNP'), ('||', 'NNP'), ('TicketTGS', 'NNP'), ('TGS', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'JJ'), ('C', 'NNP'), (':', ':'), ('TicketV', 'NN'), ('Once', 'NNP'), ('per', 'IN'), ('service', 'NN'), ('session', 'NN'), ('C', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('V', 'NNP'), (':', ':'), ('IDc', 'NNP'), ('||', 'NNP'), ('TicketV', 'NNP'), ('TicketTGS', 'NNP'), ('=', 'NNP'), ('E', 'NNP'), ('(', '('), ('KTGS', 'NNP'), (',', ','), ('[', 'NNP'), ('IDc', 'NNP'), (',', ','), ('ADc', 'NNP'), (',', ','), ('IdTGS', 'NNP'), (',', ','), ('TS1', 'NNP'), (',', ','), ('Lifetime1', 'NNP'), (']', 'NNP'), (')', ')'), ('TicketV', 'NNP'), ('=', 'NNP'), ('E', 'NNP'), ('(', '('), ('KV', 'NNP'), (',', ','), ('[', 'NNP'), ('IDc', 'NNP'), (',', ','), ('ADc', 'NNP'), (',', ','), ('IdV', 'NNP'), (',', ','), ('TS2', 'NNP'), (',', ','), ('Lifetime2', 'NNP'), (']', 'NNP'), (')', ')'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('Version', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Step-1', 'NNP'), ('The', 'DT'), ('client', 'NN'), ('sends', 'VBZ'), ('plaintext', 'JJ'), ('request', 'NN'), ('AS', 'IN'), ('asking', 'VBG'), ('ticket', 'NN'), ('use', 'NN'), ('talk', 'NN'), ('TGS', 'NNP'), ('.', '.')]
+
+ (S
+  (NP
+    Unit-9/JJ
+    Remote/NNP
+    user/NN
+    authentication/NN
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    –/NNP
+    Simple/NNP
+    Dialogue/NNP
+    C/NNP)
+  --/:
+  -/:
+  (NP >/NN)
+  AS/IN
+  :/:
+  (NP IDc/NNP ||/NNP Pc/NNP ||/NNP IDv/NNP AS/NNP)
+  --/:
+  -/:
+  (NP >/JJ C/NNP)
+  :/:
+  (NP Ticket/NNP C/NNP)
+  --/:
+  -/:
+  (NP >/NN V/NNP)
+  :/:
+  (NP IDc/NNP ||/NNP Ticket/NNP Ticket/NNP =/NNP E/NNP)
+  (/(
+  (NP Kv/NNP)
+  ,/,
+  (NP [/NNP IDc/NNP)
+  ,/,
+  (NP ADc/NNP)
+  ,/,
+  (NP IDv/NNP ]/NNP)
+  )/)
+  (NP Authentication/NNP Server-AS/NNP Application/NNP Server/NNP)
+  -/:
+  (NP V/NNP User/NNP)
+  -/:
+  (NP C/NNP)
+  (/(
+  1/CD
+  )/)
+  (/(
+  2/CD
+  )/)
+  (/(
+  3/CD
+  )/)
+  (NP
+    Unit-9/JJ
+    Remote/NNP
+    user/NN
+    authentication/NN
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    –/NNP
+    Simple/NNP
+    Dialogue/NNP
+    C/NNP)
+  --/:
+  -/:
+  (NP >/NN)
+  AS/IN
+  :/:
+  (NP IDc/NNP ||/NNP Pc/NNP ||/NNP IDv/NNP AS/NNP)
+  --/:
+  -/:
+  (NP >/JJ C/NNP)
+  :/:
+  (NP Ticket/NNP C/NNP)
+  --/:
+  -/:
+  (NP >/NN V/NNP)
+  :/:
+  (NP IDc/NNP ||/NNP Ticket/NNP Ticket/NNP =/NNP E/NNP)
+  (/(
+  (NP Kv/NNP)
+  ,/,
+  (NP [/NNP IDc/NNP)
+  ,/,
+  (NP ADc/NNP)
+  ,/,
+  (NP IDv/NNP ]/NNP)
+  )/)
+  (NP Where/NNP)
+  ,/,
+  (NP
+    C/NNP
+    =/NNP
+    Client/NNP
+    AS/NNP
+    =/NNP
+    Authentication/NNP
+    Server/NNP
+    V/NNP
+    =/NNP
+    Server/NNP
+    IDc/NNP
+    =/NNP
+    Identification/NNP
+    user/NNP
+    C/NNP
+    Idv/NNP
+    =/NNP
+    Identification/NNP
+    V/NNP
+    Pc/NNP
+    =/NNP
+    Password/NNP
+    User/NNP
+    C/NNP
+    Adc/NNP
+    =/NNP
+    Network/NNP
+    Address/NNP
+    C/NNP
+    Kv/NNP
+    =/NNP
+    Secret/NNP
+    key/NN)
+  shared/VBD
+  AS/IN
+  (NP V/NNP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    –/NNP
+    More/NNP
+    Secure/NNP
+    Dialogue/NNP
+    Client-C/NNP
+    Ticket/NNP
+    Granting/NNP)
+  (NP
+    Server-TGS/JJ
+    Authentication/NNP
+    Server-AS/NNP
+    TicketTGS/NNP
+    access/NN
+    TGS/NNP
+    Request/NNP
+    TicketTGS/NNP
+    Request/NNP
+    TicketV/NNP
+    Request/NNP
+    TicketV/NNP
+    Request/NNP
+    Service/NNP
+    Unit-9/NNP
+    Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    –/NNP
+    More/NNP
+    Secure/NNP
+    Dialogue/NNP
+    Once/NNP)
+  per/IN
+  (NP user/NN logon/NN session/NN C/NNP)
+  --/:
+  -/:
+  (NP >/NN)
+  AS/IN
+  :/:
+  (NP IDc/NNP ||/NNP IDTGS/NNP AS/NNP)
+  --/:
+  -/:
+  (NP >/JJ C/NNP)
+  :/:
+  (NP E/NN)
+  (/(
+  (NP Kc/NNP)
+  ,/,
+  (NP TicketTGS/NNP)
+  )/)
+  Once/RB
+  per/IN
+  (NP type/NN service/NN C/NNP)
+  --/:
+  -/:
+  (NP >/NN TGS/NN)
+  :/:
+  (NP IDc/NNP ||/NNP IDv/NNP ||/NNP TicketTGS/NNP TGS/NNP)
+  --/:
+  -/:
+  (NP >/JJ C/NNP)
+  :/:
+  (NP TicketV/NN Once/NNP)
+  per/IN
+  (NP service/NN session/NN C/NNP)
+  --/:
+  -/:
+  (NP >/NN V/NNP)
+  :/:
+  (NP IDc/NNP ||/NNP TicketV/NNP TicketTGS/NNP =/NNP E/NNP)
+  (/(
+  (NP KTGS/NNP)
+  ,/,
+  (NP [/NNP IDc/NNP)
+  ,/,
+  (NP ADc/NNP)
+  ,/,
+  (NP IdTGS/NNP)
+  ,/,
+  (NP TS1/NNP)
+  ,/,
+  (NP Lifetime1/NNP ]/NNP)
+  )/)
+  (NP TicketV/NNP =/NNP E/NNP)
+  (/(
+  (NP KV/NNP)
+  ,/,
+  (NP [/NNP IDc/NNP)
+  ,/,
+  (NP ADc/NNP)
+  ,/,
+  (NP IdV/NNP)
+  ,/,
+  (NP TS2/NNP)
+  ,/,
+  (NP Lifetime2/NNP ]/NNP)
+  )/)
+  (NP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    Version/NNP)
+  4/CD
+  (NP –/NNP Step-1/NNP)
+  (NP The/DT client/NN)
+  sends/VBZ
+  (NP plaintext/JJ request/NN)
+  AS/IN
+  asking/VBG
+  (NP ticket/NN use/NN talk/NN TGS/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Unit-9 Remote user authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos – Simple Dialogue C', '>', 'IDc || Pc || IDv AS', '> C', 'Ticket C', '> V', 'IDc || Ticket Ticket = E', 'Kv', '[ IDc', 'ADc', 'IDv ]', 'Authentication Server-AS Application Server', 'V User', 'C', 'Unit-9 Remote user authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos – Simple Dialogue C', '>', 'IDc || Pc || IDv AS', '> C', 'Ticket C', '> V', 'IDc || Ticket Ticket = E', 'Kv', '[ IDc', 'ADc', 'IDv ]', 'Where', 'C = Client AS = Authentication Server V = Server IDc = Identification user C Idv = Identification V Pc = Password User C Adc = Network Address C Kv = Secret key', 'V Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos – More Secure Dialogue Client-C Ticket Granting', 'Server-TGS Authentication Server-AS TicketTGS access TGS Request TicketTGS Request TicketV Request TicketV Request Service Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos – More Secure Dialogue Once', 'user logon session C', '>', 'IDc || IDTGS AS', '> C', 'E', 'Kc', 'TicketTGS', 'type service C', '> TGS', 'IDc || IDv || TicketTGS TGS', '> C', 'TicketV Once', 'service session C', '> V', 'IDc || TicketV TicketTGS = E', 'KTGS', '[ IDc', 'ADc', 'IdTGS', 'TS1', 'Lifetime1 ]', 'TicketV = E', 'KV', '[ IDc', 'ADc', 'IdV', 'TS2', 'Lifetime2 ]', 'Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos Version', '– Step-1', 'The client', 'plaintext request', 'ticket use talk TGS']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos'), ('PERSON', 'Dialogue C'), ('ORGANIZATION', 'IDc'), ('PERSON', 'Ticket C'), ('ORGANIZATION', 'IDc'), ('ORGANIZATION', 'ADc'), ('ORGANIZATION', 'IDv'), ('GPE', 'Server'), ('PERSON', 'V User'), ('GPE', 'C'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos'), ('PERSON', 'Dialogue C'), ('ORGANIZATION', 'IDc'), ('PERSON', 'Ticket C'), ('ORGANIZATION', 'IDc'), ('ORGANIZATION', 'ADc'), ('ORGANIZATION', 'IDv'), ('PERSON', 'C'), ('PERSON', 'Client AS'), ('PERSON', 'Network Address'), ('PERSON', 'V'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos'), ('PERSON', 'Dialogue Client-C Ticket'), ('ORGANIZATION', 'TGS Request'), ('PERSON', 'Request TicketV Request'), ('ORGANIZATION', 'TicketV Request Service'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos'), ('PERSON', 'Dialogue Once'), ('ORGANIZATION', 'IDc'), ('ORGANIZATION', 'TicketTGS'), ('ORGANIZATION', 'IDc'), ('ORGANIZATION', 'TicketV Once'), ('ORGANIZATION', 'IDc'), ('ORGANIZATION', 'KTGS'), ('ORGANIZATION', 'ADc'), ('ORGANIZATION', 'IdTGS'), ('ORGANIZATION', 'TS1'), ('PERSON', 'Lifetime1'), ('ORGANIZATION', 'TicketV'), ('ORGANIZATION', 'KV'), ('ORGANIZATION', 'ADc'), ('ORGANIZATION', 'IdV'), ('ORGANIZATION', 'TS2'), ('PERSON', 'Lifetime2'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos'), ('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '–'), ('Simple', 'simpl'), ('Dialogue', 'dialogu'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'as'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('Pc', 'pc'), ('||', '||'), ('IDv', 'idv'), ('AS', 'as'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('Ticket', 'ticket'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('V', 'v'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('Ticket', 'ticket'), ('Ticket', 'ticket'), ('=', '='), ('E', 'e'), ('(', '('), ('Kv', 'kv'), (',', ','), ('[', '['), ('IDc', 'idc'), (',', ','), ('ADc', 'adc'), (',', ','), ('IDv', 'idv'), (']', ']'), (')', ')'), ('Authentication', 'authent'), ('Server-AS', 'server-a'), ('Application', 'applic'), ('Server', 'server'), ('-', '-'), ('V', 'v'), ('User', 'user'), ('-', '-'), ('C', 'c'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('2', '2'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '–'), ('Simple', 'simpl'), ('Dialogue', 'dialogu'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'as'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('Pc', 'pc'), ('||', '||'), ('IDv', 'idv'), ('AS', 'as'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('Ticket', 'ticket'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('V', 'v'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('Ticket', 'ticket'), ('Ticket', 'ticket'), ('=', '='), ('E', 'e'), ('(', '('), ('Kv', 'kv'), (',', ','), ('[', '['), ('IDc', 'idc'), (',', ','), ('ADc', 'adc'), (',', ','), ('IDv', 'idv'), (']', ']'), (')', ')'), ('Where', 'where'), (',', ','), ('C', 'c'), ('=', '='), ('Client', 'client'), ('AS', 'as'), ('=', '='), ('Authentication', 'authent'), ('Server', 'server'), ('V', 'v'), ('=', '='), ('Server', 'server'), ('IDc', 'idc'), ('=', '='), ('Identification', 'identif'), ('user', 'user'), ('C', 'c'), ('Idv', 'idv'), ('=', '='), ('Identification', 'identif'), ('V', 'v'), ('Pc', 'pc'), ('=', '='), ('Password', 'password'), ('User', 'user'), ('C', 'c'), ('Adc', 'adc'), ('=', '='), ('Network', 'network'), ('Address', 'address'), ('C', 'c'), ('Kv', 'kv'), ('=', '='), ('Secret', 'secret'), ('key', 'key'), ('shared', 'share'), ('AS', 'as'), ('V', 'v'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '–'), ('More', 'more'), ('Secure', 'secur'), ('Dialogue', 'dialogu'), ('Client-C', 'client-c'), ('Ticket', 'ticket'), ('Granting', 'grant'), ('Server-TGS', 'server-tg'), ('Authentication', 'authent'), ('Server-AS', 'server-a'), ('TicketTGS', 'tickettg'), ('access', 'access'), ('TGS', 'tg'), ('Request', 'request'), ('TicketTGS', 'tickettg'), ('Request', 'request'), ('TicketV', 'ticketv'), ('Request', 'request'), ('TicketV', 'ticketv'), ('Request', 'request'), ('Service', 'servic'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '–'), ('More', 'more'), ('Secure', 'secur'), ('Dialogue', 'dialogu'), ('Once', 'onc'), ('per', 'per'), ('user', 'user'), ('logon', 'logon'), ('session', 'session'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'as'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('IDTGS', 'idtg'), ('AS', 'as'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('E', 'e'), ('(', '('), ('Kc', 'kc'), (',', ','), ('TicketTGS', 'tickettg'), (')', ')'), ('Once', 'onc'), ('per', 'per'), ('type', 'type'), ('service', 'servic'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('TGS', 'tg'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('IDv', 'idv'), ('||', '||'), ('TicketTGS', 'tickettg'), ('TGS', 'tg'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('TicketV', 'ticketv'), ('Once', 'onc'), ('per', 'per'), ('service', 'servic'), ('session', 'session'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('V', 'v'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('TicketV', 'ticketv'), ('TicketTGS', 'tickettg'), ('=', '='), ('E', 'e'), ('(', '('), ('KTGS', 'ktg'), (',', ','), ('[', '['), ('IDc', 'idc'), (',', ','), ('ADc', 'adc'), (',', ','), ('IdTGS', 'idtg'), (',', ','), ('TS1', 'ts1'), (',', ','), ('Lifetime1', 'lifetime1'), (']', ']'), (')', ')'), ('TicketV', 'ticketv'), ('=', '='), ('E', 'e'), ('(', '('), ('KV', 'kv'), (',', ','), ('[', '['), ('IDc', 'idc'), (',', ','), ('ADc', 'adc'), (',', ','), ('IdV', 'idv'), (',', ','), ('TS2', 'ts2'), (',', ','), ('Lifetime2', 'lifetime2'), (']', ']'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-1', 'step-1'), ('The', 'the'), ('client', 'client'), ('sends', 'send'), ('plaintext', 'plaintext'), ('request', 'request'), ('AS', 'as'), ('asking', 'ask'), ('ticket', 'ticket'), ('use', 'use'), ('talk', 'talk'), ('TGS', 'tg'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '–'), ('Simple', 'simpl'), ('Dialogue', 'dialogu'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'as'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('Pc', 'pc'), ('||', '||'), ('IDv', 'idv'), ('AS', 'as'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('Ticket', 'ticket'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('V', 'v'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('Ticket', 'ticket'), ('Ticket', 'ticket'), ('=', '='), ('E', 'e'), ('(', '('), ('Kv', 'kv'), (',', ','), ('[', '['), ('IDc', 'idc'), (',', ','), ('ADc', 'adc'), (',', ','), ('IDv', 'idv'), (']', ']'), (')', ')'), ('Authentication', 'authent'), ('Server-AS', 'server-a'), ('Application', 'applic'), ('Server', 'server'), ('-', '-'), ('V', 'v'), ('User', 'user'), ('-', '-'), ('C', 'c'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('2', '2'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '–'), ('Simple', 'simpl'), ('Dialogue', 'dialogu'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'as'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('Pc', 'pc'), ('||', '||'), ('IDv', 'idv'), ('AS', 'as'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('Ticket', 'ticket'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('V', 'v'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('Ticket', 'ticket'), ('Ticket', 'ticket'), ('=', '='), ('E', 'e'), ('(', '('), ('Kv', 'kv'), (',', ','), ('[', '['), ('IDc', 'idc'), (',', ','), ('ADc', 'adc'), (',', ','), ('IDv', 'idv'), (']', ']'), (')', ')'), ('Where', 'where'), (',', ','), ('C', 'c'), ('=', '='), ('Client', 'client'), ('AS', 'as'), ('=', '='), ('Authentication', 'authent'), ('Server', 'server'), ('V', 'v'), ('=', '='), ('Server', 'server'), ('IDc', 'idc'), ('=', '='), ('Identification', 'identif'), ('user', 'user'), ('C', 'c'), ('Idv', 'idv'), ('=', '='), ('Identification', 'identif'), ('V', 'v'), ('Pc', 'pc'), ('=', '='), ('Password', 'password'), ('User', 'user'), ('C', 'c'), ('Adc', 'adc'), ('=', '='), ('Network', 'network'), ('Address', 'address'), ('C', 'c'), ('Kv', 'kv'), ('=', '='), ('Secret', 'secret'), ('key', 'key'), ('shared', 'share'), ('AS', 'as'), ('V', 'v'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '–'), ('More', 'more'), ('Secure', 'secur'), ('Dialogue', 'dialogu'), ('Client-C', 'client-c'), ('Ticket', 'ticket'), ('Granting', 'grant'), ('Server-TGS', 'server-tg'), ('Authentication', 'authent'), ('Server-AS', 'server-a'), ('TicketTGS', 'tickettg'), ('access', 'access'), ('TGS', 'tgs'), ('Request', 'request'), ('TicketTGS', 'tickettg'), ('Request', 'request'), ('TicketV', 'ticketv'), ('Request', 'request'), ('TicketV', 'ticketv'), ('Request', 'request'), ('Service', 'servic'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('–', '–'), ('More', 'more'), ('Secure', 'secur'), ('Dialogue', 'dialogu'), ('Once', 'onc'), ('per', 'per'), ('user', 'user'), ('logon', 'logon'), ('session', 'session'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'as'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('IDTGS', 'idtg'), ('AS', 'as'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('E', 'e'), ('(', '('), ('Kc', 'kc'), (',', ','), ('TicketTGS', 'tickettg'), (')', ')'), ('Once', 'onc'), ('per', 'per'), ('type', 'type'), ('service', 'servic'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('TGS', 'tgs'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('IDv', 'idv'), ('||', '||'), ('TicketTGS', 'tickettg'), ('TGS', 'tgs'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('TicketV', 'ticketv'), ('Once', 'onc'), ('per', 'per'), ('service', 'servic'), ('session', 'session'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('V', 'v'), (':', ':'), ('IDc', 'idc'), ('||', '||'), ('TicketV', 'ticketv'), ('TicketTGS', 'tickettg'), ('=', '='), ('E', 'e'), ('(', '('), ('KTGS', 'ktgs'), (',', ','), ('[', '['), ('IDc', 'idc'), (',', ','), ('ADc', 'adc'), (',', ','), ('IdTGS', 'idtg'), (',', ','), ('TS1', 'ts1'), (',', ','), ('Lifetime1', 'lifetime1'), (']', ']'), (')', ')'), ('TicketV', 'ticketv'), ('=', '='), ('E', 'e'), ('(', '('), ('KV', 'kv'), (',', ','), ('[', '['), ('IDc', 'idc'), (',', ','), ('ADc', 'adc'), (',', ','), ('IdV', 'idv'), (',', ','), ('TS2', 'ts2'), (',', ','), ('Lifetime2', 'lifetime2'), (']', ']'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-1', 'step-1'), ('The', 'the'), ('client', 'client'), ('sends', 'send'), ('plaintext', 'plaintext'), ('request', 'request'), ('AS', 'as'), ('asking', 'ask'), ('ticket', 'ticket'), ('use', 'use'), ('talk', 'talk'), ('TGS', 'tgs'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('–', '–'), ('Simple', 'Simple'), ('Dialogue', 'Dialogue'), ('C', 'C'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'AS'), (':', ':'), ('IDc', 'IDc'), ('||', '||'), ('Pc', 'Pc'), ('||', '||'), ('IDv', 'IDv'), ('AS', 'AS'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'C'), (':', ':'), ('Ticket', 'Ticket'), ('C', 'C'), ('--', '--'), ('-', '-'), ('>', '>'), ('V', 'V'), (':', ':'), ('IDc', 'IDc'), ('||', '||'), ('Ticket', 'Ticket'), ('Ticket', 'Ticket'), ('=', '='), ('E', 'E'), ('(', '('), ('Kv', 'Kv'), (',', ','), ('[', '['), ('IDc', 'IDc'), (',', ','), ('ADc', 'ADc'), (',', ','), ('IDv', 'IDv'), (']', ']'), (')', ')'), ('Authentication', 'Authentication'), ('Server-AS', 'Server-AS'), ('Application', 'Application'), ('Server', 'Server'), ('-', '-'), ('V', 'V'), ('User', 'User'), ('-', '-'), ('C', 'C'), ('(', '('), ('1', '1'), (')', ')'), ('(', '('), ('2', '2'), (')', ')'), ('(', '('), ('3', '3'), (')', ')'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('–', '–'), ('Simple', 'Simple'), ('Dialogue', 'Dialogue'), ('C', 'C'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'AS'), (':', ':'), ('IDc', 'IDc'), ('||', '||'), ('Pc', 'Pc'), ('||', '||'), ('IDv', 'IDv'), ('AS', 'AS'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'C'), (':', ':'), ('Ticket', 'Ticket'), ('C', 'C'), ('--', '--'), ('-', '-'), ('>', '>'), ('V', 'V'), (':', ':'), ('IDc', 'IDc'), ('||', '||'), ('Ticket', 'Ticket'), ('Ticket', 'Ticket'), ('=', '='), ('E', 'E'), ('(', '('), ('Kv', 'Kv'), (',', ','), ('[', '['), ('IDc', 'IDc'), (',', ','), ('ADc', 'ADc'), (',', ','), ('IDv', 'IDv'), (']', ']'), (')', ')'), ('Where', 'Where'), (',', ','), ('C', 'C'), ('=', '='), ('Client', 'Client'), ('AS', 'AS'), ('=', '='), ('Authentication', 'Authentication'), ('Server', 'Server'), ('V', 'V'), ('=', '='), ('Server', 'Server'), ('IDc', 'IDc'), ('=', '='), ('Identification', 'Identification'), ('user', 'user'), ('C', 'C'), ('Idv', 'Idv'), ('=', '='), ('Identification', 'Identification'), ('V', 'V'), ('Pc', 'Pc'), ('=', '='), ('Password', 'Password'), ('User', 'User'), ('C', 'C'), ('Adc', 'Adc'), ('=', '='), ('Network', 'Network'), ('Address', 'Address'), ('C', 'C'), ('Kv', 'Kv'), ('=', '='), ('Secret', 'Secret'), ('key', 'key'), ('shared', 'shared'), ('AS', 'AS'), ('V', 'V'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('–', '–'), ('More', 'More'), ('Secure', 'Secure'), ('Dialogue', 'Dialogue'), ('Client-C', 'Client-C'), ('Ticket', 'Ticket'), ('Granting', 'Granting'), ('Server-TGS', 'Server-TGS'), ('Authentication', 'Authentication'), ('Server-AS', 'Server-AS'), ('TicketTGS', 'TicketTGS'), ('access', 'access'), ('TGS', 'TGS'), ('Request', 'Request'), ('TicketTGS', 'TicketTGS'), ('Request', 'Request'), ('TicketV', 'TicketV'), ('Request', 'Request'), ('TicketV', 'TicketV'), ('Request', 'Request'), ('Service', 'Service'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('–', '–'), ('More', 'More'), ('Secure', 'Secure'), ('Dialogue', 'Dialogue'), ('Once', 'Once'), ('per', 'per'), ('user', 'user'), ('logon', 'logon'), ('session', 'session'), ('C', 'C'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'AS'), (':', ':'), ('IDc', 'IDc'), ('||', '||'), ('IDTGS', 'IDTGS'), ('AS', 'AS'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'C'), (':', ':'), ('E', 'E'), ('(', '('), ('Kc', 'Kc'), (',', ','), ('TicketTGS', 'TicketTGS'), (')', ')'), ('Once', 'Once'), ('per', 'per'), ('type', 'type'), ('service', 'service'), ('C', 'C'), ('--', '--'), ('-', '-'), ('>', '>'), ('TGS', 'TGS'), (':', ':'), ('IDc', 'IDc'), ('||', '||'), ('IDv', 'IDv'), ('||', '||'), ('TicketTGS', 'TicketTGS'), ('TGS', 'TGS'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'C'), (':', ':'), ('TicketV', 'TicketV'), ('Once', 'Once'), ('per', 'per'), ('service', 'service'), ('session', 'session'), ('C', 'C'), ('--', '--'), ('-', '-'), ('>', '>'), ('V', 'V'), (':', ':'), ('IDc', 'IDc'), ('||', '||'), ('TicketV', 'TicketV'), ('TicketTGS', 'TicketTGS'), ('=', '='), ('E', 'E'), ('(', '('), ('KTGS', 'KTGS'), (',', ','), ('[', '['), ('IDc', 'IDc'), (',', ','), ('ADc', 'ADc'), (',', ','), ('IdTGS', 'IdTGS'), (',', ','), ('TS1', 'TS1'), (',', ','), ('Lifetime1', 'Lifetime1'), (']', ']'), (')', ')'), ('TicketV', 'TicketV'), ('=', '='), ('E', 'E'), ('(', '('), ('KV', 'KV'), (',', ','), ('[', '['), ('IDc', 'IDc'), (',', ','), ('ADc', 'ADc'), (',', ','), ('IdV', 'IdV'), (',', ','), ('TS2', 'TS2'), (',', ','), ('Lifetime2', 'Lifetime2'), (']', ']'), (')', ')'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('Version', 'Version'), ('4', '4'), ('–', '–'), ('Step-1', 'Step-1'), ('The', 'The'), ('client', 'client'), ('sends', 'sends'), ('plaintext', 'plaintext'), ('request', 'request'), ('AS', 'AS'), ('asking', 'asking'), ('ticket', 'ticket'), ('use', 'use'), ('talk', 'talk'), ('TGS', 'TGS'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+Request: Login name TGS name Since this request contains only well-known names, it does not need to be sealed. 
+
+
+>> Tokens are: 
+ ['Request', ':', 'Login', 'name', 'TGS', 'name', 'Since', 'request', 'contains', 'well-known', 'names', ',', 'need', 'sealed', '.']
+
+>> Bigrams are: 
+ [('Request', ':'), (':', 'Login'), ('Login', 'name'), ('name', 'TGS'), ('TGS', 'name'), ('name', 'Since'), ('Since', 'request'), ('request', 'contains'), ('contains', 'well-known'), ('well-known', 'names'), ('names', ','), (',', 'need'), ('need', 'sealed'), ('sealed', '.')]
+
+>> Trigrams are: 
+ [('Request', ':', 'Login'), (':', 'Login', 'name'), ('Login', 'name', 'TGS'), ('name', 'TGS', 'name'), ('TGS', 'name', 'Since'), ('name', 'Since', 'request'), ('Since', 'request', 'contains'), ('request', 'contains', 'well-known'), ('contains', 'well-known', 'names'), ('well-known', 'names', ','), ('names', ',', 'need'), (',', 'need', 'sealed'), ('need', 'sealed', '.')]
+
+>> POS Tags are: 
+ [('Request', 'NN'), (':', ':'), ('Login', 'NN'), ('name', 'NN'), ('TGS', 'NNP'), ('name', 'NN'), ('Since', 'IN'), ('request', 'NN'), ('contains', 'VBZ'), ('well-known', 'JJ'), ('names', 'NNS'), (',', ','), ('need', 'NN'), ('sealed', 'VBD'), ('.', '.')]
+
+ (S
+  (NP Request/NN)
+  :/:
+  (NP Login/NN name/NN TGS/NNP name/NN)
+  Since/IN
+  (NP request/NN)
+  contains/VBZ
+  (NP well-known/JJ names/NNS)
+  ,/,
+  (NP need/NN)
+  sealed/VBD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Request', 'Login name TGS name', 'request', 'well-known names', 'need']
+
+>> Named Entities are: 
+ [('GPE', 'Request'), ('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Request', 'request'), (':', ':'), ('Login', 'login'), ('name', 'name'), ('TGS', 'tg'), ('name', 'name'), ('Since', 'sinc'), ('request', 'request'), ('contains', 'contain'), ('well-known', 'well-known'), ('names', 'name'), (',', ','), ('need', 'need'), ('sealed', 'seal'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Request', 'request'), (':', ':'), ('Login', 'login'), ('name', 'name'), ('TGS', 'tgs'), ('name', 'name'), ('Since', 'sinc'), ('request', 'request'), ('contains', 'contain'), ('well-known', 'well-known'), ('names', 'name'), (',', ','), ('need', 'need'), ('sealed', 'seal'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Request', 'Request'), (':', ':'), ('Login', 'Login'), ('name', 'name'), ('TGS', 'TGS'), ('name', 'name'), ('Since', 'Since'), ('request', 'request'), ('contains', 'contains'), ('well-known', 'well-known'), ('names', 'name'), (',', ','), ('need', 'need'), ('sealed', 'sealed'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+C--->AS :  IDc||IDtgs||TS1  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-2 The AS finds the keys corresponding to the login name and the TGS name. 
+
+
+>> Tokens are: 
+ ['C', '--', '-', '>', 'AS', ':', 'IDc||IDtgs||TS1', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step-2', 'The', 'AS', 'finds', 'keys', 'corresponding', 'login', 'name', 'TGS', 'name', '.']
+
+>> Bigrams are: 
+ [('C', '--'), ('--', '-'), ('-', '>'), ('>', 'AS'), ('AS', ':'), (':', 'IDc||IDtgs||TS1'), ('IDc||IDtgs||TS1', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', 'Version'), ('Version', '4'), ('4', '–'), ('–', 'Step-2'), ('Step-2', 'The'), ('The', 'AS'), ('AS', 'finds'), ('finds', 'keys'), ('keys', 'corresponding'), ('corresponding', 'login'), ('login', 'name'), ('name', 'TGS'), ('TGS', 'name'), ('name', '.')]
+
+>> Trigrams are: 
+ [('C', '--', '-'), ('--', '-', '>'), ('-', '>', 'AS'), ('>', 'AS', ':'), ('AS', ':', 'IDc||IDtgs||TS1'), (':', 'IDc||IDtgs||TS1', 'Unit-9'), ('IDc||IDtgs||TS1', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', 'Version'), ('Kerberos', 'Version', '4'), ('Version', '4', '–'), ('4', '–', 'Step-2'), ('–', 'Step-2', 'The'), ('Step-2', 'The', 'AS'), ('The', 'AS', 'finds'), ('AS', 'finds', 'keys'), ('finds', 'keys', 'corresponding'), ('keys', 'corresponding', 'login'), ('corresponding', 'login', 'name'), ('login', 'name', 'TGS'), ('name', 'TGS', 'name'), ('TGS', 'name', '.')]
+
+>> POS Tags are: 
+ [('C', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('AS', 'IN'), (':', ':'), ('IDc||IDtgs||TS1', 'NNP'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('Version', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Step-2', 'NNP'), ('The', 'DT'), ('AS', 'NNP'), ('finds', 'VBZ'), ('keys', 'NNS'), ('corresponding', 'VBG'), ('login', 'NN'), ('name', 'NN'), ('TGS', 'NNP'), ('name', 'NN'), ('.', '.')]
+
+ (S
+  (NP C/NNP)
+  --/:
+  -/:
+  (NP >/NN)
+  AS/IN
+  :/:
+  (NP IDc||IDtgs||TS1/NNP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    Version/NNP)
+  4/CD
+  (NP –/NNP Step-2/NNP)
+  (NP The/DT AS/NNP)
+  finds/VBZ
+  (NP keys/NNS)
+  corresponding/VBG
+  (NP login/NN name/NN TGS/NNP name/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['C', '>', 'IDc||IDtgs||TS1 Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos Version', '– Step-2', 'The AS', 'keys', 'login name TGS name']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos'), ('ORGANIZATION', 'AS'), ('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'as'), (':', ':'), ('IDc||IDtgs||TS1', 'idc||idtgs||ts1'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-2', 'step-2'), ('The', 'the'), ('AS', 'as'), ('finds', 'find'), ('keys', 'key'), ('corresponding', 'correspond'), ('login', 'login'), ('name', 'name'), ('TGS', 'tg'), ('name', 'name'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'as'), (':', ':'), ('IDc||IDtgs||TS1', 'idc||idtgs||ts1'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-2', 'step-2'), ('The', 'the'), ('AS', 'as'), ('finds', 'find'), ('keys', 'key'), ('corresponding', 'correspond'), ('login', 'login'), ('name', 'name'), ('TGS', 'tgs'), ('name', 'name'), ('.', '.')]
+
+>> Lemmatization: 
+ [('C', 'C'), ('--', '--'), ('-', '-'), ('>', '>'), ('AS', 'AS'), (':', ':'), ('IDc||IDtgs||TS1', 'IDc||IDtgs||TS1'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('Version', 'Version'), ('4', '4'), ('–', '–'), ('Step-2', 'Step-2'), ('The', 'The'), ('AS', 'AS'), ('finds', 'find'), ('keys', 'key'), ('corresponding', 'corresponding'), ('login', 'login'), ('name', 'name'), ('TGS', 'TGS'), ('name', 'name'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+The AS creates a ticket: Login name TGS name Client network address TGS session key The AS seals the ticket with the TGS secret key. 
+
+
+>> Tokens are: 
+ ['The', 'AS', 'creates', 'ticket', ':', 'Login', 'name', 'TGS', 'name', 'Client', 'network', 'address', 'TGS', 'session', 'key', 'The', 'AS', 'seals', 'ticket', 'TGS', 'secret', 'key', '.']
+
+>> Bigrams are: 
+ [('The', 'AS'), ('AS', 'creates'), ('creates', 'ticket'), ('ticket', ':'), (':', 'Login'), ('Login', 'name'), ('name', 'TGS'), ('TGS', 'name'), ('name', 'Client'), ('Client', 'network'), ('network', 'address'), ('address', 'TGS'), ('TGS', 'session'), ('session', 'key'), ('key', 'The'), ('The', 'AS'), ('AS', 'seals'), ('seals', 'ticket'), ('ticket', 'TGS'), ('TGS', 'secret'), ('secret', 'key'), ('key', '.')]
+
+>> Trigrams are: 
+ [('The', 'AS', 'creates'), ('AS', 'creates', 'ticket'), ('creates', 'ticket', ':'), ('ticket', ':', 'Login'), (':', 'Login', 'name'), ('Login', 'name', 'TGS'), ('name', 'TGS', 'name'), ('TGS', 'name', 'Client'), ('name', 'Client', 'network'), ('Client', 'network', 'address'), ('network', 'address', 'TGS'), ('address', 'TGS', 'session'), ('TGS', 'session', 'key'), ('session', 'key', 'The'), ('key', 'The', 'AS'), ('The', 'AS', 'seals'), ('AS', 'seals', 'ticket'), ('seals', 'ticket', 'TGS'), ('ticket', 'TGS', 'secret'), ('TGS', 'secret', 'key'), ('secret', 'key', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('AS', 'NNP'), ('creates', 'VBZ'), ('ticket', 'NN'), (':', ':'), ('Login', 'NN'), ('name', 'NN'), ('TGS', 'NNP'), ('name', 'NN'), ('Client', 'NNP'), ('network', 'NN'), ('address', 'NN'), ('TGS', 'NNP'), ('session', 'NN'), ('key', 'VBD'), ('The', 'DT'), ('AS', 'NNP'), ('seals', 'NNS'), ('ticket', 'VBP'), ('TGS', 'NNP'), ('secret', 'JJ'), ('key', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT AS/NNP)
+  creates/VBZ
+  (NP ticket/NN)
+  :/:
+  (NP
+    Login/NN
+    name/NN
+    TGS/NNP
+    name/NN
+    Client/NNP
+    network/NN
+    address/NN
+    TGS/NNP
+    session/NN)
+  key/VBD
+  (NP The/DT AS/NNP seals/NNS)
+  ticket/VBP
+  (NP TGS/NNP)
+  (NP secret/JJ key/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The AS', 'ticket', 'Login name TGS name Client network address TGS session', 'The AS seals', 'TGS', 'secret key']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'AS'), ('ORGANIZATION', 'TGS'), ('PERSON', 'Client'), ('ORGANIZATION', 'TGS'), ('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('AS', 'as'), ('creates', 'creat'), ('ticket', 'ticket'), (':', ':'), ('Login', 'login'), ('name', 'name'), ('TGS', 'tg'), ('name', 'name'), ('Client', 'client'), ('network', 'network'), ('address', 'address'), ('TGS', 'tg'), ('session', 'session'), ('key', 'key'), ('The', 'the'), ('AS', 'as'), ('seals', 'seal'), ('ticket', 'ticket'), ('TGS', 'tg'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('AS', 'as'), ('creates', 'creat'), ('ticket', 'ticket'), (':', ':'), ('Login', 'login'), ('name', 'name'), ('TGS', 'tgs'), ('name', 'name'), ('Client', 'client'), ('network', 'network'), ('address', 'address'), ('TGS', 'tgs'), ('session', 'session'), ('key', 'key'), ('The', 'the'), ('AS', 'as'), ('seals', 'seal'), ('ticket', 'ticket'), ('TGS', 'tgs'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('AS', 'AS'), ('creates', 'creates'), ('ticket', 'ticket'), (':', ':'), ('Login', 'Login'), ('name', 'name'), ('TGS', 'TGS'), ('name', 'name'), ('Client', 'Client'), ('network', 'network'), ('address', 'address'), ('TGS', 'TGS'), ('session', 'session'), ('key', 'key'), ('The', 'The'), ('AS', 'AS'), ('seals', 'seal'), ('ticket', 'ticket'), ('TGS', 'TGS'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+AS--->C: E(Kc, [Kc,tgs||IDtgs||TS2||Lifetime2||Tickettgs]) Tickettgs=E(Ktgs, [Kc,tgs||IDc||ADc||IDtgs||TS2||Lifetime2])   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-3 The client decrypts the message using the user’s password as the secret key. 
+
+
+>> Tokens are: 
+ ['AS', '--', '-', '>', 'C', ':', 'E', '(', 'Kc', ',', '[', 'Kc', ',', 'tgs||IDtgs||TS2||Lifetime2||Tickettgs', ']', ')', 'Tickettgs=E', '(', 'Ktgs', ',', '[', 'Kc', ',', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2', ']', ')', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step-3', 'The', 'client', 'decrypts', 'message', 'using', 'user', '’', 'password', 'secret', 'key', '.']
+
+>> Bigrams are: 
+ [('AS', '--'), ('--', '-'), ('-', '>'), ('>', 'C'), ('C', ':'), (':', 'E'), ('E', '('), ('(', 'Kc'), ('Kc', ','), (',', '['), ('[', 'Kc'), ('Kc', ','), (',', 'tgs||IDtgs||TS2||Lifetime2||Tickettgs'), ('tgs||IDtgs||TS2||Lifetime2||Tickettgs', ']'), (']', ')'), (')', 'Tickettgs=E'), ('Tickettgs=E', '('), ('(', 'Ktgs'), ('Ktgs', ','), (',', '['), ('[', 'Kc'), ('Kc', ','), (',', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2'), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', ']'), (']', ')'), (')', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', 'Version'), ('Version', '4'), ('4', '–'), ('–', 'Step-3'), ('Step-3', 'The'), ('The', 'client'), ('client', 'decrypts'), ('decrypts', 'message'), ('message', 'using'), ('using', 'user'), ('user', '’'), ('’', 'password'), ('password', 'secret'), ('secret', 'key'), ('key', '.')]
+
+>> Trigrams are: 
+ [('AS', '--', '-'), ('--', '-', '>'), ('-', '>', 'C'), ('>', 'C', ':'), ('C', ':', 'E'), (':', 'E', '('), ('E', '(', 'Kc'), ('(', 'Kc', ','), ('Kc', ',', '['), (',', '[', 'Kc'), ('[', 'Kc', ','), ('Kc', ',', 'tgs||IDtgs||TS2||Lifetime2||Tickettgs'), (',', 'tgs||IDtgs||TS2||Lifetime2||Tickettgs', ']'), ('tgs||IDtgs||TS2||Lifetime2||Tickettgs', ']', ')'), (']', ')', 'Tickettgs=E'), (')', 'Tickettgs=E', '('), ('Tickettgs=E', '(', 'Ktgs'), ('(', 'Ktgs', ','), ('Ktgs', ',', '['), (',', '[', 'Kc'), ('[', 'Kc', ','), ('Kc', ',', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2'), (',', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2', ']'), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', ']', ')'), (']', ')', 'Unit-9'), (')', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', 'Version'), ('Kerberos', 'Version', '4'), ('Version', '4', '–'), ('4', '–', 'Step-3'), ('–', 'Step-3', 'The'), ('Step-3', 'The', 'client'), ('The', 'client', 'decrypts'), ('client', 'decrypts', 'message'), ('decrypts', 'message', 'using'), ('message', 'using', 'user'), ('using', 'user', '’'), ('user', '’', 'password'), ('’', 'password', 'secret'), ('password', 'secret', 'key'), ('secret', 'key', '.')]
+
+>> POS Tags are: 
+ [('AS', 'IN'), ('--', ':'), ('-', ':'), ('>', 'JJ'), ('C', 'NNP'), (':', ':'), ('E', 'NN'), ('(', '('), ('Kc', 'NNP'), (',', ','), ('[', 'NNP'), ('Kc', 'NNP'), (',', ','), ('tgs||IDtgs||TS2||Lifetime2||Tickettgs', 'NNP'), (']', 'NNP'), (')', ')'), ('Tickettgs=E', 'NNP'), ('(', '('), ('Ktgs', 'NNP'), (',', ','), ('[', 'NNP'), ('Kc', 'NNP'), (',', ','), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'NNP'), (']', 'NNP'), (')', ')'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('Version', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Step-3', 'NNP'), ('The', 'DT'), ('client', 'NN'), ('decrypts', 'VBZ'), ('message', 'NN'), ('using', 'VBG'), ('user', 'JJ'), ('’', 'NNP'), ('password', 'NN'), ('secret', 'NN'), ('key', 'NN'), ('.', '.')]
+
+ (S
+  AS/IN
+  --/:
+  -/:
+  (NP >/JJ C/NNP)
+  :/:
+  (NP E/NN)
+  (/(
+  (NP Kc/NNP)
+  ,/,
+  (NP [/NNP Kc/NNP)
+  ,/,
+  (NP tgs||IDtgs||TS2||Lifetime2||Tickettgs/NNP ]/NNP)
+  )/)
+  (NP Tickettgs=E/NNP)
+  (/(
+  (NP Ktgs/NNP)
+  ,/,
+  (NP [/NNP Kc/NNP)
+  ,/,
+  (NP tgs||IDc||ADc||IDtgs||TS2||Lifetime2/NNP ]/NNP)
+  )/)
+  (NP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    Version/NNP)
+  4/CD
+  (NP –/NNP Step-3/NNP)
+  (NP The/DT client/NN)
+  decrypts/VBZ
+  (NP message/NN)
+  using/VBG
+  (NP user/JJ ’/NNP password/NN secret/NN key/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['> C', 'E', 'Kc', '[ Kc', 'tgs||IDtgs||TS2||Lifetime2||Tickettgs ]', 'Tickettgs=E', 'Ktgs', '[ Kc', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2 ]', 'Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos Version', '– Step-3', 'The client', 'message', 'user ’ password secret key']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Ktgs'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos')] 
+
+>> Stemming using Porter Stemmer: 
+ [('AS', 'as'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('E', 'e'), ('(', '('), ('Kc', 'kc'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('tgs||IDtgs||TS2||Lifetime2||Tickettgs', 'tgs||idtgs||ts2||lifetime2||tickettg'), (']', ']'), (')', ')'), ('Tickettgs=E', 'tickettgs='), ('(', '('), ('Ktgs', 'ktg'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'tgs||idc||adc||idtgs||ts2||lifetime2'), (']', ']'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-3', 'step-3'), ('The', 'the'), ('client', 'client'), ('decrypts', 'decrypt'), ('message', 'messag'), ('using', 'use'), ('user', 'user'), ('’', '’'), ('password', 'password'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AS', 'as'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('E', 'e'), ('(', '('), ('Kc', 'kc'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('tgs||IDtgs||TS2||Lifetime2||Tickettgs', 'tgs||idtgs||ts2||lifetime2||tickettg'), (']', ']'), (')', ')'), ('Tickettgs=E', 'tickettgs='), ('(', '('), ('Ktgs', 'ktgs'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'tgs||idc||adc||idtgs||ts2||lifetime2'), (']', ']'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-3', 'step-3'), ('The', 'the'), ('client', 'client'), ('decrypts', 'decrypt'), ('message', 'messag'), ('using', 'use'), ('user', 'user'), ('’', '’'), ('password', 'password'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AS', 'AS'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'C'), (':', ':'), ('E', 'E'), ('(', '('), ('Kc', 'Kc'), (',', ','), ('[', '['), ('Kc', 'Kc'), (',', ','), ('tgs||IDtgs||TS2||Lifetime2||Tickettgs', 'tgs||IDtgs||TS2||Lifetime2||Tickettgs'), (']', ']'), (')', ')'), ('Tickettgs=E', 'Tickettgs=E'), ('(', '('), ('Ktgs', 'Ktgs'), (',', ','), ('[', '['), ('Kc', 'Kc'), (',', ','), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2'), (']', ']'), (')', ')'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('Version', 'Version'), ('4', '4'), ('–', '–'), ('Step-3', 'Step-3'), ('The', 'The'), ('client', 'client'), ('decrypts', 'decrypts'), ('message', 'message'), ('using', 'using'), ('user', 'user'), ('’', '’'), ('password', 'password'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+The client now has a session key and ticket that can be used to contact the TGS. 
+
+
+>> Tokens are: 
+ ['The', 'client', 'session', 'key', 'ticket', 'used', 'contact', 'TGS', '.']
+
+>> Bigrams are: 
+ [('The', 'client'), ('client', 'session'), ('session', 'key'), ('key', 'ticket'), ('ticket', 'used'), ('used', 'contact'), ('contact', 'TGS'), ('TGS', '.')]
+
+>> Trigrams are: 
+ [('The', 'client', 'session'), ('client', 'session', 'key'), ('session', 'key', 'ticket'), ('key', 'ticket', 'used'), ('ticket', 'used', 'contact'), ('used', 'contact', 'TGS'), ('contact', 'TGS', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('client', 'NN'), ('session', 'NN'), ('key', 'NN'), ('ticket', 'NN'), ('used', 'VBN'), ('contact', 'NN'), ('TGS', 'NNP'), ('.', '.')]
+
+ (S
+  (NP The/DT client/NN session/NN key/NN ticket/NN)
+  used/VBN
+  (NP contact/NN TGS/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The client session key ticket', 'contact TGS']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('session', 'session'), ('key', 'key'), ('ticket', 'ticket'), ('used', 'use'), ('contact', 'contact'), ('TGS', 'tg'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('session', 'session'), ('key', 'key'), ('ticket', 'ticket'), ('used', 'use'), ('contact', 'contact'), ('TGS', 'tgs'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('client', 'client'), ('session', 'session'), ('key', 'key'), ('ticket', 'ticket'), ('used', 'used'), ('contact', 'contact'), ('TGS', 'TGS'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+The client cannot see inside the ticket, since the client does not know the TGS secret key. 
+
+
+>> Tokens are: 
+ ['The', 'client', 'see', 'inside', 'ticket', ',', 'since', 'client', 'know', 'TGS', 'secret', 'key', '.']
+
+>> Bigrams are: 
+ [('The', 'client'), ('client', 'see'), ('see', 'inside'), ('inside', 'ticket'), ('ticket', ','), (',', 'since'), ('since', 'client'), ('client', 'know'), ('know', 'TGS'), ('TGS', 'secret'), ('secret', 'key'), ('key', '.')]
+
+>> Trigrams are: 
+ [('The', 'client', 'see'), ('client', 'see', 'inside'), ('see', 'inside', 'ticket'), ('inside', 'ticket', ','), ('ticket', ',', 'since'), (',', 'since', 'client'), ('since', 'client', 'know'), ('client', 'know', 'TGS'), ('know', 'TGS', 'secret'), ('TGS', 'secret', 'key'), ('secret', 'key', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('client', 'NN'), ('see', 'VB'), ('inside', 'JJ'), ('ticket', 'NN'), (',', ','), ('since', 'IN'), ('client', 'NN'), ('know', 'VBP'), ('TGS', 'NNP'), ('secret', 'JJ'), ('key', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT client/NN)
+  see/VB
+  (NP inside/JJ ticket/NN)
+  ,/,
+  since/IN
+  (NP client/NN)
+  know/VBP
+  (NP TGS/NNP)
+  (NP secret/JJ key/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The client', 'inside ticket', 'client', 'TGS', 'secret key']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('see', 'see'), ('inside', 'insid'), ('ticket', 'ticket'), (',', ','), ('since', 'sinc'), ('client', 'client'), ('know', 'know'), ('TGS', 'tg'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('see', 'see'), ('inside', 'insid'), ('ticket', 'ticket'), (',', ','), ('since', 'sinc'), ('client', 'client'), ('know', 'know'), ('TGS', 'tgs'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('client', 'client'), ('see', 'see'), ('inside', 'inside'), ('ticket', 'ticket'), (',', ','), ('since', 'since'), ('client', 'client'), ('know', 'know'), ('TGS', 'TGS'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+When a client wants to start using a server (service), the client must first obtain a ticket. 
+
+
+>> Tokens are: 
+ ['When', 'client', 'wants', 'start', 'using', 'server', '(', 'service', ')', ',', 'client', 'must', 'first', 'obtain', 'ticket', '.']
+
+>> Bigrams are: 
+ [('When', 'client'), ('client', 'wants'), ('wants', 'start'), ('start', 'using'), ('using', 'server'), ('server', '('), ('(', 'service'), ('service', ')'), (')', ','), (',', 'client'), ('client', 'must'), ('must', 'first'), ('first', 'obtain'), ('obtain', 'ticket'), ('ticket', '.')]
+
+>> Trigrams are: 
+ [('When', 'client', 'wants'), ('client', 'wants', 'start'), ('wants', 'start', 'using'), ('start', 'using', 'server'), ('using', 'server', '('), ('server', '(', 'service'), ('(', 'service', ')'), ('service', ')', ','), (')', ',', 'client'), (',', 'client', 'must'), ('client', 'must', 'first'), ('must', 'first', 'obtain'), ('first', 'obtain', 'ticket'), ('obtain', 'ticket', '.')]
+
+>> POS Tags are: 
+ [('When', 'WRB'), ('client', 'NN'), ('wants', 'VBZ'), ('start', 'JJ'), ('using', 'VBG'), ('server', 'NN'), ('(', '('), ('service', 'NN'), (')', ')'), (',', ','), ('client', 'NN'), ('must', 'MD'), ('first', 'RB'), ('obtain', 'VB'), ('ticket', 'NN'), ('.', '.')]
+
+ (S
+  When/WRB
+  (NP client/NN)
+  wants/VBZ
+  start/JJ
+  using/VBG
+  (NP server/NN)
+  (/(
+  (NP service/NN)
+  )/)
+  ,/,
+  (NP client/NN)
+  must/MD
+  first/RB
+  obtain/VB
+  (NP ticket/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['client', 'server', 'service', 'client', 'ticket']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('When', 'when'), ('client', 'client'), ('wants', 'want'), ('start', 'start'), ('using', 'use'), ('server', 'server'), ('(', '('), ('service', 'servic'), (')', ')'), (',', ','), ('client', 'client'), ('must', 'must'), ('first', 'first'), ('obtain', 'obtain'), ('ticket', 'ticket'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('When', 'when'), ('client', 'client'), ('wants', 'want'), ('start', 'start'), ('using', 'use'), ('server', 'server'), ('(', '('), ('service', 'servic'), (')', ')'), (',', ','), ('client', 'client'), ('must', 'must'), ('first', 'first'), ('obtain', 'obtain'), ('ticket', 'ticket'), ('.', '.')]
+
+>> Lemmatization: 
+ [('When', 'When'), ('client', 'client'), ('wants', 'want'), ('start', 'start'), ('using', 'using'), ('server', 'server'), ('(', '('), ('service', 'service'), (')', ')'), (',', ','), ('client', 'client'), ('must', 'must'), ('first', 'first'), ('obtain', 'obtain'), ('ticket', 'ticket'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+The client composes a request to send to the TGS   C--->TGS: Idv||Tickettgs||Authenticatorc  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-4 The TGS decrypts the ticket using it’s secret key. 
+
+
+>> Tokens are: 
+ ['The', 'client', 'composes', 'request', 'send', 'TGS', 'C', '--', '-', '>', 'TGS', ':', 'Idv||Tickettgs||Authenticatorc', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step-4', 'The', 'TGS', 'decrypts', 'ticket', 'using', '’', 'secret', 'key', '.']
+
+>> Bigrams are: 
+ [('The', 'client'), ('client', 'composes'), ('composes', 'request'), ('request', 'send'), ('send', 'TGS'), ('TGS', 'C'), ('C', '--'), ('--', '-'), ('-', '>'), ('>', 'TGS'), ('TGS', ':'), (':', 'Idv||Tickettgs||Authenticatorc'), ('Idv||Tickettgs||Authenticatorc', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', 'Version'), ('Version', '4'), ('4', '–'), ('–', 'Step-4'), ('Step-4', 'The'), ('The', 'TGS'), ('TGS', 'decrypts'), ('decrypts', 'ticket'), ('ticket', 'using'), ('using', '’'), ('’', 'secret'), ('secret', 'key'), ('key', '.')]
+
+>> Trigrams are: 
+ [('The', 'client', 'composes'), ('client', 'composes', 'request'), ('composes', 'request', 'send'), ('request', 'send', 'TGS'), ('send', 'TGS', 'C'), ('TGS', 'C', '--'), ('C', '--', '-'), ('--', '-', '>'), ('-', '>', 'TGS'), ('>', 'TGS', ':'), ('TGS', ':', 'Idv||Tickettgs||Authenticatorc'), (':', 'Idv||Tickettgs||Authenticatorc', 'Unit-9'), ('Idv||Tickettgs||Authenticatorc', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', 'Version'), ('Kerberos', 'Version', '4'), ('Version', '4', '–'), ('4', '–', 'Step-4'), ('–', 'Step-4', 'The'), ('Step-4', 'The', 'TGS'), ('The', 'TGS', 'decrypts'), ('TGS', 'decrypts', 'ticket'), ('decrypts', 'ticket', 'using'), ('ticket', 'using', '’'), ('using', '’', 'secret'), ('’', 'secret', 'key'), ('secret', 'key', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('client', 'NN'), ('composes', 'VBZ'), ('request', 'VBP'), ('send', 'NN'), ('TGS', 'NNP'), ('C', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'NN'), ('TGS', 'NN'), (':', ':'), ('Idv||Tickettgs||Authenticatorc', 'NNP'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('Version', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Step-4', 'NNP'), ('The', 'DT'), ('TGS', 'NNP'), ('decrypts', 'NNS'), ('ticket', 'NN'), ('using', 'VBG'), ('’', 'NNP'), ('secret', 'JJ'), ('key', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT client/NN)
+  composes/VBZ
+  request/VBP
+  (NP send/NN TGS/NNP C/NNP)
+  --/:
+  -/:
+  (NP >/NN TGS/NN)
+  :/:
+  (NP Idv||Tickettgs||Authenticatorc/NNP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    Version/NNP)
+  4/CD
+  (NP –/NNP Step-4/NNP)
+  (NP The/DT TGS/NNP decrypts/NNS ticket/NN)
+  using/VBG
+  (NP ’/NNP)
+  (NP secret/JJ key/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The client', 'send TGS C', '> TGS', 'Idv||Tickettgs||Authenticatorc Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos Version', '– Step-4', 'The TGS decrypts ticket', '’', 'secret key']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'TGS'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos'), ('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('composes', 'compos'), ('request', 'request'), ('send', 'send'), ('TGS', 'tg'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('TGS', 'tg'), (':', ':'), ('Idv||Tickettgs||Authenticatorc', 'idv||tickettgs||authenticatorc'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-4', 'step-4'), ('The', 'the'), ('TGS', 'tg'), ('decrypts', 'decrypt'), ('ticket', 'ticket'), ('using', 'use'), ('’', '’'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('composes', 'compos'), ('request', 'request'), ('send', 'send'), ('TGS', 'tgs'), ('C', 'c'), ('--', '--'), ('-', '-'), ('>', '>'), ('TGS', 'tgs'), (':', ':'), ('Idv||Tickettgs||Authenticatorc', 'idv||tickettgs||authenticatorc'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-4', 'step-4'), ('The', 'the'), ('TGS', 'tgs'), ('decrypts', 'decrypt'), ('ticket', 'ticket'), ('using', 'use'), ('’', '’'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('client', 'client'), ('composes', 'composes'), ('request', 'request'), ('send', 'send'), ('TGS', 'TGS'), ('C', 'C'), ('--', '--'), ('-', '-'), ('>', '>'), ('TGS', 'TGS'), (':', ':'), ('Idv||Tickettgs||Authenticatorc', 'Idv||Tickettgs||Authenticatorc'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('Version', 'Version'), ('4', '4'), ('–', '–'), ('Step-4', 'Step-4'), ('The', 'The'), ('TGS', 'TGS'), ('decrypts', 'decrypts'), ('ticket', 'ticket'), ('using', 'using'), ('’', '’'), ('secret', 'secret'), ('key', 'key'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+Inside is the TGS session key. 
+
+
+>> Tokens are: 
+ ['Inside', 'TGS', 'session', 'key', '.']
+
+>> Bigrams are: 
+ [('Inside', 'TGS'), ('TGS', 'session'), ('session', 'key'), ('key', '.')]
+
+>> Trigrams are: 
+ [('Inside', 'TGS', 'session'), ('TGS', 'session', 'key'), ('session', 'key', '.')]
+
+>> POS Tags are: 
+ [('Inside', 'IN'), ('TGS', 'NNP'), ('session', 'NN'), ('key', 'NN'), ('.', '.')]
+
+ (S Inside/IN (NP TGS/NNP session/NN key/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['TGS session key']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Inside', 'insid'), ('TGS', 'tg'), ('session', 'session'), ('key', 'key'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Inside', 'insid'), ('TGS', 'tgs'), ('session', 'session'), ('key', 'key'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Inside', 'Inside'), ('TGS', 'TGS'), ('session', 'session'), ('key', 'key'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+The TGS decrypts the authenticator using the session key. 
+
+
+>> Tokens are: 
+ ['The', 'TGS', 'decrypts', 'authenticator', 'using', 'session', 'key', '.']
+
+>> Bigrams are: 
+ [('The', 'TGS'), ('TGS', 'decrypts'), ('decrypts', 'authenticator'), ('authenticator', 'using'), ('using', 'session'), ('session', 'key'), ('key', '.')]
+
+>> Trigrams are: 
+ [('The', 'TGS', 'decrypts'), ('TGS', 'decrypts', 'authenticator'), ('decrypts', 'authenticator', 'using'), ('authenticator', 'using', 'session'), ('using', 'session', 'key'), ('session', 'key', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('TGS', 'NNP'), ('decrypts', 'NNS'), ('authenticator', 'VBP'), ('using', 'VBG'), ('session', 'NN'), ('key', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT TGS/NNP decrypts/NNS)
+  authenticator/VBP
+  using/VBG
+  (NP session/NN key/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The TGS decrypts', 'session key']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('TGS', 'tg'), ('decrypts', 'decrypt'), ('authenticator', 'authent'), ('using', 'use'), ('session', 'session'), ('key', 'key'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('TGS', 'tgs'), ('decrypts', 'decrypt'), ('authenticator', 'authent'), ('using', 'use'), ('session', 'session'), ('key', 'key'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('TGS', 'TGS'), ('decrypts', 'decrypts'), ('authenticator', 'authenticator'), ('using', 'using'), ('session', 'session'), ('key', 'key'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+The TGS check to make sure login names, client addresses and TGS server name are all ok. TGS makes sure the authenticator is recent. 
+
+
+>> Tokens are: 
+ ['The', 'TGS', 'check', 'make', 'sure', 'login', 'names', ',', 'client', 'addresses', 'TGS', 'server', 'name', 'ok.', 'TGS', 'makes', 'sure', 'authenticator', 'recent', '.']
+
+>> Bigrams are: 
+ [('The', 'TGS'), ('TGS', 'check'), ('check', 'make'), ('make', 'sure'), ('sure', 'login'), ('login', 'names'), ('names', ','), (',', 'client'), ('client', 'addresses'), ('addresses', 'TGS'), ('TGS', 'server'), ('server', 'name'), ('name', 'ok.'), ('ok.', 'TGS'), ('TGS', 'makes'), ('makes', 'sure'), ('sure', 'authenticator'), ('authenticator', 'recent'), ('recent', '.')]
+
+>> Trigrams are: 
+ [('The', 'TGS', 'check'), ('TGS', 'check', 'make'), ('check', 'make', 'sure'), ('make', 'sure', 'login'), ('sure', 'login', 'names'), ('login', 'names', ','), ('names', ',', 'client'), (',', 'client', 'addresses'), ('client', 'addresses', 'TGS'), ('addresses', 'TGS', 'server'), ('TGS', 'server', 'name'), ('server', 'name', 'ok.'), ('name', 'ok.', 'TGS'), ('ok.', 'TGS', 'makes'), ('TGS', 'makes', 'sure'), ('makes', 'sure', 'authenticator'), ('sure', 'authenticator', 'recent'), ('authenticator', 'recent', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('TGS', 'NNP'), ('check', 'NN'), ('make', 'VBP'), ('sure', 'JJ'), ('login', 'NN'), ('names', 'NNS'), (',', ','), ('client', 'NN'), ('addresses', 'NNS'), ('TGS', 'NNP'), ('server', 'NN'), ('name', 'NN'), ('ok.', 'JJ'), ('TGS', 'NNP'), ('makes', 'VBZ'), ('sure', 'JJ'), ('authenticator', 'JJ'), ('recent', 'JJ'), ('.', '.')]
+
+ (S
+  (NP The/DT TGS/NNP check/NN)
+  make/VBP
+  (NP sure/JJ login/NN names/NNS)
+  ,/,
+  (NP client/NN addresses/NNS TGS/NNP server/NN name/NN)
+  (NP ok./JJ TGS/NNP)
+  makes/VBZ
+  sure/JJ
+  authenticator/JJ
+  recent/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The TGS check', 'sure login names', 'client addresses TGS server name', 'ok. TGS']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'TGS'), ('ORGANIZATION', 'TGS'), ('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('TGS', 'tg'), ('check', 'check'), ('make', 'make'), ('sure', 'sure'), ('login', 'login'), ('names', 'name'), (',', ','), ('client', 'client'), ('addresses', 'address'), ('TGS', 'tg'), ('server', 'server'), ('name', 'name'), ('ok.', 'ok.'), ('TGS', 'tg'), ('makes', 'make'), ('sure', 'sure'), ('authenticator', 'authent'), ('recent', 'recent'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('TGS', 'tgs'), ('check', 'check'), ('make', 'make'), ('sure', 'sure'), ('login', 'login'), ('names', 'name'), (',', ','), ('client', 'client'), ('addresses', 'address'), ('TGS', 'tgs'), ('server', 'server'), ('name', 'name'), ('ok.', 'ok.'), ('TGS', 'tgs'), ('makes', 'make'), ('sure', 'sure'), ('authenticator', 'authent'), ('recent', 'recent'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('TGS', 'TGS'), ('check', 'check'), ('make', 'make'), ('sure', 'sure'), ('login', 'login'), ('names', 'name'), (',', ','), ('client', 'client'), ('addresses', 'address'), ('TGS', 'TGS'), ('server', 'server'), ('name', 'name'), ('ok.', 'ok.'), ('TGS', 'TGS'), ('makes', 'make'), ('sure', 'sure'), ('authenticator', 'authenticator'), ('recent', 'recent'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+Builds a ticket for the client and requested server. 
+
+
+>> Tokens are: 
+ ['Builds', 'ticket', 'client', 'requested', 'server', '.']
+
+>> Bigrams are: 
+ [('Builds', 'ticket'), ('ticket', 'client'), ('client', 'requested'), ('requested', 'server'), ('server', '.')]
+
+>> Trigrams are: 
+ [('Builds', 'ticket', 'client'), ('ticket', 'client', 'requested'), ('client', 'requested', 'server'), ('requested', 'server', '.')]
+
+>> POS Tags are: 
+ [('Builds', 'NNP'), ('ticket', 'NN'), ('client', 'NN'), ('requested', 'VBD'), ('server', 'NN'), ('.', '.')]
+
+ (S
+  (NP Builds/NNP ticket/NN client/NN)
+  requested/VBD
+  (NP server/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Builds ticket client', 'server']
+
+>> Named Entities are: 
+ [('GPE', 'Builds')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Builds', 'build'), ('ticket', 'ticket'), ('client', 'client'), ('requested', 'request'), ('server', 'server'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Builds', 'build'), ('ticket', 'ticket'), ('client', 'client'), ('requested', 'request'), ('server', 'server'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Builds', 'Builds'), ('ticket', 'ticket'), ('client', 'client'), ('requested', 'requested'), ('server', 'server'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+The ticket is sealed with the server key. 
+
+
+>> Tokens are: 
+ ['The', 'ticket', 'sealed', 'server', 'key', '.']
+
+>> Bigrams are: 
+ [('The', 'ticket'), ('ticket', 'sealed'), ('sealed', 'server'), ('server', 'key'), ('key', '.')]
+
+>> Trigrams are: 
+ [('The', 'ticket', 'sealed'), ('ticket', 'sealed', 'server'), ('sealed', 'server', 'key'), ('server', 'key', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('ticket', 'NN'), ('sealed', 'VBD'), ('server', 'RB'), ('key', 'JJ'), ('.', '.')]
+
+ (S (NP The/DT ticket/NN) sealed/VBD server/RB key/JJ ./.) 
+
+
+>> Noun Phrases are: 
+ ['The ticket']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('ticket', 'ticket'), ('sealed', 'seal'), ('server', 'server'), ('key', 'key'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('ticket', 'ticket'), ('sealed', 'seal'), ('server', 'server'), ('key', 'key'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('ticket', 'ticket'), ('sealed', 'sealed'), ('server', 'server'), ('key', 'key'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+Creates a session key Seals the entire message with the tgs session key and sends it to the client. 
+
+
+>> Tokens are: 
+ ['Creates', 'session', 'key', 'Seals', 'entire', 'message', 'tgs', 'session', 'key', 'sends', 'client', '.']
+
+>> Bigrams are: 
+ [('Creates', 'session'), ('session', 'key'), ('key', 'Seals'), ('Seals', 'entire'), ('entire', 'message'), ('message', 'tgs'), ('tgs', 'session'), ('session', 'key'), ('key', 'sends'), ('sends', 'client'), ('client', '.')]
+
+>> Trigrams are: 
+ [('Creates', 'session', 'key'), ('session', 'key', 'Seals'), ('key', 'Seals', 'entire'), ('Seals', 'entire', 'message'), ('entire', 'message', 'tgs'), ('message', 'tgs', 'session'), ('tgs', 'session', 'key'), ('session', 'key', 'sends'), ('key', 'sends', 'client'), ('sends', 'client', '.')]
+
+>> POS Tags are: 
+ [('Creates', 'NNS'), ('session', 'NN'), ('key', 'JJ'), ('Seals', 'NNP'), ('entire', 'JJ'), ('message', 'NN'), ('tgs', 'NN'), ('session', 'NN'), ('key', 'JJ'), ('sends', 'VBZ'), ('client', 'NN'), ('.', '.')]
+
+ (S
+  (NP Creates/NNS session/NN)
+  (NP key/JJ Seals/NNP)
+  (NP entire/JJ message/NN tgs/NN session/NN)
+  key/JJ
+  sends/VBZ
+  (NP client/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Creates session', 'key Seals', 'entire message tgs session', 'client']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Creates', 'creat'), ('session', 'session'), ('key', 'key'), ('Seals', 'seal'), ('entire', 'entir'), ('message', 'messag'), ('tgs', 'tg'), ('session', 'session'), ('key', 'key'), ('sends', 'send'), ('client', 'client'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Creates', 'creat'), ('session', 'session'), ('key', 'key'), ('Seals', 'seal'), ('entire', 'entir'), ('message', 'messag'), ('tgs', 'tgs'), ('session', 'session'), ('key', 'key'), ('sends', 'send'), ('client', 'client'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Creates', 'Creates'), ('session', 'session'), ('key', 'key'), ('Seals', 'Seals'), ('entire', 'entire'), ('message', 'message'), ('tgs', 'tgs'), ('session', 'session'), ('key', 'key'), ('sends', 'sends'), ('client', 'client'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+TGS--->C: E(Kc,tgs, [Kc,v||IDv||TS4||Ticketv])  Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-4    Tickettgs=E(Ktgs, [Kc,tgs||IDc||ADc||IDtgs||TS2||Lifetime2])  TicketV=E(KV, [Kc,V||IDc||ADc||IDV||TS4||Lifetime4])  AuthenticatorC=E(Kc,tgs, [IDc||ADc||TS3])   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Kerberos Version 4 – Step-5, 6 The client now decrypts the TGS response using the TGS session key. 
+
+
+>> Tokens are: 
+ ['TGS', '--', '-', '>', 'C', ':', 'E', '(', 'Kc', ',', 'tgs', ',', '[', 'Kc', ',', 'v||IDv||TS4||Ticketv', ']', ')', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step-4', 'Tickettgs=E', '(', 'Ktgs', ',', '[', 'Kc', ',', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2', ']', ')', 'TicketV=E', '(', 'KV', ',', '[', 'Kc', ',', 'V||IDc||ADc||IDV||TS4||Lifetime4', ']', ')', 'AuthenticatorC=E', '(', 'Kc', ',', 'tgs', ',', '[', 'IDc||ADc||TS3', ']', ')', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', 'Version', '4', '–', 'Step-5', ',', '6', 'The', 'client', 'decrypts', 'TGS', 'response', 'using', 'TGS', 'session', 'key', '.']
+
+>> Bigrams are: 
+ [('TGS', '--'), ('--', '-'), ('-', '>'), ('>', 'C'), ('C', ':'), (':', 'E'), ('E', '('), ('(', 'Kc'), ('Kc', ','), (',', 'tgs'), ('tgs', ','), (',', '['), ('[', 'Kc'), ('Kc', ','), (',', 'v||IDv||TS4||Ticketv'), ('v||IDv||TS4||Ticketv', ']'), (']', ')'), (')', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', 'Version'), ('Version', '4'), ('4', '–'), ('–', 'Step-4'), ('Step-4', 'Tickettgs=E'), ('Tickettgs=E', '('), ('(', 'Ktgs'), ('Ktgs', ','), (',', '['), ('[', 'Kc'), ('Kc', ','), (',', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2'), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', ']'), (']', ')'), (')', 'TicketV=E'), ('TicketV=E', '('), ('(', 'KV'), ('KV', ','), (',', '['), ('[', 'Kc'), ('Kc', ','), (',', 'V||IDc||ADc||IDV||TS4||Lifetime4'), ('V||IDc||ADc||IDV||TS4||Lifetime4', ']'), (']', ')'), (')', 'AuthenticatorC=E'), ('AuthenticatorC=E', '('), ('(', 'Kc'), ('Kc', ','), (',', 'tgs'), ('tgs', ','), (',', '['), ('[', 'IDc||ADc||TS3'), ('IDc||ADc||TS3', ']'), (']', ')'), (')', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', 'Version'), ('Version', '4'), ('4', '–'), ('–', 'Step-5'), ('Step-5', ','), (',', '6'), ('6', 'The'), ('The', 'client'), ('client', 'decrypts'), ('decrypts', 'TGS'), ('TGS', 'response'), ('response', 'using'), ('using', 'TGS'), ('TGS', 'session'), ('session', 'key'), ('key', '.')]
+
+>> Trigrams are: 
+ [('TGS', '--', '-'), ('--', '-', '>'), ('-', '>', 'C'), ('>', 'C', ':'), ('C', ':', 'E'), (':', 'E', '('), ('E', '(', 'Kc'), ('(', 'Kc', ','), ('Kc', ',', 'tgs'), (',', 'tgs', ','), ('tgs', ',', '['), (',', '[', 'Kc'), ('[', 'Kc', ','), ('Kc', ',', 'v||IDv||TS4||Ticketv'), (',', 'v||IDv||TS4||Ticketv', ']'), ('v||IDv||TS4||Ticketv', ']', ')'), (']', ')', 'Unit-9'), (')', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', 'Version'), ('Kerberos', 'Version', '4'), ('Version', '4', '–'), ('4', '–', 'Step-4'), ('–', 'Step-4', 'Tickettgs=E'), ('Step-4', 'Tickettgs=E', '('), ('Tickettgs=E', '(', 'Ktgs'), ('(', 'Ktgs', ','), ('Ktgs', ',', '['), (',', '[', 'Kc'), ('[', 'Kc', ','), ('Kc', ',', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2'), (',', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2', ']'), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', ']', ')'), (']', ')', 'TicketV=E'), (')', 'TicketV=E', '('), ('TicketV=E', '(', 'KV'), ('(', 'KV', ','), ('KV', ',', '['), (',', '[', 'Kc'), ('[', 'Kc', ','), ('Kc', ',', 'V||IDc||ADc||IDV||TS4||Lifetime4'), (',', 'V||IDc||ADc||IDV||TS4||Lifetime4', ']'), ('V||IDc||ADc||IDV||TS4||Lifetime4', ']', ')'), (']', ')', 'AuthenticatorC=E'), (')', 'AuthenticatorC=E', '('), ('AuthenticatorC=E', '(', 'Kc'), ('(', 'Kc', ','), ('Kc', ',', 'tgs'), (',', 'tgs', ','), ('tgs', ',', '['), (',', '[', 'IDc||ADc||TS3'), ('[', 'IDc||ADc||TS3', ']'), ('IDc||ADc||TS3', ']', ')'), (']', ')', 'Unit-9'), (')', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', 'Version'), ('Kerberos', 'Version', '4'), ('Version', '4', '–'), ('4', '–', 'Step-5'), ('–', 'Step-5', ','), ('Step-5', ',', '6'), (',', '6', 'The'), ('6', 'The', 'client'), ('The', 'client', 'decrypts'), ('client', 'decrypts', 'TGS'), ('decrypts', 'TGS', 'response'), ('TGS', 'response', 'using'), ('response', 'using', 'TGS'), ('using', 'TGS', 'session'), ('TGS', 'session', 'key'), ('session', 'key', '.')]
+
+>> POS Tags are: 
+ [('TGS', 'NNP'), ('--', ':'), ('-', ':'), ('>', 'JJ'), ('C', 'NNP'), (':', ':'), ('E', 'NN'), ('(', '('), ('Kc', 'NNP'), (',', ','), ('tgs', 'NN'), (',', ','), ('[', 'NNP'), ('Kc', 'NNP'), (',', ','), ('v||IDv||TS4||Ticketv', 'NNP'), (']', 'NNP'), (')', ')'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('Version', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Step-4', 'NNP'), ('Tickettgs=E', 'NNP'), ('(', '('), ('Ktgs', 'NNP'), (',', ','), ('[', 'NNP'), ('Kc', 'NNP'), (',', ','), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'NNP'), (']', 'NNP'), (')', ')'), ('TicketV=E', 'NNP'), ('(', '('), ('KV', 'NNP'), (',', ','), ('[', 'NNP'), ('Kc', 'NNP'), (',', ','), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'NNP'), (']', 'NNP'), (')', ')'), ('AuthenticatorC=E', 'NNP'), ('(', '('), ('Kc', 'NNP'), (',', ','), ('tgs', 'NN'), (',', ','), ('[', 'NNP'), ('IDc||ADc||TS3', 'NNP'), (']', 'NNP'), (')', ')'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('Version', 'NNP'), ('4', 'CD'), ('–', 'NNP'), ('Step-5', 'NNP'), (',', ','), ('6', 'CD'), ('The', 'DT'), ('client', 'NN'), ('decrypts', 'VBZ'), ('TGS', 'NNP'), ('response', 'NN'), ('using', 'VBG'), ('TGS', 'NNP'), ('session', 'NN'), ('key', 'NN'), ('.', '.')]
+
+ (S
+  (NP TGS/NNP)
+  --/:
+  -/:
+  (NP >/JJ C/NNP)
+  :/:
+  (NP E/NN)
+  (/(
+  (NP Kc/NNP)
+  ,/,
+  (NP tgs/NN)
+  ,/,
+  (NP [/NNP Kc/NNP)
+  ,/,
+  (NP v||IDv||TS4||Ticketv/NNP ]/NNP)
+  )/)
+  (NP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    Version/NNP)
+  4/CD
+  (NP –/NNP Step-4/NNP Tickettgs=E/NNP)
+  (/(
+  (NP Ktgs/NNP)
+  ,/,
+  (NP [/NNP Kc/NNP)
+  ,/,
+  (NP tgs||IDc||ADc||IDtgs||TS2||Lifetime2/NNP ]/NNP)
+  )/)
+  (NP TicketV=E/NNP)
+  (/(
+  (NP KV/NNP)
+  ,/,
+  (NP [/NNP Kc/NNP)
+  ,/,
+  (NP V||IDc||ADc||IDV||TS4||Lifetime4/NNP ]/NNP)
+  )/)
+  (NP AuthenticatorC=E/NNP)
+  (/(
+  (NP Kc/NNP)
+  ,/,
+  (NP tgs/NN)
+  ,/,
+  (NP [/NNP IDc||ADc||TS3/NNP ]/NNP)
+  )/)
+  (NP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    Version/NNP)
+  4/CD
+  (NP –/NNP Step-5/NNP)
+  ,/,
+  6/CD
+  (NP The/DT client/NN)
+  decrypts/VBZ
+  (NP TGS/NNP response/NN)
+  using/VBG
+  (NP TGS/NNP session/NN key/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['TGS', '> C', 'E', 'Kc', 'tgs', '[ Kc', 'v||IDv||TS4||Ticketv ]', 'Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos Version', '– Step-4 Tickettgs=E', 'Ktgs', '[ Kc', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2 ]', 'TicketV=E', 'KV', '[ Kc', 'V||IDc||ADc||IDV||TS4||Lifetime4 ]', 'AuthenticatorC=E', 'Kc', 'tgs', '[ IDc||ADc||TS3 ]', 'Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos Version', '– Step-5', 'The client', 'TGS response', 'TGS session key']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos'), ('ORGANIZATION', 'Ktgs'), ('ORGANIZATION', 'KV'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos'), ('ORGANIZATION', 'TGS'), ('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('TGS', 'tg'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('E', 'e'), ('(', '('), ('Kc', 'kc'), (',', ','), ('tgs', 'tg'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('v||IDv||TS4||Ticketv', 'v||idv||ts4||ticketv'), (']', ']'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-4', 'step-4'), ('Tickettgs=E', 'tickettgs='), ('(', '('), ('Ktgs', 'ktg'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'tgs||idc||adc||idtgs||ts2||lifetime2'), (']', ']'), (')', ')'), ('TicketV=E', 'ticketv='), ('(', '('), ('KV', 'kv'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'v||idc||adc||idv||ts4||lifetime4'), (']', ']'), (')', ')'), ('AuthenticatorC=E', 'authenticatorc='), ('(', '('), ('Kc', 'kc'), (',', ','), ('tgs', 'tg'), (',', ','), ('[', '['), ('IDc||ADc||TS3', 'idc||adc||ts3'), (']', ']'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-5', 'step-5'), (',', ','), ('6', '6'), ('The', 'the'), ('client', 'client'), ('decrypts', 'decrypt'), ('TGS', 'tg'), ('response', 'respons'), ('using', 'use'), ('TGS', 'tg'), ('session', 'session'), ('key', 'key'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('TGS', 'tgs'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'c'), (':', ':'), ('E', 'e'), ('(', '('), ('Kc', 'kc'), (',', ','), ('tgs', 'tgs'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('v||IDv||TS4||Ticketv', 'v||idv||ts4||ticketv'), (']', ']'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-4', 'step-4'), ('Tickettgs=E', 'tickettgs='), ('(', '('), ('Ktgs', 'ktgs'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'tgs||idc||adc||idtgs||ts2||lifetime2'), (']', ']'), (')', ')'), ('TicketV=E', 'ticketv='), ('(', '('), ('KV', 'kv'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'v||idc||adc||idv||ts4||lifetime4'), (']', ']'), (')', ')'), ('AuthenticatorC=E', 'authenticatorc='), ('(', '('), ('Kc', 'kc'), (',', ','), ('tgs', 'tgs'), (',', ','), ('[', '['), ('IDc||ADc||TS3', 'idc||adc||ts3'), (']', ']'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Version', 'version'), ('4', '4'), ('–', '–'), ('Step-5', 'step-5'), (',', ','), ('6', '6'), ('The', 'the'), ('client', 'client'), ('decrypts', 'decrypt'), ('TGS', 'tgs'), ('response', 'respons'), ('using', 'use'), ('TGS', 'tgs'), ('session', 'session'), ('key', 'key'), ('.', '.')]
+
+>> Lemmatization: 
+ [('TGS', 'TGS'), ('--', '--'), ('-', '-'), ('>', '>'), ('C', 'C'), (':', ':'), ('E', 'E'), ('(', '('), ('Kc', 'Kc'), (',', ','), ('tgs', 'tgs'), (',', ','), ('[', '['), ('Kc', 'Kc'), (',', ','), ('v||IDv||TS4||Ticketv', 'v||IDv||TS4||Ticketv'), (']', ']'), (')', ')'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('Version', 'Version'), ('4', '4'), ('–', '–'), ('Step-4', 'Step-4'), ('Tickettgs=E', 'Tickettgs=E'), ('(', '('), ('Ktgs', 'Ktgs'), (',', ','), ('[', '['), ('Kc', 'Kc'), (',', ','), ('tgs||IDc||ADc||IDtgs||TS2||Lifetime2', 'tgs||IDc||ADc||IDtgs||TS2||Lifetime2'), (']', ']'), (')', ')'), ('TicketV=E', 'TicketV=E'), ('(', '('), ('KV', 'KV'), (',', ','), ('[', '['), ('Kc', 'Kc'), (',', ','), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'V||IDc||ADc||IDV||TS4||Lifetime4'), (']', ']'), (')', ')'), ('AuthenticatorC=E', 'AuthenticatorC=E'), ('(', '('), ('Kc', 'Kc'), (',', ','), ('tgs', 'tgs'), (',', ','), ('[', '['), ('IDc||ADc||TS3', 'IDc||ADc||TS3'), (']', ']'), (')', ')'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('Version', 'Version'), ('4', '4'), ('–', '–'), ('Step-5', 'Step-5'), (',', ','), ('6', '6'), ('The', 'The'), ('client', 'client'), ('decrypts', 'decrypts'), ('TGS', 'TGS'), ('response', 'response'), ('using', 'using'), ('TGS', 'TGS'), ('session', 'session'), ('key', 'key'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+The client now has a session key for use with the new server, and a ticket to use with that server. 
+
+
+>> Tokens are: 
+ ['The', 'client', 'session', 'key', 'use', 'new', 'server', ',', 'ticket', 'use', 'server', '.']
+
+>> Bigrams are: 
+ [('The', 'client'), ('client', 'session'), ('session', 'key'), ('key', 'use'), ('use', 'new'), ('new', 'server'), ('server', ','), (',', 'ticket'), ('ticket', 'use'), ('use', 'server'), ('server', '.')]
+
+>> Trigrams are: 
+ [('The', 'client', 'session'), ('client', 'session', 'key'), ('session', 'key', 'use'), ('key', 'use', 'new'), ('use', 'new', 'server'), ('new', 'server', ','), ('server', ',', 'ticket'), (',', 'ticket', 'use'), ('ticket', 'use', 'server'), ('use', 'server', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('client', 'NN'), ('session', 'NN'), ('key', 'NN'), ('use', 'VBP'), ('new', 'JJ'), ('server', 'NN'), (',', ','), ('ticket', 'NN'), ('use', 'NN'), ('server', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT client/NN session/NN key/NN)
+  use/VBP
+  (NP new/JJ server/NN)
+  ,/,
+  (NP ticket/NN use/NN server/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The client session key', 'new server', 'ticket use server']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('session', 'session'), ('key', 'key'), ('use', 'use'), ('new', 'new'), ('server', 'server'), (',', ','), ('ticket', 'ticket'), ('use', 'use'), ('server', 'server'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('session', 'session'), ('key', 'key'), ('use', 'use'), ('new', 'new'), ('server', 'server'), (',', ','), ('ticket', 'ticket'), ('use', 'use'), ('server', 'server'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('client', 'client'), ('session', 'session'), ('key', 'key'), ('use', 'use'), ('new', 'new'), ('server', 'server'), (',', ','), ('ticket', 'ticket'), ('use', 'use'), ('server', 'server'), ('.', '.')]
+
+
+
+============================ Sentence 21 =============================
+
+The client can contact the new server using the same format used to access the TGS. 
+
+
+>> Tokens are: 
+ ['The', 'client', 'contact', 'new', 'server', 'using', 'format', 'used', 'access', 'TGS', '.']
+
+>> Bigrams are: 
+ [('The', 'client'), ('client', 'contact'), ('contact', 'new'), ('new', 'server'), ('server', 'using'), ('using', 'format'), ('format', 'used'), ('used', 'access'), ('access', 'TGS'), ('TGS', '.')]
+
+>> Trigrams are: 
+ [('The', 'client', 'contact'), ('client', 'contact', 'new'), ('contact', 'new', 'server'), ('new', 'server', 'using'), ('server', 'using', 'format'), ('using', 'format', 'used'), ('format', 'used', 'access'), ('used', 'access', 'TGS'), ('access', 'TGS', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('client', 'NN'), ('contact', 'NN'), ('new', 'JJ'), ('server', 'NN'), ('using', 'VBG'), ('format', 'NN'), ('used', 'VBN'), ('access', 'NN'), ('TGS', 'NNP'), ('.', '.')]
+
+ (S
+  (NP The/DT client/NN contact/NN)
+  (NP new/JJ server/NN)
+  using/VBG
+  (NP format/NN)
+  used/VBN
+  (NP access/NN TGS/NNP)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The client contact', 'new server', 'format', 'access TGS']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('contact', 'contact'), ('new', 'new'), ('server', 'server'), ('using', 'use'), ('format', 'format'), ('used', 'use'), ('access', 'access'), ('TGS', 'tg'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('client', 'client'), ('contact', 'contact'), ('new', 'new'), ('server', 'server'), ('using', 'use'), ('format', 'format'), ('used', 'use'), ('access', 'access'), ('TGS', 'tgs'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('client', 'client'), ('contact', 'contact'), ('new', 'new'), ('server', 'server'), ('using', 'using'), ('format', 'format'), ('used', 'used'), ('access', 'access'), ('TGS', 'TGS'), ('.', '.')]
+
+
+
+============================ Sentence 22 =============================
+
+TicketV=E(KV, [Kc,V||IDc||ADc||IDV||TS4||Lifetime4])  AuthenticatorC=E(Kc,v, [IDc||ADc||TS5])   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Ticket Each request for a service requires a ticket. 
+
+
+>> Tokens are: 
+ ['TicketV=E', '(', 'KV', ',', '[', 'Kc', ',', 'V||IDc||ADc||IDV||TS4||Lifetime4', ']', ')', 'AuthenticatorC=E', '(', 'Kc', ',', 'v', ',', '[', 'IDc||ADc||TS5', ']', ')', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Ticket', 'Each', 'request', 'service', 'requires', 'ticket', '.']
+
+>> Bigrams are: 
+ [('TicketV=E', '('), ('(', 'KV'), ('KV', ','), (',', '['), ('[', 'Kc'), ('Kc', ','), (',', 'V||IDc||ADc||IDV||TS4||Lifetime4'), ('V||IDc||ADc||IDV||TS4||Lifetime4', ']'), (']', ')'), (')', 'AuthenticatorC=E'), ('AuthenticatorC=E', '('), ('(', 'Kc'), ('Kc', ','), (',', 'v'), ('v', ','), (',', '['), ('[', 'IDc||ADc||TS5'), ('IDc||ADc||TS5', ']'), (']', ')'), (')', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Ticket'), ('Ticket', 'Each'), ('Each', 'request'), ('request', 'service'), ('service', 'requires'), ('requires', 'ticket'), ('ticket', '.')]
+
+>> Trigrams are: 
+ [('TicketV=E', '(', 'KV'), ('(', 'KV', ','), ('KV', ',', '['), (',', '[', 'Kc'), ('[', 'Kc', ','), ('Kc', ',', 'V||IDc||ADc||IDV||TS4||Lifetime4'), (',', 'V||IDc||ADc||IDV||TS4||Lifetime4', ']'), ('V||IDc||ADc||IDV||TS4||Lifetime4', ']', ')'), (']', ')', 'AuthenticatorC=E'), (')', 'AuthenticatorC=E', '('), ('AuthenticatorC=E', '(', 'Kc'), ('(', 'Kc', ','), ('Kc', ',', 'v'), (',', 'v', ','), ('v', ',', '['), (',', '[', 'IDc||ADc||TS5'), ('[', 'IDc||ADc||TS5', ']'), ('IDc||ADc||TS5', ']', ')'), (']', ')', 'Unit-9'), (')', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Ticket'), ('Subject', 'Ticket', 'Each'), ('Ticket', 'Each', 'request'), ('Each', 'request', 'service'), ('request', 'service', 'requires'), ('service', 'requires', 'ticket'), ('requires', 'ticket', '.')]
+
+>> POS Tags are: 
+ [('TicketV=E', 'NNP'), ('(', '('), ('KV', 'NNP'), (',', ','), ('[', 'NNP'), ('Kc', 'NNP'), (',', ','), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'NNP'), (']', 'NNP'), (')', ')'), ('AuthenticatorC=E', 'NNP'), ('(', '('), ('Kc', 'NNP'), (',', ','), ('v', 'NN'), (',', ','), ('[', 'NNP'), ('IDc||ADc||TS5', 'NNP'), (']', 'NNP'), (')', ')'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Ticket', 'NNP'), ('Each', 'DT'), ('request', 'NN'), ('service', 'NN'), ('requires', 'VBZ'), ('ticket', 'NN'), ('.', '.')]
+
+ (S
+  (NP TicketV=E/NNP)
+  (/(
+  (NP KV/NNP)
+  ,/,
+  (NP [/NNP Kc/NNP)
+  ,/,
+  (NP V||IDc||ADc||IDV||TS4||Lifetime4/NNP ]/NNP)
+  )/)
+  (NP AuthenticatorC=E/NNP)
+  (/(
+  (NP Kc/NNP)
+  ,/,
+  (NP v/NN)
+  ,/,
+  (NP [/NNP IDc||ADc||TS5/NNP ]/NNP)
+  )/)
+  (NP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP Ticket/NNP)
+  (NP Each/DT request/NN service/NN)
+  requires/VBZ
+  (NP ticket/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['TicketV=E', 'KV', '[ Kc', 'V||IDc||ADc||IDV||TS4||Lifetime4 ]', 'AuthenticatorC=E', 'Kc', 'v', '[ IDc||ADc||TS5 ]', 'Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Ticket', 'Each request service', 'ticket']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'KV'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology')] 
+
+>> Stemming using Porter Stemmer: 
+ [('TicketV=E', 'ticketv='), ('(', '('), ('KV', 'kv'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'v||idc||adc||idv||ts4||lifetime4'), (']', ']'), (')', ')'), ('AuthenticatorC=E', 'authenticatorc='), ('(', '('), ('Kc', 'kc'), (',', ','), ('v', 'v'), (',', ','), ('[', '['), ('IDc||ADc||TS5', 'idc||adc||ts5'), (']', ']'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Ticket', 'ticket'), ('Each', 'each'), ('request', 'request'), ('service', 'servic'), ('requires', 'requir'), ('ticket', 'ticket'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('TicketV=E', 'ticketv='), ('(', '('), ('KV', 'kv'), (',', ','), ('[', '['), ('Kc', 'kc'), (',', ','), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'v||idc||adc||idv||ts4||lifetime4'), (']', ']'), (')', ')'), ('AuthenticatorC=E', 'authenticatorc='), ('(', '('), ('Kc', 'kc'), (',', ','), ('v', 'v'), (',', ','), ('[', '['), ('IDc||ADc||TS5', 'idc||adc||ts5'), (']', ']'), (')', ')'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Ticket', 'ticket'), ('Each', 'each'), ('request', 'request'), ('service', 'servic'), ('requires', 'requir'), ('ticket', 'ticket'), ('.', '.')]
+
+>> Lemmatization: 
+ [('TicketV=E', 'TicketV=E'), ('(', '('), ('KV', 'KV'), (',', ','), ('[', '['), ('Kc', 'Kc'), (',', ','), ('V||IDc||ADc||IDV||TS4||Lifetime4', 'V||IDc||ADc||IDV||TS4||Lifetime4'), (']', ']'), (')', ')'), ('AuthenticatorC=E', 'AuthenticatorC=E'), ('(', '('), ('Kc', 'Kc'), (',', ','), ('v', 'v'), (',', ','), ('[', '['), ('IDc||ADc||TS5', 'IDc||ADc||TS5'), (']', ']'), (')', ')'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Ticket', 'Ticket'), ('Each', 'Each'), ('request', 'request'), ('service', 'service'), ('requires', 'requires'), ('ticket', 'ticket'), ('.', '.')]
+
+
+
+============================ Sentence 23 =============================
+
+A ticket provides a single client with access to a single server. 
+
+
+>> Tokens are: 
+ ['A', 'ticket', 'provides', 'single', 'client', 'access', 'single', 'server', '.']
+
+>> Bigrams are: 
+ [('A', 'ticket'), ('ticket', 'provides'), ('provides', 'single'), ('single', 'client'), ('client', 'access'), ('access', 'single'), ('single', 'server'), ('server', '.')]
+
+>> Trigrams are: 
+ [('A', 'ticket', 'provides'), ('ticket', 'provides', 'single'), ('provides', 'single', 'client'), ('single', 'client', 'access'), ('client', 'access', 'single'), ('access', 'single', 'server'), ('single', 'server', '.')]
+
+>> POS Tags are: 
+ [('A', 'DT'), ('ticket', 'NN'), ('provides', 'VBZ'), ('single', 'JJ'), ('client', 'NN'), ('access', 'NN'), ('single', 'JJ'), ('server', 'NN'), ('.', '.')]
+
+ (S
+  (NP A/DT ticket/NN)
+  provides/VBZ
+  (NP single/JJ client/NN access/NN)
+  (NP single/JJ server/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['A ticket', 'single client access', 'single server']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('A', 'a'), ('ticket', 'ticket'), ('provides', 'provid'), ('single', 'singl'), ('client', 'client'), ('access', 'access'), ('single', 'singl'), ('server', 'server'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('A', 'a'), ('ticket', 'ticket'), ('provides', 'provid'), ('single', 'singl'), ('client', 'client'), ('access', 'access'), ('single', 'singl'), ('server', 'server'), ('.', '.')]
+
+>> Lemmatization: 
+ [('A', 'A'), ('ticket', 'ticket'), ('provides', 'provides'), ('single', 'single'), ('client', 'client'), ('access', 'access'), ('single', 'single'), ('server', 'server'), ('.', '.')]
+
+
+
+============================ Sentence 24 =============================
+
+Tickets are dispensed by the “ticket granting server” (TGS), which has knowledge of all the encryption keys. 
+
+
+>> Tokens are: 
+ ['Tickets', 'dispensed', '“', 'ticket', 'granting', 'server', '”', '(', 'TGS', ')', ',', 'knowledge', 'encryption', 'keys', '.']
+
+>> Bigrams are: 
+ [('Tickets', 'dispensed'), ('dispensed', '“'), ('“', 'ticket'), ('ticket', 'granting'), ('granting', 'server'), ('server', '”'), ('”', '('), ('(', 'TGS'), ('TGS', ')'), (')', ','), (',', 'knowledge'), ('knowledge', 'encryption'), ('encryption', 'keys'), ('keys', '.')]
+
+>> Trigrams are: 
+ [('Tickets', 'dispensed', '“'), ('dispensed', '“', 'ticket'), ('“', 'ticket', 'granting'), ('ticket', 'granting', 'server'), ('granting', 'server', '”'), ('server', '”', '('), ('”', '(', 'TGS'), ('(', 'TGS', ')'), ('TGS', ')', ','), (')', ',', 'knowledge'), (',', 'knowledge', 'encryption'), ('knowledge', 'encryption', 'keys'), ('encryption', 'keys', '.')]
+
+>> POS Tags are: 
+ [('Tickets', 'NNS'), ('dispensed', 'VBD'), ('“', 'JJ'), ('ticket', 'NN'), ('granting', 'VBG'), ('server', 'NN'), ('”', 'NNP'), ('(', '('), ('TGS', 'NNP'), (')', ')'), (',', ','), ('knowledge', 'FW'), ('encryption', 'NN'), ('keys', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Tickets/NNS)
+  dispensed/VBD
+  (NP “/JJ ticket/NN)
+  granting/VBG
+  (NP server/NN ”/NNP)
+  (/(
+  (NP TGS/NNP)
+  )/)
+  ,/,
+  knowledge/FW
+  (NP encryption/NN keys/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Tickets', '“ ticket', 'server ”', 'TGS', 'encryption keys']
+
+>> Named Entities are: 
+ [('PERSON', 'Tickets'), ('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Tickets', 'ticket'), ('dispensed', 'dispens'), ('“', '“'), ('ticket', 'ticket'), ('granting', 'grant'), ('server', 'server'), ('”', '”'), ('(', '('), ('TGS', 'tg'), (')', ')'), (',', ','), ('knowledge', 'knowledg'), ('encryption', 'encrypt'), ('keys', 'key'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Tickets', 'ticket'), ('dispensed', 'dispens'), ('“', '“'), ('ticket', 'ticket'), ('granting', 'grant'), ('server', 'server'), ('”', '”'), ('(', '('), ('TGS', 'tgs'), (')', ')'), (',', ','), ('knowledge', 'knowledg'), ('encryption', 'encrypt'), ('keys', 'key'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Tickets', 'Tickets'), ('dispensed', 'dispensed'), ('“', '“'), ('ticket', 'ticket'), ('granting', 'granting'), ('server', 'server'), ('”', '”'), ('(', '('), ('TGS', 'TGS'), (')', ')'), (',', ','), ('knowledge', 'knowledge'), ('encryption', 'encryption'), ('keys', 'key'), ('.', '.')]
+
+
+
+============================ Sentence 25 =============================
+
+Tickets are meaningless to clients, they simply use them to gain access to servers. 
+
+
+>> Tokens are: 
+ ['Tickets', 'meaningless', 'clients', ',', 'simply', 'use', 'gain', 'access', 'servers', '.']
+
+>> Bigrams are: 
+ [('Tickets', 'meaningless'), ('meaningless', 'clients'), ('clients', ','), (',', 'simply'), ('simply', 'use'), ('use', 'gain'), ('gain', 'access'), ('access', 'servers'), ('servers', '.')]
+
+>> Trigrams are: 
+ [('Tickets', 'meaningless', 'clients'), ('meaningless', 'clients', ','), ('clients', ',', 'simply'), (',', 'simply', 'use'), ('simply', 'use', 'gain'), ('use', 'gain', 'access'), ('gain', 'access', 'servers'), ('access', 'servers', '.')]
+
+>> POS Tags are: 
+ [('Tickets', 'NNS'), ('meaningless', 'JJ'), ('clients', 'NNS'), (',', ','), ('simply', 'RB'), ('use', 'JJ'), ('gain', 'NN'), ('access', 'NN'), ('servers', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Tickets/NNS)
+  (NP meaningless/JJ clients/NNS)
+  ,/,
+  simply/RB
+  (NP use/JJ gain/NN access/NN servers/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Tickets', 'meaningless clients', 'use gain access servers']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Tickets', 'ticket'), ('meaningless', 'meaningless'), ('clients', 'client'), (',', ','), ('simply', 'simpli'), ('use', 'use'), ('gain', 'gain'), ('access', 'access'), ('servers', 'server'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Tickets', 'ticket'), ('meaningless', 'meaningless'), ('clients', 'client'), (',', ','), ('simply', 'simpli'), ('use', 'use'), ('gain', 'gain'), ('access', 'access'), ('servers', 'server'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Tickets', 'Tickets'), ('meaningless', 'meaningless'), ('clients', 'client'), (',', ','), ('simply', 'simply'), ('use', 'use'), ('gain', 'gain'), ('access', 'access'), ('servers', 'server'), ('.', '.')]
+
+
+
+============================ Sentence 26 =============================
+
+The TGS seals (encrypts) each ticket with the secret encryption key of the server. 
+
+
+>> Tokens are: 
+ ['The', 'TGS', 'seals', '(', 'encrypts', ')', 'ticket', 'secret', 'encryption', 'key', 'server', '.']
+
+>> Bigrams are: 
+ [('The', 'TGS'), ('TGS', 'seals'), ('seals', '('), ('(', 'encrypts'), ('encrypts', ')'), (')', 'ticket'), ('ticket', 'secret'), ('secret', 'encryption'), ('encryption', 'key'), ('key', 'server'), ('server', '.')]
+
+>> Trigrams are: 
+ [('The', 'TGS', 'seals'), ('TGS', 'seals', '('), ('seals', '(', 'encrypts'), ('(', 'encrypts', ')'), ('encrypts', ')', 'ticket'), (')', 'ticket', 'secret'), ('ticket', 'secret', 'encryption'), ('secret', 'encryption', 'key'), ('encryption', 'key', 'server'), ('key', 'server', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('TGS', 'NNP'), ('seals', 'NNS'), ('(', '('), ('encrypts', 'NNS'), (')', ')'), ('ticket', 'NN'), ('secret', 'JJ'), ('encryption', 'NN'), ('key', 'JJ'), ('server', 'NN'), ('.', '.')]
+
+ (S
+  (NP The/DT TGS/NNP seals/NNS)
+  (/(
+  (NP encrypts/NNS)
+  )/)
+  (NP ticket/NN)
+  (NP secret/JJ encryption/NN)
+  (NP key/JJ server/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The TGS seals', 'encrypts', 'ticket', 'secret encryption', 'key server']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'TGS')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('TGS', 'tg'), ('seals', 'seal'), ('(', '('), ('encrypts', 'encrypt'), (')', ')'), ('ticket', 'ticket'), ('secret', 'secret'), ('encryption', 'encrypt'), ('key', 'key'), ('server', 'server'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('TGS', 'tgs'), ('seals', 'seal'), ('(', '('), ('encrypts', 'encrypt'), (')', ')'), ('ticket', 'ticket'), ('secret', 'secret'), ('encryption', 'encrypt'), ('key', 'key'), ('server', 'server'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('TGS', 'TGS'), ('seals', 'seal'), ('(', '('), ('encrypts', 'encrypts'), (')', ')'), ('ticket', 'ticket'), ('secret', 'secret'), ('encryption', 'encryption'), ('key', 'key'), ('server', 'server'), ('.', '.')]
+
+
+
+============================ Sentence 27 =============================
+
+Sealed tickets can be sent safely over a network - only the server can make sense out of it. 
+
+
+>> Tokens are: 
+ ['Sealed', 'tickets', 'sent', 'safely', 'network', '-', 'server', 'make', 'sense', '.']
+
+>> Bigrams are: 
+ [('Sealed', 'tickets'), ('tickets', 'sent'), ('sent', 'safely'), ('safely', 'network'), ('network', '-'), ('-', 'server'), ('server', 'make'), ('make', 'sense'), ('sense', '.')]
+
+>> Trigrams are: 
+ [('Sealed', 'tickets', 'sent'), ('tickets', 'sent', 'safely'), ('sent', 'safely', 'network'), ('safely', 'network', '-'), ('network', '-', 'server'), ('-', 'server', 'make'), ('server', 'make', 'sense'), ('make', 'sense', '.')]
+
+>> POS Tags are: 
+ [('Sealed', 'JJ'), ('tickets', 'NNS'), ('sent', 'VBD'), ('safely', 'RB'), ('network', 'NN'), ('-', ':'), ('server', 'NN'), ('make', 'VBP'), ('sense', 'NN'), ('.', '.')]
+
+ (S
+  (NP Sealed/JJ tickets/NNS)
+  sent/VBD
+  safely/RB
+  (NP network/NN)
+  -/:
+  (NP server/NN)
+  make/VBP
+  (NP sense/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Sealed tickets', 'network', 'server', 'sense']
+
+>> Named Entities are: 
+ [('GPE', 'Sealed')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Sealed', 'seal'), ('tickets', 'ticket'), ('sent', 'sent'), ('safely', 'safe'), ('network', 'network'), ('-', '-'), ('server', 'server'), ('make', 'make'), ('sense', 'sens'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Sealed', 'seal'), ('tickets', 'ticket'), ('sent', 'sent'), ('safely', 'safe'), ('network', 'network'), ('-', '-'), ('server', 'server'), ('make', 'make'), ('sense', 'sens'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Sealed', 'Sealed'), ('tickets', 'ticket'), ('sent', 'sent'), ('safely', 'safely'), ('network', 'network'), ('-', '-'), ('server', 'server'), ('make', 'make'), ('sense', 'sense'), ('.', '.')]
+
+
+
+============================ Sentence 28 =============================
+
+Each ticket has a limited lifetime (a few hours). 
+
+
+>> Tokens are: 
+ ['Each', 'ticket', 'limited', 'lifetime', '(', 'hours', ')', '.']
+
+>> Bigrams are: 
+ [('Each', 'ticket'), ('ticket', 'limited'), ('limited', 'lifetime'), ('lifetime', '('), ('(', 'hours'), ('hours', ')'), (')', '.')]
+
+>> Trigrams are: 
+ [('Each', 'ticket', 'limited'), ('ticket', 'limited', 'lifetime'), ('limited', 'lifetime', '('), ('lifetime', '(', 'hours'), ('(', 'hours', ')'), ('hours', ')', '.')]
+
+>> POS Tags are: 
+ [('Each', 'DT'), ('ticket', 'NN'), ('limited', 'VBD'), ('lifetime', 'NN'), ('(', '('), ('hours', 'NNS'), (')', ')'), ('.', '.')]
+
+ (S
+  (NP Each/DT ticket/NN)
+  limited/VBD
+  (NP lifetime/NN)
+  (/(
+  (NP hours/NNS)
+  )/)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Each ticket', 'lifetime', 'hours']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Each', 'each'), ('ticket', 'ticket'), ('limited', 'limit'), ('lifetime', 'lifetim'), ('(', '('), ('hours', 'hour'), (')', ')'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Each', 'each'), ('ticket', 'ticket'), ('limited', 'limit'), ('lifetime', 'lifetim'), ('(', '('), ('hours', 'hour'), (')', ')'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Each', 'Each'), ('ticket', 'ticket'), ('limited', 'limited'), ('lifetime', 'lifetime'), ('(', '('), ('hours', 'hour'), (')', ')'), ('.', '.')]
+
+
+
+============================ Sentence 29 =============================
+
+Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Ticket Contents Client name (user login name) Server name Client host network address Session key for client/server Ticket lifetime  Creation timestamp   Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject      Kerberos Realm   Remote user authentication with Asymmetric encryption Mutual Authentication    Unit-9 Remote user authentication                                 Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject 
+
+
+>> Tokens are: 
+ ['Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Ticket', 'Contents', 'Client', 'name', '(', 'user', 'login', 'name', ')', 'Server', 'name', 'Client', 'host', 'network', 'address', 'Session', 'key', 'client/server', 'Ticket', 'lifetime', 'Creation', 'timestamp', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject', 'Kerberos', 'Realm', 'Remote', 'user', 'authentication', 'Asymmetric', 'encryption', 'Mutual', 'Authentication', 'Unit-9', 'Remote', 'user', 'authentication', 'Darshan', 'Institute', 'Engineering', '&', 'Technology', '‹', '#', '›', 'INS', 'Interesting', 'Subject']
+
+>> Bigrams are: 
+ [('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Ticket'), ('Ticket', 'Contents'), ('Contents', 'Client'), ('Client', 'name'), ('name', '('), ('(', 'user'), ('user', 'login'), ('login', 'name'), ('name', ')'), (')', 'Server'), ('Server', 'name'), ('name', 'Client'), ('Client', 'host'), ('host', 'network'), ('network', 'address'), ('address', 'Session'), ('Session', 'key'), ('key', 'client/server'), ('client/server', 'Ticket'), ('Ticket', 'lifetime'), ('lifetime', 'Creation'), ('Creation', 'timestamp'), ('timestamp', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject'), ('Subject', 'Kerberos'), ('Kerberos', 'Realm'), ('Realm', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Asymmetric'), ('Asymmetric', 'encryption'), ('encryption', 'Mutual'), ('Mutual', 'Authentication'), ('Authentication', 'Unit-9'), ('Unit-9', 'Remote'), ('Remote', 'user'), ('user', 'authentication'), ('authentication', 'Darshan'), ('Darshan', 'Institute'), ('Institute', 'Engineering'), ('Engineering', '&'), ('&', 'Technology'), ('Technology', '‹'), ('‹', '#'), ('#', '›'), ('›', 'INS'), ('INS', 'Interesting'), ('Interesting', 'Subject')]
+
+>> Trigrams are: 
+ [('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Ticket'), ('Subject', 'Ticket', 'Contents'), ('Ticket', 'Contents', 'Client'), ('Contents', 'Client', 'name'), ('Client', 'name', '('), ('name', '(', 'user'), ('(', 'user', 'login'), ('user', 'login', 'name'), ('login', 'name', ')'), ('name', ')', 'Server'), (')', 'Server', 'name'), ('Server', 'name', 'Client'), ('name', 'Client', 'host'), ('Client', 'host', 'network'), ('host', 'network', 'address'), ('network', 'address', 'Session'), ('address', 'Session', 'key'), ('Session', 'key', 'client/server'), ('key', 'client/server', 'Ticket'), ('client/server', 'Ticket', 'lifetime'), ('Ticket', 'lifetime', 'Creation'), ('lifetime', 'Creation', 'timestamp'), ('Creation', 'timestamp', 'Unit-9'), ('timestamp', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject'), ('Interesting', 'Subject', 'Kerberos'), ('Subject', 'Kerberos', 'Realm'), ('Kerberos', 'Realm', 'Remote'), ('Realm', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Asymmetric'), ('authentication', 'Asymmetric', 'encryption'), ('Asymmetric', 'encryption', 'Mutual'), ('encryption', 'Mutual', 'Authentication'), ('Mutual', 'Authentication', 'Unit-9'), ('Authentication', 'Unit-9', 'Remote'), ('Unit-9', 'Remote', 'user'), ('Remote', 'user', 'authentication'), ('user', 'authentication', 'Darshan'), ('authentication', 'Darshan', 'Institute'), ('Darshan', 'Institute', 'Engineering'), ('Institute', 'Engineering', '&'), ('Engineering', '&', 'Technology'), ('&', 'Technology', '‹'), ('Technology', '‹', '#'), ('‹', '#', '›'), ('#', '›', 'INS'), ('›', 'INS', 'Interesting'), ('INS', 'Interesting', 'Subject')]
+
+>> POS Tags are: 
+ [('Unit-9', 'JJ'), ('Remote', 'NNP'), ('user', 'NN'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Ticket', 'NNP'), ('Contents', 'NNP'), ('Client', 'NNP'), ('name', 'NN'), ('(', '('), ('user', 'JJ'), ('login', 'NN'), ('name', 'NN'), (')', ')'), ('Server', 'WDT'), ('name', 'JJ'), ('Client', 'NNP'), ('host', 'NN'), ('network', 'NN'), ('address', 'NN'), ('Session', 'NNP'), ('key', 'NN'), ('client/server', 'NN'), ('Ticket', 'NNP'), ('lifetime', 'NN'), ('Creation', 'NNP'), ('timestamp', 'VBZ'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP'), ('Kerberos', 'NNP'), ('Realm', 'NNP'), ('Remote', 'NNP'), ('user', 'NNP'), ('authentication', 'NN'), ('Asymmetric', 'NNP'), ('encryption', 'NN'), ('Mutual', 'NNP'), ('Authentication', 'NNP'), ('Unit-9', 'NNP'), ('Remote', 'NNP'), ('user', 'POS'), ('authentication', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹', 'NNP'), ('#', '#'), ('›', 'NNP'), ('INS', 'NNP'), ('Interesting', 'NNP'), ('Subject', 'NNP')]
+
+ (S
+  (NP
+    Unit-9/JJ
+    Remote/NNP
+    user/NN
+    authentication/NN
+    Darshan/NNP
+    Institute/NNP
+    Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Ticket/NNP
+    Contents/NNP
+    Client/NNP
+    name/NN)
+  (/(
+  (NP user/JJ login/NN name/NN)
+  )/)
+  Server/WDT
+  (NP
+    name/JJ
+    Client/NNP
+    host/NN
+    network/NN
+    address/NN
+    Session/NNP
+    key/NN
+    client/server/NN
+    Ticket/NNP
+    lifetime/NN
+    Creation/NNP)
+  timestamp/VBZ
+  (NP Unit-9/NNP Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP
+    ›/NNP
+    INS/NNP
+    Interesting/NNP
+    Subject/NNP
+    Kerberos/NNP
+    Realm/NNP
+    Remote/NNP
+    user/NNP
+    authentication/NN
+    Asymmetric/NNP
+    encryption/NN
+    Mutual/NNP
+    Authentication/NNP
+    Unit-9/NNP
+    Remote/NNP)
+  user/POS
+  (NP authentication/NN Darshan/NNP Institute/NNP Engineering/NNP)
+  &/CC
+  (NP Technology/NNP ‹/NNP)
+  #/#
+  (NP ›/NNP INS/NNP Interesting/NNP Subject/NNP)) 
+
+
+>> Noun Phrases are: 
+ ['Unit-9 Remote user authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Ticket Contents Client name', 'user login name', 'name Client host network address Session key client/server Ticket lifetime Creation', 'Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject Kerberos Realm Remote user authentication Asymmetric encryption Mutual Authentication Unit-9 Remote', 'authentication Darshan Institute Engineering', 'Technology ‹', '› INS Interesting Subject']
+
+>> Named Entities are: 
+ [('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Client'), ('PERSON', 'Ticket'), ('ORGANIZATION', 'Creation'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology'), ('PERSON', 'Kerberos Realm Remote'), ('ORGANIZATION', 'Asymmetric'), ('PERSON', 'Mutual Authentication'), ('PERSON', 'Darshan Institute'), ('ORGANIZATION', 'Technology')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Ticket', 'ticket'), ('Contents', 'content'), ('Client', 'client'), ('name', 'name'), ('(', '('), ('user', 'user'), ('login', 'login'), ('name', 'name'), (')', ')'), ('Server', 'server'), ('name', 'name'), ('Client', 'client'), ('host', 'host'), ('network', 'network'), ('address', 'address'), ('Session', 'session'), ('key', 'key'), ('client/server', 'client/serv'), ('Ticket', 'ticket'), ('lifetime', 'lifetim'), ('Creation', 'creation'), ('timestamp', 'timestamp'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Realm', 'realm'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Asymmetric', 'asymmetr'), ('encryption', 'encrypt'), ('Mutual', 'mutual'), ('Authentication', 'authent'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Ticket', 'ticket'), ('Contents', 'content'), ('Client', 'client'), ('name', 'name'), ('(', '('), ('user', 'user'), ('login', 'login'), ('name', 'name'), (')', ')'), ('Server', 'server'), ('name', 'name'), ('Client', 'client'), ('host', 'host'), ('network', 'network'), ('address', 'address'), ('Session', 'session'), ('key', 'key'), ('client/server', 'client/serv'), ('Ticket', 'ticket'), ('lifetime', 'lifetim'), ('Creation', 'creation'), ('timestamp', 'timestamp'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject'), ('Kerberos', 'kerbero'), ('Realm', 'realm'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Asymmetric', 'asymmetr'), ('encryption', 'encrypt'), ('Mutual', 'mutual'), ('Authentication', 'authent'), ('Unit-9', 'unit-9'), ('Remote', 'remot'), ('user', 'user'), ('authentication', 'authent'), ('Darshan', 'darshan'), ('Institute', 'institut'), ('Engineering', 'engin'), ('&', '&'), ('Technology', 'technolog'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'in'), ('Interesting', 'interest'), ('Subject', 'subject')]
+
+>> Lemmatization: 
+ [('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Ticket', 'Ticket'), ('Contents', 'Contents'), ('Client', 'Client'), ('name', 'name'), ('(', '('), ('user', 'user'), ('login', 'login'), ('name', 'name'), (')', ')'), ('Server', 'Server'), ('name', 'name'), ('Client', 'Client'), ('host', 'host'), ('network', 'network'), ('address', 'address'), ('Session', 'Session'), ('key', 'key'), ('client/server', 'client/server'), ('Ticket', 'Ticket'), ('lifetime', 'lifetime'), ('Creation', 'Creation'), ('timestamp', 'timestamp'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject'), ('Kerberos', 'Kerberos'), ('Realm', 'Realm'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Asymmetric', 'Asymmetric'), ('encryption', 'encryption'), ('Mutual', 'Mutual'), ('Authentication', 'Authentication'), ('Unit-9', 'Unit-9'), ('Remote', 'Remote'), ('user', 'user'), ('authentication', 'authentication'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹', '‹'), ('#', '#'), ('›', '›'), ('INS', 'INS'), ('Interesting', 'Interesting'), ('Subject', 'Subject')]
+

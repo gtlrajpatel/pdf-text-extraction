@@ -1,0 +1,397 @@
+
+
+========================== Sentence 1 ===========================
+
+ AI-23 Machine Learning Tutorial  Machine Learning tutorial provides basic and advanced concepts of machine learning. 
+
+Tokens are: 
+>> ['AI', '-', '23', 'Machine', 'Learning', 'Tutorial', 'Machine', 'Learning', 'tutorial', 'provides', 'basic', 'and', 'advanced', 'concepts', 'of', 'machine', 'learning', '.'] 
+
+ UPOS tags are: 
+>> [('AI', 'NOUN'), ('-', 'PUNCT'), ('23', 'NUM'), ('Machine', 'NOUN'), ('Learning', 'PROPN'), ('Tutorial', 'NOUN'), ('Machine', 'NOUN'), ('Learning', 'NOUN'), ('tutorial', 'NOUN'), ('provides', 'VERB'), ('basic', 'ADJ'), ('and', 'CCONJ'), ('advanced', 'ADJ'), ('concepts', 'NOUN'), ('of', 'ADP'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('AI', 'NN'), ('-', ','), ('23', 'CD'), ('Machine', 'NN'), ('Learning', 'NNP'), ('Tutorial', 'NN'), ('Machine', 'NN'), ('Learning', 'NN'), ('tutorial', 'NN'), ('provides', 'VBZ'), ('basic', 'JJ'), ('and', 'CC'), ('advanced', 'JJ'), ('concepts', 'NNS'), ('of', 'IN'), ('machine', 'NN'), ('learning', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('AI', 'ai'), ('-', '-'), ('23', '23'), ('Machine', 'Machine'), ('Learning', 'learning'), ('Tutorial', 'tutorial'), ('Machine', 'Machine'), ('Learning', 'learning'), ('tutorial', 'tutorial'), ('provides', 'provide'), ('basic', 'basic'), ('and', 'and'), ('advanced', 'advanced'), ('concepts', 'concept'), ('of', 'of'), ('machine', 'machine'), ('learning', 'learning'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('AI', 'root'), 'root'), (('-', 'AI'), 'punct'), (('23', 'Machine'), 'nummod'), (('Machine', 'Machine'), 'compound'), (('Learning', 'Tutorial'), 'compound'), (('Tutorial', 'tutorial'), 'compound'), (('Machine', 'tutorial'), 'compound'), (('Learning', 'tutorial'), 'compound'), (('tutorial', 'provides'), 'nsubj'), (('provides', 'AI'), 'parataxis'), (('basic', 'concepts'), 'amod'), (('and', 'advanced'), 'cc'), (('advanced', 'basic'), 'conj'), (('concepts', 'provides'), 'obj'), (('of', 'learning'), 'case'), (('machine', 'learning'), 'compound'), (('learning', 'concepts'), 'nmod'), (('.', 'AI'), 'punct')]
+
+ Named Entities are: 
+>> [('AI-23 Machine', 'ORG')]
+
+========================== Sentence 2 ===========================
+
+ Our machine learning tutorial is designed for students and working professionals. 
+
+Tokens are: 
+>> ['Our', 'machine', 'learning', 'tutorial', 'is', 'designed', 'for', 'students', 'and', 'working', 'professionals', '.'] 
+
+ UPOS tags are: 
+>> [('Our', 'PRON'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('tutorial', 'NOUN'), ('is', 'AUX'), ('designed', 'VERB'), ('for', 'ADP'), ('students', 'NOUN'), ('and', 'CCONJ'), ('working', 'VERB'), ('professionals', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Our', 'PRP$'), ('machine', 'NN'), ('learning', 'NN'), ('tutorial', 'NN'), ('is', 'VBZ'), ('designed', 'VBN'), ('for', 'IN'), ('students', 'NNS'), ('and', 'CC'), ('working', 'VBG'), ('professionals', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Our', 'we'), ('machine', 'machine'), ('learning', 'learning'), ('tutorial', 'tutorial'), ('is', 'be'), ('designed', 'design'), ('for', 'for'), ('students', 'student'), ('and', 'and'), ('working', 'work'), ('professionals', 'professional'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Our', 'tutorial'), 'nmod:poss'), (('machine', 'tutorial'), 'compound'), (('learning', 'tutorial'), 'compound'), (('tutorial', 'designed'), 'nsubj:pass'), (('is', 'designed'), 'aux:pass'), (('designed', 'root'), 'root'), (('for', 'students'), 'case'), (('students', 'designed'), 'obl'), (('and', 'professionals'), 'cc'), (('working', 'professionals'), 'amod'), (('professionals', 'students'), 'conj'), (('.', 'designed'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 3 ===========================
+
+ Machine learning is a growing technology which enables computers to learn automatically from past data. 
+
+Tokens are: 
+>> ['Machine', 'learning', 'is', 'a', 'growing', 'technology', 'which', 'enables', 'computers', 'to', 'learn', 'automatically', 'from', 'past', 'data', '.'] 
+
+ UPOS tags are: 
+>> [('Machine', 'NOUN'), ('learning', 'NOUN'), ('is', 'AUX'), ('a', 'DET'), ('growing', 'VERB'), ('technology', 'NOUN'), ('which', 'PRON'), ('enables', 'VERB'), ('computers', 'NOUN'), ('to', 'PART'), ('learn', 'VERB'), ('automatically', 'ADV'), ('from', 'ADP'), ('past', 'ADJ'), ('data', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Machine', 'NN'), ('learning', 'NN'), ('is', 'VBZ'), ('a', 'DT'), ('growing', 'VBG'), ('technology', 'NN'), ('which', 'WDT'), ('enables', 'VBZ'), ('computers', 'NNS'), ('to', 'TO'), ('learn', 'VB'), ('automatically', 'RB'), ('from', 'IN'), ('past', 'JJ'), ('data', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Machine', 'Machine'), ('learning', 'learning'), ('is', 'be'), ('a', 'a'), ('growing', 'grow'), ('technology', 'technology'), ('which', 'which'), ('enables', 'enable'), ('computers', 'computer'), ('to', 'to'), ('learn', 'learn'), ('automatically', 'automatically'), ('from', 'from'), ('past', 'past'), ('data', 'datum'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Machine', 'learning'), 'compound'), (('learning', 'technology'), 'nsubj'), (('is', 'technology'), 'cop'), (('a', 'technology'), 'det'), (('growing', 'technology'), 'amod'), (('technology', 'root'), 'root'), (('which', 'enables'), 'nsubj'), (('enables', 'technology'), 'acl:relcl'), (('computers', 'enables'), 'obj'), (('to', 'learn'), 'mark'), (('learn', 'enables'), 'xcomp'), (('automatically', 'learn'), 'advmod'), (('from', 'data'), 'case'), (('past', 'data'), 'amod'), (('data', 'learn'), 'obl'), (('.', 'technology'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 4 ===========================
+
+ Machine learning uses various algorithms for building mathematical models and making predictions using historical data or information. 
+
+Tokens are: 
+>> ['Machine', 'learning', 'uses', 'various', 'algorithms', 'for', 'building', 'mathematical', 'models', 'and', 'making', 'predictions', 'using', 'historical', 'data', 'or', 'information', '.'] 
+
+ UPOS tags are: 
+>> [('Machine', 'NOUN'), ('learning', 'NOUN'), ('uses', 'VERB'), ('various', 'ADJ'), ('algorithms', 'NOUN'), ('for', 'SCONJ'), ('building', 'VERB'), ('mathematical', 'ADJ'), ('models', 'NOUN'), ('and', 'CCONJ'), ('making', 'VERB'), ('predictions', 'NOUN'), ('using', 'VERB'), ('historical', 'ADJ'), ('data', 'NOUN'), ('or', 'CCONJ'), ('information', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Machine', 'NN'), ('learning', 'NN'), ('uses', 'VBZ'), ('various', 'JJ'), ('algorithms', 'NNS'), ('for', 'IN'), ('building', 'VBG'), ('mathematical', 'JJ'), ('models', 'NNS'), ('and', 'CC'), ('making', 'VBG'), ('predictions', 'NNS'), ('using', 'VBG'), ('historical', 'JJ'), ('data', 'NNS'), ('or', 'CC'), ('information', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Machine', 'Machine'), ('learning', 'learning'), ('uses', 'use'), ('various', 'various'), ('algorithms', 'algorithm'), ('for', 'for'), ('building', 'build'), ('mathematical', 'mathematical'), ('models', 'model'), ('and', 'and'), ('making', 'make'), ('predictions', 'prediction'), ('using', 'use'), ('historical', 'historical'), ('data', 'datum'), ('or', 'or'), ('information', 'information'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Machine', 'learning'), 'compound'), (('learning', 'uses'), 'nsubj'), (('uses', 'root'), 'root'), (('various', 'algorithms'), 'amod'), (('algorithms', 'uses'), 'obj'), (('for', 'building'), 'mark'), (('building', 'algorithms'), 'acl'), (('mathematical', 'models'), 'amod'), (('models', 'building'), 'obj'), (('and', 'making'), 'cc'), (('making', 'building'), 'conj'), (('predictions', 'making'), 'obj'), (('using', 'predictions'), 'acl'), (('historical', 'data'), 'amod'), (('data', 'using'), 'obj'), (('or', 'information'), 'cc'), (('information', 'data'), 'conj'), (('.', 'uses'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 5 ===========================
+
+ Currently, it is being used for various tasks such as image recognition, speech recognition, email filtering, Facebook auto-tagging, recommender system, and many more. 
+
+Tokens are: 
+>> ['Currently', ',', 'it', 'is', 'being', 'used', 'for', 'various', 'tasks', 'such', 'as', 'image', 'recognition', ',', 'speech', 'recognition', ',', 'email', 'filtering', ',', 'Facebook', 'auto-tagging', ',', 'recommender', 'system', ',', 'and', 'many', 'more', '.'] 
+
+ UPOS tags are: 
+>> [('Currently', 'ADV'), (',', 'PUNCT'), ('it', 'PRON'), ('is', 'AUX'), ('being', 'AUX'), ('used', 'VERB'), ('for', 'ADP'), ('various', 'ADJ'), ('tasks', 'NOUN'), ('such', 'ADJ'), ('as', 'ADP'), ('image', 'NOUN'), ('recognition', 'NOUN'), (',', 'PUNCT'), ('speech', 'NOUN'), ('recognition', 'NOUN'), (',', 'PUNCT'), ('email', 'NOUN'), ('filtering', 'NOUN'), (',', 'PUNCT'), ('Facebook', 'NOUN'), ('auto-tagging', 'NOUN'), (',', 'PUNCT'), ('recommender', 'NOUN'), ('system', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('many', 'ADJ'), ('more', 'ADV'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Currently', 'RB'), (',', ','), ('it', 'PRP'), ('is', 'VBZ'), ('being', 'VBG'), ('used', 'VBN'), ('for', 'IN'), ('various', 'JJ'), ('tasks', 'NNS'), ('such', 'JJ'), ('as', 'IN'), ('image', 'NN'), ('recognition', 'NN'), (',', ','), ('speech', 'NN'), ('recognition', 'NN'), (',', ','), ('email', 'NN'), ('filtering', 'NN'), (',', ','), ('Facebook', 'NN'), ('auto-tagging', 'NN'), (',', ','), ('recommender', 'NN'), ('system', 'NN'), (',', ','), ('and', 'CC'), ('many', 'JJ'), ('more', 'RBR'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Currently', 'currently'), (',', ','), ('it', 'it'), ('is', 'be'), ('being', 'be'), ('used', 'use'), ('for', 'for'), ('various', 'various'), ('tasks', 'task'), ('such', 'such'), ('as', 'as'), ('image', 'image'), ('recognition', 'recognition'), (',', ','), ('speech', 'speech'), ('recognition', 'recognition'), (',', ','), ('email', 'email'), ('filtering', 'filter'), (',', ','), ('Facebook', 'Facebook'), ('auto-tagging', 'auto-tagging'), (',', ','), ('recommender', 'recommender'), ('system', 'system'), (',', ','), ('and', 'and'), ('many', 'many'), ('more', 'more'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Currently', 'used'), 'advmod'), ((',', 'used'), 'punct'), (('it', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux'), (('being', 'used'), 'aux:pass'), (('used', 'root'), 'root'), (('for', 'tasks'), 'case'), (('various', 'tasks'), 'amod'), (('tasks', 'used'), 'obl'), (('such', 'recognition'), 'case'), (('as', 'such'), 'fixed'), (('image', 'recognition'), 'compound'), (('recognition', 'tasks'), 'nmod'), ((',', 'recognition'), 'punct'), (('speech', 'recognition'), 'compound'), (('recognition', 'recognition'), 'conj'), ((',', 'filtering'), 'punct'), (('email', 'filtering'), 'compound'), (('filtering', 'recognition'), 'conj'), ((',', 'auto-tagging'), 'punct'), (('Facebook', 'auto-tagging'), 'compound'), (('auto-tagging', 'recognition'), 'conj'), ((',', 'system'), 'punct'), (('recommender', 'system'), 'compound'), (('system', 'recognition'), 'conj'), ((',', 'more'), 'punct'), (('and', 'more'), 'cc'), (('many', 'recognition'), 'conj'), (('more', 'recognition'), 'conj'), (('.', 'used'), 'punct')]
+
+ Named Entities are: 
+>> [('Facebook', 'ORG')]
+
+========================== Sentence 6 ===========================
+
+ This machine learning tutorial gives you an introduction to machine learning along with the wide range of machine learning techniques such as Supervised, Unsupervised, and Reinforcement learning. 
+
+Tokens are: 
+>> ['This', 'machine', 'learning', 'tutorial', 'gives', 'you', 'an', 'introduction', 'to', 'machine', 'learning', 'along', 'with', 'the', 'wide', 'range', 'of', 'machine', 'learning', 'techniques', 'such', 'as', 'Supervised', ',', 'Unsupervised', ',', 'and', 'Reinforcement', 'learning', '.'] 
+
+ UPOS tags are: 
+>> [('This', 'DET'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('tutorial', 'NOUN'), ('gives', 'VERB'), ('you', 'PRON'), ('an', 'DET'), ('introduction', 'NOUN'), ('to', 'ADP'), ('machine', 'VERB'), ('learning', 'VERB'), ('along', 'ADP'), ('with', 'ADP'), ('the', 'DET'), ('wide', 'ADJ'), ('range', 'NOUN'), ('of', 'ADP'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('techniques', 'NOUN'), ('such', 'ADJ'), ('as', 'ADP'), ('Supervised', 'VERB'), (',', 'PUNCT'), ('Unsupervised', 'VERB'), (',', 'PUNCT'), ('and', 'CCONJ'), ('Reinforcement', 'NOUN'), ('learning', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('This', 'DT'), ('machine', 'NN'), ('learning', 'NN'), ('tutorial', 'NN'), ('gives', 'VBZ'), ('you', 'PRP'), ('an', 'DT'), ('introduction', 'NN'), ('to', 'IN'), ('machine', 'VB'), ('learning', 'VBG'), ('along', 'IN'), ('with', 'IN'), ('the', 'DT'), ('wide', 'JJ'), ('range', 'NN'), ('of', 'IN'), ('machine', 'NN'), ('learning', 'NN'), ('techniques', 'NNS'), ('such', 'JJ'), ('as', 'IN'), ('Supervised', 'VBN'), (',', ','), ('Unsupervised', 'VBN'), (',', ','), ('and', 'CC'), ('Reinforcement', 'NN'), ('learning', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('This', 'this'), ('machine', 'machine'), ('learning', 'learning'), ('tutorial', 'tutorial'), ('gives', 'give'), ('you', 'you'), ('an', 'a'), ('introduction', 'introduction'), ('to', 'to'), ('machine', 'machine'), ('learning', 'learn'), ('along', 'along'), ('with', 'with'), ('the', 'the'), ('wide', 'wide'), ('range', 'range'), ('of', 'of'), ('machine', 'machine'), ('learning', 'learning'), ('techniques', 'technique'), ('such', 'such'), ('as', 'as'), ('Supervised', 'supervise'), (',', ','), ('Unsupervised', 'unsupervise'), (',', ','), ('and', 'and'), ('Reinforcement', 'reinforcement'), ('learning', 'learning'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('This', 'tutorial'), 'det'), (('machine', 'tutorial'), 'compound'), (('learning', 'tutorial'), 'compound'), (('tutorial', 'gives'), 'nsubj'), (('gives', 'root'), 'root'), (('you', 'gives'), 'iobj'), (('an', 'introduction'), 'det'), (('introduction', 'gives'), 'obj'), (('to', 'machine'), 'mark'), (('machine', 'introduction'), 'acl'), (('learning', 'machine'), 'xcomp'), (('along', 'learning'), 'advmod'), (('with', 'range'), 'case'), (('the', 'range'), 'det'), (('wide', 'range'), 'amod'), (('range', 'learning'), 'obl'), (('of', 'techniques'), 'case'), (('machine', 'techniques'), 'compound'), (('learning', 'techniques'), 'compound'), (('techniques', 'range'), 'nmod'), (('such', 'learning'), 'case'), (('as', 'such'), 'fixed'), (('Supervised', 'learning'), 'amod'), ((',', 'Unsupervised'), 'punct'), (('Unsupervised', 'Supervised'), 'conj'), ((',', 'Reinforcement'), 'punct'), (('and', 'Reinforcement'), 'cc'), (('Reinforcement', 'Supervised'), 'conj'), (('learning', 'techniques'), 'nmod'), (('.', 'gives'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 7 ===========================
+
+ You will learn about regression and classification models, clustering methods, hidden Markov models, and various sequential models. 
+
+Tokens are: 
+>> ['You', 'will', 'learn', 'about', 'regression', 'and', 'classification', 'models', ',', 'clustering', 'methods', ',', 'hidden', 'Markov', 'models', ',', 'and', 'various', 'sequential', 'models', '.'] 
+
+ UPOS tags are: 
+>> [('You', 'PRON'), ('will', 'AUX'), ('learn', 'VERB'), ('about', 'ADP'), ('regression', 'NOUN'), ('and', 'CCONJ'), ('classification', 'NOUN'), ('models', 'NOUN'), (',', 'PUNCT'), ('clustering', 'NOUN'), ('methods', 'NOUN'), (',', 'PUNCT'), ('hidden', 'VERB'), ('Markov', 'ADJ'), ('models', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('various', 'ADJ'), ('sequential', 'ADJ'), ('models', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('You', 'PRP'), ('will', 'MD'), ('learn', 'VB'), ('about', 'IN'), ('regression', 'NN'), ('and', 'CC'), ('classification', 'NN'), ('models', 'NNS'), (',', ','), ('clustering', 'NN'), ('methods', 'NNS'), (',', ','), ('hidden', 'VBN'), ('Markov', 'JJ'), ('models', 'NNS'), (',', ','), ('and', 'CC'), ('various', 'JJ'), ('sequential', 'JJ'), ('models', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('You', 'you'), ('will', 'will'), ('learn', 'learn'), ('about', 'about'), ('regression', 'regression'), ('and', 'and'), ('classification', 'classification'), ('models', 'model'), (',', ','), ('clustering', 'clustering'), ('methods', 'method'), (',', ','), ('hidden', 'hide'), ('Markov', 'markov'), ('models', 'model'), (',', ','), ('and', 'and'), ('various', 'various'), ('sequential', 'sequential'), ('models', 'model'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('You', 'learn'), 'nsubj'), (('will', 'learn'), 'aux'), (('learn', 'root'), 'root'), (('about', 'models'), 'case'), (('regression', 'models'), 'compound'), (('and', 'classification'), 'cc'), (('classification', 'regression'), 'conj'), (('models', 'learn'), 'obl'), ((',', 'methods'), 'punct'), (('clustering', 'methods'), 'compound'), (('methods', 'models'), 'conj'), ((',', 'models'), 'punct'), (('hidden', 'models'), 'amod'), (('Markov', 'models'), 'amod'), (('models', 'models'), 'conj'), ((',', 'models'), 'punct'), (('and', 'models'), 'cc'), (('various', 'models'), 'amod'), (('sequential', 'models'), 'amod'), (('models', 'models'), 'conj'), (('.', 'learn'), 'punct')]
+
+ Named Entities are: 
+>> [('Markov', 'ORG')]
+
+========================== Sentence 8 ===========================
+
+ What is Machine Learning 
+
+Tokens are: 
+>> ['What', 'is', 'Machine', 'Learning'] 
+
+ UPOS tags are: 
+>> [('What', 'PRON'), ('is', 'AUX'), ('Machine', 'NOUN'), ('Learning', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('What', 'WP'), ('is', 'VBZ'), ('Machine', 'NN'), ('Learning', 'NN')] 
+
+ Lemmas are: 
+>> [('What', 'what'), ('is', 'be'), ('Machine', 'Machine'), ('Learning', 'learning')] 
+
+ Dependency tags are: 
+>> [(('What', 'root'), 'root'), (('is', 'What'), 'cop'), (('Machine', 'Learning'), 'compound'), (('Learning', 'What'), 'nsubj')]
+
+ Named Entities are: 
+>> [('Machine Learning', 'ORG')]
+
+========================== Sentence 9 ===========================
+
+ In the real world, we are surrounded by humans who can learn everything from their experiences with their learning capability, and we have computers or machines which work on our instructions. 
+
+Tokens are: 
+>> ['In', 'the', 'real', 'world', ',', 'we', 'are', 'surrounded', 'by', 'humans', 'who', 'can', 'learn', 'everything', 'from', 'their', 'experiences', 'with', 'their', 'learning', 'capability', ',', 'and', 'we', 'have', 'computers', 'or', 'machines', 'which', 'work', 'on', 'our', 'instructions', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('the', 'DET'), ('real', 'ADJ'), ('world', 'NOUN'), (',', 'PUNCT'), ('we', 'PRON'), ('are', 'AUX'), ('surrounded', 'VERB'), ('by', 'ADP'), ('humans', 'NOUN'), ('who', 'PRON'), ('can', 'AUX'), ('learn', 'VERB'), ('everything', 'NOUN'), ('from', 'ADP'), ('their', 'PRON'), ('experiences', 'NOUN'), ('with', 'ADP'), ('their', 'PRON'), ('learning', 'NOUN'), ('capability', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('we', 'PRON'), ('have', 'VERB'), ('computers', 'NOUN'), ('or', 'CCONJ'), ('machines', 'NOUN'), ('which', 'PRON'), ('work', 'VERB'), ('on', 'ADP'), ('our', 'PRON'), ('instructions', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('the', 'DT'), ('real', 'JJ'), ('world', 'NN'), (',', ','), ('we', 'PRP'), ('are', 'VBP'), ('surrounded', 'VBN'), ('by', 'IN'), ('humans', 'NNS'), ('who', 'WP'), ('can', 'MD'), ('learn', 'VB'), ('everything', 'NN'), ('from', 'IN'), ('their', 'PRP$'), ('experiences', 'NNS'), ('with', 'IN'), ('their', 'PRP$'), ('learning', 'NN'), ('capability', 'NN'), (',', ','), ('and', 'CC'), ('we', 'PRP'), ('have', 'VBP'), ('computers', 'NNS'), ('or', 'CC'), ('machines', 'NNS'), ('which', 'WDT'), ('work', 'VBP'), ('on', 'IN'), ('our', 'PRP$'), ('instructions', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('the', 'the'), ('real', 'real'), ('world', 'world'), (',', ','), ('we', 'we'), ('are', 'be'), ('surrounded', 'surround'), ('by', 'by'), ('humans', 'human'), ('who', 'who'), ('can', 'can'), ('learn', 'learn'), ('everything', 'everything'), ('from', 'from'), ('their', 'they'), ('experiences', 'experience'), ('with', 'with'), ('their', 'they'), ('learning', 'learning'), ('capability', 'capability'), (',', ','), ('and', 'and'), ('we', 'we'), ('have', 'have'), ('computers', 'computer'), ('or', 'or'), ('machines', 'machine'), ('which', 'which'), ('work', 'work'), ('on', 'on'), ('our', 'we'), ('instructions', 'instruction'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'world'), 'case'), (('the', 'world'), 'det'), (('real', 'world'), 'amod'), (('world', 'surrounded'), 'obl'), ((',', 'surrounded'), 'punct'), (('we', 'surrounded'), 'nsubj:pass'), (('are', 'surrounded'), 'aux:pass'), (('surrounded', 'root'), 'root'), (('by', 'humans'), 'case'), (('humans', 'surrounded'), 'obl'), (('who', 'learn'), 'nsubj'), (('can', 'learn'), 'aux'), (('learn', 'humans'), 'acl:relcl'), (('everything', 'learn'), 'obj'), (('from', 'experiences'), 'case'), (('their', 'experiences'), 'nmod:poss'), (('experiences', 'learn'), 'obl'), (('with', 'capability'), 'case'), (('their', 'capability'), 'nmod:poss'), (('learning', 'capability'), 'compound'), (('capability', 'experiences'), 'nmod'), ((',', 'have'), 'punct'), (('and', 'have'), 'cc'), (('we', 'have'), 'nsubj'), (('have', 'surrounded'), 'conj'), (('computers', 'have'), 'obj'), (('or', 'machines'), 'cc'), (('machines', 'computers'), 'conj'), (('which', 'work'), 'nsubj'), (('work', 'computers'), 'acl:relcl'), (('on', 'instructions'), 'case'), (('our', 'instructions'), 'nmod:poss'), (('instructions', 'work'), 'obl'), (('.', 'surrounded'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 10 ===========================
+
+ But can a machine also learn from experiences or past data like a human does? 
+
+Tokens are: 
+>> ['But', 'can', 'a', 'machine', 'also', 'learn', 'from', 'experiences', 'or', 'past', 'data', 'like', 'a', 'human', 'does', '?'] 
+
+ UPOS tags are: 
+>> [('But', 'CCONJ'), ('can', 'AUX'), ('a', 'DET'), ('machine', 'NOUN'), ('also', 'ADV'), ('learn', 'VERB'), ('from', 'ADP'), ('experiences', 'NOUN'), ('or', 'CCONJ'), ('past', 'ADJ'), ('data', 'NOUN'), ('like', 'SCONJ'), ('a', 'DET'), ('human', 'NOUN'), ('does', 'VERB'), ('?', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('But', 'CC'), ('can', 'MD'), ('a', 'DT'), ('machine', 'NN'), ('also', 'RB'), ('learn', 'VB'), ('from', 'IN'), ('experiences', 'NNS'), ('or', 'CC'), ('past', 'JJ'), ('data', 'NNS'), ('like', 'IN'), ('a', 'DT'), ('human', 'NN'), ('does', 'VBZ'), ('?', '.')] 
+
+ Lemmas are: 
+>> [('But', 'but'), ('can', 'can'), ('a', 'a'), ('machine', 'machine'), ('also', 'also'), ('learn', 'learn'), ('from', 'from'), ('experiences', 'experience'), ('or', 'or'), ('past', 'past'), ('data', 'datum'), ('like', 'like'), ('a', 'a'), ('human', 'human'), ('does', 'do'), ('?', '?')] 
+
+ Dependency tags are: 
+>> [(('But', 'learn'), 'cc'), (('can', 'learn'), 'aux'), (('a', 'machine'), 'det'), (('machine', 'learn'), 'nsubj'), (('also', 'learn'), 'advmod'), (('learn', 'root'), 'root'), (('from', 'experiences'), 'case'), (('experiences', 'learn'), 'obl'), (('or', 'data'), 'cc'), (('past', 'data'), 'amod'), (('data', 'experiences'), 'conj'), (('like', 'does'), 'mark'), (('a', 'human'), 'det'), (('human', 'does'), 'nsubj'), (('does', 'learn'), 'advcl'), (('?', 'learn'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 11 ===========================
+
+ So here comes the role of Machine Learning. 
+
+Tokens are: 
+>> ['So', 'here', 'comes', 'the', 'role', 'of', 'Machine', 'Learning', '.'] 
+
+ UPOS tags are: 
+>> [('So', 'ADV'), ('here', 'ADV'), ('comes', 'VERB'), ('the', 'DET'), ('role', 'NOUN'), ('of', 'ADP'), ('Machine', 'PROPN'), ('Learning', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('So', 'RB'), ('here', 'RB'), ('comes', 'VBZ'), ('the', 'DT'), ('role', 'NN'), ('of', 'IN'), ('Machine', 'NNP'), ('Learning', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('So', 'so'), ('here', 'here'), ('comes', 'come'), ('the', 'the'), ('role', 'role'), ('of', 'of'), ('Machine', 'Machine'), ('Learning', 'learning'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('So', 'comes'), 'advmod'), (('here', 'comes'), 'advmod'), (('comes', 'root'), 'root'), (('the', 'role'), 'det'), (('role', 'comes'), 'obj'), (('of', 'Learning'), 'case'), (('Machine', 'Learning'), 'compound'), (('Learning', 'role'), 'nmod'), (('.', 'comes'), 'punct')]
+
+ Named Entities are: 
+>> [('Machine Learning', 'ORG')]
+
+========================== Sentence 12 ===========================
+
+ Machine Learning is said as a subset of artificial intelligence that is mainly concerned with the development of algorithms which allow a computer to learn from the data and past experiences on their own. 
+
+Tokens are: 
+>> ['Machine', 'Learning', 'is', 'said', 'as', 'a', 'subset', 'of', 'artificial', 'intelligence', 'that', 'is', 'mainly', 'concerned', 'with', 'the', 'development', 'of', 'algorithms', 'which', 'allow', 'a', 'computer', 'to', 'learn', 'from', 'the', 'data', 'and', 'past', 'experiences', 'on', 'their', 'own', '.'] 
+
+ UPOS tags are: 
+>> [('Machine', 'NOUN'), ('Learning', 'NOUN'), ('is', 'AUX'), ('said', 'VERB'), ('as', 'ADP'), ('a', 'DET'), ('subset', 'NOUN'), ('of', 'ADP'), ('artificial', 'ADJ'), ('intelligence', 'NOUN'), ('that', 'PRON'), ('is', 'AUX'), ('mainly', 'ADV'), ('concerned', 'ADJ'), ('with', 'ADP'), ('the', 'DET'), ('development', 'NOUN'), ('of', 'ADP'), ('algorithms', 'NOUN'), ('which', 'PRON'), ('allow', 'VERB'), ('a', 'DET'), ('computer', 'NOUN'), ('to', 'PART'), ('learn', 'VERB'), ('from', 'ADP'), ('the', 'DET'), ('data', 'NOUN'), ('and', 'CCONJ'), ('past', 'ADJ'), ('experiences', 'NOUN'), ('on', 'ADP'), ('their', 'PRON'), ('own', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Machine', 'NN'), ('Learning', 'NN'), ('is', 'VBZ'), ('said', 'VBN'), ('as', 'IN'), ('a', 'DT'), ('subset', 'NN'), ('of', 'IN'), ('artificial', 'JJ'), ('intelligence', 'NN'), ('that', 'WDT'), ('is', 'VBZ'), ('mainly', 'RB'), ('concerned', 'JJ'), ('with', 'IN'), ('the', 'DT'), ('development', 'NN'), ('of', 'IN'), ('algorithms', 'NNS'), ('which', 'WDT'), ('allow', 'VBP'), ('a', 'DT'), ('computer', 'NN'), ('to', 'TO'), ('learn', 'VB'), ('from', 'IN'), ('the', 'DT'), ('data', 'NNS'), ('and', 'CC'), ('past', 'JJ'), ('experiences', 'NNS'), ('on', 'IN'), ('their', 'PRP$'), ('own', 'JJ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Machine', 'Machine'), ('Learning', 'learning'), ('is', 'be'), ('said', 'say'), ('as', 'as'), ('a', 'a'), ('subset', 'subset'), ('of', 'of'), ('artificial', 'artificial'), ('intelligence', 'intelligence'), ('that', 'that'), ('is', 'be'), ('mainly', 'mainly'), ('concerned', 'concerned'), ('with', 'with'), ('the', 'the'), ('development', 'development'), ('of', 'of'), ('algorithms', 'algorithm'), ('which', 'which'), ('allow', 'allow'), ('a', 'a'), ('computer', 'computer'), ('to', 'to'), ('learn', 'learn'), ('from', 'from'), ('the', 'the'), ('data', 'datum'), ('and', 'and'), ('past', 'past'), ('experiences', 'experience'), ('on', 'on'), ('their', 'they'), ('own', 'own'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Machine', 'Learning'), 'compound'), (('Learning', 'said'), 'nsubj:pass'), (('is', 'said'), 'aux:pass'), (('said', 'root'), 'root'), (('as', 'subset'), 'case'), (('a', 'subset'), 'det'), (('subset', 'said'), 'obl'), (('of', 'intelligence'), 'case'), (('artificial', 'intelligence'), 'amod'), (('intelligence', 'subset'), 'nmod'), (('that', 'concerned'), 'nsubj'), (('is', 'concerned'), 'cop'), (('mainly', 'concerned'), 'advmod'), (('concerned', 'intelligence'), 'acl:relcl'), (('with', 'development'), 'case'), (('the', 'development'), 'det'), (('development', 'concerned'), 'obl'), (('of', 'algorithms'), 'case'), (('algorithms', 'development'), 'nmod'), (('which', 'allow'), 'nsubj'), (('allow', 'algorithms'), 'acl:relcl'), (('a', 'computer'), 'det'), (('computer', 'allow'), 'obj'), (('to', 'learn'), 'mark'), (('learn', 'allow'), 'xcomp'), (('from', 'data'), 'case'), (('the', 'data'), 'det'), (('data', 'learn'), 'obl'), (('and', 'experiences'), 'cc'), (('past', 'experiences'), 'amod'), (('experiences', 'data'), 'conj'), (('on', 'own'), 'case'), (('their', 'own'), 'nmod:poss'), (('own', 'experiences'), 'nmod'), (('.', 'said'), 'punct')]
+
+ Named Entities are: 
+>> [('Machine Learning', 'ORG')]
+
+========================== Sentence 13 ===========================
+
+ The term machine learning was first introduced by Arthur Samuel in 1959. 
+
+Tokens are: 
+>> ['The', 'term', 'machine', 'learning', 'was', 'first', 'introduced', 'by', 'Arthur', 'Samuel', 'in', '1959', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('term', 'NOUN'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('was', 'AUX'), ('first', 'ADV'), ('introduced', 'VERB'), ('by', 'ADP'), ('Arthur', 'PROPN'), ('Samuel', 'PROPN'), ('in', 'ADP'), ('1959', 'NUM'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('term', 'NN'), ('machine', 'NN'), ('learning', 'NN'), ('was', 'VBD'), ('first', 'RB'), ('introduced', 'VBN'), ('by', 'IN'), ('Arthur', 'NNP'), ('Samuel', 'NNP'), ('in', 'IN'), ('1959', 'CD'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('term', 'term'), ('machine', 'machine'), ('learning', 'learning'), ('was', 'be'), ('first', 'first'), ('introduced', 'introduce'), ('by', 'by'), ('Arthur', 'Arthur'), ('Samuel', 'Samuel'), ('in', 'in'), ('1959', '1959'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'machine'), 'det'), (('term', 'machine'), 'compound'), (('machine', 'introduced'), 'nsubj:pass'), (('learning', 'introduced'), 'nsubj:pass'), (('was', 'introduced'), 'aux:pass'), (('first', 'introduced'), 'advmod'), (('introduced', 'root'), 'root'), (('by', 'Arthur'), 'case'), (('Arthur', 'introduced'), 'obl'), (('Samuel', 'Arthur'), 'flat'), (('in', '1959'), 'case'), (('1959', 'introduced'), 'obl'), (('.', 'introduced'), 'punct')]
+
+ Named Entities are: 
+>> [('first', 'ORDINAL'), ('Arthur Samuel', 'PERSON'), ('1959', 'DATE')]
+
+========================== Sentence 14 ===========================
+
+ We can define it in a summarized way as: Machine learning enables a machine to automatically learn from data, improve performance from experiences, and predict things without being explicitly programmed. 
+
+Tokens are: 
+>> ['We', 'can', 'define', 'it', 'in', 'a', 'summarized', 'way', 'as', ':', 'Machine', 'learning', 'enables', 'a', 'machine', 'to', 'automatically', 'learn', 'from', 'data', ',', 'improve', 'performance', 'from', 'experiences', ',', 'and', 'predict', 'things', 'without', 'being', 'explicitly', 'programmed', '.'] 
+
+ UPOS tags are: 
+>> [('We', 'PRON'), ('can', 'AUX'), ('define', 'VERB'), ('it', 'PRON'), ('in', 'ADP'), ('a', 'DET'), ('summarized', 'VERB'), ('way', 'NOUN'), ('as', 'ADP'), (':', 'PUNCT'), ('Machine', 'NOUN'), ('learning', 'NOUN'), ('enables', 'VERB'), ('a', 'DET'), ('machine', 'NOUN'), ('to', 'PART'), ('automatically', 'ADV'), ('learn', 'VERB'), ('from', 'ADP'), ('data', 'NOUN'), (',', 'PUNCT'), ('improve', 'VERB'), ('performance', 'NOUN'), ('from', 'ADP'), ('experiences', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('predict', 'VERB'), ('things', 'NOUN'), ('without', 'SCONJ'), ('being', 'AUX'), ('explicitly', 'ADV'), ('programmed', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('We', 'PRP'), ('can', 'MD'), ('define', 'VB'), ('it', 'PRP'), ('in', 'IN'), ('a', 'DT'), ('summarized', 'VBN'), ('way', 'NN'), ('as', 'IN'), (':', ':'), ('Machine', 'NN'), ('learning', 'NN'), ('enables', 'VBZ'), ('a', 'DT'), ('machine', 'NN'), ('to', 'TO'), ('automatically', 'RB'), ('learn', 'VB'), ('from', 'IN'), ('data', 'NNS'), (',', ','), ('improve', 'VB'), ('performance', 'NN'), ('from', 'IN'), ('experiences', 'NNS'), (',', ','), ('and', 'CC'), ('predict', 'VB'), ('things', 'NNS'), ('without', 'IN'), ('being', 'VBG'), ('explicitly', 'RB'), ('programmed', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('We', 'we'), ('can', 'can'), ('define', 'define'), ('it', 'it'), ('in', 'in'), ('a', 'a'), ('summarized', 'summarize'), ('way', 'way'), ('as', 'as'), (':', ':'), ('Machine', 'Machine'), ('learning', 'learning'), ('enables', 'enable'), ('a', 'a'), ('machine', 'machine'), ('to', 'to'), ('automatically', 'automatically'), ('learn', 'learn'), ('from', 'from'), ('data', 'datum'), (',', ','), ('improve', 'improve'), ('performance', 'performance'), ('from', 'from'), ('experiences', 'experience'), (',', ','), ('and', 'and'), ('predict', 'predict'), ('things', 'thing'), ('without', 'without'), ('being', 'be'), ('explicitly', 'explicitly'), ('programmed', 'program'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('We', 'define'), 'nsubj'), (('can', 'define'), 'aux'), (('define', 'root'), 'root'), (('it', 'define'), 'obj'), (('in', 'way'), 'case'), (('a', 'way'), 'det'), (('summarized', 'way'), 'amod'), (('way', 'define'), 'obl'), (('as', 'enables'), 'mark'), ((':', 'enables'), 'punct'), (('Machine', 'learning'), 'compound'), (('learning', 'enables'), 'nsubj'), (('enables', 'define'), 'parataxis'), (('a', 'machine'), 'det'), (('machine', 'enables'), 'obj'), (('to', 'learn'), 'mark'), (('automatically', 'learn'), 'advmod'), (('learn', 'machine'), 'acl'), (('from', 'data'), 'case'), (('data', 'learn'), 'obl'), ((',', 'improve'), 'punct'), (('improve', 'learn'), 'conj'), (('performance', 'improve'), 'obj'), (('from', 'experiences'), 'case'), (('experiences', 'improve'), 'obl'), ((',', 'predict'), 'punct'), (('and', 'predict'), 'cc'), (('predict', 'improve'), 'conj'), (('things', 'predict'), 'obj'), (('without', 'programmed'), 'mark'), (('being', 'programmed'), 'aux:pass'), (('explicitly', 'programmed'), 'advmod'), (('programmed', 'predict'), 'advcl'), (('.', 'define'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 15 ===========================
+
+ With the help of sample historical data, which is known as training data, machine learning algorithms build a mathematical model that helps in making predictions or decisions without being explicitly programmed. 
+
+Tokens are: 
+>> ['With', 'the', 'help', 'of', 'sample', 'historical', 'data', ',', 'which', 'is', 'known', 'as', 'training', 'data', ',', 'machine', 'learning', 'algorithms', 'build', 'a', 'mathematical', 'model', 'that', 'helps', 'in', 'making', 'predictions', 'or', 'decisions', 'without', 'being', 'explicitly', 'programmed', '.'] 
+
+ UPOS tags are: 
+>> [('With', 'ADP'), ('the', 'DET'), ('help', 'NOUN'), ('of', 'ADP'), ('sample', 'NOUN'), ('historical', 'ADJ'), ('data', 'NOUN'), (',', 'PUNCT'), ('which', 'PRON'), ('is', 'AUX'), ('known', 'VERB'), ('as', 'ADP'), ('training', 'NOUN'), ('data', 'NOUN'), (',', 'PUNCT'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('algorithms', 'NOUN'), ('build', 'VERB'), ('a', 'DET'), ('mathematical', 'ADJ'), ('model', 'NOUN'), ('that', 'PRON'), ('helps', 'VERB'), ('in', 'SCONJ'), ('making', 'VERB'), ('predictions', 'NOUN'), ('or', 'CCONJ'), ('decisions', 'NOUN'), ('without', 'SCONJ'), ('being', 'AUX'), ('explicitly', 'ADV'), ('programmed', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('With', 'IN'), ('the', 'DT'), ('help', 'NN'), ('of', 'IN'), ('sample', 'NN'), ('historical', 'JJ'), ('data', 'NN'), (',', ','), ('which', 'WDT'), ('is', 'VBZ'), ('known', 'VBN'), ('as', 'IN'), ('training', 'NN'), ('data', 'NNS'), (',', ','), ('machine', 'NN'), ('learning', 'NN'), ('algorithms', 'NNS'), ('build', 'VBP'), ('a', 'DT'), ('mathematical', 'JJ'), ('model', 'NN'), ('that', 'WDT'), ('helps', 'VBZ'), ('in', 'IN'), ('making', 'VBG'), ('predictions', 'NNS'), ('or', 'CC'), ('decisions', 'NNS'), ('without', 'IN'), ('being', 'VBG'), ('explicitly', 'RB'), ('programmed', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('With', 'with'), ('the', 'the'), ('help', 'help'), ('of', 'of'), ('sample', 'sample'), ('historical', 'historical'), ('data', 'datum'), (',', ','), ('which', 'which'), ('is', 'be'), ('known', 'know'), ('as', 'as'), ('training', 'training'), ('data', 'datum'), (',', ','), ('machine', 'machine'), ('learning', 'learning'), ('algorithms', 'algorithm'), ('build', 'build'), ('a', 'a'), ('mathematical', 'mathematical'), ('model', 'model'), ('that', 'that'), ('helps', 'help'), ('in', 'in'), ('making', 'make'), ('predictions', 'prediction'), ('or', 'or'), ('decisions', 'decision'), ('without', 'without'), ('being', 'be'), ('explicitly', 'explicitly'), ('programmed', 'program'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('With', 'help'), 'case'), (('the', 'help'), 'det'), (('help', 'build'), 'obl'), (('of', 'data'), 'case'), (('sample', 'data'), 'compound'), (('historical', 'data'), 'amod'), (('data', 'help'), 'nmod'), ((',', 'known'), 'punct'), (('which', 'known'), 'nsubj:pass'), (('is', 'known'), 'aux:pass'), (('known', 'data'), 'acl:relcl'), (('as', 'data'), 'case'), (('training', 'data'), 'compound'), (('data', 'known'), 'obl'), ((',', 'build'), 'punct'), (('machine', 'algorithms'), 'compound'), (('learning', 'algorithms'), 'compound'), (('algorithms', 'build'), 'nsubj'), (('build', 'root'), 'root'), (('a', 'model'), 'det'), (('mathematical', 'model'), 'amod'), (('model', 'build'), 'obj'), (('that', 'helps'), 'nsubj'), (('helps', 'model'), 'acl:relcl'), (('in', 'making'), 'mark'), (('making', 'helps'), 'advcl'), (('predictions', 'making'), 'obj'), (('or', 'decisions'), 'cc'), (('decisions', 'predictions'), 'conj'), (('without', 'programmed'), 'mark'), (('being', 'programmed'), 'aux:pass'), (('explicitly', 'programmed'), 'advmod'), (('programmed', 'making'), 'advcl'), (('.', 'build'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 16 ===========================
+
+ Machine learning brings computer science and statistics together for creating predictive models. 
+
+Tokens are: 
+>> ['Machine', 'learning', 'brings', 'computer', 'science', 'and', 'statistics', 'together', 'for', 'creating', 'predictive', 'models', '.'] 
+
+ UPOS tags are: 
+>> [('Machine', 'NOUN'), ('learning', 'NOUN'), ('brings', 'VERB'), ('computer', 'NOUN'), ('science', 'NOUN'), ('and', 'CCONJ'), ('statistics', 'NOUN'), ('together', 'ADV'), ('for', 'SCONJ'), ('creating', 'VERB'), ('predictive', 'ADJ'), ('models', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Machine', 'NN'), ('learning', 'NN'), ('brings', 'VBZ'), ('computer', 'NN'), ('science', 'NN'), ('and', 'CC'), ('statistics', 'NNS'), ('together', 'RB'), ('for', 'IN'), ('creating', 'VBG'), ('predictive', 'JJ'), ('models', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Machine', 'Machine'), ('learning', 'learning'), ('brings', 'bring'), ('computer', 'computer'), ('science', 'science'), ('and', 'and'), ('statistics', 'statistic'), ('together', 'together'), ('for', 'for'), ('creating', 'create'), ('predictive', 'predictive'), ('models', 'model'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Machine', 'learning'), 'compound'), (('learning', 'brings'), 'nsubj'), (('brings', 'root'), 'root'), (('computer', 'science'), 'compound'), (('science', 'brings'), 'obj'), (('and', 'statistics'), 'cc'), (('statistics', 'science'), 'conj'), (('together', 'brings'), 'advmod'), (('for', 'creating'), 'mark'), (('creating', 'brings'), 'advcl'), (('predictive', 'models'), 'amod'), (('models', 'creating'), 'obj'), (('.', 'brings'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 17 ===========================
+
+ Machine learning constructs or uses the algorithms that learn from historical data. 
+
+Tokens are: 
+>> ['Machine', 'learning', 'constructs', 'or', 'uses', 'the', 'algorithms', 'that', 'learn', 'from', 'historical', 'data', '.'] 
+
+ UPOS tags are: 
+>> [('Machine', 'NOUN'), ('learning', 'NOUN'), ('constructs', 'NOUN'), ('or', 'CCONJ'), ('uses', 'VERB'), ('the', 'DET'), ('algorithms', 'NOUN'), ('that', 'PRON'), ('learn', 'VERB'), ('from', 'ADP'), ('historical', 'ADJ'), ('data', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Machine', 'NN'), ('learning', 'NN'), ('constructs', 'NNS'), ('or', 'CC'), ('uses', 'VBZ'), ('the', 'DT'), ('algorithms', 'NNS'), ('that', 'WDT'), ('learn', 'VBP'), ('from', 'IN'), ('historical', 'JJ'), ('data', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Machine', 'Machine'), ('learning', 'learning'), ('constructs', 'construct'), ('or', 'or'), ('uses', 'use'), ('the', 'the'), ('algorithms', 'algorithm'), ('that', 'that'), ('learn', 'learn'), ('from', 'from'), ('historical', 'historical'), ('data', 'datum'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Machine', 'constructs'), 'compound'), (('learning', 'constructs'), 'compound'), (('constructs', 'root'), 'root'), (('or', 'uses'), 'cc'), (('uses', 'constructs'), 'conj'), (('the', 'algorithms'), 'det'), (('algorithms', 'uses'), 'obj'), (('that', 'learn'), 'nsubj'), (('learn', 'algorithms'), 'acl:relcl'), (('from', 'data'), 'case'), (('historical', 'data'), 'amod'), (('data', 'learn'), 'obl'), (('.', 'constructs'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 18 ===========================
+
+ The more we will provide the information, the higher will be the performance. 
+
+Tokens are: 
+>> ['The', 'more', 'we', 'will', 'provide', 'the', 'information', ',', 'the', 'higher', 'will', 'be', 'the', 'performance', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('more', 'ADJ'), ('we', 'PRON'), ('will', 'AUX'), ('provide', 'VERB'), ('the', 'DET'), ('information', 'NOUN'), (',', 'PUNCT'), ('the', 'DET'), ('higher', 'ADJ'), ('will', 'AUX'), ('be', 'AUX'), ('the', 'DET'), ('performance', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('more', 'JJR'), ('we', 'PRP'), ('will', 'MD'), ('provide', 'VB'), ('the', 'DT'), ('information', 'NN'), (',', ','), ('the', 'DT'), ('higher', 'JJR'), ('will', 'MD'), ('be', 'VB'), ('the', 'DT'), ('performance', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('more', 'more'), ('we', 'we'), ('will', 'will'), ('provide', 'provide'), ('the', 'the'), ('information', 'information'), (',', ','), ('the', 'the'), ('higher', 'high'), ('will', 'will'), ('be', 'be'), ('the', 'the'), ('performance', 'performance'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'more'), 'det'), (('more', 'performance'), 'nsubj'), (('we', 'provide'), 'nsubj'), (('will', 'provide'), 'aux'), (('provide', 'more'), 'acl:relcl'), (('the', 'information'), 'det'), (('information', 'provide'), 'obj'), ((',', 'performance'), 'punct'), (('the', 'higher'), 'det'), (('higher', 'performance'), 'nsubj'), (('will', 'performance'), 'aux'), (('be', 'performance'), 'cop'), (('the', 'performance'), 'det'), (('performance', 'root'), 'root'), (('.', 'performance'), 'punct')]
+
+ Named Entities are: 
+>> []

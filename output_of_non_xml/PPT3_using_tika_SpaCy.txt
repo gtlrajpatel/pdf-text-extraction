@@ -1,0 +1,2944 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+PowerPoint Presentation  arjun.bala@darshan.ac.in 9624822202 
+
+
+>> Tokens are: 
+[PowerPoint, Presentation,  , arjun.bala@darshan.ac.in, 9624822202] 
+
+>> PoS Tags are: 
+[('PowerPoint', 'PROPN'), ('Presentation', 'PROPN'), (' ', 'SPACE'), ('arjun.bala@darshan.ac.in', 'NUM'), ('9624822202', 'NUM')] 
+
+>> Dependency Tags are: 
+[('PowerPoint', 'compound'), ('Presentation', 'ROOT'), (' ', 'appos'), ('arjun.bala@darshan.ac.in', 'npadvmod'), ('9624822202', 'punct')]
+
+>> Bigrams: 
+[[PowerPoint, Presentation], [Presentation,  ], [ , arjun.bala@darshan.ac.in], [arjun.bala@darshan.ac.in, 9624822202]]
+
+>> Trigrams: 
+[[PowerPoint, Presentation,  ], [Presentation,  , arjun.bala@darshan.ac.in], [ , arjun.bala@darshan.ac.in, 9624822202]]
+
+>> Noun Phrases are: 
+[PowerPoint Presentation]
+
+>> Named Entities are: 
+[('PowerPoint Presentation  arjun.bala@darshan.ac.in 9624822202', 'LAW')]
+
+
+============================ Sentence 2 =============================
+
+Computer Engineering Department Prof. Arjun V. Bala Python for Data Science (PDS) (3150713) 
+
+
+>> Tokens are: 
+[Computer, Engineering, Department, Prof., Arjun, V., Bala, Python, Data, Science, (, PDS, ), (, 3150713, )] 
+
+>> PoS Tags are: 
+[('Computer', 'PROPN'), ('Engineering', 'PROPN'), ('Department', 'PROPN'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN'), ('Python', 'PROPN'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('(', 'PUNCT'), ('3150713', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Computer', 'compound'), ('Engineering', 'compound'), ('Department', 'compound'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'compound'), ('Python', 'ROOT'), ('Data', 'compound'), ('Science', 'pobj'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('(', 'punct'), ('3150713', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[Computer, Engineering], [Engineering, Department], [Department, Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala], [Bala, Python], [Python, Data], [Data, Science], [Science, (], [(, PDS], [PDS, )], [), (], [(, 3150713], [3150713, )]]
+
+>> Trigrams: 
+[[Computer, Engineering, Department], [Engineering, Department, Prof.], [Department, Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala], [V., Bala, Python], [Bala, Python, Data], [Python, Data, Science], [Data, Science, (], [Science, (, PDS], [(, PDS, )], [PDS, ), (], [), (, 3150713], [(, 3150713, )]]
+
+>> Noun Phrases are: 
+[Computer Engineering Department Prof. Arjun V. Bala Python, Data Science, (PDS]
+
+>> Named Entities are: 
+[('Computer Engineering Department', 'ORG'), ('Arjun V. Bala', 'PERSON'), ('3150713', 'DATE')]
+
+
+============================ Sentence 3 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+Unit-02  Data Science  & Python  Darshan Institute of Engineering & Technology, Rajkot     Looping Outline 
+
+
+>> Tokens are: 
+[Unit-02,  , Data, Science,  , &, Python,  , Darshan, Institute, Engineering, &, Technology, ,, Rajkot,    , , Looping, Outline] 
+
+>> PoS Tags are: 
+[('Unit-02', 'PROPN'), (' ', 'SPACE'), ('Data', 'PROPN'), ('Science', 'PROPN'), (' ', 'SPACE'), ('&', 'CCONJ'), ('Python', 'PROPN'), (' ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), (',', 'PUNCT'), ('Rajkot', 'PROPN'), ('   ', 'SPACE'), ('\uf050', 'PROPN'), ('Looping', 'PROPN'), ('Outline', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Unit-02', 'compound'), (' ', 'nummod'), ('Data', 'compound'), ('Science', 'compound'), (' ', 'ROOT'), ('&', 'cc'), ('Python', 'conj'), (' ', 'advmod'), ('Darshan', 'compound'), ('Institute', 'conj'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), (',', 'punct'), ('Rajkot', 'appos'), ('   ', 'nummod'), ('\uf050', 'appos'), ('Looping', 'compound'), ('Outline', 'appos')]
+
+>> Bigrams: 
+[[Unit-02,  ], [ , Data], [Data, Science], [Science,  ], [ , &], [&, Python], [Python,  ], [ , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology, ,], [,, Rajkot], [Rajkot,    ], [   , ], [, Looping], [Looping, Outline]]
+
+>> Trigrams: 
+[[Unit-02,  , Data], [ , Data, Science], [Data, Science,  ], [Science,  , &], [ , &, Python], [&, Python,  ], [Python,  , Darshan], [ , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology, ,], [Technology, ,, Rajkot], [,, Rajkot,    ], [Rajkot,    , ], [   , , Looping], [, Looping, Outline]]
+
+>> Noun Phrases are: 
+[Python, Darshan Institute, Engineering, Technology, Rajkot,    , Looping Outline]
+
+>> Named Entities are: 
+[('Unit-02', 'ORG'), ('Data Science  & Python', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('Looping Outline', 'ORG')]
+
+
+============================ Sentence 5 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+Core competencies of a data scientist Creating the Data Science Pipeline Why Python? 
+
+
+>> Tokens are: 
+[Core, competencies, data, scientist, Creating, Data, Science, Pipeline, Python, ?] 
+
+>> PoS Tags are: 
+[('Core', 'PROPN'), ('competencies', 'NOUN'), ('data', 'NOUN'), ('scientist', 'NOUN'), ('Creating', 'VERB'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Pipeline', 'PROPN'), ('Python', 'PROPN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Core', 'compound'), ('competencies', 'ROOT'), ('data', 'compound'), ('scientist', 'pobj'), ('Creating', 'acl'), ('Data', 'compound'), ('Science', 'compound'), ('Pipeline', 'dobj'), ('Python', 'appos'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Core, competencies], [competencies, data], [data, scientist], [scientist, Creating], [Creating, Data], [Data, Science], [Science, Pipeline], [Pipeline, Python], [Python, ?]]
+
+>> Trigrams: 
+[[Core, competencies, data], [competencies, data, scientist], [data, scientist, Creating], [scientist, Creating, Data], [Creating, Data, Science], [Data, Science, Pipeline], [Science, Pipeline, Python], [Pipeline, Python, ?]]
+
+>> Noun Phrases are: 
+[Core competencies, a data scientist, the Data Science Pipeline, Why Python]
+
+>> Named Entities are: 
+[('Creating the Data Science Pipeline Why Python', 'ORG')]
+
+
+============================ Sentence 7 =============================
+
+Understanding Python's Role in Data Science 
+
+
+>> Tokens are: 
+[Understanding, Python, Role, Data, Science] 
+
+>> PoS Tags are: 
+[('Understanding', 'PROPN'), ('Python', 'PROPN'), ('Role', 'PROPN'), ('Data', 'PROPN'), ('Science', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Understanding', 'ROOT'), ('Python', 'poss'), ('Role', 'dobj'), ('Data', 'compound'), ('Science', 'pobj')]
+
+>> Bigrams: 
+[[Understanding, Python], [Python, Role], [Role, Data], [Data, Science]]
+
+>> Trigrams: 
+[[Understanding, Python, Role], [Python, Role, Data], [Role, Data, Science]]
+
+>> Noun Phrases are: 
+[Understanding, Python's Role, Data Science]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 8 =============================
+
+Considering Speed of Execution Using the Python Ecosystem for Data Science 
+
+
+>> Tokens are: 
+[Considering, Speed, Execution, Python, Ecosystem, Data, Science] 
+
+>> PoS Tags are: 
+[('Considering', 'VERB'), ('Speed', 'PROPN'), ('Execution', 'NOUN'), ('Python', 'PROPN'), ('Ecosystem', 'PROPN'), ('Data', 'PROPN'), ('Science', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Considering', 'ROOT'), ('Speed', 'dobj'), ('Execution', 'pobj'), ('Python', 'compound'), ('Ecosystem', 'dobj'), ('Data', 'compound'), ('Science', 'pobj')]
+
+>> Bigrams: 
+[[Considering, Speed], [Speed, Execution], [Execution, Python], [Python, Ecosystem], [Ecosystem, Data], [Data, Science]]
+
+>> Trigrams: 
+[[Considering, Speed, Execution], [Speed, Execution, Python], [Execution, Python, Ecosystem], [Python, Ecosystem, Data], [Ecosystem, Data, Science]]
+
+>> Noun Phrases are: 
+[Speed, Execution, the Python Ecosystem, Data Science]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+Performing fundamental scientific computing using NumPy Performing data analysis using pandas Accessing scientific tools using SciPy Implementing machine learning using Scikit-learn Going for deep learning with Keras and TensorFlow Plotting the data using matplotlib Creating graphs with NetworkX Parsing HTML documents using Beautiful Soup     Core competencies of a data scientist The Data Scientist requires knowledge of vast range of skills to perform required tasks. 
+
+
+>> Tokens are: 
+[Performing, fundamental, scientific, computing, NumPy, Performing, data, analysis, pandas, Accessing, scientific, tools, SciPy, Implementing, machine, learning, Scikit, -, learn, Going, deep, learning, Keras, TensorFlow, Plotting, data, matplotlib, Creating, graphs, NetworkX, Parsing, HTML, documents, Beautiful, Soup,     , Core, competencies, data, scientist, Data, Scientist, requires, knowledge, vast, range, skills, perform, required, tasks, .] 
+
+>> PoS Tags are: 
+[('Performing', 'VERB'), ('fundamental', 'ADJ'), ('scientific', 'ADJ'), ('computing', 'NOUN'), ('NumPy', 'PROPN'), ('Performing', 'PROPN'), ('data', 'NOUN'), ('analysis', 'NOUN'), ('pandas', 'ADJ'), ('Accessing', 'PROPN'), ('scientific', 'ADJ'), ('tools', 'NOUN'), ('SciPy', 'PROPN'), ('Implementing', 'PROPN'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('Scikit', 'PROPN'), ('-', 'PUNCT'), ('learn', 'VERB'), ('Going', 'VERB'), ('deep', 'ADJ'), ('learning', 'NOUN'), ('Keras', 'PROPN'), ('TensorFlow', 'PROPN'), ('Plotting', 'PROPN'), ('data', 'NOUN'), ('matplotlib', 'ADJ'), ('Creating', 'VERB'), ('graphs', 'NOUN'), ('NetworkX', 'PROPN'), ('Parsing', 'PROPN'), ('HTML', 'NOUN'), ('documents', 'NOUN'), ('Beautiful', 'PROPN'), ('Soup', 'PROPN'), ('    ', 'SPACE'), ('Core', 'PROPN'), ('competencies', 'NOUN'), ('data', 'NOUN'), ('scientist', 'NOUN'), ('Data', 'PROPN'), ('Scientist', 'PROPN'), ('requires', 'VERB'), ('knowledge', 'NOUN'), ('vast', 'ADJ'), ('range', 'NOUN'), ('skills', 'NOUN'), ('perform', 'VERB'), ('required', 'VERB'), ('tasks', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Performing', 'advcl'), ('fundamental', 'amod'), ('scientific', 'amod'), ('computing', 'dobj'), ('NumPy', 'compound'), ('Performing', 'compound'), ('data', 'compound'), ('analysis', 'dobj'), ('pandas', 'amod'), ('Accessing', 'nmod'), ('scientific', 'amod'), ('tools', 'dobj'), ('SciPy', 'compound'), ('Implementing', 'compound'), ('machine', 'compound'), ('learning', 'dobj'), ('Scikit', 'compound'), ('-', 'punct'), ('learn', 'dobj'), ('Going', 'xcomp'), ('deep', 'amod'), ('learning', 'pobj'), ('Keras', 'pobj'), ('TensorFlow', 'compound'), ('Plotting', 'conj'), ('data', 'dobj'), ('matplotlib', 'dobj'), ('Creating', 'xcomp'), ('graphs', 'dobj'), ('NetworkX', 'compound'), ('Parsing', 'compound'), ('HTML', 'compound'), ('documents', 'pobj'), ('Beautiful', 'compound'), ('Soup', 'nmod'), ('    ', 'compound'), ('Core', 'compound'), ('competencies', 'dobj'), ('data', 'compound'), ('scientist', 'pobj'), ('Data', 'compound'), ('Scientist', 'nsubj'), ('requires', 'ROOT'), ('knowledge', 'dobj'), ('vast', 'amod'), ('range', 'pobj'), ('skills', 'pobj'), ('perform', 'advcl'), ('required', 'amod'), ('tasks', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Performing, fundamental], [fundamental, scientific], [scientific, computing], [computing, NumPy], [NumPy, Performing], [Performing, data], [data, analysis], [analysis, pandas], [pandas, Accessing], [Accessing, scientific], [scientific, tools], [tools, SciPy], [SciPy, Implementing], [Implementing, machine], [machine, learning], [learning, Scikit], [Scikit, -], [-, learn], [learn, Going], [Going, deep], [deep, learning], [learning, Keras], [Keras, TensorFlow], [TensorFlow, Plotting], [Plotting, data], [data, matplotlib], [matplotlib, Creating], [Creating, graphs], [graphs, NetworkX], [NetworkX, Parsing], [Parsing, HTML], [HTML, documents], [documents, Beautiful], [Beautiful, Soup], [Soup,     ], [    , Core], [Core, competencies], [competencies, data], [data, scientist], [scientist, Data], [Data, Scientist], [Scientist, requires], [requires, knowledge], [knowledge, vast], [vast, range], [range, skills], [skills, perform], [perform, required], [required, tasks], [tasks, .]]
+
+>> Trigrams: 
+[[Performing, fundamental, scientific], [fundamental, scientific, computing], [scientific, computing, NumPy], [computing, NumPy, Performing], [NumPy, Performing, data], [Performing, data, analysis], [data, analysis, pandas], [analysis, pandas, Accessing], [pandas, Accessing, scientific], [Accessing, scientific, tools], [scientific, tools, SciPy], [tools, SciPy, Implementing], [SciPy, Implementing, machine], [Implementing, machine, learning], [machine, learning, Scikit], [learning, Scikit, -], [Scikit, -, learn], [-, learn, Going], [learn, Going, deep], [Going, deep, learning], [deep, learning, Keras], [learning, Keras, TensorFlow], [Keras, TensorFlow, Plotting], [TensorFlow, Plotting, data], [Plotting, data, matplotlib], [data, matplotlib, Creating], [matplotlib, Creating, graphs], [Creating, graphs, NetworkX], [graphs, NetworkX, Parsing], [NetworkX, Parsing, HTML], [Parsing, HTML, documents], [HTML, documents, Beautiful], [documents, Beautiful, Soup], [Beautiful, Soup,     ], [Soup,     , Core], [    , Core, competencies], [Core, competencies, data], [competencies, data, scientist], [data, scientist, Data], [scientist, Data, Scientist], [Data, Scientist, requires], [Scientist, requires, knowledge], [requires, knowledge, vast], [knowledge, vast, range], [vast, range, skills], [range, skills, perform], [skills, perform, required], [perform, required, tasks], [required, tasks, .]]
+
+>> Noun Phrases are: 
+[fundamental scientific computing, NumPy Performing data analysis, pandas Accessing scientific tools, SciPy Implementing machine learning, deep learning, Keras, TensorFlow Plotting, the data, graphs, NetworkX Parsing HTML documents, Beautiful Soup     Core competencies, a data scientist, The Data Scientist, knowledge, vast range, skills, required tasks]
+
+>> Named Entities are: 
+[('NumPy Performing', 'ORG'), ('Scikit-learn', 'ORG'), ('Keras', 'ORG'), ('TensorFlow Plotting', 'PRODUCT'), ('Beautiful Soup', 'PERSON'), ('The Data Scientist', 'ORG')]
+
+
+============================ Sentence 10 =============================
+
+Most of the times data scientists work in a team to provide the best results,  for example someone who is good at gathering data might team up with an analyst and some gifted in presenting information. 
+
+
+>> Tokens are: 
+[times, data, scientists, work, team, provide, best, results, ,,  , example, good, gathering, data, team, analyst, gifted, presenting, information, .] 
+
+>> PoS Tags are: 
+[('times', 'NOUN'), ('data', 'NOUN'), ('scientists', 'NOUN'), ('work', 'VERB'), ('team', 'NOUN'), ('provide', 'VERB'), ('best', 'ADJ'), ('results', 'NOUN'), (',', 'PUNCT'), (' ', 'SPACE'), ('example', 'NOUN'), ('good', 'ADJ'), ('gathering', 'VERB'), ('data', 'NOUN'), ('team', 'VERB'), ('analyst', 'NOUN'), ('gifted', 'ADJ'), ('presenting', 'VERB'), ('information', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('times', 'pobj'), ('data', 'compound'), ('scientists', 'nsubj'), ('work', 'ccomp'), ('team', 'pobj'), ('provide', 'advcl'), ('best', 'amod'), ('results', 'dobj'), (',', 'punct'), (' ', 'nsubj'), ('example', 'pobj'), ('good', 'acomp'), ('gathering', 'pcomp'), ('data', 'dobj'), ('team', 'ROOT'), ('analyst', 'pobj'), ('gifted', 'conj'), ('presenting', 'pcomp'), ('information', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[times, data], [data, scientists], [scientists, work], [work, team], [team, provide], [provide, best], [best, results], [results, ,], [,,  ], [ , example], [example, good], [good, gathering], [gathering, data], [data, team], [team, analyst], [analyst, gifted], [gifted, presenting], [presenting, information], [information, .]]
+
+>> Trigrams: 
+[[times, data, scientists], [data, scientists, work], [scientists, work, team], [work, team, provide], [team, provide, best], [provide, best, results], [best, results, ,], [results, ,,  ], [,,  , example], [ , example, good], [example, good, gathering], [good, gathering, data], [gathering, data, team], [data, team, analyst], [team, analyst, gifted], [analyst, gifted, presenting], [gifted, presenting, information], [presenting, information, .]]
+
+>> Noun Phrases are: 
+[the times, data scientists, a team, the best results, example, someone, who, data, an analyst, information]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 11 =============================
+
+It would be hard to find a single person with all the required skills. 
+
+
+>> Tokens are: 
+[hard, find, single, person, required, skills, .] 
+
+>> PoS Tags are: 
+[('hard', 'ADJ'), ('find', 'VERB'), ('single', 'ADJ'), ('person', 'NOUN'), ('required', 'VERB'), ('skills', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('hard', 'acomp'), ('find', 'xcomp'), ('single', 'amod'), ('person', 'dobj'), ('required', 'amod'), ('skills', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[hard, find], [find, single], [single, person], [person, required], [required, skills], [skills, .]]
+
+>> Trigrams: 
+[[hard, find, single], [find, single, person], [single, person, required], [person, required, skills], [required, skills, .]]
+
+>> Noun Phrases are: 
+[It, a single person, all the required skills]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+Below are the areas in which a data scientist could find opportunity Data Capture : Managing data source (i.e.-- database, exel, pdf, text etc…) 
+
+
+>> Tokens are: 
+[areas, data, scientist, find, opportunity, Data, Capture, :, Managing, data, source, (, i.e.--, database, ,, exel, ,, pdf, ,, text, etc, …, )] 
+
+>> PoS Tags are: 
+[('areas', 'NOUN'), ('data', 'NOUN'), ('scientist', 'NOUN'), ('find', 'VERB'), ('opportunity', 'NOUN'), ('Data', 'PROPN'), ('Capture', 'PROPN'), (':', 'PUNCT'), ('Managing', 'VERB'), ('data', 'NOUN'), ('source', 'NOUN'), ('(', 'PUNCT'), ('i.e.--', 'NOUN'), ('database', 'NOUN'), (',', 'PUNCT'), ('exel', 'NOUN'), (',', 'PUNCT'), ('pdf', 'NOUN'), (',', 'PUNCT'), ('text', 'NOUN'), ('etc', 'X'), ('…', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('areas', 'nsubj'), ('data', 'compound'), ('scientist', 'nsubj'), ('find', 'relcl'), ('opportunity', 'compound'), ('Data', 'compound'), ('Capture', 'dobj'), (':', 'punct'), ('Managing', 'amod'), ('data', 'compound'), ('source', 'appos'), ('(', 'punct'), ('i.e.--', 'amod'), ('database', 'appos'), (',', 'punct'), ('exel', 'conj'), (',', 'punct'), ('pdf', 'conj'), (',', 'punct'), ('text', 'compound'), ('etc', 'conj'), ('…', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[areas, data], [data, scientist], [scientist, find], [find, opportunity], [opportunity, Data], [Data, Capture], [Capture, :], [:, Managing], [Managing, data], [data, source], [source, (], [(, i.e.--], [i.e.--, database], [database, ,], [,, exel], [exel, ,], [,, pdf], [pdf, ,], [,, text], [text, etc], [etc, …], […, )]]
+
+>> Trigrams: 
+[[areas, data, scientist], [data, scientist, find], [scientist, find, opportunity], [find, opportunity, Data], [opportunity, Data, Capture], [Data, Capture, :], [Capture, :, Managing], [:, Managing, data], [Managing, data, source], [data, source, (], [source, (, i.e.--], [(, i.e.--, database], [i.e.--, database, ,], [database, ,, exel], [,, exel, ,], [exel, ,, pdf], [,, pdf, ,], [pdf, ,, text], [,, text, etc], [text, etc, …], [etc, …, )]]
+
+>> Noun Phrases are: 
+[the areas, a data scientist, opportunity Data Capture, Managing data source, i.e.-- database, exel, pdf]
+
+>> Named Entities are: 
+[('Data Capture', 'ORG')]
+
+
+============================ Sentence 13 =============================
+
+Converting the unstructured data to structured data. 
+
+
+>> Tokens are: 
+[Converting, unstructured, data, structured, data, .] 
+
+>> PoS Tags are: 
+[('Converting', 'VERB'), ('unstructured', 'ADJ'), ('data', 'NOUN'), ('structured', 'VERB'), ('data', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Converting', 'ROOT'), ('unstructured', 'amod'), ('data', 'dobj'), ('structured', 'amod'), ('data', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Converting, unstructured], [unstructured, data], [data, structured], [structured, data], [data, .]]
+
+>> Trigrams: 
+[[Converting, unstructured, data], [unstructured, data, structured], [data, structured, data], [structured, data, .]]
+
+>> Noun Phrases are: 
+[the unstructured data, structured data]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+Analysis : Knowledge of basic statistical tools. 
+
+
+>> Tokens are: 
+[Analysis, :, Knowledge, basic, statistical, tools, .] 
+
+>> PoS Tags are: 
+[('Analysis', 'NOUN'), (':', 'PUNCT'), ('Knowledge', 'NOUN'), ('basic', 'ADJ'), ('statistical', 'ADJ'), ('tools', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Analysis', 'ROOT'), (':', 'punct'), ('Knowledge', 'appos'), ('basic', 'amod'), ('statistical', 'amod'), ('tools', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Analysis, :], [:, Knowledge], [Knowledge, basic], [basic, statistical], [statistical, tools], [tools, .]]
+
+>> Trigrams: 
+[[Analysis, :, Knowledge], [:, Knowledge, basic], [Knowledge, basic, statistical], [basic, statistical, tools], [statistical, tools, .]]
+
+>> Noun Phrases are: 
+[Analysis, Knowledge, basic statistical tools]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 15 =============================
+
+Use of specialized math tricks and algorithms. 
+
+
+>> Tokens are: 
+[Use, specialized, math, tricks, algorithms, .] 
+
+>> PoS Tags are: 
+[('Use', 'NOUN'), ('specialized', 'ADJ'), ('math', 'NOUN'), ('tricks', 'NOUN'), ('algorithms', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Use', 'ROOT'), ('specialized', 'amod'), ('math', 'compound'), ('tricks', 'pobj'), ('algorithms', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Use, specialized], [specialized, math], [math, tricks], [tricks, algorithms], [algorithms, .]]
+
+>> Trigrams: 
+[[Use, specialized, math], [specialized, math, tricks], [math, tricks, algorithms], [tricks, algorithms, .]]
+
+>> Noun Phrases are: 
+[Use, specialized math tricks, algorithms]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+Presentations : 
+
+
+>> Tokens are: 
+[Presentations, :] 
+
+>> PoS Tags are: 
+[('Presentations', 'NOUN'), (':', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Presentations', 'ROOT'), (':', 'punct')]
+
+>> Bigrams: 
+[[Presentations, :]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Presentations]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+Provide graphical presentations of the pattern. 
+
+
+>> Tokens are: 
+[Provide, graphical, presentations, pattern, .] 
+
+>> PoS Tags are: 
+[('Provide', 'VERB'), ('graphical', 'ADJ'), ('presentations', 'NOUN'), ('pattern', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Provide', 'ROOT'), ('graphical', 'amod'), ('presentations', 'dobj'), ('pattern', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Provide, graphical], [graphical, presentations], [presentations, pattern], [pattern, .]]
+
+>> Trigrams: 
+[[Provide, graphical, presentations], [graphical, presentations, pattern], [presentations, pattern, .]]
+
+>> Noun Phrases are: 
+[graphical presentations, the pattern]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 18 =============================
+
+Represent the results of the data analysis to the end users. 
+
+
+>> Tokens are: 
+[Represent, results, data, analysis, end, users, .] 
+
+>> PoS Tags are: 
+[('Represent', 'VERB'), ('results', 'NOUN'), ('data', 'NOUN'), ('analysis', 'NOUN'), ('end', 'NOUN'), ('users', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Represent', 'ROOT'), ('results', 'dobj'), ('data', 'compound'), ('analysis', 'pobj'), ('end', 'compound'), ('users', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Represent, results], [results, data], [data, analysis], [analysis, end], [end, users], [users, .]]
+
+>> Trigrams: 
+[[Represent, results, data], [results, data, analysis], [data, analysis, end], [analysis, end, users], [end, users, .]]
+
+>> Noun Phrases are: 
+[the results, the data analysis, the end users]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+   Prof. Arjun V. Bala #3150713 (PDS)      Unit 02 – Data Science and Python ‹#›   
+
+
+>> Tokens are: 
+[   , Prof., Arjun, V., Bala, #, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN'), ('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'VERB'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('   ', 'nummod'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'nsubj'), ('#', 'nmod'), ('3150713', 'appos'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'appos'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[   , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala], [Bala, #], [#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[   , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala], [V., Bala, #], [Bala, #, 3150713], [#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[   Prof. Arjun V. Bala, (PDS, Unit, Data Science, Python]
+
+>> Named Entities are: 
+[('Arjun V. Bala', 'PERSON'), ('PDS', 'ORG'), ('02', 'CARDINAL')]
+
+
+============================ Sentence 20 =============================
+
+Creating the Data Science Pipeline Data science pipeline requires the data scientist to follow particular steps in the preparation, analysis and presentation of the data. 
+
+
+>> Tokens are: 
+[Creating, Data, Science, Pipeline, Data, science, pipeline, requires, data, scientist, follow, particular, steps, preparation, ,, analysis, presentation, data, .] 
+
+>> PoS Tags are: 
+[('Creating', 'VERB'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Pipeline', 'PROPN'), ('Data', 'PROPN'), ('science', 'NOUN'), ('pipeline', 'NOUN'), ('requires', 'VERB'), ('data', 'NOUN'), ('scientist', 'NOUN'), ('follow', 'VERB'), ('particular', 'ADJ'), ('steps', 'NOUN'), ('preparation', 'NOUN'), (',', 'PUNCT'), ('analysis', 'NOUN'), ('presentation', 'NOUN'), ('data', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Creating', 'csubj'), ('Data', 'compound'), ('Science', 'compound'), ('Pipeline', 'compound'), ('Data', 'compound'), ('science', 'compound'), ('pipeline', 'dobj'), ('requires', 'ROOT'), ('data', 'compound'), ('scientist', 'dobj'), ('follow', 'xcomp'), ('particular', 'amod'), ('steps', 'dobj'), ('preparation', 'pobj'), (',', 'punct'), ('analysis', 'conj'), ('presentation', 'conj'), ('data', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Creating, Data], [Data, Science], [Science, Pipeline], [Pipeline, Data], [Data, science], [science, pipeline], [pipeline, requires], [requires, data], [data, scientist], [scientist, follow], [follow, particular], [particular, steps], [steps, preparation], [preparation, ,], [,, analysis], [analysis, presentation], [presentation, data], [data, .]]
+
+>> Trigrams: 
+[[Creating, Data, Science], [Data, Science, Pipeline], [Science, Pipeline, Data], [Pipeline, Data, science], [Data, science, pipeline], [science, pipeline, requires], [pipeline, requires, data], [requires, data, scientist], [data, scientist, follow], [scientist, follow, particular], [follow, particular, steps], [particular, steps, preparation], [steps, preparation, ,], [preparation, ,, analysis], [,, analysis, presentation], [analysis, presentation, data], [presentation, data, .]]
+
+>> Noun Phrases are: 
+[the Data Science Pipeline Data science pipeline, the data scientist, particular steps, the preparation, analysis, presentation, the data]
+
+>> Named Entities are: 
+[('the Data Science Pipeline Data', 'ORG')]
+
+
+============================ Sentence 21 =============================
+
+General steps in the pipeline are Preparing the data The data we access from various sources may not come directly in the structured format. 
+
+
+>> Tokens are: 
+[General, steps, pipeline, Preparing, data, data, access, sources, come, directly, structured, format, .] 
+
+>> PoS Tags are: 
+[('General', 'ADJ'), ('steps', 'NOUN'), ('pipeline', 'NOUN'), ('Preparing', 'VERB'), ('data', 'NOUN'), ('data', 'NOUN'), ('access', 'VERB'), ('sources', 'NOUN'), ('come', 'VERB'), ('directly', 'ADV'), ('structured', 'ADJ'), ('format', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('General', 'amod'), ('steps', 'nsubj'), ('pipeline', 'pobj'), ('Preparing', 'ROOT'), ('data', 'dobj'), ('data', 'nsubj'), ('access', 'relcl'), ('sources', 'pobj'), ('come', 'ccomp'), ('directly', 'advmod'), ('structured', 'amod'), ('format', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[General, steps], [steps, pipeline], [pipeline, Preparing], [Preparing, data], [data, data], [data, access], [access, sources], [sources, come], [come, directly], [directly, structured], [structured, format], [format, .]]
+
+>> Trigrams: 
+[[General, steps, pipeline], [steps, pipeline, Preparing], [pipeline, Preparing, data], [Preparing, data, data], [data, data, access], [data, access, sources], [access, sources, come], [sources, come, directly], [come, directly, structured], [directly, structured, format], [structured, format, .]]
+
+>> Noun Phrases are: 
+[General steps, the pipeline, the data, The data, we, various sources, the structured format]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 22 =============================
+
+We need to transform the data in the structured format. 
+
+
+>> Tokens are: 
+[need, transform, data, structured, format, .] 
+
+>> PoS Tags are: 
+[('need', 'VERB'), ('transform', 'VERB'), ('data', 'NOUN'), ('structured', 'ADJ'), ('format', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('need', 'ROOT'), ('transform', 'xcomp'), ('data', 'dobj'), ('structured', 'amod'), ('format', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[need, transform], [transform, data], [data, structured], [structured, format], [format, .]]
+
+>> Trigrams: 
+[[need, transform, data], [transform, data, structured], [data, structured, format], [structured, format, .]]
+
+>> Noun Phrases are: 
+[We, the data, the structured format]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+Transformation may require changing data types, order in which data appears and even the creation of missing data Performing data analysis Results of the data analysis should be provable and consistent. 
+
+
+>> Tokens are: 
+[Transformation, require, changing, data, types, ,, order, data, appears, creation, missing, data, Performing, data, analysis, Results, data, analysis, provable, consistent, .] 
+
+>> PoS Tags are: 
+[('Transformation', 'NOUN'), ('require', 'VERB'), ('changing', 'VERB'), ('data', 'NOUN'), ('types', 'NOUN'), (',', 'PUNCT'), ('order', 'NOUN'), ('data', 'NOUN'), ('appears', 'VERB'), ('creation', 'NOUN'), ('missing', 'VERB'), ('data', 'NOUN'), ('Performing', 'VERB'), ('data', 'NOUN'), ('analysis', 'NOUN'), ('Results', 'NOUN'), ('data', 'NOUN'), ('analysis', 'NOUN'), ('provable', 'ADJ'), ('consistent', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Transformation', 'nsubj'), ('require', 'ROOT'), ('changing', 'amod'), ('data', 'compound'), ('types', 'dobj'), (',', 'punct'), ('order', 'conj'), ('data', 'nsubj'), ('appears', 'relcl'), ('creation', 'conj'), ('missing', 'pcomp'), ('data', 'compound'), ('Performing', 'compound'), ('data', 'compound'), ('analysis', 'compound'), ('Results', 'dobj'), ('data', 'compound'), ('analysis', 'pobj'), ('provable', 'acomp'), ('consistent', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Transformation, require], [require, changing], [changing, data], [data, types], [types, ,], [,, order], [order, data], [data, appears], [appears, creation], [creation, missing], [missing, data], [data, Performing], [Performing, data], [data, analysis], [analysis, Results], [Results, data], [data, analysis], [analysis, provable], [provable, consistent], [consistent, .]]
+
+>> Trigrams: 
+[[Transformation, require, changing], [require, changing, data], [changing, data, types], [data, types, ,], [types, ,, order], [,, order, data], [order, data, appears], [data, appears, creation], [appears, creation, missing], [creation, missing, data], [missing, data, Performing], [data, Performing, data], [Performing, data, analysis], [data, analysis, Results], [analysis, Results, data], [Results, data, analysis], [data, analysis, provable], [analysis, provable, consistent], [provable, consistent, .]]
+
+>> Noun Phrases are: 
+[Transformation, changing data types, order, data, even the creation, data Performing data analysis Results, the data analysis]
+
+>> Named Entities are: 
+[('Transformation', 'ORG')]
+
+
+============================ Sentence 24 =============================
+
+Some time single approach may not provide the desired output, we need to use multiple algorithms to get the result. 
+
+
+>> Tokens are: 
+[time, single, approach, provide, desired, output, ,, need, use, multiple, algorithms, result, .] 
+
+>> PoS Tags are: 
+[('time', 'NOUN'), ('single', 'ADJ'), ('approach', 'NOUN'), ('provide', 'VERB'), ('desired', 'VERB'), ('output', 'NOUN'), (',', 'PUNCT'), ('need', 'VERB'), ('use', 'VERB'), ('multiple', 'ADJ'), ('algorithms', 'NOUN'), ('result', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('time', 'npadvmod'), ('single', 'amod'), ('approach', 'nsubj'), ('provide', 'ccomp'), ('desired', 'amod'), ('output', 'dobj'), (',', 'punct'), ('need', 'ROOT'), ('use', 'xcomp'), ('multiple', 'amod'), ('algorithms', 'dobj'), ('result', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[time, single], [single, approach], [approach, provide], [provide, desired], [desired, output], [output, ,], [,, need], [need, use], [use, multiple], [multiple, algorithms], [algorithms, result], [result, .]]
+
+>> Trigrams: 
+[[time, single, approach], [single, approach, provide], [approach, provide, desired], [provide, desired, output], [desired, output, ,], [output, ,, need], [,, need, use], [need, use, multiple], [use, multiple, algorithms], [multiple, algorithms, result], [algorithms, result, .]]
+
+>> Noun Phrases are: 
+[single approach, the desired output, we, multiple algorithms, the result]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+The use of trial and error is part of the data science art. 
+
+
+>> Tokens are: 
+[use, trial, error, data, science, art, .] 
+
+>> PoS Tags are: 
+[('use', 'NOUN'), ('trial', 'NOUN'), ('error', 'NOUN'), ('data', 'NOUN'), ('science', 'NOUN'), ('art', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('use', 'nsubj'), ('trial', 'pobj'), ('error', 'conj'), ('data', 'compound'), ('science', 'compound'), ('art', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[use, trial], [trial, error], [error, data], [data, science], [science, art], [art, .]]
+
+>> Trigrams: 
+[[use, trial, error], [trial, error, data], [error, data, science], [data, science, art], [science, art, .]]
+
+>> Noun Phrases are: 
+[The use, trial, error, part, the data science art]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+Learning from data As we iterate through various statistical analysis methods and apply algorithms to detect patterns, we begin learning from the data. 
+
+
+>> Tokens are: 
+[Learning, data, iterate, statistical, analysis, methods, apply, algorithms, detect, patterns, ,, begin, learning, data, .] 
+
+>> PoS Tags are: 
+[('Learning', 'VERB'), ('data', 'NOUN'), ('iterate', 'VERB'), ('statistical', 'ADJ'), ('analysis', 'NOUN'), ('methods', 'NOUN'), ('apply', 'VERB'), ('algorithms', 'NOUN'), ('detect', 'VERB'), ('patterns', 'NOUN'), (',', 'PUNCT'), ('begin', 'VERB'), ('learning', 'VERB'), ('data', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Learning', 'csubj'), ('data', 'pobj'), ('iterate', 'advcl'), ('statistical', 'amod'), ('analysis', 'compound'), ('methods', 'pobj'), ('apply', 'conj'), ('algorithms', 'dobj'), ('detect', 'advcl'), ('patterns', 'dobj'), (',', 'punct'), ('begin', 'ROOT'), ('learning', 'xcomp'), ('data', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Learning, data], [data, iterate], [iterate, statistical], [statistical, analysis], [analysis, methods], [methods, apply], [apply, algorithms], [algorithms, detect], [detect, patterns], [patterns, ,], [,, begin], [begin, learning], [learning, data], [data, .]]
+
+>> Trigrams: 
+[[Learning, data, iterate], [data, iterate, statistical], [iterate, statistical, analysis], [statistical, analysis, methods], [analysis, methods, apply], [methods, apply, algorithms], [apply, algorithms, detect], [algorithms, detect, patterns], [detect, patterns, ,], [patterns, ,, begin], [,, begin, learning], [begin, learning, data], [learning, data, .]]
+
+>> Noun Phrases are: 
+[data, we, various statistical analysis methods, algorithms, patterns, we, the data]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 27 =============================
+
+The data might not tell the story that you originally thought it would. 
+
+
+>> Tokens are: 
+[data, tell, story, originally, thought, .] 
+
+>> PoS Tags are: 
+[('data', 'NOUN'), ('tell', 'VERB'), ('story', 'NOUN'), ('originally', 'ADV'), ('thought', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('data', 'nsubj'), ('tell', 'ROOT'), ('story', 'dobj'), ('originally', 'advmod'), ('thought', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[data, tell], [tell, story], [story, originally], [originally, thought], [thought, .]]
+
+>> Trigrams: 
+[[data, tell, story], [tell, story, originally], [story, originally, thought], [originally, thought, .]]
+
+>> Noun Phrases are: 
+[The data, the story, you, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 28 =============================
+
+Visualizing Obtaining insights    Prof. Arjun V. Bala 
+
+
+>> Tokens are: 
+[Visualizing, Obtaining, insights,    , Prof., Arjun, V., Bala] 
+
+>> PoS Tags are: 
+[('Visualizing', 'VERB'), ('Obtaining', 'NOUN'), ('insights', 'NOUN'), ('   ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Visualizing', 'compound'), ('Obtaining', 'compound'), ('insights', 'ROOT'), ('   ', 'nummod'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'appos')]
+
+>> Bigrams: 
+[[Visualizing, Obtaining], [Obtaining, insights], [insights,    ], [   , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala]]
+
+>> Trigrams: 
+[[Visualizing, Obtaining, insights], [Obtaining, insights,    ], [insights,    , Prof.], [   , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala]]
+
+>> Noun Phrases are: 
+[Visualizing Obtaining insights, Prof. Arjun V. Bala]
+
+>> Named Entities are: 
+[('Visualizing Obtaining', 'ORG'), ('Arjun V. Bala', 'PERSON')]
+
+
+============================ Sentence 29 =============================
+
+#3150713 (PDS)      Unit 02 – Data Science and Python ‹#›   
+
+
+>> Tokens are: 
+[#, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('3150713', 'nummod'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'appos'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(PDS, Unit, – Data Science, Python]
+
+>> Named Entities are: 
+[('PDS', 'ORG'), ('02', 'CARDINAL')]
+
+
+============================ Sentence 30 =============================
+
+Why Python? 
+
+
+>> Tokens are: 
+[Python, ?] 
+
+>> PoS Tags are: 
+[('Python', 'PROPN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Python', 'ROOT'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Python, ?]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Why Python]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 31 =============================
+
+Python is the vision of a single person, Guido van Rossum, Guido started the language in December 1989 as a replacement for the ABC language. 
+
+
+>> Tokens are: 
+[Python, vision, single, person, ,, Guido, van, Rossum, ,, Guido, started, language, December, 1989, replacement, ABC, language, .] 
+
+>> PoS Tags are: 
+[('Python', 'PROPN'), ('vision', 'NOUN'), ('single', 'ADJ'), ('person', 'NOUN'), (',', 'PUNCT'), ('Guido', 'PROPN'), ('van', 'PROPN'), ('Rossum', 'PROPN'), (',', 'PUNCT'), ('Guido', 'PROPN'), ('started', 'VERB'), ('language', 'NOUN'), ('December', 'PROPN'), ('1989', 'NUM'), ('replacement', 'NOUN'), ('ABC', 'PROPN'), ('language', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Python', 'nsubj'), ('vision', 'attr'), ('single', 'amod'), ('person', 'pobj'), (',', 'punct'), ('Guido', 'compound'), ('van', 'compound'), ('Rossum', 'appos'), (',', 'punct'), ('Guido', 'nsubj'), ('started', 'ROOT'), ('language', 'dobj'), ('December', 'pobj'), ('1989', 'nummod'), ('replacement', 'pobj'), ('ABC', 'compound'), ('language', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Python, vision], [vision, single], [single, person], [person, ,], [,, Guido], [Guido, van], [van, Rossum], [Rossum, ,], [,, Guido], [Guido, started], [started, language], [language, December], [December, 1989], [1989, replacement], [replacement, ABC], [ABC, language], [language, .]]
+
+>> Trigrams: 
+[[Python, vision, single], [vision, single, person], [single, person, ,], [person, ,, Guido], [,, Guido, van], [Guido, van, Rossum], [van, Rossum, ,], [Rossum, ,, Guido], [,, Guido, started], [Guido, started, language], [started, language, December], [language, December, 1989], [December, 1989, replacement], [1989, replacement, ABC], [replacement, ABC, language], [ABC, language, .]]
+
+>> Noun Phrases are: 
+[Python, the vision, a single person, Guido van Rossum, Guido, the language, December, a replacement, the ABC language]
+
+>> Named Entities are: 
+[('Guido van Rossum', 'PERSON'), ('Guido', 'PERSON'), ('December 1989', 'DATE'), ('ABC', 'ORG')]
+
+
+============================ Sentence 32 =============================
+
+However, it far exceeds the ability to create applications of all types, and in contrast to ABC, boasts four programming styles (programming paradigms) 
+
+
+>> Tokens are: 
+[,, far, exceeds, ability, create, applications, types, ,, contrast, ABC, ,, boasts, programming, styles, (, programming, paradigms, )] 
+
+>> PoS Tags are: 
+[(',', 'PUNCT'), ('far', 'ADV'), ('exceeds', 'VERB'), ('ability', 'NOUN'), ('create', 'VERB'), ('applications', 'NOUN'), ('types', 'NOUN'), (',', 'PUNCT'), ('contrast', 'NOUN'), ('ABC', 'PROPN'), (',', 'PUNCT'), ('boasts', 'VERB'), ('programming', 'NOUN'), ('styles', 'NOUN'), ('(', 'PUNCT'), ('programming', 'NOUN'), ('paradigms', 'NOUN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(',', 'punct'), ('far', 'advmod'), ('exceeds', 'ROOT'), ('ability', 'dobj'), ('create', 'acl'), ('applications', 'dobj'), ('types', 'pobj'), (',', 'punct'), ('contrast', 'pobj'), ('ABC', 'pobj'), (',', 'punct'), ('boasts', 'conj'), ('programming', 'compound'), ('styles', 'dobj'), ('(', 'punct'), ('programming', 'compound'), ('paradigms', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[,, far], [far, exceeds], [exceeds, ability], [ability, create], [create, applications], [applications, types], [types, ,], [,, contrast], [contrast, ABC], [ABC, ,], [,, boasts], [boasts, programming], [programming, styles], [styles, (], [(, programming], [programming, paradigms], [paradigms, )]]
+
+>> Trigrams: 
+[[,, far, exceeds], [far, exceeds, ability], [exceeds, ability, create], [ability, create, applications], [create, applications, types], [applications, types, ,], [types, ,, contrast], [,, contrast, ABC], [contrast, ABC, ,], [ABC, ,, boasts], [,, boasts, programming], [boasts, programming, styles], [programming, styles, (], [styles, (, programming], [(, programming, paradigms], [programming, paradigms, )]]
+
+>> Noun Phrases are: 
+[it, the ability, applications, all types, contrast, ABC, four programming styles, programming paradigms]
+
+>> Named Entities are: 
+[('ABC', 'ORG'), ('four', 'CARDINAL')]
+
+
+============================ Sentence 33 =============================
+
+Functional :  Treats every statements as a mathematical equation and avoids any form of state or mutable data The main advantage of this approach is having no side effects to consider. 
+
+
+>> Tokens are: 
+[Functional, :,  , Treats, statements, mathematical, equation, avoids, form, state, mutable, data, main, advantage, approach, having, effects, consider, .] 
+
+>> PoS Tags are: 
+[('Functional', 'PROPN'), (':', 'PUNCT'), (' ', 'SPACE'), ('Treats', 'VERB'), ('statements', 'NOUN'), ('mathematical', 'ADJ'), ('equation', 'NOUN'), ('avoids', 'VERB'), ('form', 'NOUN'), ('state', 'NOUN'), ('mutable', 'ADJ'), ('data', 'NOUN'), ('main', 'ADJ'), ('advantage', 'NOUN'), ('approach', 'NOUN'), ('having', 'VERB'), ('effects', 'NOUN'), ('consider', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Functional', 'dep'), (':', 'punct'), (' ', 'appos'), ('Treats', 'ROOT'), ('statements', 'dobj'), ('mathematical', 'amod'), ('equation', 'pobj'), ('avoids', 'conj'), ('form', 'dobj'), ('state', 'nmod'), ('mutable', 'conj'), ('data', 'pobj'), ('main', 'amod'), ('advantage', 'dobj'), ('approach', 'pobj'), ('having', 'conj'), ('effects', 'dobj'), ('consider', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Functional, :], [:,  ], [ , Treats], [Treats, statements], [statements, mathematical], [mathematical, equation], [equation, avoids], [avoids, form], [form, state], [state, mutable], [mutable, data], [data, main], [main, advantage], [advantage, approach], [approach, having], [having, effects], [effects, consider], [consider, .]]
+
+>> Trigrams: 
+[[Functional, :,  ], [:,  , Treats], [ , Treats, statements], [Treats, statements, mathematical], [statements, mathematical, equation], [mathematical, equation, avoids], [equation, avoids, form], [avoids, form, state], [form, state, mutable], [state, mutable, data], [mutable, data, main], [data, main, advantage], [main, advantage, approach], [advantage, approach, having], [approach, having, effects], [having, effects, consider], [effects, consider, .]]
+
+>> Noun Phrases are: 
+[every statements, a mathematical equation, any form, state or mutable data, The main advantage, this approach, no side effects]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 34 =============================
+
+This coding style lends itself better than the others to parallel processing because there is no state to consider. 
+
+
+>> Tokens are: 
+[coding, style, lends, better, parallel, processing, state, consider, .] 
+
+>> PoS Tags are: 
+[('coding', 'VERB'), ('style', 'NOUN'), ('lends', 'VERB'), ('better', 'ADV'), ('parallel', 'VERB'), ('processing', 'NOUN'), ('state', 'NOUN'), ('consider', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('coding', 'amod'), ('style', 'nsubj'), ('lends', 'ROOT'), ('better', 'advmod'), ('parallel', 'advcl'), ('processing', 'dobj'), ('state', 'attr'), ('consider', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[coding, style], [style, lends], [lends, better], [better, parallel], [parallel, processing], [processing, state], [state, consider], [consider, .]]
+
+>> Trigrams: 
+[[coding, style, lends], [style, lends, better], [lends, better, parallel], [better, parallel, processing], [parallel, processing, state], [processing, state, consider], [state, consider, .]]
+
+>> Noun Phrases are: 
+[This coding style, itself, the others, processing, no state]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 35 =============================
+
+Many developers prefer this coding style for recursion and for lambda calculus. 
+
+
+>> Tokens are: 
+[developers, prefer, coding, style, recursion, lambda, calculus, .] 
+
+>> PoS Tags are: 
+[('developers', 'NOUN'), ('prefer', 'VERB'), ('coding', 'VERB'), ('style', 'NOUN'), ('recursion', 'NOUN'), ('lambda', 'ADJ'), ('calculus', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('developers', 'nsubj'), ('prefer', 'ROOT'), ('coding', 'amod'), ('style', 'dobj'), ('recursion', 'pobj'), ('lambda', 'amod'), ('calculus', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[developers, prefer], [prefer, coding], [coding, style], [style, recursion], [recursion, lambda], [lambda, calculus], [calculus, .]]
+
+>> Trigrams: 
+[[developers, prefer, coding], [prefer, coding, style], [coding, style, recursion], [style, recursion, lambda], [recursion, lambda, calculus], [lambda, calculus, .]]
+
+>> Noun Phrases are: 
+[Many developers, this coding style, recursion, lambda calculus]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 36 =============================
+
+Imperative : Performs computations as a direct change to program state. 
+
+
+>> Tokens are: 
+[Imperative, :, Performs, computations, direct, change, program, state, .] 
+
+>> PoS Tags are: 
+[('Imperative', 'ADJ'), (':', 'PUNCT'), ('Performs', 'NOUN'), ('computations', 'NOUN'), ('direct', 'ADJ'), ('change', 'NOUN'), ('program', 'NOUN'), ('state', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Imperative', 'amod'), (':', 'punct'), ('Performs', 'compound'), ('computations', 'ROOT'), ('direct', 'amod'), ('change', 'pobj'), ('program', 'compound'), ('state', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Imperative, :], [:, Performs], [Performs, computations], [computations, direct], [direct, change], [change, program], [program, state], [state, .]]
+
+>> Trigrams: 
+[[Imperative, :, Performs], [:, Performs, computations], [Performs, computations, direct], [computations, direct, change], [direct, change, program], [change, program, state], [program, state, .]]
+
+>> Noun Phrases are: 
+[Imperative : Performs computations, a direct change, program state]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 37 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 38 =============================
+
+This style is especially useful when manipulating data structures and produces elegant but simple code. 
+
+
+>> Tokens are: 
+[style, especially, useful, manipulating, data, structures, produces, elegant, simple, code, .] 
+
+>> PoS Tags are: 
+[('style', 'NOUN'), ('especially', 'ADV'), ('useful', 'ADJ'), ('manipulating', 'VERB'), ('data', 'NOUN'), ('structures', 'NOUN'), ('produces', 'VERB'), ('elegant', 'ADJ'), ('simple', 'ADJ'), ('code', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('style', 'nsubj'), ('especially', 'advmod'), ('useful', 'acomp'), ('manipulating', 'advcl'), ('data', 'compound'), ('structures', 'dobj'), ('produces', 'conj'), ('elegant', 'amod'), ('simple', 'conj'), ('code', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[style, especially], [especially, useful], [useful, manipulating], [manipulating, data], [data, structures], [structures, produces], [produces, elegant], [elegant, simple], [simple, code], [code, .]]
+
+>> Trigrams: 
+[[style, especially, useful], [especially, useful, manipulating], [useful, manipulating, data], [manipulating, data, structures], [data, structures, produces], [structures, produces, elegant], [produces, elegant, simple], [elegant, simple, code], [simple, code, .]]
+
+>> Noun Phrases are: 
+[This style, data structures, elegant but simple code]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 39 =============================
+
+Object-oriented : Relies on data fields that are treated as objects and manipulated only through prescribed methods. 
+
+
+>> Tokens are: 
+[Object, -, oriented, :, Relies, data, fields, treated, objects, manipulated, prescribed, methods, .] 
+
+>> PoS Tags are: 
+[('Object', 'NOUN'), ('-', 'PUNCT'), ('oriented', 'VERB'), (':', 'PUNCT'), ('Relies', 'NOUN'), ('data', 'NOUN'), ('fields', 'NOUN'), ('treated', 'VERB'), ('objects', 'NOUN'), ('manipulated', 'VERB'), ('prescribed', 'ADJ'), ('methods', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Object', 'npadvmod'), ('-', 'punct'), ('oriented', 'amod'), (':', 'punct'), ('Relies', 'ROOT'), ('data', 'compound'), ('fields', 'pobj'), ('treated', 'relcl'), ('objects', 'pobj'), ('manipulated', 'conj'), ('prescribed', 'amod'), ('methods', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Object, -], [-, oriented], [oriented, :], [:, Relies], [Relies, data], [data, fields], [fields, treated], [treated, objects], [objects, manipulated], [manipulated, prescribed], [prescribed, methods], [methods, .]]
+
+>> Trigrams: 
+[[Object, -, oriented], [-, oriented, :], [oriented, :, Relies], [:, Relies, data], [Relies, data, fields], [data, fields, treated], [fields, treated, objects], [treated, objects, manipulated], [objects, manipulated, prescribed], [manipulated, prescribed, methods], [prescribed, methods, .]]
+
+>> Noun Phrases are: 
+[Object-oriented : Relies, data fields, objects, prescribed methods]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 40 =============================
+
+Python doesn’t fully support this coding form because it can’t implement features such as data hiding. 
+
+
+>> Tokens are: 
+[Python, fully, support, coding, form, implement, features, data, hiding, .] 
+
+>> PoS Tags are: 
+[('Python', 'PROPN'), ('fully', 'ADV'), ('support', 'VERB'), ('coding', 'VERB'), ('form', 'NOUN'), ('implement', 'VERB'), ('features', 'NOUN'), ('data', 'NOUN'), ('hiding', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Python', 'nsubj'), ('fully', 'advmod'), ('support', 'ROOT'), ('coding', 'amod'), ('form', 'dobj'), ('implement', 'advcl'), ('features', 'dobj'), ('data', 'compound'), ('hiding', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Python, fully], [fully, support], [support, coding], [coding, form], [form, implement], [implement, features], [features, data], [data, hiding], [hiding, .]]
+
+>> Trigrams: 
+[[Python, fully, support], [fully, support, coding], [support, coding, form], [coding, form, implement], [form, implement, features], [implement, features, data], [features, data, hiding], [data, hiding, .]]
+
+>> Noun Phrases are: 
+[Python, this coding form, it, features, data hiding]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 41 =============================
+
+This is useful coding style for complex applications because it supports encapsulation and polymorphism. 
+
+
+>> Tokens are: 
+[useful, coding, style, complex, applications, supports, encapsulation, polymorphism, .] 
+
+>> PoS Tags are: 
+[('useful', 'ADJ'), ('coding', 'VERB'), ('style', 'NOUN'), ('complex', 'ADJ'), ('applications', 'NOUN'), ('supports', 'VERB'), ('encapsulation', 'NOUN'), ('polymorphism', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('useful', 'amod'), ('coding', 'amod'), ('style', 'attr'), ('complex', 'amod'), ('applications', 'pobj'), ('supports', 'advcl'), ('encapsulation', 'dobj'), ('polymorphism', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[useful, coding], [coding, style], [style, complex], [complex, applications], [applications, supports], [supports, encapsulation], [encapsulation, polymorphism], [polymorphism, .]]
+
+>> Trigrams: 
+[[useful, coding, style], [coding, style, complex], [style, complex, applications], [complex, applications, supports], [applications, supports, encapsulation], [supports, encapsulation, polymorphism], [encapsulation, polymorphism, .]]
+
+>> Noun Phrases are: 
+[useful coding style, complex applications, it, encapsulation, polymorphism]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 42 =============================
+
+Procedural :   
+
+
+>> Tokens are: 
+[Procedural, :,  ] 
+
+>> PoS Tags are: 
+[('Procedural', 'ADJ'), (':', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Procedural', 'amod'), (':', 'punct'), (' ', 'ROOT')]
+
+>> Bigrams: 
+[[Procedural, :], [:,  ]]
+
+>> Trigrams: 
+[[Procedural, :,  ]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 43 =============================
+
+Treats tasks as step-by-step iterations where common tasks are placed in functions that are called as needed. 
+
+
+>> Tokens are: 
+[Treats, tasks, step, -, -, step, iterations, common, tasks, placed, functions, called, needed, .] 
+
+>> PoS Tags are: 
+[('Treats', 'VERB'), ('tasks', 'NOUN'), ('step', 'NOUN'), ('-', 'PUNCT'), ('-', 'PUNCT'), ('step', 'NOUN'), ('iterations', 'NOUN'), ('common', 'ADJ'), ('tasks', 'NOUN'), ('placed', 'VERB'), ('functions', 'NOUN'), ('called', 'VERB'), ('needed', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Treats', 'ROOT'), ('tasks', 'dobj'), ('step', 'nmod'), ('-', 'punct'), ('-', 'punct'), ('step', 'pobj'), ('iterations', 'pobj'), ('common', 'amod'), ('tasks', 'nsubjpass'), ('placed', 'relcl'), ('functions', 'pobj'), ('called', 'relcl'), ('needed', 'advcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Treats, tasks], [tasks, step], [step, -], [-, -], [-, step], [step, iterations], [iterations, common], [common, tasks], [tasks, placed], [placed, functions], [functions, called], [called, needed], [needed, .]]
+
+>> Trigrams: 
+[[Treats, tasks, step], [tasks, step, -], [step, -, -], [-, -, step], [-, step, iterations], [step, iterations, common], [iterations, common, tasks], [common, tasks, placed], [tasks, placed, functions], [placed, functions, called], [functions, called, needed], [called, needed, .]]
+
+>> Noun Phrases are: 
+[tasks, step, common tasks, functions]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 44 =============================
+
+   Prof. Arjun V. Bala #3150713 (PDS)      Unit 02 – Data Science and Python ‹#›   
+
+
+>> Tokens are: 
+[   , Prof., Arjun, V., Bala, #, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN'), ('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'PART'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('   ', 'nummod'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'nsubj'), ('#', 'nmod'), ('3150713', 'appos'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'appos'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[   , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala], [Bala, #], [#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[   , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala], [V., Bala, #], [Bala, #, 3150713], [#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[   Prof. Arjun V. Bala, (PDS, Unit, – Data Science, Python]
+
+>> Named Entities are: 
+[('Arjun V. Bala', 'PERSON'), ('PDS', 'ORG'), ('02', 'CARDINAL')]
+
+
+============================ Sentence 45 =============================
+
+Understanding Python's Role in Data Science Python has a unique attribute and is easy to use when it comes to quantitative and analytical computing Data Science Python is widely used and is a favorite tool along being a flexible and open sourced language. 
+
+
+>> Tokens are: 
+[Understanding, Python, Role, Data, Science, Python, unique, attribute, easy, use, comes, quantitative, analytical, computing, Data, Science, Python, widely, favorite, tool, flexible, open, sourced, language, .] 
+
+>> PoS Tags are: 
+[('Understanding', 'PROPN'), ('Python', 'PROPN'), ('Role', 'PROPN'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('unique', 'ADJ'), ('attribute', 'NOUN'), ('easy', 'ADJ'), ('use', 'VERB'), ('comes', 'VERB'), ('quantitative', 'ADJ'), ('analytical', 'ADJ'), ('computing', 'NOUN'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('widely', 'ADV'), ('favorite', 'ADJ'), ('tool', 'NOUN'), ('flexible', 'ADJ'), ('open', 'ADJ'), ('sourced', 'ADJ'), ('language', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Understanding', 'csubj'), ('Python', 'poss'), ('Role', 'dobj'), ('Data', 'compound'), ('Science', 'compound'), ('Python', 'pobj'), ('unique', 'amod'), ('attribute', 'dobj'), ('easy', 'acomp'), ('use', 'xcomp'), ('comes', 'advcl'), ('quantitative', 'amod'), ('analytical', 'conj'), ('computing', 'compound'), ('Data', 'compound'), ('Science', 'compound'), ('Python', 'nsubjpass'), ('widely', 'advmod'), ('favorite', 'amod'), ('tool', 'attr'), ('flexible', 'amod'), ('open', 'conj'), ('sourced', 'amod'), ('language', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Understanding, Python], [Python, Role], [Role, Data], [Data, Science], [Science, Python], [Python, unique], [unique, attribute], [attribute, easy], [easy, use], [use, comes], [comes, quantitative], [quantitative, analytical], [analytical, computing], [computing, Data], [Data, Science], [Science, Python], [Python, widely], [widely, favorite], [favorite, tool], [tool, flexible], [flexible, open], [open, sourced], [sourced, language], [language, .]]
+
+>> Trigrams: 
+[[Understanding, Python, Role], [Python, Role, Data], [Role, Data, Science], [Data, Science, Python], [Science, Python, unique], [Python, unique, attribute], [unique, attribute, easy], [attribute, easy, use], [easy, use, comes], [use, comes, quantitative], [comes, quantitative, analytical], [quantitative, analytical, computing], [analytical, computing, Data], [computing, Data, Science], [Data, Science, Python], [Science, Python, widely], [Python, widely, favorite], [widely, favorite, tool], [favorite, tool, flexible], [tool, flexible, open], [flexible, open, sourced], [open, sourced, language], [sourced, language, .]]
+
+>> Noun Phrases are: 
+[Python's Role, Data Science Python, a unique attribute, it, quantitative and analytical computing Data Science Python, a favorite tool, a flexible and open sourced language]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 46 =============================
+
+Its massive libraries are used for data manipulation and are very easy to learn even for a beginner data analyst. 
+
+
+>> Tokens are: 
+[massive, libraries, data, manipulation, easy, learn, beginner, data, analyst, .] 
+
+>> PoS Tags are: 
+[('massive', 'ADJ'), ('libraries', 'NOUN'), ('data', 'NOUN'), ('manipulation', 'NOUN'), ('easy', 'ADJ'), ('learn', 'VERB'), ('beginner', 'NOUN'), ('data', 'NOUN'), ('analyst', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('massive', 'amod'), ('libraries', 'nsubjpass'), ('data', 'compound'), ('manipulation', 'pobj'), ('easy', 'acomp'), ('learn', 'xcomp'), ('beginner', 'compound'), ('data', 'compound'), ('analyst', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[massive, libraries], [libraries, data], [data, manipulation], [manipulation, easy], [easy, learn], [learn, beginner], [beginner, data], [data, analyst], [analyst, .]]
+
+>> Trigrams: 
+[[massive, libraries, data], [libraries, data, manipulation], [data, manipulation, easy], [manipulation, easy, learn], [easy, learn, beginner], [learn, beginner, data], [beginner, data, analyst], [data, analyst, .]]
+
+>> Noun Phrases are: 
+[Its massive libraries, data manipulation, a beginner data analyst]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 47 =============================
+
+Apart from being an independent platform it also easily integrates with any existing infrastructure which can be used to solve the most complex problems. 
+
+
+>> Tokens are: 
+[Apart, independent, platform, easily, integrates, existing, infrastructure, solve, complex, problems, .] 
+
+>> PoS Tags are: 
+[('Apart', 'ADV'), ('independent', 'ADJ'), ('platform', 'NOUN'), ('easily', 'ADV'), ('integrates', 'VERB'), ('existing', 'VERB'), ('infrastructure', 'NOUN'), ('solve', 'VERB'), ('complex', 'ADJ'), ('problems', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Apart', 'ROOT'), ('independent', 'amod'), ('platform', 'attr'), ('easily', 'advmod'), ('integrates', 'relcl'), ('existing', 'amod'), ('infrastructure', 'pobj'), ('solve', 'xcomp'), ('complex', 'amod'), ('problems', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Apart, independent], [independent, platform], [platform, easily], [easily, integrates], [integrates, existing], [existing, infrastructure], [infrastructure, solve], [solve, complex], [complex, problems], [problems, .]]
+
+>> Trigrams: 
+[[Apart, independent, platform], [independent, platform, easily], [platform, easily, integrates], [easily, integrates, existing], [integrates, existing, infrastructure], [existing, infrastructure, solve], [infrastructure, solve, complex], [solve, complex, problems], [complex, problems, .]]
+
+>> Noun Phrases are: 
+[an independent platform, it, any existing infrastructure, the most complex problems]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 48 =============================
+
+Python is preferred over other data science tools because of following features, Powerful and Easy to use Open Source Choice of Libraries Flexibility Visualization and Graphics Well supported    Prof. Arjun V. Bala 
+
+
+>> Tokens are: 
+[Python, preferred, data, science, tools, following, features, ,, Powerful, Easy, use, Open, Source, Choice, Libraries, Flexibility, Visualization, Graphics, supported,    , Prof., Arjun, V., Bala] 
+
+>> PoS Tags are: 
+[('Python', 'PROPN'), ('preferred', 'VERB'), ('data', 'NOUN'), ('science', 'NOUN'), ('tools', 'NOUN'), ('following', 'VERB'), ('features', 'NOUN'), (',', 'PUNCT'), ('Powerful', 'ADJ'), ('Easy', 'ADJ'), ('use', 'VERB'), ('Open', 'PROPN'), ('Source', 'NOUN'), ('Choice', 'NOUN'), ('Libraries', 'PROPN'), ('Flexibility', 'PROPN'), ('Visualization', 'PROPN'), ('Graphics', 'PROPN'), ('supported', 'VERB'), ('   ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Python', 'nsubjpass'), ('preferred', 'ROOT'), ('data', 'compound'), ('science', 'compound'), ('tools', 'pobj'), ('following', 'pcomp'), ('features', 'dobj'), (',', 'punct'), ('Powerful', 'conj'), ('Easy', 'conj'), ('use', 'xcomp'), ('Open', 'compound'), ('Source', 'nmod'), ('Choice', 'dobj'), ('Libraries', 'pobj'), ('Flexibility', 'compound'), ('Visualization', 'dobj'), ('Graphics', 'conj'), ('supported', 'advcl'), ('   ', 'nummod'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'dobj')]
+
+>> Bigrams: 
+[[Python, preferred], [preferred, data], [data, science], [science, tools], [tools, following], [following, features], [features, ,], [,, Powerful], [Powerful, Easy], [Easy, use], [use, Open], [Open, Source], [Source, Choice], [Choice, Libraries], [Libraries, Flexibility], [Flexibility, Visualization], [Visualization, Graphics], [Graphics, supported], [supported,    ], [   , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala]]
+
+>> Trigrams: 
+[[Python, preferred, data], [preferred, data, science], [data, science, tools], [science, tools, following], [tools, following, features], [following, features, ,], [features, ,, Powerful], [,, Powerful, Easy], [Powerful, Easy, use], [Easy, use, Open], [use, Open, Source], [Open, Source, Choice], [Source, Choice, Libraries], [Choice, Libraries, Flexibility], [Libraries, Flexibility, Visualization], [Flexibility, Visualization, Graphics], [Visualization, Graphics, supported], [Graphics, supported,    ], [supported,    , Prof.], [   , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala]]
+
+>> Noun Phrases are: 
+[Python, other data science tools, features, Open Source Choice, Libraries, Flexibility Visualization, Graphics,    Prof. Arjun V. Bala]
+
+>> Named Entities are: 
+[('Easy', 'PERSON'), ('Arjun V. Bala', 'PERSON')]
+
+
+============================ Sentence 49 =============================
+
+#3150713 (PDS)      Unit 02 – Data Science and Python ‹#›   
+
+
+>> Tokens are: 
+[#, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'VERB'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('3150713', 'nummod'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'appos'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'attr')]
+
+>> Bigrams: 
+[[#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(PDS, Unit, Data Science, Python]
+
+>> Named Entities are: 
+[('PDS', 'ORG'), ('02', 'CARDINAL')]
+
+
+============================ Sentence 50 =============================
+
+Considering Speed of Execution Analysis takes considerable processing power. 
+
+
+>> Tokens are: 
+[Considering, Speed, Execution, Analysis, takes, considerable, processing, power, .] 
+
+>> PoS Tags are: 
+[('Considering', 'VERB'), ('Speed', 'PROPN'), ('Execution', 'PROPN'), ('Analysis', 'PROPN'), ('takes', 'VERB'), ('considerable', 'ADJ'), ('processing', 'NOUN'), ('power', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Considering', 'csubj'), ('Speed', 'dobj'), ('Execution', 'compound'), ('Analysis', 'pobj'), ('takes', 'ROOT'), ('considerable', 'amod'), ('processing', 'compound'), ('power', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Considering, Speed], [Speed, Execution], [Execution, Analysis], [Analysis, takes], [takes, considerable], [considerable, processing], [processing, power], [power, .]]
+
+>> Trigrams: 
+[[Considering, Speed, Execution], [Speed, Execution, Analysis], [Execution, Analysis, takes], [Analysis, takes, considerable], [takes, considerable, processing], [considerable, processing, power], [processing, power, .]]
+
+>> Noun Phrases are: 
+[Speed, Execution Analysis, considerable processing power]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 51 =============================
+
+The dataset are so large that you can bog down even an incredibly powerful system. 
+
+
+>> Tokens are: 
+[dataset, large, bog, incredibly, powerful, system, .] 
+
+>> PoS Tags are: 
+[('dataset', 'NOUN'), ('large', 'ADJ'), ('bog', 'VERB'), ('incredibly', 'ADV'), ('powerful', 'ADJ'), ('system', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('dataset', 'nsubj'), ('large', 'acomp'), ('bog', 'ccomp'), ('incredibly', 'advmod'), ('powerful', 'amod'), ('system', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[dataset, large], [large, bog], [bog, incredibly], [incredibly, powerful], [powerful, system], [system, .]]
+
+>> Trigrams: 
+[[dataset, large, bog], [large, bog, incredibly], [bog, incredibly, powerful], [incredibly, powerful, system], [powerful, system, .]]
+
+>> Noun Phrases are: 
+[The dataset, you, even an incredibly powerful system]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 52 =============================
+
+Following factors control the speed of execution for data science application Dataset Size Loading Technique Coding Style Machine capabilities Analysis Algorithm   
+
+
+>> Tokens are: 
+[Following, factors, control, speed, execution, data, science, application, Dataset, Size, Loading, Technique, Coding, Style, Machine, capabilities, Analysis, Algorithm,  ] 
+
+>> PoS Tags are: 
+[('Following', 'VERB'), ('factors', 'NOUN'), ('control', 'VERB'), ('speed', 'NOUN'), ('execution', 'NOUN'), ('data', 'NOUN'), ('science', 'NOUN'), ('application', 'NOUN'), ('Dataset', 'PROPN'), ('Size', 'PROPN'), ('Loading', 'PROPN'), ('Technique', 'PROPN'), ('Coding', 'PROPN'), ('Style', 'PROPN'), ('Machine', 'PROPN'), ('capabilities', 'VERB'), ('Analysis', 'PROPN'), ('Algorithm', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Following', 'prep'), ('factors', 'pobj'), ('control', 'ROOT'), ('speed', 'dobj'), ('execution', 'pobj'), ('data', 'compound'), ('science', 'compound'), ('application', 'pobj'), ('Dataset', 'compound'), ('Size', 'compound'), ('Loading', 'compound'), ('Technique', 'compound'), ('Coding', 'compound'), ('Style', 'compound'), ('Machine', 'compound'), ('capabilities', 'ccomp'), ('Analysis', 'compound'), ('Algorithm', 'npadvmod'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Following, factors], [factors, control], [control, speed], [speed, execution], [execution, data], [data, science], [science, application], [application, Dataset], [Dataset, Size], [Size, Loading], [Loading, Technique], [Technique, Coding], [Coding, Style], [Style, Machine], [Machine, capabilities], [capabilities, Analysis], [Analysis, Algorithm], [Algorithm,  ]]
+
+>> Trigrams: 
+[[Following, factors, control], [factors, control, speed], [control, speed, execution], [speed, execution, data], [execution, data, science], [data, science, application], [science, application, Dataset], [application, Dataset, Size], [Dataset, Size, Loading], [Size, Loading, Technique], [Loading, Technique, Coding], [Technique, Coding, Style], [Coding, Style, Machine], [Style, Machine, capabilities], [Machine, capabilities, Analysis], [capabilities, Analysis, Algorithm], [Analysis, Algorithm,  ]]
+
+>> Noun Phrases are: 
+[factors, the speed, execution, data science application]
+
+>> Named Entities are: 
+[('Dataset Size Loading Technique Coding Style Machine', 'PERSON'), ('Analysis Algorithm', 'WORK_OF_ART')]
+
+
+============================ Sentence 53 =============================
+
+We will explore all factors in details in following couple of slides. 
+
+
+>> Tokens are: 
+[explore, factors, details, following, couple, slides, .] 
+
+>> PoS Tags are: 
+[('explore', 'VERB'), ('factors', 'NOUN'), ('details', 'NOUN'), ('following', 'VERB'), ('couple', 'NOUN'), ('slides', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('explore', 'ROOT'), ('factors', 'dobj'), ('details', 'pobj'), ('following', 'pcomp'), ('couple', 'dobj'), ('slides', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[explore, factors], [factors, details], [details, following], [following, couple], [couple, slides], [slides, .]]
+
+>> Trigrams: 
+[[explore, factors, details], [factors, details, following], [details, following, couple], [following, couple, slides], [couple, slides, .]]
+
+>> Noun Phrases are: 
+[We, all factors, details, couple, slides]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 54 =============================
+
+   Prof. Arjun V. Bala 
+
+
+>> Tokens are: 
+[   , Prof., Arjun, V., Bala] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('   ', 'nummod'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'ROOT')]
+
+>> Bigrams: 
+[[   , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala]]
+
+>> Trigrams: 
+[[   , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala]]
+
+>> Noun Phrases are: 
+[   Prof. Arjun V. Bala]
+
+>> Named Entities are: 
+[('Arjun V. Bala', 'PERSON')]
+
+
+============================ Sentence 55 =============================
+
+#3150713 (PDS)      Unit 02 – Data Science and Python ‹#›   
+
+
+>> Tokens are: 
+[#, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'VERB'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('3150713', 'nummod'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'appos'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'attr')]
+
+>> Bigrams: 
+[[#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(PDS, Unit, Data Science, Python]
+
+>> Named Entities are: 
+[('PDS', 'ORG'), ('02', 'CARDINAL')]
+
+
+============================ Sentence 56 =============================
+
+Considering Speed of Execution (Cont.) 
+
+
+>> Tokens are: 
+[Considering, Speed, Execution, (, Cont, ., )] 
+
+>> PoS Tags are: 
+[('Considering', 'VERB'), ('Speed', 'PROPN'), ('Execution', 'NOUN'), ('(', 'PUNCT'), ('Cont', 'PROPN'), ('.', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Considering', 'ROOT'), ('Speed', 'dobj'), ('Execution', 'pobj'), ('(', 'punct'), ('Cont', 'appos'), ('.', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[Considering, Speed], [Speed, Execution], [Execution, (], [(, Cont], [Cont, .], [., )]]
+
+>> Trigrams: 
+[[Considering, Speed, Execution], [Speed, Execution, (], [Execution, (, Cont], [(, Cont, .], [Cont, ., )]]
+
+>> Noun Phrases are: 
+[Speed, Execution, Cont]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 57 =============================
+
+Dataset size :   
+
+
+>> Tokens are: 
+[Dataset, size, :,  ] 
+
+>> PoS Tags are: 
+[('Dataset', 'ADJ'), ('size', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Dataset', 'compound'), ('size', 'ROOT'), (':', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[Dataset, size], [size, :], [:,  ]]
+
+>> Trigrams: 
+[[Dataset, size, :], [size, :,  ]]
+
+>> Noun Phrases are: 
+[Dataset size]
+
+>> Named Entities are: 
+[('Dataset', 'ORG')]
+
+
+============================ Sentence 58 =============================
+
+Data science relies on huge datasets in many cases. 
+
+
+>> Tokens are: 
+[Data, science, relies, huge, datasets, cases, .] 
+
+>> PoS Tags are: 
+[('Data', 'PROPN'), ('science', 'NOUN'), ('relies', 'VERB'), ('huge', 'ADJ'), ('datasets', 'NOUN'), ('cases', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Data', 'compound'), ('science', 'nsubj'), ('relies', 'ROOT'), ('huge', 'amod'), ('datasets', 'pobj'), ('cases', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Data, science], [science, relies], [relies, huge], [huge, datasets], [datasets, cases], [cases, .]]
+
+>> Trigrams: 
+[[Data, science, relies], [science, relies, huge], [relies, huge, datasets], [huge, datasets, cases], [datasets, cases, .]]
+
+>> Noun Phrases are: 
+[Data science, huge datasets, many cases]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 59 =============================
+
+The application type determines the size of dataset in part, but dataset size also relies on the size of the source data. 
+
+
+>> Tokens are: 
+[application, type, determines, size, dataset, ,, dataset, size, relies, size, source, data, .] 
+
+>> PoS Tags are: 
+[('application', 'NOUN'), ('type', 'NOUN'), ('determines', 'VERB'), ('size', 'NOUN'), ('dataset', 'NOUN'), (',', 'PUNCT'), ('dataset', 'ADJ'), ('size', 'NOUN'), ('relies', 'VERB'), ('size', 'NOUN'), ('source', 'NOUN'), ('data', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('application', 'compound'), ('type', 'nsubj'), ('determines', 'ROOT'), ('size', 'dobj'), ('dataset', 'pobj'), (',', 'punct'), ('dataset', 'amod'), ('size', 'nsubj'), ('relies', 'conj'), ('size', 'pobj'), ('source', 'compound'), ('data', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[application, type], [type, determines], [determines, size], [size, dataset], [dataset, ,], [,, dataset], [dataset, size], [size, relies], [relies, size], [size, source], [source, data], [data, .]]
+
+>> Trigrams: 
+[[application, type, determines], [type, determines, size], [determines, size, dataset], [size, dataset, ,], [dataset, ,, dataset], [,, dataset, size], [dataset, size, relies], [size, relies, size], [relies, size, source], [size, source, data], [source, data, .]]
+
+>> Noun Phrases are: 
+[The application type, the size, dataset, part, dataset size, the size, the source data]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 60 =============================
+
+Underestimating the effect of dataset size is deadly in data science applications, especially those that need to operate in real time (such as self-driving cars). 
+
+
+>> Tokens are: 
+[Underestimating, effect, dataset, size, deadly, data, science, applications, ,, especially, need, operate, real, time, (, self, -, driving, cars, ), .] 
+
+>> PoS Tags are: 
+[('Underestimating', 'VERB'), ('effect', 'NOUN'), ('dataset', 'ADJ'), ('size', 'NOUN'), ('deadly', 'ADJ'), ('data', 'NOUN'), ('science', 'NOUN'), ('applications', 'NOUN'), (',', 'PUNCT'), ('especially', 'ADV'), ('need', 'VERB'), ('operate', 'VERB'), ('real', 'ADJ'), ('time', 'NOUN'), ('(', 'PUNCT'), ('self', 'NOUN'), ('-', 'PUNCT'), ('driving', 'VERB'), ('cars', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Underestimating', 'csubj'), ('effect', 'dobj'), ('dataset', 'amod'), ('size', 'pobj'), ('deadly', 'acomp'), ('data', 'compound'), ('science', 'compound'), ('applications', 'pobj'), (',', 'punct'), ('especially', 'advmod'), ('need', 'relcl'), ('operate', 'xcomp'), ('real', 'amod'), ('time', 'pobj'), ('(', 'punct'), ('self', 'npadvmod'), ('-', 'punct'), ('driving', 'amod'), ('cars', 'pobj'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Underestimating, effect], [effect, dataset], [dataset, size], [size, deadly], [deadly, data], [data, science], [science, applications], [applications, ,], [,, especially], [especially, need], [need, operate], [operate, real], [real, time], [time, (], [(, self], [self, -], [-, driving], [driving, cars], [cars, )], [), .]]
+
+>> Trigrams: 
+[[Underestimating, effect, dataset], [effect, dataset, size], [dataset, size, deadly], [size, deadly, data], [deadly, data, science], [data, science, applications], [science, applications, ,], [applications, ,, especially], [,, especially, need], [especially, need, operate], [need, operate, real], [operate, real, time], [real, time, (], [time, (, self], [(, self, -], [self, -, driving], [-, driving, cars], [driving, cars, )], [cars, ), .]]
+
+>> Noun Phrases are: 
+[the effect, dataset size, data science applications, real time, self-driving cars]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 61 =============================
+
+Loading technique : The method we use to load data for analysis is critical, and we should always use the fastest one even if it means upgrading the hardware to do so. 
+
+
+>> Tokens are: 
+[Loading, technique, :, method, use, load, data, analysis, critical, ,, use, fastest, means, upgrading, hardware, .] 
+
+>> PoS Tags are: 
+[('Loading', 'NOUN'), ('technique', 'NOUN'), (':', 'PUNCT'), ('method', 'NOUN'), ('use', 'VERB'), ('load', 'VERB'), ('data', 'NOUN'), ('analysis', 'NOUN'), ('critical', 'ADJ'), (',', 'PUNCT'), ('use', 'VERB'), ('fastest', 'ADJ'), ('means', 'VERB'), ('upgrading', 'VERB'), ('hardware', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Loading', 'compound'), ('technique', 'ROOT'), (':', 'punct'), ('method', 'nsubj'), ('use', 'relcl'), ('load', 'xcomp'), ('data', 'dobj'), ('analysis', 'pobj'), ('critical', 'acomp'), (',', 'punct'), ('use', 'conj'), ('fastest', 'amod'), ('means', 'advcl'), ('upgrading', 'xcomp'), ('hardware', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Loading, technique], [technique, :], [:, method], [method, use], [use, load], [load, data], [data, analysis], [analysis, critical], [critical, ,], [,, use], [use, fastest], [fastest, means], [means, upgrading], [upgrading, hardware], [hardware, .]]
+
+>> Trigrams: 
+[[Loading, technique, :], [technique, :, method], [:, method, use], [method, use, load], [use, load, data], [load, data, analysis], [data, analysis, critical], [analysis, critical, ,], [critical, ,, use], [,, use, fastest], [use, fastest, means], [fastest, means, upgrading], [means, upgrading, hardware], [upgrading, hardware, .]]
+
+>> Noun Phrases are: 
+[Loading technique, The method, we, data, analysis, we, it, the hardware]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 62 =============================
+
+Working with data in memory is always faster than working with data stored on disk. 
+
+
+>> Tokens are: 
+[Working, data, memory, faster, working, data, stored, disk, .] 
+
+>> PoS Tags are: 
+[('Working', 'VERB'), ('data', 'NOUN'), ('memory', 'NOUN'), ('faster', 'ADJ'), ('working', 'VERB'), ('data', 'NOUN'), ('stored', 'VERB'), ('disk', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Working', 'csubj'), ('data', 'pobj'), ('memory', 'pobj'), ('faster', 'acomp'), ('working', 'pcomp'), ('data', 'pobj'), ('stored', 'acl'), ('disk', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Working, data], [data, memory], [memory, faster], [faster, working], [working, data], [data, stored], [stored, disk], [disk, .]]
+
+>> Trigrams: 
+[[Working, data, memory], [data, memory, faster], [memory, faster, working], [faster, working, data], [working, data, stored], [data, stored, disk], [stored, disk, .]]
+
+>> Noun Phrases are: 
+[data, memory, data, disk]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 63 =============================
+
+Accessing local data is always faster than accessing it across a network. 
+
+
+>> Tokens are: 
+[Accessing, local, data, faster, accessing, network, .] 
+
+>> PoS Tags are: 
+[('Accessing', 'VERB'), ('local', 'ADJ'), ('data', 'NOUN'), ('faster', 'ADJ'), ('accessing', 'VERB'), ('network', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Accessing', 'nsubj'), ('local', 'amod'), ('data', 'dobj'), ('faster', 'acomp'), ('accessing', 'pcomp'), ('network', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Accessing, local], [local, data], [data, faster], [faster, accessing], [accessing, network], [network, .]]
+
+>> Trigrams: 
+[[Accessing, local, data], [local, data, faster], [data, faster, accessing], [faster, accessing, network], [accessing, network, .]]
+
+>> Noun Phrases are: 
+[local data, it, a network]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 64 =============================
+
+Performing data science tasks that rely on network is probably the slowest method of all    Prof. Arjun V. Bala #3150713 (PDS)      Unit 02 – Data Science and Python ‹#›   
+
+
+>> Tokens are: 
+[Performing, data, science, tasks, rely, network, probably, slowest, method,    , Prof., Arjun, V., Bala, #, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('Performing', 'VERB'), ('data', 'NOUN'), ('science', 'NOUN'), ('tasks', 'NOUN'), ('rely', 'VERB'), ('network', 'NOUN'), ('probably', 'ADV'), ('slowest', 'ADJ'), ('method', 'NOUN'), ('   ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN'), ('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'VERB'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Performing', 'csubj'), ('data', 'compound'), ('science', 'compound'), ('tasks', 'dobj'), ('rely', 'relcl'), ('network', 'pobj'), ('probably', 'advmod'), ('slowest', 'amod'), ('method', 'attr'), ('   ', 'nummod'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'pobj'), ('#', 'nmod'), ('3150713', 'appos'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('\uf077', 'conj'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'appos'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'attr')]
+
+>> Bigrams: 
+[[Performing, data], [data, science], [science, tasks], [tasks, rely], [rely, network], [network, probably], [probably, slowest], [slowest, method], [method,    ], [   , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala], [Bala, #], [#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[Performing, data, science], [data, science, tasks], [science, tasks, rely], [tasks, rely, network], [rely, network, probably], [network, probably, slowest], [probably, slowest, method], [slowest, method,    ], [method,    , Prof.], [   , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala], [V., Bala, #], [Bala, #, 3150713], [#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[data science tasks, network, the slowest method, all    Prof. Arjun V. Bala, (PDS, Unit, Data Science, Python]
+
+>> Named Entities are: 
+[('Arjun V. Bala', 'PERSON'), ('PDS', 'ORG'), ('02', 'CARDINAL')]
+
+
+============================ Sentence 65 =============================
+
+Considering Speed of Execution (Cont.) 
+
+
+>> Tokens are: 
+[Considering, Speed, Execution, (, Cont, ., )] 
+
+>> PoS Tags are: 
+[('Considering', 'VERB'), ('Speed', 'PROPN'), ('Execution', 'NOUN'), ('(', 'PUNCT'), ('Cont', 'PROPN'), ('.', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Considering', 'ROOT'), ('Speed', 'dobj'), ('Execution', 'pobj'), ('(', 'punct'), ('Cont', 'appos'), ('.', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[Considering, Speed], [Speed, Execution], [Execution, (], [(, Cont], [Cont, .], [., )]]
+
+>> Trigrams: 
+[[Considering, Speed, Execution], [Speed, Execution, (], [Execution, (, Cont], [(, Cont, .], [Cont, ., )]]
+
+>> Noun Phrases are: 
+[Speed, Execution, Cont]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 66 =============================
+
+Coding Style : 
+
+
+>> Tokens are: 
+[Coding, Style, :] 
+
+>> PoS Tags are: 
+[('Coding', 'PROPN'), ('Style', 'PROPN'), (':', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Coding', 'compound'), ('Style', 'ROOT'), (':', 'punct')]
+
+>> Bigrams: 
+[[Coding, Style], [Style, :]]
+
+>> Trigrams: 
+[[Coding, Style, :]]
+
+>> Noun Phrases are: 
+[Coding Style]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 67 =============================
+
+Anyone can create a slow application using any programming language by employing coding techniques that don’t make the best use of programming language functionality. 
+
+
+>> Tokens are: 
+[create, slow, application, programming, language, employing, coding, techniques, best, use, programming, language, functionality, .] 
+
+>> PoS Tags are: 
+[('create', 'VERB'), ('slow', 'ADJ'), ('application', 'NOUN'), ('programming', 'NOUN'), ('language', 'NOUN'), ('employing', 'VERB'), ('coding', 'VERB'), ('techniques', 'NOUN'), ('best', 'ADJ'), ('use', 'NOUN'), ('programming', 'NOUN'), ('language', 'NOUN'), ('functionality', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('create', 'ROOT'), ('slow', 'amod'), ('application', 'dobj'), ('programming', 'compound'), ('language', 'dobj'), ('employing', 'pcomp'), ('coding', 'amod'), ('techniques', 'dobj'), ('best', 'amod'), ('use', 'dobj'), ('programming', 'compound'), ('language', 'compound'), ('functionality', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[create, slow], [slow, application], [application, programming], [programming, language], [language, employing], [employing, coding], [coding, techniques], [techniques, best], [best, use], [use, programming], [programming, language], [language, functionality], [functionality, .]]
+
+>> Trigrams: 
+[[create, slow, application], [slow, application, programming], [application, programming, language], [programming, language, employing], [language, employing, coding], [employing, coding, techniques], [coding, techniques, best], [techniques, best, use], [best, use, programming], [use, programming, language], [programming, language, functionality], [language, functionality, .]]
+
+>> Noun Phrases are: 
+[Anyone, a slow application, any programming language, coding techniques, the best use, programming language functionality]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 68 =============================
+
+To create fast data science applications, you must use best-of-method coding techniques. 
+
+
+>> Tokens are: 
+[create, fast, data, science, applications, ,, use, best, -, -, method, coding, techniques, .] 
+
+>> PoS Tags are: 
+[('create', 'VERB'), ('fast', 'ADJ'), ('data', 'NOUN'), ('science', 'NOUN'), ('applications', 'NOUN'), (',', 'PUNCT'), ('use', 'VERB'), ('best', 'ADV'), ('-', 'PUNCT'), ('-', 'PUNCT'), ('method', 'NOUN'), ('coding', 'VERB'), ('techniques', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('create', 'advcl'), ('fast', 'amod'), ('data', 'compound'), ('science', 'compound'), ('applications', 'dobj'), (',', 'punct'), ('use', 'ROOT'), ('best', 'nmod'), ('-', 'punct'), ('-', 'punct'), ('method', 'pobj'), ('coding', 'amod'), ('techniques', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[create, fast], [fast, data], [data, science], [science, applications], [applications, ,], [,, use], [use, best], [best, -], [-, -], [-, method], [method, coding], [coding, techniques], [techniques, .]]
+
+>> Trigrams: 
+[[create, fast, data], [fast, data, science], [data, science, applications], [science, applications, ,], [applications, ,, use], [,, use, best], [use, best, -], [best, -, -], [-, -, method], [-, method, coding], [method, coding, techniques], [coding, techniques, .]]
+
+>> Noun Phrases are: 
+[fast data science applications, you, method]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 69 =============================
+
+Machine Capability : Running data science applications on a memory-constrained system with a slower processor is impossible. 
+
+
+>> Tokens are: 
+[Machine, Capability, :, Running, data, science, applications, memory, -, constrained, system, slower, processor, impossible, .] 
+
+>> PoS Tags are: 
+[('Machine', 'PROPN'), ('Capability', 'NOUN'), (':', 'PUNCT'), ('Running', 'VERB'), ('data', 'NOUN'), ('science', 'NOUN'), ('applications', 'NOUN'), ('memory', 'NOUN'), ('-', 'PUNCT'), ('constrained', 'VERB'), ('system', 'NOUN'), ('slower', 'ADJ'), ('processor', 'NOUN'), ('impossible', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Machine', 'compound'), ('Capability', 'nsubj'), (':', 'punct'), ('Running', 'csubj'), ('data', 'compound'), ('science', 'compound'), ('applications', 'dobj'), ('memory', 'npadvmod'), ('-', 'punct'), ('constrained', 'amod'), ('system', 'pobj'), ('slower', 'amod'), ('processor', 'pobj'), ('impossible', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Machine, Capability], [Capability, :], [:, Running], [Running, data], [data, science], [science, applications], [applications, memory], [memory, -], [-, constrained], [constrained, system], [system, slower], [slower, processor], [processor, impossible], [impossible, .]]
+
+>> Trigrams: 
+[[Machine, Capability, :], [Capability, :, Running], [:, Running, data], [Running, data, science], [data, science, applications], [science, applications, memory], [applications, memory, -], [memory, -, constrained], [-, constrained, system], [constrained, system, slower], [system, slower, processor], [slower, processor, impossible], [processor, impossible, .]]
+
+>> Noun Phrases are: 
+[Machine Capability, data science applications, a memory-constrained system, a slower processor]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 70 =============================
+
+The system you use needs to have the best hardware you can afford. 
+
+
+>> Tokens are: 
+[system, use, needs, best, hardware, afford, .] 
+
+>> PoS Tags are: 
+[('system', 'NOUN'), ('use', 'VERB'), ('needs', 'NOUN'), ('best', 'ADJ'), ('hardware', 'NOUN'), ('afford', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('system', 'ROOT'), ('use', 'relcl'), ('needs', 'dobj'), ('best', 'amod'), ('hardware', 'dobj'), ('afford', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[system, use], [use, needs], [needs, best], [best, hardware], [hardware, afford], [afford, .]]
+
+>> Trigrams: 
+[[system, use, needs], [use, needs, best], [needs, best, hardware], [best, hardware, afford], [hardware, afford, .]]
+
+>> Noun Phrases are: 
+[The system, you, needs, the best hardware, you]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 71 =============================
+
+Given that data science applications are both processor and disk bound, you can’t really cut corners in any area and expect great results. 
+
+
+>> Tokens are: 
+[Given, data, science, applications, processor, disk, bound, ,, cut, corners, area, expect, great, results, .] 
+
+>> PoS Tags are: 
+[('Given', 'VERB'), ('data', 'NOUN'), ('science', 'NOUN'), ('applications', 'NOUN'), ('processor', 'NOUN'), ('disk', 'NOUN'), ('bound', 'VERB'), (',', 'PUNCT'), ('cut', 'VERB'), ('corners', 'NOUN'), ('area', 'NOUN'), ('expect', 'VERB'), ('great', 'ADJ'), ('results', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Given', 'prep'), ('data', 'compound'), ('science', 'compound'), ('applications', 'nsubj'), ('processor', 'attr'), ('disk', 'conj'), ('bound', 'acomp'), (',', 'punct'), ('cut', 'ROOT'), ('corners', 'dobj'), ('area', 'pobj'), ('expect', 'conj'), ('great', 'amod'), ('results', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Given, data], [data, science], [science, applications], [applications, processor], [processor, disk], [disk, bound], [bound, ,], [,, cut], [cut, corners], [corners, area], [area, expect], [expect, great], [great, results], [results, .]]
+
+>> Trigrams: 
+[[Given, data, science], [data, science, applications], [science, applications, processor], [applications, processor, disk], [processor, disk, bound], [disk, bound, ,], [bound, ,, cut], [,, cut, corners], [cut, corners, area], [corners, area, expect], [area, expect, great], [expect, great, results], [great, results, .]]
+
+>> Noun Phrases are: 
+[data science applications, both processor, disk, you, corners, any area, great results]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 72 =============================
+
+Analysis Algorithm : 
+
+
+>> Tokens are: 
+[Analysis, Algorithm, :] 
+
+>> PoS Tags are: 
+[('Analysis', 'PROPN'), ('Algorithm', 'PROPN'), (':', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Analysis', 'compound'), ('Algorithm', 'ROOT'), (':', 'punct')]
+
+>> Bigrams: 
+[[Analysis, Algorithm], [Algorithm, :]]
+
+>> Trigrams: 
+[[Analysis, Algorithm, :]]
+
+>> Noun Phrases are: 
+[Analysis Algorithm]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 73 =============================
+
+The algorithm you use determines the kind of result you obtain and controls execution speed. 
+
+
+>> Tokens are: 
+[algorithm, use, determines, kind, result, obtain, controls, execution, speed, .] 
+
+>> PoS Tags are: 
+[('algorithm', 'NOUN'), ('use', 'VERB'), ('determines', 'VERB'), ('kind', 'NOUN'), ('result', 'NOUN'), ('obtain', 'VERB'), ('controls', 'VERB'), ('execution', 'NOUN'), ('speed', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('algorithm', 'ROOT'), ('use', 'relcl'), ('determines', 'xcomp'), ('kind', 'dobj'), ('result', 'pobj'), ('obtain', 'relcl'), ('controls', 'conj'), ('execution', 'compound'), ('speed', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[algorithm, use], [use, determines], [determines, kind], [kind, result], [result, obtain], [obtain, controls], [controls, execution], [execution, speed], [speed, .]]
+
+>> Trigrams: 
+[[algorithm, use, determines], [use, determines, kind], [determines, kind, result], [kind, result, obtain], [result, obtain, controls], [obtain, controls, execution], [controls, execution, speed], [execution, speed, .]]
+
+>> Noun Phrases are: 
+[The algorithm, you, the kind, result, you, execution speed]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 74 =============================
+
+We must experiment to find the best algorithm for particular dataset. 
+
+
+>> Tokens are: 
+[experiment, find, best, algorithm, particular, dataset, .] 
+
+>> PoS Tags are: 
+[('experiment', 'VERB'), ('find', 'VERB'), ('best', 'ADJ'), ('algorithm', 'NOUN'), ('particular', 'ADJ'), ('dataset', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('experiment', 'ROOT'), ('find', 'xcomp'), ('best', 'amod'), ('algorithm', 'dobj'), ('particular', 'amod'), ('dataset', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[experiment, find], [find, best], [best, algorithm], [algorithm, particular], [particular, dataset], [dataset, .]]
+
+>> Trigrams: 
+[[experiment, find, best], [find, best, algorithm], [best, algorithm, particular], [algorithm, particular, dataset], [particular, dataset, .]]
+
+>> Noun Phrases are: 
+[We, the best algorithm, particular dataset]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 75 =============================
+
+   Prof. Arjun V. Bala 
+
+
+>> Tokens are: 
+[   , Prof., Arjun, V., Bala] 
+
+>> PoS Tags are: 
+[('   ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('   ', 'nummod'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'ROOT')]
+
+>> Bigrams: 
+[[   , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala]]
+
+>> Trigrams: 
+[[   , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala]]
+
+>> Noun Phrases are: 
+[   Prof. Arjun V. Bala]
+
+>> Named Entities are: 
+[('Arjun V. Bala', 'PERSON')]
+
+
+============================ Sentence 76 =============================
+
+#3150713 (PDS)      Unit 02 – Data Science and Python ‹#›  Using the Python Ecosystem for Data Science 
+
+
+>> Tokens are: 
+[#, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  , Python, Ecosystem, Data, Science] 
+
+>> PoS Tags are: 
+[('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'VERB'), (' ', 'SPACE'), ('Python', 'PROPN'), ('Ecosystem', 'PROPN'), ('Data', 'PROPN'), ('Science', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('3150713', 'nummod'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'appos'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('Python', 'compound'), ('Ecosystem', 'dobj'), ('Data', 'compound'), ('Science', 'pobj')]
+
+>> Bigrams: 
+[[#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ], [ , Python], [Python, Ecosystem], [Ecosystem, Data], [Data, Science]]
+
+>> Trigrams: 
+[[#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ], [‹#›,  , Python], [ , Python, Ecosystem], [Python, Ecosystem, Data], [Ecosystem, Data, Science]]
+
+>> Noun Phrases are: 
+[(PDS, Unit, Data Science, Python, the Python Ecosystem, Data Science]
+
+>> Named Entities are: 
+[('PDS', 'ORG'), ('02', 'CARDINAL')]
+
+
+============================ Sentence 77 =============================
+
+We need to load certain libraries in order to perform specific data science task in python. 
+
+
+>> Tokens are: 
+[need, load, certain, libraries, order, perform, specific, data, science, task, python, .] 
+
+>> PoS Tags are: 
+[('need', 'VERB'), ('load', 'VERB'), ('certain', 'ADJ'), ('libraries', 'NOUN'), ('order', 'NOUN'), ('perform', 'VERB'), ('specific', 'ADJ'), ('data', 'NOUN'), ('science', 'NOUN'), ('task', 'NOUN'), ('python', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('need', 'ROOT'), ('load', 'xcomp'), ('certain', 'amod'), ('libraries', 'dobj'), ('order', 'pobj'), ('perform', 'acl'), ('specific', 'amod'), ('data', 'compound'), ('science', 'compound'), ('task', 'dobj'), ('python', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[need, load], [load, certain], [certain, libraries], [libraries, order], [order, perform], [perform, specific], [specific, data], [data, science], [science, task], [task, python], [python, .]]
+
+>> Trigrams: 
+[[need, load, certain], [load, certain, libraries], [certain, libraries, order], [libraries, order, perform], [order, perform, specific], [perform, specific, data], [specific, data, science], [data, science, task], [science, task, python], [task, python, .]]
+
+>> Noun Phrases are: 
+[We, certain libraries, order, specific data science task, python]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 78 =============================
+
+Following are the list of libraries which we are going to use in this subject. 
+
+
+>> Tokens are: 
+[Following, list, libraries, going, use, subject, .] 
+
+>> PoS Tags are: 
+[('Following', 'VERB'), ('list', 'NOUN'), ('libraries', 'NOUN'), ('going', 'VERB'), ('use', 'VERB'), ('subject', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Following', 'ROOT'), ('list', 'attr'), ('libraries', 'pobj'), ('going', 'relcl'), ('use', 'xcomp'), ('subject', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Following, list], [list, libraries], [libraries, going], [going, use], [use, subject], [subject, .]]
+
+>> Trigrams: 
+[[Following, list, libraries], [list, libraries, going], [libraries, going, use], [going, use, subject], [use, subject, .]]
+
+>> Noun Phrases are: 
+[the list, libraries, we, this subject]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 79 =============================
+
+Performing fundamental scientific computing using NumPy Performing data analysis using pandas Plotting the data using matplotlib Accessing scientific tools using SciPy Implementing machine learning using Scikit-learn Going for deep learning with Keras and TensorFlow Creating graphs with NetworkX Parsing HTML documents using Beautiful Soup     Prof. Arjun V. Bala 
+
+
+>> Tokens are: 
+[Performing, fundamental, scientific, computing, NumPy, Performing, data, analysis, pandas, Plotting, data, matplotlib, Accessing, scientific, tools, SciPy, Implementing, machine, learning, Scikit, -, learn, Going, deep, learning, Keras, TensorFlow, Creating, graphs, NetworkX, Parsing, HTML, documents, Beautiful, Soup,     , Prof., Arjun, V., Bala] 
+
+>> PoS Tags are: 
+[('Performing', 'VERB'), ('fundamental', 'ADJ'), ('scientific', 'ADJ'), ('computing', 'NOUN'), ('NumPy', 'PROPN'), ('Performing', 'PROPN'), ('data', 'NOUN'), ('analysis', 'NOUN'), ('pandas', 'NOUN'), ('Plotting', 'VERB'), ('data', 'NOUN'), ('matplotlib', 'ADJ'), ('Accessing', 'PROPN'), ('scientific', 'ADJ'), ('tools', 'NOUN'), ('SciPy', 'PROPN'), ('Implementing', 'PROPN'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('Scikit', 'PROPN'), ('-', 'PUNCT'), ('learn', 'VERB'), ('Going', 'VERB'), ('deep', 'ADJ'), ('learning', 'NOUN'), ('Keras', 'PROPN'), ('TensorFlow', 'PROPN'), ('Creating', 'PROPN'), ('graphs', 'NOUN'), ('NetworkX', 'PROPN'), ('Parsing', 'PROPN'), ('HTML', 'NOUN'), ('documents', 'NOUN'), ('Beautiful', 'PROPN'), ('Soup', 'PROPN'), ('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Performing', 'ROOT'), ('fundamental', 'amod'), ('scientific', 'amod'), ('computing', 'dobj'), ('NumPy', 'compound'), ('Performing', 'compound'), ('data', 'compound'), ('analysis', 'dobj'), ('pandas', 'dobj'), ('Plotting', 'acl'), ('data', 'dobj'), ('matplotlib', 'amod'), ('Accessing', 'nmod'), ('scientific', 'amod'), ('tools', 'dobj'), ('SciPy', 'compound'), ('Implementing', 'compound'), ('machine', 'compound'), ('learning', 'dobj'), ('Scikit', 'compound'), ('-', 'punct'), ('learn', 'xcomp'), ('Going', 'xcomp'), ('deep', 'amod'), ('learning', 'pobj'), ('Keras', 'pobj'), ('TensorFlow', 'compound'), ('Creating', 'compound'), ('graphs', 'conj'), ('NetworkX', 'compound'), ('Parsing', 'compound'), ('HTML', 'compound'), ('documents', 'pobj'), ('Beautiful', 'compound'), ('Soup', 'nmod'), ('    ', 'nummod'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'dobj')]
+
+>> Bigrams: 
+[[Performing, fundamental], [fundamental, scientific], [scientific, computing], [computing, NumPy], [NumPy, Performing], [Performing, data], [data, analysis], [analysis, pandas], [pandas, Plotting], [Plotting, data], [data, matplotlib], [matplotlib, Accessing], [Accessing, scientific], [scientific, tools], [tools, SciPy], [SciPy, Implementing], [Implementing, machine], [machine, learning], [learning, Scikit], [Scikit, -], [-, learn], [learn, Going], [Going, deep], [deep, learning], [learning, Keras], [Keras, TensorFlow], [TensorFlow, Creating], [Creating, graphs], [graphs, NetworkX], [NetworkX, Parsing], [Parsing, HTML], [HTML, documents], [documents, Beautiful], [Beautiful, Soup], [Soup,     ], [    , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala]]
+
+>> Trigrams: 
+[[Performing, fundamental, scientific], [fundamental, scientific, computing], [scientific, computing, NumPy], [computing, NumPy, Performing], [NumPy, Performing, data], [Performing, data, analysis], [data, analysis, pandas], [analysis, pandas, Plotting], [pandas, Plotting, data], [Plotting, data, matplotlib], [data, matplotlib, Accessing], [matplotlib, Accessing, scientific], [Accessing, scientific, tools], [scientific, tools, SciPy], [tools, SciPy, Implementing], [SciPy, Implementing, machine], [Implementing, machine, learning], [machine, learning, Scikit], [learning, Scikit, -], [Scikit, -, learn], [-, learn, Going], [learn, Going, deep], [Going, deep, learning], [deep, learning, Keras], [learning, Keras, TensorFlow], [Keras, TensorFlow, Creating], [TensorFlow, Creating, graphs], [Creating, graphs, NetworkX], [graphs, NetworkX, Parsing], [NetworkX, Parsing, HTML], [Parsing, HTML, documents], [HTML, documents, Beautiful], [documents, Beautiful, Soup], [Beautiful, Soup,     ], [Soup,     , Prof.], [    , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala]]
+
+>> Noun Phrases are: 
+[fundamental scientific computing, NumPy Performing data analysis, pandas, the data, matplotlib Accessing scientific tools, SciPy Implementing machine learning, deep learning, Keras, TensorFlow Creating graphs, NetworkX Parsing HTML documents, Beautiful Soup     Prof. Arjun V. Bala]
+
+>> Named Entities are: 
+[('NumPy Performing', 'ORG'), ('Scikit-learn', 'ORG'), ('Keras', 'ORG'), ('TensorFlow Creating', 'PERSON'), ('Beautiful Soup', 'PERSON'), ('Arjun V. Bala', 'PERSON')]
+
+
+============================ Sentence 80 =============================
+
+#3150713 (PDS)      Unit 02 – Data Science and Python ‹#›  1) NumPy NumPy is used to perform fundamental scientific computing. 
+
+
+>> Tokens are: 
+[#, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  , 1, ), NumPy, NumPy, perform, fundamental, scientific, computing, .] 
+
+>> PoS Tags are: 
+[('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'PART'), (' ', 'SPACE'), ('1', 'NUM'), (')', 'PUNCT'), ('NumPy', 'PROPN'), ('NumPy', 'PROPN'), ('perform', 'VERB'), ('fundamental', 'ADJ'), ('scientific', 'ADJ'), ('computing', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('#', 'nsubj'), ('3150713', 'nummod'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ccomp'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'nmod'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('1', 'nummod'), (')', 'punct'), ('NumPy', 'compound'), ('NumPy', 'nsubjpass'), ('perform', 'xcomp'), ('fundamental', 'amod'), ('scientific', 'amod'), ('computing', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ], [ , 1], [1, )], [), NumPy], [NumPy, NumPy], [NumPy, perform], [perform, fundamental], [fundamental, scientific], [scientific, computing], [computing, .]]
+
+>> Trigrams: 
+[[#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ], [‹#›,  , 1], [ , 1, )], [1, ), NumPy], [), NumPy, NumPy], [NumPy, NumPy, perform], [NumPy, perform, fundamental], [perform, fundamental, scientific], [fundamental, scientific, computing], [scientific, computing, .]]
+
+>> Noun Phrases are: 
+[#, (PDS, Unit, Data Science and Python ‹#›  1) NumPy NumPy, fundamental scientific computing]
+
+>> Named Entities are: 
+[('PDS', 'ORG'), ('02', 'CARDINAL'), ('1', 'CARDINAL'), ('NumPy NumPy', 'PERSON')]
+
+
+============================ Sentence 81 =============================
+
+NumPy library provides the means for performing n-dimensional array manipulation, which is critical for data science work. 
+
+
+>> Tokens are: 
+[NumPy, library, provides, means, performing, n, -, dimensional, array, manipulation, ,, critical, data, science, work, .] 
+
+>> PoS Tags are: 
+[('NumPy', 'PROPN'), ('library', 'NOUN'), ('provides', 'VERB'), ('means', 'NOUN'), ('performing', 'VERB'), ('n', 'ADV'), ('-', 'PUNCT'), ('dimensional', 'ADJ'), ('array', 'NOUN'), ('manipulation', 'NOUN'), (',', 'PUNCT'), ('critical', 'ADJ'), ('data', 'NOUN'), ('science', 'NOUN'), ('work', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('NumPy', 'compound'), ('library', 'nsubj'), ('provides', 'ROOT'), ('means', 'dobj'), ('performing', 'pcomp'), ('n', 'advmod'), ('-', 'punct'), ('dimensional', 'amod'), ('array', 'compound'), ('manipulation', 'dobj'), (',', 'punct'), ('critical', 'acomp'), ('data', 'compound'), ('science', 'compound'), ('work', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[NumPy, library], [library, provides], [provides, means], [means, performing], [performing, n], [n, -], [-, dimensional], [dimensional, array], [array, manipulation], [manipulation, ,], [,, critical], [critical, data], [data, science], [science, work], [work, .]]
+
+>> Trigrams: 
+[[NumPy, library, provides], [library, provides, means], [provides, means, performing], [means, performing, n], [performing, n, -], [n, -, dimensional], [-, dimensional, array], [dimensional, array, manipulation], [array, manipulation, ,], [manipulation, ,, critical], [,, critical, data], [critical, data, science], [data, science, work], [science, work, .]]
+
+>> Noun Phrases are: 
+[NumPy library, the means, n-dimensional array manipulation, data science work]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 82 =============================
+
+NumPy provides functions that include support for linear algebra, Fourier transformation, random-number generation and many more.. 
+
+
+>> Tokens are: 
+[NumPy, provides, functions, include, support, linear, algebra, ,, Fourier, transformation, ,, random, -, number, generation, ..] 
+
+>> PoS Tags are: 
+[('NumPy', 'PROPN'), ('provides', 'VERB'), ('functions', 'NOUN'), ('include', 'VERB'), ('support', 'NOUN'), ('linear', 'ADJ'), ('algebra', 'NOUN'), (',', 'PUNCT'), ('Fourier', 'PROPN'), ('transformation', 'NOUN'), (',', 'PUNCT'), ('random', 'ADJ'), ('-', 'PUNCT'), ('number', 'NOUN'), ('generation', 'NOUN'), ('..', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('NumPy', 'nsubj'), ('provides', 'ROOT'), ('functions', 'dobj'), ('include', 'relcl'), ('support', 'dobj'), ('linear', 'amod'), ('algebra', 'pobj'), (',', 'punct'), ('Fourier', 'compound'), ('transformation', 'appos'), (',', 'punct'), ('random', 'amod'), ('-', 'punct'), ('number', 'compound'), ('generation', 'conj'), ('..', 'punct')]
+
+>> Bigrams: 
+[[NumPy, provides], [provides, functions], [functions, include], [include, support], [support, linear], [linear, algebra], [algebra, ,], [,, Fourier], [Fourier, transformation], [transformation, ,], [,, random], [random, -], [-, number], [number, generation], [generation, ..]]
+
+>> Trigrams: 
+[[NumPy, provides, functions], [provides, functions, include], [functions, include, support], [include, support, linear], [support, linear, algebra], [linear, algebra, ,], [algebra, ,, Fourier], [,, Fourier, transformation], [Fourier, transformation, ,], [transformation, ,, random], [,, random, -], [random, -, number], [-, number, generation], [number, generation, ..]]
+
+>> Noun Phrases are: 
+[NumPy, functions, support, linear algebra, Fourier transformation, random-number generation]
+
+>> Named Entities are: 
+[('NumPy', 'ORG')]
+
+
+============================ Sentence 83 =============================
+
+	Explore listing of functions at https://numpy.org/doc/stable/reference/routines.html      Prof. Arjun V. Bala #3150713 (PDS)      Unit 02 – Data Science and Python ‹#›  2) pandas pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language. 
+
+
+>> Tokens are: 
+[	, Explore, listing, functions, https://numpy.org/doc/stable/reference/routines.html,      , Prof., Arjun, V., Bala, #, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  , 2, ), pandas, pandas, fast, ,, powerful, ,, flexible, easy, use, open, source, data, analysis, manipulation, tool, ,, built, Python, programming, language, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Explore', 'PROPN'), ('listing', 'VERB'), ('functions', 'NOUN'), ('https://numpy.org/doc/stable/reference/routines.html', 'ADJ'), ('     ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN'), ('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'PART'), (' ', 'SPACE'), ('2', 'NUM'), (')', 'PUNCT'), ('pandas', 'ADJ'), ('pandas', 'NOUN'), ('fast', 'ADJ'), (',', 'PUNCT'), ('powerful', 'ADJ'), (',', 'PUNCT'), ('flexible', 'ADJ'), ('easy', 'ADJ'), ('use', 'VERB'), ('open', 'ADJ'), ('source', 'NOUN'), ('data', 'NOUN'), ('analysis', 'NOUN'), ('manipulation', 'NOUN'), ('tool', 'NOUN'), (',', 'PUNCT'), ('built', 'VERB'), ('Python', 'PROPN'), ('programming', 'NOUN'), ('language', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Explore', 'compound'), ('listing', 'amod'), ('functions', 'pobj'), ('https://numpy.org/doc/stable/reference/routines.html', 'amod'), ('     ', 'compound'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'pobj'), ('#', 'nmod'), ('3150713', 'npadvmod'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('\uf077', 'conj'), ('  ', 'conj'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'nsubj'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('2', 'nummod'), (')', 'punct'), ('pandas', 'amod'), ('pandas', 'nsubj'), ('fast', 'amod'), (',', 'punct'), ('powerful', 'acomp'), (',', 'punct'), ('flexible', 'conj'), ('easy', 'conj'), ('use', 'xcomp'), ('open', 'amod'), ('source', 'compound'), ('data', 'compound'), ('analysis', 'dobj'), ('manipulation', 'compound'), ('tool', 'conj'), (',', 'punct'), ('built', 'acl'), ('Python', 'compound'), ('programming', 'compound'), ('language', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Explore], [Explore, listing], [listing, functions], [functions, https://numpy.org/doc/stable/reference/routines.html], [https://numpy.org/doc/stable/reference/routines.html,      ], [     , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala], [Bala, #], [#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ], [ , 2], [2, )], [), pandas], [pandas, pandas], [pandas, fast], [fast, ,], [,, powerful], [powerful, ,], [,, flexible], [flexible, easy], [easy, use], [use, open], [open, source], [source, data], [data, analysis], [analysis, manipulation], [manipulation, tool], [tool, ,], [,, built], [built, Python], [Python, programming], [programming, language], [language, .]]
+
+>> Trigrams: 
+[[	, Explore, listing], [Explore, listing, functions], [listing, functions, https://numpy.org/doc/stable/reference/routines.html], [functions, https://numpy.org/doc/stable/reference/routines.html,      ], [https://numpy.org/doc/stable/reference/routines.html,      , Prof.], [     , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala], [V., Bala, #], [Bala, #, 3150713], [#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ], [‹#›,  , 2], [ , 2, )], [2, ), pandas], [), pandas, pandas], [pandas, pandas, fast], [pandas, fast, ,], [fast, ,, powerful], [,, powerful, ,], [powerful, ,, flexible], [,, flexible, easy], [flexible, easy, use], [easy, use, open], [use, open, source], [open, source, data], [source, data, analysis], [data, analysis, manipulation], [analysis, manipulation, tool], [manipulation, tool, ,], [tool, ,, built], [,, built, Python], [built, Python, programming], [Python, programming, language], [programming, language, .]]
+
+>> Noun Phrases are: 
+[functions, https://numpy.org/doc/stable/reference/routines.html      Prof. Arjun V. Bala, (PDS, Unit, – Data Science, Python, open source data analysis, manipulation tool, top, the Python programming language]
+
+>> Named Entities are: 
+[('Arjun V. Bala', 'PERSON'), ('PDS', 'ORG'), ('02', 'CARDINAL'), ('2', 'CARDINAL')]
+
+
+============================ Sentence 84 =============================
+
+it offers data structures and operations for manipulating numerical tables and time series. 
+
+
+>> Tokens are: 
+[offers, data, structures, operations, manipulating, numerical, tables, time, series, .] 
+
+>> PoS Tags are: 
+[('offers', 'VERB'), ('data', 'NOUN'), ('structures', 'NOUN'), ('operations', 'NOUN'), ('manipulating', 'VERB'), ('numerical', 'ADJ'), ('tables', 'NOUN'), ('time', 'NOUN'), ('series', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('offers', 'ROOT'), ('data', 'compound'), ('structures', 'dobj'), ('operations', 'conj'), ('manipulating', 'pcomp'), ('numerical', 'amod'), ('tables', 'dobj'), ('time', 'compound'), ('series', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[offers, data], [data, structures], [structures, operations], [operations, manipulating], [manipulating, numerical], [numerical, tables], [tables, time], [time, series], [series, .]]
+
+>> Trigrams: 
+[[offers, data, structures], [data, structures, operations], [structures, operations, manipulating], [operations, manipulating, numerical], [manipulating, numerical, tables], [numerical, tables, time], [tables, time, series], [time, series, .]]
+
+>> Noun Phrases are: 
+[it, data structures, operations, numerical tables, time series]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 85 =============================
+
+The library is optimized to perform data science tasks especially fast and efficiently. 
+
+
+>> Tokens are: 
+[library, optimized, perform, data, science, tasks, especially, fast, efficiently, .] 
+
+>> PoS Tags are: 
+[('library', 'NOUN'), ('optimized', 'VERB'), ('perform', 'VERB'), ('data', 'NOUN'), ('science', 'NOUN'), ('tasks', 'NOUN'), ('especially', 'ADV'), ('fast', 'ADV'), ('efficiently', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('library', 'nsubjpass'), ('optimized', 'ROOT'), ('perform', 'xcomp'), ('data', 'compound'), ('science', 'compound'), ('tasks', 'dobj'), ('especially', 'advmod'), ('fast', 'advmod'), ('efficiently', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[library, optimized], [optimized, perform], [perform, data], [data, science], [science, tasks], [tasks, especially], [especially, fast], [fast, efficiently], [efficiently, .]]
+
+>> Trigrams: 
+[[library, optimized, perform], [optimized, perform, data], [perform, data, science], [data, science, tasks], [science, tasks, especially], [tasks, especially, fast], [especially, fast, efficiently], [fast, efficiently, .]]
+
+>> Noun Phrases are: 
+[The library, data science tasks]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 86 =============================
+
+The basic principle behind pandas is to provide data analysis and modelling support for Python that is similar to other languages such as R.     Prof. Arjun V. Bala 
+
+
+>> Tokens are: 
+[basic, principle, pandas, provide, data, analysis, modelling, support, Python, similar, languages, R.,     , Prof., Arjun, V., Bala] 
+
+>> PoS Tags are: 
+[('basic', 'ADJ'), ('principle', 'NOUN'), ('pandas', 'NOUN'), ('provide', 'VERB'), ('data', 'NOUN'), ('analysis', 'NOUN'), ('modelling', 'NOUN'), ('support', 'NOUN'), ('Python', 'PROPN'), ('similar', 'ADJ'), ('languages', 'NOUN'), ('R.', 'PROPN'), ('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('basic', 'amod'), ('principle', 'nsubj'), ('pandas', 'pobj'), ('provide', 'xcomp'), ('data', 'compound'), ('analysis', 'dobj'), ('modelling', 'amod'), ('support', 'conj'), ('Python', 'pobj'), ('similar', 'acomp'), ('languages', 'pobj'), ('R.', 'compound'), ('    ', 'compound'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'pobj')]
+
+>> Bigrams: 
+[[basic, principle], [principle, pandas], [pandas, provide], [provide, data], [data, analysis], [analysis, modelling], [modelling, support], [support, Python], [Python, similar], [similar, languages], [languages, R.], [R.,     ], [    , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala]]
+
+>> Trigrams: 
+[[basic, principle, pandas], [principle, pandas, provide], [pandas, provide, data], [provide, data, analysis], [data, analysis, modelling], [analysis, modelling, support], [modelling, support, Python], [support, Python, similar], [Python, similar, languages], [similar, languages, R.], [languages, R.,     ], [R.,     , Prof.], [    , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala]]
+
+>> Noun Phrases are: 
+[The basic principle, pandas, data analysis, modelling support, Python, other languages, R.     Prof. Arjun V. Bala]
+
+>> Named Entities are: 
+[('R.', 'NORP'), ('Arjun V. Bala', 'PERSON')]
+
+
+============================ Sentence 87 =============================
+
+#3150713 (PDS)      Unit 02 – Data Science and Python ‹#›  3) matplotlib 
+
+
+>> Tokens are: 
+[#, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  , 3, ), matplotlib] 
+
+>> PoS Tags are: 
+[('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'PART'), (' ', 'SPACE'), ('3', 'NUM'), (')', 'PUNCT'), ('matplotlib', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('#', 'nsubj'), ('3150713', 'nummod'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'npadvmod'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('3', 'nummod'), (')', 'punct'), ('matplotlib', 'punct')]
+
+>> Bigrams: 
+[[#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ], [ , 3], [3, )], [), matplotlib]]
+
+>> Trigrams: 
+[[#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ], [‹#›,  , 3], [ , 3, )], [3, ), matplotlib]]
+
+>> Noun Phrases are: 
+[#, (PDS, Unit]
+
+>> Named Entities are: 
+[('PDS', 'ORG'), ('02', 'CARDINAL'), ('3', 'CARDINAL')]
+
+
+============================ Sentence 88 =============================
+
+The matplotlib library gives a MATLAB like interface for creating data presentations of the analysis. 
+
+
+>> Tokens are: 
+[matplotlib, library, gives, MATLAB, like, interface, creating, data, presentations, analysis, .] 
+
+>> PoS Tags are: 
+[('matplotlib', 'ADJ'), ('library', 'NOUN'), ('gives', 'VERB'), ('MATLAB', 'PROPN'), ('like', 'ADP'), ('interface', 'NOUN'), ('creating', 'VERB'), ('data', 'NOUN'), ('presentations', 'NOUN'), ('analysis', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('matplotlib', 'amod'), ('library', 'nsubj'), ('gives', 'ROOT'), ('MATLAB', 'dobj'), ('like', 'prep'), ('interface', 'pobj'), ('creating', 'pcomp'), ('data', 'compound'), ('presentations', 'dobj'), ('analysis', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[matplotlib, library], [library, gives], [gives, MATLAB], [MATLAB, like], [like, interface], [interface, creating], [creating, data], [data, presentations], [presentations, analysis], [analysis, .]]
+
+>> Trigrams: 
+[[matplotlib, library, gives], [library, gives, MATLAB], [gives, MATLAB, like], [MATLAB, like, interface], [like, interface, creating], [interface, creating, data], [creating, data, presentations], [data, presentations, analysis], [presentations, analysis, .]]
+
+>> Noun Phrases are: 
+[The matplotlib library, a MATLAB, interface, data presentations, the analysis]
+
+>> Named Entities are: 
+[('MATLAB', 'ORG')]
+
+
+============================ Sentence 89 =============================
+
+The library is initially limited to 2-D output, but it still provide means to express analysis graphically. 
+
+
+>> Tokens are: 
+[library, initially, limited, 2, -, D, output, ,, provide, means, express, analysis, graphically, .] 
+
+>> PoS Tags are: 
+[('library', 'NOUN'), ('initially', 'ADV'), ('limited', 'VERB'), ('2', 'NUM'), ('-', 'PUNCT'), ('D', 'ADJ'), ('output', 'NOUN'), (',', 'PUNCT'), ('provide', 'VERB'), ('means', 'NOUN'), ('express', 'VERB'), ('analysis', 'NOUN'), ('graphically', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('library', 'nsubjpass'), ('initially', 'advmod'), ('limited', 'ROOT'), ('2', 'nummod'), ('-', 'punct'), ('D', 'amod'), ('output', 'pobj'), (',', 'punct'), ('provide', 'conj'), ('means', 'dobj'), ('express', 'advcl'), ('analysis', 'dobj'), ('graphically', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[library, initially], [initially, limited], [limited, 2], [2, -], [-, D], [D, output], [output, ,], [,, provide], [provide, means], [means, express], [express, analysis], [analysis, graphically], [graphically, .]]
+
+>> Trigrams: 
+[[library, initially, limited], [initially, limited, 2], [limited, 2, -], [2, -, D], [-, D, output], [D, output, ,], [output, ,, provide], [,, provide, means], [provide, means, express], [means, express, analysis], [express, analysis, graphically], [analysis, graphically, .]]
+
+>> Noun Phrases are: 
+[The library, 2-D output, it, means, analysis]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 90 =============================
+
+Without this library we can not create output that people outside the data science community could easily understand. 
+
+
+>> Tokens are: 
+[library, create, output, people, outside, data, science, community, easily, understand, .] 
+
+>> PoS Tags are: 
+[('library', 'NOUN'), ('create', 'VERB'), ('output', 'NOUN'), ('people', 'NOUN'), ('outside', 'ADP'), ('data', 'NOUN'), ('science', 'NOUN'), ('community', 'NOUN'), ('easily', 'ADV'), ('understand', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('library', 'pobj'), ('create', 'ROOT'), ('output', 'dobj'), ('people', 'nsubj'), ('outside', 'prep'), ('data', 'compound'), ('science', 'compound'), ('community', 'pobj'), ('easily', 'advmod'), ('understand', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[library, create], [create, output], [output, people], [people, outside], [outside, data], [data, science], [science, community], [community, easily], [easily, understand], [understand, .]]
+
+>> Trigrams: 
+[[library, create, output], [create, output, people], [output, people, outside], [people, outside, data], [outside, data, science], [data, science, community], [science, community, easily], [community, easily, understand], [easily, understand, .]]
+
+>> Noun Phrases are: 
+[this library, we, output, people, the data science community]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 91 =============================
+
+    Prof. Arjun V. Bala #3150713 (PDS)      Unit 02 – Data Science and Python ‹#›  4) 
+
+
+>> Tokens are: 
+[    , Prof., Arjun, V., Bala, #, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  , 4, )] 
+
+>> PoS Tags are: 
+[('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN'), ('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'PART'), (' ', 'SPACE'), ('4', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('    ', 'compound'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'nsubj'), ('#', 'nmod'), ('3150713', 'appos'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'npadvmod'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('4', 'nummod'), (')', 'punct')]
+
+>> Bigrams: 
+[[    , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala], [Bala, #], [#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ], [ , 4], [4, )]]
+
+>> Trigrams: 
+[[    , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala], [V., Bala, #], [Bala, #, 3150713], [#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ], [‹#›,  , 4], [ , 4, )]]
+
+>> Noun Phrases are: 
+[    Prof. Arjun V. Bala, (PDS, Unit]
+
+>> Named Entities are: 
+[('Arjun V. Bala', 'PERSON'), ('PDS', 'ORG'), ('02', 'CARDINAL'), ('4', 'CARDINAL')]
+
+
+============================ Sentence 92 =============================
+
+SciPy The SciPy stack contains a host of other libraries that we can also download separately. 
+
+
+>> Tokens are: 
+[SciPy, SciPy, stack, contains, host, libraries, download, separately, .] 
+
+>> PoS Tags are: 
+[('SciPy', 'VERB'), ('SciPy', 'PROPN'), ('stack', 'NOUN'), ('contains', 'VERB'), ('host', 'NOUN'), ('libraries', 'NOUN'), ('download', 'VERB'), ('separately', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('SciPy', 'ROOT'), ('SciPy', 'compound'), ('stack', 'nsubj'), ('contains', 'ccomp'), ('host', 'dobj'), ('libraries', 'pobj'), ('download', 'relcl'), ('separately', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[SciPy, SciPy], [SciPy, stack], [stack, contains], [contains, host], [host, libraries], [libraries, download], [download, separately], [separately, .]]
+
+>> Trigrams: 
+[[SciPy, SciPy, stack], [SciPy, stack, contains], [stack, contains, host], [contains, host, libraries], [host, libraries, download], [libraries, download, separately], [download, separately, .]]
+
+>> Noun Phrases are: 
+[The SciPy stack, a host, other libraries, we]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 93 =============================
+
+These libraries provide support for mathematics, science and engineering. 
+
+
+>> Tokens are: 
+[libraries, provide, support, mathematics, ,, science, engineering, .] 
+
+>> PoS Tags are: 
+[('libraries', 'NOUN'), ('provide', 'VERB'), ('support', 'NOUN'), ('mathematics', 'NOUN'), (',', 'PUNCT'), ('science', 'NOUN'), ('engineering', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('libraries', 'nsubj'), ('provide', 'ROOT'), ('support', 'dobj'), ('mathematics', 'pobj'), (',', 'punct'), ('science', 'conj'), ('engineering', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[libraries, provide], [provide, support], [support, mathematics], [mathematics, ,], [,, science], [science, engineering], [engineering, .]]
+
+>> Trigrams: 
+[[libraries, provide, support], [provide, support, mathematics], [support, mathematics, ,], [mathematics, ,, science], [,, science, engineering], [science, engineering, .]]
+
+>> Noun Phrases are: 
+[These libraries, support, mathematics, science, engineering]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 94 =============================
+
+When we obtain SciPy, we get a set of libraries designed to work together to create applications of various sorts, these libraries are NumPy Pandas matplotlib Jupeter Sympy Etc….. 
+
+
+>> Tokens are: 
+[obtain, SciPy, ,, set, libraries, designed, work, create, applications, sorts, ,, libraries, NumPy, Pandas, matplotlib, Jupeter, Sympy, Etc, …, ..] 
+
+>> PoS Tags are: 
+[('obtain', 'VERB'), ('SciPy', 'PROPN'), (',', 'PUNCT'), ('set', 'NOUN'), ('libraries', 'NOUN'), ('designed', 'VERB'), ('work', 'VERB'), ('create', 'VERB'), ('applications', 'NOUN'), ('sorts', 'NOUN'), (',', 'PUNCT'), ('libraries', 'NOUN'), ('NumPy', 'PROPN'), ('Pandas', 'PROPN'), ('matplotlib', 'ADJ'), ('Jupeter', 'PROPN'), ('Sympy', 'PROPN'), ('Etc', 'PROPN'), ('…', 'PUNCT'), ('..', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('obtain', 'advcl'), ('SciPy', 'dobj'), (',', 'punct'), ('set', 'dobj'), ('libraries', 'pobj'), ('designed', 'acl'), ('work', 'xcomp'), ('create', 'advcl'), ('applications', 'dobj'), ('sorts', 'pobj'), (',', 'punct'), ('libraries', 'nsubj'), ('NumPy', 'compound'), ('Pandas', 'attr'), ('matplotlib', 'nmod'), ('Jupeter', 'compound'), ('Sympy', 'compound'), ('Etc', 'appos'), ('…', 'punct'), ('..', 'punct')]
+
+>> Bigrams: 
+[[obtain, SciPy], [SciPy, ,], [,, set], [set, libraries], [libraries, designed], [designed, work], [work, create], [create, applications], [applications, sorts], [sorts, ,], [,, libraries], [libraries, NumPy], [NumPy, Pandas], [Pandas, matplotlib], [matplotlib, Jupeter], [Jupeter, Sympy], [Sympy, Etc], [Etc, …], […, ..]]
+
+>> Trigrams: 
+[[obtain, SciPy, ,], [SciPy, ,, set], [,, set, libraries], [set, libraries, designed], [libraries, designed, work], [designed, work, create], [work, create, applications], [create, applications, sorts], [applications, sorts, ,], [sorts, ,, libraries], [,, libraries, NumPy], [libraries, NumPy, Pandas], [NumPy, Pandas, matplotlib], [Pandas, matplotlib, Jupeter], [matplotlib, Jupeter, Sympy], [Jupeter, Sympy, Etc], [Sympy, Etc, …], [Etc, …, ..]]
+
+>> Noun Phrases are: 
+[we, SciPy, we, a set, libraries, applications, various sorts, these libraries, NumPy Pandas, Jupeter Sympy Etc]
+
+>> Named Entities are: 
+[('NumPy Pandas', 'PERSON'), ('Jupeter Sympy Etc', 'PERSON')]
+
+
+============================ Sentence 95 =============================
+
+     Prof. Arjun V. Bala #3150713 (PDS) 
+
+
+>> Tokens are: 
+[     , Prof., Arjun, V., Bala, #, 3150713, (, PDS, )] 
+
+>> PoS Tags are: 
+[('     ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN'), ('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('     ', 'compound'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'ROOT'), ('#', 'nmod'), ('3150713', 'appos'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[     , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala], [Bala, #], [#, 3150713], [3150713, (], [(, PDS], [PDS, )]]
+
+>> Trigrams: 
+[[     , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala], [V., Bala, #], [Bala, #, 3150713], [#, 3150713, (], [3150713, (, PDS], [(, PDS, )]]
+
+>> Noun Phrases are: 
+[     Prof. Arjun V. Bala, (PDS]
+
+>> Named Entities are: 
+[('Arjun V. Bala', 'PERSON'), ('PDS', 'ORG')]
+
+
+============================ Sentence 96 =============================
+
+     Unit 02 – Data Science and Python ‹#›  5) 
+
+
+>> Tokens are: 
+[  , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  , 5, )] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'PART'), (' ', 'SPACE'), ('5', 'NUM'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'nsubj'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'appos'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('5', 'nummod'), (')', 'punct')]
+
+>> Bigrams: 
+[[  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ], [ , 5], [5, )]]
+
+>> Trigrams: 
+[[  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ], [‹#›,  , 5], [ , 5, )]]
+
+>> Noun Phrases are: 
+[Unit, – Data Science, Python]
+
+>> Named Entities are: 
+[('02', 'CARDINAL'), ('5', 'CARDINAL')]
+
+
+============================ Sentence 97 =============================
+
+Scikit-learn The Scikit-learn library is one of many Scikit libraries that build on the capabilities provided by NumPy and SciPy to allow Python developers to perform domain specific tasks. 
+
+
+>> Tokens are: 
+[Scikit, -, learn, Scikit, -, learn, library, Scikit, libraries, build, capabilities, provided, NumPy, SciPy, allow, Python, developers, perform, domain, specific, tasks, .] 
+
+>> PoS Tags are: 
+[('Scikit', 'PROPN'), ('-', 'PUNCT'), ('learn', 'VERB'), ('Scikit', 'PROPN'), ('-', 'PUNCT'), ('learn', 'PROPN'), ('library', 'NOUN'), ('Scikit', 'PROPN'), ('libraries', 'NOUN'), ('build', 'VERB'), ('capabilities', 'NOUN'), ('provided', 'VERB'), ('NumPy', 'PROPN'), ('SciPy', 'PROPN'), ('allow', 'VERB'), ('Python', 'PROPN'), ('developers', 'NOUN'), ('perform', 'VERB'), ('domain', 'NOUN'), ('specific', 'ADJ'), ('tasks', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Scikit', 'dep'), ('-', 'punct'), ('learn', 'ROOT'), ('Scikit', 'compound'), ('-', 'punct'), ('learn', 'compound'), ('library', 'nsubj'), ('Scikit', 'compound'), ('libraries', 'pobj'), ('build', 'relcl'), ('capabilities', 'pobj'), ('provided', 'acl'), ('NumPy', 'pobj'), ('SciPy', 'conj'), ('allow', 'relcl'), ('Python', 'compound'), ('developers', 'nsubj'), ('perform', 'ccomp'), ('domain', 'nmod'), ('specific', 'amod'), ('tasks', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Scikit, -], [-, learn], [learn, Scikit], [Scikit, -], [-, learn], [learn, library], [library, Scikit], [Scikit, libraries], [libraries, build], [build, capabilities], [capabilities, provided], [provided, NumPy], [NumPy, SciPy], [SciPy, allow], [allow, Python], [Python, developers], [developers, perform], [perform, domain], [domain, specific], [specific, tasks], [tasks, .]]
+
+>> Trigrams: 
+[[Scikit, -, learn], [-, learn, Scikit], [learn, Scikit, -], [Scikit, -, learn], [-, learn, library], [learn, library, Scikit], [library, Scikit, libraries], [Scikit, libraries, build], [libraries, build, capabilities], [build, capabilities, provided], [capabilities, provided, NumPy], [provided, NumPy, SciPy], [NumPy, SciPy, allow], [SciPy, allow, Python], [allow, Python, developers], [Python, developers, perform], [developers, perform, domain], [perform, domain, specific], [domain, specific, tasks], [specific, tasks, .]]
+
+>> Noun Phrases are: 
+[The Scikit-learn library, many Scikit libraries, the capabilities, NumPy, SciPy, Python developers, domain specific tasks]
+
+>> Named Entities are: 
+[('one', 'CARDINAL'), ('NumPy', 'PERSON'), ('SciPy', 'PERSON')]
+
+
+============================ Sentence 98 =============================
+
+Scikit-learn library focuses on data mining and data analysis, it provides access to following sort of functionality: Classification Regression Clustering Dimensionality reduction Model selection Pre-processing Scikit-learn is the most important library we are going to learn in this subject     Prof. Arjun V. Bala #3150713 (PDS)      Unit 02 – Data Science and Python ‹#›  6) Keras and TensorFlow Keras is an application programming interface (API) that is used to train deep learning models. 
+
+
+>> Tokens are: 
+[Scikit, -, learn, library, focuses, data, mining, data, analysis, ,, provides, access, following, sort, functionality, :, Classification, Regression, Clustering, Dimensionality, reduction, Model, selection, Pre, -, processing, Scikit, -, learn, important, library, going, learn, subject,     , Prof., Arjun, V., Bala, #, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  , 6, ), Keras, TensorFlow, Keras, application, programming, interface, (, API, ), train, deep, learning, models, .] 
+
+>> PoS Tags are: 
+[('Scikit', 'PROPN'), ('-', 'PUNCT'), ('learn', 'PROPN'), ('library', 'NOUN'), ('focuses', 'VERB'), ('data', 'NOUN'), ('mining', 'NOUN'), ('data', 'NOUN'), ('analysis', 'NOUN'), (',', 'PUNCT'), ('provides', 'VERB'), ('access', 'NOUN'), ('following', 'VERB'), ('sort', 'NOUN'), ('functionality', 'NOUN'), (':', 'PUNCT'), ('Classification', 'PROPN'), ('Regression', 'NOUN'), ('Clustering', 'PROPN'), ('Dimensionality', 'NOUN'), ('reduction', 'NOUN'), ('Model', 'PROPN'), ('selection', 'NOUN'), ('Pre', 'ADJ'), ('-', 'ADJ'), ('processing', 'ADJ'), ('Scikit', 'PROPN'), ('-', 'PUNCT'), ('learn', 'PROPN'), ('important', 'ADJ'), ('library', 'NOUN'), ('going', 'VERB'), ('learn', 'VERB'), ('subject', 'ADJ'), ('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN'), ('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'PART'), (' ', 'SPACE'), ('6', 'NUM'), (')', 'PUNCT'), ('Keras', 'PROPN'), ('TensorFlow', 'PROPN'), ('Keras', 'PROPN'), ('application', 'NOUN'), ('programming', 'NOUN'), ('interface', 'NOUN'), ('(', 'PUNCT'), ('API', 'PROPN'), (')', 'PUNCT'), ('train', 'VERB'), ('deep', 'ADJ'), ('learning', 'NOUN'), ('models', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Scikit', 'npadvmod'), ('-', 'punct'), ('learn', 'compound'), ('library', 'nsubj'), ('focuses', 'ccomp'), ('data', 'nmod'), ('mining', 'nmod'), ('data', 'conj'), ('analysis', 'pobj'), (',', 'punct'), ('provides', 'ccomp'), ('access', 'dobj'), ('following', 'pcomp'), ('sort', 'dobj'), ('functionality', 'pobj'), (':', 'punct'), ('Classification', 'compound'), ('Regression', 'compound'), ('Clustering', 'compound'), ('Dimensionality', 'compound'), ('reduction', 'compound'), ('Model', 'compound'), ('selection', 'compound'), ('Pre', 'amod'), ('-', 'amod'), ('processing', 'amod'), ('Scikit', 'compound'), ('-', 'punct'), ('learn', 'nsubj'), ('important', 'amod'), ('library', 'attr'), ('going', 'relcl'), ('learn', 'xcomp'), ('subject', 'amod'), ('    ', 'compound'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'pobj'), ('#', 'nmod'), ('3150713', 'dobj'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('\uf077', 'advcl'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'nsubj'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('6', 'nummod'), (')', 'punct'), ('Keras', 'conj'), ('TensorFlow', 'compound'), ('Keras', 'conj'), ('application', 'compound'), ('programming', 'compound'), ('interface', 'attr'), ('(', 'punct'), ('API', 'appos'), (')', 'punct'), ('train', 'xcomp'), ('deep', 'amod'), ('learning', 'compound'), ('models', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Scikit, -], [-, learn], [learn, library], [library, focuses], [focuses, data], [data, mining], [mining, data], [data, analysis], [analysis, ,], [,, provides], [provides, access], [access, following], [following, sort], [sort, functionality], [functionality, :], [:, Classification], [Classification, Regression], [Regression, Clustering], [Clustering, Dimensionality], [Dimensionality, reduction], [reduction, Model], [Model, selection], [selection, Pre], [Pre, -], [-, processing], [processing, Scikit], [Scikit, -], [-, learn], [learn, important], [important, library], [library, going], [going, learn], [learn, subject], [subject,     ], [    , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala], [Bala, #], [#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ], [ , 6], [6, )], [), Keras], [Keras, TensorFlow], [TensorFlow, Keras], [Keras, application], [application, programming], [programming, interface], [interface, (], [(, API], [API, )], [), train], [train, deep], [deep, learning], [learning, models], [models, .]]
+
+>> Trigrams: 
+[[Scikit, -, learn], [-, learn, library], [learn, library, focuses], [library, focuses, data], [focuses, data, mining], [data, mining, data], [mining, data, analysis], [data, analysis, ,], [analysis, ,, provides], [,, provides, access], [provides, access, following], [access, following, sort], [following, sort, functionality], [sort, functionality, :], [functionality, :, Classification], [:, Classification, Regression], [Classification, Regression, Clustering], [Regression, Clustering, Dimensionality], [Clustering, Dimensionality, reduction], [Dimensionality, reduction, Model], [reduction, Model, selection], [Model, selection, Pre], [selection, Pre, -], [Pre, -, processing], [-, processing, Scikit], [processing, Scikit, -], [Scikit, -, learn], [-, learn, important], [learn, important, library], [important, library, going], [library, going, learn], [going, learn, subject], [learn, subject,     ], [subject,     , Prof.], [    , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala], [V., Bala, #], [Bala, #, 3150713], [#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ], [‹#›,  , 6], [ , 6, )], [6, ), Keras], [), Keras, TensorFlow], [Keras, TensorFlow, Keras], [TensorFlow, Keras, application], [Keras, application, programming], [application, programming, interface], [programming, interface, (], [interface, (, API], [(, API, )], [API, ), train], [), train, deep], [train, deep, learning], [deep, learning, models], [learning, models, .]]
+
+>> Noun Phrases are: 
+[Scikit-learn library, data mining and data analysis, it, access, sort, functionality, Classification Regression Clustering Dimensionality reduction Model selection Pre-processing Scikit-learn, the most important library, we, this subject     Prof. Arjun V. Bala, (PDS, Unit, Data Science, Python, Keras, TensorFlow Keras, an application programming interface, API, deep learning models]
+
+>> Named Entities are: 
+[('Model', 'PERSON'), ('Arjun V. Bala', 'PERSON'), ('PDS', 'ORG'), ('02', 'CARDINAL'), ('6', 'CARDINAL'), ('Keras', 'PERSON'), ('TensorFlow Keras', 'GPE')]
+
+
+============================ Sentence 99 =============================
+
+An API often specifies a model for doing something, but it doesn’t provide an implementation. 
+
+
+>> Tokens are: 
+[API, specifies, model, ,, provide, implementation, .] 
+
+>> PoS Tags are: 
+[('API', 'NOUN'), ('specifies', 'VERB'), ('model', 'NOUN'), (',', 'PUNCT'), ('provide', 'VERB'), ('implementation', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('API', 'nsubj'), ('specifies', 'ROOT'), ('model', 'dobj'), (',', 'punct'), ('provide', 'conj'), ('implementation', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[API, specifies], [specifies, model], [model, ,], [,, provide], [provide, implementation], [implementation, .]]
+
+>> Trigrams: 
+[[API, specifies, model], [specifies, model, ,], [model, ,, provide], [,, provide, implementation], [provide, implementation, .]]
+
+>> Noun Phrases are: 
+[An API, a model, something, it, an implementation]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 100 =============================
+
+TensorFlow is an implementation for the keras, there are many other implementations for the keras like Microsoft’s cognitive Toolkit, CNKT Theano     Prof. Arjun V. Bala 
+
+
+>> Tokens are: 
+[TensorFlow, implementation, keras, ,, implementations, keras, like, Microsoft, cognitive, Toolkit, ,, CNKT, Theano,     , Prof., Arjun, V., Bala] 
+
+>> PoS Tags are: 
+[('TensorFlow', 'PROPN'), ('implementation', 'NOUN'), ('keras', 'NOUN'), (',', 'PUNCT'), ('implementations', 'NOUN'), ('keras', 'NOUN'), ('like', 'ADP'), ('Microsoft', 'PROPN'), ('cognitive', 'ADJ'), ('Toolkit', 'NOUN'), (',', 'PUNCT'), ('CNKT', 'PROPN'), ('Theano', 'PROPN'), ('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('TensorFlow', 'nsubj'), ('implementation', 'attr'), ('keras', 'pobj'), (',', 'punct'), ('implementations', 'attr'), ('keras', 'pobj'), ('like', 'prep'), ('Microsoft', 'poss'), ('cognitive', 'amod'), ('Toolkit', 'pobj'), (',', 'punct'), ('CNKT', 'compound'), ('Theano', 'npadvmod'), ('    ', 'punct'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'appos')]
+
+>> Bigrams: 
+[[TensorFlow, implementation], [implementation, keras], [keras, ,], [,, implementations], [implementations, keras], [keras, like], [like, Microsoft], [Microsoft, cognitive], [cognitive, Toolkit], [Toolkit, ,], [,, CNKT], [CNKT, Theano], [Theano,     ], [    , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala]]
+
+>> Trigrams: 
+[[TensorFlow, implementation, keras], [implementation, keras, ,], [keras, ,, implementations], [,, implementations, keras], [implementations, keras, like], [keras, like, Microsoft], [like, Microsoft, cognitive], [Microsoft, cognitive, Toolkit], [cognitive, Toolkit, ,], [Toolkit, ,, CNKT], [,, CNKT, Theano], [CNKT, Theano,     ], [Theano,     , Prof.], [    , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala]]
+
+>> Noun Phrases are: 
+[TensorFlow, an implementation, the keras, many other implementations, the keras, Microsoft’s cognitive Toolkit, Prof. Arjun V. Bala]
+
+>> Named Entities are: 
+[('TensorFlow', 'ORG'), ('Microsoft’s', 'ORG'), ('Toolkit', 'ORG'), ('CNKT', 'ORG'), ('Theano', 'PERSON'), ('Arjun V. Bala', 'PERSON')]
+
+
+============================ Sentence 101 =============================
+
+#3150713 (PDS)      Unit 02 
+
+
+>> Tokens are: 
+[#, 3150713, (, PDS, ),   , ,   , Unit, 02] 
+
+>> PoS Tags are: 
+[('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('3150713', 'nummod'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('\uf077', 'ROOT'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod')]
+
+>> Bigrams: 
+[[#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02]]
+
+>> Trigrams: 
+[[#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02]]
+
+>> Noun Phrases are: 
+[(PDS, Unit]
+
+>> Named Entities are: 
+[('PDS', 'ORG'), ('02', 'CARDINAL')]
+
+
+============================ Sentence 102 =============================
+
+– Data Science and Python ‹#›  7) NetworkX NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks (For example GPS setup to discover routes through city streets). 
+
+
+>> Tokens are: 
+[–, Data, Science, Python, ‹#›,  , 7, ), NetworkX, NetworkX, Python, package, creation, ,, manipulation, ,, study, structure, ,, dynamics, ,, functions, complex, networks, (, example, GPS, setup, discover, routes, city, streets, ), .] 
+
+>> PoS Tags are: 
+[('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'PART'), (' ', 'SPACE'), ('7', 'NUM'), (')', 'PUNCT'), ('NetworkX', 'PUNCT'), ('NetworkX', 'PUNCT'), ('Python', 'PROPN'), ('package', 'NOUN'), ('creation', 'NOUN'), (',', 'PUNCT'), ('manipulation', 'NOUN'), (',', 'PUNCT'), ('study', 'NOUN'), ('structure', 'NOUN'), (',', 'PUNCT'), ('dynamics', 'NOUN'), (',', 'PUNCT'), ('functions', 'NOUN'), ('complex', 'ADJ'), ('networks', 'NOUN'), ('(', 'PUNCT'), ('example', 'NOUN'), ('GPS', 'NOUN'), ('setup', 'NOUN'), ('discover', 'VERB'), ('routes', 'NOUN'), ('city', 'NOUN'), ('streets', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('–', 'punct'), ('Data', 'compound'), ('Science', 'nmod'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'appos'), ('7', 'nummod'), (')', 'punct'), ('NetworkX', 'punct'), ('NetworkX', 'nsubj'), ('Python', 'compound'), ('package', 'attr'), ('creation', 'pobj'), (',', 'punct'), ('manipulation', 'conj'), (',', 'punct'), ('study', 'conj'), ('structure', 'pobj'), (',', 'punct'), ('dynamics', 'conj'), (',', 'punct'), ('functions', 'conj'), ('complex', 'amod'), ('networks', 'pobj'), ('(', 'punct'), ('example', 'pobj'), ('GPS', 'compound'), ('setup', 'nmod'), ('discover', 'xcomp'), ('routes', 'dobj'), ('city', 'compound'), ('streets', 'pobj'), (')', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ], [ , 7], [7, )], [), NetworkX], [NetworkX, NetworkX], [NetworkX, Python], [Python, package], [package, creation], [creation, ,], [,, manipulation], [manipulation, ,], [,, study], [study, structure], [structure, ,], [,, dynamics], [dynamics, ,], [,, functions], [functions, complex], [complex, networks], [networks, (], [(, example], [example, GPS], [GPS, setup], [setup, discover], [discover, routes], [routes, city], [city, streets], [streets, )], [), .]]
+
+>> Trigrams: 
+[[–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ], [‹#›,  , 7], [ , 7, )], [7, ), NetworkX], [), NetworkX, NetworkX], [NetworkX, NetworkX, Python], [NetworkX, Python, package], [Python, package, creation], [package, creation, ,], [creation, ,, manipulation], [,, manipulation, ,], [manipulation, ,, study], [,, study, structure], [study, structure, ,], [structure, ,, dynamics], [,, dynamics, ,], [dynamics, ,, functions], [,, functions, complex], [functions, complex, networks], [complex, networks, (], [networks, (, example], [(, example, GPS], [example, GPS, setup], [GPS, setup, discover], [setup, discover, routes], [discover, routes, city], [routes, city, streets], [city, streets, )], [streets, ), .]]
+
+>> Noun Phrases are: 
+[a Python package, the creation, manipulation, study, the structure, dynamics, functions, complex networks, example, routes, city streets]
+
+>> Named Entities are: 
+[('7', 'CARDINAL')]
+
+
+============================ Sentence 103 =============================
+
+NetworkX also provides the means to output the resulting analysis in a form that humans understand. 
+
+
+>> Tokens are: 
+[NetworkX, provides, means, output, resulting, analysis, form, humans, understand, .] 
+
+>> PoS Tags are: 
+[('NetworkX', 'X'), ('provides', 'VERB'), ('means', 'NOUN'), ('output', 'VERB'), ('resulting', 'VERB'), ('analysis', 'NOUN'), ('form', 'NOUN'), ('humans', 'NOUN'), ('understand', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('NetworkX', 'nsubj'), ('provides', 'ROOT'), ('means', 'dobj'), ('output', 'advcl'), ('resulting', 'amod'), ('analysis', 'dobj'), ('form', 'pobj'), ('humans', 'nsubj'), ('understand', 'relcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[NetworkX, provides], [provides, means], [means, output], [output, resulting], [resulting, analysis], [analysis, form], [form, humans], [humans, understand], [understand, .]]
+
+>> Trigrams: 
+[[NetworkX, provides, means], [provides, means, output], [means, output, resulting], [output, resulting, analysis], [resulting, analysis, form], [analysis, form, humans], [form, humans, understand], [humans, understand, .]]
+
+>> Noun Phrases are: 
+[the means, the resulting analysis, a form, humans]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 104 =============================
+
+Main advantage of using NetworkX is that nodes can be anything (including images) and edges can hold arbitrary data. 
+
+
+>> Tokens are: 
+[Main, advantage, NetworkX, nodes, (, including, images, ), edges, hold, arbitrary, data, .] 
+
+>> PoS Tags are: 
+[('Main', 'ADJ'), ('advantage', 'NOUN'), ('NetworkX', 'PROPN'), ('nodes', 'NOUN'), ('(', 'PUNCT'), ('including', 'VERB'), ('images', 'NOUN'), (')', 'PUNCT'), ('edges', 'NOUN'), ('hold', 'VERB'), ('arbitrary', 'ADJ'), ('data', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Main', 'amod'), ('advantage', 'nsubj'), ('NetworkX', 'dobj'), ('nodes', 'nsubj'), ('(', 'punct'), ('including', 'prep'), ('images', 'pobj'), (')', 'punct'), ('edges', 'nsubj'), ('hold', 'conj'), ('arbitrary', 'amod'), ('data', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Main, advantage], [advantage, NetworkX], [NetworkX, nodes], [nodes, (], [(, including], [including, images], [images, )], [), edges], [edges, hold], [hold, arbitrary], [arbitrary, data], [data, .]]
+
+>> Trigrams: 
+[[Main, advantage, NetworkX], [advantage, NetworkX, nodes], [NetworkX, nodes, (], [nodes, (, including], [(, including, images], [including, images, )], [images, ), edges], [), edges, hold], [edges, hold, arbitrary], [hold, arbitrary, data], [arbitrary, data, .]]
+
+>> Noun Phrases are: 
+[Main advantage, NetworkX, nodes, anything, images, edges, arbitrary data]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 105 =============================
+
+    Prof. Arjun V. Bala 
+
+
+>> Tokens are: 
+[    , Prof., Arjun, V., Bala] 
+
+>> PoS Tags are: 
+[('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('    ', 'compound'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'ROOT')]
+
+>> Bigrams: 
+[[    , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala]]
+
+>> Trigrams: 
+[[    , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala]]
+
+>> Noun Phrases are: 
+[    Prof. Arjun V. Bala]
+
+>> Named Entities are: 
+[('Arjun V. Bala', 'PERSON')]
+
+
+============================ Sentence 106 =============================
+
+#3150713 (PDS)      Unit 02 – Data Science and Python ‹#›  8) Beautiful Soup Beautiful Soup is a Python package for parsing HTML and XML documents. 
+
+
+>> Tokens are: 
+[#, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,  , 8), Beautiful, Soup, Beautiful, Soup, Python, package, parsing, HTML, XML, documents, .] 
+
+>> PoS Tags are: 
+[('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'PART'), (' ', 'SPACE'), ('8)', 'PROPN'), ('Beautiful', 'PROPN'), ('Soup', 'PROPN'), ('Beautiful', 'PROPN'), ('Soup', 'PROPN'), ('Python', 'PROPN'), ('package', 'NOUN'), ('parsing', 'VERB'), ('HTML', 'PROPN'), ('XML', 'NOUN'), ('documents', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('3150713', 'nummod'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('\uf077', 'ccomp'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'nmod'), ('Python', 'conj'), ('‹#›', 'punct'), (' ', 'nmod'), ('8)', 'compound'), ('Beautiful', 'compound'), ('Soup', 'compound'), ('Beautiful', 'compound'), ('Soup', 'nsubj'), ('Python', 'compound'), ('package', 'attr'), ('parsing', 'pcomp'), ('HTML', 'dobj'), ('XML', 'compound'), ('documents', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,  ], [ , 8)], [8), Beautiful], [Beautiful, Soup], [Soup, Beautiful], [Beautiful, Soup], [Soup, Python], [Python, package], [package, parsing], [parsing, HTML], [HTML, XML], [XML, documents], [documents, .]]
+
+>> Trigrams: 
+[[#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,  ], [‹#›,  , 8)], [ , 8), Beautiful], [8), Beautiful, Soup], [Beautiful, Soup, Beautiful], [Soup, Beautiful, Soup], [Beautiful, Soup, Python], [Soup, Python, package], [Python, package, parsing], [package, parsing, HTML], [parsing, HTML, XML], [HTML, XML, documents], [XML, documents, .]]
+
+>> Noun Phrases are: 
+[(PDS, Unit, Data Science and Python ‹#›  8) Beautiful Soup Beautiful Soup, a Python package, HTML, XML documents]
+
+>> Named Entities are: 
+[('PDS', 'ORG'), ('02', 'CARDINAL'), ('Beautiful Soup', 'PERSON')]
+
+
+============================ Sentence 107 =============================
+
+It creates a parse tree for parsed pages that can be used to extract data from HTML, which is useful for web scraping. 
+
+
+>> Tokens are: 
+[creates, parse, tree, parsed, pages, extract, data, HTML, ,, useful, web, scraping, .] 
+
+>> PoS Tags are: 
+[('creates', 'VERB'), ('parse', 'NOUN'), ('tree', 'NOUN'), ('parsed', 'VERB'), ('pages', 'NOUN'), ('extract', 'VERB'), ('data', 'NOUN'), ('HTML', 'PROPN'), (',', 'PUNCT'), ('useful', 'ADJ'), ('web', 'NOUN'), ('scraping', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('creates', 'ROOT'), ('parse', 'compound'), ('tree', 'dobj'), ('parsed', 'amod'), ('pages', 'pobj'), ('extract', 'xcomp'), ('data', 'dobj'), ('HTML', 'pobj'), (',', 'punct'), ('useful', 'acomp'), ('web', 'compound'), ('scraping', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[creates, parse], [parse, tree], [tree, parsed], [parsed, pages], [pages, extract], [extract, data], [data, HTML], [HTML, ,], [,, useful], [useful, web], [web, scraping], [scraping, .]]
+
+>> Trigrams: 
+[[creates, parse, tree], [parse, tree, parsed], [tree, parsed, pages], [parsed, pages, extract], [pages, extract, data], [extract, data, HTML], [data, HTML, ,], [HTML, ,, useful], [,, useful, web], [useful, web, scraping], [web, scraping, .]]
+
+>> Noun Phrases are: 
+[It, a parse tree, parsed pages, data, HTML, web scraping]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 108 =============================
+
+     Prof. Arjun V. Bala 
+
+
+>> Tokens are: 
+[     , Prof., Arjun, V., Bala] 
+
+>> PoS Tags are: 
+[('     ', 'SPACE'), ('Prof.', 'PROPN'), ('Arjun', 'PROPN'), ('V.', 'PROPN'), ('Bala', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('     ', 'compound'), ('Prof.', 'compound'), ('Arjun', 'compound'), ('V.', 'compound'), ('Bala', 'ROOT')]
+
+>> Bigrams: 
+[[     , Prof.], [Prof., Arjun], [Arjun, V.], [V., Bala]]
+
+>> Trigrams: 
+[[     , Prof., Arjun], [Prof., Arjun, V.], [Arjun, V., Bala]]
+
+>> Noun Phrases are: 
+[     Prof. Arjun V. Bala]
+
+>> Named Entities are: 
+[('Arjun V. Bala', 'PERSON')]
+
+
+============================ Sentence 109 =============================
+
+#3150713 (PDS)      Unit 02 – Data Science and Python ‹#›                                /docProps/thumbnail.jpeg 
+
+
+>> Tokens are: 
+[#, 3150713, (, PDS, ),   , ,   , Unit, 02, –, Data, Science, Python, ‹#›,                                , /docProps, /, thumbnail.jpeg] 
+
+>> PoS Tags are: 
+[('#', 'NOUN'), ('3150713', 'NUM'), ('(', 'PUNCT'), ('PDS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('02', 'NUM'), ('–', 'PUNCT'), ('Data', 'PROPN'), ('Science', 'PROPN'), ('Python', 'PROPN'), ('‹#›', 'VERB'), ('                               ', 'SPACE'), ('/docProps', 'X'), ('/', 'SYM'), ('thumbnail.jpeg', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('3150713', 'nummod'), ('(', 'punct'), ('PDS', 'appos'), (')', 'punct'), ('  ', 'nsubj'), ('\uf077', 'ccomp'), ('  ', 'punct'), ('Unit', 'appos'), ('02', 'nummod'), ('–', 'punct'), ('Data', 'compound'), ('Science', 'nsubj'), ('Python', 'conj'), ('‹#›', 'ROOT'), ('                               ', 'dobj'), ('/docProps', 'punct'), ('/', 'punct'), ('thumbnail.jpeg', 'punct')]
+
+>> Bigrams: 
+[[#, 3150713], [3150713, (], [(, PDS], [PDS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 02], [02, –], [–, Data], [Data, Science], [Science, Python], [Python, ‹#›], [‹#›,                                ], [                               , /docProps], [/docProps, /], [/, thumbnail.jpeg]]
+
+>> Trigrams: 
+[[#, 3150713, (], [3150713, (, PDS], [(, PDS, )], [PDS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 02], [Unit, 02, –], [02, –, Data], [–, Data, Science], [Data, Science, Python], [Science, Python, ‹#›], [Python, ‹#›,                                ], [‹#›,                                , /docProps], [                               , /docProps, /], [/docProps, /, thumbnail.jpeg]]
+
+>> Noun Phrases are: 
+[(PDS, Unit, Data Science, Python]
+
+>> Named Entities are: 
+[('PDS', 'ORG'), ('02', 'CARDINAL')]

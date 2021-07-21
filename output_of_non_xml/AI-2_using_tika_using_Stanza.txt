@@ -1,0 +1,925 @@
+
+
+========================== Sentence 1 ===========================
+
+ AI-2  Applications of AI AI has been dominant in various fields such as − · Gaming − AI plays crucial role in strategic games such as chess, poker, tic-tac-toe, etc., where machine can think of large number of possible positions based on heuristic knowledge. 
+
+Tokens are: 
+>> ['AI', '-', '2', 'Applications', 'of', 'AI', 'AI', 'has', 'been', 'dominant', 'in', 'various', 'fields', 'such', 'as', '−', '·', 'Gaming', '−', 'AI', 'plays', 'crucial', 'role', 'in', 'strategic', 'games', 'such', 'as', 'chess', ',', 'poker', ',', 'tic', '-tac', '-', 'toe', ',', 'etc.', ',', 'where', 'machine', 'can', 'think', 'of', 'large', 'number', 'of', 'possible', 'positions', 'based', 'on', 'heuristic', 'knowledge', '.'] 
+
+ UPOS tags are: 
+>> [('AI', 'NOUN'), ('-', 'PUNCT'), ('2', 'NUM'), ('Applications', 'NOUN'), ('of', 'ADP'), ('AI', 'PROPN'), ('AI', 'NOUN'), ('has', 'AUX'), ('been', 'AUX'), ('dominant', 'ADJ'), ('in', 'ADP'), ('various', 'ADJ'), ('fields', 'NOUN'), ('such', 'ADJ'), ('as', 'ADP'), ('−', 'PUNCT'), ('·', 'PUNCT'), ('Gaming', 'NOUN'), ('−', 'PUNCT'), ('AI', 'ADV'), ('plays', 'VERB'), ('crucial', 'ADJ'), ('role', 'NOUN'), ('in', 'ADP'), ('strategic', 'ADJ'), ('games', 'NOUN'), ('such', 'ADJ'), ('as', 'ADP'), ('chess', 'NOUN'), (',', 'PUNCT'), ('poker', 'NOUN'), (',', 'PUNCT'), ('tic', 'NOUN'), ('-tac', 'NOUN'), ('-', 'PUNCT'), ('toe', 'NOUN'), (',', 'PUNCT'), ('etc.', 'X'), (',', 'PUNCT'), ('where', 'SCONJ'), ('machine', 'NOUN'), ('can', 'AUX'), ('think', 'VERB'), ('of', 'ADP'), ('large', 'ADJ'), ('number', 'NOUN'), ('of', 'ADP'), ('possible', 'ADJ'), ('positions', 'NOUN'), ('based', 'VERB'), ('on', 'ADP'), ('heuristic', 'ADJ'), ('knowledge', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('AI', 'NN'), ('-', ','), ('2', 'CD'), ('Applications', 'NNS'), ('of', 'IN'), ('AI', 'NNP'), ('AI', 'NN'), ('has', 'VBZ'), ('been', 'VBN'), ('dominant', 'JJ'), ('in', 'IN'), ('various', 'JJ'), ('fields', 'NNS'), ('such', 'JJ'), ('as', 'IN'), ('−', ','), ('·', 'NFP'), ('Gaming', 'NN'), ('−', ','), ('AI', 'RB'), ('plays', 'VBZ'), ('crucial', 'JJ'), ('role', 'NN'), ('in', 'IN'), ('strategic', 'JJ'), ('games', 'NNS'), ('such', 'JJ'), ('as', 'IN'), ('chess', 'NN'), (',', ','), ('poker', 'NN'), (',', ','), ('tic', 'NN'), ('-tac', 'NN'), ('-', 'HYPH'), ('toe', 'NN'), (',', ','), ('etc.', 'FW'), (',', ','), ('where', 'WRB'), ('machine', 'NN'), ('can', 'MD'), ('think', 'VB'), ('of', 'IN'), ('large', 'JJ'), ('number', 'NN'), ('of', 'IN'), ('possible', 'JJ'), ('positions', 'NNS'), ('based', 'VBN'), ('on', 'IN'), ('heuristic', 'JJ'), ('knowledge', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('AI', 'ai'), ('-', '-'), ('2', '2'), ('Applications', 'application'), ('of', 'of'), ('AI', 'AI'), ('AI', 'ai'), ('has', 'have'), ('been', 'be'), ('dominant', 'dominant'), ('in', 'in'), ('various', 'various'), ('fields', 'field'), ('such', 'such'), ('as', 'as'), ('−', "''"), ('·', '·'), ('Gaming', 'gaming'), ('−', "''"), ('AI', 'ai'), ('plays', 'play'), ('crucial', 'crucial'), ('role', 'role'), ('in', 'in'), ('strategic', 'strategic'), ('games', 'game'), ('such', 'such'), ('as', 'as'), ('chess', 'chess'), (',', ','), ('poker', 'poker'), (',', ','), ('tic', 'tic'), ('-tac', '-tac'), ('-', '-'), ('toe', 'toe'), (',', ','), ('etc.', 'etc.'), (',', ','), ('where', 'where'), ('machine', 'machine'), ('can', 'can'), ('think', 'think'), ('of', 'of'), ('large', 'large'), ('number', 'number'), ('of', 'of'), ('possible', 'possible'), ('positions', 'position'), ('based', 'base'), ('on', 'on'), ('heuristic', 'heuristic'), ('knowledge', 'knowledge'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('AI', 'root'), 'root'), (('-', 'AI'), 'punct'), (('2', 'Applications'), 'nummod'), (('Applications', 'dominant'), 'nsubj'), (('of', 'AI'), 'case'), (('AI', 'AI'), 'compound'), (('AI', 'Applications'), 'nmod'), (('has', 'dominant'), 'aux'), (('been', 'dominant'), 'cop'), (('dominant', 'AI'), 'appos'), (('in', 'fields'), 'case'), (('various', 'fields'), 'amod'), (('fields', 'dominant'), 'obl'), (('such', 'Gaming'), 'case'), (('as', 'such'), 'fixed'), (('−', 'Gaming'), 'punct'), (('·', 'Gaming'), 'punct'), (('Gaming', 'fields'), 'nmod'), (('−', 'Gaming'), 'punct'), (('AI', 'plays'), 'advmod'), (('plays', 'dominant'), 'parataxis'), (('crucial', 'role'), 'amod'), (('role', 'plays'), 'obj'), (('in', 'games'), 'case'), (('strategic', 'games'), 'amod'), (('games', 'role'), 'nmod'), (('such', 'chess'), 'case'), (('as', 'such'), 'fixed'), (('chess', 'games'), 'nmod'), ((',', 'poker'), 'punct'), (('poker', 'chess'), 'conj'), ((',', 'toe'), 'punct'), (('tic', 'toe'), 'compound'), (('-tac', 'toe'), 'compound'), (('-', 'toe'), 'punct'), (('toe', 'chess'), 'conj'), ((',', 'etc.'), 'punct'), (('etc.', 'chess'), 'conj'), ((',', 'think'), 'punct'), (('where', 'think'), 'mark'), (('machine', 'think'), 'nsubj'), (('can', 'think'), 'aux'), (('think', 'chess'), 'acl:relcl'), (('of', 'number'), 'case'), (('large', 'number'), 'amod'), (('number', 'think'), 'obl'), (('of', 'positions'), 'case'), (('possible', 'positions'), 'amod'), (('positions', 'number'), 'nmod'), (('based', 'positions'), 'acl'), (('on', 'knowledge'), 'case'), (('heuristic', 'knowledge'), 'amod'), (('knowledge', 'based'), 'obl'), (('.', 'AI'), 'punct')]
+
+ Named Entities are: 
+>> [('AI', 'ORG')]
+
+========================== Sentence 2 ===========================
+
+ · Natural Language Processing − 
+
+Tokens are: 
+>> ['·', 'Natural', 'Language', 'Processing', '−'] 
+
+ UPOS tags are: 
+>> [('·', 'PUNCT'), ('Natural', 'ADJ'), ('Language', 'NOUN'), ('Processing', 'NOUN'), ('−', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('·', 'NFP'), ('Natural', 'JJ'), ('Language', 'NN'), ('Processing', 'NN'), ('−', '.')] 
+
+ Lemmas are: 
+>> [('·', '·'), ('Natural', 'Natural'), ('Language', 'language'), ('Processing', 'processing'), ('−', "''")] 
+
+ Dependency tags are: 
+>> [(('·', 'Processing'), 'punct'), (('Natural', 'Language'), 'amod'), (('Language', 'Processing'), 'compound'), (('Processing', 'root'), 'root'), (('−', 'Processing'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 3 ===========================
+
+ It is possible to interact with the computer that understands natural language spoken by humans. 
+
+Tokens are: 
+>> ['It', 'is', 'possible', 'to', 'interact', 'with', 'the', 'computer', 'that', 'understands', 'natural', 'language', 'spoken', 'by', 'humans', '.'] 
+
+ UPOS tags are: 
+>> [('It', 'PRON'), ('is', 'AUX'), ('possible', 'ADJ'), ('to', 'PART'), ('interact', 'VERB'), ('with', 'ADP'), ('the', 'DET'), ('computer', 'NOUN'), ('that', 'PRON'), ('understands', 'VERB'), ('natural', 'ADJ'), ('language', 'NOUN'), ('spoken', 'VERB'), ('by', 'ADP'), ('humans', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('It', 'PRP'), ('is', 'VBZ'), ('possible', 'JJ'), ('to', 'TO'), ('interact', 'VB'), ('with', 'IN'), ('the', 'DT'), ('computer', 'NN'), ('that', 'WDT'), ('understands', 'VBZ'), ('natural', 'JJ'), ('language', 'NN'), ('spoken', 'VBN'), ('by', 'IN'), ('humans', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('It', 'it'), ('is', 'be'), ('possible', 'possible'), ('to', 'to'), ('interact', 'interact'), ('with', 'with'), ('the', 'the'), ('computer', 'computer'), ('that', 'that'), ('understands', 'understand'), ('natural', 'natural'), ('language', 'language'), ('spoken', 'speak'), ('by', 'by'), ('humans', 'human'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('It', 'possible'), 'expl'), (('is', 'possible'), 'cop'), (('possible', 'root'), 'root'), (('to', 'interact'), 'mark'), (('interact', 'possible'), 'csubj'), (('with', 'computer'), 'case'), (('the', 'computer'), 'det'), (('computer', 'interact'), 'obl'), (('that', 'understands'), 'nsubj'), (('understands', 'computer'), 'acl:relcl'), (('natural', 'language'), 'amod'), (('language', 'understands'), 'obj'), (('spoken', 'language'), 'acl'), (('by', 'humans'), 'case'), (('humans', 'spoken'), 'obl'), (('.', 'possible'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 4 ===========================
+
+ · Expert Systems − 
+
+Tokens are: 
+>> ['·', 'Expert', 'Systems', '−'] 
+
+ UPOS tags are: 
+>> [('·', 'PUNCT'), ('Expert', 'NOUN'), ('Systems', 'NOUN'), ('−', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('·', 'NFP'), ('Expert', 'NN'), ('Systems', 'NNS'), ('−', '.')] 
+
+ Lemmas are: 
+>> [('·', '·'), ('Expert', 'expert'), ('Systems', 'system'), ('−', "''")] 
+
+ Dependency tags are: 
+>> [(('·', 'Systems'), 'punct'), (('Expert', 'Systems'), 'compound'), (('Systems', 'root'), 'root'), (('−', 'Systems'), 'punct')]
+
+ Named Entities are: 
+>> [('· Expert Systems', 'ORG')]
+
+========================== Sentence 5 ===========================
+
+ There are some applications which integrate machine, software, and special information to impart reasoning and advising. 
+
+Tokens are: 
+>> ['There', 'are', 'some', 'applications', 'which', 'integrate', 'machine', ',', 'software', ',', 'and', 'special', 'information', 'to', 'impart', 'reasoning', 'and', 'advising', '.'] 
+
+ UPOS tags are: 
+>> [('There', 'PRON'), ('are', 'VERB'), ('some', 'DET'), ('applications', 'NOUN'), ('which', 'PRON'), ('integrate', 'VERB'), ('machine', 'NOUN'), (',', 'PUNCT'), ('software', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('special', 'ADJ'), ('information', 'NOUN'), ('to', 'PART'), ('impart', 'VERB'), ('reasoning', 'NOUN'), ('and', 'CCONJ'), ('advising', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('There', 'EX'), ('are', 'VBP'), ('some', 'DT'), ('applications', 'NNS'), ('which', 'WDT'), ('integrate', 'VBP'), ('machine', 'NN'), (',', ','), ('software', 'NN'), (',', ','), ('and', 'CC'), ('special', 'JJ'), ('information', 'NN'), ('to', 'TO'), ('impart', 'VB'), ('reasoning', 'NN'), ('and', 'CC'), ('advising', 'VBG'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('There', 'there'), ('are', 'be'), ('some', 'some'), ('applications', 'application'), ('which', 'which'), ('integrate', 'integrate'), ('machine', 'machine'), (',', ','), ('software', 'software'), (',', ','), ('and', 'and'), ('special', 'special'), ('information', 'information'), ('to', 'to'), ('impart', 'impart'), ('reasoning', 'reasoning'), ('and', 'and'), ('advising', 'advise'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('There', 'are'), 'expl'), (('are', 'root'), 'root'), (('some', 'applications'), 'det'), (('applications', 'are'), 'nsubj'), (('which', 'integrate'), 'nsubj'), (('integrate', 'applications'), 'acl:relcl'), (('machine', 'integrate'), 'obj'), ((',', 'software'), 'punct'), (('software', 'machine'), 'conj'), ((',', 'information'), 'punct'), (('and', 'information'), 'cc'), (('special', 'information'), 'amod'), (('information', 'machine'), 'conj'), (('to', 'impart'), 'mark'), (('impart', 'information'), 'acl'), (('reasoning', 'impart'), 'obj'), (('and', 'advising'), 'cc'), (('advising', 'impart'), 'conj'), (('.', 'are'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 6 ===========================
+
+ They provide explanation and advice to the users. 
+
+Tokens are: 
+>> ['They', 'provide', 'explanation', 'and', 'advice', 'to', 'the', 'users', '.'] 
+
+ UPOS tags are: 
+>> [('They', 'PRON'), ('provide', 'VERB'), ('explanation', 'NOUN'), ('and', 'CCONJ'), ('advice', 'NOUN'), ('to', 'ADP'), ('the', 'DET'), ('users', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('They', 'PRP'), ('provide', 'VBP'), ('explanation', 'NN'), ('and', 'CC'), ('advice', 'NN'), ('to', 'IN'), ('the', 'DT'), ('users', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('They', 'they'), ('provide', 'provide'), ('explanation', 'explanation'), ('and', 'and'), ('advice', 'advice'), ('to', 'to'), ('the', 'the'), ('users', 'user'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('They', 'provide'), 'nsubj'), (('provide', 'root'), 'root'), (('explanation', 'provide'), 'obj'), (('and', 'advice'), 'cc'), (('advice', 'explanation'), 'conj'), (('to', 'users'), 'case'), (('the', 'users'), 'det'), (('users', 'provide'), 'obl'), (('.', 'provide'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 7 ===========================
+
+ · Vision Systems − 
+
+Tokens are: 
+>> ['·', 'Vision', 'Systems', '−'] 
+
+ UPOS tags are: 
+>> [('·', 'PUNCT'), ('Vision', 'NOUN'), ('Systems', 'NOUN'), ('−', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('·', 'NFP'), ('Vision', 'NN'), ('Systems', 'NNS'), ('−', '.')] 
+
+ Lemmas are: 
+>> [('·', '·'), ('Vision', 'vision'), ('Systems', 'system'), ('−', "''")] 
+
+ Dependency tags are: 
+>> [(('·', 'Systems'), 'punct'), (('Vision', 'Systems'), 'compound'), (('Systems', 'root'), 'root'), (('−', 'Systems'), 'punct')]
+
+ Named Entities are: 
+>> [('· Vision Systems', 'ORG')]
+
+========================== Sentence 8 ===========================
+
+ These systems understand, interpret, and comprehend visual input on the computer. 
+
+Tokens are: 
+>> ['These', 'systems', 'understand', ',', 'interpret', ',', 'and', 'comprehend', 'visual', 'input', 'on', 'the', 'computer', '.'] 
+
+ UPOS tags are: 
+>> [('These', 'DET'), ('systems', 'NOUN'), ('understand', 'VERB'), (',', 'PUNCT'), ('interpret', 'VERB'), (',', 'PUNCT'), ('and', 'CCONJ'), ('comprehend', 'VERB'), ('visual', 'ADJ'), ('input', 'NOUN'), ('on', 'ADP'), ('the', 'DET'), ('computer', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('These', 'DT'), ('systems', 'NNS'), ('understand', 'VBP'), (',', ','), ('interpret', 'VBP'), (',', ','), ('and', 'CC'), ('comprehend', 'VBP'), ('visual', 'JJ'), ('input', 'NN'), ('on', 'IN'), ('the', 'DT'), ('computer', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('These', 'this'), ('systems', 'system'), ('understand', 'understand'), (',', ','), ('interpret', 'interpret'), (',', ','), ('and', 'and'), ('comprehend', 'comprehend'), ('visual', 'visual'), ('input', 'input'), ('on', 'on'), ('the', 'the'), ('computer', 'computer'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('These', 'systems'), 'det'), (('systems', 'understand'), 'nsubj'), (('understand', 'root'), 'root'), ((',', 'interpret'), 'punct'), (('interpret', 'understand'), 'conj'), ((',', 'comprehend'), 'punct'), (('and', 'comprehend'), 'cc'), (('comprehend', 'understand'), 'conj'), (('visual', 'input'), 'amod'), (('input', 'comprehend'), 'obj'), (('on', 'computer'), 'case'), (('the', 'computer'), 'det'), (('computer', 'comprehend'), 'obl'), (('.', 'understand'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 9 ===========================
+
+ For example, · A spying aeroplane takes photographs, which are used to figure out spatial information or map of the areas. 
+
+Tokens are: 
+>> ['For', 'example', ',', '·', 'A', 'spying', 'aeroplane', 'takes', 'photographs', ',', 'which', 'are', 'used', 'to', 'figure', 'out', 'spatial', 'information', 'or', 'map', 'of', 'the', 'areas', '.'] 
+
+ UPOS tags are: 
+>> [('For', 'ADP'), ('example', 'NOUN'), (',', 'PUNCT'), ('·', 'PUNCT'), ('A', 'DET'), ('spying', 'NOUN'), ('aeroplane', 'NOUN'), ('takes', 'VERB'), ('photographs', 'NOUN'), (',', 'PUNCT'), ('which', 'PRON'), ('are', 'AUX'), ('used', 'VERB'), ('to', 'PART'), ('figure', 'VERB'), ('out', 'ADP'), ('spatial', 'ADJ'), ('information', 'NOUN'), ('or', 'CCONJ'), ('map', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('areas', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('For', 'IN'), ('example', 'NN'), (',', ','), ('·', 'NFP'), ('A', 'DT'), ('spying', 'NN'), ('aeroplane', 'NN'), ('takes', 'VBZ'), ('photographs', 'NNS'), (',', ','), ('which', 'WDT'), ('are', 'VBP'), ('used', 'VBN'), ('to', 'TO'), ('figure', 'VB'), ('out', 'RP'), ('spatial', 'JJ'), ('information', 'NN'), ('or', 'CC'), ('map', 'NN'), ('of', 'IN'), ('the', 'DT'), ('areas', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('For', 'for'), ('example', 'example'), (',', ','), ('·', '·'), ('A', 'a'), ('spying', 'spying'), ('aeroplane', 'aeroplane'), ('takes', 'take'), ('photographs', 'photograph'), (',', ','), ('which', 'which'), ('are', 'be'), ('used', 'use'), ('to', 'to'), ('figure', 'figure'), ('out', 'out'), ('spatial', 'spatial'), ('information', 'information'), ('or', 'or'), ('map', 'map'), ('of', 'of'), ('the', 'the'), ('areas', 'area'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('For', 'example'), 'case'), (('example', 'takes'), 'obl'), ((',', 'takes'), 'punct'), (('·', 'takes'), 'punct'), (('A', 'aeroplane'), 'det'), (('spying', 'aeroplane'), 'compound'), (('aeroplane', 'takes'), 'nsubj'), (('takes', 'root'), 'root'), (('photographs', 'takes'), 'obj'), ((',', 'photographs'), 'punct'), (('which', 'used'), 'nsubj:pass'), (('are', 'used'), 'aux:pass'), (('used', 'photographs'), 'acl:relcl'), (('to', 'figure'), 'mark'), (('figure', 'used'), 'xcomp'), (('out', 'figure'), 'compound:prt'), (('spatial', 'information'), 'amod'), (('information', 'figure'), 'obj'), (('or', 'map'), 'cc'), (('map', 'information'), 'conj'), (('of', 'areas'), 'case'), (('the', 'areas'), 'det'), (('areas', 'map'), 'nmod'), (('.', 'takes'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 10 ===========================
+
+ · Doctors use clinical expert system to diagnose the patient. 
+
+Tokens are: 
+>> ['·', 'Doctors', 'use', 'clinical', 'expert', 'system', 'to', 'diagnose', 'the', 'patient', '.'] 
+
+ UPOS tags are: 
+>> [('·', 'PUNCT'), ('Doctors', 'NOUN'), ('use', 'VERB'), ('clinical', 'ADJ'), ('expert', 'NOUN'), ('system', 'NOUN'), ('to', 'PART'), ('diagnose', 'VERB'), ('the', 'DET'), ('patient', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('·', 'NFP'), ('Doctors', 'NNS'), ('use', 'VBP'), ('clinical', 'JJ'), ('expert', 'NN'), ('system', 'NN'), ('to', 'TO'), ('diagnose', 'VB'), ('the', 'DT'), ('patient', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('·', '·'), ('Doctors', 'doctor'), ('use', 'use'), ('clinical', 'clinical'), ('expert', 'expert'), ('system', 'system'), ('to', 'to'), ('diagnose', 'diagnose'), ('the', 'the'), ('patient', 'patient'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('·', 'use'), 'punct'), (('Doctors', 'use'), 'nsubj'), (('use', 'root'), 'root'), (('clinical', 'system'), 'amod'), (('expert', 'system'), 'compound'), (('system', 'use'), 'obj'), (('to', 'diagnose'), 'mark'), (('diagnose', 'use'), 'advcl'), (('the', 'patient'), 'det'), (('patient', 'diagnose'), 'obj'), (('.', 'use'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 11 ===========================
+
+ · Police use computer software that can recognize the face of criminal with the stored portrait made by forensic artist. 
+
+Tokens are: 
+>> ['·', 'Police', 'use', 'computer', 'software', 'that', 'can', 'recognize', 'the', 'face', 'of', 'criminal', 'with', 'the', 'stored', 'portrait', 'made', 'by', 'forensic', 'artist', '.'] 
+
+ UPOS tags are: 
+>> [('·', 'PUNCT'), ('Police', 'NOUN'), ('use', 'VERB'), ('computer', 'NOUN'), ('software', 'NOUN'), ('that', 'PRON'), ('can', 'AUX'), ('recognize', 'VERB'), ('the', 'DET'), ('face', 'NOUN'), ('of', 'ADP'), ('criminal', 'NOUN'), ('with', 'ADP'), ('the', 'DET'), ('stored', 'VERB'), ('portrait', 'NOUN'), ('made', 'VERB'), ('by', 'ADP'), ('forensic', 'ADJ'), ('artist', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('·', 'NFP'), ('Police', 'NNS'), ('use', 'VBP'), ('computer', 'NN'), ('software', 'NN'), ('that', 'WDT'), ('can', 'MD'), ('recognize', 'VB'), ('the', 'DT'), ('face', 'NN'), ('of', 'IN'), ('criminal', 'NN'), ('with', 'IN'), ('the', 'DT'), ('stored', 'VBN'), ('portrait', 'NN'), ('made', 'VBN'), ('by', 'IN'), ('forensic', 'JJ'), ('artist', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('·', '·'), ('Police', 'police'), ('use', 'use'), ('computer', 'computer'), ('software', 'software'), ('that', 'that'), ('can', 'can'), ('recognize', 'recognize'), ('the', 'the'), ('face', 'face'), ('of', 'of'), ('criminal', 'criminal'), ('with', 'with'), ('the', 'the'), ('stored', 'store'), ('portrait', 'portrait'), ('made', 'make'), ('by', 'by'), ('forensic', 'forensic'), ('artist', 'artist'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('·', 'use'), 'punct'), (('Police', 'use'), 'nsubj'), (('use', 'root'), 'root'), (('computer', 'software'), 'compound'), (('software', 'use'), 'obj'), (('that', 'recognize'), 'nsubj'), (('can', 'recognize'), 'aux'), (('recognize', 'software'), 'acl:relcl'), (('the', 'face'), 'det'), (('face', 'recognize'), 'obj'), (('of', 'criminal'), 'case'), (('criminal', 'face'), 'nmod'), (('with', 'portrait'), 'case'), (('the', 'portrait'), 'det'), (('stored', 'portrait'), 'amod'), (('portrait', 'recognize'), 'obl'), (('made', 'portrait'), 'acl'), (('by', 'artist'), 'case'), (('forensic', 'artist'), 'amod'), (('artist', 'made'), 'obl'), (('.', 'use'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 12 ===========================
+
+ · Speech Recognition − Some intelligent systems are capable of hearing and comprehending the language in terms of sentences and their meanings while a human talks to it. 
+
+Tokens are: 
+>> ['·', 'Speech', 'Recognition', '−', 'Some', 'intelligent', 'systems', 'are', 'capable', 'of', 'hearing', 'and', 'comprehending', 'the', 'language', 'in', 'terms', 'of', 'sentences', 'and', 'their', 'meanings', 'while', 'a', 'human', 'talks', 'to', 'it', '.'] 
+
+ UPOS tags are: 
+>> [('·', 'PUNCT'), ('Speech', 'NOUN'), ('Recognition', 'NOUN'), ('−', 'PUNCT'), ('Some', 'DET'), ('intelligent', 'ADJ'), ('systems', 'NOUN'), ('are', 'AUX'), ('capable', 'ADJ'), ('of', 'SCONJ'), ('hearing', 'VERB'), ('and', 'CCONJ'), ('comprehending', 'VERB'), ('the', 'DET'), ('language', 'NOUN'), ('in', 'ADP'), ('terms', 'NOUN'), ('of', 'ADP'), ('sentences', 'NOUN'), ('and', 'CCONJ'), ('their', 'PRON'), ('meanings', 'NOUN'), ('while', 'SCONJ'), ('a', 'DET'), ('human', 'ADJ'), ('talks', 'NOUN'), ('to', 'ADP'), ('it', 'PRON'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('·', 'NFP'), ('Speech', 'NN'), ('Recognition', 'NN'), ('−', ','), ('Some', 'DT'), ('intelligent', 'JJ'), ('systems', 'NNS'), ('are', 'VBP'), ('capable', 'JJ'), ('of', 'IN'), ('hearing', 'VBG'), ('and', 'CC'), ('comprehending', 'VBG'), ('the', 'DT'), ('language', 'NN'), ('in', 'IN'), ('terms', 'NNS'), ('of', 'IN'), ('sentences', 'NNS'), ('and', 'CC'), ('their', 'PRP$'), ('meanings', 'NNS'), ('while', 'IN'), ('a', 'DT'), ('human', 'JJ'), ('talks', 'NNS'), ('to', 'IN'), ('it', 'PRP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('·', '·'), ('Speech', 'speech'), ('Recognition', 'recognition'), ('−', "''"), ('Some', 'some'), ('intelligent', 'intelligent'), ('systems', 'system'), ('are', 'be'), ('capable', 'capable'), ('of', 'of'), ('hearing', 'hear'), ('and', 'and'), ('comprehending', 'comprehend'), ('the', 'the'), ('language', 'language'), ('in', 'in'), ('terms', 'term'), ('of', 'of'), ('sentences', 'sentence'), ('and', 'and'), ('their', 'they'), ('meanings', 'meaning'), ('while', 'while'), ('a', 'a'), ('human', 'human'), ('talks', 'talk'), ('to', 'to'), ('it', 'it'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('·', 'Recognition'), 'punct'), (('Speech', 'Recognition'), 'compound'), (('Recognition', 'capable'), 'nsubj'), (('−', 'Recognition'), 'punct'), (('Some', 'systems'), 'det'), (('intelligent', 'systems'), 'amod'), (('systems', 'capable'), 'nsubj'), (('are', 'capable'), 'cop'), (('capable', 'root'), 'root'), (('of', 'hearing'), 'mark'), (('hearing', 'capable'), 'advcl'), (('and', 'comprehending'), 'cc'), (('comprehending', 'hearing'), 'conj'), (('the', 'language'), 'det'), (('language', 'hearing'), 'obj'), (('in', 'terms'), 'case'), (('terms', 'hearing'), 'obl'), (('of', 'sentences'), 'case'), (('sentences', 'terms'), 'nmod'), (('and', 'meanings'), 'cc'), (('their', 'meanings'), 'nmod:poss'), (('meanings', 'sentences'), 'conj'), (('while', 'talks'), 'mark'), (('a', 'talks'), 'det'), (('human', 'talks'), 'amod'), (('talks', 'hearing'), 'advcl'), (('to', 'it'), 'case'), (('it', 'talks'), 'nmod'), (('.', 'capable'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 13 ===========================
+
+ It can handle different accents, slang words, noise in the background, change in human’s noise due to cold, etc. · Handwriting Recognition − 
+
+Tokens are: 
+>> ['It', 'can', 'handle', 'different', 'accents', ',', 'slang', 'words', ',', 'noise', 'in', 'the', 'background', ',', 'change', 'in', 'human', '’s', 'noise', 'due', 'to', 'cold', ',', 'etc.', '·', 'Handwriting', 'Recognition', '−'] 
+
+ UPOS tags are: 
+>> [('It', 'PRON'), ('can', 'AUX'), ('handle', 'VERB'), ('different', 'ADJ'), ('accents', 'NOUN'), (',', 'PUNCT'), ('slang', 'NOUN'), ('words', 'NOUN'), (',', 'PUNCT'), ('noise', 'NOUN'), ('in', 'ADP'), ('the', 'DET'), ('background', 'NOUN'), (',', 'PUNCT'), ('change', 'NOUN'), ('in', 'ADP'), ('human', 'NOUN'), ('’s', 'PART'), ('noise', 'NOUN'), ('due', 'ADP'), ('to', 'ADP'), ('cold', 'ADJ'), (',', 'PUNCT'), ('etc.', 'X'), ('·', 'PUNCT'), ('Handwriting', 'NOUN'), ('Recognition', 'NOUN'), ('−', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('It', 'PRP'), ('can', 'MD'), ('handle', 'VB'), ('different', 'JJ'), ('accents', 'NNS'), (',', ','), ('slang', 'NN'), ('words', 'NNS'), (',', ','), ('noise', 'NN'), ('in', 'IN'), ('the', 'DT'), ('background', 'NN'), (',', ','), ('change', 'NN'), ('in', 'IN'), ('human', 'NN'), ('’s', 'POS'), ('noise', 'NN'), ('due', 'IN'), ('to', 'IN'), ('cold', 'JJ'), (',', ','), ('etc.', 'FW'), ('·', ','), ('Handwriting', 'NN'), ('Recognition', 'NN'), ('−', '.')] 
+
+ Lemmas are: 
+>> [('It', 'it'), ('can', 'can'), ('handle', 'handle'), ('different', 'different'), ('accents', 'accent'), (',', ','), ('slang', 'slang'), ('words', 'word'), (',', ','), ('noise', 'noise'), ('in', 'in'), ('the', 'the'), ('background', 'background'), (',', ','), ('change', 'change'), ('in', 'in'), ('human', 'human'), ('’s', "'s"), ('noise', 'noise'), ('due', 'due'), ('to', 'to'), ('cold', 'cold'), (',', ','), ('etc.', 'etc.'), ('·', '·'), ('Handwriting', 'handwriting'), ('Recognition', 'recognition'), ('−', "''")] 
+
+ Dependency tags are: 
+>> [(('It', 'handle'), 'nsubj'), (('can', 'handle'), 'aux'), (('handle', 'root'), 'root'), (('different', 'accents'), 'amod'), (('accents', 'handle'), 'obj'), ((',', 'words'), 'punct'), (('slang', 'words'), 'compound'), (('words', 'accents'), 'conj'), ((',', 'noise'), 'punct'), (('noise', 'accents'), 'conj'), (('in', 'background'), 'case'), (('the', 'background'), 'det'), (('background', 'noise'), 'nmod'), ((',', 'change'), 'punct'), (('change', 'accents'), 'conj'), (('in', 'noise'), 'case'), (('human', 'noise'), 'nmod:poss'), (('’s', 'human'), 'case'), (('noise', 'change'), 'nmod'), (('due', 'cold'), 'case'), (('to', 'due'), 'fixed'), (('cold', 'noise'), 'nmod'), ((',', 'etc.'), 'punct'), (('etc.', 'cold'), 'conj'), (('·', 'Recognition'), 'punct'), (('Handwriting', 'Recognition'), 'compound'), (('Recognition', 'handle'), 'parataxis'), (('−', 'handle'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 14 ===========================
+
+ The handwriting recognition software reads the text written on paper by a pen or on screen by a stylus. 
+
+Tokens are: 
+>> ['The', 'handwriting', 'recognition', 'software', 'reads', 'the', 'text', 'written', 'on', 'paper', 'by', 'a', 'pen', 'or', 'on', 'screen', 'by', 'a', 'stylus', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('handwriting', 'NOUN'), ('recognition', 'NOUN'), ('software', 'NOUN'), ('reads', 'VERB'), ('the', 'DET'), ('text', 'NOUN'), ('written', 'VERB'), ('on', 'ADP'), ('paper', 'NOUN'), ('by', 'ADP'), ('a', 'DET'), ('pen', 'NOUN'), ('or', 'CCONJ'), ('on', 'ADP'), ('screen', 'NOUN'), ('by', 'ADP'), ('a', 'DET'), ('stylus', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('handwriting', 'NN'), ('recognition', 'NN'), ('software', 'NN'), ('reads', 'VBZ'), ('the', 'DT'), ('text', 'NN'), ('written', 'VBN'), ('on', 'IN'), ('paper', 'NN'), ('by', 'IN'), ('a', 'DT'), ('pen', 'NN'), ('or', 'CC'), ('on', 'IN'), ('screen', 'NN'), ('by', 'IN'), ('a', 'DT'), ('stylus', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('handwriting', 'handwriting'), ('recognition', 'recognition'), ('software', 'software'), ('reads', 'read'), ('the', 'the'), ('text', 'text'), ('written', 'write'), ('on', 'on'), ('paper', 'paper'), ('by', 'by'), ('a', 'a'), ('pen', 'pen'), ('or', 'or'), ('on', 'on'), ('screen', 'screen'), ('by', 'by'), ('a', 'a'), ('stylus', 'stylus'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'software'), 'det'), (('handwriting', 'recognition'), 'compound'), (('recognition', 'software'), 'compound'), (('software', 'reads'), 'nsubj'), (('reads', 'root'), 'root'), (('the', 'text'), 'det'), (('text', 'reads'), 'obj'), (('written', 'text'), 'acl'), (('on', 'paper'), 'case'), (('paper', 'written'), 'obl'), (('by', 'pen'), 'case'), (('a', 'pen'), 'det'), (('pen', 'written'), 'obl'), (('or', 'screen'), 'cc'), (('on', 'screen'), 'case'), (('screen', 'pen'), 'conj'), (('by', 'stylus'), 'case'), (('a', 'stylus'), 'det'), (('stylus', 'written'), 'obl'), (('.', 'reads'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 15 ===========================
+
+ It can recognize the shapes of the letters and convert it into editable text. 
+
+Tokens are: 
+>> ['It', 'can', 'recognize', 'the', 'shapes', 'of', 'the', 'letters', 'and', 'convert', 'it', 'into', 'editable', 'text', '.'] 
+
+ UPOS tags are: 
+>> [('It', 'PRON'), ('can', 'AUX'), ('recognize', 'VERB'), ('the', 'DET'), ('shapes', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('letters', 'NOUN'), ('and', 'CCONJ'), ('convert', 'VERB'), ('it', 'PRON'), ('into', 'ADP'), ('editable', 'ADJ'), ('text', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('It', 'PRP'), ('can', 'MD'), ('recognize', 'VB'), ('the', 'DT'), ('shapes', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('letters', 'NNS'), ('and', 'CC'), ('convert', 'VB'), ('it', 'PRP'), ('into', 'IN'), ('editable', 'JJ'), ('text', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('It', 'it'), ('can', 'can'), ('recognize', 'recognize'), ('the', 'the'), ('shapes', 'shape'), ('of', 'of'), ('the', 'the'), ('letters', 'letter'), ('and', 'and'), ('convert', 'convert'), ('it', 'it'), ('into', 'into'), ('editable', 'editable'), ('text', 'text'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('It', 'recognize'), 'nsubj'), (('can', 'recognize'), 'aux'), (('recognize', 'root'), 'root'), (('the', 'shapes'), 'det'), (('shapes', 'recognize'), 'obj'), (('of', 'letters'), 'case'), (('the', 'letters'), 'det'), (('letters', 'shapes'), 'nmod'), (('and', 'convert'), 'cc'), (('convert', 'recognize'), 'conj'), (('it', 'convert'), 'obj'), (('into', 'text'), 'case'), (('editable', 'text'), 'amod'), (('text', 'convert'), 'obl'), (('.', 'recognize'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 16 ===========================
+
+ · Intelligent Robots − Robots are able to perform the tasks given by a human. 
+
+Tokens are: 
+>> ['·', 'Intelligent', 'Robots', '−', 'Robots', 'are', 'able', 'to', 'perform', 'the', 'tasks', 'given', 'by', 'a', 'human', '.'] 
+
+ UPOS tags are: 
+>> [('·', 'PUNCT'), ('Intelligent', 'ADJ'), ('Robots', 'PROPN'), ('−', 'PUNCT'), ('Robots', 'PROPN'), ('are', 'AUX'), ('able', 'ADJ'), ('to', 'PART'), ('perform', 'VERB'), ('the', 'DET'), ('tasks', 'NOUN'), ('given', 'VERB'), ('by', 'ADP'), ('a', 'DET'), ('human', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('·', 'NFP'), ('Intelligent', 'JJ'), ('Robots', 'NNPS'), ('−', ','), ('Robots', 'NNPS'), ('are', 'VBP'), ('able', 'JJ'), ('to', 'TO'), ('perform', 'VB'), ('the', 'DT'), ('tasks', 'NNS'), ('given', 'VBN'), ('by', 'IN'), ('a', 'DT'), ('human', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('·', '·'), ('Intelligent', 'intelligent'), ('Robots', 'Robots'), ('−', "''"), ('Robots', 'Robots'), ('are', 'be'), ('able', 'able'), ('to', 'to'), ('perform', 'perform'), ('the', 'the'), ('tasks', 'task'), ('given', 'give'), ('by', 'by'), ('a', 'a'), ('human', 'human'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('·', 'Robots'), 'punct'), (('Intelligent', 'Robots'), 'amod'), (('Robots', 'able'), 'nsubj'), (('−', 'Robots'), 'punct'), (('Robots', 'able'), 'nsubj'), (('are', 'able'), 'cop'), (('able', 'root'), 'root'), (('to', 'perform'), 'mark'), (('perform', 'able'), 'xcomp'), (('the', 'tasks'), 'det'), (('tasks', 'perform'), 'obj'), (('given', 'tasks'), 'acl'), (('by', 'human'), 'case'), (('a', 'human'), 'det'), (('human', 'given'), 'obl'), (('.', 'able'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 17 ===========================
+
+ They have sensors to detect physical data from the real world such as light, heat, temperature, movement, sound, bump, and pressure. 
+
+Tokens are: 
+>> ['They', 'have', 'sensors', 'to', 'detect', 'physical', 'data', 'from', 'the', 'real', 'world', 'such', 'as', 'light', ',', 'heat', ',', 'temperature', ',', 'movement', ',', 'sound', ',', 'bump', ',', 'and', 'pressure', '.'] 
+
+ UPOS tags are: 
+>> [('They', 'PRON'), ('have', 'VERB'), ('sensors', 'NOUN'), ('to', 'PART'), ('detect', 'VERB'), ('physical', 'ADJ'), ('data', 'NOUN'), ('from', 'ADP'), ('the', 'DET'), ('real', 'ADJ'), ('world', 'NOUN'), ('such', 'ADJ'), ('as', 'ADP'), ('light', 'NOUN'), (',', 'PUNCT'), ('heat', 'NOUN'), (',', 'PUNCT'), ('temperature', 'NOUN'), (',', 'PUNCT'), ('movement', 'NOUN'), (',', 'PUNCT'), ('sound', 'NOUN'), (',', 'PUNCT'), ('bump', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('pressure', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('They', 'PRP'), ('have', 'VBP'), ('sensors', 'NNS'), ('to', 'TO'), ('detect', 'VB'), ('physical', 'JJ'), ('data', 'NNS'), ('from', 'IN'), ('the', 'DT'), ('real', 'JJ'), ('world', 'NN'), ('such', 'JJ'), ('as', 'IN'), ('light', 'NN'), (',', ','), ('heat', 'NN'), (',', ','), ('temperature', 'NN'), (',', ','), ('movement', 'NN'), (',', ','), ('sound', 'NN'), (',', ','), ('bump', 'NN'), (',', ','), ('and', 'CC'), ('pressure', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('They', 'they'), ('have', 'have'), ('sensors', 'sensor'), ('to', 'to'), ('detect', 'detect'), ('physical', 'physical'), ('data', 'datum'), ('from', 'from'), ('the', 'the'), ('real', 'real'), ('world', 'world'), ('such', 'such'), ('as', 'as'), ('light', 'light'), (',', ','), ('heat', 'heat'), (',', ','), ('temperature', 'temperature'), (',', ','), ('movement', 'movement'), (',', ','), ('sound', 'sound'), (',', ','), ('bump', 'bump'), (',', ','), ('and', 'and'), ('pressure', 'pressure'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('They', 'have'), 'nsubj'), (('have', 'root'), 'root'), (('sensors', 'have'), 'obj'), (('to', 'detect'), 'mark'), (('detect', 'sensors'), 'acl'), (('physical', 'data'), 'amod'), (('data', 'detect'), 'obj'), (('from', 'world'), 'case'), (('the', 'world'), 'det'), (('real', 'world'), 'amod'), (('world', 'detect'), 'obl'), (('such', 'light'), 'case'), (('as', 'such'), 'fixed'), (('light', 'data'), 'nmod'), ((',', 'heat'), 'punct'), (('heat', 'light'), 'conj'), ((',', 'temperature'), 'punct'), (('temperature', 'light'), 'conj'), ((',', 'movement'), 'punct'), (('movement', 'light'), 'conj'), ((',', 'sound'), 'punct'), (('sound', 'light'), 'conj'), ((',', 'bump'), 'punct'), (('bump', 'light'), 'conj'), ((',', 'pressure'), 'punct'), (('and', 'pressure'), 'cc'), (('pressure', 'light'), 'conj'), (('.', 'have'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 18 ===========================
+
+ They have efficient processors, multiple sensors and huge memory, to exhibit intelligence. 
+
+Tokens are: 
+>> ['They', 'have', 'efficient', 'processors', ',', 'multiple', 'sensors', 'and', 'huge', 'memory', ',', 'to', 'exhibit', 'intelligence', '.'] 
+
+ UPOS tags are: 
+>> [('They', 'PRON'), ('have', 'VERB'), ('efficient', 'ADJ'), ('processors', 'NOUN'), (',', 'PUNCT'), ('multiple', 'ADJ'), ('sensors', 'NOUN'), ('and', 'CCONJ'), ('huge', 'ADJ'), ('memory', 'NOUN'), (',', 'PUNCT'), ('to', 'PART'), ('exhibit', 'VERB'), ('intelligence', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('They', 'PRP'), ('have', 'VBP'), ('efficient', 'JJ'), ('processors', 'NNS'), (',', ','), ('multiple', 'JJ'), ('sensors', 'NNS'), ('and', 'CC'), ('huge', 'JJ'), ('memory', 'NN'), (',', ','), ('to', 'TO'), ('exhibit', 'VB'), ('intelligence', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('They', 'they'), ('have', 'have'), ('efficient', 'efficient'), ('processors', 'processor'), (',', ','), ('multiple', 'multiple'), ('sensors', 'sensor'), ('and', 'and'), ('huge', 'huge'), ('memory', 'memory'), (',', ','), ('to', 'to'), ('exhibit', 'exhibit'), ('intelligence', 'intelligence'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('They', 'have'), 'nsubj'), (('have', 'root'), 'root'), (('efficient', 'processors'), 'amod'), (('processors', 'have'), 'obj'), ((',', 'sensors'), 'punct'), (('multiple', 'sensors'), 'amod'), (('sensors', 'processors'), 'conj'), (('and', 'memory'), 'cc'), (('huge', 'memory'), 'amod'), (('memory', 'processors'), 'conj'), ((',', 'exhibit'), 'punct'), (('to', 'exhibit'), 'mark'), (('exhibit', 'have'), 'advcl'), (('intelligence', 'exhibit'), 'obj'), (('.', 'have'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 19 ===========================
+
+ In addition, they are capable of learning from their mistakes and they can adapt to the new environment. 
+
+Tokens are: 
+>> ['In', 'addition', ',', 'they', 'are', 'capable', 'of', 'learning', 'from', 'their', 'mistakes', 'and', 'they', 'can', 'adapt', 'to', 'the', 'new', 'environment', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('addition', 'NOUN'), (',', 'PUNCT'), ('they', 'PRON'), ('are', 'AUX'), ('capable', 'ADJ'), ('of', 'SCONJ'), ('learning', 'VERB'), ('from', 'ADP'), ('their', 'PRON'), ('mistakes', 'NOUN'), ('and', 'CCONJ'), ('they', 'PRON'), ('can', 'AUX'), ('adapt', 'VERB'), ('to', 'ADP'), ('the', 'DET'), ('new', 'ADJ'), ('environment', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('addition', 'NN'), (',', ','), ('they', 'PRP'), ('are', 'VBP'), ('capable', 'JJ'), ('of', 'IN'), ('learning', 'VBG'), ('from', 'IN'), ('their', 'PRP$'), ('mistakes', 'NNS'), ('and', 'CC'), ('they', 'PRP'), ('can', 'MD'), ('adapt', 'VB'), ('to', 'IN'), ('the', 'DT'), ('new', 'JJ'), ('environment', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('addition', 'addition'), (',', ','), ('they', 'they'), ('are', 'be'), ('capable', 'capable'), ('of', 'of'), ('learning', 'learn'), ('from', 'from'), ('their', 'they'), ('mistakes', 'mistake'), ('and', 'and'), ('they', 'they'), ('can', 'can'), ('adapt', 'adapt'), ('to', 'to'), ('the', 'the'), ('new', 'new'), ('environment', 'environment'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'addition'), 'case'), (('addition', 'capable'), 'obl'), ((',', 'capable'), 'punct'), (('they', 'capable'), 'nsubj'), (('are', 'capable'), 'cop'), (('capable', 'root'), 'root'), (('of', 'learning'), 'mark'), (('learning', 'capable'), 'advcl'), (('from', 'mistakes'), 'case'), (('their', 'mistakes'), 'nmod:poss'), (('mistakes', 'learning'), 'obl'), (('and', 'adapt'), 'cc'), (('they', 'adapt'), 'nsubj'), (('can', 'adapt'), 'aux'), (('adapt', 'capable'), 'conj'), (('to', 'environment'), 'case'), (('the', 'environment'), 'det'), (('new', 'environment'), 'amod'), (('environment', 'adapt'), 'obl'), (('.', 'capable'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 20 ===========================
+
+ History of AI Here is the history of AI during 20th century − 	Year 	Milestone / Innovation  	1923 	Karel Čapek play named “Rossum's Universal Robots” (RUR) opens in London, first use of the word "robot" in English. 
+
+Tokens are: 
+>> ['History', 'of', 'AI', 'Here', 'is', 'the', 'history', 'of', 'AI', 'during', '20th', 'century', '−', 'Year', 'Milestone', '/', 'Innovation', '1923', 'Karel', 'Čapek', 'play', 'named', '“', 'Rossum', "'s", 'Universal', 'Robots', '”', '(', 'RUR', ')', 'opens', 'in', 'London', ',', 'first', 'use', 'of', 'the', 'word', '"', 'robot', '"', 'in', 'English', '.'] 
+
+ UPOS tags are: 
+>> [('History', 'NOUN'), ('of', 'ADP'), ('AI', 'PROPN'), ('Here', 'ADV'), ('is', 'AUX'), ('the', 'DET'), ('history', 'NOUN'), ('of', 'ADP'), ('AI', 'PROPN'), ('during', 'ADP'), ('20th', 'ADJ'), ('century', 'NOUN'), ('−', 'PUNCT'), ('Year', 'PROPN'), ('Milestone', 'PROPN'), ('/', 'SYM'), ('Innovation', 'PROPN'), ('1923', 'NUM'), ('Karel', 'PROPN'), ('Čapek', 'PROPN'), ('play', 'NOUN'), ('named', 'VERB'), ('“', 'PUNCT'), ('Rossum', 'PROPN'), ("'s", 'PART'), ('Universal', 'ADJ'), ('Robots', 'PROPN'), ('”', 'PUNCT'), ('(', 'PUNCT'), ('RUR', 'PROPN'), (')', 'PUNCT'), ('opens', 'VERB'), ('in', 'ADP'), ('London', 'PROPN'), (',', 'PUNCT'), ('first', 'ADJ'), ('use', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('word', 'NOUN'), ('"', 'PUNCT'), ('robot', 'NOUN'), ('"', 'PUNCT'), ('in', 'ADP'), ('English', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('History', 'NN'), ('of', 'IN'), ('AI', 'NNP'), ('Here', 'RB'), ('is', 'VBZ'), ('the', 'DT'), ('history', 'NN'), ('of', 'IN'), ('AI', 'NNP'), ('during', 'IN'), ('20th', 'JJ'), ('century', 'NN'), ('−', ','), ('Year', 'NNP'), ('Milestone', 'NNP'), ('/', 'SYM'), ('Innovation', 'NNP'), ('1923', 'CD'), ('Karel', 'NNP'), ('Čapek', 'NNP'), ('play', 'NN'), ('named', 'VBN'), ('“', '``'), ('Rossum', 'NNP'), ("'s", 'POS'), ('Universal', 'NNP'), ('Robots', 'NNPS'), ('”', "''"), ('(', '-LRB-'), ('RUR', 'NNP'), (')', '-RRB-'), ('opens', 'VBZ'), ('in', 'IN'), ('London', 'NNP'), (',', ','), ('first', 'JJ'), ('use', 'NN'), ('of', 'IN'), ('the', 'DT'), ('word', 'NN'), ('"', '``'), ('robot', 'NN'), ('"', "''"), ('in', 'IN'), ('English', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('History', 'history'), ('of', 'of'), ('AI', 'AI'), ('Here', 'here'), ('is', 'be'), ('the', 'the'), ('history', 'history'), ('of', 'of'), ('AI', 'AI'), ('during', 'during'), ('20th', '20th'), ('century', 'century'), ('−', "''"), ('Year', 'Year'), ('Milestone', 'Milestone'), ('/', '/'), ('Innovation', 'Innovation'), ('1923', '1923'), ('Karel', 'Karel'), ('Čapek', 'Čapek'), ('play', 'play'), ('named', 'name'), ('“', "''"), ('Rossum', 'Rossum'), ("'s", "'s"), ('Universal', 'Universal'), ('Robots', 'Robots'), ('”', "''"), ('(', '('), ('RUR', 'RUR'), (')', ')'), ('opens', 'open'), ('in', 'in'), ('London', 'London'), (',', ','), ('first', 'first'), ('use', 'use'), ('of', 'of'), ('the', 'the'), ('word', 'word'), ('"', '"'), ('robot', 'robot'), ('"', '"'), ('in', 'in'), ('English', 'English'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('History', 'history'), 'nsubj'), (('of', 'AI'), 'case'), (('AI', 'History'), 'nmod'), (('Here', 'History'), 'advmod'), (('is', 'history'), 'cop'), (('the', 'history'), 'det'), (('history', 'root'), 'root'), (('of', 'AI'), 'case'), (('AI', 'history'), 'nmod'), (('during', 'century'), 'case'), (('20th', 'century'), 'amod'), (('century', 'history'), 'nmod'), (('−', 'history'), 'punct'), (('Year', 'Milestone'), 'compound'), (('Milestone', 'play'), 'compound'), (('/', 'Innovation'), 'cc'), (('Innovation', 'Milestone'), 'conj'), (('1923', 'Milestone'), 'nmod:tmod'), (('Karel', 'play'), 'compound'), (('Čapek', 'play'), 'compound'), (('play', 'history'), 'nmod'), (('named', 'play'), 'acl'), (('“', 'Robots'), 'punct'), (('Rossum', 'Robots'), 'nmod:poss'), (("'s", 'Rossum'), 'case'), (('Universal', 'Robots'), 'amod'), (('Robots', 'named'), 'xcomp'), (('”', 'Robots'), 'punct'), (('(', 'RUR'), 'punct'), (('RUR', 'Robots'), 'appos'), ((')', 'RUR'), 'punct'), (('opens', 'history'), 'parataxis'), (('in', 'London'), 'case'), (('London', 'opens'), 'obl'), ((',', 'use'), 'punct'), (('first', 'use'), 'amod'), (('use', 'opens'), 'obj'), (('of', 'word'), 'case'), (('the', 'word'), 'det'), (('word', 'use'), 'nmod'), (('"', 'robot'), 'punct'), (('robot', 'word'), 'appos'), (('"', 'robot'), 'punct'), (('in', 'English'), 'case'), (('English', 'word'), 'nmod'), (('.', 'history'), 'punct')]
+
+ Named Entities are: 
+>> [('20th century', 'DATE'), ('Year \tMilestone / Innovation  \t1923', 'DATE'), ('Karel Čapek', 'PERSON'), ("Rossum's Universal Robots", 'WORK_OF_ART'), ('RUR', 'WORK_OF_ART'), ('London', 'GPE'), ('first', 'ORDINAL'), ('English', 'LANGUAGE')]
+
+========================== Sentence 21 ===========================
+
+ 1943 
+
+Tokens are: 
+>> ['1943'] 
+
+ UPOS tags are: 
+>> [('1943', 'NUM')] 
+
+ XPOS tags are: 
+>> [('1943', 'CD')] 
+
+ Lemmas are: 
+>> [('1943', '1943')] 
+
+ Dependency tags are: 
+>> [(('1943', 'root'), 'root')]
+
+ Named Entities are: 
+>> [('1943', 'DATE')]
+
+========================== Sentence 22 ===========================
+
+ Foundations for neural networks laid. 
+
+Tokens are: 
+>> ['Foundations', 'for', 'neural', 'networks', 'laid', '.'] 
+
+ UPOS tags are: 
+>> [('Foundations', 'NOUN'), ('for', 'ADP'), ('neural', 'ADJ'), ('networks', 'NOUN'), ('laid', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Foundations', 'NNS'), ('for', 'IN'), ('neural', 'JJ'), ('networks', 'NNS'), ('laid', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Foundations', 'foundation'), ('for', 'for'), ('neural', 'neural'), ('networks', 'network'), ('laid', 'lay'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Foundations', 'root'), 'root'), (('for', 'networks'), 'case'), (('neural', 'networks'), 'amod'), (('networks', 'Foundations'), 'nmod'), (('laid', 'Foundations'), 'acl'), (('.', 'Foundations'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 23 ===========================
+
+ 1945 	Isaac Asimov, a Columbia University alumni, coined the term Robotics. 
+
+Tokens are: 
+>> ['1945', 'Isaac', 'Asimov', ',', 'a', 'Columbia', 'University', 'alumni', ',', 'coined', 'the', 'term', 'Robotics', '.'] 
+
+ UPOS tags are: 
+>> [('1945', 'NUM'), ('Isaac', 'PROPN'), ('Asimov', 'PROPN'), (',', 'PUNCT'), ('a', 'DET'), ('Columbia', 'PROPN'), ('University', 'PROPN'), ('alumni', 'NOUN'), (',', 'PUNCT'), ('coined', 'VERB'), ('the', 'DET'), ('term', 'NOUN'), ('Robotics', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('1945', 'CD'), ('Isaac', 'NNP'), ('Asimov', 'NNP'), (',', ','), ('a', 'DT'), ('Columbia', 'NNP'), ('University', 'NNP'), ('alumni', 'NNS'), (',', ','), ('coined', 'VBD'), ('the', 'DT'), ('term', 'NN'), ('Robotics', 'NNPS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('1945', '1945'), ('Isaac', 'Isaac'), ('Asimov', 'Asimov'), (',', ','), ('a', 'a'), ('Columbia', 'Columbia'), ('University', 'University'), ('alumni', 'alumnus'), (',', ','), ('coined', 'coin'), ('the', 'the'), ('term', 'term'), ('Robotics', 'Robotics'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('1945', 'root'), 'root'), (('Isaac', 'coined'), 'nsubj'), (('Asimov', 'Isaac'), 'flat'), ((',', 'Isaac'), 'punct'), (('a', 'alumni'), 'det'), (('Columbia', 'University'), 'compound'), (('University', 'alumni'), 'compound'), (('alumni', 'Isaac'), 'appos'), ((',', 'Isaac'), 'punct'), (('coined', '1945'), 'parataxis'), (('the', 'Robotics'), 'det'), (('term', 'Robotics'), 'compound'), (('Robotics', 'coined'), 'obj'), (('.', '1945'), 'punct')]
+
+ Named Entities are: 
+>> [('1945', 'DATE'), ('Isaac Asimov', 'PERSON'), ('Columbia University', 'ORG'), ('Robotics', 'PRODUCT')]
+
+========================== Sentence 24 ===========================
+
+ 1950 	Alan Turing introduced Turing Test for evaluation of intelligence and published Computing Machinery and Intelligence. 
+
+Tokens are: 
+>> ['1950', 'Alan', 'Turing', 'introduced', 'Turing', 'Test', 'for', 'evaluation', 'of', 'intelligence', 'and', 'published', 'Computing', 'Machinery', 'and', 'Intelligence', '.'] 
+
+ UPOS tags are: 
+>> [('1950', 'NUM'), ('Alan', 'PROPN'), ('Turing', 'PROPN'), ('introduced', 'VERB'), ('Turing', 'PROPN'), ('Test', 'PROPN'), ('for', 'ADP'), ('evaluation', 'NOUN'), ('of', 'ADP'), ('intelligence', 'NOUN'), ('and', 'CCONJ'), ('published', 'VERB'), ('Computing', 'PROPN'), ('Machinery', 'PROPN'), ('and', 'CCONJ'), ('Intelligence', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('1950', 'CD'), ('Alan', 'NNP'), ('Turing', 'NNP'), ('introduced', 'VBD'), ('Turing', 'NNP'), ('Test', 'NNP'), ('for', 'IN'), ('evaluation', 'NN'), ('of', 'IN'), ('intelligence', 'NN'), ('and', 'CC'), ('published', 'VBN'), ('Computing', 'NNP'), ('Machinery', 'NNP'), ('and', 'CC'), ('Intelligence', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('1950', '1950'), ('Alan', 'Alan'), ('Turing', 'Turing'), ('introduced', 'introduce'), ('Turing', 'Turing'), ('Test', 'Test'), ('for', 'for'), ('evaluation', 'evaluation'), ('of', 'of'), ('intelligence', 'intelligence'), ('and', 'and'), ('published', 'publish'), ('Computing', 'Computing'), ('Machinery', 'Machinery'), ('and', 'and'), ('Intelligence', 'Intelligence'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('1950', 'root'), 'root'), (('Alan', 'introduced'), 'nsubj'), (('Turing', 'Alan'), 'flat'), (('introduced', '1950'), 'parataxis'), (('Turing', 'Test'), 'compound'), (('Test', 'introduced'), 'obj'), (('for', 'evaluation'), 'case'), (('evaluation', 'introduced'), 'obl'), (('of', 'intelligence'), 'case'), (('intelligence', 'evaluation'), 'nmod'), (('and', 'Machinery'), 'cc'), (('published', 'Machinery'), 'amod'), (('Computing', 'Machinery'), 'compound'), (('Machinery', 'intelligence'), 'conj'), (('and', 'Intelligence'), 'cc'), (('Intelligence', 'Machinery'), 'conj'), (('.', '1950'), 'punct')]
+
+ Named Entities are: 
+>> [('1950', 'DATE'), ('Alan Turing', 'PERSON'), ('Turing Test', 'WORK_OF_ART'), ('Computing Machinery and Intelligence', 'ORG')]
+
+========================== Sentence 25 ===========================
+
+ Claude Shannon published Detailed Analysis of Chess Playing as a search. 
+
+Tokens are: 
+>> ['Claude', 'Shannon', 'published', 'Detailed', 'Analysis', 'of', 'Chess', 'Playing', 'as', 'a', 'search', '.'] 
+
+ UPOS tags are: 
+>> [('Claude', 'PROPN'), ('Shannon', 'PROPN'), ('published', 'VERB'), ('Detailed', 'ADJ'), ('Analysis', 'NOUN'), ('of', 'ADP'), ('Chess', 'NOUN'), ('Playing', 'VERB'), ('as', 'ADP'), ('a', 'DET'), ('search', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Claude', 'NNP'), ('Shannon', 'NNP'), ('published', 'VBD'), ('Detailed', 'JJ'), ('Analysis', 'NN'), ('of', 'IN'), ('Chess', 'NN'), ('Playing', 'VBG'), ('as', 'IN'), ('a', 'DT'), ('search', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Claude', 'Claude'), ('Shannon', 'Shannon'), ('published', 'publish'), ('Detailed', 'detailed'), ('Analysis', 'analysis'), ('of', 'of'), ('Chess', 'chess'), ('Playing', 'play'), ('as', 'as'), ('a', 'a'), ('search', 'search'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Claude', 'published'), 'nsubj'), (('Shannon', 'Claude'), 'flat'), (('published', 'root'), 'root'), (('Detailed', 'Analysis'), 'amod'), (('Analysis', 'published'), 'obj'), (('of', 'Chess'), 'case'), (('Chess', 'Analysis'), 'nmod'), (('Playing', 'Analysis'), 'acl'), (('as', 'search'), 'case'), (('a', 'search'), 'det'), (('search', 'Playing'), 'obl'), (('.', 'published'), 'punct')]
+
+ Named Entities are: 
+>> [('Claude Shannon', 'PERSON'), ('Detailed Analysis of Chess Playing', 'WORK_OF_ART')]
+
+========================== Sentence 26 ===========================
+
+ 1956 	John McCarthy coined the term Artificial Intelligence. 
+
+Tokens are: 
+>> ['1956', 'John', 'McCarthy', 'coined', 'the', 'term', 'Artificial', 'Intelligence', '.'] 
+
+ UPOS tags are: 
+>> [('1956', 'NUM'), ('John', 'PROPN'), ('McCarthy', 'PROPN'), ('coined', 'VERB'), ('the', 'DET'), ('term', 'NOUN'), ('Artificial', 'ADJ'), ('Intelligence', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('1956', 'CD'), ('John', 'NNP'), ('McCarthy', 'NNP'), ('coined', 'VBD'), ('the', 'DT'), ('term', 'NN'), ('Artificial', 'NNP'), ('Intelligence', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('1956', '1956'), ('John', 'John'), ('McCarthy', 'McCarthy'), ('coined', 'coin'), ('the', 'the'), ('term', 'term'), ('Artificial', 'Artificial'), ('Intelligence', 'Intelligence'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('1956', 'root'), 'root'), (('John', 'coined'), 'nsubj'), (('McCarthy', 'John'), 'flat'), (('coined', '1956'), 'parataxis'), (('the', 'term'), 'det'), (('term', 'coined'), 'obj'), (('Artificial', 'Intelligence'), 'amod'), (('Intelligence', 'coined'), 'obj'), (('.', '1956'), 'punct')]
+
+ Named Entities are: 
+>> [('1956', 'DATE'), ('John McCarthy', 'PERSON'), ('Artificial Intelligence', 'WORK_OF_ART')]
+
+========================== Sentence 27 ===========================
+
+ Demonstration of the first running AI program at Carnegie Mellon University. 
+
+Tokens are: 
+>> ['Demonstration', 'of', 'the', 'first', 'running', 'AI', 'program', 'at', 'Carnegie', 'Mellon', 'University', '.'] 
+
+ UPOS tags are: 
+>> [('Demonstration', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('first', 'ADJ'), ('running', 'NOUN'), ('AI', 'NOUN'), ('program', 'NOUN'), ('at', 'ADP'), ('Carnegie', 'PROPN'), ('Mellon', 'PROPN'), ('University', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Demonstration', 'NN'), ('of', 'IN'), ('the', 'DT'), ('first', 'JJ'), ('running', 'NN'), ('AI', 'NN'), ('program', 'NN'), ('at', 'IN'), ('Carnegie', 'NNP'), ('Mellon', 'NNP'), ('University', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Demonstration', 'demonstration'), ('of', 'of'), ('the', 'the'), ('first', 'first'), ('running', 'running'), ('AI', 'ai'), ('program', 'program'), ('at', 'at'), ('Carnegie', 'Carnegie'), ('Mellon', 'Mellon'), ('University', 'University'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Demonstration', 'root'), 'root'), (('of', 'program'), 'case'), (('the', 'program'), 'det'), (('first', 'program'), 'amod'), (('running', 'AI'), 'compound'), (('AI', 'program'), 'compound'), (('program', 'Demonstration'), 'nmod'), (('at', 'University'), 'case'), (('Carnegie', 'University'), 'compound'), (('Mellon', 'University'), 'compound'), (('University', 'program'), 'nmod'), (('.', 'Demonstration'), 'punct')]
+
+ Named Entities are: 
+>> [('first', 'ORDINAL'), ('AI', 'ORG'), ('Carnegie Mellon University', 'ORG')]
+
+========================== Sentence 28 ===========================
+
+ 1958 	John McCarthy invents LISP programming language for AI. 
+
+Tokens are: 
+>> ['1958', 'John', 'McCarthy', 'invents', 'LISP', 'programming', 'language', 'for', 'AI', '.'] 
+
+ UPOS tags are: 
+>> [('1958', 'NUM'), ('John', 'PROPN'), ('McCarthy', 'PROPN'), ('invents', 'VERB'), ('LISP', 'PROPN'), ('programming', 'NOUN'), ('language', 'NOUN'), ('for', 'ADP'), ('AI', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('1958', 'CD'), ('John', 'NNP'), ('McCarthy', 'NNP'), ('invents', 'VBZ'), ('LISP', 'NNP'), ('programming', 'NN'), ('language', 'NN'), ('for', 'IN'), ('AI', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('1958', '1958'), ('John', 'John'), ('McCarthy', 'McCarthy'), ('invents', 'invent'), ('LISP', 'LISP'), ('programming', 'programming'), ('language', 'language'), ('for', 'for'), ('AI', 'AI'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('1958', 'root'), 'root'), (('John', 'invents'), 'nsubj'), (('McCarthy', 'John'), 'flat'), (('invents', '1958'), 'parataxis'), (('LISP', 'language'), 'compound'), (('programming', 'language'), 'compound'), (('language', 'invents'), 'obj'), (('for', 'AI'), 'case'), (('AI', 'invents'), 'obl'), (('.', '1958'), 'punct')]
+
+ Named Entities are: 
+>> [('1958', 'DATE'), ('John McCarthy', 'PERSON'), ('AI', 'ORG')]
+
+========================== Sentence 29 ===========================
+
+ 1964 	Danny Bobrow's dissertation at MIT showed that computers can understand natural language well enough to solve algebra word problems correctly. 
+
+Tokens are: 
+>> ['1964', 'Danny', 'Bobrow', "'s", 'dissertation', 'at', 'MIT', 'showed', 'that', 'computers', 'can', 'understand', 'natural', 'language', 'well', 'enough', 'to', 'solve', 'algebra', 'word', 'problems', 'correctly', '.'] 
+
+ UPOS tags are: 
+>> [('1964', 'NUM'), ('Danny', 'PROPN'), ('Bobrow', 'PROPN'), ("'s", 'PART'), ('dissertation', 'NOUN'), ('at', 'ADP'), ('MIT', 'PROPN'), ('showed', 'VERB'), ('that', 'SCONJ'), ('computers', 'NOUN'), ('can', 'AUX'), ('understand', 'VERB'), ('natural', 'ADJ'), ('language', 'NOUN'), ('well', 'ADV'), ('enough', 'ADV'), ('to', 'PART'), ('solve', 'VERB'), ('algebra', 'NOUN'), ('word', 'NOUN'), ('problems', 'NOUN'), ('correctly', 'ADV'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('1964', 'CD'), ('Danny', 'NNP'), ('Bobrow', 'NNP'), ("'s", 'POS'), ('dissertation', 'NN'), ('at', 'IN'), ('MIT', 'NNP'), ('showed', 'VBD'), ('that', 'IN'), ('computers', 'NNS'), ('can', 'MD'), ('understand', 'VB'), ('natural', 'JJ'), ('language', 'NN'), ('well', 'RB'), ('enough', 'RB'), ('to', 'TO'), ('solve', 'VB'), ('algebra', 'NN'), ('word', 'NN'), ('problems', 'NNS'), ('correctly', 'RB'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('1964', '1964'), ('Danny', 'Danny'), ('Bobrow', 'Bobrow'), ("'s", "'s"), ('dissertation', 'dissertation'), ('at', 'at'), ('MIT', 'MIT'), ('showed', 'show'), ('that', 'that'), ('computers', 'computer'), ('can', 'can'), ('understand', 'understand'), ('natural', 'natural'), ('language', 'language'), ('well', 'well'), ('enough', 'enough'), ('to', 'to'), ('solve', 'solve'), ('algebra', 'algebra'), ('word', 'word'), ('problems', 'problem'), ('correctly', 'correctly'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('1964', 'root'), 'root'), (('Danny', 'dissertation'), 'nmod:poss'), (('Bobrow', 'Danny'), 'flat'), (("'s", 'Danny'), 'case'), (('dissertation', 'showed'), 'nsubj'), (('at', 'MIT'), 'case'), (('MIT', 'dissertation'), 'nmod'), (('showed', '1964'), 'parataxis'), (('that', 'understand'), 'mark'), (('computers', 'understand'), 'nsubj'), (('can', 'understand'), 'aux'), (('understand', 'showed'), 'ccomp'), (('natural', 'language'), 'amod'), (('language', 'understand'), 'obj'), (('well', 'understand'), 'advmod'), (('enough', 'understand'), 'advmod'), (('to', 'solve'), 'mark'), (('solve', 'understand'), 'advcl'), (('algebra', 'word'), 'compound'), (('word', 'problems'), 'compound'), (('problems', 'solve'), 'obj'), (('correctly', 'solve'), 'advmod'), (('.', '1964'), 'punct')]
+
+ Named Entities are: 
+>> [('1964', 'DATE'), ("Danny Bobrow's", 'PERSON'), ('MIT', 'ORG')]
+
+========================== Sentence 30 ===========================
+
+ 1965 	Joseph Weizenbaum at MIT built ELIZA, an interactive problem that carries on a dialogue in English. 
+
+Tokens are: 
+>> ['1965', 'Joseph', 'Weizenbaum', 'at', 'MIT', 'built', 'ELIZA', ',', 'an', 'interactive', 'problem', 'that', 'carries', 'on', 'a', 'dialogue', 'in', 'English', '.'] 
+
+ UPOS tags are: 
+>> [('1965', 'NUM'), ('Joseph', 'PROPN'), ('Weizenbaum', 'PROPN'), ('at', 'ADP'), ('MIT', 'PROPN'), ('built', 'VERB'), ('ELIZA', 'PROPN'), (',', 'PUNCT'), ('an', 'DET'), ('interactive', 'ADJ'), ('problem', 'NOUN'), ('that', 'PRON'), ('carries', 'VERB'), ('on', 'ADP'), ('a', 'DET'), ('dialogue', 'NOUN'), ('in', 'ADP'), ('English', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('1965', 'CD'), ('Joseph', 'NNP'), ('Weizenbaum', 'NNP'), ('at', 'IN'), ('MIT', 'NNP'), ('built', 'VBD'), ('ELIZA', 'NNP'), (',', ','), ('an', 'DT'), ('interactive', 'JJ'), ('problem', 'NN'), ('that', 'WDT'), ('carries', 'VBZ'), ('on', 'IN'), ('a', 'DT'), ('dialogue', 'NN'), ('in', 'IN'), ('English', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('1965', '1965'), ('Joseph', 'Joseph'), ('Weizenbaum', 'Weizenbaum'), ('at', 'at'), ('MIT', 'MIT'), ('built', 'build'), ('ELIZA', 'ELIZA'), (',', ','), ('an', 'a'), ('interactive', 'interactive'), ('problem', 'problem'), ('that', 'that'), ('carries', 'carry'), ('on', 'on'), ('a', 'a'), ('dialogue', 'dialogue'), ('in', 'in'), ('English', 'English'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('1965', 'root'), 'root'), (('Joseph', 'built'), 'nsubj'), (('Weizenbaum', 'Joseph'), 'flat'), (('at', 'MIT'), 'case'), (('MIT', 'Joseph'), 'nmod'), (('built', '1965'), 'parataxis'), (('ELIZA', 'built'), 'obj'), ((',', 'problem'), 'punct'), (('an', 'problem'), 'det'), (('interactive', 'problem'), 'amod'), (('problem', 'ELIZA'), 'appos'), (('that', 'carries'), 'nsubj'), (('carries', 'problem'), 'acl:relcl'), (('on', 'dialogue'), 'case'), (('a', 'dialogue'), 'det'), (('dialogue', 'carries'), 'obj'), (('in', 'English'), 'case'), (('English', 'dialogue'), 'nmod'), (('.', '1965'), 'punct')]
+
+ Named Entities are: 
+>> [('1965', 'DATE'), ('Joseph Weizenbaum', 'PERSON'), ('MIT', 'ORG'), ('ELIZA', 'ORG'), ('English', 'LANGUAGE')]
+
+========================== Sentence 31 ===========================
+
+ 1969 	Scientists at Stanford Research Institute Developed 
+
+Tokens are: 
+>> ['1969', 'Scientists', 'at', 'Stanford', 'Research', 'Institute', 'Developed'] 
+
+ UPOS tags are: 
+>> [('1969', 'NUM'), ('Scientists', 'PROPN'), ('at', 'ADP'), ('Stanford', 'PROPN'), ('Research', 'PROPN'), ('Institute', 'PROPN'), ('Developed', 'PROPN')] 
+
+ XPOS tags are: 
+>> [('1969', 'CD'), ('Scientists', 'NNPS'), ('at', 'IN'), ('Stanford', 'NNP'), ('Research', 'NNP'), ('Institute', 'NNP'), ('Developed', 'NNP')] 
+
+ Lemmas are: 
+>> [('1969', '1969'), ('Scientists', 'scientist'), ('at', 'at'), ('Stanford', 'Stanford'), ('Research', 'Research'), ('Institute', 'Institute'), ('Developed', 'Developed')] 
+
+ Dependency tags are: 
+>> [(('1969', 'root'), 'root'), (('Scientists', '1969'), 'appos'), (('at', 'Institute'), 'case'), (('Stanford', 'Institute'), 'compound'), (('Research', 'Institute'), 'compound'), (('Institute', 'Scientists'), 'nmod'), (('Developed', 'Institute'), 'appos')]
+
+ Named Entities are: 
+>> [('1969', 'DATE'), ('Stanford Research Institute', 'ORG')]
+
+========================== Sentence 32 ===========================
+
+ Shakey, a robot, equipped with locomotion, perception, and problem solving. 
+
+Tokens are: 
+>> ['Shakey', ',', 'a', 'robot', ',', 'equipped', 'with', 'locomotion', ',', 'perception', ',', 'and', 'problem', 'solving', '.'] 
+
+ UPOS tags are: 
+>> [('Shakey', 'PROPN'), (',', 'PUNCT'), ('a', 'DET'), ('robot', 'NOUN'), (',', 'PUNCT'), ('equipped', 'VERB'), ('with', 'ADP'), ('locomotion', 'NOUN'), (',', 'PUNCT'), ('perception', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('problem', 'NOUN'), ('solving', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Shakey', 'NNP'), (',', ','), ('a', 'DT'), ('robot', 'NN'), (',', ','), ('equipped', 'VBN'), ('with', 'IN'), ('locomotion', 'NN'), (',', ','), ('perception', 'NN'), (',', ','), ('and', 'CC'), ('problem', 'NN'), ('solving', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Shakey', 'Shakey'), (',', ','), ('a', 'a'), ('robot', 'robot'), (',', ','), ('equipped', 'equip'), ('with', 'with'), ('locomotion', 'locomotion'), (',', ','), ('perception', 'perception'), (',', ','), ('and', 'and'), ('problem', 'problem'), ('solving', 'solving'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Shakey', 'root'), 'root'), ((',', 'robot'), 'punct'), (('a', 'robot'), 'det'), (('robot', 'Shakey'), 'appos'), ((',', 'equipped'), 'punct'), (('equipped', 'Shakey'), 'acl'), (('with', 'locomotion'), 'case'), (('locomotion', 'equipped'), 'obl'), ((',', 'perception'), 'punct'), (('perception', 'locomotion'), 'conj'), ((',', 'solving'), 'punct'), (('and', 'solving'), 'cc'), (('problem', 'solving'), 'compound'), (('solving', 'locomotion'), 'conj'), (('.', 'Shakey'), 'punct')]
+
+ Named Entities are: 
+>> [('Shakey', 'ORG')]
+
+========================== Sentence 33 ===========================
+
+ 1973 
+
+Tokens are: 
+>> ['1973'] 
+
+ UPOS tags are: 
+>> [('1973', 'NUM')] 
+
+ XPOS tags are: 
+>> [('1973', 'CD')] 
+
+ Lemmas are: 
+>> [('1973', '1973')] 
+
+ Dependency tags are: 
+>> [(('1973', 'root'), 'root')]
+
+ Named Entities are: 
+>> [('1973', 'DATE')]
+
+========================== Sentence 34 ===========================
+
+ The Assembly Robotics group at Edinburgh University built Freddy, the Famous Scottish Robot, capable of using vision to locate and assemble models. 
+
+Tokens are: 
+>> ['The', 'Assembly', 'Robotics', 'group', 'at', 'Edinburgh', 'University', 'built', 'Freddy', ',', 'the', 'Famous', 'Scottish', 'Robot', ',', 'capable', 'of', 'using', 'vision', 'to', 'locate', 'and', 'assemble', 'models', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('Assembly', 'PROPN'), ('Robotics', 'PROPN'), ('group', 'NOUN'), ('at', 'ADP'), ('Edinburgh', 'PROPN'), ('University', 'PROPN'), ('built', 'VERB'), ('Freddy', 'PROPN'), (',', 'PUNCT'), ('the', 'DET'), ('Famous', 'ADJ'), ('Scottish', 'ADJ'), ('Robot', 'PROPN'), (',', 'PUNCT'), ('capable', 'ADJ'), ('of', 'SCONJ'), ('using', 'VERB'), ('vision', 'NOUN'), ('to', 'PART'), ('locate', 'VERB'), ('and', 'CCONJ'), ('assemble', 'VERB'), ('models', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('Assembly', 'NNP'), ('Robotics', 'NNPS'), ('group', 'NN'), ('at', 'IN'), ('Edinburgh', 'NNP'), ('University', 'NNP'), ('built', 'VBD'), ('Freddy', 'NNP'), (',', ','), ('the', 'DT'), ('Famous', 'JJ'), ('Scottish', 'JJ'), ('Robot', 'NNP'), (',', ','), ('capable', 'JJ'), ('of', 'IN'), ('using', 'VBG'), ('vision', 'NN'), ('to', 'TO'), ('locate', 'VB'), ('and', 'CC'), ('assemble', 'VB'), ('models', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('Assembly', 'Assembly'), ('Robotics', 'Robotics'), ('group', 'group'), ('at', 'at'), ('Edinburgh', 'Edinburgh'), ('University', 'University'), ('built', 'build'), ('Freddy', 'Freddy'), (',', ','), ('the', 'the'), ('Famous', 'Famous'), ('Scottish', 'Scottish'), ('Robot', 'Robot'), (',', ','), ('capable', 'capable'), ('of', 'of'), ('using', 'use'), ('vision', 'vision'), ('to', 'to'), ('locate', 'locate'), ('and', 'and'), ('assemble', 'assemble'), ('models', 'model'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'group'), 'det'), (('Assembly', 'Robotics'), 'compound'), (('Robotics', 'group'), 'compound'), (('group', 'built'), 'nsubj'), (('at', 'University'), 'case'), (('Edinburgh', 'University'), 'compound'), (('University', 'group'), 'nmod'), (('built', 'root'), 'root'), (('Freddy', 'built'), 'obj'), ((',', 'Robot'), 'punct'), (('the', 'Robot'), 'det'), (('Famous', 'Robot'), 'amod'), (('Scottish', 'Robot'), 'amod'), (('Robot', 'Freddy'), 'appos'), ((',', 'Freddy'), 'punct'), (('capable', 'Freddy'), 'amod'), (('of', 'using'), 'mark'), (('using', 'capable'), 'advcl'), (('vision', 'using'), 'obj'), (('to', 'locate'), 'mark'), (('locate', 'using'), 'xcomp'), (('and', 'assemble'), 'cc'), (('assemble', 'locate'), 'conj'), (('models', 'locate'), 'obj'), (('.', 'built'), 'punct')]
+
+ Named Entities are: 
+>> [('The Assembly Robotics', 'ORG'), ('Edinburgh University', 'ORG'), ('Freddy, the Famous Scottish Robot', 'ORG')]
+
+========================== Sentence 35 ===========================
+
+ 1979 
+
+Tokens are: 
+>> ['1979'] 
+
+ UPOS tags are: 
+>> [('1979', 'NUM')] 
+
+ XPOS tags are: 
+>> [('1979', 'CD')] 
+
+ Lemmas are: 
+>> [('1979', '1979')] 
+
+ Dependency tags are: 
+>> [(('1979', 'root'), 'root')]
+
+ Named Entities are: 
+>> [('1979', 'DATE')]
+
+========================== Sentence 36 ===========================
+
+ The first computer-controlled autonomous vehicle, Stanford Cart, was built. 
+
+Tokens are: 
+>> ['The', 'first', 'computer', '-', 'controlled', 'autonomous', 'vehicle', ',', 'Stanford', 'Cart', ',', 'was', 'built', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('first', 'ADJ'), ('computer', 'NOUN'), ('-', 'PUNCT'), ('controlled', 'VERB'), ('autonomous', 'ADJ'), ('vehicle', 'NOUN'), (',', 'PUNCT'), ('Stanford', 'PROPN'), ('Cart', 'PROPN'), (',', 'PUNCT'), ('was', 'AUX'), ('built', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('first', 'JJ'), ('computer', 'NN'), ('-', 'HYPH'), ('controlled', 'VBN'), ('autonomous', 'JJ'), ('vehicle', 'NN'), (',', ','), ('Stanford', 'NNP'), ('Cart', 'NNP'), (',', ','), ('was', 'VBD'), ('built', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('first', 'first'), ('computer', 'computer'), ('-', '-'), ('controlled', 'control'), ('autonomous', 'autonomous'), ('vehicle', 'vehicle'), (',', ','), ('Stanford', 'Stanford'), ('Cart', 'Cart'), (',', ','), ('was', 'be'), ('built', 'build'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'vehicle'), 'det'), (('first', 'vehicle'), 'amod'), (('computer', 'controlled'), 'compound'), (('-', 'controlled'), 'punct'), (('controlled', 'vehicle'), 'amod'), (('autonomous', 'vehicle'), 'amod'), (('vehicle', 'built'), 'nsubj:pass'), ((',', 'Cart'), 'punct'), (('Stanford', 'Cart'), 'compound'), (('Cart', 'vehicle'), 'appos'), ((',', 'built'), 'punct'), (('was', 'built'), 'aux:pass'), (('built', 'root'), 'root'), (('.', 'built'), 'punct')]
+
+ Named Entities are: 
+>> [('first', 'ORDINAL'), ('Stanford Cart', 'ORG')]
+
+========================== Sentence 37 ===========================
+
+ 1985 	Harold Cohen created and demonstrated the drawing program, Aaron. 
+
+Tokens are: 
+>> ['1985', 'Harold', 'Cohen', 'created', 'and', 'demonstrated', 'the', 'drawing', 'program', ',', 'Aaron', '.'] 
+
+ UPOS tags are: 
+>> [('1985', 'NUM'), ('Harold', 'PROPN'), ('Cohen', 'PROPN'), ('created', 'VERB'), ('and', 'CCONJ'), ('demonstrated', 'VERB'), ('the', 'DET'), ('drawing', 'NOUN'), ('program', 'NOUN'), (',', 'PUNCT'), ('Aaron', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('1985', 'CD'), ('Harold', 'NNP'), ('Cohen', 'NNP'), ('created', 'VBD'), ('and', 'CC'), ('demonstrated', 'VBD'), ('the', 'DT'), ('drawing', 'NN'), ('program', 'NN'), (',', ','), ('Aaron', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('1985', '1985'), ('Harold', 'Harold'), ('Cohen', 'Cohen'), ('created', 'create'), ('and', 'and'), ('demonstrated', 'demonstrate'), ('the', 'the'), ('drawing', 'draw'), ('program', 'program'), (',', ','), ('Aaron', 'Aaron'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('1985', 'root'), 'root'), (('Harold', 'created'), 'nsubj'), (('Cohen', 'Harold'), 'flat'), (('created', '1985'), 'parataxis'), (('and', 'demonstrated'), 'cc'), (('demonstrated', 'created'), 'conj'), (('the', 'program'), 'det'), (('drawing', 'program'), 'amod'), (('program', 'demonstrated'), 'obj'), ((',', 'program'), 'punct'), (('Aaron', 'program'), 'appos'), (('.', '1985'), 'punct')]
+
+ Named Entities are: 
+>> [('1985', 'DATE'), ('Harold Cohen', 'PERSON'), ('Aaron', 'PERSON')]
+
+========================== Sentence 38 ===========================
+
+ 1990 	Major advances in all areas of AI − · Significant demonstrations in machine learning · Case-based reasoning · Multi-agent planning · Scheduling · Data mining, Web Crawler · natural language understanding and translation · Vision, Virtual Reality · Games  	1997 	The Deep Blue Chess Program beats the then world chess champion, Garry Kasparov. 
+
+Tokens are: 
+>> ['1990', 'Major', 'advances', 'in', 'all', 'areas', 'of', 'AI', '−', '·', 'Significant', 'demonstrations', 'in', 'machine', 'learning', '·', 'Case', '-based', 'reasoning', '·', 'Multi-agent', 'planning', '·', 'Scheduling', '·', 'Data', 'mining', ',', 'Web', 'Crawler', '·', 'natural', 'language', 'understanding', 'and', 'translation', '·', 'Vision', ',', 'Virtual', 'Reality', '·', 'Games', '1997', 'The', 'Deep', 'Blue', 'Chess', 'Program', 'beats', 'the', 'then', 'world', 'chess', 'champion', ',', 'Garry', 'Kasparov', '.'] 
+
+ UPOS tags are: 
+>> [('1990', 'NUM'), ('Major', 'ADJ'), ('advances', 'NOUN'), ('in', 'ADP'), ('all', 'DET'), ('areas', 'NOUN'), ('of', 'ADP'), ('AI', 'NOUN'), ('−', 'PUNCT'), ('·', 'PUNCT'), ('Significant', 'ADJ'), ('demonstrations', 'NOUN'), ('in', 'ADP'), ('machine', 'NOUN'), ('learning', 'NOUN'), ('·', 'PUNCT'), ('Case', 'NOUN'), ('-based', 'VERB'), ('reasoning', 'NOUN'), ('·', 'PUNCT'), ('Multi-agent', 'ADJ'), ('planning', 'NOUN'), ('·', 'PUNCT'), ('Scheduling', 'NOUN'), ('·', 'PUNCT'), ('Data', 'NOUN'), ('mining', 'NOUN'), (',', 'PUNCT'), ('Web', 'NOUN'), ('Crawler', 'NOUN'), ('·', 'PUNCT'), ('natural', 'ADJ'), ('language', 'NOUN'), ('understanding', 'NOUN'), ('and', 'CCONJ'), ('translation', 'NOUN'), ('·', 'PUNCT'), ('Vision', 'NOUN'), (',', 'PUNCT'), ('Virtual', 'ADJ'), ('Reality', 'PROPN'), ('·', 'PUNCT'), ('Games', 'PROPN'), ('1997', 'NUM'), ('The', 'DET'), ('Deep', 'ADJ'), ('Blue', 'ADJ'), ('Chess', 'PROPN'), ('Program', 'PROPN'), ('beats', 'VERB'), ('the', 'DET'), ('then', 'ADV'), ('world', 'NOUN'), ('chess', 'NOUN'), ('champion', 'NOUN'), (',', 'PUNCT'), ('Garry', 'PROPN'), ('Kasparov', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('1990', 'CD'), ('Major', 'JJ'), ('advances', 'NNS'), ('in', 'IN'), ('all', 'DT'), ('areas', 'NNS'), ('of', 'IN'), ('AI', 'NN'), ('−', ','), ('·', 'NFP'), ('Significant', 'JJ'), ('demonstrations', 'NNS'), ('in', 'IN'), ('machine', 'NN'), ('learning', 'NN'), ('·', 'NFP'), ('Case', 'NN'), ('-based', 'VBN'), ('reasoning', 'NN'), ('·', 'NFP'), ('Multi-agent', 'JJ'), ('planning', 'NN'), ('·', 'NFP'), ('Scheduling', 'NN'), ('·', 'NFP'), ('Data', 'NN'), ('mining', 'NN'), (',', ','), ('Web', 'NN'), ('Crawler', 'NN'), ('·', 'NFP'), ('natural', 'JJ'), ('language', 'NN'), ('understanding', 'NN'), ('and', 'CC'), ('translation', 'NN'), ('·', 'NFP'), ('Vision', 'NN'), (',', ','), ('Virtual', 'NNP'), ('Reality', 'NNP'), ('·', 'NFP'), ('Games', 'NNPS'), ('1997', 'CD'), ('The', 'DT'), ('Deep', 'NNP'), ('Blue', 'NNP'), ('Chess', 'NNP'), ('Program', 'NNP'), ('beats', 'VBZ'), ('the', 'DT'), ('then', 'RB'), ('world', 'NN'), ('chess', 'NN'), ('champion', 'NN'), (',', ','), ('Garry', 'NNP'), ('Kasparov', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('1990', '1990'), ('Major', 'major'), ('advances', 'advance'), ('in', 'in'), ('all', 'all'), ('areas', 'area'), ('of', 'of'), ('AI', 'ai'), ('−', "''"), ('·', '·'), ('Significant', 'significant'), ('demonstrations', 'demonstration'), ('in', 'in'), ('machine', 'machine'), ('learning', 'learning'), ('·', '·'), ('Case', 'case'), ('-based', '-base'), ('reasoning', 'reasoning'), ('·', '·'), ('Multi-agent', 'multi-agent'), ('planning', 'planning'), ('·', '·'), ('Scheduling', 'scheduling'), ('·', '·'), ('Data', 'data'), ('mining', 'mining'), (',', ','), ('Web', 'web'), ('Crawler', 'crawler'), ('·', '·'), ('natural', 'natural'), ('language', 'language'), ('understanding', 'understanding'), ('and', 'and'), ('translation', 'translation'), ('·', '·'), ('Vision', 'vision'), (',', ','), ('Virtual', 'virtual'), ('Reality', 'reality'), ('·', '·'), ('Games', 'Game'), ('1997', '1997'), ('The', 'the'), ('Deep', 'deep'), ('Blue', 'Blue'), ('Chess', 'chess'), ('Program', 'Program'), ('beats', 'beat'), ('the', 'the'), ('then', 'then'), ('world', 'world'), ('chess', 'chess'), ('champion', 'champion'), (',', ','), ('Garry', 'Garry'), ('Kasparov', 'Kasparov'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('1990', 'root'), 'root'), (('Major', 'advances'), 'amod'), (('advances', '1990'), 'appos'), (('in', 'areas'), 'case'), (('all', 'areas'), 'det'), (('areas', 'advances'), 'nmod'), (('of', 'AI'), 'case'), (('AI', 'areas'), 'nmod'), (('−', 'demonstrations'), 'punct'), (('·', 'demonstrations'), 'punct'), (('Significant', 'demonstrations'), 'amod'), (('demonstrations', 'advances'), 'conj'), (('in', 'learning'), 'case'), (('machine', 'learning'), 'compound'), (('learning', 'demonstrations'), 'nmod'), (('·', 'reasoning'), 'punct'), (('Case', 'reasoning'), 'compound'), (('-based', 'reasoning'), 'amod'), (('reasoning', 'demonstrations'), 'nmod'), (('·', 'planning'), 'punct'), (('Multi-agent', 'planning'), 'amod'), (('planning', 'reasoning'), 'appos'), (('·', 'Scheduling'), 'punct'), (('Scheduling', 'reasoning'), 'appos'), (('·', 'mining'), 'punct'), (('Data', 'mining'), 'compound'), (('mining', 'reasoning'), 'appos'), ((',', 'Crawler'), 'punct'), (('Web', 'Crawler'), 'compound'), (('Crawler', 'mining'), 'conj'), (('·', 'understanding'), 'punct'), (('natural', 'understanding'), 'amod'), (('language', 'understanding'), 'compound'), (('understanding', 'mining'), 'conj'), (('and', 'translation'), 'cc'), (('translation', 'understanding'), 'conj'), (('·', 'Vision'), 'punct'), (('Vision', 'mining'), 'conj'), ((',', 'Games'), 'punct'), (('Virtual', 'Reality'), 'amod'), (('Reality', 'Games'), 'compound'), (('·', 'Games'), 'punct'), (('Games', 'Vision'), 'appos'), (('1997', 'Games'), 'nummod'), (('The', 'Program'), 'det'), (('Deep', 'Program'), 'amod'), (('Blue', 'Program'), 'amod'), (('Chess', 'Program'), 'compound'), (('Program', 'beats'), 'nsubj'), (('beats', '1990'), 'parataxis'), (('the', 'champion'), 'det'), (('then', 'champion'), 'advmod'), (('world', 'champion'), 'compound'), (('chess', 'champion'), 'compound'), (('champion', 'beats'), 'obj'), ((',', 'Garry'), 'punct'), (('Garry', 'champion'), 'appos'), (('Kasparov', 'Garry'), 'flat'), (('.', '1990'), 'punct')]
+
+ Named Entities are: 
+>> [('1990', 'DATE'), ('1997', 'DATE'), ('The Deep Blue Chess Program', 'WORK_OF_ART'), ('Garry Kasparov', 'PERSON')]
+
+========================== Sentence 39 ===========================
+
+ 2000 
+
+Tokens are: 
+>> ['2000'] 
+
+ UPOS tags are: 
+>> [('2000', 'NUM')] 
+
+ XPOS tags are: 
+>> [('2000', 'CD')] 
+
+ Lemmas are: 
+>> [('2000', '2000')] 
+
+ Dependency tags are: 
+>> [(('2000', 'root'), 'root')]
+
+ Named Entities are: 
+>> [('2000', 'DATE')]
+
+========================== Sentence 40 ===========================
+
+ Interactive robot pets become commercially available. 
+
+Tokens are: 
+>> ['Interactive', 'robot', 'pets', 'become', 'commercially', 'available', '.'] 
+
+ UPOS tags are: 
+>> [('Interactive', 'ADJ'), ('robot', 'NOUN'), ('pets', 'NOUN'), ('become', 'VERB'), ('commercially', 'ADV'), ('available', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Interactive', 'JJ'), ('robot', 'NN'), ('pets', 'NNS'), ('become', 'VBN'), ('commercially', 'RB'), ('available', 'JJ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Interactive', 'interactive'), ('robot', 'robot'), ('pets', 'pet'), ('become', 'become'), ('commercially', 'commercially'), ('available', 'available'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Interactive', 'pets'), 'amod'), (('robot', 'pets'), 'compound'), (('pets', 'become'), 'nsubj'), (('become', 'root'), 'root'), (('commercially', 'available'), 'advmod'), (('available', 'become'), 'xcomp'), (('.', 'become'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 41 ===========================
+
+ MIT displays Kismet, a robot with a face that expresses emotions. 
+
+Tokens are: 
+>> ['MIT', 'displays', 'Kismet', ',', 'a', 'robot', 'with', 'a', 'face', 'that', 'expresses', 'emotions', '.'] 
+
+ UPOS tags are: 
+>> [('MIT', 'PROPN'), ('displays', 'VERB'), ('Kismet', 'PROPN'), (',', 'PUNCT'), ('a', 'DET'), ('robot', 'NOUN'), ('with', 'ADP'), ('a', 'DET'), ('face', 'NOUN'), ('that', 'PRON'), ('expresses', 'VERB'), ('emotions', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('MIT', 'NNP'), ('displays', 'VBZ'), ('Kismet', 'NNP'), (',', ','), ('a', 'DT'), ('robot', 'NN'), ('with', 'IN'), ('a', 'DT'), ('face', 'NN'), ('that', 'WDT'), ('expresses', 'VBZ'), ('emotions', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('MIT', 'MIT'), ('displays', 'display'), ('Kismet', 'Kismet'), (',', ','), ('a', 'a'), ('robot', 'robot'), ('with', 'with'), ('a', 'a'), ('face', 'face'), ('that', 'that'), ('expresses', 'express'), ('emotions', 'emotion'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('MIT', 'displays'), 'nsubj'), (('displays', 'root'), 'root'), (('Kismet', 'displays'), 'obj'), ((',', 'robot'), 'punct'), (('a', 'robot'), 'det'), (('robot', 'Kismet'), 'appos'), (('with', 'face'), 'case'), (('a', 'face'), 'det'), (('face', 'robot'), 'nmod'), (('that', 'expresses'), 'nsubj'), (('expresses', 'face'), 'acl:relcl'), (('emotions', 'expresses'), 'obj'), (('.', 'displays'), 'punct')]
+
+ Named Entities are: 
+>> [('MIT', 'ORG'), ('Kismet', 'PRODUCT')]
+
+========================== Sentence 42 ===========================
+
+ The robot Nomad explores remote regions of Antarctica and locates meteorites. 
+
+Tokens are: 
+>> ['The', 'robot', 'Nomad', 'explores', 'remote', 'regions', 'of', 'Antarctica', 'and', 'locates', 'meteorites', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('robot', 'NOUN'), ('Nomad', 'PROPN'), ('explores', 'VERB'), ('remote', 'ADJ'), ('regions', 'NOUN'), ('of', 'ADP'), ('Antarctica', 'PROPN'), ('and', 'CCONJ'), ('locates', 'VERB'), ('meteorites', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('robot', 'NN'), ('Nomad', 'NNP'), ('explores', 'VBZ'), ('remote', 'JJ'), ('regions', 'NNS'), ('of', 'IN'), ('Antarctica', 'NNP'), ('and', 'CC'), ('locates', 'VBZ'), ('meteorites', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('robot', 'robot'), ('Nomad', 'Nomad'), ('explores', 'explore'), ('remote', 'remote'), ('regions', 'region'), ('of', 'of'), ('Antarctica', 'Antarctica'), ('and', 'and'), ('locates', 'locate'), ('meteorites', 'meteorite'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'robot'), 'det'), (('robot', 'explores'), 'nsubj'), (('Nomad', 'robot'), 'appos'), (('explores', 'root'), 'root'), (('remote', 'regions'), 'amod'), (('regions', 'explores'), 'obj'), (('of', 'Antarctica'), 'case'), (('Antarctica', 'regions'), 'nmod'), (('and', 'locates'), 'cc'), (('locates', 'explores'), 'conj'), (('meteorites', 'locates'), 'obj'), (('.', 'explores'), 'punct')]
+
+ Named Entities are: 
+>> [('Nomad', 'PRODUCT'), ('Antarctica', 'LOC')]

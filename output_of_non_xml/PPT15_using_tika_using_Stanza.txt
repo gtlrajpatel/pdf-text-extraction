@@ -1,0 +1,1101 @@
+
+
+========================== Sentence 1 ===========================
+
+ OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709)	 Darshan Institute of Engineering & Technology UNIT-3 Multiple encryptions and triple DES      1  Outline Multiple encryption and triple DES  Electronic Code Book Mode Cipher Block Chaining Mode  Cipher Feedback Mode  Output Feedback Mode Counter Mode   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  X.800 and RFC 2828 International Telecommunication Union (ITU) 2  Block Cipher Modes of Operations 
+
+Tokens are: 
+>> ['OOPC', '++', 'UNIT', '-1', 'Prof.', 'Rupesh', 'G.', 'Vaishnav', 'rupesh.vaishnav@darshan.ac.in', '94280-37452', 'Information', '&', 'Network', 'Security', '(', '2170709', ')', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', 'UNIT', '-3', 'Multiple', 'encryptions', 'and', 'triple', 'DES', '1', 'Outline', 'Multiple', 'encryption', 'and', 'triple', 'DES', 'Electronic', 'Code', 'Book', 'Mode', 'Cipher', 'Block', 'Chaining', 'Mode', 'Cipher', 'Feedback', 'Mode', 'Output', 'Feedback', 'Mode', 'Counter', 'Mode', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'X.800', 'and', 'RFC', '2828', 'International', 'Telecommunication', 'Union', '(', 'ITU', ')', '2', 'Block', 'Cipher', 'Modes', 'of', 'Operations'] 
+
+ UPOS tags are: 
+>> [('OOPC', 'PROPN'), ('++', 'NUM'), ('UNIT', 'NOUN'), ('-1', 'PUNCT'), ('Prof.', 'PROPN'), ('Rupesh', 'PROPN'), ('G.', 'PROPN'), ('Vaishnav', 'PROPN'), ('rupesh.vaishnav@darshan.ac.in', 'X'), ('94280-37452', 'NUM'), ('Information', 'NOUN'), ('&', 'CCONJ'), ('Network', 'PROPN'), ('Security', 'PROPN'), ('(', 'PUNCT'), ('2170709', 'NUM'), (')', 'PUNCT'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('UNIT', 'NOUN'), ('-3', 'NUM'), ('Multiple', 'ADJ'), ('encryptions', 'NOUN'), ('and', 'CCONJ'), ('triple', 'NOUN'), ('DES', 'PROPN'), ('1', 'NUM'), ('Outline', 'NOUN'), ('Multiple', 'ADJ'), ('encryption', 'NOUN'), ('and', 'CCONJ'), ('triple', 'NOUN'), ('DES', 'PROPN'), ('Electronic', 'ADJ'), ('Code', 'NOUN'), ('Book', 'NOUN'), ('Mode', 'NOUN'), ('Cipher', 'NOUN'), ('Block', 'NOUN'), ('Chaining', 'NOUN'), ('Mode', 'NOUN'), ('Cipher', 'PROPN'), ('Feedback', 'NOUN'), ('Mode', 'PROPN'), ('Output', 'PROPN'), ('Feedback', 'PROPN'), ('Mode', 'PROPN'), ('Counter', 'PROPN'), ('Mode', 'PROPN'), ('Unit', 'PROPN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('X.800', 'PROPN'), ('and', 'CCONJ'), ('RFC', 'PROPN'), ('2828', 'NUM'), ('International', 'ADJ'), ('Telecommunication', 'ADJ'), ('Union', 'PROPN'), ('(', 'PUNCT'), ('ITU', 'PROPN'), (')', 'PUNCT'), ('2', 'NUM'), ('Block', 'PROPN'), ('Cipher', 'PROPN'), ('Modes', 'PROPN'), ('of', 'ADP'), ('Operations', 'PROPN')] 
+
+ XPOS tags are: 
+>> [('OOPC', 'NNP'), ('++', 'CD'), ('UNIT', 'NN'), ('-1', ','), ('Prof.', 'NNP'), ('Rupesh', 'NNP'), ('G.', 'NNP'), ('Vaishnav', 'NNP'), ('rupesh.vaishnav@darshan.ac.in', 'ADD'), ('94280-37452', 'CD'), ('Information', 'NN'), ('&', 'CC'), ('Network', 'NNP'), ('Security', 'NNP'), ('(', '-LRB-'), ('2170709', 'CD'), (')', '-RRB-'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('UNIT', 'NN'), ('-3', 'CD'), ('Multiple', 'JJ'), ('encryptions', 'NNS'), ('and', 'CC'), ('triple', 'NN'), ('DES', 'NNP'), ('1', 'CD'), ('Outline', 'NN'), ('Multiple', 'JJ'), ('encryption', 'NN'), ('and', 'CC'), ('triple', 'NN'), ('DES', 'NNP'), ('Electronic', 'JJ'), ('Code', 'NN'), ('Book', 'NN'), ('Mode', 'NN'), ('Cipher', 'NN'), ('Block', 'NN'), ('Chaining', 'NN'), ('Mode', 'NN'), ('Cipher', 'NNP'), ('Feedback', 'NN'), ('Mode', 'NNP'), ('Output', 'NNP'), ('Feedback', 'NNP'), ('Mode', 'NNP'), ('Counter', 'NNP'), ('Mode', 'NNP'), ('Unit', 'NNP'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('X.800', 'NNP'), ('and', 'CC'), ('RFC', 'NNP'), ('2828', 'CD'), ('International', 'NNP'), ('Telecommunication', 'NNP'), ('Union', 'NNP'), ('(', '-LRB-'), ('ITU', 'NNP'), (')', '-RRB-'), ('2', 'CD'), ('Block', 'NNP'), ('Cipher', 'NNP'), ('Modes', 'NNPS'), ('of', 'IN'), ('Operations', 'NNPS')] 
+
+ Lemmas are: 
+>> [('OOPC', 'OOPC'), ('++', '++'), ('UNIT', 'unit'), ('-1', '-1'), ('Prof.', 'Prof.'), ('Rupesh', 'Rupesh'), ('G.', 'G.'), ('Vaishnav', 'Vaishnav'), ('rupesh.vaishnav@darshan.ac.in', 'rupesh.vaishnav@darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'information'), ('&', '&'), ('Network', 'Network'), ('Security', 'Security'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('UNIT', 'unit'), ('-3', '-3'), ('Multiple', 'multiple'), ('encryptions', 'encryption'), ('and', 'and'), ('triple', 'triple'), ('DES', 'DES'), ('1', '1'), ('Outline', 'outline'), ('Multiple', 'multiple'), ('encryption', 'encryption'), ('and', 'and'), ('triple', 'triple'), ('DES', 'DES'), ('Electronic', 'Electronic'), ('Code', 'code'), ('Book', 'Book'), ('Mode', 'mode'), ('Cipher', 'cipher'), ('Block', 'block'), ('Chaining', 'Chaining'), ('Mode', 'mode'), ('Cipher', 'Cipher'), ('Feedback', 'feedback'), ('Mode', 'Mode'), ('Output', 'Output'), ('Feedback', 'Feedback'), ('Mode', 'Mode'), ('Counter', 'Counter'), ('Mode', 'Mode'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('X.800', 'X.800'), ('and', 'and'), ('RFC', 'RFC'), ('2828', '2828'), ('International', 'International'), ('Telecommunication', 'Telecommunication'), ('Union', 'Union'), ('(', '('), ('ITU', 'ITU'), (')', ')'), ('2', '2'), ('Block', 'Block'), ('Cipher', 'Cipher'), ('Modes', 'Modes'), ('of', 'of'), ('Operations', 'Operation')] 
+
+ Dependency tags are: 
+>> [(('OOPC', 'root'), 'root'), (('++', 'UNIT'), 'nummod'), (('UNIT', 'OOPC'), 'appos'), (('-1', 'Prof.'), 'punct'), (('Prof.', 'OOPC'), 'appos'), (('Rupesh', 'Prof.'), 'flat'), (('G.', 'Prof.'), 'flat'), (('Vaishnav', 'Prof.'), 'flat'), (('rupesh.vaishnav@darshan.ac.in', 'Prof.'), 'list'), (('94280-37452', 'Prof.'), 'list'), (('Information', 'Prof.'), 'conj'), (('&', 'Security'), 'cc'), (('Network', 'Security'), 'compound'), (('Security', 'Information'), 'conj'), (('(', '2170709'), 'punct'), (('2170709', 'Security'), 'appos'), ((')', 'Security'), 'punct'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Prof.'), 'appos'), (('of', 'UNIT'), 'case'), (('Engineering', 'UNIT'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('UNIT', 'Institute'), 'nmod'), (('-3', 'encryptions'), 'nummod'), (('Multiple', 'encryptions'), 'amod'), (('encryptions', 'Institute'), 'conj'), (('and', 'Outline'), 'cc'), (('triple', 'Outline'), 'compound'), (('DES', 'Outline'), 'compound'), (('1', 'DES'), 'nummod'), (('Outline', 'encryptions'), 'conj'), (('Multiple', 'encryption'), 'amod'), (('encryption', 'Outline'), 'compound'), (('and', 'Book'), 'cc'), (('triple', 'DES'), 'compound'), (('DES', 'Book'), 'compound'), (('Electronic', 'Book'), 'amod'), (('Code', 'Book'), 'compound'), (('Book', 'encryption'), 'conj'), (('Mode', 'Mode'), 'compound'), (('Cipher', 'Block'), 'compound'), (('Block', 'Mode'), 'compound'), (('Chaining', 'Mode'), 'compound'), (('Mode', 'Book'), 'compound'), (('Cipher', 'Output'), 'compound'), (('Feedback', 'Output'), 'compound'), (('Mode', 'Output'), 'compound'), (('Output', 'Mode'), 'compound'), (('Feedback', 'Unit'), 'compound'), (('Mode', 'Unit'), 'compound'), (('Counter', 'Unit'), 'compound'), (('Mode', 'Unit'), 'compound'), (('Unit', 'Output'), 'appos'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', 'X.800'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'X.800'), 'compound'), (('X.800', 'Institute'), 'nmod'), (('and', 'RFC'), 'cc'), (('RFC', 'Union'), 'compound'), (('2828', 'Union'), 'nummod'), (('International', 'Union'), 'amod'), (('Telecommunication', 'Union'), 'amod'), (('Union', 'X.800'), 'conj'), (('(', 'ITU'), 'punct'), (('ITU', 'Union'), 'appos'), ((')', 'ITU'), 'punct'), (('2', 'Block'), 'nummod'), (('Block', 'Modes'), 'compound'), (('Cipher', 'Modes'), 'compound'), (('Modes', 'X.800'), 'appos'), (('of', 'Operations'), 'case'), (('Operations', 'Modes'), 'nmod')]
+
+ Named Entities are: 
+>> [('Rupesh G. Vaishnav', 'PERSON'), ('94280-37452 Information & Network Security', 'ORG'), ('2170709', 'CARDINAL'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('Feedback Mode Counter Mode   Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('X.800', 'CARDINAL'), ('RFC 2828 International Telecommunication Union', 'ORG'), ('2', 'CARDINAL')]
+
+========================== Sentence 2 ===========================
+
+ To apply a block cipher in a variety of applications, five "modes of operation" have been defined. 
+
+Tokens are: 
+>> ['To', 'apply', 'a', 'block', 'cipher', 'in', 'a', 'variety', 'of', 'applications', ',', 'five', '"', 'modes', 'of', 'operation', '"', 'have', 'been', 'defined', '.'] 
+
+ UPOS tags are: 
+>> [('To', 'PART'), ('apply', 'VERB'), ('a', 'DET'), ('block', 'NOUN'), ('cipher', 'NOUN'), ('in', 'ADP'), ('a', 'DET'), ('variety', 'NOUN'), ('of', 'ADP'), ('applications', 'NOUN'), (',', 'PUNCT'), ('five', 'NUM'), ('"', 'PUNCT'), ('modes', 'NOUN'), ('of', 'ADP'), ('operation', 'NOUN'), ('"', 'PUNCT'), ('have', 'AUX'), ('been', 'AUX'), ('defined', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('To', 'TO'), ('apply', 'VB'), ('a', 'DT'), ('block', 'NN'), ('cipher', 'NN'), ('in', 'IN'), ('a', 'DT'), ('variety', 'NN'), ('of', 'IN'), ('applications', 'NNS'), (',', ','), ('five', 'CD'), ('"', '``'), ('modes', 'NNS'), ('of', 'IN'), ('operation', 'NN'), ('"', "''"), ('have', 'VBP'), ('been', 'VBN'), ('defined', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('To', 'to'), ('apply', 'apply'), ('a', 'a'), ('block', 'block'), ('cipher', 'cipher'), ('in', 'in'), ('a', 'a'), ('variety', 'variety'), ('of', 'of'), ('applications', 'application'), (',', ','), ('five', 'five'), ('"', '"'), ('modes', 'mode'), ('of', 'of'), ('operation', 'operation'), ('"', '"'), ('have', 'have'), ('been', 'be'), ('defined', 'define'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('To', 'apply'), 'mark'), (('apply', 'defined'), 'advcl'), (('a', 'cipher'), 'det'), (('block', 'cipher'), 'compound'), (('cipher', 'apply'), 'obj'), (('in', 'variety'), 'case'), (('a', 'variety'), 'det'), (('variety', 'apply'), 'obl'), (('of', 'applications'), 'case'), (('applications', 'variety'), 'nmod'), ((',', 'defined'), 'punct'), (('five', 'modes'), 'nummod'), (('"', 'modes'), 'punct'), (('modes', 'defined'), 'nsubj:pass'), (('of', 'operation'), 'case'), (('operation', 'modes'), 'nmod'), (('"', 'modes'), 'punct'), (('have', 'defined'), 'aux'), (('been', 'defined'), 'aux:pass'), (('defined', 'root'), 'root'), (('.', 'defined'), 'punct')]
+
+ Named Entities are: 
+>> [('five', 'CARDINAL')]
+
+========================== Sentence 3 ===========================
+
+ The five modes are intended to cover a wide variety of applications of encryption for which a block cipher could be used. 
+
+Tokens are: 
+>> ['The', 'five', 'modes', 'are', 'intended', 'to', 'cover', 'a', 'wide', 'variety', 'of', 'applications', 'of', 'encryption', 'for', 'which', 'a', 'block', 'cipher', 'could', 'be', 'used', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('five', 'NUM'), ('modes', 'NOUN'), ('are', 'AUX'), ('intended', 'VERB'), ('to', 'PART'), ('cover', 'VERB'), ('a', 'DET'), ('wide', 'ADJ'), ('variety', 'NOUN'), ('of', 'ADP'), ('applications', 'NOUN'), ('of', 'ADP'), ('encryption', 'NOUN'), ('for', 'ADP'), ('which', 'PRON'), ('a', 'DET'), ('block', 'NOUN'), ('cipher', 'NOUN'), ('could', 'AUX'), ('be', 'AUX'), ('used', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('five', 'CD'), ('modes', 'NNS'), ('are', 'VBP'), ('intended', 'VBN'), ('to', 'TO'), ('cover', 'VB'), ('a', 'DT'), ('wide', 'JJ'), ('variety', 'NN'), ('of', 'IN'), ('applications', 'NNS'), ('of', 'IN'), ('encryption', 'NN'), ('for', 'IN'), ('which', 'WDT'), ('a', 'DT'), ('block', 'NN'), ('cipher', 'NN'), ('could', 'MD'), ('be', 'VB'), ('used', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('five', 'five'), ('modes', 'mode'), ('are', 'be'), ('intended', 'intend'), ('to', 'to'), ('cover', 'cover'), ('a', 'a'), ('wide', 'wide'), ('variety', 'variety'), ('of', 'of'), ('applications', 'application'), ('of', 'of'), ('encryption', 'encryption'), ('for', 'for'), ('which', 'which'), ('a', 'a'), ('block', 'block'), ('cipher', 'cipher'), ('could', 'could'), ('be', 'be'), ('used', 'use'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'modes'), 'det'), (('five', 'modes'), 'nummod'), (('modes', 'intended'), 'nsubj:pass'), (('are', 'intended'), 'aux:pass'), (('intended', 'root'), 'root'), (('to', 'cover'), 'mark'), (('cover', 'intended'), 'xcomp'), (('a', 'variety'), 'det'), (('wide', 'variety'), 'amod'), (('variety', 'cover'), 'obj'), (('of', 'applications'), 'case'), (('applications', 'variety'), 'nmod'), (('of', 'encryption'), 'case'), (('encryption', 'applications'), 'nmod'), (('for', 'which'), 'case'), (('which', 'used'), 'obl'), (('a', 'cipher'), 'det'), (('block', 'cipher'), 'compound'), (('cipher', 'used'), 'nsubj:pass'), (('could', 'used'), 'aux'), (('be', 'used'), 'aux:pass'), (('used', 'variety'), 'acl:relcl'), (('.', 'intended'), 'punct')]
+
+ Named Entities are: 
+>> [('five', 'CARDINAL')]
+
+========================== Sentence 4 ===========================
+
+ These modes are intended for use with any symmetric block cipher, including triple DES and AES. 
+
+Tokens are: 
+>> ['These', 'modes', 'are', 'intended', 'for', 'use', 'with', 'any', 'symmetric', 'block', 'cipher', ',', 'including', 'triple', 'DES', 'and', 'AES', '.'] 
+
+ UPOS tags are: 
+>> [('These', 'DET'), ('modes', 'NOUN'), ('are', 'AUX'), ('intended', 'VERB'), ('for', 'ADP'), ('use', 'NOUN'), ('with', 'ADP'), ('any', 'DET'), ('symmetric', 'ADJ'), ('block', 'NOUN'), ('cipher', 'NOUN'), (',', 'PUNCT'), ('including', 'VERB'), ('triple', 'NOUN'), ('DES', 'PROPN'), ('and', 'CCONJ'), ('AES', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('These', 'DT'), ('modes', 'NNS'), ('are', 'VBP'), ('intended', 'VBN'), ('for', 'IN'), ('use', 'NN'), ('with', 'IN'), ('any', 'DT'), ('symmetric', 'JJ'), ('block', 'NN'), ('cipher', 'NN'), (',', ','), ('including', 'VBG'), ('triple', 'NN'), ('DES', 'NNP'), ('and', 'CC'), ('AES', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('These', 'this'), ('modes', 'mode'), ('are', 'be'), ('intended', 'intend'), ('for', 'for'), ('use', 'use'), ('with', 'with'), ('any', 'any'), ('symmetric', 'symmetric'), ('block', 'block'), ('cipher', 'cipher'), (',', ','), ('including', 'include'), ('triple', 'triple'), ('DES', 'DES'), ('and', 'and'), ('AES', 'AES'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('These', 'modes'), 'det'), (('modes', 'intended'), 'nsubj:pass'), (('are', 'intended'), 'aux:pass'), (('intended', 'root'), 'root'), (('for', 'use'), 'case'), (('use', 'intended'), 'obl'), (('with', 'cipher'), 'case'), (('any', 'cipher'), 'det'), (('symmetric', 'cipher'), 'amod'), (('block', 'cipher'), 'compound'), (('cipher', 'use'), 'nmod'), ((',', 'triple'), 'punct'), (('including', 'triple'), 'case'), (('triple', 'cipher'), 'nmod'), (('DES', 'triple'), 'flat'), (('and', 'AES'), 'cc'), (('AES', 'DES'), 'conj'), (('.', 'intended'), 'punct')]
+
+ Named Entities are: 
+>> [('AES', 'ORG')]
+
+========================== Sentence 5 ===========================
+
+ Electronic Code Book (ECB) Cipher Block Chaining (CBC) Cipher Feedback (CFB) Output Feedback (OFB)  Counter (CTR)   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  1. Electronic Code Book (ECB) 
+
+Tokens are: 
+>> ['Electronic', 'Code', 'Book', '(', 'ECB', ')', 'Cipher', 'Block', 'Chaining', '(', 'CBC', ')', 'Cipher', 'Feedback', '(', 'CFB', ')', 'Output', 'Feedback', '(', 'OFB', ')', 'Counter', '(', 'CTR', ')', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', '1', '.', 'Electronic', 'Code', 'Book', '(', 'ECB', ')'] 
+
+ UPOS tags are: 
+>> [('Electronic', 'ADJ'), ('Code', 'NOUN'), ('Book', 'NOUN'), ('(', 'PUNCT'), ('ECB', 'PROPN'), (')', 'PUNCT'), ('Cipher', 'NOUN'), ('Block', 'NOUN'), ('Chaining', 'NOUN'), ('(', 'PUNCT'), ('CBC', 'PROPN'), (')', 'PUNCT'), ('Cipher', 'NOUN'), ('Feedback', 'NOUN'), ('(', 'PUNCT'), ('CFB', 'NOUN'), (')', 'PUNCT'), ('Output', 'NOUN'), ('Feedback', 'NOUN'), ('(', 'PUNCT'), ('OFB', 'NOUN'), (')', 'PUNCT'), ('Counter', 'NOUN'), ('(', 'PUNCT'), ('CTR', 'NOUN'), (')', 'PUNCT'), ('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'PROPN'), ('1', 'NUM'), ('.', 'PUNCT'), ('Electronic', 'ADJ'), ('Code', 'NOUN'), ('Book', 'PROPN'), ('(', 'PUNCT'), ('ECB', 'PROPN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Electronic', 'JJ'), ('Code', 'NN'), ('Book', 'NN'), ('(', '-LRB-'), ('ECB', 'NNP'), (')', '-RRB-'), ('Cipher', 'NN'), ('Block', 'NN'), ('Chaining', 'NN'), ('(', '-LRB-'), ('CBC', 'NNP'), (')', '-RRB-'), ('Cipher', 'NN'), ('Feedback', 'NN'), ('(', '-LRB-'), ('CFB', 'NN'), (')', '-RRB-'), ('Output', 'NN'), ('Feedback', 'NN'), ('(', '-LRB-'), ('OFB', 'NN'), (')', '-RRB-'), ('Counter', 'NN'), ('(', '-LRB-'), ('CTR', 'NN'), (')', '-RRB-'), ('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NNP'), ('1', 'CD'), ('.', '.'), ('Electronic', 'JJ'), ('Code', 'NN'), ('Book', 'NNP'), ('(', '-LRB-'), ('ECB', 'NNP'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Electronic', 'Electronic'), ('Code', 'code'), ('Book', 'Book'), ('(', '('), ('ECB', 'ECB'), (')', ')'), ('Cipher', 'cipher'), ('Block', 'block'), ('Chaining', 'Chaining'), ('(', '('), ('CBC', 'CBC'), (')', ')'), ('Cipher', 'cipher'), ('Feedback', 'feedback'), ('(', '('), ('CFB', 'cfb'), (')', ')'), ('Output', 'output'), ('Feedback', 'feedback'), ('(', '('), ('OFB', 'ofb'), (')', ')'), ('Counter', 'counter'), ('(', '('), ('CTR', 'CTR'), (')', ')'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('1', '1'), ('.', '.'), ('Electronic', 'Electronic'), ('Code', 'code'), ('Book', 'Book'), ('(', '('), ('ECB', 'ECB'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Electronic', 'Code'), 'amod'), (('Code', 'Book'), 'compound'), (('Book', 'root'), 'root'), (('(', 'ECB'), 'punct'), (('ECB', 'Book'), 'appos'), ((')', 'ECB'), 'punct'), (('Cipher', 'Block'), 'compound'), (('Block', 'Chaining'), 'compound'), (('Chaining', 'Book'), 'appos'), (('(', 'CBC'), 'punct'), (('CBC', 'Chaining'), 'appos'), ((')', 'CBC'), 'punct'), (('Cipher', 'Feedback'), 'compound'), (('Feedback', 'Book'), 'appos'), (('(', 'CFB'), 'punct'), (('CFB', 'Feedback'), 'appos'), ((')', 'CFB'), 'punct'), (('Output', 'Feedback'), 'compound'), (('Feedback', 'Feedback'), 'appos'), (('(', 'OFB'), 'punct'), (('OFB', 'Feedback'), 'appos'), ((')', 'OFB'), 'punct'), (('Counter', 'Unit'), 'compound'), (('(', 'CTR'), 'punct'), (('CTR', 'Unit'), 'appos'), ((')', 'CTR'), 'punct'), (('Unit', 'Feedback'), 'appos'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Book'), 'list'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('1', '‹#›'), 'nummod'), (('.', 'Book'), 'punct'), (('Electronic', 'Book'), 'amod'), (('Code', 'Book'), 'compound'), (('Book', '‹#›'), 'appos'), (('(', 'ECB'), 'punct'), (('ECB', 'Book'), 'appos'), ((')', 'ECB'), 'punct')]
+
+ Named Entities are: 
+>> [('ECB', 'ORG'), ('Cipher Block Chaining', 'PRODUCT'), ('CBC', 'ORG'), ('1', 'CARDINAL'), ('ECB', 'ORG')]
+
+========================== Sentence 6 ===========================
+
+ In ECB Mode Plaintext handled one block at a time and each block of plaintext is encrypted using the same key. 
+
+Tokens are: 
+>> ['In', 'ECB', 'Mode', 'Plaintext', 'handled', 'one', 'block', 'at', 'a', 'time', 'and', 'each', 'block', 'of', 'plaintext', 'is', 'encrypted', 'using', 'the', 'same', 'key', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('ECB', 'PROPN'), ('Mode', 'PROPN'), ('Plaintext', 'PROPN'), ('handled', 'VERB'), ('one', 'NUM'), ('block', 'NOUN'), ('at', 'ADP'), ('a', 'DET'), ('time', 'NOUN'), ('and', 'CCONJ'), ('each', 'DET'), ('block', 'NOUN'), ('of', 'ADP'), ('plaintext', 'NOUN'), ('is', 'AUX'), ('encrypted', 'VERB'), ('using', 'VERB'), ('the', 'DET'), ('same', 'ADJ'), ('key', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('ECB', 'NNP'), ('Mode', 'NNP'), ('Plaintext', 'NNP'), ('handled', 'VBD'), ('one', 'CD'), ('block', 'NN'), ('at', 'IN'), ('a', 'DT'), ('time', 'NN'), ('and', 'CC'), ('each', 'DT'), ('block', 'NN'), ('of', 'IN'), ('plaintext', 'NN'), ('is', 'VBZ'), ('encrypted', 'VBN'), ('using', 'VBG'), ('the', 'DT'), ('same', 'JJ'), ('key', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('ECB', 'ECB'), ('Mode', 'Mode'), ('Plaintext', 'Plaintext'), ('handled', 'handle'), ('one', 'one'), ('block', 'block'), ('at', 'at'), ('a', 'a'), ('time', 'time'), ('and', 'and'), ('each', 'each'), ('block', 'block'), ('of', 'of'), ('plaintext', 'plaintext'), ('is', 'be'), ('encrypted', 'encrypt'), ('using', 'use'), ('the', 'the'), ('same', 'same'), ('key', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'Mode'), 'case'), (('ECB', 'Mode'), 'compound'), (('Mode', 'handled'), 'obl'), (('Plaintext', 'handled'), 'nsubj'), (('handled', 'root'), 'root'), (('one', 'block'), 'nummod'), (('block', 'handled'), 'obj'), (('at', 'time'), 'case'), (('a', 'time'), 'det'), (('time', 'handled'), 'obl'), (('and', 'encrypted'), 'cc'), (('each', 'block'), 'det'), (('block', 'encrypted'), 'nsubj:pass'), (('of', 'plaintext'), 'case'), (('plaintext', 'block'), 'nmod'), (('is', 'encrypted'), 'aux:pass'), (('encrypted', 'handled'), 'conj'), (('using', 'encrypted'), 'advcl'), (('the', 'key'), 'det'), (('same', 'key'), 'amod'), (('key', 'using'), 'obj'), (('.', 'handled'), 'punct')]
+
+ Named Entities are: 
+>> [('ECB Mode Plaintext', 'ORG'), ('one', 'CARDINAL')]
+
+========================== Sentence 7 ===========================
+
+ The term codebook is used because, for a given key, there is a unique ciphertext for every b-bit block of plaintext. 
+
+Tokens are: 
+>> ['The', 'term', 'codebook', 'is', 'used', 'because', ',', 'for', 'a', 'given', 'key', ',', 'there', 'is', 'a', 'unique', 'ciphertext', 'for', 'every', 'b-bit', 'block', 'of', 'plaintext', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('term', 'NOUN'), ('codebook', 'NOUN'), ('is', 'AUX'), ('used', 'VERB'), ('because', 'SCONJ'), (',', 'PUNCT'), ('for', 'ADP'), ('a', 'DET'), ('given', 'VERB'), ('key', 'NOUN'), (',', 'PUNCT'), ('there', 'PRON'), ('is', 'VERB'), ('a', 'DET'), ('unique', 'ADJ'), ('ciphertext', 'NOUN'), ('for', 'ADP'), ('every', 'DET'), ('b-bit', 'ADJ'), ('block', 'NOUN'), ('of', 'ADP'), ('plaintext', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('term', 'NN'), ('codebook', 'NN'), ('is', 'VBZ'), ('used', 'VBN'), ('because', 'IN'), (',', ','), ('for', 'IN'), ('a', 'DT'), ('given', 'VBN'), ('key', 'NN'), (',', ','), ('there', 'EX'), ('is', 'VBZ'), ('a', 'DT'), ('unique', 'JJ'), ('ciphertext', 'NN'), ('for', 'IN'), ('every', 'DT'), ('b-bit', 'JJ'), ('block', 'NN'), ('of', 'IN'), ('plaintext', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('term', 'term'), ('codebook', 'codebook'), ('is', 'be'), ('used', 'use'), ('because', 'because'), (',', ','), ('for', 'for'), ('a', 'a'), ('given', 'give'), ('key', 'key'), (',', ','), ('there', 'there'), ('is', 'be'), ('a', 'a'), ('unique', 'unique'), ('ciphertext', 'ciphertext'), ('for', 'for'), ('every', 'every'), ('b-bit', 'b-bit'), ('block', 'block'), ('of', 'of'), ('plaintext', 'plaintext'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'codebook'), 'det'), (('term', 'codebook'), 'compound'), (('codebook', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'root'), 'root'), (('because', 'is'), 'mark'), ((',', 'because'), 'punct'), (('for', 'key'), 'case'), (('a', 'key'), 'det'), (('given', 'key'), 'amod'), (('key', 'is'), 'obl'), ((',', 'key'), 'punct'), (('there', 'is'), 'expl'), (('is', 'used'), 'advcl'), (('a', 'ciphertext'), 'det'), (('unique', 'ciphertext'), 'amod'), (('ciphertext', 'is'), 'nsubj'), (('for', 'block'), 'case'), (('every', 'block'), 'det'), (('b-bit', 'block'), 'amod'), (('block', 'ciphertext'), 'nmod'), (('of', 'plaintext'), 'case'), (('plaintext', 'block'), 'nmod'), (('.', 'used'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 8 ===========================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  1. ECB Encryption & Decryption P1 Encrypt C1  K P2 Encrypt C2  K PN Encrypt CN  K C1 Decrypt P1  K C2 Decrypt P2  K CN Decrypt PN  K … … 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit 64-bit  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  Electronic Code Book - Cont… Strength: it’s simple. 
+
+Tokens are: 
+>> ['Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', '1.', 'ECB', 'Encryption', '&', 'Decryption', 'P1', 'Encrypt', 'C1', 'K', 'P2', 'Encrypt', 'C2', 'K', 'PN', 'Encrypt', 'CN', 'K', 'C1', 'Decrypt', 'P1', 'K', 'C2', 'Decrypt', 'P2', 'K', 'CN', 'Decrypt', 'PN', 'K', '…', '…', '64', '-', 'bit', '64-bit', '64-bit', '64-bit', '64-bit', '64-bit', '64-bit', '64-bit', '64-bit', '64', '-', 'bit', '64', '-', 'bit', '64', '-', 'bit', 'Unit-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'Electronic', 'Code', 'Book', '-', 'Cont', '…', 'Strength', ':', 'it', '’s', 'simple', '.'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('1.', 'NUM'), ('ECB', 'PROPN'), ('Encryption', 'NOUN'), ('&', 'CCONJ'), ('Decryption', 'NOUN'), ('P1', 'PROPN'), ('Encrypt', 'NOUN'), ('C1', 'NUM'), ('K', 'NUM'), ('P2', 'NOUN'), ('Encrypt', 'NOUN'), ('C2', 'NOUN'), ('K', 'NUM'), ('PN', 'NOUN'), ('Encrypt', 'NOUN'), ('CN', 'NOUN'), ('K', 'NUM'), ('C1', 'NOUN'), ('Decrypt', 'NOUN'), ('P1', 'NOUN'), ('K', 'NUM'), ('C2', 'NOUN'), ('Decrypt', 'NOUN'), ('P2', 'NOUN'), ('K', 'NUM'), ('CN', 'NOUN'), ('Decrypt', 'NOUN'), ('PN', 'NOUN'), ('K', 'NUM'), ('…', 'PUNCT'), ('…', 'PUNCT'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64-bit', 'NOUN'), ('64-bit', 'NOUN'), ('64-bit', 'NOUN'), ('64-bit', 'NOUN'), ('64-bit', 'NOUN'), ('64-bit', 'NUM'), ('64-bit', 'NUM'), ('64-bit', 'NUM'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('Unit-3', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'NOUN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('Electronic', 'ADJ'), ('Code', 'NOUN'), ('Book', 'NOUN'), ('-', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT'), ('Strength', 'NOUN'), (':', 'PUNCT'), ('it', 'PRON'), ('’s', 'AUX'), ('simple', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('1.', 'CD'), ('ECB', 'NNP'), ('Encryption', 'NN'), ('&', 'CC'), ('Decryption', 'NN'), ('P1', 'NNP'), ('Encrypt', 'NN'), ('C1', 'CD'), ('K', 'CD'), ('P2', 'NN'), ('Encrypt', 'NN'), ('C2', 'NN'), ('K', 'CD'), ('PN', 'NN'), ('Encrypt', 'NN'), ('CN', 'NN'), ('K', 'CD'), ('C1', 'NN'), ('Decrypt', 'NN'), ('P1', 'NN'), ('K', 'CD'), ('C2', 'NN'), ('Decrypt', 'NN'), ('P2', 'NN'), ('K', 'CD'), ('CN', 'NN'), ('Decrypt', 'NN'), ('PN', 'NN'), ('K', 'CD'), ('…', ','), ('…', ':'), ('64', 'CD'), ('-', ','), ('bit', 'NN'), ('64-bit', 'NN'), ('64-bit', 'NN'), ('64-bit', 'NN'), ('64-bit', 'NN'), ('64-bit', 'NN'), ('64-bit', 'CD'), ('64-bit', 'CD'), ('64-bit', 'CD'), ('64', 'CD'), ('-', ','), ('bit', 'NN'), ('64', 'CD'), ('-', 'HYPH'), ('bit', 'NN'), ('64', 'CD'), ('-', 'HYPH'), ('bit', 'NN'), ('Unit-3', 'NN'), ('Darshan', 'NNP'), ('Institute', 'NN'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('Electronic', 'JJ'), ('Code', 'NN'), ('Book', 'NN'), ('-', 'HYPH'), ('Cont', 'NN'), ('…', ','), ('Strength', 'NN'), (':', ':'), ('it', 'PRP'), ('’s', 'VBZ'), ('simple', 'JJ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('1.', '1.'), ('ECB', 'ECB'), ('Encryption', 'encryption'), ('&', '&'), ('Decryption', 'decryption'), ('P1', 'P1'), ('Encrypt', 'encrypt'), ('C1', 'c1'), ('K', 'k'), ('P2', 'p2'), ('Encrypt', 'encrypt'), ('C2', 'C2'), ('K', 'k'), ('PN', 'pn'), ('Encrypt', 'encrypt'), ('CN', 'cn'), ('K', 'k'), ('C1', 'c1'), ('Decrypt', 'decrypt'), ('P1', 'p1'), ('K', 'k'), ('C2', 'C2'), ('Decrypt', 'decrypt'), ('P2', 'p2'), ('K', 'k'), ('CN', 'cn'), ('Decrypt', 'decrypt'), ('PN', 'pn'), ('K', 'k'), ('…', '…'), ('…', '…'), ('64', '64'), ('-', '-'), ('bit', 'bit'), ('64-bit', '64-bit'), ('64-bit', '64-bit'), ('64-bit', '64-bit'), ('64-bit', '64-bit'), ('64-bit', '64-bit'), ('64-bit', '64-bit'), ('64-bit', '64-bit'), ('64-bit', '64-bit'), ('64', '64'), ('-', '-'), ('bit', 'bit'), ('64', '64'), ('-', '-'), ('bit', 'bit'), ('64', '64'), ('-', '-'), ('bit', 'bit'), ('Unit-3', 'unit-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('Electronic', 'Electronic'), ('Code', 'code'), ('Book', 'Book'), ('-', '-'), ('Cont', 'cont'), ('…', '…'), ('Strength', 'strength'), (':', ':'), ('it', 'it'), ('’s', 'be'), ('simple', 'simple'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'root'), 'root'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('1.', 'Encryption'), 'nummod'), (('ECB', 'Encryption'), 'compound'), (('Encryption', 'Institute'), 'conj'), (('&', 'Encrypt'), 'cc'), (('Decryption', 'Encrypt'), 'compound'), (('P1', 'Encrypt'), 'compound'), (('Encrypt', 'Unit'), 'list'), (('C1', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('P2', 'Encrypt'), 'compound'), (('Encrypt', 'Unit'), 'appos'), (('C2', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('PN', 'Encrypt'), 'compound'), (('Encrypt', 'Unit'), 'appos'), (('CN', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('C1', 'Decrypt'), 'compound'), (('Decrypt', 'Unit'), 'appos'), (('P1', 'K'), 'compound'), (('K', 'Decrypt'), 'nummod'), (('C2', 'Decrypt'), 'compound'), (('Decrypt', 'Unit'), 'appos'), (('P2', 'K'), 'compound'), (('K', 'Decrypt'), 'nummod'), (('CN', 'Unit'), 'appos'), (('Decrypt', 'Unit'), 'appos'), (('PN', 'K'), 'compound'), (('K', 'Unit'), 'list'), (('…', 'Unit'), 'punct'), (('…', 'Unit'), 'punct'), (('64', 'Unit'), 'list'), (('-', 'Unit'), 'punct'), (('bit', 'Unit'), 'parataxis'), (('64-bit', 'Unit'), 'parataxis'), (('64-bit', 'Unit'), 'appos'), (('64-bit', 'Unit'), 'appos'), (('64-bit', 'Unit'), 'appos'), (('64-bit', 'Unit'), 'list'), (('64-bit', '64-bit'), 'compound'), (('64-bit', '64'), 'compound'), (('64-bit', 'Unit'), 'list'), (('64', 'Unit'), 'list'), (('-', 'Unit'), 'punct'), (('bit', 'bit'), 'appos'), (('64', 'bit'), 'nummod'), (('-', 'bit'), 'punct'), (('bit', 'bit'), 'compound'), (('64', 'bit'), 'nummod'), (('-', 'bit'), 'punct'), (('bit', 'Institute'), 'compound'), (('Unit-3', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'parataxis'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Book'), 'compound'), (('Electronic', 'Book'), 'amod'), (('Code', 'Book'), 'compound'), (('Book', 'Institute'), 'appos'), (('-', 'Cont'), 'punct'), (('Cont', 'Book'), 'appos'), (('…', 'Cont'), 'punct'), (('Strength', 'Book'), 'appos'), ((':', 'simple'), 'punct'), (('it', 'simple'), 'nsubj'), (('’s', 'simple'), 'cop'), (('simple', 'Strength'), 'parataxis'), (('.', 'Unit'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('1.', 'CARDINAL'), ('64-bit', 'QUANTITY'), ('64-bit 64-bit', 'QUANTITY'), ('64-bit 64-bit', 'QUANTITY')]
+
+========================== Sentence 9 ===========================
+
+ Weakness: Repetitive information contained in the plaintext may show in the ciphertext, if aligned with blocks. 
+
+Tokens are: 
+>> ['Weakness', ':', 'Repetitive', 'information', 'contained', 'in', 'the', 'plaintext', 'may', 'show', 'in', 'the', 'ciphertext', ',', 'if', 'aligned', 'with', 'blocks', '.'] 
+
+ UPOS tags are: 
+>> [('Weakness', 'NOUN'), (':', 'PUNCT'), ('Repetitive', 'ADJ'), ('information', 'NOUN'), ('contained', 'VERB'), ('in', 'ADP'), ('the', 'DET'), ('plaintext', 'NOUN'), ('may', 'AUX'), ('show', 'VERB'), ('in', 'ADP'), ('the', 'DET'), ('ciphertext', 'NOUN'), (',', 'PUNCT'), ('if', 'SCONJ'), ('aligned', 'VERB'), ('with', 'ADP'), ('blocks', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Weakness', 'NN'), (':', ':'), ('Repetitive', 'JJ'), ('information', 'NN'), ('contained', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('plaintext', 'NN'), ('may', 'MD'), ('show', 'VB'), ('in', 'IN'), ('the', 'DT'), ('ciphertext', 'NN'), (',', ','), ('if', 'IN'), ('aligned', 'VBN'), ('with', 'IN'), ('blocks', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Weakness', 'weakness'), (':', ':'), ('Repetitive', 'repetitive'), ('information', 'information'), ('contained', 'contain'), ('in', 'in'), ('the', 'the'), ('plaintext', 'plaintext'), ('may', 'may'), ('show', 'show'), ('in', 'in'), ('the', 'the'), ('ciphertext', 'ciphertext'), (',', ','), ('if', 'if'), ('aligned', 'align'), ('with', 'with'), ('blocks', 'block'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Weakness', 'root'), 'root'), ((':', 'Weakness'), 'punct'), (('Repetitive', 'information'), 'amod'), (('information', 'show'), 'nsubj'), (('contained', 'information'), 'acl'), (('in', 'plaintext'), 'case'), (('the', 'plaintext'), 'det'), (('plaintext', 'contained'), 'obl'), (('may', 'show'), 'aux'), (('show', 'Weakness'), 'appos'), (('in', 'ciphertext'), 'case'), (('the', 'ciphertext'), 'det'), (('ciphertext', 'show'), 'obl'), ((',', 'show'), 'punct'), (('if', 'aligned'), 'mark'), (('aligned', 'show'), 'advcl'), (('with', 'blocks'), 'case'), (('blocks', 'aligned'), 'obl'), (('.', 'Weakness'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 10 ===========================
+
+ If the message has repetitive elements with a period of repetition a multiple of b bits, then these elements can be identified by the analyst. 
+
+Tokens are: 
+>> ['If', 'the', 'message', 'has', 'repetitive', 'elements', 'with', 'a', 'period', 'of', 'repetition', 'a', 'multiple', 'of', 'b', 'bits', ',', 'then', 'these', 'elements', 'can', 'be', 'identified', 'by', 'the', 'analyst', '.'] 
+
+ UPOS tags are: 
+>> [('If', 'SCONJ'), ('the', 'DET'), ('message', 'NOUN'), ('has', 'VERB'), ('repetitive', 'ADJ'), ('elements', 'NOUN'), ('with', 'ADP'), ('a', 'DET'), ('period', 'NOUN'), ('of', 'ADP'), ('repetition', 'NOUN'), ('a', 'DET'), ('multiple', 'ADJ'), ('of', 'ADP'), ('b', 'NOUN'), ('bits', 'NOUN'), (',', 'PUNCT'), ('then', 'ADV'), ('these', 'DET'), ('elements', 'NOUN'), ('can', 'AUX'), ('be', 'AUX'), ('identified', 'VERB'), ('by', 'ADP'), ('the', 'DET'), ('analyst', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('If', 'IN'), ('the', 'DT'), ('message', 'NN'), ('has', 'VBZ'), ('repetitive', 'JJ'), ('elements', 'NNS'), ('with', 'IN'), ('a', 'DT'), ('period', 'NN'), ('of', 'IN'), ('repetition', 'NN'), ('a', 'DT'), ('multiple', 'JJ'), ('of', 'IN'), ('b', 'NN'), ('bits', 'NNS'), (',', ','), ('then', 'RB'), ('these', 'DT'), ('elements', 'NNS'), ('can', 'MD'), ('be', 'VB'), ('identified', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('analyst', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('If', 'if'), ('the', 'the'), ('message', 'message'), ('has', 'have'), ('repetitive', 'repetitive'), ('elements', 'element'), ('with', 'with'), ('a', 'a'), ('period', 'period'), ('of', 'of'), ('repetition', 'repetition'), ('a', 'a'), ('multiple', 'multiple'), ('of', 'of'), ('b', 'b'), ('bits', 'bit'), (',', ','), ('then', 'then'), ('these', 'this'), ('elements', 'element'), ('can', 'can'), ('be', 'be'), ('identified', 'identify'), ('by', 'by'), ('the', 'the'), ('analyst', 'analyst'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('If', 'has'), 'mark'), (('the', 'message'), 'det'), (('message', 'has'), 'nsubj'), (('has', 'identified'), 'advcl'), (('repetitive', 'elements'), 'amod'), (('elements', 'has'), 'obj'), (('with', 'period'), 'case'), (('a', 'period'), 'det'), (('period', 'elements'), 'nmod'), (('of', 'repetition'), 'case'), (('repetition', 'period'), 'nmod'), (('a', 'multiple'), 'det'), (('multiple', 'period'), 'amod'), (('of', 'bits'), 'case'), (('b', 'bits'), 'compound'), (('bits', 'multiple'), 'obl'), ((',', 'identified'), 'punct'), (('then', 'identified'), 'advmod'), (('these', 'elements'), 'det'), (('elements', 'identified'), 'nsubj:pass'), (('can', 'identified'), 'aux'), (('be', 'identified'), 'aux:pass'), (('identified', 'root'), 'root'), (('by', 'analyst'), 'case'), (('the', 'analyst'), 'det'), (('analyst', 'identified'), 'obl'), (('.', 'identified'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 11 ===========================
+
+ Typical application:  Secure transmission of short pieces of information (e.g.---.- a temporary encryption key)   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  2. Cipher Block Chaining (CBC) CBC is a technique in which the same plaintext block, if repeated, produces different ciphertext blocks. 
+
+Tokens are: 
+>> ['Typical', 'application', ':', 'Secure', 'transmission', 'of', 'short', 'pieces', 'of', 'information', '(', 'e.g.', '---.-', 'a', 'temporary', 'encryption', 'key', ')', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', '2', '.', 'Cipher', 'Block', 'Chaining', '(', 'CBC', ')', 'CBC', 'is', 'a', 'technique', 'in', 'which', 'the', 'same', 'plaintext', 'block', ',', 'if', 'repeated', ',', 'produces', 'different', 'ciphertext', 'blocks', '.'] 
+
+ UPOS tags are: 
+>> [('Typical', 'ADJ'), ('application', 'NOUN'), (':', 'PUNCT'), ('Secure', 'ADJ'), ('transmission', 'NOUN'), ('of', 'ADP'), ('short', 'ADJ'), ('pieces', 'NOUN'), ('of', 'ADP'), ('information', 'NOUN'), ('(', 'PUNCT'), ('e.g.', 'ADV'), ('---.-', 'PUNCT'), ('a', 'DET'), ('temporary', 'ADJ'), ('encryption', 'NOUN'), ('key', 'NOUN'), (')', 'PUNCT'), ('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('2', 'NUM'), ('.', 'PUNCT'), ('Cipher', 'PROPN'), ('Block', 'PROPN'), ('Chaining', 'PROPN'), ('(', 'PUNCT'), ('CBC', 'PROPN'), (')', 'PUNCT'), ('CBC', 'PROPN'), ('is', 'AUX'), ('a', 'DET'), ('technique', 'NOUN'), ('in', 'ADP'), ('which', 'PRON'), ('the', 'DET'), ('same', 'ADJ'), ('plaintext', 'NOUN'), ('block', 'NOUN'), (',', 'PUNCT'), ('if', 'SCONJ'), ('repeated', 'VERB'), (',', 'PUNCT'), ('produces', 'VERB'), ('different', 'ADJ'), ('ciphertext', 'NOUN'), ('blocks', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Typical', 'JJ'), ('application', 'NN'), (':', ':'), ('Secure', 'JJ'), ('transmission', 'NN'), ('of', 'IN'), ('short', 'JJ'), ('pieces', 'NNS'), ('of', 'IN'), ('information', 'NN'), ('(', '-LRB-'), ('e.g.', 'FW'), ('---.-', ','), ('a', 'DT'), ('temporary', 'JJ'), ('encryption', 'NN'), ('key', 'NN'), (')', '-RRB-'), ('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('2', 'CD'), ('.', '.'), ('Cipher', 'NNP'), ('Block', 'NNP'), ('Chaining', 'NNP'), ('(', '-LRB-'), ('CBC', 'NNP'), (')', '-RRB-'), ('CBC', 'NNP'), ('is', 'VBZ'), ('a', 'DT'), ('technique', 'NN'), ('in', 'IN'), ('which', 'WDT'), ('the', 'DT'), ('same', 'JJ'), ('plaintext', 'NN'), ('block', 'NN'), (',', ','), ('if', 'IN'), ('repeated', 'VBN'), (',', ','), ('produces', 'VBZ'), ('different', 'JJ'), ('ciphertext', 'NN'), ('blocks', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Typical', 'Typical'), ('application', 'application'), (':', ':'), ('Secure', 'secure'), ('transmission', 'transmission'), ('of', 'of'), ('short', 'short'), ('pieces', 'piece'), ('of', 'of'), ('information', 'information'), ('(', '('), ('e.g.', 'e.g.'), ('---.-', '---.-'), ('a', 'a'), ('temporary', 'temporary'), ('encryption', 'encryption'), ('key', 'key'), (')', ')'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('2', '2'), ('.', '.'), ('Cipher', 'Cipher'), ('Block', 'Block'), ('Chaining', 'Chaining'), ('(', '('), ('CBC', 'CBC'), (')', ')'), ('CBC', 'CBC'), ('is', 'be'), ('a', 'a'), ('technique', 'technique'), ('in', 'in'), ('which', 'which'), ('the', 'the'), ('same', 'same'), ('plaintext', 'plaintext'), ('block', 'block'), (',', ','), ('if', 'if'), ('repeated', 'repeat'), (',', ','), ('produces', 'produce'), ('different', 'different'), ('ciphertext', 'ciphertext'), ('blocks', 'block'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Typical', 'application'), 'amod'), (('application', 'root'), 'root'), ((':', 'application'), 'punct'), (('Secure', 'transmission'), 'amod'), (('transmission', 'application'), 'appos'), (('of', 'pieces'), 'case'), (('short', 'pieces'), 'amod'), (('pieces', 'transmission'), 'nmod'), (('of', 'information'), 'case'), (('information', 'pieces'), 'nmod'), (('(', 'key'), 'punct'), (('e.g.', 'key'), 'advmod'), (('---.-', 'key'), 'punct'), (('a', 'key'), 'det'), (('temporary', 'key'), 'amod'), (('encryption', 'key'), 'compound'), (('key', 'Unit'), 'compound'), ((')', 'key'), 'punct'), (('Unit', 'transmission'), 'appos'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('2', '‹#›'), 'nummod'), (('.', 'application'), 'punct'), (('Cipher', 'Block'), 'compound'), (('Block', 'Chaining'), 'compound'), (('Chaining', 'transmission'), 'conj'), (('(', 'CBC'), 'punct'), (('CBC', 'Chaining'), 'appos'), ((')', 'CBC'), 'punct'), (('CBC', 'technique'), 'nsubj'), (('is', 'technique'), 'cop'), (('a', 'technique'), 'det'), (('technique', 'application'), 'parataxis'), (('in', 'which'), 'case'), (('which', 'produces'), 'obl'), (('the', 'block'), 'det'), (('same', 'block'), 'amod'), (('plaintext', 'block'), 'compound'), (('block', 'produces'), 'nsubj'), ((',', 'produces'), 'punct'), (('if', 'repeated'), 'mark'), (('repeated', 'produces'), 'advcl'), ((',', 'repeated'), 'punct'), (('produces', 'technique'), 'acl:relcl'), (('different', 'blocks'), 'amod'), (('ciphertext', 'blocks'), 'compound'), (('blocks', 'produces'), 'obj'), (('.', 'application'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('2', 'CARDINAL'), ('Cipher Block Chaining', 'WORK_OF_ART'), ('CBC', 'ORG'), ('CBC', 'ORG')]
+
+========================== Sentence 12 ===========================
+
+ In this scheme, the input to the encryption algorithm is the XOR of the current plaintext block and the preceding ciphertext block; the same key is used for each block. 
+
+Tokens are: 
+>> ['In', 'this', 'scheme', ',', 'the', 'input', 'to', 'the', 'encryption', 'algorithm', 'is', 'the', 'XOR', 'of', 'the', 'current', 'plaintext', 'block', 'and', 'the', 'preceding', 'ciphertext', 'block', ';', 'the', 'same', 'key', 'is', 'used', 'for', 'each', 'block', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('this', 'DET'), ('scheme', 'NOUN'), (',', 'PUNCT'), ('the', 'DET'), ('input', 'NOUN'), ('to', 'ADP'), ('the', 'DET'), ('encryption', 'NOUN'), ('algorithm', 'NOUN'), ('is', 'AUX'), ('the', 'DET'), ('XOR', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('current', 'ADJ'), ('plaintext', 'NOUN'), ('block', 'NOUN'), ('and', 'CCONJ'), ('the', 'DET'), ('preceding', 'VERB'), ('ciphertext', 'NOUN'), ('block', 'NOUN'), (';', 'PUNCT'), ('the', 'DET'), ('same', 'ADJ'), ('key', 'NOUN'), ('is', 'AUX'), ('used', 'VERB'), ('for', 'ADP'), ('each', 'DET'), ('block', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('this', 'DT'), ('scheme', 'NN'), (',', ','), ('the', 'DT'), ('input', 'NN'), ('to', 'IN'), ('the', 'DT'), ('encryption', 'NN'), ('algorithm', 'NN'), ('is', 'VBZ'), ('the', 'DT'), ('XOR', 'NN'), ('of', 'IN'), ('the', 'DT'), ('current', 'JJ'), ('plaintext', 'NN'), ('block', 'NN'), ('and', 'CC'), ('the', 'DT'), ('preceding', 'VBG'), ('ciphertext', 'NN'), ('block', 'NN'), (';', ':'), ('the', 'DT'), ('same', 'JJ'), ('key', 'NN'), ('is', 'VBZ'), ('used', 'VBN'), ('for', 'IN'), ('each', 'DT'), ('block', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('this', 'this'), ('scheme', 'scheme'), (',', ','), ('the', 'the'), ('input', 'input'), ('to', 'to'), ('the', 'the'), ('encryption', 'encryption'), ('algorithm', 'algorithm'), ('is', 'be'), ('the', 'the'), ('XOR', 'xor'), ('of', 'of'), ('the', 'the'), ('current', 'current'), ('plaintext', 'plaintext'), ('block', 'block'), ('and', 'and'), ('the', 'the'), ('preceding', 'precede'), ('ciphertext', 'ciphertext'), ('block', 'block'), (';', ';'), ('the', 'the'), ('same', 'same'), ('key', 'key'), ('is', 'be'), ('used', 'use'), ('for', 'for'), ('each', 'each'), ('block', 'block'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'scheme'), 'case'), (('this', 'scheme'), 'det'), (('scheme', 'XOR'), 'obl'), ((',', 'XOR'), 'punct'), (('the', 'input'), 'det'), (('input', 'XOR'), 'nsubj'), (('to', 'algorithm'), 'case'), (('the', 'algorithm'), 'det'), (('encryption', 'algorithm'), 'compound'), (('algorithm', 'input'), 'nmod'), (('is', 'XOR'), 'cop'), (('the', 'XOR'), 'det'), (('XOR', 'root'), 'root'), (('of', 'block'), 'case'), (('the', 'block'), 'det'), (('current', 'block'), 'amod'), (('plaintext', 'block'), 'compound'), (('block', 'XOR'), 'nmod'), (('and', 'block'), 'cc'), (('the', 'block'), 'det'), (('preceding', 'block'), 'amod'), (('ciphertext', 'block'), 'compound'), (('block', 'block'), 'conj'), ((';', 'used'), 'punct'), (('the', 'key'), 'det'), (('same', 'key'), 'amod'), (('key', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'XOR'), 'parataxis'), (('for', 'block'), 'case'), (('each', 'block'), 'det'), (('block', 'used'), 'obl'), (('.', 'XOR'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 13 ===========================
+
+ To produce the first block of ciphertext, an initialization vector (IV) is XORed with the first block of plaintext. 
+
+Tokens are: 
+>> ['To', 'produce', 'the', 'first', 'block', 'of', 'ciphertext', ',', 'an', 'initialization', 'vector', '(', 'IV', ')', 'is', 'XORed', 'with', 'the', 'first', 'block', 'of', 'plaintext', '.'] 
+
+ UPOS tags are: 
+>> [('To', 'PART'), ('produce', 'VERB'), ('the', 'DET'), ('first', 'ADJ'), ('block', 'NOUN'), ('of', 'ADP'), ('ciphertext', 'NOUN'), (',', 'PUNCT'), ('an', 'DET'), ('initialization', 'NOUN'), ('vector', 'NOUN'), ('(', 'PUNCT'), ('IV', 'NUM'), (')', 'PUNCT'), ('is', 'AUX'), ('XORed', 'VERB'), ('with', 'ADP'), ('the', 'DET'), ('first', 'ADJ'), ('block', 'NOUN'), ('of', 'ADP'), ('plaintext', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('To', 'TO'), ('produce', 'VB'), ('the', 'DT'), ('first', 'JJ'), ('block', 'NN'), ('of', 'IN'), ('ciphertext', 'NN'), (',', ','), ('an', 'DT'), ('initialization', 'NN'), ('vector', 'NN'), ('(', '-LRB-'), ('IV', 'CD'), (')', '-RRB-'), ('is', 'VBZ'), ('XORed', 'VBN'), ('with', 'IN'), ('the', 'DT'), ('first', 'JJ'), ('block', 'NN'), ('of', 'IN'), ('plaintext', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('To', 'to'), ('produce', 'produce'), ('the', 'the'), ('first', 'first'), ('block', 'block'), ('of', 'of'), ('ciphertext', 'ciphertext'), (',', ','), ('an', 'a'), ('initialization', 'initialization'), ('vector', 'vector'), ('(', '('), ('IV', 'iv'), (')', ')'), ('is', 'be'), ('XORed', 'xor'), ('with', 'with'), ('the', 'the'), ('first', 'first'), ('block', 'block'), ('of', 'of'), ('plaintext', 'plaintext'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('To', 'produce'), 'mark'), (('produce', 'XORed'), 'advcl'), (('the', 'block'), 'det'), (('first', 'block'), 'amod'), (('block', 'produce'), 'obj'), (('of', 'ciphertext'), 'case'), (('ciphertext', 'block'), 'nmod'), ((',', 'XORed'), 'punct'), (('an', 'vector'), 'det'), (('initialization', 'vector'), 'compound'), (('vector', 'XORed'), 'nsubj:pass'), (('(', 'IV'), 'punct'), (('IV', 'vector'), 'appos'), ((')', 'IV'), 'punct'), (('is', 'XORed'), 'aux:pass'), (('XORed', 'root'), 'root'), (('with', 'block'), 'case'), (('the', 'block'), 'det'), (('first', 'block'), 'amod'), (('block', 'XORed'), 'obl'), (('of', 'plaintext'), 'case'), (('plaintext', 'block'), 'nmod'), (('.', 'XORed'), 'punct')]
+
+ Named Entities are: 
+>> [('first', 'ORDINAL'), ('first', 'ORDINAL')]
+
+========================== Sentence 14 ===========================
+
+ On decryption, the IV is XORed with the output of the decryption algorithm to recover the first block of plaintext. 
+
+Tokens are: 
+>> ['On', 'decryption', ',', 'the', 'IV', 'is', 'XORed', 'with', 'the', 'output', 'of', 'the', 'decryption', 'algorithm', 'to', 'recover', 'the', 'first', 'block', 'of', 'plaintext', '.'] 
+
+ UPOS tags are: 
+>> [('On', 'ADP'), ('decryption', 'NOUN'), (',', 'PUNCT'), ('the', 'DET'), ('IV', 'PROPN'), ('is', 'AUX'), ('XORed', 'VERB'), ('with', 'ADP'), ('the', 'DET'), ('output', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('decryption', 'NOUN'), ('algorithm', 'NOUN'), ('to', 'PART'), ('recover', 'VERB'), ('the', 'DET'), ('first', 'ADJ'), ('block', 'NOUN'), ('of', 'ADP'), ('plaintext', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('On', 'IN'), ('decryption', 'NN'), (',', ','), ('the', 'DT'), ('IV', 'NNP'), ('is', 'VBZ'), ('XORed', 'VBN'), ('with', 'IN'), ('the', 'DT'), ('output', 'NN'), ('of', 'IN'), ('the', 'DT'), ('decryption', 'NN'), ('algorithm', 'NN'), ('to', 'TO'), ('recover', 'VB'), ('the', 'DT'), ('first', 'JJ'), ('block', 'NN'), ('of', 'IN'), ('plaintext', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('On', 'on'), ('decryption', 'decryption'), (',', ','), ('the', 'the'), ('IV', 'IV'), ('is', 'be'), ('XORed', 'xor'), ('with', 'with'), ('the', 'the'), ('output', 'output'), ('of', 'of'), ('the', 'the'), ('decryption', 'decryption'), ('algorithm', 'algorithm'), ('to', 'to'), ('recover', 'recover'), ('the', 'the'), ('first', 'first'), ('block', 'block'), ('of', 'of'), ('plaintext', 'plaintext'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('On', 'decryption'), 'case'), (('decryption', 'XORed'), 'obl'), ((',', 'XORed'), 'punct'), (('the', 'IV'), 'det'), (('IV', 'XORed'), 'nsubj:pass'), (('is', 'XORed'), 'aux:pass'), (('XORed', 'root'), 'root'), (('with', 'output'), 'case'), (('the', 'output'), 'det'), (('output', 'XORed'), 'obl'), (('of', 'algorithm'), 'case'), (('the', 'algorithm'), 'det'), (('decryption', 'algorithm'), 'compound'), (('algorithm', 'output'), 'nmod'), (('to', 'recover'), 'mark'), (('recover', 'XORed'), 'advcl'), (('the', 'block'), 'det'), (('first', 'block'), 'amod'), (('block', 'recover'), 'obj'), (('of', 'plaintext'), 'case'), (('plaintext', 'block'), 'nmod'), (('.', 'XORed'), 'punct')]
+
+ Named Entities are: 
+>> [('IV', 'PRODUCT'), ('XORed', 'PRODUCT'), ('first', 'ORDINAL')]
+
+========================== Sentence 15 ===========================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  2. CBC - Encryption & Decryption P1 Encrypt C1  K   IV P2 Encrypt C2  K   … PN Encrypt CN  K    C1 Decrypt P1   K  IV C2 Decrypt P2   K  CN Decrypt PN   K …   CN-1 CN-1    8  2. Cipher Block Chaining (CBC) – Cont… Strength: because of the chaining mechanism of CBC, it is an appropriate mode for encrypting messages of length greater than b bits Typical application:  General-purpose block oriented transmission Authentication   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  3. Cipher Feedback Mode (CFB) 
+
+Tokens are: 
+>> ['Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', '2.', 'CBC', '-', 'Encryption', '&', 'Decryption', 'P1', 'Encrypt', 'C1', 'K', 'IV', 'P2', 'Encrypt', 'C2', 'K', '…', 'PN', 'Encrypt', 'CN', 'K', 'C1', 'Decrypt', 'P1', 'K', 'IV', 'C2', 'Decrypt', 'P2', 'K', 'CN', 'Decrypt', 'PN', 'K', '…', 'CN-1', 'CN-1', '8', '2', '.', 'Cipher', 'Block', 'Chaining', '(', 'CBC', ')', '–', 'Cont', '…', 'Strength', ':', 'because', 'of', 'the', 'chaining', 'mechanism', 'of', 'CBC', ',', 'it', 'is', 'an', 'appropriate', 'mode', 'for', 'encrypting', 'messages', 'of', 'length', 'greater', 'than', 'b', 'bits', 'Typical', 'application', ':', 'General', '-', 'purpose', 'block', 'oriented', 'transmission', 'Authentication', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', '3', '.', 'Cipher', 'Feedback', 'Mode', '(', 'CFB', ')'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('2.', 'NUM'), ('CBC', 'PROPN'), ('-', 'PUNCT'), ('Encryption', 'PROPN'), ('&', 'CCONJ'), ('Decryption', 'PROPN'), ('P1', 'PROPN'), ('Encrypt', 'NOUN'), ('C1', 'NUM'), ('K', 'NUM'), ('IV', 'NUM'), ('P2', 'PROPN'), ('Encrypt', 'NOUN'), ('C2', 'NOUN'), ('K', 'NUM'), ('…', 'PUNCT'), ('PN', 'PROPN'), ('Encrypt', 'NOUN'), ('CN', 'NOUN'), ('K', 'NUM'), ('C1', 'NOUN'), ('Decrypt', 'NOUN'), ('P1', 'NOUN'), ('K', 'NUM'), ('IV', 'NOUN'), ('C2', 'NOUN'), ('Decrypt', 'NOUN'), ('P2', 'NOUN'), ('K', 'NUM'), ('CN', 'NOUN'), ('Decrypt', 'NOUN'), ('PN', 'NOUN'), ('K', 'NUM'), ('…', 'PUNCT'), ('CN-1', 'PROPN'), ('CN-1', 'PROPN'), ('8', 'NUM'), ('2', 'NUM'), ('.', 'PUNCT'), ('Cipher', 'NOUN'), ('Block', 'NOUN'), ('Chaining', 'NOUN'), ('(', 'PUNCT'), ('CBC', 'PROPN'), (')', 'PUNCT'), ('–', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT'), ('Strength', 'NOUN'), (':', 'PUNCT'), ('because', 'ADP'), ('of', 'ADP'), ('the', 'DET'), ('chaining', 'NOUN'), ('mechanism', 'NOUN'), ('of', 'ADP'), ('CBC', 'PROPN'), (',', 'PUNCT'), ('it', 'PRON'), ('is', 'AUX'), ('an', 'DET'), ('appropriate', 'ADJ'), ('mode', 'NOUN'), ('for', 'SCONJ'), ('encrypting', 'VERB'), ('messages', 'NOUN'), ('of', 'ADP'), ('length', 'NOUN'), ('greater', 'ADJ'), ('than', 'ADP'), ('b', 'NUM'), ('bits', 'NOUN'), ('Typical', 'ADJ'), ('application', 'NOUN'), (':', 'PUNCT'), ('General', 'ADJ'), ('-', 'PUNCT'), ('purpose', 'NOUN'), ('block', 'NOUN'), ('oriented', 'VERB'), ('transmission', 'NOUN'), ('Authentication', 'NOUN'), ('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('3', 'NUM'), ('.', 'PUNCT'), ('Cipher', 'PROPN'), ('Feedback', 'PROPN'), ('Mode', 'PROPN'), ('(', 'PUNCT'), ('CFB', 'PROPN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('2.', 'CD'), ('CBC', 'NNP'), ('-', ','), ('Encryption', 'NNP'), ('&', 'CC'), ('Decryption', 'NNP'), ('P1', 'NNP'), ('Encrypt', 'NN'), ('C1', 'CD'), ('K', 'CD'), ('IV', 'CD'), ('P2', 'NNP'), ('Encrypt', 'NN'), ('C2', 'NN'), ('K', 'CD'), ('…', ','), ('PN', 'NNP'), ('Encrypt', 'NN'), ('CN', 'NN'), ('K', 'CD'), ('C1', 'NN'), ('Decrypt', 'NN'), ('P1', 'NN'), ('K', 'CD'), ('IV', 'NN'), ('C2', 'NN'), ('Decrypt', 'NN'), ('P2', 'NN'), ('K', 'CD'), ('CN', 'NN'), ('Decrypt', 'NN'), ('PN', 'NN'), ('K', 'CD'), ('…', ','), ('CN-1', 'NNP'), ('CN-1', 'NNP'), ('8', 'CD'), ('2', 'CD'), ('.', '.'), ('Cipher', 'NN'), ('Block', 'NN'), ('Chaining', 'NN'), ('(', '-LRB-'), ('CBC', 'NNP'), (')', '-RRB-'), ('–', ','), ('Cont', 'NN'), ('…', ','), ('Strength', 'NN'), (':', ':'), ('because', 'IN'), ('of', 'IN'), ('the', 'DT'), ('chaining', 'NN'), ('mechanism', 'NN'), ('of', 'IN'), ('CBC', 'NNP'), (',', ','), ('it', 'PRP'), ('is', 'VBZ'), ('an', 'DT'), ('appropriate', 'JJ'), ('mode', 'NN'), ('for', 'IN'), ('encrypting', 'VBG'), ('messages', 'NNS'), ('of', 'IN'), ('length', 'NN'), ('greater', 'JJR'), ('than', 'IN'), ('b', 'CD'), ('bits', 'NNS'), ('Typical', 'JJ'), ('application', 'NN'), (':', ':'), ('General', 'JJ'), ('-', 'HYPH'), ('purpose', 'NN'), ('block', 'NN'), ('oriented', 'VBN'), ('transmission', 'NN'), ('Authentication', 'NN'), ('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('3', 'CD'), ('.', '.'), ('Cipher', 'NNP'), ('Feedback', 'NNP'), ('Mode', 'NNP'), ('(', '-LRB-'), ('CFB', 'NNP'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('2.', '2.'), ('CBC', 'CBC'), ('-', '-'), ('Encryption', 'Encryption'), ('&', '&'), ('Decryption', 'Decryption'), ('P1', 'P1'), ('Encrypt', 'encrypt'), ('C1', 'c1'), ('K', 'k'), ('IV', 'iv'), ('P2', 'P2'), ('Encrypt', 'encrypt'), ('C2', 'C2'), ('K', 'k'), ('…', '…'), ('PN', 'PN'), ('Encrypt', 'encrypt'), ('CN', 'cn'), ('K', 'k'), ('C1', 'c1'), ('Decrypt', 'decrypt'), ('P1', 'p1'), ('K', 'k'), ('IV', 'iv'), ('C2', 'C2'), ('Decrypt', 'decrypt'), ('P2', 'p2'), ('K', 'k'), ('CN', 'cn'), ('Decrypt', 'decrypt'), ('PN', 'pn'), ('K', 'k'), ('…', '…'), ('CN-1', 'CN-1'), ('CN-1', 'CN-1'), ('8', '8'), ('2', '2'), ('.', '.'), ('Cipher', 'cipher'), ('Block', 'block'), ('Chaining', 'Chaining'), ('(', '('), ('CBC', 'CBC'), (')', ')'), ('–', '-'), ('Cont', 'cont'), ('…', '…'), ('Strength', 'strength'), (':', ':'), ('because', 'because'), ('of', 'of'), ('the', 'the'), ('chaining', 'chaining'), ('mechanism', 'mechanism'), ('of', 'of'), ('CBC', 'CBC'), (',', ','), ('it', 'it'), ('is', 'be'), ('an', 'a'), ('appropriate', 'appropriate'), ('mode', 'mode'), ('for', 'for'), ('encrypting', 'encrypt'), ('messages', 'message'), ('of', 'of'), ('length', 'length'), ('greater', 'great'), ('than', 'than'), ('b', 'b'), ('bits', 'bit'), ('Typical', 'Typical'), ('application', 'application'), (':', ':'), ('General', 'General'), ('-', '-'), ('purpose', 'purpose'), ('block', 'block'), ('oriented', 'orient'), ('transmission', 'transmission'), ('Authentication', 'authentication'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('3', '3'), ('.', '.'), ('Cipher', 'Cipher'), ('Feedback', 'Feedback'), ('Mode', 'Mode'), ('(', '('), ('CFB', 'CFB'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'root'), 'root'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('2.', 'CBC'), 'nummod'), (('CBC', 'Institute'), 'appos'), (('-', 'Unit'), 'punct'), (('Encryption', 'Encrypt'), 'compound'), (('&', 'Decryption'), 'cc'), (('Decryption', 'Encryption'), 'conj'), (('P1', 'Encrypt'), 'compound'), (('Encrypt', 'Institute'), 'conj'), (('C1', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('IV', 'K'), 'compound'), (('P2', 'Encrypt'), 'compound'), (('Encrypt', 'Unit'), 'appos'), (('C2', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('…', 'Unit'), 'punct'), (('PN', 'Encrypt'), 'compound'), (('Encrypt', 'Unit'), 'appos'), (('CN', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('C1', 'Decrypt'), 'compound'), (('Decrypt', 'Encrypt'), 'appos'), (('P1', 'K'), 'compound'), (('K', 'Decrypt'), 'nummod'), (('IV', 'Decrypt'), 'compound'), (('C2', 'Decrypt'), 'compound'), (('Decrypt', 'Unit'), 'appos'), (('P2', 'K'), 'compound'), (('K', 'Decrypt'), 'nummod'), (('CN', 'Decrypt'), 'compound'), (('Decrypt', 'Unit'), 'appos'), (('PN', 'K'), 'compound'), (('K', 'Decrypt'), 'nummod'), (('…', 'CN-1'), 'punct'), (('CN-1', 'Unit'), 'appos'), (('CN-1', 'Unit'), 'appos'), (('8', 'CN-1'), 'nummod'), (('2', 'CN-1'), 'nummod'), (('.', 'Unit'), 'punct'), (('Cipher', 'Block'), 'compound'), (('Block', 'Unit'), 'appos'), (('Chaining', 'Unit'), 'appos'), (('(', 'CBC'), 'punct'), (('CBC', 'Chaining'), 'appos'), ((')', 'CBC'), 'punct'), (('–', 'Cont'), 'punct'), (('Cont', 'Unit'), 'conj'), (('…', 'Institute'), 'punct'), (('Strength', 'Unit'), 'parataxis'), ((':', 'Unit'), 'punct'), (('because', 'mechanism'), 'case'), (('of', 'because'), 'fixed'), (('the', 'mechanism'), 'det'), (('chaining', 'mechanism'), 'compound'), (('mechanism', 'Strength'), 'nmod'), (('of', 'CBC'), 'case'), (('CBC', 'mechanism'), 'nmod'), ((',', 'mode'), 'punct'), (('it', 'mode'), 'nsubj'), (('is', 'mode'), 'cop'), (('an', 'mode'), 'det'), (('appropriate', 'mode'), 'amod'), (('mode', 'Unit'), 'parataxis'), (('for', 'encrypting'), 'mark'), (('encrypting', 'mode'), 'acl'), (('messages', 'encrypting'), 'obj'), (('of', 'length'), 'case'), (('length', 'messages'), 'nmod'), (('greater', 'length'), 'amod'), (('than', 'application'), 'case'), (('b', 'bits'), 'nummod'), (('bits', 'application'), 'compound'), (('Typical', 'application'), 'amod'), (('application', 'encrypting'), 'obl'), ((':', 'Unit'), 'punct'), (('General', 'purpose'), 'amod'), (('-', 'purpose'), 'punct'), (('purpose', 'block'), 'compound'), (('block', 'Unit'), 'compound'), (('oriented', 'Unit'), 'amod'), (('transmission', 'Unit'), 'compound'), (('Authentication', 'Unit'), 'compound'), (('Unit', 'application'), 'appos'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('3', '‹#›'), 'nummod'), (('.', 'Unit'), 'punct'), (('Cipher', 'Unit'), 'parataxis'), (('Feedback', 'Mode'), 'compound'), (('Mode', 'Cipher'), 'appos'), (('(', 'CFB'), 'punct'), (('CFB', 'Mode'), 'appos'), ((')', 'CFB'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('2.', 'CARDINAL'), ('2', 'CARDINAL'), ('CBC', 'ORG'), ('3', 'CARDINAL')]
+
+========================== Sentence 16 ===========================
+
+ For AES, DES, or any block cipher, encryption is performed on a block of b bits. 
+
+Tokens are: 
+>> ['For', 'AES', ',', 'DES', ',', 'or', 'any', 'block', 'cipher', ',', 'encryption', 'is', 'performed', 'on', 'a', 'block', 'of', 'b', 'bits', '.'] 
+
+ UPOS tags are: 
+>> [('For', 'ADP'), ('AES', 'PROPN'), (',', 'PUNCT'), ('DES', 'PROPN'), (',', 'PUNCT'), ('or', 'CCONJ'), ('any', 'DET'), ('block', 'NOUN'), ('cipher', 'NOUN'), (',', 'PUNCT'), ('encryption', 'NOUN'), ('is', 'AUX'), ('performed', 'VERB'), ('on', 'ADP'), ('a', 'DET'), ('block', 'NOUN'), ('of', 'ADP'), ('b', 'NOUN'), ('bits', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('For', 'IN'), ('AES', 'NNP'), (',', ','), ('DES', 'NNP'), (',', ','), ('or', 'CC'), ('any', 'DT'), ('block', 'NN'), ('cipher', 'NN'), (',', ','), ('encryption', 'NN'), ('is', 'VBZ'), ('performed', 'VBN'), ('on', 'IN'), ('a', 'DT'), ('block', 'NN'), ('of', 'IN'), ('b', 'NN'), ('bits', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('For', 'for'), ('AES', 'AES'), (',', ','), ('DES', 'DES'), (',', ','), ('or', 'or'), ('any', 'any'), ('block', 'block'), ('cipher', 'cipher'), (',', ','), ('encryption', 'encryption'), ('is', 'be'), ('performed', 'perform'), ('on', 'on'), ('a', 'a'), ('block', 'block'), ('of', 'of'), ('b', 'b'), ('bits', 'bit'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('For', 'AES'), 'case'), (('AES', 'performed'), 'obl'), ((',', 'DES'), 'punct'), (('DES', 'AES'), 'conj'), ((',', 'cipher'), 'punct'), (('or', 'cipher'), 'cc'), (('any', 'cipher'), 'det'), (('block', 'cipher'), 'compound'), (('cipher', 'AES'), 'conj'), ((',', 'performed'), 'punct'), (('encryption', 'performed'), 'nsubj:pass'), (('is', 'performed'), 'aux:pass'), (('performed', 'root'), 'root'), (('on', 'block'), 'case'), (('a', 'block'), 'det'), (('block', 'performed'), 'obl'), (('of', 'bits'), 'case'), (('b', 'bits'), 'compound'), (('bits', 'block'), 'nmod'), (('.', 'performed'), 'punct')]
+
+ Named Entities are: 
+>> [('AES', 'ORG')]
+
+========================== Sentence 17 ===========================
+
+ In DES, b = 64 and in AES, b = 128. 
+
+Tokens are: 
+>> ['In', 'DES', ',', 'b', '=', '64', 'and', 'in', 'AES', ',', 'b', '=', '128', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('DES', 'PROPN'), (',', 'PUNCT'), ('b', 'PROPN'), ('=', 'SYM'), ('64', 'NUM'), ('and', 'CCONJ'), ('in', 'ADP'), ('AES', 'PROPN'), (',', 'PUNCT'), ('b', 'NOUN'), ('=', 'SYM'), ('128', 'NUM'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('DES', 'NNP'), (',', ','), ('b', 'NNP'), ('=', 'SYM'), ('64', 'CD'), ('and', 'CC'), ('in', 'IN'), ('AES', 'NNP'), (',', ','), ('b', 'NN'), ('=', 'SYM'), ('128', 'CD'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('DES', 'DES'), (',', ','), ('b', 'b'), ('=', '='), ('64', '64'), ('and', 'and'), ('in', 'in'), ('AES', 'AES'), (',', ','), ('b', 'b'), ('=', '='), ('128', '128'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'DES'), 'case'), (('DES', '='), 'obl'), ((',', '='), 'punct'), (('b', '='), 'nsubj'), (('=', 'root'), 'root'), (('64', '='), 'obj'), (('and', 'AES'), 'cc'), (('in', 'AES'), 'case'), (('AES', '64'), 'conj'), ((',', '='), 'punct'), (('b', '='), 'nsubj'), (('=', '='), 'conj'), (('128', '='), 'obj'), (('.', '='), 'punct')]
+
+ Named Entities are: 
+>> [('64', 'CARDINAL'), ('128', 'CARDINAL')]
+
+========================== Sentence 18 ===========================
+
+ However, it is possible to convert a block cipher into a stream cipher, using cipher feedback (CFB) mode, output feedback (OFB) mode, and counter (CTR) mode. 
+
+Tokens are: 
+>> ['However', ',', 'it', 'is', 'possible', 'to', 'convert', 'a', 'block', 'cipher', 'into', 'a', 'stream', 'cipher', ',', 'using', 'cipher', 'feedback', '(', 'CFB', ')', 'mode', ',', 'output', 'feedback', '(', 'OFB', ')', 'mode', ',', 'and', 'counter', '(', 'CTR', ')', 'mode', '.'] 
+
+ UPOS tags are: 
+>> [('However', 'ADV'), (',', 'PUNCT'), ('it', 'PRON'), ('is', 'AUX'), ('possible', 'ADJ'), ('to', 'PART'), ('convert', 'VERB'), ('a', 'DET'), ('block', 'NOUN'), ('cipher', 'NOUN'), ('into', 'ADP'), ('a', 'DET'), ('stream', 'NOUN'), ('cipher', 'NOUN'), (',', 'PUNCT'), ('using', 'VERB'), ('cipher', 'NOUN'), ('feedback', 'NOUN'), ('(', 'PUNCT'), ('CFB', 'NOUN'), (')', 'PUNCT'), ('mode', 'NOUN'), (',', 'PUNCT'), ('output', 'NOUN'), ('feedback', 'NOUN'), ('(', 'PUNCT'), ('OFB', 'NOUN'), (')', 'PUNCT'), ('mode', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('counter', 'NOUN'), ('(', 'PUNCT'), ('CTR', 'NOUN'), (')', 'PUNCT'), ('mode', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('However', 'RB'), (',', ','), ('it', 'PRP'), ('is', 'VBZ'), ('possible', 'JJ'), ('to', 'TO'), ('convert', 'VB'), ('a', 'DT'), ('block', 'NN'), ('cipher', 'NN'), ('into', 'IN'), ('a', 'DT'), ('stream', 'NN'), ('cipher', 'NN'), (',', ','), ('using', 'VBG'), ('cipher', 'NN'), ('feedback', 'NN'), ('(', '-LRB-'), ('CFB', 'NN'), (')', '-RRB-'), ('mode', 'NN'), (',', ','), ('output', 'NN'), ('feedback', 'NN'), ('(', '-LRB-'), ('OFB', 'NN'), (')', '-RRB-'), ('mode', 'NN'), (',', ','), ('and', 'CC'), ('counter', 'NN'), ('(', '-LRB-'), ('CTR', 'NN'), (')', '-RRB-'), ('mode', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('However', 'however'), (',', ','), ('it', 'it'), ('is', 'be'), ('possible', 'possible'), ('to', 'to'), ('convert', 'convert'), ('a', 'a'), ('block', 'block'), ('cipher', 'cipher'), ('into', 'into'), ('a', 'a'), ('stream', 'stream'), ('cipher', 'cipher'), (',', ','), ('using', 'use'), ('cipher', 'cipher'), ('feedback', 'feedback'), ('(', '('), ('CFB', 'cfb'), (')', ')'), ('mode', 'mode'), (',', ','), ('output', 'output'), ('feedback', 'feedback'), ('(', '('), ('OFB', 'ofb'), (')', ')'), ('mode', 'mode'), (',', ','), ('and', 'and'), ('counter', 'counter'), ('(', '('), ('CTR', 'CTR'), (')', ')'), ('mode', 'mode'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('However', 'possible'), 'advmod'), ((',', 'possible'), 'punct'), (('it', 'possible'), 'expl'), (('is', 'possible'), 'cop'), (('possible', 'root'), 'root'), (('to', 'convert'), 'mark'), (('convert', 'possible'), 'csubj'), (('a', 'cipher'), 'det'), (('block', 'cipher'), 'compound'), (('cipher', 'convert'), 'obj'), (('into', 'cipher'), 'case'), (('a', 'cipher'), 'det'), (('stream', 'cipher'), 'compound'), (('cipher', 'convert'), 'obl'), ((',', 'using'), 'punct'), (('using', 'convert'), 'advcl'), (('cipher', 'feedback'), 'compound'), (('feedback', 'using'), 'obj'), (('(', 'CFB'), 'punct'), (('CFB', 'mode'), 'appos'), ((')', 'CFB'), 'punct'), (('mode', 'using'), 'obj'), ((',', 'feedback'), 'punct'), (('output', 'feedback'), 'compound'), (('feedback', 'mode'), 'conj'), (('(', 'OFB'), 'punct'), (('OFB', 'mode'), 'compound'), ((')', 'OFB'), 'punct'), (('mode', 'mode'), 'conj'), ((',', 'mode'), 'punct'), (('and', 'mode'), 'cc'), (('counter', 'mode'), 'compound'), (('(', 'CTR'), 'punct'), (('CTR', 'mode'), 'compound'), ((')', 'CTR'), 'punct'), (('mode', 'mode'), 'conj'), (('.', 'possible'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 19 ===========================
+
+ A stream cipher eliminates the need to pad a message to be an integral number of blocks. 
+
+Tokens are: 
+>> ['A', 'stream', 'cipher', 'eliminates', 'the', 'need', 'to', 'pad', 'a', 'message', 'to', 'be', 'an', 'integral', 'number', 'of', 'blocks', '.'] 
+
+ UPOS tags are: 
+>> [('A', 'DET'), ('stream', 'NOUN'), ('cipher', 'NOUN'), ('eliminates', 'VERB'), ('the', 'DET'), ('need', 'NOUN'), ('to', 'PART'), ('pad', 'VERB'), ('a', 'DET'), ('message', 'NOUN'), ('to', 'PART'), ('be', 'AUX'), ('an', 'DET'), ('integral', 'ADJ'), ('number', 'NOUN'), ('of', 'ADP'), ('blocks', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('A', 'DT'), ('stream', 'NN'), ('cipher', 'NN'), ('eliminates', 'VBZ'), ('the', 'DT'), ('need', 'NN'), ('to', 'TO'), ('pad', 'VB'), ('a', 'DT'), ('message', 'NN'), ('to', 'TO'), ('be', 'VB'), ('an', 'DT'), ('integral', 'JJ'), ('number', 'NN'), ('of', 'IN'), ('blocks', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('A', 'a'), ('stream', 'stream'), ('cipher', 'cipher'), ('eliminates', 'eliminate'), ('the', 'the'), ('need', 'need'), ('to', 'to'), ('pad', 'pad'), ('a', 'a'), ('message', 'message'), ('to', 'to'), ('be', 'be'), ('an', 'a'), ('integral', 'integral'), ('number', 'number'), ('of', 'of'), ('blocks', 'block'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('A', 'cipher'), 'det'), (('stream', 'cipher'), 'compound'), (('cipher', 'eliminates'), 'nsubj'), (('eliminates', 'root'), 'root'), (('the', 'need'), 'det'), (('need', 'eliminates'), 'obj'), (('to', 'pad'), 'mark'), (('pad', 'need'), 'acl'), (('a', 'message'), 'det'), (('message', 'pad'), 'obj'), (('to', 'number'), 'mark'), (('be', 'number'), 'cop'), (('an', 'number'), 'det'), (('integral', 'number'), 'amod'), (('number', 'pad'), 'xcomp'), (('of', 'blocks'), 'case'), (('blocks', 'number'), 'nmod'), (('.', 'eliminates'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 20 ===========================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  IV Encrypt  K  Select s bits Discard b-s bits P1  S bits C1 S bits Shift register b-s bits | s bits Encrypt  K  Select s bits Discard b-s bits P2  S bits C2 S bits  … Shift register b-s bits | s bits Encrypt  K  Select s bits Discard b-s bits PN  S bits CN S bits   CN-1 3. CFB Encryption   Unit od transmission is 8 bits Common value of s=8 11  IV Encrypt  K  Select s bits Discard b-s bits P1 S bits Shift register b-s bits | s bits Encrypt  K  Select s bits Discard b-s bits P2 S bits … 
+
+Tokens are: 
+>> ['Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'IV', 'Encrypt', 'K', 'Select', 's', 'bits', 'Discard', 'b-s', 'bits', 'P1', 'S', 'bits', 'C1', 'S', 'bits', 'Shift', 'register', 'b-s', 'bits', '|', 's', 'bits', 'Encrypt', 'K', 'Select', 's', 'bits', 'Discard', 'b-s', 'bits', 'P2', 'S', 'bits', 'C2', 'S', 'bits', '…', 'Shift', 'register', 'b-s', 'bits', '|', 's', 'bits', 'Encrypt', 'K', 'Select', 's', 'bits', 'Discard', 'b-s', 'bits', 'PN', 'S', 'bits', 'CN', 'S', 'bits', 'CN-1', '3', '.', 'CFB', 'Encryption', 'Unit', 'od', 'transmission', 'is', '8', 'bits', 'Common', 'value', 'of', 's=8', '11', 'IV', 'Encrypt', 'K', 'Select', 's', 'bits', 'Discard', 'b-s', 'bits', 'P1', 'S', 'bits', 'Shift', 'register', 'b-s', 'bits', '|', 's', 'bits', 'Encrypt', 'K', 'Select', 's', 'bits', 'Discard', 'b-s', 'bits', 'P2', 'S', 'bits', '…'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('IV', 'NUM'), ('Encrypt', 'NOUN'), ('K', 'NUM'), ('Select', 'NOUN'), ('s', 'PART'), ('bits', 'NOUN'), ('Discard', 'VERB'), ('b-s', 'NOUN'), ('bits', 'NOUN'), ('P1', 'PROPN'), ('S', 'PART'), ('bits', 'NOUN'), ('C1', 'NOUN'), ('S', 'PART'), ('bits', 'NOUN'), ('Shift', 'NOUN'), ('register', 'NOUN'), ('b-s', 'NOUN'), ('bits', 'NOUN'), ('|', 'PUNCT'), ('s', 'PART'), ('bits', 'NOUN'), ('Encrypt', 'NOUN'), ('K', 'NUM'), ('Select', 'NOUN'), ('s', 'PART'), ('bits', 'NOUN'), ('Discard', 'VERB'), ('b-s', 'NOUN'), ('bits', 'NOUN'), ('P2', 'PROPN'), ('S', 'PART'), ('bits', 'NOUN'), ('C2', 'NOUN'), ('S', 'PART'), ('bits', 'NOUN'), ('…', 'PUNCT'), ('Shift', 'NOUN'), ('register', 'NOUN'), ('b-s', 'NOUN'), ('bits', 'NOUN'), ('|', 'PUNCT'), ('s', 'PART'), ('bits', 'NOUN'), ('Encrypt', 'NOUN'), ('K', 'NUM'), ('Select', 'NOUN'), ('s', 'PART'), ('bits', 'NOUN'), ('Discard', 'VERB'), ('b-s', 'NOUN'), ('bits', 'NOUN'), ('PN', 'PROPN'), ('S', 'PART'), ('bits', 'NOUN'), ('CN', 'PROPN'), ('S', 'PART'), ('bits', 'NOUN'), ('CN-1', 'PROPN'), ('3', 'NUM'), ('.', 'PUNCT'), ('CFB', 'NOUN'), ('Encryption', 'NOUN'), ('Unit', 'NOUN'), ('od', 'NOUN'), ('transmission', 'NOUN'), ('is', 'AUX'), ('8', 'NUM'), ('bits', 'NOUN'), ('Common', 'ADJ'), ('value', 'NOUN'), ('of', 'ADP'), ('s=8', 'NOUN'), ('11', 'NUM'), ('IV', 'NOUN'), ('Encrypt', 'NOUN'), ('K', 'NUM'), ('Select', 'NOUN'), ('s', 'PART'), ('bits', 'NOUN'), ('Discard', 'VERB'), ('b-s', 'NOUN'), ('bits', 'NOUN'), ('P1', 'PROPN'), ('S', 'PART'), ('bits', 'NOUN'), ('Shift', 'NOUN'), ('register', 'NOUN'), ('b-s', 'NOUN'), ('bits', 'NOUN'), ('|', 'PUNCT'), ('s', 'PART'), ('bits', 'NOUN'), ('Encrypt', 'NOUN'), ('K', 'NUM'), ('Select', 'NOUN'), ('s', 'PART'), ('bits', 'NOUN'), ('Discard', 'VERB'), ('b-s', 'NOUN'), ('bits', 'NOUN'), ('P2', 'PROPN'), ('S', 'PART'), ('bits', 'NOUN'), ('…', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('IV', 'CD'), ('Encrypt', 'NN'), ('K', 'CD'), ('Select', 'NN'), ('s', 'POS'), ('bits', 'NNS'), ('Discard', 'VB'), ('b-s', 'NN'), ('bits', 'NNS'), ('P1', 'NNP'), ('S', 'POS'), ('bits', 'NNS'), ('C1', 'NN'), ('S', 'POS'), ('bits', 'NNS'), ('Shift', 'NN'), ('register', 'NN'), ('b-s', 'NN'), ('bits', 'NNS'), ('|', ','), ('s', 'POS'), ('bits', 'NNS'), ('Encrypt', 'NN'), ('K', 'CD'), ('Select', 'NN'), ('s', 'POS'), ('bits', 'NNS'), ('Discard', 'VB'), ('b-s', 'NN'), ('bits', 'NNS'), ('P2', 'NNP'), ('S', 'POS'), ('bits', 'NNS'), ('C2', 'NN'), ('S', 'POS'), ('bits', 'NNS'), ('…', ','), ('Shift', 'NN'), ('register', 'NN'), ('b-s', 'NN'), ('bits', 'NNS'), ('|', ','), ('s', 'POS'), ('bits', 'NNS'), ('Encrypt', 'NN'), ('K', 'CD'), ('Select', 'NN'), ('s', 'POS'), ('bits', 'NNS'), ('Discard', 'VB'), ('b-s', 'NN'), ('bits', 'NNS'), ('PN', 'NNP'), ('S', 'POS'), ('bits', 'NNS'), ('CN', 'NNP'), ('S', 'POS'), ('bits', 'NNS'), ('CN-1', 'NNP'), ('3', 'LS'), ('.', '.'), ('CFB', 'NN'), ('Encryption', 'NN'), ('Unit', 'NN'), ('od', 'NN'), ('transmission', 'NN'), ('is', 'VBZ'), ('8', 'CD'), ('bits', 'NNS'), ('Common', 'JJ'), ('value', 'NN'), ('of', 'IN'), ('s=8', 'NN'), ('11', 'CD'), ('IV', 'NN'), ('Encrypt', 'NN'), ('K', 'CD'), ('Select', 'NN'), ('s', 'POS'), ('bits', 'NNS'), ('Discard', 'VB'), ('b-s', 'NN'), ('bits', 'NNS'), ('P1', 'NNP'), ('S', 'POS'), ('bits', 'NNS'), ('Shift', 'NN'), ('register', 'NN'), ('b-s', 'NN'), ('bits', 'NNS'), ('|', ','), ('s', 'POS'), ('bits', 'NNS'), ('Encrypt', 'NN'), ('K', 'CD'), ('Select', 'NN'), ('s', 'POS'), ('bits', 'NNS'), ('Discard', 'VB'), ('b-s', 'NN'), ('bits', 'NNS'), ('P2', 'NNP'), ('S', 'POS'), ('bits', 'NNS'), ('…', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('IV', 'iv'), ('Encrypt', 'encrypt'), ('K', 'k'), ('Select', 'select'), ('s', "'s"), ('bits', 'bit'), ('Discard', 'discard'), ('b-s', 'b-s'), ('bits', 'bit'), ('P1', 'P1'), ('S', "'s"), ('bits', 'bit'), ('C1', 'c1'), ('S', "'s"), ('bits', 'bit'), ('Shift', 'shift'), ('register', 'register'), ('b-s', 'b-s'), ('bits', 'bit'), ('|', '|'), ('s', "'s"), ('bits', 'bit'), ('Encrypt', 'encrypt'), ('K', 'k'), ('Select', 'select'), ('s', "'s"), ('bits', 'bit'), ('Discard', 'discard'), ('b-s', 'b-s'), ('bits', 'bit'), ('P2', 'P2'), ('S', "'s"), ('bits', 'bit'), ('C2', 'C2'), ('S', "'s"), ('bits', 'bit'), ('…', '…'), ('Shift', 'shift'), ('register', 'register'), ('b-s', 'b-s'), ('bits', 'bit'), ('|', '|'), ('s', "'s"), ('bits', 'bit'), ('Encrypt', 'encrypt'), ('K', 'k'), ('Select', 'select'), ('s', "'s"), ('bits', 'bit'), ('Discard', 'discard'), ('b-s', 'b-s'), ('bits', 'bit'), ('PN', 'PN'), ('S', "'s"), ('bits', 'bit'), ('CN', 'CN'), ('S', "'s"), ('bits', 'bit'), ('CN-1', 'CN-1'), ('3', '3'), ('.', '.'), ('CFB', 'cfb'), ('Encryption', 'encryption'), ('Unit', 'unit'), ('od', 'od'), ('transmission', 'transmission'), ('is', 'be'), ('8', '8'), ('bits', 'bit'), ('Common', 'common'), ('value', 'value'), ('of', 'of'), ('s=8', 's=8'), ('11', '11'), ('IV', 'iv'), ('Encrypt', 'encrypt'), ('K', 'k'), ('Select', 'select'), ('s', "'s"), ('bits', 'bit'), ('Discard', 'discard'), ('b-s', 'b-s'), ('bits', 'bit'), ('P1', 'P1'), ('S', "'s"), ('bits', 'bit'), ('Shift', 'shift'), ('register', 'register'), ('b-s', 'b-s'), ('bits', 'bit'), ('|', '|'), ('s', "'s"), ('bits', 'bit'), ('Encrypt', 'encrypt'), ('K', 'k'), ('Select', 'select'), ('s', "'s"), ('bits', 'bit'), ('Discard', 'discard'), ('b-s', 'b-s'), ('bits', 'bit'), ('P2', 'P2'), ('S', "'s"), ('bits', 'bit'), ('…', '…')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'root'), 'root'), (('-3', 'Unit'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('IV', 'Select'), 'nummod'), (('Encrypt', 'K'), 'compound'), (('K', 'Select'), 'nummod'), (('Select', 'bits'), 'nmod:poss'), (('s', 'Select'), 'case'), (('bits', 'Institute'), 'nmod'), (('Discard', 'Institute'), 'parataxis'), (('b-s', 'bits'), 'compound'), (('bits', 'bits'), 'compound'), (('P1', 'bits'), 'nmod:poss'), (('S', 'P1'), 'case'), (('bits', 'Discard'), 'obj'), (('C1', 'bits'), 'nmod:poss'), (('S', 'C1'), 'case'), (('bits', 'register'), 'compound'), (('Shift', 'register'), 'compound'), (('register', 'bits'), 'compound'), (('b-s', 'bits'), 'compound'), (('bits', 'Institute'), 'conj'), (('|', 'bits'), 'punct'), (('s', 'bits'), 'case'), (('bits', 'bits'), 'compound'), (('Encrypt', 'K'), 'compound'), (('K', 'Select'), 'nummod'), (('Select', 'bits'), 'nmod:poss'), (('s', 'Select'), 'case'), (('bits', 'Discard'), 'nsubj'), (('Discard', 'Institute'), 'parataxis'), (('b-s', 'bits'), 'compound'), (('bits', 'Discard'), 'obj'), (('P2', 'bits'), 'nmod:poss'), (('S', 'P2'), 'case'), (('bits', 'bits'), 'compound'), (('C2', 'bits'), 'nmod:poss'), (('S', 'C2'), 'case'), (('bits', 'Discard'), 'obj'), (('…', 'Unit'), 'punct'), (('Shift', 'register'), 'compound'), (('register', 'bits'), 'compound'), (('b-s', 'bits'), 'compound'), (('bits', 'Institute'), 'conj'), (('|', 'bits'), 'punct'), (('s', 'Unit'), 'case'), (('bits', 'Discard'), 'obj'), (('Encrypt', 'K'), 'compound'), (('K', 'Select'), 'nummod'), (('Select', 'bits'), 'nmod:poss'), (('s', 'Select'), 'case'), (('bits', 'Discard'), 'obj'), (('Discard', 'Unit'), 'parataxis'), (('b-s', 'bits'), 'compound'), (('bits', 'bits'), 'compound'), (('PN', 'bits'), 'nmod:poss'), (('S', 'PN'), 'case'), (('bits', 'bits'), 'compound'), (('CN', 'bits'), 'nmod:poss'), (('S', 'CN'), 'case'), (('bits', 'Discard'), 'obj'), (('CN-1', '3'), 'compound'), (('3', 'value'), 'nummod'), (('.', '3'), 'punct'), (('CFB', 'transmission'), 'compound'), (('Encryption', 'transmission'), 'compound'), (('Unit', 'transmission'), 'compound'), (('od', 'transmission'), 'compound'), (('transmission', 'value'), 'nsubj'), (('is', 'value'), 'cop'), (('8', 'bits'), 'nummod'), (('bits', 'Common'), 'obl:npmod'), (('Common', 'value'), 'amod'), (('value', 'Unit'), 'parataxis'), (('of', 's=8'), 'case'), (('s=8', 'bits'), 'compound'), (('11', 'K'), 'compound'), (('IV', 'K'), 'compound'), (('Encrypt', 'K'), 'compound'), (('K', 'Select'), 'nummod'), (('Select', 'bits'), 'nmod:poss'), (('s', 'Select'), 'case'), (('bits', 'value'), 'nmod'), (('Discard', 'bits'), 'acl'), (('b-s', 'bits'), 'compound'), (('bits', 'bits'), 'compound'), (('P1', 'bits'), 'nmod:poss'), (('S', 'P1'), 'case'), (('bits', 'register'), 'compound'), (('Shift', 'bits'), 'compound'), (('register', 'bits'), 'compound'), (('b-s', 'bits'), 'compound'), (('bits', 'Discard'), 'obj'), (('|', 'register'), 'punct'), (('s', 'bits'), 'case'), (('bits', 'register'), 'compound'), (('Encrypt', 'K'), 'compound'), (('K', 'Select'), 'nummod'), (('Select', 'bits'), 'nmod:poss'), (('s', 'Select'), 'case'), (('bits', 'bits'), 'appos'), (('Discard', 'bits'), 'acl'), (('b-s', 'bits'), 'compound'), (('bits', 'bits'), 'compound'), (('P2', 'bits'), 'nmod:poss'), (('S', 'P2'), 'case'), (('bits', 'Discard'), 'obj'), (('…', 'Unit'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('3', 'CARDINAL'), ('8', 'CARDINAL'), ('11', 'CARDINAL')]
+
+========================== Sentence 21 ===========================
+
+ Shift register b-s bits | s bits Encrypt  K  Select s bits Discard b-s bits PN S bits  CN-1 3. CFB Decryption  CN S bits C2 S bits C1 S bits   Unit od transmission is 8 bits Common value of s=8 12  CFB Mode 
+
+Tokens are: 
+>> ['Shift', 'register', 'b-s', 'bits', '|', 's', 'bits', 'Encrypt', 'K', 'Select', 's', 'bits', 'Discard', 'b-s', 'bits', 'PN', 'S', 'bits', 'CN-1', '3', '.', 'CFB', 'Decryption', 'CN', 'S', 'bits', 'C2', 'S', 'bits', 'C1', 'S', 'bits', 'Unit', 'od', 'transmission', 'is', '8', 'bits', 'Common', 'value', 'of', 's=8', '12', 'CFB', 'Mode'] 
+
+ UPOS tags are: 
+>> [('Shift', 'VERB'), ('register', 'NOUN'), ('b-s', 'NOUN'), ('bits', 'NOUN'), ('|', 'PUNCT'), ('s', 'PART'), ('bits', 'NOUN'), ('Encrypt', 'NOUN'), ('K', 'NUM'), ('Select', 'NOUN'), ('s', 'PART'), ('bits', 'NOUN'), ('Discard', 'VERB'), ('b-s', 'NOUN'), ('bits', 'NOUN'), ('PN', 'PROPN'), ('S', 'PART'), ('bits', 'NOUN'), ('CN-1', 'PROPN'), ('3', 'NUM'), ('.', 'PUNCT'), ('CFB', 'PROPN'), ('Decryption', 'NOUN'), ('CN', 'PROPN'), ('S', 'PART'), ('bits', 'NOUN'), ('C2', 'PROPN'), ('S', 'PART'), ('bits', 'NOUN'), ('C1', 'PROPN'), ('S', 'PART'), ('bits', 'NOUN'), ('Unit', 'NOUN'), ('od', 'NOUN'), ('transmission', 'NOUN'), ('is', 'AUX'), ('8', 'NUM'), ('bits', 'NOUN'), ('Common', 'ADJ'), ('value', 'NOUN'), ('of', 'ADP'), ('s=8', 'NOUN'), ('12', 'NUM'), ('CFB', 'NOUN'), ('Mode', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Shift', 'VB'), ('register', 'NN'), ('b-s', 'NN'), ('bits', 'NNS'), ('|', ','), ('s', 'POS'), ('bits', 'NNS'), ('Encrypt', 'NN'), ('K', 'CD'), ('Select', 'NN'), ('s', 'POS'), ('bits', 'NNS'), ('Discard', 'VB'), ('b-s', 'NN'), ('bits', 'NNS'), ('PN', 'NNP'), ('S', 'POS'), ('bits', 'NNS'), ('CN-1', 'NNP'), ('3', 'LS'), ('.', '.'), ('CFB', 'NNP'), ('Decryption', 'NN'), ('CN', 'NNP'), ('S', 'POS'), ('bits', 'NNS'), ('C2', 'NNP'), ('S', 'POS'), ('bits', 'NNS'), ('C1', 'NNP'), ('S', 'POS'), ('bits', 'NNS'), ('Unit', 'NN'), ('od', 'NN'), ('transmission', 'NN'), ('is', 'VBZ'), ('8', 'CD'), ('bits', 'NNS'), ('Common', 'JJ'), ('value', 'NN'), ('of', 'IN'), ('s=8', 'NN'), ('12', 'CD'), ('CFB', 'NN'), ('Mode', 'NN')] 
+
+ Lemmas are: 
+>> [('Shift', 'shift'), ('register', 'register'), ('b-s', 'b-s'), ('bits', 'bit'), ('|', '|'), ('s', "'s"), ('bits', 'bit'), ('Encrypt', 'encrypt'), ('K', 'k'), ('Select', 'select'), ('s', "'s"), ('bits', 'bit'), ('Discard', 'discard'), ('b-s', 'b-s'), ('bits', 'bit'), ('PN', 'PN'), ('S', "'s"), ('bits', 'bit'), ('CN-1', 'CN-1'), ('3', '3'), ('.', '.'), ('CFB', 'CFB'), ('Decryption', 'decryption'), ('CN', 'CN'), ('S', "'s"), ('bits', 'bit'), ('C2', 'C2'), ('S', "'s"), ('bits', 'bit'), ('C1', 'C1'), ('S', "'s"), ('bits', 'bit'), ('Unit', 'unit'), ('od', 'od'), ('transmission', 'transmission'), ('is', 'be'), ('8', '8'), ('bits', 'bit'), ('Common', 'common'), ('value', 'value'), ('of', 'of'), ('s=8', 's=8'), ('12', '12'), ('CFB', 'cfb'), ('Mode', 'mode')] 
+
+ Dependency tags are: 
+>> [(('Shift', 'root'), 'root'), (('register', 'bits'), 'compound'), (('b-s', 'bits'), 'compound'), (('bits', 'Shift'), 'obj'), (('|', 'Shift'), 'punct'), (('s', 'bits'), 'case'), (('bits', 'Shift'), 'obj'), (('Encrypt', 'K'), 'compound'), (('K', 'Select'), 'nummod'), (('Select', 'bits'), 'nmod:poss'), (('s', 'Select'), 'case'), (('bits', 'Shift'), 'obj'), (('Discard', 'Shift'), 'parataxis'), (('b-s', 'bits'), 'compound'), (('bits', 'Discard'), 'obj'), (('PN', 'bits'), 'nmod:poss'), (('S', 'PN'), 'case'), (('bits', 'Discard'), 'obj'), (('CN-1', 'bits'), 'appos'), (('3', 'CN-1'), 'nummod'), (('.', 'Shift'), 'punct'), (('CFB', 'bits'), 'compound'), (('Decryption', 'bits'), 'compound'), (('CN', 'bits'), 'nmod:poss'), (('S', 'CN'), 'case'), (('bits', 'Shift'), 'parataxis'), (('C2', 'bits'), 'nmod:poss'), (('S', 'C2'), 'case'), (('bits', 'bits'), 'compound'), (('C1', 'transmission'), 'nmod:poss'), (('S', 'C1'), 'case'), (('bits', 'Unit'), 'compound'), (('Unit', 'transmission'), 'compound'), (('od', 'transmission'), 'compound'), (('transmission', 'value'), 'nsubj'), (('is', 'value'), 'cop'), (('8', 'bits'), 'nummod'), (('bits', 'Common'), 'obl:npmod'), (('Common', 'value'), 'amod'), (('value', 'Shift'), 'parataxis'), (('of', 'Mode'), 'case'), (('s=8', 'Mode'), 'compound'), (('12', 'Mode'), 'nummod'), (('CFB', 'Mode'), 'compound'), (('Mode', 'value'), 'nmod')]
+
+ Named Entities are: 
+>> [('3', 'CARDINAL'), ('8', 'CARDINAL'), ('12', 'CARDINAL')]
+
+========================== Sentence 22 ===========================
+
+ The input to the encryption function is a b-bit shift register that is initially set to some initialization vector (IV). 
+
+Tokens are: 
+>> ['The', 'input', 'to', 'the', 'encryption', 'function', 'is', 'a', 'b-bit', 'shift', 'register', 'that', 'is', 'initially', 'set', 'to', 'some', 'initialization', 'vector', '(', 'IV', ')', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('input', 'NOUN'), ('to', 'ADP'), ('the', 'DET'), ('encryption', 'NOUN'), ('function', 'NOUN'), ('is', 'AUX'), ('a', 'DET'), ('b-bit', 'ADJ'), ('shift', 'NOUN'), ('register', 'NOUN'), ('that', 'PRON'), ('is', 'AUX'), ('initially', 'ADV'), ('set', 'VERB'), ('to', 'ADP'), ('some', 'DET'), ('initialization', 'NOUN'), ('vector', 'NOUN'), ('(', 'PUNCT'), ('IV', 'NUM'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('input', 'NN'), ('to', 'IN'), ('the', 'DT'), ('encryption', 'NN'), ('function', 'NN'), ('is', 'VBZ'), ('a', 'DT'), ('b-bit', 'JJ'), ('shift', 'NN'), ('register', 'NN'), ('that', 'WDT'), ('is', 'VBZ'), ('initially', 'RB'), ('set', 'VBN'), ('to', 'IN'), ('some', 'DT'), ('initialization', 'NN'), ('vector', 'NN'), ('(', '-LRB-'), ('IV', 'CD'), (')', '-RRB-'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('input', 'input'), ('to', 'to'), ('the', 'the'), ('encryption', 'encryption'), ('function', 'function'), ('is', 'be'), ('a', 'a'), ('b-bit', 'b-bit'), ('shift', 'shift'), ('register', 'register'), ('that', 'that'), ('is', 'be'), ('initially', 'initially'), ('set', 'set'), ('to', 'to'), ('some', 'some'), ('initialization', 'initialization'), ('vector', 'vector'), ('(', '('), ('IV', 'iv'), (')', ')'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'input'), 'det'), (('input', 'register'), 'nsubj'), (('to', 'function'), 'case'), (('the', 'function'), 'det'), (('encryption', 'function'), 'compound'), (('function', 'input'), 'nmod'), (('is', 'register'), 'cop'), (('a', 'register'), 'det'), (('b-bit', 'register'), 'amod'), (('shift', 'register'), 'compound'), (('register', 'root'), 'root'), (('that', 'set'), 'nsubj:pass'), (('is', 'set'), 'aux:pass'), (('initially', 'set'), 'advmod'), (('set', 'register'), 'acl:relcl'), (('to', 'vector'), 'case'), (('some', 'vector'), 'det'), (('initialization', 'vector'), 'compound'), (('vector', 'set'), 'obl'), (('(', 'IV'), 'punct'), (('IV', 'vector'), 'appos'), ((')', 'IV'), 'punct'), (('.', 'register'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 23 ===========================
+
+ The leftmost (most significant) s bits of the output of the encryption function are XORed with the first segment of plaintext P1  to produce the first unit of ciphertext C1 , which is then transmitted. 
+
+Tokens are: 
+>> ['The', 'leftmost', '(', 'most', 'significant', ')', 's', 'bits', 'of', 'the', 'output', 'of', 'the', 'encryption', 'function', 'are', 'XORed', 'with', 'the', 'first', 'segment', 'of', 'plaintext', 'P1', 'to', 'produce', 'the', 'first', 'unit', 'of', 'ciphertext', 'C1', ',', 'which', 'is', 'then', 'transmitted', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('leftmost', 'NOUN'), ('(', 'PUNCT'), ('most', 'ADV'), ('significant', 'ADJ'), (')', 'PUNCT'), ('s', 'PART'), ('bits', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('output', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('encryption', 'NOUN'), ('function', 'NOUN'), ('are', 'AUX'), ('XORed', 'VERB'), ('with', 'ADP'), ('the', 'DET'), ('first', 'ADJ'), ('segment', 'NOUN'), ('of', 'ADP'), ('plaintext', 'NOUN'), ('P1', 'PROPN'), ('to', 'PART'), ('produce', 'VERB'), ('the', 'DET'), ('first', 'ADJ'), ('unit', 'NOUN'), ('of', 'ADP'), ('ciphertext', 'NOUN'), ('C1', 'NOUN'), (',', 'PUNCT'), ('which', 'PRON'), ('is', 'AUX'), ('then', 'ADV'), ('transmitted', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('leftmost', 'NN'), ('(', '-LRB-'), ('most', 'RBS'), ('significant', 'JJ'), (')', '-RRB-'), ('s', 'POS'), ('bits', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('output', 'NN'), ('of', 'IN'), ('the', 'DT'), ('encryption', 'NN'), ('function', 'NN'), ('are', 'VBP'), ('XORed', 'VBN'), ('with', 'IN'), ('the', 'DT'), ('first', 'JJ'), ('segment', 'NN'), ('of', 'IN'), ('plaintext', 'NN'), ('P1', 'NNP'), ('to', 'TO'), ('produce', 'VB'), ('the', 'DT'), ('first', 'JJ'), ('unit', 'NN'), ('of', 'IN'), ('ciphertext', 'NN'), ('C1', 'NN'), (',', ','), ('which', 'WDT'), ('is', 'VBZ'), ('then', 'RB'), ('transmitted', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('leftmost', 'leftmost'), ('(', '('), ('most', 'most'), ('significant', 'significant'), (')', ')'), ('s', "'s"), ('bits', 'bit'), ('of', 'of'), ('the', 'the'), ('output', 'output'), ('of', 'of'), ('the', 'the'), ('encryption', 'encryption'), ('function', 'function'), ('are', 'be'), ('XORed', 'xor'), ('with', 'with'), ('the', 'the'), ('first', 'first'), ('segment', 'segment'), ('of', 'of'), ('plaintext', 'plaintext'), ('P1', 'P1'), ('to', 'to'), ('produce', 'produce'), ('the', 'the'), ('first', 'first'), ('unit', 'unit'), ('of', 'of'), ('ciphertext', 'ciphertext'), ('C1', 'c1'), (',', ','), ('which', 'which'), ('is', 'be'), ('then', 'then'), ('transmitted', 'transmit'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'leftmost'), 'det'), (('leftmost', 'XORed'), 'nsubj:pass'), (('(', 'bits'), 'punct'), (('most', 'significant'), 'advmod'), (('significant', 'leftmost'), 'amod'), ((')', 'significant'), 'punct'), (('s', 'significant'), 'punct'), (('bits', 'XORed'), 'nsubj:pass'), (('of', 'output'), 'case'), (('the', 'output'), 'det'), (('output', 'bits'), 'nmod'), (('of', 'function'), 'case'), (('the', 'function'), 'det'), (('encryption', 'function'), 'compound'), (('function', 'output'), 'nmod'), (('are', 'XORed'), 'aux:pass'), (('XORed', 'root'), 'root'), (('with', 'segment'), 'case'), (('the', 'segment'), 'det'), (('first', 'segment'), 'amod'), (('segment', 'XORed'), 'obl'), (('of', 'P1'), 'case'), (('plaintext', 'P1'), 'compound'), (('P1', 'segment'), 'nmod'), (('to', 'produce'), 'mark'), (('produce', 'XORed'), 'xcomp'), (('the', 'unit'), 'det'), (('first', 'unit'), 'amod'), (('unit', 'produce'), 'obj'), (('of', 'ciphertext'), 'case'), (('ciphertext', 'unit'), 'nmod'), (('C1', 'ciphertext'), 'flat'), ((',', 'transmitted'), 'punct'), (('which', 'transmitted'), 'nsubj:pass'), (('is', 'transmitted'), 'aux:pass'), (('then', 'transmitted'), 'advmod'), (('transmitted', 'unit'), 'acl:relcl'), (('.', 'XORed'), 'punct')]
+
+ Named Entities are: 
+>> [('XORed', 'PRODUCT'), ('first', 'ORDINAL'), ('first', 'ORDINAL'), ('C1', 'PRODUCT')]
+
+========================== Sentence 24 ===========================
+
+ In addition, the contents of the shift register are shifted left by s bits, and C1 is placed in the rightmost (least significant) s bits of the shift register. 
+
+Tokens are: 
+>> ['In', 'addition', ',', 'the', 'contents', 'of', 'the', 'shift', 'register', 'are', 'shifted', 'left', 'by', 's', 'bits', ',', 'and', 'C1', 'is', 'placed', 'in', 'the', 'rightmost', '(', 'least', 'significant', ')', 's', 'bits', 'of', 'the', 'shift', 'register', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('addition', 'NOUN'), (',', 'PUNCT'), ('the', 'DET'), ('contents', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('shift', 'NOUN'), ('register', 'NOUN'), ('are', 'AUX'), ('shifted', 'VERB'), ('left', 'VERB'), ('by', 'ADP'), ('s', 'PART'), ('bits', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('C1', 'PROPN'), ('is', 'AUX'), ('placed', 'VERB'), ('in', 'ADP'), ('the', 'DET'), ('rightmost', 'NOUN'), ('(', 'PUNCT'), ('least', 'ADJ'), ('significant', 'ADJ'), (')', 'PUNCT'), ('s', 'PART'), ('bits', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('shift', 'NOUN'), ('register', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('addition', 'NN'), (',', ','), ('the', 'DT'), ('contents', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('shift', 'NN'), ('register', 'NN'), ('are', 'VBP'), ('shifted', 'VBN'), ('left', 'VBN'), ('by', 'IN'), ('s', 'POS'), ('bits', 'NNS'), (',', ','), ('and', 'CC'), ('C1', 'NNP'), ('is', 'VBZ'), ('placed', 'VBN'), ('in', 'IN'), ('the', 'DT'), ('rightmost', 'NN'), ('(', '-LRB-'), ('least', 'JJS'), ('significant', 'JJ'), (')', '-RRB-'), ('s', 'POS'), ('bits', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('shift', 'NN'), ('register', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('addition', 'addition'), (',', ','), ('the', 'the'), ('contents', 'content'), ('of', 'of'), ('the', 'the'), ('shift', 'shift'), ('register', 'register'), ('are', 'be'), ('shifted', 'shift'), ('left', 'leave'), ('by', 'by'), ('s', "'s"), ('bits', 'bit'), (',', ','), ('and', 'and'), ('C1', 'C1'), ('is', 'be'), ('placed', 'place'), ('in', 'in'), ('the', 'the'), ('rightmost', 'rightmost'), ('(', '('), ('least', 'least'), ('significant', 'significant'), (')', ')'), ('s', "'s"), ('bits', 'bit'), ('of', 'of'), ('the', 'the'), ('shift', 'shift'), ('register', 'register'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'addition'), 'case'), (('addition', 'shifted'), 'obl'), ((',', 'shifted'), 'punct'), (('the', 'contents'), 'det'), (('contents', 'shifted'), 'nsubj:pass'), (('of', 'register'), 'case'), (('the', 'register'), 'det'), (('shift', 'register'), 'compound'), (('register', 'contents'), 'nmod'), (('are', 'shifted'), 'aux:pass'), (('shifted', 'root'), 'root'), (('left', 'shifted'), 'xcomp'), (('by', 'bits'), 'case'), (('s', 'by'), 'case'), (('bits', 'left'), 'obl'), ((',', 'placed'), 'punct'), (('and', 'placed'), 'cc'), (('C1', 'placed'), 'nsubj:pass'), (('is', 'placed'), 'aux:pass'), (('placed', 'shifted'), 'conj'), (('in', 'bits'), 'case'), (('the', 'bits'), 'det'), (('rightmost', 'bits'), 'compound'), (('(', 'significant'), 'punct'), (('least', 'significant'), 'advmod'), (('significant', 'bits'), 'amod'), ((')', 'significant'), 'punct'), (('s', 'significant'), 'punct'), (('bits', 'placed'), 'obl'), (('of', 'register'), 'case'), (('the', 'register'), 'det'), (('shift', 'register'), 'compound'), (('register', 'bits'), 'nmod'), (('.', 'shifted'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 25 ===========================
+
+ For decryption, the same scheme is used, except that the received ciphertext unit is XORed with the output of the encryption function to produce the plaintext unit. 
+
+Tokens are: 
+>> ['For', 'decryption', ',', 'the', 'same', 'scheme', 'is', 'used', ',', 'except', 'that', 'the', 'received', 'ciphertext', 'unit', 'is', 'XORed', 'with', 'the', 'output', 'of', 'the', 'encryption', 'function', 'to', 'produce', 'the', 'plaintext', 'unit', '.'] 
+
+ UPOS tags are: 
+>> [('For', 'ADP'), ('decryption', 'NOUN'), (',', 'PUNCT'), ('the', 'DET'), ('same', 'ADJ'), ('scheme', 'NOUN'), ('is', 'AUX'), ('used', 'VERB'), (',', 'PUNCT'), ('except', 'ADP'), ('that', 'SCONJ'), ('the', 'DET'), ('received', 'VERB'), ('ciphertext', 'NOUN'), ('unit', 'NOUN'), ('is', 'AUX'), ('XORed', 'VERB'), ('with', 'ADP'), ('the', 'DET'), ('output', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('encryption', 'NOUN'), ('function', 'NOUN'), ('to', 'PART'), ('produce', 'VERB'), ('the', 'DET'), ('plaintext', 'NOUN'), ('unit', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('For', 'IN'), ('decryption', 'NN'), (',', ','), ('the', 'DT'), ('same', 'JJ'), ('scheme', 'NN'), ('is', 'VBZ'), ('used', 'VBN'), (',', ','), ('except', 'IN'), ('that', 'IN'), ('the', 'DT'), ('received', 'VBN'), ('ciphertext', 'NN'), ('unit', 'NN'), ('is', 'VBZ'), ('XORed', 'VBN'), ('with', 'IN'), ('the', 'DT'), ('output', 'NN'), ('of', 'IN'), ('the', 'DT'), ('encryption', 'NN'), ('function', 'NN'), ('to', 'TO'), ('produce', 'VB'), ('the', 'DT'), ('plaintext', 'NN'), ('unit', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('For', 'for'), ('decryption', 'decryption'), (',', ','), ('the', 'the'), ('same', 'same'), ('scheme', 'scheme'), ('is', 'be'), ('used', 'use'), (',', ','), ('except', 'except'), ('that', 'that'), ('the', 'the'), ('received', 'receive'), ('ciphertext', 'ciphertext'), ('unit', 'unit'), ('is', 'be'), ('XORed', 'xor'), ('with', 'with'), ('the', 'the'), ('output', 'output'), ('of', 'of'), ('the', 'the'), ('encryption', 'encryption'), ('function', 'function'), ('to', 'to'), ('produce', 'produce'), ('the', 'the'), ('plaintext', 'plaintext'), ('unit', 'unit'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('For', 'decryption'), 'case'), (('decryption', 'used'), 'obl'), ((',', 'used'), 'punct'), (('the', 'scheme'), 'det'), (('same', 'scheme'), 'amod'), (('scheme', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'root'), 'root'), ((',', 'XORed'), 'punct'), (('except', 'XORed'), 'mark'), (('that', 'XORed'), 'mark'), (('the', 'unit'), 'det'), (('received', 'unit'), 'amod'), (('ciphertext', 'unit'), 'compound'), (('unit', 'XORed'), 'nsubj:pass'), (('is', 'XORed'), 'aux:pass'), (('XORed', 'used'), 'advcl'), (('with', 'output'), 'case'), (('the', 'output'), 'det'), (('output', 'XORed'), 'obl'), (('of', 'function'), 'case'), (('the', 'function'), 'det'), (('encryption', 'function'), 'compound'), (('function', 'output'), 'nmod'), (('to', 'produce'), 'mark'), (('produce', 'XORed'), 'advcl'), (('the', 'unit'), 'det'), (('plaintext', 'unit'), 'compound'), (('unit', 'produce'), 'obj'), (('.', 'used'), 'punct')]
+
+ Named Entities are: 
+>> [('XORed', 'PRODUCT')]
+
+========================== Sentence 26 ===========================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  CFB Mode – Cont…    Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  4. Output Feedback Mode (OFB) 
+
+Tokens are: 
+>> ['Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'CFB', 'Mode', '–', 'Cont', '…', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', '4', '.', 'Output', 'Feedback', 'Mode', '(', 'OFB', ')'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('CFB', 'NOUN'), ('Mode', 'NOUN'), ('–', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT'), ('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('4', 'NUM'), ('.', 'PUNCT'), ('Output', 'NOUN'), ('Feedback', 'NOUN'), ('Mode', 'NOUN'), ('(', 'PUNCT'), ('OFB', 'NOUN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('CFB', 'NN'), ('Mode', 'NN'), ('–', ','), ('Cont', 'NN'), ('…', ','), ('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('4', 'CD'), ('.', '.'), ('Output', 'NN'), ('Feedback', 'NN'), ('Mode', 'NN'), ('(', '-LRB-'), ('OFB', 'NN'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('CFB', 'cfb'), ('Mode', 'mode'), ('–', '-'), ('Cont', 'cont'), ('…', '…'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('4', '4'), ('.', '.'), ('Output', 'output'), ('Feedback', 'feedback'), ('Mode', 'mode'), ('(', '('), ('OFB', 'ofb'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'root'), 'root'), (('-3', 'Unit'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', 'Mode'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Mode'), 'compound'), (('CFB', 'Mode'), 'compound'), (('Mode', 'Institute'), 'nmod'), (('–', 'Mode'), 'punct'), (('Cont', 'Mode'), 'appos'), (('…', 'Unit'), 'punct'), (('Unit', 'Mode'), 'appos'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Institute'), 'conj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('4', '‹#›'), 'nummod'), (('.', 'Mode'), 'punct'), (('Output', 'Mode'), 'compound'), (('Feedback', 'Mode'), 'compound'), (('Mode', 'Unit'), 'parataxis'), (('(', 'OFB'), 'punct'), (('OFB', 'Mode'), 'appos'), ((')', 'OFB'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('4', 'CARDINAL')]
+
+========================== Sentence 27 ===========================
+
+ The output feedback (OFB) mode is similar in structure to that of CFB. 
+
+Tokens are: 
+>> ['The', 'output', 'feedback', '(', 'OFB', ')', 'mode', 'is', 'similar', 'in', 'structure', 'to', 'that', 'of', 'CFB', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('output', 'NOUN'), ('feedback', 'NOUN'), ('(', 'PUNCT'), ('OFB', 'NOUN'), (')', 'PUNCT'), ('mode', 'NOUN'), ('is', 'AUX'), ('similar', 'ADJ'), ('in', 'ADP'), ('structure', 'NOUN'), ('to', 'ADP'), ('that', 'PRON'), ('of', 'ADP'), ('CFB', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('output', 'NN'), ('feedback', 'NN'), ('(', '-LRB-'), ('OFB', 'NN'), (')', '-RRB-'), ('mode', 'NN'), ('is', 'VBZ'), ('similar', 'JJ'), ('in', 'IN'), ('structure', 'NN'), ('to', 'IN'), ('that', 'DT'), ('of', 'IN'), ('CFB', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('output', 'output'), ('feedback', 'feedback'), ('(', '('), ('OFB', 'ofb'), (')', ')'), ('mode', 'mode'), ('is', 'be'), ('similar', 'similar'), ('in', 'in'), ('structure', 'structure'), ('to', 'to'), ('that', 'that'), ('of', 'of'), ('CFB', 'CFB'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'feedback'), 'det'), (('output', 'feedback'), 'compound'), (('feedback', 'similar'), 'nsubj'), (('(', 'OFB'), 'punct'), (('OFB', 'feedback'), 'appos'), ((')', 'OFB'), 'punct'), (('mode', 'similar'), 'nsubj'), (('is', 'similar'), 'cop'), (('similar', 'root'), 'root'), (('in', 'structure'), 'case'), (('structure', 'similar'), 'obl'), (('to', 'that'), 'case'), (('that', 'similar'), 'obl'), (('of', 'CFB'), 'case'), (('CFB', 'that'), 'nmod'), (('.', 'similar'), 'punct')]
+
+ Named Entities are: 
+>> [('CFB', 'ORG')]
+
+========================== Sentence 28 ===========================
+
+ For OFB, the output of the encryption function is fed back to become the input for encrypting the next block of plaintext. 
+
+Tokens are: 
+>> ['For', 'OFB', ',', 'the', 'output', 'of', 'the', 'encryption', 'function', 'is', 'fed', 'back', 'to', 'become', 'the', 'input', 'for', 'encrypting', 'the', 'next', 'block', 'of', 'plaintext', '.'] 
+
+ UPOS tags are: 
+>> [('For', 'ADP'), ('OFB', 'PROPN'), (',', 'PUNCT'), ('the', 'DET'), ('output', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('encryption', 'NOUN'), ('function', 'NOUN'), ('is', 'AUX'), ('fed', 'VERB'), ('back', 'ADV'), ('to', 'PART'), ('become', 'VERB'), ('the', 'DET'), ('input', 'NOUN'), ('for', 'SCONJ'), ('encrypting', 'VERB'), ('the', 'DET'), ('next', 'ADJ'), ('block', 'NOUN'), ('of', 'ADP'), ('plaintext', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('For', 'IN'), ('OFB', 'NNP'), (',', ','), ('the', 'DT'), ('output', 'NN'), ('of', 'IN'), ('the', 'DT'), ('encryption', 'NN'), ('function', 'NN'), ('is', 'VBZ'), ('fed', 'VBN'), ('back', 'RB'), ('to', 'TO'), ('become', 'VB'), ('the', 'DT'), ('input', 'NN'), ('for', 'IN'), ('encrypting', 'VBG'), ('the', 'DT'), ('next', 'JJ'), ('block', 'NN'), ('of', 'IN'), ('plaintext', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('For', 'for'), ('OFB', 'OFB'), (',', ','), ('the', 'the'), ('output', 'output'), ('of', 'of'), ('the', 'the'), ('encryption', 'encryption'), ('function', 'function'), ('is', 'be'), ('fed', 'feed'), ('back', 'back'), ('to', 'to'), ('become', 'become'), ('the', 'the'), ('input', 'input'), ('for', 'for'), ('encrypting', 'encrypt'), ('the', 'the'), ('next', 'next'), ('block', 'block'), ('of', 'of'), ('plaintext', 'plaintext'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('For', 'OFB'), 'case'), (('OFB', 'fed'), 'obl'), ((',', 'fed'), 'punct'), (('the', 'output'), 'det'), (('output', 'fed'), 'nsubj:pass'), (('of', 'function'), 'case'), (('the', 'function'), 'det'), (('encryption', 'function'), 'compound'), (('function', 'output'), 'nmod'), (('is', 'fed'), 'aux:pass'), (('fed', 'root'), 'root'), (('back', 'fed'), 'advmod'), (('to', 'become'), 'mark'), (('become', 'fed'), 'xcomp'), (('the', 'input'), 'det'), (('input', 'become'), 'xcomp'), (('for', 'encrypting'), 'mark'), (('encrypting', 'input'), 'acl'), (('the', 'block'), 'det'), (('next', 'block'), 'amod'), (('block', 'encrypting'), 'obj'), (('of', 'plaintext'), 'case'), (('plaintext', 'block'), 'nmod'), (('.', 'fed'), 'punct')]
+
+ Named Entities are: 
+>> [('OFB', 'ORG')]
+
+========================== Sentence 29 ===========================
+
+ In CFB, the output of the XOR unit is fed back to become input for encrypting the next block. 
+
+Tokens are: 
+>> ['In', 'CFB', ',', 'the', 'output', 'of', 'the', 'XOR', 'unit', 'is', 'fed', 'back', 'to', 'become', 'input', 'for', 'encrypting', 'the', 'next', 'block', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('CFB', 'PROPN'), (',', 'PUNCT'), ('the', 'DET'), ('output', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('XOR', 'PROPN'), ('unit', 'NOUN'), ('is', 'AUX'), ('fed', 'VERB'), ('back', 'ADV'), ('to', 'PART'), ('become', 'VERB'), ('input', 'NOUN'), ('for', 'SCONJ'), ('encrypting', 'VERB'), ('the', 'DET'), ('next', 'ADJ'), ('block', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('CFB', 'NNP'), (',', ','), ('the', 'DT'), ('output', 'NN'), ('of', 'IN'), ('the', 'DT'), ('XOR', 'NNP'), ('unit', 'NN'), ('is', 'VBZ'), ('fed', 'VBN'), ('back', 'RB'), ('to', 'TO'), ('become', 'VB'), ('input', 'NN'), ('for', 'IN'), ('encrypting', 'VBG'), ('the', 'DT'), ('next', 'JJ'), ('block', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('CFB', 'CFB'), (',', ','), ('the', 'the'), ('output', 'output'), ('of', 'of'), ('the', 'the'), ('XOR', 'XOR'), ('unit', 'unit'), ('is', 'be'), ('fed', 'feed'), ('back', 'back'), ('to', 'to'), ('become', 'become'), ('input', 'input'), ('for', 'for'), ('encrypting', 'encrypt'), ('the', 'the'), ('next', 'next'), ('block', 'block'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'CFB'), 'case'), (('CFB', 'fed'), 'obl'), ((',', 'fed'), 'punct'), (('the', 'output'), 'det'), (('output', 'fed'), 'nsubj:pass'), (('of', 'unit'), 'case'), (('the', 'unit'), 'det'), (('XOR', 'unit'), 'compound'), (('unit', 'output'), 'nmod'), (('is', 'fed'), 'aux:pass'), (('fed', 'root'), 'root'), (('back', 'fed'), 'advmod'), (('to', 'become'), 'mark'), (('become', 'fed'), 'xcomp'), (('input', 'become'), 'xcomp'), (('for', 'encrypting'), 'mark'), (('encrypting', 'input'), 'acl'), (('the', 'block'), 'det'), (('next', 'block'), 'amod'), (('block', 'encrypting'), 'obl:tmod'), (('.', 'fed'), 'punct')]
+
+ Named Entities are: 
+>> [('CFB', 'ORG'), ('XOR', 'PRODUCT')]
+
+========================== Sentence 30 ===========================
+
+ The other difference is that the OFB mode operates on full blocks of plaintext and ciphertext, whereas CFB operates on an s-bit subset. 
+
+Tokens are: 
+>> ['The', 'other', 'difference', 'is', 'that', 'the', 'OFB', 'mode', 'operates', 'on', 'full', 'blocks', 'of', 'plaintext', 'and', 'ciphertext', ',', 'whereas', 'CFB', 'operates', 'on', 'an', 's-bit', 'subset', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('other', 'ADJ'), ('difference', 'NOUN'), ('is', 'VERB'), ('that', 'SCONJ'), ('the', 'DET'), ('OFB', 'PROPN'), ('mode', 'NOUN'), ('operates', 'VERB'), ('on', 'ADP'), ('full', 'ADJ'), ('blocks', 'NOUN'), ('of', 'ADP'), ('plaintext', 'NOUN'), ('and', 'CCONJ'), ('ciphertext', 'NOUN'), (',', 'PUNCT'), ('whereas', 'SCONJ'), ('CFB', 'PROPN'), ('operates', 'VERB'), ('on', 'ADP'), ('an', 'DET'), ('s-bit', 'ADJ'), ('subset', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('other', 'JJ'), ('difference', 'NN'), ('is', 'VBZ'), ('that', 'IN'), ('the', 'DT'), ('OFB', 'NNP'), ('mode', 'NN'), ('operates', 'VBZ'), ('on', 'IN'), ('full', 'JJ'), ('blocks', 'NNS'), ('of', 'IN'), ('plaintext', 'NN'), ('and', 'CC'), ('ciphertext', 'NN'), (',', ','), ('whereas', 'IN'), ('CFB', 'NNP'), ('operates', 'VBZ'), ('on', 'IN'), ('an', 'DT'), ('s-bit', 'JJ'), ('subset', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('other', 'other'), ('difference', 'difference'), ('is', 'be'), ('that', 'that'), ('the', 'the'), ('OFB', 'OFB'), ('mode', 'mode'), ('operates', 'operate'), ('on', 'on'), ('full', 'full'), ('blocks', 'block'), ('of', 'of'), ('plaintext', 'plaintext'), ('and', 'and'), ('ciphertext', 'ciphertext'), (',', ','), ('whereas', 'whereas'), ('CFB', 'CFB'), ('operates', 'operate'), ('on', 'on'), ('an', 'a'), ('s-bit', 's-bit'), ('subset', 'subset'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'difference'), 'det'), (('other', 'difference'), 'amod'), (('difference', 'is'), 'nsubj'), (('is', 'root'), 'root'), (('that', 'operates'), 'mark'), (('the', 'mode'), 'det'), (('OFB', 'mode'), 'compound'), (('mode', 'operates'), 'nsubj'), (('operates', 'is'), 'ccomp'), (('on', 'blocks'), 'case'), (('full', 'blocks'), 'amod'), (('blocks', 'operates'), 'obl'), (('of', 'plaintext'), 'case'), (('plaintext', 'blocks'), 'nmod'), (('and', 'ciphertext'), 'cc'), (('ciphertext', 'plaintext'), 'conj'), ((',', 'operates'), 'punct'), (('whereas', 'operates'), 'mark'), (('CFB', 'operates'), 'nsubj'), (('operates', 'operates'), 'advcl'), (('on', 'subset'), 'case'), (('an', 'subset'), 'det'), (('s-bit', 'subset'), 'amod'), (('subset', 'operates'), 'obl'), (('.', 'is'), 'punct')]
+
+ Named Entities are: 
+>> [('OFB', 'ORG'), ('CFB', 'ORG')]
+
+========================== Sentence 31 ===========================
+
+ Nonce: A time-varying value that has at most a negligible chance of repeating, for example, a random value that is generated anew for each use, a timestamp, a sequence number,  or some combination of these. 
+
+Tokens are: 
+>> ['Nonce', ':', 'A', 'time', '-', 'varying', 'value', 'that', 'has', 'at', 'most', 'a', 'negligible', 'chance', 'of', 'repeating', ',', 'for', 'example', ',', 'a', 'random', 'value', 'that', 'is', 'generated', 'anew', 'for', 'each', 'use', ',', 'a', 'timestamp', ',', 'a', 'sequence', 'number', ',', 'or', 'some', 'combination', 'of', 'these', '.'] 
+
+ UPOS tags are: 
+>> [('Nonce', 'NOUN'), (':', 'PUNCT'), ('A', 'DET'), ('time', 'NOUN'), ('-', 'PUNCT'), ('varying', 'VERB'), ('value', 'NOUN'), ('that', 'PRON'), ('has', 'VERB'), ('at', 'ADP'), ('most', 'ADV'), ('a', 'DET'), ('negligible', 'ADJ'), ('chance', 'NOUN'), ('of', 'SCONJ'), ('repeating', 'VERB'), (',', 'PUNCT'), ('for', 'ADP'), ('example', 'NOUN'), (',', 'PUNCT'), ('a', 'DET'), ('random', 'ADJ'), ('value', 'NOUN'), ('that', 'PRON'), ('is', 'AUX'), ('generated', 'VERB'), ('anew', 'ADV'), ('for', 'ADP'), ('each', 'DET'), ('use', 'NOUN'), (',', 'PUNCT'), ('a', 'DET'), ('timestamp', 'NOUN'), (',', 'PUNCT'), ('a', 'DET'), ('sequence', 'NOUN'), ('number', 'NOUN'), (',', 'PUNCT'), ('or', 'CCONJ'), ('some', 'DET'), ('combination', 'NOUN'), ('of', 'ADP'), ('these', 'PRON'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Nonce', 'NN'), (':', ':'), ('A', 'DT'), ('time', 'NN'), ('-', 'HYPH'), ('varying', 'VBG'), ('value', 'NN'), ('that', 'WDT'), ('has', 'VBZ'), ('at', 'IN'), ('most', 'RBS'), ('a', 'DT'), ('negligible', 'JJ'), ('chance', 'NN'), ('of', 'IN'), ('repeating', 'VBG'), (',', ','), ('for', 'IN'), ('example', 'NN'), (',', ','), ('a', 'DT'), ('random', 'JJ'), ('value', 'NN'), ('that', 'WDT'), ('is', 'VBZ'), ('generated', 'VBN'), ('anew', 'RB'), ('for', 'IN'), ('each', 'DT'), ('use', 'NN'), (',', ','), ('a', 'DT'), ('timestamp', 'NN'), (',', ','), ('a', 'DT'), ('sequence', 'NN'), ('number', 'NN'), (',', ','), ('or', 'CC'), ('some', 'DT'), ('combination', 'NN'), ('of', 'IN'), ('these', 'DT'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Nonce', 'nonce'), (':', ':'), ('A', 'a'), ('time', 'time'), ('-', '-'), ('varying', 'vary'), ('value', 'value'), ('that', 'that'), ('has', 'have'), ('at', 'at'), ('most', 'most'), ('a', 'a'), ('negligible', 'negligible'), ('chance', 'chance'), ('of', 'of'), ('repeating', 'repeat'), (',', ','), ('for', 'for'), ('example', 'example'), (',', ','), ('a', 'a'), ('random', 'random'), ('value', 'value'), ('that', 'that'), ('is', 'be'), ('generated', 'generate'), ('anew', 'anew'), ('for', 'for'), ('each', 'each'), ('use', 'use'), (',', ','), ('a', 'a'), ('timestamp', 'timestamp'), (',', ','), ('a', 'a'), ('sequence', 'sequence'), ('number', 'number'), (',', ','), ('or', 'or'), ('some', 'some'), ('combination', 'combination'), ('of', 'of'), ('these', 'this'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Nonce', 'root'), 'root'), ((':', 'Nonce'), 'punct'), (('A', 'value'), 'det'), (('time', 'varying'), 'obl:npmod'), (('-', 'varying'), 'punct'), (('varying', 'value'), 'amod'), (('value', 'Nonce'), 'appos'), (('that', 'has'), 'nsubj'), (('has', 'value'), 'acl:relcl'), (('at', 'chance'), 'case'), (('most', 'negligible'), 'advmod'), (('a', 'chance'), 'det'), (('negligible', 'chance'), 'amod'), (('chance', 'has'), 'obl'), (('of', 'repeating'), 'mark'), (('repeating', 'chance'), 'acl'), ((',', 'value'), 'punct'), (('for', 'example'), 'case'), (('example', 'value'), 'nmod'), ((',', 'example'), 'punct'), (('a', 'value'), 'det'), (('random', 'value'), 'amod'), (('value', 'value'), 'appos'), (('that', 'generated'), 'nsubj:pass'), (('is', 'generated'), 'aux:pass'), (('generated', 'value'), 'acl:relcl'), (('anew', 'generated'), 'advmod'), (('for', 'use'), 'case'), (('each', 'use'), 'det'), (('use', 'generated'), 'obl'), ((',', 'timestamp'), 'punct'), (('a', 'timestamp'), 'det'), (('timestamp', 'use'), 'conj'), ((',', 'number'), 'punct'), (('a', 'number'), 'det'), (('sequence', 'number'), 'compound'), (('number', 'use'), 'conj'), ((',', 'combination'), 'punct'), (('or', 'combination'), 'cc'), (('some', 'combination'), 'det'), (('combination', 'use'), 'conj'), (('of', 'these'), 'case'), (('these', 'combination'), 'nmod'), (('.', 'Nonce'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 32 ===========================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  Nonce Encrypt C1  K   P1 4. OFB Encryption Encrypt C2  K   P2 Encrypt CN  K   PN …        16  Nonce Encrypt P1  K   C1 4. OFB Decryption Encrypt P2  K   C2 Encrypt PN  K   CN …        17  OFB Mode Each bit in the ciphertext is independent of the previous bit or bits. 
+
+Tokens are: 
+>> ['Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'Nonce', 'Encrypt', 'C1', 'K', 'P1', '4.', 'OFB', 'Encryption', 'Encrypt', 'C2', 'K', 'P2', 'Encrypt', 'CN', 'K', 'PN', '…', '16', 'Nonce', 'Encrypt', 'P1', 'K', 'C1', '4.', 'OFB', 'Decryption', 'Encrypt', 'P2', 'K', 'C2', 'Encrypt', 'PN', 'K', 'CN', '…', '17', 'OFB', 'Mode', 'Each', 'bit', 'in', 'the', 'ciphertext', 'is', 'independent', 'of', 'the', 'previous', 'bit', 'or', 'bits', '.'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('Nonce', 'NOUN'), ('Encrypt', 'NOUN'), ('C1', 'NUM'), ('K', 'NUM'), ('P1', 'PROPN'), ('4.', 'NUM'), ('OFB', 'NOUN'), ('Encryption', 'NOUN'), ('Encrypt', 'NOUN'), ('C2', 'PROPN'), ('K', 'NUM'), ('P2', 'PROPN'), ('Encrypt', 'NOUN'), ('CN', 'NOUN'), ('K', 'NUM'), ('PN', 'NOUN'), ('…', 'PUNCT'), ('16', 'NUM'), ('Nonce', 'NOUN'), ('Encrypt', 'NOUN'), ('P1', 'NOUN'), ('K', 'NUM'), ('C1', 'NOUN'), ('4.', 'NUM'), ('OFB', 'NOUN'), ('Decryption', 'NOUN'), ('Encrypt', 'NOUN'), ('P2', 'PROPN'), ('K', 'NUM'), ('C2', 'NOUN'), ('Encrypt', 'NOUN'), ('PN', 'NOUN'), ('K', 'NUM'), ('CN', 'NOUN'), ('…', 'PUNCT'), ('17', 'NUM'), ('OFB', 'PROPN'), ('Mode', 'NOUN'), ('Each', 'DET'), ('bit', 'NOUN'), ('in', 'ADP'), ('the', 'DET'), ('ciphertext', 'NOUN'), ('is', 'AUX'), ('independent', 'ADJ'), ('of', 'ADP'), ('the', 'DET'), ('previous', 'ADJ'), ('bit', 'NOUN'), ('or', 'CCONJ'), ('bits', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('Nonce', 'NN'), ('Encrypt', 'NN'), ('C1', 'CD'), ('K', 'CD'), ('P1', 'NNP'), ('4.', 'CD'), ('OFB', 'NN'), ('Encryption', 'NN'), ('Encrypt', 'NN'), ('C2', 'NNP'), ('K', 'CD'), ('P2', 'NNP'), ('Encrypt', 'NN'), ('CN', 'NN'), ('K', 'CD'), ('PN', 'NN'), ('…', ','), ('16', 'CD'), ('Nonce', 'NN'), ('Encrypt', 'NN'), ('P1', 'NN'), ('K', 'CD'), ('C1', 'NN'), ('4.', 'CD'), ('OFB', 'NN'), ('Decryption', 'NN'), ('Encrypt', 'NN'), ('P2', 'NNP'), ('K', 'CD'), ('C2', 'NN'), ('Encrypt', 'NN'), ('PN', 'NN'), ('K', 'CD'), ('CN', 'NN'), ('…', ','), ('17', 'CD'), ('OFB', 'NNP'), ('Mode', 'NN'), ('Each', 'DT'), ('bit', 'NN'), ('in', 'IN'), ('the', 'DT'), ('ciphertext', 'NN'), ('is', 'VBZ'), ('independent', 'JJ'), ('of', 'IN'), ('the', 'DT'), ('previous', 'JJ'), ('bit', 'NN'), ('or', 'CC'), ('bits', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('Nonce', 'nonce'), ('Encrypt', 'encrypt'), ('C1', 'c1'), ('K', 'k'), ('P1', 'P1'), ('4.', '4.'), ('OFB', 'ofb'), ('Encryption', 'encryption'), ('Encrypt', 'encrypt'), ('C2', 'C2'), ('K', 'k'), ('P2', 'P2'), ('Encrypt', 'encrypt'), ('CN', 'cn'), ('K', 'k'), ('PN', 'pn'), ('…', '…'), ('16', '16'), ('Nonce', 'nonce'), ('Encrypt', 'encrypt'), ('P1', 'p1'), ('K', 'k'), ('C1', 'c1'), ('4.', '4.'), ('OFB', 'ofb'), ('Decryption', 'decryption'), ('Encrypt', 'encrypt'), ('P2', 'P2'), ('K', 'k'), ('C2', 'C2'), ('Encrypt', 'encrypt'), ('PN', 'pn'), ('K', 'k'), ('CN', 'cn'), ('…', '…'), ('17', '17'), ('OFB', 'OFB'), ('Mode', 'mode'), ('Each', 'each'), ('bit', 'bit'), ('in', 'in'), ('the', 'the'), ('ciphertext', 'ciphertext'), ('is', 'be'), ('independent', 'independent'), ('of', 'of'), ('the', 'the'), ('previous', 'previous'), ('bit', 'bit'), ('or', 'or'), ('bits', 'bit'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'root'), 'root'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', 'Encrypt'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Encrypt'), 'compound'), (('Nonce', 'Encrypt'), 'compound'), (('Encrypt', 'Institute'), 'conj'), (('C1', 'K'), 'compound'), (('K', 'P1'), 'nummod'), (('P1', 'Encrypt'), 'appos'), (('4.', 'K'), 'compound'), (('OFB', 'Encrypt'), 'compound'), (('Encryption', 'Encrypt'), 'compound'), (('Encrypt', 'Institute'), 'conj'), (('C2', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('P2', 'Encrypt'), 'compound'), (('Encrypt', 'Institute'), 'conj'), (('CN', 'K'), 'compound'), (('K', 'PN'), 'nummod'), (('PN', 'Encrypt'), 'appos'), (('…', 'Institute'), 'punct'), (('16', 'Encrypt'), 'nummod'), (('Nonce', 'Encrypt'), 'compound'), (('Encrypt', 'Unit'), 'appos'), (('P1', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('C1', 'Encrypt'), 'appos'), (('4.', 'K'), 'compound'), (('OFB', 'Encrypt'), 'compound'), (('Decryption', 'Unit'), 'list'), (('Encrypt', 'Unit'), 'list'), (('P2', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('C2', 'Encrypt'), 'compound'), (('Encrypt', 'Unit'), 'list'), (('PN', 'K'), 'compound'), (('K', 'CN'), 'nummod'), (('CN', 'Encrypt'), 'appos'), (('…', 'Unit'), 'punct'), (('17', 'Mode'), 'nummod'), (('OFB', 'Mode'), 'compound'), (('Mode', 'Encrypt'), 'appos'), (('Each', 'bit'), 'det'), (('bit', 'independent'), 'nsubj'), (('in', 'ciphertext'), 'case'), (('the', 'ciphertext'), 'det'), (('ciphertext', 'bit'), 'nmod'), (('is', 'independent'), 'cop'), (('independent', 'Mode'), 'acl:relcl'), (('of', 'bit'), 'case'), (('the', 'bit'), 'det'), (('previous', 'bit'), 'amod'), (('bit', 'independent'), 'obl'), (('or', 'bits'), 'cc'), (('bits', 'bit'), 'conj'), (('.', 'independent'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('4.', 'CARDINAL')]
+
+========================== Sentence 33 ===========================
+
+ This avoids error propagation Pre-compute of forward cipher is possible    Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  5. Counter Mode (CTR) Counter (CTR) mode has increased recently with applications to ATM (asynchronous transfer mode) network security and IP sec (IP security). 
+
+Tokens are: 
+>> ['This', 'avoids', 'error', 'propagation', 'Pre-compute', 'of', 'forward', 'cipher', 'is', 'possible', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', '5', '.', 'Counter', 'Mode', '(', 'CTR', ')', 'Counter', '(', 'CTR', ')', 'mode', 'has', 'increased', 'recently', 'with', 'applications', 'to', 'ATM', '(', 'asynchronous', 'transfer', 'mode', ')', 'network', 'security', 'and', 'IP', 'sec', '(', 'IP', 'security', ')', '.'] 
+
+ UPOS tags are: 
+>> [('This', 'PRON'), ('avoids', 'VERB'), ('error', 'NOUN'), ('propagation', 'NOUN'), ('Pre-compute', 'NOUN'), ('of', 'ADP'), ('forward', 'ADJ'), ('cipher', 'NOUN'), ('is', 'AUX'), ('possible', 'ADJ'), ('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'PROPN'), ('5', 'NUM'), ('.', 'PUNCT'), ('Counter', 'NOUN'), ('Mode', 'NOUN'), ('(', 'PUNCT'), ('CTR', 'NOUN'), (')', 'PUNCT'), ('Counter', 'NOUN'), ('(', 'PUNCT'), ('CTR', 'NOUN'), (')', 'PUNCT'), ('mode', 'NOUN'), ('has', 'AUX'), ('increased', 'VERB'), ('recently', 'ADV'), ('with', 'ADP'), ('applications', 'NOUN'), ('to', 'ADP'), ('ATM', 'NOUN'), ('(', 'PUNCT'), ('asynchronous', 'ADJ'), ('transfer', 'NOUN'), ('mode', 'NOUN'), (')', 'PUNCT'), ('network', 'NOUN'), ('security', 'NOUN'), ('and', 'CCONJ'), ('IP', 'NOUN'), ('sec', 'NOUN'), ('(', 'PUNCT'), ('IP', 'NOUN'), ('security', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('This', 'DT'), ('avoids', 'VBZ'), ('error', 'NN'), ('propagation', 'NN'), ('Pre-compute', 'NN'), ('of', 'IN'), ('forward', 'JJ'), ('cipher', 'NN'), ('is', 'VBZ'), ('possible', 'JJ'), ('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NNP'), ('5', 'CD'), ('.', '.'), ('Counter', 'NN'), ('Mode', 'NN'), ('(', '-LRB-'), ('CTR', 'NN'), (')', '-RRB-'), ('Counter', 'NN'), ('(', '-LRB-'), ('CTR', 'NN'), (')', '-RRB-'), ('mode', 'NN'), ('has', 'VBZ'), ('increased', 'VBN'), ('recently', 'RB'), ('with', 'IN'), ('applications', 'NNS'), ('to', 'IN'), ('ATM', 'NN'), ('(', '-LRB-'), ('asynchronous', 'JJ'), ('transfer', 'NN'), ('mode', 'NN'), (')', '-RRB-'), ('network', 'NN'), ('security', 'NN'), ('and', 'CC'), ('IP', 'NN'), ('sec', 'NN'), ('(', '-LRB-'), ('IP', 'NN'), ('security', 'NN'), (')', '-RRB-'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('This', 'this'), ('avoids', 'avoid'), ('error', 'error'), ('propagation', 'propagation'), ('Pre-compute', 'pre-compute'), ('of', 'of'), ('forward', 'forward'), ('cipher', 'cipher'), ('is', 'be'), ('possible', 'possible'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('5', '5'), ('.', '.'), ('Counter', 'counter'), ('Mode', 'mode'), ('(', '('), ('CTR', 'CTR'), (')', ')'), ('Counter', 'counter'), ('(', '('), ('CTR', 'CTR'), (')', ')'), ('mode', 'mode'), ('has', 'have'), ('increased', 'increase'), ('recently', 'recently'), ('with', 'with'), ('applications', 'application'), ('to', 'to'), ('ATM', 'ATM'), ('(', '('), ('asynchronous', 'asynchronous'), ('transfer', 'transfer'), ('mode', 'mode'), (')', ')'), ('network', 'network'), ('security', 'security'), ('and', 'and'), ('IP', 'ip'), ('sec', 'sec'), ('(', '('), ('IP', 'ip'), ('security', 'security'), (')', ')'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('This', 'avoids'), 'nsubj'), (('avoids', 'root'), 'root'), (('error', 'propagation'), 'compound'), (('propagation', 'Pre-compute'), 'compound'), (('Pre-compute', 'Unit'), 'nsubj'), (('of', 'cipher'), 'case'), (('forward', 'cipher'), 'amod'), (('cipher', 'Pre-compute'), 'nmod'), (('is', 'Institute'), 'cop'), (('possible', 'Institute'), 'amod'), (('Unit', 'Institute'), 'compound'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'avoids'), 'ccomp'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('5', '‹#›'), 'nummod'), (('.', 'Institute'), 'punct'), (('Counter', 'Mode'), 'compound'), (('Mode', 'Counter'), 'compound'), (('(', 'CTR'), 'punct'), (('CTR', 'Mode'), 'appos'), ((')', 'CTR'), 'punct'), (('Counter', 'increased'), 'nsubj'), (('(', 'CTR'), 'punct'), (('CTR', 'Counter'), 'appos'), ((')', 'CTR'), 'punct'), (('mode', 'increased'), 'nsubj'), (('has', 'increased'), 'aux'), (('increased', 'Institute'), 'acl:relcl'), (('recently', 'increased'), 'advmod'), (('with', 'applications'), 'case'), (('applications', 'increased'), 'obl'), (('to', 'ATM'), 'case'), (('ATM', 'applications'), 'nmod'), (('(', 'mode'), 'punct'), (('asynchronous', 'mode'), 'amod'), (('transfer', 'mode'), 'compound'), (('mode', 'ATM'), 'appos'), ((')', 'mode'), 'punct'), (('network', 'security'), 'compound'), (('security', 'ATM'), 'conj'), (('and', 'sec'), 'cc'), (('IP', 'sec'), 'compound'), (('sec', 'security'), 'conj'), (('(', 'security'), 'punct'), (('IP', 'security'), 'compound'), (('security', 'sec'), 'appos'), ((')', 'security'), 'punct'), (('.', 'avoids'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG'), ('5', 'CARDINAL')]
+
+========================== Sentence 34 ===========================
+
+ A counter equal to the plaintext block size is used. 
+
+Tokens are: 
+>> ['A', 'counter', 'equal', 'to', 'the', 'plaintext', 'block', 'size', 'is', 'used', '.'] 
+
+ UPOS tags are: 
+>> [('A', 'DET'), ('counter', 'NOUN'), ('equal', 'ADJ'), ('to', 'ADP'), ('the', 'DET'), ('plaintext', 'NOUN'), ('block', 'NOUN'), ('size', 'NOUN'), ('is', 'AUX'), ('used', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('A', 'DT'), ('counter', 'NN'), ('equal', 'JJ'), ('to', 'IN'), ('the', 'DT'), ('plaintext', 'NN'), ('block', 'NN'), ('size', 'NN'), ('is', 'VBZ'), ('used', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('A', 'a'), ('counter', 'counter'), ('equal', 'equal'), ('to', 'to'), ('the', 'the'), ('plaintext', 'plaintext'), ('block', 'block'), ('size', 'size'), ('is', 'be'), ('used', 'use'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('A', 'counter'), 'det'), (('counter', 'used'), 'nsubj:pass'), (('equal', 'counter'), 'amod'), (('to', 'size'), 'case'), (('the', 'size'), 'det'), (('plaintext', 'block'), 'compound'), (('block', 'size'), 'compound'), (('size', 'equal'), 'obl'), (('is', 'used'), 'aux:pass'), (('used', 'root'), 'root'), (('.', 'used'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 35 ===========================
+
+ The counter value must be different for each plaintext block that is encrypted. 
+
+Tokens are: 
+>> ['The', 'counter', 'value', 'must', 'be', 'different', 'for', 'each', 'plaintext', 'block', 'that', 'is', 'encrypted', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('counter', 'NOUN'), ('value', 'NOUN'), ('must', 'AUX'), ('be', 'AUX'), ('different', 'ADJ'), ('for', 'ADP'), ('each', 'DET'), ('plaintext', 'NOUN'), ('block', 'NOUN'), ('that', 'PRON'), ('is', 'AUX'), ('encrypted', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('counter', 'NN'), ('value', 'NN'), ('must', 'MD'), ('be', 'VB'), ('different', 'JJ'), ('for', 'IN'), ('each', 'DT'), ('plaintext', 'NN'), ('block', 'NN'), ('that', 'WDT'), ('is', 'VBZ'), ('encrypted', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('counter', 'counter'), ('value', 'value'), ('must', 'must'), ('be', 'be'), ('different', 'different'), ('for', 'for'), ('each', 'each'), ('plaintext', 'plaintext'), ('block', 'block'), ('that', 'that'), ('is', 'be'), ('encrypted', 'encrypt'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'value'), 'det'), (('counter', 'value'), 'compound'), (('value', 'different'), 'nsubj'), (('must', 'different'), 'aux'), (('be', 'different'), 'cop'), (('different', 'root'), 'root'), (('for', 'block'), 'case'), (('each', 'block'), 'det'), (('plaintext', 'block'), 'compound'), (('block', 'different'), 'obl'), (('that', 'encrypted'), 'nsubj:pass'), (('is', 'encrypted'), 'aux:pass'), (('encrypted', 'block'), 'acl:relcl'), (('.', 'different'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 36 ===========================
+
+ Typically, the counter is initialized to some value and then incremented by 1 for each subsequent block  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  Counter 1 Encrypt C1  K   P1 5. CTR Encryption Encrypt C2  K   P2 Encrypt CN  K   PN …  Counter 2 Counter N    20  4. CTR Decryption Counter 1 Encrypt P1  K   C1 Encrypt P2  K   C2 Encrypt PN  K   CN …  Counter 2 Counter N     21  Advantages of the CTR Mode Strengths: 
+
+Tokens are: 
+>> ['Typically', ',', 'the', 'counter', 'is', 'initialized', 'to', 'some', 'value', 'and', 'then', 'incremented', 'by', '1', 'for', 'each', 'subsequent', 'block', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'Counter', '1', 'Encrypt', 'C1', 'K', 'P1', '5.', 'CTR', 'Encryption', 'Encrypt', 'C2', 'K', 'P2', 'Encrypt', 'CN', 'K', 'PN', '…', 'Counter', '2', 'Counter', 'N', '20', '4.', 'CTR', 'Decryption', 'Counter', '1', 'Encrypt', 'P1', 'K', 'C1', 'Encrypt', 'P2', 'K', 'C2', 'Encrypt', 'PN', 'K', 'CN', '…', 'Counter', '2', 'Counter', 'N', '21', 'Advantages', 'of', 'the', 'CTR', 'Mode', 'Strengths', ':'] 
+
+ UPOS tags are: 
+>> [('Typically', 'ADV'), (',', 'PUNCT'), ('the', 'DET'), ('counter', 'NOUN'), ('is', 'AUX'), ('initialized', 'VERB'), ('to', 'ADP'), ('some', 'DET'), ('value', 'NOUN'), ('and', 'CCONJ'), ('then', 'ADV'), ('incremented', 'VERB'), ('by', 'ADP'), ('1', 'NUM'), ('for', 'ADP'), ('each', 'DET'), ('subsequent', 'ADJ'), ('block', 'NOUN'), ('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('Counter', 'NOUN'), ('1', 'NUM'), ('Encrypt', 'NOUN'), ('C1', 'NOUN'), ('K', 'NUM'), ('P1', 'NOUN'), ('5.', 'NUM'), ('CTR', 'NOUN'), ('Encryption', 'NOUN'), ('Encrypt', 'NOUN'), ('C2', 'NOUN'), ('K', 'NUM'), ('P2', 'NOUN'), ('Encrypt', 'NOUN'), ('CN', 'NOUN'), ('K', 'NUM'), ('PN', 'NOUN'), ('…', 'PUNCT'), ('Counter', 'NOUN'), ('2', 'NUM'), ('Counter', 'NOUN'), ('N', 'NOUN'), ('20', 'NUM'), ('4.', 'NUM'), ('CTR', 'NOUN'), ('Decryption', 'NOUN'), ('Counter', 'NOUN'), ('1', 'NUM'), ('Encrypt', 'NOUN'), ('P1', 'NOUN'), ('K', 'NUM'), ('C1', 'NOUN'), ('Encrypt', 'NOUN'), ('P2', 'NOUN'), ('K', 'NUM'), ('C2', 'NOUN'), ('Encrypt', 'NOUN'), ('PN', 'NOUN'), ('K', 'NUM'), ('CN', 'NOUN'), ('…', 'PUNCT'), ('Counter', 'NOUN'), ('2', 'NUM'), ('Counter', 'NOUN'), ('N', 'NOUN'), ('21', 'NUM'), ('Advantages', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('CTR', 'NOUN'), ('Mode', 'NOUN'), ('Strengths', 'NOUN'), (':', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Typically', 'RB'), (',', ','), ('the', 'DT'), ('counter', 'NN'), ('is', 'VBZ'), ('initialized', 'VBN'), ('to', 'IN'), ('some', 'DT'), ('value', 'NN'), ('and', 'CC'), ('then', 'RB'), ('incremented', 'VBN'), ('by', 'IN'), ('1', 'CD'), ('for', 'IN'), ('each', 'DT'), ('subsequent', 'JJ'), ('block', 'NN'), ('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('Counter', 'NN'), ('1', 'CD'), ('Encrypt', 'NN'), ('C1', 'NN'), ('K', 'CD'), ('P1', 'NN'), ('5.', 'CD'), ('CTR', 'NN'), ('Encryption', 'NN'), ('Encrypt', 'NN'), ('C2', 'NN'), ('K', 'CD'), ('P2', 'NN'), ('Encrypt', 'NN'), ('CN', 'NN'), ('K', 'CD'), ('PN', 'NN'), ('…', ','), ('Counter', 'NN'), ('2', 'CD'), ('Counter', 'NN'), ('N', 'NN'), ('20', 'CD'), ('4.', 'CD'), ('CTR', 'NN'), ('Decryption', 'NN'), ('Counter', 'NN'), ('1', 'CD'), ('Encrypt', 'NN'), ('P1', 'NN'), ('K', 'CD'), ('C1', 'NN'), ('Encrypt', 'NN'), ('P2', 'NN'), ('K', 'CD'), ('C2', 'NN'), ('Encrypt', 'NN'), ('PN', 'NN'), ('K', 'CD'), ('CN', 'NN'), ('…', ','), ('Counter', 'NN'), ('2', 'CD'), ('Counter', 'NN'), ('N', 'NN'), ('21', 'CD'), ('Advantages', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('CTR', 'NN'), ('Mode', 'NN'), ('Strengths', 'NNS'), (':', ':')] 
+
+ Lemmas are: 
+>> [('Typically', 'typically'), (',', ','), ('the', 'the'), ('counter', 'counter'), ('is', 'be'), ('initialized', 'initialize'), ('to', 'to'), ('some', 'some'), ('value', 'value'), ('and', 'and'), ('then', 'then'), ('incremented', 'increment'), ('by', 'by'), ('1', '1'), ('for', 'for'), ('each', 'each'), ('subsequent', 'subsequent'), ('block', 'block'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('Counter', 'counter'), ('1', '1'), ('Encrypt', 'encrypt'), ('C1', 'c1'), ('K', 'k'), ('P1', 'p1'), ('5.', '5.'), ('CTR', 'CTR'), ('Encryption', 'encryption'), ('Encrypt', 'encrypt'), ('C2', 'C2'), ('K', 'k'), ('P2', 'p2'), ('Encrypt', 'encrypt'), ('CN', 'cn'), ('K', 'k'), ('PN', 'pn'), ('…', '…'), ('Counter', 'counter'), ('2', '2'), ('Counter', 'counter'), ('N', 'N'), ('20', '20'), ('4.', '4.'), ('CTR', 'CTR'), ('Decryption', 'decryption'), ('Counter', 'counter'), ('1', '1'), ('Encrypt', 'encrypt'), ('P1', 'p1'), ('K', 'k'), ('C1', 'c1'), ('Encrypt', 'encrypt'), ('P2', 'p2'), ('K', 'k'), ('C2', 'C2'), ('Encrypt', 'encrypt'), ('PN', 'pn'), ('K', 'k'), ('CN', 'cn'), ('…', '…'), ('Counter', 'counter'), ('2', '2'), ('Counter', 'counter'), ('N', 'N'), ('21', '21'), ('Advantages', 'advantage'), ('of', 'of'), ('the', 'the'), ('CTR', 'CTR'), ('Mode', 'mode'), ('Strengths', 'strength'), (':', ':')] 
+
+ Dependency tags are: 
+>> [(('Typically', 'initialized'), 'advmod'), ((',', 'initialized'), 'punct'), (('the', 'counter'), 'det'), (('counter', 'initialized'), 'nsubj:pass'), (('is', 'initialized'), 'aux:pass'), (('initialized', 'root'), 'root'), (('to', 'value'), 'case'), (('some', 'value'), 'det'), (('value', 'initialized'), 'obl'), (('and', 'incremented'), 'cc'), (('then', 'incremented'), 'advmod'), (('incremented', 'initialized'), 'conj'), (('by', '1'), 'case'), (('1', 'incremented'), 'obl'), (('for', 'Unit'), 'case'), (('each', 'Unit'), 'det'), (('subsequent', 'Unit'), 'amod'), (('block', 'Unit'), 'compound'), (('Unit', 'incremented'), 'obl'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'incremented'), 'obl'), (('of', 'Counter'), 'case'), (('Engineering', 'Counter'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Counter'), 'compound'), (('Counter', 'Institute'), 'nmod'), (('1', 'Encrypt'), 'nummod'), (('Encrypt', 'Institute'), 'nmod'), (('C1', 'K'), 'compound'), (('K', 'P1'), 'nummod'), (('P1', 'Encrypt'), 'compound'), (('5.', 'Encrypt'), 'nummod'), (('CTR', 'Encrypt'), 'compound'), (('Encryption', 'Encrypt'), 'compound'), (('Encrypt', 'Encrypt'), 'appos'), (('C2', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('P2', 'Encrypt'), 'compound'), (('Encrypt', 'Encrypt'), 'appos'), (('CN', 'K'), 'compound'), (('K', 'PN'), 'nummod'), (('PN', 'Encrypt'), 'appos'), (('…', 'Encrypt'), 'punct'), (('Counter', 'N'), 'compound'), (('2', 'N'), 'nummod'), (('Counter', 'N'), 'compound'), (('N', 'Counter'), 'compound'), (('20', 'Counter'), 'nummod'), (('4.', 'Counter'), 'nummod'), (('CTR', 'Counter'), 'compound'), (('Decryption', 'Counter'), 'compound'), (('Counter', 'Encrypt'), 'conj'), (('1', 'Counter'), 'nummod'), (('Encrypt', 'Counter'), 'appos'), (('P1', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('C1', 'Encrypt'), 'compound'), (('Encrypt', 'Counter'), 'appos'), (('P2', 'K'), 'compound'), (('K', 'Encrypt'), 'nummod'), (('C2', 'Encrypt'), 'compound'), (('Encrypt', 'Encrypt'), 'appos'), (('PN', 'K'), 'compound'), (('K', 'CN'), 'nummod'), (('CN', 'Encrypt'), 'appos'), (('…', 'Encrypt'), 'punct'), (('Counter', 'Advantages'), 'compound'), (('2', 'N'), 'nummod'), (('Counter', 'N'), 'compound'), (('N', 'Advantages'), 'compound'), (('21', 'N'), 'nummod'), (('Advantages', 'Encrypt'), 'appos'), (('of', 'Strengths'), 'case'), (('the', 'Strengths'), 'det'), (('CTR', 'Strengths'), 'compound'), (('Mode', 'Strengths'), 'compound'), (('Strengths', 'Advantages'), 'nmod'), ((':', 'initialized'), 'punct')]
+
+ Named Entities are: 
+>> [('1', 'CARDINAL'), ('5.', 'CARDINAL'), ('4.', 'CARDINAL'), ('21', 'CARDINAL')]
+
+========================== Sentence 37 ===========================
+
+ Needs only the encryption algorithm Random access to encrypted data blocks blocks can be processed (encrypted or decrypted) in parallel Simple; fast encryption/decryption  Counter must be  Must be unknown and unpredictable pseudo-randomness in the key stream is a goal   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  Summary of all modes 	Operation Mode	Description	Type of Result  	ECB	Each n-bit block is encrypted independently with same key	Block Cipher  	CBC	Same as ECB, but each block is XORed with previous cipher text	Block Cipher  	CFB	Each s-bit block is XORed with s-bit key which is part of previous cipher text	Stream Cipher  	OFB	Same as CFB, but the shift register is updated by the previous s-bit key	Stream Cipher  	CTR	Same as OFB, but a counter is used instead of nonce	Stream Cipher   Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  Multiple Encryption Given the potential vulnerability of DES to a brute-force attack, there has been considerable interest in finding an alternative. 
+
+Tokens are: 
+>> ['Needs', 'only', 'the', 'encryption', 'algorithm', 'Random', 'access', 'to', 'encrypted', 'data', 'blocks', 'blocks', 'can', 'be', 'processed', '(', 'encrypted', 'or', 'decrypted', ')', 'in', 'parallel', 'Simple', ';', 'fast', 'encryption', '/', 'decryption', 'Counter', 'must', 'be', 'Must', 'be', 'unknown', 'and', 'unpredictable', 'pseudo-randomness', 'in', 'the', 'key', 'stream', 'is', 'a', 'goal', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'Summary', 'of', 'all', 'modes', 'Operation', 'Mode', 'Description', 'Type', 'of', 'Result', 'ECB', 'Each', 'n-bit', 'block', 'is', 'encrypted', 'independently', 'with', 'same', 'key', 'Block', 'Cipher', 'CBC', 'Same', 'as', 'ECB', ',', 'but', 'each', 'block', 'is', 'XORed', 'with', 'previous', 'cipher', 'text', 'Block', 'Cipher', 'CFB', 'Each', 's-bit', 'block', 'is', 'XORed', 'with', 's-bit', 'key', 'which', 'is', 'part', 'of', 'previous', 'cipher', 'text', 'Stream', 'Cipher', 'OFB', 'Same', 'as', 'CFB', ',', 'but', 'the', 'shift', 'register', 'is', 'updated', 'by', 'the', 'previous', 's-bit', 'key', 'Stream', 'Cipher', 'CTR', 'Same', 'as', 'OFB', ',', 'but', 'a', 'counter', 'is', 'used', 'instead', 'of', 'nonce', 'Stream', 'Cipher', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'Multiple', 'Encryption', 'Given', 'the', 'potential', 'vulnerability', 'of', 'DES', 'to', 'a', 'brute', '-', 'force', 'attack', ',', 'there', 'has', 'been', 'considerable', 'interest', 'in', 'finding', 'an', 'alternative', '.'] 
+
+ UPOS tags are: 
+>> [('Needs', 'VERB'), ('only', 'ADV'), ('the', 'DET'), ('encryption', 'NOUN'), ('algorithm', 'NOUN'), ('Random', 'ADJ'), ('access', 'NOUN'), ('to', 'ADP'), ('encrypted', 'VERB'), ('data', 'NOUN'), ('blocks', 'NOUN'), ('blocks', 'NOUN'), ('can', 'AUX'), ('be', 'AUX'), ('processed', 'VERB'), ('(', 'PUNCT'), ('encrypted', 'VERB'), ('or', 'CCONJ'), ('decrypted', 'VERB'), (')', 'PUNCT'), ('in', 'ADP'), ('parallel', 'ADJ'), ('Simple', 'ADJ'), (';', 'PUNCT'), ('fast', 'ADJ'), ('encryption', 'NOUN'), ('/', 'SYM'), ('decryption', 'NOUN'), ('Counter', 'NOUN'), ('must', 'AUX'), ('be', 'AUX'), ('Must', 'AUX'), ('be', 'AUX'), ('unknown', 'ADJ'), ('and', 'CCONJ'), ('unpredictable', 'ADJ'), ('pseudo-randomness', 'NOUN'), ('in', 'ADP'), ('the', 'DET'), ('key', 'ADJ'), ('stream', 'NOUN'), ('is', 'AUX'), ('a', 'DET'), ('goal', 'NOUN'), ('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('Summary', 'NOUN'), ('of', 'ADP'), ('all', 'DET'), ('modes', 'NOUN'), ('Operation', 'NOUN'), ('Mode', 'NOUN'), ('Description', 'NOUN'), ('Type', 'NOUN'), ('of', 'ADP'), ('Result', 'PROPN'), ('ECB', 'PROPN'), ('Each', 'DET'), ('n-bit', 'NOUN'), ('block', 'NOUN'), ('is', 'AUX'), ('encrypted', 'VERB'), ('independently', 'ADV'), ('with', 'ADP'), ('same', 'ADJ'), ('key', 'ADJ'), ('Block', 'PROPN'), ('Cipher', 'PROPN'), ('CBC', 'PROPN'), ('Same', 'ADJ'), ('as', 'ADP'), ('ECB', 'PROPN'), (',', 'PUNCT'), ('but', 'CCONJ'), ('each', 'DET'), ('block', 'NOUN'), ('is', 'AUX'), ('XORed', 'VERB'), ('with', 'ADP'), ('previous', 'ADJ'), ('cipher', 'NOUN'), ('text', 'NOUN'), ('Block', 'NOUN'), ('Cipher', 'PROPN'), ('CFB', 'PROPN'), ('Each', 'DET'), ('s-bit', 'NOUN'), ('block', 'NOUN'), ('is', 'AUX'), ('XORed', 'VERB'), ('with', 'ADP'), ('s-bit', 'DET'), ('key', 'NOUN'), ('which', 'PRON'), ('is', 'AUX'), ('part', 'NOUN'), ('of', 'ADP'), ('previous', 'ADJ'), ('cipher', 'NOUN'), ('text', 'NOUN'), ('Stream', 'NOUN'), ('Cipher', 'NOUN'), ('OFB', 'NOUN'), ('Same', 'ADJ'), ('as', 'ADP'), ('CFB', 'PROPN'), (',', 'PUNCT'), ('but', 'CCONJ'), ('the', 'DET'), ('shift', 'NOUN'), ('register', 'NOUN'), ('is', 'AUX'), ('updated', 'VERB'), ('by', 'ADP'), ('the', 'DET'), ('previous', 'ADJ'), ('s-bit', 'NOUN'), ('key', 'ADJ'), ('Stream', 'NOUN'), ('Cipher', 'PROPN'), ('CTR', 'PROPN'), ('Same', 'ADJ'), ('as', 'ADP'), ('OFB', 'PROPN'), (',', 'PUNCT'), ('but', 'CCONJ'), ('a', 'DET'), ('counter', 'NOUN'), ('is', 'AUX'), ('used', 'VERB'), ('instead', 'ADV'), ('of', 'ADP'), ('nonce', 'NOUN'), ('Stream', 'NOUN'), ('Cipher', 'PROPN'), ('Unit', 'PROPN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('Multiple', 'ADJ'), ('Encryption', 'PROPN'), ('Given', 'VERB'), ('the', 'DET'), ('potential', 'ADJ'), ('vulnerability', 'NOUN'), ('of', 'ADP'), ('DES', 'PROPN'), ('to', 'ADP'), ('a', 'DET'), ('brute', 'ADJ'), ('-', 'PUNCT'), ('force', 'NOUN'), ('attack', 'NOUN'), (',', 'PUNCT'), ('there', 'PRON'), ('has', 'AUX'), ('been', 'VERB'), ('considerable', 'ADJ'), ('interest', 'NOUN'), ('in', 'SCONJ'), ('finding', 'VERB'), ('an', 'DET'), ('alternative', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Needs', 'VBZ'), ('only', 'RB'), ('the', 'DT'), ('encryption', 'NN'), ('algorithm', 'NN'), ('Random', 'JJ'), ('access', 'NN'), ('to', 'IN'), ('encrypted', 'VBN'), ('data', 'NN'), ('blocks', 'NNS'), ('blocks', 'NNS'), ('can', 'MD'), ('be', 'VB'), ('processed', 'VBN'), ('(', '-LRB-'), ('encrypted', 'VBN'), ('or', 'CC'), ('decrypted', 'VBN'), (')', '-RRB-'), ('in', 'IN'), ('parallel', 'JJ'), ('Simple', 'JJ'), (';', ','), ('fast', 'JJ'), ('encryption', 'NN'), ('/', ','), ('decryption', 'NN'), ('Counter', 'NN'), ('must', 'MD'), ('be', 'VB'), ('Must', 'MD'), ('be', 'VB'), ('unknown', 'JJ'), ('and', 'CC'), ('unpredictable', 'JJ'), ('pseudo-randomness', 'NN'), ('in', 'IN'), ('the', 'DT'), ('key', 'JJ'), ('stream', 'NN'), ('is', 'VBZ'), ('a', 'DT'), ('goal', 'NN'), ('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('Summary', 'NN'), ('of', 'IN'), ('all', 'DT'), ('modes', 'NNS'), ('Operation', 'NN'), ('Mode', 'NN'), ('Description', 'NN'), ('Type', 'NN'), ('of', 'IN'), ('Result', 'NNP'), ('ECB', 'NNP'), ('Each', 'DT'), ('n-bit', 'NN'), ('block', 'NN'), ('is', 'VBZ'), ('encrypted', 'VBN'), ('independently', 'RB'), ('with', 'IN'), ('same', 'JJ'), ('key', 'JJ'), ('Block', 'NNP'), ('Cipher', 'NNP'), ('CBC', 'NNP'), ('Same', 'JJ'), ('as', 'IN'), ('ECB', 'NNP'), (',', ','), ('but', 'CC'), ('each', 'DT'), ('block', 'NN'), ('is', 'VBZ'), ('XORed', 'VBN'), ('with', 'IN'), ('previous', 'JJ'), ('cipher', 'NN'), ('text', 'NN'), ('Block', 'NN'), ('Cipher', 'NNP'), ('CFB', 'NNP'), ('Each', 'DT'), ('s-bit', 'NN'), ('block', 'NN'), ('is', 'VBZ'), ('XORed', 'VBN'), ('with', 'IN'), ('s-bit', 'DT'), ('key', 'NN'), ('which', 'WDT'), ('is', 'VBZ'), ('part', 'NN'), ('of', 'IN'), ('previous', 'JJ'), ('cipher', 'NN'), ('text', 'NN'), ('Stream', 'NN'), ('Cipher', 'NN'), ('OFB', 'NN'), ('Same', 'JJ'), ('as', 'IN'), ('CFB', 'NNP'), (',', ','), ('but', 'CC'), ('the', 'DT'), ('shift', 'NN'), ('register', 'NN'), ('is', 'VBZ'), ('updated', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('previous', 'JJ'), ('s-bit', 'NN'), ('key', 'JJ'), ('Stream', 'NN'), ('Cipher', 'NNP'), ('CTR', 'NNP'), ('Same', 'JJ'), ('as', 'IN'), ('OFB', 'NNP'), (',', ','), ('but', 'CC'), ('a', 'DT'), ('counter', 'NN'), ('is', 'VBZ'), ('used', 'VBN'), ('instead', 'RB'), ('of', 'IN'), ('nonce', 'NN'), ('Stream', 'NN'), ('Cipher', 'NNP'), ('Unit', 'NNP'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('Multiple', 'NNP'), ('Encryption', 'NNP'), ('Given', 'VBN'), ('the', 'DT'), ('potential', 'JJ'), ('vulnerability', 'NN'), ('of', 'IN'), ('DES', 'NNP'), ('to', 'IN'), ('a', 'DT'), ('brute', 'JJ'), ('-', 'HYPH'), ('force', 'NN'), ('attack', 'NN'), (',', ','), ('there', 'EX'), ('has', 'VBZ'), ('been', 'VBN'), ('considerable', 'JJ'), ('interest', 'NN'), ('in', 'IN'), ('finding', 'VBG'), ('an', 'DT'), ('alternative', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Needs', 'need'), ('only', 'only'), ('the', 'the'), ('encryption', 'encryption'), ('algorithm', 'algorithm'), ('Random', 'Random'), ('access', 'access'), ('to', 'to'), ('encrypted', 'encrypt'), ('data', 'datum'), ('blocks', 'block'), ('blocks', 'block'), ('can', 'can'), ('be', 'be'), ('processed', 'process'), ('(', '('), ('encrypted', 'encrypt'), ('or', 'or'), ('decrypted', 'decrypt'), (')', ')'), ('in', 'in'), ('parallel', 'parallel'), ('Simple', 'simple'), (';', ';'), ('fast', 'fast'), ('encryption', 'encryption'), ('/', '/'), ('decryption', 'decryption'), ('Counter', 'counter'), ('must', 'must'), ('be', 'be'), ('Must', 'must'), ('be', 'be'), ('unknown', 'unknown'), ('and', 'and'), ('unpredictable', 'unpredictable'), ('pseudo-randomness', 'pseudo-randomness'), ('in', 'in'), ('the', 'the'), ('key', 'key'), ('stream', 'stream'), ('is', 'be'), ('a', 'a'), ('goal', 'goal'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('Summary', 'summary'), ('of', 'of'), ('all', 'all'), ('modes', 'mode'), ('Operation', 'operation'), ('Mode', 'mode'), ('Description', 'description'), ('Type', 'type'), ('of', 'of'), ('Result', 'Result'), ('ECB', 'ECB'), ('Each', 'each'), ('n-bit', 'n-bit'), ('block', 'block'), ('is', 'be'), ('encrypted', 'encrypt'), ('independently', 'independently'), ('with', 'with'), ('same', 'same'), ('key', 'key'), ('Block', 'Block'), ('Cipher', 'Cipher'), ('CBC', 'CBC'), ('Same', 'same'), ('as', 'as'), ('ECB', 'ECB'), (',', ','), ('but', 'but'), ('each', 'each'), ('block', 'block'), ('is', 'be'), ('XORed', 'xor'), ('with', 'with'), ('previous', 'previous'), ('cipher', 'cipher'), ('text', 'text'), ('Block', 'block'), ('Cipher', 'Cipher'), ('CFB', 'CFB'), ('Each', 'each'), ('s-bit', 's-bit'), ('block', 'block'), ('is', 'be'), ('XORed', 'xor'), ('with', 'with'), ('s-bit', 's-bit'), ('key', 'key'), ('which', 'which'), ('is', 'be'), ('part', 'part'), ('of', 'of'), ('previous', 'previous'), ('cipher', 'cipher'), ('text', 'text'), ('Stream', 'stream'), ('Cipher', 'cipher'), ('OFB', 'ofb'), ('Same', 'same'), ('as', 'as'), ('CFB', 'CFB'), (',', ','), ('but', 'but'), ('the', 'the'), ('shift', 'shift'), ('register', 'register'), ('is', 'be'), ('updated', 'update'), ('by', 'by'), ('the', 'the'), ('previous', 'previous'), ('s-bit', 's-bit'), ('key', 'key'), ('Stream', 'stream'), ('Cipher', 'Cipher'), ('CTR', 'CTR'), ('Same', 'same'), ('as', 'as'), ('OFB', 'OFB'), (',', ','), ('but', 'but'), ('a', 'a'), ('counter', 'counter'), ('is', 'be'), ('used', 'use'), ('instead', 'instead'), ('of', 'of'), ('nonce', 'nonce'), ('Stream', 'stream'), ('Cipher', 'Cipher'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('Multiple', 'multiple'), ('Encryption', 'Encryption'), ('Given', 'give'), ('the', 'the'), ('potential', 'potential'), ('vulnerability', 'vulnerability'), ('of', 'of'), ('DES', 'DES'), ('to', 'to'), ('a', 'a'), ('brute', 'brute'), ('-', '-'), ('force', 'force'), ('attack', 'attack'), (',', ','), ('there', 'there'), ('has', 'have'), ('been', 'be'), ('considerable', 'considerable'), ('interest', 'interest'), ('in', 'in'), ('finding', 'find'), ('an', 'a'), ('alternative', 'alternative'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Needs', 'root'), 'root'), (('only', 'algorithm'), 'advmod'), (('the', 'algorithm'), 'det'), (('encryption', 'algorithm'), 'compound'), (('algorithm', 'processed'), 'nsubj:pass'), (('Random', 'access'), 'amod'), (('access', 'processed'), 'nsubj:pass'), (('to', 'blocks'), 'case'), (('encrypted', 'blocks'), 'amod'), (('data', 'blocks'), 'compound'), (('blocks', 'blocks'), 'compound'), (('blocks', 'access'), 'nmod'), (('can', 'processed'), 'aux'), (('be', 'processed'), 'aux:pass'), (('processed', 'Needs'), 'ccomp'), (('(', 'encrypted'), 'punct'), (('encrypted', 'processed'), 'advcl'), (('or', 'decrypted'), 'cc'), (('decrypted', 'encrypted'), 'conj'), ((')', 'encrypted'), 'punct'), (('in', 'Simple'), 'case'), (('parallel', 'Simple'), 'amod'), (('Simple', 'processed'), 'obl'), ((';', 'processed'), 'punct'), (('fast', 'Counter'), 'amod'), (('encryption', 'Counter'), 'compound'), (('/', 'decryption'), 'cc'), (('decryption', 'Counter'), 'compound'), (('Counter', 'unknown'), 'nsubj'), (('must', 'unknown'), 'aux'), (('be', 'unknown'), 'cop'), (('Must', 'unknown'), 'aux'), (('be', 'unknown'), 'cop'), (('unknown', 'processed'), 'conj'), (('and', 'unpredictable'), 'cc'), (('unpredictable', 'pseudo-randomness'), 'amod'), (('pseudo-randomness', 'unknown'), 'nsubj'), (('in', 'stream'), 'case'), (('the', 'stream'), 'det'), (('key', 'stream'), 'amod'), (('stream', 'pseudo-randomness'), 'nmod'), (('is', 'Institute'), 'cop'), (('a', 'Institute'), 'det'), (('goal', 'Unit'), 'compound'), (('Unit', 'Institute'), 'compound'), (('-3', 'Unit'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'unknown'), 'parataxis'), (('of', 'Summary'), 'case'), (('Engineering', 'Summary'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Summary'), 'compound'), (('Summary', 'Institute'), 'nmod'), (('of', 'modes'), 'case'), (('all', 'modes'), 'det'), (('modes', 'Summary'), 'nmod'), (('Operation', 'Type'), 'compound'), (('Mode', 'Description'), 'compound'), (('Description', 'Type'), 'compound'), (('Type', 'Summary'), 'nmod'), (('of', 'ECB'), 'case'), (('Result', 'Type'), 'nmod'), (('ECB', 'Type'), 'nmod'), (('Each', 'block'), 'det'), (('n-bit', 'block'), 'compound'), (('block', 'encrypted'), 'nsubj:pass'), (('is', 'encrypted'), 'aux:pass'), (('encrypted', 'Type'), 'acl:relcl'), (('independently', 'encrypted'), 'advmod'), (('with', 'Same'), 'case'), (('same', 'Same'), 'amod'), (('key', 'Cipher'), 'amod'), (('Block', 'Cipher'), 'compound'), (('Cipher', 'CBC'), 'compound'), (('CBC', 'Same'), 'compound'), (('Same', 'encrypted'), 'obl'), (('as', 'ECB'), 'case'), (('ECB', 'Same'), 'obl'), ((',', 'XORed'), 'punct'), (('but', 'XORed'), 'cc'), (('each', 'block'), 'det'), (('block', 'XORed'), 'nsubj:pass'), (('is', 'XORed'), 'aux:pass'), (('XORed', 'Needs'), 'conj'), (('with', 'Block'), 'case'), (('previous', 'Block'), 'amod'), (('cipher', 'Block'), 'compound'), (('text', 'Block'), 'compound'), (('Block', 'XORed'), 'obl'), (('Cipher', 'Block'), 'appos'), (('CFB', 'Cipher'), 'flat'), (('Each', 'block'), 'det'), (('s-bit', 'block'), 'compound'), (('block', 'XORed'), 'nsubj:pass'), (('is', 'XORed'), 'aux:pass'), (('XORed', 'Block'), 'acl:relcl'), (('with', 'key'), 'case'), (('s-bit', 'key'), 'det'), (('key', 'XORed'), 'obl'), (('which', 'part'), 'nsubj'), (('is', 'part'), 'cop'), (('part', 'key'), 'acl:relcl'), (('of', 'OFB'), 'case'), (('previous', 'text'), 'amod'), (('cipher', 'text'), 'compound'), (('text', 'Stream'), 'compound'), (('Stream', 'OFB'), 'compound'), (('Cipher', 'OFB'), 'compound'), (('OFB', 'Same'), 'compound'), (('Same', 'part'), 'conj'), (('as', 'CFB'), 'case'), (('CFB', 'Same'), 'obl'), ((',', 'updated'), 'punct'), (('but', 'updated'), 'cc'), (('the', 'register'), 'det'), (('shift', 'register'), 'compound'), (('register', 'updated'), 'nsubj:pass'), (('is', 'updated'), 'aux:pass'), (('updated', 'Needs'), 'conj'), (('by', 'Stream'), 'case'), (('the', 'Stream'), 'det'), (('previous', 'Stream'), 'amod'), (('s-bit', 'Stream'), 'compound'), (('key', 'Stream'), 'amod'), (('Stream', 'updated'), 'obl'), (('Cipher', 'Same'), 'compound'), (('CTR', 'Same'), 'compound'), (('Same', 'Stream'), 'amod'), (('as', 'OFB'), 'case'), (('OFB', 'Same'), 'obl'), ((',', 'used'), 'punct'), (('but', 'used'), 'cc'), (('a', 'counter'), 'det'), (('counter', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'updated'), 'conj'), (('instead', 'Institute'), 'case'), (('of', 'instead'), 'fixed'), (('nonce', 'Unit'), 'compound'), (('Stream', 'Unit'), 'compound'), (('Cipher', 'Unit'), 'compound'), (('Unit', 'Institute'), 'compound'), (('-3', 'Unit'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'used'), 'obl'), (('of', 'Encryption'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Encryption'), 'compound'), (('Multiple', 'Encryption'), 'amod'), (('Encryption', 'Institute'), 'nmod'), (('Given', 'vulnerability'), 'case'), (('the', 'vulnerability'), 'det'), (('potential', 'vulnerability'), 'amod'), (('vulnerability', 'Encryption'), 'nmod'), (('of', 'DES'), 'case'), (('DES', 'vulnerability'), 'nmod'), (('to', 'attack'), 'case'), (('a', 'attack'), 'det'), (('brute', 'force'), 'amod'), (('-', 'force'), 'punct'), (('force', 'attack'), 'compound'), (('attack', 'vulnerability'), 'nmod'), ((',', 'been'), 'punct'), (('there', 'been'), 'expl'), (('has', 'been'), 'aux'), (('been', 'vulnerability'), 'acl:relcl'), (('considerable', 'interest'), 'amod'), (('interest', 'been'), 'nsubj'), (('in', 'finding'), 'mark'), (('finding', 'interest'), 'acl'), (('an', 'alternative'), 'det'), (('alternative', 'finding'), 'obj'), (('.', 'Needs'), 'punct')]
+
+ Named Entities are: 
+>> [('ECB', 'ORG'), ('Stream Cipher  \tOFB\tSame', 'PRODUCT'), ('Stream Cipher  \tCTR\tSame', 'PRODUCT'), ('OFB', 'PRODUCT')]
+
+========================== Sentence 38 ===========================
+
+ One approach is to design a completely new algorithm, of which AES is a prime example. 
+
+Tokens are: 
+>> ['One', 'approach', 'is', 'to', 'design', 'a', 'completely', 'new', 'algorithm', ',', 'of', 'which', 'AES', 'is', 'a', 'prime', 'example', '.'] 
+
+ UPOS tags are: 
+>> [('One', 'NUM'), ('approach', 'NOUN'), ('is', 'VERB'), ('to', 'PART'), ('design', 'VERB'), ('a', 'DET'), ('completely', 'ADV'), ('new', 'ADJ'), ('algorithm', 'NOUN'), (',', 'PUNCT'), ('of', 'ADP'), ('which', 'PRON'), ('AES', 'PROPN'), ('is', 'AUX'), ('a', 'DET'), ('prime', 'ADJ'), ('example', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('One', 'CD'), ('approach', 'NN'), ('is', 'VBZ'), ('to', 'TO'), ('design', 'VB'), ('a', 'DT'), ('completely', 'RB'), ('new', 'JJ'), ('algorithm', 'NN'), (',', ','), ('of', 'IN'), ('which', 'WDT'), ('AES', 'NNP'), ('is', 'VBZ'), ('a', 'DT'), ('prime', 'JJ'), ('example', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('One', 'one'), ('approach', 'approach'), ('is', 'be'), ('to', 'to'), ('design', 'design'), ('a', 'a'), ('completely', 'completely'), ('new', 'new'), ('algorithm', 'algorithm'), (',', ','), ('of', 'of'), ('which', 'which'), ('AES', 'AES'), ('is', 'be'), ('a', 'a'), ('prime', 'prime'), ('example', 'example'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('One', 'approach'), 'nummod'), (('approach', 'is'), 'nsubj'), (('is', 'root'), 'root'), (('to', 'design'), 'mark'), (('design', 'is'), 'ccomp'), (('a', 'algorithm'), 'det'), (('completely', 'new'), 'advmod'), (('new', 'algorithm'), 'amod'), (('algorithm', 'design'), 'obj'), ((',', 'algorithm'), 'punct'), (('of', 'which'), 'case'), (('which', 'example'), 'obl'), (('AES', 'example'), 'nsubj'), (('is', 'example'), 'cop'), (('a', 'example'), 'det'), (('prime', 'example'), 'amod'), (('example', 'algorithm'), 'acl:relcl'), (('.', 'is'), 'punct')]
+
+ Named Entities are: 
+>> [('One', 'CARDINAL'), ('AES', 'ORG')]
+
+========================== Sentence 39 ===========================
+
+ Another alternative, which would preserve the existing investment in software and equipment, is to use multiple encryption with DES and multiple keys. 
+
+Tokens are: 
+>> ['Another', 'alternative', ',', 'which', 'would', 'preserve', 'the', 'existing', 'investment', 'in', 'software', 'and', 'equipment', ',', 'is', 'to', 'use', 'multiple', 'encryption', 'with', 'DES', 'and', 'multiple', 'keys', '.'] 
+
+ UPOS tags are: 
+>> [('Another', 'DET'), ('alternative', 'NOUN'), (',', 'PUNCT'), ('which', 'PRON'), ('would', 'AUX'), ('preserve', 'VERB'), ('the', 'DET'), ('existing', 'VERB'), ('investment', 'NOUN'), ('in', 'ADP'), ('software', 'NOUN'), ('and', 'CCONJ'), ('equipment', 'NOUN'), (',', 'PUNCT'), ('is', 'VERB'), ('to', 'PART'), ('use', 'VERB'), ('multiple', 'ADJ'), ('encryption', 'NOUN'), ('with', 'ADP'), ('DES', 'PROPN'), ('and', 'CCONJ'), ('multiple', 'ADJ'), ('keys', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Another', 'DT'), ('alternative', 'NN'), (',', ','), ('which', 'WDT'), ('would', 'MD'), ('preserve', 'VB'), ('the', 'DT'), ('existing', 'VBG'), ('investment', 'NN'), ('in', 'IN'), ('software', 'NN'), ('and', 'CC'), ('equipment', 'NN'), (',', ','), ('is', 'VBZ'), ('to', 'TO'), ('use', 'VB'), ('multiple', 'JJ'), ('encryption', 'NN'), ('with', 'IN'), ('DES', 'NNP'), ('and', 'CC'), ('multiple', 'JJ'), ('keys', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Another', 'another'), ('alternative', 'alternative'), (',', ','), ('which', 'which'), ('would', 'would'), ('preserve', 'preserve'), ('the', 'the'), ('existing', 'exist'), ('investment', 'investment'), ('in', 'in'), ('software', 'software'), ('and', 'and'), ('equipment', 'equipment'), (',', ','), ('is', 'be'), ('to', 'to'), ('use', 'use'), ('multiple', 'multiple'), ('encryption', 'encryption'), ('with', 'with'), ('DES', 'DES'), ('and', 'and'), ('multiple', 'multiple'), ('keys', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Another', 'alternative'), 'det'), (('alternative', 'is'), 'nsubj'), ((',', 'preserve'), 'punct'), (('which', 'preserve'), 'nsubj'), (('would', 'preserve'), 'aux'), (('preserve', 'alternative'), 'acl:relcl'), (('the', 'investment'), 'det'), (('existing', 'investment'), 'amod'), (('investment', 'preserve'), 'obj'), (('in', 'software'), 'case'), (('software', 'investment'), 'nmod'), (('and', 'equipment'), 'cc'), (('equipment', 'software'), 'conj'), ((',', 'alternative'), 'punct'), (('is', 'root'), 'root'), (('to', 'use'), 'mark'), (('use', 'is'), 'ccomp'), (('multiple', 'encryption'), 'amod'), (('encryption', 'use'), 'obj'), (('with', 'DES'), 'case'), (('DES', 'encryption'), 'nmod'), (('and', 'keys'), 'cc'), (('multiple', 'keys'), 'amod'), (('keys', 'DES'), 'conj'), (('.', 'is'), 'punct')]
+
+ Named Entities are: 
+>> [('DES', 'ORG')]
+
+========================== Sentence 40 ===========================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  Double DES   C=E(K2,E(K1, P)) P=D(K1,D(K2, C)) X = E(K1, P) = D(K2, C)  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  Meet in the Middle Attack 
+
+Tokens are: 
+>> ['Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'Double', 'DES', 'C=E', '(', 'K2', ',', 'E(', 'K1', ',', 'P', ')', ')', 'P=D', '(', 'K1', ',', 'D(', 'K2', ',', 'C', ')', ')', 'X', '=', 'E', '(', 'K1', ',', 'P', ')', '=', 'D', '(', 'K2', ',', 'C', ')', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'Meet', 'in', 'the', 'Middle', 'Attack'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('Double', 'PROPN'), ('DES', 'PROPN'), ('C=E', 'PROPN'), ('(', 'PUNCT'), ('K2', 'NUM'), (',', 'PUNCT'), ('E(', 'PROPN'), ('K1', 'NUM'), (',', 'PUNCT'), ('P', 'NOUN'), (')', 'PUNCT'), (')', 'PUNCT'), ('P=D', 'NOUN'), ('(', 'PUNCT'), ('K1', 'PROPN'), (',', 'PUNCT'), ('D(', 'PROPN'), ('K2', 'NUM'), (',', 'PUNCT'), ('C', 'PROPN'), (')', 'PUNCT'), (')', 'PUNCT'), ('X', 'NOUN'), ('=', 'SYM'), ('E', 'NOUN'), ('(', 'PUNCT'), ('K1', 'PROPN'), (',', 'PUNCT'), ('P', 'NOUN'), (')', 'PUNCT'), ('=', 'PUNCT'), ('D', 'PROPN'), ('(', 'PUNCT'), ('K2', 'PROPN'), (',', 'PUNCT'), ('C', 'PROPN'), (')', 'PUNCT'), ('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('Meet', 'PROPN'), ('in', 'ADP'), ('the', 'DET'), ('Middle', 'ADJ'), ('Attack', 'PROPN')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('Double', 'NNP'), ('DES', 'NNP'), ('C=E', 'NNP'), ('(', '-LRB-'), ('K2', 'CD'), (',', ','), ('E(', 'NNP'), ('K1', 'CD'), (',', ','), ('P', 'NN'), (')', '-RRB-'), (')', '-RRB-'), ('P=D', 'NN'), ('(', '-LRB-'), ('K1', 'NNP'), (',', ','), ('D(', 'NNP'), ('K2', 'CD'), (',', ','), ('C', 'NNP'), (')', '-RRB-'), (')', '-RRB-'), ('X', 'NN'), ('=', 'SYM'), ('E', 'NN'), ('(', '-LRB-'), ('K1', 'NNP'), (',', ','), ('P', 'NN'), (')', '-RRB-'), ('=', ','), ('D', 'NNP'), ('(', '-LRB-'), ('K2', 'NNP'), (',', ','), ('C', 'NNP'), (')', '-RRB-'), ('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('Meet', 'NNP'), ('in', 'IN'), ('the', 'DT'), ('Middle', 'NNP'), ('Attack', 'NNP')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('Double', 'double'), ('DES', 'DES'), ('C=E', 'C=E'), ('(', '('), ('K2', 'k2'), (',', ','), ('E(', 'E('), ('K1', 'k1'), (',', ','), ('P', 'p'), (')', ')'), (')', ')'), ('P=D', 'p=d'), ('(', '('), ('K1', 'K1'), (',', ','), ('D(', 'D('), ('K2', 'k2'), (',', ','), ('C', 'C'), (')', ')'), (')', ')'), ('X', 'x'), ('=', '='), ('E', 'e'), ('(', '('), ('K1', 'K1'), (',', ','), ('P', 'p'), (')', ')'), ('=', '='), ('D', 'D'), ('(', '('), ('K2', 'K2'), (',', ','), ('C', 'C'), (')', ')'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('Meet', 'Meet'), ('in', 'in'), ('the', 'the'), ('Middle', 'Middle'), ('Attack', 'Attack')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'root'), 'root'), (('-3', 'Unit'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('Double', 'C=E'), 'compound'), (('DES', 'C=E'), 'compound'), (('C=E', 'Institute'), 'conj'), (('(', 'K2'), 'punct'), (('K2', 'C=E'), 'dep'), ((',', 'E('), 'punct'), (('E(', 'K2'), 'conj'), (('K1', 'E('), 'dep'), ((',', 'P'), 'punct'), (('P', 'K2'), 'nmod:tmod'), ((')', 'P'), 'punct'), ((')', 'K2'), 'punct'), (('P=D', 'Unit'), 'appos'), (('(', 'K1'), 'punct'), (('K1', 'P=D'), 'appos'), ((',', 'D('), 'punct'), (('D(', 'K1'), 'conj'), (('K2', 'K1'), 'dep'), ((',', 'C'), 'punct'), (('C', 'K1'), 'conj'), ((')', 'C'), 'punct'), ((')', 'K1'), 'punct'), (('X', '='), 'nsubj'), (('=', 'Unit'), 'parataxis'), (('E', '='), 'obj'), (('(', 'K1'), 'punct'), (('K1', 'E'), 'appos'), ((',', 'P'), 'punct'), (('P', 'K1'), 'dep'), ((')', 'K1'), 'punct'), (('=', 'Unit'), 'punct'), (('D', 'Unit'), 'parataxis'), (('(', 'K2'), 'punct'), (('K2', 'D'), 'appos'), ((',', 'C'), 'punct'), (('C', 'K2'), 'appos'), ((')', 'C'), 'punct'), (('Unit', 'Institute'), 'compound'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'D'), 'appos'), (('of', 'Meet'), 'case'), (('Engineering', 'Meet'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Meet'), 'compound'), (('Meet', 'Institute'), 'nmod'), (('in', 'Attack'), 'case'), (('the', 'Attack'), 'det'), (('Middle', 'Attack'), 'amod'), (('Attack', 'Meet'), 'nmod')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  Double DES   C=E', 'ORG'), ('K2', 'ORG'), ('K2', 'CARDINAL'), ('-3', 'CARDINAL')]
+
+========================== Sentence 41 ===========================
+
+ This attack involves encryption from one end, decryption from the other and matching the results in the middle. 
+
+Tokens are: 
+>> ['This', 'attack', 'involves', 'encryption', 'from', 'one', 'end', ',', 'decryption', 'from', 'the', 'other', 'and', 'matching', 'the', 'results', 'in', 'the', 'middle', '.'] 
+
+ UPOS tags are: 
+>> [('This', 'DET'), ('attack', 'NOUN'), ('involves', 'VERB'), ('encryption', 'NOUN'), ('from', 'ADP'), ('one', 'NUM'), ('end', 'NOUN'), (',', 'PUNCT'), ('decryption', 'NOUN'), ('from', 'ADP'), ('the', 'DET'), ('other', 'ADJ'), ('and', 'CCONJ'), ('matching', 'VERB'), ('the', 'DET'), ('results', 'NOUN'), ('in', 'ADP'), ('the', 'DET'), ('middle', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('This', 'DT'), ('attack', 'NN'), ('involves', 'VBZ'), ('encryption', 'NN'), ('from', 'IN'), ('one', 'CD'), ('end', 'NN'), (',', ','), ('decryption', 'NN'), ('from', 'IN'), ('the', 'DT'), ('other', 'JJ'), ('and', 'CC'), ('matching', 'VBG'), ('the', 'DT'), ('results', 'NNS'), ('in', 'IN'), ('the', 'DT'), ('middle', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('This', 'this'), ('attack', 'attack'), ('involves', 'involve'), ('encryption', 'encryption'), ('from', 'from'), ('one', 'one'), ('end', 'end'), (',', ','), ('decryption', 'decryption'), ('from', 'from'), ('the', 'the'), ('other', 'other'), ('and', 'and'), ('matching', 'match'), ('the', 'the'), ('results', 'result'), ('in', 'in'), ('the', 'the'), ('middle', 'middle'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('This', 'attack'), 'det'), (('attack', 'involves'), 'nsubj'), (('involves', 'root'), 'root'), (('encryption', 'involves'), 'obj'), (('from', 'end'), 'case'), (('one', 'end'), 'nummod'), (('end', 'involves'), 'obl'), ((',', 'decryption'), 'punct'), (('decryption', 'end'), 'conj'), (('from', 'other'), 'case'), (('the', 'other'), 'det'), (('other', 'decryption'), 'nmod'), (('and', 'matching'), 'cc'), (('matching', 'involves'), 'conj'), (('the', 'results'), 'det'), (('results', 'matching'), 'obj'), (('in', 'middle'), 'case'), (('the', 'middle'), 'det'), (('middle', 'results'), 'nmod'), (('.', 'involves'), 'punct')]
+
+ Named Entities are: 
+>> [('one', 'CARDINAL')]
+
+========================== Sentence 42 ===========================
+
+ Suppose cryptanalyst knows P and corresponding C.  Now, the aim is to obtain the values of K1 and K2. 
+
+Tokens are: 
+>> ['Suppose', 'cryptanalyst', 'knows', 'P', 'and', 'corresponding', 'C.', 'Now', ',', 'the', 'aim', 'is', 'to', 'obtain', 'the', 'values', 'of', 'K1', 'and', 'K2', '.'] 
+
+ UPOS tags are: 
+>> [('Suppose', 'VERB'), ('cryptanalyst', 'NOUN'), ('knows', 'VERB'), ('P', 'NOUN'), ('and', 'CCONJ'), ('corresponding', 'VERB'), ('C.', 'NOUN'), ('Now', 'ADV'), (',', 'PUNCT'), ('the', 'DET'), ('aim', 'NOUN'), ('is', 'VERB'), ('to', 'PART'), ('obtain', 'VERB'), ('the', 'DET'), ('values', 'NOUN'), ('of', 'ADP'), ('K1', 'PROPN'), ('and', 'CCONJ'), ('K2', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Suppose', 'VB'), ('cryptanalyst', 'NN'), ('knows', 'VBZ'), ('P', 'NN'), ('and', 'CC'), ('corresponding', 'VBG'), ('C.', 'NN'), ('Now', 'RB'), (',', ','), ('the', 'DT'), ('aim', 'NN'), ('is', 'VBZ'), ('to', 'TO'), ('obtain', 'VB'), ('the', 'DT'), ('values', 'NNS'), ('of', 'IN'), ('K1', 'NNP'), ('and', 'CC'), ('K2', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Suppose', 'suppose'), ('cryptanalyst', 'cryptanalyst'), ('knows', 'know'), ('P', 'p'), ('and', 'and'), ('corresponding', 'corresponding'), ('C.', 'C.'), ('Now', 'now'), (',', ','), ('the', 'the'), ('aim', 'aim'), ('is', 'be'), ('to', 'to'), ('obtain', 'obtain'), ('the', 'the'), ('values', 'value'), ('of', 'of'), ('K1', 'K1'), ('and', 'and'), ('K2', 'K2'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Suppose', 'root'), 'root'), (('cryptanalyst', 'knows'), 'nsubj'), (('knows', 'Suppose'), 'ccomp'), (('P', 'knows'), 'obj'), (('and', 'corresponding'), 'cc'), (('corresponding', 'knows'), 'conj'), (('C.', 'corresponding'), 'obj'), (('Now', 'corresponding'), 'advmod'), ((',', 'is'), 'punct'), (('the', 'aim'), 'det'), (('aim', 'is'), 'nsubj'), (('is', 'Suppose'), 'parataxis'), (('to', 'obtain'), 'mark'), (('obtain', 'is'), 'ccomp'), (('the', 'values'), 'det'), (('values', 'obtain'), 'obj'), (('of', 'K1'), 'case'), (('K1', 'values'), 'nmod'), (('and', 'K2'), 'cc'), (('K2', 'K1'), 'conj'), (('.', 'Suppose'), 'punct')]
+
+ Named Entities are: 
+>> [('K1', 'CARDINAL'), ('K2', 'CARDINAL')]
+
+========================== Sentence 43 ===========================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›  Meet in the Middle Attack Step-1 
+
+Tokens are: 
+>> ['Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'Meet', 'in', 'the', 'Middle', 'Attack', 'Step-1'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('Meet', 'PROPN'), ('in', 'ADP'), ('the', 'DET'), ('Middle', 'ADJ'), ('Attack', 'PROPN'), ('Step-1', 'PROPN')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('Meet', 'NNP'), ('in', 'IN'), ('the', 'DT'), ('Middle', 'NNP'), ('Attack', 'NNP'), ('Step-1', 'NNP')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('Meet', 'Meet'), ('in', 'in'), ('the', 'the'), ('Middle', 'Middle'), ('Attack', 'Attack'), ('Step-1', 'Step-1')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'root'), 'root'), (('-3', 'Unit'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', 'Meet'), 'case'), (('Engineering', 'Meet'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Meet'), 'compound'), (('Meet', 'Institute'), 'nmod'), (('in', 'Attack'), 'case'), (('the', 'Attack'), 'det'), (('Middle', 'Attack'), 'amod'), (('Attack', 'Meet'), 'nmod'), (('Step-1', 'Meet'), 'nmod')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG')]
+
+========================== Sentence 44 ===========================
+
+ For all possible values (256) of key K1, the cryptanalyst would encrypt the P by performing E(K1,P). 
+
+Tokens are: 
+>> ['For', 'all', 'possible', 'values', '(', '256', ')', 'of', 'key', 'K1', ',', 'the', 'cryptanalyst', 'would', 'encrypt', 'the', 'P', 'by', 'performing', 'E', '(', 'K1', ',', 'P', ')', '.'] 
+
+ UPOS tags are: 
+>> [('For', 'ADP'), ('all', 'DET'), ('possible', 'ADJ'), ('values', 'NOUN'), ('(', 'PUNCT'), ('256', 'NUM'), (')', 'PUNCT'), ('of', 'ADP'), ('key', 'ADJ'), ('K1', 'PROPN'), (',', 'PUNCT'), ('the', 'DET'), ('cryptanalyst', 'NOUN'), ('would', 'AUX'), ('encrypt', 'VERB'), ('the', 'DET'), ('P', 'NOUN'), ('by', 'SCONJ'), ('performing', 'VERB'), ('E', 'NOUN'), ('(', 'PUNCT'), ('K1', 'PROPN'), (',', 'PUNCT'), ('P', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('For', 'IN'), ('all', 'DT'), ('possible', 'JJ'), ('values', 'NNS'), ('(', '-LRB-'), ('256', 'LS'), (')', '-RRB-'), ('of', 'IN'), ('key', 'JJ'), ('K1', 'NNP'), (',', ','), ('the', 'DT'), ('cryptanalyst', 'NN'), ('would', 'MD'), ('encrypt', 'VB'), ('the', 'DT'), ('P', 'NN'), ('by', 'IN'), ('performing', 'VBG'), ('E', 'NN'), ('(', '-LRB-'), ('K1', 'NNP'), (',', ','), ('P', 'NN'), (')', '-RRB-'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('For', 'for'), ('all', 'all'), ('possible', 'possible'), ('values', 'value'), ('(', '('), ('256', '256'), (')', ')'), ('of', 'of'), ('key', 'key'), ('K1', 'K1'), (',', ','), ('the', 'the'), ('cryptanalyst', 'cryptanalyst'), ('would', 'would'), ('encrypt', 'encrypt'), ('the', 'the'), ('P', 'p'), ('by', 'by'), ('performing', 'perform'), ('E', 'e'), ('(', '('), ('K1', 'K1'), (',', ','), ('P', 'p'), (')', ')'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('For', 'values'), 'case'), (('all', 'values'), 'det'), (('possible', 'values'), 'amod'), (('values', 'encrypt'), 'obl'), (('(', '256'), 'punct'), (('256', 'values'), 'appos'), ((')', '256'), 'punct'), (('of', 'K1'), 'case'), (('key', 'K1'), 'amod'), (('K1', 'values'), 'nmod'), ((',', 'encrypt'), 'punct'), (('the', 'cryptanalyst'), 'det'), (('cryptanalyst', 'encrypt'), 'nsubj'), (('would', 'encrypt'), 'aux'), (('encrypt', 'root'), 'root'), (('the', 'P'), 'det'), (('P', 'encrypt'), 'obj'), (('by', 'performing'), 'mark'), (('performing', 'encrypt'), 'advcl'), (('E', 'performing'), 'obj'), (('(', 'K1'), 'punct'), (('K1', 'performing'), 'dep'), ((',', 'K1'), 'punct'), (('P', 'K1'), 'appos'), ((')', 'K1'), 'punct'), (('.', 'encrypt'), 'punct')]
+
+ Named Entities are: 
+>> [('256', 'CARDINAL'), ('K1', 'CARDINAL')]
+
+========================== Sentence 45 ===========================
+
+ The cryptanalyst would store output in a table. 
+
+Tokens are: 
+>> ['The', 'cryptanalyst', 'would', 'store', 'output', 'in', 'a', 'table', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('cryptanalyst', 'NOUN'), ('would', 'AUX'), ('store', 'VERB'), ('output', 'NOUN'), ('in', 'ADP'), ('a', 'DET'), ('table', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('cryptanalyst', 'NN'), ('would', 'MD'), ('store', 'VB'), ('output', 'NN'), ('in', 'IN'), ('a', 'DT'), ('table', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('cryptanalyst', 'cryptanalyst'), ('would', 'would'), ('store', 'store'), ('output', 'output'), ('in', 'in'), ('a', 'a'), ('table', 'table'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'cryptanalyst'), 'det'), (('cryptanalyst', 'store'), 'nsubj'), (('would', 'store'), 'aux'), (('store', 'root'), 'root'), (('output', 'store'), 'obj'), (('in', 'table'), 'case'), (('a', 'table'), 'det'), (('table', 'store'), 'obl'), (('.', 'store'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 46 ===========================
+
+ Encrypt P Possible Keys (Key = K1) 00 01 10 11 Table of Cipher Text Cryptanalyst encryption operation  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   27  Meet in the Middle Attack Step-2 	 	 	 	  Cryptanalyst decrypt the known C with all possible values of K2. 
+
+Tokens are: 
+>> ['Encrypt', 'P', 'Possible', 'Keys', '(', 'Key', '=', 'K1', ')', '00', '01', '10', '11', 'Table', 'of', 'Cipher', 'Text', 'Cryptanalyst', 'encryption', 'operation', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', '27', 'Meet', 'in', 'the', 'Middle', 'Attack', 'Step', '-2', 'Cryptanalyst', 'decrypt', 'the', 'known', 'C', 'with', 'all', 'possible', 'values', 'of', 'K2', '.'] 
+
+ UPOS tags are: 
+>> [('Encrypt', 'VERB'), ('P', 'NOUN'), ('Possible', 'ADJ'), ('Keys', 'PROPN'), ('(', 'PUNCT'), ('Key', 'PROPN'), ('=', 'SYM'), ('K1', 'NUM'), (')', 'PUNCT'), ('00', 'NUM'), ('01', 'NUM'), ('10', 'NUM'), ('11', 'NUM'), ('Table', 'NOUN'), ('of', 'ADP'), ('Cipher', 'PROPN'), ('Text', 'PROPN'), ('Cryptanalyst', 'PROPN'), ('encryption', 'NOUN'), ('operation', 'NOUN'), ('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('27', 'NUM'), ('Meet', 'PROPN'), ('in', 'ADP'), ('the', 'DET'), ('Middle', 'ADJ'), ('Attack', 'PROPN'), ('Step', 'PROPN'), ('-2', 'NUM'), ('Cryptanalyst', 'PROPN'), ('decrypt', 'VERB'), ('the', 'DET'), ('known', 'VERB'), ('C', 'PROPN'), ('with', 'ADP'), ('all', 'DET'), ('possible', 'ADJ'), ('values', 'NOUN'), ('of', 'ADP'), ('K2', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Encrypt', 'VB'), ('P', 'NN'), ('Possible', 'JJ'), ('Keys', 'NNPS'), ('(', '-LRB-'), ('Key', 'NNP'), ('=', 'SYM'), ('K1', 'CD'), (')', '-RRB-'), ('00', 'CD'), ('01', 'CD'), ('10', 'CD'), ('11', 'CD'), ('Table', 'NN'), ('of', 'IN'), ('Cipher', 'NNP'), ('Text', 'NNP'), ('Cryptanalyst', 'NNP'), ('encryption', 'NN'), ('operation', 'NN'), ('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('27', 'CD'), ('Meet', 'NNP'), ('in', 'IN'), ('the', 'DT'), ('Middle', 'NNP'), ('Attack', 'NNP'), ('Step', 'NNP'), ('-2', 'CD'), ('Cryptanalyst', 'NNP'), ('decrypt', 'VB'), ('the', 'DT'), ('known', 'VBN'), ('C', 'NNP'), ('with', 'IN'), ('all', 'DT'), ('possible', 'JJ'), ('values', 'NNS'), ('of', 'IN'), ('K2', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Encrypt', 'encrypt'), ('P', 'p'), ('Possible', 'possible'), ('Keys', 'key'), ('(', '('), ('Key', 'Key'), ('=', '='), ('K1', 'k1'), (')', ')'), ('00', '00'), ('01', '01'), ('10', '10'), ('11', '11'), ('Table', 'table'), ('of', 'of'), ('Cipher', 'Cipher'), ('Text', 'text'), ('Cryptanalyst', 'Cryptanalyst'), ('encryption', 'encryption'), ('operation', 'operation'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('27', '27'), ('Meet', 'Meet'), ('in', 'in'), ('the', 'the'), ('Middle', 'Middle'), ('Attack', 'Attack'), ('Step', 'step'), ('-2', '-2'), ('Cryptanalyst', 'Cryptanalyst'), ('decrypt', 'decrypt'), ('the', 'the'), ('known', 'know'), ('C', 'C'), ('with', 'with'), ('all', 'all'), ('possible', 'possible'), ('values', 'value'), ('of', 'of'), ('K2', 'K2'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Encrypt', 'root'), 'root'), (('P', 'Keys'), 'compound'), (('Possible', 'Keys'), 'amod'), (('Keys', 'Encrypt'), 'obj'), (('(', '='), 'punct'), (('Key', '='), 'nsubj'), (('=', 'Keys'), 'appos'), (('K1', '='), 'obl:tmod'), ((')', '='), 'punct'), (('00', '01'), 'compound'), (('01', 'Table'), 'nummod'), (('10', '01'), 'conj'), (('11', 'Table'), 'nummod'), (('Table', 'Encrypt'), 'obj'), (('of', 'encryption'), 'case'), (('Cipher', 'Text'), 'compound'), (('Text', 'Cryptanalyst'), 'compound'), (('Cryptanalyst', 'encryption'), 'compound'), (('encryption', 'Unit'), 'compound'), (('operation', 'Unit'), 'compound'), (('Unit', 'Table'), 'nmod'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'compound'), (('27', 'Meet'), 'nummod'), (('Meet', 'Institute'), 'nmod'), (('in', 'Cryptanalyst'), 'case'), (('the', 'Cryptanalyst'), 'det'), (('Middle', 'Attack'), 'amod'), (('Attack', 'Step'), 'compound'), (('Step', 'Cryptanalyst'), 'compound'), (('-2', 'Step'), 'nummod'), (('Cryptanalyst', 'decrypt'), 'nsubj'), (('decrypt', 'Encrypt'), 'parataxis'), (('the', 'C'), 'det'), (('known', 'C'), 'amod'), (('C', 'decrypt'), 'obj'), (('with', 'values'), 'case'), (('all', 'values'), 'det'), (('possible', 'values'), 'amod'), (('values', 'decrypt'), 'obl'), (('of', 'K2'), 'case'), (('K2', 'values'), 'nmod'), (('.', 'Encrypt'), 'punct')]
+
+ Named Entities are: 
+>> [('01 10', 'CARDINAL'), ('27', 'CARDINAL'), ('K2', 'CARDINAL')]
+
+========================== Sentence 47 ===========================
+
+ In each case cryptanalyst will compare the resulting value with the all values in the table of ciphertext. 
+
+Tokens are: 
+>> ['In', 'each', 'case', 'cryptanalyst', 'will', 'compare', 'the', 'resulting', 'value', 'with', 'the', 'all', 'values', 'in', 'the', 'table', 'of', 'ciphertext', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('each', 'DET'), ('case', 'NOUN'), ('cryptanalyst', 'NOUN'), ('will', 'AUX'), ('compare', 'VERB'), ('the', 'DET'), ('resulting', 'VERB'), ('value', 'NOUN'), ('with', 'ADP'), ('the', 'DET'), ('all', 'DET'), ('values', 'NOUN'), ('in', 'ADP'), ('the', 'DET'), ('table', 'NOUN'), ('of', 'ADP'), ('ciphertext', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('each', 'DT'), ('case', 'NN'), ('cryptanalyst', 'NN'), ('will', 'MD'), ('compare', 'VB'), ('the', 'DT'), ('resulting', 'VBG'), ('value', 'NN'), ('with', 'IN'), ('the', 'DT'), ('all', 'DT'), ('values', 'NNS'), ('in', 'IN'), ('the', 'DT'), ('table', 'NN'), ('of', 'IN'), ('ciphertext', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('each', 'each'), ('case', 'case'), ('cryptanalyst', 'cryptanalyst'), ('will', 'will'), ('compare', 'compare'), ('the', 'the'), ('resulting', 'result'), ('value', 'value'), ('with', 'with'), ('the', 'the'), ('all', 'all'), ('values', 'value'), ('in', 'in'), ('the', 'the'), ('table', 'table'), ('of', 'of'), ('ciphertext', 'ciphertext'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'case'), 'case'), (('each', 'case'), 'det'), (('case', 'compare'), 'obl'), (('cryptanalyst', 'compare'), 'nsubj'), (('will', 'compare'), 'aux'), (('compare', 'root'), 'root'), (('the', 'value'), 'det'), (('resulting', 'value'), 'amod'), (('value', 'compare'), 'obj'), (('with', 'values'), 'case'), (('the', 'values'), 'det'), (('all', 'values'), 'det'), (('values', 'value'), 'nmod'), (('in', 'table'), 'case'), (('the', 'table'), 'det'), (('table', 'values'), 'nmod'), (('of', 'ciphertext'), 'case'), (('ciphertext', 'table'), 'nmod'), (('.', 'compare'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 48 ===========================
+
+ Decrypt C Possible Keys (Key = K2) 00 01 10 11 Table of Cipher Text Cryptanalyst decryption operation 
+
+Tokens are: 
+>> ['Decrypt', 'C', 'Possible', 'Keys', '(', 'Key', '=', 'K2', ')', '00', '01', '10', '11', 'Table', 'of', 'Cipher', 'Text', 'Cryptanalyst', 'decryption', 'operation'] 
+
+ UPOS tags are: 
+>> [('Decrypt', 'VERB'), ('C', 'PROPN'), ('Possible', 'ADJ'), ('Keys', 'NOUN'), ('(', 'PUNCT'), ('Key', 'PROPN'), ('=', 'SYM'), ('K2', 'NUM'), (')', 'PUNCT'), ('00', 'NUM'), ('01', 'NUM'), ('10', 'NUM'), ('11', 'NUM'), ('Table', 'NOUN'), ('of', 'ADP'), ('Cipher', 'PROPN'), ('Text', 'PROPN'), ('Cryptanalyst', 'PROPN'), ('decryption', 'NOUN'), ('operation', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Decrypt', 'VB'), ('C', 'NNP'), ('Possible', 'JJ'), ('Keys', 'NNS'), ('(', '-LRB-'), ('Key', 'NNP'), ('=', 'SYM'), ('K2', 'CD'), (')', '-RRB-'), ('00', 'CD'), ('01', 'CD'), ('10', 'CD'), ('11', 'CD'), ('Table', 'NN'), ('of', 'IN'), ('Cipher', 'NNP'), ('Text', 'NNP'), ('Cryptanalyst', 'NNP'), ('decryption', 'NN'), ('operation', 'NN')] 
+
+ Lemmas are: 
+>> [('Decrypt', 'decrypt'), ('C', 'C'), ('Possible', 'possible'), ('Keys', 'key'), ('(', '('), ('Key', 'Key'), ('=', '='), ('K2', 'k2'), (')', ')'), ('00', '00'), ('01', '01'), ('10', '10'), ('11', '11'), ('Table', 'table'), ('of', 'of'), ('Cipher', 'Cipher'), ('Text', 'text'), ('Cryptanalyst', 'Cryptanalyst'), ('decryption', 'decryption'), ('operation', 'operation')] 
+
+ Dependency tags are: 
+>> [(('Decrypt', 'root'), 'root'), (('C', 'Keys'), 'compound'), (('Possible', 'Keys'), 'amod'), (('Keys', 'Decrypt'), 'obj'), (('(', '='), 'punct'), (('Key', '='), 'nsubj'), (('=', 'Keys'), 'parataxis'), (('K2', '='), 'obj'), ((')', '='), 'punct'), (('00', '01'), 'nummod'), (('01', 'Table'), 'nummod'), (('10', '01'), 'compound'), (('11', 'Table'), 'nummod'), (('Table', 'Decrypt'), 'obj'), (('of', 'operation'), 'case'), (('Cipher', 'Text'), 'compound'), (('Text', 'Cryptanalyst'), 'compound'), (('Cryptanalyst', 'operation'), 'compound'), (('decryption', 'operation'), 'compound'), (('operation', 'Table'), 'nmod')]
+
+ Named Entities are: 
+>> [('01', 'CARDINAL'), ('10', 'CARDINAL')]
+
+========================== Sentence 49 ===========================
+
+ For each result do a table look up  Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   28  Triple DES   C=E(K1,D(K2, E(K1,P))) P=D(K1,E(K2, D(K1,C))) 
+
+Tokens are: 
+>> ['For', 'each', 'result', 'do', 'a', 'table', 'look', 'up', 'Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', '28', 'Triple', 'DES', 'C=E', '(', 'K1', ',', 'D(', 'K2', ',', 'E(', 'K1', ',', 'P', ')', ')', ')', 'P=D', '(', 'K1', ',', 'E(', 'K2', ',', 'D(', 'K1', ',', 'C', ')', ')', ')'] 
+
+ UPOS tags are: 
+>> [('For', 'ADP'), ('each', 'DET'), ('result', 'NOUN'), ('do', 'VERB'), ('a', 'DET'), ('table', 'NOUN'), ('look', 'VERB'), ('up', 'ADP'), ('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('28', 'NUM'), ('Triple', 'PROPN'), ('DES', 'PROPN'), ('C=E', 'PROPN'), ('(', 'PUNCT'), ('K1', 'PROPN'), (',', 'PUNCT'), ('D(', 'PROPN'), ('K2', 'PROPN'), (',', 'PUNCT'), ('E(', 'PROPN'), ('K1', 'PROPN'), (',', 'PUNCT'), ('P', 'NOUN'), (')', 'PUNCT'), (')', 'PUNCT'), (')', 'PUNCT'), ('P=D', 'PROPN'), ('(', 'PUNCT'), ('K1', 'PROPN'), (',', 'PUNCT'), ('E(', 'PROPN'), ('K2', 'PROPN'), (',', 'PUNCT'), ('D(', 'PROPN'), ('K1', 'PROPN'), (',', 'PUNCT'), ('C', 'PROPN'), (')', 'PUNCT'), (')', 'PUNCT'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('For', 'IN'), ('each', 'DT'), ('result', 'NN'), ('do', 'VB'), ('a', 'DT'), ('table', 'NN'), ('look', 'VB'), ('up', 'RP'), ('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('28', 'CD'), ('Triple', 'NNP'), ('DES', 'NNP'), ('C=E', 'NNP'), ('(', '-LRB-'), ('K1', 'NNP'), (',', ','), ('D(', 'NNP'), ('K2', 'NNP'), (',', ','), ('E(', 'NNP'), ('K1', 'NNP'), (',', ','), ('P', 'NN'), (')', '-RRB-'), (')', '-RRB-'), (')', '-RRB-'), ('P=D', 'NNP'), ('(', '-LRB-'), ('K1', 'NNP'), (',', ','), ('E(', 'NNP'), ('K2', 'NNP'), (',', ','), ('D(', 'NNP'), ('K1', 'NNP'), (',', ','), ('C', 'NNP'), (')', '-RRB-'), (')', '-RRB-'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('For', 'for'), ('each', 'each'), ('result', 'result'), ('do', 'do'), ('a', 'a'), ('table', 'table'), ('look', 'look'), ('up', 'up'), ('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('28', '28'), ('Triple', 'Triple'), ('DES', 'DES'), ('C=E', 'C=E'), ('(', '('), ('K1', 'K1'), (',', ','), ('D(', 'D('), ('K2', 'K2'), (',', ','), ('E(', 'E('), ('K1', 'K1'), (',', ','), ('P', 'p'), (')', ')'), (')', ')'), (')', ')'), ('P=D', 'P=D'), ('(', '('), ('K1', 'K1'), (',', ','), ('E(', 'E('), ('K2', 'K2'), (',', ','), ('D(', 'D('), ('K1', 'K1'), (',', ','), ('C', 'C'), (')', ')'), (')', ')'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('For', 'result'), 'case'), (('each', 'result'), 'det'), (('result', 'look'), 'obl'), (('do', 'look'), 'advcl'), (('a', 'table'), 'det'), (('table', 'look'), 'nsubj'), (('look', 'root'), 'root'), (('up', 'look'), 'compound:prt'), (('Unit', 'look'), 'obj'), (('-3', 'Institute'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'look'), 'obj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('28', 'C=E'), 'nummod'), (('Triple', 'C=E'), 'compound'), (('DES', 'C=E'), 'compound'), (('C=E', 'Institute'), 'conj'), (('(', 'K1'), 'punct'), (('K1', 'C=E'), 'appos'), ((',', 'K1'), 'punct'), (('D(', 'K1'), 'conj'), (('K2', 'K1'), 'conj'), ((',', 'K1'), 'punct'), (('E(', 'K1'), 'compound'), (('K1', 'K1'), 'conj'), ((',', 'P'), 'punct'), (('P', 'K1'), 'appos'), ((')', 'K1'), 'punct'), ((')', 'K1'), 'punct'), ((')', 'K1'), 'punct'), (('P=D', 'C=E'), 'conj'), (('(', 'K1'), 'punct'), (('K1', 'P=D'), 'appos'), ((',', 'E('), 'punct'), (('E(', 'K1'), 'conj'), (('K2', 'K1'), 'conj'), ((',', 'K1'), 'punct'), (('D(', 'K1'), 'conj'), (('K1', 'K1'), 'conj'), ((',', 'C'), 'punct'), (('C', 'K1'), 'nmod:tmod'), ((')', 'K1'), 'punct'), ((')', 'K1'), 'punct'), ((')', 'K1'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#›   28  Triple DES   C=E', 'ORG'), ('K1', 'CARDINAL'), ('K1', 'CARDINAL')]
+
+========================== Sentence 50 ===========================
+
+ Unit-3                                                                                 Darshan Institute of Engineering & Technology            ‹#› 
+
+Tokens are: 
+>> ['Unit', '-3', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-3', 'NUM'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-3', 'CD'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-3', '-3'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'root'), 'root'), (('-3', 'Unit'), 'nummod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod')]
+
+ Named Entities are: 
+>> [('Unit-3                                                                                 Darshan Institute of Engineering & Technology', 'ORG')]

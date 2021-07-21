@@ -1,0 +1,335 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-19 AI is developing with such an incredible speed, sometimes it seems magical. 
+
+
+>> Tokens are: 
+ ['AI-19', 'AI', 'developing', 'incredible', 'speed', ',', 'sometimes', 'seems', 'magical', '.']
+
+>> Bigrams are: 
+ [('AI-19', 'AI'), ('AI', 'developing'), ('developing', 'incredible'), ('incredible', 'speed'), ('speed', ','), (',', 'sometimes'), ('sometimes', 'seems'), ('seems', 'magical'), ('magical', '.')]
+
+>> Trigrams are: 
+ [('AI-19', 'AI', 'developing'), ('AI', 'developing', 'incredible'), ('developing', 'incredible', 'speed'), ('incredible', 'speed', ','), ('speed', ',', 'sometimes'), (',', 'sometimes', 'seems'), ('sometimes', 'seems', 'magical'), ('seems', 'magical', '.')]
+
+>> POS Tags are: 
+ [('AI-19', 'JJ'), ('AI', 'NNP'), ('developing', 'VBG'), ('incredible', 'JJ'), ('speed', 'NN'), (',', ','), ('sometimes', 'RB'), ('seems', 'VBZ'), ('magical', 'JJ'), ('.', '.')]
+
+ (S
+  (NP AI-19/JJ AI/NNP)
+  developing/VBG
+  (NP incredible/JJ speed/NN)
+  ,/,
+  sometimes/RB
+  seems/VBZ
+  magical/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-19 AI', 'incredible speed']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-19', 'ai-19'), ('AI', 'ai'), ('developing', 'develop'), ('incredible', 'incred'), ('speed', 'speed'), (',', ','), ('sometimes', 'sometim'), ('seems', 'seem'), ('magical', 'magic'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-19', 'ai-19'), ('AI', 'ai'), ('developing', 'develop'), ('incredible', 'incred'), ('speed', 'speed'), (',', ','), ('sometimes', 'sometim'), ('seems', 'seem'), ('magical', 'magic'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-19', 'AI-19'), ('AI', 'AI'), ('developing', 'developing'), ('incredible', 'incredible'), ('speed', 'speed'), (',', ','), ('sometimes', 'sometimes'), ('seems', 'seems'), ('magical', 'magical'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+There is an opinion among researchers and developers that AI could grow so immensely strong that it would be difficult for humans to control. 
+
+
+>> Tokens are: 
+ ['There', 'opinion', 'among', 'researchers', 'developers', 'AI', 'could', 'grow', 'immensely', 'strong', 'would', 'difficult', 'humans', 'control', '.']
+
+>> Bigrams are: 
+ [('There', 'opinion'), ('opinion', 'among'), ('among', 'researchers'), ('researchers', 'developers'), ('developers', 'AI'), ('AI', 'could'), ('could', 'grow'), ('grow', 'immensely'), ('immensely', 'strong'), ('strong', 'would'), ('would', 'difficult'), ('difficult', 'humans'), ('humans', 'control'), ('control', '.')]
+
+>> Trigrams are: 
+ [('There', 'opinion', 'among'), ('opinion', 'among', 'researchers'), ('among', 'researchers', 'developers'), ('researchers', 'developers', 'AI'), ('developers', 'AI', 'could'), ('AI', 'could', 'grow'), ('could', 'grow', 'immensely'), ('grow', 'immensely', 'strong'), ('immensely', 'strong', 'would'), ('strong', 'would', 'difficult'), ('would', 'difficult', 'humans'), ('difficult', 'humans', 'control'), ('humans', 'control', '.')]
+
+>> POS Tags are: 
+ [('There', 'EX'), ('opinion', 'NN'), ('among', 'IN'), ('researchers', 'NNS'), ('developers', 'NNS'), ('AI', 'NNP'), ('could', 'MD'), ('grow', 'VB'), ('immensely', 'RB'), ('strong', 'JJ'), ('would', 'MD'), ('difficult', 'JJ'), ('humans', 'NNS'), ('control', 'NN'), ('.', '.')]
+
+ (S
+  There/EX
+  (NP opinion/NN)
+  among/IN
+  (NP researchers/NNS developers/NNS AI/NNP)
+  could/MD
+  grow/VB
+  immensely/RB
+  strong/JJ
+  would/MD
+  (NP difficult/JJ humans/NNS control/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['opinion', 'researchers developers AI', 'difficult humans control']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('There', 'there'), ('opinion', 'opinion'), ('among', 'among'), ('researchers', 'research'), ('developers', 'develop'), ('AI', 'ai'), ('could', 'could'), ('grow', 'grow'), ('immensely', 'immens'), ('strong', 'strong'), ('would', 'would'), ('difficult', 'difficult'), ('humans', 'human'), ('control', 'control'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('There', 'there'), ('opinion', 'opinion'), ('among', 'among'), ('researchers', 'research'), ('developers', 'develop'), ('AI', 'ai'), ('could', 'could'), ('grow', 'grow'), ('immensely', 'immens'), ('strong', 'strong'), ('would', 'would'), ('difficult', 'difficult'), ('humans', 'human'), ('control', 'control'), ('.', '.')]
+
+>> Lemmatization: 
+ [('There', 'There'), ('opinion', 'opinion'), ('among', 'among'), ('researchers', 'researcher'), ('developers', 'developer'), ('AI', 'AI'), ('could', 'could'), ('grow', 'grow'), ('immensely', 'immensely'), ('strong', 'strong'), ('would', 'would'), ('difficult', 'difficult'), ('humans', 'human'), ('control', 'control'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+Humans developed AI systems by introducing into them every possible intelligence they could, for which the humans themselves now seem threatened. 
+
+
+>> Tokens are: 
+ ['Humans', 'developed', 'AI', 'systems', 'introducing', 'every', 'possible', 'intelligence', 'could', ',', 'humans', 'seem', 'threatened', '.']
+
+>> Bigrams are: 
+ [('Humans', 'developed'), ('developed', 'AI'), ('AI', 'systems'), ('systems', 'introducing'), ('introducing', 'every'), ('every', 'possible'), ('possible', 'intelligence'), ('intelligence', 'could'), ('could', ','), (',', 'humans'), ('humans', 'seem'), ('seem', 'threatened'), ('threatened', '.')]
+
+>> Trigrams are: 
+ [('Humans', 'developed', 'AI'), ('developed', 'AI', 'systems'), ('AI', 'systems', 'introducing'), ('systems', 'introducing', 'every'), ('introducing', 'every', 'possible'), ('every', 'possible', 'intelligence'), ('possible', 'intelligence', 'could'), ('intelligence', 'could', ','), ('could', ',', 'humans'), (',', 'humans', 'seem'), ('humans', 'seem', 'threatened'), ('seem', 'threatened', '.')]
+
+>> POS Tags are: 
+ [('Humans', 'NNS'), ('developed', 'VBD'), ('AI', 'NNP'), ('systems', 'NNS'), ('introducing', 'VBG'), ('every', 'DT'), ('possible', 'JJ'), ('intelligence', 'NN'), ('could', 'MD'), (',', ','), ('humans', 'NNS'), ('seem', 'VBP'), ('threatened', 'VBN'), ('.', '.')]
+
+ (S
+  (NP Humans/NNS)
+  developed/VBD
+  (NP AI/NNP systems/NNS)
+  introducing/VBG
+  (NP every/DT possible/JJ intelligence/NN)
+  could/MD
+  ,/,
+  (NP humans/NNS)
+  seem/VBP
+  threatened/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Humans', 'AI systems', 'every possible intelligence', 'humans']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'AI')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Humans', 'human'), ('developed', 'develop'), ('AI', 'ai'), ('systems', 'system'), ('introducing', 'introduc'), ('every', 'everi'), ('possible', 'possibl'), ('intelligence', 'intellig'), ('could', 'could'), (',', ','), ('humans', 'human'), ('seem', 'seem'), ('threatened', 'threaten'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Humans', 'human'), ('developed', 'develop'), ('AI', 'ai'), ('systems', 'system'), ('introducing', 'introduc'), ('every', 'everi'), ('possible', 'possibl'), ('intelligence', 'intellig'), ('could', 'could'), (',', ','), ('humans', 'human'), ('seem', 'seem'), ('threatened', 'threaten'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Humans', 'Humans'), ('developed', 'developed'), ('AI', 'AI'), ('systems', 'system'), ('introducing', 'introducing'), ('every', 'every'), ('possible', 'possible'), ('intelligence', 'intelligence'), ('could', 'could'), (',', ','), ('humans', 'human'), ('seem', 'seem'), ('threatened', 'threatened'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+Threat to Privacy An AI program that recognizes speech and understands natural language is theoretically capable of understanding each conversation on e-mails and telephones. 
+
+
+>> Tokens are: 
+ ['Threat', 'Privacy', 'An', 'AI', 'program', 'recognizes', 'speech', 'understands', 'natural', 'language', 'theoretically', 'capable', 'understanding', 'conversation', 'e-mails', 'telephones', '.']
+
+>> Bigrams are: 
+ [('Threat', 'Privacy'), ('Privacy', 'An'), ('An', 'AI'), ('AI', 'program'), ('program', 'recognizes'), ('recognizes', 'speech'), ('speech', 'understands'), ('understands', 'natural'), ('natural', 'language'), ('language', 'theoretically'), ('theoretically', 'capable'), ('capable', 'understanding'), ('understanding', 'conversation'), ('conversation', 'e-mails'), ('e-mails', 'telephones'), ('telephones', '.')]
+
+>> Trigrams are: 
+ [('Threat', 'Privacy', 'An'), ('Privacy', 'An', 'AI'), ('An', 'AI', 'program'), ('AI', 'program', 'recognizes'), ('program', 'recognizes', 'speech'), ('recognizes', 'speech', 'understands'), ('speech', 'understands', 'natural'), ('understands', 'natural', 'language'), ('natural', 'language', 'theoretically'), ('language', 'theoretically', 'capable'), ('theoretically', 'capable', 'understanding'), ('capable', 'understanding', 'conversation'), ('understanding', 'conversation', 'e-mails'), ('conversation', 'e-mails', 'telephones'), ('e-mails', 'telephones', '.')]
+
+>> POS Tags are: 
+ [('Threat', 'NNP'), ('Privacy', 'NNP'), ('An', 'DT'), ('AI', 'NNP'), ('program', 'NN'), ('recognizes', 'VBZ'), ('speech', 'JJ'), ('understands', 'NNS'), ('natural', 'JJ'), ('language', 'NN'), ('theoretically', 'RB'), ('capable', 'JJ'), ('understanding', 'JJ'), ('conversation', 'NN'), ('e-mails', 'JJ'), ('telephones', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Threat/NNP Privacy/NNP)
+  (NP An/DT AI/NNP program/NN)
+  recognizes/VBZ
+  (NP speech/JJ understands/NNS)
+  (NP natural/JJ language/NN)
+  theoretically/RB
+  (NP capable/JJ understanding/JJ conversation/NN)
+  (NP e-mails/JJ telephones/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Threat Privacy', 'An AI program', 'speech understands', 'natural language', 'capable understanding conversation', 'e-mails telephones']
+
+>> Named Entities are: 
+ [('PERSON', 'Threat')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Threat', 'threat'), ('Privacy', 'privaci'), ('An', 'an'), ('AI', 'ai'), ('program', 'program'), ('recognizes', 'recogn'), ('speech', 'speech'), ('understands', 'understand'), ('natural', 'natur'), ('language', 'languag'), ('theoretically', 'theoret'), ('capable', 'capabl'), ('understanding', 'understand'), ('conversation', 'convers'), ('e-mails', 'e-mail'), ('telephones', 'telephon'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Threat', 'threat'), ('Privacy', 'privaci'), ('An', 'an'), ('AI', 'ai'), ('program', 'program'), ('recognizes', 'recogn'), ('speech', 'speech'), ('understands', 'understand'), ('natural', 'natur'), ('language', 'languag'), ('theoretically', 'theoret'), ('capable', 'capabl'), ('understanding', 'understand'), ('conversation', 'convers'), ('e-mails', 'e-mail'), ('telephones', 'telephon'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Threat', 'Threat'), ('Privacy', 'Privacy'), ('An', 'An'), ('AI', 'AI'), ('program', 'program'), ('recognizes', 'recognizes'), ('speech', 'speech'), ('understands', 'understands'), ('natural', 'natural'), ('language', 'language'), ('theoretically', 'theoretically'), ('capable', 'capable'), ('understanding', 'understanding'), ('conversation', 'conversation'), ('e-mails', 'e-mail'), ('telephones', 'telephone'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+Threat to Human Dignity AI systems have already started replacing the human beings in few industries. 
+
+
+>> Tokens are: 
+ ['Threat', 'Human', 'Dignity', 'AI', 'systems', 'already', 'started', 'replacing', 'human', 'beings', 'industries', '.']
+
+>> Bigrams are: 
+ [('Threat', 'Human'), ('Human', 'Dignity'), ('Dignity', 'AI'), ('AI', 'systems'), ('systems', 'already'), ('already', 'started'), ('started', 'replacing'), ('replacing', 'human'), ('human', 'beings'), ('beings', 'industries'), ('industries', '.')]
+
+>> Trigrams are: 
+ [('Threat', 'Human', 'Dignity'), ('Human', 'Dignity', 'AI'), ('Dignity', 'AI', 'systems'), ('AI', 'systems', 'already'), ('systems', 'already', 'started'), ('already', 'started', 'replacing'), ('started', 'replacing', 'human'), ('replacing', 'human', 'beings'), ('human', 'beings', 'industries'), ('beings', 'industries', '.')]
+
+>> POS Tags are: 
+ [('Threat', 'NNP'), ('Human', 'NNP'), ('Dignity', 'NNP'), ('AI', 'NNP'), ('systems', 'NNS'), ('already', 'RB'), ('started', 'VBD'), ('replacing', 'VBG'), ('human', 'JJ'), ('beings', 'NNS'), ('industries', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Threat/NNP Human/NNP Dignity/NNP AI/NNP systems/NNS)
+  already/RB
+  started/VBD
+  replacing/VBG
+  (NP human/JJ beings/NNS industries/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Threat Human Dignity AI systems', 'human beings industries']
+
+>> Named Entities are: 
+ [('PERSON', 'Threat'), ('PERSON', 'Human Dignity')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Threat', 'threat'), ('Human', 'human'), ('Dignity', 'digniti'), ('AI', 'ai'), ('systems', 'system'), ('already', 'alreadi'), ('started', 'start'), ('replacing', 'replac'), ('human', 'human'), ('beings', 'be'), ('industries', 'industri'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Threat', 'threat'), ('Human', 'human'), ('Dignity', 'digniti'), ('AI', 'ai'), ('systems', 'system'), ('already', 'alreadi'), ('started', 'start'), ('replacing', 'replac'), ('human', 'human'), ('beings', 'be'), ('industries', 'industri'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Threat', 'Threat'), ('Human', 'Human'), ('Dignity', 'Dignity'), ('AI', 'AI'), ('systems', 'system'), ('already', 'already'), ('started', 'started'), ('replacing', 'replacing'), ('human', 'human'), ('beings', 'being'), ('industries', 'industry'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+It should not replace people in the sectors where they are holding dignified positions which are pertaining to ethics such as nursing, surgeon, judge, police officer, etc. 
+
+
+>> Tokens are: 
+ ['It', 'replace', 'people', 'sectors', 'holding', 'dignified', 'positions', 'pertaining', 'ethics', 'nursing', ',', 'surgeon', ',', 'judge', ',', 'police', 'officer', ',', 'etc', '.']
+
+>> Bigrams are: 
+ [('It', 'replace'), ('replace', 'people'), ('people', 'sectors'), ('sectors', 'holding'), ('holding', 'dignified'), ('dignified', 'positions'), ('positions', 'pertaining'), ('pertaining', 'ethics'), ('ethics', 'nursing'), ('nursing', ','), (',', 'surgeon'), ('surgeon', ','), (',', 'judge'), ('judge', ','), (',', 'police'), ('police', 'officer'), ('officer', ','), (',', 'etc'), ('etc', '.')]
+
+>> Trigrams are: 
+ [('It', 'replace', 'people'), ('replace', 'people', 'sectors'), ('people', 'sectors', 'holding'), ('sectors', 'holding', 'dignified'), ('holding', 'dignified', 'positions'), ('dignified', 'positions', 'pertaining'), ('positions', 'pertaining', 'ethics'), ('pertaining', 'ethics', 'nursing'), ('ethics', 'nursing', ','), ('nursing', ',', 'surgeon'), (',', 'surgeon', ','), ('surgeon', ',', 'judge'), (',', 'judge', ','), ('judge', ',', 'police'), (',', 'police', 'officer'), ('police', 'officer', ','), ('officer', ',', 'etc'), (',', 'etc', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('replace', 'VB'), ('people', 'NNS'), ('sectors', 'NNS'), ('holding', 'VBG'), ('dignified', 'JJ'), ('positions', 'NNS'), ('pertaining', 'VBG'), ('ethics', 'NNS'), ('nursing', 'NN'), (',', ','), ('surgeon', 'NN'), (',', ','), ('judge', 'NN'), (',', ','), ('police', 'JJ'), ('officer', 'NN'), (',', ','), ('etc', 'FW'), ('.', '.')]
+
+ (S
+  It/PRP
+  replace/VB
+  (NP people/NNS sectors/NNS)
+  holding/VBG
+  (NP dignified/JJ positions/NNS)
+  pertaining/VBG
+  (NP ethics/NNS nursing/NN)
+  ,/,
+  (NP surgeon/NN)
+  ,/,
+  (NP judge/NN)
+  ,/,
+  (NP police/JJ officer/NN)
+  ,/,
+  etc/FW
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['people sectors', 'dignified positions', 'ethics nursing', 'surgeon', 'judge', 'police officer']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('replace', 'replac'), ('people', 'peopl'), ('sectors', 'sector'), ('holding', 'hold'), ('dignified', 'dignifi'), ('positions', 'posit'), ('pertaining', 'pertain'), ('ethics', 'ethic'), ('nursing', 'nurs'), (',', ','), ('surgeon', 'surgeon'), (',', ','), ('judge', 'judg'), (',', ','), ('police', 'polic'), ('officer', 'offic'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('replace', 'replac'), ('people', 'peopl'), ('sectors', 'sector'), ('holding', 'hold'), ('dignified', 'dignifi'), ('positions', 'posit'), ('pertaining', 'pertain'), ('ethics', 'ethic'), ('nursing', 'nurs'), (',', ','), ('surgeon', 'surgeon'), (',', ','), ('judge', 'judg'), (',', ','), ('police', 'polic'), ('officer', 'offic'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('replace', 'replace'), ('people', 'people'), ('sectors', 'sector'), ('holding', 'holding'), ('dignified', 'dignified'), ('positions', 'position'), ('pertaining', 'pertaining'), ('ethics', 'ethic'), ('nursing', 'nursing'), (',', ','), ('surgeon', 'surgeon'), (',', ','), ('judge', 'judge'), (',', ','), ('police', 'police'), ('officer', 'officer'), (',', ','), ('etc', 'etc'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+Threat to Safety The self-improving AI systems can become so mighty than humans that could be very difficult to stop from achieving their goals, which may lead to unintended consequences. 
+
+
+>> Tokens are: 
+ ['Threat', 'Safety', 'The', 'self-improving', 'AI', 'systems', 'become', 'mighty', 'humans', 'could', 'difficult', 'stop', 'achieving', 'goals', ',', 'may', 'lead', 'unintended', 'consequences', '.']
+
+>> Bigrams are: 
+ [('Threat', 'Safety'), ('Safety', 'The'), ('The', 'self-improving'), ('self-improving', 'AI'), ('AI', 'systems'), ('systems', 'become'), ('become', 'mighty'), ('mighty', 'humans'), ('humans', 'could'), ('could', 'difficult'), ('difficult', 'stop'), ('stop', 'achieving'), ('achieving', 'goals'), ('goals', ','), (',', 'may'), ('may', 'lead'), ('lead', 'unintended'), ('unintended', 'consequences'), ('consequences', '.')]
+
+>> Trigrams are: 
+ [('Threat', 'Safety', 'The'), ('Safety', 'The', 'self-improving'), ('The', 'self-improving', 'AI'), ('self-improving', 'AI', 'systems'), ('AI', 'systems', 'become'), ('systems', 'become', 'mighty'), ('become', 'mighty', 'humans'), ('mighty', 'humans', 'could'), ('humans', 'could', 'difficult'), ('could', 'difficult', 'stop'), ('difficult', 'stop', 'achieving'), ('stop', 'achieving', 'goals'), ('achieving', 'goals', ','), ('goals', ',', 'may'), (',', 'may', 'lead'), ('may', 'lead', 'unintended'), ('lead', 'unintended', 'consequences'), ('unintended', 'consequences', '.')]
+
+>> POS Tags are: 
+ [('Threat', 'NNP'), ('Safety', 'NNP'), ('The', 'DT'), ('self-improving', 'JJ'), ('AI', 'NNP'), ('systems', 'NNS'), ('become', 'VBP'), ('mighty', 'JJ'), ('humans', 'NNS'), ('could', 'MD'), ('difficult', 'JJ'), ('stop', 'VB'), ('achieving', 'VBG'), ('goals', 'NNS'), (',', ','), ('may', 'MD'), ('lead', 'VB'), ('unintended', 'JJ'), ('consequences', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Threat/NNP Safety/NNP)
+  (NP The/DT self-improving/JJ AI/NNP systems/NNS)
+  become/VBP
+  (NP mighty/JJ humans/NNS)
+  could/MD
+  difficult/JJ
+  stop/VB
+  achieving/VBG
+  (NP goals/NNS)
+  ,/,
+  may/MD
+  lead/VB
+  (NP unintended/JJ consequences/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Threat Safety', 'The self-improving AI systems', 'mighty humans', 'goals', 'unintended consequences']
+
+>> Named Entities are: 
+ [('PERSON', 'Threat')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Threat', 'threat'), ('Safety', 'safeti'), ('The', 'the'), ('self-improving', 'self-improv'), ('AI', 'ai'), ('systems', 'system'), ('become', 'becom'), ('mighty', 'mighti'), ('humans', 'human'), ('could', 'could'), ('difficult', 'difficult'), ('stop', 'stop'), ('achieving', 'achiev'), ('goals', 'goal'), (',', ','), ('may', 'may'), ('lead', 'lead'), ('unintended', 'unintend'), ('consequences', 'consequ'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Threat', 'threat'), ('Safety', 'safeti'), ('The', 'the'), ('self-improving', 'self-improv'), ('AI', 'ai'), ('systems', 'system'), ('become', 'becom'), ('mighty', 'mighti'), ('humans', 'human'), ('could', 'could'), ('difficult', 'difficult'), ('stop', 'stop'), ('achieving', 'achiev'), ('goals', 'goal'), (',', ','), ('may', 'may'), ('lead', 'lead'), ('unintended', 'unintend'), ('consequences', 'consequ'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Threat', 'Threat'), ('Safety', 'Safety'), ('The', 'The'), ('self-improving', 'self-improving'), ('AI', 'AI'), ('systems', 'system'), ('become', 'become'), ('mighty', 'mighty'), ('humans', 'human'), ('could', 'could'), ('difficult', 'difficult'), ('stop', 'stop'), ('achieving', 'achieving'), ('goals', 'goal'), (',', ','), ('may', 'may'), ('lead', 'lead'), ('unintended', 'unintended'), ('consequences', 'consequence'), ('.', '.')]
+

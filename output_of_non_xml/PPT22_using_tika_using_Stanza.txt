@@ -1,0 +1,617 @@
+
+
+========================== Sentence 1 ===========================
+
+ OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709)	 Darshan Institute of Engineering & Technology UNIT-10 Web Security      1  Outline Web Security threats and approaches SSL architecture SSL Protocol Transport layer security HTTPS SSH  Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  X.800 and RFC 2828 International Telecommunication Union (ITU) 2  Secure Socket Layer (SSL) Secure Socket Layer (SSL) provides security services between TCP and applications that use TCP. 
+
+Tokens are: 
+>> ['OOPC', '++', 'UNIT', '-1', 'Prof.', 'Rupesh', 'G.', 'Vaishnav', 'rupesh.vaishnav@darshan.ac.in', '94280-37452', 'Information', '&', 'Network', 'Security', '(', '2170709', ')', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', 'UNIT-10', 'Web', 'Security', '1', 'Outline', 'Web', 'Security', 'threats', 'and', 'approaches', 'SSL', 'architecture', 'SSL', 'Protocol', 'Transport', 'layer', 'security', 'HTTPS', 'SSH', 'Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'X.800', 'and', 'RFC', '2828', 'International', 'Telecommunication', 'Union', '(', 'ITU', ')', '2', 'Secure', 'Socket', 'Layer', '(', 'SSL', ')', 'Secure', 'Socket', 'Layer', '(', 'SSL', ')', 'provides', 'security', 'services', 'between', 'TCP', 'and', 'applications', 'that', 'use', 'TCP', '.'] 
+
+ UPOS tags are: 
+>> [('OOPC', 'PROPN'), ('++', 'NUM'), ('UNIT', 'NOUN'), ('-1', 'PUNCT'), ('Prof.', 'PROPN'), ('Rupesh', 'PROPN'), ('G.', 'PROPN'), ('Vaishnav', 'PROPN'), ('rupesh.vaishnav@darshan.ac.in', 'X'), ('94280-37452', 'NUM'), ('Information', 'PROPN'), ('&', 'CCONJ'), ('Network', 'PROPN'), ('Security', 'PROPN'), ('(', 'PUNCT'), ('2170709', 'NUM'), (')', 'PUNCT'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('UNIT-10', 'PROPN'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('1', 'NUM'), ('Outline', 'PROPN'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('threats', 'NOUN'), ('and', 'CCONJ'), ('approaches', 'NOUN'), ('SSL', 'PROPN'), ('architecture', 'NOUN'), ('SSL', 'PROPN'), ('Protocol', 'PROPN'), ('Transport', 'PROPN'), ('layer', 'NOUN'), ('security', 'NOUN'), ('HTTPS', 'PROPN'), ('SSH', 'PROPN'), ('Unit', 'PROPN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'PROPN'), ('X.800', 'PROPN'), ('and', 'CCONJ'), ('RFC', 'PROPN'), ('2828', 'NUM'), ('International', 'ADJ'), ('Telecommunication', 'ADJ'), ('Union', 'PROPN'), ('(', 'PUNCT'), ('ITU', 'PROPN'), (')', 'PUNCT'), ('2', 'NUM'), ('Secure', 'ADJ'), ('Socket', 'PROPN'), ('Layer', 'PROPN'), ('(', 'PUNCT'), ('SSL', 'PROPN'), (')', 'PUNCT'), ('Secure', 'ADJ'), ('Socket', 'PROPN'), ('Layer', 'PROPN'), ('(', 'PUNCT'), ('SSL', 'PROPN'), (')', 'PUNCT'), ('provides', 'VERB'), ('security', 'NOUN'), ('services', 'NOUN'), ('between', 'ADP'), ('TCP', 'PROPN'), ('and', 'CCONJ'), ('applications', 'NOUN'), ('that', 'PRON'), ('use', 'VERB'), ('TCP', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('OOPC', 'NNP'), ('++', 'CD'), ('UNIT', 'NN'), ('-1', ','), ('Prof.', 'NNP'), ('Rupesh', 'NNP'), ('G.', 'NNP'), ('Vaishnav', 'NNP'), ('rupesh.vaishnav@darshan.ac.in', 'ADD'), ('94280-37452', 'CD'), ('Information', 'NNP'), ('&', 'CC'), ('Network', 'NNP'), ('Security', 'NNP'), ('(', '-LRB-'), ('2170709', 'CD'), (')', '-RRB-'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('UNIT-10', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('1', 'CD'), ('Outline', 'NNP'), ('Web', 'NNP'), ('Security', 'NNP'), ('threats', 'NNS'), ('and', 'CC'), ('approaches', 'NNS'), ('SSL', 'NNP'), ('architecture', 'NN'), ('SSL', 'NNP'), ('Protocol', 'NNP'), ('Transport', 'NNP'), ('layer', 'NN'), ('security', 'NN'), ('HTTPS', 'NNP'), ('SSH', 'NNP'), ('Unit', 'NNP'), ('-', ','), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NNP'), ('X.800', 'NNP'), ('and', 'CC'), ('RFC', 'NNP'), ('2828', 'CD'), ('International', 'NNP'), ('Telecommunication', 'NNP'), ('Union', 'NNP'), ('(', '-LRB-'), ('ITU', 'NNP'), (')', '-RRB-'), ('2', 'CD'), ('Secure', 'NNP'), ('Socket', 'NNP'), ('Layer', 'NNP'), ('(', '-LRB-'), ('SSL', 'NNP'), (')', '-RRB-'), ('Secure', 'NNP'), ('Socket', 'NNP'), ('Layer', 'NNP'), ('(', '-LRB-'), ('SSL', 'NNP'), (')', '-RRB-'), ('provides', 'VBZ'), ('security', 'NN'), ('services', 'NNS'), ('between', 'IN'), ('TCP', 'NNP'), ('and', 'CC'), ('applications', 'NNS'), ('that', 'WDT'), ('use', 'VBP'), ('TCP', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('OOPC', 'OOPC'), ('++', '++'), ('UNIT', 'unit'), ('-1', '-1'), ('Prof.', 'Prof.'), ('Rupesh', 'Rupesh'), ('G.', 'G.'), ('Vaishnav', 'Vaishnav'), ('rupesh.vaishnav@darshan.ac.in', 'rupesh.vaishnav@darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'Information'), ('&', '&'), ('Network', 'Network'), ('Security', 'Security'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('UNIT-10', 'UNIT-10'), ('Web', 'Web'), ('Security', 'Security'), ('1', '1'), ('Outline', 'Outline'), ('Web', 'Web'), ('Security', 'Security'), ('threats', 'threat'), ('and', 'and'), ('approaches', 'approach'), ('SSL', 'SSL'), ('architecture', 'architecture'), ('SSL', 'SSL'), ('Protocol', 'Protocol'), ('Transport', 'Transport'), ('layer', 'layer'), ('security', 'security'), ('HTTPS', 'HTTPS'), ('SSH', 'SSH'), ('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('X.800', 'X.800'), ('and', 'and'), ('RFC', 'RFC'), ('2828', '2828'), ('International', 'International'), ('Telecommunication', 'Telecommunication'), ('Union', 'Union'), ('(', '('), ('ITU', 'ITU'), (')', ')'), ('2', '2'), ('Secure', 'secure'), ('Socket', 'Socket'), ('Layer', 'Layer'), ('(', '('), ('SSL', 'SSL'), (')', ')'), ('Secure', 'secure'), ('Socket', 'Socket'), ('Layer', 'Layer'), ('(', '('), ('SSL', 'SSL'), (')', ')'), ('provides', 'provide'), ('security', 'security'), ('services', 'service'), ('between', 'between'), ('TCP', 'TCP'), ('and', 'and'), ('applications', 'application'), ('that', 'that'), ('use', 'use'), ('TCP', 'TCP'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('OOPC', 'root'), 'root'), (('++', 'UNIT'), 'nummod'), (('UNIT', 'OOPC'), 'appos'), (('-1', 'Prof.'), 'punct'), (('Prof.', 'UNIT'), 'appos'), (('Rupesh', 'Prof.'), 'flat'), (('G.', 'Prof.'), 'flat'), (('Vaishnav', 'Prof.'), 'flat'), (('rupesh.vaishnav@darshan.ac.in', 'Prof.'), 'flat'), (('94280-37452', 'Prof.'), 'flat'), (('Information', 'Security'), 'compound'), (('&', 'Network'), 'cc'), (('Network', 'Information'), 'conj'), (('Security', 'Institute'), 'compound'), (('(', '2170709'), 'punct'), (('2170709', 'Security'), 'appos'), ((')', '2170709'), 'punct'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'OOPC'), 'appos'), (('of', 'Security'), 'case'), (('Engineering', 'UNIT-10'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('UNIT-10', 'Security'), 'compound'), (('Web', 'Security'), 'compound'), (('Security', 'threats'), 'compound'), (('1', 'threats'), 'nummod'), (('Outline', 'threats'), 'compound'), (('Web', 'Security'), 'compound'), (('Security', 'threats'), 'compound'), (('threats', 'Institute'), 'conj'), (('and', 'approaches'), 'cc'), (('approaches', 'threats'), 'conj'), (('SSL', 'architecture'), 'compound'), (('architecture', 'Protocol'), 'compound'), (('SSL', 'Protocol'), 'compound'), (('Protocol', 'threats'), 'compound'), (('Transport', 'security'), 'compound'), (('layer', 'security'), 'compound'), (('security', 'Unit'), 'compound'), (('HTTPS', 'Unit'), 'compound'), (('SSH', 'Unit'), 'compound'), (('Unit', 'Prof.'), 'conj'), (('-', 'OOPC'), 'punct'), (('10', 'Institute'), 'nummod'), (('Web', 'Security'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Prof.'), 'conj'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'X.800'), 'conj'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'OOPC'), 'parataxis'), (('X.800', 'Subject'), 'flat'), (('and', 'RFC'), 'cc'), (('RFC', 'Union'), 'compound'), (('2828', 'Union'), 'nummod'), (('International', 'Union'), 'amod'), (('Telecommunication', 'Union'), 'amod'), (('Union', 'X.800'), 'conj'), (('(', 'ITU'), 'punct'), (('ITU', 'Union'), 'appos'), ((')', 'ITU'), 'punct'), (('2', 'Layer'), 'nummod'), (('Secure', 'Layer'), 'amod'), (('Socket', 'Layer'), 'compound'), (('Layer', 'Union'), 'appos'), (('(', 'SSL'), 'punct'), (('SSL', 'Layer'), 'appos'), ((')', 'SSL'), 'punct'), (('Secure', 'Layer'), 'amod'), (('Socket', 'Layer'), 'compound'), (('Layer', 'Layer'), 'appos'), (('(', 'SSL'), 'punct'), (('SSL', 'Layer'), 'appos'), ((')', 'SSL'), 'punct'), (('provides', 'Subject'), 'parataxis'), (('security', 'services'), 'compound'), (('services', 'provides'), 'obj'), (('between', 'TCP'), 'case'), (('TCP', 'services'), 'nmod'), (('and', 'applications'), 'cc'), (('applications', 'TCP'), 'conj'), (('that', 'use'), 'nsubj'), (('use', 'TCP'), 'acl:relcl'), (('TCP', 'use'), 'obj'), (('.', 'OOPC'), 'punct')]
+
+ Named Entities are: 
+>> [('Rupesh G. Vaishnav', 'PERSON'), ('94280-37452 Information & Network Security', 'ORG'), ('2170709', 'CARDINAL'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('Web Security      1  Outline Web Security', 'ORG'), ('INS', 'ORG'), ('RFC 2828 International Telecommunication Union', 'ORG'), ('2', 'CARDINAL'), ('TCP', 'ORG')]
+
+========================== Sentence 2 ===========================
+
+ The Internet standard version is called Transport Layer Service (TLS). 
+
+Tokens are: 
+>> ['The', 'Internet', 'standard', 'version', 'is', 'called', 'Transport', 'Layer', 'Service', '(', 'TLS', ')', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('Internet', 'PROPN'), ('standard', 'ADJ'), ('version', 'NOUN'), ('is', 'AUX'), ('called', 'VERB'), ('Transport', 'PROPN'), ('Layer', 'PROPN'), ('Service', 'PROPN'), ('(', 'PUNCT'), ('TLS', 'PROPN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('Internet', 'NNP'), ('standard', 'JJ'), ('version', 'NN'), ('is', 'VBZ'), ('called', 'VBN'), ('Transport', 'NNP'), ('Layer', 'NNP'), ('Service', 'NNP'), ('(', '-LRB-'), ('TLS', 'NNP'), (')', '-RRB-'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('Internet', 'Internet'), ('standard', 'standard'), ('version', 'version'), ('is', 'be'), ('called', 'call'), ('Transport', 'Transport'), ('Layer', 'Layer'), ('Service', 'Service'), ('(', '('), ('TLS', 'TLS'), (')', ')'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'version'), 'det'), (('Internet', 'version'), 'compound'), (('standard', 'version'), 'amod'), (('version', 'called'), 'nsubj:pass'), (('is', 'called'), 'aux:pass'), (('called', 'root'), 'root'), (('Transport', 'Service'), 'compound'), (('Layer', 'Service'), 'compound'), (('Service', 'called'), 'obj'), (('(', 'TLS'), 'punct'), (('TLS', 'Service'), 'appos'), ((')', 'TLS'), 'punct'), (('.', 'called'), 'punct')]
+
+ Named Entities are: 
+>> [('Transport Layer Service', 'ORG'), ('TLS', 'ORG')]
+
+========================== Sentence 3 ===========================
+
+ SSL/TLS provides confidentiality using symmetric encryption and message integrity using a message authentication code. 
+
+Tokens are: 
+>> ['SSL', '/', 'TLS', 'provides', 'confidentiality', 'using', 'symmetric', 'encryption', 'and', 'message', 'integrity', 'using', 'a', 'message', 'authentication', 'code', '.'] 
+
+ UPOS tags are: 
+>> [('SSL', 'PROPN'), ('/', 'SYM'), ('TLS', 'PROPN'), ('provides', 'VERB'), ('confidentiality', 'NOUN'), ('using', 'VERB'), ('symmetric', 'ADJ'), ('encryption', 'NOUN'), ('and', 'CCONJ'), ('message', 'NOUN'), ('integrity', 'NOUN'), ('using', 'VERB'), ('a', 'DET'), ('message', 'NOUN'), ('authentication', 'NOUN'), ('code', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('SSL', 'NNP'), ('/', ','), ('TLS', 'NNP'), ('provides', 'VBZ'), ('confidentiality', 'NN'), ('using', 'VBG'), ('symmetric', 'JJ'), ('encryption', 'NN'), ('and', 'CC'), ('message', 'NN'), ('integrity', 'NN'), ('using', 'VBG'), ('a', 'DT'), ('message', 'NN'), ('authentication', 'NN'), ('code', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('SSL', 'SSL'), ('/', '/'), ('TLS', 'TLS'), ('provides', 'provide'), ('confidentiality', 'confidentiality'), ('using', 'use'), ('symmetric', 'symmetric'), ('encryption', 'encryption'), ('and', 'and'), ('message', 'message'), ('integrity', 'integrity'), ('using', 'use'), ('a', 'a'), ('message', 'message'), ('authentication', 'authentication'), ('code', 'code'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('SSL', 'provides'), 'nsubj'), (('/', 'TLS'), 'cc'), (('TLS', 'SSL'), 'conj'), (('provides', 'root'), 'root'), (('confidentiality', 'provides'), 'obj'), (('using', 'confidentiality'), 'acl'), (('symmetric', 'encryption'), 'amod'), (('encryption', 'using'), 'obj'), (('and', 'integrity'), 'cc'), (('message', 'integrity'), 'compound'), (('integrity', 'encryption'), 'conj'), (('using', 'using'), 'advcl'), (('a', 'code'), 'det'), (('message', 'code'), 'compound'), (('authentication', 'code'), 'compound'), (('code', 'using'), 'obj'), (('.', 'provides'), 'punct')]
+
+ Named Entities are: 
+>> [('SSL/TLS', 'ORG')]
+
+========================== Sentence 4 ===========================
+
+ SSL/TLS includes protocol mechanisms to enable two TCP users to determine the security mechanisms and services they will use. 
+
+Tokens are: 
+>> ['SSL', '/', 'TLS', 'includes', 'protocol', 'mechanisms', 'to', 'enable', 'two', 'TCP', 'users', 'to', 'determine', 'the', 'security', 'mechanisms', 'and', 'services', 'they', 'will', 'use', '.'] 
+
+ UPOS tags are: 
+>> [('SSL', 'PROPN'), ('/', 'SYM'), ('TLS', 'PROPN'), ('includes', 'VERB'), ('protocol', 'NOUN'), ('mechanisms', 'NOUN'), ('to', 'PART'), ('enable', 'VERB'), ('two', 'NUM'), ('TCP', 'NOUN'), ('users', 'NOUN'), ('to', 'PART'), ('determine', 'VERB'), ('the', 'DET'), ('security', 'NOUN'), ('mechanisms', 'NOUN'), ('and', 'CCONJ'), ('services', 'NOUN'), ('they', 'PRON'), ('will', 'AUX'), ('use', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('SSL', 'NNP'), ('/', ','), ('TLS', 'NNP'), ('includes', 'VBZ'), ('protocol', 'NN'), ('mechanisms', 'NNS'), ('to', 'TO'), ('enable', 'VB'), ('two', 'CD'), ('TCP', 'NN'), ('users', 'NNS'), ('to', 'TO'), ('determine', 'VB'), ('the', 'DT'), ('security', 'NN'), ('mechanisms', 'NNS'), ('and', 'CC'), ('services', 'NNS'), ('they', 'PRP'), ('will', 'MD'), ('use', 'VB'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('SSL', 'SSL'), ('/', '/'), ('TLS', 'TLS'), ('includes', 'include'), ('protocol', 'protocol'), ('mechanisms', 'mechanism'), ('to', 'to'), ('enable', 'enable'), ('two', 'two'), ('TCP', 'tcp'), ('users', 'user'), ('to', 'to'), ('determine', 'determine'), ('the', 'the'), ('security', 'security'), ('mechanisms', 'mechanism'), ('and', 'and'), ('services', 'service'), ('they', 'they'), ('will', 'will'), ('use', 'use'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('SSL', 'includes'), 'nsubj'), (('/', 'TLS'), 'cc'), (('TLS', 'SSL'), 'conj'), (('includes', 'root'), 'root'), (('protocol', 'mechanisms'), 'compound'), (('mechanisms', 'includes'), 'obj'), (('to', 'enable'), 'mark'), (('enable', 'mechanisms'), 'acl'), (('two', 'users'), 'nummod'), (('TCP', 'users'), 'compound'), (('users', 'enable'), 'obj'), (('to', 'determine'), 'mark'), (('determine', 'enable'), 'advcl'), (('the', 'mechanisms'), 'det'), (('security', 'mechanisms'), 'compound'), (('mechanisms', 'determine'), 'obj'), (('and', 'services'), 'cc'), (('services', 'mechanisms'), 'conj'), (('they', 'use'), 'nsubj'), (('will', 'use'), 'aux'), (('use', 'mechanisms'), 'acl:relcl'), (('.', 'includes'), 'punct')]
+
+ Named Entities are: 
+>> [('SSL/TLS', 'ORG'), ('two', 'CARDINAL'), ('TCP', 'ORG')]
+
+========================== Sentence 5 ===========================
+
+ SSL is designed to make use of TCP to provide a reliable end-to-end secure service. 
+
+Tokens are: 
+>> ['SSL', 'is', 'designed', 'to', 'make', 'use', 'of', 'TCP', 'to', 'provide', 'a', 'reliable', 'end', '-', 'to', '-', 'end', 'secure', 'service', '.'] 
+
+ UPOS tags are: 
+>> [('SSL', 'PROPN'), ('is', 'AUX'), ('designed', 'VERB'), ('to', 'PART'), ('make', 'VERB'), ('use', 'NOUN'), ('of', 'ADP'), ('TCP', 'PROPN'), ('to', 'PART'), ('provide', 'VERB'), ('a', 'DET'), ('reliable', 'ADJ'), ('end', 'NOUN'), ('-', 'PUNCT'), ('to', 'ADP'), ('-', 'PUNCT'), ('end', 'NOUN'), ('secure', 'ADJ'), ('service', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('SSL', 'NNP'), ('is', 'VBZ'), ('designed', 'VBN'), ('to', 'TO'), ('make', 'VB'), ('use', 'NN'), ('of', 'IN'), ('TCP', 'NNP'), ('to', 'TO'), ('provide', 'VB'), ('a', 'DT'), ('reliable', 'JJ'), ('end', 'NN'), ('-', 'HYPH'), ('to', 'IN'), ('-', 'HYPH'), ('end', 'NN'), ('secure', 'JJ'), ('service', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('SSL', 'SSL'), ('is', 'be'), ('designed', 'design'), ('to', 'to'), ('make', 'make'), ('use', 'use'), ('of', 'of'), ('TCP', 'TCP'), ('to', 'to'), ('provide', 'provide'), ('a', 'a'), ('reliable', 'reliable'), ('end', 'end'), ('-', '-'), ('to', 'to'), ('-', '-'), ('end', 'end'), ('secure', 'secure'), ('service', 'service'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('SSL', 'designed'), 'nsubj:pass'), (('is', 'designed'), 'aux:pass'), (('designed', 'root'), 'root'), (('to', 'make'), 'mark'), (('make', 'designed'), 'xcomp'), (('use', 'make'), 'obj'), (('of', 'TCP'), 'case'), (('TCP', 'use'), 'nmod'), (('to', 'provide'), 'mark'), (('provide', 'make'), 'advcl'), (('a', 'service'), 'det'), (('reliable', 'service'), 'amod'), (('end', 'service'), 'compound'), (('-', 'end'), 'punct'), (('to', 'end'), 'case'), (('-', 'end'), 'punct'), (('end', 'service'), 'compound'), (('secure', 'service'), 'amod'), (('service', 'provide'), 'obj'), (('.', 'designed'), 'punct')]
+
+ Named Entities are: 
+>> [('TCP', 'ORG')]
+
+========================== Sentence 6 ===========================
+
+ Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Relative Location of Security Facilities in the TCP/IP Protocol Stack     Secure Socket Layer (SSL) Architecture     Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Four SSL Protocols    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSL Record Protocol 
+
+Tokens are: 
+>> ['Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Relative', 'Location', 'of', 'Security', 'Facilities', 'in', 'the', 'TCP', '/', 'IP', 'Protocol', 'Stack', 'Secure', 'Socket', 'Layer', '(', 'SSL', ')', 'Architecture', 'Unit', '-10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Four', 'SSL', 'Protocols', 'Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'SSL', 'Record', 'Protocol'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Relative', 'ADJ'), ('Location', 'NOUN'), ('of', 'ADP'), ('Security', 'PROPN'), ('Facilities', 'PROPN'), ('in', 'ADP'), ('the', 'DET'), ('TCP', 'PROPN'), ('/', 'PUNCT'), ('IP', 'PROPN'), ('Protocol', 'PROPN'), ('Stack', 'PROPN'), ('Secure', 'ADJ'), ('Socket', 'PROPN'), ('Layer', 'PROPN'), ('(', 'PUNCT'), ('SSL', 'PROPN'), (')', 'PUNCT'), ('Architecture', 'NOUN'), ('Unit', 'PROPN'), ('-10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Four', 'NUM'), ('SSL', 'PROPN'), ('Protocols', 'NOUN'), ('Unit', 'NOUN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('SSL', 'PROPN'), ('Record', 'NOUN'), ('Protocol', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-', ','), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Relative', 'JJ'), ('Location', 'NN'), ('of', 'IN'), ('Security', 'NNP'), ('Facilities', 'NNPS'), ('in', 'IN'), ('the', 'DT'), ('TCP', 'NNP'), ('/', ','), ('IP', 'NNP'), ('Protocol', 'NNP'), ('Stack', 'NNP'), ('Secure', 'NNP'), ('Socket', 'NNP'), ('Layer', 'NNP'), ('(', '-LRB-'), ('SSL', 'NNP'), (')', '-RRB-'), ('Architecture', 'NN'), ('Unit', 'NNP'), ('-10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Four', 'CD'), ('SSL', 'NNP'), ('Protocols', 'NNS'), ('Unit', 'NN'), ('-', ','), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('SSL', 'NNP'), ('Record', 'NN'), ('Protocol', 'NN')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Relative', 'relative'), ('Location', 'location'), ('of', 'of'), ('Security', 'Security'), ('Facilities', 'Facility'), ('in', 'in'), ('the', 'the'), ('TCP', 'TCP'), ('/', '/'), ('IP', 'IP'), ('Protocol', 'Protocol'), ('Stack', 'Stack'), ('Secure', 'secure'), ('Socket', 'Socket'), ('Layer', 'Layer'), ('(', '('), ('SSL', 'SSL'), (')', ')'), ('Architecture', 'Architecture'), ('Unit', 'unit'), ('-10', '-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Four', 'four'), ('SSL', 'SSL'), ('Protocols', 'protocol'), ('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('SSL', 'SSL'), ('Record', 'record'), ('Protocol', 'protocol')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'root'), 'root'), (('-', 'Unit'), 'punct'), (('10', 'Institute'), 'nummod'), (('Web', 'Security'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Location'), 'nsubj'), (('of', '‹#›'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Location'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Location'), 'amod'), (('Subject', 'Location'), 'compound'), (('Relative', 'Location'), 'amod'), (('Location', 'Unit'), 'appos'), (('of', 'Facilities'), 'case'), (('Security', 'Facilities'), 'compound'), (('Facilities', 'Location'), 'nmod'), (('in', 'Layer'), 'case'), (('the', 'Layer'), 'det'), (('TCP', 'Layer'), 'compound'), (('/', 'IP'), 'cc'), (('IP', 'TCP'), 'conj'), (('Protocol', 'Layer'), 'compound'), (('Stack', 'Layer'), 'compound'), (('Secure', 'Layer'), 'amod'), (('Socket', 'Layer'), 'compound'), (('Layer', 'Unit'), 'compound'), (('(', 'SSL'), 'punct'), (('SSL', 'Layer'), 'appos'), ((')', 'SSL'), 'punct'), (('Architecture', 'Unit'), 'compound'), (('Unit', 'Institute'), 'compound'), (('-10', 'Institute'), 'nummod'), (('Web', 'Institute'), 'compound'), (('Security', 'Darshan'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Location'), 'conj'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Subject'), 'nsubj'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'Unit'), 'appos'), (('Four', 'Unit'), 'nummod'), (('SSL', 'Unit'), 'compound'), (('Protocols', 'Unit'), 'compound'), (('Unit', 'Subject'), 'conj'), (('-', 'Subject'), 'punct'), (('10', 'Institute'), 'nummod'), (('Web', 'Security'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Protocol'), 'nsubj'), (('is', 'Protocol'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Protocol'), 'amod'), (('Subject', 'Protocol'), 'compound'), (('SSL', 'Protocol'), 'compound'), (('Record', 'Protocol'), 'compound'), (('Protocol', 'Unit'), 'parataxis')]
+
+ Named Entities are: 
+>> [('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('Interesting Subject  Relative Location of Security Facilities', 'FAC'), ('INS', 'ORG'), ('Four', 'CARDINAL')]
+
+========================== Sentence 7 ===========================
+
+ It provides two services for SSL connections Confidentiality: The Handshake Protocol defines a shared secret key that is  used for conventional encryption of SSL payloads. 
+
+Tokens are: 
+>> ['It', 'provides', 'two', 'services', 'for', 'SSL', 'connections', 'Confidentiality', ':', 'The', 'Handshake', 'Protocol', 'defines', 'a', 'shared', 'secret', 'key', 'that', 'is', 'used', 'for', 'conventional', 'encryption', 'of', 'SSL', 'payloads', '.'] 
+
+ UPOS tags are: 
+>> [('It', 'PRON'), ('provides', 'VERB'), ('two', 'NUM'), ('services', 'NOUN'), ('for', 'ADP'), ('SSL', 'PROPN'), ('connections', 'NOUN'), ('Confidentiality', 'NOUN'), (':', 'PUNCT'), ('The', 'DET'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('defines', 'VERB'), ('a', 'DET'), ('shared', 'VERB'), ('secret', 'ADJ'), ('key', 'NOUN'), ('that', 'PRON'), ('is', 'AUX'), ('used', 'VERB'), ('for', 'ADP'), ('conventional', 'ADJ'), ('encryption', 'NOUN'), ('of', 'ADP'), ('SSL', 'PROPN'), ('payloads', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('It', 'PRP'), ('provides', 'VBZ'), ('two', 'CD'), ('services', 'NNS'), ('for', 'IN'), ('SSL', 'NNP'), ('connections', 'NNS'), ('Confidentiality', 'NN'), (':', ':'), ('The', 'DT'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('defines', 'VBZ'), ('a', 'DT'), ('shared', 'VBN'), ('secret', 'JJ'), ('key', 'NN'), ('that', 'WDT'), ('is', 'VBZ'), ('used', 'VBN'), ('for', 'IN'), ('conventional', 'JJ'), ('encryption', 'NN'), ('of', 'IN'), ('SSL', 'NNP'), ('payloads', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('It', 'it'), ('provides', 'provide'), ('two', 'two'), ('services', 'service'), ('for', 'for'), ('SSL', 'SSL'), ('connections', 'connection'), ('Confidentiality', 'confidentiality'), (':', ':'), ('The', 'the'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('defines', 'define'), ('a', 'a'), ('shared', 'share'), ('secret', 'secret'), ('key', 'key'), ('that', 'that'), ('is', 'be'), ('used', 'use'), ('for', 'for'), ('conventional', 'conventional'), ('encryption', 'encryption'), ('of', 'of'), ('SSL', 'SSL'), ('payloads', 'payload'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('It', 'provides'), 'nsubj'), (('provides', 'root'), 'root'), (('two', 'services'), 'nummod'), (('services', 'provides'), 'obj'), (('for', 'connections'), 'case'), (('SSL', 'connections'), 'compound'), (('connections', 'services'), 'nmod'), (('Confidentiality', 'connections'), 'appos'), ((':', 'provides'), 'punct'), (('The', 'Protocol'), 'det'), (('Handshake', 'Protocol'), 'compound'), (('Protocol', 'defines'), 'nsubj'), (('defines', 'provides'), 'parataxis'), (('a', 'key'), 'det'), (('shared', 'key'), 'amod'), (('secret', 'key'), 'amod'), (('key', 'defines'), 'obj'), (('that', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'key'), 'acl:relcl'), (('for', 'encryption'), 'case'), (('conventional', 'encryption'), 'amod'), (('encryption', 'used'), 'obl'), (('of', 'payloads'), 'case'), (('SSL', 'payloads'), 'compound'), (('payloads', 'encryption'), 'nmod'), (('.', 'provides'), 'punct')]
+
+ Named Entities are: 
+>> [('two', 'CARDINAL'), ('The Handshake Protocol', 'LAW')]
+
+========================== Sentence 8 ===========================
+
+ Message Integrity: The Handshake Protocol also defines a shared secret key  that is used to form a message authentication code (MAC). 
+
+Tokens are: 
+>> ['Message', 'Integrity', ':', 'The', 'Handshake', 'Protocol', 'also', 'defines', 'a', 'shared', 'secret', 'key', 'that', 'is', 'used', 'to', 'form', 'a', 'message', 'authentication', 'code', '(', 'MAC', ')', '.'] 
+
+ UPOS tags are: 
+>> [('Message', 'NOUN'), ('Integrity', 'NOUN'), (':', 'PUNCT'), ('The', 'DET'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('also', 'ADV'), ('defines', 'VERB'), ('a', 'DET'), ('shared', 'VERB'), ('secret', 'ADJ'), ('key', 'NOUN'), ('that', 'PRON'), ('is', 'AUX'), ('used', 'VERB'), ('to', 'PART'), ('form', 'VERB'), ('a', 'DET'), ('message', 'NOUN'), ('authentication', 'NOUN'), ('code', 'NOUN'), ('(', 'PUNCT'), ('MAC', 'PROPN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Message', 'NN'), ('Integrity', 'NN'), (':', ':'), ('The', 'DT'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('also', 'RB'), ('defines', 'VBZ'), ('a', 'DT'), ('shared', 'VBN'), ('secret', 'JJ'), ('key', 'NN'), ('that', 'WDT'), ('is', 'VBZ'), ('used', 'VBN'), ('to', 'TO'), ('form', 'VB'), ('a', 'DT'), ('message', 'NN'), ('authentication', 'NN'), ('code', 'NN'), ('(', '-LRB-'), ('MAC', 'NNP'), (')', '-RRB-'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Message', 'message'), ('Integrity', 'integrity'), (':', ':'), ('The', 'the'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('also', 'also'), ('defines', 'define'), ('a', 'a'), ('shared', 'share'), ('secret', 'secret'), ('key', 'key'), ('that', 'that'), ('is', 'be'), ('used', 'use'), ('to', 'to'), ('form', 'form'), ('a', 'a'), ('message', 'message'), ('authentication', 'authentication'), ('code', 'code'), ('(', '('), ('MAC', 'MAC'), (')', ')'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Message', 'Integrity'), 'compound'), (('Integrity', 'root'), 'root'), ((':', 'Integrity'), 'punct'), (('The', 'Protocol'), 'det'), (('Handshake', 'Protocol'), 'compound'), (('Protocol', 'defines'), 'nsubj'), (('also', 'defines'), 'advmod'), (('defines', 'Integrity'), 'appos'), (('a', 'key'), 'det'), (('shared', 'key'), 'amod'), (('secret', 'key'), 'amod'), (('key', 'defines'), 'obj'), (('that', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'key'), 'acl:relcl'), (('to', 'form'), 'mark'), (('form', 'used'), 'xcomp'), (('a', 'code'), 'det'), (('message', 'code'), 'compound'), (('authentication', 'code'), 'compound'), (('code', 'form'), 'obj'), (('(', 'MAC'), 'punct'), (('MAC', 'code'), 'appos'), ((')', 'MAC'), 'punct'), (('.', 'Integrity'), 'punct')]
+
+ Named Entities are: 
+>> [('The Handshake Protocol', 'LAW'), ('MAC', 'ORG')]
+
+========================== Sentence 9 ===========================
+
+ Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSL Record Protocol – Cont… 
+
+Tokens are: 
+>> ['Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'SSL', 'Record', 'Protocol', '–', 'Cont', '…'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('SSL', 'PROPN'), ('Record', 'NOUN'), ('Protocol', 'NOUN'), ('–', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-', 'HYPH'), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('SSL', 'NNP'), ('Record', 'NN'), ('Protocol', 'NN'), ('–', ','), ('Cont', 'NN'), ('…', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('SSL', 'SSL'), ('Record', 'record'), ('Protocol', 'protocol'), ('–', '-'), ('Cont', 'cont'), ('…', '…')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-', 'Unit'), 'punct'), (('10', 'Unit'), 'nummod'), (('Web', 'Institute'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Subject'), 'nsubj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'root'), 'root'), (('SSL', 'Protocol'), 'compound'), (('Record', 'Protocol'), 'compound'), (('Protocol', 'Subject'), 'appos'), (('–', 'Protocol'), 'punct'), (('Cont', 'Protocol'), 'appos'), (('…', 'Subject'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG')]
+
+========================== Sentence 10 ===========================
+
+ The Record Protocol takes an application message to be transmitted, fragments the data into manageable blocks, optionally compresses the data, applies a MAC, encrypts, adds a header, and transmits the resulting unit in a TCP segment. 
+
+Tokens are: 
+>> ['The', 'Record', 'Protocol', 'takes', 'an', 'application', 'message', 'to', 'be', 'transmitted', ',', 'fragments', 'the', 'data', 'into', 'manageable', 'blocks', ',', 'optionally', 'compresses', 'the', 'data', ',', 'applies', 'a', 'MAC', ',', 'encrypts', ',', 'adds', 'a', 'header', ',', 'and', 'transmits', 'the', 'resulting', 'unit', 'in', 'a', 'TCP', 'segment', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('Record', 'PROPN'), ('Protocol', 'PROPN'), ('takes', 'VERB'), ('an', 'DET'), ('application', 'NOUN'), ('message', 'NOUN'), ('to', 'PART'), ('be', 'AUX'), ('transmitted', 'VERB'), (',', 'PUNCT'), ('fragments', 'NOUN'), ('the', 'DET'), ('data', 'NOUN'), ('into', 'ADP'), ('manageable', 'ADJ'), ('blocks', 'NOUN'), (',', 'PUNCT'), ('optionally', 'ADV'), ('compresses', 'VERB'), ('the', 'DET'), ('data', 'NOUN'), (',', 'PUNCT'), ('applies', 'VERB'), ('a', 'DET'), ('MAC', 'PROPN'), (',', 'PUNCT'), ('encrypts', 'VERB'), (',', 'PUNCT'), ('adds', 'VERB'), ('a', 'DET'), ('header', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('transmits', 'VERB'), ('the', 'DET'), ('resulting', 'VERB'), ('unit', 'NOUN'), ('in', 'ADP'), ('a', 'DET'), ('TCP', 'PROPN'), ('segment', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('Record', 'NNP'), ('Protocol', 'NNP'), ('takes', 'VBZ'), ('an', 'DT'), ('application', 'NN'), ('message', 'NN'), ('to', 'TO'), ('be', 'VB'), ('transmitted', 'VBN'), (',', ','), ('fragments', 'NNS'), ('the', 'DT'), ('data', 'NNS'), ('into', 'IN'), ('manageable', 'JJ'), ('blocks', 'NNS'), (',', ','), ('optionally', 'RB'), ('compresses', 'VBZ'), ('the', 'DT'), ('data', 'NN'), (',', ','), ('applies', 'VBZ'), ('a', 'DT'), ('MAC', 'NNP'), (',', ','), ('encrypts', 'VBZ'), (',', ','), ('adds', 'VBZ'), ('a', 'DT'), ('header', 'NN'), (',', ','), ('and', 'CC'), ('transmits', 'VBZ'), ('the', 'DT'), ('resulting', 'VBG'), ('unit', 'NN'), ('in', 'IN'), ('a', 'DT'), ('TCP', 'NNP'), ('segment', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('Record', 'Record'), ('Protocol', 'Protocol'), ('takes', 'take'), ('an', 'a'), ('application', 'application'), ('message', 'message'), ('to', 'to'), ('be', 'be'), ('transmitted', 'transmit'), (',', ','), ('fragments', 'fragment'), ('the', 'the'), ('data', 'datum'), ('into', 'into'), ('manageable', 'manageable'), ('blocks', 'block'), (',', ','), ('optionally', 'optionally'), ('compresses', 'compress'), ('the', 'the'), ('data', 'datum'), (',', ','), ('applies', 'apply'), ('a', 'a'), ('MAC', 'MAC'), (',', ','), ('encrypts', 'encrypt'), (',', ','), ('adds', 'add'), ('a', 'a'), ('header', 'header'), (',', ','), ('and', 'and'), ('transmits', 'transmit'), ('the', 'the'), ('resulting', 'result'), ('unit', 'unit'), ('in', 'in'), ('a', 'a'), ('TCP', 'TCP'), ('segment', 'segment'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'Protocol'), 'det'), (('Record', 'Protocol'), 'compound'), (('Protocol', 'takes'), 'nsubj'), (('takes', 'root'), 'root'), (('an', 'message'), 'det'), (('application', 'message'), 'compound'), (('message', 'takes'), 'obj'), (('to', 'transmitted'), 'mark'), (('be', 'transmitted'), 'aux:pass'), (('transmitted', 'takes'), 'xcomp'), ((',', 'fragments'), 'punct'), (('fragments', 'transmitted'), 'conj'), (('the', 'data'), 'det'), (('data', 'fragments'), 'appos'), (('into', 'blocks'), 'case'), (('manageable', 'blocks'), 'amod'), (('blocks', 'data'), 'nmod'), ((',', 'compresses'), 'punct'), (('optionally', 'compresses'), 'advmod'), (('compresses', 'takes'), 'conj'), (('the', 'data'), 'det'), (('data', 'compresses'), 'obj'), ((',', 'applies'), 'punct'), (('applies', 'takes'), 'conj'), (('a', 'MAC'), 'det'), (('MAC', 'applies'), 'obj'), ((',', 'encrypts'), 'punct'), (('encrypts', 'applies'), 'conj'), ((',', 'adds'), 'punct'), (('adds', 'takes'), 'conj'), (('a', 'header'), 'det'), (('header', 'adds'), 'obj'), ((',', 'transmits'), 'punct'), (('and', 'transmits'), 'cc'), (('transmits', 'adds'), 'conj'), (('the', 'unit'), 'det'), (('resulting', 'unit'), 'amod'), (('unit', 'transmits'), 'obj'), (('in', 'segment'), 'case'), (('a', 'segment'), 'det'), (('TCP', 'segment'), 'compound'), (('segment', 'transmits'), 'obl'), (('.', 'takes'), 'punct')]
+
+ Named Entities are: 
+>> [('The Record Protocol', 'ORG')]
+
+========================== Sentence 11 ===========================
+
+ Received data are decrypted, verified, decompressed, and reassembled before being delivered to higher-level users. 
+
+Tokens are: 
+>> ['Received', 'data', 'are', 'decrypted', ',', 'verified', ',', 'decompressed', ',', 'and', 'reassembled', 'before', 'being', 'delivered', 'to', 'higher', '-', 'level', 'users', '.'] 
+
+ UPOS tags are: 
+>> [('Received', 'VERB'), ('data', 'NOUN'), ('are', 'AUX'), ('decrypted', 'VERB'), (',', 'PUNCT'), ('verified', 'VERB'), (',', 'PUNCT'), ('decompressed', 'VERB'), (',', 'PUNCT'), ('and', 'CCONJ'), ('reassembled', 'VERB'), ('before', 'SCONJ'), ('being', 'AUX'), ('delivered', 'VERB'), ('to', 'ADP'), ('higher', 'ADJ'), ('-', 'PUNCT'), ('level', 'NOUN'), ('users', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Received', 'VBN'), ('data', 'NNS'), ('are', 'VBP'), ('decrypted', 'VBN'), (',', ','), ('verified', 'VBN'), (',', ','), ('decompressed', 'VBN'), (',', ','), ('and', 'CC'), ('reassembled', 'VBN'), ('before', 'IN'), ('being', 'VBG'), ('delivered', 'VBN'), ('to', 'IN'), ('higher', 'JJR'), ('-', 'HYPH'), ('level', 'NN'), ('users', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Received', 'receive'), ('data', 'datum'), ('are', 'be'), ('decrypted', 'decrypt'), (',', ','), ('verified', 'verify'), (',', ','), ('decompressed', 'decompress'), (',', ','), ('and', 'and'), ('reassembled', 'reassemble'), ('before', 'before'), ('being', 'be'), ('delivered', 'deliver'), ('to', 'to'), ('higher', 'high'), ('-', '-'), ('level', 'level'), ('users', 'user'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Received', 'data'), 'amod'), (('data', 'decrypted'), 'nsubj:pass'), (('are', 'decrypted'), 'aux:pass'), (('decrypted', 'root'), 'root'), ((',', 'verified'), 'punct'), (('verified', 'decrypted'), 'conj'), ((',', 'decompressed'), 'punct'), (('decompressed', 'decrypted'), 'conj'), ((',', 'reassembled'), 'punct'), (('and', 'reassembled'), 'cc'), (('reassembled', 'decrypted'), 'conj'), (('before', 'delivered'), 'mark'), (('being', 'delivered'), 'aux:pass'), (('delivered', 'reassembled'), 'advcl'), (('to', 'users'), 'case'), (('higher', 'level'), 'amod'), (('-', 'level'), 'punct'), (('level', 'users'), 'compound'), (('users', 'delivered'), 'obl'), (('.', 'decrypted'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 12 ===========================
+
+ Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Change Cipher Spec Protocol The Change Cipher Spec Protocol is one of the three SSL-specific protocols that use the SSL Record Protocol, and it is the simplest. 
+
+Tokens are: 
+>> ['Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Change', 'Cipher', 'Spec', 'Protocol', 'The', 'Change', 'Cipher', 'Spec', 'Protocol', 'is', 'one', 'of', 'the', 'three', 'SSL', '-', 'specific', 'protocols', 'that', 'use', 'the', 'SSL', 'Record', 'Protocol', ',', 'and', 'it', 'is', 'the', 'simplest', '.'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'PROPN'), ('Change', 'PROPN'), ('Cipher', 'PROPN'), ('Spec', 'PROPN'), ('Protocol', 'PROPN'), ('The', 'DET'), ('Change', 'PROPN'), ('Cipher', 'PROPN'), ('Spec', 'PROPN'), ('Protocol', 'PROPN'), ('is', 'AUX'), ('one', 'NUM'), ('of', 'ADP'), ('the', 'DET'), ('three', 'NUM'), ('SSL', 'PROPN'), ('-', 'PUNCT'), ('specific', 'ADJ'), ('protocols', 'NOUN'), ('that', 'PRON'), ('use', 'VERB'), ('the', 'DET'), ('SSL', 'PROPN'), ('Record', 'NOUN'), ('Protocol', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('it', 'PRON'), ('is', 'AUX'), ('the', 'DET'), ('simplest', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-', 'HYPH'), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NNP'), ('Change', 'NNP'), ('Cipher', 'NNP'), ('Spec', 'NNP'), ('Protocol', 'NNP'), ('The', 'DT'), ('Change', 'NNP'), ('Cipher', 'NNP'), ('Spec', 'NNP'), ('Protocol', 'NNP'), ('is', 'VBZ'), ('one', 'CD'), ('of', 'IN'), ('the', 'DT'), ('three', 'CD'), ('SSL', 'NNP'), ('-', 'HYPH'), ('specific', 'JJ'), ('protocols', 'NNS'), ('that', 'WDT'), ('use', 'VBP'), ('the', 'DT'), ('SSL', 'NNP'), ('Record', 'NN'), ('Protocol', 'NN'), (',', ','), ('and', 'CC'), ('it', 'PRP'), ('is', 'VBZ'), ('the', 'DT'), ('simplest', 'JJS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Change', 'Change'), ('Cipher', 'Cipher'), ('Spec', 'Spec'), ('Protocol', 'Protocol'), ('The', 'the'), ('Change', 'Change'), ('Cipher', 'Cipher'), ('Spec', 'Spec'), ('Protocol', 'Protocol'), ('is', 'be'), ('one', 'one'), ('of', 'of'), ('the', 'the'), ('three', 'three'), ('SSL', 'SSL'), ('-', '-'), ('specific', 'specific'), ('protocols', 'protocol'), ('that', 'that'), ('use', 'use'), ('the', 'the'), ('SSL', 'SSL'), ('Record', 'record'), ('Protocol', 'protocol'), (',', ','), ('and', 'and'), ('it', 'it'), ('is', 'be'), ('the', 'the'), ('simplest', 'simple'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-', 'Unit'), 'punct'), (('10', 'Unit'), 'nummod'), (('Web', 'Institute'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Change'), 'nsubj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Change'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Change'), 'amod'), (('Subject', 'Change'), 'compound'), (('Change', 'root'), 'root'), (('Cipher', 'Protocol'), 'compound'), (('Spec', 'Protocol'), 'compound'), (('Protocol', 'Change'), 'appos'), (('The', 'Protocol'), 'det'), (('Change', 'Protocol'), 'compound'), (('Cipher', 'Protocol'), 'compound'), (('Spec', 'Protocol'), 'compound'), (('Protocol', 'one'), 'nsubj'), (('is', 'one'), 'cop'), (('one', 'Protocol'), 'acl:relcl'), (('of', 'protocols'), 'case'), (('the', 'protocols'), 'det'), (('three', 'protocols'), 'nummod'), (('SSL', 'specific'), 'obl:npmod'), (('-', 'specific'), 'punct'), (('specific', 'protocols'), 'amod'), (('protocols', 'one'), 'nmod'), (('that', 'use'), 'nsubj'), (('use', 'protocols'), 'acl:relcl'), (('the', 'Protocol'), 'det'), (('SSL', 'Protocol'), 'compound'), (('Record', 'Protocol'), 'compound'), (('Protocol', 'use'), 'obj'), ((',', 'simplest'), 'punct'), (('and', 'simplest'), 'cc'), (('it', 'simplest'), 'nsubj'), (('is', 'simplest'), 'cop'), (('the', 'simplest'), 'det'), (('simplest', 'use'), 'conj'), (('.', 'Change'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('The Change Cipher Spec Protocol', 'LAW'), ('three', 'CARDINAL'), ('the SSL Record Protocol', 'LAW')]
+
+========================== Sentence 13 ===========================
+
+ This protocol consists of a single message which consists of a single byte with the value 1. 
+
+Tokens are: 
+>> ['This', 'protocol', 'consists', 'of', 'a', 'single', 'message', 'which', 'consists', 'of', 'a', 'single', 'byte', 'with', 'the', 'value', '1', '.'] 
+
+ UPOS tags are: 
+>> [('This', 'DET'), ('protocol', 'NOUN'), ('consists', 'VERB'), ('of', 'ADP'), ('a', 'DET'), ('single', 'ADJ'), ('message', 'NOUN'), ('which', 'PRON'), ('consists', 'VERB'), ('of', 'ADP'), ('a', 'DET'), ('single', 'ADJ'), ('byte', 'NOUN'), ('with', 'ADP'), ('the', 'DET'), ('value', 'NOUN'), ('1', 'NUM'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('This', 'DT'), ('protocol', 'NN'), ('consists', 'VBZ'), ('of', 'IN'), ('a', 'DT'), ('single', 'JJ'), ('message', 'NN'), ('which', 'WDT'), ('consists', 'VBZ'), ('of', 'IN'), ('a', 'DT'), ('single', 'JJ'), ('byte', 'NN'), ('with', 'IN'), ('the', 'DT'), ('value', 'NN'), ('1', 'CD'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('This', 'this'), ('protocol', 'protocol'), ('consists', 'consist'), ('of', 'of'), ('a', 'a'), ('single', 'single'), ('message', 'message'), ('which', 'which'), ('consists', 'consist'), ('of', 'of'), ('a', 'a'), ('single', 'single'), ('byte', 'byte'), ('with', 'with'), ('the', 'the'), ('value', 'value'), ('1', '1'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('This', 'protocol'), 'det'), (('protocol', 'consists'), 'nsubj'), (('consists', 'root'), 'root'), (('of', 'message'), 'case'), (('a', 'message'), 'det'), (('single', 'message'), 'amod'), (('message', 'consists'), 'obl'), (('which', 'consists'), 'nsubj'), (('consists', 'message'), 'acl:relcl'), (('of', 'byte'), 'case'), (('a', 'byte'), 'det'), (('single', 'byte'), 'amod'), (('byte', 'consists'), 'obl'), (('with', 'value'), 'case'), (('the', 'value'), 'det'), (('value', 'consists'), 'obl'), (('1', 'value'), 'nummod'), (('.', 'consists'), 'punct')]
+
+ Named Entities are: 
+>> [('1', 'CARDINAL')]
+
+========================== Sentence 14 ===========================
+
+ The sole purpose of this message is to cause the pending state to be copied into the current state, which updates the cipher suite to be used on this connection. 
+
+Tokens are: 
+>> ['The', 'sole', 'purpose', 'of', 'this', 'message', 'is', 'to', 'cause', 'the', 'pending', 'state', 'to', 'be', 'copied', 'into', 'the', 'current', 'state', ',', 'which', 'updates', 'the', 'cipher', 'suite', 'to', 'be', 'used', 'on', 'this', 'connection', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('sole', 'ADJ'), ('purpose', 'NOUN'), ('of', 'ADP'), ('this', 'DET'), ('message', 'NOUN'), ('is', 'VERB'), ('to', 'PART'), ('cause', 'VERB'), ('the', 'DET'), ('pending', 'NOUN'), ('state', 'NOUN'), ('to', 'PART'), ('be', 'AUX'), ('copied', 'VERB'), ('into', 'ADP'), ('the', 'DET'), ('current', 'ADJ'), ('state', 'NOUN'), (',', 'PUNCT'), ('which', 'PRON'), ('updates', 'VERB'), ('the', 'DET'), ('cipher', 'NOUN'), ('suite', 'NOUN'), ('to', 'PART'), ('be', 'AUX'), ('used', 'VERB'), ('on', 'ADP'), ('this', 'DET'), ('connection', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('sole', 'JJ'), ('purpose', 'NN'), ('of', 'IN'), ('this', 'DT'), ('message', 'NN'), ('is', 'VBZ'), ('to', 'TO'), ('cause', 'VB'), ('the', 'DT'), ('pending', 'NN'), ('state', 'NN'), ('to', 'TO'), ('be', 'VB'), ('copied', 'VBN'), ('into', 'IN'), ('the', 'DT'), ('current', 'JJ'), ('state', 'NN'), (',', ','), ('which', 'WDT'), ('updates', 'VBZ'), ('the', 'DT'), ('cipher', 'NN'), ('suite', 'NN'), ('to', 'TO'), ('be', 'VB'), ('used', 'VBN'), ('on', 'IN'), ('this', 'DT'), ('connection', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('sole', 'sole'), ('purpose', 'purpose'), ('of', 'of'), ('this', 'this'), ('message', 'message'), ('is', 'be'), ('to', 'to'), ('cause', 'cause'), ('the', 'the'), ('pending', 'pend'), ('state', 'state'), ('to', 'to'), ('be', 'be'), ('copied', 'copy'), ('into', 'into'), ('the', 'the'), ('current', 'current'), ('state', 'state'), (',', ','), ('which', 'which'), ('updates', 'update'), ('the', 'the'), ('cipher', 'cipher'), ('suite', 'suite'), ('to', 'to'), ('be', 'be'), ('used', 'use'), ('on', 'on'), ('this', 'this'), ('connection', 'connection'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'purpose'), 'det'), (('sole', 'purpose'), 'amod'), (('purpose', 'cause'), 'nsubj'), (('of', 'message'), 'case'), (('this', 'message'), 'det'), (('message', 'purpose'), 'nmod'), (('is', 'cause'), 'cop'), (('to', 'cause'), 'mark'), (('cause', 'root'), 'root'), (('the', 'state'), 'det'), (('pending', 'state'), 'compound'), (('state', 'cause'), 'obj'), (('to', 'copied'), 'mark'), (('be', 'copied'), 'aux:pass'), (('copied', 'cause'), 'xcomp'), (('into', 'state'), 'case'), (('the', 'state'), 'det'), (('current', 'state'), 'amod'), (('state', 'copied'), 'obl'), ((',', 'state'), 'punct'), (('which', 'updates'), 'nsubj'), (('updates', 'state'), 'acl:relcl'), (('the', 'suite'), 'det'), (('cipher', 'suite'), 'compound'), (('suite', 'updates'), 'obj'), (('to', 'used'), 'mark'), (('be', 'used'), 'aux:pass'), (('used', 'updates'), 'advcl'), (('on', 'connection'), 'case'), (('this', 'connection'), 'det'), (('connection', 'used'), 'obl'), (('.', 'cause'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 15 ===========================
+
+ Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Change Cipher Spec Protocol – Cont…   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Alert Protocol The Alert Protocol is used to convey SSL-related alerts to the peer entity. 
+
+Tokens are: 
+>> ['Unit', '-10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Change', 'Cipher', 'Spec', 'Protocol', '–', 'Cont', '…', 'Unit', '-10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Alert', 'Protocol', 'The', 'Alert', 'Protocol', 'is', 'used', 'to', 'convey', 'SSL', '-', 'related', 'alerts', 'to', 'the', 'peer', 'entity', '.'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Change', 'NOUN'), ('Cipher', 'NOUN'), ('Spec', 'NOUN'), ('Protocol', 'NOUN'), ('–', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT'), ('Unit', 'NOUN'), ('-10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Alert', 'NOUN'), ('Protocol', 'NOUN'), ('The', 'DET'), ('Alert', 'NOUN'), ('Protocol', 'NOUN'), ('is', 'AUX'), ('used', 'VERB'), ('to', 'PART'), ('convey', 'VERB'), ('SSL', 'PROPN'), ('-', 'PUNCT'), ('related', 'ADJ'), ('alerts', 'NOUN'), ('to', 'ADP'), ('the', 'DET'), ('peer', 'NOUN'), ('entity', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Change', 'NN'), ('Cipher', 'NN'), ('Spec', 'NN'), ('Protocol', 'NN'), ('–', ','), ('Cont', 'NN'), ('…', ','), ('Unit', 'NN'), ('-10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Alert', 'NN'), ('Protocol', 'NN'), ('The', 'DT'), ('Alert', 'NN'), ('Protocol', 'NN'), ('is', 'VBZ'), ('used', 'VBN'), ('to', 'TO'), ('convey', 'VB'), ('SSL', 'NNP'), ('-', 'HYPH'), ('related', 'JJ'), ('alerts', 'NNS'), ('to', 'IN'), ('the', 'DT'), ('peer', 'NN'), ('entity', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-10', '-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Change', 'change'), ('Cipher', 'cipher'), ('Spec', 'spec'), ('Protocol', 'protocol'), ('–', '-'), ('Cont', 'cont'), ('…', '…'), ('Unit', 'unit'), ('-10', '-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Alert', 'alert'), ('Protocol', 'protocol'), ('The', 'the'), ('Alert', 'alert'), ('Protocol', 'protocol'), ('is', 'be'), ('used', 'use'), ('to', 'to'), ('convey', 'convey'), ('SSL', 'SSL'), ('-', '-'), ('related', 'related'), ('alerts', 'alert'), ('to', 'to'), ('the', 'the'), ('peer', 'peer'), ('entity', 'entity'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-10', 'Unit'), 'nummod'), (('Web', 'Security'), 'compound'), (('Security', 'Darshan'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Change'), 'nsubj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Change'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Change'), 'amod'), (('Subject', 'Change'), 'compound'), (('Change', 'root'), 'root'), (('Cipher', 'Protocol'), 'compound'), (('Spec', 'Protocol'), 'compound'), (('Protocol', 'Change'), 'appos'), (('–', 'Protocol'), 'punct'), (('Cont', 'Protocol'), 'appos'), (('…', 'Cont'), 'punct'), (('Unit', 'Institute'), 'compound'), (('-10', 'Unit'), 'nummod'), (('Web', 'Institute'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Protocol'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Protocol'), 'nsubj'), (('is', 'Protocol'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Protocol'), 'amod'), (('Subject', 'Protocol'), 'compound'), (('Alert', 'Protocol'), 'compound'), (('Protocol', 'Change'), 'conj'), (('The', 'Protocol'), 'det'), (('Alert', 'Protocol'), 'compound'), (('Protocol', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'Protocol'), 'acl:relcl'), (('to', 'convey'), 'mark'), (('convey', 'used'), 'xcomp'), (('SSL', 'related'), 'obl:npmod'), (('-', 'related'), 'punct'), (('related', 'alerts'), 'amod'), (('alerts', 'convey'), 'obj'), (('to', 'entity'), 'case'), (('the', 'entity'), 'det'), (('peer', 'entity'), 'compound'), (('entity', 'convey'), 'obl'), (('.', 'Protocol'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('Subject  Alert Protocol The Alert Protocol', 'LAW')]
+
+========================== Sentence 16 ===========================
+
+ As with other applications that use SSL, alert messages are compressed and encrypted, as specified by the current state. 
+
+Tokens are: 
+>> ['As', 'with', 'other', 'applications', 'that', 'use', 'SSL', ',', 'alert', 'messages', 'are', 'compressed', 'and', 'encrypted', ',', 'as', 'specified', 'by', 'the', 'current', 'state', '.'] 
+
+ UPOS tags are: 
+>> [('As', 'ADP'), ('with', 'ADP'), ('other', 'ADJ'), ('applications', 'NOUN'), ('that', 'PRON'), ('use', 'VERB'), ('SSL', 'PROPN'), (',', 'PUNCT'), ('alert', 'NOUN'), ('messages', 'NOUN'), ('are', 'AUX'), ('compressed', 'VERB'), ('and', 'CCONJ'), ('encrypted', 'VERB'), (',', 'PUNCT'), ('as', 'SCONJ'), ('specified', 'VERB'), ('by', 'ADP'), ('the', 'DET'), ('current', 'ADJ'), ('state', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('As', 'IN'), ('with', 'IN'), ('other', 'JJ'), ('applications', 'NNS'), ('that', 'WDT'), ('use', 'VBP'), ('SSL', 'NNP'), (',', ','), ('alert', 'NN'), ('messages', 'NNS'), ('are', 'VBP'), ('compressed', 'VBN'), ('and', 'CC'), ('encrypted', 'VBN'), (',', ','), ('as', 'IN'), ('specified', 'VBN'), ('by', 'IN'), ('the', 'DT'), ('current', 'JJ'), ('state', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('As', 'as'), ('with', 'with'), ('other', 'other'), ('applications', 'application'), ('that', 'that'), ('use', 'use'), ('SSL', 'SSL'), (',', ','), ('alert', 'alert'), ('messages', 'message'), ('are', 'be'), ('compressed', 'compress'), ('and', 'and'), ('encrypted', 'encrypt'), (',', ','), ('as', 'as'), ('specified', 'specify'), ('by', 'by'), ('the', 'the'), ('current', 'current'), ('state', 'state'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('As', 'applications'), 'case'), (('with', 'applications'), 'case'), (('other', 'applications'), 'amod'), (('applications', 'compressed'), 'obl'), (('that', 'use'), 'nsubj'), (('use', 'applications'), 'acl:relcl'), (('SSL', 'use'), 'obj'), ((',', 'compressed'), 'punct'), (('alert', 'messages'), 'compound'), (('messages', 'compressed'), 'nsubj:pass'), (('are', 'compressed'), 'aux:pass'), (('compressed', 'root'), 'root'), (('and', 'encrypted'), 'cc'), (('encrypted', 'compressed'), 'conj'), ((',', 'specified'), 'punct'), (('as', 'specified'), 'mark'), (('specified', 'compressed'), 'advcl'), (('by', 'state'), 'case'), (('the', 'state'), 'det'), (('current', 'state'), 'amod'), (('state', 'specified'), 'obl'), (('.', 'compressed'), 'punct')]
+
+ Named Entities are: 
+>> [('SSL', 'PRODUCT')]
+
+========================== Sentence 17 ===========================
+
+ Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase I    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase I After Phase I, the client and server know the following: 
+
+Tokens are: 
+>> ['Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Handshake', 'Protocol', 'Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'I', 'Unit', '-10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'I', 'After', 'Phase', 'I', ',', 'the', 'client', 'and', 'server', 'know', 'the', 'following', ':'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Handshake', 'NOUN'), ('Protocol', 'PROPN'), ('Unit', 'NOUN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Handshake', 'NOUN'), ('Protocol', 'NOUN'), ('–', 'PUNCT'), ('Phase', 'NOUN'), ('I', 'PRON'), ('Unit', 'NOUN'), ('-10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Handshake', 'NOUN'), ('Protocol', 'NOUN'), ('–', 'PUNCT'), ('Phase', 'NOUN'), ('I', 'PRON'), ('After', 'ADP'), ('Phase', 'NOUN'), ('I', 'PRON'), (',', 'PUNCT'), ('the', 'DET'), ('client', 'NOUN'), ('and', 'CCONJ'), ('server', 'NOUN'), ('know', 'VERB'), ('the', 'DET'), ('following', 'VERB'), (':', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-', 'HYPH'), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Handshake', 'NN'), ('Protocol', 'NNP'), ('Unit', 'NN'), ('-', ','), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Handshake', 'NN'), ('Protocol', 'NN'), ('–', ','), ('Phase', 'NN'), ('I', 'PRP'), ('Unit', 'NN'), ('-10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Handshake', 'NN'), ('Protocol', 'NN'), ('–', ','), ('Phase', 'NN'), ('I', 'PRP'), ('After', 'IN'), ('Phase', 'NN'), ('I', 'PRP'), (',', ','), ('the', 'DT'), ('client', 'NN'), ('and', 'CC'), ('server', 'NN'), ('know', 'VBP'), ('the', 'DT'), ('following', 'VBG'), (':', ':')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Handshake', 'handshake'), ('Protocol', 'Protocol'), ('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Handshake', 'handshake'), ('Protocol', 'protocol'), ('–', '-'), ('Phase', 'phase'), ('I', 'I'), ('Unit', 'unit'), ('-10', '-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Handshake', 'handshake'), ('Protocol', 'protocol'), ('–', '-'), ('Phase', 'phase'), ('I', 'I'), ('After', 'after'), ('Phase', 'phase'), ('I', 'I'), (',', ','), ('the', 'the'), ('client', 'client'), ('and', 'and'), ('server', 'server'), ('know', 'know'), ('the', 'the'), ('following', 'follow'), (':', ':')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-', 'Unit'), 'punct'), (('10', 'Unit'), 'nummod'), (('Web', 'Institute'), 'compound'), (('Security', 'Darshan'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Subject'), 'nsubj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'root'), 'root'), (('Handshake', 'Unit'), 'compound'), (('Protocol', 'Unit'), 'compound'), (('Unit', 'Subject'), 'appos'), (('-', 'Unit'), 'punct'), (('10', 'Institute'), 'nummod'), (('Web', 'Institute'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Protocol'), 'nsubj'), (('is', 'Protocol'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Protocol'), 'amod'), (('Subject', 'Protocol'), 'compound'), (('Handshake', 'Protocol'), 'compound'), (('Protocol', 'Unit'), 'parataxis'), (('–', 'Protocol'), 'punct'), (('Phase', 'Protocol'), 'appos'), (('I', 'Institute'), 'compound'), (('Unit', 'Institute'), 'compound'), (('-10', 'Unit'), 'nummod'), (('Web', 'Security'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Protocol'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Protocol'), 'nsubj'), (('is', 'Protocol'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Protocol'), 'amod'), (('Subject', 'Protocol'), 'compound'), (('Handshake', 'Protocol'), 'compound'), (('Protocol', 'Protocol'), 'parataxis'), (('–', 'Protocol'), 'punct'), (('Phase', 'Protocol'), 'appos'), (('I', 'Protocol'), 'nsubj'), (('After', 'Phase'), 'case'), (('Phase', 'know'), 'obl'), (('I', 'know'), 'nsubj'), ((',', 'know'), 'punct'), (('the', 'client'), 'det'), (('client', 'know'), 'nsubj'), (('and', 'server'), 'cc'), (('server', 'client'), 'conj'), (('know', 'Protocol'), 'parataxis'), (('the', 'know'), 'obj'), (('following', 'the'), 'amod'), ((':', 'Protocol'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('Handshake Protocol    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('Phase I    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG')]
+
+========================== Sentence 18 ===========================
+
+ The version of SSL 
+
+Tokens are: 
+>> ['The', 'version', 'of', 'SSL'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('version', 'NOUN'), ('of', 'ADP'), ('SSL', 'PROPN')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('version', 'NN'), ('of', 'IN'), ('SSL', 'NNP')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('version', 'version'), ('of', 'of'), ('SSL', 'SSL')] 
+
+ Dependency tags are: 
+>> [(('The', 'version'), 'det'), (('version', 'root'), 'root'), (('of', 'SSL'), 'case'), (('SSL', 'version'), 'nmod')]
+
+ Named Entities are: 
+>> [('SSL', 'ORG')]
+
+========================== Sentence 19 ===========================
+
+ The algorithms for key exchange, message authentication, and  encryption 
+
+Tokens are: 
+>> ['The', 'algorithms', 'for', 'key', 'exchange', ',', 'message', 'authentication', ',', 'and', 'encryption'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('algorithms', 'NOUN'), ('for', 'ADP'), ('key', 'ADJ'), ('exchange', 'NOUN'), (',', 'PUNCT'), ('message', 'NOUN'), ('authentication', 'NOUN'), (',', 'PUNCT'), ('and', 'CCONJ'), ('encryption', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('algorithms', 'NNS'), ('for', 'IN'), ('key', 'JJ'), ('exchange', 'NN'), (',', ','), ('message', 'NN'), ('authentication', 'NN'), (',', ','), ('and', 'CC'), ('encryption', 'NN')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('algorithms', 'algorithm'), ('for', 'for'), ('key', 'key'), ('exchange', 'exchange'), (',', ','), ('message', 'message'), ('authentication', 'authentication'), (',', ','), ('and', 'and'), ('encryption', 'encryption')] 
+
+ Dependency tags are: 
+>> [(('The', 'algorithms'), 'det'), (('algorithms', 'root'), 'root'), (('for', 'exchange'), 'case'), (('key', 'exchange'), 'amod'), (('exchange', 'algorithms'), 'nmod'), ((',', 'authentication'), 'punct'), (('message', 'authentication'), 'compound'), (('authentication', 'exchange'), 'conj'), ((',', 'encryption'), 'punct'), (('and', 'encryption'), 'cc'), (('encryption', 'exchange'), 'conj')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 20 ===========================
+
+ The compression method 
+
+Tokens are: 
+>> ['The', 'compression', 'method'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('compression', 'NOUN'), ('method', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('compression', 'NN'), ('method', 'NN')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('compression', 'compression'), ('method', 'method')] 
+
+ Dependency tags are: 
+>> [(('The', 'method'), 'det'), (('compression', 'method'), 'compound'), (('method', 'root'), 'root')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 21 ===========================
+
+ The two random numbers for key generation   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase II    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase II After Phase II 
+
+Tokens are: 
+>> ['The', 'two', 'random', 'numbers', 'for', 'key', 'generation', 'Unit', '-10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'II', 'Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'II', 'After', 'Phase', 'II'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('two', 'NUM'), ('random', 'ADJ'), ('numbers', 'NOUN'), ('for', 'ADP'), ('key', 'ADJ'), ('generation', 'NOUN'), ('Unit', 'NOUN'), ('-10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Handshake', 'NOUN'), ('Protocol', 'NOUN'), ('–', 'PUNCT'), ('Phase', 'NOUN'), ('II', 'NUM'), ('Unit', 'NOUN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Handshake', 'NOUN'), ('Protocol', 'NOUN'), ('–', 'PUNCT'), ('Phase', 'NOUN'), ('II', 'NUM'), ('After', 'ADP'), ('Phase', 'NOUN'), ('II', 'NUM')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('two', 'CD'), ('random', 'JJ'), ('numbers', 'NNS'), ('for', 'IN'), ('key', 'JJ'), ('generation', 'NN'), ('Unit', 'NN'), ('-10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Handshake', 'NN'), ('Protocol', 'NN'), ('–', ','), ('Phase', 'NN'), ('II', 'CD'), ('Unit', 'NN'), ('-', ','), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Handshake', 'NN'), ('Protocol', 'NN'), ('–', ','), ('Phase', 'NN'), ('II', 'CD'), ('After', 'IN'), ('Phase', 'NN'), ('II', 'CD')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('two', 'two'), ('random', 'random'), ('numbers', 'number'), ('for', 'for'), ('key', 'key'), ('generation', 'generation'), ('Unit', 'unit'), ('-10', '-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Handshake', 'handshake'), ('Protocol', 'protocol'), ('–', '-'), ('Phase', 'phase'), ('II', 'ii'), ('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Handshake', 'handshake'), ('Protocol', 'protocol'), ('–', '-'), ('Phase', 'phase'), ('II', 'ii'), ('After', 'after'), ('Phase', 'phase'), ('II', 'ii')] 
+
+ Dependency tags are: 
+>> [(('The', 'numbers'), 'det'), (('two', 'numbers'), 'nummod'), (('random', 'numbers'), 'amod'), (('numbers', 'Subject'), 'nsubj'), (('for', 'Institute'), 'case'), (('key', 'Institute'), 'amod'), (('generation', 'Unit'), 'compound'), (('Unit', 'Institute'), 'compound'), (('-10', 'Unit'), 'nummod'), (('Web', 'Security'), 'compound'), (('Security', 'Darshan'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'numbers'), 'nmod'), (('of', 'INS'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'root'), 'root'), (('Handshake', 'Protocol'), 'compound'), (('Protocol', 'Subject'), 'appos'), (('–', 'Protocol'), 'punct'), (('Phase', 'Unit'), 'compound'), (('II', 'Phase'), 'nummod'), (('Unit', 'Protocol'), 'appos'), (('-', 'Protocol'), 'punct'), (('10', 'Institute'), 'nummod'), (('Web', 'Security'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Protocol'), 'appos'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Subject'), 'nsubj'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'Protocol'), 'compound'), (('Handshake', 'Protocol'), 'compound'), (('Protocol', 'Protocol'), 'parataxis'), (('–', 'Protocol'), 'punct'), (('Phase', 'Protocol'), 'appos'), (('II', 'Phase'), 'nummod'), (('After', 'Phase'), 'case'), (('Phase', 'Protocol'), 'nmod'), (('II', 'Phase'), 'nummod')]
+
+ Named Entities are: 
+>> [('two', 'CARDINAL'), ('10', 'CARDINAL'), ('Phase II', 'EVENT')]
+
+========================== Sentence 22 ===========================
+
+ The server is authenticated to the client. 
+
+Tokens are: 
+>> ['The', 'server', 'is', 'authenticated', 'to', 'the', 'client', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('server', 'NOUN'), ('is', 'AUX'), ('authenticated', 'VERB'), ('to', 'ADP'), ('the', 'DET'), ('client', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('server', 'NN'), ('is', 'VBZ'), ('authenticated', 'VBN'), ('to', 'IN'), ('the', 'DT'), ('client', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('server', 'server'), ('is', 'be'), ('authenticated', 'authenticate'), ('to', 'to'), ('the', 'the'), ('client', 'client'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'server'), 'det'), (('server', 'authenticated'), 'nsubj:pass'), (('is', 'authenticated'), 'aux:pass'), (('authenticated', 'root'), 'root'), (('to', 'client'), 'case'), (('the', 'client'), 'det'), (('client', 'authenticated'), 'obl'), (('.', 'authenticated'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 23 ===========================
+
+ The client knows the public key of the server if required. 
+
+Tokens are: 
+>> ['The', 'client', 'knows', 'the', 'public', 'key', 'of', 'the', 'server', 'if', 'required', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('client', 'NOUN'), ('knows', 'VERB'), ('the', 'DET'), ('public', 'ADJ'), ('key', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('server', 'NOUN'), ('if', 'SCONJ'), ('required', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('client', 'NN'), ('knows', 'VBZ'), ('the', 'DT'), ('public', 'JJ'), ('key', 'NN'), ('of', 'IN'), ('the', 'DT'), ('server', 'NN'), ('if', 'IN'), ('required', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('client', 'client'), ('knows', 'know'), ('the', 'the'), ('public', 'public'), ('key', 'key'), ('of', 'of'), ('the', 'the'), ('server', 'server'), ('if', 'if'), ('required', 'require'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'client'), 'det'), (('client', 'knows'), 'nsubj'), (('knows', 'root'), 'root'), (('the', 'key'), 'det'), (('public', 'key'), 'amod'), (('key', 'knows'), 'obj'), (('of', 'server'), 'case'), (('the', 'server'), 'det'), (('server', 'key'), 'nmod'), (('if', 'required'), 'mark'), (('required', 'knows'), 'advcl'), (('.', 'knows'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 24 ===========================
+
+ Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase III   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Handshake Protocol – Phase IV    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject   SSL Handshake Protocol Phases   HTTPS (HTTP over SSL) HTTPS (HTTP over SSL) refers to the combination of HTTP and SSL to implement secure communication between a Web browser and a Web server. 
+
+Tokens are: 
+>> ['Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'III', 'Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Handshake', 'Protocol', '–', 'Phase', 'IV', 'Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'SSL', 'Handshake', 'Protocol', 'Phases', 'HTTPS', '(', 'HTTP', 'over', 'SSL', ')', 'HTTPS', '(', 'HTTP', 'over', 'SSL', ')', 'refers', 'to', 'the', 'combination', 'of', 'HTTP', 'and', 'SSL', 'to', 'implement', 'secure', 'communication', 'between', 'a', 'Web', 'browser', 'and', 'a', 'Web', 'server', '.'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'PROPN'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('–', 'PUNCT'), ('Phase', 'PROPN'), ('III', 'NUM'), ('Unit', 'PROPN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'PROPN'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('–', 'PUNCT'), ('Phase', 'PROPN'), ('IV', 'PROPN'), ('Unit', 'PROPN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'PROPN'), ('SSL', 'PROPN'), ('Handshake', 'PROPN'), ('Protocol', 'PROPN'), ('Phases', 'PROPN'), ('HTTPS', 'PROPN'), ('(', 'PUNCT'), ('HTTP', 'PROPN'), ('over', 'ADP'), ('SSL', 'PROPN'), (')', 'PUNCT'), ('HTTPS', 'PROPN'), ('(', 'PUNCT'), ('HTTP', 'PROPN'), ('over', 'ADP'), ('SSL', 'PROPN'), (')', 'PUNCT'), ('refers', 'VERB'), ('to', 'ADP'), ('the', 'DET'), ('combination', 'NOUN'), ('of', 'ADP'), ('HTTP', 'PROPN'), ('and', 'CCONJ'), ('SSL', 'PROPN'), ('to', 'PART'), ('implement', 'VERB'), ('secure', 'ADJ'), ('communication', 'NOUN'), ('between', 'ADP'), ('a', 'DET'), ('Web', 'NOUN'), ('browser', 'NOUN'), ('and', 'CCONJ'), ('a', 'DET'), ('Web', 'NOUN'), ('server', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-', 'HYPH'), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('–', ','), ('Phase', 'NNP'), ('III', 'CD'), ('Unit', 'NNP'), ('-', ','), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('–', ','), ('Phase', 'NNP'), ('IV', 'NNP'), ('Unit', 'NNP'), ('-', ','), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NNP'), ('SSL', 'NNP'), ('Handshake', 'NNP'), ('Protocol', 'NNP'), ('Phases', 'NNPS'), ('HTTPS', 'NNP'), ('(', '-LRB-'), ('HTTP', 'NNP'), ('over', 'IN'), ('SSL', 'NNP'), (')', '-RRB-'), ('HTTPS', 'NNP'), ('(', '-LRB-'), ('HTTP', 'NNP'), ('over', 'IN'), ('SSL', 'NNP'), (')', '-RRB-'), ('refers', 'VBZ'), ('to', 'IN'), ('the', 'DT'), ('combination', 'NN'), ('of', 'IN'), ('HTTP', 'NNP'), ('and', 'CC'), ('SSL', 'NNP'), ('to', 'TO'), ('implement', 'VB'), ('secure', 'JJ'), ('communication', 'NN'), ('between', 'IN'), ('a', 'DT'), ('Web', 'NN'), ('browser', 'NN'), ('and', 'CC'), ('a', 'DT'), ('Web', 'NN'), ('server', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('–', '-'), ('Phase', 'Phase'), ('III', 'iii'), ('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('–', '-'), ('Phase', 'Phase'), ('IV', 'IV'), ('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('SSL', 'SSL'), ('Handshake', 'Handshake'), ('Protocol', 'Protocol'), ('Phases', 'Phases'), ('HTTPS', 'HTTPS'), ('(', '('), ('HTTP', 'HTTP'), ('over', 'over'), ('SSL', 'SSL'), (')', ')'), ('HTTPS', 'HTTPS'), ('(', '('), ('HTTP', 'HTTP'), ('over', 'over'), ('SSL', 'SSL'), (')', ')'), ('refers', 'refer'), ('to', 'to'), ('the', 'the'), ('combination', 'combination'), ('of', 'of'), ('HTTP', 'HTTP'), ('and', 'and'), ('SSL', 'SSL'), ('to', 'to'), ('implement', 'implement'), ('secure', 'secure'), ('communication', 'communication'), ('between', 'between'), ('a', 'a'), ('Web', 'web'), ('browser', 'browser'), ('and', 'and'), ('a', 'a'), ('Web', 'web'), ('server', 'server'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Institute'), 'compound'), (('-', 'Unit'), 'punct'), (('10', 'Security'), 'nummod'), (('Web', 'Institute'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Subject'), 'nsubj'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'root'), 'root'), (('Handshake', 'Subject'), 'compound'), (('Protocol', 'Subject'), 'flat'), (('–', 'Protocol'), 'punct'), (('Phase', 'Unit'), 'compound'), (('III', 'Phase'), 'nummod'), (('Unit', 'Subject'), 'appos'), (('-', 'Subject'), 'punct'), (('10', 'Institute'), 'nummod'), (('Web', 'Institute'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Subject'), 'conj'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'appos'), (('INS', 'Subject'), 'nsubj'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'Subject'), 'conj'), (('Handshake', 'Protocol'), 'compound'), (('Protocol', 'Subject'), 'appos'), (('–', 'Protocol'), 'punct'), (('Phase', 'Unit'), 'compound'), (('IV', 'Unit'), 'compound'), (('Unit', 'Protocol'), 'appos'), (('-', 'Subject'), 'punct'), (('10', 'Institute'), 'nummod'), (('Web', 'Security'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Subject'), 'conj'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Interesting'), 'nsubj'), (('is', 'Interesting'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'conj'), (('Subject', 'Phases'), 'compound'), (('SSL', 'Phases'), 'compound'), (('Handshake', 'Phases'), 'compound'), (('Protocol', 'Phases'), 'compound'), (('Phases', 'Interesting'), 'parataxis'), (('HTTPS', 'Phases'), 'appos'), (('(', 'HTTP'), 'punct'), (('HTTP', 'Phases'), 'appos'), (('over', 'SSL'), 'case'), (('SSL', 'HTTP'), 'nmod'), ((')', 'HTTP'), 'punct'), (('HTTPS', 'refers'), 'nsubj'), (('(', 'HTTP'), 'punct'), (('HTTP', 'HTTPS'), 'appos'), (('over', 'SSL'), 'case'), (('SSL', 'HTTP'), 'nmod'), ((')', 'HTTP'), 'punct'), (('refers', 'Subject'), 'conj'), (('to', 'combination'), 'case'), (('the', 'combination'), 'det'), (('combination', 'refers'), 'obl'), (('of', 'HTTP'), 'case'), (('HTTP', 'combination'), 'nmod'), (('and', 'SSL'), 'cc'), (('SSL', 'HTTP'), 'conj'), (('to', 'implement'), 'mark'), (('implement', 'refers'), 'advcl'), (('secure', 'communication'), 'amod'), (('communication', 'implement'), 'obj'), (('between', 'browser'), 'case'), (('a', 'browser'), 'det'), (('Web', 'browser'), 'compound'), (('browser', 'communication'), 'nmod'), (('and', 'server'), 'cc'), (('a', 'server'), 'det'), (('Web', 'server'), 'compound'), (('server', 'browser'), 'conj'), (('.', 'Subject'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('10', 'CARDINAL'), ('10', 'CARDINAL'), ('SSL', 'ORG')]
+
+========================== Sentence 25 ===========================
+
+ When HTTPS is used, the following elements of the communication are encrypted: URL of the requested document Contents of the document Contents of browser forms (filled in by browser user) 
+
+Tokens are: 
+>> ['When', 'HTTPS', 'is', 'used', ',', 'the', 'following', 'elements', 'of', 'the', 'communication', 'are', 'encrypted', ':', 'URL', 'of', 'the', 'requested', 'document', 'Contents', 'of', 'the', 'document', 'Contents', 'of', 'browser', 'forms', '(', 'filled', 'in', 'by', 'browser', 'user', ')'] 
+
+ UPOS tags are: 
+>> [('When', 'SCONJ'), ('HTTPS', 'PROPN'), ('is', 'AUX'), ('used', 'VERB'), (',', 'PUNCT'), ('the', 'DET'), ('following', 'VERB'), ('elements', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('communication', 'NOUN'), ('are', 'AUX'), ('encrypted', 'VERB'), (':', 'PUNCT'), ('URL', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('requested', 'VERB'), ('document', 'NOUN'), ('Contents', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('document', 'NOUN'), ('Contents', 'NOUN'), ('of', 'ADP'), ('browser', 'NOUN'), ('forms', 'NOUN'), ('(', 'PUNCT'), ('filled', 'VERB'), ('in', 'ADP'), ('by', 'ADP'), ('browser', 'NOUN'), ('user', 'NOUN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('When', 'WRB'), ('HTTPS', 'NNP'), ('is', 'VBZ'), ('used', 'VBN'), (',', ','), ('the', 'DT'), ('following', 'VBG'), ('elements', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('communication', 'NN'), ('are', 'VBP'), ('encrypted', 'VBN'), (':', ':'), ('URL', 'NN'), ('of', 'IN'), ('the', 'DT'), ('requested', 'VBN'), ('document', 'NN'), ('Contents', 'NNS'), ('of', 'IN'), ('the', 'DT'), ('document', 'NN'), ('Contents', 'NNS'), ('of', 'IN'), ('browser', 'NN'), ('forms', 'NNS'), ('(', '-LRB-'), ('filled', 'VBN'), ('in', 'IN'), ('by', 'IN'), ('browser', 'NN'), ('user', 'NN'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('When', 'when'), ('HTTPS', 'HTTPS'), ('is', 'be'), ('used', 'use'), (',', ','), ('the', 'the'), ('following', 'follow'), ('elements', 'element'), ('of', 'of'), ('the', 'the'), ('communication', 'communication'), ('are', 'be'), ('encrypted', 'encrypt'), (':', ':'), ('URL', 'URL'), ('of', 'of'), ('the', 'the'), ('requested', 'request'), ('document', 'document'), ('Contents', 'content'), ('of', 'of'), ('the', 'the'), ('document', 'document'), ('Contents', 'content'), ('of', 'of'), ('browser', 'browser'), ('forms', 'form'), ('(', '('), ('filled', 'fill'), ('in', 'in'), ('by', 'by'), ('browser', 'browser'), ('user', 'user'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('When', 'used'), 'mark'), (('HTTPS', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'encrypted'), 'advcl'), ((',', 'encrypted'), 'punct'), (('the', 'elements'), 'det'), (('following', 'elements'), 'amod'), (('elements', 'encrypted'), 'nsubj:pass'), (('of', 'communication'), 'case'), (('the', 'communication'), 'det'), (('communication', 'elements'), 'nmod'), (('are', 'encrypted'), 'aux:pass'), (('encrypted', 'root'), 'root'), ((':', 'URL'), 'punct'), (('URL', 'encrypted'), 'parataxis'), (('of', 'Contents'), 'case'), (('the', 'Contents'), 'det'), (('requested', 'Contents'), 'amod'), (('document', 'Contents'), 'compound'), (('Contents', 'URL'), 'nmod'), (('of', 'Contents'), 'case'), (('the', 'Contents'), 'det'), (('document', 'Contents'), 'compound'), (('Contents', 'Contents'), 'nmod'), (('of', 'forms'), 'case'), (('browser', 'forms'), 'compound'), (('forms', 'Contents'), 'nmod'), (('(', 'filled'), 'punct'), (('filled', 'Contents'), 'acl'), (('in', 'filled'), 'compound:prt'), (('by', 'user'), 'case'), (('browser', 'user'), 'compound'), (('user', 'filled'), 'obl'), ((')', 'filled'), 'punct')]
+
+ Named Entities are: 
+>> [('HTTPS', 'ORG')]
+
+========================== Sentence 26 ===========================
+
+ Cookies sent from browser to server and from server to browser Contents of HTTP header   Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSH (Secure Shell) Secure Shell (SSH) is a protocol for secure network communications designed to be relatively simple and inexpensive to implement. 
+
+Tokens are: 
+>> ['Cookies', 'sent', 'from', 'browser', 'to', 'server', 'and', 'from', 'server', 'to', 'browser', 'Contents', 'of', 'HTTP', 'header', 'Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'SSH', '(', 'Secure', 'Shell', ')', 'Secure', 'Shell', '(', 'SSH', ')', 'is', 'a', 'protocol', 'for', 'secure', 'network', 'communications', 'designed', 'to', 'be', 'relatively', 'simple', 'and', 'inexpensive', 'to', 'implement', '.'] 
+
+ UPOS tags are: 
+>> [('Cookies', 'NOUN'), ('sent', 'VERB'), ('from', 'ADP'), ('browser', 'NOUN'), ('to', 'ADP'), ('server', 'NOUN'), ('and', 'CCONJ'), ('from', 'ADP'), ('server', 'NOUN'), ('to', 'ADP'), ('browser', 'VERB'), ('Contents', 'PROPN'), ('of', 'ADP'), ('HTTP', 'PROPN'), ('header', 'NOUN'), ('Unit', 'NOUN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'PROPN'), ('SSH', 'PROPN'), ('(', 'PUNCT'), ('Secure', 'ADJ'), ('Shell', 'PROPN'), (')', 'PUNCT'), ('Secure', 'ADJ'), ('Shell', 'PROPN'), ('(', 'PUNCT'), ('SSH', 'PROPN'), (')', 'PUNCT'), ('is', 'AUX'), ('a', 'DET'), ('protocol', 'NOUN'), ('for', 'ADP'), ('secure', 'ADJ'), ('network', 'NOUN'), ('communications', 'NOUN'), ('designed', 'VERB'), ('to', 'PART'), ('be', 'AUX'), ('relatively', 'ADV'), ('simple', 'ADJ'), ('and', 'CCONJ'), ('inexpensive', 'ADJ'), ('to', 'PART'), ('implement', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Cookies', 'NNS'), ('sent', 'VBN'), ('from', 'IN'), ('browser', 'NN'), ('to', 'IN'), ('server', 'NN'), ('and', 'CC'), ('from', 'IN'), ('server', 'NN'), ('to', 'IN'), ('browser', 'VB'), ('Contents', 'NNPS'), ('of', 'IN'), ('HTTP', 'NNP'), ('header', 'NN'), ('Unit', 'NN'), ('-', ','), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NNP'), ('SSH', 'NNP'), ('(', '-LRB-'), ('Secure', 'NNP'), ('Shell', 'NNP'), (')', '-RRB-'), ('Secure', 'NNP'), ('Shell', 'NNP'), ('(', '-LRB-'), ('SSH', 'NNP'), (')', '-RRB-'), ('is', 'VBZ'), ('a', 'DT'), ('protocol', 'NN'), ('for', 'IN'), ('secure', 'JJ'), ('network', 'NN'), ('communications', 'NNS'), ('designed', 'VBN'), ('to', 'TO'), ('be', 'VB'), ('relatively', 'RB'), ('simple', 'JJ'), ('and', 'CC'), ('inexpensive', 'JJ'), ('to', 'TO'), ('implement', 'VB'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Cookies', 'cookie'), ('sent', 'send'), ('from', 'from'), ('browser', 'browser'), ('to', 'to'), ('server', 'server'), ('and', 'and'), ('from', 'from'), ('server', 'server'), ('to', 'to'), ('browser', 'browser'), ('Contents', 'Contents'), ('of', 'of'), ('HTTP', 'HTTP'), ('header', 'header'), ('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('SSH', 'SSH'), ('(', '('), ('Secure', 'secure'), ('Shell', 'Shell'), (')', ')'), ('Secure', 'secure'), ('Shell', 'Shell'), ('(', '('), ('SSH', 'SSH'), (')', ')'), ('is', 'be'), ('a', 'a'), ('protocol', 'protocol'), ('for', 'for'), ('secure', 'secure'), ('network', 'network'), ('communications', 'communication'), ('designed', 'design'), ('to', 'to'), ('be', 'be'), ('relatively', 'relatively'), ('simple', 'simple'), ('and', 'and'), ('inexpensive', 'inexpensive'), ('to', 'to'), ('implement', 'implement'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Cookies', 'Interesting'), 'nsubj'), (('sent', 'Cookies'), 'acl'), (('from', 'browser'), 'case'), (('browser', 'sent'), 'obl'), (('to', 'server'), 'case'), (('server', 'sent'), 'obl'), (('and', 'server'), 'cc'), (('from', 'server'), 'case'), (('server', 'browser'), 'conj'), (('to', 'Contents'), 'case'), (('browser', 'Contents'), 'amod'), (('Contents', 'server'), 'nmod'), (('of', 'Unit'), 'case'), (('HTTP', 'Unit'), 'compound'), (('header', 'Unit'), 'compound'), (('Unit', 'Contents'), 'nmod'), (('-', 'Cookies'), 'punct'), (('10', 'Institute'), 'nummod'), (('Web', 'Security'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Cookies'), 'appos'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'appos'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'root'), 'root'), (('Subject', 'SSH'), 'compound'), (('SSH', 'Interesting'), 'obl'), (('(', 'Shell'), 'punct'), (('Secure', 'Shell'), 'amod'), (('Shell', 'SSH'), 'appos'), ((')', 'Shell'), 'punct'), (('Secure', 'Shell'), 'amod'), (('Shell', 'SSH'), 'appos'), (('(', 'SSH'), 'punct'), (('SSH', 'Shell'), 'appos'), ((')', 'SSH'), 'punct'), (('is', 'protocol'), 'cop'), (('a', 'protocol'), 'det'), (('protocol', 'SSH'), 'parataxis'), (('for', 'communications'), 'case'), (('secure', 'communications'), 'amod'), (('network', 'communications'), 'compound'), (('communications', 'protocol'), 'nmod'), (('designed', 'communications'), 'acl'), (('to', 'simple'), 'mark'), (('be', 'simple'), 'cop'), (('relatively', 'simple'), 'advmod'), (('simple', 'designed'), 'xcomp'), (('and', 'inexpensive'), 'cc'), (('inexpensive', 'simple'), 'conj'), (('to', 'implement'), 'mark'), (('implement', 'simple'), 'advcl'), (('.', 'protocol'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG')]
+
+========================== Sentence 27 ===========================
+
+ The initial version, SSH1 was focused on providing a secure remote logon facility to replace TELNET and other remote logon schemes that provided no security. 
+
+Tokens are: 
+>> ['The', 'initial', 'version', ',', 'SSH1', 'was', 'focused', 'on', 'providing', 'a', 'secure', 'remote', 'logon', 'facility', 'to', 'replace', 'TELNET', 'and', 'other', 'remote', 'logon', 'schemes', 'that', 'provided', 'no', 'security', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('initial', 'ADJ'), ('version', 'NOUN'), (',', 'PUNCT'), ('SSH1', 'PROPN'), ('was', 'AUX'), ('focused', 'VERB'), ('on', 'SCONJ'), ('providing', 'VERB'), ('a', 'DET'), ('secure', 'ADJ'), ('remote', 'NOUN'), ('logon', 'NOUN'), ('facility', 'NOUN'), ('to', 'PART'), ('replace', 'VERB'), ('TELNET', 'PROPN'), ('and', 'CCONJ'), ('other', 'ADJ'), ('remote', 'ADJ'), ('logon', 'NOUN'), ('schemes', 'NOUN'), ('that', 'PRON'), ('provided', 'VERB'), ('no', 'DET'), ('security', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('initial', 'JJ'), ('version', 'NN'), (',', ','), ('SSH1', 'NNP'), ('was', 'VBD'), ('focused', 'VBN'), ('on', 'IN'), ('providing', 'VBG'), ('a', 'DT'), ('secure', 'JJ'), ('remote', 'NN'), ('logon', 'NN'), ('facility', 'NN'), ('to', 'TO'), ('replace', 'VB'), ('TELNET', 'NNP'), ('and', 'CC'), ('other', 'JJ'), ('remote', 'JJ'), ('logon', 'NN'), ('schemes', 'NNS'), ('that', 'WDT'), ('provided', 'VBD'), ('no', 'DT'), ('security', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('initial', 'initial'), ('version', 'version'), (',', ','), ('SSH1', 'SSH1'), ('was', 'be'), ('focused', 'focus'), ('on', 'on'), ('providing', 'provide'), ('a', 'a'), ('secure', 'secure'), ('remote', 'remote'), ('logon', 'logon'), ('facility', 'facility'), ('to', 'to'), ('replace', 'replace'), ('TELNET', 'TELNET'), ('and', 'and'), ('other', 'other'), ('remote', 'remote'), ('logon', 'logon'), ('schemes', 'scheme'), ('that', 'that'), ('provided', 'provide'), ('no', 'no'), ('security', 'security'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'version'), 'det'), (('initial', 'version'), 'amod'), (('version', 'focused'), 'nsubj:pass'), ((',', 'focused'), 'punct'), (('SSH1', 'focused'), 'nsubj:pass'), (('was', 'focused'), 'aux:pass'), (('focused', 'root'), 'root'), (('on', 'providing'), 'mark'), (('providing', 'focused'), 'advcl'), (('a', 'facility'), 'det'), (('secure', 'facility'), 'amod'), (('remote', 'facility'), 'compound'), (('logon', 'facility'), 'compound'), (('facility', 'providing'), 'obj'), (('to', 'replace'), 'mark'), (('replace', 'providing'), 'advcl'), (('TELNET', 'replace'), 'obj'), (('and', 'schemes'), 'cc'), (('other', 'schemes'), 'amod'), (('remote', 'schemes'), 'amod'), (('logon', 'schemes'), 'compound'), (('schemes', 'TELNET'), 'conj'), (('that', 'provided'), 'nsubj'), (('provided', 'schemes'), 'acl:relcl'), (('no', 'security'), 'det'), (('security', 'provided'), 'obj'), (('.', 'focused'), 'punct')]
+
+ Named Entities are: 
+>> [('SSH1', 'ORG'), ('TELNET', 'ORG')]
+
+========================== Sentence 28 ===========================
+
+ Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  SSH (Secure Shell) – Cont…    Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject 
+
+Tokens are: 
+>> ['Unit', '-', '10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'SSH', '(', 'Secure', 'Shell', ')', '–', 'Cont', '…', 'Unit', '-10', 'Web', 'Security', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-', 'PUNCT'), ('10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('SSH', 'PROPN'), ('(', 'PUNCT'), ('Secure', 'ADJ'), ('Shell', 'PROPN'), (')', 'PUNCT'), ('–', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT'), ('Unit', 'NOUN'), ('-10', 'NUM'), ('Web', 'PROPN'), ('Security', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-', ','), ('10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('SSH', 'NNP'), ('(', '-LRB-'), ('Secure', 'JJ'), ('Shell', 'NNP'), (')', '-RRB-'), ('–', ','), ('Cont', 'NN'), ('…', ','), ('Unit', 'NN'), ('-10', 'CD'), ('Web', 'NNP'), ('Security', 'NNP'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-', '-'), ('10', '10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('SSH', 'SSH'), ('(', '('), ('Secure', 'secure'), ('Shell', 'Shell'), (')', ')'), ('–', '-'), ('Cont', 'cont'), ('…', '…'), ('Unit', 'unit'), ('-10', '-10'), ('Web', 'Web'), ('Security', 'Security'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'root'), 'root'), (('-', 'Unit'), 'punct'), (('10', 'Institute'), 'nummod'), (('Web', 'Security'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Subject'), 'nsubj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'Unit'), 'appos'), (('SSH', 'Subject'), 'appos'), (('(', 'Shell'), 'punct'), (('Secure', 'Shell'), 'amod'), (('Shell', 'SSH'), 'appos'), ((')', 'Shell'), 'punct'), (('–', 'SSH'), 'punct'), (('Cont', 'SSH'), 'appos'), (('…', 'Cont'), 'punct'), (('Unit', 'Institute'), 'compound'), (('-10', 'Unit'), 'nummod'), (('Web', 'Institute'), 'compound'), (('Security', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'SSH'), 'conj'), (('of', '‹#›'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Subject'), 'nsubj'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'Unit'), 'parataxis')]
+
+ Named Entities are: 
+>> [('Unit-10 Web Security                                                         Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('INS', 'ORG')]

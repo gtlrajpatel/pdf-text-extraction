@@ -1,0 +1,325 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-5 Task Classification of AI 
+
+
+>> Tokens are: 
+[AI-5, Task, Classification, AI] 
+
+>> PoS Tags are: 
+[('AI-5', 'NUM'), ('Task', 'PROPN'), ('Classification', 'PROPN'), ('AI', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('AI-5', 'nummod'), ('Task', 'compound'), ('Classification', 'ROOT'), ('AI', 'pobj')]
+
+>> Bigrams: 
+[[AI-5, Task], [Task, Classification], [Classification, AI]]
+
+>> Trigrams: 
+[[AI-5, Task, Classification], [Task, Classification, AI]]
+
+>> Noun Phrases are: 
+[AI-5 Task Classification, AI]
+
+>> Named Entities are: 
+[('AI-5 Task Classification of AI', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+The domain of AI is classified into Formal tasks, Mundane tasks, and Expert tasks. 
+
+
+>> Tokens are: 
+[domain, AI, classified, Formal, tasks, ,, Mundane, tasks, ,, Expert, tasks, .] 
+
+>> PoS Tags are: 
+[('domain', 'NOUN'), ('AI', 'PROPN'), ('classified', 'VERB'), ('Formal', 'ADJ'), ('tasks', 'NOUN'), (',', 'PUNCT'), ('Mundane', 'PROPN'), ('tasks', 'NOUN'), (',', 'PUNCT'), ('Expert', 'NOUN'), ('tasks', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('domain', 'nsubjpass'), ('AI', 'pobj'), ('classified', 'ROOT'), ('Formal', 'amod'), ('tasks', 'pobj'), (',', 'punct'), ('Mundane', 'compound'), ('tasks', 'conj'), (',', 'punct'), ('Expert', 'compound'), ('tasks', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[domain, AI], [AI, classified], [classified, Formal], [Formal, tasks], [tasks, ,], [,, Mundane], [Mundane, tasks], [tasks, ,], [,, Expert], [Expert, tasks], [tasks, .]]
+
+>> Trigrams: 
+[[domain, AI, classified], [AI, classified, Formal], [classified, Formal, tasks], [Formal, tasks, ,], [tasks, ,, Mundane], [,, Mundane, tasks], [Mundane, tasks, ,], [tasks, ,, Expert], [,, Expert, tasks], [Expert, tasks, .]]
+
+>> Noun Phrases are: 
+[The domain, AI, Formal tasks, Mundane tasks, Expert tasks]
+
+>> Named Entities are: 
+[('AI', 'ORG'), ('Mundane', 'PERSON'), ('Expert', 'PERSON')]
+
+
+============================ Sentence 3 =============================
+
+ 	Task Domains of Artificial Intelligence  	Mundane (Ordinary) 
+
+
+>> Tokens are: 
+[ 	, Task, Domains, Artificial, Intelligence,  	, Mundane, (, Ordinary, )] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('Task', 'PROPN'), ('Domains', 'PROPN'), ('Artificial', 'PROPN'), ('Intelligence', 'PROPN'), (' \t', 'SPACE'), ('Mundane', 'PROPN'), ('(', 'PUNCT'), ('Ordinary', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' \t', 'nummod'), ('Task', 'compound'), ('Domains', 'ROOT'), ('Artificial', 'compound'), ('Intelligence', 'pobj'), (' \t', 'compound'), ('Mundane', 'appos'), ('(', 'punct'), ('Ordinary', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[ 	, Task], [Task, Domains], [Domains, Artificial], [Artificial, Intelligence], [Intelligence,  	], [ 	, Mundane], [Mundane, (], [(, Ordinary], [Ordinary, )]]
+
+>> Trigrams: 
+[[ 	, Task, Domains], [Task, Domains, Artificial], [Domains, Artificial, Intelligence], [Artificial, Intelligence,  	], [Intelligence,  	, Mundane], [ 	, Mundane, (], [Mundane, (, Ordinary], [(, Ordinary, )]]
+
+>> Noun Phrases are: 
+[ 	Task Domains, Artificial Intelligence,  	Mundane, Ordinary]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+Tasks 	Formal Tasks 	Expert Tasks  	Perception · Computer Vision · Speech, Voice 	· Mathematics · Geometry · Logic · Integration and Differentiation 	· Engineering · Fault Finding · Manufacturing · Monitoring  	Natural Language Processing · Understanding · Language Generation · Language Translation 	Games · Go · Chess (Deep Blue) · 
+
+
+>> Tokens are: 
+[Tasks, 	, Formal, Tasks, 	, Expert, Tasks,  	, Perception, ·, Computer, Vision, ·, Speech, ,, Voice, 	, ·, Mathematics, ·, Geometry, ·, Logic, ·, Integration, Differentiation, 	, ·, Engineering, ·, Fault, Finding, ·, Manufacturing, ·, Monitoring,  	, Natural, Language, Processing, ·, Understanding, ·, Language, Generation, ·, Language, Translation, 	, Games, ·, ·, Chess, (, Deep, Blue, ), ·] 
+
+>> PoS Tags are: 
+[('Tasks', 'PROPN'), ('\t', 'SPACE'), ('Formal', 'PROPN'), ('Tasks', 'PROPN'), ('\t', 'SPACE'), ('Expert', 'PROPN'), ('Tasks', 'VERB'), (' \t', 'SPACE'), ('Perception', 'NOUN'), ('·', 'PUNCT'), ('Computer', 'PROPN'), ('Vision', 'PROPN'), ('·', 'PUNCT'), ('Speech', 'PROPN'), (',', 'PUNCT'), ('Voice', 'PROPN'), ('\t', 'SPACE'), ('·', 'PUNCT'), ('Mathematics', 'PROPN'), ('·', 'PUNCT'), ('Geometry', 'PROPN'), ('·', 'PUNCT'), ('Logic', 'PROPN'), ('·', 'PUNCT'), ('Integration', 'PROPN'), ('Differentiation', 'PROPN'), ('\t', 'SPACE'), ('·', 'PUNCT'), ('Engineering', 'PROPN'), ('·', 'PUNCT'), ('Fault', 'PROPN'), ('Finding', 'VERB'), ('·', 'PUNCT'), ('Manufacturing', 'PROPN'), ('·', 'PUNCT'), ('Monitoring', 'VERB'), (' \t', 'SPACE'), ('Natural', 'PROPN'), ('Language', 'PROPN'), ('Processing', 'PROPN'), ('·', 'PUNCT'), ('Understanding', 'PROPN'), ('·', 'PUNCT'), ('Language', 'PROPN'), ('Generation', 'PROPN'), ('·', 'PUNCT'), ('Language', 'PROPN'), ('Translation', 'PROPN'), ('\t', 'SPACE'), ('Games', 'PROPN'), ('·', 'PUNCT'), ('·', 'PUNCT'), ('Chess', 'PROPN'), ('(', 'PUNCT'), ('Deep', 'PROPN'), ('Blue', 'PROPN'), (')', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Tasks', 'nmod'), ('\t', 'compound'), ('Formal', 'compound'), ('Tasks', 'compound'), ('\t', 'compound'), ('Expert', 'compound'), ('Tasks', 'appos'), (' \t', 'compound'), ('Perception', 'nmod'), ('·', 'punct'), ('Computer', 'nmod'), ('Vision', 'nmod'), ('·', 'punct'), ('Speech', 'nmod'), (',', 'punct'), ('Voice', 'compound'), ('\t', 'appos'), ('·', 'punct'), ('Mathematics', 'nmod'), ('·', 'punct'), ('Geometry', 'nmod'), ('·', 'punct'), ('Logic', 'nmod'), ('·', 'punct'), ('Integration', 'nmod'), ('Differentiation', 'conj'), ('\t', 'appos'), ('·', 'punct'), ('Engineering', 'nmod'), ('·', 'punct'), ('Fault', 'compound'), ('Finding', 'appos'), ('·', 'punct'), ('Manufacturing', 'nsubj'), ('·', 'punct'), ('Monitoring', 'advcl'), (' \t', 'nummod'), ('Natural', 'compound'), ('Language', 'nmod'), ('Processing', 'nmod'), ('·', 'punct'), ('Understanding', 'nmod'), ('·', 'punct'), ('Language', 'nmod'), ('Generation', 'nmod'), ('·', 'punct'), ('Language', 'compound'), ('Translation', 'compound'), ('\t', 'compound'), ('Games', 'dobj'), ('·', 'punct'), ('·', 'punct'), ('Chess', 'npadvmod'), ('(', 'punct'), ('Deep', 'compound'), ('Blue', 'appos'), (')', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Tasks, 	], [	, Formal], [Formal, Tasks], [Tasks, 	], [	, Expert], [Expert, Tasks], [Tasks,  	], [ 	, Perception], [Perception, ·], [·, Computer], [Computer, Vision], [Vision, ·], [·, Speech], [Speech, ,], [,, Voice], [Voice, 	], [	, ·], [·, Mathematics], [Mathematics, ·], [·, Geometry], [Geometry, ·], [·, Logic], [Logic, ·], [·, Integration], [Integration, Differentiation], [Differentiation, 	], [	, ·], [·, Engineering], [Engineering, ·], [·, Fault], [Fault, Finding], [Finding, ·], [·, Manufacturing], [Manufacturing, ·], [·, Monitoring], [Monitoring,  	], [ 	, Natural], [Natural, Language], [Language, Processing], [Processing, ·], [·, Understanding], [Understanding, ·], [·, Language], [Language, Generation], [Generation, ·], [·, Language], [Language, Translation], [Translation, 	], [	, Games], [Games, ·], [·, ·], [·, Chess], [Chess, (], [(, Deep], [Deep, Blue], [Blue, )], [), ·]]
+
+>> Trigrams: 
+[[Tasks, 	, Formal], [	, Formal, Tasks], [Formal, Tasks, 	], [Tasks, 	, Expert], [	, Expert, Tasks], [Expert, Tasks,  	], [Tasks,  	, Perception], [ 	, Perception, ·], [Perception, ·, Computer], [·, Computer, Vision], [Computer, Vision, ·], [Vision, ·, Speech], [·, Speech, ,], [Speech, ,, Voice], [,, Voice, 	], [Voice, 	, ·], [	, ·, Mathematics], [·, Mathematics, ·], [Mathematics, ·, Geometry], [·, Geometry, ·], [Geometry, ·, Logic], [·, Logic, ·], [Logic, ·, Integration], [·, Integration, Differentiation], [Integration, Differentiation, 	], [Differentiation, 	, ·], [	, ·, Engineering], [·, Engineering, ·], [Engineering, ·, Fault], [·, Fault, Finding], [Fault, Finding, ·], [Finding, ·, Manufacturing], [·, Manufacturing, ·], [Manufacturing, ·, Monitoring], [·, Monitoring,  	], [Monitoring,  	, Natural], [ 	, Natural, Language], [Natural, Language, Processing], [Language, Processing, ·], [Processing, ·, Understanding], [·, Understanding, ·], [Understanding, ·, Language], [·, Language, Generation], [Language, Generation, ·], [Generation, ·, Language], [·, Language, Translation], [Language, Translation, 	], [Translation, 	, Games], [	, Games, ·], [Games, ·, ·], [·, ·, Chess], [·, Chess, (], [Chess, (, Deep], [(, Deep, Blue], [Deep, Blue, )], [Blue, ), ·]]
+
+>> Noun Phrases are: 
+[Tasks 	Formal Tasks 	Expert Tasks  	Perception · Computer Vision · Speech, Voice 	· Mathematics · Geometry · Logic · Integration and Differentiation 	· Engineering · Fault Finding · Manufacturing,  	Natural Language Processing · Understanding · Language Generation · Language Translation 	Games, (Deep Blue]
+
+>> Named Entities are: 
+[('Speech', 'PERSON'), ('Engineering', 'PERSON'), ('Fault Finding', 'PERSON'), ('Monitoring', 'PERSON'), ('Language Generation', 'PERSON')]
+
+
+============================ Sentence 5 =============================
+
+Ckeckers 	Scientific Analysis  	Common Sense 	Verification 	Financial Analysis  	Reasoning 	Theorem Proving 	Medical Diagnosis  	Planing 	 	Creativity  	Robotics · Locomotive 	 	   Humans learn mundane (ordinary) tasks since their birth. 
+
+
+>> Tokens are: 
+[Ckeckers, 	, Scientific, Analysis,  	, Common, Sense, 	, Verification, 	, Financial, Analysis,  	, Reasoning, 	, Theorem, Proving, 	, Medical, Diagnosis,  	, Planing, 	 	, Creativity,  	, Robotics, ·, Locomotive, 	 	   , Humans, learn, mundane, (, ordinary, ), tasks, birth, .] 
+
+>> PoS Tags are: 
+[('Ckeckers', 'PROPN'), ('\t', 'SPACE'), ('Scientific', 'PROPN'), ('Analysis', 'PROPN'), (' \t', 'SPACE'), ('Common', 'PROPN'), ('Sense', 'PROPN'), ('\t', 'SPACE'), ('Verification', 'PROPN'), ('\t', 'SPACE'), ('Financial', 'PROPN'), ('Analysis', 'PROPN'), (' \t', 'SPACE'), ('Reasoning', 'NOUN'), ('\t', 'SPACE'), ('Theorem', 'PROPN'), ('Proving', 'PROPN'), ('\t', 'SPACE'), ('Medical', 'PROPN'), ('Diagnosis', 'PROPN'), (' \t', 'SPACE'), ('Planing', 'PROPN'), ('\t \t', 'SPACE'), ('Creativity', 'PROPN'), (' \t', 'SPACE'), ('Robotics', 'NOUN'), ('·', 'PUNCT'), ('Locomotive', 'ADJ'), ('\t \t   ', 'SPACE'), ('Humans', 'NOUN'), ('learn', 'VERB'), ('mundane', 'ADJ'), ('(', 'PUNCT'), ('ordinary', 'ADJ'), (')', 'PUNCT'), ('tasks', 'NOUN'), ('birth', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Ckeckers', 'compound'), ('\t', 'compound'), ('Scientific', 'compound'), ('Analysis', 'compound'), (' \t', 'nmod'), ('Common', 'nmod'), ('Sense', 'nmod'), ('\t', 'compound'), ('Verification', 'compound'), ('\t', 'compound'), ('Financial', 'nmod'), ('Analysis', 'appos'), (' \t', 'compound'), ('Reasoning', 'compound'), ('\t', 'compound'), ('Theorem', 'compound'), ('Proving', 'nmod'), ('\t', 'dobj'), ('Medical', 'nmod'), ('Diagnosis', 'dobj'), (' \t', 'compound'), ('Planing', 'compound'), ('\t \t', 'nmod'), ('Creativity', 'compound'), (' \t', 'compound'), ('Robotics', 'dep'), ('·', 'punct'), ('Locomotive', 'amod'), ('\t \t   ', 'compound'), ('Humans', 'nsubj'), ('learn', 'ROOT'), ('mundane', 'amod'), ('(', 'punct'), ('ordinary', 'amod'), (')', 'punct'), ('tasks', 'dobj'), ('birth', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Ckeckers, 	], [	, Scientific], [Scientific, Analysis], [Analysis,  	], [ 	, Common], [Common, Sense], [Sense, 	], [	, Verification], [Verification, 	], [	, Financial], [Financial, Analysis], [Analysis,  	], [ 	, Reasoning], [Reasoning, 	], [	, Theorem], [Theorem, Proving], [Proving, 	], [	, Medical], [Medical, Diagnosis], [Diagnosis,  	], [ 	, Planing], [Planing, 	 	], [	 	, Creativity], [Creativity,  	], [ 	, Robotics], [Robotics, ·], [·, Locomotive], [Locomotive, 	 	   ], [	 	   , Humans], [Humans, learn], [learn, mundane], [mundane, (], [(, ordinary], [ordinary, )], [), tasks], [tasks, birth], [birth, .]]
+
+>> Trigrams: 
+[[Ckeckers, 	, Scientific], [	, Scientific, Analysis], [Scientific, Analysis,  	], [Analysis,  	, Common], [ 	, Common, Sense], [Common, Sense, 	], [Sense, 	, Verification], [	, Verification, 	], [Verification, 	, Financial], [	, Financial, Analysis], [Financial, Analysis,  	], [Analysis,  	, Reasoning], [ 	, Reasoning, 	], [Reasoning, 	, Theorem], [	, Theorem, Proving], [Theorem, Proving, 	], [Proving, 	, Medical], [	, Medical, Diagnosis], [Medical, Diagnosis,  	], [Diagnosis,  	, Planing], [ 	, Planing, 	 	], [Planing, 	 	, Creativity], [	 	, Creativity,  	], [Creativity,  	, Robotics], [ 	, Robotics, ·], [Robotics, ·, Locomotive], [·, Locomotive, 	 	   ], [Locomotive, 	 	   , Humans], [	 	   , Humans, learn], [Humans, learn, mundane], [learn, mundane, (], [mundane, (, ordinary], [(, ordinary, )], [ordinary, ), tasks], [), tasks, birth], [tasks, birth, .]]
+
+>> Noun Phrases are: 
+[Common Sense 	Verification 	Financial Analysis, Medical Diagnosis, Humans, mundane (ordinary) tasks, their birth]
+
+>> Named Entities are: 
+[('Common Sense', 'PERSON')]
+
+
+============================ Sentence 6 =============================
+
+They learn by perception, speaking, using language, and locomotives. 
+
+
+>> Tokens are: 
+[learn, perception, ,, speaking, ,, language, ,, locomotives, .] 
+
+>> PoS Tags are: 
+[('learn', 'VERB'), ('perception', 'NOUN'), (',', 'PUNCT'), ('speaking', 'VERB'), (',', 'PUNCT'), ('language', 'NOUN'), (',', 'PUNCT'), ('locomotives', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('learn', 'ROOT'), ('perception', 'pobj'), (',', 'punct'), ('speaking', 'advcl'), (',', 'punct'), ('language', 'dobj'), (',', 'punct'), ('locomotives', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[learn, perception], [perception, ,], [,, speaking], [speaking, ,], [,, language], [language, ,], [,, locomotives], [locomotives, .]]
+
+>> Trigrams: 
+[[learn, perception, ,], [perception, ,, speaking], [,, speaking, ,], [speaking, ,, language], [,, language, ,], [language, ,, locomotives], [,, locomotives, .]]
+
+>> Noun Phrases are: 
+[They, perception, language]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+They learn Formal Tasks and Expert Tasks later, in that order. 
+
+
+>> Tokens are: 
+[learn, Formal, Tasks, Expert, Tasks, later, ,, order, .] 
+
+>> PoS Tags are: 
+[('learn', 'VERB'), ('Formal', 'PROPN'), ('Tasks', 'PROPN'), ('Expert', 'PROPN'), ('Tasks', 'PROPN'), ('later', 'ADV'), (',', 'PUNCT'), ('order', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('learn', 'ROOT'), ('Formal', 'compound'), ('Tasks', 'dobj'), ('Expert', 'compound'), ('Tasks', 'conj'), ('later', 'advmod'), (',', 'punct'), ('order', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[learn, Formal], [Formal, Tasks], [Tasks, Expert], [Expert, Tasks], [Tasks, later], [later, ,], [,, order], [order, .]]
+
+>> Trigrams: 
+[[learn, Formal, Tasks], [Formal, Tasks, Expert], [Tasks, Expert, Tasks], [Expert, Tasks, later], [Tasks, later, ,], [later, ,, order], [,, order, .]]
+
+>> Noun Phrases are: 
+[They, Formal Tasks, Expert Tasks, that order]
+
+>> Named Entities are: 
+[('Formal Tasks', 'PERSON')]
+
+
+============================ Sentence 8 =============================
+
+For humans, the mundane tasks are easiest to learn. 
+
+
+>> Tokens are: 
+[humans, ,, mundane, tasks, easiest, learn, .] 
+
+>> PoS Tags are: 
+[('humans', 'NOUN'), (',', 'PUNCT'), ('mundane', 'ADJ'), ('tasks', 'NOUN'), ('easiest', 'ADJ'), ('learn', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('humans', 'pobj'), (',', 'punct'), ('mundane', 'amod'), ('tasks', 'nsubj'), ('easiest', 'acomp'), ('learn', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[humans, ,], [,, mundane], [mundane, tasks], [tasks, easiest], [easiest, learn], [learn, .]]
+
+>> Trigrams: 
+[[humans, ,, mundane], [,, mundane, tasks], [mundane, tasks, easiest], [tasks, easiest, learn], [easiest, learn, .]]
+
+>> Noun Phrases are: 
+[humans, the mundane tasks]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+The same was considered true before trying to implement mundane tasks in machines. 
+
+
+>> Tokens are: 
+[considered, true, trying, implement, mundane, tasks, machines, .] 
+
+>> PoS Tags are: 
+[('considered', 'VERB'), ('true', 'ADJ'), ('trying', 'VERB'), ('implement', 'VERB'), ('mundane', 'ADJ'), ('tasks', 'NOUN'), ('machines', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('considered', 'ROOT'), ('true', 'oprd'), ('trying', 'pcomp'), ('implement', 'xcomp'), ('mundane', 'amod'), ('tasks', 'dobj'), ('machines', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[considered, true], [true, trying], [trying, implement], [implement, mundane], [mundane, tasks], [tasks, machines], [machines, .]]
+
+>> Trigrams: 
+[[considered, true, trying], [true, trying, implement], [trying, implement, mundane], [implement, mundane, tasks], [mundane, tasks, machines], [tasks, machines, .]]
+
+>> Noun Phrases are: 
+[mundane tasks, machines]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+Earlier, all work of AI was concentrated in the mundane task domain. 
+
+
+>> Tokens are: 
+[Earlier, ,, work, AI, concentrated, mundane, task, domain, .] 
+
+>> PoS Tags are: 
+[('Earlier', 'ADV'), (',', 'PUNCT'), ('work', 'NOUN'), ('AI', 'PROPN'), ('concentrated', 'VERB'), ('mundane', 'ADJ'), ('task', 'NOUN'), ('domain', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Earlier', 'advmod'), (',', 'punct'), ('work', 'nsubjpass'), ('AI', 'pobj'), ('concentrated', 'ROOT'), ('mundane', 'amod'), ('task', 'compound'), ('domain', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Earlier, ,], [,, work], [work, AI], [AI, concentrated], [concentrated, mundane], [mundane, task], [task, domain], [domain, .]]
+
+>> Trigrams: 
+[[Earlier, ,, work], [,, work, AI], [work, AI, concentrated], [AI, concentrated, mundane], [concentrated, mundane, task], [mundane, task, domain], [task, domain, .]]
+
+>> Noun Phrases are: 
+[all work, AI, the mundane task domain]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 11 =============================
+
+Later, it turned out that the machine requires more knowledge, complex knowledge representation, and complicated algorithms for handling mundane tasks. 
+
+
+>> Tokens are: 
+[Later, ,, turned, machine, requires, knowledge, ,, complex, knowledge, representation, ,, complicated, algorithms, handling, mundane, tasks, .] 
+
+>> PoS Tags are: 
+[('Later', 'ADV'), (',', 'PUNCT'), ('turned', 'VERB'), ('machine', 'NOUN'), ('requires', 'VERB'), ('knowledge', 'NOUN'), (',', 'PUNCT'), ('complex', 'ADJ'), ('knowledge', 'NOUN'), ('representation', 'NOUN'), (',', 'PUNCT'), ('complicated', 'ADJ'), ('algorithms', 'NOUN'), ('handling', 'VERB'), ('mundane', 'ADJ'), ('tasks', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Later', 'advmod'), (',', 'punct'), ('turned', 'ROOT'), ('machine', 'nsubj'), ('requires', 'ccomp'), ('knowledge', 'dobj'), (',', 'punct'), ('complex', 'amod'), ('knowledge', 'compound'), ('representation', 'conj'), (',', 'punct'), ('complicated', 'amod'), ('algorithms', 'conj'), ('handling', 'pcomp'), ('mundane', 'amod'), ('tasks', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Later, ,], [,, turned], [turned, machine], [machine, requires], [requires, knowledge], [knowledge, ,], [,, complex], [complex, knowledge], [knowledge, representation], [representation, ,], [,, complicated], [complicated, algorithms], [algorithms, handling], [handling, mundane], [mundane, tasks], [tasks, .]]
+
+>> Trigrams: 
+[[Later, ,, turned], [,, turned, machine], [turned, machine, requires], [machine, requires, knowledge], [requires, knowledge, ,], [knowledge, ,, complex], [,, complex, knowledge], [complex, knowledge, representation], [knowledge, representation, ,], [representation, ,, complicated], [,, complicated, algorithms], [complicated, algorithms, handling], [algorithms, handling, mundane], [handling, mundane, tasks], [mundane, tasks, .]]
+
+>> Noun Phrases are: 
+[it, the machine, more knowledge, complex knowledge representation, complicated algorithms, mundane tasks]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+This is the reason why AI work is more prospering in the Expert Tasks domain now, as the expert task domain needs expert knowledge without common sense, which can be easier to represent and handle. 
+
+
+>> Tokens are: 
+[reason, AI, work, prospering, Expert, Tasks, domain, ,, expert, task, domain, needs, expert, knowledge, common, sense, ,, easier, represent, handle, .] 
+
+>> PoS Tags are: 
+[('reason', 'NOUN'), ('AI', 'PROPN'), ('work', 'NOUN'), ('prospering', 'NOUN'), ('Expert', 'PROPN'), ('Tasks', 'PROPN'), ('domain', 'NOUN'), (',', 'PUNCT'), ('expert', 'NOUN'), ('task', 'NOUN'), ('domain', 'NOUN'), ('needs', 'VERB'), ('expert', 'ADJ'), ('knowledge', 'NOUN'), ('common', 'ADJ'), ('sense', 'NOUN'), (',', 'PUNCT'), ('easier', 'ADJ'), ('represent', 'VERB'), ('handle', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('reason', 'attr'), ('AI', 'compound'), ('work', 'nsubj'), ('prospering', 'acomp'), ('Expert', 'compound'), ('Tasks', 'compound'), ('domain', 'pobj'), (',', 'punct'), ('expert', 'compound'), ('task', 'compound'), ('domain', 'nsubj'), ('needs', 'advcl'), ('expert', 'amod'), ('knowledge', 'dobj'), ('common', 'amod'), ('sense', 'pobj'), (',', 'punct'), ('easier', 'acomp'), ('represent', 'xcomp'), ('handle', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[reason, AI], [AI, work], [work, prospering], [prospering, Expert], [Expert, Tasks], [Tasks, domain], [domain, ,], [,, expert], [expert, task], [task, domain], [domain, needs], [needs, expert], [expert, knowledge], [knowledge, common], [common, sense], [sense, ,], [,, easier], [easier, represent], [represent, handle], [handle, .]]
+
+>> Trigrams: 
+[[reason, AI, work], [AI, work, prospering], [work, prospering, Expert], [prospering, Expert, Tasks], [Expert, Tasks, domain], [Tasks, domain, ,], [domain, ,, expert], [,, expert, task], [expert, task, domain], [task, domain, needs], [domain, needs, expert], [needs, expert, knowledge], [expert, knowledge, common], [knowledge, common, sense], [common, sense, ,], [sense, ,, easier], [,, easier, represent], [easier, represent, handle], [represent, handle, .]]
+
+>> Noun Phrases are: 
+[the reason, AI work, the Expert Tasks domain, the expert task domain, expert knowledge, common sense]
+
+>> Named Entities are: 
+[('AI', 'ORG')]

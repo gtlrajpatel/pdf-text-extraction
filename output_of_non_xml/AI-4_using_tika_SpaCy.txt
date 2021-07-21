@@ -1,0 +1,838 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-4 Difference between Human and Machine Intelligence · Humans perceive by patterns whereas the machines perceive by set of rules and data. · 
+
+
+>> Tokens are: 
+[AI-4, Difference, Human, Machine, Intelligence, ·, Humans, perceive, patterns, machines, perceive, set, rules, data, ., ·] 
+
+>> PoS Tags are: 
+[('AI-4', 'NUM'), ('Difference', 'NOUN'), ('Human', 'PROPN'), ('Machine', 'PROPN'), ('Intelligence', 'PROPN'), ('·', 'PUNCT'), ('Humans', 'NOUN'), ('perceive', 'VERB'), ('patterns', 'NOUN'), ('machines', 'NOUN'), ('perceive', 'VERB'), ('set', 'NOUN'), ('rules', 'NOUN'), ('data', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI-4', 'punct'), ('Difference', 'nsubj'), ('Human', 'nmod'), ('Machine', 'conj'), ('Intelligence', 'nmod'), ('·', 'punct'), ('Humans', 'pobj'), ('perceive', 'ROOT'), ('patterns', 'pobj'), ('machines', 'nsubj'), ('perceive', 'advcl'), ('set', 'pobj'), ('rules', 'pobj'), ('data', 'conj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[AI-4, Difference], [Difference, Human], [Human, Machine], [Machine, Intelligence], [Intelligence, ·], [·, Humans], [Humans, perceive], [perceive, patterns], [patterns, machines], [machines, perceive], [perceive, set], [set, rules], [rules, data], [data, .], [., ·]]
+
+>> Trigrams: 
+[[AI-4, Difference, Human], [Difference, Human, Machine], [Human, Machine, Intelligence], [Machine, Intelligence, ·], [Intelligence, ·, Humans], [·, Humans, perceive], [Humans, perceive, patterns], [perceive, patterns, machines], [patterns, machines, perceive], [machines, perceive, set], [perceive, set, rules], [set, rules, data], [rules, data, .], [data, ., ·]]
+
+>> Noun Phrases are: 
+[Difference, Human and Machine Intelligence · Humans, patterns, the machines, set, rules, data]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 2 =============================
+
+Humans store and recall information by patterns, machines do it by searching algorithms. 
+
+
+>> Tokens are: 
+[Humans, store, recall, information, patterns, ,, machines, searching, algorithms, .] 
+
+>> PoS Tags are: 
+[('Humans', 'NOUN'), ('store', 'VERB'), ('recall', 'VERB'), ('information', 'NOUN'), ('patterns', 'NOUN'), (',', 'PUNCT'), ('machines', 'NOUN'), ('searching', 'VERB'), ('algorithms', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Humans', 'nsubj'), ('store', 'advcl'), ('recall', 'conj'), ('information', 'dobj'), ('patterns', 'pobj'), (',', 'punct'), ('machines', 'nsubj'), ('searching', 'pcomp'), ('algorithms', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Humans, store], [store, recall], [recall, information], [information, patterns], [patterns, ,], [,, machines], [machines, searching], [searching, algorithms], [algorithms, .]]
+
+>> Trigrams: 
+[[Humans, store, recall], [store, recall, information], [recall, information, patterns], [information, patterns, ,], [patterns, ,, machines], [,, machines, searching], [machines, searching, algorithms], [searching, algorithms, .]]
+
+>> Noun Phrases are: 
+[Humans, information, patterns, machines, it, algorithms]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 3 =============================
+
+For example, the number 40404040 is easy to remember, store, and recall as its pattern is simple. 
+
+
+>> Tokens are: 
+[example, ,, number, 40404040, easy, remember, ,, store, ,, recall, pattern, simple, .] 
+
+>> PoS Tags are: 
+[('example', 'NOUN'), (',', 'PUNCT'), ('number', 'NOUN'), ('40404040', 'NUM'), ('easy', 'ADJ'), ('remember', 'VERB'), (',', 'PUNCT'), ('store', 'NOUN'), (',', 'PUNCT'), ('recall', 'VERB'), ('pattern', 'NOUN'), ('simple', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('example', 'pobj'), (',', 'punct'), ('number', 'nsubj'), ('40404040', 'nummod'), ('easy', 'acomp'), ('remember', 'xcomp'), (',', 'punct'), ('store', 'dobj'), (',', 'punct'), ('recall', 'conj'), ('pattern', 'nsubj'), ('simple', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[example, ,], [,, number], [number, 40404040], [40404040, easy], [easy, remember], [remember, ,], [,, store], [store, ,], [,, recall], [recall, pattern], [pattern, simple], [simple, .]]
+
+>> Trigrams: 
+[[example, ,, number], [,, number, 40404040], [number, 40404040, easy], [40404040, easy, remember], [easy, remember, ,], [remember, ,, store], [,, store, ,], [store, ,, recall], [,, recall, pattern], [recall, pattern, simple], [pattern, simple, .]]
+
+>> Noun Phrases are: 
+[example, number, store, its pattern]
+
+>> Named Entities are: 
+[('40404040', 'CARDINAL')]
+
+
+============================ Sentence 4 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 5 =============================
+
+Humans can figure out the complete object even if some part of it is missing or distorted; whereas the machines cannot do it correctly. 
+
+
+>> Tokens are: 
+[Humans, figure, complete, object, missing, distorted, ;, machines, correctly, .] 
+
+>> PoS Tags are: 
+[('Humans', 'NOUN'), ('figure', 'VERB'), ('complete', 'ADJ'), ('object', 'NOUN'), ('missing', 'VERB'), ('distorted', 'VERB'), (';', 'PUNCT'), ('machines', 'NOUN'), ('correctly', 'ADV'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Humans', 'nsubj'), ('figure', 'ROOT'), ('complete', 'amod'), ('object', 'dobj'), ('missing', 'ccomp'), ('distorted', 'conj'), (';', 'punct'), ('machines', 'nsubj'), ('correctly', 'advmod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Humans, figure], [figure, complete], [complete, object], [object, missing], [missing, distorted], [distorted, ;], [;, machines], [machines, correctly], [correctly, .]]
+
+>> Trigrams: 
+[[Humans, figure, complete], [figure, complete, object], [complete, object, missing], [object, missing, distorted], [missing, distorted, ;], [distorted, ;, machines], [;, machines, correctly], [machines, correctly, .]]
+
+>> Noun Phrases are: 
+[Humans, the complete object, some part, it, the machines, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+ Speech and Voice Recognition 
+
+
+>> Tokens are: 
+[ , Speech, Voice, Recognition] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('Speech', 'PROPN'), ('Voice', 'PROPN'), ('Recognition', 'PROPN')] 
+
+>> Dependency Tags are: 
+[(' ', 'nmod'), ('Speech', 'nmod'), ('Voice', 'conj'), ('Recognition', 'ROOT')]
+
+>> Bigrams: 
+[[ , Speech], [Speech, Voice], [Voice, Recognition]]
+
+>> Trigrams: 
+[[ , Speech, Voice], [Speech, Voice, Recognition]]
+
+>> Noun Phrases are: 
+[ Speech and Voice Recognition]
+
+>> Named Entities are: 
+[('Speech and Voice Recognition', 'ORG')]
+
+
+============================ Sentence 7 =============================
+
+These both terms are common in robotics, expert systems and natural language processing. 
+
+
+>> Tokens are: 
+[terms, common, robotics, ,, expert, systems, natural, language, processing, .] 
+
+>> PoS Tags are: 
+[('terms', 'NOUN'), ('common', 'ADJ'), ('robotics', 'NOUN'), (',', 'PUNCT'), ('expert', 'NOUN'), ('systems', 'NOUN'), ('natural', 'ADJ'), ('language', 'NOUN'), ('processing', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('terms', 'nsubj'), ('common', 'acomp'), ('robotics', 'pobj'), (',', 'punct'), ('expert', 'compound'), ('systems', 'conj'), ('natural', 'amod'), ('language', 'compound'), ('processing', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[terms, common], [common, robotics], [robotics, ,], [,, expert], [expert, systems], [systems, natural], [natural, language], [language, processing], [processing, .]]
+
+>> Trigrams: 
+[[terms, common, robotics], [common, robotics, ,], [robotics, ,, expert], [,, expert, systems], [expert, systems, natural], [systems, natural, language], [natural, language, processing], [language, processing, .]]
+
+>> Noun Phrases are: 
+[both terms, robotics, expert systems, natural language processing]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 8 =============================
+
+Though these terms are used interchangeably, their objectives are different. 
+
+
+>> Tokens are: 
+[terms, interchangeably, ,, objectives, different, .] 
+
+>> PoS Tags are: 
+[('terms', 'NOUN'), ('interchangeably', 'ADV'), (',', 'PUNCT'), ('objectives', 'NOUN'), ('different', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('terms', 'nsubjpass'), ('interchangeably', 'advmod'), (',', 'punct'), ('objectives', 'nsubj'), ('different', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[terms, interchangeably], [interchangeably, ,], [,, objectives], [objectives, different], [different, .]]
+
+>> Trigrams: 
+[[terms, interchangeably, ,], [interchangeably, ,, objectives], [,, objectives, different], [objectives, different, .]]
+
+>> Noun Phrases are: 
+[these terms, their objectives]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+	Speech Recognition 	Voice Recognition  	The speech recognition aims at understanding and comprehending WHAT was spoken. 
+
+
+>> Tokens are: 
+[	, Speech, Recognition, 	, Voice, Recognition,  	, speech, recognition, aims, understanding, comprehending, spoken, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Speech', 'PROPN'), ('Recognition', 'PROPN'), ('\t', 'SPACE'), ('Voice', 'PROPN'), ('Recognition', 'PROPN'), (' \t', 'SPACE'), ('speech', 'NOUN'), ('recognition', 'NOUN'), ('aims', 'VERB'), ('understanding', 'NOUN'), ('comprehending', 'VERB'), ('spoken', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Speech', 'compound'), ('Recognition', 'compound'), ('\t', 'compound'), ('Voice', 'compound'), ('Recognition', 'compound'), (' \t', 'ROOT'), ('speech', 'compound'), ('recognition', 'nsubj'), ('aims', 'relcl'), ('understanding', 'pobj'), ('comprehending', 'conj'), ('spoken', 'ccomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Speech], [Speech, Recognition], [Recognition, 	], [	, Voice], [Voice, Recognition], [Recognition,  	], [ 	, speech], [speech, recognition], [recognition, aims], [aims, understanding], [understanding, comprehending], [comprehending, spoken], [spoken, .]]
+
+>> Trigrams: 
+[[	, Speech, Recognition], [Speech, Recognition, 	], [Recognition, 	, Voice], [	, Voice, Recognition], [Voice, Recognition,  	], [Recognition,  	, speech], [ 	, speech, recognition], [speech, recognition, aims], [recognition, aims, understanding], [aims, understanding, comprehending], [understanding, comprehending, spoken], [comprehending, spoken, .]]
+
+>> Noun Phrases are: 
+[The speech recognition, understanding, WHAT]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+	The objective of voice recognition is to recognize WHO is speaking. 
+
+
+>> Tokens are: 
+[	, objective, voice, recognition, recognize, speaking, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('objective', 'NOUN'), ('voice', 'NOUN'), ('recognition', 'NOUN'), ('recognize', 'VERB'), ('speaking', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'dep'), ('objective', 'nsubj'), ('voice', 'compound'), ('recognition', 'pobj'), ('recognize', 'xcomp'), ('speaking', 'ccomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, objective], [objective, voice], [voice, recognition], [recognition, recognize], [recognize, speaking], [speaking, .]]
+
+>> Trigrams: 
+[[	, objective, voice], [objective, voice, recognition], [voice, recognition, recognize], [recognition, recognize, speaking], [recognize, speaking, .]]
+
+>> Noun Phrases are: 
+[The objective, voice recognition, WHO]
+
+>> Named Entities are: 
+[('WHO', 'ORG')]
+
+
+============================ Sentence 11 =============================
+
+ 	It is used in hand-free computing, map, or menu navigation. 
+
+
+>> Tokens are: 
+[ 	, hand, -, free, computing, ,, map, ,, menu, navigation, .] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('hand', 'NOUN'), ('-', 'PUNCT'), ('free', 'ADJ'), ('computing', 'NOUN'), (',', 'PUNCT'), ('map', 'NOUN'), (',', 'PUNCT'), ('menu', 'VERB'), ('navigation', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' \t', 'ROOT'), ('hand', 'npadvmod'), ('-', 'punct'), ('free', 'amod'), ('computing', 'pobj'), (',', 'punct'), ('map', 'conj'), (',', 'punct'), ('menu', 'conj'), ('navigation', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ 	, hand], [hand, -], [-, free], [free, computing], [computing, ,], [,, map], [map, ,], [,, menu], [menu, navigation], [navigation, .]]
+
+>> Trigrams: 
+[[ 	, hand, -], [hand, -, free], [-, free, computing], [free, computing, ,], [computing, ,, map], [,, map, ,], [map, ,, menu], [,, menu, navigation], [menu, navigation, .]]
+
+>> Noun Phrases are: 
+[It, hand-free computing, map, navigation]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+	It is used to identify a person by analysing its tone, voice pitch, and accent, etc.  	Machine does not need training for Speech Recognition as it is not speaker dependent. 
+
+
+>> Tokens are: 
+[	, identify, person, analysing, tone, ,, voice, pitch, ,, accent, ,, etc, .,  	, Machine, need, training, Speech, Recognition, speaker, dependent, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('identify', 'VERB'), ('person', 'NOUN'), ('analysing', 'VERB'), ('tone', 'NOUN'), (',', 'PUNCT'), ('voice', 'NOUN'), ('pitch', 'NOUN'), (',', 'PUNCT'), ('accent', 'VERB'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'PUNCT'), (' \t', 'SPACE'), ('Machine', 'NOUN'), ('need', 'VERB'), ('training', 'NOUN'), ('Speech', 'PROPN'), ('Recognition', 'PROPN'), ('speaker', 'NOUN'), ('dependent', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'intj'), ('identify', 'xcomp'), ('person', 'dobj'), ('analysing', 'pcomp'), ('tone', 'dobj'), (',', 'punct'), ('voice', 'compound'), ('pitch', 'dobj'), (',', 'punct'), ('accent', 'conj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct'), (' \t', 'compound'), ('Machine', 'nsubj'), ('need', 'ccomp'), ('training', 'dobj'), ('Speech', 'compound'), ('Recognition', 'pobj'), ('speaker', 'attr'), ('dependent', 'amod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, identify], [identify, person], [person, analysing], [analysing, tone], [tone, ,], [,, voice], [voice, pitch], [pitch, ,], [,, accent], [accent, ,], [,, etc], [etc, .], [.,  	], [ 	, Machine], [Machine, need], [need, training], [training, Speech], [Speech, Recognition], [Recognition, speaker], [speaker, dependent], [dependent, .]]
+
+>> Trigrams: 
+[[	, identify, person], [identify, person, analysing], [person, analysing, tone], [analysing, tone, ,], [tone, ,, voice], [,, voice, pitch], [voice, pitch, ,], [pitch, ,, accent], [,, accent, ,], [accent, ,, etc], [,, etc, .], [etc, .,  	], [.,  	, Machine], [ 	, Machine, need], [Machine, need, training], [need, training, Speech], [training, Speech, Recognition], [Speech, Recognition, speaker], [Recognition, speaker, dependent], [speaker, dependent, .]]
+
+>> Noun Phrases are: 
+[It, a person, its tone, voice pitch,  	Machine, training, Speech Recognition, it, speaker]
+
+>> Named Entities are: 
+[('Speech Recognition', 'PERSON')]
+
+
+============================ Sentence 13 =============================
+
+	This recognition system needs training as it is person oriented. 
+
+
+>> Tokens are: 
+[	, recognition, system, needs, training, person, oriented, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('recognition', 'NOUN'), ('system', 'NOUN'), ('needs', 'VERB'), ('training', 'NOUN'), ('person', 'NOUN'), ('oriented', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'dep'), ('recognition', 'compound'), ('system', 'nsubj'), ('needs', 'ROOT'), ('training', 'dobj'), ('person', 'npadvmod'), ('oriented', 'acomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, recognition], [recognition, system], [system, needs], [needs, training], [training, person], [person, oriented], [oriented, .]]
+
+>> Trigrams: 
+[[	, recognition, system], [recognition, system, needs], [system, needs, training], [needs, training, person], [training, person, oriented], [person, oriented, .]]
+
+>> Noun Phrases are: 
+[This recognition system, training, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+ 	Speaker independent Speech Recognition systems are difficult to develop. 
+
+
+>> Tokens are: 
+[ 	, Speaker, independent, Speech, Recognition, systems, difficult, develop, .] 
+
+>> PoS Tags are: 
+[(' \t', 'SPACE'), ('Speaker', 'PROPN'), ('independent', 'ADJ'), ('Speech', 'PROPN'), ('Recognition', 'PROPN'), ('systems', 'NOUN'), ('difficult', 'ADJ'), ('develop', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' \t', 'nmod'), ('Speaker', 'nmod'), ('independent', 'amod'), ('Speech', 'compound'), ('Recognition', 'compound'), ('systems', 'nsubj'), ('difficult', 'acomp'), ('develop', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ 	, Speaker], [Speaker, independent], [independent, Speech], [Speech, Recognition], [Recognition, systems], [systems, difficult], [difficult, develop], [develop, .]]
+
+>> Trigrams: 
+[[ 	, Speaker, independent], [Speaker, independent, Speech], [independent, Speech, Recognition], [Speech, Recognition, systems], [Recognition, systems, difficult], [systems, difficult, develop], [difficult, develop, .]]
+
+>> Noun Phrases are: 
+[ 	Speaker independent Speech Recognition systems]
+
+>> Named Entities are: 
+[('Speech Recognition', 'PERSON')]
+
+
+============================ Sentence 15 =============================
+
+	Speaker dependent Speech Recognition systems are comparatively easy to develop. 
+
+
+>> Tokens are: 
+[	, Speaker, dependent, Speech, Recognition, systems, comparatively, easy, develop, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Speaker', 'PROPN'), ('dependent', 'ADJ'), ('Speech', 'PROPN'), ('Recognition', 'PROPN'), ('systems', 'NOUN'), ('comparatively', 'ADV'), ('easy', 'ADJ'), ('develop', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'nmod'), ('Speaker', 'compound'), ('dependent', 'amod'), ('Speech', 'compound'), ('Recognition', 'compound'), ('systems', 'nsubj'), ('comparatively', 'advmod'), ('easy', 'acomp'), ('develop', 'xcomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Speaker], [Speaker, dependent], [dependent, Speech], [Speech, Recognition], [Recognition, systems], [systems, comparatively], [comparatively, easy], [easy, develop], [develop, .]]
+
+>> Trigrams: 
+[[	, Speaker, dependent], [Speaker, dependent, Speech], [dependent, Speech, Recognition], [Speech, Recognition, systems], [Recognition, systems, comparatively], [systems, comparatively, easy], [comparatively, easy, develop], [easy, develop, .]]
+
+>> Noun Phrases are: 
+[	Speaker dependent Speech Recognition systems]
+
+>> Named Entities are: 
+[('Speech Recognition', 'PERSON')]
+
+
+============================ Sentence 16 =============================
+
+  Working of Speech and Voice Recognition Systems 
+
+
+>> Tokens are: 
+[  , Working, Speech, Voice, Recognition, Systems] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Working', 'PROPN'), ('Speech', 'PROPN'), ('Voice', 'PROPN'), ('Recognition', 'PROPN'), ('Systems', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('  ', 'ROOT'), ('Working', 'appos'), ('Speech', 'nmod'), ('Voice', 'conj'), ('Recognition', 'compound'), ('Systems', 'pobj')]
+
+>> Bigrams: 
+[[  , Working], [Working, Speech], [Speech, Voice], [Voice, Recognition], [Recognition, Systems]]
+
+>> Trigrams: 
+[[  , Working, Speech], [Working, Speech, Voice], [Speech, Voice, Recognition], [Voice, Recognition, Systems]]
+
+>> Noun Phrases are: 
+[Working, Speech and Voice Recognition Systems]
+
+>> Named Entities are: 
+[('Speech and Voice Recognition Systems', 'ORG')]
+
+
+============================ Sentence 17 =============================
+
+The user input spoken at a microphone goes to sound card of the system. 
+
+
+>> Tokens are: 
+[user, input, spoken, microphone, goes, sound, card, system, .] 
+
+>> PoS Tags are: 
+[('user', 'NOUN'), ('input', 'NOUN'), ('spoken', 'VERB'), ('microphone', 'NOUN'), ('goes', 'VERB'), ('sound', 'ADJ'), ('card', 'NOUN'), ('system', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('user', 'compound'), ('input', 'nsubj'), ('spoken', 'ROOT'), ('microphone', 'pobj'), ('goes', 'conj'), ('sound', 'amod'), ('card', 'pobj'), ('system', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[user, input], [input, spoken], [spoken, microphone], [microphone, goes], [goes, sound], [sound, card], [card, system], [system, .]]
+
+>> Trigrams: 
+[[user, input, spoken], [input, spoken, microphone], [spoken, microphone, goes], [microphone, goes, sound], [goes, sound, card], [sound, card, system], [card, system, .]]
+
+>> Noun Phrases are: 
+[The user input, a microphone, sound card, the system]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 18 =============================
+
+The converter turns the analog signal into equivalent digital signal for the speech processing. 
+
+
+>> Tokens are: 
+[converter, turns, analog, signal, equivalent, digital, signal, speech, processing, .] 
+
+>> PoS Tags are: 
+[('converter', 'NOUN'), ('turns', 'VERB'), ('analog', 'NOUN'), ('signal', 'NOUN'), ('equivalent', 'ADJ'), ('digital', 'ADJ'), ('signal', 'NOUN'), ('speech', 'NOUN'), ('processing', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('converter', 'nsubj'), ('turns', 'ROOT'), ('analog', 'compound'), ('signal', 'dobj'), ('equivalent', 'amod'), ('digital', 'amod'), ('signal', 'pobj'), ('speech', 'compound'), ('processing', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[converter, turns], [turns, analog], [analog, signal], [signal, equivalent], [equivalent, digital], [digital, signal], [signal, speech], [speech, processing], [processing, .]]
+
+>> Trigrams: 
+[[converter, turns, analog], [turns, analog, signal], [analog, signal, equivalent], [signal, equivalent, digital], [equivalent, digital, signal], [digital, signal, speech], [signal, speech, processing], [speech, processing, .]]
+
+>> Noun Phrases are: 
+[The converter, the analog signal, equivalent digital signal, the speech processing]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+The database is used to compare the sound patterns to recognize the words. 
+
+
+>> Tokens are: 
+[database, compare, sound, patterns, recognize, words, .] 
+
+>> PoS Tags are: 
+[('database', 'NOUN'), ('compare', 'VERB'), ('sound', 'ADJ'), ('patterns', 'NOUN'), ('recognize', 'VERB'), ('words', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('database', 'nsubjpass'), ('compare', 'xcomp'), ('sound', 'amod'), ('patterns', 'dobj'), ('recognize', 'advcl'), ('words', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[database, compare], [compare, sound], [sound, patterns], [patterns, recognize], [recognize, words], [words, .]]
+
+>> Trigrams: 
+[[database, compare, sound], [compare, sound, patterns], [sound, patterns, recognize], [patterns, recognize, words], [recognize, words, .]]
+
+>> Noun Phrases are: 
+[The database, the sound patterns, the words]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 20 =============================
+
+Finally, a reverse feedback is given to the database. 
+
+
+>> Tokens are: 
+[Finally, ,, reverse, feedback, given, database, .] 
+
+>> PoS Tags are: 
+[('Finally', 'ADV'), (',', 'PUNCT'), ('reverse', 'ADJ'), ('feedback', 'NOUN'), ('given', 'VERB'), ('database', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Finally', 'advmod'), (',', 'punct'), ('reverse', 'amod'), ('feedback', 'nsubjpass'), ('given', 'ROOT'), ('database', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Finally, ,], [,, reverse], [reverse, feedback], [feedback, given], [given, database], [database, .]]
+
+>> Trigrams: 
+[[Finally, ,, reverse], [,, reverse, feedback], [reverse, feedback, given], [feedback, given, database], [given, database, .]]
+
+>> Noun Phrases are: 
+[a reverse feedback, the database]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+This source-language text becomes input to the Translation Engine, which converts it to the target language text. 
+
+
+>> Tokens are: 
+[source, -, language, text, input, Translation, Engine, ,, converts, target, language, text, .] 
+
+>> PoS Tags are: 
+[('source', 'NOUN'), ('-', 'PUNCT'), ('language', 'NOUN'), ('text', 'NOUN'), ('input', 'NOUN'), ('Translation', 'PROPN'), ('Engine', 'PROPN'), (',', 'PUNCT'), ('converts', 'VERB'), ('target', 'NOUN'), ('language', 'NOUN'), ('text', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('source', 'compound'), ('-', 'punct'), ('language', 'compound'), ('text', 'nsubj'), ('input', 'attr'), ('Translation', 'compound'), ('Engine', 'pobj'), (',', 'punct'), ('converts', 'relcl'), ('target', 'compound'), ('language', 'compound'), ('text', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[source, -], [-, language], [language, text], [text, input], [input, Translation], [Translation, Engine], [Engine, ,], [,, converts], [converts, target], [target, language], [language, text], [text, .]]
+
+>> Trigrams: 
+[[source, -, language], [-, language, text], [language, text, input], [text, input, Translation], [input, Translation, Engine], [Translation, Engine, ,], [Engine, ,, converts], [,, converts, target], [converts, target, language], [target, language, text], [language, text, .]]
+
+>> Noun Phrases are: 
+[This source-language text, input, the Translation Engine, it, the target language text]
+
+>> Named Entities are: 
+[('the Translation Engine', 'ORG')]
+
+
+============================ Sentence 22 =============================
+
+They are supported with interactive GUI, large database of vocabulary, etc. 
+
+
+>> Tokens are: 
+[supported, interactive, GUI, ,, large, database, vocabulary, ,, etc, .] 
+
+>> PoS Tags are: 
+[('supported', 'VERB'), ('interactive', 'ADJ'), ('GUI', 'PROPN'), (',', 'PUNCT'), ('large', 'ADJ'), ('database', 'NOUN'), ('vocabulary', 'NOUN'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('supported', 'ROOT'), ('interactive', 'amod'), ('GUI', 'pobj'), (',', 'punct'), ('large', 'amod'), ('database', 'appos'), ('vocabulary', 'pobj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[supported, interactive], [interactive, GUI], [GUI, ,], [,, large], [large, database], [database, vocabulary], [vocabulary, ,], [,, etc], [etc, .]]
+
+>> Trigrams: 
+[[supported, interactive, GUI], [interactive, GUI, ,], [GUI, ,, large], [,, large, database], [large, database, vocabulary], [database, vocabulary, ,], [vocabulary, ,, etc], [,, etc, .]]
+
+>> Noun Phrases are: 
+[They, interactive GUI, large database, vocabulary]
+
+>> Named Entities are: 
+[('GUI', 'ORG')]
+
+
+============================ Sentence 23 =============================
+
+Real Life Applications of Research Areas There is a large array of applications where AI is serving common people in their day-to-day lives − 	Sr. 
+
+
+>> Tokens are: 
+[Real, Life, Applications, Research, Areas, large, array, applications, AI, serving, common, people, day, -, -, day, lives, −, 	, Sr, .] 
+
+>> PoS Tags are: 
+[('Real', 'PROPN'), ('Life', 'PROPN'), ('Applications', 'PROPN'), ('Research', 'PROPN'), ('Areas', 'PROPN'), ('large', 'ADJ'), ('array', 'NOUN'), ('applications', 'NOUN'), ('AI', 'PROPN'), ('serving', 'VERB'), ('common', 'ADJ'), ('people', 'NOUN'), ('day', 'NOUN'), ('-', 'PUNCT'), ('-', 'PUNCT'), ('day', 'NOUN'), ('lives', 'VERB'), ('−', 'PROPN'), ('\t', 'SPACE'), ('Sr', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Real', 'compound'), ('Life', 'compound'), ('Applications', 'nsubj'), ('Research', 'compound'), ('Areas', 'pobj'), ('large', 'amod'), ('array', 'attr'), ('applications', 'pobj'), ('AI', 'nsubj'), ('serving', 'relcl'), ('common', 'amod'), ('people', 'dobj'), ('day', 'nmod'), ('-', 'punct'), ('-', 'punct'), ('day', 'pobj'), ('lives', 'pobj'), ('−', 'compound'), ('\t', 'compound'), ('Sr', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Real, Life], [Life, Applications], [Applications, Research], [Research, Areas], [Areas, large], [large, array], [array, applications], [applications, AI], [AI, serving], [serving, common], [common, people], [people, day], [day, -], [-, -], [-, day], [day, lives], [lives, −], [−, 	], [	, Sr], [Sr, .]]
+
+>> Trigrams: 
+[[Real, Life, Applications], [Life, Applications, Research], [Applications, Research, Areas], [Research, Areas, large], [Areas, large, array], [large, array, applications], [array, applications, AI], [applications, AI, serving], [AI, serving, common], [serving, common, people], [common, people, day], [people, day, -], [day, -, -], [-, -, day], [-, day, lives], [day, lives, −], [lives, −, 	], [−, 	, Sr], [	, Sr, .]]
+
+>> Noun Phrases are: 
+[Real Life Applications, Research Areas, a large array, applications, AI, common people, day, − 	Sr]
+
+>> Named Entities are: 
+[('Real Life Applications of Research Areas There', 'WORK_OF_ART'), ('AI', 'ORG')]
+
+
+============================ Sentence 24 =============================
+
+No. 
+
+
+>> Tokens are: 
+[.] 
+
+>> PoS Tags are: 
+[('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('.', 'punct')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+	Research Areas 	Real Life Application  	1 	Expert Systems Examples − Flight-tracking systems, Clinical systems. 
+
+
+>> Tokens are: 
+[	, Research, Areas, 	, Real, Life, Application,  	, 1, 	, Expert, Systems, Examples, −, Flight, -, tracking, systems, ,, Clinical, systems, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Research', 'PROPN'), ('Areas', 'PROPN'), ('\t', 'SPACE'), ('Real', 'PROPN'), ('Life', 'PROPN'), ('Application', 'PROPN'), (' \t', 'SPACE'), ('1', 'NUM'), ('\t', 'SPACE'), ('Expert', 'PROPN'), ('Systems', 'PROPN'), ('Examples', 'PROPN'), ('−', 'PROPN'), ('Flight', 'PROPN'), ('-', 'PUNCT'), ('tracking', 'NOUN'), ('systems', 'NOUN'), (',', 'PUNCT'), ('Clinical', 'ADJ'), ('systems', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Research', 'compound'), ('Areas', 'nmod'), ('\t', 'nmod'), ('Real', 'compound'), ('Life', 'nmod'), ('Application', 'nmod'), (' \t', 'nmod'), ('1', 'nummod'), ('\t', 'compound'), ('Expert', 'compound'), ('Systems', 'compound'), ('Examples', 'compound'), ('−', 'appos'), ('Flight', 'compound'), ('-', 'punct'), ('tracking', 'compound'), ('systems', 'ROOT'), (',', 'punct'), ('Clinical', 'compound'), ('systems', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Research], [Research, Areas], [Areas, 	], [	, Real], [Real, Life], [Life, Application], [Application,  	], [ 	, 1], [1, 	], [	, Expert], [Expert, Systems], [Systems, Examples], [Examples, −], [−, Flight], [Flight, -], [-, tracking], [tracking, systems], [systems, ,], [,, Clinical], [Clinical, systems], [systems, .]]
+
+>> Trigrams: 
+[[	, Research, Areas], [Research, Areas, 	], [Areas, 	, Real], [	, Real, Life], [Real, Life, Application], [Life, Application,  	], [Application,  	, 1], [ 	, 1, 	], [1, 	, Expert], [	, Expert, Systems], [Expert, Systems, Examples], [Systems, Examples, −], [Examples, −, Flight], [−, Flight, -], [Flight, -, tracking], [-, tracking, systems], [tracking, systems, ,], [systems, ,, Clinical], [,, Clinical, systems], [Clinical, systems, .]]
+
+>> Noun Phrases are: 
+[ 	1 	Expert Systems Examples −, Clinical systems]
+
+>> Named Entities are: 
+[('1', 'CARDINAL'), ('Clinical', 'ORG')]
+
+
+============================ Sentence 26 =============================
+
+	  	2 	Natural Language Processing Examples: Google Now feature, speech recognition, Automatic voice output. 
+
+
+>> Tokens are: 
+[	  	, 2, 	, Natural, Language, Processing, Examples, :, Google, feature, ,, speech, recognition, ,, Automatic, voice, output, .] 
+
+>> PoS Tags are: 
+[('\t  \t', 'SPACE'), ('2', 'NUM'), ('\t', 'SPACE'), ('Natural', 'PROPN'), ('Language', 'PROPN'), ('Processing', 'PROPN'), ('Examples', 'NOUN'), (':', 'PUNCT'), ('Google', 'PROPN'), ('feature', 'NOUN'), (',', 'PUNCT'), ('speech', 'NOUN'), ('recognition', 'NOUN'), (',', 'PUNCT'), ('Automatic', 'ADJ'), ('voice', 'NOUN'), ('output', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t  \t', 'ROOT'), ('2', 'nummod'), ('\t', 'compound'), ('Natural', 'compound'), ('Language', 'compound'), ('Processing', 'compound'), ('Examples', 'appos'), (':', 'punct'), ('Google', 'appos'), ('feature', 'conj'), (',', 'punct'), ('speech', 'compound'), ('recognition', 'conj'), (',', 'punct'), ('Automatic', 'amod'), ('voice', 'compound'), ('output', 'appos'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	  	, 2], [2, 	], [	, Natural], [Natural, Language], [Language, Processing], [Processing, Examples], [Examples, :], [:, Google], [Google, feature], [feature, ,], [,, speech], [speech, recognition], [recognition, ,], [,, Automatic], [Automatic, voice], [voice, output], [output, .]]
+
+>> Trigrams: 
+[[	  	, 2, 	], [2, 	, Natural], [	, Natural, Language], [Natural, Language, Processing], [Language, Processing, Examples], [Processing, Examples, :], [Examples, :, Google], [:, Google, feature], [Google, feature, ,], [feature, ,, speech], [,, speech, recognition], [speech, recognition, ,], [recognition, ,, Automatic], [,, Automatic, voice], [Automatic, voice, output], [voice, output, .]]
+
+>> Noun Phrases are: 
+[	Natural Language Processing Examples, Google, Now feature, speech recognition, Automatic voice output]
+
+>> Named Entities are: 
+[('2', 'CARDINAL'), ('Automatic', 'GPE')]
+
+
+============================ Sentence 27 =============================
+
+	  	3 
+
+
+>> Tokens are: 
+[	  	, 3] 
+
+>> PoS Tags are: 
+[('\t  \t', 'SPACE'), ('3', 'NUM')] 
+
+>> Dependency Tags are: 
+[('\t  \t', 'ROOT'), ('3', 'nummod')]
+
+>> Bigrams: 
+[[	  	, 3]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('3', 'CARDINAL')]
+
+
+============================ Sentence 28 =============================
+
+	Neural Networks Examples − Pattern recognition systems such as face recognition, character recognition, handwriting recognition. 
+
+
+>> Tokens are: 
+[	, Neural, Networks, Examples, −, Pattern, recognition, systems, face, recognition, ,, character, recognition, ,, handwriting, recognition, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Neural', 'PROPN'), ('Networks', 'PROPN'), ('Examples', 'PROPN'), ('−', 'PROPN'), ('Pattern', 'PROPN'), ('recognition', 'NOUN'), ('systems', 'NOUN'), ('face', 'NOUN'), ('recognition', 'NOUN'), (',', 'PUNCT'), ('character', 'NOUN'), ('recognition', 'NOUN'), (',', 'PUNCT'), ('handwriting', 'NOUN'), ('recognition', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Neural', 'compound'), ('Networks', 'compound'), ('Examples', 'compound'), ('−', 'compound'), ('Pattern', 'compound'), ('recognition', 'compound'), ('systems', 'ROOT'), ('face', 'compound'), ('recognition', 'pobj'), (',', 'punct'), ('character', 'compound'), ('recognition', 'conj'), (',', 'punct'), ('handwriting', 'compound'), ('recognition', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Neural], [Neural, Networks], [Networks, Examples], [Examples, −], [−, Pattern], [Pattern, recognition], [recognition, systems], [systems, face], [face, recognition], [recognition, ,], [,, character], [character, recognition], [recognition, ,], [,, handwriting], [handwriting, recognition], [recognition, .]]
+
+>> Trigrams: 
+[[	, Neural, Networks], [Neural, Networks, Examples], [Networks, Examples, −], [Examples, −, Pattern], [−, Pattern, recognition], [Pattern, recognition, systems], [recognition, systems, face], [systems, face, recognition], [face, recognition, ,], [recognition, ,, character], [,, character, recognition], [character, recognition, ,], [recognition, ,, handwriting], [,, handwriting, recognition], [handwriting, recognition, .]]
+
+>> Noun Phrases are: 
+[	Neural Networks Examples − Pattern recognition systems, face recognition, character recognition, handwriting recognition]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 29 =============================
+
+	  	4 	Robotics Examples − Industrial robots for moving, spraying, painting, precision checking, drilling, cleaning, coating, carving, etc. 
+
+
+>> Tokens are: 
+[	  	, 4, 	, Robotics, Examples, −, Industrial, robots, moving, ,, spraying, ,, painting, ,, precision, checking, ,, drilling, ,, cleaning, ,, coating, ,, carving, ,, etc, .] 
+
+>> PoS Tags are: 
+[('\t  \t', 'SPACE'), ('4', 'NUM'), ('\t', 'SPACE'), ('Robotics', 'PROPN'), ('Examples', 'PROPN'), ('−', 'PROPN'), ('Industrial', 'PROPN'), ('robots', 'NOUN'), ('moving', 'VERB'), (',', 'PUNCT'), ('spraying', 'VERB'), (',', 'PUNCT'), ('painting', 'NOUN'), (',', 'PUNCT'), ('precision', 'NOUN'), ('checking', 'NOUN'), (',', 'PUNCT'), ('drilling', 'NOUN'), (',', 'PUNCT'), ('cleaning', 'NOUN'), (',', 'PUNCT'), ('coating', 'NOUN'), (',', 'PUNCT'), ('carving', 'NOUN'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'X')] 
+
+>> Dependency Tags are: 
+[('\t  \t', 'nummod'), ('4', 'nummod'), ('\t', 'compound'), ('Robotics', 'nmod'), ('Examples', 'compound'), ('−', 'appos'), ('Industrial', 'compound'), ('robots', 'ROOT'), ('moving', 'pcomp'), (',', 'punct'), ('spraying', 'conj'), (',', 'punct'), ('painting', 'conj'), (',', 'punct'), ('precision', 'compound'), ('checking', 'conj'), (',', 'punct'), ('drilling', 'conj'), (',', 'punct'), ('cleaning', 'conj'), (',', 'punct'), ('coating', 'conj'), (',', 'punct'), ('carving', 'conj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	  	, 4], [4, 	], [	, Robotics], [Robotics, Examples], [Examples, −], [−, Industrial], [Industrial, robots], [robots, moving], [moving, ,], [,, spraying], [spraying, ,], [,, painting], [painting, ,], [,, precision], [precision, checking], [checking, ,], [,, drilling], [drilling, ,], [,, cleaning], [cleaning, ,], [,, coating], [coating, ,], [,, carving], [carving, ,], [,, etc], [etc, .]]
+
+>> Trigrams: 
+[[	  	, 4, 	], [4, 	, Robotics], [	, Robotics, Examples], [Robotics, Examples, −], [Examples, −, Industrial], [−, Industrial, robots], [Industrial, robots, moving], [robots, moving, ,], [moving, ,, spraying], [,, spraying, ,], [spraying, ,, painting], [,, painting, ,], [painting, ,, precision], [,, precision, checking], [precision, checking, ,], [checking, ,, drilling], [,, drilling, ,], [drilling, ,, cleaning], [,, cleaning, ,], [cleaning, ,, coating], [,, coating, ,], [coating, ,, carving], [,, carving, ,], [carving, ,, etc], [,, etc, .]]
+
+>> Noun Phrases are: 
+[Examples −, painting, precision checking, drilling, cleaning, coating, carving]
+
+>> Named Entities are: 
+[('4', 'CARDINAL')]
+
+
+============================ Sentence 30 =============================
+
+	  	5 
+
+
+>> Tokens are: 
+[	  	, 5] 
+
+>> PoS Tags are: 
+[('\t  \t', 'SPACE'), ('5', 'NUM')] 
+
+>> Dependency Tags are: 
+[('\t  \t', 'ROOT'), ('5', 'nummod')]
+
+>> Bigrams: 
+[[	  	, 5]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('5', 'CARDINAL')]
+
+
+============================ Sentence 31 =============================
+
+	Fuzzy Logic Systems Examples − Consumer electronics, automobiles, etc. 
+
+
+>> Tokens are: 
+[	, Fuzzy, Logic, Systems, Examples, −, Consumer, electronics, ,, automobiles, ,, etc, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Fuzzy', 'PROPN'), ('Logic', 'PROPN'), ('Systems', 'PROPN'), ('Examples', 'PROPN'), ('−', 'PROPN'), ('Consumer', 'PROPN'), ('electronics', 'NOUN'), (',', 'PUNCT'), ('automobiles', 'NOUN'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Fuzzy', 'compound'), ('Logic', 'compound'), ('Systems', 'compound'), ('Examples', 'compound'), ('−', 'compound'), ('Consumer', 'compound'), ('electronics', 'ROOT'), (',', 'punct'), ('automobiles', 'conj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Fuzzy], [Fuzzy, Logic], [Logic, Systems], [Systems, Examples], [Examples, −], [−, Consumer], [Consumer, electronics], [electronics, ,], [,, automobiles], [automobiles, ,], [,, etc], [etc, .]]
+
+>> Trigrams: 
+[[	, Fuzzy, Logic], [Fuzzy, Logic, Systems], [Logic, Systems, Examples], [Systems, Examples, −], [Examples, −, Consumer], [−, Consumer, electronics], [Consumer, electronics, ,], [electronics, ,, automobiles], [,, automobiles, ,], [automobiles, ,, etc], [,, etc, .]]
+
+>> Noun Phrases are: 
+[	Fuzzy Logic Systems Examples − Consumer electronics, automobiles]
+
+>> Named Entities are: 
+[]

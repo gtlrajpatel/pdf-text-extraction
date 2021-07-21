@@ -1,0 +1,1621 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+PowerPoint Presentation  Unit – 4 Error Recovery dixita.kagathara@darshan.ac.in +91 - 97277 47317 (CE Department) 
+
+
+>> Tokens are: 
+[PowerPoint, Presentation,  , Unit, –, 4, Error, Recovery, dixita.kagathara@darshan.ac.in, +91, -, 97277, 47317, (, CE, Department, )] 
+
+>> PoS Tags are: 
+[('PowerPoint', 'PROPN'), ('Presentation', 'PROPN'), (' ', 'SPACE'), ('Unit', 'PROPN'), ('–', 'PUNCT'), ('4', 'NUM'), ('Error', 'PROPN'), ('Recovery', 'PROPN'), ('dixita.kagathara@darshan.ac.in', 'PROPN'), ('+91', 'NOUN'), ('-', 'PUNCT'), ('97277', 'NUM'), ('47317', 'NUM'), ('(', 'PUNCT'), ('CE', 'PROPN'), ('Department', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('PowerPoint', 'compound'), ('Presentation', 'ROOT'), (' ', 'compound'), ('Unit', 'appos'), ('–', 'punct'), ('4', 'nummod'), ('Error', 'compound'), ('Recovery', 'appos'), ('dixita.kagathara@darshan.ac.in', 'nummod'), ('+91', 'appos'), ('-', 'punct'), ('97277', 'appos'), ('47317', 'nummod'), ('(', 'punct'), ('CE', 'compound'), ('Department', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[PowerPoint, Presentation], [Presentation,  ], [ , Unit], [Unit, –], [–, 4], [4, Error], [Error, Recovery], [Recovery, dixita.kagathara@darshan.ac.in], [dixita.kagathara@darshan.ac.in, +91], [+91, -], [-, 97277], [97277, 47317], [47317, (], [(, CE], [CE, Department], [Department, )]]
+
+>> Trigrams: 
+[[PowerPoint, Presentation,  ], [Presentation,  , Unit], [ , Unit, –], [Unit, –, 4], [–, 4, Error], [4, Error, Recovery], [Error, Recovery, dixita.kagathara@darshan.ac.in], [Recovery, dixita.kagathara@darshan.ac.in, +91], [dixita.kagathara@darshan.ac.in, +91, -], [+91, -, 97277], [-, 97277, 47317], [97277, 47317, (], [47317, (, CE], [(, CE, Department], [CE, Department, )]]
+
+>> Noun Phrases are: 
+[PowerPoint Presentation,  Unit, 4 Error Recovery, +91, (CE Department]
+
+>> Named Entities are: 
+[('CE Department)', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design (CD) GTU # 2170701   Darshan Institute of Engineering & Technology, Rajkot     Looping Topics to be covered  Types of errors Error recovery strategies            Types of errors        Types of Errors Errors Compile time   
+
+
+>> Tokens are: 
+[Computer, Engineering, Department, Prof., Dixita, B., Kagathara, Compiler, Design, (, CD, ), GTU, #, 2170701,   , Darshan, Institute, Engineering, &, Technology, ,, Rajkot,    , , Looping, Topics, covered,  , Types, errors, Error, recovery, strategies,            , Types, errors,        , Types, Errors, Errors, Compile, time,  ] 
+
+>> PoS Tags are: 
+[('Computer', 'PROPN'), ('Engineering', 'PROPN'), ('Department', 'PROPN'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B.', 'PROPN'), ('Kagathara', 'PROPN'), ('Compiler', 'PROPN'), ('Design', 'PROPN'), ('(', 'PUNCT'), ('CD', 'PROPN'), (')', 'PUNCT'), ('GTU', 'NOUN'), ('#', 'NOUN'), ('2170701', 'NUM'), ('  ', 'SPACE'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), (',', 'PUNCT'), ('Rajkot', 'PROPN'), ('   ', 'SPACE'), ('\uf050', 'PROPN'), ('Looping', 'VERB'), ('Topics', 'PROPN'), ('covered', 'VERB'), (' ', 'SPACE'), ('Types', 'NOUN'), ('errors', 'NOUN'), ('Error', 'PROPN'), ('recovery', 'NOUN'), ('strategies', 'NOUN'), ('           ', 'SPACE'), ('Types', 'PROPN'), ('errors', 'NOUN'), ('       ', 'SPACE'), ('Types', 'PROPN'), ('Errors', 'PROPN'), ('Errors', 'PROPN'), ('Compile', 'PROPN'), ('time', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Computer', 'compound'), ('Engineering', 'compound'), ('Department', 'compound'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B.', 'compound'), ('Kagathara', 'compound'), ('Compiler', 'compound'), ('Design', 'ROOT'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('GTU', 'appos'), ('#', 'nmod'), ('2170701', 'nummod'), ('  ', 'appos'), ('Darshan', 'compound'), ('Institute', 'appos'), ('Engineering', 'pobj'), ('&', 'cc'), ('Technology', 'conj'), (',', 'punct'), ('Rajkot', 'appos'), ('   ', 'appos'), ('\uf050', 'appos'), ('Looping', 'advcl'), ('Topics', 'dobj'), ('covered', 'ccomp'), (' ', 'punct'), ('Types', 'appos'), ('errors', 'pobj'), ('Error', 'compound'), ('recovery', 'compound'), ('strategies', 'appos'), ('           ', 'nummod'), ('Types', 'appos'), ('errors', 'pobj'), ('       ', 'compound'), ('Types', 'appos'), ('Errors', 'compound'), ('Errors', 'compound'), ('Compile', 'compound'), ('time', 'pobj'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Computer, Engineering], [Engineering, Department], [Department, Prof.], [Prof., Dixita], [Dixita, B.], [B., Kagathara], [Kagathara, Compiler], [Compiler, Design], [Design, (], [(, CD], [CD, )], [), GTU], [GTU, #], [#, 2170701], [2170701,   ], [  , Darshan], [Darshan, Institute], [Institute, Engineering], [Engineering, &], [&, Technology], [Technology, ,], [,, Rajkot], [Rajkot,    ], [   , ], [, Looping], [Looping, Topics], [Topics, covered], [covered,  ], [ , Types], [Types, errors], [errors, Error], [Error, recovery], [recovery, strategies], [strategies,            ], [           , Types], [Types, errors], [errors,        ], [       , Types], [Types, Errors], [Errors, Errors], [Errors, Compile], [Compile, time], [time,  ]]
+
+>> Trigrams: 
+[[Computer, Engineering, Department], [Engineering, Department, Prof.], [Department, Prof., Dixita], [Prof., Dixita, B.], [Dixita, B., Kagathara], [B., Kagathara, Compiler], [Kagathara, Compiler, Design], [Compiler, Design, (], [Design, (, CD], [(, CD, )], [CD, ), GTU], [), GTU, #], [GTU, #, 2170701], [#, 2170701,   ], [2170701,   , Darshan], [  , Darshan, Institute], [Darshan, Institute, Engineering], [Institute, Engineering, &], [Engineering, &, Technology], [&, Technology, ,], [Technology, ,, Rajkot], [,, Rajkot,    ], [Rajkot,    , ], [   , , Looping], [, Looping, Topics], [Looping, Topics, covered], [Topics, covered,  ], [covered,  , Types], [ , Types, errors], [Types, errors, Error], [errors, Error, recovery], [Error, recovery, strategies], [recovery, strategies,            ], [strategies,            , Types], [           , Types, errors], [Types, errors,        ], [errors,        , Types], [       , Types, Errors], [Types, Errors, Errors], [Errors, Errors, Compile], [Errors, Compile, time], [Compile, time,  ]]
+
+>> Noun Phrases are: 
+[Computer Engineering Department Prof. Dixita B. Kagathara Compiler Design, CD, GTU, Darshan Institute, Engineering, Technology, Rajkot, , Topics, Types, errors, Error recovery strategies,            Types, errors,        Types, Errors Errors Compile time]
+
+>> Named Entities are: 
+[('Dixita B.', 'PERSON'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('Looping Topics', 'ORG'), ('Types of Errors Errors Compile', 'ORG')]
+
+
+============================ Sentence 3 =============================
+
+Run time Lexical Phase error Syntactic Phase error Semantic Phase error     
+
+
+>> Tokens are: 
+[Run, time, Lexical, Phase, error, Syntactic, Phase, error, Semantic, Phase, error,    ] 
+
+>> PoS Tags are: 
+[('Run', 'PROPN'), ('time', 'NOUN'), ('Lexical', 'PROPN'), ('Phase', 'PROPN'), ('error', 'NOUN'), ('Syntactic', 'PROPN'), ('Phase', 'PROPN'), ('error', 'NOUN'), ('Semantic', 'PROPN'), ('Phase', 'PROPN'), ('error', 'NOUN'), ('   ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Run', 'ROOT'), ('time', 'dobj'), ('Lexical', 'compound'), ('Phase', 'compound'), ('error', 'dobj'), ('Syntactic', 'compound'), ('Phase', 'compound'), ('error', 'compound'), ('Semantic', 'compound'), ('Phase', 'compound'), ('error', 'dobj'), ('   ', 'punct')]
+
+>> Bigrams: 
+[[Run, time], [time, Lexical], [Lexical, Phase], [Phase, error], [error, Syntactic], [Syntactic, Phase], [Phase, error], [error, Semantic], [Semantic, Phase], [Phase, error], [error,    ]]
+
+>> Trigrams: 
+[[Run, time, Lexical], [time, Lexical, Phase], [Lexical, Phase, error], [Phase, error, Syntactic], [error, Syntactic, Phase], [Syntactic, Phase, error], [Phase, error, Semantic], [error, Semantic, Phase], [Semantic, Phase, error], [Phase, error,    ]]
+
+>> Noun Phrases are: 
+[Run, time, Lexical Phase error, Syntactic Phase error Semantic Phase error]
+
+>> Named Entities are: 
+[('Semantic Phase', 'ORG')]
+
+
+============================ Sentence 4 =============================
+
+Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 5 =============================
+
+#2170701 (CD)      Unit 4 – Error Recovery ‹#›  Lexical error Lexical errors can be detected during lexical analysis phase. 
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 4, –, Error, Recovery, ‹#›,  , Lexical, error, Lexical, errors, detected, lexical, analysis, phase, .] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'PROPN'), ('Recovery', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE'), ('Lexical', 'PROPN'), ('error', 'NOUN'), ('Lexical', 'ADJ'), ('errors', 'NOUN'), ('detected', 'VERB'), ('lexical', 'ADJ'), ('analysis', 'NOUN'), ('phase', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'dobj'), ('Unit', 'nmod'), ('4', 'nummod'), ('–', 'punct'), ('Error', 'compound'), ('Recovery', 'nmod'), ('‹#›', 'punct'), (' ', 'compound'), ('Lexical', 'compound'), ('error', 'appos'), ('Lexical', 'amod'), ('errors', 'nsubjpass'), ('detected', 'conj'), ('lexical', 'amod'), ('analysis', 'compound'), ('phase', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 4], [4, –], [–, Error], [Error, Recovery], [Recovery, ‹#›], [‹#›,  ], [ , Lexical], [Lexical, error], [error, Lexical], [Lexical, errors], [errors, detected], [detected, lexical], [lexical, analysis], [analysis, phase], [phase, .]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 4], [Unit, 4, –], [4, –, Error], [–, Error, Recovery], [Error, Recovery, ‹#›], [Recovery, ‹#›,  ], [‹#›,  , Lexical], [ , Lexical, error], [Lexical, error, Lexical], [error, Lexical, errors], [Lexical, errors, detected], [errors, detected, lexical], [detected, lexical, analysis], [lexical, analysis, phase], [analysis, phase, .]]
+
+>> Noun Phrases are: 
+[(CD,  Lexical error, lexical analysis phase]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+Typical lexical phase errors are:   Spelling errors   
+
+
+>> Tokens are: 
+[Typical, lexical, phase, errors, :,   , Spelling, errors,  ] 
+
+>> PoS Tags are: 
+[('Typical', 'ADJ'), ('lexical', 'ADJ'), ('phase', 'NOUN'), ('errors', 'NOUN'), (':', 'PUNCT'), ('  ', 'SPACE'), ('Spelling', 'PROPN'), ('errors', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Typical', 'amod'), ('lexical', 'amod'), ('phase', 'compound'), ('errors', 'nsubj'), (':', 'punct'), ('  ', 'attr'), ('Spelling', 'compound'), ('errors', 'appos'), (' ', 'appos')]
+
+>> Bigrams: 
+[[Typical, lexical], [lexical, phase], [phase, errors], [errors, :], [:,   ], [  , Spelling], [Spelling, errors], [errors,  ]]
+
+>> Trigrams: 
+[[Typical, lexical, phase], [lexical, phase, errors], [phase, errors, :], [errors, :,   ], [:,   , Spelling], [  , Spelling, errors], [Spelling, errors,  ]]
+
+>> Noun Phrases are: 
+[Typical lexical phase errors, Spelling errors]
+
+>> Named Entities are: 
+[('Spelling', 'GPE')]
+
+
+============================ Sentence 8 =============================
+
+Exceeding length of identifier or numeric constants   
+
+
+>> Tokens are: 
+[Exceeding, length, identifier, numeric, constants,  ] 
+
+>> PoS Tags are: 
+[('Exceeding', 'VERB'), ('length', 'NOUN'), ('identifier', 'ADJ'), ('numeric', 'ADJ'), ('constants', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Exceeding', 'ROOT'), ('length', 'dobj'), ('identifier', 'amod'), ('numeric', 'conj'), ('constants', 'pobj'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Exceeding, length], [length, identifier], [identifier, numeric], [numeric, constants], [constants,  ]]
+
+>> Trigrams: 
+[[Exceeding, length, identifier], [length, identifier, numeric], [identifier, numeric, constants], [numeric, constants,  ]]
+
+>> Noun Phrases are: 
+[length, identifier or numeric constants]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+Appearance of illegal characters Example:  fi ( )  { } In above code 'fi' cannot be recognized as a misspelling of keyword if rather lexical analyzer will understand that it is an identifier and will return it as valid identifier.   
+
+
+>> Tokens are: 
+[Appearance, illegal, characters, Example, :,  , fi, (, ),  , {, }, code, ', fi, ', recognized, misspelling, keyword, lexical, analyzer, understand, identifier, return, valid, identifier, .,  ] 
+
+>> PoS Tags are: 
+[('Appearance', 'PROPN'), ('illegal', 'ADJ'), ('characters', 'NOUN'), ('Example', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE'), ('fi', 'NOUN'), ('(', 'PUNCT'), (')', 'PUNCT'), (' ', 'SPACE'), ('{', 'PUNCT'), ('}', 'PUNCT'), ('code', 'NOUN'), ("'", 'PUNCT'), ('fi', 'NOUN'), ("'", 'PUNCT'), ('recognized', 'VERB'), ('misspelling', 'NOUN'), ('keyword', 'NOUN'), ('lexical', 'ADJ'), ('analyzer', 'NOUN'), ('understand', 'VERB'), ('identifier', 'ADJ'), ('return', 'VERB'), ('valid', 'ADJ'), ('identifier', 'ADJ'), ('.', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Appearance', 'nsubjpass'), ('illegal', 'amod'), ('characters', 'pobj'), ('Example', 'appos'), (':', 'punct'), (' ', 'nummod'), ('fi', 'appos'), ('(', 'punct'), (')', 'punct'), (' ', 'appos'), ('{', 'punct'), ('}', 'punct'), ('code', 'pobj'), ("'", 'punct'), ('fi', 'pobj'), ("'", 'punct'), ('recognized', 'ROOT'), ('misspelling', 'pobj'), ('keyword', 'pobj'), ('lexical', 'amod'), ('analyzer', 'nsubj'), ('understand', 'advcl'), ('identifier', 'attr'), ('return', 'conj'), ('valid', 'amod'), ('identifier', 'pobj'), ('.', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Appearance, illegal], [illegal, characters], [characters, Example], [Example, :], [:,  ], [ , fi], [fi, (], [(, )], [),  ], [ , {], [{, }], [}, code], [code, '], [', fi], [fi, '], [', recognized], [recognized, misspelling], [misspelling, keyword], [keyword, lexical], [lexical, analyzer], [analyzer, understand], [understand, identifier], [identifier, return], [return, valid], [valid, identifier], [identifier, .], [.,  ]]
+
+>> Trigrams: 
+[[Appearance, illegal, characters], [illegal, characters, Example], [characters, Example, :], [Example, :,  ], [:,  , fi], [ , fi, (], [fi, (, )], [(, ),  ], [),  , {], [ , {, }], [{, }, code], [}, code, '], [code, ', fi], [', fi, '], [fi, ', recognized], [', recognized, misspelling], [recognized, misspelling, keyword], [misspelling, keyword, lexical], [keyword, lexical, analyzer], [lexical, analyzer, understand], [analyzer, understand, identifier], [understand, identifier, return], [identifier, return, valid], [return, valid, identifier], [valid, identifier, .], [identifier, .,  ]]
+
+>> Noun Phrases are: 
+[Appearance, illegal characters, Example,  fi, code, 'fi, a misspelling, keyword, rather lexical analyzer, it, it]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+Thus misspelling causes errors in token formation. 
+
+
+>> Tokens are: 
+[misspelling, causes, errors, token, formation, .] 
+
+>> PoS Tags are: 
+[('misspelling', 'NOUN'), ('causes', 'VERB'), ('errors', 'NOUN'), ('token', 'ADJ'), ('formation', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('misspelling', 'nsubj'), ('causes', 'ROOT'), ('errors', 'dobj'), ('token', 'amod'), ('formation', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[misspelling, causes], [causes, errors], [errors, token], [token, formation], [formation, .]]
+
+>> Trigrams: 
+[[misspelling, causes, errors], [causes, errors, token], [errors, token, formation], [token, formation, .]]
+
+>> Noun Phrases are: 
+[misspelling, errors, token formation]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 11 =============================
+
+     Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[     , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('     ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('     ', 'compound'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[     , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[     , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[     Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 12 =============================
+
+#2170701 (CD)       
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   ] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'npadvmod')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ]]
+
+>> Noun Phrases are: 
+[(CD]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 13 =============================
+
+Unit 4 – Error Recovery ‹#›   
+
+
+>> Tokens are: 
+[Unit, 4, –, Error, Recovery, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'PROPN'), ('Recovery', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Unit', 'nmod'), ('4', 'nummod'), ('–', 'punct'), ('Error', 'compound'), ('Recovery', 'ROOT'), ('‹#›', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[Unit, 4], [4, –], [–, Error], [Error, Recovery], [Recovery, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[Unit, 4, –], [4, –, Error], [–, Error, Recovery], [Error, Recovery, ‹#›], [Recovery, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[Unit 4 – Error Recovery]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+Syntax error Syntax error appear during syntax analysis phase of compiler. 
+
+
+>> Tokens are: 
+[Syntax, error, Syntax, error, appear, syntax, analysis, phase, compiler, .] 
+
+>> PoS Tags are: 
+[('Syntax', 'PROPN'), ('error', 'NOUN'), ('Syntax', 'PROPN'), ('error', 'NOUN'), ('appear', 'VERB'), ('syntax', 'NOUN'), ('analysis', 'NOUN'), ('phase', 'NOUN'), ('compiler', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Syntax', 'compound'), ('error', 'compound'), ('Syntax', 'compound'), ('error', 'nsubj'), ('appear', 'ROOT'), ('syntax', 'compound'), ('analysis', 'compound'), ('phase', 'pobj'), ('compiler', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Syntax, error], [error, Syntax], [Syntax, error], [error, appear], [appear, syntax], [syntax, analysis], [analysis, phase], [phase, compiler], [compiler, .]]
+
+>> Trigrams: 
+[[Syntax, error, Syntax], [error, Syntax, error], [Syntax, error, appear], [error, appear, syntax], [appear, syntax, analysis], [syntax, analysis, phase], [analysis, phase, compiler], [phase, compiler, .]]
+
+>> Noun Phrases are: 
+[Syntax error Syntax error, syntax analysis phase, compiler]
+
+>> Named Entities are: 
+[('Syntax', 'ORG'), ('Syntax', 'ORG')]
+
+
+============================ Sentence 15 =============================
+
+Typical syntax phase errors are:  Errors in structure   
+
+
+>> Tokens are: 
+[Typical, syntax, phase, errors, :,  , Errors, structure,  ] 
+
+>> PoS Tags are: 
+[('Typical', 'ADJ'), ('syntax', 'NOUN'), ('phase', 'NOUN'), ('errors', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE'), ('Errors', 'NOUN'), ('structure', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Typical', 'amod'), ('syntax', 'compound'), ('phase', 'compound'), ('errors', 'nsubj'), (':', 'punct'), (' ', 'compound'), ('Errors', 'attr'), ('structure', 'pobj'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Typical, syntax], [syntax, phase], [phase, errors], [errors, :], [:,  ], [ , Errors], [Errors, structure], [structure,  ]]
+
+>> Trigrams: 
+[[Typical, syntax, phase], [syntax, phase, errors], [phase, errors, :], [errors, :,  ], [:,  , Errors], [ , Errors, structure], [Errors, structure,  ]]
+
+>> Noun Phrases are: 
+[Typical syntax phase errors,  Errors, structure]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 16 =============================
+
+Missing operators   
+
+
+>> Tokens are: 
+[Missing, operators,  ] 
+
+>> PoS Tags are: 
+[('Missing', 'VERB'), ('operators', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Missing', 'amod'), ('operators', 'ROOT'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Missing, operators], [operators,  ]]
+
+>> Trigrams: 
+[[Missing, operators,  ]]
+
+>> Noun Phrases are: 
+[Missing operators]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+Unbalanced parenthesis 
+
+
+>> Tokens are: 
+[Unbalanced, parenthesis] 
+
+>> PoS Tags are: 
+[('Unbalanced', 'ADJ'), ('parenthesis', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Unbalanced', 'amod'), ('parenthesis', 'ROOT')]
+
+>> Bigrams: 
+[[Unbalanced, parenthesis]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Unbalanced parenthesis]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 18 =============================
+
+The parser demands for tokens from lexical analyzer and if the tokens do not satisfy the grammatical rules of programming language then the syntactical errors get raised. 
+
+
+>> Tokens are: 
+[parser, demands, tokens, lexical, analyzer, tokens, satisfy, grammatical, rules, programming, language, syntactical, errors, raised, .] 
+
+>> PoS Tags are: 
+[('parser', 'NOUN'), ('demands', 'VERB'), ('tokens', 'NOUN'), ('lexical', 'ADJ'), ('analyzer', 'NOUN'), ('tokens', 'NOUN'), ('satisfy', 'VERB'), ('grammatical', 'ADJ'), ('rules', 'NOUN'), ('programming', 'NOUN'), ('language', 'NOUN'), ('syntactical', 'ADJ'), ('errors', 'NOUN'), ('raised', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('parser', 'nsubj'), ('demands', 'ROOT'), ('tokens', 'pobj'), ('lexical', 'amod'), ('analyzer', 'pobj'), ('tokens', 'nsubj'), ('satisfy', 'advcl'), ('grammatical', 'amod'), ('rules', 'dobj'), ('programming', 'compound'), ('language', 'pobj'), ('syntactical', 'amod'), ('errors', 'nsubjpass'), ('raised', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[parser, demands], [demands, tokens], [tokens, lexical], [lexical, analyzer], [analyzer, tokens], [tokens, satisfy], [satisfy, grammatical], [grammatical, rules], [rules, programming], [programming, language], [language, syntactical], [syntactical, errors], [errors, raised], [raised, .]]
+
+>> Trigrams: 
+[[parser, demands, tokens], [demands, tokens, lexical], [tokens, lexical, analyzer], [lexical, analyzer, tokens], [analyzer, tokens, satisfy], [tokens, satisfy, grammatical], [satisfy, grammatical, rules], [grammatical, rules, programming], [rules, programming, language], [programming, language, syntactical], [language, syntactical, errors], [syntactical, errors, raised], [errors, raised, .]]
+
+>> Noun Phrases are: 
+[The parser, tokens, lexical analyzer, the tokens, the grammatical rules, programming language, the syntactical errors]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+Example:  printf(“Hello World !!!”) 
+
+
+>> Tokens are: 
+[Example, :,  , printf(“Hello, World, !, !, !, ”, )] 
+
+>> PoS Tags are: 
+[('Example', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE'), ('printf(“Hello', 'X'), ('World', 'PROPN'), ('!', 'PUNCT'), ('!', 'PUNCT'), ('!', 'PUNCT'), ('”', 'PUNCT'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Example', 'ROOT'), (':', 'punct'), (' ', 'appos'), ('printf(“Hello', 'acl'), ('World', 'dobj'), ('!', 'punct'), ('!', 'punct'), ('!', 'punct'), ('”', 'punct'), (')', 'punct')]
+
+>> Bigrams: 
+[[Example, :], [:,  ], [ , printf(“Hello], [printf(“Hello, World], [World, !], [!, !], [!, !], [!, ”], [”, )]]
+
+>> Trigrams: 
+[[Example, :,  ], [:,  , printf(“Hello], [ , printf(“Hello, World], [printf(“Hello, World, !], [World, !, !], [!, !, !], [!, !, ”], [!, ”, )]]
+
+>> Noun Phrases are: 
+[Example, World]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 20 =============================
+
+Error: 
+
+
+>> Tokens are: 
+[Error, :] 
+
+>> PoS Tags are: 
+[('Error', 'NOUN'), (':', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Error', 'ROOT'), (':', 'punct')]
+
+>> Bigrams: 
+[[Error, :]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Error]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+Semicolon missing    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›   
+
+
+>> Tokens are: 
+[Semicolon, missing,    , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  , #, 2170701, (, CD, ),   , ,   , Unit, 4, –, Error, Recovery, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('Semicolon', 'NOUN'), ('missing', 'VERB'), ('   ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'PROPN'), ('Recovery', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Semicolon', 'nsubj'), ('missing', 'ccomp'), ('   ', 'amod'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'dobj'), ('#', 'nmod'), ('3130006', 'appos'), ('(', 'punct'), ('PS', 'nsubj'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'parataxis'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'nsubj'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'prep'), ('#', 'nmod'), ('2170701', 'npadvmod'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'nmod'), ('Unit', 'nmod'), ('4', 'nummod'), ('–', 'punct'), ('Error', 'compound'), ('Recovery', 'dobj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Semicolon, missing], [missing,    ], [   , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ], [ , #], [#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 4], [4, –], [–, Error], [Error, Recovery], [Recovery, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[Semicolon, missing,    ], [missing,    , Prof.], [   , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ], [Kagathara,  , #], [ , #, 2170701], [#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 4], [Unit, 4, –], [4, –, Error], [–, Error, Recovery], [Error, Recovery, ‹#›], [Recovery, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[Semicolon,    Prof. Jay R Dhamsaniya, PS, Unit, Prof. Dixita B Kagathara, (CD,   Unit 4 – Error Recovery]
+
+>> Named Entities are: 
+[('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 22 =============================
+
+Semantic error Semantic error detected during semantic analysis phase. 
+
+
+>> Tokens are: 
+[Semantic, error, Semantic, error, detected, semantic, analysis, phase, .] 
+
+>> PoS Tags are: 
+[('Semantic', 'ADJ'), ('error', 'NOUN'), ('Semantic', 'ADJ'), ('error', 'NOUN'), ('detected', 'VERB'), ('semantic', 'ADJ'), ('analysis', 'NOUN'), ('phase', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Semantic', 'amod'), ('error', 'compound'), ('Semantic', 'amod'), ('error', 'nsubj'), ('detected', 'ROOT'), ('semantic', 'amod'), ('analysis', 'compound'), ('phase', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Semantic, error], [error, Semantic], [Semantic, error], [error, detected], [detected, semantic], [semantic, analysis], [analysis, phase], [phase, .]]
+
+>> Trigrams: 
+[[Semantic, error, Semantic], [error, Semantic, error], [Semantic, error, detected], [error, detected, semantic], [detected, semantic, analysis], [semantic, analysis, phase], [analysis, phase, .]]
+
+>> Noun Phrases are: 
+[Semantic error Semantic error, semantic analysis phase]
+
+>> Named Entities are: 
+[('Semantic', 'NORP')]
+
+
+============================ Sentence 23 =============================
+
+Typical semantic phase errors are: Incompatible types of operands 
+
+
+>> Tokens are: 
+[Typical, semantic, phase, errors, :, Incompatible, types, operands] 
+
+>> PoS Tags are: 
+[('Typical', 'ADJ'), ('semantic', 'ADJ'), ('phase', 'NOUN'), ('errors', 'NOUN'), (':', 'PUNCT'), ('Incompatible', 'ADJ'), ('types', 'NOUN'), ('operands', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Typical', 'amod'), ('semantic', 'amod'), ('phase', 'compound'), ('errors', 'nsubj'), (':', 'punct'), ('Incompatible', 'amod'), ('types', 'attr'), ('operands', 'pobj')]
+
+>> Bigrams: 
+[[Typical, semantic], [semantic, phase], [phase, errors], [errors, :], [:, Incompatible], [Incompatible, types], [types, operands]]
+
+>> Trigrams: 
+[[Typical, semantic, phase], [semantic, phase, errors], [phase, errors, :], [errors, :, Incompatible], [:, Incompatible, types], [Incompatible, types, operands]]
+
+>> Noun Phrases are: 
+[Typical semantic phase errors, Incompatible types, operands]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 24 =============================
+
+Undeclared variable Not matching of actual argument with formal argument Example: 	id1=id2+id3*60 
+
+
+>> Tokens are: 
+[Undeclared, variable, matching, actual, argument, formal, argument, Example, :, 	, id1, =, id2+id3, *, 60] 
+
+>> PoS Tags are: 
+[('Undeclared', 'PROPN'), ('variable', 'NOUN'), ('matching', 'VERB'), ('actual', 'ADJ'), ('argument', 'NOUN'), ('formal', 'ADJ'), ('argument', 'NOUN'), ('Example', 'NOUN'), (':', 'PUNCT'), ('\t', 'SPACE'), ('id1', 'ADV'), ('=', 'NUM'), ('id2+id3', 'X'), ('*', 'PUNCT'), ('60', 'NUM')] 
+
+>> Dependency Tags are: 
+[('Undeclared', 'ROOT'), ('variable', 'dobj'), ('matching', 'xcomp'), ('actual', 'amod'), ('argument', 'pobj'), ('formal', 'amod'), ('argument', 'pobj'), ('Example', 'dobj'), (':', 'punct'), ('\t', 'appos'), ('id1', 'advmod'), ('=', 'punct'), ('id2+id3', 'dobj'), ('*', 'punct'), ('60', 'dobj')]
+
+>> Bigrams: 
+[[Undeclared, variable], [variable, matching], [matching, actual], [actual, argument], [argument, formal], [formal, argument], [argument, Example], [Example, :], [:, 	], [	, id1], [id1, =], [=, id2+id3], [id2+id3, *], [*, 60]]
+
+>> Trigrams: 
+[[Undeclared, variable, matching], [variable, matching, actual], [matching, actual, argument], [actual, argument, formal], [argument, formal, argument], [formal, argument, Example], [argument, Example, :], [Example, :, 	], [:, 	, id1], [	, id1, =], [id1, =, id2+id3], [=, id2+id3, *], [id2+id3, *, 60]]
+
+>> Noun Phrases are: 
+[Undeclared, variable, actual argument, formal argument, Example]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+(Note: id1, id2, id3 are real) 
+
+
+>> Tokens are: 
+[(, Note, :, id1, ,, id2, ,, id3, real, )] 
+
+>> PoS Tags are: 
+[('(', 'PUNCT'), ('Note', 'VERB'), (':', 'PUNCT'), ('id1', 'ADV'), (',', 'PUNCT'), ('id2', 'NOUN'), (',', 'PUNCT'), ('id3', 'NOUN'), ('real', 'ADJ'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('(', 'punct'), ('Note', 'parataxis'), (':', 'punct'), ('id1', 'advmod'), (',', 'punct'), ('id2', 'dep'), (',', 'punct'), ('id3', 'nsubj'), ('real', 'acomp'), (')', 'punct')]
+
+>> Bigrams: 
+[[(, Note], [Note, :], [:, id1], [id1, ,], [,, id2], [id2, ,], [,, id3], [id3, real], [real, )]]
+
+>> Trigrams: 
+[[(, Note, :], [Note, :, id1], [:, id1, ,], [id1, ,, id2], [,, id2, ,], [id2, ,, id3], [,, id3, real], [id3, real, )]]
+
+>> Noun Phrases are: 
+[id3]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+(Directly we can not perform multiplication due to incompatible types of variables)     Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)       
+
+
+>> Tokens are: 
+[(, Directly, perform, multiplication, incompatible, types, variables, ),     , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  , #, 2170701, (, CD, ),   , ,   ] 
+
+>> PoS Tags are: 
+[('(', 'PUNCT'), ('Directly', 'ADV'), ('perform', 'VERB'), ('multiplication', 'NOUN'), ('incompatible', 'ADJ'), ('types', 'NOUN'), ('variables', 'NOUN'), (')', 'PUNCT'), ('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('(', 'punct'), ('Directly', 'advmod'), ('perform', 'ROOT'), ('multiplication', 'dobj'), ('incompatible', 'amod'), ('types', 'pobj'), ('variables', 'pobj'), (')', 'punct'), ('    ', 'compound'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'dobj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'dep'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'dep'), ('#', 'nmod'), ('2170701', 'npadvmod'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'conj'), ('  ', 'punct')]
+
+>> Bigrams: 
+[[(, Directly], [Directly, perform], [perform, multiplication], [multiplication, incompatible], [incompatible, types], [types, variables], [variables, )], [),     ], [    , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ], [ , #], [#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ]]
+
+>> Trigrams: 
+[[(, Directly, perform], [Directly, perform, multiplication], [perform, multiplication, incompatible], [multiplication, incompatible, types], [incompatible, types, variables], [types, variables, )], [variables, ),     ], [),     , Prof.], [    , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ], [Kagathara,  , #], [ , #, 2170701], [#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ]]
+
+>> Noun Phrases are: 
+[we, multiplication, incompatible types, variables,     Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara, (CD]
+
+>> Named Entities are: 
+[('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 27 =============================
+
+Unit 4 – Error Recovery ‹#›   
+
+
+>> Tokens are: 
+[Unit, 4, –, Error, Recovery, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'PROPN'), ('Recovery', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Unit', 'nmod'), ('4', 'nummod'), ('–', 'punct'), ('Error', 'compound'), ('Recovery', 'ROOT'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Unit, 4], [4, –], [–, Error], [Error, Recovery], [Recovery, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[Unit, 4, –], [4, –, Error], [–, Error, Recovery], [Error, Recovery, ‹#›], [Recovery, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[Unit 4 – Error Recovery]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 28 =============================
+
+Error recovery strategies (Ad-Hoc & systematic methods)        Error recovery strategies (Ad-Hoc & systematic methods) There are mainly four error recovery strategies:  Panic mode  Phrase level recovery   
+
+
+>> Tokens are: 
+[Error, recovery, strategies, (, Ad, -, Hoc, &, systematic, methods, ),        , Error, recovery, strategies, (, Ad, -, Hoc, &, systematic, methods, ), mainly, error, recovery, strategies, :,  , Panic, mode,  , Phrase, level, recovery,  ] 
+
+>> PoS Tags are: 
+[('Error', 'PROPN'), ('recovery', 'NOUN'), ('strategies', 'NOUN'), ('(', 'PUNCT'), ('Ad', 'NOUN'), ('-', 'PUNCT'), ('Hoc', 'PROPN'), ('&', 'CCONJ'), ('systematic', 'ADJ'), ('methods', 'NOUN'), (')', 'PUNCT'), ('       ', 'SPACE'), ('Error', 'PROPN'), ('recovery', 'NOUN'), ('strategies', 'NOUN'), ('(', 'PUNCT'), ('Ad', 'NOUN'), ('-', 'PUNCT'), ('Hoc', 'PROPN'), ('&', 'CCONJ'), ('systematic', 'ADJ'), ('methods', 'NOUN'), (')', 'PUNCT'), ('mainly', 'ADV'), ('error', 'NOUN'), ('recovery', 'NOUN'), ('strategies', 'NOUN'), (':', 'PUNCT'), (' ', 'SPACE'), ('Panic', 'NOUN'), ('mode', 'NOUN'), (' ', 'SPACE'), ('Phrase', 'PROPN'), ('level', 'NOUN'), ('recovery', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Error', 'compound'), ('recovery', 'compound'), ('strategies', 'ROOT'), ('(', 'punct'), ('Ad', 'compound'), ('-', 'punct'), ('Hoc', 'appos'), ('&', 'cc'), ('systematic', 'amod'), ('methods', 'conj'), (')', 'punct'), ('       ', 'compound'), ('Error', 'compound'), ('recovery', 'compound'), ('strategies', 'appos'), ('(', 'punct'), ('Ad', 'compound'), ('-', 'punct'), ('Hoc', 'appos'), ('&', 'cc'), ('systematic', 'amod'), ('methods', 'conj'), (')', 'punct'), ('mainly', 'advmod'), ('error', 'compound'), ('recovery', 'compound'), ('strategies', 'attr'), (':', 'punct'), (' ', 'compound'), ('Panic', 'compound'), ('mode', 'appos'), (' ', 'compound'), ('Phrase', 'compound'), ('level', 'compound'), ('recovery', 'appos'), (' ', 'advmod')]
+
+>> Bigrams: 
+[[Error, recovery], [recovery, strategies], [strategies, (], [(, Ad], [Ad, -], [-, Hoc], [Hoc, &], [&, systematic], [systematic, methods], [methods, )], [),        ], [       , Error], [Error, recovery], [recovery, strategies], [strategies, (], [(, Ad], [Ad, -], [-, Hoc], [Hoc, &], [&, systematic], [systematic, methods], [methods, )], [), mainly], [mainly, error], [error, recovery], [recovery, strategies], [strategies, :], [:,  ], [ , Panic], [Panic, mode], [mode,  ], [ , Phrase], [Phrase, level], [level, recovery], [recovery,  ]]
+
+>> Trigrams: 
+[[Error, recovery, strategies], [recovery, strategies, (], [strategies, (, Ad], [(, Ad, -], [Ad, -, Hoc], [-, Hoc, &], [Hoc, &, systematic], [&, systematic, methods], [systematic, methods, )], [methods, ),        ], [),        , Error], [       , Error, recovery], [Error, recovery, strategies], [recovery, strategies, (], [strategies, (, Ad], [(, Ad, -], [Ad, -, Hoc], [-, Hoc, &], [Hoc, &, systematic], [&, systematic, methods], [systematic, methods, )], [methods, ), mainly], [), mainly, error], [mainly, error, recovery], [error, recovery, strategies], [recovery, strategies, :], [strategies, :,  ], [:,  , Panic], [ , Panic, mode], [Panic, mode,  ], [mode,  , Phrase], [ , Phrase, level], [Phrase, level, recovery], [level, recovery,  ]]
+
+>> Noun Phrases are: 
+[Error recovery strategies, Ad-Hoc, systematic methods,        Error recovery strategies, Ad-Hoc, systematic methods, four error recovery strategies,  Panic mode,  Phrase level recovery]
+
+>> Named Entities are: 
+[('Ad-Hoc &', 'ORG'), ('Ad-Hoc &', 'ORG'), ('four', 'CARDINAL')]
+
+
+============================ Sentence 29 =============================
+
+Error production   
+
+
+>> Tokens are: 
+[Error, production,  ] 
+
+>> PoS Tags are: 
+[('Error', 'NOUN'), ('production', 'NOUN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Error', 'compound'), ('production', 'ROOT'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Error, production], [production,  ]]
+
+>> Trigrams: 
+[[Error, production,  ]]
+
+>> Noun Phrases are: 
+[Error production]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 30 =============================
+
+Global generation     Prof. Jay R Dhamsaniya #3130006 (PS)    
+
+
+>> Tokens are: 
+[Global, generation,     , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   ] 
+
+>> PoS Tags are: 
+[('Global', 'ADJ'), ('generation', 'NOUN'), ('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Global', 'amod'), ('generation', 'nmod'), ('    ', 'compound'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'ROOT'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos')]
+
+>> Bigrams: 
+[[Global, generation], [generation,     ], [    , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ]]
+
+>> Trigrams: 
+[[Global, generation,     ], [generation,     , Prof.], [    , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ]]
+
+>> Noun Phrases are: 
+[Global generation     Prof. Jay R Dhamsaniya, (PS]
+
+>> Named Entities are: 
+[('PS', 'ORG')]
+
+
+============================ Sentence 31 =============================
+
+   Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\uf077', 'dep'), ('  ', 'dobj'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 32 =============================
+
+#2170701 (CD)      Unit 4 – Error Recovery ‹#›  Panic mode 
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 4, –, Error, Recovery, ‹#›,  , Panic, mode] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'PROPN'), ('Recovery', 'PROPN'), ('‹#›', 'PART'), (' ', 'SPACE'), ('Panic', 'PROPN'), ('mode', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'nmod'), ('Unit', 'nmod'), ('4', 'nummod'), ('–', 'punct'), ('Error', 'compound'), ('Recovery', 'attr'), ('‹#›', 'punct'), (' ', 'compound'), ('Panic', 'compound'), ('mode', 'appos')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 4], [4, –], [–, Error], [Error, Recovery], [Recovery, ‹#›], [‹#›,  ], [ , Panic], [Panic, mode]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 4], [Unit, 4, –], [4, –, Error], [–, Error, Recovery], [Error, Recovery, ‹#›], [Recovery, ‹#›,  ], [‹#›,  , Panic], [ , Panic, mode]]
+
+>> Noun Phrases are: 
+[(CD,   Unit 4 – Error Recovery,  Panic mode]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 33 =============================
+
+In this method on discovering error, the parser discards input symbol one at a time. 
+
+
+>> Tokens are: 
+[method, discovering, error, ,, parser, discards, input, symbol, time, .] 
+
+>> PoS Tags are: 
+[('method', 'NOUN'), ('discovering', 'VERB'), ('error', 'NOUN'), (',', 'PUNCT'), ('parser', 'NOUN'), ('discards', 'NOUN'), ('input', 'NOUN'), ('symbol', 'NOUN'), ('time', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('method', 'pobj'), ('discovering', 'pcomp'), ('error', 'dobj'), (',', 'punct'), ('parser', 'compound'), ('discards', 'ROOT'), ('input', 'compound'), ('symbol', 'appos'), ('time', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[method, discovering], [discovering, error], [error, ,], [,, parser], [parser, discards], [discards, input], [input, symbol], [symbol, time], [time, .]]
+
+>> Trigrams: 
+[[method, discovering, error], [discovering, error, ,], [error, ,, parser], [,, parser, discards], [parser, discards, input], [discards, input, symbol], [input, symbol, time], [symbol, time, .]]
+
+>> Noun Phrases are: 
+[this method, error, input symbol, a time]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 34 =============================
+
+This process is continued until one of a designated set of synchronizing tokens is found. 
+
+
+>> Tokens are: 
+[process, continued, designated, set, synchronizing, tokens, found, .] 
+
+>> PoS Tags are: 
+[('process', 'NOUN'), ('continued', 'VERB'), ('designated', 'VERB'), ('set', 'NOUN'), ('synchronizing', 'VERB'), ('tokens', 'NOUN'), ('found', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('process', 'nsubjpass'), ('continued', 'ROOT'), ('designated', 'amod'), ('set', 'pobj'), ('synchronizing', 'amod'), ('tokens', 'pobj'), ('found', 'advcl'), ('.', 'punct')]
+
+>> Bigrams: 
+[[process, continued], [continued, designated], [designated, set], [set, synchronizing], [synchronizing, tokens], [tokens, found], [found, .]]
+
+>> Trigrams: 
+[[process, continued, designated], [continued, designated, set], [designated, set, synchronizing], [set, synchronizing, tokens], [synchronizing, tokens, found], [tokens, found, .]]
+
+>> Noun Phrases are: 
+[This process, a designated set, synchronizing tokens]
+
+>> Named Entities are: 
+[('one', 'CARDINAL')]
+
+
+============================ Sentence 35 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 36 =============================
+
+Synchronizing tokens are delimiters such as semicolon or end. 
+
+
+>> Tokens are: 
+[Synchronizing, tokens, delimiters, semicolon, end, .] 
+
+>> PoS Tags are: 
+[('Synchronizing', 'VERB'), ('tokens', 'NOUN'), ('delimiters', 'NOUN'), ('semicolon', 'NOUN'), ('end', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Synchronizing', 'amod'), ('tokens', 'nsubj'), ('delimiters', 'attr'), ('semicolon', 'pobj'), ('end', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Synchronizing, tokens], [tokens, delimiters], [delimiters, semicolon], [semicolon, end], [end, .]]
+
+>> Trigrams: 
+[[Synchronizing, tokens, delimiters], [tokens, delimiters, semicolon], [delimiters, semicolon, end], [semicolon, end, .]]
+
+>> Noun Phrases are: 
+[Synchronizing tokens, delimiters, semicolon, end]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 37 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 38 =============================
+
+These tokens indicate an end of the statement. 
+
+
+>> Tokens are: 
+[tokens, indicate, end, statement, .] 
+
+>> PoS Tags are: 
+[('tokens', 'NOUN'), ('indicate', 'VERB'), ('end', 'NOUN'), ('statement', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('tokens', 'nsubj'), ('indicate', 'ROOT'), ('end', 'dobj'), ('statement', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[tokens, indicate], [indicate, end], [end, statement], [statement, .]]
+
+>> Trigrams: 
+[[tokens, indicate, end], [indicate, end, statement], [end, statement, .]]
+
+>> Noun Phrases are: 
+[These tokens, an end, the statement]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 39 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 40 =============================
+
+If there is less number of errors in the same statement then this strategy is best choice. 
+
+
+>> Tokens are: 
+[number, errors, statement, strategy, best, choice, .] 
+
+>> PoS Tags are: 
+[('number', 'NOUN'), ('errors', 'NOUN'), ('statement', 'NOUN'), ('strategy', 'NOUN'), ('best', 'ADJ'), ('choice', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('number', 'attr'), ('errors', 'pobj'), ('statement', 'pobj'), ('strategy', 'nsubj'), ('best', 'amod'), ('choice', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[number, errors], [errors, statement], [statement, strategy], [strategy, best], [best, choice], [choice, .]]
+
+>> Trigrams: 
+[[number, errors, statement], [errors, statement, strategy], [statement, strategy, best], [strategy, best, choice], [best, choice, .]]
+
+>> Noun Phrases are: 
+[less number, errors, the same statement, this strategy, best choice]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 41 =============================
+
+ fi ( )  { } Scan entire line otherwise scanner will return fi as valid identifier    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara  #2170701 (CD)      Unit 4 – Error Recovery ‹#›   
+
+
+>> Tokens are: 
+[ , fi, (, ),  , {, }, Scan, entire, line, scanner, return, fi, valid, identifier,    , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  , #, 2170701, (, CD, ),   , ,   , Unit, 4, –, Error, Recovery, ‹#›,  ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('fi', 'NOUN'), ('(', 'PUNCT'), (')', 'PUNCT'), (' ', 'SPACE'), ('{', 'PUNCT'), ('}', 'PUNCT'), ('Scan', 'ADJ'), ('entire', 'ADJ'), ('line', 'NOUN'), ('scanner', 'NOUN'), ('return', 'VERB'), ('fi', 'NOUN'), ('valid', 'ADJ'), ('identifier', 'ADJ'), ('   ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE'), ('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'PROPN'), ('Recovery', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'nmod'), ('fi', 'appos'), ('(', 'punct'), (')', 'punct'), (' ', 'appos'), ('{', 'punct'), ('}', 'punct'), ('Scan', 'amod'), ('entire', 'amod'), ('line', 'nmod'), ('scanner', 'nsubj'), ('return', 'ROOT'), ('fi', 'dobj'), ('valid', 'amod'), ('identifier', 'amod'), ('   ', 'nummod'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'pobj'), ('#', 'nmod'), ('3130006', 'npadvmod'), ('(', 'punct'), ('PS', 'nsubj'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'parataxis'), ('  ', 'npadvmod'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'appos'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'npadvmod'), ('#', 'nmod'), ('2170701', 'npadvmod'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'conj'), ('  ', 'npadvmod'), ('Unit', 'nmod'), ('4', 'nummod'), ('–', 'punct'), ('Error', 'compound'), ('Recovery', 'dobj'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[ , fi], [fi, (], [(, )], [),  ], [ , {], [{, }], [}, Scan], [Scan, entire], [entire, line], [line, scanner], [scanner, return], [return, fi], [fi, valid], [valid, identifier], [identifier,    ], [   , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ], [ , #], [#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 4], [4, –], [–, Error], [Error, Recovery], [Recovery, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[ , fi, (], [fi, (, )], [(, ),  ], [),  , {], [ , {, }], [{, }, Scan], [}, Scan, entire], [Scan, entire, line], [entire, line, scanner], [line, scanner, return], [scanner, return, fi], [return, fi, valid], [fi, valid, identifier], [valid, identifier,    ], [identifier,    , Prof.], [   , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ], [Kagathara,  , #], [ , #, 2170701], [#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 4], [Unit, 4, –], [4, –, Error], [–, Error, Recovery], [Error, Recovery, ‹#›], [Recovery, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[fi, fi, valid identifier    Prof. Jay R Dhamsaniya, PS, Unit, Basic Probability, Prof. Dixita B Kagathara, (CD, Unit 4 – Error Recovery]
+
+>> Named Entities are: 
+[('Scan', 'NORP'), ('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 42 =============================
+
+Phrase level recovery In this method, on discovering an error parser performs local correction on remaining input. 
+
+
+>> Tokens are: 
+[Phrase, level, recovery, method, ,, discovering, error, parser, performs, local, correction, remaining, input, .] 
+
+>> PoS Tags are: 
+[('Phrase', 'PROPN'), ('level', 'NOUN'), ('recovery', 'NOUN'), ('method', 'NOUN'), (',', 'PUNCT'), ('discovering', 'VERB'), ('error', 'NOUN'), ('parser', 'NOUN'), ('performs', 'VERB'), ('local', 'ADJ'), ('correction', 'NOUN'), ('remaining', 'VERB'), ('input', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Phrase', 'compound'), ('level', 'compound'), ('recovery', 'ROOT'), ('method', 'pobj'), (',', 'punct'), ('discovering', 'pcomp'), ('error', 'compound'), ('parser', 'nsubj'), ('performs', 'ccomp'), ('local', 'amod'), ('correction', 'dobj'), ('remaining', 'amod'), ('input', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Phrase, level], [level, recovery], [recovery, method], [method, ,], [,, discovering], [discovering, error], [error, parser], [parser, performs], [performs, local], [local, correction], [correction, remaining], [remaining, input], [input, .]]
+
+>> Trigrams: 
+[[Phrase, level, recovery], [level, recovery, method], [recovery, method, ,], [method, ,, discovering], [,, discovering, error], [discovering, error, parser], [error, parser, performs], [parser, performs, local], [performs, local, correction], [local, correction, remaining], [correction, remaining, input], [remaining, input, .]]
+
+>> Noun Phrases are: 
+[Phrase level recovery, this method, an error parser, local correction, remaining input]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 43 =============================
+
+The local correction can be replacing comma by semicolon, deletion of semicolons or inserting missing semicolon.   
+
+
+>> Tokens are: 
+[local, correction, replacing, comma, semicolon, ,, deletion, semicolons, inserting, missing, semicolon, .,  ] 
+
+>> PoS Tags are: 
+[('local', 'ADJ'), ('correction', 'NOUN'), ('replacing', 'VERB'), ('comma', 'NOUN'), ('semicolon', 'NOUN'), (',', 'PUNCT'), ('deletion', 'NOUN'), ('semicolons', 'NOUN'), ('inserting', 'VERB'), ('missing', 'VERB'), ('semicolon', 'NOUN'), ('.', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('local', 'amod'), ('correction', 'nsubj'), ('replacing', 'ROOT'), ('comma', 'dobj'), ('semicolon', 'pobj'), (',', 'punct'), ('deletion', 'dobj'), ('semicolons', 'pobj'), ('inserting', 'conj'), ('missing', 'amod'), ('semicolon', 'dobj'), ('.', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[local, correction], [correction, replacing], [replacing, comma], [comma, semicolon], [semicolon, ,], [,, deletion], [deletion, semicolons], [semicolons, inserting], [inserting, missing], [missing, semicolon], [semicolon, .], [.,  ]]
+
+>> Trigrams: 
+[[local, correction, replacing], [correction, replacing, comma], [replacing, comma, semicolon], [comma, semicolon, ,], [semicolon, ,, deletion], [,, deletion, semicolons], [deletion, semicolons, inserting], [semicolons, inserting, missing], [inserting, missing, semicolon], [missing, semicolon, .], [semicolon, .,  ]]
+
+>> Noun Phrases are: 
+[The local correction, comma, semicolon, deletion, semicolons, missing semicolon]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 44 =============================
+
+This type of local correction is decided by compiler designer. 
+
+
+>> Tokens are: 
+[type, local, correction, decided, compiler, designer, .] 
+
+>> PoS Tags are: 
+[('type', 'NOUN'), ('local', 'ADJ'), ('correction', 'NOUN'), ('decided', 'VERB'), ('compiler', 'NOUN'), ('designer', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('type', 'nsubjpass'), ('local', 'amod'), ('correction', 'pobj'), ('decided', 'ROOT'), ('compiler', 'compound'), ('designer', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[type, local], [local, correction], [correction, decided], [decided, compiler], [compiler, designer], [designer, .]]
+
+>> Trigrams: 
+[[type, local, correction], [local, correction, decided], [correction, decided, compiler], [decided, compiler, designer], [compiler, designer, .]]
+
+>> Noun Phrases are: 
+[This type, local correction, compiler designer]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 45 =============================
+
+This method is used in many error-repairing compilers. 
+
+
+>> Tokens are: 
+[method, error, -, repairing, compilers, .] 
+
+>> PoS Tags are: 
+[('method', 'NOUN'), ('error', 'NOUN'), ('-', 'PUNCT'), ('repairing', 'VERB'), ('compilers', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('method', 'nsubjpass'), ('error', 'npadvmod'), ('-', 'punct'), ('repairing', 'amod'), ('compilers', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[method, error], [error, -], [-, repairing], [repairing, compilers], [compilers, .]]
+
+>> Trigrams: 
+[[method, error, -], [error, -, repairing], [-, repairing, compilers], [repairing, compilers, .]]
+
+>> Noun Phrases are: 
+[This method, many error-repairing compilers]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 46 =============================
+
+    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[    , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('    ', 'compound'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[    , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[    , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[    Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 47 =============================
+
+#2170701 (CD)       
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   ] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'npadvmod')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ]]
+
+>> Noun Phrases are: 
+[(CD]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 48 =============================
+
+Unit 4 – Error Recovery ‹#›   
+
+
+>> Tokens are: 
+[Unit, 4, –, Error, Recovery, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'PROPN'), ('Recovery', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('Unit', 'nmod'), ('4', 'nummod'), ('–', 'punct'), ('Error', 'compound'), ('Recovery', 'ROOT'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[Unit, 4], [4, –], [–, Error], [Error, Recovery], [Recovery, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[Unit, 4, –], [4, –, Error], [–, Error, Recovery], [Error, Recovery, ‹#›], [Recovery, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[Unit 4 – Error Recovery]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 49 =============================
+
+Error production If we have good knowledge of common errors that might be encountered, then we can augment the grammar for the corresponding language with error productions that generate the erroneous constructs. 
+
+
+>> Tokens are: 
+[Error, production, good, knowledge, common, errors, encountered, ,, augment, grammar, corresponding, language, error, productions, generate, erroneous, constructs, .] 
+
+>> PoS Tags are: 
+[('Error', 'NOUN'), ('production', 'NOUN'), ('good', 'ADJ'), ('knowledge', 'NOUN'), ('common', 'ADJ'), ('errors', 'NOUN'), ('encountered', 'VERB'), (',', 'PUNCT'), ('augment', 'VERB'), ('grammar', 'NOUN'), ('corresponding', 'VERB'), ('language', 'NOUN'), ('error', 'NOUN'), ('productions', 'NOUN'), ('generate', 'VERB'), ('erroneous', 'ADJ'), ('constructs', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Error', 'compound'), ('production', 'nsubj'), ('good', 'amod'), ('knowledge', 'dobj'), ('common', 'amod'), ('errors', 'pobj'), ('encountered', 'relcl'), (',', 'punct'), ('augment', 'ROOT'), ('grammar', 'dobj'), ('corresponding', 'amod'), ('language', 'pobj'), ('error', 'compound'), ('productions', 'pobj'), ('generate', 'relcl'), ('erroneous', 'amod'), ('constructs', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Error, production], [production, good], [good, knowledge], [knowledge, common], [common, errors], [errors, encountered], [encountered, ,], [,, augment], [augment, grammar], [grammar, corresponding], [corresponding, language], [language, error], [error, productions], [productions, generate], [generate, erroneous], [erroneous, constructs], [constructs, .]]
+
+>> Trigrams: 
+[[Error, production, good], [production, good, knowledge], [good, knowledge, common], [knowledge, common, errors], [common, errors, encountered], [errors, encountered, ,], [encountered, ,, augment], [,, augment, grammar], [augment, grammar, corresponding], [grammar, corresponding, language], [corresponding, language, error], [language, error, productions], [error, productions, generate], [productions, generate, erroneous], [generate, erroneous, constructs], [erroneous, constructs, .]]
+
+>> Noun Phrases are: 
+[Error production, we, good knowledge, common errors, we, the grammar, the corresponding language, error productions, the erroneous constructs]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 50 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 51 =============================
+
+Then we use the grammar augmented by these error production to construct a parser. 
+
+
+>> Tokens are: 
+[use, grammar, augmented, error, production, construct, parser, .] 
+
+>> PoS Tags are: 
+[('use', 'VERB'), ('grammar', 'NOUN'), ('augmented', 'VERB'), ('error', 'NOUN'), ('production', 'NOUN'), ('construct', 'VERB'), ('parser', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('use', 'ROOT'), ('grammar', 'dobj'), ('augmented', 'acl'), ('error', 'compound'), ('production', 'pobj'), ('construct', 'xcomp'), ('parser', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[use, grammar], [grammar, augmented], [augmented, error], [error, production], [production, construct], [construct, parser], [parser, .]]
+
+>> Trigrams: 
+[[use, grammar, augmented], [grammar, augmented, error], [augmented, error, production], [error, production, construct], [production, construct, parser], [construct, parser, .]]
+
+>> Noun Phrases are: 
+[we, the grammar, these error production, a parser]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 52 =============================
+
+If error production is used then, during parsing we can generate appropriate error message and parsing can be continued. 
+
+
+>> Tokens are: 
+[error, production, ,, parsing, generate, appropriate, error, message, parsing, continued, .] 
+
+>> PoS Tags are: 
+[('error', 'NOUN'), ('production', 'NOUN'), (',', 'PUNCT'), ('parsing', 'VERB'), ('generate', 'VERB'), ('appropriate', 'ADJ'), ('error', 'NOUN'), ('message', 'NOUN'), ('parsing', 'NOUN'), ('continued', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('error', 'compound'), ('production', 'nsubjpass'), (',', 'punct'), ('parsing', 'pcomp'), ('generate', 'ccomp'), ('appropriate', 'amod'), ('error', 'compound'), ('message', 'dobj'), ('parsing', 'conj'), ('continued', 'ROOT'), ('.', 'punct')]
+
+>> Bigrams: 
+[[error, production], [production, ,], [,, parsing], [parsing, generate], [generate, appropriate], [appropriate, error], [error, message], [message, parsing], [parsing, continued], [continued, .]]
+
+>> Trigrams: 
+[[error, production, ,], [production, ,, parsing], [,, parsing, generate], [parsing, generate, appropriate], [generate, appropriate, error], [appropriate, error, message], [error, message, parsing], [message, parsing, continued], [parsing, continued, .]]
+
+>> Noun Phrases are: 
+[error production, we, appropriate error message, parsing]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 53 =============================
+
+    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[    , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('    ', 'nummod'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[    , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[    , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[    Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 54 =============================
+
+#2170701 (CD)      Unit 4 – Error Recovery ‹#›   
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 4, –, Error, Recovery, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'PROPN'), ('Recovery', 'PROPN'), ('‹#›', 'X'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'nmod'), ('Unit', 'nmod'), ('4', 'nummod'), ('–', 'punct'), ('Error', 'compound'), ('Recovery', 'attr'), ('‹#›', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 4], [4, –], [–, Error], [Error, Recovery], [Recovery, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 4], [Unit, 4, –], [4, –, Error], [–, Error, Recovery], [Error, Recovery, ‹#›], [Recovery, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(CD,   Unit 4 – Error Recovery]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 55 =============================
+
+Global correction Given an incorrect input string x and grammar G, the algorithm will find a parse tree for a related string y, such that number of insertions, deletions and changes of token require to transform x into y is as small as possible. 
+
+
+>> Tokens are: 
+[Global, correction, Given, incorrect, input, string, x, grammar, G, ,, algorithm, find, parse, tree, related, string, y, ,, number, insertions, ,, deletions, changes, token, require, transform, x, y, small, possible, .] 
+
+>> PoS Tags are: 
+[('Global', 'ADJ'), ('correction', 'NOUN'), ('Given', 'VERB'), ('incorrect', 'ADJ'), ('input', 'NOUN'), ('string', 'NOUN'), ('x', 'PUNCT'), ('grammar', 'NOUN'), ('G', 'NOUN'), (',', 'PUNCT'), ('algorithm', 'NOUN'), ('find', 'VERB'), ('parse', 'NOUN'), ('tree', 'NOUN'), ('related', 'ADJ'), ('string', 'NOUN'), ('y', 'X'), (',', 'PUNCT'), ('number', 'NOUN'), ('insertions', 'NOUN'), (',', 'PUNCT'), ('deletions', 'NOUN'), ('changes', 'NOUN'), ('token', 'ADJ'), ('require', 'VERB'), ('transform', 'VERB'), ('x', 'PUNCT'), ('y', 'NOUN'), ('small', 'ADJ'), ('possible', 'ADJ'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Global', 'amod'), ('correction', 'nsubj'), ('Given', 'prep'), ('incorrect', 'amod'), ('input', 'compound'), ('string', 'dobj'), ('x', 'punct'), ('grammar', 'compound'), ('G', 'conj'), (',', 'punct'), ('algorithm', 'nsubj'), ('find', 'ROOT'), ('parse', 'compound'), ('tree', 'dobj'), ('related', 'amod'), ('string', 'pobj'), ('y', 'pobj'), (',', 'punct'), ('number', 'npadvmod'), ('insertions', 'pobj'), (',', 'punct'), ('deletions', 'conj'), ('changes', 'conj'), ('token', 'amod'), ('require', 'pobj'), ('transform', 'xcomp'), ('x', 'punct'), ('y', 'pobj'), ('small', 'acomp'), ('possible', 'amod'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Global, correction], [correction, Given], [Given, incorrect], [incorrect, input], [input, string], [string, x], [x, grammar], [grammar, G], [G, ,], [,, algorithm], [algorithm, find], [find, parse], [parse, tree], [tree, related], [related, string], [string, y], [y, ,], [,, number], [number, insertions], [insertions, ,], [,, deletions], [deletions, changes], [changes, token], [token, require], [require, transform], [transform, x], [x, y], [y, small], [small, possible], [possible, .]]
+
+>> Trigrams: 
+[[Global, correction, Given], [correction, Given, incorrect], [Given, incorrect, input], [incorrect, input, string], [input, string, x], [string, x, grammar], [x, grammar, G], [grammar, G, ,], [G, ,, algorithm], [,, algorithm, find], [algorithm, find, parse], [find, parse, tree], [parse, tree, related], [tree, related, string], [related, string, y], [string, y, ,], [y, ,, number], [,, number, insertions], [number, insertions, ,], [insertions, ,, deletions], [,, deletions, changes], [deletions, changes, token], [changes, token, require], [token, require, transform], [require, transform, x], [transform, x, y], [x, y, small], [y, small, possible], [small, possible, .]]
+
+>> Noun Phrases are: 
+[Global correction, an incorrect input string, grammar G, the algorithm, a parse tree, a related string, insertions, deletions, changes, y]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 56 =============================
+
+ Such methods increase time and space requirements at parsing time. 
+
+
+>> Tokens are: 
+[ , methods, increase, time, space, requirements, parsing, time, .] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE'), ('methods', 'NOUN'), ('increase', 'VERB'), ('time', 'NOUN'), ('space', 'NOUN'), ('requirements', 'NOUN'), ('parsing', 'VERB'), ('time', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[(' ', 'dep'), ('methods', 'nsubj'), ('increase', 'ROOT'), ('time', 'nmod'), ('space', 'conj'), ('requirements', 'dobj'), ('parsing', 'pcomp'), ('time', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[ , methods], [methods, increase], [increase, time], [time, space], [space, requirements], [requirements, parsing], [parsing, time], [time, .]]
+
+>> Trigrams: 
+[[ , methods, increase], [methods, increase, time], [increase, time, space], [time, space, requirements], [space, requirements, parsing], [requirements, parsing, time], [parsing, time, .]]
+
+>> Noun Phrases are: 
+[Such methods, time and space requirements, time]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 57 =============================
+
+Global correction is thus simply a theoretical concept. 
+
+
+>> Tokens are: 
+[Global, correction, simply, theoretical, concept, .] 
+
+>> PoS Tags are: 
+[('Global', 'ADJ'), ('correction', 'NOUN'), ('simply', 'ADV'), ('theoretical', 'ADJ'), ('concept', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Global', 'amod'), ('correction', 'nsubj'), ('simply', 'advmod'), ('theoretical', 'amod'), ('concept', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Global, correction], [correction, simply], [simply, theoretical], [theoretical, concept], [concept, .]]
+
+>> Trigrams: 
+[[Global, correction, simply], [correction, simply, theoretical], [simply, theoretical, concept], [theoretical, concept, .]]
+
+>> Noun Phrases are: 
+[Global correction, simply a theoretical concept]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 58 =============================
+
+    Prof. Jay R Dhamsaniya #3130006 (PS)      Unit 1 – Basic Probability ‹#›   Prof. Dixita B Kagathara   
+
+
+>> Tokens are: 
+[    , Prof., Jay, R, Dhamsaniya, #, 3130006, (, PS, ),   , ,   , Unit, 1, –, Basic, Probability, ‹#›,   , Prof., Dixita, B, Kagathara,  ] 
+
+>> PoS Tags are: 
+[('    ', 'SPACE'), ('Prof.', 'PROPN'), ('Jay', 'PROPN'), ('R', 'PROPN'), ('Dhamsaniya', 'PROPN'), ('#', 'SYM'), ('3130006', 'NUM'), ('(', 'PUNCT'), ('PS', 'PROPN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('1', 'NUM'), ('–', 'PUNCT'), ('Basic', 'PROPN'), ('Probability', 'PROPN'), ('‹#›', 'PROPN'), ('  ', 'SPACE'), ('Prof.', 'PROPN'), ('Dixita', 'PROPN'), ('B', 'PROPN'), ('Kagathara', 'PROPN'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('    ', 'compound'), ('Prof.', 'compound'), ('Jay', 'compound'), ('R', 'compound'), ('Dhamsaniya', 'nsubj'), ('#', 'appos'), ('3130006', 'nummod'), ('(', 'punct'), ('PS', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'dep'), ('  ', 'punct'), ('Unit', 'appos'), ('1', 'nummod'), ('–', 'punct'), ('Basic', 'compound'), ('Probability', 'ROOT'), ('‹#›', 'punct'), ('  ', 'appos'), ('Prof.', 'compound'), ('Dixita', 'compound'), ('B', 'compound'), ('Kagathara', 'appos'), (' ', 'punct')]
+
+>> Bigrams: 
+[[    , Prof.], [Prof., Jay], [Jay, R], [R, Dhamsaniya], [Dhamsaniya, #], [#, 3130006], [3130006, (], [(, PS], [PS, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 1], [1, –], [–, Basic], [Basic, Probability], [Probability, ‹#›], [‹#›,   ], [  , Prof.], [Prof., Dixita], [Dixita, B], [B, Kagathara], [Kagathara,  ]]
+
+>> Trigrams: 
+[[    , Prof., Jay], [Prof., Jay, R], [Jay, R, Dhamsaniya], [R, Dhamsaniya, #], [Dhamsaniya, #, 3130006], [#, 3130006, (], [3130006, (, PS], [(, PS, )], [PS, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 1], [Unit, 1, –], [1, –, Basic], [–, Basic, Probability], [Basic, Probability, ‹#›], [Probability, ‹#›,   ], [‹#›,   , Prof.], [  , Prof., Dixita], [Prof., Dixita, B], [Dixita, B, Kagathara], [B, Kagathara,  ]]
+
+>> Noun Phrases are: 
+[    Prof. Jay R Dhamsaniya, (PS, Unit, Prof. Dixita B Kagathara]
+
+>> Named Entities are: 
+[('Jay R Dhamsaniya', 'ORG'), ('PS', 'ORG'), ('Dixita', 'PERSON'), ('Kagathara', 'PERSON')]
+
+
+============================ Sentence 59 =============================
+
+#2170701 (CD)      Unit 4 – Error Recovery ‹#›   
+
+
+>> Tokens are: 
+[#, 2170701, (, CD, ),   , ,   , Unit, 4, –, Error, Recovery, ‹#›,  ] 
+
+>> PoS Tags are: 
+[('#', 'SYM'), ('2170701', 'NUM'), ('(', 'PUNCT'), ('CD', 'NOUN'), (')', 'PUNCT'), ('  ', 'SPACE'), ('\uf077', 'VERB'), ('  ', 'SPACE'), ('Unit', 'NOUN'), ('4', 'NUM'), ('–', 'PUNCT'), ('Error', 'PROPN'), ('Recovery', 'PROPN'), ('‹#›', 'VERB'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('#', 'nmod'), ('2170701', 'nsubj'), ('(', 'punct'), ('CD', 'appos'), (')', 'punct'), ('  ', 'appos'), ('\uf077', 'ROOT'), ('  ', 'nmod'), ('Unit', 'nmod'), ('4', 'nummod'), ('–', 'punct'), ('Error', 'compound'), ('Recovery', 'attr'), ('‹#›', 'punct'), (' ', 'appos')]
+
+>> Bigrams: 
+[[#, 2170701], [2170701, (], [(, CD], [CD, )], [),   ], [  , ], [,   ], [  , Unit], [Unit, 4], [4, –], [–, Error], [Error, Recovery], [Recovery, ‹#›], [‹#›,  ]]
+
+>> Trigrams: 
+[[#, 2170701, (], [2170701, (, CD], [(, CD, )], [CD, ),   ], [),   , ], [  , ,   ], [,   , Unit], [  , Unit, 4], [Unit, 4, –], [4, –, Error], [–, Error, Recovery], [Error, Recovery, ‹#›], [Recovery, ‹#›,  ]]
+
+>> Noun Phrases are: 
+[(CD,   Unit 4 – Error Recovery]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 60 =============================
+
+Thank You                                       /docProps/thumbnail.jpeg 
+
+
+>> Tokens are: 
+[Thank,                                       , /docProps, /, thumbnail.jpeg] 
+
+>> PoS Tags are: 
+[('Thank', 'VERB'), ('                                      ', 'SPACE'), ('/docProps', 'X'), ('/', 'SYM'), ('thumbnail.jpeg', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('Thank', 'ROOT'), ('                                      ', 'dobj'), ('/docProps', 'punct'), ('/', 'punct'), ('thumbnail.jpeg', 'dobj')]
+
+>> Bigrams: 
+[[Thank,                                       ], [                                      , /docProps], [/docProps, /], [/, thumbnail.jpeg]]
+
+>> Trigrams: 
+[[Thank,                                       , /docProps], [                                      , /docProps, /], [/docProps, /, thumbnail.jpeg]]
+
+>> Noun Phrases are: 
+[You, thumbnail.jpeg]
+
+>> Named Entities are: 
+[]

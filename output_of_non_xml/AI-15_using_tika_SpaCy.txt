@@ -1,0 +1,1243 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-15 Robotics is a domain in artificial intelligence that deals with the study of creating intelligent and efficient robots. 
+
+
+>> Tokens are: 
+[AI-15, Robotics, domain, artificial, intelligence, deals, study, creating, intelligent, efficient, robots, .] 
+
+>> PoS Tags are: 
+[('AI-15', 'NUM'), ('Robotics', 'PROPN'), ('domain', 'NOUN'), ('artificial', 'ADJ'), ('intelligence', 'NOUN'), ('deals', 'VERB'), ('study', 'NOUN'), ('creating', 'VERB'), ('intelligent', 'ADJ'), ('efficient', 'ADJ'), ('robots', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI-15', 'nummod'), ('Robotics', 'nsubj'), ('domain', 'attr'), ('artificial', 'amod'), ('intelligence', 'pobj'), ('deals', 'relcl'), ('study', 'pobj'), ('creating', 'pcomp'), ('intelligent', 'amod'), ('efficient', 'conj'), ('robots', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AI-15, Robotics], [Robotics, domain], [domain, artificial], [artificial, intelligence], [intelligence, deals], [deals, study], [study, creating], [creating, intelligent], [intelligent, efficient], [efficient, robots], [robots, .]]
+
+>> Trigrams: 
+[[AI-15, Robotics, domain], [Robotics, domain, artificial], [domain, artificial, intelligence], [artificial, intelligence, deals], [intelligence, deals, study], [deals, study, creating], [study, creating, intelligent], [creating, intelligent, efficient], [intelligent, efficient, robots], [efficient, robots, .]]
+
+>> Noun Phrases are: 
+[AI-15 Robotics, a domain, artificial intelligence, the study, intelligent and efficient robots]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 2 =============================
+
+What are Robots? 
+
+
+>> Tokens are: 
+[Robots, ?] 
+
+>> PoS Tags are: 
+[('Robots', 'NOUN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Robots', 'nsubj'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Robots, ?]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[What, Robots]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 3 =============================
+
+Robots are the artificial agents acting in real world environment. 
+
+
+>> Tokens are: 
+[Robots, artificial, agents, acting, real, world, environment, .] 
+
+>> PoS Tags are: 
+[('Robots', 'NOUN'), ('artificial', 'ADJ'), ('agents', 'NOUN'), ('acting', 'VERB'), ('real', 'ADJ'), ('world', 'NOUN'), ('environment', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Robots', 'nsubj'), ('artificial', 'amod'), ('agents', 'attr'), ('acting', 'acl'), ('real', 'amod'), ('world', 'compound'), ('environment', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Robots, artificial], [artificial, agents], [agents, acting], [acting, real], [real, world], [world, environment], [environment, .]]
+
+>> Trigrams: 
+[[Robots, artificial, agents], [artificial, agents, acting], [agents, acting, real], [acting, real, world], [real, world, environment], [world, environment, .]]
+
+>> Noun Phrases are: 
+[Robots, the artificial agents, real world environment]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+Objective Robots are aimed at manipulating the objects by perceiving, picking, moving, modifying the physical properties of object, destroying it, or to have an effect thereby freeing manpower from doing repetitive functions without getting bored, distracted, or exhausted. 
+
+
+>> Tokens are: 
+[Objective, Robots, aimed, manipulating, objects, perceiving, ,, picking, ,, moving, ,, modifying, physical, properties, object, ,, destroying, ,, effect, freeing, manpower, repetitive, functions, getting, bored, ,, distracted, ,, exhausted, .] 
+
+>> PoS Tags are: 
+[('Objective', 'ADJ'), ('Robots', 'NOUN'), ('aimed', 'VERB'), ('manipulating', 'VERB'), ('objects', 'NOUN'), ('perceiving', 'VERB'), (',', 'PUNCT'), ('picking', 'VERB'), (',', 'PUNCT'), ('moving', 'VERB'), (',', 'PUNCT'), ('modifying', 'VERB'), ('physical', 'ADJ'), ('properties', 'NOUN'), ('object', 'NOUN'), (',', 'PUNCT'), ('destroying', 'VERB'), (',', 'PUNCT'), ('effect', 'NOUN'), ('freeing', 'VERB'), ('manpower', 'NOUN'), ('repetitive', 'ADJ'), ('functions', 'NOUN'), ('getting', 'VERB'), ('bored', 'ADJ'), (',', 'PUNCT'), ('distracted', 'ADJ'), (',', 'PUNCT'), ('exhausted', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Objective', 'amod'), ('Robots', 'nsubjpass'), ('aimed', 'ROOT'), ('manipulating', 'pcomp'), ('objects', 'dobj'), ('perceiving', 'pcomp'), (',', 'punct'), ('picking', 'conj'), (',', 'punct'), ('moving', 'conj'), (',', 'punct'), ('modifying', 'conj'), ('physical', 'amod'), ('properties', 'dobj'), ('object', 'pobj'), (',', 'punct'), ('destroying', 'conj'), (',', 'punct'), ('effect', 'dobj'), ('freeing', 'acl'), ('manpower', 'dobj'), ('repetitive', 'amod'), ('functions', 'dobj'), ('getting', 'pcomp'), ('bored', 'acomp'), (',', 'punct'), ('distracted', 'conj'), (',', 'punct'), ('exhausted', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Objective, Robots], [Robots, aimed], [aimed, manipulating], [manipulating, objects], [objects, perceiving], [perceiving, ,], [,, picking], [picking, ,], [,, moving], [moving, ,], [,, modifying], [modifying, physical], [physical, properties], [properties, object], [object, ,], [,, destroying], [destroying, ,], [,, effect], [effect, freeing], [freeing, manpower], [manpower, repetitive], [repetitive, functions], [functions, getting], [getting, bored], [bored, ,], [,, distracted], [distracted, ,], [,, exhausted], [exhausted, .]]
+
+>> Trigrams: 
+[[Objective, Robots, aimed], [Robots, aimed, manipulating], [aimed, manipulating, objects], [manipulating, objects, perceiving], [objects, perceiving, ,], [perceiving, ,, picking], [,, picking, ,], [picking, ,, moving], [,, moving, ,], [moving, ,, modifying], [,, modifying, physical], [modifying, physical, properties], [physical, properties, object], [properties, object, ,], [object, ,, destroying], [,, destroying, ,], [destroying, ,, effect], [,, effect, freeing], [effect, freeing, manpower], [freeing, manpower, repetitive], [manpower, repetitive, functions], [repetitive, functions, getting], [functions, getting, bored], [getting, bored, ,], [bored, ,, distracted], [,, distracted, ,], [distracted, ,, exhausted], [,, exhausted, .]]
+
+>> Noun Phrases are: 
+[Objective Robots, the objects, the physical properties, object, it, an effect, manpower, repetitive functions]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 5 =============================
+
+What is Robotics? 
+
+
+>> Tokens are: 
+[Robotics, ?] 
+
+>> PoS Tags are: 
+[('Robotics', 'PROPN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Robotics', 'nsubj'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Robotics, ?]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[What, Robotics]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+Robotics is a branch of AI, which is composed of Electrical Engineering, Mechanical Engineering, and Computer Science for designing, construction, and application of robots. 
+
+
+>> Tokens are: 
+[Robotics, branch, AI, ,, composed, Electrical, Engineering, ,, Mechanical, Engineering, ,, Computer, Science, designing, ,, construction, ,, application, robots, .] 
+
+>> PoS Tags are: 
+[('Robotics', 'NOUN'), ('branch', 'NOUN'), ('AI', 'PROPN'), (',', 'PUNCT'), ('composed', 'VERB'), ('Electrical', 'PROPN'), ('Engineering', 'PROPN'), (',', 'PUNCT'), ('Mechanical', 'PROPN'), ('Engineering', 'PROPN'), (',', 'PUNCT'), ('Computer', 'PROPN'), ('Science', 'PROPN'), ('designing', 'NOUN'), (',', 'PUNCT'), ('construction', 'NOUN'), (',', 'PUNCT'), ('application', 'NOUN'), ('robots', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Robotics', 'nsubj'), ('branch', 'attr'), ('AI', 'pobj'), (',', 'punct'), ('composed', 'relcl'), ('Electrical', 'compound'), ('Engineering', 'pobj'), (',', 'punct'), ('Mechanical', 'compound'), ('Engineering', 'conj'), (',', 'punct'), ('Computer', 'compound'), ('Science', 'conj'), ('designing', 'pobj'), (',', 'punct'), ('construction', 'conj'), (',', 'punct'), ('application', 'conj'), ('robots', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Robotics, branch], [branch, AI], [AI, ,], [,, composed], [composed, Electrical], [Electrical, Engineering], [Engineering, ,], [,, Mechanical], [Mechanical, Engineering], [Engineering, ,], [,, Computer], [Computer, Science], [Science, designing], [designing, ,], [,, construction], [construction, ,], [,, application], [application, robots], [robots, .]]
+
+>> Trigrams: 
+[[Robotics, branch, AI], [branch, AI, ,], [AI, ,, composed], [,, composed, Electrical], [composed, Electrical, Engineering], [Electrical, Engineering, ,], [Engineering, ,, Mechanical], [,, Mechanical, Engineering], [Mechanical, Engineering, ,], [Engineering, ,, Computer], [,, Computer, Science], [Computer, Science, designing], [Science, designing, ,], [designing, ,, construction], [,, construction, ,], [construction, ,, application], [,, application, robots], [application, robots, .]]
+
+>> Noun Phrases are: 
+[Robotics, a branch, AI, Electrical Engineering, Mechanical Engineering, Computer Science, designing, construction, application, robots]
+
+>> Named Entities are: 
+[('AI', 'ORG'), ('Electrical Engineering', 'ORG')]
+
+
+============================ Sentence 7 =============================
+
+Aspects of Robotics · The robots have mechanical construction, form, or shape designed to accomplish a particular task. 
+
+
+>> Tokens are: 
+[Aspects, Robotics, ·, robots, mechanical, construction, ,, form, ,, shape, designed, accomplish, particular, task, .] 
+
+>> PoS Tags are: 
+[('Aspects', 'NOUN'), ('Robotics', 'PROPN'), ('·', 'PUNCT'), ('robots', 'NOUN'), ('mechanical', 'ADJ'), ('construction', 'NOUN'), (',', 'PUNCT'), ('form', 'NOUN'), (',', 'PUNCT'), ('shape', 'NOUN'), ('designed', 'VERB'), ('accomplish', 'VERB'), ('particular', 'ADJ'), ('task', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Aspects', 'nsubj'), ('Robotics', 'pobj'), ('·', 'punct'), ('robots', 'nsubj'), ('mechanical', 'amod'), ('construction', 'dobj'), (',', 'punct'), ('form', 'conj'), (',', 'punct'), ('shape', 'conj'), ('designed', 'acl'), ('accomplish', 'xcomp'), ('particular', 'amod'), ('task', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Aspects, Robotics], [Robotics, ·], [·, robots], [robots, mechanical], [mechanical, construction], [construction, ,], [,, form], [form, ,], [,, shape], [shape, designed], [designed, accomplish], [accomplish, particular], [particular, task], [task, .]]
+
+>> Trigrams: 
+[[Aspects, Robotics, ·], [Robotics, ·, robots], [·, robots, mechanical], [robots, mechanical, construction], [mechanical, construction, ,], [construction, ,, form], [,, form, ,], [form, ,, shape], [,, shape, designed], [shape, designed, accomplish], [designed, accomplish, particular], [accomplish, particular, task], [particular, task, .]]
+
+>> Noun Phrases are: 
+[Aspects, Robotics, The robots, mechanical construction, form, shape, a particular task]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 8 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 9 =============================
+
+They have electrical components which power and control the machinery. 
+
+
+>> Tokens are: 
+[electrical, components, power, control, machinery, .] 
+
+>> PoS Tags are: 
+[('electrical', 'ADJ'), ('components', 'NOUN'), ('power', 'NOUN'), ('control', 'VERB'), ('machinery', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('electrical', 'amod'), ('components', 'dobj'), ('power', 'relcl'), ('control', 'conj'), ('machinery', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[electrical, components], [components, power], [power, control], [control, machinery], [machinery, .]]
+
+>> Trigrams: 
+[[electrical, components, power], [components, power, control], [power, control, machinery], [control, machinery, .]]
+
+>> Noun Phrases are: 
+[They, electrical components, the machinery]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 10 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 11 =============================
+
+They contain some level of computer program that determines what, when and how a robot does something. 
+
+
+>> Tokens are: 
+[contain, level, computer, program, determines, ,, robot, .] 
+
+>> PoS Tags are: 
+[('contain', 'VERB'), ('level', 'NOUN'), ('computer', 'NOUN'), ('program', 'NOUN'), ('determines', 'VERB'), (',', 'PUNCT'), ('robot', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('contain', 'ROOT'), ('level', 'dobj'), ('computer', 'compound'), ('program', 'pobj'), ('determines', 'relcl'), (',', 'punct'), ('robot', 'nsubj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[contain, level], [level, computer], [computer, program], [program, determines], [determines, ,], [,, robot], [robot, .]]
+
+>> Trigrams: 
+[[contain, level, computer], [level, computer, program], [computer, program, determines], [program, determines, ,], [determines, ,, robot], [,, robot, .]]
+
+>> Noun Phrases are: 
+[They, some level, computer program, what, a robot, something]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 12 =============================
+
+Difference in Robot System and Other AI Program Here is the difference between the two − 	AI Programs 	Robots  	They usually operate in computer-stimulated worlds. 
+
+
+>> Tokens are: 
+[Difference, Robot, System, AI, Program, difference, −, 	, AI, Programs, 	, Robots,  	, usually, operate, computer, -, stimulated, worlds, .] 
+
+>> PoS Tags are: 
+[('Difference', 'NOUN'), ('Robot', 'PROPN'), ('System', 'PROPN'), ('AI', 'PROPN'), ('Program', 'PROPN'), ('difference', 'NOUN'), ('−', 'PROPN'), ('\t', 'SPACE'), ('AI', 'PROPN'), ('Programs', 'PROPN'), ('\t', 'SPACE'), ('Robots', 'PROPN'), (' \t', 'SPACE'), ('usually', 'ADV'), ('operate', 'VERB'), ('computer', 'NOUN'), ('-', 'PUNCT'), ('stimulated', 'VERB'), ('worlds', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Difference', 'nmod'), ('Robot', 'compound'), ('System', 'pobj'), ('AI', 'compound'), ('Program', 'nsubj'), ('difference', 'attr'), ('−', 'compound'), ('\t', 'compound'), ('AI', 'compound'), ('Programs', 'compound'), ('\t', 'compound'), ('Robots', 'compound'), (' \t', 'pobj'), ('usually', 'advmod'), ('operate', 'relcl'), ('computer', 'npadvmod'), ('-', 'punct'), ('stimulated', 'amod'), ('worlds', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Difference, Robot], [Robot, System], [System, AI], [AI, Program], [Program, difference], [difference, −], [−, 	], [	, AI], [AI, Programs], [Programs, 	], [	, Robots], [Robots,  	], [ 	, usually], [usually, operate], [operate, computer], [computer, -], [-, stimulated], [stimulated, worlds], [worlds, .]]
+
+>> Trigrams: 
+[[Difference, Robot, System], [Robot, System, AI], [System, AI, Program], [AI, Program, difference], [Program, difference, −], [difference, −, 	], [−, 	, AI], [	, AI, Programs], [AI, Programs, 	], [Programs, 	, Robots], [	, Robots,  	], [Robots,  	, usually], [ 	, usually, operate], [usually, operate, computer], [operate, computer, -], [computer, -, stimulated], [-, stimulated, worlds], [stimulated, worlds, .]]
+
+>> Noun Phrases are: 
+[Robot System, the difference, They, computer-stimulated worlds]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 13 =============================
+
+	They operate in real physical world  	 
+
+
+>> Tokens are: 
+[	, operate, real, physical, world,  	] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('operate', 'VERB'), ('real', 'ADJ'), ('physical', 'ADJ'), ('world', 'NOUN'), (' \t', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('\t', 'dobj'), ('operate', 'ROOT'), ('real', 'amod'), ('physical', 'amod'), ('world', 'compound'), (' \t', 'pobj')]
+
+>> Bigrams: 
+[[	, operate], [operate, real], [real, physical], [physical, world], [world,  	]]
+
+>> Trigrams: 
+[[	, operate, real], [operate, real, physical], [real, physical, world], [physical, world,  	]]
+
+>> Noun Phrases are: 
+[They]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+The input to an AI program is in symbols and rules. 
+
+
+>> Tokens are: 
+[input, AI, program, symbols, rules, .] 
+
+>> PoS Tags are: 
+[('input', 'NOUN'), ('AI', 'PROPN'), ('program', 'NOUN'), ('symbols', 'NOUN'), ('rules', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('input', 'nsubj'), ('AI', 'compound'), ('program', 'pobj'), ('symbols', 'pobj'), ('rules', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[input, AI], [AI, program], [program, symbols], [symbols, rules], [rules, .]]
+
+>> Trigrams: 
+[[input, AI, program], [AI, program, symbols], [program, symbols, rules], [symbols, rules, .]]
+
+>> Noun Phrases are: 
+[The input, an AI program, symbols, rules]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 15 =============================
+
+	Inputs to robots is analog signal in the form of speech waveform or images  	They need general purpose computers to operate on. 
+
+
+>> Tokens are: 
+[	, Inputs, robots, analog, signal, form, speech, waveform, images,  	, need, general, purpose, computers, operate, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('Inputs', 'PROPN'), ('robots', 'NOUN'), ('analog', 'ADJ'), ('signal', 'NOUN'), ('form', 'NOUN'), ('speech', 'NOUN'), ('waveform', 'NOUN'), ('images', 'VERB'), (' \t', 'SPACE'), ('need', 'VERB'), ('general', 'ADJ'), ('purpose', 'NOUN'), ('computers', 'NOUN'), ('operate', 'VERB'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'compound'), ('Inputs', 'nsubj'), ('robots', 'pobj'), ('analog', 'amod'), ('signal', 'attr'), ('form', 'pobj'), ('speech', 'compound'), ('waveform', 'pobj'), ('images', 'conj'), (' \t', 'dobj'), ('need', 'ccomp'), ('general', 'amod'), ('purpose', 'compound'), ('computers', 'nsubj'), ('operate', 'ccomp'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, Inputs], [Inputs, robots], [robots, analog], [analog, signal], [signal, form], [form, speech], [speech, waveform], [waveform, images], [images,  	], [ 	, need], [need, general], [general, purpose], [purpose, computers], [computers, operate], [operate, .]]
+
+>> Trigrams: 
+[[	, Inputs, robots], [Inputs, robots, analog], [robots, analog, signal], [analog, signal, form], [signal, form, speech], [form, speech, waveform], [speech, waveform, images], [waveform, images,  	], [images,  	, need], [ 	, need, general], [need, general, purpose], [general, purpose, computers], [purpose, computers, operate], [computers, operate, .]]
+
+>> Noun Phrases are: 
+[	Inputs, robots, analog signal, the form, speech waveform, They, general purpose computers]
+
+>> Named Entities are: 
+[('Inputs', 'GPE')]
+
+
+============================ Sentence 16 =============================
+
+	They need special hardware with sensors and effectors. 
+
+
+>> Tokens are: 
+[	, need, special, hardware, sensors, effectors, .] 
+
+>> PoS Tags are: 
+[('\t', 'SPACE'), ('need', 'VERB'), ('special', 'ADJ'), ('hardware', 'NOUN'), ('sensors', 'NOUN'), ('effectors', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('\t', 'dep'), ('need', 'ROOT'), ('special', 'amod'), ('hardware', 'dobj'), ('sensors', 'pobj'), ('effectors', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[	, need], [need, special], [special, hardware], [hardware, sensors], [sensors, effectors], [effectors, .]]
+
+>> Trigrams: 
+[[	, need, special], [need, special, hardware], [special, hardware, sensors], [hardware, sensors, effectors], [sensors, effectors, .]]
+
+>> Noun Phrases are: 
+[They, special hardware, sensors, effectors]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+  Robot Locomotion Locomotion is the mechanism that makes a robot capable of moving in its environment. 
+
+
+>> Tokens are: 
+[  , Robot, Locomotion, Locomotion, mechanism, makes, robot, capable, moving, environment, .] 
+
+>> PoS Tags are: 
+[('  ', 'SPACE'), ('Robot', 'PROPN'), ('Locomotion', 'PROPN'), ('Locomotion', 'PROPN'), ('mechanism', 'NOUN'), ('makes', 'VERB'), ('robot', 'NOUN'), ('capable', 'ADJ'), ('moving', 'VERB'), ('environment', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('  ', 'compound'), ('Robot', 'compound'), ('Locomotion', 'compound'), ('Locomotion', 'nsubj'), ('mechanism', 'attr'), ('makes', 'relcl'), ('robot', 'nsubj'), ('capable', 'ccomp'), ('moving', 'pcomp'), ('environment', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[  , Robot], [Robot, Locomotion], [Locomotion, Locomotion], [Locomotion, mechanism], [mechanism, makes], [makes, robot], [robot, capable], [capable, moving], [moving, environment], [environment, .]]
+
+>> Trigrams: 
+[[  , Robot, Locomotion], [Robot, Locomotion, Locomotion], [Locomotion, Locomotion, mechanism], [Locomotion, mechanism, makes], [mechanism, makes, robot], [makes, robot, capable], [robot, capable, moving], [capable, moving, environment], [moving, environment, .]]
+
+>> Noun Phrases are: 
+[  Robot Locomotion Locomotion, the mechanism, a robot, its environment]
+
+>> Named Entities are: 
+[('Robot Locomotion Locomotion', 'ORG')]
+
+
+============================ Sentence 18 =============================
+
+There are various types of locomotions − · Legged · Wheeled · Combination of Legged and Wheeled Locomotion · Tracked slip/skid Legged Locomotion · 
+
+
+>> Tokens are: 
+[types, locomotions, −, ·, Legged, ·, Wheeled, ·, Combination, Legged, Wheeled, Locomotion, ·, Tracked, slip, /, skid, Legged, Locomotion, ·] 
+
+>> PoS Tags are: 
+[('types', 'NOUN'), ('locomotions', 'NOUN'), ('−', 'VERB'), ('·', 'PUNCT'), ('Legged', 'PROPN'), ('·', 'PUNCT'), ('Wheeled', 'PROPN'), ('·', 'PUNCT'), ('Combination', 'NOUN'), ('Legged', 'PROPN'), ('Wheeled', 'PROPN'), ('Locomotion', 'PROPN'), ('·', 'PUNCT'), ('Tracked', 'VERB'), ('slip', 'NOUN'), ('/', 'SYM'), ('skid', 'NOUN'), ('Legged', 'ADJ'), ('Locomotion', 'NOUN'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('types', 'attr'), ('locomotions', 'pobj'), ('−', 'acl'), ('·', 'punct'), ('Legged', 'amod'), ('·', 'punct'), ('Wheeled', 'amod'), ('·', 'punct'), ('Combination', 'appos'), ('Legged', 'pobj'), ('Wheeled', 'compound'), ('Locomotion', 'conj'), ('·', 'punct'), ('Tracked', 'amod'), ('slip', 'nmod'), ('/', 'punct'), ('skid', 'conj'), ('Legged', 'amod'), ('Locomotion', 'dobj'), ('·', 'punct')]
+
+>> Bigrams: 
+[[types, locomotions], [locomotions, −], [−, ·], [·, Legged], [Legged, ·], [·, Wheeled], [Wheeled, ·], [·, Combination], [Combination, Legged], [Legged, Wheeled], [Wheeled, Locomotion], [Locomotion, ·], [·, Tracked], [Tracked, slip], [slip, /], [/, skid], [skid, Legged], [Legged, Locomotion], [Locomotion, ·]]
+
+>> Trigrams: 
+[[types, locomotions, −], [locomotions, −, ·], [−, ·, Legged], [·, Legged, ·], [Legged, ·, Wheeled], [·, Wheeled, ·], [Wheeled, ·, Combination], [·, Combination, Legged], [Combination, Legged, Wheeled], [Legged, Wheeled, Locomotion], [Wheeled, Locomotion, ·], [Locomotion, ·, Tracked], [·, Tracked, slip], [Tracked, slip, /], [slip, /, skid], [/, skid, Legged], [skid, Legged, Locomotion], [Legged, Locomotion, ·]]
+
+>> Noun Phrases are: 
+[various types, locomotions, · Legged · Wheeled · Combination, Legged, Wheeled Locomotion, · Tracked slip/skid, Legged Locomotion]
+
+>> Named Entities are: 
+[('Legged', 'PERSON'), ('Wheeled', 'PERSON'), ('Tracked', 'PERSON'), ('Legged Locomotion', 'PERSON')]
+
+
+============================ Sentence 19 =============================
+
+This type of locomotion consumes more power while demonstrating walk, jump, trot, hop, climb up or down, etc. · 
+
+
+>> Tokens are: 
+[type, locomotion, consumes, power, demonstrating, walk, ,, jump, ,, trot, ,, hop, ,, climb, ,, etc, ., ·] 
+
+>> PoS Tags are: 
+[('type', 'NOUN'), ('locomotion', 'NOUN'), ('consumes', 'VERB'), ('power', 'NOUN'), ('demonstrating', 'VERB'), ('walk', 'NOUN'), (',', 'PUNCT'), ('jump', 'VERB'), (',', 'PUNCT'), ('trot', 'NOUN'), (',', 'PUNCT'), ('hop', 'NOUN'), (',', 'PUNCT'), ('climb', 'VERB'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('type', 'nsubj'), ('locomotion', 'pobj'), ('consumes', 'ROOT'), ('power', 'dobj'), ('demonstrating', 'advcl'), ('walk', 'dobj'), (',', 'punct'), ('jump', 'conj'), (',', 'punct'), ('trot', 'conj'), (',', 'punct'), ('hop', 'conj'), (',', 'punct'), ('climb', 'conj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[type, locomotion], [locomotion, consumes], [consumes, power], [power, demonstrating], [demonstrating, walk], [walk, ,], [,, jump], [jump, ,], [,, trot], [trot, ,], [,, hop], [hop, ,], [,, climb], [climb, ,], [,, etc], [etc, .], [., ·]]
+
+>> Trigrams: 
+[[type, locomotion, consumes], [locomotion, consumes, power], [consumes, power, demonstrating], [power, demonstrating, walk], [demonstrating, walk, ,], [walk, ,, jump], [,, jump, ,], [jump, ,, trot], [,, trot, ,], [trot, ,, hop], [,, hop, ,], [hop, ,, climb], [,, climb, ,], [climb, ,, etc], [,, etc, .], [etc, ., ·]]
+
+>> Noun Phrases are: 
+[This type, locomotion, more power, walk]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 20 =============================
+
+It requires more number of motors to accomplish a movement. 
+
+
+>> Tokens are: 
+[requires, number, motors, accomplish, movement, .] 
+
+>> PoS Tags are: 
+[('requires', 'VERB'), ('number', 'NOUN'), ('motors', 'NOUN'), ('accomplish', 'VERB'), ('movement', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('requires', 'ROOT'), ('number', 'dobj'), ('motors', 'pobj'), ('accomplish', 'xcomp'), ('movement', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[requires, number], [number, motors], [motors, accomplish], [accomplish, movement], [movement, .]]
+
+>> Trigrams: 
+[[requires, number, motors], [number, motors, accomplish], [motors, accomplish, movement], [accomplish, movement, .]]
+
+>> Noun Phrases are: 
+[It, more number, motors, a movement]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+It is suited for rough as well as smooth terrain where irregular or too smooth surface makes it consume more power for a wheeled locomotion. 
+
+
+>> Tokens are: 
+[suited, rough, smooth, terrain, irregular, smooth, surface, makes, consume, power, wheeled, locomotion, .] 
+
+>> PoS Tags are: 
+[('suited', 'VERB'), ('rough', 'ADJ'), ('smooth', 'ADJ'), ('terrain', 'NOUN'), ('irregular', 'ADJ'), ('smooth', 'ADJ'), ('surface', 'NOUN'), ('makes', 'VERB'), ('consume', 'VERB'), ('power', 'NOUN'), ('wheeled', 'ADJ'), ('locomotion', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('suited', 'ROOT'), ('rough', 'amod'), ('smooth', 'amod'), ('terrain', 'pobj'), ('irregular', 'amod'), ('smooth', 'conj'), ('surface', 'nsubj'), ('makes', 'conj'), ('consume', 'ccomp'), ('power', 'dobj'), ('wheeled', 'amod'), ('locomotion', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[suited, rough], [rough, smooth], [smooth, terrain], [terrain, irregular], [irregular, smooth], [smooth, surface], [surface, makes], [makes, consume], [consume, power], [power, wheeled], [wheeled, locomotion], [locomotion, .]]
+
+>> Trigrams: 
+[[suited, rough, smooth], [rough, smooth, terrain], [smooth, terrain, irregular], [terrain, irregular, smooth], [irregular, smooth, surface], [smooth, surface, makes], [surface, makes, consume], [makes, consume, power], [consume, power, wheeled], [power, wheeled, locomotion], [wheeled, locomotion, .]]
+
+>> Noun Phrases are: 
+[It, smooth terrain, surface, it, more power, a wheeled locomotion]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 22 =============================
+
+It is little difficult to implement because of stability issues. 
+
+
+>> Tokens are: 
+[little, difficult, implement, stability, issues, .] 
+
+>> PoS Tags are: 
+[('little', 'ADV'), ('difficult', 'ADJ'), ('implement', 'VERB'), ('stability', 'NOUN'), ('issues', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('little', 'advmod'), ('difficult', 'acomp'), ('implement', 'xcomp'), ('stability', 'compound'), ('issues', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[little, difficult], [difficult, implement], [implement, stability], [stability, issues], [issues, .]]
+
+>> Trigrams: 
+[[little, difficult, implement], [difficult, implement, stability], [implement, stability, issues], [stability, issues, .]]
+
+>> Noun Phrases are: 
+[It, stability issues]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+· It comes with the variety of one, two, four, and six legs. 
+
+
+>> Tokens are: 
+[·, comes, variety, ,, ,, ,, legs, .] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('comes', 'VERB'), ('variety', 'NOUN'), (',', 'PUNCT'), (',', 'PUNCT'), (',', 'PUNCT'), ('legs', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('comes', 'ROOT'), ('variety', 'pobj'), (',', 'punct'), (',', 'punct'), (',', 'punct'), ('legs', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[·, comes], [comes, variety], [variety, ,], [,, ,], [,, ,], [,, legs], [legs, .]]
+
+>> Trigrams: 
+[[·, comes, variety], [comes, variety, ,], [variety, ,, ,], [,, ,, ,], [,, ,, legs], [,, legs, .]]
+
+>> Noun Phrases are: 
+[It, the variety, one, two, four, and six legs]
+
+>> Named Entities are: 
+[('one', 'CARDINAL'), ('two', 'CARDINAL'), ('four', 'CARDINAL'), ('six', 'CARDINAL')]
+
+
+============================ Sentence 24 =============================
+
+If a robot has multiple legs then leg coordination is necessary for locomotion. 
+
+
+>> Tokens are: 
+[robot, multiple, legs, leg, coordination, necessary, locomotion, .] 
+
+>> PoS Tags are: 
+[('robot', 'NOUN'), ('multiple', 'ADJ'), ('legs', 'NOUN'), ('leg', 'NOUN'), ('coordination', 'NOUN'), ('necessary', 'ADJ'), ('locomotion', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('robot', 'nsubj'), ('multiple', 'amod'), ('legs', 'dobj'), ('leg', 'compound'), ('coordination', 'nsubj'), ('necessary', 'acomp'), ('locomotion', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[robot, multiple], [multiple, legs], [legs, leg], [leg, coordination], [coordination, necessary], [necessary, locomotion], [locomotion, .]]
+
+>> Trigrams: 
+[[robot, multiple, legs], [multiple, legs, leg], [legs, leg, coordination], [leg, coordination, necessary], [coordination, necessary, locomotion], [necessary, locomotion, .]]
+
+>> Noun Phrases are: 
+[a robot, multiple legs, leg coordination, locomotion]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 25 =============================
+
+The total number of possible gaits (a periodic sequence of lift and release events for each of the total legs) a robot can travel depends upon the number of its legs. 
+
+
+>> Tokens are: 
+[total, number, possible, gaits, (, periodic, sequence, lift, release, events, total, legs, ), robot, travel, depends, number, legs, .] 
+
+>> PoS Tags are: 
+[('total', 'ADJ'), ('number', 'NOUN'), ('possible', 'ADJ'), ('gaits', 'NOUN'), ('(', 'PUNCT'), ('periodic', 'ADJ'), ('sequence', 'NOUN'), ('lift', 'NOUN'), ('release', 'VERB'), ('events', 'NOUN'), ('total', 'ADJ'), ('legs', 'NOUN'), (')', 'PUNCT'), ('robot', 'NOUN'), ('travel', 'VERB'), ('depends', 'VERB'), ('number', 'NOUN'), ('legs', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('total', 'amod'), ('number', 'nsubj'), ('possible', 'amod'), ('gaits', 'pobj'), ('(', 'punct'), ('periodic', 'amod'), ('sequence', 'appos'), ('lift', 'nmod'), ('release', 'conj'), ('events', 'dobj'), ('total', 'amod'), ('legs', 'pobj'), (')', 'punct'), ('robot', 'nsubj'), ('travel', 'pobj'), ('depends', 'ROOT'), ('number', 'pobj'), ('legs', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[total, number], [number, possible], [possible, gaits], [gaits, (], [(, periodic], [periodic, sequence], [sequence, lift], [lift, release], [release, events], [events, total], [total, legs], [legs, )], [), robot], [robot, travel], [travel, depends], [depends, number], [number, legs], [legs, .]]
+
+>> Trigrams: 
+[[total, number, possible], [number, possible, gaits], [possible, gaits, (], [gaits, (, periodic], [(, periodic, sequence], [periodic, sequence, lift], [sequence, lift, release], [lift, release, events], [release, events, total], [events, total, legs], [total, legs, )], [legs, ), robot], [), robot, travel], [robot, travel, depends], [travel, depends, number], [depends, number, legs], [number, legs, .]]
+
+>> Noun Phrases are: 
+[The total number, possible gaits, a periodic sequence, events, the total legs, a robot, the number, its legs]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+If a robot has k legs, then the number of possible events N = (2k-1)!. 
+
+
+>> Tokens are: 
+[robot, k, legs, ,, number, possible, events, N, =, (, 2k-1, ), !, .] 
+
+>> PoS Tags are: 
+[('robot', 'NOUN'), ('k', 'DET'), ('legs', 'NOUN'), (',', 'PUNCT'), ('number', 'NOUN'), ('possible', 'ADJ'), ('events', 'NOUN'), ('N', 'CCONJ'), ('=', 'SYM'), ('(', 'PUNCT'), ('2k-1', 'NUM'), (')', 'PUNCT'), ('!', 'PUNCT'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('robot', 'nsubj'), ('k', 'det'), ('legs', 'dobj'), (',', 'punct'), ('number', 'ROOT'), ('possible', 'amod'), ('events', 'pobj'), ('N', 'appos'), ('=', 'conj'), ('(', 'punct'), ('2k-1', 'appos'), (')', 'punct'), ('!', 'punct'), ('.', 'punct')]
+
+>> Bigrams: 
+[[robot, k], [k, legs], [legs, ,], [,, number], [number, possible], [possible, events], [events, N], [N, =], [=, (], [(, 2k-1], [2k-1, )], [), !], [!, .]]
+
+>> Trigrams: 
+[[robot, k, legs], [k, legs, ,], [legs, ,, number], [,, number, possible], [number, possible, events], [possible, events, N], [events, N, =], [N, =, (], [=, (, 2k-1], [(, 2k-1, )], [2k-1, ), !], [), !, .]]
+
+>> Noun Phrases are: 
+[a robot, k legs, possible events]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 27 =============================
+
+In case of a two-legged robot (k=2), the number of possible events is N = (2k-1)! 
+
+
+>> Tokens are: 
+[case, -, legged, robot, (, k=2, ), ,, number, possible, events, N, =, (, 2k-1, ), !] 
+
+>> PoS Tags are: 
+[('case', 'NOUN'), ('-', 'PUNCT'), ('legged', 'ADJ'), ('robot', 'NOUN'), ('(', 'PUNCT'), ('k=2', 'PROPN'), (')', 'PUNCT'), (',', 'PUNCT'), ('number', 'NOUN'), ('possible', 'ADJ'), ('events', 'NOUN'), ('N', 'PROPN'), ('=', 'SYM'), ('(', 'PUNCT'), ('2k-1', 'NUM'), (')', 'PUNCT'), ('!', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('case', 'pobj'), ('-', 'punct'), ('legged', 'amod'), ('robot', 'pobj'), ('(', 'punct'), ('k=2', 'appos'), (')', 'punct'), (',', 'punct'), ('number', 'nsubj'), ('possible', 'amod'), ('events', 'pobj'), ('N', 'attr'), ('=', 'attr'), ('(', 'punct'), ('2k-1', 'appos'), (')', 'punct'), ('!', 'punct')]
+
+>> Bigrams: 
+[[case, -], [-, legged], [legged, robot], [robot, (], [(, k=2], [k=2, )], [), ,], [,, number], [number, possible], [possible, events], [events, N], [N, =], [=, (], [(, 2k-1], [2k-1, )], [), !]]
+
+>> Trigrams: 
+[[case, -, legged], [-, legged, robot], [legged, robot, (], [robot, (, k=2], [(, k=2, )], [k=2, ), ,], [), ,, number], [,, number, possible], [number, possible, events], [possible, events, N], [events, N, =], [N, =, (], [=, (, 2k-1], [(, 2k-1, )], [2k-1, ), !]]
+
+>> Noun Phrases are: 
+[case, a two-legged robot, (k=2, the number, possible events, N]
+
+>> Named Entities are: 
+[('two', 'CARDINAL')]
+
+
+============================ Sentence 28 =============================
+
+= 
+
+
+>> Tokens are: 
+[=] 
+
+>> PoS Tags are: 
+[('=', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('=', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 29 =============================
+
+(2*2-1)! 
+
+
+>> Tokens are: 
+[(, 2, *, 2, -, 1, ), !] 
+
+>> PoS Tags are: 
+[('(', 'PUNCT'), ('2', 'NUM'), ('*', 'SYM'), ('2', 'NUM'), ('-', 'SYM'), ('1', 'NUM'), (')', 'PUNCT'), ('!', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('(', 'punct'), ('2', 'ROOT'), ('*', 'punct'), ('2', 'npadvmod'), ('-', 'punct'), ('1', 'prep'), (')', 'punct'), ('!', 'punct')]
+
+>> Bigrams: 
+[[(, 2], [2, *], [*, 2], [2, -], [-, 1], [1, )], [), !]]
+
+>> Trigrams: 
+[[(, 2, *], [2, *, 2], [*, 2, -], [2, -, 1], [-, 1, )], [1, ), !]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('2', 'CARDINAL'), ('2', 'CARDINAL')]
+
+
+============================ Sentence 30 =============================
+
+= 3! = 6. 
+
+
+>> Tokens are: 
+[=, 3, !, =, 6, .] 
+
+>> PoS Tags are: 
+[('=', 'PUNCT'), ('3', 'X'), ('!', 'NUM'), ('=', 'PUNCT'), ('6', 'NUM'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('=', 'mark'), ('3', 'nummod'), ('!', 'punct'), ('=', 'punct'), ('6', 'ROOT'), ('.', 'punct')]
+
+>> Bigrams: 
+[[=, 3], [3, !], [!, =], [=, 6], [6, .]]
+
+>> Trigrams: 
+[[=, 3, !], [3, !, =], [!, =, 6], [=, 6, .]]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[('3', 'CARDINAL'), ('6', 'CARDINAL')]
+
+
+============================ Sentence 31 =============================
+
+Hence there are six possible different events − · Lifting the Left leg · Releasing the Left leg · Lifting the Right leg · Releasing the Right leg · Lifting both the legs together · Releasing both the legs together In case of k=6 legs, there are 39916800 possible events. 
+
+
+>> Tokens are: 
+[possible, different, events, −, ·, Lifting, Left, leg, ·, Releasing, Left, leg, ·, Lifting, Right, leg, ·, Releasing, Right, leg, ·, Lifting, legs, ·, Releasing, legs, case, k=6, legs, ,, 39916800, possible, events, .] 
+
+>> PoS Tags are: 
+[('possible', 'ADJ'), ('different', 'ADJ'), ('events', 'NOUN'), ('−', 'VERB'), ('·', 'PUNCT'), ('Lifting', 'VERB'), ('Left', 'ADJ'), ('leg', 'NOUN'), ('·', 'PUNCT'), ('Releasing', 'VERB'), ('Left', 'ADJ'), ('leg', 'NOUN'), ('·', 'PUNCT'), ('Lifting', 'VERB'), ('Right', 'ADJ'), ('leg', 'NOUN'), ('·', 'PUNCT'), ('Releasing', 'VERB'), ('Right', 'ADJ'), ('leg', 'NOUN'), ('·', 'PUNCT'), ('Lifting', 'VERB'), ('legs', 'NOUN'), ('·', 'PUNCT'), ('Releasing', 'VERB'), ('legs', 'NOUN'), ('case', 'NOUN'), ('k=6', 'NOUN'), ('legs', 'NOUN'), (',', 'PUNCT'), ('39916800', 'NUM'), ('possible', 'ADJ'), ('events', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('possible', 'amod'), ('different', 'amod'), ('events', 'attr'), ('−', 'acl'), ('·', 'punct'), ('Lifting', 'advcl'), ('Left', 'amod'), ('leg', 'dobj'), ('·', 'punct'), ('Releasing', 'ccomp'), ('Left', 'amod'), ('leg', 'dobj'), ('·', 'punct'), ('Lifting', 'advcl'), ('Right', 'amod'), ('leg', 'dobj'), ('·', 'punct'), ('Releasing', 'dep'), ('Right', 'amod'), ('leg', 'dobj'), ('·', 'punct'), ('Lifting', 'advcl'), ('legs', 'dobj'), ('·', 'punct'), ('Releasing', 'advcl'), ('legs', 'dobj'), ('case', 'pobj'), ('k=6', 'compound'), ('legs', 'pobj'), (',', 'punct'), ('39916800', 'nummod'), ('possible', 'amod'), ('events', 'attr'), ('.', 'punct')]
+
+>> Bigrams: 
+[[possible, different], [different, events], [events, −], [−, ·], [·, Lifting], [Lifting, Left], [Left, leg], [leg, ·], [·, Releasing], [Releasing, Left], [Left, leg], [leg, ·], [·, Lifting], [Lifting, Right], [Right, leg], [leg, ·], [·, Releasing], [Releasing, Right], [Right, leg], [leg, ·], [·, Lifting], [Lifting, legs], [legs, ·], [·, Releasing], [Releasing, legs], [legs, case], [case, k=6], [k=6, legs], [legs, ,], [,, 39916800], [39916800, possible], [possible, events], [events, .]]
+
+>> Trigrams: 
+[[possible, different, events], [different, events, −], [events, −, ·], [−, ·, Lifting], [·, Lifting, Left], [Lifting, Left, leg], [Left, leg, ·], [leg, ·, Releasing], [·, Releasing, Left], [Releasing, Left, leg], [Left, leg, ·], [leg, ·, Lifting], [·, Lifting, Right], [Lifting, Right, leg], [Right, leg, ·], [leg, ·, Releasing], [·, Releasing, Right], [Releasing, Right, leg], [Right, leg, ·], [leg, ·, Lifting], [·, Lifting, legs], [Lifting, legs, ·], [legs, ·, Releasing], [·, Releasing, legs], [Releasing, legs, case], [legs, case, k=6], [case, k=6, legs], [k=6, legs, ,], [legs, ,, 39916800], [,, 39916800, possible], [39916800, possible, events], [possible, events, .]]
+
+>> Noun Phrases are: 
+[six possible different events, the Left leg, the Left leg, the Right leg, the Right leg, both the legs, both the legs, case, k=6 legs, 39916800 possible events]
+
+>> Named Entities are: 
+[('six', 'CARDINAL'), ('− ·', 'PERSON'), ('Lifting the Right', 'WORK_OF_ART'), ('Lifting', 'PERSON'), ('39916800', 'CARDINAL')]
+
+
+============================ Sentence 32 =============================
+
+Hence the complexity of robots is directly proportional to the number of legs. 
+
+
+>> Tokens are: 
+[complexity, robots, directly, proportional, number, legs, .] 
+
+>> PoS Tags are: 
+[('complexity', 'NOUN'), ('robots', 'NOUN'), ('directly', 'ADV'), ('proportional', 'ADJ'), ('number', 'NOUN'), ('legs', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('complexity', 'nsubj'), ('robots', 'pobj'), ('directly', 'advmod'), ('proportional', 'acomp'), ('number', 'pobj'), ('legs', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[complexity, robots], [robots, directly], [directly, proportional], [proportional, number], [number, legs], [legs, .]]
+
+>> Trigrams: 
+[[complexity, robots, directly], [robots, directly, proportional], [directly, proportional, number], [proportional, number, legs], [number, legs, .]]
+
+>> Noun Phrases are: 
+[the complexity, robots, the number, legs]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 33 =============================
+
+  
+
+
+>> Tokens are: 
+[ ] 
+
+>> PoS Tags are: 
+[(' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[(' ', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 34 =============================
+
+Wheeled Locomotion 
+
+
+>> Tokens are: 
+[Wheeled, Locomotion] 
+
+>> PoS Tags are: 
+[('Wheeled', 'PROPN'), ('Locomotion', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Wheeled', 'compound'), ('Locomotion', 'ROOT')]
+
+>> Bigrams: 
+[[Wheeled, Locomotion]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Wheeled Locomotion]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 35 =============================
+
+It requires fewer number of motors to accomplish a movement. 
+
+
+>> Tokens are: 
+[requires, fewer, number, motors, accomplish, movement, .] 
+
+>> PoS Tags are: 
+[('requires', 'VERB'), ('fewer', 'ADJ'), ('number', 'NOUN'), ('motors', 'NOUN'), ('accomplish', 'VERB'), ('movement', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('requires', 'ROOT'), ('fewer', 'amod'), ('number', 'dobj'), ('motors', 'pobj'), ('accomplish', 'xcomp'), ('movement', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[requires, fewer], [fewer, number], [number, motors], [motors, accomplish], [accomplish, movement], [movement, .]]
+
+>> Trigrams: 
+[[requires, fewer, number], [fewer, number, motors], [number, motors, accomplish], [motors, accomplish, movement], [accomplish, movement, .]]
+
+>> Noun Phrases are: 
+[It, fewer number, motors, a movement]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 36 =============================
+
+It is little easy to implement as there are less stability issues in case of more number of wheels. 
+
+
+>> Tokens are: 
+[little, easy, implement, stability, issues, case, number, wheels, .] 
+
+>> PoS Tags are: 
+[('little', 'ADV'), ('easy', 'ADJ'), ('implement', 'VERB'), ('stability', 'NOUN'), ('issues', 'NOUN'), ('case', 'NOUN'), ('number', 'NOUN'), ('wheels', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('little', 'advmod'), ('easy', 'acomp'), ('implement', 'xcomp'), ('stability', 'compound'), ('issues', 'attr'), ('case', 'pobj'), ('number', 'pobj'), ('wheels', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[little, easy], [easy, implement], [implement, stability], [stability, issues], [issues, case], [case, number], [number, wheels], [wheels, .]]
+
+>> Trigrams: 
+[[little, easy, implement], [easy, implement, stability], [implement, stability, issues], [stability, issues, case], [issues, case, number], [case, number, wheels], [number, wheels, .]]
+
+>> Noun Phrases are: 
+[It, less stability issues, case, more number, wheels]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 37 =============================
+
+It is power efficient as compared to legged locomotion. 
+
+
+>> Tokens are: 
+[power, efficient, compared, legged, locomotion, .] 
+
+>> PoS Tags are: 
+[('power', 'NOUN'), ('efficient', 'ADJ'), ('compared', 'VERB'), ('legged', 'ADJ'), ('locomotion', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('power', 'npadvmod'), ('efficient', 'acomp'), ('compared', 'advcl'), ('legged', 'amod'), ('locomotion', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[power, efficient], [efficient, compared], [compared, legged], [legged, locomotion], [locomotion, .]]
+
+>> Trigrams: 
+[[power, efficient, compared], [efficient, compared, legged], [compared, legged, locomotion], [legged, locomotion, .]]
+
+>> Noun Phrases are: 
+[It, legged locomotion]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 38 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 39 =============================
+
+Standard wheel − Rotates around the wheel axle and around the contact · Castor wheel − Rotates around the wheel axle and the offset steering joint. 
+
+
+>> Tokens are: 
+[Standard, wheel, −, Rotates, wheel, axle, contact, ·, Castor, wheel, −, Rotates, wheel, axle, offset, steering, joint, .] 
+
+>> PoS Tags are: 
+[('Standard', 'ADJ'), ('wheel', 'NOUN'), ('−', 'NOUN'), ('Rotates', 'PROPN'), ('wheel', 'NOUN'), ('axle', 'NOUN'), ('contact', 'NOUN'), ('·', 'PUNCT'), ('Castor', 'NOUN'), ('wheel', 'NOUN'), ('−', 'NOUN'), ('Rotates', 'PROPN'), ('wheel', 'NOUN'), ('axle', 'NOUN'), ('offset', 'ADJ'), ('steering', 'NOUN'), ('joint', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Standard', 'amod'), ('wheel', 'compound'), ('−', 'compound'), ('Rotates', 'ROOT'), ('wheel', 'amod'), ('axle', 'pobj'), ('contact', 'pobj'), ('·', 'punct'), ('Castor', 'compound'), ('wheel', 'compound'), ('−', 'compound'), ('Rotates', 'appos'), ('wheel', 'amod'), ('axle', 'pobj'), ('offset', 'amod'), ('steering', 'conj'), ('joint', 'appos'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Standard, wheel], [wheel, −], [−, Rotates], [Rotates, wheel], [wheel, axle], [axle, contact], [contact, ·], [·, Castor], [Castor, wheel], [wheel, −], [−, Rotates], [Rotates, wheel], [wheel, axle], [axle, offset], [offset, steering], [steering, joint], [joint, .]]
+
+>> Trigrams: 
+[[Standard, wheel, −], [wheel, −, Rotates], [−, Rotates, wheel], [Rotates, wheel, axle], [wheel, axle, contact], [axle, contact, ·], [contact, ·, Castor], [·, Castor, wheel], [Castor, wheel, −], [wheel, −, Rotates], [−, Rotates, wheel], [Rotates, wheel, axle], [wheel, axle, offset], [axle, offset, steering], [offset, steering, joint], [steering, joint, .]]
+
+>> Noun Phrases are: 
+[Standard wheel − Rotates, the wheel axle, the contact, · Castor wheel − Rotates, the wheel axle, the offset steering, joint]
+
+>> Named Entities are: 
+[('− Rotates', 'GPE'), ('Castor', 'PERSON'), ('− Rotates', 'ORG')]
+
+
+============================ Sentence 40 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 41 =============================
+
+Swedish 45o and Swedish 90o wheels − Omni-wheel, rotates around the contact point, around the wheel axle, and around the rollers. 
+
+
+>> Tokens are: 
+[Swedish, 45o, Swedish, 90o, wheels, −, Omni, -, wheel, ,, rotates, contact, point, ,, wheel, axle, ,, rollers, .] 
+
+>> PoS Tags are: 
+[('Swedish', 'ADJ'), ('45o', 'NUM'), ('Swedish', 'ADJ'), ('90o', 'NOUN'), ('wheels', 'NOUN'), ('−', 'PROPN'), ('Omni', 'PROPN'), ('-', 'PUNCT'), ('wheel', 'NOUN'), (',', 'PUNCT'), ('rotates', 'VERB'), ('contact', 'NOUN'), ('point', 'NOUN'), (',', 'PUNCT'), ('wheel', 'NOUN'), ('axle', 'NOUN'), (',', 'PUNCT'), ('rollers', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Swedish', 'amod'), ('45o', 'npadvmod'), ('Swedish', 'amod'), ('90o', 'conj'), ('wheels', 'nsubj'), ('−', 'compound'), ('Omni', 'compound'), ('-', 'punct'), ('wheel', 'nsubj'), (',', 'punct'), ('rotates', 'ROOT'), ('contact', 'compound'), ('point', 'pobj'), (',', 'punct'), ('wheel', 'amod'), ('axle', 'pobj'), (',', 'punct'), ('rollers', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Swedish, 45o], [45o, Swedish], [Swedish, 90o], [90o, wheels], [wheels, −], [−, Omni], [Omni, -], [-, wheel], [wheel, ,], [,, rotates], [rotates, contact], [contact, point], [point, ,], [,, wheel], [wheel, axle], [axle, ,], [,, rollers], [rollers, .]]
+
+>> Trigrams: 
+[[Swedish, 45o, Swedish], [45o, Swedish, 90o], [Swedish, 90o, wheels], [90o, wheels, −], [wheels, −, Omni], [−, Omni, -], [Omni, -, wheel], [-, wheel, ,], [wheel, ,, rotates], [,, rotates, contact], [rotates, contact, point], [contact, point, ,], [point, ,, wheel], [,, wheel, axle], [wheel, axle, ,], [axle, ,, rollers], [,, rollers, .]]
+
+>> Noun Phrases are: 
+[Swedish 45o and Swedish 90o wheels, the contact point, the wheel axle, the rollers]
+
+>> Named Entities are: 
+[('Swedish', 'NORP'), ('Swedish', 'NORP'), ('− Omni-wheel', 'PERSON')]
+
+
+============================ Sentence 42 =============================
+
+· Ball or spherical wheel − Omnidirectional wheel, technically difficult to implement.   
+
+
+>> Tokens are: 
+[·, Ball, spherical, wheel, −, Omnidirectional, wheel, ,, technically, difficult, implement, .,  ] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('Ball', 'NOUN'), ('spherical', 'ADJ'), ('wheel', 'NOUN'), ('−', 'PROPN'), ('Omnidirectional', 'PROPN'), ('wheel', 'NOUN'), (',', 'PUNCT'), ('technically', 'ADV'), ('difficult', 'ADJ'), ('implement', 'VERB'), ('.', 'PUNCT'), (' ', 'SPACE')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('Ball', 'ROOT'), ('spherical', 'amod'), ('wheel', 'conj'), ('−', 'compound'), ('Omnidirectional', 'compound'), ('wheel', 'conj'), (',', 'punct'), ('technically', 'advmod'), ('difficult', 'amod'), ('implement', 'xcomp'), ('.', 'punct'), (' ', 'punct')]
+
+>> Bigrams: 
+[[·, Ball], [Ball, spherical], [spherical, wheel], [wheel, −], [−, Omnidirectional], [Omnidirectional, wheel], [wheel, ,], [,, technically], [technically, difficult], [difficult, implement], [implement, .], [.,  ]]
+
+>> Trigrams: 
+[[·, Ball, spherical], [Ball, spherical, wheel], [spherical, wheel, −], [wheel, −, Omnidirectional], [−, Omnidirectional, wheel], [Omnidirectional, wheel, ,], [wheel, ,, technically], [,, technically, difficult], [technically, difficult, implement], [difficult, implement, .], [implement, .,  ]]
+
+>> Noun Phrases are: 
+[· Ball, spherical wheel, − Omnidirectional wheel]
+
+>> Named Entities are: 
+[('Ball', 'PERSON'), ('− Omnidirectional', 'ORG')]
+
+
+============================ Sentence 43 =============================
+
+Slip/Skid Locomotion 
+
+
+>> Tokens are: 
+[Slip, /, Skid, Locomotion] 
+
+>> PoS Tags are: 
+[('Slip', 'PROPN'), ('/', 'SYM'), ('Skid', 'PROPN'), ('Locomotion', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Slip', 'nmod'), ('/', 'punct'), ('Skid', 'compound'), ('Locomotion', 'ROOT')]
+
+>> Bigrams: 
+[[Slip, /], [/, Skid], [Skid, Locomotion]]
+
+>> Trigrams: 
+[[Slip, /, Skid], [/, Skid, Locomotion]]
+
+>> Noun Phrases are: 
+[Slip/Skid Locomotion]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 44 =============================
+
+In this type, the vehicles use tracks as in a tank. 
+
+
+>> Tokens are: 
+[type, ,, vehicles, use, tracks, tank, .] 
+
+>> PoS Tags are: 
+[('type', 'NOUN'), (',', 'PUNCT'), ('vehicles', 'NOUN'), ('use', 'VERB'), ('tracks', 'NOUN'), ('tank', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('type', 'pobj'), (',', 'punct'), ('vehicles', 'nsubj'), ('use', 'ROOT'), ('tracks', 'dobj'), ('tank', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[type, ,], [,, vehicles], [vehicles, use], [use, tracks], [tracks, tank], [tank, .]]
+
+>> Trigrams: 
+[[type, ,, vehicles], [,, vehicles, use], [vehicles, use, tracks], [use, tracks, tank], [tracks, tank, .]]
+
+>> Noun Phrases are: 
+[this type, the vehicles, tracks, a tank]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 45 =============================
+
+The robot is steered by moving the tracks with different speeds in the same or opposite direction. 
+
+
+>> Tokens are: 
+[robot, steered, moving, tracks, different, speeds, opposite, direction, .] 
+
+>> PoS Tags are: 
+[('robot', 'NOUN'), ('steered', 'VERB'), ('moving', 'VERB'), ('tracks', 'NOUN'), ('different', 'ADJ'), ('speeds', 'NOUN'), ('opposite', 'ADJ'), ('direction', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('robot', 'nsubjpass'), ('steered', 'ROOT'), ('moving', 'pcomp'), ('tracks', 'dobj'), ('different', 'amod'), ('speeds', 'pobj'), ('opposite', 'conj'), ('direction', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[robot, steered], [steered, moving], [moving, tracks], [tracks, different], [different, speeds], [speeds, opposite], [opposite, direction], [direction, .]]
+
+>> Trigrams: 
+[[robot, steered, moving], [steered, moving, tracks], [moving, tracks, different], [tracks, different, speeds], [different, speeds, opposite], [speeds, opposite, direction], [opposite, direction, .]]
+
+>> Noun Phrases are: 
+[The robot, the tracks, different speeds, the same or opposite direction]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 46 =============================
+
+It offers stability because of large contact area of track and ground. 
+
+
+>> Tokens are: 
+[offers, stability, large, contact, area, track, ground, .] 
+
+>> PoS Tags are: 
+[('offers', 'VERB'), ('stability', 'NOUN'), ('large', 'ADJ'), ('contact', 'NOUN'), ('area', 'NOUN'), ('track', 'NOUN'), ('ground', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('offers', 'ROOT'), ('stability', 'dobj'), ('large', 'amod'), ('contact', 'compound'), ('area', 'pobj'), ('track', 'pobj'), ('ground', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[offers, stability], [stability, large], [large, contact], [contact, area], [area, track], [track, ground], [ground, .]]
+
+>> Trigrams: 
+[[offers, stability, large], [stability, large, contact], [large, contact, area], [contact, area, track], [area, track, ground], [track, ground, .]]
+
+>> Noun Phrases are: 
+[It, stability, large contact area, track, ground]
+
+>> Named Entities are: 
+[]

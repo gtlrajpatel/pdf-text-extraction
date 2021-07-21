@@ -1,0 +1,217 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-13  Expert systems (ES) are one of the prominent research domains of AI. 
+
+
+>> Tokens are: 
+[AI-13,  , Expert, systems, (, ES, ), prominent, research, domains, AI, .] 
+
+>> PoS Tags are: 
+[('AI-13', 'NUM'), (' ', 'SPACE'), ('Expert', 'NOUN'), ('systems', 'NOUN'), ('(', 'PUNCT'), ('ES', 'NOUN'), (')', 'PUNCT'), ('prominent', 'ADJ'), ('research', 'NOUN'), ('domains', 'NOUN'), ('AI', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI-13', 'nummod'), (' ', 'compound'), ('Expert', 'compound'), ('systems', 'nsubj'), ('(', 'punct'), ('ES', 'appos'), (')', 'punct'), ('prominent', 'amod'), ('research', 'compound'), ('domains', 'pobj'), ('AI', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AI-13,  ], [ , Expert], [Expert, systems], [systems, (], [(, ES], [ES, )], [), prominent], [prominent, research], [research, domains], [domains, AI], [AI, .]]
+
+>> Trigrams: 
+[[AI-13,  , Expert], [ , Expert, systems], [Expert, systems, (], [systems, (, ES], [(, ES, )], [ES, ), prominent], [), prominent, research], [prominent, research, domains], [research, domains, AI], [domains, AI, .]]
+
+>> Noun Phrases are: 
+[AI-13  Expert systems, ES, the prominent research domains, AI]
+
+>> Named Entities are: 
+[('AI-13  Expert', 'PRODUCT'), ('ES', 'ORG'), ('one', 'CARDINAL'), ('AI', 'ORG')]
+
+
+============================ Sentence 2 =============================
+
+It is introduced by the researchers at Stanford University, Computer Science Department. 
+
+
+>> Tokens are: 
+[introduced, researchers, Stanford, University, ,, Computer, Science, Department, .] 
+
+>> PoS Tags are: 
+[('introduced', 'VERB'), ('researchers', 'NOUN'), ('Stanford', 'PROPN'), ('University', 'PROPN'), (',', 'PUNCT'), ('Computer', 'PROPN'), ('Science', 'PROPN'), ('Department', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('introduced', 'ROOT'), ('researchers', 'pobj'), ('Stanford', 'compound'), ('University', 'pobj'), (',', 'punct'), ('Computer', 'compound'), ('Science', 'compound'), ('Department', 'appos'), ('.', 'punct')]
+
+>> Bigrams: 
+[[introduced, researchers], [researchers, Stanford], [Stanford, University], [University, ,], [,, Computer], [Computer, Science], [Science, Department], [Department, .]]
+
+>> Trigrams: 
+[[introduced, researchers, Stanford], [researchers, Stanford, University], [Stanford, University, ,], [University, ,, Computer], [,, Computer, Science], [Computer, Science, Department], [Science, Department, .]]
+
+>> Noun Phrases are: 
+[It, the researchers, Stanford University, Computer Science Department]
+
+>> Named Entities are: 
+[('Stanford University, Computer Science Department', 'ORG')]
+
+
+============================ Sentence 3 =============================
+
+What are Expert Systems? 
+
+
+>> Tokens are: 
+[Expert, Systems, ?] 
+
+>> PoS Tags are: 
+[('Expert', 'PROPN'), ('Systems', 'PROPN'), ('?', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Expert', 'compound'), ('Systems', 'attr'), ('?', 'punct')]
+
+>> Bigrams: 
+[[Expert, Systems], [Systems, ?]]
+
+>> Trigrams: 
+[[Expert, Systems, ?]]
+
+>> Noun Phrases are: 
+[What, Expert Systems]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+The expert systems are the computer applications developed to solve complex problems in a particular domain, at the level of extra-ordinary human intelligence and expertise. 
+
+
+>> Tokens are: 
+[expert, systems, computer, applications, developed, solve, complex, problems, particular, domain, ,, level, extra, -, ordinary, human, intelligence, expertise, .] 
+
+>> PoS Tags are: 
+[('expert', 'NOUN'), ('systems', 'NOUN'), ('computer', 'NOUN'), ('applications', 'NOUN'), ('developed', 'VERB'), ('solve', 'VERB'), ('complex', 'ADJ'), ('problems', 'NOUN'), ('particular', 'ADJ'), ('domain', 'NOUN'), (',', 'PUNCT'), ('level', 'NOUN'), ('extra', 'ADJ'), ('-', 'ADJ'), ('ordinary', 'ADJ'), ('human', 'ADJ'), ('intelligence', 'NOUN'), ('expertise', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('expert', 'compound'), ('systems', 'nsubj'), ('computer', 'compound'), ('applications', 'attr'), ('developed', 'acl'), ('solve', 'advcl'), ('complex', 'amod'), ('problems', 'dobj'), ('particular', 'amod'), ('domain', 'pobj'), (',', 'punct'), ('level', 'pobj'), ('extra', 'amod'), ('-', 'amod'), ('ordinary', 'amod'), ('human', 'amod'), ('intelligence', 'pobj'), ('expertise', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[expert, systems], [systems, computer], [computer, applications], [applications, developed], [developed, solve], [solve, complex], [complex, problems], [problems, particular], [particular, domain], [domain, ,], [,, level], [level, extra], [extra, -], [-, ordinary], [ordinary, human], [human, intelligence], [intelligence, expertise], [expertise, .]]
+
+>> Trigrams: 
+[[expert, systems, computer], [systems, computer, applications], [computer, applications, developed], [applications, developed, solve], [developed, solve, complex], [solve, complex, problems], [complex, problems, particular], [problems, particular, domain], [particular, domain, ,], [domain, ,, level], [,, level, extra], [level, extra, -], [extra, -, ordinary], [-, ordinary, human], [ordinary, human, intelligence], [human, intelligence, expertise], [intelligence, expertise, .]]
+
+>> Noun Phrases are: 
+[The expert systems, the computer applications, complex problems, a particular domain, the level, extra-ordinary human intelligence, expertise]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 5 =============================
+
+Characteristics of Expert Systems · High performance · Understandable · Reliable · Highly responsive Capabilities of Expert Systems The expert systems are capable of − · Advising · Instructing and assisting human in decision making · Demonstrating · Deriving a solution · Diagnosing · Explaining · Interpreting input · 
+
+
+>> Tokens are: 
+[Characteristics, Expert, Systems, ·, High, performance, ·, Understandable, ·, Reliable, ·, Highly, responsive, Capabilities, Expert, Systems, expert, systems, capable, −, ·, Advising, ·, Instructing, assisting, human, decision, making, ·, Demonstrating, ·, Deriving, solution, ·, Diagnosing, ·, Explaining, ·, Interpreting, input, ·] 
+
+>> PoS Tags are: 
+[('Characteristics', 'NOUN'), ('Expert', 'PROPN'), ('Systems', 'PROPN'), ('·', 'PUNCT'), ('High', 'ADJ'), ('performance', 'NOUN'), ('·', 'PUNCT'), ('Understandable', 'PROPN'), ('·', 'PUNCT'), ('Reliable', 'PROPN'), ('·', 'PUNCT'), ('Highly', 'ADV'), ('responsive', 'ADJ'), ('Capabilities', 'PROPN'), ('Expert', 'PROPN'), ('Systems', 'PROPN'), ('expert', 'NOUN'), ('systems', 'NOUN'), ('capable', 'ADJ'), ('−', 'NOUN'), ('·', 'PUNCT'), ('Advising', 'VERB'), ('·', 'PUNCT'), ('Instructing', 'NOUN'), ('assisting', 'VERB'), ('human', 'NOUN'), ('decision', 'NOUN'), ('making', 'VERB'), ('·', 'PUNCT'), ('Demonstrating', 'VERB'), ('·', 'PUNCT'), ('Deriving', 'VERB'), ('solution', 'NOUN'), ('·', 'PUNCT'), ('Diagnosing', 'VERB'), ('·', 'PUNCT'), ('Explaining', 'VERB'), ('·', 'PUNCT'), ('Interpreting', 'NOUN'), ('input', 'NOUN'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Characteristics', 'nmod'), ('Expert', 'compound'), ('Systems', 'nmod'), ('·', 'punct'), ('High', 'amod'), ('performance', 'pobj'), ('·', 'punct'), ('Understandable', 'nmod'), ('·', 'punct'), ('Reliable', 'nmod'), ('·', 'punct'), ('Highly', 'advmod'), ('responsive', 'amod'), ('Capabilities', 'appos'), ('Expert', 'compound'), ('Systems', 'pobj'), ('expert', 'compound'), ('systems', 'nsubj'), ('capable', 'acomp'), ('−', 'pobj'), ('·', 'punct'), ('Advising', 'acl'), ('·', 'punct'), ('Instructing', 'dobj'), ('assisting', 'conj'), ('human', 'dobj'), ('decision', 'pobj'), ('making', 'advcl'), ('·', 'punct'), ('Demonstrating', 'xcomp'), ('·', 'punct'), ('Deriving', 'advcl'), ('solution', 'dobj'), ('·', 'punct'), ('Diagnosing', 'acl'), ('·', 'punct'), ('Explaining', 'xcomp'), ('·', 'punct'), ('Interpreting', 'compound'), ('input', 'dobj'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Characteristics, Expert], [Expert, Systems], [Systems, ·], [·, High], [High, performance], [performance, ·], [·, Understandable], [Understandable, ·], [·, Reliable], [Reliable, ·], [·, Highly], [Highly, responsive], [responsive, Capabilities], [Capabilities, Expert], [Expert, Systems], [Systems, expert], [expert, systems], [systems, capable], [capable, −], [−, ·], [·, Advising], [Advising, ·], [·, Instructing], [Instructing, assisting], [assisting, human], [human, decision], [decision, making], [making, ·], [·, Demonstrating], [Demonstrating, ·], [·, Deriving], [Deriving, solution], [solution, ·], [·, Diagnosing], [Diagnosing, ·], [·, Explaining], [Explaining, ·], [·, Interpreting], [Interpreting, input], [input, ·]]
+
+>> Trigrams: 
+[[Characteristics, Expert, Systems], [Expert, Systems, ·], [Systems, ·, High], [·, High, performance], [High, performance, ·], [performance, ·, Understandable], [·, Understandable, ·], [Understandable, ·, Reliable], [·, Reliable, ·], [Reliable, ·, Highly], [·, Highly, responsive], [Highly, responsive, Capabilities], [responsive, Capabilities, Expert], [Capabilities, Expert, Systems], [Expert, Systems, expert], [Systems, expert, systems], [expert, systems, capable], [systems, capable, −], [capable, −, ·], [−, ·, Advising], [·, Advising, ·], [Advising, ·, Instructing], [·, Instructing, assisting], [Instructing, assisting, human], [assisting, human, decision], [human, decision, making], [decision, making, ·], [making, ·, Demonstrating], [·, Demonstrating, ·], [Demonstrating, ·, Deriving], [·, Deriving, solution], [Deriving, solution, ·], [solution, ·, Diagnosing], [·, Diagnosing, ·], [Diagnosing, ·, Explaining], [·, Explaining, ·], [Explaining, ·, Interpreting], [·, Interpreting, input], [Interpreting, input, ·]]
+
+>> Noun Phrases are: 
+[Expert Systems · High performance, · Understandable · Reliable · Highly responsive Capabilities, Expert Systems, −, Instructing, human, decision, a solution, · Interpreting input]
+
+>> Named Entities are: 
+[('Expert Systems', 'ORG'), ('Understandable', 'PERSON'), ('Highly', 'PERSON'), ('Instructing', 'PERSON'), ('Demonstrating', 'PERSON'), ('Interpreting', 'PERSON')]
+
+
+============================ Sentence 6 =============================
+
+Predicting results · Justifying the conclusion · Suggesting alternative options to a problem They are incapable of − · Substituting human decision makers · 
+
+
+>> Tokens are: 
+[Predicting, results, ·, Justifying, conclusion, ·, Suggesting, alternative, options, problem, incapable, −, ·, Substituting, human, decision, makers, ·] 
+
+>> PoS Tags are: 
+[('Predicting', 'VERB'), ('results', 'NOUN'), ('·', 'PUNCT'), ('Justifying', 'VERB'), ('conclusion', 'NOUN'), ('·', 'PUNCT'), ('Suggesting', 'VERB'), ('alternative', 'ADJ'), ('options', 'NOUN'), ('problem', 'NOUN'), ('incapable', 'ADJ'), ('−', 'NOUN'), ('·', 'PUNCT'), ('Substituting', 'VERB'), ('human', 'ADJ'), ('decision', 'NOUN'), ('makers', 'NOUN'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Predicting', 'advcl'), ('results', 'dobj'), ('·', 'punct'), ('Justifying', 'advcl'), ('conclusion', 'dobj'), ('·', 'punct'), ('Suggesting', 'acl'), ('alternative', 'amod'), ('options', 'dobj'), ('problem', 'pobj'), ('incapable', 'acomp'), ('−', 'pobj'), ('·', 'punct'), ('Substituting', 'advcl'), ('human', 'amod'), ('decision', 'compound'), ('makers', 'dobj'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Predicting, results], [results, ·], [·, Justifying], [Justifying, conclusion], [conclusion, ·], [·, Suggesting], [Suggesting, alternative], [alternative, options], [options, problem], [problem, incapable], [incapable, −], [−, ·], [·, Substituting], [Substituting, human], [human, decision], [decision, makers], [makers, ·]]
+
+>> Trigrams: 
+[[Predicting, results, ·], [results, ·, Justifying], [·, Justifying, conclusion], [Justifying, conclusion, ·], [conclusion, ·, Suggesting], [·, Suggesting, alternative], [Suggesting, alternative, options], [alternative, options, problem], [options, problem, incapable], [problem, incapable, −], [incapable, −, ·], [−, ·, Substituting], [·, Substituting, human], [Substituting, human, decision], [human, decision, makers], [decision, makers, ·]]
+
+>> Noun Phrases are: 
+[results, the conclusion, alternative options, a problem, They, −, human decision makers]
+
+>> Named Entities are: 
+[('Justifying', 'PERSON'), ('Suggesting', 'PERSON')]
+
+
+============================ Sentence 7 =============================
+
+Possessing human capabilities · Producing accurate output for inadequate knowledge base · Refining their own knowledge Components of Expert Systems The components of ES include − · Knowledge Base · Inference Engine · User Interface Let us see them one by one 
+
+
+>> Tokens are: 
+[Possessing, human, capabilities, ·, Producing, accurate, output, inadequate, knowledge, base, ·, Refining, knowledge, Components, Expert, Systems, components, ES, include, −, ·, Knowledge, Base, ·, Inference, Engine, ·, User, Interface, Let] 
+
+>> PoS Tags are: 
+[('Possessing', 'VERB'), ('human', 'ADJ'), ('capabilities', 'NOUN'), ('·', 'PUNCT'), ('Producing', 'VERB'), ('accurate', 'ADJ'), ('output', 'NOUN'), ('inadequate', 'ADJ'), ('knowledge', 'NOUN'), ('base', 'NOUN'), ('·', 'PUNCT'), ('Refining', 'VERB'), ('knowledge', 'NOUN'), ('Components', 'PROPN'), ('Expert', 'PROPN'), ('Systems', 'PROPN'), ('components', 'NOUN'), ('ES', 'PROPN'), ('include', 'VERB'), ('−', 'PROPN'), ('·', 'PUNCT'), ('Knowledge', 'PROPN'), ('Base', 'PROPN'), ('·', 'PUNCT'), ('Inference', 'PROPN'), ('Engine', 'PROPN'), ('·', 'PUNCT'), ('User', 'PROPN'), ('Interface', 'PROPN'), ('Let', 'VERB')] 
+
+>> Dependency Tags are: 
+[('Possessing', 'advcl'), ('human', 'amod'), ('capabilities', 'dobj'), ('·', 'punct'), ('Producing', 'acl'), ('accurate', 'amod'), ('output', 'dobj'), ('inadequate', 'amod'), ('knowledge', 'compound'), ('base', 'pobj'), ('·', 'punct'), ('Refining', 'csubj'), ('knowledge', 'compound'), ('Components', 'dobj'), ('Expert', 'compound'), ('Systems', 'pobj'), ('components', 'nsubj'), ('ES', 'pobj'), ('include', 'ROOT'), ('−', 'dobj'), ('·', 'punct'), ('Knowledge', 'compound'), ('Base', 'nmod'), ('·', 'punct'), ('Inference', 'compound'), ('Engine', 'appos'), ('·', 'punct'), ('User', 'compound'), ('Interface', 'nsubj'), ('Let', 'ccomp')]
+
+>> Bigrams: 
+[[Possessing, human], [human, capabilities], [capabilities, ·], [·, Producing], [Producing, accurate], [accurate, output], [output, inadequate], [inadequate, knowledge], [knowledge, base], [base, ·], [·, Refining], [Refining, knowledge], [knowledge, Components], [Components, Expert], [Expert, Systems], [Systems, components], [components, ES], [ES, include], [include, −], [−, ·], [·, Knowledge], [Knowledge, Base], [Base, ·], [·, Inference], [Inference, Engine], [Engine, ·], [·, User], [User, Interface], [Interface, Let]]
+
+>> Trigrams: 
+[[Possessing, human, capabilities], [human, capabilities, ·], [capabilities, ·, Producing], [·, Producing, accurate], [Producing, accurate, output], [accurate, output, inadequate], [output, inadequate, knowledge], [inadequate, knowledge, base], [knowledge, base, ·], [base, ·, Refining], [·, Refining, knowledge], [Refining, knowledge, Components], [knowledge, Components, Expert], [Components, Expert, Systems], [Expert, Systems, components], [Systems, components, ES], [components, ES, include], [ES, include, −], [include, −, ·], [−, ·, Knowledge], [·, Knowledge, Base], [Knowledge, Base, ·], [Base, ·, Inference], [·, Inference, Engine], [Inference, Engine, ·], [Engine, ·, User], [·, User, Interface], [User, Interface, Let]]
+
+>> Noun Phrases are: 
+[human capabilities, accurate output, inadequate knowledge base, their own knowledge Components, Expert Systems, The components, ES, −, · Knowledge Base · Inference Engine, User Interface, us, them]
+
+>> Named Entities are: 
+[('ES', 'ORG'), ('−', 'GPE'), ('Knowledge Base', 'PERSON'), ('User Interface', 'PERSON')]
+
+
+============================ Sentence 8 =============================
+
+briefly − 
+
+
+>> Tokens are: 
+[briefly, −] 
+
+>> PoS Tags are: 
+[('briefly', 'NOUN'), ('−', 'NOUN')] 
+
+>> Dependency Tags are: 
+[('briefly', 'compound'), ('−', 'ROOT')]
+
+>> Bigrams: 
+[[briefly, −]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[briefly −]
+
+>> Named Entities are: 
+[('−', 'GPE')]

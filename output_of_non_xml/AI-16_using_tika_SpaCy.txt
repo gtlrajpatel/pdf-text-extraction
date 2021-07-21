@@ -1,0 +1,892 @@
+				 *** Text Processing using Spacy *** 
+
+
+============================ Sentence 1 =============================
+
+AI-16 Components of a Robot Robots are constructed with the following − · Power Supply − The robots are powered by batteries, solar power, hydraulic, or pneumatic power sources. 
+
+
+>> Tokens are: 
+[AI-16, Components, Robot, Robots, constructed, following, −, ·, Power, Supply, −, robots, powered, batteries, ,, solar, power, ,, hydraulic, ,, pneumatic, power, sources, .] 
+
+>> PoS Tags are: 
+[('AI-16', 'PROPN'), ('Components', 'PROPN'), ('Robot', 'PROPN'), ('Robots', 'PROPN'), ('constructed', 'VERB'), ('following', 'VERB'), ('−', 'NOUN'), ('·', 'PUNCT'), ('Power', 'PROPN'), ('Supply', 'NOUN'), ('−', 'PROPN'), ('robots', 'NOUN'), ('powered', 'VERB'), ('batteries', 'NOUN'), (',', 'PUNCT'), ('solar', 'ADJ'), ('power', 'NOUN'), (',', 'PUNCT'), ('hydraulic', 'ADJ'), (',', 'PUNCT'), ('pneumatic', 'ADJ'), ('power', 'NOUN'), ('sources', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('AI-16', 'compound'), ('Components', 'nsubjpass'), ('Robot', 'compound'), ('Robots', 'pobj'), ('constructed', 'ROOT'), ('following', 'amod'), ('−', 'pobj'), ('·', 'punct'), ('Power', 'compound'), ('Supply', 'compound'), ('−', 'appos'), ('robots', 'nsubjpass'), ('powered', 'advcl'), ('batteries', 'pobj'), (',', 'punct'), ('solar', 'amod'), ('power', 'conj'), (',', 'punct'), ('hydraulic', 'conj'), (',', 'punct'), ('pneumatic', 'amod'), ('power', 'compound'), ('sources', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[AI-16, Components], [Components, Robot], [Robot, Robots], [Robots, constructed], [constructed, following], [following, −], [−, ·], [·, Power], [Power, Supply], [Supply, −], [−, robots], [robots, powered], [powered, batteries], [batteries, ,], [,, solar], [solar, power], [power, ,], [,, hydraulic], [hydraulic, ,], [,, pneumatic], [pneumatic, power], [power, sources], [sources, .]]
+
+>> Trigrams: 
+[[AI-16, Components, Robot], [Components, Robot, Robots], [Robot, Robots, constructed], [Robots, constructed, following], [constructed, following, −], [following, −, ·], [−, ·, Power], [·, Power, Supply], [Power, Supply, −], [Supply, −, robots], [−, robots, powered], [robots, powered, batteries], [powered, batteries, ,], [batteries, ,, solar], [,, solar, power], [solar, power, ,], [power, ,, hydraulic], [,, hydraulic, ,], [hydraulic, ,, pneumatic], [,, pneumatic, power], [pneumatic, power, sources], [power, sources, .]]
+
+>> Noun Phrases are: 
+[AI-16 Components, a Robot Robots, the following −, · Power Supply −, The robots, batteries, solar power, pneumatic power sources]
+
+>> Named Entities are: 
+[('AI-16 Components', 'PERSON')]
+
+
+============================ Sentence 2 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 3 =============================
+
+Actuators − They convert energy into movement. 
+
+
+>> Tokens are: 
+[Actuators, −, convert, energy, movement, .] 
+
+>> PoS Tags are: 
+[('Actuators', 'NOUN'), ('−', 'PROPN'), ('convert', 'VERB'), ('energy', 'NOUN'), ('movement', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Actuators', 'npadvmod'), ('−', 'nummod'), ('convert', 'ROOT'), ('energy', 'dobj'), ('movement', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Actuators, −], [−, convert], [convert, energy], [energy, movement], [movement, .]]
+
+>> Trigrams: 
+[[Actuators, −, convert], [−, convert, energy], [convert, energy, movement], [energy, movement, .]]
+
+>> Noun Phrases are: 
+[They, energy, movement]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 4 =============================
+
+· Electric motors (AC/DC) 
+
+
+>> Tokens are: 
+[·, Electric, motors, (, AC, /, DC, )] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT'), ('Electric', 'ADJ'), ('motors', 'NOUN'), ('(', 'PUNCT'), ('AC', 'PROPN'), ('/', 'SYM'), ('DC', 'PROPN'), (')', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'punct'), ('Electric', 'amod'), ('motors', 'ROOT'), ('(', 'punct'), ('AC', 'nmod'), ('/', 'punct'), ('DC', 'appos'), (')', 'punct')]
+
+>> Bigrams: 
+[[·, Electric], [Electric, motors], [motors, (], [(, AC], [AC, /], [/, DC], [DC, )]]
+
+>> Trigrams: 
+[[·, Electric, motors], [Electric, motors, (], [motors, (, AC], [(, AC, /], [AC, /, DC], [/, DC, )]]
+
+>> Noun Phrases are: 
+[· Electric motors, AC/DC]
+
+>> Named Entities are: 
+[('Electric', 'ORG'), ('AC/DC', 'ORG')]
+
+
+============================ Sentence 5 =============================
+
+− They are required for rotational movement. 
+
+
+>> Tokens are: 
+[−, required, rotational, movement, .] 
+
+>> PoS Tags are: 
+[('−', 'PROPN'), ('required', 'VERB'), ('rotational', 'ADJ'), ('movement', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('−', 'ROOT'), ('required', 'ccomp'), ('rotational', 'amod'), ('movement', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[−, required], [required, rotational], [rotational, movement], [movement, .]]
+
+>> Trigrams: 
+[[−, required, rotational], [required, rotational, movement], [rotational, movement, .]]
+
+>> Noun Phrases are: 
+[−, They, rotational movement]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 6 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 7 =============================
+
+Pneumatic Air Muscles − They contract almost 40% when air is sucked in them. · 
+
+
+>> Tokens are: 
+[Pneumatic, Air, Muscles, −, contract, 40, %, air, sucked, ., ·] 
+
+>> PoS Tags are: 
+[('Pneumatic', 'ADJ'), ('Air', 'PROPN'), ('Muscles', 'PROPN'), ('−', 'PROPN'), ('contract', 'VERB'), ('40', 'NUM'), ('%', 'NOUN'), ('air', 'NOUN'), ('sucked', 'VERB'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Pneumatic', 'compound'), ('Air', 'compound'), ('Muscles', 'compound'), ('−', 'dep'), ('contract', 'ROOT'), ('40', 'nummod'), ('%', 'dobj'), ('air', 'nsubjpass'), ('sucked', 'advcl'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Pneumatic, Air], [Air, Muscles], [Muscles, −], [−, contract], [contract, 40], [40, %], [%, air], [air, sucked], [sucked, .], [., ·]]
+
+>> Trigrams: 
+[[Pneumatic, Air, Muscles], [Air, Muscles, −], [Muscles, −, contract], [−, contract, 40], [contract, 40, %], [40, %, air], [%, air, sucked], [air, sucked, .], [sucked, ., ·]]
+
+>> Noun Phrases are: 
+[They, almost 40%, air, them]
+
+>> Named Entities are: 
+[('Pneumatic Air Muscles −', 'ORG'), ('almost 40%', 'PERCENT')]
+
+
+============================ Sentence 8 =============================
+
+Muscle Wires − They contract by 5% when electric current is passed through them. · 
+
+
+>> Tokens are: 
+[Muscle, Wires, −, contract, 5, %, electric, current, passed, ., ·] 
+
+>> PoS Tags are: 
+[('Muscle', 'PROPN'), ('Wires', 'NOUN'), ('−', 'PROPN'), ('contract', 'VERB'), ('5', 'NUM'), ('%', 'NOUN'), ('electric', 'ADJ'), ('current', 'NOUN'), ('passed', 'VERB'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Muscle', 'compound'), ('Wires', 'compound'), ('−', 'npadvmod'), ('contract', 'ROOT'), ('5', 'nummod'), ('%', 'pobj'), ('electric', 'amod'), ('current', 'nsubjpass'), ('passed', 'advcl'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Muscle, Wires], [Wires, −], [−, contract], [contract, 5], [5, %], [%, electric], [electric, current], [current, passed], [passed, .], [., ·]]
+
+>> Trigrams: 
+[[Muscle, Wires, −], [Wires, −, contract], [−, contract, 5], [contract, 5, %], [5, %, electric], [%, electric, current], [electric, current, passed], [current, passed, .], [passed, ., ·]]
+
+>> Noun Phrases are: 
+[They, 5%, electric current, them]
+
+>> Named Entities are: 
+[('Muscle Wires −', 'PERSON'), ('5%', 'PERCENT')]
+
+
+============================ Sentence 9 =============================
+
+Piezo Motors and Ultrasonic Motors − Best for industrial robots. 
+
+
+>> Tokens are: 
+[Piezo, Motors, Ultrasonic, Motors, −, Best, industrial, robots, .] 
+
+>> PoS Tags are: 
+[('Piezo', 'PROPN'), ('Motors', 'PROPN'), ('Ultrasonic', 'PROPN'), ('Motors', 'PROPN'), ('−', 'PROPN'), ('Best', 'PROPN'), ('industrial', 'ADJ'), ('robots', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Piezo', 'compound'), ('Motors', 'nsubj'), ('Ultrasonic', 'compound'), ('Motors', 'conj'), ('−', 'ROOT'), ('Best', 'npadvmod'), ('industrial', 'amod'), ('robots', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Piezo, Motors], [Motors, Ultrasonic], [Ultrasonic, Motors], [Motors, −], [−, Best], [Best, industrial], [industrial, robots], [robots, .]]
+
+>> Trigrams: 
+[[Piezo, Motors, Ultrasonic], [Motors, Ultrasonic, Motors], [Ultrasonic, Motors, −], [Motors, −, Best], [−, Best, industrial], [Best, industrial, robots], [industrial, robots, .]]
+
+>> Noun Phrases are: 
+[Piezo Motors, Ultrasonic Motors, industrial robots]
+
+>> Named Entities are: 
+[('Piezo Motors', 'ORG')]
+
+
+============================ Sentence 10 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 11 =============================
+
+Sensors − They provide knowledge of real time information on the task environment. 
+
+
+>> Tokens are: 
+[Sensors, −, provide, knowledge, real, time, information, task, environment, .] 
+
+>> PoS Tags are: 
+[('Sensors', 'NOUN'), ('−', 'VERB'), ('provide', 'VERB'), ('knowledge', 'NOUN'), ('real', 'ADJ'), ('time', 'NOUN'), ('information', 'NOUN'), ('task', 'NOUN'), ('environment', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Sensors', 'compound'), ('−', 'dep'), ('provide', 'ROOT'), ('knowledge', 'dobj'), ('real', 'amod'), ('time', 'compound'), ('information', 'pobj'), ('task', 'compound'), ('environment', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Sensors, −], [−, provide], [provide, knowledge], [knowledge, real], [real, time], [time, information], [information, task], [task, environment], [environment, .]]
+
+>> Trigrams: 
+[[Sensors, −, provide], [−, provide, knowledge], [provide, knowledge, real], [knowledge, real, time], [real, time, information], [time, information, task], [information, task, environment], [task, environment, .]]
+
+>> Noun Phrases are: 
+[They, knowledge, real time information, the task environment]
+
+>> Named Entities are: 
+[('Sensors −', 'PERSON')]
+
+
+============================ Sentence 12 =============================
+
+Robots are equipped with vision sensors to be to compute the depth in the environment. 
+
+
+>> Tokens are: 
+[Robots, equipped, vision, sensors, compute, depth, environment, .] 
+
+>> PoS Tags are: 
+[('Robots', 'NOUN'), ('equipped', 'VERB'), ('vision', 'NOUN'), ('sensors', 'NOUN'), ('compute', 'VERB'), ('depth', 'NOUN'), ('environment', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Robots', 'nsubjpass'), ('equipped', 'ROOT'), ('vision', 'compound'), ('sensors', 'pobj'), ('compute', 'xcomp'), ('depth', 'dobj'), ('environment', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Robots, equipped], [equipped, vision], [vision, sensors], [sensors, compute], [compute, depth], [depth, environment], [environment, .]]
+
+>> Trigrams: 
+[[Robots, equipped, vision], [equipped, vision, sensors], [vision, sensors, compute], [sensors, compute, depth], [compute, depth, environment], [depth, environment, .]]
+
+>> Noun Phrases are: 
+[Robots, vision sensors, the depth, the environment]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 13 =============================
+
+A tactile sensor imitates the mechanical properties of touch receptors of human fingertips. 
+
+
+>> Tokens are: 
+[tactile, sensor, imitates, mechanical, properties, touch, receptors, human, fingertips, .] 
+
+>> PoS Tags are: 
+[('tactile', 'ADJ'), ('sensor', 'NOUN'), ('imitates', 'VERB'), ('mechanical', 'ADJ'), ('properties', 'NOUN'), ('touch', 'NOUN'), ('receptors', 'NOUN'), ('human', 'ADJ'), ('fingertips', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('tactile', 'compound'), ('sensor', 'nsubj'), ('imitates', 'ROOT'), ('mechanical', 'amod'), ('properties', 'dobj'), ('touch', 'compound'), ('receptors', 'pobj'), ('human', 'amod'), ('fingertips', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[tactile, sensor], [sensor, imitates], [imitates, mechanical], [mechanical, properties], [properties, touch], [touch, receptors], [receptors, human], [human, fingertips], [fingertips, .]]
+
+>> Trigrams: 
+[[tactile, sensor, imitates], [sensor, imitates, mechanical], [imitates, mechanical, properties], [mechanical, properties, touch], [properties, touch, receptors], [touch, receptors, human], [receptors, human, fingertips], [human, fingertips, .]]
+
+>> Noun Phrases are: 
+[A tactile sensor, the mechanical properties, touch receptors, human fingertips]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 14 =============================
+
+Computer Vision 
+
+
+>> Tokens are: 
+[Computer, Vision] 
+
+>> PoS Tags are: 
+[('Computer', 'PROPN'), ('Vision', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Computer', 'compound'), ('Vision', 'ROOT')]
+
+>> Bigrams: 
+[[Computer, Vision]]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[Computer Vision]
+
+>> Named Entities are: 
+[('Computer Vision', 'ORG')]
+
+
+============================ Sentence 15 =============================
+
+This is a technology of AI with which the robots can see. 
+
+
+>> Tokens are: 
+[technology, AI, robots, .] 
+
+>> PoS Tags are: 
+[('technology', 'NOUN'), ('AI', 'PROPN'), ('robots', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('technology', 'attr'), ('AI', 'pobj'), ('robots', 'nsubj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[technology, AI], [AI, robots], [robots, .]]
+
+>> Trigrams: 
+[[technology, AI, robots], [AI, robots, .]]
+
+>> Noun Phrases are: 
+[a technology, AI, the robots]
+
+>> Named Entities are: 
+[('AI', 'ORG')]
+
+
+============================ Sentence 16 =============================
+
+The computer vision plays vital role in the domains of safety, security, health, access, and entertainment. 
+
+
+>> Tokens are: 
+[computer, vision, plays, vital, role, domains, safety, ,, security, ,, health, ,, access, ,, entertainment, .] 
+
+>> PoS Tags are: 
+[('computer', 'NOUN'), ('vision', 'NOUN'), ('plays', 'VERB'), ('vital', 'ADJ'), ('role', 'NOUN'), ('domains', 'NOUN'), ('safety', 'NOUN'), (',', 'PUNCT'), ('security', 'NOUN'), (',', 'PUNCT'), ('health', 'NOUN'), (',', 'PUNCT'), ('access', 'NOUN'), (',', 'PUNCT'), ('entertainment', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('computer', 'compound'), ('vision', 'nsubj'), ('plays', 'ROOT'), ('vital', 'amod'), ('role', 'dobj'), ('domains', 'pobj'), ('safety', 'pobj'), (',', 'punct'), ('security', 'conj'), (',', 'punct'), ('health', 'conj'), (',', 'punct'), ('access', 'conj'), (',', 'punct'), ('entertainment', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[computer, vision], [vision, plays], [plays, vital], [vital, role], [role, domains], [domains, safety], [safety, ,], [,, security], [security, ,], [,, health], [health, ,], [,, access], [access, ,], [,, entertainment], [entertainment, .]]
+
+>> Trigrams: 
+[[computer, vision, plays], [vision, plays, vital], [plays, vital, role], [vital, role, domains], [role, domains, safety], [domains, safety, ,], [safety, ,, security], [,, security, ,], [security, ,, health], [,, health, ,], [health, ,, access], [,, access, ,], [access, ,, entertainment], [,, entertainment, .]]
+
+>> Noun Phrases are: 
+[The computer vision, vital role, the domains, safety, security, health, access, entertainment]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 17 =============================
+
+Computer vision automatically extracts, analyzes, and comprehends useful information from a single image or an array of images. 
+
+
+>> Tokens are: 
+[Computer, vision, automatically, extracts, ,, analyzes, ,, comprehends, useful, information, single, image, array, images, .] 
+
+>> PoS Tags are: 
+[('Computer', 'NOUN'), ('vision', 'NOUN'), ('automatically', 'ADV'), ('extracts', 'VERB'), (',', 'PUNCT'), ('analyzes', 'VERB'), (',', 'PUNCT'), ('comprehends', 'VERB'), ('useful', 'ADJ'), ('information', 'NOUN'), ('single', 'ADJ'), ('image', 'NOUN'), ('array', 'NOUN'), ('images', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Computer', 'compound'), ('vision', 'nsubj'), ('automatically', 'advmod'), ('extracts', 'ROOT'), (',', 'punct'), ('analyzes', 'conj'), (',', 'punct'), ('comprehends', 'conj'), ('useful', 'amod'), ('information', 'dobj'), ('single', 'amod'), ('image', 'pobj'), ('array', 'conj'), ('images', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Computer, vision], [vision, automatically], [automatically, extracts], [extracts, ,], [,, analyzes], [analyzes, ,], [,, comprehends], [comprehends, useful], [useful, information], [information, single], [single, image], [image, array], [array, images], [images, .]]
+
+>> Trigrams: 
+[[Computer, vision, automatically], [vision, automatically, extracts], [automatically, extracts, ,], [extracts, ,, analyzes], [,, analyzes, ,], [analyzes, ,, comprehends], [,, comprehends, useful], [comprehends, useful, information], [useful, information, single], [information, single, image], [single, image, array], [image, array, images], [array, images, .]]
+
+>> Noun Phrases are: 
+[Computer vision, useful information, a single image, an array, images]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 18 =============================
+
+This process involves development of algorithms to accomplish automatic visual comprehension. 
+
+
+>> Tokens are: 
+[process, involves, development, algorithms, accomplish, automatic, visual, comprehension, .] 
+
+>> PoS Tags are: 
+[('process', 'NOUN'), ('involves', 'VERB'), ('development', 'NOUN'), ('algorithms', 'NOUN'), ('accomplish', 'VERB'), ('automatic', 'ADJ'), ('visual', 'ADJ'), ('comprehension', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('process', 'nsubj'), ('involves', 'ROOT'), ('development', 'dobj'), ('algorithms', 'pobj'), ('accomplish', 'advcl'), ('automatic', 'amod'), ('visual', 'amod'), ('comprehension', 'dobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[process, involves], [involves, development], [development, algorithms], [algorithms, accomplish], [accomplish, automatic], [automatic, visual], [visual, comprehension], [comprehension, .]]
+
+>> Trigrams: 
+[[process, involves, development], [involves, development, algorithms], [development, algorithms, accomplish], [algorithms, accomplish, automatic], [accomplish, automatic, visual], [automatic, visual, comprehension], [visual, comprehension, .]]
+
+>> Noun Phrases are: 
+[This process, development, algorithms, automatic visual comprehension]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 19 =============================
+
+Hardware of Computer Vision System This involves − · Power supply · Image acquisition device such as camera · A processor · A software · A display device for monitoring the system · Accessories such as camera stands, cables, and connectors Tasks of Computer Vision · OCR − 
+
+
+>> Tokens are: 
+[Hardware, Computer, Vision, System, involves, −, ·, Power, supply, ·, Image, acquisition, device, camera, ·, processor, ·, software, ·, display, device, monitoring, system, ·, Accessories, camera, stands, ,, cables, ,, connectors, Tasks, Computer, Vision, ·, OCR, −] 
+
+>> PoS Tags are: 
+[('Hardware', 'PROPN'), ('Computer', 'PROPN'), ('Vision', 'PROPN'), ('System', 'PROPN'), ('involves', 'VERB'), ('−', 'PROPN'), ('·', 'PUNCT'), ('Power', 'NOUN'), ('supply', 'NOUN'), ('·', 'PUNCT'), ('Image', 'NOUN'), ('acquisition', 'NOUN'), ('device', 'NOUN'), ('camera', 'NOUN'), ('·', 'PUNCT'), ('processor', 'NOUN'), ('·', 'PUNCT'), ('software', 'NOUN'), ('·', 'PUNCT'), ('display', 'NOUN'), ('device', 'NOUN'), ('monitoring', 'VERB'), ('system', 'NOUN'), ('·', 'PUNCT'), ('Accessories', 'NOUN'), ('camera', 'NOUN'), ('stands', 'NOUN'), (',', 'PUNCT'), ('cables', 'NOUN'), (',', 'PUNCT'), ('connectors', 'NOUN'), ('Tasks', 'NOUN'), ('Computer', 'PROPN'), ('Vision', 'PROPN'), ('·', 'PUNCT'), ('OCR', 'PROPN'), ('−', 'PROPN')] 
+
+>> Dependency Tags are: 
+[('Hardware', 'npadvmod'), ('Computer', 'compound'), ('Vision', 'compound'), ('System', 'pobj'), ('involves', 'ROOT'), ('−', 'nmod'), ('·', 'punct'), ('Power', 'nmod'), ('supply', 'nmod'), ('·', 'punct'), ('Image', 'compound'), ('acquisition', 'compound'), ('device', 'dobj'), ('camera', 'pobj'), ('·', 'punct'), ('processor', 'appos'), ('·', 'punct'), ('software', 'appos'), ('·', 'punct'), ('display', 'compound'), ('device', 'appos'), ('monitoring', 'pcomp'), ('system', 'dobj'), ('·', 'punct'), ('Accessories', 'appos'), ('camera', 'compound'), ('stands', 'pobj'), (',', 'punct'), ('cables', 'conj'), (',', 'punct'), ('connectors', 'compound'), ('Tasks', 'conj'), ('Computer', 'compound'), ('Vision', 'pobj'), ('·', 'punct'), ('OCR', 'compound'), ('−', 'punct')]
+
+>> Bigrams: 
+[[Hardware, Computer], [Computer, Vision], [Vision, System], [System, involves], [involves, −], [−, ·], [·, Power], [Power, supply], [supply, ·], [·, Image], [Image, acquisition], [acquisition, device], [device, camera], [camera, ·], [·, processor], [processor, ·], [·, software], [software, ·], [·, display], [display, device], [device, monitoring], [monitoring, system], [system, ·], [·, Accessories], [Accessories, camera], [camera, stands], [stands, ,], [,, cables], [cables, ,], [,, connectors], [connectors, Tasks], [Tasks, Computer], [Computer, Vision], [Vision, ·], [·, OCR], [OCR, −]]
+
+>> Trigrams: 
+[[Hardware, Computer, Vision], [Computer, Vision, System], [Vision, System, involves], [System, involves, −], [involves, −, ·], [−, ·, Power], [·, Power, supply], [Power, supply, ·], [supply, ·, Image], [·, Image, acquisition], [Image, acquisition, device], [acquisition, device, camera], [device, camera, ·], [camera, ·, processor], [·, processor, ·], [processor, ·, software], [·, software, ·], [software, ·, display], [·, display, device], [display, device, monitoring], [device, monitoring, system], [monitoring, system, ·], [system, ·, Accessories], [·, Accessories, camera], [Accessories, camera, stands], [camera, stands, ,], [stands, ,, cables], [,, cables, ,], [cables, ,, connectors], [,, connectors, Tasks], [connectors, Tasks, Computer], [Tasks, Computer, Vision], [Computer, Vision, ·], [Vision, ·, OCR], [·, OCR, −]]
+
+>> Noun Phrases are: 
+[Computer Vision System, − · Power supply · Image acquisition device, camera, · A processor, A software, A display device, the system, Accessories, camera stands, cables, connectors Tasks, Computer Vision]
+
+>> Named Entities are: 
+[('− · Power', 'ORG'), ('OCR −', 'PERSON')]
+
+
+============================ Sentence 20 =============================
+
+In the domain of computers, Optical Character Reader, a software to convert scanned documents into editable text, which accompanies a scanner. · 
+
+
+>> Tokens are: 
+[domain, computers, ,, Optical, Character, Reader, ,, software, convert, scanned, documents, editable, text, ,, accompanies, scanner, ., ·] 
+
+>> PoS Tags are: 
+[('domain', 'NOUN'), ('computers', 'NOUN'), (',', 'PUNCT'), ('Optical', 'PROPN'), ('Character', 'PROPN'), ('Reader', 'PROPN'), (',', 'PUNCT'), ('software', 'NOUN'), ('convert', 'VERB'), ('scanned', 'VERB'), ('documents', 'NOUN'), ('editable', 'ADJ'), ('text', 'NOUN'), (',', 'PUNCT'), ('accompanies', 'VERB'), ('scanner', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('domain', 'pobj'), ('computers', 'pobj'), (',', 'punct'), ('Optical', 'compound'), ('Character', 'compound'), ('Reader', 'nsubj'), (',', 'punct'), ('software', 'appos'), ('convert', 'relcl'), ('scanned', 'ROOT'), ('documents', 'dobj'), ('editable', 'amod'), ('text', 'pobj'), (',', 'punct'), ('accompanies', 'relcl'), ('scanner', 'dobj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[domain, computers], [computers, ,], [,, Optical], [Optical, Character], [Character, Reader], [Reader, ,], [,, software], [software, convert], [convert, scanned], [scanned, documents], [documents, editable], [editable, text], [text, ,], [,, accompanies], [accompanies, scanner], [scanner, .], [., ·]]
+
+>> Trigrams: 
+[[domain, computers, ,], [computers, ,, Optical], [,, Optical, Character], [Optical, Character, Reader], [Character, Reader, ,], [Reader, ,, software], [,, software, convert], [software, convert, scanned], [convert, scanned, documents], [scanned, documents, editable], [documents, editable, text], [editable, text, ,], [text, ,, accompanies], [,, accompanies, scanner], [accompanies, scanner, .], [scanner, ., ·]]
+
+>> Noun Phrases are: 
+[the domain, computers, Optical Character Reader, a software, documents, editable text, a scanner]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 21 =============================
+
+Face Detection − Many state-of-the-art cameras come with this feature, which enables to read the face and take the picture of that perfect expression. 
+
+
+>> Tokens are: 
+[Face, Detection, −, state, -, -, -, art, cameras, come, feature, ,, enables, read, face, picture, perfect, expression, .] 
+
+>> PoS Tags are: 
+[('Face', 'NOUN'), ('Detection', 'PROPN'), ('−', 'PROPN'), ('state', 'NOUN'), ('-', 'PUNCT'), ('-', 'PUNCT'), ('-', 'PUNCT'), ('art', 'NOUN'), ('cameras', 'NOUN'), ('come', 'VERB'), ('feature', 'NOUN'), (',', 'PUNCT'), ('enables', 'VERB'), ('read', 'VERB'), ('face', 'NOUN'), ('picture', 'NOUN'), ('perfect', 'ADJ'), ('expression', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Face', 'compound'), ('Detection', 'compound'), ('−', 'nsubj'), ('state', 'nmod'), ('-', 'punct'), ('-', 'punct'), ('-', 'punct'), ('art', 'pobj'), ('cameras', 'nsubj'), ('come', 'ROOT'), ('feature', 'pobj'), (',', 'punct'), ('enables', 'relcl'), ('read', 'xcomp'), ('face', 'dobj'), ('picture', 'dobj'), ('perfect', 'amod'), ('expression', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Face, Detection], [Detection, −], [−, state], [state, -], [-, -], [-, -], [-, art], [art, cameras], [cameras, come], [come, feature], [feature, ,], [,, enables], [enables, read], [read, face], [face, picture], [picture, perfect], [perfect, expression], [expression, .]]
+
+>> Trigrams: 
+[[Face, Detection, −], [Detection, −, state], [−, state, -], [state, -, -], [-, -, -], [-, -, art], [-, art, cameras], [art, cameras, come], [cameras, come, feature], [come, feature, ,], [feature, ,, enables], [,, enables, read], [enables, read, face], [read, face, picture], [face, picture, perfect], [picture, perfect, expression], [perfect, expression, .]]
+
+>> Noun Phrases are: 
+[Face Detection −, the-art, this feature, the face, the picture, that perfect expression]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 22 =============================
+
+It is used to let a user access the software on correct match. 
+
+
+>> Tokens are: 
+[let, user, access, software, correct, match, .] 
+
+>> PoS Tags are: 
+[('let', 'VERB'), ('user', 'NOUN'), ('access', 'VERB'), ('software', 'NOUN'), ('correct', 'ADJ'), ('match', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('let', 'xcomp'), ('user', 'compound'), ('access', 'ccomp'), ('software', 'dobj'), ('correct', 'amod'), ('match', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[let, user], [user, access], [access, software], [software, correct], [correct, match], [match, .]]
+
+>> Trigrams: 
+[[let, user, access], [user, access, software], [access, software, correct], [software, correct, match], [correct, match, .]]
+
+>> Noun Phrases are: 
+[It, the software, correct match]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 23 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 24 =============================
+
+Object Recognition − They are installed in supermarkets, cameras, high-end cars such as BMW, GM, and Volvo. 
+
+
+>> Tokens are: 
+[Object, Recognition, −, installed, supermarkets, ,, cameras, ,, high, -, end, cars, BMW, ,, GM, ,, Volvo, .] 
+
+>> PoS Tags are: 
+[('Object', 'NOUN'), ('Recognition', 'NOUN'), ('−', 'NOUN'), ('installed', 'VERB'), ('supermarkets', 'NOUN'), (',', 'PUNCT'), ('cameras', 'NOUN'), (',', 'PUNCT'), ('high', 'ADJ'), ('-', 'PUNCT'), ('end', 'NOUN'), ('cars', 'NOUN'), ('BMW', 'PROPN'), (',', 'PUNCT'), ('GM', 'PROPN'), (',', 'PUNCT'), ('Volvo', 'PROPN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Object', 'compound'), ('Recognition', 'compound'), ('−', 'npadvmod'), ('installed', 'ROOT'), ('supermarkets', 'pobj'), (',', 'punct'), ('cameras', 'conj'), (',', 'punct'), ('high', 'amod'), ('-', 'punct'), ('end', 'compound'), ('cars', 'conj'), ('BMW', 'pobj'), (',', 'punct'), ('GM', 'conj'), (',', 'punct'), ('Volvo', 'conj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Object, Recognition], [Recognition, −], [−, installed], [installed, supermarkets], [supermarkets, ,], [,, cameras], [cameras, ,], [,, high], [high, -], [-, end], [end, cars], [cars, BMW], [BMW, ,], [,, GM], [GM, ,], [,, Volvo], [Volvo, .]]
+
+>> Trigrams: 
+[[Object, Recognition, −], [Recognition, −, installed], [−, installed, supermarkets], [installed, supermarkets, ,], [supermarkets, ,, cameras], [,, cameras, ,], [cameras, ,, high], [,, high, -], [high, -, end], [-, end, cars], [end, cars, BMW], [cars, BMW, ,], [BMW, ,, GM], [,, GM, ,], [GM, ,, Volvo], [,, Volvo, .]]
+
+>> Noun Phrases are: 
+[They, supermarkets, cameras, high-end cars, BMW, GM, Volvo]
+
+>> Named Entities are: 
+[('BMW', 'ORG'), ('GM', 'ORG'), ('Volvo', 'ORG')]
+
+
+============================ Sentence 25 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 26 =============================
+
+Estimating Position − It is estimating position of an object with respect to camera as in position of tumor in human’s body. 
+
+
+>> Tokens are: 
+[Estimating, Position, −, estimating, position, object, respect, camera, position, tumor, human, body, .] 
+
+>> PoS Tags are: 
+[('Estimating', 'VERB'), ('Position', 'NOUN'), ('−', 'PROPN'), ('estimating', 'VERB'), ('position', 'NOUN'), ('object', 'NOUN'), ('respect', 'NOUN'), ('camera', 'NOUN'), ('position', 'NOUN'), ('tumor', 'NOUN'), ('human', 'NOUN'), ('body', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Estimating', 'advcl'), ('Position', 'compound'), ('−', 'dobj'), ('estimating', 'ROOT'), ('position', 'dobj'), ('object', 'pobj'), ('respect', 'pobj'), ('camera', 'pobj'), ('position', 'pobj'), ('tumor', 'pobj'), ('human', 'poss'), ('body', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Estimating, Position], [Position, −], [−, estimating], [estimating, position], [position, object], [object, respect], [respect, camera], [camera, position], [position, tumor], [tumor, human], [human, body], [body, .]]
+
+>> Trigrams: 
+[[Estimating, Position, −], [Position, −, estimating], [−, estimating, position], [estimating, position, object], [position, object, respect], [object, respect, camera], [respect, camera, position], [camera, position, tumor], [position, tumor, human], [tumor, human, body], [human, body, .]]
+
+>> Noun Phrases are: 
+[Position −, It, position, an object, respect, camera, position, tumor, human’s body]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 27 =============================
+
+Application Domains of Computer Vision · Agriculture · Autonomous vehicles · Biometrics · Character recognition · Forensics, security, and surveillance · Industrial quality inspection · Face recognition · Gesture analysis · Geoscience · Medical imagery · Pollution monitoring · Process control · Remote sensing · Robotics · Transport Applications of Robotics The robotics has been instrumental in the various domains such as − · Industries − Robots are used for handling material, cutting, welding, color coating, drilling, polishing, etc. · 
+
+
+>> Tokens are: 
+[Application, Domains, Computer, Vision, ·, Agriculture, ·, Autonomous, vehicles, ·, Biometrics, ·, Character, recognition, ·, Forensics, ,, security, ,, surveillance, ·, Industrial, quality, inspection, ·, Face, recognition, ·, Gesture, analysis, ·, Geoscience, ·, Medical, imagery, ·, Pollution, monitoring, ·, Process, control, ·, Remote, sensing, ·, Robotics, ·, Transport, Applications, Robotics, robotics, instrumental, domains, −, ·, Industries, −, Robots, handling, material, ,, cutting, ,, welding, ,, color, coating, ,, drilling, ,, polishing, ,, etc, ., ·] 
+
+>> PoS Tags are: 
+[('Application', 'NOUN'), ('Domains', 'PROPN'), ('Computer', 'PROPN'), ('Vision', 'PROPN'), ('·', 'PUNCT'), ('Agriculture', 'PROPN'), ('·', 'PUNCT'), ('Autonomous', 'ADJ'), ('vehicles', 'NOUN'), ('·', 'PUNCT'), ('Biometrics', 'PROPN'), ('·', 'PUNCT'), ('Character', 'NOUN'), ('recognition', 'NOUN'), ('·', 'PUNCT'), ('Forensics', 'NOUN'), (',', 'PUNCT'), ('security', 'NOUN'), (',', 'PUNCT'), ('surveillance', 'NOUN'), ('·', 'PUNCT'), ('Industrial', 'ADJ'), ('quality', 'NOUN'), ('inspection', 'NOUN'), ('·', 'PUNCT'), ('Face', 'NOUN'), ('recognition', 'NOUN'), ('·', 'PUNCT'), ('Gesture', 'PROPN'), ('analysis', 'NOUN'), ('·', 'PUNCT'), ('Geoscience', 'PROPN'), ('·', 'PUNCT'), ('Medical', 'ADJ'), ('imagery', 'NOUN'), ('·', 'PUNCT'), ('Pollution', 'NOUN'), ('monitoring', 'VERB'), ('·', 'PUNCT'), ('Process', 'NOUN'), ('control', 'NOUN'), ('·', 'PUNCT'), ('Remote', 'ADJ'), ('sensing', 'NOUN'), ('·', 'PUNCT'), ('Robotics', 'PROPN'), ('·', 'PUNCT'), ('Transport', 'PROPN'), ('Applications', 'PROPN'), ('Robotics', 'PROPN'), ('robotics', 'NOUN'), ('instrumental', 'ADJ'), ('domains', 'NOUN'), ('−', 'PROPN'), ('·', 'PUNCT'), ('Industries', 'PROPN'), ('−', 'PROPN'), ('Robots', 'NOUN'), ('handling', 'VERB'), ('material', 'NOUN'), (',', 'PUNCT'), ('cutting', 'VERB'), (',', 'PUNCT'), ('welding', 'NOUN'), (',', 'PUNCT'), ('color', 'NOUN'), ('coating', 'NOUN'), (',', 'PUNCT'), ('drilling', 'NOUN'), (',', 'PUNCT'), ('polishing', 'NOUN'), (',', 'PUNCT'), ('etc', 'X'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Application', 'compound'), ('Domains', 'nsubj'), ('Computer', 'compound'), ('Vision', 'nmod'), ('·', 'punct'), ('Agriculture', 'nmod'), ('·', 'punct'), ('Autonomous', 'amod'), ('vehicles', 'pobj'), ('·', 'punct'), ('Biometrics', 'nmod'), ('·', 'punct'), ('Character', 'compound'), ('recognition', 'appos'), ('·', 'punct'), ('Forensics', 'conj'), (',', 'punct'), ('security', 'conj'), (',', 'punct'), ('surveillance', 'conj'), ('·', 'punct'), ('Industrial', 'amod'), ('quality', 'compound'), ('inspection', 'appos'), ('·', 'punct'), ('Face', 'compound'), ('recognition', 'appos'), ('·', 'punct'), ('Gesture', 'compound'), ('analysis', 'appos'), ('·', 'punct'), ('Geoscience', 'nmod'), ('·', 'punct'), ('Medical', 'amod'), ('imagery', 'npadvmod'), ('·', 'punct'), ('Pollution', 'compound'), ('monitoring', 'nmod'), ('·', 'punct'), ('Process', 'compound'), ('control', 'appos'), ('·', 'punct'), ('Remote', 'amod'), ('sensing', 'nmod'), ('·', 'punct'), ('Robotics', 'nmod'), ('·', 'punct'), ('Transport', 'compound'), ('Applications', 'nsubj'), ('Robotics', 'pobj'), ('robotics', 'nsubj'), ('instrumental', 'acomp'), ('domains', 'pobj'), ('−', 'pobj'), ('·', 'punct'), ('Industries', 'compound'), ('−', 'compound'), ('Robots', 'nsubjpass'), ('handling', 'pcomp'), ('material', 'dobj'), (',', 'punct'), ('cutting', 'conj'), (',', 'punct'), ('welding', 'conj'), (',', 'punct'), ('color', 'compound'), ('coating', 'conj'), (',', 'punct'), ('drilling', 'conj'), (',', 'punct'), ('polishing', 'conj'), (',', 'punct'), ('etc', 'conj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Application, Domains], [Domains, Computer], [Computer, Vision], [Vision, ·], [·, Agriculture], [Agriculture, ·], [·, Autonomous], [Autonomous, vehicles], [vehicles, ·], [·, Biometrics], [Biometrics, ·], [·, Character], [Character, recognition], [recognition, ·], [·, Forensics], [Forensics, ,], [,, security], [security, ,], [,, surveillance], [surveillance, ·], [·, Industrial], [Industrial, quality], [quality, inspection], [inspection, ·], [·, Face], [Face, recognition], [recognition, ·], [·, Gesture], [Gesture, analysis], [analysis, ·], [·, Geoscience], [Geoscience, ·], [·, Medical], [Medical, imagery], [imagery, ·], [·, Pollution], [Pollution, monitoring], [monitoring, ·], [·, Process], [Process, control], [control, ·], [·, Remote], [Remote, sensing], [sensing, ·], [·, Robotics], [Robotics, ·], [·, Transport], [Transport, Applications], [Applications, Robotics], [Robotics, robotics], [robotics, instrumental], [instrumental, domains], [domains, −], [−, ·], [·, Industries], [Industries, −], [−, Robots], [Robots, handling], [handling, material], [material, ,], [,, cutting], [cutting, ,], [,, welding], [welding, ,], [,, color], [color, coating], [coating, ,], [,, drilling], [drilling, ,], [,, polishing], [polishing, ,], [,, etc], [etc, .], [., ·]]
+
+>> Trigrams: 
+[[Application, Domains, Computer], [Domains, Computer, Vision], [Computer, Vision, ·], [Vision, ·, Agriculture], [·, Agriculture, ·], [Agriculture, ·, Autonomous], [·, Autonomous, vehicles], [Autonomous, vehicles, ·], [vehicles, ·, Biometrics], [·, Biometrics, ·], [Biometrics, ·, Character], [·, Character, recognition], [Character, recognition, ·], [recognition, ·, Forensics], [·, Forensics, ,], [Forensics, ,, security], [,, security, ,], [security, ,, surveillance], [,, surveillance, ·], [surveillance, ·, Industrial], [·, Industrial, quality], [Industrial, quality, inspection], [quality, inspection, ·], [inspection, ·, Face], [·, Face, recognition], [Face, recognition, ·], [recognition, ·, Gesture], [·, Gesture, analysis], [Gesture, analysis, ·], [analysis, ·, Geoscience], [·, Geoscience, ·], [Geoscience, ·, Medical], [·, Medical, imagery], [Medical, imagery, ·], [imagery, ·, Pollution], [·, Pollution, monitoring], [Pollution, monitoring, ·], [monitoring, ·, Process], [·, Process, control], [Process, control, ·], [control, ·, Remote], [·, Remote, sensing], [Remote, sensing, ·], [sensing, ·, Robotics], [·, Robotics, ·], [Robotics, ·, Transport], [·, Transport, Applications], [Transport, Applications, Robotics], [Applications, Robotics, robotics], [Robotics, robotics, instrumental], [robotics, instrumental, domains], [instrumental, domains, −], [domains, −, ·], [−, ·, Industries], [·, Industries, −], [Industries, −, Robots], [−, Robots, handling], [Robots, handling, material], [handling, material, ,], [material, ,, cutting], [,, cutting, ,], [cutting, ,, welding], [,, welding, ,], [welding, ,, color], [,, color, coating], [color, coating, ,], [coating, ,, drilling], [,, drilling, ,], [drilling, ,, polishing], [,, polishing, ,], [polishing, ,, etc], [,, etc, .], [etc, ., ·]]
+
+>> Noun Phrases are: 
+[Application Domains, Computer Vision · Agriculture · Autonomous vehicles, · Biometrics · Character recognition, · Forensics, security, surveillance, · Industrial quality inspection, · Face recognition, · Gesture analysis, Process control, Robotics, The robotics, the various domains, −, Industries − Robots, material, welding, color coating, drilling, polishing]
+
+>> Named Entities are: 
+[('Biometrics', 'PERSON'), ('Geoscience', 'PERSON'), ('Remote', 'PERSON'), ('− · Industries − Robots', 'ORG')]
+
+
+============================ Sentence 28 =============================
+
+Military − Autonomous robots can reach inaccessible and hazardous zones during war. 
+
+
+>> Tokens are: 
+[Military, −, Autonomous, robots, reach, inaccessible, hazardous, zones, war, .] 
+
+>> PoS Tags are: 
+[('Military', 'PROPN'), ('−', 'PROPN'), ('Autonomous', 'PROPN'), ('robots', 'NOUN'), ('reach', 'VERB'), ('inaccessible', 'ADJ'), ('hazardous', 'ADJ'), ('zones', 'NOUN'), ('war', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Military', 'compound'), ('−', 'compound'), ('Autonomous', 'compound'), ('robots', 'nsubj'), ('reach', 'ROOT'), ('inaccessible', 'amod'), ('hazardous', 'conj'), ('zones', 'dobj'), ('war', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Military, −], [−, Autonomous], [Autonomous, robots], [robots, reach], [reach, inaccessible], [inaccessible, hazardous], [hazardous, zones], [zones, war], [war, .]]
+
+>> Trigrams: 
+[[Military, −, Autonomous], [−, Autonomous, robots], [Autonomous, robots, reach], [robots, reach, inaccessible], [reach, inaccessible, hazardous], [inaccessible, hazardous, zones], [hazardous, zones, war], [zones, war, .]]
+
+>> Noun Phrases are: 
+[Military − Autonomous robots, inaccessible and hazardous zones, war]
+
+>> Named Entities are: 
+[('− Autonomous', 'PERSON')]
+
+
+============================ Sentence 29 =============================
+
+A robot named Daksh, developed by Defense Research and Development Organization (DRDO), is in function to destroy life-threatening objects safely. · 
+
+
+>> Tokens are: 
+[robot, named, Daksh, ,, developed, Defense, Research, Development, Organization, (, DRDO, ), ,, function, destroy, life, -, threatening, objects, safely, ., ·] 
+
+>> PoS Tags are: 
+[('robot', 'NOUN'), ('named', 'VERB'), ('Daksh', 'PROPN'), (',', 'PUNCT'), ('developed', 'VERB'), ('Defense', 'PROPN'), ('Research', 'PROPN'), ('Development', 'PROPN'), ('Organization', 'PROPN'), ('(', 'PUNCT'), ('DRDO', 'PROPN'), (')', 'PUNCT'), (',', 'PUNCT'), ('function', 'NOUN'), ('destroy', 'VERB'), ('life', 'NOUN'), ('-', 'PUNCT'), ('threatening', 'VERB'), ('objects', 'NOUN'), ('safely', 'ADV'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('robot', 'nsubj'), ('named', 'acl'), ('Daksh', 'oprd'), (',', 'punct'), ('developed', 'acl'), ('Defense', 'nmod'), ('Research', 'nmod'), ('Development', 'conj'), ('Organization', 'pobj'), ('(', 'punct'), ('DRDO', 'appos'), (')', 'punct'), (',', 'punct'), ('function', 'pobj'), ('destroy', 'acl'), ('life', 'npadvmod'), ('-', 'punct'), ('threatening', 'amod'), ('objects', 'dobj'), ('safely', 'advmod'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[robot, named], [named, Daksh], [Daksh, ,], [,, developed], [developed, Defense], [Defense, Research], [Research, Development], [Development, Organization], [Organization, (], [(, DRDO], [DRDO, )], [), ,], [,, function], [function, destroy], [destroy, life], [life, -], [-, threatening], [threatening, objects], [objects, safely], [safely, .], [., ·]]
+
+>> Trigrams: 
+[[robot, named, Daksh], [named, Daksh, ,], [Daksh, ,, developed], [,, developed, Defense], [developed, Defense, Research], [Defense, Research, Development], [Research, Development, Organization], [Development, Organization, (], [Organization, (, DRDO], [(, DRDO, )], [DRDO, ), ,], [), ,, function], [,, function, destroy], [function, destroy, life], [destroy, life, -], [life, -, threatening], [-, threatening, objects], [threatening, objects, safely], [objects, safely, .], [safely, ., ·]]
+
+>> Noun Phrases are: 
+[A robot, Daksh, Defense Research and Development Organization, DRDO, function, life-threatening objects]
+
+>> Named Entities are: 
+[('Daksh', 'ORG'), ('Defense Research and Development Organization', 'ORG')]
+
+
+============================ Sentence 30 =============================
+
+Medicine − The robots are capable of carrying out hundreds of clinical tests simultaneously, rehabilitating permanently disabled people, and performing complex surgeries such as brain tumors. 
+
+
+>> Tokens are: 
+[Medicine, −, robots, capable, carrying, hundreds, clinical, tests, simultaneously, ,, rehabilitating, permanently, disabled, people, ,, performing, complex, surgeries, brain, tumors, .] 
+
+>> PoS Tags are: 
+[('Medicine', 'NOUN'), ('−', 'PROPN'), ('robots', 'NOUN'), ('capable', 'ADJ'), ('carrying', 'VERB'), ('hundreds', 'NOUN'), ('clinical', 'ADJ'), ('tests', 'NOUN'), ('simultaneously', 'ADV'), (',', 'PUNCT'), ('rehabilitating', 'VERB'), ('permanently', 'ADV'), ('disabled', 'ADJ'), ('people', 'NOUN'), (',', 'PUNCT'), ('performing', 'VERB'), ('complex', 'ADJ'), ('surgeries', 'NOUN'), ('brain', 'NOUN'), ('tumors', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Medicine', 'compound'), ('−', 'npadvmod'), ('robots', 'nsubj'), ('capable', 'acomp'), ('carrying', 'pcomp'), ('hundreds', 'dobj'), ('clinical', 'amod'), ('tests', 'pobj'), ('simultaneously', 'advmod'), (',', 'punct'), ('rehabilitating', 'advcl'), ('permanently', 'advmod'), ('disabled', 'amod'), ('people', 'dobj'), (',', 'punct'), ('performing', 'conj'), ('complex', 'amod'), ('surgeries', 'dobj'), ('brain', 'compound'), ('tumors', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Medicine, −], [−, robots], [robots, capable], [capable, carrying], [carrying, hundreds], [hundreds, clinical], [clinical, tests], [tests, simultaneously], [simultaneously, ,], [,, rehabilitating], [rehabilitating, permanently], [permanently, disabled], [disabled, people], [people, ,], [,, performing], [performing, complex], [complex, surgeries], [surgeries, brain], [brain, tumors], [tumors, .]]
+
+>> Trigrams: 
+[[Medicine, −, robots], [−, robots, capable], [robots, capable, carrying], [capable, carrying, hundreds], [carrying, hundreds, clinical], [hundreds, clinical, tests], [clinical, tests, simultaneously], [tests, simultaneously, ,], [simultaneously, ,, rehabilitating], [,, rehabilitating, permanently], [rehabilitating, permanently, disabled], [permanently, disabled, people], [disabled, people, ,], [people, ,, performing], [,, performing, complex], [performing, complex, surgeries], [complex, surgeries, brain], [surgeries, brain, tumors], [brain, tumors, .]]
+
+>> Noun Phrases are: 
+[The robots, hundreds, clinical tests, permanently disabled people, complex surgeries, brain tumors]
+
+>> Named Entities are: 
+[('Medicine −', 'PERSON'), ('hundreds', 'CARDINAL')]
+
+
+============================ Sentence 31 =============================
+
+· 
+
+
+>> Tokens are: 
+[·] 
+
+>> PoS Tags are: 
+[('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('·', 'ROOT')]
+
+>> Bigrams: 
+[]
+
+>> Trigrams: 
+[]
+
+>> Noun Phrases are: 
+[]
+
+>> Named Entities are: 
+[]
+
+
+============================ Sentence 32 =============================
+
+Exploration − The robot rock climbers used for space exploration, underwater drones used for ocean exploration are to name a few. · 
+
+
+>> Tokens are: 
+[Exploration, −, robot, rock, climbers, space, exploration, ,, underwater, drones, ocean, exploration, ., ·] 
+
+>> PoS Tags are: 
+[('Exploration', 'NOUN'), ('−', 'PROPN'), ('robot', 'NOUN'), ('rock', 'NOUN'), ('climbers', 'NOUN'), ('space', 'NOUN'), ('exploration', 'NOUN'), (',', 'PUNCT'), ('underwater', 'ADJ'), ('drones', 'NOUN'), ('ocean', 'NOUN'), ('exploration', 'NOUN'), ('.', 'PUNCT'), ('·', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Exploration', 'compound'), ('−', 'nummod'), ('robot', 'compound'), ('rock', 'compound'), ('climbers', 'nsubj'), ('space', 'compound'), ('exploration', 'pobj'), (',', 'punct'), ('underwater', 'amod'), ('drones', 'nsubj'), ('ocean', 'compound'), ('exploration', 'pobj'), ('.', 'punct'), ('·', 'punct')]
+
+>> Bigrams: 
+[[Exploration, −], [−, robot], [robot, rock], [rock, climbers], [climbers, space], [space, exploration], [exploration, ,], [,, underwater], [underwater, drones], [drones, ocean], [ocean, exploration], [exploration, .], [., ·]]
+
+>> Trigrams: 
+[[Exploration, −, robot], [−, robot, rock], [robot, rock, climbers], [rock, climbers, space], [climbers, space, exploration], [space, exploration, ,], [exploration, ,, underwater], [,, underwater, drones], [underwater, drones, ocean], [drones, ocean, exploration], [ocean, exploration, .], [exploration, ., ·]]
+
+>> Noun Phrases are: 
+[Exploration − The robot rock climbers, space exploration, underwater drones, ocean exploration]
+
+>> Named Entities are: 
+[('Exploration −', 'PERSON')]
+
+
+============================ Sentence 33 =============================
+
+Entertainment − Disney’s engineers have created hundreds of robots for movie making. 
+
+
+>> Tokens are: 
+[Entertainment, −, Disney, engineers, created, hundreds, robots, movie, making, .] 
+
+>> PoS Tags are: 
+[('Entertainment', 'NOUN'), ('−', 'PROPN'), ('Disney', 'PROPN'), ('engineers', 'NOUN'), ('created', 'VERB'), ('hundreds', 'NOUN'), ('robots', 'NOUN'), ('movie', 'NOUN'), ('making', 'NOUN'), ('.', 'PUNCT')] 
+
+>> Dependency Tags are: 
+[('Entertainment', 'compound'), ('−', 'compound'), ('Disney', 'poss'), ('engineers', 'nsubj'), ('created', 'ROOT'), ('hundreds', 'dobj'), ('robots', 'pobj'), ('movie', 'compound'), ('making', 'pobj'), ('.', 'punct')]
+
+>> Bigrams: 
+[[Entertainment, −], [−, Disney], [Disney, engineers], [engineers, created], [created, hundreds], [hundreds, robots], [robots, movie], [movie, making], [making, .]]
+
+>> Trigrams: 
+[[Entertainment, −, Disney], [−, Disney, engineers], [Disney, engineers, created], [engineers, created, hundreds], [created, hundreds, robots], [hundreds, robots, movie], [robots, movie, making], [movie, making, .]]
+
+>> Noun Phrases are: 
+[Entertainment − Disney’s engineers, hundreds, robots, movie making]
+
+>> Named Entities are: 
+[('− Disney’s', 'PERSON'), ('hundreds', 'CARDINAL')]

@@ -1,0 +1,1048 @@
+				 *** Text Processing using NLTK *** 
+
+
+============================ Sentence 1 =============================
+
+AI-12   Implementation Aspects of Syntactic Analysis There are a number of algorithms researchers have developed for syntactic analysis, but we consider only the following simple methods − · Context-Free Grammar · Top-Down Parser Let us see them in detail − Context-Free Grammar It is the grammar that consists rules with a single symbol on the left-hand side of the rewrite rules. 
+
+
+>> Tokens are: 
+ ['AI-12', 'Implementation', 'Aspects', 'Syntactic', 'Analysis', 'There', 'number', 'algorithms', 'researchers', 'developed', 'syntactic', 'analysis', ',', 'consider', 'following', 'simple', 'methods', '−', '·', 'Context-Free', 'Grammar', '·', 'Top-Down', 'Parser', 'Let', 'us', 'see', 'detail', '−', 'Context-Free', 'Grammar', 'It', 'grammar', 'consists', 'rules', 'single', 'symbol', 'left-hand', 'side', 'rewrite', 'rules', '.']
+
+>> Bigrams are: 
+ [('AI-12', 'Implementation'), ('Implementation', 'Aspects'), ('Aspects', 'Syntactic'), ('Syntactic', 'Analysis'), ('Analysis', 'There'), ('There', 'number'), ('number', 'algorithms'), ('algorithms', 'researchers'), ('researchers', 'developed'), ('developed', 'syntactic'), ('syntactic', 'analysis'), ('analysis', ','), (',', 'consider'), ('consider', 'following'), ('following', 'simple'), ('simple', 'methods'), ('methods', '−'), ('−', '·'), ('·', 'Context-Free'), ('Context-Free', 'Grammar'), ('Grammar', '·'), ('·', 'Top-Down'), ('Top-Down', 'Parser'), ('Parser', 'Let'), ('Let', 'us'), ('us', 'see'), ('see', 'detail'), ('detail', '−'), ('−', 'Context-Free'), ('Context-Free', 'Grammar'), ('Grammar', 'It'), ('It', 'grammar'), ('grammar', 'consists'), ('consists', 'rules'), ('rules', 'single'), ('single', 'symbol'), ('symbol', 'left-hand'), ('left-hand', 'side'), ('side', 'rewrite'), ('rewrite', 'rules'), ('rules', '.')]
+
+>> Trigrams are: 
+ [('AI-12', 'Implementation', 'Aspects'), ('Implementation', 'Aspects', 'Syntactic'), ('Aspects', 'Syntactic', 'Analysis'), ('Syntactic', 'Analysis', 'There'), ('Analysis', 'There', 'number'), ('There', 'number', 'algorithms'), ('number', 'algorithms', 'researchers'), ('algorithms', 'researchers', 'developed'), ('researchers', 'developed', 'syntactic'), ('developed', 'syntactic', 'analysis'), ('syntactic', 'analysis', ','), ('analysis', ',', 'consider'), (',', 'consider', 'following'), ('consider', 'following', 'simple'), ('following', 'simple', 'methods'), ('simple', 'methods', '−'), ('methods', '−', '·'), ('−', '·', 'Context-Free'), ('·', 'Context-Free', 'Grammar'), ('Context-Free', 'Grammar', '·'), ('Grammar', '·', 'Top-Down'), ('·', 'Top-Down', 'Parser'), ('Top-Down', 'Parser', 'Let'), ('Parser', 'Let', 'us'), ('Let', 'us', 'see'), ('us', 'see', 'detail'), ('see', 'detail', '−'), ('detail', '−', 'Context-Free'), ('−', 'Context-Free', 'Grammar'), ('Context-Free', 'Grammar', 'It'), ('Grammar', 'It', 'grammar'), ('It', 'grammar', 'consists'), ('grammar', 'consists', 'rules'), ('consists', 'rules', 'single'), ('rules', 'single', 'symbol'), ('single', 'symbol', 'left-hand'), ('symbol', 'left-hand', 'side'), ('left-hand', 'side', 'rewrite'), ('side', 'rewrite', 'rules'), ('rewrite', 'rules', '.')]
+
+>> POS Tags are: 
+ [('AI-12', 'JJ'), ('Implementation', 'NNP'), ('Aspects', 'NNP'), ('Syntactic', 'NNP'), ('Analysis', 'NNP'), ('There', 'EX'), ('number', 'NN'), ('algorithms', 'NN'), ('researchers', 'NNS'), ('developed', 'VBD'), ('syntactic', 'JJ'), ('analysis', 'NN'), (',', ','), ('consider', 'VB'), ('following', 'VBG'), ('simple', 'JJ'), ('methods', 'NNS'), ('−', 'JJ'), ('·', 'JJ'), ('Context-Free', 'JJ'), ('Grammar', 'NNP'), ('·', 'NNP'), ('Top-Down', 'NNP'), ('Parser', 'NNP'), ('Let', 'NNP'), ('us', 'PRP'), ('see', 'VB'), ('detail', 'JJ'), ('−', 'NNP'), ('Context-Free', 'NNP'), ('Grammar', 'NNP'), ('It', 'PRP'), ('grammar', 'VBD'), ('consists', 'VBZ'), ('rules', 'NNS'), ('single', 'JJ'), ('symbol', 'NN'), ('left-hand', 'JJ'), ('side', 'NN'), ('rewrite', 'NN'), ('rules', 'NNS'), ('.', '.')]
+
+ (S
+  (NP
+    AI-12/JJ
+    Implementation/NNP
+    Aspects/NNP
+    Syntactic/NNP
+    Analysis/NNP)
+  There/EX
+  (NP number/NN algorithms/NN researchers/NNS)
+  developed/VBD
+  (NP syntactic/JJ analysis/NN)
+  ,/,
+  consider/VB
+  following/VBG
+  (NP simple/JJ methods/NNS)
+  (NP
+    −/JJ
+    ·/JJ
+    Context-Free/JJ
+    Grammar/NNP
+    ·/NNP
+    Top-Down/NNP
+    Parser/NNP
+    Let/NNP)
+  us/PRP
+  see/VB
+  (NP detail/JJ −/NNP Context-Free/NNP Grammar/NNP)
+  It/PRP
+  grammar/VBD
+  consists/VBZ
+  (NP rules/NNS)
+  (NP single/JJ symbol/NN)
+  (NP left-hand/JJ side/NN rewrite/NN rules/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['AI-12 Implementation Aspects Syntactic Analysis', 'number algorithms researchers', 'syntactic analysis', 'simple methods', '− · Context-Free Grammar · Top-Down Parser Let', 'detail − Context-Free Grammar', 'rules', 'single symbol', 'left-hand side rewrite rules']
+
+>> Named Entities are: 
+ [('PERSON', 'Grammar'), ('PERSON', 'Parser Let')] 
+
+>> Stemming using Porter Stemmer: 
+ [('AI-12', 'ai-12'), ('Implementation', 'implement'), ('Aspects', 'aspect'), ('Syntactic', 'syntact'), ('Analysis', 'analysi'), ('There', 'there'), ('number', 'number'), ('algorithms', 'algorithm'), ('researchers', 'research'), ('developed', 'develop'), ('syntactic', 'syntact'), ('analysis', 'analysi'), (',', ','), ('consider', 'consid'), ('following', 'follow'), ('simple', 'simpl'), ('methods', 'method'), ('−', '−'), ('·', '·'), ('Context-Free', 'context-fre'), ('Grammar', 'grammar'), ('·', '·'), ('Top-Down', 'top-down'), ('Parser', 'parser'), ('Let', 'let'), ('us', 'us'), ('see', 'see'), ('detail', 'detail'), ('−', '−'), ('Context-Free', 'context-fre'), ('Grammar', 'grammar'), ('It', 'it'), ('grammar', 'grammar'), ('consists', 'consist'), ('rules', 'rule'), ('single', 'singl'), ('symbol', 'symbol'), ('left-hand', 'left-hand'), ('side', 'side'), ('rewrite', 'rewrit'), ('rules', 'rule'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('AI-12', 'ai-12'), ('Implementation', 'implement'), ('Aspects', 'aspect'), ('Syntactic', 'syntact'), ('Analysis', 'analysi'), ('There', 'there'), ('number', 'number'), ('algorithms', 'algorithm'), ('researchers', 'research'), ('developed', 'develop'), ('syntactic', 'syntact'), ('analysis', 'analysi'), (',', ','), ('consider', 'consid'), ('following', 'follow'), ('simple', 'simpl'), ('methods', 'method'), ('−', '−'), ('·', '·'), ('Context-Free', 'context-fre'), ('Grammar', 'grammar'), ('·', '·'), ('Top-Down', 'top-down'), ('Parser', 'parser'), ('Let', 'let'), ('us', 'us'), ('see', 'see'), ('detail', 'detail'), ('−', '−'), ('Context-Free', 'context-fre'), ('Grammar', 'grammar'), ('It', 'it'), ('grammar', 'grammar'), ('consists', 'consist'), ('rules', 'rule'), ('single', 'singl'), ('symbol', 'symbol'), ('left-hand', 'left-hand'), ('side', 'side'), ('rewrite', 'rewrit'), ('rules', 'rule'), ('.', '.')]
+
+>> Lemmatization: 
+ [('AI-12', 'AI-12'), ('Implementation', 'Implementation'), ('Aspects', 'Aspects'), ('Syntactic', 'Syntactic'), ('Analysis', 'Analysis'), ('There', 'There'), ('number', 'number'), ('algorithms', 'algorithm'), ('researchers', 'researcher'), ('developed', 'developed'), ('syntactic', 'syntactic'), ('analysis', 'analysis'), (',', ','), ('consider', 'consider'), ('following', 'following'), ('simple', 'simple'), ('methods', 'method'), ('−', '−'), ('·', '·'), ('Context-Free', 'Context-Free'), ('Grammar', 'Grammar'), ('·', '·'), ('Top-Down', 'Top-Down'), ('Parser', 'Parser'), ('Let', 'Let'), ('us', 'u'), ('see', 'see'), ('detail', 'detail'), ('−', '−'), ('Context-Free', 'Context-Free'), ('Grammar', 'Grammar'), ('It', 'It'), ('grammar', 'grammar'), ('consists', 'consists'), ('rules', 'rule'), ('single', 'single'), ('symbol', 'symbol'), ('left-hand', 'left-hand'), ('side', 'side'), ('rewrite', 'rewrite'), ('rules', 'rule'), ('.', '.')]
+
+
+
+============================ Sentence 2 =============================
+
+Let us create grammar to parse a sentence − “The bird pecks the grains” Articles (DET) − a | an | the Nouns − bird | birds | grain | grains Noun Phrase (NP) − Article + Noun | Article + Adjective + Noun = DET N | DET ADJ N Verbs − pecks | pecking | pecked Verb Phrase (VP) − NP V | V NP Adjectives (ADJ) − beautiful | small | chirping The parse tree breaks down the sentence into structured parts so that the computer can easily understand and process it. 
+
+
+>> Tokens are: 
+ ['Let', 'us', 'create', 'grammar', 'parse', 'sentence', '−', '“', 'The', 'bird', 'pecks', 'grains', '”', 'Articles', '(', 'DET', ')', '−', '|', '|', 'Nouns', '−', 'bird', '|', 'birds', '|', 'grain', '|', 'grains', 'Noun', 'Phrase', '(', 'NP', ')', '−', 'Article', '+', 'Noun', '|', 'Article', '+', 'Adjective', '+', 'Noun', '=', 'DET', 'N', '|', 'DET', 'ADJ', 'N', 'Verbs', '−', 'pecks', '|', 'pecking', '|', 'pecked', 'Verb', 'Phrase', '(', 'VP', ')', '−', 'NP', 'V', '|', 'V', 'NP', 'Adjectives', '(', 'ADJ', ')', '−', 'beautiful', '|', 'small', '|', 'chirping', 'The', 'parse', 'tree', 'breaks', 'sentence', 'structured', 'parts', 'computer', 'easily', 'understand', 'process', '.']
+
+>> Bigrams are: 
+ [('Let', 'us'), ('us', 'create'), ('create', 'grammar'), ('grammar', 'parse'), ('parse', 'sentence'), ('sentence', '−'), ('−', '“'), ('“', 'The'), ('The', 'bird'), ('bird', 'pecks'), ('pecks', 'grains'), ('grains', '”'), ('”', 'Articles'), ('Articles', '('), ('(', 'DET'), ('DET', ')'), (')', '−'), ('−', '|'), ('|', '|'), ('|', 'Nouns'), ('Nouns', '−'), ('−', 'bird'), ('bird', '|'), ('|', 'birds'), ('birds', '|'), ('|', 'grain'), ('grain', '|'), ('|', 'grains'), ('grains', 'Noun'), ('Noun', 'Phrase'), ('Phrase', '('), ('(', 'NP'), ('NP', ')'), (')', '−'), ('−', 'Article'), ('Article', '+'), ('+', 'Noun'), ('Noun', '|'), ('|', 'Article'), ('Article', '+'), ('+', 'Adjective'), ('Adjective', '+'), ('+', 'Noun'), ('Noun', '='), ('=', 'DET'), ('DET', 'N'), ('N', '|'), ('|', 'DET'), ('DET', 'ADJ'), ('ADJ', 'N'), ('N', 'Verbs'), ('Verbs', '−'), ('−', 'pecks'), ('pecks', '|'), ('|', 'pecking'), ('pecking', '|'), ('|', 'pecked'), ('pecked', 'Verb'), ('Verb', 'Phrase'), ('Phrase', '('), ('(', 'VP'), ('VP', ')'), (')', '−'), ('−', 'NP'), ('NP', 'V'), ('V', '|'), ('|', 'V'), ('V', 'NP'), ('NP', 'Adjectives'), ('Adjectives', '('), ('(', 'ADJ'), ('ADJ', ')'), (')', '−'), ('−', 'beautiful'), ('beautiful', '|'), ('|', 'small'), ('small', '|'), ('|', 'chirping'), ('chirping', 'The'), ('The', 'parse'), ('parse', 'tree'), ('tree', 'breaks'), ('breaks', 'sentence'), ('sentence', 'structured'), ('structured', 'parts'), ('parts', 'computer'), ('computer', 'easily'), ('easily', 'understand'), ('understand', 'process'), ('process', '.')]
+
+>> Trigrams are: 
+ [('Let', 'us', 'create'), ('us', 'create', 'grammar'), ('create', 'grammar', 'parse'), ('grammar', 'parse', 'sentence'), ('parse', 'sentence', '−'), ('sentence', '−', '“'), ('−', '“', 'The'), ('“', 'The', 'bird'), ('The', 'bird', 'pecks'), ('bird', 'pecks', 'grains'), ('pecks', 'grains', '”'), ('grains', '”', 'Articles'), ('”', 'Articles', '('), ('Articles', '(', 'DET'), ('(', 'DET', ')'), ('DET', ')', '−'), (')', '−', '|'), ('−', '|', '|'), ('|', '|', 'Nouns'), ('|', 'Nouns', '−'), ('Nouns', '−', 'bird'), ('−', 'bird', '|'), ('bird', '|', 'birds'), ('|', 'birds', '|'), ('birds', '|', 'grain'), ('|', 'grain', '|'), ('grain', '|', 'grains'), ('|', 'grains', 'Noun'), ('grains', 'Noun', 'Phrase'), ('Noun', 'Phrase', '('), ('Phrase', '(', 'NP'), ('(', 'NP', ')'), ('NP', ')', '−'), (')', '−', 'Article'), ('−', 'Article', '+'), ('Article', '+', 'Noun'), ('+', 'Noun', '|'), ('Noun', '|', 'Article'), ('|', 'Article', '+'), ('Article', '+', 'Adjective'), ('+', 'Adjective', '+'), ('Adjective', '+', 'Noun'), ('+', 'Noun', '='), ('Noun', '=', 'DET'), ('=', 'DET', 'N'), ('DET', 'N', '|'), ('N', '|', 'DET'), ('|', 'DET', 'ADJ'), ('DET', 'ADJ', 'N'), ('ADJ', 'N', 'Verbs'), ('N', 'Verbs', '−'), ('Verbs', '−', 'pecks'), ('−', 'pecks', '|'), ('pecks', '|', 'pecking'), ('|', 'pecking', '|'), ('pecking', '|', 'pecked'), ('|', 'pecked', 'Verb'), ('pecked', 'Verb', 'Phrase'), ('Verb', 'Phrase', '('), ('Phrase', '(', 'VP'), ('(', 'VP', ')'), ('VP', ')', '−'), (')', '−', 'NP'), ('−', 'NP', 'V'), ('NP', 'V', '|'), ('V', '|', 'V'), ('|', 'V', 'NP'), ('V', 'NP', 'Adjectives'), ('NP', 'Adjectives', '('), ('Adjectives', '(', 'ADJ'), ('(', 'ADJ', ')'), ('ADJ', ')', '−'), (')', '−', 'beautiful'), ('−', 'beautiful', '|'), ('beautiful', '|', 'small'), ('|', 'small', '|'), ('small', '|', 'chirping'), ('|', 'chirping', 'The'), ('chirping', 'The', 'parse'), ('The', 'parse', 'tree'), ('parse', 'tree', 'breaks'), ('tree', 'breaks', 'sentence'), ('breaks', 'sentence', 'structured'), ('sentence', 'structured', 'parts'), ('structured', 'parts', 'computer'), ('parts', 'computer', 'easily'), ('computer', 'easily', 'understand'), ('easily', 'understand', 'process'), ('understand', 'process', '.')]
+
+>> POS Tags are: 
+ [('Let', 'VB'), ('us', 'PRP'), ('create', 'VB'), ('grammar', 'JJ'), ('parse', 'JJ'), ('sentence', 'NN'), ('−', 'NNP'), ('“', 'VBZ'), ('The', 'DT'), ('bird', 'NN'), ('pecks', 'NNS'), ('grains', 'NNS'), ('”', 'VBP'), ('Articles', 'NNP'), ('(', '('), ('DET', 'NNP'), (')', ')'), ('−', 'VBP'), ('|', 'JJ'), ('|', 'NNP'), ('Nouns', 'NNP'), ('−', 'NNP'), ('bird', 'NN'), ('|', 'NN'), ('birds', 'NNS'), ('|', 'VBP'), ('grain', 'NN'), ('|', 'NN'), ('grains', 'NNS'), ('Noun', 'NNP'), ('Phrase', 'NNP'), ('(', '('), ('NP', 'NNP'), (')', ')'), ('−', 'VBP'), ('Article', 'NNP'), ('+', 'NNP'), ('Noun', 'NNP'), ('|', 'NNP'), ('Article', 'NNP'), ('+', 'NNP'), ('Adjective', 'NNP'), ('+', 'NNP'), ('Noun', 'NNP'), ('=', 'NNP'), ('DET', 'NNP'), ('N', 'NNP'), ('|', 'NNP'), ('DET', 'NNP'), ('ADJ', 'NNP'), ('N', 'NNP'), ('Verbs', 'NNP'), ('−', 'NNP'), ('pecks', 'VBZ'), ('|', 'FW'), ('pecking', 'VBG'), ('|', 'NN'), ('pecked', 'VBD'), ('Verb', 'NNP'), ('Phrase', 'NNP'), ('(', '('), ('VP', 'NNP'), (')', ')'), ('−', 'VBP'), ('NP', 'NNP'), ('V', 'NNP'), ('|', 'NNP'), ('V', 'NNP'), ('NP', 'NNP'), ('Adjectives', 'NNP'), ('(', '('), ('ADJ', 'NNP'), (')', ')'), ('−', 'VBP'), ('beautiful', 'JJ'), ('|', 'NNP'), ('small', 'JJ'), ('|', 'NNP'), ('chirping', 'VBG'), ('The', 'DT'), ('parse', 'NN'), ('tree', 'NN'), ('breaks', 'NNS'), ('sentence', 'NN'), ('structured', 'VBD'), ('parts', 'NNS'), ('computer', 'NN'), ('easily', 'RB'), ('understand', 'JJ'), ('process', 'NN'), ('.', '.')]
+
+ (S
+  Let/VB
+  us/PRP
+  create/VB
+  (NP grammar/JJ parse/JJ sentence/NN −/NNP)
+  “/VBZ
+  (NP The/DT bird/NN pecks/NNS grains/NNS)
+  ”/VBP
+  (NP Articles/NNP)
+  (/(
+  (NP DET/NNP)
+  )/)
+  −/VBP
+  (NP |/JJ |/NNP Nouns/NNP −/NNP bird/NN |/NN birds/NNS)
+  |/VBP
+  (NP grain/NN |/NN grains/NNS Noun/NNP Phrase/NNP)
+  (/(
+  (NP NP/NNP)
+  )/)
+  −/VBP
+  (NP
+    Article/NNP
+    +/NNP
+    Noun/NNP
+    |/NNP
+    Article/NNP
+    +/NNP
+    Adjective/NNP
+    +/NNP
+    Noun/NNP
+    =/NNP
+    DET/NNP
+    N/NNP
+    |/NNP
+    DET/NNP
+    ADJ/NNP
+    N/NNP
+    Verbs/NNP
+    −/NNP)
+  pecks/VBZ
+  |/FW
+  pecking/VBG
+  (NP |/NN)
+  pecked/VBD
+  (NP Verb/NNP Phrase/NNP)
+  (/(
+  (NP VP/NNP)
+  )/)
+  −/VBP
+  (NP NP/NNP V/NNP |/NNP V/NNP NP/NNP Adjectives/NNP)
+  (/(
+  (NP ADJ/NNP)
+  )/)
+  −/VBP
+  (NP beautiful/JJ |/NNP)
+  (NP small/JJ |/NNP)
+  chirping/VBG
+  (NP The/DT parse/NN tree/NN breaks/NNS sentence/NN)
+  structured/VBD
+  (NP parts/NNS computer/NN)
+  easily/RB
+  (NP understand/JJ process/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['grammar parse sentence −', 'The bird pecks grains', 'Articles', 'DET', '| | Nouns − bird | birds', 'grain | grains Noun Phrase', 'NP', 'Article + Noun | Article + Adjective + Noun = DET N | DET ADJ N Verbs −', '|', 'Verb Phrase', 'VP', 'NP V | V NP Adjectives', 'ADJ', 'beautiful |', 'small |', 'The parse tree breaks sentence', 'parts computer', 'understand process']
+
+>> Named Entities are: 
+ [('GPE', 'Articles'), ('ORGANIZATION', 'DET'), ('PERSON', 'Noun Phrase'), ('PERSON', 'Article'), ('PERSON', 'Article'), ('PERSON', 'Verb Phrase'), ('ORGANIZATION', 'NP V'), ('ORGANIZATION', 'ADJ')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Let', 'let'), ('us', 'us'), ('create', 'creat'), ('grammar', 'grammar'), ('parse', 'pars'), ('sentence', 'sentenc'), ('−', '−'), ('“', '“'), ('The', 'the'), ('bird', 'bird'), ('pecks', 'peck'), ('grains', 'grain'), ('”', '”'), ('Articles', 'articl'), ('(', '('), ('DET', 'det'), (')', ')'), ('−', '−'), ('|', '|'), ('|', '|'), ('Nouns', 'noun'), ('−', '−'), ('bird', 'bird'), ('|', '|'), ('birds', 'bird'), ('|', '|'), ('grain', 'grain'), ('|', '|'), ('grains', 'grain'), ('Noun', 'noun'), ('Phrase', 'phrase'), ('(', '('), ('NP', 'np'), (')', ')'), ('−', '−'), ('Article', 'articl'), ('+', '+'), ('Noun', 'noun'), ('|', '|'), ('Article', 'articl'), ('+', '+'), ('Adjective', 'adject'), ('+', '+'), ('Noun', 'noun'), ('=', '='), ('DET', 'det'), ('N', 'n'), ('|', '|'), ('DET', 'det'), ('ADJ', 'adj'), ('N', 'n'), ('Verbs', 'verb'), ('−', '−'), ('pecks', 'peck'), ('|', '|'), ('pecking', 'peck'), ('|', '|'), ('pecked', 'peck'), ('Verb', 'verb'), ('Phrase', 'phrase'), ('(', '('), ('VP', 'vp'), (')', ')'), ('−', '−'), ('NP', 'np'), ('V', 'v'), ('|', '|'), ('V', 'v'), ('NP', 'np'), ('Adjectives', 'adject'), ('(', '('), ('ADJ', 'adj'), (')', ')'), ('−', '−'), ('beautiful', 'beauti'), ('|', '|'), ('small', 'small'), ('|', '|'), ('chirping', 'chirp'), ('The', 'the'), ('parse', 'pars'), ('tree', 'tree'), ('breaks', 'break'), ('sentence', 'sentenc'), ('structured', 'structur'), ('parts', 'part'), ('computer', 'comput'), ('easily', 'easili'), ('understand', 'understand'), ('process', 'process'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Let', 'let'), ('us', 'us'), ('create', 'creat'), ('grammar', 'grammar'), ('parse', 'pars'), ('sentence', 'sentenc'), ('−', '−'), ('“', '“'), ('The', 'the'), ('bird', 'bird'), ('pecks', 'peck'), ('grains', 'grain'), ('”', '”'), ('Articles', 'articl'), ('(', '('), ('DET', 'det'), (')', ')'), ('−', '−'), ('|', '|'), ('|', '|'), ('Nouns', 'noun'), ('−', '−'), ('bird', 'bird'), ('|', '|'), ('birds', 'bird'), ('|', '|'), ('grain', 'grain'), ('|', '|'), ('grains', 'grain'), ('Noun', 'noun'), ('Phrase', 'phrase'), ('(', '('), ('NP', 'np'), (')', ')'), ('−', '−'), ('Article', 'articl'), ('+', '+'), ('Noun', 'noun'), ('|', '|'), ('Article', 'articl'), ('+', '+'), ('Adjective', 'adject'), ('+', '+'), ('Noun', 'noun'), ('=', '='), ('DET', 'det'), ('N', 'n'), ('|', '|'), ('DET', 'det'), ('ADJ', 'adj'), ('N', 'n'), ('Verbs', 'verb'), ('−', '−'), ('pecks', 'peck'), ('|', '|'), ('pecking', 'peck'), ('|', '|'), ('pecked', 'peck'), ('Verb', 'verb'), ('Phrase', 'phrase'), ('(', '('), ('VP', 'vp'), (')', ')'), ('−', '−'), ('NP', 'np'), ('V', 'v'), ('|', '|'), ('V', 'v'), ('NP', 'np'), ('Adjectives', 'adject'), ('(', '('), ('ADJ', 'adj'), (')', ')'), ('−', '−'), ('beautiful', 'beauti'), ('|', '|'), ('small', 'small'), ('|', '|'), ('chirping', 'chirp'), ('The', 'the'), ('parse', 'pars'), ('tree', 'tree'), ('breaks', 'break'), ('sentence', 'sentenc'), ('structured', 'structur'), ('parts', 'part'), ('computer', 'comput'), ('easily', 'easili'), ('understand', 'understand'), ('process', 'process'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Let', 'Let'), ('us', 'u'), ('create', 'create'), ('grammar', 'grammar'), ('parse', 'parse'), ('sentence', 'sentence'), ('−', '−'), ('“', '“'), ('The', 'The'), ('bird', 'bird'), ('pecks', 'peck'), ('grains', 'grain'), ('”', '”'), ('Articles', 'Articles'), ('(', '('), ('DET', 'DET'), (')', ')'), ('−', '−'), ('|', '|'), ('|', '|'), ('Nouns', 'Nouns'), ('−', '−'), ('bird', 'bird'), ('|', '|'), ('birds', 'bird'), ('|', '|'), ('grain', 'grain'), ('|', '|'), ('grains', 'grain'), ('Noun', 'Noun'), ('Phrase', 'Phrase'), ('(', '('), ('NP', 'NP'), (')', ')'), ('−', '−'), ('Article', 'Article'), ('+', '+'), ('Noun', 'Noun'), ('|', '|'), ('Article', 'Article'), ('+', '+'), ('Adjective', 'Adjective'), ('+', '+'), ('Noun', 'Noun'), ('=', '='), ('DET', 'DET'), ('N', 'N'), ('|', '|'), ('DET', 'DET'), ('ADJ', 'ADJ'), ('N', 'N'), ('Verbs', 'Verbs'), ('−', '−'), ('pecks', 'peck'), ('|', '|'), ('pecking', 'pecking'), ('|', '|'), ('pecked', 'pecked'), ('Verb', 'Verb'), ('Phrase', 'Phrase'), ('(', '('), ('VP', 'VP'), (')', ')'), ('−', '−'), ('NP', 'NP'), ('V', 'V'), ('|', '|'), ('V', 'V'), ('NP', 'NP'), ('Adjectives', 'Adjectives'), ('(', '('), ('ADJ', 'ADJ'), (')', ')'), ('−', '−'), ('beautiful', 'beautiful'), ('|', '|'), ('small', 'small'), ('|', '|'), ('chirping', 'chirping'), ('The', 'The'), ('parse', 'parse'), ('tree', 'tree'), ('breaks', 'break'), ('sentence', 'sentence'), ('structured', 'structured'), ('parts', 'part'), ('computer', 'computer'), ('easily', 'easily'), ('understand', 'understand'), ('process', 'process'), ('.', '.')]
+
+
+
+============================ Sentence 3 =============================
+
+In order for the parsing algorithm to construct this parse tree, a set of rewrite rules, which describe what tree structures are legal, need to be constructed. 
+
+
+>> Tokens are: 
+ ['In', 'order', 'parsing', 'algorithm', 'construct', 'parse', 'tree', ',', 'set', 'rewrite', 'rules', ',', 'describe', 'tree', 'structures', 'legal', ',', 'need', 'constructed', '.']
+
+>> Bigrams are: 
+ [('In', 'order'), ('order', 'parsing'), ('parsing', 'algorithm'), ('algorithm', 'construct'), ('construct', 'parse'), ('parse', 'tree'), ('tree', ','), (',', 'set'), ('set', 'rewrite'), ('rewrite', 'rules'), ('rules', ','), (',', 'describe'), ('describe', 'tree'), ('tree', 'structures'), ('structures', 'legal'), ('legal', ','), (',', 'need'), ('need', 'constructed'), ('constructed', '.')]
+
+>> Trigrams are: 
+ [('In', 'order', 'parsing'), ('order', 'parsing', 'algorithm'), ('parsing', 'algorithm', 'construct'), ('algorithm', 'construct', 'parse'), ('construct', 'parse', 'tree'), ('parse', 'tree', ','), ('tree', ',', 'set'), (',', 'set', 'rewrite'), ('set', 'rewrite', 'rules'), ('rewrite', 'rules', ','), ('rules', ',', 'describe'), (',', 'describe', 'tree'), ('describe', 'tree', 'structures'), ('tree', 'structures', 'legal'), ('structures', 'legal', ','), ('legal', ',', 'need'), (',', 'need', 'constructed'), ('need', 'constructed', '.')]
+
+>> POS Tags are: 
+ [('In', 'IN'), ('order', 'NN'), ('parsing', 'VBG'), ('algorithm', 'JJ'), ('construct', 'NN'), ('parse', 'NN'), ('tree', 'NN'), (',', ','), ('set', 'VBN'), ('rewrite', 'NN'), ('rules', 'NNS'), (',', ','), ('describe', 'VBP'), ('tree', 'JJ'), ('structures', 'NNS'), ('legal', 'JJ'), (',', ','), ('need', 'RB'), ('constructed', 'VBN'), ('.', '.')]
+
+ (S
+  In/IN
+  (NP order/NN)
+  parsing/VBG
+  (NP algorithm/JJ construct/NN parse/NN tree/NN)
+  ,/,
+  set/VBN
+  (NP rewrite/NN rules/NNS)
+  ,/,
+  describe/VBP
+  (NP tree/JJ structures/NNS)
+  legal/JJ
+  ,/,
+  need/RB
+  constructed/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['order', 'algorithm construct parse tree', 'rewrite rules', 'tree structures']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('In', 'in'), ('order', 'order'), ('parsing', 'pars'), ('algorithm', 'algorithm'), ('construct', 'construct'), ('parse', 'pars'), ('tree', 'tree'), (',', ','), ('set', 'set'), ('rewrite', 'rewrit'), ('rules', 'rule'), (',', ','), ('describe', 'describ'), ('tree', 'tree'), ('structures', 'structur'), ('legal', 'legal'), (',', ','), ('need', 'need'), ('constructed', 'construct'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('In', 'in'), ('order', 'order'), ('parsing', 'pars'), ('algorithm', 'algorithm'), ('construct', 'construct'), ('parse', 'pars'), ('tree', 'tree'), (',', ','), ('set', 'set'), ('rewrite', 'rewrit'), ('rules', 'rule'), (',', ','), ('describe', 'describ'), ('tree', 'tree'), ('structures', 'structur'), ('legal', 'legal'), (',', ','), ('need', 'need'), ('constructed', 'construct'), ('.', '.')]
+
+>> Lemmatization: 
+ [('In', 'In'), ('order', 'order'), ('parsing', 'parsing'), ('algorithm', 'algorithm'), ('construct', 'construct'), ('parse', 'parse'), ('tree', 'tree'), (',', ','), ('set', 'set'), ('rewrite', 'rewrite'), ('rules', 'rule'), (',', ','), ('describe', 'describe'), ('tree', 'tree'), ('structures', 'structure'), ('legal', 'legal'), (',', ','), ('need', 'need'), ('constructed', 'constructed'), ('.', '.')]
+
+
+
+============================ Sentence 4 =============================
+
+These rules say that a certain symbol may be expanded in the tree by a sequence of other symbols. 
+
+
+>> Tokens are: 
+ ['These', 'rules', 'say', 'certain', 'symbol', 'may', 'expanded', 'tree', 'sequence', 'symbols', '.']
+
+>> Bigrams are: 
+ [('These', 'rules'), ('rules', 'say'), ('say', 'certain'), ('certain', 'symbol'), ('symbol', 'may'), ('may', 'expanded'), ('expanded', 'tree'), ('tree', 'sequence'), ('sequence', 'symbols'), ('symbols', '.')]
+
+>> Trigrams are: 
+ [('These', 'rules', 'say'), ('rules', 'say', 'certain'), ('say', 'certain', 'symbol'), ('certain', 'symbol', 'may'), ('symbol', 'may', 'expanded'), ('may', 'expanded', 'tree'), ('expanded', 'tree', 'sequence'), ('tree', 'sequence', 'symbols'), ('sequence', 'symbols', '.')]
+
+>> POS Tags are: 
+ [('These', 'DT'), ('rules', 'NNS'), ('say', 'VBP'), ('certain', 'JJ'), ('symbol', 'NN'), ('may', 'MD'), ('expanded', 'VB'), ('tree', 'NN'), ('sequence', 'NN'), ('symbols', 'NNS'), ('.', '.')]
+
+ (S
+  (NP These/DT rules/NNS)
+  say/VBP
+  (NP certain/JJ symbol/NN)
+  may/MD
+  expanded/VB
+  (NP tree/NN sequence/NN symbols/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['These rules', 'certain symbol', 'tree sequence symbols']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('These', 'these'), ('rules', 'rule'), ('say', 'say'), ('certain', 'certain'), ('symbol', 'symbol'), ('may', 'may'), ('expanded', 'expand'), ('tree', 'tree'), ('sequence', 'sequenc'), ('symbols', 'symbol'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('These', 'these'), ('rules', 'rule'), ('say', 'say'), ('certain', 'certain'), ('symbol', 'symbol'), ('may', 'may'), ('expanded', 'expand'), ('tree', 'tree'), ('sequence', 'sequenc'), ('symbols', 'symbol'), ('.', '.')]
+
+>> Lemmatization: 
+ [('These', 'These'), ('rules', 'rule'), ('say', 'say'), ('certain', 'certain'), ('symbol', 'symbol'), ('may', 'may'), ('expanded', 'expanded'), ('tree', 'tree'), ('sequence', 'sequence'), ('symbols', 'symbol'), ('.', '.')]
+
+
+
+============================ Sentence 5 =============================
+
+According to first order logic rule, if there are two strings Noun Phrase (NP) and Verb Phrase (VP), then the string combined by NP followed by VP is a sentence. 
+
+
+>> Tokens are: 
+ ['According', 'first', 'order', 'logic', 'rule', ',', 'two', 'strings', 'Noun', 'Phrase', '(', 'NP', ')', 'Verb', 'Phrase', '(', 'VP', ')', ',', 'string', 'combined', 'NP', 'followed', 'VP', 'sentence', '.']
+
+>> Bigrams are: 
+ [('According', 'first'), ('first', 'order'), ('order', 'logic'), ('logic', 'rule'), ('rule', ','), (',', 'two'), ('two', 'strings'), ('strings', 'Noun'), ('Noun', 'Phrase'), ('Phrase', '('), ('(', 'NP'), ('NP', ')'), (')', 'Verb'), ('Verb', 'Phrase'), ('Phrase', '('), ('(', 'VP'), ('VP', ')'), (')', ','), (',', 'string'), ('string', 'combined'), ('combined', 'NP'), ('NP', 'followed'), ('followed', 'VP'), ('VP', 'sentence'), ('sentence', '.')]
+
+>> Trigrams are: 
+ [('According', 'first', 'order'), ('first', 'order', 'logic'), ('order', 'logic', 'rule'), ('logic', 'rule', ','), ('rule', ',', 'two'), (',', 'two', 'strings'), ('two', 'strings', 'Noun'), ('strings', 'Noun', 'Phrase'), ('Noun', 'Phrase', '('), ('Phrase', '(', 'NP'), ('(', 'NP', ')'), ('NP', ')', 'Verb'), (')', 'Verb', 'Phrase'), ('Verb', 'Phrase', '('), ('Phrase', '(', 'VP'), ('(', 'VP', ')'), ('VP', ')', ','), (')', ',', 'string'), (',', 'string', 'combined'), ('string', 'combined', 'NP'), ('combined', 'NP', 'followed'), ('NP', 'followed', 'VP'), ('followed', 'VP', 'sentence'), ('VP', 'sentence', '.')]
+
+>> POS Tags are: 
+ [('According', 'VBG'), ('first', 'JJ'), ('order', 'NN'), ('logic', 'NN'), ('rule', 'NN'), (',', ','), ('two', 'CD'), ('strings', 'NNS'), ('Noun', 'NNP'), ('Phrase', 'NNP'), ('(', '('), ('NP', 'NNP'), (')', ')'), ('Verb', 'NNP'), ('Phrase', 'NNP'), ('(', '('), ('VP', 'NNP'), (')', ')'), (',', ','), ('string', 'VBG'), ('combined', 'VBN'), ('NP', 'NNP'), ('followed', 'VBD'), ('VP', 'NNP'), ('sentence', 'NN'), ('.', '.')]
+
+ (S
+  According/VBG
+  (NP first/JJ order/NN logic/NN rule/NN)
+  ,/,
+  two/CD
+  (NP strings/NNS Noun/NNP Phrase/NNP)
+  (/(
+  (NP NP/NNP)
+  )/)
+  (NP Verb/NNP Phrase/NNP)
+  (/(
+  (NP VP/NNP)
+  )/)
+  ,/,
+  string/VBG
+  combined/VBN
+  (NP NP/NNP)
+  followed/VBD
+  (NP VP/NNP sentence/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['first order logic rule', 'strings Noun Phrase', 'NP', 'Verb Phrase', 'VP', 'NP', 'VP sentence']
+
+>> Named Entities are: 
+ [('PERSON', 'Noun Phrase'), ('PERSON', 'Verb Phrase'), ('ORGANIZATION', 'NP'), ('ORGANIZATION', 'VP')] 
+
+>> Stemming using Porter Stemmer: 
+ [('According', 'accord'), ('first', 'first'), ('order', 'order'), ('logic', 'logic'), ('rule', 'rule'), (',', ','), ('two', 'two'), ('strings', 'string'), ('Noun', 'noun'), ('Phrase', 'phrase'), ('(', '('), ('NP', 'np'), (')', ')'), ('Verb', 'verb'), ('Phrase', 'phrase'), ('(', '('), ('VP', 'vp'), (')', ')'), (',', ','), ('string', 'string'), ('combined', 'combin'), ('NP', 'np'), ('followed', 'follow'), ('VP', 'vp'), ('sentence', 'sentenc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('According', 'accord'), ('first', 'first'), ('order', 'order'), ('logic', 'logic'), ('rule', 'rule'), (',', ','), ('two', 'two'), ('strings', 'string'), ('Noun', 'noun'), ('Phrase', 'phrase'), ('(', '('), ('NP', 'np'), (')', ')'), ('Verb', 'verb'), ('Phrase', 'phrase'), ('(', '('), ('VP', 'vp'), (')', ')'), (',', ','), ('string', 'string'), ('combined', 'combin'), ('NP', 'np'), ('followed', 'follow'), ('VP', 'vp'), ('sentence', 'sentenc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('According', 'According'), ('first', 'first'), ('order', 'order'), ('logic', 'logic'), ('rule', 'rule'), (',', ','), ('two', 'two'), ('strings', 'string'), ('Noun', 'Noun'), ('Phrase', 'Phrase'), ('(', '('), ('NP', 'NP'), (')', ')'), ('Verb', 'Verb'), ('Phrase', 'Phrase'), ('(', '('), ('VP', 'VP'), (')', ')'), (',', ','), ('string', 'string'), ('combined', 'combined'), ('NP', 'NP'), ('followed', 'followed'), ('VP', 'VP'), ('sentence', 'sentence'), ('.', '.')]
+
+
+
+============================ Sentence 6 =============================
+
+The rewrite rules for the sentence are as follows − S → NP VP NP → DET N | DET ADJ N VP → V NP Lexocon − DET → a | the ADJ → beautiful | perching N → bird | birds | grain | grains V → peck | pecks | pecking The parse tree can be created as shown −  Now consider the above rewrite rules. 
+
+
+>> Tokens are: 
+ ['The', 'rewrite', 'rules', 'sentence', 'follows', '−', 'S', '→', 'NP', 'VP', 'NP', '→', 'DET', 'N', '|', 'DET', 'ADJ', 'N', 'VP', '→', 'V', 'NP', 'Lexocon', '−', 'DET', '→', '|', 'ADJ', '→', 'beautiful', '|', 'perching', 'N', '→', 'bird', '|', 'birds', '|', 'grain', '|', 'grains', 'V', '→', 'peck', '|', 'pecks', '|', 'pecking', 'The', 'parse', 'tree', 'created', 'shown', '−', 'Now', 'consider', 'rewrite', 'rules', '.']
+
+>> Bigrams are: 
+ [('The', 'rewrite'), ('rewrite', 'rules'), ('rules', 'sentence'), ('sentence', 'follows'), ('follows', '−'), ('−', 'S'), ('S', '→'), ('→', 'NP'), ('NP', 'VP'), ('VP', 'NP'), ('NP', '→'), ('→', 'DET'), ('DET', 'N'), ('N', '|'), ('|', 'DET'), ('DET', 'ADJ'), ('ADJ', 'N'), ('N', 'VP'), ('VP', '→'), ('→', 'V'), ('V', 'NP'), ('NP', 'Lexocon'), ('Lexocon', '−'), ('−', 'DET'), ('DET', '→'), ('→', '|'), ('|', 'ADJ'), ('ADJ', '→'), ('→', 'beautiful'), ('beautiful', '|'), ('|', 'perching'), ('perching', 'N'), ('N', '→'), ('→', 'bird'), ('bird', '|'), ('|', 'birds'), ('birds', '|'), ('|', 'grain'), ('grain', '|'), ('|', 'grains'), ('grains', 'V'), ('V', '→'), ('→', 'peck'), ('peck', '|'), ('|', 'pecks'), ('pecks', '|'), ('|', 'pecking'), ('pecking', 'The'), ('The', 'parse'), ('parse', 'tree'), ('tree', 'created'), ('created', 'shown'), ('shown', '−'), ('−', 'Now'), ('Now', 'consider'), ('consider', 'rewrite'), ('rewrite', 'rules'), ('rules', '.')]
+
+>> Trigrams are: 
+ [('The', 'rewrite', 'rules'), ('rewrite', 'rules', 'sentence'), ('rules', 'sentence', 'follows'), ('sentence', 'follows', '−'), ('follows', '−', 'S'), ('−', 'S', '→'), ('S', '→', 'NP'), ('→', 'NP', 'VP'), ('NP', 'VP', 'NP'), ('VP', 'NP', '→'), ('NP', '→', 'DET'), ('→', 'DET', 'N'), ('DET', 'N', '|'), ('N', '|', 'DET'), ('|', 'DET', 'ADJ'), ('DET', 'ADJ', 'N'), ('ADJ', 'N', 'VP'), ('N', 'VP', '→'), ('VP', '→', 'V'), ('→', 'V', 'NP'), ('V', 'NP', 'Lexocon'), ('NP', 'Lexocon', '−'), ('Lexocon', '−', 'DET'), ('−', 'DET', '→'), ('DET', '→', '|'), ('→', '|', 'ADJ'), ('|', 'ADJ', '→'), ('ADJ', '→', 'beautiful'), ('→', 'beautiful', '|'), ('beautiful', '|', 'perching'), ('|', 'perching', 'N'), ('perching', 'N', '→'), ('N', '→', 'bird'), ('→', 'bird', '|'), ('bird', '|', 'birds'), ('|', 'birds', '|'), ('birds', '|', 'grain'), ('|', 'grain', '|'), ('grain', '|', 'grains'), ('|', 'grains', 'V'), ('grains', 'V', '→'), ('V', '→', 'peck'), ('→', 'peck', '|'), ('peck', '|', 'pecks'), ('|', 'pecks', '|'), ('pecks', '|', 'pecking'), ('|', 'pecking', 'The'), ('pecking', 'The', 'parse'), ('The', 'parse', 'tree'), ('parse', 'tree', 'created'), ('tree', 'created', 'shown'), ('created', 'shown', '−'), ('shown', '−', 'Now'), ('−', 'Now', 'consider'), ('Now', 'consider', 'rewrite'), ('consider', 'rewrite', 'rules'), ('rewrite', 'rules', '.')]
+
+>> POS Tags are: 
+ [('The', 'DT'), ('rewrite', 'NN'), ('rules', 'NNS'), ('sentence', 'NN'), ('follows', 'VBZ'), ('−', 'NNP'), ('S', 'NNP'), ('→', 'NNP'), ('NP', 'NNP'), ('VP', 'NNP'), ('NP', 'NNP'), ('→', 'NNP'), ('DET', 'NNP'), ('N', 'NNP'), ('|', 'NNP'), ('DET', 'NNP'), ('ADJ', 'NNP'), ('N', 'NNP'), ('VP', 'NNP'), ('→', 'NNP'), ('V', 'NNP'), ('NP', 'NNP'), ('Lexocon', 'NNP'), ('−', 'NNP'), ('DET', 'NNP'), ('→', 'NNP'), ('|', 'NNP'), ('ADJ', 'NNP'), ('→', 'NNP'), ('beautiful', 'JJ'), ('|', 'NNP'), ('perching', 'VBG'), ('N', 'NNP'), ('→', 'NNP'), ('bird', 'NN'), ('|', 'NN'), ('birds', 'NNS'), ('|', 'VBP'), ('grain', 'NN'), ('|', 'NN'), ('grains', 'NNS'), ('V', 'NNP'), ('→', 'NNP'), ('peck', 'NN'), ('|', 'NN'), ('pecks', 'NNS'), ('|', 'VBP'), ('pecking', 'VBG'), ('The', 'DT'), ('parse', 'NN'), ('tree', 'NN'), ('created', 'VBD'), ('shown', 'VBN'), ('−', 'RB'), ('Now', 'RB'), ('consider', 'VB'), ('rewrite', 'NN'), ('rules', 'NNS'), ('.', '.')]
+
+ (S
+  (NP The/DT rewrite/NN rules/NNS sentence/NN)
+  follows/VBZ
+  (NP
+    −/NNP
+    S/NNP
+    →/NNP
+    NP/NNP
+    VP/NNP
+    NP/NNP
+    →/NNP
+    DET/NNP
+    N/NNP
+    |/NNP
+    DET/NNP
+    ADJ/NNP
+    N/NNP
+    VP/NNP
+    →/NNP
+    V/NNP
+    NP/NNP
+    Lexocon/NNP
+    −/NNP
+    DET/NNP
+    →/NNP
+    |/NNP
+    ADJ/NNP
+    →/NNP)
+  (NP beautiful/JJ |/NNP)
+  perching/VBG
+  (NP N/NNP →/NNP bird/NN |/NN birds/NNS)
+  |/VBP
+  (NP grain/NN |/NN grains/NNS V/NNP →/NNP peck/NN |/NN pecks/NNS)
+  |/VBP
+  pecking/VBG
+  (NP The/DT parse/NN tree/NN)
+  created/VBD
+  shown/VBN
+  −/RB
+  Now/RB
+  consider/VB
+  (NP rewrite/NN rules/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['The rewrite rules sentence', '− S → NP VP NP → DET N | DET ADJ N VP → V NP Lexocon − DET → | ADJ →', 'beautiful |', 'N → bird | birds', 'grain | grains V → peck | pecks', 'The parse tree', 'rewrite rules']
+
+>> Named Entities are: 
+ [('PERSON', 'Lexocon'), ('PERSON', 'N'), ('PERSON', 'V')] 
+
+>> Stemming using Porter Stemmer: 
+ [('The', 'the'), ('rewrite', 'rewrit'), ('rules', 'rule'), ('sentence', 'sentenc'), ('follows', 'follow'), ('−', '−'), ('S', 's'), ('→', '→'), ('NP', 'np'), ('VP', 'vp'), ('NP', 'np'), ('→', '→'), ('DET', 'det'), ('N', 'n'), ('|', '|'), ('DET', 'det'), ('ADJ', 'adj'), ('N', 'n'), ('VP', 'vp'), ('→', '→'), ('V', 'v'), ('NP', 'np'), ('Lexocon', 'lexocon'), ('−', '−'), ('DET', 'det'), ('→', '→'), ('|', '|'), ('ADJ', 'adj'), ('→', '→'), ('beautiful', 'beauti'), ('|', '|'), ('perching', 'perch'), ('N', 'n'), ('→', '→'), ('bird', 'bird'), ('|', '|'), ('birds', 'bird'), ('|', '|'), ('grain', 'grain'), ('|', '|'), ('grains', 'grain'), ('V', 'v'), ('→', '→'), ('peck', 'peck'), ('|', '|'), ('pecks', 'peck'), ('|', '|'), ('pecking', 'peck'), ('The', 'the'), ('parse', 'pars'), ('tree', 'tree'), ('created', 'creat'), ('shown', 'shown'), ('−', '−'), ('Now', 'now'), ('consider', 'consid'), ('rewrite', 'rewrit'), ('rules', 'rule'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('The', 'the'), ('rewrite', 'rewrit'), ('rules', 'rule'), ('sentence', 'sentenc'), ('follows', 'follow'), ('−', '−'), ('S', 's'), ('→', '→'), ('NP', 'np'), ('VP', 'vp'), ('NP', 'np'), ('→', '→'), ('DET', 'det'), ('N', 'n'), ('|', '|'), ('DET', 'det'), ('ADJ', 'adj'), ('N', 'n'), ('VP', 'vp'), ('→', '→'), ('V', 'v'), ('NP', 'np'), ('Lexocon', 'lexocon'), ('−', '−'), ('DET', 'det'), ('→', '→'), ('|', '|'), ('ADJ', 'adj'), ('→', '→'), ('beautiful', 'beauti'), ('|', '|'), ('perching', 'perch'), ('N', 'n'), ('→', '→'), ('bird', 'bird'), ('|', '|'), ('birds', 'bird'), ('|', '|'), ('grain', 'grain'), ('|', '|'), ('grains', 'grain'), ('V', 'v'), ('→', '→'), ('peck', 'peck'), ('|', '|'), ('pecks', 'peck'), ('|', '|'), ('pecking', 'peck'), ('The', 'the'), ('parse', 'pars'), ('tree', 'tree'), ('created', 'creat'), ('shown', 'shown'), ('−', '−'), ('Now', 'now'), ('consider', 'consid'), ('rewrite', 'rewrit'), ('rules', 'rule'), ('.', '.')]
+
+>> Lemmatization: 
+ [('The', 'The'), ('rewrite', 'rewrite'), ('rules', 'rule'), ('sentence', 'sentence'), ('follows', 'follows'), ('−', '−'), ('S', 'S'), ('→', '→'), ('NP', 'NP'), ('VP', 'VP'), ('NP', 'NP'), ('→', '→'), ('DET', 'DET'), ('N', 'N'), ('|', '|'), ('DET', 'DET'), ('ADJ', 'ADJ'), ('N', 'N'), ('VP', 'VP'), ('→', '→'), ('V', 'V'), ('NP', 'NP'), ('Lexocon', 'Lexocon'), ('−', '−'), ('DET', 'DET'), ('→', '→'), ('|', '|'), ('ADJ', 'ADJ'), ('→', '→'), ('beautiful', 'beautiful'), ('|', '|'), ('perching', 'perching'), ('N', 'N'), ('→', '→'), ('bird', 'bird'), ('|', '|'), ('birds', 'bird'), ('|', '|'), ('grain', 'grain'), ('|', '|'), ('grains', 'grain'), ('V', 'V'), ('→', '→'), ('peck', 'peck'), ('|', '|'), ('pecks', 'peck'), ('|', '|'), ('pecking', 'pecking'), ('The', 'The'), ('parse', 'parse'), ('tree', 'tree'), ('created', 'created'), ('shown', 'shown'), ('−', '−'), ('Now', 'Now'), ('consider', 'consider'), ('rewrite', 'rewrite'), ('rules', 'rule'), ('.', '.')]
+
+
+
+============================ Sentence 7 =============================
+
+Since V can be replaced by both, "peck" or "pecks", sentences such as "The bird peck the grains" can be wrongly permitted. 
+
+
+>> Tokens are: 
+ ['Since', 'V', 'replaced', ',', '``', 'peck', "''", '``', 'pecks', "''", ',', 'sentences', '``', 'The', 'bird', 'peck', 'grains', "''", 'wrongly', 'permitted', '.']
+
+>> Bigrams are: 
+ [('Since', 'V'), ('V', 'replaced'), ('replaced', ','), (',', '``'), ('``', 'peck'), ('peck', "''"), ("''", '``'), ('``', 'pecks'), ('pecks', "''"), ("''", ','), (',', 'sentences'), ('sentences', '``'), ('``', 'The'), ('The', 'bird'), ('bird', 'peck'), ('peck', 'grains'), ('grains', "''"), ("''", 'wrongly'), ('wrongly', 'permitted'), ('permitted', '.')]
+
+>> Trigrams are: 
+ [('Since', 'V', 'replaced'), ('V', 'replaced', ','), ('replaced', ',', '``'), (',', '``', 'peck'), ('``', 'peck', "''"), ('peck', "''", '``'), ("''", '``', 'pecks'), ('``', 'pecks', "''"), ('pecks', "''", ','), ("''", ',', 'sentences'), (',', 'sentences', '``'), ('sentences', '``', 'The'), ('``', 'The', 'bird'), ('The', 'bird', 'peck'), ('bird', 'peck', 'grains'), ('peck', 'grains', "''"), ('grains', "''", 'wrongly'), ("''", 'wrongly', 'permitted'), ('wrongly', 'permitted', '.')]
+
+>> POS Tags are: 
+ [('Since', 'IN'), ('V', 'NNP'), ('replaced', 'VBD'), (',', ','), ('``', '``'), ('peck', 'NN'), ("''", "''"), ('``', '``'), ('pecks', 'NNS'), ("''", "''"), (',', ','), ('sentences', 'VBZ'), ('``', '``'), ('The', 'DT'), ('bird', 'NN'), ('peck', 'NN'), ('grains', 'NNS'), ("''", "''"), ('wrongly', 'RB'), ('permitted', 'VBD'), ('.', '.')]
+
+ (S
+  Since/IN
+  (NP V/NNP)
+  replaced/VBD
+  ,/,
+  ``/``
+  (NP peck/NN)
+  ''/''
+  ``/``
+  (NP pecks/NNS)
+  ''/''
+  ,/,
+  sentences/VBZ
+  ``/``
+  (NP The/DT bird/NN peck/NN grains/NNS)
+  ''/''
+  wrongly/RB
+  permitted/VBD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['V', 'peck', 'pecks', 'The bird peck grains']
+
+>> Named Entities are: 
+ [('PERSON', 'V')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Since', 'sinc'), ('V', 'v'), ('replaced', 'replac'), (',', ','), ('``', '``'), ('peck', 'peck'), ("''", "''"), ('``', '``'), ('pecks', 'peck'), ("''", "''"), (',', ','), ('sentences', 'sentenc'), ('``', '``'), ('The', 'the'), ('bird', 'bird'), ('peck', 'peck'), ('grains', 'grain'), ("''", "''"), ('wrongly', 'wrongli'), ('permitted', 'permit'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Since', 'sinc'), ('V', 'v'), ('replaced', 'replac'), (',', ','), ('``', '``'), ('peck', 'peck'), ("''", "''"), ('``', '``'), ('pecks', 'peck'), ("''", "''"), (',', ','), ('sentences', 'sentenc'), ('``', '``'), ('The', 'the'), ('bird', 'bird'), ('peck', 'peck'), ('grains', 'grain'), ("''", "''"), ('wrongly', 'wrong'), ('permitted', 'permit'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Since', 'Since'), ('V', 'V'), ('replaced', 'replaced'), (',', ','), ('``', '``'), ('peck', 'peck'), ("''", "''"), ('``', '``'), ('pecks', 'peck'), ("''", "''"), (',', ','), ('sentences', 'sentence'), ('``', '``'), ('The', 'The'), ('bird', 'bird'), ('peck', 'peck'), ('grains', 'grain'), ("''", "''"), ('wrongly', 'wrongly'), ('permitted', 'permitted'), ('.', '.')]
+
+
+
+============================ Sentence 8 =============================
+
+i. e. the subject-verb agreement error is approved as correct. 
+
+
+>> Tokens are: 
+ ['i.', 'e.', 'subject-verb', 'agreement', 'error', 'approved', 'correct', '.']
+
+>> Bigrams are: 
+ [('i.', 'e.'), ('e.', 'subject-verb'), ('subject-verb', 'agreement'), ('agreement', 'error'), ('error', 'approved'), ('approved', 'correct'), ('correct', '.')]
+
+>> Trigrams are: 
+ [('i.', 'e.', 'subject-verb'), ('e.', 'subject-verb', 'agreement'), ('subject-verb', 'agreement', 'error'), ('agreement', 'error', 'approved'), ('error', 'approved', 'correct'), ('approved', 'correct', '.')]
+
+>> POS Tags are: 
+ [('i.', 'NN'), ('e.', 'VBZ'), ('subject-verb', 'JJ'), ('agreement', 'NN'), ('error', 'NN'), ('approved', 'VBD'), ('correct', 'JJ'), ('.', '.')]
+
+ (S
+  (NP i./NN)
+  e./VBZ
+  (NP subject-verb/JJ agreement/NN error/NN)
+  approved/VBD
+  correct/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['i.', 'subject-verb agreement error']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('i.', 'i.'), ('e.', 'e.'), ('subject-verb', 'subject-verb'), ('agreement', 'agreement'), ('error', 'error'), ('approved', 'approv'), ('correct', 'correct'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('i.', 'i.'), ('e.', 'e.'), ('subject-verb', 'subject-verb'), ('agreement', 'agreement'), ('error', 'error'), ('approved', 'approv'), ('correct', 'correct'), ('.', '.')]
+
+>> Lemmatization: 
+ [('i.', 'i.'), ('e.', 'e.'), ('subject-verb', 'subject-verb'), ('agreement', 'agreement'), ('error', 'error'), ('approved', 'approved'), ('correct', 'correct'), ('.', '.')]
+
+
+
+============================ Sentence 9 =============================
+
+Merit − The simplest style of grammar, therefore widely used one. 
+
+
+>> Tokens are: 
+ ['Merit', '−', 'The', 'simplest', 'style', 'grammar', ',', 'therefore', 'widely', 'used', 'one', '.']
+
+>> Bigrams are: 
+ [('Merit', '−'), ('−', 'The'), ('The', 'simplest'), ('simplest', 'style'), ('style', 'grammar'), ('grammar', ','), (',', 'therefore'), ('therefore', 'widely'), ('widely', 'used'), ('used', 'one'), ('one', '.')]
+
+>> Trigrams are: 
+ [('Merit', '−', 'The'), ('−', 'The', 'simplest'), ('The', 'simplest', 'style'), ('simplest', 'style', 'grammar'), ('style', 'grammar', ','), ('grammar', ',', 'therefore'), (',', 'therefore', 'widely'), ('therefore', 'widely', 'used'), ('widely', 'used', 'one'), ('used', 'one', '.')]
+
+>> POS Tags are: 
+ [('Merit', 'NNP'), ('−', 'VBZ'), ('The', 'DT'), ('simplest', 'JJS'), ('style', 'NN'), ('grammar', 'NN'), (',', ','), ('therefore', 'RB'), ('widely', 'RB'), ('used', 'VBN'), ('one', 'CD'), ('.', '.')]
+
+ (S
+  (NP Merit/NNP)
+  −/VBZ
+  The/DT
+  simplest/JJS
+  (NP style/NN grammar/NN)
+  ,/,
+  therefore/RB
+  widely/RB
+  used/VBN
+  one/CD
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Merit', 'style grammar']
+
+>> Named Entities are: 
+ [('GPE', 'Merit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Merit', 'merit'), ('−', '−'), ('The', 'the'), ('simplest', 'simplest'), ('style', 'style'), ('grammar', 'grammar'), (',', ','), ('therefore', 'therefor'), ('widely', 'wide'), ('used', 'use'), ('one', 'one'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Merit', 'merit'), ('−', '−'), ('The', 'the'), ('simplest', 'simplest'), ('style', 'style'), ('grammar', 'grammar'), (',', ','), ('therefore', 'therefor'), ('widely', 'wide'), ('used', 'use'), ('one', 'one'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Merit', 'Merit'), ('−', '−'), ('The', 'The'), ('simplest', 'simplest'), ('style', 'style'), ('grammar', 'grammar'), (',', ','), ('therefore', 'therefore'), ('widely', 'widely'), ('used', 'used'), ('one', 'one'), ('.', '.')]
+
+
+
+============================ Sentence 10 =============================
+
+Demerits − · They are not highly precise. 
+
+
+>> Tokens are: 
+ ['Demerits', '−', '·', 'They', 'highly', 'precise', '.']
+
+>> Bigrams are: 
+ [('Demerits', '−'), ('−', '·'), ('·', 'They'), ('They', 'highly'), ('highly', 'precise'), ('precise', '.')]
+
+>> Trigrams are: 
+ [('Demerits', '−', '·'), ('−', '·', 'They'), ('·', 'They', 'highly'), ('They', 'highly', 'precise'), ('highly', 'precise', '.')]
+
+>> POS Tags are: 
+ [('Demerits', 'NNS'), ('−', 'VBP'), ('·', 'IN'), ('They', 'PRP'), ('highly', 'RB'), ('precise', 'VBP'), ('.', '.')]
+
+ (S (NP Demerits/NNS) −/VBP ·/IN They/PRP highly/RB precise/VBP ./.) 
+
+
+>> Noun Phrases are: 
+ ['Demerits']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Demerits', 'demerit'), ('−', '−'), ('·', '·'), ('They', 'they'), ('highly', 'highli'), ('precise', 'precis'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Demerits', 'demerit'), ('−', '−'), ('·', '·'), ('They', 'they'), ('highly', 'high'), ('precise', 'precis'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Demerits', 'Demerits'), ('−', '−'), ('·', '·'), ('They', 'They'), ('highly', 'highly'), ('precise', 'precise'), ('.', '.')]
+
+
+
+============================ Sentence 11 =============================
+
+For example, “The grains peck the bird”, is a syntactically correct according to parser, but even if it makes no sense, parser takes it as a correct sentence. 
+
+
+>> Tokens are: 
+ ['For', 'example', ',', '“', 'The', 'grains', 'peck', 'bird', '”', ',', 'syntactically', 'correct', 'according', 'parser', ',', 'even', 'makes', 'sense', ',', 'parser', 'takes', 'correct', 'sentence', '.']
+
+>> Bigrams are: 
+ [('For', 'example'), ('example', ','), (',', '“'), ('“', 'The'), ('The', 'grains'), ('grains', 'peck'), ('peck', 'bird'), ('bird', '”'), ('”', ','), (',', 'syntactically'), ('syntactically', 'correct'), ('correct', 'according'), ('according', 'parser'), ('parser', ','), (',', 'even'), ('even', 'makes'), ('makes', 'sense'), ('sense', ','), (',', 'parser'), ('parser', 'takes'), ('takes', 'correct'), ('correct', 'sentence'), ('sentence', '.')]
+
+>> Trigrams are: 
+ [('For', 'example', ','), ('example', ',', '“'), (',', '“', 'The'), ('“', 'The', 'grains'), ('The', 'grains', 'peck'), ('grains', 'peck', 'bird'), ('peck', 'bird', '”'), ('bird', '”', ','), ('”', ',', 'syntactically'), (',', 'syntactically', 'correct'), ('syntactically', 'correct', 'according'), ('correct', 'according', 'parser'), ('according', 'parser', ','), ('parser', ',', 'even'), (',', 'even', 'makes'), ('even', 'makes', 'sense'), ('makes', 'sense', ','), ('sense', ',', 'parser'), (',', 'parser', 'takes'), ('parser', 'takes', 'correct'), ('takes', 'correct', 'sentence'), ('correct', 'sentence', '.')]
+
+>> POS Tags are: 
+ [('For', 'IN'), ('example', 'NN'), (',', ','), ('“', 'VBZ'), ('The', 'DT'), ('grains', 'NNS'), ('peck', 'VBP'), ('bird', 'NN'), ('”', 'NN'), (',', ','), ('syntactically', 'RB'), ('correct', 'JJ'), ('according', 'VBG'), ('parser', 'NN'), (',', ','), ('even', 'RB'), ('makes', 'VBZ'), ('sense', 'NN'), (',', ','), ('parser', 'NN'), ('takes', 'VBZ'), ('correct', 'JJ'), ('sentence', 'NN'), ('.', '.')]
+
+ (S
+  For/IN
+  (NP example/NN)
+  ,/,
+  “/VBZ
+  (NP The/DT grains/NNS)
+  peck/VBP
+  (NP bird/NN ”/NN)
+  ,/,
+  syntactically/RB
+  correct/JJ
+  according/VBG
+  (NP parser/NN)
+  ,/,
+  even/RB
+  makes/VBZ
+  (NP sense/NN)
+  ,/,
+  (NP parser/NN)
+  takes/VBZ
+  (NP correct/JJ sentence/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['example', 'The grains', 'bird ”', 'parser', 'sense', 'parser', 'correct sentence']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('“', '“'), ('The', 'the'), ('grains', 'grain'), ('peck', 'peck'), ('bird', 'bird'), ('”', '”'), (',', ','), ('syntactically', 'syntact'), ('correct', 'correct'), ('according', 'accord'), ('parser', 'parser'), (',', ','), ('even', 'even'), ('makes', 'make'), ('sense', 'sens'), (',', ','), ('parser', 'parser'), ('takes', 'take'), ('correct', 'correct'), ('sentence', 'sentenc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('For', 'for'), ('example', 'exampl'), (',', ','), ('“', '“'), ('The', 'the'), ('grains', 'grain'), ('peck', 'peck'), ('bird', 'bird'), ('”', '”'), (',', ','), ('syntactically', 'syntact'), ('correct', 'correct'), ('according', 'accord'), ('parser', 'parser'), (',', ','), ('even', 'even'), ('makes', 'make'), ('sense', 'sens'), (',', ','), ('parser', 'parser'), ('takes', 'take'), ('correct', 'correct'), ('sentence', 'sentenc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('For', 'For'), ('example', 'example'), (',', ','), ('“', '“'), ('The', 'The'), ('grains', 'grain'), ('peck', 'peck'), ('bird', 'bird'), ('”', '”'), (',', ','), ('syntactically', 'syntactically'), ('correct', 'correct'), ('according', 'according'), ('parser', 'parser'), (',', ','), ('even', 'even'), ('makes', 'make'), ('sense', 'sense'), (',', ','), ('parser', 'parser'), ('takes', 'take'), ('correct', 'correct'), ('sentence', 'sentence'), ('.', '.')]
+
+
+
+============================ Sentence 12 =============================
+
+· To bring out high precision, multiple sets of grammar need to be prepared. 
+
+
+>> Tokens are: 
+ ['·', 'To', 'bring', 'high', 'precision', ',', 'multiple', 'sets', 'grammar', 'need', 'prepared', '.']
+
+>> Bigrams are: 
+ [('·', 'To'), ('To', 'bring'), ('bring', 'high'), ('high', 'precision'), ('precision', ','), (',', 'multiple'), ('multiple', 'sets'), ('sets', 'grammar'), ('grammar', 'need'), ('need', 'prepared'), ('prepared', '.')]
+
+>> Trigrams are: 
+ [('·', 'To', 'bring'), ('To', 'bring', 'high'), ('bring', 'high', 'precision'), ('high', 'precision', ','), ('precision', ',', 'multiple'), (',', 'multiple', 'sets'), ('multiple', 'sets', 'grammar'), ('sets', 'grammar', 'need'), ('grammar', 'need', 'prepared'), ('need', 'prepared', '.')]
+
+>> POS Tags are: 
+ [('·', 'NN'), ('To', 'TO'), ('bring', 'VB'), ('high', 'JJ'), ('precision', 'NN'), (',', ','), ('multiple', 'JJ'), ('sets', 'NNS'), ('grammar', 'VBP'), ('need', 'NN'), ('prepared', 'VBN'), ('.', '.')]
+
+ (S
+  (NP ·/NN)
+  To/TO
+  bring/VB
+  (NP high/JJ precision/NN)
+  ,/,
+  (NP multiple/JJ sets/NNS)
+  grammar/VBP
+  (NP need/NN)
+  prepared/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['·', 'high precision', 'multiple sets', 'need']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('To', 'to'), ('bring', 'bring'), ('high', 'high'), ('precision', 'precis'), (',', ','), ('multiple', 'multipl'), ('sets', 'set'), ('grammar', 'grammar'), ('need', 'need'), ('prepared', 'prepar'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('To', 'to'), ('bring', 'bring'), ('high', 'high'), ('precision', 'precis'), (',', ','), ('multiple', 'multipl'), ('sets', 'set'), ('grammar', 'grammar'), ('need', 'need'), ('prepared', 'prepar'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('To', 'To'), ('bring', 'bring'), ('high', 'high'), ('precision', 'precision'), (',', ','), ('multiple', 'multiple'), ('sets', 'set'), ('grammar', 'grammar'), ('need', 'need'), ('prepared', 'prepared'), ('.', '.')]
+
+
+
+============================ Sentence 13 =============================
+
+It may require a completely different sets of rules for parsing singular and plural variations, passive sentences, etc., which can lead to creation of huge set of rules that are unmanageable. 
+
+
+>> Tokens are: 
+ ['It', 'may', 'require', 'completely', 'different', 'sets', 'rules', 'parsing', 'singular', 'plural', 'variations', ',', 'passive', 'sentences', ',', 'etc.', ',', 'lead', 'creation', 'huge', 'set', 'rules', 'unmanageable', '.']
+
+>> Bigrams are: 
+ [('It', 'may'), ('may', 'require'), ('require', 'completely'), ('completely', 'different'), ('different', 'sets'), ('sets', 'rules'), ('rules', 'parsing'), ('parsing', 'singular'), ('singular', 'plural'), ('plural', 'variations'), ('variations', ','), (',', 'passive'), ('passive', 'sentences'), ('sentences', ','), (',', 'etc.'), ('etc.', ','), (',', 'lead'), ('lead', 'creation'), ('creation', 'huge'), ('huge', 'set'), ('set', 'rules'), ('rules', 'unmanageable'), ('unmanageable', '.')]
+
+>> Trigrams are: 
+ [('It', 'may', 'require'), ('may', 'require', 'completely'), ('require', 'completely', 'different'), ('completely', 'different', 'sets'), ('different', 'sets', 'rules'), ('sets', 'rules', 'parsing'), ('rules', 'parsing', 'singular'), ('parsing', 'singular', 'plural'), ('singular', 'plural', 'variations'), ('plural', 'variations', ','), ('variations', ',', 'passive'), (',', 'passive', 'sentences'), ('passive', 'sentences', ','), ('sentences', ',', 'etc.'), (',', 'etc.', ','), ('etc.', ',', 'lead'), (',', 'lead', 'creation'), ('lead', 'creation', 'huge'), ('creation', 'huge', 'set'), ('huge', 'set', 'rules'), ('set', 'rules', 'unmanageable'), ('rules', 'unmanageable', '.')]
+
+>> POS Tags are: 
+ [('It', 'PRP'), ('may', 'MD'), ('require', 'VB'), ('completely', 'RB'), ('different', 'JJ'), ('sets', 'NNS'), ('rules', 'NNS'), ('parsing', 'VBG'), ('singular', 'JJ'), ('plural', 'JJ'), ('variations', 'NNS'), (',', ','), ('passive', 'JJ'), ('sentences', 'NNS'), (',', ','), ('etc.', 'FW'), (',', ','), ('lead', 'JJ'), ('creation', 'NN'), ('huge', 'JJ'), ('set', 'NN'), ('rules', 'NNS'), ('unmanageable', 'JJ'), ('.', '.')]
+
+ (S
+  It/PRP
+  may/MD
+  require/VB
+  completely/RB
+  (NP different/JJ sets/NNS rules/NNS)
+  parsing/VBG
+  (NP singular/JJ plural/JJ variations/NNS)
+  ,/,
+  (NP passive/JJ sentences/NNS)
+  ,/,
+  etc./FW
+  ,/,
+  (NP lead/JJ creation/NN)
+  (NP huge/JJ set/NN rules/NNS)
+  unmanageable/JJ
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['different sets rules', 'singular plural variations', 'passive sentences', 'lead creation', 'huge set rules']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('It', 'it'), ('may', 'may'), ('require', 'requir'), ('completely', 'complet'), ('different', 'differ'), ('sets', 'set'), ('rules', 'rule'), ('parsing', 'pars'), ('singular', 'singular'), ('plural', 'plural'), ('variations', 'variat'), (',', ','), ('passive', 'passiv'), ('sentences', 'sentenc'), (',', ','), ('etc.', 'etc.'), (',', ','), ('lead', 'lead'), ('creation', 'creation'), ('huge', 'huge'), ('set', 'set'), ('rules', 'rule'), ('unmanageable', 'unmanag'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('It', 'it'), ('may', 'may'), ('require', 'requir'), ('completely', 'complet'), ('different', 'differ'), ('sets', 'set'), ('rules', 'rule'), ('parsing', 'pars'), ('singular', 'singular'), ('plural', 'plural'), ('variations', 'variat'), (',', ','), ('passive', 'passiv'), ('sentences', 'sentenc'), (',', ','), ('etc.', 'etc.'), (',', ','), ('lead', 'lead'), ('creation', 'creation'), ('huge', 'huge'), ('set', 'set'), ('rules', 'rule'), ('unmanageable', 'unmanag'), ('.', '.')]
+
+>> Lemmatization: 
+ [('It', 'It'), ('may', 'may'), ('require', 'require'), ('completely', 'completely'), ('different', 'different'), ('sets', 'set'), ('rules', 'rule'), ('parsing', 'parsing'), ('singular', 'singular'), ('plural', 'plural'), ('variations', 'variation'), (',', ','), ('passive', 'passive'), ('sentences', 'sentence'), (',', ','), ('etc.', 'etc.'), (',', ','), ('lead', 'lead'), ('creation', 'creation'), ('huge', 'huge'), ('set', 'set'), ('rules', 'rule'), ('unmanageable', 'unmanageable'), ('.', '.')]
+
+
+
+============================ Sentence 14 =============================
+
+Top-Down Parser Here, the parser starts with the S symbol and attempts to rewrite it into a sequence of terminal symbols that matches the classes of the words in the input sentence until it consists entirely of terminal symbols. 
+
+
+>> Tokens are: 
+ ['Top-Down', 'Parser', 'Here', ',', 'parser', 'starts', 'S', 'symbol', 'attempts', 'rewrite', 'sequence', 'terminal', 'symbols', 'matches', 'classes', 'words', 'input', 'sentence', 'consists', 'entirely', 'terminal', 'symbols', '.']
+
+>> Bigrams are: 
+ [('Top-Down', 'Parser'), ('Parser', 'Here'), ('Here', ','), (',', 'parser'), ('parser', 'starts'), ('starts', 'S'), ('S', 'symbol'), ('symbol', 'attempts'), ('attempts', 'rewrite'), ('rewrite', 'sequence'), ('sequence', 'terminal'), ('terminal', 'symbols'), ('symbols', 'matches'), ('matches', 'classes'), ('classes', 'words'), ('words', 'input'), ('input', 'sentence'), ('sentence', 'consists'), ('consists', 'entirely'), ('entirely', 'terminal'), ('terminal', 'symbols'), ('symbols', '.')]
+
+>> Trigrams are: 
+ [('Top-Down', 'Parser', 'Here'), ('Parser', 'Here', ','), ('Here', ',', 'parser'), (',', 'parser', 'starts'), ('parser', 'starts', 'S'), ('starts', 'S', 'symbol'), ('S', 'symbol', 'attempts'), ('symbol', 'attempts', 'rewrite'), ('attempts', 'rewrite', 'sequence'), ('rewrite', 'sequence', 'terminal'), ('sequence', 'terminal', 'symbols'), ('terminal', 'symbols', 'matches'), ('symbols', 'matches', 'classes'), ('matches', 'classes', 'words'), ('classes', 'words', 'input'), ('words', 'input', 'sentence'), ('input', 'sentence', 'consists'), ('sentence', 'consists', 'entirely'), ('consists', 'entirely', 'terminal'), ('entirely', 'terminal', 'symbols'), ('terminal', 'symbols', '.')]
+
+>> POS Tags are: 
+ [('Top-Down', 'JJ'), ('Parser', 'NNP'), ('Here', 'RB'), (',', ','), ('parser', 'JJR'), ('starts', 'NNS'), ('S', 'NNP'), ('symbol', 'NN'), ('attempts', 'NNS'), ('rewrite', 'VBP'), ('sequence', 'NN'), ('terminal', 'NN'), ('symbols', 'NNS'), ('matches', 'NNS'), ('classes', 'NNS'), ('words', 'NNS'), ('input', 'VBP'), ('sentence', 'NN'), ('consists', 'VBZ'), ('entirely', 'RB'), ('terminal', 'JJ'), ('symbols', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Top-Down/JJ Parser/NNP)
+  Here/RB
+  ,/,
+  parser/JJR
+  (NP starts/NNS S/NNP symbol/NN attempts/NNS)
+  rewrite/VBP
+  (NP
+    sequence/NN
+    terminal/NN
+    symbols/NNS
+    matches/NNS
+    classes/NNS
+    words/NNS)
+  input/VBP
+  (NP sentence/NN)
+  consists/VBZ
+  entirely/RB
+  (NP terminal/JJ symbols/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Top-Down Parser', 'starts S symbol attempts', 'sequence terminal symbols matches classes words', 'sentence', 'terminal symbols']
+
+>> Named Entities are: 
+ [('ORGANIZATION', 'Parser Here')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Top-Down', 'top-down'), ('Parser', 'parser'), ('Here', 'here'), (',', ','), ('parser', 'parser'), ('starts', 'start'), ('S', 's'), ('symbol', 'symbol'), ('attempts', 'attempt'), ('rewrite', 'rewrit'), ('sequence', 'sequenc'), ('terminal', 'termin'), ('symbols', 'symbol'), ('matches', 'match'), ('classes', 'class'), ('words', 'word'), ('input', 'input'), ('sentence', 'sentenc'), ('consists', 'consist'), ('entirely', 'entir'), ('terminal', 'termin'), ('symbols', 'symbol'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Top-Down', 'top-down'), ('Parser', 'parser'), ('Here', 'here'), (',', ','), ('parser', 'parser'), ('starts', 'start'), ('S', 's'), ('symbol', 'symbol'), ('attempts', 'attempt'), ('rewrite', 'rewrit'), ('sequence', 'sequenc'), ('terminal', 'termin'), ('symbols', 'symbol'), ('matches', 'match'), ('classes', 'class'), ('words', 'word'), ('input', 'input'), ('sentence', 'sentenc'), ('consists', 'consist'), ('entirely', 'entir'), ('terminal', 'termin'), ('symbols', 'symbol'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Top-Down', 'Top-Down'), ('Parser', 'Parser'), ('Here', 'Here'), (',', ','), ('parser', 'parser'), ('starts', 'start'), ('S', 'S'), ('symbol', 'symbol'), ('attempts', 'attempt'), ('rewrite', 'rewrite'), ('sequence', 'sequence'), ('terminal', 'terminal'), ('symbols', 'symbol'), ('matches', 'match'), ('classes', 'class'), ('words', 'word'), ('input', 'input'), ('sentence', 'sentence'), ('consists', 'consists'), ('entirely', 'entirely'), ('terminal', 'terminal'), ('symbols', 'symbol'), ('.', '.')]
+
+
+
+============================ Sentence 15 =============================
+
+These are then checked with the input sentence to see if it matched. 
+
+
+>> Tokens are: 
+ ['These', 'checked', 'input', 'sentence', 'see', 'matched', '.']
+
+>> Bigrams are: 
+ [('These', 'checked'), ('checked', 'input'), ('input', 'sentence'), ('sentence', 'see'), ('see', 'matched'), ('matched', '.')]
+
+>> Trigrams are: 
+ [('These', 'checked', 'input'), ('checked', 'input', 'sentence'), ('input', 'sentence', 'see'), ('sentence', 'see', 'matched'), ('see', 'matched', '.')]
+
+>> POS Tags are: 
+ [('These', 'DT'), ('checked', 'VBD'), ('input', 'NN'), ('sentence', 'NN'), ('see', 'NN'), ('matched', 'VBN'), ('.', '.')]
+
+ (S
+  These/DT
+  checked/VBD
+  (NP input/NN sentence/NN see/NN)
+  matched/VBN
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['input sentence see']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('These', 'these'), ('checked', 'check'), ('input', 'input'), ('sentence', 'sentenc'), ('see', 'see'), ('matched', 'match'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('These', 'these'), ('checked', 'check'), ('input', 'input'), ('sentence', 'sentenc'), ('see', 'see'), ('matched', 'match'), ('.', '.')]
+
+>> Lemmatization: 
+ [('These', 'These'), ('checked', 'checked'), ('input', 'input'), ('sentence', 'sentence'), ('see', 'see'), ('matched', 'matched'), ('.', '.')]
+
+
+
+============================ Sentence 16 =============================
+
+If not, the process is started over again with a different set of rules. 
+
+
+>> Tokens are: 
+ ['If', ',', 'process', 'started', 'different', 'set', 'rules', '.']
+
+>> Bigrams are: 
+ [('If', ','), (',', 'process'), ('process', 'started'), ('started', 'different'), ('different', 'set'), ('set', 'rules'), ('rules', '.')]
+
+>> Trigrams are: 
+ [('If', ',', 'process'), (',', 'process', 'started'), ('process', 'started', 'different'), ('started', 'different', 'set'), ('different', 'set', 'rules'), ('set', 'rules', '.')]
+
+>> POS Tags are: 
+ [('If', 'IN'), (',', ','), ('process', 'NN'), ('started', 'VBD'), ('different', 'JJ'), ('set', 'NN'), ('rules', 'NNS'), ('.', '.')]
+
+ (S
+  If/IN
+  ,/,
+  (NP process/NN)
+  started/VBD
+  (NP different/JJ set/NN rules/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['process', 'different set rules']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('If', 'if'), (',', ','), ('process', 'process'), ('started', 'start'), ('different', 'differ'), ('set', 'set'), ('rules', 'rule'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('If', 'if'), (',', ','), ('process', 'process'), ('started', 'start'), ('different', 'differ'), ('set', 'set'), ('rules', 'rule'), ('.', '.')]
+
+>> Lemmatization: 
+ [('If', 'If'), (',', ','), ('process', 'process'), ('started', 'started'), ('different', 'different'), ('set', 'set'), ('rules', 'rule'), ('.', '.')]
+
+
+
+============================ Sentence 17 =============================
+
+This is repeated until a specific rule is found which describes the structure of the sentence. 
+
+
+>> Tokens are: 
+ ['This', 'repeated', 'specific', 'rule', 'found', 'describes', 'structure', 'sentence', '.']
+
+>> Bigrams are: 
+ [('This', 'repeated'), ('repeated', 'specific'), ('specific', 'rule'), ('rule', 'found'), ('found', 'describes'), ('describes', 'structure'), ('structure', 'sentence'), ('sentence', '.')]
+
+>> Trigrams are: 
+ [('This', 'repeated', 'specific'), ('repeated', 'specific', 'rule'), ('specific', 'rule', 'found'), ('rule', 'found', 'describes'), ('found', 'describes', 'structure'), ('describes', 'structure', 'sentence'), ('structure', 'sentence', '.')]
+
+>> POS Tags are: 
+ [('This', 'DT'), ('repeated', 'VBN'), ('specific', 'JJ'), ('rule', 'NN'), ('found', 'VBD'), ('describes', 'RB'), ('structure', 'NN'), ('sentence', 'NN'), ('.', '.')]
+
+ (S
+  This/DT
+  repeated/VBN
+  (NP specific/JJ rule/NN)
+  found/VBD
+  describes/RB
+  (NP structure/NN sentence/NN)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['specific rule', 'structure sentence']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('This', 'thi'), ('repeated', 'repeat'), ('specific', 'specif'), ('rule', 'rule'), ('found', 'found'), ('describes', 'describ'), ('structure', 'structur'), ('sentence', 'sentenc'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('This', 'this'), ('repeated', 'repeat'), ('specific', 'specif'), ('rule', 'rule'), ('found', 'found'), ('describes', 'describ'), ('structure', 'structur'), ('sentence', 'sentenc'), ('.', '.')]
+
+>> Lemmatization: 
+ [('This', 'This'), ('repeated', 'repeated'), ('specific', 'specific'), ('rule', 'rule'), ('found', 'found'), ('describes', 'describes'), ('structure', 'structure'), ('sentence', 'sentence'), ('.', '.')]
+
+
+
+============================ Sentence 18 =============================
+
+Merit − It is simple to implement. 
+
+
+>> Tokens are: 
+ ['Merit', '−', 'It', 'simple', 'implement', '.']
+
+>> Bigrams are: 
+ [('Merit', '−'), ('−', 'It'), ('It', 'simple'), ('simple', 'implement'), ('implement', '.')]
+
+>> Trigrams are: 
+ [('Merit', '−', 'It'), ('−', 'It', 'simple'), ('It', 'simple', 'implement'), ('simple', 'implement', '.')]
+
+>> POS Tags are: 
+ [('Merit', 'NNP'), ('−', 'VBD'), ('It', 'PRP'), ('simple', 'JJ'), ('implement', 'NN'), ('.', '.')]
+
+ (S (NP Merit/NNP) −/VBD It/PRP (NP simple/JJ implement/NN) ./.) 
+
+
+>> Noun Phrases are: 
+ ['Merit', 'simple implement']
+
+>> Named Entities are: 
+ [('PERSON', 'Merit')] 
+
+>> Stemming using Porter Stemmer: 
+ [('Merit', 'merit'), ('−', '−'), ('It', 'it'), ('simple', 'simpl'), ('implement', 'implement'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Merit', 'merit'), ('−', '−'), ('It', 'it'), ('simple', 'simpl'), ('implement', 'implement'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Merit', 'Merit'), ('−', '−'), ('It', 'It'), ('simple', 'simple'), ('implement', 'implement'), ('.', '.')]
+
+
+
+============================ Sentence 19 =============================
+
+Demerits − · It is inefficient, as the search process has to be repeated if an error occurs. 
+
+
+>> Tokens are: 
+ ['Demerits', '−', '·', 'It', 'inefficient', ',', 'search', 'process', 'repeated', 'error', 'occurs', '.']
+
+>> Bigrams are: 
+ [('Demerits', '−'), ('−', '·'), ('·', 'It'), ('It', 'inefficient'), ('inefficient', ','), (',', 'search'), ('search', 'process'), ('process', 'repeated'), ('repeated', 'error'), ('error', 'occurs'), ('occurs', '.')]
+
+>> Trigrams are: 
+ [('Demerits', '−', '·'), ('−', '·', 'It'), ('·', 'It', 'inefficient'), ('It', 'inefficient', ','), ('inefficient', ',', 'search'), (',', 'search', 'process'), ('search', 'process', 'repeated'), ('process', 'repeated', 'error'), ('repeated', 'error', 'occurs'), ('error', 'occurs', '.')]
+
+>> POS Tags are: 
+ [('Demerits', 'NNS'), ('−', 'VBP'), ('·', 'IN'), ('It', 'PRP'), ('inefficient', 'JJ'), (',', ','), ('search', 'JJ'), ('process', 'NN'), ('repeated', 'VBD'), ('error', 'NN'), ('occurs', 'NNS'), ('.', '.')]
+
+ (S
+  (NP Demerits/NNS)
+  −/VBP
+  ·/IN
+  It/PRP
+  inefficient/JJ
+  ,/,
+  (NP search/JJ process/NN)
+  repeated/VBD
+  (NP error/NN occurs/NNS)
+  ./.) 
+
+
+>> Noun Phrases are: 
+ ['Demerits', 'search process', 'error occurs']
+
+>> Named Entities are: 
+ [] 
+
+>> Stemming using Porter Stemmer: 
+ [('Demerits', 'demerit'), ('−', '−'), ('·', '·'), ('It', 'it'), ('inefficient', 'ineffici'), (',', ','), ('search', 'search'), ('process', 'process'), ('repeated', 'repeat'), ('error', 'error'), ('occurs', 'occur'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('Demerits', 'demerit'), ('−', '−'), ('·', '·'), ('It', 'it'), ('inefficient', 'ineffici'), (',', ','), ('search', 'search'), ('process', 'process'), ('repeated', 'repeat'), ('error', 'error'), ('occurs', 'occur'), ('.', '.')]
+
+>> Lemmatization: 
+ [('Demerits', 'Demerits'), ('−', '−'), ('·', '·'), ('It', 'It'), ('inefficient', 'inefficient'), (',', ','), ('search', 'search'), ('process', 'process'), ('repeated', 'repeated'), ('error', 'error'), ('occurs', 'occurs'), ('.', '.')]
+
+
+
+============================ Sentence 20 =============================
+
+· Slow speed of working. 
+
+
+>> Tokens are: 
+ ['·', 'Slow', 'speed', 'working', '.']
+
+>> Bigrams are: 
+ [('·', 'Slow'), ('Slow', 'speed'), ('speed', 'working'), ('working', '.')]
+
+>> Trigrams are: 
+ [('·', 'Slow', 'speed'), ('Slow', 'speed', 'working'), ('speed', 'working', '.')]
+
+>> POS Tags are: 
+ [('·', 'RB'), ('Slow', 'NNP'), ('speed', 'NN'), ('working', 'VBG'), ('.', '.')]
+
+ (S ·/RB (NP Slow/NNP speed/NN) working/VBG ./.) 
+
+
+>> Noun Phrases are: 
+ ['Slow speed']
+
+>> Named Entities are: 
+ [('PERSON', 'Slow')] 
+
+>> Stemming using Porter Stemmer: 
+ [('·', '·'), ('Slow', 'slow'), ('speed', 'speed'), ('working', 'work'), ('.', '.')]
+
+>> Stemming using Snowball Stemmer: 
+ [('·', '·'), ('Slow', 'slow'), ('speed', 'speed'), ('working', 'work'), ('.', '.')]
+
+>> Lemmatization: 
+ [('·', '·'), ('Slow', 'Slow'), ('speed', 'speed'), ('working', 'working'), ('.', '.')]
+

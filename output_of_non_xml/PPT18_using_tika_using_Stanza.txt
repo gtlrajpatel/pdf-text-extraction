@@ -1,0 +1,925 @@
+
+
+========================== Sentence 1 ===========================
+
+ OOPC++ UNIT-1   Prof. Rupesh G. Vaishnav rupesh.vaishnav@darshan.ac.in 94280-37452 Information & Network Security (2170709)	 Darshan Institute of Engineering & Technology UNIT-6 Message Authentication Codes       1  Outline Message Authentication Codes MAC requirements and security MACs based on Hash Functions MACs based on Block Ciphers   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  X.800 and RFC 2828 International Telecommunication Union (ITU) 
+
+Tokens are: 
+>> ['OOPC', '++', 'UNIT', '-1', 'Prof.', 'Rupesh', 'G.', 'Vaishnav', 'rupesh.vaishnav@darshan.ac.in', '94280-37452', 'Information', '&', 'Network', 'Security', '(', '2170709', ')', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', 'UNIT', '-6', 'Message', 'Authentication', 'Codes', '1', 'Outline', 'Message', 'Authentication', 'Codes', 'MAC', 'requirements', 'and', 'security', 'MACs', 'based', 'on', 'Hash', 'Functions', 'MACs', 'based', 'on', 'Block', 'Ciphers', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'X.800', 'and', 'RFC', '2828', 'International', 'Telecommunication', 'Union', '(', 'ITU', ')'] 
+
+ UPOS tags are: 
+>> [('OOPC', 'PROPN'), ('++', 'NUM'), ('UNIT', 'NOUN'), ('-1', 'NOUN'), ('Prof.', 'PROPN'), ('Rupesh', 'PROPN'), ('G.', 'PROPN'), ('Vaishnav', 'PROPN'), ('rupesh.vaishnav@darshan.ac.in', 'X'), ('94280-37452', 'NUM'), ('Information', 'NOUN'), ('&', 'CCONJ'), ('Network', 'PROPN'), ('Security', 'PROPN'), ('(', 'PUNCT'), ('2170709', 'NUM'), (')', 'PUNCT'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('UNIT', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'PROPN'), ('1', 'NUM'), ('Outline', 'NOUN'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('MAC', 'NOUN'), ('requirements', 'NOUN'), ('and', 'CCONJ'), ('security', 'NOUN'), ('MACs', 'NOUN'), ('based', 'VERB'), ('on', 'ADP'), ('Hash', 'PROPN'), ('Functions', 'PROPN'), ('MACs', 'NOUN'), ('based', 'VERB'), ('on', 'ADP'), ('Block', 'PROPN'), ('Ciphers', 'PROPN'), ('Unit', 'PROPN'), ('-6', 'NUM'), ('Message', 'PROPN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'PROPN'), ('&', 'CCONJ'), ('Technology', 'PROPN'), ('‹#›', 'PROPN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'PROPN'), ('X.800', 'PROPN'), ('and', 'CCONJ'), ('RFC', 'PROPN'), ('2828', 'NUM'), ('International', 'ADJ'), ('Telecommunication', 'ADJ'), ('Union', 'PROPN'), ('(', 'PUNCT'), ('ITU', 'PROPN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('OOPC', 'NNP'), ('++', 'CD'), ('UNIT', 'NN'), ('-1', 'NN'), ('Prof.', 'NNP'), ('Rupesh', 'NNP'), ('G.', 'NNP'), ('Vaishnav', 'NNP'), ('rupesh.vaishnav@darshan.ac.in', 'ADD'), ('94280-37452', 'CD'), ('Information', 'NN'), ('&', 'CC'), ('Network', 'NNP'), ('Security', 'NNP'), ('(', '-LRB-'), ('2170709', 'CD'), (')', '-RRB-'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('UNIT', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNPS'), ('1', 'CD'), ('Outline', 'NN'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('MAC', 'NN'), ('requirements', 'NNS'), ('and', 'CC'), ('security', 'NN'), ('MACs', 'NNS'), ('based', 'VBN'), ('on', 'IN'), ('Hash', 'NNP'), ('Functions', 'NNPS'), ('MACs', 'NNS'), ('based', 'VBN'), ('on', 'IN'), ('Block', 'NNP'), ('Ciphers', 'NNPS'), ('Unit', 'NNP'), ('-6', 'CD'), ('Message', 'NNP'), ('Authentication', 'NNP'), ('Codes', 'NNPS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NNP'), ('&', 'CC'), ('Technology', 'NNP'), ('‹#›', 'NNP'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NNP'), ('X.800', 'NNP'), ('and', 'CC'), ('RFC', 'NNP'), ('2828', 'CD'), ('International', 'NNP'), ('Telecommunication', 'NNP'), ('Union', 'NNP'), ('(', '-LRB-'), ('ITU', 'NNP'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('OOPC', 'OOPC'), ('++', '++'), ('UNIT', 'unit'), ('-1', '-1'), ('Prof.', 'Prof.'), ('Rupesh', 'Rupesh'), ('G.', 'G.'), ('Vaishnav', 'Vaishnav'), ('rupesh.vaishnav@darshan.ac.in', 'rupesh.vaishnav@darshan.ac.in'), ('94280-37452', '94280-37452'), ('Information', 'information'), ('&', '&'), ('Network', 'Network'), ('Security', 'Security'), ('(', '('), ('2170709', '2170709'), (')', ')'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('UNIT', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'Code'), ('1', '1'), ('Outline', 'outline'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('MAC', 'mac'), ('requirements', 'requirement'), ('and', 'and'), ('security', 'security'), ('MACs', 'mac'), ('based', 'base'), ('on', 'on'), ('Hash', 'hash'), ('Functions', 'Function'), ('MACs', 'mac'), ('based', 'base'), ('on', 'on'), ('Block', 'Block'), ('Ciphers', 'Ciphers'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'Message'), ('Authentication', 'Authentication'), ('Codes', 'Code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'Technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('X.800', 'X.800'), ('and', 'and'), ('RFC', 'RFC'), ('2828', '2828'), ('International', 'International'), ('Telecommunication', 'Telecommunication'), ('Union', 'Union'), ('(', '('), ('ITU', 'ITU'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('OOPC', 'Prof.'), 'compound'), (('++', 'UNIT'), 'nummod'), (('UNIT', '-1'), 'compound'), (('-1', 'Prof.'), 'compound'), (('Prof.', 'Subject'), 'nsubj'), (('Rupesh', 'Prof.'), 'flat'), (('G.', 'Rupesh'), 'flat'), (('Vaishnav', 'OOPC'), 'appos'), (('rupesh.vaishnav@darshan.ac.in', 'OOPC'), 'list'), (('94280-37452', 'OOPC'), 'list'), (('Information', 'Institute'), 'compound'), (('&', 'Security'), 'cc'), (('Network', 'Security'), 'compound'), (('Security', 'Information'), 'conj'), (('(', 'Institute'), 'punct'), (('2170709', 'Security'), 'appos'), ((')', 'Security'), 'punct'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'OOPC'), 'appos'), (('of', 'UNIT'), 'case'), (('Engineering', 'UNIT'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('UNIT', 'Institute'), 'nmod'), (('-6', 'Codes'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Institute'), 'appos'), (('1', 'Codes'), 'nummod'), (('Outline', 'Codes'), 'compound'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'requirements'), 'compound'), (('MAC', 'requirements'), 'compound'), (('requirements', 'Codes'), 'conj'), (('and', 'MACs'), 'cc'), (('security', 'MACs'), 'compound'), (('MACs', 'requirements'), 'conj'), (('based', 'requirements'), 'acl'), (('on', 'MACs'), 'case'), (('Hash', 'Functions'), 'compound'), (('Functions', 'MACs'), 'compound'), (('MACs', 'based'), 'obl'), (('based', 'MACs'), 'acl'), (('on', 'Unit'), 'case'), (('Block', 'Unit'), 'compound'), (('Ciphers', 'Unit'), 'compound'), (('Unit', 'based'), 'obl'), (('-6', 'Codes'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'conj'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'X.800'), 'conj'), (('is', 'X.800'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'X.800'), 'amod'), (('Subject', 'X.800'), 'compound'), (('X.800', 'root'), 'root'), (('and', 'Union'), 'cc'), (('RFC', 'X.800'), 'conj'), (('2828', 'Union'), 'nummod'), (('International', 'Union'), 'amod'), (('Telecommunication', 'Union'), 'amod'), (('Union', 'X.800'), 'conj'), (('(', 'ITU'), 'punct'), (('ITU', 'Union'), 'appos'), ((')', 'ITU'), 'punct')]
+
+ Named Entities are: 
+>> [('94280-37452 Information & Network Security', 'ORG'), ('2170709', 'CARDINAL'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('1', 'CARDINAL'), ('Hash Functions MACs', 'PRODUCT'), ('Block Ciphers   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('RFC 2828 International Telecommunication Union', 'ORG'), ('ITU', 'ORG')]
+
+========================== Sentence 2 ===========================
+
+ 2  Message Authentication Message authentication is a procedure to verify that received messages come from the genuine source and have not been altered. 
+
+Tokens are: 
+>> ['2', 'Message', 'Authentication', 'Message', 'authentication', 'is', 'a', 'procedure', 'to', 'verify', 'that', 'received', 'messages', 'come', 'from', 'the', 'genuine', 'source', 'and', 'have', 'not', 'been', 'altered', '.'] 
+
+ UPOS tags are: 
+>> [('2', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Message', 'NOUN'), ('authentication', 'NOUN'), ('is', 'AUX'), ('a', 'DET'), ('procedure', 'NOUN'), ('to', 'PART'), ('verify', 'VERB'), ('that', 'PRON'), ('received', 'VERB'), ('messages', 'NOUN'), ('come', 'VERB'), ('from', 'ADP'), ('the', 'DET'), ('genuine', 'ADJ'), ('source', 'NOUN'), ('and', 'CCONJ'), ('have', 'AUX'), ('not', 'PART'), ('been', 'AUX'), ('altered', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('2', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Message', 'NN'), ('authentication', 'NN'), ('is', 'VBZ'), ('a', 'DT'), ('procedure', 'NN'), ('to', 'TO'), ('verify', 'VB'), ('that', 'WDT'), ('received', 'VBN'), ('messages', 'NNS'), ('come', 'VBP'), ('from', 'IN'), ('the', 'DT'), ('genuine', 'JJ'), ('source', 'NN'), ('and', 'CC'), ('have', 'VBP'), ('not', 'RB'), ('been', 'VBN'), ('altered', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('2', '2'), ('Message', 'message'), ('Authentication', 'authentication'), ('Message', 'message'), ('authentication', 'authentication'), ('is', 'be'), ('a', 'a'), ('procedure', 'procedure'), ('to', 'to'), ('verify', 'verify'), ('that', 'that'), ('received', 'receive'), ('messages', 'message'), ('come', 'come'), ('from', 'from'), ('the', 'the'), ('genuine', 'genuine'), ('source', 'source'), ('and', 'and'), ('have', 'have'), ('not', 'not'), ('been', 'be'), ('altered', 'alter'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('2', 'Message'), 'nummod'), (('Message', 'Message'), 'compound'), (('Authentication', 'Message'), 'compound'), (('Message', 'authentication'), 'compound'), (('authentication', 'procedure'), 'nsubj'), (('is', 'procedure'), 'cop'), (('a', 'procedure'), 'det'), (('procedure', 'root'), 'root'), (('to', 'verify'), 'mark'), (('verify', 'procedure'), 'acl'), (('that', 'received'), 'nsubj'), (('received', 'verify'), 'ccomp'), (('messages', 'come'), 'nsubj'), (('come', 'verify'), 'ccomp'), (('from', 'source'), 'case'), (('the', 'source'), 'det'), (('genuine', 'source'), 'amod'), (('source', 'come'), 'obl'), (('and', 'altered'), 'cc'), (('have', 'altered'), 'aux'), (('not', 'altered'), 'advmod'), (('been', 'altered'), 'aux:pass'), (('altered', 'come'), 'conj'), (('.', 'procedure'), 'punct')]
+
+ Named Entities are: 
+>> [('2', 'CARDINAL')]
+
+========================== Sentence 3 ===========================
+
+ Message authentication may also verify sequencing and timeliness. 
+
+Tokens are: 
+>> ['Message', 'authentication', 'may', 'also', 'verify', 'sequencing', 'and', 'timeliness', '.'] 
+
+ UPOS tags are: 
+>> [('Message', 'NOUN'), ('authentication', 'NOUN'), ('may', 'AUX'), ('also', 'ADV'), ('verify', 'VERB'), ('sequencing', 'NOUN'), ('and', 'CCONJ'), ('timeliness', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Message', 'NN'), ('authentication', 'NN'), ('may', 'MD'), ('also', 'RB'), ('verify', 'VB'), ('sequencing', 'NN'), ('and', 'CC'), ('timeliness', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Message', 'message'), ('authentication', 'authentication'), ('may', 'may'), ('also', 'also'), ('verify', 'verify'), ('sequencing', 'sequencing'), ('and', 'and'), ('timeliness', 'timeliness'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Message', 'authentication'), 'compound'), (('authentication', 'verify'), 'nsubj'), (('may', 'verify'), 'aux'), (('also', 'verify'), 'advmod'), (('verify', 'root'), 'root'), (('sequencing', 'verify'), 'obj'), (('and', 'timeliness'), 'cc'), (('timeliness', 'sequencing'), 'conj'), (('.', 'verify'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 4 ===========================
+
+ Message authentication is a mechanism or service used to verify the integrity of  a message. 
+
+Tokens are: 
+>> ['Message', 'authentication', 'is', 'a', 'mechanism', 'or', 'service', 'used', 'to', 'verify', 'the', 'integrity', 'of', 'a', 'message', '.'] 
+
+ UPOS tags are: 
+>> [('Message', 'NOUN'), ('authentication', 'NOUN'), ('is', 'AUX'), ('a', 'DET'), ('mechanism', 'NOUN'), ('or', 'CCONJ'), ('service', 'NOUN'), ('used', 'VERB'), ('to', 'PART'), ('verify', 'VERB'), ('the', 'DET'), ('integrity', 'NOUN'), ('of', 'ADP'), ('a', 'DET'), ('message', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Message', 'NN'), ('authentication', 'NN'), ('is', 'VBZ'), ('a', 'DT'), ('mechanism', 'NN'), ('or', 'CC'), ('service', 'NN'), ('used', 'VBN'), ('to', 'TO'), ('verify', 'VB'), ('the', 'DT'), ('integrity', 'NN'), ('of', 'IN'), ('a', 'DT'), ('message', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Message', 'message'), ('authentication', 'authentication'), ('is', 'be'), ('a', 'a'), ('mechanism', 'mechanism'), ('or', 'or'), ('service', 'service'), ('used', 'use'), ('to', 'to'), ('verify', 'verify'), ('the', 'the'), ('integrity', 'integrity'), ('of', 'of'), ('a', 'a'), ('message', 'message'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Message', 'authentication'), 'compound'), (('authentication', 'mechanism'), 'nsubj'), (('is', 'mechanism'), 'cop'), (('a', 'mechanism'), 'det'), (('mechanism', 'root'), 'root'), (('or', 'service'), 'cc'), (('service', 'mechanism'), 'conj'), (('used', 'service'), 'acl'), (('to', 'verify'), 'mark'), (('verify', 'used'), 'xcomp'), (('the', 'integrity'), 'det'), (('integrity', 'verify'), 'obj'), (('of', 'message'), 'case'), (('a', 'message'), 'det'), (('message', 'integrity'), 'nmod'), (('.', 'mechanism'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 5 ===========================
+
+ Message authentication assures that data received are exactly as sent (i.e.---, contain no modification, insertion, deletion, or replay). 
+
+Tokens are: 
+>> ['Message', 'authentication', 'assures', 'that', 'data', 'received', 'are', 'exactly', 'as', 'sent', '(', 'i.e.', '---', ',', 'contain', 'no', 'modification', ',', 'insertion', ',', 'deletion', ',', 'or', 'replay', ')', '.'] 
+
+ UPOS tags are: 
+>> [('Message', 'NOUN'), ('authentication', 'NOUN'), ('assures', 'VERB'), ('that', 'SCONJ'), ('data', 'NOUN'), ('received', 'VERB'), ('are', 'AUX'), ('exactly', 'ADV'), ('as', 'SCONJ'), ('sent', 'VERB'), ('(', 'PUNCT'), ('i.e.', 'ADV'), ('---', 'PUNCT'), (',', 'PUNCT'), ('contain', 'VERB'), ('no', 'DET'), ('modification', 'NOUN'), (',', 'PUNCT'), ('insertion', 'NOUN'), (',', 'PUNCT'), ('deletion', 'NOUN'), (',', 'PUNCT'), ('or', 'CCONJ'), ('replay', 'NOUN'), (')', 'PUNCT'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Message', 'NN'), ('authentication', 'NN'), ('assures', 'VBZ'), ('that', 'IN'), ('data', 'NNS'), ('received', 'VBN'), ('are', 'VBP'), ('exactly', 'RB'), ('as', 'IN'), ('sent', 'VBN'), ('(', '-LRB-'), ('i.e.', 'FW'), ('---', ','), (',', ','), ('contain', 'VBP'), ('no', 'DT'), ('modification', 'NN'), (',', ','), ('insertion', 'NN'), (',', ','), ('deletion', 'NN'), (',', ','), ('or', 'CC'), ('replay', 'NN'), (')', '-RRB-'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Message', 'message'), ('authentication', 'authentication'), ('assures', 'assure'), ('that', 'that'), ('data', 'datum'), ('received', 'receive'), ('are', 'be'), ('exactly', 'exactly'), ('as', 'as'), ('sent', 'send'), ('(', '('), ('i.e.', 'i.e.'), ('---', '---'), (',', ','), ('contain', 'contain'), ('no', 'no'), ('modification', 'modification'), (',', ','), ('insertion', 'insertion'), (',', ','), ('deletion', 'deletion'), (',', ','), ('or', 'or'), ('replay', 'replay'), (')', ')'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Message', 'authentication'), 'compound'), (('authentication', 'assures'), 'nsubj'), (('assures', 'root'), 'root'), (('that', 'sent'), 'mark'), (('data', 'sent'), 'nsubj:pass'), (('received', 'data'), 'acl'), (('are', 'sent'), 'aux:pass'), (('exactly', 'sent'), 'advmod'), (('as', 'sent'), 'mark'), (('sent', 'assures'), 'ccomp'), (('(', 'contain'), 'punct'), (('i.e.', 'contain'), 'advmod'), (('---', 'i.e.'), 'punct'), ((',', 'contain'), 'punct'), (('contain', 'assures'), 'ccomp'), (('no', 'modification'), 'det'), (('modification', 'contain'), 'obj'), ((',', 'insertion'), 'punct'), (('insertion', 'modification'), 'conj'), ((',', 'deletion'), 'punct'), (('deletion', 'modification'), 'conj'), ((',', 'replay'), 'punct'), (('or', 'replay'), 'cc'), (('replay', 'modification'), 'conj'), ((')', 'contain'), 'punct'), (('.', 'assures'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 6 ===========================
+
+ Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication Requirements Disclosure: Release of message contents Traffic analysis: Discovery of the pattern of traffic between parties Masquerade: Insertion of messages into the network from a fraudulent source Content modification: Changes to the contents of a message Sequence modification: 
+
+Tokens are: 
+>> ['Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Message', 'Authentication', 'Requirements', 'Disclosure', ':', 'Release', 'of', 'message', 'contents', 'Traffic', 'analysis', ':', 'Discovery', 'of', 'the', 'pattern', 'of', 'traffic', 'between', 'parties', 'Masquerade', ':', 'Insertion', 'of', 'messages', 'into', 'the', 'network', 'from', 'a', 'fraudulent', 'source', 'Content', 'modification', ':', 'Changes', 'to', 'the', 'contents', 'of', 'a', 'message', 'Sequence', 'modification', ':'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Requirements', 'NOUN'), ('Disclosure', 'NOUN'), (':', 'PUNCT'), ('Release', 'NOUN'), ('of', 'ADP'), ('message', 'NOUN'), ('contents', 'NOUN'), ('Traffic', 'NOUN'), ('analysis', 'NOUN'), (':', 'PUNCT'), ('Discovery', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('pattern', 'NOUN'), ('of', 'ADP'), ('traffic', 'NOUN'), ('between', 'ADP'), ('parties', 'NOUN'), ('Masquerade', 'NOUN'), (':', 'PUNCT'), ('Insertion', 'NOUN'), ('of', 'ADP'), ('messages', 'NOUN'), ('into', 'ADP'), ('the', 'DET'), ('network', 'NOUN'), ('from', 'ADP'), ('a', 'DET'), ('fraudulent', 'ADJ'), ('source', 'NOUN'), ('Content', 'NOUN'), ('modification', 'NOUN'), (':', 'PUNCT'), ('Changes', 'NOUN'), ('to', 'ADP'), ('the', 'DET'), ('contents', 'NOUN'), ('of', 'ADP'), ('a', 'DET'), ('message', 'NOUN'), ('Sequence', 'NOUN'), ('modification', 'NOUN'), (':', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Message', 'NN'), ('Authentication', 'NN'), ('Requirements', 'NNS'), ('Disclosure', 'NN'), (':', ':'), ('Release', 'NN'), ('of', 'IN'), ('message', 'NN'), ('contents', 'NNS'), ('Traffic', 'NN'), ('analysis', 'NN'), (':', ':'), ('Discovery', 'NN'), ('of', 'IN'), ('the', 'DT'), ('pattern', 'NN'), ('of', 'IN'), ('traffic', 'NN'), ('between', 'IN'), ('parties', 'NNS'), ('Masquerade', 'NN'), (':', ':'), ('Insertion', 'NN'), ('of', 'IN'), ('messages', 'NNS'), ('into', 'IN'), ('the', 'DT'), ('network', 'NN'), ('from', 'IN'), ('a', 'DT'), ('fraudulent', 'JJ'), ('source', 'NN'), ('Content', 'NN'), ('modification', 'NN'), (':', ':'), ('Changes', 'NNS'), ('to', 'IN'), ('the', 'DT'), ('contents', 'NNS'), ('of', 'IN'), ('a', 'DT'), ('message', 'NN'), ('Sequence', 'NN'), ('modification', 'NN'), (':', ':')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Message', 'message'), ('Authentication', 'authentication'), ('Requirements', 'requirement'), ('Disclosure', 'disclosure'), (':', ':'), ('Release', 'release'), ('of', 'of'), ('message', 'message'), ('contents', 'content'), ('Traffic', 'traffic'), ('analysis', 'analysis'), (':', ':'), ('Discovery', 'Discovery'), ('of', 'of'), ('the', 'the'), ('pattern', 'pattern'), ('of', 'of'), ('traffic', 'traffic'), ('between', 'between'), ('parties', 'party'), ('Masquerade', 'masquerade'), (':', ':'), ('Insertion', 'insertion'), ('of', 'of'), ('messages', 'message'), ('into', 'into'), ('the', 'the'), ('network', 'network'), ('from', 'from'), ('a', 'a'), ('fraudulent', 'fraudulent'), ('source', 'source'), ('Content', 'Content'), ('modification', 'modification'), (':', ':'), ('Changes', 'change'), ('to', 'to'), ('the', 'the'), ('contents', 'content'), ('of', 'of'), ('a', 'a'), ('message', 'message'), ('Sequence', 'sequence'), ('modification', 'modification'), (':', ':')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Codes'), 'compound'), (('-6', 'Unit'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Disclosure'), 'nsubj'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Codes'), 'appos'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Disclosure'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Disclosure'), 'amod'), (('Subject', 'Disclosure'), 'compound'), (('Message', 'Disclosure'), 'compound'), (('Authentication', 'Requirements'), 'compound'), (('Requirements', 'Disclosure'), 'compound'), (('Disclosure', 'root'), 'root'), ((':', 'Disclosure'), 'punct'), (('Release', 'Disclosure'), 'appos'), (('of', 'analysis'), 'case'), (('message', 'contents'), 'compound'), (('contents', 'analysis'), 'compound'), (('Traffic', 'analysis'), 'compound'), (('analysis', 'Release'), 'nmod'), ((':', 'Discovery'), 'punct'), (('Discovery', 'analysis'), 'appos'), (('of', 'pattern'), 'case'), (('the', 'pattern'), 'det'), (('pattern', 'Discovery'), 'nmod'), (('of', 'traffic'), 'case'), (('traffic', 'pattern'), 'nmod'), (('between', 'Masquerade'), 'case'), (('parties', 'traffic'), 'nmod'), (('Masquerade', 'traffic'), 'nmod'), ((':', 'Insertion'), 'punct'), (('Insertion', 'pattern'), 'appos'), (('of', 'messages'), 'case'), (('messages', 'Insertion'), 'nmod'), (('into', 'network'), 'case'), (('the', 'network'), 'det'), (('network', 'Insertion'), 'nmod'), (('from', 'modification'), 'case'), (('a', 'modification'), 'det'), (('fraudulent', 'modification'), 'amod'), (('source', 'Content'), 'compound'), (('Content', 'modification'), 'compound'), (('modification', 'network'), 'nmod'), ((':', 'Changes'), 'punct'), (('Changes', 'modification'), 'appos'), (('to', 'contents'), 'case'), (('the', 'contents'), 'det'), (('contents', 'Changes'), 'nmod'), (('of', 'modification'), 'case'), (('a', 'modification'), 'det'), (('message', 'contents'), 'nmod'), (('Sequence', 'modification'), 'compound'), (('modification', 'contents'), 'nmod'), ((':', 'Disclosure'), 'punct')]
+
+ Named Entities are: 
+>> [('INS', 'ORG')]
+
+========================== Sentence 7 ===========================
+
+ Any modification to a sequence of messages between parties Timing modification: Delay or replay of messages Source repudiation: Denial of transmission of message by source Destination repudiation: Denial of receipt of message by destination  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication Requirements Disclosure Traffic analysis Masquerade Content modification Sequence modification Timing modification Source repudiation Destination repudiation Requires Message Confidentiality Requires Message Authentication Requires Digital Signature  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject     Message Authentication Code 
+
+Tokens are: 
+>> ['Any', 'modification', 'to', 'a', 'sequence', 'of', 'messages', 'between', 'parties', 'Timing', 'modification', ':', 'Delay', 'or', 'replay', 'of', 'messages', 'Source', 'repudiation', ':', 'Denial', 'of', 'transmission', 'of', 'message', 'by', 'source', 'Destination', 'repudiation', ':', 'Denial', 'of', 'receipt', 'of', 'message', 'by', 'destination', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Message', 'Authentication', 'Requirements', 'Disclosure', 'Traffic', 'analysis', 'Masquerade', 'Content', 'modification', 'Sequence', 'modification', 'Timing', 'modification', 'Source', 'repudiation', 'Destination', 'repudiation', 'Requires', 'Message', 'Confidentiality', 'Requires', 'Message', 'Authentication', 'Requires', 'Digital', 'Signature', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Message', 'Authentication', 'Code'] 
+
+ UPOS tags are: 
+>> [('Any', 'DET'), ('modification', 'NOUN'), ('to', 'ADP'), ('a', 'DET'), ('sequence', 'NOUN'), ('of', 'ADP'), ('messages', 'NOUN'), ('between', 'ADP'), ('parties', 'NOUN'), ('Timing', 'NOUN'), ('modification', 'NOUN'), (':', 'PUNCT'), ('Delay', 'NOUN'), ('or', 'CCONJ'), ('replay', 'NOUN'), ('of', 'ADP'), ('messages', 'NOUN'), ('Source', 'NOUN'), ('repudiation', 'NOUN'), (':', 'PUNCT'), ('Denial', 'NOUN'), ('of', 'ADP'), ('transmission', 'NOUN'), ('of', 'ADP'), ('message', 'NOUN'), ('by', 'ADP'), ('source', 'NOUN'), ('Destination', 'NOUN'), ('repudiation', 'NOUN'), (':', 'PUNCT'), ('Denial', 'NOUN'), ('of', 'ADP'), ('receipt', 'NOUN'), ('of', 'ADP'), ('message', 'NOUN'), ('by', 'ADP'), ('destination', 'NOUN'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Requirements', 'NOUN'), ('Disclosure', 'NOUN'), ('Traffic', 'NOUN'), ('analysis', 'NOUN'), ('Masquerade', 'NOUN'), ('Content', 'NOUN'), ('modification', 'NOUN'), ('Sequence', 'NOUN'), ('modification', 'NOUN'), ('Timing', 'NOUN'), ('modification', 'NOUN'), ('Source', 'NOUN'), ('repudiation', 'NOUN'), ('Destination', 'NOUN'), ('repudiation', 'NOUN'), ('Requires', 'VERB'), ('Message', 'NOUN'), ('Confidentiality', 'NOUN'), ('Requires', 'NOUN'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Requires', 'VERB'), ('Digital', 'ADJ'), ('Signature', 'NOUN'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'NOUN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Code', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('Any', 'DT'), ('modification', 'NN'), ('to', 'IN'), ('a', 'DT'), ('sequence', 'NN'), ('of', 'IN'), ('messages', 'NNS'), ('between', 'IN'), ('parties', 'NNS'), ('Timing', 'NN'), ('modification', 'NN'), (':', ':'), ('Delay', 'NN'), ('or', 'CC'), ('replay', 'NN'), ('of', 'IN'), ('messages', 'NNS'), ('Source', 'NN'), ('repudiation', 'NN'), (':', ':'), ('Denial', 'NN'), ('of', 'IN'), ('transmission', 'NN'), ('of', 'IN'), ('message', 'NN'), ('by', 'IN'), ('source', 'NN'), ('Destination', 'NN'), ('repudiation', 'NN'), (':', ':'), ('Denial', 'NN'), ('of', 'IN'), ('receipt', 'NN'), ('of', 'IN'), ('message', 'NN'), ('by', 'IN'), ('destination', 'NN'), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Message', 'NN'), ('Authentication', 'NN'), ('Requirements', 'NNS'), ('Disclosure', 'NN'), ('Traffic', 'NN'), ('analysis', 'NN'), ('Masquerade', 'NN'), ('Content', 'NN'), ('modification', 'NN'), ('Sequence', 'NN'), ('modification', 'NN'), ('Timing', 'NN'), ('modification', 'NN'), ('Source', 'NN'), ('repudiation', 'NN'), ('Destination', 'NN'), ('repudiation', 'NN'), ('Requires', 'VBZ'), ('Message', 'NN'), ('Confidentiality', 'NN'), ('Requires', 'NNS'), ('Message', 'NN'), ('Authentication', 'NN'), ('Requires', 'VBZ'), ('Digital', 'JJ'), ('Signature', 'NN'), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NN'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Message', 'NN'), ('Authentication', 'NN'), ('Code', 'NN')] 
+
+ Lemmas are: 
+>> [('Any', 'any'), ('modification', 'modification'), ('to', 'to'), ('a', 'a'), ('sequence', 'sequence'), ('of', 'of'), ('messages', 'message'), ('between', 'between'), ('parties', 'party'), ('Timing', 'timing'), ('modification', 'modification'), (':', ':'), ('Delay', 'delay'), ('or', 'or'), ('replay', 'replay'), ('of', 'of'), ('messages', 'message'), ('Source', 'source'), ('repudiation', 'repudiation'), (':', ':'), ('Denial', 'denial'), ('of', 'of'), ('transmission', 'transmission'), ('of', 'of'), ('message', 'message'), ('by', 'by'), ('source', 'source'), ('Destination', 'destination'), ('repudiation', 'repudiation'), (':', ':'), ('Denial', 'denial'), ('of', 'of'), ('receipt', 'receipt'), ('of', 'of'), ('message', 'message'), ('by', 'by'), ('destination', 'destination'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Message', 'message'), ('Authentication', 'authentication'), ('Requirements', 'requirement'), ('Disclosure', 'disclosure'), ('Traffic', 'traffic'), ('analysis', 'analysis'), ('Masquerade', 'masquerade'), ('Content', 'Content'), ('modification', 'modification'), ('Sequence', 'sequence'), ('modification', 'modification'), ('Timing', 'timing'), ('modification', 'modification'), ('Source', 'source'), ('repudiation', 'repudiation'), ('Destination', 'destination'), ('repudiation', 'repudiation'), ('Requires', 'require'), ('Message', 'message'), ('Confidentiality', 'confidentiality'), ('Requires', 'requiry'), ('Message', 'message'), ('Authentication', 'authentication'), ('Requires', 'require'), ('Digital', 'digital'), ('Signature', 'signature'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Message', 'message'), ('Authentication', 'authentication'), ('Code', 'code')] 
+
+ Dependency tags are: 
+>> [(('Any', 'modification'), 'det'), (('modification', 'root'), 'root'), (('to', 'sequence'), 'case'), (('a', 'sequence'), 'det'), (('sequence', 'modification'), 'nmod'), (('of', 'messages'), 'case'), (('messages', 'sequence'), 'nmod'), (('between', 'modification'), 'case'), (('parties', 'modification'), 'compound'), (('Timing', 'modification'), 'compound'), (('modification', 'messages'), 'nmod'), ((':', 'Delay'), 'punct'), (('Delay', 'modification'), 'appos'), (('or', 'replay'), 'cc'), (('replay', 'Delay'), 'conj'), (('of', 'repudiation'), 'case'), (('messages', 'repudiation'), 'compound'), (('Source', 'repudiation'), 'compound'), (('repudiation', 'Delay'), 'nmod'), ((':', 'Denial'), 'punct'), (('Denial', 'Delay'), 'conj'), (('of', 'transmission'), 'case'), (('transmission', 'Denial'), 'nmod'), (('of', 'message'), 'case'), (('message', 'transmission'), 'nmod'), (('by', 'repudiation'), 'case'), (('source', 'repudiation'), 'compound'), (('Destination', 'repudiation'), 'compound'), (('repudiation', 'Denial'), 'nmod'), ((':', 'Denial'), 'punct'), (('Denial', 'Denial'), 'parataxis'), (('of', 'receipt'), 'case'), (('receipt', 'Denial'), 'nmod'), (('of', 'message'), 'case'), (('message', 'receipt'), 'nmod'), (('by', 'Unit'), 'case'), (('destination', 'Unit'), 'compound'), (('Unit', 'Codes'), 'compound'), (('-6', 'Codes'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Denial'), 'nmod'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Codes'), 'appos'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Requirements'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Requirements'), 'amod'), (('Subject', 'Requirements'), 'compound'), (('Message', 'Requirements'), 'compound'), (('Authentication', 'Requirements'), 'compound'), (('Requirements', 'INS'), 'compound'), (('Disclosure', 'analysis'), 'compound'), (('Traffic', 'analysis'), 'compound'), (('analysis', 'Requirements'), 'compound'), (('Masquerade', 'modification'), 'compound'), (('Content', 'modification'), 'compound'), (('modification', 'Requirements'), 'conj'), (('Sequence', 'modification'), 'compound'), (('modification', 'modification'), 'compound'), (('Timing', 'modification'), 'compound'), (('modification', 'repudiation'), 'compound'), (('Source', 'repudiation'), 'compound'), (('repudiation', 'repudiation'), 'compound'), (('Destination', 'repudiation'), 'compound'), (('repudiation', 'Requires'), 'nsubj'), (('Requires', 'modification'), 'parataxis'), (('Message', 'Requires'), 'compound'), (('Confidentiality', 'Requires'), 'compound'), (('Requires', 'Requires'), 'obj'), (('Message', 'Requires'), 'obj'), (('Authentication', 'Requires'), 'nsubj'), (('Requires', 'Requires'), 'conj'), (('Digital', 'Unit'), 'amod'), (('Signature', 'Unit'), 'compound'), (('Unit', 'Codes'), 'compound'), (('-6', 'Codes'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Requires'), 'obj'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Codes'), 'appos'), (('of', 'INS'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Code'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Code'), 'amod'), (('Subject', 'Code'), 'compound'), (('Message', 'Code'), 'compound'), (('Authentication', 'Code'), 'compound'), (('Code', 'INS'), 'acl:relcl')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 8 ===========================
+
+ An alternative authentication technique involves the use of a secret key to generate a small fixed-size block of data, known as a cryptographic checksum or MAC MAC is appended to the message. 
+
+Tokens are: 
+>> ['An', 'alternative', 'authentication', 'technique', 'involves', 'the', 'use', 'of', 'a', 'secret', 'key', 'to', 'generate', 'a', 'small', 'fixed', '-', 'size', 'block', 'of', 'data', ',', 'known', 'as', 'a', 'cryptographic', 'checksum', 'or', 'MAC', 'MAC', 'is', 'appended', 'to', 'the', 'message', '.'] 
+
+ UPOS tags are: 
+>> [('An', 'DET'), ('alternative', 'ADJ'), ('authentication', 'NOUN'), ('technique', 'NOUN'), ('involves', 'VERB'), ('the', 'DET'), ('use', 'NOUN'), ('of', 'ADP'), ('a', 'DET'), ('secret', 'ADJ'), ('key', 'NOUN'), ('to', 'PART'), ('generate', 'VERB'), ('a', 'DET'), ('small', 'ADJ'), ('fixed', 'VERB'), ('-', 'PUNCT'), ('size', 'NOUN'), ('block', 'NOUN'), ('of', 'ADP'), ('data', 'NOUN'), (',', 'PUNCT'), ('known', 'VERB'), ('as', 'ADP'), ('a', 'DET'), ('cryptographic', 'ADJ'), ('checksum', 'NOUN'), ('or', 'CCONJ'), ('MAC', 'PROPN'), ('MAC', 'PROPN'), ('is', 'AUX'), ('appended', 'VERB'), ('to', 'ADP'), ('the', 'DET'), ('message', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('An', 'DT'), ('alternative', 'JJ'), ('authentication', 'NN'), ('technique', 'NN'), ('involves', 'VBZ'), ('the', 'DT'), ('use', 'NN'), ('of', 'IN'), ('a', 'DT'), ('secret', 'JJ'), ('key', 'NN'), ('to', 'TO'), ('generate', 'VB'), ('a', 'DT'), ('small', 'JJ'), ('fixed', 'VBN'), ('-', 'HYPH'), ('size', 'NN'), ('block', 'NN'), ('of', 'IN'), ('data', 'NNS'), (',', ','), ('known', 'VBN'), ('as', 'IN'), ('a', 'DT'), ('cryptographic', 'JJ'), ('checksum', 'NN'), ('or', 'CC'), ('MAC', 'NNP'), ('MAC', 'NNP'), ('is', 'VBZ'), ('appended', 'VBN'), ('to', 'IN'), ('the', 'DT'), ('message', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('An', 'a'), ('alternative', 'alternative'), ('authentication', 'authentication'), ('technique', 'technique'), ('involves', 'involve'), ('the', 'the'), ('use', 'use'), ('of', 'of'), ('a', 'a'), ('secret', 'secret'), ('key', 'key'), ('to', 'to'), ('generate', 'generate'), ('a', 'a'), ('small', 'small'), ('fixed', 'fix'), ('-', '-'), ('size', 'size'), ('block', 'block'), ('of', 'of'), ('data', 'datum'), (',', ','), ('known', 'know'), ('as', 'as'), ('a', 'a'), ('cryptographic', 'cryptographic'), ('checksum', 'checksum'), ('or', 'or'), ('MAC', 'MAC'), ('MAC', 'MAC'), ('is', 'be'), ('appended', 'append'), ('to', 'to'), ('the', 'the'), ('message', 'message'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('An', 'technique'), 'det'), (('alternative', 'technique'), 'amod'), (('authentication', 'technique'), 'compound'), (('technique', 'involves'), 'nsubj'), (('involves', 'root'), 'root'), (('the', 'use'), 'det'), (('use', 'involves'), 'obj'), (('of', 'key'), 'case'), (('a', 'key'), 'det'), (('secret', 'key'), 'amod'), (('key', 'use'), 'nmod'), (('to', 'generate'), 'mark'), (('generate', 'key'), 'acl'), (('a', 'block'), 'det'), (('small', 'block'), 'amod'), (('fixed', 'size'), 'amod'), (('-', 'size'), 'punct'), (('size', 'block'), 'compound'), (('block', 'generate'), 'obj'), (('of', 'data'), 'case'), (('data', 'block'), 'nmod'), ((',', 'known'), 'punct'), (('known', 'block'), 'acl'), (('as', 'checksum'), 'case'), (('a', 'checksum'), 'det'), (('cryptographic', 'checksum'), 'amod'), (('checksum', 'known'), 'obl'), (('or', 'appended'), 'cc'), (('MAC', 'appended'), 'nsubj:pass'), (('MAC', 'MAC'), 'flat'), (('is', 'appended'), 'aux:pass'), (('appended', 'involves'), 'conj'), (('to', 'message'), 'case'), (('the', 'message'), 'det'), (('message', 'appended'), 'obl'), (('.', 'involves'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 9 ===========================
+
+ This technique assumes that two communicating parties, say A and B, share a common secret key K.  When A has a message to send to B, it calculates the MAC as a function of the message and the key  MAC = C ( K , M )   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication Code 
+
+Tokens are: 
+>> ['This', 'technique', 'assumes', 'that', 'two', 'communicating', 'parties', ',', 'say', 'A', 'and', 'B', ',', 'share', 'a', 'common', 'secret', 'key', 'K.', 'When', 'A', 'has', 'a', 'message', 'to', 'send', 'to', 'B', ',', 'it', 'calculates', 'the', 'MAC', 'as', 'a', 'function', 'of', 'the', 'message', 'and', 'the', 'key', 'MAC', '=', 'C', '(', 'K', ',', 'M', ')', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Message', 'Authentication', 'Code'] 
+
+ UPOS tags are: 
+>> [('This', 'DET'), ('technique', 'NOUN'), ('assumes', 'VERB'), ('that', 'SCONJ'), ('two', 'NUM'), ('communicating', 'NOUN'), ('parties', 'NOUN'), (',', 'PUNCT'), ('say', 'VERB'), ('A', 'DET'), ('and', 'CCONJ'), ('B', 'PROPN'), (',', 'PUNCT'), ('share', 'VERB'), ('a', 'DET'), ('common', 'ADJ'), ('secret', 'ADJ'), ('key', 'ADJ'), ('K.', 'NOUN'), ('When', 'SCONJ'), ('A', 'PROPN'), ('has', 'VERB'), ('a', 'DET'), ('message', 'NOUN'), ('to', 'PART'), ('send', 'VERB'), ('to', 'ADP'), ('B', 'NOUN'), (',', 'PUNCT'), ('it', 'PRON'), ('calculates', 'VERB'), ('the', 'DET'), ('MAC', 'NOUN'), ('as', 'ADP'), ('a', 'DET'), ('function', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('message', 'NOUN'), ('and', 'CCONJ'), ('the', 'DET'), ('key', 'ADJ'), ('MAC', 'NOUN'), ('=', 'PUNCT'), ('C', 'NOUN'), ('(', 'PUNCT'), ('K', 'NUM'), (',', 'PUNCT'), ('M', 'NUM'), (')', 'PUNCT'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Code', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('This', 'DT'), ('technique', 'NN'), ('assumes', 'VBZ'), ('that', 'IN'), ('two', 'CD'), ('communicating', 'NN'), ('parties', 'NNS'), (',', ','), ('say', 'VB'), ('A', 'DT'), ('and', 'CC'), ('B', 'NNP'), (',', ','), ('share', 'VBP'), ('a', 'DT'), ('common', 'JJ'), ('secret', 'JJ'), ('key', 'JJ'), ('K.', 'NN'), ('When', 'WRB'), ('A', 'NNP'), ('has', 'VBZ'), ('a', 'DT'), ('message', 'NN'), ('to', 'TO'), ('send', 'VB'), ('to', 'IN'), ('B', 'NN'), (',', ','), ('it', 'PRP'), ('calculates', 'VBZ'), ('the', 'DT'), ('MAC', 'NN'), ('as', 'IN'), ('a', 'DT'), ('function', 'NN'), ('of', 'IN'), ('the', 'DT'), ('message', 'NN'), ('and', 'CC'), ('the', 'DT'), ('key', 'JJ'), ('MAC', 'NN'), ('=', ','), ('C', 'NN'), ('(', '-LRB-'), ('K', 'CD'), (',', ','), ('M', 'LS'), (')', '-RRB-'), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Message', 'NN'), ('Authentication', 'NN'), ('Code', 'NN')] 
+
+ Lemmas are: 
+>> [('This', 'this'), ('technique', 'technique'), ('assumes', 'assume'), ('that', 'that'), ('two', 'two'), ('communicating', 'communicate'), ('parties', 'party'), (',', ','), ('say', 'say'), ('A', 'a'), ('and', 'and'), ('B', 'B'), (',', ','), ('share', 'share'), ('a', 'a'), ('common', 'common'), ('secret', 'secret'), ('key', 'key'), ('K.', 'K.'), ('When', 'when'), ('A', 'A'), ('has', 'have'), ('a', 'a'), ('message', 'message'), ('to', 'to'), ('send', 'send'), ('to', 'to'), ('B', 'b'), (',', ','), ('it', 'it'), ('calculates', 'calculate'), ('the', 'the'), ('MAC', 'mac'), ('as', 'as'), ('a', 'a'), ('function', 'function'), ('of', 'of'), ('the', 'the'), ('message', 'message'), ('and', 'and'), ('the', 'the'), ('key', 'key'), ('MAC', 'mac'), ('=', '='), ('C', 'c'), ('(', '('), ('K', 'k'), (',', ','), ('M', 'm'), (')', ')'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Message', 'message'), ('Authentication', 'authentication'), ('Code', 'code')] 
+
+ Dependency tags are: 
+>> [(('This', 'technique'), 'det'), (('technique', 'assumes'), 'nsubj'), (('assumes', 'root'), 'root'), (('that', 'share'), 'mark'), (('two', 'parties'), 'nummod'), (('communicating', 'parties'), 'amod'), (('parties', 'share'), 'nsubj'), ((',', 'parties'), 'punct'), (('say', 'parties'), 'appos'), (('A', 'parties'), 'appos'), (('and', 'B'), 'cc'), (('B', 'A'), 'conj'), ((',', 'share'), 'punct'), (('share', 'assumes'), 'ccomp'), (('a', 'K.'), 'det'), (('common', 'K.'), 'amod'), (('secret', 'K.'), 'amod'), (('key', 'K.'), 'amod'), (('K.', 'share'), 'obj'), (('When', 'has'), 'mark'), (('A', 'has'), 'nsubj'), (('has', 'share'), 'advcl'), (('a', 'message'), 'det'), (('message', 'has'), 'obj'), (('to', 'send'), 'mark'), (('send', 'message'), 'acl'), (('to', 'B'), 'case'), (('B', 'send'), 'obl'), ((',', 'calculates'), 'punct'), (('it', 'calculates'), 'nsubj'), (('calculates', 'assumes'), 'parataxis'), (('the', 'MAC'), 'det'), (('MAC', 'calculates'), 'obj'), (('as', 'function'), 'case'), (('a', 'function'), 'det'), (('function', 'calculates'), 'obl'), (('of', 'message'), 'case'), (('the', 'message'), 'det'), (('message', 'function'), 'nmod'), (('and', 'MAC'), 'cc'), (('the', 'MAC'), 'det'), (('key', 'MAC'), 'amod'), (('MAC', 'message'), 'conj'), (('=', 'calculates'), 'punct'), (('C', 'function'), 'appos'), (('(', 'K'), 'punct'), (('K', 'C'), 'nummod'), ((',', 'M'), 'punct'), (('M', 'K'), 'conj'), ((')', 'M'), 'punct'), (('Unit', 'Codes'), 'compound'), (('-6', 'Codes'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'INS'), 'compound'), (('of', 'INS'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Code'), 'nsubj'), (('is', 'Code'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Code'), 'amod'), (('Subject', 'Code'), 'compound'), (('Message', 'Code'), 'compound'), (('Authentication', 'Code'), 'compound'), (('Code', 'assumes'), 'parataxis')]
+
+ Named Entities are: 
+>> [('two', 'CARDINAL'), ('MAC', 'ORG'), ('INS', 'ORG')]
+
+========================== Sentence 10 ===========================
+
+ The receiver is assured that the message has not been altered. 
+
+Tokens are: 
+>> ['The', 'receiver', 'is', 'assured', 'that', 'the', 'message', 'has', 'not', 'been', 'altered', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('receiver', 'NOUN'), ('is', 'AUX'), ('assured', 'VERB'), ('that', 'SCONJ'), ('the', 'DET'), ('message', 'NOUN'), ('has', 'AUX'), ('not', 'PART'), ('been', 'AUX'), ('altered', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('receiver', 'NN'), ('is', 'VBZ'), ('assured', 'VBN'), ('that', 'IN'), ('the', 'DT'), ('message', 'NN'), ('has', 'VBZ'), ('not', 'RB'), ('been', 'VBN'), ('altered', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('receiver', 'receiver'), ('is', 'be'), ('assured', 'assure'), ('that', 'that'), ('the', 'the'), ('message', 'message'), ('has', 'have'), ('not', 'not'), ('been', 'be'), ('altered', 'alter'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'receiver'), 'det'), (('receiver', 'assured'), 'nsubj:pass'), (('is', 'assured'), 'aux:pass'), (('assured', 'root'), 'root'), (('that', 'altered'), 'mark'), (('the', 'message'), 'det'), (('message', 'altered'), 'nsubj:pass'), (('has', 'altered'), 'aux'), (('not', 'altered'), 'advmod'), (('been', 'altered'), 'aux:pass'), (('altered', 'assured'), 'ccomp'), (('.', 'assured'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 11 ===========================
+
+ If an attacker alters the message but does not alter the MAC, then the receiver’s calculation of the MAC will differ from the received MAC. 
+
+Tokens are: 
+>> ['If', 'an', 'attacker', 'alters', 'the', 'message', 'but', 'does', 'not', 'alter', 'the', 'MAC', ',', 'then', 'the', 'receiver', '’s', 'calculation', 'of', 'the', 'MAC', 'will', 'differ', 'from', 'the', 'received', 'MAC', '.'] 
+
+ UPOS tags are: 
+>> [('If', 'SCONJ'), ('an', 'DET'), ('attacker', 'NOUN'), ('alters', 'VERB'), ('the', 'DET'), ('message', 'NOUN'), ('but', 'CCONJ'), ('does', 'AUX'), ('not', 'PART'), ('alter', 'VERB'), ('the', 'DET'), ('MAC', 'PROPN'), (',', 'PUNCT'), ('then', 'ADV'), ('the', 'DET'), ('receiver', 'NOUN'), ('’s', 'PART'), ('calculation', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('MAC', 'PROPN'), ('will', 'AUX'), ('differ', 'VERB'), ('from', 'ADP'), ('the', 'DET'), ('received', 'VERB'), ('MAC', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('If', 'IN'), ('an', 'DT'), ('attacker', 'NN'), ('alters', 'VBZ'), ('the', 'DT'), ('message', 'NN'), ('but', 'CC'), ('does', 'VBZ'), ('not', 'RB'), ('alter', 'VB'), ('the', 'DT'), ('MAC', 'NNP'), (',', ','), ('then', 'RB'), ('the', 'DT'), ('receiver', 'NN'), ('’s', 'POS'), ('calculation', 'NN'), ('of', 'IN'), ('the', 'DT'), ('MAC', 'NNP'), ('will', 'MD'), ('differ', 'VB'), ('from', 'IN'), ('the', 'DT'), ('received', 'VBN'), ('MAC', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('If', 'if'), ('an', 'a'), ('attacker', 'attacker'), ('alters', 'alter'), ('the', 'the'), ('message', 'message'), ('but', 'but'), ('does', 'do'), ('not', 'not'), ('alter', 'alter'), ('the', 'the'), ('MAC', 'MAC'), (',', ','), ('then', 'then'), ('the', 'the'), ('receiver', 'receiver'), ('’s', "'s"), ('calculation', 'calculation'), ('of', 'of'), ('the', 'the'), ('MAC', 'MAC'), ('will', 'will'), ('differ', 'differ'), ('from', 'from'), ('the', 'the'), ('received', 'receive'), ('MAC', 'MAC'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('If', 'alters'), 'mark'), (('an', 'attacker'), 'det'), (('attacker', 'alters'), 'nsubj'), (('alters', 'differ'), 'advcl'), (('the', 'message'), 'det'), (('message', 'alters'), 'obj'), (('but', 'alter'), 'cc'), (('does', 'alter'), 'aux'), (('not', 'alter'), 'advmod'), (('alter', 'alters'), 'conj'), (('the', 'MAC'), 'det'), (('MAC', 'alter'), 'obj'), ((',', 'differ'), 'punct'), (('then', 'differ'), 'advmod'), (('the', 'receiver'), 'det'), (('receiver', 'calculation'), 'nmod:poss'), (('’s', 'receiver'), 'case'), (('calculation', 'differ'), 'nsubj'), (('of', 'MAC'), 'case'), (('the', 'MAC'), 'det'), (('MAC', 'calculation'), 'nmod'), (('will', 'differ'), 'aux'), (('differ', 'root'), 'root'), (('from', 'MAC'), 'case'), (('the', 'MAC'), 'det'), (('received', 'MAC'), 'amod'), (('MAC', 'differ'), 'obl'), (('.', 'differ'), 'punct')]
+
+ Named Entities are: 
+>> [('MAC', 'ORG'), ('MAC', 'ORG'), ('MAC', 'ORG')]
+
+========================== Sentence 12 ===========================
+
+ Because the attacker is assumed not to Know the secret key, the attacker cannot alter the MAC to correspond to the alterations in the message. 
+
+Tokens are: 
+>> ['Because', 'the', 'attacker', 'is', 'assumed', 'not', 'to', 'Know', 'the', 'secret', 'key', ',', 'the', 'attacker', 'cannot', 'alter', 'the', 'MAC', 'to', 'correspond', 'to', 'the', 'alterations', 'in', 'the', 'message', '.'] 
+
+ UPOS tags are: 
+>> [('Because', 'SCONJ'), ('the', 'DET'), ('attacker', 'NOUN'), ('is', 'AUX'), ('assumed', 'VERB'), ('not', 'ADV'), ('to', 'PART'), ('Know', 'VERB'), ('the', 'DET'), ('secret', 'ADJ'), ('key', 'NOUN'), (',', 'PUNCT'), ('the', 'DET'), ('attacker', 'NOUN'), ('cannot', 'AUX'), ('alter', 'VERB'), ('the', 'DET'), ('MAC', 'PROPN'), ('to', 'PART'), ('correspond', 'VERB'), ('to', 'ADP'), ('the', 'DET'), ('alterations', 'NOUN'), ('in', 'ADP'), ('the', 'DET'), ('message', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Because', 'IN'), ('the', 'DT'), ('attacker', 'NN'), ('is', 'VBZ'), ('assumed', 'VBN'), ('not', 'RB'), ('to', 'TO'), ('Know', 'VB'), ('the', 'DT'), ('secret', 'JJ'), ('key', 'NN'), (',', ','), ('the', 'DT'), ('attacker', 'NN'), ('cannot', 'MD'), ('alter', 'VB'), ('the', 'DT'), ('MAC', 'NNP'), ('to', 'TO'), ('correspond', 'VB'), ('to', 'IN'), ('the', 'DT'), ('alterations', 'NNS'), ('in', 'IN'), ('the', 'DT'), ('message', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Because', 'because'), ('the', 'the'), ('attacker', 'attacker'), ('is', 'be'), ('assumed', 'assume'), ('not', 'not'), ('to', 'to'), ('Know', 'know'), ('the', 'the'), ('secret', 'secret'), ('key', 'key'), (',', ','), ('the', 'the'), ('attacker', 'attacker'), ('cannot', 'cannot'), ('alter', 'alter'), ('the', 'the'), ('MAC', 'MAC'), ('to', 'to'), ('correspond', 'correspond'), ('to', 'to'), ('the', 'the'), ('alterations', 'alteration'), ('in', 'in'), ('the', 'the'), ('message', 'message'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Because', 'assumed'), 'mark'), (('the', 'attacker'), 'det'), (('attacker', 'assumed'), 'nsubj:pass'), (('is', 'assumed'), 'aux:pass'), (('assumed', 'alter'), 'advcl'), (('not', 'Know'), 'advmod'), (('to', 'Know'), 'mark'), (('Know', 'assumed'), 'xcomp'), (('the', 'key'), 'det'), (('secret', 'key'), 'amod'), (('key', 'Know'), 'obj'), ((',', 'alter'), 'punct'), (('the', 'attacker'), 'det'), (('attacker', 'alter'), 'nsubj'), (('cannot', 'alter'), 'aux'), (('alter', 'root'), 'root'), (('the', 'MAC'), 'det'), (('MAC', 'alter'), 'obj'), (('to', 'correspond'), 'mark'), (('correspond', 'alter'), 'xcomp'), (('to', 'alterations'), 'case'), (('the', 'alterations'), 'det'), (('alterations', 'correspond'), 'obl'), (('in', 'message'), 'case'), (('the', 'message'), 'det'), (('message', 'alterations'), 'nmod'), (('.', 'alter'), 'punct')]
+
+ Named Entities are: 
+>> [('MAC', 'ORG')]
+
+========================== Sentence 13 ===========================
+
+ Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication code - Cont… 
+
+Tokens are: 
+>> ['Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Message', 'Authentication', 'code', '-', 'Cont', '…'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('code', 'NOUN'), ('-', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Message', 'NN'), ('Authentication', 'NN'), ('code', 'NN'), ('-', ','), ('Cont', 'NN'), ('…', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Message', 'message'), ('Authentication', 'authentication'), ('code', 'code'), ('-', '-'), ('Cont', 'cont'), ('…', '…')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Codes'), 'compound'), (('-6', 'Unit'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'code'), 'nsubj'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Codes'), 'appos'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'code'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'code'), 'amod'), (('Subject', 'code'), 'compound'), (('Message', 'code'), 'compound'), (('Authentication', 'code'), 'compound'), (('code', 'root'), 'root'), (('-', 'code'), 'punct'), (('Cont', 'code'), 'appos'), (('…', 'code'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 14 ===========================
+
+ The receiver is assured that the message is from the alleged sender. 
+
+Tokens are: 
+>> ['The', 'receiver', 'is', 'assured', 'that', 'the', 'message', 'is', 'from', 'the', 'alleged', 'sender', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('receiver', 'NOUN'), ('is', 'AUX'), ('assured', 'VERB'), ('that', 'SCONJ'), ('the', 'DET'), ('message', 'NOUN'), ('is', 'AUX'), ('from', 'ADP'), ('the', 'DET'), ('alleged', 'VERB'), ('sender', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('receiver', 'NN'), ('is', 'VBZ'), ('assured', 'VBN'), ('that', 'IN'), ('the', 'DT'), ('message', 'NN'), ('is', 'VBZ'), ('from', 'IN'), ('the', 'DT'), ('alleged', 'VBN'), ('sender', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('receiver', 'receiver'), ('is', 'be'), ('assured', 'assure'), ('that', 'that'), ('the', 'the'), ('message', 'message'), ('is', 'be'), ('from', 'from'), ('the', 'the'), ('alleged', 'allege'), ('sender', 'sender'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'receiver'), 'det'), (('receiver', 'assured'), 'nsubj:pass'), (('is', 'assured'), 'aux:pass'), (('assured', 'root'), 'root'), (('that', 'sender'), 'mark'), (('the', 'message'), 'det'), (('message', 'sender'), 'nsubj'), (('is', 'sender'), 'cop'), (('from', 'sender'), 'case'), (('the', 'sender'), 'det'), (('alleged', 'sender'), 'amod'), (('sender', 'assured'), 'ccomp'), (('.', 'assured'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 15 ===========================
+
+ Because no one else knows the secret key, no one else could prepare a message with a proper MAC. 
+
+Tokens are: 
+>> ['Because', 'no', 'one', 'else', 'knows', 'the', 'secret', 'key', ',', 'no', 'one', 'else', 'could', 'prepare', 'a', 'message', 'with', 'a', 'proper', 'MAC', '.'] 
+
+ UPOS tags are: 
+>> [('Because', 'SCONJ'), ('no', 'DET'), ('one', 'NOUN'), ('else', 'ADJ'), ('knows', 'VERB'), ('the', 'DET'), ('secret', 'ADJ'), ('key', 'NOUN'), (',', 'PUNCT'), ('no', 'DET'), ('one', 'NOUN'), ('else', 'ADJ'), ('could', 'AUX'), ('prepare', 'VERB'), ('a', 'DET'), ('message', 'NOUN'), ('with', 'ADP'), ('a', 'DET'), ('proper', 'ADJ'), ('MAC', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Because', 'IN'), ('no', 'DT'), ('one', 'NN'), ('else', 'JJ'), ('knows', 'VBZ'), ('the', 'DT'), ('secret', 'JJ'), ('key', 'NN'), (',', ','), ('no', 'DT'), ('one', 'NN'), ('else', 'JJ'), ('could', 'MD'), ('prepare', 'VB'), ('a', 'DT'), ('message', 'NN'), ('with', 'IN'), ('a', 'DT'), ('proper', 'JJ'), ('MAC', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Because', 'because'), ('no', 'no'), ('one', 'one'), ('else', 'else'), ('knows', 'know'), ('the', 'the'), ('secret', 'secret'), ('key', 'key'), (',', ','), ('no', 'no'), ('one', 'one'), ('else', 'else'), ('could', 'could'), ('prepare', 'prepare'), ('a', 'a'), ('message', 'message'), ('with', 'with'), ('a', 'a'), ('proper', 'proper'), ('MAC', 'mac'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Because', 'knows'), 'mark'), (('no', 'one'), 'det'), (('one', 'knows'), 'nsubj'), (('else', 'one'), 'amod'), (('knows', 'prepare'), 'advcl'), (('the', 'key'), 'det'), (('secret', 'key'), 'amod'), (('key', 'knows'), 'obj'), ((',', 'prepare'), 'punct'), (('no', 'one'), 'det'), (('one', 'prepare'), 'nsubj'), (('else', 'one'), 'amod'), (('could', 'prepare'), 'aux'), (('prepare', 'root'), 'root'), (('a', 'message'), 'det'), (('message', 'prepare'), 'obj'), (('with', 'MAC'), 'case'), (('a', 'MAC'), 'det'), (('proper', 'MAC'), 'amod'), (('MAC', 'prepare'), 'obl'), (('.', 'prepare'), 'punct')]
+
+ Named Entities are: 
+>> [('MAC', 'ORG')]
+
+========================== Sentence 16 ===========================
+
+ A MAC function is similar to encryption. 
+
+Tokens are: 
+>> ['A', 'MAC', 'function', 'is', 'similar', 'to', 'encryption', '.'] 
+
+ UPOS tags are: 
+>> [('A', 'DET'), ('MAC', 'PROPN'), ('function', 'NOUN'), ('is', 'AUX'), ('similar', 'ADJ'), ('to', 'ADP'), ('encryption', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('A', 'DT'), ('MAC', 'NNP'), ('function', 'NN'), ('is', 'VBZ'), ('similar', 'JJ'), ('to', 'IN'), ('encryption', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('A', 'a'), ('MAC', 'MAC'), ('function', 'function'), ('is', 'be'), ('similar', 'similar'), ('to', 'to'), ('encryption', 'encryption'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('A', 'function'), 'det'), (('MAC', 'function'), 'compound'), (('function', 'similar'), 'nsubj'), (('is', 'similar'), 'cop'), (('similar', 'root'), 'root'), (('to', 'encryption'), 'case'), (('encryption', 'similar'), 'obl'), (('.', 'similar'), 'punct')]
+
+ Named Entities are: 
+>> [('MAC', 'ORG')]
+
+========================== Sentence 17 ===========================
+
+ One difference is that the MAC algorithm need not be reversible, as it must be for decryption. 
+
+Tokens are: 
+>> ['One', 'difference', 'is', 'that', 'the', 'MAC', 'algorithm', 'need', 'not', 'be', 'reversible', ',', 'as', 'it', 'must', 'be', 'for', 'decryption', '.'] 
+
+ UPOS tags are: 
+>> [('One', 'NUM'), ('difference', 'NOUN'), ('is', 'VERB'), ('that', 'SCONJ'), ('the', 'DET'), ('MAC', 'PROPN'), ('algorithm', 'NOUN'), ('need', 'AUX'), ('not', 'PART'), ('be', 'AUX'), ('reversible', 'ADJ'), (',', 'PUNCT'), ('as', 'SCONJ'), ('it', 'PRON'), ('must', 'AUX'), ('be', 'AUX'), ('for', 'ADP'), ('decryption', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('One', 'CD'), ('difference', 'NN'), ('is', 'VBZ'), ('that', 'IN'), ('the', 'DT'), ('MAC', 'NNP'), ('algorithm', 'NN'), ('need', 'VBP'), ('not', 'RB'), ('be', 'VB'), ('reversible', 'JJ'), (',', ','), ('as', 'IN'), ('it', 'PRP'), ('must', 'MD'), ('be', 'VB'), ('for', 'IN'), ('decryption', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('One', 'one'), ('difference', 'difference'), ('is', 'be'), ('that', 'that'), ('the', 'the'), ('MAC', 'MAC'), ('algorithm', 'algorithm'), ('need', 'need'), ('not', 'not'), ('be', 'be'), ('reversible', 'reversible'), (',', ','), ('as', 'as'), ('it', 'it'), ('must', 'must'), ('be', 'be'), ('for', 'for'), ('decryption', 'decryption'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('One', 'difference'), 'nummod'), (('difference', 'is'), 'nsubj'), (('is', 'root'), 'root'), (('that', 'reversible'), 'mark'), (('the', 'algorithm'), 'det'), (('MAC', 'algorithm'), 'compound'), (('algorithm', 'reversible'), 'nsubj'), (('need', 'reversible'), 'aux'), (('not', 'reversible'), 'advmod'), (('be', 'reversible'), 'cop'), (('reversible', 'is'), 'ccomp'), ((',', 'reversible'), 'punct'), (('as', 'decryption'), 'mark'), (('it', 'decryption'), 'nsubj'), (('must', 'decryption'), 'aux'), (('be', 'decryption'), 'cop'), (('for', 'decryption'), 'case'), (('decryption', 'reversible'), 'advcl'), (('.', 'is'), 'punct')]
+
+ Named Entities are: 
+>> [('One', 'CARDINAL'), ('MAC', 'ORG')]
+
+========================== Sentence 18 ===========================
+
+ In general, the MAC function is a many-to-one function. 
+
+Tokens are: 
+>> ['In', 'general', ',', 'the', 'MAC', 'function', 'is', 'a', 'many', '-', 'to', '-', 'one', 'function', '.'] 
+
+ UPOS tags are: 
+>> [('In', 'ADP'), ('general', 'NOUN'), (',', 'PUNCT'), ('the', 'DET'), ('MAC', 'PROPN'), ('function', 'NOUN'), ('is', 'AUX'), ('a', 'DET'), ('many', 'ADJ'), ('-', 'PUNCT'), ('to', 'ADP'), ('-', 'PUNCT'), ('one', 'NUM'), ('function', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('In', 'IN'), ('general', 'NN'), (',', ','), ('the', 'DT'), ('MAC', 'NNP'), ('function', 'NN'), ('is', 'VBZ'), ('a', 'DT'), ('many', 'JJ'), ('-', 'HYPH'), ('to', 'IN'), ('-', 'HYPH'), ('one', 'CD'), ('function', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('In', 'in'), ('general', 'general'), (',', ','), ('the', 'the'), ('MAC', 'MAC'), ('function', 'function'), ('is', 'be'), ('a', 'a'), ('many', 'many'), ('-', '-'), ('to', 'to'), ('-', '-'), ('one', 'one'), ('function', 'function'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('In', 'general'), 'case'), (('general', 'function'), 'obl'), ((',', 'function'), 'punct'), (('the', 'function'), 'det'), (('MAC', 'function'), 'compound'), (('function', 'function'), 'nsubj'), (('is', 'function'), 'cop'), (('a', 'function'), 'det'), (('many', 'function'), 'amod'), (('-', 'one'), 'punct'), (('to', 'one'), 'case'), (('-', 'one'), 'punct'), (('one', 'many'), 'nmod'), (('function', 'root'), 'root'), (('.', 'function'), 'punct')]
+
+ Named Entities are: 
+>> [('MAC', 'ORG'), ('one', 'CARDINAL')]
+
+========================== Sentence 19 ===========================
+
+ The domain of the function consists of messages of some arbitrary length, whereas the range consists of all possible MACs and all possible keys. 
+
+Tokens are: 
+>> ['The', 'domain', 'of', 'the', 'function', 'consists', 'of', 'messages', 'of', 'some', 'arbitrary', 'length', ',', 'whereas', 'the', 'range', 'consists', 'of', 'all', 'possible', 'MACs', 'and', 'all', 'possible', 'keys', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('domain', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('function', 'NOUN'), ('consists', 'VERB'), ('of', 'ADP'), ('messages', 'NOUN'), ('of', 'ADP'), ('some', 'DET'), ('arbitrary', 'ADJ'), ('length', 'NOUN'), (',', 'PUNCT'), ('whereas', 'SCONJ'), ('the', 'DET'), ('range', 'NOUN'), ('consists', 'VERB'), ('of', 'ADP'), ('all', 'DET'), ('possible', 'ADJ'), ('MACs', 'NOUN'), ('and', 'CCONJ'), ('all', 'DET'), ('possible', 'ADJ'), ('keys', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('domain', 'NN'), ('of', 'IN'), ('the', 'DT'), ('function', 'NN'), ('consists', 'VBZ'), ('of', 'IN'), ('messages', 'NNS'), ('of', 'IN'), ('some', 'DT'), ('arbitrary', 'JJ'), ('length', 'NN'), (',', ','), ('whereas', 'IN'), ('the', 'DT'), ('range', 'NN'), ('consists', 'VBZ'), ('of', 'IN'), ('all', 'DT'), ('possible', 'JJ'), ('MACs', 'NNS'), ('and', 'CC'), ('all', 'DT'), ('possible', 'JJ'), ('keys', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('domain', 'domain'), ('of', 'of'), ('the', 'the'), ('function', 'function'), ('consists', 'consist'), ('of', 'of'), ('messages', 'message'), ('of', 'of'), ('some', 'some'), ('arbitrary', 'arbitrary'), ('length', 'length'), (',', ','), ('whereas', 'whereas'), ('the', 'the'), ('range', 'range'), ('consists', 'consist'), ('of', 'of'), ('all', 'all'), ('possible', 'possible'), ('MACs', 'mac'), ('and', 'and'), ('all', 'all'), ('possible', 'possible'), ('keys', 'key'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'domain'), 'det'), (('domain', 'consists'), 'nsubj'), (('of', 'function'), 'case'), (('the', 'function'), 'det'), (('function', 'domain'), 'nmod'), (('consists', 'root'), 'root'), (('of', 'messages'), 'case'), (('messages', 'consists'), 'obl'), (('of', 'length'), 'case'), (('some', 'length'), 'det'), (('arbitrary', 'length'), 'amod'), (('length', 'messages'), 'nmod'), ((',', 'consists'), 'punct'), (('whereas', 'consists'), 'mark'), (('the', 'range'), 'det'), (('range', 'consists'), 'nsubj'), (('consists', 'consists'), 'advcl'), (('of', 'MACs'), 'case'), (('all', 'MACs'), 'det'), (('possible', 'MACs'), 'amod'), (('MACs', 'consists'), 'obl'), (('and', 'keys'), 'cc'), (('all', 'keys'), 'det'), (('possible', 'keys'), 'amod'), (('keys', 'MACs'), 'conj'), (('.', 'consists'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 20 ===========================
+
+ If an n-bit MAC is used, then there are 2 n  possible MACs  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Message Authentication code - Cont…     Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  MAC Based on Hash Functions - HMAC Cryptographic hash functions such as MD5 and SHA generally execute faster  in software than symmetric block ciphers such as DES. 
+
+Tokens are: 
+>> ['If', 'an', 'n-bit', 'MAC', 'is', 'used', ',', 'then', 'there', 'are', '2', 'n', 'possible', 'MACs', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Message', 'Authentication', 'code', '-', 'Cont', '…', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'MAC', 'Based', 'on', 'Hash', 'Functions', '-', 'HMAC', 'Cryptographic', 'hash', 'functions', 'such', 'as', 'MD5', 'and', 'SHA', 'generally', 'execute', 'faster', 'in', 'software', 'than', 'symmetric', 'block', 'ciphers', 'such', 'as', 'DES', '.'] 
+
+ UPOS tags are: 
+>> [('If', 'SCONJ'), ('an', 'DET'), ('n-bit', 'NOUN'), ('MAC', 'PROPN'), ('is', 'AUX'), ('used', 'VERB'), (',', 'PUNCT'), ('then', 'ADV'), ('there', 'PRON'), ('are', 'VERB'), ('2', 'NUM'), ('n', 'NOUN'), ('possible', 'ADJ'), ('MACs', 'NOUN'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('code', 'NOUN'), ('-', 'PUNCT'), ('Cont', 'NOUN'), ('…', 'PUNCT'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('MAC', 'PROPN'), ('Based', 'VERB'), ('on', 'ADP'), ('Hash', 'NOUN'), ('Functions', 'NOUN'), ('-', 'PUNCT'), ('HMAC', 'PROPN'), ('Cryptographic', 'ADJ'), ('hash', 'NOUN'), ('functions', 'NOUN'), ('such', 'ADJ'), ('as', 'ADP'), ('MD5', 'PROPN'), ('and', 'CCONJ'), ('SHA', 'PROPN'), ('generally', 'ADV'), ('execute', 'VERB'), ('faster', 'ADJ'), ('in', 'ADP'), ('software', 'NOUN'), ('than', 'ADP'), ('symmetric', 'ADJ'), ('block', 'NOUN'), ('ciphers', 'NOUN'), ('such', 'ADJ'), ('as', 'ADP'), ('DES', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('If', 'IN'), ('an', 'DT'), ('n-bit', 'NN'), ('MAC', 'NNP'), ('is', 'VBZ'), ('used', 'VBN'), (',', ','), ('then', 'RB'), ('there', 'EX'), ('are', 'VBP'), ('2', 'CD'), ('n', 'NN'), ('possible', 'JJ'), ('MACs', 'NNS'), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Message', 'NN'), ('Authentication', 'NN'), ('code', 'NN'), ('-', ','), ('Cont', 'NN'), ('…', ','), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('MAC', 'NNP'), ('Based', 'VBN'), ('on', 'IN'), ('Hash', 'NN'), ('Functions', 'NNS'), ('-', ','), ('HMAC', 'NNP'), ('Cryptographic', 'JJ'), ('hash', 'NN'), ('functions', 'NNS'), ('such', 'JJ'), ('as', 'IN'), ('MD5', 'NNP'), ('and', 'CC'), ('SHA', 'NNP'), ('generally', 'RB'), ('execute', 'VB'), ('faster', 'JJR'), ('in', 'IN'), ('software', 'NN'), ('than', 'IN'), ('symmetric', 'JJ'), ('block', 'NN'), ('ciphers', 'NNS'), ('such', 'JJ'), ('as', 'IN'), ('DES', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('If', 'if'), ('an', 'a'), ('n-bit', 'n-bit'), ('MAC', 'MAC'), ('is', 'be'), ('used', 'use'), (',', ','), ('then', 'then'), ('there', 'there'), ('are', 'be'), ('2', '2'), ('n', 'n'), ('possible', 'possible'), ('MACs', 'mac'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Message', 'message'), ('Authentication', 'authentication'), ('code', 'code'), ('-', '-'), ('Cont', 'cont'), ('…', '…'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('MAC', 'MAC'), ('Based', 'base'), ('on', 'on'), ('Hash', 'hash'), ('Functions', 'function'), ('-', '-'), ('HMAC', 'HMAC'), ('Cryptographic', 'Cryptographic'), ('hash', 'hash'), ('functions', 'function'), ('such', 'such'), ('as', 'as'), ('MD5', 'MD5'), ('and', 'and'), ('SHA', 'SHA'), ('generally', 'generally'), ('execute', 'execute'), ('faster', 'fast'), ('in', 'in'), ('software', 'software'), ('than', 'than'), ('symmetric', 'symmetric'), ('block', 'block'), ('ciphers', 'cipher'), ('such', 'such'), ('as', 'as'), ('DES', 'DES'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('If', 'used'), 'mark'), (('an', 'MAC'), 'det'), (('n-bit', 'MAC'), 'compound'), (('MAC', 'used'), 'nsubj:pass'), (('is', 'used'), 'aux:pass'), (('used', 'are'), 'advcl'), ((',', 'used'), 'punct'), (('then', 'are'), 'advmod'), (('there', 'are'), 'expl'), (('are', 'root'), 'root'), (('2', 'n'), 'nummod'), (('n', 'Unit'), 'compound'), (('possible', 'Unit'), 'amod'), (('MACs', 'Unit'), 'compound'), (('Unit', 'are'), 'nsubj'), (('-6', 'Codes'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Unit'), 'conj'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Codes'), 'appos'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'code'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Message'), 'amod'), (('Subject', 'code'), 'compound'), (('Message', 'code'), 'compound'), (('Authentication', 'code'), 'compound'), (('code', 'are'), 'parataxis'), (('-', 'code'), 'punct'), (('Cont', 'code'), 'appos'), (('…', 'Cont'), 'punct'), (('Unit', 'Cont'), 'conj'), (('-6', 'Codes'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'code'), 'appos'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'code'), 'appos'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'MAC'), 'nsubj'), (('is', 'MAC'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'MAC'), 'amod'), (('Subject', 'MAC'), 'compound'), (('MAC', 'are'), 'parataxis'), (('Based', 'MAC'), 'acl'), (('on', 'Functions'), 'case'), (('Hash', 'Functions'), 'compound'), (('Functions', 'Based'), 'obl'), (('-', 'MAC'), 'punct'), (('HMAC', 'functions'), 'compound'), (('Cryptographic', 'functions'), 'amod'), (('hash', 'functions'), 'compound'), (('functions', 'execute'), 'nsubj'), (('such', 'MD5'), 'case'), (('as', 'such'), 'fixed'), (('MD5', 'functions'), 'nmod'), (('and', 'SHA'), 'cc'), (('SHA', 'MD5'), 'conj'), (('generally', 'execute'), 'advmod'), (('execute', 'MAC'), 'conj'), (('faster', 'execute'), 'obj'), (('in', 'software'), 'case'), (('software', 'execute'), 'obl'), (('than', 'ciphers'), 'case'), (('symmetric', 'ciphers'), 'amod'), (('block', 'ciphers'), 'compound'), (('ciphers', 'execute'), 'obl'), (('such', 'DES'), 'case'), (('as', 'such'), 'fixed'), (('DES', 'ciphers'), 'nmod'), (('.', 'are'), 'punct')]
+
+ Named Entities are: 
+>> [('MAC', 'ORG'), ('2', 'CARDINAL')]
+
+========================== Sentence 21 ===========================
+
+ Library code for cryptographic hash functions is widely available. 
+
+Tokens are: 
+>> ['Library', 'code', 'for', 'cryptographic', 'hash', 'functions', 'is', 'widely', 'available', '.'] 
+
+ UPOS tags are: 
+>> [('Library', 'NOUN'), ('code', 'NOUN'), ('for', 'ADP'), ('cryptographic', 'ADJ'), ('hash', 'NOUN'), ('functions', 'NOUN'), ('is', 'AUX'), ('widely', 'ADV'), ('available', 'ADJ'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Library', 'NN'), ('code', 'NN'), ('for', 'IN'), ('cryptographic', 'JJ'), ('hash', 'NN'), ('functions', 'NNS'), ('is', 'VBZ'), ('widely', 'RB'), ('available', 'JJ'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Library', 'Library'), ('code', 'code'), ('for', 'for'), ('cryptographic', 'cryptographic'), ('hash', 'hash'), ('functions', 'function'), ('is', 'be'), ('widely', 'widely'), ('available', 'available'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Library', 'code'), 'compound'), (('code', 'available'), 'nsubj'), (('for', 'functions'), 'case'), (('cryptographic', 'functions'), 'amod'), (('hash', 'functions'), 'compound'), (('functions', 'code'), 'nmod'), (('is', 'available'), 'cop'), (('widely', 'available'), 'advmod'), (('available', 'root'), 'root'), (('.', 'available'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 22 ===========================
+
+ Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Design objectives for HMAC 
+
+Tokens are: 
+>> ['Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Design', 'objectives', 'for', 'HMAC'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Design', 'NOUN'), ('objectives', 'NOUN'), ('for', 'ADP'), ('HMAC', 'PROPN')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Design', 'NN'), ('objectives', 'NNS'), ('for', 'IN'), ('HMAC', 'NNP')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Design', 'design'), ('objectives', 'objective'), ('for', 'for'), ('HMAC', 'HMAC')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Codes'), 'compound'), (('-6', 'Unit'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'objectives'), 'nsubj'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'objectives'), 'nsubj'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'objectives'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'objectives'), 'amod'), (('Subject', 'objectives'), 'compound'), (('Design', 'objectives'), 'compound'), (('objectives', 'root'), 'root'), (('for', 'HMAC'), 'case'), (('HMAC', 'objectives'), 'nmod')]
+
+ Named Entities are: 
+>> [('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG')]
+
+========================== Sentence 23 ===========================
+
+ To use, without modifications, available hash functions. 
+
+Tokens are: 
+>> ['To', 'use', ',', 'without', 'modifications', ',', 'available', 'hash', 'functions', '.'] 
+
+ UPOS tags are: 
+>> [('To', 'PART'), ('use', 'VERB'), (',', 'PUNCT'), ('without', 'ADP'), ('modifications', 'NOUN'), (',', 'PUNCT'), ('available', 'ADJ'), ('hash', 'NOUN'), ('functions', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('To', 'TO'), ('use', 'VB'), (',', ','), ('without', 'IN'), ('modifications', 'NNS'), (',', ','), ('available', 'JJ'), ('hash', 'NN'), ('functions', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('To', 'to'), ('use', 'use'), (',', ','), ('without', 'without'), ('modifications', 'modification'), (',', ','), ('available', 'available'), ('hash', 'hash'), ('functions', 'function'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('To', 'use'), 'mark'), (('use', 'functions'), 'advcl'), ((',', 'use'), 'punct'), (('without', 'modifications'), 'case'), (('modifications', 'use'), 'obl'), ((',', 'functions'), 'punct'), (('available', 'functions'), 'amod'), (('hash', 'functions'), 'compound'), (('functions', 'root'), 'root'), (('.', 'functions'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 24 ===========================
+
+ To allow for easy replaceability of the embedded hash function in case faster or more secure hash functions are found or required. 
+
+Tokens are: 
+>> ['To', 'allow', 'for', 'easy', 'replaceability', 'of', 'the', 'embedded', 'hash', 'function', 'in', 'case', 'faster', 'or', 'more', 'secure', 'hash', 'functions', 'are', 'found', 'or', 'required', '.'] 
+
+ UPOS tags are: 
+>> [('To', 'PART'), ('allow', 'VERB'), ('for', 'ADP'), ('easy', 'ADJ'), ('replaceability', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('embedded', 'VERB'), ('hash', 'NOUN'), ('function', 'NOUN'), ('in', 'ADP'), ('case', 'NOUN'), ('faster', 'ADJ'), ('or', 'CCONJ'), ('more', 'ADV'), ('secure', 'ADJ'), ('hash', 'NOUN'), ('functions', 'NOUN'), ('are', 'AUX'), ('found', 'VERB'), ('or', 'CCONJ'), ('required', 'VERB'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('To', 'TO'), ('allow', 'VB'), ('for', 'IN'), ('easy', 'JJ'), ('replaceability', 'NN'), ('of', 'IN'), ('the', 'DT'), ('embedded', 'VBN'), ('hash', 'NN'), ('function', 'NN'), ('in', 'IN'), ('case', 'NN'), ('faster', 'JJR'), ('or', 'CC'), ('more', 'RBR'), ('secure', 'JJ'), ('hash', 'NN'), ('functions', 'NNS'), ('are', 'VBP'), ('found', 'VBN'), ('or', 'CC'), ('required', 'VBN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('To', 'to'), ('allow', 'allow'), ('for', 'for'), ('easy', 'easy'), ('replaceability', 'replaceability'), ('of', 'of'), ('the', 'the'), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('in', 'in'), ('case', 'case'), ('faster', 'fast'), ('or', 'or'), ('more', 'more'), ('secure', 'secure'), ('hash', 'hash'), ('functions', 'function'), ('are', 'be'), ('found', 'find'), ('or', 'or'), ('required', 'require'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('To', 'allow'), 'mark'), (('allow', 'found'), 'advcl'), (('for', 'replaceability'), 'case'), (('easy', 'replaceability'), 'amod'), (('replaceability', 'allow'), 'obl'), (('of', 'function'), 'case'), (('the', 'function'), 'det'), (('embedded', 'function'), 'amod'), (('hash', 'function'), 'compound'), (('function', 'replaceability'), 'nmod'), (('in', 'functions'), 'case'), (('case', 'in'), 'fixed'), (('faster', 'functions'), 'amod'), (('or', 'secure'), 'cc'), (('more', 'secure'), 'advmod'), (('secure', 'functions'), 'amod'), (('hash', 'functions'), 'compound'), (('functions', 'found'), 'nsubj:pass'), (('are', 'found'), 'aux:pass'), (('found', 'root'), 'root'), (('or', 'required'), 'cc'), (('required', 'found'), 'conj'), (('.', 'found'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 25 ===========================
+
+ To preserve the original performance of the hash function without incurring a significant degradation. 
+
+Tokens are: 
+>> ['To', 'preserve', 'the', 'original', 'performance', 'of', 'the', 'hash', 'function', 'without', 'incurring', 'a', 'significant', 'degradation', '.'] 
+
+ UPOS tags are: 
+>> [('To', 'PART'), ('preserve', 'VERB'), ('the', 'DET'), ('original', 'ADJ'), ('performance', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('hash', 'NOUN'), ('function', 'NOUN'), ('without', 'SCONJ'), ('incurring', 'VERB'), ('a', 'DET'), ('significant', 'ADJ'), ('degradation', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('To', 'TO'), ('preserve', 'VB'), ('the', 'DT'), ('original', 'JJ'), ('performance', 'NN'), ('of', 'IN'), ('the', 'DT'), ('hash', 'NN'), ('function', 'NN'), ('without', 'IN'), ('incurring', 'VBG'), ('a', 'DT'), ('significant', 'JJ'), ('degradation', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('To', 'to'), ('preserve', 'preserve'), ('the', 'the'), ('original', 'original'), ('performance', 'performance'), ('of', 'of'), ('the', 'the'), ('hash', 'hash'), ('function', 'function'), ('without', 'without'), ('incurring', 'incur'), ('a', 'a'), ('significant', 'significant'), ('degradation', 'degradation'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('To', 'preserve'), 'mark'), (('preserve', 'root'), 'root'), (('the', 'performance'), 'det'), (('original', 'performance'), 'amod'), (('performance', 'preserve'), 'obj'), (('of', 'function'), 'case'), (('the', 'function'), 'det'), (('hash', 'function'), 'compound'), (('function', 'performance'), 'nmod'), (('without', 'incurring'), 'mark'), (('incurring', 'preserve'), 'advcl'), (('a', 'degradation'), 'det'), (('significant', 'degradation'), 'amod'), (('degradation', 'incurring'), 'obj'), (('.', 'preserve'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 26 ===========================
+
+ To use and handle keys in a simple way. 
+
+Tokens are: 
+>> ['To', 'use', 'and', 'handle', 'keys', 'in', 'a', 'simple', 'way', '.'] 
+
+ UPOS tags are: 
+>> [('To', 'PART'), ('use', 'VERB'), ('and', 'CCONJ'), ('handle', 'VERB'), ('keys', 'NOUN'), ('in', 'ADP'), ('a', 'DET'), ('simple', 'ADJ'), ('way', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('To', 'TO'), ('use', 'VB'), ('and', 'CC'), ('handle', 'VB'), ('keys', 'NNS'), ('in', 'IN'), ('a', 'DT'), ('simple', 'JJ'), ('way', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('To', 'to'), ('use', 'use'), ('and', 'and'), ('handle', 'handle'), ('keys', 'key'), ('in', 'in'), ('a', 'a'), ('simple', 'simple'), ('way', 'way'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('To', 'use'), 'mark'), (('use', 'root'), 'root'), (('and', 'handle'), 'cc'), (('handle', 'use'), 'conj'), (('keys', 'use'), 'obj'), (('in', 'way'), 'case'), (('a', 'way'), 'det'), (('simple', 'way'), 'amod'), (('way', 'use'), 'obl'), (('.', 'use'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 27 ===========================
+
+ To have a well understood cryptographic analysis of the strength of the authentication mechanism based on reasonable assumptions about the embedded hash function. 
+
+Tokens are: 
+>> ['To', 'have', 'a', 'well', 'understood', 'cryptographic', 'analysis', 'of', 'the', 'strength', 'of', 'the', 'authentication', 'mechanism', 'based', 'on', 'reasonable', 'assumptions', 'about', 'the', 'embedded', 'hash', 'function', '.'] 
+
+ UPOS tags are: 
+>> [('To', 'PART'), ('have', 'VERB'), ('a', 'DET'), ('well', 'ADV'), ('understood', 'VERB'), ('cryptographic', 'ADJ'), ('analysis', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('strength', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('authentication', 'NOUN'), ('mechanism', 'NOUN'), ('based', 'VERB'), ('on', 'ADP'), ('reasonable', 'ADJ'), ('assumptions', 'NOUN'), ('about', 'ADP'), ('the', 'DET'), ('embedded', 'VERB'), ('hash', 'NOUN'), ('function', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('To', 'TO'), ('have', 'VB'), ('a', 'DT'), ('well', 'RB'), ('understood', 'VBN'), ('cryptographic', 'JJ'), ('analysis', 'NN'), ('of', 'IN'), ('the', 'DT'), ('strength', 'NN'), ('of', 'IN'), ('the', 'DT'), ('authentication', 'NN'), ('mechanism', 'NN'), ('based', 'VBN'), ('on', 'IN'), ('reasonable', 'JJ'), ('assumptions', 'NNS'), ('about', 'IN'), ('the', 'DT'), ('embedded', 'VBN'), ('hash', 'NN'), ('function', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('To', 'to'), ('have', 'have'), ('a', 'a'), ('well', 'well'), ('understood', 'understand'), ('cryptographic', 'cryptographic'), ('analysis', 'analysis'), ('of', 'of'), ('the', 'the'), ('strength', 'strength'), ('of', 'of'), ('the', 'the'), ('authentication', 'authentication'), ('mechanism', 'mechanism'), ('based', 'base'), ('on', 'on'), ('reasonable', 'reasonable'), ('assumptions', 'assumption'), ('about', 'about'), ('the', 'the'), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('To', 'have'), 'mark'), (('have', 'root'), 'root'), (('a', 'analysis'), 'det'), (('well', 'understood'), 'advmod'), (('understood', 'analysis'), 'amod'), (('cryptographic', 'analysis'), 'amod'), (('analysis', 'have'), 'obj'), (('of', 'strength'), 'case'), (('the', 'strength'), 'det'), (('strength', 'analysis'), 'nmod'), (('of', 'mechanism'), 'case'), (('the', 'mechanism'), 'det'), (('authentication', 'mechanism'), 'compound'), (('mechanism', 'strength'), 'nmod'), (('based', 'mechanism'), 'acl'), (('on', 'assumptions'), 'case'), (('reasonable', 'assumptions'), 'amod'), (('assumptions', 'based'), 'obl'), (('about', 'function'), 'case'), (('the', 'function'), 'det'), (('embedded', 'function'), 'amod'), (('hash', 'function'), 'compound'), (('function', 'assumptions'), 'nmod'), (('.', 'have'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 28 ===========================
+
+ Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject   HMAC Structure Append zeros to the left end of K to create a b-bit string K+ XOR K+  with ipad to produce the b-bit block Si. Append M to Si. Apply H to the stream generated in step 3. XOR K+  with opad to produce the b-bit block S0. 
+
+Tokens are: 
+>> ['Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'HMAC', 'Structure', 'Append', 'zeros', 'to', 'the', 'left', 'end', 'of', 'K', 'to', 'create', 'a', 'b-bit', 'string', 'K', '+', 'XOR', 'K', '+', 'with', 'ipad', 'to', 'produce', 'the', 'b-bit', 'block', 'Si.', 'Append', 'M', 'to', 'Si.', 'Apply', 'H', 'to', 'the', 'stream', 'generated', 'in', 'step', '3', '.', 'XOR', 'K', '+', 'with', 'opad', 'to', 'produce', 'the', 'b-bit', 'block', 'S0', '.'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('HMAC', 'NOUN'), ('Structure', 'NOUN'), ('Append', 'NOUN'), ('zeros', 'NOUN'), ('to', 'ADP'), ('the', 'DET'), ('left', 'ADJ'), ('end', 'NOUN'), ('of', 'ADP'), ('K', 'NUM'), ('to', 'PART'), ('create', 'VERB'), ('a', 'DET'), ('b-bit', 'NOUN'), ('string', 'NOUN'), ('K', 'NOUN'), ('+', 'SYM'), ('XOR', 'NOUN'), ('K', 'NUM'), ('+', 'SYM'), ('with', 'ADP'), ('ipad', 'NOUN'), ('to', 'PART'), ('produce', 'VERB'), ('the', 'DET'), ('b-bit', 'NOUN'), ('block', 'NOUN'), ('Si.', 'NOUN'), ('Append', 'NOUN'), ('M', 'NOUN'), ('to', 'ADP'), ('Si.', 'NOUN'), ('Apply', 'VERB'), ('H', 'NOUN'), ('to', 'ADP'), ('the', 'DET'), ('stream', 'NOUN'), ('generated', 'VERB'), ('in', 'ADP'), ('step', 'NOUN'), ('3', 'NUM'), ('.', 'PUNCT'), ('XOR', 'NOUN'), ('K', 'NUM'), ('+', 'SYM'), ('with', 'ADP'), ('opad', 'NOUN'), ('to', 'PART'), ('produce', 'VERB'), ('the', 'DET'), ('b-bit', 'NOUN'), ('block', 'NOUN'), ('S0', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('HMAC', 'NN'), ('Structure', 'NN'), ('Append', 'NN'), ('zeros', 'NNS'), ('to', 'IN'), ('the', 'DT'), ('left', 'JJ'), ('end', 'NN'), ('of', 'IN'), ('K', 'CD'), ('to', 'TO'), ('create', 'VB'), ('a', 'DT'), ('b-bit', 'NN'), ('string', 'NN'), ('K', 'NN'), ('+', 'SYM'), ('XOR', 'NN'), ('K', 'CD'), ('+', 'SYM'), ('with', 'IN'), ('ipad', 'NN'), ('to', 'TO'), ('produce', 'VB'), ('the', 'DT'), ('b-bit', 'NN'), ('block', 'NN'), ('Si.', 'NN'), ('Append', 'NN'), ('M', 'NN'), ('to', 'IN'), ('Si.', 'NN'), ('Apply', 'VB'), ('H', 'NN'), ('to', 'IN'), ('the', 'DT'), ('stream', 'NN'), ('generated', 'VBN'), ('in', 'IN'), ('step', 'NN'), ('3', 'CD'), ('.', '.'), ('XOR', 'NN'), ('K', 'CD'), ('+', 'SYM'), ('with', 'IN'), ('opad', 'NN'), ('to', 'TO'), ('produce', 'VB'), ('the', 'DT'), ('b-bit', 'NN'), ('block', 'NN'), ('S0', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('HMAC', 'hmac'), ('Structure', 'structure'), ('Append', 'append'), ('zeros', 'zero'), ('to', 'to'), ('the', 'the'), ('left', 'left'), ('end', 'end'), ('of', 'of'), ('K', 'k'), ('to', 'to'), ('create', 'create'), ('a', 'a'), ('b-bit', 'b-bit'), ('string', 'string'), ('K', 'k'), ('+', '+'), ('XOR', 'xor'), ('K', 'k'), ('+', '+'), ('with', 'with'), ('ipad', 'ipad'), ('to', 'to'), ('produce', 'produce'), ('the', 'the'), ('b-bit', 'b-bit'), ('block', 'block'), ('Si.', 'si.'), ('Append', 'append'), ('M', 'm'), ('to', 'to'), ('Si.', 'si.'), ('Apply', 'apply'), ('H', 'h'), ('to', 'to'), ('the', 'the'), ('stream', 'stream'), ('generated', 'generate'), ('in', 'in'), ('step', 'step'), ('3', '3'), ('.', '.'), ('XOR', 'xor'), ('K', 'k'), ('+', '+'), ('with', 'with'), ('opad', 'opad'), ('to', 'to'), ('produce', 'produce'), ('the', 'the'), ('b-bit', 'b-bit'), ('block', 'block'), ('S0', 's0'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Codes'), 'compound'), (('-6', 'Unit'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Subject'), 'nsubj'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Codes'), 'appos'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'zeros'), 'compound'), (('HMAC', 'Structure'), 'compound'), (('Structure', 'zeros'), 'compound'), (('Append', 'zeros'), 'compound'), (('zeros', 'root'), 'root'), (('to', 'end'), 'case'), (('the', 'end'), 'det'), (('left', 'end'), 'amod'), (('end', 'zeros'), 'nmod'), (('of', 'K'), 'case'), (('K', 'end'), 'nmod'), (('to', 'create'), 'mark'), (('create', 'zeros'), 'acl'), (('a', 'K'), 'det'), (('b-bit', 'K'), 'compound'), (('string', 'K'), 'compound'), (('K', 'create'), 'obj'), (('+', 'K'), 'cc'), (('XOR', 'K'), 'compound'), (('K', 'K'), 'nummod'), (('+', 'K'), 'conj'), (('with', 'ipad'), 'case'), (('ipad', 'K'), 'nmod'), (('to', 'produce'), 'mark'), (('produce', 'create'), 'advcl'), (('the', 'block'), 'det'), (('b-bit', 'block'), 'compound'), (('block', 'produce'), 'obj'), (('Si.', 'M'), 'compound'), (('Append', 'M'), 'compound'), (('M', 'block'), 'appos'), (('to', 'Si.'), 'case'), (('Si.', 'M'), 'nmod'), (('Apply', 'produce'), 'advcl'), (('H', 'Apply'), 'obj'), (('to', 'stream'), 'case'), (('the', 'stream'), 'det'), (('stream', 'Apply'), 'obl'), (('generated', 'stream'), 'acl'), (('in', 'step'), 'case'), (('step', 'generated'), 'obl'), (('3', 'step'), 'nummod'), (('.', 'K'), 'punct'), (('XOR', 'K'), 'compound'), (('K', 'step'), 'nummod'), (('+', 'opad'), 'cc'), (('with', 'opad'), 'case'), (('opad', 'K'), 'nmod'), (('to', 'produce'), 'mark'), (('produce', 'opad'), 'acl'), (('the', 'S0'), 'det'), (('b-bit', 'block'), 'compound'), (('block', 'S0'), 'compound'), (('S0', 'produce'), 'obj'), (('.', 'Subject'), 'punct')]
+
+ Named Entities are: 
+>> [('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('zeros', 'CARDINAL'), ('3', 'CARDINAL')]
+
+========================== Sentence 29 ===========================
+
+ Append the hash result from step 4 to S0. 
+
+Tokens are: 
+>> ['Append', 'the', 'hash', 'result', 'from', 'step', '4', 'to', 'S0', '.'] 
+
+ UPOS tags are: 
+>> [('Append', 'VERB'), ('the', 'DET'), ('hash', 'NOUN'), ('result', 'NOUN'), ('from', 'ADP'), ('step', 'NOUN'), ('4', 'NUM'), ('to', 'ADP'), ('S0', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Append', 'VB'), ('the', 'DT'), ('hash', 'NN'), ('result', 'NN'), ('from', 'IN'), ('step', 'NN'), ('4', 'CD'), ('to', 'IN'), ('S0', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Append', 'append'), ('the', 'the'), ('hash', 'hash'), ('result', 'result'), ('from', 'from'), ('step', 'step'), ('4', '4'), ('to', 'to'), ('S0', 'S0'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Append', 'root'), 'root'), (('the', 'result'), 'det'), (('hash', 'result'), 'compound'), (('result', 'Append'), 'obj'), (('from', 'step'), 'case'), (('step', 'Append'), 'obl'), (('4', 'step'), 'nummod'), (('to', 'S0'), 'case'), (('S0', 'Append'), 'obl'), (('.', 'Append'), 'punct')]
+
+ Named Entities are: 
+>> [('4', 'CARDINAL'), ('S0', 'CARDINAL')]
+
+========================== Sentence 30 ===========================
+
+ Apply H to the stream generated in step 6 and output the result. 
+
+Tokens are: 
+>> ['Apply', 'H', 'to', 'the', 'stream', 'generated', 'in', 'step', '6', 'and', 'output', 'the', 'result', '.'] 
+
+ UPOS tags are: 
+>> [('Apply', 'VERB'), ('H', 'NOUN'), ('to', 'ADP'), ('the', 'DET'), ('stream', 'NOUN'), ('generated', 'VERB'), ('in', 'ADP'), ('step', 'NOUN'), ('6', 'NUM'), ('and', 'CCONJ'), ('output', 'VERB'), ('the', 'DET'), ('result', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Apply', 'VB'), ('H', 'NN'), ('to', 'IN'), ('the', 'DT'), ('stream', 'NN'), ('generated', 'VBN'), ('in', 'IN'), ('step', 'NN'), ('6', 'CD'), ('and', 'CC'), ('output', 'VB'), ('the', 'DT'), ('result', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Apply', 'apply'), ('H', 'h'), ('to', 'to'), ('the', 'the'), ('stream', 'stream'), ('generated', 'generate'), ('in', 'in'), ('step', 'step'), ('6', '6'), ('and', 'and'), ('output', 'output'), ('the', 'the'), ('result', 'result'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Apply', 'root'), 'root'), (('H', 'Apply'), 'obj'), (('to', 'stream'), 'case'), (('the', 'stream'), 'det'), (('stream', 'Apply'), 'obl'), (('generated', 'stream'), 'acl'), (('in', 'step'), 'case'), (('step', 'generated'), 'obl'), (('6', 'step'), 'nummod'), (('and', 'output'), 'cc'), (('output', 'Apply'), 'conj'), (('the', 'result'), 'det'), (('result', 'output'), 'obj'), (('.', 'Apply'), 'punct')]
+
+ Named Entities are: 
+>> [('6', 'CARDINAL')]
+
+========================== Sentence 31 ===========================
+
+ HMAC Structure H  =  embedded hash function (e.g.---.-, MD5, SHA-1, RIPEMD-160) IV =  initial value input to hash function M  =   message input to HMAC Yi  =  i th block of M L   =  number of blocks in M n   =  length of hash code produced by embedded hash function K +  =  K padded with zeros on the left so that the result is b bits in length ipad  =  00110110 (36 in hexadecimal) repeated b/8 times opad =  01011100 (5C in hexadecimal) repeated b/8 times   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  MAC based on Block Ciphers The Data Authentication Algorithm (DAA), based on DES, has been one of the most widely used MACs for a number of years. 
+
+Tokens are: 
+>> ['HMAC', 'Structure', 'H', '=', 'embedded', 'hash', 'function', '(', 'e.g.', '---.', '-', ',', 'MD5', ',', 'SHA', '-', '1', ',', 'RIPEMD', '-', '160', ')', 'IV', '=', 'initial', 'value', 'input', 'to', 'hash', 'function', 'M', '=', 'message', 'input', 'to', 'HMAC', 'Yi', '=', 'i', 'th', 'block', 'of', 'M', 'L', '=', 'number', 'of', 'blocks', 'in', 'M', 'n', '=', 'length', 'of', 'hash', 'code', 'produced', 'by', 'embedded', 'hash', 'function', 'K', '+', '=', 'K', 'padded', 'with', 'zeros', 'on', 'the', 'left', 'so', 'that', 'the', 'result', 'is', 'b', 'bits', 'in', 'length', 'ipad', '=', '00110110', '(', '36', 'in', 'hexadecimal', ')', 'repeated', 'b/8', 'times', 'opad', '=', '01011100', '(', '5', 'C', 'in', 'hexadecimal', ')', 'repeated', 'b/8', 'times', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'MAC', 'based', 'on', 'Block', 'Ciphers', 'The', 'Data', 'Authentication', 'Algorithm', '(', 'DAA', ')', ',', 'based', 'on', 'DES', ',', 'has', 'been', 'one', 'of', 'the', 'most', 'widely', 'used', 'MACs', 'for', 'a', 'number', 'of', 'years', '.'] 
+
+ UPOS tags are: 
+>> [('HMAC', 'PROPN'), ('Structure', 'NOUN'), ('H', 'PROPN'), ('=', 'PUNCT'), ('embedded', 'VERB'), ('hash', 'NOUN'), ('function', 'NOUN'), ('(', 'PUNCT'), ('e.g.', 'ADV'), ('---.', 'SYM'), ('-', 'PUNCT'), (',', 'PUNCT'), ('MD5', 'PROPN'), (',', 'PUNCT'), ('SHA', 'PROPN'), ('-', 'SYM'), ('1', 'NUM'), (',', 'PUNCT'), ('RIPEMD', 'NUM'), ('-', 'SYM'), ('160', 'NUM'), (')', 'PUNCT'), ('IV', 'NUM'), ('=', 'SYM'), ('initial', 'ADJ'), ('value', 'NOUN'), ('input', 'NOUN'), ('to', 'ADP'), ('hash', 'NOUN'), ('function', 'NOUN'), ('M', 'NOUN'), ('=', 'SYM'), ('message', 'NOUN'), ('input', 'NOUN'), ('to', 'ADP'), ('HMAC', 'PROPN'), ('Yi', 'PROPN'), ('=', 'PUNCT'), ('i', 'PRON'), ('th', 'AUX'), ('block', 'NOUN'), ('of', 'ADP'), ('M', 'NOUN'), ('L', 'NOUN'), ('=', 'SYM'), ('number', 'NOUN'), ('of', 'ADP'), ('blocks', 'NOUN'), ('in', 'ADP'), ('M', 'NOUN'), ('n', 'NOUN'), ('=', 'SYM'), ('length', 'NOUN'), ('of', 'ADP'), ('hash', 'NOUN'), ('code', 'NOUN'), ('produced', 'VERB'), ('by', 'ADP'), ('embedded', 'VERB'), ('hash', 'NOUN'), ('function', 'NOUN'), ('K', 'NOUN'), ('+', 'SYM'), ('=', 'SYM'), ('K', 'NUM'), ('padded', 'VERB'), ('with', 'ADP'), ('zeros', 'NOUN'), ('on', 'ADP'), ('the', 'DET'), ('left', 'NOUN'), ('so', 'SCONJ'), ('that', 'SCONJ'), ('the', 'DET'), ('result', 'NOUN'), ('is', 'AUX'), ('b', 'NUM'), ('bits', 'NOUN'), ('in', 'ADP'), ('length', 'NOUN'), ('ipad', 'NOUN'), ('=', 'SYM'), ('00110110', 'NUM'), ('(', 'PUNCT'), ('36', 'NUM'), ('in', 'ADP'), ('hexadecimal', 'ADJ'), (')', 'PUNCT'), ('repeated', 'VERB'), ('b/8', 'NUM'), ('times', 'NOUN'), ('opad', 'NOUN'), ('=', 'SYM'), ('01011100', 'NUM'), ('(', 'PUNCT'), ('5', 'NUM'), ('C', 'NOUN'), ('in', 'ADP'), ('hexadecimal', 'ADJ'), (')', 'PUNCT'), ('repeated', 'VERB'), ('b/8', 'NUM'), ('times', 'NOUN'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'PROPN'), ('Codes', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('MAC', 'PROPN'), ('based', 'VERB'), ('on', 'ADP'), ('Block', 'PROPN'), ('Ciphers', 'PROPN'), ('The', 'DET'), ('Data', 'PROPN'), ('Authentication', 'PROPN'), ('Algorithm', 'PROPN'), ('(', 'PUNCT'), ('DAA', 'PROPN'), (')', 'PUNCT'), (',', 'PUNCT'), ('based', 'VERB'), ('on', 'ADP'), ('DES', 'PROPN'), (',', 'PUNCT'), ('has', 'AUX'), ('been', 'AUX'), ('one', 'NUM'), ('of', 'ADP'), ('the', 'DET'), ('most', 'ADV'), ('widely', 'ADV'), ('used', 'VERB'), ('MACs', 'NOUN'), ('for', 'ADP'), ('a', 'DET'), ('number', 'NOUN'), ('of', 'ADP'), ('years', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('HMAC', 'NNP'), ('Structure', 'NN'), ('H', 'NNP'), ('=', ','), ('embedded', 'VBN'), ('hash', 'NN'), ('function', 'NN'), ('(', '-LRB-'), ('e.g.', 'FW'), ('---.', 'SYM'), ('-', ':'), (',', ','), ('MD5', 'NNP'), (',', ','), ('SHA', 'NNP'), ('-', 'SYM'), ('1', 'CD'), (',', ','), ('RIPEMD', 'CD'), ('-', 'SYM'), ('160', 'CD'), (')', '-RRB-'), ('IV', 'CD'), ('=', 'SYM'), ('initial', 'JJ'), ('value', 'NN'), ('input', 'NN'), ('to', 'IN'), ('hash', 'NN'), ('function', 'NN'), ('M', 'NN'), ('=', 'SYM'), ('message', 'NN'), ('input', 'NN'), ('to', 'IN'), ('HMAC', 'NNP'), ('Yi', 'NNP'), ('=', ':'), ('i', 'PRP'), ('th', 'VBP'), ('block', 'NN'), ('of', 'IN'), ('M', 'NN'), ('L', 'NN'), ('=', 'SYM'), ('number', 'NN'), ('of', 'IN'), ('blocks', 'NNS'), ('in', 'IN'), ('M', 'NN'), ('n', 'NN'), ('=', 'SYM'), ('length', 'NN'), ('of', 'IN'), ('hash', 'NN'), ('code', 'NN'), ('produced', 'VBN'), ('by', 'IN'), ('embedded', 'VBN'), ('hash', 'NN'), ('function', 'NN'), ('K', 'NN'), ('+', 'SYM'), ('=', 'SYM'), ('K', 'CD'), ('padded', 'VBN'), ('with', 'IN'), ('zeros', 'NNS'), ('on', 'IN'), ('the', 'DT'), ('left', 'NN'), ('so', 'IN'), ('that', 'IN'), ('the', 'DT'), ('result', 'NN'), ('is', 'VBZ'), ('b', 'CD'), ('bits', 'NNS'), ('in', 'IN'), ('length', 'NN'), ('ipad', 'NN'), ('=', 'SYM'), ('00110110', 'CD'), ('(', '-LRB-'), ('36', 'CD'), ('in', 'IN'), ('hexadecimal', 'JJ'), (')', '-RRB-'), ('repeated', 'VBN'), ('b/8', 'CD'), ('times', 'NNS'), ('opad', 'NN'), ('=', 'SYM'), ('01011100', 'CD'), ('(', '-LRB-'), ('5', 'CD'), ('C', 'NN'), ('in', 'IN'), ('hexadecimal', 'JJ'), (')', '-RRB-'), ('repeated', 'VBN'), ('b/8', 'CD'), ('times', 'NNS'), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NNP'), ('Codes', 'NNPS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('MAC', 'NNP'), ('based', 'VBN'), ('on', 'IN'), ('Block', 'NNP'), ('Ciphers', 'NNPS'), ('The', 'DT'), ('Data', 'NNP'), ('Authentication', 'NNP'), ('Algorithm', 'NNP'), ('(', '-LRB-'), ('DAA', 'NNP'), (')', '-RRB-'), (',', ','), ('based', 'VBN'), ('on', 'IN'), ('DES', 'NNP'), (',', ','), ('has', 'VBZ'), ('been', 'VBN'), ('one', 'CD'), ('of', 'IN'), ('the', 'DT'), ('most', 'RBS'), ('widely', 'RB'), ('used', 'VBN'), ('MACs', 'NNS'), ('for', 'IN'), ('a', 'DT'), ('number', 'NN'), ('of', 'IN'), ('years', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('HMAC', 'HMAC'), ('Structure', 'structure'), ('H', 'H'), ('=', '='), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('(', '('), ('e.g.', 'e.g.'), ('---.', '---.'), ('-', '-'), (',', ','), ('MD5', 'MD5'), (',', ','), ('SHA', 'SHA'), ('-', '-'), ('1', '1'), (',', ','), ('RIPEMD', 'ripemd'), ('-', '-'), ('160', '160'), (')', ')'), ('IV', 'iv'), ('=', '='), ('initial', 'initial'), ('value', 'value'), ('input', 'input'), ('to', 'to'), ('hash', 'hash'), ('function', 'function'), ('M', 'm'), ('=', '='), ('message', 'message'), ('input', 'input'), ('to', 'to'), ('HMAC', 'HMAC'), ('Yi', 'Yi'), ('=', '='), ('i', 'I'), ('th', 'be'), ('block', 'block'), ('of', 'of'), ('M', 'm'), ('L', 'L'), ('=', '='), ('number', 'number'), ('of', 'of'), ('blocks', 'block'), ('in', 'in'), ('M', 'm'), ('n', 'n'), ('=', '='), ('length', 'length'), ('of', 'of'), ('hash', 'hash'), ('code', 'code'), ('produced', 'produce'), ('by', 'by'), ('embedded', 'embed'), ('hash', 'hash'), ('function', 'function'), ('K', 'k'), ('+', '+'), ('=', '='), ('K', 'k'), ('padded', 'pad'), ('with', 'with'), ('zeros', 'zero'), ('on', 'on'), ('the', 'the'), ('left', 'left'), ('so', 'so'), ('that', 'that'), ('the', 'the'), ('result', 'result'), ('is', 'be'), ('b', 'b'), ('bits', 'bit'), ('in', 'in'), ('length', 'length'), ('ipad', 'ipad'), ('=', '='), ('00110110', '00110110'), ('(', '('), ('36', '36'), ('in', 'in'), ('hexadecimal', 'hexadecimal'), (')', ')'), ('repeated', 'repeat'), ('b/8', 'b/8'), ('times', 'time'), ('opad', 'opad'), ('=', '='), ('01011100', '01011100'), ('(', '('), ('5', '5'), ('C', 'c'), ('in', 'in'), ('hexadecimal', 'hexadecimal'), (')', ')'), ('repeated', 'repeat'), ('b/8', 'b/8'), ('times', 'time'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'Authentication'), ('Codes', 'Code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('MAC', 'MAC'), ('based', 'base'), ('on', 'on'), ('Block', 'Block'), ('Ciphers', 'Ciphers'), ('The', 'the'), ('Data', 'data'), ('Authentication', 'Authentication'), ('Algorithm', 'Algorithm'), ('(', '('), ('DAA', 'DAA'), (')', ')'), (',', ','), ('based', 'base'), ('on', 'on'), ('DES', 'DES'), (',', ','), ('has', 'have'), ('been', 'be'), ('one', 'one'), ('of', 'of'), ('the', 'the'), ('most', 'most'), ('widely', 'widely'), ('used', 'use'), ('MACs', 'mac'), ('for', 'for'), ('a', 'a'), ('number', 'number'), ('of', 'of'), ('years', 'year'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('HMAC', 'Structure'), 'compound'), (('Structure', 'H'), 'compound'), (('H', '='), 'nsubj'), (('=', 'root'), 'root'), (('embedded', 'function'), 'amod'), (('hash', 'function'), 'compound'), (('function', '='), 'nsubj'), (('(', '---.'), 'punct'), (('e.g.', '---.'), 'advmod'), (('---.', 'function'), 'dep'), (('-', '---.'), 'punct'), ((',', 'MD5'), 'punct'), (('MD5', 'function'), 'appos'), ((',', 'SHA'), 'punct'), (('SHA', 'MD5'), 'dep'), (('-', '1'), 'case'), (('1', 'SHA'), 'nmod'), ((',', 'RIPEMD'), 'punct'), (('RIPEMD', 'MD5'), 'dep'), (('-', '160'), 'case'), (('160', 'RIPEMD'), 'nmod'), ((')', 'RIPEMD'), 'punct'), (('IV', '='), 'nsubj'), (('=', '='), 'conj'), (('initial', 'input'), 'amod'), (('value', 'input'), 'compound'), (('input', '='), 'obj'), (('to', 'M'), 'case'), (('hash', 'M'), 'compound'), (('function', 'M'), 'compound'), (('M', '='), 'obl'), (('=', '='), 'conj'), (('message', 'input'), 'compound'), (('input', '='), 'obj'), (('to', 'Yi'), 'case'), (('HMAC', 'Yi'), 'compound'), (('Yi', 'input'), 'nmod'), (('=', '='), 'punct'), (('i', 'block'), 'nsubj'), (('th', 'block'), 'cop'), (('block', '='), 'obl:npmod'), (('of', 'M'), 'case'), (('M', 'block'), 'nmod'), (('L', '='), 'nsubj'), (('=', '='), 'parataxis'), (('number', '='), 'obj'), (('of', 'blocks'), 'case'), (('blocks', 'number'), 'nmod'), (('in', 'n'), 'case'), (('M', 'n'), 'compound'), (('n', '='), 'nsubj'), (('=', '='), 'advcl'), (('length', '='), 'obj'), (('of', 'code'), 'case'), (('hash', 'code'), 'compound'), (('code', 'length'), 'nmod'), (('produced', 'code'), 'acl'), (('by', 'K'), 'case'), (('embedded', 'K'), 'amod'), (('hash', 'K'), 'compound'), (('function', 'K'), 'compound'), (('K', 'produced'), 'obl'), (('+', '='), 'cc'), (('=', 'K'), 'acl:relcl'), (('K', '='), 'obj'), (('padded', '='), 'xcomp'), (('with', 'zeros'), 'case'), (('zeros', 'padded'), 'obl'), (('on', 'left'), 'case'), (('the', 'left'), 'det'), (('left', 'padded'), 'obl'), (('so', 'bits'), 'mark'), (('that', 'so'), 'fixed'), (('the', 'result'), 'det'), (('result', 'bits'), 'nsubj'), (('is', 'bits'), 'cop'), (('b', 'bits'), 'nummod'), (('bits', '='), 'advcl'), (('in', 'ipad'), 'case'), (('length', 'ipad'), 'compound'), (('ipad', '='), 'nsubj'), (('=', '='), 'conj'), (('00110110', '='), 'obj'), (('(', '36'), 'punct'), (('36', '00110110'), 'nummod'), (('in', 'hexadecimal'), 'case'), (('hexadecimal', '36'), 'nmod'), ((')', '36'), 'punct'), (('repeated', 'times'), 'amod'), (('b/8', 'times'), 'nummod'), (('times', '='), 'obl:tmod'), (('opad', '='), 'nsubj'), (('=', '='), 'conj'), (('01011100', '='), 'obj'), (('(', 'C'), 'punct'), (('5', 'C'), 'nummod'), (('C', '='), 'dep'), (('in', 'hexadecimal'), 'case'), (('hexadecimal', 'C'), 'nmod'), ((')', 'C'), 'punct'), (('repeated', 'Unit'), 'amod'), (('b/8', 'times'), 'nummod'), (('times', 'Unit'), 'compound'), (('Unit', 'C'), 'nmod'), (('-6', 'Institute'), 'nummod'), (('Message', 'Institute'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Unit'), 'conj'), (('of', '‹#›'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'MAC'), 'nsubj'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'MAC'), 'compound'), (('MAC', '‹#›'), 'compound'), (('based', 'MAC'), 'acl'), (('on', 'Ciphers'), 'case'), (('Block', 'Ciphers'), 'compound'), (('Ciphers', 'based'), 'obl'), (('The', 'Algorithm'), 'det'), (('Data', 'Algorithm'), 'compound'), (('Authentication', 'Algorithm'), 'compound'), (('Algorithm', 'MAC'), 'appos'), (('(', 'DAA'), 'punct'), (('DAA', 'Algorithm'), 'appos'), ((')', 'DAA'), 'punct'), ((',', 'based'), 'punct'), (('based', 'Algorithm'), 'acl'), (('on', 'DES'), 'case'), (('DES', 'based'), 'obl'), ((',', 'one'), 'punct'), (('has', 'one'), 'aux'), (('been', 'one'), 'cop'), (('one', 'Ciphers'), 'acl:relcl'), (('of', 'MACs'), 'case'), (('the', 'MACs'), 'det'), (('most', 'widely'), 'advmod'), (('widely', 'used'), 'advmod'), (('used', 'MACs'), 'amod'), (('MACs', 'one'), 'nmod'), (('for', 'number'), 'case'), (('a', 'number'), 'det'), (('number', 'MACs'), 'nmod'), (('of', 'years'), 'case'), (('years', 'number'), 'nmod'), (('.', '='), 'punct')]
+
+ Named Entities are: 
+>> [('zeros', 'CARDINAL'), ('36', 'CARDINAL'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('Block Ciphers', 'PRODUCT'), ('The Data Authentication Algorithm', 'PRODUCT'), ('DES', 'ORG')]
+
+========================== Sentence 32 ===========================
+
+ The algorithm can be defined as using the cipher block chaining (CBC) mode of operation of DES (Figure 6.4) with an initialization vector of zero. 
+
+Tokens are: 
+>> ['The', 'algorithm', 'can', 'be', 'defined', 'as', 'using', 'the', 'cipher', 'block', 'chaining', '(', 'CBC', ')', 'mode', 'of', 'operation', 'of', 'DES', '(', 'Figure', '6.4', ')', 'with', 'an', 'initialization', 'vector', 'of', 'zero', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('algorithm', 'NOUN'), ('can', 'AUX'), ('be', 'AUX'), ('defined', 'VERB'), ('as', 'SCONJ'), ('using', 'VERB'), ('the', 'DET'), ('cipher', 'NOUN'), ('block', 'NOUN'), ('chaining', 'NOUN'), ('(', 'PUNCT'), ('CBC', 'PROPN'), (')', 'PUNCT'), ('mode', 'NOUN'), ('of', 'ADP'), ('operation', 'NOUN'), ('of', 'ADP'), ('DES', 'PROPN'), ('(', 'PUNCT'), ('Figure', 'PROPN'), ('6.4', 'NUM'), (')', 'PUNCT'), ('with', 'ADP'), ('an', 'DET'), ('initialization', 'NOUN'), ('vector', 'NOUN'), ('of', 'ADP'), ('zero', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('algorithm', 'NN'), ('can', 'MD'), ('be', 'VB'), ('defined', 'VBN'), ('as', 'IN'), ('using', 'VBG'), ('the', 'DT'), ('cipher', 'NN'), ('block', 'NN'), ('chaining', 'NN'), ('(', '-LRB-'), ('CBC', 'NNP'), (')', '-RRB-'), ('mode', 'NN'), ('of', 'IN'), ('operation', 'NN'), ('of', 'IN'), ('DES', 'NNP'), ('(', '-LRB-'), ('Figure', 'NNP'), ('6.4', 'CD'), (')', '-RRB-'), ('with', 'IN'), ('an', 'DT'), ('initialization', 'NN'), ('vector', 'NN'), ('of', 'IN'), ('zero', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('algorithm', 'algorithm'), ('can', 'can'), ('be', 'be'), ('defined', 'define'), ('as', 'as'), ('using', 'use'), ('the', 'the'), ('cipher', 'cipher'), ('block', 'block'), ('chaining', 'chaining'), ('(', '('), ('CBC', 'CBC'), (')', ')'), ('mode', 'mode'), ('of', 'of'), ('operation', 'operation'), ('of', 'of'), ('DES', 'DES'), ('(', '('), ('Figure', 'Figure'), ('6.4', '6.4'), (')', ')'), ('with', 'with'), ('an', 'a'), ('initialization', 'initialization'), ('vector', 'vector'), ('of', 'of'), ('zero', 'zero'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'algorithm'), 'det'), (('algorithm', 'defined'), 'nsubj:pass'), (('can', 'defined'), 'aux'), (('be', 'defined'), 'aux:pass'), (('defined', 'root'), 'root'), (('as', 'using'), 'mark'), (('using', 'defined'), 'advcl'), (('the', 'mode'), 'det'), (('cipher', 'block'), 'compound'), (('block', 'chaining'), 'compound'), (('chaining', 'mode'), 'compound'), (('(', 'CBC'), 'punct'), (('CBC', 'chaining'), 'appos'), ((')', 'CBC'), 'punct'), (('mode', 'using'), 'obj'), (('of', 'operation'), 'case'), (('operation', 'mode'), 'nmod'), (('of', 'DES'), 'case'), (('DES', 'operation'), 'nmod'), (('(', 'Figure'), 'punct'), (('Figure', 'mode'), 'appos'), (('6.4', 'Figure'), 'nummod'), ((')', 'Figure'), 'punct'), (('with', 'vector'), 'case'), (('an', 'vector'), 'det'), (('initialization', 'vector'), 'compound'), (('vector', 'using'), 'obl'), (('of', 'zero'), 'case'), (('zero', 'vector'), 'nmod'), (('.', 'defined'), 'punct')]
+
+ Named Entities are: 
+>> [('6.4', 'CARDINAL'), ('zero', 'CARDINAL')]
+
+========================== Sentence 33 ===========================
+
+ Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Data Authentication Algorithm (DAA)    Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Data Authentication Algorithm (DAA) 
+
+Tokens are: 
+>> ['Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Data', 'Authentication', 'Algorithm', '(', 'DAA', ')', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Data', 'Authentication', 'Algorithm', '(', 'DAA', ')'] 
+
+ UPOS tags are: 
+>> [('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Data', 'NOUN'), ('Authentication', 'NOUN'), ('Algorithm', 'NOUN'), ('(', 'PUNCT'), ('DAA', 'NOUN'), (')', 'PUNCT'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Data', 'NOUN'), ('Authentication', 'NOUN'), ('Algorithm', 'NOUN'), ('(', 'PUNCT'), ('DAA', 'PROPN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Data', 'NN'), ('Authentication', 'NN'), ('Algorithm', 'NN'), ('(', '-LRB-'), ('DAA', 'NN'), (')', '-RRB-'), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Data', 'NN'), ('Authentication', 'NN'), ('Algorithm', 'NN'), ('(', '-LRB-'), ('DAA', 'NNP'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Data', 'data'), ('Authentication', 'authentication'), ('Algorithm', 'algorithm'), ('(', '('), ('DAA', 'daa'), (')', ')'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Data', 'data'), ('Authentication', 'authentication'), ('Algorithm', 'algorithm'), ('(', '('), ('DAA', 'DAA'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('Unit', 'Codes'), 'compound'), (('-6', 'Unit'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Algorithm'), 'nsubj'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Codes'), 'appos'), (('of', 'INS'), 'case'), (('Engineering', 'INS'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Algorithm'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Algorithm'), 'amod'), (('Subject', 'Algorithm'), 'compound'), (('Data', 'Algorithm'), 'compound'), (('Authentication', 'Algorithm'), 'compound'), (('Algorithm', 'Codes'), 'conj'), (('(', 'DAA'), 'punct'), (('DAA', 'Unit'), 'appos'), ((')', 'DAA'), 'punct'), (('Unit', 'Algorithm'), 'appos'), (('-6', 'Codes'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Algorithm'), 'conj'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Algorithm'), 'conj'), (('of', 'INS'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Institute'), 'nmod'), (('is', 'Algorithm'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Algorithm'), 'amod'), (('Subject', 'Algorithm'), 'compound'), (('Data', 'Algorithm'), 'compound'), (('Authentication', 'Algorithm'), 'compound'), (('Algorithm', 'root'), 'root'), (('(', 'DAA'), 'punct'), (('DAA', 'Algorithm'), 'appos'), ((')', 'DAA'), 'punct')]
+
+ Named Entities are: 
+>> [('Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('DAA', 'ORG')]
+
+========================== Sentence 34 ===========================
+
+ The data (e.g.---.-, message, record, file, or program) to be authenticated are grouped into contiguous 64-bit blocks:  D1, D2, …. Dn. 
+
+Tokens are: 
+>> ['The', 'data', '(', 'e.g.', '---.', '-', ',', 'message', ',', 'record', ',', 'file', ',', 'or', 'program', ')', 'to', 'be', 'authenticated', 'are', 'grouped', 'into', 'contiguous', '64', '-', 'bit', 'blocks', ':', 'D1', ',', 'D2', ',', '….', 'Dn.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('data', 'NOUN'), ('(', 'PUNCT'), ('e.g.', 'ADV'), ('---.', 'NOUN'), ('-', 'PUNCT'), (',', 'PUNCT'), ('message', 'NOUN'), (',', 'PUNCT'), ('record', 'NOUN'), (',', 'PUNCT'), ('file', 'NOUN'), (',', 'PUNCT'), ('or', 'CCONJ'), ('program', 'NOUN'), (')', 'PUNCT'), ('to', 'PART'), ('be', 'AUX'), ('authenticated', 'VERB'), ('are', 'AUX'), ('grouped', 'VERB'), ('into', 'ADP'), ('contiguous', 'ADJ'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('blocks', 'NOUN'), (':', 'PUNCT'), ('D1', 'PROPN'), (',', 'PUNCT'), ('D2', 'PROPN'), (',', 'PUNCT'), ('….', 'NUM'), ('Dn.', 'PROPN')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('data', 'NNS'), ('(', '-LRB-'), ('e.g.', 'FW'), ('---.', 'NN'), ('-', ','), (',', ','), ('message', 'NN'), (',', ','), ('record', 'NN'), (',', ','), ('file', 'NN'), (',', ','), ('or', 'CC'), ('program', 'NN'), (')', '-RRB-'), ('to', 'TO'), ('be', 'VB'), ('authenticated', 'VBN'), ('are', 'VBP'), ('grouped', 'VBN'), ('into', 'IN'), ('contiguous', 'JJ'), ('64', 'CD'), ('-', 'HYPH'), ('bit', 'NN'), ('blocks', 'NNS'), (':', ':'), ('D1', 'NNP'), (',', ','), ('D2', 'NNP'), (',', ','), ('….', 'CD'), ('Dn.', 'NNP')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('data', 'datum'), ('(', '('), ('e.g.', 'e.g.'), ('---.', '---.'), ('-', '-'), (',', ','), ('message', 'message'), (',', ','), ('record', 'record'), (',', ','), ('file', 'file'), (',', ','), ('or', 'or'), ('program', 'program'), (')', ')'), ('to', 'to'), ('be', 'be'), ('authenticated', 'authenticate'), ('are', 'be'), ('grouped', 'group'), ('into', 'into'), ('contiguous', 'contiguous'), ('64', '64'), ('-', '-'), ('bit', 'bit'), ('blocks', 'block'), (':', ':'), ('D1', 'D1'), (',', ','), ('D2', 'D2'), (',', ','), ('….', '..'), ('Dn.', 'Dn.')] 
+
+ Dependency tags are: 
+>> [(('The', 'data'), 'det'), (('data', 'grouped'), 'nsubj:pass'), (('(', '---.'), 'punct'), (('e.g.', '---.'), 'advmod'), (('---.', 'data'), 'appos'), (('-', '---.'), 'punct'), ((',', 'message'), 'punct'), (('message', 'data'), 'conj'), ((',', 'record'), 'punct'), (('record', 'message'), 'conj'), ((',', 'file'), 'punct'), (('file', 'message'), 'conj'), ((',', 'program'), 'punct'), (('or', 'program'), 'cc'), (('program', 'message'), 'conj'), ((')', 'message'), 'punct'), (('to', 'authenticated'), 'mark'), (('be', 'authenticated'), 'aux:pass'), (('authenticated', 'grouped'), 'xcomp'), (('are', 'grouped'), 'aux:pass'), (('grouped', 'root'), 'root'), (('into', 'blocks'), 'case'), (('contiguous', 'blocks'), 'amod'), (('64', 'bit'), 'nummod'), (('-', 'bit'), 'punct'), (('bit', 'blocks'), 'compound'), (('blocks', 'grouped'), 'obl'), ((':', 'D1'), 'punct'), (('D1', 'blocks'), 'appos'), ((',', 'D2'), 'punct'), (('D2', 'D1'), 'list'), ((',', 'D1'), 'punct'), (('….', 'Dn.'), 'nummod'), (('Dn.', 'D1'), 'list')]
+
+ Named Entities are: 
+>> [('64-bit', 'QUANTITY'), ('D1', 'CARDINAL')]
+
+========================== Sentence 35 ===========================
+
+ If necessary, the final block is padded on the right with zeroes to form a full 64-bit block. 
+
+Tokens are: 
+>> ['If', 'necessary', ',', 'the', 'final', 'block', 'is', 'padded', 'on', 'the', 'right', 'with', 'zeroes', 'to', 'form', 'a', 'full', '64', '-', 'bit', 'block', '.'] 
+
+ UPOS tags are: 
+>> [('If', 'SCONJ'), ('necessary', 'ADJ'), (',', 'PUNCT'), ('the', 'DET'), ('final', 'ADJ'), ('block', 'NOUN'), ('is', 'AUX'), ('padded', 'VERB'), ('on', 'ADP'), ('the', 'DET'), ('right', 'NOUN'), ('with', 'ADP'), ('zeroes', 'NOUN'), ('to', 'PART'), ('form', 'VERB'), ('a', 'DET'), ('full', 'ADJ'), ('64', 'NUM'), ('-', 'PUNCT'), ('bit', 'NOUN'), ('block', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('If', 'IN'), ('necessary', 'JJ'), (',', ','), ('the', 'DT'), ('final', 'JJ'), ('block', 'NN'), ('is', 'VBZ'), ('padded', 'VBN'), ('on', 'IN'), ('the', 'DT'), ('right', 'NN'), ('with', 'IN'), ('zeroes', 'NNS'), ('to', 'TO'), ('form', 'VB'), ('a', 'DT'), ('full', 'JJ'), ('64', 'CD'), ('-', 'HYPH'), ('bit', 'NN'), ('block', 'NN'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('If', 'if'), ('necessary', 'necessary'), (',', ','), ('the', 'the'), ('final', 'final'), ('block', 'block'), ('is', 'be'), ('padded', 'pad'), ('on', 'on'), ('the', 'the'), ('right', 'right'), ('with', 'with'), ('zeroes', 'zeroe'), ('to', 'to'), ('form', 'form'), ('a', 'a'), ('full', 'full'), ('64', '64'), ('-', '-'), ('bit', 'bit'), ('block', 'block'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('If', 'necessary'), 'mark'), (('necessary', 'padded'), 'advcl'), ((',', 'padded'), 'punct'), (('the', 'block'), 'det'), (('final', 'block'), 'amod'), (('block', 'padded'), 'nsubj:pass'), (('is', 'padded'), 'aux:pass'), (('padded', 'root'), 'root'), (('on', 'right'), 'case'), (('the', 'right'), 'det'), (('right', 'padded'), 'obl'), (('with', 'zeroes'), 'case'), (('zeroes', 'right'), 'nmod'), (('to', 'form'), 'mark'), (('form', 'padded'), 'advcl'), (('a', 'block'), 'det'), (('full', 'block'), 'amod'), (('64', 'bit'), 'nummod'), (('-', 'bit'), 'punct'), (('bit', 'block'), 'compound'), (('block', 'form'), 'obj'), (('.', 'padded'), 'punct')]
+
+ Named Entities are: 
+>> [('64-bit', 'QUANTITY')]
+
+========================== Sentence 36 ===========================
+
+ Using the DES encryption algorithm E and a secret key K, a data authentication code (DAC) is calculated as follows   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Cipher-Based Message Authentication Code (CMAC) Cipher-based Message Authentication Code (CMAC) mode of operation for use with AES and triple DES. 
+
+Tokens are: 
+>> ['Using', 'the', 'DES', 'encryption', 'algorithm', 'E', 'and', 'a', 'secret', 'key', 'K', ',', 'a', 'data', 'authentication', 'code', '(', 'DAC', ')', 'is', 'calculated', 'as', 'follows', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Cipher', '-', 'Based', 'Message', 'Authentication', 'Code', '(', 'CMAC', ')', 'Cipher', '-', 'based', 'Message', 'Authentication', 'Code', '(', 'CMAC', ')', 'mode', 'of', 'operation', 'for', 'use', 'with', 'AES', 'and', 'triple', 'DES', '.'] 
+
+ UPOS tags are: 
+>> [('Using', 'VERB'), ('the', 'DET'), ('DES', 'PROPN'), ('encryption', 'NOUN'), ('algorithm', 'NOUN'), ('E', 'NOUN'), ('and', 'CCONJ'), ('a', 'DET'), ('secret', 'ADJ'), ('key', 'ADJ'), ('K', 'NUM'), (',', 'PUNCT'), ('a', 'DET'), ('data', 'NOUN'), ('authentication', 'NOUN'), ('code', 'NOUN'), ('(', 'PUNCT'), ('DAC', 'NOUN'), (')', 'PUNCT'), ('is', 'AUX'), ('calculated', 'VERB'), ('as', 'SCONJ'), ('follows', 'VERB'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Cipher', 'NOUN'), ('-', 'PUNCT'), ('Based', 'VERB'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Code', 'NOUN'), ('(', 'PUNCT'), ('CMAC', 'NOUN'), (')', 'PUNCT'), ('Cipher', 'NOUN'), ('-', 'PUNCT'), ('based', 'VERB'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Code', 'NOUN'), ('(', 'PUNCT'), ('CMAC', 'NOUN'), (')', 'PUNCT'), ('mode', 'NOUN'), ('of', 'ADP'), ('operation', 'NOUN'), ('for', 'ADP'), ('use', 'NOUN'), ('with', 'ADP'), ('AES', 'PROPN'), ('and', 'CCONJ'), ('triple', 'NOUN'), ('DES', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('Using', 'VBG'), ('the', 'DT'), ('DES', 'NNP'), ('encryption', 'NN'), ('algorithm', 'NN'), ('E', 'NN'), ('and', 'CC'), ('a', 'DT'), ('secret', 'JJ'), ('key', 'JJ'), ('K', 'CD'), (',', ','), ('a', 'DT'), ('data', 'NN'), ('authentication', 'NN'), ('code', 'NN'), ('(', '-LRB-'), ('DAC', 'NN'), (')', '-RRB-'), ('is', 'VBZ'), ('calculated', 'VBN'), ('as', 'IN'), ('follows', 'VBZ'), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Cipher', 'NN'), ('-', 'HYPH'), ('Based', 'VBN'), ('Message', 'NN'), ('Authentication', 'NN'), ('Code', 'NN'), ('(', '-LRB-'), ('CMAC', 'NN'), (')', '-RRB-'), ('Cipher', 'NN'), ('-', 'HYPH'), ('based', 'VBN'), ('Message', 'NN'), ('Authentication', 'NN'), ('Code', 'NN'), ('(', '-LRB-'), ('CMAC', 'NN'), (')', '-RRB-'), ('mode', 'NN'), ('of', 'IN'), ('operation', 'NN'), ('for', 'IN'), ('use', 'NN'), ('with', 'IN'), ('AES', 'NNP'), ('and', 'CC'), ('triple', 'NN'), ('DES', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('Using', 'use'), ('the', 'the'), ('DES', 'DES'), ('encryption', 'encryption'), ('algorithm', 'algorithm'), ('E', 'e'), ('and', 'and'), ('a', 'a'), ('secret', 'secret'), ('key', 'key'), ('K', 'k'), (',', ','), ('a', 'a'), ('data', 'datum'), ('authentication', 'authentication'), ('code', 'code'), ('(', '('), ('DAC', 'dac'), (')', ')'), ('is', 'be'), ('calculated', 'calculate'), ('as', 'as'), ('follows', 'follow'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Cipher', 'cipher'), ('-', '-'), ('Based', 'base'), ('Message', 'message'), ('Authentication', 'authentication'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('Cipher', 'cipher'), ('-', '-'), ('based', 'base'), ('Message', 'message'), ('Authentication', 'authentication'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('mode', 'mode'), ('of', 'of'), ('operation', 'operation'), ('for', 'for'), ('use', 'use'), ('with', 'with'), ('AES', 'AES'), ('and', 'and'), ('triple', 'triple'), ('DES', 'DES'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('Using', 'calculated'), 'advcl'), (('the', 'algorithm'), 'det'), (('DES', 'algorithm'), 'compound'), (('encryption', 'algorithm'), 'compound'), (('algorithm', 'Using'), 'obj'), (('E', 'Using'), 'obj'), (('and', 'K'), 'cc'), (('a', 'K'), 'det'), (('secret', 'K'), 'amod'), (('key', 'K'), 'amod'), (('K', 'E'), 'conj'), ((',', 'Using'), 'punct'), (('a', 'code'), 'det'), (('data', 'code'), 'compound'), (('authentication', 'code'), 'compound'), (('code', 'calculated'), 'nsubj:pass'), (('(', 'DAC'), 'punct'), (('DAC', 'code'), 'appos'), ((')', 'DAC'), 'punct'), (('is', 'calculated'), 'aux:pass'), (('calculated', 'root'), 'root'), (('as', 'follows'), 'mark'), (('follows', 'calculated'), 'advcl'), (('Unit', 'Codes'), 'compound'), (('-6', 'Unit'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'follows'), 'obj'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Codes'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Based'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', '‹#›'), 'compound'), (('Cipher', 'Based'), 'obl:npmod'), (('-', 'Based'), 'punct'), (('Based', 'Code'), 'amod'), (('Message', 'Code'), 'compound'), (('Authentication', 'Code'), 'compound'), (('Code', 'Subject'), 'obj'), (('(', 'CMAC'), 'punct'), (('CMAC', 'Code'), 'appos'), ((')', 'CMAC'), 'punct'), (('Cipher', 'based'), 'obl:npmod'), (('-', 'based'), 'punct'), (('based', 'Code'), 'amod'), (('Message', 'Code'), 'compound'), (('Authentication', 'Code'), 'compound'), (('Code', 'mode'), 'compound'), (('(', 'CMAC'), 'punct'), (('CMAC', 'Code'), 'appos'), ((')', 'CMAC'), 'punct'), (('mode', 'Code'), 'appos'), (('of', 'operation'), 'case'), (('operation', 'mode'), 'nmod'), (('for', 'use'), 'case'), (('use', 'operation'), 'nmod'), (('with', 'AES'), 'case'), (('AES', 'use'), 'nmod'), (('and', 'DES'), 'cc'), (('triple', 'AES'), 'conj'), (('DES', 'AES'), 'conj'), (('.', 'calculated'), 'punct')]
+
+ Named Entities are: 
+>> [('DES', 'ORG'), ('Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology', 'ORG'), ('INS', 'ORG'), ('Message Authentication Code', 'PRODUCT'), ('AES', 'ORG')]
+
+========================== Sentence 37 ===========================
+
+ First, let us define the operation of CMAC when the message is an integer multiple n of the cipher block length b. 
+
+Tokens are: 
+>> ['First', ',', 'let', 'us', 'define', 'the', 'operation', 'of', 'CMAC', 'when', 'the', 'message', 'is', 'an', 'integer', 'multiple', 'n', 'of', 'the', 'cipher', 'block', 'length', 'b.'] 
+
+ UPOS tags are: 
+>> [('First', 'ADV'), (',', 'PUNCT'), ('let', 'VERB'), ('us', 'PRON'), ('define', 'VERB'), ('the', 'DET'), ('operation', 'NOUN'), ('of', 'ADP'), ('CMAC', 'PROPN'), ('when', 'SCONJ'), ('the', 'DET'), ('message', 'NOUN'), ('is', 'AUX'), ('an', 'DET'), ('integer', 'NOUN'), ('multiple', 'ADJ'), ('n', 'NOUN'), ('of', 'ADP'), ('the', 'DET'), ('cipher', 'NOUN'), ('block', 'NOUN'), ('length', 'NOUN'), ('b.', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('First', 'RB'), (',', ','), ('let', 'VB'), ('us', 'PRP'), ('define', 'VB'), ('the', 'DT'), ('operation', 'NN'), ('of', 'IN'), ('CMAC', 'NNP'), ('when', 'WRB'), ('the', 'DT'), ('message', 'NN'), ('is', 'VBZ'), ('an', 'DT'), ('integer', 'NN'), ('multiple', 'JJ'), ('n', 'NN'), ('of', 'IN'), ('the', 'DT'), ('cipher', 'NN'), ('block', 'NN'), ('length', 'NN'), ('b.', 'NN')] 
+
+ Lemmas are: 
+>> [('First', 'first'), (',', ','), ('let', 'let'), ('us', 'we'), ('define', 'define'), ('the', 'the'), ('operation', 'operation'), ('of', 'of'), ('CMAC', 'CMAC'), ('when', 'when'), ('the', 'the'), ('message', 'message'), ('is', 'be'), ('an', 'a'), ('integer', 'integer'), ('multiple', 'multiple'), ('n', 'n'), ('of', 'of'), ('the', 'the'), ('cipher', 'cipher'), ('block', 'block'), ('length', 'length'), ('b.', 'bear')] 
+
+ Dependency tags are: 
+>> [(('First', 'let'), 'advmod'), ((',', 'let'), 'punct'), (('let', 'root'), 'root'), (('us', 'let'), 'obj'), (('define', 'let'), 'xcomp'), (('the', 'operation'), 'det'), (('operation', 'define'), 'obj'), (('of', 'CMAC'), 'case'), (('CMAC', 'operation'), 'nmod'), (('when', 'n'), 'mark'), (('the', 'message'), 'det'), (('message', 'n'), 'nsubj'), (('is', 'n'), 'cop'), (('an', 'n'), 'det'), (('integer', 'n'), 'compound'), (('multiple', 'n'), 'amod'), (('n', 'define'), 'advcl'), (('of', 'b.'), 'case'), (('the', 'b.'), 'det'), (('cipher', 'block'), 'compound'), (('block', 'b.'), 'compound'), (('length', 'b.'), 'compound'), (('b.', 'n'), 'nmod')]
+
+ Named Entities are: 
+>> [('First', 'ORDINAL'), ('CMAC', 'ORG')]
+
+========================== Sentence 38 ===========================
+
+ For AES, b = 128, and for triple DES, b = 64. 
+
+Tokens are: 
+>> ['For', 'AES', ',', 'b', '=', '128', ',', 'and', 'for', 'triple', 'DES', ',', 'b', '=', '64', '.'] 
+
+ UPOS tags are: 
+>> [('For', 'ADP'), ('AES', 'PROPN'), (',', 'PUNCT'), ('b', 'NOUN'), ('=', 'SYM'), ('128', 'NUM'), (',', 'PUNCT'), ('and', 'CCONJ'), ('for', 'ADP'), ('triple', 'NOUN'), ('DES', 'PROPN'), (',', 'PUNCT'), ('b', 'NOUN'), ('=', 'SYM'), ('64', 'NUM'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('For', 'IN'), ('AES', 'NNP'), (',', ','), ('b', 'NN'), ('=', 'SYM'), ('128', 'CD'), (',', ','), ('and', 'CC'), ('for', 'IN'), ('triple', 'NN'), ('DES', 'NNP'), (',', ','), ('b', 'NN'), ('=', 'SYM'), ('64', 'CD'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('For', 'for'), ('AES', 'AES'), (',', ','), ('b', 'b'), ('=', '='), ('128', '128'), (',', ','), ('and', 'and'), ('for', 'for'), ('triple', 'triple'), ('DES', 'DES'), (',', ','), ('b', 'b'), ('=', '='), ('64', '64'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('For', 'AES'), 'case'), (('AES', '='), 'obl'), ((',', '='), 'punct'), (('b', '='), 'nsubj'), (('=', 'root'), 'root'), (('128', '='), 'obj'), ((',', '='), 'punct'), (('and', '='), 'cc'), (('for', 'triple'), 'case'), (('triple', '='), 'obl'), (('DES', 'triple'), 'flat'), ((',', '='), 'punct'), (('b', '='), 'nsubj'), (('=', '='), 'conj'), (('64', '='), 'obj'), (('.', '='), 'punct')]
+
+ Named Entities are: 
+>> [('AES', 'ORG'), ('128', 'CARDINAL'), ('64', 'CARDINAL')]
+
+========================== Sentence 39 ===========================
+
+ The message is divided into n blocks (M1, M2,… Mn)  Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Cipher-Based Message Authentication Code (CMAC) 
+
+Tokens are: 
+>> ['The', 'message', 'is', 'divided', 'into', 'n', 'blocks', '(', 'M1', ',', 'M2', ',', '…', 'Mn)', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Cipher', '-', 'Based', 'Message', 'Authentication', 'Code', '(', 'CMAC', ')'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('message', 'NOUN'), ('is', 'AUX'), ('divided', 'VERB'), ('into', 'ADP'), ('n', 'NOUN'), ('blocks', 'NOUN'), ('(', 'PUNCT'), ('M1', 'PROPN'), (',', 'PUNCT'), ('M2', 'PROPN'), (',', 'PUNCT'), ('…', 'PUNCT'), ('Mn)', 'PROPN'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'PROPN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Cipher', 'NOUN'), ('-', 'PUNCT'), ('Based', 'VERB'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Code', 'NOUN'), ('(', 'PUNCT'), ('CMAC', 'PROPN'), (')', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('message', 'NN'), ('is', 'VBZ'), ('divided', 'VBN'), ('into', 'IN'), ('n', 'NN'), ('blocks', 'NNS'), ('(', '-LRB-'), ('M1', 'NNP'), (',', ','), ('M2', 'NNP'), (',', ','), ('…', ','), ('Mn)', 'NNP'), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNPS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Cipher', 'NN'), ('-', 'HYPH'), ('Based', 'VBN'), ('Message', 'NN'), ('Authentication', 'NN'), ('Code', 'NN'), ('(', '-LRB-'), ('CMAC', 'NNP'), (')', '-RRB-')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('message', 'message'), ('is', 'be'), ('divided', 'divide'), ('into', 'into'), ('n', 'n'), ('blocks', 'block'), ('(', '('), ('M1', 'M1'), (',', ','), ('M2', 'M2'), (',', ','), ('…', '…'), ('Mn)', 'Mn)'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'Code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Cipher', 'cipher'), ('-', '-'), ('Based', 'base'), ('Message', 'message'), ('Authentication', 'authentication'), ('Code', 'code'), ('(', '('), ('CMAC', 'CMAC'), (')', ')')] 
+
+ Dependency tags are: 
+>> [(('The', 'message'), 'det'), (('message', 'divided'), 'nsubj:pass'), (('is', 'divided'), 'aux:pass'), (('divided', 'root'), 'root'), (('into', 'blocks'), 'case'), (('n', 'blocks'), 'compound'), (('blocks', 'divided'), 'obl'), (('(', 'M1'), 'punct'), (('M1', 'blocks'), 'appos'), ((',', 'M2'), 'punct'), (('M2', 'M1'), 'conj'), ((',', 'M1'), 'punct'), (('…', 'M1'), 'punct'), (('Mn)', 'Unit'), 'compound'), (('Unit', 'M1'), 'conj'), (('-6', 'Unit'), 'nummod'), (('Message', 'Institute'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'M1'), 'conj'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Code'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Code'), 'amod'), (('Subject', 'Code'), 'compound'), (('Cipher', 'Based'), 'compound'), (('-', 'Based'), 'punct'), (('Based', 'Code'), 'amod'), (('Message', 'Code'), 'compound'), (('Authentication', 'Code'), 'compound'), (('Code', 'divided'), 'parataxis'), (('(', 'CMAC'), 'punct'), (('CMAC', 'Code'), 'appos'), ((')', 'CMAC'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 40 ===========================
+
+ The algorithm makes use of a k-bit encryption key K and a b-bit constant, K1. 
+
+Tokens are: 
+>> ['The', 'algorithm', 'makes', 'use', 'of', 'a', 'k-bit', 'encryption', 'key', 'K', 'and', 'a', 'b-bit', 'constant', ',', 'K1', '.'] 
+
+ UPOS tags are: 
+>> [('The', 'DET'), ('algorithm', 'NOUN'), ('makes', 'VERB'), ('use', 'NOUN'), ('of', 'ADP'), ('a', 'DET'), ('k-bit', 'ADJ'), ('encryption', 'NOUN'), ('key', 'ADJ'), ('K', 'NOUN'), ('and', 'CCONJ'), ('a', 'DET'), ('b-bit', 'NOUN'), ('constant', 'ADJ'), (',', 'PUNCT'), ('K1', 'PROPN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('The', 'DT'), ('algorithm', 'NN'), ('makes', 'VBZ'), ('use', 'NN'), ('of', 'IN'), ('a', 'DT'), ('k-bit', 'JJ'), ('encryption', 'NN'), ('key', 'JJ'), ('K', 'NN'), ('and', 'CC'), ('a', 'DT'), ('b-bit', 'NN'), ('constant', 'JJ'), (',', ','), ('K1', 'NNP'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('The', 'the'), ('algorithm', 'algorithm'), ('makes', 'make'), ('use', 'use'), ('of', 'of'), ('a', 'a'), ('k-bit', 'k-bit'), ('encryption', 'encryption'), ('key', 'key'), ('K', 'k'), ('and', 'and'), ('a', 'a'), ('b-bit', 'b-bit'), ('constant', 'constant'), (',', ','), ('K1', 'K1'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('The', 'algorithm'), 'det'), (('algorithm', 'makes'), 'nsubj'), (('makes', 'root'), 'root'), (('use', 'makes'), 'obj'), (('of', 'K'), 'case'), (('a', 'K'), 'det'), (('k-bit', 'encryption'), 'amod'), (('encryption', 'K'), 'compound'), (('key', 'K'), 'amod'), (('K', 'use'), 'nmod'), (('and', 'K1'), 'cc'), (('a', 'b-bit'), 'det'), (('b-bit', 'K'), 'conj'), (('constant', 'K1'), 'amod'), ((',', 'K1'), 'punct'), (('K1', 'K'), 'conj'), (('.', 'makes'), 'punct')]
+
+ Named Entities are: 
+>> []
+
+========================== Sentence 41 ===========================
+
+ For AES, the key size k is 128, 192, or 256 bits; for triple DES, the key size is 112 or 168 bits. 
+
+Tokens are: 
+>> ['For', 'AES', ',', 'the', 'key', 'size', 'k', 'is', '128', ',', '192', ',', 'or', '256', 'bits', ';', 'for', 'triple', 'DES', ',', 'the', 'key', 'size', 'is', '112', 'or', '168', 'bits', '.'] 
+
+ UPOS tags are: 
+>> [('For', 'ADP'), ('AES', 'PROPN'), (',', 'PUNCT'), ('the', 'DET'), ('key', 'ADJ'), ('size', 'NOUN'), ('k', 'NOUN'), ('is', 'AUX'), ('128', 'NUM'), (',', 'PUNCT'), ('192', 'NUM'), (',', 'PUNCT'), ('or', 'CCONJ'), ('256', 'NUM'), ('bits', 'NOUN'), (';', 'PUNCT'), ('for', 'ADP'), ('triple', 'NOUN'), ('DES', 'PROPN'), (',', 'PUNCT'), ('the', 'DET'), ('key', 'ADJ'), ('size', 'NOUN'), ('is', 'AUX'), ('112', 'NUM'), ('or', 'CCONJ'), ('168', 'NUM'), ('bits', 'NOUN'), ('.', 'PUNCT')] 
+
+ XPOS tags are: 
+>> [('For', 'IN'), ('AES', 'NNP'), (',', ','), ('the', 'DT'), ('key', 'JJ'), ('size', 'NN'), ('k', 'NN'), ('is', 'VBZ'), ('128', 'CD'), (',', ','), ('192', 'CD'), (',', ','), ('or', 'CC'), ('256', 'CD'), ('bits', 'NNS'), (';', ','), ('for', 'IN'), ('triple', 'NN'), ('DES', 'NNP'), (',', ','), ('the', 'DT'), ('key', 'JJ'), ('size', 'NN'), ('is', 'VBZ'), ('112', 'CD'), ('or', 'CC'), ('168', 'CD'), ('bits', 'NNS'), ('.', '.')] 
+
+ Lemmas are: 
+>> [('For', 'for'), ('AES', 'AES'), (',', ','), ('the', 'the'), ('key', 'key'), ('size', 'size'), ('k', 'k'), ('is', 'be'), ('128', '128'), (',', ','), ('192', '192'), (',', ','), ('or', 'or'), ('256', '256'), ('bits', 'bit'), (';', ';'), ('for', 'for'), ('triple', 'triple'), ('DES', 'DES'), (',', ','), ('the', 'the'), ('key', 'key'), ('size', 'size'), ('is', 'be'), ('112', '112'), ('or', 'or'), ('168', '168'), ('bits', 'bit'), ('.', '.')] 
+
+ Dependency tags are: 
+>> [(('For', 'AES'), 'case'), (('AES', 'bits'), 'obl'), ((',', 'bits'), 'punct'), (('the', 'k'), 'det'), (('key', 'k'), 'amod'), (('size', 'k'), 'compound'), (('k', 'bits'), 'nsubj'), (('is', 'bits'), 'cop'), (('128', 'bits'), 'nummod'), ((',', '192'), 'punct'), (('192', '128'), 'conj'), ((',', '256'), 'punct'), (('or', '256'), 'cc'), (('256', '128'), 'conj'), (('bits', 'root'), 'root'), ((';', 'bits'), 'punct'), (('for', 'triple'), 'case'), (('triple', 'bits'), 'obl'), (('DES', 'bits'), 'obl'), ((',', 'bits'), 'punct'), (('the', 'size'), 'det'), (('key', 'size'), 'amod'), (('size', 'bits'), 'nsubj'), (('is', 'bits'), 'cop'), (('112', 'bits'), 'nummod'), (('or', '168'), 'cc'), (('168', '112'), 'conj'), (('bits', 'bits'), 'parataxis'), (('.', 'bits'), 'punct')]
+
+ Named Entities are: 
+>> [('AES', 'ORG'), ('128', 'CARDINAL'), ('192', 'CARDINAL'), ('256 bits', 'QUANTITY'), ('112', 'CARDINAL'), ('168', 'CARDINAL')]
+
+========================== Sentence 42 ===========================
+
+ CMAC is calculated as follows   Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject  Cipher-Based Message Authentication Code (CMAC)    Unit-6  Message Authentication Codes                                  Darshan Institute of Engineering & Technology   ‹#› INS is very Interesting Subject 
+
+Tokens are: 
+>> ['CMAC', 'is', 'calculated', 'as', 'follows', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject', 'Cipher', '-', 'Based', 'Message', 'Authentication', 'Code', '(', 'CMAC', ')', 'Unit', '-6', 'Message', 'Authentication', 'Codes', 'Darshan', 'Institute', 'of', 'Engineering', '&', 'Technology', '‹#›', 'INS', 'is', 'very', 'Interesting', 'Subject'] 
+
+ UPOS tags are: 
+>> [('CMAC', 'PROPN'), ('is', 'AUX'), ('calculated', 'VERB'), ('as', 'ADP'), ('follows', 'VERB'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'PROPN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN'), ('Cipher', 'NOUN'), ('-', 'PUNCT'), ('Based', 'VERB'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Code', 'NOUN'), ('(', 'PUNCT'), ('CMAC', 'NOUN'), (')', 'PUNCT'), ('Unit', 'NOUN'), ('-6', 'NUM'), ('Message', 'NOUN'), ('Authentication', 'NOUN'), ('Codes', 'NOUN'), ('Darshan', 'PROPN'), ('Institute', 'PROPN'), ('of', 'ADP'), ('Engineering', 'NOUN'), ('&', 'CCONJ'), ('Technology', 'NOUN'), ('‹#›', 'NOUN'), ('INS', 'NOUN'), ('is', 'AUX'), ('very', 'ADV'), ('Interesting', 'ADJ'), ('Subject', 'NOUN')] 
+
+ XPOS tags are: 
+>> [('CMAC', 'NNP'), ('is', 'VBZ'), ('calculated', 'VBN'), ('as', 'IN'), ('follows', 'VBZ'), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NNP'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN'), ('Cipher', 'NN'), ('-', 'HYPH'), ('Based', 'VBN'), ('Message', 'NN'), ('Authentication', 'NN'), ('Code', 'NN'), ('(', '-LRB-'), ('CMAC', 'NN'), (')', '-RRB-'), ('Unit', 'NN'), ('-6', 'CD'), ('Message', 'NN'), ('Authentication', 'NN'), ('Codes', 'NNS'), ('Darshan', 'NNP'), ('Institute', 'NNP'), ('of', 'IN'), ('Engineering', 'NN'), ('&', 'CC'), ('Technology', 'NN'), ('‹#›', 'NN'), ('INS', 'NN'), ('is', 'VBZ'), ('very', 'RB'), ('Interesting', 'JJ'), ('Subject', 'NN')] 
+
+ Lemmas are: 
+>> [('CMAC', 'CMAC'), ('is', 'be'), ('calculated', 'calculate'), ('as', 'as'), ('follows', 'follow'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject'), ('Cipher', 'cipher'), ('-', '-'), ('Based', 'base'), ('Message', 'message'), ('Authentication', 'authentication'), ('Code', 'code'), ('(', '('), ('CMAC', 'cmac'), (')', ')'), ('Unit', 'unit'), ('-6', '-6'), ('Message', 'message'), ('Authentication', 'authentication'), ('Codes', 'code'), ('Darshan', 'Darshan'), ('Institute', 'Institute'), ('of', 'of'), ('Engineering', 'Engineering'), ('&', '&'), ('Technology', 'technology'), ('‹#›', '‹#›'), ('INS', 'INS'), ('is', 'be'), ('very', 'very'), ('Interesting', 'interesting'), ('Subject', 'subject')] 
+
+ Dependency tags are: 
+>> [(('CMAC', 'calculated'), 'nsubj:pass'), (('is', 'calculated'), 'aux:pass'), (('calculated', 'root'), 'root'), (('as', 'follows'), 'mark'), (('follows', 'calculated'), 'advcl'), (('Unit', 'Codes'), 'compound'), (('-6', 'Codes'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'calculated'), 'obl'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Codes'), 'appos'), (('of', '‹#›'), 'case'), (('Engineering', '‹#›'), 'compound'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'Institute'), 'nmod'), (('INS', 'Institute'), 'nmod'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'Code'), 'compound'), (('Cipher', 'Based'), 'obl:npmod'), (('-', 'Based'), 'punct'), (('Based', 'Code'), 'amod'), (('Message', 'Code'), 'compound'), (('Authentication', 'Code'), 'compound'), (('Code', 'Unit'), 'compound'), (('(', 'CMAC'), 'punct'), (('CMAC', 'Code'), 'appos'), ((')', 'CMAC'), 'punct'), (('Unit', 'Codes'), 'compound'), (('-6', 'Codes'), 'nummod'), (('Message', 'Codes'), 'compound'), (('Authentication', 'Codes'), 'compound'), (('Codes', 'Institute'), 'compound'), (('Darshan', 'Institute'), 'compound'), (('Institute', 'Subject'), 'nsubj'), (('of', 'Engineering'), 'case'), (('Engineering', 'Institute'), 'nmod'), (('&', 'Technology'), 'cc'), (('Technology', 'Engineering'), 'conj'), (('‹#›', 'INS'), 'compound'), (('INS', 'Subject'), 'nsubj'), (('is', 'Subject'), 'cop'), (('very', 'Interesting'), 'advmod'), (('Interesting', 'Subject'), 'amod'), (('Subject', 'calculated'), 'parataxis')]
+
+ Named Entities are: 
+>> [('CMAC', 'ORG'), ('INS', 'ORG'), ('INS', 'ORG')]
