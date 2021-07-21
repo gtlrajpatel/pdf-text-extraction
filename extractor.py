@@ -71,7 +71,7 @@ def xml_extraction_using_tika(input_directory, output_directory):
         filename, ext = os.path.splitext(os.path.basename(filename))
 
         try:
-            with open(output_directory + '/' + filename + "_using_tika.txt", "w") as f:
+            with open(output_directory + '/' + filename + "_xml_using_tika.txt", "w") as f:
                 f.write(data.strip())
             if ext == '.pdf':
                 pdf_count += 1
